@@ -1,7 +1,7 @@
 {
   "_lisez_moi": "File de l'extracteur de marques (lot 08/10/2026). Chaque run traite au plus max_marques_par_run marques PAS ENCORE extraites (une marque est faite si <out>.sources.md existe sur la branche donnees-extraction), dans l'ordre. Un push de ce fichier lance un run ; la nuit ne tourne que si nuit_active=true. max_marques_par_run borne le cout d'un run.",
-  "nuit_active": false,
-  "max_marques_par_run": 49,
+  "nuit_active": true,
+  "max_marques_par_run": 48,
   "file": [
     {
       "brand": "Vsett",
@@ -788,6 +788,707 @@
       "out": "zwheel-full",
       "tier": "FULL",
       "note": "14/10 soir : vague « tous les modèles » des marques à 2 modèles — jusqu'à 6 modèles vendus en France ABSENTS du catalogue (dédoublonnage base intégré)."
+    },
+    {
+      "brand": "Apollo",
+      "models": [
+        "City 2.0",
+        "Dash",
+        "Explore",
+        "Explore 2.0",
+        "Go"
+      ],
+      "out": "apollo-cles-1710",
+      "note": "17/10 : modèles publiés sans clé roue ou disque — recherche des clés de montage (jante, section, disque)",
+      "max_models": 5
+    },
+    {
+      "brand": "Aprilia",
+      "models": [
+        "eSR1",
+        "eSR2",
+        "eSRZ"
+      ],
+      "out": "aprilia-cles-1710",
+      "note": "17/10 : modèles publiés sans clé roue ou disque — recherche des clés de montage (jante, section, disque)",
+      "max_models": 3
+    },
+    {
+      "brand": "Beaster",
+      "models": [
+        "BS08",
+        "BS09",
+        "BS77",
+        "Diablo"
+      ],
+      "out": "beaster-cles-1710",
+      "note": "17/10 : modèles publiés sans clé roue ou disque — recherche des clés de montage (jante, section, disque)",
+      "max_models": 4
+    },
+    {
+      "brand": "Bogist",
+      "models": [
+        "C1 Pro",
+        "M1 Elite",
+        "M5 Pro"
+      ],
+      "out": "bogist-cles-1710",
+      "note": "17/10 : modèles publiés sans clé roue ou disque — recherche des clés de montage (jante, section, disque)",
+      "max_models": 3
+    },
+    {
+      "brand": "Cecotec",
+      "models": [
+        "Bongo D20",
+        "Bongo D20 XL Connected",
+        "Bongo D20E Connected",
+        "Bongo D30",
+        "Bongo D30 XL Connected",
+        "Bongo Doble Y85 2x2 XXL Connected",
+        "Bongo Serie M20",
+        "Bongo Serie M30 Connected",
+        "Bongo V55 2x2 Connected",
+        "Bongo V70 Connected"
+      ],
+      "out": "cecotec-cles-1710",
+      "note": "17/10 : modèles publiés sans clé roue ou disque — recherche des clés de montage (jante, section, disque)",
+      "max_models": 10
+    },
+    {
+      "brand": "Dualtron",
+      "models": [
+        "Aminia",
+        "Dolphin",
+        "Mini Special",
+        "Popular",
+        "Raptor 2",
+        "Storm",
+        "Storm LTD 2025",
+        "Togo Max",
+        "Togo Plus",
+        "Togo Pro",
+        "Ultra One",
+        "Victor 2025",
+        "Victor Limited 2025"
+      ],
+      "out": "dualtron-cles-1710",
+      "note": "17/10 : modèles publiés sans clé roue ou disque — recherche des clés de montage (jante, section, disque)",
+      "max_models": 13
+    },
+    {
+      "brand": "Ducati",
+      "models": [
+        "CROSS-E Sport",
+        "PRO-I EVO",
+        "Pro-II Evo"
+      ],
+      "out": "ducati-cles-1710",
+      "note": "17/10 : modèles publiés sans clé roue ou disque — recherche des clés de montage (jante, section, disque)",
+      "max_models": 3
+    },
+    {
+      "brand": "DYU",
+      "models": [
+        "C4",
+        "D3F"
+      ],
+      "out": "dyu-cles-1710",
+      "note": "17/10 : modèles publiés sans clé roue ou disque — recherche des clés de montage (jante, section, disque)",
+      "max_models": 2
+    },
+    {
+      "brand": "E-Twow",
+      "models": [
+        "Booster ES",
+        "Booster SE",
+        "Booster V",
+        "GT SE",
+        "GT SL",
+        "GT Sport",
+        "GTS",
+        "TankTorq TK2",
+        "TankTorq TK2 Lite",
+        "TankTorq TK3",
+        "TankTorq TK5"
+      ],
+      "out": "e-twow-cles-1710",
+      "note": "17/10 : modèles publiés sans clé roue ou disque — recherche des clés de montage (jante, section, disque)",
+      "max_models": 11
+    },
+    {
+      "brand": "Engwe",
+      "models": [
+        "Y10",
+        "Y1000",
+        "Y400",
+        "Y600",
+        "Y600S",
+        "Y700"
+      ],
+      "out": "engwe-cles-1710",
+      "note": "17/10 : modèles publiés sans clé roue ou disque — recherche des clés de montage (jante, section, disque)",
+      "max_models": 6
+    },
+    {
+      "brand": "Halo Knight",
+      "models": [
+        "T107 Pro",
+        "T108",
+        "T108 Pro"
+      ],
+      "out": "halo-knight-cles-1710",
+      "note": "17/10 : modèles publiés sans clé roue ou disque — recherche des clés de montage (jante, section, disque)",
+      "max_models": 3
+    },
+    {
+      "brand": "Hiboy",
+      "models": [
+        "KS4",
+        "KS4 Pro",
+        "S2",
+        "S2 Lite",
+        "S2 MAX",
+        "S2 Nova",
+        "S2 Pro",
+        "S2R Plus",
+        "Titan Pro",
+        "X300"
+      ],
+      "out": "hiboy-cles-1710",
+      "note": "17/10 : modèles publiés sans clé roue ou disque — recherche des clés de montage (jante, section, disque)",
+      "max_models": 10
+    },
+    {
+      "brand": "Hikerboy",
+      "models": [
+        "Brio",
+        "Curtis",
+        "Curtis Dual",
+        "Curtis Dual Pro",
+        "Curtis Plus",
+        "Foxtrot Plus",
+        "Off-Road 2"
+      ],
+      "out": "hikerboy-cles-1710",
+      "note": "17/10 : modèles publiés sans clé roue ou disque — recherche des clés de montage (jante, section, disque)",
+      "max_models": 7
+    },
+    {
+      "brand": "Hitway",
+      "models": [
+        "H11",
+        "H5 Pro",
+        "H6",
+        "H9",
+        "H9 Pro"
+      ],
+      "out": "hitway-cles-1710",
+      "note": "17/10 : modèles publiés sans clé roue ou disque — recherche des clés de montage (jante, section, disque)",
+      "max_models": 5
+    },
+    {
+      "brand": "Inmotion",
+      "models": [
+        "Air",
+        "Air Pro",
+        "C1 Air Pro",
+        "Climber",
+        "L9",
+        "RS Jet",
+        "RS Lite"
+      ],
+      "out": "inmotion-cles-1710",
+      "note": "17/10 : modèles publiés sans clé roue ou disque — recherche des clés de montage (jante, section, disque)",
+      "max_models": 7
+    },
+    {
+      "brand": "Inokim",
+      "models": [
+        "Mini 2",
+        "OX",
+        "OXO",
+        "OXO Super",
+        "Quick 4",
+        "Quick 4 Super"
+      ],
+      "out": "inokim-cles-1710",
+      "note": "17/10 : modèles publiés sans clé roue ou disque — recherche des clés de montage (jante, section, disque)",
+      "max_models": 6
+    },
+    {
+      "brand": "iScooter",
+      "models": [
+        "i10",
+        "i10 Max",
+        "i10 Pro",
+        "i9",
+        "i9 Max",
+        "i9 Pro",
+        "i9Ultra",
+        "iX5S",
+        "iX8",
+        "W6",
+        "W7",
+        "W8",
+        "W9",
+        "W9 Air"
+      ],
+      "out": "iscooter-cles-1710",
+      "note": "17/10 : modèles publiés sans clé roue ou disque — recherche des clés de montage (jante, section, disque)",
+      "max_models": 14
+    },
+    {
+      "brand": "Isinwheel",
+      "models": [
+        "D1",
+        "GT1",
+        "GT1 Dual",
+        "GT2",
+        "GT2 Pro",
+        "GT4",
+        "S-NOVA Pro",
+        "S10 Max",
+        "S9 Max",
+        "S9 Pro",
+        "X3 Pro"
+      ],
+      "out": "isinwheel-cles-1710",
+      "note": "17/10 : modèles publiés sans clé roue ou disque — recherche des clés de montage (jante, section, disque)",
+      "max_models": 11
+    },
+    {
+      "brand": "Joyor",
+      "models": [
+        "C10",
+        "F5S+",
+        "S5",
+        "S5 Pro",
+        "S8-E",
+        "T6",
+        "Y10",
+        "Y6-S",
+        "Y8-S"
+      ],
+      "out": "joyor-cles-1710",
+      "note": "17/10 : modèles publiés sans clé roue ou disque — recherche des clés de montage (jante, section, disque)",
+      "max_models": 9
+    },
+    {
+      "brand": "Kaabo",
+      "models": [
+        "Mantis 10 Plus",
+        "Urban",
+        "Wolf King GTR",
+        "Wolf Warrior 11 Max",
+        "Wolf Warrior King GTR Max",
+        "Wolf Warrior X GT",
+        "Wolf Warrior X Plus",
+        "Mantis Pro",
+        "Wolf Warrior"
+      ],
+      "out": "kaabo-cles-1710",
+      "note": "17/10 : modèles publiés sans clé roue ou disque — recherche des clés de montage (jante, section, disque)",
+      "max_models": 9
+    },
+    {
+      "brand": "Kingsong",
+      "models": [
+        "E1",
+        "N12 Pro",
+        "N12 T3",
+        "N14",
+        "N14 Max",
+        "N15",
+        "N16",
+        "S2 Pro"
+      ],
+      "out": "kingsong-cles-1710",
+      "note": "17/10 : modèles publiés sans clé roue ou disque — recherche des clés de montage (jante, section, disque)",
+      "max_models": 8
+    },
+    {
+      "brand": "Kuickwheel",
+      "models": [
+        "F1",
+        "M16 Pro",
+        "S9"
+      ],
+      "out": "kuickwheel-cles-1710",
+      "note": "17/10 : modèles publiés sans clé roue ou disque — recherche des clés de montage (jante, section, disque)",
+      "max_models": 3
+    },
+    {
+      "brand": "Kukirin",
+      "models": [
+        "C1 Pro",
+        "G2 Ultra",
+        "G3",
+        "G4 Max",
+        "G4 Ultra",
+        "M4 Max",
+        "S1 Pro"
+      ],
+      "out": "kukirin-cles-1710",
+      "note": "17/10 : modèles publiés sans clé roue ou disque — recherche des clés de montage (jante, section, disque)",
+      "max_models": 7
+    },
+    {
+      "brand": "Langfeite",
+      "models": [
+        "C1",
+        "C5",
+        "Coupé",
+        "GT2 Mini",
+        "GT2 RS",
+        "H1",
+        "Roadster"
+      ],
+      "out": "langfeite-cles-1710",
+      "note": "17/10 : modèles publiés sans clé roue ou disque — recherche des clés de montage (jante, section, disque)",
+      "max_models": 7
+    },
+    {
+      "brand": "Laotie",
+      "models": [
+        "ES19",
+        "H6 Pro"
+      ],
+      "out": "laotie-cles-1710",
+      "note": "17/10 : modèles publiés sans clé roue ou disque — recherche des clés de montage (jante, section, disque)",
+      "max_models": 2
+    },
+    {
+      "brand": "Micro",
+      "models": [
+        "Explorer",
+        "Explorer II",
+        "Merlin",
+        "Merlin II",
+        "X21"
+      ],
+      "out": "micro-cles-1710",
+      "note": "17/10 : modèles publiés sans clé roue ou disque — recherche des clés de montage (jante, section, disque)",
+      "max_models": 5
+    },
+    {
+      "brand": "Nami",
+      "models": [
+        "Blast 2 Max",
+        "Klima One",
+        "Superstellar"
+      ],
+      "out": "nami-cles-1710",
+      "note": "17/10 : modèles publiés sans clé roue ou disque — recherche des clés de montage (jante, section, disque)",
+      "max_models": 3
+    },
+    {
+      "brand": "Navee",
+      "models": [
+        "GT3 Max",
+        "GT5 Max",
+        "GT5 Pro",
+        "K100 Pro",
+        "N65",
+        "N65i",
+        "S40",
+        "S60",
+        "ST3",
+        "ST3 Pro",
+        "ST5 Pro",
+        "XT5 Pro"
+      ],
+      "out": "navee-cles-1710",
+      "note": "17/10 : modèles publiés sans clé roue ou disque — recherche des clés de montage (jante, section, disque)",
+      "max_models": 12
+    },
+    {
+      "brand": "Ninebot",
+      "models": [
+        "E2",
+        "ES2"
+      ],
+      "out": "ninebot-cles-1710",
+      "note": "17/10 : modèles publiés sans clé roue ou disque — recherche des clés de montage (jante, section, disque)",
+      "max_models": 2
+    },
+    {
+      "brand": "NIU",
+      "models": [
+        "KQi 100F",
+        "KQi 100P",
+        "KQi 200P",
+        "KQi 300P",
+        "KQi 300X",
+        "KQi Air",
+        "KQi Air X",
+        "KQi1 Pro",
+        "KQi1 Sport",
+        "KQi2 Pro",
+        "KQi3 Max",
+        "KQi3 Pro",
+        "KQi3 Sport"
+      ],
+      "out": "niu-cles-1710",
+      "note": "17/10 : modèles publiés sans clé roue ou disque — recherche des clés de montage (jante, section, disque)",
+      "max_models": 13
+    },
+    {
+      "brand": "Ootd",
+      "models": [
+        "S10",
+        "S30",
+        "SR1",
+        "SR3",
+        "T10",
+        "T90"
+      ],
+      "out": "ootd-cles-1710",
+      "note": "17/10 : modèles publiés sans clé roue ou disque — recherche des clés de montage (jante, section, disque)",
+      "max_models": 6
+    },
+    {
+      "brand": "Oxelo",
+      "models": [
+        "MD500E",
+        "SD500E"
+      ],
+      "out": "oxelo-cles-1710",
+      "note": "17/10 : modèles publiés sans clé roue ou disque — recherche des clés de montage (jante, section, disque)",
+      "max_models": 2
+    },
+    {
+      "brand": "Punk",
+      "models": [
+        "Rebel",
+        "Rider",
+        "Rider Pro"
+      ],
+      "out": "punk-cles-1710",
+      "note": "17/10 : modèles publiés sans clé roue ou disque — recherche des clés de montage (jante, section, disque)",
+      "max_models": 3
+    },
+    {
+      "brand": "Pure Electric",
+      "models": [
+        "Air⁶ Pro+ Suspension",
+        "Air⁶ Suspension",
+        "Air⁶ Ultra Max Suspension",
+        "Air⁶ Ultra Suspension",
+        "Air⁵",
+        "Air⁵ Ultra",
+        "Escape Pro",
+        "Escape",
+        "Escape Pro+ Suspension",
+        "Escape Ultra Max Suspension"
+      ],
+      "out": "pure-electric-cles-1710",
+      "note": "17/10 : modèles publiés sans clé roue ou disque — recherche des clés de montage (jante, section, disque)",
+      "max_models": 10
+    },
+    {
+      "brand": "Segway",
+      "models": [
+        "GT1",
+        "GT2",
+        "GT3",
+        "P65"
+      ],
+      "out": "segway-cles-1710",
+      "note": "17/10 : modèles publiés sans clé roue ou disque — recherche des clés de montage (jante, section, disque)",
+      "max_models": 4
+    },
+    {
+      "brand": "Smartgyro",
+      "models": [
+        "Crossover Dual Max 2",
+        "K1",
+        "K5 Pro",
+        "Raptor EVO",
+        "Rockway GL",
+        "Rockway GT",
+        "Rockway GT Dual",
+        "Rockway GTS",
+        "Speedway Pro",
+        "Z-One 2"
+      ],
+      "out": "smartgyro-cles-1710",
+      "note": "17/10 : modèles publiés sans clé roue ou disque — recherche des clés de montage (jante, section, disque)",
+      "max_models": 10
+    },
+    {
+      "brand": "SoFlow",
+      "models": [
+        "S05",
+        "SO ONE Lite",
+        "SO ONE Pro",
+        "SO4 Pro",
+        "SO4 Pro GT 2",
+        "SO4 Pro Max"
+      ],
+      "out": "soflow-cles-1710",
+      "note": "17/10 : modèles publiés sans clé roue ou disque — recherche des clés de montage (jante, section, disque)",
+      "max_models": 6
+    },
+    {
+      "brand": "Speedway",
+      "models": [
+        "Leger Pro",
+        "Mini 4 Pro",
+        "Mini 4 Pro Lite"
+      ],
+      "out": "speedway-cles-1710",
+      "note": "17/10 : modèles publiés sans clé roue ou disque — recherche des clés de montage (jante, section, disque)",
+      "max_models": 3
+    },
+    {
+      "brand": "Teverun",
+      "models": [
+        "Blade GT II Pro",
+        "Blade Mini Pro",
+        "Fighter Mini Q",
+        "Fighter Mini Q Pro",
+        "Fighter Supreme Ultra",
+        "Space"
+      ],
+      "out": "teverun-cles-1710",
+      "note": "17/10 : modèles publiés sans clé roue ou disque — recherche des clés de montage (jante, section, disque)",
+      "max_models": 6
+    },
+    {
+      "brand": "Urbanglide",
+      "models": [
+        "100 Evo",
+        "All Road 5",
+        "All Road 6 2x2",
+        "All Road 6 Pro",
+        "eCross Duo",
+        "Ecross Go",
+        "eCross Max 2x2 Gen 2",
+        "eCross One",
+        "eCross Pro Boost 2",
+        "Ride 100 Max",
+        "Ride 100 Max 2",
+        "Ride 85 Evo",
+        "Urbanride 100XS",
+        "Urbanride 85+"
+      ],
+      "out": "urbanglide-cles-1710",
+      "note": "17/10 : modèles publiés sans clé roue ou disque — recherche des clés de montage (jante, section, disque)",
+      "max_models": 14
+    },
+    {
+      "brand": "Velity",
+      "models": [
+        "511-Ss",
+        "511-Sx"
+      ],
+      "out": "velity-cles-1710",
+      "note": "17/10 : modèles publiés sans clé roue ou disque — recherche des clés de montage (jante, section, disque)",
+      "max_models": 2
+    },
+    {
+      "brand": "Vsett",
+      "models": [
+        "10 Lite",
+        "11+ Super",
+        "8 Apex",
+        "8 Lite",
+        "8+",
+        "9 Apex"
+      ],
+      "out": "vsett-cles-1710",
+      "note": "17/10 : modèles publiés sans clé roue ou disque — recherche des clés de montage (jante, section, disque)",
+      "max_models": 6
+    },
+    {
+      "brand": "Weped",
+      "models": [
+        "FF",
+        "Fold 11",
+        "Fold 3",
+        "GTS",
+        "SS-T",
+        "SSGT"
+      ],
+      "out": "weped-cles-1710",
+      "note": "17/10 : modèles publiés sans clé roue ou disque — recherche des clés de montage (jante, section, disque)",
+      "max_models": 6
+    },
+    {
+      "brand": "Wispeed",
+      "models": [
+        "AIRO V10",
+        "AIRO V16",
+        "AIRO V6",
+        "C10-40 Pro",
+        "SUV1000",
+        "SUVPILOT 150R",
+        "SUVPILOT 480",
+        "T855",
+        "T855 Pro",
+        "X1050 Max"
+      ],
+      "out": "wispeed-cles-1710",
+      "note": "17/10 : modèles publiés sans clé roue ou disque — recherche des clés de montage (jante, section, disque)",
+      "max_models": 10
+    },
+    {
+      "brand": "Xiaomi",
+      "models": [
+        "Electric Scooter 4 Lite 2nd Gen",
+        "Electric Scooter 5 Max",
+        "Electric Scooter 5 Plus",
+        "Electric Scooter 6",
+        "Electric Scooter 6 Lite",
+        "Electric Scooter 6 Pro",
+        "Mi Electric Scooter 1S"
+      ],
+      "out": "xiaomi-cles-1710",
+      "note": "17/10 : modèles publiés sans clé roue ou disque — recherche des clés de montage (jante, section, disque)",
+      "max_models": 7
+    },
+    {
+      "brand": "Yeep.me",
+      "models": [
+        "100a",
+        "100a start",
+        "120a",
+        "120a Pro",
+        "80N Evo Plus",
+        "85a Evo",
+        "Dakar 110 Pro"
+      ],
+      "out": "yeep-me-cles-1710",
+      "note": "17/10 : modèles publiés sans clé roue ou disque — recherche des clés de montage (jante, section, disque)",
+      "max_models": 7
+    },
+    {
+      "brand": "Zero",
+      "models": [
+        "10",
+        "8X",
+        "9"
+      ],
+      "out": "zero-cles-1710",
+      "note": "17/10 : modèles publiés sans clé roue ou disque — recherche des clés de montage (jante, section, disque)",
+      "max_models": 3
+    },
+    {
+      "brand": "Zwheel",
+      "models": [
+        "ZCougar",
+        "ZCougar Duo",
+        "ZFox Max",
+        "ZRino",
+        "ZRino Duo",
+        "ZRino Duo Max",
+        "ZRino SE",
+        "ZWolf",
+        "ZWolf Plus"
+      ],
+      "out": "zwheel-cles-1710",
+      "note": "17/10 : modèles publiés sans clé roue ou disque — recherche des clés de montage (jante, section, disque)",
+      "max_models": 9
     }
   ],
   "ajout_modeles": 0,
