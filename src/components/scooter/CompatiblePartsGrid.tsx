@@ -8,6 +8,7 @@ import { tubesCatalogueUrl } from "@/components/pdp/CompatibilityMatrix";
 import { Button } from "@/components/ui/button";
 import { Skeleton } from "@/components/ui/skeleton";
 import PartCard from "@/components/parts/PartCard";
+import TireSizeFinder from "@/components/scooter/TireSizeFinder";
 
 interface CompatiblePartsGridProps {
   parts: ScooterCompatiblePart[];
@@ -176,6 +177,11 @@ const CompatiblePartsGrid = ({
               </Link>
             </div>
           </motion.div>
+        )}
+
+        {/* 17/10 : aucun pneu / chambre relié → le client lit sa taille sur le flanc du pneu */}
+        {!parts.some((p) => ["pneus", "chambres-a-air", "pneus-pleins"].includes(p.category?.slug ?? "")) && (
+          <TireSizeFinder scooterId={scooterId} scooterName={scooterName} />
         )}
       </div>
     </section>
