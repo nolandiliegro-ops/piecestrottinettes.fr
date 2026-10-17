@@ -15,6 +15,7 @@ import { Skeleton } from "@/components/ui/skeleton";
 import { Button } from "@/components/ui/button";
 import { useBrands, useScooterModels } from "@/hooks/useScooterData";
 import { getPrimaryImage } from "@/lib/entityImage";
+import { AtelierHead, PhotoTile, brandPhoto } from "@/components/listing/Atelier";
 
 const normalize = (v: string) =>
   v.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "");
@@ -76,6 +77,7 @@ const Scooters = () => {
   // 17/10 : habillage racing des filtres + recherche à comparer, ?filtres=1..5 (sans paramètre : barre actuelle)
   const fl = Number(params.get("filtres"));
   // 17/10 : « Plaques » (1) retenue par Nolan = défaut ; ?filtres=0 = ancienne barre, 2..5 = autres propositions
+  const atelier = params.get("vue") === "atelier";
   const filterLook = (params.get("filtres") === null ? 1 : fl >= 1 && fl <= 5 ? fl : null) as FilterLook | null;
   const setParam = useCallback((mutate: (p: URLSearchParams) => void) => {
     const next = new URLSearchParams(params);
@@ -164,6 +166,21 @@ const Scooters = () => {
 
       {/* Main content area */}
       <main className="pt-16 lg:pt-20">
+        {atelier ? (
+          // 17/10 : maquette « Atelier » (?vue=atelier) — même squelette que /catalogue, vignettes = photos de marque.
+          <section className="container mx-auto px-4 pt-6 pb-4">
+            <AtelierHead title="Trottinettes" n={scootersLoading ? null : shownScooters.length} unit={activeBrandName ? `modèles ${activeBrandName}` : "modèles"}
+              query={query} onQuery={setQuery} placeholder="Ta trottinette : Xiaomi, G30…" />
+            <div className="mt-5 flex gap-2.5 overflow-x-auto pb-2 -mx-4 px-4" style={{ scrollbarWidth: "none" }}>
+              <PhotoTile name="Toutes" n={allScooters.length} on={!activeBrand} onClick={() => setActiveBrand(null)} />
+              {visibleBrands.map((b) => (
+                <PhotoTile key={b.slug} name={b.name} n={counts[b.slug]} logo={b.logo_url} img={brandPhoto(b)}
+                  on={activeBrand === b.slug} onClick={() => setActiveBrand(activeBrand === b.slug ? null : b.slug)} />
+              ))}
+            </div>
+          </section>
+        ) : (
+        <>
         {/* Title Section */}
         <section className="container mx-auto px-4 py-6 lg:py-8 text-center">
           <motion.h1
@@ -238,6 +255,9 @@ const Scooters = () => {
             />
           )}
         </section>
+
+        </>
+        )}
 
         {/* 17/10 : marque choisie → accès visible à sa page (avis, gamme, toutes les pièces). */}
         {activeBrand && activeBrandName && (
