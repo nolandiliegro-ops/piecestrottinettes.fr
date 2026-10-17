@@ -143,20 +143,18 @@ const Title = ({ dark = false, center = false }: { dark?: boolean; center?: bool
   </h1>
 );
 
-// ─── Vignette catégorie à coin coupé ───
+// ─── Vignette catégorie à coin coupé : photo en haut, nom + nombre en bas (jamais superposés) ───
 const CatTile = ({ c, img, n, on, onClick, size = "md" }: { c: CatCategory | null; img?: string; n: number; on: boolean; onClick: () => void; size?: "sm" | "md" }) => (
   <button type="button" onClick={onClick} aria-pressed={on}
-    className={cn("relative text-left shrink-0 transition-transform hover:-translate-y-0.5", size === "md" ? "p-3 h-[118px] md:h-[132px]" : "p-2.5 h-[96px] w-[132px]")}
+    className={cn("relative text-left shrink-0 flex flex-col transition-transform hover:-translate-y-0.5", size === "md" ? "p-2.5 h-[128px] md:h-[140px]" : "p-2 h-[112px] w-[118px]")}
     style={{ clipPath: CHAMFER, background: on ? CARBON : "#fff", boxShadow: on ? "none" : `inset 0 0 0 1px ${LINE}` }}>
     <span aria-hidden className="absolute left-0 top-0 bottom-0 w-1" style={{ background: on ? GREEN : "transparent" }} />
-    <span className={cn("absolute right-2 top-2 flex items-center justify-center", size === "md" ? "w-[58%] h-[64%]" : "w-[52%] h-[58%]")}>
-      {c ? (img ? <img src={img} alt="" loading="lazy" className="max-w-full max-h-full object-contain mix-blend-multiply" style={on ? { mixBlendMode: "normal", filter: "drop-shadow(0 6px 10px rgba(0,0,0,0.35))" } : undefined} /> : null)
+    <span className="flex-1 min-h-0 flex items-center justify-center">
+      {c ? (img ? <img src={img} alt="" loading="lazy" className="max-w-[85%] max-h-full object-contain" style={on ? { filter: "drop-shadow(0 6px 10px rgba(0,0,0,0.35))" } : { mixBlendMode: "multiply" }} /> : null)
         : <LayoutGrid className={cn("w-8 h-8", on ? "text-white" : "text-carbon")} />}
     </span>
-    <span className="absolute left-3 bottom-2.5 right-3">
-      <span className="block text-sm uppercase leading-tight line-clamp-2" style={{ fontFamily: FONT, fontWeight: 800, color: on ? "#fff" : CARBON }}>{c ? c.name : "Toutes"}</span>
-      <span className="block text-sm" style={{ fontFamily: UNB, fontStyle: "italic", fontWeight: 900, color: on ? "#9FD3AE" : GREEN }}>{n}</span>
-    </span>
+    <span className="pt-1.5 pl-1 text-sm leading-tight line-clamp-2" style={{ fontFamily: FONT, fontWeight: 800, color: on ? "#fff" : CARBON, hyphens: "auto" }} lang="fr">{c ? c.name : "Toutes"}</span>
+    <span className="absolute left-3 top-2 text-sm" style={{ fontFamily: UNB, fontStyle: "italic", fontWeight: 900, color: on ? "#9FD3AE" : GREEN }}>{n}</span>
   </button>
 );
 
