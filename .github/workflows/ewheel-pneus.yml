@@ -1,0 +1,38 @@
+name: eWheel pneus (catalogue fournisseur)
+
+# 17/10/2026 : LECTURE SEULE. Modifier config/fournisseurs/_ewheel_run.txt = UN run.
+# Sortie : branche donnees-extraction, dossier fournisseurs/ewheel/.
+
+on:
+  push:
+    branches: [main]
+    paths: ['config/fournisseurs/_ewheel_run.txt']
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  ewheel:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - name: Aspiration
+        run: node scripts/ewheel-pneus.mjs
+      - name: Résultats → branche donnees-extraction
+        if: always()
+        shell: bash
+        run: |
+          git config user.name "catalogue-bot"
+          git config user.email "catalogue-bot@users.noreply.github.com"
+          mv out/fournisseurs /tmp/fournisseurs
+          git fetch origin donnees-extraction
+          git checkout -B donnees-extraction origin/donnees-extraction
+          mkdir -p fournisseurs && cp -r /tmp/fournisseurs/. fournisseurs/
+          git add fournisseurs
+          git commit -q -m "ewheel pneus : $(date -u +%FT%TZ)" || echo "rien à commiter"
+          for i in 1 2 3; do git push origin donnees-extraction && break; git pull --rebase origin donnees-extraction; done
