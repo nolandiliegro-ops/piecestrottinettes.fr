@@ -55,8 +55,9 @@ const askUrl = (partSlug: string, partName: string, model?: string) => {
 };
 
 const ModelChip = ({ s, tone = "ok" }: { s: CompatibleScooter; tone?: "ok" | "check" }) => (
-  <Link to={`/scooter/${s.slug}`} className="inline-flex items-center min-h-[40px] px-3 rounded-full text-sm font-semibold border"
-    style={{ fontFamily: FONT, color: CARBON, backgroundColor: tone === "ok" ? "rgba(74,124,89,0.10)" : "#FFF8EB", borderColor: tone === "ok" ? "rgba(74,124,89,0.25)" : "#F5D9A8" }}>
+  // 17/10 : plus de pilules rondes (« je les vois partout ») — plaque rectangulaire à filet de couleur, comme les tuiles de caractéristiques.
+  <Link to={`/scooter/${s.slug}`} className="relative inline-flex items-center min-h-[40px] pl-3.5 pr-3 text-sm font-semibold border bg-white overflow-hidden hover:-translate-y-0.5 transition-transform"
+    style={{ fontFamily: FONT, color: CARBON, borderRadius: 4, borderColor: LINE, boxShadow: `inset 3px 0 0 ${tone === "ok" ? GREEN : "#D97706"}` }}>
     {short(s)}
   </Link>
 );
@@ -170,20 +171,21 @@ const CompatCompact = ({ look, scooters, partSlug, partName }: Props) => {
           {shown.map((g) => {
             const on = g.brand === open;
             return (
+              // Plaque de course : coin coupé, marque en capitales, compteur en Unbounded italique.
               <button key={g.brand} type="button" onClick={() => setOpen(on ? null : g.brand)} aria-expanded={on}
-                className="inline-flex items-center gap-1.5 min-h-[44px] px-3.5 rounded-full border text-sm font-bold transition-colors"
-                style={{ fontFamily: FONT, backgroundColor: on ? CARBON : "#fff", color: on ? "#fff" : CARBON, borderColor: on ? CARBON : LINE }}>
-                {g.brand}<span style={{ fontFamily: UNB, fontStyle: "italic", color: on ? "#9FD3AE" : GREEN }}>{g.items.length}</span>
+                className="inline-flex items-center gap-2 min-h-[44px] pl-3 pr-4 text-sm font-extrabold uppercase tracking-wide transition-colors"
+                style={{ fontFamily: FONT, backgroundColor: on ? CARBON : "#fff", color: on ? "#fff" : CARBON, clipPath: "polygon(0 0, calc(100% - 10px) 0, 100% 10px, 100% 100%, 0 100%)", boxShadow: on ? "none" : `inset 0 0 0 1px ${LINE}` }}>
+                {g.brand}<span className="text-base" style={{ fontFamily: UNB, fontWeight: 900, fontStyle: "italic", color: on ? "#9FD3AE" : GREEN }}>{g.items.length}</span>
               </button>
             );
           })}
           {groups.length > 8 && (
-            <button type="button" onClick={() => setAll(!all)} className="inline-flex items-center min-h-[44px] px-3.5 rounded-full text-sm font-bold underline" style={{ fontFamily: FONT, color: CARBON }}>
+            <button type="button" onClick={() => setAll(!all)} className="inline-flex items-center min-h-[44px] px-3 text-sm font-bold underline" style={{ fontFamily: FONT, color: CARBON }}>
               {all ? "Moins" : `+ ${groups.length - 8} marques`}
             </button>
           )}
         </div>
-        {cur && <div className="mt-3 flex flex-wrap gap-1.5 rounded-xl p-3" style={{ backgroundColor: "#F3F0E9" }}>{cur.items.map((s) => <ModelChip key={s.id} s={s} />)}</div>}
+        {cur && <div className="mt-2 flex flex-wrap gap-1.5 p-3" style={{ backgroundColor: CARBON, borderRadius: 4 }}>{cur.items.map((s) => <ModelChip key={s.id} s={s} />)}</div>}
         <AskLine partSlug={partSlug} partName={partName} />
       </div>
     );
