@@ -36,13 +36,15 @@ const TAB_SLOTS: Record<GarageTab, string[]> = {
 };
 const ALL_SLOTS = ["hero", "stats", "code", "rider", "photo", "suivi", "aside", "parts"];
 
+// Seules les CARTES verre (div/section/aside arrondis) changent d'habit ; boutons, pastilles et flèches restent tels quels.
+const CARD = (v: number) => `[data-gvue="${v}"] :is(div,section,aside)[class*="backdrop-blur"]:is([class*="rounded-3xl"],[class*="rounded-2xl"])`;
 const light = (v: number) => `
-  [data-gvue="${v}"] [class*="backdrop-blur"]{background:rgba(250,250,248,0.95)!important;border-color:transparent!important;border-radius:0!important;clip-path:${CHAMFER};box-shadow:none!important;-webkit-backdrop-filter:none!important;backdrop-filter:none!important}
+  ${CARD(v)}{background:rgba(250,250,248,0.95)!important;border-color:transparent!important;border-radius:0!important;clip-path:${CHAMFER};box-shadow:none!important;-webkit-backdrop-filter:none!important;backdrop-filter:none!important}
 `;
 const dark = (v: number) => `
-  [data-gvue="${v}"] [class*="backdrop-blur"]{background:rgba(26,26,26,0.86)!important;border-color:transparent!important;border-radius:0!important;clip-path:${CHAMFER};box-shadow:none!important;color:#fff}
-  [data-gvue="${v}"] [class*="backdrop-blur"] :is(.text-gray-900,.text-gray-800,.text-gray-700,.text-black){color:#fff!important}
-  [data-gvue="${v}"] [class*="backdrop-blur"] :is(.text-gray-600,.text-gray-500,.text-gray-400){color:rgba(255,255,255,0.72)!important}
+  ${CARD(v)}{background:rgba(26,26,26,0.86)!important;border-color:transparent!important;border-radius:0!important;clip-path:${CHAMFER};box-shadow:none!important;color:#fff}
+  ${CARD(v)} :is(.text-gray-900,.text-gray-800,.text-gray-700,.text-black){color:#fff!important}
+  ${CARD(v)} :is(.text-gray-600,.text-gray-500,.text-gray-400){color:rgba(255,255,255,0.72)!important}
 `;
 
 const mobileOrder = (v: number, order: string[]) =>
