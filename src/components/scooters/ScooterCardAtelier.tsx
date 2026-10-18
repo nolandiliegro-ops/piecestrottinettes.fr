@@ -20,7 +20,9 @@ const LINE = "#E2DCD0";
 const cut = (px: number) => `polygon(0 0, calc(100% - ${px}px) 0, 100% ${px}px, 100% 100%, 0 100%)`;
 
 export type CarteLook = 1 | 2 | 3 | 4 | 5;
+/** 18/10 soir : « Fiche technique » (4) choisie par Nolan = défaut ; ?cartes=0 = ancienne carte, 1..5 = propositions. */
 export const readCartesLook = (p: URLSearchParams): CarteLook | null => {
+  if (p.get("cartes") === null) return 4;
   const n = Number(p.get("cartes"));
   return n >= 1 && n <= 5 ? (n as CarteLook) : null;
 };
