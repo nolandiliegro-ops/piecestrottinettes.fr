@@ -124,7 +124,7 @@ const Head = ({ s, big, query, onQuery, inputRef, onSubmit, onCatalogue, center 
       </button>
     </form>
     <button type="button" onClick={onCatalogue} className="mt-2 min-h-[44px] text-sm font-bold underline underline-offset-4" style={{ fontFamily: FONT, color: s.sub }}>
-      Tu ne connais pas ton modèle ? Tout le catalogue
+      Pas ton modèle ? Cherche la pièce ↓
     </button>
   </div>
 );

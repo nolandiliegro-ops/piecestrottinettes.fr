@@ -74,7 +74,7 @@ const HeroSearchFirst = () => {
         onQuery={setQuery}
         inputRef={inputRef}
         onSubmit={submitFreeText}
-        onCatalogue={() => navigate("/catalogue")}
+        onCatalogue={() => { const el = document.querySelector("[data-home-variant]"); if (el) el.scrollIntoView({ behavior: "smooth", block: "start" }); else navigate("/catalogue"); }}
         scooters={scooters}
         isLoading={isLoading}
         isSearching={isSearching}
