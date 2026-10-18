@@ -5,6 +5,7 @@
  * Communs : vrai logo de la marque, nombre de pièces compatibles, la trott sort de sa plaque (comme l'accueil),
  * coin coupé, aplats francs, texte ≥ 14 px, carte entière cliquable (≥ 44 px).
  */
+import { useState } from "react";
 import { Link } from "react-router-dom";
 import { getPrimaryImage } from "@/lib/entityImage";
 import { optimizedImage } from "@/lib/imageTransform";
@@ -43,14 +44,22 @@ const modelName = (s: AtelierScooter) => {
   return b && s.name.toLowerCase().startsWith(b.toLowerCase() + " ") ? s.name.slice(b.length + 1) : s.name;
 };
 
-const Logo = ({ s, dark }: { s: AtelierScooter; dark?: boolean }) =>
-  s.brand?.logo_url ? (
-    <span className="inline-flex items-center h-7 px-2 max-w-[110px]" style={{ background: "#FFFFFF", clipPath: cut(6), boxShadow: dark ? undefined : `inset 0 0 0 1px ${LINE}` }}>
-      <img src={s.brand.logo_url} alt={s.brand.name} loading="lazy" className="max-h-[18px] max-w-full object-contain" />
+/** Logo de la marque. Si le logo n'est qu'un symbole (carré, ex. le « A » d'Apollo), on écrit le nom à côté :
+ *  la marque doit se lire sans la connaître. */
+const Logo = ({ s, dark }: { s: AtelierScooter; dark?: boolean }) => {
+  const [symbol, setSymbol] = useState(false);
+  const name = <span className="text-sm font-extrabold uppercase tracking-wide truncate" style={{ fontFamily: FONT, color: dark ? "#FFFFFF" : CARBON }}>{s.brand?.name}</span>;
+  if (!s.brand?.logo_url) return name;
+  return (
+    <span className="inline-flex items-center gap-1.5 min-w-0 max-w-full">
+      <span className="inline-flex items-center h-7 px-2 shrink-0 max-w-[110px]" style={{ background: "#FFFFFF", clipPath: cut(6), boxShadow: dark ? undefined : `inset 0 0 0 1px ${LINE}` }}>
+        <img src={s.brand.logo_url} alt={s.brand.name} loading="lazy" className="max-h-[18px] max-w-full object-contain"
+          onLoad={(e) => { const i = e.currentTarget; if (i.naturalWidth && i.naturalWidth / i.naturalHeight < 2.2) setSymbol(true); }} />
+      </span>
+      {symbol && name}
     </span>
-  ) : (
-    <span className="text-sm font-extrabold uppercase" style={{ fontFamily: FONT, color: dark ? "#FFFFFF" : CARBON }}>{s.brand?.name}</span>
   );
+};
 
 const Count = ({ n, tone }: { n: number; tone: "light" | "dark" | "green" }) => {
   const c = tone === "light" ? GREEN : tone === "dark" ? SOFT : "#FFFFFF";
@@ -102,12 +111,12 @@ export const ScooterCardAtelier = ({ s, look, index }: { s: AtelierScooter; look
 
   const tone = look === 2 ? "dark" : "light";
   const plateBg = look === 2 ? CARBON : look === 4 ? "#FFFFFF" : PAPER;
-  const band = look === 3 ? s.brand?.signature_color || CARBON : null;
+  const band = look === 3 ? s.brand?.signature_color || "#E9E4DA" : null;
 
   return (
-    <Link to={to} className="group block relative pt-10">
+    <Link to={to} className="group block relative pt-12">
       {/* La trott sort de sa plaque */}
-      <Img s={s} eager={eager} className="absolute z-10 left-1/2 -translate-x-1/2 top-0 w-[92%] h-[150px] md:h-[180px] object-contain transition-transform duration-300 group-hover:-translate-y-1.5" />
+      <Img s={s} eager={eager} className="absolute z-10 left-1/2 -translate-x-1/2 top-0 w-[96%] h-[160px] md:h-[190px] object-contain transition-transform duration-300 group-hover:-translate-y-1.5" />
       <div className="relative" style={{ background: plateBg, clipPath: cut(16), boxShadow: look === 2 ? undefined : `inset 0 0 0 1px ${LINE}` }}>
         {band && <div className="absolute inset-x-0 top-0 h-[96px] md:h-[116px]" style={{ background: band }} />}
         {look === 2 && <div className="absolute inset-x-0 top-0 h-[110px]" style={{ background: "radial-gradient(60% 70% at 50% 40%, rgba(255,255,255,0.16), transparent 70%)" }} />}
