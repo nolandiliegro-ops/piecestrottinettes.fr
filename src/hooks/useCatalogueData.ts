@@ -15,6 +15,8 @@ export const useAllParts = (categoryId: string | null) => {
   return useQuery({
     queryKey: ["all_parts", categoryId],
     queryFn: async (): Promise<CataloguePart[]> => {
+      // 18/10 : PostgREST plafonne à 1 000 lignes ; 732 pièces publiées aujourd'hui → paginer par 1 000.
+      const build = () => {
       let query = supabase
         .from("parts")
         .select(`
@@ -45,7 +47,16 @@ export const useAllParts = (categoryId: string | null) => {
         query = query.eq("category_id", categoryId);
       }
 
-      const { data, error } = await query;
+      return query;
+      };
+      const data: any[] = [];
+      let error: unknown = null;
+      for (let from = 0; ; from += 1000) {
+        const res = await build().order("id").range(from, from + 999);
+        if (res.error) { error = res.error; break; }
+        data.push(...(res.data || []));
+        if (!res.data || res.data.length < 1000) break;
+      }
 
       if (error) throw error;
 
