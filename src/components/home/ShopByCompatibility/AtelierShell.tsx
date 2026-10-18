@@ -3,7 +3,7 @@
  * Défaut constaté : deux cadres sombres emboîtés (bande anthracite + capsule #2A2A2A), polices
  * Anton/Inter hors identité Atelier, bords ronds. Correction commune aux 5 : un seul plan,
  * titres Unbounded 900 italique, texte Plus Jakarta Sans, coins coupés (chanfrein), orange absent.
- * Sans paramètre ?home, rien ne change : l'ancien module reste servi.
+ * Depuis le 18/10 : la 1 (Sans cadre) est servie par défaut ; ?home=0 rend l'ancien module.
  */
 import type { ReactNode } from "react";
 import { Link } from "react-router-dom";
@@ -13,13 +13,15 @@ import { optimizedImage } from "@/lib/imageTransform";
 
 export type HomeVariant = 1 | 2 | 3 | 4 | 5;
 
-/** Lit ?home=1..5 ; 0 = module actuel. */
+/** Choix de Nolan du 18/10 : « 1 Sans cadre » par défaut. ?home=2..5 = autres propositions, ?home=0 = ancien module. */
 export const readHomeVariant = (): 0 | HomeVariant => {
   try {
-    const n = Number(new URLSearchParams(window.location.search).get("home"));
-    return n >= 1 && n <= 5 ? (n as HomeVariant) : 0;
+    const raw = new URLSearchParams(window.location.search).get("home");
+    if (raw === null) return 1;
+    const n = Number(raw);
+    return n >= 1 && n <= 5 ? (n as HomeVariant) : n === 0 ? 0 : 1;
   } catch {
-    return 0;
+    return 1;
   }
 };
 
