@@ -308,7 +308,8 @@ const GarageWeekFrame = ({
             "
           >
             {/* COL 1 — Photo perso card (order-5 mobile, order-1 desktop) */}
-            <div className="order-5 lg:order-1">
+            {/* 18/10 : sur téléphone, la carte « Mets ta vraie photo ici » vide n'est plus montrée en vitrine (≈450 px). */}
+            <div className={`order-5 lg:order-1 ${currentScooter?.custom_photo_url ? "" : "hidden lg:block"}`}>
               <ScooterPhotoMiniCard
                 customPhotoUrl={currentScooter?.custom_photo_url ?? null}
                 scooterName={currentScooter?.scooter_model.name ?? ""}
@@ -619,7 +620,7 @@ const GarageWeekFrame = ({
         <div className="relative z-[1] flex flex-col gap-4 lg:gap-5 p-6 lg:p-7 flex-1">
           {/* Eyebrow */}
           <span
-            className="inline-flex items-center gap-1.5 self-start text-[10px] font-extrabold tracking-[0.20em] uppercase"
+            className="hidden lg:inline-flex items-center gap-1.5 self-start text-[10px] font-extrabold tracking-[0.20em] uppercase"
             style={{
               color: "#FF8533",
               fontFamily: "'Plus Jakarta Sans', sans-serif",
@@ -631,7 +632,7 @@ const GarageWeekFrame = ({
 
           {/* H3 */}
           <h3
-            className="text-[26px] lg:text-[30px] leading-[1.04] text-white"
+            className="hidden lg:block text-[26px] lg:text-[30px] leading-[1.04] text-white"
             style={{
               fontFamily: "'Anton', sans-serif",
               letterSpacing: "-0.015em",
@@ -645,7 +646,7 @@ const GarageWeekFrame = ({
 
           {/* Description — texte adouci */}
           <p
-            className="text-[13px] leading-[1.55]"
+            className="hidden lg:block text-[13px] leading-[1.55]"
             style={{
               color: "rgba(255,255,255,0.85)",
               fontFamily: "'Plus Jakarta Sans', sans-serif",
@@ -783,7 +784,7 @@ const GarageWeekFrame = ({
 
           {/* Footer */}
           <p
-            className="text-[10.5px] italic text-center mt-1"
+            className="hidden lg:block text-[10.5px] italic text-center mt-1"
             style={{
               color: "rgba(255,255,255,0.55)",
               fontFamily: "'Plus Jakarta Sans', sans-serif",

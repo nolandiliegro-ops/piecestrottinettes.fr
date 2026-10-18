@@ -46,7 +46,7 @@ const GarageWeekIntro = () => {
             fontFamily: "'Plus Jakarta Sans', sans-serif",
           }}
         >
-          + de 8 000 riders nous font confiance
+          Espace rider · gratuit
         </span>
       </motion.div>
 
@@ -90,11 +90,11 @@ const GarageWeekIntro = () => {
             Suis ta machine en temps réel.
           </span>
         </p>
-        <p className="text-[14px] sm:text-[15px] lg:text-base leading-[1.55]">
+        <p className="hidden sm:block text-[14px] sm:text-[15px] lg:text-base leading-[1.55]">
           Gagne de l'XP à chaque action, débloque des wallpapers exclusifs,
           accède à des offres réservées membres.
         </p>
-        <p className="text-[13px] sm:text-sm lg:text-[15px] leading-[1.55] italic pt-1">
+        <p className="hidden sm:block text-[13px] sm:text-sm lg:text-[15px] leading-[1.55] italic pt-1">
           Le meilleur de la communauté mobilité électrique —{" "}
           <span className="not-italic font-bold" style={{ color: "#4A7C59" }}>
             gratuit, fun, addictif.

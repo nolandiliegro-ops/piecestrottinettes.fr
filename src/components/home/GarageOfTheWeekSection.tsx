@@ -350,7 +350,7 @@ const GarageOfTheWeekSection = () => {
   return (
     <section
       aria-labelledby="garage-of-the-week-title"
-      className="relative px-4 sm:px-6 lg:px-8 py-16 lg:py-24 overflow-hidden"
+      className="relative px-4 sm:px-6 lg:px-8 py-10 lg:py-24 overflow-hidden"
       style={{ backgroundColor: "#FAFAF8" }}
     >
       <div
@@ -363,7 +363,7 @@ const GarageOfTheWeekSection = () => {
       />
 
       <motion.div
-        className="relative mx-auto max-w-7xl flex flex-col gap-12 lg:gap-16"
+        className="relative mx-auto max-w-7xl flex flex-col gap-7 lg:gap-16"
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true, margin: "-80px" }}
