@@ -13,6 +13,7 @@ import { useOrderConversations } from "@/hooks/useOrderMessages";
 import { cn } from "@/lib/utils";
 import { getXPLevel, getProgressToNextLevel } from "@/lib/xpLevels";
 import { useBrandAsset } from "@/hooks/useBrandAssets";
+import { SiteLogo, readLogoVariant } from "@/components/brand/SiteLogo";
 import GarageBadge from "@/components/GarageBadge";
 import ScooterSelectorSheet from "@/components/scooter/ScooterSelectorSheet";
 import {
@@ -53,6 +54,8 @@ const Header = () => {
   const totalUnread = user ? convs.reduce((s, c) => s + c.unread_count, 0) : 0;
   const navigate = useNavigate();
   const logoMain = useBrandAsset("logo_main_light");
+  // 18/10 : propositions de logo derrière ?logo=1..5 ; sans paramètre, PNG actuel inchangé.
+  const [logoVariant] = useState(readLogoVariant);
 
   // Shimmer animation when item count increases
   useEffect(() => {
@@ -98,16 +101,20 @@ const Header = () => {
       <div className="container mx-auto px-4 lg:px-8">
         <div className="flex items-center justify-between h-16 lg:h-20">
           {/* Logo */}
-          <Link to="/" className="flex items-center group hover:opacity-90 transition-opacity">
-            <img 
-              src={logoMain.url}
-              alt={logoMain.alt || "piècestrottinettes.FR"}
-              className="h-28 sm:h-32 lg:h-36 -my-5 w-auto object-contain"
-            />
+          <Link to="/" aria-label="piecestrottinettes.fr — accueil" className="flex items-center shrink-0 group hover:opacity-90 transition-opacity">
+            {logoVariant ? (
+              <SiteLogo variant={logoVariant} />
+            ) : (
+              <img
+                src={logoMain.url}
+                alt={logoMain.alt || "piècestrottinettes.FR"}
+                className="h-28 sm:h-32 lg:h-36 -my-5 w-auto object-contain"
+              />
+            )}
           </Link>
 
           {/* Desktop Navigation */}
-          <nav className="hidden lg:flex items-center gap-8">
+          <nav className={cn("hidden lg:flex items-center", logoVariant ? "gap-5 xl:gap-8 ml-6" : "gap-8")}>
             {navLinks.map((link) => (
               <Link
                 key={link.href}
@@ -150,6 +157,17 @@ const Header = () => {
                 >
                   {selectedScooter.name}
                 </span>
+              </button>
+            ) : logoVariant ? (
+              /* Avec un logo proposé : sur téléphone, le sélecteur devient une icône 44 px (la barre débordait de 94 px à 390 px). */
+              <button
+                type="button"
+                onClick={() => setScooterSheetOpen(true)}
+                aria-label="Choisir une trottinette"
+                className="flex md:hidden items-center justify-center w-11 h-11 shrink-0"
+                style={{ border: "1px solid rgba(0,0,0,0.12)", clipPath: "polygon(0 0, calc(100% - 8px) 0, 100% 8px, 100% 100%, 0 100%)", background: "#fff" }}
+              >
+                <Bike className="w-5 h-5" style={{ color: "#1A1A1A" }} />
               </button>
             ) : (
               <button
@@ -550,14 +568,15 @@ const Header = () => {
             ) : (
               <GarageBadge
                 onClick={handleGarageClick}
+                className={logoVariant ? "max-sm:px-2 max-sm:[&>span:nth-child(2)]:hidden shrink-0" : undefined}
               />
             )}
 
             {/* Mobile Menu Button */}
-            <Button 
-              variant="ghost" 
-              size="icon" 
-              className="lg:hidden"
+            <Button
+              variant="ghost"
+              size="icon"
+              className={cn("lg:hidden", logoVariant && "w-11 h-11 shrink-0")}
               onClick={() => setIsMenuOpen(!isMenuOpen)}
             >
               <Menu className="w-5 h-5" />
