@@ -278,7 +278,7 @@ const ShopByCompatibility = () => {
           brandName={selectedScooter?.brandName ?? null}
           brandColor={brandIsDefault ? null : brandColor}
           totalCount={data.totalCount}
-          categories={data.availableCategories}
+          categories={[...data.availableCategories].sort((a, b) => b.count - a.count)}
           selectedSlugs={selectedCategories}
           onToggle={handleToggleCategory}
           query={productQuery}
