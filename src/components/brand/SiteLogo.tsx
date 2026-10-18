@@ -10,7 +10,7 @@
 import { useEffect } from "react";
 import { useBrandAsset } from "@/hooks/useBrandAssets";
 
-export type LogoVariant = 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 | 12 | 13 | 14 | 15;
+export type LogoVariant = 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 | 12 | 13 | 14 | 15 | 16;
 
 export const LOGO_NAMES: Record<LogoVariant, string> = {
   1: "Actuel repassé",
@@ -30,13 +30,15 @@ export const LOGO_NAMES: Record<LogoVariant, string> = {
   13: "Brique",
   14: "Mandarine",
   15: "Geste orange",
+  // Choix de Nolan (18/10, 5e tour Higgsfield, déclinaison n°2) : marqueur noir + trait orange, .fr orange au bout.
+  16: "Marqueur 2026",
 };
 
-/** ?logo=1..15 → proposition ; sinon null (PNG actuel). */
+/** ?logo=1..16 → proposition ; sinon null (PNG actuel). */
 export const readLogoVariant = (): LogoVariant | null => {
   try {
     const n = Number(new URLSearchParams(window.location.search).get("logo"));
-    return n >= 1 && n <= 15 ? (n as LogoVariant) : null;
+    return n >= 1 && n <= 16 ? (n as LogoVariant) : null;
   } catch {
     return null;
   }
@@ -268,6 +270,12 @@ const E14 = () => <Encre ink="#DD6420" />;
 /* 15 — Geste orange : orange du logo sur le mot ET le trait, « PIÈCES » seul en noir. */
 const E15 = () => <Encre ink={LOGO_ORANGE} trait={LOGO_ORANGE} dot={LOGO_ORANGE} />;
 
+/* 16 — Marqueur 2026 : le logo choisi, recadré serré sur l'écriture (plus de vide autour). */
+export const LOGO_2026_SRC = "/brand/logo-pt-2026.png";
+const Marqueur2026 = () => (
+  <img src={LOGO_2026_SRC} alt="piecestrottinettes.fr" width={857} height={247} className="block h-[46px] lg:h-[54px] w-auto" />
+);
+
 /** Police pinceau chargée seulement quand une proposition est affichée (rien ne change pour les autres visiteurs). */
 const useBrushFont = () => {
   useEffect(() => {
@@ -283,6 +291,6 @@ const useBrushFont = () => {
 
 export const SiteLogo = ({ variant }: { variant: LogoVariant }) => {
   useBrushFont();
-  const C = { 1: Actuel, 2: Signature, 3: Plaque, 4: Ecrou, 5: Roue, 6: SigOrange, 7: SigCarbone, 8: SigEtiquette, 9: SigEmpile, 10: SigEncre, 11: E11, 12: E12, 13: E13, 14: E14, 15: E15 }[variant];
+  const C = { 1: Actuel, 2: Signature, 3: Plaque, 4: Ecrou, 5: Roue, 6: SigOrange, 7: SigCarbone, 8: SigEtiquette, 9: SigEmpile, 10: SigEncre, 11: E11, 12: E12, 13: E13, 14: E14, 15: E15, 16: Marqueur2026 }[variant];
   return <C />;
 };
