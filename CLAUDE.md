@@ -77,6 +77,7 @@ src/components/
 
 ### Schema BDD clé
 - `parts` — prix HT, stock_quantity, slug, category_id, scooter compatibility
+- `scooter_models.compatible_parts_count` — tenu à jour AUTOMATIQUEMENT (18/10/2026) par 4 triggers statement-level (`trg_pc_count_ins/del/upd` sur part_compatibility, `trg_parts_published_count` sur parts) → `recalc_scooter_parts_count(uuid[])` = nb de pièces publiées distinctes. Ne jamais l'écrire à la main ; resync globale : `select recalc_scooter_parts_count(array(select id from scooter_models))`.
 - `orders` — stripe_session_id, status (awaiting_payment → paid → shipped), user_id nullable (guest ok)
 - `order_items` — snapshot prix au moment de l'achat
 - `user_garage` + `garage_modifications` — scooters et historique maintenances

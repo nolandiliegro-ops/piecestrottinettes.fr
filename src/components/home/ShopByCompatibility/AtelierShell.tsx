@@ -10,8 +10,9 @@ import { Link } from "react-router-dom";
 import { ArrowRight, ChevronDown, Search, X } from "lucide-react";
 import type { CategoryGroupV2 } from "@/hooks/useShopByCategoryDataV2";
 import { optimizedImage } from "@/lib/imageTransform";
+import EpureShell, { type EpureVariant } from "./EpureShell";
 
-export type HomeVariant = 1 | 2 | 3 | 4 | 5;
+export type HomeVariant = 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10;
 
 /** Choix de Nolan du 18/10 : « 1 Sans cadre » par défaut. ?home=2..5 = autres propositions, ?home=0 = ancien module. */
 export const readHomeVariant = (): 0 | HomeVariant => {
@@ -19,7 +20,7 @@ export const readHomeVariant = (): 0 | HomeVariant => {
     const raw = new URLSearchParams(window.location.search).get("home");
     if (raw === null) return 1;
     const n = Number(raw);
-    return n >= 1 && n <= 5 ? (n as HomeVariant) : n === 0 ? 0 : 1;
+    return n >= 1 && n <= 10 ? (n as HomeVariant) : n === 0 ? 0 : 1;
   } catch {
     return 1;
   }
@@ -245,6 +246,12 @@ const AtelierShell = (p: Props) => {
   const hasScooter = !!p.scooterName;
   const footLabel = p.ctaLabel || (hasScooter && p.brandName ? `Tout le catalogue ${p.brandName}` : "Voir tout le catalogue");
   const v = p.variant;
+  // 18/10 soir, 2e tour « épuré » (?home=6..10)
+  if (v >= 6) {
+    return <EpureShell variant={v as EpureVariant} scooterName={p.scooterName} brandName={p.brandName} totalCount={p.totalCount} categories={p.categories}
+      selectedSlugs={p.selectedSlugs} onToggle={p.onToggle} query={p.query} onQuery={p.onQuery} onPickScooter={p.onPickScooter} onClearScooter={p.onClearScooter}
+      catalogueHref={p.catalogueHref} footLabel={footLabel} grid={p.grid} productsRef={p.productsRef} />;
+  }
   const tone: Tone = v === 2 ? "dark" : v === 5 ? "green" : "light";
   const chip = <PickerChip scooterName={p.scooterName} brandName={p.brandName} onPick={p.onPickScooter} onClear={p.onClearScooter} tone={tone} />;
   const sub = hasScooter ? "Uniquement ce qui va sur ta trott." : "Cherche directement la pièce. Ta trott en tête ? Filtre en un clic.";
