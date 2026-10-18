@@ -3,7 +3,8 @@ import { useBrandAsset } from "@/hooks/useBrandAssets";
 import { useCategoryPartsCount } from "@/hooks/useCategoryPartsCount";
 
 const Footer = () => {
-  const logo = useBrandAsset("logo_main_light");
+  // Fond carbone : version négative (écriture blanche, trait orange gardé) — 18/10.
+  const logo = useBrandAsset("logo_main_dark");
   // Catégories parentes ayant ≥1 pièce publiée (les vides sont noindex → on ne les maille pas).
   const { data: categories = [] } = useCategoryPartsCount();
   const liveCategories = categories.filter((c) => c.parts_count > 0);
@@ -15,7 +16,7 @@ const Footer = () => {
           <img 
             src={logo.url}
             alt={logo.alt || "piècestrottinettes.FR"}
-            className="h-10 w-auto brightness-0 invert opacity-90"
+            className="h-11 w-auto"
           />
         </div>
 

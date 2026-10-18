@@ -4,7 +4,6 @@
  *
  * Keep these paths in sync with /public/ and src/assets/.
  */
-import logoMainLight from "@/assets/logo-pt.png";
 
 export type BrandAssetKey =
   | "logo_main_light"
@@ -18,9 +17,9 @@ export type BrandAssetKey =
 
 export const BRAND_ASSETS_FALLBACK: Record<BrandAssetKey, { url: string; alt: string }> = {
   logo_main_light: { url: "/brand/logo-pt-2026.png", alt: "piecestrottinettes.fr" },
-  logo_main_dark: { url: logoMainLight, alt: "Pièces Trottinettes" },
+  logo_main_dark: { url: "/brand/logo-pt-2026-negatif.png", alt: "piecestrottinettes.fr" },
   logo_compact_light: { url: "/brand/logo-pt-2026.png", alt: "piecestrottinettes.fr" },
-  logo_compact_dark: { url: logoMainLight, alt: "Pièces Trottinettes" },
+  logo_compact_dark: { url: "/brand/logo-pt-2026-negatif.png", alt: "piecestrottinettes.fr" },
   favicon: { url: "/brand/favicon-pt.png", alt: "" },
   apple_touch_icon: { url: "/brand/apple-touch-icon.png", alt: "" },
   og_image: {
