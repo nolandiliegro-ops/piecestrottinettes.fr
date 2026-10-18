@@ -11,6 +11,7 @@ import CategoryPills from "./CategoryPills";
 import PartsCarousel from "./PartsCarousel";
 import BottomBanner from "./BottomBanner";
 import ScooterSelectorSheet from "@/components/scooter/ScooterSelectorSheet";
+import AtelierShell, { readHomeVariant } from "./AtelierShell";
 import { THEME, hexToRgba } from "@/lib/theme";
 
 const NEUTRAL_TITLE_ACCENT = "#4A7C59";
@@ -28,6 +29,7 @@ const ShopByCompatibility = () => {
   );
   const [sheetOpen, setSheetOpen] = useState(false);
   const [productQuery, setProductQuery] = useState("");
+  const [homeVariant] = useState(readHomeVariant);
 
   // Ancre de scroll : après confirmation d'une trottinette, on amène l'utilisateur
   // sur la grille produits (le sheet vient de se fermer).
@@ -206,6 +208,93 @@ const ShopByCompatibility = () => {
     ? "rgba(255,255,255,0.08)"
     : hexToRgba(brandColor, 0.40);
 
+  const gridNode = (
+    gridLoading ? (
+              <div
+                className="flex gap-3.5 overflow-hidden"
+                style={{ height: 280 }}
+                aria-hidden
+              >
+                {Array.from({ length: 6 }).map((_, i) => (
+                  <div
+                    key={i}
+                    className="flex-shrink-0 w-[200px] sm:w-[220px] rounded-2xl bg-white/60 animate-pulse"
+                  />
+                ))}
+              </div>
+            ) : isSearching ? (
+              search.exactParts.length > 0 ? (
+                // Au moins 1 exact -> on n'affiche QUE les exacts (pas de bruit).
+                <PartsCarousel
+                  parts={search.exactParts}
+                  onReset={handleResetFilters}
+                  accentColor={accentColor}
+                  categoryFilterActive={selectedCategories.size > 0}
+                  enableQuickView
+                />
+              ) : search.relatedParts.length > 0 ? (
+                // 0 exact mais des proches -> suggestions, sans séparateur.
+                <>
+                  <p className="mb-3 text-xs font-semibold uppercase tracking-wider text-gray-400">
+                    Aucun résultat exact, voici des suggestions
+                  </p>
+                  <PartsCarousel
+                    parts={search.relatedParts}
+                    onReset={handleResetFilters}
+                    accentColor={accentColor}
+                    categoryFilterActive={selectedCategories.size > 0}
+                    enableQuickView
+                  />
+                </>
+              ) : (
+                // 0 exact ET 0 proche -> état vide clair.
+                <div
+                  className="flex flex-col items-center justify-center text-center"
+                  style={{ padding: "60px 16px" }}
+                >
+                  <p className="text-sm" style={{ color: "#9CA3AF", fontFamily: "'Inter', sans-serif" }}>
+                    Aucune pièce trouvée pour «&nbsp;{productQuery.trim()}&nbsp;»
+                  </p>
+                </div>
+              )
+            ) : (
+              <PartsCarousel
+                parts={gridParts}
+                onReset={handleResetFilters}
+                accentColor={accentColor}
+                categoryFilterActive={selectedCategories.size > 0}
+                enableQuickView
+              />
+            )
+  );
+
+  // Propositions de refonte (?home=1..5) — sans paramètre, module actuel inchangé.
+  if (homeVariant) {
+    return (
+      <>
+        <AtelierShell
+          variant={homeVariant}
+          scooterName={selectedScooter?.name ?? null}
+          brandName={selectedScooter?.brandName ?? null}
+          brandColor={brandIsDefault ? null : brandColor}
+          totalCount={data.totalCount}
+          categories={data.availableCategories}
+          selectedSlugs={selectedCategories}
+          onToggle={handleToggleCategory}
+          query={productQuery}
+          onQuery={setProductQuery}
+          onPickScooter={() => setSheetOpen(true)}
+          onClearScooter={() => { clearSelection(); setSelectedCategories(new Set()); }}
+          catalogueHref={catalogueHref}
+          ctaLabel={ctaLabel}
+          grid={gridNode}
+          productsRef={productsRef}
+        />
+        <ScooterSelectorSheet open={sheetOpen} onOpenChange={setSheetOpen} onConfirmed={handleSheetConfirmed} />
+      </>
+    );
+  }
+
   return (
     <section className="relative w-full" style={{ backgroundColor: darkBlockColor }}>
       <div className="max-w-7xl mx-auto px-4 lg:px-8 py-16 lg:py-20">
@@ -365,63 +454,7 @@ const ShopByCompatibility = () => {
               />
             </div>
 
-            {gridLoading ? (
-              <div
-                className="flex gap-3.5 overflow-hidden"
-                style={{ height: 280 }}
-                aria-hidden
-              >
-                {Array.from({ length: 6 }).map((_, i) => (
-                  <div
-                    key={i}
-                    className="flex-shrink-0 w-[200px] sm:w-[220px] rounded-2xl bg-white/60 animate-pulse"
-                  />
-                ))}
-              </div>
-            ) : isSearching ? (
-              search.exactParts.length > 0 ? (
-                // Au moins 1 exact -> on n'affiche QUE les exacts (pas de bruit).
-                <PartsCarousel
-                  parts={search.exactParts}
-                  onReset={handleResetFilters}
-                  accentColor={accentColor}
-                  categoryFilterActive={selectedCategories.size > 0}
-                  enableQuickView
-                />
-              ) : search.relatedParts.length > 0 ? (
-                // 0 exact mais des proches -> suggestions, sans séparateur.
-                <>
-                  <p className="mb-3 text-xs font-semibold uppercase tracking-wider text-gray-400">
-                    Aucun résultat exact, voici des suggestions
-                  </p>
-                  <PartsCarousel
-                    parts={search.relatedParts}
-                    onReset={handleResetFilters}
-                    accentColor={accentColor}
-                    categoryFilterActive={selectedCategories.size > 0}
-                    enableQuickView
-                  />
-                </>
-              ) : (
-                // 0 exact ET 0 proche -> état vide clair.
-                <div
-                  className="flex flex-col items-center justify-center text-center"
-                  style={{ padding: "60px 16px" }}
-                >
-                  <p className="text-sm" style={{ color: "#9CA3AF", fontFamily: "'Inter', sans-serif" }}>
-                    Aucune pièce trouvée pour «&nbsp;{productQuery.trim()}&nbsp;»
-                  </p>
-                </div>
-              )
-            ) : (
-              <PartsCarousel
-                parts={gridParts}
-                onReset={handleResetFilters}
-                accentColor={accentColor}
-                categoryFilterActive={selectedCategories.size > 0}
-                enableQuickView
-              />
-            )}
+            {gridNode}
 
             <BottomBanner
               mode={compatHeaderMode}

@@ -11,6 +11,7 @@ import FavoritesSection from "@/components/home/FavoritesSection";
 import TrustStrip from "@/components/home/TrustStrip";
 import HomeBridge from "@/components/home/HomeBridge";
 import BrandWallSection from "@/components/home/BrandWallSection";
+import { readHomeVariant } from "@/components/home/ShopByCompatibility/AtelierShell";
 
 const Index = () => {
   return (
@@ -31,7 +32,8 @@ const Index = () => {
 
       <main className="relative z-10 pt-16 lg:pt-20 pb-24 md:pb-0">
         <HeroSearchFirst />
-        <HomeBridge />
+        {/* La bande anthracite fait partie du « cadre » que les propositions ?home=1..5 retirent. */}
+        {!readHomeVariant() && <HomeBridge />}
         <ShopByCompatibility />
         <BrandWallSection />
         <GarageOfTheWeekSection />
