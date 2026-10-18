@@ -420,18 +420,8 @@ const ScooterCarousel = () => {
               >
                 Tout voir
               </h3>
-              <p
-                className="text-xs lg:text-sm mb-4 max-w-[180px]"
-                style={{
-                  color: "var(--token-global-text-secondary, #6B7280)",
-                  fontFamily: "'Plus Jakarta Sans', sans-serif",
-                  lineHeight: 1.4,
-                }}
-              >
-                Browse l'intégralité du catalogue sans sélectionner
-              </p>
               <div
-                className="inline-flex items-center gap-2 px-4 py-2.5 rounded-lg text-white text-sm font-semibold"
+                className="mt-3 inline-flex items-center gap-2 px-4 py-2.5 rounded-lg text-white text-sm font-semibold"
                 style={{
                   backgroundColor: "#1A1A1A",
                   fontFamily: "'Plus Jakarta Sans', sans-serif",
@@ -439,8 +429,8 @@ const ScooterCarousel = () => {
               >
                 <span>
                   {partsCountLoading || partsCount == null
-                    ? "Catalogue complet"
-                    : `Catalogue complet ${partsCount}`}
+                    ? "Toutes les pièces"
+                    : `Les ${partsCount} pièces`}
                 </span>
                 <ArrowRight className="w-4 h-4" strokeWidth={2.5} />
               </div>
