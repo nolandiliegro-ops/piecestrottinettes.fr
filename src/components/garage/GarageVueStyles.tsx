@@ -11,15 +11,15 @@ import type { CSSProperties } from "react";
 export type GarageVue = 1 | 2 | 3 | 4 | 5 | 6;
 export type GarageTab = "trott" | "entretien" | "tutos" | "pieces";
 
-/** Validé par Nolan le 18/10 : « 1 » (la page de base en DA Atelier) par défaut. ?vue=2..5 autres propositions, ?vue=0 = ancienne page. */
+/** 18/10 soir : la refonte propre (6, GarageAtelierView) par défaut. ?vue=1 = habillage CSS d'avant, ?vue=2..5 anciennes propositions, ?vue=0 = ancienne page. */
 export const readGarageVue = (): 0 | GarageVue => {
   try {
     const raw = new URLSearchParams(window.location.search).get("vue");
-    if (raw === null) return 1;
+    if (raw === null) return 6;
     const n = Number(raw);
-    return n >= 1 && n <= 6 ? (n as GarageVue) : n === 0 ? 0 : 1;
+    return n >= 1 && n <= 6 ? (n as GarageVue) : n === 0 ? 0 : 6;
   } catch {
-    return 1;
+    return 6;
   }
 };
 
