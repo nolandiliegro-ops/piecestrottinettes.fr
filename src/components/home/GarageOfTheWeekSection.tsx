@@ -5,6 +5,7 @@ import { useAuth } from "@/hooks/useAuth";
 import { supabase } from "@/integrations/supabase/client";
 import GarageWeekIntro from "./garage-week/GarageWeekIntro";
 import GarageWeekFrame from "./garage-week/GarageWeekFrame";
+import GarageAtelier, { readGarageVariant } from "./garage-week/GarageAtelier";
 
 const easeOutExpo: [number, number, number, number] = [0.16, 1, 0.3, 1];
 
@@ -326,6 +327,25 @@ const GarageOfTheWeekSection = () => {
   };
 
   const isLoading = profilesLoading || (riderIds.length > 0 && !garageEntries);
+
+  // Propositions de refonte (?garage=1..5, 18/10) — sans paramètre, bloc actuel inchangé.
+  const garageVariant = readGarageVariant();
+  if (garageVariant) {
+    return (
+      <GarageAtelier
+        variant={garageVariant}
+        riders={ridersBundle}
+        riderIndex={currentRiderIndex}
+        scooterIndex={currentScooterIndex}
+        onPrev={prevRider}
+        onNext={nextRider}
+        onGoToRider={goToRider}
+        onGoToScooter={goToScooter}
+        isLoading={isLoading}
+        isAuthenticated={!!user}
+      />
+    );
+  }
 
   return (
     <section
