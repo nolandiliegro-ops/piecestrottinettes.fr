@@ -100,17 +100,25 @@ const normalizeCategory = (raw: unknown): CompatiblePartRich["category"] => {
  * Ordered is_featured DESC, created_at DESC.
  * Source for "all" / "filtered-cats" modes (no scooter selected).
  */
-const useAllPublishedParts = (enabled: boolean) =>
+// 18/10 : avec une catégorie choisie, on interroge la base SUR cette catégorie (avant : on filtrait
+// l'échantillon des 150 plus récentes → « Plaquettes 57 » affichait « Aucune pièce » dès que
+// l'import de pneus a rempli l'échantillon).
+const useAllPublishedParts = (enabled: boolean, slugs: string[] = []) =>
   useQuery<CompatiblePartRich[], Error>({
-    queryKey: ["all-published-parts", 150],
+    queryKey: ["all-published-parts", 150, slugs],
     queryFn: async () => {
-      const { data, error } = await supabase
+      let req = supabase
         .from("parts")
         .select(
-          `id, name, slug, price, image_url, images, stock_quantity, is_featured,
+          slugs.length
+            ? `id, name, slug, price, image_url, images, stock_quantity, is_featured,
+           created_at, category:categories!inner(id, name, slug, icon, color)`
+            : `id, name, slug, price, image_url, images, stock_quantity, is_featured,
            created_at, category:categories(id, name, slug, icon, color)`
         )
-        .eq("published", true)
+        .eq("published", true);
+      if (slugs.length) req = req.in("category.slug", slugs);
+      const { data, error } = await req
         .order("is_featured", { ascending: false })
         .order("created_at", { ascending: false })
         .limit(150);
@@ -217,7 +225,18 @@ export const useShopByCategoryDataV2 = (
   const { data: allCategories = [], isLoading: catsLoading } = useAllParentCategories();
   const { data: compatParts = [], isLoading: compatLoading } =
     useCompatiblePartsRich(scooterModelId);
-  const { data: allParts = [], isLoading: allLoading } = useAllPublishedParts(!hasScooter);
+  // Slugs réels derrière les catégories choisies (une carte peut regrouper plusieurs catégories homonymes).
+  const selectedSlugList = useMemo(() => {
+    if (selectedCategories.size === 0) return [] as string[];
+    const names = new Set(
+      allCategories.filter((c) => selectedCategories.has(c.slug)).map((c) => normalizeName(c.name))
+    );
+    return allCategories.filter((c) => names.has(normalizeName(c.name))).map((c) => c.slug).sort();
+  }, [allCategories, selectedCategories]);
+  const { data: allParts = [], isLoading: allLoading } = useAllPublishedParts(
+    !hasScooter && (selectedCategories.size === 0 || selectedSlugList.length > 0),
+    selectedSlugList
+  );
   const { data: allSlugs } = useAllPublishedCategorySlugs(!hasScooter);
 
   return useMemo<ShopByCategoryDataV2>(() => {
