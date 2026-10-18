@@ -26,6 +26,7 @@ import MachineCardFace from "./MachineCardFace";
 import MachineRail, { MAX_TILES, VISIBLE } from "./MachineRail";
 import CardBackFace from "./CardBackFace";
 import RiderCardSocial from "./RiderCardSocial";
+import RiderCardAtelier, { readCarteVariant } from "./RiderCardAtelier";
 
 interface RiderCardProps {
   mode?: "owner" | "public";
@@ -46,6 +47,8 @@ const RiderCard = ({ mode = "owner", username, data: providedData }: RiderCardPr
   const [railFrom, setRailFrom] = useState(0);
   const [sharing, setSharing] = useState(false);
   const captureRef = useRef<HTMLDivElement>(null);
+  // Propositions du 18/10 (?carte=1..5) — sans paramètre, la carte v7 ci-dessous reste inchangée.
+  const [carte] = useState(readCarteVariant);
 
   const setFeatured = useSetFeaturedMachine();
   const toggleLike = useToggleCardLike();
@@ -374,6 +377,42 @@ const RiderCard = ({ mode = "owner", username, data: providedData }: RiderCardPr
       </div>
     </div>
   );
+
+  if (carte) {
+    return (
+      <RiderCardAtelier
+        variant={carte}
+        captureRef={captureRef}
+        profile={profile}
+        view={view}
+        tiles={tiles}
+        featuredIndex={featuredIndex}
+        current={current}
+        currentMods={currentMods}
+        holoIds={holoIds}
+        stats={stats}
+        levelName={progress.currentLevel.name}
+        levelNumber={progress.currentLevel.level}
+        xpPercent={xpPercent}
+        xpLabel={view === 0 ? `${profile.performance_points ?? 0} / ${progress.nextLevel ? progress.nextLevel.minXP : progress.currentLevel.minXP} XP` : allOwn ? "★ 100 % du site" : `${filled} / ${MODS_SLOTS} mods`}
+        rarity={rarity}
+        holo={holo}
+        back={back}
+        likes={data.likes}
+        liked={data.likedByMe}
+        canLike={!!user && user.id !== profile.id}
+        canEdit={canEdit}
+        sharing={sharing}
+        uploading={uploadPhoto.isPending}
+        onView={(v) => { setView(v); setBack(false); }}
+        onFlip={flip}
+        onLike={() => toggleLike.mutate({ ownerId: profile.id, liked: data.likedByMe })}
+        onShare={handleShare}
+        onUpload={(file) => current && uploadPhoto.mutate({ garageId: current.id, file, alreadyClaimed: current.photo_xp_claimed })}
+        onAddMachine={() => navigate("/trottinettes")}
+      />
+    );
+  }
 
   return (
     <div className="rcv7-scope">
