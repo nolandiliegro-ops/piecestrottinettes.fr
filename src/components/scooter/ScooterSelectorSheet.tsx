@@ -13,6 +13,7 @@ import {
   type ScooterOption,
 } from "@/contexts/ScooterContext";
 import { THEME, hexToRgba } from "@/lib/theme";
+import { searchScooters } from "@/lib/scooterSearch";
 
 interface Props {
   open: boolean;
@@ -119,10 +120,7 @@ const ScooterSelectorSheet = ({ open, onOpenChange, onConfirmed }: Props) => {
   const isSearching = trimmed.length > 0;
   const searchResults = useMemo(() => {
     if (!isSearching) return [];
-    const q = normalize(trimmed);
-    return allScooters.filter((s) =>
-      normalize(`${s.brandName} ${s.name}`).includes(q)
-    );
+    return searchScooters(allScooters, trimmed, (s) => ({ name: s.name, brand: s.brandName, slug: s.slug }));
   }, [isSearching, trimmed, allScooters]);
 
   const handleClose = (v: boolean) => {
@@ -207,9 +205,24 @@ const ScooterSelectorSheet = ({ open, onOpenChange, onConfirmed }: Props) => {
   };
 
   const isMutating = addToGarage.isPending || toggleOwned.isPending;
+  const [selecteur] = useState(readSelecteurVariant);
+  const [typing, setTyping] = useState(false);
+  // Clavier ouvert (iOS / Android) : la feuille épouse la zone visible, pour que le champ et les résultats ne passent pas sous le clavier.
+  const [vv, setVv] = useState<{ h: number; top: number } | null>(null);
+  useEffect(() => {
+    const v = typeof window !== "undefined" ? window.visualViewport : null;
+    if (!v) return;
+    const upd = () => setVv({ h: v.height, top: v.offsetTop });
+    upd();
+    v.addEventListener("resize", upd);
+    v.addEventListener("scroll", upd);
+    return () => { v.removeEventListener("resize", upd); v.removeEventListener("scroll", upd); };
+  }, []);
 
+  const BodyComponent = (selecteur ? SelectorBodyAtelier : SelectorBody) as typeof SelectorBodyAtelier;
   const body = (
-    <SelectorBody
+    <BodyComponent
+      onFocusChange={setTyping}
       query={query}
       onQueryChange={setQuery}
       isSearching={isSearching}
@@ -245,8 +258,8 @@ const ScooterSelectorSheet = ({ open, onOpenChange, onConfirmed }: Props) => {
     return (
       <Dialog open={open} onOpenChange={handleClose}>
         <DialogContent
-          className="p-0 gap-0 overflow-hidden border-0 rounded-2xl"
-          style={{ width: 460, maxWidth: "calc(100vw - 32px)", backgroundColor: THEME.bgWhite }}
+          className={selecteur ? "p-0 gap-0 overflow-hidden border-0 rounded-none flex flex-col h-[80vh] max-h-[720px]" : "p-0 gap-0 overflow-hidden border-0 rounded-2xl"}
+          style={selecteur ? { width: 520, maxWidth: "calc(100vw - 32px)", backgroundColor: "#FAFAF8", clipPath: "polygon(0 0, calc(100% - 18px) 0, 100% 18px, 100% 100%, 0 100%)" } : { width: 460, maxWidth: "calc(100vw - 32px)", backgroundColor: THEME.bgWhite }}
         >
           {body}
         </DialogContent>
@@ -258,8 +271,14 @@ const ScooterSelectorSheet = ({ open, onOpenChange, onConfirmed }: Props) => {
     <Sheet open={open} onOpenChange={handleClose}>
       <SheetContent
         side="bottom"
-        className="p-0 rounded-t-2xl border-t-0 max-h-[92vh] overflow-hidden"
-        style={{ backgroundColor: THEME.bgWhite }}
+        className={selecteur ? "p-0 rounded-none border-t-0 overflow-hidden flex flex-col" : "p-0 rounded-t-2xl border-t-0 max-h-[92vh] overflow-hidden"}
+        style={
+          selecteur
+            ? typing && vv
+              ? { backgroundColor: "#FAFAF8", top: vv.top, bottom: "auto", height: vv.h, maxHeight: vv.h }
+              : { backgroundColor: "#FAFAF8", height: "88dvh", maxHeight: "88dvh", clipPath: "polygon(0 0, calc(100% - 18px) 0, 100% 18px, 100% 100%, 0 100%)" }
+            : { backgroundColor: THEME.bgWhite }
+        }
       >
         {/* Handle (mobile uniquement) */}
         <div className="flex justify-center pt-3 pb-1">
@@ -1039,5 +1058,176 @@ const CardAction = ({
     <span>{label}</span>
   </motion.button>
 );
+
+
+/* ── 18/10 — Sélecteur en DA Atelier (retour Nolan : « le mode de sélection, c'est trollé ; je veux un joli carrousel,
+   et il faut expliquer ce qu'on choisit »). Défaut ; ?selecteur=0 = ancien corps ci-dessus.
+   - On peut choisir N'IMPORTE quelle trottinette du site (437 modèles) : la recherche tolère espaces, tirets, fautes.
+   - Celles du garage et des favoris passent en premier, en carrousel, la trott qui sort de sa carte.
+   - En recherche : une liste compacte juste sous le champ, visible au-dessus du clavier.
+   - Plus de défilement imbriqué (une seule zone qui défile). ── */
+const A_UNB = "'Unbounded', sans-serif";
+const A_FONT = "'Plus Jakarta Sans', sans-serif";
+const A_CARBON = "#1A1A1A";
+const A_GREEN = "#4A7C59";
+const A_LINE = "#E2DCD0";
+const aCut = (px: number) => `polygon(0 0, calc(100% - ${px}px) 0, 100% ${px}px, 100% 100%, 0 100%)`;
+
+export const readSelecteurVariant = (): 0 | 1 => {
+  try {
+    return new URLSearchParams(window.location.search).get("selecteur") === "0" ? 0 : 1;
+  } catch {
+    return 1;
+  }
+};
+
+const ACarouselCard = ({ option, active, badge, onSelect }: { option: ScooterOption; active: boolean; badge: BadgeKind; onSelect: () => void }) => (
+  <button type="button" onClick={onSelect} aria-pressed={active} className="relative shrink-0 w-[150px] pt-9 text-left">
+    <div className="relative pt-[92px] px-3 pb-3" style={{ background: active ? A_CARBON : "#FFFFFF", clipPath: aCut(10), boxShadow: active ? "none" : `inset 0 0 0 1px ${A_LINE}` }}>
+      <span className="block text-sm font-extrabold uppercase truncate" style={{ fontFamily: A_FONT, color: active ? "rgba(255,255,255,0.7)" : "#6B7280" }}>{option.brandName}</span>
+      <span className="block text-[15px] uppercase leading-tight line-clamp-2" style={{ fontFamily: A_UNB, fontWeight: 900, fontStyle: "italic", color: active ? "#FFFFFF" : A_CARBON }}>{option.name}</span>
+      <span className="mt-1.5 inline-flex items-center gap-1 text-sm font-bold" style={{ fontFamily: A_FONT, color: active ? "#8FBF9C" : A_GREEN }}>
+        {active ? <><Check size={14} strokeWidth={3} /> Choisie</> : badge === "owned" ? "Ton garage" : badge === "fav" ? "Favori" : "Choisir"}
+      </span>
+    </div>
+    <div className="pointer-events-none absolute inset-x-0 top-0 h-[128px] flex items-end justify-center">
+      {option.imageUrl ? <img src={option.imageUrl} alt="" loading="lazy" className="max-h-full max-w-[90%] object-contain" style={{ filter: "drop-shadow(0 10px 10px rgba(0,0,0,0.3))" }} /> : <Bike className="w-12 h-12 text-gray-400" strokeWidth={1.2} />}
+    </div>
+  </button>
+);
+
+const ACarousel = ({ title, hint, items, selectedId, garageById, onSelect }: { title: string; hint?: string; items: ScooterOption[]; selectedId: string | null; garageById: Map<string, GarageState>; onSelect: (o: ScooterOption) => void }) =>
+  items.length === 0 ? null : (
+    <section className="mt-5">
+      <div className="flex items-baseline justify-between gap-2 px-5">
+        <h3 className="text-[15px] uppercase" style={{ fontFamily: A_UNB, fontWeight: 900, fontStyle: "italic", color: A_CARBON }}>{title}</h3>
+        <span className="text-sm font-bold" style={{ fontFamily: A_FONT, color: "#6B7280" }}>{items.length}</span>
+      </div>
+      {hint && <p className="px-5 mt-0.5 text-sm" style={{ fontFamily: A_FONT, color: "#6B7280" }}>{hint}</p>}
+      <div className="mt-1 flex gap-2.5 overflow-x-auto px-5 pb-1" style={{ scrollbarWidth: "none" }}>
+        {items.map((o) => {
+          const g = garageById.get(o.id);
+          return <ACarouselCard key={o.id} option={o} active={selectedId === o.id} badge={g ? (g.isOwned ? "owned" : "fav") : null} onSelect={() => onSelect(o)} />;
+        })}
+      </div>
+    </section>
+  );
+
+const SelectorBodyAtelier = (p: SelectorBodyProps & { onFocusChange?: (f: boolean) => void }) => {
+  const owned = p.ownedItems.map(optionFromGarage);
+  const favs = p.favItems.map(optionFromGarage);
+  const selectGarageOrOption = (o: ScooterOption) => {
+    const item = [...p.ownedItems, ...p.favItems].find((i) => i.scooter_model?.id === o.id);
+    if (item) p.onSelectGarage(item);
+    else p.onSelectOption(o);
+  };
+  const selectedName = (() => {
+    const all = [...owned, ...favs, ...p.popularItems, ...p.searchResults, ...p.allItems];
+    return all.find((o) => o.id === p.selectedId)?.name ?? null;
+  })();
+  return (
+    <div className="flex flex-col min-h-0 flex-1" style={{ fontFamily: A_FONT }}>
+      <div className="px-5 pt-2 pb-3 shrink-0">
+        <h2 className="text-[22px] uppercase leading-none" style={{ fontFamily: A_UNB, fontWeight: 900, fontStyle: "italic", letterSpacing: "-0.03em", color: A_CARBON }}>
+          Ta <span style={{ color: A_GREEN }}>trottinette</span>
+        </h2>
+        <p className="mt-1.5 text-sm leading-snug" style={{ color: "#4B5563" }}>
+          Choisis-la : on ne te montre que les pièces qui vont dessus. Toutes les marques du site sont là{p.hasScooters ? ", celles de ton garage en premier" : ""}.
+        </p>
+        <label className="mt-3 flex items-center gap-2 px-3 h-[50px] bg-white" style={{ clipPath: aCut(10), boxShadow: `inset 0 0 0 1px ${A_LINE}` }}>
+          <Search size={18} strokeWidth={2.2} className="shrink-0 text-gray-500" />
+          <span className="sr-only">Rechercher une trottinette</span>
+          <input
+            type="text"
+            inputMode="search"
+            value={p.query}
+            onChange={(e) => p.onQueryChange(e.target.value)}
+            onFocus={() => p.onFocusChange?.(true)}
+            onBlur={() => p.onFocusChange?.(false)}
+            placeholder="Marque ou modèle : Xiaomi, E-Twow GT…"
+            enterKeyHint="search"
+            autoComplete="off"
+            autoCorrect="off"
+            spellCheck={false}
+            className="flex-1 min-w-0 bg-transparent outline-none text-base"
+            style={{ color: A_CARBON }}
+          />
+          {p.isSearching && (
+            <button type="button" onClick={() => p.onQueryChange("")} aria-label="Effacer" className="w-10 h-10 flex items-center justify-center text-gray-500"><X size={18} /></button>
+          )}
+        </label>
+      </div>
+
+      <div className="flex-1 min-h-0 overflow-y-auto pb-4">
+        {p.isSearching ? (
+          p.searchResults.length === 0 ? (
+            <p className="px-5 py-6 text-base" style={{ color: "#4B5563" }}>Rien pour « {p.trimmed} ». Essaie juste la marque, ou le nom sans la marque.</p>
+          ) : (
+            <ul className="px-5">
+              <li className="pb-1 text-sm font-bold" style={{ color: "#6B7280" }}>{p.searchResults.length} modèle{p.searchResults.length > 1 ? "s" : ""}</li>
+              {p.searchResults.slice(0, 40).map((o, i) => {
+                const g = p.garageById.get(o.id);
+                const on = p.selectedId === o.id;
+                return (
+                  <li key={o.id} style={{ borderTop: i ? `1px solid ${A_LINE}` : "none" }}>
+                    <div className="flex items-center gap-3 py-2">
+                      <button type="button" onClick={() => p.onSelectOption(o)} className="flex-1 min-w-0 flex items-center gap-3 text-left min-h-[52px]">
+                        <span className="w-14 h-12 shrink-0 flex items-center justify-center" style={{ background: "#F2EFE8", clipPath: aCut(6) }}>
+                          {o.imageUrl ? <img src={o.imageUrl} alt="" loading="lazy" className="max-h-full max-w-full object-contain p-0.5" /> : <Bike size={20} className="text-gray-400" />}
+                        </span>
+                        <span className="min-w-0">
+                          <span className="block text-sm font-bold uppercase truncate" style={{ color: "#6B7280" }}>{o.brandName}{g ? (g.isOwned ? " · ton garage" : " · favori") : ""}</span>
+                          <span className="block text-[15px] font-extrabold truncate" style={{ color: A_CARBON }}>{o.name}</span>
+                        </span>
+                      </button>
+                      {on ? (
+                        <span className="shrink-0 inline-flex items-center gap-1 px-3 h-10 text-sm font-extrabold uppercase text-white" style={{ background: A_CARBON, clipPath: aCut(6) }}><Check size={14} strokeWidth={3} /> Choisie</span>
+                      ) : !g ? (
+                        <button type="button" disabled={p.isMutating} onClick={() => p.onAddInline(o, false)} aria-label={`Ajouter ${o.name} à mes favoris`} className="shrink-0 w-11 h-11 flex items-center justify-center" style={{ boxShadow: `inset 0 0 0 1px ${A_LINE}`, clipPath: aCut(6) }}>
+                          <Heart size={18} className="text-gray-600" />
+                        </button>
+                      ) : null}
+                    </div>
+                    {p.authPromptFor === o.id && (
+                      <div className="mb-2 px-3 py-2 flex items-center justify-between gap-2" style={{ background: "#F2EFE8", clipPath: aCut(6) }}>
+                        <span className="text-sm" style={{ color: A_CARBON }}>Connecte-toi pour la garder dans ton garage.</span>
+                        <button type="button" onClick={p.onGoLogin} className="shrink-0 px-3 h-9 text-sm font-extrabold uppercase text-white" style={{ background: A_CARBON, clipPath: aCut(5) }}>Connexion</button>
+                      </div>
+                    )}
+                  </li>
+                );
+              })}
+            </ul>
+          )
+        ) : (
+          <>
+            {p.isLoading && p.isLoggedIn ? <div className="mx-5 mt-5 h-[150px] animate-pulse" style={{ background: "#F2EFE8", clipPath: aCut(10) }} /> : null}
+            <ACarousel title="Ton garage" hint="Tes trottinettes" items={owned} selectedId={p.selectedId} garageById={p.garageById} onSelect={selectGarageOrOption} />
+            <ACarousel title="Tes favoris" items={favs} selectedId={p.selectedId} garageById={p.garageById} onSelect={selectGarageOrOption} />
+            <ACarousel title="À la une" hint="Ou tape la tienne dans la barre au-dessus" items={p.popularItems} selectedId={p.selectedId} garageById={p.garageById} onSelect={p.onSelectOption} />
+            {!p.isLoggedIn && (
+              <p className="mx-5 mt-5 px-3 py-3 text-sm" style={{ background: "#F2EFE8", clipPath: aCut(8), color: A_CARBON }}>
+                <b>Astuce :</b> crée ton garage gratuit, ta trott sera choisie d'office à chaque visite.{" "}
+                <button type="button" onClick={p.onGoLogin} className="font-bold underline underline-offset-4">Me connecter</button>
+              </p>
+            )}
+          </>
+        )}
+      </div>
+
+      <div className="shrink-0 px-5 pt-3 pb-4" style={{ borderTop: `1px solid ${A_LINE}`, background: "#FFFFFF" }}>
+        <button type="button" onClick={p.onConfirm} disabled={!p.hasSelection} className="w-full min-h-[52px] px-4 flex items-center justify-between text-[15px] font-extrabold uppercase text-white disabled:opacity-40" style={{ background: A_CARBON, clipPath: aCut(10) }}>
+          <span className="truncate">{selectedName ? `Voir les pièces pour ${selectedName}` : "Choisis une trottinette"}</span>
+          <ArrowRight size={20} strokeWidth={2.6} className="shrink-0" />
+        </button>
+        {p.hasSelection && (
+          <button type="button" onClick={p.onClear} className="mt-1 w-full min-h-[44px] text-sm font-bold underline underline-offset-4" style={{ color: "#4B5563" }}>
+            Voir toutes les pièces, sans filtre
+          </button>
+        )}
+      </div>
+    </div>
+  );
+};
 
 export default ScooterSelectorSheet;

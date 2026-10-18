@@ -102,6 +102,17 @@ const Head = ({ s, big, query, onQuery, inputRef, onSubmit, onCatalogue, center 
           value={query}
           onChange={(e) => onQuery(e.target.value)}
           onKeyDown={(e) => { if (e.key === "Escape") inputRef.current?.blur(); }}
+          onFocus={(e) => {
+            // Téléphone : on remonte la barre en haut de l'écran pour que les résultats restent visibles au-dessus du clavier.
+            if (window.innerWidth < 1024) {
+              const el = e.currentTarget;
+              window.setTimeout(() => window.scrollTo({ top: el.getBoundingClientRect().top + window.scrollY - 84, behavior: "smooth" }), 250);
+            }
+          }}
+          enterKeyHint="search"
+          autoComplete="off"
+          autoCorrect="off"
+          spellCheck={false}
           placeholder="Dualtron, Kaabo, Xiaomi…"
           className="w-full h-[58px] lg:h-16 pl-12 pr-3 bg-white text-base lg:text-lg outline-none placeholder:text-gray-400"
           style={{ fontFamily: FONT, color: CARBON, boxShadow: s.tone === "light" && s.ink === CARBON ? `inset 0 0 0 1px ${LINE}` : "none" }}
@@ -155,7 +166,10 @@ const Shelf = ({ s, size, scooters, isLoading, title, onSelect, heading }: { s: 
           ))
         : scooters.map((sc) => <PopCard key={sc.id} sc={sc} s={s} size={size} onSelect={onSelect} />)}
       {!isLoading && scooters.length === 0 && (
-        <p className="py-8 text-base" style={{ fontFamily: FONT, color: heading }}>Aucune trottinette trouvée — essaie une autre marque.</p>
+        <p className="py-6 text-base" style={{ fontFamily: FONT, color: heading }}>
+          Pas de trott à ce nom. Essaie juste la marque (Xiaomi, Dualtron…) ou{" "}
+          <a href="/trottinettes" className="font-bold underline underline-offset-4">parcours tous les modèles</a>.
+        </p>
       )}
     </div>
   </div>
@@ -254,7 +268,7 @@ const HeroAtelier = (p: Props) => {
             <Stage s={s} scooters={p.scooters} onSelect={p.onSelect} />
           </div>
         </div>
-        <div className="mt-8 lg:mt-12">
+        <div className={p.isSearching ? "mt-3 lg:mt-12" : "mt-8 lg:mt-12"}>
           <Shelf s={s} size="sm" scooters={p.scooters} isLoading={p.isLoading} title={title} onSelect={p.onSelect} heading={shelfHeading} />
         </div>
       </div>

@@ -1,6 +1,7 @@
 import { useMemo } from "react";
 import { useQuery } from "@tanstack/react-query";
 import { supabase } from "@/integrations/supabase/client";
+import { searchScooters } from "@/lib/scooterSearch";
 
 export interface ScooterHero {
   id: string;
@@ -81,13 +82,8 @@ export const useHeroScooters = (searchQuery: string): UseHeroScootersResult => {
       const top = all.filter((s) => s.is_top_moment);
       return top.length > 0 ? top : all.slice(0, FALLBACK_LIMIT);
     }
-    return all.filter(
-      (s) =>
-        s.name.toLowerCase().includes(q) ||
-        s.slug.toLowerCase().includes(q) ||
-        (s.search_terms?.toLowerCase().includes(q) ?? false) ||
-        (s.brand_name?.toLowerCase().includes(q) ?? false)
-    );
+    // Recherche tolérante (espaces/tirets/accents/1 faute) — lib/scooterSearch
+    return searchScooters(all, q, (s) => ({ name: s.name, brand: s.brand_name, slug: s.slug, terms: s.search_terms }));
   }, [all, searchQuery]);
 
   return { scooters, total: scooters.length, isLoading, isError };
