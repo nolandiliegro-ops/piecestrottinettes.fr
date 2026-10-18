@@ -103,7 +103,7 @@ const RiderPublicCard = () => {
                 <div className="flex items-center gap-3">
                   <RiderAvatar url={data.profile.avatar_url} name={name} size="md" />
                   <div className="min-w-0 flex-1">
-                    <h1 className="text-[18px] uppercase leading-none truncate" style={{ fontFamily: UNB, fontWeight: 900, fontStyle: "italic", color: CARBON }}>Le garage de {name}</h1>
+                    <h1 className="text-[18px] uppercase leading-[1.05]" style={{ fontFamily: UNB, fontWeight: 900, fontStyle: "italic", color: CARBON }}>Le garage de {name}</h1>
                     <p className="mt-1 text-sm font-semibold truncate" style={{ fontFamily: FONT, color: "#4B5563" }}>
                       Niveau {level.level} · {level.name} · {machines.length} machine{machines.length > 1 ? "s" : ""}
                     </p>
