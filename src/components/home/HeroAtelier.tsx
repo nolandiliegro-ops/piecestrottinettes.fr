@@ -14,12 +14,15 @@ import type { ScooterHero } from "@/hooks/useHeroScooters";
 
 export type HeroVariant = 1 | 2 | 3 | 4 | 5;
 
+/** Choix de Nolan du 18/10 : « 1 Atelier » par défaut. ?hero=2..5 = autres propositions, ?hero=0 = ancien hero. */
 export const readHeroVariant = (): 0 | HeroVariant => {
   try {
-    const n = Number(new URLSearchParams(window.location.search).get("hero"));
-    return n >= 1 && n <= 5 ? (n as HeroVariant) : 0;
+    const raw = new URLSearchParams(window.location.search).get("hero");
+    if (raw === null) return 1;
+    const n = Number(raw);
+    return n >= 1 && n <= 5 ? (n as HeroVariant) : n === 0 ? 0 : 1;
   } catch {
-    return 0;
+    return 1;
   }
 };
 
@@ -99,7 +102,7 @@ const Head = ({ s, big, query, onQuery, inputRef, onSubmit, onCatalogue, center 
           value={query}
           onChange={(e) => onQuery(e.target.value)}
           onKeyDown={(e) => { if (e.key === "Escape") inputRef.current?.blur(); }}
-          placeholder="Dualtron, Kaabo, Ninebot…"
+          placeholder="Dualtron, Kaabo, Xiaomi…"
           className="w-full h-[58px] lg:h-16 pl-12 pr-3 bg-white text-base lg:text-lg outline-none placeholder:text-gray-400"
           style={{ fontFamily: FONT, color: CARBON, boxShadow: s.tone === "light" && s.ink === CARBON ? `inset 0 0 0 1px ${LINE}` : "none" }}
         />
@@ -171,8 +174,8 @@ const Stage = ({ s, scooters, onSelect }: { s: Skin; scooters: ScooterHero[]; on
   const onStage = s.stage === CARBON || s.stage === "#262626" || s.stage === GREEN;
   const spec = [cur.max_speed_kmh && `${cur.max_speed_kmh} km/h`, cur.range_km && `${cur.range_km} km`, cur.power_watts && `${cur.power_watts} W`].filter(Boolean) as string[];
   return (
-    <div className="relative w-full pt-[110px]">
-      <div className="relative px-8 pt-[270px] xl:pt-[310px] pb-7" style={{ background: s.stage, clipPath: cut(26) }}>
+    <div className="relative w-full pt-[150px] xl:pt-[170px]">
+      <div className="relative px-8 pt-[330px] xl:pt-[380px] pb-7" style={{ background: s.stage, clipPath: cut(26) }}>
         <div className="flex items-end justify-between gap-4">
           <button type="button" onClick={() => onSelect(cur.slug)} className="text-left min-w-0">
             <span className="flex items-center gap-2 text-sm font-extrabold uppercase tracking-wide" style={{ fontFamily: FONT, color: onStage ? "rgba(255,255,255,0.7)" : "#6B7280" }}>
@@ -198,13 +201,13 @@ const Stage = ({ s, scooters, onSelect }: { s: Skin; scooters: ScooterHero[]; on
           )}
         </div>
       </div>
-      <button type="button" onClick={() => onSelect(cur.slug)} aria-label={`Voir ${cur.name}`} className="absolute inset-x-0 top-0 h-[360px] xl:h-[400px] flex items-end justify-center">
+      <button type="button" onClick={() => onSelect(cur.slug)} aria-label={`Voir ${cur.name}`} className="absolute inset-x-0 top-0 h-[470px] xl:h-[540px] flex items-end justify-center">
         {s.stage !== GREEN && <span aria-hidden className="absolute inset-x-10 bottom-0 top-[40%]" style={{ background: "radial-gradient(closest-side, rgba(255,255,255,0.22), rgba(255,255,255,0) 100%)" }} />}
         <AnimatePresence mode="wait">
           <motion.div key={cur.id} className="h-full w-full flex items-end justify-center"
             initial={reduce ? false : { opacity: 0, x: 40 }} animate={{ opacity: 1, x: 0 }} exit={reduce ? undefined : { opacity: 0, x: -40 }} transition={{ duration: 0.4, ease: [0.22, 1, 0.36, 1] }}>
             {cur.image_url ? (
-              <img src={cur.image_url} alt={cur.name} className="relative max-h-full max-w-[92%] object-contain" style={{ filter: "drop-shadow(0 24px 22px rgba(0,0,0,0.35))" }} />
+              <img src={cur.image_url} alt={cur.name} className="relative max-h-full max-w-[96%] object-contain" style={{ filter: "drop-shadow(0 24px 22px rgba(0,0,0,0.35))" }} />
             ) : (
               <Bike className="w-32 h-32 text-white/40" strokeWidth={1} />
             )}
@@ -239,7 +242,7 @@ const HeroAtelier = (p: Props) => {
     <section data-hero-variant={p.variant} className="relative px-4 pt-8 pb-12 lg:pt-14 lg:pb-16" style={{ background: s.bg }}>
       <style>{`.pt-mini-scroll::-webkit-scrollbar{display:none}`}</style>
       <div className="mx-auto max-w-6xl">
-        <div className="lg:grid lg:grid-cols-[1.05fr_1fr] lg:gap-12 lg:items-end">
+        <div className="lg:grid lg:grid-cols-[0.9fr_1.1fr] lg:gap-12 lg:items-end">
           {p.variant === 4 ? (
             <div className="px-5 py-7 lg:px-9 lg:py-10" style={{ background: CARBON, clipPath: cut(22) }}>
               <Head s={s} {...head} />

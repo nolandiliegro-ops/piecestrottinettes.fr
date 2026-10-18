@@ -65,7 +65,7 @@ const HeroSearchFirst = () => {
   const heroImage = scooters[0]?.image_url ?? null;
   const [heroVariant] = useState(readHeroVariant);
 
-  // Propositions du 18/10 (?hero=1..5) — sans paramètre, rien ne change.
+  // 18/10 : « Atelier » (1) par défaut ; ?hero=2..5 autres propositions, ?hero=0 = ancien hero ci-dessous.
   if (heroVariant) {
     return (
       <HeroAtelier
