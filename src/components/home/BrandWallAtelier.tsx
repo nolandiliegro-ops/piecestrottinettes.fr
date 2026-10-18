@@ -1,5 +1,5 @@
 /**
- * Accueil — « Choisis ta marque » : propositions du 18/10/2026 (?mur=1..5). Sans paramètre, l'ancien mur reste servi.
+ * Accueil — « Choisis ta marque » : propositions du 18/10/2026 (?mur=1..5). Depuis le choix de Nolan (18/10), la 5 « Vedette » est servie par défaut ; ?mur=0 = ancien mur.
  * Défaut constaté : le module est resté à l'ancienne identité (Sora, pastilles rondes à emoji, champ arrondi, titre centré)
  * alors que /marques est passée au gabarit « Atelier » le 17/10 ; et l'ordre (vedettes puis display_order 0 = alphabétique)
  * montrait Apollo/Aprilia/Beaster (4-6 modèles) avant Kaabo (19).
@@ -16,13 +16,15 @@ import { optimizedImage } from "@/lib/imageTransform";
 
 export type MurVariant = 1 | 2 | 3 | 4 | 5;
 
-/** ?mur=1..5 ; 0 = ancien mur. */
+/** Choix de Nolan du 18/10 : « 5 Vedette » par défaut. ?mur=1..4 = autres propositions, ?mur=0 = ancien mur. */
 export const readMurVariant = (): 0 | MurVariant => {
   try {
-    const n = Number(new URLSearchParams(window.location.search).get("mur"));
-    return n >= 1 && n <= 5 ? (n as MurVariant) : 0;
+    const raw = new URLSearchParams(window.location.search).get("mur");
+    if (raw === null) return 5;
+    const n = Number(raw);
+    return n >= 1 && n <= 5 ? (n as MurVariant) : n === 0 ? 0 : 5;
   } catch {
-    return 0;
+    return 5;
   }
 };
 

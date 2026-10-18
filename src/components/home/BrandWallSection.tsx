@@ -31,7 +31,7 @@ interface Row {
 }
 
 const BrandWallSection = ({ limited = true }: Props) => {
-  // Propositions de refonte de l'accueil (?mur=1..5, 18/10) — sans paramètre, mur actuel inchangé.
+  // Accueil : « Vedette » par défaut depuis le 18/10 (choix Nolan) ; ?mur=0 = ancien mur, ?mur=1..4 = autres propositions.
   const mur = limited ? readMurVariant() : 0;
   if (mur) return <BrandWallAtelier variant={mur} />;
   return <BrandWallClassic limited={limited} />;
