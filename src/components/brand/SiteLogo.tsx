@@ -10,7 +10,7 @@
 import { useEffect } from "react";
 import { useBrandAsset } from "@/hooks/useBrandAssets";
 
-export type LogoVariant = 1 | 2 | 3 | 4 | 5;
+export type LogoVariant = 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10;
 
 export const LOGO_NAMES: Record<LogoVariant, string> = {
   1: "Actuel repassé",
@@ -18,13 +18,19 @@ export const LOGO_NAMES: Record<LogoVariant, string> = {
   3: "Plaque",
   4: "Écrou",
   5: "Roue",
+  // 2e tour (18/10, retour Nolan sur « Signature ») : même composition, plus de vert, nom déclinable.
+  6: "Orange brûlé",
+  7: "Carbone",
+  8: "Étiquette",
+  9: "Empilé",
+  10: "Encre orange",
 };
 
-/** ?logo=1..5 → proposition ; sinon null (PNG actuel). */
+/** ?logo=1..10 → proposition ; sinon null (PNG actuel). */
 export const readLogoVariant = (): LogoVariant | null => {
   try {
     const n = Number(new URLSearchParams(window.location.search).get("logo"));
-    return n >= 1 && n <= 5 ? (n as LogoVariant) : null;
+    return n >= 1 && n <= 10 ? (n as LogoVariant) : null;
   } catch {
     return null;
   }
@@ -35,6 +41,7 @@ const BRUSH = "'Caveat Brush', 'Permanent Marker', cursive";
 const CARBON = "#1A1A1A";
 const GREEN = "#4A7C59";
 const SOFT_GREEN = "#8FBF9C";
+const BURNT = "#C95F2B"; // orange brûlé de la marque (≠ orange achat #FF6600)
 const cut = (px: number) => `polygon(0 0, calc(100% - ${px}px) 0, 100% ${px}px, 100% 100%, 0 100%)`;
 
 /** Le geste de l'actuel : un point puis un trait qui s'effile en montant. */
@@ -130,6 +137,104 @@ const Roue = () => (
   </span>
 );
 
+
+/* ---------- 2e tour : « Signature » sans vert, pensé pour se décliner (pièces vélo, pièces scooter…) ---------- */
+/** ?mot=velo|scooter|trottinettes : aperçu de la déclinaison sur la vraie page. */
+const readWord = () => {
+  try {
+    const m = new URLSearchParams(window.location.search).get("mot");
+    return m === "velo" ? "vélo" : m === "scooter" ? "scooter" : "trottinettes";
+  } catch {
+    return "trottinettes";
+  }
+};
+const Pieces = ({ className = "", color = CARBON }: { className?: string; color?: string }) => (
+  <span className={`font-black italic tracking-[0.02em] ${className}`} style={{ fontFamily: UNB, color }}>PIÈCES</span>
+);
+const Word = ({ w, className = "", color = CARBON }: { w: string; className?: string; color?: string }) => (
+  <span className={`leading-[0.8] -rotate-2 origin-bottom-left ${className}`} style={{ fontFamily: BRUSH, color }}>{w}</span>
+);
+const Dot = ({ className = "", color = CARBON }: { className?: string; color?: string }) => (
+  <span className={`font-bold italic ${className}`} style={{ fontFamily: UNB, color }}>.fr</span>
+);
+
+/* 6 — Orange brûlé : la Signature telle que tu l'as aimée, le vert remplacé par l'orange brûlé de l'actuel. */
+const SigOrange = () => {
+  const w = readWord();
+  return (
+    <span className="inline-flex flex-col leading-none">
+      <span className="flex items-end gap-1.5">
+        <Pieces className="text-[12px] xl:text-[15px] pb-[4px]" />
+        <Word w={w} className="text-[29px] xl:text-[40px]" />
+        <Dot className="text-[11px] xl:text-[12px] pb-[4px]" color={BURNT} />
+      </span>
+      <Swoosh color={BURNT} className="-mt-0.5 ml-1 w-[92%]" h={9} />
+    </span>
+  );
+};
+
+/* 7 — Carbone : tout noir, zéro couleur ; le site garde son vert, le logo devient neutre et passe partout. */
+const SigCarbone = () => {
+  const w = readWord();
+  return (
+    <span className="inline-flex flex-col leading-none">
+      <span className="flex items-end gap-1.5">
+        <Pieces className="text-[12px] xl:text-[15px] pb-[4px]" />
+        <Word w={w} className="text-[29px] xl:text-[40px]" />
+        <Dot className="text-[11px] xl:text-[12px] pb-[4px]" color="#6B7280" />
+      </span>
+      <Swoosh color={CARBON} className="-mt-0.5 ml-1 w-[92%]" h={9} />
+    </span>
+  );
+};
+
+/* 8 — Étiquette : « PIÈCES » sur une petite étiquette carbone à coin coupé (fixe), le mot au pinceau change. */
+const SigEtiquette = () => {
+  const w = readWord();
+  return (
+    <span className="inline-flex flex-col leading-none">
+      <span className="flex items-end gap-1.5">
+        <span className="inline-flex items-center px-1.5 py-[3px] mb-[3px]" style={{ background: CARBON, clipPath: cut(6) }}>
+          <Pieces className="text-[11px] xl:text-[13px]" color="#fff" />
+        </span>
+        <Word w={w} className="text-[26px] xl:text-[40px]" />
+        <Dot className="text-[11px] xl:text-[12px] pb-[4px]" color={BURNT} />
+      </span>
+      <Swoosh color={BURNT} className="mt-0.5 ml-[54px] xl:ml-[62px] w-[70%]" h={8} />
+    </span>
+  );
+};
+
+/* 9 — Empilé : « PIÈCES » au-dessus, le mot au pinceau dessous, en grand : la forme la plus haute pour un téléphone. */
+const SigEmpile = () => {
+  const w = readWord();
+  return (
+    <span className="inline-flex flex-col leading-none">
+      <Pieces className="text-[11px] xl:text-[13px] tracking-[0.18em] ml-0.5" />
+      <span className="flex items-end gap-1 -mt-0.5">
+        <Word w={w} className="text-[34px] xl:text-[44px]" />
+        <Dot className="text-[11px] xl:text-[12px] pb-[3px]" color={BURNT} />
+      </span>
+      <Swoosh color={BURNT} className="mt-0.5 w-[80%]" h={8} />
+    </span>
+  );
+};
+
+/* 10 — Encre orange : le mot au pinceau en orange brûlé, « PIÈCES » et le trait en noir. */
+const SigEncre = () => {
+  const w = readWord();
+  return (
+    <span className="inline-flex flex-col leading-none">
+      <span className="flex items-end gap-1.5">
+        <Pieces className="text-[12px] xl:text-[15px] pb-[4px]" />
+        <Word w={w} className="text-[29px] xl:text-[40px]" color={BURNT} />
+        <Dot className="text-[11px] xl:text-[12px] pb-[4px]" />
+      </span>
+      <Swoosh color={CARBON} className="-mt-0.5 ml-1 w-[92%]" h={9} />
+    </span>
+  );
+};
+
 /** Police pinceau chargée seulement quand une proposition est affichée (rien ne change pour les autres visiteurs). */
 const useBrushFont = () => {
   useEffect(() => {
@@ -145,6 +250,6 @@ const useBrushFont = () => {
 
 export const SiteLogo = ({ variant }: { variant: LogoVariant }) => {
   useBrushFont();
-  const C = { 1: Actuel, 2: Signature, 3: Plaque, 4: Ecrou, 5: Roue }[variant];
+  const C = { 1: Actuel, 2: Signature, 3: Plaque, 4: Ecrou, 5: Roue, 6: SigOrange, 7: SigCarbone, 8: SigEtiquette, 9: SigEmpile, 10: SigEncre }[variant];
   return <C />;
 };
