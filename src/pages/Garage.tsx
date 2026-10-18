@@ -34,6 +34,7 @@ import DescriptionCard from '@/components/garage/DescriptionCard';
 
 // Lazy mount — perf mobile (sous le fold)
 const TutosCard = lazy(() => import('@/components/garage/TutosCard'));
+import GarageVueStyles, { readGarageVue, GarageVueTabs, type GarageTab } from '@/components/garage/GarageVueStyles';
 const RiderCardLightbox = lazy(() => import('@/components/garage/RiderCardLightbox'));
 
 
@@ -58,6 +59,9 @@ const Garage = () => {
   const [riderCardOpen, setRiderCardOpen] = useState(false);
   const [themePickerOpen, setThemePickerOpen] = useState(false);
   const [activeCategory, setActiveCategory] = useState<string>('all');
+  // Propositions de refonte du 18/10 (?vue=1..5) — sans paramètre, page inchangée.
+  const [vue] = useState(readGarageVue);
+  const [gTab, setGTab] = useState<GarageTab>('trott');
 
   const { data: convs = [] } = useOrderConversations();
   const totalUnread = convs.reduce((s, c) => s + c.unread_count, 0);
@@ -224,11 +228,10 @@ const Garage = () => {
               ) : (
                 /* === ROOFTOP LAYOUT === */
                 <>
-
-
-
+                {vue !== 0 && <GarageVueStyles vue={vue} tab={gTab} />}
+                {vue !== 0 && <GarageVueTabs vue={vue} tab={gTab} onTab={setGTab} />}
                 <div
-
+                  data-gvue={vue || undefined}
                   className="
                     flex flex-col gap-4
                     md:max-w-2xl md:mx-auto
@@ -237,7 +240,7 @@ const Garage = () => {
                   "
                 >
                   {/* COLONNE GAUCHE — desktop col 1 / mobile order 5-6 */}
-                  <aside className="order-5 lg:order-1 flex flex-col gap-4">
+                  <aside data-slot="photo" className="order-5 lg:order-1 flex flex-col gap-4">
                     <ScooterPhotoCard garageItem={selectedScooter} />
                     <DescriptionCard
                       garageId={selectedGarageId}
@@ -249,7 +252,7 @@ const Garage = () => {
                   {/* Mobile : order 2 (Hero), 3 (Stats), 4 (Suivi). Desktop : flow naturel Stats → Hero → Suivi */}
                   <section className="contents lg:flex lg:flex-col lg:gap-6 lg:order-2 min-w-0">
                     {/* StatsRow — desktop : top de la colonne centre. Mobile : order 3 (après Hero) */}
-                    <div className="order-3 lg:order-none">
+                    <div data-slot="stats" className="order-3 lg:order-none">
                       <StatsRow
                         voltage={model?.voltage}
                         amperage={model?.amperage}
@@ -258,7 +261,7 @@ const Garage = () => {
                     </div>
 
                     {/* HeroScooter + ScooterIdPill flottante (wrapper relative isolé) */}
-                    <div className="relative order-2 lg:order-none">
+                    <div data-slot="hero" className="relative order-2 lg:order-none">
                       <HeroScooter
                         imageUrl={model?.image_url}
                         modelName={model?.name}
@@ -278,7 +281,7 @@ const Garage = () => {
                     </div>
 
                     {/* Suivi expert */}
-                    <div className="order-4 lg:order-none flex flex-col gap-3">
+                    <div data-slot="suivi" className="order-4 lg:order-none flex flex-col gap-3">
                       <SuiviExpertCard
                         garageId={selectedGarageId}
                         performancePoints={profile?.performance_points}
@@ -294,7 +297,7 @@ const Garage = () => {
 
                   {/* COLONNE DROITE — desktop col 3 / mobile order 1, 7, 8 */}
                   {/* RiderProfileCard mobile : order 1 */}
-                  <div className="order-1 lg:hidden relative">
+                  <div data-slot="rider" className="order-1 lg:hidden relative">
                     <RiderProfileCard
                       profile={profile}
                       variant="rooftop"
@@ -310,11 +313,11 @@ const Garage = () => {
                       <Wallpaper className="size-4 text-gray-700" />
                     </button>
                   </div>
-                  <div className="order-1 lg:hidden">
+                  <div data-slot="code" className="order-1 lg:hidden">
                     <RiderLaunchCode />
                   </div>
 
-                  <aside className="order-7 lg:order-3 flex flex-col gap-4">
+                  <aside data-slot="aside" className="order-7 lg:order-3 flex flex-col gap-4">
                     {/* RiderProfileCard desktop uniquement (mobile rendu en order-1 ci-dessus) */}
                     <div className="hidden lg:block relative">
                       <RiderProfileCard
@@ -370,8 +373,8 @@ const Garage = () => {
 
                 {/* === SECTION PIÈCES COMPATIBLES — pleine largeur === */}
                 {selectedScooter?.scooter_model?.id && (
-                  <section className="mt-8 lg:mt-12">
-                    <div className="mb-5">
+                  <section data-slot="parts" data-gvue={vue || undefined} className="mt-8 lg:mt-12">
+                    <div className="mb-5" data-slot="parts-head">
                       <h2 className="text-xl lg:text-2xl font-black uppercase tracking-tight text-white drop-shadow-lg">
                         Pièces compatibles avec ta {selectedScooter.scooter_model.brand}{' '}
                         {selectedScooter.scooter_model.name}
@@ -415,7 +418,7 @@ const Garage = () => {
                           </TabsList>
                         </Tabs>
 
-                        <div className="grid grid-cols-2 lg:grid-cols-4 gap-4">
+                        <div data-slot="parts-grid" className="grid grid-cols-2 lg:grid-cols-4 gap-4">
                           {compatibleParts
                             .filter((p) => activeCategory === 'all' || p.category?.name === activeCategory)
                             .slice(0, 12)
