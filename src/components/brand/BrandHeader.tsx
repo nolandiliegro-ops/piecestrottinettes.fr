@@ -58,7 +58,7 @@ const BrandHeader = () => {
               src={logo.url}
               alt={logo.alt}
               loading="eager"
-              className="h-14 sm:h-16 md:h-20 lg:h-28 w-auto object-contain"
+              className="h-9 sm:h-10 md:h-11 lg:h-12 w-auto object-contain"
             />
           </Link>
 

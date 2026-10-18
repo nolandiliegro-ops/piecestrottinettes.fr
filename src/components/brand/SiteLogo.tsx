@@ -34,13 +34,16 @@ export const LOGO_NAMES: Record<LogoVariant, string> = {
   16: "Marqueur 2026",
 };
 
-/** ?logo=1..16 → proposition ; sinon null (PNG actuel). */
+/** Sans paramètre → 16 (logo en prod) ; ?logo=1..15 → anciennes propositions ; ?logo=0 → ancien PNG. */
 export const readLogoVariant = (): LogoVariant | null => {
   try {
-    const n = Number(new URLSearchParams(window.location.search).get("logo"));
-    return n >= 1 && n <= 16 ? (n as LogoVariant) : null;
+    const raw = new URLSearchParams(window.location.search).get("logo");
+    // Go de Nolan du 18/10 : le « Marqueur 2026 » (16) est le logo par défaut ; ?logo=0 = ancien PNG.
+    if (raw === null) return 16;
+    const n = Number(raw);
+    return n >= 1 && n <= 16 ? (n as LogoVariant) : n === 0 ? null : 16;
   } catch {
-    return null;
+    return 16;
   }
 };
 
