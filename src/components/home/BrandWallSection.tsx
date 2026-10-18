@@ -4,6 +4,7 @@ import { Search } from "lucide-react";
 import { useBrandWall, AXIS_UI, type BrandAxis, type BrandWallItem } from "@/hooks/useBrandWall";
 import { useIsMobile } from "@/hooks/use-mobile";
 import BrandTile from "./BrandTile";
+import BrandWallAtelier, { readMurVariant } from "./BrandWallAtelier";
 
 const normalize = (s: string) =>
   s
@@ -30,6 +31,13 @@ interface Row {
 }
 
 const BrandWallSection = ({ limited = true }: Props) => {
+  // Propositions de refonte de l'accueil (?mur=1..5, 18/10) — sans paramètre, mur actuel inchangé.
+  const mur = limited ? readMurVariant() : 0;
+  if (mur) return <BrandWallAtelier variant={mur} />;
+  return <BrandWallClassic limited={limited} />;
+};
+
+const BrandWallClassic = ({ limited = true }: Props) => {
   const { data, isLoading, error } = useBrandWall();
   const isMobile = useIsMobile();
   const [q, setQ] = useState("");
