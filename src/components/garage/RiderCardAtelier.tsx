@@ -14,12 +14,15 @@ import type { GarageStats, RarityPalette } from "@/lib/riderStats";
 import { formatWatts } from "@/lib/riderStats";
 
 export type CarteVariant = 1 | 2 | 3 | 4 | 5;
+/** Choix de Nolan du 18/10 : « 1 Atelier » par défaut. ?carte=2..5 autres propositions, ?carte=0 = carte v7. */
 export const readCarteVariant = (): 0 | CarteVariant => {
   try {
-    const n = Number(new URLSearchParams(window.location.search).get("carte"));
-    return n >= 1 && n <= 5 ? (n as CarteVariant) : 0;
+    const raw = new URLSearchParams(window.location.search).get("carte");
+    if (raw === null) return 1;
+    const n = Number(raw);
+    return n >= 1 && n <= 5 ? (n as CarteVariant) : n === 0 ? 0 : 1;
   } catch {
-    return 0;
+    return 1;
   }
 };
 export const CARTE_NAMES: Record<CarteVariant, string> = { 1: "Atelier", 2: "Plaque", 3: "Ticket", 4: "Vert atelier", 5: "Fiche technique" };
