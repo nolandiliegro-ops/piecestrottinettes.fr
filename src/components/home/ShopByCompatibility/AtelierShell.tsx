@@ -68,7 +68,7 @@ const Title = ({ scooterName, brandName, accent, tone, size = "lg" }: { scooterN
         </>
       ) : (
         <>
-          Les pièces <span style={{ color: tone === "green" ? CARBON : tone === "dark" ? "#8FBF9C" : GREEN }}>qui vont.</span>
+          Tout le <span style={{ color: tone === "green" ? CARBON : tone === "dark" ? "#8FBF9C" : GREEN }}>catalogue.</span>
         </>
       )}
     </h2>
@@ -92,7 +92,7 @@ const SearchBar = ({ query, onQuery, tone, arrow = CARBON }: { query: string; on
         type="search"
         value={query}
         onChange={(e) => onQuery(e.target.value)}
-        placeholder="Cherche une pièce, une référence…"
+        placeholder="Pneu 10x2.5, plaquettes, chargeur 48V…"
         aria-label="Rechercher une pièce dans le catalogue"
         className="w-full h-full bg-transparent outline-none text-base placeholder:text-gray-400"
         style={{ fontFamily: FONT, color: CARBON }}
@@ -170,8 +170,8 @@ const ScooterPicker = ({ scooterName, brandName, onPick, onClear, tone }: { scoo
     <div className="flex items-stretch min-h-[56px]">
       <button type="button" onClick={onPick} className="flex-1 flex items-center justify-between gap-3 px-4 text-left min-w-0" style={{ background: dark ? "rgba(255,255,255,0.10)" : CARBON, color: "#FFFFFF", clipPath: scooterName ? undefined : cut(10) }}>
         <span className="min-w-0">
-          <span className="block text-sm font-bold uppercase tracking-[0.12em] opacity-70" style={{ fontFamily: FONT }}>Ta trottinette</span>
-          <span className="block text-base truncate" style={{ fontFamily: UNB, fontWeight: 800, fontStyle: "italic" }}>{scooterName ? `${brandName && brandName !== scooterName ? brandName + " " : ""}${scooterName}` : "Choisis ton modèle"}</span>
+          <span className="block text-sm font-bold uppercase tracking-[0.12em] opacity-70" style={{ fontFamily: FONT }}>{scooterName ? "Compatible avec" : "Compatibilité · facultatif"}</span>
+          <span className="block text-base truncate" style={{ fontFamily: UNB, fontWeight: 800, fontStyle: "italic" }}>{scooterName ? `${brandName && brandName !== scooterName ? brandName + " " : ""}${scooterName}` : "Ma trottinette"}</span>
         </span>
         <ChevronDown className="w-5 h-5 shrink-0" />
       </button>
@@ -213,13 +213,21 @@ const AtelierShell = (p: Props) => {
             <Title scooterName={p.scooterName} brandName={p.brandName} accent={accent} tone="light" />
             <Counter n={p.totalCount} scooter={hasScooter} tone="light" />
           </div>
-          <div className="mt-5 grid gap-3 lg:grid-cols-[minmax(0,2fr)_minmax(0,1fr)]">
-            <SearchBar query={p.query} onQuery={p.onQuery} tone="light" />
-            <ScooterPicker scooterName={p.scooterName} brandName={p.brandName} onPick={p.onPickScooter} onClear={p.onClearScooter} tone="light" />
+          {!hasScooter && (
+            <p className="mt-3 text-base max-w-2xl" style={{ fontFamily: FONT, color: "#4B5563", lineHeight: 1.5 }}>
+              Cherche directement le produit. Ta trott en tête ? Filtre pour ne voir que ce qui va dessus.
+            </p>
+          )}
+          <div className="mt-5 grid grid-cols-1 gap-3 lg:grid-cols-[minmax(0,2fr)_minmax(0,1fr)]">
+            <div className="min-w-0"><SearchBar query={p.query} onQuery={p.onQuery} tone="light" /></div>
+            <div className="min-w-0 order-last lg:order-none">
+              <ScooterPicker scooterName={p.scooterName} brandName={p.brandName} onPick={p.onPickScooter} onClear={p.onClearScooter} tone="light" />
+            </div>
+            <div ref={p.productsRef} className="min-w-0 scroll-mt-4 lg:col-span-2 lg:mt-2">
+              <Plates categories={p.categories} selectedSlugs={p.selectedSlugs} onToggle={p.onToggle} tone="light" />
+            </div>
           </div>
-          <div ref={p.productsRef} className="scroll-mt-4 mt-5 mb-5">
-            <Plates categories={p.categories} selectedSlugs={p.selectedSlugs} onToggle={p.onToggle} tone="light" />
-          </div>
+          <div className="mt-5" />
           <CarbonCards>{p.grid}</CarbonCards>
           <FootLink href={p.catalogueHref} label={footLabel} tone="light" />
         </div>
