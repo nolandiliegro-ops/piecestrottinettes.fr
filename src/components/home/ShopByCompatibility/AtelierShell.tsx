@@ -18,11 +18,12 @@ export type HomeVariant = 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10;
 export const readHomeVariant = (): 0 | HomeVariant => {
   try {
     const raw = new URLSearchParams(window.location.search).get("home");
-    if (raw === null) return 1;
+    // 19/10 : « 6 Étiquette » choisie par Nolan = défaut (?home=0 ancien module, 1..10 propositions)
+    if (raw === null) return 6;
     const n = Number(raw);
-    return n >= 1 && n <= 10 ? (n as HomeVariant) : n === 0 ? 0 : 1;
+    return n >= 1 && n <= 10 ? (n as HomeVariant) : n === 0 ? 0 : 6;
   } catch {
-    return 1;
+    return 6;
   }
 };
 

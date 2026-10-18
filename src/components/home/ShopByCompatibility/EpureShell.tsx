@@ -93,6 +93,33 @@ const TextTabs = ({ p, big }: { p: EpureProps; big?: boolean }) => {
   );
 };
 
+/** Onglets « propres » (choix Nolan 19/10) : nom + nombre en pastille, soulignement collé au texte, fondu à droite
+ *  pour montrer qu'il y a d'autres rayons en glissant. */
+const CleanTabs = ({ p }: { p: EpureProps }) => {
+  const none = p.selectedSlugs.size === 0;
+  const tab = (key: string, label: string, n: number | null, on: boolean, click: () => void) => (
+    <button key={key} type="button" onClick={click} aria-pressed={on} className="shrink-0 min-h-[44px] flex items-center">
+      <span className="inline-flex items-center gap-2 pb-1.5 text-[15px] whitespace-nowrap"
+        style={{ fontFamily: FONT, fontWeight: on ? 800 : 600, color: on ? CARBON : MUTED, boxShadow: on ? `inset 0 -2.5px 0 ${CARBON}` : "none" }}>
+        {label}
+        {n !== null && (
+          <span className="inline-flex items-center justify-center min-w-[28px] h-6 px-1.5 text-sm font-bold leading-none"
+            style={{ background: on ? CARBON : "#EFEAE0", color: on ? "#FFFFFF" : "#57534E", borderRadius: 999 }}>{n}</span>
+        )}
+      </span>
+    </button>
+  );
+  return (
+    <div className="relative -mx-4 sm:mx-0">
+      <div className="flex gap-6 overflow-x-auto px-4 sm:px-0 pr-10" style={{ scrollbarWidth: "none", borderBottom: `1px solid ${LINE}` }} role="group" aria-label="Rayons">
+        {tab("tout", "Tout", null, none, () => clearAll(p))}
+        {p.categories.map((c) => tab(c.slug, c.name, c.count, p.selectedSlugs.has(c.slug), () => p.onToggle(c.slug)))}
+      </div>
+      <div aria-hidden className="pointer-events-none absolute right-0 top-0 bottom-0 w-10 sm:hidden" style={{ background: `linear-gradient(90deg, rgba(250,250,248,0), ${PAPER})` }} />
+    </div>
+  );
+};
+
 const Foot = ({ p }: { p: EpureProps }) => (
   <Link to={p.catalogueHref} className="mt-6 inline-flex items-center gap-2 min-h-[44px] text-sm font-bold" style={{ fontFamily: FONT, color: CARBON }}>
     {p.footLabel} <ArrowRight className="w-4 h-4" />
@@ -209,17 +236,24 @@ const EpureShell = (p: EpureProps) => {
     );
   }
 
-  // 6 — ÉTIQUETTE (le plus épuré, lecture littérale) : petite étiquette au lieu d'un titre, champ souligné, onglets texte.
+  // 6 — ÉTIQUETTE (choisie le 19/10) : petite étiquette à gauche, le nombre de pièces bien écrit à droite,
+  // champ souligné, onglets propres.
   return (
     <section className="w-full" style={{ background: PAPER }} data-home-variant="6">
       <div className="max-w-7xl mx-auto px-4 lg:px-8 py-12 lg:py-16">
-        <p className="text-sm font-bold uppercase tracking-[0.14em]" style={{ fontFamily: FONT, color: MUTED }}>Le catalogue · {p.totalCount} pièces{p.scooterName ? ` pour ta ${scooterLabel(p)}` : ""}</p>
-        <div className="mt-3 grid grid-cols-1 gap-1 lg:grid-cols-[minmax(0,1fr)_auto] lg:items-end lg:gap-6">
+        <div className="flex items-end justify-between gap-4">
+          <p className="text-sm font-bold uppercase tracking-[0.14em] pb-1" style={{ fontFamily: FONT, color: MUTED }}>Le catalogue</p>
+          <p className="text-right leading-none" style={{ fontFamily: FONT }}>
+            <span className="text-[30px] sm:text-[36px] font-extrabold" style={{ color: CARBON, letterSpacing: "-0.03em" }}>{p.totalCount}</span>
+            <span className="ml-1.5 text-[15px] font-semibold" style={{ color: MUTED }}>{p.scooterName ? `pièces pour ta ${scooterLabel(p)}` : p.totalCount > 1 ? "pièces en ligne" : "pièce en ligne"}</span>
+          </p>
+        </div>
+        <div className="mt-4 grid grid-cols-1 gap-1 lg:grid-cols-[minmax(0,1fr)_auto] lg:items-end lg:gap-6">
           <div className="min-w-0"><Field p={p} /></div>
           <div><TrottLink {...p} /></div>
         </div>
-        <div className="mt-4"><TextTabs p={p} /></div>
-        <div ref={p.productsRef} className="min-w-0 scroll-mt-4 mt-4"><Cards>{p.grid}</Cards></div>
+        <div className="mt-4"><CleanTabs p={p} /></div>
+        <div ref={p.productsRef} className="min-w-0 scroll-mt-4 mt-5"><Cards>{p.grid}</Cards></div>
         <Foot p={p} />
       </div>
     </section>
