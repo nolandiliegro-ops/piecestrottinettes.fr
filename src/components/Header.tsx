@@ -114,7 +114,7 @@ const Header = () => {
           </Link>
 
           {/* Desktop Navigation */}
-          <nav className={cn("hidden lg:flex items-center", logoVariant ? "gap-5 xl:gap-8 ml-6" : "gap-8")}>
+          <nav className={cn("hidden lg:flex items-center", logoVariant ? "gap-3 xl:gap-8 ml-3 xl:ml-6" : "gap-8")}>
             {navLinks.map((link) => (
               <Link
                 key={link.href}

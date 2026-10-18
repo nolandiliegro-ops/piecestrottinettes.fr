@@ -1,19 +1,22 @@
 /**
  * Logo du site — propositions du 18/10/2026 derrière ?logo=1..5. Sans paramètre : le PNG actuel, inchangé.
- * Défaut constaté sur l'actuel : PNG 669×373 dont l'écriture n'occupe que 28 % de la hauteur (le reste est du vide,
- * compensé par -my-5), lettres d'une grotesque étroite générique qui n'est plus celle du site (Unbounded italique),
- * vert sauge pâle (#94B8A2) au lieu du vert du site (#4A7C59), slogan gris ~8 px illisible sur téléphone,
- * aucun symbole (le favicon est le mot entier réduit à 32 px).
- * Commun aux 5 : logo codé (net à toutes tailles, 0 Ko d'image), Unbounded, vert #4A7C59, pas d'orange (réservé
- * à l'achat), deux lignes sur téléphone pour gagner en hauteur, une ligne dès l'ordinateur quand ça tient.
+ * Actuel (brand_assets.logo_main_light) : « piecestrottinettes » au marqueur + trait pinceau orange brûlé et point.
+ * Défauts mesurés : l'écriture n'occupe qu'environ 30 % de la hauteur du PNG (≈ 116 × 41 px affichés sur ordinateur,
+ * encore moins sur téléphone), écriture fine et serrée qui ne tient pas face aux titres Unbounded 900 du site,
+ * même PNG de 600 Ko servi en favicon (illisible à 32 px), aucun symbole.
+ * Les 5 gardent l'ADN de l'actuel (minuscules manuscrites et/ou le trait + point) ; 2 à 5 sont codés (nets à toutes
+ * tailles, 0 Ko d'image) ; vert du site pour le trait (l'orange reste réservé à l'achat), sauf la 1 qui reste à l'identique.
  */
+import { useEffect } from "react";
+import { useBrandAsset } from "@/hooks/useBrandAssets";
+
 export type LogoVariant = 1 | 2 | 3 | 4 | 5;
 
 export const LOGO_NAMES: Record<LogoVariant, string> = {
   1: "Actuel repassé",
-  2: "Plaque",
-  3: "Écrou",
-  4: "Vitesse",
+  2: "Signature",
+  3: "Plaque",
+  4: "Écrou",
   5: "Roue",
 };
 
@@ -28,73 +31,82 @@ export const readLogoVariant = (): LogoVariant | null => {
 };
 
 const UNB = "'Unbounded', sans-serif";
+const BRUSH = "'Caveat Brush', 'Permanent Marker', cursive";
 const CARBON = "#1A1A1A";
 const GREEN = "#4A7C59";
 const SOFT_GREEN = "#8FBF9C";
 const cut = (px: number) => `polygon(0 0, calc(100% - ${px}px) 0, 100% ${px}px, 100% 100%, 0 100%)`;
 
-/* 1 — Actuel repassé : même disposition (pièces noir + trottinettes vert + .FR en exposant), en Unbounded italique, vert du site. */
-const Actuel = () => (
-  <span className="flex flex-col xl:flex-row xl:items-baseline leading-none" style={{ fontFamily: UNB, fontStyle: "italic" }}>
-    <span className="text-[22px] lg:text-[24px] xl:text-[26px] font-extrabold tracking-[-0.03em]" style={{ color: CARBON }}>pièces</span>
-    <span className="text-[22px] lg:text-[24px] xl:text-[26px] font-extrabold tracking-[-0.03em] -mt-0.5 xl:mt-0" style={{ color: GREEN }}>
-      trottinettes<sup className="text-[10px] lg:text-[12px] font-bold ml-0.5 align-super" style={{ color: GREEN }}>.FR</sup>
-    </span>
+/** Le geste de l'actuel : un point puis un trait qui s'effile en montant. */
+const Swoosh = ({ color = GREEN, className = "", h = 8 }: { color?: string; className?: string; h?: number }) => (
+  <span aria-hidden className={`flex items-end ${className}`} style={{ height: h }}>
+    <span className="shrink-0 rounded-full" style={{ width: h, height: h, background: color }} />
+    <svg viewBox="0 0 120 10" preserveAspectRatio="none" className="flex-1 ml-[3px]" style={{ height: h * 0.9, display: "block" }}>
+      <path d="M0,6.5 C40,6 80,3.6 120,0 C82,6.6 42,9.4 0,10 Z" fill={color} />
+    </svg>
   </span>
 );
 
-/* 2 — Plaque : le nom sur une plaque carbone à coin coupé, comme les blocs du site. */
+/* 1 — Actuel repassé : le même fichier, simplement recadré sur l'écriture (le PNG est vide à ~70 %) et agrandi ×1,5. */
+const Actuel = () => {
+  const logo = useBrandAsset("logo_main_light");
+  return (
+    <span className="relative block overflow-hidden h-[56px] w-[162px] lg:h-[68px] lg:w-[196px]">
+      <img
+        src={logo.url}
+        alt={logo.alt || "piecestrottinettes.fr"}
+        className="absolute left-1/2 -translate-x-1/2 -translate-y-1/2 top-[calc(50%+9px)] lg:top-[calc(50%+11px)] h-[180px] lg:h-[220px] w-auto max-w-none"
+      />
+    </span>
+  );
+};
+
+/* 2 — Signature : « pièces » en capitales Unbounded, « trottinettes » au pinceau, le trait + point en vert. */
+const Signature = () => (
+  <span className="inline-flex flex-col leading-none">
+    <span className="flex items-end gap-1.5">
+      <span className="text-[12px] xl:text-[15px] font-black italic tracking-[0.02em] pb-[4px]" style={{ fontFamily: UNB, color: CARBON }}>PIÈCES</span>
+      <span className="text-[29px] xl:text-[40px] leading-[0.8] -rotate-2 origin-bottom-left" style={{ fontFamily: BRUSH, color: CARBON }}>trottinettes</span>
+      <span className="text-[11px] xl:text-[12px] font-bold italic pb-[4px]" style={{ fontFamily: UNB, color: GREEN }}>.fr</span>
+    </span>
+    <Swoosh className="-mt-0.5 ml-1 w-[92%]" h={9} />
+  </span>
+);
+
+/* 3 — Plaque : le nom sur une plaque carbone à coin coupé (comme les blocs du site), le trait + point dessous. */
 const Plaque = () => (
-  <span className="relative inline-flex flex-col justify-center pl-2.5 pr-5 py-1.5 lg:pl-4 lg:pr-8 lg:py-2 leading-none" style={{ background: CARBON, clipPath: cut(14), fontFamily: UNB, fontStyle: "italic" }}>
-    <span className="text-[15px] lg:text-[21px] font-black tracking-[-0.02em] text-white">PIÈCES</span>
-    <span className="text-[15px] lg:text-[21px] font-black tracking-[-0.02em] mt-0.5" style={{ color: SOFT_GREEN }}>
-      TROTTINETTES<span className="text-[10px] lg:text-[11px] font-bold text-white/70 ml-0.5">.FR</span>
+  <span className="relative inline-flex flex-col justify-center pl-2.5 pr-5 pt-1.5 pb-1 xl:pl-4 xl:pr-8 xl:pt-2 leading-none" style={{ background: CARBON, clipPath: cut(14), fontFamily: UNB, fontStyle: "italic" }}>
+    <span className="text-[15px] xl:text-[19px] font-black tracking-[-0.02em] text-white">PIÈCES</span>
+    <span className="text-[15px] xl:text-[19px] font-black tracking-[-0.02em] mt-0.5" style={{ color: SOFT_GREEN }}>
+      TROTTINETTES<span className="text-[10px] xl:text-[11px] font-bold text-white/70 ml-0.5">.FR</span>
     </span>
-    <span aria-hidden className="absolute left-0 bottom-0 h-[3px] w-full" style={{ background: GREEN }} />
+    <Swoosh color={SOFT_GREEN} className="mt-1 w-[85%]" h={6} />
   </span>
 );
 
-/* 3 — Écrou : un symbole (écrou hexagonal vert, « pt » en creux) + le nom sur deux lignes. Le symbole seul = favicon / avatar. */
+/* 4 — Écrou : un symbole (écrou vert, « pt » au pinceau) + le nom sur deux lignes. Le symbole seul = favicon / avatar. */
 export const NutMark = ({ size = 40 }: { size?: number }) => (
   <svg width={size} height={size} viewBox="0 0 40 40" aria-hidden>
     <polygon points="20,1.5 36.5,11 36.5,29 20,38.5 3.5,29 3.5,11" fill={GREEN} />
     <polygon points="20,6 32.6,13.3 32.6,26.7 20,34 7.4,26.7 7.4,13.3" fill="none" stroke="rgba(255,255,255,0.28)" strokeWidth="1.2" />
-    <text x="20.5" y="25.2" textAnchor="middle" fontFamily="Unbounded, sans-serif" fontStyle="italic" fontWeight={900} fontSize="14" fill="#fff" letterSpacing="-0.5">pt</text>
+    <text x="19.5" y="26.5" textAnchor="middle" fontFamily="'Caveat Brush', cursive" fontSize="21" fill="#fff">pt</text>
   </svg>
 );
 const Ecrou = () => (
-  <span className="inline-flex items-center gap-2 lg:gap-2.5">
-    <span className="lg:hidden"><NutMark size={36} /></span>
-    <span className="hidden lg:inline"><NutMark size={48} /></span>
+  <span className="inline-flex items-center gap-2 xl:gap-2.5">
+    <span className="xl:hidden"><NutMark size={38} /></span>
+    <span className="hidden xl:inline"><NutMark size={46} /></span>
     <span className="flex flex-col leading-none" style={{ fontFamily: UNB, fontStyle: "italic" }}>
-      <span className="text-[14px] lg:text-[19px] font-black tracking-[-0.02em]" style={{ color: CARBON }}>PIÈCES</span>
-      <span className="text-[14px] lg:text-[19px] font-black tracking-[-0.02em] mt-0.5" style={{ color: GREEN }}>
-        TROTTINETTES<span className="text-[10px] lg:text-[11px] font-bold ml-0.5" style={{ color: CARBON }}>.FR</span>
+      <span className="text-[14px] xl:text-[18px] font-black tracking-[-0.02em]" style={{ color: CARBON }}>PIÈCES</span>
+      <span className="text-[14px] xl:text-[18px] font-black tracking-[-0.02em] mt-0.5" style={{ color: CARBON }}>
+        TROTTINETTES<span className="text-[10px] xl:text-[11px] font-bold ml-0.5" style={{ color: GREEN }}>.FR</span>
       </span>
+      <Swoosh className="mt-1 w-[80%]" h={6} />
     </span>
   </span>
 );
 
-/* 4 — Vitesse : capitales italiques, trois traits de vitesse, filet vert à bout coupé sous « trottinettes ». */
-const Vitesse = () => (
-  <span className="inline-flex items-center gap-1.5 lg:gap-2" style={{ fontFamily: UNB, fontStyle: "italic" }}>
-    <svg width="22" height="30" viewBox="0 0 22 30" aria-hidden className="shrink-0 lg:w-[26px] lg:h-[34px]">
-      <polygon points="9,4 22,4 19,9 6,9" fill={GREEN} />
-      <polygon points="5,12.5 20,12.5 17,17.5 2,17.5" fill={GREEN} opacity="0.7" />
-      <polygon points="3,21 14,21 11,26 0,26" fill={GREEN} opacity="0.45" />
-    </svg>
-    <span className="flex flex-col leading-none">
-      <span className="text-[16px] lg:text-[20px] font-black tracking-[-0.03em]" style={{ color: CARBON }}>PIÈCES</span>
-      <span className="relative pb-[5px] -mt-px">
-        <span className="text-[16px] lg:text-[20px] font-black tracking-[-0.03em]" style={{ color: CARBON }}>TROTTINETTES</span>
-        <span className="text-[10px] lg:text-[12px] font-bold ml-0.5" style={{ color: GREEN }}>.FR</span>
-        <span aria-hidden className="absolute left-0 bottom-0 h-[4px] w-[78%]" style={{ background: GREEN, clipPath: "polygon(0 0, 100% 0, calc(100% - 4px) 100%, 0 100%)" }} />
-      </span>
-    </span>
-  </span>
-);
-
-/* 5 — Roue : minuscules comme l'actuel, le « o » de trottinettes devient une roue (pneu + jante + rayons). */
+/* 5 — Roue : minuscules comme l'actuel, le « o » de trottinettes devient une roue, le trait + point dessous. */
 const Wheel = ({ px }: { px: number }) => (
   <svg width={px} height={px} viewBox="0 0 20 20" aria-hidden className="inline-block align-baseline" style={{ marginBottom: -1 }}>
     <circle cx="10" cy="10" r="8.6" fill="none" stroke={CARBON} strokeWidth="2.8" strokeDasharray="2.4 1.1" />
@@ -106,16 +118,33 @@ const Wheel = ({ px }: { px: number }) => (
   </svg>
 );
 const Roue = () => (
-  <span className="flex flex-col xl:flex-row xl:items-baseline leading-none" style={{ fontFamily: UNB }}>
-    <span className="text-[23px] lg:text-[24px] xl:text-[26px] font-extrabold tracking-[-0.04em]" style={{ color: CARBON }}>pièces</span>
-    <span className="text-[23px] lg:text-[24px] xl:text-[26px] font-extrabold tracking-[-0.04em] -mt-px xl:mt-0" style={{ color: GREEN }}>
-      tr<span className="lg:hidden"><Wheel px={17} /></span><span className="hidden lg:inline"><Wheel px={19} /></span>ttinettes
-      <span className="text-[10px] lg:text-[12px] font-bold ml-0.5" style={{ color: CARBON }}>.fr</span>
+  <span className="inline-flex flex-col leading-none" style={{ fontFamily: UNB }}>
+    <span className="flex flex-col xl:flex-row xl:items-baseline">
+      <span className="text-[22px] lg:text-[23px] xl:text-[25px] font-extrabold tracking-[-0.04em]" style={{ color: CARBON }}>pièces</span>
+      <span className="text-[22px] lg:text-[23px] xl:text-[25px] font-extrabold tracking-[-0.04em] -mt-px xl:mt-0" style={{ color: CARBON }}>
+        tr<span className="lg:hidden"><Wheel px={16} /></span><span className="hidden lg:inline"><Wheel px={18} /></span>ttinettes
+        <span className="text-[10px] lg:text-[12px] font-bold ml-0.5" style={{ color: GREEN }}>.fr</span>
+      </span>
     </span>
+    <Swoosh className="mt-0.5 w-[88%]" h={7} />
   </span>
 );
 
+/** Police pinceau chargée seulement quand une proposition est affichée (rien ne change pour les autres visiteurs). */
+const useBrushFont = () => {
+  useEffect(() => {
+    const id = "pt-logo-brush-font";
+    if (document.getElementById(id)) return;
+    const l = document.createElement("link");
+    l.id = id;
+    l.rel = "stylesheet";
+    l.href = "https://fonts.googleapis.com/css2?family=Caveat+Brush&display=swap";
+    document.head.appendChild(l);
+  }, []);
+};
+
 export const SiteLogo = ({ variant }: { variant: LogoVariant }) => {
-  const C = { 1: Actuel, 2: Plaque, 3: Ecrou, 4: Vitesse, 5: Roue }[variant];
+  useBrushFont();
+  const C = { 1: Actuel, 2: Signature, 3: Plaque, 4: Ecrou, 5: Roue }[variant];
   return <C />;
 };
