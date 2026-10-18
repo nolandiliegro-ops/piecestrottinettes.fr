@@ -10,7 +10,7 @@ export type Database = {
   // Allows to automatically instantiate createClient with right options
   // instead of createClient<Database, { PostgrestVersion: 'XX' }>(URL, KEY)
   __InternalSupabase: {
-    PostgrestVersion: "14.5"
+    PostgrestVersion: "14.1"
   }
   public: {
     Tables: {
@@ -62,6 +62,216 @@ export type Database = {
           amperage?: number | null
           id?: string | null
           saved_at?: string | null
+        }
+        Relationships: []
+      }
+      _backup_batt_correctifs_20261013: {
+        Row: {
+          data: Json | null
+          kind: string | null
+        }
+        Insert: {
+          data?: Json | null
+          kind?: string | null
+        }
+        Update: {
+          data?: Json | null
+          kind?: string | null
+        }
+        Relationships: []
+      }
+      _backup_brand_apollo_cecotec_20261011: {
+        Row: {
+          accent_color: string | null
+          articles: Json | null
+          awards: Json | null
+          cons: Json | null
+          country: string | null
+          created_at: string | null
+          description: string | null
+          display_order: number | null
+          editorial_summary: string | null
+          editorial_verdict: string | null
+          entry_style: string | null
+          faq: Json | null
+          founded_year: number | null
+          gallery: Json | null
+          hero_image_url: string | null
+          id: string | null
+          is_star: boolean | null
+          last_verified_at: string | null
+          logo_url: string | null
+          name: string | null
+          pros: Json | null
+          published: boolean | null
+          related_brand_slugs: Json | null
+          score_budget: number | null
+          score_comfort: number | null
+          score_lightweight: number | null
+          showcase_model_id: string | null
+          signature_color: string | null
+          slug: string | null
+          sources: Json | null
+          sponsored: boolean | null
+          tagline: string | null
+          tile_size: string | null
+          videos: Json | null
+          watermark_pos: string | null
+          website_url: string | null
+          youtube_video_id: string | null
+        }
+        Insert: {
+          accent_color?: string | null
+          articles?: Json | null
+          awards?: Json | null
+          cons?: Json | null
+          country?: string | null
+          created_at?: string | null
+          description?: string | null
+          display_order?: number | null
+          editorial_summary?: string | null
+          editorial_verdict?: string | null
+          entry_style?: string | null
+          faq?: Json | null
+          founded_year?: number | null
+          gallery?: Json | null
+          hero_image_url?: string | null
+          id?: string | null
+          is_star?: boolean | null
+          last_verified_at?: string | null
+          logo_url?: string | null
+          name?: string | null
+          pros?: Json | null
+          published?: boolean | null
+          related_brand_slugs?: Json | null
+          score_budget?: number | null
+          score_comfort?: number | null
+          score_lightweight?: number | null
+          showcase_model_id?: string | null
+          signature_color?: string | null
+          slug?: string | null
+          sources?: Json | null
+          sponsored?: boolean | null
+          tagline?: string | null
+          tile_size?: string | null
+          videos?: Json | null
+          watermark_pos?: string | null
+          website_url?: string | null
+          youtube_video_id?: string | null
+        }
+        Update: {
+          accent_color?: string | null
+          articles?: Json | null
+          awards?: Json | null
+          cons?: Json | null
+          country?: string | null
+          created_at?: string | null
+          description?: string | null
+          display_order?: number | null
+          editorial_summary?: string | null
+          editorial_verdict?: string | null
+          entry_style?: string | null
+          faq?: Json | null
+          founded_year?: number | null
+          gallery?: Json | null
+          hero_image_url?: string | null
+          id?: string | null
+          is_star?: boolean | null
+          last_verified_at?: string | null
+          logo_url?: string | null
+          name?: string | null
+          pros?: Json | null
+          published?: boolean | null
+          related_brand_slugs?: Json | null
+          score_budget?: number | null
+          score_comfort?: number | null
+          score_lightweight?: number | null
+          showcase_model_id?: string | null
+          signature_color?: string | null
+          slug?: string | null
+          sources?: Json | null
+          sponsored?: boolean | null
+          tagline?: string | null
+          tile_size?: string | null
+          videos?: Json | null
+          watermark_pos?: string | null
+          website_url?: string | null
+          youtube_video_id?: string | null
+        }
+        Relationships: []
+      }
+      _backup_brand_desc_20261013: {
+        Row: {
+          description: string | null
+          id: string | null
+          slug: string | null
+        }
+        Insert: {
+          description?: string | null
+          id?: string | null
+          slug?: string | null
+        }
+        Update: {
+          description?: string | null
+          id?: string | null
+          slug?: string | null
+        }
+        Relationships: []
+      }
+      _backup_brand_laotie_20261011: {
+        Row: {
+          id: string | null
+          logo_url: string | null
+          published: boolean | null
+          saved_at: string | null
+          slug: string | null
+        }
+        Insert: {
+          id?: string | null
+          logo_url?: string | null
+          published?: boolean | null
+          saved_at?: string | null
+          slug?: string | null
+        }
+        Update: {
+          id?: string | null
+          logo_url?: string | null
+          published?: boolean | null
+          saved_at?: string | null
+          slug?: string | null
+        }
+        Relationships: []
+      }
+      _backup_brand_seo_20261013: {
+        Row: {
+          country: string | null
+          editorial_verdict: string | null
+          faq: Json | null
+          founded_year: number | null
+          id: string | null
+          slug: string | null
+          tagline: string | null
+          website_url: string | null
+        }
+        Insert: {
+          country?: string | null
+          editorial_verdict?: string | null
+          faq?: Json | null
+          founded_year?: number | null
+          id?: string | null
+          slug?: string | null
+          tagline?: string | null
+          website_url?: string | null
+        }
+        Update: {
+          country?: string | null
+          editorial_verdict?: string | null
+          faq?: Json | null
+          founded_year?: number | null
+          id?: string | null
+          slug?: string | null
+          tagline?: string | null
+          website_url?: string | null
         }
         Relationships: []
       }
@@ -200,6 +410,66 @@ export type Database = {
         }
         Relationships: []
       }
+      _backup_charge_conn_cecotec_20261011: {
+        Row: {
+          charge_connectors: string[] | null
+          id: string | null
+          slug: string | null
+        }
+        Insert: {
+          charge_connectors?: string[] | null
+          id?: string | null
+          slug?: string | null
+        }
+        Update: {
+          charge_connectors?: string[] | null
+          id?: string | null
+          slug?: string | null
+        }
+        Relationships: []
+      }
+      _backup_charge_conn_ewatts_20261011: {
+        Row: {
+          charge_connectors: string[] | null
+          id: string | null
+          saved_at: string | null
+          slug: string | null
+        }
+        Insert: {
+          charge_connectors?: string[] | null
+          id?: string | null
+          saved_at?: string | null
+          slug?: string | null
+        }
+        Update: {
+          charge_connectors?: string[] | null
+          id?: string | null
+          saved_at?: string | null
+          slug?: string | null
+        }
+        Relationships: []
+      }
+      _backup_charge_conn_lot3_20261011: {
+        Row: {
+          charge_connectors: string[] | null
+          id: string | null
+          saved_at: string | null
+          slug: string | null
+        }
+        Insert: {
+          charge_connectors?: string[] | null
+          id?: string | null
+          saved_at?: string | null
+          slug?: string | null
+        }
+        Update: {
+          charge_connectors?: string[] | null
+          id?: string | null
+          saved_at?: string | null
+          slug?: string | null
+        }
+        Relationships: []
+      }
       _backup_cle_roue_20261010: {
         Row: {
           id: string | null
@@ -224,6 +494,90 @@ export type Database = {
           slug?: string | null
           tire_family?: string | null
           tire_section_code?: string | null
+        }
+        Relationships: []
+      }
+      _backup_cles_roue_20261017: {
+        Row: {
+          id: string | null
+          rim_diameter_code: string | null
+          saved_at: string | null
+          slug: string | null
+          tire_section_code: string | null
+        }
+        Insert: {
+          id?: string | null
+          rim_diameter_code?: string | null
+          saved_at?: string | null
+          slug?: string | null
+          tire_section_code?: string | null
+        }
+        Update: {
+          id?: string | null
+          rim_diameter_code?: string | null
+          saved_at?: string | null
+          slug?: string | null
+          tire_section_code?: string | null
+        }
+        Relationships: []
+      }
+      _backup_cles_roue2_20261017: {
+        Row: {
+          id: string | null
+          rim_diameter_code: string | null
+          saved_at: string | null
+          slug: string | null
+          tire_section_code: string | null
+        }
+        Insert: {
+          id?: string | null
+          rim_diameter_code?: string | null
+          saved_at?: string | null
+          slug?: string | null
+          tire_section_code?: string | null
+        }
+        Update: {
+          id?: string | null
+          rim_diameter_code?: string | null
+          saved_at?: string | null
+          slug?: string | null
+          tire_section_code?: string | null
+        }
+        Relationships: []
+      }
+      _backup_compat_chargeurs_20261011: {
+        Row: {
+          auto_suggested: boolean | null
+          confidence_level: string | null
+          created_at: string | null
+          id: string | null
+          part_id: string | null
+          position: string | null
+          saved_at: string | null
+          scooter_model_id: string | null
+          suggestion_reason: string | null
+        }
+        Insert: {
+          auto_suggested?: boolean | null
+          confidence_level?: string | null
+          created_at?: string | null
+          id?: string | null
+          part_id?: string | null
+          position?: string | null
+          saved_at?: string | null
+          scooter_model_id?: string | null
+          suggestion_reason?: string | null
+        }
+        Update: {
+          auto_suggested?: boolean | null
+          confidence_level?: string | null
+          created_at?: string | null
+          id?: string | null
+          part_id?: string | null
+          position?: string | null
+          saved_at?: string | null
+          scooter_model_id?: string | null
+          suggestion_reason?: string | null
         }
         Relationships: []
       }
@@ -443,6 +797,75 @@ export type Database = {
         }
         Relationships: []
       }
+      _backup_conn_t10_20261013: {
+        Row: {
+          charge_connectors: string[] | null
+          id: string | null
+          slug: string | null
+        }
+        Insert: {
+          charge_connectors?: string[] | null
+          id?: string | null
+          slug?: string | null
+        }
+        Update: {
+          charge_connectors?: string[] | null
+          id?: string | null
+          slug?: string | null
+        }
+        Relationships: []
+      }
+      _backup_disc_44_6_20261011: {
+        Row: {
+          disc_diameter_code: string | null
+          disc_holes_code: string | null
+          disc_pcd_code: string | null
+          id: string | null
+          saved_at: string | null
+          slug: string | null
+        }
+        Insert: {
+          disc_diameter_code?: string | null
+          disc_holes_code?: string | null
+          disc_pcd_code?: string | null
+          id?: string | null
+          saved_at?: string | null
+          slug?: string | null
+        }
+        Update: {
+          disc_diameter_code?: string | null
+          disc_holes_code?: string | null
+          disc_pcd_code?: string | null
+          id?: string | null
+          saved_at?: string | null
+          slug?: string | null
+        }
+        Relationships: []
+      }
+      _backup_disc_44_6_top_20261013: {
+        Row: {
+          disc_diameter_code: string | null
+          disc_holes_code: string | null
+          disc_pcd_code: string | null
+          id: string | null
+          slug: string | null
+        }
+        Insert: {
+          disc_diameter_code?: string | null
+          disc_holes_code?: string | null
+          disc_pcd_code?: string | null
+          id?: string | null
+          slug?: string | null
+        }
+        Update: {
+          disc_diameter_code?: string | null
+          disc_holes_code?: string | null
+          disc_pcd_code?: string | null
+          id?: string | null
+          slug?: string | null
+        }
+        Relationships: []
+      }
       _backup_etriers_20260929: {
         Row: {
           caliper_family: string | null
@@ -521,6 +944,54 @@ export type Database = {
           published?: boolean | null
           sku?: string | null
           updated_at?: string | null
+        }
+        Relationships: []
+      }
+      _backup_galeries_20261016: {
+        Row: {
+          backed_up_at: string | null
+          id: string | null
+          image_url: string | null
+          images: Json | null
+          slug: string | null
+        }
+        Insert: {
+          backed_up_at?: string | null
+          id?: string | null
+          image_url?: string | null
+          images?: Json | null
+          slug?: string | null
+        }
+        Update: {
+          backed_up_at?: string | null
+          id?: string | null
+          image_url?: string | null
+          images?: Json | null
+          slug?: string | null
+        }
+        Relationships: []
+      }
+      _backup_galeries_20261017: {
+        Row: {
+          backed_up_at: string | null
+          id: string | null
+          image_url: string | null
+          images: Json | null
+          slug: string | null
+        }
+        Insert: {
+          backed_up_at?: string | null
+          id?: string | null
+          image_url?: string | null
+          images?: Json | null
+          slug?: string | null
+        }
+        Update: {
+          backed_up_at?: string | null
+          id?: string | null
+          image_url?: string | null
+          images?: Json | null
+          slug?: string | null
         }
         Relationships: []
       }
@@ -1202,6 +1673,48 @@ export type Database = {
         }
         Relationships: []
       }
+      _backup_photo_principale_20261016: {
+        Row: {
+          backed_up_at: string | null
+          id: string | null
+          image_url: string | null
+          images: Json | null
+          slug: string | null
+        }
+        Insert: {
+          backed_up_at?: string | null
+          id?: string | null
+          image_url?: string | null
+          images?: Json | null
+          slug?: string | null
+        }
+        Update: {
+          backed_up_at?: string | null
+          id?: string | null
+          image_url?: string | null
+          images?: Json | null
+          slug?: string | null
+        }
+        Relationships: []
+      }
+      _backup_pneu_cst_10x3_20261011: {
+        Row: {
+          fitment_specs: Json | null
+          id: string | null
+          saved_at: string | null
+        }
+        Insert: {
+          fitment_specs?: Json | null
+          id?: string | null
+          saved_at?: string | null
+        }
+        Update: {
+          fitment_specs?: Json | null
+          id?: string | null
+          saved_at?: string | null
+        }
+        Relationships: []
+      }
       _backup_poids_20260929: {
         Row: {
           id: string | null
@@ -1340,6 +1853,81 @@ export type Database = {
         }
         Relationships: []
       }
+      _backup_prise_xiaomi2x_20261013: {
+        Row: {
+          charge_connectors: string[] | null
+          slug: string | null
+        }
+        Insert: {
+          charge_connectors?: string[] | null
+          slug?: string | null
+        }
+        Update: {
+          charge_connectors?: string[] | null
+          slug?: string | null
+        }
+        Relationships: []
+      }
+      _backup_prises_ia_20261013: {
+        Row: {
+          charge_connectors: string[] | null
+          id: string | null
+          slug: string | null
+        }
+        Insert: {
+          charge_connectors?: string[] | null
+          id?: string | null
+          slug?: string | null
+        }
+        Update: {
+          charge_connectors?: string[] | null
+          id?: string | null
+          slug?: string | null
+        }
+        Relationships: []
+      }
+      _backup_prix_regle_20261017: {
+        Row: {
+          backed_up_at: string | null
+          id: string | null
+          price: number | null
+          price_override: boolean | null
+          sku: string | null
+        }
+        Insert: {
+          backed_up_at?: string | null
+          id?: string | null
+          price?: number | null
+          price_override?: boolean | null
+          sku?: string | null
+        }
+        Update: {
+          backed_up_at?: string | null
+          id?: string | null
+          price?: number | null
+          price_override?: boolean | null
+          sku?: string | null
+        }
+        Relationships: []
+      }
+      _backup_publish_lot14_20261014: {
+        Row: {
+          id: string | null
+          published: boolean | null
+          slug: string | null
+        }
+        Insert: {
+          id?: string | null
+          published?: boolean | null
+          slug?: string | null
+        }
+        Update: {
+          id?: string | null
+          published?: boolean | null
+          slug?: string | null
+        }
+        Relationships: []
+      }
       _backup_publish_sans_disque_20261010: {
         Row: {
           id: string | null
@@ -1357,6 +1945,48 @@ export type Database = {
           id?: string | null
           published?: boolean | null
           saved_at?: string | null
+          slug?: string | null
+        }
+        Relationships: []
+      }
+      _backup_publish_topparc_20261014: {
+        Row: {
+          id: string | null
+          published: boolean | null
+          slug: string | null
+          voltage: number | null
+        }
+        Insert: {
+          id?: string | null
+          published?: boolean | null
+          slug?: string | null
+          voltage?: number | null
+        }
+        Update: {
+          id?: string | null
+          published?: boolean | null
+          slug?: string | null
+          voltage?: number | null
+        }
+        Relationships: []
+      }
+      _backup_publish_vague2_20261016: {
+        Row: {
+          backed_up_at: string | null
+          id: string | null
+          published: boolean | null
+          slug: string | null
+        }
+        Insert: {
+          backed_up_at?: string | null
+          id?: string | null
+          published?: boolean | null
+          slug?: string | null
+        }
+        Update: {
+          backed_up_at?: string | null
+          id?: string | null
+          published?: boolean | null
           slug?: string | null
         }
         Relationships: []
@@ -1529,6 +2159,39 @@ export type Database = {
         }
         Relationships: []
       }
+      _backup_scooter_counts_20261018: {
+        Row: {
+          compatible_parts_count: number | null
+          id: string | null
+        }
+        Insert: {
+          compatible_parts_count?: number | null
+          id?: string | null
+        }
+        Update: {
+          compatible_parts_count?: number | null
+          id?: string | null
+        }
+        Relationships: []
+      }
+      _backup_scooter_desc_20261013: {
+        Row: {
+          description: string | null
+          id: string | null
+          slug: string | null
+        }
+        Insert: {
+          description?: string | null
+          id?: string | null
+          slug?: string | null
+        }
+        Update: {
+          description?: string | null
+          id?: string | null
+          slug?: string | null
+        }
+        Relationships: []
+      }
       _backup_scooter_disc_20260922: {
         Row: {
           backed_up_at: string | null
@@ -1664,6 +2327,33 @@ export type Database = {
         }
         Relationships: []
       }
+      _backup_seo_parts_20261013: {
+        Row: {
+          description: string | null
+          id: string | null
+          kind: string | null
+          meta_description: string | null
+          meta_title: string | null
+          slug: string | null
+        }
+        Insert: {
+          description?: string | null
+          id?: string | null
+          kind?: string | null
+          meta_description?: string | null
+          meta_title?: string | null
+          slug?: string | null
+        }
+        Update: {
+          description?: string | null
+          id?: string | null
+          kind?: string | null
+          meta_description?: string | null
+          meta_title?: string | null
+          slug?: string | null
+        }
+        Relationships: []
+      }
       _backup_solid_rimtype_20260922: {
         Row: {
           backup_at: string | null
@@ -1715,6 +2405,63 @@ export type Database = {
         }
         Relationships: []
       }
+      _backup_sp1213_conn_20261011: {
+        Row: {
+          electrical_specs: Json | null
+          id: string | null
+          saved_at: string | null
+          sku: string | null
+        }
+        Insert: {
+          electrical_specs?: Json | null
+          id?: string | null
+          saved_at?: string | null
+          sku?: string | null
+        }
+        Update: {
+          electrical_specs?: Json | null
+          id?: string | null
+          saved_at?: string | null
+          sku?: string | null
+        }
+        Relationships: []
+      }
+      _backup_sp186_s1f_20261011: {
+        Row: {
+          k: string | null
+          ref: string | null
+          val: string | null
+        }
+        Insert: {
+          k?: string | null
+          ref?: string | null
+          val?: string | null
+        }
+        Update: {
+          k?: string | null
+          ref?: string | null
+          val?: string | null
+        }
+        Relationships: []
+      }
+      _backup_stock_wattiz_20261017: {
+        Row: {
+          id: string | null
+          sku: string | null
+          stock_quantity: number | null
+        }
+        Insert: {
+          id?: string | null
+          sku?: string | null
+          stock_quantity?: number | null
+        }
+        Update: {
+          id?: string | null
+          sku?: string | null
+          stock_quantity?: number | null
+        }
+        Relationships: []
+      }
       _backup_tirefamily_20260917: {
         Row: {
           created_at: string | null
@@ -1736,6 +2483,27 @@ export type Database = {
           image_url?: string | null
           slug?: string | null
           tire_family?: string | null
+        }
+        Relationships: []
+      }
+      _backup_unpub_cst_20261017: {
+        Row: {
+          backed_up_at: string | null
+          id: string | null
+          published: boolean | null
+          sku: string | null
+        }
+        Insert: {
+          backed_up_at?: string | null
+          id?: string | null
+          published?: boolean | null
+          sku?: string | null
+        }
+        Update: {
+          backed_up_at?: string | null
+          id?: string | null
+          published?: boolean | null
+          sku?: string | null
         }
         Relationships: []
       }
@@ -1787,6 +2555,261 @@ export type Database = {
           kind?: string | null
           ref?: string | null
           val?: Json | null
+        }
+        Relationships: []
+      }
+      _bak_battery_configs_1810: {
+        Row: {
+          amperage: number | null
+          created_at: string | null
+          id: string | null
+          scooter_model_id: string | null
+          voltage: number | null
+        }
+        Insert: {
+          amperage?: number | null
+          created_at?: string | null
+          id?: string | null
+          scooter_model_id?: string | null
+          voltage?: number | null
+        }
+        Update: {
+          amperage?: number | null
+          created_at?: string | null
+          id?: string | null
+          scooter_model_id?: string | null
+          voltage?: number | null
+        }
+        Relationships: []
+      }
+      _bak_cles_soir_1810: {
+        Row: {
+          caliper_family: string | null
+          disc_diameter_code: string | null
+          disc_holes_code: string | null
+          disc_pcd_code: string | null
+          id: string | null
+          rim_diameter_code: string | null
+          slug: string | null
+          tire_section_code: string | null
+        }
+        Insert: {
+          caliper_family?: string | null
+          disc_diameter_code?: string | null
+          disc_holes_code?: string | null
+          disc_pcd_code?: string | null
+          id?: string | null
+          rim_diameter_code?: string | null
+          slug?: string | null
+          tire_section_code?: string | null
+        }
+        Update: {
+          caliper_family?: string | null
+          disc_diameter_code?: string | null
+          disc_holes_code?: string | null
+          disc_pcd_code?: string | null
+          id?: string | null
+          rim_diameter_code?: string | null
+          slug?: string | null
+          tire_section_code?: string | null
+        }
+        Relationships: []
+      }
+      _bak_dedup_1810: {
+        Row: {
+          id: string | null
+          ps_buy: number | null
+          ps_part_id: string | null
+          ps_primary: boolean | null
+          published: boolean | null
+          sku: string | null
+          t: string | null
+        }
+        Insert: {
+          id?: string | null
+          ps_buy?: number | null
+          ps_part_id?: string | null
+          ps_primary?: boolean | null
+          published?: boolean | null
+          sku?: string | null
+          t?: string | null
+        }
+        Update: {
+          id?: string | null
+          ps_buy?: number | null
+          ps_part_id?: string | null
+          ps_primary?: boolean | null
+          published?: boolean | null
+          sku?: string | null
+          t?: string | null
+        }
+        Relationships: []
+      }
+      _bak_parts_prix_ewheel_1810: {
+        Row: {
+          id: string | null
+          price: number | null
+          price_override: boolean | null
+          sku: string | null
+          updated_at: string | null
+        }
+        Insert: {
+          id?: string | null
+          price?: number | null
+          price_override?: boolean | null
+          sku?: string | null
+          updated_at?: string | null
+        }
+        Update: {
+          id?: string | null
+          price?: number | null
+          price_override?: boolean | null
+          sku?: string | null
+          updated_at?: string | null
+        }
+        Relationships: []
+      }
+      _bak_parts_pub_pneus_1810: {
+        Row: {
+          id: string | null
+          published: boolean | null
+          updated_at: string | null
+        }
+        Insert: {
+          id?: string | null
+          published?: boolean | null
+          updated_at?: string | null
+        }
+        Update: {
+          id?: string | null
+          published?: boolean | null
+          updated_at?: string | null
+        }
+        Relationships: []
+      }
+      _bak_plaquettes_1810: {
+        Row: {
+          id: string | null
+          k: string | null
+          t: string | null
+          v: string | null
+        }
+        Insert: {
+          id?: string | null
+          k?: string | null
+          t?: string | null
+          v?: string | null
+        }
+        Update: {
+          id?: string | null
+          k?: string | null
+          t?: string | null
+          v?: string | null
+        }
+        Relationships: []
+      }
+      _bak_prises_conc_1810: {
+        Row: {
+          charge_connectors: string[] | null
+          id: string | null
+          slug: string | null
+        }
+        Insert: {
+          charge_connectors?: string[] | null
+          id?: string | null
+          slug?: string | null
+        }
+        Update: {
+          charge_connectors?: string[] | null
+          id?: string | null
+          slug?: string | null
+        }
+        Relationships: []
+      }
+      _bak_roue_nuit_1810: {
+        Row: {
+          id: string | null
+          rim_diameter_code: string | null
+          slug: string | null
+          tire_family: string | null
+          tire_section_code: string | null
+        }
+        Insert: {
+          id?: string | null
+          rim_diameter_code?: string | null
+          slug?: string | null
+          tire_family?: string | null
+          tire_section_code?: string | null
+        }
+        Update: {
+          id?: string | null
+          rim_diameter_code?: string | null
+          slug?: string | null
+          tire_family?: string | null
+          tire_section_code?: string | null
+        }
+        Relationships: []
+      }
+      _bak_sections_1810: {
+        Row: {
+          fitment_specs: Json | null
+          id: string | null
+          sku: string | null
+        }
+        Insert: {
+          fitment_specs?: Json | null
+          id?: string | null
+          sku?: string | null
+        }
+        Update: {
+          fitment_specs?: Json | null
+          id?: string | null
+          sku?: string | null
+        }
+        Relationships: []
+      }
+      _stage_brand_seo_20261013: {
+        Row: {
+          country: string | null
+          editorial_verdict: string | null
+          faq: Json | null
+          founded_year: number | null
+          slug: string
+          tagline: string | null
+          website_url: string | null
+        }
+        Insert: {
+          country?: string | null
+          editorial_verdict?: string | null
+          faq?: Json | null
+          founded_year?: number | null
+          slug: string
+          tagline?: string | null
+          website_url?: string | null
+        }
+        Update: {
+          country?: string | null
+          editorial_verdict?: string | null
+          faq?: Json | null
+          founded_year?: number | null
+          slug?: string
+          tagline?: string | null
+          website_url?: string | null
+        }
+        Relationships: []
+      }
+      _stage_desc_20261013: {
+        Row: {
+          description: string | null
+          slug: string
+        }
+        Insert: {
+          description?: string | null
+          slug: string
+        }
+        Update: {
+          description?: string | null
+          slug?: string
         }
         Relationships: []
       }
@@ -1908,6 +2931,36 @@ export type Database = {
           description?: string | null
           id?: string
           updated_at?: string
+          updated_by?: string | null
+        }
+        Relationships: []
+      }
+      brand_assets_backup_20261018: {
+        Row: {
+          alt_text: string | null
+          asset_key: string | null
+          asset_url: string | null
+          description: string | null
+          id: string | null
+          updated_at: string | null
+          updated_by: string | null
+        }
+        Insert: {
+          alt_text?: string | null
+          asset_key?: string | null
+          asset_url?: string | null
+          description?: string | null
+          id?: string | null
+          updated_at?: string | null
+          updated_by?: string | null
+        }
+        Update: {
+          alt_text?: string | null
+          asset_key?: string | null
+          asset_url?: string | null
+          description?: string | null
+          id?: string | null
+          updated_at?: string | null
           updated_by?: string | null
         }
         Relationships: []
@@ -3884,6 +4937,38 @@ export type Database = {
           },
         ]
       }
+      tire_size_reports: {
+        Row: {
+          created_at: string
+          id: string
+          rim: string | null
+          scooter_model_id: string
+          section: string
+        }
+        Insert: {
+          created_at?: string
+          id?: string
+          rim?: string | null
+          scooter_model_id: string
+          section: string
+        }
+        Update: {
+          created_at?: string
+          id?: string
+          rim?: string | null
+          scooter_model_id?: string
+          section?: string
+        }
+        Relationships: [
+          {
+            foreignKeyName: "tire_size_reports_scooter_model_id_fkey"
+            columns: ["scooter_model_id"]
+            isOneToOne: false
+            referencedRelation: "scooter_models"
+            referencedColumns: ["id"]
+          },
+        ]
+      }
       tutorials: {
         Row: {
           created_at: string
@@ -4206,6 +5291,10 @@ export type Database = {
         Returns: string
       }
       pt_model_key: { Args: { t: string }; Returns: string }
+      recalc_scooter_parts_count: {
+        Args: { ids: string[] }
+        Returns: undefined
+      }
       search_parts_fuzzy: {
         Args: {
           p_category_ids?: string[]
