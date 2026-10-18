@@ -6,6 +6,7 @@ import { useHeroScooters } from "@/hooks/useHeroScooters";
 import { useSelectedScooter } from "@/contexts/ScooterContext";
 import HeroCenterCarousel from "@/components/home/HeroCenterCarousel";
 import HeroMiniCards from "@/components/home/HeroMiniCards";
+import HeroAtelier, { readHeroVariant } from "@/components/home/HeroAtelier";
 
 const HeroSearchFirst = () => {
   const navigate = useNavigate();
@@ -62,6 +63,26 @@ const HeroSearchFirst = () => {
         };
 
   const heroImage = scooters[0]?.image_url ?? null;
+  const [heroVariant] = useState(readHeroVariant);
+
+  // Propositions du 18/10 (?hero=1..5) — sans paramètre, rien ne change.
+  if (heroVariant) {
+    return (
+      <HeroAtelier
+        variant={heroVariant}
+        query={query}
+        onQuery={setQuery}
+        inputRef={inputRef}
+        onSubmit={submitFreeText}
+        onCatalogue={() => navigate("/catalogue")}
+        scooters={scooters}
+        isLoading={isLoading}
+        isSearching={isSearching}
+        miniTitle={miniTitle}
+        onSelect={handleSelect}
+      />
+    );
+  }
 
   return (
     <section
