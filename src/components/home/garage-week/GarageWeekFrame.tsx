@@ -604,194 +604,51 @@ const GarageWeekFrame = ({
       <aside
         className="relative overflow-hidden flex flex-col"
         style={{
-          background: "linear-gradient(180deg, #2A2A2A 0%, #1A1A1A 100%)",
+          background: "#1A1A1A",
         }}
       >
-        {/* Ambient radials — opacity divisée par 2 */}
-        <div
-          aria-hidden
-          className="pointer-events-none absolute inset-0"
-          style={{
-            background:
-              "radial-gradient(ellipse 60% 40% at 80% 0%, rgba(255,102,0,0.06) 0%, transparent 65%), radial-gradient(ellipse 50% 35% at 0% 100%, rgba(74,124,89,0.05) 0%, transparent 60%)",
-          }}
-        />
-
+        {/* 18/10 — refait sur retour Nolan (« boutons en transparence, ça fait trop générique, manque de clarté ») :
+            aplat carbone plein, liste nette sans pastilles, UN seul bouton plein, plus d'orange (réservé à l'achat),
+            plus de bouton grisé inactif, textes ≥ 14 px. */}
         <div className="relative z-[1] flex flex-col gap-4 lg:gap-5 p-6 lg:p-7 flex-1">
-          {/* Eyebrow */}
-          <span
-            className="hidden lg:inline-flex items-center gap-1.5 self-start text-[10px] font-extrabold tracking-[0.20em] uppercase"
-            style={{
-              color: "#FF8533",
-              fontFamily: "'Plus Jakarta Sans', sans-serif",
-            }}
-          >
-            <Sparkles className="w-3 h-3" strokeWidth={2.6} aria-hidden />
+          <span className="hidden lg:block text-sm font-extrabold tracking-[0.18em] uppercase" style={{ color: "#8FBF9C", fontFamily: "'Plus Jakarta Sans', sans-serif" }}>
             L'expérience rider
           </span>
-
-          {/* H3 */}
-          <h3
-            className="hidden lg:block text-[26px] lg:text-[30px] leading-[1.04] text-white"
-            style={{
-              fontFamily: "'Anton', sans-serif",
-              letterSpacing: "-0.015em",
-              textTransform: "uppercase",
-            }}
-          >
-            Ce n'est pas qu'un site.
-            <br />
-            Une <span style={{ color: "#FF8533" }}>communauté</span>.
+          <h3 className="hidden lg:block text-[26px] leading-[1.05] text-white uppercase" style={{ fontFamily: "'Unbounded', sans-serif", fontWeight: 900, fontStyle: "italic", letterSpacing: "-0.03em" }}>
+            Ton garage, <span style={{ color: "#8FBF9C" }}>gratuit.</span>
           </h3>
 
-          {/* Description — texte adouci */}
-          <p
-            className="hidden lg:block text-[13px] leading-[1.55]"
-            style={{
-              color: "rgba(255,255,255,0.85)",
-              fontFamily: "'Plus Jakarta Sans', sans-serif",
-            }}
-          >
-            Crée ton profil, personnalise ton garage avec tes propres wallpapers,
-            et débloque des avantages exclusifs.
-          </p>
-
-          {/* Perks list */}
-          <ul className="flex flex-col gap-2 mt-1">
-            {PERKS.map((perk) => {
+          <ul className="flex flex-col">
+            {PERKS.map((perk, i) => {
               const Icon = perk.Icon;
               const active = perk.status === "active";
               return (
-                <li
-                  key={perk.label}
-                  className="flex items-center gap-2.5 rounded-xl px-2.5 py-2"
-                  style={{
-                    background: "rgba(255,255,255,0.05)",
-                    border: "1px solid rgba(255,255,255,0.10)",
-                  }}
-                >
-                  <span
-                    className="inline-flex items-center justify-center w-8 h-8 rounded-md flex-shrink-0"
-                    style={{
-                      background: active
-                        ? "linear-gradient(135deg, rgba(74,124,89,0.28) 0%, rgba(74,124,89,0.12) 100%)"
-                        : "linear-gradient(135deg, rgba(255,133,51,0.26) 0%, rgba(255,133,51,0.10) 100%)",
-                      border: active
-                        ? "1px solid rgba(74,124,89,0.45)"
-                        : "1px solid rgba(255,133,51,0.45)",
-                    }}
-                  >
-                    <Icon
-                      className="w-3.5 h-3.5"
-                      style={{ color: active ? "#9CD2AC" : "#FFB47A" }}
-                      strokeWidth={2.4}
-                      aria-hidden
-                    />
+                <li key={perk.label} className="flex items-center gap-3 py-3" style={{ borderTop: i === 0 ? "none" : "1px solid #2E2E2E" }}>
+                  <span className="inline-flex items-center justify-center w-9 h-9 flex-shrink-0" style={{ background: active ? "#4A7C59" : "#2E2E2E", clipPath: "polygon(0 0, calc(100% - 7px) 0, 100% 7px, 100% 100%, 0 100%)" }}>
+                    <Icon className="w-4 h-4 text-white" strokeWidth={2.4} aria-hidden />
                   </span>
-                  <span
-                    className="flex-1 text-[11.5px] leading-snug"
-                    style={{
-                      color: "rgba(255,255,255,0.92)",
-                      fontFamily: "'Plus Jakarta Sans', sans-serif",
-                    }}
-                  >
+                  <span className="flex-1 text-[15px] leading-snug" style={{ color: active ? "#FFFFFF" : "rgba(255,255,255,0.6)", fontFamily: "'Plus Jakarta Sans', sans-serif", fontWeight: 600 }}>
                     {perk.label}
-                  </span>
-                  <span
-                    className="text-[8.5px] font-extrabold tracking-wider uppercase flex-shrink-0 px-1.5 py-0.5 rounded"
-                    style={{
-                      backgroundColor: active
-                        ? "rgba(74,124,89,0.20)"
-                        : "rgba(255,133,51,0.20)",
-                      color: active ? "#A8E0B5" : "#FFD58A",
-                      fontFamily: "'Plus Jakarta Sans', sans-serif",
-                    }}
-                  >
-                    {active ? "Actif" : "Bientôt"}
+                    {!active && <span className="block text-sm font-medium" style={{ color: "rgba(255,255,255,0.5)" }}>Bientôt</span>}
                   </span>
                 </li>
               );
             })}
           </ul>
 
-          {/* CTAs */}
-          <div className="flex flex-col gap-2.5 mt-auto pt-2">
+          <div className="mt-auto pt-1">
             <Link
               to={createGarageHref}
-              className="
-                relative overflow-hidden
-                inline-flex items-center justify-center gap-2
-                rounded-xl px-4 py-3
-                text-white font-extrabold text-[13px] tracking-wide uppercase
-                transition-transform duration-200 hover:scale-[1.01] active:scale-[0.99]
-              "
-              style={{
-                background: "linear-gradient(135deg, #FF7A1A 0%, #E55A00 100%)",
-                boxShadow:
-                  "0 10px 24px -6px rgba(255,102,0,0.45), inset 0 1px 0 rgba(255,255,255,0.35)",
-                fontFamily: "'Plus Jakarta Sans', sans-serif",
-              }}
+              className="flex items-center justify-between gap-2 min-h-[56px] px-5 text-[15px] font-extrabold uppercase tracking-wide"
+              style={{ background: "#FFFFFF", color: "#1A1A1A", clipPath: "polygon(0 0, calc(100% - 12px) 0, 100% 12px, 100% 100%, 0 100%)", fontFamily: "'Plus Jakarta Sans', sans-serif" }}
             >
-              {!reduceMotion && (
-                <motion.span
-                  aria-hidden
-                  className="absolute inset-y-0 -left-1/3 w-1/3 pointer-events-none"
-                  style={{
-                    background:
-                      "linear-gradient(90deg, transparent 0%, rgba(255,255,255,0.35) 50%, transparent 100%)",
-                    transform: "skewX(-18deg)",
-                  }}
-                  animate={{ x: ["-30%", "320%"] }}
-                  transition={{
-                    duration: 2.6,
-                    repeat: Infinity,
-                    ease: "easeInOut",
-                    repeatDelay: 1.4,
-                  }}
-                />
-              )}
-              <Zap className="w-3.5 h-3.5" fill="currentColor" />
-              <span className="relative z-[1]">Créer mon garage +50 XP</span>
-              <ArrowRight className="w-3.5 h-3.5 relative z-[1]" />
+              <span>Créer mon garage <span style={{ color: "#4A7C59" }}>+50 XP</span></span>
+              <ArrowRight className="w-5 h-5" strokeWidth={2.6} />
             </Link>
-
-            <button
-              type="button"
-              disabled
-              aria-disabled="true"
-              className="
-                inline-flex items-center justify-center gap-1.5
-                rounded-xl px-4 py-2.5
-                text-[11.5px] font-bold uppercase tracking-wider
-                pointer-events-none
-              "
-              style={{
-                background: "rgba(255,255,255,0.07)",
-                border: "1px solid rgba(255,255,255,0.14)",
-                color: "rgba(255,255,255,0.65)",
-                fontFamily: "'Plus Jakarta Sans', sans-serif",
-              }}
-            >
-              <span className="truncate">
-                Voir le garage complet de{" "}
-                <span style={{ color: "#FFFFFF" }}>
-                  {currentRider.display_name}
-                </span>
-              </span>
-              <ArrowRight className="w-3 h-3 flex-shrink-0" />
-            </button>
+            <p className="mt-3 text-sm text-center" style={{ color: "rgba(255,255,255,0.55)", fontFamily: "'Plus Jakarta Sans', sans-serif" }}>
+              Chaque semaine, un nouveau rider en vitrine.
+            </p>
           </div>
-
-          {/* Footer */}
-          <p
-            className="hidden lg:block text-[10.5px] italic text-center mt-1"
-            style={{
-              color: "rgba(255,255,255,0.55)",
-              fontFamily: "'Plus Jakarta Sans', sans-serif",
-            }}
-          >
-            Chaque semaine, un nouveau rider en vitrine
-          </p>
         </div>
       </aside>
     </div>

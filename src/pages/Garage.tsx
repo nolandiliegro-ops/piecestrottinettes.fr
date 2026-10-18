@@ -35,6 +35,7 @@ import DescriptionCard from '@/components/garage/DescriptionCard';
 // Lazy mount — perf mobile (sous le fold)
 const TutosCard = lazy(() => import('@/components/garage/TutosCard'));
 import GarageVueStyles, { readGarageVue, GarageVueTabs, type GarageTab } from '@/components/garage/GarageVueStyles';
+import GarageAtelierView from '@/components/garage/atelier/GarageAtelierView';
 const RiderCardLightbox = lazy(() => import('@/components/garage/RiderCardLightbox'));
 
 
@@ -226,7 +227,22 @@ const Garage = () => {
                   <Loader2 className="w-8 h-8 animate-spin text-green-700" />
                 </div>
               ) : (
-                /* === ROOFTOP LAYOUT === */
+                /* === 18/10 : vue Atelier (défaut) — refonte propre ; ?vue=0 ancienne page, ?vue=2..5 anciennes propositions === */
+                vue === 6 ? (
+                  <GarageAtelierView
+                    profile={profile}
+                    scooter={selectedScooter as any}
+                    scooterCount={scooterCount}
+                    currentIndex={currentIndex}
+                    onPrev={handlePrev}
+                    onNext={handleNext}
+                    onEditProfile={() => setProfileEditOpen(true)}
+                    onTheme={() => setThemePickerOpen(true)}
+                    onAddModification={() => setQuickAddOpen(true)}
+                    onOpenHistory={() => setHistoryOpen(true)}
+                    onOpenRiderCard={() => setRiderCardOpen(true)}
+                  />
+                ) : (
                 <>
                 {vue !== 0 && <GarageVueStyles vue={vue} tab={gTab} />}
                 {vue !== 0 && <GarageVueTabs vue={vue} tab={gTab} onTab={setGTab} />}
@@ -459,6 +475,7 @@ const Garage = () => {
                   </section>
                 )}
                 </>
+                )
               )}
             </motion.div>
           ) : activeTab === 'orders' ? (
@@ -488,7 +505,7 @@ const Garage = () => {
       </main>
 
       {/* Plus FAB */}
-      {activeTab === 'garage' && scooterCount > 0 && (
+      {activeTab === 'garage' && scooterCount > 0 && vue !== 6 && (
         <motion.button
           initial={{ opacity: 0, scale: 0.8 }}
           animate={{ opacity: 1, scale: 1 }}
@@ -530,7 +547,8 @@ const Garage = () => {
         </Suspense>
       )}
 
-      <Footer />
+      {/* z-10 : sans lui, le fond fixe du garage recouvrait le pied de page (≈ 900 px de « papier peint vide », 18/10) */}
+      <div className="relative z-10"><Footer /></div>
     </div>
   );
 };
