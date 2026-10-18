@@ -133,6 +133,33 @@ const useAllPublishedParts = (enabled: boolean) =>
     staleTime: 5 * 60 * 1000,
   });
 
+/**
+ * 18/10 : la grille n'affiche que 150 pièces (D1), mais le compteur et les nombres par
+ * catégorie doivent refléter TOUT le catalogue publié (l'accueil affichait « 150 pièces »
+ * pour 302 publiées). Requête légère : seulement le slug de catégorie, paginée par 1 000.
+ */
+const useAllPublishedCategorySlugs = (enabled: boolean) =>
+  useQuery<(string | null)[], Error>({
+    queryKey: ["all-published-category-slugs"],
+    queryFn: async () => {
+      const out: (string | null)[] = [];
+      for (let from = 0; ; from += 1000) {
+        const { data, error } = await supabase
+          .from("parts")
+          .select("id, category:categories(slug)")
+          .eq("published", true)
+          .order("id", { ascending: true })
+          .range(from, from + 999);
+        if (error) throw error;
+        for (const p of data || []) out.push(normalizeCategory(p.category)?.slug ?? null);
+        if (!data || data.length < 1000) break;
+      }
+      return out;
+    },
+    enabled,
+    staleTime: 5 * 60 * 1000,
+  });
+
 const buildGroups = (
   cats: CategoryMetaV2[],
   countSlugToTotal: Map<string, number>
@@ -191,6 +218,7 @@ export const useShopByCategoryDataV2 = (
   const { data: compatParts = [], isLoading: compatLoading } =
     useCompatiblePartsRich(scooterModelId);
   const { data: allParts = [], isLoading: allLoading } = useAllPublishedParts(!hasScooter);
+  const { data: allSlugs } = useAllPublishedCategorySlugs(!hasScooter);
 
   return useMemo<ShopByCategoryDataV2>(() => {
     // Determine the pool of parts in the current scope (scooter or all)
@@ -198,8 +226,10 @@ export const useShopByCategoryDataV2 = (
 
     // Build per-slug counts FROM the scoped pool (so counts reflect what's actually shown)
     const countBySlug = new Map<string, number>();
-    for (const p of scopedParts) {
-      const slug = p.category?.slug;
+    // Sans trott : compter sur tout le catalogue publié (pas seulement les 150 affichées).
+    const countSource: (string | null)[] =
+      !hasScooter && allSlugs ? allSlugs : scopedParts.map((p) => p.category?.slug ?? null);
+    for (const slug of countSource) {
       if (!slug) continue;
       countBySlug.set(slug, (countBySlug.get(slug) ?? 0) + 1);
     }
@@ -231,7 +261,12 @@ export const useShopByCategoryDataV2 = (
       mode,
       filteredParts,
       availableCategories,
-      totalCount: filteredParts.length,
+      totalCount:
+        !hasScooter && allSlugs
+          ? activeSlugsSet.size === 0
+            ? allSlugs.length
+            : allSlugs.filter((sl) => sl !== null && activeSlugsSet.has(sl)).length
+          : filteredParts.length,
       isLoading: catsLoading || (hasScooter ? compatLoading : allLoading),
     };
   }, [
@@ -239,6 +274,7 @@ export const useShopByCategoryDataV2 = (
     allCategories,
     compatParts,
     allParts,
+    allSlugs,
     selectedCategories,
     catsLoading,
     compatLoading,
