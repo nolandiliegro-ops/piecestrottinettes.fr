@@ -52,11 +52,7 @@ const generateBackInStockHTML = (partName: string, slug: string | null): string 
 
           <!-- Header -->
           <tr>
-            <td style="background-color: #4A7C59; padding: 32px; text-align: center;">
-              <p style="margin: 0; font-size: 13px; color: rgba(255,255,255,0.85); letter-spacing: 2px; text-transform: uppercase;">
-                🔔 Retour en stock
-              </p>
-            </td>
+            <td style="background:#F5F0E8;padding:28px 32px 22px;text-align:center;border-bottom:3px solid #BC5D30;"><a href="https://piecestrottinettes.fr" style="text-decoration:none;"><img src="https://piecestrottinettes.fr/brand/logo-pt-2026.png" width="260" height="75" alt="piecestrottinettes.fr" style="display:block;margin:0 auto;border:0;outline:none;width:260px;max-width:80%;height:auto;"></a><p style="margin:12px 0 0;font-size:12px;color:#1A1A1A;letter-spacing:3px;">ROULE · RÉPARE · DURE</p><p style="margin:14px 0 0;font-size:13px;color:#BC5D30;letter-spacing:2px;text-transform:uppercase;font-weight:bold;">🔔 Retour en stock</p></td>
           </tr>
 
           <!-- Body -->

@@ -23,8 +23,8 @@ export const BRAND_ASSETS_FALLBACK: Record<BrandAssetKey, { url: string; alt: st
   favicon: { url: "/brand/favicon-pt.png", alt: "" },
   apple_touch_icon: { url: "/brand/apple-touch-icon.png", alt: "" },
   og_image: {
-    url: "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/site-assets/og-image.png",
-    alt: "Pièces Trottinettes",
+    url: "https://piecestrottinettes.fr/brand/og-image.jpg",
+    alt: "piecestrottinettes.fr — plus jamais la mauvaise pièce",
   },
   watermark_product: { url: "", alt: "" },
 };

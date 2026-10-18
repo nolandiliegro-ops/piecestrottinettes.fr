@@ -52,10 +52,7 @@ function buildSubject(orderNumber?: string, isReply?: boolean): string {
 
 const generateHeader = (): string => `
   <tr>
-    <td style="background: linear-gradient(135deg, #93B5A1 0%, #7DA08D 100%); padding: 32px; text-align: center;">
-      <h1 style="margin: 0; font-family: Georgia, serif; font-size: 22px; color: #FFFFFF; letter-spacing: 3px;">PIECESTROTTINETTES.FR</h1>
-      <p style="margin: 8px 0 0; font-size: 12px; color: rgba(255,255,255,0.9); letter-spacing: 2px;">ROULE · RÉPARE · DURE</p>
-    </td>
+    <td style="background:#F5F0E8;padding:28px 32px 22px;text-align:center;border-bottom:3px solid #BC5D30;"><a href="https://piecestrottinettes.fr" style="text-decoration:none;"><img src="https://piecestrottinettes.fr/brand/logo-pt-2026.png" width="260" height="75" alt="piecestrottinettes.fr" style="display:block;margin:0 auto;border:0;outline:none;width:260px;max-width:80%;height:auto;"></a><p style="margin:12px 0 0;font-size:12px;color:#1A1A1A;letter-spacing:3px;">ROULE · RÉPARE · DURE</p></td>
   </tr>`;
 
 const generateFooter = (): string => `
