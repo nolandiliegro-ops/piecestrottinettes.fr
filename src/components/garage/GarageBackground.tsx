@@ -1,8 +1,25 @@
 import { useState } from 'react';
-import { useActiveTheme } from '@/hooks/useActiveTheme';
+import { useQuery } from '@tanstack/react-query';
+import { supabase } from '@/integrations/supabase/client';
+import { useActiveTheme, type GarageTheme } from '@/hooks/useActiveTheme';
 
-const GarageBackground = () => {
-  const { theme } = useActiveTheme();
+/** themeKey fourni = garage public d'un autre rider (/rider/:username) : on affiche SON wallpaper. */
+const GarageBackground = ({ themeKey }: { themeKey?: string | null } = {}) => {
+  const { theme: ownTheme } = useActiveTheme();
+  const { data: otherTheme } = useQuery({
+    queryKey: ['garage-themes', 'by-key', themeKey ?? null],
+    enabled: themeKey !== undefined,
+    staleTime: 60_000,
+    queryFn: async () => {
+      if (themeKey) {
+        const { data } = await supabase.from('garage_themes').select('*').eq('key', themeKey).eq('is_active', true).maybeSingle();
+        if (data) return data as GarageTheme;
+      }
+      const { data: first } = await supabase.from('garage_themes').select('*').eq('is_active', true).order('display_order', { ascending: true }).limit(1).maybeSingle();
+      return (first as GarageTheme) ?? null;
+    },
+  });
+  const theme = themeKey !== undefined ? otherTheme : ownTheme;
   const [loaded, setLoaded] = useState(false);
   const [errored, setErrored] = useState(false);
 

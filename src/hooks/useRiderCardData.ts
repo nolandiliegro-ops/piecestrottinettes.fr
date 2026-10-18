@@ -42,6 +42,8 @@ export interface RiderCardProfile {
   rider_location: string | null;
   avatar_url: string | null;
   is_public: boolean;
+  active_theme_key?: string | null;
+  bio?: string | null;
 }
 
 export interface RiderCardData {
@@ -53,7 +55,7 @@ export interface RiderCardData {
 }
 
 const PROFILE_FIELDS =
-  "id, display_name, username, performance_points, rider_location, avatar_url, is_public";
+  "id, display_name, username, performance_points, rider_location, avatar_url, is_public, active_theme_key, bio";
 
 export const useRiderCardData = (opts: { username?: string } = {}) => {
   const { user } = useAuthContext();

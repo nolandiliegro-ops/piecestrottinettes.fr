@@ -38,7 +38,7 @@ const LINE = "#E2DCD0";
 const cut = (px: number) => `polygon(0 0, calc(100% - ${px}px) 0, 100% ${px}px, 100% 100%, 0 100%)`;
 
 /** Habillage des composants réutilisés (photo, description, tutos, code) : plus de verre, plus de vert vif. */
-const SKIN = `
+export const SKIN = `
   [data-gatelier] :is(div,section,aside)[class*="backdrop-blur"]:is([class*="rounded-3xl"],[class*="rounded-2xl"]){background:${PAPER}!important;border:none!important;border-radius:0!important;clip-path:${cut(14)};box-shadow:none!important;-webkit-backdrop-filter:none!important;backdrop-filter:none!important}
   [data-gatelier] [data-reuse] > div[style*="blur"]{background:${PAPER}!important;border:none!important;border-radius:0!important;clip-path:${cut(14)};box-shadow:none!important;-webkit-backdrop-filter:none!important;backdrop-filter:none!important}
   [data-gatelier] [data-reuse] :is(.bg-green-700,.bg-green-600){background:${CARBON}!important}
@@ -83,13 +83,13 @@ interface Props {
   onOpenRiderCard: () => void;
 }
 
-const H2 = ({ children, light }: { children: React.ReactNode; light?: boolean }) => (
+export const H2 = ({ children, light }: { children: React.ReactNode; light?: boolean }) => (
   <h2 className="text-base uppercase leading-tight" style={{ fontFamily: UNB, fontWeight: 900, fontStyle: "italic", letterSpacing: "-0.02em", color: light ? "#FFFFFF" : CARBON }}>
     {children}
   </h2>
 );
 
-const Panel = ({ children, className = "", pad = "p-4 lg:p-5" }: { children: React.ReactNode; className?: string; pad?: string }) => (
+export const Panel = ({ children, className = "", pad = "p-4 lg:p-5" }: { children: React.ReactNode; className?: string; pad?: string }) => (
   <section className={`${pad} ${className}`} style={{ background: PAPER, clipPath: cut(14) }}>{children}</section>
 );
 
@@ -125,7 +125,7 @@ const RiderStrip = ({ profile, onEditProfile, onTheme }: Pick<Props, "profile" |
 };
 
 /* ---------- Ma trott : grande, elle sort de sa plaque ---------- */
-const ScooterStage = ({ scooter, scooterCount, currentIndex, onPrev, onNext }: Pick<Props, "scooter" | "scooterCount" | "currentIndex" | "onPrev" | "onNext">) => {
+export const ScooterStage = ({ scooter, scooterCount, currentIndex, onPrev, onNext, label }: Pick<Props, "scooter" | "scooterCount" | "currentIndex" | "onPrev" | "onNext"> & { label?: string }) => {
   const m = scooter.scooter_model;
   const specs = [m.voltage && `${m.voltage} V`, m.amperage && `${m.amperage} Ah`, m.power_watts && `${m.power_watts} W`].filter(Boolean) as string[];
   const multi = scooterCount > 1;
@@ -134,7 +134,7 @@ const ScooterStage = ({ scooter, scooterCount, currentIndex, onPrev, onNext }: P
       <div className="relative px-4 pb-4 pt-[190px] lg:px-6 lg:pb-6 lg:pt-[300px]" style={{ background: CARBON, clipPath: cut(22) }}>
         <span aria-hidden className="absolute inset-x-6 top-0 h-[190px] lg:h-[300px]" style={{ background: "radial-gradient(closest-side, rgba(255,255,255,0.16), rgba(255,255,255,0))" }} />
         <p className="relative text-sm font-extrabold uppercase tracking-[0.14em]" style={{ fontFamily: FONT, color: SOFT }}>
-          Ma trott{multi ? ` · ${currentIndex + 1}/${scooterCount}` : ""}
+          {label ?? "Ma trott"}{multi ? ` · ${currentIndex + 1}/${scooterCount}` : ""}
         </p>
         <div className="relative mt-1 flex items-end justify-between gap-3">
           <div className="min-w-0">
@@ -200,7 +200,7 @@ const Actions = ({ garageId, onAddModification, onOpenRiderCard }: { garageId: s
 };
 
 /* ---------- Pièces pour MA trott ---------- */
-const PartsShelf = ({ scooter }: { scooter: GarageAtelierScooter }) => {
+export const PartsShelf = ({ scooter, title }: { scooter: GarageAtelierScooter; title?: string }) => {
   const m = scooter.scooter_model;
   const { data: parts = [], isLoading } = useCompatiblePartsRich(m.id) as { data?: any[]; isLoading: boolean };
   const [cat, setCat] = useState<string | null>(null);
@@ -213,7 +213,7 @@ const PartsShelf = ({ scooter }: { scooter: GarageAtelierScooter }) => {
   return (
     <Panel>
       <div className="flex items-end justify-between gap-3">
-        <H2>Les pièces pour ta {m.name}</H2>
+        <H2>{title ?? `Les pièces pour ta ${m.name}`}</H2>
         {!isLoading && <span className="shrink-0 text-sm font-bold" style={{ fontFamily: FONT, color: "#6B7280" }}>{parts.length}</span>}
       </div>
       {cats.length > 1 && (

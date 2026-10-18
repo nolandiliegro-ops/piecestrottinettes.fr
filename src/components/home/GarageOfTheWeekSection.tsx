@@ -36,6 +36,7 @@ export type RiderScooter = {
 export type RiderBundle = {
   id: string;
   display_name: string;
+  username: string | null;
   avatar_url: string | null;
   bio: string | null;
   rider_location: string | null;
@@ -90,7 +91,7 @@ const GarageOfTheWeekSection = () => {
       const { data, error } = await supabase
         .from("profiles")
         .select(
-          "id, display_name, avatar_url, bio, rider_location, performance_points, created_at, active_theme_key"
+          "id, display_name, username, avatar_url, bio, rider_location, performance_points, created_at, active_theme_key"
         )
         .eq("is_public", true)
         .order("created_at", { ascending: true });
@@ -210,6 +211,7 @@ const GarageOfTheWeekSection = () => {
         return {
           id: p.id,
           display_name: p.display_name || "Rider",
+          username: (p as { username?: string | null }).username ?? null,
           avatar_url: p.avatar_url,
           bio: p.bio?.trim() || null,
           rider_location: p.rider_location?.trim() || null,

@@ -645,9 +645,15 @@ const GarageWeekFrame = ({
               <span>Créer mon garage <span style={{ color: "#4A7C59" }}>+50 XP</span></span>
               <ArrowRight className="w-5 h-5" strokeWidth={2.6} />
             </Link>
-            <p className="mt-3 text-sm text-center" style={{ color: "rgba(255,255,255,0.55)", fontFamily: "'Plus Jakarta Sans', sans-serif" }}>
-              Chaque semaine, un nouveau rider en vitrine.
-            </p>
+            {currentRider.username ? (
+              <Link to={`/rider/${currentRider.username}`} className="mt-2 flex items-center justify-center gap-2 min-h-[44px] text-sm font-extrabold uppercase tracking-wide underline underline-offset-[6px]" style={{ color: "#FFFFFF", fontFamily: "'Plus Jakarta Sans', sans-serif" }}>
+                Voir le garage de {currentRider.display_name} <ArrowRight className="w-4 h-4" />
+              </Link>
+            ) : (
+              <p className="mt-3 text-sm text-center" style={{ color: "rgba(255,255,255,0.55)", fontFamily: "'Plus Jakarta Sans', sans-serif" }}>
+                Chaque semaine, un nouveau rider en vitrine.
+              </p>
+            )}
           </div>
         </div>
       </aside>
