@@ -199,83 +199,105 @@ const FootLink = ({ href, label, tone }: { href: string; label: string; tone: To
   </Link>
 );
 
+/** 18/10 soir — retour Nolan : « Compatibilité facultatif, c'est un peu gros » + « c'est pareil entre le haut et le bas,
+ *  répétitif ». Le filtre trott devient une petite pastille ; chaque proposition se distingue du haut de page (beige + gros
+ *  titre + barre) par le fond, le geste ou la structure. */
+const PickerChip = ({ scooterName, brandName, onPick, onClear, tone }: { scooterName: string | null; brandName: string | null; onPick: () => void; onClear: () => void; tone: Tone }) => {
+  const light = tone === "light";
+  const base = light ? { background: "#FFFFFF", color: CARBON, boxShadow: `inset 0 0 0 1px ${LINE}` } : tone === "dark" ? { background: "#2A2A2A", color: "#FFFFFF" } : { background: "rgba(255,255,255,0.16)", color: "#FFFFFF" };
+  return (
+    <span className="inline-flex items-stretch max-w-full" style={{ fontFamily: FONT }}>
+      <button type="button" onClick={onPick} className="inline-flex items-center gap-2 min-h-[44px] pl-3 pr-3 text-sm font-bold min-w-0" style={{ ...base, clipPath: scooterName ? undefined : cut(7) }}>
+        <svg aria-hidden width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round"><circle cx="5" cy="18" r="3"/><circle cx="19" cy="18" r="3"/><path d="M5 18h9l3-11h3"/></svg>
+        <span className="truncate">{scooterName ? <>Pour ma <b>{brandName && brandName !== scooterName ? brandName + " " : ""}{scooterName}</b></> : "Filtrer pour ma trott"}</span>
+        {!scooterName && <ChevronDown className="w-4 h-4 shrink-0 opacity-60" />}
+      </button>
+      {scooterName && (
+        <button type="button" onClick={onClear} aria-label="Retirer le filtre trottinette" className="w-11 inline-flex items-center justify-center" style={{ ...base, clipPath: cut(7), marginLeft: 1 }}>
+          <X className="w-4 h-4" />
+        </button>
+      )}
+    </span>
+  );
+};
+
+/** Petite intro commune, adaptée au fond. */
+const Sub = ({ tone, children }: { tone: Tone; children: ReactNode }) => (
+  <p className="mt-2 text-base max-w-2xl" style={{ fontFamily: FONT, color: tone === "light" ? "#4B5563" : "rgba(255,255,255,0.8)", lineHeight: 1.5 }}>{children}</p>
+);
+
+/** Titre plus court que celui du haut de page (pour ne pas faire doublon). */
+const ShopTitle = ({ tone, scooterName, brandName, accent, big }: { tone: Tone; scooterName: string | null; brandName: string | null; accent: string; big?: boolean }) => {
+  const ink = tone === "light" ? CARBON : "#FFFFFF";
+  return (
+    <h2 className={`${big ? "text-[30px] sm:text-5xl" : "text-[24px] sm:text-4xl"} uppercase leading-[0.98]`} style={{ fontFamily: UNB, fontWeight: 900, fontStyle: "italic", letterSpacing: "-0.03em", color: ink }}>
+      {scooterName ? (
+        <>Pour ta <span style={{ color: tone === "green" ? "#FFFFFF" : accent }}>{brandName && brandName !== scooterName ? brandName + " " : ""}{scooterName}</span></>
+      ) : (
+        <>Le <span style={{ color: tone === "green" ? CARBON : tone === "dark" ? "#8FBF9C" : GREEN }}>catalogue.</span></>
+      )}
+    </h2>
+  );
+};
+
 const AtelierShell = (p: Props) => {
   const accent = p.brandColor ?? GREEN;
   const hasScooter = !!p.scooterName;
   const footLabel = p.ctaLabel || (hasScooter && p.brandName ? `Tout le catalogue ${p.brandName}` : "Voir tout le catalogue");
+  const v = p.variant;
+  const tone: Tone = v === 2 ? "dark" : v === 5 ? "green" : "light";
+  const chip = <PickerChip scooterName={p.scooterName} brandName={p.brandName} onPick={p.onPickScooter} onClear={p.onClearScooter} tone={tone} />;
+  const sub = hasScooter ? "Uniquement ce qui va sur ta trott." : "Cherche directement la pièce. Ta trott en tête ? Filtre en un clic.";
 
-  // 1 — SANS CADRE : la lecture littérale. Même module, le cadre sombre en moins, en identité Atelier.
-  if (p.variant === 1) {
+  // 4 — RAYON : on entre par les rayons (grandes vignettes photo), la recherche en petit au-dessus.
+  if (v === 4) {
     return (
-      <section className="w-full" style={{ background: BEIGE }} data-home-variant="1">
+      <section className="w-full" style={{ background: BEIGE }} data-home-variant="4">
         <div className="max-w-7xl mx-auto px-4 lg:px-8 py-12 lg:py-16">
           <div className="flex items-end justify-between gap-4">
-            <Title scooterName={p.scooterName} brandName={p.brandName} accent={accent} tone="light" />
+            <ShopTitle tone="light" scooterName={p.scooterName} brandName={p.brandName} accent={accent} />
             <Counter n={p.totalCount} scooter={hasScooter} tone="light" />
           </div>
-          {!hasScooter && (
-            <p className="mt-3 text-base max-w-2xl" style={{ fontFamily: FONT, color: "#4B5563", lineHeight: 1.5 }}>
-              Cherche directement le produit. Ta trott en tête ? Filtre pour ne voir que ce qui va dessus.
-            </p>
-          )}
-          <div className="mt-5 grid grid-cols-1 gap-3 lg:grid-cols-[minmax(0,2fr)_minmax(0,1fr)]">
+          <p className="mt-2 text-base" style={{ fontFamily: FONT, color: "#4B5563" }}>Choisis un rayon, ou cherche la pièce.</p>
+          <div className="mt-4 grid grid-cols-1 gap-3 lg:grid-cols-[minmax(0,2fr)_auto] lg:items-center">
             <div className="min-w-0"><SearchBar query={p.query} onQuery={p.onQuery} tone="light" /></div>
-            <div className="min-w-0 order-last lg:order-none">
-              <ScooterPicker scooterName={p.scooterName} brandName={p.brandName} onPick={p.onPickScooter} onClear={p.onClearScooter} tone="light" />
-            </div>
-            <div ref={p.productsRef} className="min-w-0 scroll-mt-4 lg:col-span-2 lg:mt-2">
-              <Plates categories={p.categories} selectedSlugs={p.selectedSlugs} onToggle={p.onToggle} tone="light" />
-            </div>
+            <div className="min-w-0">{chip}</div>
           </div>
-          <div className="mt-5" />
-          <CarbonCards>{p.grid}</CarbonCards>
+          <div ref={p.productsRef} className="scroll-mt-4 mt-5 grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-2.5">
+            {p.categories.map((c) => {
+              const on = p.selectedSlugs.has(c.slug);
+              return (
+                <button key={c.slug} type="button" onClick={() => p.onToggle(c.slug)} aria-pressed={on} className="relative h-[118px] overflow-hidden text-left bg-white" style={{ clipPath: cut(12), boxShadow: on ? `inset 0 0 0 3px ${GREEN}` : `inset 0 0 0 1px ${LINE}` }}>
+                  {c.image_url && <img src={optimizedImage(c.image_url, 320)} alt="" loading="lazy" className="absolute inset-0 w-full h-full object-contain p-3 pb-10" />}
+                  <span className="absolute left-0 right-0 bottom-0 px-2.5 py-2 flex items-center justify-between gap-1 text-sm font-extrabold uppercase" style={{ fontFamily: FONT, background: on ? GREEN : CARBON, color: "#fff" }}>
+                    <span className="truncate">{c.name}</span><span style={{ fontFamily: UNB, fontStyle: "italic", fontWeight: 900 }}>{c.count}</span>
+                  </span>
+                </button>
+              );
+            })}
+          </div>
+          <div className="mt-6"><CarbonCards>{p.grid}</CarbonCards></div>
           <FootLink href={p.catalogueHref} label={footLabel} tone="light" />
         </div>
       </section>
     );
   }
 
-  // 2 — ÉTABLI : on garde le sombre, mais UN seul plan carbone, coin coupé, sans capsule.
-  if (p.variant === 2) {
-    return (
-      <section className="w-full" style={{ background: BEIGE }} data-home-variant="2">
-        <div className="w-full" style={{ background: CARBON, clipPath: "polygon(0 0, calc(100% - 48px) 0, 100% 48px, 100% 100%, 0 100%)" }}>
-          <div className="max-w-7xl mx-auto px-4 lg:px-8 py-12 lg:py-16">
-            <div className="flex items-end justify-between gap-4">
-              <Title scooterName={p.scooterName} brandName={p.brandName} accent={accent} tone="dark" />
-              <Counter n={p.totalCount} scooter={hasScooter} tone="dark" />
-            </div>
-            <div className="mt-5 grid gap-3 lg:grid-cols-[minmax(0,2fr)_minmax(0,1fr)]">
-              <SearchBar query={p.query} onQuery={p.onQuery} tone="dark" arrow={GREEN} />
-              <ScooterPicker scooterName={p.scooterName} brandName={p.brandName} onPick={p.onPickScooter} onClear={p.onClearScooter} tone="dark" />
-            </div>
-            <div ref={p.productsRef} className="scroll-mt-4 mt-5 mb-5">
-              <Plates categories={p.categories} selectedSlugs={p.selectedSlugs} onToggle={p.onToggle} tone="dark" />
-            </div>
-            {p.grid}
-            <FootLink href={p.catalogueHref} label={footLabel} tone="dark" />
-          </div>
-        </div>
-      </section>
-    );
-  }
-
-  // 3 — PLAQUE : beige, une grande plaque blanche à coin coupé, catégories en photos bord à bord.
-  if (p.variant === 3) {
+  // 3 — PLAQUE : une grande plaque blanche posée sur le beige ; recherche + pastille sur une ligne, catégories en photo.
+  if (v === 3) {
     return (
       <section className="w-full" style={{ background: BEIGE }} data-home-variant="3">
-        <div className="max-w-7xl mx-auto px-4 lg:px-8 py-12 lg:py-16">
+        <div className="max-w-7xl mx-auto px-4 lg:px-8 py-10 lg:py-14">
           <div className="bg-white px-4 py-6 sm:p-8 lg:p-10" style={{ clipPath: cut(28), boxShadow: `inset 0 0 0 1px ${LINE}` }}>
             <div className="flex items-end justify-between gap-4">
-              <Title scooterName={p.scooterName} brandName={p.brandName} accent={accent} tone="light" size="md" />
+              <ShopTitle tone="light" scooterName={p.scooterName} brandName={p.brandName} accent={accent} />
               <Counter n={p.totalCount} scooter={hasScooter} tone="light" />
             </div>
-            <div className="mt-5 max-w-2xl">
-              <SearchBar query={p.query} onQuery={p.onQuery} tone="light" />
+            <div className="mt-4 grid grid-cols-1 gap-2 lg:grid-cols-[minmax(0,2fr)_auto] lg:items-center">
+              <div className="min-w-0"><SearchBar query={p.query} onQuery={p.onQuery} tone="light" /></div>
+              <div className="min-w-0">{chip}</div>
             </div>
-            <div ref={p.productsRef} className="scroll-mt-4 mt-5 mb-5">
-              <PhotoPlates categories={p.categories} selectedSlugs={p.selectedSlugs} onToggle={p.onToggle} />
-            </div>
+            <div ref={p.productsRef} className="scroll-mt-4 mt-5 mb-5"><PhotoPlates categories={p.categories} selectedSlugs={p.selectedSlugs} onToggle={p.onToggle} /></div>
             <CarbonCards>{p.grid}</CarbonCards>
             <FootLink href={p.catalogueHref} label={footLabel} tone="light" />
           </div>
@@ -284,46 +306,24 @@ const AtelierShell = (p: Props) => {
     );
   }
 
-  // 4 — SÉLECTEUR D'ABORD : la trott avant tout, recherche à côté, catégories en onglets.
-  if (p.variant === 4) {
-    return (
-      <section className="w-full" style={{ background: BEIGE }} data-home-variant="4">
-        <div className="max-w-7xl mx-auto px-4 lg:px-8 py-12 lg:py-16">
-          <p className="text-sm font-bold uppercase tracking-[0.14em] mb-2" style={{ fontFamily: FONT, color: GREEN }}>Étape 1 · ta trott — étape 2 · ta pièce</p>
-          <Title scooterName={p.scooterName} brandName={p.brandName} accent={accent} tone="light" />
-          <div className="mt-5 grid gap-3 lg:grid-cols-2">
-            <ScooterPicker scooterName={p.scooterName} brandName={p.brandName} onPick={p.onPickScooter} onClear={p.onClearScooter} tone="light" />
-            <SearchBar query={p.query} onQuery={p.onQuery} tone="light" arrow={GREEN} />
-          </div>
-          <div ref={p.productsRef} className="scroll-mt-4 mt-6 mb-5 flex items-end justify-between gap-4">
-            <div className="min-w-0 flex-1"><Tabs categories={p.categories} selectedSlugs={p.selectedSlugs} onToggle={p.onToggle} /></div>
-            <span className="hidden sm:block pb-3"><Counter n={p.totalCount} scooter={hasScooter} tone="light" /></span>
-          </div>
-          <CarbonCards>{p.grid}</CarbonCards>
-          <FootLink href={p.catalogueHref} label={footLabel} tone="light" />
-        </div>
-      </section>
-    );
-  }
-
-  // 5 — VERT ATELIER : un seul plan vert de la marque, plaques claires, flèche carbone.
+  // 1 Sans cadre (beige) · 2 Établi (carbone) · 5 Vert atelier (vert) — même squelette, plus léger qu'avant.
+  const bg = v === 2 ? CARBON : v === 5 ? GREEN : BEIGE;
   return (
-    <section className="w-full" style={{ background: BEIGE }} data-home-variant="5">
-      <div className="w-full" style={{ background: GREEN }}>
+    <section className="w-full" style={{ background: v === 1 ? BEIGE : BEIGE }} data-home-variant={v}>
+      <div className="w-full" style={{ background: bg, clipPath: v === 2 ? "polygon(0 0, calc(100% - 48px) 0, 100% 48px, 100% 100%, 0 100%)" : undefined }}>
         <div className="max-w-7xl mx-auto px-4 lg:px-8 py-12 lg:py-16">
           <div className="flex items-end justify-between gap-4">
-            <Title scooterName={p.scooterName} brandName={p.brandName} accent={accent} tone="green" />
-            <Counter n={p.totalCount} scooter={hasScooter} tone="green" />
+            <ShopTitle tone={tone} scooterName={p.scooterName} brandName={p.brandName} accent={accent} big />
+            <Counter n={p.totalCount} scooter={hasScooter} tone={tone} />
           </div>
-          <div className="mt-5 grid gap-3 lg:grid-cols-[minmax(0,2fr)_minmax(0,1fr)]">
-            <SearchBar query={p.query} onQuery={p.onQuery} tone="green" arrow={CARBON} />
-            <ScooterPicker scooterName={p.scooterName} brandName={p.brandName} onPick={p.onPickScooter} onClear={p.onClearScooter} tone="green" />
+          <Sub tone={tone}>{sub}</Sub>
+          <div className="mt-4 grid grid-cols-1 gap-2 lg:grid-cols-[minmax(0,2fr)_auto] lg:items-center">
+            <div className="min-w-0"><SearchBar query={p.query} onQuery={p.onQuery} tone={tone} arrow={v === 2 ? GREEN : CARBON} /></div>
+            <div className="min-w-0">{chip}</div>
           </div>
-          <div ref={p.productsRef} className="scroll-mt-4 mt-5 mb-5">
-            <Plates categories={p.categories} selectedSlugs={p.selectedSlugs} onToggle={p.onToggle} tone="green" />
-          </div>
-          {p.grid}
-          <FootLink href={p.catalogueHref} label={footLabel} tone="green" />
+          <div ref={p.productsRef} className="min-w-0 scroll-mt-4 mt-4 mb-5"><Plates categories={p.categories} selectedSlugs={p.selectedSlugs} onToggle={p.onToggle} tone={tone} /></div>
+          {v === 1 ? <CarbonCards>{p.grid}</CarbonCards> : p.grid}
+          <FootLink href={p.catalogueHref} label={footLabel} tone={tone} />
         </div>
       </div>
     </section>
