@@ -47,6 +47,21 @@ const dark = (v: number) => `
   ${CARD(v)} :is(.text-gray-600,.text-gray-500,.text-gray-400){color:rgba(255,255,255,0.72)!important}
 `;
 
+/** Variante 1 — « la page de base, en nouvelle DA » (retour Nolan 18/10) : même ordre, même verre sur le
+ *  wallpaper, mais identité Atelier partout sur la page : Unbounded italique, Plus Jakarta, coins coupés,
+ *  vert à la place de l'orange (l'orange reste réservé à l'achat). */
+const ATELIER_PAGE = `
+  main:has([data-gvue="1"]){font-family:'Plus Jakarta Sans',sans-serif}
+  main:has([data-gvue="1"]) :is(h1,h2,h3,.font-black){font-family:'Unbounded',sans-serif!important;font-style:italic;font-weight:900!important;letter-spacing:-0.02em}
+  main:has([data-gvue="1"]) :is(div,section,aside,a)[class*="rounded-3xl"],
+  main:has([data-gvue="1"]) :is(div,section,aside,a)[class*="rounded-2xl"][class*="backdrop-blur"]{border-radius:0!important;clip-path:${CHAMFER}}
+  main:has([data-gvue="1"]) :is(div,section,aside)[class*="backdrop-blur"]:is([class*="rounded-3xl"],[class*="rounded-2xl"]):not([class*="bg-black"]):not([class*="bg-gray-9"]):not([class*="bg-stone-9"]){background:rgba(250,250,248,0.84)!important;border-color:transparent!important;box-shadow:0 14px 34px -16px rgba(0,0,0,0.45)!important}
+  main:has([data-gvue="1"]) button:is(.rounded-xl,.rounded-lg,.rounded-2xl){border-radius:0!important;clip-path:polygon(0 0, calc(100% - 8px) 0, 100% 8px, 100% 100%, 0 100%)}
+  main:has([data-gvue="1"]) :is(.bg-orange-500,.bg-orange-600,[class*="from-orange"]){background:#4A7C59!important}
+  main:has([data-gvue="1"]) :is([style*="FF6600" i],[style*="255, 102, 0"],[style*="FF8533" i]){background:#4A7C59!important}
+  main:has([data-gvue="1"]) :is(.text-orange-300,.text-orange-400,.text-orange-500){color:#8FBF9C!important}
+`;
+
 const mobileOrder = (v: number, order: string[]) =>
   `@media (max-width:1023px){${order.map((s, i) => `[data-gvue="${v}"] [data-slot="${s}"]{order:${i + 1}!important}`).join("")}}`;
 
@@ -62,7 +77,7 @@ const GarageVueStyles = ({ vue, tab }: { vue: GarageVue; tab: GarageTab }) => {
     }
   `;
   let css = common;
-  if (vue === 1) css += light(1);
+  if (vue === 1) css += ATELIER_PAGE;
   if (vue === 2) css += light(2) + mobileOrder(2, ["hero", "stats", "code", "rider", "photo", "suivi", "aside"]);
   if (vue === 3) css += dark(3) + mobileOrder(3, ["hero", "stats", "rider", "code", "suivi", "photo", "aside"]);
   if (vue === 4)
