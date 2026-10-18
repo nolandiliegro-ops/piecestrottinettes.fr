@@ -6,12 +6,13 @@
  * Unbounded italique ni de barre à flèche noire (réservés au haut de page), titre en Plus Jakarta droit, rayons en
  * texte, filtre trott réduit à un lien. Cartes produits inchangées.
  */
-import { useState, type ReactNode } from "react";
+import { useRef, useState, type ReactNode } from "react";
 import { Link } from "react-router-dom";
 import { ArrowRight, ChevronRight, Search, X } from "lucide-react";
 import type { CategoryGroupV2 } from "@/hooks/useShopByCategoryDataV2";
 
 const FONT = "'Plus Jakarta Sans', sans-serif";
+const UNB = "'Unbounded', sans-serif";
 const CARBON = "#1A1A1A";
 const GREEN = "#4A7C59";
 const LINE = "#E2DCD0";
@@ -93,29 +94,38 @@ const TextTabs = ({ p, big }: { p: EpureProps; big?: boolean }) => {
   );
 };
 
-/** Rayons en chips de la DA (retour Nolan 19/10 : « une belle chip, en vert, comme d'habitude ») : coin coupé,
- *  blanche à fine bordure au repos, verte pleine quand choisie, nombre dans la chip ; frise qui glisse sur téléphone. */
+/** Rayons (retour Nolan 19/10, 2e passe) : retour aux plaques d'avant — blanches, coin coupé, nom en capitales,
+ *  nombre en italique ; plaque noire quand choisie. UN rayon à la fois (toucher un 2e rayon le remplace, retoucher
+ *  le même revient à « Tout ») ; ordre figé au premier affichage pour que rien ne saute sous le doigt. */
 const CleanTabs = ({ p }: { p: EpureProps }) => {
+  const order = useRef<string[]>([]);
+  if (order.current.length === 0 && p.categories.length) order.current = p.categories.map((c) => c.slug);
+  const rank = (slug: string) => { const i = order.current.indexOf(slug); return i === -1 ? 999 : i; };
+  const cats = [...p.categories].sort((a, b) => rank(a.slug) - rank(b.slug));
   const none = p.selectedSlugs.size === 0;
-  const chip = (key: string, label: string, n: number | null, on: boolean, click: () => void) => (
-    <button key={key} type="button" onClick={click} aria-pressed={on}
-      className="shrink-0 min-h-[44px] pl-3.5 pr-3 inline-flex items-center gap-2 text-sm font-bold whitespace-nowrap transition-colors"
-      style={{ fontFamily: FONT, clipPath: "polygon(0 0, calc(100% - 9px) 0, 100% 9px, 100% 100%, 0 100%)",
-        background: on ? GREEN : "#FFFFFF", color: on ? "#FFFFFF" : CARBON, boxShadow: on ? "none" : `inset 0 0 0 1px ${LINE}` }}>
+  const pick = (slug: string) => {
+    const was = p.selectedSlugs.has(slug) && p.selectedSlugs.size === 1;
+    clearAll(p);
+    if (!was) p.onToggle(slug);
+  };
+  // Le rayon touché glisse au centre de la frise (sans faire bouger la page).
+  const center = (el: HTMLElement) => {
+    const row = el.parentElement;
+    if (row) row.scrollTo({ left: el.offsetLeft - (row.clientWidth - el.offsetWidth) / 2, behavior: "smooth" });
+  };
+  const plate = (key: string, label: string, n: number | null, on: boolean, click: () => void) => (
+    <button key={key} type="button" onClick={(e) => { center(e.currentTarget); click(); }} aria-pressed={on}
+      className="shrink-0 min-h-[44px] pl-3.5 pr-4 flex items-center gap-2 text-sm font-bold uppercase tracking-wide whitespace-nowrap"
+      style={{ fontFamily: FONT, clipPath: "polygon(0 0, calc(100% - 8px) 0, 100% 8px, 100% 100%, 0 100%)",
+        ...(on ? { background: CARBON, color: "#FFFFFF" } : { background: "#FFFFFF", color: CARBON, boxShadow: `inset 0 0 0 1px ${LINE}` }) }}>
       {label}
-      {n !== null && (
-        <span className="inline-flex items-center justify-center min-w-[30px] h-7 px-1.5 text-sm font-extrabold leading-none"
-          style={{ background: on ? "rgba(255,255,255,0.22)" : "#EEF4F0", color: on ? "#FFFFFF" : GREEN }}>{n}</span>
-      )}
+      {n !== null && <span style={{ fontFamily: UNB, fontStyle: "italic", fontWeight: 900, opacity: on ? 1 : 0.55 }}>{n}</span>}
     </button>
   );
   return (
-    <div className="relative -mx-4 sm:mx-0">
-      <div className="flex gap-2 overflow-x-auto px-4 sm:px-0 pr-10 sm:flex-wrap" style={{ scrollbarWidth: "none" }} role="group" aria-label="Rayons">
-        {chip("tout", "Tout", null, none, () => clearAll(p))}
-        {p.categories.map((c) => chip(c.slug, c.name, c.count, p.selectedSlugs.has(c.slug), () => p.onToggle(c.slug)))}
-      </div>
-      <div aria-hidden className="pointer-events-none absolute right-0 top-0 bottom-0 w-10 sm:hidden" style={{ background: `linear-gradient(90deg, rgba(250,250,248,0), ${PAPER})` }} />
+    <div className="flex gap-2 overflow-x-auto pb-1 -mx-4 px-4 sm:mx-0 sm:px-0 sm:flex-wrap" style={{ scrollbarWidth: "none", overscrollBehaviorX: "contain" }} role="group" aria-label="Rayons">
+      {plate("tout", "Tout", null, none, () => clearAll(p))}
+      {cats.map((c) => plate(c.slug, c.name, c.count, p.selectedSlugs.has(c.slug), () => pick(c.slug)))}
     </div>
   );
 };
@@ -239,12 +249,12 @@ const EpureShell = (p: EpureProps) => {
   // 6 — ÉTIQUETTE (choisie le 19/10) : petite étiquette à gauche, le nombre de pièces bien écrit à droite,
   // champ souligné, onglets propres.
   return (
-    <section className="w-full" style={{ background: PAPER }} data-home-variant="6">
+    <section className="w-full" style={{ background: PAPER, scrollMarginTop: 40 }} data-home-variant="6">
       <div className="max-w-7xl mx-auto px-4 lg:px-8 py-12 lg:py-16">
         <div className="flex items-end justify-between gap-4">
           <p className="text-sm font-bold uppercase tracking-[0.14em] pb-1" style={{ fontFamily: FONT, color: MUTED }}>Le catalogue</p>
           <p className="text-right leading-none" style={{ fontFamily: FONT }}>
-            <span className="text-[30px] sm:text-[36px] font-extrabold" style={{ color: CARBON, letterSpacing: "-0.03em" }}>{p.totalCount}</span>
+            <span className="text-[32px] sm:text-[40px]" style={{ fontFamily: UNB, fontWeight: 900, fontStyle: "italic", color: GREEN, letterSpacing: "-0.03em" }}>{p.totalCount}</span>
             <span className="ml-1.5 text-[15px] font-semibold" style={{ color: MUTED }}>{p.scooterName ? `pièces pour ta ${scooterLabel(p)}` : p.totalCount > 1 ? "pièces" : "pièce"}</span>
           </p>
         </div>
