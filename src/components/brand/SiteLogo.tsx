@@ -10,7 +10,7 @@
 import { useEffect } from "react";
 import { useBrandAsset } from "@/hooks/useBrandAssets";
 
-export type LogoVariant = 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10;
+export type LogoVariant = 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 | 12 | 13 | 14 | 15;
 
 export const LOGO_NAMES: Record<LogoVariant, string> = {
   1: "Actuel repassé",
@@ -24,13 +24,19 @@ export const LOGO_NAMES: Record<LogoVariant, string> = {
   8: "Étiquette",
   9: "Empilé",
   10: "Encre orange",
+  // 3e tour (18/10, Nolan préfère la 10, veut le VRAI orange de son logo) : composition 10, l'orange varie.
+  11: "Orange du logo",
+  12: "Rouille",
+  13: "Brique",
+  14: "Mandarine",
+  15: "Geste orange",
 };
 
-/** ?logo=1..10 → proposition ; sinon null (PNG actuel). */
+/** ?logo=1..15 → proposition ; sinon null (PNG actuel). */
 export const readLogoVariant = (): LogoVariant | null => {
   try {
     const n = Number(new URLSearchParams(window.location.search).get("logo"));
-    return n >= 1 && n <= 10 ? (n as LogoVariant) : null;
+    return n >= 1 && n <= 15 ? (n as LogoVariant) : null;
   } catch {
     return null;
   }
@@ -235,6 +241,33 @@ const SigEncre = () => {
   );
 };
 
+/* ---------- 3e tour : la 10 (le mot au pinceau en orange), seul l'orange change ---------- */
+// Orange mesuré sur le logo en ligne (pixels du trait, capture Lovable sous voile noir 80 % → ×5) : ≈ #BC5D30.
+const LOGO_ORANGE = "#BC5D30";
+const Encre = ({ ink, trait = CARBON, dot = CARBON }: { ink: string; trait?: string; dot?: string }) => {
+  const w = readWord();
+  return (
+    <span className="inline-flex flex-col leading-none">
+      <span className="flex items-end gap-1.5">
+        <Pieces className="text-[12px] xl:text-[15px] pb-[4px]" />
+        <Word w={w} className="text-[29px] xl:text-[40px]" color={ink} />
+        <Dot className="text-[11px] xl:text-[12px] pb-[4px]" color={dot} />
+      </span>
+      <Swoosh color={trait} className="-mt-0.5 ml-1 w-[92%]" h={9} />
+    </span>
+  );
+};
+/* 11 — Orange du logo : la 10, avec l'orange mesuré sur ton logo actuel. */
+const E11 = () => <Encre ink={LOGO_ORANGE} />;
+/* 12 — Rouille : plus sombre, plus « atelier ». */
+const E12 = () => <Encre ink="#A3461F" />;
+/* 13 — Brique : tire vers le rouge. */
+const E13 = () => <Encre ink="#B23A26" />;
+/* 14 — Mandarine : plus vif, sans rejoindre l'orange des boutons d'achat (#FF6600). */
+const E14 = () => <Encre ink="#DD6420" />;
+/* 15 — Geste orange : orange du logo sur le mot ET le trait, « PIÈCES » seul en noir. */
+const E15 = () => <Encre ink={LOGO_ORANGE} trait={LOGO_ORANGE} dot={LOGO_ORANGE} />;
+
 /** Police pinceau chargée seulement quand une proposition est affichée (rien ne change pour les autres visiteurs). */
 const useBrushFont = () => {
   useEffect(() => {
@@ -250,6 +283,6 @@ const useBrushFont = () => {
 
 export const SiteLogo = ({ variant }: { variant: LogoVariant }) => {
   useBrushFont();
-  const C = { 1: Actuel, 2: Signature, 3: Plaque, 4: Ecrou, 5: Roue, 6: SigOrange, 7: SigCarbone, 8: SigEtiquette, 9: SigEmpile, 10: SigEncre }[variant];
+  const C = { 1: Actuel, 2: Signature, 3: Plaque, 4: Ecrou, 5: Roue, 6: SigOrange, 7: SigCarbone, 8: SigEtiquette, 9: SigEmpile, 10: SigEncre, 11: E11, 12: E12, 13: E13, 14: E14, 15: E15 }[variant];
   return <C />;
 };
