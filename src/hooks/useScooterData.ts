@@ -58,7 +58,7 @@ export const useScooterModels = (brandSlug?: string | null) => {
         .from("scooter_models")
         .select(`
           *,
-          brand:brands!scooter_models_brand_id_fkey(id, name, slug)
+          brand:brands!scooter_models_brand_id_fkey(id, name, slug, logo_url, signature_color)
         `)
         .eq("published", true)
         .order("name")

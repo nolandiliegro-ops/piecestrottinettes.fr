@@ -6,6 +6,7 @@ import { Search } from "lucide-react";
 import Header from "@/components/Header";
 import BrandBentoGrid from "@/components/scooters/BrandBentoGrid";
 import ScooterModelCard from "@/components/scooters/ScooterModelCard";
+import { ScooterCardAtelier, readCartesLook, cartesGridClass } from "@/components/scooters/ScooterCardAtelier";
 import BrandCarouselLooks, { type MarquesLook } from "@/components/scooters/BrandCarouselLooks";
 import ScooterFilters from "@/components/scooters/ScooterFilters";
 import RacingSearch from "@/components/scooters/RacingSearch";
@@ -77,6 +78,7 @@ const Scooters = () => {
   // 17/10 : habillage racing des filtres + recherche à comparer, ?filtres=1..5 (sans paramètre : barre actuelle)
   const fl = Number(params.get("filtres"));
   // 17/10 : « Plaques » (1) retenue par Nolan = défaut ; ?filtres=0 = ancienne barre, 2..5 = autres propositions
+  const cartes = readCartesLook(params); // 18/10 : 5 propositions de cartes ?cartes=1..5, sans paramètre = carte actuelle
   const atelier = params.get("vue") !== "0"; // 17/10 : « Atelier » par défaut (choix Nolan), ancienne page sur ?vue=0
   const filterLook = (params.get("filtres") === null ? 1 : fl >= 1 && fl <= 5 ? fl : null) as FilterLook | null;
   const setParam = useCallback((mutate: (p: URLSearchParams) => void) => {
@@ -304,11 +306,12 @@ const Scooters = () => {
                 animate={{ opacity: 1, y: 0 }}
                 exit={{ opacity: 0, y: -10 }}
                 transition={{ duration: 0.3 }}
-                className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-6"
+                className={cartes ? cartesGridClass(cartes) : "grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-6"}
+                data-cartes={cartes ?? 0}
               >
-                {shownScooters.map((scooter, index) => (
-                  <ScooterModelCard key={scooter.id} scooter={scooter} index={index} />
-                ))}
+                {shownScooters.map((scooter, index) =>
+                  cartes ? <ScooterCardAtelier key={scooter.id} s={scooter} look={cartes} index={index} /> : <ScooterModelCard key={scooter.id} scooter={scooter} index={index} />
+                )}
               </motion.div>
             ) : (
               <EmptyState onClear={() => { setActiveBrand(null); setQuery(""); clearFilters(); }} />
