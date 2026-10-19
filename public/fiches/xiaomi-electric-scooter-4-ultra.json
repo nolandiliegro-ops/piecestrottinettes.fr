@@ -1,0 +1,156 @@
+{
+ "displayName": "Xiaomi Electric Scooter 4 Ultra",
+ "metaTitle": "Xiaomi 4 Ultra : fiche technique, avis et pièces",
+ "metaDescription": "Xiaomi Electric Scooter 4 Ultra : 48 V 561,5 Wh, pneus tubeless 10\" 250x64, double suspension, tambour avant, IP55. Avis, entretien et pièces.",
+ "intro": [
+  "La Xiaomi Electric Scooter 4 Ultra sort en France le 20 avril 2023 au prix de 999 €. C'est le haut de la 4e génération : la seule Xiaomi de cette série suspendue à l'avant et à l'arrière. Cette fiche ne parle que de l'Ultra.",
+  "Moteur arrière de 500 W (940 W en pointe), batterie 48 V de 561,5 Wh pour 70 km annoncés, pneus tubeless de 10 pouces en 250x64, tambour à l'avant et frein électronique à l'arrière. Elle pèse 24,5 kg selon Xiaomi."
+ ],
+ "specs": [
+  [
+   "Moteur",
+   "500 W à l'arrière (940 W en pointe)"
+  ],
+  [
+   "Vitesse",
+   "25 km/h"
+  ],
+  [
+   "Autonomie",
+   "70 km annoncés ; 32 à 42 km en essai (Journal du Geek, Jeuxvideo.com, Frandroid)"
+  ],
+  [
+   "Batterie",
+   "48 V, 561,5 Wh (12 Ah selon le Journal du Geek)"
+  ],
+  [
+   "Poids",
+   "24,5 kg (selon Xiaomi)"
+  ],
+  [
+   "Charge max",
+   "120 kg"
+  ],
+  [
+   "Roues",
+   "10 pouces, tubeless 250x64"
+  ],
+  [
+   "Freins",
+   "Tambour avant + électronique arrière (E-ABS)"
+  ],
+  [
+   "Suspension",
+   "Avant et arrière"
+  ],
+  [
+   "Étanchéité",
+   "IP55"
+  ],
+  [
+   "Temps de charge",
+   "6 h 30 selon Xiaomi, 5 h 30 selon le Journal du Geek, 7 h selon Frandroid"
+  ],
+  [
+   "Prise de charge",
+   "Xiaomi 2X"
+  ],
+  [
+   "Prix de lancement",
+   "999 € (avril 2023)"
+  ]
+ ],
+ "pros": [
+  "Confort des suspensions avant et arrière (Frandroid, Journal du Geek).",
+  "Bonne adhérence des pneus (Journal du Geek).",
+  "Amortissement efficace sur les irrégularités (Jeuxvideo.com)."
+ ],
+ "cons": [
+  "Autonomie réelle très en dessous des 70 km : 32 km avec 110 kg à bord (Journal du Geek), environ 38 km (Jeuxvideo.com), un peu plus de 42 km (Frandroid).",
+  "24,5 kg : lourde à porter.",
+  "Freinage avant jugé insuffisant (Frandroid)."
+ ],
+ "parts": [
+  {
+   "label": "Pneu",
+   "size": "250x64 tubeless (10 pouces)",
+   "count": 3,
+   "to": "/piece/pneu-250x64-cst-tubeless",
+   "cta": "Pneus 250x64"
+  },
+  {
+   "label": "Pneu plein",
+   "size": "250x64",
+   "count": 1,
+   "to": "/piece/pneu-plein-250x64-offroad-ewheel",
+   "cta": "Pneu plein"
+  }
+ ],
+ "care": [
+  "Le tambour avant est le seul frein mécanique et la presse le juge un peu juste : fais-le régler dès que le levier s'allonge.",
+  "Pneus tubeless 250x64 : contrôle la pression chaque mois, les suspensions masquent un pneu sous-gonflé.",
+  "Nettoie et contrôle le jeu des bras de suspension, surtout après la pluie."
+ ],
+ "price": {
+  "text": "Prix de lancement en France : 999 € (avril 2023).",
+  "source": "Frandroid"
+ },
+ "faq": [
+  {
+   "q": "Quelle taille de pneu pour la Xiaomi 4 Ultra ?",
+   "a": "Des pneus tubeless de 10 pouces en 250x64, sur une jante de 6,5 pouces. Ils sont plus larges que les 250x54 de la Scooter 4 standard."
+  },
+  {
+   "q": "La Xiaomi 4 Ultra a-t-elle des plaquettes de frein ?",
+   "a": "Non. Elle freine avec un tambour à l'avant et un frein électronique à l'arrière."
+  },
+  {
+   "q": "Quel chargeur pour la Xiaomi 4 Ultra ?",
+   "a": "Un chargeur 48 V avec la prise Xiaomi 2X. Un chargeur 36 V de M365 ou de Scooter 4 ne convient pas."
+  },
+  {
+   "q": "Quelle est l'autonomie réelle de la Xiaomi 4 Ultra ?",
+   "a": "Entre 32 et 42 km selon les essais : 32 km avec 110 kg à bord pour le Journal du Geek, environ 38 km pour Jeuxvideo.com, plus de 42 km pour Frandroid. Xiaomi annonce 70 km à 15 km/h."
+  },
+  {
+   "q": "Peut-on mettre un pneu plein sur la Xiaomi 4 Ultra ?",
+   "a": "Oui, un pneu plein 250x64 se monte. Tu perds en confort ce que tu gagnes en tranquillité."
+  }
+ ],
+ "sources": [
+  {
+   "label": "Xiaomi France — Electric Scooter 4 Ultra",
+   "url": "https://www.mi.com/fr/product/xiaomi-electric-scooter-4-ultra/"
+  },
+  {
+   "label": "Xiaomi France — Electric Scooter 4 Ultra, caractéristiques",
+   "url": "https://www.mi.com/fr/product/xiaomi-electric-scooter-4-ultra/specs/"
+  },
+  {
+   "label": "Frandroid — Xiaomi Electric Scooter 4 Ultra",
+   "url": "https://www.frandroid.com/marques/xiaomi/1664871_xiaomi-electric-scooter-4-ultra-le-nec-presque-ultra-des-trottinettes-electriques"
+  },
+  {
+   "label": "Journal du Geek — test Xiaomi Electric Scooter 4 Ultra",
+   "url": "https://www.journaldugeek.com/test/test-trottinette-electrique-xiaomi-electric-scooter-4-ultra-une-version-vraiment-pro/"
+  },
+  {
+   "label": "Jeuxvideo.com — test Xiaomi Electric Scooter 4 Ultra",
+   "url": "https://www.jeuxvideo.com/high-tech/tests/test-1782299.htm"
+  },
+  {
+   "label": "Cleanrider — Xiaomi Electric Scooter 4 Ultra",
+   "url": "https://www.cleanrider.com/catalogue/trottinette-electrique/xiaomi/xiaomi-electric-scooter-4-ultra/"
+  },
+  {
+   "label": "Frandroid — quelle trottinette Xiaomi choisir",
+   "url": "https://www.frandroid.com/marques/1945762_quelle-trottinette-electrique-xiaomi-choisir-tout-savoir-sur-la-gamme"
+  }
+ ],
+ "video": {
+  "id": "qGb1KEsmPmY",
+  "title": "Xiaomi Mi Scooter 4 ULTRA : Test et Avis HONNÊTE",
+  "channel": "Ridermood",
+  "uploadDate": "2023-08-30"
+ }
+}

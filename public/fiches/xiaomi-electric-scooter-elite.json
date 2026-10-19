@@ -1,0 +1,142 @@
+{
+ "displayName": "Xiaomi Electric Scooter Elite",
+ "metaTitle": "Xiaomi Scooter Elite : fiche technique, avis et pièces",
+ "metaDescription": "Xiaomi Electric Scooter Elite : 400 W, 36 V 360 Wh, pneus tubeless 10\" 60/70-6.5, suspension avant, tambour avant, IPX5, 20 kg. Avis et pièces.",
+ "intro": [
+  "La Xiaomi Electric Scooter Elite est une trottinette de 2025 vendue autour de 350 € lors du test du Labo Fnac en octobre 2025, et à partir de 299,99 € en octobre 2026. Le Labo Fnac estime qu'elle a presque tout pour elle.",
+  "Moteur arrière de 400 W (700 W en pointe), batterie de 360 Wh pour 45 km annoncés, pneus tubeless de 10 pouces en 60/70-6.5, double ressort de 30 mm à l'avant, tambour à l'avant et frein électronique à l'arrière. Elle pèse 20 kg."
+ ],
+ "specs": [
+  [
+   "Moteur",
+   "400 W à l'arrière (700 W en pointe)"
+  ],
+  [
+   "Vitesse",
+   "25 km/h"
+  ],
+  [
+   "Autonomie",
+   "45 km annoncés, 35,2 km mesurés selon le Labo Fnac"
+  ],
+  [
+   "Batterie",
+   "36 V, 10 Ah (360 Wh)"
+  ],
+  [
+   "Poids",
+   "20 kg"
+  ],
+  [
+   "Charge max",
+   "120 kg"
+  ],
+  [
+   "Roues",
+   "10 pouces, tubeless 60/70-6.5"
+  ],
+  [
+   "Freins",
+   "Tambour avant + électronique arrière (E-ABS)"
+  ],
+  [
+   "Suspension",
+   "Double ressort à l'avant (30 mm)"
+  ],
+  [
+   "Étanchéité",
+   "IPX5"
+  ],
+  [
+   "Temps de charge",
+   "environ 8 h annoncées, 7 h 05 mesurées selon le Labo Fnac"
+  ],
+  [
+   "Chargeur",
+   "36 V (41 V en sortie selon Exellent)"
+  ]
+ ],
+ "pros": [
+  "Moteur puissant, bonne accélération (Labo Fnac).",
+  "Ne faiblit pas en côte et garde une vitesse moyenne stable (Labo Fnac).",
+  "20 kg : elle se transporte facilement (Labo Fnac)."
+ ],
+ "cons": [
+  "Autonomie un peu juste pour les longs trajets : 35,2 km mesurés pour 45 km annoncés (Labo Fnac).",
+  "Charge lente : 7 h mesurées au Labo Fnac.",
+  "Un seul frein mécanique, le tambour avant."
+ ],
+ "parts": [
+  {
+   "label": "Pneu",
+   "size": "60/70-6.5 tubeless (10 pouces)",
+   "count": 14,
+   "to": "/piece/pneu-tubeless-10x2-50-6-5-yuanxing",
+   "cta": "Pneus 10 pouces"
+  },
+  {
+   "label": "Chambre à air",
+   "size": "10x2.50, valve droite ou coudée",
+   "count": 6,
+   "to": "/piece/chambre-a-air-10x250-valve-0x90",
+   "cta": "Chambres à air"
+  }
+ ],
+ "care": [
+  "Le tambour avant est le seul frein mécanique : fais-le régler dès que la course du levier s'allonge.",
+  "Pneus tubeless : vérifie la pression chaque mois. En cas de crevaisons répétées, une chambre à air 10x2.50 se monte dans le pneu.",
+  "Nettoie les axes de la suspension avant après la pluie et contrôle qu'elle ne prend pas de jeu."
+ ],
+ "price": {
+  "text": "Relevé à 350 € par le Labo Fnac (octobre 2025), à partir de 299,99 € en octobre 2026 (idealo).",
+  "source": "L'Éclaireur Fnac, idealo"
+ },
+ "faq": [
+  {
+   "q": "Quelle taille de pneu pour la Xiaomi Scooter Elite ?",
+   "a": "Des pneus tubeless de 10 pouces en 60/70-6.5 (aussi notés 10x2.50), sur une jante de 6,5 pouces."
+  },
+  {
+   "q": "La Xiaomi Scooter Elite a-t-elle des plaquettes de frein ?",
+   "a": "Non. Elle freine avec un tambour à l'avant et un frein électronique à l'arrière."
+  },
+  {
+   "q": "Peut-on mettre une chambre à air sur la Xiaomi Scooter Elite ?",
+   "a": "Oui, une chambre à air 10x2.50 se monte dans le pneu tubeless si tu crèves souvent."
+  },
+  {
+   "q": "Quelle est l'autonomie réelle de la Xiaomi Scooter Elite ?",
+   "a": "Le Labo Fnac a mesuré 35,2 km pour 45 km annoncés par Xiaomi à 15 km/h sur le plat."
+  },
+  {
+   "q": "Quel chargeur pour la Xiaomi Scooter Elite ?",
+   "a": "Un chargeur 36 V (41 V et 1,5 A en sortie d'origine selon Exellent). Compare la prise de ta trottinette avec celle du chargeur avant d'en commander un."
+  }
+ ],
+ "sources": [
+  {
+   "label": "Xiaomi France — Electric Scooter Elite",
+   "url": "https://www.mi.com/fr/product/xiaomi-electric-scooter-elite/"
+  },
+  {
+   "label": "Xiaomi France — Electric Scooter Elite, caractéristiques",
+   "url": "https://www.mi.com/fr/product/xiaomi-electric-scooter-elite/specs/"
+  },
+  {
+   "label": "L'Éclaireur Fnac — test Labo Xiaomi Mi Scoot Elite",
+   "url": "https://leclaireur.fnac.com/test/627470-test-labo-de-la-xiaomi-mi-scoot-elite-n-elle-a-presque-tout-pour-elle/"
+  },
+  {
+   "label": "Fnac — Xiaomi Electric Scooter Elite",
+   "url": "https://www.fnac.com/Trottinette-electrique-Xiaomi-Electric-Scooter-Elite-400-W-Noir/a21488839/w-4"
+  },
+  {
+   "label": "idealo — Xiaomi Electric Scooter Elite",
+   "url": "https://www.idealo.fr/prix/206191504/xiaomi-electric-scooter-elite.html"
+  },
+  {
+   "label": "Exellent — fiche Xiaomi Electric Scooter Elite",
+   "url": "https://www.exellent.be/fr/pr/xiaomi-electric-scooter-elite/product-sheet"
+  }
+ ]
+}

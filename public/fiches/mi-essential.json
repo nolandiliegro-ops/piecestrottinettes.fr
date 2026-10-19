@@ -1,0 +1,169 @@
+{
+ "displayName": "Xiaomi Mi Electric Scooter Essential",
+ "metaTitle": "Xiaomi Mi Essential : fiche technique, avis et pièces",
+ "metaDescription": "Xiaomi Mi Electric Scooter Essential : 250 W, 20 km/h, 12 kg, pneus 8,5\" 8.5x2-6.1, disque arrière 110 mm, prise RCA. Avis, entretien et pièces.",
+ "intro": [
+  "La Xiaomi Mi Electric Scooter Essential est l'entrée de gamme de la série lancée en France en 2020, aux côtés de la 1S et de la Mi Pro 2. Elle est bridée à 20 km/h et pèse 12 kg : c'est une trottinette pour débuter et pour les petits trajets.",
+  "Moteur de 250 W, petite batterie de 187 Wh pour 20 km annoncés, pneus gonflables de 8,5 pouces, frein électronique à l'avant et disque à l'arrière. Ses pneus, chambres à air et plaquettes sont les mêmes que ceux de la M365."
+ ],
+ "specs": [
+  [
+   "Moteur",
+   "250 W"
+  ],
+  [
+   "Vitesse",
+   "20 km/h"
+  ],
+  [
+   "Autonomie annoncée",
+   "20 km (selon Xiaomi)"
+  ],
+  [
+   "Batterie",
+   "36 V ; 5,1 Ah et 187 Wh selon Fnac"
+  ],
+  [
+   "Poids",
+   "12 kg"
+  ],
+  [
+   "Charge max",
+   "100 kg"
+  ],
+  [
+   "Roues",
+   "8,5 pouces, 8.5x2-6.1 à chambre à air"
+  ],
+  [
+   "Freins",
+   "Électronique avant (E-ABS) + disque arrière Ø 110 mm"
+  ],
+  [
+   "Étanchéité",
+   "IP54 (selon Fnac)"
+  ],
+  [
+   "Temps de charge",
+   "environ 5 h (selon L'Éclaireur Fnac)"
+  ],
+  [
+   "Prise de charge",
+   "RCA"
+  ],
+  [
+   "Chargeur",
+   "36 V (42 V en sortie)"
+  ]
+ ],
+ "pros": [
+  "Autonomie tenue : environ 20 km avec un conducteur de 73 kg sur terrain plat (L'Éclaireur Fnac).",
+  "Arrêt en moins de 10 m à pleine vitesse, freinage suffisant pour 20 km/h (L'Éclaireur Fnac).",
+  "12 kg : l'une des Xiaomi les plus faciles à porter."
+ ],
+ "cons": [
+  "Bridée à 20 km/h, sous les 25 km/h autorisés.",
+  "Moteur de 250 W et batterie de 187 Wh : un modèle d'entrée de gamme (01net).",
+  "Pneus gonflables de 8,5 pouces : sensibles aux crevaisons si la pression n'est pas surveillée."
+ ],
+ "parts": [
+  {
+   "label": "Pneu",
+   "size": "8.5x2-6.1 (8,5 pouces)",
+   "count": 8,
+   "to": "/piece/pneu-tubeless-8-5x2-6-1-offroad-ewheel",
+   "cta": "Pneus 8,5 pouces"
+  },
+  {
+   "label": "Chambre à air",
+   "size": "8.5x2",
+   "count": 6,
+   "to": "/piece/chambre-a-air-8-5x2-valve-coudee-135x45-ewheel",
+   "cta": "Chambres à air"
+  },
+  {
+   "label": "Pneu plein",
+   "size": "8.5x2-6.1",
+   "count": 27,
+   "to": "/piece/pneu-plein-8-5x2-6-1-ultra-leger-noir-jante-34-mm-nedong",
+   "cta": "Pneus pleins"
+  },
+  {
+   "label": "Plaquettes",
+   "size": "étrier Xiaomi M365",
+   "count": 2,
+   "to": "/piece/plaquettes-de-frein-xiaomi-m365",
+   "cta": "Plaquettes M365"
+  },
+  {
+   "label": "Chargeur",
+   "size": "36 V → 42 V, prise RCA",
+   "count": 2,
+   "to": "/piece/chargeur-36v-42v-2a-xiaomi-connecteur-rca",
+   "cta": "Chargeurs Xiaomi"
+  }
+ ],
+ "care": [
+  "Gonfle tes pneus de 8,5 pouces chaque semaine : un pneu mou pince la chambre à air au premier trottoir. Des pneus pleins 8.5x2-6.1 se montent aussi.",
+  "Le disque arrière est le seul frein mécanique : contrôle les plaquettes et règle l'étrier s'il frotte.",
+  "Avec une petite batterie de 187 Wh, évite de la laisser vide plusieurs semaines : recharge-la avant de la ranger."
+ ],
+ "faq": [
+  {
+   "q": "Quelle taille de pneu pour la Xiaomi Mi Essential ?",
+   "a": "Des pneus de 8,5 pouces en 8.5x2, sur une jante de 6,1 pouces, avec chambre à air. C'est la même taille que sur la M365."
+  },
+  {
+   "q": "Quelles plaquettes pour la Xiaomi Mi Essential ?",
+   "a": "Des plaquettes pour l'étrier Xiaomi M365, qui freine un disque arrière de 110 mm."
+  },
+  {
+   "q": "Quel chargeur pour la Xiaomi Mi Essential ?",
+   "a": "Un chargeur 36 V (42 V en sortie) avec prise RCA."
+  },
+  {
+   "q": "Quelle est la vitesse de la Xiaomi Mi Essential ?",
+   "a": "Elle est bridée d'usine à 20 km/h, en dessous des 25 km/h autorisés sur la voie publique."
+  },
+  {
+   "q": "Quelle est l'autonomie réelle de la Xiaomi Mi Essential ?",
+   "a": "L'Éclaireur Fnac a parcouru environ 20 km avec un conducteur de 73 kg sur des trajets plats. En côte ou avec plus de poids, compte moins."
+  }
+ ],
+ "sources": [
+  {
+   "label": "Xiaomi France — Mi Electric Scooter Essential",
+   "url": "https://www.mi.com/fr/mi-electric-scooter-essential/"
+  },
+  {
+   "label": "Xiaomi France — Mi Electric Scooter Essential, caractéristiques",
+   "url": "https://www.mi.com/fr/mi-electric-scooter-essential/specs/"
+  },
+  {
+   "label": "L'Éclaireur Fnac — prise en main de la Mi Electric Scooter Essential",
+   "url": "https://leclaireur.fnac.com/test/29933-prise-en-main-de-la-xiaomi-mi-electric-scooter-essential-la-trottinette-ideale-pour-debuter/"
+  },
+  {
+   "label": "01net — fiche technique Mi Electric Scooter Essential",
+   "url": "https://www.01net.com/tests/xiaomi-mi-electric-scooter-essential-fiche-technique-62413.html"
+  },
+  {
+   "label": "Fnac — Mi Electric Scooter Essential",
+   "url": "https://www.fnac.com/Trottinette-electrique-Xiaomi-Mi-Electric-Scooter-Essential-avec-un-cadenas-250-W-Noir/a14865334/w-4"
+  },
+  {
+   "label": "Cleanrider — Xiaomi Essential",
+   "url": "https://www.cleanrider.com/catalogue/trottinette-electrique/xiaomi/xiaomi-essential-fr-mi-electric-scooter/"
+  },
+  {
+   "label": "L'Éclaireur Fnac — annonce Mi Pro 2, 1S et Essential",
+   "url": "https://leclaireur.fnac.com/article/18323-mi-electric-scooter-pro-2-1s-et-essential-xiaomi-multiplie-les-trottinettes/"
+  }
+ ],
+ "video": {
+  "id": "KUaBhyMkZ6M",
+  "title": "Xiaomi Mi Essential - La MEILLEURE trottinette entrée de GAMME ? - TestNologie",
+  "channel": "TestNologie",
+  "uploadDate": "2021-04-02"
+ }
+}

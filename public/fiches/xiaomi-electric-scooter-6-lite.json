@@ -1,0 +1,134 @@
+{
+ "displayName": "Xiaomi Electric Scooter 6 Lite",
+ "metaTitle": "Xiaomi 6 Lite : fiche technique, avis et pièces",
+ "metaDescription": "Xiaomi Electric Scooter 6 Lite : 300 W, 216 Wh, pneus 10\" 10x2.125-6.5, suspension avant, tambour avant sans plaquettes, IPX4, 18,1 kg. Avis et pièces.",
+ "intro": [
+  "La Xiaomi Electric Scooter 6 Lite est l'entrée de gamme de la série 6, annoncée fin février 2026 à 329,99 €. Cette fiche ne parle que de la 6 Lite, pas de la Scooter 6, de la 6 Pro ni de la 6 Ultra. Le Labo Fnac lui reproche surtout son autonomie.",
+  "Moteur de 300 W (500 W en pointe), batterie de 216 Wh pour 25 km annoncés, pneus gonflables de 10 pouces, double ressort de 25 mm à l'avant, tambour à l'avant et frein électronique à l'arrière. Elle pèse 18,1 kg."
+ ],
+ "specs": [
+  [
+   "Moteur",
+   "300 W (500 W en pointe)"
+  ],
+  [
+   "Vitesse",
+   "25 km/h"
+  ],
+  [
+   "Autonomie",
+   "25 km annoncés (20 km en mode Sport), 16 km mesurés selon le Labo Fnac"
+  ],
+  [
+   "Batterie",
+   "10 Ah, 216 Wh"
+  ],
+  [
+   "Poids",
+   "18,1 kg"
+  ],
+  [
+   "Charge max",
+   "100 kg"
+  ],
+  [
+   "Roues",
+   "10 pouces, 10x2.125-6.5 pneumatiques"
+  ],
+  [
+   "Freins",
+   "Tambour avant + électronique arrière (E-ABS)"
+  ],
+  [
+   "Suspension",
+   "Double ressort à l'avant (25 mm)"
+  ],
+  [
+   "Étanchéité",
+   "IPX4 (batterie IPX6)"
+  ],
+  [
+   "Temps de charge",
+   "environ 8 h, sans charge rapide"
+  ],
+  [
+   "Prix de lancement",
+   "329,99 € (février 2026)"
+  ]
+ ],
+ "pros": [
+  "Belle accélération et moteur puissant pour sa catégorie (Labo Fnac).",
+  "Légère et facile à transporter (Labo Fnac).",
+  "Suspension avant à double ressort, rare à ce prix."
+ ],
+ "cons": [
+  "Autonomie très insuffisante : 16 km mesurés pour 25 km annoncés (Labo Fnac).",
+  "Pente mesurée à 9 % pour 15 % annoncés (Labo Fnac).",
+  "Recharge de 8 h sans charge rapide, ni clignotants ni contrôle de traction (Frandroid)."
+ ],
+ "parts": [
+  {
+   "label": "Pneu",
+   "size": "10x2.125-6.5 (10 pouces)",
+   "count": 3,
+   "to": "/piece/pneu-10x2-125-6-5-ninebot-f",
+   "cta": "Pneus 10x2.125"
+  },
+  {
+   "label": "Chambre à air",
+   "size": "10x2.125, valve droite ou coudée",
+   "count": 8,
+   "to": "/piece/chambre-a-air-10-pouces-10x2-125-valve-droite",
+   "cta": "Chambres à air"
+  }
+ ],
+ "care": [
+  "Le tambour avant est le seul frein mécanique : fais-le régler dès que la course du levier s'allonge.",
+  "Pneus à chambre à air : vérifie la pression chaque semaine, c'est le premier remède contre les crevaisons.",
+  "Étanche IPX4 seulement : évite les flaques et essuie-la après une averse."
+ ],
+ "price": {
+  "text": "Prix de lancement en France : 329,99 € (février 2026) ; 389,99 € chez Boulanger en septembre 2026.",
+  "source": "Frandroid, Boulanger"
+ },
+ "faq": [
+  {
+   "q": "Quelle taille de pneu pour la Xiaomi 6 Lite ?",
+   "a": "Des pneus de 10 pouces en 10x2.125, sur une jante de 6,5 pouces, avec chambre à air."
+  },
+  {
+   "q": "Quelle chambre à air pour la Xiaomi 6 Lite ?",
+   "a": "Une chambre à air 10x2.125. Vérifie l'angle de la valve d'origine (droite ou coudée) avant de commander."
+  },
+  {
+   "q": "La Xiaomi 6 Lite a-t-elle des plaquettes de frein ?",
+   "a": "Non. Elle freine avec un tambour à l'avant et un frein électronique à l'arrière."
+  },
+  {
+   "q": "Quelle est l'autonomie réelle de la Xiaomi 6 Lite ?",
+   "a": "Le Labo Fnac a mesuré 16 km. Xiaomi annonce 25 km à 15 km/h et 20 km en mode Sport à 25 km/h."
+  }
+ ],
+ "sources": [
+  {
+   "label": "Xiaomi France — Electric Scooter 6 Lite",
+   "url": "https://www.mi.com/fr/product/xiaomi-electric-scooter-6-lite/"
+  },
+  {
+   "label": "Xiaomi France — Electric Scooter 6 Lite, caractéristiques",
+   "url": "https://www.mi.com/fr/product/xiaomi-electric-scooter-6-lite/specs/"
+  },
+  {
+   "label": "L'Éclaireur Fnac — test Labo Xiaomi Mi Scooter 6 Lite",
+   "url": "https://leclaireur.fnac.com/test/678909-test-labo-de-la-xiaomi-mi-scooter-6-lite-pour-une-fois-xiaomi-rate-la-marche/"
+  },
+  {
+   "label": "Frandroid — Xiaomi Electric Scooter 6 Lite",
+   "url": "https://www.frandroid.com/marques/xiaomi/2988483_voici-lelectric-scooter-6-lite-la-nouvelle-trottinette-electrique-abordable-de-xiaomi"
+  },
+  {
+   "label": "Boulanger — Xiaomi Electric Scooter 6 Lite",
+   "url": "https://www.boulanger.com/ref/1235219"
+  }
+ ]
+}

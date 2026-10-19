@@ -1,0 +1,169 @@
+{
+ "displayName": "Xiaomi Electric Scooter 4",
+ "metaTitle": "Xiaomi Scooter 4 : fiche technique, avis et pièces",
+ "metaDescription": "Xiaomi Electric Scooter 4 : 300 W, 36 V 7,65 Ah, pneus tubeless 10\" 250x54, disque arrière 140 mm, prise RCA. Avis, entretien et pièces compatibles.",
+ "intro": [
+  "La Xiaomi Electric Scooter 4 est officialisée le 20 avril 2023 et vendue en France à partir de fin mai 2023, au prix de 549 €. Cette fiche parle du modèle standard, pas des versions Lite, Pro ou Ultra de la même génération.",
+  "Moteur de 300 W (600 W en pointe), batterie 36 V de 7,65 Ah pour 35 km annoncés, pneus tubeless de 10 pouces en 250x54, frein électronique à l'avant et disque de 140 mm à l'arrière. Elle pèse 17,2 kg selon Xiaomi."
+ ],
+ "specs": [
+  [
+   "Moteur",
+   "300 W (600 W en pointe)"
+  ],
+  [
+   "Vitesse",
+   "25 km/h"
+  ],
+  [
+   "Autonomie",
+   "35 km annoncés, 20 à 25 km en usage réel selon Frandroid et Cleanrider"
+  ],
+  [
+   "Batterie",
+   "36 V, 7,65 Ah (275 Wh)"
+  ],
+  [
+   "Poids",
+   "17,2 kg (selon Xiaomi)"
+  ],
+  [
+   "Charge max",
+   "110 kg"
+  ],
+  [
+   "Roues",
+   "10 pouces, tubeless 250x54"
+  ],
+  [
+   "Freins",
+   "Électronique avant (E-ABS) + disque arrière Ø 140 mm"
+  ],
+  [
+   "Temps de charge",
+   "environ 5 h"
+  ],
+  [
+   "Prise de charge",
+   "RCA"
+  ],
+  [
+   "Chargeur",
+   "36 V (42 V en sortie)"
+  ],
+  [
+   "Prix de lancement",
+   "549 € (2023)"
+  ]
+ ],
+ "pros": [
+  "Trottinette équilibrée pour le quotidien (Frandroid).",
+  "Équipement de cœur de gamme vendu au juste prix (Cleanrider).",
+  "Pneus tubeless de 10 pouces : plus de confort et moins de crevaisons que les 8,5 pouces des anciennes Xiaomi."
+ ],
+ "cons": [
+  "Freinage jugé très moyen, qui manque de mordant (Frandroid).",
+  "Autonomie réelle de 20 à 25 km, loin des 35 km annoncés (Frandroid, Cleanrider).",
+  "Un seul frein mécanique, le disque arrière."
+ ],
+ "parts": [
+  {
+   "label": "Pneu",
+   "size": "250x54 tubeless (10 pouces)",
+   "count": 3,
+   "to": "/piece/pneu-250x54-tubeless-xiaomi-scooter-4",
+   "cta": "Pneus 250x54"
+  },
+  {
+   "label": "Pneu plein",
+   "size": "10x2.125, prévu pour la Scooter 4",
+   "count": 1,
+   "to": "/piece/pneu-plein-10x2125-ninebot-serie-f-xiaomi-mi4",
+   "cta": "Pneu plein"
+  },
+  {
+   "label": "Plaquettes",
+   "size": "étrier Xiaomi Scooter 4",
+   "count": 1,
+   "to": "/piece/plaquettes-de-freins-xiaomi-mi4-niu-kqi2-kqi3",
+   "cta": "Plaquettes Scooter 4"
+  },
+  {
+   "label": "Disque de frein",
+   "size": "140 mm, 5 trous",
+   "count": 1,
+   "to": "/piece/disque-de-frein-140mm-5-trous-xiaomi-mi4",
+   "cta": "Disque 140 mm"
+  },
+  {
+   "label": "Chargeur",
+   "size": "36 V → 42 V, prise RCA",
+   "count": 2,
+   "to": "/piece/chargeur-36v-42v-2a-xiaomi-connecteur-rca",
+   "cta": "Chargeurs Xiaomi"
+  }
+ ],
+ "care": [
+  "Le freinage manque de mordant : garde des plaquettes en bon état et un disque propre, sans graisse, pour ne rien perdre.",
+  "Pneus tubeless 250x54 : vérifie la pression chaque mois. Un pneu sous-gonflé s'use vite et chauffe la jante.",
+  "Règle l'étrier arrière dès qu'il frotte : un disque de 140 mm voilé se sent tout de suite au levier."
+ ],
+ "price": {
+  "text": "Prix de lancement en France : 549 € (2023).",
+  "source": "Cleanrider"
+ },
+ "faq": [
+  {
+   "q": "Quelle taille de pneu pour la Xiaomi Scooter 4 ?",
+   "a": "Des pneus tubeless de 10 pouces en 250x54."
+  },
+  {
+   "q": "Quelles plaquettes pour la Xiaomi Scooter 4 ?",
+   "a": "Des plaquettes pour l'étrier de la Scooter 4, qui serre un disque arrière de 140 mm à 5 trous."
+  },
+  {
+   "q": "Quel chargeur pour la Xiaomi Scooter 4 ?",
+   "a": "Un chargeur 36 V (42 V en sortie) avec prise RCA."
+  },
+  {
+   "q": "Quelle est l'autonomie réelle de la Xiaomi Scooter 4 ?",
+   "a": "Frandroid a fait environ 20 km en usage soutenu et jusqu'à 25 km sur un parcours plus plat. Xiaomi annonce 35 km."
+  },
+  {
+   "q": "Peut-on mettre un pneu plein sur la Xiaomi Scooter 4 ?",
+   "a": "Oui, un pneu plein 10x2.125 prévu pour ce modèle se monte : plus de crevaison, un peu moins de confort."
+  }
+ ],
+ "sources": [
+  {
+   "label": "Xiaomi France — Electric Scooter 4",
+   "url": "https://www.mi.com/fr/product/xiaomi-electric-scooter-4/"
+  },
+  {
+   "label": "Xiaomi France — Electric Scooter 4, caractéristiques",
+   "url": "https://www.mi.com/fr/product/xiaomi-electric-scooter-4/specs/"
+  },
+  {
+   "label": "Frandroid — test de la Xiaomi Electric Scooter 4",
+   "url": "https://www.frandroid.com/marques/xiaomi/1726163_test-de-la-xiaomi-electric-scooter-4-une-trottinette-electrique-equilibree-pour-le-quotidien"
+  },
+  {
+   "label": "Frandroid — on a roulé avec la Xiaomi Electric Scooter 4",
+   "url": "https://www.frandroid.com/marques/xiaomi/1712643_on-a-roule-avec-la-xiaomi-electric-scooter-4-prometteuse-mais-deja-menacee"
+  },
+  {
+   "label": "Cleanrider — Xiaomi Electric Scooter 4, vendue au juste prix",
+   "url": "https://www.cleanrider.com/actus/xiaomi-electric-scooter-4-une-trottinette-coeur-de-gamme-vendue-au-juste-prix/"
+  },
+  {
+   "label": "Fnac — Xiaomi Electric Scooter 4",
+   "url": "https://www.fnac.com/XIAOMI-ELECTRIC-SCOOTER-4/a18256570/w-4"
+  }
+ ],
+ "video": {
+  "id": "tooKq68RPkk",
+  "title": "Xiaomi Mi Scooter 4 : Test et Avis HONNÊTE",
+  "channel": "Ridermood",
+  "uploadDate": "2023-06-12"
+ }
+}

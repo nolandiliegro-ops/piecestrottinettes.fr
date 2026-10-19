@@ -1,0 +1,128 @@
+{
+ "displayName": "Xiaomi Electric Scooter 6",
+ "metaTitle": "Xiaomi Scooter 6 : fiche technique, avis et pièces",
+ "metaDescription": "Xiaomi Electric Scooter 6 : 400 W, 360 Wh, pneus tubeless 12\" 60/90-8, suspensions avant et arrière, tambour avant, IPX5, 26,3 kg. Avis et pièces.",
+ "intro": [
+  "La Xiaomi Electric Scooter 6 est le modèle standard de la gamme 2026, présentée fin février 2026. Cette fiche ne parle que de la Scooter 6, pas de la 6 Lite, de la 6 Pro ni de la 6 Ultra. Le Labo Fnac la juge toujours un excellent choix à prix modéré.",
+  "Moteur de 400 W (800 W en pointe), batterie de 360 Wh pour 45 km annoncés, pneus tubeless de 12 pouces en 60/90-8, double ressort à l'avant et ressort à l'arrière, tambour à l'avant et frein électronique à l'arrière. Elle pèse 26,3 kg."
+ ],
+ "specs": [
+  [
+   "Moteur",
+   "400 W (800 W en pointe)"
+  ],
+  [
+   "Vitesse",
+   "25 km/h"
+  ],
+  [
+   "Autonomie",
+   "45 km annoncés, 33,2 km mesurés selon le Labo Fnac"
+  ],
+  [
+   "Batterie",
+   "10 Ah, 360 Wh"
+  ],
+  [
+   "Poids",
+   "26,3 kg"
+  ],
+  [
+   "Charge max",
+   "120 kg"
+  ],
+  [
+   "Roues",
+   "12 pouces, tubeless 60/90-8"
+  ],
+  [
+   "Freins",
+   "Tambour avant + électronique arrière (E-ABS)"
+  ],
+  [
+   "Suspension",
+   "Double ressort à l'avant, ressort à l'arrière"
+  ],
+  [
+   "Étanchéité",
+   "IPX5 (batterie IPX6)"
+  ],
+  [
+   "Temps de charge",
+   "environ 8 h annoncées, 7 h 20 mesurées selon le Labo Fnac"
+  ],
+  [
+   "Prix relevé",
+   "499,99 € chez Fnac et Darty (2026)"
+  ]
+ ],
+ "pros": [
+  "Moteur réactif et accélération avec du couple (Labo Fnac).",
+  "Monte les pentes raides et garde une vitesse moyenne stable (Labo Fnac).",
+  "Roues de 12 pouces et suspensions à l'avant et à l'arrière pour ce prix (Frandroid)."
+ ],
+ "cons": [
+  "Peu de progrès en autonomie : 33,2 km mesurés pour 45 km annoncés (Labo Fnac).",
+  "26,3 kg : elle prend de l'embonpoint (Labo Fnac).",
+  "Recharge de 8 h annoncées.",
+  "Un seul frein mécanique, le tambour avant."
+ ],
+ "parts": [
+  {
+   "label": "Pneu",
+   "size": "60/90-8 tubeless (12 pouces)",
+   "count": 2,
+   "to": "/piece/pneu-tubeless-60-90-8-yuanxing",
+   "cta": "Pneus 12 pouces"
+  }
+ ],
+ "care": [
+  "Le tambour avant est le seul frein mécanique : fais-le régler dès que la course du levier s'allonge.",
+  "Pneus tubeless 60/90-8 : contrôle la pression chaque mois, les suspensions masquent un pneu sous-gonflé.",
+  "Nettoie et contrôle les ressorts avant et arrière après la pluie, et surveille le jeu des axes."
+ ],
+ "price": {
+  "text": "Prix relevé en France en 2026 : 499,99 € chez Fnac et Darty, à partir de 426,49 € chez d'autres marchands en octobre 2026 (idealo).",
+  "source": "Frandroid, idealo"
+ },
+ "faq": [
+  {
+   "q": "Quelle taille de pneu pour la Xiaomi Scooter 6 ?",
+   "a": "Des pneus tubeless de 12 pouces en 60/90-8, sur une jante de 8 pouces. Ce n'est pas la taille de la Scooter 5, qui roule en 10 pouces."
+  },
+  {
+   "q": "La Xiaomi Scooter 6 a-t-elle des plaquettes de frein ?",
+   "a": "Non. Elle freine avec un tambour à l'avant et un frein électronique à l'arrière."
+  },
+  {
+   "q": "Quelle est l'autonomie réelle de la Xiaomi Scooter 6 ?",
+   "a": "Le Labo Fnac a mesuré 33,2 km pour 45 km annoncés par Xiaomi à 15 km/h sur le plat."
+  },
+  {
+   "q": "La Xiaomi Scooter 6 est-elle suspendue ?",
+   "a": "Oui : double ressort à l'avant et ressort à l'arrière."
+  }
+ ],
+ "sources": [
+  {
+   "label": "Xiaomi — Electric Scooter 6",
+   "url": "https://www.mi.com/ma-fr/product/xiaomi-electric-scooter-6/"
+  },
+  {
+   "label": "L'Éclaireur Fnac — test Labo Xiaomi Electric Scooter 6",
+   "url": "https://leclaireur.fnac.com/test/689647-test-labo-de-la-xiaomi-electric-scooter-6-toujours-un-excellent-choix-a-prix-modere/"
+  },
+  {
+   "label": "Frandroid — Xiaomi Electric Scooter 6",
+   "url": "https://www.frandroid.com/produits/trottinette-electrique/xiaomi/2992399-xiaomi-electric-scooter-6"
+  },
+  {
+   "label": "idealo — Xiaomi Electric Scooter 6",
+   "url": "https://www.idealo.fr/prix/209599480/xiaomi-electric-scooter-6.html"
+  },
+  {
+   "label": "Fnac — Xiaomi Electric Scooter 6",
+   "url": "https://www.fr.fnac.ch/Xiaomi-Electric-Scooter-6-Noir/a22613666"
+  }
+ ]
+}

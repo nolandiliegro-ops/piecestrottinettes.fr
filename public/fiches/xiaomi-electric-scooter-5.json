@@ -1,0 +1,148 @@
+{
+ "displayName": "Xiaomi Electric Scooter 5",
+ "metaTitle": "Xiaomi Scooter 5 : fiche technique, avis et pièces",
+ "metaDescription": "Xiaomi Electric Scooter 5 : 48 V 477 Wh, pneus tubeless 10\" 60/70-6.5, suspension avant, tambour avant, IPX5, 20,1 kg. Avis, entretien et pièces.",
+ "intro": [
+  "La Xiaomi Electric Scooter 5 est le modèle de base de la gamme 2025, disponible en France à partir d'avril 2025 autour de 405 €. Cette fiche ne parle que de la Scooter 5, pas de la 5 Pro, de la 5 Max ni de la 5 Plus.",
+  "Batterie de 477 Wh pour 60 km annoncés, pneus tubeless de 10 pouces en 60/70-6.5, suspension avant à ressort, tambour à l'avant et frein électronique à l'arrière. Elle pèse 20,1 kg et se recharge en 9 heures annoncées par Xiaomi."
+ ],
+ "specs": [
+  [
+   "Moteur",
+   "350 W (700 W en pointe), selon Darty"
+  ],
+  [
+   "Vitesse",
+   "25 km/h"
+  ],
+  [
+   "Autonomie",
+   "60 km annoncés, 50 km mesurés selon L'Éclaireur Fnac"
+  ],
+  [
+   "Batterie",
+   "48 V, 10,2 Ah (477 Wh)"
+  ],
+  [
+   "Poids",
+   "20,1 kg"
+  ],
+  [
+   "Charge max",
+   "120 kg (selon Frandroid)"
+  ],
+  [
+   "Roues",
+   "10 pouces, tubeless 60/70-6.5"
+  ],
+  [
+   "Freins",
+   "Tambour avant + électronique arrière (E-ABS)"
+  ],
+  [
+   "Suspension",
+   "Double ressort à l'avant, rien à l'arrière"
+  ],
+  [
+   "Étanchéité",
+   "IPX5"
+  ],
+  [
+   "Temps de charge",
+   "environ 9 h annoncées, 7 h 23 mesurées selon L'Éclaireur Fnac"
+  ],
+  [
+   "Prix de lancement",
+   "404,99 € à 409,99 € (2025)"
+  ]
+ ],
+ "pros": [
+  "Construction robuste et bonne stabilité (Cleanrider).",
+  "Freinage rassurant et confort correct (Cleanrider).",
+  "Bonnes performances en côte (L'Éclaireur Fnac)."
+ ],
+ "cons": [
+  "Autonomie réelle inférieure à la promesse et moteur peu nerveux (Cleanrider).",
+  "20,1 kg et une recharge longue, 9 h annoncées (Cleanrider).",
+  "Suspension à l'avant seulement : l'arrière reste ferme."
+ ],
+ "parts": [
+  {
+   "label": "Pneu",
+   "size": "60/70-6.5 tubeless (10 pouces)",
+   "count": 14,
+   "to": "/piece/pneu-tubeless-10x2-50-6-5-yuanxing",
+   "cta": "Pneus 10 pouces"
+  },
+  {
+   "label": "Chambre à air",
+   "size": "10x2.50, valve droite ou coudée",
+   "count": 6,
+   "to": "/piece/chambre-a-air-10x250-valve-0x90",
+   "cta": "Chambres à air"
+  }
+ ],
+ "care": [
+  "Le tambour avant est le seul frein mécanique : fais-le régler dès que la course du levier s'allonge.",
+  "Pneus tubeless : vérifie la pression chaque mois. En cas de crevaisons répétées, une chambre à air 10x2.50 se monte dans le pneu.",
+  "Nettoie et graisse légèrement les axes de la suspension avant, surtout après la pluie."
+ ],
+ "price": {
+  "text": "Prix de lancement en France : 404,99 € chez Darty (février 2025), 409,99 € relevés par Cleanrider.",
+  "source": "Darty, Cleanrider"
+ },
+ "faq": [
+  {
+   "q": "Quelle taille de pneu pour la Xiaomi Scooter 5 ?",
+   "a": "Des pneus tubeless de 10 pouces en 60/70-6.5 (aussi notés 10x2.50), sur une jante de 6,5 pouces."
+  },
+  {
+   "q": "La Xiaomi Scooter 5 a-t-elle des plaquettes de frein ?",
+   "a": "Non. Elle freine avec un tambour à l'avant et un frein électronique à l'arrière."
+  },
+  {
+   "q": "Peut-on mettre une chambre à air sur la Xiaomi Scooter 5 ?",
+   "a": "Oui, une chambre à air 10x2.50 se monte dans le pneu tubeless si tu crèves souvent."
+  },
+  {
+   "q": "Quelle est l'autonomie réelle de la Xiaomi Scooter 5 ?",
+   "a": "L'Éclaireur Fnac a mesuré 50 km sur son protocole, pour 60 km annoncés. Cleanrider juge l'autonomie réelle inférieure à la promesse."
+  },
+  {
+   "q": "Quelle différence entre la Xiaomi Scooter 5 et la 5 Pro ?",
+   "a": "La Scooter 5 n'a qu'une suspension avant. La 5 Pro est suspendue à l'avant et à l'arrière et a un moteur plus puissant. Les pneus 60/70-6.5 sont les mêmes."
+  }
+ ],
+ "sources": [
+  {
+   "label": "Cleanrider — test Xiaomi Electric Scooter 5",
+   "url": "https://www.cleanrider.com/essais/trottinette-electrique/test-xiaomi-electric-scooter-5/"
+  },
+  {
+   "label": "Cleanrider — Xiaomi Electric Scooter 5",
+   "url": "https://www.cleanrider.com/catalogue/trottinette-electrique/xiaomi/xiaomi-electric-scooter-5/"
+  },
+  {
+   "label": "L'Éclaireur Fnac — test Labo Xiaomi Electric Scooter 5",
+   "url": "https://leclaireur.fnac.com/test/595412-test-labo-de-la-xiaomi-electric-scooter-5-toujours-un-excellent-choix/"
+  },
+  {
+   "label": "Frandroid — Xiaomi Electric Scooter 5",
+   "url": "https://www.frandroid.com/produits/trottinette-electrique/xiaomi/2521841-xiaomi-electric-scooter-5"
+  },
+  {
+   "label": "Darty — Xiaomi Electric Scooter 5",
+   "url": "https://www.darty.com/nav/achat/sports_loisirs/glisse_urbaine/trottinette_electrique/xiaomi_miscoot5n.html"
+  },
+  {
+   "label": "Darty — présentation des Xiaomi Electric Scooter 5, 5 Pro et 5 Max",
+   "url": "https://www.darty.com/darty-et-vous/plein-air/en-route/presentation-des-trottinettes-electriques-xiaomi-electric-scooter-5-5-pro-et-5-max"
+  }
+ ],
+ "video": {
+  "id": "nRa6SFrvZrY",
+  "title": "TEST XIAOMI ELECTRIC SCOOTER 5 : mon verdict en avant-première",
+  "channel": "David Nogueira",
+  "uploadDate": "2025-03-02"
+ }
+}

@@ -1,0 +1,177 @@
+{
+ "displayName": "Xiaomi Mi Electric Scooter M365",
+ "metaTitle": "Xiaomi M365 : fiche technique, avis et pièces",
+ "metaDescription": "Xiaomi M365 (modèle d'origine) : 250 W, 36 V 7,8 Ah, pneus 8,5\" 8.5x2-6.1 à chambre à air, disque arrière 110 mm. Avis, entretien et pièces.",
+ "intro": [
+  "La Xiaomi Mi Electric Scooter M365 est le modèle d'origine de la gamme, testé en France dès septembre 2017 par 01net. Cette fiche parle de la M365 « tout court », pas de la M365 Pro ni de la 1S. C'est l'une de celles pour lesquelles on trouve le plus de pièces détachées.",
+  "Moteur avant de 250 W (500 W en pointe), batterie 36 V de 7,8 Ah pour 30 km annoncés, pneus gonflables de 8,5 pouces, frein électronique à l'avant et disque à l'arrière. Elle pèse 12,5 kg et n'a pas de suspension."
+ ],
+ "specs": [
+  [
+   "Moteur",
+   "250 W à l'avant (500 W en pointe)"
+  ],
+  [
+   "Vitesse",
+   "25 km/h"
+  ],
+  [
+   "Autonomie",
+   "30 km annoncés, environ 25 km mesurés en mode normal par 01net"
+  ],
+  [
+   "Batterie",
+   "36 V, 7,8 Ah (environ 280 Wh)"
+  ],
+  [
+   "Poids",
+   "12,5 kg"
+  ],
+  [
+   "Charge max",
+   "100 kg"
+  ],
+  [
+   "Roues",
+   "8,5 pouces, 8.5x2-6.1 à chambre à air"
+  ],
+  [
+   "Freins",
+   "Électronique avant + disque arrière Ø 110 mm"
+  ],
+  [
+   "Suspension",
+   "Aucune"
+  ],
+  [
+   "Temps de charge",
+   "environ 5 h"
+  ],
+  [
+   "Chargeur",
+   "36 V (42 V en sortie)"
+  ]
+ ],
+ "pros": [
+  "Vitesse mesurée conforme aux 25 km/h annoncés (01net).",
+  "Moteur réactif, autonomie jugée acceptable pour la ville (Clubic).",
+  "Le plus grand choix de pièces du marché : pneus, pneus pleins, chambres, plaquettes, disque, chargeur."
+ ],
+ "cons": [
+  "Pas de suspension : inconfort sur les pavés et les irrégularités (Clubic).",
+  "Crevaisons fréquentes avec les pneus gonflables d'origine (Clubic).",
+  "Câble du feu arrière exposé à l'eau et aux projections (Clubic).",
+  "Manque de puissance en côte (Frandroid)."
+ ],
+ "parts": [
+  {
+   "label": "Pneu",
+   "size": "8.5x2-6.1 (8,5 pouces)",
+   "count": 10,
+   "to": "/piece/pneu-tubeless-8-5x2-6-1-cityroad-yuanxing",
+   "cta": "Pneus 8,5 pouces"
+  },
+  {
+   "label": "Chambre à air",
+   "size": "8.5x2",
+   "count": 6,
+   "to": "/piece/chambre-a-air-85x2-dualtron-mini-valve-90x90",
+   "cta": "Chambres à air"
+  },
+  {
+   "label": "Pneu plein",
+   "size": "8.5x2-6.1",
+   "count": 6,
+   "to": "/piece/pneu-plein-85x2-xiaomi-m365",
+   "cta": "Pneus pleins"
+  },
+  {
+   "label": "Plaquettes",
+   "size": "étrier Xiaomi M365",
+   "count": 2,
+   "to": "/piece/plaquettes-de-frein-xiaomi-m365-pro-dualtron-forever",
+   "cta": "Plaquettes M365"
+  },
+  {
+   "label": "Disque de frein",
+   "size": "110 mm, 5 trous",
+   "count": 1,
+   "to": "/piece/disque-de-frein-110mm-xiaomi-m365",
+   "cta": "Disque 110 mm"
+  },
+  {
+   "label": "Chargeur",
+   "size": "36 V → 42 V, vérifie ta prise",
+   "count": 2,
+   "to": "/piece/pack-chargeur-36v-42v-2a-connecteur-rca",
+   "cta": "Chargeurs 36 V"
+  }
+ ],
+ "care": [
+  "La crevaison est la panne numéro un de la M365 : gonfle tes pneus chaque semaine. Si tu en as assez, passe aux pneus pleins 8.5x2-6.1.",
+  "Le disque arrière de 110 mm est le seul frein mécanique : change les plaquettes dès que le levier va jusqu'à la poignée, et règle l'étrier pour qu'il ne frotte pas.",
+  "Contrôle le jeu du mécanisme de pliage et le câble du feu arrière, exposé à l'eau : un câble abîmé finit en panne électrique."
+ ],
+ "price": {
+  "text": "Prix relevé en France : 400 € (mai 2019).",
+  "source": "Clubic"
+ },
+ "faq": [
+  {
+   "q": "Quelle taille de pneu pour la Xiaomi M365 ?",
+   "a": "Des pneus de 8,5 pouces en 8.5x2 (jante de 6,1 pouces), montés avec une chambre à air. C'est la même taille que sur la M365 Pro, la 1S et la Mi Pro 2."
+  },
+  {
+   "q": "Quelle chambre à air pour la Xiaomi M365 ?",
+   "a": "Une chambre à air 8.5x2. Les versions renforcées résistent mieux aux pincements si tu roules souvent sur des trottoirs."
+  },
+  {
+   "q": "Quelles plaquettes de frein pour la Xiaomi M365 ?",
+   "a": "Des plaquettes pour l'étrier Xiaomi M365, qui serre un disque arrière de 110 mm à 5 trous."
+  },
+  {
+   "q": "Quel chargeur pour la Xiaomi M365 ?",
+   "a": "Un chargeur 36 V (42 V en sortie). Compare la prise de ta trottinette avec celle du chargeur avant de commander."
+  },
+  {
+   "q": "Peut-on mettre des pneus pleins sur une Xiaomi M365 ?",
+   "a": "Oui, des pneus pleins 8.5x2-6.1 se montent : fini les crevaisons, au prix d'un peu de confort sur une trottinette déjà sans suspension."
+  },
+  {
+   "q": "Quelle est l'autonomie réelle de la Xiaomi M365 ?",
+   "a": "01net a relevé environ 25 km en mode normal et un peu plus de 30 km en mode Eco limité à 18 km/h. Clubic a fait environ 20 km. Xiaomi annonce 30 km."
+  }
+ ],
+ "sources": [
+  {
+   "label": "Xiaomi France — Mi Electric Scooter, caractéristiques",
+   "url": "https://www.mi.com/fr/mi-electric-scooter/specs/"
+  },
+  {
+   "label": "01net — fiche technique Xiaomi M365",
+   "url": "https://www.01net.com/tests/xiaomi-mi-electric-scooter-m365-fiche-technique-45087.html"
+  },
+  {
+   "label": "01net — test de la trottinette Xiaomi M365",
+   "url": "https://www.01net.com/tests/on-a-teste-la-trottinette-xiaomi-m365-le-modele-electrique-ultime-a-prix-minime-5801.html"
+  },
+  {
+   "label": "Clubic — test Xiaomi M365",
+   "url": "https://www.clubic.com/mobilie-urbaine-electrique/article-858134-1-test-xiaomi-m365-mi-electric-scooter-craquer-trottinettes.html"
+  },
+  {
+   "label": "Frandroid — Xiaomi Mi Scooter M365",
+   "url": "https://www.frandroid.com/produits/trottinette-electrique/xiaomi/649288-xiaomi-mi-scooter-m365"
+  },
+  {
+   "label": "Darty — Xiaomi M365",
+   "url": "https://www.darty.com/nav/achat/sports_loisirs/glisse_urbaine/trottinette_electrique/xiaomi_fbc4004gl.html"
+  }
+ ],
+ "video": {
+  "id": "KRktipx8uTY",
+  "title": "Xiaomi M365, vous saurez tout grâce à mon test",
+  "channel": "Avis Express - Testeur High-Tech",
+  "uploadDate": "2017-09-04"
+ }
+}

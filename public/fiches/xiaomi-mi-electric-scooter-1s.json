@@ -1,0 +1,156 @@
+{
+ "displayName": "Xiaomi Mi Electric Scooter 1S",
+ "metaTitle": "Xiaomi Mi 1S : fiche technique, avis et pièces",
+ "metaDescription": "Xiaomi Mi Electric Scooter 1S : 250 W, 36 V 7,65 Ah, pneus 8,5\" 8.5x2-6.1, frein à disque arrière, 12,5 kg. Avis, entretien et pièces compatibles.",
+ "intro": [
+  "La Xiaomi Mi Electric Scooter 1S arrive en France en août 2020, en même temps que la Mi Pro 2 et l'Essential. Elle reprend le format de la M365 d'origine : 12,5 kg, pneus de 8,5 pouces et 25 km/h. Cette fiche ne parle que de la 1S.",
+  "Moteur de 250 W (500 W en pointe selon Xiaomi), batterie 36 V de 7,65 Ah pour 30 km annoncés, frein électronique à l'avant et disque à l'arrière. Les Numériques souligne son afficheur LED, son régulateur de vitesse et son large plateau."
+ ],
+ "specs": [
+  [
+   "Moteur",
+   "250 W (500 W en pointe), selon Xiaomi"
+  ],
+  [
+   "Vitesse",
+   "25 km/h"
+  ],
+  [
+   "Autonomie",
+   "30 km annoncés, 20 km au plus en mode Sport selon Les Numériques"
+  ],
+  [
+   "Batterie",
+   "36 V, 7,65 Ah, 275 Wh (selon Xiaomi)"
+  ],
+  [
+   "Poids",
+   "12,5 kg (selon Xiaomi)"
+  ],
+  [
+   "Charge max",
+   "100 kg (selon Xiaomi)"
+  ],
+  [
+   "Roues",
+   "8,5 pouces, 8.5x2-6.1 à chambre à air"
+  ],
+  [
+   "Freins",
+   "Électronique avant (E-ABS) + disque arrière Ø 110 mm"
+  ],
+  [
+   "Étanchéité",
+   "IP54"
+  ],
+  [
+   "Temps de charge",
+   "5 h 30 selon Xiaomi, un peu plus de 5 h selon Les Numériques"
+  ],
+  [
+   "Chargeur",
+   "36 V (42 V en sortie)"
+  ],
+  [
+   "Prix de lancement",
+   "449 € (août 2020, selon Les Numériques)"
+  ]
+ ],
+ "pros": [
+  "Confort et large plateau (Les Numériques).",
+  "Régulateur de vitesse et afficheur LED sur le guidon (Les Numériques).",
+  "Bonnes finitions (Les Numériques).",
+  "Mêmes tailles de pneus, chambres et plaquettes que la M365 : les pièces se trouvent partout."
+ ],
+ "cons": [
+  "Autonomie réelle limitée : pas plus de 20 km en mode Sport (Les Numériques).",
+  "Manque de couple et maniabilité perfectible (Les Numériques).",
+  "Pneus gonflables sensibles aux crevaisons (Les Numériques)."
+ ],
+ "parts": [
+  {
+   "label": "Pneu",
+   "size": "8.5x2-6.1 (8,5 pouces)",
+   "count": 10,
+   "to": "/piece/pneu-tubeless-8-5x2-6-1-offroad-ewheel",
+   "cta": "Pneus 8,5 pouces"
+  },
+  {
+   "label": "Chambre à air",
+   "size": "8.5x2",
+   "count": 6,
+   "to": "/piece/chambre-a-air-8-5x2-valve-coudee-135x45-ewheel",
+   "cta": "Chambres à air"
+  },
+  {
+   "label": "Pneu plein",
+   "size": "8.5x2-6.1",
+   "count": 6,
+   "to": "/piece/pneu-plein-85x2-xiaomi-m365",
+   "cta": "Pneus pleins"
+  },
+  {
+   "label": "Plaquettes",
+   "size": "étrier Xiaomi M365",
+   "count": 2,
+   "to": "/piece/plaquettes-de-frein-xiaomi-m365-pro-dualtron-forever",
+   "cta": "Plaquettes M365"
+  },
+  {
+   "label": "Chargeur",
+   "size": "36 V → 42 V, vérifie ta prise",
+   "count": 2,
+   "to": "/piece/pack-chargeur-36v-42v-2a-connecteur-rca",
+   "cta": "Chargeurs 36 V"
+  }
+ ],
+ "care": [
+  "Pneus à chambre à air de 8,5 pouces : vérifie la pression chaque semaine, c'est le premier remède contre les crevaisons. Des pneus pleins se montent si tu veux en finir.",
+  "Le disque arrière est le seul frein mécanique : surveille l'épaisseur des plaquettes et règle l'étrier dès qu'il frotte.",
+  "Contrôle le serrage du mécanisme de pliage : un jeu dans la potence s'aggrave vite avec les kilomètres."
+ ],
+ "price": {
+  "text": "Prix de lancement en France : 449 € (août 2020).",
+  "source": "Les Numériques"
+ },
+ "faq": [
+  {
+   "q": "Quelle taille de pneu pour la Xiaomi Mi 1S ?",
+   "a": "Des pneus de 8,5 pouces en 8.5x2, sur une jante de 6,1 pouces, avec chambre à air. La taille est la même que sur la M365."
+  },
+  {
+   "q": "Quelles plaquettes pour la Xiaomi Mi 1S ?",
+   "a": "Des plaquettes pour l'étrier Xiaomi M365, qui freine un disque arrière de 110 mm."
+  },
+  {
+   "q": "Quel chargeur pour la Xiaomi Mi 1S ?",
+   "a": "Un chargeur 36 V (42 V en sortie). Compare la prise de ta trottinette avec celle du chargeur avant de commander."
+  },
+  {
+   "q": "Quelle est l'autonomie réelle de la Xiaomi Mi 1S ?",
+   "a": "Les Numériques n'a pas dépassé 20 km en mode Sport. Xiaomi annonce 30 km dans des conditions favorables."
+  },
+  {
+   "q": "Quelle différence entre la Xiaomi 1S et la M365 ?",
+   "a": "Même format (12,5 kg, pneus 8,5 pouces, disque arrière) et mêmes pièces d'usure. La batterie change à peine : 7,65 Ah sur la 1S contre 7,8 Ah sur la M365."
+  }
+ ],
+ "sources": [
+  {
+   "label": "Xiaomi France — Mi Electric Scooter 1S, caractéristiques",
+   "url": "https://www.mi.com/fr/mi-electric-scooter-1S/specs/"
+  },
+  {
+   "label": "Les Numériques — test Xiaomi Mi Electric Scooter 1S",
+   "url": "https://www.lesnumeriques.com/trottinette-electrique/xiaomi-mi-electric-scooter-1s-p57657/test.html"
+  },
+  {
+   "label": "Frandroid — test Xiaomi Mi Electric Scooter 1S",
+   "url": "https://www.frandroid.com/marques/xiaomi/747642_test-xiaomi-mi-electric-scooter-1s-avis-trottinette-electrique"
+  },
+  {
+   "label": "Darty — Xiaomi Mi Scooter 1S",
+   "url": "https://www.darty.com/nav/achat/sports_loisirs/glisse_urbaine/trottinette_electrique/xiaomi_27269_mi_scooter_1s.html"
+  }
+ ]
+}

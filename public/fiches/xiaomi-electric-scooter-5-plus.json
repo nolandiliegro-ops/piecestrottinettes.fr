@@ -1,0 +1,132 @@
+{
+ "displayName": "Xiaomi Electric Scooter 5 Plus",
+ "metaTitle": "Xiaomi 5 Plus : fiche technique, avis et pièces",
+ "metaDescription": "Xiaomi Electric Scooter 5 Plus : 48 V 477 Wh, pneus tubeless 12\" 60/90-8, suspension avant, tambour avant, IPX5, 26,6 kg. Avis, entretien et pièces.",
+ "intro": [
+  "La Xiaomi Electric Scooter 5 Plus sort en France le 16 septembre 2025 selon Frandroid, à 549,99 €. C'est une Scooter 5 sur roues de 12 pouces : cette fiche ne parle que de la 5 Plus, pas de la 5, de la 5 Pro ni de la 5 Max.",
+  "Batterie 48 V de 477 Wh pour 60 km annoncés, pneus tubeless de 12 pouces en 60/90-8, double ressort à l'avant, tambour à l'avant et frein électronique à l'arrière. À 26,6 kg selon Xiaomi, c'est la plus lourde de la gamme 5."
+ ],
+ "specs": [
+  [
+   "Moteur",
+   "400 W (900 W en pointe), selon Xiaomi"
+  ],
+  [
+   "Vitesse",
+   "25 km/h"
+  ],
+  [
+   "Autonomie annoncée",
+   "60 km (selon Xiaomi)"
+  ],
+  [
+   "Batterie",
+   "48 V, 10,2 Ah (477 Wh)"
+  ],
+  [
+   "Poids",
+   "26,6 kg selon Xiaomi, 26,7 kg selon Cleanrider"
+  ],
+  [
+   "Charge max",
+   "120 kg (selon Xiaomi)"
+  ],
+  [
+   "Roues",
+   "12 pouces, tubeless 60/90-8"
+  ],
+  [
+   "Freins",
+   "Tambour avant + électronique arrière (E-ABS)"
+  ],
+  [
+   "Suspension",
+   "Double ressort à l'avant"
+  ],
+  [
+   "Étanchéité",
+   "IPX5"
+  ],
+  [
+   "Temps de charge",
+   "environ 9 h"
+  ],
+  [
+   "Prix de lancement",
+   "549,99 € selon Cleanrider, 549,90 € selon Frandroid (2025)"
+  ]
+ ],
+ "pros": [
+  "Roues de 12 pouces : comportement plus stable et serein (Frandroid).",
+  "Contrôle de traction et 900 W en pointe pour la motricité, y compris sur sol glissant (Cleanrider).",
+  "Freinage tambour + électronique simple et éprouvé (Cleanrider)."
+ ],
+ "cons": [
+  "26,7 kg : difficile à porter ou à déplacer (Cleanrider).",
+  "Direction moins vive que celle de la Scooter 5 (Cleanrider).",
+  "Gain de confort encore limité face à la concurrence (Frandroid).",
+  "Pas de suspension arrière."
+ ],
+ "parts": [
+  {
+   "label": "Pneu",
+   "size": "60/90-8 tubeless (12 pouces)",
+   "count": 2,
+   "to": "/piece/pneu-tubeless-60-90-8-yuanxing",
+   "cta": "Pneus 12 pouces"
+  }
+ ],
+ "care": [
+  "Le tambour avant est le seul frein mécanique : fais-le régler dès que la course du levier s'allonge.",
+  "Pneus tubeless 60/90-8 : vérifie la pression chaque mois, un grand pneu sous-gonflé use vite sa bande de roulement.",
+  "Nettoie les axes de la fourche à double ressort après la pluie et contrôle qu'elle ne prend pas de jeu."
+ ],
+ "price": {
+  "text": "Prix de lancement en France : 549,99 € (septembre 2025).",
+  "source": "Cleanrider"
+ },
+ "faq": [
+  {
+   "q": "Quelle taille de pneu pour la Xiaomi 5 Plus ?",
+   "a": "Des pneus tubeless de 12 pouces en 60/90-8, sur une jante de 8 pouces. Ils ne se montent pas sur la Scooter 5 en 10 pouces."
+  },
+  {
+   "q": "La Xiaomi 5 Plus a-t-elle des plaquettes de frein ?",
+   "a": "Non. Elle freine avec un tambour à l'avant et un frein électronique à l'arrière."
+  },
+  {
+   "q": "Quelle différence entre la Xiaomi 5 Plus et la Scooter 5 ?",
+   "a": "La 5 Plus passe aux roues de 12 pouces (60/90-8) et à une fourche à double ressort, pour 26,6 kg contre 20,1 kg. Les deux ont une batterie de 477 Wh."
+  },
+  {
+   "q": "La Xiaomi 5 Plus est-elle suspendue ?",
+   "a": "À l'avant seulement, avec un double ressort. L'arrière n'a pas de suspension."
+  }
+ ],
+ "sources": [
+  {
+   "label": "Xiaomi — Electric Scooter 5 Plus",
+   "url": "https://www.mi.com/global/product/xiaomi-electric-scooter-5-plus/"
+  },
+  {
+   "label": "Xiaomi — Electric Scooter 5 Plus, caractéristiques",
+   "url": "https://www.mi.com/global/product/xiaomi-electric-scooter-5-plus/specs/"
+  },
+  {
+   "label": "Frandroid — on a testé la Xiaomi Electric Scooter 5 Plus",
+   "url": "https://www.frandroid.com/marques/xiaomi/2920357_on-a-teste-la-xiaomi-electric-scooter-5-plus-une-trottinette-electrique-avec-des-roues-de-12-pouces-qui-offre-une-belle-serenite"
+  },
+  {
+   "label": "Frandroid — Xiaomi Electric Scooter 5 Plus",
+   "url": "https://www.frandroid.com/produits/trottinette-electrique/xiaomi/2918291-xiaomi-electric-scooter-5-plus"
+  },
+  {
+   "label": "Cleanrider — Xiaomi Electric Scooter 5 Plus",
+   "url": "https://www.cleanrider.com/actus/xiaomi-electric-scooter-5-plus/"
+  },
+  {
+   "label": "Digitec — Xiaomi 5 Plus",
+   "url": "https://www.digitec.ch/en/s1/product/xiaomi-5-plus-de-tp-20-kmh-60-km-400-w-e-scooters-standing-60959699"
+  }
+ ]
+}

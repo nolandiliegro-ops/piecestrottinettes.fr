@@ -1,0 +1,151 @@
+{
+ "displayName": "Xiaomi Electric Scooter 3 Lite",
+ "metaTitle": "Xiaomi 3 Lite : fiche technique, avis et pièces",
+ "metaDescription": "Xiaomi Electric Scooter 3 Lite : 300 W, 36 V 5,2 Ah, 13 kg, pneus 8,5\" 8.5x2-6.1, frein à tambour arrière sans plaquettes. Avis, entretien et pièces.",
+ "intro": [
+  "La Xiaomi Electric Scooter 3 Lite est commercialisée en France le 8 septembre 2022, au prix de 449 €. C'est la version allégée de la Mi 3 : même gabarit de 13 kg et pneus de 8,5 pouces, mais une batterie plus petite et un tambour à la place du disque arrière.",
+  "Moteur de 300 W, batterie 36 V de 5,2 Ah pour 20 km annoncés, frein électronique à l'avant et tambour à l'arrière, pas de suspension. Ses pneus et chambres à air de 8,5 pouces sont les mêmes que ceux de la M365."
+ ],
+ "specs": [
+  [
+   "Moteur",
+   "300 W"
+  ],
+  [
+   "Vitesse",
+   "25 km/h"
+  ],
+  [
+   "Autonomie",
+   "20 km annoncés, 18,3 km mesurés selon L'Éclaireur Fnac"
+  ],
+  [
+   "Batterie",
+   "36 V, 5,2 Ah, 187 Wh (selon Xiaomi)"
+  ],
+  [
+   "Poids",
+   "13 kg"
+  ],
+  [
+   "Charge max",
+   "100 kg"
+  ],
+  [
+   "Roues",
+   "8,5 pouces, 8.5x2-6.1 à chambre à air"
+  ],
+  [
+   "Freins",
+   "Électronique avant (E-ABS) + tambour arrière"
+  ],
+  [
+   "Suspension",
+   "Aucune"
+  ],
+  [
+   "Temps de charge",
+   "environ 4 h 30 selon Cleanrider, 4 h 40 mesurées selon L'Éclaireur Fnac"
+  ],
+  [
+   "Chargeur",
+   "36 V (42 V en sortie)"
+  ],
+  [
+   "Prix de lancement",
+   "449 € (septembre 2022, selon Frandroid)"
+  ]
+ ],
+ "pros": [
+  "13 kg : facile à porter (L'Éclaireur Fnac).",
+  "Vitesse mesurée à 23,8 km/h, proche de la limite (L'Éclaireur Fnac).",
+  "Tambour arrière : pas de plaquettes ni de disque à changer.",
+  "Pneus et chambres à air au format M365, faciles à trouver."
+ ],
+ "cons": [
+  "Autonomie courte : 18,3 km mesurés (L'Éclaireur Fnac), plutôt 15 km selon Frandroid.",
+  "Pas de suspension : le confort dépend de l'état du revêtement (Technplay).",
+  "Pente mesurée à 11 % pour 14 % annoncés (L'Éclaireur Fnac).",
+  "Tambour arrière moins performant sur le papier que le disque de la Mi 3 (Frandroid)."
+ ],
+ "parts": [
+  {
+   "label": "Pneu",
+   "size": "8.5x2-6.1 (8,5 pouces)",
+   "count": 8,
+   "to": "/piece/pneu-tubeless-8-5x2-6-1-cityroad-yuanxing",
+   "cta": "Pneus 8,5 pouces"
+  },
+  {
+   "label": "Chambre à air",
+   "size": "8.5x2",
+   "count": 6,
+   "to": "/piece/chambre-a-air-85x2-xiaomi-m365",
+   "cta": "Chambres à air"
+  },
+  {
+   "label": "Chargeur",
+   "size": "36 V → 42 V, vérifie ta prise",
+   "count": 1,
+   "to": "/piece/chargeur-36v-42v-2a-xiaomi-connecteur-rca",
+   "cta": "Chargeurs 36 V"
+  }
+ ],
+ "care": [
+  "Sans suspension, ce sont les pneus qui amortissent : garde une bonne pression pour le confort et pour éviter de pincer la chambre à air.",
+  "Le tambour arrière se règle par son câble : reprends la tension dès que la course du levier s'allonge.",
+  "Petite batterie de 187 Wh : ne la stocke pas vide, recharge-la avant de la ranger plusieurs semaines."
+ ],
+ "price": {
+  "text": "Prix de lancement en France : 449 € (septembre 2022).",
+  "source": "Frandroid"
+ },
+ "faq": [
+  {
+   "q": "Quelle taille de pneu pour la Xiaomi 3 Lite ?",
+   "a": "Des pneus de 8,5 pouces en 8.5x2, sur une jante de 6,1 pouces, avec chambre à air."
+  },
+  {
+   "q": "La Xiaomi 3 Lite a-t-elle des plaquettes de frein ?",
+   "a": "Non. Elle freine avec un frein électronique à l'avant et un tambour à l'arrière : rien à changer côté plaquettes, le tambour se règle par son câble."
+  },
+  {
+   "q": "Quel chargeur pour la Xiaomi 3 Lite ?",
+   "a": "Un chargeur 36 V (42 V en sortie). Compare la prise de ta trottinette avec celle du chargeur avant de commander."
+  },
+  {
+   "q": "Quelle est l'autonomie réelle de la Xiaomi 3 Lite ?",
+   "a": "L'Éclaireur Fnac a mesuré 18,3 km pour 20 km annoncés. Frandroid estime l'usage réel autour de 15 km."
+  },
+  {
+   "q": "Quelle différence entre la Xiaomi 3 Lite et la Mi 3 ?",
+   "a": "La 3 Lite a une batterie plus petite (187 Wh) et un tambour à l'arrière à la place du disque de la Mi 3. Les pneus de 8,5 pouces sont les mêmes."
+  }
+ ],
+ "sources": [
+  {
+   "label": "Xiaomi France — Electric Scooter 3 Lite, caractéristiques",
+   "url": "https://www.mi.com/fr/product/xiaomi-electric-scooter-3-lite/specs/"
+  },
+  {
+   "label": "Frandroid — Xiaomi Electric Scooter 3 Lite",
+   "url": "https://www.frandroid.com/produits/trottinette-electrique/xiaomi/1712147-xiaomi-electric-scooter-3-lite"
+  },
+  {
+   "label": "L'Éclaireur Fnac — test Labo Xiaomi Mi Scooter 3 Lite",
+   "url": "https://leclaireur.fnac.com/test/282490-test-labo-de-la-xiaomi-mi-scooter-3-lite-n/"
+  },
+  {
+   "label": "Cleanrider — Xiaomi Electric Scooter 3 Lite",
+   "url": "https://www.cleanrider.com/catalogue/trottinette-electrique/xiaomi/xiaomi-electric-scooter-3-lite/feed/"
+  },
+  {
+   "label": "Technplay — Xiaomi Mi Electric Scooter 3 Lite",
+   "url": "https://technplay.com/xiaomi-mi-electric-scooter-3-lite/"
+  },
+  {
+   "label": "Xiaomi France — FAQ freinage",
+   "url": "https://www.mi.com/fr/support/faq/details/KA-991869/"
+  }
+ ]
+}
