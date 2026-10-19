@@ -52,7 +52,7 @@ export function lireValve(name: string): string {
 function lireValveSure(name: string): string {
   // les angles de valve s'écrivent 90x90, 0x90, 45x45, 135x45, 65x65 : jamais une taille de pneu
   const n = norm(name);
-  const m = n.match(/\b(0|30|45|65|90|135)\s?x\s?(45|65|90)\s?°?/);
+  const m = n.match(/\b(0|30|45|65|70|90|135)\s?x\s?(45|65|90)\s?°?/);
   if (m) return `Coudée ${m[1]}x${m[2]}°`;
   if (/presta/.test(n)) return "Presta";
   const deg = n.match(/coud[ée]+e?\s?(\d{2,3})\s?°/);
@@ -81,7 +81,9 @@ function lireTaille(r: Row): string {
   return m ? m[1].replace(/\s/g, "") : "Taille non lue";
 }
 
-export function construireGroupes(rows: Row[]): Groupe[] {
+// 19/10 : pour les chambres, une fiche sans valve écrite n'est jamais comptée en doublon
+// (CA-06 coudée 90x90 et CA-25 droite étaient regroupées à tort faute de valve dans le nom).
+export function construireGroupes(rows: Row[], valveObligatoire = false): Groupe[] {
   const fiches: Fiche[] = rows.map((r) => {
     const sups = r.part_suppliers ?? [];
     const best = [...sups].sort((a, b) => (a.buy_price_ht ?? 1e9) - (b.buy_price_ht ?? 1e9))[0];
@@ -107,7 +109,8 @@ export function construireGroupes(rows: Row[]): Groupe[] {
     // doublon = même taille + même valve + même gamme, plusieurs fiches en ligne (fournisseurs différents)
     const parGamme = new Map<string, number>();
     for (const f of enLigne) parGamme.set(f.gamme, (parGamme.get(f.gamme) ?? 0) + 1);
-    const doublons = [...parGamme.values()].reduce((n, c) => n + Math.max(0, c - 1), 0);
+    const valveInconnue = valveObligatoire && l[0].valve === "non écrite";
+    const doublons = valveInconnue ? 0 : [...parGamme.values()].reduce((n, c) => n + Math.max(0, c - 1), 0);
     return {
       key, taille: l[0].taille, valve: l[0].valve, doublons,
       fiches: l.sort((a, b) => Number(!!b.published) - Number(!!a.published) || (a.price ?? 0) - (b.price ?? 0)),
@@ -254,9 +257,25 @@ const V2File = ({ groupes }: { groupes: Groupe[] }) => {
   const g = file[Math.min(i, file.length - 1)];
   if (!g) return <p className="text-base text-emerald-300 p-4">Plus aucun doublon en ligne dans cette catégorie.</p>;
   // on ne masque que les fiches de la MÊME gamme : une Black Cat lot de 5 n'est pas le doublon d'une chambre à l'unité
-  const garder = (keep: Fiche) => g.fiches.filter((f) => f.published && f.id !== keep.id && f.gamme === keep.gamme).forEach((f) => publish.mutate({ id: f.id, published: false }));
+  const [dernier, setDernier] = useState<{ nom: string; ids: string[] } | null>(null);
+  const garder = (keep: Fiche) => {
+    const ids = g.fiches.filter((f) => f.published && f.id !== keep.id && f.gamme === keep.gamme).map((f) => f.id);
+    ids.forEach((id) => publish.mutate({ id, published: false }));
+    setDernier({ nom: keep.name, ids });
+  };
+  const annuler = () => {
+    if (!dernier) return;
+    dernier.ids.forEach((id) => publish.mutate({ id, published: true }));
+    setDernier(null);
+  };
   return (
     <div className="space-y-3">
+      {dernier && (
+        <div className="rounded-xl border border-emerald-400/30 bg-emerald-400/10 p-3 flex items-center gap-3 text-sm">
+          <span className="flex-1">Gardée : {dernier.nom} — {dernier.ids.length} masquée{dernier.ids.length > 1 ? "s" : ""}.</span>
+          <button onClick={annuler} className="min-h-[44px] px-4 rounded-lg border border-[hsl(0_0%_30%)] font-bold shrink-0">Annuler</button>
+        </div>
+      )}
       <div className="flex items-center justify-between text-sm text-[hsl(0_0%_60%)]">
         <span>Doublon {Math.min(i, file.length - 1) + 1} sur {file.length}</span>
         <div className="flex gap-2">
@@ -266,18 +285,22 @@ const V2File = ({ groupes }: { groupes: Groupe[] }) => {
       </div>
       <div className="rounded-2xl border border-amber-400/30 bg-[hsl(0_0%_12%)] p-4">
         <Entete g={g} />
-        <p className="text-sm text-[hsl(0_0%_60%)] mt-1">Touche la fiche à garder : les autres de la même gamme passent en « masquée ».</p>
+        <p className="text-sm text-[hsl(0_0%_60%)] mt-1">Appuie sur « Garder celle-ci » sous la fiche à conserver : les autres de la même gamme sont masquées (bouton « Annuler » juste après).</p>
       </div>
       {g.fiches.filter((f) => f.published && g.fiches.filter((x) => x.published && x.gamme === f.gamme).length > 1).map((f) => (
-        <button key={f.id} onClick={() => garder(f)} className="w-full text-left rounded-2xl border border-[hsl(0_0%_20%)] bg-[hsl(0_0%_12%)] p-3 flex gap-3 active:scale-[0.99] hover:border-primary">
-          <Thumb f={f} size={72} />
-          <div className="min-w-0 flex-1">
-            <div className="text-sm font-semibold leading-snug">{f.name}</div>
-            <div className="text-xl font-black tabular-nums mt-1">{eur(f.price)}</div>
-            <Chiffres f={f} />
+        <div key={f.id} className="rounded-2xl border border-[hsl(0_0%_20%)] bg-[hsl(0_0%_12%)] p-3">
+          <div className="flex gap-3">
+            <Thumb f={f} size={72} />
+            <div className="min-w-0 flex-1">
+              <div className="text-sm font-semibold leading-snug">{f.name}</div>
+              <div className="text-xl font-black tabular-nums mt-1">{eur(f.price)}</div>
+              <Chiffres f={f} />
+            </div>
           </div>
-          <Check className="w-6 h-6 text-primary self-center shrink-0" />
-        </button>
+          <button onClick={() => garder(f)} className="mt-3 w-full min-h-[48px] rounded-lg bg-primary text-primary-foreground text-base font-extrabold flex items-center justify-center gap-2 active:scale-[0.99]">
+            <Check className="w-5 h-5" /> Garder celle-ci
+          </button>
+        </div>
       ))}
     </div>
   );
@@ -290,7 +313,7 @@ const CatalogueTriage = () => {
   const [cat, setCat] = useState(CATS[0].slug);
   const [mode, setMode] = useState<"liste" | "file">("liste");
   const { data = [], isLoading, error } = useCatalogue(cat);
-  const groupes = useMemo(() => construireGroupes(data), [data]);
+  const groupes = useMemo(() => construireGroupes(data, cat === "chambres-a-air"), [data, cat]);
   const enLigne = data.filter((r) => r.published).length;
   const enTrop = groupes.reduce((n, g) => n + g.doublons, 0);
 
