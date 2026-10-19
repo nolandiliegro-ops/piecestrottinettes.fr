@@ -1,0 +1,9 @@
+g30-max #0 PASS ok
+g30-max #1 FAIL détourage sale / résidu de décor · basse définition
+g30-max #2 FAIL détourage sale / résidu de décor · basse définition · élément en plus (logo, badge, téléphone, 2e trottinette) : 4 morceaux
+g30-max #3 FAIL détourage sale / résidu de décor · basse définition · cadrage serré · élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux
+g30-max #4 FAIL détourage sale / résidu de décor · basse définition · cadrage serré
+g30-max #5 PASS ok
+g30-max #6 PASS ok
+g30-max #7 PASS ok
+::notice title=photos g30fix (dry)::8 candidates · PASS 4 · WARN 0 · FAIL 4 · ERREUR 0

@@ -1,0 +1,182 @@
+[
+ {
+  "slug": "g30-max",
+  "i": 0,
+  "url": "https://m.media-amazon.com/images/I/71MwBeFui9L._AC_SL1500_.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.017,
+   "fill": 0.322
+  },
+  "size": [
+   1620,
+   964
+  ],
+  "error": null
+ },
+ {
+  "slug": "g30-max",
+  "i": 1,
+  "url": "https://m.media-amazon.com/images/I/51deLeCJMBL._AC_SL1500_.jpg",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "basse définition"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.053,
+   "fill": 0.415
+  },
+  "size": [
+   497,
+   392
+  ],
+  "error": null
+ },
+ {
+  "slug": "g30-max",
+  "i": 2,
+  "url": "https://m.media-amazon.com/images/I/31RY-coIopL._AC_SL1500_.jpg",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "basse définition",
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 4 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 4 morceaux"
+   ],
+   "parts": 4,
+   "second": 0.052,
+   "vivid": 0.01,
+   "fill": 0.845
+  },
+  "size": [
+   517,
+   529
+  ],
+  "error": null
+ },
+ {
+  "slug": "g30-max",
+  "i": 3,
+  "url": "https://m.media-amazon.com/images/I/510XqUOF1NL._AC_SL1500_.jpg",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "basse définition",
+   "cadrage serré",
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+   ],
+   "parts": 2,
+   "second": 0.476,
+   "vivid": 0.004,
+   "fill": 0.782
+  },
+  "size": [
+   229,
+   291
+  ],
+  "error": null
+ },
+ {
+  "slug": "g30-max",
+  "i": 4,
+  "url": "https://m.media-amazon.com/images/I/51LKWsCEPKL._AC_SL1500_.jpg",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "basse définition",
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.008,
+   "fill": 0.739
+  },
+  "size": [
+   179,
+   354
+  ],
+  "error": null
+ },
+ {
+  "slug": "g30-max",
+  "i": 5,
+  "url": "https://m.media-amazon.com/images/I/51NJYyz4XoL._AC_SL1500_.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.039,
+   "fill": 0.815
+  },
+  "size": [
+   698,
+   955
+  ],
+  "error": null
+ },
+ {
+  "slug": "g30-max",
+  "i": 6,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/76a7291f-df89-4621-aab0-f201450cff92/1792181998242_0.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.039,
+   "fill": 0.815
+  },
+  "size": [
+   698,
+   955
+  ],
+  "error": null
+ },
+ {
+  "slug": "g30-max",
+  "i": 7,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/76a7291f-df89-4621-aab0-f201450cff92/1792181996438_0.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.016,
+   "fill": 0.411
+  },
+  "size": [
+   1432,
+   847
+  ],
+  "error": null
+ }
+]
