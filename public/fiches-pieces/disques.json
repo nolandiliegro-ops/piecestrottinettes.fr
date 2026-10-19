@@ -1,0 +1,68 @@
+{
+  "family": "disques",
+  "label": "disque de frein",
+  "choose": {
+    "intro": "Un disque de frein se choisit sur trois mesures : son diamètre, l'entraxe de fixation et le nombre de vis. Les trois doivent correspondre à ton disque d'origine.",
+    "steps": [
+      "Mesure le diamètre extérieur du disque (120, 140, 160, 180 mm…) : il doit correspondre à la position de ton étrier.",
+      "Compte les vis de fixation (souvent 6) et mesure l'entraxe de centre à centre entre deux trous opposés : 44 ou 48 mm selon le standard. Ne le confonds pas avec le diamètre du disque.",
+      "Fixe ou flottant : le flottant tolère mieux la dilatation à la chaleur, il est plus cher. Vérifie sa compatibilité avec ton étrier.",
+      "Change le disque à l'épaisseur minimale gravée dessus ou donnée par le fabricant, ou s'il est voilé, profondément rainuré ou fortement décoloré."
+    ],
+    "pitfalls": [
+      "Confondre entraxe et diamètre.",
+      "Serrer les vis d'un seul côté au lieu d'en étoile.",
+      "Garder les vieilles plaquettes sur un disque neuf."
+    ]
+  },
+  "install": {
+    "level": "Moyen",
+    "time": "20 à 40 min",
+    "tools": [
+      "Clé Torx (souvent T25)",
+      "Frein-filet moyen",
+      "Clé dynamométrique",
+      "Alcool isopropylique"
+    ],
+    "steps": [
+      "Démonte la roue et dévisse l'ancien disque.",
+      "Nettoie et dégraisse les surfaces de contact et le disque neuf à l'alcool isopropylique.",
+      "Mets du frein-filet moyen si les vis n'en ont pas déjà, puis serre progressivement en étoile au couple du fabricant (les valeurs varient de 2 à 8 Nm selon les disques : ne devine pas).",
+      "Remonte la roue, recentre l'étrier si le disque frotte.",
+      "Rode l'ensemble par une vingtaine de freinages progressifs avant de rouler vite."
+    ]
+  },
+  "pressure": "",
+  "faq": [
+    {
+      "q": "Quel disque pour {top1} ?",
+      "a": "Celui du même diamètre, du même entraxe et du même nombre de vis que l'origine. Ce {name} va sur {count} modèles vérifiés, dont {top3}."
+    },
+    {
+      "q": "Comment savoir si mon disque est voilé ?",
+      "a": "Il frotte périodiquement en faisant tourner la roue, ou le freinage pulse à chaque tour. Vérifie d'abord l'alignement de l'étrier et la propreté : les symptômes se ressemblent."
+    },
+    {
+      "q": "Disque flottant, utile ?",
+      "a": "Il encaisse mieux la chaleur des freinages répétés (descentes, conduite sportive). En ville, un disque fixe suffit."
+    },
+    {
+      "q": "Faut-il changer les plaquettes avec le disque ?",
+      "a": "C'est conseillé : des plaquettes usées ou vitrifiées gâchent un disque neuf et allongent le rodage."
+    }
+  ],
+  "sources": [
+    {
+      "label": "Shimano — instructions disques de frein (couple, T25)",
+      "url": "https://si.shimano.com/en/pdfs/si/8JW0A/SI-8JW0A-001-ENG.pdf"
+    },
+    {
+      "label": "Bike24 — changer un disque de frein",
+      "url": "https://www.bike24.com/advice/repair-maintenance/how-to-change-disc-brake-rotors"
+    },
+    {
+      "label": "Garageboy — disque flottant",
+      "url": "https://www.garageboy.com/what-is-a-floating-brake-rotor/"
+    }
+  ]
+}

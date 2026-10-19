@@ -22,6 +22,15 @@ export interface PartDetail {
   /** Specs electriques structurees (M-A7a). Le nominal batterie vit dans
    *  `voltages` — jamais la tension de sortie charge. */
   electrical_specs: { voltages?: number[]; connector?: string | null } | null;
+  /** Clés de montage (20/10, bloc « Tout savoir ») : cote, jante, étrier, disque. Lecture seule. */
+  fitment_specs: {
+    tire_family?: string;
+    tire_sections?: string[];
+    rim_diameters?: string[];
+    rim_widths?: string[];
+    brake_caliper?: string[];
+    brake_disc?: { diameters?: string[]; holes?: string[]; pcds?: string[] };
+  } | null;
   estimated_install_time_minutes: number | null;
   required_tools: string[] | null;
   category_id: string | null;
@@ -74,6 +83,7 @@ export const usePartBySlug = (slug: string | undefined) => {
           youtube_video_id,
           technical_metadata,
           electrical_specs,
+          fitment_specs,
           estimated_install_time_minutes,
           required_tools,
           category_id,

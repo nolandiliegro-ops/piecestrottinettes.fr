@@ -1,0 +1,72 @@
+{
+  "family": "pneus-pleins",
+  "label": "pneu plein",
+  "choose": {
+    "intro": "Un pneu plein supprime les crevaisons et le contrôle de pression. En échange, il est plus dur, plus lourd et accroche moins sur sol mouillé. Il se choisit sur la cote de la roue ET sur le type de jante.",
+    "steps": [
+      "Lis la cote sur le flanc de ton pneu actuel : elle doit être identique, diamètre de jante compris.",
+      "Regarde ta jante : en deux parties (demi-jantes qui se séparent) le montage est nettement plus simple ; monobloc, le pneu doit être étiré autour de la jante, c'est un travail d'atelier.",
+      "Massif ou alvéolé (nid d'abeille) : l'alvéolé fléchit un peu plus et gagne en confort, sans égaler un pneu gonflable.",
+      "Choisis-le pour de la ville, des trajets courts sur bitume lisse. Pour la pluie, les pavés ou la vitesse, un gonflable bien entretenu reste meilleur."
+    ],
+    "pitfalls": [
+      "Acheter sans vérifier le type de jante.",
+      "Forcer au tournevis : tu abîmes la jante ou le faisceau du moteur.",
+      "Lubrifier à l'huile ou à l'essence, qui attaquent la gomme."
+    ]
+  },
+  "install": {
+    "level": "Difficile (très difficile sur jante monobloc)",
+    "time": "1 à 2 h, ou atelier",
+    "tools": [
+      "Démonte-pneus robustes",
+      "Clés de l'axe",
+      "Eau savonneuse",
+      "Eau chaude pour assouplir le pneu"
+    ],
+    "steps": [
+      "Batterie éteinte, démonte la roue et débranche le câble moteur si besoin.",
+      "Sur une jante en deux parties, sépare les demi-jantes en ne desserrant que les vis prévues par le fabricant.",
+      "Assouplis le pneu plein dans de l'eau chaude, en suivant la température indiquée par sa notice.",
+      "Lubrifie à l'eau savonneuse et engage le pneu progressivement, sans outil pointu.",
+      "Referme la jante au serrage prescrit, remonte la roue et vérifie qu'elle tourne droit."
+    ]
+  },
+  "pressure": "",
+  "faq": [
+    {
+      "q": "Peut-on mettre des pneus pleins sur {top1} ?",
+      "a": "Le {name} est relié à {count} modèles vérifiés sur la cote de roue ET le type de jante, dont {top3}. Ton modèle n'y est pas ? Écris-nous : la conversion dépend du diamètre et de la largeur de jante."
+    },
+    {
+      "q": "Plein ou gonflable ?",
+      "a": "Plein si tu veux zéro crevaison en ville sur bitume. Gonflable si tu roules sous la pluie, sur pavés ou vite : il amortit mieux, accroche mieux et consomme moins."
+    },
+    {
+      "q": "Un pneu plein réduit-il l'autonomie ?",
+      "a": "Il peut augmenter la résistance au roulement et donc réduire l'autonomie, mais l'effet varie selon le pneu et le parcours."
+    },
+    {
+      "q": "Pourquoi le montage est-il si difficile ?",
+      "a": "Le pneu plein est raide et doit être étiré sur la jante. Sur une jante en deux parties c'est faisable chez soi ; sur une jante monobloc, l'atelier est souvent la meilleure option."
+    }
+  ],
+  "sources": [
+    {
+      "label": "Kepow — choisir des pneus de trottinette",
+      "url": "https://www.kepow-eu.com/blogs/news/how-to-choose-electric-scooter-tires"
+    },
+    {
+      "label": "Punk Ride — pneus de trottinette électrique",
+      "url": "https://www.punkride.com/en-au/blogs/news-advice/tires-for-electric-scooters"
+    },
+    {
+      "label": "Notice de montage pneu plein 60/70-6.5 nid d'abeille",
+      "url": "https://manuals.plus/ktumininv/60-70-6-5-honeycomb-solid-tire-manual"
+    },
+    {
+      "label": "Kick and Volt — pneus pleins",
+      "url": "https://kickandvolt.com/commuter-scooters/solid-tires"
+    }
+  ]
+}

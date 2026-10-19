@@ -1,0 +1,70 @@
+{
+  "family": "chargeurs",
+  "label": "chargeur",
+  "choose": {
+    "intro": "Un chargeur se choisit sur deux critères non négociables : la tension de ta batterie et la prise de charge. L'ampérage, lui, joue sur le temps de charge.",
+    "steps": [
+      "Lis la tension sur la batterie ou sur ton chargeur d'origine. La tension nominale (36, 48, 52, 60, 72 V) correspond à une tension de fin de charge : 42, 54,6, 58,8, 67,2 ou 84 V (4,2 V par cellule lithium-ion en série).",
+      "Identifie la prise : GX16-3 et LP16-3 sont rondes, vissées, à trois broches et se ressemblent ; RCA a une broche centrale entourée d'une bague ; le jack DC 5,5 × 2,1 mm est un petit cylindre. Vérifie aussi la polarité.",
+      "Choisis l'ampérage : temps théorique = capacité (Ah) ÷ intensité (A), puis la fin de charge ralentit. Ne dépasse pas le courant admis par ta batterie.",
+      "Prise différente ? Un chargeur GX16-3 avec le bon adaptateur couvre la plupart des prises."
+    ],
+    "pitfalls": [
+      "Prendre un chargeur d'une autre tension parce que la prise rentre.",
+      "Charge rapide sur une batterie qui ne l'accepte pas.",
+      "Laisser charger sans surveillance, sur un support inflammable."
+    ]
+  },
+  "install": {
+    "level": "Très facile",
+    "time": "1 min",
+    "tools": [],
+    "steps": [
+      "Branche d'abord le chargeur sur la prise secteur, puis l'embout sur la trottinette (ou selon la notice du fabricant).",
+      "Charge dans la plage de température indiquée, sur une surface dégagée.",
+      "Arrête si la batterie ou le chargeur chauffe anormalement, gonfle ou sent.",
+      "Pour l'hiver : stocke au frais et au sec, vers 40–60 % de charge, et contrôle le niveau de temps en temps."
+    ]
+  },
+  "pressure": "",
+  "faq": [
+    {
+      "q": "Quel chargeur pour {top1} ?",
+      "a": "Celui de la même tension et de la même prise que l'origine. Ce {name} va sur {count} modèles vérifiés sur la tension ET la prise, dont {top3}."
+    },
+    {
+      "q": "Pourquoi un chargeur 60 V affiche 67,2 V ?",
+      "a": "Une batterie 60 V lithium-ion compte 16 cellules en série ; chacune se charge jusqu'à 4,2 V, soit 67,2 V en fin de charge. Même logique : 36 V → 42 V, 48 V → 54,6 V, 52 V → 58,8 V, 72 V → 84 V."
+    },
+    {
+      "q": "Puis-je utiliser un chargeur d'une autre tension ?",
+      "a": "Non. Trop haut, il surcharge les cellules et peut les faire chauffer dangereusement ; trop bas, il ne charge pas complètement."
+    },
+    {
+      "q": "La charge rapide abîme-t-elle la batterie ?",
+      "a": "Un courant élevé accélère le vieillissement s'il dépasse ce que la batterie admet ou si elle chauffe. Réserve-la aux batteries prévues pour."
+    },
+    {
+      "q": "Combien de temps pour une charge complète ?",
+      "a": "Compte au minimum capacité ÷ ampérage (ex. 10 Ah à 2 A ≈ 5 h), plus la fin de charge qui ralentit."
+    }
+  ],
+  "sources": [
+    {
+      "label": "Sound-AU — charger des batteries lithium",
+      "url": "https://www.sound-au.com/articles/lithium-charging.htm"
+    },
+    {
+      "label": "MIT EHS — sécurité des batteries lithium (PDF)",
+      "url": "https://ehs.mit.edu/wp-content/uploads/2019/09/Lithium_Battery_Safety_Guidance.pdf"
+    },
+    {
+      "label": "Wattiz — adaptateurs de chargeur",
+      "url": "https://www.wattiz.fr/gb/5750-adapters-chargers"
+    },
+    {
+      "label": "Ebikes Forum — tensions d'une batterie 60 V (16S)",
+      "url": "https://ebikesforum.com/resources/60-volt-16s-battery-voltage-chart-li-ion-batteries.40/"
+    }
+  ]
+}

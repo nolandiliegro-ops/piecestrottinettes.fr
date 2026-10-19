@@ -1,0 +1,77 @@
+{
+  "family": "chambres-a-air",
+  "label": "chambre à air",
+  "choose": {
+    "intro": "Une chambre à air se choisit sur deux critères : la cote de ton pneu et l'angle de la valve. Le nom de la trottinette ne suffit pas, parce qu'une même série peut changer de taille de roue d'une version à l'autre.",
+    "steps": [
+      "Lis la cote sur le flanc de ton pneu actuel. En pouces (ex. 10x2.50) : diamètre extérieur × largeur. En millimètres (ex. 60/70-6.5) : largeur 60 mm, hauteur de flanc égale à 70 % de la largeur, jante de 6,5 pouces.",
+      "Prends la chambre de la même cote. Une cote « proche » n'est pas une garantie : si ton pneu porte deux notations, l'une des deux doit correspondre à la chambre.",
+      "Regarde la valve de ta chambre d'origine avant de commander : droite, coudée à 45°, à 90° ou double coude. L'angle sert à faire sortir la valve entre le disque, le moteur ou les bras de fourche pour que le gonfleur s'y branche.",
+      "Si tu crèves souvent, choisis une version renforcée : la gomme plus épaisse résiste mieux aux pincements, au prix d'un peu de poids."
+    ],
+    "pitfalls": [
+      "Commander par le nom du modèle sans lire le flanc du pneu.",
+      "Choisir une valve droite là où l'origine était coudée : elle peut ne pas passer à côté du disque ou du moteur.",
+      "Rouler sous-gonflé : c'est la première cause de crevaison par pincement."
+    ]
+  },
+  "install": {
+    "level": "Moyen (plus long sur une roue motrice)",
+    "time": "30 à 60 min selon le modèle",
+    "tools": [
+      "Démonte-pneus en plastique",
+      "Clés Allen ou plates selon l'axe",
+      "Pompe avec manomètre",
+      "Talc (facultatif)"
+    ],
+    "steps": [
+      "Batterie éteinte, démonte la roue (sur une roue motrice, débranche d'abord le câble moteur).",
+      "Dégonfle complètement, décolle les talons du pneu et sors l'ancienne chambre.",
+      "Passe la main à l'intérieur du pneu : retire tout éclat, épine ou fil métallique, sinon la chambre neuve crèvera au même endroit.",
+      "Gonfle à peine la chambre neuve pour qu'elle prenne sa forme, poudre-la de talc et place-la valve en premier.",
+      "Remets les talons à la main ou aux démonte-pneus en plastique, sans jamais coincer la chambre entre le talon et la jante.",
+      "Gonfle progressivement en vérifiant que le pneu monte droit, puis à la pression indiquée sur le flanc."
+    ]
+  },
+  "pressure": "Selon info.fr, la plupart des pneus de trottinette se gonflent entre 3,5 et 4,5 bars, la valeur maximale étant inscrite sur le flanc. Mesure à froid et vérifie chaque semaine si tu roules tous les jours.",
+  "faq": [
+    {
+      "q": "Quelle chambre à air pour {top1} ?",
+      "a": "Celle de la même cote que le pneu monté sur ta trottinette. La {name} va sur {count} modèles vérifiés sur la cote de montage, dont {top3}. Si ton modèle n'est pas dans la liste, écris-nous : on vérifie pour toi."
+    },
+    {
+      "q": "Valve droite ou coudée : laquelle choisir ?",
+      "a": "Reprends l'angle de ta chambre d'origine. La valve coudée sert à sortir entre le disque de frein, le moteur ou la fourche ; une valve droite peut ne pas laisser passer l'embout de pompe."
+    },
+    {
+      "q": "Pourquoi ma chambre crève-t-elle souvent ?",
+      "a": "Le plus souvent : pression trop basse (pincement contre la jante), un corps étranger resté dans le pneu, ou une chambre pincée au montage. Vérifie la pression chaque semaine et inspecte l'intérieur du pneu à chaque changement."
+    },
+    {
+      "q": "Chambre renforcée : ça vaut le coup ?",
+      "a": "Oui si tu crèves régulièrement ou si tu roules chargé : la gomme plus épaisse résiste mieux aux pincements. Elle ne remplace pas une bonne pression."
+    },
+    {
+      "q": "Rustine ou chambre neuve ?",
+      "a": "Une petite perforation se répare. Une coupure, un trou près de la valve, une valve arrachée ou une chambre déjà réparée plusieurs fois se remplacent."
+    }
+  ],
+  "sources": [
+    {
+      "label": "info.fr — comment gonfler un pneu de trottinette électrique",
+      "url": "https://info.fr/comment-gonfler-un-pneu-de-trottinette-electrique/"
+    },
+    {
+      "label": "e-watts — chambres à air par cote et angle de valve",
+      "url": "https://e-watts.fr/produit/chambre-a-air-renforcee-10x3-255x80-valve-45x90-degres"
+    },
+    {
+      "label": "wee-bot — chambres à air 10 pouces coudées",
+      "url": "https://www.wee-bot.com/products/chambre-a-air-10pouces-coudee-45"
+    },
+    {
+      "label": "Levy Electric — lire la taille d'un pneu de trottinette",
+      "url": "https://www.levyelectric.com/electric-scooter-tire-size"
+    }
+  ]
+}

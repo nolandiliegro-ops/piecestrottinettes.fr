@@ -1,0 +1,76 @@
+{
+  "family": "plaquettes",
+  "label": "plaquettes de frein",
+  "choose": {
+    "intro": "Des plaquettes se choisissent sur la FORME, imposée par l'étrier de frein, puis sur la matière. Le nom d'une trottinette dans un titre ne prouve rien : deux séries d'une même marque peuvent avoir des étriers différents.",
+    "steps": [
+      "Démonte une plaquette usée et compare sa forme et ses dimensions avec la photo : c'est le test le plus fiable.",
+      "Repère ton étrier (Zoom, Xtech, Nutt, forme SRAM Avid…) : il détermine la forme, quelle que soit la marque de la trottinette.",
+      "Choisis la matière : organique (mordant immédiat, silencieuse, s'use plus vite), semi-métallique (compromis), métal fritté (tient la chaleur et l'humidité, dure plus longtemps, plus bruyante, use davantage le disque).",
+      "« Céramique » désigne le plus souvent une résine chargée en céramique : le résultat dépend de la formulation."
+    ],
+    "pitfalls": [
+      "Commander d'après le nom du modèle sans comparer la forme.",
+      "Toucher la garniture avec des doigts gras ou du lubrifiant.",
+      "Attendre que le support métallique frotte sur le disque."
+    ]
+  },
+  "install": {
+    "level": "Facile",
+    "time": "15 à 30 min",
+    "tools": [
+      "Clé Allen ou Torx selon l'étrier",
+      "Alcool isopropylique",
+      "Chiffon propre non pelucheux",
+      "Pince fine pour la goupille"
+    ],
+    "steps": [
+      "Retire la roue si l'étrier l'exige, puis la goupille ou la vis qui tient les plaquettes.",
+      "Sors les plaquettes usées en notant le sens du ressort.",
+      "Nettoie le disque à l'alcool isopropylique et laisse sécher.",
+      "Mets les plaquettes neuves sans toucher la garniture, remonte ressort et goupille.",
+      "Rodage : environ 8 à 10 freinages progressifs de 15–20 km/h presque jusqu'à l'arrêt, puis 8 à 10 depuis 25–30 km/h, sans bloquer la roue."
+    ]
+  },
+  "pressure": "",
+  "faq": [
+    {
+      "q": "Quelles plaquettes pour {top1} ?",
+      "a": "Celles de la forme de ton étrier. Ces {name} vont sur {count} modèles vérifiés sur la forme d'étrier, dont {top3}. Pas sûr ? Envoie-nous une photo de ta plaquette usée."
+    },
+    {
+      "q": "Organique, métal fritté ou céramique ?",
+      "a": "Organique pour la ville et le silence. Métal fritté si tu freines fort, roules vite ou sous la pluie : plus endurant, mais plus bruyant et plus dur pour le disque. Semi-métallique entre les deux."
+    },
+    {
+      "q": "Quand changer ses plaquettes ?",
+      "a": "Mesure la garniture seule : par prudence, change vers 1 mm. Signes d'alerte : freinage plus faible, levier qui va plus loin, bruit métallique, garniture usée de travers."
+    },
+    {
+      "q": "Faut-il roder des plaquettes neuves ?",
+      "a": "Oui : une vingtaine de freinages progressifs, d'abord à 15–20 km/h puis à 25–30 km/h, sans bloquer la roue. Ça dépose une couche de friction régulière sur le disque."
+    },
+    {
+      "q": "Mes freins sifflent après le changement, pourquoi ?",
+      "a": "Disque ou garniture souillés (graisse, doigts), rodage incomplet ou étrier mal centré. Nettoie le disque à l'alcool isopropylique et refais un rodage."
+    }
+  ],
+  "sources": [
+    {
+      "label": "Bike Gremlin — quand remplacer des plaquettes à disque",
+      "url": "https://bike.bikegremlin.com/20335/when-to-replace-bicycle-disc-brake-pads/"
+    },
+    {
+      "label": "BikeTips — roder des freins à disque",
+      "url": "https://biketips.com/how-to-bed-in-disc-brakes/"
+    },
+    {
+      "label": "Sinter — composés de plaquettes",
+      "url": "https://sinter.si/pages/brake-pad-compounds"
+    },
+    {
+      "label": "Matériel-vélo — plaquettes organiques ou métalliques",
+      "url": "https://www.materiel-velo.com/a161-plaquettes-vtt-organiques-metalliques.html"
+    }
+  ]
+}

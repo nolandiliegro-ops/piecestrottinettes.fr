@@ -29,6 +29,7 @@ import type { PartDetail, CompatibleScooter } from "@/hooks/usePartDetail";
 import CompatibilityMatrix from "@/components/pdp/CompatibilityMatrix";
 import RelatedProducts from "@/components/pdp/RelatedProducts";
 import CompatCompact, { type CompatLook } from "@/components/pdp/CompatCompact";
+import PartSeoFiche from "@/components/pdp/PartSeoFiche";
 
 export type PartStyle = 1 | 2 | 3 | 4 | 5;
 export const PART_STYLE_NAMES: Record<PartStyle, string> = { 1: "Pit-stand", 2: "Étiquette", 3: "Atelier", 4: "Vitrine", 5: "Compat d'abord" };
@@ -62,7 +63,7 @@ const strip = (h: string) => h.replace(/<[^>]+>/g, "").replace(/&nbsp;/g, " ").t
  * (« Diamètre : 140 mm » — format de toutes les fiches importées). Source 2 : le champ characteristics
  * (phrases ou lignes). L'EAN n'est pas une info client : écarté.
  */
-const parseSpecs = (description: string | null, raw: string | null): { tiles: Spec[]; free: string[] } => {
+export const parseSpecs = (description: string | null, raw: string | null): { tiles: Spec[]; free: string[] } => {
   const tiles: Spec[] = [];
   const free: string[] = [];
   const sec = (description ?? "").match(/<h2>\s*Caract[ée]ristiques[^<]*<\/h2>\s*<ul>([\s\S]*?)<\/ul>/i);
@@ -87,7 +88,7 @@ const parseSpecs = (description: string | null, raw: string | null): { tiles: Sp
  * (« Aucune compatibilité spécifique… » contredit la liste réelle juste au-dessus) et la liste
  * des caractéristiques (déjà en tuiles).
  */
-const cleanDescription = (html: string) =>
+export const cleanDescription = (html: string) =>
   html
     .replace(/<h2>\s*Compatibilit[ée][^<]*<\/h2>\s*(<p>[\s\S]*?<\/p>\s*)+?(?=<h2|<h3|$)/i, "")
     .replace(/<h2>\s*Caract[ée]ristiques[^<]*<\/h2>\s*<ul>[\s\S]*?<\/ul>/i, "");
@@ -349,6 +350,17 @@ const Bottom = (p: Props & { numbered?: boolean; skipCompat?: boolean }) => {
   const look = (cn >= 1 && cn <= 5 ? cn : 1) as CompatLook;
   // Pneus pleins : on garde la matrice d'origine (état « ne passe pas en plein » lu sur la trotte du garage).
   const solid = p.part.category?.slug === "pneus-pleins";
+  // 20/10 : fiche « Tout savoir » (compat entière dans le DOM + guide de famille), UNIQUEMENT avec ?seo=1 tant que Nolan n'a pas validé.
+  if (sp.get("seo") === "1") {
+    return (
+      <>
+        <PartSeoFiche part={p.part} scooters={p.scooters} scootersLoading={p.scootersLoading} />
+        <section className="px-4 py-8" style={{ backgroundColor: "#F5F0E8" }}>
+          <div className="mx-auto max-w-6xl"><RelatedProducts parts={p.related} isLoading={p.relatedLoading} /></div>
+        </section>
+      </>
+    );
+  }
   return (
     <>
       {p.part.description?.trim() && <Rule title="Présentation"><Description part={p.part} /></Rule>}

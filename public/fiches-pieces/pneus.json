@@ -1,0 +1,76 @@
+{
+  "family": "pneus",
+  "label": "pneu",
+  "choose": {
+    "intro": "Un pneu de trottinette se choisit sur sa cote, son type de montage (à chambre ou tubeless) et sa gomme. Les notations en pouces et en millimètres décrivent parfois la même roue, mais pas toujours : c'est le diamètre de jante qui tranche.",
+    "steps": [
+      "Lis le flanc de ton pneu actuel. 60/70-6.5 = largeur 60 mm, flanc égal à 70 % de la largeur, jante de 6,5 pouces. 80/65-6 = largeur 80 mm, flanc de 65 %, jante de 6 pouces.",
+      "Les vendeurs associent souvent 10x2.50 à 60/70-6.5 et 10x3.0 à 80/65-6, mais les dimensions réelles varient selon le fabricant : le diamètre de jante doit être identique, la largeur doit passer sous le garde-boue.",
+      "Vérifie le montage : un pneu marqué « tube type » exige une chambre à air ; un tubeless se monte sans chambre, sur une jante étanche prévue pour.",
+      "Choisis la gomme selon ton terrain : profil lisse pour le bitume, crampons pour les chemins (plus d'accroche, un peu plus de bruit et de résistance sur route)."
+    ],
+    "pitfalls": [
+      "Se fier à la seule notation en pouces sans vérifier le diamètre de jante.",
+      "Monter un pneu « tube type » sans chambre.",
+      "Dépasser la pression maximale inscrite sur le flanc."
+    ]
+  },
+  "install": {
+    "level": "Difficile sur une roue motrice, moyen sur la roue libre",
+    "time": "45 à 90 min selon le modèle",
+    "tools": [
+      "Démonte-pneus robustes",
+      "Clés de l'axe (Allen ou plates)",
+      "Pompe avec manomètre",
+      "Eau savonneuse"
+    ],
+    "steps": [
+      "Batterie éteinte, démonte la roue (débranche le câble moteur si c'est la roue motrice).",
+      "Dégonfle et décolle les deux talons ; sur une jante en deux parties, sépare les demi-jantes en suivant la notice.",
+      "Sors l'ancien pneu, contrôle la jante (fissure, bavure) et la chambre ou la valve.",
+      "Lubrifie les talons à l'eau savonneuse et monte le pneu neuf dans le sens de rotation indiqué sur le flanc.",
+      "Gonfle progressivement en vérifiant que le pneu se centre bien, puis à la pression conseillée, pneu froid."
+    ]
+  },
+  "pressure": "Il n'existe pas de valeur unique : gonfle à la pression du fabricant (flanc ou manuel) sans jamais dépasser le maximum inscrit. Un pneu sous-gonflé chauffe, roule moins bien et pince la chambre.",
+  "faq": [
+    {
+      "q": "Quel pneu pour {top1} ?",
+      "a": "Celui de la même cote et du même montage que l'origine. Le {name} va sur {count} modèles vérifiés sur la cote de montage, dont {top3}. Ton modèle n'y est pas ? Écris-nous, on vérifie pour toi."
+    },
+    {
+      "q": "10x2.50 et 60/70-6.5, c'est la même chose ?",
+      "a": "Souvent présentés comme équivalents, mais pas toujours au millimètre près. Ce qui doit coller : le diamètre de jante (6,5 pouces pour un 60/70-6.5) et la largeur qui passe dans la fourche et sous le garde-boue."
+    },
+    {
+      "q": "Tubeless ou pneu à chambre ?",
+      "a": "Celui que ta jante permet. Le tubeless se répare souvent avec une mèche et évite la chambre, mais il exige une jante étanche. Un pneu marqué « tube type » se monte toujours avec une chambre."
+    },
+    {
+      "q": "Le liquide anti-crevaison, ça marche ?",
+      "a": "Il colmate les petites perforations dans un tubeless, pas une coupure. Vérifie qu'il est compatible avec ton pneu et ta valve."
+    },
+    {
+      "q": "Quand changer un pneu ?",
+      "a": "Quand le témoin d'usure est atteint, que les crampons sont arasés, ou au moindre dommage sérieux : coupure profonde, hernie, fils ou carcasse visibles, flanc abîmé."
+    }
+  ],
+  "sources": [
+    {
+      "label": "Levy Electric — lire la taille d'un pneu de trottinette",
+      "url": "https://www.levyelectric.com/electric-scooter-tire-size"
+    },
+    {
+      "label": "Fluid Freeride — pneus et chambres de trottinette",
+      "url": "https://fluidfreeride.com/collections/electric-scooter-tires-tubes"
+    },
+    {
+      "label": "eScooter Spares — choisir ses pneus",
+      "url": "https://escooterspares.com.au/pages/how-to-choose-electric-scooter-tyres"
+    },
+    {
+      "label": "Scooterworks — pneu 80/65-6 (10x3.0) tube type",
+      "url": "https://www.scooterworks.com/products/green-line-tube-type-tire-80-65-6-10-3-0600-6016"
+    }
+  ]
+}
