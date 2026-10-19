@@ -135,6 +135,7 @@ async function main() {
       // Un échec en cours de galerie est signalé ÉCHEC_PARTIEL : la pièce est à restaurer depuis _bak_images_recadrage_1910.
       let ok = true;
       for (let k = 0; k < bufs.length; k++) {
+        await new Promise((r) => setTimeout(r, 400)); // laisse respirer le stockage (« Too many connections » le 19/10)
         const res = await fetch(`${env.VITE_SUPABASE_URL}/functions/v1/process-images`, {
           method: 'POST',
           headers: { 'Content-Type': 'application/json', 'x-admin-secret': env.ADMIN_BULK_SECRET },
