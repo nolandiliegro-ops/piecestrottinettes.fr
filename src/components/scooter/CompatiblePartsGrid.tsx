@@ -66,7 +66,7 @@ const Rail = ({ parts, scooterName }: { parts: ScooterCompatiblePart[]; scooterN
   const slide = (d: number) => ref.current?.scrollBy({ left: d * ref.current.clientWidth * 0.8, behavior: "smooth" });
   return (
     <div className="relative">
-      <div ref={ref} className="-mx-4 px-4 lg:mx-0 lg:px-0 flex gap-4 md:gap-5 overflow-x-auto snap-x snap-mandatory pb-3 [scrollbar-width:none]">
+      <div ref={ref} className="-mx-4 px-4 lg:mx-0 lg:px-0 pt-6 -mt-6 flex gap-4 md:gap-5 overflow-x-auto snap-x snap-mandatory pb-3 [scrollbar-width:none]">
         {parts.map((part, i) => (
           <div key={part.id} className="snap-start shrink-0 w-[46%] sm:w-[31%] lg:w-[calc(25%-15px)]">
             <PartCard hideCompat part={{ ...part, description: null }} index={i} position={part.position} />
