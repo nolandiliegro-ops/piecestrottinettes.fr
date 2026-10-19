@@ -63,8 +63,11 @@ const Video = ({ v, name }: { v: NonNullable<ScooterSeo["video"]>; name: string 
 type P = NonNullable<ReturnType<typeof partnerOf>>;
 const variantParam = (): number => {
   if (typeof window === "undefined") return 0;
-  const n = Number(new URLSearchParams(window.location.search).get("partenaire"));
-  return n >= 1 && n <= 9 ? n : 0;
+  // 19/10 (choix Nolan) : « Coupure pierre » (7) par défaut ; ?partenaire=0 = ancienne carte, 1..9 = propositions.
+  const raw = new URLSearchParams(window.location.search).get("partenaire");
+  if (raw === null) return 7;
+  const n = Number(raw);
+  return n >= 0 && n <= 9 ? n : 7;
 };
 const Legal = ({ dark = false }: { dark?: boolean }) => (
   <p className={`flex items-start gap-2 text-sm ${dark ? "text-white/60" : "text-gray-500"}`}>
