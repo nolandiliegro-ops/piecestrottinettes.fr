@@ -1,0 +1,147 @@
+{
+ "displayName": "Dualtron Storm Limited",
+ "metaTitle": "Dualtron Storm Limited : fiche technique et pièces",
+ "metaDescription": "Dualtron Storm Limited : 84 V 45 Ah (3 780 Wh), 11 500 W en pointe, freins Nutt 4 pistons, pneus 90/65-6.5. Autonomie mesurée, entretien et pièces.",
+ "intro": [
+  "La Dualtron Storm Limited est la version 84 V de la Storm : une des trottinettes les plus endurantes du marché, construite autour d'une batterie LG de 45 Ah, soit 3 780 Wh. Le Labo Fnac a mesuré 83 km sur une charge.",
+  "Deux moteurs pour 11 500 W en pointe, des freins hydrauliques Nutt à quatre pistons et des pneus de 11 pouces en 90/65-6.5. C'est une machine pour rouleurs expérimentés, qui doit rester bridée à 25 km/h sur la voie publique en France."
+ ],
+ "specs": [
+  [
+   "Moteurs",
+   "2 moteurs, 11 500 W en pointe"
+  ],
+  [
+   "Vitesse",
+   "25 km/h sur la voie publique"
+  ],
+  [
+   "Batterie",
+   "84 V, 45 Ah (3 780 Wh)"
+  ],
+  [
+   "Autonomie",
+   "83 km mesurés par le Labo Fnac (jusqu'à 220 km annoncés)"
+  ],
+  [
+   "Poids",
+   "50,5 à 55 kg selon les sources"
+  ],
+  [
+   "Charge max",
+   "120 kg"
+  ],
+  [
+   "Roues",
+   "11 pouces, 90/65-6.5"
+  ],
+  [
+   "Freins",
+   "Hydrauliques Nutt 4 pistons"
+  ],
+  [
+   "Étanchéité",
+   "IPX5"
+  ],
+  [
+   "Chargeur",
+   "84 V (100,8 V en sortie)"
+  ],
+  [
+   "Temps de charge",
+   "11 h 45 mesurées par le Labo Fnac"
+  ]
+ ],
+ "pros": [
+  "Endurance : 83 km mesurés sur une charge par le Labo Fnac.",
+  "Batterie de 3 780 Wh, l'une des plus grosses du marché (Dualtron Shop).",
+  "Freinage hydraulique Nutt à quatre pistons (Dualtron Store)."
+ ],
+ "cons": [
+  "Recharge longue : 11 h 45 mesurées par le Labo Fnac.",
+  "Plus de 50 kg : elle ne se porte pas.",
+  "Sa vitesse de pointe n'est utilisable que sur terrain privé : en France, la voie publique est limitée à 25 km/h."
+ ],
+ "parts": [
+  {
+   "label": "Pneu",
+   "size": "90/65-6.5 (11 pouces)",
+   "count": 11,
+   "to": "/piece/pneu-90-65-6-5-route-tubeless",
+   "cta": "Pneus 90/65-6.5"
+  },
+  {
+   "label": "Chambre à air",
+   "size": "90/65-6.5, valve droite ou coudée",
+   "count": 5,
+   "to": "/piece/chambre-a-air-90-65-6-5-valve-coudee-ewheel",
+   "cta": "Chambres à air"
+  },
+  {
+   "label": "Plaquettes",
+   "size": "étrier Nutt 4 pistons",
+   "count": 4,
+   "to": "/piece/plaquettes-de-freins-shimano-d03s-nutt-4-pistons-thunder-3-nami-semi-metallique",
+   "cta": "Plaquettes Nutt"
+  }
+ ],
+ "care": [
+  "À plus de 50 kg, contrôle la pression des pneus avant chaque sortie : Dualtron Store recommande 3,5 bars.",
+  "Freins Nutt 4 pistons : surveille l'épaisseur des plaquettes et purge le circuit quand le levier devient mou.",
+  "Une batterie de 3 780 Wh se recharge longtemps : utilise un chargeur adapté au 84 V et ne la laisse pas vide plusieurs semaines."
+ ],
+ "price": {
+  "text": "Prix affichés par des distributeurs français : de 3 380 € à 4 490 € (relevés le 19/10/2026).",
+  "source": "fohzshop.fr, maxblinker.fr"
+ },
+ "faq": [
+  {
+   "q": "Quelle taille de pneu pour la Dualtron Storm Limited ?",
+   "a": "Des pneus de 11 pouces en 90/65-6.5, sur une jante de 6,5 pouces."
+  },
+  {
+   "q": "Quelles plaquettes pour la Dualtron Storm Limited ?",
+   "a": "Des plaquettes pour étrier hydraulique Nutt à quatre pistons, en semi-métallique, métal fritté ou céramique."
+  },
+  {
+   "q": "Quelle est l'autonomie réelle de la Dualtron Storm Limited ?",
+   "a": "Le Labo Fnac a mesuré 83 km sur une charge. Les fiches annoncent jusqu'à 220 km, une valeur obtenue dans des conditions bien plus favorables."
+  },
+  {
+   "q": "Combien de temps pour recharger la Dualtron Storm Limited ?",
+   "a": "11 h 45 mesurées par le Labo Fnac. Avec un seul chargeur standard, la charge peut dépasser une journée."
+  },
+  {
+   "q": "La Dualtron Storm Limited est-elle légale en France ?",
+   "a": "Oui sur la voie publique à condition d'être bridée à 25 km/h, comme toute trottinette électrique. Débridée, elle n'est utilisable que sur terrain privé."
+  }
+ ],
+ "sources": [
+  {
+   "label": "L'Éclaireur Fnac — test Labo Dualtron Storm LTD 84 V 45 Ah",
+   "url": "https://leclaireur.fnac.com/test/511846-test-labo-de-la-minimotors-dualtron-storm-ltd-84v-45ah-une-trottinette-redoutable-dendurance/"
+  },
+  {
+   "label": "Dualtron Shop — Dualtron Storm Limited",
+   "url": "https://dualtron-shop.com/fr/produit/dualtron-storm-limited/"
+  },
+  {
+   "label": "FōhzShop — Dualtron Storm Limited 84 V 45 Ah",
+   "url": "https://fohzshop.fr/fr/trottinettes-electriques/dualtron/dualtron-storm-limited-84v-45ah"
+  },
+  {
+   "label": "Max Blinker — Dualtron Storm LTD",
+   "url": "https://www.maxblinker.fr/fr/trottinettes-electriques/dualtron-storm-ltd"
+  },
+  {
+   "label": "Ministère de la Transition écologique — réglementation des trottinettes",
+   "url": "https://www.ecologie.gouv.fr/politiques-publiques/trottinettes-electriques-edpm-reglementation-vigueur"
+  }
+ ],
+ "video": {
+  "id": "bcMTYLxlqLg",
+  "title": "Dualtron Storm Limited , une thunder 3 XXL ?? Présentation par Dualtron Store",
+  "channel": "Dualtron Store ® officiel",
+  "uploadDate": "2026-03-22"
+ }
+}

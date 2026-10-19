@@ -1,0 +1,134 @@
+{
+ "displayName": "Dualtron Mini",
+ "metaTitle": "Dualtron Mini : fiche technique, avis et pièces",
+ "metaDescription": "Dualtron Mini 52 V : pneus 8,5x2 à chambre à air, freins tambour, environ 22 kg, prise GX16-3 ou LP16-3. Versions, entretien et pièces compatibles.",
+ "intro": [
+  "La Dualtron Mini est la petite Dualtron de Minimotors : une 52 V d'environ 22 kg, plus facile à porter que les grandes Dualtron, vendue à partir de 1 090 € en France selon Cleanrider. Elle existe avec des batteries de 13, 17,5 ou 21 Ah.",
+  "La gamme s'est déclinée en simple et double moteur, et en version Special Long Body à châssis allongé et roues de 9 pouces. Les fiches ne sont pas uniformes d'une version à l'autre : vérifie la tienne avant de commander une pièce de roue ou de frein."
+ ],
+ "specs": [
+  [
+   "Moteur",
+   "simple ou double moteur selon la version"
+  ],
+  [
+   "Vitesse",
+   "25 km/h sur la voie publique"
+  ],
+  [
+   "Batterie",
+   "52 V, 13, 17,5 ou 21 Ah"
+  ],
+  [
+   "Autonomie annoncée",
+   "jusqu'à 50 km (21 Ah, Cleanrider)"
+  ],
+  [
+   "Poids",
+   "environ 22 kg"
+  ],
+  [
+   "Charge max",
+   "100 kg"
+  ],
+  [
+   "Roues",
+   "8 pouces, 8.5x2-6.1 à chambre à air"
+  ],
+  [
+   "Freins",
+   "Tambours + freinage électronique"
+  ],
+  [
+   "Prise de charge",
+   "GX16-3 ou LP16-3 selon la série"
+  ],
+  [
+   "Chargeur",
+   "52 V (58,8 V en sortie)"
+  ]
+ ],
+ "pros": [
+  "Environ 22 kg : elle se porte, ce qui est rare chez Dualtron (Cleanrider).",
+  "Freins à tambour peu sensibles à la pluie, complétés par un frein électronique.",
+  "Pneus pleins compatibles : la conversion supprime les crevaisons."
+ ],
+ "cons": [
+  "L'autonomie maximale n'est atteinte que dans de bonnes conditions (Cleanrider).",
+  "Nombreuses versions (moteur, batterie, Long Body en 9 pouces) : une pièce de roue ou de frein se vérifie avant achat.",
+  "Petites roues : moins de confort qu'une 10 pouces sur une chaussée dégradée."
+ ],
+ "parts": [
+  {
+   "label": "Pneu",
+   "size": "8.5x2-6.1",
+   "count": 11,
+   "to": "/piece/pneu-tubeless-8-5x2-6-1-offroad-ewheel",
+   "cta": "Pneus 8,5 pouces"
+  },
+  {
+   "label": "Chambre à air",
+   "size": "8.5x2",
+   "count": 6,
+   "to": "/piece/chambre-a-air-85x2-xiaomi-m365",
+   "cta": "Chambres à air"
+  },
+  {
+   "label": "Pneu plein",
+   "size": "8.5x2-6.1",
+   "count": 32,
+   "to": "/piece/pneu-plein-8-5x2-6-1-ultra-leger-jante-34-mm-lisere-rouge-nedong",
+   "cta": "Pneus pleins"
+  },
+  {
+   "label": "Chargeur",
+   "size": "52 V → 58,8 V, prise GX16-3",
+   "count": 5,
+   "to": "/piece/chargeur-52v-588v-2a-connecteur-gx16-3p",
+   "cta": "Chargeurs 52 V"
+  }
+ ],
+ "care": [
+  "Pneus à chambre à air de 8,5 pouces : garde la bonne pression, c'est la meilleure protection contre les crevaisons par pincement.",
+  "Freins à tambour : quand la course du levier s'allonge, retends le câble avant que le freinage ne faiblisse.",
+  "Avant d'acheter un chargeur, regarde la prise de ta trottinette : selon la série, c'est une GX16-3 ou une LP16-3."
+ ],
+ "price": {
+  "text": "Prix de départ en France : 1 090 €.",
+  "source": "Cleanrider"
+ },
+ "faq": [
+  {
+   "q": "Quelle taille de pneu pour la Dualtron Mini ?",
+   "a": "Des pneus de 8,5 pouces en 8.5x2, sur une jante de 6,1 pouces, avec chambre à air. La version Special Long Body roule en 9 pouces : vérifie la tienne."
+  },
+  {
+   "q": "Peut-on mettre des pneus pleins sur une Dualtron Mini ?",
+   "a": "Oui, des pneus pleins 8.5x2-6.1 se montent : plus de crevaison, mais un peu moins de confort."
+  },
+  {
+   "q": "Quel chargeur pour la Dualtron Mini ?",
+   "a": "Un chargeur 52 V (58,8 V en sortie). La prise est une GX16-3 ou une LP16-3 selon la série : regarde celle de ta trottinette avant de commander."
+  },
+  {
+   "q": "La Dualtron Mini a-t-elle des plaquettes de frein ?",
+   "a": "La version de base freine avec des tambours et un frein électronique : pas de disque ni de plaquettes."
+  }
+ ],
+ "sources": [
+  {
+   "label": "Cleanrider — catalogue Dualtron Mini",
+   "url": "https://www.cleanrider.com/catalogue/trottinette-electrique/dualtron/dualtron-mini/feed/"
+  },
+  {
+   "label": "Max Blinker — Dualtron Mini Special Long Body",
+   "url": "https://www.maxblinker.fr/fr/trottinettes-electriques/dualtron-mini-special-long-body-single-motor"
+  }
+ ],
+ "video": {
+  "id": "94sd1Tj80XE",
+  "title": "DUALTRON MINI - TEST ET PRÉSENTATION DE MA TROTTINETTE ÉLECTRIQUE",
+  "channel": "LINO RIDEUR",
+  "uploadDate": "2021-12-22"
+ }
+}

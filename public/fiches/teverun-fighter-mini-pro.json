@@ -1,0 +1,158 @@
+{
+ "displayName": "Teverun Fighter Mini Pro",
+ "metaTitle": "Teverun Fighter Mini Pro : fiche technique et pièces",
+ "metaDescription": "Teverun Fighter Mini Pro : bimoteur 60 V, pneus 80/65-6 (10x3), disques hydrauliques 140 mm, prise LP16-3. Fiche technique, entretien et pièces.",
+ "intro": [
+  "La Teverun Fighter Mini Pro est la version compacte de la gamme Fighter : une bimoteur 60 V avec des roues de 10 pouces, pensée pour ceux qui veulent de la puissance dans un format plus facile à ranger qu'une Fighter 11.",
+  "Deux moteurs de 1 000 W, des freins à disque hydrauliques, des suspensions hydrauliques réglables et des pneus tubeless 10x3. La batterie varie selon la série : 60 V 25 Ah chez Darty et Fnac, 60 V 31,8 Ah sur la fiche officielle 2026 à moteurs Bosch."
+ ],
+ "specs": [
+  [
+   "Moteurs",
+   "2 × 1 000 W"
+  ],
+  [
+   "Vitesse",
+   "25 km/h sur la voie publique"
+  ],
+  [
+   "Batterie",
+   "60 V, 25 Ah ou 31,8 Ah selon la série"
+  ],
+  [
+   "Autonomie annoncée",
+   "80 à 100 km selon la série"
+  ],
+  [
+   "Poids",
+   "35,5 kg"
+  ],
+  [
+   "Charge max",
+   "120 kg"
+  ],
+  [
+   "Roues",
+   "10 pouces, 80/65-6 (10x3) tubeless"
+  ],
+  [
+   "Freins",
+   "Disques hydrauliques, Ø 140 mm"
+  ],
+  [
+   "Suspension",
+   "Hydraulique réglable avant et arrière"
+  ],
+  [
+   "Étanchéité",
+   "IPX5 (fiche officielle 2026)"
+  ],
+  [
+   "Prise de charge",
+   "LP16-3"
+  ],
+  [
+   "Chargeur",
+   "60 V (67,2 V en sortie)"
+  ],
+  [
+   "Temps de charge",
+   "8 h (version 25 Ah, Darty)"
+  ]
+ ],
+ "pros": [
+  "Batterie de grande capacité et deux moteurs dans un format 10 pouces (Le Dépanneur Tech).",
+  "Freins hydrauliques et pneus tubeless de 10 pouces (Le Dépanneur Tech).",
+  "Plus facile à loger qu'une Fighter 11 (Le Dépanneur Tech)."
+ ],
+ "cons": [
+  "35,5 kg : elle reste peu portable (Le Dépanneur Tech).",
+  "Plusieurs séries coexistent (batterie, étanchéité) : vérifie la tienne avant de commander une pièce électrique.",
+  "Sa vitesse de pointe n'est utilisable que sur terrain privé : en France, la voie publique est limitée à 25 km/h."
+ ],
+ "parts": [
+  {
+   "label": "Pneu",
+   "size": "80/65-6 (10x3) tubeless",
+   "count": 11,
+   "to": "/piece/pneu-80-65-6-10x3-ewheel",
+   "cta": "Pneus 10x3"
+  },
+  {
+   "label": "Chambre à air",
+   "size": "80/65-6 (10x3), valve droite ou coudée",
+   "count": 3,
+   "to": "/piece/chambre-a-air-80-65-6-10x3-valve-droite-ewheel",
+   "cta": "Chambres à air"
+  },
+  {
+   "label": "Disque de frein",
+   "size": "140 mm, 6 trous, entraxe 44 mm",
+   "count": 5,
+   "to": "/piece/disque-de-frein-140mm",
+   "cta": "Disques 140 mm"
+  },
+  {
+   "label": "Chargeur",
+   "size": "60 V → 67,2 V, prise LP16-3",
+   "count": 2,
+   "to": "/piece/pack-chargeur-60v-672v-2a-connecteur-lp16-3",
+   "cta": "Chargeurs 60 V"
+  }
+ ],
+ "care": [
+  "Pneus tubeless : contrôle la pression chaque semaine, un tubeless sous-gonflé se déjante et crève plus facilement.",
+  "Freins hydrauliques : surveille l'épaisseur des plaquettes et purge le circuit quand le levier devient mou.",
+  "Suspensions réglables : règle-les selon ton poids et resserre la visserie des bras après les premières centaines de kilomètres."
+ ],
+ "price": {
+  "text": "Prix affichés : 1 999,99 € chez Darty, 1 790 € chez Weebot pour la série 31,8 Ah (relevé le 21/08/2026).",
+  "source": "darty.com, Le Dépanneur Tech"
+ },
+ "faq": [
+  {
+   "q": "Quelle taille de pneu pour la Teverun Fighter Mini Pro ?",
+   "a": "Des pneus tubeless de 10 pouces en 80/65-6, aussi notés 10x3, sur une jante de 6 pouces."
+  },
+  {
+   "q": "Quel disque de frein pour la Teverun Fighter Mini Pro ?",
+   "a": "Un disque de 140 mm à 6 trous, entraxe 44 mm."
+  },
+  {
+   "q": "Quel chargeur pour la Teverun Fighter Mini Pro ?",
+   "a": "Un chargeur 60 V (67,2 V en sortie) avec prise LP16-3."
+  },
+  {
+   "q": "Combien pèse la Teverun Fighter Mini Pro ?",
+   "a": "35,5 kg selon la fiche officielle Teverun France."
+  },
+  {
+   "q": "La Teverun Fighter Mini Pro est-elle légale en France ?",
+   "a": "Oui sur la voie publique à condition d'être bridée à 25 km/h, comme toute trottinette électrique. Débridée, elle n'est utilisable que sur terrain privé."
+  }
+ ],
+ "sources": [
+  {
+   "label": "Teverun France — Fighter Mini Pro",
+   "url": "https://www.teverun.fr/teverun-fighter-mini-pro/"
+  },
+  {
+   "label": "Darty — Teverun Fighter Mini Pro",
+   "url": "https://www.darty.com/nav/achat/sports_loisirs/glisse_urbaine/trottinette_electrique/teverun_miniprobosch2025.html"
+  },
+  {
+   "label": "Le Dépanneur Tech — Teverun Fighter Mini Pro V6 2026",
+   "url": "https://ledepanneurtech.com/teverun-fighter-mini-pro-v6-2026"
+  },
+  {
+   "label": "Ministère de la Transition écologique — réglementation des trottinettes",
+   "url": "https://www.ecologie.gouv.fr/politiques-publiques/trottinettes-electriques-edpm-reglementation-vigueur"
+  }
+ ],
+ "video": {
+  "id": "D5mPZZlTNjA",
+  "title": "TEVERUN FIGHTER MINI PRO : LA TROTTINETTE ULTIME ? TEST & AVIS !",
+  "channel": "Weebot Paris",
+  "uploadDate": "2025-04-03"
+ }
+}

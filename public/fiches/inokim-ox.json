@@ -1,0 +1,154 @@
+{
+ "displayName": "Inokim OX",
+ "metaTitle": "Inokim OX : fiche technique et pièces",
+ "metaDescription": "Inokim OX 60 V : pneus 10x2.50-6.5, frein tambour avant et disque arrière 140 mm, prise GX16-3. Versions OX H et OX S, entretien et pièces.",
+ "intro": [
+  "L'Inokim OX est la trottinette monomoteur 60 V d'Inokim, déclinée en OX H et OX S selon la batterie (13 ou 21 Ah). Elle se distingue de l'OXO, sa grande sœur bimoteur, par un poids plus contenu : 26 à 28 kg selon la version.",
+  "Elle roule sur des roues de 10 pouces en 10x2.50, freine avec un tambour à l'avant et un disque de 140 mm à l'arrière, et se recharge par une prise GX16-3. Les fiches des revendeurs ne s'accordent pas sur la puissance : vérifie la version de ta trottinette avant une pièce électrique."
+ ],
+ "specs": [
+  [
+   "Moteur",
+   "monomoteur arrière (puissance variable selon la version)"
+  ],
+  [
+   "Vitesse",
+   "25 km/h sur la voie publique"
+  ],
+  [
+   "Batterie",
+   "60 V, 13 ou 21 Ah"
+  ],
+  [
+   "Autonomie annoncée",
+   "50 km (OX H) à 90 km (OX S) selon le distributeur"
+  ],
+  [
+   "Poids",
+   "26 à 28 kg selon la version"
+  ],
+  [
+   "Charge max",
+   "120 kg"
+  ],
+  [
+   "Roues",
+   "10 pouces, 10x2.50-6.5"
+  ],
+  [
+   "Freins",
+   "Tambour avant + disque arrière Ø 140 mm"
+  ],
+  [
+   "Étanchéité",
+   "IPX4"
+  ],
+  [
+   "Prise de charge",
+   "GX16-3"
+  ],
+  [
+   "Chargeur",
+   "60 V (67,2 V en sortie)"
+  ],
+  [
+   "Temps de charge",
+   "8 h (version 21 Ah)"
+  ]
+ ],
+ "pros": [
+  "Jusqu'à 90 km d'autonomie annoncée pour l'OX S (Max Blinker).",
+  "26 à 28 kg : nettement plus léger que l'OXO bimoteur (Max Blinker).",
+  "Pneus pleins compatibles en 10x2.50-6.5."
+ ],
+ "cons": [
+  "Les fiches divergent sur la puissance, le poids et l'autonomie selon la version (Max Blinker, Alternative Bike).",
+  "Un seul moteur : moins à l'aise en côte raide qu'une OXO.",
+  "Aucune fiche consultée ne donne de suspension : vérifie ta version."
+ ],
+ "parts": [
+  {
+   "label": "Pneu",
+   "size": "10x2.50-6.5",
+   "count": 16,
+   "to": "/piece/pneu-10x2-50-xuancheng",
+   "cta": "Pneus 10x2.50"
+  },
+  {
+   "label": "Chambre à air",
+   "size": "10x2.50, valve droite ou coudée",
+   "count": 6,
+   "to": "/piece/chambre-a-air-10x250-valve-90x90",
+   "cta": "Chambres à air"
+  },
+  {
+   "label": "Pneu plein",
+   "size": "10x2.50-6.5",
+   "count": 14,
+   "to": "/piece/pneu-plein-10x2-50-6-5-noir-cityneye",
+   "cta": "Pneus pleins"
+  },
+  {
+   "label": "Plaquettes",
+   "size": "étrier Zoom",
+   "count": 5,
+   "to": "/piece/plaquettes-de-frein-zoom-semi-metallique",
+   "cta": "Plaquettes Zoom"
+  },
+  {
+   "label": "Disque de frein",
+   "size": "140 mm, 6 trous, entraxe 44 mm",
+   "count": 5,
+   "to": "/piece/disque-de-frein-140mm",
+   "cta": "Disques 140 mm"
+  },
+  {
+   "label": "Chargeur",
+   "size": "60 V → 67,2 V, prise GX16-3",
+   "count": 2,
+   "to": "/piece/chargeur-60v-672v-2a-connecteur-gx16-3p",
+   "cta": "Chargeurs 60 V"
+  }
+ ],
+ "care": [
+  "Le disque arrière fait l'essentiel du freinage mécanique : surveille ses plaquettes Zoom et l'état du disque de 140 mm.",
+  "Le tambour avant se règle par son câble quand la course du levier s'allonge.",
+  "Pneus 10x2.50 à chambre à air : une bonne pression évite les crevaisons par pincement ; des pneus pleins existent si tu n'en veux plus."
+ ],
+ "price": {
+  "text": "Prix affiché pour l'OX 21 Ah : 2 490 € chez Alternative Bike (relevé le 19/10/2026).",
+  "source": "alternative.bike"
+ },
+ "faq": [
+  {
+   "q": "Quelle taille de pneu pour l'Inokim OX ?",
+   "a": "Des pneus de 10 pouces en 10x2.50-6.5, sur une jante de 6,5 pouces."
+  },
+  {
+   "q": "Quel disque de frein pour l'Inokim OX ?",
+   "a": "Un disque de 140 mm à 6 trous, entraxe 44 mm, à l'arrière. L'avant freine avec un tambour."
+  },
+  {
+   "q": "Quelles plaquettes pour l'Inokim OX ?",
+   "a": "Des plaquettes pour étrier Zoom, en semi-métallique ou métal fritté."
+  },
+  {
+   "q": "Quel chargeur pour l'Inokim OX ?",
+   "a": "Un chargeur 60 V (67,2 V en sortie) avec prise GX16-3, le même format que l'OXO."
+  },
+  {
+   "q": "Quelle différence entre l'Inokim OX et l'OXO ?",
+   "a": "L'OX a un seul moteur et pèse 26 à 28 kg ; l'OXO a deux moteurs de 1 000 W, une batterie plus grosse et pèse environ 33 kg."
+  }
+ ],
+ "sources": [
+  {
+   "label": "Max Blinker — Inokim OX",
+   "url": "https://www.maxblinker.fr/fr/trottinettes-electriques/inokim-ox"
+  },
+  {
+   "label": "Alternative Bike — Inokim OX",
+   "url": "https://alternative.bike/668-trottinette-electrique-inokim-ox.html"
+  }
+ ]
+}

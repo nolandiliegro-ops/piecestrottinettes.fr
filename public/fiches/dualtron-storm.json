@@ -1,0 +1,143 @@
+{
+ "displayName": "Dualtron Storm",
+ "metaTitle": "Dualtron Storm : fiche technique, avis et pièces",
+ "metaDescription": "Dualtron Storm 72 V : bimoteur 6 640 W, batterie amovible 2 268 Wh, pneus 11\" 90/65-6.5, freins hydrauliques. Entretien et pièces compatibles.",
+ "intro": [
+  "La Dualtron Storm est la grosse Dualtron 72 V de Minimotors sortie en 2020, avec une particularité rare à ce niveau de puissance : sa batterie de 2 268 Wh est amovible. Elle a depuis été suivie par la Storm Limited en 84 V, un modèle différent.",
+  "Deux moteurs pour 6 640 W en pointe, une batterie LG de 72 V et 31,5 Ah, des freins hydrauliques sur disques de 160 mm, des suspensions avant et arrière réglables et des pneus de 11 pouces en 90/65-6.5. Sur la voie publique en France, elle doit rester bridée à 25 km/h."
+ ],
+ "specs": [
+  [
+   "Moteurs",
+   "2 moteurs, 6 640 W en pointe"
+  ],
+  [
+   "Vitesse",
+   "25 km/h sur la voie publique"
+  ],
+  [
+   "Batterie",
+   "72 V, 31,5 Ah (2 268 Wh), amovible"
+  ],
+  [
+   "Autonomie annoncée",
+   "jusqu'à 130 km selon les distributeurs"
+  ],
+  [
+   "Poids",
+   "46 kg"
+  ],
+  [
+   "Charge max",
+   "150 kg"
+  ],
+  [
+   "Roues",
+   "11 pouces, 90/65-6.5"
+  ],
+  [
+   "Freins",
+   "Disques hydrauliques Ø 160 mm + freinage électrique"
+  ],
+  [
+   "Suspension",
+   "Avant et arrière, réglables"
+  ],
+  [
+   "Prise de charge",
+   "GX16-3"
+  ],
+  [
+   "Chargeur",
+   "72 V (84 V en sortie)"
+  ]
+ ],
+ "pros": [
+  "Batterie de 2 268 Wh amovible, rare sur une trottinette de cette puissance (Trott'n'Shop).",
+  "Freins hydrauliques sur disques de 160 mm à l'avant et à l'arrière (Dualtron Store).",
+  "Suspensions avant et arrière avec de nombreux niveaux de réglage (Dualtron Store)."
+ ],
+ "cons": [
+  "46 kg : il lui faut un rez-de-chaussée ou un garage.",
+  "Recharge très longue avec un chargeur standard : prévois un chargeur rapide.",
+  "Les fiches ne s'accordent pas sur l'étrier (Nutt ou Sram Avid selon la série) : compare la forme de ta plaquette avant de commander.",
+  "Sa vitesse de pointe n'est utilisable que sur terrain privé : en France, la voie publique est limitée à 25 km/h."
+ ],
+ "parts": [
+  {
+   "label": "Pneu",
+   "size": "90/65-6.5 (11 pouces)",
+   "count": 11,
+   "to": "/piece/pneu-90-65-6-5-route-tubeless",
+   "cta": "Pneus 90/65-6.5"
+  },
+  {
+   "label": "Chambre à air",
+   "size": "90/65-6.5, valve droite ou coudée",
+   "count": 5,
+   "to": "/piece/chambre-a-air-90-65-6-5-valve-coudee-ewheel",
+   "cta": "Chambres à air"
+  },
+  {
+   "label": "Plaquettes",
+   "size": "étrier Sram Avid ou Nutt selon la série",
+   "count": 6,
+   "to": "/piece/plaquettes-de-freins-zero-10x-11x-vsett-10-storm-thunder-sram-avid-semi-metallique",
+   "cta": "Plaquettes"
+  },
+  {
+   "label": "Chargeur",
+   "size": "72 V → 84 V, prise GX16-3",
+   "count": 2,
+   "to": "/piece/chargeur-72v-84v-2a-connecteur-gx16-3p",
+   "cta": "Chargeurs 72 V"
+  }
+ ],
+ "care": [
+  "Avec 46 kg et deux moteurs, les pneus s'usent vite : contrôle la pression et l'usure avant chaque grosse sortie.",
+  "Freins hydrauliques : surveille l'épaisseur des plaquettes et purge le circuit quand le levier devient mou.",
+  "La batterie est amovible : vérifie l'état de ses connecteurs et le serrage de son logement après chaque retrait."
+ ],
+ "faq": [
+  {
+   "q": "Quelle taille de pneu pour la Dualtron Storm ?",
+   "a": "La Storm roule en 11 pouces, dimension 90/65-6.5 (jante de 6,5 pouces)."
+  },
+  {
+   "q": "Quelles plaquettes pour la Dualtron Storm ?",
+   "a": "Selon la série, l'étrier est de type Nutt ou Sram Avid : compare la forme de ta plaquette usée avec celles de notre sélection avant de commander."
+  },
+  {
+   "q": "Quel chargeur pour la Dualtron Storm ?",
+   "a": "Un chargeur 72 V (84 V en sortie) avec prise GX16-3. Un chargeur rapide existe pour réduire nettement le temps de charge."
+  },
+  {
+   "q": "Quelle différence entre la Dualtron Storm et la Storm Limited ?",
+   "a": "La Storm d'origine est en 72 V avec une batterie amovible de 2 268 Wh ; la Storm Limited passe en 84 V avec une batterie de 3 780 Wh. Leurs pièces électriques ne sont pas interchangeables."
+  },
+  {
+   "q": "La Dualtron Storm est-elle légale en France ?",
+   "a": "Oui sur la voie publique à condition d'être bridée à 25 km/h, comme toute trottinette électrique. Débridée, elle n'est utilisable que sur terrain privé."
+  }
+ ],
+ "sources": [
+  {
+   "label": "Dualtron Store — Dualtron Storm",
+   "url": "https://dualtron-store.com/index.php/produit/dualtron-storm/"
+  },
+  {
+   "label": "Trott'n'Shop — Dualtron Storm 72 V 32 Ah",
+   "url": "https://www.trottnshop.com/produit/dualtron-storm-11-pouces-72v-32ah/"
+  },
+  {
+   "label": "Ministère de la Transition écologique — réglementation des trottinettes",
+   "url": "https://www.ecologie.gouv.fr/politiques-publiques/trottinettes-electriques-edpm-reglementation-vigueur"
+  }
+ ],
+ "video": {
+  "id": "irNINg2Ml8E",
+  "title": "[TEST] On test la Dualtron STORM ! [2021]",
+  "channel": "Les Wheelers Sarthois",
+  "uploadDate": "2021-01-12"
+ }
+}

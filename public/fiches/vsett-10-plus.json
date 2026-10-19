@@ -1,0 +1,170 @@
+{
+ "displayName": "Vsett 10+",
+ "metaTitle": "Vsett 10+ : fiche technique, avis et pièces",
+ "metaDescription": "Vsett 10+ : bimoteur 60 V, pneus 10x3 (80/65-6), freins hydrauliques et disques 145 mm, prise GX16-3. Versions, entretien et pièces compatibles.",
+ "intro": [
+  "La Vsett 10+ est l'une des bimoteurs 60 V les plus répandues en France. Elle existe en trois versions qui se distinguent par la batterie : Lite (20,8 Ah), Super (25,6 Ah) et Pro (28 Ah), avec un poids qui passe d'environ 36 à 39 kg selon le distributeur Vsett Shop.",
+  "Deux moteurs de 1 400 W, des freins hydrauliques à disque à l'avant et à l'arrière, des suspensions et des pneus larges de 10 pouces en 10x3 : c'est une trottinette pour les longs trajets et les routes abîmées. Sur la voie publique en France, elle doit rester bridée à 25 km/h."
+ ],
+ "specs": [
+  [
+   "Moteurs",
+   "2 × 1 400 W"
+  ],
+  [
+   "Vitesse",
+   "25 km/h sur la voie publique"
+  ],
+  [
+   "Batterie",
+   "60 V : 20,8 Ah (Lite), 25,6 Ah (Super) ou 28 Ah (Pro)"
+  ],
+  [
+   "Autonomie annoncée",
+   "80 à 120 km selon la version (Vsett Shop)"
+  ],
+  [
+   "Poids",
+   "environ 36 à 39 kg selon la version"
+  ],
+  [
+   "Charge max",
+   "120 kg"
+  ],
+  [
+   "Roues",
+   "10 pouces, 10x3.00-6 (80/65-6)"
+  ],
+  [
+   "Freins",
+   "Disques hydrauliques, Ø 145 mm, étrier type Sram Avid"
+  ],
+  [
+   "Suspension",
+   "Avant et arrière"
+  ],
+  [
+   "Étanchéité",
+   "IP54"
+  ],
+  [
+   "Prise de charge",
+   "GX16-3"
+  ],
+  [
+   "Chargeur",
+   "60 V (67,2 V en sortie)"
+  ],
+  [
+   "Temps de charge",
+   "13 h (Super, chargeur 2 A), environ 5 h en charge rapide 5 A"
+  ]
+ ],
+ "pros": [
+  "Trois capacités de batterie au choix, de 20,8 à 28 Ah (Vsett Shop).",
+  "Freinage hydraulique sur les deux roues, avec ABS électrique (Vsett Shop).",
+  "Pneus larges 10x3 et suspensions avant et arrière pour encaisser les mauvaises routes."
+ ],
+ "cons": [
+  "36 à 39 kg selon la version : elle se porte difficilement dans un escalier.",
+  "Recharge longue avec le chargeur standard : jusqu'à 14 h pour la Pro (Vsett Shop).",
+  "Les fiches des revendeurs ne s'accordent pas sur l'autonomie : vérifie la version de ta trottinette (Lite, Super ou Pro) avant de te fier à un chiffre.",
+  "Sa vitesse de pointe n'est utilisable que sur terrain privé : en France, la voie publique est limitée à 25 km/h."
+ ],
+ "parts": [
+  {
+   "label": "Pneu",
+   "size": "80/65-6 (10x3)",
+   "count": 11,
+   "to": "/piece/pneu-80-65-6-10x3-ewheel",
+   "cta": "Pneus 10x3"
+  },
+  {
+   "label": "Chambre à air",
+   "size": "80/65-6 (10x3), valve droite ou coudée",
+   "count": 3,
+   "to": "/piece/chambre-a-air-80-65-6-10x3-valve-coudee-90-ewheel",
+   "cta": "Chambres à air"
+  },
+  {
+   "label": "Plaquettes",
+   "size": "étrier type Sram Avid",
+   "count": 4,
+   "to": "/piece/plaquettes-de-freins-zero-10x-11x-vsett-10-storm-thunder-sram-avid-semi-metallique",
+   "cta": "Plaquettes Sram Avid"
+  },
+  {
+   "label": "Disque de frein",
+   "size": "145 mm, 6 trous, entraxe 44 mm",
+   "count": 1,
+   "to": "/piece/disque-de-freins-145-mm-6-trous",
+   "cta": "Disque 145 mm"
+  },
+  {
+   "label": "Chargeur",
+   "size": "60 V → 67,2 V, prise GX16-3",
+   "count": 2,
+   "to": "/piece/chargeur-60v-672v-2a-connecteur-gx16-3p",
+   "cta": "Chargeurs 60 V"
+  }
+ ],
+ "care": [
+  "Freins hydrauliques : surveille l'épaisseur des plaquettes et purge le circuit dès que le levier devient mou.",
+  "Pneus 10x3 : contrôle la pression avant chaque longue sortie, un pneu sous-gonflé pince la chambre à air et fatigue la jante.",
+  "Avec deux moteurs et près de 40 kg, la visserie de la colonne et des bras de suspension se desserre : vérifie-la régulièrement."
+ ],
+ "price": {
+  "text": "Prix affiché pour la version Super : 2 975 € chez Le Ranch, 2 249,99 € chez Darty (relevés le 19/10/2026).",
+  "source": "le-ranch.fr, darty.com"
+ },
+ "faq": [
+  {
+   "q": "Quelle taille de pneu pour la Vsett 10+ ?",
+   "a": "Des pneus de 10 pouces en 10x3.00-6, aussi notés 80/65-6, sur une jante de 6 pouces."
+  },
+  {
+   "q": "Quel disque de frein pour la Vsett 10+ ?",
+   "a": "Un disque de 145 mm à 6 trous, entraxe 44 mm, à l'avant comme à l'arrière."
+  },
+  {
+   "q": "Quelles plaquettes pour la Vsett 10+ ?",
+   "a": "Des plaquettes pour étrier hydraulique type Sram Avid, en semi-métallique, métal fritté ou céramique selon ton usage."
+  },
+  {
+   "q": "Quel chargeur pour la Vsett 10+ ?",
+   "a": "Un chargeur 60 V (67,2 V en sortie) avec prise GX16-3. Un chargeur rapide réduit la charge à environ 5 heures."
+  },
+  {
+   "q": "Quelle différence entre la Vsett 10+ Lite, Super et Pro ?",
+   "a": "La batterie : 20,8 Ah pour la Lite, 25,6 Ah pour la Super, 28 Ah pour la Pro. Plus la batterie est grosse, plus l'autonomie et le poids augmentent."
+  },
+  {
+   "q": "La Vsett 10+ est-elle légale en France ?",
+   "a": "Oui sur la voie publique à condition d'être bridée à 25 km/h, comme toute trottinette électrique. Débridée, elle n'est utilisable que sur terrain privé."
+  }
+ ],
+ "sources": [
+  {
+   "label": "Vsett Shop Europe — Vsett 10+ (versions Lite, Super, Pro)",
+   "url": "https://vsett-shop.com/fr/produit/vsett-10/"
+  },
+  {
+   "label": "Le Ranch — Vsett 10+ Super",
+   "url": "https://www.le-ranch.fr/product-page/vsett-10-super"
+  },
+  {
+   "label": "Darty — Vsett 10+ Super",
+   "url": "https://www.darty.com/nav/achat/sports_loisirs/glisse_urbaine/trottinette_electrique/vsett_10_super.html"
+  },
+  {
+   "label": "Ministère de la Transition écologique — réglementation des trottinettes",
+   "url": "https://www.ecologie.gouv.fr/politiques-publiques/trottinettes-electriques-edpm-reglementation-vigueur"
+  }
+ ],
+ "video": {
+  "id": "fcyPCi8yHIk",
+  "title": "Critique de la trottinette électrique Vsett 10+",
+  "channel": "Max Blinker France",
+  "uploadDate": "2023-01-02"
+ }
+}

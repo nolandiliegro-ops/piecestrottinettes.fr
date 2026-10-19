@@ -1,0 +1,139 @@
+{
+ "displayName": "Segway Ninebot F2 Pro",
+ "metaTitle": "Ninebot F2 Pro : fiche technique, avis et pièces",
+ "metaDescription": "Ninebot F2 Pro : 450 W (900 W en pointe), 55 km annoncés, pneus 10\" tubeless 60/70-6.5, disque avant 110 mm, suspension avant. Entretien et pièces.",
+ "intro": [
+  "La Segway Ninebot F2 Pro est la trottinette urbaine milieu de gamme de Segway : 18,5 kg, une suspension avant et des pneus tubeless autocicatrisants de 10 pouces, pour les trajets quotidiens en ville.",
+  "Moteur arrière de 450 W (900 W en pointe), batterie de 460 Wh pour 55 km annoncés, frein à disque à l'avant et frein électronique à l'arrière. En France, sa version E est bridée à 25 km/h. Attention à ne pas la confondre avec la F2 Pro E II, un modèle distinct."
+ ],
+ "specs": [
+  [
+   "Moteur",
+   "450 W (900 W en pointe)"
+  ],
+  [
+   "Vitesse",
+   "25 km/h"
+  ],
+  [
+   "Autonomie annoncée",
+   "jusqu'à 55 km (40 km à 25 km/h)"
+  ],
+  [
+   "Batterie",
+   "36 V, 12,8 Ah (460 Wh)"
+  ],
+  [
+   "Poids",
+   "18,5 kg"
+  ],
+  [
+   "Charge max",
+   "120 kg"
+  ],
+  [
+   "Roues",
+   "10 pouces, tubeless autocicatrisants 60/70-6.5"
+  ],
+  [
+   "Freins",
+   "Disque avant Ø 110 mm + électronique arrière"
+  ],
+  [
+   "Suspension",
+   "Avant à ressort"
+  ],
+  [
+   "Étanchéité",
+   "IPX5"
+  ],
+  [
+   "Prise de charge",
+   "RCA"
+  ],
+  [
+   "Chargeur",
+   "36 V (42 V en sortie)"
+  ],
+  [
+   "Temps de charge",
+   "environ 8 h"
+  ]
+ ],
+ "pros": [
+  "18,5 kg avec une suspension avant, ce qui reste rare à ce poids (Segway).",
+  "Pneus tubeless autocicatrisants de 10 pouces avec couche de gel (Segway).",
+  "Étanchéité IPX5 (Segway)."
+ ],
+ "cons": [
+  "Un seul frein mécanique, à l'avant : l'arrière freine électroniquement.",
+  "L'autonomie de 55 km est mesurée dans des conditions favorables ; Segway annonce 40 km à 25 km/h.",
+  "Pas de suspension arrière."
+ ],
+ "parts": [
+  {
+   "label": "Pneu",
+   "size": "60/70-6.5 tubeless (10 pouces)",
+   "count": 14,
+   "to": "/piece/pneu-tubeless-60-70-6-5-wanda",
+   "cta": "Pneus 10 pouces"
+  },
+  {
+   "label": "Chambre à air",
+   "size": "10x2.50, valve droite ou coudée",
+   "count": 6,
+   "to": "/piece/chambre-a-air-10x250-valve-90x90",
+   "cta": "Chambres à air"
+  },
+  {
+   "label": "Chargeur",
+   "size": "36 V → 42 V, prise RCA",
+   "count": 2,
+   "to": "/piece/pack-chargeur-36v-42v-2a-connecteur-rca",
+   "cta": "Chargeurs 36 V"
+  }
+ ],
+ "care": [
+  "Le disque avant est le seul frein mécanique : surveille l'épaisseur des plaquettes et l'état du disque de 110 mm.",
+  "Pneus tubeless : vérifie la pression chaque mois. Le gel rebouche les petites crevaisons, pas les coupures.",
+  "Crevaisons à répétition : la solution d'atelier courante est de poser une chambre à air 10x2.50 dans le pneu."
+ ],
+ "faq": [
+  {
+   "q": "Quelle taille de pneu pour la Ninebot F2 Pro ?",
+   "a": "Des pneus tubeless de 10 pouces en 60/70-6.5, sur une jante de 6,5 pouces."
+  },
+  {
+   "q": "Quel disque de frein pour la Ninebot F2 Pro ?",
+   "a": "Un disque de 110 mm à 5 trous, à l'avant. L'arrière freine électroniquement."
+  },
+  {
+   "q": "Quel chargeur pour la Ninebot F2 Pro ?",
+   "a": "Un chargeur 36 V (42 V en sortie) avec prise RCA. La charge complète prend environ 8 heures selon Segway."
+  },
+  {
+   "q": "Peut-on mettre une chambre à air sur la Ninebot F2 Pro ?",
+   "a": "Oui. Elle est d'origine en tubeless, mais une chambre à air 10x2.50 se monte dans le pneu en cas de crevaisons répétées."
+  },
+  {
+   "q": "Quelle est l'autonomie réelle de la Ninebot F2 Pro ?",
+   "a": "Segway annonce jusqu'à 55 km, et 40 km en roulant à 25 km/h. Ton poids, le froid et le relief la font baisser."
+  }
+ ],
+ "sources": [
+  {
+   "label": "Segway France — Ninebot KickScooter F2 Pro E",
+   "url": "https://fr-fr.segway.com/ekickscooter/products/f2-pro-e.html"
+  },
+  {
+   "label": "Segway France — F2 Pro E II (modèle distinct)",
+   "url": "https://fr-fr.segway.com/ekickscooter/products/f2-pro-e-ii.html"
+  }
+ ],
+ "video": {
+  "id": "hFkKZveMqK0",
+  "title": "Trottinette électrique Ninebot F2 Pro vendue chez Decathlon et Boulanger. TEST dans la vraie vie.",
+  "channel": "iBordelais",
+  "uploadDate": "2023-07-09"
+ }
+}

@@ -1,0 +1,144 @@
+{
+ "displayName": "Xiaomi Electric Scooter 5 Pro",
+ "metaTitle": "Xiaomi 5 Pro : fiche technique, avis et pièces",
+ "metaDescription": "Xiaomi Electric Scooter 5 Pro : 400 W (1 000 W en pointe), suspensions avant et arrière, pneus tubeless 10\" 60/70-6.5, 46,5 km mesurés. Avis et pièces.",
+ "intro": [
+  "La Xiaomi Electric Scooter 5 Pro est présentée en mars 2025 et vendue en France à 503,99 €. C'est la première trottinette de la gamme Pro à être suspendue à l'avant et à l'arrière, avec un contrôle de traction pour la chaussée humide.",
+  "Moteur de 400 W (1 000 W en pointe), batterie de 477 Wh pour 60 km annoncés, pneus tubeless de 10 pouces, frein à tambour à l'avant et freinage électronique à l'arrière. À 22,4 kg, elle vise les trajets quotidiens plus que le transport en commun."
+ ],
+ "specs": [
+  [
+   "Moteur",
+   "400 W (1 000 W en pointe)"
+  ],
+  [
+   "Vitesse",
+   "25 km/h"
+  ],
+  [
+   "Autonomie",
+   "jusqu'à 60 km annoncés, 46,5 km mesurés par le Labo Fnac"
+  ],
+  [
+   "Batterie",
+   "477 Wh"
+  ],
+  [
+   "Poids",
+   "22,4 kg"
+  ],
+  [
+   "Charge max",
+   "120 kg"
+  ],
+  [
+   "Roues",
+   "10 pouces, tubeless 60/70-6.5"
+  ],
+  [
+   "Freins",
+   "Tambour avant + électronique arrière (E-ABS)"
+  ],
+  [
+   "Suspension",
+   "Double ressort à l'avant, ressort à l'arrière"
+  ],
+  [
+   "Étanchéité",
+   "IPX5"
+  ],
+  [
+   "Temps de charge",
+   "environ 9 h annoncées, 8 h 14 mesurées par le Labo Fnac"
+  ],
+  [
+   "Prix de lancement",
+   "503,99 € (mars 2025)"
+  ]
+ ],
+ "pros": [
+  "Stabilité grâce au contrôle de traction, y compris sur chaussée humide (Presse-citron).",
+  "Freinage progressif et stable, intensité du frein régénératif réglable dans l'application (L'Éclaireur Fnac).",
+  "Solide rapport qualité-prix (L'Éclaireur Fnac)."
+ ],
+ "cons": [
+  "Autonomie réelle loin des 60 km : 46,5 km au Labo Fnac, environ 29 km extrapolés par 01net.",
+  "22,4 kg : peu adaptée au transport en commun.",
+  "Un seul frein mécanique, le tambour avant : environ 6 m pour s'arrêter à pleine vitesse (Presse-citron, 01net)."
+ ],
+ "parts": [
+  {
+   "label": "Pneu",
+   "size": "60/70-6.5 tubeless (10 pouces)",
+   "count": 14,
+   "to": "/piece/pneu-tubeless-60-70-6-5-wanda",
+   "cta": "Pneus 10 pouces"
+  },
+  {
+   "label": "Chambre à air",
+   "size": "10x2.50, valve droite ou coudée",
+   "count": 6,
+   "to": "/piece/chambre-a-air-10x250-valve-90x90",
+   "cta": "Chambres à air"
+  }
+ ],
+ "care": [
+  "Le tambour avant est le seul frein mécanique : fais-le régler dès que la course du levier s'allonge.",
+  "Pneus tubeless : vérifie la pression chaque mois, la suspension masque un pneu sous-gonflé qui s'use alors très vite.",
+  "Suspensions à ressort : nettoie les axes et contrôle le jeu des bras, surtout après la pluie."
+ ],
+ "price": {
+  "text": "Prix de lancement en France : 503,99 € (mars 2025).",
+  "source": "Frandroid"
+ },
+ "faq": [
+  {
+   "q": "Quelle taille de pneu pour la Xiaomi 5 Pro ?",
+   "a": "Des pneus tubeless de 10 pouces en 60/70-6.5, sur une jante de 6,5 pouces."
+  },
+  {
+   "q": "La Xiaomi 5 Pro a-t-elle des plaquettes de frein ?",
+   "a": "Non. Elle freine avec un tambour à l'avant et un frein électronique à l'arrière."
+  },
+  {
+   "q": "Quelle est l'autonomie réelle de la Xiaomi 5 Pro ?",
+   "a": "Le Labo Fnac a mesuré 46,5 km, pour 60 km annoncés par Xiaomi dans des conditions favorables (15 km/h, terrain plat)."
+  },
+  {
+   "q": "Peut-on mettre une chambre à air sur la Xiaomi 5 Pro ?",
+   "a": "Oui, une chambre à air 10x2.50 se monte dans le pneu tubeless en cas de crevaisons répétées."
+  },
+  {
+   "q": "La Xiaomi 5 Pro est-elle suspendue ?",
+   "a": "Oui : double ressort à l'avant et ressort à l'arrière."
+  }
+ ],
+ "sources": [
+  {
+   "label": "Xiaomi France — Electric Scooter 5 Pro",
+   "url": "https://www.mi.com/fr/product/xiaomi-electric-scooter-5-pro/specs/"
+  },
+  {
+   "label": "L'Éclaireur Fnac — test Labo Xiaomi 5 Pro",
+   "url": "https://leclaireur.fnac.com/test/595414-test-labo-de-la-xiaomi-miscoot5pron-un-solide-rapport-qualite-prix/"
+  },
+  {
+   "label": "Presse-citron — test Xiaomi Electric Scooter 5 Pro",
+   "url": "https://www.presse-citron.net/test-xiaomi-electric-scooter-5-pro/"
+  },
+  {
+   "label": "01net — test Xiaomi Electric Scooter 5 Pro",
+   "url": "https://www.01net.com/tests/xiaomi-electric-scooter-5-pro-trottinette.html"
+  },
+  {
+   "label": "Frandroid — prix français des trottinettes Xiaomi 2025",
+   "url": "https://www.frandroid.com/marques/xiaomi/2524783_voici-les-prix-francais-des-nouvelles-trottinettes-electriques-xiaomi-baisse-tarifaire-generalisee"
+  }
+ ],
+ "video": {
+  "id": "GEusVGNGYFw",
+  "title": "Tout savoir sur la Xiaomi Scooter 5 Pro ! (Test complet)",
+  "channel": "Discoverdex",
+  "uploadDate": "2025-05-09"
+ }
+}

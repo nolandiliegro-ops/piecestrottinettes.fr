@@ -1,0 +1,172 @@
+{
+ "displayName": "Xiaomi Mi Electric Scooter Pro 2",
+ "metaTitle": "Xiaomi Mi Pro 2 : fiche technique, avis et pièces",
+ "metaDescription": "Xiaomi Mi Pro 2 : 300 W, 45 km annoncés, 14,2 kg, pneus 8,5\" (8.5x2-6.1), disque arrière 120 mm, prise RCA. Entretien et pièces compatibles.",
+ "intro": [
+  "La Xiaomi Mi Electric Scooter Pro 2 est sortie en France en août 2020 au prix de 499,99 €. Héritière de la M365 Pro, c'est l'une des trottinettes les plus vues en atelier, et l'une de celles pour lesquelles on trouve le plus de pièces.",
+  "Moteur de 300 W (600 W en pointe), batterie de 446 Wh pour 45 km annoncés, pneus gonflables de 8,5 pouces, frein à disque à l'arrière et frein électronique à l'avant. À 14,2 kg, elle se plie et se porte facilement."
+ ],
+ "specs": [
+  [
+   "Moteur",
+   "300 W (600 W en pointe)"
+  ],
+  [
+   "Vitesse",
+   "25 km/h"
+  ],
+  [
+   "Autonomie annoncée",
+   "45 km"
+  ],
+  [
+   "Batterie",
+   "36 V, 12 Ah (446 Wh)"
+  ],
+  [
+   "Poids",
+   "14,2 kg"
+  ],
+  [
+   "Charge max",
+   "100 kg"
+  ],
+  [
+   "Roues",
+   "8,5 pouces, 8.5x2-6.1 à chambre à air"
+  ],
+  [
+   "Freins",
+   "Électronique avant (E-ABS) + disque arrière Ø 120 mm"
+  ],
+  [
+   "Suspension",
+   "Aucune"
+  ],
+  [
+   "Étanchéité",
+   "IP54"
+  ],
+  [
+   "Prise de charge",
+   "RCA"
+  ],
+  [
+   "Chargeur",
+   "36 V (42 V en sortie)"
+  ],
+  [
+   "Prix de lancement",
+   "499,99 € (août 2020)"
+  ]
+ ],
+ "pros": [
+  "14,2 kg : légère et facile à plier (Xiaomi).",
+  "Gravit des pentes de 20 % selon Xiaomi (L'Éclaireur Fnac, Futura).",
+  "Énormément de pièces disponibles, des pneus pleins aux plaquettes."
+ ],
+ "cons": [
+  "Peu de changements par rapport à la M365 Pro (Presse-citron).",
+  "Pneus gonflables de 8,5 pouces et pas de suspension : confort limité et crevaisons fréquentes.",
+  "Un seul frein mécanique, à l'arrière."
+ ],
+ "parts": [
+  {
+   "label": "Pneu",
+   "size": "8.5x2-6.1 (50/75-6.1)",
+   "count": 8,
+   "to": "/piece/pneu-8-5x2-xiaomi-50-75-6-1-wanda",
+   "cta": "Pneus 8,5 pouces"
+  },
+  {
+   "label": "Chambre à air",
+   "size": "8.5x2",
+   "count": 6,
+   "to": "/piece/chambre-a-air-85x2-xiaomi-m365",
+   "cta": "Chambres à air"
+  },
+  {
+   "label": "Pneu plein",
+   "size": "8.5x2-6.1",
+   "count": 28,
+   "to": "/piece/pneu-plein-8-5x2-6-1-ultra-leger-jante-34-mm-lisere-rouge-nedong",
+   "cta": "Pneus pleins"
+  },
+  {
+   "label": "Plaquettes",
+   "size": "étrier Xiaomi M365",
+   "count": 2,
+   "to": "/piece/plaquettes-de-frein-xiaomi-m365",
+   "cta": "Plaquettes M365"
+  },
+  {
+   "label": "Disque de frein",
+   "size": "120 mm, 5 trous",
+   "count": 1,
+   "to": "/piece/disque-de-frein-xiaomi-120mm-m365-pro",
+   "cta": "Disque 120 mm"
+  },
+  {
+   "label": "Chargeur",
+   "size": "36 V → 42 V, prise RCA",
+   "count": 2,
+   "to": "/piece/pack-chargeur-36v-42v-2a-connecteur-rca",
+   "cta": "Chargeurs Xiaomi"
+  }
+ ],
+ "care": [
+  "Pneus à chambre à air de 8,5 pouces : la pression est le premier remède contre les crevaisons. Si tu en as assez, des pneus pleins se montent sur ce modèle.",
+  "Le disque arrière de 120 mm est le seul frein mécanique : contrôle les plaquettes et règle l'étrier pour qu'il ne frotte pas.",
+  "Vérifie le jeu du mécanisme de pliage : sur la Pro 2, il s'installe avec les kilomètres et se corrige tôt."
+ ],
+ "price": {
+  "text": "Prix de lancement en France : 499,99 € (août 2020).",
+  "source": "L'Éclaireur Fnac"
+ },
+ "faq": [
+  {
+   "q": "Quelle taille de pneu pour la Xiaomi Mi Pro 2 ?",
+   "a": "Des pneus de 8,5 pouces en 8.5x2 (aussi notés 50/75-6.1), sur une jante de 6,1 pouces, avec chambre à air."
+  },
+  {
+   "q": "Quelles plaquettes pour la Xiaomi Mi Pro 2 ?",
+   "a": "Des plaquettes pour l'étrier Xiaomi M365, le même que sur la M365 et la M365 Pro."
+  },
+  {
+   "q": "Quel disque de frein pour la Xiaomi Mi Pro 2 ?",
+   "a": "Un disque de 120 mm à 5 trous, à l'arrière."
+  },
+  {
+   "q": "Quel chargeur pour la Xiaomi Mi Pro 2 ?",
+   "a": "Un chargeur 36 V (42 V en sortie) avec prise RCA, le format habituel des Xiaomi."
+  },
+  {
+   "q": "Peut-on mettre des pneus pleins sur une Xiaomi Mi Pro 2 ?",
+   "a": "Oui, des pneus pleins 8.5x2-6.1 se montent : plus de crevaison, au prix d'un peu de confort."
+  }
+ ],
+ "sources": [
+  {
+   "label": "Xiaomi France — Mi Electric Scooter Pro 2",
+   "url": "https://www.mi.com/fr/mi-electric-scooter-Pro2/"
+  },
+  {
+   "label": "L'Éclaireur Fnac — annonce Mi Pro 2, 1S et Essential",
+   "url": "https://leclaireur.fnac.com/article/18323-mi-electric-scooter-pro-2-1s-et-essential-xiaomi-multiplie-les-trottinettes/"
+  },
+  {
+   "label": "Futura — Xiaomi lance trois trottinettes électriques",
+   "url": "https://www.futura-sciences.com/tech/actualites/trottinette-electrique-xiaomi-lance-trois-trottinettes-electriques-mi-electric-scooter-france-81972/"
+  },
+  {
+   "label": "Presse-citron — Pro 2, Essential et 1S",
+   "url": "https://www.presse-citron.net/xiaomi-lance-trois-trottinettes-electriques-pro-2-essential-1s-date-de-sortie-prix-et-caracteristiques/"
+  }
+ ],
+ "video": {
+  "id": "3m0aI-xs6cw",
+  "title": "LA TROTINETTE ÉLECTRIQUE PARFAITE ET PAS CHER !  Xiaomi m365 pro 2",
+  "channel": "LazyTV",
+  "uploadDate": "2021-04-06"
+ }
+}
