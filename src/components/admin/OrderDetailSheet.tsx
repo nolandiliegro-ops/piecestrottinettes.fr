@@ -75,7 +75,8 @@ interface OrderDetailSheetProps {
 }
 
 const statusOptions = [
-  { value: "pending", label: "En attente", color: "bg-orange-500" },
+  { value: "awaiting_payment", label: "En attente de paiement", color: "bg-orange-500" },
+  { value: "paid", label: "Payé", color: "bg-emerald-500" },
   { value: "processing", label: "En préparation", color: "bg-blue-500" },
   { value: "shipped", label: "Expédié", color: "bg-mineral" },
   { value: "delivered", label: "Livré", color: "bg-green-500" },
@@ -324,7 +325,7 @@ const OrderDetailSheet = ({ order, isOpen, onClose, onStatusUpdate }: OrderDetai
                   </SelectValue>
                 </SelectTrigger>
                 <SelectContent>
-                  {statusOptions.map((status) => (
+                  {statusOptions.filter(s => s.value !== 'awaiting_payment').map((status) => (
                     <SelectItem key={status.value} value={status.value}>
                       <div className="flex items-center gap-2">
                         <div className={`w-2 h-2 rounded-full ${status.color}`} />

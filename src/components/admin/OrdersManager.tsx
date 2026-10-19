@@ -58,10 +58,10 @@ const statusConfig: Record<string, {
   textClass: string;
   dotColor: string;
 }> = {
-  pending: { 
-    label: "En attente", 
+  awaiting_payment: {
+    label: "En attente de paiement",
     bgClass: "bg-orange-500/15",
-    textClass: "text-orange-500",
+    textClass: "text-orange-600",
     dotColor: "bg-orange-500"
   },
   paid: { 
@@ -100,6 +100,10 @@ const statusOptions = Object.entries(statusConfig).map(([value, config]) => ({
   value,
   ...config,
 }));
+
+// Statuts qu'on peut POSER à la main — on ne remet jamais une commande
+// « en attente de paiement » (statut réservé au flux Stripe).
+const transitionOptions = statusOptions.filter(s => s.value !== 'awaiting_payment');
 
 // Status Filter Bar Component
 const StatusFilterBar = ({ 
@@ -170,7 +174,7 @@ const StatusDropdown = ({
   onStatusChange: (orderId: string, newStatus: string) => void;
   isUpdating: boolean;
 }) => {
-  const currentStatus = statusConfig[order.status] || statusConfig.pending;
+  const currentStatus = statusConfig[order.status] || statusConfig.awaiting_payment;
   
   return (
     <DropdownMenu>
@@ -214,7 +218,7 @@ const StatusDropdown = ({
         </DropdownMenuLabel>
         <DropdownMenuSeparator className="bg-border/50" />
         
-        {statusOptions.map((status) => (
+        {transitionOptions.map((status) => (
           <DropdownMenuItem
             key={status.value}
             onClick={() => onStatusChange(order.id, status.value)}
