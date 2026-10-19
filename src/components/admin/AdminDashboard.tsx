@@ -1,133 +1,286 @@
-import { useEffect, useState } from 'react';
+import { useQuery } from '@tanstack/react-query';
+import { Link } from 'react-router-dom';
+import {
+  BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer,
+} from 'recharts';
+import {
+  PackageCheck, Truck, MessageSquare, Bot, AlertTriangle, TrendingUp, TrendingDown,
+  Plus, Ticket, ExternalLink, ChevronRight, Euro,
+} from 'lucide-react';
 import { supabase } from '@/integrations/supabase/client';
-import { motion } from 'framer-motion';
-import { Package, Bike, ShoppingBag, AlertTriangle, TrendingUp, Eye } from 'lucide-react';
 import { cn } from '@/lib/utils';
 
+/* ───────────────────────── Types & data ───────────────────────── */
+
 interface DashboardStats {
-  totalParts: number;
-  totalScooters: number;
-  totalOrders: number;
-  lowStockCount: number;
-  recentOrders: { id: string; order_number: string; total_ttc: number; status: string; created_at: string }[];
+  ca_today: number;
+  ca_7d: number;
+  ca_30d: number;
+  ca_prev_30d: number;
+  ca_total: number;
+  orders_to_prepare: number;
+  orders_to_ship: number;
+  messages_pending: number;
+  imports_scooters: number;
+  imports_parts: number;
+  stock_low: number;
+  parts_published: number;
+  scooters_published: number;
+  sales_30d: { day: string; total: number }[];
+  recent_orders: {
+    id: string; order_number: string; total_ttc: number; status: string;
+    created_at: string; client: string | null;
+  }[];
 }
 
-const StatSkeleton = () => (
-  <div className="admin-glass-card rounded-2xl p-5">
-    <div className="admin-skeleton h-4 w-20 rounded mb-3" />
-    <div className="admin-skeleton h-8 w-16 rounded mb-2" />
-    <div className="admin-skeleton h-3 w-24 rounded" />
+const useDashboardStats = () =>
+  useQuery({
+    queryKey: ['admin-dashboard-stats'],
+    staleTime: 60_000,
+    queryFn: async (): Promise<DashboardStats> => {
+      // RPC créée le 19/10/2026 — pas encore dans types.ts généré, d'où le cast.
+      const { data, error } = await (supabase.rpc as CallableFunction)('admin_dashboard_stats');
+      if (error) throw error;
+      return data as DashboardStats;
+    },
+  });
+
+/* ───────────────────────── Formatters ───────────────────────── */
+
+const eur = new Intl.NumberFormat('fr-FR', { style: 'currency', currency: 'EUR' });
+const eurCompact = (v: number) => (v >= 1000 ? `${Math.round(v / 100) / 10} k€` : `${Math.round(v)} €`);
+const dayShort = new Intl.DateTimeFormat('fr-FR', { day: 'numeric', month: 'short' });
+const dateShort = new Intl.DateTimeFormat('fr-FR', { day: '2-digit', month: '2-digit', year: 'numeric' });
+
+/** Tous les statuts réels de la base — awaiting_payment inclus (l'ancien écran l'ignorait). */
+const STATUS_FR: Record<string, { label: string; cls: string }> = {
+  awaiting_payment: { label: 'En attente', cls: 'bg-amber-100 text-amber-800' },
+  pending: { label: 'En attente', cls: 'bg-amber-100 text-amber-800' },
+  paid: { label: 'Payé', cls: 'bg-[hsl(var(--admin-accent)/0.15)] text-[hsl(var(--admin-accent))]' },
+  processing: { label: 'En préparation', cls: 'bg-blue-100 text-blue-800' },
+  shipped: { label: 'Expédié', cls: 'bg-indigo-100 text-indigo-800' },
+  delivered: { label: 'Livré', cls: 'bg-emerald-100 text-emerald-800' },
+  cancelled: { label: 'Annulé', cls: 'bg-red-100 text-red-700' },
+};
+
+/* ───────────────────────── Petits blocs ───────────────────────── */
+
+const Skeleton = ({ className }: { className?: string }) => (
+  <div className={cn('admin-skeleton rounded-xl', className)} />
+);
+
+const CaTile = ({ label, value, delta }: { label: string; value: number; delta?: number | null }) => (
+  <div className="admin-glass-card rounded-2xl p-4">
+    <p className="text-xs font-semibold uppercase tracking-wide text-[hsl(var(--admin-text-muted))]">{label}</p>
+    <p className="text-2xl md:text-3xl font-black tracking-tight mt-1 text-[hsl(var(--admin-text))]">{eur.format(value)}</p>
+    {delta != null && Number.isFinite(delta) && (
+      <p className={cn('flex items-center gap-1 text-xs font-semibold mt-1', delta >= 0 ? 'text-[hsl(var(--admin-accent))]' : 'text-red-600')}>
+        {delta >= 0 ? <TrendingUp className="w-3.5 h-3.5" /> : <TrendingDown className="w-3.5 h-3.5" />}
+        {delta >= 0 ? '+' : ''}{Math.round(delta)}&nbsp;% vs 30 j précédents
+      </p>
+    )}
   </div>
 );
 
+interface TodoItem {
+  to: string; icon: typeof PackageCheck; label: string; count: number;
+  urgent?: boolean;
+}
+
+const TodoRow = ({ item }: { item: TodoItem }) => {
+  const Icon = item.icon;
+  return (
+    <Link
+      to={item.to}
+      className="flex items-center gap-3 min-h-[52px] px-3 rounded-xl hover:bg-[hsl(var(--aov04))] transition-colors"
+    >
+      <span className={cn(
+        'w-9 h-9 rounded-lg flex items-center justify-center shrink-0',
+        item.urgent ? 'bg-orange-100 text-orange-600' : 'bg-[hsl(var(--admin-accent)/0.12)] text-[hsl(var(--admin-accent))]'
+      )}>
+        <Icon className="w-[18px] h-[18px]" />
+      </span>
+      <span className="flex-1 text-sm font-medium text-[hsl(var(--admin-text))]">{item.label}</span>
+      <span className={cn(
+        'min-w-[26px] h-[26px] px-2 rounded-full flex items-center justify-center text-sm font-bold',
+        item.count > 0
+          ? (item.urgent ? 'bg-orange-600 text-white' : 'bg-[hsl(var(--admin-accent))] text-white')
+          : 'bg-[hsl(var(--aov06))] text-[hsl(var(--admin-text-muted))]'
+      )}>
+        {item.count}
+      </span>
+      <ChevronRight className="w-4 h-4 text-[hsl(var(--admin-text-muted))]" />
+    </Link>
+  );
+};
+
+const SalesTooltip = ({ active, payload, label }: { active?: boolean; payload?: { value: number }[]; label?: string }) => {
+  if (!active || !payload?.length) return null;
+  return (
+    <div className="admin-glass-card rounded-lg px-3 py-2 text-sm">
+      <p className="text-[hsl(var(--admin-text-muted))] text-xs">{label}</p>
+      <p className="font-bold text-[hsl(var(--admin-text))]">{eur.format(payload[0].value)}</p>
+    </div>
+  );
+};
+
+/* ───────────────────────── Dashboard ───────────────────────── */
+
 const AdminDashboard = () => {
-  const [stats, setStats] = useState<DashboardStats | null>(null);
-  const [loading, setLoading] = useState(true);
+  const { data: stats, isLoading, error } = useDashboardStats();
 
-  useEffect(() => {
-    const fetchStats = async () => {
-      try {
-        const [partsRes, scootersRes, ordersRes, lowStockRes, recentOrdersRes] = await Promise.all([
-          supabase.from('parts').select('id', { count: 'exact', head: true }),
-          supabase.from('scooter_models').select('id', { count: 'exact', head: true }),
-          supabase.from('orders').select('id', { count: 'exact', head: true }),
-          supabase.from('parts').select('id', { count: 'exact', head: true }).lt('stock_quantity', 5),
-          supabase.from('orders').select('id, order_number, total_ttc, status, created_at').order('created_at', { ascending: false }).limit(5),
-        ]);
+  if (error) {
+    return (
+      <div className="p-4">
+        <div className="admin-glass-card rounded-2xl p-5 text-sm text-red-700">
+          Impossible de charger les chiffres : {(error as Error).message}
+        </div>
+      </div>
+    );
+  }
 
-        setStats({
-          totalParts: partsRes.count || 0,
-          totalScooters: scootersRes.count || 0,
-          totalOrders: ordersRes.count || 0,
-          lowStockCount: lowStockRes.count || 0,
-          recentOrders: recentOrdersRes.data || [],
-        });
-      } catch (error) {
-        console.error('Error fetching dashboard stats:', error);
-      } finally {
-        setLoading(false);
-      }
-    };
-    fetchStats();
-  }, []);
+  const delta30 = stats && stats.ca_prev_30d > 0
+    ? ((stats.ca_30d - stats.ca_prev_30d) / stats.ca_prev_30d) * 100
+    : null;
 
-  const statCards = [
-    { label: 'Pièces', value: stats?.totalParts, icon: Package, color: 'text-primary' },
-    { label: 'Trottinettes', value: stats?.totalScooters, icon: Bike, color: 'text-blue-400' },
-    { label: 'Commandes', value: stats?.totalOrders, icon: ShoppingBag, color: 'text-amber-400' },
-    { label: 'Stock Bas', value: stats?.lowStockCount, icon: AlertTriangle, color: 'text-destructive' },
-  ];
+  const todos: TodoItem[] = stats ? [
+    { to: '/admin/commandes', icon: PackageCheck, label: 'Commandes à préparer', count: stats.orders_to_prepare, urgent: true },
+    { to: '/admin/commandes', icon: Truck, label: 'Commandes à expédier', count: stats.orders_to_ship, urgent: true },
+    { to: '/admin/messages', icon: MessageSquare, label: 'Messages en attente', count: stats.messages_pending },
+    { to: '/admin/bots', icon: Bot, label: 'Imports bot à valider', count: stats.imports_scooters + stats.imports_parts },
+    { to: '/admin/catalogue/pieces', icon: AlertTriangle, label: 'Stock bas (pièces publiées)', count: stats.stock_low },
+  ] : [];
 
-  const statusLabel: Record<string, { label: string; color: string }> = {
-    pending: { label: 'En attente', color: 'bg-amber-500/20 text-amber-400' },
-    paid: { label: 'Payé', color: 'bg-primary/20 text-primary' },
-    shipped: { label: 'Expédié', color: 'bg-blue-500/20 text-blue-400' },
-    delivered: { label: 'Livré', color: 'bg-green-500/20 text-green-400' },
-  };
+  const chartData = (stats?.sales_30d ?? []).map(d => ({
+    day: dayShort.format(new Date(d.day)),
+    total: Number(d.total),
+  }));
 
   return (
-    <div className="p-4 space-y-4">
-      {/* Stats Grid - Bento */}
-      <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
-        {loading ? (
-          <>
-            <StatSkeleton /><StatSkeleton /><StatSkeleton /><StatSkeleton />
-          </>
-        ) : (
-          statCards.map((card, i) => {
-            const Icon = card.icon;
-            return (
-              <motion.div
-                key={card.label}
-                initial={{ opacity: 0, y: 12 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ delay: i * 0.05 }}
-                className="admin-glass-card rounded-2xl p-4"
-              >
-                <div className="flex items-center gap-2 mb-2">
-                  <Icon className={cn("w-4 h-4", card.color)} />
-                  <span className="text-xs text-[hsl(var(--al55))]">{card.label}</span>
-                </div>
-                <p className="text-2xl font-bold">{card.value}</p>
-              </motion.div>
-            );
-          })
-        )}
+    <div className="p-3 md:p-5 space-y-3 md:space-y-4 max-w-6xl">
+      <div className="flex items-center justify-between px-1">
+        <h1 className="font-display text-2xl tracking-wide text-[hsl(var(--admin-text))]">ACCUEIL</h1>
+        <p className="text-xs text-[hsl(var(--admin-text-muted))]">
+          {stats ? `${stats.parts_published} pièces · ${stats.scooters_published} trott. publiées` : ''}
+        </p>
       </div>
 
-      {/* Recent Orders */}
-      <div className="admin-glass-card rounded-2xl p-4">
-        <div className="flex items-center gap-2 mb-4">
-          <TrendingUp className="w-4 h-4 text-primary" />
-          <h2 className="text-sm font-semibold">Commandes récentes</h2>
+      {/* Bandeau CA — encaissé réel (payé → livré) */}
+      {isLoading ? (
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
+          <Skeleton className="h-24" /><Skeleton className="h-24" /><Skeleton className="h-24" />
         </div>
-        {loading ? (
-          <div className="space-y-3">
-            {[1, 2, 3].map(i => (
-              <div key={i} className="admin-skeleton h-14 rounded-xl" />
-            ))}
+      ) : stats && (
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
+          <CaTile label="Aujourd'hui" value={stats.ca_today} />
+          <CaTile label="7 jours" value={stats.ca_7d} />
+          <CaTile label="30 jours" value={stats.ca_30d} delta={delta30} />
+        </div>
+      )}
+
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-3 md:gap-4">
+        {/* À traiter */}
+        <div className="admin-glass-card rounded-2xl p-3 md:p-4">
+          <h2 className="text-sm font-black uppercase tracking-wide px-3 pt-1 pb-2 text-[hsl(var(--admin-text))]">À traiter</h2>
+          {isLoading ? (
+            <div className="space-y-2 p-2"><Skeleton className="h-12" /><Skeleton className="h-12" /><Skeleton className="h-12" /></div>
+          ) : (
+            <div>{todos.map(t => <TodoRow key={t.label} item={t} />)}</div>
+          )}
+        </div>
+
+        {/* Ventes 30 jours */}
+        <div className="admin-glass-card rounded-2xl p-3 md:p-4">
+          <div className="flex items-baseline justify-between px-3 pt-1 pb-2">
+            <h2 className="text-sm font-black uppercase tracking-wide text-[hsl(var(--admin-text))]">Ventes — 30 jours</h2>
+            {stats && <span className="text-xs text-[hsl(var(--admin-text-muted))]">Total encaissé : {eur.format(stats.ca_total)}</span>}
           </div>
-        ) : stats?.recentOrders.length === 0 ? (
-          <p className="text-sm text-[hsl(var(--al55))] text-center py-6">Aucune commande</p>
+          {isLoading ? (
+            <Skeleton className="h-44 m-2" />
+          ) : (
+            <div className="h-44 md:h-52">
+              <ResponsiveContainer width="100%" height="100%">
+                <BarChart data={chartData} margin={{ top: 8, right: 8, left: 0, bottom: 0 }}>
+                  <CartesianGrid vertical={false} stroke="hsl(40 14% 90%)" />
+                  <XAxis
+                    dataKey="day"
+                    tick={{ fontSize: 11, fill: 'hsl(220 9% 46%)' }}
+                    tickLine={false} axisLine={false} interval={6}
+                  />
+                  <YAxis
+                    tick={{ fontSize: 11, fill: 'hsl(220 9% 46%)' }}
+                    tickLine={false} axisLine={false} width={42}
+                    tickFormatter={eurCompact} allowDecimals={false}
+                  />
+                  <Tooltip content={<SalesTooltip />} cursor={{ fill: 'hsl(0 0% 10% / 0.05)' }} />
+                  <Bar dataKey="total" fill="hsl(140 26% 39%)" radius={[4, 4, 0, 0]} maxBarSize={14} />
+                </BarChart>
+              </ResponsiveContainer>
+            </div>
+          )}
+        </div>
+      </div>
+
+      {/* Actions rapides */}
+      <div className="grid grid-cols-3 gap-2 md:gap-3">
+        {[
+          { to: '/admin/catalogue/pieces', icon: Plus, label: 'Ajouter une pièce' },
+          { to: '/admin/marketing', icon: Ticket, label: 'Codes promo' },
+          { to: '/', icon: ExternalLink, label: 'Voir le site', external: true },
+        ].map(a => {
+          const Icon = a.icon;
+          const inner = (
+            <>
+              <Icon className="w-5 h-5 text-[hsl(var(--admin-accent))]" />
+              <span className="text-xs md:text-sm font-semibold text-[hsl(var(--admin-text))] text-center">{a.label}</span>
+            </>
+          );
+          return a.external ? (
+            <a key={a.label} href={a.to} target="_blank" rel="noreferrer"
+               className="admin-glass-card rounded-2xl min-h-[64px] flex flex-col items-center justify-center gap-1.5 p-2 hover:bg-[hsl(var(--aov03))] transition-colors">
+              {inner}
+            </a>
+          ) : (
+            <Link key={a.label} to={a.to}
+                  className="admin-glass-card rounded-2xl min-h-[64px] flex flex-col items-center justify-center gap-1.5 p-2 hover:bg-[hsl(var(--aov03))] transition-colors">
+              {inner}
+            </Link>
+          );
+        })}
+      </div>
+
+      {/* Commandes récentes */}
+      <div className="admin-glass-card rounded-2xl p-3 md:p-4">
+        <div className="flex items-center justify-between px-3 pt-1 pb-2">
+          <h2 className="text-sm font-black uppercase tracking-wide text-[hsl(var(--admin-text))]">Commandes récentes</h2>
+          <Link to="/admin/commandes" className="text-xs font-semibold text-[hsl(var(--admin-accent))] hover:underline">
+            Tout voir
+          </Link>
+        </div>
+        {isLoading ? (
+          <div className="space-y-2 p-2"><Skeleton className="h-12" /><Skeleton className="h-12" /><Skeleton className="h-12" /></div>
+        ) : !stats?.recent_orders.length ? (
+          <p className="text-sm text-[hsl(var(--admin-text-muted))] text-center py-6">Aucune commande</p>
         ) : (
-          <div className="space-y-2">
-            {stats?.recentOrders.map((order) => {
-              const status = statusLabel[order.status] || { label: order.status, color: 'bg-muted text-muted-foreground' };
+          <div>
+            {stats.recent_orders.map(o => {
+              const st = STATUS_FR[o.status] ?? { label: o.status, cls: 'bg-[hsl(var(--aov06))] text-[hsl(var(--admin-text-muted))]' };
               return (
-                <div key={order.id} className="flex items-center justify-between p-3 rounded-xl bg-[hsl(var(--aov03))] hover:bg-[hsl(var(--aov06))] transition-colors">
-                  <div>
-                    <p className="text-sm font-medium">#{order.order_number}</p>
-                    <p className="text-xs text-[hsl(var(--al55))]">
-                      {new Date(order.created_at).toLocaleDateString('fr-FR')}
+                <Link
+                  key={o.id}
+                  to="/admin/commandes"
+                  className="flex items-center gap-3 min-h-[52px] px-3 rounded-xl hover:bg-[hsl(var(--aov04))] transition-colors"
+                >
+                  <Euro className="w-4 h-4 text-[hsl(var(--admin-text-muted))] shrink-0" />
+                  <div className="flex-1 min-w-0">
+                    <p className="text-sm font-semibold text-[hsl(var(--admin-text))] truncate">#{o.order_number}</p>
+                    <p className="text-xs text-[hsl(var(--admin-text-muted))] truncate">
+                      {o.client || '—'} · {dateShort.format(new Date(o.created_at))}
                     </p>
                   </div>
-                  <div className="flex items-center gap-3">
-                    <span className={cn("text-[10px] px-2 py-0.5 rounded-full font-medium", status.color)}>
-                      {status.label}
-                    </span>
-                    <span className="text-sm font-bold">{order.total_ttc.toFixed(2)}€</span>
-                  </div>
-                </div>
+                  <span className={cn('text-[11px] font-bold px-2 py-1 rounded-full whitespace-nowrap', st.cls)}>{st.label}</span>
+                  <span className="text-sm font-bold text-[hsl(var(--admin-text))] whitespace-nowrap">{eur.format(o.total_ttc)}</span>
+                </Link>
               );
             })}
           </div>
