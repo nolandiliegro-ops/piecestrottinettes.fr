@@ -1,0 +1,157 @@
+{
+ "displayName": "Kaabo Wolf Warrior 11 Plus",
+ "metaTitle": "Kaabo Wolf Warrior 11 Plus : fiche technique, avis et pièces",
+ "metaDescription": "Kaabo Wolf Warrior 11 Plus : bimoteur 60 V, pneus 90/65-6.5 de 11 pouces, disques 160 mm, étrier Zoom. Avis, versions 26 et 35 Ah, entretien et pièces.",
+ "intro": [
+  "La Kaabo Wolf Warrior 11 Plus, ou Wolf Warrior 11+, est la version renforcée de la Wolf Warrior 11 d'origine. Ce n'est ni la 11 Max sortie ensuite, ni une Wolf Warrior X en 10 pouces : elle a deux moteurs de 1 200 W et une batterie 60 V de 26 ou 35 Ah selon la configuration.",
+  "Freins hydrauliques à disque de 160 mm, fourche hydraulique à l'avant, ressort à l'arrière et pneus de 11 pouces en 90/65-6.5 : c'est une tout-terrain d'environ 46 kg selon Bougez Électrique. Annoncée à 80 km/h sur terrain privé, elle reste bridée à 25 km/h sur la voie publique en France."
+ ],
+ "specs": [
+  [
+   "Moteurs",
+   "2 × 1 200 W, 5 400 W en pointe"
+  ],
+  [
+   "Vitesse",
+   "25 km/h sur la voie publique"
+  ],
+  [
+   "Batterie",
+   "60 V : 26 Ah (1 560 Wh) ou 35 Ah (2 100 Wh) selon la configuration"
+  ],
+  [
+   "Autonomie",
+   "150 km en mode éco et 70 km en mode turbo relevés par Bougez Électrique"
+  ],
+  [
+   "Poids",
+   "environ 46 kg (44 à 48 kg selon les fiches)"
+  ],
+  [
+   "Charge max",
+   "150 kg"
+  ],
+  [
+   "Roues",
+   "11 pouces, 90/65-6.5"
+  ],
+  [
+   "Freins",
+   "Disques hydrauliques 160 mm avant et arrière, étrier Zoom"
+  ],
+  [
+   "Suspension",
+   "Fourche hydraulique à l'avant, ressort type C à l'arrière"
+  ],
+  [
+   "Étanchéité",
+   "IPX5 selon E-Volty, IP54 selon Hover-Store"
+  ],
+  [
+   "Chargeur",
+   "60 V"
+  ],
+  [
+   "Temps de charge",
+   "environ 17 h avec un chargeur 2 A, 7 h avec deux"
+  ]
+ ],
+ "pros": [
+  "Grande endurance : 150 km en mode éco relevés lors de l'essai (Bougez Électrique).",
+  "Deux moteurs de 1 200 W pour 5 400 W en pointe (Bougez Électrique, E-Volty).",
+  "Deux prises de charge : la recharge descend à 7 h avec deux chargeurs (Bougez Électrique)."
+ ],
+ "cons": [
+  "Environ 46 kg : elle se porte difficilement (Bougez Électrique).",
+  "Recharge très longue avec un seul chargeur : environ 17 h (Bougez Électrique).",
+  "Deux batteries circulent sous le même nom, 26 et 35 Ah : vérifie la tienne avant de te fier à un chiffre d'autonomie ou de prix.",
+  "Sa vitesse de pointe n'est utilisable que sur terrain privé : en France, la voie publique est limitée à 25 km/h."
+ ],
+ "parts": [
+  {
+   "label": "Pneu",
+   "size": "90/65-6.5 (11 pouces)",
+   "count": 11,
+   "to": "/piece/pneu-90-65-6-5-route-tubeless",
+   "cta": "Pneus 90/65-6.5"
+  },
+  {
+   "label": "Chambre à air",
+   "size": "90/65-6.5, valve droite ou coudée",
+   "count": 5,
+   "to": "/piece/chambre-a-air-9065-65-valve-droite",
+   "cta": "Chambres à air"
+  },
+  {
+   "label": "Plaquettes",
+   "size": "étrier Zoom",
+   "count": 5,
+   "to": "/piece/plaquettes-de-frein-zoom-semi-metallique",
+   "cta": "Plaquettes Zoom"
+  },
+  {
+   "label": "Disque de frein",
+   "size": "160 mm, 6 trous, entraxe 44 mm",
+   "count": 7,
+   "to": "/piece/disque-de-frein-160mm",
+   "cta": "Disques 160 mm"
+  }
+ ],
+ "care": [
+  "Freins hydrauliques : surveille l'épaisseur des plaquettes et purge le circuit dès que le levier devient mou.",
+  "Pneus 90/65-6.5 : contrôle la pression avant chaque sortie, à 46 kg un pneu mou pince la chambre à air.",
+  "Fourche hydraulique : nettoie les tubes après une sortie boueuse et resserre la visserie du bras arrière."
+ ],
+ "faq": [
+  {
+   "q": "Quelle taille de pneu pour la Kaabo Wolf Warrior 11 Plus ?",
+   "a": "Des pneus de 11 pouces en 90/65-6.5, sur une jante de 6,5 pouces, en version route ou tout-terrain."
+  },
+  {
+   "q": "Quelles plaquettes pour la Kaabo Wolf Warrior 11 Plus ?",
+   "a": "Des plaquettes pour étrier hydraulique Zoom, en semi-métallique, métal fritté ou céramique."
+  },
+  {
+   "q": "Quel disque de frein pour la Kaabo Wolf Warrior 11 Plus ?",
+   "a": "Un disque de 160 mm à 6 trous, entraxe 44 mm, à l'avant comme à l'arrière."
+  },
+  {
+   "q": "Quelle est l'autonomie réelle de la Kaabo Wolf Warrior 11 Plus ?",
+   "a": "Bougez Électrique a relevé 150 km en mode éco et 70 km en mode turbo. L'autonomie dépend aussi de la batterie montée, 26 ou 35 Ah."
+  },
+  {
+   "q": "Combien de temps pour recharger la Kaabo Wolf Warrior 11 Plus ?",
+   "a": "Environ 17 h avec un seul chargeur 2 A, 7 h avec deux chargeurs branchés sur les deux prises."
+  },
+  {
+   "q": "La Kaabo Wolf Warrior 11 Plus est-elle légale en France ?",
+   "a": "Oui sur la voie publique à condition d'être bridée à 25 km/h, comme toute trottinette électrique. Débridée, elle n'est utilisable que sur terrain privé."
+  }
+ ],
+ "sources": [
+  {
+   "label": "Bougez Électrique — test Kaabo Wolf Warrior 11 Plus",
+   "url": "https://bougez-electrique.fr/test-avis-kaabo-wolf-warrior-11-plus/"
+  },
+  {
+   "label": "E-Volty — Kaabo Wolf Warrior 11 Plus",
+   "url": "https://www.e-volty.com/products/trottinette-electrique-kaabo-wolf-warrior-11-plus"
+  },
+  {
+   "label": "Cyclobike — Kaabo Wolf Warrior 11 Plus 60 V 26 Ah",
+   "url": "https://cyclobike.fr/products/trottinette-electrique-kaabo-wolf-warrior-11-plus-60v-26ah"
+  },
+  {
+   "label": "Hover-Store — Kaabo Wolf Warrior 11",
+   "url": "https://hover-store.fr/boutique/etrottinette/e-trottinette-tout-terrain/trottinette-electrique-wolf-warrior-11/"
+  },
+  {
+   "label": "MyTrott — Kaabo Wolf Warrior 11 Plus",
+   "url": "https://mytrott.com/produit/kaabo-wolf-warrior-11-plus/"
+  },
+  {
+   "label": "Ministère de la Transition écologique — réglementation des trottinettes",
+   "url": "https://www.ecologie.gouv.fr/politiques-publiques/trottinettes-electriques-edpm-reglementation-vigueur"
+  }
+ ]
+}

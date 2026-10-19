@@ -1,0 +1,150 @@
+{
+ "displayName": "Kaabo Wolf Warrior GT Pro",
+ "metaTitle": "Kaabo Wolf Warrior GT Pro : fiche technique et pièces",
+ "metaDescription": "Kaabo Wolf Warrior GT Pro : bimoteur 60 V 35 Ah, pneus tubeless 90/65-6.5, disques 160 mm, prise GX16-3, IPX5. Entretien et pièces compatibles.",
+ "intro": [
+  "La Kaabo Wolf Warrior GT Pro est la Wolf Warrior de 11 pouces en 60 V. À ne pas confondre avec la Wolf King GT Pro, qui passe en 72 V : la Wolf Warrior GT Pro a deux moteurs de 1 200 W et une batterie de 35 Ah, soit 2 100 Wh.",
+  "Freins hydrauliques à disque de 160 mm avec ABS, suspensions avant et arrière, pneus tubeless tout-terrain de 11 pouces et 50 kg selon Over Watt et Nature et Découvertes : c'est une grosse tout-terrain. Annoncée à 80 km/h sur terrain privé, elle reste bridée à 25 km/h sur la voie publique."
+ ],
+ "specs": [
+  [
+   "Moteurs",
+   "2 × 1 200 W, 5 400 à 6 500 W en pointe selon les fiches"
+  ],
+  [
+   "Vitesse",
+   "25 km/h sur la voie publique"
+  ],
+  [
+   "Batterie",
+   "60 V, 35 Ah (2 100 Wh)"
+  ],
+  [
+   "Autonomie annoncée",
+   "jusqu'à 150 km"
+  ],
+  [
+   "Poids",
+   "50 kg"
+  ],
+  [
+   "Charge max",
+   "150 kg"
+  ],
+  [
+   "Roues",
+   "11 pouces, tubeless 90/65-6.5"
+  ],
+  [
+   "Freins",
+   "Disques hydrauliques 160 mm avant et arrière, ABS"
+  ],
+  [
+   "Suspension",
+   "Fourche hydraulique inversée à l'avant, ressort à l'arrière"
+  ],
+  [
+   "Étanchéité",
+   "IPX5"
+  ],
+  [
+   "Prise de charge",
+   "GX16-3 (selon Nature et Découvertes)"
+  ],
+  [
+   "Temps de charge",
+   "environ 8 h"
+  ]
+ ],
+ "pros": [
+  "Batterie de 2 100 Wh pour 150 km annoncés (Over Watt, Nature et Découvertes).",
+  "Freins hydrauliques à disque de 160 mm avec ABS (Nature et Découvertes).",
+  "Pneus tubeless tout-terrain de 11 pouces (Nature et Découvertes)."
+ ],
+ "cons": [
+  "50 kg : elle ne se porte pas.",
+  "La puissance de pointe varie selon les fiches, de 5 400 à 6 500 W : aucune valeur constructeur confirmée.",
+  "Aucun test de presse français publié : les chiffres viennent des distributeurs.",
+  "Sa vitesse de pointe n'est utilisable que sur terrain privé : en France, la voie publique est limitée à 25 km/h."
+ ],
+ "parts": [
+  {
+   "label": "Pneu",
+   "size": "90/65-6.5 (11 pouces)",
+   "count": 11,
+   "to": "/piece/pneu-90-65-6-5-off-road-tubeless",
+   "cta": "Pneus 90/65-6.5"
+  },
+  {
+   "label": "Chambre à air",
+   "size": "90/65-6.5, valve droite ou coudée",
+   "count": 5,
+   "to": "/piece/chambre-a-air-9065-65-valve-droite",
+   "cta": "Chambres à air"
+  },
+  {
+   "label": "Disque de frein",
+   "size": "160 mm, 6 trous, entraxe 44 mm",
+   "count": 7,
+   "to": "/piece/disque-de-frein-160mm",
+   "cta": "Disques 160 mm"
+  }
+ ],
+ "care": [
+  "Freins hydrauliques : surveille l'épaisseur des plaquettes et purge le circuit dès que le levier devient mou.",
+  "Pneus tubeless : contrôle la pression avant chaque sortie, Nature et Découvertes indique 3 bars.",
+  "À 50 kg, la visserie de la fourche et du bras arrière travaille : resserre-la régulièrement."
+ ],
+ "price": {
+  "text": "Prix de lancement relevé par Cleanrider : 3 499 € (2022).",
+  "source": "Cleanrider"
+ },
+ "faq": [
+  {
+   "q": "Quelle taille de pneu pour la Kaabo Wolf Warrior GT Pro ?",
+   "a": "Des pneus de 11 pouces en 90/65-6.5, sur une jante de 6,5 pouces."
+  },
+  {
+   "q": "Quel disque de frein pour la Kaabo Wolf Warrior GT Pro ?",
+   "a": "Un disque de 160 mm à 6 trous, entraxe 44 mm, à l'avant comme à l'arrière."
+  },
+  {
+   "q": "Quelles plaquettes pour la Kaabo Wolf Warrior GT Pro ?",
+   "a": "La marque de l'étrier hydraulique n'est pas publiée par les distributeurs : compare la forme de ta plaquette avant de commander."
+  },
+  {
+   "q": "Quel chargeur pour la Kaabo Wolf Warrior GT Pro ?",
+   "a": "Un chargeur 60 V (67,2 V en sortie). Nature et Découvertes indique une prise GX16-3."
+  },
+  {
+   "q": "La Kaabo Wolf Warrior GT Pro est-elle légale en France ?",
+   "a": "Oui sur la voie publique à condition d'être bridée à 25 km/h, comme toute trottinette électrique. Débridée, elle n'est utilisable que sur terrain privé."
+  }
+ ],
+ "sources": [
+  {
+   "label": "Over Watt — Kaabo Wolf Warrior GT Pro",
+   "url": "https://over-watt.fr/products/trottinette-electrique-kaabo-wolf-warrior-gt-pro"
+  },
+  {
+   "label": "Nature et Découvertes — Kaabo Wolf Warrior GT Pro",
+   "url": "https://www.natureetdecouvertes.com/outdoor/velos-accessoires/trottinettes-longboards-rollers/trottinette-electrique-kaabo-wolf-warrior-gt-pro-92671580"
+  },
+  {
+   "label": "Cleanrider — Kaabo Wolf Warrior GT Pro",
+   "url": "https://www.cleanrider.com/catalogue/trottinette-electrique/kaabo/kaabo-wolf-warrior-gt-pro/"
+  },
+  {
+   "label": "BioSpeed — Kaabo Wolf Warrior 11",
+   "url": "https://biospeed.fr/produit/trottinette-electrique-kaabo-wolf-warrior-11/"
+  },
+  {
+   "label": "Kaabo Ukraine — Wolf Warrior GT Pro",
+   "url": "https://kaabo.com.ua/1607798.html"
+  },
+  {
+   "label": "Ministère de la Transition écologique — réglementation des trottinettes",
+   "url": "https://www.ecologie.gouv.fr/politiques-publiques/trottinettes-electriques-edpm-reglementation-vigueur"
+  }
+ ]
+}

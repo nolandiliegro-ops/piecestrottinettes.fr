@@ -1,0 +1,149 @@
+{
+ "displayName": "Kaabo Wolf Warrior GT Pro+",
+ "metaTitle": "Kaabo Wolf Warrior GT Pro+ : fiche technique et pièces",
+ "metaDescription": "Kaabo Wolf Warrior GT Pro+ : 60 V 35 Ah, 2 × 1 200 W, pneus 90/65-6.5, disques 160 mm, étrier Zoom, IPX5. Entretien et pièces compatibles.",
+ "intro": [
+  "La Kaabo Wolf Warrior GT Pro+ est la version Plus de la Wolf Warrior GT Pro, en 60 V. Ce n'est pas la Wolf King GT Pro+, qui passe en 72 V : la Wolf Warrior GT Pro+ garde deux moteurs de 1 200 W et une batterie de 35 Ah, soit 2 100 Wh.",
+  "Freins hydrauliques à disque de 160 mm, suspension hydraulique à l'avant, pneus de 11 pouces en 90/65-6.5 et 50 kg selon Darty et la Fnac : c'est une tout-terrain lourde, faite pour les longues distances. Annoncée à 80 km/h sur terrain privé, elle reste bridée à 25 km/h sur la voie publique."
+ ],
+ "specs": [
+  [
+   "Moteurs",
+   "2 × 1 200 W"
+  ],
+  [
+   "Vitesse",
+   "25 km/h sur la voie publique"
+  ],
+  [
+   "Batterie",
+   "60 V, 35 Ah (2 100 Wh)"
+  ],
+  [
+   "Autonomie annoncée",
+   "jusqu'à 150 km"
+  ],
+  [
+   "Poids",
+   "50 kg (46 kg selon My Mobelity)"
+  ],
+  [
+   "Charge max",
+   "150 kg"
+  ],
+  [
+   "Roues",
+   "11 pouces, 90/65-6.5"
+  ],
+  [
+   "Freins",
+   "Disques hydrauliques 160 mm avant et arrière, étrier Zoom"
+  ],
+  [
+   "Suspension",
+   "Hydraulique à l'avant, ressort type C à l'arrière"
+  ],
+  [
+   "Étanchéité",
+   "IPX5"
+  ],
+  [
+   "Chargeur",
+   "60 V"
+  ],
+  [
+   "Temps de charge",
+   "8,5 h (Darty, Fnac)"
+  ]
+ ],
+ "pros": [
+  "Batterie de 2 100 Wh pour 150 km annoncés (Darty, Fnac).",
+  "Freins hydrauliques à disque sur les deux roues (Darty).",
+  "Charge max de 150 kg (Darty, Fnac)."
+ ],
+ "cons": [
+  "50 kg : elle ne se porte pas.",
+  "Les fiches se contredisent : My Mobelity annonce 80 km d'autonomie, 46 kg et 130 kg de charge max.",
+  "Aucun test de presse français publié : les chiffres viennent des distributeurs.",
+  "Sa vitesse de pointe n'est utilisable que sur terrain privé : en France, la voie publique est limitée à 25 km/h."
+ ],
+ "parts": [
+  {
+   "label": "Pneu",
+   "size": "90/65-6.5 (11 pouces)",
+   "count": 11,
+   "to": "/piece/pneu-90-65-6-5-route-tubeless",
+   "cta": "Pneus 90/65-6.5"
+  },
+  {
+   "label": "Chambre à air",
+   "size": "90/65-6.5, valve droite ou coudée",
+   "count": 5,
+   "to": "/piece/chambre-a-air-9065-65-valve-droite",
+   "cta": "Chambres à air"
+  },
+  {
+   "label": "Plaquettes",
+   "size": "étrier Zoom",
+   "count": 5,
+   "to": "/piece/plaquettes-de-frein-zoom-semi-metallique",
+   "cta": "Plaquettes Zoom"
+  },
+  {
+   "label": "Disque de frein",
+   "size": "160 mm, 6 trous, entraxe 44 mm",
+   "count": 7,
+   "to": "/piece/disque-de-frein-160mm",
+   "cta": "Disques 160 mm"
+  }
+ ],
+ "care": [
+  "Freins hydrauliques : surveille l'épaisseur des plaquettes et purge le circuit dès que le levier devient mou.",
+  "Pneus de 11 pouces : contrôle la pression avant chaque sortie, un pneu mou pince la chambre à air.",
+  "Avec 50 kg sur deux moteurs, resserre régulièrement la visserie de la colonne et du bras arrière."
+ ],
+ "faq": [
+  {
+   "q": "Quelle taille de pneu pour la Kaabo Wolf Warrior GT Pro+ ?",
+   "a": "Des pneus de 11 pouces en 90/65-6.5, sur une jante de 6,5 pouces."
+  },
+  {
+   "q": "Quelles plaquettes pour la Kaabo Wolf Warrior GT Pro+ ?",
+   "a": "Des plaquettes pour étrier hydraulique Zoom, en semi-métallique, métal fritté ou céramique."
+  },
+  {
+   "q": "Quel disque de frein pour la Kaabo Wolf Warrior GT Pro+ ?",
+   "a": "Un disque de 160 mm à 6 trous, entraxe 44 mm, à l'avant comme à l'arrière."
+  },
+  {
+   "q": "Combien de temps pour recharger la Kaabo Wolf Warrior GT Pro+ ?",
+   "a": "8,5 h selon Darty et la Fnac. Swiss Distribution indique 4 h avec un chargeur plus puissant."
+  },
+  {
+   "q": "La Kaabo Wolf Warrior GT Pro+ est-elle légale en France ?",
+   "a": "Oui sur la voie publique à condition d'être bridée à 25 km/h, comme toute trottinette électrique. Débridée, elle n'est utilisable que sur terrain privé."
+  }
+ ],
+ "sources": [
+  {
+   "label": "Darty — Kaabo Wolf Warrior GT Pro+",
+   "url": "https://www.darty.com/nav/achat/sports_loisirs/glisse_urbaine/trottinette_electrique/kaabo_wolf_warrior_gt_pro.html"
+  },
+  {
+   "label": "Fnac — Wolf Warrior GT Pro+",
+   "url": "https://www.fr.fnac.ch/Wolf-Warrior-GT-Pro/a17338397"
+  },
+  {
+   "label": "Swiss Distribution — Kaabo Wolf Warrior GT Pro+ 60 V 35 Ah",
+   "url": "https://swiss-distribution.com/produit/trottinette-kaabo-wolf-warrior-gt-pro/"
+  },
+  {
+   "label": "My Mobelity — Kaabo Wolf Warrior GT Pro+",
+   "url": "https://www.mymobelity.be/fr/trottinette-electrique-kaabo-wolf-warrior-gt-pro.html"
+  },
+  {
+   "label": "Ministère de la Transition écologique — réglementation des trottinettes",
+   "url": "https://www.ecologie.gouv.fr/politiques-publiques/trottinettes-electriques-edpm-reglementation-vigueur"
+  }
+ ]
+}

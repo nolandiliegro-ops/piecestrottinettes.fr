@@ -1,0 +1,143 @@
+{
+ "displayName": "Kaabo Wolf Warrior X GT",
+ "metaTitle": "Kaabo Wolf Warrior X GT : fiche technique et pièces",
+ "metaDescription": "Kaabo Wolf Warrior X GT : 60 V 28 Ah, 2 × 1 100 W, pneus 10x3, freins hydrauliques Zoom et disques 140 mm, 38 kg. Entretien et pièces compatibles.",
+ "intro": [
+  "La Kaabo Wolf Warrior X GT est la version grand tourisme de la Wolf Warrior X, en 10 pouces. Ce n'est ni la X Plus, ni la X Pro+, ni la X Max : la X GT a deux moteurs de 1 100 W, une batterie LG de 60 V et 28 Ah, soit 1 680 Wh, et un écran TFT de 4,2 pouces.",
+  "Freins hydrauliques Zoom à disque de 140 mm, suspension hydraulique à l'avant et ressort à l'arrière, pneus 10 x 3 et 38 kg : c'est la plus compacte des Wolf. Annoncée à 70 km/h sur terrain privé, elle reste bridée à 25 km/h sur la voie publique en France."
+ ],
+ "specs": [
+  [
+   "Moteurs",
+   "2 × 1 100 W"
+  ],
+  [
+   "Vitesse",
+   "25 km/h sur la voie publique"
+  ],
+  [
+   "Batterie",
+   "60 V, 28 Ah (1 680 Wh)"
+  ],
+  [
+   "Autonomie annoncée",
+   "jusqu'à 80 km"
+  ],
+  [
+   "Poids",
+   "38 kg"
+  ],
+  [
+   "Charge max",
+   "120 kg"
+  ],
+  [
+   "Roues",
+   "10 pouces, 10x3"
+  ],
+  [
+   "Freins",
+   "Hydrauliques Zoom, disques 140 mm"
+  ],
+  [
+   "Suspension",
+   "Hydraulique à l'avant, ressort à l'arrière"
+  ],
+  [
+   "Étanchéité",
+   "IPX5"
+  ],
+  [
+   "Prise de charge",
+   "LP16 (Over Watt, GTS Shop)"
+  ],
+  [
+   "Temps de charge",
+   "8 h avec deux chargeurs, 16 h avec un seul"
+  ]
+ ],
+ "pros": [
+  "38 kg : la plus légère des Wolf bimoteurs (Over Watt, PEDL).",
+  "Freins hydrauliques Zoom à disque de 140 mm (Over Watt, PEDL).",
+  "Écran TFT de 4,2 pouces (Over Watt)."
+ ],
+ "cons": [
+  "Recharge longue avec un seul chargeur : 16 h selon Turbokids.",
+  "Charge max limitée à 120 kg.",
+  "Aucun test de presse français publié : les chiffres viennent des distributeurs.",
+  "Sa vitesse de pointe n'est utilisable que sur terrain privé : en France, la voie publique est limitée à 25 km/h."
+ ],
+ "parts": [
+  {
+   "label": "Plaquettes",
+   "size": "étrier Zoom",
+   "count": 5,
+   "to": "/piece/plaquettes-de-frein-zoom-semi-metallique",
+   "cta": "Plaquettes Zoom"
+  },
+  {
+   "label": "Disque de frein",
+   "size": "140 mm, 6 trous, entraxe 44 mm",
+   "count": 5,
+   "to": "/piece/disque-de-frein-140mm",
+   "cta": "Disques 140 mm"
+  }
+ ],
+ "care": [
+  "Freins hydrauliques : surveille l'épaisseur des plaquettes et purge le circuit dès que le levier devient mou.",
+  "Pneus 10 x 3 à chambre à air : vérifie la pression chaque semaine, Nature et Découvertes indique 3,5 bars.",
+  "Double colonne : contrôle le serrage du pliage et de la colonne, c'est là que le jeu apparaît."
+ ],
+ "price": {
+  "text": "Prix affiché par Over Watt : 2 399 € (page datée du 03/03/2026).",
+  "source": "over-watt.fr"
+ },
+ "faq": [
+  {
+   "q": "Quelle taille de pneu pour la Kaabo Wolf Warrior X GT ?",
+   "a": "Des pneus de 10 pouces en 10 x 3, aussi notés 80/65-6, à chambre à air."
+  },
+  {
+   "q": "Quelles plaquettes pour la Kaabo Wolf Warrior X GT ?",
+   "a": "Des plaquettes pour étrier hydraulique Zoom, en semi-métallique, métal fritté ou céramique."
+  },
+  {
+   "q": "Quel disque de frein pour la Kaabo Wolf Warrior X GT ?",
+   "a": "Un disque de 140 mm à 6 trous, entraxe 44 mm."
+  },
+  {
+   "q": "Quel chargeur pour la Kaabo Wolf Warrior X GT ?",
+   "a": "Un chargeur 60 V (67,2 V en sortie). Over Watt et GTS Shop indiquent une prise LP16."
+  },
+  {
+   "q": "La Kaabo Wolf Warrior X GT est-elle légale en France ?",
+   "a": "Oui sur la voie publique à condition d'être bridée à 25 km/h, comme toute trottinette électrique. Débridée, elle n'est utilisable que sur terrain privé."
+  }
+ ],
+ "sources": [
+  {
+   "label": "Over Watt — Kaabo Wolf Warrior X GT",
+   "url": "https://over-watt.fr/products/trottinette-electrique-kaabo-wolf-warrior-x-gt"
+  },
+  {
+   "label": "Nature et Découvertes — Kaabo Wolf Warrior X GT",
+   "url": "https://www.natureetdecouvertes.com/outdoor/velos-accessoires/trottinettes-longboards-rollers/trottinette-electrique-wolf-warrior-x-gt-kaabo-92671860"
+  },
+  {
+   "label": "GTS Shop — Kaabo Wolf Warrior X GT",
+   "url": "https://www.gtsshop.fr/en/electric-scooters/6617-kaabo-wolf-warrior-x-gt-electric-scooter.html"
+  },
+  {
+   "label": "PEDL — Kaabo Wolf Warrior X GT",
+   "url": "https://www.pedl.com.au/products/wolf-warrior-x-gt-electric-scooter"
+  },
+  {
+   "label": "Turbokids — Kaabo Wolf Warrior X GT",
+   "url": "https://turbokids.ca/products/kaabo-wolf-warrior-x-gt-trottinette-electrique-60-volts-28ah-2x1100-watts"
+  },
+  {
+   "label": "Ministère de la Transition écologique — réglementation des trottinettes",
+   "url": "https://www.ecologie.gouv.fr/politiques-publiques/trottinettes-electriques-edpm-reglementation-vigueur"
+  }
+ ]
+}

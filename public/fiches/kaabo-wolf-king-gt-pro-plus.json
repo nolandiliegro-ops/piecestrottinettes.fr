@@ -1,0 +1,165 @@
+{
+ "displayName": "Kaabo Wolf King GT Pro+",
+ "metaTitle": "Kaabo Wolf King GT Pro+ : fiche technique et pièces",
+ "metaDescription": "Kaabo Wolf King GT Pro+ : 72 V 35 Ah, 2 × 2 000 W, pneus 90/65-6.5, disques 160 mm, étrier Zoom, écran TFT. Différences, entretien et pièces.",
+ "intro": [
+  "La Kaabo Wolf King GT Pro+ est la dernière évolution de la Wolf King GT, après la GT et la GT Pro. Elle garde le 72 V, la batterie de 35 Ah, soit 2 520 Wh, et deux moteurs de 2 000 W. Selon Wee-Bot, elle gagne un écran TFT de 4,2 pouces et un accélérateur au pouce.",
+  "Freins hydrauliques à disque de 160 mm, fourche hydraulique inversée à l'avant, ressort à l'arrière et pneus de 11 pouces en 90/65-6.5 : c'est une tout-terrain de 52 kg. Annoncée à 100 km/h sur terrain privé, elle reste bridée à 25 km/h sur la voie publique en France."
+ ],
+ "specs": [
+  [
+   "Moteurs",
+   "2 × 2 000 W, 6 500 W en pointe (7 200 W selon Kaabo Mantis)"
+  ],
+  [
+   "Vitesse",
+   "25 km/h sur la voie publique"
+  ],
+  [
+   "Batterie",
+   "72 V, 35 Ah (2 520 Wh)"
+  ],
+  [
+   "Autonomie annoncée",
+   "jusqu'à 180 km"
+  ],
+  [
+   "Poids",
+   "52 kg"
+  ],
+  [
+   "Charge max",
+   "150 kg"
+  ],
+  [
+   "Roues",
+   "11 pouces, 90/65-6.5"
+  ],
+  [
+   "Freins",
+   "Disques hydrauliques 160 mm avant et arrière, étrier Zoom, ABS"
+  ],
+  [
+   "Suspension",
+   "Fourche hydraulique inversée à l'avant, bras oscillant à ressort à l'arrière"
+  ],
+  [
+   "Étanchéité",
+   "IPX5"
+  ],
+  [
+   "Écran",
+   "TFT 4,2 pouces (selon Wee-Bot)"
+  ],
+  [
+   "Temps de charge",
+   "4 à 11,6 h selon le distributeur et les chargeurs"
+  ]
+ ],
+ "pros": [
+  "Écran TFT de 4,2 pouces et accélérateur au pouce, à la place de l'ancien LCD (Wee-Bot).",
+  "Batterie 72 V de 2 520 Wh pour 180 km annoncés (Wee-Bot, Kaabo Mantis).",
+  "Fourche hydraulique inversée et freins hydrauliques de 160 mm (Family Trott)."
+ ],
+ "cons": [
+  "52 kg : elle se range de plain-pied et ne se porte pas.",
+  "Les temps de charge annoncés vont de 4 à près de 12 h selon les sources : fie-toi aux chargeurs que tu possèdes.",
+  "Aucun test de presse français publié : les chiffres viennent des distributeurs.",
+  "Sa vitesse de pointe n'est utilisable que sur terrain privé : en France, la voie publique est limitée à 25 km/h."
+ ],
+ "parts": [
+  {
+   "label": "Pneu",
+   "size": "90/65-6.5 (11 pouces)",
+   "count": 11,
+   "to": "/piece/pneu-90-65-6-5-off-road-tubeless",
+   "cta": "Pneus 90/65-6.5"
+  },
+  {
+   "label": "Chambre à air",
+   "size": "90/65-6.5, valve droite ou coudée",
+   "count": 5,
+   "to": "/piece/chambre-a-air-9065-65-valve-droite",
+   "cta": "Chambres à air"
+  },
+  {
+   "label": "Plaquettes",
+   "size": "étrier Zoom",
+   "count": 5,
+   "to": "/piece/plaquettes-de-frein-zoom-semi-metallique",
+   "cta": "Plaquettes Zoom"
+  },
+  {
+   "label": "Disque de frein",
+   "size": "160 mm, 6 trous, entraxe 44 mm",
+   "count": 7,
+   "to": "/piece/disque-de-frein-160mm",
+   "cta": "Disques 160 mm"
+  }
+ ],
+ "care": [
+  "Freins hydrauliques : surveille l'épaisseur des plaquettes et purge le circuit dès que le levier devient mou.",
+  "Fourche inversée : nettoie les tubes après chaque sortie boueuse, la poussière abîme les joints.",
+  "À 52 kg, contrôle la pression des pneus de 11 pouces avant chaque sortie."
+ ],
+ "faq": [
+  {
+   "q": "Quelle taille de pneu pour la Kaabo Wolf King GT Pro+ ?",
+   "a": "Des pneus de 11 pouces en 90/65-6.5, sur une jante de 6,5 pouces."
+  },
+  {
+   "q": "Quelles plaquettes pour la Kaabo Wolf King GT Pro+ ?",
+   "a": "Des plaquettes pour étrier hydraulique Zoom, en semi-métallique, métal fritté ou céramique."
+  },
+  {
+   "q": "Quel disque de frein pour la Kaabo Wolf King GT Pro+ ?",
+   "a": "Un disque de 160 mm à 6 trous, entraxe 44 mm, à l'avant comme à l'arrière."
+  },
+  {
+   "q": "Quelle différence entre la Wolf King GT Pro+ et la GT Pro ?",
+   "a": "Selon Wee-Bot, la Pro+ reçoit un écran TFT de 4,2 pouces et un accélérateur au pouce, à la place de l'écran LCD et de l'accélérateur EY3. Batterie et moteurs ne changent pas."
+  },
+  {
+   "q": "Combien de temps pour recharger la Kaabo Wolf King GT Pro+ ?",
+   "a": "Family Trott indique environ 7 h avec deux chargeurs de 2,5 A et 11,6 h avec deux chargeurs de 1,5 A."
+  },
+  {
+   "q": "La Kaabo Wolf King GT Pro+ est-elle légale en France ?",
+   "a": "Oui sur la voie publique à condition d'être bridée à 25 km/h, comme toute trottinette électrique. Débridée, elle n'est utilisable que sur terrain privé."
+  }
+ ],
+ "sources": [
+  {
+   "label": "Wee-Bot — Kaabo Wolf King GT Pro+",
+   "url": "https://www.wee-bot.com/products/trottinette-electrique-kaabo-wolf-king-gt-pro-plus"
+  },
+  {
+   "label": "Family Trott — pièces et fiche Kaabo Wolf",
+   "url": "https://familytrott.fr/pieces-trottinette/kaabo-wolf/"
+  },
+  {
+   "label": "Kaabo Mantis — Wolf King GT Pro+",
+   "url": "https://kaabomantis.com/shop/wolf-king-gt-pro-plus/"
+  },
+  {
+   "label": "My Mobelity — Kaabo Wolf King GT Pro+ 72 V 35 Ah",
+   "url": "https://www.mymobelity.be/en/electric-scooter-kaabo-wolf-king-gt-pro-72v-35ah.html"
+  },
+  {
+   "label": "Carrefour — Wolf King GT Pro+",
+   "url": "https://www.carrefour.fr/p/trottinette-electrique-wolf-king-gt-pro-doree-3701015513451"
+  },
+  {
+   "label": "Save My Battery — batterie 72 V 35 Ah Wolf King GT Pro+",
+   "url": "https://savemybattery.fr/fr/nos-produits/343-batterie-72v-35ah-kaabo-wolf-king-gt-pro-plus.html"
+  },
+  {
+   "label": "Trott'n'Shop — Kaabo Wolf King GT Pro",
+   "url": "https://www.trottnshop.com/produit/kaabo-wolf-king-gt-pro/"
+  },
+  {
+   "label": "Ministère de la Transition écologique — réglementation des trottinettes",
+   "url": "https://www.ecologie.gouv.fr/politiques-publiques/trottinettes-electriques-edpm-reglementation-vigueur"
+  }
+ ]
+}

@@ -1,0 +1,128 @@
+{
+ "displayName": "Kaabo Wolf Warrior 11 Max",
+ "metaTitle": "Kaabo Wolf Warrior 11 Max : fiche technique et pièces",
+ "metaDescription": "Kaabo Wolf Warrior 11 Max : 60 V 36 Ah, 2 × 1 500 W, disques 160 mm, roues de 11 pouces, IPX5, 150 km annoncés. Entretien et pièces compatibles.",
+ "intro": [
+  "La Kaabo Wolf Warrior 11 Max est la remplaçante de la Wolf Warrior 11 Plus. Elle n'a rien à voir avec la Wolf Warrior X Max en 10 pouces : la 11 Max garde les roues de 11 pouces, passe à deux moteurs de 1 500 W et à une batterie 60 V de 36 Ah, soit 2 160 Wh.",
+  "Freins hydrauliques à disque de 160 mm, suspension hydraulique réglable à l'arrière, étanchéité IPX5 et 150 km annoncés par Kaabo EU : c'est une grosse tout-terrain de 52 à 56 kg selon les vendeurs. Annoncée à 80 km/h sur terrain privé, elle reste bridée à 25 km/h sur la voie publique."
+ ],
+ "specs": [
+  [
+   "Moteurs",
+   "2 × 1 500 W, 6 720 W en pointe"
+  ],
+  [
+   "Vitesse",
+   "25 km/h sur la voie publique"
+  ],
+  [
+   "Batterie",
+   "60 V, 36 Ah (2 160 Wh)"
+  ],
+  [
+   "Autonomie annoncée",
+   "jusqu'à 150 km (pilote de 75 kg, 24 km/h, selon Kaabo EU)"
+  ],
+  [
+   "Poids",
+   "52 kg selon Volt-Corp, 56 kg selon Trott'n'Shop"
+  ],
+  [
+   "Charge max",
+   "150 kg (selon Kaabo EU)"
+  ],
+  [
+   "Roues",
+   "11 pouces, 11x3.0-6.5"
+  ],
+  [
+   "Freins",
+   "Disques hydrauliques 160 mm avant et arrière, étriers double piston, E-ABS"
+  ],
+  [
+   "Suspension",
+   "Hydraulique à l'avant, hydraulique réglable à l'arrière"
+  ],
+  [
+   "Étanchéité",
+   "IPX5"
+  ],
+  [
+   "Temps de charge",
+   "10 h, 3,5 h avec deux chargeurs 5 A (selon Electrotraveller)"
+  ]
+ ],
+ "pros": [
+  "Deux moteurs de 1 500 W pour 6 720 W en pointe (Kaabo EU).",
+  "Suspension arrière hydraulique réglable (Trott'n'Shop).",
+  "Étanchéité IPX5 pour la trottinette entière (Kaabo EU)."
+ ],
+ "cons": [
+  "52 à 56 kg selon les vendeurs : elle demande un rangement de plain-pied.",
+  "Les 150 km sont annoncés à 24 km/h sur route lisse : l'autonomie réelle sera plus courte.",
+  "Aucun test de presse français publié : les chiffres viennent du constructeur et des distributeurs.",
+  "Sa vitesse de pointe n'est utilisable que sur terrain privé : en France, la voie publique est limitée à 25 km/h."
+ ],
+ "parts": [
+  {
+   "label": "Disque de frein",
+   "size": "160 mm, 6 trous, entraxe 44 mm",
+   "count": 7,
+   "to": "/piece/disque-de-frein-160mm",
+   "cta": "Disques 160 mm"
+  }
+ ],
+ "care": [
+  "Freins hydrauliques : surveille l'épaisseur des plaquettes et purge le circuit dès que le levier devient mou.",
+  "Suspension arrière réglable : note ton réglage et contrôle le jeu du bras oscillant régulièrement.",
+  "Pneus de 11 pouces : vérifie la pression avant chaque sortie, à plus de 50 kg un pneu mou s'use et chauffe vite."
+ ],
+ "faq": [
+  {
+   "q": "Quelle taille de pneu pour la Kaabo Wolf Warrior 11 Max ?",
+   "a": "Des pneus de 11 pouces en 11 x 3.0-6.5, sur une jante de 6,5 pouces."
+  },
+  {
+   "q": "Quel disque de frein pour la Kaabo Wolf Warrior 11 Max ?",
+   "a": "Un disque de 160 mm à 6 trous, entraxe 44 mm, à l'avant comme à l'arrière."
+  },
+  {
+   "q": "Quelles plaquettes pour la Kaabo Wolf Warrior 11 Max ?",
+   "a": "Des plaquettes pour étrier hydraulique double piston. La marque de l'étrier n'est pas publiée : compare la forme de ta plaquette avant de commander."
+  },
+  {
+   "q": "Quelle différence entre la Wolf Warrior 11 Max et la 11 Plus ?",
+   "a": "La 11 Max passe à deux moteurs de 1 500 W au lieu de 1 200 W, à une batterie de 36 Ah et à une suspension arrière hydraulique réglable."
+  },
+  {
+   "q": "La Kaabo Wolf Warrior 11 Max est-elle légale en France ?",
+   "a": "Oui sur la voie publique à condition d'être bridée à 25 km/h, comme toute trottinette électrique. Débridée, elle n'est utilisable que sur terrain privé."
+  }
+ ],
+ "sources": [
+  {
+   "label": "Kaabo EU — Wolf Warrior 11 Max",
+   "url": "https://www.kaaboeu.com/fr/products/wolf-warrior-11-max"
+  },
+  {
+   "label": "Volt-Corp — Kaabo Wolf Warrior 11 Max 60 V 36 Ah",
+   "url": "https://www.volt-corp.com/shop/kaabowolfwarrior11max60v36a-trottinette-electrique-kaabo-wolf-warrior-11-max-60v-36ah-12070"
+  },
+  {
+   "label": "Trott'n'Shop — Kaabo Wolf Warrior 11 Max",
+   "url": "https://www.trottnshop.com/produit/trottinette-electrique-kaabo-wolf-warrior-11-max/"
+  },
+  {
+   "label": "Electrotraveller — Kaabo Wolf Warrior 11 Max",
+   "url": "https://electrotraveller.com/fr/trottinettes-electriques/kaabo-wolf-warrior-11-max/?v=08a4415e9d59"
+  },
+  {
+   "label": "Wheelyshop — trottinettes Kaabo",
+   "url": "https://www.wheelyshop.fr/collections/kaabo"
+  },
+  {
+   "label": "Ministère de la Transition écologique — réglementation des trottinettes",
+   "url": "https://www.ecologie.gouv.fr/politiques-publiques/trottinettes-electriques-edpm-reglementation-vigueur"
+  }
+ ]
+}

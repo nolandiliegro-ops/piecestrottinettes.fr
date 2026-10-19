@@ -1,0 +1,172 @@
+{
+ "displayName": "Kaabo Wolf King GT Pro",
+ "metaTitle": "Kaabo Wolf King GT Pro : fiche technique et pièces",
+ "metaDescription": "Kaabo Wolf King GT Pro : bimoteur 72 V 35 Ah, pneus 90/65-6.5, disques 160 mm, freins hydrauliques Zoom, IPX5. Entretien et pièces compatibles.",
+ "intro": [
+  "La Kaabo Wolf King GT Pro est la version intermédiaire de la famille Wolf King GT, entre la GT de base et la GT Pro+. Elle garde le 72 V et la batterie de 35 Ah, soit 2 520 Wh, avec deux moteurs de 2 000 W.",
+  "Freins hydrauliques Zoom à disque de 160 mm, suspension hydraulique à l'avant, ressort à l'arrière et pneus de 11 pouces en 90/65-6.5 : c'est une tout-terrain de plus de 50 kg. Elle est annoncée à 100 km/h, sur terrain privé uniquement. Sur la voie publique, elle reste bridée à 25 km/h."
+ ],
+ "specs": [
+  [
+   "Moteurs",
+   "2 × 2 000 W, 6 500 à 8 400 W en pointe selon les fiches"
+  ],
+  [
+   "Vitesse",
+   "25 km/h sur la voie publique"
+  ],
+  [
+   "Batterie",
+   "72 V, 35 Ah (2 520 Wh)"
+  ],
+  [
+   "Autonomie annoncée",
+   "jusqu'à 180 km"
+  ],
+  [
+   "Poids",
+   "52 kg (selon Electrotraveller)"
+  ],
+  [
+   "Charge max",
+   "150 kg (selon Electrotraveller)"
+  ],
+  [
+   "Roues",
+   "11 pouces, 90/65-6.5"
+  ],
+  [
+   "Freins",
+   "Disques hydrauliques Zoom 160 mm avant et arrière, E-ABS"
+  ],
+  [
+   "Suspension",
+   "Hydraulique à l'avant, ressort à l'arrière"
+  ],
+  [
+   "Étanchéité",
+   "IPX5"
+  ],
+  [
+   "Chargeur",
+   "72 V"
+  ],
+  [
+   "Temps de charge",
+   "7 h, 11 h ou 12 h selon le distributeur et les chargeurs"
+  ]
+ ],
+ "pros": [
+  "Batterie 72 V de 2 520 Wh pour 180 km annoncés (Cleanrider, Electrotraveller).",
+  "Freinage hydraulique Zoom sur les deux roues, avec E-ABS (Electrotraveller).",
+  "Étanchéité IPX5 annoncée par les distributeurs (Vélo Émeraude, Electrotraveller)."
+ ],
+ "cons": [
+  "52 kg : elle ne se porte pas.",
+  "La puissance de pointe varie selon les fiches, de 6 500 à 8 400 W : aucune valeur constructeur confirmée.",
+  "Recharge longue, jusqu'à 12 h selon les fiches avec les chargeurs fournis.",
+  "Sa vitesse de pointe n'est utilisable que sur terrain privé : en France, la voie publique est limitée à 25 km/h."
+ ],
+ "parts": [
+  {
+   "label": "Pneu",
+   "size": "90/65-6.5 (11 pouces)",
+   "count": 11,
+   "to": "/piece/pneu-90-65-6-5-route-tubeless",
+   "cta": "Pneus 90/65-6.5"
+  },
+  {
+   "label": "Chambre à air",
+   "size": "90/65-6.5, valve droite ou coudée",
+   "count": 5,
+   "to": "/piece/chambre-a-air-90-65-6-5-valve-coudee-90-ewheel",
+   "cta": "Chambres à air"
+  },
+  {
+   "label": "Plaquettes",
+   "size": "étrier Zoom",
+   "count": 5,
+   "to": "/piece/plaquettes-de-frein-zoom-semi-metallique",
+   "cta": "Plaquettes Zoom"
+  },
+  {
+   "label": "Disque de frein",
+   "size": "160 mm, 6 trous, entraxe 44 mm",
+   "count": 7,
+   "to": "/piece/disque-de-frein-160mm",
+   "cta": "Disques 160 mm"
+  },
+  {
+   "label": "Chargeur",
+   "size": "72 V, vérifie ta prise",
+   "count": 1,
+   "to": "/piece/pack-chargeur-72v-adaptateur-nami-rgx16-2",
+   "cta": "Chargeurs 72 V"
+  }
+ ],
+ "care": [
+  "Freins hydrauliques : surveille l'épaisseur des plaquettes et purge le circuit dès que le levier devient mou.",
+  "À plus de 50 kg, contrôle la pression des pneus de 11 pouces avant chaque sortie.",
+  "Recharge avec un chargeur 72 V adapté et ne laisse pas la batterie vide plusieurs semaines."
+ ],
+ "price": {
+  "text": "Prix relevé par Cleanrider : à partir de 4 079 € (fiche datée du 30/08/2022).",
+  "source": "Cleanrider"
+ },
+ "faq": [
+  {
+   "q": "Quelle taille de pneu pour la Kaabo Wolf King GT Pro ?",
+   "a": "Des pneus de 11 pouces en 90/65-6.5, sur une jante de 6,5 pouces."
+  },
+  {
+   "q": "Quelles plaquettes pour la Kaabo Wolf King GT Pro ?",
+   "a": "Des plaquettes pour étrier hydraulique Zoom, en semi-métallique, métal fritté ou céramique."
+  },
+  {
+   "q": "Quel disque de frein pour la Kaabo Wolf King GT Pro ?",
+   "a": "Un disque de 160 mm à 6 trous, entraxe 44 mm, à l'avant comme à l'arrière."
+  },
+  {
+   "q": "Quel chargeur pour la Kaabo Wolf King GT Pro ?",
+   "a": "Un chargeur 72 V. Vérifie la prise de ta trottinette avant de commander : les fiches ne la précisent pas."
+  },
+  {
+   "q": "Quelle différence entre la Wolf King GT Pro et la GT Pro+ ?",
+   "a": "Selon Wee-Bot, la GT Pro+ reçoit un écran TFT de 4,2 pouces et un accélérateur au pouce, à la place de l'écran LCD et de l'accélérateur EY3. Batterie et moteurs restent en 72 V 35 Ah et 2 × 2 000 W."
+  },
+  {
+   "q": "La Kaabo Wolf King GT Pro est-elle légale en France ?",
+   "a": "Oui sur la voie publique à condition d'être bridée à 25 km/h, comme toute trottinette électrique. Débridée, elle n'est utilisable que sur terrain privé."
+  }
+ ],
+ "sources": [
+  {
+   "label": "Cleanrider — Kaabo Wolf King GT Pro",
+   "url": "https://www.cleanrider.com/catalogue/trottinette-electrique/kaabo/kaabo-wolf-king-gt-pro/"
+  },
+  {
+   "label": "Electrotraveller — Kaabo Wolf King GT Pro",
+   "url": "https://electrotraveller.com/fr/trottinettes-electriques/kaabo-wolf-king-gt-pro/?v=08a4415e9d59"
+  },
+  {
+   "label": "Vélo Émeraude — Kaabo Wolf King GT Pro",
+   "url": "https://velo-emeraude.com/products/trottinette-electrique-kaabo-wolf-king-gt-pro"
+  },
+  {
+   "label": "Voltnation — Kaabo Wolf King GT Pro",
+   "url": "https://voltnation.fr/fr/products/kaabo-wolf-king-gt-pro-trottinette-6500w-puissance-35ah-batterie-100km-h-vitesse-89km-autonomie-5054"
+  },
+  {
+   "label": "Max Blinker — Kaabo Wolf King GT Pro",
+   "url": "https://www.maxblinker.fr/fr/trottinettes-electriques/kaabo-wolf-king-gt-pro"
+  },
+  {
+   "label": "Wee-Bot — Kaabo Wolf King GT Pro+ (différences avec la GT Pro)",
+   "url": "https://www.wee-bot.com/products/trottinette-electrique-kaabo-wolf-king-gt-pro-plus"
+  },
+  {
+   "label": "Ministère de la Transition écologique — réglementation des trottinettes",
+   "url": "https://www.ecologie.gouv.fr/politiques-publiques/trottinettes-electriques-edpm-reglementation-vigueur"
+  }
+ ]
+}

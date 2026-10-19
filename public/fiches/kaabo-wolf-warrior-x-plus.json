@@ -1,0 +1,159 @@
+{
+ "displayName": "Kaabo Wolf Warrior X Plus",
+ "metaTitle": "Kaabo Wolf Warrior X Plus : fiche technique et pièces",
+ "metaDescription": "Kaabo Wolf Warrior X Plus : 60 V 21 Ah, 2 × 1 100 W, pneus 10x3 (80/65-6), freins hydrauliques Zoom, disques 140 mm. Entretien et pièces.",
+ "intro": [
+  "La Kaabo Wolf Warrior X Plus, aussi appelée Wolf Warrior 10+, est la version d'entrée de la Wolf Warrior X en 10 pouces. Ce n'est ni la X Pro+ en 28 Ah, ni la Wolf Warrior 11 Plus : la X Plus a deux moteurs de 1 100 W et une batterie 60 V de 21 Ah, soit 1 260 Wh.",
+  "Freins hydrauliques à disque de 140 mm, amortisseur hydraulique à l'avant, ressort type C à l'arrière, pneus 10 x 3 et 36,9 kg selon Urban Moov : c'est une tout-terrain compacte. Annoncée à 70 km/h sur terrain privé, elle reste bridée à 25 km/h sur la voie publique."
+ ],
+ "specs": [
+  [
+   "Moteurs",
+   "2 × 1 100 W, 4 000 W en pointe"
+  ],
+  [
+   "Vitesse",
+   "25 km/h sur la voie publique"
+  ],
+  [
+   "Batterie",
+   "60 V, 21 Ah (1 260 Wh)"
+  ],
+  [
+   "Autonomie annoncée",
+   "jusqu'à 70 km (50 km selon Volt-Corp et Electyum)"
+  ],
+  [
+   "Poids",
+   "36,9 kg (35,9 kg selon Kaabo)"
+  ],
+  [
+   "Charge max",
+   "120 kg"
+  ],
+  [
+   "Roues",
+   "10 pouces, 10x3 (80/65-6)"
+  ],
+  [
+   "Freins",
+   "Disques hydrauliques 140 mm, étrier Zoom, E-ABS"
+  ],
+  [
+   "Suspension",
+   "Hydraulique à l'avant, ressort type C à l'arrière"
+  ],
+  [
+   "Chargeur",
+   "60 V"
+  ],
+  [
+   "Temps de charge",
+   "11 h"
+  ]
+ ],
+ "pros": [
+  "Deux moteurs de 1 100 W dans un format de 10 pouces (Urban Moov, Kaabo).",
+  "Freins hydrauliques à disque de 140 mm sur les deux roues (Urban Moov, Electyum).",
+  "Fourche hydraulique à l'avant et ressort à l'arrière (PatiGo, Kaabo Mantis)."
+ ],
+ "cons": [
+  "Recharge longue : 11 h avec le chargeur fourni (Urban Moov, Kaabo).",
+  "Les fiches ne s'accordent pas sur l'autonomie : de 50 à 70 km selon le vendeur.",
+  "Aucun test de presse français publié : les chiffres viennent des distributeurs.",
+  "Sa vitesse de pointe n'est utilisable que sur terrain privé : en France, la voie publique est limitée à 25 km/h."
+ ],
+ "parts": [
+  {
+   "label": "Pneu",
+   "size": "80/65-6 (10x3)",
+   "count": 11,
+   "to": "/piece/pneu-80-65-6-10x3-ewheel",
+   "cta": "Pneus 10x3"
+  },
+  {
+   "label": "Chambre à air",
+   "size": "80/65-6 (10x3), valve droite ou coudée",
+   "count": 3,
+   "to": "/piece/chambre-a-air-80-65-6-10x3-valve-coudee-ewheel",
+   "cta": "Chambres à air"
+  },
+  {
+   "label": "Plaquettes",
+   "size": "étrier Zoom",
+   "count": 5,
+   "to": "/piece/plaquettes-de-frein-zoom-semi-metallique",
+   "cta": "Plaquettes Zoom"
+  },
+  {
+   "label": "Disque de frein",
+   "size": "140 mm, 6 trous, entraxe 44 mm",
+   "count": 5,
+   "to": "/piece/disque-de-frein-140mm",
+   "cta": "Disques 140 mm"
+  }
+ ],
+ "care": [
+  "Freins hydrauliques : surveille l'épaisseur des plaquettes et purge le circuit dès que le levier devient mou.",
+  "Pneus 10 x 3 à chambre à air : vérifie la pression chaque semaine, un pneu mou pince la chambre.",
+  "Double colonne : contrôle le serrage du pliage et de la colonne régulièrement."
+ ],
+ "faq": [
+  {
+   "q": "Quelle taille de pneu pour la Kaabo Wolf Warrior X Plus ?",
+   "a": "Des pneus de 10 pouces en 10 x 3, aussi notés 80/65-6, en version route ou tout-terrain."
+  },
+  {
+   "q": "Quelles plaquettes pour la Kaabo Wolf Warrior X Plus ?",
+   "a": "Des plaquettes pour étrier hydraulique Zoom, en semi-métallique, métal fritté ou céramique."
+  },
+  {
+   "q": "Quel disque de frein pour la Kaabo Wolf Warrior X Plus ?",
+   "a": "Un disque de 140 mm à 6 trous, entraxe 44 mm."
+  },
+  {
+   "q": "Quelle différence entre la Wolf Warrior X Plus et la X Pro+ ?",
+   "a": "La batterie : 21 Ah pour la X Plus, 28 Ah pour la X Pro+, selon Kaabo. Les moteurs restent en 2 × 1 100 W."
+  },
+  {
+   "q": "La Kaabo Wolf Warrior X Plus est-elle légale en France ?",
+   "a": "Oui sur la voie publique à condition d'être bridée à 25 km/h, comme toute trottinette électrique. Débridée, elle n'est utilisable que sur terrain privé."
+  }
+ ],
+ "sources": [
+  {
+   "label": "Urban Moov — Kaabo Wolf Warrior X Plus 60 V 21 Ah",
+   "url": "https://www.urbanmoov.fr/boutique/Kaabo-Wolf-Warrior-X-Plus-p432501807"
+  },
+  {
+   "label": "Kaabo Benelux — Wolf Warrior X (Plus et Pro+)",
+   "url": "https://kaabo.eu/producten/wolf-warrior-x/"
+  },
+  {
+   "label": "Volt-Corp — Kaabo Wolf Warrior X Plus",
+   "url": "https://www.volt-corp.com/es/shop/kaabowolfwarriorxplus60v21a-kaabo-wolf-warrior-x-plus-60v-21ah-12067"
+  },
+  {
+   "label": "PatiGo — Kaabo Wolf Warrior X Plus",
+   "url": "https://patigo.co/producto/kaabo-wolf-warrior-x-plus/"
+  },
+  {
+   "label": "Electyum — Kaabo Wolf Warrior X Plus",
+   "url": "https://electyum.com/products/patinete-electrico-kaabo-wolf-warrior-x-plus"
+  },
+  {
+   "label": "Kaabo Mantis — Wolf Warrior X Plus",
+   "url": "https://kaabomantis.com/shop/kaabo-wolf-warrior-x-plus/"
+  },
+  {
+   "label": "Ministère de la Transition écologique — réglementation des trottinettes",
+   "url": "https://www.ecologie.gouv.fr/politiques-publiques/trottinettes-electriques-edpm-reglementation-vigueur"
+  }
+ ],
+ "video": {
+  "id": "s9UdJKzVedI",
+  "title": "Kaabo Wolf Warrior X PLUS ou 10 + :  Unboxing et test",
+  "channel": "LI6 Trottinette & Co",
+  "uploadDate": "2021-12-23"
+ }
+}

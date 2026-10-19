@@ -1,0 +1,155 @@
+{
+ "displayName": "Kaabo Wolf King GT",
+ "metaTitle": "Kaabo Wolf King GT : fiche technique et pièces",
+ "metaDescription": "Kaabo Wolf King GT : bimoteur 72 V 35 Ah, pneus 90/65-6.5 de 11 pouces, disques 160 mm, étrier Zoom. Autonomie, entretien et pièces compatibles.",
+ "intro": [
+  "La Kaabo Wolf King GT est la version de base de la famille Wolf King GT, avant les GT Pro et GT Pro+. Ce n'est pas une Wolf Warrior : elle passe en 72 V, avec une batterie de 35 Ah, soit 2 520 Wh, et deux moteurs de 2 000 W.",
+  "Freins hydrauliques à disque de 160 mm, fourche hydraulique à l'avant, amortisseur à ressort à l'arrière et pneus de 11 pouces en 90/65-6.5 : c'est une tout-terrain lourde, autour de 52 à 54 kg selon les fiches. Sur la voie publique en France, elle doit rester bridée à 25 km/h."
+ ],
+ "specs": [
+  [
+   "Moteurs",
+   "2 × 2 000 W (4 000 W nominaux)"
+  ],
+  [
+   "Vitesse",
+   "25 km/h sur la voie publique"
+  ],
+  [
+   "Batterie",
+   "72 V, 35 Ah (2 520 Wh)"
+  ],
+  [
+   "Autonomie",
+   "180 km annoncés ; 88 km relevés lors d'un essai (selon TopTrottinette)"
+  ],
+  [
+   "Poids",
+   "52 kg (Family Trott), près de 54 kg (TopTrottinette)"
+  ],
+  [
+   "Charge max",
+   "150 kg (selon Family Trott)"
+  ],
+  [
+   "Roues",
+   "11 pouces, 90/65-6.5"
+  ],
+  [
+   "Freins",
+   "Disques hydrauliques 160 mm avant et arrière, étrier Zoom, ABS"
+  ],
+  [
+   "Suspension",
+   "Fourche hydraulique à l'avant, amortisseur à ressort type C à l'arrière"
+  ],
+  [
+   "Étanchéité",
+   "IPX5 selon Family Trott, IP55 selon TopTrottinette"
+  ],
+  [
+   "Chargeur",
+   "72 V"
+  ],
+  [
+   "Temps de charge",
+   "environ 11,6 h avec deux chargeurs 1,5 A, 7 h avec deux chargeurs 2,5 A (selon Family Trott)"
+  ]
+ ],
+ "pros": [
+  "Batterie 72 V de 2 520 Wh, la plus grosse de la gamme GT (Prixtrottinette, Family Trott).",
+  "Freins hydrauliques à disque de 160 mm sur les deux roues, avec ABS (Family Trott).",
+  "Fourche hydraulique inversée à l'avant, appréciée pour le confort en tout-terrain dans l'essai vidéo publié sur YouTube."
+ ],
+ "cons": [
+  "52 à 54 kg selon les sources : elle ne se porte pas.",
+  "Autonomie réelle bien en dessous des 180 km : 88 km relevés lors d'un essai (TopTrottinette), 99 à 126 km estimés par Prixtrottinette.",
+  "Les fiches se contredisent sur l'étanchéité : IPX5 ou IP55.",
+  "Sa vitesse de pointe n'est utilisable que sur terrain privé : en France, la voie publique est limitée à 25 km/h."
+ ],
+ "parts": [
+  {
+   "label": "Pneu",
+   "size": "90/65-6.5 (11 pouces)",
+   "count": 11,
+   "to": "/piece/pneu-90-65-6-5-off-road-tubeless",
+   "cta": "Pneus 90/65-6.5"
+  },
+  {
+   "label": "Chambre à air",
+   "size": "90/65-6.5, valve droite ou coudée",
+   "count": 5,
+   "to": "/piece/chambre-a-air-9065-65-valve-droite",
+   "cta": "Chambres à air"
+  },
+  {
+   "label": "Plaquettes",
+   "size": "étrier Zoom",
+   "count": 5,
+   "to": "/piece/plaquettes-de-frein-zoom-semi-metallique",
+   "cta": "Plaquettes Zoom"
+  },
+  {
+   "label": "Disque de frein",
+   "size": "160 mm, 6 trous, entraxe 44 mm",
+   "count": 7,
+   "to": "/piece/disque-de-frein-160mm",
+   "cta": "Disques 160 mm"
+  }
+ ],
+ "care": [
+  "Freins hydrauliques : surveille l'épaisseur des plaquettes et purge le circuit dès que le levier devient mou.",
+  "À plus de 50 kg, contrôle la pression des pneus de 11 pouces avant chaque sortie : un pneu mou chauffe et pince la chambre à air.",
+  "Avec deux moteurs de 2 000 W, la visserie de la fourche et du bras arrière travaille beaucoup : resserre-la régulièrement."
+ ],
+ "faq": [
+  {
+   "q": "Quelle taille de pneu pour la Kaabo Wolf King GT ?",
+   "a": "Des pneus de 11 pouces en 90/65-6.5, sur une jante de 6,5 pouces."
+  },
+  {
+   "q": "Quelles plaquettes pour la Kaabo Wolf King GT ?",
+   "a": "Des plaquettes pour étrier hydraulique Zoom, en semi-métallique, métal fritté ou céramique."
+  },
+  {
+   "q": "Quel disque de frein pour la Kaabo Wolf King GT ?",
+   "a": "Un disque de 160 mm à 6 trous, entraxe 44 mm, à l'avant comme à l'arrière."
+  },
+  {
+   "q": "Quelle est l'autonomie réelle de la Kaabo Wolf King GT ?",
+   "a": "Kaabo annonce 180 km. TopTrottinette rapporte 88 km lors d'un essai et Prixtrottinette estime 99 à 126 km en conditions réelles."
+  },
+  {
+   "q": "Quelle différence entre la Wolf King GT, la GT Pro et la GT Pro+ ?",
+   "a": "Les trois partagent la base 72 V 35 Ah. Les sources ne publient pas de comparatif complet : vérifie le nom inscrit sur ta trottinette avant de commander une pièce."
+  },
+  {
+   "q": "La Kaabo Wolf King GT est-elle légale en France ?",
+   "a": "Oui sur la voie publique à condition d'être bridée à 25 km/h, comme toute trottinette électrique. Débridée, elle n'est utilisable que sur terrain privé."
+  }
+ ],
+ "sources": [
+  {
+   "label": "Family Trott — pièces et fiche Kaabo Wolf",
+   "url": "https://familytrott.fr/pieces-trottinette/kaabo-wolf/"
+  },
+  {
+   "label": "Prixtrottinette — Kaabo Wolf King GT",
+   "url": "https://prixtrottinette.com/trottinettes/kaabo-wolf-king-gt"
+  },
+  {
+   "label": "TopTrottinette — trottinettes électriques puissantes",
+   "url": "https://toptrottinette.com/trottinettes-electriques-puissantes/"
+  },
+  {
+   "label": "Ministère de la Transition écologique — réglementation des trottinettes",
+   "url": "https://www.ecologie.gouv.fr/politiques-publiques/trottinettes-electriques-edpm-reglementation-vigueur"
+  }
+ ],
+ "video": {
+  "id": "1owdPuvck4Q",
+  "title": "KABOO WOLF KING GT : UNE TROTTINETTE ELECTRIQUE DE TERRAIN SUPER PUISSANTE !",
+  "channel": "Weebot Paris",
+  "uploadDate": "2022-12-08"
+ }
+}

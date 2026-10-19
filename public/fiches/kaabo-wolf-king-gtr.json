@@ -1,0 +1,164 @@
+{
+ "displayName": "Kaabo Wolf King GTR",
+ "metaTitle": "Kaabo Wolf King GTR : fiche technique et pièces",
+ "metaDescription": "Kaabo Wolf King GTR : 72 V 35 Ah amovible, pneus 100/55-7 de 12 pouces, disques 160 mm, étrier Zoom, 63 kg. Autonomie, entretien et pièces.",
+ "intro": [
+  "La Kaabo Wolf King GTR est la Wolf King à roues de 12 pouces. Ce n'est ni une Wolf King GT en 11 pouces, ni la GTR Max en 40 Ah : la GTR standard a une batterie amovible de 72 V et 35 Ah, deux moteurs de 2 000 W et pèse 63 kg.",
+  "Pneus 100/55-7, freins hydrauliques à disque de 160 mm, suspensions réglables à l'avant et à l'arrière : c'est une machine pour rouleurs expérimentés. Elle est annoncée au-delà de 100 km/h, sur terrain privé uniquement. Sur la voie publique en France, elle reste bridée à 25 km/h."
+ ],
+ "specs": [
+  [
+   "Moteurs",
+   "2 × 2 000 W, jusqu'à 13 440 W en pointe annoncés"
+  ],
+  [
+   "Vitesse",
+   "25 km/h sur la voie publique"
+  ],
+  [
+   "Batterie",
+   "72 V, 35 Ah, amovible (Max Blinker annonce 33,6 Ah, 2 419 Wh)"
+  ],
+  [
+   "Autonomie",
+   "180 à 200 km annoncés ; environ 80 km bridée et 40 km à pleine puissance estimés (selon FohzShop)"
+  ],
+  [
+   "Poids",
+   "63 kg"
+  ],
+  [
+   "Charge max",
+   "150 kg selon Family Trott, 200 kg selon FohzShop"
+  ],
+  [
+   "Roues",
+   "12 pouces, 100/55-7"
+  ],
+  [
+   "Freins",
+   "Disques hydrauliques 160 mm avant et arrière, étrier Zoom, ABS"
+  ],
+  [
+   "Suspension",
+   "Réglable à l'avant et à l'arrière"
+  ],
+  [
+   "Étanchéité",
+   "IPX5 (selon Family Trott)"
+  ],
+  [
+   "Chargeur",
+   "72 V"
+  ],
+  [
+   "Temps de charge",
+   "10 h avec deux chargeurs 1,75 A, 3,5 h avec deux chargeurs 5 A (selon Family Trott)"
+  ]
+ ],
+ "pros": [
+  "Batterie amovible, pratique pour recharger hors du garage (FohzShop, Family Trott).",
+  "Pneus de 12 pouces en 100/55-7 et suspensions réglables (Family Trott, Niuxtech).",
+  "Freins hydrauliques à disque de 160 mm sur les deux roues, avec ABS (Family Trott)."
+ ],
+ "cons": [
+  "63 kg : elle demande un rangement de plain-pied.",
+  "Autonomie réelle loin de l'annonce : environ 40 km à pleine puissance selon FohzShop.",
+  "Les fiches se contredisent sur la batterie (33,6 ou 35 Ah) et la charge max (150 ou 200 kg).",
+  "Sa vitesse de pointe n'est utilisable que sur terrain privé : en France, la voie publique est limitée à 25 km/h."
+ ],
+ "parts": [
+  {
+   "label": "Pneu",
+   "size": "100/55-7 (12 pouces)",
+   "count": 2,
+   "to": "/piece/pneu-semi-offroad-100-55-7-cst-avec-gel-anti-crevaison",
+   "cta": "Pneus 100/55-7"
+  },
+  {
+   "label": "Plaquettes",
+   "size": "étrier Zoom",
+   "count": 5,
+   "to": "/piece/plaquettes-de-frein-zoom-semi-metallique",
+   "cta": "Plaquettes Zoom"
+  },
+  {
+   "label": "Disque de frein",
+   "size": "160 mm, 6 trous, entraxe 44 mm",
+   "count": 7,
+   "to": "/piece/disque-de-frein-160mm",
+   "cta": "Disques 160 mm"
+  }
+ ],
+ "care": [
+  "Freins hydrauliques : surveille l'épaisseur des plaquettes et purge le circuit dès que le levier devient mou.",
+  "Pneus 100/55-7 : vérifie la pression avant chaque sortie, à 63 kg un pneu mou s'use et chauffe vite.",
+  "Suspensions réglables : note tes réglages et contrôle le jeu des bras, la visserie travaille beaucoup sur une machine de ce poids."
+ ],
+ "price": {
+  "text": "Prix affiché par FohzShop : 3 390 €, au lieu de 3 990 € (fiche datée du 09/10/2025).",
+  "source": "fohzshop.fr"
+ },
+ "faq": [
+  {
+   "q": "Quelle taille de pneu pour la Kaabo Wolf King GTR ?",
+   "a": "Des pneus de 12 pouces en 100/55-7, sur une jante de 7 pouces. Ce ne sont pas les mêmes que ceux des Wolf King GT en 11 pouces."
+  },
+  {
+   "q": "Quelles plaquettes pour la Kaabo Wolf King GTR ?",
+   "a": "Des plaquettes pour étrier hydraulique Zoom, en semi-métallique, métal fritté ou céramique."
+  },
+  {
+   "q": "Quel disque de frein pour la Kaabo Wolf King GTR ?",
+   "a": "Un disque de 160 mm à 6 trous, entraxe 44 mm, à l'avant comme à l'arrière."
+  },
+  {
+   "q": "Quelle différence entre la Wolf King GTR et la GTR Max ?",
+   "a": "Selon Wee-Bot, la GTR Max passe à 40 Ah, à des étriers 4 pistons et à un plateau plus grand, pour 67 kg contre 63 kg."
+  },
+  {
+   "q": "Quelle est l'autonomie réelle de la Kaabo Wolf King GTR ?",
+   "a": "180 à 200 km annoncés. FohzShop estime environ 80 km bridée et 40 km à pleine puissance."
+  },
+  {
+   "q": "La Kaabo Wolf King GTR est-elle légale en France ?",
+   "a": "Oui sur la voie publique à condition d'être bridée à 25 km/h, comme toute trottinette électrique. Débridée, elle n'est utilisable que sur terrain privé."
+  }
+ ],
+ "sources": [
+  {
+   "label": "Family Trott — pièces et fiche Kaabo Wolf",
+   "url": "https://familytrott.fr/pieces-trottinette/kaabo-wolf/"
+  },
+  {
+   "label": "FohzShop — Kaabo Wolf King GTR 72 V 35 Ah",
+   "url": "https://fohzshop.fr/fr/trottinettes-electriques/kaabo/kaabo-wolf-king-gtr-black-72v-35ah"
+  },
+  {
+   "label": "Max Blinker — Kaabo Wolf King GTR",
+   "url": "https://www.maxblinker.fr/fr/trottinettes-electriques/kaabo-wolf-king-gtr"
+  },
+  {
+   "label": "Niuxtech — présentation de la Kaabo Wolf Warrior King GTR",
+   "url": "https://niuxtech.lt/en/naujienos/introduced-new-kaabo-wolf-warrior-king-gtr-electric-scooter/"
+  },
+  {
+   "label": "Electric Scooter Insider — Wolf King GTR",
+   "url": "https://www.electricscooterinsider.com/electric-scooters/reviews/wolf-king-gtr-review/"
+  },
+  {
+   "label": "Wee-Bot — Wolf Warrior King GTR Max (différences avec la GTR)",
+   "url": "https://www.wee-bot.com/products/trottinette-electrique-kaabo-wolf-warrior-king-gtr"
+  },
+  {
+   "label": "Ministère de la Transition écologique — réglementation des trottinettes",
+   "url": "https://www.ecologie.gouv.fr/politiques-publiques/trottinettes-electriques-edpm-reglementation-vigueur"
+  }
+ ],
+ "video": {
+  "id": "AyOms4o0kKo",
+  "title": "KAABO WOLF KING GTR 72V 13400W, PRÉSENTATION ET TEST COMPLET",
+  "channel": "EllefanRider",
+  "uploadDate": "2026-02-09"
+ }
+}

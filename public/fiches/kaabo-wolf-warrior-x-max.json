@@ -1,0 +1,135 @@
+{
+ "displayName": "Kaabo Wolf Warrior X Max",
+ "metaTitle": "Kaabo Wolf Warrior X Max : fiche technique et pièces",
+ "metaDescription": "Kaabo Wolf Warrior X Max : 60 V 27 Ah, 2 × 1 100 W, roues 10 pouces, freins hydrauliques Zoom, disques 140 mm, 38 kg. Entretien et pièces.",
+ "intro": [
+  "La Kaabo Wolf Warrior X Max est la dernière Wolf Warrior X en 10 pouces. Elle n'a rien à voir avec la Wolf Warrior 11 Max en 11 pouces : la X Max a deux moteurs de 1 100 W et une batterie 60 V de 27 Ah, soit 1 620 Wh. Elle existe aussi en version DGT selon Wheelyshop.",
+  "Freins hydrauliques à disque de 140 mm avec E-ABS, suspension hydraulique à l'avant, pneus de 10 pouces et 38 kg selon la plupart des fiches : c'est une tout-terrain compacte. Annoncée à 70 km/h sur terrain privé, elle reste bridée à 25 km/h sur la voie publique."
+ ],
+ "specs": [
+  [
+   "Moteurs",
+   "2 × 1 100 W, 4 032 W en pointe"
+  ],
+  [
+   "Vitesse",
+   "25 km/h sur la voie publique"
+  ],
+  [
+   "Batterie",
+   "60 V, 27 Ah (1 620 Wh)"
+  ],
+  [
+   "Autonomie annoncée",
+   "jusqu'à 90 km"
+  ],
+  [
+   "Poids",
+   "38 kg (35 kg selon Trott'n'Shop)"
+  ],
+  [
+   "Charge max",
+   "120 kg (130 kg selon Trott'n'Shop)"
+  ],
+  [
+   "Roues",
+   "10 pouces"
+  ],
+  [
+   "Freins",
+   "Disques hydrauliques 140 mm, étrier Zoom, E-ABS"
+  ],
+  [
+   "Suspension",
+   "Hydraulique à l'avant, amortisseur réglable à l'arrière"
+  ],
+  [
+   "Étanchéité",
+   "IPX5"
+  ],
+  [
+   "Temps de charge",
+   "5,5 h selon Trott'n'Shop, 7 à 8 h selon Electrotraveller"
+  ]
+ ],
+ "pros": [
+  "38 kg pour 90 km annoncés (Aeropatin, Wheelyshop).",
+  "Freins hydrauliques à disque de 140 mm avec E-ABS (Electrotraveller, Trott'n'Shop).",
+  "Étanchéité IPX5 (Trott'n'Shop, Electrotraveller)."
+ ],
+ "cons": [
+  "Les fiches ne s'accordent pas sur la puissance de pointe : 4 032 W chez Aeropatin, 2 × 2 200 W chez Trott'n'Shop.",
+  "Charge max de 120 kg sur la plupart des fiches.",
+  "Aucun test de presse français publié : les chiffres viennent des distributeurs.",
+  "Sa vitesse de pointe n'est utilisable que sur terrain privé : en France, la voie publique est limitée à 25 km/h."
+ ],
+ "parts": [
+  {
+   "label": "Plaquettes",
+   "size": "étrier Zoom",
+   "count": 5,
+   "to": "/piece/plaquettes-de-frein-zoom-semi-metallique",
+   "cta": "Plaquettes Zoom"
+  },
+  {
+   "label": "Disque de frein",
+   "size": "140 mm, 6 trous, entraxe 44 mm",
+   "count": 5,
+   "to": "/piece/disque-de-frein-140mm",
+   "cta": "Disques 140 mm"
+  }
+ ],
+ "care": [
+  "Freins hydrauliques : surveille l'épaisseur des plaquettes et purge le circuit dès que le levier devient mou.",
+  "Pneus de 10 pouces : vérifie la pression chaque semaine, un pneu mou s'use vite et pince la chambre à air.",
+  "Amortisseur arrière réglable : note ton réglage et contrôle le jeu du bras oscillant."
+ ],
+ "faq": [
+  {
+   "q": "Quelle taille de pneu pour la Kaabo Wolf Warrior X Max ?",
+   "a": "Des pneus de 10 pouces en 10 x 3, à chambre à air. Lis la dimension sur le flanc avant de commander."
+  },
+  {
+   "q": "Quelles plaquettes pour la Kaabo Wolf Warrior X Max ?",
+   "a": "Des plaquettes pour étrier hydraulique Zoom, en semi-métallique, métal fritté ou céramique."
+  },
+  {
+   "q": "Quel disque de frein pour la Kaabo Wolf Warrior X Max ?",
+   "a": "Un disque de 140 mm à 6 trous, entraxe 44 mm."
+  },
+  {
+   "q": "Quelle différence entre la Wolf Warrior X Max et la 11 Max ?",
+   "a": "La X Max roule en 10 pouces avec une batterie de 27 Ah et pèse environ 38 kg. La 11 Max roule en 11 pouces, avec 36 Ah et plus de 50 kg."
+  },
+  {
+   "q": "La Kaabo Wolf Warrior X Max est-elle légale en France ?",
+   "a": "Oui sur la voie publique à condition d'être bridée à 25 km/h, comme toute trottinette électrique. Débridée, elle n'est utilisable que sur terrain privé."
+  }
+ ],
+ "sources": [
+  {
+   "label": "Trott'n'Shop — Kaabo Wolf Warrior X Max",
+   "url": "https://www.trottnshop.com/produit/kaabo-wolf-warrior-x-max/"
+  },
+  {
+   "label": "Aeropatin — Kaabo Wolf Warrior X Max",
+   "url": "https://aeropatin.com/patinetes-electricos/kaabo-wolf-warrior-x-max/"
+  },
+  {
+   "label": "Wheelyshop — trottinettes Kaabo",
+   "url": "https://www.wheelyshop.fr/collections/kaabo"
+  },
+  {
+   "label": "Electrotraveller — Kaabo Wolf X Max",
+   "url": "https://electrotraveller.com/es/patinetes-electricos/kaabo-wolf-x-max/?v=08a4415e9d59"
+  },
+  {
+   "label": "Wee-Bot — Kaabo Wolf Warrior X Max",
+   "url": "https://www.wee-bot.com/products/trottinette-electrique-kaabo-wolf-warrior-x-max"
+  },
+  {
+   "label": "Ministère de la Transition écologique — réglementation des trottinettes",
+   "url": "https://www.ecologie.gouv.fr/politiques-publiques/trottinettes-electriques-edpm-reglementation-vigueur"
+  }
+ ]
+}

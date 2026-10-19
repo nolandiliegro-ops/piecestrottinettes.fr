@@ -3,7 +3,7 @@
  "metaTitle": "Kaabo Skywalker 10C : fiche technique et pièces",
  "metaDescription": "Kaabo Skywalker 10C : moteur 800 W, batterie 48 V 15,6 Ah, pneus 10x3, disques 140 mm mécaniques. Entretien, versions et pièces compatibles.",
  "intro": [
-  "La Kaabo Skywalker 10C est la monomoteur de 10 pouces de la gamme Skywalker. À ne pas confondre avec les Skywalker 8 ou 10H : la 10C a un seul moteur arrière de 800 W et une batterie 48 V de 15,6 Ah selon la plupart des fiches.",
+  "La Kaabo Skywalker 10C est la monomoteur de 10 pouces de la gamme Skywalker. À ne pas confondre avec les Skywalker 8 ou 10H. Elle existe en deux générations : la première avec un moteur arrière de 800 W et une batterie 48 V de 15,6 Ah, l'édition 2023 en 60 V et 13 Ah selon Kramtoo et Elgiganten.",
   "Pneus larges en 10 x 3, suspension avant et arrière, freins à disque mécaniques de 140 mm et environ 21 à 24 kg selon les distributeurs : c'est une trottinette de trajet quotidien qui se porte encore. Sur la voie publique en France, elle reste bridée à 25 km/h."
  ],
  "specs": [
@@ -17,7 +17,7 @@
   ],
   [
    "Batterie",
-   "48 V, 15,6 Ah (certaines fiches annoncent une version 60 V)"
+   "48 V, 15,6 Ah (première génération) ou 60 V, 13 Ah (édition 2023)"
   ],
   [
    "Autonomie annoncée",
@@ -54,7 +54,7 @@
   "Freins à disque mécaniques simples à régler, doublés d'un frein électronique E-ABS (PatiGo)."
  ],
  "cons": [
-  "Les fiches se contredisent : on trouve des Skywalker 10C en 48 V 15,6 Ah et en 60 V. Lis l'étiquette de ta batterie avant d'acheter un chargeur.",
+  "Deux générations coexistent : 48 V 15,6 Ah et 60 V 13 Ah pour l'édition 2023. Lis l'étiquette de ta batterie avant d'acheter un chargeur.",
   "Un seul moteur de 800 W : moins de reprise en côte qu'une bimoteur.",
   "Aucun test de presse français publié : les chiffres viennent des distributeurs.",
   "Sa vitesse de pointe n'est utilisable que sur terrain privé : en France, la voie publique est limitée à 25 km/h."
@@ -105,6 +105,10 @@
    "a": "Jusqu'à 55 km annoncés, mesurés par le constructeur avec un pilote de 75 kg à 25 km/h sur le plat (PatiGo)."
   },
   {
+   "q": "Quelle différence entre la Skywalker 10C 48 V et 60 V ?",
+   "a": "La première génération a une batterie 48 V de 15,6 Ah. L'édition 2023 passe en 60 V et 13 Ah. Le chargeur n'est pas le même : vérifie la tension écrite sur ta batterie."
+  },
+  {
    "q": "La Kaabo Skywalker 10C est-elle légale en France ?",
    "a": "Oui sur la voie publique à condition d'être bridée à 25 km/h, comme toute trottinette électrique. Débridée, elle n'est utilisable que sur terrain privé."
   }
@@ -131,8 +135,18 @@
    "url": "https://www.elgiganten.se/product/sport-fritid/elfordon/elscooter-elsparkcykel/kaabo-skywalker-10c/433965"
   },
   {
+   "label": "Kaabo — Skywalker 10C (fiche constructeur)",
+   "url": "https://www.kaabo.com/skywalker-10c/"
+  },
+  {
    "label": "Ministère de la Transition écologique — réglementation des trottinettes",
    "url": "https://www.ecologie.gouv.fr/politiques-publiques/trottinettes-electriques-edpm-reglementation-vigueur"
   }
- ]
+ ],
+ "video": {
+  "id": "gY3Ssc9UQ3M",
+  "title": "Unboxing Test New Kaabo Skywalker 10C ! Trottinette Électrique",
+  "channel": "KRAMTOO",
+  "uploadDate": "2021-10-17"
+ }
 }

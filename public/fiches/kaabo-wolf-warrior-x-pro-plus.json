@@ -1,0 +1,156 @@
+{
+ "displayName": "Kaabo Wolf Warrior X Pro+",
+ "metaTitle": "Kaabo Wolf Warrior X Pro+ : fiche technique et pièces",
+ "metaDescription": "Kaabo Wolf Warrior X Pro+ : 60 V 28 Ah (1 680 Wh), 2 × 1 100 W, pneus 10x3 (80/65-6), disques 140 mm, 100 km annoncés. Entretien et pièces.",
+ "intro": [
+  "La Kaabo Wolf Warrior X Pro+ est la version endurante de la Wolf Warrior X en 10 pouces. Ce n'est ni la X Plus en 21 Ah, ni la X GT : la X Pro+ a deux moteurs de 1 100 W et une batterie 60 V de 28 Ah, soit 1 680 Wh, avec un écran Minimotors EY3 selon Kaabo.",
+  "Freins hydrauliques à disque de 140 mm, amortisseur hydraulique à l'avant, ressort à l'arrière, pneus 10 x 3 et 36 à 37 kg selon les fiches : c'est une tout-terrain compacte. Annoncée à 70 km/h sur terrain privé, elle reste bridée à 25 km/h sur la voie publique."
+ ],
+ "specs": [
+  [
+   "Moteurs",
+   "2 × 1 100 W, 4 000 à 4 400 W en pointe selon les fiches"
+  ],
+  [
+   "Vitesse",
+   "25 km/h sur la voie publique"
+  ],
+  [
+   "Batterie",
+   "60 V, 28 Ah (1 680 Wh)"
+  ],
+  [
+   "Autonomie annoncée",
+   "jusqu'à 100 km (mode éco, un moteur)"
+  ],
+  [
+   "Poids",
+   "37 kg selon Max Blinker, 36 kg selon Kaabo et Cleanrider"
+  ],
+  [
+   "Charge max",
+   "120 kg"
+  ],
+  [
+   "Roues",
+   "10 pouces, 10x3 (80/65-6)"
+  ],
+  [
+   "Freins",
+   "Disques hydrauliques 140 mm avant et arrière, E-ABS"
+  ],
+  [
+   "Suspension",
+   "Hydraulique à l'avant, ressort type C à l'arrière"
+  ],
+  [
+   "Étanchéité",
+   "IPX5 (selon Rideservis)"
+  ],
+  [
+   "Chargeur",
+   "60 V"
+  ],
+  [
+   "Temps de charge",
+   "environ 8 h, jusqu'à 14 h selon Kaabo"
+  ]
+ ],
+ "pros": [
+  "Batterie de 1 680 Wh pour 100 km annoncés (Max Blinker, Kaabo Mantis).",
+  "Fourche inversée appréciée sur tous les terrains dans l'essai vidéo publié sur YouTube.",
+  "Freins hydrauliques à disque de 140 mm avec E-ABS (Kaabo Mantis)."
+ ],
+ "cons": [
+  "Recharge jusqu'à 14 h avec le chargeur fourni selon Kaabo.",
+  "Charge max limitée à 120 kg.",
+  "Aucun test de presse français publié : les chiffres viennent des distributeurs.",
+  "Sa vitesse de pointe n'est utilisable que sur terrain privé : en France, la voie publique est limitée à 25 km/h."
+ ],
+ "parts": [
+  {
+   "label": "Pneu",
+   "size": "80/65-6 (10x3)",
+   "count": 11,
+   "to": "/piece/pneu-tubeless-80-65-6-10x3-cityroad-ewheel",
+   "cta": "Pneus 10x3"
+  },
+  {
+   "label": "Chambre à air",
+   "size": "80/65-6 (10x3), valve droite ou coudée",
+   "count": 3,
+   "to": "/piece/chambre-a-air-80-65-6-10x3-valve-coudee-ewheel",
+   "cta": "Chambres à air"
+  },
+  {
+   "label": "Disque de frein",
+   "size": "140 mm, 6 trous, entraxe 44 mm",
+   "count": 5,
+   "to": "/piece/disque-de-frein-140mm",
+   "cta": "Disques 140 mm"
+  }
+ ],
+ "care": [
+  "Freins hydrauliques : surveille l'épaisseur des plaquettes et purge le circuit dès que le levier devient mou.",
+  "Pneus 10 x 3 : vérifie la pression chaque semaine, un pneu mou pince la chambre à air.",
+  "Fourche inversée : nettoie les tubes après une sortie boueuse, la poussière abîme les joints."
+ ],
+ "price": {
+  "text": "Prix de lancement relevé par Cleanrider : 2 590 €.",
+  "source": "Cleanrider"
+ },
+ "faq": [
+  {
+   "q": "Quelle taille de pneu pour la Kaabo Wolf Warrior X Pro+ ?",
+   "a": "Des pneus de 10 pouces en 10 x 3, aussi notés 80/65-6."
+  },
+  {
+   "q": "Quel disque de frein pour la Kaabo Wolf Warrior X Pro+ ?",
+   "a": "Un disque de 140 mm à 6 trous, entraxe 44 mm."
+  },
+  {
+   "q": "Quelles plaquettes pour la Kaabo Wolf Warrior X Pro+ ?",
+   "a": "La marque de l'étrier hydraulique n'est pas publiée par les distributeurs : compare la forme de ta plaquette avant de commander."
+  },
+  {
+   "q": "Quelle différence entre la Wolf Warrior X Pro+ et la X Plus ?",
+   "a": "La batterie : 28 Ah pour la X Pro+, 21 Ah pour la X Plus, selon Kaabo. La Pro+ reçoit aussi un écran Minimotors EY3."
+  },
+  {
+   "q": "La Kaabo Wolf Warrior X Pro+ est-elle légale en France ?",
+   "a": "Oui sur la voie publique à condition d'être bridée à 25 km/h, comme toute trottinette électrique. Débridée, elle n'est utilisable que sur terrain privé."
+  }
+ ],
+ "sources": [
+  {
+   "label": "Max Blinker — Kaabo Wolf Warrior X Pro+",
+   "url": "https://www.maxblinker.fr/fr/trottinettes-electriques/kaabo-wolf-warrior-x-pro"
+  },
+  {
+   "label": "Kaabo Mantis — Wolf Warrior X Pro+",
+   "url": "https://kaabomantis.com/shop/kaabo-wolf-warrior-x-pro-plus/"
+  },
+  {
+   "label": "Kaabo Benelux — Wolf Warrior X (Plus et Pro+)",
+   "url": "https://kaabo.eu/producten/wolf-warrior-x/"
+  },
+  {
+   "label": "Cleanrider — Kaabo Wolf Warrior X Pro",
+   "url": "https://www.cleanrider.com/catalogue/trottinette-electrique/kaabo/kaabo-wolf-warrior-x-pro/"
+  },
+  {
+   "label": "Rideservis — Kaabo Wolf Warrior X Pro+",
+   "url": "https://www.rideservis.cz/kaabo-wolf-warrior-x-pro--cz-edition/"
+  },
+  {
+   "label": "Ministère de la Transition écologique — réglementation des trottinettes",
+   "url": "https://www.ecologie.gouv.fr/politiques-publiques/trottinettes-electriques-edpm-reglementation-vigueur"
+  }
+ ],
+ "video": {
+  "id": "wjzRA6sGEK0",
+  "title": "KAABO WOLF WARRIOR X PRO + : UNE OFF-ROAD INCROYABLE ET POLYVALENTE !",
+  "channel": "Weebot Paris",
+  "uploadDate": "2022-06-23"
+ }
+}
