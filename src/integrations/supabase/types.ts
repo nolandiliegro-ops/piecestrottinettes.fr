@@ -2726,6 +2726,30 @@ export type Database = {
         }
         Relationships: []
       }
+      _bak_pure_roue_1910: {
+        Row: {
+          id: string | null
+          name: string | null
+          rim_diameter_code: string | null
+          saved_at: string | null
+          tire_section_code: string | null
+        }
+        Insert: {
+          id?: string | null
+          name?: string | null
+          rim_diameter_code?: string | null
+          saved_at?: string | null
+          tire_section_code?: string | null
+        }
+        Update: {
+          id?: string | null
+          name?: string | null
+          rim_diameter_code?: string | null
+          saved_at?: string | null
+          tire_section_code?: string | null
+        }
+        Relationships: []
+      }
       _bak_roue_nuit_1810: {
         Row: {
           id: string | null
