@@ -23,6 +23,7 @@ const ROOT = resolve(dirname(fileURLToPath(import.meta.url)), '..');
 const OUT = resolve(ROOT, 'out/scooters-cadrage');
 mkdirSync(OUT, { recursive: true });
 const MODE = process.argv.includes('--write') ? 'write' : 'dry';
+const SLUGS = (() => { const i = process.argv.indexOf('--slugs'); return i > 0 ? new Set(process.argv[i + 1].split(',')) : null; })();
 const MARGE = 0.04, SEUIL = 0.07;
 const VUES = existsSync(resolve(ROOT, 'config/photos/vues.json')) ? JSON.parse(readFileSync(resolve(ROOT, 'config/photos/vues.json'), 'utf-8')) : {};
 
@@ -78,7 +79,10 @@ async function analyse(buf) {
   const sx1 = Math.max(...garde.map((c) => c.x1)), sy1 = Math.max(...garde.map((c) => c.y1));
   const x0 = Math.max(0, Math.floor((sx0 - 1) / k)), y0 = Math.max(0, Math.floor((sy0 - 1) / k));
   const x1 = Math.min(W - 1, Math.ceil((sx1 + 2) / k) - 1), y1 = Math.min(H - 1, Math.ceil((sy1 + 2) / k) - 1);
-  const marges = { haut: y0 / H, bas: (H - 1 - y1) / H, gauche: x0 / W, droite: (W - 1 - x1) / W };
+  // 20/10 : marges rapportées au PLUS GRAND côté (comme la marge remise, 4 % du plus grand côté). Avant : rapportées à
+  // chaque côté → une photo haute et étroite repassait au-dessus de 7 % et se faisait recadrer à chaque run (163 au 2e run).
+  const D = Math.max(W, H);
+  const marges = { haut: y0 / D, bas: (H - 1 - y1) / D, gauche: x0 / D, droite: (W - 1 - x1) / D };
   const besoin = Object.values(marges).some((m) => m > SEUIL);
   let out = null;
   if (besoin) {
@@ -100,7 +104,7 @@ async function main() {
   const env = MODE === 'write' ? Object.fromEntries(readFileSync(resolve(ROOT, '.env'), 'utf-8').split('\n').map((l) => l.match(/^([A-Z_]+)=["']?([^"'\r\n]*)/)).filter(Boolean).map((m) => [m[1], m[2]])) : {};
   const list = await (await fetch(`${SB_URL}/rest/v1/scooter_models?select=id,name,slug,image_url,images&published=eq.true&order=name`, { headers: { apikey: ANON, Authorization: `Bearer ${ANON}` } })).json();
   const report = []; const lignes = []; const paires = [];
-  for (const s of list) {
+  for (const s of list.filter((x) => !SLUGS || SLUGS.has(x.slug))) {
     const urls = Array.isArray(s.images) && s.images.length ? [...s.images].sort((a, b) => (a.position ?? 0) - (b.position ?? 0)).map((i) => i.url) : (s.image_url ? [s.image_url] : []);
     const photos = [];
     for (const u of urls) {

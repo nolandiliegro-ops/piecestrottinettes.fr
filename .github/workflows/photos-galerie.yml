@@ -83,7 +83,7 @@ jobs:
             fi
             if [ "$mode" = "cadrage" ]; then
               # Cadrage uniforme + photo principale de trois-quarts (config/photos/vues.json). « cadrage dry » / « cadrage write ».
-              node scripts/scooters-cadrage.mjs --$lot > "out/cadrage-$lot.log" 2>&1
+              node scripts/scooters-cadrage.mjs --$lot ${extra:+--slugs $extra} > "out/cadrage-$lot.log" 2>&1
               echo "::notice title=cadrage::EXIT=$?"
               grep '^::' "out/cadrage-$lot.log" | grep -v -i 'secret\|bearer\|eyJ' | head -40
               tail -n 5 "out/cadrage-$lot.log" | grep -v -i 'secret\|bearer\|eyJ'
