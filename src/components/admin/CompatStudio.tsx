@@ -183,6 +183,7 @@ const CompatStudio = ({ onClassic }: { onClassic: () => void }) => {
   const [confFilter, setConfFilter] = useState<'all' | 'to_validate' | Confidence>('to_validate');
   const [busyPart, setBusyPart] = useState<string | null>(null);
   const [railSort, setRailSort] = useState<'az' | 'to_validate'>('az');
+  const [catFilter, setCatFilter] = useState<string>('all');
   const [addOpen, setAddOpen] = useState(false);
   const [addSearch, setAddSearch] = useState('');
   const { data: counts_by_scooter } = useCompatCounts();
@@ -206,6 +207,7 @@ const CompatStudio = ({ onClassic }: { onClassic: () => void }) => {
     if (!filteredScooters.length) return;
     const next = idx < 0 ? 0 : (idx + delta + filteredScooters.length) % filteredScooters.length;
     setSelectedId(filteredScooters[next].id);
+    setCatFilter('all');
   };
 
   const counts = useMemo(() => {
@@ -214,13 +216,24 @@ const CompatStudio = ({ onClassic }: { onClassic: () => void }) => {
     return c;
   }, [rows]);
 
-  const visibleRows = useMemo(() => {
-    const keep = rows.filter(r => {
-      const k = confOf(r);
-      if (confFilter === 'all') return true;
-      if (confFilter === 'to_validate') return k !== 'validated';
-      return k === confFilter;
+  const confKept = useMemo(() => rows.filter(r => {
+    const k = confOf(r);
+    if (confFilter === 'all') return true;
+    if (confFilter === 'to_validate') return k !== 'validated';
+    return k === confFilter;
+  }), [rows, confFilter]);
+
+  const catCounts = useMemo(() => {
+    const m = new Map<string, number>();
+    confKept.forEach(r => {
+      const cat = r.part?.category?.name ?? 'Autres';
+      m.set(cat, (m.get(cat) ?? 0) + 1);
     });
+    return [...m.entries()].sort((a, b) => a[0].localeCompare(b[0], 'fr'));
+  }, [confKept]);
+
+  const visibleRows = useMemo(() => {
+    const keep = confKept.filter(r => catFilter === 'all' || (r.part?.category?.name ?? 'Autres') === catFilter);
     // groupé par catégorie, triées par nom
     const groups = new Map<string, CompatRow[]>();
     keep.forEach(r => {
@@ -229,7 +242,7 @@ const CompatStudio = ({ onClassic }: { onClassic: () => void }) => {
       groups.get(cat)!.push(r);
     });
     return [...groups.entries()].sort((a, b) => a[0].localeCompare(b[0], 'fr'));
-  }, [rows, confFilter]);
+  }, [confKept, catFilter]);
 
   const invalidate = () => {
     qc.invalidateQueries({ queryKey: ['studio-compat', selectedId] });
@@ -490,6 +503,37 @@ const CompatStudio = ({ onClassic }: { onClassic: () => void }) => {
                 </Button>
               </div>
             </div>
+
+            {/* Filtre par catégorie de produits */}
+            {catCounts.length > 1 && (
+              <div className="flex flex-wrap items-center gap-1.5">
+                <button
+                  onClick={() => setCatFilter('all')}
+                  className={cn(
+                    'px-2.5 py-1.5 min-h-[36px] rounded-full text-xs font-semibold border transition-colors',
+                    catFilter === 'all'
+                      ? 'bg-[hsl(var(--admin-text))] text-white border-transparent'
+                      : 'bg-white text-[hsl(var(--admin-text-muted))] border-[hsl(var(--admin-border))] hover:bg-[hsl(var(--aov03))]'
+                  )}
+                >
+                  Toutes catégories ({confKept.length})
+                </button>
+                {catCounts.map(([cat, n]) => (
+                  <button
+                    key={cat}
+                    onClick={() => setCatFilter(c => (c === cat ? 'all' : cat))}
+                    className={cn(
+                      'px-2.5 py-1.5 min-h-[36px] rounded-full text-xs font-semibold border transition-colors',
+                      catFilter === cat
+                        ? 'bg-[hsl(var(--admin-text))] text-white border-transparent'
+                        : 'bg-white text-[hsl(var(--admin-text-muted))] border-[hsl(var(--admin-border))] hover:bg-[hsl(var(--aov03))]'
+                    )}
+                  >
+                    {cat} ({n})
+                  </button>
+                ))}
+              </div>
+            )}
 
             {/* Cartes par catégorie */}
             {loadingCompat ? (
