@@ -56,6 +56,7 @@ type Order = {
   delivery_price: number | null;
   notes: string | null;
   tracking_number: string | null;
+  stripe_payment_intent_id?: string | null;
 };
 
 type OrderItem = {
@@ -300,6 +301,17 @@ const OrderDetailSheet = ({ order, isOpen, onClose, onStatusUpdate }: OrderDetai
                 <span className="font-mono text-primary ml-2">{order.order_number}</span>
               </div>
             </SheetTitle>
+            {order.stripe_payment_intent_id && (
+              <a
+                href={`https://dashboard.stripe.com/payments/${order.stripe_payment_intent_id}`}
+                target="_blank"
+                rel="noreferrer"
+                className="flex items-center gap-1.5 text-xs font-semibold px-3 py-2 min-h-[40px] rounded-lg border border-[#635BFF]/30 text-[#635BFF] hover:bg-[#635BFF]/5 whitespace-nowrap"
+                title="Voir le paiement dans Stripe (remboursement, litige, reçu)"
+              >
+                Ouvrir dans Stripe ↗
+              </a>
+            )}
           </div>
           <p className="text-sm text-muted-foreground">
             Passée le {format(new Date(order.created_at), "d MMMM yyyy 'à' HH:mm", { locale: fr })}

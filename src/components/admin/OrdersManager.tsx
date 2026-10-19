@@ -49,6 +49,7 @@ type Order = {
   delivery_price: number | null;
   notes: string | null;
   tracking_number: string | null;
+  stripe_payment_intent_id?: string | null;
 };
 
 // Status Configuration with LED Effect (15% opacity backgrounds)

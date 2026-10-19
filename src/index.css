@@ -529,8 +529,11 @@
 
 /* Admin Studio Theme — CLAIR (refonte 19/10/2026), aligné sur la DA du site.
    La rampe --alXX re-mappe chaque ancienne valeur du thème sombre (hsl(0 0% XX%))
-   vers son équivalent clair : les composants utilisent hsl(var(--alXX)). */
-.admin-studio {
+   vers son équivalent clair : les composants utilisent hsl(var(--alXX)).
+   ⚠️ Déclarée sur :root, PAS sur .admin-studio : les Sheet/Dialog/Dropdown Radix
+   montent dans un portal hors de .admin-studio — sans :root, leurs fonds hsl(var(--al10))
+   sont invalides donc TRANSPARENTS (bug panneau Clients du 19/10). */
+:root {
   --admin-bg: 40 30% 96%;          /* beige crème page */
   --admin-card: 0 0% 100%;         /* cartes blanches */
   --admin-card-glass: 0 0% 100%;
@@ -574,7 +577,9 @@
   --aov06: 0 0% 10% / 0.05;
   --aov08: 0 0% 10% / 0.06;
   --aov10: 0 0% 10% / 0.08;
+}
 
+.admin-studio {
   background: hsl(var(--admin-bg));
   color: hsl(var(--admin-text));
 }

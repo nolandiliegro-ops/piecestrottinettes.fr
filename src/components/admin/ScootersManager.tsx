@@ -11,6 +11,9 @@ import { Label } from '@/components/ui/label';
 import { Textarea } from '@/components/ui/textarea';
 import { Collapsible, CollapsibleContent, CollapsibleTrigger } from '@/components/ui/collapsible';
 import { Loader2, Upload, Zap, Battery, Gauge, Save, Plus, Trash2, Edit, Download, Search, FileText, Link as LinkIcon, Copy, FileUp, ChevronDown, Cpu } from 'lucide-react';
+import ScootersGrid from './ScootersGrid';
+import { LayoutGrid, List as ListIcon } from 'lucide-react';
+import { cn } from '@/lib/utils';
 import { Switch } from '@/components/ui/switch';
 import { Badge } from '@/components/ui/badge';
 import RichTextEditor from './RichTextEditor';
@@ -62,6 +65,10 @@ interface Brand {
 }
 
 const ScootersManager = () => {
+  // Vue grille par défaut (19/10), persistée par navigateur
+  const [viewMode, setViewMode] = useState<'grid' | 'list'>(() => {
+    try { return localStorage.getItem('pt-admin-scooters-view') === 'list' ? 'list' : 'grid'; } catch { return 'grid'; }
+  });
   const navigate = useNavigate();
   const [scooters, setScooters] = useState<Scooter[]>([]);
   const [brands, setBrands] = useState<Brand[]>([]);
@@ -701,11 +708,41 @@ const ScootersManager = () => {
         </Button>
       </div>
 
-      <p className="text-sm text-muted-foreground">
-        {filteredScooters.length} trottinette(s) • {scooters.filter(s => s.image_url).length} avec image
-      </p>
+      <div className="flex items-center justify-between gap-3">
+        <p className="text-sm text-muted-foreground">
+          {filteredScooters.length} trottinette(s) • {scooters.filter(s => s.image_url).length} avec image
+        </p>
+        <div className="flex items-center rounded-full border border-[hsl(var(--admin-border))] bg-white p-0.5">
+          <button
+            onClick={() => { setViewMode('grid'); try { localStorage.setItem('pt-admin-scooters-view', 'grid'); } catch { /* noop */ } }}
+            className={cn('p-2 rounded-full', viewMode === 'grid' ? 'bg-[hsl(var(--admin-accent))] text-white' : 'text-[hsl(var(--admin-text-muted))]')}
+            aria-label="Vue grille"
+          >
+            <LayoutGrid className="w-4 h-4" />
+          </button>
+          <button
+            onClick={() => { setViewMode('list'); try { localStorage.setItem('pt-admin-scooters-view', 'list'); } catch { /* noop */ } }}
+            className={cn('p-2 rounded-full', viewMode === 'list' ? 'bg-[hsl(var(--admin-accent))] text-white' : 'text-[hsl(var(--admin-text-muted))]')}
+            aria-label="Vue liste"
+          >
+            <ListIcon className="w-4 h-4" />
+          </button>
+        </div>
+      </div>
 
-      {/* Table */}
+      {/* Grille ou table */}
+      {viewMode === 'grid' ? (
+        <ScootersGrid
+          scooters={filteredScooters}
+          onEdit={(gs) => { const full = scooters.find(x => x.id === gs.id); if (full) startEditing(full); }}
+          onTogglePublish={(gs) => { const full = scooters.find(x => x.id === gs.id); if (full) togglePublished(full); }}
+          onDuplicate={(gs) => { const full = scooters.find(x => x.id === gs.id); if (full) duplicateScooter(full); }}
+          onDelete={(gs) => { const full = scooters.find(x => x.id === gs.id); if (full) deleteScooter(full); }}
+          onExpert={(gs) => navigate(`/admin/scooter/${gs.id}/expert`)}
+          togglingId={togglingPublish}
+          deletingId={deleting}
+        />
+      ) : (
       <div className="rounded-lg border border-border overflow-hidden overflow-x-auto">
         <Table>
           <TableHeader>
@@ -810,6 +847,7 @@ const ScootersManager = () => {
           </TableBody>
         </Table>
       </div>
+      )}
 
       {/* Edit Dialog */}
       <Dialog open={isEditOpen} onOpenChange={setIsEditOpen}>
