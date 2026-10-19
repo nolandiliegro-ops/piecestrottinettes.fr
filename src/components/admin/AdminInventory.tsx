@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
-import { Wrench, Bike, Bot, Bird, Tag } from 'lucide-react';
+import { Wrench, Bike, Bot, Bird, Tag, Layers } from 'lucide-react';
 import { Badge } from '@/components/ui/badge';
 import PartsManager from './PartsManager';
 import ScootersManager from './ScootersManager';
@@ -8,9 +8,13 @@ import BrandsManager from './BrandsManager';
 import PendingScootersManager, { usePendingScooters } from './PendingScootersManager';
 import PendingPartsManager, { usePendingParts } from './PendingPartsManager';
 import WatcherControl from './WatcherControl';
+import CatalogueTriage from './CatalogueTriage';
 
 const AdminInventory = () => {
-  const [tab, setTab] = useState('parts');
+  // 19/10 : ?tri=1..5 ouvre directement l'onglet « Tri » (propositions de l'écran de tri du catalogue)
+  const [tab, setTab] = useState(() =>
+    typeof window !== 'undefined' && new URLSearchParams(window.location.search).get('tri') ? 'tri' : 'parts'
+  );
   const { data: pendingScooters = [] } = usePendingScooters();
   const { data: pendingParts = [] } = usePendingParts();
 
@@ -64,6 +68,13 @@ const AdminInventory = () => {
             )}
           </TabsTrigger>
           <TabsTrigger 
+            value="tri"
+            className="flex-1 data-[state=active]:bg-primary data-[state=active]:text-primary-foreground text-[hsl(0_0%_55%)] gap-2"
+          >
+            <Layers className="w-4 h-4" />
+            Tri
+          </TabsTrigger>
+          <TabsTrigger 
             value="watcher"
             className="flex-1 data-[state=active]:bg-primary data-[state=active]:text-primary-foreground text-[hsl(0_0%_55%)] gap-2"
           >
@@ -86,6 +97,9 @@ const AdminInventory = () => {
         </TabsContent>
         <TabsContent value="pending-parts" className="mt-4">
           <PendingPartsManager />
+        </TabsContent>
+        <TabsContent value="tri" className="mt-4">
+          <CatalogueTriage />
         </TabsContent>
         <TabsContent value="watcher" className="mt-4">
           <WatcherControl />
