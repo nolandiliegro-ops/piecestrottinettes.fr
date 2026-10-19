@@ -64,7 +64,7 @@ type P = NonNullable<ReturnType<typeof partnerOf>>;
 const variantParam = (): number => {
   if (typeof window === "undefined") return 0;
   const n = Number(new URLSearchParams(window.location.search).get("partenaire"));
-  return n >= 1 && n <= 5 ? n : 0;
+  return n >= 1 && n <= 9 ? n : 0;
 };
 const Legal = ({ dark = false }: { dark?: boolean }) => (
   <p className={`flex items-start gap-2 text-sm ${dark ? "text-white/60" : "text-gray-500"}`}>
@@ -231,11 +231,111 @@ const PartnerV5 = ({ url, name, p }: { url: string; name: string; p: P }) => (
   </div>
 );
 
+/* ─── 2e tour (19/10) : clair, AVEC le logo du partenaire, gabarit identique pour tous les partenaires ─── */
+const PartnerLogo = ({ p, size = 96 }: { p: P; size?: number }) =>
+  p.logo ? <img src={p.logo} alt={`Logo ${p.name}`} width={size} height={size} loading="lazy" className="shrink-0 object-contain" style={{ width: size, height: size }} />
+    : <span className="shrink-0 flex items-center justify-center text-white font-black" style={{ width: size, height: size, background: GREEN }}>{p.name.slice(0, 2)}</span>;
+const OfficialTag = () => (
+  <span className="inline-flex items-center gap-1 px-2 min-h-[26px] text-[14px] font-extrabold uppercase tracking-wider text-white" style={{ background: GREEN }}>
+    <Check className="w-3.5 h-3.5" /> Partenaire officiel
+  </span>
+);
+const PerkChips = ({ p }: { p: P }) => p.perks ? (
+  <ul className="grid sm:grid-cols-3 gap-2">
+    {p.perks.map((k) => (
+      <li key={k.title} className="flex items-start gap-2 p-3 bg-white" style={{ boxShadow: `inset 0 0 0 1px ${LINE}` }}>
+        <Check className="w-4 h-4 mt-0.5 shrink-0" style={{ color: GREEN }} />
+        <span className="text-sm text-[#374151]"><b className="block text-base" style={{ color: CARBON }}>{k.title}</b>{k.text}</span>
+      </li>
+    ))}
+  </ul>
+) : null;
+
+/** 6 · Badge : carte blanche, logo à gauche, tampon « Partenaire officiel », atouts en dessous. */
+const PartnerV6 = ({ url, name, p }: { url: string; name: string; p: P }) => (
+  <div id="ou-acheter" className="mt-8 scroll-mt-24 bg-white p-5 lg:p-7" style={{ clipPath: CHAMFER, boxShadow: `inset 4px 0 0 ${GREEN}, inset 0 0 0 1px ${LINE}`, fontFamily: FONT }}>
+    <p className="text-sm font-extrabold uppercase tracking-[0.14em]" style={{ color: GREEN }}>Où acheter la {name}</p>
+    <div className="mt-3 flex flex-col lg:flex-row lg:items-center gap-4 lg:gap-8">
+      <div className="flex items-center gap-4 min-w-0 flex-1">
+        <PartnerLogo p={p} size={88} />
+        <div className="min-w-0">
+          <OfficialTag />
+          <p className="mt-1.5 text-2xl lg:text-3xl uppercase leading-tight" style={{ fontFamily: UNB, fontWeight: 900, fontStyle: "italic", color: CARBON }}>{p.name}</p>
+          {p.tagline && <p className="text-base font-semibold" style={{ color: CARBON }}>{p.tagline}</p>}
+        </div>
+      </div>
+      <Cta url={url} p={p} />
+    </div>
+    <div className="mt-5"><PerkChips p={p} /></div>
+    <div className="mt-4"><Legal /></div>
+  </div>
+);
+
+/** 7 · Coupure pierre : bande pleine largeur couleur pierre (la coupure sans noir), logo centré en grand. */
+const PartnerV7 = ({ url, name, p }: { url: string; name: string; p: P }) => (
+  <div id="ou-acheter" className="mt-10 scroll-mt-24 -mx-4 lg:mx-0 px-5 py-8 lg:px-10 lg:py-10 text-center" style={{ background: "#EDE6DA", fontFamily: FONT, clipPath: CHAMFER }}>
+    <p className="text-sm font-extrabold uppercase tracking-[0.16em]" style={{ color: GREEN }}>Où acheter la {name}</p>
+    <div className="mt-4 flex justify-center"><PartnerLogo p={p} size={112} /></div>
+    <div className="mt-3 flex justify-center"><OfficialTag /></div>
+    <p className="mt-2 text-3xl lg:text-4xl uppercase leading-tight" style={{ fontFamily: UNB, fontWeight: 900, fontStyle: "italic", color: CARBON }}>{p.name}</p>
+    {p.tagline && <p className="mt-1 text-base lg:text-lg font-semibold" style={{ color: CARBON }}>{p.tagline}</p>}
+    <div className="mt-6 text-left max-w-4xl mx-auto"><PerkChips p={p} /></div>
+    <div className="mt-6 flex justify-center"><div className="w-full sm:w-auto"><Cta url={url} p={p} /></div></div>
+    <div className="mt-4 flex justify-center"><Legal /></div>
+  </div>
+);
+
+/** 8 · Double : panneau gauche pierre avec le logo (toujours le même cadre pour chaque partenaire), contenu à droite. */
+const PartnerV8 = ({ url, name, p }: { url: string; name: string; p: P }) => (
+  <div id="ou-acheter" className="mt-8 scroll-mt-24 grid sm:grid-cols-[200px_1fr] lg:grid-cols-[240px_1fr] bg-white" style={{ clipPath: CHAMFER, boxShadow: `inset 0 0 0 1px ${LINE}`, fontFamily: FONT }}>
+    <div className="flex flex-col items-center justify-center gap-3 p-5" style={{ background: "#EDE6DA" }}>
+      <PartnerLogo p={p} size={120} />
+      <OfficialTag />
+    </div>
+    <div className="p-5 lg:p-7">
+      <p className="text-sm font-extrabold uppercase tracking-[0.14em]" style={{ color: GREEN }}>Où acheter la {name}</p>
+      <p className="mt-1 text-2xl lg:text-3xl uppercase leading-tight" style={{ fontFamily: UNB, fontWeight: 900, fontStyle: "italic", color: CARBON }}>Notre partenaire : {p.name}</p>
+      {p.tagline && <p className="mt-1 text-base font-semibold" style={{ color: CARBON }}>{p.tagline}</p>}
+      {p.perks && (
+        <ul className="mt-4 space-y-2">
+          {p.perks.map((k) => (
+            <li key={k.title} className="flex items-start gap-2 text-base text-[#374151]">
+              <Check className="w-4 h-4 mt-1 shrink-0" style={{ color: GREEN }} /><span><b style={{ color: CARBON }}>{k.title}.</b> {k.text}</span>
+            </li>
+          ))}
+        </ul>
+      )}
+      <div className="mt-5 flex flex-col items-stretch lg:items-start gap-3"><Cta url={url} p={p} /><Legal /></div>
+    </div>
+  </div>
+);
+
+/** 9 · Actuel + logo : la carte d'origine, logo à côté du titre, tampon, sans rien ajouter d'autre. */
+const PartnerV9 = ({ url, name, p }: { url: string; name: string; p: P }) => (
+  <div id="ou-acheter" className="mt-8 scroll-mt-24 bg-white p-5 lg:p-6 grid lg:grid-cols-[auto_1fr_auto] gap-4 lg:gap-6 items-center" style={{ clipPath: CHAMFER, boxShadow: `inset 4px 0 0 ${GREEN}, inset 0 0 0 1px ${LINE}`, fontFamily: FONT }}>
+    <PartnerLogo p={p} size={80} />
+    <div className="min-w-0">
+      <div className="flex flex-wrap items-center gap-2">
+        <p className="text-sm font-extrabold uppercase tracking-[0.14em]" style={{ color: GREEN }}>Où acheter la {name}</p>
+        <OfficialTag />
+      </div>
+      <p className="mt-1 text-xl lg:text-2xl uppercase" style={{ fontFamily: UNB, fontWeight: 900, fontStyle: "italic", color: CARBON }}>Notre partenaire : {p.name}</p>
+      <p className="mt-2 text-base text-[#374151] leading-relaxed max-w-2xl">{p.tagline ? `${p.tagline}. ` : ""}On vend les pièces, pas les trottinettes : pour la machine, on te conseille un vendeur que notre atelier connaît.</p>
+      <div className="mt-2"><Legal /></div>
+    </div>
+    <Cta url={url} p={p} />
+  </div>
+);
+
 /** « Où l'acheter » : le partenaire présenté comme un choix de l'atelier, lien partenaire assumé. */
 export const PartnerBlock = ({ url, name }: { url: string; name: string }) => {
   const p = partnerOf(url);
   if (!p) return null;
   const v = variantParam();
+  if (v === 6) return <PartnerV6 url={url} name={name} p={p} />;
+  if (v === 7) return <PartnerV7 url={url} name={name} p={p} />;
+  if (v === 8) return <PartnerV8 url={url} name={name} p={p} />;
+  if (v === 9) return <PartnerV9 url={url} name={name} p={p} />;
   if (v === 1) return <PartnerV1 url={url} name={name} p={p} />;
   if (v === 2) return <PartnerV2 url={url} name={name} p={p} />;
   if (v === 3) return <PartnerV3 url={url} name={name} p={p} />;

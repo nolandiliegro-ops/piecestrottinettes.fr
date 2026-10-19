@@ -16,12 +16,15 @@ export interface Partner {
   tagline?: string;
   /** 3 atouts maximum, vérifiés sur le site du partenaire. */
   perks?: PartnerPerk[];
+  /** Logo du partenaire (public/partners/…), utilisé avec son accord. */
+  logo?: string;
 }
 
 export const PARTNERS: Record<string, Partner> = {
   "dualtron-store.com": {
     name: "Dualtron Store",
     tagline: "La boutique officielle Dualtron en France",
+    logo: "/partners/dualtron-store.webp",
     perks: [
       { title: "Officiel", text: "Trottinettes et pièces 100 % officielles, réparation Dualtron" },
       { title: "Paris & Le Mans", text: "2 boutiques avec showroom et atelier : tu peux l'essayer" },
