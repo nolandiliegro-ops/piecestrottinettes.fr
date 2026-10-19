@@ -18,6 +18,7 @@ import { useQuery } from "@tanstack/react-query";
 import { ChevronDown, CheckCircle2, HelpCircle, Search, Wrench, Clock, Package, Play } from "lucide-react";
 import { supabase } from "@/integrations/supabase/client";
 import { sanitizeHtml } from "@/lib/sanitizeHtml";
+import { formatPrice } from "@/lib/formatPrice";
 import type { PartDetail, CompatibleScooter } from "@/hooks/usePartDetail";
 import { parseSpecs, cleanDescription } from "@/components/pdp/PartPageVariants";
 
@@ -143,6 +144,97 @@ const keyPhrase = (part: PartDetail, caliper: Record<string, string>) => {
   return "";
 };
 
+
+/**
+ * « Ce qui distingue cette référence » — 20/10 (Nolan : chaque pièce doit dire quelque chose de différent).
+ * Tiré du nom et des attributs de LA pièce, jamais inventé : un trait non détecté n'est pas affiché.
+ */
+const traits = (part: PartDetail): string[] => {
+  const n = part.name.toLowerCase();
+  const cat = part.category?.slug ?? "";
+  const out: string[] = [];
+  if (cat === "chambres-a-air") {
+    const angle = n.match(/valve\s+(?:coud[ée]e\s+)?(\d{1,3})\s?[x×]\s?(\d{1,3})\s?°/);
+    if (/valve\s+droite/.test(n)) out.push("Valve droite : elle sort dans l'axe de la jante. À choisir quand rien ne gêne autour du trou de valve.");
+    else if (angle) out.push(`Valve coudée ${angle[1]}°×${angle[2]}° : la tête de valve est déportée pour passer à côté du disque, du moteur ou de la fourche. Reprends l'angle de ta chambre d'origine.`);
+    else if (/valve\s+coud[ée]e\s+(\d{1,3})\s?°/.test(n)) out.push(`Valve coudée à ${n.match(/valve\s+coud[ée]e\s+(\d{1,3})/)?.[1]}° : déportée pour rester accessible au gonfleur quand le disque ou le moteur gêne.`);
+    else if (/valve\s+coud[ée]e/.test(n)) out.push("Valve coudée : déportée pour rester accessible au gonfleur quand le disque ou le moteur gêne.");
+    if (/renforc|premium|[ée]paisse/.test(n)) out.push("Version renforcée : gomme plus épaisse, plus résistante aux pincements. Le bon choix si tu crèves souvent ou si tu roules chargé.");
+    const jante = part.name.match(/jante\s+(\d{2,3})\s?mm/i);
+    if (jante) out.push(`Prévue pour une jante de ${jante[1]} mm.`);
+  }
+  if (cat === "pneus" || cat === "pneus-pleins") {
+    if (/tubeless/.test(n)) out.push("Tubeless : il se monte sans chambre à air, sur une jante étanche prévue pour. Une petite perforation se répare souvent avec une mèche.");
+    else if (cat === "pneus") out.push("Pneu à chambre : il se monte avec une chambre à air de la même cote.");
+    if (/gel|anti[- ]?crevaison/.test(n)) out.push("Avec gel anti-crevaison : il colmate les petites perforations, pas une coupure.");
+    if (/semi[- ]?off/.test(n)) out.push("Gomme semi tout-terrain : roule bien sur le bitume et accroche mieux sur les chemins qu'un pneu route.");
+    else if (/off[- ]?road|tout[- ]terrain|crampon/.test(n)) out.push("Gomme tout-terrain : crampons marqués pour accrocher sur terre et graviers ; un peu plus de bruit et de résistance sur route.");
+    else if (/city ?road|route|street|urbain/.test(n)) out.push("Gomme route : profil lisse pour un roulement doux et silencieux sur le bitume.");
+    if (/ultra[- ]?l[ée]ger/.test(n)) out.push("Version allégée : moins de masse en bout de roue qu'un pneu plein classique.");
+    if (/alv[ée]ol|nid d.abeille|honeycomb/.test(n)) out.push("Structure alvéolée : fléchit davantage qu'un plein massif, donc un peu plus confortable.");
+    const jante = part.name.match(/jante\s+(\d{2,3})\s?mm/i);
+    if (jante) out.push(`Pour une jante de ${jante[1]} mm de large : mesure la tienne, c'est elle qui décide si ce plein se monte.`);
+    if (cat === "pneus-pleins") out.push("Pneu plein : zéro crevaison et zéro gonflage, en échange d'un confort et d'une accroche sur sol mouillé moindres.");
+  }
+  if (cat === "plaquettes") {
+    if (/fritt/.test(n)) out.push("Métal fritté : tient la chaleur des freinages répétés et l'humidité, dure plus longtemps ; un peu plus bruyant et plus dur pour le disque.");
+    else if (/semi[- ]?m[ée]tal/.test(n)) out.push("Semi-métallique : compromis entre le mordant de l'organique et l'endurance du métal.");
+    else if (/c[ée]ramique/.test(n)) out.push("Céramique : mélange résine et céramique, silencieux avec une meilleure tenue à la chaleur qu'une résine simple.");
+    else if (/m[ée]tal/.test(n)) out.push("Métallique : endurant et efficace sous la pluie, un peu plus bruyant qu'une organique.");
+    else if (/organi|r[ée]sine/.test(n)) out.push("Organique : mordant immédiat et silence, s'use plus vite qu'une métallique.");
+    if (/ventil/.test(n)) out.push("Support ventilé : évacue mieux la chaleur lors des freinages appuyés.");
+    if (/4 pistons/.test(n)) out.push("Pour étrier 4 pistons : plaquette plus longue, à ne pas confondre avec une 2 pistons.");
+  }
+  if (cat === "disques") {
+    if (/flottant/.test(n)) out.push("Disque flottant : la piste est montée sur des rivets mobiles, il encaisse mieux la chaleur des freinages répétés.");
+    else out.push("Disque fixe : rigide et simple, suffisant pour un usage urbain.");
+    const coul = part.name.match(/\((vert|bleu|rouge|noir|or|violet)\)/i);
+    if (coul) out.push(`Coloris ${coul[1].toLowerCase()} : la couleur ne change rien au freinage.`);
+  }
+  if (cat === "chargeurs") {
+    const amp = part.name.match(/(\d+(?:[.,]\d+)?)\s?(?:-\s?(\d+(?:[.,]\d+)?))?\s?A\b/);
+    const a = amp ? parseFloat((amp[2] ?? amp[1]).replace(",", ".")) : null;
+    if (a) {
+      const t = (ah: number) => fr(Math.round((ah / a) * 10) / 10);
+      out.push(`${a} A${amp?.[2] ? " max (réglable)" : ""} : au moins ${t(15)} h pour une batterie de 15 Ah, ${t(30)} h pour 30 Ah (capacité ÷ ampérage), plus la fin de charge qui ralentit.`);
+      if (a >= 5) out.push("Charge rapide : à réserver aux batteries qui l'acceptent, sinon elle accélère leur vieillissement.");
+    }
+    if (/pack|adaptateur/.test(n)) out.push("Livré avec adaptateur : le chargeur garde sa prise GX16 et l'adaptateur la convertit vers la prise de ta trottinette.");
+  }
+  return out;
+};
+
+type Sibling = { id: string; name: string; slug: string; price: number | null };
+/** Variantes de la même cote / du même étrier / de la même tension : maillage interne propre à chaque fiche. */
+const useSiblings = (part: PartDetail) => {
+  const f = part.fitment_specs ?? {};
+  const e = part.electrical_specs ?? {};
+  const filter: { col: "fitment_specs" | "electrical_specs"; val: Record<string, unknown> } | null = f.tire_sections?.length ? { col: "fitment_specs", val: { tire_sections: [f.tire_sections[0]] } }
+    : f.brake_caliper?.length ? { col: "fitment_specs", val: { brake_caliper: [f.brake_caliper[0]] } }
+    : f.brake_disc?.diameters?.length ? { col: "fitment_specs", val: { brake_disc: { diameters: [f.brake_disc.diameters[0]] } } }
+    : e.voltages?.length ? { col: "electrical_specs", val: { voltages: [e.voltages[0]] } }
+    : null;
+  return useQuery({
+    queryKey: ["part-siblings", part.id],
+    enabled: !!filter && !!part.category_id,
+    staleTime: 5 * 60_000,
+    queryFn: async (): Promise<Sibling[]> => {
+      const { data } = await supabase.from("parts").select("id, name, slug, price")
+        .eq("published", true).eq("category_id", part.category_id as string).neq("id", part.id)
+        .contains(filter!.col, filter!.val).order("price", { ascending: true }).limit(8);
+      return (data ?? []) as Sibling[];
+    },
+  }).data ?? [];
+};
+
+const siblingTitle = (part: PartDetail) => {
+  const f = part.fitment_specs ?? {};
+  if (f.tire_sections?.length) return `Autres références en ${f.tire_sections[0]}`;
+  if (f.brake_caliper?.length) return "Pour le même étrier";
+  if (f.brake_disc?.diameters?.length) return `Autres disques de ${f.brake_disc.diameters[0]} mm`;
+  return `Autres chargeurs ${part.electrical_specs?.voltages?.[0] ?? ""} V`;
+};
+
 const fill = (t: string, v: Record<string, string>) => t.replace(/\{(\w+)\}/g, (_, k) => v[k] ?? "");
 
 const Video = ({ id, name }: { id: string; name: string }) => {
@@ -195,6 +287,8 @@ const PartSeoFiche = ({ part, scooters, scootersLoading }: { part: PartDetail; s
   const [tab, setTab] = useState("compat");
   const [openFaq, setOpenFaq] = useState<number | null>(0);
   const [q, setQ] = useState("");
+  const siblings = useSiblings(part);
+  const points = traits(part);
 
   const verified = useMemo(() => scooters.filter((s) => s.status === "verified"), [scooters]);
   const toCheck = useMemo(() => scooters.filter((s) => s.status !== "verified"), [scooters]);
@@ -252,6 +346,15 @@ const PartSeoFiche = ({ part, scooters, scootersLoading }: { part: PartDetail; s
             ? <>Compatible avec <strong style={{ color: GREEN }}>{n} trottinette{n > 1 ? "s" : ""}</strong> vérifiée{n > 1 ? "s" : ""} sur la cote de montage, dont {listFr(top)}{groups.length > 3 ? `, sur ${groups.length} marques` : ""}.</>
             : <>Pas encore reliée à un modèle : dis-nous ta trottinette, on vérifie pour toi.</>}
         </p>
+
+        {points.length > 0 && (
+          <div className="mt-5 max-w-3xl bg-white p-4 lg:p-5" style={{ clipPath: CHAMFER, boxShadow: `inset 4px 0 0 ${GREEN}, inset 0 0 0 1px ${LINE}` }}>
+            <h3 className={h3} style={{ color: GREEN }}>Ce qui distingue cette référence</h3>
+            <ul className="space-y-2">{points.map((x) => (
+              <li key={x} className={`flex gap-3 ${p}`}><CheckCircle2 className="w-4 h-4 mt-1 shrink-0" style={{ color: GREEN }} /><span>{x}</span></li>
+            ))}</ul>
+          </div>
+        )}
 
         <div role="tablist" aria-label={`Tout savoir sur ${part.name}`} className="mt-5 -mx-4 px-4 lg:mx-0 lg:px-0 flex gap-2 overflow-x-auto pb-1 [scrollbar-width:none]">
           {tabs.map((t) => (
@@ -389,6 +492,21 @@ const PartSeoFiche = ({ part, scooters, scootersLoading }: { part: PartDetail; s
             </div>
           )}
         </div>
+
+        {siblings.length > 0 && (
+          <div className="mt-8">
+            <h3 className={h3} style={{ color: CARBON }}>{siblingTitle(part)}</h3>
+            <div className="grid sm:grid-cols-2 gap-2">
+              {siblings.map((x) => (
+                <Link key={x.id} to={`/piece/${x.slug}`} className="flex items-center gap-3 min-h-[52px] px-4 py-2 bg-white"
+                  style={{ clipPath: CHAMFER, boxShadow: `inset 0 0 0 1px ${LINE}` }}>
+                  <span className="flex-1 min-w-0 text-base font-semibold" style={{ color: CARBON }}>{x.name}</span>
+                  {x.price != null && <span className="shrink-0 text-base" style={{ fontFamily: UNB, fontWeight: 800, fontStyle: "italic", color: CARBON }}>{formatPrice(x.price)}</span>}
+                </Link>
+              ))}
+            </div>
+          </div>
+        )}
 
         {guide && guide.sources.length > 0 && (
           <details className="mt-6 text-sm text-gray-500">
