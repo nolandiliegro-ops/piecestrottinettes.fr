@@ -273,10 +273,10 @@ const E14 = () => <Encre ink="#DD6420" />;
 /* 15 — Geste orange : orange du logo sur le mot ET le trait, « PIÈCES » seul en noir. */
 const E15 = () => <Encre ink={LOGO_ORANGE} trait={LOGO_ORANGE} dot={LOGO_ORANGE} />;
 
-/* 16 — Marqueur 2026 : le logo choisi, recadré serré sur l'écriture (plus de vide autour). */
-export const LOGO_2026_SRC = "/brand/logo-pt-2026.png";
+/* 16 — Marqueur 2026 : le logo choisi, en vectoriel (net à toutes les tailles, 19/10). */
+export const LOGO_2026_SRC = "/brand/logo-pt-2026.svg";
 const Marqueur2026 = () => (
-  <img src={LOGO_2026_SRC} alt="piecestrottinettes.fr" width={857} height={247} className="block h-[46px] lg:h-[54px] w-auto" />
+  <img src={LOGO_2026_SRC} alt="piecestrottinettes.fr" width={937} height={268} className="block h-[46px] lg:h-[54px] w-auto" />
 );
 
 /** Police pinceau chargée seulement quand une proposition est affichée (rien ne change pour les autres visiteurs). */
