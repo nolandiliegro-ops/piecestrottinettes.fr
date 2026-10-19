@@ -46,6 +46,18 @@ const SECU_SLUGS = new Set([
 
 const THIRTY_DAYS_MS = 30 * 24 * 60 * 60 * 1000;
 
+/** 19/10 : cartes produits en DA Atelier, propositions ?pcarte=1..5 (retour Nolan : « pas belles »).
+ *  Défauts corrigés dans les 5 : polices Inter/Bebas hors DA, textes de 9 à 13 px, verre + coins ronds,
+ *  reflet animé en boucle, « CHARG » tronqué, « NOUVEAU » sur presque tout. Sans paramètre : carte actuelle. */
+type PCard = 1 | 2 | 3 | 4 | 5;
+const PCARD: PCard | null = (() => {
+  try { const n = Number(new URLSearchParams(window.location.search).get("pcarte")); return n >= 1 && n <= 5 ? (n as PCard) : null; } catch { return null; }
+})();
+const A_FONT = "'Plus Jakarta Sans', sans-serif";
+const A_UNB = "'Unbounded', sans-serif";
+const A_CUT = (px: number) => `polygon(0 0, calc(100% - ${px}px) 0, 100% ${px}px, 100% 100%, 0 100%)`;
+const A_LINE = "#E2DCD0";
+
 type BadgeKind = "BEST" | "SÉCU" | "NOUVEAU" | null;
 
 const pickBadge = (part: CompatiblePartRich): BadgeKind => {
@@ -160,6 +172,75 @@ const PartCardSlim = ({ part, index, variant = "grid", brandColor, categoryFilte
     e.preventDefault();
     onQuickView?.(part);
   };
+
+  const atelier = PCARD ? (
+    <Link to={`/piece/${part.slug}`} onClick={handleCardClick} data-pcard={PCARD}
+      className={cn("group relative block", PCARD === 4 && "pt-14")}
+      style={{ fontFamily: A_FONT }}>
+      {/* Image */}
+      <div className={cn("relative flex items-center justify-center", PCARD === 4 ? "absolute inset-x-0 top-0 h-[150px] z-[2] pointer-events-none" : "aspect-square")}
+        style={PCARD === 4 ? undefined : { background: PCARD === 2 || PCARD === 5 ? "#F2EFE8" : "#FFFFFF", clipPath: PCARD === 1 ? undefined : A_CUT(14) }}>
+        {img ? (
+          <img src={displayImg} alt={part.name} loading="lazy" decoding="async"
+            className={cn("object-contain transition-transform duration-300 group-hover:-translate-y-1", PCARD === 4 ? "max-h-full max-w-[86%]" : "max-w-[78%] max-h-[78%]")}
+            style={{ filter: "drop-shadow(0 10px 12px rgba(0,0,0,0.14))" }} />
+        ) : <div className="text-3xl opacity-30">🔧</div>}
+        {isOut && (
+          <span className="absolute left-2 bottom-2 px-2 py-1 text-sm font-bold text-white" style={{ background: "#1A1A1A", clipPath: A_CUT(6) }}>Rupture</span>
+        )}
+        {PCARD === 5 && (
+          <button type="button" onClick={handleQuickAdd} disabled={isOut || part.price === null} aria-label="Ajouter au panier"
+            className="absolute right-2 bottom-2 w-12 h-12 inline-flex items-center justify-center text-white disabled:opacity-40 z-[3]" style={{ background: "#FF6600", clipPath: A_CUT(8) }}>
+            <ShoppingCart size={19} strokeWidth={2.4} />
+          </button>
+        )}
+      </div>
+      {PCARD !== 4 && (
+        <button type="button" onClick={handleFavoriteClick} disabled={isToggling} aria-label={isFav ? "Retirer des favoris" : "Ajouter aux favoris"}
+          className="absolute z-[4] top-1.5 right-1.5 w-11 h-11 flex items-center justify-center">
+          <span className="w-8 h-8 flex items-center justify-center" style={{ background: "rgba(255,255,255,0.92)", boxShadow: `inset 0 0 0 1px ${A_LINE}`, clipPath: A_CUT(6) }}>
+            <Heart size={16} strokeWidth={2.2} className={isFav ? "fill-current" : "fill-none"} style={{ color: isFav ? "#DC2626" : "#1A1A1A" }} />
+          </span>
+        </button>
+      )}
+      {/* Corps */}
+      <div className={cn("relative", PCARD === 4 && "pt-[104px]")}
+        style={{ background: PCARD === 1 ? "#1A1A1A" : "#FFFFFF", boxShadow: PCARD === 1 ? undefined : `inset 0 0 0 1px ${A_LINE}`, clipPath: PCARD === 1 ? undefined : PCARD === 4 ? A_CUT(14) : undefined }}>
+        <div className="px-3 pt-3 pb-3">
+          {catName && (
+            <p className="text-sm font-bold uppercase tracking-wide truncate" style={{ color: PCARD === 1 ? "#8FBF9C" : "#4A7C59" }}>{catName}</p>
+          )}
+          <h4 className="mt-1 text-[15px] font-bold leading-snug line-clamp-2" style={{ color: PCARD === 1 ? "#FFFFFF" : "#1A1A1A", minHeight: "2.6em" }}>{part.name}</h4>
+          {PCARD === 3 ? (
+            <div className="mt-3 flex items-stretch justify-between gap-2">
+              <span className="inline-flex items-center px-3 min-h-[44px] text-[20px] text-white" style={{ background: "#1A1A1A", fontFamily: A_UNB, fontWeight: 900, fontStyle: "italic", clipPath: A_CUT(8) }}>
+                {part.price != null ? formatPrice(part.price) : "—"}
+              </span>
+              <button type="button" onClick={handleQuickAdd} disabled={isOut || part.price === null} aria-label="Ajouter au panier"
+                className="w-12 min-h-[44px] inline-flex items-center justify-center text-white disabled:opacity-40" style={{ background: "#FF6600", clipPath: A_CUT(8) }}>
+                <ShoppingCart size={18} strokeWidth={2.4} />
+              </button>
+            </div>
+          ) : PCARD === 5 ? (
+            <p className="mt-2 text-[22px] leading-none" style={{ fontFamily: A_UNB, fontWeight: 900, fontStyle: "italic", color: "#1A1A1A" }}>{part.price != null ? formatPrice(part.price) : "—"}</p>
+          ) : (
+            <>
+              <p className="mt-1.5 text-[24px] leading-none" style={{ fontFamily: A_UNB, fontWeight: 900, fontStyle: "italic", color: PCARD === 1 ? "#FFFFFF" : "#1A1A1A" }}>
+                {part.price != null ? formatPrice(part.price) : "—"}
+              </p>
+              <button type="button" onClick={handleQuickAdd} disabled={isOut || part.price === null}
+                className="mt-3 w-full min-h-[44px] inline-flex items-center justify-center gap-2 text-sm font-extrabold uppercase tracking-wide text-white disabled:opacity-40"
+                style={{ background: "#FF6600", clipPath: A_CUT(8) }}>
+                <ShoppingCart size={16} strokeWidth={2.4} /> {isOut ? "Indisponible" : "Ajouter"}
+              </button>
+            </>
+          )}
+        </div>
+      </div>
+    </Link>
+  ) : null;
+
+  if (atelier) return atelier;
 
   const cardContent = (
     <Link
