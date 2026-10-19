@@ -5,6 +5,8 @@
  *  1. CADRAGE : même règle que scripts/recadrage-photos.mjs (marge 4 %, recadrage si un côté a > 7 % de vide), mais le
  *     cadre est mesuré sur la SILHOUETTE PLEINE (alpha > 128, débris < 2 % de la plus grande pièce ignorés) : un voile
  *     ou un fantôme de détourage ne doit pas élargir le cadre (c'est ce qui fait paraître certaines trottinettes « loin »).
+ *  1b. Photo à fantômes (> 2 %) : masque durci d'abord (alpha < 64 → 0, > 160 → 255) — validé sur planche, l'effacement
+ *     simple amputait les trottinettes au corps semi-transparent.
  *  2. PHOTO PRINCIPALE : config/photos/vues.json { "<slug>": indexPhotoDeTroisQuarts (0-based) } — choisie sur planches
  *     (out/scooters-cadrage/vues-N.jpg). La photo choisie passe en 1re, les autres gardent leur ordre.
  *
@@ -27,6 +29,24 @@ const VUES = existsSync(resolve(ROOT, 'config/photos/vues.json')) ? JSON.parse(r
 const client = readFileSync(resolve(ROOT, 'src/integrations/supabase/client.ts'), 'utf-8');
 const SB_URL = (client.match(/VITE_SUPABASE_URL\s*\|\|\s*"([^"]+)"/) || [])[1];
 const ANON = (client.match(/VITE_SUPABASE_PUBLISHABLE_KEY\s*\|\|\s*"([^"]+)"/) || [])[1];
+
+/** Fantômes (mesure de scripts/audit-detourage.mjs, 400 px). */
+async function fantome(buf) {
+  const { data, info } = await sharp(buf, { failOn: 'none' }).ensureAlpha().resize(400, 400, { fit: 'inside' }).raw().toBuffer({ resolveWithObject: true });
+  const W = info.width, H = info.height, N = W * H;
+  const op = new Uint8Array(N); for (let i = 0; i < N; i++) if (data[i * 4 + 3] > 230) op[i] = 1;
+  const pres = new Uint8Array(N);
+  for (let y = 0; y < H; y++) for (let x = 0; x < W; x++) if (op[y * W + x])
+    for (let dy = -2; dy <= 2; dy++) for (let dx = -2; dx <= 2; dx++) { const yy = y + dy, xx = x + dx; if (yy >= 0 && yy < H && xx >= 0 && xx < W) pres[yy * W + xx] = 1; }
+  let f = 0, o = 0; for (let i = 0; i < N; i++) { if (op[i]) o++; const a = data[i * 4 + 3]; if (a >= 16 && a <= 230 && !pres[i]) f++; }
+  return o ? f / o : 0;
+}
+/** Masque durci (validé sur planche 19/10, run « nettoyage dry durcir ») : alpha < 64 → 0, > 160 → 255, rampe entre. */
+async function durcir(buf) {
+  const { data, info } = await sharp(buf, { failOn: 'none' }).ensureAlpha().raw().toBuffer({ resolveWithObject: true });
+  for (let i = 0; i < info.width * info.height; i++) { const a = data[i * 4 + 3]; data[i * 4 + 3] = a < 64 ? 0 : a > 160 ? 255 : Math.round((a - 64) * 255 / 96); }
+  return sharp(data, { raw: { width: info.width, height: info.height, channels: 4 } }).png({ compressionLevel: 9 }).toBuffer();
+}
 
 async function analyse(buf) {
   const meta = await sharp(buf, { failOn: 'none' }).metadata();
@@ -84,7 +104,15 @@ async function main() {
     const urls = Array.isArray(s.images) && s.images.length ? [...s.images].sort((a, b) => (a.position ?? 0) - (b.position ?? 0)).map((i) => i.url) : (s.image_url ? [s.image_url] : []);
     const photos = [];
     for (const u of urls) {
-      try { const r = await fetch(u); if (!r.ok) throw new Error(`HTTP ${r.status}`); const buf = Buffer.from(await r.arrayBuffer()); photos.push({ url: u, buf, ...(await analyse(buf)) }); }
+      try {
+        const r = await fetch(u); if (!r.ok) throw new Error(`HTTP ${r.status}`);
+        const brut = Buffer.from(await r.arrayBuffer());
+        const f = await fantome(brut);
+        const buf = f > 0.02 ? await durcir(brut) : brut; // photo à fantômes : masque durci AVANT le cadrage
+        const a = await analyse(buf);
+        if (f > 0.02 && !a.out) a.out = buf; // durcie mais déjà bien cadrée : la version durcie est quand même à écrire
+        photos.push({ url: u, buf: brut, f, durcie: f > 0.02, ...a, besoin: a.besoin || f > 0.02 });
+      }
       catch (e) { photos.push({ url: u, erreur: e.message }); }
     }
     const v = VUES[s.slug];
@@ -94,7 +122,7 @@ async function main() {
     const aCadrer = photos.filter((p) => p.besoin).length;
     const erreurs = photos.filter((p) => p.erreur).length;
     const aEcrire = (aCadrer > 0 || reordonne) && erreurs === 0 && photos.length > 0;
-    const R = { id: s.id, slug: s.slug, nom: s.name, photos: photos.length, aCadrer, reordonne, principale: ordre[0], erreurs, remplissagePrincipale: photos[ordre[0]]?.remplissage ?? null, aEcrire };
+    const R = { id: s.id, slug: s.slug, nom: s.name, photos: photos.length, aCadrer, durcies: photos.filter((p) => p.durcie).length, reordonne, principale: ordre[0], erreurs, remplissagePrincipale: photos[ordre[0]]?.remplissage ?? null, aEcrire };
     if (MODE === 'dry') {
       lignes.push({ nom: s.name, slug: s.slug, tuiles: await Promise.all(photos.filter((p) => p.buf).map((p, i) => tuile(p.out || p.buf, `#${i} ${s.name}`))) });
       const p0 = photos[ordre[0]];
@@ -128,7 +156,7 @@ async function main() {
     }
   }
   const n = (f) => report.filter(f).length;
-  const resume = { mode: MODE, trottinettes: report.length, aCadrer: n((r) => r.aCadrer > 0), photosACadrer: report.reduce((a, r) => a + r.aCadrer, 0), reordonnees: n((r) => r.reordonne), avecErreur: n((r) => r.erreurs > 0), aEcrire: n((r) => r.aEcrire), ecrites: n((r) => r.ecrit === true), echecs: n((r) => r.ecrit === false) };
+  const resume = { mode: MODE, trottinettes: report.length, aCadrer: n((r) => r.aCadrer > 0), photosACadrer: report.reduce((a, r) => a + r.aCadrer, 0), photosDurcies: report.reduce((a, r) => a + (r.durcies || 0), 0), reordonnees: n((r) => r.reordonne), avecErreur: n((r) => r.erreurs > 0), aEcrire: n((r) => r.aEcrire), ecrites: n((r) => r.ecrit === true), echecs: n((r) => r.ecrit === false) };
   writeFileSync(resolve(OUT, `report-${MODE}.json`), JSON.stringify({ resume, report }, null, 1));
   console.log(`::notice title=scooters-cadrage ${MODE}::${JSON.stringify(resume)}`);
 }
