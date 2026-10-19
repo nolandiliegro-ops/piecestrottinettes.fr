@@ -255,7 +255,11 @@ const OrdersManager = () => {
   const [searchParams] = useSearchParams();
   const [selectedOrder, setSelectedOrder] = useState<Order | null>(null);
   const [isSheetOpen, setIsSheetOpen] = useState(false);
-  const [statusFilter, setStatusFilter] = useState<string | null>(null);
+  // ?statut=paid|processing|… (liens profonds depuis l'Accueil) → pilule pré-sélectionnée
+  const [statusFilter, setStatusFilter] = useState<string | null>(() => {
+    const s = searchParams.get('statut');
+    return s && statusConfig[s] ? s : null;
+  });
   const [updatingOrderId, setUpdatingOrderId] = useState<string | null>(null);
   const [searchTerm, setSearchTerm] = useState(searchParams.get('order') || '');
 

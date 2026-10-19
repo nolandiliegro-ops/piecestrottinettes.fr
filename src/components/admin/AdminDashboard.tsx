@@ -144,11 +144,12 @@ const AdminDashboard = () => {
     : null;
 
   const todos: TodoItem[] = stats ? [
-    { to: '/admin/commandes', icon: PackageCheck, label: 'Commandes à préparer', count: stats.orders_to_prepare, urgent: true },
-    { to: '/admin/commandes', icon: Truck, label: 'Commandes à expédier', count: stats.orders_to_ship, urgent: true },
+    // Chaque ligne nomme le statut EXACT de l'écran Commandes et y arrive pré-filtrée (acté 19/10)
+    { to: '/admin/commandes?statut=paid', icon: PackageCheck, label: 'À préparer — statut « Payé »', count: stats.orders_to_prepare, urgent: true },
+    { to: '/admin/commandes?statut=processing', icon: Truck, label: 'À expédier — statut « En préparation »', count: stats.orders_to_ship, urgent: true },
     { to: '/admin/messages', icon: MessageSquare, label: 'Messages en attente', count: stats.messages_pending },
     { to: '/admin/bots', icon: Bot, label: 'Trottinettes bot à trier', count: stats.imports_scooters },
-    { to: '/admin/catalogue/pieces', icon: AlertTriangle, label: 'Stock bas (pièces publiées)', count: stats.stock_low },
+    { to: '/admin/catalogue/pieces?statut=stock-bas', icon: AlertTriangle, label: 'Stock bas (pièces publiées)', count: stats.stock_low },
   ] : [];
 
   const chartData = (stats?.sales_30d ?? []).map(d => ({
@@ -193,7 +194,7 @@ const AdminDashboard = () => {
         <div className="admin-glass-card rounded-2xl p-3 md:p-4">
           <div className="flex items-baseline justify-between px-3 pt-1 pb-2">
             <h2 className="text-sm font-black uppercase tracking-wide text-[hsl(var(--admin-text))]">Ventes — 30 jours</h2>
-            {stats && <span className="text-xs text-[hsl(var(--admin-text-muted))]">Total encaissé : {eur.format(stats.ca_total)}</span>}
+            {stats && <span className="text-xs text-[hsl(var(--admin-text-muted))]">Encaissé depuis le début : {eur.format(stats.ca_total)}</span>}
           </div>
           {isLoading ? (
             <Skeleton className="h-44 m-2" />

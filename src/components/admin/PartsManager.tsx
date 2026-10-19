@@ -1,4 +1,5 @@
 import { useState, useEffect, useRef, useMemo } from 'react';
+import { useSearchParams } from 'react-router-dom';
 import { supabase } from '@/integrations/supabase/client';
 import { slugify } from '../../../scripts/lib/slugify.js';
 import { Button } from '@/components/ui/button';
@@ -102,6 +103,14 @@ const PartsManager = () => {
   });
   const [statusFilter, setStatusFilter] = useState<'all' | 'published' | 'unpublished' | 'lowstock'>('all');
   const [togglingId, setTogglingId] = useState<string | null>(null);
+
+  // Lien profond depuis l'Accueil : /admin/catalogue/pieces?statut=stock-bas arrive pré-filtré
+  const [searchParams] = useSearchParams();
+  useEffect(() => {
+    const s = searchParams.get('statut');
+    if (s === 'stock-bas') setStatusFilter('lowstock');
+    else if (s === 'depubliees') setStatusFilter('unpublished');
+  }, [searchParams]);
   
   // Smart Toolbar state
   const [sortField, setSortField] = useState<SortField>('name');
@@ -645,9 +654,13 @@ const PartsManager = () => {
 
   const lowStockCount = parts.filter(isLowStock).length;
 
-  // Sort logic
+  // Sort logic — les dépubliées coulent toujours en fin de liste :
+  // la première rangée du catalogue ne doit jamais être des produits morts (acté 19/10).
   const sortedParts = useMemo(() => {
     return [...filteredParts].sort((a, b) => {
+      const pubA = a.published === true ? 0 : 1;
+      const pubB = b.published === true ? 0 : 1;
+      if (pubA !== pubB) return pubA - pubB;
       let comparison = 0;
       
       switch (sortField) {
@@ -1194,15 +1207,17 @@ const PartsManager = () => {
         </DropdownMenu>
       </div>
 
-      {/* Pilules catégorie — même geste que le Studio Compat */}
+      {/* Pilules catégorie — chips beiges, actif carbone. Niveau 2 de la hiérarchie :
+          onglets de section (barre blanche/vert) > catégories (beige/carbone) > statut (segmenté à puces). */}
       <div className="flex items-center gap-1.5 overflow-x-auto scrollbar-none">
+        <span className="shrink-0 text-[10px] font-black uppercase tracking-wider text-[hsl(var(--admin-text-muted))] pr-1">Catégorie</span>
         <button
           onClick={() => setCategoryFilter('all')}
           className={cn(
             'px-2.5 py-1.5 min-h-[36px] rounded-full text-xs font-semibold whitespace-nowrap border transition-colors',
             categoryFilter === 'all'
               ? 'bg-[hsl(var(--admin-text))] text-white border-transparent'
-              : 'bg-white text-[hsl(var(--admin-text-muted))] border-[hsl(var(--admin-border))] hover:bg-[hsl(var(--aov03))]'
+              : 'bg-[hsl(var(--aov04))] text-[hsl(var(--admin-text))] border-transparent hover:bg-[hsl(var(--aov08))]'
           )}
         >
           Toutes catégories ({parts.length})
@@ -1219,7 +1234,7 @@ const PartsManager = () => {
                 'px-2.5 py-1.5 min-h-[36px] rounded-full text-xs font-semibold whitespace-nowrap border transition-colors',
                 categoryFilter === c.id
                   ? 'bg-[hsl(var(--admin-text))] text-white border-transparent'
-                  : 'bg-white text-[hsl(var(--admin-text-muted))] border-[hsl(var(--admin-border))] hover:bg-[hsl(var(--aov03))]'
+                  : 'bg-[hsl(var(--aov04))] text-[hsl(var(--admin-text))] border-transparent hover:bg-[hsl(var(--aov08))]'
               )}
             >
               {c.name} ({n})
@@ -1230,25 +1245,30 @@ const PartsManager = () => {
       {/* Pilules de statut + bascule de vue */}
       <div className="flex flex-wrap items-center justify-between gap-3">
         <div className="flex items-center gap-2 overflow-x-auto scrollbar-none">
-          {([
-            { id: 'all', label: `Toutes (${parts.length})` },
-            { id: 'published', label: `Publiées (${parts.filter(p => p.published === true).length})` },
-            { id: 'unpublished', label: `Dépubliées (${parts.filter(p => p.published !== true).length})` },
-            { id: 'lowstock', label: `Stock bas (${lowStockCount})` },
-          ] as const).map(f => (
-            <button
-              key={f.id}
-              onClick={() => setStatusFilter(f.id)}
-              className={cn(
-                'px-3 py-2 min-h-[40px] rounded-full text-sm font-medium whitespace-nowrap border transition-colors',
-                statusFilter === f.id
-                  ? 'bg-[hsl(var(--admin-accent))] text-white border-transparent'
-                  : 'bg-white text-[hsl(var(--admin-text-muted))] border-[hsl(var(--admin-border))] hover:bg-[hsl(var(--aov03))]'
-              )}
-            >
-              {f.label}
-            </button>
-          ))}
+          <span className="shrink-0 text-[10px] font-black uppercase tracking-wider text-[hsl(var(--admin-text-muted))]">Statut</span>
+          {/* Contrôle segmenté : un seul conteneur blanc, puces de couleur par état */}
+          <div className="inline-flex items-center gap-0.5 rounded-full border border-[hsl(var(--admin-border))] bg-white p-0.5">
+            {([
+              { id: 'all', label: `Toutes (${parts.length})`, dot: null },
+              { id: 'published', label: `Publiées (${parts.filter(p => p.published === true).length})`, dot: 'bg-[hsl(var(--admin-accent))]' },
+              { id: 'unpublished', label: `Dépubliées (${parts.filter(p => p.published !== true).length})`, dot: 'bg-gray-400' },
+              { id: 'lowstock', label: `Stock bas (${lowStockCount})`, dot: 'bg-orange-600' },
+            ] as const).map(f => (
+              <button
+                key={f.id}
+                onClick={() => setStatusFilter(f.id)}
+                className={cn(
+                  'flex items-center gap-1.5 px-3 py-1.5 min-h-[36px] rounded-full text-sm font-medium whitespace-nowrap transition-colors',
+                  statusFilter === f.id
+                    ? 'bg-[hsl(var(--admin-accent))] text-white'
+                    : 'text-[hsl(var(--admin-text-muted))] hover:bg-[hsl(var(--aov03))]'
+                )}
+              >
+                {f.dot && <span className={cn('w-2 h-2 rounded-full shrink-0', statusFilter === f.id ? 'bg-white' : f.dot)} />}
+                {f.label}
+              </button>
+            ))}
+          </div>
           <div className="flex items-center rounded-full border border-[hsl(var(--admin-border))] bg-white p-0.5 ml-1">
             <button
               onClick={() => { setViewMode('grid'); try { localStorage.setItem('pt-admin-parts-view', 'grid'); } catch { /* noop */ } }}
