@@ -1,0 +1,39 @@
+name: Wattiz — pièces par modèle (compatibilités)
+
+# 19/10/2026 : lecture seule des pages publiques « Marque et Modèle » de Wattiz (fournisseur B2B).
+# Aucune clé, aucune écriture en base. Modifier config/wattiz/_run.txt = UN run.
+# Sortie sur la branche donnees-extraction, dossier wattiz/.
+
+on:
+  push:
+    branches: [main]
+    paths: ['config/wattiz/_run.txt']
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  wattiz:
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - name: Lecture des pages modèle
+        run: node scripts/suppliers/wattiz-modeles.mjs
+      - name: Résultats → branche donnees-extraction
+        if: always()
+        shell: bash
+        run: |
+          git config user.name "catalogue-bot"
+          git config user.email "catalogue-bot@users.noreply.github.com"
+          mv out/wattiz /tmp/wattiz
+          git fetch origin donnees-extraction
+          git checkout -B donnees-extraction origin/donnees-extraction
+          mkdir -p wattiz && cp -r /tmp/wattiz/. wattiz/
+          git add wattiz
+          git commit -q -m "wattiz modèles : $(date -u +%FT%TZ)" || echo "rien à commiter"
+          for i in 1 2 3; do git push origin donnees-extraction && break; git pull --rebase origin donnees-extraction; done
