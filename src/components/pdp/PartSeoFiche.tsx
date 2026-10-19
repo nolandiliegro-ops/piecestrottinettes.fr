@@ -237,6 +237,16 @@ const siblingTitle = (part: PartDetail) => {
   return `Autres chargeurs ${part.electrical_specs?.voltages?.[0] ?? ""} V`;
 };
 
+
+/** Sur quoi la compatibilité est vérifiée, dit dans les mots de la famille. */
+const matchBasis = (part: PartDetail) => {
+  const f = part.fitment_specs ?? {};
+  if (f.brake_caliper?.length) return "sur la forme d'étrier";
+  if (f.brake_disc?.diameters?.length) return "sur le diamètre et la fixation du disque";
+  if (part.electrical_specs?.voltages?.length) return part.electrical_specs.connector ? "sur la tension et la prise de charge" : "sur la tension";
+  return "sur la cote de montage";
+};
+
 const fill = (t: string, v: Record<string, string>) => t.replace(/\{(\w+)\}/g, (_, k) => v[k] ?? "");
 
 const Video = ({ id, name }: { id: string; name: string }) => {
@@ -302,7 +312,9 @@ const PartSeoFiche = ({ part, scooters, scootersLoading }: { part: PartDetail; s
   const rows = keyRows(part, caliper);
   const { tiles, free } = parseSpecs(part.description, part.characteristics);
   const known = new Set(rows.map(([k]) => k.toLowerCase()));
-  const extra = tiles.filter((t) => !known.has(t.label.toLowerCase()) && !/^(type|dimension)$/i.test(t.label));
+  // Tuiles fournisseur déjà couvertes par les clés lues en base (prise, tension, cote, étrier…) : écartées, pas de doublon.
+  const extra = tiles.filter((t) => !known.has(t.label.toLowerCase())
+    && !/^(type|dimension|taille|connecteur|prise|tension|voltage|[ée]trier|diam[eè]tre|entraxe|ean)\b/i.test(t.label));
   const desc = part.description?.trim() ? cleanDescription(part.description).replace(/<h2>[\s\S]*?<\/h2>/gi, "").trim() : "";
   const descText = desc.replace(/<[^>]+>/g, " ").replace(/\s+/g, " ").trim();
 
@@ -345,7 +357,7 @@ const PartSeoFiche = ({ part, scooters, scootersLoading }: { part: PartDetail; s
           <strong style={{ color: CARBON }}>{part.name}</strong>
           {guide ? ` : ${guide.label} ${key}` : key ? ` : ${key}` : ""}.{" "}
           {scootersLoading ? null : n > 0
-            ? <>Compatible avec <strong style={{ color: GREEN }}>{n} trottinette{n > 1 ? "s" : ""}</strong> vérifiée{n > 1 ? "s" : ""} sur la cote de montage, dont {listFr(top)}{groups.length > 3 ? `, sur ${groups.length} marques` : ""}.</>
+            ? <>Compatible avec <strong style={{ color: GREEN }}>{n} trottinette{n > 1 ? "s" : ""}</strong> vérifiée{n > 1 ? "s" : ""} {matchBasis(part)}, dont {listFr(top)}{groups.length > 3 ? `, sur ${groups.length} marques` : ""}.</>
             : <>Pas encore reliée à un modèle : dis-nous ta trottinette, on vérifie pour toi.</>}
         </p>
 
