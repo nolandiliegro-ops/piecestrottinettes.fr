@@ -175,9 +175,19 @@ const Shelf = ({ s, size, scooters, isLoading, title, onSelect, heading }: { s: 
   </div>
 );
 
+/** 19/10 : retour Nolan « les trottinettes noires sur le fond noir, c'est un peu noir ». Propositions ?scene=1..5 :
+ *  1 noir + lumière forte · 2 deux tons pierre · 3 deux tons blanc studio · 4 deux tons béton · 5 tout clair.
+ *  Sans paramètre : scène actuelle inchangée. */
+type Scene = 1 | 2 | 3 | 4 | 5;
+const readScene = (): Scene | null => {
+  try { const n = Number(new URLSearchParams(window.location.search).get("scene")); return n >= 1 && n <= 5 ? (n as Scene) : null; } catch { return null; }
+};
+const SCENE_TOP: Record<Scene, string | null> = { 1: null, 2: "#ECE8E0", 3: "#FFFFFF", 4: "linear-gradient(180deg,#CFCAC0 0%,#B9B3A8 100%)", 5: null };
+
 /* ---------- Ordinateur : grande scène, la trottinette déborde de sa plaque ---------- */
 const Stage = ({ s, scooters, onSelect }: { s: Skin; scooters: ScooterHero[]; onSelect: (slug: string) => void }) => {
   const reduce = useReducedMotion();
+  const [scene] = useState(readScene);
   const [i, setI] = useState(0);
   useEffect(() => setI(0), [scooters]);
   if (!scooters.length) return null;
@@ -185,12 +195,15 @@ const Stage = ({ s, scooters, onSelect }: { s: Skin; scooters: ScooterHero[]; on
   const cur = scooters[i % len];
   const brand = getBrandColors(cur.brand_name);
   const go = (d: 1 | -1) => setI((x) => (x + d + len) % len);
-  const onStage = s.stage === CARBON || s.stage === "#262626" || s.stage === GREEN;
+  const plate = scene === 5 ? "#ECE8E0" : s.stage;
+  const top = scene ? SCENE_TOP[scene] : null;
+  const onStage = plate === CARBON || plate === "#262626" || plate === GREEN;
   const spec = [cur.max_speed_kmh && `${cur.max_speed_kmh} km/h`, cur.range_km && `${cur.range_km} km`, cur.power_watts && `${cur.power_watts} W`].filter(Boolean) as string[];
   return (
     <div className="relative w-full pt-[80px] xl:pt-[90px]">
-      <div className="relative px-8 pt-[330px] xl:pt-[380px] pb-7" style={{ background: s.stage, clipPath: cut(26) }}>
-        <div className="flex items-end justify-between gap-4">
+      <div className="relative px-8 pt-[330px] xl:pt-[380px] pb-7" style={{ background: plate, clipPath: cut(26) }} data-scene={scene ?? 0}>
+        {top && <div aria-hidden className="absolute inset-x-0 top-0 h-[300px] xl:h-[350px]" style={{ background: top, boxShadow: scene === 3 ? "inset 0 0 0 1px #E2DCD0" : undefined }} />}
+        <div className="relative flex items-end justify-between gap-4">
           <button type="button" onClick={() => onSelect(cur.slug)} className="text-left min-w-0">
             <span className="flex items-center gap-2 text-sm font-extrabold uppercase tracking-wide" style={{ fontFamily: FONT, color: onStage ? "rgba(255,255,255,0.7)" : "#6B7280" }}>
               <span className="w-6 h-[3px]" style={{ background: brand.accent === s.stage ? "#FFFFFF" : brand.accent }} />{cur.brand_name} · top du moment
@@ -198,16 +211,16 @@ const Stage = ({ s, scooters, onSelect }: { s: Skin; scooters: ScooterHero[]; on
             <span className="block mt-1 text-3xl xl:text-4xl uppercase leading-none truncate" style={{ fontFamily: UNB, fontWeight: 900, fontStyle: "italic", letterSpacing: "-0.03em", color: onStage ? "#FFFFFF" : CARBON }}>{cur.name}</span>
             <span className="mt-3 flex flex-wrap gap-2">
               {spec.map((t) => (
-                <span key={t} className="px-2.5 py-1 text-sm font-bold" style={{ fontFamily: FONT, background: "rgba(255,255,255,0.10)", color: "#FFFFFF", clipPath: cut(6) }}>{t}</span>
+                <span key={t} className="px-2.5 py-1 text-sm font-bold" style={{ fontFamily: FONT, background: onStage ? "rgba(255,255,255,0.10)" : "rgba(26,26,26,0.08)", color: onStage ? "#FFFFFF" : CARBON, clipPath: cut(6) }}>{t}</span>
               ))}
-              <span className="px-2.5 py-1 text-sm font-bold" style={{ fontFamily: FONT, background: "#FFFFFF", color: CARBON, clipPath: cut(6) }}>{parts(cur.compatible_parts_count)}</span>
+              <span className="px-2.5 py-1 text-sm font-bold" style={{ fontFamily: FONT, background: onStage ? "#FFFFFF" : CARBON, color: onStage ? CARBON : "#FFFFFF", clipPath: cut(6) }}>{parts(cur.compatible_parts_count)}</span>
             </span>
           </button>
           {len > 1 && (
             <div className="flex gap-2 shrink-0">
               {([-1, 1] as const).map((d) => (
                 <button key={d} type="button" onClick={() => go(d)} aria-label={d < 0 ? "Trottinette précédente" : "Trottinette suivante"}
-                  className="w-12 h-12 inline-flex items-center justify-center" style={{ background: "#FFFFFF", color: CARBON, clipPath: cut(8) }}>
+                  className="w-12 h-12 inline-flex items-center justify-center" style={{ background: onStage ? "#FFFFFF" : CARBON, color: onStage ? CARBON : "#FFFFFF", clipPath: cut(8) }}>
                   {d < 0 ? <ChevronLeft className="w-5 h-5" strokeWidth={2.6} /> : <ChevronRight className="w-5 h-5" strokeWidth={2.6} />}
                 </button>
               ))}
@@ -216,12 +229,16 @@ const Stage = ({ s, scooters, onSelect }: { s: Skin; scooters: ScooterHero[]; on
         </div>
       </div>
       <button type="button" onClick={() => onSelect(cur.slug)} aria-label={`Voir ${cur.name}`} className="absolute inset-x-0 top-0 h-[400px] xl:h-[460px] flex items-end justify-center">
-        {s.stage !== GREEN && <span aria-hidden className="absolute inset-x-10 bottom-0 top-[40%]" style={{ background: "radial-gradient(closest-side, rgba(255,255,255,0.22), rgba(255,255,255,0) 100%)" }} />}
+        {scene === 1 ? (
+          <span aria-hidden className="absolute inset-x-0 bottom-[-40px] top-[22%]" style={{ background: "radial-gradient(closest-side, rgba(255,255,255,0.42), rgba(255,255,255,0.10) 55%, rgba(255,255,255,0) 100%)" }} />
+        ) : scene ? (
+          <span aria-hidden className="absolute left-[18%] right-[18%] bottom-[2px] h-6" style={{ background: "radial-gradient(closest-side, rgba(0,0,0,0.28), rgba(0,0,0,0) 100%)" }} />
+        ) : s.stage !== GREEN && <span aria-hidden className="absolute inset-x-10 bottom-0 top-[40%]" style={{ background: "radial-gradient(closest-side, rgba(255,255,255,0.22), rgba(255,255,255,0) 100%)" }} />}
         <AnimatePresence mode="wait">
           <motion.div key={cur.id} className="h-full w-full flex items-end justify-center"
             initial={reduce ? false : { opacity: 0, x: 40 }} animate={{ opacity: 1, x: 0 }} exit={reduce ? undefined : { opacity: 0, x: -40 }} transition={{ duration: 0.4, ease: [0.22, 1, 0.36, 1] }}>
             {cur.image_url ? (
-              <img src={cur.image_url} alt={cur.name} className="relative max-h-full max-w-[96%] object-contain" style={{ filter: "drop-shadow(0 24px 22px rgba(0,0,0,0.35))" }} />
+              <img src={cur.image_url} alt={cur.name} className="relative max-h-full max-w-[96%] object-contain" style={{ filter: scene && scene !== 1 ? "drop-shadow(0 18px 16px rgba(0,0,0,0.22))" : "drop-shadow(0 24px 22px rgba(0,0,0,0.35))" }} />
             ) : (
               <Bike className="w-32 h-32 text-white/40" strokeWidth={1} />
             )}
