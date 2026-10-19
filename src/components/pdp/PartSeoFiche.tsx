@@ -81,7 +81,9 @@ const fr = (n: number) => n.toLocaleString("fr-FR", { maximumFractionDigits: 1 }
 
 const fullName = (s: CompatibleScooter) => {
   const b = s.brand?.name?.trim() ?? "";
-  return b && !s.name.toLowerCase().startsWith(b.toLowerCase()) ? `${b} ${s.name}` : s.name;
+  // « Pure Electric » + « Pure Air⁶ » : le nom commence déjà par le premier mot de la marque → pas de doublon.
+  const first = b.split(/\s+/)[0]?.toLowerCase() ?? "";
+  return b && !s.name.toLowerCase().startsWith(first) ? `${b} ${s.name}` : s.name;
 };
 const shortName = (s: CompatibleScooter) => {
   const b = s.brand?.name ?? "";
