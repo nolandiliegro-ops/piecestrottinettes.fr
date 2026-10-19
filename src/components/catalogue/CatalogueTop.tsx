@@ -147,10 +147,10 @@ const Title = ({ dark = false, center = false }: { dark?: boolean; center?: bool
 // ─── Vignette catégorie ───
 // 19/10 (Nolan : « le "Toutes" noir n'est pas joli », images de catégorie d'époque hétérogènes) :
 // packshots Higgsfield détourés (public/categories/<clé>-a|b.webp) + 5 habillages via ?tuile=1..5.
-// Sans paramètre : vignette du 17/10 inchangée (photo pleine, « Toutes » carbone).
+// 19/10 : « 1 Pierre » choisie par Nolan = défaut ; ?tuile=0 = vignette du 17/10 (photo pleine, « Toutes » carbone).
 type TuileLook = 1 | 2 | 3 | 4 | 5;
 const TUILE: TuileLook | null = (() => {
-  try { const r = new URLSearchParams(window.location.search).get("tuile"); if (r === null) return null; const n = Number(r); return n >= 1 && n <= 5 ? (n as TuileLook) : null; } catch { return null; }
+  try { const r = new URLSearchParams(window.location.search).get("tuile"); if (r === null) return 1; const n = Number(r); return n >= 1 && n <= 5 ? (n as TuileLook) : null; } catch { return null; }
 })();
 const PACK_SET = (() => { try { return new URLSearchParams(window.location.search).get("img") === "b" ? "b" : "a"; } catch { return "a"; } })();
 const PACK_KEY: Record<string, string> = { pneus: "pneus", "pneus-pleins": "pleins", "chambres-a-air": "chambres", plaquettes: "plaquettes", disques: "disques", chargeurs: "chargeurs", "accessoires-divers": "accessoires" };

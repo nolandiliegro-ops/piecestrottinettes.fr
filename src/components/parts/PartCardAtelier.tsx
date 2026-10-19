@@ -5,7 +5,7 @@
  * pastilles « verre », zoom framer sur toute la carte. Ici : coins coupés, Plus Jakarta + Unbounded italique,
  * rien sous 14 px, orange réservé au bouton d'achat, aucun bloc noir.
  *
- * Activées par ?carte=1..5 (sans paramètre : carte actuelle inchangée).
+ * Activées par ?carte=1..5. 19/10 : la 1 (Ça dépasse) est le DÉFAUT partout ; ?carte=0 = ancienne carte.
  * 1 ÇA DÉPASSE  · la carte de l'accueil à l'identique (la pièce sort du haut de la plaque, halo vert au survol)
  * 2 ÉTABLI      · plaque blanche, photo sur fond pierre, une ligne de caractéristiques, prix + panier carré
  * 3 ÉTIQUETTE   · sans cadre, photo sur pierre, prix sur étiquette pierre à filet vert
@@ -34,7 +34,8 @@ export type CarteLook = 1 | 2 | 3 | 4 | 5;
 export const CARTE: CarteLook | null = (() => {
   try {
     const raw = new URLSearchParams(window.location.search).get("carte");
-    if (raw === null) return null;
+    // 19/10 : « 1 Ça dépasse » choisi par Nolan = défaut partout ; ?carte=0 = ancienne carte
+    if (raw === null) return 1;
     const n = Number(raw);
     return n >= 1 && n <= 5 ? (n as CarteLook) : null;
   } catch { return null; }
