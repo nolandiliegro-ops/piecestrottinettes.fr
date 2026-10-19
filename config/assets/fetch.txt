@@ -1,0 +1,3 @@
+# chemin_dans_public URL — logos partenaires (usage dans le bloc « Où l'acheter », accord du partenaire)
+public/partners/dualtron-store-logo.png https://dualtron-store.com/wp-content/uploads/2021/10/DUALTRONSTORE_Logo3D_vClean_4K.png
+public/partners/dualtron-store-icone.png https://dualtron-store.com/wp-content/uploads/2024/08/DUALTRONSTORE-1-e1722943510719.png

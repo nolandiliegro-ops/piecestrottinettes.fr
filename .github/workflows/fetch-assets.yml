@@ -1,0 +1,33 @@
+name: Récupération d'images partenaires
+# 19/10/2026 : l'espace de travail de Claude ne joint pas les sites partenaires.
+# Ce job télécharge les URL listées dans config/assets/fetch.txt (« chemin_dans_public URL » par ligne)
+# et les commite dans public/. Lecture seule côté sites, aucune donnée en base.
+on:
+  push:
+    branches: [main]
+    paths: ['config/assets/fetch.txt']
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - name: Téléchargement
+        run: |
+          set -e
+          grep -vE '^\s*(#|$)' config/assets/fetch.txt | while read -r dest url; do
+            case "$dest" in public/*) ;; *) echo "::error::chemin refusé $dest"; exit 1;; esac
+            mkdir -p "$(dirname "$dest")"
+            curl -fsSL --max-time 60 -A "Mozilla/5.0 (pt-assets)" -o "$dest" "$url"
+            echo "::notice title=asset::$dest $(stat -c %s "$dest") octets $(file -b --mime-type "$dest")"
+          done
+      - name: Commit
+        run: |
+          git config user.name "pt-assets"; git config user.email "pt-assets@users.noreply.github.com"
+          git add public/partners
+          if git diff --cached --quiet; then echo "::notice::rien de nouveau"; exit 0; fi
+          git commit -m "Images partenaires (fetch-assets)"
+          for i in 1 2 3; do git push && exit 0; git pull --rebase; done; exit 1
