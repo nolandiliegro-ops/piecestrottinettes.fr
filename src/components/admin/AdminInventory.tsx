@@ -11,7 +11,7 @@ import WatcherControl from './WatcherControl';
 import CatalogueTriage from './CatalogueTriage';
 
 const AdminInventory = () => {
-  // 19/10 : ?tri=1..5 ouvre directement l'onglet « Tri » (propositions de l'écran de tri du catalogue)
+  // 19/10 : ?tri=1 ouvre directement l'onglet « Tri » du catalogue
   const [tab, setTab] = useState(() =>
     typeof window !== 'undefined' && new URLSearchParams(window.location.search).get('tri') ? 'tri' : 'parts'
   );
