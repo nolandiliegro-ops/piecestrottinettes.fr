@@ -1,0 +1,21 @@
+{
+ "lot": "g30fix",
+ "models": [
+  {
+   "id": "76a7291f-df89-4621-aab0-f201450cff92",
+   "slug": "g30-max",
+   "name": "G30 Max",
+   "brand": "Ninebot",
+   "candidates": [
+    "https://m.media-amazon.com/images/I/71MwBeFui9L._AC_SL1500_.jpg",
+    "https://m.media-amazon.com/images/I/51deLeCJMBL._AC_SL1500_.jpg",
+    "https://m.media-amazon.com/images/I/31RY-coIopL._AC_SL1500_.jpg",
+    "https://m.media-amazon.com/images/I/510XqUOF1NL._AC_SL1500_.jpg",
+    "https://m.media-amazon.com/images/I/51LKWsCEPKL._AC_SL1500_.jpg",
+    "https://m.media-amazon.com/images/I/51NJYyz4XoL._AC_SL1500_.jpg",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/76a7291f-df89-4621-aab0-f201450cff92/1792181998242_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/76a7291f-df89-4621-aab0-f201450cff92/1792181996438_0.png"
+   ]
+  }
+ ]
+}
