@@ -1,0 +1,129 @@
+{
+ "displayName": "Teverun Fighter Supreme Ultra",
+ "metaTitle": "Teverun Supreme Ultra : fiche technique et pièces",
+ "metaDescription": "Teverun Fighter Supreme Ultra : 72 V 60 Ah (4 320 Wh), pneus tubeless 90/65-6.5 (11 pouces), freins hydrauliques, 51 kg. Fiche et pièces.",
+ "intro": [
+  "La Teverun Fighter Supreme Ultra reprend la batterie 72 V 60 Ah de la Supreme 7260R, soit 4 320 Wh, mais sur des roues de 11 pouces. Ne la confonds pas avec la Fighter Supreme 7260R, en 13 pouces et plus puissante, ni avec la Fighter 7260R.",
+  "Deux moteurs de 1 600 W, 8 000 W en pointe annoncés, des freins hydrauliques à quatre pistons, des suspensions KKE réglables et des pneus tubeless 90/65-6.5. Teverun Europe annonce jusqu'à 200 km pour 51 kg. Sur la voie publique en France, elle doit rester bridée à 25 km/h."
+ ],
+ "specs": [
+  [
+   "Moteurs",
+   "2 × 1 600 W (8 000 W en pointe annoncés)"
+  ],
+  [
+   "Vitesse",
+   "25 km/h sur la voie publique"
+  ],
+  [
+   "Batterie",
+   "72 V, 60 Ah (4 320 Wh)"
+  ],
+  [
+   "Autonomie annoncée",
+   "jusqu'à 200 km (Teverun Europe)"
+  ],
+  [
+   "Poids",
+   "51 kg (Teverun Europe)"
+  ],
+  [
+   "Charge max",
+   "150 kg"
+  ],
+  [
+   "Roues",
+   "11 pouces, 90/65-6.5 tubeless"
+  ],
+  [
+   "Freins",
+   "Disques hydrauliques 4 pistons"
+  ],
+  [
+   "Suspension",
+   "Hydraulique réglable KKE avant et arrière"
+  ],
+  [
+   "Chargeur",
+   "72 V (84 V en sortie, 6 A d'origine)"
+  ]
+ ],
+ "pros": [
+  "Batterie de 4 320 Wh dans un gabarit 11 pouces (Teverun Europe).",
+  "Freins hydrauliques à quatre pistons et suspensions KKE réglables (Teverun Europe).",
+  "Pneus 90/65-6.5, une dimension très courante en 11 pouces."
+ ],
+ "cons": [
+  "51 kg : elle ne se porte pas.",
+  "Les 200 km sont une valeur constructeur, aucun test indépendant français ne les a mesurés.",
+  "Les puissances de pointe varient selon les pages du distributeur (8 000 ou 9 200 W) : vérifie ta série avant de commander une pièce électrique.",
+  "Sa vitesse de pointe n'est utilisable que sur terrain privé : en France, la voie publique est limitée à 25 km/h."
+ ],
+ "parts": [
+  {
+   "label": "Pneu",
+   "size": "90/65-6.5 (11 pouces)",
+   "count": 11,
+   "to": "/piece/pneu-90-65-6-5-route-tubeless",
+   "cta": "Pneus 90/65-6.5"
+  },
+  {
+   "label": "Chambre à air",
+   "size": "90/65-6.5, valve droite ou coudée",
+   "count": 5,
+   "to": "/piece/chambre-a-air-9065-65-valve-droite",
+   "cta": "Chambres à air"
+  }
+ ],
+ "care": [
+  "Pneus tubeless : contrôle la pression chaque semaine, un tubeless sous-gonflé se déjante et crève plus facilement.",
+  "Freins 4 pistons : surveille l'épaisseur des plaquettes et purge le circuit quand le levier devient mou.",
+  "Une batterie de 4 320 Wh se recharge longtemps : utilise un chargeur 72 V adapté et ne la laisse pas vide plusieurs semaines."
+ ],
+ "price": {
+  "text": "Prix affiché par Teverun Europe : 3 749 € (relevé le 19/10/2026).",
+  "source": "teverun-europe.com"
+ },
+ "faq": [
+  {
+   "q": "Quelle taille de pneu pour la Teverun Fighter Supreme Ultra ?",
+   "a": "Des pneus tubeless de 11 pouces en 90/65-6.5, sur une jante de 6,5 pouces."
+  },
+  {
+   "q": "Quelles plaquettes pour la Teverun Fighter Supreme Ultra ?",
+   "a": "Ses freins sont des hydrauliques à quatre pistons, mais nos fiches ne confirment pas encore la marque de l'étrier : compare la forme de ta plaquette avant de commander."
+  },
+  {
+   "q": "Quel chargeur pour la Teverun Fighter Supreme Ultra ?",
+   "a": "Un chargeur 72 V (84 V en sortie). Teverun Europe indique un chargeur d'origine de 6 A. Vérifie ta prise avant de commander."
+  },
+  {
+   "q": "Quelle différence entre la Supreme Ultra et la Supreme 7260R ?",
+   "a": "Même batterie 72 V 60 Ah. L'Ultra roule en 11 pouces et est annoncée à 8 000 W en pointe ; la 7260R roule en 13 pouces et est annoncée jusqu'à 15 000 W (Teverun Europe)."
+  },
+  {
+   "q": "La Teverun Fighter Supreme Ultra est-elle légale en France ?",
+   "a": "Oui sur la voie publique à condition d'être bridée à 25 km/h, comme toute trottinette électrique. Débridée, elle n'est utilisable que sur terrain privé."
+  }
+ ],
+ "sources": [
+  {
+   "label": "Teverun Europe — Fighter Supreme Ultra",
+   "url": "https://teverun-europe.com/product/supreme-ultra/"
+  },
+  {
+   "label": "Teverun Europe — comparatif Fighter Supreme",
+   "url": "https://teverun-europe.com/fighter-supreme/"
+  },
+  {
+   "label": "Ministère de la Transition écologique — réglementation des trottinettes",
+   "url": "https://www.ecologie.gouv.fr/politiques-publiques/trottinettes-electriques-edpm-reglementation-vigueur"
+  }
+ ],
+ "video": {
+  "id": "E6bTsgXxT5Q",
+  "title": "Teverun Supreme Ultra : Déception ou Révélation ?!",
+  "channel": "TrottSansFiltre",
+  "uploadDate": "2024-11-13"
+ }
+}

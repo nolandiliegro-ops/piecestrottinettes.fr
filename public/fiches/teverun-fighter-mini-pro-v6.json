@@ -1,0 +1,170 @@
+{
+ "displayName": "Teverun Fighter Mini Pro V6",
+ "metaTitle": "Teverun Fighter Mini Pro V6 : fiche technique et pièces",
+ "metaDescription": "Teverun Fighter Mini Pro V6 2026 : moteurs Bosch, 60 V 31,8 Ah, pneus 80/65-6 (10x3), disques 140 mm, étrier Zoom, prise LP16-3. Fiche et pièces.",
+ "intro": [
+  "La Teverun Fighter Mini Pro V6 est la série 2026 de la Fighter Mini Pro, avec deux moteurs Bosch de 1 000 W et une batterie 60 V 31,8 Ah. Ne la confonds pas avec la Fighter Mini en 52 V, ni avec les anciennes Mini Pro en 25 Ah.",
+  "Freins à disque hydrauliques Zoom de 140 mm, suspensions hydrauliques réglables, pneus tubeless 10x3 et étanchéité IPX5 : Teverun France annonce jusqu'à 100 km pour 35,5 kg. Sur la voie publique en France, elle doit rester bridée à 25 km/h."
+ ],
+ "specs": [
+  [
+   "Moteurs",
+   "2 × 1 000 W Bosch (2 950 W en pointe annoncés)"
+  ],
+  [
+   "Vitesse",
+   "25 km/h sur la voie publique"
+  ],
+  [
+   "Batterie",
+   "60 V, 31,8 Ah (1 908 Wh)"
+  ],
+  [
+   "Autonomie annoncée",
+   "jusqu'à 100 km (Teverun France)"
+  ],
+  [
+   "Poids",
+   "35,5 kg"
+  ],
+  [
+   "Charge max",
+   "120 kg"
+  ],
+  [
+   "Roues",
+   "10 pouces, 80/65-6 (10x3) tubeless"
+  ],
+  [
+   "Freins",
+   "Disques hydrauliques, Ø 140 mm, étrier Zoom"
+  ],
+  [
+   "Suspension",
+   "Hydraulique réglable avant et arrière"
+  ],
+  [
+   "Étanchéité",
+   "IPX5 (Click'n Wheel)"
+  ],
+  [
+   "Prise de charge",
+   "LP16-3"
+  ],
+  [
+   "Chargeur",
+   "60 V (67,2 V en sortie)"
+  ]
+ ],
+ "pros": [
+  "Batterie de grande capacité et deux moteurs dans un format 10 pouces (Le Dépanneur Tech).",
+  "Freins hydrauliques et poids de 35,5 kg confirmés par plusieurs sources (Le Dépanneur Tech).",
+  "Moteurs Bosch et suspensions hydrauliques (Click'n Wheel)."
+ ],
+ "cons": [
+  "35,5 kg : elle reste peu portable (Le Dépanneur Tech).",
+  "Les puissances de pointe annoncées divergent selon les sources, et les 100 km ne sont pas validés par un essai réel (Le Dépanneur Tech).",
+  "Plusieurs séries de Mini Pro coexistent : vérifie que la tienne est bien une V6 60 V 31,8 Ah avant de commander une pièce électrique.",
+  "Sa vitesse de pointe n'est utilisable que sur terrain privé : en France, la voie publique est limitée à 25 km/h."
+ ],
+ "parts": [
+  {
+   "label": "Pneu",
+   "size": "80/65-6 (10x3)",
+   "count": 11,
+   "to": "/piece/pneu-tubeless-80-65-6-10x3-cityroad-ewheel",
+   "cta": "Pneus 10x3"
+  },
+  {
+   "label": "Chambre à air",
+   "size": "80/65-6 (10x3), valve droite ou coudée",
+   "count": 3,
+   "to": "/piece/chambre-a-air-80-65-6-10x3-valve-droite-ewheel",
+   "cta": "Chambres à air"
+  },
+  {
+   "label": "Plaquettes",
+   "size": "étrier Zoom",
+   "count": 5,
+   "to": "/piece/plaquettes-de-frein-zoom-semi-metallique",
+   "cta": "Plaquettes Zoom"
+  },
+  {
+   "label": "Disque de frein",
+   "size": "140 mm, 6 trous, entraxe 44 mm",
+   "count": 5,
+   "to": "/piece/disque-de-frein-140mm",
+   "cta": "Disques 140 mm"
+  },
+  {
+   "label": "Chargeur",
+   "size": "60 V → 67,2 V, prise LP16-3",
+   "count": 2,
+   "to": "/piece/pack-chargeur-60v-672v-2a-connecteur-lp16-3",
+   "cta": "Chargeurs 60 V"
+  }
+ ],
+ "care": [
+  "Pneus tubeless : contrôle la pression chaque semaine, un tubeless sous-gonflé se déjante et crève plus facilement.",
+  "Freins Zoom hydrauliques : surveille l'épaisseur des plaquettes et purge le circuit quand le levier devient mou.",
+  "Suspensions réglables : règle-les selon ton poids et resserre la visserie des bras après les premières centaines de kilomètres."
+ ],
+ "price": {
+  "text": "Prix affichés : 1 790 € chez Weebot, 2 300 € chez Click'n Wheel (relevés le 19/10/2026).",
+  "source": "wee-bot.com, clicknwheel.com"
+ },
+ "faq": [
+  {
+   "q": "Quelle taille de pneu pour la Teverun Fighter Mini Pro V6 ?",
+   "a": "Des pneus tubeless de 10 pouces en 80/65-6, aussi notés 10x3, sur une jante de 6 pouces."
+  },
+  {
+   "q": "Quel disque de frein pour la Teverun Fighter Mini Pro V6 ?",
+   "a": "Un disque de 140 mm à 6 trous, entraxe 44 mm."
+  },
+  {
+   "q": "Quelles plaquettes pour la Teverun Fighter Mini Pro V6 ?",
+   "a": "Des plaquettes pour étrier hydraulique Zoom, en semi-métallique, métal fritté ou céramique."
+  },
+  {
+   "q": "Quel chargeur pour la Teverun Fighter Mini Pro V6 ?",
+   "a": "Un chargeur 60 V (67,2 V en sortie) avec prise LP16-3. Teverun France indique un chargeur d'origine 67,2 V 6 A."
+  },
+  {
+   "q": "Quelle différence entre la Fighter Mini Pro V6 et la Fighter Mini ?",
+   "a": "La Mini Pro V6 est en 60 V 31,8 Ah avec moteurs Bosch et pèse 35,5 kg. La Fighter Mini d'origine est en 52 V 20,8 Ah et pèse 29,5 kg."
+  },
+  {
+   "q": "La Teverun Fighter Mini Pro V6 est-elle légale en France ?",
+   "a": "Oui sur la voie publique à condition d'être bridée à 25 km/h, comme toute trottinette électrique. Débridée, elle n'est utilisable que sur terrain privé."
+  }
+ ],
+ "sources": [
+  {
+   "label": "Teverun France — Fighter Mini Pro",
+   "url": "https://www.teverun.fr/teverun-fighter-mini-pro/"
+  },
+  {
+   "label": "Le Dépanneur Tech — Teverun Fighter Mini Pro V6 2026",
+   "url": "https://ledepanneurtech.com/teverun-fighter-mini-pro-v6-2026"
+  },
+  {
+   "label": "Click'n Wheel — Teverun Fighter Mini",
+   "url": "https://clicknwheel.com/nos-produits/nos-produits/trottinette-electrique-bordeaux/teverun-fighter-mini/"
+  },
+  {
+   "label": "Weebot — Teverun Fighter Mini Pro",
+   "url": "https://www.wee-bot.com/products/trottinette-electrique-teverun-fighter-mini-pro"
+  },
+  {
+   "label": "Ministère de la Transition écologique — réglementation des trottinettes",
+   "url": "https://www.ecologie.gouv.fr/politiques-publiques/trottinettes-electriques-edpm-reglementation-vigueur"
+  }
+ ],
+ "video": {
+  "id": "ak67-EpcGUc",
+  "title": "TEVERUN MINI PRO V6 MOTORS BOSCH 2026 !",
+  "channel": "KRAMTOO",
+  "uploadDate": "2026-09-13"
+ }
+}

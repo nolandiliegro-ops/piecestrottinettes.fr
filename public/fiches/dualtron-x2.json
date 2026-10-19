@@ -1,0 +1,167 @@
+{
+ "displayName": "Dualtron X2",
+ "metaTitle": "Dualtron X2 : fiche technique et pièces",
+ "metaDescription": "Dualtron X2 : bimoteur 8 300 W, batterie 72 V 42 Ah, pneus 125/60-7, freins hydrauliques et disques 160 mm, prise GX16-3, 66 kg. Entretien et pièces.",
+ "intro": [
+  "La Dualtron X2, aussi appelée X II, est l'une des trottinettes les plus lourdes et les plus puissantes de Minimotors. Deux moteurs pour 8 300 W en pointe et une batterie LG 72 V de 42 Ah, pour 66 kg. Une version X2 UP 2025 passe à 45 Ah.",
+  "Freins hydrauliques à disque de 160 mm sur les deux roues, suspensions réglables et pneus larges en 125/60-7. Annoncée jusqu'à 110 km/h sur terrain privé, elle doit rester bridée à 25 km/h sur la voie publique en France, comme toute trottinette électrique."
+ ],
+ "specs": [
+  [
+   "Moteurs",
+   "2 moteurs, 8 300 W en pointe (2 × 4 150 W)"
+  ],
+  [
+   "Vitesse",
+   "25 km/h sur la voie publique"
+  ],
+  [
+   "Batterie",
+   "72 V, 42 Ah LG (45 Ah sur la X2 UP 2025)"
+  ],
+  [
+   "Autonomie annoncée",
+   "jusqu'à 150 km"
+  ],
+  [
+   "Poids",
+   "66 kg"
+  ],
+  [
+   "Charge max",
+   "150 kg"
+  ],
+  [
+   "Roues",
+   "125/60-7 (13 pouces selon Alternative Bike)"
+  ],
+  [
+   "Freins",
+   "Disques hydrauliques 160 mm avant et arrière"
+  ],
+  [
+   "Suspension",
+   "Avant et arrière réglables"
+  ],
+  [
+   "Étanchéité",
+   "IP54"
+  ],
+  [
+   "Prise de charge",
+   "GX16-3"
+  ],
+  [
+   "Chargeur",
+   "72 V (84 V en sortie)"
+  ],
+  [
+   "Temps de charge",
+   "24 h ou plus avec chargeur standard, environ 8 h avec chargeur rapide 6,5 A"
+  ]
+ ],
+ "pros": [
+  "Puissance de 8 300 W en pointe et grosse batterie 72 V (Bons Plans Écolo).",
+  "Freins hydrauliques à disque de 160 mm sur les deux roues (Dualtron Store).",
+  "Grandes roues larges et suspensions réglables (Alternative Bike)."
+ ],
+ "cons": [
+  "66 kg : très lourde à manipuler (Bons Plans Écolo).",
+  "Recharge de 24 h ou plus avec le chargeur standard (Newtechstore).",
+  "Les fiches ne s'accordent pas sur le réglage des suspensions (19 ou 45 positions) ni sur la présence de l'ABS.",
+  "Sa vitesse de pointe n'est utilisable que sur terrain privé : en France, la voie publique est limitée à 25 km/h."
+ ],
+ "parts": [
+  {
+   "label": "Pneu",
+   "size": "125/60-7 tubeless",
+   "count": 1,
+   "to": "/piece/pneu-tubeless-125-60-7-cst",
+   "cta": "Pneu 125/60-7"
+  },
+  {
+   "label": "Plaquettes",
+   "size": "étrier type Sram Avid",
+   "count": 4,
+   "to": "/piece/plaquettes-de-freins-zero-10x-11x-vsett-10-storm-thunder-sram-avid-semi-metallique",
+   "cta": "Plaquettes Sram Avid"
+  },
+  {
+   "label": "Disque de frein",
+   "size": "160 mm, 6 trous, entraxe 48 mm",
+   "count": 7,
+   "to": "/piece/disque-de-frein-r6-160mm-entraxe-48mm-3-couleurs-bleu",
+   "cta": "Disques 160 mm"
+  },
+  {
+   "label": "Chargeur",
+   "size": "72 V → 84 V, prise GX16-3",
+   "count": 2,
+   "to": "/piece/chargeur-72v-84v-2a-connecteur-gx16-3p",
+   "cta": "Chargeurs 72 V"
+  }
+ ],
+ "care": [
+  "Freins hydrauliques : à 66 kg, les plaquettes s'usent vite, contrôle leur épaisseur souvent et purge le circuit dès que le levier mollit.",
+  "Pneus 125/60-7 : vérifie la pression avant chaque sortie, la charge sur les pneus est énorme.",
+  "Utilise un chargeur rapide 72 V : avec le chargeur standard, la charge dépasse une journée."
+ ],
+ "faq": [
+  {
+   "q": "Quelle taille de pneu pour la Dualtron X2 ?",
+   "a": "Des pneus tubeless en 125/60-7, sur une jante de 7 pouces."
+  },
+  {
+   "q": "Quel disque de frein pour la Dualtron X2 ?",
+   "a": "Un disque de 160 mm à 6 trous, entraxe 48 mm."
+  },
+  {
+   "q": "Quelles plaquettes pour la Dualtron X2 ?",
+   "a": "Des plaquettes pour étrier hydraulique type Sram Avid. Compare la forme de tes plaquettes d'origine avant de commander."
+  },
+  {
+   "q": "Quel chargeur pour la Dualtron X2 ?",
+   "a": "Un chargeur 72 V (84 V en sortie) avec prise GX16-3. Un chargeur rapide ramène la charge à environ 8 heures."
+  },
+  {
+   "q": "Quelle différence entre la Dualtron X2 et la X2 UP 2025 ?",
+   "a": "La batterie : 72 V 42 Ah sur la X2, 72 V 45 Ah sur la X2 UP 2025, avec écran EY4."
+  },
+  {
+   "q": "La Dualtron X2 est-elle légale en France ?",
+   "a": "Oui sur la voie publique à condition d'être bridée à 25 km/h, comme toute trottinette électrique. Débridée, elle n'est utilisable que sur terrain privé."
+  }
+ ],
+ "sources": [
+  {
+   "label": "Dualtron Store — Dualtron X II",
+   "url": "https://dualtron-store.com/index.php/produit/dualtron-x-ii/"
+  },
+  {
+   "label": "Alternative Bike — Dualtron X2",
+   "url": "https://alternative.bike/801-trottinette-electrique-dualtron-x-2.html"
+  },
+  {
+   "label": "Newtechstore — Dualtron X2",
+   "url": "https://fr.newtechstore.eu/produit/dualtron-x2-scooter-electrique-pliant-avec-2-moteurs-4-150-w-8-300-w/"
+  },
+  {
+   "label": "Dualtron Shop — Dualtron X2",
+   "url": "https://dualtron-shop.com/fr/produit/dualtron-x2/"
+  },
+  {
+   "label": "Bons Plans Écolo — avis Dualtron X2",
+   "url": "https://bonsplansecolo.fr/dualtron-x2-avis"
+  },
+  {
+   "label": "Ministère de la Transition écologique — réglementation des trottinettes",
+   "url": "https://www.ecologie.gouv.fr/politiques-publiques/trottinettes-electriques-edpm-reglementation-vigueur"
+  }
+ ],
+ "video": {
+  "id": "5ftsTfXhRYc",
+  "title": "Dualtron X2 72 Volts  !!! VS Thunder  60 volts !!! Test ! Trottinette Électrique Surpuissante !",
+  "channel": "KRAMTOO",
+  "uploadDate": "2020-12-06"
+ }
+}

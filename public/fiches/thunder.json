@@ -1,0 +1,170 @@
+{
+ "displayName": "Dualtron Thunder",
+ "metaTitle": "Dualtron Thunder : fiche technique, avis et pièces",
+ "metaDescription": "Dualtron Thunder : bimoteur 5 400 W, batterie 60 V 35 Ah, pneus 90/65-6.5 de 11 pouces, freins hydrauliques, disques 160 mm. Avis et pièces.",
+ "intro": [
+  "La Dualtron Thunder est la première génération de la Thunder de Minimotors, avant la Thunder 2 et la Thunder 3. C'est une bimoteur 60 V avec une batterie de 35 Ah, soit 2 100 Wh, pour environ 43 kg selon Cleanrider.",
+  "Deux moteurs pour 5 400 W, des freins hydrauliques sur les deux roues, des suspensions avant et arrière et des pneus tubeless de 11 pouces en 90/65-6.5. Annoncée jusqu'à 85 km/h, elle doit rester bridée à 25 km/h sur la voie publique en France."
+ ],
+ "specs": [
+  [
+   "Moteurs",
+   "2 moteurs, 5 400 W (Cleanrider)"
+  ],
+  [
+   "Vitesse",
+   "25 km/h sur la voie publique"
+  ],
+  [
+   "Batterie",
+   "60 V, 35 Ah (2 100 Wh)"
+  ],
+  [
+   "Autonomie annoncée",
+   "jusqu'à 100 km"
+  ],
+  [
+   "Poids",
+   "43 à 43,4 kg"
+  ],
+  [
+   "Charge max",
+   "120 kg"
+  ],
+  [
+   "Roues",
+   "11 pouces, 90/65-6.5 tubeless"
+  ],
+  [
+   "Freins",
+   "Disques hydrauliques 160 mm avant et arrière"
+  ],
+  [
+   "Suspension",
+   "Avant et arrière"
+  ],
+  [
+   "Prise de charge",
+   "GX16-3 ou LP16-3"
+  ],
+  [
+   "Chargeur",
+   "60 V (67,2 V en sortie)"
+  ],
+  [
+   "Temps de charge",
+   "environ 20 h (Dualtron Store)"
+  ]
+ ],
+ "pros": [
+  "Deux moteurs et jusqu'à 100 km d'autonomie annoncés (Cleanrider).",
+  "Freins hydrauliques sur les deux roues et suspensions avant et arrière (Cleanrider).",
+  "Pneus tubeless de 11 pouces (Cleanrider)."
+ ],
+ "cons": [
+  "43,4 kg : peu commode à porter (Cleanrider).",
+  "Recharge d'environ 20 h avec le chargeur standard (Dualtron Store).",
+  "Modèle de première génération : les fiches divergent sur les freins et les suspensions, compare tes pièces d'origine avant de commander.",
+  "Sa vitesse de pointe n'est utilisable que sur terrain privé : en France, la voie publique est limitée à 25 km/h."
+ ],
+ "parts": [
+  {
+   "label": "Pneu",
+   "size": "90/65-6.5 (11 pouces)",
+   "count": 11,
+   "to": "/piece/pneu-90-65-6-5-off-road-tubeless",
+   "cta": "Pneus 90/65-6.5"
+  },
+  {
+   "label": "Chambre à air",
+   "size": "90/65-6.5, valve droite ou coudée",
+   "count": 5,
+   "to": "/piece/chambre-a-air-9065-65-11-pouces",
+   "cta": "Chambres à air"
+  },
+  {
+   "label": "Plaquettes",
+   "size": "étrier type Sram Avid",
+   "count": 4,
+   "to": "/piece/plaquettes-de-freins-zero-10x-11x-vsett-10-storm-thunder-sram-avid-semi-metallique",
+   "cta": "Plaquettes Sram Avid"
+  },
+  {
+   "label": "Disque de frein",
+   "size": "160 mm, 6 trous, entraxe 48 mm",
+   "count": 7,
+   "to": "/piece/disque-de-frein-r6-160mm-entraxe-48mm-3-couleurs-rouge",
+   "cta": "Disques 160 mm"
+  },
+  {
+   "label": "Chargeur",
+   "size": "60 V → 67,2 V, prise GX16-3 ou LP16-3",
+   "count": 4,
+   "to": "/piece/pack-chargeur-60v-672v-2a-connecteur-lp16-3",
+   "cta": "Chargeurs 60 V"
+  }
+ ],
+ "care": [
+  "Freins hydrauliques : surveille l'épaisseur des plaquettes et purge le circuit dès que le levier devient mou.",
+  "Pneus tubeless de 11 pouces : contrôle la pression avant chaque sortie, à plus de 40 kg un pneu sous-gonflé s'use vite.",
+  "Une batterie de 2 100 Wh se recharge longtemps : utilise un chargeur rapide 60 V si tu roules souvent."
+ ],
+ "price": {
+  "text": "Prix relevé par Cleanrider : à partir de 2 990 € (fiche datée du 30/08/2022).",
+  "source": "Cleanrider"
+ },
+ "faq": [
+  {
+   "q": "Quelle taille de pneu pour la Dualtron Thunder ?",
+   "a": "Des pneus tubeless de 11 pouces en 90/65-6.5, sur une jante de 6,5 pouces."
+  },
+  {
+   "q": "Quel disque de frein pour la Dualtron Thunder ?",
+   "a": "Un disque de 160 mm à 6 trous, entraxe 48 mm."
+  },
+  {
+   "q": "Quelles plaquettes pour la Dualtron Thunder ?",
+   "a": "Des plaquettes pour étrier hydraulique type Sram Avid, en semi-métallique, métal fritté ou céramique."
+  },
+  {
+   "q": "Quel chargeur pour la Dualtron Thunder ?",
+   "a": "Un chargeur 60 V (67,2 V en sortie), avec prise GX16-3 ou LP16-3 selon ta trottinette."
+  },
+  {
+   "q": "Quelle différence entre la Dualtron Thunder et la Thunder 2021 ?",
+   "a": "La Thunder 2021 reçoit une colonne et un système de pliage revus, un nouveau bras oscillant et des cellules de batterie 21700, selon Dualtron Store."
+  },
+  {
+   "q": "La Dualtron Thunder est-elle légale en France ?",
+   "a": "Oui sur la voie publique à condition d'être bridée à 25 km/h, comme toute trottinette électrique. Débridée, elle n'est utilisable que sur terrain privé."
+  }
+ ],
+ "sources": [
+  {
+   "label": "Cleanrider — Dualtron Thunder",
+   "url": "https://www.cleanrider.com/catalogue/trottinette-electrique/dualtron/dualtron-thunder/"
+  },
+  {
+   "label": "Dualtron Store — Dualtron Thunder",
+   "url": "https://dualtron-store.com/index.php/produit/dualtron-thunder/"
+  },
+  {
+   "label": "Max Blinker — Dualtron Thunder",
+   "url": "https://www.maxblinker.fr/fr/trottinettes-electriques/dualtron-thunder"
+  },
+  {
+   "label": "Dualtron Store (YouTube) — Dualtron Thunder 2021",
+   "url": "https://www.youtube.com/watch?v=JikK5_BUtN0"
+  },
+  {
+   "label": "Ministère de la Transition écologique — réglementation des trottinettes",
+   "url": "https://www.ecologie.gouv.fr/politiques-publiques/trottinettes-electriques-edpm-reglementation-vigueur"
+  }
+ ],
+ "video": {
+  "id": "JikK5_BUtN0",
+  "title": "Dualtron Thunder 2021 - new folding - batterie LG 21700",
+  "channel": "Dualtron Store ® officiel",
+  "uploadDate": "2021-07-04"
+ }
+}

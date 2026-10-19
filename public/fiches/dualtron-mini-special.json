@@ -1,0 +1,138 @@
+{
+ "displayName": "Dualtron Mini Special",
+ "metaTitle": "Dualtron Mini Special : fiche technique et pièces",
+ "metaDescription": "Dualtron Mini Special : 52 V, 1 450 W par moteur, pneus 70/50-6.1 (8,5 x 3), freins à tambour, IP54. Versions, entretien et pièces compatibles.",
+ "intro": [
+  "La Dualtron Mini Special est l'évolution de la Dualtron Mini, best-seller de Minimotors. Elle reçoit un guidon pliable d'origine et un grip en caoutchouc sur le deck. Elle existe en simple ou double moteur, avec une batterie 52 V de 13 ou 21 Ah.",
+  "Moteur arrière de 1 450 W, ou deux moteurs en version bimoteur, freins à tambour, suspensions à ressorts et petits pneus de 8,5 pouces en 70/50-6.1. Dualtron Store annonce 45 km/h sur terrain privé : sur la voie publique, elle reste bridée à 25 km/h."
+ ],
+ "specs": [
+  [
+   "Moteurs",
+   "1 × 1 450 W ou 2 × 1 450 W selon la version"
+  ],
+  [
+   "Vitesse",
+   "25 km/h sur la voie publique"
+  ],
+  [
+   "Batterie",
+   "52 V : 13 Ah ou 21 Ah"
+  ],
+  [
+   "Autonomie annoncée",
+   "40 km (13 Ah) à 65 km (21 Ah)"
+  ],
+  [
+   "Poids",
+   "22 kg (simple moteur), 25 kg (double moteur)"
+  ],
+  [
+   "Charge max",
+   "120 kg"
+  ],
+  [
+   "Roues",
+   "8,5 pouces, 70/50-6.1 (8,5 x 3)"
+  ],
+  [
+   "Freins",
+   "Tambours avant et arrière"
+  ],
+  [
+   "Suspension",
+   "Ressorts avant et arrière"
+  ],
+  [
+   "Étanchéité",
+   "IP54 (écran EY3 IPX5)"
+  ],
+  [
+   "Chargeur",
+   "52 V (58,1 V en sortie)"
+  ],
+  [
+   "Temps de charge",
+   "6 à 10 h selon la batterie (Over Watt)"
+  ]
+ ],
+ "pros": [
+  "Compacte et transportable : 22 kg en simple moteur (Dualtron Store).",
+  "Guidon pliable d'origine et grip caoutchouc sur le deck (Dualtron Store by Voltee).",
+  "Suspensions avant et arrière sur une trottinette de petit format (Over Watt)."
+ ],
+ "cons": [
+  "Petites roues de 8,5 pouces : moins à l'aise sur les pavés et les trous qu'une 10 pouces.",
+  "Les fiches ne s'accordent pas sur l'étanchéité : IP54 chez Over Watt, IPX4 chez Pixmania.",
+  "Aucun test de presse indépendant publié à ce jour : l'autonomie réelle n'est pas mesurée.",
+  "Sa vitesse de pointe n'est utilisable que sur terrain privé : en France, la voie publique est limitée à 25 km/h."
+ ],
+ "parts": [
+  {
+   "label": "Pneu",
+   "size": "70/50-6.1 (8,5 x 3)",
+   "count": 3,
+   "to": "/piece/pneu-tubeless-70-50-6-1-pantherurban-ewheel",
+   "cta": "Pneus 70/50-6.1"
+  }
+ ],
+ "care": [
+  "Dualtron Store recommande 3,5 bars dans les pneus : une pression correcte limite les crevaisons.",
+  "Freins à tambour : règle le câble dès que la course du levier s'allonge.",
+  "Le guidon pliable prend du jeu avec le temps : vérifie le serrage de ses vis régulièrement."
+ ],
+ "faq": [
+  {
+   "q": "Quelle taille de pneu pour la Dualtron Mini Special ?",
+   "a": "Des pneus de 8,5 pouces en 70/50-6.1, aussi notés 8,5 x 3, sur une jante de 6,1 pouces."
+  },
+  {
+   "q": "La Dualtron Mini Special a-t-elle des plaquettes de frein ?",
+   "a": "Non. Elle freine avec des tambours à l'avant et à l'arrière."
+  },
+  {
+   "q": "Quel chargeur pour la Dualtron Mini Special ?",
+   "a": "Un chargeur 52 V, 58,1 V en sortie, comme celui livré d'origine. Vérifie ta prise avant de commander."
+  },
+  {
+   "q": "Quelle différence entre les versions de la Dualtron Mini Special ?",
+   "a": "Le nombre de moteurs (un ou deux de 1 450 W) et la batterie (13 ou 21 Ah). La bimoteur pèse environ 25 kg, contre 22 kg pour la simple."
+  },
+  {
+   "q": "La Dualtron Mini Special est-elle légale en France ?",
+   "a": "Oui sur la voie publique à condition d'être bridée à 25 km/h, comme toute trottinette électrique. Débridée, elle n'est utilisable que sur terrain privé."
+  }
+ ],
+ "sources": [
+  {
+   "label": "Over Watt — Dualtron Mini Special",
+   "url": "https://over-watt.fr/products/trottinette-electrique-dualtron-mini"
+  },
+  {
+   "label": "Monecobike — Dualtron Mini Special",
+   "url": "https://monecobike.com/produit/dualtron-mini-special/"
+  },
+  {
+   "label": "Pixmania — Dualtron Mini 1 450 W",
+   "url": "https://www.pixmania.com/fr/fr/trottinette-electrique-minimotors-dualtron-mini-1450-w-noir-419270.html"
+  },
+  {
+   "label": "Dualtron Store (YouTube) — Dualtron Mini Special",
+   "url": "https://www.youtube.com/watch?v=RBw3kkki64w"
+  },
+  {
+   "label": "Dualtron Store by Voltee (YouTube) — Dualtron Mini Spéciale",
+   "url": "https://www.youtube.com/watch?v=3Xf-lfhNkNg"
+  },
+  {
+   "label": "Ministère de la Transition écologique — réglementation des trottinettes",
+   "url": "https://www.ecologie.gouv.fr/politiques-publiques/trottinettes-electriques-edpm-reglementation-vigueur"
+  }
+ ],
+ "video": {
+  "id": "0SuF0O0-tB4",
+  "title": "Nouvelle DUALTRON MINI SPECIAL 2024 - Trotinette électrique",
+  "channel": "Dualtron Store ® officiel",
+  "uploadDate": "2024-06-06"
+ }
+}

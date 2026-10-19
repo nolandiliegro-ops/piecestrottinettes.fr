@@ -1,0 +1,128 @@
+{
+ "displayName": "Teverun Fighter Mini Q Pro",
+ "metaTitle": "Teverun Fighter Mini Q Pro : fiche technique et pièces",
+ "metaDescription": "Teverun Fighter Mini Q Pro : bimoteur 52 V 15 Ah, roues 8,5x3, freins à disque, 25,5 kg, jusqu'à 70 km annoncés. Fiche technique et entretien.",
+ "intro": [
+  "La Teverun Fighter Mini Q Pro est la version musclée de la Fighter Mini Q : deux moteurs de 1 000 W au lieu de 500 W, et une batterie 52 V 15 Ah au lieu de 13 Ah. Ne la confonds pas avec la Mini Q, ni avec la Fighter Mini en 10 pouces.",
+  "Freins à disque avant et arrière, suspensions à ressort et roues de 8,5 pouces : Teverun France annonce jusqu'à 70 km, plusieurs distributeurs 60 km. Elle pèse 25,5 kg selon Idealo. Sur la voie publique en France, elle doit rester bridée à 25 km/h."
+ ],
+ "specs": [
+  [
+   "Moteurs",
+   "2 × 1 000 W (jusqu'à 3 000 W en crête selon Darty)"
+  ],
+  [
+   "Vitesse",
+   "25 km/h sur la voie publique"
+  ],
+  [
+   "Batterie",
+   "52 V, 15 Ah (780 Wh)"
+  ],
+  [
+   "Autonomie annoncée",
+   "jusqu'à 70 km (Teverun France), 60 km chez Darty"
+  ],
+  [
+   "Poids",
+   "25,5 kg (Idealo)"
+  ],
+  [
+   "Charge max",
+   "120 kg"
+  ],
+  [
+   "Roues",
+   "8,5 pouces, 8,5x3"
+  ],
+  [
+   "Freins",
+   "Disques avant et arrière"
+  ],
+  [
+   "Suspension",
+   "Ressorts avant et arrière"
+  ],
+  [
+   "Étanchéité",
+   "IPX5 (Idealo)"
+  ],
+  [
+   "Chargeur",
+   "52 V (58,8 V en sortie)"
+  ],
+  [
+   "Temps de charge",
+   "environ 7 h (Darty)"
+  ]
+ ],
+ "pros": [
+  "Deux moteurs de 1 000 W dans un format de 25,5 kg (Teverun France, Idealo).",
+  "Freins à disque et suspensions à l'avant comme à l'arrière (Teverun France).",
+  "Puissance en bimoteur et confort de suspension relevés par des acheteurs (avis clients Darty)."
+ ],
+ "cons": [
+  "Des acheteurs signalent une autonomie réelle bien inférieure à l'annonce (avis clients Fnac).",
+  "Réserves d'acheteurs sur le freinage et la finition (avis clients Darty).",
+  "Petites roues de 8,5 pouces, moins à l'aise que des 10 pouces sur route abîmée.",
+  "Sa vitesse de pointe n'est utilisable que sur terrain privé : en France, la voie publique est limitée à 25 km/h."
+ ],
+ "parts": [],
+ "care": [
+  "Pneus 8,5x3 : contrôle la pression chaque semaine, une petite roue sous-gonflée crève plus facilement.",
+  "Surveille l'épaisseur des plaquettes et règle les freins dès que le levier prend de la course.",
+  "Recharge avec un chargeur 52 V adapté et évite de laisser la batterie à plat plusieurs semaines."
+ ],
+ "price": {
+  "text": "Prix affiché chez Darty : 999,99 € (fiche mise à jour le 06/05/2026).",
+  "source": "darty.com"
+ },
+ "faq": [
+  {
+   "q": "Quelle taille de pneu pour la Teverun Fighter Mini Q Pro ?",
+   "a": "Des roues de 8,5 pouces en 8,5x3, avec chambre à air selon notre catalogue."
+  },
+  {
+   "q": "Quelles plaquettes et quel disque pour la Teverun Fighter Mini Q Pro ?",
+   "a": "Nos fiches ne confirment pas encore la cote du disque ni le type d'étrier : mesure ton disque et compare la forme de ta plaquette avant de commander."
+  },
+  {
+   "q": "Quel chargeur pour la Teverun Fighter Mini Q Pro ?",
+   "a": "Un chargeur 52 V (58,8 V en sortie). Vérifie ta prise avant de commander."
+  },
+  {
+   "q": "Quelle différence entre la Fighter Mini Q Pro et la Mini Q ?",
+   "a": "La Mini Q Pro a deux moteurs de 1 000 W et une batterie 52 V 15 Ah. La Mini Q a deux moteurs de 500 W et 13 Ah, pour 40 km annoncés."
+  },
+  {
+   "q": "La Teverun Fighter Mini Q Pro est-elle légale en France ?",
+   "a": "Oui sur la voie publique à condition d'être bridée à 25 km/h, comme toute trottinette électrique. Débridée, elle n'est utilisable que sur terrain privé."
+  }
+ ],
+ "sources": [
+  {
+   "label": "Teverun France — Fighter Mini Q Pro",
+   "url": "https://www.teverun.fr/teverun-fighter-q-pro/"
+  },
+  {
+   "label": "Darty — Teverun Fighter Mini Q Pro",
+   "url": "https://www.darty.com/nav/achat/sports_loisirs/glisse_urbaine/trottinette_electrique/minimotors_teverunminiq52v15ah.html"
+  },
+  {
+   "label": "Idealo — Teverun Fighter Mini Q Pro",
+   "url": "https://www.idealo.fr/prix/208414450/teverun-fighter-mini-q-pro.html"
+  },
+  {
+   "label": "Fnac — avis Teverun Fighter Mini Q Pro",
+   "url": "https://www.fnac.com/Trottinette-electrique-Teverun-Fighter-Mini-Q-Pro-2000-W-Noir/a21665521/avis"
+  },
+  {
+   "label": "Teverun France — Fighter Mini Q",
+   "url": "https://www.teverun.fr/teverun-fighter-q-2/"
+  },
+  {
+   "label": "Ministère de la Transition écologique — réglementation des trottinettes",
+   "url": "https://www.ecologie.gouv.fr/politiques-publiques/trottinettes-electriques-edpm-reglementation-vigueur"
+  }
+ ]
+}

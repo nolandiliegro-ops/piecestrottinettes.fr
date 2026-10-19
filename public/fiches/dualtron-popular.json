@@ -1,0 +1,136 @@
+{
+ "displayName": "Dualtron Popular",
+ "metaTitle": "Dualtron Popular : fiche technique et pièces",
+ "metaDescription": "Dualtron Popular (Pop) : 52 V, 900 W par moteur, pneus 70/50-6.1, freins à tambour, IPX5. Versions simple et double moteur, entretien et pièces.",
+ "intro": [
+  "La Dualtron Popular, souvent appelée Pop, est une nouveauté 2023 de Minimotors. Elle existe en simple ou double moteur, avec une batterie 52 V de 14, 20 ou 25 Ah selon Dualtron France. Dualtron Store l'a présentée à partir de 799 €.",
+  "Moteur de 900 W nominaux, ou deux en bimoteur, freins à tambour, suspensions à ressorts et pneus 70/50-6.1 : c'est une trottinette étanche IPX5 pour un usage quotidien par tous les temps. Sur la voie publique en France, elle doit rester bridée à 25 km/h."
+ ],
+ "specs": [
+  [
+   "Moteurs",
+   "1 × 900 W ou 2 × 900 W nominaux (Dualtron Shop)"
+  ],
+  [
+   "Vitesse",
+   "25 km/h sur la voie publique"
+  ],
+  [
+   "Batterie",
+   "52 V : 14, 20 ou 25 Ah"
+  ],
+  [
+   "Autonomie annoncée",
+   "30 à 60 km selon la batterie (Dualtron Shop), jusqu'à 80 km en mode éco selon d'autres revendeurs"
+  ],
+  [
+   "Poids",
+   "29,6 kg (simple moteur), 32,5 kg (double moteur)"
+  ],
+  [
+   "Charge max",
+   "120 kg"
+  ],
+  [
+   "Roues",
+   "70/50-6.1"
+  ],
+  [
+   "Freins",
+   "Tambours avant et arrière"
+  ],
+  [
+   "Suspension",
+   "Ressorts avant et arrière"
+  ],
+  [
+   "Étanchéité",
+   "IPX5"
+  ],
+  [
+   "Temps de charge",
+   "7 h (14 Ah), 10 h (20 Ah), 12 h 30 (25 Ah) selon Dualtron Shop"
+  ]
+ ],
+ "pros": [
+  "Large choix de versions : simple ou double moteur, trois batteries (Dualtron France).",
+  "Étanchéité IPX5 : Dualtron Store l'a fait rouler sous la pluie sans problème.",
+  "Freins à tambour sur les deux roues, peu exigeants en entretien."
+ ],
+ "cons": [
+  "Plus de 32 kg en double moteur : elle se porte difficilement.",
+  "Recharge longue : jusqu'à 12 h 30 pour la batterie 25 Ah (Dualtron Shop).",
+  "Les fiches des revendeurs ne s'accordent pas sur la puissance : vérifie ta version avant de te fier à un chiffre."
+ ],
+ "parts": [
+  {
+   "label": "Pneu",
+   "size": "70/50-6.1 (9 pouces)",
+   "count": 3,
+   "to": "/piece/pneu-tubeless-70-50-6-1-pantherurban-ewheel",
+   "cta": "Pneus 70/50-6.1"
+  },
+  {
+   "label": "Pneu plein",
+   "size": "pneu plein Dualtron Mini / Pop / Togo",
+   "count": 2,
+   "to": "/piece/pneu-plein-85x25-dualtron-mini-pop-togo-gomme-tendre",
+   "cta": "Pneus pleins"
+  }
+ ],
+ "care": [
+  "Freins à tambour : règle le câble dès que la course du levier s'allonge.",
+  "Pneus 70/50-6.1 : contrôle la pression chaque semaine, ou passe au pneu plein si tu crèves souvent.",
+  "Avec une grosse batterie, ne la laisse pas vide plusieurs semaines : recharge-la avant de la ranger."
+ ],
+ "price": {
+  "text": "Prix affiché : 799 € chez Dualtron France (page mise à jour le 07/10/2026), de 899 à 1 499 € selon la version chez Dualtron Shop.",
+  "source": "dualtron-france.com, dualtron-shop.com"
+ },
+ "faq": [
+  {
+   "q": "Quelle taille de pneu pour la Dualtron Popular ?",
+   "a": "Des pneus en 70/50-6.1, sur une jante de 6,1 pouces."
+  },
+  {
+   "q": "La Dualtron Popular a-t-elle des plaquettes de frein ?",
+   "a": "Non. Elle freine avec des tambours à l'avant et à l'arrière."
+  },
+  {
+   "q": "Peut-on mettre des pneus pleins sur la Dualtron Popular ?",
+   "a": "Oui, des pneus pleins prévus pour les Dualtron Mini, Pop et Togo existent. Ils suppriment les crevaisons mais réduisent le confort."
+  },
+  {
+   "q": "Combien de temps pour recharger la Dualtron Popular ?",
+   "a": "Environ 7 h pour la 14 Ah, 10 h pour la 20 Ah et 12 h 30 pour la 25 Ah, selon Dualtron Shop."
+  },
+  {
+   "q": "Quelle différence entre la Dualtron Pop simple et double moteur ?",
+   "a": "La bimoteur a deux moteurs de 900 W au lieu d'un et pèse 32,5 kg contre 29,6 kg selon Dualtron Shop."
+  }
+ ],
+ "sources": [
+  {
+   "label": "Dualtron Shop — Dualtron Popular",
+   "url": "https://dualtron-shop.com/fr/produit/dualtron-popular/"
+  },
+  {
+   "label": "Dualtron France — Dualtron Pop (Popular)",
+   "url": "https://dualtron-france.com/trottinettes-electriques-dualtron/2662-trottinette-electrique-dualtron-pop-popular.html"
+  },
+  {
+   "label": "Dualtron Store — Dualtron Popular",
+   "url": "https://dualtron-store.com/index.php/produit/dualtron-popular/"
+  },
+  {
+   "label": "Dualtron Store (YouTube) — journal de l'actualité Minimotors",
+   "url": "https://www.youtube.com/watch?v=LJmoXv0VX_k"
+  }
+ ],
+ "video": {
+  "id": "ujMg22PUCLo",
+  "title": "Dualtron POP - trottinette électrique",
+  "channel": "Dualtron Store ® officiel",
+  "uploadDate": "2023-08-26"
+ }
+}

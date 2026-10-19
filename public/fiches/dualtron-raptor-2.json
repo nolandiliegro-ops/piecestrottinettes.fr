@@ -1,0 +1,141 @@
+{
+ "displayName": "Dualtron Raptor 2",
+ "metaTitle": "Dualtron Raptor 2 : fiche technique et pièces",
+ "metaDescription": "Dualtron Raptor 2 : bimoteur 2 × 800 W, batterie 60 V 18,2 Ah, pneus pleins 200x60, frein à tambour arrière. Entretien et pièces compatibles.",
+ "intro": [
+  "La Dualtron Raptor 2 est l'évolution de la Raptor, une petite Dualtron bimoteur. Elle ajoute une colonne lumineuse, l'accélérateur EY3 et l'ABS selon les distributeurs. Sa batterie 60 V de 18,2 Ah stocke environ 1 092 Wh, pour un poids de 21 à 23 kg selon les fiches.",
+  "Deux moteurs de 800 W, des pneus pleins de 8 pouces en 200x60 qui ne crèvent pas, un frein électrique à l'avant et un tambour à l'arrière. Compacte, elle reste une trottinette rapide : sur la voie publique en France, elle doit être bridée à 25 km/h."
+ ],
+ "specs": [
+  [
+   "Moteurs",
+   "2 × 800 W nominaux (1 600 W)"
+  ],
+  [
+   "Vitesse",
+   "25 km/h sur la voie publique"
+  ],
+  [
+   "Batterie",
+   "60 V, 18,2 Ah (environ 1 092 Wh)"
+  ],
+  [
+   "Autonomie annoncée",
+   "37 à 60 km selon les fiches"
+  ],
+  [
+   "Poids",
+   "21 à 23 kg selon les fiches"
+  ],
+  [
+   "Charge max",
+   "120 kg"
+  ],
+  [
+   "Roues",
+   "8 pouces, pneus pleins 200x60"
+  ],
+  [
+   "Freins",
+   "Électrique (ABS) à l'avant, tambour à l'arrière"
+  ],
+  [
+   "Suspension",
+   "Avant et arrière"
+  ],
+  [
+   "Chargeur",
+   "60 V (67,2 V en sortie)"
+  ],
+  [
+   "Temps de charge",
+   "environ 9 h avec le chargeur standard, 2,8 h en charge rapide (Fnac)"
+  ]
+ ],
+ "pros": [
+  "Pneus pleins : plus de crevaison (Dualtron Store).",
+  "Bimoteur compact d'environ 23 kg, maniable selon les essais publiés sur YouTube (Weebot).",
+  "Colonne lumineuse, accélérateur EY3 et ABS ajoutés par rapport à la première Raptor (Dualtron France)."
+ ],
+ "cons": [
+  "Pneus pleins : le confort repose entièrement sur les suspensions, aucune mesure indépendante ne le chiffre.",
+  "Un seul frein mécanique, le tambour arrière.",
+  "Les fiches ne s'accordent ni sur le poids (21 à 23 kg) ni sur l'autonomie (37 à 60 km).",
+  "Sa vitesse de pointe n'est utilisable que sur terrain privé : en France, la voie publique est limitée à 25 km/h."
+ ],
+ "parts": [
+  {
+   "label": "Pneu plein",
+   "size": "200x60 (8 pouces)",
+   "count": 1,
+   "to": "/piece/pneu-plein-200x60-zero-8-dualtron-raptor",
+   "cta": "Pneu plein 200x60"
+  },
+  {
+   "label": "Chargeur",
+   "size": "60 V → 67,2 V, vérifie ta prise",
+   "count": 2,
+   "to": "/piece/pack-chargeur-60v-672v-2a-connecteur-lp16-3",
+   "cta": "Chargeurs 60 V"
+  }
+ ],
+ "care": [
+  "Le tambour arrière est ton seul frein mécanique : règle-le dès que le levier devient long.",
+  "Pneus pleins : contrôle l'usure de la bande de roulement, un pneu plein lisse glisse sur sol mouillé.",
+  "Sans pneu gonflé pour amortir, la visserie et les suspensions encaissent tout : vérifie leur serrage régulièrement."
+ ],
+ "faq": [
+  {
+   "q": "Quelle taille de pneu pour la Dualtron Raptor 2 ?",
+   "a": "Des pneus pleins de 8 pouces en 200x60."
+  },
+  {
+   "q": "La Dualtron Raptor 2 a-t-elle des plaquettes de frein ?",
+   "a": "Non. Elle freine avec un frein électrique à l'avant et un tambour à l'arrière."
+  },
+  {
+   "q": "Quel chargeur pour la Dualtron Raptor 2 ?",
+   "a": "Un chargeur 60 V (67,2 V en sortie). Vérifie la prise de ta trottinette avant de commander : un adaptateur peut être nécessaire."
+  },
+  {
+   "q": "Combien de temps pour recharger la Dualtron Raptor 2 ?",
+   "a": "Environ 9 h avec le chargeur standard, 4,5 h avec deux chargeurs, 2,8 h avec un chargeur rapide, selon la fiche Fnac."
+  },
+  {
+   "q": "La Dualtron Raptor 2 est-elle légale en France ?",
+   "a": "Oui sur la voie publique à condition d'être bridée à 25 km/h, comme toute trottinette électrique. Débridée, elle n'est utilisable que sur terrain privé."
+  }
+ ],
+ "sources": [
+  {
+   "label": "Dualtron France — Dualtron Raptor 2",
+   "url": "https://www.dualtronfrance.fr/p/trottinette-electrique-dualtron-raptor-2/"
+  },
+  {
+   "label": "Dualtron Store — Dualtron Raptor",
+   "url": "https://dualtron-store.com/index.php/produit/dualtron-raptor/"
+  },
+  {
+   "label": "Smart Energy Mobility — Dualtron Raptor 2",
+   "url": "https://smartenergymobility.net/fr/dualtron/35-dualtron-raptor-2.html"
+  },
+  {
+   "label": "Fnac — Dualtron Raptor 2",
+   "url": "https://www.fnac.com/Trottinette-electrique-Minimotors-Dualtron-Raptor-2-3000-W-Noir/a15159481/w-4"
+  },
+  {
+   "label": "Weebot (YouTube) — test Dualtron Raptor II",
+   "url": "https://www.youtube.com/watch?v=njUwlmLqvao"
+  },
+  {
+   "label": "Ministère de la Transition écologique — réglementation des trottinettes",
+   "url": "https://www.ecologie.gouv.fr/politiques-publiques/trottinettes-electriques-edpm-reglementation-vigueur"
+  }
+ ],
+ "video": {
+  "id": "YaeDE8EIn78",
+  "title": "Dualtron Raptor 2!  Que vaut-elle vraiment?",
+  "channel": "G-Passion Concept Store",
+  "uploadDate": "2020-03-25"
+ }
+}

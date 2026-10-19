@@ -1,0 +1,152 @@
+{
+ "displayName": "Dualtron Victor 2025",
+ "metaTitle": "Dualtron Victor 2025 : fiche technique et pièces",
+ "metaDescription": "Dualtron Victor 2025 : bimoteur 60 V 24 Ah, pneus tubeless 80/50-6.5 de 10 pouces, freins hydrauliques, prises GX16-3 et LP16-3. Entretien, pièces.",
+ "intro": [
+  "La Dualtron Victor 2025 est la nouvelle version de la Victor standard de Minimotors. Elle reçoit l'écran large EY4 connecté, un châssis et une colonne renforcés, une étanchéité améliorée et de nouveaux pneus tubeless semi-offroad, les mêmes que la Victor Limited selon Dualtron Store.",
+  "Deux moteurs de 1 200 W, 4 000 W en pointe, une batterie 60 V de 24 Ah, des freins hydrauliques et des pneus de 10 pouces en 80/50-6.5, pour 33,5 kg. Sur la voie publique en France, elle doit rester bridée à 25 km/h."
+ ],
+ "specs": [
+  [
+   "Moteurs",
+   "2 × 1 200 W nominaux, 4 000 W en pointe"
+  ],
+  [
+   "Vitesse",
+   "25 km/h sur la voie publique"
+  ],
+  [
+   "Batterie",
+   "60 V, 24 Ah"
+  ],
+  [
+   "Autonomie annoncée",
+   "jusqu'à 80 km"
+  ],
+  [
+   "Poids",
+   "33,5 kg"
+  ],
+  [
+   "Charge max",
+   "100 kg"
+  ],
+  [
+   "Roues",
+   "10 pouces, 80/50-6.5 tubeless"
+  ],
+  [
+   "Freins",
+   "Hydrauliques avant et arrière"
+  ],
+  [
+   "Suspension",
+   "Cartouches interchangeables"
+  ],
+  [
+   "Étanchéité",
+   "IPX5"
+  ],
+  [
+   "Prise de charge",
+   "GX16-3 et LP16-3"
+  ],
+  [
+   "Chargeur",
+   "60 V (67,2 V en sortie)"
+  ],
+  [
+   "Temps de charge",
+   "17 h (OGC Trotte Shop)"
+  ]
+ ],
+ "pros": [
+  "Pneus tubeless larges et semi-offroad : bon compromis entre tenue de route et risque de crevaison (Dualtron Store).",
+  "Écran EY4 connecté à l'application mobile (Dualtron Store).",
+  "Châssis et colonne renforcés par rapport aux Victor précédentes (Dualtron Store)."
+ ],
+ "cons": [
+  "Recharge très longue avec le chargeur standard : 17 h annoncées par OGC Trotte Shop.",
+  "33,5 kg : elle se porte difficilement.",
+  "Aucun test de presse indépendant publié sur cette version 2025.",
+  "Sa vitesse de pointe n'est utilisable que sur terrain privé : en France, la voie publique est limitée à 25 km/h."
+ ],
+ "parts": [
+  {
+   "label": "Pneu",
+   "size": "80/50-6.5 tubeless (10 pouces)",
+   "count": 6,
+   "to": "/piece/pneu-tubeless-80-50-6-5-offroad-rhinotrack-ewheel",
+   "cta": "Pneus 80/50-6.5"
+  },
+  {
+   "label": "Plaquettes",
+   "size": "étrier Zoom",
+   "count": 5,
+   "to": "/piece/plaquettes-de-frein-zoom-semi-metallique",
+   "cta": "Plaquettes Zoom"
+  },
+  {
+   "label": "Chargeur",
+   "size": "60 V → 67,2 V, prise GX16-3 ou LP16-3",
+   "count": 4,
+   "to": "/piece/chargeur-60v-672v-2a-connecteur-gx16-3p",
+   "cta": "Chargeurs 60 V"
+  }
+ ],
+ "care": [
+  "Freins hydrauliques : surveille l'épaisseur des plaquettes et purge le circuit dès que le levier devient mou.",
+  "Pneus tubeless 80/50-6.5 : contrôle la pression chaque semaine, un tubeless sous-gonflé se décolle de la jante.",
+  "Recharge longue : branche-la le soir et utilise un chargeur rapide 60 V si tu roules tous les jours."
+ ],
+ "faq": [
+  {
+   "q": "Quelle taille de pneu pour la Dualtron Victor 2025 ?",
+   "a": "Des pneus tubeless de 10 pouces en 80/50-6.5, sur une jante de 6,5 pouces. Ce n'est pas la même dimension que les Victor en 10x3 (80/65-6)."
+  },
+  {
+   "q": "Quelles plaquettes pour la Dualtron Victor 2025 ?",
+   "a": "Des plaquettes pour étrier hydraulique type Zoom. Compare la forme de tes plaquettes d'origine avant de commander."
+  },
+  {
+   "q": "Quel chargeur pour la Dualtron Victor 2025 ?",
+   "a": "Un chargeur 60 V (67,2 V en sortie), avec prise GX16-3 ou LP16-3."
+  },
+  {
+   "q": "Quelle différence entre la Victor 2025 et la Victor Limited ?",
+   "a": "La Limited reprend la colonne de la Thunder 3 et se décline en batteries plus grosses. La Victor 2025 reste la version standard, en 24 Ah."
+  },
+  {
+   "q": "La Dualtron Victor 2025 est-elle légale en France ?",
+   "a": "Oui sur la voie publique à condition d'être bridée à 25 km/h, comme toute trottinette électrique. Débridée, elle n'est utilisable que sur terrain privé."
+  }
+ ],
+ "sources": [
+  {
+   "label": "Minimotors France — Dualtron Victor 60 V 24 Ah EY4 NUTT 2025",
+   "url": "https://www.minimotors.fr/en/shop/mmdualtronvictor24anutt2025-trottinette-electrique-dualtron-victor-60v-24ah-ey4-nutt-2025-12106"
+  },
+  {
+   "label": "OGC Trotte Shop — Dualtron Victor 2025",
+   "url": "https://ogctrotteshop.fr/dualtron/98-dualtron-victor-2025-3701122101862.html"
+  },
+  {
+   "label": "Dualtron Store (YouTube) — Dualtron Victor 2025",
+   "url": "https://www.youtube.com/watch?v=ET3xfHJ1bGM"
+  },
+  {
+   "label": "Dualtron Store (YouTube) — Dualtron Victor Limited 2025, vitesse de la gamme Victor",
+   "url": "https://www.youtube.com/watch?v=mv8KaiWN4Uo"
+  },
+  {
+   "label": "Ministère de la Transition écologique — réglementation des trottinettes",
+   "url": "https://www.ecologie.gouv.fr/politiques-publiques/trottinettes-electriques-edpm-reglementation-vigueur"
+  }
+ ],
+ "video": {
+  "id": "ET3xfHJ1bGM",
+  "title": "Dualtron Victor 2025 - meilleure trottinette électrique dans sa catégorie - une référence à prix bas",
+  "channel": "Dualtron Store ® officiel",
+  "uploadDate": "2025-02-15"
+ }
+}

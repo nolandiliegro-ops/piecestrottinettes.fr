@@ -1,0 +1,148 @@
+{
+ "displayName": "Dualtron Ultra",
+ "metaTitle": "Dualtron Ultra : fiche technique, avis et pièces",
+ "metaDescription": "Dualtron Ultra : bimoteur 5 400 W, batterie 60 V 32 ou 35 Ah, pneus 90/65-6.5 de 11 pouces, disques 160 mm. Avis, entretien et pièces.",
+ "intro": [
+  "La Dualtron Ultra est la première Ultra de Minimotors, une bimoteur 60 V tournée vers le tout-terrain. Rider Guide la décrit comme une évolution nettement plus puissante que la Dualtron III. Sa batterie existe en 32 Ah (1 920 Wh) ou 35 Ah (environ 2 060 Wh).",
+  "Deux moteurs pour 5 400 W en pointe, des pneus de 11 pouces en 90/65-6.5 et des disques de 160 mm à l'avant et à l'arrière, pour environ 37 kg. Annoncée jusqu'à 80 km/h, elle doit rester bridée à 25 km/h sur la voie publique en France."
+ ],
+ "specs": [
+  [
+   "Moteurs",
+   "2 moteurs, 5 400 W en pointe"
+  ],
+  [
+   "Vitesse",
+   "25 km/h sur la voie publique"
+  ],
+  [
+   "Batterie",
+   "60 V : 32 Ah (1 920 Wh) ou 35 Ah (environ 2 060 Wh)"
+  ],
+  [
+   "Autonomie",
+   "jusqu'à 120 km annoncés, 75 km selon Voltride"
+  ],
+  [
+   "Poids",
+   "environ 37 kg (Minimotors NYC)"
+  ],
+  [
+   "Roues",
+   "11 pouces, 90/65-6.5"
+  ],
+  [
+   "Freins",
+   "Disques 160 mm avant et arrière"
+  ],
+  [
+   "Suspension",
+   "Blocs de caoutchouc avant et arrière (Minimotors NYC)"
+  ],
+  [
+   "Prise de charge",
+   "GX16-3 ou LP16-3"
+  ],
+  [
+   "Chargeur",
+   "60 V (67,2 V en sortie)"
+  ]
+ ],
+ "pros": [
+  "Accélération et capacité en côte bien supérieures à la Dualtron III (Rider Guide).",
+  "Pensée pour le tout-terrain avec ses pneus de 11 pouces (Scooter Guide).",
+  "Grosse batterie 60 V jusqu'à 35 Ah (Voltride)."
+ ],
+ "cons": [
+  "Environ 37 kg : elle se porte difficilement.",
+  "Les fiches ne s'accordent pas sur ses freins : disques mécaniques chez Minimotors NYC, hydrauliques chez Rider Guide. Vérifie les tiens avant de commander.",
+  "Modèle ancien : peu de fiches en français, compare tes pièces d'origine avant d'acheter.",
+  "Sa vitesse de pointe n'est utilisable que sur terrain privé : en France, la voie publique est limitée à 25 km/h."
+ ],
+ "parts": [
+  {
+   "label": "Pneu",
+   "size": "90/65-6.5 (11 pouces)",
+   "count": 11,
+   "to": "/piece/pneu-90-65-6-5-off-road-tubeless",
+   "cta": "Pneus 90/65-6.5"
+  },
+  {
+   "label": "Chambre à air",
+   "size": "90/65-6.5, valve droite ou coudée",
+   "count": 5,
+   "to": "/piece/chambre-a-air-9065-65-11-pouces",
+   "cta": "Chambres à air"
+  },
+  {
+   "label": "Plaquettes",
+   "size": "étrier d'origine Speedway / Dualtron",
+   "count": 3,
+   "to": "/piece/plaquette-de-freins-speedway-et-dualtron",
+   "cta": "Plaquettes Dualtron"
+  },
+  {
+   "label": "Disque de frein",
+   "size": "160 mm, 6 trous, entraxe 48 mm",
+   "count": 7,
+   "to": "/piece/disque-de-frein-r6-160mm-entraxe-48mm-3-couleurs-rouge",
+   "cta": "Disques 160 mm"
+  },
+  {
+   "label": "Chargeur",
+   "size": "60 V → 67,2 V, prise GX16-3 ou LP16-3",
+   "count": 4,
+   "to": "/piece/chargeur-60v-672v-2a-connecteur-gx16-3p",
+   "cta": "Chargeurs 60 V"
+  }
+ ],
+ "care": [
+  "Disques de 160 mm : surveille l'épaisseur des plaquettes et remplace un disque voilé sans attendre.",
+  "Pneus de 11 pouces : contrôle la pression avant chaque sortie tout-terrain, un pneu sous-gonflé pince la chambre à air.",
+  "Suspension à blocs de caoutchouc : ces blocs durcissent et se fendent avec l'âge, inspecte-les régulièrement."
+ ],
+ "faq": [
+  {
+   "q": "Quelle taille de pneu pour la Dualtron Ultra ?",
+   "a": "Des pneus de 11 pouces en 90/65-6.5, sur une jante de 6,5 pouces."
+  },
+  {
+   "q": "Quel disque de frein pour la Dualtron Ultra ?",
+   "a": "Un disque de 160 mm à 6 trous, entraxe 48 mm."
+  },
+  {
+   "q": "Quel chargeur pour la Dualtron Ultra ?",
+   "a": "Un chargeur 60 V (67,2 V en sortie), avec prise GX16-3 ou LP16-3 selon ta trottinette."
+  },
+  {
+   "q": "Quelle différence entre la Dualtron Ultra et l'Ultra 2 ?",
+   "a": "L'Ultra est en 60 V. L'Ultra 2 passe en 72 V, avec plus de puissance, et reçoit des freins hydrauliques."
+  },
+  {
+   "q": "La Dualtron Ultra est-elle légale en France ?",
+   "a": "Oui sur la voie publique à condition d'être bridée à 25 km/h, comme toute trottinette électrique. Débridée, elle n'est utilisable que sur terrain privé."
+  }
+ ],
+ "sources": [
+  {
+   "label": "Minimotors NYC — Dualtron Ultra",
+   "url": "https://www.minimotors-nyc.com/pages/dualtron-ultra"
+  },
+  {
+   "label": "Rider Guide — Minimotors Dualtron review",
+   "url": "https://riderguide.com/guides/minimotors-dualtron-review/"
+  },
+  {
+   "label": "Scooter Guide — Dualtron Ultra review",
+   "url": "https://scooter.guide/dualtron-ultra-review/"
+  },
+  {
+   "label": "Voltride — Dualtron Ultra",
+   "url": "https://voltride.com/electric-scooter-dualtron-ultra/"
+  },
+  {
+   "label": "Ministère de la Transition écologique — réglementation des trottinettes",
+   "url": "https://www.ecologie.gouv.fr/politiques-publiques/trottinettes-electriques-edpm-reglementation-vigueur"
+  }
+ ]
+}

@@ -1,0 +1,157 @@
+{
+ "displayName": "Teverun Space",
+ "metaTitle": "Teverun Space : fiche technique et pièces",
+ "metaDescription": "Teverun Space : bimoteur 52 V 18 Ah, roues 10 pouces tubeless, disques hydrauliques 140 mm, prise LP16-3, 30 kg. Fiche, entretien et pièces.",
+ "intro": [
+  "La Teverun Space est une bimoteur 52 V 18 Ah à roues de 10 pouces, en dehors des gammes Fighter et Blade. Ne la confonds pas avec la Space Lite 2026 : même batterie, mais un seul moteur et des freins à disque non hydrauliques.",
+  "Deux moteurs de 800 W, des freins à disque hydrauliques de 140 mm, des suspensions à ressort et l'étanchéité IPX5 : Teverun France annonce jusqu'à 60 km pour 30 kg. La recharge prend 10 à 12 h selon Fnac. Sur la voie publique en France, elle doit rester bridée à 25 km/h."
+ ],
+ "specs": [
+  [
+   "Moteurs",
+   "2 × 800 W (2 400 W en pointe annoncés)"
+  ],
+  [
+   "Vitesse",
+   "25 km/h sur la voie publique"
+  ],
+  [
+   "Batterie",
+   "52 V, 18 Ah (936 Wh)"
+  ],
+  [
+   "Autonomie annoncée",
+   "jusqu'à 60 km (Teverun France)"
+  ],
+  [
+   "Poids",
+   "30 kg (Teverun France, Fnac)"
+  ],
+  [
+   "Charge max",
+   "120 kg"
+  ],
+  [
+   "Roues",
+   "10 pouces tubeless anti-crevaison"
+  ],
+  [
+   "Freins",
+   "Disques hydrauliques avant et arrière, Ø 140 mm"
+  ],
+  [
+   "Suspension",
+   "Ressorts avant et arrière"
+  ],
+  [
+   "Étanchéité",
+   "IPX5"
+  ],
+  [
+   "Prise de charge",
+   "LP16-3"
+  ],
+  [
+   "Chargeur",
+   "52 V (58,8 V en sortie)"
+  ],
+  [
+   "Temps de charge",
+   "10 à 12 h (Fnac, Over Watt)"
+  ]
+ ],
+ "pros": [
+  "Deux moteurs et freins hydrauliques pour moins de 1 000 € chez les distributeurs (Over Watt).",
+  "Suspensions à l'avant et à l'arrière (Teverun France).",
+  "Étanchéité IPX5 (Teverun France, Fnac)."
+ ],
+ "cons": [
+  "30 kg : un poids qui complique le portage (Vélo et Trottinette).",
+  "Recharge longue, 10 à 12 h (Fnac).",
+  "Les fiches ne s'accordent pas sur le type de pneu (tubeless ou chambre à air) : vérifie le tien avant de commander.",
+  "Sa vitesse de pointe n'est utilisable que sur terrain privé : en France, la voie publique est limitée à 25 km/h."
+ ],
+ "parts": [
+  {
+   "label": "Disque de frein",
+   "size": "140 mm, 6 trous, entraxe 44 mm",
+   "count": 5,
+   "to": "/piece/disque-de-frein-140mm",
+   "cta": "Disques 140 mm"
+  },
+  {
+   "label": "Chargeur",
+   "size": "52 V → 58,8 V, prise LP16-3",
+   "count": 2,
+   "to": "/piece/pack-chargeur-52v-588v-2a-connecteur-lp16-3",
+   "cta": "Chargeurs 52 V"
+  }
+ ],
+ "care": [
+  "Pneus de 10 pouces : contrôle la pression chaque semaine, un pneu sous-gonflé crève et s'use plus vite.",
+  "Freins hydrauliques : surveille l'épaisseur des plaquettes et purge le circuit quand le levier devient mou.",
+  "Recharge avec un chargeur 52 V adapté et évite de laisser la batterie à plat plusieurs semaines."
+ ],
+ "price": {
+  "text": "Prix affichés : 949 € chez Over Watt (page du 10/03/2026), 999 € chez Dualtron Store (page du 19/10/2025).",
+  "source": "over-watt.fr, dualtron-store.com"
+ },
+ "faq": [
+  {
+   "q": "Quelle taille de pneu pour la Teverun Space ?",
+   "a": "Des pneus de 10 pouces, tubeless anti-crevaison selon Teverun France. Certains vendeurs parlent de pneus à chambre à air : vérifie le tien avant de commander."
+  },
+  {
+   "q": "Quel disque de frein pour la Teverun Space ?",
+   "a": "Un disque de 140 mm à 6 trous, entraxe 44 mm."
+  },
+  {
+   "q": "Quelles plaquettes pour la Teverun Space ?",
+   "a": "Nos fiches ne confirment pas encore le type d'étrier hydraulique : compare la forme de ta plaquette avant de commander."
+  },
+  {
+   "q": "Quel chargeur pour la Teverun Space ?",
+   "a": "Un chargeur 52 V (58,8 V en sortie) avec prise LP16-3."
+  },
+  {
+   "q": "Quelle différence entre la Teverun Space et la Space Lite ?",
+   "a": "Même batterie 52 V 18 Ah. La Space a deux moteurs de 800 W et des freins hydrauliques, pour 30 kg ; la Space Lite a un seul moteur et des freins à disque, pour 28 kg (Teverun France)."
+  },
+  {
+   "q": "La Teverun Space est-elle légale en France ?",
+   "a": "Oui sur la voie publique à condition d'être bridée à 25 km/h, comme toute trottinette électrique. Débridée, elle n'est utilisable que sur terrain privé."
+  }
+ ],
+ "sources": [
+  {
+   "label": "Teverun France — Space",
+   "url": "https://www.teverun.fr/teverun-space/"
+  },
+  {
+   "label": "Fnac — Teverun Space",
+   "url": "https://www.fnac.com/Trottinette-electrique-Teverun-Space-1600-W-Noir/a22897372/w-4"
+  },
+  {
+   "label": "Over Watt — Teverun Space",
+   "url": "https://over-watt.fr/products/trottinette-electrique-teverun-space"
+  },
+  {
+   "label": "Dualtron Store — Teverun Space",
+   "url": "https://dualtron-store.com/index.php/produit/teverun-space/"
+  },
+  {
+   "label": "Vélo et Trottinette — Teverun Space",
+   "url": "https://veloettrottinette.fr/en/modele/teverun-space"
+  },
+  {
+   "label": "Ministère de la Transition écologique — réglementation des trottinettes",
+   "url": "https://www.ecologie.gouv.fr/politiques-publiques/trottinettes-electriques-edpm-reglementation-vigueur"
+  }
+ ],
+ "video": {
+  "id": "3iCnEr5hDbc",
+  "title": "JE TEST LA TEVERUN SPACE 2400 WATTS (Un nuage sur 2 roue !) #teverun",
+  "channel": "Emrah - Ride",
+  "uploadDate": "2026-08-11"
+ }
+}

@@ -1,0 +1,118 @@
+{
+ "displayName": "Dualtron Ultra One",
+ "metaTitle": "Dualtron Ultra One : fiche technique et pièces",
+ "metaDescription": "Dualtron Ultra One : 72 V 31,5 Ah (2 268 Wh), 7 200 W, pneus 90/65-6.5 tubeless de 11 pouces, freins hydrauliques, IPX4. Entretien et pièces.",
+ "intro": [
+  "La Dualtron Ultra One est une bimoteur 72 V de Minimotors, vendue en France en version 31,5 Ah, soit 2 268 Wh. Elle embarque deux moteurs pour 7 200 W nominaux et 8 400 W en pointe selon le distributeur français FōhzShop.",
+  "Freins hydrauliques à disque, suspensions à cartouches et pneus tubeless de 11 pouces en 90/65-6.5, pour 43,7 kg. FōhzShop estime environ 70 km bridée à 25 km/h, pour 100 km annoncés. Sur la voie publique en France, elle doit rester bridée à 25 km/h."
+ ],
+ "specs": [
+  [
+   "Moteurs",
+   "2 moteurs, 7 200 W nominaux, 8 400 W en pointe"
+  ],
+  [
+   "Vitesse",
+   "25 km/h sur la voie publique"
+  ],
+  [
+   "Batterie",
+   "72 V, 31,5 Ah (2 268 Wh)"
+  ],
+  [
+   "Autonomie",
+   "100 km annoncés, environ 70 km bridée et 45 km à pleine puissance selon FōhzShop"
+  ],
+  [
+   "Poids",
+   "43,7 kg (FōhzShop)"
+  ],
+  [
+   "Roues",
+   "11 pouces, 90/65-6.5 tubeless"
+  ],
+  [
+   "Freins",
+   "Disques hydrauliques NUTT, étriers 2 pistons (FōhzShop)"
+  ],
+  [
+   "Suspension",
+   "Cartouches interchangeables"
+  ],
+  [
+   "Étanchéité",
+   "IPX4 (écran EY4 IPX7)"
+  ],
+  [
+   "Temps de charge",
+   "environ 16 h avec chargeur 2 A, 6 h avec chargeur rapide 5 A"
+  ]
+ ],
+ "pros": [
+  "Chargeur rapide 5 A fourni : environ 6 h de charge (FōhzShop).",
+  "Grosse batterie de 2 268 Wh (FōhzShop).",
+  "Suspensions à cartouches interchangeables, réglables selon ton poids et ton terrain."
+ ],
+ "cons": [
+  "43,7 kg : elle ne se porte pas.",
+  "Étanchéité limitée à IPX4 pour le châssis.",
+  "Autonomie réelle bien en dessous de l'annonce : environ 45 km à pleine puissance selon FōhzShop."
+ ],
+ "parts": [
+  {
+   "label": "Pneu",
+   "size": "90/65-6.5 (11 pouces)",
+   "count": 11,
+   "to": "/piece/pneu-90-65-6-5-off-road-tubeless",
+   "cta": "Pneus 90/65-6.5"
+  },
+  {
+   "label": "Chambre à air",
+   "size": "90/65-6.5, valve droite ou coudée",
+   "count": 5,
+   "to": "/piece/chambre-a-air-9065-65-valve-droite",
+   "cta": "Chambres à air"
+  }
+ ],
+ "care": [
+  "Freins hydrauliques : surveille l'épaisseur des plaquettes et purge le circuit dès que le levier devient mou.",
+  "Pneus tubeless de 11 pouces : vérifie la pression avant chaque sortie, à plus de 40 kg un pneu sous-gonflé s'use vite.",
+  "IPX4 seulement : évite les grosses flaques et sèche-la après la pluie."
+ ],
+ "price": {
+  "text": "Prix affiché chez FōhzShop : 2 290 € (relevé le 14/10/2026).",
+  "source": "fohzshop.fr"
+ },
+ "faq": [
+  {
+   "q": "Quelle taille de pneu pour la Dualtron Ultra One ?",
+   "a": "Des pneus tubeless de 11 pouces en 90/65-6.5, sur une jante de 6,5 pouces."
+  },
+  {
+   "q": "Peut-on mettre une chambre à air sur la Dualtron Ultra One ?",
+   "a": "Oui, une chambre à air 90/65-6.5 se monte dans le pneu en cas de crevaisons répétées."
+  },
+  {
+   "q": "Quelle est l'autonomie réelle de la Dualtron Ultra One ?",
+   "a": "FōhzShop estime environ 70 km bridée à 25 km/h et 45 km à pleine puissance, pour 100 km annoncés par le fabricant."
+  },
+  {
+   "q": "Combien de temps pour recharger la Dualtron Ultra One ?",
+   "a": "Environ 16 h avec un chargeur standard 2 A, 6 h avec le chargeur rapide 5 A fourni, selon FōhzShop."
+  }
+ ],
+ "sources": [
+  {
+   "label": "FōhzShop — Dualtron Ultra One 72 V 31,5 Ah",
+   "url": "https://fohzshop.fr/en/electric-scooters/dualtron/dualtron-ultra-one-72v-31-5ah"
+  },
+  {
+   "label": "Minimotors France — trottinettes Dualtron",
+   "url": "https://www.minimotors.fr/shop/category/trottinettes-electriques-dualtron-7"
+  },
+  {
+   "label": "Funtrott — Dualtron Ultra One 72 V 31,5 Ah",
+   "url": "https://funtrott.fr/accueil/5223-trottinette-electrique-dualtron-ultra-one-72v-315ah.html"
+  }
+ ]
+}

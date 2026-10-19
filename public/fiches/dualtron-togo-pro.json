@@ -1,0 +1,121 @@
+{
+ "displayName": "Dualtron Togo Pro",
+ "metaTitle": "Dualtron Togo Pro : fiche technique et pièces",
+ "metaDescription": "Dualtron Togo Pro : 48 V 13,5 Ah (648 Wh), moteur 760 W, pneus 70/50-6.1 de 9 pouces, freins à tambour, IPX5. Entretien et pièces compatibles.",
+ "intro": [
+  "La Dualtron Togo Pro se place entre la Togo Plus et la Togo Max dans la gamme Togo de Minimotors. Elle reçoit une batterie 48 V de 13,5 Ah, soit 648 Wh, et un moteur arrière de 760 W nominaux, 920 W en pointe.",
+  "Freins à tambour avant et arrière, suspensions à ressorts réglables et pneus de 9 pouces en 70/50-6.1, pour 24,3 kg selon Minimotors France. Elle annonce jusqu'à 50 km d'autonomie et roule à 25 km/h sur la voie publique, comme toute trottinette en France."
+ ],
+ "specs": [
+  [
+   "Moteur",
+   "760 W nominaux, 920 W en pointe"
+  ],
+  [
+   "Vitesse",
+   "25 km/h sur la voie publique"
+  ],
+  [
+   "Batterie",
+   "48 V, 13,5 Ah (648 Wh)"
+  ],
+  [
+   "Autonomie annoncée",
+   "jusqu'à 50 km"
+  ],
+  [
+   "Poids",
+   "24,3 kg (Minimotors France)"
+  ],
+  [
+   "Charge max",
+   "100 kg"
+  ],
+  [
+   "Roues",
+   "9 pouces, 70/50-6.1"
+  ],
+  [
+   "Freins",
+   "Tambours avant et arrière"
+  ],
+  [
+   "Suspension",
+   "Ressorts réglables avant et arrière"
+  ],
+  [
+   "Étanchéité",
+   "IPX5"
+  ],
+  [
+   "Temps de charge",
+   "6 à 7 h selon les distributeurs"
+  ]
+ ],
+ "pros": [
+  "Moteur de 760 W nominaux, le plus puissant des Togo 48 V (Minimotors France).",
+  "Suspensions réglables à l'avant et à l'arrière (Le Ranch).",
+  "Étanchéité annoncée IPX5 (Le Ranch, Urban Moov)."
+ ],
+ "cons": [
+  "Autonomie seulement annoncée : aucune mesure indépendante publiée à ce jour.",
+  "Freins à tambour, moins mordants que des disques.",
+  "Les noms de version varient selon les vendeurs : vérifie que ta Togo est bien une Pro 48 V 13,5 Ah avant de commander."
+ ],
+ "parts": [
+  {
+   "label": "Pneu",
+   "size": "70/50-6.1 (9 pouces)",
+   "count": 3,
+   "to": "/piece/pneu-tubeless-70-50-6-1-pantherurban-ewheel",
+   "cta": "Pneus 70/50-6.1"
+  }
+ ],
+ "care": [
+  "Freins à tambour : règle le câble dès que la course du levier s'allonge.",
+  "Pneus de 9 pouces : contrôle la pression chaque semaine.",
+  "Ressorts réglables : adapte la précharge à ton poids et contrôle le jeu des bras régulièrement."
+ ],
+ "faq": [
+  {
+   "q": "Quelle taille de pneu pour la Dualtron Togo Pro ?",
+   "a": "Des pneus de 9 pouces en 70/50-6.1, sur une jante de 6,1 pouces."
+  },
+  {
+   "q": "La Dualtron Togo Pro a-t-elle des plaquettes de frein ?",
+   "a": "Non. Elle freine avec des tambours à l'avant et à l'arrière."
+  },
+  {
+   "q": "Quelle est l'autonomie de la Dualtron Togo Pro ?",
+   "a": "Minimotors France annonce jusqu'à 50 km avec la batterie 48 V 13,5 Ah. C'est une valeur maximale, pas une mesure de test."
+  },
+  {
+   "q": "Quelle différence entre la Togo Pro et la Togo Plus ?",
+   "a": "La Pro a une batterie de 13,5 Ah et un moteur de 760 W nominaux. La Plus a un moteur de 650 W et une batterie de 12 ou 15 Ah."
+  }
+ ],
+ "sources": [
+  {
+   "label": "Minimotors France — gamme Dualtron Togo",
+   "url": "https://www.minimotors.fr/trottinette-electrique-dualtron-togo"
+  },
+  {
+   "label": "Le Ranch — Dualtron Togo Pro 48 V 13,5 Ah",
+   "url": "https://www.le-ranch.fr/product-page/dualtron-togo-pro-48v13-5ah"
+  },
+  {
+   "label": "Urban Moov — Dualtron Togo Pro 48 V 13,5 Ah",
+   "url": "https://www.urbanmoov.fr/boutique/Dualtron-Togo-Pro-48V13-5AH-p793670849"
+  },
+  {
+   "label": "Fnac — Dualtron Togo Pro 760 W",
+   "url": "https://www.fnac.com/Trottinette-electrique-Minimotors-Dualtron-Togo-Pro-760-W-Noir/a22897375/w-4"
+  }
+ ],
+ "video": {
+  "id": "bWQ4afoMIzQ",
+  "title": "NOUVELLE TROTTINETTE ÉLECTRIQUE DUALTRON TOGO MAX ET TOGO PRO DÉCOUVREZ LES TOUTES CHEZ FASTRIDE",
+  "channel": "Fastride",
+  "uploadDate": "2025-11-19"
+ }
+}

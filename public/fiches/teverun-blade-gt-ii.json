@@ -1,0 +1,151 @@
+{
+ "displayName": "Teverun Blade GT II",
+ "metaTitle": "Teverun Blade GT II : fiche technique et pièces",
+ "metaDescription": "Teverun Blade GT II : bimoteur 60 V 26 Ah, pneus 90/65-6.5 (11 pouces), disques hydrauliques 160 mm, étrier Zoom. Fiche, entretien et pièces.",
+ "intro": [
+  "La Teverun Blade GT II est la version de base de la gamme Blade GT II, à ne pas confondre avec la Blade GT II Pro ni avec la Blade GT+ II. Teverun Europe la présente en 60 V 26 Ah, avec deux moteurs de 1 600 W et jusqu'à 80 km d'autonomie annoncée.",
+  "Freins à disque hydrauliques, pneus tubeless de 11 pouces en 90/65-6.5, suspensions à ressort et étanchéité IPX6 : c'est une grosse bimoteur de 42 kg. Elle n'a pas les suspensions réglables KKE de la GT+ II. Sur la voie publique en France, elle doit rester bridée à 25 km/h."
+ ],
+ "specs": [
+  [
+   "Moteurs",
+   "2 × 1 600 W (5 000 W en crête annoncés)"
+  ],
+  [
+   "Vitesse",
+   "25 km/h sur la voie publique"
+  ],
+  [
+   "Batterie",
+   "60 V, 26 Ah"
+  ],
+  [
+   "Autonomie annoncée",
+   "jusqu'à 80 km (Teverun Europe)"
+  ],
+  [
+   "Poids",
+   "42 kg (Teverun Europe)"
+  ],
+  [
+   "Charge max",
+   "120 kg"
+  ],
+  [
+   "Roues",
+   "11 pouces, 90/65-6.5 tubeless"
+  ],
+  [
+   "Freins",
+   "Disques hydrauliques, Ø 160 mm, étrier Zoom"
+  ],
+  [
+   "Suspension",
+   "Ressorts avant et arrière, amortisseur de direction"
+  ],
+  [
+   "Étanchéité",
+   "IPX6"
+  ],
+  [
+   "Chargeur",
+   "60 V (67,2 V en sortie)"
+  ]
+ ],
+ "pros": [
+  "Deux moteurs de 1 600 W sur une batterie 60 V (Teverun Europe).",
+  "Freins à disque hydrauliques sur les deux roues et pneus tubeless de 11 pouces.",
+  "Étanchéité IPX6 annoncée par Teverun Europe."
+ ],
+ "cons": [
+  "42 kg : elle ne se porte pas dans un escalier.",
+  "Suspensions à ressort non réglables : les réglages KKE sont réservés à la Blade GT+ II (Teverun Europe).",
+  "Les fiches des revendeurs ne donnent pas toutes la même puissance ni la même batterie : vérifie la version de ta trottinette avant de commander une pièce électrique.",
+  "Sa vitesse de pointe n'est utilisable que sur terrain privé : en France, la voie publique est limitée à 25 km/h."
+ ],
+ "parts": [
+  {
+   "label": "Pneu",
+   "size": "90/65-6.5 (11 pouces)",
+   "count": 11,
+   "to": "/piece/pneu-90-65-6-5-route-tubeless",
+   "cta": "Pneus 90/65-6.5"
+  },
+  {
+   "label": "Chambre à air",
+   "size": "90/65-6.5, valve droite ou coudée",
+   "count": 5,
+   "to": "/piece/chambre-a-air-9065-65-11-pouces",
+   "cta": "Chambres à air"
+  },
+  {
+   "label": "Plaquettes",
+   "size": "étrier Zoom",
+   "count": 5,
+   "to": "/piece/plaquettes-de-frein-zoom-semi-metallique",
+   "cta": "Plaquettes Zoom"
+  },
+  {
+   "label": "Disque de frein",
+   "size": "160 mm, 6 trous, entraxe 44 mm",
+   "count": 7,
+   "to": "/piece/disque-de-frein-160mm",
+   "cta": "Disques 160 mm"
+  }
+ ],
+ "care": [
+  "Pneus tubeless : contrôle la pression chaque semaine, un tubeless sous-gonflé se déjante et crève plus facilement.",
+  "Freins Zoom hydrauliques : surveille l'épaisseur des plaquettes et purge le circuit quand le levier devient mou.",
+  "À 42 kg avec deux moteurs, la visserie de la colonne et des bras de suspension travaille : resserre-la régulièrement."
+ ],
+ "price": {
+  "text": "Prix affichés : 1 699 € chez Teverun Europe, 2 094,95 € chez Wheelyshop (relevés le 19/10/2026).",
+  "source": "teverun-europe.com, wheelyshop.fr"
+ },
+ "faq": [
+  {
+   "q": "Quelle taille de pneu pour la Teverun Blade GT II ?",
+   "a": "Des pneus tubeless de 11 pouces en 90/65-6.5, sur une jante de 6,5 pouces."
+  },
+  {
+   "q": "Quel disque de frein pour la Teverun Blade GT II ?",
+   "a": "Un disque de 160 mm à 6 trous, entraxe 44 mm."
+  },
+  {
+   "q": "Quelles plaquettes pour la Teverun Blade GT II ?",
+   "a": "Des plaquettes pour étrier hydraulique Zoom, en semi-métallique, métal fritté ou céramique selon ton usage."
+  },
+  {
+   "q": "Quelle différence entre la Blade GT II, la GT II Pro et la GT+ II ?",
+   "a": "Teverun Europe les distingue par la batterie : 60 V 26 Ah pour la GT II, 60 V 30 Ah pour la GT II Pro, 60 V 37,1 Ah pour la GT+ II. La GT+ II reçoit en plus des suspensions réglables KKE."
+  },
+  {
+   "q": "La Teverun Blade GT II est-elle légale en France ?",
+   "a": "Oui sur la voie publique à condition d'être bridée à 25 km/h, comme toute trottinette électrique. Débridée, elle n'est utilisable que sur terrain privé."
+  }
+ ],
+ "sources": [
+  {
+   "label": "Teverun Europe — Blade GT II 60 V 26 Ah",
+   "url": "https://teverun-europe.com/product/teverun-blade-gt-ii-60-v-26-ah-2x1500-w-5000-w/"
+  },
+  {
+   "label": "Teverun Europe — gamme Blade GT II",
+   "url": "https://teverun-europe.com/blade-gt-ii/"
+  },
+  {
+   "label": "Wheelyshop — Teverun Blade GT II",
+   "url": "https://www.wheelyshop.fr/products/teverun-blade-gt-ii"
+  },
+  {
+   "label": "Ministère de la Transition écologique — réglementation des trottinettes",
+   "url": "https://www.ecologie.gouv.fr/politiques-publiques/trottinettes-electriques-edpm-reglementation-vigueur"
+  }
+ ],
+ "video": {
+  "id": "40Wc-X0MWiw",
+  "title": "TEVERUN BLADE GT 2 et 2 PLUS incroyable pour le prix ?",
+  "channel": "BxRider",
+  "uploadDate": "2024-11-18"
+ }
+}

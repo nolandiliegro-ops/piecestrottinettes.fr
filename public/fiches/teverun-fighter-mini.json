@@ -1,0 +1,166 @@
+{
+ "displayName": "Teverun Fighter Mini",
+ "metaTitle": "Teverun Fighter Mini : fiche technique, avis et pièces",
+ "metaDescription": "Teverun Fighter Mini 52 V 20,8 Ah : 63 km mesurés, pneus 80/65-6 (10x3), disques hydrauliques 140 mm, étrier Zoom, prise LP16-3. Avis et pièces.",
+ "intro": [
+  "La Teverun Fighter Mini est la Fighter Mini d'origine, en 52 V 20,8 Ah. Elle ne doit pas être confondue avec la Mini Eco (15,6 Ah), la Mini Pro (60 V) ni la Mini Q. Elle était référencée en France dès septembre 2023.",
+  "Deux moteurs de 1 000 W, des freins à disque hydrauliques Zoom, des pneus tubeless 10x3 et 29,5 kg sur la fiche Teverun France. Le Labo Fnac a mesuré 63 km sur une charge. Sur la voie publique en France, elle doit rester bridée à 25 km/h."
+ ],
+ "specs": [
+  [
+   "Moteurs",
+   "2 × 1 000 W (2 950 W en pointe annoncés)"
+  ],
+  [
+   "Vitesse",
+   "25 km/h sur la voie publique"
+  ],
+  [
+   "Batterie",
+   "52 V, 20,8 Ah (1 081 Wh)"
+  ],
+  [
+   "Autonomie",
+   "63 km mesurés par le Labo Fnac (jusqu'à 60 km annoncés)"
+  ],
+  [
+   "Poids",
+   "29,5 kg (Teverun France, Labo Fnac)"
+  ],
+  [
+   "Charge max",
+   "120 kg"
+  ],
+  [
+   "Roues",
+   "10 pouces, 80/65-6 (10x3) tubeless"
+  ],
+  [
+   "Freins",
+   "Disques hydrauliques, Ø 140 mm, étrier Zoom"
+  ],
+  [
+   "Suspension",
+   "Ressorts avant et arrière"
+  ],
+  [
+   "Étanchéité",
+   "IPX5"
+  ],
+  [
+   "Prise de charge",
+   "LP16-3"
+  ],
+  [
+   "Chargeur",
+   "52 V (58,8 V en sortie)"
+  ],
+  [
+   "Temps de charge",
+   "10 h 25 mesurées par le Labo Fnac"
+  ]
+ ],
+ "pros": [
+  "Performances jugées globalement exceptionnelles pour sa taille (Labo Fnac).",
+  "63 km mesurés sur une charge, au-dessus des 60 km annoncés (Labo Fnac).",
+  "Freins à disque hydrauliques et pneus tubeless 10x3 (Teverun France)."
+ ],
+ "cons": [
+  "Accélération un peu cahoteuse (Labo Fnac).",
+  "Recharge longue : 10 h 25 mesurées par le Labo Fnac.",
+  "29,5 kg : elle se porte, mais pas longtemps.",
+  "Sa vitesse de pointe n'est utilisable que sur terrain privé : en France, la voie publique est limitée à 25 km/h."
+ ],
+ "parts": [
+  {
+   "label": "Pneu",
+   "size": "80/65-6 (10x3)",
+   "count": 11,
+   "to": "/piece/pneu-tubeless-80-65-6-10x3-cityroad-ewheel",
+   "cta": "Pneus 10x3"
+  },
+  {
+   "label": "Chambre à air",
+   "size": "80/65-6 (10x3), valve droite ou coudée",
+   "count": 3,
+   "to": "/piece/chambre-a-air-80-65-6-10x3-valve-droite-ewheel",
+   "cta": "Chambres à air"
+  },
+  {
+   "label": "Plaquettes",
+   "size": "étrier Zoom",
+   "count": 5,
+   "to": "/piece/plaquettes-de-frein-zoom-semi-metallique",
+   "cta": "Plaquettes Zoom"
+  },
+  {
+   "label": "Disque de frein",
+   "size": "140 mm, 6 trous, entraxe 44 mm",
+   "count": 5,
+   "to": "/piece/disque-de-frein-140mm",
+   "cta": "Disques 140 mm"
+  },
+  {
+   "label": "Chargeur",
+   "size": "52 V → 58,8 V, prise LP16-3",
+   "count": 2,
+   "to": "/piece/pack-chargeur-52v-588v-2a-connecteur-lp16-3",
+   "cta": "Chargeurs 52 V"
+  }
+ ],
+ "care": [
+  "Pneus tubeless : contrôle la pression chaque semaine, un tubeless sous-gonflé se déjante et crève plus facilement.",
+  "Freins Zoom hydrauliques : surveille l'épaisseur des plaquettes et purge le circuit quand le levier devient mou.",
+  "Recharge avec un chargeur 52 V adapté et évite de laisser la batterie à plat plusieurs semaines."
+ ],
+ "faq": [
+  {
+   "q": "Quelle taille de pneu pour la Teverun Fighter Mini ?",
+   "a": "Des pneus tubeless de 10 pouces en 80/65-6, aussi notés 10x3, sur une jante de 6 pouces."
+  },
+  {
+   "q": "Quel disque de frein pour la Teverun Fighter Mini ?",
+   "a": "Un disque de 140 mm à 6 trous, entraxe 44 mm."
+  },
+  {
+   "q": "Quelles plaquettes pour la Teverun Fighter Mini ?",
+   "a": "Des plaquettes pour étrier hydraulique Zoom, en semi-métallique, métal fritté ou céramique."
+  },
+  {
+   "q": "Quel chargeur pour la Teverun Fighter Mini ?",
+   "a": "Un chargeur 52 V (58,8 V en sortie) avec prise LP16-3."
+  },
+  {
+   "q": "Quelle est l'autonomie réelle de la Teverun Fighter Mini ?",
+   "a": "Le Labo Fnac a mesuré 63 km sur une charge avec la version 52 V 20,8 Ah. Ton poids, le relief et le mode de conduite font varier ce chiffre."
+  },
+  {
+   "q": "La Teverun Fighter Mini est-elle légale en France ?",
+   "a": "Oui sur la voie publique à condition d'être bridée à 25 km/h, comme toute trottinette électrique. Débridée, elle n'est utilisable que sur terrain privé."
+  }
+ ],
+ "sources": [
+  {
+   "label": "L'Éclaireur Fnac — test Labo Teverun Fighter Mini 52 V 20,8 Ah",
+   "url": "https://leclaireur.fnac.com/test/468722-test-labo-de-la-teverun-fighter-mini-52v-208ah-un-vehicule-dexception/"
+  },
+  {
+   "label": "Teverun France — Fighter Mini",
+   "url": "https://www.teverun.fr/teverun-fighter-mini/"
+  },
+  {
+   "label": "Dualtron Store — Teverun Fighter Mini",
+   "url": "https://dualtron-store.com/index.php/produit/teverun-fighter-mini/"
+  },
+  {
+   "label": "Ministère de la Transition écologique — réglementation des trottinettes",
+   "url": "https://www.ecologie.gouv.fr/politiques-publiques/trottinettes-electriques-edpm-reglementation-vigueur"
+  }
+ ],
+ "video": {
+  "id": "y7BAXzxN5Do",
+  "title": "TEVERUN FIGHTER MINI 52V : LA PETITE SOEUR DE LA FIGHTER 10 ET FIGHTER 11 !",
+  "channel": "Weebot Paris",
+  "uploadDate": "2023-12-21"
+ }
+}

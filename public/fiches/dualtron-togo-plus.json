@@ -1,0 +1,140 @@
+{
+ "displayName": "Dualtron Togo Plus",
+ "metaTitle": "Dualtron Togo Plus : fiche technique, avis et pièces",
+ "metaDescription": "Dualtron Togo Plus : 48 V, moteur 650 W, pneus 70/50-6.1 de 9 pouces, freins à tambour, IPX5, prise LP16-3. Avis, entretien et pièces.",
+ "intro": [
+  "La Dualtron Togo Plus est la version 48 V de la Togo, la Dualtron d'entrée de gamme de Minimotors. Elle existe avec une batterie de 12 ou 15 Ah. Présentée fin 2023, la version 12 Ah était annoncée à 699 € dans une vidéo du vidéaste Kramtoo.",
+  "Moteur arrière de 650 W nominaux, freins à tambour avant et arrière, suspensions à ressorts et pneus de 9 pouces en 70/50-6.1, pour environ 24 kg. C'est une trottinette pour les trajets urbains sur terrain plat. Elle roule à 25 km/h sur la voie publique."
+ ],
+ "specs": [
+  [
+   "Moteur",
+   "650 W nominaux (800 W en crête selon certaines fiches)"
+  ],
+  [
+   "Vitesse",
+   "25 km/h sur la voie publique"
+  ],
+  [
+   "Batterie",
+   "48 V : 12 Ah ou 15 Ah"
+  ],
+  [
+   "Autonomie annoncée",
+   "40 km (12 Ah) à 50 km (15 Ah)"
+  ],
+  [
+   "Poids",
+   "environ 24,3 à 24,4 kg"
+  ],
+  [
+   "Charge max",
+   "100 kg"
+  ],
+  [
+   "Roues",
+   "9 pouces, 70/50-6.1"
+  ],
+  [
+   "Freins",
+   "Tambours avant et arrière"
+  ],
+  [
+   "Suspension",
+   "Ressorts avant et arrière"
+  ],
+  [
+   "Étanchéité",
+   "IPX5"
+  ],
+  [
+   "Prise de charge",
+   "LP16-3"
+  ],
+  [
+   "Temps de charge",
+   "environ 8 h (12 Ah) à 10 h (15 Ah) selon Dualtron Shop"
+  ]
+ ],
+ "pros": [
+  "Double suspension et comportement rassurant sur terrain plat (Info.fr).",
+  "Prix accessible pour une Dualtron (Info.fr).",
+  "Étanchéité annoncée IPX5 (Vepace, Le Ranch)."
+ ],
+ "cons": [
+  "Performances limitées en côte (Info.fr).",
+  "Freins à tambour qui demandent un rodage prolongé (Info.fr).",
+  "Autour de 24 kg : contraignante à porter (Info.fr)."
+ ],
+ "parts": [
+  {
+   "label": "Pneu",
+   "size": "70/50-6.1 (9 pouces)",
+   "count": 3,
+   "to": "/piece/pneu-tubeless-70-50-6-1-pantherurban-ewheel",
+   "cta": "Pneus 70/50-6.1"
+  },
+  {
+   "label": "Chargeur",
+   "size": "48 V → 54,6 V, prise LP16-3",
+   "count": 1,
+   "to": "/piece/pack-chargeur-48v-546v-2a-adaptateur-gx16-lp16-3",
+   "cta": "Chargeur 48 V"
+  }
+ ],
+ "care": [
+  "Freins à tambour : roule quelques dizaines de kilomètres en douceur pour les roder, puis règle le câble.",
+  "Pneus de 9 pouces : contrôle la pression chaque semaine, un petit pneu sous-gonflé crève plus vite.",
+  "Suspensions à ressorts : nettoie et graisse les axes après les sorties sous la pluie."
+ ],
+ "price": {
+  "text": "Prix annoncé pour la Togo Plus 48 V 12 Ah : 699 € (décembre 2023).",
+  "source": "Kramtoo (YouTube)"
+ },
+ "faq": [
+  {
+   "q": "Quelle taille de pneu pour la Dualtron Togo Plus ?",
+   "a": "Des pneus de 9 pouces en 70/50-6.1, sur une jante de 6,1 pouces."
+  },
+  {
+   "q": "La Dualtron Togo Plus a-t-elle des plaquettes de frein ?",
+   "a": "Non. Elle freine avec des tambours à l'avant et à l'arrière."
+  },
+  {
+   "q": "Quel chargeur pour la Dualtron Togo Plus ?",
+   "a": "Un chargeur 48 V (54,6 V en sortie) avec prise LP16-3."
+  },
+  {
+   "q": "Quelle différence entre la Togo Plus 12 Ah et 15 Ah ?",
+   "a": "La batterie : 40 km annoncés pour la 12 Ah, 50 km pour la 15 Ah, pour un poids quasi identique. Certains vendeurs appellent la 15 Ah « Togo Pro »."
+  }
+ ],
+ "sources": [
+  {
+   "label": "Dualtron Shop — Dualtron Togo",
+   "url": "https://dualtron-shop.com/fr/produit/dualtron-togo/"
+  },
+  {
+   "label": "Le Ranch — Dualtron Togo Plus 48 V 15 Ah",
+   "url": "https://www.le-ranch.fr/product-page/dualtron-togo-plus-48v15ah"
+  },
+  {
+   "label": "Vepace — Dualtron Togo Plus",
+   "url": "https://vepace.com/fr/products/dualtron-togo-plus-electric-scooter"
+  },
+  {
+   "label": "Info.fr — comparateur trottinettes Dualtron",
+   "url": "https://info.fr/comparateurs/trottinette-electrique/marque/dualtron/"
+  },
+  {
+   "label": "Kramtoo (YouTube) — Dualtron Togo +",
+   "url": "https://www.youtube.com/watch?v=XQ2bGQdlvZ0"
+  }
+ ],
+ "video": {
+  "id": "XQ2bGQdlvZ0",
+  "title": "Dualtron Togo + Une  Dualtron A Partir De 499 Euros Étanche 🔥 !",
+  "channel": "KRAMTOO",
+  "uploadDate": "2023-12-03"
+ }
+}

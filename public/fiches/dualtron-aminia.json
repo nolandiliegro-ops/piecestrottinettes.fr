@@ -1,0 +1,152 @@
+{
+ "displayName": "Dualtron Aminia",
+ "metaTitle": "Dualtron Aminia : fiche technique et pièces",
+ "metaDescription": "Dualtron Aminia : 52 V, pneus 70/50-6.1 de 9 pouces, freins à tambour, IPX5, prise LP16-3. Versions Special et Long Body, entretien et pièces.",
+ "intro": [
+  "La Dualtron Aminia reprend le châssis et le design de la Dualtron Mini, avec une étanchéité annoncée IPX5. Elle existe en deux familles : la Special, à un seul moteur arrière, et la Long Body, à deux moteurs, chacune avec deux capacités de batterie en 52 V.",
+  "Freins à tambour avant et arrière, suspensions à ressorts sur les deux roues et pneus de 9 pouces en 70/50-6.1 : c'est une trottinette compacte pour la ville et les trajets courts. Sur la voie publique en France, elle doit rester bridée à 25 km/h."
+ ],
+ "specs": [
+  [
+   "Moteurs",
+   "1 moteur arrière (Special) ou 2 moteurs (Long Body)"
+  ],
+  [
+   "Vitesse",
+   "25 km/h sur la voie publique"
+  ],
+  [
+   "Batterie",
+   "52 V : 13 ou 17,5 Ah (Special), 15,6 ou 21 Ah (Long Body)"
+  ],
+  [
+   "Autonomie annoncée",
+   "40 à 65 km selon la version (distributeurs)"
+  ],
+  [
+   "Poids",
+   "environ 30 à 30,5 kg (Long Body)"
+  ],
+  [
+   "Charge max",
+   "120 kg"
+  ],
+  [
+   "Roues",
+   "9 pouces, 70/50-6.1 tubeless"
+  ],
+  [
+   "Freins",
+   "Tambours avant et arrière"
+  ],
+  [
+   "Suspension",
+   "Ressorts avant et arrière"
+  ],
+  [
+   "Étanchéité",
+   "IPX5"
+  ],
+  [
+   "Prise de charge",
+   "LP16-3"
+  ],
+  [
+   "Chargeur",
+   "52 V (58,1 V en sortie)"
+  ],
+  [
+   "Temps de charge",
+   "environ 6 h 30 (13 Ah) à 10 h 30 (21 Ah) selon Dualtron Shop"
+  ]
+ ],
+ "pros": [
+  "Étanchéité annoncée IPX5, pensée pour rouler sous la pluie (Dualtron Store).",
+  "Deux architectures au choix : un moteur pour la Special, deux pour la Long Body (Dualtron Shop).",
+  "Freins à tambour peu exigeants en entretien et suspensions à ressorts sur les deux roues."
+ ],
+ "cons": [
+  "Autonomie réelle bien en dessous des annonces : environ 25 km pour la Special 13 Ah selon Dualtron Store.",
+  "Environ 30 kg en Long Body : elle se porte mal dans les escaliers.",
+  "Les fiches des revendeurs ne s'accordent pas sur la puissance de la Long Body : vérifie la version de ta trottinette avant de commander une pièce moteur."
+ ],
+ "parts": [
+  {
+   "label": "Pneu",
+   "size": "70/50-6.1 (9 pouces)",
+   "count": 3,
+   "to": "/piece/pneu-tubeless-70-50-6-1-pantherurban-ewheel",
+   "cta": "Pneus 70/50-6.1"
+  },
+  {
+   "label": "Chargeur",
+   "size": "52 V → 58,8 V, prise LP16-3",
+   "count": 2,
+   "to": "/piece/pack-chargeur-52v-588v-2a-connecteur-lp16-3",
+   "cta": "Chargeurs 52 V"
+  }
+ ],
+ "care": [
+  "Freins à tambour : règle le câble dès que la course du levier s'allonge, c'est ton seul freinage mécanique.",
+  "Pneus 70/50-6.1 tubeless : contrôle la pression chaque semaine, un petit pneu sous-gonflé s'use vite et chauffe la jante.",
+  "Étanche IPX5 ne veut pas dire immergeable : après une sortie sous la pluie, sèche-la et évite le jet haute pression."
+ ],
+ "price": {
+  "text": "Prix annoncés à la présentation chez Dualtron Store (octobre 2024) : 1 099 € pour la Special 13 Ah, 1 299 € pour la Special 17 Ah.",
+  "source": "présentation vidéo YouTube (octobre 2024)"
+ },
+ "faq": [
+  {
+   "q": "Quelle taille de pneu pour la Dualtron Aminia ?",
+   "a": "Des pneus de 9 pouces en 70/50-6.1 tubeless, sur une jante de 6,1 pouces."
+  },
+  {
+   "q": "La Dualtron Aminia a-t-elle des plaquettes de frein ?",
+   "a": "Non. Elle freine avec des tambours à l'avant et à l'arrière : pas de plaquettes ni de disque à changer."
+  },
+  {
+   "q": "Quel chargeur pour la Dualtron Aminia ?",
+   "a": "Un chargeur 52 V (58,1 à 58,8 V en sortie) avec prise LP16-3."
+  },
+  {
+   "q": "Quelle est l'autonomie réelle de la Dualtron Aminia ?",
+   "a": "Dualtron Store estime environ 25 km réels pour la Special 13 Ah. Les fiches annoncent de 40 à 65 km selon la batterie, dans des conditions favorables."
+  },
+  {
+   "q": "Quelle différence entre l'Aminia Special et l'Aminia Long Body ?",
+   "a": "La Special a un seul moteur arrière et une batterie de 13 ou 17,5 Ah. La Long Body a deux moteurs et une batterie de 15,6 ou 21 Ah, pour environ 30 kg."
+  }
+ ],
+ "sources": [
+  {
+   "label": "Dualtron Shop — Dualtron Aminia",
+   "url": "https://dualtron-shop.com/fr/produit/dualtron-aminia/"
+  },
+  {
+   "label": "Dualtron Store — Dualtron Aminia",
+   "url": "https://dualtron-store.com/index.php/produit/dualtron-mini/"
+  },
+  {
+   "label": "Le Ranch — Dualtron Aminia double moteur 52 V 21 Ah",
+   "url": "https://www.le-ranch.fr/product-page/dualtron-aminia-double-moteur-52v21ah"
+  },
+  {
+   "label": "Mobility Urban — Dualtron Aminia Special et Long Body",
+   "url": "https://www.mobilityurban.fr/marque/trottinette-speedway-minimotors/trottinette-electrique-dualtron-aminia-special-et-long-body.html"
+  },
+  {
+   "label": "YouTube — présentation Aminia Special et Long Body (prix)",
+   "url": "https://www.youtube.com/watch?v=oLAQ7LV2MsA"
+  },
+  {
+   "label": "Dualtron Store (YouTube) — Dualtron Aminia, autonomie réelle",
+   "url": "https://www.youtube.com/watch?v=CU7ET3BzsT0"
+  }
+ ],
+ "video": {
+  "id": "CU7ET3BzsT0",
+  "title": "DUALTRON AMINIA -  LA NOUVELLE DUALTRON MINI - TROTTINETTE ELECTRIQUE",
+  "channel": "Dualtron Store ® officiel",
+  "uploadDate": "2024-10-12"
+ }
+}

@@ -1,0 +1,175 @@
+{
+ "displayName": "Teverun Fighter 7260R",
+ "metaTitle": "Teverun Fighter 7260R : fiche technique, avis et pièces",
+ "metaDescription": "Teverun Fighter 7260R : 72 V 60 Ah, 8 000 W en pointe, pneus 125/60-7 (13 pouces), freins Nutt 4 pistons, disques 180 mm. Avis, entretien et pièces.",
+ "intro": [
+  "La Teverun Fighter 7260R est la Fighter à batterie 72 V 60 Ah et roues de 13 pouces. Ne la confonds pas avec la Fighter Supreme 7260R, une autre version annoncée à 15 000 W en pointe. La 7260R existe en plusieurs séries (V4 2025, V5, V6 2026).",
+  "Deux moteurs de 2 500 W, 8 000 W en pointe, des freins hydrauliques à quatre pistons sur disques de 180 mm et des pneus tubeless de 13 pouces. Teverun France annonce jusqu'à 200 km pour 63 kg. Sur la voie publique en France, elle doit rester bridée à 25 km/h."
+ ],
+ "specs": [
+  [
+   "Moteurs",
+   "2 × 2 500 W (8 000 W en pointe annoncés)"
+  ],
+  [
+   "Vitesse",
+   "25 km/h sur la voie publique"
+  ],
+  [
+   "Batterie",
+   "72 V, 60 Ah"
+  ],
+  [
+   "Autonomie annoncée",
+   "jusqu'à 200 km (Teverun France)"
+  ],
+  [
+   "Poids",
+   "63 kg (Teverun France)"
+  ],
+  [
+   "Charge max",
+   "150 kg"
+  ],
+  [
+   "Roues",
+   "13 pouces, 125/60-7 tubeless"
+  ],
+  [
+   "Freins",
+   "Hydrauliques Nutt 4 pistons, disques Ø 180 mm"
+  ],
+  [
+   "Suspension",
+   "Hydraulique avant et arrière"
+  ],
+  [
+   "Étanchéité",
+   "IPX5 (Teverun France)"
+  ],
+  [
+   "Prise de charge",
+   "LP16-3"
+  ],
+  [
+   "Chargeur",
+   "72 V (84 V en sortie)"
+  ],
+  [
+   "Temps de charge",
+   "12 h (Vepace)"
+  ]
+ ],
+ "pros": [
+  "Batterie 72 V 60 Ah pour jusqu'à 200 km annoncés (Teverun France).",
+  "Freins hydrauliques à quatre pistons sur disques de 180 mm (Mazrider).",
+  "Pneus larges de 13 pouces qui encaissent les mauvaises routes (Teverun France)."
+ ],
+ "cons": [
+  "63 kg et un gros encombrement : c'est une limite pratique au quotidien (Le Dépanneur Tech).",
+  "Recharge longue : 12 h annoncées (Vepace).",
+  "Pneus très plats qui glissent en virage lors d'un essai sur circuit à pleine puissance (RAFTOR).",
+  "Sa vitesse de pointe n'est utilisable que sur terrain privé : en France, la voie publique est limitée à 25 km/h."
+ ],
+ "parts": [
+  {
+   "label": "Pneu",
+   "size": "125/60-7 (13 pouces) tubeless",
+   "count": 1,
+   "to": "/piece/pneu-tubeless-125-60-7-cst",
+   "cta": "Pneus 125/60-7"
+  },
+  {
+   "label": "Plaquettes",
+   "size": "étrier Nutt 4 pistons",
+   "count": 4,
+   "to": "/piece/plaquettes-de-freins-shimano-d03s-nutt-4-pistons-thunder-3-nami-semi-metallique",
+   "cta": "Plaquettes Nutt"
+  },
+  {
+   "label": "Disque de frein",
+   "size": "180 mm, 6 trous, entraxe 44 mm",
+   "count": 3,
+   "to": "/piece/disque-de-frein-180mm",
+   "cta": "Disques 180 mm"
+  },
+  {
+   "label": "Chargeur",
+   "size": "72 V → 84 V, prise LP16-3",
+   "count": 2,
+   "to": "/piece/chargeur-72v-84v-2a-connecteur-lp16-3",
+   "cta": "Chargeurs 72 V"
+  }
+ ],
+ "care": [
+  "À 63 kg, contrôle la pression des pneus tubeless avant chaque sortie : un pneu sous-gonflé se déjante et use vite la gomme.",
+  "Freins Nutt 4 pistons : surveille l'épaisseur des plaquettes et purge le circuit quand le levier devient mou.",
+  "Une batterie de 72 V 60 Ah se recharge longtemps : utilise un chargeur 72 V adapté et ne la laisse pas vide plusieurs semaines."
+ ],
+ "price": {
+  "text": "Prix affichés : 3 699,99 € chez Mazrider (édition 2025 V4), 4 290 € chez Over Watt (V5) (relevés le 19/10/2026).",
+  "source": "mazrider.com, over-watt.fr"
+ },
+ "faq": [
+  {
+   "q": "Quelle taille de pneu pour la Teverun Fighter 7260R ?",
+   "a": "Des pneus tubeless de 13 pouces en 125/60-7, sur une jante de 7 pouces."
+  },
+  {
+   "q": "Quelles plaquettes pour la Teverun Fighter 7260R ?",
+   "a": "Des plaquettes pour étrier hydraulique Nutt à quatre pistons, en semi-métallique, métal fritté ou céramique."
+  },
+  {
+   "q": "Quel disque de frein pour la Teverun Fighter 7260R ?",
+   "a": "Un disque de 180 mm à 6 trous, entraxe 44 mm."
+  },
+  {
+   "q": "Quel chargeur pour la Teverun Fighter 7260R ?",
+   "a": "Un chargeur 72 V (84 V en sortie) avec prise LP16-3."
+  },
+  {
+   "q": "Quelle différence entre la Fighter 7260R et la Fighter Supreme 7260R ?",
+   "a": "Ce sont deux modèles distincts sur la même batterie 72 V 60 Ah. La Supreme 7260R est annoncée jusqu'à 15 000 W en pointe, avec suspensions KKE réglables et double amortisseur de direction. Vérifie le nom exact sur ton cadre avant de commander."
+  },
+  {
+   "q": "La Teverun Fighter 7260R est-elle légale en France ?",
+   "a": "Oui sur la voie publique à condition d'être bridée à 25 km/h, comme toute trottinette électrique. Débridée, elle n'est utilisable que sur terrain privé."
+  }
+ ],
+ "sources": [
+  {
+   "label": "Teverun France — Fighter 7260R",
+   "url": "https://www.teverun.fr/teverun-fighter-7260r/"
+  },
+  {
+   "label": "Mazrider — Teverun Fighter 7260R édition 2025 V4",
+   "url": "https://mazrider.com/products/trottinette-electrique-teverun-fighter-7260r-edition-2025-v4"
+  },
+  {
+   "label": "Over Watt — Teverun Fighter 7260R 2026 V5",
+   "url": "https://over-watt.fr/collections/trottinette-electrique/products/teverun-fighter-7260r-2026-v5"
+  },
+  {
+   "label": "Vepace — Teverun Fighter 7260R V4 2025",
+   "url": "https://vepace.com/fr/products/teverun-fighter-7260r-v4-2025"
+  },
+  {
+   "label": "Le Dépanneur Tech — Teverun Fighter 7260R V6 2026",
+   "url": "https://ledepanneurtech.com/teverun-fighter-7260r-v6-2026"
+  },
+  {
+   "label": "RAFTOR — test complet de la Teverun Fighter 7260R (YouTube)",
+   "url": "https://www.youtube.com/watch?v=dv3L6WwlO7U"
+  },
+  {
+   "label": "Ministère de la Transition écologique — réglementation des trottinettes",
+   "url": "https://www.ecologie.gouv.fr/politiques-publiques/trottinettes-electriques-edpm-reglementation-vigueur"
+  }
+ ],
+ "video": {
+  "id": "dv3L6WwlO7U",
+  "title": "4 690€ pour ça ?! Test complet de la TEVERUN Fighter 7260R",
+  "channel": "RAFTOR",
+  "uploadDate": "2025-10-26"
+ }
+}

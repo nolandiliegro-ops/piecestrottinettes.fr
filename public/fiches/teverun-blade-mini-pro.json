@@ -1,0 +1,132 @@
+{
+ "displayName": "Teverun Blade Mini Pro",
+ "metaTitle": "Teverun Blade Mini Pro : fiche technique et pièces",
+ "metaDescription": "Teverun Blade Mini Pro : bimoteur 48 V 20,8 Ah, pneus 10x3, freins à disque mécaniques 140 mm, 29 kg. Versions, entretien et pièces compatibles.",
+ "intro": [
+  "La Teverun Blade Mini Pro est la version bimoteur de la Blade Mini : deux moteurs de 500 W, une batterie 48 V et des roues de 10 pouces. Elle ne doit pas être confondue avec la Blade Mini Ultra, qui passe en 60 V avec des freins hydrauliques.",
+  "Freins à disque mécaniques avant et arrière, suspensions à ressort, pneus 10x3 : c'est une compacte d'environ 29 kg. Les versions changent selon l'année, notamment la batterie (15,6, 20,8 ou 27 Ah). Sur la voie publique en France, elle doit rester bridée à 25 km/h."
+ ],
+ "specs": [
+  [
+   "Moteurs",
+   "2 × 500 W (2 400 W en crête annoncés)"
+  ],
+  [
+   "Vitesse",
+   "25 km/h sur la voie publique"
+  ],
+  [
+   "Batterie",
+   "48 V, 20,8 Ah (15,6 Ah ou 27 Ah selon la version)"
+  ],
+  [
+   "Autonomie annoncée",
+   "60 à 80 km selon la fiche"
+  ],
+  [
+   "Poids",
+   "28,5 à 29 kg (Teverun, Teverun Europe)"
+  ],
+  [
+   "Charge max",
+   "120 kg"
+  ],
+  [
+   "Roues",
+   "10 pouces, 10x3"
+  ],
+  [
+   "Freins",
+   "Disques mécaniques avant et arrière, Ø 140 mm"
+  ],
+  [
+   "Suspension",
+   "Ressorts avant et arrière"
+  ],
+  [
+   "Étanchéité",
+   "IP54"
+  ],
+  [
+   "Chargeur",
+   "48 V (54,6 V en sortie)"
+  ]
+ ],
+ "pros": [
+  "Deux moteurs dans un format compact d'environ 29 kg (Teverun Europe).",
+  "Freins à disque à l'avant et à l'arrière (Teverun).",
+  "Freins à câble simples à régler et à entretenir soi-même."
+ ],
+ "cons": [
+  "Freins mécaniques à câble, moins mordants que les hydrauliques de la Blade Mini Ultra.",
+  "Plusieurs batteries selon l'année (15,6, 20,8 ou 27 Ah) : vérifie la tienne avant de commander un chargeur ou une batterie.",
+  "Autonomie annoncée de 60 à 80 km selon la fiche, sans mesure indépendante publiée.",
+  "Sa vitesse de pointe n'est utilisable que sur terrain privé : en France, la voie publique est limitée à 25 km/h."
+ ],
+ "parts": [
+  {
+   "label": "Disque de frein",
+   "size": "140 mm, 6 trous, entraxe 44 mm",
+   "count": 5,
+   "to": "/piece/disque-de-frein-140mm",
+   "cta": "Disques 140 mm"
+  }
+ ],
+ "care": [
+  "Freins à câble : retends le câble dès que la course du levier s'allonge et change les plaquettes avant d'arriver au métal.",
+  "Pneus 10x3 : contrôle la pression avant chaque sortie, un pneu sous-gonflé use vite la gomme et fatigue la jante.",
+  "Suspensions à ressort : vérifie le serrage des axes de bras, un jeu qui s'installe s'aggrave vite."
+ ],
+ "price": {
+  "text": "Prix affiché par Never Wheel Up : 1 149 à 1 249 € selon la configuration (page mise à jour le 29/07/2025).",
+  "source": "neverwheelup.com"
+ },
+ "faq": [
+  {
+   "q": "Quelle taille de pneu pour la Teverun Blade Mini Pro ?",
+   "a": "Des pneus de 10 pouces en 10x3."
+  },
+  {
+   "q": "Quel disque de frein pour la Teverun Blade Mini Pro ?",
+   "a": "Un disque de 140 mm à 6 trous, entraxe 44 mm, à l'avant comme à l'arrière."
+  },
+  {
+   "q": "Quelles plaquettes pour la Teverun Blade Mini Pro ?",
+   "a": "Ses freins sont mécaniques à câble : compare la forme de ta plaquette avant de commander, elle n'est pas la même que sur un étrier hydraulique."
+  },
+  {
+   "q": "Quel chargeur pour la Teverun Blade Mini Pro ?",
+   "a": "Un chargeur 48 V (54,6 V en sortie). Vérifie ta prise avant de commander."
+  },
+  {
+   "q": "Quelle différence entre la Blade Mini Pro et la Blade Mini Ultra ?",
+   "a": "La Mini Pro est en 48 V avec freins mécaniques. La Mini Ultra passe en 60 V 27 Ah, avec deux moteurs de 1 000 W et des freins hydrauliques."
+  },
+  {
+   "q": "La Teverun Blade Mini Pro est-elle légale en France ?",
+   "a": "Oui sur la voie publique à condition d'être bridée à 25 km/h, comme toute trottinette électrique. Débridée, elle n'est utilisable que sur terrain privé."
+  }
+ ],
+ "sources": [
+  {
+   "label": "Teverun — Blade Mini Pro",
+   "url": "https://teverun.com/fr/blade-mini-pro/"
+  },
+  {
+   "label": "Teverun Europe — Blade Mini Pro",
+   "url": "https://teverun-europe.com/product/blade-mini-pro-yellow/"
+  },
+  {
+   "label": "Teverun Europe — Blade Mini Pro 27 Ah",
+   "url": "https://teverun-europe.com/product/blade-mini-pro-black-2/"
+  },
+  {
+   "label": "Never Wheel Up — Teverun Blade Mini Pro",
+   "url": "https://www.neverwheelup.com/fr/produit/teverun-blade-mini-pro/"
+  },
+  {
+   "label": "Ministère de la Transition écologique — réglementation des trottinettes",
+   "url": "https://www.ecologie.gouv.fr/politiques-publiques/trottinettes-electriques-edpm-reglementation-vigueur"
+  }
+ ]
+}

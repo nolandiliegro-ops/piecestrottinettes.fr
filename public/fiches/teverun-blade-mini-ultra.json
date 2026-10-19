@@ -1,0 +1,150 @@
+{
+ "displayName": "Teverun Blade Mini Ultra",
+ "metaTitle": "Teverun Blade Mini Ultra : fiche technique et pièces",
+ "metaDescription": "Teverun Blade Mini Ultra : bimoteur 60 V 27 Ah (1 620 Wh), pneus 80/65-6 (10x3), disques hydrauliques 140 mm. Fiche, entretien et pièces.",
+ "intro": [
+  "La Teverun Blade Mini Ultra est la version la plus puissante de la Blade Mini. Elle passe en 60 V 27 Ah, soit 1 620 Wh, avec deux moteurs de 1 000 W. Ne la confonds pas avec la Blade Mini Pro, en 48 V et freins mécaniques.",
+  "Freins à disque hydrauliques de 140 mm, suspensions à ressort, pneus 10x3 : Teverun Europe annonce jusqu'à 80 km d'autonomie. Il existe aussi des séries eKFV en 52 V 30 Ah, avec d'autres moteurs. Sur la voie publique en France, elle doit rester bridée à 25 km/h."
+ ],
+ "specs": [
+  [
+   "Moteurs",
+   "2 × 1 000 W (3 360 W en crête annoncés)"
+  ],
+  [
+   "Vitesse",
+   "25 km/h sur la voie publique"
+  ],
+  [
+   "Batterie",
+   "60 V, 27 Ah (1 620 Wh), cellules DMEGC"
+  ],
+  [
+   "Autonomie annoncée",
+   "jusqu'à 80 km (Teverun Europe)"
+  ],
+  [
+   "Poids",
+   "environ 33 kg selon des vendeurs français"
+  ],
+  [
+   "Charge max",
+   "120 kg"
+  ],
+  [
+   "Roues",
+   "10 pouces, 10x3.00-6 (80/65-6)"
+  ],
+  [
+   "Freins",
+   "Disques hydrauliques, Ø 140 mm"
+  ],
+  [
+   "Suspension",
+   "Ressorts avant et arrière"
+  ],
+  [
+   "Chargeur",
+   "60 V (67,2 V en sortie)"
+  ],
+  [
+   "Temps de charge",
+   "environ 5 h annoncées (Fnac)"
+  ]
+ ],
+ "pros": [
+  "Batterie de 1 620 Wh dans un format compact (Teverun Europe).",
+  "Deux moteurs de 1 000 W et freins à disque hydrauliques (Teverun Europe).",
+  "Pneus 10x3 en 80/65-6, une dimension très courante."
+ ],
+ "cons": [
+  "Le poids varie selon les fiches (25 à 33 kg) : fie-toi à la fiche de ton vendeur.",
+  "Suspensions à ressort sans réglage KKE.",
+  "L'étanchéité annoncée n'est pas la même selon les fiches : évite de rouler sous une pluie battante.",
+  "Sa vitesse de pointe n'est utilisable que sur terrain privé : en France, la voie publique est limitée à 25 km/h."
+ ],
+ "parts": [
+  {
+   "label": "Pneu",
+   "size": "80/65-6 (10x3)",
+   "count": 11,
+   "to": "/piece/pneu-tubeless-80-65-6-10x3-cityroad-ewheel",
+   "cta": "Pneus 10x3"
+  },
+  {
+   "label": "Chambre à air",
+   "size": "80/65-6 (10x3), valve droite ou coudée",
+   "count": 3,
+   "to": "/piece/chambre-a-air-80-65-6-10x3-valve-droite-ewheel",
+   "cta": "Chambres à air"
+  },
+  {
+   "label": "Disque de frein",
+   "size": "140 mm, 6 trous, entraxe 44 mm",
+   "count": 5,
+   "to": "/piece/disque-de-frein-140mm",
+   "cta": "Disques 140 mm"
+  }
+ ],
+ "care": [
+  "Pneus 10x3 : contrôle la pression avant chaque sortie, un pneu sous-gonflé pince la chambre à air ou se déjante.",
+  "Freins hydrauliques : surveille l'épaisseur des plaquettes et purge le circuit quand le levier devient mou.",
+  "Une batterie 60 V se ménage : utilise un chargeur 60 V adapté et ne la laisse pas vide plusieurs semaines."
+ ],
+ "price": {
+  "text": "Prix affichés : 1 290 € chez Weebot et Fohzshop, 1 399,99 € chez Darty (relevés le 19/10/2026).",
+  "source": "fohzshop.fr, darty.com"
+ },
+ "faq": [
+  {
+   "q": "Quelle taille de pneu pour la Teverun Blade Mini Ultra ?",
+   "a": "Des pneus de 10 pouces en 10x3.00-6, aussi notés 80/65-6, sur une jante de 6 pouces."
+  },
+  {
+   "q": "Quel disque de frein pour la Teverun Blade Mini Ultra ?",
+   "a": "Un disque de 140 mm à 6 trous, entraxe 44 mm."
+  },
+  {
+   "q": "Quel chargeur pour la Teverun Blade Mini Ultra ?",
+   "a": "Un chargeur 60 V (67,2 V en sortie). Vérifie ta prise avant de commander."
+  },
+  {
+   "q": "Quelles plaquettes pour la Teverun Blade Mini Ultra ?",
+   "a": "Nos fiches ne confirment pas encore le type d'étrier hydraulique : compare la forme de ta plaquette avant de commander."
+  },
+  {
+   "q": "Quelle différence entre la Blade Mini Ultra et la Blade Mini Pro ?",
+   "a": "La Mini Ultra est en 60 V 27 Ah avec deux moteurs de 1 000 W et des freins hydrauliques. La Mini Pro est en 48 V avec deux moteurs de 500 W et des freins mécaniques."
+  },
+  {
+   "q": "La Teverun Blade Mini Ultra est-elle légale en France ?",
+   "a": "Oui sur la voie publique à condition d'être bridée à 25 km/h, comme toute trottinette électrique. Débridée, elle n'est utilisable que sur terrain privé."
+  }
+ ],
+ "sources": [
+  {
+   "label": "Le Dépanneur Tech — Teverun Blade Mini Ultra 2026",
+   "url": "https://ledepanneurtech.com/teverun-blade-mini-ultra-2026"
+  },
+  {
+   "label": "Darty — Teverun Blade Mini Ultra",
+   "url": "https://www.darty.com/nav/achat/sports_loisirs/glisse_urbaine/trottinette_electrique/teverun_blademiniultra.html"
+  },
+  {
+   "label": "FōhzShop — Teverun Blade Mini Ultra 60 V 27 Ah",
+   "url": "https://fohzshop.fr/fr/trottinettes-electriques/teverun/teverun-blade-mini-ultra-60v-27ah"
+  },
+  {
+   "label": "Fnac — Teverun Blade Mini Ultra",
+   "url": "https://www.fnac.com/mp52548363/Teverun-Trottinette-Electrique-Teverun-Blade-Mini-Ultra/w-4"
+  },
+  {
+   "label": "Teverun Europe — Blade Mini Ultra eKFV",
+   "url": "https://teverun-europe.com/product/blade-mini-ultra-ekfv-yellow-2/"
+  },
+  {
+   "label": "Ministère de la Transition écologique — réglementation des trottinettes",
+   "url": "https://www.ecologie.gouv.fr/politiques-publiques/trottinettes-electriques-edpm-reglementation-vigueur"
+  }
+ ]
+}

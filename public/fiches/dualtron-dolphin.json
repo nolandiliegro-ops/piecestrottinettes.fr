@@ -1,0 +1,121 @@
+{
+ "displayName": "Dualtron Dolphin",
+ "metaTitle": "Dualtron Dolphin : fiche technique et pièces",
+ "metaDescription": "Dualtron Dolphin : moteur 450 W, batterie 36 V, pneus 70/50-6.1 de 9 pouces, freins à tambour, IPX5. Versions, entretien et pièces compatibles.",
+ "intro": [
+  "La Dualtron Dolphin est la trottinette urbaine d'entrée de gamme de Minimotors. Elle est proposée en 36 V avec trois batteries, 7,8 Ah, 12 Ah ou 15 Ah, pour un poids qui va de 19,5 à 21 kg selon Dualtron Store.",
+  "Moteur de 450 W nominaux, freins à tambour à l'avant et à l'arrière, suspensions à ressorts et pneus de 9 pouces en 70/50-6.1 : elle vise les trajets quotidiens en ville. Elle est bridée à 25 km/h sur la voie publique."
+ ],
+ "specs": [
+  [
+   "Moteur",
+   "450 W nominaux (600 à 800 W en crête selon les fiches)"
+  ],
+  [
+   "Vitesse",
+   "25 km/h sur la voie publique"
+  ],
+  [
+   "Batterie",
+   "36 V : 7,8, 12 ou 15 Ah"
+  ],
+  [
+   "Autonomie annoncée",
+   "20 à 35 km selon la batterie (Dualtron France), jusqu'à 47 km selon Minimotors France"
+  ],
+  [
+   "Poids",
+   "19,5 à 21 kg selon la batterie"
+  ],
+  [
+   "Charge max",
+   "100 kg"
+  ],
+  [
+   "Roues",
+   "9 pouces, 70/50-6.1"
+  ],
+  [
+   "Freins",
+   "Tambours avant et arrière"
+  ],
+  [
+   "Suspension",
+   "Ressorts avant et arrière"
+  ],
+  [
+   "Étanchéité",
+   "IPX5"
+  ]
+ ],
+ "pros": [
+  "Trois batteries au choix, de 7,8 à 15 Ah (Dualtron Store).",
+  "Étanchéité annoncée IPX5 (Minimotors France).",
+  "Suspensions à ressorts sur les deux roues pour une trottinette d'environ 20 kg."
+ ],
+ "cons": [
+  "Autonomie modeste : 20 à 35 km annoncés selon la batterie par Dualtron France.",
+  "Les fiches des revendeurs ne s'accordent ni sur la puissance de crête ni sur le temps de charge.",
+  "Aucun test de presse indépendant publié à ce jour : les chiffres disponibles sont ceux des vendeurs."
+ ],
+ "parts": [
+  {
+   "label": "Pneu",
+   "size": "70/50-6.1 (9 pouces)",
+   "count": 3,
+   "to": "/piece/pneu-tubeless-70-50-6-1-pantherurban-ewheel",
+   "cta": "Pneus 70/50-6.1"
+  }
+ ],
+ "care": [
+  "Freins à tambour : règle le câble dès que le levier devient long, c'est ton seul frein mécanique.",
+  "Pneus de 9 pouces : contrôle la pression chaque semaine, un petit pneu sous-gonflé s'use vite.",
+  "Suspensions à ressorts : nettoie et graisse les axes des bras après la pluie."
+ ],
+ "price": {
+  "text": "Prix affichés : 549 € chez Dualtron France, de 569 à 729 € selon la batterie chez Dualtron Store (relevés le 10/06/2025).",
+  "source": "dualtron-france.com, dualtron-store.com"
+ },
+ "faq": [
+  {
+   "q": "Quelle taille de pneu pour la Dualtron Dolphin ?",
+   "a": "Des pneus de 9 pouces en 70/50-6.1, sur une jante de 6,1 pouces."
+  },
+  {
+   "q": "La Dualtron Dolphin a-t-elle des plaquettes de frein ?",
+   "a": "Non. Elle freine avec des tambours à l'avant et à l'arrière."
+  },
+  {
+   "q": "Quelle est l'autonomie de la Dualtron Dolphin ?",
+   "a": "Dualtron France annonce 20, 30 et 35 km pour les batteries 7,8, 12 et 15 Ah. Ce sont des valeurs de vendeur, pas des mesures de test."
+  },
+  {
+   "q": "Quelle différence entre les versions de la Dualtron Dolphin ?",
+   "a": "Seule la batterie change : 36 V en 7,8, 12 ou 15 Ah. Plus la batterie est grosse, plus l'autonomie et le poids augmentent (19,5 à 21 kg)."
+  }
+ ],
+ "sources": [
+  {
+   "label": "Minimotors France — Dualtron Dolphin",
+   "url": "https://www.minimotors.fr/trottinette-electrique-dualtron-dolphin"
+  },
+  {
+   "label": "Dualtron France — Dualtron Dolphin",
+   "url": "https://dualtron-france.com/trottinettes-electriques-dualtron/3100-trottinette-electrique-dualtron-dolphin.html"
+  },
+  {
+   "label": "Dualtron Store — Dualtron Dolphin",
+   "url": "https://dualtron-store.com/index.php/produit/dualtron-dolphin/"
+  },
+  {
+   "label": "Darty — Dualtron Dolphin 36 V 12 Ah",
+   "url": "https://www.darty.com/nav/achat/sports_loisirs/glisse_urbaine/trottinette_electrique/minimotors_mmdltdolphin36v12a.html"
+  }
+ ],
+ "video": {
+  "id": "T_88UfCJBUs",
+  "title": "Test Dualtron Dolphin - trottinette électrique",
+  "channel": "Dualtron Store ® officiel",
+  "uploadDate": "2024-08-08"
+ }
+}

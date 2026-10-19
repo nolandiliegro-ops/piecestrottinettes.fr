@@ -1,0 +1,167 @@
+{
+ "displayName": "Dualtron Victor Limited 2025",
+ "metaTitle": "Dualtron Victor Limited 2025 : fiche technique et pièces",
+ "metaDescription": "Dualtron Victor Limited 2025 : bimoteur 60 V, pneus 10x3 (80/65-6), freins hydrauliques, IPX5, prises GX16-3 et LP16-3. Versions, entretien, pièces.",
+ "intro": [
+  "La Dualtron Victor Limited 2025 est la version la plus aboutie de la gamme Victor selon Dualtron Store. Sa principale nouveauté est sa colonne, reprise de la Dualtron Thunder 3, avec l'écran couleur EY4 et des pneus tubeless plus larges aux rainures plus marquées.",
+  "Deux moteurs de 1 300 W nominaux, une batterie 60 V de 28 ou 35 Ah selon Voltee, des freins hydrauliques et des pneus de 10 pouces en 10x3, pour environ 39 kg. Annoncée vers 75 km/h, elle doit rester bridée à 25 km/h sur la voie publique."
+ ],
+ "specs": [
+  [
+   "Moteurs",
+   "2 × 1 300 W nominaux (2 000 W en pointe chacun)"
+  ],
+  [
+   "Vitesse",
+   "25 km/h sur la voie publique"
+  ],
+  [
+   "Batterie",
+   "60 V : 28 ou 35 Ah (Voltee)"
+  ],
+  [
+   "Autonomie annoncée",
+   "80 à 100 km selon la batterie (Voltee)"
+  ],
+  [
+   "Poids",
+   "39,1 kg"
+  ],
+  [
+   "Charge max",
+   "120 kg"
+  ],
+  [
+   "Roues",
+   "10 pouces, 10x3.00-6 (80/65-6) tubeless"
+  ],
+  [
+   "Freins",
+   "Hydrauliques avant et arrière"
+  ],
+  [
+   "Suspension",
+   "Cartouches interchangeables"
+  ],
+  [
+   "Étanchéité",
+   "IPX5"
+  ],
+  [
+   "Prise de charge",
+   "GX16-3 et LP16-3"
+  ],
+  [
+   "Chargeur",
+   "60 V (67,2 V en sortie)"
+  ],
+  [
+   "Temps de charge",
+   "25 h avec le chargeur standard, moins de 5 h avec le chargeur rapide inclus (Voltee)"
+  ]
+ ],
+ "pros": [
+  "Colonne reprise de la Thunder 3 et écran couleur EY4 (Dualtron Store).",
+  "Chargeur rapide inclus : moins de 5 h de charge (Voltee).",
+  "Pneus tubeless larges aux rainures marquées (Dualtron Store)."
+ ],
+ "cons": [
+  "Environ 39 kg : elle se porte difficilement.",
+  "Recharge de 25 h avec un seul chargeur standard (Voltee).",
+  "Les noms de version varient selon les vendeurs (28, 31,5 ou 35 Ah) : vérifie ta batterie avant de te fier à une autonomie.",
+  "Sa vitesse de pointe n'est utilisable que sur terrain privé : en France, la voie publique est limitée à 25 km/h."
+ ],
+ "parts": [
+  {
+   "label": "Pneu",
+   "size": "80/65-6 (10x3)",
+   "count": 11,
+   "to": "/piece/pneu-tubeless-80-65-6-10x3-cityroad-ewheel",
+   "cta": "Pneus 10x3"
+  },
+  {
+   "label": "Chambre à air",
+   "size": "80/65-6 (10x3), valve droite ou coudée",
+   "count": 3,
+   "to": "/piece/chambre-a-air-80-65-6-10x3-valve-droite-ewheel",
+   "cta": "Chambres à air"
+  },
+  {
+   "label": "Plaquettes",
+   "size": "étrier type Sram Avid",
+   "count": 4,
+   "to": "/piece/plaquettes-de-freins-zero-10x-11x-vsett-10-storm-thunder-sram-avid-semi-metallique",
+   "cta": "Plaquettes Sram Avid"
+  },
+  {
+   "label": "Chargeur",
+   "size": "60 V → 67,2 V, prise GX16-3 ou LP16-3",
+   "count": 4,
+   "to": "/piece/chargeur-60v-672v-2a-connecteur-gx16-3p",
+   "cta": "Chargeurs 60 V"
+  }
+ ],
+ "care": [
+  "Freins hydrauliques : surveille l'épaisseur des plaquettes et purge le circuit dès que le levier devient mou.",
+  "Pneus tubeless 10x3 : contrôle la pression chaque semaine, à près de 40 kg un pneu sous-gonflé s'use vite.",
+  "Utilise le chargeur rapide fourni plutôt que le standard si tu roules tous les jours."
+ ],
+ "price": {
+  "text": "Prix affiché chez Voltee : 2 189 € (page mise à jour le 25/06/2025).",
+  "source": "voltee.co"
+ },
+ "faq": [
+  {
+   "q": "Quelle taille de pneu pour la Dualtron Victor Limited 2025 ?",
+   "a": "Des pneus tubeless de 10 pouces en 10x3.00-6, aussi notés 80/65-6, sur une jante de 6 pouces."
+  },
+  {
+   "q": "Quelles plaquettes pour la Dualtron Victor Limited 2025 ?",
+   "a": "Des plaquettes pour étrier hydraulique type Sram Avid. Compare la forme de tes plaquettes d'origine avant de commander."
+  },
+  {
+   "q": "Quel chargeur pour la Dualtron Victor Limited 2025 ?",
+   "a": "Un chargeur 60 V (67,2 V en sortie), avec prise GX16-3 ou LP16-3."
+  },
+  {
+   "q": "Combien de temps pour recharger la Dualtron Victor Limited 2025 ?",
+   "a": "25 h avec le chargeur standard, 12 h 30 avec deux chargeurs et moins de 5 h avec le chargeur rapide inclus, selon Voltee."
+  },
+  {
+   "q": "Quelle différence entre la Victor Limited et la Victor 2025 ?",
+   "a": "La Limited reprend la colonne de la Thunder 3, roule en 10x3 et se décline en batteries de 28 ou 35 Ah. La Victor 2025 standard est en 24 Ah et en pneus 80/50-6.5."
+  },
+  {
+   "q": "La Dualtron Victor Limited 2025 est-elle légale en France ?",
+   "a": "Oui sur la voie publique à condition d'être bridée à 25 km/h, comme toute trottinette électrique. Débridée, elle n'est utilisable que sur terrain privé."
+  }
+ ],
+ "sources": [
+  {
+   "label": "Voltee — Dualtron Victor Limited 2025",
+   "url": "https://voltee.co/products/dualtron-victor-limited-2025"
+  },
+  {
+   "label": "Dualtron Shop — Dualtron Victor Limited",
+   "url": "https://dualtron-shop.com/fr/produit/dualtron-victor-limited/"
+  },
+  {
+   "label": "Max Blinker — Dualtron Victor Limited EY4 2025",
+   "url": "https://www.maxblinker.fr/fr/trottinettes-electriques/dualtron-victor-limited-ey4-2025"
+  },
+  {
+   "label": "Dualtron Store (YouTube) — Dualtron Victor Limited 2025",
+   "url": "https://www.youtube.com/watch?v=mv8KaiWN4Uo"
+  },
+  {
+   "label": "Ministère de la Transition écologique — réglementation des trottinettes",
+   "url": "https://www.ecologie.gouv.fr/politiques-publiques/trottinettes-electriques-edpm-reglementation-vigueur"
+  }
+ ],
+ "video": {
+  "id": "mv8KaiWN4Uo",
+  "title": "Dualtron Victor Limited 2025 - une petite thunder 3 !!!!! trottinette électrique puissante",
+  "channel": "Dualtron Store ® officiel",
+  "uploadDate": "2025-01-18"
+ }
+}

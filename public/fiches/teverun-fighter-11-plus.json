@@ -1,0 +1,145 @@
+{
+ "displayName": "Teverun Fighter 11+",
+ "metaTitle": "Teverun Fighter 11+ : fiche technique et pièces",
+ "metaDescription": "Teverun Fighter 11+ : bimoteur 60 V 37,1 Ah, freins Nutt 4 pistons, disques 160 mm, pneus 90/65-6.5 (11 pouces). Fiche, entretien et pièces.",
+ "intro": [
+  "La Teverun Fighter 11+ est la version longue distance de la Fighter 11 : même gabarit, mais une batterie 60 V de 37,1 Ah (2 226 Wh) et des suspensions hydrauliques réglables. Ne la confonds pas avec la Fighter 11, en 25 ou 26 Ah.",
+  "Deux moteurs de 1 600 W, des freins hydrauliques à quatre pistons et des pneus tubeless de 11 pouces en 90/65-6.5 : Teverun Europe annonce jusqu'à 120 km. Une série 35 Ah existe aussi. Sur la voie publique en France, elle doit rester bridée à 25 km/h."
+ ],
+ "specs": [
+  [
+   "Moteurs",
+   "2 × 1 600 W (5 000 W en crête annoncés)"
+  ],
+  [
+   "Vitesse",
+   "25 km/h sur la voie publique"
+  ],
+  [
+   "Batterie",
+   "60 V, 37,1 Ah (2 226 Wh), cellules Samsung ; série 35 Ah aussi vendue"
+  ],
+  [
+   "Autonomie annoncée",
+   "jusqu'à 120 km"
+  ],
+  [
+   "Poids",
+   "40 à 45 kg selon les sources"
+  ],
+  [
+   "Charge max",
+   "150 kg"
+  ],
+  [
+   "Roues",
+   "11 pouces, 90/65-6.5 tubeless"
+  ],
+  [
+   "Freins",
+   "Hydrauliques 4 pistons (Nutt), disques Ø 160 mm"
+  ],
+  [
+   "Suspension",
+   "Hydraulique réglable avant et arrière"
+  ],
+  [
+   "Chargeur",
+   "60 V (67,2 V en sortie)"
+  ],
+  [
+   "Temps de charge",
+   "8 à 9 h avec un chargeur 2 A, 4,5 h avec deux chargeurs (Electrotraveller)"
+  ]
+ ],
+ "pros": [
+  "Batterie de 2 226 Wh, nettement plus grosse que celle de la Fighter 11 (Teverun Europe).",
+  "Freins hydrauliques à quatre pistons (Teverun Europe).",
+  "Suspensions hydrauliques réglables avant et arrière (Green220)."
+ ],
+ "cons": [
+  "40 à 45 kg selon les sources : elle ne se porte pas.",
+  "Les temps de charge annoncés varient beaucoup selon le chargeur fourni : vérifie le tien.",
+  "Deux séries de batterie (35 et 37,1 Ah) coexistent : vérifie la tienne avant de commander une pièce électrique.",
+  "Sa vitesse de pointe n'est utilisable que sur terrain privé : en France, la voie publique est limitée à 25 km/h."
+ ],
+ "parts": [
+  {
+   "label": "Pneu",
+   "size": "90/65-6.5 (11 pouces)",
+   "count": 11,
+   "to": "/piece/pneu-90-65-6-5-off-road-tubeless",
+   "cta": "Pneus 90/65-6.5"
+  },
+  {
+   "label": "Chambre à air",
+   "size": "90/65-6.5, valve droite ou coudée",
+   "count": 5,
+   "to": "/piece/chambre-a-air-90-65-6-5-valve-coudee-90-ewheel",
+   "cta": "Chambres à air"
+  },
+  {
+   "label": "Plaquettes",
+   "size": "étrier Nutt 4 pistons",
+   "count": 4,
+   "to": "/piece/plaquettes-de-freins-shimano-d03s-nutt-4-pistons-thunder-3-nami-semi-metallique",
+   "cta": "Plaquettes Nutt"
+  },
+  {
+   "label": "Disque de frein",
+   "size": "160 mm, 6 trous, entraxe 44 mm",
+   "count": 7,
+   "to": "/piece/disque-de-frein-160mm",
+   "cta": "Disques 160 mm"
+  }
+ ],
+ "care": [
+  "Pneus tubeless : contrôle la pression chaque semaine, un tubeless sous-gonflé se déjante et crève plus facilement.",
+  "Freins Nutt 4 pistons : surveille l'épaisseur des plaquettes et purge le circuit quand le levier devient mou.",
+  "Suspensions réglables : règle-les selon ton poids et resserre la visserie des bras après les premières centaines de kilomètres."
+ ],
+ "faq": [
+  {
+   "q": "Quelle taille de pneu pour la Teverun Fighter 11+ ?",
+   "a": "Des pneus tubeless de 11 pouces en 90/65-6.5, sur une jante de 6,5 pouces."
+  },
+  {
+   "q": "Quelles plaquettes pour la Teverun Fighter 11+ ?",
+   "a": "Des plaquettes pour étrier hydraulique Nutt à quatre pistons, en semi-métallique, métal fritté ou céramique."
+  },
+  {
+   "q": "Quel disque de frein pour la Teverun Fighter 11+ ?",
+   "a": "Un disque de 160 mm à 6 trous, entraxe 44 mm."
+  },
+  {
+   "q": "Quel chargeur pour la Teverun Fighter 11+ ?",
+   "a": "Un chargeur 60 V (67,2 V en sortie). Vérifie ta prise avant de commander."
+  },
+  {
+   "q": "Quelle différence entre la Teverun Fighter 11+ et la Fighter 11 ?",
+   "a": "La 11+ a une batterie de 35 ou 37,1 Ah contre 25 ou 26 Ah, des suspensions hydrauliques réglables et des freins à quatre pistons."
+  },
+  {
+   "q": "La Teverun Fighter 11+ est-elle légale en France ?",
+   "a": "Oui sur la voie publique à condition d'être bridée à 25 km/h, comme toute trottinette électrique. Débridée, elle n'est utilisable que sur terrain privé."
+  }
+ ],
+ "sources": [
+  {
+   "label": "Electrotraveller — Teverun Fighter 11+",
+   "url": "https://electrotraveller.com/fr/trottinettes-electriques/teverun-fighter-11-plus/?v=08a4415e9d59"
+  },
+  {
+   "label": "Green220 — Teverun Fighter 11+ 60 V 35 Ah",
+   "url": "https://www.green220.com/fr/trottinettes-electriques/463-trottinette-electrique-teverun-fighter-11plus-60-v-35-ah-3701522001434.html"
+  },
+  {
+   "label": "Max Blinker — Teverun Fighter Eleven+ 2026",
+   "url": "https://www.maxblinker.fr/fr/trottinettes-electriques/teverun-fighter-eleven-4-tft-display-2026"
+  },
+  {
+   "label": "Ministère de la Transition écologique — réglementation des trottinettes",
+   "url": "https://www.ecologie.gouv.fr/politiques-publiques/trottinettes-electriques-edpm-reglementation-vigueur"
+  }
+ ]
+}

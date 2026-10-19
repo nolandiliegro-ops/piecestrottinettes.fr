@@ -1,0 +1,170 @@
+{
+ "displayName": "Dualtron Ultra 2",
+ "metaTitle": "Dualtron Ultra 2 : fiche technique et pièces",
+ "metaDescription": "Dualtron Ultra 2 : bimoteur 72 V, pneus 90/65-6.5 de 11 pouces, freins hydrauliques, disques 160 mm, prises GX16-3 et LP16-3. Entretien et pièces.",
+ "intro": [
+  "La Dualtron Ultra 2 est l'évolution 72 V de la Dualtron Ultra : plus puissante, plus nerveuse, avec un marchepied et des LED en plus. Elle existe en plusieurs versions, Ultra 2, Ultra 2 UP et Ultra 2 Upgrade, avec une batterie de 32, 35 ou 40 Ah selon les distributeurs.",
+  "Deux moteurs, jusqu'à 6 640 W en pointe pour la version 35 Ah, des freins hydrauliques à disque de 160 mm, des suspensions avant et arrière et des pneus de 11 pouces en 90/65-6.5. Pour environ 40 kg. Sur la voie publique en France, elle doit rester bridée à 25 km/h."
+ ],
+ "specs": [
+  [
+   "Moteurs",
+   "2 moteurs, 6 640 W en pointe (72 V 35 Ah)"
+  ],
+  [
+   "Vitesse",
+   "25 km/h sur la voie publique"
+  ],
+  [
+   "Batterie",
+   "72 V : 32, 35 ou 40 Ah selon la version"
+  ],
+  [
+   "Autonomie annoncée",
+   "jusqu'à 140 km (32 Ah) à 170 km (40 Ah) selon Dualtron France"
+  ],
+  [
+   "Poids",
+   "40 kg, environ 45,8 kg pour l'Upgrade"
+  ],
+  [
+   "Charge max",
+   "150 kg"
+  ],
+  [
+   "Roues",
+   "11 pouces, 90/65-6.5"
+  ],
+  [
+   "Freins",
+   "Disques hydrauliques 160 mm avant et arrière"
+  ],
+  [
+   "Suspension",
+   "Avant et arrière"
+  ],
+  [
+   "Prise de charge",
+   "GX16-3 et LP16-3"
+  ],
+  [
+   "Chargeur",
+   "72 V (84 V en sortie)"
+  ],
+  [
+   "Temps de charge",
+   "Upgrade 40 Ah : environ 26 h 30 avec chargeur 1,5 A, 8 h avec chargeur 5 A"
+  ]
+ ],
+ "pros": [
+  "Double moteur 72 V, bien plus puissante que la première Ultra (Kramtoo).",
+  "Freins hydrauliques à disque de 160 mm sur les deux roues (Dualtron Store).",
+  "Plusieurs batteries au choix, de 32 à 40 Ah (Dualtron France)."
+ ],
+ "cons": [
+  "40 kg ou plus selon la version : elle ne se porte pas.",
+  "Recharge très longue avec un seul chargeur standard : 23 h annoncées dans le test des Wheelers Sarthois.",
+  "Aucun indice d'étanchéité publié par les distributeurs.",
+  "Sa vitesse de pointe n'est utilisable que sur terrain privé : en France, la voie publique est limitée à 25 km/h."
+ ],
+ "parts": [
+  {
+   "label": "Pneu",
+   "size": "90/65-6.5 (11 pouces)",
+   "count": 11,
+   "to": "/piece/pneu-90-65-6-5-route-tubeless",
+   "cta": "Pneus 90/65-6.5"
+  },
+  {
+   "label": "Chambre à air",
+   "size": "90/65-6.5, valve droite ou coudée",
+   "count": 5,
+   "to": "/piece/chambre-a-air-9065-65-valve-droite",
+   "cta": "Chambres à air"
+  },
+  {
+   "label": "Plaquettes",
+   "size": "étrier type Sram Avid",
+   "count": 4,
+   "to": "/piece/plaquettes-de-freins-zero-10x-11x-vsett-10-storm-thunder-sram-avid-semi-metallique",
+   "cta": "Plaquettes Sram Avid"
+  },
+  {
+   "label": "Disque de frein",
+   "size": "160 mm, 6 trous, entraxe 48 mm",
+   "count": 7,
+   "to": "/piece/disque-de-frein-r6-160mm-entraxe-48mm-3-couleurs-rouge",
+   "cta": "Disques 160 mm"
+  },
+  {
+   "label": "Chargeur",
+   "size": "72 V → 84 V, prise GX16-3 ou LP16-3",
+   "count": 4,
+   "to": "/piece/chargeur-72v-84v-2a-connecteur-lp16-3",
+   "cta": "Chargeurs 72 V"
+  }
+ ],
+ "care": [
+  "Freins hydrauliques : surveille l'épaisseur des plaquettes et purge le circuit dès que le levier devient mou.",
+  "Pneus de 11 pouces : contrôle la pression avant chaque sortie, à 40 kg un pneu sous-gonflé fatigue vite la jante.",
+  "Deux ports de charge : avec deux chargeurs, le temps de charge est divisé par deux."
+ ],
+ "faq": [
+  {
+   "q": "Quelle taille de pneu pour la Dualtron Ultra 2 ?",
+   "a": "Des pneus de 11 pouces en 90/65-6.5, sur une jante de 6,5 pouces."
+  },
+  {
+   "q": "Quel disque de frein pour la Dualtron Ultra 2 ?",
+   "a": "Un disque de 160 mm à 6 trous, entraxe 48 mm, à l'avant comme à l'arrière."
+  },
+  {
+   "q": "Quelles plaquettes pour la Dualtron Ultra 2 ?",
+   "a": "Des plaquettes pour étrier hydraulique type Sram Avid. Compare la forme de tes plaquettes d'origine avant de commander."
+  },
+  {
+   "q": "Quel chargeur pour la Dualtron Ultra 2 ?",
+   "a": "Un chargeur 72 V (84 V en sortie), avec prise GX16-3 ou LP16-3. Un chargeur rapide réduit nettement le temps de charge."
+  },
+  {
+   "q": "Quelle différence entre les versions de la Dualtron Ultra 2 ?",
+   "a": "La batterie surtout : 35 Ah pour l'Ultra 2, 32 ou 40 Ah pour l'Ultra 2 UP, 40 Ah avec écran EY4 pour l'Upgrade, qui pèse environ 45,8 kg."
+  },
+  {
+   "q": "La Dualtron Ultra 2 est-elle légale en France ?",
+   "a": "Oui sur la voie publique à condition d'être bridée à 25 km/h, comme toute trottinette électrique. Débridée, elle n'est utilisable que sur terrain privé."
+  }
+ ],
+ "sources": [
+  {
+   "label": "Dualtron Store — Dualtron Ultra II",
+   "url": "https://dualtron-store.com/index.php/produit/dualtron-ultra-ii/"
+  },
+  {
+   "label": "Dualtron Shop — Dualtron Ultra 2",
+   "url": "https://dualtron-shop.com/fr/produit/dualtron-ultra-2/"
+  },
+  {
+   "label": "Dualtron France — Dualtron Ultra 2 UP 2024",
+   "url": "https://dualtron-france.com/trottinettes-electriques-dualtron/2996-trottinette-electrique-dualtron-ultra-2-up-2024.html"
+  },
+  {
+   "label": "Kramtoo (YouTube) — Dualtron Ultra 2 contre Thunder",
+   "url": "https://www.youtube.com/watch?v=L26HS-hefIk"
+  },
+  {
+   "label": "Wheelers Sarthois (YouTube) — test Dualtron Ultra 2",
+   "url": "https://www.youtube.com/watch?v=dLMbtz_QD4Y"
+  },
+  {
+   "label": "Ministère de la Transition écologique — réglementation des trottinettes",
+   "url": "https://www.ecologie.gouv.fr/politiques-publiques/trottinettes-electriques-edpm-reglementation-vigueur"
+  }
+ ],
+ "video": {
+  "id": "dLMbtz_QD4Y",
+  "title": "[TEST] Dualtron Ultra 2, présentation.",
+  "channel": "Les Wheelers Sarthois",
+  "uploadDate": "2021-03-26"
+ }
+}

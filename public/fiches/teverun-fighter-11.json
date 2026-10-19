@@ -1,0 +1,168 @@
+{
+ "displayName": "Teverun Fighter 11",
+ "metaTitle": "Teverun Fighter 11 : fiche technique et pièces",
+ "metaDescription": "Teverun Fighter 11 : bimoteur 60 V, pneus 90/65-6.5 (11 pouces), disques hydrauliques 160 mm, étrier Zoom, prise LP16-3. Fiche, entretien et pièces.",
+ "intro": [
+  "La Teverun Fighter 11 est la Fighter 11 d'origine, en 60 V 25 ou 26 Ah. Ne la confonds pas avec la Fighter 11+, qui a une batterie plus grosse et des suspensions réglables. Elle était déjà vendue en France en 2024.",
+  "Deux moteurs de 1 600 W, des freins à disque hydrauliques avec étrier Zoom, des suspensions à ressort et des pneus tubeless de 11 pouces en 90/65-6.5 : Teverun annonce jusqu'à 80 km d'autonomie. Sur la voie publique en France, elle doit rester bridée à 25 km/h."
+ ],
+ "specs": [
+  [
+   "Moteurs",
+   "2 × 1 600 W (jusqu'à 5 000 W en crête annoncés)"
+  ],
+  [
+   "Vitesse",
+   "25 km/h sur la voie publique"
+  ],
+  [
+   "Batterie",
+   "60 V, 25 ou 26 Ah selon la fiche"
+  ],
+  [
+   "Autonomie annoncée",
+   "jusqu'à 80 km"
+  ],
+  [
+   "Poids",
+   "33 à 45 kg selon les fiches"
+  ],
+  [
+   "Charge max",
+   "130 kg"
+  ],
+  [
+   "Roues",
+   "11 pouces, 90/65-6.5 tubeless"
+  ],
+  [
+   "Freins",
+   "Disques hydrauliques, Ø 160 mm, étrier Zoom"
+  ],
+  [
+   "Suspension",
+   "Ressorts avant et arrière"
+  ],
+  [
+   "Étanchéité",
+   "IPX5 ou IPX6 selon les fiches"
+  ],
+  [
+   "Prise de charge",
+   "LP16-3"
+  ],
+  [
+   "Chargeur",
+   "60 V (67,2 V en sortie)"
+  ],
+  [
+   "Temps de charge",
+   "10 h (Cdiscount, FixWheel)"
+  ]
+ ],
+ "pros": [
+  "Deux moteurs de 1 600 W sur une batterie 60 V (Teverun Europe).",
+  "Freins à disque hydrauliques Zoom (FixWheel).",
+  "Pneus tubeless de 11 pouces en 90/65-6.5, une dimension très courante."
+ ],
+ "cons": [
+  "Les fiches ne s'accordent pas sur le poids (33 à 45 kg) ni sur l'étanchéité : vérifie la tienne.",
+  "Recharge longue : 10 h annoncées avec le chargeur fourni (Cdiscount).",
+  "Suspensions à ressort non réglables, les réglables sont réservées à la Fighter 11+.",
+  "Sa vitesse de pointe n'est utilisable que sur terrain privé : en France, la voie publique est limitée à 25 km/h."
+ ],
+ "parts": [
+  {
+   "label": "Pneu",
+   "size": "90/65-6.5 (11 pouces)",
+   "count": 11,
+   "to": "/piece/pneu-90-65-6-5-off-road-tubeless",
+   "cta": "Pneus 90/65-6.5"
+  },
+  {
+   "label": "Chambre à air",
+   "size": "90/65-6.5, valve droite ou coudée",
+   "count": 5,
+   "to": "/piece/chambre-a-air-90-65-6-5-valve-coudee-90-ewheel",
+   "cta": "Chambres à air"
+  },
+  {
+   "label": "Plaquettes",
+   "size": "étrier Zoom",
+   "count": 5,
+   "to": "/piece/plaquettes-de-frein-zoom-semi-metallique",
+   "cta": "Plaquettes Zoom"
+  },
+  {
+   "label": "Disque de frein",
+   "size": "160 mm, 6 trous, entraxe 44 mm",
+   "count": 7,
+   "to": "/piece/disque-de-frein-160mm",
+   "cta": "Disques 160 mm"
+  },
+  {
+   "label": "Chargeur",
+   "size": "60 V → 67,2 V, prise LP16-3",
+   "count": 2,
+   "to": "/piece/pack-chargeur-60v-672v-2a-connecteur-lp16-3",
+   "cta": "Chargeurs 60 V"
+  }
+ ],
+ "care": [
+  "Pneus tubeless : contrôle la pression chaque semaine, un tubeless sous-gonflé se déjante et crève plus facilement.",
+  "Freins Zoom hydrauliques : surveille l'épaisseur des plaquettes et purge le circuit quand le levier devient mou.",
+  "Contrôle régulièrement le serrage de la colonne de direction et des bras de suspension, ils travaillent beaucoup sur une bimoteur."
+ ],
+ "price": {
+  "text": "Prix constaté chez Cdiscount : 2 090 € (relevé le 27/11/2025).",
+  "source": "cdiscount.com"
+ },
+ "faq": [
+  {
+   "q": "Quelle taille de pneu pour la Teverun Fighter 11 ?",
+   "a": "Des pneus tubeless de 11 pouces en 90/65-6.5, sur une jante de 6,5 pouces."
+  },
+  {
+   "q": "Quel disque de frein pour la Teverun Fighter 11 ?",
+   "a": "Un disque de 160 mm à 6 trous, entraxe 44 mm."
+  },
+  {
+   "q": "Quelles plaquettes pour la Teverun Fighter 11 ?",
+   "a": "Des plaquettes pour étrier hydraulique Zoom, en semi-métallique, métal fritté ou céramique."
+  },
+  {
+   "q": "Quel chargeur pour la Teverun Fighter 11 ?",
+   "a": "Un chargeur 60 V (67,2 V en sortie) avec prise LP16-3."
+  },
+  {
+   "q": "Quelle différence entre la Teverun Fighter 11 et la Fighter 11+ ?",
+   "a": "La Fighter 11 a une batterie 60 V de 25 ou 26 Ah et des suspensions à ressort. La Fighter 11+ a une batterie plus grosse et des suspensions hydrauliques réglables."
+  },
+  {
+   "q": "La Teverun Fighter 11 est-elle légale en France ?",
+   "a": "Oui sur la voie publique à condition d'être bridée à 25 km/h, comme toute trottinette électrique. Débridée, elle n'est utilisable que sur terrain privé."
+  }
+ ],
+ "sources": [
+  {
+   "label": "Teverun Europe — Fighter Eleven",
+   "url": "https://teverun-europe.com/product/fighter-eleven-2/"
+  },
+  {
+   "label": "FixWheel — Teverun Fighter 11",
+   "url": "https://fixwheel.fr/en/products/trottinette-electrique-teverun-fighter-11"
+  },
+  {
+   "label": "Cdiscount — Teverun Fighter 11",
+   "url": "https://www.cdiscount.com/le-sport/mobilite-urbaine/trottinette-lectrique-teverun/f-1214801-aacxc22278.html"
+  },
+  {
+   "label": "Never Wheel Up — Teverun Fighter 11",
+   "url": "https://www.neverwheelup.com/fr/produit/teverun-fighter-11/"
+  },
+  {
+   "label": "Ministère de la Transition écologique — réglementation des trottinettes",
+   "url": "https://www.ecologie.gouv.fr/politiques-publiques/trottinettes-electriques-edpm-reglementation-vigueur"
+  }
+ ]
+}

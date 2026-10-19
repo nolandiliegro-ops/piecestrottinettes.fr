@@ -1,0 +1,157 @@
+{
+ "displayName": "Teverun Fighter Supreme 7260R",
+ "metaTitle": "Teverun Supreme 7260R : fiche technique, avis et pièces",
+ "metaDescription": "Teverun Fighter Supreme 7260R : 72 V 60 Ah (4 320 Wh), 73 km mesurés, pneus 125/60-7 (13 pouces), disques 180 mm. Avis, entretien et pièces.",
+ "intro": [
+  "La Teverun Fighter Supreme 7260R est la Fighter Supreme à batterie 72 V 60 Ah, soit 4 320 Wh, et roues de 13 pouces. Ne la confonds pas avec la Fighter 7260R, ni avec la Fighter Supreme Ultra, qui roule en 11 pouces.",
+  "Deux moteurs de 2 500 W, 15 000 W en pointe annoncés, des freins hydrauliques à quatre pistons sur disques de 180 mm, des suspensions KKE réglables et un amortisseur de direction. Electric Scooter Guide a mesuré 73 km à pleine puissance. Sur la voie publique en France, elle doit rester bridée à 25 km/h."
+ ],
+ "specs": [
+  [
+   "Moteurs",
+   "2 × 2 500 W (15 000 W en pointe annoncés)"
+  ],
+  [
+   "Vitesse",
+   "25 km/h sur la voie publique"
+  ],
+  [
+   "Batterie",
+   "72 V, 60 Ah (4 320 Wh)"
+  ],
+  [
+   "Autonomie",
+   "73 km mesurés à pleine puissance par Electric Scooter Guide (jusqu'à 200 km annoncés)"
+  ],
+  [
+   "Poids",
+   "68 kg (Teverun Europe)"
+  ],
+  [
+   "Charge max",
+   "150 kg"
+  ],
+  [
+   "Roues",
+   "13 pouces, 125/60-7 tubeless"
+  ],
+  [
+   "Freins",
+   "Hydrauliques 4 pistons, disques Ø 180 mm"
+  ],
+  [
+   "Suspension",
+   "Hydraulique réglable KKE avant et arrière, amortisseur de direction"
+  ],
+  [
+   "Étanchéité",
+   "IPX5 (IPX6 selon Teverun Europe Shop)"
+  ],
+  [
+   "Chargeur",
+   "72 V (84 V en sortie)"
+  ],
+  [
+   "Temps de charge",
+   "12 h avec un chargeur (Teverun Europe Shop)"
+  ]
+ ],
+ "pros": [
+  "Stabilité à vitesse soutenue grâce aux amortisseurs de direction (Electric Scooter Guide).",
+  "Freinage maîtrisé avec des freins hydrauliques à quatre pistons (Electric Scooter Guide).",
+  "Pneus de 13 pouces et confort jugé satisfaisant (Rider Guide)."
+ ],
+ "cons": [
+  "73 km mesurés à pleine puissance, loin des 200 km annoncés (Electric Scooter Guide).",
+  "68 kg selon Teverun Europe : elle ne se porte pas.",
+  "Recharge longue : 12 h avec un seul chargeur (Teverun Europe Shop).",
+  "Sa vitesse de pointe n'est utilisable que sur terrain privé : en France, la voie publique est limitée à 25 km/h."
+ ],
+ "parts": [
+  {
+   "label": "Pneu",
+   "size": "125/60-7 (13 pouces) tubeless",
+   "count": 1,
+   "to": "/piece/pneu-tubeless-125-60-7-cst",
+   "cta": "Pneus 125/60-7"
+  },
+  {
+   "label": "Disque de frein",
+   "size": "180 mm, 6 trous, entraxe 44 mm",
+   "count": 3,
+   "to": "/piece/disque-de-frein-180mm",
+   "cta": "Disques 180 mm"
+  }
+ ],
+ "care": [
+  "À près de 70 kg, contrôle la pression des pneus tubeless avant chaque sortie : un pneu sous-gonflé se déjante et use vite la gomme.",
+  "Freins 4 pistons : surveille l'épaisseur des plaquettes et purge le circuit quand le levier devient mou.",
+  "Suspensions KKE et amortisseur de direction : règle-les selon ton poids et contrôle qu'ils ne suintent pas."
+ ],
+ "price": {
+  "text": "Prix affiché par Teverun Europe : 4 199 € (relevé le 19/10/2026).",
+  "source": "teverun-europe.com"
+ },
+ "faq": [
+  {
+   "q": "Quelle taille de pneu pour la Teverun Fighter Supreme 7260R ?",
+   "a": "Des pneus tubeless de 13 pouces en 125/60-7, sur une jante de 7 pouces."
+  },
+  {
+   "q": "Quel disque de frein pour la Teverun Fighter Supreme 7260R ?",
+   "a": "Un disque de 180 mm à 6 trous, entraxe 44 mm."
+  },
+  {
+   "q": "Quelles plaquettes pour la Teverun Fighter Supreme 7260R ?",
+   "a": "Ses freins sont des hydrauliques à quatre pistons, mais nos fiches ne confirment pas encore la marque de l'étrier : compare la forme de ta plaquette avant de commander."
+  },
+  {
+   "q": "Quelle est l'autonomie réelle de la Teverun Fighter Supreme 7260R ?",
+   "a": "Electric Scooter Guide a mesuré 73 km à pleine puissance avec un pilote d'environ 107 kg. En roulant plus doucement, tu iras plus loin, mais pas jusqu'aux 200 km annoncés."
+  },
+  {
+   "q": "Quelle différence entre la Supreme 7260R et la Supreme Ultra ?",
+   "a": "Même batterie 72 V 60 Ah. La Supreme 7260R roule en 13 pouces et est annoncée jusqu'à 15 000 W en pointe ; la Supreme Ultra roule en 11 pouces et est annoncée à 8 000 W (Teverun Europe)."
+  },
+  {
+   "q": "La Teverun Fighter Supreme 7260R est-elle légale en France ?",
+   "a": "Oui sur la voie publique à condition d'être bridée à 25 km/h, comme toute trottinette électrique. Débridée, elle n'est utilisable que sur terrain privé."
+  }
+ ],
+ "sources": [
+  {
+   "label": "Teverun Europe — Fighter Supreme 7260R",
+   "url": "https://teverun-europe.com/product/supreme-7260r/"
+  },
+  {
+   "label": "Teverun — Fighter Supreme 7260R",
+   "url": "https://teverun.com/product/fighter-supreme-7260r/"
+  },
+  {
+   "label": "Teverun Europe Shop — Fighter Supreme 7260R",
+   "url": "https://teverunshop.com/products/fighter-supreme-7260r"
+  },
+  {
+   "label": "Electric Scooter Guide — test Teverun Fighter Supreme 7260R",
+   "url": "https://electricscooterguide.com/teverun-fighter-supreme-7260r-review/"
+  },
+  {
+   "label": "Rider Guide — test Teverun Fighter Supreme 7260R",
+   "url": "https://riderguide.com/reviews/teverun-fighter-supreme-7260r-review/"
+  },
+  {
+   "label": "Teverun Europe — comparatif Fighter Supreme",
+   "url": "https://teverun-europe.com/fighter-supreme/"
+  },
+  {
+   "label": "Ministère de la Transition écologique — réglementation des trottinettes",
+   "url": "https://www.ecologie.gouv.fr/politiques-publiques/trottinettes-electriques-edpm-reglementation-vigueur"
+  }
+ ],
+ "video": {
+  "id": "rW1-tWfUkD4",
+  "title": "TEVERUN FIGHTER SUPREME 7260R : TROTTINETTE ELECTRIQUE LA PLUS RAPIDE DU MONDE ! - 2024",
+  "channel": "Weebot Paris",
+  "uploadDate": "2024-02-01"
+ }
+}

@@ -1,0 +1,130 @@
+{
+ "displayName": "Dualtron Togo Max",
+ "metaTitle": "Dualtron Togo Max : fiche technique et pièces",
+ "metaDescription": "Dualtron Togo Max : 60 V 16 Ah, moteur 900 W, roues de 10 pouces, freins à disque, IPX5, 25 kg. Points forts, limites, entretien et FAQ.",
+ "intro": [
+  "La Dualtron Togo Max est la version 60 V de la gamme Togo de Minimotors. Elle reçoit un moteur arrière de 900 W nominaux, 1 200 W en crête, et une batterie de 15,9 à 16 Ah selon les distributeurs, pour 60 km d'autonomie annoncée.",
+  "Freins à disque à l'avant et à l'arrière, suspensions à ressorts réglables, roues de 10 pouces et étanchéité IPX5, pour 25 kg. Certaines fiches annoncent jusqu'à 52 km/h hors voie publique : sur la route en France, elle reste bridée à 25 km/h."
+ ],
+ "specs": [
+  [
+   "Moteur",
+   "900 W nominaux, 1 200 W en crête"
+  ],
+  [
+   "Vitesse",
+   "25 km/h sur la voie publique"
+  ],
+  [
+   "Batterie",
+   "60 V, 15,9 à 16 Ah"
+  ],
+  [
+   "Autonomie",
+   "jusqu'à 60 km annoncés, environ 36 à 42 km estimés par FixWheel"
+  ],
+  [
+   "Poids",
+   "25 kg"
+  ],
+  [
+   "Charge max",
+   "100 kg"
+  ],
+  [
+   "Roues",
+   "10 pouces, avant tubeless anti-crevaison, arrière à chambre à air"
+  ],
+  [
+   "Freins",
+   "Disques avant et arrière"
+  ],
+  [
+   "Suspension",
+   "Ressorts avant et arrière réglables"
+  ],
+  [
+   "Étanchéité",
+   "IPX5"
+  ],
+  [
+   "Temps de charge",
+   "environ 8 h (Pixmania)"
+  ]
+ ],
+ "pros": [
+  "Freins à disque sur les deux roues, là où les autres Togo ont des tambours (Le Ranch).",
+  "Batterie 60 V et moteur de 900 W nominaux (Darty, Urban Moov).",
+  "Guidon pliable et lettres de colonne lumineuses par rapport à la Togo Limited (Dualtron Store)."
+ ],
+ "cons": [
+  "Autonomie réelle estimée à 36 à 42 km par FixWheel, loin des 60 km annoncés.",
+  "Monomoteur : moins d'accélération qu'une bimoteur de même tension.",
+  "Aucun test de presse indépendant publié à ce jour.",
+  "Sa vitesse de pointe n'est utilisable que sur terrain privé : en France, la voie publique est limitée à 25 km/h."
+ ],
+ "parts": [],
+ "care": [
+  "Freins à disque : surveille l'épaisseur des plaquettes et garde les disques propres, sans graisse.",
+  "Roue arrière à chambre à air : contrôle la pression chaque semaine pour éviter le pincement.",
+  "Ressorts réglables : règle-les selon ton poids et vérifie le jeu des bras régulièrement."
+ ],
+ "faq": [
+  {
+   "q": "Quelle taille de pneu pour la Dualtron Togo Max ?",
+   "a": "Des roues de 10 pouces : pneu tubeless anti-crevaison à l'avant, pneu à chambre à air à l'arrière."
+  },
+  {
+   "q": "La Dualtron Togo Max a-t-elle des freins à disque ?",
+   "a": "Oui, à l'avant et à l'arrière. Compare la forme de ta plaquette avant d'en commander de nouvelles."
+  },
+  {
+   "q": "Quelle est l'autonomie réelle de la Dualtron Togo Max ?",
+   "a": "Les fiches annoncent jusqu'à 60 km. FixWheel estime l'autonomie réelle à 36 à 42 km selon le poids, le relief et la température."
+  },
+  {
+   "q": "Quelle différence entre la Togo Max et la Togo Limited ?",
+   "a": "Selon Dualtron Store, la Max a un guidon pliable, des lettres de colonne lumineuses et une batterie 60 V de 15,9 Ah au lieu de 15 Ah."
+  },
+  {
+   "q": "La Dualtron Togo Max est-elle légale en France ?",
+   "a": "Oui sur la voie publique à condition d'être bridée à 25 km/h, comme toute trottinette électrique. Débridée, elle n'est utilisable que sur terrain privé."
+  }
+ ],
+ "sources": [
+  {
+   "label": "Le Ranch — Dualtron Togo Max 60 V 16 Ah",
+   "url": "https://www.le-ranch.fr/product-page/dualtron-togo-max-60v16ah-trottinette-%C3%A9lectrique"
+  },
+  {
+   "label": "Urban Moov — Dualtron Togo Max 60 V 16 Ah",
+   "url": "https://www.urbanmoov.fr/boutique/Dualtron-Togo-Max-60V-16AH-p793670866"
+  },
+  {
+   "label": "Darty — Dualtron Togo Max 60 V 16 Ah",
+   "url": "https://www.darty.com/nav/achat/sports_loisirs/glisse_urbaine/trottinette_electrique/minimotors_mmtogomax60v16a.html"
+  },
+  {
+   "label": "Pixmania — Dualtron Togo Max 900 W 60 V 16 Ah",
+   "url": "https://www.pixmania.com/fr/fr/trottinette-electrique-minimotors-dualtron-togo-max-900w-60v-16ah-noir-581045.html"
+  },
+  {
+   "label": "FixWheel — Dualtron Togo Max neuve ou reconditionnée",
+   "url": "https://fixwheel.fr/blogs/infos/dualtron-togo-max-vs-reconditionnee"
+  },
+  {
+   "label": "Dualtron Store (YouTube) — réglage frein Togo Limited et différences avec la Togo Max",
+   "url": "https://www.youtube.com/watch?v=Gj-UYdu0yow"
+  },
+  {
+   "label": "Ministère de la Transition écologique — réglementation des trottinettes",
+   "url": "https://www.ecologie.gouv.fr/politiques-publiques/trottinettes-electriques-edpm-reglementation-vigueur"
+  }
+ ],
+ "video": {
+  "id": "bWQ4afoMIzQ",
+  "title": "NOUVELLE TROTTINETTE ÉLECTRIQUE DUALTRON TOGO MAX ET TOGO PRO DÉCOUVREZ LES TOUTES CHEZ FASTRIDE",
+  "channel": "Fastride",
+  "uploadDate": "2025-11-19"
+ }
+}

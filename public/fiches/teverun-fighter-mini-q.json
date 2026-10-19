@@ -1,0 +1,143 @@
+{
+ "displayName": "Teverun Fighter Mini Q",
+ "metaTitle": "Teverun Fighter Mini Q : fiche technique et pièces",
+ "metaDescription": "Teverun Fighter Mini Q : bimoteur 52 V 13 Ah, pneus 8,5x3, disques 140 mm, prise LP16-3, 25 kg. Fiche technique, entretien et pièces compatibles.",
+ "intro": [
+  "La Teverun Fighter Mini Q est la plus petite Fighter : deux moteurs de 500 W, une batterie 52 V 13 Ah et des roues de 8,5 pouces. Ne la confonds pas avec la Fighter Mini Q Pro, qui passe à deux moteurs de 1 000 W et 15 Ah.",
+  "Freins à disque avant et arrière, suspensions à ressort, pneus 8,5x3 en version route ou tout-terrain : Teverun France annonce jusqu'à 40 km pour 25 kg. Un distributeur indique environ 30 km en usage réel. Sur la voie publique en France, elle doit rester bridée à 25 km/h."
+ ],
+ "specs": [
+  [
+   "Moteurs",
+   "2 × 500 W (2 597 W en pointe annoncés)"
+  ],
+  [
+   "Vitesse",
+   "25 km/h sur la voie publique"
+  ],
+  [
+   "Batterie",
+   "52 V, 13 Ah (676 Wh)"
+  ],
+  [
+   "Autonomie annoncée",
+   "jusqu'à 40 km (environ 30 km en usage réel selon Gyroroue Shop)"
+  ],
+  [
+   "Poids",
+   "25 kg (Teverun France)"
+  ],
+  [
+   "Charge max",
+   "120 kg"
+  ],
+  [
+   "Roues",
+   "8,5 pouces, 8,5x3"
+  ],
+  [
+   "Freins",
+   "Disques avant et arrière, Ø 140 mm"
+  ],
+  [
+   "Suspension",
+   "Ressorts avant et arrière"
+  ],
+  [
+   "Étanchéité",
+   "IPX5 (Gyroroue Shop)"
+  ],
+  [
+   "Prise de charge",
+   "LP16-3"
+  ],
+  [
+   "Chargeur",
+   "52 V (58,8 V en sortie)"
+  ],
+  [
+   "Temps de charge",
+   "6 à 7 h selon les fiches"
+  ]
+ ],
+ "pros": [
+  "Deux moteurs dans un format léger de 25 kg (Teverun France).",
+  "Freins à disque et suspensions à l'avant comme à l'arrière (Teverun France).",
+  "Pneus 8,5x3 disponibles en version route ou tout-terrain (Teverun France)."
+ ],
+ "cons": [
+  "Autonomie modeste : environ 30 km en usage réel selon un distributeur (Gyroroue Shop).",
+  "Petites roues de 8,5 pouces, moins à l'aise que des 10 pouces sur route abîmée.",
+  "Aucun test de presse français publié sur ce modèle précis.",
+  "Sa vitesse de pointe n'est utilisable que sur terrain privé : en France, la voie publique est limitée à 25 km/h."
+ ],
+ "parts": [
+  {
+   "label": "Disque de frein",
+   "size": "140 mm, 6 trous, entraxe 44 mm",
+   "count": 5,
+   "to": "/piece/disque-de-frein-140mm",
+   "cta": "Disques 140 mm"
+  },
+  {
+   "label": "Chargeur",
+   "size": "52 V → 58,8 V, prise LP16-3",
+   "count": 2,
+   "to": "/piece/pack-chargeur-52v-588v-2a-connecteur-lp16-3",
+   "cta": "Chargeurs 52 V"
+  }
+ ],
+ "care": [
+  "Pneus 8,5x3 : contrôle la pression chaque semaine, une petite roue sous-gonflée crève et se déforme plus vite.",
+  "Surveille l'épaisseur des plaquettes et l'état des disques de 140 mm, surtout si tu freines fort en descente.",
+  "Recharge avec un chargeur 52 V adapté et évite de laisser la batterie à plat plusieurs semaines."
+ ],
+ "faq": [
+  {
+   "q": "Quelle taille de pneu pour la Teverun Fighter Mini Q ?",
+   "a": "Des pneus de 8,5 pouces en 8,5x3, en version route ou tout-terrain."
+  },
+  {
+   "q": "Quel disque de frein pour la Teverun Fighter Mini Q ?",
+   "a": "Un disque de 140 mm à 6 trous, entraxe 44 mm."
+  },
+  {
+   "q": "Quelles plaquettes pour la Teverun Fighter Mini Q ?",
+   "a": "Nos fiches ne confirment pas encore le type d'étrier : compare la forme de ta plaquette avant de commander."
+  },
+  {
+   "q": "Quel chargeur pour la Teverun Fighter Mini Q ?",
+   "a": "Un chargeur 52 V (58,8 V en sortie) avec prise LP16-3."
+  },
+  {
+   "q": "Quelle différence entre la Fighter Mini Q et la Mini Q Pro ?",
+   "a": "La Mini Q a deux moteurs de 500 W et une batterie 52 V 13 Ah. La Mini Q Pro passe à deux moteurs de 1 000 W et 52 V 15 Ah, pour jusqu'à 70 km annoncés."
+  },
+  {
+   "q": "La Teverun Fighter Mini Q est-elle légale en France ?",
+   "a": "Oui sur la voie publique à condition d'être bridée à 25 km/h, comme toute trottinette électrique. Débridée, elle n'est utilisable que sur terrain privé."
+  }
+ ],
+ "sources": [
+  {
+   "label": "Teverun France — Fighter Mini Q",
+   "url": "https://www.teverun.fr/teverun-fighter-q-2/"
+  },
+  {
+   "label": "Gyroroue Shop — Teverun Fighter Mini Q",
+   "url": "https://www.gyroroue-shop.fr/boutique/trottinette-electrique/teverun/teverun-fighter-mini-q"
+  },
+  {
+   "label": "Fnac — Teverun Fighter Mini Q",
+   "url": "https://www.fnac.com/Trottinette-electrique-Minimotors-Teverun-Fighter-Mini-Q-1000-W-Noir/a21665522/w-4"
+  },
+  {
+   "label": "Teverun France — Fighter Mini Q Pro",
+   "url": "https://www.teverun.fr/teverun-fighter-q-pro/"
+  },
+  {
+   "label": "Ministère de la Transition écologique — réglementation des trottinettes",
+   "url": "https://www.ecologie.gouv.fr/politiques-publiques/trottinettes-electriques-edpm-reglementation-vigueur"
+  }
+ ]
+}

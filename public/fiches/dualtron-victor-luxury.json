@@ -1,0 +1,171 @@
+{
+ "displayName": "Dualtron Victor Luxury",
+ "metaTitle": "Dualtron Victor Luxury : fiche technique, avis et pièces",
+ "metaDescription": "Dualtron Victor Luxury : bimoteur 60 V 4 000 W, pneus 10x3 (80/65-6), freins hydrauliques Zoom, disques 140 mm, 68 km mesurés. Avis et pièces.",
+ "intro": [
+  "La Dualtron Victor Luxury se place au-dessus de la Victor dans la gamme Minimotors. Elle existe en 60 V 24 Ah ou 30 Ah, cellules LG pour la 30 Ah. Le Labo Fnac a mesuré 68 km d'autonomie sur la version 30 Ah.",
+  "Deux moteurs pour 4 000 W en pointe, des freins hydrauliques Zoom à disque de 140 mm, des suspensions avant et arrière et des pneus de 10 pouces en 10x3. Le mode single ou dual moteur aide à gérer l'autonomie. Sur la voie publique, elle reste bridée à 25 km/h."
+ ],
+ "specs": [
+  [
+   "Moteurs",
+   "2 moteurs, 4 000 W en pointe"
+  ],
+  [
+   "Vitesse",
+   "25 km/h sur la voie publique (24,7 km/h mesurés par le Labo Fnac)"
+  ],
+  [
+   "Batterie",
+   "60 V : 24 Ah ou 30 Ah (cellules LG)"
+  ],
+  [
+   "Autonomie",
+   "68 km mesurés par le Labo Fnac (30 Ah), jusqu'à 100 km annoncés"
+  ],
+  [
+   "Poids",
+   "34,8 kg mesurés par le Labo Fnac (30 Ah)"
+  ],
+  [
+   "Charge max",
+   "120 kg"
+  ],
+  [
+   "Roues",
+   "10 pouces, 10x3 (80/65-6)"
+  ],
+  [
+   "Freins",
+   "Disques hydrauliques Zoom 140 mm avant et arrière"
+  ],
+  [
+   "Suspension",
+   "Avant et arrière, réglable"
+  ],
+  [
+   "Étanchéité",
+   "IPX4 selon la Fnac (30 Ah)"
+  ],
+  [
+   "Temps de charge",
+   "18 h 20 mesurées par le Labo Fnac (30 Ah)"
+  ]
+ ],
+ "pros": [
+  "Puissance et couple qui avalent les côtes sans ralentir (L'Éclaireur Fnac).",
+  "68 km mesurés sur une charge en 30 Ah (L'Éclaireur Fnac).",
+  "Mode single ou dual moteur pour adapter la puissance et l'autonomie (Dualtron Store by Voltee)."
+ ],
+ "cons": [
+  "Recharge très longue : 18 h 20 mesurées par le Labo Fnac.",
+  "Lourde : 34,8 kg sur la balance du Labo Fnac.",
+  "Les fiches ne s'accordent pas sur l'étanchéité : IPX4 chez la Fnac, IPX5 dans d'autres fiches. Évite les grosses flaques.",
+  "Sa vitesse de pointe n'est utilisable que sur terrain privé : en France, la voie publique est limitée à 25 km/h."
+ ],
+ "parts": [
+  {
+   "label": "Pneu",
+   "size": "80/65-6 (10x3)",
+   "count": 11,
+   "to": "/piece/pneu-tubeless-80-65-6-10x3-cityroad-ewheel",
+   "cta": "Pneus 10x3"
+  },
+  {
+   "label": "Chambre à air",
+   "size": "80/65-6 (10x3), valve droite ou coudée",
+   "count": 3,
+   "to": "/piece/chambre-a-air-80-65-6-10x3-valve-droite-ewheel",
+   "cta": "Chambres à air"
+  },
+  {
+   "label": "Plaquettes",
+   "size": "étrier Zoom",
+   "count": 5,
+   "to": "/piece/plaquettes-de-frein-zoom-semi-metallique",
+   "cta": "Plaquettes Zoom"
+  },
+  {
+   "label": "Disque de frein",
+   "size": "140 mm, 6 trous, entraxe 44 mm",
+   "count": 3,
+   "to": "/piece/disque-de-frein-r6-140mm-entraxe-44mm-3-couleurs-bleu",
+   "cta": "Disques 140 mm"
+  }
+ ],
+ "care": [
+  "Freins hydrauliques Zoom : surveille l'épaisseur des plaquettes et purge le circuit dès que le levier devient mou.",
+  "Pneus 10x3 : contrôle la pression avant chaque longue sortie, un pneu sous-gonflé pince la chambre à air.",
+  "Recharge de plus de 18 h : branche-la tôt et ne la laisse pas vide plusieurs semaines."
+ ],
+ "price": {
+  "text": "Prix annoncés à la présentation chez Dualtron Store (mars 2022) : 2 390 € en 24 Ah, 2 690 € en 30 Ah.",
+  "source": "Dualtron Store (vidéo de présentation)"
+ },
+ "faq": [
+  {
+   "q": "Quelle taille de pneu pour la Dualtron Victor Luxury ?",
+   "a": "Des pneus de 10 pouces en 10x3, aussi notés 80/65-6, sur une jante de 6 pouces."
+  },
+  {
+   "q": "Quel disque de frein pour la Dualtron Victor Luxury ?",
+   "a": "Un disque de 140 mm à 6 trous, entraxe 44 mm."
+  },
+  {
+   "q": "Quelles plaquettes pour la Dualtron Victor Luxury ?",
+   "a": "Des plaquettes pour étrier hydraulique Zoom, en semi-métallique, métal fritté ou céramique."
+  },
+  {
+   "q": "Quelle est l'autonomie réelle de la Dualtron Victor Luxury ?",
+   "a": "Le Labo Fnac a mesuré 68 km avec la batterie 30 Ah. Les vendeurs annoncent jusqu'à 100 km en mode éco."
+  },
+  {
+   "q": "Quelle différence entre la Victor Luxury et la Victor Luxury Plus ?",
+   "a": "Ce sont deux modèles distincts. La Luxury est en 24 ou 30 Ah, la Luxury Plus en 28 ou 35 Ah avec 4 300 W en pointe selon Dualtron Store."
+  },
+  {
+   "q": "La Dualtron Victor Luxury est-elle légale en France ?",
+   "a": "Oui sur la voie publique à condition d'être bridée à 25 km/h, comme toute trottinette électrique. Débridée, elle n'est utilisable que sur terrain privé."
+  }
+ ],
+ "sources": [
+  {
+   "label": "L'Éclaireur Fnac — test Labo Dualtron Victor Luxury 60 V 30 Ah",
+   "url": "https://leclaireur.fnac.com/test/468717-test-labo-de-la-minimotors-mm-dualtron-victor-lux-60v-30ah-2024-le-nec-plus-ultra-des-trottinettes/"
+  },
+  {
+   "label": "Fnac — Dualtron Victor Luxury 60 V 30 Ah",
+   "url": "https://www.fnac.com/Trottinette-electrique-Minimotors-Dualtron-Victor-Luxury-60V-30AH-4000-W-Noir/a17082934/w-4"
+  },
+  {
+   "label": "Dualtron Store — Dualtron Victor Luxury 24 Ah et 30 Ah",
+   "url": "https://dualtron-store.com/index.php/produit/dualtron-victor-luxury-24-ah-et-30-ah/"
+  },
+  {
+   "label": "Monecobike — Dualtron Victor",
+   "url": "https://monecobike.com/produit/dualtron-victor/"
+  },
+  {
+   "label": "Dualtron Store by Voltee (YouTube) — Dualtron Victor Luxury",
+   "url": "https://www.youtube.com/watch?v=Da9BynJcL8o"
+  },
+  {
+   "label": "Dualtron Store (YouTube) — Dualtron Victor Luxury Plus",
+   "url": "https://www.youtube.com/watch?v=dNeYdJgKnvw"
+  },
+  {
+   "label": "Dualtron Store (YouTube) — présentation Victor Luxury (prix)",
+   "url": "https://www.youtube.com/watch?v=PSW4UXSy96U"
+  },
+  {
+   "label": "Ministère de la Transition écologique — réglementation des trottinettes",
+   "url": "https://www.ecologie.gouv.fr/politiques-publiques/trottinettes-electriques-edpm-reglementation-vigueur"
+  }
+ ],
+ "video": {
+  "id": "PSW4UXSy96U",
+  "title": "Trottinette électrique Dualtron Victor Luxury - Une Dualtron version LUXE ??",
+  "channel": "Dualtron Store ® officiel",
+  "uploadDate": "2022-03-23"
+ }
+}

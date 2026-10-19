@@ -1,0 +1,152 @@
+{
+ "displayName": "Teverun Fighter Mini Eco",
+ "metaTitle": "Teverun Fighter Mini Eco : fiche technique et pièces",
+ "metaDescription": "Teverun Fighter Mini Eco : bimoteur 52 V 15,6 Ah, pneus 80/65-6 (10x3) tubeless, disques hydrauliques 140 mm, 32,65 kg. Fiche, entretien et pièces.",
+ "intro": [
+  "La Teverun Fighter Mini Eco est la version d'entrée de la Fighter Mini. Elle garde les deux moteurs de 1 000 W mais reçoit une batterie plus petite, en 52 V 15,6 Ah, contre 20,8 Ah sur la Fighter Mini d'origine. Ne la confonds pas avec la Mini Pro ni la Mini Q.",
+  "Freins à disque hydrauliques de 140 mm, suspensions à ressort, pneus tubeless 10x3 : Urban Moov annonce jusqu'à 60 km d'autonomie pour 32,65 kg. La recharge prend environ 7 h selon Darty. Sur la voie publique en France, elle doit rester bridée à 25 km/h."
+ ],
+ "specs": [
+  [
+   "Moteurs",
+   "2 × 1 000 W (2 950 W en pointe annoncés)"
+  ],
+  [
+   "Vitesse",
+   "25 km/h sur la voie publique"
+  ],
+  [
+   "Batterie",
+   "52 V, 15,6 Ah"
+  ],
+  [
+   "Autonomie annoncée",
+   "jusqu'à 60 km"
+  ],
+  [
+   "Poids",
+   "32,65 kg (Urban Moov)"
+  ],
+  [
+   "Charge max",
+   "120 kg"
+  ],
+  [
+   "Roues",
+   "10 pouces, 80/65-6 (10x3) tubeless"
+  ],
+  [
+   "Freins",
+   "Disques hydrauliques, Ø 140 mm"
+  ],
+  [
+   "Suspension",
+   "Ressorts avant et arrière"
+  ],
+  [
+   "Étanchéité",
+   "IPX5 (Urban Moov, Darty)"
+  ],
+  [
+   "Chargeur",
+   "52 V (58,8 V en sortie, 2 A)"
+  ],
+  [
+   "Temps de charge",
+   "7 h (Darty, Fnac)"
+  ]
+ ],
+ "pros": [
+  "Les deux moteurs de 1 000 W de la Fighter Mini, pour un prix d'entrée plus bas (Minimotors.fr).",
+  "Freins à disque hydrauliques et pneus tubeless de 10 pouces (Urban Moov).",
+  "Recharge en 7 h environ (Darty)."
+ ],
+ "cons": [
+  "Batterie de 15,6 Ah, plus petite que celle de la Fighter Mini (20,8 Ah).",
+  "Plus de 32 kg : elle se porte difficilement.",
+  "Les 60 km sont une valeur commerciale maximale, sans test de presse français publié.",
+  "Sa vitesse de pointe n'est utilisable que sur terrain privé : en France, la voie publique est limitée à 25 km/h."
+ ],
+ "parts": [
+  {
+   "label": "Pneu",
+   "size": "80/65-6 (10x3)",
+   "count": 11,
+   "to": "/piece/pneu-tubeless-80-65-6-10x3-cityroad-ewheel",
+   "cta": "Pneus 10x3"
+  },
+  {
+   "label": "Chambre à air",
+   "size": "80/65-6 (10x3), valve droite ou coudée",
+   "count": 3,
+   "to": "/piece/chambre-a-air-80-65-6-10x3-valve-droite-ewheel",
+   "cta": "Chambres à air"
+  },
+  {
+   "label": "Disque de frein",
+   "size": "140 mm, 6 trous, entraxe 44 mm",
+   "count": 5,
+   "to": "/piece/disque-de-frein-140mm",
+   "cta": "Disques 140 mm"
+  }
+ ],
+ "care": [
+  "Pneus tubeless : contrôle la pression chaque semaine, un tubeless sous-gonflé se déjante et crève plus facilement.",
+  "Freins hydrauliques : surveille l'épaisseur des plaquettes et purge le circuit quand le levier devient mou.",
+  "Recharge avec un chargeur 52 V adapté et évite de laisser la batterie à plat plusieurs semaines."
+ ],
+ "price": {
+  "text": "Prix affiché chez Urban Moov : 1 599 € (fiche mise à jour le 21/11/2025).",
+  "source": "urbanmoov.fr"
+ },
+ "faq": [
+  {
+   "q": "Quelle taille de pneu pour la Teverun Fighter Mini Eco ?",
+   "a": "Des pneus tubeless de 10 pouces en 80/65-6, aussi notés 10x3, sur une jante de 6 pouces."
+  },
+  {
+   "q": "Quel disque de frein pour la Teverun Fighter Mini Eco ?",
+   "a": "Un disque de 140 mm à 6 trous, entraxe 44 mm."
+  },
+  {
+   "q": "Quelles plaquettes pour la Teverun Fighter Mini Eco ?",
+   "a": "Nos fiches ne confirment pas encore le type d'étrier hydraulique de cette version : compare la forme de ta plaquette avant de commander."
+  },
+  {
+   "q": "Quel chargeur pour la Teverun Fighter Mini Eco ?",
+   "a": "Un chargeur 52 V (58,8 V en sortie). Vérifie ta prise avant de commander."
+  },
+  {
+   "q": "Quelle différence entre la Fighter Mini Eco et la Fighter Mini ?",
+   "a": "La batterie : 52 V 15,6 Ah sur la Mini Eco, 52 V 20,8 Ah sur la Fighter Mini. L'autonomie annoncée baisse en conséquence."
+  },
+  {
+   "q": "La Teverun Fighter Mini Eco est-elle légale en France ?",
+   "a": "Oui sur la voie publique à condition d'être bridée à 25 km/h, comme toute trottinette électrique. Débridée, elle n'est utilisable que sur terrain privé."
+  }
+ ],
+ "sources": [
+  {
+   "label": "Urban Moov — Teverun Fighter Mini Eco 52 V 15,6 Ah",
+   "url": "https://www.urbanmoov.fr/boutique/TEVERUN-FIGHTER-MINI-ECO-52V-15-6AH-p693376846"
+  },
+  {
+   "label": "Darty — Teverun Fighter Mini Eco",
+   "url": "https://www.darty.com/nav/achat/sports_loisirs/glisse_urbaine/trottinette_electrique/teverun_mini_eco_bosch.html"
+  },
+  {
+   "label": "Minimotors.fr — gamme Teverun",
+   "url": "https://www.minimotors.fr/decouvrir-la-gamme-teverun"
+  },
+  {
+   "label": "Ministère de la Transition écologique — réglementation des trottinettes",
+   "url": "https://www.ecologie.gouv.fr/politiques-publiques/trottinettes-electriques-edpm-reglementation-vigueur"
+  }
+ ],
+ "video": {
+  "id": "2ozqMbV_BJQ",
+  "title": "TEVERUN FIGHTER MINI ECO : LA TROTTINETTE PUISSANTE À PRIX MINI !",
+  "channel": "Weebot Paris",
+  "uploadDate": "2025-05-01"
+ }
+}
