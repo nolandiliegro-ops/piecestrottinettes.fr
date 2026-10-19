@@ -302,7 +302,7 @@ const V2File = ({ groupes, marquerDistincts }: { groupes: Groupe[]; marquerDisti
   const [i, setI] = useState(0);
   const { publish } = useActions();
   // on ne masque que les fiches de la MÊME gamme : une Black Cat lot de 5 n'est pas le doublon d'une chambre à l'unité
-  const [dernier, setDernier] = useState<{ nom: string; ids: string[] } | null>(null);
+  const [dernier, setDernier] = useState<{ texte: string; ids: string[] } | null>(null);
   const [distinctsAnnulables, setDistinctsAnnulables] = useState<string[] | null>(null);
   const g = file[Math.min(i, file.length - 1)];
   if (!g) return (
@@ -331,7 +331,14 @@ const V2File = ({ groupes, marquerDistincts }: { groupes: Groupe[]; marquerDisti
   const garder = (keep: Fiche) => {
     const ids = g.fiches.filter((f) => f.published && f.id !== keep.id && f.gamme === keep.gamme).map((f) => f.id);
     ids.forEach((id) => publish.mutate({ id, published: false }));
-    setDernier({ nom: keep.name, ids });
+    setDernier({ texte: `Gardée : ${keep.name} — ${ids.length} masquée${ids.length > 1 ? "s" : ""}.`, ids });
+    setDistinctsAnnulables(null);
+  };
+  // 19/10 (Nolan) : retirer UNE fiche précise sans toucher aux autres. Masquer = dépublier, jamais supprimer :
+  // la fiche reste en base (prix, fournisseur, compat) et se republie d'un clic (Annuler, ou « Masquée » dans la liste).
+  const masquer = (f: Fiche) => {
+    publish.mutate({ id: f.id, published: false });
+    setDernier({ texte: `Masquée : ${f.name} (toujours en base, republiable).`, ids: [f.id] });
     setDistinctsAnnulables(null);
   };
   const annuler = () => {
@@ -350,7 +357,7 @@ const V2File = ({ groupes, marquerDistincts }: { groupes: Groupe[]; marquerDisti
       )}
       {dernier && (
         <div className="rounded-xl border border-emerald-400/30 bg-emerald-400/10 p-3 flex items-center gap-3 text-sm">
-          <span className="flex-1">Gardée : {dernier.nom} — {dernier.ids.length} masquée{dernier.ids.length > 1 ? "s" : ""}.</span>
+          <span className="flex-1">{dernier.texte}</span>
           <button onClick={annuler} className="min-h-[44px] px-4 rounded-lg border border-[hsl(var(--al30))] font-bold shrink-0">Annuler</button>
         </div>
       )}
@@ -363,7 +370,7 @@ const V2File = ({ groupes, marquerDistincts }: { groupes: Groupe[]; marquerDisti
       </div>
       <div className="rounded-2xl border border-amber-400/30 bg-[hsl(var(--al12))] p-4">
         <Entete g={g} />
-        <p className="text-sm text-[hsl(var(--al60))] mt-1">Appuie sur « Garder celle-ci » sous la fiche à conserver : les autres de la même gamme sont masquées (bouton « Annuler » juste après).</p>
+        <p className="text-sm text-[hsl(var(--al60))] mt-1">« Garder celle-ci » masque les autres de la même gamme · « Masquer » retire seulement cette fiche · « Garder les … » si ce ne sont pas des doublons. Rien n'est supprimé, « Annuler » juste après.</p>
       </div>
       {g.fiches.filter((f) => f.published && g.fiches.filter((x) => x.published && x.gamme === f.gamme).length > 1).map((f) => (
         <div key={f.id} className="rounded-2xl border border-[hsl(var(--al20))] bg-[hsl(var(--al12))] p-3">
@@ -375,9 +382,14 @@ const V2File = ({ groupes, marquerDistincts }: { groupes: Groupe[]; marquerDisti
               <Chiffres f={f} />
             </div>
           </div>
-          <button onClick={() => garder(f)} className="mt-3 w-full min-h-[48px] rounded-lg bg-primary text-primary-foreground text-base font-extrabold flex items-center justify-center gap-2 active:scale-[0.99]">
-            <Check className="w-5 h-5" /> Garder celle-ci
-          </button>
+          <div className="mt-3 flex gap-2">
+            <button onClick={() => garder(f)} className="flex-1 min-h-[48px] rounded-lg bg-primary text-primary-foreground text-base font-extrabold flex items-center justify-center gap-2 active:scale-[0.99]">
+              <Check className="w-5 h-5" /> Garder celle-ci
+            </button>
+            <button onClick={() => masquer(f)} className="shrink-0 min-h-[48px] px-4 rounded-lg border-2 border-[hsl(var(--al30))] text-[hsl(var(--al70))] text-base font-bold flex items-center justify-center gap-2 active:scale-[0.99]" aria-label={`Masquer ${f.name}`}>
+              <EyeOff className="w-5 h-5" /> Masquer
+            </button>
+          </div>
         </div>
       ))}
       <button onClick={garderTout} className="w-full min-h-[48px] rounded-lg border-2 border-primary text-primary text-base font-extrabold flex items-center justify-center gap-2 active:scale-[0.99]">
