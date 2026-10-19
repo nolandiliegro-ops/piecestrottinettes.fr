@@ -58,15 +58,23 @@ const urlsOf = (p) => {
 
 /** Analyse une photo : marges vides (en fraction) et version recadrée si besoin. */
 async function analyse(buf) {
-  const img = sharp(buf, { failOn: 'none' }).ensureAlpha();
-  const { data, info } = await img.raw().toBuffer({ resolveWithObject: true });
-  const { width: W, height: H } = info;
-  let x0 = W, y0 = H, x1 = -1, y1 = -1, transp = 0;
-  for (let y = 0; y < H; y++) for (let x = 0; x < W; x++) {
-    const a = data[(y * W + x) * 4 + 3];
+  // Cadre mesuré sur une version réduite (≤ 400 px) puis reporté sur l'original : ~20× plus rapide.
+  const meta = await sharp(buf, { failOn: 'none' }).metadata();
+  const W = meta.width, H = meta.height;
+  const k = Math.min(1, 400 / Math.max(W, H));
+  const { data, info } = await sharp(buf, { failOn: 'none' }).ensureAlpha().resize(Math.max(1, Math.round(W * k)), Math.max(1, Math.round(H * k)), { fit: 'fill' }).raw().toBuffer({ resolveWithObject: true });
+  const w0 = info.width, h0 = info.height;
+  let sx0 = w0, sy0 = h0, sx1 = -1, sy1 = -1, transp = 0;
+  for (let y = 0; y < h0; y++) for (let x = 0; x < w0; x++) {
+    const a = data[(y * w0 + x) * 4 + 3];
     if (a < 250) transp++;
-    if (a > ALPHA) { if (x < x0) x0 = x; if (x > x1) x1 = x; if (y < y0) y0 = y; if (y > y1) y1 = y; }
+    if (a > ALPHA) { if (x < sx0) sx0 = x; if (x > sx1) sx1 = x; if (y < sy0) sy0 = y; if (y > sy1) sy1 = y; }
   }
+  if (sx1 < 0) return { W, H, vide: true };
+  // Report à l'échelle d'origine, avec 1 pixel réduit de sécurité (on ne rogne jamais la pièce).
+  const x0 = Math.max(0, Math.floor((sx0 - 1) / k)), y0 = Math.max(0, Math.floor((sy0 - 1) / k));
+  const x1 = Math.min(W - 1, Math.ceil((sx1 + 2) / k) - 1), y1 = Math.min(H - 1, Math.ceil((sy1 + 2) / k) - 1);
+  transp = transp * (W * H) / (w0 * h0);
   if (x1 < 0) return { W, H, vide: true };
   const marges = { haut: y0 / H, bas: (H - 1 - y1) / H, gauche: x0 / W, droite: (W - 1 - x1) / W };
   const remplissage = { l: (x1 - x0 + 1) / W, h: (y1 - y0 + 1) / H };
