@@ -1,2 +1,2 @@
-dry
-# relance 16:52
+write 3
+# essai 3 pieces 17:21
