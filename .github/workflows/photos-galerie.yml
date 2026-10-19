@@ -73,6 +73,14 @@ jobs:
               tail -n 3 "out/detourage-$lot.log"
               continue
             fi
+            if [ "$mode" = "coupe" ]; then
+              # Lecture seule : trottinettes coupées (bord plat) sur les photos publiées.
+              node scripts/audit-coupe.mjs > "out/coupe-$lot.log" 2>&1
+              echo "::notice title=coupe::EXIT=$?"
+              grep '^::' "out/coupe-$lot.log" | head -5
+              tail -n 3 "out/coupe-$lot.log"
+              continue
+            fi
             if [ "$mode" = "cadrage" ]; then
               # Cadrage uniforme + photo principale de trois-quarts (config/photos/vues.json). « cadrage dry » / « cadrage write ».
               node scripts/scooters-cadrage.mjs --$lot > "out/cadrage-$lot.log" 2>&1
