@@ -68,6 +68,28 @@ function lireValveSure(name: string): string {
 
 function lireGamme(name: string): string {
   const n = norm(name);
+  // 19/10 (Nolan) : un tubeless et un pneu à chambre de même taille sont deux produits, jamais des doublons
+  const montage = /tubeless|sans chambre/.test(n) ? " tubeless" : /tube type|avec chambre|\+ chambre/.test(n) ? " à chambre" : "";
+  // ni la sculpture, ni le gel, ni le runflat, ni la couleur ne font un doublon : ce sont des produits différents
+  const traits = [
+    /semi[\s-]?off[\s-]?road|semi road/.test(n) ? "semi-offroad" : /off[\s-]?road|tout[\s-]terrain/.test(n) ? "offroad" : /slick/.test(n) ? "slick" : /city[\s-]?road|route/.test(n) ? "route" : "",
+    /gel|anti[\s-]?crev/.test(n) ? "gel" : "",
+    /run[\s-]?flat/.test(n) ? "runflat" : "",
+    /radial/.test(n) ? "radial" : "",
+    /flottant/.test(n) ? "flottant" : "",
+    /\br6\b/.test(n) ? "R6" : "",
+    /ultra[\s-]?l[ée]ger/.test(n) ? "ultra-léger" : "",
+    /perfor|alv[ée]ol/.test(n) ? "alvéolé" : "",
+    /gomme tendre/.test(n) ? "gomme tendre" : "",
+    /diamant/.test(n) ? "diamant" : "",
+    (n.match(/jante (\d{2}) ?mm/) ?? [])[1] ? `jante ${(n.match(/jante (\d{2}) ?mm/) ?? [])[1]} mm` : "",
+    // couleur, liseré, points, tricolore : une variante de couleur n'est jamais le doublon d'une autre
+    ...(n.match(/\b(liser|points?|tricolore|rouges?|noire?s?|bleue?s?|vertes?|jaunes?|fluo|blanc(?:he)?s?|violets?|grises?|or)\b/g) ?? []),
+  ].filter(Boolean);
+  return gammeBase(n) + montage + (traits.length ? ` · ${traits.join(" · ")}` : "");
+}
+
+function gammeBase(n: string): string {
   const lot = /lot de 5|5\s?uds/.test(n);
   if (/black cat/.test(n)) return (/premium/.test(n) ? "Black Cat premium" : "Black Cat") + (lot ? " lot de 5" : "");
   if (/premium/.test(n)) return "Premium";
@@ -75,24 +97,43 @@ function lireGamme(name: string): string {
   return "Standard";
 }
 
-function lireTaille(r: Row): string {
+export const NON_LUE = "Taille non lue";
+
+function lireTaille(r: Row, cat: string): string {
   const fs = r.fitment_specs ?? {};
+  // 19/10 : un disque se lit en Ø mm (+ nombre de trous), jamais avec le motif des pneus
+  if (cat === "disques") {
+    const n = norm(r.name);
+    const d = n.match(/(\d{2,3})\s?mm/);
+    const e = n.match(/entraxe\s?(\d{2})\s?mm?/);
+    const t = n.match(/(\d{1,2})\s?trous/);
+    // sans l'entraxe, deux disques de même Ø peuvent ne pas se monter sur la même roue : on ne juge pas
+    return d && e ? `Ø ${d[1]} mm · entraxe ${e[1]}${t ? ` · ${t[1]} trous` : ""}` : NON_LUE;
+  }
+  // plaquettes et chargeurs : pas de taille lisible dans le nom → jamais de doublon annoncé
+  if (cat !== "chambres-a-air" && cat !== "pneus" && cat !== "pneus-pleins") return NON_LUE;
   const sec = fs.tire_sections?.[0];
   const rims = fs.rim_diameters ?? [];
   if (sec) return rims.length ? `${sec} · jante ${rims.join(" / ")}` : sec;
   const m = norm(r.name).match(/(\d{2,3}\/\d{2,3}(?:-\d(?:\.\d)?)?|\d{1,2}(?:\.\d{1,3})?\s?x\s?\(?[\d./]+\)?(?:-\d(?:\.\d)?)?)/);
-  return m ? m[1].replace(/\s/g, "") : "Taille non lue";
+  return m ? m[1].replace(/\s/g, "") : NON_LUE;
 }
 
 // 19/10 : pour les chambres, une fiche sans valve écrite n'est jamais comptée en doublon
 // (CA-06 coudée 90x90 et CA-25 droite étaient regroupées à tort faute de valve dans le nom).
-export function construireGroupes(rows: Row[], valveObligatoire = false): Groupe[] {
+// 19/10 (Nolan) : « Garder les deux » — un lot de fiches déclarées distinctes n'est plus un doublon.
+// Clé = ids triés des fiches en ligne de la même gamme ; si une nouvelle fiche arrive, le lot change et revient en file.
+export const cleLot = (ids: string[]) => [...ids].sort().join("|");
+
+export function construireGroupes(rows: Row[], cat: string, distincts: Set<string> = new Set()): Groupe[] {
+  const valveObligatoire = cat === "chambres-a-air";
+  const avecValve = cat === "chambres-a-air" || cat === "pneus";
   const fiches: Fiche[] = rows.map((r) => {
     const sups = r.part_suppliers ?? [];
     const best = [...sups].sort((a, b) => (a.buy_price_ht ?? 1e9) - (b.buy_price_ht ?? 1e9))[0];
     const achat = best?.buy_price_ht ?? null;
-    const taille = lireTaille(r);
-    const valve = lireValveSure(r.name);
+    const taille = lireTaille(r, cat);
+    const valve = avecValve ? lireValveSure(r.name) : "—";
     return {
       ...r,
       achat,
@@ -110,10 +151,13 @@ export function construireGroupes(rows: Row[], valveObligatoire = false): Groupe
     const enLigne = l.filter((f) => f.published);
     const prix = enLigne.map((f) => f.price ?? 0).filter((p) => p > 0);
     // doublon = même taille + même valve + même gamme, plusieurs fiches en ligne (fournisseurs différents)
-    const parGamme = new Map<string, number>();
-    for (const f of enLigne) parGamme.set(f.gamme, (parGamme.get(f.gamme) ?? 0) + 1);
+    const parGamme = new Map<string, string[]>();
+    for (const f of enLigne) parGamme.set(f.gamme, [...(parGamme.get(f.gamme) ?? []), f.id]);
     const valveInconnue = valveObligatoire && l[0].valve === "non écrite";
-    const doublons = valveInconnue ? 0 : [...parGamme.values()].reduce((n, c) => n + Math.max(0, c - 1), 0);
+    const tailleInconnue = l[0].taille === NON_LUE;
+    const doublons = valveInconnue || tailleInconnue ? 0 : [...parGamme.values()]
+      .filter((ids) => !distincts.has(cleLot(ids)))
+      .reduce((n, ids) => n + Math.max(0, ids.length - 1), 0);
     return {
       key, taille: l[0].taille, valve: l[0].valve, doublons,
       fiches: l.sort((a, b) => Number(!!b.published) - Number(!!a.published) || (a.price ?? 0) - (b.price ?? 0)),
@@ -213,7 +257,7 @@ const Entete = ({ g }: { g: Groupe }) => (
   <div className="min-w-0">
     <div className="text-base font-extrabold truncate">{g.taille}</div>
     <div className="text-sm text-[hsl(var(--al60))]">
-      Valve {g.valve} · {g.enLigne} en ligne{g.doublons > 0 && <span className="text-amber-300 font-bold"> · {g.doublons} en double</span>}
+      {g.valve !== "—" && `Valve ${g.valve} · `}{g.enLigne} en ligne{g.doublons > 0 && <span className="text-amber-300 font-bold"> · {g.doublons} en double</span>}
       {g.prixMin != null && ` · ${eur(g.prixMin)}${g.prixMax !== g.prixMin ? ` → ${eur(g.prixMax)}` : ""}`}
     </div>
   </div>
@@ -253,26 +297,57 @@ const V1Liste = ({ groupes }: { groupes: Groupe[] }) => {
 };
 
 /* ------------------------------ 2. File de tri (doublons d'abord) ------------------------------ */
-const V2File = ({ groupes }: { groupes: Groupe[] }) => {
+const V2File = ({ groupes, marquerDistincts }: { groupes: Groupe[]; marquerDistincts: (lots: string[], retirer?: boolean) => void }) => {
   const file = groupes.filter((g) => g.doublons > 0);
   const [i, setI] = useState(0);
   const { publish } = useActions();
-  const g = file[Math.min(i, file.length - 1)];
-  if (!g) return <p className="text-base text-emerald-300 p-4">Plus aucun doublon en ligne dans cette catégorie.</p>;
   // on ne masque que les fiches de la MÊME gamme : une Black Cat lot de 5 n'est pas le doublon d'une chambre à l'unité
   const [dernier, setDernier] = useState<{ nom: string; ids: string[] } | null>(null);
+  const [distinctsAnnulables, setDistinctsAnnulables] = useState<string[] | null>(null);
+  const g = file[Math.min(i, file.length - 1)];
+  if (!g) return (
+    <div className="space-y-3">
+      {distinctsAnnulables && (
+        <div className="rounded-xl border border-emerald-400/30 bg-emerald-400/10 p-3 flex items-center gap-3 text-sm">
+          <span className="flex-1">Toutes gardées, ce ne sont pas des doublons.</span>
+          <button onClick={() => { marquerDistincts(distinctsAnnulables, true); setDistinctsAnnulables(null); }} className="min-h-[44px] px-4 rounded-lg border border-[hsl(var(--al30))] font-bold shrink-0">Annuler</button>
+        </div>
+      )}
+      <p className="text-base text-emerald-300 p-4">Plus aucun doublon en ligne dans cette catégorie.</p>
+    </div>
+  );
+  // 19/10 (Nolan) : « Garder les deux » — deux produits différents qui se ressemblent, aucun n'est masqué
+  const lotsDuGroupe = () => {
+    const parGamme = new Map<string, string[]>();
+    for (const f of g.fiches.filter((x) => x.published)) parGamme.set(f.gamme, [...(parGamme.get(f.gamme) ?? []), f.id]);
+    return [...parGamme.values()].filter((ids) => ids.length > 1).map(cleLot);
+  };
+  const garderTout = () => {
+    const lots = lotsDuGroupe();
+    marquerDistincts(lots);
+    setDistinctsAnnulables(lots);
+    setDernier(null);
+  };
   const garder = (keep: Fiche) => {
     const ids = g.fiches.filter((f) => f.published && f.id !== keep.id && f.gamme === keep.gamme).map((f) => f.id);
     ids.forEach((id) => publish.mutate({ id, published: false }));
     setDernier({ nom: keep.name, ids });
+    setDistinctsAnnulables(null);
   };
   const annuler = () => {
     if (!dernier) return;
     dernier.ids.forEach((id) => publish.mutate({ id, published: true }));
     setDernier(null);
   };
+  const nbEnDouble = g.fiches.filter((f) => f.published && g.fiches.filter((x) => x.published && x.gamme === f.gamme).length > 1).length;
   return (
     <div className="space-y-3">
+      {distinctsAnnulables && (
+        <div className="rounded-xl border border-emerald-400/30 bg-emerald-400/10 p-3 flex items-center gap-3 text-sm">
+          <span className="flex-1">Toutes gardées, ce ne sont pas des doublons.</span>
+          <button onClick={() => { marquerDistincts(distinctsAnnulables, true); setDistinctsAnnulables(null); }} className="min-h-[44px] px-4 rounded-lg border border-[hsl(var(--al30))] font-bold shrink-0">Annuler</button>
+        </div>
+      )}
       {dernier && (
         <div className="rounded-xl border border-emerald-400/30 bg-emerald-400/10 p-3 flex items-center gap-3 text-sm">
           <span className="flex-1">Gardée : {dernier.nom} — {dernier.ids.length} masquée{dernier.ids.length > 1 ? "s" : ""}.</span>
@@ -305,18 +380,34 @@ const V2File = ({ groupes }: { groupes: Groupe[] }) => {
           </button>
         </div>
       ))}
+      <button onClick={garderTout} className="w-full min-h-[48px] rounded-lg border-2 border-primary text-primary text-base font-extrabold flex items-center justify-center gap-2 active:scale-[0.99]">
+        <Layers className="w-5 h-5" /> {nbEnDouble > 2 ? `Garder les ${nbEnDouble}` : "Garder les deux"} — ce ne sont pas des doublons
+      </button>
     </div>
   );
 };
 
 /* ------------------------------ écran ------------------------------ */
+const CLE_DISTINCTS = "pt-admin-tri-distincts";
+const lireDistincts = (): Set<string> => {
+  try { return new Set(JSON.parse(localStorage.getItem(CLE_DISTINCTS) ?? "[]")); } catch { return new Set(); }
+};
 // 19/10 (Nolan) : choix « 1 Liste + 2 File » — liste groupée par défaut, file de tri des doublons à la demande.
 
 const CatalogueTriage = () => {
   const [cat, setCat] = useState(CATS[0].slug);
   const [mode, setMode] = useState<"liste" | "file">("liste");
   const { data = [], isLoading, error } = useCatalogue(cat);
-  const groupes = useMemo(() => construireGroupes(data, cat === "chambres-a-air"), [data, cat]);
+  const [distincts, setDistincts] = useState<Set<string>>(() => lireDistincts());
+  const marquerDistincts = (lots: string[], retirer = false) => {
+    setDistincts((prev) => {
+      const next = new Set(prev);
+      lots.forEach((l) => (retirer ? next.delete(l) : next.add(l)));
+      try { localStorage.setItem(CLE_DISTINCTS, JSON.stringify([...next])); } catch { /* stockage indisponible : marquage gardé pour la session */ }
+      return next;
+    });
+  };
+  const groupes = useMemo(() => construireGroupes(data, cat, distincts), [data, cat, distincts]);
   const enLigne = data.filter((r) => r.published).length;
   const enTrop = groupes.reduce((n, g) => n + g.doublons, 0);
 
@@ -351,7 +442,7 @@ const CatalogueTriage = () => {
       {isLoading && <Loader2 className="w-6 h-6 animate-spin" />}
       {error && <p className="text-red-400 text-sm">{error.message}</p>}
       {!isLoading && mode === "liste" && <V1Liste groupes={groupes} />}
-      {!isLoading && mode === "file" && <V2File groupes={groupes} />}
+      {!isLoading && mode === "file" && <V2File groupes={groupes} marquerDistincts={marquerDistincts} />}
     </div>
   );
 };
