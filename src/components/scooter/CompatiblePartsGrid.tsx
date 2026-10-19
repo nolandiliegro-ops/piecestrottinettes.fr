@@ -10,6 +10,7 @@ import { Button } from "@/components/ui/button";
 import { Skeleton } from "@/components/ui/skeleton";
 import PartCard from "@/components/parts/PartCard";
 import TireSizeFinder from "@/components/scooter/TireSizeFinder";
+import VoltageVariantsAlert from "@/components/scooter/VoltageVariantsAlert";
 
 interface CompatiblePartsGridProps {
   parts: ScooterCompatiblePart[];
@@ -171,6 +172,9 @@ const CompatiblePartsGrid = ({
             </div>
           </details>
         )}
+
+        {/* 19/10 : modèle vendu en plusieurs tensions → alerte avant chargeur / batterie */}
+        <VoltageVariantsAlert scooterId={scooterId} scooterName={scooterName} />
 
         {/* 17/10 (soir) : mises en page compactes, la grille complète reste un clic plus loin */}
         {parts.length > 0 && layout === "rail" && !expanded && (
