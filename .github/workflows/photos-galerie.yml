@@ -83,10 +83,10 @@ jobs:
             fi
             if [ "$mode" = "nettoyage" ]; then
               # Nettoyage des fantômes de détourage (trottinettes). « nettoyage dry » = planches avant/après, « nettoyage write » = écrit.
-              node scripts/nettoyage-detourage.mjs --$lot > "out/nettoyage-$lot.log" 2>&1
+              node scripts/nettoyage-detourage.mjs --$lot ${extra:+--$extra} > "out/nettoyage-$lot$extra.log" 2>&1
               echo "::notice title=nettoyage::EXIT=$?"
-              grep '^::' "out/nettoyage-$lot.log" | grep -v -i 'secret\|bearer\|eyJ' | head -40
-              tail -n 3 "out/nettoyage-$lot.log" | grep -v -i 'secret\|bearer\|eyJ'
+              grep '^::' "out/nettoyage-$lot$extra.log" | grep -v -i 'secret\|bearer\|eyJ' | head -40
+              tail -n 3 "out/nettoyage-$lot$extra.log" | grep -v -i 'secret\|bearer\|eyJ'
               continue
             fi
             if [ "$mode" = "audit" ]; then

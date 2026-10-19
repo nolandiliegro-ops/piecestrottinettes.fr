@@ -16,10 +16,11 @@ import { resolve, dirname } from 'node:path';
 import { fileURLToPath } from 'node:url';
 
 const ROOT = resolve(dirname(fileURLToPath(import.meta.url)), '..');
-const OUT = resolve(ROOT, 'out/nettoyage');
+const OUT = resolve(ROOT, process.argv.includes('--durcir') ? 'out/durcir' : 'out/nettoyage');
 mkdirSync(OUT, { recursive: true });
 const MODE = process.argv.includes('--write') ? 'write' : 'dry';
-const SEUIL = 0.02; // part de fantômes (rapportée à la silhouette opaque) au-delà de laquelle on nettoie
+const SEUIL = 0.02;
+const DURCIR = process.argv.includes('--durcir'); // part de fantômes (rapportée à la silhouette opaque) au-delà de laquelle on nettoie
 
 const client = readFileSync(resolve(ROOT, 'src/integrations/supabase/client.ts'), 'utf-8');
 const SB_URL = (client.match(/VITE_SUPABASE_URL\s*\|\|\s*"([^"]+)"/) || [])[1];
@@ -73,7 +74,11 @@ async function nettoie(buf) {
   const besoin = fantome > SEUIL;
   if (!besoin) return { fantome, debris: 0 };
   const out = Buffer.from(data);
-  for (let i = 0; i < N; i++) { const a = out[i * 4 + 3]; if (a >= 16 && a <= 230 && !pres[i]) out[i * 4 + 3] = 0; }
+  if (DURCIR) {
+    // 19/10 dry 2 : effacer les semi-transparents ampute les trottinettes au corps semi-transparent (G30 Max, Kaabo…).
+    // Variante : durcir le masque — alpha < 64 → 0 (voile de fond), > 160 → 255 (corps rendu opaque), rampe entre les deux.
+    for (let i = 0; i < N; i++) { const a = out[i * 4 + 3]; out[i * 4 + 3] = a < 64 ? 0 : a > 160 ? 255 : Math.round((a - 64) * 255 / 96); }
+  } else for (let i = 0; i < N; i++) { const a = out[i * 4 + 3]; if (a >= 16 && a <= 230 && !pres[i]) out[i * 4 + 3] = 0; }
   for (const c of petits) for (const p of c) out[p * 4 + 3] = 0;
   const png = await sharp(out, { raw: { width: W, height: H, channels: 4 } }).png({ compressionLevel: 9 }).toBuffer();
   return { fantome, debris: petits.length, out: png };
