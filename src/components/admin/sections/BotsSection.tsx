@@ -17,7 +17,9 @@ const BotsSection = () => {
       defaultTab="import"
       tabs={[
         { id: 'import', label: 'Trott. à valider', icon: Bot, badge: pendingScooters.length, content: <PendingScootersManager /> },
-        { id: 'pieces', label: 'Pièces à valider', icon: Wrench, badge: pendingParts.length, content: <PendingPartsManager /> },
+        // Les pièces non publiées sont surtout des dépublications volontaires (tri, archives) :
+        // libellé honnête, pas de pastille d'alerte.
+        { id: 'pieces', label: `Pièces dépubliées (${pendingParts.length})`, icon: Wrench, content: <PendingPartsManager /> },
         { id: 'veilleur', label: 'Le Veilleur', icon: Bird, content: <WatcherControl /> },
         { id: 'scanner', label: 'Scanner IA', icon: ScanLine, content: <AdminScanner /> },
       ]}

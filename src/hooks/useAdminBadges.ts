@@ -23,16 +23,17 @@ export const useAdminBadges = (): AdminBadges => {
     staleTime: 60_000,
     refetchInterval: 120_000,
     queryFn: async (): Promise<AdminBadges> => {
-      const [orders, conv, pendingScooters, pendingParts] = await Promise.all([
+      // Pièces non publiées = surtout des dépublications volontaires (tri, archives),
+      // pas des imports à valider → seules les trottinettes comptent dans la pastille Bots (19/10).
+      const [orders, conv, pendingScooters] = await Promise.all([
         supabase.from('orders').select('id', { count: 'exact', head: true }).in('status', ['paid', 'processing']),
         supabase.from('conversation_status').select('id', { count: 'exact', head: true }).eq('status', 'pending'),
         supabase.from('scooter_models').select('id', { count: 'exact', head: true }).eq('published', false),
-        supabase.from('parts').select('id', { count: 'exact', head: true }).eq('published', false),
       ]);
       return {
         ordersToProcess: orders.count ?? 0,
         pendingMessages: conv.count ?? 0,
-        pendingImports: (pendingScooters.count ?? 0) + (pendingParts.count ?? 0),
+        pendingImports: pendingScooters.count ?? 0,
       };
     },
   });

@@ -24,7 +24,8 @@ import AIGenerateButton from './AIGenerateButton';
 import PartSuppliersManager from './PartSuppliersManager';
 import MultiPhotoGallery from './MultiPhotoGallery';
 import { Collapsible, CollapsibleContent, CollapsibleTrigger } from '@/components/ui/collapsible';
-import { Images } from 'lucide-react';
+import { Images, LayoutGrid, List as ListIcon } from 'lucide-react';
+import PartsGrid from './PartsGrid';
 
 import type { Json, TablesInsert, TablesUpdate } from '@/integrations/supabase/types';
 import type { ProductAttribute } from '@/hooks/useScooterData';
@@ -94,6 +95,12 @@ const PartsManager = () => {
   const [deleting, setDeleting] = useState<string | null>(null);
   const [searchQuery, setSearchQuery] = useState('');
   const [categoryFilter, setCategoryFilter] = useState<string>('all');
+  // Vue grille par défaut (refonte 19/10) — persistée par navigateur
+  const [viewMode, setViewMode] = useState<'grid' | 'list'>(() => {
+    try { return localStorage.getItem('pt-admin-parts-view') === 'list' ? 'list' : 'grid'; } catch { return 'grid'; }
+  });
+  const [statusFilter, setStatusFilter] = useState<'all' | 'published' | 'unpublished' | 'lowstock'>('all');
+  const [togglingId, setTogglingId] = useState<string | null>(null);
   
   // Smart Toolbar state
   const [sortField, setSortField] = useState<SortField>('name');
@@ -599,16 +606,40 @@ const PartsManager = () => {
     return !url || url.includes('placehold.co') || url.includes('placeholder');
   };
 
+  /** Publier / dépublier en un geste depuis la grille. Publier verrouille le slug (trigger write-once) — voulu. */
+  const togglePublish = async (part: Part) => {
+    setTogglingId(part.id);
+    const next = !(part.published ?? false);
+    try {
+      const { error } = await supabase
+        .from('parts')
+        .update({ published: next } satisfies TablesUpdate<'parts'>)
+        .eq('id', part.id);
+      if (error) throw error;
+      setParts(prev => prev.map(p => (p.id === part.id ? { ...p, published: next } : p)));
+      toast.success(next ? `« ${part.name} » publiée` : `« ${part.name} » dépubliée`);
+    } catch (e) {
+      toast.error(`Échec : ${e instanceof Error ? e.message : 'erreur inconnue'}`);
+    } finally {
+      setTogglingId(null);
+    }
+  };
+
   const isLowStock = (part: Part) => {
     const threshold = part.min_stock_alert ?? 5;
     return (part.stock_quantity ?? 0) <= threshold;
   };
 
   const filteredParts = parts.filter(part => {
-    const matchesSearch = part.name.toLowerCase().includes(searchQuery.toLowerCase()) || 
+    const matchesSearch = part.name.toLowerCase().includes(searchQuery.toLowerCase()) ||
                           (part.sku?.toLowerCase().includes(searchQuery.toLowerCase()) ?? false);
     const matchesCategory = categoryFilter === 'all' || part.category_id === categoryFilter;
-    return matchesSearch && matchesCategory;
+    const matchesStatus =
+      statusFilter === 'all' ? true :
+      statusFilter === 'published' ? part.published === true :
+      statusFilter === 'unpublished' ? part.published !== true :
+      isLowStock(part);
+    return matchesSearch && matchesCategory && matchesStatus;
   });
 
   const lowStockCount = parts.filter(isLowStock).length;
@@ -1162,19 +1193,46 @@ const PartsManager = () => {
         </DropdownMenu>
       </div>
 
-      {/* Action Buttons Row */}
-      <div className="flex flex-wrap items-center justify-between gap-4">
-        <div className="flex items-center gap-4 text-sm text-muted-foreground">
-          <span className="font-medium">{sortedParts.length} pièce(s)</span>
-          <span>• {parts.filter(p => !isPlaceholder(p.image_url)).length} avec image</span>
-          {lowStockCount > 0 && (
-            <span className="flex items-center gap-1 text-amber-600">
-              <AlertTriangle className="w-4 h-4" />
-              {lowStockCount} stock bas
-            </span>
-          )}
+      {/* Pilules de statut + bascule de vue */}
+      <div className="flex flex-wrap items-center justify-between gap-3">
+        <div className="flex items-center gap-2 overflow-x-auto scrollbar-none">
+          {([
+            { id: 'all', label: `Toutes (${parts.length})` },
+            { id: 'published', label: `Publiées (${parts.filter(p => p.published === true).length})` },
+            { id: 'unpublished', label: `Dépubliées (${parts.filter(p => p.published !== true).length})` },
+            { id: 'lowstock', label: `Stock bas (${lowStockCount})` },
+          ] as const).map(f => (
+            <button
+              key={f.id}
+              onClick={() => setStatusFilter(f.id)}
+              className={cn(
+                'px-3 py-2 min-h-[40px] rounded-full text-sm font-medium whitespace-nowrap border transition-colors',
+                statusFilter === f.id
+                  ? 'bg-[hsl(var(--admin-accent))] text-white border-transparent'
+                  : 'bg-white text-[hsl(var(--admin-text-muted))] border-[hsl(var(--admin-border))] hover:bg-[hsl(var(--aov03))]'
+              )}
+            >
+              {f.label}
+            </button>
+          ))}
+          <div className="flex items-center rounded-full border border-[hsl(var(--admin-border))] bg-white p-0.5 ml-1">
+            <button
+              onClick={() => { setViewMode('grid'); try { localStorage.setItem('pt-admin-parts-view', 'grid'); } catch { /* noop */ } }}
+              className={cn('p-2 rounded-full', viewMode === 'grid' ? 'bg-[hsl(var(--admin-accent))] text-white' : 'text-[hsl(var(--admin-text-muted))]')}
+              aria-label="Vue grille"
+            >
+              <LayoutGrid className="w-4 h-4" />
+            </button>
+            <button
+              onClick={() => { setViewMode('list'); try { localStorage.setItem('pt-admin-parts-view', 'list'); } catch { /* noop */ } }}
+              className={cn('p-2 rounded-full', viewMode === 'list' ? 'bg-[hsl(var(--admin-accent))] text-white' : 'text-[hsl(var(--admin-text-muted))]')}
+              aria-label="Vue liste"
+            >
+              <ListIcon className="w-4 h-4" />
+            </button>
+          </div>
         </div>
-        
+
         <div className="flex items-center gap-2">
           <Dialog open={isImportOpen} onOpenChange={(open) => {
             setIsImportOpen(open);
@@ -1292,7 +1350,7 @@ const PartsManager = () => {
       <div className="space-y-6">
         {Object.entries(groupedParts).map(([groupName, groupParts]) => (
           groupParts.length > 0 && (
-            <div key={groupName} className="rounded-lg border border-border overflow-hidden">
+            <div key={groupName} className={cn(viewMode === 'list' && "rounded-lg border border-border overflow-hidden")}>
               {/* Sticky Group Header */}
               {groupBy !== 'none' && (
                 <div className="sticky top-0 z-10 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 border-b py-3 px-4 flex items-center justify-between">
@@ -1312,7 +1370,20 @@ const PartsManager = () => {
                   </Badge>
                 </div>
               )}
-              
+
+              {viewMode === 'grid' ? (
+                <div className={cn(groupBy !== 'none' && 'p-3')}>
+                  <PartsGrid
+                    parts={groupParts}
+                    isPlaceholder={isPlaceholder}
+                    onEdit={(gp) => { const full = parts.find(p => p.id === gp.id); if (full) startEditing(full); }}
+                    onTogglePublish={(gp) => { const full = parts.find(p => p.id === gp.id); if (full) togglePublish(full); }}
+                    onDelete={(gp) => { const full = parts.find(p => p.id === gp.id); if (full) deletePart(full); }}
+                    togglingId={togglingId}
+                    deletingId={deleting}
+                  />
+                </div>
+              ) : (
               <Table>
                 <TableHeader>
                   <TableRow className="bg-foreground/5">
@@ -1401,6 +1472,7 @@ const PartsManager = () => {
                   ))}
                 </TableBody>
               </Table>
+              )}
             </div>
           )
         ))}
