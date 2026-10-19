@@ -69,7 +69,8 @@ async function nettoie(buf) {
   }
   let big = 0; comps.forEach((c, j) => { if (c.length > comps[big].length) big = j; });
   const petits = comps.filter((c, j) => j !== big && c.length < N * 0.0005);
-  const besoin = fantome > SEUIL || petits.length > 0;
+  // 19/10 dry 1 : déclencher sur les seuls débris = 929 photos retouchées pour rien (poussières invisibles). Fantômes seuls.
+  const besoin = fantome > SEUIL;
   if (!besoin) return { fantome, debris: 0 };
   const out = Buffer.from(data);
   for (let i = 0; i < N; i++) { const a = out[i * 4 + 3]; if (a >= 16 && a <= 230 && !pres[i]) out[i * 4 + 3] = 0; }
@@ -106,7 +107,7 @@ async function main() {
     const garde = photos.filter((p) => !p.casse);
     const aEcrire = (corrigees > 0 || cassees > 0) && transitoires === 0 && garde.length > 0;
     report.push({ id: s.id, slug: s.slug, nom: s.name, photos: photos.length, corrigees, cassees, transitoires, principaleCorrigee: !!photos[0]?.out, principaleCassee: !!photos[0]?.casse, aEcrire });
-    for (const [k, p] of photos.entries()) if (p.out && paires.length < 120) paires.push({ nom: `${s.name} #${k + 1}`, avant: p.buf, apres: p.out });
+    for (const [k, p] of photos.entries()) if (p.out) paires.push({ nom: `${s.name} #${k + 1} ${(p.fantome * 100).toFixed(1)}%`, f: p.fantome, avant: await sharp(p.buf, { failOn: 'none' }).resize(290, 260, { fit: 'inside' }).png().toBuffer(), apres: await sharp(p.out).resize(290, 260, { fit: 'inside' }).png().toBuffer() });
 
     if (MODE === 'write' && aEcrire) {
       const bufs = garde.map((p) => p.out || p.buf);
@@ -126,6 +127,7 @@ async function main() {
     }
   }
   // planches avant | après, 4 paires par ligne, 6 lignes par planche
+  paires.sort((a, b) => b.f - a.f); // pires d'abord
   const PER = 24;
   for (let p = 0; p * PER < paires.length; p++) {
     const part = paires.slice(p * PER, (p + 1) * PER); const comp = [];
