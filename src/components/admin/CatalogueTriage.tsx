@@ -58,6 +58,9 @@ function lireValveSure(name: string): string {
   const deg = n.match(/coud[ée]+e?\s?(\d{2,3})\s?°/);
   if (deg) return `Coudée ${deg[1]}°`;
   if (/coud/.test(n)) return "Coudée";
+  // 19/10 : « valve droite 28 mm » / « 32 mm » = longueur de tige, produits différents (CMM628 / CMM629 eWheel)
+  const longueur = n.match(/droite\s?(\d{2})\s?mm/);
+  if (longueur) return `Droite ${longueur[1]} mm`;
   if (/droite/.test(n)) return "Droite";
   const v = lireValve(name);
   return v === "—" ? "non écrite" : v;
