@@ -1,9 +1,10 @@
-import { useMemo, useState } from 'react';
+import { useEffect, useMemo, useState } from 'react';
 import { useQuery, useMutation, useQueryClient } from '@tanstack/react-query';
 import {
   Check, X, ChevronLeft, ChevronRight, Search, ImageOff, Loader2,
-  Disc, Plug, CircleDot, Gauge, LayoutList, Filter, Plus, ArrowDownWideNarrow,
+  Disc, Plug, CircleDot, Gauge, LayoutList, Filter, Plus, ArrowDownWideNarrow, Pencil,
 } from 'lucide-react';
+import type { TablesUpdate } from '@/integrations/supabase/types';
 import { supabase } from '@/integrations/supabase/client';
 import { Input } from '@/components/ui/input';
 import { Button } from '@/components/ui/button';
@@ -60,6 +61,124 @@ const CONF: Record<Confidence, { label: string; cls: string; dot: string }> = {
 const confOf = (r: CompatRow): Confidence =>
   !r.auto_suggested ? 'validated'
     : (['high', 'medium', 'low'] as const).includes(r.confidence_level as 'high') ? (r.confidence_level as Confidence) : 'medium';
+
+/* ── Pastilles de clés cliquables + éditeur (19/10) ──
+   Chaque clé de montage s'édite SUR PLACE — y compris caliper_family et
+   charge_connectors qui n'avaient aucun éditeur admin avant (SQL only).
+   NB : modifier une clé ne relance pas le moteur ; les nouvelles valeurs
+   serviront au prochain retrigger. */
+
+const KeyPill = ({ icon, children, empty, onClick, label }: {
+  icon?: React.ReactNode; children?: React.ReactNode; empty?: boolean; onClick: () => void; label: string;
+}) => (
+  <button
+    onClick={onClick}
+    title={`Modifier : ${label}`}
+    className={cn(
+      'group flex items-center gap-1 text-xs font-semibold px-2.5 py-1.5 min-h-[36px] rounded-full transition-all',
+      empty
+        ? 'border border-dashed border-[hsl(var(--admin-border))] text-[hsl(var(--admin-text-muted))] hover:border-[hsl(var(--admin-accent))] hover:text-[hsl(var(--admin-accent))]'
+        : 'bg-[hsl(var(--al15))] text-[hsl(var(--admin-text))] hover:ring-2 hover:ring-[hsl(var(--admin-accent)/0.4)]'
+    )}
+  >
+    {icon}
+    {children}
+    {!empty && <Pencil className="w-3 h-3 opacity-0 group-hover:opacity-60 transition-opacity" />}
+  </button>
+);
+
+const KeysEditDialog = ({ scooter, allScooters, open, onOpenChange }: {
+  scooter: StudioScooter; allScooters: StudioScooter[]; open: boolean; onOpenChange: (o: boolean) => void;
+}) => {
+  const qc = useQueryClient();
+  const [form, setForm] = useState({ tire_size: '', brake_type: '', caliper_family: '', connectors: '', voltage: '' });
+
+  useEffect(() => {
+    if (open) setForm({
+      tire_size: scooter.tire_size ?? '',
+      brake_type: scooter.brake_type ?? '',
+      caliper_family: scooter.caliper_family ?? '',
+      connectors: (scooter.charge_connectors ?? []).join(', '),
+      voltage: scooter.voltage != null ? String(scooter.voltage) : '',
+    });
+  }, [open, scooter]);
+
+  // Valeurs déjà en base sur d'autres modèles → datalists (pas d'invention de familles)
+  const knownCalipers = useMemo(() => [...new Set(allScooters.map(s => s.caliper_family).filter(Boolean) as string[])].sort(), [allScooters]);
+  const knownConnectors = useMemo(() => [...new Set(allScooters.flatMap(s => s.charge_connectors ?? []))].sort(), [allScooters]);
+
+  const save = useMutation({
+    mutationFn: async () => {
+      const volt = form.voltage.trim() === '' ? null : Number(form.voltage.replace(',', '.'));
+      if (volt !== null && !Number.isFinite(volt)) throw new Error('Voltage invalide');
+      const connectors = form.connectors.split(',').map(s => s.trim()).filter(Boolean);
+      const patch = {
+        tire_size: form.tire_size.trim() || null,
+        brake_type: form.brake_type || null,
+        caliper_family: form.caliper_family.trim() || null,
+        charge_connectors: connectors.length ? connectors : null,
+        voltage: volt,
+      } satisfies TablesUpdate<'scooter_models'>;
+      const { error } = await supabase.from('scooter_models').update(patch).eq('id', scooter.id);
+      if (error) throw error;
+    },
+    onSuccess: () => {
+      toast.success('Clés de montage mises à jour', { description: 'Elles seront prises en compte au prochain passage du moteur.' });
+      qc.invalidateQueries({ queryKey: ['studio-scooters'] });
+      onOpenChange(false);
+    },
+    onError: (e: Error) => toast.error(e.message || 'Erreur de mise à jour'),
+  });
+
+  const field = 'w-full h-10 px-3 rounded-lg bg-white border border-[hsl(var(--admin-border))] text-sm text-[hsl(var(--admin-text))] focus:outline-none focus:ring-2 focus:ring-[hsl(var(--admin-accent))]';
+  const lbl = 'text-[10px] font-black uppercase tracking-wider text-[hsl(var(--admin-text-muted))]';
+
+  return (
+    <Dialog open={open} onOpenChange={onOpenChange}>
+      <DialogContent className="admin-studio max-w-md">
+        <DialogHeader>
+          <DialogTitle className="font-display tracking-wide text-[hsl(var(--admin-text))]">CLÉS DE MONTAGE — {scooter.name.toUpperCase()}</DialogTitle>
+        </DialogHeader>
+        <div className="space-y-3">
+          <div className="grid grid-cols-2 gap-3">
+            <div className="space-y-1">
+              <p className={lbl}>Taille de pneu</p>
+              <input className={field} value={form.tire_size} onChange={e => setForm(f => ({ ...f, tire_size: e.target.value }))} placeholder="10x2.50" />
+            </div>
+            <div className="space-y-1">
+              <p className={lbl}>Voltage (V)</p>
+              <input className={field} inputMode="decimal" value={form.voltage} onChange={e => setForm(f => ({ ...f, voltage: e.target.value }))} placeholder="52" />
+            </div>
+          </div>
+          <div className="space-y-1">
+            <p className={lbl}>Freinage</p>
+            <select className={field} value={form.brake_type} onChange={e => setForm(f => ({ ...f, brake_type: e.target.value }))}>
+              <option value="">— non renseigné —</option>
+              {Object.entries(BRAKE_FR).map(([k, v]) => <option key={k} value={k}>{v}</option>)}
+            </select>
+          </div>
+          <div className="space-y-1">
+            <p className={lbl}>Famille d'étrier</p>
+            <input className={field} list="pt-calipers" value={form.caliper_family} onChange={e => setForm(f => ({ ...f, caliper_family: e.target.value }))} placeholder="Zoom / NUTT / Xtech…" />
+            <datalist id="pt-calipers">{knownCalipers.map(c => <option key={c} value={c} />)}</datalist>
+          </div>
+          <div className="space-y-1">
+            <p className={lbl}>Prises de charge (séparées par des virgules)</p>
+            <input className={field} list="pt-connectors" value={form.connectors} onChange={e => setForm(f => ({ ...f, connectors: e.target.value }))} placeholder="GX16-3P, DC 5.5x2.1" />
+            <datalist id="pt-connectors">{knownConnectors.map(c => <option key={c} value={c} />)}</datalist>
+            <p className="text-[11px] text-[hsl(var(--admin-text-muted))]">Valeurs connues : {knownConnectors.slice(0, 6).join(' · ') || '—'}</p>
+          </div>
+          <div className="flex justify-end gap-2 pt-1">
+            <Button variant="outline" className="bg-white border-[hsl(var(--admin-border))]" onClick={() => onOpenChange(false)}>Annuler</Button>
+            <Button className="bg-green-700 hover:bg-green-800 text-white gap-1.5" disabled={save.isPending} onClick={() => save.mutate()}>
+              {save.isPending ? <Loader2 className="w-4 h-4 animate-spin" /> : <Check className="w-4 h-4" />} Enregistrer
+            </Button>
+          </div>
+        </div>
+      </DialogContent>
+    </Dialog>
+  );
+};
 
 /* ── Données ── */
 
@@ -188,6 +307,7 @@ const CompatStudio = ({ onClassic }: { onClassic: () => void }) => {
   const [catFilter, setCatFilter] = useState<string>('all');
   const [addOpen, setAddOpen] = useState(false);
   const [addSearch, setAddSearch] = useState('');
+  const [keysOpen, setKeysOpen] = useState(false);
   const { data: counts_by_scooter } = useCompatCounts();
 
   const scooter = scooters.find(s => s.id === selectedId) ?? null;
@@ -438,14 +558,28 @@ const CompatStudio = ({ onClassic }: { onClassic: () => void }) => {
                     </Button>
                   </div>
                 </div>
-                {/* Clés de montage */}
+                {/* Clés de montage — pastilles CLIQUABLES, les manquantes aussi (19/10) */}
                 <div className="flex flex-wrap gap-1.5 mt-2">
-                  {scooter.tire_size && <span className="flex items-center gap-1 text-xs font-semibold px-2.5 py-1.5 rounded-full bg-[hsl(var(--al15))] text-[hsl(var(--admin-text))]"><CircleDot className="w-3.5 h-3.5" />{scooter.tire_size}</span>}
-                  {scooter.brake_type && <span className="flex items-center gap-1 text-xs font-semibold px-2.5 py-1.5 rounded-full bg-[hsl(var(--al15))] text-[hsl(var(--admin-text))]"><Disc className="w-3.5 h-3.5" />{BRAKE_FR[scooter.brake_type] ?? scooter.brake_type}</span>}
-                  {scooter.caliper_family && <span className="text-xs font-semibold px-2.5 py-1.5 rounded-full bg-[hsl(var(--al15))] text-[hsl(var(--admin-text))]">Étrier {scooter.caliper_family}</span>}
-                  {(scooter.charge_connectors ?? []).map(c => <span key={c} className="flex items-center gap-1 text-xs font-semibold px-2.5 py-1.5 rounded-full bg-[hsl(var(--al15))] text-[hsl(var(--admin-text))]"><Plug className="w-3.5 h-3.5" />{c}</span>)}
-                  {scooter.voltage && <span className="flex items-center gap-1 text-xs font-semibold px-2.5 py-1.5 rounded-full bg-[hsl(var(--al15))] text-[hsl(var(--admin-text))]"><Gauge className="w-3.5 h-3.5" />{scooter.voltage} V</span>}
+                  <KeyPill label="taille de pneu" icon={<CircleDot className="w-3.5 h-3.5" />} empty={!scooter.tire_size} onClick={() => setKeysOpen(true)}>
+                    {scooter.tire_size ?? '+ Pneu'}
+                  </KeyPill>
+                  <KeyPill label="freinage" icon={<Disc className="w-3.5 h-3.5" />} empty={!scooter.brake_type} onClick={() => setKeysOpen(true)}>
+                    {scooter.brake_type ? (BRAKE_FR[scooter.brake_type] ?? scooter.brake_type) : '+ Frein'}
+                  </KeyPill>
+                  <KeyPill label="famille d'étrier" empty={!scooter.caliper_family} onClick={() => setKeysOpen(true)}>
+                    {scooter.caliper_family ? `Étrier ${scooter.caliper_family}` : '+ Étrier'}
+                  </KeyPill>
+                  {(scooter.charge_connectors ?? []).map(c => (
+                    <KeyPill key={c} label="prises de charge" icon={<Plug className="w-3.5 h-3.5" />} onClick={() => setKeysOpen(true)}>{c}</KeyPill>
+                  ))}
+                  {!(scooter.charge_connectors ?? []).length && (
+                    <KeyPill label="prises de charge" icon={<Plug className="w-3.5 h-3.5" />} empty onClick={() => setKeysOpen(true)}>+ Prise</KeyPill>
+                  )}
+                  <KeyPill label="voltage" icon={<Gauge className="w-3.5 h-3.5" />} empty={scooter.voltage == null} onClick={() => setKeysOpen(true)}>
+                    {scooter.voltage != null ? `${scooter.voltage} V` : '+ Voltage'}
+                  </KeyPill>
                 </div>
+                <KeysEditDialog scooter={scooter} allScooters={scooters} open={keysOpen} onOpenChange={setKeysOpen} />
                 {/* Progression */}
                 <div className="mt-auto pt-3">
                   <div className="flex items-center justify-between text-xs text-[hsl(var(--admin-text-muted))] mb-1">
