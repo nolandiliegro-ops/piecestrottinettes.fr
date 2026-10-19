@@ -26,6 +26,7 @@ export interface GridPart {
   meta_title: string | null;
   meta_description: string | null;
   category: { name: string } | null;
+  part_suppliers?: { supplier_name: string }[] | null;
 }
 
 interface PartsGridProps {
@@ -84,7 +85,7 @@ const PartCard = ({
       {/* Photo — grande, cliquable */}
       <button
         onClick={() => onEdit(part)}
-        className="relative aspect-square bg-white flex items-center justify-center group"
+        className="relative h-32 w-full bg-white flex items-center justify-center group"
         aria-label={`Modifier ${part.name}`}
       >
         {hasImage ? (
@@ -92,7 +93,7 @@ const PartCard = ({
             src={part.image_url as string}
             alt={part.name}
             loading="lazy"
-            className="w-full h-full object-contain p-3 transition-transform duration-200 group-hover:scale-[1.04]"
+            className="w-full h-full object-contain p-2 transition-transform duration-200 group-hover:scale-[1.04]"
           />
         ) : (
           <div className="flex flex-col items-center gap-1 text-[hsl(var(--admin-text-muted))]">
@@ -129,15 +130,18 @@ const PartCard = ({
       </button>
 
       {/* Infos */}
-      <div className="flex-1 flex flex-col px-3 pt-2 pb-3 gap-1 border-t border-[hsl(var(--admin-border))]">
+      <div className="flex-1 flex flex-col px-2.5 pt-1.5 pb-2 gap-0.5 border-t border-[hsl(var(--admin-border))]">
         <button onClick={() => onEdit(part)} className="text-left">
-          <p className="text-sm font-semibold leading-snug line-clamp-2 text-[hsl(var(--admin-text))]">{part.name}</p>
+          <p className="text-[12px] font-semibold leading-snug line-clamp-2 min-h-[32px] text-[hsl(var(--admin-text))]">{part.name}</p>
         </button>
-        <p className="text-[11px] text-[hsl(var(--admin-text-muted))] truncate">
+        <p className="text-[10px] text-[hsl(var(--admin-text-muted))] truncate">
           {part.category?.name || 'Sans catégorie'}{part.sku ? ` · ${part.sku}` : ''}
         </p>
+        <p className="text-[10px] font-semibold uppercase tracking-wide text-[hsl(var(--admin-accent))] truncate">
+          {(part.part_suppliers ?? []).map(ps => ps.supplier_name).join(' · ') || '\u00a0'}
+        </p>
         <div className="mt-auto flex items-center justify-between pt-1">
-          <p className="text-base font-black text-[hsl(var(--admin-text))]">
+          <p className="text-[13px] font-black text-[hsl(var(--admin-text))]">
             {part.price != null ? `${part.price} €` : '—'}
           </p>
           <div className="flex items-center gap-1.5">
@@ -201,7 +205,7 @@ const PartCard = ({
 
 /** Grille catalogue : grandes photos, actions directes — plus besoin d'ouvrir la fiche pour publier ou juger. */
 const PartsGrid = ({ parts, isPlaceholder, onEdit, onTogglePublish, onDelete, togglingId, deletingId }: PartsGridProps) => (
-  <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 2xl:grid-cols-5 gap-3">
+  <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 2xl:grid-cols-6 gap-2.5">
     {parts.map(part => (
       <PartCard
         key={part.id}

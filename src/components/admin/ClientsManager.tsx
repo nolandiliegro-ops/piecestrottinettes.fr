@@ -65,6 +65,11 @@ interface ClientRow {
   performancePoints: number;
   orders: ClientOrder[];
   lastContactMessageId: string | null;
+  avatarUrl: string | null;
+  username: string | null;
+  themeKey: string | null;
+  isPublic: boolean;
+  riderLocation: string | null;
 }
 
 const FILTERS: { id: FilterId; label: string }[] = [
@@ -109,12 +114,13 @@ function useClientsData() {
     queryKey: ['admin-clients-consolidated-v2'],
     staleTime: 60_000,
     queryFn: async (): Promise<ClientRow[]> => {
-      const [profilesRes, ordersRes, garageRes, messagesRes, contactsRes] = await Promise.all([
-        supabase.from('profiles').select('id, display_name, performance_points, created_at'),
+      const [profilesRes, ordersRes, garageRes, messagesRes, contactsRes, themesRes] = await Promise.all([
+        supabase.from('profiles').select('id, display_name, performance_points, created_at, avatar_url, username, active_theme_key, is_public, rider_location'),
         supabase.from('orders').select('id, order_number, user_id, customer_email, customer_first_name, customer_last_name, customer_phone, total_ttc, status, created_at').order('created_at', { ascending: false }),
         supabase.from('user_garage').select('user_id, nickname, scooter_models(name, power_watts, range_km, brands!scooter_models_brand_id_fkey(name))'),
         supabase.from('order_messages').select('id, user_id, message, created_at, sender_type, contact_message_id').order('created_at', { ascending: false }).limit(3000),
         supabase.from('contact_messages').select('id, email, name, matched_user_id, created_at, message').order('created_at', { ascending: false }),
+        supabase.from('garage_themes').select('key, image_url'),
       ]);
 
       const profiles = profilesRes.data ?? [];
@@ -122,6 +128,7 @@ function useClientsData() {
       const garage = garageRes.data ?? [];
       const messages = messagesRes.data ?? [];
       const contacts = contactsRes.data ?? [];
+      const themeImages = new Map<string, string>((themesRes.data ?? []).map((t: { key: string; image_url: string }) => [t.key, t.image_url]));
 
       // Map user_id -> email (via orders or contacts)
       const userIdToEmail = new Map<string, string>();
@@ -151,6 +158,7 @@ function useClientsData() {
             scooters: [], messages: [], messagesCount: 0, lastMessage: null,
             lastActivity: null, source: 'Inscription', isActive: false,
             performancePoints: 0, orders: [], lastContactMessageId: null,
+            avatarUrl: null, username: null, themeKey: null, isPublic: false, riderLocation: null,
           };
           map.set(key, c);
         }
@@ -166,6 +174,12 @@ function useClientsData() {
         c.name = c.name || p.display_name || 'Rider';
         c.registeredAt = !c.registeredAt || (p.created_at && p.created_at < c.registeredAt) ? p.created_at : c.registeredAt;
         c.performancePoints = Math.max(c.performancePoints, p.performance_points ?? 0);
+        const pr = p as { avatar_url?: string | null; username?: string | null; is_public?: boolean; rider_location?: string | null; active_theme_key?: string | null };
+        c.avatarUrl = c.avatarUrl ?? pr.avatar_url ?? null;
+        c.username = c.username ?? pr.username ?? null;
+        c.isPublic = c.isPublic || !!pr.is_public;
+        c.riderLocation = c.riderLocation ?? pr.rider_location ?? null;
+        if (pr.active_theme_key && !c.themeKey) c.themeKey = themeImages.get(pr.active_theme_key) ?? null; // URL du wallpaper
         if (c.source === 'Inscription' || c.source === 'Guest') c.source = 'Inscription';
       });
 
@@ -438,6 +452,30 @@ function ClientDetailSheet({
   const [sendOpen, setSendOpen] = useState(false);
   const open = !!client;
 
+  // Ce qu'il achète le plus — agrégé sur ses commandes encaissées
+  const paidOrderIds = (client?.orders ?? [])
+    .filter(o => ['paid', 'processing', 'shipped', 'delivered'].includes(o.status))
+    .map(o => o.id);
+  const { data: topBuys = [] } = useQuery({
+    queryKey: ['client-top-buys', client?.key, paidOrderIds.length],
+    enabled: open && paidOrderIds.length > 0,
+    queryFn: async () => {
+      const { data, error } = await supabase
+        .from('order_items')
+        .select('part_name, part_image_url, quantity, line_total')
+        .in('order_id', paidOrderIds);
+      if (error) throw error;
+      const agg = new Map<string, { name: string; image: string | null; qty: number; total: number }>();
+      (data ?? []).forEach(it => {
+        const a = agg.get(it.part_name) ?? { name: it.part_name, image: it.part_image_url, qty: 0, total: 0 };
+        a.qty += it.quantity; a.total += Number(it.line_total ?? 0);
+        if (!a.image && it.part_image_url) a.image = it.part_image_url;
+        agg.set(it.part_name, a);
+      });
+      return [...agg.values()].sort((a, b) => b.qty - a.qty).slice(0, 4);
+    },
+  });
+
   return (
     <Sheet open={open} onOpenChange={(o) => !o && onClose()}>
       <SheetContent
@@ -446,12 +484,30 @@ function ClientDetailSheet({
       >
         {client && (
           <>
-            {/* HEADER */}
-            <SheetHeader className="p-6 border-b border-[hsl(var(--al18))] space-y-3">
-              <div className="flex items-start gap-4">
-                <div className="w-14 h-14 rounded-full bg-gradient-to-br from-primary/40 to-primary/10 flex items-center justify-center text-primary font-bold text-xl shrink-0 ring-1 ring-primary/30">
+            {/* HEADER — hub rider : wallpaper du garage en fond, avatar, carte publique */}
+            <SheetHeader className="relative p-6 border-b border-[hsl(var(--al18))] space-y-3 overflow-hidden">
+              {client.themeKey && (
+                <>
+                  <div
+                    className="absolute inset-0 bg-cover bg-center"
+                    style={{ backgroundImage: `url(${client.themeKey})` }}
+                    aria-hidden
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-b from-black/10 via-[hsl(var(--al10))]/80 to-[hsl(var(--al10))]" aria-hidden />
+                </>
+              )}
+              <div className="relative flex items-start gap-4">
+                {client.avatarUrl ? (
+                  <img
+                    src={client.avatarUrl}
+                    alt={client.name}
+                    className="w-16 h-16 rounded-full object-cover shrink-0 ring-2 ring-white shadow-md"
+                  />
+                ) : (
+                <div className="w-16 h-16 rounded-full bg-gradient-to-br from-primary/40 to-primary/10 flex items-center justify-center text-primary font-bold text-xl shrink-0 ring-2 ring-white shadow-md">
                   {(client.name || client.email).charAt(0).toUpperCase()}
                 </div>
+                )}
                 <div className="min-w-0 flex-1">
                   <SheetTitle className="text-[hsl(var(--al95))] truncate text-left text-lg">
                     {client.name}
@@ -479,8 +535,23 @@ function ClientDetailSheet({
                     )}>
                       {client.isActive ? 'Actif' : 'Inactif'}
                     </span>
+                    {client.riderLocation && (
+                      <span className="inline-flex items-center px-2 py-0.5 rounded-full text-[10px] font-semibold bg-[hsl(var(--aov06))] text-[hsl(var(--al55))]">
+                        {client.riderLocation}
+                      </span>
+                    )}
                   </div>
                 </div>
+                {client.username && client.isPublic && (
+                  <a
+                    href={`/rider/${client.username}`}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="shrink-0 text-xs font-bold px-3 py-2 min-h-[40px] inline-flex items-center rounded-lg bg-white/90 border border-[hsl(var(--al18))] text-[hsl(var(--al95))] hover:bg-white shadow-sm"
+                  >
+                    Carte rider ↗
+                  </a>
+                )}
               </div>
 
               {/* Stats grid */}
@@ -490,6 +561,24 @@ function ClientDetailSheet({
                 <StatCard icon={ShoppingBag} label="Panier moy." value={formatPrice(client.avgCart)} />
                 <StatCard icon={MessageSquare} label="Msg" value={String(client.messagesCount)} />
               </div>
+
+              {/* Ce qu'il achète le plus */}
+              {topBuys.length > 0 && (
+                <div className="relative">
+                  <p className="text-[10px] font-black uppercase tracking-wide text-[hsl(var(--al55))] mb-1.5">Il achète le plus</p>
+                  <div className="grid grid-cols-4 gap-2">
+                    {topBuys.map(b => (
+                      <div key={b.name} className="bg-white rounded-xl border border-[hsl(var(--al18))] p-1.5 flex flex-col items-center gap-1" title={b.name}>
+                        {b.image
+                          ? <img src={b.image} alt={b.name} className="w-12 h-12 object-contain" />
+                          : <div className="w-12 h-12 rounded bg-[hsl(var(--al15))]" />}
+                        <p className="text-[10px] font-semibold text-center leading-tight line-clamp-2 text-[hsl(var(--al95))]">{b.name}</p>
+                        <p className="text-[10px] font-bold text-[hsl(var(--admin-accent))]">×{b.qty}</p>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              )}
 
               {/* Action */}
               <TooltipProvider>

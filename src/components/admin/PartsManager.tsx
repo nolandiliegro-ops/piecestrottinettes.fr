@@ -55,6 +55,7 @@ interface Part {
   is_featured?: boolean;
   price_override?: boolean;
   attributes: ProductAttribute[] | null;
+  part_suppliers?: { supplier_name: string }[] | null;
 }
 
 interface Category {
@@ -182,7 +183,7 @@ const PartsManager = () => {
     try {
       const { data, error } = await supabase
         .from('parts')
-        .select('id, name, slug, slug_locked_at, published, price, price_override, stock_quantity, image_url, category_id, description, difficulty_level, estimated_install_time_minutes, required_tools, youtube_video_id, technical_metadata, attributes, sku, min_stock_alert, meta_title, meta_description, created_at, is_featured, category:categories(name)')
+        .select('id, name, slug, slug_locked_at, published, price, price_override, stock_quantity, image_url, category_id, description, difficulty_level, estimated_install_time_minutes, required_tools, youtube_video_id, technical_metadata, attributes, sku, min_stock_alert, meta_title, meta_description, created_at, is_featured, category:categories(name), part_suppliers(supplier_name)')
         .order('name');
 
       if (error) throw error;
@@ -245,7 +246,7 @@ const PartsManager = () => {
           price_override: newPart.price_override || !!newPart.price,
           attributes: (cleanAttributes.length ? cleanAttributes : null) as Json
         } as TablesInsert<'parts'> & { attributes?: Json })
-        .select('id, name, slug, slug_locked_at, published, price, price_override, stock_quantity, image_url, category_id, description, difficulty_level, estimated_install_time_minutes, required_tools, youtube_video_id, technical_metadata, attributes, sku, min_stock_alert, meta_title, meta_description, is_featured, category:categories(name)')
+        .select('id, name, slug, slug_locked_at, published, price, price_override, stock_quantity, image_url, category_id, description, difficulty_level, estimated_install_time_minutes, required_tools, youtube_video_id, technical_metadata, attributes, sku, min_stock_alert, meta_title, meta_description, is_featured, category:categories(name), part_suppliers(supplier_name)')
         .single();
 
       if (error) throw error;
