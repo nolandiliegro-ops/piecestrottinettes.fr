@@ -1,0 +1,122 @@
+{
+ "displayName": "iScooter i10",
+ "metaTitle": "iScooter i10 : fiche technique et pièces",
+ "metaDescription": "iScooter i10 : moteur 650 W, batterie 15 Ah, pneus 10x2.50 (60/70-6.5), suspensions avant et arrière, IP54. Fiche, entretien et pièces compatibles.",
+ "intro": [
+  "L'iScooter i10 est une trottinette de ville d'entrée de gamme, vendue surtout en ligne. Elle reprend une recette simple : un moteur de 650 W, une batterie de 15 Ah, des pneus de 10 pouces et des suspensions à l'avant comme à l'arrière. Aucun test de presse français n'a été publié sur ce modèle : les chiffres ci-dessous viennent des fiches du constructeur et des revendeurs.",
+  "Les fiches ne s'accordent pas toutes sur la tension de la batterie ni sur le poids. Elle est livrée bridée à 25 km/h, la vitesse autorisée sur la voie publique en France ; les 40 km/h annoncés débridée ne concernent que le terrain privé."
+ ],
+ "specs": [
+  [
+   "Moteur",
+   "650 W"
+  ],
+  [
+   "Vitesse",
+   "25 km/h sur la voie publique (40 km/h annoncés débridée, terrain privé)"
+  ],
+  [
+   "Batterie",
+   "15 Ah ; 36 V selon Cdiscount et la fiche iScooter (42 V en fin de charge), 48 V chez iScooter France"
+  ],
+  [
+   "Autonomie annoncée",
+   "jusqu'à 45 km (selon iScooter France)"
+  ],
+  [
+   "Poids",
+   "19 à 20 kg selon les fiches"
+  ],
+  [
+   "Roues",
+   "10 pouces, 10x2.50 (60/70-6.5)"
+  ],
+  [
+   "Freins",
+   "disque à l'arrière, frein électronique (EBAS) à l'avant selon iScooter"
+  ],
+  [
+   "Suspension",
+   "avant et arrière"
+  ],
+  [
+   "Étanchéité",
+   "IP54"
+  ],
+  [
+   "Temps de charge",
+   "6 à 8 h"
+  ]
+ ],
+ "pros": [
+  "Suspensions à l'avant et à l'arrière avec des pneus de 10 pouces, pour encaisser les pavés et les trottoirs abaissés.",
+  "Indice IP54 annoncé par le constructeur et le distributeur français.",
+  "Pneus 10x2.50 (60/70-6.5) : une dimension très courante, facile à remplacer."
+ ],
+ "cons": [
+  "Aucun test de presse français : les chiffres viennent uniquement des fiches marchandes.",
+  "Les fiches se contredisent sur la tension de la batterie (36, 42 ou 48 V) : vérifie l'étiquette de ta batterie avant d'acheter un chargeur.",
+  "Sa vitesse débridée n'est utilisable que sur terrain privé : en France, la voie publique est limitée à 25 km/h."
+ ],
+ "parts": [
+  {
+   "label": "Pneu",
+   "size": "10x2.50 (60/70-6.5)",
+   "count": 14,
+   "to": "/piece/pneu-tubeless-60-70-6-5-wanda",
+   "cta": "Pneus 60/70-6.5"
+  },
+  {
+   "label": "Chambre à air",
+   "size": "10x2.50, valve droite ou coudée",
+   "count": 6,
+   "to": "/piece/chambre-a-air-10x250-valve-0x90",
+   "cta": "Chambres à air"
+  }
+ ],
+ "care": [
+  "Contrôle la pression des pneus chaque semaine : en 10x2.50, un pneu sous-gonflé pince la chambre à air au premier trottoir.",
+  "Le disque arrière est le frein mécanique principal : surveille l'usure des plaquettes et serre le câble dès que le levier s'allonge.",
+  "Avec deux suspensions, vérifie régulièrement le serrage des axes de bras et de la potence : le jeu s'installe vite sur pavés."
+ ],
+ "faq": [
+  {
+   "q": "Quelle taille de pneu pour l'iScooter i10 ?",
+   "a": "Des pneus de 10 pouces en 10x2.50, aussi notés 60/70-6.5, sur une jante de 6,5 pouces."
+  },
+  {
+   "q": "Quelle chambre à air pour l'iScooter i10 ?",
+   "a": "Une chambre à air 10x2.50. Choisis la forme de valve (droite ou coudée) qui correspond à ta jante."
+  },
+  {
+   "q": "Quelles plaquettes pour l'iScooter i10 ?",
+   "a": "Le frein arrière est à disque, mais le modèle d'étrier n'est pas publié par iScooter. Compare la forme de ta plaquette avant de commander."
+  },
+  {
+   "q": "Quel chargeur pour l'iScooter i10 ?",
+   "a": "Les fiches ne s'accordent pas sur la tension (36, 42 ou 48 V selon les vendeurs). Relève la tension et la prise inscrites sur ton chargeur d'origine avant d'en commander un."
+  },
+  {
+   "q": "La iScooter i10 est-elle légale en France ?",
+   "a": "Oui sur la voie publique à condition d'être bridée à 25 km/h, comme toute trottinette électrique. Débridée, elle n'est utilisable que sur terrain privé."
+  }
+ ],
+ "sources": [
+  {
+   "label": "iScooter — fiche i10",
+   "url": "https://iscooter.com/pages/i10"
+  },
+  {
+   "label": "iScooter France — i10 650 W",
+   "url": "https://iscooter-france.com/en/products/electric-scooter-iscooter-i10-650w"
+  },
+  {
+   "label": "Cdiscount — iScooter i10 650 W 36 V 15 Ah",
+   "url": "https://www.cdiscount.com/le-sport/mobilite-urbaine/trottinette-electrique-iscooter-i10-650w-36v15ah-a/f-1214801-auc1715766999890.html"
+  },
+  {
+   "label": "Ministère de la Transition écologique — réglementation des trottinettes",
+   "url": "https://www.ecologie.gouv.fr/politiques-publiques/trottinettes-electriques-edpm-reglementation-vigueur"
+  }
+ ]
+}

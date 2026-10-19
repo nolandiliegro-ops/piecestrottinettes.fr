@@ -1,0 +1,114 @@
+{
+ "displayName": "iScooter i10 Max",
+ "metaTitle": "iScooter i10 Max : fiche technique, avis et pièces",
+ "metaDescription": "iScooter i10 Max : moteur 750 W, batterie 48 V, 21,2 kg, pneus 10 pouces et suspensions avant et arrière. Versions 15,6 et 18 Ah, avis et entretien.",
+ "intro": [
+  "L'iScooter i10 Max est la version longue distance de la série i10. Elle garde le format d'une trottinette de ville, avec des pneus de 10 pouces et des suspensions avant et arrière, mais passe à un moteur de 750 W et à une batterie de 48 V. Elle pèse 21,2 kg selon le distributeur Electric House et le test HOC.",
+  "Attention aux versions : selon le vendeur, la batterie fait 15,6 Ah ou 18 Ah, et l'autonomie annoncée passe de 80 à 96 km. Elle est livrée bridée à 25 km/h pour la voie publique ; les 45 km/h annoncés ne concernent que le terrain privé."
+ ],
+ "specs": [
+  [
+   "Moteur",
+   "750 W"
+  ],
+  [
+   "Vitesse",
+   "25 km/h sur la voie publique (45 km/h annoncés débridée, terrain privé)"
+  ],
+  [
+   "Batterie",
+   "48 V, 15,6 Ah (selon Electric House) ou 18 Ah (selon Fnac et HOC)"
+  ],
+  [
+   "Autonomie annoncée",
+   "jusqu'à 80 km en 15,6 Ah (selon Electric House), 80 à 96 km en 18 Ah (selon iScooter)"
+  ],
+  [
+   "Poids",
+   "21,2 kg"
+  ],
+  [
+   "Roues",
+   "10 pouces, pneumatiques"
+  ],
+  [
+   "Freins",
+   "tambour avant et disque arrière (selon Electric House)"
+  ],
+  [
+   "Suspension",
+   "avant et arrière"
+  ],
+  [
+   "Temps de charge",
+   "6 à 7 h (selon Electric House), 8 à 9 h en 18 Ah (selon HOC)"
+  ]
+ ],
+ "pros": [
+  "Convaincante pour les longs trajets urbains, avec une puissance et une autonomie annoncée adaptées à cet usage (HOC).",
+  "Batterie de 48 V et moteur de 750 W dans un format de trottinette de ville de 10 pouces.",
+  "Suspensions à l'avant et à l'arrière pour le confort sur chaussée abîmée."
+ ],
+ "cons": [
+  "21,2 kg : se porte, mais pas sur un long escalier (HOC).",
+  "Deux capacités de batterie circulent sous le même nom : vérifie la tienne (15,6 ou 18 Ah) avant de te fier à un chiffre d'autonomie.",
+  "Aucun test de presse français publié : les chiffres viennent des fiches marchandes et d'un test étranger.",
+  "Sa vitesse débridée n'est utilisable que sur terrain privé : en France, la voie publique est limitée à 25 km/h."
+ ],
+ "parts": [],
+ "care": [
+  "Contrôle la pression des pneus chaque semaine : sur 10 pouces gonflables, un pneu mou s'use vite et crève plus facilement.",
+  "Serre le câble du frein arrière dès que le levier s'allonge : c'est lui qui travaille le plus dans les descentes.",
+  "Avant une longue sortie, vérifie le serrage de la potence et des axes de suspension."
+ ],
+ "faq": [
+  {
+   "q": "Quelle taille de pneu pour l'iScooter i10 Max ?",
+   "a": "Des pneus gonflables de 10 pouces. La dimension exacte n'est pas publiée par iScooter : relève le marquage sur le flanc de ton pneu avant d'en commander un."
+  },
+  {
+   "q": "Quelle différence entre l'i10 Max 15,6 Ah et 18 Ah ?",
+   "a": "La capacité de la batterie : 15,6 Ah (environ 80 km annoncés selon Electric House) ou 18 Ah (80 à 96 km annoncés selon iScooter). Le moteur de 750 W et le poids de 21,2 kg sont les mêmes sur les fiches."
+  },
+  {
+   "q": "Quelle est l'autonomie réelle de l'iScooter i10 Max ?",
+   "a": "Aucune mesure indépendante n'a été publiée en France. Les chiffres de 80 à 96 km sont des valeurs constructeur, obtenues dans des conditions favorables."
+  },
+  {
+   "q": "Combien de temps pour recharger l'iScooter i10 Max ?",
+   "a": "6 à 7 heures selon Electric House, 8 à 9 heures pour la version 18 Ah selon le test HOC."
+  },
+  {
+   "q": "La iScooter i10 Max est-elle légale en France ?",
+   "a": "Oui sur la voie publique à condition d'être bridée à 25 km/h, comme toute trottinette électrique. Débridée, elle n'est utilisable que sur terrain privé."
+  }
+ ],
+ "sources": [
+  {
+   "label": "iScooter — fiche i10 Max",
+   "url": "https://iscooter.com/pages/i10max"
+  },
+  {
+   "label": "Electric House — iScooter i10 Max",
+   "url": "https://electrichouse.fr/accueil/239-trottinette-electrique-iscooter-i10-max.html"
+  },
+  {
+   "label": "HOC — test iScooter i10 Max",
+   "url": "https://fr.hoc.hu/iscooter-i10-max-750-wattos-erogep-biztositas-nelkul/"
+  },
+  {
+   "label": "Fnac — iScooter i10 Max 48 V 18 Ah",
+   "url": "https://www.fnac.com/Trottinette-Electrique-iScooter-i10Max-48V18Ah-750-W-Autonomie-80-96-km-10-Pouces-Pneu/mp50051242/avis"
+  },
+  {
+   "label": "Ministère de la Transition écologique — réglementation des trottinettes",
+   "url": "https://www.ecologie.gouv.fr/politiques-publiques/trottinettes-electriques-edpm-reglementation-vigueur"
+  }
+ ],
+ "video": {
+  "id": "NKLGc5IjVDI",
+  "title": "iScooter i10MAX - UNE TROTTINETTE ÉLECTRIQUE PAS CHÈRE AVEC UNE BATTERIE 48V 18Ah !!",
+  "channel": "TaytechTV",
+  "uploadDate": "2024-11-11"
+ }
+}

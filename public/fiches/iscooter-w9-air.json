@@ -1,0 +1,114 @@
+{
+ "displayName": "iScooter W9 Air",
+ "metaTitle": "iScooter W9 Air : fiche technique et pièces",
+ "metaDescription": "iScooter W9 Air : 800 W, batterie 48 V 10 Ah (480 Wh), 22,7 kg, pneus 10 pouces tout-terrain, double suspension, IPX4. Fiche technique et entretien.",
+ "intro": [
+  "L'iScooter W9 Air (écrite W9Air par la marque) est la petite sœur de la W9 : moteur de 800 W selon iScooter, batterie de 48 V et 10 Ah, soit 480 Wh, pneus gonflables tout-terrain de 10 pouces et double suspension. Elle annonce jusqu'à 40 km d'autonomie et pèse 22,7 kg.",
+  "Elle freine avec un disque à l'avant et à l'arrière. Darty annonce une puissance nominale de 500 W et une vitesse bridée à 25 km/h ; les 40 km/h de la fiche iScooter ne concernent que le terrain privé. Aucun test de presse français n'a été publié."
+ ],
+ "specs": [
+  [
+   "Moteur",
+   "800 W selon iScooter (500 W nominaux selon Darty)"
+  ],
+  [
+   "Vitesse",
+   "25 km/h sur la voie publique (40 km/h annoncés, terrain privé)"
+  ],
+  [
+   "Batterie",
+   "48 V, 10 Ah (480 Wh)"
+  ],
+  [
+   "Autonomie annoncée",
+   "jusqu'à 40 km"
+  ],
+  [
+   "Poids",
+   "22,7 kg"
+  ],
+  [
+   "Roues",
+   "10 pouces, pneus gonflables tout-terrain"
+  ],
+  [
+   "Freins",
+   "disques avant et arrière"
+  ],
+  [
+   "Suspension",
+   "avant et arrière"
+  ],
+  [
+   "Étanchéité",
+   "IPX4"
+  ],
+  [
+   "Temps de charge",
+   "6 à 8 h (selon Darty)"
+  ]
+ ],
+ "pros": [
+  "Double suspension et pneus tout-terrain de 10 pouces.",
+  "Deux freins à disque.",
+  "Batterie de 480 Wh pour 40 km annoncés."
+ ],
+ "cons": [
+  "22,7 kg : elle se porte difficilement.",
+  "IPX4 seulement : pluie légère et projections, pas plus.",
+  "Aucun test de presse français : les chiffres viennent des fiches marchandes.",
+  "Sa vitesse maximale n'est utilisable que sur terrain privé : en France, la voie publique est limitée à 25 km/h."
+ ],
+ "parts": [],
+ "care": [
+  "Freins à disque : reprends la tension des câbles dès que le levier s'allonge.",
+  "Contrôle la pression des pneus avant chaque sortie en chemin.",
+  "Vérifie le serrage de la potence et des axes de suspension chaque mois."
+ ],
+ "faq": [
+  {
+   "q": "Quelle taille de pneu pour l'iScooter W9 Air ?",
+   "a": "Des pneus tout-terrain de 10 pouces. La dimension exacte n'est pas publiée par iScooter : relève le marquage sur le flanc de ton pneu."
+  },
+  {
+   "q": "Quelle différence entre l'iScooter W9 Air et la W9 ?",
+   "a": "La W9 Air a un moteur de 800 W et une batterie de 10 Ah pour 40 km annoncés ; la W9 monte à 1 000 W et 14 Ah pour 45 km annoncés."
+  },
+  {
+   "q": "Quelles plaquettes pour l'iScooter W9 Air ?",
+   "a": "Le modèle d'étrier n'est pas publié par iScooter : compare la forme de ta plaquette avant de commander."
+  },
+  {
+   "q": "Quel chargeur pour l'iScooter W9 Air ?",
+   "a": "Un chargeur 48 V. La prise n'est pas précisée par iScooter : vérifie celle de ta trottinette avant d'en commander un."
+  },
+  {
+   "q": "La iScooter W9 Air est-elle légale en France ?",
+   "a": "Oui sur la voie publique à condition d'être bridée à 25 km/h, comme toute trottinette électrique. Débridée, elle n'est utilisable que sur terrain privé."
+  }
+ ],
+ "sources": [
+  {
+   "label": "iScooter EU — W9Air",
+   "url": "https://www.iscooterglobal.eu/products/w9air-off-road-electric-scooter"
+  },
+  {
+   "label": "Darty — iScooter W9 Air",
+   "url": "https://www.darty.com/nav/achat/ref/MC353821640.html"
+  },
+  {
+   "label": "Darty — iScooter W9 Air (autre fiche)",
+   "url": "https://www.darty.com/nav/achat/ref/MC355511876.html"
+  },
+  {
+   "label": "Ministère de la Transition écologique — réglementation des trottinettes",
+   "url": "https://www.ecologie.gouv.fr/politiques-publiques/trottinettes-electriques-edpm-reglementation-vigueur"
+  }
+ ],
+ "video": {
+  "id": "F8I18FNoVCg",
+  "title": "Trottinette Électrique Tout-Terrain W9Air | Libérez votre esprit d'aventure avec 800W de puissance",
+  "channel": "iScooter",
+  "uploadDate": "2026-06-10"
+ }
+}

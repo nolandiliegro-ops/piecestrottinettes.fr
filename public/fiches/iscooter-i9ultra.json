@@ -1,0 +1,96 @@
+{
+ "displayName": "iScooter i9 Ultra",
+ "metaTitle": "iScooter i9 Ultra : fiche technique et pièces",
+ "metaDescription": "iScooter i9 Ultra : 500 W, batterie 36 V 10,4 Ah, pneus pleins 10 pouces, disque 110 mm 5 trous, double suspension. Fiche technique et entretien.",
+ "intro": [
+  "L'iScooter i9 Ultra (écrit i9Ultra par la marque) est une trottinette de ville compacte : moteur de 500 W, batterie de 36 V et 10,4 Ah, pneus pleins alvéolés de 10 pouces et jusqu'à 40 km d'autonomie annoncés selon iScooter. CNET France la décrit comme une version suréquipée, avec double suspension et une batterie plus robuste.",
+  "Elle freine avec un disque mécanique selon iScooter. Aucun test de presse français n'en a mesuré l'autonomie réelle ni la distance de freinage. La fiche annonce 35 km/h en vitesse maximale : en France, la voie publique reste limitée à 25 km/h."
+ ],
+ "specs": [
+  [
+   "Moteur",
+   "500 W, moteur avant (selon iScooter)"
+  ],
+  [
+   "Vitesse",
+   "25 km/h sur la voie publique (35 km/h annoncés, terrain privé)"
+  ],
+  [
+   "Batterie",
+   "36 V, 10,4 Ah, 374,4 Wh (selon iScooter)"
+  ],
+  [
+   "Autonomie annoncée",
+   "jusqu'à 40 km (selon iScooter)"
+  ],
+  [
+   "Roues",
+   "10 pouces, pneus pleins alvéolés (selon iScooter)"
+  ],
+  [
+   "Freins",
+   "disque mécanique, Ø 110 mm (selon iScooter)"
+  ],
+  [
+   "Suspension",
+   "double suspension (selon CNET France)"
+  ]
+ ],
+ "pros": [
+  "Double suspension et batterie plus robuste que l'i9 de base (CNET France).",
+  "Pneus pleins de 10 pouces : aucune crevaison possible.",
+  "Batterie de 374,4 Wh annoncée pour 40 km, dans un format compact (selon iScooter)."
+ ],
+ "cons": [
+  "Aucun test de presse français : autonomie réelle et freinage non mesurés.",
+  "La dimension exacte du pneu plein n'est pas publiée : relève la cote sur ta roue avant d'en commander un.",
+  "Plusieurs noms circulent (i9 Ultra, i9 Max) avec des fiches proches : vérifie le modèle inscrit sur ta trottinette.",
+  "Sa vitesse maximale n'est utilisable que sur terrain privé : en France, la voie publique est limitée à 25 km/h."
+ ],
+ "parts": [],
+ "care": [
+  "Le frein à disque mécanique se règle au câble : reprends la tension dès que le levier s'allonge.",
+  "Avec des pneus pleins, les suspensions encaissent tout : contrôle le jeu des bras et le serrage des axes.",
+  "Surveille l'usure des pneus pleins : ils ne crèvent pas, mais la gomme finit par se fendre."
+ ],
+ "price": {
+  "text": "Prix promotionnel relevé par CNET France : 279 € au lieu de 499,99 € (21/11/2025).",
+  "source": "CNET France"
+ },
+ "faq": [
+  {
+   "q": "Quelle taille de pneu pour l'iScooter i9 Ultra ?",
+   "a": "Des pneus pleins alvéolés de 10 pouces selon iScooter. La dimension exacte n'est pas publiée : relève-la sur ta roue."
+  },
+  {
+   "q": "Quel disque de frein pour l'iScooter i9 Ultra ?",
+   "a": "Un disque de 110 mm à 5 trous selon notre catalogue. Le modèle d'étrier n'est pas publié : compare la forme de ta plaquette avant de commander."
+  },
+  {
+   "q": "Quelle différence entre l'iScooter i9 Ultra et l'i9 ?",
+   "a": "L'i9 Ultra passe à 500 W, à une batterie de 10,4 Ah et à des roues de 10 pouces, avec une double suspension. L'i9 de base reste en 350 W, 7,5 Ah et 8,5 pouces, sans suspension."
+  },
+  {
+   "q": "Quel chargeur pour l'iScooter i9 Ultra ?",
+   "a": "Un chargeur 36 V. La prise n'est pas précisée par iScooter : vérifie celle de ta trottinette avant d'en commander un."
+  },
+  {
+   "q": "La iScooter i9 Ultra est-elle légale en France ?",
+   "a": "Oui sur la voie publique à condition d'être bridée à 25 km/h, comme toute trottinette électrique. Débridée, elle n'est utilisable que sur terrain privé."
+  }
+ ],
+ "sources": [
+  {
+   "label": "iScooter — i9Ultra 500 W",
+   "url": "https://www.iscooter.fr/products/iscooter-i9ultra-electric-scooter"
+  },
+  {
+   "label": "CNET France — bon plan iScooter i9 Ultra",
+   "url": "https://www.cnetfrance.fr/bon-plan/black-friday-des-trottinettes-iscooter-jusqua-227-e-de-reduction-immediate-avec-ce-code-433649.htm"
+  },
+  {
+   "label": "Ministère de la Transition écologique — réglementation des trottinettes",
+   "url": "https://www.ecologie.gouv.fr/politiques-publiques/trottinettes-electriques-edpm-reglementation-vigueur"
+  }
+ ]
+}

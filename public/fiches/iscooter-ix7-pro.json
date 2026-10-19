@@ -1,0 +1,140 @@
+{
+ "displayName": "iScooter iX7 Pro",
+ "metaTitle": "iScooter iX7 Pro : fiche technique, avis et pièces",
+ "metaDescription": "iScooter iX7 Pro : 2 x 1 000 W, 48 V 17,5 Ah, pneus 10x2.75-6.5 tubeless, disques 140 mm, prise GX16-3. Avis de NeoZone, entretien et pièces.",
+ "intro": [
+  "L'iScooter iX7 Pro est la bimoteur tout-terrain de la marque : deux moteurs de 1 000 W, une batterie de 48 V et 17,5 Ah, des pneus tubeless de 10 pouces et des suspensions à l'avant et à l'arrière. Elle annonce 70 à 80 km d'autonomie et pèse environ 29 kg.",
+  "NeoZone, seul média français à l'avoir testée, retient sa puissance, une autonomie convaincante et son confort en chemin. Elle annonce 60 km/h en vitesse maximale : sur la voie publique en France, elle doit rester bridée à 25 km/h, comme toute trottinette."
+ ],
+ "specs": [
+  [
+   "Moteurs",
+   "2 × 1 000 W"
+  ],
+  [
+   "Vitesse",
+   "25 km/h sur la voie publique (60 km/h annoncés, terrain privé)"
+  ],
+  [
+   "Batterie",
+   "48 V, 17,5 Ah"
+  ],
+  [
+   "Autonomie annoncée",
+   "70 à 80 km"
+  ],
+  [
+   "Poids",
+   "environ 29 kg"
+  ],
+  [
+   "Roues",
+   "10 pouces, tubeless 10x2.75-6.5 tout-terrain"
+  ],
+  [
+   "Freins",
+   "disques avant et arrière Ø 140 mm + E-ABS"
+  ],
+  [
+   "Suspension",
+   "avant et arrière"
+  ],
+  [
+   "Étanchéité",
+   "IPX4"
+  ],
+  [
+   "Prise de charge",
+   "GX16-3"
+  ],
+  [
+   "Temps de charge",
+   "7 à 10 h selon les fiches"
+  ]
+ ],
+ "pros": [
+  "Forte puissance grâce aux deux moteurs (NeoZone).",
+  "Autonomie jugée convaincante par le testeur (NeoZone).",
+  "Confort apprécié sur les chemins grâce aux suspensions (NeoZone)."
+ ],
+ "cons": [
+  "Selon NeoZone, elle ne révolutionne pas le marché.",
+  "Environ 29 kg : elle se porte difficilement.",
+  "Recharge longue, 7 à 10 heures selon les fiches.",
+  "Sa vitesse de pointe n'est utilisable que sur terrain privé : en France, la voie publique est limitée à 25 km/h."
+ ],
+ "parts": [
+  {
+   "label": "Pneu",
+   "size": "10x2.75-6.5 (10 pouces, jante 6,5\")",
+   "count": 6,
+   "to": "/piece/pneu-tubeless-10x2-75-6-5-offroad-runflat-ewheel",
+   "cta": "Pneus 10x2.75-6.5"
+  },
+  {
+   "label": "Disque de frein",
+   "size": "140 mm, 6 trous, entraxe 44 mm",
+   "count": 3,
+   "to": "/piece/disque-de-frein-r6-140mm-entraxe-44mm-3-couleurs-rouge",
+   "cta": "Disques 140 mm"
+  },
+  {
+   "label": "Chargeur",
+   "size": "48 V → 54,6 V, prise GX16-3",
+   "count": 2,
+   "to": "/piece/chargeur-48v-546v-2a-connecteur-gx16-3p",
+   "cta": "Chargeurs 48 V"
+  }
+ ],
+ "care": [
+  "Deux moteurs et près de 30 kg sollicitent les freins : surveille l'épaisseur des plaquettes et l'état des disques.",
+  "Pneus tubeless tout-terrain : contrôle la pression avant chaque sortie et inspecte la bande après les chemins caillouteux.",
+  "Vérifie régulièrement la visserie de la colonne et des bras de suspension, elle se desserre en usage tout-terrain."
+ ],
+ "faq": [
+  {
+   "q": "Quelle taille de pneu pour l'iScooter iX7 Pro ?",
+   "a": "Des pneus tubeless de 10 pouces en 10x2.75-6.5, sur une jante de 6,5 pouces."
+  },
+  {
+   "q": "Quel disque de frein pour l'iScooter iX7 Pro ?",
+   "a": "Un disque de 140 mm à 6 trous, entraxe 44 mm, à l'avant comme à l'arrière."
+  },
+  {
+   "q": "Quelles plaquettes pour l'iScooter iX7 Pro ?",
+   "a": "Le modèle d'étrier n'est pas publié par iScooter : compare la forme de ta plaquette avant de commander."
+  },
+  {
+   "q": "Quel chargeur pour l'iScooter iX7 Pro ?",
+   "a": "Un chargeur 48 V (54,6 V en sortie) avec prise GX16-3."
+  },
+  {
+   "q": "La iScooter iX7 Pro est-elle légale en France ?",
+   "a": "Oui sur la voie publique à condition d'être bridée à 25 km/h, comme toute trottinette électrique. Débridée, elle n'est utilisable que sur terrain privé."
+  }
+ ],
+ "sources": [
+  {
+   "label": "NeoZone — test iScooter iX7 Pro",
+   "url": "https://www.neozone.org/tests/je-teste-la-trottinette-electrique-tout-terrain-iscooter-ix7pro-2000w-voici-mon-avis/"
+  },
+  {
+   "label": "iScooter France — iX7 Pro 2 x 1000 W",
+   "url": "https://iscooter-france.com/products/trottinette-electrique-iscooter-ix7-pro-2x1000w"
+  },
+  {
+   "label": "iScooter — iX7 Pro",
+   "url": "https://iscooter.com/products/iscooter-ix7-pro-off-road-electric-scooter-2000w-motor-50miles-long-range"
+  },
+  {
+   "label": "Ministère de la Transition écologique — réglementation des trottinettes",
+   "url": "https://www.ecologie.gouv.fr/politiques-publiques/trottinettes-electriques-edpm-reglementation-vigueur"
+  }
+ ],
+ "video": {
+  "id": "4RoUmnjMlaY",
+  "title": "Iscooter IX7 Pro ! Une trottinette électrique puissante et pas chère ! Test et avis complet",
+  "channel": "RAFTOR",
+  "uploadDate": "2025-01-09"
+ }
+}

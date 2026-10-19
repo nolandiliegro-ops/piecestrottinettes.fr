@@ -1,0 +1,149 @@
+{
+ "displayName": "iScooter i9 Pro",
+ "metaTitle": "iScooter i9 Pro : fiche technique et pièces",
+ "metaDescription": "iScooter i9 Pro : 350 W, batterie 36 V 7,5 Ah, pneus pleins 8,5x2 (jante 6,1\"), prise DC 5,5. Fiche technique, entretien et pièces compatibles.",
+ "intro": [
+  "L'iScooter i9 Pro est une petite trottinette urbaine de 350 W, avec une batterie de 36 V et 7,5 Ah et des pneus pleins alvéolés de 8,5 pouces. Elle pèse 13 à 13,5 kg selon les fiches, assez peu pour être portée à la main dans un escalier ou rangée sous un bureau.",
+  "Elle freine avec un frein électronique à l'avant et un disque à l'arrière. Une fiche de Rue du Commerce lui donne un amortisseur arrière, mais cet équipement n'est pas confirmé ailleurs. Les 30 km/h annoncés débridée sont réservés au terrain privé."
+ ],
+ "specs": [
+  [
+   "Moteur",
+   "350 W"
+  ],
+  [
+   "Vitesse",
+   "25 km/h sur la voie publique (30 km/h annoncés débridée, terrain privé)"
+  ],
+  [
+   "Batterie",
+   "36 V, 7,5 Ah"
+  ],
+  [
+   "Autonomie annoncée",
+   "jusqu'à 30 km"
+  ],
+  [
+   "Poids",
+   "13 à 13,5 kg selon les fiches"
+  ],
+  [
+   "Roues",
+   "8,5 pouces, pneus pleins alvéolés 8,5x2 (jante 6,1\")"
+  ],
+  [
+   "Freins",
+   "frein électronique avant + disque arrière"
+  ],
+  [
+   "Suspension",
+   "amortisseur arrière (selon Rue du Commerce)"
+  ],
+  [
+   "Étanchéité",
+   "IP54 (selon le manuel)"
+  ],
+  [
+   "Prise de charge",
+   "DC 5,5 x 2,1 mm"
+  ],
+  [
+   "Temps de charge",
+   "3 à 6 h (selon le manuel)"
+  ]
+ ],
+ "pros": [
+  "Légère : 13 à 13,5 kg selon les fiches.",
+  "Pneus pleins alvéolés : aucune crevaison possible.",
+  "Pneus et chargeur courants : on trouve facilement des pièces en 8,5x2 et en 36 V."
+ ],
+ "cons": [
+  "Pneus pleins de 8,5 pouces : un confort limité sur pavés et chaussée abîmée.",
+  "Les fiches se contredisent sur le poids et sur la présence d'une suspension arrière.",
+  "Aucun test de presse français publié sur ce modèle.",
+  "Les 30 km/h débridée ne sont utilisables que sur terrain privé : en France, la voie publique est limitée à 25 km/h."
+ ],
+ "parts": [
+  {
+   "label": "Pneu plein",
+   "size": "8,5x2 (jante 6,1\")",
+   "count": 27,
+   "to": "/piece/pneu-plein-8-5x2-6-1-ultra-leger-jante-34-mm-lisere-bleu-nedong",
+   "cta": "Pneus pleins 8,5\""
+  },
+  {
+   "label": "Chargeur",
+   "size": "36 V → 42 V, prise DC 5,5 x 2,1 mm",
+   "count": 1,
+   "to": "/piece/chargeur-36v-42v-2a-connecteur-dc-55-21mm",
+   "cta": "Chargeurs 36 V"
+  }
+ ],
+ "care": [
+  "Le disque arrière est le seul frein mécanique : nettoie-le et change les plaquettes avant qu'elles ne frottent sur le métal.",
+  "Un pneu plein ne prévient pas : surveille l'usure de la bande de roulement et l'apparition des alvéoles.",
+  "Vérifie le serrage du mécanisme de pliage et de la potence chaque mois."
+ ],
+ "price": {
+  "text": "Prix affiché chez Decathlon : 379 €, au lieu de 699 € (vente débutée le 10/07/2025).",
+  "source": "decathlon.fr"
+ },
+ "faq": [
+  {
+   "q": "Quelle taille de pneu pour l'iScooter i9 Pro ?",
+   "a": "Des pneus pleins de 8,5 pouces en 8,5x2, sur une jante de 6,1 pouces."
+  },
+  {
+   "q": "Quelles plaquettes pour l'iScooter i9 Pro ?",
+   "a": "Le frein arrière est à disque, mais le modèle d'étrier n'est pas publié par iScooter : compare la forme de ta plaquette avant de commander."
+  },
+  {
+   "q": "Quel chargeur pour l'iScooter i9 Pro ?",
+   "a": "Un chargeur 36 V (42 V en sortie) avec prise DC 5,5 x 2,1 mm."
+  },
+  {
+   "q": "Quelle est l'autonomie de l'iScooter i9 Pro ?",
+   "a": "25 à 30 km annoncés selon le manuel. Aucune mesure indépendante n'a été publiée en France."
+  },
+  {
+   "q": "La iScooter i9 Pro est-elle légale en France ?",
+   "a": "Oui sur la voie publique à condition d'être bridée à 25 km/h, comme toute trottinette électrique. Débridée, elle n'est utilisable que sur terrain privé."
+  }
+ ],
+ "sources": [
+  {
+   "label": "Fnac — iScooter i9 Pro",
+   "url": "https://www.fnac.com/mp48323127/Trottinette-Electrique-ISCOOTER-i9Pro-8-5-350W-30km-h-7-5Ah-120-kg-pour-Adulte/w-4"
+  },
+  {
+   "label": "Manuel iScooter i9 Pro",
+   "url": "https://fr.manuals.plus/iscooter/i9-pro-adults-electric-scooter-manual"
+  },
+  {
+   "label": "Trott'n'Shop — iScooter i9 Pro",
+   "url": "https://www.trottnshop.com/produit/iscooter-i9-pro/"
+  },
+  {
+   "label": "Geekbuying — iScooter i9 Pro",
+   "url": "https://fr.geekbuying.com/item/iScooter-i9-Pro-Trottinette-electrique-8-5-pouces-Moteur-350-W-Batterie-7-5-Ah-10001624.html"
+  },
+  {
+   "label": "Rue du Commerce — iScooter i9 Pro",
+   "url": "https://www.rueducommerce.fr/p/m24073947610.html"
+  },
+  {
+   "label": "Decathlon — marque iScooter",
+   "url": "https://www.decathlon.fr/brands/iscooter"
+  },
+  {
+   "label": "Ministère de la Transition écologique — réglementation des trottinettes",
+   "url": "https://www.ecologie.gouv.fr/politiques-publiques/trottinettes-electriques-edpm-reglementation-vigueur"
+  }
+ ],
+ "video": {
+  "id": "r3Fo5cnl168",
+  "title": "Iscooter I9 Pro - La meilleure copie de Xiaomi M365 ??",
+  "channel": "Zerorider",
+  "uploadDate": "2022-04-29"
+ }
+}

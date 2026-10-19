@@ -1,0 +1,141 @@
+{
+ "displayName": "iScooter W6",
+ "metaTitle": "iScooter W6 : fiche technique, avis et pièces",
+ "metaDescription": "iScooter W6 : 500 W, batterie 36 V 7,8 Ah, 15 kg, pneus 10x2 (jante 6,1\"), prise DC 5,5. Versions, avis Futura, entretien et pièces compatibles.",
+ "intro": [
+  "L'iScooter W6 est une trottinette de ville de 500 W à pneus gonflables de 10 pouces. Deux versions circulent sous ce nom : 36 V et 7,8 Ah chez les revendeurs français (15 kg, 30 km annoncés), et 36 V et 10,5 Ah sur les fiches iScooter (qui affichent 42 V, la tension en fin de charge), pour 40 km annoncés.",
+  "Elle freine avec un frein électronique à l'avant et un disque à l'arrière. Futura apprécie le confort de ses pneus gonflables, mais rappelle le risque de crevaison. Les 35 km/h annoncés dépassent la limite de 25 km/h de la voie publique : ils sont réservés au terrain privé."
+ ],
+ "specs": [
+  [
+   "Moteur",
+   "500 W"
+  ],
+  [
+   "Vitesse",
+   "25 km/h sur la voie publique (35 km/h annoncés, terrain privé)"
+  ],
+  [
+   "Batterie",
+   "36 V, 7,8 Ah (version revendeurs) ou 36 V, 10,5 Ah selon iScooter"
+  ],
+  [
+   "Autonomie annoncée",
+   "30 km (7,8 Ah) ; 40 km (10,5 Ah, selon iScooter)"
+  ],
+  [
+   "Poids",
+   "15 kg (version 7,8 Ah)"
+  ],
+  [
+   "Roues",
+   "10 pouces, pneus gonflables 10x2 (jante 6,1\")"
+  ],
+  [
+   "Freins",
+   "frein électronique avant (EABS) + disque arrière"
+  ],
+  [
+   "Étanchéité",
+   "IPX4 (selon iScooter)"
+  ],
+  [
+   "Prise de charge",
+   "DC 5,5 x 2,1 mm"
+  ],
+  [
+   "Temps de charge",
+   "5 à 6 h (version 7,8 Ah)"
+  ]
+ ],
+ "pros": [
+  "Pneus gonflables de 10 pouces, confortables sur les irrégularités (Futura).",
+  "Moteur de 500 W pour une trottinette de 15 kg (Futura).",
+  "Pneus 10x2 et chargeur 36 V faciles à trouver."
+ ],
+ "cons": [
+  "Pneus gonflables : risque de crevaison (Futura).",
+  "Deux versions de batterie sous le même nom : vérifie la tienne avant de commander un chargeur ou une batterie.",
+  "Aucun test de presse complet : l'avis de Futura vient d'un article de bon plan.",
+  "Les 35 km/h annoncés ne sont utilisables que sur terrain privé : en France, la voie publique est limitée à 25 km/h (Futura)."
+ ],
+ "parts": [
+  {
+   "label": "Pneu",
+   "size": "10x2 (jante 6,1\")",
+   "count": 2,
+   "to": "/piece/pneu-10x2-6-1-cityroad-wanda",
+   "cta": "Pneus 10x2"
+  },
+  {
+   "label": "Chargeur",
+   "size": "36 V → 42 V, prise DC 5,5 x 2,1 mm",
+   "count": 1,
+   "to": "/piece/chargeur-36v-42v-2a-connecteur-dc-55-21mm",
+   "cta": "Chargeurs 36 V"
+  }
+ ],
+ "care": [
+  "Contrôle la pression des pneus chaque semaine : c'est la première protection contre les crevaisons.",
+  "Le disque arrière est le seul frein mécanique : nettoie-le et surveille les plaquettes.",
+  "Vérifie le serrage du mécanisme de pliage et de la potence chaque mois."
+ ],
+ "price": {
+  "text": "Prix relevé par Futura sur AliExpress : 173,95 € au lieu de 198,80 € (21/05/2026).",
+  "source": "Futura"
+ },
+ "faq": [
+  {
+   "q": "Quelle taille de pneu pour l'iScooter W6 ?",
+   "a": "Des pneus gonflables de 10 pouces en 10x2, sur une jante de 6,1 pouces."
+  },
+  {
+   "q": "Quelles plaquettes pour l'iScooter W6 ?",
+   "a": "Le frein arrière est à disque, mais le modèle d'étrier n'est pas publié par iScooter : compare la forme de ta plaquette avant de commander."
+  },
+  {
+   "q": "Quel chargeur pour l'iScooter W6 ?",
+   "a": "Un chargeur 36 V (42 V en sortie) avec prise DC 5,5 x 2,1 mm. Les deux versions sont en 36 V : le « 42 V » des fiches iScooter est la tension en fin de charge, celle du chargeur. Vérifie quand même la prise avant de commander."
+  },
+  {
+   "q": "Quelles versions de l'iScooter W6 existent ?",
+   "a": "Une version 36 V 7,8 Ah (15 kg, 30 km annoncés) chez les revendeurs, et une version 36 V 10,5 Ah (40 km annoncés) sur les fiches iScooter. Le moteur de 500 W et les roues de 10 pouces sont les mêmes."
+  },
+  {
+   "q": "La iScooter W6 est-elle légale en France ?",
+   "a": "Oui sur la voie publique à condition d'être bridée à 25 km/h, comme toute trottinette électrique. Débridée, elle n'est utilisable que sur terrain privé."
+  }
+ ],
+ "sources": [
+  {
+   "label": "iScooter — W6 500 W",
+   "url": "https://www.iscooter.fr/products/w6-500w-trottinette-electrique"
+  },
+  {
+   "label": "iScooter EU — W6 500 W",
+   "url": "https://www.iscooterglobal.eu/fr/products/scooter-electrique-de-deplacement-iscooter-w6-500w"
+  },
+  {
+   "label": "Pixmania — iScooter W6 36 V 7,8 Ah",
+   "url": "https://www.pixmania.com/fr/fr/trottinette-electrique-pliable-iscooter-w6-500-w-10-pouces-36-v-78-ah-bluetooth-397014.html"
+  },
+  {
+   "label": "Fnac — iScooter W6 36 V 7,8 Ah",
+   "url": "https://www.fnac.com/mp54069994/Trottinette-electrique-iScooter-W6-pour-adulte-Moteur-500-W-batterie-36-V-7-8-Ah-pneus-a-air-10-pouces-pliable/w-4"
+  },
+  {
+   "label": "Futura — iScooter W6",
+   "url": "https://www.futura-sciences.com/conso/bons-plans/guides-velos-trottinettes-iscooter-w6-cette-trottinette-electrique-500w-moins-175-vise-juste-tous-points-10072/"
+  },
+  {
+   "label": "Ministère de la Transition écologique — réglementation des trottinettes",
+   "url": "https://www.ecologie.gouv.fr/politiques-publiques/trottinettes-electriques-edpm-reglementation-vigueur"
+  }
+ ],
+ "video": {
+  "id": "L4ncXCUAa1o",
+  "title": "iScooter W6 : Le Scooter Électrique Idéal pour la Ville ! (Pliable & Efficace)",
+  "channel": "urbanowheels",
+  "uploadDate": "2026-01-30"
+ }
+}

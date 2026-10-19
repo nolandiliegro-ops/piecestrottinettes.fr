@@ -1,0 +1,141 @@
+{
+ "displayName": "iScooter W9",
+ "metaTitle": "iScooter W9 : fiche technique et pièces",
+ "metaDescription": "iScooter W9 : 1 000 W, 48 V 14 Ah, pneus 10x2.70-6.5 tout-terrain, disques 140 mm 6 trous, prise GX16-3. Fiche technique, entretien et pièces.",
+ "intro": [
+  "L'iScooter W9 est une trottinette tout-terrain de 1 000 W en puissance maximale, avec une batterie de 48 V et 14 Ah, des pneus gonflables de 10 pouces et une double suspension. Elle annonce jusqu'à 45 km d'autonomie et pèse 21,75 kg selon Fnac et Darty.",
+  "Elle freine avec deux disques et un frein électronique. Ne la confonds pas avec la W9 Air, moins puissante. Livrée bridée à 25 km/h, elle annonce 45 km/h débridée, une vitesse réservée au terrain privé. Aucun test de presse français n'a été publié."
+ ],
+ "specs": [
+  [
+   "Moteur",
+   "1 000 W en puissance maximale (500 W nominaux selon Fnac)"
+  ],
+  [
+   "Vitesse",
+   "25 km/h sur la voie publique (45 km/h annoncés débridée, terrain privé)"
+  ],
+  [
+   "Batterie",
+   "48 V, 14 Ah"
+  ],
+  [
+   "Autonomie annoncée",
+   "jusqu'à 45 km"
+  ],
+  [
+   "Poids",
+   "21,75 kg"
+  ],
+  [
+   "Roues",
+   "10 pouces, 10x2.70-6.5 tout-terrain"
+  ],
+  [
+   "Freins",
+   "disques avant et arrière Ø 140 mm + frein électronique"
+  ],
+  [
+   "Suspension",
+   "avant et arrière (selon iScooter)"
+  ],
+  [
+   "Prise de charge",
+   "GX16-3"
+  ],
+  [
+   "Temps de charge",
+   "6 à 8 h"
+  ]
+ ],
+ "pros": [
+  "Deux freins à disque et une double suspension.",
+  "1 000 W en pointe pour 21,75 kg.",
+  "Pièces courantes : pneus 10x2.70-6.5, disques 140 mm et chargeur 48 V GX16-3."
+ ],
+ "cons": [
+  "Aucun test de presse français : les chiffres viennent des fiches marchandes.",
+  "Le poids varie selon les fiches : 21,75 kg chez Fnac et Darty, 24 kg sur une fiche iScooter en espagnol.",
+  "Les 45 km/h débridée ne sont utilisables que sur terrain privé : en France, la voie publique est limitée à 25 km/h."
+ ],
+ "parts": [
+  {
+   "label": "Pneu",
+   "size": "10x2.70-6.5 (10 pouces, jante 6,5\")",
+   "count": 6,
+   "to": "/piece/pneu-tubeless-10x2-70-6-5-cityroad-ewheel",
+   "cta": "Pneus 10x2.70-6.5"
+  },
+  {
+   "label": "Disque de frein",
+   "size": "140 mm, 6 trous, entraxe 44 mm",
+   "count": 3,
+   "to": "/piece/disque-de-frein-r6-140mm-entraxe-44mm-3-couleurs-bleu",
+   "cta": "Disques 140 mm"
+  },
+  {
+   "label": "Chargeur",
+   "size": "48 V → 54,6 V, prise GX16-3",
+   "count": 2,
+   "to": "/piece/chargeur-48v-546v-2a-connecteur-gx16-3p",
+   "cta": "Chargeurs 48 V"
+  }
+ ],
+ "care": [
+  "Freins à disque : reprends la tension des câbles et recentre les étriers dès qu'un disque frotte.",
+  "Contrôle la pression des pneus avant chaque sortie en chemin.",
+  "Vérifie le serrage de la potence et des axes de suspension chaque mois."
+ ],
+ "price": {
+  "text": "Prix affiché chez Darty : 379 € (fiche mise à jour en octobre 2026).",
+  "source": "darty.com"
+ },
+ "faq": [
+  {
+   "q": "Quelle taille de pneu pour l'iScooter W9 ?",
+   "a": "Des pneus tout-terrain de 10 pouces en 10x2.70-6.5, sur une jante de 6,5 pouces. Attention : ce n'est pas la même section que le 10x2.75-6.5 des iX3 et iX4."
+  },
+  {
+   "q": "Quel disque de frein pour l'iScooter W9 ?",
+   "a": "Un disque de 140 mm à 6 trous, entraxe 44 mm."
+  },
+  {
+   "q": "Quelles plaquettes pour l'iScooter W9 ?",
+   "a": "Le modèle d'étrier n'est pas publié par iScooter : compare la forme de ta plaquette avant de commander."
+  },
+  {
+   "q": "Quel chargeur pour l'iScooter W9 ?",
+   "a": "Un chargeur 48 V (54,6 V en sortie) avec prise GX16-3. Compte 6 à 8 heures pour une charge complète."
+  },
+  {
+   "q": "La iScooter W9 est-elle légale en France ?",
+   "a": "Oui sur la voie publique à condition d'être bridée à 25 km/h, comme toute trottinette électrique. Débridée, elle n'est utilisable que sur terrain privé."
+  }
+ ],
+ "sources": [
+  {
+   "label": "iScooter — W9",
+   "url": "https://www.iscooter.fr/products/w9-trottinette-electrique"
+  },
+  {
+   "label": "iScooter France — W9 1000 W",
+   "url": "https://iscooter-france.com/products/trottinette-electrique-iscooter-w9-1000w"
+  },
+  {
+   "label": "Fnac — iScooter W9 1000 W 48 V 14 Ah",
+   "url": "https://www.fnac.com/mp54278280/Trottinette-electrique-iScooter-W9-tout-terrain-Moteur-1000W-Batterie-48V-14Ah-Pneus-10-pouces-Noir/w-4"
+  },
+  {
+   "label": "Darty — iScooter W9",
+   "url": "https://www.darty.com/nav/achat/ref/MC352571894.html"
+  },
+  {
+   "label": "Boulanger — iScooter W9",
+   "url": "https://www.boulanger.com/ref/9000921732"
+  },
+  {
+   "label": "Ministère de la Transition écologique — réglementation des trottinettes",
+   "url": "https://www.ecologie.gouv.fr/politiques-publiques/trottinettes-electriques-edpm-reglementation-vigueur"
+  }
+ ]
+}

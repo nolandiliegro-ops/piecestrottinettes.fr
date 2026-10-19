@@ -1,0 +1,144 @@
+{
+ "displayName": "iScooter W7",
+ "metaTitle": "iScooter W7 : fiche technique et pièces",
+ "metaDescription": "iScooter W7 : 650 W, batterie 10,5 Ah, pneus 8,5x2 à chambre à air (jante 6,1\"), double suspension, prise DC 5,5. Fiche, entretien et pièces.",
+ "intro": [
+  "L'iScooter W7 est une petite trottinette de ville à roues de 8,5 pouces. Deux configurations circulent sous ce nom : une version 350 W et 7,8 Ah, et une version 650 W et 10,5 Ah, décrite ici. Cette dernière annonce 27 à 37 km d'autonomie et une double suspension.",
+  "Elle roule sur des pneus gonflables avec chambre à air et freine avec un disque arrière et un frein électronique (E-ABS). Les fiches ne s'accordent ni sur la tension ni sur le poids. Les 35 km/h annoncés après débridage sont réservés au terrain privé."
+ ],
+ "specs": [
+  [
+   "Moteur",
+   "650 W (une version 350 W existe aussi)"
+  ],
+  [
+   "Vitesse",
+   "25 km/h sur la voie publique (35 km/h annoncés débridée, terrain privé)"
+  ],
+  [
+   "Batterie",
+   "36 V, 10,5 Ah (Fnac et Darty affichent 42 V, la tension en fin de charge)"
+  ],
+  [
+   "Autonomie annoncée",
+   "27 à 37 km"
+  ],
+  [
+   "Poids",
+   "15 kg (selon Darty), 19 kg (selon Fnac)"
+  ],
+  [
+   "Roues",
+   "8,5 pouces, 8,5x2 avec chambre à air (jante 6,1\")"
+  ],
+  [
+   "Freins",
+   "disque arrière + E-ABS"
+  ],
+  [
+   "Suspension",
+   "avant et arrière"
+  ],
+  [
+   "Étanchéité",
+   "IPX4 (selon Boulanger)"
+  ],
+  [
+   "Prise de charge",
+   "DC 5,5 x 2,1 mm"
+  ],
+  [
+   "Temps de charge",
+   "environ 5 à 6 h"
+  ]
+ ],
+ "pros": [
+  "Double suspension sur une trottinette à roues de 8,5 pouces.",
+  "Pneus 8,5x2 et chambres à air : la dimension la plus courante du marché, pièces faciles à trouver.",
+  "Recharge en 5 à 6 heures."
+ ],
+ "cons": [
+  "Deux versions (350 W et 650 W) sous le même nom : vérifie la tienne avant de commander une pièce électrique.",
+  "Fiches contradictoires sur le poids (15 ou 19 kg) et la tension de batterie.",
+  "Aucun test de presse français publié.",
+  "Les 35 km/h débridée ne sont utilisables que sur terrain privé : en France, la voie publique est limitée à 25 km/h."
+ ],
+ "parts": [
+  {
+   "label": "Pneu",
+   "size": "8,5x2 (50/75-6.1)",
+   "count": 8,
+   "to": "/piece/pneu-tubeless-8-5x2-6-1-offroad-ewheel",
+   "cta": "Pneus 8,5x2"
+  },
+  {
+   "label": "Chambre à air",
+   "size": "8,5x2, valve droite ou coudée",
+   "count": 6,
+   "to": "/piece/chambre-a-air-8-5x2-valve-coudee-135x45-ewheel",
+   "cta": "Chambres à air"
+  },
+  {
+   "label": "Chargeur",
+   "size": "36 V → 42 V, prise DC 5,5 x 2,1 mm",
+   "count": 1,
+   "to": "/piece/chargeur-36v-42v-2a-connecteur-dc-55-21mm",
+   "cta": "Chargeurs 36 V"
+  }
+ ],
+ "care": [
+  "Gonfle les pneus chaque semaine : en 8,5 pouces, un pneu mou pince la chambre à air au premier trottoir.",
+  "Le disque arrière est le seul frein mécanique : nettoie-le et surveille les plaquettes.",
+  "Contrôle le jeu des suspensions et le serrage du pliage chaque mois."
+ ],
+ "faq": [
+  {
+   "q": "Quelle taille de pneu pour l'iScooter W7 ?",
+   "a": "Des pneus de 8,5 pouces en 8,5x2 (50/75-6.1), sur une jante de 6,1 pouces, montés avec chambre à air."
+  },
+  {
+   "q": "Quelle chambre à air pour l'iScooter W7 ?",
+   "a": "Une chambre à air 8,5x2. Choisis la valve (droite ou coudée) qui correspond à ta jante."
+  },
+  {
+   "q": "Quelles plaquettes pour l'iScooter W7 ?",
+   "a": "Le frein arrière est à disque, mais le modèle d'étrier n'est pas publié par iScooter : compare la forme de ta plaquette avant de commander."
+  },
+  {
+   "q": "Quel chargeur pour l'iScooter W7 ?",
+   "a": "Un chargeur 36 V (42 V en sortie) avec prise DC 5,5 x 2,1 mm."
+  },
+  {
+   "q": "La iScooter W7 est-elle légale en France ?",
+   "a": "Oui sur la voie publique à condition d'être bridée à 25 km/h, comme toute trottinette électrique. Débridée, elle n'est utilisable que sur terrain privé."
+  }
+ ],
+ "sources": [
+  {
+   "label": "Fnac — iScooter W7 650 W",
+   "url": "https://www.fnac.com/mp53608619/Trottinette-electrique-iScooter-W7-puissance-de-650-W-autonomie-de-37-km-pliable-double-freinage/w-4"
+  },
+  {
+   "label": "Darty — iScooter W7",
+   "url": "https://www.darty.com/nav/achat/ref/MC354090478.html"
+  },
+  {
+   "label": "Joom — iScooter W7",
+   "url": "https://www.joom.com/fr/products/6822fe0680c6fa01a2778015"
+  },
+  {
+   "label": "Boulanger — iScooter W7",
+   "url": "https://www.boulanger.com/ref/9000921725"
+  },
+  {
+   "label": "Ministère de la Transition écologique — réglementation des trottinettes",
+   "url": "https://www.ecologie.gouv.fr/politiques-publiques/trottinettes-electriques-edpm-reglementation-vigueur"
+  }
+ ],
+ "video": {
+  "id": "4LWiU0XylDA",
+  "title": "LA MEILLEURE TROTTINETTE À MOINS DE 220€ : ISCOOTER W7 ?! PRÉSENTATION ET TEST COMPLET !",
+  "channel": "RAFTOR",
+  "uploadDate": "2025-07-11"
+ }
+}

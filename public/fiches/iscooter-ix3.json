@@ -1,0 +1,144 @@
+{
+ "displayName": "iScooter iX3",
+ "metaTitle": "iScooter iX3 : fiche technique et pièces",
+ "metaDescription": "iScooter iX3 : 800 W, 48 V 10 Ah, pneus 10x2.75-6.5 tout-terrain, disques 140 mm 6 trous, prise GX16-3. Fiche technique, entretien et pièces.",
+ "intro": [
+  "L'iScooter iX3 est une trottinette tout-terrain d'entrée de gamme : moteur de 800 W, batterie de 48 V et 10 Ah, pneus gonflables tout-terrain de 10 pouces et double suspension. Elle annonce jusqu'à 40 km d'autonomie et pèse 22 à 23,25 kg selon les fiches.",
+  "Elle freine avec deux disques mécaniques de 140 mm selon iScooter, épaulés par un frein électrique. Elle est livrée bridée à 25 km/h ; les 40 km/h annoncés après débridage sont réservés au terrain privé. Aucun test de presse français n'a été publié sur ce modèle."
+ ],
+ "specs": [
+  [
+   "Moteur",
+   "800 W"
+  ],
+  [
+   "Vitesse",
+   "25 km/h sur la voie publique (40 km/h annoncés débridée, terrain privé)"
+  ],
+  [
+   "Batterie",
+   "48 V, 10 Ah"
+  ],
+  [
+   "Autonomie annoncée",
+   "jusqu'à 40 km"
+  ],
+  [
+   "Poids",
+   "22 à 23,25 kg selon les fiches"
+  ],
+  [
+   "Roues",
+   "10 pouces, 10x2.75-6.5 tout-terrain"
+  ],
+  [
+   "Freins",
+   "disques mécaniques avant et arrière, Ø 140 mm (selon iScooter), + frein électrique"
+  ],
+  [
+   "Suspension",
+   "double, avant et arrière (selon iScooter)"
+  ],
+  [
+   "Étanchéité",
+   "IPX4 (selon iScooter)"
+  ],
+  [
+   "Prise de charge",
+   "GX16-3"
+  ],
+  [
+   "Temps de charge",
+   "6 à 7 h"
+  ]
+ ],
+ "pros": [
+  "Pneus tout-terrain de 10 pouces et double suspension pour les chemins et les routes abîmées.",
+  "Deux freins à disque mécaniques, simples à régler.",
+  "Pièces courantes : pneus 10x2.75-6.5, disques 140 mm et chargeur 48 V GX16-3 se trouvent facilement."
+ ],
+ "cons": [
+  "22 à 23,25 kg : elle se porte difficilement.",
+  "IPX4 seulement : pluie légère et projections, pas plus.",
+  "Aucun test de presse français : les chiffres viennent des fiches marchandes.",
+  "Les 40 km/h débridée ne sont utilisables que sur terrain privé : en France, la voie publique est limitée à 25 km/h."
+ ],
+ "parts": [
+  {
+   "label": "Pneu",
+   "size": "10x2.75-6.5 (10 pouces, jante 6,5\")",
+   "count": 6,
+   "to": "/piece/pneu-tubeless-10x2-75-6-5-offroad-runflat-ewheel",
+   "cta": "Pneus 10x2.75-6.5"
+  },
+  {
+   "label": "Disque de frein",
+   "size": "140 mm, 6 trous, entraxe 44 mm",
+   "count": 3,
+   "to": "/piece/disque-de-frein-r6-140mm-entraxe-44mm-3-couleurs-rouge",
+   "cta": "Disques 140 mm"
+  },
+  {
+   "label": "Chargeur",
+   "size": "48 V → 54,6 V, prise GX16-3",
+   "count": 2,
+   "to": "/piece/chargeur-48v-546v-2a-connecteur-gx16-3p",
+   "cta": "Chargeurs 48 V"
+  }
+ ],
+ "care": [
+  "Freins mécaniques : reprends la tension des câbles et recentre les étriers dès que le levier s'allonge.",
+  "Pneus tout-terrain : contrôle la pression avant chaque sortie, un pneu sous-gonflé abîme la jante sur les cailloux.",
+  "Après une sortie en chemin, nettoie les disques et vérifie le serrage des axes de suspension."
+ ],
+ "price": {
+  "text": "Prix affiché par iScooter France : 399 € (page du 10/03/2025) ; 399,99 € sur iscooter.fr.",
+  "source": "iscooter-france.com, iscooter.fr"
+ },
+ "faq": [
+  {
+   "q": "Quelle taille de pneu pour l'iScooter iX3 ?",
+   "a": "Des pneus tout-terrain de 10 pouces en 10x2.75-6.5, sur une jante de 6,5 pouces."
+  },
+  {
+   "q": "Quel disque de frein pour l'iScooter iX3 ?",
+   "a": "Un disque de 140 mm à 6 trous, entraxe 44 mm, à l'avant comme à l'arrière."
+  },
+  {
+   "q": "Quelles plaquettes pour l'iScooter iX3 ?",
+   "a": "Le modèle d'étrier n'est pas publié par iScooter : compare la forme de ta plaquette avant de commander."
+  },
+  {
+   "q": "Quel chargeur pour l'iScooter iX3 ?",
+   "a": "Un chargeur 48 V (54,6 V en sortie) avec prise GX16-3. Compte 6 à 7 heures pour une charge complète."
+  },
+  {
+   "q": "La iScooter iX3 est-elle légale en France ?",
+   "a": "Oui sur la voie publique à condition d'être bridée à 25 km/h, comme toute trottinette électrique. Débridée, elle n'est utilisable que sur terrain privé."
+  }
+ ],
+ "sources": [
+  {
+   "label": "iScooter — fiche iX3",
+   "url": "https://iscooter.com/pages/ix3"
+  },
+  {
+   "label": "iScooter France — iX3",
+   "url": "https://iscooter-france.com/en/products/electric-scooter-iscooter-ix3"
+  },
+  {
+   "label": "iScooter — iX3 800 W 40 km",
+   "url": "https://www.iscooter.fr/products/ix3-trottinette-electrique-tout-terrain"
+  },
+  {
+   "label": "Ministère de la Transition écologique — réglementation des trottinettes",
+   "url": "https://www.ecologie.gouv.fr/politiques-publiques/trottinettes-electriques-edpm-reglementation-vigueur"
+  }
+ ],
+ "video": {
+  "id": "yJfdUa1xXw4",
+  "title": "IScooter IX3 : Test et Analyse Complète d’une Trottinette Électrique Pas Chère ET Surprenante !",
+  "channel": "RAFTOR",
+  "uploadDate": "2025-04-22"
+ }
+}

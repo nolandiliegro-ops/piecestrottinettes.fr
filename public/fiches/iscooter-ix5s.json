@@ -1,0 +1,145 @@
+{
+ "displayName": "iScooter iX5S",
+ "metaTitle": "iScooter iX5S : fiche technique, avis et pièces",
+ "metaDescription": "iScooter iX5S : 1 000 W, 48 V 15 Ah, pneus 11 pouces, disques 140 mm 6 trous, prise GX16-3. Autonomie mesurée par le Journal du Geek et pièces.",
+ "intro": [
+  "L'iScooter iX5S est une trottinette tout-terrain à pneus gonflables de 11 pouces, avec un moteur de 1 000 W, une batterie de 48 V et 15 Ah et une double suspension. Elle pèse 27,3 kg sur les fiches, 26,9 kg sur la balance du Journal du Geek.",
+  "Le Journal du Geek lui a donné 4/10 : il salue l'accélération progressive, mais juge le freinage catastrophique et a mesuré 23 km d'autonomie, loin des 65 km annoncés. Livrée bridée à 25 km/h, elle annonce 45 km/h débridée, sur terrain privé uniquement."
+ ],
+ "specs": [
+  [
+   "Moteur",
+   "1 000 W"
+  ],
+  [
+   "Vitesse",
+   "25 km/h sur la voie publique (45 km/h annoncés débridée, terrain privé)"
+  ],
+  [
+   "Batterie",
+   "48 V, 15 Ah"
+  ],
+  [
+   "Autonomie",
+   "jusqu'à 65 km annoncés, 23 km mesurés par le Journal du Geek (pilote de 100 kg)"
+  ],
+  [
+   "Poids",
+   "27,3 kg (26,9 kg mesurés par le Journal du Geek)"
+  ],
+  [
+   "Roues",
+   "11 pouces, pneus gonflables tout-terrain"
+  ],
+  [
+   "Freins",
+   "disques Ø 140 mm + frein électronique (EBAS) selon iScooter"
+  ],
+  [
+   "Suspension",
+   "avant et arrière"
+  ],
+  [
+   "Étanchéité",
+   "IPX4 (selon iScooter)"
+  ],
+  [
+   "Prise de charge",
+   "GX16-3"
+  ],
+  [
+   "Temps de charge",
+   "5 à 7 h"
+  ]
+ ],
+ "pros": [
+  "Accélération progressive, sans à-coups (Journal du Geek).",
+  "Garde sa vitesse maximale même en fin de batterie (Journal du Geek).",
+  "Éclairage jugé correct (Journal du Geek)."
+ ],
+ "cons": [
+  "Freinage jugé catastrophique (Journal du Geek).",
+  "Autonomie réelle très loin de l'annonce : 23 km mesurés pour 65 km annoncés (Journal du Geek).",
+  "Finitions médiocres, pliage difficile et conduite peu confortable (Journal du Geek).",
+  "Moteur poussif en côte (Journal du Geek)."
+ ],
+ "parts": [
+  {
+   "label": "Disque de frein",
+   "size": "140 mm, 6 trous, entraxe 44 mm",
+   "count": 3,
+   "to": "/piece/disque-de-frein-r6-140mm-entraxe-44mm-3-couleurs-rouge",
+   "cta": "Disques 140 mm"
+  },
+  {
+   "label": "Chargeur",
+   "size": "48 V → 54,6 V, prise GX16-3",
+   "count": 2,
+   "to": "/piece/chargeur-48v-546v-2a-connecteur-gx16-3p",
+   "cta": "Chargeurs 48 V"
+  }
+ ],
+ "care": [
+  "Le freinage est son point faible : règle les câbles, recentre les étriers et change les plaquettes dès qu'elles s'usent.",
+  "Contrôle la pression des pneus de 11 pouces avant chaque sortie, surtout en chemin.",
+  "Avec 27 kg, vérifie souvent le mécanisme de pliage et le serrage de la potence."
+ ],
+ "price": {
+  "text": "Prix promotionnel relevé par le Journal du Geek : 479 € (mars 2026).",
+  "source": "Journal du Geek"
+ },
+ "faq": [
+  {
+   "q": "Quelle taille de pneu pour l'iScooter iX5S ?",
+   "a": "Des pneus gonflables tout-terrain de 11 pouces. La dimension exacte n'est pas publiée par iScooter : relève le marquage sur le flanc de ton pneu."
+  },
+  {
+   "q": "Quel disque de frein pour l'iScooter iX5S ?",
+   "a": "Un disque de 140 mm à 6 trous, entraxe 44 mm."
+  },
+  {
+   "q": "Quelle est l'autonomie réelle de l'iScooter iX5S ?",
+   "a": "Le Journal du Geek a mesuré 23 km, bridée à 25 km/h, avec un pilote de 100 kg par 12 à 15 °C. iScooter annonce jusqu'à 65 km dans des conditions favorables."
+  },
+  {
+   "q": "Quel chargeur pour l'iScooter iX5S ?",
+   "a": "Un chargeur 48 V (54,6 V en sortie) avec prise GX16-3. Compte 5 à 7 heures pour une charge complète."
+  },
+  {
+   "q": "La iScooter iX5S est-elle légale en France ?",
+   "a": "Oui sur la voie publique à condition d'être bridée à 25 km/h, comme toute trottinette électrique. Débridée, elle n'est utilisable que sur terrain privé."
+  }
+ ],
+ "sources": [
+  {
+   "label": "Journal du Geek — test iScooter iX5S",
+   "url": "https://www.journaldugeek.com/test/test-trottinette-electrique-iscooter-ix5s-le-prix-a-tout-prix/"
+  },
+  {
+   "label": "iScooter Global — fiche iX5S",
+   "url": "https://www.iscooterglobal.com/pages/ix5s"
+  },
+  {
+   "label": "iScooter EU — iX5S 1000 W",
+   "url": "https://www.iscooterglobal.eu/fr/products/scooter-electrique-tout-terrain-iscooter-ix5s-1000w"
+  },
+  {
+   "label": "Boulanger — iScooter iX5S",
+   "url": "https://www.boulanger.com/ref/9000921721"
+  },
+  {
+   "label": "Geekbuying — iScooter iX5S",
+   "url": "https://fr.geekbuying.com/item/iScooter-iX5S-Trottinette-electrique-1000W-48V-15Ah-10001397.html"
+  },
+  {
+   "label": "Ministère de la Transition écologique — réglementation des trottinettes",
+   "url": "https://www.ecologie.gouv.fr/politiques-publiques/trottinettes-electriques-edpm-reglementation-vigueur"
+  }
+ ],
+ "video": {
+  "id": "CFPxFmQ1RI0",
+  "title": "iScooter IX5S : Une Trottinette 1000 W pour 519 € - Déballage et Test Complet !",
+  "channel": "Mc Aventure",
+  "uploadDate": "2026-02-25"
+ }
+}

@@ -1,0 +1,128 @@
+{
+ "displayName": "iScooter i10 Pro",
+ "metaTitle": "iScooter i10 Pro : fiche technique, avis et pièces",
+ "metaDescription": "iScooter i10 Pro : moteur 800 W, batterie 48 V 15 Ah, pneus 10 pouces, double suspension, frein tambour arrière. Avis, entretien et pièces utiles.",
+ "intro": [
+  "L'iScooter i10 Pro est la version la plus puissante de la série i10 en motorisation simple : 800 W, batterie de 48 V et 15 Ah, pneus gonflables de 10 pouces et double suspension. Les fiches annoncent 50 à 60 km d'autonomie. Elle se range parmi les trottinettes de trajet quotidien plutôt que parmi les modèles légers.",
+  "Elle freine avec un tambour à l'arrière et un frein électronique à l'avant selon iScooter. Livrée bridée à 25 km/h pour la voie publique, elle peut être débridée à 45 km/h selon le distributeur iScooter France, une vitesse réservée au terrain privé."
+ ],
+ "specs": [
+  [
+   "Moteur",
+   "800 W"
+  ],
+  [
+   "Vitesse",
+   "25 km/h sur la voie publique (45 km/h annoncés débridée, terrain privé)"
+  ],
+  [
+   "Batterie",
+   "48 V, 15 Ah"
+  ],
+  [
+   "Autonomie annoncée",
+   "50 à 60 km selon les fiches"
+  ],
+  [
+   "Poids",
+   "24,4 à 25 kg selon les fiches"
+  ],
+  [
+   "Charge max",
+   "120 kg"
+  ],
+  [
+   "Roues",
+   "10 pouces, pneumatiques"
+  ],
+  [
+   "Freins",
+   "tambour arrière + frein électronique"
+  ],
+  [
+   "Suspension",
+   "double suspension"
+  ],
+  [
+   "Étanchéité",
+   "IPX4 (Boulanger, Darty) ou IP54 (iScooter) selon les fiches"
+  ],
+  [
+   "Temps de charge",
+   "6 à 8 h"
+  ]
+ ],
+ "pros": [
+  "Confort des pneus gonflables de 10 pouces et des suspensions (Futura).",
+  "Puissance et autonomie annoncée généreuses pour son prix (Futura).",
+  "Frein arrière à tambour : peu d'entretien, pas de disque à voiler ni de plaquettes à changer."
+ ],
+ "cons": [
+  "Près de 25 kg : elle se porte difficilement dans les transports.",
+  "Les fiches ne s'accordent ni sur l'étanchéité (IPX4 ou IP54) ni sur le détail du freinage : vérifie ta version.",
+  "Aucun test de presse français complet : les points forts cités viennent d'un article de bon plan.",
+  "Les 45 km/h débridée ne sont utilisables que sur terrain privé : en France, la voie publique est limitée à 25 km/h (Futura)."
+ ],
+ "parts": [],
+ "care": [
+  "Le tambour arrière se règle au câble : reprends la tension dès que le levier va trop loin.",
+  "Contrôle la pression des pneus chaque semaine, une roue de 10 pouces sous-gonflée s'use vite et crève plus souvent.",
+  "Avec près de 25 kg sur deux suspensions, vérifie le serrage de la potence et des axes de bras régulièrement."
+ ],
+ "price": {
+  "text": "Prix promotionnel relevé par Futura en mai 2026 : 335 €.",
+  "source": "Futura"
+ },
+ "faq": [
+  {
+   "q": "Quelle taille de pneu pour l'iScooter i10 Pro ?",
+   "a": "Des pneus gonflables de 10 pouces. La dimension exacte n'est pas publiée par iScooter : relève le marquage sur le flanc de ton pneu."
+  },
+  {
+   "q": "L'iScooter i10 Pro a-t-elle des plaquettes de frein ?",
+   "a": "Non. Elle freine avec un tambour à l'arrière et un frein électronique, sans disque ni plaquettes."
+  },
+  {
+   "q": "Quelle est l'autonomie de l'iScooter i10 Pro ?",
+   "a": "Les fiches annoncent 50 à 60 km. Futura estime plutôt 40 à 50 km en usage réel."
+  },
+  {
+   "q": "Combien de temps pour recharger l'iScooter i10 Pro ?",
+   "a": "6 à 8 heures pour une charge complète selon iScooter et Darty."
+  },
+  {
+   "q": "La iScooter i10 Pro est-elle légale en France ?",
+   "a": "Oui sur la voie publique à condition d'être bridée à 25 km/h, comme toute trottinette électrique. Débridée, elle n'est utilisable que sur terrain privé."
+  }
+ ],
+ "sources": [
+  {
+   "label": "iScooter France — i10 Pro 800 W",
+   "url": "https://iscooter-france.com/products/trottinette-electrique-iscooter-i10-pro-800w"
+  },
+  {
+   "label": "iScooter Global — i10 Pro 800 W",
+   "url": "https://www.iscooterglobal.com/products/iscooter-i10-pro-800w-commuter-electric-scooter"
+  },
+  {
+   "label": "Futura — iScooter i10 Pro",
+   "url": "https://www.futura-sciences.com/conso/bons-plans/guides-velos-trottinettes-cette-trottinette-electrique-800w-335-fait-60-km-charge-monte-45-km-h-iscooter-i10-pro-excellent-produit-9994/"
+  },
+  {
+   "label": "iScooter EU — i10 Pro",
+   "url": "https://iscooter-eu.com/products/iscooter-i10-pro-800w-10-inch-electric-scooter-60-km-max-range-powerful-scooters-15-ah-45-km-h-electric-scooter"
+  },
+  {
+   "label": "Boulanger — iScooter i10 Pro",
+   "url": "https://www.boulanger.com/ref/9000921718"
+  },
+  {
+   "label": "Darty — iScooter i10 Pro",
+   "url": "https://www.darty.com/nav/achat/ref/MC352571893.html"
+  },
+  {
+   "label": "Ministère de la Transition écologique — réglementation des trottinettes",
+   "url": "https://www.ecologie.gouv.fr/politiques-publiques/trottinettes-electriques-edpm-reglementation-vigueur"
+  }
+ ]
+}

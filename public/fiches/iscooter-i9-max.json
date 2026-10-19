@@ -1,0 +1,130 @@
+{
+ "displayName": "iScooter i9 Max",
+ "metaTitle": "iScooter i9 Max : fiche technique et pièces",
+ "metaDescription": "iScooter i9 Max : 500 W, batterie 36 V, pneus pleins 10 pouces, disque arrière 110 mm, double suspension, prise DC 5,5. Fiche, entretien et pièces.",
+ "intro": [
+  "L'iScooter i9 Max reprend le format compact de l'i9 avec des roues plus grandes et du confort en plus : moteur de 500 W, batterie de 36 V, pneus pleins de 10 pouces et suspensions à l'avant et à l'arrière. Les fiches iScooter annoncent jusqu'à 35 km d'autonomie.",
+  "Les fiches officielles ne donnent pas toutes le même poids (14,7 ou 16,3 kg) ni la même capacité de batterie (10 ou 10,4 Ah). Elle freine avec un disque arrière et un frein électronique à l'avant. Les 35 km/h annoncés après débridage sont réservés au terrain privé."
+ ],
+ "specs": [
+  [
+   "Moteur",
+   "500 W"
+  ],
+  [
+   "Vitesse",
+   "25 km/h sur la voie publique (35 km/h annoncés débridée, terrain privé)"
+  ],
+  [
+   "Batterie",
+   "36 V, 10 à 10,4 Ah selon les fiches"
+  ],
+  [
+   "Autonomie annoncée",
+   "jusqu'à 35 km (à 15 km/h, sur le plat)"
+  ],
+  [
+   "Poids",
+   "14,7 à 16,3 kg selon les fiches iScooter"
+  ],
+  [
+   "Roues",
+   "10 pouces, pneus pleins alvéolés"
+  ],
+  [
+   "Freins",
+   "frein électronique avant + disque arrière 110 mm"
+  ],
+  [
+   "Suspension",
+   "avant et arrière"
+  ],
+  [
+   "Étanchéité",
+   "IP54 (selon iScooter)"
+  ],
+  [
+   "Prise de charge",
+   "DC 5,5 x 2,1 mm"
+  ],
+  [
+   "Temps de charge",
+   "4 à 6 h"
+  ]
+ ],
+ "pros": [
+  "Pneus pleins de 10 pouces : aucune crevaison, et une roue plus grande que sur l'i9.",
+  "Suspensions à l'avant et à l'arrière pour compenser la fermeté des pneus pleins.",
+  "Recharge en 4 à 6 heures."
+ ],
+ "cons": [
+  "La dimension exacte du pneu plein n'est pas publiée : le remplacement demande de relever la cote sur ta roue.",
+  "Fiches officielles contradictoires sur le poids et la batterie.",
+  "Aucun test de presse français publié sur ce modèle.",
+  "Les 35 km/h débridée ne sont utilisables que sur terrain privé : en France, la voie publique est limitée à 25 km/h."
+ ],
+ "parts": [
+  {
+   "label": "Chargeur",
+   "size": "36 V → 42 V, prise DC 5,5 x 2,1 mm",
+   "count": 1,
+   "to": "/piece/chargeur-36v-42v-2a-connecteur-dc-55-21mm",
+   "cta": "Chargeurs 36 V"
+  }
+ ],
+ "care": [
+  "Le disque arrière est le seul frein mécanique : surveille l'épaisseur des plaquettes et l'état du disque.",
+  "Les suspensions travaillent beaucoup avec des pneus pleins : contrôle le jeu des bras et le serrage des axes.",
+  "Vérifie le mécanisme de pliage chaque mois : un jeu dans la potence s'aggrave vite."
+ ],
+ "price": {
+  "text": "Prix affiché par iScooter France : 299 € au lieu de 319 € (page relevée le 17/09/2026).",
+  "source": "iscooter-france.com"
+ },
+ "faq": [
+  {
+   "q": "Quelle taille de pneu pour l'iScooter i9 Max ?",
+   "a": "Des pneus pleins alvéolés de 10 pouces. iScooter ne publie pas la dimension exacte : relève le marquage sur ta roue avant de commander."
+  },
+  {
+   "q": "Quel disque de frein pour l'iScooter i9 Max ?",
+   "a": "Un disque de 110 mm à 5 trous, à l'arrière. L'avant freine électroniquement."
+  },
+  {
+   "q": "Quel chargeur pour l'iScooter i9 Max ?",
+   "a": "Un chargeur 36 V (42 V en sortie) avec prise DC 5,5 x 2,1 mm."
+  },
+  {
+   "q": "Quelle différence entre l'iScooter i9 et l'i9 Max ?",
+   "a": "L'i9 Max passe à 500 W, à des roues de 10 pouces au lieu de 8,5 et ajoute des suspensions avant et arrière. Sa batterie est plus grosse (10 à 10,4 Ah contre 7,5 Ah)."
+  },
+  {
+   "q": "La iScooter i9 Max est-elle légale en France ?",
+   "a": "Oui sur la voie publique à condition d'être bridée à 25 km/h, comme toute trottinette électrique. Débridée, elle n'est utilisable que sur terrain privé."
+  }
+ ],
+ "sources": [
+  {
+   "label": "iScooter Global — fiche i9 Max",
+   "url": "https://www.iscooterglobal.com/pages/i9-max"
+  },
+  {
+   "label": "iScooter France — i9 Max",
+   "url": "https://iscooter-france.com/products/trottinette-electrique-france-iscooter-i9-max"
+  },
+  {
+   "label": "iScooter EU — i9 Max",
+   "url": "https://iscooter-eu.com/products/iscooter-i9-max-electric-scooter"
+  },
+  {
+   "label": "Ministère de la Transition écologique — réglementation des trottinettes",
+   "url": "https://www.ecologie.gouv.fr/politiques-publiques/trottinettes-electriques-edpm-reglementation-vigueur"
+  }
+ ],
+ "video": {
+  "id": "akTByyY6XAA",
+  "title": "Test de la Trottinette Iscooter I9 Max ... au super rapport caractéristiques prix !!",
+  "channel": "bons plans astuces",
+  "uploadDate": "2023-11-20"
+ }
+}

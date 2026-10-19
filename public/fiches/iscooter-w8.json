@@ -1,0 +1,135 @@
+{
+ "displayName": "iScooter W8",
+ "metaTitle": "iScooter W8 : fiche technique, avis et pièces",
+ "metaDescription": "iScooter W8 : 750 W, 48 V 14 Ah, pneus 9x2 (jante 6,1\"), disque avant et tambour arrière, prise GX16-3. Avis, entretien et pièces compatibles.",
+ "intro": [
+  "L'iScooter W8 est une trottinette polyvalente, entre ville et chemin : moteur de 750 W, batterie de 48 V et 14 Ah, pneus gonflables de 9,3 pouces et double suspension. Une version plus modeste de 500 W et 10,4 Ah est aussi vendue sous ce nom : cette fiche décrit la version 750 W.",
+  "Elle freine avec un disque à l'avant, un tambour à l'arrière et un frein électronique. Futura souligne son confort sur les surfaces irrégulières. Les 40 km/h annoncés dépassent la limite de 25 km/h de la voie publique : ils sont réservés au terrain privé."
+ ],
+ "specs": [
+  [
+   "Moteur",
+   "750 W"
+  ],
+  [
+   "Vitesse",
+   "25 km/h sur la voie publique (40 km/h annoncés, terrain privé)"
+  ],
+  [
+   "Batterie",
+   "48 V, 14 Ah"
+  ],
+  [
+   "Autonomie annoncée",
+   "30 à 45 km selon les fiches"
+  ],
+  [
+   "Poids",
+   "21,15 à 21,65 kg selon les fiches"
+  ],
+  [
+   "Roues",
+   "9,3 pouces, 9x2 (jante 6,1\")"
+  ],
+  [
+   "Freins",
+   "disque avant + tambour arrière + frein électronique"
+  ],
+  [
+   "Suspension",
+   "avant et arrière"
+  ],
+  [
+   "Étanchéité",
+   "IPX4"
+  ],
+  [
+   "Prise de charge",
+   "GX16-3"
+  ],
+  [
+   "Temps de charge",
+   "5 à 7 h"
+  ]
+ ],
+ "pros": [
+  "Confortable sur les surfaces irrégulières grâce à la double suspension et aux pneus gonflables (Futura).",
+  "Équipement lumineux et application mobile (Futura).",
+  "Tambour arrière : peu d'entretien sur le frein le plus sollicité."
+ ],
+ "cons": [
+  "Deux versions (500 W et 750 W) sous le même nom : vérifie la tienne avant de commander un chargeur ou une batterie.",
+  "Autonomie annoncée différente selon les fiches, de 30 à 45 km.",
+  "Aucun test de presse complet : l'avis de Futura vient d'un article de présentation.",
+  "Les 40 km/h annoncés ne sont utilisables que sur terrain privé : en France, la voie publique est limitée à 25 km/h (Futura)."
+ ],
+ "parts": [
+  {
+   "label": "Pneu",
+   "size": "9x2 (jante 6,1\")",
+   "count": 2,
+   "to": "/piece/pneu-9x2-6-1-cityroad-ewheel",
+   "cta": "Pneus 9x2"
+  },
+  {
+   "label": "Chargeur",
+   "size": "48 V → 54,6 V, prise GX16-3",
+   "count": 2,
+   "to": "/piece/chargeur-48v-546v-2a-connecteur-gx16-3p",
+   "cta": "Chargeurs 48 V"
+  }
+ ],
+ "care": [
+  "Le tambour arrière se règle au câble : reprends la tension dès que le levier va trop loin.",
+  "Le disque avant fait le gros du freinage : surveille l'épaisseur des plaquettes.",
+  "Contrôle la pression des pneus chaque semaine et le jeu des bras de suspension chaque mois."
+ ],
+ "faq": [
+  {
+   "q": "Quelle taille de pneu pour l'iScooter W8 ?",
+   "a": "Des pneus gonflables de 9,3 pouces, référencés en 9x2 sur une jante de 6,1 pouces."
+  },
+  {
+   "q": "Quelles plaquettes pour l'iScooter W8 ?",
+   "a": "Seul l'avant est à disque. Le modèle d'étrier n'est pas publié par iScooter : compare la forme de ta plaquette avant de commander. L'arrière freine avec un tambour, sans plaquettes."
+  },
+  {
+   "q": "Quel chargeur pour l'iScooter W8 ?",
+   "a": "Pour la version 48 V, un chargeur 48 V (54,6 V en sortie) avec prise GX16-3."
+  },
+  {
+   "q": "Quelle différence entre les deux iScooter W8 ?",
+   "a": "La version 750 W a une batterie de 48 V et 14 Ah ; la version 500 W, une batterie de 48 V et 10,4 Ah. Les deux roulent en 9,3 pouces."
+  },
+  {
+   "q": "La iScooter W8 est-elle légale en France ?",
+   "a": "Oui sur la voie publique à condition d'être bridée à 25 km/h, comme toute trottinette électrique. Débridée, elle n'est utilisable que sur terrain privé."
+  }
+ ],
+ "sources": [
+  {
+   "label": "iScooter EU — W8 750 W",
+   "url": "https://www.iscooterglobal.eu/fr/products/scooter-electrique-tout-terrain-iscooter-w8-750w"
+  },
+  {
+   "label": "iHoverboard — W8",
+   "url": "https://www.ihoverboard.fr/products/w8-scooter-electrique"
+  },
+  {
+   "label": "Darty — iScooter W8",
+   "url": "https://www.darty.com/nav/achat/ref/MC353212237.html"
+  },
+  {
+   "label": "Futura — iScooter W8 750 W",
+   "url": "https://www.futura-sciences.com/conso/bons-plans/guides-velos-trottinettes-cette-trottinette-electrique-750w-moins-270-taille-route-hors-piste-w8-na-pas-froid-yeux-9858/"
+  },
+  {
+   "label": "iScooter France — W8 500 W",
+   "url": "https://iscooter-france.com/en/products/electric-scooter-iscooter-w8-500w"
+  },
+  {
+   "label": "Ministère de la Transition écologique — réglementation des trottinettes",
+   "url": "https://www.ecologie.gouv.fr/politiques-publiques/trottinettes-electriques-edpm-reglementation-vigueur"
+  }
+ ]
+}

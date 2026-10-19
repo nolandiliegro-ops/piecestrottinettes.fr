@@ -1,0 +1,139 @@
+{
+ "displayName": "iScooter iX4",
+ "metaTitle": "iScooter iX4 : fiche technique et pièces",
+ "metaDescription": "iScooter iX4 : 800 W, 48 V 15 Ah, pneus 10x2.75-6.5, disques 140 mm 6 trous entraxe 44 mm, prise GX16-3. Fiche technique, entretien et pièces.",
+ "intro": [
+  "L'iScooter iX4 reprend la base tout-terrain de l'iX3 avec une batterie plus grosse : 48 V et 15 Ah, pour 45 km d'autonomie annoncés. Moteur de 800 W, pneus gonflables de 10 pouces, freins à disque à l'avant et à l'arrière et double suspension complètent la fiche.",
+  "Elle pèse 26 kg selon iScooter France. Livrée bridée à 25 km/h, elle peut être débridée à 45 km/h selon la fiche du distributeur, une vitesse réservée au terrain privé. Aucun test de presse français détaillé n'a été publié sur ce modèle."
+ ],
+ "specs": [
+  [
+   "Moteur",
+   "800 W"
+  ],
+  [
+   "Vitesse",
+   "25 km/h sur la voie publique (45 km/h annoncés débridée, terrain privé)"
+  ],
+  [
+   "Batterie",
+   "48 V, 15 Ah"
+  ],
+  [
+   "Autonomie annoncée",
+   "jusqu'à 45 km"
+  ],
+  [
+   "Poids",
+   "26 kg (selon iScooter France)"
+  ],
+  [
+   "Roues",
+   "10 pouces, 10x2.75-6.5"
+  ],
+  [
+   "Freins",
+   "disques avant et arrière, Ø 140 mm"
+  ],
+  [
+   "Suspension",
+   "double suspension"
+  ],
+  [
+   "Prise de charge",
+   "GX16-3"
+  ],
+  [
+   "Temps de charge",
+   "6 h (selon Boulanger)"
+  ]
+ ],
+ "pros": [
+  "Batterie de 15 Ah, 50 % de plus que l'iX3, pour 45 km annoncés.",
+  "Deux freins à disque et une double suspension.",
+  "Pièces courantes : pneus 10x2.75-6.5, disques 140 mm et chargeur 48 V GX16-3."
+ ],
+ "cons": [
+  "26 kg selon iScooter France : elle reste lourde à porter.",
+  "Aucun test de presse français détaillé : les chiffres viennent des fiches marchandes.",
+  "Les 45 km/h débridée ne sont utilisables que sur terrain privé : en France, la voie publique est limitée à 25 km/h."
+ ],
+ "parts": [
+  {
+   "label": "Pneu",
+   "size": "10x2.75-6.5 (10 pouces, jante 6,5\")",
+   "count": 6,
+   "to": "/piece/pneu-tubeless-10x2-75-6-5-offroad-runflat-ewheel",
+   "cta": "Pneus 10x2.75-6.5"
+  },
+  {
+   "label": "Disque de frein",
+   "size": "140 mm, 6 trous, entraxe 44 mm",
+   "count": 3,
+   "to": "/piece/disque-de-frein-r6-140mm-entraxe-44mm-3-couleurs-rouge",
+   "cta": "Disques 140 mm"
+  },
+  {
+   "label": "Chargeur",
+   "size": "48 V → 54,6 V, prise GX16-3",
+   "count": 2,
+   "to": "/piece/chargeur-48v-546v-2a-connecteur-gx16-3p",
+   "cta": "Chargeurs 48 V"
+  }
+ ],
+ "care": [
+  "Freins à disque : reprends la tension des câbles et recentre les étriers dès que le levier s'allonge.",
+  "Contrôle la pression des pneus avant chaque sortie, surtout en chemin.",
+  "Avec 26 kg sur deux suspensions, vérifie régulièrement le serrage de la potence et des axes de bras."
+ ],
+ "faq": [
+  {
+   "q": "Quelle taille de pneu pour l'iScooter iX4 ?",
+   "a": "Des pneus de 10 pouces en 10x2.75-6.5, sur une jante de 6,5 pouces."
+  },
+  {
+   "q": "Quel disque de frein pour l'iScooter iX4 ?",
+   "a": "Un disque de 140 mm à 6 trous, entraxe 44 mm, à l'avant comme à l'arrière."
+  },
+  {
+   "q": "Quelles plaquettes pour l'iScooter iX4 ?",
+   "a": "Le modèle d'étrier n'est pas publié par iScooter : compare la forme de ta plaquette avant de commander."
+  },
+  {
+   "q": "Quel chargeur pour l'iScooter iX4 ?",
+   "a": "Un chargeur 48 V (54,6 V en sortie) avec prise GX16-3."
+  },
+  {
+   "q": "Quelle différence entre l'iScooter iX3 et l'iX4 ?",
+   "a": "Surtout la batterie : 15 Ah sur l'iX4 contre 10 Ah sur l'iX3, pour 45 km annoncés au lieu de 40. Les deux gardent un moteur de 800 W et des pneus 10x2.75-6.5."
+  },
+  {
+   "q": "La iScooter iX4 est-elle légale en France ?",
+   "a": "Oui sur la voie publique à condition d'être bridée à 25 km/h, comme toute trottinette électrique. Débridée, elle n'est utilisable que sur terrain privé."
+  }
+ ],
+ "sources": [
+  {
+   "label": "iScooter France — iX4 800 W",
+   "url": "https://iscooter-france.com/products/trottinette-electrique-iscooter-ix4-800w"
+  },
+  {
+   "label": "Fnac — iScooter iX4 800 W 48 V 15 Ah",
+   "url": "https://www.fnac.com/mp53041185/Trottinette-Electrique-Iscooter-Ix4-800w-48v-15ah-Max-45km-h/w-4"
+  },
+  {
+   "label": "Boulanger — iScooter iX4",
+   "url": "https://www.boulanger.com/ref/9000933319"
+  },
+  {
+   "label": "Ministère de la Transition écologique — réglementation des trottinettes",
+   "url": "https://www.ecologie.gouv.fr/politiques-publiques/trottinettes-electriques-edpm-reglementation-vigueur"
+  }
+ ],
+ "video": {
+  "id": "lLNAB2hhimg",
+  "title": "iScooter IX4 testée en conditions réelles (pas sur papier) #trottinette #iscooterix4 #ride #test",
+  "channel": "TotoRider35rc",
+  "uploadDate": "2026-01-06"
+ }
+}

@@ -1,0 +1,137 @@
+{
+ "displayName": "iScooter i9",
+ "metaTitle": "iScooter i9 : fiche technique et pièces",
+ "metaDescription": "iScooter i9 : 350 W, batterie 36 V 7,5 Ah, pneus pleins 8,5 pouces, disque arrière 110 mm, prise DC 5,5. Fiche, entretien et pièces compatibles.",
+ "intro": [
+  "L'iScooter i9 est la petite trottinette de ville de la marque : 350 W, batterie de 36 V et 7,5 Ah, roues de 8,5 pouces et 25 km d'autonomie annoncés. Elle pèse 13,5 kg selon iScooter, ce qui la rend facile à monter dans un train ou un bureau.",
+  "Elle n'a pas de suspension et roule sur des pneus pleins alvéolés selon iScooter : pas de crevaison, mais un confort qui dépend de la qualité de la chaussée. Elle freine avec un disque arrière et un frein électronique à l'avant. Les 30 km/h annoncés débridée sont réservés au terrain privé."
+ ],
+ "specs": [
+  [
+   "Moteur",
+   "350 W"
+  ],
+  [
+   "Vitesse",
+   "25 km/h sur la voie publique (30 km/h annoncés débridée, terrain privé)"
+  ],
+  [
+   "Batterie",
+   "36 V, 7,5 Ah"
+  ],
+  [
+   "Autonomie annoncée",
+   "25 km"
+  ],
+  [
+   "Poids",
+   "13,5 kg (selon iScooter), 12 kg selon le manuel repris par Family Trott"
+  ],
+  [
+   "Roues",
+   "8,5 pouces, pneus pleins alvéolés 8,5x2 (jante 6,1\")"
+  ],
+  [
+   "Freins",
+   "frein électronique avant (EBAS) + disque arrière 110 mm"
+  ],
+  [
+   "Suspension",
+   "aucune"
+  ],
+  [
+   "Étanchéité",
+   "IP54"
+  ],
+  [
+   "Prise de charge",
+   "DC 5,5 x 2,1 mm"
+  ],
+  [
+   "Temps de charge",
+   "3 à 5 h"
+  ]
+ ],
+ "pros": [
+  "Légère : 13,5 kg selon iScooter, facile à porter.",
+  "Pneus pleins : aucune crevaison possible.",
+  "Indice IP54 et recharge courte, 3 à 5 heures."
+ ],
+ "cons": [
+  "Pas de suspension, et des pneus pleins : les pavés et les nids-de-poule se sentent dans les poignets.",
+  "Autonomie modeste, 25 km annoncés dans des conditions favorables.",
+  "Certaines fiches marchandes annoncent des pneus gonflables : vérifie ta roue avant de commander un pneu.",
+  "Les 30 km/h débridée ne sont utilisables que sur terrain privé : en France, la voie publique est limitée à 25 km/h."
+ ],
+ "parts": [
+  {
+   "label": "Pneu plein",
+   "size": "8,5x2 (jante 6,1\")",
+   "count": 27,
+   "to": "/piece/pneu-plein-8-5x2-6-1-ultra-leger-jante-34-mm-lisere-rouge-nedong",
+   "cta": "Pneus pleins 8,5\""
+  },
+  {
+   "label": "Chargeur",
+   "size": "36 V → 42 V, prise DC 5,5 x 2,1 mm",
+   "count": 1,
+   "to": "/piece/chargeur-36v-42v-2a-connecteur-dc-55-21mm",
+   "cta": "Chargeurs 36 V"
+  }
+ ],
+ "care": [
+  "Sans suspension, la visserie travaille : vérifie le serrage de la potence et du mécanisme de pliage chaque mois.",
+  "Le disque arrière est le seul frein mécanique : nettoie-le et surveille l'épaisseur des plaquettes.",
+  "Un pneu plein s'use sans prévenir : contrôle la bande de roulement et change-le quand les alvéoles apparaissent."
+ ],
+ "faq": [
+  {
+   "q": "Quelle taille de pneu pour l'iScooter i9 ?",
+   "a": "Des pneus pleins de 8,5 pouces en 8,5x2, sur une jante de 6,1 pouces."
+  },
+  {
+   "q": "Quel disque de frein pour l'iScooter i9 ?",
+   "a": "Un disque de 110 mm à 5 trous, à l'arrière. L'avant freine électroniquement."
+  },
+  {
+   "q": "Quelles plaquettes pour l'iScooter i9 ?",
+   "a": "Le modèle d'étrier n'est pas publié par iScooter : compare la forme de ta plaquette avant de commander."
+  },
+  {
+   "q": "Quel chargeur pour l'iScooter i9 ?",
+   "a": "Un chargeur 36 V (42 V en sortie) avec prise DC 5,5 x 2,1 mm."
+  },
+  {
+   "q": "La iScooter i9 est-elle légale en France ?",
+   "a": "Oui sur la voie publique à condition d'être bridée à 25 km/h, comme toute trottinette électrique. Débridée, elle n'est utilisable que sur terrain privé."
+  }
+ ],
+ "sources": [
+  {
+   "label": "iScooter — fiche i9",
+   "url": "https://iscooter.com/pages/i9"
+  },
+  {
+   "label": "iHoverboard — spécifications i9",
+   "url": "https://www.ihoverboard.fr/pages/specifications-techniques-i9"
+  },
+  {
+   "label": "iScooter EU — i9",
+   "url": "https://iscooter-eu.com/products/i90"
+  },
+  {
+   "label": "Family Trott — fiche technique iScooter i9",
+   "url": "https://familytrott.fr/fiche-technique/iscooter-i9/"
+  },
+  {
+   "label": "Ministère de la Transition écologique — réglementation des trottinettes",
+   "url": "https://www.ecologie.gouv.fr/politiques-publiques/trottinettes-electriques-edpm-reglementation-vigueur"
+  }
+ ],
+ "video": {
+  "id": "A6lgTaUdhis",
+  "title": "Test complet de l’iScooter i9 – La meilleure trottinette électrique abordable ?",
+  "channel": "Le Testeur Tech",
+  "uploadDate": "2025-09-28"
+ }
+}
