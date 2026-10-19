@@ -230,7 +230,7 @@ export const PartsShelf = ({ scooter, title }: { scooter: GarageAtelierScooter; 
           })}
         </div>
       )}
-      <div className="mt-4 flex gap-3 overflow-x-auto -mx-4 px-4 pb-1 lg:mx-0 lg:px-0 lg:grid lg:grid-cols-3 xl:grid-cols-4 lg:overflow-visible" style={{ scrollbarWidth: "none" }}>
+      <div className="mt-0 pt-4 flex gap-3 overflow-x-auto -mx-4 px-4 pb-1 lg:mx-0 lg:px-0 lg:grid lg:grid-cols-3 xl:grid-cols-4 lg:overflow-visible" style={{ scrollbarWidth: "none" }}>
         {isLoading
           ? Array.from({ length: 4 }).map((_, i) => <div key={i} className="shrink-0 w-[46%] lg:w-auto aspect-[3/4] animate-pulse" style={{ background: LINE, clipPath: cut(10) }} />)
           : shown.length === 0

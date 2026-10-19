@@ -264,7 +264,7 @@ const PartsCarousel = ({ parts, onReset, accentColor, categoryFilterActive, enab
 
       <div
         ref={scrollRef}
-        className="pt-products-scroll flex gap-3.5 overflow-x-auto pb-3"
+        className="pt-products-scroll flex gap-3.5 overflow-x-auto pb-3 pt-10 -mt-10"
         style={{ cursor: "grab", WebkitOverflowScrolling: "touch" }}
         aria-label="Liste produits"
         onScroll={updateArrows}
