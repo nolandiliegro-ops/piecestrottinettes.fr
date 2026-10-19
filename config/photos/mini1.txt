@@ -1,0 +1,4 @@
+mini-new.png https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/11bbbf20-7d05-4ca6-9906-b174a6bf7bae/1792441207481_0.png
+mini-old.png https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/11bbbf20-7d05-4ca6-9906-b174a6bf7bae/1792180629185_0.png
+dolphin-new.png https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/28ff423c-fb48-410b-8681-b1c8e127275c/1792441195738_0.png
+togomax-new.png https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/6177308c-701f-40e6-a503-98c233fe9901/1792441282815_0.png
