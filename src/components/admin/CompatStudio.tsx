@@ -28,6 +28,10 @@ interface StudioScooter {
   power_watts: number | null; tire_size: string | null;
   brake_type: string | null; caliper_family: string | null;
   charge_connectors: string[] | null;
+  // Clés de MATCHING roue + disque (les champs que le moteur lit — tire_size n'est que de l'affichage)
+  rim_diameter_code: string | null; tire_section_code: string | null;
+  tire_family: string | null;
+  disc_diameter_code: string | null; disc_pcd_code: string | null; disc_holes_code: string | null;
   brand: { name: string } | null;
 }
 
@@ -91,7 +95,10 @@ const KeysEditDialog = ({ scooter, allScooters, open, onOpenChange }: {
   scooter: StudioScooter; allScooters: StudioScooter[]; open: boolean; onOpenChange: (o: boolean) => void;
 }) => {
   const qc = useQueryClient();
-  const [form, setForm] = useState({ tire_size: '', brake_type: '', caliper_family: '', connectors: '', voltage: '' });
+  const [form, setForm] = useState({
+    tire_size: '', brake_type: '', caliper_family: '', connectors: '', voltage: '',
+    rim_diameter: '', tire_section: '', tire_family: '', disc_d: '', disc_pcd: '', disc_holes: '',
+  });
 
   useEffect(() => {
     if (open) setForm({
@@ -100,24 +107,44 @@ const KeysEditDialog = ({ scooter, allScooters, open, onOpenChange }: {
       caliper_family: scooter.caliper_family ?? '',
       connectors: (scooter.charge_connectors ?? []).join(', '),
       voltage: scooter.voltage != null ? String(scooter.voltage) : '',
+      rim_diameter: scooter.rim_diameter_code ?? '',
+      tire_section: scooter.tire_section_code ?? '',
+      tire_family: scooter.tire_family ?? '',
+      disc_d: scooter.disc_diameter_code ?? '',
+      disc_pcd: scooter.disc_pcd_code ?? '',
+      disc_holes: scooter.disc_holes_code ?? '',
     });
   }, [open, scooter]);
 
-  // Valeurs déjà en base sur d'autres modèles → datalists (pas d'invention de familles)
-  const knownCalipers = useMemo(() => [...new Set(allScooters.map(s => s.caliper_family).filter(Boolean) as string[])].sort(), [allScooters]);
+  // Valeurs déjà en base sur d'autres modèles → listes canoniques (on choisit, on n'invente pas).
+  const distinct = (pick: (s: StudioScooter) => string | null | undefined) =>
+    [...new Set(allScooters.map(pick).filter(Boolean) as string[])].sort((a, b) => a.localeCompare(b, 'fr', { numeric: true }));
+  const knownCalipers = useMemo(() => distinct(s => s.caliper_family), [allScooters]);
   const knownConnectors = useMemo(() => [...new Set(allScooters.flatMap(s => s.charge_connectors ?? []))].sort(), [allScooters]);
+  const knownRims = useMemo(() => distinct(s => s.rim_diameter_code), [allScooters]);
+  const knownSections = useMemo(() => distinct(s => s.tire_section_code), [allScooters]);
+  const knownDiscD = useMemo(() => distinct(s => s.disc_diameter_code), [allScooters]);
+  const knownPcd = useMemo(() => distinct(s => s.disc_pcd_code), [allScooters]);
+  const knownHoles = useMemo(() => distinct(s => s.disc_holes_code), [allScooters]);
 
   const save = useMutation({
     mutationFn: async () => {
       const volt = form.voltage.trim() === '' ? null : Number(form.voltage.replace(',', '.'));
       if (volt !== null && !Number.isFinite(volt)) throw new Error('Voltage invalide');
       const connectors = form.connectors.split(',').map(s => s.trim()).filter(Boolean);
+      // Règle gravée : mieux VIDE que faux — un champ laissé vide écrit NULL, jamais une valeur devinée.
       const patch = {
         tire_size: form.tire_size.trim() || null,
         brake_type: form.brake_type || null,
         caliper_family: form.caliper_family.trim() || null,
         charge_connectors: connectors.length ? connectors : null,
         voltage: volt,
+        rim_diameter_code: form.rim_diameter.trim() || null,
+        tire_section_code: form.tire_section.trim() || null,
+        tire_family: form.tire_family || null,
+        disc_diameter_code: form.disc_d.trim() || null,
+        disc_pcd_code: form.disc_pcd.trim() || null,
+        disc_holes_code: form.disc_holes.trim() || null,
       } satisfies TablesUpdate<'scooter_models'>;
       const { error } = await supabase.from('scooter_models').update(patch).eq('id', scooter.id);
       if (error) throw error;
@@ -139,23 +166,63 @@ const KeysEditDialog = ({ scooter, allScooters, open, onOpenChange }: {
         <DialogHeader>
           <DialogTitle className="font-display tracking-wide text-[hsl(var(--admin-text))]">CLÉS DE MONTAGE — {scooter.name.toUpperCase()}</DialogTitle>
         </DialogHeader>
-        <div className="space-y-3">
+        <div className="space-y-3 max-h-[70vh] overflow-y-auto pr-1">
+          <p className="text-xs rounded-lg bg-[hsl(var(--admin-accent)/0.08)] text-[hsl(var(--admin-text))] px-3 py-2">
+            <strong>Clés de matching</strong> — le moteur lit CES champs. Choisis une valeur proposée ; en cas de doute, laisse <strong>vide</strong> (mieux vide que faux).
+          </p>
+
+          {/* ROUE — la clé = Ø de jante + section. Les pouces sont un arrondi commercial, pas une mesure. */}
           <div className="grid grid-cols-2 gap-3">
             <div className="space-y-1">
-              <p className={lbl}>Taille de pneu</p>
-              <input className={field} value={form.tire_size} onChange={e => setForm(f => ({ ...f, tire_size: e.target.value }))} placeholder="10x2.50" />
+              <p className={lbl}>Ø de jante (pouces) — LE discriminant</p>
+              <input className={field} list="pt-rims" value={form.rim_diameter} onChange={e => setForm(f => ({ ...f, rim_diameter: e.target.value }))} placeholder="6 / 6.5 / 8.5…" />
+              <datalist id="pt-rims">{knownRims.map(c => <option key={c} value={c} />)}</datalist>
+            </div>
+            <div className="space-y-1">
+              <p className={lbl}>Section de pneu</p>
+              <input className={field} list="pt-sections" value={form.tire_section} onChange={e => setForm(f => ({ ...f, tire_section: e.target.value }))} placeholder="80/65 / 60/70…" />
+              <datalist id="pt-sections">{knownSections.map(c => <option key={c} value={c} />)}</datalist>
+            </div>
+          </div>
+          <div className="grid grid-cols-2 gap-3">
+            <div className="space-y-1">
+              <p className={lbl}>Famille de pneu</p>
+              <select className={field} value={form.tire_family} onChange={e => setForm(f => ({ ...f, tire_family: e.target.value }))}>
+                <option value="">— non renseigné —</option>
+                <option value="pneumatic">Gonflable</option>
+                <option value="solid">Plein</option>
+              </select>
             </div>
             <div className="space-y-1">
               <p className={lbl}>Voltage (V)</p>
               <input className={field} inputMode="decimal" value={form.voltage} onChange={e => setForm(f => ({ ...f, voltage: e.target.value }))} placeholder="52" />
             </div>
           </div>
+
+          {/* FREIN — type + géométrie de disque + étrier */}
           <div className="space-y-1">
             <p className={lbl}>Freinage</p>
             <select className={field} value={form.brake_type} onChange={e => setForm(f => ({ ...f, brake_type: e.target.value }))}>
               <option value="">— non renseigné —</option>
               {Object.entries(BRAKE_FR).map(([k, v]) => <option key={k} value={k}>{v}</option>)}
             </select>
+          </div>
+          <div className="grid grid-cols-3 gap-3">
+            <div className="space-y-1">
+              <p className={lbl}>Ø disque (mm)</p>
+              <input className={field} list="pt-discd" value={form.disc_d} onChange={e => setForm(f => ({ ...f, disc_d: e.target.value }))} placeholder="160" />
+              <datalist id="pt-discd">{knownDiscD.map(c => <option key={c} value={c} />)}</datalist>
+            </div>
+            <div className="space-y-1">
+              <p className={lbl}>Entraxe (mm)</p>
+              <input className={field} list="pt-pcd" value={form.disc_pcd} onChange={e => setForm(f => ({ ...f, disc_pcd: e.target.value }))} placeholder="48" />
+              <datalist id="pt-pcd">{knownPcd.map(c => <option key={c} value={c} />)}</datalist>
+            </div>
+            <div className="space-y-1">
+              <p className={lbl}>Trous</p>
+              <input className={field} list="pt-holes" value={form.disc_holes} onChange={e => setForm(f => ({ ...f, disc_holes: e.target.value }))} placeholder="6" />
+              <datalist id="pt-holes">{knownHoles.map(c => <option key={c} value={c} />)}</datalist>
+            </div>
           </div>
           <div className="space-y-1">
             <p className={lbl}>Famille d'étrier</p>
@@ -168,6 +235,13 @@ const KeysEditDialog = ({ scooter, allScooters, open, onOpenChange }: {
             <datalist id="pt-connectors">{knownConnectors.map(c => <option key={c} value={c} />)}</datalist>
             <p className="text-[11px] text-[hsl(var(--admin-text-muted))]">Valeurs connues : {knownConnectors.slice(0, 6).join(' · ') || '—'}</p>
           </div>
+
+          {/* AFFICHAGE — ne matche jamais */}
+          <div className="space-y-1 border-t border-[hsl(var(--admin-border))] pt-3">
+            <p className={lbl}>Taille de pneu — AFFICHAGE CLIENT (le moteur ne lit pas ce champ)</p>
+            <input className={field} value={form.tire_size} onChange={e => setForm(f => ({ ...f, tire_size: e.target.value }))} placeholder="10 pouces (10x2.50)" />
+          </div>
+
           <div className="flex justify-end gap-2 pt-1">
             <Button variant="outline" className="bg-white border-[hsl(var(--admin-border))]" onClick={() => onOpenChange(false)}>Annuler</Button>
             <Button className="bg-green-700 hover:bg-green-800 text-white gap-1.5" disabled={save.isPending} onClick={() => save.mutate()}>
@@ -188,7 +262,7 @@ const useStudioScooters = () => useQuery({
   queryFn: async (): Promise<StudioScooter[]> => {
     const { data, error } = await supabase
       .from('scooter_models')
-      .select('id, name, slug, image_url, published, year, voltage, power_watts, tire_size, brake_type, caliper_family, charge_connectors, brand:brands!scooter_models_brand_id_fkey(name)')
+      .select('id, name, slug, image_url, published, year, voltage, power_watts, tire_size, brake_type, caliper_family, charge_connectors, rim_diameter_code, tire_section_code, tire_family, disc_diameter_code, disc_pcd_code, disc_holes_code, brand:brands!scooter_models_brand_id_fkey(name)')
       .order('name');
     if (error) throw error;
     return (data || []) as unknown as StudioScooter[];
@@ -558,13 +632,21 @@ const CompatStudio = ({ onClassic }: { onClassic: () => void }) => {
                     </Button>
                   </div>
                 </div>
-                {/* Clés de montage — pastilles CLIQUABLES, les manquantes aussi (19/10) */}
+                {/* Clés de montage — pastilles CLIQUABLES. La roue affiche la CLÉ (section · Ø jante),
+                    jamais la prose tire_size : un champ d'affichage ne matche jamais. */}
                 <div className="flex flex-wrap gap-1.5 mt-2">
-                  <KeyPill label="taille de pneu" icon={<CircleDot className="w-3.5 h-3.5" />} empty={!scooter.tire_size} onClick={() => setKeysOpen(true)}>
-                    {scooter.tire_size ?? '+ Pneu'}
+                  <KeyPill label="roue (section + Ø jante)" icon={<CircleDot className="w-3.5 h-3.5" />} empty={!scooter.tire_section_code && !scooter.rim_diameter_code} onClick={() => setKeysOpen(true)}>
+                    {scooter.tire_section_code || scooter.rim_diameter_code
+                      ? `${scooter.tire_section_code ?? '?'} · jante ${scooter.rim_diameter_code ?? '?'}"`
+                      : '+ Roue'}
                   </KeyPill>
                   <KeyPill label="freinage" icon={<Disc className="w-3.5 h-3.5" />} empty={!scooter.brake_type} onClick={() => setKeysOpen(true)}>
                     {scooter.brake_type ? (BRAKE_FR[scooter.brake_type] ?? scooter.brake_type) : '+ Frein'}
+                  </KeyPill>
+                  <KeyPill label="disque (Ø / entraxe / trous)" empty={!scooter.disc_diameter_code} onClick={() => setKeysOpen(true)}>
+                    {scooter.disc_diameter_code
+                      ? `Disque ${scooter.disc_diameter_code}/${scooter.disc_pcd_code ?? '?'}/${scooter.disc_holes_code ?? '?'}`
+                      : '+ Disque'}
                   </KeyPill>
                   <KeyPill label="famille d'étrier" empty={!scooter.caliper_family} onClick={() => setKeysOpen(true)}>
                     {scooter.caliper_family ? `Étrier ${scooter.caliper_family}` : '+ Étrier'}
