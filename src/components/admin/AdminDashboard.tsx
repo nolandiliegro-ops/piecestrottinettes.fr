@@ -147,7 +147,7 @@ const AdminDashboard = () => {
     { to: '/admin/commandes', icon: PackageCheck, label: 'Commandes à préparer', count: stats.orders_to_prepare, urgent: true },
     { to: '/admin/commandes', icon: Truck, label: 'Commandes à expédier', count: stats.orders_to_ship, urgent: true },
     { to: '/admin/messages', icon: MessageSquare, label: 'Messages en attente', count: stats.messages_pending },
-    { to: '/admin/bots', icon: Bot, label: 'Imports bot à valider', count: stats.imports_scooters + stats.imports_parts },
+    { to: '/admin/bots', icon: Bot, label: 'Trottinettes bot à trier', count: stats.imports_scooters },
     { to: '/admin/catalogue/pieces', icon: AlertTriangle, label: 'Stock bas (pièces publiées)', count: stats.stock_low },
   ] : [];
 
