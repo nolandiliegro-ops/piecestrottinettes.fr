@@ -10,7 +10,7 @@ import { spawnSync } from 'child_process';
 
 const DATA = process.argv[2] || '../data';
 const c = JSON.parse(readFileSync('config/passe-disques.json', 'utf-8'));
-const SCRIPTS = { pneus: 'fill-tires', photos: 'fill-photos', prises: 'fill-plugs', disques: 'fill-discs', 'seo-marques': 'fill-seo-brands', 'seo-trottinettes': 'fill-seo-scooters', galerie: 'fill-gallery', gamme: 'fill-gamme' };
+const SCRIPTS = { pneus: 'fill-tires', photos: 'fill-photos', prises: 'fill-plugs', disques: 'fill-discs', 'seo-marques': 'fill-seo-brands', 'seo-trottinettes': 'fill-seo-scooters', galerie: 'fill-gallery', gamme: 'fill-gamme', fiches: 'fill-fiches-scooters' };
 const list = Array.isArray(c.passes) ? c.passes : [{ passe: c.passe, model: c.model, max_searches: c.max_searches, max_brands: c.max_brands, plafond_tokens_run: c.plafond_tokens_run, brands: c.brands }];
 let failed = 0;
 for (const p of list) {

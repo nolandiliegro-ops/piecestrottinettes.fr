@@ -1,5 +1,5 @@
 import { useParams, Link, useSearchParams } from "react-router-dom";
-import { SCOOTER_SEO } from "@/data/scooterSeo";
+import { useScooterFiche } from "@/hooks/useScooterFiche";
 import { motion } from "framer-motion";
 import { Loader2, ArrowLeft, ChevronRight } from "lucide-react";
 import SEO from "@/components/SEO";
@@ -34,6 +34,7 @@ const ScooterDetail = () => {
     useShowroomData(slug);
   // Mise en page (16/10) : sans paramètre = Pit-stand (6). ?style=0 ancienne page, ?style=1..5 autres propositions.
   const [searchParams] = useSearchParams();
+  const seoFiche = useScooterFiche(slug);
   const styleNum = Number(searchParams.get("style"));
   // 16/10 : Pit-stand (6) validée par Nolan = page par défaut. ?style=0 = ancienne page (référence), ?style=1..5 = autres propositions.
   const hasStyleParam = searchParams.has("style");
@@ -104,7 +105,6 @@ const ScooterDetail = () => {
   );
 
   // 13/10 : titre calé sur « pièces <modèle> » + les familles qui vendent (avant : « — Pièces compatibles »).
-  const seoFiche = SCOOTER_SEO[scooter.slug];
   const seoTitle = seoFiche?.metaTitle ?? `Pièces ${scooter.name} : pneus, freins, chargeur compatibles`;
   const seoDescription = seoFiche?.metaDescription ?? `Découvre toutes les pièces compatibles avec ta ${brandName ? `${brandName} ` : ""}${scooter.name} : ${count} pièce${count > 1 ? "s" : ""} référencée${count > 1 ? "s" : ""}, livraison rapide. Freins, pneus, batteries, contrôleurs et plus sur piècestrottinettes.`;
   const canonical = `${SITE}/scooter/${scooter.slug}`;

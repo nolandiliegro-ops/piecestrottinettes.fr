@@ -49,7 +49,7 @@ jobs:
         if: always() && steps.garde.outputs.go == 'true'
         run: |
           cd ../data
-          git add -- '*.json' '*.md' 'prises/*.json' 'seo/*.json' 'galerie/*.json' 'gamme/*.json' 2>/dev/null || true
+          git add -- '*.json' '*.md' 'prises/*.json' 'seo/*.json' 'galerie/*.json' 'gamme/*.json' 'fiches/*.json' 2>/dev/null || true
           if git diff --cached --quiet; then echo "Aucun fichier nouveau."; exit 0; fi
           git commit -m "passe ciblée : run ${{ github.run_id }}"
           git push origin donnees-extraction
