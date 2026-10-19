@@ -114,6 +114,22 @@ Supabase Secrets (Edge Functions) :
 - Titres hero : majuscules, `font-black` (900), `tracking-tight`
 - Texte minimum : 14px (jamais en dessous)
 
+## Admin (règles actées 19-20/10/2026)
+- Thème admin : variables CSS sur `:root` UNIQUEMENT (jamais seulement sur `.admin-studio`) —
+  les portals Radix (Sheet/Dialog/Dropdown) montent hors du wrapper et rendraient des fonds
+  transparents (bug Clients du 19/10).
+- Avant tout push : `tsc --noEmit -p tsconfig.app.json` (copie scratchpad sans lockfile,
+  `npm install --ignore-scripts`). Vite build laisse passer des identifiants non importés
+  (crash runtime avec build vert) ; 3 erreurs pré-existantes connues : OrderDetailSheet,
+  PendingPartsManager, PendingScootersManager.
+- Deux écrans qui parlent de la même chose emploient LE MÊME MOT de statut, et un compteur
+  cliqué atterrit sur la liste déjà filtrée (`?statut=`). Un compteur n'additionne jamais
+  deux files de natures différentes.
+- Studio Compat : les pastilles de clés éditent les colonnes de MATCHING
+  (rim_diameter_code, tire_section_code, disc_*_code…) — `tire_size` est de l'AFFICHAGE,
+  le moteur ne le lit pas. Un éditeur de clé propose les valeurs canoniques en base
+  (datalist), jamais du texte libre nu.
+
 ## Mobile-First — règle absolue
 - Coder pour mobile en premier, desktop en second
 - Touch targets minimum 44px
