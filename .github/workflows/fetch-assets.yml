@@ -27,7 +27,7 @@ jobs:
       - name: Commit
         run: |
           git config user.name "pt-assets"; git config user.email "pt-assets@users.noreply.github.com"
-          git add public/partners
+          git add public/partners public/categories 2>/dev/null || git add public/partners
           if git diff --cached --quiet; then echo "::notice::rien de nouveau"; exit 0; fi
-          git commit -m "Images partenaires (fetch-assets)"
+          git commit -m "Images récupérées (fetch-assets)"
           for i in 1 2 3; do git push && exit 0; git pull --rebase; done; exit 1

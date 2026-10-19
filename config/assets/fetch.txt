@@ -1,3 +1,19 @@
 # chemin_dans_public URL — logos partenaires (usage dans le bloc « Où l'acheter », accord du partenaire)
 # (déjà récupéré 19/10, optimisé en public/partners/dualtron-store.webp) public/partners/dualtron-store-logo.png https://dualtron-store.com/wp-content/uploads/2021/10/DUALTRONSTORE_Logo3D_vClean_4K.png
 # (déjà récupéré 19/10, optimisé en public/partners/dualtron-store.webp) public/partners/dualtron-store-icone.png https://dualtron-store.com/wp-content/uploads/2024/08/DUALTRONSTORE-1-e1722943510719.png
+
+# 19/10 : packshots catégories (Higgsfield, fond transparent) — page Pièces
+public/categories/src/pneus-a.png https://d8j0ntlcm91z4.cloudfront.net/user_3GQlfFCxTsvuOLmSkOzS19wh9sw/hf_20261019_152545_de580edd-7c5e-42a5-87cc-d123426296d4.png
+public/categories/src/pneus-b.png https://d8j0ntlcm91z4.cloudfront.net/user_3GQlfFCxTsvuOLmSkOzS19wh9sw/hf_20261019_152507_c635dbbe-55e0-49fb-b814-1b0cdf7e6eeb.png
+public/categories/src/pleins-a.png https://d8j0ntlcm91z4.cloudfront.net/user_3GQlfFCxTsvuOLmSkOzS19wh9sw/hf_20261019_152546_862e0131-9b22-4b2d-b6b9-2d453a0a2bf1.png
+public/categories/src/pleins-b.png https://d8j0ntlcm91z4.cloudfront.net/user_3GQlfFCxTsvuOLmSkOzS19wh9sw/hf_20261019_152615_a9e31416-b4b9-4fe9-a156-f0ffc95c4c47.png
+public/categories/src/chambres-a.png https://d8j0ntlcm91z4.cloudfront.net/user_3GQlfFCxTsvuOLmSkOzS19wh9sw/hf_20261019_152546_1e7a25f7-e33f-431a-9d93-57f1418cde70.png
+public/categories/src/chambres-b.png https://d8j0ntlcm91z4.cloudfront.net/user_3GQlfFCxTsvuOLmSkOzS19wh9sw/hf_20261019_152508_e3668b37-5510-461c-ae76-fb501abd980f.png
+public/categories/src/plaquettes-a.png https://d8j0ntlcm91z4.cloudfront.net/user_3GQlfFCxTsvuOLmSkOzS19wh9sw/hf_20261019_152546_08f98dc1-a929-4b43-bfd0-5f6554d5237b.png
+public/categories/src/plaquettes-b.png https://d8j0ntlcm91z4.cloudfront.net/user_3GQlfFCxTsvuOLmSkOzS19wh9sw/hf_20261019_152615_d85f04e1-08bf-4424-90e6-7fe143dc469d.png
+public/categories/src/disques-a.png https://d8j0ntlcm91z4.cloudfront.net/user_3GQlfFCxTsvuOLmSkOzS19wh9sw/hf_20261019_152600_52f2f944-5b0d-4f6e-9404-20b30e457074.png
+public/categories/src/disques-b.png https://d8j0ntlcm91z4.cloudfront.net/user_3GQlfFCxTsvuOLmSkOzS19wh9sw/hf_20261019_152507_17256d7d-4cc5-490c-b8e8-9e3639c04cee.png
+public/categories/src/chargeurs-a.png https://d8j0ntlcm91z4.cloudfront.net/user_3GQlfFCxTsvuOLmSkOzS19wh9sw/hf_20261019_152601_4ce19947-7a5f-46ab-8342-ba19f29f80ce.png
+public/categories/src/chargeurs-b.png https://d8j0ntlcm91z4.cloudfront.net/user_3GQlfFCxTsvuOLmSkOzS19wh9sw/hf_20261019_152507_ad07b962-8f63-4b25-9fb1-ee7f3a3aab55.png
+public/categories/src/accessoires-a.png https://d8j0ntlcm91z4.cloudfront.net/user_3GQlfFCxTsvuOLmSkOzS19wh9sw/hf_20261019_152624_d5f40940-96c8-422b-bc95-7ced8bc1faa6.png
+public/categories/src/accessoires-b.png https://d8j0ntlcm91z4.cloudfront.net/user_3GQlfFCxTsvuOLmSkOzS19wh9sw/hf_20261019_152624_b11bb3ae-1eb2-409d-9064-b888f7357789.png
