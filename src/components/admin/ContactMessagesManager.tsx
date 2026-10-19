@@ -70,11 +70,15 @@ interface ClientThread {
   status: ConvStatus;
 }
 
-const STATUS_PILL: Record<ConvStatus, { label: string; cls: string }> = {
-  pending: { label: 'En attente', cls: 'bg-amber-500/20 text-amber-400 border-amber-500/30' },
-  replied: { label: 'Répondu', cls: 'bg-emerald-500/20 text-emerald-400 border-emerald-500/30' },
-  closed: { label: 'Fermé', cls: 'bg-[hsl(var(--aov08))] text-[hsl(var(--al60))] border-[hsl(var(--al25))]' },
+const STATUS_PILL: Record<ConvStatus, { label: string; cls: string; dot: string }> = {
+  pending: { label: 'En attente', cls: 'bg-amber-50 text-amber-700 border-amber-200', dot: 'bg-amber-500' },
+  replied: { label: 'Répondu', cls: 'bg-emerald-50 text-emerald-700 border-emerald-200', dot: 'bg-emerald-600' },
+  closed: { label: 'Fermé', cls: 'bg-[hsl(var(--aov04))] text-[hsl(var(--admin-text-muted))] border-[hsl(var(--admin-border))]', dot: 'bg-gray-400' },
 };
+
+/** Un message issu du widget compatibilité du site (lead), pas un vrai mail de contact. */
+const isCompatLead = (m: ContactMessage) =>
+  (m.subject || '').toLowerCase().startsWith('compatibilite') || (m.name || '').toLowerCase().startsWith('lead compat');
 
 // ─── Contact Conversation View ───
 const ContactConversationView = ({ contact, onBack, onRefresh }: { contact: ContactMessage; onBack: () => void; onRefresh: () => void }) => {
@@ -333,9 +337,17 @@ const ContactConversationView = ({ contact, onBack, onRefresh }: { contact: Cont
 };
 
 // ─── Contact Tab ───
+type SortMode = 'recent' | 'oldest' | 'status';
+type TypeFilter = 'all' | 'contact' | 'lead';
+
 const ContactTab = ({ messages, onRefresh, initialSelectedId, onSelectionChange }: { messages: ContactMessage[]; onRefresh: () => void; initialSelectedId?: string | null; onSelectionChange?: (id: string | null) => void }) => {
   const [selectedId, setSelectedId] = useState<string | null>(initialSelectedId || null);
   const [filter, setFilter] = useState<'all' | ConvStatus>('all');
+  const [typeFilter, setTypeFilter] = useState<TypeFilter>('all');
+  const [sortMode, setSortMode] = useState<SortMode>('status');
+  const [search, setSearch] = useState('');
+  const [checked, setChecked] = useState<Set<string>>(new Set());
+  const [bulkRunning, setBulkRunning] = useState(false);
   const [replyCounts, setReplyCounts] = useState<Map<string, number>>(new Map());
 
   // Fetch reply counts per contact
@@ -361,23 +373,54 @@ const ContactTab = ({ messages, onRefresh, initialSelectedId, onSelectionChange 
     pending: messages.filter(m => m.status === 'pending').length,
     replied: messages.filter(m => m.status === 'replied').length,
     closed: messages.filter(m => m.status === 'closed').length,
+    lead: messages.filter(isCompatLead).length,
+    contact: messages.filter(m => !isCompatLead(m)).length,
   }), [messages]);
 
-  const sorted = useMemo(() => {
+  const filtered = useMemo(() => {
+    const q = search.trim().toLowerCase();
     const statusOrder: Record<ConvStatus, number> = { pending: 0, replied: 1, closed: 2 };
-    return [...messages].sort((a, b) => {
-      const so = statusOrder[a.status] - statusOrder[b.status];
-      if (so !== 0) return so;
-      const ad = new Date(a.last_reply_at || a.created_at).getTime();
-      const bd = new Date(b.last_reply_at || b.created_at).getTime();
-      return bd - ad;
-    });
-  }, [messages]);
+    const date = (m: ContactMessage) => new Date(m.last_reply_at || m.created_at).getTime();
+    return messages
+      .filter(m => (filter === 'all' ? true : m.status === filter))
+      .filter(m => (typeFilter === 'all' ? true : typeFilter === 'lead' ? isCompatLead(m) : !isCompatLead(m)))
+      .filter(m => !q || m.name.toLowerCase().includes(q) || m.email.toLowerCase().includes(q) || (m.subject || '').toLowerCase().includes(q) || (m.message || '').toLowerCase().includes(q))
+      .sort((a, b) => {
+        if (sortMode === 'status') {
+          const so = statusOrder[a.status] - statusOrder[b.status];
+          if (so !== 0) return so;
+          return date(b) - date(a);
+        }
+        return sortMode === 'recent' ? date(b) - date(a) : date(a) - date(b);
+      });
+  }, [messages, filter, typeFilter, search, sortMode]);
 
-  const filtered = useMemo(
-    () => filter === 'all' ? sorted : sorted.filter(m => m.status === filter),
-    [sorted, filter]
-  );
+  // Sélection multiple — ne retient que des ids encore visibles
+  const toggleCheck = (id: string) => setChecked(prev => {
+    const next = new Set(prev);
+    if (next.has(id)) next.delete(id); else next.add(id);
+    return next;
+  });
+  const visibleChecked = useMemo(() => filtered.filter(m => checked.has(m.id)).map(m => m.id), [filtered, checked]);
+  const allVisibleChecked = filtered.length > 0 && visibleChecked.length === filtered.length;
+  const toggleAll = () => setChecked(allVisibleChecked ? new Set() : new Set(filtered.map(m => m.id)));
+
+  const bulkUpdate = async (status: ConvStatus) => {
+    if (visibleChecked.length === 0) return;
+    setBulkRunning(true);
+    try {
+      const patch = status === 'pending' ? { status, replied: false } : { status, replied: true };
+      const { error } = await supabase.from('contact_messages').update(patch as any).in('id', visibleChecked);
+      if (error) throw error;
+      toast.success(`${visibleChecked.length} message${visibleChecked.length > 1 ? 's' : ''} → ${STATUS_PILL[status].label}`);
+      setChecked(new Set());
+      onRefresh();
+    } catch (e: any) {
+      toast.error(e?.message || 'Erreur de mise à jour');
+    } finally {
+      setBulkRunning(false);
+    }
+  };
 
   const formatDate = (d: string) => new Date(d).toLocaleDateString('fr-FR', { day: '2-digit', month: '2-digit', hour: '2-digit', minute: '2-digit' });
 
@@ -399,61 +442,147 @@ const ContactTab = ({ messages, onRefresh, initialSelectedId, onSelectionChange 
   const FilterBtn = ({ value, label, count }: { value: 'all' | ConvStatus; label: string; count: number }) => (
     <button
       onClick={() => setFilter(value)}
-      className={`px-3 py-1.5 rounded-full text-xs font-semibold border transition-colors ${
+      className={`flex items-center gap-1.5 px-3 py-1.5 min-h-[36px] rounded-full text-xs font-semibold whitespace-nowrap transition-colors ${
         filter === value
-          ? 'bg-primary/20 text-primary border-primary/40'
-          : 'bg-[hsl(var(--aov04))] border-[hsl(var(--al18))] text-[hsl(var(--al65))] hover:text-[hsl(var(--al90))]'
+          ? 'bg-[hsl(var(--admin-accent))] text-white'
+          : 'text-[hsl(var(--admin-text-muted))] hover:bg-[hsl(var(--aov03))]'
       }`}
     >
-      {label} <span className="opacity-70">({count})</span>
+      {value !== 'all' && <span className={`w-2 h-2 rounded-full shrink-0 ${filter === value ? 'bg-white' : STATUS_PILL[value].dot}`} />}
+      {label} ({count})
+    </button>
+  );
+
+  const TypeBtn = ({ value, label, count }: { value: TypeFilter; label: string; count: number }) => (
+    <button
+      onClick={() => setTypeFilter(value)}
+      className={`px-2.5 py-1.5 min-h-[36px] rounded-full text-xs font-semibold whitespace-nowrap border transition-colors ${
+        typeFilter === value
+          ? 'bg-[hsl(var(--admin-text))] text-white border-transparent'
+          : 'bg-[hsl(var(--aov04))] text-[hsl(var(--admin-text))] border-transparent hover:bg-[hsl(var(--aov08))]'
+      }`}
+    >
+      {label} ({count})
+    </button>
+  );
+
+  const SortBtn = ({ value, label }: { value: SortMode; label: string }) => (
+    <button
+      onClick={() => setSortMode(value)}
+      className={`px-2.5 py-1 rounded-full text-xs font-medium whitespace-nowrap transition-colors ${
+        sortMode === value ? 'bg-[hsl(var(--admin-accent))] text-white' : 'text-[hsl(var(--admin-text-muted))] hover:bg-[hsl(var(--aov03))]'
+      }`}
+    >
+      {label}
     </button>
   );
 
   return (
     <div className="space-y-3">
-      <div className="flex flex-wrap gap-2">
-        <FilterBtn value="all" label="Tous" count={counts.all} />
-        <FilterBtn value="pending" label="En attente" count={counts.pending} />
-        <FilterBtn value="replied" label="Répondus" count={counts.replied} />
-        <FilterBtn value="closed" label="Fermés" count={counts.closed} />
+      {/* Recherche + tri */}
+      <div className="flex flex-wrap items-center gap-2">
+        <input
+          value={search}
+          onChange={e => setSearch(e.target.value)}
+          placeholder="Rechercher nom, email, sujet…"
+          className="flex-1 min-w-[200px] h-10 px-3 rounded-lg bg-white border border-[hsl(var(--admin-border))] text-sm text-[hsl(var(--admin-text))] placeholder:text-[hsl(var(--admin-text-muted))] focus:outline-none focus:ring-2 focus:ring-[hsl(var(--admin-accent))]"
+        />
+        <div className="flex items-center gap-0.5 rounded-full border border-[hsl(var(--admin-border))] bg-white p-0.5">
+          <span className="pl-2 pr-1 text-[10px] font-black uppercase tracking-wider text-[hsl(var(--admin-text-muted))]">Tri</span>
+          <SortBtn value="status" label="À traiter d'abord" />
+          <SortBtn value="recent" label="Récents" />
+          <SortBtn value="oldest" label="Anciens" />
+        </div>
+      </div>
+
+      {/* Type (chips beiges) puis statut (segmenté à puces) — même hiérarchie que le catalogue */}
+      <div className="flex flex-wrap items-center gap-2">
+        <span className="text-[10px] font-black uppercase tracking-wider text-[hsl(var(--admin-text-muted))]">Type</span>
+        <TypeBtn value="all" label="Tous" count={counts.all} />
+        <TypeBtn value="contact" label="Messages" count={counts.contact} />
+        <TypeBtn value="lead" label="Leads compat" count={counts.lead} />
+        <span className="ml-2 text-[10px] font-black uppercase tracking-wider text-[hsl(var(--admin-text-muted))]">Statut</span>
+        <div className="inline-flex items-center gap-0.5 rounded-full border border-[hsl(var(--admin-border))] bg-white p-0.5">
+          <FilterBtn value="all" label="Tous" count={counts.all} />
+          <FilterBtn value="pending" label="En attente" count={counts.pending} />
+          <FilterBtn value="replied" label="Répondus" count={counts.replied} />
+          <FilterBtn value="closed" label="Fermés" count={counts.closed} />
+        </div>
+      </div>
+
+      {/* Tout sélectionner + actions en lot */}
+      <div className="flex flex-wrap items-center gap-3 min-h-[40px]">
+        <label className="flex items-center gap-2 text-sm text-[hsl(var(--admin-text-muted))] cursor-pointer select-none px-1">
+          <input type="checkbox" checked={allVisibleChecked} onChange={toggleAll} className="w-4 h-4 accent-green-700" />
+          Tout sélectionner ({filtered.length})
+        </label>
+        {visibleChecked.length > 0 && (
+          <div className="flex flex-wrap items-center gap-2 rounded-xl bg-[hsl(var(--admin-text))] text-white px-3 py-1.5">
+            <span className="text-xs font-semibold">{visibleChecked.length} sélectionné{visibleChecked.length > 1 ? 's' : ''}</span>
+            <Button size="sm" variant="ghost" disabled={bulkRunning} onClick={() => bulkUpdate('closed')} className="h-8 text-white hover:bg-white/15 hover:text-white gap-1">
+              {bulkRunning ? <Loader2 className="w-3.5 h-3.5 animate-spin" /> : <Lock className="w-3.5 h-3.5" />} Fermer
+            </Button>
+            <Button size="sm" variant="ghost" disabled={bulkRunning} onClick={() => bulkUpdate('replied')} className="h-8 text-white hover:bg-white/15 hover:text-white gap-1">
+              <CheckCircle className="w-3.5 h-3.5" /> Marquer répondu
+            </Button>
+            <Button size="sm" variant="ghost" disabled={bulkRunning} onClick={() => bulkUpdate('pending')} className="h-8 text-white hover:bg-white/15 hover:text-white gap-1">
+              <Circle className="w-3.5 h-3.5" /> Rouvrir
+            </Button>
+            <button onClick={() => setChecked(new Set())} className="ml-1 text-white/70 hover:text-white" aria-label="Annuler la sélection">
+              <X className="w-4 h-4" />
+            </button>
+          </div>
+        )}
       </div>
 
       {filtered.length === 0 ? (
-        <div className="text-center py-12 text-[hsl(var(--al55))]">Aucun message.</div>
+        <div className="text-center py-12 text-[hsl(var(--admin-text-muted))]">Aucun message.</div>
       ) : (
         <div className="space-y-2">
           {filtered.map(msg => {
             const initials = msg.name.split(' ').map(s => s[0]).filter(Boolean).slice(0, 2).join('').toUpperCase() || '?';
             const replyCount = replyCounts.get(msg.id) || 0;
+            const lead = isCompatLead(msg);
             return (
               <div
                 key={msg.id}
                 onClick={() => setSelected(msg.id)}
-                className="bg-[hsl(var(--aov03))] border border-[hsl(var(--al18))] rounded-lg px-4 py-3 cursor-pointer hover:bg-[hsl(var(--aov05))] transition-colors flex items-center gap-3"
+                className={`admin-glass-card rounded-xl px-3 py-3 cursor-pointer hover:shadow-md transition-all flex items-center gap-3 ${checked.has(msg.id) ? 'ring-2 ring-[hsl(var(--admin-accent))]' : ''}`}
               >
-                <div className="w-9 h-9 rounded-full bg-primary/15 flex items-center justify-center shrink-0 text-[11px] font-bold text-primary">
-                  {initials}
+                <input
+                  type="checkbox"
+                  checked={checked.has(msg.id)}
+                  onChange={() => toggleCheck(msg.id)}
+                  onClick={e => e.stopPropagation()}
+                  className="w-4 h-4 accent-green-700 shrink-0"
+                  aria-label={`Sélectionner ${msg.name}`}
+                />
+                <div className="w-9 h-9 rounded-full bg-[hsl(var(--admin-accent)/0.12)] flex items-center justify-center shrink-0 text-[11px] font-bold text-[hsl(var(--admin-accent))]">
+                  {lead ? '🔍' : initials}
                 </div>
                 <div className="flex-1 min-w-0">
                   <div className="flex items-center gap-2 mb-0.5 flex-wrap">
-                    <span className="text-sm font-medium text-[hsl(var(--al90))] truncate">{msg.name}</span>
-                    <span className="text-xs text-[hsl(var(--al45))]">·</span>
-                    <span className="text-xs text-[hsl(var(--al55))] truncate">{msg.email}</span>
-                    <span className={`inline-flex items-center px-2 py-0.5 rounded-full border text-[10px] font-semibold ${STATUS_PILL[msg.status].cls}`}>
+                    <span className="text-sm font-semibold text-[hsl(var(--admin-text))] truncate">{msg.name}</span>
+                    <span className="text-xs text-[hsl(var(--admin-text-muted))] truncate hidden sm:inline">{msg.email}</span>
+                    {lead && (
+                      <span className="inline-flex items-center px-1.5 py-0.5 rounded-full bg-[hsl(var(--aov04))] text-[hsl(var(--admin-text-muted))] text-[10px] font-semibold">
+                        Lead compat
+                      </span>
+                    )}
+                    <span className={`inline-flex items-center gap-1 px-2 py-0.5 rounded-full border text-[10px] font-semibold ${STATUS_PILL[msg.status].cls}`}>
+                      <span className={`w-1.5 h-1.5 rounded-full ${STATUS_PILL[msg.status].dot}`} />
                       {STATUS_PILL[msg.status].label}
                     </span>
                     {replyCount > 0 && (
-                      <span className="inline-flex items-center px-1.5 py-0.5 rounded-full bg-primary/15 text-primary border border-primary/25 text-[10px] font-semibold">
+                      <span className="inline-flex items-center px-1.5 py-0.5 rounded-full bg-[hsl(var(--admin-accent)/0.12)] text-[hsl(var(--admin-accent))] text-[10px] font-semibold">
                         {replyCount} réponse{replyCount > 1 ? 's' : ''}
                       </span>
                     )}
                   </div>
-                  <p className="text-xs text-[hsl(var(--al70))] truncate font-medium">{msg.subject}</p>
-                  <p className="text-xs text-[hsl(var(--al55))] truncate">{msg.message.substring(0, 80)}</p>
+                  <p className="text-xs text-[hsl(var(--admin-text))] truncate font-medium">{msg.subject}</p>
+                  <p className="text-xs text-[hsl(var(--admin-text-muted))] truncate">{msg.message.substring(0, 80)}</p>
                 </div>
-                <div className="flex flex-col items-end gap-1 shrink-0">
-                  <span className="text-xs text-[hsl(var(--al45))]">{formatDate(msg.last_reply_at || msg.created_at)}</span>
-                </div>
+                <span className="text-xs text-[hsl(var(--admin-text-muted))] shrink-0">{formatDate(msg.last_reply_at || msg.created_at)}</span>
               </div>
             );
           })}
@@ -959,8 +1088,8 @@ const ContactMessagesManager = () => {
   return (
     <div className="space-y-4">
       <div className="flex items-center justify-between">
-        <h2 className="text-lg font-semibold text-[hsl(var(--al95))]">Messages</h2>
-        <Button variant="outline" size="sm" onClick={fetchContactMessages} className="gap-1.5 border-[hsl(var(--al18))] text-[hsl(var(--al55))]">
+        <h1 className="font-display text-2xl tracking-wide text-[hsl(var(--admin-text))] px-1"><span className="admin-title-marker">MESSAGES</span></h1>
+        <Button variant="outline" size="sm" onClick={fetchContactMessages} className="gap-1.5 bg-white border-[hsl(var(--admin-border))] text-[hsl(var(--admin-text-muted))]">
           <RefreshCw className="w-3.5 h-3.5" /> Actualiser
         </Button>
       </div>

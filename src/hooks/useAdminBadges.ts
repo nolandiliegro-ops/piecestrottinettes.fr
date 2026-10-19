@@ -25,14 +25,17 @@ export const useAdminBadges = (): AdminBadges => {
     queryFn: async (): Promise<AdminBadges> => {
       // Pièces non publiées = surtout des dépublications volontaires (tri, archives),
       // pas des imports à valider → seules les trottinettes comptent dans la pastille Bots (19/10).
-      const [orders, conv, pendingScooters] = await Promise.all([
+      // Messages = contact en attente + fils garage en attente : la pastille doit égaler
+      // ce que l'écran Messages affiche, pas une seule des deux files (19/10).
+      const [orders, conv, contact, pendingScooters] = await Promise.all([
         supabase.from('orders').select('id', { count: 'exact', head: true }).in('status', ['paid', 'processing']),
         supabase.from('conversation_status').select('id', { count: 'exact', head: true }).eq('status', 'pending'),
+        supabase.from('contact_messages').select('id', { count: 'exact', head: true }).eq('status', 'pending'),
         supabase.from('scooter_models').select('id', { count: 'exact', head: true }).eq('published', false),
       ]);
       return {
         ordersToProcess: orders.count ?? 0,
-        pendingMessages: conv.count ?? 0,
+        pendingMessages: (conv.count ?? 0) + (contact.count ?? 0),
         pendingImports: pendingScooters.count ?? 0,
       };
     },
