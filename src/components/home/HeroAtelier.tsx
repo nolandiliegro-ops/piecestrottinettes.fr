@@ -202,7 +202,8 @@ const Shelf = ({ s, size, scooters, isLoading, title, onSelect, heading }: { s: 
  *  Sans paramètre : scène actuelle inchangée. */
 type Scene = 1 | 2 | 3 | 4 | 5;
 const readScene = (): Scene | null => {
-  try { const n = Number(new URLSearchParams(window.location.search).get("scene")); return n >= 1 && n <= 5 ? (n as Scene) : null; } catch { return null; }
+  // 19/10 : « 2 Deux tons pierre » choisi par Nolan = défaut ; ?scene=0 = ancienne scène noire
+  try { const raw = new URLSearchParams(window.location.search).get("scene"); if (raw === null) return 2; const n = Number(raw); return n >= 1 && n <= 5 ? (n as Scene) : null; } catch { return 2; }
 };
 const SCENE_TOP: Record<Scene, string | null> = { 1: null, 2: "#ECE8E0", 3: "#FFFFFF", 4: "linear-gradient(180deg,#CFCAC0 0%,#B9B3A8 100%)", 5: null };
 

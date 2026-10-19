@@ -51,7 +51,8 @@ const THIRTY_DAYS_MS = 30 * 24 * 60 * 60 * 1000;
  *  reflet animé en boucle, « CHARG » tronqué, « NOUVEAU » sur presque tout. Sans paramètre : carte actuelle. */
 type PCard = 1 | 2 | 3 | 4 | 5;
 const PCARD: PCard | null = (() => {
-  try { const n = Number(new URLSearchParams(window.location.search).get("pcarte")); return n >= 1 && n <= 5 ? (n as PCard) : null; } catch { return null; }
+  // 19/10 : « 4 Ça dépasse » choisi par Nolan = défaut ; ?pcarte=0 = ancienne carte
+  try { const raw = new URLSearchParams(window.location.search).get("pcarte"); if (raw === null) return 4; const n = Number(raw); return n >= 1 && n <= 5 ? (n as PCard) : null; } catch { return 4; }
 })();
 const A_FONT = "'Plus Jakarta Sans', sans-serif";
 const A_UNB = "'Unbounded', sans-serif";
