@@ -34,7 +34,7 @@ jobs:
           SB_URL: ${{ secrets.SUPABASE_URL }}
           ADMIN_BULK_SECRET: ${{ secrets.ADMIN_BULK_SECRET }}
         run: |
-          if grep -qE '^(write|append|compat) |^nettoyage write' config/photos/_run.txt; then
+          if grep -qE '^(write|append|compat) |^(nettoyage|redetourage) write' config/photos/_run.txt; then
             if [ -z "$SB_URL" ] || [ -z "$ADMIN_BULK_SECRET" ]; then echo "::error title=photos::secret absent"; exit 1; fi
             KEY=$(grep -oP 'VITE_SUPABASE_PUBLISHABLE_KEY\s*\|\|\s*"\K[^"]+' src/integrations/supabase/client.ts)
             umask 077
@@ -46,7 +46,7 @@ jobs:
           set +e
           export LC_ALL=C.UTF-8
           mkdir -p out
-          while read -r mode lot; do
+          while read -r mode lot extra; do
             [ -z "$lot" ] && continue
             if [ "$mode" = "fetch" ]; then
               # Lecture seule : télécharge des images publiques (liste « nom url ») pour les rendus de maquettes.
@@ -71,6 +71,14 @@ jobs:
               echo "::notice title=detourage::EXIT=$?"
               grep '^::' "out/detourage-$lot.log" | head -5
               tail -n 3 "out/detourage-$lot.log"
+              continue
+            fi
+            if [ "$mode" = "redetourage" ]; then
+              # Re-détourage local (@imgly large) des photos de trottinettes à fantômes. « redetourage dry [N] » / « redetourage write ».
+              node scripts/redetourage.mjs --$lot ${extra:+--limit $extra} > "out/redetourage-$lot.log" 2>&1
+              echo "::notice title=redetourage::EXIT=$?"
+              grep '^::' "out/redetourage-$lot.log" | grep -v -i 'secret\|bearer\|eyJ' | head -40
+              tail -n 5 "out/redetourage-$lot.log" | grep -v -i 'secret\|bearer\|eyJ'
               continue
             fi
             if [ "$mode" = "nettoyage" ]; then
