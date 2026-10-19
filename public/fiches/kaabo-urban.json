@@ -1,0 +1,134 @@
+{
+ "displayName": "Kaabo Urban",
+ "metaTitle": "Kaabo Urban : fiche technique et pièces",
+ "metaDescription": "Kaabo Urban : moteur 500 W, batterie 48 V 10,4 Ah, pneus tubeless 8,5x3, disques 120 mm, 20 kg. Entretien, versions et pièces compatibles.",
+ "intro": [
+  "La Kaabo Urban est la trottinette urbaine de Kaabo : roues de 8,5 pouces, 20 kg et un moteur de 500 W. Elle existe aussi en version DGT et en Swiss Edition homologuée pour la Suisse, avec les mêmes bases techniques selon Wheelyshop et KissMyWheels.",
+  "Batterie 48 V de 10,4 Ah (environ 499 Wh), suspension à ressort à l'avant et à l'arrière, pneus tubeless 8,5 x 3 et freins à disque de 120 mm : c'est une machine de trajet quotidien, plus confortable que la moyenne des 8,5 pouces. En France, elle roule à 25 km/h sur la voie publique."
+ ],
+ "specs": [
+  [
+   "Moteur",
+   "500 W, 1 092 W en pointe"
+  ],
+  [
+   "Vitesse",
+   "25 km/h sur la voie publique"
+  ],
+  [
+   "Batterie",
+   "48 V, 10,4 Ah (environ 499 Wh)"
+  ],
+  [
+   "Autonomie annoncée",
+   "jusqu'à 40 km (pilote de 75 kg, 24 km/h, plat, selon Kaabo EU)"
+  ],
+  [
+   "Poids",
+   "20 kg"
+  ],
+  [
+   "Charge max",
+   "100 kg (140 kg selon Wee-Bot)"
+  ],
+  [
+   "Roues",
+   "8,5 pouces, tubeless 8.5x3"
+  ],
+  [
+   "Freins",
+   "Disques 120 mm avant et arrière + E-ABS"
+  ],
+  [
+   "Suspension",
+   "Ressorts type C avant et arrière"
+  ],
+  [
+   "Étanchéité",
+   "IPX5 ou IPX6 selon les distributeurs"
+  ],
+  [
+   "Temps de charge",
+   "environ 5 à 6 h"
+  ]
+ ],
+ "pros": [
+  "20 kg seulement, avec une suspension avant et arrière.",
+  "Pneus tubeless de 8,5 x 3, plus larges que ceux des petites urbaines.",
+  "Recharge courte : environ 5 h selon Kaabo EU et KissMyWheels."
+ ],
+ "cons": [
+  "Charge max limitée à 100 kg selon Kaabo EU et Maison de la Trott.",
+  "Autonomie annoncée de 40 km à 24 km/h : Maison de la Trott indique 25 km à 25 km/h.",
+  "Aucun test de presse français publié : les chiffres viennent des distributeurs.",
+  "Sa vitesse de pointe n'est utilisable que sur terrain privé : en France, la voie publique est limitée à 25 km/h."
+ ],
+ "parts": [
+  {
+   "label": "Disque de frein",
+   "size": "120 mm, 6 trous, entraxe 44 mm",
+   "count": 1,
+   "to": "/piece/disque-de-frein-120mm-6-trous",
+   "cta": "Disque 120 mm"
+  }
+ ],
+ "care": [
+  "Pneus tubeless 8,5 pouces : vérifie la pression chaque semaine, un tubeless sous-gonflé s'use vite.",
+  "Freins à disque : surveille l'usure des plaquettes et recentre l'étrier si le disque frotte.",
+  "Suspensions à ressort : nettoie les axes et contrôle le jeu des bras, surtout après la pluie."
+ ],
+ "faq": [
+  {
+   "q": "Quelle taille de pneu pour la Kaabo Urban ?",
+   "a": "Des pneus tubeless de 8,5 pouces en 8.5 x 3."
+  },
+  {
+   "q": "Quel disque de frein pour la Kaabo Urban ?",
+   "a": "Un disque de 120 mm à 6 trous, entraxe 44 mm."
+  },
+  {
+   "q": "Quelle est l'autonomie de la Kaabo Urban ?",
+   "a": "Jusqu'à 40 km annoncés par Kaabo EU pour un pilote de 75 kg à 24 km/h sur le plat. Maison de la Trott donne 25 km à 25 km/h."
+  },
+  {
+   "q": "Quelle différence entre la Kaabo Urban et l'Urban Swiss Edition ?",
+   "a": "La Swiss Edition est la version homologuée pour la Suisse. Selon KissMyWheels, elle garde le moteur de 500 W, la batterie 48 V 10,4 Ah et les 20 kg."
+  },
+  {
+   "q": "La Kaabo Urban est-elle légale en France ?",
+   "a": "Oui sur la voie publique à condition d'être bridée à 25 km/h, comme toute trottinette électrique. Débridée, elle n'est utilisable que sur terrain privé."
+  }
+ ],
+ "sources": [
+  {
+   "label": "Kaabo EU — Kaabo Urban",
+   "url": "https://www.kaaboeu.com/products/urban"
+  },
+  {
+   "label": "Maison de la Trott — Kaabo Urban",
+   "url": "https://www.maisondelatrott.fr/products/trottinette-electrique-kaabo-urban"
+  },
+  {
+   "label": "Wee-Bot — Kaabo Urban",
+   "url": "https://www.wee-bot.com/products/trottinette-electrique-kaabo-urban"
+  },
+  {
+   "label": "Wheelyshop — trottinettes Kaabo",
+   "url": "https://www.wheelyshop.fr/collections/kaabo"
+  },
+  {
+   "label": "KissMyWheels — Kaabo Urban Swiss Edition",
+   "url": "https://kissmywheels.ch/e-trott/kaabo-urban-swiss-edition/"
+  },
+  {
+   "label": "Ministère de la Transition écologique — réglementation des trottinettes",
+   "url": "https://www.ecologie.gouv.fr/politiques-publiques/trottinettes-electriques-edpm-reglementation-vigueur"
+  }
+ ],
+ "video": {
+  "id": "b35vGOxr1wc",
+  "title": "UNBOXING Trottinette électrique KAABO URBAN - version homologuée Suisse - légère avec moteur 500W",
+  "channel": "KissMyWheels",
+  "uploadDate": "2025-04-28"
+ }
+}

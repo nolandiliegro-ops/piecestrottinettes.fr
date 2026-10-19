@@ -1,0 +1,138 @@
+{
+ "displayName": "Kaabo Skywalker 10C",
+ "metaTitle": "Kaabo Skywalker 10C : fiche technique et pièces",
+ "metaDescription": "Kaabo Skywalker 10C : moteur 800 W, batterie 48 V 15,6 Ah, pneus 10x3, disques 140 mm mécaniques. Entretien, versions et pièces compatibles.",
+ "intro": [
+  "La Kaabo Skywalker 10C est la monomoteur de 10 pouces de la gamme Skywalker. À ne pas confondre avec les Skywalker 8 ou 10H : la 10C a un seul moteur arrière de 800 W et une batterie 48 V de 15,6 Ah selon la plupart des fiches.",
+  "Pneus larges en 10 x 3, suspension avant et arrière, freins à disque mécaniques de 140 mm et environ 21 à 24 kg selon les distributeurs : c'est une trottinette de trajet quotidien qui se porte encore. Sur la voie publique en France, elle reste bridée à 25 km/h."
+ ],
+ "specs": [
+  [
+   "Moteur",
+   "800 W à l'arrière, 1 400 W en pointe (selon Ecocana Sports)"
+  ],
+  [
+   "Vitesse",
+   "25 km/h sur la voie publique"
+  ],
+  [
+   "Batterie",
+   "48 V, 15,6 Ah (certaines fiches annoncent une version 60 V)"
+  ],
+  [
+   "Autonomie annoncée",
+   "jusqu'à 55 km"
+  ],
+  [
+   "Poids",
+   "21 à 24 kg selon les distributeurs"
+  ],
+  [
+   "Charge max",
+   "110 à 120 kg selon les fiches"
+  ],
+  [
+   "Roues",
+   "10 pouces, 10x3 (80/65-6)"
+  ],
+  [
+   "Freins",
+   "Disques mécaniques 140 mm avant et arrière, E-ABS"
+  ],
+  [
+   "Suspension",
+   "Amortisseur type C à l'avant, ressort à l'arrière"
+  ],
+  [
+   "Temps de charge",
+   "7 à 8 h"
+  ]
+ ],
+ "pros": [
+  "Un poids contenu pour une 10 pouces suspendue : 21 à 24 kg selon les fiches.",
+  "Pneus 10 x 3 route ou tout-terrain au choix (PatiGo).",
+  "Freins à disque mécaniques simples à régler, doublés d'un frein électronique E-ABS (PatiGo)."
+ ],
+ "cons": [
+  "Les fiches se contredisent : on trouve des Skywalker 10C en 48 V 15,6 Ah et en 60 V. Lis l'étiquette de ta batterie avant d'acheter un chargeur.",
+  "Un seul moteur de 800 W : moins de reprise en côte qu'une bimoteur.",
+  "Aucun test de presse français publié : les chiffres viennent des distributeurs.",
+  "Sa vitesse de pointe n'est utilisable que sur terrain privé : en France, la voie publique est limitée à 25 km/h."
+ ],
+ "parts": [
+  {
+   "label": "Pneu",
+   "size": "80/65-6 (10x3)",
+   "count": 11,
+   "to": "/piece/pneu-tubeless-80-65-6-10x3-cityroad-ewheel",
+   "cta": "Pneus 10x3"
+  },
+  {
+   "label": "Chambre à air",
+   "size": "80/65-6 (10x3), valve droite ou coudée",
+   "count": 3,
+   "to": "/piece/chambre-a-air-80-65-6-10x3-valve-droite-ewheel",
+   "cta": "Chambres à air"
+  },
+  {
+   "label": "Disque de frein",
+   "size": "140 mm, 6 trous, entraxe 44 mm",
+   "count": 5,
+   "to": "/piece/disque-de-frein-140mm",
+   "cta": "Disques 140 mm"
+  }
+ ],
+ "care": [
+  "Freins mécaniques : retends le câble et recentre l'étrier dès que la course du levier s'allonge.",
+  "Pneus 10 x 3 : vérifie la pression chaque semaine, un pneu mou pince la chambre à air.",
+  "Contrôle le serrage du mécanisme de pliage et de la colonne, c'est là que le jeu apparaît en premier."
+ ],
+ "faq": [
+  {
+   "q": "Quelle taille de pneu pour la Kaabo Skywalker 10C ?",
+   "a": "Des pneus de 10 pouces en 10 x 3, aussi notés 80/65-6, en version route ou tout-terrain."
+  },
+  {
+   "q": "Quel disque de frein pour la Kaabo Skywalker 10C ?",
+   "a": "Un disque de 140 mm à 6 trous, entraxe 44 mm. Les freins sont mécaniques, à câble."
+  },
+  {
+   "q": "Quel chargeur pour la Kaabo Skywalker 10C ?",
+   "a": "Pour la version 48 V, un chargeur 54,6 V en sortie, comme l'indique Ecocana Sports. Vérifie la tension écrite sur ta batterie : certaines 10C sont annoncées en 60 V."
+  },
+  {
+   "q": "Quelle est l'autonomie de la Kaabo Skywalker 10C ?",
+   "a": "Jusqu'à 55 km annoncés, mesurés par le constructeur avec un pilote de 75 kg à 25 km/h sur le plat (PatiGo)."
+  },
+  {
+   "q": "La Kaabo Skywalker 10C est-elle légale en France ?",
+   "a": "Oui sur la voie publique à condition d'être bridée à 25 km/h, comme toute trottinette électrique. Débridée, elle n'est utilisable que sur terrain privé."
+  }
+ ],
+ "sources": [
+  {
+   "label": "PatiGo — Kaabo Skywalker 10C",
+   "url": "https://patigo.co/producto/kaabo-skywalker-10c/"
+  },
+  {
+   "label": "Ecocana Sports — Kaabo Skywalker 10C",
+   "url": "https://ecocanasports.com/KAABO-SKYWALKER-10C-ELECTRIC-SCOOTER"
+  },
+  {
+   "label": "EFORGE Bikes — Kaabo Skywalker 10C",
+   "url": "https://www.eforgebikes.com/product-page/kaabo-skywalker-10c"
+  },
+  {
+   "label": "iScoot — Kaabo Skywalker 10C",
+   "url": "https://iscoot.com.au/products/kaabo-skywalker-10c"
+  },
+  {
+   "label": "Elgiganten — Kaabo Skywalker 10C (version 60 V)",
+   "url": "https://www.elgiganten.se/product/sport-fritid/elfordon/elscooter-elsparkcykel/kaabo-skywalker-10c/433965"
+  },
+  {
+   "label": "Ministère de la Transition écologique — réglementation des trottinettes",
+   "url": "https://www.ecologie.gouv.fr/politiques-publiques/trottinettes-electriques-edpm-reglementation-vigueur"
+  }
+ ]
+}

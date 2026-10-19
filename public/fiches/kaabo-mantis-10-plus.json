@@ -1,0 +1,164 @@
+{
+ "displayName": "Kaabo Mantis 10 Plus",
+ "metaTitle": "Kaabo Mantis 10 Plus : fiche technique et pièces",
+ "metaDescription": "Kaabo Mantis 10 Plus : bimoteur 60 V 18,2 Ah, disques 140 mm, étrier Zoom, roues de 10 pouces. Versions de pneus, entretien et pièces compatibles.",
+ "intro": [
+  "La Kaabo Mantis 10 Plus est la version bimoteur 60 V de la Mantis 10. Ce n'est ni la Mantis 8, ni la Mantis King GT, ni la Mantis 10 Elite : c'est la Plus, avec deux moteurs de 1 000 W et une batterie de 18,2 Ah, soit 1 092 Wh.",
+  "Elle pèse 30 kg selon Kaabo Mantis, Max Blinker et PatiGo, roule sur des roues de 10 pouces et freine avec des disques de 140 mm à l'avant et à l'arrière. Suspendue par des bras à ressort, elle vise les trajets rapides en ville comme les chemins. Sur la voie publique en France, elle reste bridée à 25 km/h."
+ ],
+ "specs": [
+  [
+   "Moteurs",
+   "2 × 1 000 W, 3 200 W en pointe (Kaabo Mantis, KissMyWheels ; 3 360 W sur d'autres fiches)"
+  ],
+  [
+   "Vitesse",
+   "25 km/h sur la voie publique"
+  ],
+  [
+   "Batterie",
+   "60 V, 18,2 Ah (1 092 Wh)"
+  ],
+  [
+   "Autonomie annoncée",
+   "jusqu'à 75 km (Max Blinker annonce 90 km)"
+  ],
+  [
+   "Poids",
+   "30 kg (27 kg selon certains distributeurs)"
+  ],
+  [
+   "Charge max",
+   "120 kg"
+  ],
+  [
+   "Roues",
+   "10 pouces"
+  ],
+  [
+   "Freins",
+   "Disques 140 mm avant et arrière, semi-hydrauliques ou hydrauliques selon la série, étrier Zoom, E-ABS"
+  ],
+  [
+   "Suspension",
+   "Bras à ressort type C avant et arrière"
+  ],
+  [
+   "Étanchéité",
+   "IPX5 (selon PatiGo)"
+  ],
+  [
+   "Temps de charge",
+   "7 à 10 h selon le distributeur"
+  ]
+ ],
+ "pros": [
+  "Deux moteurs de 1 000 W pour 30 kg : un bon rapport poids-puissance (Kaabo Mantis).",
+  "Suspensions avant et arrière à ressort, pensées pour la ville et les chemins (Kaabo Mantis).",
+  "Disques de 140 mm et freinage électronique E-ABS sur les deux roues (E-Volty)."
+ ],
+ "cons": [
+  "Les fiches ne s'accordent pas sur les freins : semi-hydrauliques chez Kaabo Mantis et E-Volty, entièrement hydrauliques chez Robbo et KissMyWheels. Regarde ton étrier avant de commander.",
+  "Taille de pneu variable : 10 x 2,5 d'origine selon Kaabo Mantis, 10 x 3 en option selon PatiGo. Lis le flanc de ton pneu.",
+  "Aucun test de presse français publié : les chiffres viennent des distributeurs.",
+  "Sa vitesse de pointe n'est utilisable que sur terrain privé : en France, la voie publique est limitée à 25 km/h."
+ ],
+ "parts": [
+  {
+   "label": "Pneu",
+   "size": "80/65-6 (10x3)",
+   "count": 11,
+   "to": "/piece/pneu-tubeless-80-65-6-10x3-cityroad-ewheel",
+   "cta": "Pneus 10x3"
+  },
+  {
+   "label": "Chambre à air",
+   "size": "80/65-6 (10x3), valve droite ou coudée",
+   "count": 3,
+   "to": "/piece/chambre-a-air-80-65-6-10x3-valve-coudee-ewheel",
+   "cta": "Chambres à air"
+  },
+  {
+   "label": "Plaquettes",
+   "size": "étrier Zoom",
+   "count": 5,
+   "to": "/piece/plaquettes-de-frein-zoom-semi-metallique",
+   "cta": "Plaquettes Zoom"
+  },
+  {
+   "label": "Disque de frein",
+   "size": "140 mm, 6 trous, entraxe 44 mm",
+   "count": 5,
+   "to": "/piece/disque-de-frein-140mm",
+   "cta": "Disques 140 mm"
+  },
+  {
+   "label": "Chargeur",
+   "size": "60 V, vérifie ta prise",
+   "count": 1,
+   "to": "/piece/pack-chargeur-60v-adaptateur-dc5-5x2-1",
+   "cta": "Chargeurs 60 V"
+  }
+ ],
+ "care": [
+  "Freins : contrôle l'épaisseur des plaquettes Zoom et l'état des disques de 140 mm, surtout après des descentes.",
+  "Pneus : vérifie la pression avant chaque sortie et note la dimension écrite sur le flanc, elle conditionne la chambre à air à racheter.",
+  "Bras de suspension à ressort : nettoie les axes et resserre la visserie, le jeu s'installe vite sur une bimoteur."
+ ],
+ "faq": [
+  {
+   "q": "Quelle taille de pneu pour la Kaabo Mantis 10 Plus ?",
+   "a": "Des pneus de 10 pouces. Kaabo Mantis annonce du 10 x 2,5 d'origine, PatiGo propose aussi du 10 x 3 (80/65-6). Lis la dimension sur le flanc avant de commander."
+  },
+  {
+   "q": "Quelles plaquettes pour la Kaabo Mantis 10 Plus ?",
+   "a": "Des plaquettes pour étrier Zoom, en semi-métallique, métal fritté ou céramique selon ton usage."
+  },
+  {
+   "q": "Quel disque de frein pour la Kaabo Mantis 10 Plus ?",
+   "a": "Un disque de 140 mm à 6 trous, entraxe 44 mm, à l'avant comme à l'arrière."
+  },
+  {
+   "q": "Quelle différence entre la Mantis 10 Plus et la Mantis 10 Elite ?",
+   "a": "Les deux partagent une base 60 V 18,2 Ah. Les distributeurs ne publient pas de comparatif fiable entre les deux : vérifie le nom inscrit sur ta trottinette avant d'acheter une pièce."
+  },
+  {
+   "q": "Quelle est l'autonomie de la Kaabo Mantis 10 Plus ?",
+   "a": "Jusqu'à 75 km annoncés, en mode éco et sur un seul moteur. Aucune mesure indépendante n'a été publiée en France."
+  },
+  {
+   "q": "La Kaabo Mantis 10 Plus est-elle légale en France ?",
+   "a": "Oui sur la voie publique à condition d'être bridée à 25 km/h, comme toute trottinette électrique. Débridée, elle n'est utilisable que sur terrain privé."
+  }
+ ],
+ "sources": [
+  {
+   "label": "Kaabo Mantis — Mantis 10 Plus (fiche constructeur)",
+   "url": "https://kaabomantis.com/shop/kaabo-mantis-10-plus/"
+  },
+  {
+   "label": "E-Volty — Kaabo Mantis 10 Plus",
+   "url": "https://www.e-volty.com/products/trottinette-electrique-kaabo-mantis-10-plus"
+  },
+  {
+   "label": "Max Blinker — Kaabo Mantis 10 Plus",
+   "url": "https://www.maxblinker.fr/fr/trottinettes-electriques/trottinettes-de-demonstration/kaabo-mantis-10-plus-ridden-for1km"
+  },
+  {
+   "label": "PatiGo — Kaabo Mantis 10 Plus",
+   "url": "https://patigo.co/producto/kaabo-mantis-10-plus/"
+  },
+  {
+   "label": "KissMyWheels — Kaabo Mantis 10 Plus",
+   "url": "https://kissmywheels.ch/e-trott/kaabo-mantis-10-plus-modele-dexposition/"
+  },
+  {
+   "label": "Robbo — Kaabo Mantis 10 Plus",
+   "url": "https://www.robbo.si/en/izdelek/kaabo-mantis/"
+  },
+  {
+   "label": "Ministère de la Transition écologique — réglementation des trottinettes",
+   "url": "https://www.ecologie.gouv.fr/politiques-publiques/trottinettes-electriques-edpm-reglementation-vigueur"
+  }
+ ]
+}
