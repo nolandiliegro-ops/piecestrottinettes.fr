@@ -596,6 +596,23 @@
   box-shadow: 0 0 0 3px hsl(var(--admin-accent) / 0.1);
 }
 
+/* Titre d'écran admin : trait marqueur orange du logo sous le mot */
+.admin-title-marker {
+  position: relative;
+  display: inline-block;
+}
+.admin-title-marker::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 2.2em;
+  height: 5px;
+  border-radius: 999px;
+  background: #BC5D30; /* orange marqueur du logo */
+  transform: rotate(-1.2deg);
+}
+
 /* Masque la barre de défilement des listes d'onglets qui défilent au doigt */
 .scrollbar-none {
   -ms-overflow-style: none;

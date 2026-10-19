@@ -72,7 +72,7 @@ const Skeleton = ({ className }: { className?: string }) => (
 const CaTile = ({ label, value, delta }: { label: string; value: number; delta?: number | null }) => (
   <div className="admin-glass-card rounded-2xl p-4">
     <p className="text-xs font-semibold uppercase tracking-wide text-[hsl(var(--admin-text-muted))]">{label}</p>
-    <p className="text-2xl md:text-3xl font-black tracking-tight mt-1 text-[hsl(var(--admin-text))]">{eur.format(value)}</p>
+    <p className="font-display text-3xl md:text-4xl tracking-wide mt-1 text-[hsl(var(--admin-text))]">{eur.format(value)}</p>
     {delta != null && Number.isFinite(delta) && (
       <p className={cn('flex items-center gap-1 text-xs font-semibold mt-1', delta >= 0 ? 'text-[hsl(var(--admin-accent))]' : 'text-red-600')}>
         {delta >= 0 ? <TrendingUp className="w-3.5 h-3.5" /> : <TrendingDown className="w-3.5 h-3.5" />}
@@ -159,7 +159,7 @@ const AdminDashboard = () => {
   return (
     <div className="p-3 md:p-5 space-y-3 md:space-y-4 max-w-6xl">
       <div className="flex items-center justify-between px-1">
-        <h1 className="font-display text-2xl tracking-wide text-[hsl(var(--admin-text))]">ACCUEIL</h1>
+        <h1 className="font-display text-2xl tracking-wide text-[hsl(var(--admin-text))]"><span className="admin-title-marker">ACCUEIL</span></h1>
         <p className="text-xs text-[hsl(var(--admin-text-muted))]">
           {stats ? `${stats.parts_published} pièces · ${stats.scooters_published} trott. publiées` : ''}
         </p>

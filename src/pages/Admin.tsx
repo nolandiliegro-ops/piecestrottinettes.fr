@@ -23,7 +23,7 @@ const LEGACY_TABS: Record<string, string> = {
   scanner: '/admin/bots/scanner',
   messages: '/admin/messages',
   brand: '/admin/site/logo',
-  'home-bridge': '/admin/site/bridge',
+  'home-bridge': '/admin/site',
   settings: '/admin/reglages',
 };
 

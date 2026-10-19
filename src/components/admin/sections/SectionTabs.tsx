@@ -33,7 +33,7 @@ const SectionTabs = ({ base, defaultTab, tabs, title }: SectionTabsProps) => {
 
   return (
     <div className="p-3 md:p-5 space-y-3">
-      <h1 className="font-display text-2xl tracking-wide text-[hsl(var(--admin-text))] px-1">{title.toUpperCase()}</h1>
+      <h1 className="font-display text-2xl tracking-wide text-[hsl(var(--admin-text))] px-1"><span className="admin-title-marker">{title.toUpperCase()}</span></h1>
       <Tabs value={value} onValueChange={v => navigate(`${base}/${v}`)}>
         <div className="-mx-3 px-3 md:mx-0 md:px-0 overflow-x-auto scrollbar-none">
           <TabsList className="inline-flex w-max min-w-full md:min-w-0 h-auto gap-1 p-1 bg-white border border-[hsl(var(--admin-border))] rounded-xl">

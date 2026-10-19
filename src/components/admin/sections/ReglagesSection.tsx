@@ -9,7 +9,7 @@ import { Badge } from '@/components/ui/badge';
  */
 const ReglagesSection = () => (
   <div className="p-3 md:p-5 space-y-3">
-    <h1 className="font-display text-2xl tracking-wide text-[hsl(var(--admin-text))] px-1">RÉGLAGES</h1>
+    <h1 className="font-display text-2xl tracking-wide text-[hsl(var(--admin-text))] px-1"><span className="admin-title-marker">RÉGLAGES</span></h1>
 
     <div className="admin-glass-card rounded-2xl p-4 flex items-start gap-3">
       <div className="w-10 h-10 rounded-xl bg-[hsl(var(--admin-accent)/0.12)] flex items-center justify-center shrink-0">
