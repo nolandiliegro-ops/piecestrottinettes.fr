@@ -1193,6 +1193,39 @@ const PartsManager = () => {
         </DropdownMenu>
       </div>
 
+      {/* Pilules catégorie — même geste que le Studio Compat */}
+      <div className="flex items-center gap-1.5 overflow-x-auto scrollbar-none">
+        <button
+          onClick={() => setCategoryFilter('all')}
+          className={cn(
+            'px-2.5 py-1.5 min-h-[36px] rounded-full text-xs font-semibold whitespace-nowrap border transition-colors',
+            categoryFilter === 'all'
+              ? 'bg-[hsl(var(--admin-text))] text-white border-transparent'
+              : 'bg-white text-[hsl(var(--admin-text-muted))] border-[hsl(var(--admin-border))] hover:bg-[hsl(var(--aov03))]'
+          )}
+        >
+          Toutes catégories ({parts.length})
+        </button>
+        {categories
+          .map(c => ({ c, n: parts.filter(pt => pt.category_id === c.id).length }))
+          .filter(x => x.n > 0)
+          .sort((a, b) => b.n - a.n)
+          .map(({ c, n }) => (
+            <button
+              key={c.id}
+              onClick={() => setCategoryFilter(f => (f === c.id ? 'all' : c.id))}
+              className={cn(
+                'px-2.5 py-1.5 min-h-[36px] rounded-full text-xs font-semibold whitespace-nowrap border transition-colors',
+                categoryFilter === c.id
+                  ? 'bg-[hsl(var(--admin-text))] text-white border-transparent'
+                  : 'bg-white text-[hsl(var(--admin-text-muted))] border-[hsl(var(--admin-border))] hover:bg-[hsl(var(--aov03))]'
+              )}
+            >
+              {c.name} ({n})
+            </button>
+          ))}
+      </div>
+
       {/* Pilules de statut + bascule de vue */}
       <div className="flex flex-wrap items-center justify-between gap-3">
         <div className="flex items-center gap-2 overflow-x-auto scrollbar-none">
