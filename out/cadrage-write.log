@@ -1,9 +1,6 @@
-::warning title=ÉCHEC_PARTIEL kaabo-mantis-10-plus::photo 3/5 HTTP 200 {"success":true,"processed_count":0,"failed_count":1,"failed_urls":[{"url":"base64[0]","reason":"Unexpected token '<', \"<!DOCTYPE \"... is 
-::warning title=ÉCHEC_PARTIEL ootd-t90::photo 5/5 HTTP 200 {"success":true,"processed_count":0,"failed_count":1,"failed_urls":[{"url":"base64[0]","reason":"upload error: Too many connections issued t
-::warning title=ÉCHEC oxelo-md500e::photo 1/5 HTTP 200 {"success":true,"processed_count":0,"failed_count":1,"failed_urls":[{"url":"base64[0]","reason":"upload error: Too many connections issued t
-::warning title=ÉCHEC_PARTIEL oxelo-sd500e::photo 2/5 HTTP 200 {"success":true,"processed_count":0,"failed_count":1,"failed_urls":[{"url":"base64[0]","reason":"upload error: Too many connections issued t
-::warning title=ÉCHEC_PARTIEL p100s::photo 4/5 HTTP 200 {"success":true,"processed_count":0,"failed_count":1,"failed_urls":[{"url":"base64[0]","reason":"upload error: Too many connections issued t
-::warning title=ÉCHEC punk-rebel::photo 1/5 HTTP 200 {"success":true,"processed_count":0,"failed_count":1,"failed_urls":[{"url":"base64[0]","reason":"upload error: Too many connections issued t
-::warning title=ÉCHEC_PARTIEL punk-rider::photo 2/3 HTTP 200 {"success":true,"processed_count":0,"failed_count":1,"failed_urls":[{"url":"base64[0]","reason":"upload error: Too many connections issued t
-::warning title=ÉCHEC_PARTIEL punk-rider-pro::photo 2/4 HTTP 200 {"success":true,"processed_count":0,"failed_count":1,"failed_urls":[{"url":"base64[0]","reason":"upload error: Too many connections issued t
-::notice title=scooters-cadrage write::{"mode":"write","trottinettes":437,"aCadrer":416,"photosACadrer":1190,"photosDurcies":300,"reordonnees":0,"avecErreur":0,"aEcrire":416,"ecrites":408,"echecs":8}
+::warning title=ÉCHEC_PARTIEL cecotec-bongo-d30-xl-connected::photo 2/5 HTTP 200 {"success":true,"processed_count":0,"failed_count":1,"failed_urls":[{"url":"base64[0]","reason":"Unexpected token '<', \"<!DOCTYPE \"... is 
+::warning title=ÉCHEC_PARTIEL dyu-d3f::photo 4/5 HTTP 200 {"success":true,"processed_count":0,"failed_count":1,"failed_urls":[{"url":"base64[0]","reason":"upload error: Too many connections issued t
+::warning title=ÉCHEC_PARTIEL inmotion-air-pro::photo 2/5 HTTP 200 {"success":true,"processed_count":0,"failed_count":1,"failed_urls":[{"url":"base64[0]","reason":"Unexpected token '<', \"<!DOCTYPE \"... is 
+::warning title=ÉCHEC_PARTIEL kaabo-mantis-10-elite::photo 3/5 HTTP 200 {"success":true,"processed_count":0,"failed_count":1,"failed_urls":[{"url":"base64[0]","reason":"upload error: Too many connections issued t
+::warning title=ÉCHEC kaabo-wolf-king-gt-pro::photo 1/5 HTTP 200 {"success":true,"processed_count":0,"failed_count":1,"failed_urls":[{"url":"base64[0]","reason":"upload error: Too many connections issued t
+::notice title=scooters-cadrage write::{"mode":"write","trottinettes":437,"aCadrer":163,"photosACadrer":244,"photosDurcies":64,"reordonnees":139,"avecErreur":13,"aEcrire":234,"ecrites":229,"echecs":5}
