@@ -110,7 +110,12 @@ function lireTaille(r: Row, cat: string): string {
     // sans l'entraxe, deux disques de même Ø peuvent ne pas se monter sur la même roue : on ne juge pas
     return d && e ? `Ø ${d[1]} mm · entraxe ${e[1]}${t ? ` · ${t[1]} trous` : ""}` : NON_LUE;
   }
-  // plaquettes et chargeurs : pas de taille lisible dans le nom → jamais de doublon annoncé
+  // 20/10 (Nolan) : une plaquette = sa FORME (étrier, fitment_specs.brake_caliper) ; sans étrier, on ne juge pas
+  if (cat === "plaquettes") {
+    const cal = (fs as { brake_caliper?: string[] }).brake_caliper ?? [];
+    return cal.length ? `Étrier ${cal.join(" / ")}` : NON_LUE;
+  }
+  // chargeurs : pas de clé fiable dans le nom → jamais de doublon annoncé
   if (cat !== "chambres-a-air" && cat !== "pneus" && cat !== "pneus-pleins") return NON_LUE;
   const sec = fs.tire_sections?.[0];
   const rims = fs.rim_diameters ?? [];
@@ -124,6 +129,16 @@ function lireTaille(r: Row, cat: string): string {
 // 19/10 (Nolan) : « Garder les deux » — un lot de fiches déclarées distinctes n'est plus un doublon.
 // Clé = ids triés des fiches en ligne de la même gamme ; si une nouvelle fiche arrive, le lot change et revient en file.
 export const cleLot = (ids: string[]) => [...ids].sort().join("|");
+
+// 20/10 : la garniture distingue deux plaquettes de même forme (céramique ≠ métal fritté ≠ métallique ≠ semi-métallique)
+function lireGarniture(name: string): string {
+  const n = norm(name);
+  if (/c[ée]ramique/.test(n)) return "céramique";
+  if (/fritt/.test(n)) return "métal fritté";
+  if (/semi[\s-]?m[ée]tal/.test(n)) return "semi-métallique";
+  if (/m[ée]talli/.test(n)) return "métallique";
+  return "garniture non écrite";
+}
 
 export function construireGroupes(rows: Row[], cat: string, distincts: Set<string> = new Set()): Groupe[] {
   const valveObligatoire = cat === "chambres-a-air";
@@ -141,7 +156,7 @@ export function construireGroupes(rows: Row[], cat: string, distincts: Set<strin
       stockF: best?.stock_supplier ?? null,
       nCompat: r.part_compatibility?.[0]?.count ?? 0,
       marge: r.price != null && achat != null ? r.price - achat : null,
-      taille, valve, gamme: lireGamme(r.name),
+      taille, valve, gamme: cat === "plaquettes" ? lireGarniture(r.name) : lireGamme(r.name),
       groupKey: `${taille}|${valve}`,
     };
   });
