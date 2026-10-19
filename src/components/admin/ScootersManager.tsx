@@ -45,6 +45,7 @@ interface Scooter {
   published: boolean;
   is_top_moment: boolean;
   is_featured_home: boolean;
+  top_rank: number | null;
 }
 
 const SIGNATURE_DEFAULTS: { key: string; label: string; type: 'select' | 'number' | 'text'; options?: string[] }[] = [
@@ -101,6 +102,7 @@ const ScootersManager = () => {
     published: false,
     is_top_moment: false,
     is_featured_home: false,
+    top_rank: null,
   });
   const [sigOpen, setSigOpen] = useState(false);
   const [customKey, setCustomKey] = useState('');
@@ -125,7 +127,7 @@ const ScootersManager = () => {
     try {
       const { data, error } = await supabase
         .from('scooter_models')
-        .select('id, name, slug, image_url, power_watts, voltage, amperage, max_speed_kmh, range_km, tire_size, youtube_video_id, description, meta_title, meta_description, affiliate_link, brand_id, year, search_terms, technical_signature, published, is_top_moment, is_featured_home, brand:brands!scooter_models_brand_id_fkey(name)')
+        .select('id, name, slug, image_url, power_watts, voltage, amperage, max_speed_kmh, range_km, tire_size, youtube_video_id, description, meta_title, meta_description, affiliate_link, brand_id, year, search_terms, technical_signature, published, is_top_moment, is_featured_home, top_rank, brand:brands!scooter_models_brand_id_fkey(name)')
         .order('name');
       if (error) throw error;
       setScooters((data as any) || []);
@@ -310,6 +312,7 @@ const ScootersManager = () => {
       published: !!scooter.published,
       is_top_moment: !!scooter.is_top_moment,
       is_featured_home: !!scooter.is_featured_home,
+      top_rank: scooter.top_rank ?? null,
     });
     setSigOpen(false);
     setIsEditOpen(true);
@@ -345,6 +348,7 @@ const ScootersManager = () => {
           published: editValues.published,
           is_top_moment: editValues.is_top_moment,
           is_featured_home: editValues.is_featured_home,
+          top_rank: editValues.is_top_moment ? editValues.top_rank : null,
         } as any)
         .eq('id', editScooter.id);
       if (error) throw error;
@@ -899,6 +903,16 @@ const ScootersManager = () => {
                   onCheckedChange={(v) => setEditValues(prev => ({ ...prev, is_top_moment: v }))}
                 />
               </div>
+              {editValues.is_top_moment && (
+                <div className="flex items-center justify-between gap-3">
+                  <div>
+                    <Label className="text-base">Ordre dans le Top</Label>
+                    <p className="text-sm text-muted-foreground mt-1">1 = affichée en premier sur l'accueil. Vide = après, au nombre de pièces.</p>
+                  </div>
+                  <Input type="number" min={1} max={99} className="w-20" value={editValues.top_rank ?? ""}
+                    onChange={(e) => setEditValues(prev => ({ ...prev, top_rank: e.target.value === "" ? null : Math.max(1, Math.min(99, Number(e.target.value))) }))} />
+                </div>
+              )}
               <div className="flex items-center justify-between">
                 <div>
                   <Label className="text-base">Les plus populaires</Label>

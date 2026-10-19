@@ -231,7 +231,7 @@ const Stage = ({ s, scooters, onSelect }: { s: Skin; scooters: ScooterHero[]; on
             <span className="flex items-center gap-2 text-sm font-extrabold uppercase tracking-wide" style={{ fontFamily: FONT, color: onStage ? "rgba(255,255,255,0.7)" : "#6B7280" }}>
               <span className="w-6 h-[3px]" style={{ background: brand.accent === s.stage ? "#FFFFFF" : brand.accent }} />{cur.brand_name} · top du moment
             </span>
-            <span className="block mt-1 text-3xl xl:text-4xl uppercase leading-none truncate" style={{ fontFamily: UNB, fontWeight: 900, fontStyle: "italic", letterSpacing: "-0.03em", color: onStage ? "#FFFFFF" : CARBON }}>{cur.name}</span>
+            <span className={`block mt-1 uppercase leading-none truncate ${cur.name.length > 18 ? "text-2xl xl:text-3xl" : "text-3xl xl:text-4xl"}`} style={{ fontFamily: UNB, fontWeight: 900, fontStyle: "italic", letterSpacing: "-0.03em", color: onStage ? "#FFFFFF" : CARBON }}>{cur.name}</span>
             <span className="mt-3 flex flex-wrap gap-2">
               {spec.map((t) => (
                 <span key={t} className="px-2.5 py-1 text-sm font-bold" style={{ fontFamily: FONT, background: onStage ? "rgba(255,255,255,0.10)" : "rgba(26,26,26,0.08)", color: onStage ? "#FFFFFF" : CARBON, clipPath: cut(6) }}>{t}</span>
@@ -296,7 +296,7 @@ const HeroAtelier = (p: Props) => {
     <section data-hero-variant={p.variant} className="relative px-4 pt-8 pb-12 lg:pt-6 lg:pb-16" style={{ background: s.bg }}>
       <style>{`.pt-mini-scroll::-webkit-scrollbar{display:none}`}</style>
       <div className="mx-auto max-w-6xl">
-        <div className="lg:grid lg:grid-cols-[0.9fr_1.1fr] lg:gap-12 lg:items-end">
+        <div className="lg:grid lg:grid-cols-[minmax(0,0.9fr)_minmax(0,1.1fr)] lg:gap-12 lg:items-end">
           {p.variant === 4 ? (
             <div className="px-5 py-7 lg:px-9 lg:py-10" style={{ background: CARBON, clipPath: cut(22) }}>
               <Head s={s} {...head} />

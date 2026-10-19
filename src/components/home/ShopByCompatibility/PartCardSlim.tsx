@@ -58,6 +58,8 @@ const A_FONT = "'Plus Jakarta Sans', sans-serif";
 const A_UNB = "'Unbounded', sans-serif";
 const A_CUT = (px: number) => `polygon(0 0, calc(100% - ${px}px) 0, 100% ${px}px, 100% 100%, 0 100%)`;
 const A_LINE = "#E2DCD0";
+/** Pièces plates (plaquettes, disques…) : la photo a beaucoup de vide autour → on les grossit pour qu'elles sortent autant qu'un pneu. */
+const BOOST: Record<string, number> = { plaquettes: 1.2, "disques-plaquettes": 1.15, disques: 1.15, chargeurs: 1.1, "chambres-a-air": 1.05 };
 
 type BadgeKind = "BEST" | "SÉCU" | "NOUVEAU" | null;
 
@@ -176,15 +178,20 @@ const PartCardSlim = ({ part, index, variant = "grid", brandColor, categoryFilte
 
   const atelier = PCARD ? (
     <Link to={`/piece/${part.slug}`} onClick={handleCardClick} data-pcard={PCARD}
-      className={cn("group relative block", PCARD === 4 && "pt-14")}
+      className={cn("group group/pc relative block", PCARD === 4 && "pt-16 md:pt-20")}
       style={{ fontFamily: A_FONT }}>
       {/* Image */}
-      <div className={cn("relative flex items-center justify-center", PCARD === 4 ? "absolute inset-x-0 top-0 h-[150px] z-[2] pointer-events-none" : "aspect-square")}
+      <div className={cn("relative flex items-center justify-center", PCARD === 4 ? "absolute inset-x-0 top-0 h-[180px] md:h-[210px] z-[2] pointer-events-none" : "aspect-square")}
         style={PCARD === 4 ? undefined : { background: PCARD === 2 || PCARD === 5 ? "#F2EFE8" : "#FFFFFF", clipPath: PCARD === 1 ? undefined : A_CUT(14) }}>
+        {/* 19/10 (Nolan) : halo lumineux derrière le produit au survol */}
+        {PCARD === 4 && img && (
+          <span aria-hidden className="absolute -inset-x-[4%] top-0 bottom-[-6%] opacity-0 scale-75 transition-all duration-300 group-hover/pc:opacity-100 group-hover/pc:scale-100"
+            style={{ background: "radial-gradient(closest-side, rgba(143,191,156,0.85), rgba(143,191,156,0.35) 55%, transparent 100%)" }} />
+        )}
         {img ? (
           <img src={displayImg} alt={part.name} loading="lazy" decoding="async"
-            className={cn("object-contain transition-transform duration-300 group-hover:-translate-y-1", PCARD === 4 ? "max-h-full max-w-[86%]" : "max-w-[78%] max-h-[78%]")}
-            style={{ filter: "drop-shadow(0 10px 12px rgba(0,0,0,0.14))" }} />
+            className={cn("relative object-contain transition-transform duration-300 ease-out", PCARD === 4 ? "h-full w-auto max-w-[94%] origin-bottom group-hover/pc:-translate-y-1.5 group-hover/pc:scale-[1.08] group-hover/pc:brightness-110" : "max-w-[78%] max-h-[78%] group-hover:-translate-y-1")}
+            style={{ filter: "drop-shadow(0 12px 14px rgba(0,0,0,0.16))", scale: PCARD === 4 ? String(BOOST[catSlug ?? ""] ?? 1) : undefined }} />
         ) : <div className="text-3xl opacity-30">🔧</div>}
         {isOut && (
           <span className="absolute left-2 bottom-2 px-2 py-1 text-sm font-bold text-white" style={{ background: "#1A1A1A", clipPath: A_CUT(6) }}>Rupture</span>
@@ -205,13 +212,13 @@ const PartCardSlim = ({ part, index, variant = "grid", brandColor, categoryFilte
         </button>
       )}
       {/* Corps */}
-      <div className={cn("relative", PCARD === 4 && "pt-[104px]")}
+      <div className={cn("relative transition-shadow duration-300", PCARD === 4 && "pt-[124px] md:pt-[140px] group-hover/pc:shadow-[0_14px_30px_rgba(26,26,26,0.12)]")}
         style={{ background: PCARD === 1 ? "#1A1A1A" : "#FFFFFF", boxShadow: PCARD === 1 ? undefined : `inset 0 0 0 1px ${A_LINE}`, clipPath: PCARD === 1 ? undefined : PCARD === 4 ? A_CUT(14) : undefined }}>
         <div className="px-3 pt-3 pb-3">
           {catName && (
             <p className="text-sm font-bold uppercase tracking-wide truncate" style={{ color: PCARD === 1 ? "#8FBF9C" : "#4A7C59" }}>{catName}</p>
           )}
-          <h4 className="mt-1 text-[15px] font-bold leading-snug line-clamp-2" style={{ color: PCARD === 1 ? "#FFFFFF" : "#1A1A1A", minHeight: "2.6em" }}>{part.name}</h4>
+          <h4 className="mt-1 text-[15px] font-extrabold leading-snug line-clamp-2" style={{ fontFamily: A_FONT, letterSpacing: "-0.01em", color: PCARD === 1 ? "#FFFFFF" : "#1A1A1A", minHeight: "2.6em" }}>{part.name}</h4>
           {PCARD === 3 ? (
             <div className="mt-3 flex items-stretch justify-between gap-2">
               <span className="inline-flex items-center px-3 min-h-[44px] text-[20px] text-white" style={{ background: "#1A1A1A", fontFamily: A_UNB, fontWeight: 900, fontStyle: "italic", clipPath: A_CUT(8) }}>

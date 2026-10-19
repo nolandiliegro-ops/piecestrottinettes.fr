@@ -16,6 +16,7 @@ export interface ScooterHero {
   power_watts: number | null;
   search_terms: string | null;
   is_top_moment: boolean;
+  top_rank: number | null;
   created_at: string;
 }
 
@@ -39,7 +40,7 @@ const useAllPublishedScooters = () =>
         .from("scooter_models")
         .select(
           `id, name, slug, image_url, year, compatible_parts_count,
-           is_top_moment, max_speed_kmh, range_km, power_watts, search_terms,
+           is_top_moment, top_rank, max_speed_kmh, range_km, power_watts, search_terms,
            created_at, brand:brands!scooter_models_brand_id_fkey(name)`
         )
         .eq("published", true)
@@ -66,6 +67,7 @@ const useAllPublishedScooters = () =>
           power_watts: m.power_watts,
           search_terms: m.search_terms,
           is_top_moment: m.is_top_moment,
+          top_rank: m.top_rank ?? null,
           created_at: m.created_at,
         };
       });
@@ -82,10 +84,13 @@ export const useHeroScooters = (searchQuery: string): UseHeroScootersResult => {
       // Default: curated "top du moment". Fallback to latest 8 if none flagged.
       // 19/10 (Nolan : « que cinq ») : les modèles cochés « top » d'abord, puis complétés jusqu'à 12 par les
       // modèles avec photo qui ont le plus de pièces compatibles.
-      const top = all.filter((s) => s.is_top_moment);
-      const rest = all
-        .filter((s) => !s.is_top_moment && s.image_url && (s.compatible_parts_count ?? 0) > 0)
-        .sort((a, b) => (b.compatible_parts_count ?? 0) - (a.compatible_parts_count ?? 0));
+      // 19/10 soir (Nolan : « c'est pas vraiment le top ») : plus de remplissage au nombre de pièces. 12 modèles
+      // cochés is_top_moment en base ; on ne complète que s'il en reste moins de 4 cochés.
+      const byParts = (a: ScooterHero, b: ScooterHero) => (b.compatible_parts_count ?? 0) - (a.compatible_parts_count ?? 0);
+      // Ordre choisi dans l'admin (top_rank : 1 = en premier), puis le reste au nombre de pièces.
+      const byRank = (a: ScooterHero, b: ScooterHero) => (a.top_rank ?? 999) - (b.top_rank ?? 999) || byParts(a, b);
+      const top = all.filter((s) => s.is_top_moment).sort(byRank);
+      const rest = top.length >= 4 ? [] : all.filter((s) => !s.is_top_moment && s.image_url && (s.compatible_parts_count ?? 0) > 0).sort(byParts);
       const list = [...top, ...rest].slice(0, TOP_LIMIT);
       return list.length > 0 ? list : all.slice(0, FALLBACK_LIMIT);
     }

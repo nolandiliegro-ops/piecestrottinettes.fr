@@ -4587,6 +4587,7 @@ export type Database = {
           ip_rating: string | null
           is_featured_home: boolean
           is_top_moment: boolean
+          top_rank: number | null
           max_load_kg: number | null
           max_speed_kmh: number | null
           max_speed_private_kmh: number | null
@@ -4643,6 +4644,7 @@ export type Database = {
           ip_rating?: string | null
           is_featured_home?: boolean
           is_top_moment?: boolean
+          top_rank?: number | null
           max_load_kg?: number | null
           max_speed_kmh?: number | null
           max_speed_private_kmh?: number | null
@@ -4699,6 +4701,7 @@ export type Database = {
           ip_rating?: string | null
           is_featured_home?: boolean
           is_top_moment?: boolean
+          top_rank?: number | null
           max_load_kg?: number | null
           max_speed_kmh?: number | null
           max_speed_private_kmh?: number | null
