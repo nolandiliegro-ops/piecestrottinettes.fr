@@ -12,13 +12,13 @@ import { supabase } from "@/integrations/supabase/client";
  *   4 Compteur — les vrais chiffres du site (lus en base) en grand
  *   5 Établi   — panneau perforé d'atelier, trois pièces accrochées
  */
-export type PontVariant = 1 | 2 | 3 | 4 | 5;
-export const PONT_NAMES: Record<PontVariant, string> = { 1: "Défilé", 2: "Ruban", 3: "Pliage", 4: "Compteur", 5: "Établi" };
+export type PontVariant = 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10;
+export const PONT_NAMES: Record<PontVariant, string> = { 1: "Défilé", 2: "Ruban", 3: "Pliage", 4: "Compteur", 5: "Établi", 6: "Serré", 7: "Étapes", 8: "Établi cliquable", 9: "Plateau blanc", 10: "Serré + rayons" };
 
 export const readPontVariant = (): 0 | PontVariant => {
   try {
     const n = Number(new URLSearchParams(window.location.search).get("pont"));
-    return n >= 1 && n <= 5 ? (n as PontVariant) : 0;
+    return n >= 1 && n <= 10 ? (n as PontVariant) : 0;
   } catch {
     return 0;
   }
@@ -159,16 +159,102 @@ const Etabli = () => (
   </div>
 );
 
+/* ——— 2e tour (20/10) : Nolan, « ça amène où, ces trucs-là ? On pourrait cliquer dessus ? ». Les décors ne mènent nulle part :
+   le vrai défaut est le vide (~100 px) entre la frise et le catalogue. 6 et 9 traitent le vide, 7 et 8/10 donnent une action. ——— */
+
+const allerAuCatalogue = (slug?: string) => {
+  const el = document.querySelector("[data-home-variant]");
+  if (el) el.scrollIntoView({ behavior: "smooth", block: "start" });
+  if (slug) window.dispatchEvent(new CustomEvent("pt-home-categorie", { detail: slug }));
+};
+
+/** 6 — Serré : on retire le vide, le catalogue démarre juste sous la frise. */
+const Serre = () => <div aria-hidden className="-mt-12 lg:-mt-14" />;
+
+/** 7 — Étapes : le vide devient le passage « 1 ta trott → 2 ta pièce ». */
+const Etapes = () => (
+  <div className="-mt-6 -mb-4 px-4 relative z-10">
+    <div className="max-w-7xl mx-auto lg:px-4 flex items-center gap-3">
+      <span className="h-px flex-1" style={{ background: "#E2DCD0" }} />
+      <span className="inline-flex items-center gap-2 px-3 py-2 text-sm font-extrabold uppercase" style={{ fontFamily: FONT, background: "#FFFFFF", color: CARBON, clipPath: cut(8), boxShadow: "inset 0 0 0 1px #E2DCD0" }}>
+        <span className="inline-flex h-6 w-6 items-center justify-center text-white" style={{ background: GREEN, fontFamily: UNB, fontStyle: "italic", clipPath: cut(4) }}>1</span>Ta trott
+      </span>
+      <span className="text-lg" style={{ color: GREEN }}>→</span>
+      <span className="inline-flex items-center gap-2 px-3 py-2 text-sm font-extrabold uppercase" style={{ fontFamily: FONT, background: CARBON, color: "#FFFFFF", clipPath: cut(8) }}>
+        <span className="inline-flex h-6 w-6 items-center justify-center" style={{ background: "#FFFFFF", color: CARBON, fontFamily: UNB, fontStyle: "italic", clipPath: cut(4) }}>2</span>Ta pièce
+      </span>
+      <span className="h-px flex-1" style={{ background: "#E2DCD0" }} />
+    </div>
+  </div>
+);
+
+const RAYONS = [
+  { slug: "pneus", img: "pneus-a", l: "Pneus", court: "Pneus" },
+  { slug: "chambres-a-air", img: "chambres-a", l: "Chambres à air", court: "Chambres" },
+  { slug: "plaquettes", img: "plaquettes-a", l: "Plaquettes", court: "Plaquettes" },
+  { slug: "chargeurs", img: "chargeurs-a", l: "Chargeurs", court: "Chargeurs" },
+];
+
+/** 8 — Établi cliquable : le panneau perforé, chaque pièce accrochée est un bouton qui filtre le catalogue. */
+const EtabliCliquable = () => (
+  <div className="relative -mt-6 lg:-mt-8" style={{
+    backgroundColor: SAND,
+    backgroundImage: "radial-gradient(circle, rgba(26,26,26,0.16) 2.2px, transparent 2.6px)",
+    backgroundSize: "22px 22px",
+    WebkitMaskImage: "linear-gradient(transparent, #000 18%, #000 82%, transparent)",
+    maskImage: "linear-gradient(transparent, #000 18%, #000 82%, transparent)",
+  }}>
+    <div className="max-w-5xl mx-auto px-3 py-8 lg:py-10 grid grid-cols-4 gap-1 sm:gap-6">
+      {RAYONS.map((r, i) => (
+        <button key={r.slug} type="button" onClick={() => allerAuCatalogue(r.slug)} className="group flex flex-col items-center min-h-[44px]" style={{ transform: `rotate(${[-3, 2, -2, 3][i]}deg)` }}>
+          <span className="block h-3 w-3 rounded-full mb-[-4px] z-10" style={{ background: CARBON }} />
+          <span className="block w-px h-3" style={{ background: CARBON }} />
+          <img src={`/categories/${r.img}.webp`} alt="" loading="lazy" decoding="async" className="h-[64px] w-[76px] lg:h-[96px] lg:w-[120px] object-contain transition-transform duration-200 group-hover:-translate-y-1" style={{ filter: "drop-shadow(0 8px 10px rgba(0,0,0,0.18))" }} />
+          <span className="mt-2 px-1.5 sm:px-2 py-1 text-sm font-extrabold sm:uppercase leading-tight text-center whitespace-nowrap" style={{ fontFamily: FONT, background: CARBON, color: "#FFFFFF", clipPath: cut(6) }}>{r.court}</span>
+        </button>
+      ))}
+    </div>
+  </div>
+);
+
+/** 9 — Plateau blanc : vide retiré, le catalogue se pose sur un plateau blanc chanfreiné (le changement de fond fait la transition). */
+const PlateauBlanc = () => (
+  <>
+    <style>{`[data-pont="9"] + section[data-home-variant], [data-pont="9"] + * section[data-home-variant] { background: transparent !important; }
+      [data-pont="9"] ~ section[data-home-variant] > div, [data-pont="9"] ~ * section[data-home-variant] > div { background: #FFFFFF !important; clip-path: polygon(0 0, calc(100% - 40px) 0, 100% 40px, 100% 100%, 0 100%); box-shadow: 0 -12px 30px -18px rgba(26,26,26,0.25); }`}</style>
+    <div aria-hidden className="-mt-10 lg:-mt-12" />
+  </>
+);
+
+/** 10 — Serré + rayons : vide retiré, une rangée compacte de 4 raccourcis qui filtrent le catalogue. */
+const SerreRayons = () => (
+  <div className="-mt-8 lg:-mt-10 -mb-6 px-4 relative z-10">
+    <div className="max-w-7xl mx-auto lg:px-4 flex gap-2 overflow-x-auto" style={{ scrollbarWidth: "none" }}>
+      {RAYONS.map((r) => (
+        <button key={r.slug} type="button" onClick={() => allerAuCatalogue(r.slug)} className="shrink-0 inline-flex items-center gap-2 pl-1.5 pr-3 min-h-[48px] bg-white" style={{ clipPath: cut(8), boxShadow: "inset 0 0 0 1px #E2DCD0" }}>
+          <img src={`/categories/${r.img}.webp`} alt="" loading="lazy" decoding="async" className="h-10 w-10 object-contain" />
+          <span className="text-sm font-extrabold uppercase whitespace-nowrap" style={{ fontFamily: FONT, color: CARBON }}>{r.l}</span>
+        </button>
+      ))}
+    </div>
+  </div>
+);
+
 const HomeTransition = ({ variant }: { variant: 0 | PontVariant }) => {
   if (!variant) return null;
   return (
-    <div data-pont={variant} className="relative -mt-8 -mb-8 lg:-mt-10 lg:-mb-10">
+    <div data-pont={variant} className={variant <= 5 ? "relative -mt-8 -mb-8 lg:-mt-10 lg:-mb-10" : "relative"}>
       <style>{KEYFRAMES}</style>
       {variant === 1 && <Defile />}
       {variant === 2 && <Ruban />}
       {variant === 3 && <Pliage />}
       {variant === 4 && <Compteur />}
       {variant === 5 && <Etabli />}
+      {variant === 6 && <Serre />}
+      {variant === 7 && <Etapes />}
+      {variant === 8 && <EtabliCliquable />}
+      {variant === 9 && <PlateauBlanc />}
+      {variant === 10 && <SerreRayons />}
     </div>
   );
 };

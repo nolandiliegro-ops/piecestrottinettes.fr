@@ -109,6 +109,16 @@ const ShopByCompatibility = () => {
     });
   }, []);
 
+  // 20/10 : la transition de l'accueil (?pont=8, « Établi cliquable ») peut demander une famille : on la sélectionne seule.
+  useEffect(() => {
+    const onPick = (e: Event) => {
+      const slug = (e as CustomEvent<string>).detail;
+      if (typeof slug === "string" && slug) setSelectedCategories(new Set([slug]));
+    };
+    window.addEventListener("pt-home-categorie", onPick);
+    return () => window.removeEventListener("pt-home-categorie", onPick);
+  }, []);
+
   const handleResetFilters = useCallback(() => {
     setSelectedCategories(new Set());
     if (selectedScooter) clearSelection();
