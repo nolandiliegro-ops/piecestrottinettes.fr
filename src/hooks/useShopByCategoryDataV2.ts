@@ -105,7 +105,7 @@ const normalizeCategory = (raw: unknown): CompatiblePartRich["category"] => {
 // l'import de pneus a rempli l'échantillon).
 const useAllPublishedParts = (enabled: boolean, slugs: string[] = []) =>
   useQuery<CompatiblePartRich[], Error>({
-    queryKey: ["all-published-parts", 150, slugs],
+    queryKey: ["all-published-parts", slugs.length ? 150 : 1000, slugs],
     queryFn: async () => {
       let req = supabase
         .from("parts")
@@ -121,7 +121,9 @@ const useAllPublishedParts = (enabled: boolean, slugs: string[] = []) =>
       const { data, error } = await req
         .order("is_featured", { ascending: false })
         .order("created_at", { ascending: false })
-        .limit(150);
+        // 19/10 : sans filtre on prend tout le catalogue publié (≈ 660 lignes légères) pour pouvoir mélanger les
+        // catégories ; les 150 derniers ne contenaient que le dernier import (chargeurs).
+        .limit(slugs.length ? 150 : 1000);
       if (error) throw error;
 
       return (data || []).map((p) => ({
@@ -265,9 +267,20 @@ export const useShopByCategoryDataV2 = (
       }
     }
 
+    // 19/10 (Nolan) : sur « Tout », un produit de chaque catégorie à tour de rôle (sinon la dernière catégorie
+    // importée — les chargeurs — occupe toute la rangée). Ordre de tour : forte marge d'abord.
+    const interleave = (list: CompatiblePartRich[]) => {
+      const RANK = ["pneus", "chambres-a-air", "plaquettes", "chargeurs", "pneus-pleins", "disques"];
+      const buckets = new Map<string, CompatiblePartRich[]>();
+      for (const p of list) { const k = p.category?.slug ?? "_"; if (!buckets.has(k)) buckets.set(k, []); buckets.get(k)!.push(p); }
+      const keys = [...buckets.keys()].sort((x, y) => (RANK.indexOf(x) + 1 || 99) - (RANK.indexOf(y) + 1 || 99));
+      const out: CompatiblePartRich[] = [];
+      for (let i = 0; out.length < list.length; i++) for (const k of keys) { const b = buckets.get(k)!; if (i < b.length) out.push(b[i]); }
+      return out;
+    };
     const filteredParts =
       activeSlugsSet.size === 0
-        ? scopedParts
+        ? interleave(scopedParts)
         : scopedParts.filter((p) => p.category && activeSlugsSet.has(p.category.slug));
 
     let mode: ShopMode;

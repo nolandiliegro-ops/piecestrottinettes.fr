@@ -221,7 +221,11 @@ const Stage = ({ s, scooters, onSelect }: { s: Skin; scooters: ScooterHero[]; on
   const plate = scene === 5 ? "#ECE8E0" : s.stage;
   const top = scene ? SCENE_TOP[scene] : null;
   const onStage = plate === CARBON || plate === "#262626" || plate === GREEN;
-  const spec = [cur.max_speed_kmh && `${cur.max_speed_kmh} km/h`, cur.range_km && `${cur.range_km} km`, cur.power_watts && `${cur.power_watts} W`].filter(Boolean) as string[];
+  // 19/10 (Nolan) : la vitesse est toujours 25 km/h et l'autonomie dépend de la batterie → on montre ce qui sert à
+  // choisir une pièce : tension (chargeur, batterie), taille de roue (pneus, chambres), puissance.
+  const spec = [cur.voltage && `${cur.voltage} V`, cur.wheel_inches && `${cur.wheel_inches}"`, cur.power_watts && `${cur.power_watts} W`].filter(Boolean) as string[];
+  const b0 = cur.brand_name ?? "";
+  const shortName = b0 && cur.name.toLowerCase().startsWith(b0.toLowerCase() + " ") ? cur.name.slice(b0.length + 1) : cur.name;
   return (
     <div className="relative w-full pt-[80px] xl:pt-[90px]">
       <div className="relative px-8 pt-[330px] xl:pt-[380px] pb-7" style={{ background: plate, clipPath: cut(26) }} data-scene={scene ?? 0}>
@@ -231,7 +235,7 @@ const Stage = ({ s, scooters, onSelect }: { s: Skin; scooters: ScooterHero[]; on
             <span className="flex items-center gap-2 text-sm font-extrabold uppercase tracking-wide" style={{ fontFamily: FONT, color: onStage ? "rgba(255,255,255,0.7)" : "#6B7280" }}>
               <span className="w-6 h-[3px]" style={{ background: brand.accent === s.stage ? "#FFFFFF" : brand.accent }} />{cur.brand_name} · top du moment
             </span>
-            <span className={`block mt-1 uppercase leading-none truncate ${cur.name.length > 18 ? "text-2xl xl:text-3xl" : "text-3xl xl:text-4xl"}`} style={{ fontFamily: UNB, fontWeight: 900, fontStyle: "italic", letterSpacing: "-0.03em", color: onStage ? "#FFFFFF" : CARBON }}>{cur.name}</span>
+            <span className={`block mt-1 uppercase leading-[1.02] line-clamp-2 ${shortName.length > 16 ? "text-2xl xl:text-3xl" : "text-3xl xl:text-4xl"}`} style={{ fontFamily: UNB, fontWeight: 900, fontStyle: "italic", letterSpacing: "-0.03em", color: onStage ? "#FFFFFF" : CARBON }}>{shortName}</span>
             <span className="mt-3 flex flex-wrap gap-2">
               {spec.map((t) => (
                 <span key={t} className="px-2.5 py-1 text-sm font-bold" style={{ fontFamily: FONT, background: onStage ? "rgba(255,255,255,0.10)" : "rgba(26,26,26,0.08)", color: onStage ? "#FFFFFF" : CARBON, clipPath: cut(6) }}>{t}</span>
@@ -255,13 +259,16 @@ const Stage = ({ s, scooters, onSelect }: { s: Skin; scooters: ScooterHero[]; on
         {scene === 1 ? (
           <span aria-hidden className="absolute inset-x-0 bottom-[-40px] top-[22%]" style={{ background: "radial-gradient(closest-side, rgba(255,255,255,0.42), rgba(255,255,255,0.10) 55%, rgba(255,255,255,0) 100%)" }} />
         ) : scene ? (
-          <span aria-hidden className="absolute left-[18%] right-[18%] bottom-[2px] h-6" style={{ background: "radial-gradient(closest-side, rgba(0,0,0,0.28), rgba(0,0,0,0) 100%)" }} />
+          <motion.span aria-hidden className="absolute left-[14%] right-[14%] bottom-[-6px] h-9"
+            style={{ background: "radial-gradient(closest-side, rgba(26,26,26,0.42), rgba(26,26,26,0.16) 55%, rgba(26,26,26,0) 100%)" }}
+            animate={reduce ? undefined : { scaleX: [1, 0.9, 1], opacity: [1, 0.75, 1] }} transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }} />
         ) : s.stage !== GREEN && <span aria-hidden className="absolute inset-x-10 bottom-0 top-[40%]" style={{ background: "radial-gradient(closest-side, rgba(255,255,255,0.22), rgba(255,255,255,0) 100%)" }} />}
         <AnimatePresence mode="wait">
           <motion.div key={cur.id} className="h-full w-full flex items-end justify-center"
             initial={reduce ? false : { opacity: 0, x: 40 }} animate={{ opacity: 1, x: 0 }} exit={reduce ? undefined : { opacity: 0, x: -40 }} transition={{ duration: 0.4, ease: [0.22, 1, 0.36, 1] }}>
             {cur.image_url ? (
-              <img src={cur.image_url} alt={cur.name} className="relative max-h-full max-w-[96%] object-contain" style={{ filter: scene && scene !== 1 ? "drop-shadow(0 18px 16px rgba(0,0,0,0.22))" : "drop-shadow(0 24px 22px rgba(0,0,0,0.35))" }} />
+              <motion.img src={cur.image_url} alt={cur.name} className="relative max-h-full max-w-[96%] object-contain" style={{ filter: scene && scene !== 1 ? "drop-shadow(0 22px 18px rgba(0,0,0,0.20))" : "drop-shadow(0 24px 22px rgba(0,0,0,0.35))" }}
+                animate={reduce || !scene || scene === 1 ? undefined : { y: [0, -8, 0] }} transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }} />
             ) : (
               <Bike className="w-32 h-32 text-white/40" strokeWidth={1} />
             )}

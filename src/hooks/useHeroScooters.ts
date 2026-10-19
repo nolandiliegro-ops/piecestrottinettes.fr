@@ -14,6 +14,8 @@ export interface ScooterHero {
   max_speed_kmh: number | null;
   range_km: number | null;
   power_watts: number | null;
+  voltage: number | null;
+  wheel_inches: string | null;
   search_terms: string | null;
   is_top_moment: boolean;
   top_rank: number | null;
@@ -40,7 +42,7 @@ const useAllPublishedScooters = () =>
         .from("scooter_models")
         .select(
           `id, name, slug, image_url, year, compatible_parts_count,
-           is_top_moment, top_rank, max_speed_kmh, range_km, power_watts, search_terms,
+           is_top_moment, top_rank, max_speed_kmh, range_km, power_watts, voltage, wheel_inches, search_terms,
            created_at, brand:brands!scooter_models_brand_id_fkey(name)`
         )
         .eq("published", true)
@@ -65,6 +67,8 @@ const useAllPublishedScooters = () =>
           max_speed_kmh: m.max_speed_kmh,
           range_km: m.range_km,
           power_watts: m.power_watts,
+          voltage: m.voltage ?? null,
+          wheel_inches: m.wheel_inches != null ? String(m.wheel_inches) : null,
           search_terms: m.search_terms,
           is_top_moment: m.is_top_moment,
           top_rank: m.top_rank ?? null,
