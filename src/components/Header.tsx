@@ -53,8 +53,8 @@ const NAV_FONT = "'Plus Jakarta Sans', sans-serif";
 const NAV_CUT = "polygon(0 0, calc(100% - 8px) 0, 100% 8px, 100% 100%, 0 100%)";
 
 /** Icône trottinette (lucide n'en a pas : « Bike » est un vélo). */
-export const ScooterIcon = ({ className = "w-5 h-5", strokeWidth = 2 }: { className?: string; strokeWidth?: number }) => (
-  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={strokeWidth} strokeLinecap="round" strokeLinejoin="round" className={className} aria-hidden>
+export const ScooterIcon = ({ className = "w-5 h-5", strokeWidth = 2, style }: { className?: string; strokeWidth?: number; style?: React.CSSProperties }) => (
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={strokeWidth} strokeLinecap="round" strokeLinejoin="round" className={className} style={style} aria-hidden>
     <circle cx="5" cy="18" r="2.5" />
     <circle cx="19" cy="18" r="2.5" />
     <path d="M7.5 18H15l2.6-12" />
@@ -107,7 +107,8 @@ const Header = () => {
     { label: "Tutos", href: "/tutos" },
   ];
   const shownLinks = !nav || nav === 1 ? navLinks
-    : nav === 5 ? navLinks.filter((l) => ["/catalogue", "/trottinettes", "/marques", "/tutos"].includes(l.href)).map((l) => (l.href === "/catalogue" ? { ...l, label: "Pièces" } : l))
+    // 19/10 : Tutos (aucune vidéo encore) et Pépites (0 pièce mise en avant publiée) sortis du menu ; ils restent dans le menu ☰ du téléphone
+    : nav === 5 ? navLinks.filter((l) => ["/catalogue", "/trottinettes", "/marques"].includes(l.href)).map((l) => (l.href === "/catalogue" ? { ...l, label: "Pièces" } : l))
     : navLinks.filter((l) => l.href !== "/").map((l) => (l.href === "/catalogue" ? { ...l, label: "Pièces" } : l));
   const isActive = (href: string) => (href === "/" ? pathname === "/" : pathname.startsWith(href));
 
@@ -168,8 +169,8 @@ const Header = () => {
                   </Link>
                 );
               })}
-              {nav === 5 && (
-                <button type="button" onClick={openSpotlight} className="ml-4 h-10 w-[220px] 2xl:w-[280px] hidden xl:inline-flex items-center gap-2.5 px-3.5 text-[15px] text-left bg-white whitespace-nowrap overflow-hidden"
+              {nav === 5 && !pathname.startsWith("/catalogue") && (
+                <button type="button" onClick={openSpotlight} className="ml-10 2xl:ml-14 h-10 w-[220px] 2xl:w-[280px] hidden xl:inline-flex items-center gap-2.5 px-3.5 text-[15px] text-left bg-white whitespace-nowrap overflow-hidden"
                   style={{ fontFamily: NAV_FONT, color: "#9CA3AF", boxShadow: "inset 0 0 0 1px #E2DCD0", clipPath: NAV_CUT }}>
                   <Search className="w-4 h-4 shrink-0" style={{ color: "#1A1A1A" }} /> Pneu, Dualtron, chargeur…
                 </button>
@@ -514,7 +515,7 @@ const Header = () => {
               variant="ghost" 
               size="icon" 
               onClick={openSpotlight}
-              className={cn("relative text-foreground/80 hover:text-foreground group hidden md:flex", nav === 5 && "xl:hidden")}
+              className={cn("relative text-foreground/80 hover:text-foreground group hidden md:flex", nav === 5 && !pathname.startsWith("/catalogue") && "xl:hidden")}
             >
               <Search className="w-5 h-5" />
               {/* ⌘K shortcut indicator */}
@@ -657,7 +658,7 @@ const Header = () => {
         {isMenuOpen && (
           <nav className="lg:hidden py-4 border-t border-border animate-fade-in">
             <div className="flex flex-col gap-2">
-              {navLinks.map((link) => (
+              {(nav ? navLinks.filter((l) => !["/pepites", "/tutos"].includes(l.href)) : navLinks).map((link) => (
                 <Link
                   key={link.href}
                   to={link.href}

@@ -1,6 +1,7 @@
 import { useLocation, useNavigate } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Package, Play, ShoppingBag, Search, Bike } from 'lucide-react';
+import { Package, ShoppingBag, Search, Warehouse } from 'lucide-react';
+import { ScooterIcon } from '@/components/Header';
 import { useSelectedScooter } from '@/contexts/ScooterContext';
 import { useCart } from '@/hooks/useCart';
 import { useSpotlight } from '@/contexts/SpotlightContext';
@@ -23,9 +24,10 @@ const MobileNav = () => {
 
   const navItems: NavItem[] = [
     { icon: Package, label: 'Pièces', path: '/catalogue' },
-    { icon: Bike, label: 'Garage', path: '/garage' },
+    { icon: Warehouse, label: 'Garage', path: '/garage' },
     { icon: Search, label: 'Chercher', action: () => openSpotlight(), isSpotlight: true },
-    { icon: Play, label: 'Tutos', path: '/tutos' },
+    // 19/10 : « Tutos » remplacé (aucune vidéo encore) ; icône trottinette, pas un vélo
+    { icon: ScooterIcon, label: 'Trottinettes', path: '/trottinettes' },
     { icon: ShoppingBag, label: 'Panier', action: () => openCart(true) },
   ];
 
