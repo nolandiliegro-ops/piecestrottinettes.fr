@@ -40,7 +40,10 @@ const hexToRgba = (hex: string, alpha: number): string => {
 type NavVariant = 1 | 2 | 3 | 4 | 5;
 const readNavVariant = (): NavVariant | null => {
   try {
-    const n = Number(new URLSearchParams(window.location.search).get("nav"));
+    // 19/10 : choix Nolan = capitales (3) + barre de recherche (5) → variante 5 en capitales, par défaut ; ?nav=0 = ancien menu
+    const raw = new URLSearchParams(window.location.search).get("nav");
+    if (raw === null) return 5;
+    const n = Number(raw);
     return n >= 1 && n <= 5 ? (n as NavVariant) : null;
   } catch {
     return null;
@@ -146,7 +149,7 @@ const Header = () => {
 
           {/* Desktop Navigation */}
           {nav ? (
-            <nav className={cn("hidden lg:flex items-center", nav === 4 ? "gap-1.5" : nav === 3 ? "gap-6 xl:gap-8" : "gap-5 xl:gap-7")} data-nav-variant={nav}>
+            <nav className={cn("hidden lg:flex items-center ml-6 xl:ml-8 mr-auto", nav === 4 ? "gap-1.5" : nav === 3 || nav === 5 ? "gap-4 xl:gap-7" : "gap-5 xl:gap-7")} data-nav-variant={nav}>
               {shownLinks.map((link) => {
                 const on = isActive(link.href);
                 if (nav === 4) {
@@ -159,14 +162,14 @@ const Header = () => {
                 }
                 return (
                   <Link key={link.href} to={link.href}
-                    className={cn("relative py-2 transition-colors", nav === 3 ? "text-sm font-extrabold uppercase tracking-[0.08em]" : "text-[15px] font-bold")}
-                    style={{ fontFamily: NAV_FONT, color: on ? "#1A1A1A" : nav === 3 ? "#57534E" : "#3F3F46", boxShadow: on ? "inset 0 -2.5px 0 #4A7C59" : "none" }}>
+                    className={cn("relative py-2 transition-colors", nav === 3 || nav === 5 ? "text-sm font-extrabold uppercase tracking-[0.04em] xl:tracking-[0.08em]" : "text-[15px] font-bold")}
+                    style={{ fontFamily: NAV_FONT, color: on ? "#1A1A1A" : nav === 3 || nav === 5 ? "#57534E" : "#3F3F46", boxShadow: on ? "inset 0 -2.5px 0 #4A7C59" : "none" }}>
                     {link.label}
                   </Link>
                 );
               })}
               {nav === 5 && (
-                <button type="button" onClick={openSpotlight} className="ml-2 h-10 w-[230px] xl:w-[280px] inline-flex items-center gap-2.5 px-3.5 text-[15px] text-left bg-white"
+                <button type="button" onClick={openSpotlight} className="ml-4 h-10 w-[220px] 2xl:w-[280px] hidden xl:inline-flex items-center gap-2.5 px-3.5 text-[15px] text-left bg-white whitespace-nowrap overflow-hidden"
                   style={{ fontFamily: NAV_FONT, color: "#9CA3AF", boxShadow: "inset 0 0 0 1px #E2DCD0", clipPath: NAV_CUT }}>
                   <Search className="w-4 h-4 shrink-0" style={{ color: "#1A1A1A" }} /> Pneu, Dualtron, chargeur…
                 </button>
@@ -187,7 +190,7 @@ const Header = () => {
           )}
 
           {/* Actions */}
-          <div className="flex items-center gap-2 lg:gap-3">
+          <div className="flex items-center gap-2 lg:gap-3 shrink-0 lg:pl-4">
             {/* Mobile Slim Selector — opens bottom Sheet (D4.2) */}
             {selectedScooter ? (
               <button
@@ -265,7 +268,7 @@ const Header = () => {
               <DropdownMenuTrigger asChild>
                 <button
                   type="button"
-                  className="hidden md:inline-flex items-center min-h-[36px] transition-colors duration-150"
+                  className="hidden md:inline-flex items-center min-h-[36px] whitespace-nowrap shrink-0 transition-colors duration-150"
                   style={
                     nav
                       ? { padding: "9px 12px", borderRadius: 0, clipPath: NAV_CUT, background: "#FFFFFF", boxShadow: `inset 0 0 0 1px ${selectedScooter ? hexToRgba(selectedBrandColors.accent, 0.45) : "#E2DCD0"}` }
@@ -511,7 +514,7 @@ const Header = () => {
               variant="ghost" 
               size="icon" 
               onClick={openSpotlight}
-              className={cn("relative text-foreground/80 hover:text-foreground group hidden md:flex", nav === 5 && "lg:hidden")}
+              className={cn("relative text-foreground/80 hover:text-foreground group hidden md:flex", nav === 5 && "xl:hidden")}
             >
               <Search className="w-5 h-5" />
               {/* ⌘K shortcut indicator */}
