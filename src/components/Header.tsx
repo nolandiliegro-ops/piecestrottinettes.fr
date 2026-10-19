@@ -1,7 +1,7 @@
 import { Search, ShoppingCart, Menu, Home, LogIn, LogOut, User, Bike, ChevronDown, X, Plus, Trophy } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useState, useEffect, useRef, useCallback } from "react";
-import { Link, useNavigate } from "react-router-dom";
+import { Link, useNavigate, useLocation } from "react-router-dom";
 import { useAuth } from "@/hooks/useAuth";
 import { useCart } from "@/hooks/useCart";
 import { useSelectedScooter } from "@/contexts/ScooterContext";
@@ -34,8 +34,35 @@ const hexToRgba = (hex: string, alpha: number): string => {
   return `rgba(${(n >> 16) & 255}, ${(n >> 8) & 255}, ${n & 255}, ${alpha})`;
 };
 
+/** 19/10 : propositions de menu ?nav=1..5 (retour Nolan : « pas assez joli, trop de trucs, l'icône est un vélo,
+ *  le 200 XP / LVL 1 sert à rien, la typo du menu pas ouf »). Communs aux 5 : badge XP retiré, vraie icône
+ *  trottinette, police Plus Jakarta (DA Atelier), coin coupé. Sans paramètre : menu actuel inchangé. */
+type NavVariant = 1 | 2 | 3 | 4 | 5;
+const readNavVariant = (): NavVariant | null => {
+  try {
+    const n = Number(new URLSearchParams(window.location.search).get("nav"));
+    return n >= 1 && n <= 5 ? (n as NavVariant) : null;
+  } catch {
+    return null;
+  }
+};
+const NAV_FONT = "'Plus Jakarta Sans', sans-serif";
+const NAV_CUT = "polygon(0 0, calc(100% - 8px) 0, 100% 8px, 100% 100%, 0 100%)";
+
+/** Icône trottinette (lucide n'en a pas : « Bike » est un vélo). */
+export const ScooterIcon = ({ className = "w-5 h-5", strokeWidth = 2 }: { className?: string; strokeWidth?: number }) => (
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={strokeWidth} strokeLinecap="round" strokeLinejoin="round" className={className} aria-hidden>
+    <circle cx="5" cy="18" r="2.5" />
+    <circle cx="19" cy="18" r="2.5" />
+    <path d="M7.5 18H15l2.6-12" />
+    <path d="M15.5 6h4" />
+  </svg>
+);
+
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [nav] = useState(readNavVariant);
+  const { pathname } = useLocation();
   const [isAnimating, setIsAnimating] = useState(false);
   const [isScooterDropdownOpen, setIsScooterDropdownOpen] = useState(false);
   const [scooterSheetOpen, setScooterSheetOpen] = useState(false);
@@ -76,6 +103,10 @@ const Header = () => {
     { label: "Les Pépites", href: "/pepites" },
     { label: "Tutos", href: "/tutos" },
   ];
+  const shownLinks = !nav || nav === 1 ? navLinks
+    : nav === 5 ? navLinks.filter((l) => ["/catalogue", "/trottinettes", "/marques", "/tutos"].includes(l.href)).map((l) => (l.href === "/catalogue" ? { ...l, label: "Pièces" } : l))
+    : navLinks.filter((l) => l.href !== "/").map((l) => (l.href === "/catalogue" ? { ...l, label: "Pièces" } : l));
+  const isActive = (href: string) => (href === "/" ? pathname === "/" : pathname.startsWith(href));
 
   const handleGarageClick = () => {
     if (user) {
@@ -114,6 +145,34 @@ const Header = () => {
           </Link>
 
           {/* Desktop Navigation */}
+          {nav ? (
+            <nav className={cn("hidden lg:flex items-center", nav === 4 ? "gap-1.5" : nav === 3 ? "gap-6 xl:gap-8" : "gap-5 xl:gap-7")} data-nav-variant={nav}>
+              {shownLinks.map((link) => {
+                const on = isActive(link.href);
+                if (nav === 4) {
+                  return (
+                    <Link key={link.href} to={link.href} className="min-h-[40px] px-3.5 inline-flex items-center text-[15px] font-bold transition-colors"
+                      style={{ fontFamily: NAV_FONT, clipPath: NAV_CUT, ...(on ? { background: "#1A1A1A", color: "#FFFFFF" } : { color: "#1A1A1A" }) }}>
+                      {link.label}
+                    </Link>
+                  );
+                }
+                return (
+                  <Link key={link.href} to={link.href}
+                    className={cn("relative py-2 transition-colors", nav === 3 ? "text-sm font-extrabold uppercase tracking-[0.08em]" : "text-[15px] font-bold")}
+                    style={{ fontFamily: NAV_FONT, color: on ? "#1A1A1A" : nav === 3 ? "#57534E" : "#3F3F46", boxShadow: on ? "inset 0 -2.5px 0 #4A7C59" : "none" }}>
+                    {link.label}
+                  </Link>
+                );
+              })}
+              {nav === 5 && (
+                <button type="button" onClick={openSpotlight} className="ml-2 h-10 w-[230px] xl:w-[280px] inline-flex items-center gap-2.5 px-3.5 text-[15px] text-left bg-white"
+                  style={{ fontFamily: NAV_FONT, color: "#9CA3AF", boxShadow: "inset 0 0 0 1px #E2DCD0", clipPath: NAV_CUT }}>
+                  <Search className="w-4 h-4 shrink-0" style={{ color: "#1A1A1A" }} /> Pneu, Dualtron, chargeur…
+                </button>
+              )}
+            </nav>
+          ) : (
           <nav className={cn("hidden lg:flex items-center", logoVariant ? "gap-3 xl:gap-8 ml-3 xl:ml-6" : "gap-8")}>
             {navLinks.map((link) => (
               <Link
@@ -125,6 +184,7 @@ const Header = () => {
               </Link>
             ))}
           </nav>
+          )}
 
           {/* Actions */}
           <div className="flex items-center gap-2 lg:gap-3">
@@ -167,7 +227,7 @@ const Header = () => {
                 className="flex md:hidden items-center justify-center w-11 h-11 shrink-0"
                 style={{ border: "1px solid rgba(0,0,0,0.12)", clipPath: "polygon(0 0, calc(100% - 8px) 0, 100% 8px, 100% 100%, 0 100%)", background: "#fff" }}
               >
-                <Bike className="w-5 h-5" style={{ color: "#1A1A1A" }} />
+                {nav ? <ScooterIcon className="w-5 h-5" /> : <Bike className="w-5 h-5" style={{ color: "#1A1A1A" }} />}
               </button>
             ) : (
               <button
@@ -207,7 +267,9 @@ const Header = () => {
                   type="button"
                   className="hidden md:inline-flex items-center min-h-[36px] transition-colors duration-150"
                   style={
-                    selectedScooter
+                    nav
+                      ? { padding: "9px 12px", borderRadius: 0, clipPath: NAV_CUT, background: "#FFFFFF", boxShadow: `inset 0 0 0 1px ${selectedScooter ? hexToRgba(selectedBrandColors.accent, 0.45) : "#E2DCD0"}` }
+                      : selectedScooter
                       ? {
                           padding: "7px 12px",
                           borderRadius: 8,
@@ -263,18 +325,22 @@ const Header = () => {
                           backgroundColor: "rgba(0,0,0,0.06)",
                         }}
                       >
+                        {nav ? (
+                          <ScooterIcon className="w-[15px] h-[15px]" strokeWidth={2.3} />
+                        ) : (
                         <Bike
                           size={14}
                           strokeWidth={2.2}
                           style={{ color: "var(--token-global-text-primary, #1A1A1A)" }}
                           aria-hidden
                         />
+                        )}
                       </span>
                       <span
                         style={{
-                          fontFamily: "'Inter', sans-serif",
-                          fontSize: 12,
-                          fontWeight: 600,
+                          fontFamily: nav ? NAV_FONT : "'Inter', sans-serif",
+                          fontSize: nav ? 14 : 12,
+                          fontWeight: nav ? 700 : 600,
                           lineHeight: 1,
                           color: "var(--token-global-text-primary, #1A1A1A)",
                         }}
@@ -445,7 +511,7 @@ const Header = () => {
               variant="ghost" 
               size="icon" 
               onClick={openSpotlight}
-              className="relative text-foreground/80 hover:text-foreground group hidden md:flex"
+              className={cn("relative text-foreground/80 hover:text-foreground group hidden md:flex", nav === 5 && "lg:hidden")}
             >
               <Search className="w-5 h-5" />
               {/* ⌘K shortcut indicator */}
@@ -479,7 +545,7 @@ const Header = () => {
             {user ? (
               <>
                 {/* XP Badge - Desktop Only with Dynamic Glow */}
-                {profile && (() => {
+                {!nav && profile && (() => {
                   const xpLevel = getXPLevel(profile.performance_points || 0);
                   const progress = getProgressToNextLevel(profile.performance_points || 0);
                   const glowIntensity = Math.max(8, progress.percentage * 0.2); // 8px min, 20px max
