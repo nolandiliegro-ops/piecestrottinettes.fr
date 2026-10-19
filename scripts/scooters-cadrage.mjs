@@ -131,7 +131,7 @@ async function main() {
     if (MODE === 'write' && aEcrire) {
       let ok = true;
       for (const [k, i] of ordre.entries()) {
-        await new Promise((r) => setTimeout(r, 400));
+        await new Promise((r) => setTimeout(r, 1000)); // 19/10 : 400 ms → 8 « Too many connections » sur 416
         const png = photos[i].out || await sharp(photos[i].buf, { failOn: 'none' }).png().toBuffer();
         const res = await fetch(`${env.VITE_SUPABASE_URL}/functions/v1/process-images`, { method: 'POST', headers: { 'Content-Type': 'application/json', 'x-admin-secret': env.ADMIN_BULK_SECRET }, body: JSON.stringify({ entity_type: 'scooter', entity_id: s.id, images_base64: [png.toString('base64')], alt_base: s.name, reset: k === 0 }) });
         const t = await res.text();

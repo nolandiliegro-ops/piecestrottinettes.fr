@@ -1,1 +1,2 @@
-fetch mini1
+cadrage write
+coupe v1
