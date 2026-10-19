@@ -144,7 +144,7 @@ export const useRelatedParts = (
 
         const { data, error } = await supabase
           .from("parts")
-          .select("id, name, slug, price, image_url, stock_quantity")
+          .select("id, name, slug, price, image_url, images, stock_quantity, category:categories(id, name, slug, color)")
           .eq("published", true)
           .eq("category_id", categoryId!)
           .neq("id", currentPartId!)
@@ -156,7 +156,7 @@ export const useRelatedParts = (
 
       const { data, error } = await supabase
         .from("parts")
-        .select("id, name, slug, price, image_url, stock_quantity")
+        .select("id, name, slug, price, image_url, images, stock_quantity, category:categories(id, name, slug, color)")
         .eq("published", true)
         .eq("category_id", categoryId!)
         .neq("id", currentPartId!)

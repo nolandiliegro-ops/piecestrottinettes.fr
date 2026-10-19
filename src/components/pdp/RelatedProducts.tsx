@@ -1,11 +1,11 @@
-import { motion } from "framer-motion";
-import { Link } from "react-router-dom";
-import { ShoppingCart, Package } from "lucide-react";
-import { useCart } from "@/hooks/useCart";
-import { formatPrice } from "@/lib/formatPrice";
+/**
+ * « Vous pourriez aussi avoir besoin de » — fiche produit.
+ * 19/10/2026 : passé sur la carte « Ça dépasse » (PartCardAtelier) choisie par Nolan pour tout le site ;
+ * avant : cartes vitrées arrondies, titre Bebas, prix « 9.00 € ».
+ */
 import { Skeleton } from "@/components/ui/skeleton";
-import { toast } from "sonner";
-import { SHOP_OPEN, openPrelaunch } from '@/config/launch';
+import PartCardAtelier from "@/components/parts/PartCardAtelier";
+import type { CompatiblePart } from "@/hooks/useScooterData";
 
 interface RelatedPart {
   id: string;
@@ -13,7 +13,9 @@ interface RelatedPart {
   slug: string;
   price: number | null;
   image_url: string | null;
+  images?: unknown;
   stock_quantity: number | null;
+  category?: { id: string; name: string; slug: string; color?: string | null } | null;
 }
 
 interface RelatedProductsProps {
@@ -21,111 +23,33 @@ interface RelatedProductsProps {
   isLoading: boolean;
 }
 
-const RelatedProducts = ({ parts, isLoading }: RelatedProductsProps) => {
-  const { addItem } = useCart();
+const UNB = "'Unbounded', sans-serif";
 
+const RelatedProducts = ({ parts, isLoading }: RelatedProductsProps) => {
   if (isLoading) {
     return (
       <section className="w-full max-w-7xl mx-auto">
         <Skeleton className="h-8 w-64 mb-6" />
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-          {[...Array(4)].map((_, i) => (
-            <Skeleton key={i} className="h-72 rounded-2xl" />
-          ))}
+          {[...Array(4)].map((_, i) => <Skeleton key={i} className="h-72" />)}
         </div>
       </section>
     );
   }
-
   if (!parts || parts.length === 0) return null;
 
-  const handleAddToCart = (part: RelatedPart, e: React.MouseEvent) => {
-    if (!SHOP_OPEN) { e.preventDefault(); e.stopPropagation(); openPrelaunch(); return; }
-    e.preventDefault();
-    e.stopPropagation();
-    if (!part.price || !part.stock_quantity || part.stock_quantity <= 0) return;
-    addItem({
-      id: part.id,
-      name: part.name,
-      price: part.price,
-      image_url: part.image_url,
-      stock_quantity: part.stock_quantity,
-    });
-    toast.success(`${part.name} ajouté au panier`);
-  };
-
   return (
-    <motion.section
-      initial={{ opacity: 0, y: 32 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      viewport={{ once: true, margin: "-50px" }}
-      transition={{ duration: 0.6, ease: [0.32, 0.72, 0, 1] }}
-      className="w-full max-w-7xl mx-auto"
-    >
-      <div className="flex items-center gap-3 mb-6">
-        <div className="w-10 h-10 rounded-xl bg-[hsl(var(--mineral))]/10 flex items-center justify-center">
-          <Package className="w-5 h-5 text-[hsl(var(--mineral))]" />
-        </div>
-        <h2 className="font-black text-[hsl(var(--carbon))] uppercase tracking-tight text-xl">
-          Vous pourriez aussi avoir besoin de
-        </h2>
-      </div>
-
-      <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-        {parts.map((part, index) => (
-          <motion.div
-            key={part.id}
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.4, delay: index * 0.1, ease: [0.32, 0.72, 0, 1] }}
-          >
-            <Link
-              to={`/piece/${part.slug}`}
-              className="group block h-full rounded-2xl shadow-md bg-white/70 backdrop-blur-sm border border-white/40 overflow-hidden hover:shadow-xl hover:scale-105 transition-all duration-300"
-            >
-              {/* Image */}
-              <div className="aspect-square bg-[hsl(var(--muted))] overflow-hidden">
-                {part.image_url ? (
-                  <img
-                    src={part.image_url}
-                    alt={part.name}
-                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                    loading="lazy"
-                  />
-                ) : (
-                  <div className="w-full h-full flex items-center justify-center">
-                    <Package className="w-12 h-12 text-[hsl(var(--muted-foreground))]/30" />
-                  </div>
-                )}
-              </div>
-
-              {/* Info */}
-              <div className="p-4 flex flex-col gap-2">
-                <h3 className="font-semibold text-[hsl(var(--carbon))] text-sm leading-tight line-clamp-2 min-h-[2.5rem]">
-                  {part.name}
-                </h3>
-
-                {part.price != null && (
-                  <p className="font-black text-[#4A7C59] text-lg">
-                    {formatPrice(part.price)}
-                  </p>
-                )}
-
-                <button
-                  onClick={(e) => handleAddToCart(part, e)}
-                  disabled={!part.stock_quantity || part.stock_quantity <= 0}
-                  className="mt-auto min-h-[44px] w-full flex items-center justify-center gap-2 rounded-xl bg-[#FF6600] hover:bg-[#E55C00] text-white font-bold text-sm transition-all duration-200 active:scale-[0.97] disabled:opacity-40 disabled:cursor-not-allowed"
-                >
-                  <ShoppingCart className="w-4 h-4" />
-                  <span>Ajouter</span>
-                </button>
-              </div>
-            </Link>
-          </motion.div>
+    <section className="w-full max-w-7xl mx-auto">
+      <h2 className="text-2xl md:text-3xl uppercase leading-none mb-2"
+        style={{ fontFamily: UNB, fontWeight: 900, fontStyle: "italic", letterSpacing: "-0.02em", color: "#1A1A1A" }}>
+        Vous pourriez aussi avoir besoin de
+      </h2>
+      <div className="grid grid-cols-2 md:grid-cols-4 gap-x-4 gap-y-6 md:gap-x-6">
+        {parts.map((part) => (
+          <PartCardAtelier key={part.id} look={1} part={part as unknown as CompatiblePart & { slug?: string }} className="h-full" />
         ))}
       </div>
-    </motion.section>
+    </section>
   );
 };
 

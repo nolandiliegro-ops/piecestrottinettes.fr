@@ -195,6 +195,9 @@ const Photos = ({ part, height, thumbs = "row", bg = "#fff", rounded = "rounded-
   );
 };
 
+// 19/10 : tuiles à coin coupé (plus de coins ronds), comme le reste de la DA Atelier.
+const TILE = { clipPath: "polygon(0 0, calc(100% - 10px) 0, 100% 10px, 100% 100%, 0 100%)", boxShadow: `inset 0 0 0 1px ${LINE}` } as const;
+
 // ─── Tuiles caractéristiques ────────────────────────────────────────────────
 const Tiles = ({ part, accent = GREEN, cols = "grid-cols-2 sm:grid-cols-3" }: { part: PartDetail; accent?: string; cols?: string }) => {
   const { tiles, free } = parseSpecs(part.description, part.characteristics);
@@ -202,14 +205,14 @@ const Tiles = ({ part, accent = GREEN, cols = "grid-cols-2 sm:grid-cols-3" }: { 
   return (
     <div className={`grid ${cols} gap-2`}>
       {tiles.map((s) => (
-        <div key={s.label} className="rounded-xl bg-white border px-3 py-2.5 relative overflow-hidden" style={{ borderColor: LINE }}>
+        <div key={s.label} className="bg-white px-3 py-2.5 relative overflow-hidden" style={TILE}>
           <span aria-hidden className="absolute left-0 top-0 bottom-0 w-1" style={{ backgroundColor: accent }} />
           <div className="text-sm uppercase tracking-wider text-gray-500" style={{ fontFamily: FONT }}>{s.label}</div>
           <div className="text-base" style={{ fontFamily: UNB, fontWeight: 800, fontStyle: "italic", color: CARBON }}>{s.value}</div>
         </div>
       ))}
       {free.map((s) => (
-        <div key={s} className="rounded-xl bg-white border px-3 py-2.5 relative overflow-hidden flex items-center" style={{ borderColor: LINE }}>
+        <div key={s} className="bg-white px-3 py-2.5 relative overflow-hidden flex items-center" style={TILE}>
           <span aria-hidden className="absolute left-0 top-0 bottom-0 w-1" style={{ backgroundColor: accent }} />
           <div className="text-sm font-semibold" style={{ fontFamily: FONT, color: CARBON }}>{s}</div>
         </div>
@@ -305,7 +308,7 @@ const Install = ({ part }: { part: PartDetail }) => {
   );
 };
 const Mini = ({ icon: Icon, label, value }: { icon: typeof Wrench; label: string; value: string }) => (
-  <div className="rounded-xl bg-white border px-3 py-2.5" style={{ borderColor: LINE }}>
+  <div className="bg-white px-3 py-2.5" style={TILE}>
     <div className="flex items-center gap-1.5 text-sm uppercase tracking-wider text-gray-500" style={{ fontFamily: FONT }}><Icon className="w-4 h-4" />{label}</div>
     <div className="text-base" style={{ fontFamily: UNB, fontWeight: 800, fontStyle: "italic", color: CARBON }}>{value}</div>
   </div>

@@ -594,6 +594,13 @@ html {
   list-style-type: decimal;
 }
 
+/* 19/10 : intertitres de description en Plus Jakarta (h2/h3 héritaient de Bebas via la règle globale) */
+.quill-content h2,
+.quill-content h3 {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  letter-spacing: -0.01em;
+}
+
 .quill-content h2 {
   font-size: 1.25rem;
   font-weight: 700;
