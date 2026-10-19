@@ -1,2 +1,1 @@
-cadrage write
-coupe v1
+fetch top1
