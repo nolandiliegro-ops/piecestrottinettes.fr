@@ -1,0 +1,646 @@
+{
+ "resume": {
+  "mode": "dry",
+  "trottinettes": 30,
+  "photos": 60,
+  "mieux": 0,
+  "pasMieux": 0,
+  "sourceIntrouvable": 56,
+  "erreurs": 4,
+  "aEcrire": 0,
+  "ecrites": 0,
+  "echecs": 0
+ },
+ "report": [
+  {
+   "id": "6e797074-e8fb-48c2-9c63-80a751870d2f",
+   "slug": "kaabo-wolf-warrior-x-gt",
+   "nom": "Kaabo Wolf Warrior X GT",
+   "photos": 5,
+   "lignes": [
+    {
+     "pos": 2,
+     "avant": 2.795,
+     "verdict": "SOURCE_INTROUVABLE",
+     "ecart": 84
+    }
+   ],
+   "aEcrire": false
+  },
+  {
+   "id": "cfa031f8-814a-443f-a496-b319a8bcea6b",
+   "slug": "inmotion-c1-air-pro",
+   "nom": "Inmotion C1 Air Pro",
+   "photos": 4,
+   "lignes": [
+    {
+     "pos": 3,
+     "avant": 0.418,
+     "verdict": "SOURCE_INTROUVABLE",
+     "ecart": 999
+    },
+    {
+     "pos": 4,
+     "avant": 0.022,
+     "verdict": "SOURCE_INTROUVABLE",
+     "ecart": 999
+    }
+   ],
+   "aEcrire": false
+  },
+  {
+   "id": "76a7291f-df89-4621-aab0-f201450cff92",
+   "slug": "g30-max",
+   "nom": "G30 Max",
+   "photos": 3,
+   "lignes": [
+    {
+     "pos": 1,
+     "avant": 0.055,
+     "verdict": "SOURCE_INTROUVABLE",
+     "ecart": 39
+    },
+    {
+     "pos": 3,
+     "avant": 0.355,
+     "verdict": "SOURCE_INTROUVABLE",
+     "ecart": 999
+    }
+   ],
+   "aEcrire": false
+  },
+  {
+   "id": "7e260ded-c11c-4f26-8721-133128c63678",
+   "slug": "e-twow-gts",
+   "nom": "E-Twow GTS",
+   "photos": 5,
+   "lignes": [
+    {
+     "pos": 2,
+     "avant": 0.337,
+     "verdict": "SOURCE_INTROUVABLE",
+     "ecart": 49
+    }
+   ],
+   "aEcrire": false
+  },
+  {
+   "id": "0da85a7f-d5f3-49dc-ba52-ddfab8741615",
+   "slug": "teverun-fighter-mini-v6",
+   "nom": "Teverun Fighter Mini V6",
+   "photos": 5,
+   "lignes": [
+    {
+     "pos": 2,
+     "avant": 0.292,
+     "verdict": "SOURCE_INTROUVABLE",
+     "ecart": 999
+    }
+   ],
+   "aEcrire": false
+  },
+  {
+   "id": "3d1fc80b-431f-458d-bc02-70db5d62b26f",
+   "slug": "navee-gt5-pro",
+   "nom": "Navee GT5 Pro",
+   "photos": 5,
+   "lignes": [
+    {
+     "pos": 1,
+     "avant": 0.025,
+     "verdict": "SOURCE_INTROUVABLE",
+     "ecart": 29
+    },
+    {
+     "pos": 4,
+     "avant": 0.079,
+     "verdict": "SOURCE_INTROUVABLE",
+     "ecart": 999
+    },
+    {
+     "pos": 5,
+     "avant": 0.283,
+     "verdict": "SOURCE_INTROUVABLE",
+     "ecart": 999
+    }
+   ],
+   "aEcrire": false
+  },
+  {
+   "id": "784c0fb9-a041-40c2-b1ad-e1fbd940c75d",
+   "slug": "inmotion-air-pro",
+   "nom": "Inmotion Air Pro",
+   "photos": 5,
+   "lignes": [
+    {
+     "pos": 2,
+     "avant": 0.28,
+     "verdict": "SOURCE_INTROUVABLE",
+     "ecart": 999
+    },
+    {
+     "pos": 4,
+     "avant": 0.031,
+     "verdict": "SOURCE_INTROUVABLE",
+     "ecart": 40
+    }
+   ],
+   "aEcrire": false
+  },
+  {
+   "id": "52cf2a00-db4e-4418-a7be-a48db1fe8e71",
+   "slug": "e-twow-tanktorq-tk2-lite",
+   "nom": "E-Twow TankTorq TK2 Lite",
+   "photos": 4,
+   "lignes": [
+    {
+     "pos": 2,
+     "avant": 0.279,
+     "verdict": "ERREUR",
+     "err": "Resource /models/large not found. Ensure that the config.publicPath is configured correctly."
+    },
+    {
+     "pos": 3,
+     "avant": 0.07,
+     "verdict": "SOURCE_INTROUVABLE",
+     "ecart": 999
+    },
+    {
+     "pos": 4,
+     "avant": 0.064,
+     "verdict": "SOURCE_INTROUVABLE",
+     "ecart": 31
+    }
+   ],
+   "aEcrire": false
+  },
+  {
+   "id": "0debaa11-8bf6-4367-a590-20adaf9c2a3c",
+   "slug": "zwheel-zrino",
+   "nom": "Zwheel ZRino",
+   "photos": 5,
+   "lignes": [
+    {
+     "pos": 4,
+     "avant": 0.279,
+     "verdict": "SOURCE_INTROUVABLE",
+     "ecart": 999
+    },
+    {
+     "pos": 5,
+     "avant": 0.037,
+     "verdict": "SOURCE_INTROUVABLE",
+     "ecart": 999
+    }
+   ],
+   "aEcrire": false
+  },
+  {
+   "id": "e6a9c39b-9ce5-488a-ba77-bf1f5b954e91",
+   "slug": "inmotion-rs",
+   "nom": "Inmotion RS",
+   "photos": 4,
+   "lignes": [
+    {
+     "pos": 1,
+     "avant": 0.278,
+     "verdict": "SOURCE_INTROUVABLE",
+     "ecart": 999
+    },
+    {
+     "pos": 2,
+     "avant": 0.179,
+     "verdict": "SOURCE_INTROUVABLE",
+     "ecart": 999
+    },
+    {
+     "pos": 3,
+     "avant": 0.153,
+     "verdict": "SOURCE_INTROUVABLE",
+     "ecart": 999
+    },
+    {
+     "pos": 4,
+     "avant": 0.149,
+     "verdict": "SOURCE_INTROUVABLE",
+     "ecart": 999
+    }
+   ],
+   "aEcrire": false
+  },
+  {
+   "id": "4d34a97a-ae05-4c2b-8cbe-04ae616ba069",
+   "slug": "cecotec-bongo-serie-a-connected",
+   "nom": "Cecotec Bongo Serie A Connected",
+   "photos": 6,
+   "lignes": [
+    {
+     "pos": 2,
+     "avant": 0.274,
+     "verdict": "SOURCE_INTROUVABLE",
+     "ecart": 999
+    },
+    {
+     "pos": 5,
+     "avant": 0.09,
+     "verdict": "SOURCE_INTROUVABLE",
+     "ecart": 42
+    },
+    {
+     "pos": 6,
+     "avant": 0.208,
+     "verdict": "SOURCE_INTROUVABLE",
+     "ecart": 999
+    }
+   ],
+   "aEcrire": false
+  },
+  {
+   "id": "4350d0f5-1109-4ec6-883e-f9e251e6f92a",
+   "slug": "navee-gt5-max",
+   "nom": "Navee GT5 Max",
+   "photos": 4,
+   "lignes": [
+    {
+     "pos": 3,
+     "avant": 0.077,
+     "verdict": "SOURCE_INTROUVABLE",
+     "ecart": 999
+    },
+    {
+     "pos": 4,
+     "avant": 0.27,
+     "verdict": "SOURCE_INTROUVABLE",
+     "ecart": 999
+    }
+   ],
+   "aEcrire": false
+  },
+  {
+   "id": "863a9fc0-7fc3-435f-b1d7-8c4155ef9662",
+   "slug": "micro-explorer-ii",
+   "nom": "Micro Explorer II",
+   "photos": 3,
+   "lignes": [
+    {
+     "pos": 2,
+     "avant": 0.239,
+     "verdict": "SOURCE_INTROUVABLE",
+     "ecart": 49
+    }
+   ],
+   "aEcrire": false
+  },
+  {
+   "id": "6deef498-eb2e-4766-8a12-cf4085a059f9",
+   "slug": "urbanglide-ecross-pro-2",
+   "nom": "Urbanglide eCross Pro 2",
+   "photos": 5,
+   "lignes": [
+    {
+     "pos": 3,
+     "avant": 0.236,
+     "verdict": "SOURCE_INTROUVABLE",
+     "ecart": 999
+    },
+    {
+     "pos": 4,
+     "avant": 0.132,
+     "verdict": "SOURCE_INTROUVABLE",
+     "ecart": 54
+    }
+   ],
+   "aEcrire": false
+  },
+  {
+   "id": "40bdbd13-80ed-43ed-bc49-ac3b51a57141",
+   "slug": "inmotion-rs-lite",
+   "nom": "Inmotion RS Lite",
+   "photos": 5,
+   "lignes": [
+    {
+     "pos": 1,
+     "avant": 0.236,
+     "verdict": "SOURCE_INTROUVABLE",
+     "ecart": 37
+    },
+    {
+     "pos": 2,
+     "avant": 0.204,
+     "verdict": "SOURCE_INTROUVABLE",
+     "ecart": 999
+    },
+    {
+     "pos": 3,
+     "avant": 0.145,
+     "verdict": "SOURCE_INTROUVABLE",
+     "ecart": 46
+    },
+    {
+     "pos": 4,
+     "avant": 0.169,
+     "verdict": "SOURCE_INTROUVABLE",
+     "ecart": 999
+    },
+    {
+     "pos": 5,
+     "avant": 0.198,
+     "verdict": "SOURCE_INTROUVABLE",
+     "ecart": 999
+    }
+   ],
+   "aEcrire": false
+  },
+  {
+   "id": "c9958d10-3f92-4b3d-9033-4def32009130",
+   "slug": "weped-ff",
+   "nom": "Weped FF",
+   "photos": 3,
+   "lignes": [
+    {
+     "pos": 2,
+     "avant": 0.228,
+     "verdict": "ERREUR",
+     "err": "Resource /models/large not found. Ensure that the config.publicPath is configured correctly."
+    }
+   ],
+   "aEcrire": false
+  },
+  {
+   "id": "bb229a42-838a-4c4a-9834-5af3b205f65b",
+   "slug": "pure-air-6-ultra-max-suspension",
+   "nom": "Pure Air⁶ Ultra Max Suspension",
+   "photos": 7,
+   "lignes": [
+    {
+     "pos": 5,
+     "avant": 0.225,
+     "verdict": "ERREUR",
+     "err": "Resource /models/large not found. Ensure that the config.publicPath is configured correctly."
+    },
+    {
+     "pos": 6,
+     "avant": 0.026,
+     "verdict": "SOURCE_INTROUVABLE",
+     "ecart": 999
+    },
+    {
+     "pos": 7,
+     "avant": 0.066,
+     "verdict": "SOURCE_INTROUVABLE",
+     "ecart": 999
+    }
+   ],
+   "aEcrire": false
+  },
+  {
+   "id": "2bbe4e55-291a-48d9-aa26-fad3902ae583",
+   "slug": "urbanglide-100-evo",
+   "nom": "Urbanglide 100 Evo",
+   "photos": 5,
+   "lignes": [
+    {
+     "pos": 2,
+     "avant": 0.22,
+     "verdict": "SOURCE_INTROUVABLE",
+     "ecart": 36
+    }
+   ],
+   "aEcrire": false
+  },
+  {
+   "id": "b8f3a214-de13-475e-a804-112b4bbb611f",
+   "slug": "joyor-c10",
+   "nom": "Joyor C10",
+   "photos": 5,
+   "lignes": [
+    {
+     "pos": 2,
+     "avant": 0.218,
+     "verdict": "SOURCE_INTROUVABLE",
+     "ecart": 65
+    }
+   ],
+   "aEcrire": false
+  },
+  {
+   "id": "d5eb0e25-9c73-4f0f-9d5c-b1233e156069",
+   "slug": "punk-rider-pro",
+   "nom": "Punk Rider Pro",
+   "photos": 4,
+   "lignes": [
+    {
+     "pos": 1,
+     "avant": 0.207,
+     "verdict": "SOURCE_INTROUVABLE",
+     "ecart": 38
+    }
+   ],
+   "aEcrire": false
+  },
+  {
+   "id": "4fb8c587-311c-4249-a091-eb08e9999bd2",
+   "slug": "ninebot-max-g2",
+   "nom": "Ninebot Max G2",
+   "photos": 4,
+   "lignes": [
+    {
+     "pos": 3,
+     "avant": 0.203,
+     "verdict": "SOURCE_INTROUVABLE",
+     "ecart": 999
+    },
+    {
+     "pos": 4,
+     "avant": 0.176,
+     "verdict": "SOURCE_INTROUVABLE",
+     "ecart": 45
+    }
+   ],
+   "aEcrire": false
+  },
+  {
+   "id": "651d6853-642a-46e7-a437-bbbc1bef898c",
+   "slug": "urbanglide-urbanride-85-plus",
+   "nom": "Urbanglide Urbanride 85+",
+   "photos": 5,
+   "lignes": [
+    {
+     "pos": 4,
+     "avant": 0.198,
+     "verdict": "SOURCE_INTROUVABLE",
+     "ecart": 999
+    }
+   ],
+   "aEcrire": false
+  },
+  {
+   "id": "24bcc9be-d1ce-4d3f-84a7-716ca81b4836",
+   "slug": "hikerboy-foxtrot-plus",
+   "nom": "Hikerboy Foxtrot Plus",
+   "photos": 5,
+   "lignes": [
+    {
+     "pos": 3,
+     "avant": 0.198,
+     "verdict": "SOURCE_INTROUVABLE",
+     "ecart": 80
+    }
+   ],
+   "aEcrire": false
+  },
+  {
+   "id": "35600319-a72d-44bb-8bf0-b80ea98e0099",
+   "slug": "ninebot-e3",
+   "nom": "Ninebot E3",
+   "photos": 3,
+   "lignes": [
+    {
+     "pos": 1,
+     "avant": 0.181,
+     "verdict": "SOURCE_INTROUVABLE",
+     "ecart": 48
+    },
+    {
+     "pos": 2,
+     "avant": 0.195,
+     "verdict": "SOURCE_INTROUVABLE",
+     "ecart": 999
+    },
+    {
+     "pos": 3,
+     "avant": 0.188,
+     "verdict": "SOURCE_INTROUVABLE",
+     "ecart": 999
+    }
+   ],
+   "aEcrire": false
+  },
+  {
+   "id": "eb4c99de-95ed-43bf-8a91-737b8c8dd774",
+   "slug": "iscooter-i9-pro",
+   "nom": "iScooter i9 Pro",
+   "photos": 4,
+   "lignes": [
+    {
+     "pos": 2,
+     "avant": 0.194,
+     "verdict": "SOURCE_INTROUVABLE",
+     "ecart": 999
+    }
+   ],
+   "aEcrire": false
+  },
+  {
+   "id": "18fa9f1a-9dab-4e2b-9416-501582545b69",
+   "slug": "inokim-mini-2",
+   "nom": "Inokim Mini 2",
+   "photos": 5,
+   "lignes": [
+    {
+     "pos": 3,
+     "avant": 0.19,
+     "verdict": "SOURCE_INTROUVABLE",
+     "ecart": 72
+    },
+    {
+     "pos": 4,
+     "avant": 0.168,
+     "verdict": "SOURCE_INTROUVABLE",
+     "ecart": 84
+    }
+   ],
+   "aEcrire": false
+  },
+  {
+   "id": "19d9217a-017c-4ca1-bc22-2569d6562fce",
+   "slug": "ninebot-f3-pro-e",
+   "nom": "Ninebot F3 Pro E",
+   "photos": 3,
+   "lignes": [
+    {
+     "pos": 1,
+     "avant": 0.158,
+     "verdict": "SOURCE_INTROUVABLE",
+     "ecart": 999
+    },
+    {
+     "pos": 2,
+     "avant": 0.182,
+     "verdict": "SOURCE_INTROUVABLE",
+     "ecart": 999
+    },
+    {
+     "pos": 3,
+     "avant": 0.179,
+     "verdict": "SOURCE_INTROUVABLE",
+     "ecart": 999
+    }
+   ],
+   "aEcrire": false
+  },
+  {
+   "id": "100160d6-bde3-448e-9f99-4a200ffe7b39",
+   "slug": "kingsong-n14-max",
+   "nom": "Kingsong N14 Max",
+   "photos": 5,
+   "lignes": [
+    {
+     "pos": 1,
+     "avant": 0.18,
+     "verdict": "SOURCE_INTROUVABLE",
+     "ecart": 999
+    },
+    {
+     "pos": 2,
+     "avant": 0.053,
+     "verdict": "ERREUR",
+     "err": "Resource /models/large not found. Ensure that the config.publicPath is configured correctly."
+    },
+    {
+     "pos": 3,
+     "avant": 0.043,
+     "verdict": "SOURCE_INTROUVABLE",
+     "ecart": 999
+    },
+    {
+     "pos": 4,
+     "avant": 0.07,
+     "verdict": "SOURCE_INTROUVABLE",
+     "ecart": 999
+    }
+   ],
+   "aEcrire": false
+  },
+  {
+   "id": "d4df9b63-797b-4d65-aa0c-fbc5a521e46b",
+   "slug": "xiaomi-electric-scooter-6",
+   "nom": "Xiaomi Electric Scooter 6",
+   "photos": 5,
+   "lignes": [
+    {
+     "pos": 3,
+     "avant": 0.179,
+     "verdict": "SOURCE_INTROUVABLE",
+     "ecart": 35
+    }
+   ],
+   "aEcrire": false
+  },
+  {
+   "id": "c36cfb80-4e76-4005-a383-863173a490c4",
+   "slug": "aprilia-esr1",
+   "nom": "Aprilia eSR1",
+   "photos": 5,
+   "lignes": [
+    {
+     "pos": 2,
+     "avant": 0.179,
+     "verdict": "SOURCE_INTROUVABLE",
+     "ecart": 39
+    }
+   ],
+   "aEcrire": false
+  }
+ ]
+}
