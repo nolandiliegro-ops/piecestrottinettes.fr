@@ -188,7 +188,7 @@ const Stage = ({ s, scooters, onSelect }: { s: Skin; scooters: ScooterHero[]; on
   const onStage = s.stage === CARBON || s.stage === "#262626" || s.stage === GREEN;
   const spec = [cur.max_speed_kmh && `${cur.max_speed_kmh} km/h`, cur.range_km && `${cur.range_km} km`, cur.power_watts && `${cur.power_watts} W`].filter(Boolean) as string[];
   return (
-    <div className="relative w-full pt-[150px] xl:pt-[170px]">
+    <div className="relative w-full pt-[80px] xl:pt-[90px]">
       <div className="relative px-8 pt-[330px] xl:pt-[380px] pb-7" style={{ background: s.stage, clipPath: cut(26) }}>
         <div className="flex items-end justify-between gap-4">
           <button type="button" onClick={() => onSelect(cur.slug)} className="text-left min-w-0">
@@ -215,7 +215,7 @@ const Stage = ({ s, scooters, onSelect }: { s: Skin; scooters: ScooterHero[]; on
           )}
         </div>
       </div>
-      <button type="button" onClick={() => onSelect(cur.slug)} aria-label={`Voir ${cur.name}`} className="absolute inset-x-0 top-0 h-[470px] xl:h-[540px] flex items-end justify-center">
+      <button type="button" onClick={() => onSelect(cur.slug)} aria-label={`Voir ${cur.name}`} className="absolute inset-x-0 top-0 h-[400px] xl:h-[460px] flex items-end justify-center">
         {s.stage !== GREEN && <span aria-hidden className="absolute inset-x-10 bottom-0 top-[40%]" style={{ background: "radial-gradient(closest-side, rgba(255,255,255,0.22), rgba(255,255,255,0) 100%)" }} />}
         <AnimatePresence mode="wait">
           <motion.div key={cur.id} className="h-full w-full flex items-end justify-center"
@@ -253,7 +253,7 @@ const HeroAtelier = (p: Props) => {
   }
 
   return (
-    <section data-hero-variant={p.variant} className="relative px-4 pt-8 pb-12 lg:pt-14 lg:pb-16" style={{ background: s.bg }}>
+    <section data-hero-variant={p.variant} className="relative px-4 pt-8 pb-12 lg:pt-6 lg:pb-16" style={{ background: s.bg }}>
       <style>{`.pt-mini-scroll::-webkit-scrollbar{display:none}`}</style>
       <div className="mx-auto max-w-6xl">
         <div className="lg:grid lg:grid-cols-[0.9fr_1.1fr] lg:gap-12 lg:items-end">
