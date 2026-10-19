@@ -374,7 +374,6 @@ const ScooterPageVariants = ({ style, scooter, allScooters, partsCount, showTag 
   const accent = getBrandColors(scooter.brand?.name).accent;
   const brand = scooter.brand?.name ?? "";
   const specs = useSpecs(scooter);
-  const seoFiche = useScooterFiche(scooter.slug);
   const gamme = allScooters.filter((s) => brand && s.brand_name === brand);
   const tag = !showTag ? <></> : (
     <div className="fixed bottom-3 left-3 z-[60] rounded-md px-2 py-1 text-sm font-bold uppercase tracking-wider text-white pointer-events-none" style={{ backgroundColor: "rgba(26,26,26,0.75)", fontFamily: FONT }}>
@@ -536,6 +535,7 @@ const ScooterPageVariants = ({ style, scooter, allScooters, partsCount, showTag 
 };
 
 const PitWall = ({ scooter, specs, gamme, accent, brand, partsCount, tag, gammeBelow = false, all = [], afterHero, ficheMode = "tabs" }: { scooter: ScooterDetail; specs: Spec[]; gamme: ShowroomCarouselScooter[]; accent: string; brand: string; partsCount: number; tag: JSX.Element; gammeBelow?: boolean; all?: ShowroomCarouselScooter[]; afterHero?: ReactNode; ficheMode?: "tabs" | "long" | "slot" }) => {
+  const seoFiche = useScooterFiche(scooter.slug);
   const tabs = [
     { k: "fiche", label: "Fiche" },
     ...(scooter.description ? [{ k: "pres", label: "Présentation" }] : []),
