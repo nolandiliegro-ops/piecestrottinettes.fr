@@ -24,7 +24,9 @@ mkdirSync(OUT, { recursive: true });
 const LIMIT = (() => { const i = process.argv.indexOf('--limit'); return i > 0 ? Number(process.argv[i + 1]) : Infinity; })();
 const PRINCIPALE = process.argv.includes('--principale');
 
-const SEUILS = { fond: 0.05, voile: 0.06, ilots: 2, liseré: 0.25 };
+// 19/10 calibré sur planche : le « voile » (part de pixels semi-transparents) ne discrimine pas sur un objet fin
+// (7-13 % sur des détourages propres). Le vrai défaut = FANTÔMES : semi-transparents à plus de 2 px de la silhouette opaque.
+const SEUILS = { fond: 0.05, fantome: 0.02, ilots: 2, liseré: 0.25 };
 
 const client = readFileSync(resolve(ROOT, 'src/integrations/supabase/client.ts'), 'utf-8');
 const SB_URL = (client.match(/VITE_SUPABASE_URL\s*\|\|\s*"([^"]+)"/) || [])[1];
@@ -85,11 +87,21 @@ async function mesure(buf) {
       const k = i * 4; if (data[k] > 225 && data[k + 1] > 225 && data[k + 2] > 225 && data[k + 3] > 230) blanc++;
     }
   }
-  const m = { fond: transp / N, voile: sil ? semi / sil : 0, ilots, liseré: bord ? blanc / bord : 0 };
+  // fantômes : pixels visibles (alpha 16..230) à plus de 2 px de tout pixel opaque (alpha > 230)
+  const opaque = new Uint8Array(N); for (let i = 0; i < N; i++) if (A(i) > 230) opaque[i] = 1;
+  const pres = new Uint8Array(N); const R = 2;
+  for (let y = 0; y < H; y++) for (let x = 0; x < W; x++) {
+    if (!opaque[y * W + x]) continue;
+    for (let dy = -R; dy <= R; dy++) for (let dx = -R; dx <= R; dx++) {
+      const yy = y + dy, xx = x + dx; if (yy >= 0 && yy < H && xx >= 0 && xx < W) pres[yy * W + xx] = 1;
+    }
+  }
+  let fant = 0, opq = 0; for (let i = 0; i < N; i++) { if (opaque[i]) opq++; const a = A(i); if (a >= 16 && a <= 230 && !pres[i]) fant++; }
+  const m = { fond: transp / N, voile: sil ? semi / sil : 0, fantome: opq ? fant / opq : 0, ilots, liseré: bord ? blanc / bord : 0 };
   const raisons = [];
   if (m.fond < SEUILS.fond) raisons.push('pas détourée');
   else {
-    if (m.voile > SEUILS.voile) raisons.push(`voile ${Math.round(m.voile * 100)} %`);
+    if (m.fantome > SEUILS.fantome) raisons.push(`fantômes ${(m.fantome * 100).toFixed(1)} %`);
     if (m.ilots >= SEUILS.ilots) raisons.push(`${m.ilots} débris`);
     if (m.liseré > SEUILS.liseré) raisons.push(`liseré blanc ${Math.round(m.liseré * 100)} %`);
   }
