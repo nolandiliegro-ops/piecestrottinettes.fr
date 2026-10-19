@@ -114,7 +114,7 @@ const useAllPublishedParts = (enabled: boolean, slugs: string[] = []) =>
             ? `id, name, slug, price, image_url, images, stock_quantity, is_featured,
            created_at, category:categories!inner(id, name, slug, icon, color)`
             : `id, name, slug, price, image_url, images, stock_quantity, is_featured,
-           created_at, category:categories(id, name, slug, icon, color)`
+           created_at, fitment_specs, category:categories(id, name, slug, icon, color)`
         )
         .eq("published", true);
       if (slugs.length) req = req.in("category.slug", slugs);
@@ -126,7 +126,12 @@ const useAllPublishedParts = (enabled: boolean, slugs: string[] = []) =>
         .limit(slugs.length ? 150 : 1000);
       if (error) throw error;
 
-      return (data || []).map((p) => ({
+      type Row = {
+        id: string; name: string; slug: string; price: number | null; image_url: string | null;
+        images: unknown; stock_quantity: number | null; is_featured: boolean | null; created_at: string;
+        category: unknown; fitment_specs?: { brake_caliper?: unknown } | null;
+      };
+      return ((data || []) as unknown as Row[]).map((p) => ({
         id: p.id,
         name: p.name,
         slug: p.slug,
@@ -137,6 +142,8 @@ const useAllPublishedParts = (enabled: boolean, slugs: string[] = []) =>
         is_featured: p.is_featured,
         created_at: p.created_at,
         category: normalizeCategory(p.category),
+        // 19/10 : familles d'étrier, lues seulement pour écarter les plaquettes vélo de la rangée « Tout ».
+        calipers: Array.isArray(p.fitment_specs?.brake_caliper) ? (p.fitment_specs!.brake_caliper as string[]) : null,
       }));
     },
     enabled,
@@ -168,6 +175,28 @@ const useAllPublishedCategorySlugs = (enabled: boolean) =>
     },
     enabled,
     staleTime: 5 * 60 * 1000,
+  });
+
+/**
+ * 19/10 (Nolan) : familles d'étrier réellement montées sur une trottinette publiée. Une plaquette dont
+ * AUCUNE famille n'y figure (Sram vélo, Shimano XTR, Hope, Magura 9.C…) reste en vente mais ne s'affiche
+ * pas dans la rangée « Tout » de l'accueil. Lu en base, jamais une liste en dur.
+ */
+const useScooterCaliperFamilies = (enabled: boolean) =>
+  useQuery<Set<string>, Error>({
+    queryKey: ["scooter-caliper-families"],
+    queryFn: async () => {
+      const { data, error } = await supabase
+        .from("scooter_models")
+        .select("caliper_family")
+        .eq("published", true)
+        .not("caliper_family", "is", null)
+        .limit(1000);
+      if (error) throw error;
+      return new Set((data || []).map((r) => String(r.caliper_family)));
+    },
+    enabled,
+    staleTime: 30 * 60 * 1000,
   });
 
 const buildGroups = (
@@ -240,6 +269,7 @@ export const useShopByCategoryDataV2 = (
     selectedSlugList
   );
   const { data: allSlugs } = useAllPublishedCategorySlugs(!hasScooter);
+  const { data: scooterCalipers } = useScooterCaliperFamilies(!hasScooter);
 
   return useMemo<ShopByCategoryDataV2>(() => {
     // Determine the pool of parts in the current scope (scooter or all)
@@ -280,7 +310,14 @@ export const useShopByCategoryDataV2 = (
     };
     const filteredParts =
       activeSlugsSet.size === 0
-        ? interleave(scopedParts)
+        ? interleave(
+            hasScooter || !scooterCalipers
+              ? scopedParts
+              : scopedParts.filter((p) => {
+                  const cal = (p as CompatiblePartRich & { calipers?: string[] | null }).calipers;
+                  return !cal || cal.length === 0 || cal.some((c) => scooterCalipers.has(c));
+                })
+          )
         : scopedParts.filter((p) => p.category && activeSlugsSet.has(p.category.slug));
 
     let mode: ShopMode;
@@ -307,6 +344,7 @@ export const useShopByCategoryDataV2 = (
     compatParts,
     allParts,
     allSlugs,
+    scooterCalipers,
     selectedCategories,
     catsLoading,
     compatLoading,
