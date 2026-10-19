@@ -2,11 +2,12 @@ import { useMemo, useState } from 'react';
 import { useQuery, useMutation, useQueryClient } from '@tanstack/react-query';
 import {
   Check, X, ChevronLeft, ChevronRight, Search, ImageOff, Loader2,
-  Disc, Plug, CircleDot, Gauge, LayoutList, Filter,
+  Disc, Plug, CircleDot, Gauge, LayoutList, Filter, Plus, ArrowDownWideNarrow,
 } from 'lucide-react';
 import { supabase } from '@/integrations/supabase/client';
 import { Input } from '@/components/ui/input';
 import { Button } from '@/components/ui/button';
+import { Dialog, DialogContent, DialogHeader, DialogTitle } from '@/components/ui/dialog';
 import { toast } from 'sonner';
 import { cn } from '@/lib/utils';
 
@@ -74,6 +75,21 @@ const useStudioScooters = () => useQuery({
   },
 });
 
+interface CompatCount { scooter_model_id: string; total: number; to_validate: number }
+
+/** Compteurs par trottinette — RPC créée le 19/10 (garde admin), 1 requête pour tout le rail. */
+const useCompatCounts = () => useQuery({
+  queryKey: ['studio-compat-counts'],
+  staleTime: 60_000,
+  queryFn: async (): Promise<Map<string, CompatCount>> => {
+    const { data, error } = await (supabase.rpc as CallableFunction)('admin_compat_counts');
+    if (error) throw error;
+    const map = new Map<string, CompatCount>();
+    (data as CompatCount[] | null)?.forEach(r => map.set(r.scooter_model_id, { ...r, total: Number(r.total), to_validate: Number(r.to_validate) }));
+    return map;
+  },
+});
+
 const useScooterCompat = (scooterId: string | null) => useQuery({
   queryKey: ['studio-compat', scooterId],
   enabled: !!scooterId,
@@ -98,9 +114,9 @@ const PartCompatCard = ({
   const c = CONF[conf];
   return (
     <div className="admin-glass-card rounded-2xl overflow-hidden flex flex-col">
-      <div className="relative aspect-square bg-white flex items-center justify-center">
+      <div className="relative aspect-[4/3] bg-white flex items-center justify-center">
         {part.image_url ? (
-          <img src={part.image_url} alt={part.name} loading="lazy" className="w-full h-full object-contain p-3" />
+          <img src={part.image_url} alt={part.name} loading="lazy" className="w-full h-full object-contain p-2" />
         ) : (
           <ImageOff className="w-8 h-8 text-[hsl(var(--admin-text-muted))]" />
         )}
@@ -166,14 +182,24 @@ const CompatStudio = ({ onClassic }: { onClassic: () => void }) => {
   const [search, setSearch] = useState('');
   const [confFilter, setConfFilter] = useState<'all' | 'to_validate' | Confidence>('to_validate');
   const [busyPart, setBusyPart] = useState<string | null>(null);
+  const [railSort, setRailSort] = useState<'az' | 'to_validate'>('az');
+  const [addOpen, setAddOpen] = useState(false);
+  const [addSearch, setAddSearch] = useState('');
+  const { data: counts_by_scooter } = useCompatCounts();
 
   const scooter = scooters.find(s => s.id === selectedId) ?? null;
   const { data: rows = [], isLoading: loadingCompat } = useScooterCompat(selectedId);
 
   const filteredScooters = useMemo(() => {
     const q = search.toLowerCase();
-    return scooters.filter(s => s.name.toLowerCase().includes(q) || (s.brand?.name ?? '').toLowerCase().includes(q));
-  }, [scooters, search]);
+    const list = scooters.filter(s => s.name.toLowerCase().includes(q) || (s.brand?.name ?? '').toLowerCase().includes(q));
+    if (railSort === 'to_validate') {
+      const tv = (id: string) => counts_by_scooter?.get(id)?.to_validate ?? 0;
+      const tot = (id: string) => counts_by_scooter?.get(id)?.total ?? 0;
+      return [...list].sort((a, b) => tv(b.id) - tv(a.id) || tot(a.id) - tot(b.id) || a.name.localeCompare(b.name, 'fr'));
+    }
+    return list;
+  }, [scooters, search, railSort, counts_by_scooter]);
 
   const idx = scooter ? filteredScooters.findIndex(s => s.id === scooter.id) : -1;
   const goto = (delta: number) => {
@@ -207,6 +233,7 @@ const CompatStudio = ({ onClassic }: { onClassic: () => void }) => {
 
   const invalidate = () => {
     qc.invalidateQueries({ queryKey: ['studio-compat', selectedId] });
+    qc.invalidateQueries({ queryKey: ['studio-compat-counts'] });
   };
 
   const validateOne = useMutation({
@@ -254,6 +281,33 @@ const CompatStudio = ({ onClassic }: { onClassic: () => void }) => {
     onError: (e: Error) => toast.error(`Échec : ${e.message}`),
   });
 
+  const { data: addResults = [], isFetching: addSearching } = useQuery({
+    queryKey: ['studio-add-search', addSearch],
+    enabled: addOpen && addSearch.trim().length >= 2,
+    queryFn: async () => {
+      const { data, error } = await supabase
+        .from('parts')
+        .select('id, name, image_url, price, published, sku, category:categories(name)')
+        .or(`name.ilike.%${addSearch.trim()}%,sku.ilike.%${addSearch.trim()}%`)
+        .order('name')
+        .limit(24);
+      if (error) throw error;
+      return data || [];
+    },
+  });
+
+  const addPart = useMutation({
+    mutationFn: async (partId: string) => {
+      const { error } = await supabase
+        .from('part_compatibility')
+        .insert({ part_id: partId, scooter_model_id: selectedId as string, auto_suggested: false, confidence_level: 'validated' });
+      if (error) throw error;
+    },
+    onSettled: invalidate,
+    onSuccess: () => toast.success('Pièce reliée et validée'),
+    onError: (e: Error) => toast.error(e.message.includes('duplicate') ? 'Déjà reliée à ce modèle' : `Échec : ${e.message}`),
+  });
+
   /* ── Rendu ── */
 
   return (
@@ -268,6 +322,26 @@ const CompatStudio = ({ onClassic }: { onClassic: () => void }) => {
             placeholder="Trottinette, marque…"
             className="pl-9 bg-white border-[hsl(var(--admin-border))]"
           />
+        </div>
+        <div className="flex items-center gap-1.5">
+          {([
+            { id: 'az', label: 'A → Z' },
+            { id: 'to_validate', label: 'À trier d\'abord' },
+          ] as const).map(o => (
+            <button
+              key={o.id}
+              onClick={() => setRailSort(o.id)}
+              className={cn(
+                'flex items-center gap-1 px-2.5 py-1.5 rounded-full text-xs font-semibold border',
+                railSort === o.id
+                  ? 'bg-[hsl(var(--admin-accent))] text-white border-transparent'
+                  : 'bg-white text-[hsl(var(--admin-text-muted))] border-[hsl(var(--admin-border))]'
+              )}
+            >
+              {o.id === 'to_validate' && <ArrowDownWideNarrow className="w-3 h-3" />}
+              {o.label}
+            </button>
+          ))}
         </div>
         <div className="admin-glass-card rounded-2xl overflow-hidden max-h-[280px] lg:max-h-[calc(100vh-240px)] overflow-y-auto">
           {loadingScooters ? (
@@ -292,7 +366,26 @@ const CompatStudio = ({ onClassic }: { onClassic: () => void }) => {
                   {s.brand?.name ?? '—'}{!s.published && ' · brouillon'}
                 </p>
               </div>
-              {s.id === selectedId && <ChevronRight className="w-4 h-4 text-[hsl(var(--admin-accent))] shrink-0" />}
+              {(() => {
+                const c = counts_by_scooter?.get(s.id);
+                const total = c?.total ?? 0;
+                const tv = c?.to_validate ?? 0;
+                return (
+                  <span className="flex items-center gap-1 shrink-0">
+                    <span className={cn(
+                      'min-w-[22px] h-[20px] px-1 rounded-full text-[11px] font-bold flex items-center justify-center',
+                      total === 0 ? 'bg-red-100 text-red-700' : 'bg-[hsl(var(--al15))] text-[hsl(var(--admin-text-muted))]'
+                    )}>
+                      {total}
+                    </span>
+                    {tv > 0 && (
+                      <span className="min-w-[22px] h-[20px] px-1 rounded-full bg-orange-500 text-white text-[11px] font-bold flex items-center justify-center">
+                        {tv}
+                      </span>
+                    )}
+                  </span>
+                );
+              })()}
             </button>
           ))}
         </div>
@@ -389,6 +482,9 @@ const CompatStudio = ({ onClassic }: { onClassic: () => void }) => {
                     Tout valider l'affichage
                   </Button>
                 )}
+                <Button variant="outline" onClick={() => { setAddOpen(true); setAddSearch(''); }} className="gap-2 bg-white border-[hsl(var(--admin-border))] min-h-[40px]">
+                  <Plus className="w-4 h-4" /> Ajouter une pièce
+                </Button>
                 <Button variant="outline" onClick={onClassic} className="gap-2 bg-white border-[hsl(var(--admin-border))] min-h-[40px]">
                   <LayoutList className="w-4 h-4" /> Vue classique
                 </Button>
@@ -411,7 +507,7 @@ const CompatStudio = ({ onClassic }: { onClassic: () => void }) => {
                     <h3 className="text-sm font-black uppercase tracking-wide text-[hsl(var(--admin-text))]">{cat}</h3>
                     <span className="text-xs text-[hsl(var(--admin-text-muted))]">{catRows.length} pièce{catRows.length > 1 ? 's' : ''}</span>
                   </div>
-                  <div className="grid grid-cols-2 sm:grid-cols-3 xl:grid-cols-4 gap-3">
+                  <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 2xl:grid-cols-6 gap-2.5">
                     {catRows.map(r => (
                       <PartCompatCard
                         key={r.part_id}
@@ -425,6 +521,56 @@ const CompatStudio = ({ onClassic }: { onClassic: () => void }) => {
                 </div>
               ))
             )}
+            {/* Ajouter une pièce à ce modèle */}
+            <Dialog open={addOpen} onOpenChange={setAddOpen}>
+              <DialogContent className="bg-[hsl(var(--al10))] border-[hsl(var(--admin-border))] max-w-2xl">
+                <DialogHeader>
+                  <DialogTitle className="font-display tracking-wide text-[hsl(var(--admin-text))]">
+                    RELIER UNE PIÈCE — {scooter.name.toUpperCase()}
+                  </DialogTitle>
+                </DialogHeader>
+                <div className="relative">
+                  <Search className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-[hsl(var(--admin-text-muted))]" />
+                  <Input
+                    autoFocus
+                    value={addSearch}
+                    onChange={e => setAddSearch(e.target.value)}
+                    placeholder="Nom ou SKU de la pièce (2 lettres min.)…"
+                    className="pl-9 bg-white border-[hsl(var(--admin-border))]"
+                  />
+                </div>
+                <div className="max-h-[50vh] overflow-y-auto space-y-1">
+                  {addSearching && <p className="text-sm text-[hsl(var(--admin-text-muted))] text-center py-4"><Loader2 className="w-4 h-4 animate-spin inline mr-2" />Recherche…</p>}
+                  {!addSearching && addSearch.trim().length >= 2 && addResults.length === 0 && (
+                    <p className="text-sm text-[hsl(var(--admin-text-muted))] text-center py-4">Aucune pièce trouvée</p>
+                  )}
+                  {addResults.map(pt => {
+                    const already = rows.some(r => r.part_id === pt.id);
+                    return (
+                      <div key={pt.id} className="flex items-center gap-3 p-2 rounded-xl bg-white border border-[hsl(var(--admin-border))]">
+                        <div className="w-11 h-11 rounded-lg bg-white border border-[hsl(var(--admin-border))] flex items-center justify-center overflow-hidden shrink-0">
+                          {pt.image_url ? <img src={pt.image_url} alt="" className="w-full h-full object-contain p-0.5" /> : <ImageOff className="w-4 h-4 text-[hsl(var(--admin-text-muted))]" />}
+                        </div>
+                        <div className="min-w-0 flex-1">
+                          <p className="text-sm font-semibold truncate text-[hsl(var(--admin-text))]">{pt.name}</p>
+                          <p className="text-[11px] text-[hsl(var(--admin-text-muted))] truncate">
+                            {(pt.category as { name: string } | null)?.name ?? '—'}{pt.sku ? ` · ${pt.sku}` : ''}{!pt.published && ' · dépubliée'}
+                          </p>
+                        </div>
+                        <Button
+                          size="sm"
+                          disabled={already || addPart.isPending}
+                          onClick={() => addPart.mutate(pt.id)}
+                          className={cn('min-h-[40px]', already ? 'bg-[hsl(var(--al15))] text-[hsl(var(--admin-text-muted))]' : 'bg-[hsl(var(--admin-accent))] hover:opacity-90 text-white')}
+                        >
+                          {already ? 'Déjà reliée' : <><Plus className="w-4 h-4 mr-1" />Relier</>}
+                        </Button>
+                      </div>
+                    );
+                  })}
+                </div>
+              </DialogContent>
+            </Dialog>
           </>
         )}
       </section>
