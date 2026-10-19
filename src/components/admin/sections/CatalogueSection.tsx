@@ -4,7 +4,7 @@ import PartsManager from '../PartsManager';
 import ScootersManager from '../ScootersManager';
 import BrandsManager from '../BrandsManager';
 import CategoriesManager from '../CategoriesManager';
-import CompatibilityManager from '../CompatibilityManager';
+import CompatTab from './CompatTab';
 import CatalogueTriage from '../CatalogueTriage';
 
 /** Catalogue : tout ce qui décrit les produits. Les bots d'import vivent dans /admin/bots. */
@@ -18,7 +18,7 @@ const CatalogueSection = () => (
       { id: 'trottinettes', label: 'Trottinettes', icon: Bike, content: <ScootersManager /> },
       { id: 'marques', label: 'Marques', icon: Tag, content: <BrandsManager /> },
       { id: 'categories', label: 'Catégories', icon: FolderTree, content: <CategoriesManager /> },
-      { id: 'compat', label: 'Compatibilités', icon: Link2, content: <CompatibilityManager /> },
+      { id: 'compat', label: 'Compatibilités', icon: Link2, content: <CompatTab /> },
       { id: 'tri', label: 'Tri', icon: Layers, content: <CatalogueTriage /> },
     ]}
   />
