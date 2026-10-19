@@ -130,19 +130,21 @@ async function main() {
       const env = Object.fromEntries(readFileSync(resolve(ROOT, '.env'), 'utf-8').split('\n').map((l) => l.match(/^([A-Z_]+)=["']?([^"'\r\n]*)/)).filter(Boolean).map((m) => [m[1], m[2]]));
       // Photos non recadrées de la même pièce : renvoyées telles quelles, converties en PNG (la fonction les range en .png).
       const bufs = await Promise.all(photos.map((f) => (f.besoin ? f.out : sharp(f.buf, { failOn: 'none' }).png().toBuffer())));
+      // 19/10 : UNE photo par envoi (le 1er remplace la galerie, les suivants s'ajoutent). Avant : 4 par envoi, et la
+      // fonction en a accepté une partie seulement sur 2 pièces (3 photos → 1 et 2), restaurées depuis la sauvegarde.
+      // Un échec en cours de galerie est signalé ÉCHEC_PARTIEL : la pièce est à restaurer depuis _bak_images_recadrage_1910.
       let ok = true;
-      for (let k = 0; k < bufs.length; k += 4) {
-        const lot = bufs.slice(k, k + 4).map((b) => b.toString('base64'));
+      for (let k = 0; k < bufs.length; k++) {
         const res = await fetch(`${env.VITE_SUPABASE_URL}/functions/v1/process-images`, {
           method: 'POST',
           headers: { 'Content-Type': 'application/json', 'x-admin-secret': env.ADMIN_BULK_SECRET },
-          body: JSON.stringify({ entity_type: 'part', entity_id: p.id, images_base64: lot, alt_base: p.name, reset: k === 0 }),
+          body: JSON.stringify({ entity_type: 'part', entity_id: p.id, images_base64: [bufs[k].toString('base64')], alt_base: p.name, reset: k === 0 }),
         });
         const t = await res.text();
         const nOk = (t.match(/"processed_count"\s*:\s*(\d+)/) || [])[1];
-        if (!res.ok || !/"success"\s*:\s*true/.test(t) || Number(nOk) !== lot.length) {
+        if (!res.ok || !/"success"\s*:\s*true/.test(t) || Number(nOk) !== 1) {
           ok = false;
-          console.log(`::warning title=ÉCRITURE ${p.slug}::HTTP ${res.status} ${t.slice(0, 140)}`);
+          console.log(`::warning title=${k === 0 ? 'ÉCHEC' : 'ÉCHEC_PARTIEL'} ${p.slug}::photo ${k + 1}/${bufs.length} · ${(bufs[k].length / 1048576).toFixed(1)} Mo · HTTP ${res.status} ${t.slice(0, 140)}`);
           break;
         }
       }
