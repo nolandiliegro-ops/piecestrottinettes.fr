@@ -167,8 +167,8 @@ export interface MatchedRow {
 /**
  * Roue : tire_family identique EXIGÉ (high comme partial, NULL trotte = pas de
  * match). Ø jante ∈ rim_diameters exigé. Section : les deux côtés renseignés
- * → high ssi le code trotte ∈ tire_sections (sinon INCOMPATIBLE, pas partial) ;
- * un des deux côtés absent → partial medium (seul medium acté).
+ * → high ssi le code trotte ∈ tire_sections (sinon INCOMPATIBLE) ;
+ * un des deux côtés absent → AUCUNE ligne (19/10/2026, fin du partial roue).
  */
 export function matchTireScooters(
   spec: { family: string; rimDiameters: string[]; tireSections?: string[] | null },
@@ -179,20 +179,16 @@ export function matchTireScooters(
   for (const s of scooters) {
     if (s.tire_family !== spec.family) continue;
     if (!s.rim_diameter_code || !spec.rimDiameters.includes(s.rim_diameter_code)) continue;
-    if (sections && s.tire_section_code) {
-      if (!sections.includes(s.tire_section_code)) continue;
-      out.push({
-        scooterId: s.id,
-        confidence: "high",
-        reason: `fitment:${spec.family} rim=${s.rim_diameter_code} section=${s.tire_section_code}`,
-      });
-    } else {
-      out.push({
-        scooterId: s.id,
-        confidence: "medium",
-        reason: `fitment:partial rim=${s.rim_diameter_code}`,
-      });
-    }
+    // 19/10/2026 (Nolan) : section EXIGÉE des deux côtés. L'ancien « partial
+    // rim seul » proposait toutes les tailles d'une jante (117 pneus 6.5 sur une
+    // 11 pouces) → supprimé. Section inconnue = aucune ligne (sélecteur client).
+    if (!sections || !s.tire_section_code) continue;
+    if (!sections.includes(s.tire_section_code)) continue;
+    out.push({
+      scooterId: s.id,
+      confidence: "high",
+      reason: `fitment:${spec.family} rim=${s.rim_diameter_code} section=${s.tire_section_code}`,
+    });
   }
   return out;
 }
@@ -223,7 +219,9 @@ export function matchSolidScooters(
     const widthBoth = Boolean(widths && s.rim_width_code);
     if (widthBoth && !widths!.includes(s.rim_width_code!)) continue;
     const sectionBoth = Boolean(sections && s.tire_section_code);
-    if (sectionBoth && !sections!.includes(s.tire_section_code!)) continue;
+    // 19/10/2026 : section exigée des deux côtés (même règle que le pneumatique).
+    if (!sectionBoth) continue;
+    if (!sections!.includes(s.tire_section_code!)) continue;
     if (widthBoth && sectionBoth) {
       out.push({
         scooterId: s.id,

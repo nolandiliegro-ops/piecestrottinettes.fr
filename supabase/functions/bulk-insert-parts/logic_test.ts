@@ -749,7 +749,7 @@ Deno.test("matchChargerScooters: voltage ET prise exigés ; prise inconnue → r
   assertEquals(rows.every((m) => m.confidence === "high"), true);
 });
 
-Deno.test("matchTireScooters: complet → high, section absente → partial, mismatch → rien", () => {
+Deno.test("matchTireScooters: complet → high, section absente → rien (19/10), mismatch → rien", () => {
   const scooters = [
     { id: "s-full", tire_family: "pneumatic", rim_diameter_code: "6.5", tire_section_code: "90/65" },
     { id: "s-null-section", tire_family: "pneumatic", rim_diameter_code: "6.5", tire_section_code: null },
@@ -761,16 +761,15 @@ Deno.test("matchTireScooters: complet → high, section absente → partial, mis
   const out = matchTireScooters({ family: "pneumatic", rimDiameters: ["6.5"], tireSections: ["90/65"] }, scooters);
   assertEquals(out, [
     { scooterId: "s-full", confidence: "high", reason: "fitment:pneumatic rim=6.5 section=90/65" },
-    { scooterId: "s-null-section", confidence: "medium", reason: "fitment:partial rim=6.5" },
   ]);
 });
 
-Deno.test("matchTireScooters: pièce sans sections → tout en partial medium", () => {
+Deno.test("matchTireScooters: pièce sans sections → aucune ligne (19/10)", () => {
   const out = matchTireScooters(
     { family: "pneumatic", rimDiameters: ["6"], tireSections: null },
     [{ id: "s1", tire_family: "pneumatic", rim_diameter_code: "6", tire_section_code: "10x3.00" }],
   );
-  assertEquals(out, [{ scooterId: "s1", confidence: "medium", reason: "fitment:partial rim=6" }]);
+  assertEquals(out, []);
 });
 
 Deno.test("matchTireScooters (pneumatic) ignore largeur et solid_conversion", () => {
@@ -795,12 +794,14 @@ Deno.test("matchSolidScooters: candidature — solid, conversion yes / no / NULL
     { id: "null-family", tire_family: null, rim_diameter_code: "6.5", tire_section_code: null },
     { id: "wrong-rim", tire_family: "solid", rim_diameter_code: "6", tire_section_code: null },
   ];
-  const out = matchSolidScooters({ rimDiameters: ["6.5"] }, scooters);
+  // 19/10 : section exigée des deux côtés → sans section, plus aucune ligne.
+  assertEquals(matchSolidScooters({ rimDiameters: ["6.5"] }, scooters), []);
+  const withSec = scooters.map((s) => ({ ...s, tire_section_code: "10x2.50" }));
+  const out = matchSolidScooters({ rimDiameters: ["6.5"], tireSections: ["10x2.50"] }, withSec);
   assertEquals(out.map((m) => m.scooterId), ["solid", "pneu-yes"]);
-  // Aucune largeur ni section d'aucun côté → medium, les deux clés manquantes nommées.
   for (const m of out) {
     assertEquals(m.confidence, "medium");
-    assertEquals(m.reason, "fitment:partial rim=6.5 width=? section=?");
+    assertEquals(m.reason, "fitment:partial rim=6.5 width=?");
   }
 });
 
@@ -827,56 +828,53 @@ Deno.test("matchSolidScooters: largeur ∈ / ∉ / absente d'un côté / absente
   );
 });
 
-Deno.test("matchSolidScooters: section — ∉ exclu, absente d'un côté → section=?", () => {
+Deno.test("matchSolidScooters: section — ∉ exclu, absente d'un côté → exclu (19/10)", () => {
   const spec = { rimDiameters: ["6.5"], rimWidths: ["44mm"], tireSections: ["10x2.50"] };
   const scooters = [
     { id: "wrong-section", tire_family: "solid", rim_diameter_code: "6.5", tire_section_code: "10x2.70", rim_width_code: "44mm" },
     { id: "no-section", tire_family: "solid", rim_diameter_code: "6.5", tire_section_code: null, rim_width_code: "44mm" },
     { id: "no-section-no-width", tire_family: "solid", rim_diameter_code: "6.5", tire_section_code: null, rim_width_code: null },
   ];
-  assertEquals(matchSolidScooters(spec, scooters), [
-    { scooterId: "no-section", confidence: "medium", reason: "fitment:partial rim=6.5 section=?" },
-    { scooterId: "no-section-no-width", confidence: "medium", reason: "fitment:partial rim=6.5 width=? section=?" },
-  ]);
-  // Pièce sans sections, trotte complète → section=? seul (largeur concordante).
+  // 19/10 : section absente d'un côté → exclu.
+  assertEquals(matchSolidScooters(spec, scooters), []);
   assertEquals(
     matchSolidScooters({ rimDiameters: ["6.5"], rimWidths: ["44mm"] }, [
       { id: "t", tire_family: "solid", rim_diameter_code: "6.5", tire_section_code: "10x2.50", rim_width_code: "44mm" },
     ]),
-    [{ scooterId: "t", confidence: "medium", reason: "fitment:partial rim=6.5 section=?" }],
+    [],
   );
 });
 
 // ─── Pneus pleins × rim_type (miroir du trigger demi-jante) ─────────────────
 
 const convertible = (rim_type: string | null) => ({
-  id: "conv", tire_family: "pneumatic", rim_diameter_code: "6.5", tire_section_code: null,
+  id: "conv", tire_family: "pneumatic", rim_diameter_code: "6.5", tire_section_code: "10x2.50",
   solid_conversion: "yes", rim_type,
 });
 const refusedDemi = new Set(["demi_jante"]);
 
 Deno.test("matchSolidScooters: rim_type demi_jante refusé → exclu", () => {
-  assertEquals(matchSolidScooters({ rimDiameters: ["6.5"] }, [convertible("demi_jante")], refusedDemi), []);
+  assertEquals(matchSolidScooters({ rimDiameters: ["6.5"], tireSections: ["10x2.50"] }, [convertible("demi_jante")], refusedDemi), []);
 });
 
 Deno.test("matchSolidScooters: rim_type monobloc non refusé → inclus", () => {
   assertEquals(
-    matchSolidScooters({ rimDiameters: ["6.5"] }, [convertible("monobloc")], refusedDemi).map((m) => m.scooterId),
+    matchSolidScooters({ rimDiameters: ["6.5"], tireSections: ["10x2.50"] }, [convertible("monobloc")], refusedDemi).map((m) => m.scooterId),
     ["conv"],
   );
 });
 
 Deno.test("matchSolidScooters: rim_type NULL → inclus (l'ignorance ne bloque pas)", () => {
   assertEquals(
-    matchSolidScooters({ rimDiameters: ["6.5"] }, [convertible(null)], refusedDemi).map((m) => m.scooterId),
+    matchSolidScooters({ rimDiameters: ["6.5"], tireSections: ["10x2.50"] }, [convertible(null)], refusedDemi).map((m) => m.scooterId),
     ["conv"],
   );
 });
 
 Deno.test("matchSolidScooters: sans 3e argument, demi_jante → inclus (rétro-compat)", () => {
   assertEquals(
-    matchSolidScooters({ rimDiameters: ["6.5"] }, [convertible("demi_jante")]),
-    [{ scooterId: "conv", confidence: "medium", reason: "fitment:partial rim=6.5 width=? section=?" }],
+    matchSolidScooters({ rimDiameters: ["6.5"], tireSections: ["10x2.50"] }, [convertible("demi_jante")]),
+    [{ scooterId: "conv", confidence: "medium", reason: "fitment:partial rim=6.5 width=?" }],
   );
 });
 
