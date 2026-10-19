@@ -30,15 +30,15 @@
  {
   "d": "www.wee-bot.com",
   "kind": "shopify",
-  "total": 7371,
+  "total": 7385,
   "gardes": 719,
   "err": null
  },
  {
   "d": "escootervision.eu",
   "kind": "shopify",
-  "total": 2935,
-  "gardes": 337,
+  "total": 2975,
+  "gardes": 341,
   "err": null
  },
  {
@@ -58,8 +58,8 @@
  {
   "d": "www.isinwheel.fr",
   "kind": "shopify",
-  "total": 319,
-  "gardes": 88,
+  "total": 323,
+  "gardes": 89,
   "err": null
  },
  {
@@ -114,7 +114,7 @@
  {
   "d": "iscooterglobal.com",
   "kind": "shopify",
-  "total": 547,
+  "total": 548,
   "gardes": 107,
   "err": null
  },
@@ -137,7 +137,7 @@
   "kind": null,
   "total": 0,
   "gardes": 0,
-  "err": "shopify:fetch failed woo:fetch failed"
+  "err": "shopify:500 woo:fetch failed"
  },
  {
   "d": "www.zwheel.fr",
@@ -190,6 +190,111 @@
  },
  {
   "d": "store.segway.com",
+  "kind": null,
+  "total": 0,
+  "gardes": 0,
+  "err": "shopify:404 woo:404"
+ },
+ {
+  "d": "www.pureelectric.com",
+  "kind": "shopify",
+  "total": 254,
+  "gardes": 24,
+  "err": null
+ },
+ {
+  "d": "naveetech.us",
+  "kind": "shopify",
+  "total": 68,
+  "gardes": 1,
+  "err": null
+ },
+ {
+  "d": "shop.niu.com",
+  "kind": "shopify",
+  "total": 74,
+  "gardes": 15,
+  "err": null
+ },
+ {
+  "d": "kingsongeurope.com",
+  "kind": "woo",
+  "total": 558,
+  "gardes": 56,
+  "err": null
+ },
+ {
+  "d": "zwheel-shop.com",
+  "kind": "woo",
+  "total": 897,
+  "gardes": 53,
+  "err": null
+ },
+ {
+  "d": "apolloscooters.co",
+  "kind": "shopify",
+  "total": 365,
+  "gardes": 31,
+  "err": null
+ },
+ {
+  "d": "engwe-bikes.com",
+  "kind": "shopify",
+  "total": 91,
+  "gardes": 0,
+  "err": null
+ },
+ {
+  "d": "www.soflow.com",
+  "kind": "woo",
+  "total": 19,
+  "gardes": 2,
+  "err": null
+ },
+ {
+  "d": "micro-mobility.com",
+  "kind": null,
+  "total": 0,
+  "gardes": 0,
+  "err": "shopify:404 woo:404"
+ },
+ {
+  "d": "eu.isinwheel.com",
+  "kind": null,
+  "total": 0,
+  "gardes": 0,
+  "err": "shopify:fetch failed woo:fetch failed"
+ },
+ {
+  "d": "www.kukirin.com",
+  "kind": null,
+  "total": 0,
+  "gardes": 0,
+  "err": "shopify:404 woo:404"
+ },
+ {
+  "d": "dyucycle.com",
+  "kind": "shopify",
+  "total": 48,
+  "gardes": 4,
+  "err": null
+ },
+ {
+  "d": "www.beasterscooter.com",
+  "kind": null,
+  "total": 0,
+  "gardes": 0,
+  "err": "shopify:403 woo:403"
+ },
+ {
+  "d": "www.inokim.com",
+  "kind": "shopify",
+  "total": 7,
+  "gardes": 0,
+  "err": null
+ },
+ {
+  "d": "www.e-twow.eu",
   "kind": null,
   "total": 0,
   "gardes": 0,
