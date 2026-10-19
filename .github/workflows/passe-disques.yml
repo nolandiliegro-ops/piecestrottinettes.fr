@@ -43,6 +43,7 @@ jobs:
         if: steps.garde.outputs.go == 'true'
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
         run: node scripts/agents/run-passes.mjs ../data
       - name: Publier

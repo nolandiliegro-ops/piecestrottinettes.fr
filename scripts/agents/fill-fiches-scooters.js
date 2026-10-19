@@ -30,7 +30,9 @@ const ROOT = resolve(__dirname, '../..');
 const args = process.argv.slice(2);
 const opt = (n, d = null) => { const i = args.indexOf(`--${n}`); return i !== -1 && args[i + 1] ? args[i + 1] : d; };
 const DATA = resolve(process.cwd(), opt('data-dir', 'extraction'));
-const MODEL = opt('model', 'claude-sonnet-5-5');
+const PROVIDER = opt('provider', 'gemini'); // 19/10 : Nolan refuse l'API Claude (coût) → Gemini, palier gratuit
+const MODEL = opt('model', PROVIDER === 'gemini' ? 'gemini-2.5-flash' : 'claude-sonnet-5-5');
+const SPACING_MS = Number(opt('espacement-ms', PROVIDER === 'gemini' ? '7000' : '0')); // palier gratuit Flash : 10 req/min
 const CAP = Number(opt('plafond-tokens', '0')); // GARDE-FOU : sans plafond, rien ne part
 const MAX_SEARCHES = Math.max(1, Math.min(6, Number(opt('max-searches', '4'))));
 const CONC = Math.max(1, Math.min(6, Number(opt('concurrence', '4'))));
@@ -57,6 +59,60 @@ async function rest(path) {
 
 // Fiches écrites à la main : jamais écrasées.
 const HAND = new Set([...readFileSync(resolve(ROOT, 'src/data/scooterSeo.ts'), 'utf-8').matchAll(/^\s{2}"([a-z0-9-]+)":\s*\{/gm)].map((m) => m[1]));
+
+
+// ─── Gemini + Google Search (palier gratuit : 10 req/min, ~250 req/jour) ──────
+async function resolveRedirect(u) {
+  // Les sources du grounding sont des liens de redirection Google : on lit la vraie URL.
+  try { const r = await fetch(u, { redirect: 'manual' }); return r.headers.get('location') || u; } catch { return u; }
+}
+async function gemini({ system, prompt }) {
+  for (let retry = 0; retry < 5; retry++) {
+    const res = await fetch(`https://generativelanguage.googleapis.com/v1beta/models/${MODEL}:generateContent`, {
+      method: 'POST',
+      headers: { 'content-type': 'application/json', 'x-goog-api-key': env.GEMINI_API_KEY },
+      body: JSON.stringify({
+        systemInstruction: { parts: [{ text: system }] },
+        contents: [{ role: 'user', parts: [{ text: prompt }] }],
+        tools: [{ google_search: {} }],
+        generationConfig: { temperature: 0.3, maxOutputTokens: 8000 },
+      }),
+    });
+    if ([429, 500, 503].includes(res.status)) {
+      const body = await res.text();
+      if (/PerDay|per day|daily/i.test(body)) throw new Error('QUOTA_JOUR Gemini atteint');
+      await new Promise((r) => setTimeout(r, 20000 * (retry + 1))); continue;
+    }
+    if (!res.ok) throw new Error(`Gemini ${res.status}: ${(await res.text()).slice(0, 300)}`);
+    const data = await res.json();
+    const c = data.candidates?.[0];
+    const u = { in: data.usageMetadata?.promptTokenCount || 0, out: (data.usageMetadata?.candidatesTokenCount || 0) + (data.usageMetadata?.thoughtsTokenCount || 0), ws: (c?.groundingMetadata?.webSearchQueries || []).length };
+    usage.input_tokens += u.in; usage.output_tokens += u.out; usage.web_searches += u.ws;
+    const text = (c?.content?.parts || []).map((p) => p.text || '').join('\n');
+    const m = text.match(/```(?:json)?\s*([\s\S]*?)```/) || text.match(/(\{[\s\S]*\})/);
+    if (!m) throw new Error(`réponse sans JSON (finish ${c?.finishReason})`);
+    let input; try { input = JSON.parse(m[1]); } catch { throw new Error('JSON illisible'); }
+    // Sources = pages réellement consultées par Google (grounding), jamais une URL écrite de mémoire.
+    const chunks = (c?.groundingMetadata?.groundingChunks || []).map((g) => g.web).filter(Boolean);
+    const seen = new Set(); input._grounded = [];
+    for (const w of chunks.slice(0, 10)) {
+      const url = await resolveRedirect(w.uri);
+      const host = (() => { try { return new URL(url).hostname.replace(/^www\./, ''); } catch { return null; } })();
+      if (!host || seen.has(host) || /vertexaisearch|google\./.test(host)) continue;
+      seen.add(host); input._grounded.push({ label: w.title || host, url, host });
+    }
+    return { input, u };
+  }
+  throw new Error('Gemini indisponible après 5 essais');
+}
+const JSON_SHAPE = `Réponds par UN SEUL bloc \`\`\`json contenant exactement ces clés : {"status":"ok|introuvable","displayName":"","metaTitle":"","metaDescription":"","intro":["",""],"extra_specs":[["libellé","valeur"]],"pros":[""],"cons":[""],"care":[""],"price":{"text":"","source":""} ou null,"faq":[{"q":"","a":""}],"sources":[{"label":"","url":""}],"ecarts":[""]}. Aucun texte hors du bloc.`;
+
+// ─── Vidéo : recherche YouTube directe (sans IA) ─────────────────────────────
+async function youtubeCandidates(q) {
+  const html = await fetch(`https://www.youtube.com/results?search_query=${encodeURIComponent(q)}&hl=fr&gl=FR`, { headers: { 'accept-language': 'fr-FR,fr;q=0.9' } }).then((r) => (r.ok ? r.text() : '')).catch(() => '');
+  const ids = []; for (const m of html.matchAll(/"videoId":"([A-Za-z0-9_-]{11})"/g)) if (!ids.includes(m[1])) ids.push(m[1]);
+  return ids.slice(0, 6).map((id) => `https://www.youtube.com/watch?v=${id}`);
+}
 
 // ─── Claude + web_search ─────────────────────────────────────────────────────
 const usage = { input_tokens: 0, output_tokens: 0, web_searches: 0 };
@@ -191,11 +247,15 @@ async function checkVideo(url, m, brand) {
   const o = await fetch(`https://www.youtube.com/oembed?url=https://www.youtube.com/watch?v=${id}&format=json`).catch(() => null);
   if (!o?.ok) return { ok: false, id, why: `oEmbed ${o?.status ?? 'erreur'} (privée, supprimée ou intégration interdite)` };
   const meta = await o.json();
-  // Le titre doit citer le modèle : chaque mot distinctif du nom (hors marque) doit y figurer.
-  const words = norm(m.name).split(' ').filter((w) => w.length > 1 && !norm(brand).split(' ').includes(w));
-  const t = ` ${norm(meta.title)} `;
-  const hit = words.filter((w) => t.includes(` ${w} `) || t.includes(w)).length;
-  if (words.length && hit < Math.ceil(words.length * 0.75)) return { ok: false, id, why: `titre hors sujet : « ${meta.title} »` };
+  // Le titre doit citer le modèle : tous les nombres du nom (hors année) + 75 % des mots distinctifs (hors marque).
+  const brandW = norm(brand).split(' ');
+  const toks = norm(m.name.replace(/\+/g, ' plus ')).split(' ').filter((w) => w && !brandW.includes(w) && !/^(19|20)\d\d$/.test(w));
+  const t = ` ${norm(meta.title.replace(/\+/g, ' plus ')).replace(/\blimited\b/g, 'ltd')} `;
+  const has = (w) => t.includes(` ${w} `);
+  const nums = toks.filter((w) => /^\d/.test(w)), wordsT = toks.filter((w) => !/^\d/.test(w));
+  const okNums = nums.every(has);
+  const okWords = !wordsT.length || wordsT.filter(has).length >= Math.ceil(wordsT.length * 0.75);
+  if (!toks.length || !okNums || !okWords) return { ok: false, id, why: `titre hors sujet : « ${meta.title} »` };
   let uploadDate = null;
   const page = await fetch(`https://www.youtube.com/watch?v=${id}&hl=fr`, { headers: { 'accept-language': 'fr-FR,fr;q=0.9' } }).then((r) => (r.ok ? r.text() : '')).catch(() => '');
   uploadDate = page.match(/"uploadDate":"(\d{4}-\d{2}-\d{2})/)?.[1] || page.match(/itemprop="(?:uploadDate|datePublished)" content="(\d{4}-\d{2}-\d{2})/)?.[1] || page.match(/"publishDate":"(\d{4}-\d{2}-\d{2})/)?.[1] || null;
@@ -224,7 +284,8 @@ function audit(f) {
 
 async function main() {
   if (!CAP && !DRY) { console.log('--plafond-tokens absent : aucun run sans plafond. Arrêt.'); return; }
-  if (!DRY && !env.ANTHROPIC_API_KEY) { console.error('❌ ANTHROPIC_API_KEY absente — arrêt avant tout appel'); process.exit(1); }
+  if (!DRY && PROVIDER === 'claude' && !env.ANTHROPIC_API_KEY) { console.error('❌ ANTHROPIC_API_KEY absente — arrêt avant tout appel'); process.exit(1); }
+  if (!DRY && PROVIDER === 'gemini' && !env.GEMINI_API_KEY) { console.log('::error title=fiches::secret GEMINI_API_KEY absent — arrêt avant tout appel'); process.exit(1); }
   if (!SB_URL || !SB_KEY) { console.error('❌ Supabase public absent'); process.exit(1); }
 
   const models = await rest('scooter_models?select=id,slug,name,description,tire_section_code,rim_diameter_code,power_watts,voltage,amperage,range_km,max_speed_kmh,weight_kg,max_load_kg,tire_size,wheel_inches,wheel_size_inches,tire_family,rim_type,brake_type,caliper_family,disc_diameter_code,disc_pcd_code,disc_holes_code,suspension,ip_rating,foldable,charge_connectors,solid_conversion,year,top_rank,is_top_moment,is_featured_home,compatible_parts_count,brands!scooter_models_brand_id_fkey(name)&published=eq.true&order=slug');
@@ -255,7 +316,7 @@ async function main() {
     .filter((m) => REDO || ONLY || rapport[m.slug]?.status !== 'introuvable')
     .sort((a, b) => prio(a) - prio(b) || (a.top_rank ?? 99) - (b.top_rank ?? 99) || (b.compatible_parts_count || 0) - (a.compatible_parts_count || 0) || a.slug.localeCompare(b.slug));
   if (LIMIT > 0) todo = todo.slice(0, LIMIT);
-  console.log(`📚 Passe fiches — ${models.length} publiés, ${HAND.size} fiches à la main, ${todo.length} à produire · ${MODEL} · ${MAX_SEARCHES} recherches max · plafond ${CAP} tokens`);
+  console.log(`📚 Passe fiches [${PROVIDER}] — ${models.length} publiés, ${HAND.size} fiches à la main, ${todo.length} à produire · ${MODEL} · ${MAX_SEARCHES} recherches max · plafond ${CAP} tokens`);
   if (DRY) {
     const m = todo[0];
     console.log(JSON.stringify({ slug: m.slug, specs: specsFromDb(m), parts: partsFromDb(m, linkedBy.get(m.id) || []) }, null, 1));
@@ -284,12 +345,23 @@ async function main() {
       const prompt = `Modèle : « ${brand} ${m.name} » (slug ${m.slug}).\n\nDonnées catalogue VÉRIFIÉES (font foi) :\n${JSON.stringify(facts, null, 1)}\n\nFamilles de pièces compatibles réellement en vente sur le site pour ce modèle : ${fams.join(', ') || 'aucune pour l\'instant'}.\n\nFais tes recherches, puis appelle submit_fiche.`;
       const t = Date.now();
       try {
-        const { input: f, u } = await claude({ system: SYSTEM, prompt, tool: TOOL });
+        const { input: f, u } = PROVIDER === 'gemini'
+          ? await gemini({ system: SYSTEM.replace('Puis appelle UNE SEULE FOIS l\'outil submit_fiche.', 'Puis rends la fiche.').replace(/appelle submit_fiche avec status "introuvable"/, 'rends status "introuvable"') + '\n\n' + JSON_SHAPE, prompt: prompt.replace('puis appelle submit_fiche.', 'puis rends le bloc JSON.') })
+          : await claude({ system: SYSTEM, prompt, tool: TOOL });
+        if (PROVIDER === 'gemini') {
+          // Gemini : on ne garde que les sources dont le site a réellement été consulté.
+          const hosts = new Set((f._grounded || []).map((g) => g.host));
+          const cited = (f.sources || []).filter((s) => { try { return hosts.has(new URL(s.url).hostname.replace(/^www\./, '')); } catch { return false; } });
+          f.sources = cited.length ? cited : (f._grounded || []).map(({ label, url }) => ({ label, url }));
+          f.videos = await youtubeCandidates(`${brand} ${m.name} test trottinette`);
+          if (/dualtron/i.test(brand)) f.videos = [...(await youtubeCandidates(`Dualtron Store ${m.name}`)).slice(0, 3), ...f.videos];
+        }
+        if (SPACING_MS) await new Promise((r) => setTimeout(r, SPACING_MS));
         const rep = { status: f.status, tokens_in: u.in, tokens_out: u.out, searches: u.ws, ecarts: f.ecarts || [], videos_rejetees: [], model: MODEL, date: new Date().toISOString().slice(0, 10) };
         if (f.status !== 'ok') { rapport[m.slug] = rep; refused++; console.log(`  · ${m.slug} : introuvable`); saveRep(); continue; }
         const { pb, src } = audit(f);
         let video;
-        for (const v of (f.videos || []).slice(0, 3)) {
+        for (const v of (f.videos || []).slice(0, 6)) {
           const r = await checkVideo(v, m, brand);
           if (r.ok) { video = r.video; break; }
           rep.videos_rejetees.push(`${v} — ${r.why}`);
@@ -314,7 +386,7 @@ async function main() {
       } catch (e) {
         console.error(`  ✖ ${m.slug} : ${e.message}`);
         console.log(`::warning title=fiches ${m.slug}::${String(e.message).slice(0, 200)}`);
-        if (/credit balance|invalid x-api-key|authentication/i.test(e.message)) { stop = true; console.log('::error title=fiches::panne générale (crédit ou clé API) — arrêt.'); }
+        if (/credit balance|invalid x-api-key|authentication|QUOTA_JOUR|API key not valid|PERMISSION_DENIED/i.test(e.message)) { stop = true; console.log('::error title=fiches::panne générale (crédit ou clé API) — arrêt.'); }
       }
     }
   }
