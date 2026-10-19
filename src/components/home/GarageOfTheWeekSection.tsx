@@ -6,6 +6,7 @@ import { supabase } from "@/integrations/supabase/client";
 import GarageWeekIntro from "./garage-week/GarageWeekIntro";
 import GarageWeekFrame from "./garage-week/GarageWeekFrame";
 import GarageAtelier, { readGarageVariant } from "./garage-week/GarageAtelier";
+import GarageVitrine from "./garage-week/GarageVitrine";
 
 const easeOutExpo: [number, number, number, number] = [0.16, 1, 0.3, 1];
 
@@ -332,6 +333,24 @@ const GarageOfTheWeekSection = () => {
 
   // Propositions de refonte (?garage=1..5, 18/10) — sans paramètre, bloc actuel inchangé.
   const garageVariant = readGarageVariant();
+  // 19/10 : nouveau bloc aligné sur le garage refait = défaut ; ?garage=0 = ancien bloc ; 1..5 = propositions du 18/10.
+  let garageParam: string | null = null;
+  try { garageParam = new URLSearchParams(window.location.search).get("garage"); } catch { /* SSR */ }
+  if (garageParam === null) {
+    return (
+      <GarageVitrine
+        riders={ridersBundle}
+        riderIndex={currentRiderIndex}
+        scooterIndex={currentScooterIndex}
+        onPrev={prevRider}
+        onNext={nextRider}
+        onGoToRider={goToRider}
+        onGoToScooter={goToScooter}
+        isLoading={isLoading}
+        isAuthenticated={!!user}
+      />
+    );
+  }
   if (garageVariant) {
     return (
       <GarageAtelier
