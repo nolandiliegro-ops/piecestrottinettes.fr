@@ -6,7 +6,7 @@
  * Commun aux 5 : Unbounded 900 italique + Plus Jakarta, coins coupés, recherche en UNE plaque (champ + bouton),
  * trottinettes détourées qui SORTENT du cadre de leur carte, textes ≥ 14 px, cibles ≥ 44 px, plus de fond flou.
  */
-import { useEffect, useState, type RefObject } from "react";
+import { useEffect, useRef, useState, type RefObject } from "react";
 import { AnimatePresence, motion, useReducedMotion } from "framer-motion";
 import { ArrowRight, Bike, ChevronLeft, ChevronRight, Search as SearchIcon } from "lucide-react";
 import { getBrandColors } from "@/contexts/ScooterContext";
@@ -156,24 +156,46 @@ const PopCard = ({ sc, s, size, onSelect }: { sc: ScooterHero; s: Skin; size: "s
   );
 };
 
-const Shelf = ({ s, size, scooters, isLoading, title, onSelect, heading }: { s: Skin; size: "sm" | "lg"; scooters: ScooterHero[]; isLoading: boolean; title: string; onSelect: (slug: string) => void; heading: string }) => (
-  <div>
-    <h2 className="text-lg lg:text-xl uppercase mb-1" style={{ fontFamily: UNB, fontWeight: 900, fontStyle: "italic", letterSpacing: "-0.02em", color: heading }}>{title}</h2>
-    <div className="pt-mini-scroll flex gap-3 overflow-x-auto -mx-4 px-4 pb-2 lg:mx-0 lg:px-0 lg:grid lg:grid-cols-5 lg:gap-4 lg:overflow-visible" style={{ scrollbarWidth: "none" }}>
-      {isLoading
-        ? Array.from({ length: 5 }).map((_, i) => (
-            <div key={i} className={`shrink-0 ${size === "lg" ? "w-[232px] h-[300px]" : "w-[172px] h-[236px]"} lg:w-auto mt-10 animate-pulse`} style={{ background: s.card, clipPath: cut(12), opacity: 0.6 }} />
-          ))
-        : scooters.map((sc) => <PopCard key={sc.id} sc={sc} s={s} size={size} onSelect={onSelect} />)}
-      {!isLoading && scooters.length === 0 && (
-        <p className="py-6 text-base" style={{ fontFamily: FONT, color: heading }}>
-          Pas de trott à ce nom. Essaie juste la marque (Xiaomi, Dualtron…) ou{" "}
-          <a href="/trottinettes" className="font-bold underline underline-offset-4">parcours tous les modèles</a>.
-        </p>
-      )}
+/** Rangée « Top du moment » : frise qui défile seule (une carte toutes les 3,5 s), s'arrête dès qu'on la touche,
+ *  la survole ou la fait glisser, reprend 8 s après ; rien ne bouge si « réduire les animations » est activé. */
+const Shelf = ({ s, size, scooters, isLoading, title, onSelect, heading }: { s: Skin; size: "sm" | "lg"; scooters: ScooterHero[]; isLoading: boolean; title: string; onSelect: (slug: string) => void; heading: string }) => {
+  const reduce = useReducedMotion();
+  const rowRef = useRef<HTMLDivElement>(null);
+  const pausedUntil = useRef(0);
+  const pause = () => { pausedUntil.current = Date.now() + 8000; };
+  useEffect(() => {
+    if (reduce || isLoading || scooters.length < 4) return;
+    const t = window.setInterval(() => {
+      const row = rowRef.current;
+      if (!row || Date.now() < pausedUntil.current || document.hidden) return;
+      const card = row.children[0] as HTMLElement | undefined;
+      const step = card ? card.getBoundingClientRect().width + 16 : 240;
+      const max = row.scrollWidth - row.clientWidth;
+      if (max <= 4) return;
+      row.scrollTo({ left: row.scrollLeft + step > max - 4 ? 0 : row.scrollLeft + step, behavior: "smooth" });
+    }, 3500);
+    return () => window.clearInterval(t);
+  }, [reduce, isLoading, scooters.length]);
+  return (
+    <div>
+      <h2 className="text-lg lg:text-xl uppercase mb-1" style={{ fontFamily: UNB, fontWeight: 900, fontStyle: "italic", letterSpacing: "-0.02em", color: heading }}>{title}</h2>
+      <div ref={rowRef} onPointerDown={pause} onMouseEnter={pause} onWheel={pause} onTouchStart={pause} onFocus={pause}
+        className="pt-mini-scroll flex gap-3 lg:gap-4 overflow-x-auto -mx-4 px-4 pb-2 lg:mx-0 lg:px-0" style={{ scrollbarWidth: "none" }} data-top-row>
+        {isLoading
+          ? Array.from({ length: 5 }).map((_, i) => (
+              <div key={i} className={`shrink-0 ${size === "lg" ? "w-[232px] h-[300px]" : "w-[172px] h-[236px]"} lg:w-[calc((100%-64px)/5)] mt-10 animate-pulse`} style={{ background: s.card, clipPath: cut(12), opacity: 0.6 }} />
+            ))
+          : scooters.map((sc) => <div key={sc.id} className="shrink-0 lg:w-[calc((100%-64px)/5)]"><PopCard sc={sc} s={s} size={size} onSelect={onSelect} /></div>)}
+        {!isLoading && scooters.length === 0 && (
+          <p className="py-6 text-base" style={{ fontFamily: FONT, color: heading }}>
+            Pas de trott à ce nom. Essaie juste la marque (Xiaomi, Dualtron…) ou{" "}
+            <a href="/trottinettes" className="font-bold underline underline-offset-4">parcours tous les modèles</a>.
+          </p>
+        )}
+      </div>
     </div>
-  </div>
-);
+  );
+};
 
 /** 19/10 : retour Nolan « les trottinettes noires sur le fond noir, c'est un peu noir ». Propositions ?scene=1..5 :
  *  1 noir + lumière forte · 2 deux tons pierre · 3 deux tons blanc studio · 4 deux tons béton · 5 tout clair.

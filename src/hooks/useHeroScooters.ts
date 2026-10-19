@@ -27,6 +27,7 @@ export interface UseHeroScootersResult {
 }
 
 const FALLBACK_LIMIT = 8;
+const TOP_LIMIT = 12;
 
 // Single cached fetch of all published scooters — filtering happens client-side
 // so typing in the searchbar never hits the network (see useHeroScooters).
@@ -79,8 +80,14 @@ export const useHeroScooters = (searchQuery: string): UseHeroScootersResult => {
     const q = searchQuery.trim().toLowerCase();
     if (q.length === 0) {
       // Default: curated "top du moment". Fallback to latest 8 if none flagged.
+      // 19/10 (Nolan : « que cinq ») : les modèles cochés « top » d'abord, puis complétés jusqu'à 12 par les
+      // modèles avec photo qui ont le plus de pièces compatibles.
       const top = all.filter((s) => s.is_top_moment);
-      return top.length > 0 ? top : all.slice(0, FALLBACK_LIMIT);
+      const rest = all
+        .filter((s) => !s.is_top_moment && s.image_url && (s.compatible_parts_count ?? 0) > 0)
+        .sort((a, b) => (b.compatible_parts_count ?? 0) - (a.compatible_parts_count ?? 0));
+      const list = [...top, ...rest].slice(0, TOP_LIMIT);
+      return list.length > 0 ? list : all.slice(0, FALLBACK_LIMIT);
     }
     // Recherche tolérante (espaces/tirets/accents/1 faute) — lib/scooterSearch
     return searchScooters(all, q, (s) => ({ name: s.name, brand: s.brand_name, slug: s.slug, terms: s.search_terms }));
