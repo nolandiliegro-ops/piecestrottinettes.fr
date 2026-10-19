@@ -140,7 +140,7 @@ const useCatalogue = (slug: string) =>
 
 const eur = (v: number | null | undefined) => (v == null ? "—" : `${v.toFixed(2).replace(".", ",")} €`);
 const pct = (f: Fiche) => (f.marge != null && f.price ? Math.round((f.marge / f.price) * 100) : null);
-const margeTone = (f: Fiche) => { const p = pct(f); return p == null ? "text-[hsl(0_0%_55%)]" : p < 20 ? "text-red-400" : p < 45 ? "text-amber-300" : "text-emerald-400"; };
+const margeTone = (f: Fiche) => { const p = pct(f); return p == null ? "text-[hsl(var(--al55))]" : p < 20 ? "text-red-400" : p < 45 ? "text-amber-300" : "text-emerald-400"; };
 
 function useActions() {
   const qc = useQueryClient();
@@ -175,7 +175,7 @@ const Toggle = ({ f }: { f: Fiche }) => {
     <button
       onClick={() => publish.mutate({ id: f.id, published: !f.published })}
       className={cn("min-h-[44px] min-w-[44px] px-3 rounded-lg text-sm font-semibold flex items-center justify-center gap-1.5 border",
-        f.published ? "border-emerald-500/40 text-emerald-300 bg-emerald-500/10" : "border-[hsl(0_0%_25%)] text-[hsl(0_0%_60%)]")}
+        f.published ? "border-emerald-500/40 text-emerald-300 bg-emerald-500/10" : "border-[hsl(var(--al25))] text-[hsl(var(--al60))]")}
       aria-label={f.published ? "Dépublier" : "Publier"}
     >
       {publish.isPending ? <Loader2 className="w-4 h-4 animate-spin" /> : f.published ? <Eye className="w-4 h-4" /> : <EyeOff className="w-4 h-4" />}
@@ -196,23 +196,23 @@ const PriceInput = ({ f }: { f: Fiche }) => {
     <input
       value={v} onChange={(e) => setV(e.target.value)} onBlur={commit} onKeyDown={(e) => e.key === "Enter" && commit()}
       inputMode="decimal" aria-label="Prix de vente"
-      className="w-[84px] min-h-[44px] rounded-lg bg-[hsl(0_0%_14%)] border border-[hsl(0_0%_25%)] px-2 text-right text-base font-bold tabular-nums focus:outline-none focus:ring-2 focus:ring-primary"
+      className="w-[84px] min-h-[44px] rounded-lg bg-[hsl(var(--al14))] border border-[hsl(var(--al25))] px-2 text-right text-base font-bold tabular-nums focus:outline-none focus:ring-2 focus:ring-primary"
     />
   );
 };
 
 const Chiffres = ({ f }: { f: Fiche }) => (
   <div className="text-sm tabular-nums leading-tight">
-    <div className="text-[hsl(0_0%_60%)]">achat {eur(f.achat)} · {f.fournisseur}</div>
+    <div className="text-[hsl(var(--al60))]">achat {eur(f.achat)} · {f.fournisseur}</div>
     <div className={margeTone(f)}>marge {eur(f.marge)}{pct(f) != null ? ` (${pct(f)} %)` : ""}</div>
-    <div className="text-[hsl(0_0%_60%)]">stock fourn. {f.stockF ?? "—"} · {f.nCompat} trott.</div>
+    <div className="text-[hsl(var(--al60))]">stock fourn. {f.stockF ?? "—"} · {f.nCompat} trott.</div>
   </div>
 );
 
 const Entete = ({ g }: { g: Groupe }) => (
   <div className="min-w-0">
     <div className="text-base font-extrabold truncate">{g.taille}</div>
-    <div className="text-sm text-[hsl(0_0%_60%)]">
+    <div className="text-sm text-[hsl(var(--al60))]">
       Valve {g.valve} · {g.enLigne} en ligne{g.doublons > 0 && <span className="text-amber-300 font-bold"> · {g.doublons} en double</span>}
       {g.prixMin != null && ` · ${eur(g.prixMin)}${g.prixMax !== g.prixMin ? ` → ${eur(g.prixMax)}` : ""}`}
     </div>
@@ -225,20 +225,20 @@ const V1Liste = ({ groupes }: { groupes: Groupe[] }) => {
   return (
     <div className="space-y-2">
       {groupes.map((g) => (
-        <div key={g.key} className="rounded-xl border border-[hsl(0_0%_18%)] bg-[hsl(0_0%_12%)]">
+        <div key={g.key} className="rounded-xl border border-[hsl(var(--al18))] bg-[hsl(var(--al12))]">
           <button onClick={() => setOpen(open === g.key ? null : g.key)} className="w-full min-h-[56px] px-3 py-2 flex items-center gap-2 text-left">
             {open === g.key ? <ChevronDown className="w-5 h-5 shrink-0" /> : <ChevronRight className="w-5 h-5 shrink-0" />}
             <Entete g={g} />
             {g.doublons > 0 && <span className="ml-auto shrink-0 text-sm font-bold px-2 py-1 rounded-md bg-amber-400/15 text-amber-300">+{g.doublons}</span>}
           </button>
           {open === g.key && (
-            <div className="border-t border-[hsl(0_0%_18%)] divide-y divide-[hsl(0_0%_18%)]">
+            <div className="border-t border-[hsl(var(--al18))] divide-y divide-[hsl(var(--al18))]">
               {g.fiches.map((f) => (
                 <div key={f.id} className={cn("p-3 flex gap-3", !f.published && "opacity-55")}>
                   <Thumb f={f} />
                   <div className="min-w-0 flex-1">
                     <div className="text-sm font-semibold leading-snug">{f.name}</div>
-                    <div className="text-sm text-[hsl(0_0%_60%)]">{f.gamme}</div>
+                    <div className="text-sm text-[hsl(var(--al60))]">{f.gamme}</div>
                     <Chiffres f={f} />
                   </div>
                   <div className="flex flex-col items-end gap-2"><PriceInput f={f} /><Toggle f={f} /></div>
@@ -276,22 +276,22 @@ const V2File = ({ groupes }: { groupes: Groupe[] }) => {
       {dernier && (
         <div className="rounded-xl border border-emerald-400/30 bg-emerald-400/10 p-3 flex items-center gap-3 text-sm">
           <span className="flex-1">Gardée : {dernier.nom} — {dernier.ids.length} masquée{dernier.ids.length > 1 ? "s" : ""}.</span>
-          <button onClick={annuler} className="min-h-[44px] px-4 rounded-lg border border-[hsl(0_0%_30%)] font-bold shrink-0">Annuler</button>
+          <button onClick={annuler} className="min-h-[44px] px-4 rounded-lg border border-[hsl(var(--al30))] font-bold shrink-0">Annuler</button>
         </div>
       )}
-      <div className="flex items-center justify-between text-sm text-[hsl(0_0%_60%)]">
+      <div className="flex items-center justify-between text-sm text-[hsl(var(--al60))]">
         <span>Doublon {Math.min(i, file.length - 1) + 1} sur {file.length}</span>
         <div className="flex gap-2">
-          <button className="min-h-[44px] px-3 rounded-lg border border-[hsl(0_0%_25%)]" onClick={() => setI(Math.max(0, i - 1))}>Précédent</button>
-          <button className="min-h-[44px] px-3 rounded-lg border border-[hsl(0_0%_25%)]" onClick={() => setI(Math.min(file.length - 1, i + 1))}>Passer</button>
+          <button className="min-h-[44px] px-3 rounded-lg border border-[hsl(var(--al25))]" onClick={() => setI(Math.max(0, i - 1))}>Précédent</button>
+          <button className="min-h-[44px] px-3 rounded-lg border border-[hsl(var(--al25))]" onClick={() => setI(Math.min(file.length - 1, i + 1))}>Passer</button>
         </div>
       </div>
-      <div className="rounded-2xl border border-amber-400/30 bg-[hsl(0_0%_12%)] p-4">
+      <div className="rounded-2xl border border-amber-400/30 bg-[hsl(var(--al12))] p-4">
         <Entete g={g} />
-        <p className="text-sm text-[hsl(0_0%_60%)] mt-1">Appuie sur « Garder celle-ci » sous la fiche à conserver : les autres de la même gamme sont masquées (bouton « Annuler » juste après).</p>
+        <p className="text-sm text-[hsl(var(--al60))] mt-1">Appuie sur « Garder celle-ci » sous la fiche à conserver : les autres de la même gamme sont masquées (bouton « Annuler » juste après).</p>
       </div>
       {g.fiches.filter((f) => f.published && g.fiches.filter((x) => x.published && x.gamme === f.gamme).length > 1).map((f) => (
-        <div key={f.id} className="rounded-2xl border border-[hsl(0_0%_20%)] bg-[hsl(0_0%_12%)] p-3">
+        <div key={f.id} className="rounded-2xl border border-[hsl(var(--al20))] bg-[hsl(var(--al12))] p-3">
           <div className="flex gap-3">
             <Thumb f={f} size={72} />
             <div className="min-w-0 flex-1">
@@ -325,16 +325,16 @@ const CatalogueTriage = () => {
       <div className="flex gap-2 overflow-x-auto pb-1">
         {CATS.map((c) => (
           <button key={c.slug} onClick={() => { setCat(c.slug); setMode("liste"); }}
-            className={cn("shrink-0 min-h-[44px] px-4 rounded-full text-sm font-semibold border", cat === c.slug ? "bg-primary text-primary-foreground border-primary" : "border-[hsl(0_0%_25%)] text-[hsl(0_0%_70%)]")}>
+            className={cn("shrink-0 min-h-[44px] px-4 rounded-full text-sm font-semibold border", cat === c.slug ? "bg-primary text-primary-foreground border-primary" : "border-[hsl(var(--al25))] text-[hsl(var(--al70))]")}>
             {c.label}
           </button>
         ))}
       </div>
       <div className="grid grid-cols-3 gap-2">
         {[{ k: "En ligne", v: enLigne }, { k: "Tailles", v: new Set(groupes.filter((g) => g.enLigne > 0).map((g) => g.taille)).size }, { k: "En double", v: enTrop }].map((s) => (
-          <div key={s.k} className="rounded-xl border border-[hsl(0_0%_18%)] bg-[hsl(0_0%_12%)] p-3">
+          <div key={s.k} className="rounded-xl border border-[hsl(var(--al18))] bg-[hsl(var(--al12))] p-3">
             <div className={cn("text-2xl font-black tabular-nums", s.k === "En double" && s.v > 0 && "text-amber-300")}>{s.v}</div>
-            <div className="text-sm text-[hsl(0_0%_60%)]">{s.k}</div>
+            <div className="text-sm text-[hsl(var(--al60))]">{s.k}</div>
           </div>
         ))}
       </div>
@@ -347,7 +347,7 @@ const CatalogueTriage = () => {
       ) : (
         <button onClick={() => setMode("liste")} className="min-h-[44px] text-base text-primary font-semibold">← Retour à la liste</button>
       )}
-      <p className="text-sm text-[hsl(0_0%_55%)]">Marge = prix de vente − prix d'achat HT du fournisseur le moins cher (hors port, TVA espagnole non récupérable). « — » : prix d'achat absent en base.</p>
+      <p className="text-sm text-[hsl(var(--al55))]">Marge = prix de vente − prix d'achat HT du fournisseur le moins cher (hors port, TVA espagnole non récupérable). « — » : prix d'achat absent en base.</p>
       {isLoading && <Loader2 className="w-6 h-6 animate-spin" />}
       {error && <p className="text-red-400 text-sm">{error.message}</p>}
       {!isLoading && mode === "liste" && <V1Liste groupes={groupes} />}

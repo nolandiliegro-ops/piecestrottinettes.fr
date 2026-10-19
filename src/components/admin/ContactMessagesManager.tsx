@@ -26,7 +26,7 @@ const SecureMessageImage = ({ stored }: { stored: string }) => {
   if (!signed) return null;
   return (
     <a href={signed} target="_blank" rel="noopener noreferrer" className="block mt-2">
-      <img src={signed} alt="Image jointe" className="max-w-[240px] max-h-[180px] object-cover rounded-lg border border-[hsl(0_0%_20%)] hover:opacity-80 transition-opacity" />
+      <img src={signed} alt="Image jointe" className="max-w-[240px] max-h-[180px] object-cover rounded-lg border border-[hsl(var(--al20))] hover:opacity-80 transition-opacity" />
     </a>
   );
 };
@@ -73,7 +73,7 @@ interface ClientThread {
 const STATUS_PILL: Record<ConvStatus, { label: string; cls: string }> = {
   pending: { label: 'En attente', cls: 'bg-amber-500/20 text-amber-400 border-amber-500/30' },
   replied: { label: 'Répondu', cls: 'bg-emerald-500/20 text-emerald-400 border-emerald-500/30' },
-  closed: { label: 'Fermé', cls: 'bg-[hsl(0_0%_100%/0.08)] text-[hsl(0_0%_60%)] border-[hsl(0_0%_25%)]' },
+  closed: { label: 'Fermé', cls: 'bg-[hsl(var(--aov08))] text-[hsl(var(--al60))] border-[hsl(var(--al25))]' },
 };
 
 // ─── Contact Conversation View ───
@@ -228,8 +228,8 @@ const ContactConversationView = ({ contact, onBack, onRefresh }: { contact: Cont
   return (
     <div className="flex flex-col h-[500px]">
       {/* Header */}
-      <div className="flex items-center gap-3 pb-3 border-b border-[hsl(0_0%_18%)] shrink-0">
-        <Button variant="ghost" size="icon" onClick={onBack} className="text-[hsl(0_0%_70%)] hover:text-[hsl(0_0%_90%)] shrink-0">
+      <div className="flex items-center gap-3 pb-3 border-b border-[hsl(var(--al18))] shrink-0">
+        <Button variant="ghost" size="icon" onClick={onBack} className="text-[hsl(var(--al70))] hover:text-[hsl(var(--al90))] shrink-0">
           <ArrowLeft className="w-4 h-4" />
         </Button>
         <div className="w-8 h-8 rounded-full bg-primary/20 flex items-center justify-center shrink-0 text-[11px] font-bold text-primary">
@@ -237,7 +237,7 @@ const ContactConversationView = ({ contact, onBack, onRefresh }: { contact: Cont
         </div>
         <div className="flex-1 min-w-0">
           <div className="flex items-center gap-2 flex-wrap mb-0.5">
-            <span className="inline-flex items-center px-2 py-0.5 rounded-full bg-[hsl(0_0%_100%/0.08)] text-[hsl(0_0%_70%)] border border-[hsl(0_0%_20%)] text-[11px] font-semibold">
+            <span className="inline-flex items-center px-2 py-0.5 rounded-full bg-[hsl(var(--aov08))] text-[hsl(var(--al70))] border border-[hsl(var(--al20))] text-[11px] font-semibold">
               📨 Contact
             </span>
             <span className={`inline-flex items-center px-2 py-0.5 rounded-full border text-[11px] font-semibold ${STATUS_PILL[contact.status].cls}`}>
@@ -249,9 +249,9 @@ const ContactConversationView = ({ contact, onBack, onRefresh }: { contact: Cont
               </span>
             )}
           </div>
-          <p className="text-xs text-[hsl(0_0%_60%)] truncate">
-            <span className="font-medium text-[hsl(0_0%_85%)]">{contact.name}</span>
-            <span className="text-[hsl(0_0%_50%)]"> · {contact.email}</span>
+          <p className="text-xs text-[hsl(var(--al60))] truncate">
+            <span className="font-medium text-[hsl(var(--al85))]">{contact.name}</span>
+            <span className="text-[hsl(var(--al50))]"> · {contact.email}</span>
           </p>
         </div>
         {contact.status !== 'closed' && (
@@ -260,7 +260,7 @@ const ContactConversationView = ({ contact, onBack, onRefresh }: { contact: Cont
             size="sm"
             disabled={closing}
             onClick={handleClose}
-            className="gap-1.5 border-[hsl(0_0%_25%)] text-[hsl(0_0%_70%)] hover:text-[hsl(0_0%_90%)] shrink-0"
+            className="gap-1.5 border-[hsl(var(--al25))] text-[hsl(var(--al70))] hover:text-[hsl(var(--al90))] shrink-0"
           >
             {closing ? <Loader2 className="w-3.5 h-3.5 animate-spin" /> : <Lock className="w-3.5 h-3.5" />}
             Fermer
@@ -272,10 +272,10 @@ const ContactConversationView = ({ contact, onBack, onRefresh }: { contact: Cont
       <div ref={scrollRef} className="flex-1 overflow-y-auto py-3 space-y-2 scrollbar-hide">
         {/* Initial contact message */}
         <div className="flex justify-start">
-          <div className="max-w-[80%] rounded-xl px-3.5 py-2.5 bg-[hsl(0_0%_100%/0.08)] text-[hsl(0_0%_80%)] rounded-bl-sm">
-            <p className="text-[11px] uppercase tracking-wider text-[hsl(0_0%_55%)] font-semibold mb-1">{contact.subject}</p>
+          <div className="max-w-[80%] rounded-xl px-3.5 py-2.5 bg-[hsl(var(--aov08))] text-[hsl(var(--al80))] rounded-bl-sm">
+            <p className="text-[11px] uppercase tracking-wider text-[hsl(var(--al55))] font-semibold mb-1">{contact.subject}</p>
             <p className="text-sm whitespace-pre-wrap">{contact.message}</p>
-            <p className="text-[10px] mt-1 text-[hsl(0_0%_45%)]">👤 {contact.name} · {formatTime(contact.created_at)}</p>
+            <p className="text-[10px] mt-1 text-[hsl(var(--al45))]">👤 {contact.name} · {formatTime(contact.created_at)}</p>
           </div>
         </div>
         {loading ? (
@@ -285,10 +285,10 @@ const ContactConversationView = ({ contact, onBack, onRefresh }: { contact: Cont
             const isAdmin = msg.sender_type === 'admin';
             return (
               <div key={msg.id} className={`flex ${isAdmin ? 'justify-end' : 'justify-start'}`}>
-                <div className={`max-w-[75%] rounded-xl px-3.5 py-2.5 ${isAdmin ? 'bg-primary/20 text-[hsl(0_0%_90%)] rounded-br-sm' : 'bg-[hsl(0_0%_100%/0.08)] text-[hsl(0_0%_80%)] rounded-bl-sm'}`}>
+                <div className={`max-w-[75%] rounded-xl px-3.5 py-2.5 ${isAdmin ? 'bg-primary/20 text-[hsl(var(--al90))] rounded-br-sm' : 'bg-[hsl(var(--aov08))] text-[hsl(var(--al80))] rounded-bl-sm'}`}>
                   <p className="text-sm whitespace-pre-wrap">{msg.message}</p>
                   {msg.image_url && <SecureMessageImage stored={msg.image_url} />}
-                  <p className={`text-[10px] mt-1 ${isAdmin ? 'text-primary/60' : 'text-[hsl(0_0%_45%)]'}`}>
+                  <p className={`text-[10px] mt-1 ${isAdmin ? 'text-primary/60' : 'text-[hsl(var(--al45))]'}`}>
                     {isAdmin ? '🟢 Vous' : '👤 Client'} · {formatTime(msg.created_at)}
                   </p>
                 </div>
@@ -299,19 +299,19 @@ const ContactConversationView = ({ contact, onBack, onRefresh }: { contact: Cont
       </div>
 
       {/* Reply */}
-      <div className="shrink-0 pt-3 border-t border-[hsl(0_0%_18%)]">
+      <div className="shrink-0 pt-3 border-t border-[hsl(var(--al18))]">
         {imageFile && (
-          <div className="mb-2 inline-flex items-center gap-2 bg-[hsl(0_0%_100%/0.05)] border border-[hsl(0_0%_18%)] rounded-lg p-1.5 pr-2">
+          <div className="mb-2 inline-flex items-center gap-2 bg-[hsl(var(--aov05))] border border-[hsl(var(--al18))] rounded-lg p-1.5 pr-2">
             <img src={URL.createObjectURL(imageFile)} alt="Preview" className="w-12 h-12 object-cover rounded" />
-            <span className="text-xs text-[hsl(0_0%_70%)] max-w-[140px] truncate">{imageFile.name}</span>
-            <button onClick={() => { setImageFile(null); if (inputRef.current) inputRef.current.value = ''; }} className="text-[hsl(0_0%_55%)] hover:text-[hsl(0_0%_90%)]">
+            <span className="text-xs text-[hsl(var(--al70))] max-w-[140px] truncate">{imageFile.name}</span>
+            <button onClick={() => { setImageFile(null); if (inputRef.current) inputRef.current.value = ''; }} className="text-[hsl(var(--al55))] hover:text-[hsl(var(--al90))]">
               <X className="w-3.5 h-3.5" />
             </button>
           </div>
         )}
         <div className="flex gap-2 items-end">
           <input ref={inputRef} type="file" accept="image/*" className="hidden" onChange={handleFileSelect} />
-          <Button size="sm" variant="outline" onClick={() => inputRef.current?.click()} disabled={sending || uploading} className="shrink-0 border-[hsl(0_0%_18%)] text-[hsl(0_0%_70%)] hover:text-[hsl(0_0%_90%)] h-[60px]" title="Joindre une image">
+          <Button size="sm" variant="outline" onClick={() => inputRef.current?.click()} disabled={sending || uploading} className="shrink-0 border-[hsl(var(--al18))] text-[hsl(var(--al70))] hover:text-[hsl(var(--al90))] h-[60px]" title="Joindre une image">
             <Paperclip className="w-4 h-4" />
           </Button>
           <textarea
@@ -319,7 +319,7 @@ const ContactConversationView = ({ contact, onBack, onRefresh }: { contact: Cont
             onChange={(e) => setReplyText(e.target.value)}
             placeholder="Répondre au client..."
             rows={2}
-            className="flex-1 bg-[hsl(0_0%_100%/0.05)] border border-[hsl(0_0%_18%)] rounded-lg px-3 py-2 text-sm text-[hsl(0_0%_85%)] placeholder:text-[hsl(0_0%_40%)] focus:outline-none focus:border-primary/40 resize-none"
+            className="flex-1 bg-[hsl(var(--aov05))] border border-[hsl(var(--al18))] rounded-lg px-3 py-2 text-sm text-[hsl(var(--al85))] placeholder:text-[hsl(var(--al40))] focus:outline-none focus:border-primary/40 resize-none"
             onKeyDown={(e) => { if (e.key === 'Enter' && !e.shiftKey) { e.preventDefault(); handleSend(); } }}
           />
           <Button size="sm" disabled={(!replyText.trim() && !imageFile) || sending || uploading} onClick={handleSend} className="gap-1.5 bg-primary hover:bg-primary/90 shrink-0">
@@ -402,7 +402,7 @@ const ContactTab = ({ messages, onRefresh, initialSelectedId, onSelectionChange 
       className={`px-3 py-1.5 rounded-full text-xs font-semibold border transition-colors ${
         filter === value
           ? 'bg-primary/20 text-primary border-primary/40'
-          : 'bg-[hsl(0_0%_100%/0.04)] border-[hsl(0_0%_18%)] text-[hsl(0_0%_65%)] hover:text-[hsl(0_0%_90%)]'
+          : 'bg-[hsl(var(--aov04))] border-[hsl(var(--al18))] text-[hsl(var(--al65))] hover:text-[hsl(var(--al90))]'
       }`}
     >
       {label} <span className="opacity-70">({count})</span>
@@ -419,7 +419,7 @@ const ContactTab = ({ messages, onRefresh, initialSelectedId, onSelectionChange 
       </div>
 
       {filtered.length === 0 ? (
-        <div className="text-center py-12 text-[hsl(0_0%_55%)]">Aucun message.</div>
+        <div className="text-center py-12 text-[hsl(var(--al55))]">Aucun message.</div>
       ) : (
         <div className="space-y-2">
           {filtered.map(msg => {
@@ -429,16 +429,16 @@ const ContactTab = ({ messages, onRefresh, initialSelectedId, onSelectionChange 
               <div
                 key={msg.id}
                 onClick={() => setSelected(msg.id)}
-                className="bg-[hsl(0_0%_100%/0.03)] border border-[hsl(0_0%_18%)] rounded-lg px-4 py-3 cursor-pointer hover:bg-[hsl(0_0%_100%/0.05)] transition-colors flex items-center gap-3"
+                className="bg-[hsl(var(--aov03))] border border-[hsl(var(--al18))] rounded-lg px-4 py-3 cursor-pointer hover:bg-[hsl(var(--aov05))] transition-colors flex items-center gap-3"
               >
                 <div className="w-9 h-9 rounded-full bg-primary/15 flex items-center justify-center shrink-0 text-[11px] font-bold text-primary">
                   {initials}
                 </div>
                 <div className="flex-1 min-w-0">
                   <div className="flex items-center gap-2 mb-0.5 flex-wrap">
-                    <span className="text-sm font-medium text-[hsl(0_0%_90%)] truncate">{msg.name}</span>
-                    <span className="text-xs text-[hsl(0_0%_45%)]">·</span>
-                    <span className="text-xs text-[hsl(0_0%_55%)] truncate">{msg.email}</span>
+                    <span className="text-sm font-medium text-[hsl(var(--al90))] truncate">{msg.name}</span>
+                    <span className="text-xs text-[hsl(var(--al45))]">·</span>
+                    <span className="text-xs text-[hsl(var(--al55))] truncate">{msg.email}</span>
                     <span className={`inline-flex items-center px-2 py-0.5 rounded-full border text-[10px] font-semibold ${STATUS_PILL[msg.status].cls}`}>
                       {STATUS_PILL[msg.status].label}
                     </span>
@@ -448,11 +448,11 @@ const ContactTab = ({ messages, onRefresh, initialSelectedId, onSelectionChange 
                       </span>
                     )}
                   </div>
-                  <p className="text-xs text-[hsl(0_0%_70%)] truncate font-medium">{msg.subject}</p>
-                  <p className="text-xs text-[hsl(0_0%_55%)] truncate">{msg.message.substring(0, 80)}</p>
+                  <p className="text-xs text-[hsl(var(--al70))] truncate font-medium">{msg.subject}</p>
+                  <p className="text-xs text-[hsl(var(--al55))] truncate">{msg.message.substring(0, 80)}</p>
                 </div>
                 <div className="flex flex-col items-end gap-1 shrink-0">
-                  <span className="text-xs text-[hsl(0_0%_45%)]">{formatDate(msg.last_reply_at || msg.created_at)}</span>
+                  <span className="text-xs text-[hsl(var(--al45))]">{formatDate(msg.last_reply_at || msg.created_at)}</span>
                 </div>
               </div>
             );
@@ -612,8 +612,8 @@ const GarageConversationView = ({ thread, onBack }: { thread: ClientThread; onBa
   return (
     <div className="flex flex-col h-[500px]">
       {/* Header */}
-      <div className="flex items-center gap-3 pb-3 border-b border-[hsl(0_0%_18%)] shrink-0">
-        <Button variant="ghost" size="icon" onClick={onBack} className="text-[hsl(0_0%_70%)] hover:text-[hsl(0_0%_90%)] shrink-0">
+      <div className="flex items-center gap-3 pb-3 border-b border-[hsl(var(--al18))] shrink-0">
+        <Button variant="ghost" size="icon" onClick={onBack} className="text-[hsl(var(--al70))] hover:text-[hsl(var(--al90))] shrink-0">
           <ArrowLeft className="w-4 h-4" />
         </Button>
         <div className="w-8 h-8 rounded-full bg-primary/20 flex items-center justify-center shrink-0">
@@ -626,7 +626,7 @@ const GarageConversationView = ({ thread, onBack }: { thread: ClientThread; onBa
                 📦 {thread.order_number}
               </span>
             ) : (
-              <span className="inline-flex items-center px-2 py-0.5 rounded-full bg-[hsl(0_0%_100%/0.08)] text-[hsl(0_0%_70%)] border border-[hsl(0_0%_20%)] text-[11px] font-semibold">
+              <span className="inline-flex items-center px-2 py-0.5 rounded-full bg-[hsl(var(--aov08))] text-[hsl(var(--al70))] border border-[hsl(var(--al20))] text-[11px] font-semibold">
                 💬 Question générale
               </span>
             )}
@@ -634,9 +634,9 @@ const GarageConversationView = ({ thread, onBack }: { thread: ClientThread; onBa
               {STATUS_PILL[thread.status].label}
             </span>
           </div>
-          <p className="text-xs text-[hsl(0_0%_60%)] truncate">
-            <span className="font-medium text-[hsl(0_0%_85%)]">{thread.display_name}</span>
-            {thread.email ? <span className="text-[hsl(0_0%_50%)]"> · {thread.email}</span> : null}
+          <p className="text-xs text-[hsl(var(--al60))] truncate">
+            <span className="font-medium text-[hsl(var(--al85))]">{thread.display_name}</span>
+            {thread.email ? <span className="text-[hsl(var(--al50))]"> · {thread.email}</span> : null}
           </p>
         </div>
         {thread.order_number && (
@@ -657,7 +657,7 @@ const GarageConversationView = ({ thread, onBack }: { thread: ClientThread; onBa
             size="sm"
             disabled={closing}
             onClick={handleClose}
-            className="gap-1.5 border-[hsl(0_0%_25%)] text-[hsl(0_0%_70%)] hover:text-[hsl(0_0%_90%)] shrink-0"
+            className="gap-1.5 border-[hsl(var(--al25))] text-[hsl(var(--al70))] hover:text-[hsl(var(--al90))] shrink-0"
           >
             {closing ? <Loader2 className="w-3.5 h-3.5 animate-spin" /> : <Lock className="w-3.5 h-3.5" />}
             Fermer
@@ -670,16 +670,16 @@ const GarageConversationView = ({ thread, onBack }: { thread: ClientThread; onBa
         {loading ? (
           <div className="flex justify-center py-8"><Loader2 className="w-5 h-5 animate-spin text-primary" /></div>
         ) : messages.length === 0 ? (
-          <div className="text-center py-8 text-[hsl(0_0%_55%)] text-sm">Aucun message</div>
+          <div className="text-center py-8 text-[hsl(var(--al55))] text-sm">Aucun message</div>
         ) : (
           messages.map(msg => {
             const isAdmin = msg.sender_type === 'admin';
             return (
               <div key={msg.id} className={`flex ${isAdmin ? 'justify-end' : 'justify-start'}`}>
-                <div className={`max-w-[75%] rounded-xl px-3.5 py-2.5 ${isAdmin ? 'bg-primary/20 text-[hsl(0_0%_90%)] rounded-br-sm' : 'bg-[hsl(0_0%_100%/0.08)] text-[hsl(0_0%_80%)] rounded-bl-sm'}`}>
+                <div className={`max-w-[75%] rounded-xl px-3.5 py-2.5 ${isAdmin ? 'bg-primary/20 text-[hsl(var(--al90))] rounded-br-sm' : 'bg-[hsl(var(--aov08))] text-[hsl(var(--al80))] rounded-bl-sm'}`}>
                   <p className="text-sm whitespace-pre-wrap">{msg.message}</p>
                   {msg.image_url && <SecureMessageImage stored={msg.image_url} />}
-                  <p className={`text-[10px] mt-1 ${isAdmin ? 'text-primary/60' : 'text-[hsl(0_0%_45%)]'}`}>
+                  <p className={`text-[10px] mt-1 ${isAdmin ? 'text-primary/60' : 'text-[hsl(var(--al45))]'}`}>
                     {isAdmin ? '🟢 Vous' : '👤 Client'} · {formatTime(msg.created_at)}
                   </p>
                 </div>
@@ -690,19 +690,19 @@ const GarageConversationView = ({ thread, onBack }: { thread: ClientThread; onBa
       </div>
 
       {/* Reply */}
-      <div className="shrink-0 pt-3 border-t border-[hsl(0_0%_18%)]">
+      <div className="shrink-0 pt-3 border-t border-[hsl(var(--al18))]">
         {imageFile && (
-          <div className="mb-2 inline-flex items-center gap-2 bg-[hsl(0_0%_100%/0.05)] border border-[hsl(0_0%_18%)] rounded-lg p-1.5 pr-2">
+          <div className="mb-2 inline-flex items-center gap-2 bg-[hsl(var(--aov05))] border border-[hsl(var(--al18))] rounded-lg p-1.5 pr-2">
             <img src={URL.createObjectURL(imageFile)} alt="Preview" className="w-12 h-12 object-cover rounded" />
-            <span className="text-xs text-[hsl(0_0%_70%)] max-w-[140px] truncate">{imageFile.name}</span>
-            <button onClick={() => { setImageFile(null); if (inputRef.current) inputRef.current.value = ''; }} className="text-[hsl(0_0%_55%)] hover:text-[hsl(0_0%_90%)]">
+            <span className="text-xs text-[hsl(var(--al70))] max-w-[140px] truncate">{imageFile.name}</span>
+            <button onClick={() => { setImageFile(null); if (inputRef.current) inputRef.current.value = ''; }} className="text-[hsl(var(--al55))] hover:text-[hsl(var(--al90))]">
               <X className="w-3.5 h-3.5" />
             </button>
           </div>
         )}
         <div className="flex gap-2 items-end">
           <input ref={inputRef} type="file" accept="image/*" className="hidden" onChange={handleFileSelect} />
-          <Button size="sm" variant="outline" onClick={() => inputRef.current?.click()} disabled={sending || uploading} className="shrink-0 border-[hsl(0_0%_18%)] text-[hsl(0_0%_70%)] hover:text-[hsl(0_0%_90%)] h-[60px]" title="Joindre une image">
+          <Button size="sm" variant="outline" onClick={() => inputRef.current?.click()} disabled={sending || uploading} className="shrink-0 border-[hsl(var(--al18))] text-[hsl(var(--al70))] hover:text-[hsl(var(--al90))] h-[60px]" title="Joindre une image">
             <Paperclip className="w-4 h-4" />
           </Button>
           <textarea
@@ -710,7 +710,7 @@ const GarageConversationView = ({ thread, onBack }: { thread: ClientThread; onBa
             onChange={(e) => setReplyText(e.target.value)}
             placeholder="Répondre au client..."
             rows={2}
-            className="flex-1 bg-[hsl(0_0%_100%/0.05)] border border-[hsl(0_0%_18%)] rounded-lg px-3 py-2 text-sm text-[hsl(0_0%_85%)] placeholder:text-[hsl(0_0%_40%)] focus:outline-none focus:border-primary/40 resize-none"
+            className="flex-1 bg-[hsl(var(--aov05))] border border-[hsl(var(--al18))] rounded-lg px-3 py-2 text-sm text-[hsl(var(--al85))] placeholder:text-[hsl(var(--al40))] focus:outline-none focus:border-primary/40 resize-none"
             onKeyDown={(e) => { if (e.key === 'Enter' && !e.shiftKey) { e.preventDefault(); handleReply(); } }}
           />
           <Button size="sm" disabled={(!replyText.trim() && !imageFile) || sending || uploading} onClick={handleReply} className="gap-1.5 bg-primary hover:bg-primary/90 shrink-0">
@@ -851,7 +851,7 @@ const GarageTab = ({ initialUserId, onSelectionChange }: { initialUserId?: strin
       className={`px-3 py-1.5 rounded-full text-xs font-semibold border transition-colors ${
         filter === value
           ? 'bg-primary/20 text-primary border-primary/40'
-          : `bg-[hsl(0_0%_100%/0.04)] border-[hsl(0_0%_18%)] text-[hsl(0_0%_65%)] hover:text-[hsl(0_0%_90%)] ${color || ''}`
+          : `bg-[hsl(var(--aov04))] border-[hsl(var(--al18))] text-[hsl(var(--al65))] hover:text-[hsl(var(--al90))] ${color || ''}`
       }`}
     >
       {label} <span className="opacity-70">({count})</span>
@@ -868,22 +868,22 @@ const GarageTab = ({ initialUserId, onSelectionChange }: { initialUserId?: strin
       </div>
 
       {filteredThreads.length === 0 ? (
-        <div className="text-center py-12 text-[hsl(0_0%_55%)]">Aucune conversation.</div>
+        <div className="text-center py-12 text-[hsl(var(--al55))]">Aucune conversation.</div>
       ) : (
         <div className="space-y-2">
           {filteredThreads.map(t => (
             <div
               key={`${t.user_id}-${t.order_id || 'general'}`}
               onClick={() => { setSelectedThread(t); onSelectionChange?.(t.user_id); }}
-              className="bg-[hsl(0_0%_100%/0.03)] border border-[hsl(0_0%_18%)] rounded-lg px-4 py-3 cursor-pointer hover:bg-[hsl(0_0%_100%/0.05)] transition-colors flex items-center gap-3"
+              className="bg-[hsl(var(--aov03))] border border-[hsl(var(--al18))] rounded-lg px-4 py-3 cursor-pointer hover:bg-[hsl(var(--aov05))] transition-colors flex items-center gap-3"
             >
               <div className="w-9 h-9 rounded-full bg-primary/15 flex items-center justify-center shrink-0">
                 {t.order_id ? <Package className="w-4 h-4 text-primary" /> : <MessageSquare className="w-4 h-4 text-primary" />}
               </div>
               <div className="flex-1 min-w-0">
                 <div className="flex items-center gap-2 mb-0.5 flex-wrap">
-                  <span className="text-sm font-medium text-[hsl(0_0%_90%)] truncate">{t.display_name}</span>
-                  <span className="text-xs text-[hsl(0_0%_45%)]">·</span>
+                  <span className="text-sm font-medium text-[hsl(var(--al90))] truncate">{t.display_name}</span>
+                  <span className="text-xs text-[hsl(var(--al45))]">·</span>
                   <span className="text-xs text-primary/80 font-mono">
                     {t.order_number || 'Question générale'}
                   </span>
@@ -891,12 +891,12 @@ const GarageTab = ({ initialUserId, onSelectionChange }: { initialUserId?: strin
                     {STATUS_PILL[t.status].label}
                   </span>
                 </div>
-                <p className="text-xs text-[hsl(0_0%_60%)] truncate">{t.last_message.substring(0, 80)}</p>
+                <p className="text-xs text-[hsl(var(--al60))] truncate">{t.last_message.substring(0, 80)}</p>
               </div>
               <div className="flex flex-col items-end gap-1 shrink-0">
-                <span className="text-xs text-[hsl(0_0%_45%)]">{formatDate(t.last_message_at)}</span>
+                <span className="text-xs text-[hsl(var(--al45))]">{formatDate(t.last_message_at)}</span>
                 <div className="flex items-center gap-1.5">
-                  <span className="text-xs text-[hsl(0_0%_50%)]">{t.message_count} msg</span>
+                  <span className="text-xs text-[hsl(var(--al50))]">{t.message_count} msg</span>
                   {t.unread_count > 0 && (
                     <span className="w-5 h-5 rounded-full bg-amber-500 text-white text-[10px] font-bold flex items-center justify-center">{t.unread_count}</span>
                   )}
@@ -959,18 +959,18 @@ const ContactMessagesManager = () => {
   return (
     <div className="space-y-4">
       <div className="flex items-center justify-between">
-        <h2 className="text-lg font-semibold text-[hsl(0_0%_95%)]">Messages</h2>
-        <Button variant="outline" size="sm" onClick={fetchContactMessages} className="gap-1.5 border-[hsl(0_0%_18%)] text-[hsl(0_0%_55%)]">
+        <h2 className="text-lg font-semibold text-[hsl(var(--al95))]">Messages</h2>
+        <Button variant="outline" size="sm" onClick={fetchContactMessages} className="gap-1.5 border-[hsl(var(--al18))] text-[hsl(var(--al55))]">
           <RefreshCw className="w-3.5 h-3.5" /> Actualiser
         </Button>
       </div>
 
       <Tabs value={activeSubTab} onValueChange={(v) => { setActiveSubTab(v as 'contact' | 'garage'); clearDeepLinkParams(); }}>
-        <TabsList className="bg-[hsl(0_0%_100%/0.05)] border border-[hsl(0_0%_18%)]">
-          <TabsTrigger value="contact" className="gap-1.5 data-[state=active]:bg-[hsl(0_0%_100%/0.1)] text-[hsl(0_0%_70%)]">
+        <TabsList className="bg-[hsl(var(--aov05))] border border-[hsl(var(--al18))]">
+          <TabsTrigger value="contact" className="gap-1.5 data-[state=active]:bg-[hsl(var(--aov10))] text-[hsl(var(--al70))]">
             <Mail className="w-3.5 h-3.5" /> Contact ({contactMessages.length})
           </TabsTrigger>
-          <TabsTrigger value="garage" className="gap-1.5 data-[state=active]:bg-[hsl(0_0%_100%/0.1)] text-[hsl(0_0%_70%)]">
+          <TabsTrigger value="garage" className="gap-1.5 data-[state=active]:bg-[hsl(var(--aov10))] text-[hsl(var(--al70))]">
             <MessageSquare className="w-3.5 h-3.5" /> Garage
           </TabsTrigger>
         </TabsList>

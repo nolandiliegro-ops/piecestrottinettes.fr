@@ -71,8 +71,8 @@ const HomeBridgeManager = () => {
           <Sparkles className="w-4 h-4 text-primary" />
         </div>
         <div>
-          <h2 className="text-xl font-bold text-[hsl(0_0%_95%)]">Home Bridge</h2>
-          <p className="text-sm text-[hsl(0_0%_55%)] mt-0.5">
+          <h2 className="text-xl font-bold text-[hsl(var(--al95))]">Home Bridge</h2>
+          <p className="text-sm text-[hsl(var(--al55))] mt-0.5">
             Bloc dark entre la hero et le carrousel — filigrane éditable, couleur ajustable.
           </p>
         </div>
@@ -80,10 +80,10 @@ const HomeBridgeManager = () => {
 
       <div className="grid grid-cols-1 md:grid-cols-[1.2fr_1fr] gap-6">
         {/* Panel gauche — édition */}
-        <div className="rounded-xl border border-[hsl(0_0%_18%)] bg-[hsl(0_0%_12%)] p-5 space-y-5">
+        <div className="rounded-xl border border-[hsl(var(--al18))] bg-[hsl(var(--al12))] p-5 space-y-5">
           {/* 1. Switch is_enabled */}
           <div className="flex items-center justify-between gap-3">
-            <Label htmlFor="hb-enabled" className="text-sm text-[hsl(0_0%_95%)] cursor-pointer">
+            <Label htmlFor="hb-enabled" className="text-sm text-[hsl(var(--al95))] cursor-pointer">
               Activer le bloc dark
             </Label>
             <Switch
@@ -95,7 +95,7 @@ const HomeBridgeManager = () => {
 
           {/* 2. Input watermark_text */}
           <div className="space-y-2">
-            <Label htmlFor="hb-text" className="text-sm text-[hsl(0_0%_95%)]">
+            <Label htmlFor="hb-text" className="text-sm text-[hsl(var(--al95))]">
               Texte du filigrane
             </Label>
             <Input
@@ -104,9 +104,9 @@ const HomeBridgeManager = () => {
               maxLength={40}
               placeholder="PIECESTROTTINETTES"
               onChange={(e) => setLocal({ ...local, watermark_text: e.target.value })}
-              className="bg-[hsl(0_0%_15%)] border-[hsl(0_0%_22%)] text-[hsl(0_0%_95%)]"
+              className="bg-[hsl(var(--al15))] border-[hsl(var(--al22))] text-[hsl(var(--al95))]"
             />
-            <p className="text-[10px] text-[hsl(0_0%_45%)] tabular-nums">
+            <p className="text-[10px] text-[hsl(var(--al45))] tabular-nums">
               {local.watermark_text.length} / 40 caractères
             </p>
           </div>
@@ -114,10 +114,10 @@ const HomeBridgeManager = () => {
           {/* 3. Slider watermark_opacity */}
           <div className="space-y-2">
             <div className="flex items-center justify-between gap-3">
-              <Label htmlFor="hb-opacity" className="text-sm text-[hsl(0_0%_95%)]">
+              <Label htmlFor="hb-opacity" className="text-sm text-[hsl(var(--al95))]">
                 Opacité du filigrane
               </Label>
-              <span className="text-xs text-[hsl(0_0%_55%)] tabular-nums">
+              <span className="text-xs text-[hsl(var(--al55))] tabular-nums">
                 {local.watermark_opacity.toFixed(1)} / 15
               </span>
             </div>
@@ -133,7 +133,7 @@ const HomeBridgeManager = () => {
 
           {/* 4. RadioGroup watermark_color_mode */}
           <div className="space-y-2">
-            <Label className="text-sm text-[hsl(0_0%_95%)]">
+            <Label className="text-sm text-[hsl(var(--al95))]">
               Mode couleur du filigrane
             </Label>
             <RadioGroup
@@ -151,7 +151,7 @@ const HomeBridgeManager = () => {
 
           {/* 5. Color picker dark_block_color */}
           <div className="space-y-2">
-            <Label htmlFor="hb-color" className="text-sm text-[hsl(0_0%_95%)]">
+            <Label htmlFor="hb-color" className="text-sm text-[hsl(var(--al95))]">
               Couleur du bloc dark
             </Label>
             <div className="flex gap-2">
@@ -160,7 +160,7 @@ const HomeBridgeManager = () => {
                 type="color"
                 value={hexValid ? local.dark_block_color : "#3A3A3A"}
                 onChange={(e) => setLocal({ ...local, dark_block_color: e.target.value })}
-                className="h-10 w-14 rounded border border-[hsl(0_0%_22%)] cursor-pointer bg-transparent"
+                className="h-10 w-14 rounded border border-[hsl(var(--al22))] cursor-pointer bg-transparent"
                 aria-label="Sélecteur de couleur"
               />
               <Input
@@ -168,7 +168,7 @@ const HomeBridgeManager = () => {
                 onChange={(e) => setLocal({ ...local, dark_block_color: e.target.value })}
                 placeholder="#3A3A3A"
                 maxLength={7}
-                className="flex-1 bg-[hsl(0_0%_15%)] border-[hsl(0_0%_22%)] text-[hsl(0_0%_95%)] font-mono text-sm"
+                className="flex-1 bg-[hsl(var(--al15))] border-[hsl(var(--al22))] text-[hsl(var(--al95))] font-mono text-sm"
                 aria-label="Hex manuel"
               />
             </div>
@@ -180,7 +180,7 @@ const HomeBridgeManager = () => {
           </div>
 
           {/* Buttons */}
-          <div className="flex items-center gap-3 pt-2 border-t border-[hsl(0_0%_18%)]">
+          <div className="flex items-center gap-3 pt-2 border-t border-[hsl(var(--al18))]">
             <Button
               variant="ghost"
               size="sm"
@@ -208,14 +208,14 @@ const HomeBridgeManager = () => {
         </div>
 
         {/* Panel droite — preview live */}
-        <div className="rounded-xl border border-[hsl(0_0%_18%)] bg-[hsl(0_0%_12%)] p-5 space-y-3">
+        <div className="rounded-xl border border-[hsl(var(--al18))] bg-[hsl(var(--al12))] p-5 space-y-3">
           <div>
-            <Label className="text-sm text-[hsl(0_0%_95%)]">Preview live</Label>
-            <p className="text-xs text-[hsl(0_0%_55%)] mt-0.5">
+            <Label className="text-sm text-[hsl(var(--al95))]">Preview live</Label>
+            <p className="text-xs text-[hsl(var(--al55))] mt-0.5">
               Reflète l'état en cours d'édition, pas la valeur publiée.
             </p>
           </div>
-          <div className="rounded-lg overflow-hidden border border-[hsl(0_0%_22%)]">
+          <div className="rounded-lg overflow-hidden border border-[hsl(var(--al22))]">
             <HomeBridgeView settings={local} />
           </div>
           {!local.is_enabled && (
@@ -232,10 +232,10 @@ const HomeBridgeManager = () => {
 const RadioRow = ({ value, label }: { value: string; label: string }) => (
   <label
     htmlFor={`hb-mode-${value}`}
-    className="flex items-center gap-2 px-3 py-2 rounded-lg border border-[hsl(0_0%_22%)] cursor-pointer hover:bg-[hsl(0_0%_15%)] transition-colors"
+    className="flex items-center gap-2 px-3 py-2 rounded-lg border border-[hsl(var(--al22))] cursor-pointer hover:bg-[hsl(var(--al15))] transition-colors"
   >
     <RadioGroupItem value={value} id={`hb-mode-${value}`} />
-    <span className="text-sm text-[hsl(0_0%_85%)]">{label}</span>
+    <span className="text-sm text-[hsl(var(--al85))]">{label}</span>
   </label>
 );
 

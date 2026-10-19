@@ -116,7 +116,7 @@ function App() {
                 <Profile />
               </ProtectedRoute>
             } />
-            <Route path="/admin" element={
+            <Route path="/admin/*" element={
               <ProtectedRoute>
                 <Admin />
               </ProtectedRoute>

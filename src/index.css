@@ -527,32 +527,81 @@
   }
 }
 
-/* Admin Studio Theme */
+/* Admin Studio Theme — CLAIR (refonte 19/10/2026), aligné sur la DA du site.
+   La rampe --alXX re-mappe chaque ancienne valeur du thème sombre (hsl(0 0% XX%))
+   vers son équivalent clair : les composants utilisent hsl(var(--alXX)). */
 .admin-studio {
-  --admin-bg: 0 0% 10%;
-  --admin-card: 0 0% 10%;
+  --admin-bg: 40 30% 96%;          /* beige crème page */
+  --admin-card: 0 0% 100%;         /* cartes blanches */
   --admin-card-glass: 0 0% 100%;
-  --admin-accent: 144 20% 65%;
-  --admin-text: 0 0% 95%;
-  --admin-text-muted: 0 0% 55%;
-  --admin-border: 0 0% 18%;
+  --admin-accent: 140 26% 39%;     /* vert sauge #4A7C59 */
+  --admin-text: 0 0% 12%;          /* carbon */
+  --admin-text-muted: 220 9% 46%;  /* #6B7280 */
+  --admin-border: 40 14% 88%;
+
+  /* Rampe surfaces (anciens fonds sombres 6→15 %) */
+  --al6: 40 18% 93%;
+  --al8: 40 20% 94%;
+  --al9: 40 24% 95%;
+  --al10: 40 30% 96%;
+  --al12: 40 24% 97%;
+  --al14: 40 20% 96%;
+  --al15: 40 18% 95%;
+  /* Rampe bordures (anciens 18→30 %) */
+  --al18: 40 14% 88%;
+  --al20: 40 13% 86%;
+  --al22: 40 12% 84%;
+  --al25: 40 10% 80%;
+  --al30: 40 8% 74%;
+  /* Rampe textes atténués (anciens 40→65 %) */
+  --al40: 220 6% 64%;
+  --al45: 220 7% 58%;
+  --al50: 220 8% 52%;
+  --al55: 220 9% 46%;
+  --al60: 220 9% 40%;
+  --al65: 220 10% 36%;
+  /* Rampe textes forts (anciens 70→95 %) */
+  --al70: 0 0% 32%;
+  --al75: 0 0% 28%;
+  --al80: 0 0% 24%;
+  --al85: 0 0% 20%;
+  --al90: 0 0% 16%;
+  --al95: 0 0% 12%;
+  /* Voiles (anciens blancs translucides sur fond noir → encre translucide) */
+  --aov03: 0 0% 10% / 0.03;
+  --aov04: 0 0% 10% / 0.04;
+  --aov05: 0 0% 10% / 0.04;
+  --aov06: 0 0% 10% / 0.05;
+  --aov08: 0 0% 10% / 0.06;
+  --aov10: 0 0% 10% / 0.08;
+
+  background: hsl(var(--admin-bg));
+  color: hsl(var(--admin-text));
 }
 
 .admin-glass-card {
-  background: hsl(0 0% 100% / 0.05);
-  backdrop-filter: blur(16px);
-  border: 1px solid hsl(0 0% 100% / 0.08);
+  background: hsl(0 0% 100%);
+  border: 1px solid hsl(var(--admin-border));
+  box-shadow: 0 1px 2px hsl(0 0% 10% / 0.04), 0 6px 20px hsl(0 0% 10% / 0.05);
 }
 
 .admin-glass-card-active {
-  background: hsl(0 0% 100% / 0.05);
-  backdrop-filter: blur(16px);
-  border: 1px solid hsl(144 20% 65% / 0.3);
-  box-shadow: 0 0 15px hsl(144 20% 65% / 0.15);
+  background: hsl(0 0% 100%);
+  border: 1px solid hsl(var(--admin-accent) / 0.4);
+  box-shadow: 0 0 0 3px hsl(var(--admin-accent) / 0.1);
+}
+
+/* Masque la barre de défilement des listes d'onglets qui défilent au doigt */
+.scrollbar-none {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.scrollbar-none::-webkit-scrollbar {
+  display: none;
 }
 
 .admin-skeleton {
-  background: linear-gradient(90deg, hsl(0 0% 15%) 25%, hsl(0 0% 20%) 50%, hsl(0 0% 15%) 75%);
+  background: linear-gradient(90deg, hsl(40 15% 91%) 25%, hsl(40 15% 87%) 50%, hsl(40 15% 91%) 75%);
   background-size: 200% 100%;
   animation: shimmer 1.5s ease-in-out infinite;
 }

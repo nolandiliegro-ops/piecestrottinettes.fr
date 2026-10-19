@@ -119,7 +119,7 @@ const WatcherControl = () => {
       </div>
 
       {/* Trigger panel */}
-      <div className="rounded-2xl border border-[hsl(0_0%_18%)] bg-[hsl(0_0%_100%/0.03)] p-5 space-y-4">
+      <div className="rounded-2xl border border-[hsl(var(--al18))] bg-[hsl(var(--aov03))] p-5 space-y-4">
         <h3 className="font-semibold text-sm uppercase tracking-wide text-muted-foreground">Lancer une veille</h3>
         <div className="grid grid-cols-1 md:grid-cols-4 gap-3">
           <div>
@@ -152,7 +152,7 @@ const WatcherControl = () => {
       </div>
 
       {/* History */}
-      <div className="rounded-2xl border border-[hsl(0_0%_18%)] bg-[hsl(0_0%_100%/0.03)] p-5 space-y-3">
+      <div className="rounded-2xl border border-[hsl(var(--al18))] bg-[hsl(var(--aov03))] p-5 space-y-3">
         <h3 className="font-semibold text-sm uppercase tracking-wide text-muted-foreground">
           Historique (20 dernières runs)
         </h3>

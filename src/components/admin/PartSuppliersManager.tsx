@@ -146,30 +146,30 @@ const SupplierFormDialog = ({
 
   return (
     <Dialog open={open} onOpenChange={onOpenChange}>
-      <DialogContent className="bg-[hsl(0_0%_10%)] border-[hsl(0_0%_18%)] max-w-md max-h-[90vh] overflow-y-auto">
+      <DialogContent className="bg-[hsl(var(--al10))] border-[hsl(var(--al18))] max-w-md max-h-[90vh] overflow-y-auto">
         <DialogHeader>
-          <DialogTitle className="text-[hsl(0_0%_90%)]">
+          <DialogTitle className="text-[hsl(var(--al90))]">
             {rowId ? 'Modifier fournisseur' : 'Ajouter un fournisseur'}
           </DialogTitle>
-          <DialogDescription className="text-[hsl(0_0%_50%)] text-xs">
+          <DialogDescription className="text-[hsl(var(--al50))] text-xs">
             Informations B2B internes (non publiques).
           </DialogDescription>
         </DialogHeader>
 
         <div className="space-y-3">
           <div className="space-y-1">
-            <label className="text-xs text-[hsl(0_0%_55%)]">Fournisseur *</label>
+            <label className="text-xs text-[hsl(var(--al55))]">Fournisseur *</label>
             <Select
               value={form.supplier_name}
               onValueChange={(v) => setForm((f) => ({ ...f, supplier_name: v as SupplierName }))}
               disabled={!!rowId}
             >
-              <SelectTrigger className="bg-[hsl(0_0%_8%)] border-[hsl(0_0%_20%)] text-[hsl(0_0%_90%)] h-11 text-base md:h-9 md:text-sm">
+              <SelectTrigger className="bg-[hsl(var(--al8))] border-[hsl(var(--al20))] text-[hsl(var(--al90))] h-11 text-base md:h-9 md:text-sm">
                 <SelectValue />
               </SelectTrigger>
-              <SelectContent className="bg-[hsl(0_0%_10%)] border-[hsl(0_0%_20%)]">
+              <SelectContent className="bg-[hsl(var(--al10))] border-[hsl(var(--al20))]">
                 {SUPPLIERS.map((s) => (
-                  <SelectItem key={s} value={s} className="text-[hsl(0_0%_90%)] capitalize">{s}</SelectItem>
+                  <SelectItem key={s} value={s} className="text-[hsl(var(--al90))] capitalize">{s}</SelectItem>
                 ))}
               </SelectContent>
             </Select>
@@ -177,50 +177,50 @@ const SupplierFormDialog = ({
 
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
             <div className="space-y-1">
-              <label className="text-xs text-[hsl(0_0%_55%)]">SKU fournisseur</label>
+              <label className="text-xs text-[hsl(var(--al55))]">SKU fournisseur</label>
               <Input value={form.supplier_sku} onChange={(e) => setField('supplier_sku', e.target.value)}
-                className="bg-[hsl(0_0%_8%)] border-[hsl(0_0%_20%)] text-[hsl(0_0%_90%)] h-11 text-base md:h-9 md:text-sm" />
+                className="bg-[hsl(var(--al8))] border-[hsl(var(--al20))] text-[hsl(var(--al90))] h-11 text-base md:h-9 md:text-sm" />
             </div>
             <div className="space-y-1">
-              <label className="text-xs text-[hsl(0_0%_55%)]">Prix achat HT (€)</label>
+              <label className="text-xs text-[hsl(var(--al55))]">Prix achat HT (€)</label>
               <Input type="number" step="0.01" inputMode="decimal" value={form.buy_price_ht}
                 onChange={(e) => setField('buy_price_ht', e.target.value)}
-                className="bg-[hsl(0_0%_8%)] border-[hsl(0_0%_20%)] text-[hsl(0_0%_90%)] h-11 text-base md:h-9 md:text-sm" />
+                className="bg-[hsl(var(--al8))] border-[hsl(var(--al20))] text-[hsl(var(--al90))] h-11 text-base md:h-9 md:text-sm" />
             </div>
           </div>
 
           <div className="space-y-1">
-            <label className="text-xs text-[hsl(0_0%_55%)]">URL produit</label>
+            <label className="text-xs text-[hsl(var(--al55))]">URL produit</label>
             <Input value={form.supplier_url} onChange={(e) => setField('supplier_url', e.target.value)}
               placeholder="https://..."
-              className="bg-[hsl(0_0%_8%)] border-[hsl(0_0%_20%)] text-[hsl(0_0%_90%)] h-11 text-base md:h-9 md:text-sm" />
+              className="bg-[hsl(var(--al8))] border-[hsl(var(--al20))] text-[hsl(var(--al90))] h-11 text-base md:h-9 md:text-sm" />
           </div>
 
           <div className="grid grid-cols-2 gap-3">
             <div className="space-y-1">
-              <label className="text-xs text-[hsl(0_0%_55%)]">Stock fournisseur</label>
+              <label className="text-xs text-[hsl(var(--al55))]">Stock fournisseur</label>
               <Input type="number" inputMode="numeric" value={form.stock_supplier}
                 onChange={(e) => setField('stock_supplier', e.target.value)}
-                className="bg-[hsl(0_0%_8%)] border-[hsl(0_0%_20%)] text-[hsl(0_0%_90%)] h-11 text-base md:h-9 md:text-sm" />
+                className="bg-[hsl(var(--al8))] border-[hsl(var(--al20))] text-[hsl(var(--al90))] h-11 text-base md:h-9 md:text-sm" />
             </div>
             <div className="space-y-1">
-              <label className="text-xs text-[hsl(0_0%_55%)]">Délai (jours)</label>
+              <label className="text-xs text-[hsl(var(--al55))]">Délai (jours)</label>
               <Input type="number" inputMode="numeric" value={form.shipping_time_days}
                 onChange={(e) => setField('shipping_time_days', e.target.value)}
-                className="bg-[hsl(0_0%_8%)] border-[hsl(0_0%_20%)] text-[hsl(0_0%_90%)] h-11 text-base md:h-9 md:text-sm" />
+                className="bg-[hsl(var(--al8))] border-[hsl(var(--al20))] text-[hsl(var(--al90))] h-11 text-base md:h-9 md:text-sm" />
             </div>
           </div>
 
           <div className="space-y-1">
-            <label className="text-xs text-[hsl(0_0%_55%)]">Notes</label>
+            <label className="text-xs text-[hsl(var(--al55))]">Notes</label>
             <Textarea value={form.notes} onChange={(e) => setField('notes', e.target.value)} rows={2}
-              className="bg-[hsl(0_0%_8%)] border-[hsl(0_0%_20%)] text-[hsl(0_0%_90%)] text-sm" />
+              className="bg-[hsl(var(--al8))] border-[hsl(var(--al20))] text-[hsl(var(--al90))] text-sm" />
           </div>
         </div>
 
         <DialogFooter className="gap-2">
           <Button variant="outline" onClick={() => onOpenChange(false)}
-            className="border-[hsl(0_0%_20%)] text-[hsl(0_0%_70%)] min-h-[44px]">
+            className="border-[hsl(var(--al20))] text-[hsl(var(--al70))] min-h-[44px]">
             Annuler
           </Button>
           <Button onClick={() => mutation.mutate()} disabled={mutation.isPending}
@@ -299,7 +299,7 @@ const PartSuppliersManager = ({ partId, partPrice }: PartSuppliersManagerProps) 
   return (
     <div className="space-y-3">
       <div className="flex items-center justify-between gap-2">
-        <p className="text-xs text-[hsl(0_0%_55%)]">
+        <p className="text-xs text-[hsl(var(--al55))]">
           {suppliers.length} fournisseur{suppliers.length > 1 ? 's' : ''}
         </p>
         <Dialog open={addOpen} onOpenChange={setAddOpen}>
@@ -317,10 +317,10 @@ const PartSuppliersManager = ({ partId, partPrice }: PartSuppliersManagerProps) 
 
       {isLoading ? (
         <div className="flex items-center justify-center py-4">
-          <Loader2 className="w-4 h-4 animate-spin text-[hsl(0_0%_50%)]" />
+          <Loader2 className="w-4 h-4 animate-spin text-[hsl(var(--al50))]" />
         </div>
       ) : suppliers.length === 0 ? (
-        <p className="text-xs text-[hsl(0_0%_40%)] py-3 text-center">
+        <p className="text-xs text-[hsl(var(--al40))] py-3 text-center">
           Aucun fournisseur. Cliquez sur "Ajouter".
         </p>
       ) : (
@@ -334,12 +334,12 @@ const PartSuppliersManager = ({ partId, partPrice }: PartSuppliersManagerProps) 
                   'rounded-xl border p-3 space-y-2',
                   s.is_primary
                     ? 'bg-emerald-500/5 border-emerald-500/30'
-                    : 'bg-[hsl(0_0%_9%)] border-[hsl(0_0%_18%)]',
+                    : 'bg-[hsl(var(--al9))] border-[hsl(var(--al18))]',
                 )}
               >
                 <div className="flex items-start justify-between gap-2 flex-wrap">
                   <div className="flex items-center gap-2 flex-wrap">
-                    <span className="text-sm font-semibold text-[hsl(0_0%_90%)] capitalize">
+                    <span className="text-sm font-semibold text-[hsl(var(--al90))] capitalize">
                       {s.supplier_name}
                     </span>
                     {s.is_primary && (
@@ -349,7 +349,7 @@ const PartSuppliersManager = ({ partId, partPrice }: PartSuppliersManagerProps) 
                       </Badge>
                     )}
                     {s.supplier_sku && (
-                      <span className="text-[10px] text-[hsl(0_0%_50%)] font-mono">
+                      <span className="text-[10px] text-[hsl(var(--al50))] font-mono">
                         {s.supplier_sku}
                       </span>
                     )}
@@ -365,7 +365,7 @@ const PartSuppliersManager = ({ partId, partPrice }: PartSuppliersManagerProps) 
 
                 <div className="flex flex-wrap gap-2 text-[11px]">
                   {s.buy_price_ht != null && (
-                    <span className="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-[hsl(0_0%_15%)] text-[hsl(0_0%_70%)]">
+                    <span className="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-[hsl(var(--al15))] text-[hsl(var(--al70))]">
                       <Euro className="w-3 h-3 text-amber-400" />
                       {Number(s.buy_price_ht).toFixed(2)} HT
                     </span>
@@ -383,13 +383,13 @@ const PartSuppliersManager = ({ partId, partPrice }: PartSuppliersManagerProps) 
                     </span>
                   )}
                   {s.stock_supplier != null && (
-                    <span className="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-[hsl(0_0%_15%)] text-[hsl(0_0%_70%)]">
+                    <span className="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-[hsl(var(--al15))] text-[hsl(var(--al70))]">
                       <Package className="w-3 h-3 text-blue-400" />
                       {s.stock_supplier}
                     </span>
                   )}
                   {s.shipping_time_days != null && (
-                    <span className="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-[hsl(0_0%_15%)] text-[hsl(0_0%_70%)]">
+                    <span className="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-[hsl(var(--al15))] text-[hsl(var(--al70))]">
                       <Truck className="w-3 h-3 text-violet-400" />
                       {s.shipping_time_days}j
                     </span>
@@ -397,7 +397,7 @@ const PartSuppliersManager = ({ partId, partPrice }: PartSuppliersManagerProps) 
                 </div>
 
                 {s.notes && (
-                  <p className="text-[11px] text-[hsl(0_0%_50%)] italic">{s.notes}</p>
+                  <p className="text-[11px] text-[hsl(var(--al50))] italic">{s.notes}</p>
                 )}
 
                 <div className="flex flex-wrap gap-1.5 pt-1">
@@ -411,7 +411,7 @@ const PartSuppliersManager = ({ partId, partPrice }: PartSuppliersManagerProps) 
                     </Button>
                   )}
                   <Button size="sm" variant="outline"
-                    className="border-[hsl(0_0%_25%)] text-[hsl(0_0%_70%)] hover:bg-[hsl(0_0%_15%)] text-xs gap-1 min-h-[44px] sm:min-h-0"
+                    className="border-[hsl(var(--al25))] text-[hsl(var(--al70))] hover:bg-[hsl(var(--al15))] text-xs gap-1 min-h-[44px] sm:min-h-0"
                     onClick={() => setEditingRow(s)}>
                     <Pencil className="w-3 h-3" />
                     Modifier
@@ -423,9 +423,9 @@ const PartSuppliersManager = ({ partId, partPrice }: PartSuppliersManagerProps) 
                         <Trash2 className="w-3 h-3" />
                       </Button>
                     </AlertDialogTrigger>
-                    <AlertDialogContent className="bg-[hsl(0_0%_12%)] border-[hsl(0_0%_18%)]">
+                    <AlertDialogContent className="bg-[hsl(var(--al12))] border-[hsl(var(--al18))]">
                       <AlertDialogHeader>
-                        <AlertDialogTitle className="text-[hsl(0_0%_90%)]">
+                        <AlertDialogTitle className="text-[hsl(var(--al90))]">
                           Supprimer ce fournisseur ?
                         </AlertDialogTitle>
                         <AlertDialogDescription>
@@ -433,7 +433,7 @@ const PartSuppliersManager = ({ partId, partPrice }: PartSuppliersManagerProps) 
                         </AlertDialogDescription>
                       </AlertDialogHeader>
                       <AlertDialogFooter>
-                        <AlertDialogCancel className="bg-[hsl(0_0%_15%)] border-[hsl(0_0%_20%)] text-[hsl(0_0%_70%)]">
+                        <AlertDialogCancel className="bg-[hsl(var(--al15))] border-[hsl(var(--al20))] text-[hsl(var(--al70))]">
                           Annuler
                         </AlertDialogCancel>
                         <AlertDialogAction className="bg-destructive text-white"

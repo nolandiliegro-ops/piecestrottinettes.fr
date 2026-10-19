@@ -120,26 +120,26 @@ const EditPartDialog = ({ part, open, onOpenChange }: { part: PartRow; open: boo
 
   const field = (label: string, key: string, type = 'text', disabled = false) => (
     <div className="space-y-1">
-      <label className="text-xs text-[hsl(0_0%_55%)]">{label}</label>
-      <Input type={type} value={form[key] ?? ''} onChange={set(key)} disabled={disabled} className="bg-[hsl(0_0%_8%)] border-[hsl(0_0%_20%)] text-[hsl(0_0%_90%)] h-8 text-xs disabled:opacity-50" />
+      <label className="text-xs text-[hsl(var(--al55))]">{label}</label>
+      <Input type={type} value={form[key] ?? ''} onChange={set(key)} disabled={disabled} className="bg-[hsl(var(--al8))] border-[hsl(var(--al20))] text-[hsl(var(--al90))] h-8 text-xs disabled:opacity-50" />
     </div>
   );
 
   return (
     <Dialog open={open} onOpenChange={onOpenChange}>
-      <DialogContent className="bg-[hsl(0_0%_10%)] border-[hsl(0_0%_18%)] max-w-2xl max-h-[85vh] overflow-y-auto">
+      <DialogContent className="bg-[hsl(var(--al10))] border-[hsl(var(--al18))] max-w-2xl max-h-[85vh] overflow-y-auto">
         <DialogHeader>
-          <DialogTitle className="text-[hsl(0_0%_90%)]">Éditer — {part?.name}</DialogTitle>
-          <DialogDescription className="text-[hsl(0_0%_50%)]">Modifiez les infos avant publication</DialogDescription>
+          <DialogTitle className="text-[hsl(var(--al90))]">Éditer — {part?.name}</DialogTitle>
+          <DialogDescription className="text-[hsl(var(--al50))]">Modifiez les infos avant publication</DialogDescription>
         </DialogHeader>
 
         <div className="space-y-4">
           {/* Image preview */}
           <div className="space-y-1">
-            <label className="text-xs text-[hsl(0_0%_55%)]">Image URL</label>
-            <Input value={form.image_url ?? ''} onChange={set('image_url')} className="bg-[hsl(0_0%_8%)] border-[hsl(0_0%_20%)] text-[hsl(0_0%_90%)] h-8 text-xs" />
+            <label className="text-xs text-[hsl(var(--al55))]">Image URL</label>
+            <Input value={form.image_url ?? ''} onChange={set('image_url')} className="bg-[hsl(var(--al8))] border-[hsl(var(--al20))] text-[hsl(var(--al90))] h-8 text-xs" />
             {form.image_url && (
-              <div className="h-32 bg-[hsl(0_0%_6%)] rounded flex items-center justify-center mt-1">
+              <div className="h-32 bg-[hsl(var(--al6))] rounded flex items-center justify-center mt-1">
                 <img src={form.image_url} alt="preview" className="h-full object-contain p-2" />
               </div>
             )}
@@ -156,10 +156,10 @@ const EditPartDialog = ({ part, open, onOpenChange }: { part: PartRow; open: boo
             {field('Difficulté (1-5)', 'difficulty_level', 'number')}
           </div>
 
-          <div className="flex items-center justify-between rounded border border-[hsl(0_0%_20%)] p-2.5">
+          <div className="flex items-center justify-between rounded border border-[hsl(var(--al20))] p-2.5">
             <div className="space-y-0.5">
-              <label className="text-xs text-[hsl(0_0%_75%)]">Prix piloté manuellement</label>
-              <p className="text-[10px] text-[hsl(0_0%_50%)]">Le sync Airtable ne réécrasera jamais ce prix.</p>
+              <label className="text-xs text-[hsl(var(--al75))]">Prix piloté manuellement</label>
+              <p className="text-[10px] text-[hsl(var(--al50))]">Le sync Airtable ne réécrasera jamais ce prix.</p>
             </div>
             <Switch
               checked={!!form.price_override}
@@ -168,22 +168,22 @@ const EditPartDialog = ({ part, open, onOpenChange }: { part: PartRow; open: boo
           </div>
 
           <div className="space-y-1">
-            <label className="text-xs text-[hsl(0_0%_55%)]">Catégorie</label>
+            <label className="text-xs text-[hsl(var(--al55))]">Catégorie</label>
             <Select value={form.category_id || ''} onValueChange={v => setForm(f => ({ ...f, category_id: v }))}>
-              <SelectTrigger className="bg-[hsl(0_0%_8%)] border-[hsl(0_0%_20%)] text-[hsl(0_0%_90%)] h-8 text-xs">
+              <SelectTrigger className="bg-[hsl(var(--al8))] border-[hsl(var(--al20))] text-[hsl(var(--al90))] h-8 text-xs">
                 <SelectValue placeholder="Sélectionner..." />
               </SelectTrigger>
-              <SelectContent className="bg-[hsl(0_0%_10%)] border-[hsl(0_0%_20%)]">
+              <SelectContent className="bg-[hsl(var(--al10))] border-[hsl(var(--al20))]">
                 {categories.map((c: any) => (
-                  <SelectItem key={c.id} value={c.id} className="text-[hsl(0_0%_90%)] text-xs">{c.name}</SelectItem>
+                  <SelectItem key={c.id} value={c.id} className="text-[hsl(var(--al90))] text-xs">{c.name}</SelectItem>
                 ))}
               </SelectContent>
             </Select>
           </div>
 
           <div className="space-y-1">
-            <label className="text-xs text-[hsl(0_0%_55%)]">Description</label>
-            <Textarea value={form.description ?? ''} onChange={set('description')} rows={3} className="bg-[hsl(0_0%_8%)] border-[hsl(0_0%_20%)] text-[hsl(0_0%_90%)] text-xs" />
+            <label className="text-xs text-[hsl(var(--al55))]">Description</label>
+            <Textarea value={form.description ?? ''} onChange={set('description')} rows={3} className="bg-[hsl(var(--al8))] border-[hsl(var(--al20))] text-[hsl(var(--al90))] text-xs" />
           </div>
 
           <div className="grid grid-cols-2 gap-3">
@@ -198,7 +198,7 @@ const EditPartDialog = ({ part, open, onOpenChange }: { part: PartRow; open: boo
         </div>
 
         <DialogFooter>
-          <Button variant="outline" onClick={() => onOpenChange(false)} className="border-[hsl(0_0%_20%)] text-[hsl(0_0%_70%)]">Annuler</Button>
+          <Button variant="outline" onClick={() => onOpenChange(false)} className="border-[hsl(var(--al20))] text-[hsl(var(--al70))]">Annuler</Button>
           <Button onClick={() => saveMutation.mutate()} disabled={saveMutation.isPending} className="bg-primary text-primary-foreground gap-1.5">
             {saveMutation.isPending ? <Loader2 className="w-3 h-3 animate-spin" /> : <Check className="w-3 h-3" />}
             Enregistrer
@@ -262,9 +262,9 @@ const PendingPartsManager = () => {
 
   if (pending.length === 0) return (
     <div className="flex flex-col items-center justify-center py-16 text-center">
-      <Bot className="w-12 h-12 text-[hsl(0_0%_30%)] mb-4" />
-      <p className="text-[hsl(0_0%_55%)] text-sm">Aucune pièce en attente de validation</p>
-      <p className="text-[hsl(0_0%_40%)] text-xs mt-1">Les imports bot apparaîtront ici</p>
+      <Bot className="w-12 h-12 text-[hsl(var(--al30))] mb-4" />
+      <p className="text-[hsl(var(--al55))] text-sm">Aucune pièce en attente de validation</p>
+      <p className="text-[hsl(var(--al40))] text-xs mt-1">Les imports bot apparaîtront ici</p>
     </div>
   );
 
@@ -272,7 +272,7 @@ const PendingPartsManager = () => {
     <div className="space-y-4">
       {/* Header */}
       <div className="flex items-center justify-between">
-        <p className="text-[hsl(0_0%_55%)] text-sm">
+        <p className="text-[hsl(var(--al55))] text-sm">
           {pending.length} pièce{pending.length > 1 ? 's' : ''} en attente
         </p>
         <AlertDialog>
@@ -282,13 +282,13 @@ const PendingPartsManager = () => {
               Tout publier ({pending.length})
             </Button>
           </AlertDialogTrigger>
-          <AlertDialogContent className="bg-[hsl(0_0%_12%)] border-[hsl(0_0%_18%)]">
+          <AlertDialogContent className="bg-[hsl(var(--al12))] border-[hsl(var(--al18))]">
             <AlertDialogHeader>
-              <AlertDialogTitle className="text-[hsl(0_0%_90%)]">Publier toutes les pièces ?</AlertDialogTitle>
+              <AlertDialogTitle className="text-[hsl(var(--al90))]">Publier toutes les pièces ?</AlertDialogTitle>
               <AlertDialogDescription>{pending.length} pièce(s) seront publiées sur le site.</AlertDialogDescription>
             </AlertDialogHeader>
             <AlertDialogFooter>
-              <AlertDialogCancel className="bg-[hsl(0_0%_15%)] border-[hsl(0_0%_20%)] text-[hsl(0_0%_70%)]">Annuler</AlertDialogCancel>
+              <AlertDialogCancel className="bg-[hsl(var(--al15))] border-[hsl(var(--al20))] text-[hsl(var(--al70))]">Annuler</AlertDialogCancel>
               <AlertDialogAction className="bg-emerald-600 text-white" onClick={() => publishAllMutation.mutate()}>
                 {publishAllMutation.isPending ? <Loader2 className="w-3 h-3 animate-spin" /> : 'Tout publier'}
               </AlertDialogAction>
@@ -304,14 +304,14 @@ const PendingPartsManager = () => {
           const isEditingImage = imageEditId === part.id;
 
           return (
-            <Card key={part.id} className="bg-[hsl(0_0%_12%)] border-[hsl(0_0%_18%)] overflow-hidden">
+            <Card key={part.id} className="bg-[hsl(var(--al12))] border-[hsl(var(--al18))] overflow-hidden">
               <CardContent className="p-0">
                 {/* Image */}
-                <div className="relative h-40 bg-[hsl(0_0%_8%)] flex items-center justify-center">
+                <div className="relative h-40 bg-[hsl(var(--al8))] flex items-center justify-center">
                   {part.image_url ? (
                     <img src={part.image_url} alt={part.name} className="h-full w-full object-contain p-4" />
                   ) : (
-                    <div className="text-[hsl(0_0%_25%)] text-4xl">🔧</div>
+                    <div className="text-[hsl(var(--al25))] text-4xl">🔧</div>
                   )}
                   <Badge className="absolute top-2 left-2 bg-violet-600/90 text-white text-[10px] gap-1">
                     <Bot className="w-3 h-3" />Bot
@@ -328,12 +328,12 @@ const PendingPartsManager = () => {
 
                 {/* Inline image URL editor */}
                 {isEditingImage && (
-                  <div className="flex gap-1.5 px-3 py-2 bg-[hsl(0_0%_9%)]">
+                  <div className="flex gap-1.5 px-3 py-2 bg-[hsl(var(--al9))]">
                     <Input
                       value={imageUrlDraft}
                       onChange={e => setImageUrlDraft(e.target.value)}
                       placeholder="https://..."
-                      className="bg-[hsl(0_0%_6%)] border-[hsl(0_0%_20%)] text-[hsl(0_0%_90%)] h-7 text-xs flex-1"
+                      className="bg-[hsl(var(--al6))] border-[hsl(var(--al20))] text-[hsl(var(--al90))] h-7 text-xs flex-1"
                     />
                     <Button size="sm" className="h-7 px-2 bg-primary text-primary-foreground text-xs" onClick={() => imageUpdateMutation.mutate({ id: part.id, url: imageUrlDraft })}>
                       {imageUpdateMutation.isPending ? <Loader2 className="w-3 h-3 animate-spin" /> : <Check className="w-3 h-3" />}
@@ -344,24 +344,24 @@ const PendingPartsManager = () => {
                 {/* Info */}
                 <div className="p-4 space-y-3">
                   <div>
-                    <p className="text-[hsl(0_0%_45%)] text-xs">{part.category?.name || 'Sans catégorie'}</p>
-                    <h3 className="text-[hsl(0_0%_90%)] font-semibold text-sm truncate">{part.name}</h3>
+                    <p className="text-[hsl(var(--al45))] text-xs">{part.category?.name || 'Sans catégorie'}</p>
+                    <h3 className="text-[hsl(var(--al90))] font-semibold text-sm truncate">{part.name}</h3>
                   </div>
 
                   {/* Specs */}
                   <div className="flex flex-wrap gap-2 text-[10px]">
                     {part.price != null && (
-                      <span className="flex items-center gap-1 text-[hsl(0_0%_55%)] bg-[hsl(0_0%_15%)] px-2 py-0.5 rounded-full">
+                      <span className="flex items-center gap-1 text-[hsl(var(--al55))] bg-[hsl(var(--al15))] px-2 py-0.5 rounded-full">
                         <Euro className="w-3 h-3 text-emerald-400" />{Number(part.price).toFixed(2)}€ HT
                       </span>
                     )}
                     {part.stock_quantity != null && (
-                      <span className="flex items-center gap-1 text-[hsl(0_0%_55%)] bg-[hsl(0_0%_15%)] px-2 py-0.5 rounded-full">
+                      <span className="flex items-center gap-1 text-[hsl(var(--al55))] bg-[hsl(var(--al15))] px-2 py-0.5 rounded-full">
                         <Package className="w-3 h-3 text-blue-400" />{part.stock_quantity} en stock
                       </span>
                     )}
                     {part.difficulty_level != null && (
-                      <span className="flex items-center gap-1 text-[hsl(0_0%_55%)] bg-[hsl(0_0%_15%)] px-2 py-0.5 rounded-full">
+                      <span className="flex items-center gap-1 text-[hsl(var(--al55))] bg-[hsl(var(--al15))] px-2 py-0.5 rounded-full">
                         <Wrench className="w-3 h-3 text-amber-500" />Niveau {part.difficulty_level}
                       </span>
                     )}
@@ -369,7 +369,7 @@ const PendingPartsManager = () => {
 
                   {/* Description preview */}
                   {part.description && (
-                    <p className="text-[hsl(0_0%_45%)] text-xs line-clamp-2">{part.description.replace(/<[^>]*>/g, '')}</p>
+                    <p className="text-[hsl(var(--al45))] text-xs line-clamp-2">{part.description.replace(/<[^>]*>/g, '')}</p>
                   )}
 
                   {/* Sources */}
@@ -393,7 +393,7 @@ const PendingPartsManager = () => {
                       Publier
                     </Button>
 
-                    <Button size="sm" variant="outline" className="border-[hsl(0_0%_25%)] text-[hsl(0_0%_70%)] hover:bg-[hsl(0_0%_15%)] text-xs gap-1.5"
+                    <Button size="sm" variant="outline" className="border-[hsl(var(--al25))] text-[hsl(var(--al70))] hover:bg-[hsl(var(--al15))] text-xs gap-1.5"
                       onClick={() => setEditingPart(part)}>
                       <Pencil className="w-3 h-3" />
                     </Button>
@@ -404,13 +404,13 @@ const PendingPartsManager = () => {
                           {deletingId === part.id ? <Loader2 className="w-3 h-3 animate-spin" /> : <Trash2 className="w-3 h-3" />}
                         </Button>
                       </AlertDialogTrigger>
-                      <AlertDialogContent className="bg-[hsl(0_0%_12%)] border-[hsl(0_0%_18%)]">
+                      <AlertDialogContent className="bg-[hsl(var(--al12))] border-[hsl(var(--al18))]">
                         <AlertDialogHeader>
-                          <AlertDialogTitle className="text-[hsl(0_0%_90%)]">Supprimer cette pièce ?</AlertDialogTitle>
+                          <AlertDialogTitle className="text-[hsl(var(--al90))]">Supprimer cette pièce ?</AlertDialogTitle>
                           <AlertDialogDescription>"{part.name}" sera définitivement supprimée.</AlertDialogDescription>
                         </AlertDialogHeader>
                         <AlertDialogFooter>
-                          <AlertDialogCancel className="bg-[hsl(0_0%_15%)] border-[hsl(0_0%_20%)] text-[hsl(0_0%_70%)]">Annuler</AlertDialogCancel>
+                          <AlertDialogCancel className="bg-[hsl(var(--al15))] border-[hsl(var(--al20))] text-[hsl(var(--al70))]">Annuler</AlertDialogCancel>
                           <AlertDialogAction className="bg-destructive text-white" onClick={() => deleteMutation.mutate(part.id)}>Supprimer</AlertDialogAction>
                         </AlertDialogFooter>
                       </AlertDialogContent>
@@ -419,7 +419,7 @@ const PendingPartsManager = () => {
 
                   {/* Fournisseurs B2B (collapsible) */}
                   <Collapsible>
-                    <CollapsibleTrigger className="w-full flex items-center justify-between gap-2 px-3 py-2 rounded-lg bg-[hsl(0_0%_9%)] border border-[hsl(0_0%_18%)] text-[hsl(0_0%_70%)] hover:bg-[hsl(0_0%_12%)] transition-colors text-xs group">
+                    <CollapsibleTrigger className="w-full flex items-center justify-between gap-2 px-3 py-2 rounded-lg bg-[hsl(var(--al9))] border border-[hsl(var(--al18))] text-[hsl(var(--al70))] hover:bg-[hsl(var(--al12))] transition-colors text-xs group">
                       <span className="flex items-center gap-1.5">
                         <Package className="w-3 h-3 text-amber-400" />
                         Fournisseurs B2B

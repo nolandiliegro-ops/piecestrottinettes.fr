@@ -145,21 +145,21 @@ const AdminScanner = () => {
                   ? "bg-primary text-primary-foreground"
                   : steps.findIndex(x => x.id === step) > i
                     ? "bg-primary/30 text-primary"
-                    : "bg-[hsl(0_0%_100%/0.1)] text-[hsl(0_0%_55%)]"
+                    : "bg-[hsl(var(--aov10))] text-[hsl(var(--al55))]"
               )}
             >
               {s.num}
             </button>
             <span className={cn(
               "text-xs font-medium hidden sm:block",
-              step === s.id ? "text-primary" : "text-[hsl(0_0%_55%)]"
+              step === s.id ? "text-primary" : "text-[hsl(var(--al55))]"
             )}>
               {s.label}
             </span>
             {i < steps.length - 1 && (
               <div className={cn(
                 "w-8 h-px",
-                steps.findIndex(x => x.id === step) > i ? "bg-primary" : "bg-[hsl(0_0%_18%)]"
+                steps.findIndex(x => x.id === step) > i ? "bg-primary" : "bg-[hsl(var(--al18))]"
               )} />
             )}
           </div>
@@ -193,14 +193,14 @@ const AdminScanner = () => {
                   <div className="w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center">
                     <ImageIcon className="w-8 h-8 text-primary" />
                   </div>
-                  <p className="text-sm text-[hsl(0_0%_55%)]">Prenez ou importez une photo</p>
+                  <p className="text-sm text-[hsl(var(--al55))]">Prenez ou importez une photo</p>
                 </div>
               )}
 
               <div className="flex gap-3 w-full max-w-sm">
                 <Button
                   variant="outline"
-                  className="flex-1 min-h-[48px] bg-[hsl(0_0%_100%/0.05)] border-[hsl(0_0%_18%)] text-[hsl(0_0%_95%)] hover:bg-[hsl(0_0%_100%/0.1)]"
+                  className="flex-1 min-h-[48px] bg-[hsl(var(--aov05))] border-[hsl(var(--al18))] text-[hsl(var(--al95))] hover:bg-[hsl(var(--aov10))]"
                   onClick={() => cameraInputRef.current?.click()}
                 >
                   <Camera className="w-5 h-5 mr-2" />
@@ -208,7 +208,7 @@ const AdminScanner = () => {
                 </Button>
                 <Button
                   variant="outline"
-                  className="flex-1 min-h-[48px] bg-[hsl(0_0%_100%/0.05)] border-[hsl(0_0%_18%)] text-[hsl(0_0%_95%)] hover:bg-[hsl(0_0%_100%/0.1)]"
+                  className="flex-1 min-h-[48px] bg-[hsl(var(--aov05))] border-[hsl(var(--al18))] text-[hsl(var(--al95))] hover:bg-[hsl(var(--aov10))]"
                   onClick={() => fileInputRef.current?.click()}
                 >
                   <Upload className="w-5 h-5 mr-2" />
@@ -225,7 +225,7 @@ const AdminScanner = () => {
                 </Button>
               )}
 
-              <Button variant="ghost" className="text-[hsl(0_0%_55%)] text-sm" onClick={() => setStep('details')}>
+              <Button variant="ghost" className="text-[hsl(var(--al55))] text-sm" onClick={() => setStep('details')}>
                 Passer cette étape →
               </Button>
             </motion.div>
@@ -241,19 +241,19 @@ const AdminScanner = () => {
               className="space-y-4 py-4"
             >
               <div className="space-y-2">
-                <Label className="text-[hsl(0_0%_55%)] text-xs">Nom du produit *</Label>
+                <Label className="text-[hsl(var(--al55))] text-xs">Nom du produit *</Label>
                 <Input
                   value={name}
                   onChange={(e) => setName(e.target.value)}
                   placeholder="Ex: Plaquette de frein Xiaomi Pro 2"
-                  className="min-h-[48px] bg-[hsl(0_0%_100%/0.05)] border-[hsl(0_0%_18%)] text-[hsl(0_0%_95%)]"
+                  className="min-h-[48px] bg-[hsl(var(--aov05))] border-[hsl(var(--al18))] text-[hsl(var(--al95))]"
                 />
               </div>
 
               <div className="space-y-2">
-                <Label className="text-[hsl(0_0%_55%)] text-xs">Catégorie *</Label>
+                <Label className="text-[hsl(var(--al55))] text-xs">Catégorie *</Label>
                 <Select value={categoryId} onValueChange={setCategoryId}>
-                  <SelectTrigger className="min-h-[48px] bg-[hsl(0_0%_100%/0.05)] border-[hsl(0_0%_18%)] text-[hsl(0_0%_95%)]">
+                  <SelectTrigger className="min-h-[48px] bg-[hsl(var(--aov05))] border-[hsl(var(--al18))] text-[hsl(var(--al95))]">
                     <SelectValue placeholder="Sélectionner" />
                   </SelectTrigger>
                   <SelectContent>
@@ -266,45 +266,45 @@ const AdminScanner = () => {
 
               <div className="grid grid-cols-2 gap-3">
                 <div className="space-y-2">
-                  <Label className="text-[hsl(0_0%_55%)] text-xs">Prix (€)</Label>
+                  <Label className="text-[hsl(var(--al55))] text-xs">Prix (€)</Label>
                   <Input
                     type="number"
                     value={price}
                     onChange={(e) => setPrice(e.target.value)}
                     placeholder="29.90"
-                    className="min-h-[48px] bg-[hsl(0_0%_100%/0.05)] border-[hsl(0_0%_18%)] text-[hsl(0_0%_95%)]"
+                    className="min-h-[48px] bg-[hsl(var(--aov05))] border-[hsl(var(--al18))] text-[hsl(var(--al95))]"
                   />
                 </div>
                 <div className="space-y-2">
-                  <Label className="text-[hsl(0_0%_55%)] text-xs">Stock</Label>
+                  <Label className="text-[hsl(var(--al55))] text-xs">Stock</Label>
                   <Input
                     type="number"
                     value={stock}
                     onChange={(e) => setStock(e.target.value)}
                     placeholder="0"
-                    className="min-h-[48px] bg-[hsl(0_0%_100%/0.05)] border-[hsl(0_0%_18%)] text-[hsl(0_0%_95%)]"
+                    className="min-h-[48px] bg-[hsl(var(--aov05))] border-[hsl(var(--al18))] text-[hsl(var(--al95))]"
                   />
                 </div>
               </div>
 
               <div className="space-y-2">
-                <Label className="text-[hsl(0_0%_55%)] text-xs">SKU</Label>
+                <Label className="text-[hsl(var(--al55))] text-xs">SKU</Label>
                 <Input
                   value={sku}
                   onChange={(e) => setSku(e.target.value)}
                   placeholder="PLQ-BRK-001"
-                  className="min-h-[48px] bg-[hsl(0_0%_100%/0.05)] border-[hsl(0_0%_18%)] text-[hsl(0_0%_95%)]"
+                  className="min-h-[48px] bg-[hsl(var(--aov05))] border-[hsl(var(--al18))] text-[hsl(var(--al95))]"
                 />
               </div>
 
               <div className="space-y-2">
-                <Label className="text-[hsl(0_0%_55%)] text-xs">Description</Label>
+                <Label className="text-[hsl(var(--al55))] text-xs">Description</Label>
                 <Textarea
                   value={description}
                   onChange={(e) => setDescription(e.target.value)}
                   placeholder="Description du produit..."
                   rows={3}
-                  className="bg-[hsl(0_0%_100%/0.05)] border-[hsl(0_0%_18%)] text-[hsl(0_0%_95%)]"
+                  className="bg-[hsl(var(--aov05))] border-[hsl(var(--al18))] text-[hsl(var(--al95))]"
                 />
               </div>
 
@@ -324,9 +324,9 @@ const AdminScanner = () => {
               className="space-y-4 py-4"
             >
               <div className="space-y-2">
-                <Label className="text-[hsl(0_0%_55%)] text-xs">Difficulté d'installation</Label>
+                <Label className="text-[hsl(var(--al55))] text-xs">Difficulté d'installation</Label>
                 <Select value={difficulty} onValueChange={setDifficulty}>
-                  <SelectTrigger className="min-h-[48px] bg-[hsl(0_0%_100%/0.05)] border-[hsl(0_0%_18%)] text-[hsl(0_0%_95%)]">
+                  <SelectTrigger className="min-h-[48px] bg-[hsl(var(--aov05))] border-[hsl(var(--al18))] text-[hsl(var(--al95))]">
                     <SelectValue placeholder="Sélectionner" />
                   </SelectTrigger>
                   <SelectContent>
@@ -343,11 +343,11 @@ const AdminScanner = () => {
               <div className="admin-glass-card rounded-2xl p-4 space-y-3">
                 <h3 className="text-sm font-semibold text-primary">Résumé</h3>
                 {imagePreview && (
-                  <img src={imagePreview} alt="Preview" className="w-16 h-16 rounded-lg object-contain bg-[hsl(0_0%_100%/0.05)]" />
+                  <img src={imagePreview} alt="Preview" className="w-16 h-16 rounded-lg object-contain bg-[hsl(var(--aov05))]" />
                 )}
                 <div className="space-y-1">
                   <p className="text-sm font-medium">{name || '—'}</p>
-                  <p className="text-xs text-[hsl(0_0%_55%)]">
+                  <p className="text-xs text-[hsl(var(--al55))]">
                     {price ? `${price}€` : 'Prix non défini'} · Stock: {stock || '0'}
                   </p>
                 </div>

@@ -238,7 +238,7 @@ const GarageThemesManager = () => {
       <div className="flex items-center justify-between">
         <div className="flex items-center gap-2">
           <Wallpaper className="w-5 h-5 text-primary" />
-          <h2 className="text-lg font-semibold text-[hsl(0_0%_95%)]">Fonds Garage</h2>
+          <h2 className="text-lg font-semibold text-[hsl(var(--al95))]">Fonds Garage</h2>
         </div>
         <Button onClick={openCreate} size="sm" className="gap-1.5">
           <Plus className="w-4 h-4" /> Nouveau fond
@@ -250,7 +250,7 @@ const GarageThemesManager = () => {
           <Loader2 className="w-6 h-6 animate-spin text-primary" />
         </div>
       ) : !themes?.length ? (
-        <p className="text-sm text-[hsl(0_0%_55%)] text-center py-10">
+        <p className="text-sm text-[hsl(var(--al55))] text-center py-10">
           Aucun fond pour l'instant. Crée le premier.
         </p>
       ) : (
@@ -258,7 +258,7 @@ const GarageThemesManager = () => {
           {themes.map((t) => (
             <div
               key={t.id}
-              className="group relative aspect-video rounded-xl overflow-hidden border border-[hsl(0_0%_18%)]"
+              className="group relative aspect-video rounded-xl overflow-hidden border border-[hsl(var(--al18))]"
             >
               <img src={t.image_url} alt={t.name} className="absolute inset-0 w-full h-full object-cover" />
               <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/30 to-transparent" />
@@ -298,14 +298,14 @@ const GarageThemesManager = () => {
 
           <div className="space-y-4">
             {form.image_url && (
-              <div className="aspect-video rounded-lg overflow-hidden border border-[hsl(0_0%_18%)]">
+              <div className="aspect-video rounded-lg overflow-hidden border border-[hsl(var(--al18))]">
                 <img src={form.image_url} alt="preview" className="w-full h-full object-cover" />
               </div>
             )}
 
             <div>
               <Label className="mb-1.5 block">Image</Label>
-              <label className="flex items-center justify-center gap-2 px-4 py-3 rounded-lg border-2 border-dashed border-[hsl(0_0%_25%)] hover:border-primary cursor-pointer transition-colors">
+              <label className="flex items-center justify-center gap-2 px-4 py-3 rounded-lg border-2 border-dashed border-[hsl(var(--al25))] hover:border-primary cursor-pointer transition-colors">
                 {uploading ? (
                   <><Loader2 className="w-4 h-4 animate-spin" /> Upload...</>
                 ) : (

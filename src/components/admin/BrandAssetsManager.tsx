@@ -59,8 +59,8 @@ const BrandAssetsManager = () => {
   return (
     <div className="p-4 md:p-6 space-y-4 max-w-5xl mx-auto">
       <div>
-        <h2 className="text-xl font-bold text-[hsl(0_0%_95%)]">Brand Assets</h2>
-        <p className="text-sm text-[hsl(0_0%_55%)] mt-1">
+        <h2 className="text-xl font-bold text-[hsl(var(--al95))]">Brand Assets</h2>
+        <p className="text-sm text-[hsl(var(--al55))] mt-1">
           Logos, favicon, OG image et watermark. Modifiez ici sans toucher au code.
         </p>
       </div>
@@ -151,12 +151,12 @@ const BrandAssetCard = ({ row, onSaved }: CardProps) => {
   };
 
   return (
-    <div className="rounded-xl border border-[hsl(0_0%_18%)] bg-[hsl(0_0%_12%)] p-4 space-y-3">
+    <div className="rounded-xl border border-[hsl(var(--al18))] bg-[hsl(var(--al12))] p-4 space-y-3">
       <div className="flex items-start justify-between gap-2">
         <div>
-          <h3 className="font-semibold text-[hsl(0_0%_95%)]">{label}</h3>
+          <h3 className="font-semibold text-[hsl(var(--al95))]">{label}</h3>
           {row.description && (
-            <p className="text-xs text-[hsl(0_0%_55%)] mt-0.5">{row.description}</p>
+            <p className="text-xs text-[hsl(var(--al55))] mt-0.5">{row.description}</p>
           )}
         </div>
         {isUsingFallback ? (
@@ -183,18 +183,18 @@ const BrandAssetCard = ({ row, onSaved }: CardProps) => {
         {displayUrl ? (
           <img src={displayUrl} alt={altText || label} className="max-h-full max-w-full object-contain" />
         ) : (
-          <ImageIcon className="w-8 h-8 text-[hsl(0_0%_30%)]" />
+          <ImageIcon className="w-8 h-8 text-[hsl(var(--al30))]" />
         )}
       </div>
 
       <div className="space-y-2">
-        <Label className="text-xs text-[hsl(0_0%_55%)]">Texte alternatif (accessibilité)</Label>
+        <Label className="text-xs text-[hsl(var(--al55))]">Texte alternatif (accessibilité)</Label>
         <div className="flex gap-2">
           <Input
             value={altText}
             onChange={(e) => setAltText(e.target.value)}
             placeholder="Description de l'image…"
-            className="bg-[hsl(0_0%_15%)] border-[hsl(0_0%_22%)] text-sm"
+            className="bg-[hsl(var(--al15))] border-[hsl(var(--al22))] text-sm"
           />
           <Button
             size="sm"
@@ -208,7 +208,7 @@ const BrandAssetCard = ({ row, onSaved }: CardProps) => {
       </div>
 
       <div className="flex items-center justify-between gap-2 pt-1">
-        <p className="text-[10px] text-[hsl(0_0%_45%)]">
+        <p className="text-[10px] text-[hsl(var(--al45))]">
           Maj : {new Date(row.updated_at).toLocaleString("fr-FR")}
         </p>
         <input

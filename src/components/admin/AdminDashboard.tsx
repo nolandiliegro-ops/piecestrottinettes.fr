@@ -86,7 +86,7 @@ const AdminDashboard = () => {
               >
                 <div className="flex items-center gap-2 mb-2">
                   <Icon className={cn("w-4 h-4", card.color)} />
-                  <span className="text-xs text-[hsl(0_0%_55%)]">{card.label}</span>
+                  <span className="text-xs text-[hsl(var(--al55))]">{card.label}</span>
                 </div>
                 <p className="text-2xl font-bold">{card.value}</p>
               </motion.div>
@@ -108,16 +108,16 @@ const AdminDashboard = () => {
             ))}
           </div>
         ) : stats?.recentOrders.length === 0 ? (
-          <p className="text-sm text-[hsl(0_0%_55%)] text-center py-6">Aucune commande</p>
+          <p className="text-sm text-[hsl(var(--al55))] text-center py-6">Aucune commande</p>
         ) : (
           <div className="space-y-2">
             {stats?.recentOrders.map((order) => {
               const status = statusLabel[order.status] || { label: order.status, color: 'bg-muted text-muted-foreground' };
               return (
-                <div key={order.id} className="flex items-center justify-between p-3 rounded-xl bg-[hsl(0_0%_100%/0.03)] hover:bg-[hsl(0_0%_100%/0.06)] transition-colors">
+                <div key={order.id} className="flex items-center justify-between p-3 rounded-xl bg-[hsl(var(--aov03))] hover:bg-[hsl(var(--aov06))] transition-colors">
                   <div>
                     <p className="text-sm font-medium">#{order.order_number}</p>
-                    <p className="text-xs text-[hsl(0_0%_55%)]">
+                    <p className="text-xs text-[hsl(var(--al55))]">
                       {new Date(order.created_at).toLocaleDateString('fr-FR')}
                     </p>
                   </div>

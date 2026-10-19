@@ -374,12 +374,12 @@ function SendMessageDialog({
 
   return (
     <Dialog open={open} onOpenChange={(o) => !o && onClose()}>
-      <DialogContent className="bg-[hsl(0_0%_10%)] border-[hsl(0_0%_18%)] text-[hsl(0_0%_95%)] max-w-lg">
+      <DialogContent className="bg-[hsl(var(--al10))] border-[hsl(var(--al18))] text-[hsl(var(--al95))] max-w-lg">
         <DialogHeader>
-          <DialogTitle className="text-[hsl(0_0%_95%)]">
+          <DialogTitle className="text-[hsl(var(--al95))]">
             Envoyer un message à {client.name}
           </DialogTitle>
-          <p className="text-xs text-[hsl(0_0%_55%)]">{client.email}</p>
+          <p className="text-xs text-[hsl(var(--al55))]">{client.email}</p>
         </DialogHeader>
 
         <div className="space-y-3 py-2">
@@ -388,11 +388,11 @@ function SendMessageDialog({
             value={message}
             onChange={(e) => setMessage(e.target.value)}
             rows={5}
-            className="bg-[hsl(0_0%_14%)] border-[hsl(0_0%_18%)] text-[hsl(0_0%_95%)] resize-none"
+            className="bg-[hsl(var(--al14))] border-[hsl(var(--al18))] text-[hsl(var(--al95))] resize-none"
           />
 
           <div className="flex items-center justify-between gap-2">
-            <label className="flex items-center gap-2 text-xs text-[hsl(0_0%_75%)] cursor-pointer hover:text-primary transition-colors">
+            <label className="flex items-center gap-2 text-xs text-[hsl(var(--al75))] cursor-pointer hover:text-primary transition-colors">
               <Paperclip className="w-4 h-4" />
               {imageFile ? imageFile.name.slice(0, 30) : 'Joindre une image'}
               <input
@@ -406,7 +406,7 @@ function SendMessageDialog({
               <button
                 type="button"
                 onClick={() => setImageFile(null)}
-                className="text-xs text-[hsl(0_0%_55%)] hover:text-red-400"
+                className="text-xs text-[hsl(var(--al55))] hover:text-red-400"
               >
                 Retirer
               </button>
@@ -442,25 +442,25 @@ function ClientDetailSheet({
     <Sheet open={open} onOpenChange={(o) => !o && onClose()}>
       <SheetContent
         side="right"
-        className="w-full sm:max-w-2xl bg-[hsl(0_0%_10%)] border-l border-[hsl(0_0%_18%)] text-[hsl(0_0%_95%)] p-0 overflow-hidden flex flex-col"
+        className="w-full sm:max-w-2xl bg-[hsl(var(--al10))] border-l border-[hsl(var(--al18))] text-[hsl(var(--al95))] p-0 overflow-hidden flex flex-col"
       >
         {client && (
           <>
             {/* HEADER */}
-            <SheetHeader className="p-6 border-b border-[hsl(0_0%_18%)] space-y-3">
+            <SheetHeader className="p-6 border-b border-[hsl(var(--al18))] space-y-3">
               <div className="flex items-start gap-4">
                 <div className="w-14 h-14 rounded-full bg-gradient-to-br from-primary/40 to-primary/10 flex items-center justify-center text-primary font-bold text-xl shrink-0 ring-1 ring-primary/30">
                   {(client.name || client.email).charAt(0).toUpperCase()}
                 </div>
                 <div className="min-w-0 flex-1">
-                  <SheetTitle className="text-[hsl(0_0%_95%)] truncate text-left text-lg">
+                  <SheetTitle className="text-[hsl(var(--al95))] truncate text-left text-lg">
                     {client.name}
                   </SheetTitle>
-                  <p className="text-xs text-[hsl(0_0%_55%)] truncate flex items-center gap-1.5 mt-0.5">
+                  <p className="text-xs text-[hsl(var(--al55))] truncate flex items-center gap-1.5 mt-0.5">
                     <Mail className="w-3 h-3" /> {client.email}
                   </p>
                   {client.phone && (
-                    <p className="text-xs text-[hsl(0_0%_55%)] truncate flex items-center gap-1.5 mt-0.5">
+                    <p className="text-xs text-[hsl(var(--al55))] truncate flex items-center gap-1.5 mt-0.5">
                       <Phone className="w-3 h-3" /> {client.phone}
                     </p>
                   )}
@@ -515,7 +515,7 @@ function ClientDetailSheet({
 
             {/* TABS */}
             <Tabs defaultValue="orders" className="flex-1 flex flex-col overflow-hidden">
-              <TabsList className="mx-6 mt-4 bg-[hsl(0_0%_14%)] border border-[hsl(0_0%_18%)]">
+              <TabsList className="mx-6 mt-4 bg-[hsl(var(--al14))] border border-[hsl(var(--al18))]">
                 <TabsTrigger value="orders" className="flex-1 data-[state=active]:bg-primary/20 data-[state=active]:text-primary">
                   Commandes ({client.orders.length})
                 </TabsTrigger>
@@ -540,17 +540,17 @@ function ClientDetailSheet({
                             navigate(`/admin?tab=orders&orderId=${o.id}`);
                             onClose();
                           }}
-                          className="w-full text-left flex items-center justify-between p-3 rounded-lg bg-[hsl(0_0%_14%)] border border-[hsl(0_0%_18%)] hover:border-primary/50 transition-colors"
+                          className="w-full text-left flex items-center justify-between p-3 rounded-lg bg-[hsl(var(--al14))] border border-[hsl(var(--al18))] hover:border-primary/50 transition-colors"
                         >
                           <div className="min-w-0">
                             <p className="font-medium text-sm truncate">{o.order_number}</p>
-                            <p className="text-xs text-[hsl(0_0%_55%)]">
+                            <p className="text-xs text-[hsl(var(--al55))]">
                               {format(new Date(o.created_at), 'dd MMM yyyy', { locale: fr })} · {o.status}
                             </p>
                           </div>
                           <div className="flex items-center gap-2 shrink-0 ml-3">
                             <p className="font-semibold text-primary">{formatPrice(o.total_ttc)}</p>
-                            <ChevronRight className="w-4 h-4 text-[hsl(0_0%_55%)]" />
+                            <ChevronRight className="w-4 h-4 text-[hsl(var(--al55))]" />
                           </div>
                         </button>
                       ))
@@ -572,7 +572,7 @@ function ClientDetailSheet({
                             }
                             onClose();
                           }}
-                          className="w-full text-left p-3 rounded-lg bg-[hsl(0_0%_14%)] border border-[hsl(0_0%_18%)] hover:border-primary/50 transition-colors"
+                          className="w-full text-left p-3 rounded-lg bg-[hsl(var(--al14))] border border-[hsl(var(--al18))] hover:border-primary/50 transition-colors"
                         >
                           <div className="flex items-center gap-2 mb-1">
                             <Badge variant="outline" className={cn(
@@ -583,11 +583,11 @@ function ClientDetailSheet({
                             )}>
                               {m.sender_type === 'admin' ? 'Vous' : 'Client'}
                             </Badge>
-                            <span className="text-xs text-[hsl(0_0%_55%)]">
+                            <span className="text-xs text-[hsl(var(--al55))]">
                               {format(new Date(m.created_at), 'dd MMM HH:mm', { locale: fr })}
                             </span>
                           </div>
-                          <p className="text-sm text-[hsl(0_0%_85%)] line-clamp-2">{m.message}</p>
+                          <p className="text-sm text-[hsl(var(--al85))] line-clamp-2">{m.message}</p>
                         </button>
                       ))
                     )}
@@ -598,15 +598,15 @@ function ClientDetailSheet({
                       <EmptyState icon={Wrench} text="Aucune trottinette" />
                     ) : (
                       client.scooters.map((s, i) => (
-                        <div key={i} className="p-3 rounded-lg bg-[hsl(0_0%_14%)] border border-[hsl(0_0%_18%)]">
+                        <div key={i} className="p-3 rounded-lg bg-[hsl(var(--al14))] border border-[hsl(var(--al18))]">
                           <div className="flex items-center gap-2 mb-1">
                             <Wrench className="w-4 h-4 text-primary shrink-0" />
                             <span className="font-medium text-sm truncate">{s.name}</span>
                           </div>
                           {s.nickname && (
-                            <p className="text-xs text-[hsl(0_0%_55%)] mb-1.5">« {s.nickname} »</p>
+                            <p className="text-xs text-[hsl(var(--al55))] mb-1.5">« {s.nickname} »</p>
                           )}
-                          <div className="flex items-center gap-3 text-xs text-[hsl(0_0%_55%)]">
+                          <div className="flex items-center gap-3 text-xs text-[hsl(var(--al55))]">
                             {s.power_watts && <span>{s.power_watts}W</span>}
                             {s.range_km && <span>{s.range_km}km</span>}
                           </div>
@@ -616,7 +616,7 @@ function ClientDetailSheet({
                   </TabsContent>
 
                   {client.registeredAt && (
-                    <p className="text-xs text-[hsl(0_0%_55%)] pt-4 mt-4 border-t border-[hsl(0_0%_18%)]">
+                    <p className="text-xs text-[hsl(var(--al55))] pt-4 mt-4 border-t border-[hsl(var(--al18))]">
                       Inscrit le {format(new Date(client.registeredAt), 'dd MMMM yyyy', { locale: fr })}
                       {client.firstOrderDate && (
                         <> · 1ère commande {format(new Date(client.firstOrderDate), 'dd MMM yyyy', { locale: fr })}</>
@@ -641,17 +641,17 @@ function ClientDetailSheet({
 }
 
 const StatCard = ({ icon: Icon, label, value }: { icon: any; label: string; value: string }) => (
-  <div className="p-2.5 rounded-lg bg-[hsl(0_0%_14%)] border border-[hsl(0_0%_18%)]">
-    <div className="flex items-center gap-1 text-[hsl(0_0%_55%)] text-[10px] mb-0.5 uppercase tracking-wider">
+  <div className="p-2.5 rounded-lg bg-[hsl(var(--al14))] border border-[hsl(var(--al18))]">
+    <div className="flex items-center gap-1 text-[hsl(var(--al55))] text-[10px] mb-0.5 uppercase tracking-wider">
       <Icon className="w-3 h-3" />
       {label}
     </div>
-    <p className="text-sm font-bold text-[hsl(0_0%_95%)] truncate">{value}</p>
+    <p className="text-sm font-bold text-[hsl(var(--al95))] truncate">{value}</p>
   </div>
 );
 
 const EmptyState = ({ icon: Icon, text }: { icon: any; text: string }) => (
-  <div className="text-center py-10 text-[hsl(0_0%_55%)]">
+  <div className="text-center py-10 text-[hsl(var(--al55))]">
     <Icon className="w-8 h-8 mx-auto mb-2 opacity-40" />
     <p className="text-xs">{text}</p>
   </div>
@@ -714,7 +714,7 @@ export default function ClientsManager() {
     <th className={cn('text-left p-3 font-medium', className)}>
       <button
         onClick={() => toggleSort(k)}
-        className="inline-flex items-center gap-1 hover:text-[hsl(0_0%_95%)] transition-colors"
+        className="inline-flex items-center gap-1 hover:text-[hsl(var(--al95))] transition-colors"
       >
         {label}
         {sortKey === k && (
@@ -731,8 +731,8 @@ export default function ClientsManager() {
         <div className="flex items-center justify-between gap-3 mb-4">
           <div className="flex items-center gap-2">
             <Users className="w-5 h-5 text-primary" />
-            <h1 className="text-xl font-bold text-[hsl(0_0%_95%)]">Clients</h1>
-            <Badge variant="outline" className="text-[hsl(0_0%_55%)] border-[hsl(0_0%_25%)]">{clients.length}</Badge>
+            <h1 className="text-xl font-bold text-[hsl(var(--al95))]">Clients</h1>
+            <Badge variant="outline" className="text-[hsl(var(--al55))] border-[hsl(var(--al25))]">{clients.length}</Badge>
           </div>
           <Button
             onClick={() => exportToCSV(filtered)}
@@ -747,15 +747,15 @@ export default function ClientsManager() {
 
         {/* Search */}
         <div className="relative mb-3">
-          <Search className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-[hsl(0_0%_55%)]" />
+          <Search className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-[hsl(var(--al55))]" />
           <Input
             placeholder="Rechercher par nom ou email…"
             value={search}
             onChange={(e) => setSearch(e.target.value)}
-            className="pl-10 bg-[hsl(0_0%_14%)] border-[hsl(0_0%_18%)] text-[hsl(0_0%_95%)] placeholder:text-[hsl(0_0%_45%)]"
+            className="pl-10 bg-[hsl(var(--al14))] border-[hsl(var(--al18))] text-[hsl(var(--al95))] placeholder:text-[hsl(var(--al45))]"
           />
           {search && (
-            <button onClick={() => setSearch('')} className="absolute right-3 top-1/2 -translate-y-1/2 text-[hsl(0_0%_55%)] hover:text-[hsl(0_0%_95%)]">
+            <button onClick={() => setSearch('')} className="absolute right-3 top-1/2 -translate-y-1/2 text-[hsl(var(--al55))] hover:text-[hsl(var(--al95))]">
               <X className="w-4 h-4" />
             </button>
           )}
@@ -771,7 +771,7 @@ export default function ClientsManager() {
                 'px-3 py-1.5 rounded-full text-xs font-medium border transition-colors',
                 filter === f.id
                   ? 'bg-primary text-primary-foreground border-primary'
-                  : 'bg-[hsl(0_0%_14%)] text-[hsl(0_0%_75%)] border-[hsl(0_0%_18%)] hover:border-[hsl(0_0%_30%)]'
+                  : 'bg-[hsl(var(--al14))] text-[hsl(var(--al75))] border-[hsl(var(--al18))] hover:border-[hsl(var(--al30))]'
               )}
             >
               {f.label} <span className="opacity-60 ml-1">{counts[f.id]}</span>
@@ -789,7 +789,7 @@ export default function ClientsManager() {
                 'px-3 py-1.5 rounded-full text-xs font-medium border transition-colors inline-flex items-center gap-1',
                 loyaltyFilter === f.id
                   ? 'bg-amber-500/20 text-amber-300 border-amber-500/40'
-                  : 'bg-[hsl(0_0%_14%)] text-[hsl(0_0%_75%)] border-[hsl(0_0%_18%)] hover:border-[hsl(0_0%_30%)]'
+                  : 'bg-[hsl(var(--al14))] text-[hsl(var(--al75))] border-[hsl(var(--al18))] hover:border-[hsl(var(--al30))]'
               )}
             >
               {f.id === 'VIP' && <Crown className="w-3 h-3" />}
@@ -808,7 +808,7 @@ export default function ClientsManager() {
 
       {/* Empty */}
       {!isLoading && filtered.length === 0 && (
-        <div className="text-center py-16 text-[hsl(0_0%_55%)]">
+        <div className="text-center py-16 text-[hsl(var(--al55))]">
           <UserCircle2 className="w-10 h-10 mx-auto mb-3 opacity-40" />
           <p className="text-sm">Aucun client trouvé</p>
         </div>
@@ -817,9 +817,9 @@ export default function ClientsManager() {
       {/* Desktop table */}
       {!isLoading && filtered.length > 0 && (
         <>
-          <div className="hidden md:block rounded-xl border border-[hsl(0_0%_18%)] overflow-hidden bg-[hsl(0_0%_12%)]">
+          <div className="hidden md:block rounded-xl border border-[hsl(var(--al18))] overflow-hidden bg-[hsl(var(--al12))]">
             <table className="w-full text-sm">
-              <thead className="bg-[hsl(0_0%_14%)] text-[hsl(0_0%_55%)] text-xs uppercase tracking-wider">
+              <thead className="bg-[hsl(var(--al14))] text-[hsl(var(--al55))] text-xs uppercase tracking-wider">
                 <tr>
                   <SortHeader k="name" label="Client" />
                   <th className="text-left p-3 font-medium">Tél</th>
@@ -836,7 +836,7 @@ export default function ClientsManager() {
                   <tr
                     key={c.key}
                     onClick={() => setSelected(c)}
-                    className="border-t border-[hsl(0_0%_18%)] hover:bg-[hsl(0_0%_14%)] cursor-pointer transition-colors"
+                    className="border-t border-[hsl(var(--al18))] hover:bg-[hsl(var(--al14))] cursor-pointer transition-colors"
                   >
                     <td className="p-3">
                       <div className="flex items-center gap-2.5 min-w-0">
@@ -844,18 +844,18 @@ export default function ClientsManager() {
                           {(c.name || c.email).charAt(0).toUpperCase()}
                         </div>
                         <div className="min-w-0">
-                          <p className="font-medium text-[hsl(0_0%_95%)] truncate">{c.name}</p>
-                          <p className="text-xs text-[hsl(0_0%_55%)] truncate">{c.email}</p>
+                          <p className="font-medium text-[hsl(var(--al95))] truncate">{c.name}</p>
+                          <p className="text-xs text-[hsl(var(--al55))] truncate">{c.email}</p>
                         </div>
                       </div>
                     </td>
-                    <td className="p-3 text-xs text-[hsl(0_0%_75%)]">
-                      {c.phone ?? <span className="text-[hsl(0_0%_45%)]">—</span>}
+                    <td className="p-3 text-xs text-[hsl(var(--al75))]">
+                      {c.phone ?? <span className="text-[hsl(var(--al45))]">—</span>}
                     </td>
-                    <td className="p-3 text-[hsl(0_0%_85%)] font-medium">{c.ordersCount}</td>
+                    <td className="p-3 text-[hsl(var(--al85))] font-medium">{c.ordersCount}</td>
                     <td className="p-3 text-primary font-semibold">{formatPrice(c.totalSpent)}</td>
-                    <td className="p-3 text-[hsl(0_0%_85%)] text-xs">
-                      {c.ordersCount > 0 ? formatPrice(c.avgCart) : <span className="text-[hsl(0_0%_45%)]">—</span>}
+                    <td className="p-3 text-[hsl(var(--al85))] text-xs">
+                      {c.ordersCount > 0 ? formatPrice(c.avgCart) : <span className="text-[hsl(var(--al45))]">—</span>}
                     </td>
                     <td className="p-3">
                       <Badge variant="outline" className={cn('text-[10px]', LOYALTY_COLORS[c.loyaltyTier])}>
@@ -863,7 +863,7 @@ export default function ClientsManager() {
                         {c.loyaltyTier}
                       </Badge>
                     </td>
-                    <td className="p-3 text-xs text-[hsl(0_0%_55%)]">
+                    <td className="p-3 text-xs text-[hsl(var(--al55))]">
                       {c.lastActivity ? format(new Date(c.lastActivity), 'dd MMM yy', { locale: fr }) : '—'}
                     </td>
                     <td className="p-3">
@@ -888,22 +888,22 @@ export default function ClientsManager() {
               <button
                 key={c.key}
                 onClick={() => setSelected(c)}
-                className="w-full text-left p-3 rounded-xl bg-[hsl(0_0%_12%)] border border-[hsl(0_0%_18%)] active:scale-[0.99] transition-transform"
+                className="w-full text-left p-3 rounded-xl bg-[hsl(var(--al12))] border border-[hsl(var(--al18))] active:scale-[0.99] transition-transform"
               >
                 <div className="flex items-center gap-3 mb-2">
                   <div className="w-9 h-9 rounded-full bg-gradient-to-br from-primary/40 to-primary/10 flex items-center justify-center text-primary text-sm font-bold shrink-0 ring-1 ring-primary/20">
                     {(c.name || c.email).charAt(0).toUpperCase()}
                   </div>
                   <div className="min-w-0 flex-1">
-                    <p className="font-medium text-[hsl(0_0%_95%)] truncate">{c.name}</p>
-                    <p className="text-xs text-[hsl(0_0%_55%)] truncate">{c.email}</p>
+                    <p className="font-medium text-[hsl(var(--al95))] truncate">{c.name}</p>
+                    <p className="text-xs text-[hsl(var(--al55))] truncate">{c.email}</p>
                   </div>
                   <Badge variant="outline" className={cn('text-[10px] shrink-0', LOYALTY_COLORS[c.loyaltyTier])}>
                     {c.loyaltyTier}
                   </Badge>
                 </div>
                 <div className="flex items-center justify-between text-xs">
-                  <div className="flex items-center gap-3 text-[hsl(0_0%_75%)]">
+                  <div className="flex items-center gap-3 text-[hsl(var(--al75))]">
                     <span><Package className="w-3 h-3 inline mr-1" />{c.ordersCount}</span>
                     <span className="text-primary font-semibold">{formatPrice(c.totalSpent)}</span>
                     {c.scooters.length > 0 && <span><Wrench className="w-3 h-3 inline mr-1" />{c.scooters.length}</span>}
