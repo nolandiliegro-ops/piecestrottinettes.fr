@@ -34,7 +34,7 @@ jobs:
           SB_URL: ${{ secrets.SUPABASE_URL }}
           ADMIN_BULK_SECRET: ${{ secrets.ADMIN_BULK_SECRET }}
         run: |
-          if grep -qE '^(write|append|compat) |^(nettoyage|redetourage) write' config/photos/_run.txt; then
+          if grep -qE '^(write|append|compat) |^(nettoyage|redetourage|cadrage) write' config/photos/_run.txt; then
             if [ -z "$SB_URL" ] || [ -z "$ADMIN_BULK_SECRET" ]; then echo "::error title=photos::secret absent"; exit 1; fi
             KEY=$(grep -oP 'VITE_SUPABASE_PUBLISHABLE_KEY\s*\|\|\s*"\K[^"]+' src/integrations/supabase/client.ts)
             umask 077
@@ -71,6 +71,14 @@ jobs:
               echo "::notice title=detourage::EXIT=$?"
               grep '^::' "out/detourage-$lot.log" | head -5
               tail -n 3 "out/detourage-$lot.log"
+              continue
+            fi
+            if [ "$mode" = "cadrage" ]; then
+              # Cadrage uniforme + photo principale de trois-quarts (config/photos/vues.json). « cadrage dry » / « cadrage write ».
+              node scripts/scooters-cadrage.mjs --$lot > "out/cadrage-$lot.log" 2>&1
+              echo "::notice title=cadrage::EXIT=$?"
+              grep '^::' "out/cadrage-$lot.log" | grep -v -i 'secret\|bearer\|eyJ' | head -40
+              tail -n 5 "out/cadrage-$lot.log" | grep -v -i 'secret\|bearer\|eyJ'
               continue
             fi
             if [ "$mode" = "redetourage" ]; then
