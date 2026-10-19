@@ -11,6 +11,7 @@ import FavoritesSection from "@/components/home/FavoritesSection";
 import TrustStrip from "@/components/home/TrustStrip";
 import HomeBridge from "@/components/home/HomeBridge";
 import BrandWallSection from "@/components/home/BrandWallSection";
+import HomeTransition, { readPontVariant } from "@/components/home/HomeTransition";
 import { readHomeVariant } from "@/components/home/ShopByCompatibility/AtelierShell";
 
 const Index = () => {
@@ -34,6 +35,8 @@ const Index = () => {
         <HeroSearchFirst />
         {/* La bande anthracite fait partie du « cadre » que les propositions ?home=1..5 retirent. */}
         {!readHomeVariant() && <HomeBridge />}
+        {/* 20/10 : transition hero → catalogue, propositions ?pont=1..5 (sans paramètre : inchangé) */}
+        <HomeTransition variant={readPontVariant()} />
         <ShopByCompatibility />
         <BrandWallSection />
         <GarageOfTheWeekSection />
