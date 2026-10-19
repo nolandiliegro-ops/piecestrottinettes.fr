@@ -1,0 +1,69 @@
+name: Recadrage des photos de pièces
+
+# 19/10/2026 (go Nolan) : égaliser la taille des pièces sur les cartes en coupant le vide transparent autour.
+# Modifier config/photos/_recadrage.txt = UN run. Contenu : « dry », « dry 30 » (limite), ou « write ».
+#  - dry   : analyse + planche avant/après + rapport sur la branche donnees-photos (out/recadrage/), AUCUNE écriture.
+#  - write : envoie les photos recadrées à process-images (nouveaux fichiers à côté des anciens, parts.images mis à jour).
+# Idempotent : une photo déjà bien cadrée n'est jamais réécrite.
+
+on:
+  push:
+    branches: [main]
+    paths: ['config/photos/_recadrage.txt']
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: recadrage-photos
+  cancel-in-progress: false
+
+jobs:
+  recadrage:
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - name: Dépendances
+        run: npm install --prefix scripts --no-audit --no-fund
+      - name: Fichier .env du runner (mode write seulement)
+        env:
+          SB_URL: ${{ secrets.SUPABASE_URL }}
+          ADMIN_BULK_SECRET: ${{ secrets.ADMIN_BULK_SECRET }}
+        run: |
+          if grep -qE '^write' config/photos/_recadrage.txt; then
+            if [ -z "$SB_URL" ] || [ -z "$ADMIN_BULK_SECRET" ]; then echo "::error title=recadrage::secret absent"; exit 1; fi
+            umask 077
+            printf 'VITE_SUPABASE_URL=%s\nADMIN_BULK_SECRET=%s\n' "$SB_URL" "$ADMIN_BULK_SECRET" > .env
+          fi
+      - name: Recadrage
+        shell: bash
+        run: |
+          set +e
+          read -r mode limit < config/photos/_recadrage.txt
+          args="--dry"; [ "$mode" = "write" ] && args="--write"
+          [ -n "$limit" ] && args="$args --limit $limit"
+          node scripts/recadrage-photos.mjs $args > out-recadrage.log 2>&1
+          echo "::notice title=recadrage::EXIT=$?"
+          grep '^::' out-recadrage.log | grep -v -i 'secret\|bearer\|eyJ' | head -80
+          tail -n 5 out-recadrage.log | grep -v -i 'secret\|bearer\|eyJ'
+      - name: Nettoyage du secret
+        if: always()
+        run: rm -f .env
+      - name: Résultats → branche donnees-photos
+        if: always()
+        shell: bash
+        run: |
+          git config user.name "photos-bot"
+          git config user.email "photos-bot@users.noreply.github.com"
+          mkdir -p out/recadrage && cp out-recadrage.log out/recadrage/ 2>/dev/null; mv out /tmp/out
+          git fetch origin donnees-photos || true
+          git checkout -B donnees-photos origin/donnees-photos
+          mkdir -p out && cp -r /tmp/out/. out/
+          git add out/recadrage
+          git commit -q -m "recadrage : $(date -u +%FT%TZ)" || echo "rien à commiter"
+          for i in 1 2 3; do git push origin donnees-photos && break; git pull --rebase origin donnees-photos; done
