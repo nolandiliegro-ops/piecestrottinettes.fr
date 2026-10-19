@@ -16,6 +16,7 @@ import type { FitmentPosition } from "@/lib/compatibilityStatus";
 import { toast } from "sonner";
 import { useSelectedScooter } from "@/contexts/ScooterContext";
 import { SHOP_OPEN, openPrelaunch } from '@/config/launch';
+import PartCardAtelier, { CARTE } from "./PartCardAtelier";
 
 interface PartCardProps {
   part: CompatiblePart & { slug?: string; torque_nm?: number | null; is_featured?: boolean };
@@ -110,7 +111,7 @@ function DifficultyKey({ level }: { level: number | null }) {
   );
 }
 
-const PartCard = forwardRef<HTMLDivElement, PartCardProps>(
+const PartCardLegacy = forwardRef<HTMLDivElement, PartCardProps>(
   function PartCardInner({ part, index, className, position, hideCompat = false }, ref) {
   const { addItem, setIsOpen } = useCart();
   const specs = extractSpecs(part.technical_metadata);
@@ -569,5 +570,11 @@ const PartCard = forwardRef<HTMLDivElement, PartCardProps>(
   return cardContent;
   }
 );
+
+/** 19/10 : ?carte=1..5 = propositions de cartes en DA Atelier (PartCardAtelier) ; sans paramètre, carte actuelle. */
+const PartCard = forwardRef<HTMLDivElement, PartCardProps>(function PartCard(props, ref) {
+  if (CARTE) return <div ref={ref} className="h-full"><PartCardAtelier part={props.part} look={CARTE} position={props.position} hideCompat={props.hideCompat} className={cn("h-full", props.className)} /></div>;
+  return <PartCardLegacy ref={ref} {...props} />;
+});
 
 export default PartCard;

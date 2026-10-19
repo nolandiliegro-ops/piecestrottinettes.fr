@@ -9,6 +9,7 @@ import Header from "@/components/Header";
 import CategoryBentoGrid from "@/components/catalogue/CategoryBentoGrid";
 import SubCategoryBar from "@/components/catalogue/SubCategoryBar";
 import PartCard from "@/components/parts/PartCard";
+import { carteGridClass } from "@/components/parts/PartCardAtelier";
 import { Button } from "@/components/ui/button";
 import { Skeleton } from "@/components/ui/skeleton";
 import { useCategories, useScooterModels } from "@/hooks/useScooterData";
@@ -531,7 +532,7 @@ const Catalogue = () => {
                   // Au moins 1 exact -> on n'affiche QUE les exacts (pas de bruit).
                   <div
                     key="search-exact"
-                    className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5 md:gap-7"
+                    className={carteGridClass("grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5 md:gap-7")}
                   >
                     {shownExact.map((part, index) => (
                       <PartCard key={part.id} part={part} index={index} hideCompat={!!scooterIdFilter} />
@@ -543,7 +544,7 @@ const Catalogue = () => {
                     <p className="mb-5 text-xs font-semibold uppercase tracking-wider text-gray-500">
                       Aucun résultat exact, voici des suggestions
                     </p>
-                    <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5 md:gap-7">
+                    <div className={carteGridClass("grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5 md:gap-7")}>
                       {shownRelated.map((part, index) => (
                         <PartCard key={part.id} part={part} index={index} hideCompat={!!scooterIdFilter} />
                       ))}
@@ -558,7 +559,7 @@ const Catalogue = () => {
                   exit={{ opacity: 0, y: -10 }}
                   transition={{ duration: 0.3 }}
                   className={cn(
-                    "grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5 md:gap-7 transition-opacity duration-200",
+                    carteGridClass("grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5 md:gap-7"), "transition-opacity duration-200",
                     isSwitching && "opacity-60 pointer-events-none"
                   )}
                 >

@@ -144,6 +144,94 @@ const Title = ({ dark = false, center = false }: { dark?: boolean; center?: bool
   </h1>
 );
 
+// ─── Vignette catégorie ───
+// 19/10 (Nolan : « le "Toutes" noir n'est pas joli », images de catégorie d'époque hétérogènes) :
+// packshots Higgsfield détourés (public/categories/<clé>-a|b.webp) + 5 habillages via ?tuile=1..5.
+// Sans paramètre : vignette du 17/10 inchangée (photo pleine, « Toutes » carbone).
+type TuileLook = 1 | 2 | 3 | 4 | 5;
+const TUILE: TuileLook | null = (() => {
+  try { const r = new URLSearchParams(window.location.search).get("tuile"); if (r === null) return null; const n = Number(r); return n >= 1 && n <= 5 ? (n as TuileLook) : null; } catch { return null; }
+})();
+const PACK_SET = (() => { try { return new URLSearchParams(window.location.search).get("img") === "b" ? "b" : "a"; } catch { return "a"; } })();
+const PACK_KEY: Record<string, string> = { pneus: "pneus", "pneus-pleins": "pleins", "chambres-a-air": "chambres", plaquettes: "plaquettes", disques: "disques", chargeurs: "chargeurs", "accessoires-divers": "accessoires" };
+const pack = (slug?: string) => (slug && PACK_KEY[slug] ? `/categories/${PACK_KEY[slug]}-${PACK_SET}.webp` : undefined);
+const STONE = "#EFE9DF";
+/** « Toutes » sans pavé noir : trois pièces qui se chevauchent. */
+const AllCollage = ({ big = false }: { big?: boolean }) => (
+  <span aria-hidden className={cn("absolute inset-x-0 flex items-center justify-center", big ? "top-[8%] bottom-[34%]" : "top-[6%] bottom-[36%]")}>
+    <img src={pack("pneus")} alt="" className="absolute h-[92%] w-auto -translate-x-[34%] -rotate-6 object-contain drop-shadow-[0_6px_8px_rgba(0,0,0,0.18)]" />
+    <img src={pack("chargeurs")} alt="" className="absolute h-[62%] w-auto translate-x-[42%] translate-y-[14%] object-contain drop-shadow-[0_6px_8px_rgba(0,0,0,0.18)]" />
+    <img src={pack("plaquettes")} alt="" className="absolute h-[58%] w-auto translate-x-[4%] translate-y-[22%] rotate-6 object-contain drop-shadow-[0_6px_8px_rgba(0,0,0,0.2)]" />
+  </span>
+);
+
+const CatTileNew = ({ c, n, on, onClick, size = "md", look }: { c: CatCategory | null; n: number; on: boolean; onClick: () => void; size?: "sm" | "md"; look: TuileLook }) => {
+  const src = pack(c?.slug);
+  const label = c ? c.name : "Toutes";
+  const h = size === "md" ? "h-[128px] md:h-[140px]" : "h-[112px] w-[118px]";
+  const num = (color: string) => <span style={{ fontFamily: UNB, fontStyle: "italic", fontWeight: 900, color }}>{n}</span>;
+  const img = (cls: string) => (c ? (src ? <img src={src} alt="" loading="lazy" className={cn("absolute object-contain transition-transform duration-300 drop-shadow-[0_8px_10px_rgba(0,0,0,0.18)]", cls)} /> : null) : <AllCollage />);
+  const ring = on ? { boxShadow: `inset 0 0 0 2px ${GREEN}` } : { boxShadow: `inset 0 0 0 1px ${LINE}` };
+
+  // 1 PIERRE — la vignette du 17/10 à l'identique (photo, nombre en haut, nom en bas), repassée en clair
+  if (look === 1) return (
+    <button type="button" onClick={onClick} aria-pressed={on} className={cn("relative shrink-0 overflow-hidden text-left group transition-transform hover:-translate-y-0.5", h)}
+      style={{ clipPath: CHAMFER, background: STONE, ...ring }}>
+      {img("left-1/2 top-[8%] -translate-x-1/2 h-[62%] w-auto group-hover:scale-[1.08]")}
+      <span className="absolute left-2 top-2 px-1.5 py-0.5 text-sm leading-none" style={{ fontFamily: UNB, fontStyle: "italic", fontWeight: 900, background: on ? GREEN : "#fff", color: on ? "#fff" : CARBON, clipPath: "polygon(0 0, calc(100% - 5px) 0, 100% 5px, 100% 100%, 0 100%)" }}>{n}</span>
+      <span className="absolute left-2.5 right-2 bottom-2 text-sm leading-tight line-clamp-2" style={{ fontFamily: FONT, fontWeight: 800, color: CARBON, hyphens: "auto" }} lang="fr">{label}</span>
+      {on && <span aria-hidden className="absolute inset-x-0 bottom-0 h-1" style={{ background: GREEN }} />}
+    </button>
+  );
+  // 2 ÇA DÉPASSE — plaque blanche basse, la pièce sort par le haut (comme les cartes de l'accueil)
+  if (look === 2) return (
+    <button type="button" onClick={onClick} aria-pressed={on} className={cn("relative shrink-0 text-left group", h)}>
+      <span aria-hidden className="absolute inset-x-0 bottom-0 top-[38%]" style={{ background: on ? "#EEF4EF" : "#fff", clipPath: CHAMFER, ...ring }} />
+      {img("left-1/2 top-0 -translate-x-1/2 h-[54%] w-auto origin-bottom group-hover:-translate-y-1 group-hover:scale-[1.06]")}
+      <span className="absolute left-2.5 right-2 bottom-2 flex flex-col" style={{ fontFamily: FONT }}>
+        <span className="text-sm font-extrabold leading-tight line-clamp-2" style={{ color: CARBON }}>{label} <span style={{ fontFamily: UNB, fontStyle: "italic", fontWeight: 900, color: GREEN }}>{n}</span></span>
+      </span>
+    </button>
+  );
+  // 3 ÉTIQUETTE — fond pierre, nom sur étiquette blanche à filet vert
+  if (look === 3) return (
+    <button type="button" onClick={onClick} aria-pressed={on} className={cn("relative shrink-0 overflow-hidden text-left group transition-transform hover:-translate-y-0.5", h)}
+      style={{ clipPath: CHAMFER, background: on ? "#E4EDE6" : STONE }}>
+      {img("left-1/2 top-[6%] -translate-x-1/2 h-[52%] w-auto group-hover:scale-[1.08]")}
+      <span className="absolute right-2 top-2 text-sm leading-none">{num(GREEN)}</span>
+      <span className="absolute left-1.5 right-1.5 bottom-1.5 pl-2 pr-1.5 py-1 bg-white" style={{ boxShadow: `inset 3px 0 0 ${GREEN}`, clipPath: "polygon(0 0, calc(100% - 6px) 0, 100% 6px, 100% 100%, 0 100%)", fontFamily: FONT }}>
+        <span className="block text-sm font-extrabold leading-tight line-clamp-2" style={{ color: CARBON }}>{label}</span>
+      </span>
+    </button>
+  );
+  // 4 RAYON — vignette courte : pièce à gauche, nom + nombre à droite (rangée plus basse, la grille remonte)
+  if (look === 4) return (
+    <button type="button" onClick={onClick} aria-pressed={on} className={cn("relative shrink-0 flex items-center gap-2 pl-1.5 pr-3 h-[64px] text-left group", size === "sm" && "min-w-[176px]")}
+      style={{ clipPath: CHAMFER, background: on ? "#EEF4EF" : "#fff", ...ring }}>
+      <span className="relative w-[52px] h-[52px] shrink-0 overflow-hidden" style={{ background: STONE, clipPath: "polygon(0 0, calc(100% - 6px) 0, 100% 6px, 100% 100%, 0 100%)" }}>
+        {c ? (src && <img src={src} alt="" loading="lazy" className="absolute inset-[6%] w-[88%] h-[88%] object-contain transition-transform duration-300 group-hover:scale-110" />) : <AllCollage />}
+      </span>
+      <span className="min-w-0 flex flex-col" style={{ fontFamily: FONT }}>
+        <span className="text-sm font-extrabold leading-tight line-clamp-2" style={{ color: CARBON }}>{label}</span>
+        <span className="text-sm leading-tight">{num(on ? GREEN : "#6B7280")}</span>
+      </span>
+    </button>
+  );
+  // 5 VEDETTE — « Toutes » en grande plaque claire (2 colonnes), les autres en pierre avec le nombre en gros
+  return (
+    <button type="button" onClick={onClick} aria-pressed={on} className={cn("relative shrink-0 overflow-hidden text-left group transition-transform hover:-translate-y-0.5", h, !c && size === "md" && "col-span-2", !c && size === "sm" && "w-[200px]")}
+      style={{ clipPath: CHAMFER, background: c ? STONE : "#fff", ...ring }}>
+      {c ? img("right-[-8%] top-[22%] h-[48%] w-auto group-hover:scale-[1.08]") : (
+        <span aria-hidden className="absolute right-0 top-0 bottom-0 w-[58%]"><AllCollage big /></span>
+      )}
+      <span className="absolute left-2.5 top-2 leading-none" style={{ fontFamily: UNB, fontStyle: "italic", fontWeight: 900, fontSize: c ? 22 : 30, color: on ? GREEN : CARBON }}>{n}</span>
+      {!c && <span className="absolute left-2.5 top-10 text-sm font-bold uppercase tracking-wide text-gray-500" style={{ fontFamily: FONT }}>pièces</span>}
+      <span className="absolute left-2.5 right-2 bottom-2 text-sm font-extrabold leading-tight line-clamp-2" style={{ fontFamily: FONT, color: CARBON }}>{label}</span>
+      {on && <span aria-hidden className="absolute inset-x-0 bottom-0 h-1" style={{ background: GREEN }} />}
+    </button>
+  );
+};
+
 // ─── Vignette catégorie : photo pleine bord à bord (17/10 : plus de « carré dans le carré »),
 //     nom en blanc sur dégradé, nombre en haut à gauche, coin coupé ; active = cadre carbone + barre verte.
 const CatTile = ({ c, img, n, on, onClick, size = "md" }: { c: CatCategory | null; img?: string; n: number; on: boolean; onClick: () => void; size?: "sm" | "md" }) => (
@@ -180,8 +268,11 @@ const GuideLink = ({ cat, n }: { cat: CatCategory | undefined; n: number }) =>
 const CatalogueTop = (p: Props) => {
   const all = p.categories.reduce((n, c) => n + (p.counts[c.id] ?? 0), 0);
   const tiles = (size: "sm" | "md" = "md") => [
-    <CatTile key="all" c={null} n={all} on={p.activeCategory === null} onClick={() => p.onCategory(null)} size={size} />,
-    ...p.categories.map((c) => <CatTile key={c.id} c={c} img={p.images[c.id]} n={p.counts[c.id] ?? 0} on={p.activeCategory === c.id} onClick={() => p.onCategory(c.id)} size={size} />),
+    TUILE ? <CatTileNew key="all" c={null} n={all} on={p.activeCategory === null} onClick={() => p.onCategory(null)} size={size} look={TUILE} />
+      : <CatTile key="all" c={null} n={all} on={p.activeCategory === null} onClick={() => p.onCategory(null)} size={size} />,
+    ...p.categories.map((c) => TUILE
+      ? <CatTileNew key={c.id} c={c} n={p.counts[c.id] ?? 0} on={p.activeCategory === c.id} onClick={() => p.onCategory(c.id)} size={size} look={TUILE} />
+      : <CatTile key={c.id} c={c} img={p.images[c.id]} n={p.counts[c.id] ?? 0} on={p.activeCategory === c.id} onClick={() => p.onCategory(c.id)} size={size} />),
   ];
 
   // ── 1 · VITRINE ──
@@ -190,7 +281,7 @@ const CatalogueTop = (p: Props) => {
       <section className="container mx-auto px-4 pt-6 lg:pt-10 pb-4">
         <div className="flex items-end justify-between gap-4 flex-wrap"><Title /><Count n={p.resultCount} total={p.total} /></div>
         <div className="mt-5 max-w-2xl"><SearchField value={p.query} onChange={p.onQuery} /></div>
-        <div className="mt-5 grid grid-cols-3 sm:grid-cols-5 lg:grid-cols-9 gap-2">{tiles()}</div>
+        <div className={TUILE === 4 ? "mt-5 grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-8 gap-2" : TUILE === 2 ? "mt-5 grid grid-cols-3 sm:grid-cols-5 lg:grid-cols-9 gap-x-2 gap-y-3" : "mt-5 grid grid-cols-3 sm:grid-cols-5 lg:grid-cols-9 gap-2"}>{tiles()}</div>
         {p.activeCategory && <div className="max-w-2xl"><GuideLink cat={p.categories.find((c) => c.id === p.activeCategory)} n={p.counts[p.activeCategory] ?? 0} /></div>}
         <div className="mt-4"><Filters {...p} /></div>
       </section>

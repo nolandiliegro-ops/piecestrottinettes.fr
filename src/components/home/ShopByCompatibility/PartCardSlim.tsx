@@ -58,6 +58,8 @@ const A_FONT = "'Plus Jakarta Sans', sans-serif";
 const A_UNB = "'Unbounded', sans-serif";
 const A_CUT = (px: number) => `polygon(0 0, calc(100% - ${px}px) 0, 100% ${px}px, 100% 100%, 0 100%)`;
 const A_LINE = "#E2DCD0";
+/** 19/10 : virgule française sur les cartes Atelier (formatPrice sort « 11.90 € »). */
+const frPrice = (n: number) => `${n.toFixed(2).replace(".", ",")}\u00A0€`;
 /** Pièces plates (plaquettes, disques…) : la photo a beaucoup de vide autour → on les grossit pour qu'elles sortent autant qu'un pneu. */
 const BOOST: Record<string, number> = { plaquettes: 1.2, "disques-plaquettes": 1.15, disques: 1.15, chargeurs: 1.1, "chambres-a-air": 1.05 };
 
@@ -222,7 +224,7 @@ const PartCardSlim = ({ part, index, variant = "grid", brandColor, categoryFilte
           {PCARD === 3 ? (
             <div className="mt-3 flex items-stretch justify-between gap-2">
               <span className="inline-flex items-center px-3 min-h-[44px] text-[20px] text-white" style={{ background: "#1A1A1A", fontFamily: A_UNB, fontWeight: 900, fontStyle: "italic", clipPath: A_CUT(8) }}>
-                {part.price != null ? formatPrice(part.price) : "—"}
+                {part.price != null ? frPrice(part.price) : "—"}
               </span>
               <button type="button" onClick={handleQuickAdd} disabled={isOut || part.price === null} aria-label="Ajouter au panier"
                 className="w-12 min-h-[44px] inline-flex items-center justify-center text-white disabled:opacity-40" style={{ background: "#FF6600", clipPath: A_CUT(8) }}>
@@ -230,11 +232,11 @@ const PartCardSlim = ({ part, index, variant = "grid", brandColor, categoryFilte
               </button>
             </div>
           ) : PCARD === 5 ? (
-            <p className="mt-2 text-[22px] leading-none" style={{ fontFamily: A_UNB, fontWeight: 900, fontStyle: "italic", color: "#1A1A1A" }}>{part.price != null ? formatPrice(part.price) : "—"}</p>
+            <p className="mt-2 text-[22px] leading-none" style={{ fontFamily: A_UNB, fontWeight: 900, fontStyle: "italic", color: "#1A1A1A" }}>{part.price != null ? frPrice(part.price) : "—"}</p>
           ) : (
             <>
               <p className="mt-1.5 text-[24px] leading-none" style={{ fontFamily: A_UNB, fontWeight: 900, fontStyle: "italic", color: PCARD === 1 ? "#FFFFFF" : "#1A1A1A" }}>
-                {part.price != null ? formatPrice(part.price) : "—"}
+                {part.price != null ? frPrice(part.price) : "—"}
               </p>
               <button type="button" onClick={handleQuickAdd} disabled={isOut || part.price === null}
                 className="mt-3 w-full min-h-[44px] inline-flex items-center justify-center gap-2 text-sm font-extrabold uppercase tracking-wide text-white disabled:opacity-40"
