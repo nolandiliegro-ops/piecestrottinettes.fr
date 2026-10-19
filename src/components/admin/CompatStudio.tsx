@@ -40,6 +40,7 @@ interface CompatRow {
     id: string; name: string; slug: string; image_url: string | null;
     price: number | null; published: boolean;
     category: { name: string } | null;
+    part_suppliers: { supplier_name: string }[] | null;
   } | null;
 }
 
@@ -96,7 +97,7 @@ const useScooterCompat = (scooterId: string | null) => useQuery({
   queryFn: async (): Promise<CompatRow[]> => {
     const { data, error } = await supabase
       .from('part_compatibility')
-      .select('part_id, auto_suggested, confidence_level, suggestion_reason, position, part:parts(id, name, slug, image_url, price, published, category:categories(name))')
+      .select('part_id, auto_suggested, confidence_level, suggestion_reason, position, part:parts(id, name, slug, image_url, price, published, category:categories(name), part_suppliers(supplier_name))')
       .eq('scooter_model_id', scooterId as string);
     if (error) throw error;
     return (data || []) as unknown as CompatRow[];
@@ -114,7 +115,7 @@ const PartCompatCard = ({
   const c = CONF[conf];
   return (
     <div className="admin-glass-card rounded-2xl overflow-hidden flex flex-col">
-      <div className="relative aspect-[4/3] bg-white flex items-center justify-center">
+      <div className="relative h-28 bg-white flex items-center justify-center">
         {part.image_url ? (
           <img src={part.image_url} alt={part.name} loading="lazy" className="w-full h-full object-contain p-2" />
         ) : (
@@ -132,37 +133,38 @@ const PartCompatCard = ({
           </span>
         )}
       </div>
-      <div className="flex-1 flex flex-col px-3 pt-2 pb-3 gap-1 border-t border-[hsl(var(--admin-border))]">
-        <p className="text-[13px] font-semibold leading-snug line-clamp-2 text-[hsl(var(--admin-text))]">{part.name}</p>
-        {row.suggestion_reason && (
-          <p className="text-[11px] text-[hsl(var(--admin-text-muted))] line-clamp-2" title={row.suggestion_reason}>
-            {row.suggestion_reason}
-          </p>
-        )}
-        <div className="mt-auto flex items-center justify-between pt-1.5 gap-2">
-          <span className="text-sm font-black text-[hsl(var(--admin-text))]">{part.price != null ? `${part.price} €` : ''}</span>
-          <div className="flex items-center gap-1.5">
+      <div className="flex-1 flex flex-col px-2.5 pt-1.5 pb-2 gap-0.5 border-t border-[hsl(var(--admin-border))]">
+        <p className="text-[12px] font-semibold leading-snug line-clamp-2 min-h-[32px] text-[hsl(var(--admin-text))]">{part.name}</p>
+        <p className="text-[10px] text-[hsl(var(--admin-text-muted))] truncate" title={row.suggestion_reason ?? undefined}>
+          {row.suggestion_reason ?? '\u00a0'}
+        </p>
+        <p className="text-[10px] font-semibold uppercase tracking-wide text-[hsl(var(--admin-accent))] truncate">
+          {(part.part_suppliers ?? []).map(ps => ps.supplier_name).join(' · ') || '\u00a0'}
+        </p>
+        <div className="mt-auto flex items-center justify-between pt-1 gap-2">
+          <span className="text-[13px] font-black text-[hsl(var(--admin-text))]">{part.price != null ? `${part.price} €` : ''}</span>
+          <div className="flex items-center gap-1">
             {busy ? <Loader2 className="w-4 h-4 animate-spin text-[hsl(var(--admin-text-muted))]" /> : (
               <>
                 <button
                   onClick={onReject}
                   title="Pas compatible — retirer"
-                  className="w-10 h-10 rounded-xl border border-red-200 text-red-600 hover:bg-red-50 flex items-center justify-center"
+                  className="w-9 h-9 rounded-lg border border-red-200 text-red-600 hover:bg-red-50 flex items-center justify-center"
                 >
-                  <X className="w-5 h-5" />
+                  <X className="w-4 h-4" />
                 </button>
                 <button
                   onClick={onValidate}
                   disabled={conf === 'validated'}
                   title={conf === 'validated' ? 'Déjà validée' : 'Compatible — valider'}
                   className={cn(
-                    'w-10 h-10 rounded-xl flex items-center justify-center',
+                    'w-9 h-9 rounded-lg flex items-center justify-center',
                     conf === 'validated'
                       ? 'bg-[hsl(var(--admin-accent)/0.15)] text-[hsl(var(--admin-accent))] cursor-default'
                       : 'bg-[hsl(var(--admin-accent))] text-white hover:opacity-90'
                   )}
                 >
-                  <Check className="w-5 h-5" />
+                  <Check className="w-4 h-4" />
                 </button>
               </>
             )}
