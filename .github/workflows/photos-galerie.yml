@@ -65,6 +65,14 @@ jobs:
               tail -n 40 "out/compat-$lot.log" | grep -v -i 'secret\|bearer\|eyJ' | sed 's/^/::notice title=compat::/'
               continue
             fi
+            if [ "$mode" = "detourage" ]; then
+              # Lecture seule : audit du détourage de toutes les photos de trottinettes publiées (voile, débris, liseré).
+              node scripts/audit-detourage.mjs > "out/detourage-$lot.log" 2>&1
+              echo "::notice title=detourage::EXIT=$?"
+              grep '^::' "out/detourage-$lot.log" | head -5
+              tail -n 3 "out/detourage-$lot.log"
+              continue
+            fi
             if [ "$mode" = "audit" ]; then
               # Lecture seule : audit des galeries en ligne (doublons, gros plans, 2e photo proposée) + planches.
               node scripts/audit-galeries.mjs --file "config/photos/$lot.json" > "out/$lot.$mode.log" 2>&1
