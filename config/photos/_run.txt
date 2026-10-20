@@ -1,1 +1,1 @@
-compat prises-xiaomi-20-10
+compat chargeur-ewm813-20-10
