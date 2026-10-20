@@ -5,6 +5,7 @@ import { usePartBySlug, useCompatibleScooters, useRelatedParts } from "@/hooks/u
 import { useSelectedScooter } from "@/contexts/ScooterContext";
 import Header from "@/components/Header";
 import SEO from "@/components/SEO";
+import { seoMeta } from "@/lib/partFicheText";
 import { sanitizeHtml, stripHtml } from "@/lib/sanitizeHtml";
 import { getPrimaryImage } from "@/lib/entityImage";
 import { isVerdictSafe } from "@/lib/batteryVoltage";
@@ -106,6 +107,9 @@ const PartDetail = () => {
         reason: "voltage:ambigu",
       }));
 
+  // 20/10 : titre + description Google générés depuis la compat vérifiée (garde tension appliquée) ; sinon texte en base.
+  const generatedMeta = seoMeta(part, compatScooters);
+
   const productUrl = `${SITE_URL}/piece/${part.slug}`;
   // Image primaire en URL Storage ORIGINALE (convention JSON-LD) ; omise si vide.
   const schemaImage = getPrimaryImage(part.images, part.image_url, "");
@@ -166,14 +170,16 @@ const PartDetail = () => {
     <div className="min-h-screen bg-[hsl(var(--greige))]">
       <SEO
         title={
-          part.meta_title?.trim()
-            ? part.meta_title
-            : `${part.name} - Pièce compatible trottinette électrique`
+          generatedMeta?.title
+            ?? (part.meta_title?.trim()
+              ? part.meta_title
+              : `${part.name} - Pièce compatible trottinette électrique`)
         }
         description={
-          part.meta_description?.trim()
-            ? part.meta_description
-            : `Achetez ${part.name} pour trottinette électrique. Compatible ${compatibleModels || "nombreux modèles"}. Livraison rapide.`
+          generatedMeta?.description
+            ?? (part.meta_description?.trim()
+              ? part.meta_description
+              : `Achetez ${part.name} pour trottinette électrique. Compatible ${compatibleModels || "nombreux modèles"}. Livraison rapide.`)
         }
         image={part.image_url ?? undefined}
         canonical={productUrl}

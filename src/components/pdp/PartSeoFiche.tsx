@@ -21,6 +21,7 @@ import { sanitizeHtml } from "@/lib/sanitizeHtml";
 import { formatPrice } from "@/lib/formatPrice";
 import type { PartDetail, CompatibleScooter } from "@/hooks/usePartDetail";
 import { parseSpecs, cleanDescription } from "@/components/pdp/PartPageVariants";
+import { fullName, shortName, groupByBrand, topModels, listFr, matchBasis, type Group } from "@/lib/partFicheText";
 
 const UNB = "'Unbounded', sans-serif";
 const FONT = "'Plus Jakarta Sans', sans-serif";
@@ -79,39 +80,6 @@ const useCaliperLabels = (enabled: boolean) =>
 const CELLS: Record<number, number> = { 24: 7, 36: 10, 48: 13, 52: 14, 60: 16, 72: 20 };
 const fr = (n: number) => n.toLocaleString("fr-FR", { maximumFractionDigits: 1 });
 
-const fullName = (s: CompatibleScooter) => {
-  const b = s.brand?.name?.trim() ?? "";
-  // « Pure Electric » + « Pure Air⁶ » : le nom commence déjà par le premier mot de la marque → pas de doublon.
-  const first = b.split(/\s+/)[0]?.toLowerCase() ?? "";
-  return b && !s.name.toLowerCase().startsWith(first) ? `${b} ${s.name}` : s.name;
-};
-const shortName = (s: CompatibleScooter) => {
-  const b = s.brand?.name ?? "";
-  return b && s.name.toLowerCase().startsWith(b.toLowerCase() + " ") ? s.name.slice(b.length + 1) : s.name;
-};
-
-type Group = { brand: string; items: CompatibleScooter[] };
-const groupByBrand = (list: CompatibleScooter[]): Group[] => {
-  const m = new Map<string, CompatibleScooter[]>();
-  for (const s of list) {
-    const b = s.brand?.name?.trim() || "Autres";
-    m.set(b, [...(m.get(b) ?? []), s]);
-  }
-  return [...m.entries()]
-    .map(([brand, items]) => ({ brand, items: items.sort((a, b) => a.name.localeCompare(b.name, "fr")) }))
-    .sort((a, b) => b.items.length - a.items.length || a.brand.localeCompare(b.brand, "fr"));
-};
-
-/** Trois modèles représentatifs : le premier de chacune des plus grosses marques (pas trois Xiaomi d'affilée). */
-const topModels = (groups: Group[], n = 3) => {
-  const out: CompatibleScooter[] = [];
-  for (let round = 0; out.length < n && round < 5; round++)
-    for (const g of groups) if (g.items[round] && out.length < n) out.push(g.items[round]);
-  return out.map(fullName);
-};
-
-const listFr = (items: string[]) =>
-  items.length <= 1 ? items.join("") : `${items.slice(0, -1).join(", ")} et ${items[items.length - 1]}`;
 
 /** Ce qui identifie la pièce, lu dans la base (jamais deviné). */
 const keyRows = (part: PartDetail, caliper: Record<string, string>): [string, string][] => {
@@ -238,14 +206,6 @@ const siblingTitle = (part: PartDetail) => {
 };
 
 
-/** Sur quoi la compatibilité est vérifiée, dit dans les mots de la famille. */
-const matchBasis = (part: PartDetail) => {
-  const f = part.fitment_specs ?? {};
-  if (f.brake_caliper?.length) return "sur la forme d'étrier";
-  if (f.brake_disc?.diameters?.length) return "sur le diamètre et la fixation du disque";
-  if (part.electrical_specs?.voltages?.length) return part.electrical_specs.connector ? "sur la tension et la prise de charge" : "sur la tension";
-  return "sur la cote de montage";
-};
 
 const fill = (t: string, v: Record<string, string>) => t.replace(/\{(\w+)\}/g, (_, k) => v[k] ?? "");
 
@@ -340,6 +300,7 @@ export const FaqJsonLd = ({ faq }: { faq: { q: string; a: string }[] }) => faq.l
 
 export { UNB, FONT, CARBON, GREEN, LINE, CHAMFER, Video, Chip, BrandFold, askUrl, fullName, shortName, listFr, siblingTitle, matchBasis };
 export type { Group, Guide, Sibling };
+export { seoMeta } from "@/lib/partFicheText";
 
 const PartSeoFiche = ({ part, scooters, scootersLoading }: { part: PartDetail; scooters: CompatibleScooter[]; scootersLoading: boolean }) => {
   const family = part.category?.slug ?? null;

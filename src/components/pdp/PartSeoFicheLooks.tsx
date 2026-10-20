@@ -296,6 +296,52 @@ const CountLine = ({ part, f, loading }: { part: PartDetail; f: Fiche; loading: 
   </p>
 );
 
+/**
+ * Présentation GÉNÉRÉE (20/10, go Nolan « a ») : 3-4 phrases propres à la référence, tirées de ses données
+ * (nom, cote / étrier / tension, nombre de trottinettes, modèles phares). Jamais un chiffre inventé : une donnée absente
+ * fait sauter sa phrase. Unique par page sans rédaction à la main, et à jour quand la compat évolue.
+ */
+const presentationText = (part: PartDetail, f: Fiche): string[] => {
+  const row = (label: string) => f.rows.find(([k]) => k === label)?.[1];
+  const fam = part.category?.slug ?? "";
+  const out: string[] = [];
+  if (f.n > 0) {
+    const more = f.groups.length > f.top.length ? `, parmi ${f.groups.length} marques` : "";
+    out.push(`Compatible avec ${f.n} trottinette${f.n > 1 ? "s" : ""} électrique${f.n > 1 ? "s" : ""}, dont ${f.top.join(", ").replace(/, ([^,]*)$/, " et $1")}${more}.`);
+  } else out.push(`${part.name} : ${f.guideLabel || "pièce pour trottinette électrique"}.`);
+  const sect = part.fitment_specs?.tire_sections?.[0];
+  const caliper = row("Étrier de frein");
+  const volt = part.electrical_specs?.voltages?.[0];
+  const prise = part.electrical_specs?.connector;
+  const disc = row("Diamètre du disque");
+  if (["chambres-a-air", "pneus", "pneus-pleins"].includes(fam) && sect)
+    out.push(`Avant de commander, lis la cote inscrite sur le flanc de ton pneu actuel : elle doit indiquer ${sect}${fam === "chambres-a-air" ? ", et la valve doit avoir le même angle que celle d'origine" : ""}.`);
+  else if (fam === "plaquettes" && caliper)
+    out.push(`Ce qui compte, c'est la forme de ton étrier : celle-ci est taillée pour un étrier ${caliper}.`);
+  else if (fam === "disques" && disc)
+    out.push(`Diamètre ${disc}${row("Entraxe de fixation") ? `, entraxe ${row("Entraxe de fixation")}` : ""} : les deux doivent être identiques à ton disque d'origine.`);
+  else if (fam === "chargeurs" && volt)
+    out.push(`Pour une batterie de ${volt} V nominal${prise ? `, avec une prise ${prise}` : ""} : la tension doit être exactement celle de ta trottinette.`);
+  const lead = splitTrait(f.points[0] ?? "")[0];
+  if (lead && fam !== "chargeurs") out.push(`Sa particularité : ${lead.charAt(0).toLowerCase()}${lead.slice(1)}.`);
+  return out;
+};
+
+const Presentation = ({ part, f }: { part: PartDetail; f: Fiche }) => (
+  <div className="max-w-3xl">
+    {presentationText(part, f).map((t) => <p key={t} className={`${txt} mb-2`}>{t}</p>)}
+    <p className={txt}>Un doute ? <Link to={askUrl(part)} className="font-bold underline inline-flex items-center min-h-[44px]" style={{ color: CARBON }}>Dis-nous ta trottinette, on vérifie pour toi</Link>.</p>
+    {f.descText.length > 60 && (
+      <details className="mt-1 group">
+        <summary className="list-none cursor-pointer inline-flex items-center gap-2 min-h-[44px] text-sm font-extrabold uppercase tracking-wider [&::-webkit-details-marker]:hidden" style={{ color: GREEN }}>
+          Description du fabricant <ChevronDown className="w-4 h-4 transition-transform group-open:rotate-180" />
+        </summary>
+        <div className={`mt-1 quill-content ${txt}`} dangerouslySetInnerHTML={{ __html: sanitizeHtml(f.desc) }} />
+      </details>
+    )}
+  </div>
+);
+
 const standardTabs = (part: PartDetail, f: Fiche, opts: { compat?: boolean; montageFirst?: boolean; video?: boolean } = {}): TabDef[] => {
   const compat = opts.compat !== false ? [{ k: "compat", label: `Compatibilité${f.n ? ` (${f.n})` : ""}`, body: <CompatBlock part={part} f={f} /> }] : [];
   const montage = f.guide ? [{ k: "montage", label: "Montage", body: <Install part={part} f={f} video={opts.video !== false} /> }] : [];
@@ -438,10 +484,7 @@ const Replie = ({ part, f, scootersLoading }: P) => {
           )}
         </div>
         <div className="mt-5 space-y-2">
-          <Fold icon={FileText} title="Présentation">
-            <CountLine part={part} f={f} loading={scootersLoading} />
-            {f.descText.length > 60 && <div className={`mt-3 quill-content ${txt}`} dangerouslySetInnerHTML={{ __html: sanitizeHtml(f.desc) }} />}
-          </Fold>
+          <Fold icon={FileText} title="Présentation"><Presentation part={part} f={f} /></Fold>
           {f.points.length > 0 && <Fold icon={Sparkles} title="Ce qui la distingue"><Traits f={f} /></Fold>}
           {f.guide && <Fold icon={Wrench} title="Montage" teaser={part.youtube_video_id ? "vidéo" : undefined}><Install part={part} f={f} /></Fold>}
           <Fold icon={Gauge} title="Caractéristiques" teaser={f.rows[0]?.[1].split(" · ")[0]}><TechFull f={f} noDesc /></Fold>
