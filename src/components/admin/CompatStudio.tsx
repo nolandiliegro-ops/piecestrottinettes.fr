@@ -1,6 +1,7 @@
 import { useEffect, useMemo, useState } from 'react';
 import { useQuery, useMutation, useQueryClient } from '@tanstack/react-query';
 import AbsentsPanel from './AbsentsPanel';
+import AtelierQuestionsPanel, { useAtelierQuestions, isAnswered } from './AtelierQuestionsPanel';
 import {
   Check, X, ChevronLeft, ChevronRight, Search, ImageOff, Loader2,
   Disc, Plug, CircleDot, Gauge, LayoutList, Filter, Plus, ArrowDownWideNarrow, Pencil,
@@ -399,6 +400,9 @@ const CompatStudio = ({ onClassic }: { onClassic: () => void }) => {
   const [railSort, setRailSort] = useState<'az' | 'to_validate' | 'missing'>('az');
   const [brandFilter, setBrandFilter] = useState<string | null>(null);
   const [brandSort, setBrandSort] = useState<'missing' | 'az'>('missing');
+  const [overviewTab, setOverviewTab] = useState<'marques' | 'trancher'>('marques');
+  const { data: atelierQs = [] } = useAtelierQuestions();
+  const qOpen = atelierQs.filter(q => !q.traitee && !isAnswered(q)).length;
   const [catFilter, setCatFilter] = useState<string>('all');
   const [addOpen, setAddOpen] = useState(false);
   const [addSearch, setAddSearch] = useState('');
@@ -589,7 +593,7 @@ const CompatStudio = ({ onClassic }: { onClassic: () => void }) => {
             className="pl-9 bg-white border-[hsl(var(--admin-border))]"
           />
         </div>
-        <div className="flex items-center gap-1.5">
+        <div className="flex flex-wrap items-center gap-1.5">
           {([
             { id: 'az', label: 'A → Z' },
             { id: 'to_validate', label: 'À trier d\'abord' },
@@ -599,7 +603,7 @@ const CompatStudio = ({ onClassic }: { onClassic: () => void }) => {
               key={o.id}
               onClick={() => setRailSort(o.id)}
               className={cn(
-                'flex items-center gap-1 px-2.5 py-1.5 rounded-full text-xs font-semibold border',
+                'flex items-center gap-1 px-2.5 min-h-[32px] rounded-full text-xs font-semibold border whitespace-nowrap',
                 railSort === o.id
                   ? 'bg-[hsl(var(--admin-accent))] text-white border-transparent'
                   : 'bg-white text-[hsl(var(--admin-text-muted))] border-[hsl(var(--admin-border))]'
@@ -673,6 +677,16 @@ const CompatStudio = ({ onClassic }: { onClassic: () => void }) => {
       <section className="flex-1 min-w-0 space-y-3">
         {!scooter ? (
           <div className="space-y-3">
+            <div className="flex gap-2" role="tablist" aria-label="Vue du Studio">
+              {([{ k: 'marques', l: 'Marques' }, { k: 'trancher', l: `À trancher${qOpen ? ` (${qOpen})` : ''}` }] as const).map(t => (
+                <button key={t.k} role="tab" aria-selected={overviewTab === t.k} onClick={() => setOverviewTab(t.k)}
+                  className={cn('min-h-[44px] px-4 rounded-full text-sm font-bold border',
+                    overviewTab === t.k ? 'bg-[hsl(var(--admin-text))] text-white border-transparent' : 'bg-white text-[hsl(var(--admin-text-muted))] border-[hsl(var(--admin-border))]')}>
+                  {t.l}
+                </button>
+              ))}
+            </div>
+            {overviewTab === 'trancher' ? <AtelierQuestionsPanel /> : (<>
             <div className="admin-glass-card rounded-2xl p-4">
               <div className="flex flex-wrap items-baseline justify-between gap-2">
                 <h3 className="text-base font-black uppercase tracking-wide text-[hsl(var(--admin-text))]">Clés de montage par marque</h3>
@@ -712,6 +726,7 @@ const CompatStudio = ({ onClassic }: { onClassic: () => void }) => {
               ))}
             </div>
             <AbsentsPanel brands={brandStats.map(b => b.brand)} defaultBrand={brandFilter} />
+            </>)}
           </div>
         ) : (
           <>
