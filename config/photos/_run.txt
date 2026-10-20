@@ -1,1 +1,1 @@
-compat chargeur-cmm236-20-10
+compat urbanglide
