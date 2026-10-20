@@ -40,6 +40,24 @@ const MentionsLegales = () => {
             partielle, est interdite sans autorisation préalable de l'éditeur.
           </p>
 
+          <h2>Base de données de compatibilité</h2>
+          <p>
+            Les fiches de pièces, de trottinettes et les correspondances de compatibilité
+            entre elles constituent une base de données dont l'éditeur est le producteur, au
+            sens des articles L.341-1 et suivants du Code de la propriété intellectuelle. Sa
+            constitution, sa vérification et sa présentation résultent d'un investissement
+            substantiel.
+          </p>
+          <p>
+            Sont interdites, sans autorisation écrite préalable de l'éditeur : l'extraction ou
+            la réutilisation de tout ou partie qualitativement ou quantitativement substantielle
+            de son contenu, ainsi que l'extraction ou la réutilisation répétée et systématique
+            de parties non substantielles (article L.342-1 et L.342-2 du même code), y compris
+            par des robots, scripts, aspirateurs de sites ou accès automatisés à l'interface de
+            programmation du site. La base contient des éléments de marquage permettant
+            d'identifier toute copie.
+          </p>
+
           <h2>Données personnelles et RGPD</h2>
           <p>
             Conformément au Règlement Général sur la Protection des Données (RGPD), les données
