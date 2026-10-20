@@ -120,17 +120,17 @@
  },
  {
   "d": "www.isinwheel.fr",
-  "kind": "shopify",
+  "kind": null,
   "collections_marque": 0,
   "lignes": 0,
-  "err": null
+  "err": "collections:503 woo:400"
  },
  {
   "d": "www.hiboy.com",
-  "kind": "shopify",
-  "collections_marque": 3,
-  "lignes": 49,
-  "err": null
+  "kind": null,
+  "collections_marque": 0,
+  "lignes": 0,
+  "err": "collections:503 woo:400"
  },
  {
   "d": "iscooterglobal.com",
@@ -253,10 +253,10 @@
  },
  {
   "d": "www.e-scooter-center-kassel.de",
-  "kind": "woo",
+  "kind": null,
   "collections_marque": 0,
-  "lignes": 500,
-  "err": null
+  "lignes": 0,
+  "err": "collections:fetch failed woo:fetch failed"
  },
  {
   "d": "e-scooterdoktor.de",
@@ -333,6 +333,538 @@
   "kind": "shopify",
   "collections_marque": 1,
   "lignes": 1,
+  "err": null
+ },
+ {
+  "d": "kaabousa.com",
+  "kind": "shopify",
+  "collections_marque": 9,
+  "lignes": 28,
+  "err": null
+ },
+ {
+  "d": "parts.eevees.com",
+  "kind": null,
+  "collections_marque": 0,
+  "lignes": 0,
+  "err": "collections:401 woo:400"
+ },
+ {
+  "d": "wilsonebikes.com",
+  "kind": "shopify",
+  "collections_marque": 11,
+  "lignes": 5,
+  "err": null
+ },
+ {
+  "d": "segway.la",
+  "kind": "shopify",
+  "collections_marque": 1,
+  "lignes": 21,
+  "err": null
+ },
+ {
+  "d": "inokim.shop",
+  "kind": "shopify",
+  "collections_marque": 5,
+  "lignes": 20,
+  "err": null
+ },
+ {
+  "d": "thescooterhub.co",
+  "kind": "shopify",
+  "collections_marque": 14,
+  "lignes": 34,
+  "err": null
+ },
+ {
+  "d": "ausomstore.com",
+  "kind": "shopify",
+  "collections_marque": 0,
+  "lignes": 0,
+  "err": null
+ },
+ {
+  "d": "dualtronusa.com",
+  "kind": "shopify",
+  "collections_marque": 1,
+  "lignes": 0,
+  "err": null
+ },
+ {
+  "d": "rydology.com",
+  "kind": "shopify",
+  "collections_marque": 7,
+  "lignes": 11,
+  "err": null
+ },
+ {
+  "d": "pevmotors.com",
+  "kind": "shopify",
+  "collections_marque": 6,
+  "lignes": 0,
+  "err": null
+ },
+ {
+  "d": "ticspin.com",
+  "kind": "woo",
+  "collections_marque": 0,
+  "lignes": 41,
+  "err": null
+ },
+ {
+  "d": "parts2ride.com",
+  "kind": "shopify",
+  "collections_marque": 0,
+  "lignes": 0,
+  "err": null
+ },
+ {
+  "d": "ezwheel.ca",
+  "kind": "shopify",
+  "collections_marque": 14,
+  "lignes": 0,
+  "err": null
+ },
+ {
+  "d": "promechbc.com",
+  "kind": "shopify",
+  "collections_marque": 12,
+  "lignes": 0,
+  "err": null
+ },
+ {
+  "d": "evoride.ca",
+  "kind": "shopify",
+  "collections_marque": 12,
+  "lignes": 21,
+  "err": null
+ },
+ {
+  "d": "niucanada.com",
+  "kind": "shopify",
+  "collections_marque": 11,
+  "lignes": 16,
+  "err": null
+ },
+ {
+  "d": "ecomotion.com.au",
+  "kind": "shopify",
+  "collections_marque": 75,
+  "lignes": 595,
+  "err": null
+ },
+ {
+  "d": "rideelectric.com.au",
+  "kind": "shopify",
+  "collections_marque": 49,
+  "lignes": 177,
+  "err": null
+ },
+ {
+  "d": "escooterrepairs.com.au",
+  "kind": "shopify",
+  "collections_marque": 4,
+  "lignes": 0,
+  "err": null
+ },
+ {
+  "d": "vsett.com.au",
+  "kind": "shopify",
+  "collections_marque": 15,
+  "lignes": 53,
+  "err": null
+ },
+ {
+  "d": "parts.segway.com.au",
+  "kind": "shopify",
+  "collections_marque": 0,
+  "lignes": 0,
+  "err": null
+ },
+ {
+  "d": "eozzie.com.au",
+  "kind": "shopify",
+  "collections_marque": 36,
+  "lignes": 1,
+  "err": null
+ },
+ {
+  "d": "melbournepowered.com.au",
+  "kind": "shopify",
+  "collections_marque": 3,
+  "lignes": 3,
+  "err": null
+ },
+ {
+  "d": "aiecosystem.com.au",
+  "kind": "woo",
+  "collections_marque": 0,
+  "lignes": 1,
+  "err": null
+ },
+ {
+  "d": "escooterspares.com.au",
+  "kind": "shopify",
+  "collections_marque": 0,
+  "lignes": 0,
+  "err": null
+ },
+ {
+  "d": "electricscootershop.co.nz",
+  "kind": "shopify",
+  "collections_marque": 9,
+  "lignes": 1,
+  "err": null
+ },
+ {
+  "d": "e-scooter-guy.co.nz",
+  "kind": null,
+  "collections_marque": 0,
+  "lignes": 0,
+  "err": "collections:404 woo:404"
+ },
+ {
+  "d": "blacksheeptrading.co.nz",
+  "kind": null,
+  "collections_marque": 0,
+  "lignes": 0,
+  "err": "collections:fetch failed woo:fetch failed"
+ },
+ {
+  "d": "ampedup.nz",
+  "kind": "woo",
+  "collections_marque": 0,
+  "lignes": 0,
+  "err": null
+ },
+ {
+  "d": "falconpev.com.sg",
+  "kind": "shopify",
+  "collections_marque": 11,
+  "lignes": 30,
+  "err": null
+ },
+ {
+  "d": "sz-neye.com",
+  "kind": null,
+  "collections_marque": 0,
+  "lignes": 0,
+  "err": "collections:404 woo:404"
+ },
+ {
+  "d": "epartschannel.com",
+  "kind": "shopify",
+  "collections_marque": 2,
+  "lignes": 17,
+  "err": null
+ },
+ {
+  "d": "electricscooteruae.com",
+  "kind": "woo",
+  "collections_marque": 0,
+  "lignes": 3,
+  "err": null
+ },
+ {
+  "d": "uae-scooters.com",
+  "kind": "shopify",
+  "collections_marque": 13,
+  "lignes": 15,
+  "err": null
+ },
+ {
+  "d": "eldrive.com.tr",
+  "kind": "woo",
+  "collections_marque": 0,
+  "lignes": 0,
+  "err": null
+ },
+ {
+  "d": "djbicicletasypatineselectricos.com",
+  "kind": "woo",
+  "collections_marque": 0,
+  "lignes": 0,
+  "err": null
+ },
+ {
+  "d": "segwaypatinetasj-o.com",
+  "kind": null,
+  "collections_marque": 0,
+  "lignes": 0,
+  "err": "collections:fetch failed woo:fetch failed"
+ },
+ {
+  "d": "opscooter.cl",
+  "kind": "woo",
+  "collections_marque": 0,
+  "lignes": 0,
+  "err": null
+ },
+ {
+  "d": "gbikes.cl",
+  "kind": "woo",
+  "collections_marque": 0,
+  "lignes": 0,
+  "err": null
+ },
+ {
+  "d": "monorimspain.com",
+  "kind": "shopify",
+  "collections_marque": 48,
+  "lignes": 222,
+  "err": null
+ },
+ {
+  "d": "b2b.3pscooters.de",
+  "kind": null,
+  "collections_marque": 0,
+  "lignes": 0,
+  "err": "collections:fetch failed woo:fetch failed"
+ },
+ {
+  "d": "apolloscooters.ca",
+  "kind": "shopify",
+  "collections_marque": 22,
+  "lignes": 14,
+  "err": null
+ },
+ {
+  "d": "escooter-parts.co.uk",
+  "kind": "shopify",
+  "collections_marque": 3,
+  "lignes": 5,
+  "err": null
+ },
+ {
+  "d": "gadgetcron.co.uk",
+  "kind": "shopify",
+  "collections_marque": 21,
+  "lignes": 160,
+  "err": null
+ },
+ {
+  "d": "edinburghscooters.co.uk",
+  "kind": null,
+  "collections_marque": 0,
+  "lignes": 0,
+  "err": "collections:404 woo:404"
+ },
+ {
+  "d": "locoscooters.ie",
+  "kind": "shopify",
+  "collections_marque": 54,
+  "lignes": 189,
+  "err": null
+ },
+ {
+  "d": "liftyelectric.com",
+  "kind": "shopify",
+  "collections_marque": 20,
+  "lignes": 106,
+  "err": null
+ },
+ {
+  "d": "elscootersweden.com",
+  "kind": "woo",
+  "collections_marque": 0,
+  "lignes": 1,
+  "err": null
+ },
+ {
+  "d": "elshoppen.dk",
+  "kind": "woo",
+  "collections_marque": 0,
+  "lignes": 29,
+  "err": null
+ },
+ {
+  "d": "reservedele-elcykler.dk",
+  "kind": "woo",
+  "collections_marque": 0,
+  "lignes": 0,
+  "err": null
+ },
+ {
+  "d": "sparkfix.no",
+  "kind": "shopify",
+  "collections_marque": 1,
+  "lignes": 0,
+  "err": null
+ },
+ {
+  "d": "sahkopotkulaudat.fi",
+  "kind": "woo",
+  "collections_marque": 0,
+  "lignes": 0,
+  "err": null
+ },
+ {
+  "d": "eway.fi",
+  "kind": "shopify",
+  "collections_marque": 0,
+  "lignes": 0,
+  "err": null
+ },
+ {
+  "d": "fadu-bike.at",
+  "kind": "shopify",
+  "collections_marque": 5,
+  "lignes": 17,
+  "err": null
+ },
+ {
+  "d": "nopedals.cz",
+  "kind": "woo",
+  "collections_marque": 0,
+  "lignes": 128,
+  "err": null
+ },
+ {
+  "d": "nopedals.sk",
+  "kind": "woo",
+  "collections_marque": 0,
+  "lignes": 109,
+  "err": null
+ },
+ {
+  "d": "myscooter.gr",
+  "kind": "woo",
+  "collections_marque": 0,
+  "lignes": 0,
+  "err": null
+ },
+ {
+  "d": "freemoov.com",
+  "kind": null,
+  "collections_marque": 0,
+  "lignes": 0,
+  "err": "collections:404 woo:404"
+ },
+ {
+  "d": "streetride.be",
+  "kind": "shopify",
+  "collections_marque": 5,
+  "lignes": 0,
+  "err": null
+ },
+ {
+  "d": "kissmywheels.ch",
+  "kind": "woo",
+  "collections_marque": 0,
+  "lignes": 485,
+  "err": null
+ },
+ {
+  "d": "360scooters.com",
+  "kind": "woo",
+  "collections_marque": 0,
+  "lignes": 0,
+  "err": null
+ },
+ {
+  "d": "afscooters.com",
+  "kind": "shopify",
+  "collections_marque": 42,
+  "lignes": 392,
+  "err": null
+ },
+ {
+  "d": "flekywatts.com",
+  "kind": "woo",
+  "collections_marque": 0,
+  "lignes": 14,
+  "err": null
+ },
+ {
+  "d": "moveparts.pt",
+  "kind": "woo",
+  "collections_marque": 0,
+  "lignes": 20,
+  "err": null
+ },
+ {
+  "d": "scootech.pt",
+  "kind": "woo",
+  "collections_marque": 0,
+  "lignes": 893,
+  "err": null
+ },
+ {
+  "d": "trotinetch.pt",
+  "kind": "shopify",
+  "collections_marque": 26,
+  "lignes": 15,
+  "err": null
+ },
+ {
+  "d": "oficinadatrotinete.pt",
+  "kind": null,
+  "collections_marque": 0,
+  "lignes": 0,
+  "err": "collections:404 woo:401"
+ },
+ {
+  "d": "wheelyshop.it",
+  "kind": "shopify",
+  "collections_marque": 18,
+  "lignes": 0,
+  "err": null
+ },
+ {
+  "d": "weroll.de",
+  "kind": "shopify",
+  "collections_marque": 16,
+  "lignes": 6,
+  "err": null
+ },
+ {
+  "d": "mikrofahrzeuge.com",
+  "kind": "woo",
+  "collections_marque": 0,
+  "lignes": 0,
+  "err": null
+ },
+ {
+  "d": "phitecshop.de",
+  "kind": "woo",
+  "collections_marque": 0,
+  "lignes": 7,
+  "err": null
+ },
+ {
+  "d": "e-scooter-roeselare.be",
+  "kind": "woo",
+  "collections_marque": 0,
+  "lignes": 0,
+  "err": null
+ },
+ {
+  "d": "piristore.be",
+  "kind": null,
+  "collections_marque": 0,
+  "lignes": 0,
+  "err": "collections:fetch failed woo:fetch failed"
+ },
+ {
+  "d": "e-lectrified.nl",
+  "kind": "woo",
+  "collections_marque": 0,
+  "lignes": 0,
+  "err": null
+ },
+ {
+  "d": "naprawa-hulajnogi.pl",
+  "kind": "woo",
+  "collections_marque": 0,
+  "lignes": 0,
+  "err": null
+ },
+ {
+  "d": "sklep.shiftseven.pl",
+  "kind": "shopify",
+  "collections_marque": 0,
+  "lignes": 0,
   "err": null
  }
 ]
