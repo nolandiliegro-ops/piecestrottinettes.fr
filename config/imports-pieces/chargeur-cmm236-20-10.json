@@ -1,0 +1,44 @@
+[
+ {
+  "categoryName": "Chargeurs",
+  "parts": [
+   {
+    "name": "Chargeur 21,6V ➡️ 24,2V / 1,5A jack DC 5,5x2,1 mm Xiaomi 4 Lite 2e gén. / 6 Lite / 4 Go",
+    "slug": "chargeur-216v-242v-15a-jack-dc-55x21-xiaomi-4-lite-6-lite-4-go",
+    "sku": "EW-CMM236",
+    "price": 22.9,
+    "stock_quantity": 20,
+    "description": "<p><strong>Ta Xiaomi Lite ne charge plus ?</strong> Ce chargeur sort 24,2 V sous 1,5 A, la charge des Xiaomi 4 Lite 2e génération, 6 Lite et 4 Go, avec leur prise jack DC 5,5 x 2,1 mm.</p><ul><li><strong>La bonne tension</strong> : 24,2 V, pour leur batterie 21,6 V. Un chargeur 36 V ou 48 V ne doit jamais y être branché.</li><li><strong>Le bon embout</strong> : jack DC 5,5 x 2,1 mm, sans adaptateur.</li><li><strong>Léger</strong> : il se glisse dans un sac pour recharger au bureau.</li></ul><p><strong>Le bon réflexe :</strong> regarde l'étiquette sous ta trottinette avant de commander : les Xiaomi 4, 4 Pro et 6 Pro ont une batterie et une prise différentes.</p>",
+    "meta_title": "Chargeur 24,2V 1,5A Xiaomi 4 Lite 2e gén. / 6 Lite / 4 Go",
+    "meta_description": "Chargeur pour Xiaomi 4 Lite 2e génération, 6 Lite et 4 Go : sortie 24,2V 1,5A, jack DC 5,5x2,1 mm. Livraison rapide.",
+    "ean": "8435764421365",
+    "characteristics": "Chargeur pour batterie 21,6V (6S), sortie 24,2V 1,5A. Jack DC 5,5x2,1 mm. Réf. fournisseur eWheel CMM236. EAN 8435764421365.",
+    "compatibility_source": "Xiaomi Mi 4 GO, Xiaomi Mi 4 Lite (2ème Génération), Xiaomi Mi6 Lite (eWheel)",
+    "electrical_specs": {
+     "connector": "DC5.5x2.1",
+     "voltages": [
+      22
+     ]
+    },
+    "source_image_urls": [
+     "https://cdn.shopify.com/s/files/1/0613/0178/4618/files/8435764421365_1a.jpg",
+     "https://cdn.shopify.com/s/files/1/0613/0178/4618/files/12476.jpg",
+     "https://cdn.shopify.com/s/files/1/0613/0178/4618/files/8435764421365_-_2a.jpg"
+    ],
+    "supplier": {
+     "name": "ewheel",
+     "sku": "CMM236-IU",
+     "url": "https://ewheel.es/products/chargeur-21v-sortie-24-2v-1-5a-mi4-go-mi4-lite-2st-gen-dc-5-5x2-1mm",
+     "buy_price_ht": 7.95,
+     "stock_supplier": 134,
+     "notes": "import 20/10 (22V DC5.5x2.1, Xiaomi Lite)"
+    },
+    "technical_metadata": {
+     "source": "airtable",
+     "airtable_id": "recjMUfOUxADSkpwX",
+     "import": "chargeur-cmm236-20-10"
+    }
+   }
+  ]
+ }
+]
