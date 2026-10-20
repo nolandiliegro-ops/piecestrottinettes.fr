@@ -2,14 +2,14 @@
  {
   "d": "www.trotnation.com",
   "kind": "shopify",
-  "total": 4957,
+  "total": 4955,
   "gardes": 810,
   "err": null
  },
  {
   "d": "e-watts.fr",
   "kind": "woo",
-  "total": 1456,
+  "total": 1457,
   "gardes": 503,
   "err": null
  },
@@ -23,7 +23,7 @@
  {
   "d": "france-gyrotrot.com",
   "kind": "shopify",
-  "total": 1553,
+  "total": 1555,
   "gardes": 379,
   "err": null
  },
@@ -46,7 +46,7 @@
   "kind": null,
   "total": 0,
   "gardes": 0,
-  "err": "shopify:403 woo:403"
+  "err": "shopify:Unexpected token '<', \"<html><hea\"... is not valid JSON woo:Unexpected token '<', \"<html><hea\"... is not valid JSON"
  },
  {
   "d": "urbanglide.com",
@@ -121,8 +121,8 @@
  {
   "d": "www.kukirin-france.com",
   "kind": "shopify",
-  "total": 17,
-  "gardes": 0,
+  "total": 44,
+  "gardes": 7,
   "err": null
  },
  {
@@ -130,14 +130,14 @@
   "kind": null,
   "total": 0,
   "gardes": 0,
-  "err": "shopify:403 woo:403"
+  "err": "shopify:Unexpected token '<', \"<html><hea\"... is not valid JSON woo:Unexpected token '<', \"<html><hea\"... is not valid JSON"
  },
  {
   "d": "www.smartgyro.es",
   "kind": null,
   "total": 0,
   "gardes": 0,
-  "err": "shopify:500 woo:fetch failed"
+  "err": "shopify:fetch failed woo:fetch failed"
  },
  {
   "d": "www.zwheel.fr",
@@ -226,7 +226,7 @@
  {
   "d": "zwheel-shop.com",
   "kind": "woo",
-  "total": 897,
+  "total": 896,
   "gardes": 53,
   "err": null
  },
@@ -299,5 +299,180 @@
   "total": 0,
   "gardes": 0,
   "err": "shopify:404 woo:404"
+ },
+ {
+  "d": "www.ruedaqrueda.com",
+  "kind": "woo",
+  "total": 4400,
+  "gardes": 381,
+  "err": null
+ },
+ {
+  "d": "piezas-patinete-repuestos.es",
+  "kind": "woo",
+  "total": 99,
+  "gardes": 15,
+  "err": null
+ },
+ {
+  "d": "patinetestore.com",
+  "kind": "woo",
+  "total": 2888,
+  "gardes": 228,
+  "err": null
+ },
+ {
+  "d": "www.wheelyshop.es",
+  "kind": "shopify",
+  "total": 1652,
+  "gardes": 58,
+  "err": null
+ },
+ {
+  "d": "kugoo.eu",
+  "kind": "shopify",
+  "total": 100,
+  "gardes": 21,
+  "err": null
+ },
+ {
+  "d": "kukirinprime.com",
+  "kind": "shopify",
+  "total": 1106,
+  "gardes": 143,
+  "err": null
+ },
+ {
+  "d": "www.kukirin-scooter.com",
+  "kind": "shopify",
+  "total": 113,
+  "gardes": 24,
+  "err": null
+ },
+ {
+  "d": "trott-en-provence.fr",
+  "kind": "woo",
+  "total": 8000,
+  "gardes": 7356,
+  "err": null
+ },
+ {
+  "d": "hikerboyscooter.com",
+  "kind": "shopify",
+  "total": 44,
+  "gardes": 8,
+  "err": null
+ },
+ {
+  "d": "lupeo.fr",
+  "kind": "woo",
+  "total": 1257,
+  "gardes": 251,
+  "err": null
+ },
+ {
+  "d": "personalelectrictransport.co.uk",
+  "kind": "woo",
+  "total": 1167,
+  "gardes": 677,
+  "err": null
+ },
+ {
+  "d": "www.electricscooterslondon.com",
+  "kind": "shopify",
+  "total": 618,
+  "gardes": 198,
+  "err": null
+ },
+ {
+  "d": "mi-scooter.uk",
+  "kind": null,
+  "total": 0,
+  "gardes": 0,
+  "err": "shopify:Unexpected token '<', \"<html><hea\"... is not valid JSON woo:Unexpected token '<', \"<html><hea\"... is not valid JSON"
+ },
+ {
+  "d": "www.e-scooter-center-kassel.de",
+  "kind": "woo",
+  "total": 4186,
+  "gardes": 134,
+  "err": null
+ },
+ {
+  "d": "e-scooterdoktor.de",
+  "kind": "shopify",
+  "total": 632,
+  "gardes": 40,
+  "err": null
+ },
+ {
+  "d": "www.c24-shop.de",
+  "kind": "woo",
+  "total": 574,
+  "gardes": 67,
+  "err": null
+ },
+ {
+  "d": "yourscooter.de",
+  "kind": "shopify",
+  "total": 553,
+  "gardes": 5,
+  "err": null
+ },
+ {
+  "d": "www.electricbikes.it",
+  "kind": null,
+  "total": 0,
+  "gardes": 0,
+  "err": "shopify:404 woo:404"
+ },
+ {
+  "d": "www.magiccars.com",
+  "kind": "shopify",
+  "total": 15000,
+  "gardes": 1673,
+  "err": null
+ },
+ {
+  "d": "www.kugoousa.com",
+  "kind": null,
+  "total": 0,
+  "gardes": 0,
+  "err": "shopify:404 woo:404"
+ },
+ {
+  "d": "www.isinwheel.com",
+  "kind": "shopify",
+  "total": 721,
+  "gardes": 286,
+  "err": null
+ },
+ {
+  "d": "www.kukirineu.com",
+  "kind": null,
+  "total": 0,
+  "gardes": 0,
+  "err": "shopify:404 woo:404"
+ },
+ {
+  "d": "www.kukirin-escooters.com",
+  "kind": null,
+  "total": 0,
+  "gardes": 0,
+  "err": "shopify:404 woo:404"
+ },
+ {
+  "d": "rapidscooter.co.uk",
+  "kind": "woo",
+  "total": 238,
+  "gardes": 61,
+  "err": null
+ },
+ {
+  "d": "www.kukirin-officiel.com",
+  "kind": "shopify",
+  "total": 99,
+  "gardes": 27,
+  "err": null
  }
 ]
