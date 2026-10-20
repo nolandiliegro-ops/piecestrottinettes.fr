@@ -145,6 +145,15 @@ de go : c'est une file de travail, elle ne touche pas le catalogue.
   backup → `traitee = true` + note de ce qui a été posé. Une question réglée autrement
   (deux boutiques d'accord) passe aussi en `traitee` avec la note.
 
+## Fiche pièce (règles actées 20/10/2026)
+- Toute fonction appelée par une PAGE (`src/pages/*`) vit dans `src/lib/`, jamais dans un composant
+  de fiche : `PartDetail → PartSeoFiche → PartPageVariants → PartSeoFiche` a donné une page blanche
+  (« Cannot read properties of undefined (reading 'default') ») au premier essai ; le build vite passe.
+- Descriptions des pièces = textes vendeurs rédigés par Claude (méthode : doc projet
+  `claude/descriptions-vendeuses-20-10.md`), écrits dans Airtable « Description SEO » ET dans
+  `parts.description` (aucune synchro automatique). Le générateur IA (generate-part-seo / generate-seo)
+  est retiré pour les pièces : ne pas le rebrancher.
+
 ## Mobile-First — règle absolue
 - Coder pour mobile en premier, desktop en second
 - Touch targets minimum 44px
