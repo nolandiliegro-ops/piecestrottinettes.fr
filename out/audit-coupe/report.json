@@ -1,8 +1,8 @@
 {
  "resume": {
   "trottinettes": 440,
-  "photos": 2118,
-  "photosCoupees": 487,
+  "photos": 2131,
+  "photosCoupees": 491,
   "principalesCoupees": 40,
   "sansPhotoEntiere": 6
  },
@@ -1341,17 +1341,59 @@
     {
      "i": 0,
      "coupe": {
-      "bas": 0.094,
-      "haut": 0.01,
-      "gauche": 0.019,
-      "droite": 0.022
+      "bas": 0.095,
+      "haut": 0.016,
+      "gauche": 0.025,
+      "droite": 0.025
+     },
+     "coupee": false
+    },
+    {
+     "i": 1,
+     "coupe": {
+      "bas": 0.13,
+      "haut": 0.042,
+      "gauche": 0.049,
+      "droite": 0.008
+     },
+     "coupee": true
+    },
+    {
+     "i": 2,
+     "coupe": {
+      "bas": 0.093,
+      "haut": 0.157,
+      "gauche": 0.025,
+      "droite": 0.134
+     },
+     "coupee": true
+    },
+    {
+     "i": 3,
+     "coupe": {
+      "bas": 0.086,
+      "haut": 0.066,
+      "gauche": 0.056,
+      "droite": 0.02
+     },
+     "coupee": false
+    },
+    {
+     "i": 4,
+     "coupe": {
+      "bas": 0.119,
+      "haut": 0.083,
+      "gauche": 0.066,
+      "droite": 0.011
      },
      "coupee": false
     }
    ],
    "principaleCoupee": false,
    "entieres": [
-    0
+    0,
+    3,
+    4
    ]
   },
   {
@@ -3318,12 +3360,33 @@
       "droite": 0.112
      },
      "coupee": true
+    },
+    {
+     "i": 3,
+     "coupe": {
+      "bas": 0.136,
+      "haut": 0.043,
+      "gauche": 0.017,
+      "droite": 0.129
+     },
+     "coupee": true
+    },
+    {
+     "i": 4,
+     "coupe": {
+      "bas": 0.082,
+      "haut": 0.019,
+      "gauche": 0.018,
+      "droite": 0.088
+     },
+     "coupee": false
     }
    ],
    "principaleCoupee": false,
    "entieres": [
     0,
-    1
+    1,
+    4
    ]
   },
   {
@@ -6198,11 +6261,55 @@
       "droite": 0.022
      },
      "coupee": false
+    },
+    {
+     "i": 1,
+     "coupe": {
+      "bas": 0.072,
+      "haut": 0.028,
+      "gauche": 0.049,
+      "droite": 0.016
+     },
+     "coupee": false
+    },
+    {
+     "i": 2,
+     "coupe": {
+      "bas": 0.056,
+      "haut": 0.03,
+      "gauche": 0.065,
+      "droite": 0.024
+     },
+     "coupee": false
+    },
+    {
+     "i": 3,
+     "coupe": {
+      "bas": 0.105,
+      "haut": 0.026,
+      "gauche": 0.06,
+      "droite": 0.016
+     },
+     "coupee": false
+    },
+    {
+     "i": 4,
+     "coupe": {
+      "bas": 0.088,
+      "haut": 0.044,
+      "gauche": 0.068,
+      "droite": 0.025
+     },
+     "coupee": false
     }
    ],
    "principaleCoupee": false,
    "entieres": [
-    0
+    0,
+    1,
+    2,
+    3,
+    4
    ]
   },
   {
@@ -9535,17 +9642,49 @@
     {
      "i": 1,
      "coupe": {
-      "bas": 0.066,
-      "haut": 0.126,
-      "gauche": 0.019,
+      "bas": 0.067,
+      "haut": 0.127,
+      "gauche": 0.027,
       "droite": 0.014
+     },
+     "coupee": true
+    },
+    {
+     "i": 2,
+     "coupe": {
+      "bas": 0.012,
+      "haut": 0.032,
+      "gauche": 0.049,
+      "droite": 0.058
+     },
+     "coupee": false
+    },
+    {
+     "i": 3,
+     "coupe": {
+      "bas": 0.051,
+      "haut": 0.085,
+      "gauche": 0.054,
+      "droite": 0.019
+     },
+     "coupee": false
+    },
+    {
+     "i": 4,
+     "coupe": {
+      "bas": 0.055,
+      "haut": 0.127,
+      "gauche": 0.022,
+      "droite": 0.011
      },
      "coupee": true
     }
    ],
    "principaleCoupee": false,
    "entieres": [
-    0
+    0,
+    2,
+    3
    ]
   },
   {
@@ -9555,20 +9694,20 @@
     {
      "i": 0,
      "coupe": {
-      "bas": 0.009,
-      "haut": 0.038,
-      "gauche": 0.055,
-      "droite": 0.058
+      "bas": 0.086,
+      "haut": 0.057,
+      "gauche": 0.052,
+      "droite": 0.052
      },
      "coupee": false
     },
     {
      "i": 1,
      "coupe": {
-      "bas": 0.07,
-      "haut": 0.065,
-      "gauche": 0.055,
-      "droite": 0.052
+      "bas": 0.012,
+      "haut": 0.033,
+      "gauche": 0.052,
+      "droite": 0.054
      },
      "coupee": false
     },
@@ -9809,20 +9948,20 @@
     {
      "i": 0,
      "coupe": {
-      "bas": 0.025,
-      "haut": 0.019,
-      "gauche": 0.046,
-      "droite": 0.046
+      "bas": 0.053,
+      "haut": 0.024,
+      "gauche": 0.011,
+      "droite": 0.049
      },
      "coupee": false
     },
     {
      "i": 1,
      "coupe": {
-      "bas": 0.053,
-      "haut": 0.024,
-      "gauche": 0.011,
-      "droite": 0.049
+      "bas": 0.025,
+      "haut": 0.019,
+      "gauche": 0.046,
+      "droite": 0.046
      },
      "coupee": false
     },
@@ -11098,7 +11237,13 @@
     },
     {
      "i": 2,
-     "err": "HTTP 429"
+     "coupe": {
+      "bas": 0.056,
+      "haut": 0.026,
+      "gauche": 0.06,
+      "droite": 0.014
+     },
+     "coupee": false
     },
     {
      "i": 3,
@@ -11125,6 +11270,7 @@
    "entieres": [
     0,
     1,
+    2,
     3,
     4
    ]
@@ -11353,7 +11499,13 @@
     },
     {
      "i": 1,
-     "err": "HTTP 429"
+     "coupe": {
+      "bas": 0.021,
+      "haut": 0.018,
+      "gauche": 0.06,
+      "droite": 0.011
+     },
+     "coupee": false
     },
     {
      "i": 2,
@@ -11389,6 +11541,7 @@
    "principaleCoupee": false,
    "entieres": [
     0,
+    1,
     2,
     3,
     4
@@ -11474,7 +11627,13 @@
     },
     {
      "i": 1,
-     "err": "HTTP 429"
+     "coupe": {
+      "bas": 0.077,
+      "haut": 0.065,
+      "gauche": 0.065,
+      "droite": 0.019
+     },
+     "coupee": false
     },
     {
      "i": 2,
@@ -11488,7 +11647,13 @@
     },
     {
      "i": 3,
-     "err": "HTTP 429"
+     "coupe": {
+      "bas": 0.08,
+      "haut": 0.08,
+      "gauche": 0.024,
+      "droite": 0.022
+     },
+     "coupee": false
     },
     {
      "i": 4,
@@ -11504,7 +11669,9 @@
    "principaleCoupee": false,
    "entieres": [
     0,
+    1,
     2,
+    3,
     4
    ]
   },
@@ -11514,7 +11681,13 @@
    "photos": [
     {
      "i": 0,
-     "err": "HTTP 429"
+     "coupe": {
+      "bas": 0.054,
+      "haut": 0.03,
+      "gauche": 0.057,
+      "droite": 0.019
+     },
+     "coupee": false
     },
     {
      "i": 1,
@@ -11548,7 +11721,13 @@
     },
     {
      "i": 4,
-     "err": "HTTP 429"
+     "coupe": {
+      "bas": 0.054,
+      "haut": 0.037,
+      "gauche": 0.052,
+      "droite": 0.016
+     },
+     "coupee": false
     },
     {
      "i": 5,
@@ -11583,8 +11762,10 @@
    ],
    "principaleCoupee": false,
    "entieres": [
+    0,
     2,
     3,
+    4,
     5,
     7
    ]
