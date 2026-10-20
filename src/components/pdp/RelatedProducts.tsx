@@ -40,7 +40,7 @@ const RelatedProducts = ({ parts, isLoading }: RelatedProductsProps) => {
 
   return (
     <section className="w-full max-w-7xl mx-auto">
-      <h2 className="text-2xl md:text-3xl uppercase leading-none mb-2"
+      <h2 className="text-2xl md:text-3xl uppercase leading-none mb-8 md:mb-10"
         style={{ fontFamily: UNB, fontWeight: 900, fontStyle: "italic", letterSpacing: "-0.02em", color: "#1A1A1A" }}>
         Vous pourriez aussi avoir besoin de
       </h2>

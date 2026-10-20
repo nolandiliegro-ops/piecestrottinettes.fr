@@ -61,7 +61,8 @@ const A_LINE = "#E2DCD0";
 /** 19/10 : virgule française sur les cartes Atelier (formatPrice sort « 11.90 € »). */
 const frPrice = (n: number) => `${n.toFixed(2).replace(".", ",")}\u00A0€`;
 /** Pièces plates (plaquettes, disques…) : la photo a beaucoup de vide autour → on les grossit pour qu'elles sortent autant qu'un pneu. */
-const BOOST: Record<string, number> = { plaquettes: 1.2, "disques-plaquettes": 1.15, disques: 1.15, chargeurs: 1.1, "chambres-a-air": 1.05 };
+
+const BOOST: Record<string, number> = { plaquettes: 1.2, "disques-plaquettes": 1, disques: 0.9, chargeurs: 0.85, "chambres-a-air": 1.05 }; // 20/10 Nolan : disques et chargeurs « un chouïa gros », l'effet qui dépasse est gardé
 
 type BadgeKind = "BEST" | "SÉCU" | "NOUVEAU" | null;
 

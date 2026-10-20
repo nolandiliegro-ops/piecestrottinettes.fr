@@ -300,7 +300,8 @@ export const useShopByCategoryDataV2 = (
     // 19/10 (Nolan) : sur « Tout », un produit de chaque catégorie à tour de rôle (sinon la dernière catégorie
     // importée — les chargeurs — occupe toute la rangée). Ordre de tour : forte marge d'abord.
     const interleave = (list: CompatiblePartRich[]) => {
-      const RANK = ["pneus", "chambres-a-air", "plaquettes", "chargeurs", "pneus-pleins", "disques"];
+      // 20/10 (Nolan) : les deux premiers = un pneu plein puis un disque (« c'est joli »), jamais une chambre à air en tête.
+      const RANK = ["pneus-pleins", "disques", "pneus", "plaquettes", "chargeurs", "chambres-a-air"];
       const buckets = new Map<string, CompatiblePartRich[]>();
       for (const p of list) { const k = p.category?.slug ?? "_"; if (!buckets.has(k)) buckets.set(k, []); buckets.get(k)!.push(p); }
       const keys = [...buckets.keys()].sort((x, y) => (RANK.indexOf(x) + 1 || 99) - (RANK.indexOf(y) + 1 || 99));

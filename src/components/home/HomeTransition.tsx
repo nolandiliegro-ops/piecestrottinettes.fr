@@ -17,10 +17,13 @@ export const PONT_NAMES: Record<PontVariant, string> = { 1: "Défilé", 2: "Ruba
 
 export const readPontVariant = (): 0 | PontVariant => {
   try {
-    const n = Number(new URLSearchParams(window.location.search).get("pont"));
+    // 20/10 : « 9 Plateau blanc » choisi par Nolan = défaut ; ?pont=0 = ancien enchaînement, 1..10 = propositions.
+    const raw = new URLSearchParams(window.location.search).get("pont");
+    if (raw === null) return 9;
+    const n = Number(raw);
     return n >= 1 && n <= 10 ? (n as PontVariant) : 0;
   } catch {
-    return 0;
+    return 9;
   }
 };
 
@@ -218,13 +221,7 @@ const EtabliCliquable = () => (
 );
 
 /** 9 — Plateau blanc : vide retiré, le catalogue se pose sur un plateau blanc chanfreiné (le changement de fond fait la transition). */
-const PlateauBlanc = () => (
-  <>
-    <style>{`[data-pont="9"] + section[data-home-variant], [data-pont="9"] + * section[data-home-variant] { background: transparent !important; }
-      [data-pont="9"] ~ section[data-home-variant] > div, [data-pont="9"] ~ * section[data-home-variant] > div { background: #FFFFFF !important; clip-path: polygon(0 0, calc(100% - 40px) 0, 100% 40px, 100% 100%, 0 100%); box-shadow: 0 -12px 30px -18px rgba(26,26,26,0.25); }`}</style>
-    <div aria-hidden className="-mt-10 lg:-mt-12" />
-  </>
-);
+const PlateauBlanc = () => <div aria-hidden className="-mt-10 lg:-mt-12" />;
 
 /** 10 — Serré + rayons : vide retiré, une rangée compacte de 4 raccourcis qui filtrent le catalogue. */
 const SerreRayons = () => (

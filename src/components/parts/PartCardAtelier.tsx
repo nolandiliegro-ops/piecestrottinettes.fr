@@ -53,7 +53,7 @@ const ORANGE = "#FF6600";
 const STONE = "#F2EFE8";
 const LINE = "#E2DCD0";
 const CUT = (px: number) => `polygon(0 0, calc(100% - ${px}px) 0, 100% ${px}px, 100% 100%, 0 100%)`;
-const BOOST: Record<string, number> = { plaquettes: 1.2, "disques-plaquettes": 1.15, disques: 1.15, chargeurs: 1.1, "chambres-a-air": 1.05 };
+const BOOST: Record<string, number> = { plaquettes: 1.2, "disques-plaquettes": 1, disques: 0.9, chargeurs: 0.85, "chambres-a-air": 1.05 }; // 20/10 Nolan : disques et chargeurs « un chouïa gros », l'effet qui dépasse est gardé
 const POS: Partial<Record<FitmentPosition, string>> = { avant: "Avant", arriere: "Arrière" };
 
 interface Props {

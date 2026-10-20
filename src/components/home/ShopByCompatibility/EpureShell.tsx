@@ -6,7 +6,8 @@
  * Unbounded italique ni de barre à flèche noire (réservés au haut de page), titre en Plus Jakarta droit, rayons en
  * texte, filtre trott réduit à un lien. Cartes produits inchangées.
  */
-import { useRef, useState, type ReactNode } from "react";
+import { useEffect, useRef, useState, type ReactNode } from "react";
+import { readPontVariant } from "@/components/home/HomeTransition";
 import { Link } from "react-router-dom";
 import { ArrowRight, ChevronRight, Search, X } from "lucide-react";
 import type { CategoryGroupV2 } from "@/hooks/useShopByCategoryDataV2";
@@ -97,7 +98,11 @@ const TextTabs = ({ p, big }: { p: EpureProps; big?: boolean }) => {
 /** Rayons (retour Nolan 19/10, 2e passe) : retour aux plaques d'avant — blanches, coin coupé, nom en capitales,
  *  nombre en italique ; plaque noire quand choisie. UN rayon à la fois (toucher un 2e rayon le remplace, retoucher
  *  le même revient à « Tout ») ; ordre figé au premier affichage pour que rien ne saute sous le doigt. */
-const CleanTabs = ({ p }: { p: EpureProps }) => {
+const CleanTabs = ({ p, fade = PAPER }: { p: EpureProps; fade?: string }) => {
+  const rowRef = useRef<HTMLDivElement>(null);
+  const [more, setMore] = useState(false);
+  const measure = () => { const r = rowRef.current; if (r) setMore(r.scrollWidth - r.clientWidth - r.scrollLeft > 12); };
+  useEffect(() => { measure(); window.addEventListener("resize", measure); return () => window.removeEventListener("resize", measure); });
   const order = useRef<string[]>([]);
   if (order.current.length === 0 && p.categories.length) order.current = p.categories.map((c) => c.slug);
   const rank = (slug: string) => { const i = order.current.indexOf(slug); return i === -1 ? 999 : i; };
@@ -123,9 +128,21 @@ const CleanTabs = ({ p }: { p: EpureProps }) => {
     </button>
   );
   return (
-    <div className="flex gap-2 overflow-x-auto pb-1 -mx-4 px-4 sm:mx-0 sm:px-0 sm:flex-wrap" style={{ scrollbarWidth: "none", overscrollBehaviorX: "contain" }} role="group" aria-label="Rayons">
-      {plate("tout", "Tout", null, none, () => clearAll(p))}
-      {cats.map((c) => plate(c.slug, c.name, c.count, p.selectedSlugs.has(c.slug), () => pick(c.slug)))}
+    <div className="relative">
+      <div ref={rowRef} onScroll={measure} className="flex gap-2 overflow-x-auto pb-1 -mx-4 px-4 sm:mx-0 sm:px-0 sm:flex-wrap" style={{ scrollbarWidth: "none", overscrollBehaviorX: "contain" }} role="group" aria-label="Rayons">
+        {plate("tout", "Tout", null, none, () => clearAll(p))}
+        {cats.map((c) => plate(c.slug, c.name, c.count, p.selectedSlugs.has(c.slug), () => pick(c.slug)))}
+      </div>
+      {/* 20/10 (Nolan) : sur téléphone, montrer qu'on peut glisser — fondu à droite + flèche, disparaît en bout de frise. */}
+      {more && (
+        <button type="button" aria-label="Voir les autres rayons" onClick={() => rowRef.current?.scrollBy({ left: 220, behavior: "smooth" })}
+          className="sm:hidden absolute -right-4 top-0 bottom-1 w-16 flex items-center justify-end pr-3"
+          style={{ background: `linear-gradient(90deg, rgba(255,255,255,0), ${fade} 55%)` }}>
+          <span className="h-9 w-9 inline-flex items-center justify-center text-white" style={{ background: CARBON, clipPath: "polygon(0 0, calc(100% - 6px) 0, 100% 6px, 100% 100%, 0 100%)" }}>
+            <ChevronRight className="w-5 h-5" />
+          </span>
+        </button>
+      )}
     </div>
   );
 };
@@ -141,6 +158,7 @@ const count = (p: EpureProps) => `${p.totalCount} pièce${p.totalCount > 1 ? "s"
 const EpureShell = (p: EpureProps) => {
   const v = p.variant;
   const [open, setOpen] = useState(false);
+  const [plateau] = useState(() => readPontVariant() === 9);
 
   // 7 — INDEX : sur ordinateur, sommaire à gauche (rayons en liste) et produits à droite ; sur téléphone, sommaire en ligne.
   if (v === 7) {
@@ -250,7 +268,9 @@ const EpureShell = (p: EpureProps) => {
   // champ souligné, onglets propres.
   return (
     <section className="w-full" style={{ background: PAPER, scrollMarginTop: 40 }} data-home-variant="6">
-      <div className="max-w-7xl mx-auto px-4 lg:px-8 py-12 lg:py-16">
+      {/* 20/10 « Plateau blanc » (choix Nolan, ?pont=9 par défaut) : le catalogue se pose sur un plateau blanc chanfreiné. */}
+      <div style={plateau ? { background: "#FFFFFF", clipPath: "polygon(0 0, calc(100% - 40px) 0, 100% 40px, 100% 100%, 0 100%)", boxShadow: "inset 0 1px 0 #E2DCD0" } : undefined}>
+      <div className={`max-w-7xl mx-auto px-4 lg:px-8 ${plateau ? "pt-10 pb-12 lg:pt-14 lg:pb-16" : "py-12 lg:py-16"}`}>
         <div className="flex items-end justify-between gap-4">
           <p className="text-sm font-bold uppercase tracking-[0.14em] pb-1" style={{ fontFamily: FONT, color: MUTED }}>Le catalogue</p>
           <p className="text-right leading-none" style={{ fontFamily: FONT }}>
@@ -262,11 +282,12 @@ const EpureShell = (p: EpureProps) => {
           <div className="min-w-0"><Field p={p} /></div>
           <div><TrottLink {...p} /></div>
         </div>
-        <div className="mt-4"><CleanTabs p={p} /></div>
+        <div className="mt-4"><CleanTabs p={p} fade={plateau ? "#FFFFFF" : PAPER} /></div>
         <div ref={p.productsRef} className="min-w-0 scroll-mt-4 mt-5"><Cards>{p.grid}</Cards></div>
         <Link to={p.catalogueHref} className="mt-6 inline-flex items-center gap-2 min-h-[44px] text-sm font-bold" style={{ fontFamily: FONT, color: CARBON }}>
           Voir les {p.totalCount} pièces <ArrowRight className="w-4 h-4" />
         </Link>
+      </div>
       </div>
     </section>
   );
