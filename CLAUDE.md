@@ -130,6 +130,21 @@ Supabase Secrets (Edge Functions) :
   le moteur ne le lit pas. Un éditeur de clé propose les valeurs canoniques en base
   (datalist), jamais du texte libre nu.
 
+## Questions « À trancher » (règle de Nolan, 20/10/2026)
+Toute question qu'aucune source ne tranche et qui se règle en atelier (taille lue sur le flanc,
+prise, doublon de pièce, contradiction entre boutiques, erreur probable de la base) va dans
+`public.atelier_questions` (admin → Catalogue → Compatibilités → « À trancher »), sans attendre
+de go : c'est une file de travail, elle ne touche pas le catalogue.
+- Une ligne = une question fermée : `id` stable et lisible (`p-<slug>`, `b-<slug>-<clé>`…),
+  `famille` (doublons · 200x50 · contradictions · variantes · prises · base), `titre`,
+  `contexte` (ce que disent la base et les sources), `regarder` (où regarder sur la machine),
+  `choix` (2 à 4 réponses + « Je ne sais pas »), `scooter_slug` + `cle` (colonne de MATCHING
+  qu'elle remplit) quand elle porte sur une trottinette, `source` (claude · campagne-cles ·
+  robot · moteur). `insert … on conflict (id) do nothing` : jamais deux fois la même question.
+- Relecture (« lis les réponses atelier ») : réponses → tableau de clés → go → écriture avec
+  backup → `traitee = true` + note de ce qui a été posé. Une question réglée autrement
+  (deux boutiques d'accord) passe aussi en `traitee` avec la note.
+
 ## Mobile-First — règle absolue
 - Coder pour mobile en premier, desktop en second
 - Touch targets minimum 44px

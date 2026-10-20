@@ -14,6 +14,7 @@ import { cn } from '@/lib/utils';
 export interface AtelierQuestion {
   id: string; famille: string; ordre: number; titre: string; contexte: string | null; regarder: string | null;
   choix: string[]; reponse: string | null; note: string | null; repondu_le: string | null; traitee: boolean;
+  source: string | null; scooter_slug: string | null; cle: string | null; created_at: string;
 }
 
 const FAMILLES: { k: string; label: string }[] = [
@@ -21,7 +22,12 @@ const FAMILLES: { k: string; label: string }[] = [
   { k: '200x50', label: 'Pneus 200x50' },
   { k: 'contradictions', label: 'Boutiques en désaccord' },
   { k: 'variantes', label: 'Versions et tensions' },
+  { k: 'prises', label: 'Prises de charge' },
+  { k: 'base', label: 'Erreurs probables de la base' },
 ];
+const SOURCE: Record<string, string> = { claude: 'Claude', 'campagne-cles': 'Campagne de clés', robot: 'Robot', moteur: 'Moteur' };
+const CLE: Record<string, string> = { v: 'tension', rim: 'jante', sec: 'taille de pneu', cc: 'prise', brake: 'frein', dd: 'disque', cal: 'étrier' };
+const isNew = (q: AtelierQuestion) => !q.traitee && Date.now() - new Date(q.created_at).getTime() < 72 * 3600 * 1000;
 const PAS_UNE_REPONSE = /je ne sais pas|pas au magasin|sous la main/i;
 
 // Table absente des types générés : accès non typé.
@@ -32,14 +38,14 @@ export const useAtelierQuestions = () => useQuery({
   queryKey: ['atelier-questions'],
   staleTime: 60_000,
   queryFn: async (): Promise<AtelierQuestion[]> => {
-    const { data, error } = await table().select('id, famille, ordre, titre, contexte, regarder, choix, reponse, note, repondu_le, traitee').order('ordre');
+    const { data, error } = await table().select('id, famille, ordre, titre, contexte, regarder, choix, reponse, note, repondu_le, traitee, source, scooter_slug, cle, created_at').order('ordre');
     if (error) throw error;
     return (data || []) as AtelierQuestion[];
   },
 });
 export const isAnswered = (q: AtelierQuestion) => !!(q.reponse && !PAS_UNE_REPONSE.test(q.reponse)) || !!q.note?.trim();
 
-const QuestionCard = ({ q }: { q: AtelierQuestion }) => {
+const QuestionCard = ({ q, onOpenScooter }: { q: AtelierQuestion; onOpenScooter?: (slug: string) => void }) => {
   const qc = useQueryClient();
   const [note, setNote] = useState(q.note ?? '');
   const save = useMutation({
@@ -58,8 +64,13 @@ const QuestionCard = ({ q }: { q: AtelierQuestion }) => {
         <h4 className="text-[15px] font-black uppercase leading-tight text-[hsl(var(--admin-text))]">{q.titre}</h4>
         {q.traitee
           ? <span className="shrink-0 px-2.5 py-1 rounded-full text-xs font-bold bg-[hsl(var(--admin-accent))] text-white">Traitée</span>
-          : done && <span className="shrink-0 px-2.5 py-1 rounded-full text-xs font-bold bg-[hsl(var(--admin-accent)/0.15)] text-[hsl(var(--admin-accent))]">Répondu</span>}
+          : done ? <span className="shrink-0 px-2.5 py-1 rounded-full text-xs font-bold bg-[hsl(var(--admin-accent)/0.15)] text-[hsl(var(--admin-accent))]">Répondu</span>
+          : isNew(q) && <span className="shrink-0 px-2.5 py-1 rounded-full text-xs font-bold bg-orange-500 text-white">Nouvelle</span>}
       </div>
+      <p className="text-xs text-[hsl(var(--admin-text-muted))]">
+        Ajoutée par {SOURCE[q.source ?? 'claude'] ?? q.source} le {new Date(q.created_at).toLocaleDateString('fr-FR', { day: 'numeric', month: 'short' })}
+        {q.cle && <> · remplit la clé <strong>{CLE[q.cle] ?? q.cle}</strong></>}
+      </p>
       {q.contexte && <p className="text-sm text-[hsl(var(--admin-text))]">{q.contexte}</p>}
       {q.regarder && (
         <p className="text-sm text-[hsl(var(--admin-text-muted))]">
@@ -92,6 +103,12 @@ const QuestionCard = ({ q }: { q: AtelierQuestion }) => {
         aria-label={`Note pour ${q.titre}`}
         className="bg-white min-h-[44px]"
       />
+      {q.scooter_slug && onOpenScooter && (
+        <button onClick={() => onOpenScooter(q.scooter_slug as string)}
+          className="min-h-[40px] px-3 rounded-lg border border-[hsl(var(--admin-border))] bg-white text-sm font-semibold text-[hsl(var(--admin-text))]">
+          Ouvrir la trottinette dans le Studio →
+        </button>
+      )}
       <p className="text-xs text-[hsl(var(--admin-text-muted))] min-h-[16px]">
         {save.isPending ? 'Enregistrement…' : q.repondu_le ? `Mis à jour le ${new Date(q.repondu_le).toLocaleString('fr-FR', { day: 'numeric', month: 'short', hour: '2-digit', minute: '2-digit' })}` : ''}
       </p>
@@ -99,7 +116,7 @@ const QuestionCard = ({ q }: { q: AtelierQuestion }) => {
   );
 };
 
-const AtelierQuestionsPanel = () => {
+const AtelierQuestionsPanel = ({ onOpenScooter }: { onOpenScooter?: (slug: string) => void }) => {
   const { data: qs = [], isLoading } = useAtelierQuestions();
   const [hideDone, setHideDone] = useState(false);
   if (isLoading) return <div className="admin-glass-card rounded-2xl p-8 flex justify-center"><Loader2 className="w-6 h-6 animate-spin text-[hsl(var(--admin-text-muted))]" /></div>;
@@ -111,7 +128,7 @@ const AtelierQuestionsPanel = () => {
           <h3 className="text-base font-black uppercase tracking-wide text-[hsl(var(--admin-text))]">À trancher au magasin</h3>
           <span className="text-sm text-[hsl(var(--admin-text-muted))] tabular-nums">{open.filter(isAnswered).length}/{open.length} répondues</span>
         </div>
-        <p className="text-sm text-[hsl(var(--admin-text-muted))] mt-1">Réponds d'un tap, ajoute une note si besoin. Rien ne change sur le site tant que Claude n'a pas relu tes réponses et posé les clés avec ton go.</p>
+        <p className="text-sm text-[hsl(var(--admin-text-muted))] mt-1">Claude ajoute ici chaque question qu'il ne peut pas trancher seul. Réponds d'un tap, ajoute une note si besoin. Rien ne change sur le site tant que Claude n'a pas relu tes réponses et posé les clés avec ton go.</p>
         <label className="mt-3 flex items-center gap-2 min-h-[44px] text-sm text-[hsl(var(--admin-text-muted))]">
           <input type="checkbox" checked={hideDone} onChange={e => setHideDone(e.target.checked)} className="w-5 h-5 accent-[hsl(var(--admin-accent))]" />
           Masquer les questions répondues
@@ -126,7 +143,7 @@ const AtelierQuestionsPanel = () => {
             <h3 className="px-1 text-sm font-black uppercase tracking-wide text-[hsl(var(--admin-text))]">
               {f.label} · <span className="tabular-nums">{all.filter(isAnswered).length}/{all.length}</span>
             </h3>
-            {items.length ? items.map(q => <QuestionCard key={`${q.id}-${q.repondu_le ?? ''}`} q={q} />)
+            {items.length ? items.map(q => <QuestionCard key={`${q.id}-${q.repondu_le ?? ''}`} q={q} onOpenScooter={onOpenScooter} />)
               : <p className="px-1 text-sm text-[hsl(var(--admin-text-muted))]">Tout est répondu ici.</p>}
           </section>
         );

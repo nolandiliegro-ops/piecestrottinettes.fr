@@ -686,7 +686,7 @@ const CompatStudio = ({ onClassic }: { onClassic: () => void }) => {
                 </button>
               ))}
             </div>
-            {overviewTab === 'trancher' ? <AtelierQuestionsPanel /> : (<>
+            {overviewTab === 'trancher' ? <AtelierQuestionsPanel onOpenScooter={slug => { const t = scooters.find(x => x.slug === slug); if (t) { setSelectedId(t.id); setCatFilter('all'); } else toast.error('Trottinette introuvable dans le Studio'); }} /> : (<>
             <div className="admin-glass-card rounded-2xl p-4">
               <div className="flex flex-wrap items-baseline justify-between gap-2">
                 <h3 className="text-base font-black uppercase tracking-wide text-[hsl(var(--admin-text))]">Clés de montage par marque</h3>
