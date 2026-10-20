@@ -1,1 +1,2 @@
-dry fix2010
+write fix2010
+cadrage write kugoo-g2,cecotec-bongo-serie-d30-xl-connected
