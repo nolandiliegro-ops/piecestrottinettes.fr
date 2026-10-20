@@ -1,0 +1,134 @@
+{
+ "displayName": "NIU KQi2 Pro",
+ "metaTitle": "NIU KQi2 Pro : fiche technique, avis et pièces",
+ "metaDescription": "NIU KQi2 Pro : 300 W, batterie 48 V 365 Wh, pneus tubeless 10x2.30 (jante 6,5\"), frein tambour avant, 38 km mesurés au Labo Fnac. Avis et pièces.",
+ "intro": [
+  "La NIU KQi2 Pro est la trottinette urbaine de milieu de gamme de NIU, référencée par Cleanrider dès l'été 2022 au prix de 499 €. Sans suspension, elle mise sur des pneus tubeless de 10 pouces et un poids contenu de 18,4 kg pour les trajets quotidiens.",
+  "Moteur de 300 W, batterie 48 V de 365 Wh, autonomie annoncée de 40 km : le Labo Fnac en a mesuré 38. Elle freine avec un tambour à l'avant et un frein régénératif. Sa recharge est longue, plus de 7 heures. Sur la voie publique, elle est limitée à 25 km/h."
+ ],
+ "specs": [
+  [
+   "Moteur",
+   "300 W (500 à 600 W en pointe selon les fiches)"
+  ],
+  [
+   "Vitesse",
+   "25 km/h"
+  ],
+  [
+   "Batterie",
+   "48 V, 365 Wh"
+  ],
+  [
+   "Autonomie",
+   "40 km annoncés, 38 km mesurés par le Labo Fnac"
+  ],
+  [
+   "Poids",
+   "18,4 kg"
+  ],
+  [
+   "Charge max",
+   "100 kg"
+  ],
+  [
+   "Roues",
+   "10 pouces, tubeless 10x2.30 (jante 6,5\")"
+  ],
+  [
+   "Freins",
+   "Tambour avant + freinage régénératif"
+  ],
+  [
+   "Suspension",
+   "Aucune"
+  ],
+  [
+   "Étanchéité",
+   "IP54 (IPX4 selon la Fnac)"
+  ],
+  [
+   "Temps de charge",
+   "7 h annoncées, 7 h 15 mesurées par le Labo Fnac"
+  ],
+  [
+   "Prix",
+   "499 € (selon Cleanrider, 2022)"
+  ]
+ ],
+ "pros": [
+  "Autonomie réelle proche de l'annonce : 38 km mesurés pour 40 km annoncés (L'Éclaireur Fnac).",
+  "Légère et séduisante pour un usage urbain (L'Éclaireur Fnac).",
+  "Pneus tubeless de 10 pouces qui compensent en partie l'absence de suspension."
+ ],
+ "cons": [
+  "Vite à bout de souffle (L'Éclaireur Fnac).",
+  "Recharge longue : 7 h 15 mesurées par le Labo Fnac.",
+  "Pas de suspension : confort limité sur pavés.",
+  "Un seul frein mécanique, le tambour avant."
+ ],
+ "parts": [
+  {
+   "label": "Pneu",
+   "size": "10x2.30-6.5 tubeless (10 pouces)",
+   "count": 2,
+   "to": "/piece/pneu-tubeless-10x2-30-6-5-cst",
+   "cta": "Pneus 10x2.30"
+  }
+ ],
+ "care": [
+  "Le tambour avant est le seul frein mécanique : fais-le régler dès que la course du levier s'allonge.",
+  "Pneus tubeless : vérifie la pression chaque mois, sans suspension un pneu sous-gonflé tape la jante dans les trous.",
+  "Vérifie régulièrement le serrage du mécanisme de pliage et de la potence : un jeu qui s'installe s'aggrave vite."
+ ],
+ "price": {
+  "text": "Prix en France : 499 € (2022).",
+  "source": "Cleanrider"
+ },
+ "faq": [
+  {
+   "q": "Quelle taille de pneu pour la NIU KQi2 Pro ?",
+   "a": "Des pneus tubeless de 10 pouces en 10x2.30, sur une jante de 6,5 pouces."
+  },
+  {
+   "q": "La NIU KQi2 Pro a-t-elle des plaquettes de frein ?",
+   "a": "Non. Elle freine avec un tambour à l'avant et un frein régénératif."
+  },
+  {
+   "q": "Quelle est l'autonomie réelle de la NIU KQi2 Pro ?",
+   "a": "Le Labo Fnac a mesuré 38 km sur une charge complète, pour 40 km annoncés par NIU."
+  },
+  {
+   "q": "Combien de temps pour recharger la NIU KQi2 Pro ?",
+   "a": "NIU annonce 7 heures. Le Labo Fnac a mesuré 7 h 15 pour une charge complète."
+  },
+  {
+   "q": "Quel poids maximum supporte la NIU KQi2 Pro ?",
+   "a": "100 kg, conducteur et sac compris."
+  }
+ ],
+ "sources": [
+  {
+   "label": "NIU — fiche KQi2 Pro",
+   "url": "https://global.niu.com/fr_CH/product/kqi2"
+  },
+  {
+   "label": "L'Éclaireur Fnac — test Labo NIU KQi2 Pro",
+   "url": "https://leclaireur.fnac.com/test/403415-test-labo-de-la-niu-kqi2-pro-legere-et-seduisante-mais-vite-a-bout-de-souffle/"
+  },
+  {
+   "label": "Fnac — NIU KQi2 Pro",
+   "url": "https://www.fnac.com/Trottinette-electrique-Niu-KQI2-Pro-600-W-Gris/a17940791/w-4"
+  },
+  {
+   "label": "Cleanrider — NIU KQi2 Pro",
+   "url": "https://www.cleanrider.com/catalogue/trottinette-electrique/niu/niu-kqi2-pro/"
+  }
+ ],
+ "video": {
+  "id": "WqRv-0p8Vwc",
+  "title": "JE TESTE LA KQi2 PRO UNE TROTTINETTE ÉLECTRIQUE À 499€ ! Niu [FR]",
+  "channel": "iVax",
+  "uploadDate": "2022-06-29"
+ }
+}

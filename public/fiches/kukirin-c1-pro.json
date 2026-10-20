@@ -1,0 +1,126 @@
+{
+ "displayName": "Kukirin C1 Pro",
+ "metaTitle": "Kukirin C1 Pro : fiche technique, avis et pièces",
+ "metaDescription": "Kukirin C1 Pro : trottinette à siège, 500 W, batterie 48 V 26 Ah, pneus 14 pouces à chambre à air, IP54. Fiche technique, limites, entretien et pièces.",
+ "intro": [
+  "La Kukirin C1 Pro est une trottinette à siège, que beaucoup appellent draisienne électrique, de la marque chinoise Kukirin, l'ex-Kugoo Kirin. Sa particularité, c'est sa batterie : 48 V 26 Ah, soit environ 1 248 Wh, pour une autonomie annoncée de 80 à 100 km selon les fiches des revendeurs.",
+  "Moteur arrière de 500 W, grandes roues de 14 pouces à chambre à air, freins à disque avant et arrière, siège et panier avant : elle vise les trajets assis plutôt que la performance. Avec 32,5 kg, elle se déplace en roulant, pas en la portant."
+ ],
+ "specs": [
+  [
+   "Moteur",
+   "500 W"
+  ],
+  [
+   "Vitesse",
+   "45 km/h annoncés (terrain privé uniquement)"
+  ],
+  [
+   "Batterie",
+   "48 V 26 Ah (environ 1 248 Wh)"
+  ],
+  [
+   "Autonomie annoncée",
+   "80 à 100 km selon les fiches"
+  ],
+  [
+   "Poids",
+   "32,5 kg"
+  ],
+  [
+   "Charge max",
+   "120 kg"
+  ],
+  [
+   "Roues",
+   "14 pouces, 14 x 2,5 à chambre à air"
+  ],
+  [
+   "Freins",
+   "Disques avant et arrière"
+  ],
+  [
+   "Suspension",
+   "Fourche avant à ressort (une fiche de vente annonce aussi l'arrière)"
+  ],
+  [
+   "Étanchéité",
+   "IP54"
+  ],
+  [
+   "Temps de charge",
+   "8 à 12 h selon les fiches"
+  ]
+ ],
+ "pros": [
+  "Batterie de 1 248 Wh, avec 80 à 100 km d'autonomie annoncés par les revendeurs.",
+  "Roues de 14 pouces à chambre à air, plus confortables que des roues de 10 pouces sur les trottoirs et les pavés.",
+  "Position assise avec siège et panier avant pour les courses."
+ ],
+ "cons": [
+  "32,5 kg : impossible à porter dans un escalier ou un transport en commun.",
+  "Avec son siège, elle ne correspond pas à la définition d'un engin de déplacement personnel motorisé, conçu sans place assise : renseigne-toi sur son statut avant de rouler sur la voie publique.",
+  "Pas de test de presse française publié : autonomie et temps de charge restent des données de revendeurs, qui ne s'accordent pas entre elles.",
+  "Les fiches ne décrivent pas toutes la même suspension : avant seule ou avant et arrière."
+ ],
+ "parts": [],
+ "care": [
+  "Pneus 14 pouces à chambre à air : contrôle la pression chaque semaine, un pneu mou pince la chambre au premier trottoir.",
+  "Freins à disque : retends les câbles dès que le levier va trop loin et surveille l'usure des plaquettes, surtout avec 32,5 kg à arrêter.",
+  "Vérifie régulièrement le serrage du siège et de son tube : le poids du conducteur y travaille à chaque bosse."
+ ],
+ "faq": [
+  {
+   "q": "Quelle taille de pneu pour la Kukirin C1 Pro ?",
+   "a": "Des pneus de 14 pouces en 14 x 2,5, montés avec une chambre à air."
+  },
+  {
+   "q": "Quelle batterie a la Kukirin C1 Pro ?",
+   "a": "Une batterie 48 V 26 Ah, soit environ 1 248 Wh. Une annonce Fnac mentionne 15 Ah : vérifie l'étiquette de ta batterie avant de commander un chargeur ou une batterie de remplacement."
+  },
+  {
+   "q": "Quelle est l'autonomie de la Kukirin C1 Pro ?",
+   "a": "Les revendeurs annoncent 80 à 100 km. Aucune mesure indépendante n'a été publiée : le poids, le relief et la vitesse feront baisser ce chiffre."
+  },
+  {
+   "q": "Combien de temps pour recharger la Kukirin C1 Pro ?",
+   "a": "Entre 8 et 12 heures selon les fiches. La grosse batterie explique cette durée avec le chargeur d'origine."
+  },
+  {
+   "q": "La Kukirin C1 Pro peut-elle rouler sur la voie publique ?",
+   "a": "La réglementation des trottinettes électriques vise les engins sans place assise. Avec son siège, la C1 Pro sort de ce cadre : renseigne-toi auprès des autorités avant de rouler sur la voie publique."
+  }
+ ],
+ "sources": [
+  {
+   "label": "Kukirin France — Kukirin C1 Pro",
+   "url": "https://kukirin-france.com/products/kukirin-c1-pro-electric-scooter"
+  },
+  {
+   "label": "Kukirin Scooters — fiche C1 Pro",
+   "url": "https://www.kukirin-scooters.com/products/kukirin-c1-pro-electric-scooter-1200wh-power-14-big-tire"
+  },
+  {
+   "label": "Fnac — Kukirin C1 Pro avec siège",
+   "url": "https://www.fnac.com/mp49947632/Trottinette-electrique-KuKirin-C1-Pro-Avec-siege-Pneu-pneumatique-de-14-pouces-Moteur-500W-Batterie-48V-15Ah-Vitesse-maximale-de-45-km/w-4"
+  },
+  {
+   "label": "Rue du Commerce — Kukirin C1 Pro",
+   "url": "https://www.rueducommerce.fr/p/m25048562188.html"
+  },
+  {
+   "label": "Kugoo EU — Kukirin C1 Pro",
+   "url": "https://kugoo.eu/fr/products/kukirin-c1-scooter-electrique-pro-version-2024"
+  },
+  {
+   "label": "Ministère de la Transition écologique — réglementation des trottinettes",
+   "url": "https://www.ecologie.gouv.fr/politiques-publiques/trottinettes-electriques-edpm-reglementation-vigueur"
+  }
+ ],
+ "video": {
+  "id": "hHm4A8bScUA",
+  "title": "KUKIRIN C1 PRO - Draisienne électrique PETIT budget / GROSSE autonomie !",
+  "channel": "Tazkiller85",
+  "uploadDate": "2024-12-04"
+ }
+}

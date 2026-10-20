@@ -1,0 +1,152 @@
+{
+ "displayName": "Kukirin A1",
+ "metaTitle": "Kukirin A1 : fiche technique, avis et pièces",
+ "metaDescription": "Kukirin A1 : 800 W, batterie 48 V 13 Ah, pneus tubeless 10x2.75-6.5, disques 140 mm, prise CQ. Points forts, limites, entretien et pièces compatibles.",
+ "intro": [
+  "La Kukirin A1 est une trottinette de la marque chinoise Kukirin, l'ex-Kugoo Kirin, vendue surtout en ligne. Elle reprend la recette de la G2 dans un châssis tubulaire : moteur arrière de 800 W (1 000 W en crête selon le fabricant), batterie 48 V 13 Ah, soit 624 Wh, et jusqu'à 45 km d'autonomie annoncée.",
+  "Pneus tubeless de 10 pouces en 10x2.75-6.5, suspensions avant et arrière, freins à disque sur les deux roues complétés par un frein électrique : c'est une trottinette pour les trajets quotidiens sur routes moyennes. Elle annonce 45 km/h, mais sur la voie publique en France elle doit rester bridée à 25 km/h."
+ ],
+ "specs": [
+  [
+   "Moteur",
+   "800 W (1 000 W en crête selon kukirinfactory.com)"
+  ],
+  [
+   "Vitesse",
+   "25 km/h sur la voie publique (45 km/h annoncés, terrain privé uniquement)"
+  ],
+  [
+   "Batterie",
+   "48 V 13 Ah (624 Wh)"
+  ],
+  [
+   "Autonomie annoncée",
+   "jusqu'à 45 km"
+  ],
+  [
+   "Poids",
+   "25,5 kg"
+  ],
+  [
+   "Charge max",
+   "120 kg"
+  ],
+  [
+   "Roues",
+   "10 pouces, tubeless 10x2.75-6.5"
+  ],
+  [
+   "Freins",
+   "Disques avant et arrière Ø 140 mm + frein électrique"
+  ],
+  [
+   "Suspension",
+   "Avant et arrière"
+  ],
+  [
+   "Étanchéité",
+   "IP54 selon les revendeurs, IPX4 selon la fiche du fabricant"
+  ],
+  [
+   "Prise de charge",
+   "CQ"
+  ],
+  [
+   "Chargeur",
+   "48 V (54,6 V 2 A en sortie)"
+  ],
+  [
+   "Temps de charge",
+   "7 à 8 h"
+  ]
+ ],
+ "pros": [
+  "Suspensions avant et arrière et pneus tubeless de 10 pouces pour un modèle d'entrée de gamme.",
+  "Deux freins à disque mécaniques, plus un frein électrique.",
+  "Trois modes de vitesse (20, 30 et 45 km/h) selon le revendeur kukirintrottinette.com."
+ ],
+ "cons": [
+  "25,5 kg : elle se porte, mais pas sur un long escalier.",
+  "Pas de test de presse française publié : l'autonomie de 45 km reste une donnée constructeur, non mesurée.",
+  "Indice d'étanchéité annoncé différemment selon les fiches (IP54 ou IPX4) : évite les grosses pluies.",
+  "Sa vitesse de pointe n'est utilisable que sur terrain privé : en France, la voie publique est limitée à 25 km/h."
+ ],
+ "parts": [
+  {
+   "label": "Pneu",
+   "size": "10x2.75-6.5 tubeless (10 pouces)",
+   "count": 6,
+   "to": "/piece/pneu-tubeless-10x2-75-6-5-offroad-runflat-ewheel",
+   "cta": "Pneus 10x2.75-6.5"
+  },
+  {
+   "label": "Disque de frein",
+   "size": "140 mm, 6 trous, entraxe 44 mm",
+   "count": 5,
+   "to": "/piece/disque-de-frein-140mm",
+   "cta": "Disques 140 mm"
+  },
+  {
+   "label": "Chargeur",
+   "size": "48 V → 54,6 V, prise CQ",
+   "count": 1,
+   "to": "/piece/pack-chargeur-48v-adaptateur-cq",
+   "cta": "Chargeurs 48 V"
+  }
+ ],
+ "care": [
+  "Pneus tubeless : contrôle la pression chaque semaine, un pneu sous-gonflé s'use vite et se déjante plus facilement.",
+  "Freins à disque mécaniques : retends les câbles dès que la course du levier s'allonge et surveille l'épaisseur des plaquettes.",
+  "Châssis tubulaire et suspensions : vérifie le serrage de la potence et des axes de bras après les routes abîmées."
+ ],
+ "faq": [
+  {
+   "q": "Quelle taille de pneu pour la Kukirin A1 ?",
+   "a": "Des pneus tubeless de 10 pouces en 10x2.75-6.5, sur une jante de 6,5 pouces."
+  },
+  {
+   "q": "Quel disque de frein pour la Kukirin A1 ?",
+   "a": "Un disque de 140 mm à 6 trous, entraxe 44 mm, à l'avant comme à l'arrière."
+  },
+  {
+   "q": "Quel chargeur pour la Kukirin A1 ?",
+   "a": "Un chargeur 48 V (54,6 V 2 A en sortie) avec prise CQ. Compte 7 à 8 heures pour une charge complète."
+  },
+  {
+   "q": "Peut-on mettre une chambre à air sur la Kukirin A1 ?",
+   "a": "Oui, une chambre à air de même dimension que le pneu (10x2.75-6.5) peut se monter dans le pneu tubeless si tu crèves souvent. Vérifie la cote exacte et la forme de valve avant de commander."
+  },
+  {
+   "q": "La Kukirin A1 est-elle légale en France ?",
+   "a": "Oui sur la voie publique à condition d'être bridée à 25 km/h, comme toute trottinette électrique. Débridée, elle n'est utilisable que sur terrain privé."
+  }
+ ],
+ "sources": [
+  {
+   "label": "Kukirin Trottinette — Kukirin A1",
+   "url": "https://kukirintrottinette.com/boutique/trottinette-electrique-kukirin-a1/"
+  },
+  {
+   "label": "Kukirin Trottinettes — Kukirin A1",
+   "url": "https://kukirin-trottinettes.com/products/trottinette-electrique-kukirin-a1"
+  },
+  {
+   "label": "Kukirin Factory — fiche technique A1",
+   "url": "https://fr.kukirinfactory.com/kukirin-a1"
+  },
+  {
+   "label": "Fnac — Kukirin A1 800 W 48 V 13 Ah",
+   "url": "https://www.fnac.com/mp52166909/Trottinette-electrique-pliable-Kukirin-A1-moteur-800-W-batterie-48-V-13-Ah-Pneus-10-pouces-vitesse-maximale-de-45-km-h-autonomie-de-45-km/w-4"
+  },
+  {
+   "label": "Ministère de la Transition écologique — réglementation des trottinettes",
+   "url": "https://www.ecologie.gouv.fr/politiques-publiques/trottinettes-electriques-edpm-reglementation-vigueur"
+  }
+ ],
+ "video": {
+  "id": "hRZqmwgR_kE",
+  "title": "TEST Kukirin A1 : Un châssis tubulaire et un style de fou !",
+  "channel": "H4CKMORE",
+  "uploadDate": "2025-07-06"
+ }
+}

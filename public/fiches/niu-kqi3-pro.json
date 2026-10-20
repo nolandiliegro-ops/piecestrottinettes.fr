@@ -1,0 +1,160 @@
+{
+ "displayName": "NIU KQi3 Pro",
+ "metaTitle": "NIU KQi3 Pro : fiche technique, avis et pièces",
+ "metaDescription": "NIU KQi3 Pro : 350 W, batterie 48 V 486 Wh, pneus tubeless 9.5x2.5, disques de frein 120 mm avant et arrière, 47,5 km mesurés. Avis et pièces.",
+ "intro": [
+  "La NIU KQi3 Pro est lancée en juillet 2021 sur Indiegogo, puis vendue en France à 699 € au lancement selon Frandroid et Cleanrider. Elle se distingue par un plateau large et des freins à disque à l'avant et à l'arrière.",
+  "Moteur arrière de 350 W, batterie 48 V de 486 Wh, autonomie annoncée de 50 km : Frandroid en a mesuré jusqu'à 47,5. Elle roule sur des pneus tubeless de 9,5 pouces en 9.5x2.5, sans suspension, et pèse autour de 20 kg. Sur la voie publique, elle est limitée à 25 km/h."
+ ],
+ "specs": [
+  [
+   "Moteur",
+   "350 W (700 W au maximum selon Urban Ecomobility)"
+  ],
+  [
+   "Vitesse",
+   "25 km/h"
+  ],
+  [
+   "Batterie",
+   "48 V, 10,1 Ah, 486 Wh"
+  ],
+  [
+   "Autonomie",
+   "50 km annoncés, jusqu'à 47,5 km mesurés par Frandroid"
+  ],
+  [
+   "Poids",
+   "20 kg (Frandroid, Cleanrider) à 20,3 kg (Urban Ecomobility)"
+  ],
+  [
+   "Charge max",
+   "100 kg selon Frandroid et Cleanrider, 120 kg selon NIU Europe"
+  ],
+  [
+   "Roues",
+   "9,5 pouces, tubeless 9.5x2.5 (241 x 64 mm, jante 6,1\")"
+  ],
+  [
+   "Freins",
+   "Disque avant et arrière, Ø 120 mm, + freinage régénératif"
+  ],
+  [
+   "Suspension",
+   "Aucune"
+  ],
+  [
+   "Étanchéité",
+   "IP54"
+  ],
+  [
+   "Prise de charge",
+   "NIU"
+  ],
+  [
+   "Temps de charge",
+   "environ 6 h"
+  ],
+  [
+   "Sortie",
+   "juillet 2021"
+  ],
+  [
+   "Prix de lancement",
+   "699 €"
+  ]
+ ],
+ "pros": [
+  "Autonomie mesurée proche de l'annonce : jusqu'à 47,5 km pour 50 km (Frandroid).",
+  "Large plateforme, bonne sensation de sécurité et accélérations vives (Frandroid).",
+  "Éclairage puissant (Frandroid)."
+ ],
+ "cons": [
+  "Environ 20 kg : transport peu pratique (Frandroid).",
+  "Écran mal exploité et peu lumineux, garde-boue arrière fragile (Frandroid).",
+  "Sur l'exemplaire de pré-série testé, frein arrière défaillant, freinages fantômes et application inutilisable (Frandroid).",
+  "Pas de suspension : confort limité sur pavés."
+ ],
+ "parts": [
+  {
+   "label": "Pneu",
+   "size": "9.5x2.5 tubeless (9,5 pouces, jante 6,1\")",
+   "count": 3,
+   "to": "/piece/pneu-tubeless-9-5x2-5-6-1-cityroad-ewheel",
+   "cta": "Pneus 9.5x2.5"
+  },
+  {
+   "label": "Plaquettes",
+   "size": "étrier type Xiaomi Mi4 / NIU KQi3",
+   "count": 1,
+   "to": "/piece/plaquettes-de-freins-xiaomi-mi4-niu-kqi2-kqi3",
+   "cta": "Plaquettes KQi3"
+  },
+  {
+   "label": "Disque de frein",
+   "size": "120 mm, 6 trous, entraxe 44 mm",
+   "count": 1,
+   "to": "/piece/disque-de-frein-120mm-6-trous",
+   "cta": "Disque 120 mm"
+  }
+ ],
+ "care": [
+  "Deux freins à disque mécaniques : surveille l'épaisseur des plaquettes et reprends la tension des câbles dès que le levier s'enfonce.",
+  "Pneus tubeless de 9,5 pouces : vérifie la pression chaque semaine, sans suspension c'est ton seul amorti.",
+  "Contrôle la fixation du garde-boue arrière, signalé fragile par Frandroid, et resserre la visserie après les routes pavées."
+ ],
+ "price": {
+  "text": "Prix de lancement en France : 699 € (2021).",
+  "source": "Frandroid, Cleanrider"
+ },
+ "faq": [
+  {
+   "q": "Quelle taille de pneu pour la NIU KQi3 Pro ?",
+   "a": "Des pneus tubeless de 9,5 pouces en 9.5x2.5 (241 x 64 mm), sur une jante de 6,1 pouces."
+  },
+  {
+   "q": "Quel disque de frein pour la NIU KQi3 Pro ?",
+   "a": "Un disque de 120 mm à 6 trous, entraxe 44 mm, à l'avant comme à l'arrière."
+  },
+  {
+   "q": "Quelles plaquettes pour la NIU KQi3 Pro ?",
+   "a": "Des plaquettes pour étrier mécanique de type Xiaomi Mi4, le même format que sur les KQi3 Max et Sport."
+  },
+  {
+   "q": "Quelle est l'autonomie réelle de la NIU KQi3 Pro ?",
+   "a": "Frandroid a mesuré jusqu'à 47,5 km, pour 50 km annoncés par NIU."
+  },
+  {
+   "q": "Combien de temps pour recharger la NIU KQi3 Pro ?",
+   "a": "Environ 6 heures pour une charge complète."
+  },
+  {
+   "q": "Quel poids maximum supporte la NIU KQi3 Pro ?",
+   "a": "Les sources divergent : 100 kg selon Frandroid et Cleanrider, 120 kg selon la boutique NIU Europe. Par prudence, reste sous 100 kg."
+  }
+ ],
+ "sources": [
+  {
+   "label": "Frandroid — test NIU KQi3",
+   "url": "https://www.frandroid.com/marques/niu/995289_test-de-la-niu-kqi3-tres-prometteuse-mais-trop-capricieuse"
+  },
+  {
+   "label": "Cleanrider — NIU KQi3 Pro",
+   "url": "https://www.cleanrider.com/catalogue/trottinette-electrique/niu/niu-kqi3-pro/"
+  },
+  {
+   "label": "NIU Europe — KQi3 Pro",
+   "url": "https://shopeu.niu.com/fr-fr/products/niu-kqi3-pro-electric-kick-scooter-for-adults-fr-version"
+  },
+  {
+   "label": "Urban Ecomobility — NIU KQi3 Pro",
+   "url": "https://www.urban-ecomobility.com/shop/trottinette-niu-kqi3-pro-25-km-h-1243485"
+  }
+ ],
+ "video": {
+  "id": "8jEIFZPG8ZQ",
+  "title": "NIU KQi3 Pro - TEST après 4 MOIS d'utilisation. La meilleure trottinette électrique de 2022 ?",
+  "channel": "iBordelais",
+  "uploadDate": "2022-04-29"
+ }
+}

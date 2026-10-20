@@ -1,0 +1,147 @@
+{
+ "displayName": "NIU KQi3 Sport",
+ "metaTitle": "NIU KQi3 Sport : fiche technique, avis et pièces",
+ "metaDescription": "NIU KQi3 Sport : 300 W, batterie 48 V 365 Wh, pneus tubeless 9.5x2.5, disque de frein avant 120 mm, 40 km annoncés. Avis, entretien et pièces.",
+ "intro": [
+  "La NIU KQi3 Sport est la version d'accès de la gamme KQi3, commercialisée en France à partir de 599 € selon Cleanrider. Elle partage les pneus de 9,5 pouces des autres KQi3, avec un moteur et une batterie plus modestes que ceux des KQi3 Pro et Max.",
+  "Moteur de 300 W (600 W au maximum), batterie 48 V de 365 Wh, autonomie annoncée jusqu'à 40 km. Elle roule sur des pneus tubeless de 9,5 pouces en 9.5x2.5, sans suspension, et freine avec un disque avant de 120 mm et un frein régénératif. Elle pèse 18,4 à 18,5 kg. Voie publique : 25 km/h."
+ ],
+ "specs": [
+  [
+   "Moteur",
+   "300 W (600 W au maximum)"
+  ],
+  [
+   "Vitesse",
+   "25 km/h"
+  ],
+  [
+   "Batterie",
+   "48 V, 7,6 Ah, 365 Wh"
+  ],
+  [
+   "Autonomie annoncée",
+   "jusqu'à 40 km"
+  ],
+  [
+   "Poids",
+   "18,4 kg selon NIU, 18,5 kg selon Frandroid"
+  ],
+  [
+   "Charge max",
+   "120 kg selon NIU, 100 kg selon Frandroid et la Fnac"
+  ],
+  [
+   "Roues",
+   "9,5 pouces, tubeless 9.5x2.5 (jante 6,1\")"
+  ],
+  [
+   "Freins",
+   "Disque avant Ø 120 mm + freinage régénératif ; disque arrière selon Frandroid"
+  ],
+  [
+   "Suspension",
+   "Aucune"
+  ],
+  [
+   "Étanchéité",
+   "IP54"
+  ],
+  [
+   "Temps de charge",
+   "5 h selon NIU, 5 h 30 selon Frandroid"
+  ],
+  [
+   "Prix",
+   "à partir de 599 € (Cleanrider, NIU)"
+  ]
+ ],
+ "pros": [
+  "Large plateau et bonne sensation de sécurité (Frandroid).",
+  "Éclairage avant apprécié (Frandroid, trott-electrique.fr).",
+  "Prix et autonomie jugés convaincants (trott-electrique.fr)."
+ ],
+ "cons": [
+  "Écran peu lumineux (Frandroid, trott-electrique.fr).",
+  "Poids de plus de 18 kg et absence de suspension (Frandroid).",
+  "Fiches contradictoires sur la charge maximale : 100 ou 120 kg selon les sources."
+ ],
+ "parts": [
+  {
+   "label": "Pneu",
+   "size": "9.5x2.5 tubeless (9,5 pouces, jante 6,1\")",
+   "count": 3,
+   "to": "/piece/pneu-tubeless-9-5x2-5-6-1-cityroad-ewheel",
+   "cta": "Pneus 9.5x2.5"
+  },
+  {
+   "label": "Plaquettes",
+   "size": "étrier type Xiaomi Mi4 / NIU KQi3",
+   "count": 1,
+   "to": "/piece/plaquettes-de-freins-xiaomi-mi4-niu-kqi2-kqi3",
+   "cta": "Plaquettes KQi3"
+  },
+  {
+   "label": "Disque de frein",
+   "size": "120 mm, 6 trous, entraxe 44 mm",
+   "count": 1,
+   "to": "/piece/disque-de-frein-120mm-6-trous",
+   "cta": "Disque 120 mm"
+  }
+ ],
+ "care": [
+  "Frein à disque mécanique : surveille l'épaisseur des plaquettes et reprends la tension du câble dès que le levier s'enfonce.",
+  "Pneus tubeless de 9,5 pouces : vérifie la pression chaque semaine, sans suspension c'est ton seul amorti.",
+  "Vérifie régulièrement le serrage du mécanisme de pliage et de la potence : un jeu qui s'installe s'aggrave vite."
+ ],
+ "price": {
+  "text": "Prix en France : à partir de 599 € (2022).",
+  "source": "Cleanrider"
+ },
+ "faq": [
+  {
+   "q": "Quelle taille de pneu pour la NIU KQi3 Sport ?",
+   "a": "Des pneus tubeless de 9,5 pouces en 9.5x2.5, sur une jante de 6,1 pouces. C'est la même dimension que les KQi3 Pro et Max."
+  },
+  {
+   "q": "Quel disque de frein pour la NIU KQi3 Sport ?",
+   "a": "Un disque de 120 mm à 6 trous, entraxe 44 mm."
+  },
+  {
+   "q": "Quelles plaquettes pour la NIU KQi3 Sport ?",
+   "a": "Des plaquettes pour étrier mécanique de type Xiaomi Mi4, le même format que sur les KQi3 Pro et Max."
+  },
+  {
+   "q": "Combien de temps pour recharger la NIU KQi3 Sport ?",
+   "a": "5 heures selon NIU, 5 h 30 selon Frandroid, pour une batterie de 365 Wh."
+  },
+  {
+   "q": "Quelle différence entre la NIU KQi3 Sport et la KQi3 Pro ?",
+   "a": "La Sport a un moteur de 300 W et une batterie de 365 Wh pour 40 km annoncés. La Pro passe à 350 W et 486 Wh pour 50 km annoncés, et pèse environ 1,5 kg de plus."
+  }
+ ],
+ "sources": [
+  {
+   "label": "NIU Europe — KQi3 Sport",
+   "url": "https://shopeu.niu.com/products/niu-kqi3-sport-electric-kick-scooter-for-adults-fr-version"
+  },
+  {
+   "label": "Frandroid — fiche NIU KQi3 Sport",
+   "url": "https://www.frandroid.com/produits/trottinette-electrique/niu/907145-niu-kick-scooter-sport"
+  },
+  {
+   "label": "Cleanrider — NIU KQi3 Sport",
+   "url": "https://www.cleanrider.com/catalogue/trottinette-electrique/niu/niu-kqi3-sport/"
+  },
+  {
+   "label": "trott-electrique.fr — avis NIU KQi3",
+   "url": "https://trott-electrique.fr/test-avis-trottinette-electrique/avis-niu-kqi3/"
+  }
+ ],
+ "video": {
+  "id": "KIjhl4LYRRk",
+  "title": "Test de la Niu KQI 3 Sport : la Trottinette Électrique du Futur ?!",
+  "channel": "RAFTOR",
+  "uploadDate": "2024-07-05"
+ }
+}

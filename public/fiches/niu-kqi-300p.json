@@ -1,0 +1,132 @@
+{
+ "displayName": "NIU KQi 300P",
+ "metaTitle": "NIU KQi 300P : fiche technique, avis et pièces",
+ "metaDescription": "NIU KQi 300P : 450 W, batterie 48 V 10,4 Ah, pneus tubeless 10,5 x 2,5 pouces, double frein à disque, fourche hydraulique. Avis, entretien et pièces.",
+ "intro": [
+  "La NIU KQi 300P est la version d'accès de la série KQi 300, commercialisée en France à partir de mai 2024 selon Cleanrider. Face à la 300X, elle a un moteur et une batterie plus petits, mais garde la même base : grandes roues de 10,5 pouces, fourche avant hydraulique et deux freins à disque.",
+  "Moteur arrière de 450 W (900 W en crête), batterie 48 V de 10,4 Ah soit environ 487 Wh, autonomie annoncée jusqu'à 48 km. Elle pèse autour de 20,6 à 20,85 kg selon les mesures. Les tests français saluent son confort et sa stabilité. Sur la voie publique, elle est limitée à 25 km/h."
+ ],
+ "specs": [
+  [
+   "Moteur",
+   "450 W (900 W en crête), moteur arrière"
+  ],
+  [
+   "Vitesse",
+   "25 km/h"
+  ],
+  [
+   "Batterie",
+   "48 V, 10,4 Ah, environ 487 Wh"
+  ],
+  [
+   "Autonomie",
+   "jusqu'à 48 km annoncés, 25 à 27 km mesurés par Cleanrider"
+  ],
+  [
+   "Poids",
+   "20,85 kg selon Cleanrider, environ 20,6 kg selon Frandroid"
+  ],
+  [
+   "Charge max",
+   "120 kg"
+  ],
+  [
+   "Roues",
+   "10,5 pouces, tubeless 10,5 x 2,5 (267 x 64 mm)"
+  ],
+  [
+   "Freins",
+   "Disque mécanique avant et arrière + frein électronique arrière"
+  ],
+  [
+   "Suspension",
+   "Fourche avant hydraulique, 45 mm de course"
+  ],
+  [
+   "Étanchéité",
+   "IP55"
+  ],
+  [
+   "Temps de charge",
+   "5 h (selon NIU)"
+  ],
+  [
+   "Sortie",
+   "mai 2024 en France"
+  ],
+  [
+   "Prix",
+   "549,99 € (selon Cleanrider, avril 2024)"
+  ]
+ ],
+ "pros": [
+  "Confort et stabilité en progrès grâce aux roues plus grandes (Cleanrider).",
+  "Puissance bien ressentie à l'accélération (Frandroid).",
+  "Éclairage soigné avec clignotants (Cleanrider)."
+ ],
+ "cons": [
+  "Autonomie réelle de 25 à 27 km mesurée par Cleanrider à Paris, pour 48 km annoncés.",
+  "Environ 20,6 kg, peu pratique à porter (Frandroid).",
+  "Suspension jugée perfectible (Cleanrider).",
+  "Sonnette critiquée (Frandroid)."
+ ],
+ "parts": [
+  {
+   "label": "Pneu",
+   "size": "10,5 x 2,5 pouces tubeless",
+   "count": 1,
+   "to": "/piece/pneu-10-5x2-5-niu-kqi300p",
+   "cta": "Pneus 10,5 pouces"
+  }
+ ],
+ "care": [
+  "Deux freins à disque mécaniques : surveille l'épaisseur des plaquettes et reprends la tension des câbles dès que le levier s'enfonce.",
+  "Pneus tubeless : contrôle la pression chaque mois, un pneu sous-gonflé s'use vite et fatigue la jante.",
+  "Fourche hydraulique : nettoie les fourreaux et vérifie qu'elle ne fuit pas, surtout après la pluie."
+ ],
+ "price": {
+  "text": "Prix en France : 549,99 € (avril 2024).",
+  "source": "Cleanrider"
+ },
+ "faq": [
+  {
+   "q": "Quelle taille de pneu pour la NIU KQi 300P ?",
+   "a": "Des pneus tubeless de 10,5 x 2,5 pouces, soit 267 x 64 mm."
+  },
+  {
+   "q": "La NIU KQi 300P a-t-elle des plaquettes de frein ?",
+   "a": "Oui. Elle a un frein à disque mécanique à l'avant et à l'arrière, donc deux paires de plaquettes à surveiller."
+  },
+  {
+   "q": "Quelle est l'autonomie réelle de la NIU KQi 300P ?",
+   "a": "Cleanrider a mesuré 25 à 27 km à Paris, à 20 km/h de moyenne, pour 48 km annoncés par NIU."
+  },
+  {
+   "q": "Combien de temps pour recharger la NIU KQi 300P ?",
+   "a": "NIU annonce environ 5 heures pour une charge complète."
+  },
+  {
+   "q": "Quelle différence entre la NIU KQi 300P et la KQi 300X ?",
+   "a": "La 300X a un moteur plus puissant (500 W, 1 000 W en crête) et une batterie plus grosse (13 Ah) pour 60 km annoncés. Elle pèse 22,1 kg contre 20,85 kg pour la 300P selon Cleanrider."
+  }
+ ],
+ "sources": [
+  {
+   "label": "Cleanrider — test NIU KQi 300P",
+   "url": "https://www.cleanrider.com/essais/trottinette-electrique/test-niu-kqi-300p-confort-et-puissance-pour-une-trottinette-electrique-ultra-competitive/"
+  },
+  {
+   "label": "Cleanrider — NIU KQi 300P et 300X",
+   "url": "https://www.cleanrider.com/actus/ces-deux-trottinettes-electriques-niu-vont-faire-mal-a-segway-et-xiaomi/"
+  },
+  {
+   "label": "NIU Europe — KQi 300P",
+   "url": "https://shopeu.niu.com/en-fr/products/niu-kqi-300p-electric-scooter-all-terrain-suspension-fr-version"
+  },
+  {
+   "label": "Frandroid — essai NIU KQi 300",
+   "url": "https://www.frandroid.com/marques/niu/1970748_on-a-essaye-la-trottinette-electrique-haut-de-gamme-de-niu-xiaomi-et-segway-peuvent-sinquieter"
+  }
+ ]
+}

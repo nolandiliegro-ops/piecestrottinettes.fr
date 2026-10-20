@@ -1,0 +1,137 @@
+{
+ "displayName": "NIU KQi 100F",
+ "metaTitle": "NIU KQi 100F : fiche technique, avis et pièces",
+ "metaDescription": "NIU KQi 100F : 300 W, batterie 48 V, pneus 9,5 pouces 9.5x2.3 à chambre à air, frein tambour avant, suspension avant. Avis, entretien et pièces.",
+ "intro": [
+  "La NIU KQi 100F fait partie de la gamme KQi 100 annoncée par NIU en septembre 2024. Le « F » signale ses poignées pliantes : c'est ce qui la distingue de la KQi 100P, avec qui elle partage moteur, batterie et freins. Frandroid l'annonçait à 329 € au lancement.",
+  "Moteur de 300 W (600 W en crête), batterie 48 V de 243 Wh, autonomie annoncée jusqu'à 29 km, roues de 9,5 pouces avec suspension avant à ressort. À 17,6 kg, elle vise les petits trajets urbains. Sur la voie publique, elle est limitée à 25 km/h."
+ ],
+ "specs": [
+  [
+   "Moteur",
+   "300 W (600 W en crête)"
+  ],
+  [
+   "Vitesse",
+   "25 km/h"
+  ],
+  [
+   "Batterie",
+   "48 V, 243 Wh"
+  ],
+  [
+   "Autonomie",
+   "jusqu'à 29 km annoncés, 12 à 14,5 km mesurés par Frandroid"
+  ],
+  [
+   "Poids",
+   "17,6 kg"
+  ],
+  [
+   "Charge max",
+   "120 kg"
+  ],
+  [
+   "Roues",
+   "9,5 pouces, 9.5x2.3 à chambre à air"
+  ],
+  [
+   "Freins",
+   "Tambour avant + freinage régénératif arrière"
+  ],
+  [
+   "Suspension",
+   "Avant à ressort, 36 mm de débattement (selon NIU)"
+  ],
+  [
+   "Étanchéité",
+   "IPX5 (selon VoltandGo)"
+  ],
+  [
+   "Temps de charge",
+   "5 à 6 h annoncées par NIU, 4 h 40 mesurées par Frandroid"
+  ],
+  [
+   "Guidon",
+   "Poignées pliantes"
+  ],
+  [
+   "Prix de lancement",
+   "329 € (selon Frandroid)"
+  ]
+ ],
+ "pros": [
+  "Poignées pliantes : elle prend très peu de place une fois repliée (Frandroid).",
+  "Poids contenu et bon confort pour sa catégorie (Frandroid).",
+  "Performances et connectivité correctes pour le prix (Frandroid)."
+ ],
+ "cons": [
+  "Autonomie réelle faible : 12 à 14,5 km mesurés par Frandroid, pour 29 km annoncés.",
+  "Freinage jugé très moyen (Frandroid).",
+  "Petit écran, boutons et deck peu adhérent (Frandroid)."
+ ],
+ "parts": [
+  {
+   "label": "Pneu",
+   "size": "9.5x2.3 (9,5 pouces, à chambre à air)",
+   "count": 1,
+   "to": "/piece/pneu-9-5x2-3-niu-kqi100",
+   "cta": "Pneus 9.5x2.3"
+  }
+ ],
+ "care": [
+  "Le tambour avant est le seul frein mécanique : fais-le régler dès que la course du levier s'allonge.",
+  "Pneus à chambre à air : contrôle la pression chaque semaine, un pneu sous-gonflé pince la chambre et crève.",
+  "Vérifie le serrage des poignées pliantes et du mécanisme de pliage : un jeu qui s'installe s'aggrave vite."
+ ],
+ "price": {
+  "text": "Prix de lancement en France : 329 €.",
+  "source": "Frandroid"
+ },
+ "faq": [
+  {
+   "q": "Quelle taille de pneu pour la NIU KQi 100F ?",
+   "a": "Des pneus de 9,5 pouces en 9.5x2.3 (241 x 58 mm), montés avec chambre à air."
+  },
+  {
+   "q": "La NIU KQi 100F a-t-elle des plaquettes de frein ?",
+   "a": "Non. Elle freine avec un tambour à l'avant et un frein régénératif à l'arrière."
+  },
+  {
+   "q": "Quelle est l'autonomie réelle de la NIU KQi 100F ?",
+   "a": "Frandroid a mesuré 12 à 14,5 km en mode Sport avec un conducteur de 80 kg, pour 29 km annoncés par NIU."
+  },
+  {
+   "q": "Combien de temps pour recharger la NIU KQi 100F ?",
+   "a": "NIU annonce 5 à 6 heures. Frandroid a mesuré 4 h 40 pour une charge complète."
+  },
+  {
+   "q": "Quelle différence entre la NIU KQi 100F et la KQi 100P ?",
+   "a": "Les poignées : pliantes sur la 100F, fixes sur la 100P. Moteur, batterie et freins sont les mêmes. La 100F pèse 17,6 kg contre 17,3 kg pour la 100P."
+  }
+ ],
+ "sources": [
+  {
+   "label": "NIU Europe — KQi 100F",
+   "url": "https://shopeu.niu.com/products/niu-kqi-100f-trottinette-electrique-a-guidon-pliable-avec-suspension"
+  },
+  {
+   "label": "VoltandGo — NIU KQi 100F",
+   "url": "https://voltandgo.com/p/niu-kqi-100f-25570/"
+  },
+  {
+   "label": "Frandroid — test NIU KQi 100F",
+   "url": "https://www.frandroid.com/survoltes/trottinette-electrique/3045477_on-a-teste-la-niu-kqi-100f-une-trottinette-electrique-abordable-dont-les-poignees-se-plient-pour-maximiser-sa-praticite"
+  },
+  {
+   "label": "Cleanrider — NIU KQi 100",
+   "url": "https://www.cleanrider.com/catalogue/trottinette-electrique/niu/niu-kqi-100/"
+  }
+ ],
+ "video": {
+  "id": "zA5azm1HQf4",
+  "title": "La Meilleure Trottinette Électrique pas Chère ?! Test Complet de la NIU KQi 100F !!",
+  "channel": "RAFTOR",
+  "uploadDate": "2025-03-25"
+ }
+}

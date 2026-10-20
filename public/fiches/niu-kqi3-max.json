@@ -1,0 +1,160 @@
+{
+ "displayName": "NIU KQi3 Max",
+ "metaTitle": "NIU KQi3 Max : fiche technique et pièces",
+ "metaDescription": "NIU KQi3 Max : 450 W, batterie 48 V 13 Ah (608 Wh), pneus tubeless 9.5x2.5, disques de frein 120 mm avant et arrière, 65 km annoncés. Pièces.",
+ "intro": [
+  "La NIU KQi3 Max est la version grande autonomie de la KQi3, commercialisée en France le 8 décembre 2022 au prix de lancement de 899 €. Par rapport à la KQi3 Pro, elle gagne une batterie plus grosse et un moteur plus puissant, pour 65 km d'autonomie annoncée.",
+  "Moteur arrière de 450 W (900 W en crête), batterie 48 V de 13 Ah soit 608 Wh, pneus tubeless de 9,5 pouces en 9.5x2.5 et deux freins à disque de 120 mm. Pas de suspension. Elle pèse 21 kg et sa recharge prend environ 8 heures. Sur la voie publique, elle est limitée à 25 km/h."
+ ],
+ "specs": [
+  [
+   "Moteur",
+   "450 W (900 W en crête), moteur arrière"
+  ],
+  [
+   "Vitesse",
+   "25 km/h"
+  ],
+  [
+   "Batterie",
+   "48 V, 13 Ah, 608 Wh"
+  ],
+  [
+   "Autonomie annoncée",
+   "jusqu'à 65 km"
+  ],
+  [
+   "Poids",
+   "21 kg"
+  ],
+  [
+   "Charge max",
+   "120 kg"
+  ],
+  [
+   "Roues",
+   "9,5 pouces, tubeless 9.5x2.5 (jante 6,1\")"
+  ],
+  [
+   "Freins",
+   "Disque avant et arrière, Ø 120 mm, + freinage régénératif"
+  ],
+  [
+   "Suspension",
+   "Aucune"
+  ],
+  [
+   "Étanchéité",
+   "IP54"
+  ],
+  [
+   "Prise de charge",
+   "NIU"
+  ],
+  [
+   "Temps de charge",
+   "environ 8 h"
+  ],
+  [
+   "Sortie",
+   "8 décembre 2022 en France"
+  ],
+  [
+   "Prix de lancement",
+   "899 €"
+  ]
+ ],
+ "pros": [
+  "Batterie de 608 Wh pour 65 km annoncés, la plus grosse de la gamme KQi3.",
+  "Deux freins à disque, à l'avant et à l'arrière.",
+  "Charge maximale de 120 kg (Les Numériques)."
+ ],
+ "cons": [
+  "Pas de suspension : sur pavés, seuls les pneus de 9,5 pouces amortissent.",
+  "21 kg : lourde à porter dans un escalier.",
+  "Recharge longue : environ 8 heures.",
+  "65 km est un maximum constructeur : aucun test français publié ne l'a mesuré."
+ ],
+ "parts": [
+  {
+   "label": "Pneu",
+   "size": "9.5x2.5 tubeless (9,5 pouces, jante 6,1\")",
+   "count": 3,
+   "to": "/piece/pneu-tubeless-9-5x2-5-6-1-cityroad-ewheel",
+   "cta": "Pneus 9.5x2.5"
+  },
+  {
+   "label": "Plaquettes",
+   "size": "étrier type Xiaomi Mi4 / NIU KQi3",
+   "count": 1,
+   "to": "/piece/plaquettes-de-freins-xiaomi-mi4-niu-kqi2-kqi3",
+   "cta": "Plaquettes KQi3"
+  },
+  {
+   "label": "Disque de frein",
+   "size": "120 mm, 6 trous, entraxe 44 mm",
+   "count": 1,
+   "to": "/piece/disque-de-frein-120mm-6-trous",
+   "cta": "Disque 120 mm"
+  }
+ ],
+ "care": [
+  "Deux freins à disque mécaniques : surveille l'épaisseur des plaquettes et reprends la tension des câbles dès que le levier s'enfonce.",
+  "Pneus tubeless de 9,5 pouces : vérifie la pression chaque semaine, sans suspension c'est ton seul amorti.",
+  "Vérifie régulièrement le serrage du mécanisme de pliage et de la potence : avec 21 kg, un jeu s'installe vite."
+ ],
+ "price": {
+  "text": "Prix de lancement en France : 899 € (décembre 2022).",
+  "source": "Les Numériques, Cleanrider"
+ },
+ "faq": [
+  {
+   "q": "Quelle taille de pneu pour la NIU KQi3 Max ?",
+   "a": "Des pneus tubeless de 9,5 pouces en 9.5x2.5, sur une jante de 6,1 pouces."
+  },
+  {
+   "q": "Quel disque de frein pour la NIU KQi3 Max ?",
+   "a": "Un disque de 120 mm à 6 trous, entraxe 44 mm, à l'avant comme à l'arrière."
+  },
+  {
+   "q": "Quelles plaquettes pour la NIU KQi3 Max ?",
+   "a": "Des plaquettes pour étrier mécanique de type Xiaomi Mi4, le même format que sur les KQi3 Pro et Sport."
+  },
+  {
+   "q": "Combien de temps pour recharger la NIU KQi3 Max ?",
+   "a": "Environ 8 heures pour une charge complète de la batterie de 608 Wh."
+  },
+  {
+   "q": "Quelle différence entre la NIU KQi3 Max et la KQi3 Pro ?",
+   "a": "La Max a une batterie de 13 Ah au lieu de 10,1 Ah et un moteur de 450 W au lieu de 350 W, pour 65 km annoncés. Elle pèse 21 kg."
+  }
+ ],
+ "sources": [
+  {
+   "label": "NIU Europe — KQi3 Max",
+   "url": "https://shopeu.niu.com/en-fr/products/niu-kqi3-max-electric-kick-scooter-for-adults-eu-version"
+  },
+  {
+   "label": "Cleanrider — NIU KQi3 Max",
+   "url": "https://www.cleanrider.com/catalogue/trottinette-electrique/niu/niu-kqi3-max/"
+  },
+  {
+   "label": "Cleanrider — lancement de la NIU KQi3 Max",
+   "url": "https://www.cleanrider.com/actus/niu-kqi3-max-la-nouvelle-trottinette-electrique-a-grande-autonomie/"
+  },
+  {
+   "label": "Les Numériques — NIU commercialise la KQi3 Max",
+   "url": "https://www.lesnumeriques.com/trottinette-electrique/niu-commercialise-une-version-amelioree-de-sa-trottinette-la-kqi3-max-n200303.html"
+  },
+  {
+   "label": "VoltandGo — NIU KQi3 Max",
+   "url": "https://voltandgo.com/p/niu-kqi3-max-25574/"
+  }
+ ],
+ "video": {
+  "id": "P7sd8vlngFs",
+  "title": "Niu KQI3 Max, la trottinette électrique ultime pour la ville ?",
+  "channel": "Zerorider",
+  "uploadDate": "2023-01-06"
+ }
+}

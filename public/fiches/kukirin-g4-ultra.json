@@ -1,0 +1,132 @@
+{
+ "displayName": "Kukirin G4 Ultra",
+ "metaTitle": "Kukirin G4 Ultra : fiche technique et pièces",
+ "metaDescription": "Kukirin G4 Ultra : bimoteur, batterie 60 V 20 Ah, pneus tubeless 11 pouces, disques de frein 160 mm. Fiche technique, limites, entretien et pièces.",
+ "intro": [
+  "La Kukirin G4 Ultra est la version bimoteur de la G4, chez la marque chinoise Kukirin, l'ex-Kugoo Kirin. Elle garde la batterie 60 V 20 Ah de la G4, soit environ 1 200 Wh, mais ajoute un moteur à l'avant : 2 × 1 200 W selon Geekbuying et Fnac, 2 × 1 000 W sur d'autres fiches.",
+  "Pneus tubeless de 11 pouces, suspensions à ressorts avec bras oscillants à l'avant et à l'arrière, freins à disque de 160 mm : elle vise les routes abîmées et les chemins. Elle annonce 70 km/h, mais sur la voie publique en France elle doit rester bridée à 25 km/h."
+ ],
+ "specs": [
+  [
+   "Moteurs",
+   "2 × 1 200 W selon Geekbuying et Fnac, 2 × 1 000 W selon d'autres fiches"
+  ],
+  [
+   "Vitesse",
+   "25 km/h sur la voie publique (70 km/h annoncés, terrain privé uniquement)"
+  ],
+  [
+   "Batterie",
+   "60 V 20 Ah (environ 1 200 Wh)"
+  ],
+  [
+   "Autonomie annoncée",
+   "jusqu'à 80 km en mode Eco"
+  ],
+  [
+   "Poids",
+   "37,6 kg"
+  ],
+  [
+   "Charge max",
+   "120 kg"
+  ],
+  [
+   "Roues",
+   "11 pouces, tubeless"
+  ],
+  [
+   "Freins",
+   "Disques avant et arrière Ø 160 mm + coupure moteur"
+  ],
+  [
+   "Suspension",
+   "Avant et arrière, double bras oscillant à ressorts"
+  ],
+  [
+   "Étanchéité",
+   "IPX4"
+  ],
+  [
+   "Chargeur",
+   "60 V"
+  ],
+  [
+   "Temps de charge",
+   "5 à 6 h avec un chargeur 5 A selon kukirin.es, 10 à 11 h selon kukirinprime.com"
+  ]
+ ],
+ "pros": [
+  "Deux moteurs pour 37,6 kg, avec la même batterie de 1 200 Wh que la G4.",
+  "Suspensions à ressorts avec bras oscillants à l'avant et à l'arrière.",
+  "Disques de frein de 160 mm sur les deux roues."
+ ],
+ "cons": [
+  "Pas de test de presse française publié, et des fiches qui se contredisent sur la puissance et le temps de charge.",
+  "Autonomie annoncée en mode Eco : un distributeur donne 50 km en Sport et 35 km en Race (kukirin.es).",
+  "IPX4 seulement : évite les grosses pluies.",
+  "Sa vitesse de pointe n'est utilisable que sur terrain privé : en France, la voie publique est limitée à 25 km/h."
+ ],
+ "parts": [
+  {
+   "label": "Disque de frein",
+   "size": "160 mm, 6 trous, entraxe 44 mm",
+   "count": 7,
+   "to": "/piece/disque-de-frein-160mm",
+   "cta": "Disques 160 mm"
+  }
+ ],
+ "care": [
+  "Freins à disque mécaniques : retends les câbles dès que la course du levier s'allonge, deux moteurs demandent un freinage net.",
+  "Pneus tubeless de 11 pouces : contrôle la pression chaque semaine, un pneu sous-gonflé use vite la gomme et la jante.",
+  "Bras oscillants à ressorts : vérifie le jeu et le serrage des axes après chaque sortie sur chemin."
+ ],
+ "faq": [
+  {
+   "q": "Quel disque de frein pour la Kukirin G4 Ultra ?",
+   "a": "Un disque de 160 mm à 6 trous, entraxe 44 mm, à l'avant comme à l'arrière."
+  },
+  {
+   "q": "Quelle taille de pneu pour la Kukirin G4 Ultra ?",
+   "a": "Des pneus tubeless de 11 pouces. Une fiche de revendeur donne la dimension 90/65-6.5 : lis la cote sur le flanc de ton pneu avant d'en commander un."
+  },
+  {
+   "q": "Quelle différence entre la Kukirin G4 Ultra et la G4 ?",
+   "a": "La G4 Ultra a deux moteurs, la G4 un seul de 2 000 W à l'arrière. Les deux ont une batterie 60 V 20 Ah."
+  },
+  {
+   "q": "Combien de temps pour recharger la Kukirin G4 Ultra ?",
+   "a": "Les fiches ne s'accordent pas : 5 à 6 heures avec un chargeur rapide 5 A selon kukirin.es, 10 à 11 heures selon kukirinprime.com."
+  },
+  {
+   "q": "La Kukirin G4 Ultra est-elle légale en France ?",
+   "a": "Oui sur la voie publique à condition d'être bridée à 25 km/h, comme toute trottinette électrique. Débridée, elle n'est utilisable que sur terrain privé."
+  }
+ ],
+ "sources": [
+  {
+   "label": "Kukirin Trottinette — Kukirin G4 Ultra",
+   "url": "https://kukirintrottinette.com/boutique/kukirin-g4-ultra/"
+  },
+  {
+   "label": "Kukirin ES — Kukirin G4 Ultra",
+   "url": "https://kukirin.es/producto/kukirin-g4-ultra/"
+  },
+  {
+   "label": "Geekbuying — Kukirin G4 Ultra 2 x 1 200 W",
+   "url": "https://fr.geekbuying.com/item/KuKirin-G4-Ultra-Trottinette-electrique-1200-W-x-2-60-V-20-Ah-10004939.html"
+  },
+  {
+   "label": "Fnac — Kukirin G4 Ultra",
+   "url": "https://www.fnac.com/mp55625823/Trottinette-electrique-KuKirin-G4-Ultra-roues-de-11-pouces-batterie-60V-20Ah-double-moteur-de-1200W-puissance-de-crete-vitesse-maximale-de-70km-h/w-4"
+  },
+  {
+   "label": "Kukirin Prime — Kukirin G4 Ultra",
+   "url": "https://kukirinprime.com/products/kukirin-g4-ultra-electric-scooter"
+  },
+  {
+   "label": "Ministère de la Transition écologique — réglementation des trottinettes",
+   "url": "https://www.ecologie.gouv.fr/politiques-publiques/trottinettes-electriques-edpm-reglementation-vigueur"
+  }
+ ]
+}

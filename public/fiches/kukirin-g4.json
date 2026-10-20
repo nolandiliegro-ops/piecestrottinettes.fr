@@ -1,0 +1,166 @@
+{
+ "displayName": "Kukirin G4",
+ "metaTitle": "Kukirin G4 : fiche technique, avis et pièces",
+ "metaDescription": "Kukirin G4 : 2 000 W, batterie 60 V 20 Ah, pneus tubeless 11 pouces 90/65-6.5, disques 140 mm, prise DC 5,5 x 2,1. Fiche technique, entretien et pièces.",
+ "intro": [
+  "La Kukirin G4 est la grosse monomoteur 60 V de la marque chinoise Kukirin, l'ex-Kugoo Kirin. Moteur arrière de 2 000 W, batterie 60 V 20 Ah, soit 1 200 Wh, et jusqu'à 75 km d'autonomie annoncée : c'est la première G4, à ne pas confondre avec la G4 2026, la G4 Max ou la G4 Ultra.",
+  "Pneus tubeless de 11 pouces en 90/65-6.5, suspensions à ressort à l'avant et à l'arrière, freins à disque sur les deux roues complétés par un frein électrique : elle vise les longues sorties sur routes abîmées. Elle annonce 70 km/h, mais sur la voie publique en France elle doit rester bridée à 25 km/h."
+ ],
+ "specs": [
+  [
+   "Moteur",
+   "2 000 W, roue arrière"
+  ],
+  [
+   "Vitesse",
+   "25 km/h sur la voie publique (70 km/h annoncés, terrain privé uniquement)"
+  ],
+  [
+   "Batterie",
+   "60 V 20 Ah (1 200 Wh)"
+  ],
+  [
+   "Autonomie annoncée",
+   "jusqu'à 75 km"
+  ],
+  [
+   "Poids",
+   "37 kg selon kukirinau.com, 41,5 kg selon Kukirin France et Kukirin Factory"
+  ],
+  [
+   "Charge max",
+   "120 kg"
+  ],
+  [
+   "Roues",
+   "11 pouces, tubeless 90/65-6.5"
+  ],
+  [
+   "Freins",
+   "Disques avant et arrière Ø 140 mm + frein électrique"
+  ],
+  [
+   "Suspension",
+   "Ressorts avant et arrière"
+  ],
+  [
+   "Étanchéité",
+   "IP54 (IPX4 sur une fiche de revendeur)"
+  ],
+  [
+   "Prise de charge",
+   "DC 5,5 x 2,1"
+  ],
+  [
+   "Chargeur",
+   "60 V"
+  ],
+  [
+   "Temps de charge",
+   "10 à 12 h"
+  ]
+ ],
+ "pros": [
+  "Batterie de 1 200 Wh et moteur de 2 000 W sur une seule roue motrice.",
+  "Pneus tubeless de 11 pouces et suspensions à ressort avant et arrière pour les routes abîmées.",
+  "Deux freins à disque, plus un frein électrique."
+ ],
+ "cons": [
+  "37 à 41,5 kg selon les fiches : elle ne se porte pas.",
+  "Pas de test de presse française publié : l'autonomie de 75 km reste une donnée constructeur.",
+  "Recharge longue : 10 à 12 heures avec le chargeur d'origine.",
+  "Sa vitesse de pointe n'est utilisable que sur terrain privé : en France, la voie publique est limitée à 25 km/h."
+ ],
+ "parts": [
+  {
+   "label": "Pneu",
+   "size": "90/65-6.5 tubeless (11 pouces)",
+   "count": 11,
+   "to": "/piece/pneu-90-65-6-5-route-tubeless",
+   "cta": "Pneus 90/65-6.5"
+  },
+  {
+   "label": "Chambre à air",
+   "size": "90/65-6.5 (11 pouces), valve droite ou coudée",
+   "count": 5,
+   "to": "/piece/chambre-a-air-9065-65-valve-droite",
+   "cta": "Chambres à air"
+  },
+  {
+   "label": "Plaquettes",
+   "size": "étrier type Togo / G2",
+   "count": 1,
+   "to": "/piece/plaquettes-de-frein-dualtron-togo-ltd-kukirin-g2pro-g2-max-hitway-h5-urbanglide-allroad",
+   "cta": "Plaquettes G4"
+  },
+  {
+   "label": "Disque de frein",
+   "size": "140 mm, 6 trous, entraxe 44 mm",
+   "count": 5,
+   "to": "/piece/disque-de-frein-140mm",
+   "cta": "Disques 140 mm"
+  },
+  {
+   "label": "Chargeur",
+   "size": "60 V, prise DC 5,5 x 2,1",
+   "count": 1,
+   "to": "/piece/pack-chargeur-60v-adaptateur-dc5-5x2-1",
+   "cta": "Chargeurs 60 V"
+  }
+ ],
+ "care": [
+  "Avec 2 000 W et près de 40 kg, les plaquettes s'usent vite : contrôle-les tous les mois et change-les avant que le métal touche le disque.",
+  "Pneus tubeless 90/65-6.5 : vérifie la pression chaque semaine, un pneu sous-gonflé s'use vite et se déjante en virage.",
+  "Suspensions à ressort : contrôle le jeu des bras et le serrage des axes, la masse de la trottinette les fatigue."
+ ],
+ "faq": [
+  {
+   "q": "Quelle taille de pneu pour la Kukirin G4 ?",
+   "a": "Des pneus tubeless de 11 pouces en 90/65-6.5, sur une jante de 6,5 pouces."
+  },
+  {
+   "q": "Quel disque de frein pour la Kukirin G4 ?",
+   "a": "Un disque de 140 mm à 6 trous, entraxe 44 mm."
+  },
+  {
+   "q": "Quelles plaquettes pour la Kukirin G4 ?",
+   "a": "Des plaquettes pour étrier type Togo / G2. Compare la forme de ta plaquette usée avant de commander."
+  },
+  {
+   "q": "Quel chargeur pour la Kukirin G4 ?",
+   "a": "Un chargeur 60 V avec prise DC 5,5 x 2,1. Compte 10 à 12 heures pour une charge complète."
+  },
+  {
+   "q": "Quelle différence entre la Kukirin G4 et la G4 2026 ?",
+   "a": "Moteur, batterie et vitesse annoncés restent les mêmes. La G4 2026 reçoit une fourche avant renforcée et un garde-boue avant selon Kukirin FR, et notre catalogue la référence avec des disques de 160 mm au lieu de 140 mm. Vérifie le diamètre de ton disque avant d'en commander un."
+  },
+  {
+   "q": "La Kukirin G4 est-elle légale en France ?",
+   "a": "Oui sur la voie publique à condition d'être bridée à 25 km/h, comme toute trottinette électrique. Débridée, elle n'est utilisable que sur terrain privé."
+  }
+ ],
+ "sources": [
+  {
+   "label": "Kukirin France — Kukirin G4",
+   "url": "https://kukirin-france.com/products/kukirin-g4-electric-scooter"
+  },
+  {
+   "label": "Kukirin AU — fiche technique G4",
+   "url": "https://www.kukirinau.com/pages/kukirin-g4-specs"
+  },
+  {
+   "label": "Kukirin Factory — Kukirin G4",
+   "url": "https://www.kukirinfactory.com/news/kukirin-g4-electric-scooter-high-performance-o-85305290.html"
+  },
+  {
+   "label": "Ministère de la Transition écologique — réglementation des trottinettes",
+   "url": "https://www.ecologie.gouv.fr/politiques-publiques/trottinettes-electriques-edpm-reglementation-vigueur"
+  }
+ ],
+ "video": {
+  "id": "JfvOcZY75KA",
+  "title": "TEST KUKIRIN G4 2000W 60V 20Ah : AVIS COMPLET !",
+  "channel": "Manureva",
+  "uploadDate": "2026-03-18"
+ }
+}

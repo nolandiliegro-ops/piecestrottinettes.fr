@@ -1,0 +1,127 @@
+{
+ "displayName": "NIU KQi 100P",
+ "metaTitle": "NIU KQi 100P : fiche technique et pièces",
+ "metaDescription": "NIU KQi 100P : 300 W, batterie 48 V 5,2 Ah, pneus 9,5 pouces 9.5x2.3, frein tambour avant, suspension avant 36 mm. Entretien et pièces compatibles.",
+ "intro": [
+  "La NIU KQi 100P est la version à guidon fixe de la gamme KQi 100, présentée en septembre 2024 et annoncée en France pour la deuxième quinzaine d'octobre 2024 selon Frandroid. Son prix de lancement tournait autour de 329 €. C'est l'entrée de gamme de NIU, avec une suspension avant rare à ce prix.",
+  "Moteur de 300 W (600 W en crête), batterie 48 V de 243 Wh, autonomie annoncée jusqu'à 29 km, roues de 9,5 pouces et suspension avant à ressort. Elle pèse 17,3 kg, 300 g de moins que la 100F à poignées pliantes. Sur la voie publique, elle est limitée à 25 km/h."
+ ],
+ "specs": [
+  [
+   "Moteur",
+   "300 W (600 W en crête)"
+  ],
+  [
+   "Vitesse",
+   "25 km/h"
+  ],
+  [
+   "Batterie",
+   "48 V, 5,2 Ah, 243 Wh"
+  ],
+  [
+   "Autonomie annoncée",
+   "jusqu'à 29 km"
+  ],
+  [
+   "Poids",
+   "17,3 kg"
+  ],
+  [
+   "Charge max",
+   "120 kg"
+  ],
+  [
+   "Roues",
+   "9,5 pouces, 9.5x2.3 (241 x 58 mm)"
+  ],
+  [
+   "Freins",
+   "Tambour avant + freinage régénératif arrière"
+  ],
+  [
+   "Suspension",
+   "Avant à ressort, 36 mm de débattement"
+  ],
+  [
+   "Étanchéité",
+   "IPX5 (selon VoltandGo)"
+  ],
+  [
+   "Temps de charge",
+   "5 à 6 h (selon NIU)"
+  ],
+  [
+   "Sortie",
+   "septembre 2024"
+  ],
+  [
+   "Prix de lancement",
+   "329 € (Cleanrider) à 329,99 € (Frandroid)"
+  ]
+ ],
+ "pros": [
+  "Suspension avant de 36 mm, peu courante sur une trottinette d'entrée de gamme (Cleanrider).",
+  "Système 48 V et moteur de 600 W en crête pour une trottinette de ce prix.",
+  "17,3 kg : la plus légère des deux versions de la KQi 100."
+ ],
+ "cons": [
+  "Batterie de 243 Wh seulement : 29 km annoncés, moins en usage réel.",
+  "Guidon fixe : elle reste plus encombrante une fois pliée que la 100F.",
+  "Un seul frein mécanique, le tambour avant."
+ ],
+ "parts": [
+  {
+   "label": "Pneu",
+   "size": "9.5x2.3 (9,5 pouces)",
+   "count": 1,
+   "to": "/piece/pneu-9-5x2-3-niu-kqi100",
+   "cta": "Pneus 9.5x2.3"
+  }
+ ],
+ "care": [
+  "Le tambour avant est le seul frein mécanique : fais-le régler dès que la course du levier s'allonge.",
+  "Contrôle la pression des pneus chaque semaine : en 9,5 pouces, un pneu sous-gonflé crève et s'use vite.",
+  "Suspension avant à ressort : nettoie la fourche et vérifie qu'elle n'a pas de jeu, surtout après la pluie."
+ ],
+ "price": {
+  "text": "Prix de lancement en France : 329 € selon Cleanrider, 329,99 € selon Frandroid (septembre 2024).",
+  "source": "Cleanrider, Frandroid"
+ },
+ "faq": [
+  {
+   "q": "Quelle taille de pneu pour la NIU KQi 100P ?",
+   "a": "Des pneus de 9,5 pouces en 9.5x2.3, soit 241 x 58 mm."
+  },
+  {
+   "q": "La NIU KQi 100P a-t-elle des plaquettes de frein ?",
+   "a": "Non. Elle freine avec un tambour à l'avant et un frein régénératif à l'arrière."
+  },
+  {
+   "q": "Combien de temps pour recharger la NIU KQi 100P ?",
+   "a": "NIU annonce 5 à 6 heures pour une charge complète de sa batterie de 243 Wh."
+  },
+  {
+   "q": "Quelle différence entre la NIU KQi 100P et la KQi 100F ?",
+   "a": "Le guidon : fixe sur la 100P, à poignées pliantes sur la 100F. Moteur, batterie et freins sont identiques. La 100P pèse 17,3 kg, la 100F 17,6 kg."
+  }
+ ],
+ "sources": [
+  {
+   "label": "NIU Europe — KQi 100P",
+   "url": "https://shopeu.niu.com/products/niu-kqi-100p-trottinette-electrique-avec-suspension"
+  },
+  {
+   "label": "VoltandGo — NIU KQi 100P",
+   "url": "https://voltandgo.com/p/niu-kqi-100p-25567/"
+  },
+  {
+   "label": "Cleanrider — NIU KQi 100",
+   "url": "https://www.cleanrider.com/catalogue/trottinette-electrique/niu/niu-kqi-100/"
+  },
+  {
+   "label": "Frandroid — présentation des NIU KQi 100P et 100F",
+   "url": "https://www.frandroid.com/marques/niu/2328610_guidon-pliable-et-suspension-a-prix-modeste-ces-deux-nouvelles-trottinettes-electriques-niu-font-bouger-les-lignes"
+  }
+ ]
+}

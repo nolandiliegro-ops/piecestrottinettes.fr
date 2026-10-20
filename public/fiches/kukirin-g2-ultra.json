@@ -1,0 +1,146 @@
+{
+ "displayName": "Kukirin G2 Ultra",
+ "metaTitle": "Kukirin G2 Ultra : fiche technique, avis et pièces",
+ "metaDescription": "Kukirin G2 Ultra : bimoteur 2 x 800 W, batterie 48 V 18 Ah, pneus tubeless 10x2.75-6.5, plaquettes type Togo / G2. Avis, entretien et pièces compatibles.",
+ "intro": [
+  "La Kukirin G2 Ultra est la version bimoteur de la G2, chez la marque chinoise Kukirin, l'ex-Kugoo Kirin. Elle est en vente en France depuis au moins septembre 2025 et a été testée par Le Vélo Urbain et Android-MT. Deux moteurs de 800 W, une batterie 48 V 18 Ah, soit 864 Wh, et environ 30 kg sur la balance.",
+  "Pneus tubeless de 10 pouces, freins à disque mécaniques avant et arrière, suspensions sur les deux roues : c'est une trottinette pour les côtes et les trajets mixtes. Elle annonce 50 à 55 km/h, mais sur la voie publique en France elle doit rester bridée à 25 km/h."
+ ],
+ "specs": [
+  [
+   "Moteurs",
+   "2 × 800 W (1 000 W en pointe par moteur)"
+  ],
+  [
+   "Vitesse",
+   "25 km/h sur la voie publique (50 à 55 km/h annoncés, terrain privé uniquement)"
+  ],
+  [
+   "Batterie",
+   "48 V 18 Ah (864 Wh)"
+  ],
+  [
+   "Autonomie",
+   "jusqu'à 55 km annoncés, 35 à 45 km estimés par Le Vélo Urbain"
+  ],
+  [
+   "Poids",
+   "30 kg mesurés par Le Vélo Urbain, 31 kg selon Kukirin"
+  ],
+  [
+   "Charge max",
+   "120 kg"
+  ],
+  [
+   "Roues",
+   "10 pouces, tubeless 10x2.75-6.5"
+  ],
+  [
+   "Freins",
+   "Disques mécaniques avant et arrière + coupure moteur"
+  ],
+  [
+   "Suspension",
+   "Avant et arrière"
+  ],
+  [
+   "Étanchéité",
+   "IPX4"
+  ],
+  [
+   "Temps de charge",
+   "9 à 10 h"
+  ]
+ ],
+ "pros": [
+  "Forte puissance et bonne capacité en côte grâce aux deux moteurs (Le Vélo Urbain).",
+  "Suspensions efficaces et confort général très bon (Le Vélo Urbain).",
+  "Freinage jugé excellent (Le Vélo Urbain).",
+  "Double motorisation avec une vraie réserve de puissance (Android-MT)."
+ ],
+ "cons": [
+  "Autonomie réelle de 35 à 45 km en conduite dynamique (Le Vélo Urbain), 35 à 40 km en mode Turbo (Android-MT), loin des 55 km annoncés.",
+  "Format imposant : 125 cm de long mesurés, et une logique des commandes qui demande un temps d'adaptation (Le Vélo Urbain).",
+  "Plus lourde qu'une trottinette urbaine légère (Android-MT).",
+  "Sa vitesse de pointe n'est utilisable que sur terrain privé : en France, la voie publique est limitée à 25 km/h."
+ ],
+ "parts": [
+  {
+   "label": "Pneu",
+   "size": "10x2.75-6.5 tubeless (10 pouces)",
+   "count": 6,
+   "to": "/piece/pneu-tubeless-10x2-75-6-5-offroad-runflat-ewheel",
+   "cta": "Pneus 10x2.75-6.5"
+  },
+  {
+   "label": "Plaquettes",
+   "size": "étrier type Togo / G2",
+   "count": 1,
+   "to": "/piece/plaquettes-de-frein-dualtron-togo-ltd-kukirin-g2pro-g2-max-hitway-h5-urbanglide-allroad",
+   "cta": "Plaquettes G2"
+  }
+ ],
+ "care": [
+  "Freins à disque mécaniques : avec deux moteurs, tu freines plus souvent fort. Retends les câbles et contrôle les plaquettes régulièrement.",
+  "Pneus tubeless : vérifie la pression chaque semaine, les deux roues motrices usent vite un pneu sous-gonflé.",
+  "IPX4 seulement : évite les grosses averses et sèche la trottinette après une sortie sous la pluie."
+ ],
+ "price": {
+  "text": "Prix affiché : 689 € chez Kukirin France (page du 3 septembre 2025), 669 € chez Boulanger (page du 7 juillet 2026).",
+  "source": "kukirin-france.com, boulanger.com"
+ },
+ "faq": [
+  {
+   "q": "Quelle taille de pneu pour la Kukirin G2 Ultra ?",
+   "a": "Des pneus tubeless de 10 pouces en 10x2.75-6.5, sur une jante de 6,5 pouces."
+  },
+  {
+   "q": "Quelles plaquettes pour la Kukirin G2 Ultra ?",
+   "a": "Des plaquettes pour étrier type Togo / G2, la même forme que sur la G2 Pro et la G2 Max."
+  },
+  {
+   "q": "Quelle est l'autonomie réelle de la Kukirin G2 Ultra ?",
+   "a": "Le Vélo Urbain estime 35 à 45 km en conduite dynamique avec un testeur de 80 kg. Android-MT donne 35 à 40 km en mode Turbo. Les 55 km annoncés correspondent au mode Eco."
+  },
+  {
+   "q": "Combien de temps pour recharger la Kukirin G2 Ultra ?",
+   "a": "Compte 9 à 10 heures avec le chargeur fourni."
+  },
+  {
+   "q": "Quelle différence entre la Kukirin G2 Ultra et la G2 Max ?",
+   "a": "La G2 Ultra a deux moteurs de 800 W et une batterie de 18 Ah. La G2 Max n'a qu'un moteur de 1 000 W, mais une batterie plus grosse, autour de 20 Ah."
+  },
+  {
+   "q": "La Kukirin G2 Ultra est-elle légale en France ?",
+   "a": "Oui sur la voie publique à condition d'être bridée à 25 km/h, comme toute trottinette électrique. Débridée, elle n'est utilisable que sur terrain privé."
+  }
+ ],
+ "sources": [
+  {
+   "label": "Le Vélo Urbain — test de la Kukirin G2 Ultra",
+   "url": "https://le-velo-urbain.com/test-de-la-trottinette-bi-moteur-de-1600-watts-la-kukirin-g2-ultra/"
+  },
+  {
+   "label": "Android-MT (Ouest-France) — test de la Kukirin G2 Ultra",
+   "url": "https://android-mt.ouest-france.fr/appareil/test-de-la-kukirin-g2-ultra-une-dual-motor-qui-ne-fait-pas-de-compromis/193389/"
+  },
+  {
+   "label": "Kukirin France — Kukirin G2 Ultra",
+   "url": "https://kukirin-france.com/products/kukirin-g2-ultra-electric-scooter"
+  },
+  {
+   "label": "Boulanger — Kukirin G2 Ultra",
+   "url": "https://www.boulanger.com/ref/9000952327"
+  },
+  {
+   "label": "Ministère de la Transition écologique — réglementation des trottinettes",
+   "url": "https://www.ecologie.gouv.fr/politiques-publiques/trottinettes-electriques-edpm-reglementation-vigueur"
+  }
+ ],
+ "video": {
+  "id": "y1n_hgoXINE",
+  "title": "Kukirin G2 Ultra - Le meilleur rapport performance / prix !",
+  "channel": "MobiliTest",
+  "uploadDate": "2026-06-12"
+ }
+}

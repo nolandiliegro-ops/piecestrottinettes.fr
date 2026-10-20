@@ -1,0 +1,152 @@
+{
+ "displayName": "Kukirin G3",
+ "metaTitle": "Kukirin G3 : fiche technique, avis et pièces",
+ "metaDescription": "Kukirin G3 : 1 200 W, batterie 52 V 18 Ah, pneus tubeless 10x2.75-6.5, disques 140 mm, prise DC 5,5 x 2,1. Fiche technique, entretien et pièces compatibles.",
+ "intro": [
+  "La Kukirin G3 est le modèle tout-chemin de la marque chinoise Kukirin, l'ex-Kugoo Kirin, commercialisée au plus tard en 2022. On la trouve aussi sous le nom G3 Adventurers chez plusieurs revendeurs. Elle embarque un moteur arrière de 1 200 W et une batterie 52 V 18 Ah, soit 936 Wh, pour 60 à 70 km d'autonomie annoncée.",
+  "Pneus tubeless tout-terrain de 10 pouces en 10x2.75-6.5, freins à disque avant et arrière, suspension TPU, guidon façon cross : elle vise les chemins faciles autant que la ville. Elle annonce 50 km/h, mais sur la voie publique en France elle doit rester bridée à 25 km/h."
+ ],
+ "specs": [
+  [
+   "Moteur",
+   "1 200 W"
+  ],
+  [
+   "Vitesse",
+   "25 km/h sur la voie publique (50 km/h annoncés, terrain privé uniquement)"
+  ],
+  [
+   "Batterie",
+   "52 V 18 Ah (936 Wh)"
+  ],
+  [
+   "Autonomie annoncée",
+   "60 à 70 km selon les fiches"
+  ],
+  [
+   "Poids",
+   "25 kg (31 kg emballée selon Kukirin Factory)"
+  ],
+  [
+   "Charge max",
+   "120 kg"
+  ],
+  [
+   "Roues",
+   "10 pouces, tubeless 10x2.75-6.5"
+  ],
+  [
+   "Freins",
+   "Disques avant et arrière Ø 140 mm"
+  ],
+  [
+   "Suspension",
+   "Avant et arrière, système TPU"
+  ],
+  [
+   "Étanchéité",
+   "IP54 ou IPX4 selon les fiches"
+  ],
+  [
+   "Prise de charge",
+   "DC 5,5 x 2,1"
+  ],
+  [
+   "Chargeur",
+   "52 V (58,8 V en sortie)"
+  ],
+  [
+   "Temps de charge",
+   "8 à 10 h"
+  ]
+ ],
+ "pros": [
+  "Moteur de 1 200 W et batterie de 936 Wh pour 25 kg.",
+  "Pneus tubeless tout-terrain de 10 pouces, utilisables sur chemin.",
+  "Trois modes de vitesse (25, 35 et 50 km/h) selon Kukirin EU."
+ ],
+ "cons": [
+  "Pas de test de presse française publié : l'autonomie de 60 à 70 km reste une donnée de revendeur.",
+  "Les fiches ne s'accordent pas sur l'étanchéité (IP54 ou IPX4) : évite de rouler sous une grosse pluie.",
+  "Le nom G3 Adventurers est utilisé pour la même trottinette chez plusieurs revendeurs : vérifie les caractéristiques de ta version avant d'acheter une pièce.",
+  "Sa vitesse de pointe n'est utilisable que sur terrain privé : en France, la voie publique est limitée à 25 km/h."
+ ],
+ "parts": [
+  {
+   "label": "Pneu",
+   "size": "10x2.75-6.5 tubeless (10 pouces)",
+   "count": 6,
+   "to": "/piece/pneu-10x2-75-6-5-tubeless-aoxin-urbanglide-e-cross",
+   "cta": "Pneus 10x2.75-6.5"
+  },
+  {
+   "label": "Disque de frein",
+   "size": "140 mm, 6 trous, entraxe 44 mm",
+   "count": 5,
+   "to": "/piece/disque-de-frein-140mm",
+   "cta": "Disques 140 mm"
+  },
+  {
+   "label": "Chargeur",
+   "size": "52 V → 58,8 V, prise DC 5,5 x 2,1",
+   "count": 1,
+   "to": "/piece/pack-chargeur-52v-adaptateur-dc5-5x2-1",
+   "cta": "Chargeurs 52 V"
+  }
+ ],
+ "care": [
+  "Après un chemin boueux, nettoie les disques et les étriers : la boue use les plaquettes et fait grincer les freins.",
+  "Pneus tubeless tout-terrain : contrôle la pression chaque semaine, un pneu sous-gonflé se déjante sur les bordures.",
+  "Suspension TPU : vérifie le jeu des bras et le serrage des axes, ils prennent tous les chocs des chemins."
+ ],
+ "faq": [
+  {
+   "q": "Quelle taille de pneu pour la Kukirin G3 ?",
+   "a": "Des pneus tubeless de 10 pouces en 10x2.75-6.5, sur une jante de 6,5 pouces."
+  },
+  {
+   "q": "Quel disque de frein pour la Kukirin G3 ?",
+   "a": "Un disque de 140 mm à 6 trous, entraxe 44 mm."
+  },
+  {
+   "q": "Quel chargeur pour la Kukirin G3 ?",
+   "a": "Un chargeur 52 V (58,8 V en sortie) avec prise DC 5,5 x 2,1. Compte 8 à 10 heures pour une charge complète."
+  },
+  {
+   "q": "Quelle différence entre la Kukirin G3 et la G3 Adventurers ?",
+   "a": "Plusieurs revendeurs utilisent le nom G3 Adventurers pour la G3, avec les mêmes moteur et batterie. La G3 Pro, elle, est un autre modèle, bimoteur."
+  },
+  {
+   "q": "La Kukirin G3 est-elle légale en France ?",
+   "a": "Oui sur la voie publique à condition d'être bridée à 25 km/h, comme toute trottinette électrique. Débridée, elle n'est utilisable que sur terrain privé."
+  }
+ ],
+ "sources": [
+  {
+   "label": "Kukirin EU — fiche technique G3",
+   "url": "https://www.kukirineu.com/pages/g3-specs"
+  },
+  {
+   "label": "Kukirin Factory — fiche technique G3",
+   "url": "https://www.kukirinfactory.com/kukirin-g3-specification"
+  },
+  {
+   "label": "Kukirin AU — fiche technique G3",
+   "url": "https://www.kukirinau.com/pages/g3-specs"
+  },
+  {
+   "label": "Max Blinker — Kukirin G3",
+   "url": "https://www.maxblinker.fr/fr/trottinettes-electriques/kukirin-g3"
+  },
+  {
+   "label": "Ministère de la Transition écologique — réglementation des trottinettes",
+   "url": "https://www.ecologie.gouv.fr/politiques-publiques/trottinettes-electriques-edpm-reglementation-vigueur"
+  }
+ ],
+ "video": {
+  "id": "v2ok3CTKb7g",
+  "title": "TEST KUKIRIN G3 : UNE BOMBE À 1000W QUI DÉCHIRE TOUT !",
+  "channel": "RAFTOR",
+  "uploadDate": "2025-11-29"
+ }
+}

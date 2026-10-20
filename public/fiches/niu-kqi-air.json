@@ -1,0 +1,145 @@
+{
+ "displayName": "NIU KQi Air",
+ "metaTitle": "NIU KQi Air : fiche technique et pièces",
+ "metaDescription": "NIU KQi Air : 11,9 kg en carbone et magnésium, 350 W, batterie 48 V 451 Wh, pneus tubeless 9.5x2.3, frein à disque. Entretien et pièces compatibles.",
+ "intro": [
+  "La NIU KQi Air est la trottinette ultralégère de NIU, mise en précommande en Europe le 19 septembre 2023 avec des livraisons annoncées à partir de décembre 2023. Son cadre mêle fibre de carbone (70 %) et magnésium : elle pèse 11,9 kg, 200 g de plus que la KQi Air X tout carbone.",
+  "Moteur de 350 W (700 W en pointe), batterie 48 V de 451 Wh, autonomie annoncée jusqu'à 50 km. Pas de suspension : ce sont les pneus tubeless de 9,5 pouces qui amortissent. Elle freine avec un disque et un frein régénératif. Sur la voie publique, elle est limitée à 25 km/h."
+ ],
+ "specs": [
+  [
+   "Moteur",
+   "350 W (700 W en pointe)"
+  ],
+  [
+   "Vitesse",
+   "25 km/h"
+  ],
+  [
+   "Batterie",
+   "48 V, 9,4 Ah, 451 Wh"
+  ],
+  [
+   "Autonomie annoncée",
+   "jusqu'à 50 km"
+  ],
+  [
+   "Poids",
+   "11,9 kg"
+  ],
+  [
+   "Charge max",
+   "120 kg"
+  ],
+  [
+   "Cadre",
+   "70 % fibre de carbone, 30 % magnésium"
+  ],
+  [
+   "Roues",
+   "9,5 pouces, tubeless 9.5x2.3 (241 x 58 mm)"
+  ],
+  [
+   "Freins",
+   "Disque mécanique + freinage régénératif"
+  ],
+  [
+   "Suspension",
+   "Aucune"
+  ],
+  [
+   "Étanchéité",
+   "IP55"
+  ],
+  [
+   "Prise de charge",
+   "NIU"
+  ],
+  [
+   "Temps de charge",
+   "5 h (selon NIU)"
+  ],
+  [
+   "Sortie",
+   "précommande le 19 septembre 2023"
+  ],
+  [
+   "Prix",
+   "949 € en précommande (selon Cleanrider)"
+  ]
+ ],
+ "pros": [
+  "11,9 kg pour 451 Wh de batterie : elle se porte facilement.",
+  "Système 48 V et 700 W en pointe malgré le poids plume.",
+  "Indice IP55 contre les projections d'eau."
+ ],
+ "cons": [
+  "Pas de suspension : sur pavés, seuls les pneus de 9,5 pouces amortissent.",
+  "Prix élevé pour une trottinette de 350 W : 949 € en précommande selon Cleanrider.",
+  "Autonomie de 50 km annoncée, à prendre comme un maximum : aucun test français ne l'a mesurée sur cette version."
+ ],
+ "parts": [
+  {
+   "label": "Pneu",
+   "size": "9.5x2.3 tubeless (9,5 pouces)",
+   "count": 1,
+   "to": "/piece/pneu-9-5x2-3-niu-kqi-air",
+   "cta": "Pneus 9.5x2.3"
+  }
+ ],
+ "care": [
+  "Après une chute, fais contrôler la colonne et la fourche en carbone avant de reprendre la route.",
+  "Pneus tubeless de 9,5 pouces : vérifie la pression chaque semaine, c'est ton seul amorti.",
+  "Frein à disque : surveille l'épaisseur des plaquettes et l'état du disque, surtout si tu freines fort en descente."
+ ],
+ "price": {
+  "text": "Prix en précommande en France : 949 € (septembre 2023).",
+  "source": "Cleanrider"
+ },
+ "faq": [
+  {
+   "q": "Quelle taille de pneu pour la NIU KQi Air ?",
+   "a": "Des pneus tubeless de 9,5 pouces en 9.5x2.3, soit 241 x 58 mm."
+  },
+  {
+   "q": "Combien pèse la NIU KQi Air ?",
+   "a": "11,9 kg, grâce à son cadre en fibre de carbone et magnésium."
+  },
+  {
+   "q": "La NIU KQi Air est-elle suspendue ?",
+   "a": "Non. Elle n'a ni suspension avant ni arrière : ce sont les pneus tubeless qui absorbent les chocs."
+  },
+  {
+   "q": "Combien de temps pour recharger la NIU KQi Air ?",
+   "a": "NIU annonce environ 5 heures pour une charge complète."
+  },
+  {
+   "q": "Quelle différence entre la NIU KQi Air et la KQi Air X ?",
+   "a": "Le cadre : 70 % carbone et 30 % magnésium sur la KQi Air, entièrement en carbone sur la Air X. La Air X pèse 11,7 kg contre 11,9 kg. Moteur, batterie et autonomie annoncés sont les mêmes."
+  }
+ ],
+ "sources": [
+  {
+   "label": "NIU Europe — KQi Air",
+   "url": "https://shopeu.niu.com/fr-fr/products/niu-kqi-air-lightweight-electric-scooter-fr-version"
+  },
+  {
+   "label": "NIU Newsroom — lancement des KQi Air et Air X",
+   "url": "https://newsroom.niu.com/niu-the-worlds-leading-two-wheeled-electric-vehicles-brand-launches-impossibly-light-carbon-fiber-kick-scooter/"
+  },
+  {
+   "label": "VoltandGo — NIU KQi Air",
+   "url": "https://voltandgo.com/p/niu-kqi-air-25580/"
+  },
+  {
+   "label": "Cleanrider — les trottinettes NIU en fibre de carbone",
+   "url": "https://www.cleanrider.com/actus/ultralegeres-les-nouvelles-trottinettes-de-niu-misent-sur-la-fibre-de-carbone/"
+  }
+ ],
+ "video": {
+  "id": "vLTpDdhj6f4",
+  "title": "NIU KQi Air Carbon Masterclass - Trottinette électrique Test Officiel Fr.",
+  "channel": "Electric Surf",
+  "uploadDate": "2023-11-29"
+ }
+}

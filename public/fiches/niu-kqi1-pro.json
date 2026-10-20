@@ -1,0 +1,108 @@
+{
+ "displayName": "NIU KQi1 Pro",
+ "metaTitle": "NIU KQi1 Pro : fiche technique et pièces",
+ "metaDescription": "NIU KQi1 Pro : 250 W, batterie 48 V 243 Wh, pneus 9 pouces 9x2.3 à chambre à air, frein tambour avant, 15,4 kg. Entretien et pièces compatibles.",
+ "intro": [
+  "La NIU KQi1 Pro est la trottinette d'entrée de gamme de NIU, pensée pour les petits trajets et les gabarits légers : NIU la donne pour 100 kg de charge maximale. Elle pèse 15,4 kg, ce qui la rend facile à monter dans un escalier ou à glisser dans un coffre.",
+  "Moteur arrière de 250 W (450 W au maximum), batterie 48 V de 243 Wh, autonomie annoncée jusqu'à 25 km et recharge en 5 heures selon NIU. Elle roule sur des pneus de 9 pouces à chambre à air, sans suspension, et freine avec un tambour avant et un frein régénératif arrière. Voie publique : 25 km/h."
+ ],
+ "specs": [
+  [
+   "Moteur",
+   "250 W (450 W au maximum), moteur arrière (selon NIU)"
+  ],
+  [
+   "Vitesse",
+   "25 km/h"
+  ],
+  [
+   "Batterie",
+   "48 V, 243 Wh (selon NIU)"
+  ],
+  [
+   "Autonomie annoncée",
+   "jusqu'à 25 km (selon NIU)"
+  ],
+  [
+   "Poids",
+   "15,4 kg (selon NIU)"
+  ],
+  [
+   "Charge max",
+   "100 kg (selon NIU)"
+  ],
+  [
+   "Roues",
+   "9 pouces, 9x2.3 (229 x 60 mm) à chambre à air"
+  ],
+  [
+   "Freins",
+   "Tambour avant + freinage régénératif arrière"
+  ],
+  [
+   "Suspension",
+   "Aucune"
+  ],
+  [
+   "Étanchéité",
+   "IP54"
+  ],
+  [
+   "Temps de charge",
+   "5 h (selon NIU)"
+  ]
+ ],
+ "pros": [
+  "15,4 kg : facile à porter et à ranger.",
+  "Système 48 V sur une trottinette d'entrée de gamme.",
+  "Pneus à chambre à air, plus confortables que des pneus pleins sur une trottinette sans suspension."
+ ],
+ "cons": [
+  "Charge maximale limitée à 100 kg selon NIU.",
+  "Batterie de 243 Wh : 25 km annoncés au mieux, moins en usage réel.",
+  "Pas de suspension : confort limité sur pavés et chaussée abîmée.",
+  "Un seul frein mécanique, le tambour avant."
+ ],
+ "parts": [
+  {
+   "label": "Pneu",
+   "size": "9x2.3 (9 pouces, à chambre à air)",
+   "count": 1,
+   "to": "/piece/pneu-9x2-3-niu-kqi1",
+   "cta": "Pneus 9x2.3"
+  }
+ ],
+ "care": [
+  "Pneus à chambre à air de 9 pouces : contrôle la pression chaque semaine, un pneu sous-gonflé pince la chambre et crève.",
+  "Le tambour avant est le seul frein mécanique : fais-le régler dès que la course du levier s'allonge.",
+  "Respecte la charge de 100 kg : au-delà, tu fatigues le moteur, les pneus et le mécanisme de pliage."
+ ],
+ "faq": [
+  {
+   "q": "Quelle taille de pneu pour la NIU KQi1 Pro ?",
+   "a": "Des pneus de 9 pouces en 9x2.3, soit 229 x 60 mm, montés avec chambre à air."
+  },
+  {
+   "q": "La NIU KQi1 Pro a-t-elle des plaquettes de frein ?",
+   "a": "Non. Elle freine avec un tambour à l'avant et un frein régénératif à l'arrière."
+  },
+  {
+   "q": "Combien de temps pour recharger la NIU KQi1 Pro ?",
+   "a": "NIU annonce environ 5 heures pour une charge complète de sa batterie de 243 Wh."
+  },
+  {
+   "q": "Quel poids maximum supporte la NIU KQi1 Pro ?",
+   "a": "100 kg selon NIU, conducteur et sac compris."
+  }
+ ],
+ "sources": [
+  {
+   "label": "NIU Europe — KQi1 Pro",
+   "url": "https://shopeu.niu.com/products/niu-kqi1-pro-electric-kick-scooter-fr-version"
+  },
+  {
+   "label": "NIU — fiche KQi1",
+   "url": "https://global.niu.com/fr/product/KQi1"
+  }
+ ]
+}

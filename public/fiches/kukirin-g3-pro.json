@@ -1,0 +1,167 @@
+{
+ "displayName": "Kukirin G3 Pro",
+ "metaTitle": "Kukirin G3 Pro : fiche technique, avis et pièces",
+ "metaDescription": "Kukirin G3 Pro : bimoteur 2 x 1 200 W, batterie 52 V, freins hydrauliques et disques 140 mm, pneus 10x3 (80/65-6). Avis, entretien et pièces compatibles.",
+ "intro": [
+  "La Kukirin G3 Pro est la bimoteur tout-terrain de la marque chinoise Kukirin, l'ex-Kugoo Kirin. Techno-Science l'a testée dès juillet 2023, et elle est aujourd'hui vendue en « nouvelle version 2026 ». Deux moteurs de 1 200 W, une batterie 52 V d'environ 1 200 Wh et des freins hydrauliques sur les deux roues.",
+  "Pneus tout-terrain de 10 pouces en 10x3 (80/65-6), quatre bras amortisseurs, deux ports de charge : c'est une machine lourde, faite pour les longues sorties et les chemins. Elle annonce 65 km/h, mais sur la voie publique en France elle doit rester bridée à 25 km/h."
+ ],
+ "specs": [
+  [
+   "Moteurs",
+   "2 × 1 200 W (1 500 W en pointe par moteur)"
+  ],
+  [
+   "Vitesse",
+   "25 km/h sur la voie publique (65 km/h annoncés, terrain privé uniquement)"
+  ],
+  [
+   "Batterie",
+   "52 V 23,2 Ah (1 206 Wh) ; 23,4 Ah sur la version 2026 vendue par Fnac"
+  ],
+  [
+   "Autonomie",
+   "jusqu'à 80 km annoncés, 40 à 60 km estimés par Techno-Science"
+  ],
+  [
+   "Poids",
+   "39,6 kg selon Kukirin, 44 kg pour la version 2026 selon Fnac"
+  ],
+  [
+   "Charge max",
+   "120 kg"
+  ],
+  [
+   "Roues",
+   "10 pouces, 10x3 (80/65-6) tout-terrain"
+  ],
+  [
+   "Freins",
+   "Disques hydrauliques avant et arrière, Ø 140 mm"
+  ],
+  [
+   "Suspension",
+   "Quatre bras amortisseurs, avant et arrière"
+  ],
+  [
+   "Étanchéité",
+   "IP54"
+  ],
+  [
+   "Prise de charge",
+   "CQ ou RCA, deux ports de charge"
+  ],
+  [
+   "Chargeur",
+   "52 V"
+  ],
+  [
+   "Temps de charge",
+   "11 h avec un chargeur 2 A, 4 h avec un chargeur 5 A (selon Kukirin)"
+  ]
+ ],
+ "pros": [
+  "Machine puissante, avec un freinage hydraulique efficace (Techno-Science).",
+  "Freins hydrauliques à l'avant et à l'arrière, sur disques de 140 mm.",
+  "Deux ports de charge sur la trottinette (Techno-Science)."
+ ],
+ "cons": [
+  "Autonomie estimée à environ 40 km en conduite sportive et jusqu'à 60 km à allure modérée, loin des 80 km annoncés (Techno-Science).",
+  "Un seul chargeur fourni avec l'exemplaire testé, malgré les deux ports (Techno-Science).",
+  "39,6 à 44 kg selon la version : elle ne se porte pas.",
+  "Sa vitesse de pointe n'est utilisable que sur terrain privé : en France, la voie publique est limitée à 25 km/h."
+ ],
+ "parts": [
+  {
+   "label": "Pneu",
+   "size": "80/65-6 (10x3)",
+   "count": 11,
+   "to": "/piece/pneu-80-65-6-10x3-ewheel",
+   "cta": "Pneus 10x3"
+  },
+  {
+   "label": "Chambre à air",
+   "size": "80/65-6 (10x3), valve droite ou coudée",
+   "count": 3,
+   "to": "/piece/chambre-a-air-80-65-6-10x3-valve-droite-ewheel",
+   "cta": "Chambres à air"
+  },
+  {
+   "label": "Disque de frein",
+   "size": "140 mm, 6 trous, entraxe 44 mm",
+   "count": 5,
+   "to": "/piece/disque-de-frein-140mm",
+   "cta": "Disques 140 mm"
+  },
+  {
+   "label": "Chargeur",
+   "size": "52 V, prise CQ ou RCA (vérifie ta prise)",
+   "count": 2,
+   "to": "/piece/pack-chargeur-52v-adaptateur-cq",
+   "cta": "Chargeurs 52 V"
+  }
+ ],
+ "care": [
+  "Freins hydrauliques : surveille l'épaisseur des plaquettes et purge le circuit dès que le levier devient mou.",
+  "Avec deux moteurs et 40 kg, contrôle la pression des pneus 10x3 avant chaque sortie : un pneu mou chauffe et s'use vite.",
+  "Quatre bras amortisseurs : vérifie le serrage des axes et le jeu des bras, surtout après les chemins."
+ ],
+ "faq": [
+  {
+   "q": "Quelle taille de pneu pour la Kukirin G3 Pro ?",
+   "a": "Des pneus de 10 pouces en 10x3, aussi notés 80/65-6, sur une jante de 6 pouces."
+  },
+  {
+   "q": "Quel disque de frein pour la Kukirin G3 Pro ?",
+   "a": "Un disque de 140 mm à 6 trous, entraxe 44 mm, à l'avant comme à l'arrière."
+  },
+  {
+   "q": "Quel chargeur pour la Kukirin G3 Pro ?",
+   "a": "Un chargeur 52 V. La G3 Pro a deux ports de charge : selon ta version, la prise est en CQ ou en RCA."
+  },
+  {
+   "q": "Quelle est l'autonomie réelle de la Kukirin G3 Pro ?",
+   "a": "Techno-Science estime environ 40 km en conduite sportive et jusqu'à 60 km à allure modérée, pour 80 km annoncés. Le média précise que c'est en partie une extrapolation."
+  },
+  {
+   "q": "Quelle différence entre la Kukirin G3 Pro et la G3 ?",
+   "a": "La G3 Pro a deux moteurs de 1 200 W, des freins hydrauliques et une batterie d'environ 23 Ah. La G3 n'a qu'un moteur de 1 200 W et une batterie de 18 Ah."
+  },
+  {
+   "q": "La Kukirin G3 Pro est-elle légale en France ?",
+   "a": "Oui sur la voie publique à condition d'être bridée à 25 km/h, comme toute trottinette électrique. Débridée, elle n'est utilisable que sur terrain privé."
+  }
+ ],
+ "sources": [
+  {
+   "label": "Techno-Science — test de la Kukirin G3 Pro",
+   "url": "https://www.techno-science.net/fr/tests/test-trottinette-electrique-kukirin-g3-pro-un-mastodonte-bimoteur-114"
+  },
+  {
+   "label": "Kukirin FR — Kukirin G3 Pro",
+   "url": "https://www.kukirin-fr.com/products/kukirin-g3-pro"
+  },
+  {
+   "label": "Boulanger — Kukirin G3 Pro",
+   "url": "https://www.boulanger.com/ref/9000921763"
+  },
+  {
+   "label": "Fnac — Kukirin G3 Pro nouvelle version 2026",
+   "url": "https://www.fnac.com/mp53594751/KuKirin-G3-Pro-Trottinette-electrique-Nouvelle-version-2026-double-moteur-1200-W-2-batterie-52-V-23-4-Ah-pneu-10-pouces-freins-hydrauliques-autonomie-jusqu-a-63-km-ecran-LCD-25km-h/w-4"
+  },
+  {
+   "label": "Fnac — Kukirin G3 Pro 1200 W x 2, 23,2 Ah",
+   "url": "https://www.fnac.com/mp49293744/Trottinette-electrique-KuKirin-G3-Pro-1200W-2-23-2Ah-80km-65km-h/w-4"
+  },
+  {
+   "label": "Ministère de la Transition écologique — réglementation des trottinettes",
+   "url": "https://www.ecologie.gouv.fr/politiques-publiques/trottinettes-electriques-edpm-reglementation-vigueur"
+  }
+ ],
+ "video": {
+  "id": "6XmNWLTVp2o",
+  "title": "Kukirin G3 Pro - Le test complet ! la trotinette electrique parfaite ?",
+  "channel": "MobiliTest",
+  "uploadDate": "2023-03-19"
+ }
+}

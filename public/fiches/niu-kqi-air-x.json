@@ -1,0 +1,124 @@
+{
+ "displayName": "NIU KQi Air X",
+ "metaTitle": "NIU KQi Air X : fiche technique, avis et pièces",
+ "metaDescription": "NIU KQi Air X : cadre tout carbone de 11,7 kg, 350 W, batterie 48 V 451 Wh, pneus tubeless 9,5 pouces, frein à disque avant. Avis, entretien et pièces.",
+ "intro": [
+  "La NIU KQi Air X est la version tout carbone de la KQi Air, annoncée en septembre 2023 avec des premières livraisons prévues pour mai 2024 selon Frandroid. Elle pèse 11,7 kg, 200 g de moins que la KQi Air en carbone et magnésium : Frandroid parle d'une « légèreté inouïe ».",
+  "Moteur de 350 W (700 W en pointe), batterie 48 V de 9,4 Ah soit 451 Wh, autonomie annoncée jusqu'à 50 km. Pas de suspension : elle compte sur ses pneus tubeless de 9,5 pouces. Frein à disque avant et frein régénératif arrière. Frandroid a mesuré environ 30 km en moyenne. Voie publique : 25 km/h."
+ ],
+ "specs": [
+  [
+   "Moteur",
+   "350 W (700 W en pointe)"
+  ],
+  [
+   "Vitesse",
+   "25 km/h"
+  ],
+  [
+   "Batterie",
+   "48 V, 9,4 Ah, 451 Wh"
+  ],
+  [
+   "Autonomie",
+   "jusqu'à 50 km annoncés, environ 30 km mesurés par Frandroid"
+  ],
+  [
+   "Poids",
+   "11,7 kg"
+  ],
+  [
+   "Charge max",
+   "120 kg"
+  ],
+  [
+   "Cadre",
+   "Fibre de carbone"
+  ],
+  [
+   "Roues",
+   "9,5 pouces, tubeless"
+  ],
+  [
+   "Freins",
+   "Disque avant + freinage régénératif arrière"
+  ],
+  [
+   "Suspension",
+   "Aucune"
+  ],
+  [
+   "Étanchéité",
+   "IP55"
+  ],
+  [
+   "Temps de charge",
+   "environ 5 h"
+  ],
+  [
+   "Prix de lancement",
+   "1 799 €, 1 399 € en précommande (selon Frandroid)"
+  ]
+ ],
+ "pros": [
+  "11,7 kg : particulièrement facile à porter dans un escalier ou les transports (Frandroid).",
+  "Batterie 48 V de 451 Wh dans un cadre tout carbone.",
+  "Indice IP55 contre les projections d'eau (VoltandGo)."
+ ],
+ "cons": [
+  "Autonomie décevante : environ 30 km mesurés sur parcours plats par Frandroid, pour 50 km annoncés.",
+  "Recharge lente (Frandroid).",
+  "Confort moyen et freinage perfectible (Frandroid).",
+  "Prix élevé au regard des performances (Frandroid)."
+ ],
+ "parts": [],
+ "care": [
+  "Après une chute, fais contrôler la colonne et la fourche en carbone avant de reprendre la route.",
+  "Pneus tubeless de 9,5 pouces : vérifie la pression chaque semaine, c'est ton seul amorti.",
+  "Le disque avant est le seul frein mécanique : surveille l'épaisseur des plaquettes et l'état du disque."
+ ],
+ "price": {
+  "text": "Prix de lancement en France : 1 799 €, avec une précommande à 1 399 €.",
+  "source": "Frandroid"
+ },
+ "faq": [
+  {
+   "q": "Quelle taille de pneu pour la NIU KQi Air X ?",
+   "a": "Des pneus tubeless de 9,5 pouces. Vérifie la largeur inscrite sur le flanc de ton pneu avant de commander."
+  },
+  {
+   "q": "Combien pèse la NIU KQi Air X ?",
+   "a": "11,7 kg, grâce à son cadre entièrement en fibre de carbone."
+  },
+  {
+   "q": "Quelle est l'autonomie réelle de la NIU KQi Air X ?",
+   "a": "Frandroid a mesuré environ 30 km en moyenne sur trois charges complètes, sur des parcours plutôt plats entre 10 et 20 °C, pour 50 km annoncés."
+  },
+  {
+   "q": "Combien de temps pour recharger la NIU KQi Air X ?",
+   "a": "Environ 5 heures pour une charge complète."
+  },
+  {
+   "q": "Quelle différence entre la NIU KQi Air X et la KQi Air ?",
+   "a": "Le cadre : tout carbone sur la Air X, 70 % carbone et 30 % magnésium sur la KQi Air. La Air X pèse 11,7 kg contre 11,9 kg. Moteur et batterie sont les mêmes."
+  }
+ ],
+ "sources": [
+  {
+   "label": "NIU Europe — KQi Air X",
+   "url": "https://shopeu.niu.com/fr-fr/products/niu-kqi-air-x-lightest-electric-scooter-fr-version"
+  },
+  {
+   "label": "Frandroid — test NIU KQi Air X",
+   "url": "https://www.frandroid.com/marques/niu/2017090_test-de-la-niu-kqi-air-x-une-trottinette-electrique-a-la-legerete-inouie"
+  },
+  {
+   "label": "Frandroid — fiche NIU KQi Air X",
+   "url": "https://www.frandroid.com/produits/trottinette-electrique/niu/2023010-niu-kqi-air-x"
+  },
+  {
+   "label": "VoltandGo — NIU KQi Air X",
+   "url": "https://voltandgo.com/p/niu-kqi-air-x-25583/"
+  }
+ ]
+}

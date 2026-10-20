@@ -1,0 +1,144 @@
+{
+ "displayName": "Kukirin G4 Max",
+ "metaTitle": "Kukirin G4 Max : fiche technique et pièces",
+ "metaDescription": "Kukirin G4 Max : bimoteur 2 x 1 600 W, batterie 60 V, freins hydrauliques à étriers Nutt 4 pistons, charge max 150 kg. Fiche technique, entretien et pièces.",
+ "intro": [
+  "La Kukirin G4 Max est la bimoteur la plus lourde de la gamme G4 chez la marque chinoise Kukirin, l'ex-Kugoo Kirin. Deux moteurs de 1 600 W (2 000 W en pointe chacun), une batterie de 60 V 35,2 Ah, soit 2 112 Wh, et jusqu'à 95 km d'autonomie annoncée.",
+  "Grandes roues tout-terrain annoncées en 12 pouces, freins hydrauliques à étriers quatre pistons, suspension intégrale, 150 kg de charge max : c'est une machine de tout-terrain de 64 kg. Elle annonce 86 km/h, mais sur la voie publique en France elle doit rester bridée à 25 km/h."
+ ],
+ "specs": [
+  [
+   "Moteurs",
+   "2 × 1 600 W (2 000 W en pointe par moteur)"
+  ],
+  [
+   "Vitesse",
+   "25 km/h sur la voie publique (86 km/h annoncés, terrain privé uniquement)"
+  ],
+  [
+   "Batterie",
+   "60 V 35,2 Ah (2 112 Wh)"
+  ],
+  [
+   "Autonomie annoncée",
+   "jusqu'à 95 km"
+  ],
+  [
+   "Poids",
+   "64 à 64,5 kg"
+  ],
+  [
+   "Charge max",
+   "150 kg"
+  ],
+  [
+   "Roues",
+   "12 pouces tout-terrain annoncés par les revendeurs"
+  ],
+  [
+   "Freins",
+   "Disques hydrauliques avant et arrière, étriers Nutt 4 pistons"
+  ],
+  [
+   "Suspension",
+   "Intégrale (selon Fnac)"
+  ],
+  [
+   "Étanchéité",
+   "IP54 (IPX5 sur une ligne de la fiche Darty)"
+  ],
+  [
+   "Prise de charge",
+   "Deux ports de charge (selon Fnac)"
+  ],
+  [
+   "Chargeur",
+   "60 V"
+  ],
+  [
+   "Temps de charge",
+   "7 h selon Darty, 8 h selon Idealo"
+  ]
+ ],
+ "pros": [
+  "Batterie de 2 112 Wh pour jusqu'à 95 km annoncés.",
+  "Freinage hydraulique sur les deux roues avec étriers à quatre pistons.",
+  "Charge maximale de 150 kg, au-dessus des 120 kg habituels."
+ ],
+ "cons": [
+  "64 kg : elle ne se porte pas et se pousse difficilement à l'arrêt.",
+  "Pas de test de presse française publié : Max Blinker indique que sa mesure d'autonomie est encore en attente.",
+  "Encombrante : 1 425 × 640 × 1 340 mm dépliée selon Fnac.",
+  "Sa vitesse de pointe n'est utilisable que sur terrain privé : en France, la voie publique est limitée à 25 km/h."
+ ],
+ "parts": [
+  {
+   "label": "Plaquettes",
+   "size": "étrier Nutt 4 pistons",
+   "count": 4,
+   "to": "/piece/plaquettes-de-freins-shimano-d03s-nutt-4-pistons-thunder-3-nami-semi-metallique",
+   "cta": "Plaquettes Nutt 4 pistons"
+  }
+ ],
+ "care": [
+  "Freins hydrauliques 4 pistons : contrôle les plaquettes souvent, 64 kg à arrêter les usent vite, et purge le circuit dès que le levier devient mou.",
+  "Pneus tout-terrain : vérifie la pression avant chaque sortie, la masse de la trottinette écrase vite un pneu mou.",
+  "Avec deux moteurs et 64 kg, vérifie régulièrement le serrage de la potence, des axes de roue et des bras de suspension."
+ ],
+ "price": {
+  "text": "Prix affiché chez Kukirin France : 1 499 € (page mise à jour le 7 mars 2026).",
+  "source": "kukirin-france.com"
+ },
+ "faq": [
+  {
+   "q": "Quelles plaquettes pour la Kukirin G4 Max ?",
+   "a": "Des plaquettes pour étrier hydraulique Nutt 4 pistons, la même forme que les plaquettes Shimano D03S. Elles existent en semi-métallique, métallique, métal fritté et céramique."
+  },
+  {
+   "q": "Quelle taille de pneu pour la Kukirin G4 Max ?",
+   "a": "Les revendeurs annoncent des roues de 12 pouces. Notre catalogue la référence en 90/65-6.5 : lis la dimension écrite sur le flanc de ton pneu avant de commander."
+  },
+  {
+   "q": "Quelle batterie a la Kukirin G4 Max ?",
+   "a": "Une batterie de 60 V 35,2 Ah, soit 2 112 Wh."
+  },
+  {
+   "q": "Combien de temps pour recharger la Kukirin G4 Max ?",
+   "a": "7 heures selon Darty, 8 heures selon Idealo. La G4 Max a deux ports de charge selon Fnac."
+  },
+  {
+   "q": "La Kukirin G4 Max est-elle légale en France ?",
+   "a": "Oui sur la voie publique à condition d'être bridée à 25 km/h, comme toute trottinette électrique. Débridée, elle n'est utilisable que sur terrain privé."
+  }
+ ],
+ "sources": [
+  {
+   "label": "Max Blinker — Kukirin G4 Max",
+   "url": "https://www.maxblinker.fr/fr/trottinettes-electriques/kukirin-g4-max"
+  },
+  {
+   "label": "Kukirin France — Kukirin G4 Max",
+   "url": "https://kukirin-france.com/products/kukirin-g4-max-electric-scooter"
+  },
+  {
+   "label": "Darty — Kukirin G4 Max",
+   "url": "https://www.darty.com/nav/achat/ref/MC353594815.html"
+  },
+  {
+   "label": "Fnac — Kukirin G4 Max 12 pouces",
+   "url": "https://www.fnac.com/mp53212305/Trottinette-electrique-KuKirin-G4-Max-12-default-25-km-h-Noir/w-4"
+  },
+  {
+   "label": "Fnac — Kukirin G4 Max double moteur 60 V 35,2 Ah",
+   "url": "https://www.fnac.com/mp52658096/Trottinette-electrique-pliable-Kukirin-G4-Max-Double-moteur-2-1600W-Batterie-60V-35-2Ah-Suspension-hydraulique-integrale-Pneus-12-Autonomie-95-km-Charge-150-kg/w-4"
+  },
+  {
+   "label": "Idealo — Kukirin G4 Max",
+   "url": "https://www.idealo.fr/prix/205135882/kugoo-kukirin-g4-max.html"
+  },
+  {
+   "label": "Ministère de la Transition écologique — réglementation des trottinettes",
+   "url": "https://www.ecologie.gouv.fr/politiques-publiques/trottinettes-electriques-edpm-reglementation-vigueur"
+  }
+ ]
+}

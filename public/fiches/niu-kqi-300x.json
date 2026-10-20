@@ -1,0 +1,137 @@
+{
+ "displayName": "NIU KQi 300X",
+ "metaTitle": "NIU KQi 300X : fiche technique et pièces",
+ "metaDescription": "NIU KQi 300X : 500 W, batterie 48 V 13 Ah (608 Wh), pneus tubeless 10,5 x 2,5 pouces, double frein à disque, 44,8 km mesurés. Entretien et pièces.",
+ "intro": [
+  "La NIU KQi 300X est la version haute de la série KQi 300, présentée en France au printemps 2024. Par rapport à la 300P, elle gagne un moteur plus puissant et une batterie plus grosse, pour 60 km d'autonomie annoncée. Cleanrider indique un prix de lancement de 649 €.",
+  "Moteur arrière de 500 W (1 000 W en crête), batterie 48 V de 13 Ah soit 608 Wh, pneus tubeless auto-réparants de 10,5 pouces, fourche avant hydraulique et deux freins à disque. Le Labo Fnac a mesuré 44,8 km d'autonomie. À 22,1 kg, c'est une trottinette pour rouler plus que pour porter. Voie publique : 25 km/h."
+ ],
+ "specs": [
+  [
+   "Moteur",
+   "500 W (1 000 W en crête), moteur arrière"
+  ],
+  [
+   "Vitesse",
+   "25 km/h"
+  ],
+  [
+   "Batterie",
+   "48 V, 13 Ah, 608 Wh"
+  ],
+  [
+   "Autonomie",
+   "jusqu'à 60 km annoncés, 44,8 km mesurés par le Labo Fnac"
+  ],
+  [
+   "Poids",
+   "22,1 kg"
+  ],
+  [
+   "Charge max",
+   "120 kg"
+  ],
+  [
+   "Roues",
+   "10,5 pouces, tubeless auto-réparant 10,5 x 2,5 (267 x 64 mm)"
+  ],
+  [
+   "Freins",
+   "Disque avant et arrière + freinage régénératif"
+  ],
+  [
+   "Suspension",
+   "Fourche avant hydraulique double tube, 45 mm de course"
+  ],
+  [
+   "Étanchéité",
+   "IP55"
+  ],
+  [
+   "Prise de charge",
+   "NIU"
+  ],
+  [
+   "Temps de charge",
+   "environ 6 h annoncées, 6 h 58 mesurées par le Labo Fnac"
+  ],
+  [
+   "Prix de lancement",
+   "649 € (selon Cleanrider)"
+  ]
+ ],
+ "pros": [
+  "Batterie de 608 Wh : 44,8 km mesurés par le Labo Fnac sur une charge complète.",
+  "Deux freins à disque, à l'avant et à l'arrière.",
+  "Grandes roues tubeless de 10,5 pouces et fourche hydraulique pour encaisser la chaussée abîmée."
+ ],
+ "cons": [
+  "22,1 kg : lourde à porter dans un escalier ou le métro.",
+  "Recharge longue : près de 7 heures mesurées par le Labo Fnac.",
+  "Pas de suspension arrière."
+ ],
+ "parts": [
+  {
+   "label": "Pneu",
+   "size": "10,5 x 2,5 pouces tubeless",
+   "count": 1,
+   "to": "/piece/pneu-10-5x2-5-niu-kqi300x",
+   "cta": "Pneus 10,5 pouces"
+  }
+ ],
+ "care": [
+  "Deux freins à disque mécaniques : surveille l'épaisseur des plaquettes et reprends la tension des câbles dès que le levier s'enfonce.",
+  "Pneus tubeless auto-réparants : contrôle la pression chaque mois, le gel colmate les petites perforations mais pas un pneu sous-gonflé qui s'use.",
+  "Fourche hydraulique : nettoie les fourreaux et vérifie qu'elle ne fuit pas, surtout après la pluie."
+ ],
+ "price": {
+  "text": "Prix de lancement en France : 649 € (avril 2024).",
+  "source": "Cleanrider"
+ },
+ "faq": [
+  {
+   "q": "Quelle taille de pneu pour la NIU KQi 300X ?",
+   "a": "Des pneus tubeless de 10,5 x 2,5 pouces, soit 267 x 64 mm."
+  },
+  {
+   "q": "La NIU KQi 300X a-t-elle des plaquettes de frein ?",
+   "a": "Oui. Elle a un frein à disque à l'avant et à l'arrière, donc deux paires de plaquettes à surveiller."
+  },
+  {
+   "q": "Quelle est l'autonomie réelle de la NIU KQi 300X ?",
+   "a": "Le Labo Fnac a mesuré 44,8 km sur une charge complète, pour 60 km annoncés par NIU."
+  },
+  {
+   "q": "Combien de temps pour recharger la NIU KQi 300X ?",
+   "a": "NIU annonce environ 6 heures. Le Labo Fnac a mesuré 6 h 58 pour une charge complète."
+  },
+  {
+   "q": "Quelle différence entre la NIU KQi 300X et la KQi 300P ?",
+   "a": "La 300X a un moteur plus puissant (500 W contre 450 W, 1 000 W en crête) et une batterie de 13 Ah au lieu de 10,4 Ah, pour 60 km annoncés au lieu de 48. Elle pèse 22,1 kg, plus d'un kilo de plus."
+  }
+ ],
+ "sources": [
+  {
+   "label": "NIU Europe — KQi 300X",
+   "url": "https://shopeu.niu.com/products/niu-kqi-300x-electric-scooter"
+  },
+  {
+   "label": "Cleanrider — NIU KQi 300X",
+   "url": "https://www.cleanrider.com/catalogue/trottinette-electrique/niu/niu-kqi-300x/"
+  },
+  {
+   "label": "Labo Fnac — mesures NIU KQi 300X",
+   "url": "https://lab.fnac.com/compare/electricScooter/6972782767942"
+  },
+  {
+   "label": "Frandroid — essai NIU KQi 300",
+   "url": "https://www.frandroid.com/marques/niu/1970748_on-a-essaye-la-trottinette-electrique-haut-de-gamme-de-niu-xiaomi-et-segway-peuvent-sinquieter"
+  }
+ ],
+ "video": {
+  "id": "kflAN8anpTI",
+  "title": "NIU KQI 300X : LA MEILLEURE TROTTINETTE POUR LA VILLE ?!",
+  "channel": "RAFTOR",
+  "uploadDate": "2025-06-03"
+ }
+}

@@ -1,0 +1,124 @@
+{
+ "displayName": "NIU KQi 200P",
+ "metaTitle": "NIU KQi 200P : fiche technique et pièces",
+ "metaDescription": "NIU KQi 200P : 350 W, batterie 48 V 365 Wh, pneus tubeless 10x2.30 (jante 6,5\"), frein tambour avant, suspension avant 32 mm. Entretien et pièces.",
+ "intro": [
+  "La NIU KQi 200P est annoncée en France en mai 2025. Elle prend la place de la KQi2 Pro dans la gamme, avec plus de puissance et, surtout, une suspension avant. C'est une trottinette urbaine de milieu de gamme, pensée pour les trajets quotidiens sur chaussée de ville.",
+  "Moteur arrière de 350 W (700 W en pointe), batterie 48 V de 7,8 Ah soit 365 Wh, autonomie annoncée jusqu'à 54 km. Elle roule sur des pneus tubeless de 10 pouces en 10x2.30 et freine avec un tambour avant et un frein régénératif arrière. Elle pèse 19,7 kg et reste limitée à 25 km/h sur la voie publique."
+ ],
+ "specs": [
+  [
+   "Moteur",
+   "350 W (700 W en pointe)"
+  ],
+  [
+   "Vitesse",
+   "25 km/h"
+  ],
+  [
+   "Batterie",
+   "48 V, 7,8 Ah, 365 Wh"
+  ],
+  [
+   "Autonomie annoncée",
+   "jusqu'à 54 km"
+  ],
+  [
+   "Poids",
+   "19,7 kg (environ 20 kg selon Cleanrider)"
+  ],
+  [
+   "Charge max",
+   "120 kg"
+  ],
+  [
+   "Roues",
+   "10 pouces, tubeless 10x2.30 (jante 6,5\")"
+  ],
+  [
+   "Freins",
+   "Tambour avant + freinage régénératif arrière"
+  ],
+  [
+   "Suspension",
+   "Avant, 32 mm de débattement"
+  ],
+  [
+   "Étanchéité",
+   "IPX5"
+  ],
+  [
+   "Temps de charge",
+   "6 à 7 h"
+  ],
+  [
+   "Sortie",
+   "mai 2025"
+  ],
+  [
+   "Prix de lancement",
+   "399,99 € selon Frandroid ; 499 € (449 € en offre de lancement) selon Cleanrider"
+  ]
+ ],
+ "pros": [
+  "Suspension avant de 32 mm et pneus tubeless de 10 pouces pour le confort en ville (Frandroid).",
+  "700 W en pointe, plus puissante que la KQi2 Pro qu'elle remplace (Cleanrider).",
+  "Application avec réglages et mises à jour à distance (Frandroid)."
+ ],
+ "cons": [
+  "Près de 20 kg : elle se porte, mais pas longtemps.",
+  "Recharge longue : 6 à 7 heures annoncées.",
+  "Autonomie pratique estimée à 30-35 km en mode Sport par Cleanrider, loin des 54 km annoncés.",
+  "Un seul frein mécanique, le tambour avant."
+ ],
+ "parts": [
+  {
+   "label": "Pneu",
+   "size": "10x2.30-6.5 tubeless (10 pouces)",
+   "count": 2,
+   "to": "/piece/pneu-tubeless-10x2-30-6-5-cst",
+   "cta": "Pneus 10x2.30"
+  }
+ ],
+ "care": [
+  "Le tambour avant est le seul frein mécanique : fais-le régler dès que la course du levier s'allonge.",
+  "Pneus tubeless : vérifie la pression chaque mois, un pneu sous-gonflé s'use vite et se déjante plus facilement.",
+  "Suspension avant : nettoie la fourche et contrôle qu'elle n'a pas de jeu, surtout après la pluie."
+ ],
+ "faq": [
+  {
+   "q": "Quelle taille de pneu pour la NIU KQi 200P ?",
+   "a": "Des pneus tubeless de 10 pouces en 10x2.30, sur une jante de 6,5 pouces."
+  },
+  {
+   "q": "La NIU KQi 200P a-t-elle des plaquettes de frein ?",
+   "a": "Non. Elle freine avec un tambour à l'avant et un frein régénératif à l'arrière."
+  },
+  {
+   "q": "Quelle est l'autonomie réelle de la NIU KQi 200P ?",
+   "a": "NIU annonce jusqu'à 54 km. Cleanrider estime 30 à 35 km en mode Sport à 25 km/h. Ton poids, le relief et le mode de conduite font varier ce chiffre."
+  },
+  {
+   "q": "Combien de temps pour recharger la NIU KQi 200P ?",
+   "a": "Compte 6 à 7 heures pour une charge complète de la batterie de 365 Wh."
+  },
+  {
+   "q": "Quelle différence entre la NIU KQi 200P et la KQi2 Pro ?",
+   "a": "La 200P ajoute une suspension avant de 32 mm et passe à 350 W (700 W en pointe), avec une batterie de 365 Wh."
+  }
+ ],
+ "sources": [
+  {
+   "label": "NIU Europe — KQi 200P",
+   "url": "https://shopeu.niu.com/products/niu-kqi-200p-electric-scooter-fr"
+  },
+  {
+   "label": "Cleanrider — NIU KQi 200",
+   "url": "https://www.cleanrider.com/actus/niu-kqi-200-cette-nouvelle-trottinette-electrique-conjugue-poignees-pliantes-et-double-suspension/"
+  },
+  {
+   "label": "Frandroid — lancement des NIU KQi 200",
+   "url": "https://www.frandroid.com/marques/niu/2615965_suspension-mise-a-jour-a-distance-et-700-w-de-puissance-niu-degaine-2-trottinettes-electriques-sur-un-segment-tres-prise"
+  }
+ ]
+}

@@ -1,0 +1,147 @@
+{
+ "displayName": "Kukirin G2 Max (2026)",
+ "metaTitle": "Kukirin G2 Max 2026 : fiche technique, avis et pièces",
+ "metaDescription": "Kukirin G2 Max 2026 : 1 000 W, batterie 48 V, pneus 10 pouces 80/65-6 (255x80), disques 140 mm. Fiche technique, limites, entretien et pièces compatibles.",
+ "intro": [
+  "La Kukirin G2 Max 2026 est la nouvelle version de la G2 Max, vendue par la marque chinoise Kukirin, l'ex-Kugoo Kirin. Kukirin Global l'annonçait en précommande avec une expédition prévue mi-juin 2026. Elle garde la formule de la G2 Max : moteur de 1 000 W, batterie 48 V et grosse autonomie pour une trottinette de 31 kg.",
+  "Pneus tout-terrain de 10 pouces en 255x80 (80/65-6), freins à disque avant et arrière complétés par un frein électrique : c'est une trottinette de trajet quotidien qui accepte les chemins. Elle annonce 45 à 55 km/h selon les fiches, mais sur la voie publique en France elle doit rester bridée à 25 km/h."
+ ],
+ "specs": [
+  [
+   "Moteur",
+   "1 000 W (1 200 W en pointe selon Boulanger)"
+  ],
+  [
+   "Vitesse",
+   "25 km/h sur la voie publique (45 km/h selon Kukirin Global, 55 km/h selon Boulanger et Fnac, terrain privé uniquement)"
+  ],
+  [
+   "Batterie",
+   "48 V 20,8 Ah selon Boulanger et Fnac, 48 V 20 Ah selon Kukirin Global"
+  ],
+  [
+   "Autonomie annoncée",
+   "70 km selon Boulanger et Fnac, 80 km selon Kukirin Global"
+  ],
+  [
+   "Poids",
+   "31 kg (31,7 kg selon une fiche Fnac)"
+  ],
+  [
+   "Charge max",
+   "120 kg"
+  ],
+  [
+   "Roues",
+   "10 pouces, 255x80 (80/65-6)"
+  ],
+  [
+   "Freins",
+   "Disques avant et arrière Ø 140 mm + frein électrique"
+  ],
+  [
+   "Étanchéité",
+   "IP54"
+  ],
+  [
+   "Temps de charge",
+   "10 à 11 h"
+  ]
+ ],
+ "pros": [
+  "Batterie d'environ 1 000 Wh pour une trottinette de 31 kg.",
+  "Pneus tout-terrain de 10 pouces en 255x80 : plus d'accroche sur les chemins qu'un pneu de ville.",
+  "Deux freins à disque, plus un frein électrique."
+ ],
+ "cons": [
+  "Les fiches ne s'accordent pas sur la batterie (20 ou 20,8 Ah), l'autonomie (70 ou 80 km) et la vitesse : vérifie l'étiquette de ta trottinette.",
+  "Pas de test de presse française publié : l'autonomie reste une donnée de revendeur.",
+  "Recharge longue : 10 à 11 heures avec le chargeur d'origine.",
+  "Sa vitesse de pointe n'est utilisable que sur terrain privé : en France, la voie publique est limitée à 25 km/h."
+ ],
+ "parts": [
+  {
+   "label": "Pneu",
+   "size": "80/65-6 (10x3, 255x80)",
+   "count": 11,
+   "to": "/piece/pneu-tubeless-80-65-6-10x3-cityroad-ewheel",
+   "cta": "Pneus 80/65-6"
+  },
+  {
+   "label": "Chambre à air",
+   "size": "80/65-6 (10x3), valve droite ou coudée",
+   "count": 3,
+   "to": "/piece/chambre-a-air-80-65-6-10x3-valve-coudee-90-ewheel",
+   "cta": "Chambres à air"
+  },
+  {
+   "label": "Plaquettes",
+   "size": "étrier type Togo / G2",
+   "count": 1,
+   "to": "/piece/plaquettes-de-frein-dualtron-togo-ltd-kukirin-g2pro-g2-max-hitway-h5-urbanglide-allroad",
+   "cta": "Plaquettes G2 Max"
+  },
+  {
+   "label": "Disque de frein",
+   "size": "140 mm, 6 trous, entraxe 44 mm",
+   "count": 5,
+   "to": "/piece/disque-de-frein-140mm",
+   "cta": "Disques 140 mm"
+  }
+ ],
+ "care": [
+  "Pneus 80/65-6 : contrôle la pression avant chaque sortie, un pneu sous-gonflé s'use vite sur la route et pince la chambre sur les chemins.",
+  "Freins à disque : surveille l'épaisseur des plaquettes et l'alignement de l'étrier, un disque de 140 mm qui frotte chauffe et se voile.",
+  "Batterie de 48 V : recharge-la après chaque sortie plutôt que de la laisser à plat, et ne la stocke pas en plein soleil."
+ ],
+ "faq": [
+  {
+   "q": "Quelle taille de pneu pour la Kukirin G2 Max 2026 ?",
+   "a": "Des pneus de 10 pouces en 255x80, aussi notés 80/65-6 ou 10x3, sur une jante de 6 pouces."
+  },
+  {
+   "q": "Quel disque de frein pour la Kukirin G2 Max 2026 ?",
+   "a": "Un disque de 140 mm à 6 trous, entraxe 44 mm."
+  },
+  {
+   "q": "Quelles plaquettes pour la Kukirin G2 Max 2026 ?",
+   "a": "Des plaquettes pour étrier type Togo / G2, la même forme que sur la G2 Pro et la Dualtron Togo."
+  },
+  {
+   "q": "Quelle batterie a la Kukirin G2 Max 2026 ?",
+   "a": "Une batterie 48 V : 20,8 Ah selon Boulanger et Fnac, 20 Ah selon Kukirin Global. Lis l'étiquette de ta batterie avant d'acheter un chargeur ou une batterie de rechange."
+  },
+  {
+   "q": "La Kukirin G2 Max 2026 est-elle légale en France ?",
+   "a": "Oui sur la voie publique à condition d'être bridée à 25 km/h, comme toute trottinette électrique. Débridée, elle n'est utilisable que sur terrain privé."
+  }
+ ],
+ "sources": [
+  {
+   "label": "Kukirin Global — Kukirin G2 Max",
+   "url": "https://kukiringlobal.com/products/kukirin-g2-max"
+  },
+  {
+   "label": "Boulanger — Kukirin G2 Max",
+   "url": "https://www.boulanger.com/ref/9000952317"
+  },
+  {
+   "label": "Fnac — Kukirin G2 Max nouvelle version 2026",
+   "url": "https://www.fnac.com/mp53594814/KuKirin-G2-Max-Trottinette-electrique-Nouvelle-version-2026-moteur-1000-W-batterie-48-V-20-8-Ah-pneus-10-pouces-freins-a-disque-avant-et-arriere-autonomie-jusqu-a-70-km/w-4"
+  },
+  {
+   "label": "Fnac — Kukirin G2 Max 2026 55 km/h",
+   "url": "https://www.fnac.com/mp55501089/Trottinette-electrique-Kukirin-G2-MAX-2026-moteur1000W-batterie-48V-20-8Ah-vitesse-maximale-55km-h-autonomie-70km-pneus-10-pouces/w-4"
+  },
+  {
+   "label": "Ministère de la Transition écologique — réglementation des trottinettes",
+   "url": "https://www.ecologie.gouv.fr/politiques-publiques/trottinettes-electriques-edpm-reglementation-vigueur"
+  }
+ ],
+ "video": {
+  "id": "jKEMBAMlVuA",
+  "title": "KUKIRIN G2 MAX 2026, GROSSE AUTONOMIE POUR UNE PETITE CITADINE (Test des abonnés + siège)",
+  "channel": "EllefanRider",
+  "uploadDate": "2026-09-15"
+ }
+}

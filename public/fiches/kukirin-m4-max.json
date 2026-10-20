@@ -1,0 +1,141 @@
+{
+ "displayName": "Kukirin M4 Max",
+ "metaTitle": "Kukirin M4 Max : fiche technique et pièces",
+ "metaDescription": "Kukirin M4 Max : 800 W, batterie 48 V 18,2 Ah, pneus tubeless 10 pouces 10x2.70-6.5, prise CQ, IP54. Fiche technique, limites, entretien et pièces.",
+ "intro": [
+  "La Kukirin M4 Max est une trottinette urbaine de la marque chinoise Kukirin, l'ex-Kugoo Kirin, présentée comme un nouveau modèle 2025. Moteur de 800 W, batterie 48 V 18,2 Ah, soit 873,6 Wh, et jusqu'à 64 km d'autonomie annoncée : elle vise les trajets domicile-travail un peu longs.",
+  "Pneus tubeless de 10 pouces, suspension à quatre bras, freins à disque avant et arrière complétés par un frein électronique : c'est une trottinette de ville confortable, pas une machine de transport en commun. Elle annonce 45 km/h, mais sur la voie publique en France elle doit rester bridée à 25 km/h."
+ ],
+ "specs": [
+  [
+   "Moteur",
+   "800 W"
+  ],
+  [
+   "Vitesse",
+   "25 km/h sur la voie publique (45 km/h annoncés, terrain privé uniquement)"
+  ],
+  [
+   "Batterie",
+   "48 V 18,2 Ah (873,6 Wh)"
+  ],
+  [
+   "Autonomie annoncée",
+   "jusqu'à 64 km (45 km selon Kukirin EU)"
+  ],
+  [
+   "Poids",
+   "24,5 kg selon Kukirin Scooter, 28,3 kg selon Kukirin EU"
+  ],
+  [
+   "Charge max",
+   "120 kg"
+  ],
+  [
+   "Roues",
+   "10 pouces, tubeless 10x2.70-6.5"
+  ],
+  [
+   "Freins",
+   "Disques avant et arrière + frein électronique"
+  ],
+  [
+   "Suspension",
+   "Quatre bras (selon Kukirin Scooter)"
+  ],
+  [
+   "Étanchéité",
+   "IP54"
+  ],
+  [
+   "Prise de charge",
+   "CQ"
+  ],
+  [
+   "Chargeur",
+   "48 V (54,6 V 2 A en sortie)"
+  ],
+  [
+   "Temps de charge",
+   "9 à 10 h"
+  ]
+ ],
+ "pros": [
+  "Batterie de 873,6 Wh pour une trottinette urbaine.",
+  "Suspension à quatre bras et pneus tubeless de 10 pouces pour le confort en ville.",
+  "Deux freins à disque, plus un frein électronique."
+ ],
+ "cons": [
+  "Pas de test de presse française publié, et des fiches qui ne donnent pas la même autonomie (45 ou 64 km) ni le même poids.",
+  "24,5 à 28,3 kg selon les fiches : pas faite pour le métro ou les escaliers.",
+  "Recharge longue : 9 à 10 heures avec le chargeur d'origine.",
+  "Sa vitesse de pointe n'est utilisable que sur terrain privé : en France, la voie publique est limitée à 25 km/h."
+ ],
+ "parts": [
+  {
+   "label": "Pneu",
+   "size": "10x2.70-6.5 tubeless (10 pouces)",
+   "count": 6,
+   "to": "/piece/pneu-tubeless-10x2-70-6-5-cityroad-ewheel",
+   "cta": "Pneus 10x2.70-6.5"
+  },
+  {
+   "label": "Chargeur",
+   "size": "48 V → 54,6 V, prise CQ",
+   "count": 1,
+   "to": "/piece/pack-chargeur-48v-adaptateur-cq",
+   "cta": "Chargeurs 48 V"
+  }
+ ],
+ "care": [
+  "Pneus tubeless : contrôle la pression chaque semaine, un pneu sous-gonflé s'use vite et crève plus facilement.",
+  "Freins à disque : retends les câbles dès que le levier va trop loin et surveille l'épaisseur des plaquettes.",
+  "Suspension à quatre bras : vérifie le serrage des axes et le jeu des bras, surtout sur les pavés."
+ ],
+ "faq": [
+  {
+   "q": "Quelle taille de pneu pour la Kukirin M4 Max ?",
+   "a": "Des pneus tubeless de 10 pouces en 10x2.70-6.5, sur une jante de 6,5 pouces. Vérifie la cote sur le flanc de ton pneu : les fiches des revendeurs ne donnent que le diamètre."
+  },
+  {
+   "q": "Quel chargeur pour la Kukirin M4 Max ?",
+   "a": "Un chargeur 48 V (54,6 V 2 A en sortie) avec prise CQ. Compte 9 à 10 heures pour une charge complète."
+  },
+  {
+   "q": "Quelle est l'autonomie de la Kukirin M4 Max ?",
+   "a": "La plupart des fiches annoncent jusqu'à 64 km, Kukirin EU en annonce 45. Aucune mesure de presse n'a été publiée : le poids, le relief et le mode de conduite feront varier ce chiffre."
+  },
+  {
+   "q": "La Kukirin M4 Max est-elle légale en France ?",
+   "a": "Oui sur la voie publique à condition d'être bridée à 25 km/h, comme toute trottinette électrique. Débridée, elle n'est utilisable que sur terrain privé."
+  }
+ ],
+ "sources": [
+  {
+   "label": "Kukirin Scooter — Kukirin M4 Max",
+   "url": "https://www.kukirin-scooter.com/products/kukirin-m4-max-electric-scooter"
+  },
+  {
+   "label": "Kukirin EU — Kukirin M4 Max",
+   "url": "https://www.kukirineu.com/products/kukirin-m4max-electric-scooter"
+  },
+  {
+   "label": "Kukirin Official — Kukirin M4 Max",
+   "url": "https://kukirinofficial.com/products/kukirin-m4-max-electric-scooter"
+  },
+  {
+   "label": "Kukirin Officiel — nouveau modèle 2025 Kukirin M4 Max",
+   "url": "https://www.kukirin-officiel.com/en/products/new-model-2025-kukirin-m4-max"
+  },
+  {
+   "label": "Ministère de la Transition écologique — réglementation des trottinettes",
+   "url": "https://www.ecologie.gouv.fr/politiques-publiques/trottinettes-electriques-edpm-reglementation-vigueur"
+  }
+ ],
+ "video": {
+  "id": "6AAAK2QWHeA",
+  "title": "KUKIRIN M4 MAX test review trottinette électrique puissante pas cher à moins de 500 euros",
+  "channel": "Samo on board",
+  "uploadDate": "2025-11-19"
+ }
+}

@@ -1,0 +1,135 @@
+{
+ "displayName": "Kukirin S1 Pro",
+ "metaTitle": "Kukirin S1 Pro : fiche technique, avis et pièces",
+ "metaDescription": "Kukirin S1 Pro : 350 W, batterie 36 V, pneus pleins nid d'abeille 8 pouces 200x50, prise DC 5,5 x 2,5. Avis, autonomie mesurée, entretien et pièces.",
+ "intro": [
+  "La Kukirin S1 Pro, vendue d'abord sous le nom Kugoo Kirin S1 Pro, est la petite trottinette de la marque chinoise Kukirin. Ta Trottinette Électrique l'a testée. Moteur de 350 W, batterie 36 V, 13,65 kg selon Kukirin : c'est une trottinette légère pour les petits trajets en ville.",
+  "Ses roues de 8 pouces sont montées en pneus pleins nid d'abeille, donc sans crevaison possible. Elle annonce 30 km d'autonomie et 30 km/h en pointe, mais sur la voie publique en France elle doit rester bridée à 25 km/h."
+ ],
+ "specs": [
+  [
+   "Moteur",
+   "350 W"
+  ],
+  [
+   "Vitesse",
+   "25 km/h sur la voie publique (30 km/h annoncés, terrain privé uniquement)"
+  ],
+  [
+   "Batterie",
+   "36 V 7,5 Ah (selon Kukirin)"
+  ],
+  [
+   "Autonomie",
+   "30 km annoncés, 27 km mesurés par Ta Trottinette Électrique"
+  ],
+  [
+   "Poids",
+   "13,65 kg (selon Kukirin)"
+  ],
+  [
+   "Charge max",
+   "120 kg"
+  ],
+  [
+   "Roues",
+   "8 pouces, pneus pleins nid d'abeille 200x50 (8x2)"
+  ],
+  [
+   "Freins",
+   "Frein à pied sur le garde-boue arrière + frein électrique"
+  ],
+  [
+   "Étanchéité",
+   "IP54 (IP45 selon ElectroWay)"
+  ],
+  [
+   "Prise de charge",
+   "DC 5,5 x 2,5"
+  ],
+  [
+   "Chargeur",
+   "36 V"
+  ],
+  [
+   "Temps de charge",
+   "4 à 5 h (selon Kukirin)"
+  ]
+ ],
+ "pros": [
+  "Pneus pleins nid d'abeille increvables (Ta Trottinette Électrique).",
+  "Autonomie mesurée proche de l'annonce : 27 km pour 30 km annoncés (Ta Trottinette Électrique).",
+  "13,65 kg selon Kukirin : elle se porte facilement."
+ ],
+ "cons": [
+  "Pneus pleins : le confort est limité sur les pavés et la chaussée abîmée (Ta Trottinette Électrique).",
+  "Pas de frein à disque : le freinage repose sur le garde-boue arrière et le frein électrique.",
+  "Les fiches ne s'accordent pas sur la présence de suspensions.",
+  "Sa vitesse de pointe n'est utilisable que sur terrain privé : en France, la voie publique est limitée à 25 km/h."
+ ],
+ "parts": [
+  {
+   "label": "Pneu plein",
+   "size": "200x50 (8x2), nid d'abeille",
+   "count": 3,
+   "to": "/piece/pneu-plein-200x50-aoxin",
+   "cta": "Pneus pleins 200x50"
+  },
+  {
+   "label": "Chargeur",
+   "size": "36 V, prise DC 5,5 x 2,5",
+   "count": 1,
+   "to": "/piece/pack-chargeur-36v-adaptateur-dc5-5x2-5",
+   "cta": "Chargeurs 36 V"
+  }
+ ],
+ "care": [
+  "Pneus pleins : pas de pression à surveiller, mais contrôle l'usure et les fissures de la gomme, un pneu plein usé glisse sur sol mouillé.",
+  "Frein au pied : vérifie la fixation du garde-boue arrière, c'est lui qui freine la roue.",
+  "Sans chambre à air pour amortir, les vis de la potence et du pliage se desserrent : resserre-les régulièrement."
+ ],
+ "faq": [
+  {
+   "q": "Quelle taille de pneu pour la Kukirin S1 Pro ?",
+   "a": "Des pneus pleins nid d'abeille de 8 pouces, en 200x50 (8x2)."
+  },
+  {
+   "q": "La Kukirin S1 Pro a-t-elle des plaquettes de frein ?",
+   "a": "Non. Elle freine avec un frein à pied sur le garde-boue arrière et un frein électrique."
+  },
+  {
+   "q": "Quel chargeur pour la Kukirin S1 Pro ?",
+   "a": "Un chargeur 36 V avec prise DC 5,5 x 2,5. Kukirin annonce 4 à 5 heures pour une charge complète."
+  },
+  {
+   "q": "Quelle est l'autonomie réelle de la Kukirin S1 Pro ?",
+   "a": "Ta Trottinette Électrique a mesuré 27 km en conditions réelles, et jusqu'à 28 km avec un pilote de 65 à 75 kg, pour 30 km annoncés."
+  },
+  {
+   "q": "La Kukirin S1 Pro est-elle légale en France ?",
+   "a": "Oui sur la voie publique à condition d'être bridée à 25 km/h, comme toute trottinette électrique. Débridée, elle n'est utilisable que sur terrain privé."
+  }
+ ],
+ "sources": [
+  {
+   "label": "Ta Trottinette Électrique — test Kugoo S1 Pro",
+   "url": "https://ta-trottinette-electrique.com/test/kugoo-s1-pro"
+  },
+  {
+   "label": "Ta Trottinette Électrique — test d'autonomie Kugoo S1 Pro",
+   "url": "https://ta-trottinette-electrique.com/test/autonomie-kugoo-s1-pro"
+  },
+  {
+   "label": "Kukirin — Kukirin S1 Pro",
+   "url": "https://fr.kukirin-escooter.com/products/kukirin-s1-pro-electric-scooter"
+  },
+  {
+   "label": "ElectroWay — Kukirin S1 Pro",
+   "url": "https://electroway.fr/product/trottinette-electrique-kukirin-s1-pro/"
+  },
+  {
+   "label": "Ministère de la Transition écologique — réglementation des trottinettes",
+   "url": "https://www.ecologie.gouv.fr/politiques-publiques/trottinettes-electriques-edpm-reglementation-vigueur"
+  }
+ ]
+}
