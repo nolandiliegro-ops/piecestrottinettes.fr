@@ -10,6 +10,8 @@ import { useState, type ReactNode } from "react";
 import { Link } from "react-router-dom";
 import { ChevronDown, CheckCircle2, HelpCircle, Search, Wrench, Clock, Package, Sparkles, Gauge, Lightbulb, FileText } from "lucide-react";
 import { sanitizeHtml } from "@/lib/sanitizeHtml";
+import CompatibilityMatrix from "@/components/pdp/CompatibilityMatrix";
+import { SOLID_CATEGORY } from "@/lib/compatibilityStatus";
 import { formatPrice } from "@/lib/formatPrice";
 import type { PartDetail, CompatibleScooter } from "@/hooks/usePartDetail";
 import {
@@ -327,7 +329,15 @@ const presentationText = (part: PartDetail, f: Fiche): string[] => {
   return out;
 };
 
-const Presentation = ({ part, f }: { part: PartDetail; f: Fiche }) => (
+/** Description vendeuse rédigée (Airtable « Description SEO », 20/10) : elle commence par une accroche <p><strong>. */
+const isVendeuse = (html: string | null) => !!html && /^\s*<p>\s*<strong>/i.test(html);
+
+const Presentation = ({ part, f }: { part: PartDetail; f: Fiche }) => isVendeuse(part.description) ? (
+  <div className="max-w-3xl">
+    <div className={`quill-content ${txt} [&_ul]:my-3 [&_ul]:space-y-2 [&_li]:pl-1 [&_p]:mb-3 [&_strong]:text-[#1A1A1A]`} dangerouslySetInnerHTML={{ __html: sanitizeHtml(part.description as string) }} />
+    {f.n > 0 && <p className="mt-2 text-sm font-extrabold uppercase tracking-wider" style={{ color: GREEN }}>{presentationText(part, f)[0]}</p>}
+  </div>
+) : (
   <div className="max-w-3xl">
     {presentationText(part, f).map((t) => <p key={t} className={`${txt} mb-2`}>{t}</p>)}
     <p className={txt}>Un doute ? <Link to={askUrl(part)} className="font-bold underline inline-flex items-center min-h-[44px]" style={{ color: CARBON }}>Dis-nous ta trottinette, on vérifie pour toi</Link>.</p>
@@ -467,7 +477,7 @@ const Parcours = ({ part, f }: P) => (
 );
 
 // ─── 4 · TOUT REPLIÉ : la lecture littérale de « compacter » ───────────────────
-const Replie = ({ part, f, scootersLoading }: P) => {
+const Replie = ({ part, f, scooters, scootersLoading }: P) => {
   const goCompat = () => document.getElementById("pf-compat-bas")?.scrollIntoView({ behavior: "smooth", block: "start" });
   return (
     <Shell f={f}>
@@ -484,7 +494,7 @@ const Replie = ({ part, f, scootersLoading }: P) => {
           )}
         </div>
         <div className="mt-5 space-y-2">
-          <Fold icon={FileText} title="Présentation"><Presentation part={part} f={f} /></Fold>
+          <Fold icon={FileText} title="Présentation" open={isVendeuse(part.description)}><Presentation part={part} f={f} /></Fold>
           {f.points.length > 0 && <Fold icon={Sparkles} title="Ce qui la distingue"><Traits f={f} /></Fold>}
           {f.guide && <Fold icon={Wrench} title="Montage" teaser={part.youtube_video_id ? "vidéo" : undefined}><Install part={part} f={f} /></Fold>}
           <Fold icon={Gauge} title="Caractéristiques" teaser={f.rows[0]?.[1].split(" · ")[0]}><TechFull f={f} noDesc /></Fold>
@@ -498,7 +508,9 @@ const Replie = ({ part, f, scootersLoading }: P) => {
             <h3 className="text-lg lg:text-xl uppercase leading-tight" style={{ ...big, color: CARBON }}>Ça va sur ta trott ?</h3>
             {f.n > 0 && <p className="mt-1 text-sm font-extrabold uppercase tracking-wider" style={{ color: GREEN }}>{f.n} modèles · {f.groups.length} marques</p>}
           </div>
-          <CompatBlock part={part} f={f} closed />
+          {part.category?.slug === SOLID_CATEGORY
+            ? <CompatibilityMatrix scooters={scooters} isLoading={scootersLoading} partSlug={part.slug} partName={part.name} partId={part.id} categorySlug={SOLID_CATEGORY} bare />
+            : <CompatBlock part={part} f={f} closed />}
         </div>
       </div>
       <SiblingRail part={part} f={f} />

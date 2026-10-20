@@ -364,7 +364,9 @@ const Bottom = (p: Props & { numbered?: boolean; skipCompat?: boolean }) => {
   // Pneus pleins : on garde la matrice d'origine (état « ne passe pas en plein » lu sur la trotte du garage).
   const solid = p.part.category?.slug === "pneus-pleins";
   // 20/10 : fiche « Tout savoir » (compat entière dans le DOM + guide de famille), UNIQUEMENT avec ?seo=1 tant que Nolan n'a pas validé.
-  if (sp.get("seo") === "1") {
+  // 20/10 (go Nolan) : le bloc « Tout savoir » replié est le rendu PAR DÉFAUT de toutes les fiches pièces.
+  // ?seo=0 : ancienne présentation (Présentation + compat compacte), gardée pour comparer.
+  if (sp.get("seo") !== "0") {
     // 20/10 : Nolan a choisi la 4 (replié, compat en bas) = rendu par défaut sous ?seo=1.
     // &fiche=1..5 : les autres propositions ; &fiche=0 : l'ancien bloc à onglets.
     const fn = sp.has("fiche") ? Number(sp.get("fiche")) : 4;

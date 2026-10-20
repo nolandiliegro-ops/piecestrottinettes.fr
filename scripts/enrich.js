@@ -51,6 +51,10 @@ const ADMIN_BULK_SECRET = ENV.ADMIN_BULK_SECRET;
 const EXTRACT_URL =
   ENV.EXTRACT_PRODUCT_URL ||
   'https://kqsxscjtlipregkrmucg.supabase.co/functions/v1/extract-product';
+// 20/10/2026 (Nolan) : descriptions IA (Gemini via generate-part-seo) RETIRÉES. Les descriptions vendeuses sont
+// rédigées par Claude depuis les fiches fournisseur (claude/descriptions-vendeuses-20-10.md) et posées dans Airtable.
+// L'extraction (specs, EAN, compat) continue ; seul le SEO généré est coupé.
+const AI_SEO_ENABLED = false;
 const GENERATE_SEO_URL =
   ENV.GENERATE_PART_SEO_URL ||
   'https://kqsxscjtlipregkrmucg.supabase.co/functions/v1/generate-part-seo';
@@ -304,7 +308,7 @@ async function main() {
         seoPreserved = true;
         seoKept++;
         console.log('   🔒 SEO existant préservé — skip');
-      } else if (json.status === 'ok') {
+      } else if (json.status === 'ok' && AI_SEO_ENABLED) {
         for (let attempt = 1; attempt <= SEO_MAX_ATTEMPTS; attempt++) {
           try {
             seo = await callGenerateSeo({

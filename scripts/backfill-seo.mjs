@@ -18,6 +18,12 @@
  * Usage : node scripts/backfill-seo.mjs
  */
 
+// 20/10/2026 (Nolan) : génération IA des descriptions RETIRÉE — script désactivé.
+// Descriptions vendeuses : claude/descriptions-vendeuses-20-10.md.
+console.error('backfill-seo désactivé (20/10/2026) : descriptions rédigées par Claude, voir claude/descriptions-vendeuses-20-10.md');
+process.exit(1);
+
+
 import { readFileSync } from 'node:fs';
 import { resolve, dirname } from 'node:path';
 import { fileURLToPath } from 'node:url';

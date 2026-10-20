@@ -21,7 +21,6 @@ import Papa from 'papaparse';
 import { cn } from '@/lib/utils';
 import ScooterCompatibilitySelect from './ScooterCompatibilitySelect';
 import RichTextEditor from './RichTextEditor';
-import AIGenerateButton from './AIGenerateButton';
 import PartSuppliersManager from './PartSuppliersManager';
 import MultiPhotoGallery from './MultiPhotoGallery';
 import { Collapsible, CollapsibleContent, CollapsibleTrigger } from '@/components/ui/collapsible';
@@ -849,15 +848,6 @@ const PartsManager = () => {
         <div className="space-y-2">
           <div className="flex items-center justify-between">
             <Label>Description</Label>
-            <AIGenerateButton
-              field="description"
-              context={{
-                name: values.name,
-                category: categories.find(c => c.id === values.category_id)?.name,
-                compatible_models: values.compatibleScooterIds.map(id => scooterModels.find(m => m.id === id)?.name).filter(Boolean) as string[],
-              }}
-              onGenerated={(text) => setValues({ ...values, description: text })}
-            />
           </div>
           <RichTextEditor
             value={values.description}
@@ -1022,15 +1012,6 @@ const PartsManager = () => {
         <div className="space-y-2">
           <div className="flex items-center justify-between">
             <Label>Meta Title</Label>
-            <AIGenerateButton
-              field="meta_title"
-              context={{
-                name: values.name,
-                category: categories.find(c => c.id === values.category_id)?.name,
-                compatible_models: values.compatibleScooterIds.map(id => scooterModels.find(m => m.id === id)?.name).filter(Boolean) as string[],
-              }}
-              onGenerated={(text) => setValues({ ...values, meta_title: text })}
-            />
           </div>
           <Input value={values.meta_title} onChange={(e) => setValues({ ...values, meta_title: e.target.value })} placeholder="Titre SEO" maxLength={60} />
           <p className="text-xs text-muted-foreground">{values.meta_title.length}/60 caractères</p>
@@ -1038,15 +1019,6 @@ const PartsManager = () => {
         <div className="space-y-2">
           <div className="flex items-center justify-between">
             <Label>Meta Description</Label>
-            <AIGenerateButton
-              field="meta_description"
-              context={{
-                name: values.name,
-                category: categories.find(c => c.id === values.category_id)?.name,
-                compatible_models: values.compatibleScooterIds.map(id => scooterModels.find(m => m.id === id)?.name).filter(Boolean) as string[],
-              }}
-              onGenerated={(text) => setValues({ ...values, meta_description: text })}
-            />
           </div>
           <Textarea value={values.meta_description} onChange={(e) => setValues({ ...values, meta_description: e.target.value })} placeholder="Description pour les moteurs de recherche" rows={3} maxLength={160} />
           <p className="text-xs text-muted-foreground">{values.meta_description.length}/160 caractères</p>
