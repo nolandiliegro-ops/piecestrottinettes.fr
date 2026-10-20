@@ -254,6 +254,24 @@ const KeysEditDialog = ({ scooter, allScooters, open, onOpenChange }: {
   );
 };
 
+/* ── Clés manquantes (20/10, Nolan : « voir par marque ce qui manque, remplir au magasin ») ──
+   Clés comptées : tension, jante, section, prise, frein ; disque et étrier seulement si frein à
+   disque ou frein inconnu (un tambour n'a ni disque ni étrier). Colonnes de MATCHING uniquement. */
+const KEY_LABEL: Record<string, string> = { v: 'tension', rim: 'jante', sec: 'section', cc: 'prise', brake: 'frein', dd: 'disque', cal: 'étrier' };
+const missingKeys = (s: StudioScooter): string[] => {
+  const disc = !s.brake_type || s.brake_type.includes('disc');
+  const m: string[] = [];
+  if (s.voltage == null) m.push('v');
+  if (!s.rim_diameter_code) m.push('rim');
+  if (!s.tire_section_code) m.push('sec');
+  if (!s.charge_connectors?.length) m.push('cc');
+  if (!s.brake_type) m.push('brake');
+  if (disc && !s.disc_diameter_code) m.push('dd');
+  if (disc && !s.caliper_family) m.push('cal');
+  return m;
+};
+const keyCount = (s: StudioScooter) => (!s.brake_type || s.brake_type.includes('disc') ? 7 : 5);
+
 /* ── Données ── */
 
 const useStudioScooters = () => useQuery({
@@ -377,7 +395,9 @@ const CompatStudio = ({ onClassic }: { onClassic: () => void }) => {
   const [search, setSearch] = useState('');
   const [confFilter, setConfFilter] = useState<'all' | 'to_validate' | Confidence>('to_validate');
   const [busyPart, setBusyPart] = useState<string | null>(null);
-  const [railSort, setRailSort] = useState<'az' | 'to_validate'>('az');
+  const [railSort, setRailSort] = useState<'az' | 'to_validate' | 'missing'>('az');
+  const [brandFilter, setBrandFilter] = useState<string | null>(null);
+  const [brandSort, setBrandSort] = useState<'missing' | 'az'>('missing');
   const [catFilter, setCatFilter] = useState<string>('all');
   const [addOpen, setAddOpen] = useState(false);
   const [addSearch, setAddSearch] = useState('');
@@ -389,14 +409,42 @@ const CompatStudio = ({ onClassic }: { onClassic: () => void }) => {
 
   const filteredScooters = useMemo(() => {
     const q = search.toLowerCase();
-    const list = scooters.filter(s => s.name.toLowerCase().includes(q) || (s.brand?.name ?? '').toLowerCase().includes(q));
+    const list = scooters.filter(s => (!brandFilter || s.brand?.name === brandFilter) && (s.name.toLowerCase().includes(q) || (s.brand?.name ?? '').toLowerCase().includes(q)));
+    if (railSort === 'missing') {
+      const tot = (id: string) => counts_by_scooter?.get(id)?.total ?? 0;
+      return [...list].sort((a, b) => missingKeys(b).length - missingKeys(a).length || tot(a.id) - tot(b.id) || a.name.localeCompare(b.name, 'fr'));
+    }
     if (railSort === 'to_validate') {
       const tv = (id: string) => counts_by_scooter?.get(id)?.to_validate ?? 0;
       const tot = (id: string) => counts_by_scooter?.get(id)?.total ?? 0;
       return [...list].sort((a, b) => tv(b.id) - tv(a.id) || tot(a.id) - tot(b.id) || a.name.localeCompare(b.name, 'fr'));
     }
     return list;
-  }, [scooters, search, railSort, counts_by_scooter]);
+  }, [scooters, search, railSort, counts_by_scooter, brandFilter]);
+
+  /* Vue par marque : trottinettes PUBLIÉES uniquement (le site), taux de remplissage des clés. */
+  const brandStats = useMemo(() => {
+    const by = new Map<string, StudioScooter[]>();
+    scooters.filter(s => s.published).forEach(s => { const b = s.brand?.name ?? '—'; by.set(b, [...(by.get(b) ?? []), s]); });
+    const list = [...by.entries()].map(([brand, ss]) => {
+      const tot = ss.reduce((n, s) => n + keyCount(s), 0);
+      const miss = ss.reduce((n, s) => n + missingKeys(s).length, 0);
+      return {
+        brand, n: ss.length,
+        todo: ss.filter(s => missingKeys(s).length > 0).length,
+        zero: ss.filter(s => (counts_by_scooter?.get(s.id)?.total ?? 0) === 0).length,
+        pct: tot ? Math.round(100 * (1 - miss / tot)) : 100,
+      };
+    });
+    return list.sort(brandSort === 'az' ? (a, b) => a.brand.localeCompare(b.brand, 'fr') : (a, b) => b.todo - a.todo || a.pct - b.pct || a.brand.localeCompare(b.brand, 'fr'));
+  }, [scooters, counts_by_scooter, brandSort]);
+  const parcStats = useMemo(() => {
+    const pub = scooters.filter(s => s.published);
+    const by: Record<string, number> = {};
+    pub.forEach(s => missingKeys(s).forEach(k => { by[k] = (by[k] ?? 0) + 1; }));
+    return { n: pub.length, complete: pub.filter(s => missingKeys(s).length === 0).length, by };
+  }, [scooters]);
+  const openBrand = (b: string) => { setBrandFilter(b); setRailSort('missing'); setSelectedId(null); setSearch(''); };
 
   const idx = scooter ? filteredScooters.findIndex(s => s.id === scooter.id) : -1;
   const goto = (delta: number) => {
@@ -523,6 +571,14 @@ const CompatStudio = ({ onClassic }: { onClassic: () => void }) => {
     <div className="flex flex-col lg:flex-row gap-3">
       {/* Rail trottinettes */}
       <aside className="lg:w-72 shrink-0 space-y-2">
+        {scooter && (
+          <button
+            onClick={() => setSelectedId(null)}
+            className="w-full min-h-[40px] flex items-center gap-2 px-3 rounded-xl border border-[hsl(var(--admin-border))] bg-white text-sm font-semibold text-[hsl(var(--admin-text))]"
+          >
+            <LayoutList className="w-4 h-4" /> Vue par marque
+          </button>
+        )}
         <div className="relative">
           <Search className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-[hsl(var(--admin-text-muted))]" />
           <Input
@@ -536,6 +592,7 @@ const CompatStudio = ({ onClassic }: { onClassic: () => void }) => {
           {([
             { id: 'az', label: 'A → Z' },
             { id: 'to_validate', label: 'À trier d\'abord' },
+            { id: 'missing', label: 'Clés manquantes' },
           ] as const).map(o => (
             <button
               key={o.id}
@@ -552,6 +609,16 @@ const CompatStudio = ({ onClassic }: { onClassic: () => void }) => {
             </button>
           ))}
         </div>
+        {brandFilter && (
+          <button
+            onClick={() => setBrandFilter(null)}
+            className="w-full min-h-[40px] flex items-center justify-between gap-2 px-3 rounded-xl bg-[hsl(var(--admin-text))] text-white text-sm font-semibold"
+            aria-label={`Retirer le filtre marque ${brandFilter}`}
+          >
+            <span className="truncate">Marque : {brandFilter}</span>
+            <X className="w-4 h-4 shrink-0" />
+          </button>
+        )}
         <div className="admin-glass-card rounded-2xl overflow-hidden max-h-[280px] lg:max-h-[calc(100vh-240px)] overflow-y-auto">
           {loadingScooters ? (
             <div className="p-4"><Loader2 className="w-5 h-5 animate-spin mx-auto text-[hsl(var(--admin-text-muted))]" /></div>
@@ -573,6 +640,7 @@ const CompatStudio = ({ onClassic }: { onClassic: () => void }) => {
                 <p className="text-[13px] font-semibold truncate text-[hsl(var(--admin-text))]">{s.name}</p>
                 <p className="text-[11px] text-[hsl(var(--admin-text-muted))] truncate">
                   {s.brand?.name ?? '—'}{!s.published && ' · brouillon'}
+                  {(() => { const m = missingKeys(s); return m.length ? <span className="text-orange-700 font-semibold"> · {m.length} clé{m.length > 1 ? 's' : ''} manque{m.length > 1 ? 'nt' : ''}</span> : null; })()}
                 </p>
               </div>
               {(() => {
@@ -603,10 +671,45 @@ const CompatStudio = ({ onClassic }: { onClassic: () => void }) => {
       {/* Scène */}
       <section className="flex-1 min-w-0 space-y-3">
         {!scooter ? (
-          <div className="admin-glass-card rounded-2xl p-10 text-center text-[hsl(var(--admin-text-muted))]">
-            <CircleDot className="w-10 h-10 mx-auto mb-3 opacity-40" />
-            <p className="font-semibold text-[hsl(var(--admin-text))]">Choisis une trottinette</p>
-            <p className="text-sm mt-1">Sa photo, ses clés de montage et toutes ses pièces s'affichent ici — tu valides ✓ ou tu retires ✗, puis trottinette suivante.</p>
+          <div className="space-y-3">
+            <div className="admin-glass-card rounded-2xl p-4">
+              <div className="flex flex-wrap items-baseline justify-between gap-2">
+                <h3 className="text-base font-black uppercase tracking-wide text-[hsl(var(--admin-text))]">Clés de montage par marque</h3>
+                <span className="text-sm text-[hsl(var(--admin-text-muted))] tabular-nums">{parcStats.complete}/{parcStats.n} trottinettes publiées complètes</span>
+              </div>
+              <p className="text-sm text-[hsl(var(--admin-text-muted))] mt-1">
+                Clés vides : {Object.entries(parcStats.by).sort((a, b) => b[1] - a[1]).map(([k, n]) => `${KEY_LABEL[k]} ${n}`).join(' · ') || 'aucune'}.
+                Choisis une marque, puis remplis les clés qui manquent avec le bouton « Clés » de chaque trottinette.
+              </p>
+              <div className="flex items-center gap-1.5 mt-3">
+                {([{ id: 'missing', label: 'Le plus à compléter' }, { id: 'az', label: 'A → Z' }] as const).map(o => (
+                  <button key={o.id} onClick={() => setBrandSort(o.id)}
+                    className={cn('px-3 min-h-[36px] rounded-full text-xs font-semibold border',
+                      brandSort === o.id ? 'bg-[hsl(var(--admin-text))] text-white border-transparent' : 'bg-white text-[hsl(var(--admin-text-muted))] border-[hsl(var(--admin-border))]')}>
+                    {o.label}
+                  </button>
+                ))}
+              </div>
+            </div>
+            <div className="grid grid-cols-2 sm:grid-cols-3 xl:grid-cols-4 gap-2.5">
+              {brandStats.map(b => (
+                <button key={b.brand} onClick={() => openBrand(b.brand)}
+                  className={cn('admin-glass-card rounded-2xl p-3 min-h-[110px] text-left flex flex-col gap-1.5 border transition-colors hover:border-[hsl(var(--admin-text))]',
+                    brandFilter === b.brand ? 'border-[hsl(var(--admin-accent))]' : 'border-transparent')}>
+                  <span className="text-[15px] font-black uppercase leading-tight text-[hsl(var(--admin-text))]">{b.brand}</span>
+                  <span className="text-xs text-[hsl(var(--admin-text-muted))]">
+                    {b.n} trottinette{b.n > 1 ? 's' : ''} · {b.todo ? `${b.todo} à compléter` : 'complète'}
+                    {b.zero > 0 && <span className="text-red-700 font-semibold"> · {b.zero} sans pièce</span>}
+                  </span>
+                  <span className="mt-auto flex items-center gap-2">
+                    <span className="flex-1 h-1.5 rounded-full bg-[hsl(var(--al15))] overflow-hidden">
+                      <span className="block h-full bg-[hsl(var(--admin-accent))]" style={{ width: `${b.pct}%` }} />
+                    </span>
+                    <span className="text-xs font-bold tabular-nums text-[hsl(var(--admin-text))]">{b.pct} %</span>
+                  </span>
+                </button>
+              ))}
+            </div>
           </div>
         ) : (
           <>
