@@ -1,1 +1,1 @@
-compat chargeur-ewm813-20-10
+compat xiaomi6-20-10
