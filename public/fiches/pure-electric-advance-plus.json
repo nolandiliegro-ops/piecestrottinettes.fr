@@ -1,0 +1,160 @@
+{
+ "displayName": "Pure Advance+",
+ "metaTitle": "Pure Advance+ : fiche technique, avis et pièces",
+ "metaDescription": "Pure Advance+ : 500 W (710 W en pointe), batterie 36 V 12 Ah, pneus 10x2.50-6.5 tubeless, tambour avant, chargeur prise RCA. Avis, entretien, pièces.",
+ "intro": [
+  "La Pure Advance+ est la version à grande batterie de la Pure Advance, la trottinette de Pure Electric où l'on roule face à la route, un pied de chaque côté de la colonne. Annoncée en précommande au printemps 2023 à 999 €, elle a été testée par Frandroid en mai 2023.",
+  "Moteur de 500 W (710 W en pointe), batterie 36 V de 12 Ah, jusqu'à 50 km annoncés, pneus tubeless de 10 pouces, tambour à l'avant et frein électrique à l'arrière. À 16 kg environ, elle reste maniable pour une trottinette urbaine."
+ ],
+ "specs": [
+  [
+   "Moteur",
+   "500 W (710 W en pointe)"
+  ],
+  [
+   "Vitesse",
+   "25 km/h max sur la voie publique en France"
+  ],
+  [
+   "Batterie",
+   "36 V, 12 Ah (432 Wh ; 423 Wh selon Frandroid)"
+  ],
+  [
+   "Autonomie",
+   "jusqu'à 50 km annoncés, environ 35 km mesurés (selon Frandroid)"
+  ],
+  [
+   "Poids",
+   "16 à 16,2 kg selon les fiches"
+  ],
+  [
+   "Charge max",
+   "120 kg (selon Frandroid)"
+  ],
+  [
+   "Roues",
+   "10 pouces, 10x2.50-6.5 tubeless (jante 6,5 pouces)"
+  ],
+  [
+   "Freins",
+   "Tambour avant + frein électrique régénératif arrière"
+  ],
+  [
+   "Étanchéité",
+   "IP65 selon Frandroid (IPX5 ou IPX6 selon la Fnac)"
+  ],
+  [
+   "Prise de charge",
+   "RCA"
+  ],
+  [
+   "Chargeur",
+   "36 V (42 V en sortie)"
+  ],
+  [
+   "Temps de charge",
+   "7 h 15"
+  ],
+  [
+   "Prix de lancement",
+   "999 € (précommande, 2023)"
+  ]
+ ],
+ "pros": [
+  "Concept original avec sa position de conduite face à la route (Frandroid).",
+  "Grands pneus et conduite douce et puissante (road.cc).",
+  "Plus grosse batterie de la gamme Advance : 50 km annoncés contre 40 km pour l'Advance (Pure Electric)."
+ ],
+ "cons": [
+  "Autonomie réelle d'environ 35 km, loin des 50 km annoncés (Frandroid).",
+  "Recharge longue : 7 h 15 (Frandroid).",
+  "Accélération progressive et prix élevé face à des modèles moins chers (road.cc).",
+  "Un seul frein mécanique, le tambour avant."
+ ],
+ "parts": [
+  {
+   "label": "Pneu",
+   "size": "10x2.50-6.5 / 60/70-6.5 tubeless (10 pouces)",
+   "count": 14,
+   "to": "/piece/pneu-tubeless-60-70-6-5-wanda",
+   "cta": "Pneus 10 pouces"
+  },
+  {
+   "label": "Chambre à air",
+   "size": "10x2.50, valve droite ou coudée",
+   "count": 6,
+   "to": "/piece/chambre-a-air-10x2-50-valve-coudee-135x45",
+   "cta": "Chambres à air"
+  },
+  {
+   "label": "Chargeur",
+   "size": "36 V → 42 V, prise RCA",
+   "count": 2,
+   "to": "/piece/chargeur-36v-42v-2a-xiaomi-connecteur-rca",
+   "cta": "Chargeurs 36 V"
+  }
+ ],
+ "care": [
+  "Le tambour avant est le seul frein mécanique : fais-le régler dès que la course du levier s'allonge.",
+  "Pneus tubeless : contrôle la pression chaque mois, un pneu mou s'use vite et crève plus facilement.",
+  "Vérifie le serrage de la colonne et du guidon : sur l'Advance, tes jambes s'appuient contre elle."
+ ],
+ "price": {
+  "text": "Prix de lancement en France : 999 € (précommande, printemps 2023).",
+  "source": "Frandroid, Cleanrider"
+ },
+ "faq": [
+  {
+   "q": "Quelle taille de pneu pour la Pure Advance+ ?",
+   "a": "Des pneus tubeless de 10 pouces en 10x2.50-6.5, aussi notés 60/70-6.5, sur une jante de 6,5 pouces."
+  },
+  {
+   "q": "La Pure Advance+ a-t-elle des plaquettes de frein ?",
+   "a": "Non. Elle freine avec un tambour à l'avant et un frein électrique régénératif à l'arrière : pas de plaquettes ni de disque à changer."
+  },
+  {
+   "q": "Quel chargeur pour la Pure Advance+ ?",
+   "a": "Un chargeur 36 V (42 V en sortie) avec prise RCA. Compte environ 7 h 15 pour une charge complète."
+  },
+  {
+   "q": "Quelle est l'autonomie réelle de la Pure Advance+ ?",
+   "a": "Pure annonce jusqu'à 50 km. Frandroid a mesuré environ 35 km en moyenne. Ton poids, le relief et le mode de conduite font varier ce chiffre."
+  },
+  {
+   "q": "Quelle différence entre la Pure Advance+ et l'Advance ?",
+   "a": "La batterie : 12 Ah pour l'Advance+, 9,6 Ah pour l'Advance. Le moteur annoncé est le même, 710 W en pointe."
+  }
+ ],
+ "sources": [
+  {
+   "label": "Frandroid — test de la Pure Advance+",
+   "url": "https://www.frandroid.com/survoltes/trottinette-electrique/1676313_test-de-la-pure-advance-unique-en-son-genre-mais-une-prise-de-risque-en-demi-teinte"
+  },
+  {
+   "label": "Frandroid — fiche Pure Advance+",
+   "url": "https://www.frandroid.com/produits/trottinette-electrique/pure/1675581-pure-advance-plus"
+  },
+  {
+   "label": "Cleanrider — lancement de la Pure Advance",
+   "url": "https://www.cleanrider.com/actus/avec-ladvance-pure-veut-revolutionner-la-trottinette-electrique/"
+  },
+  {
+   "label": "Pure Electric Suède — Pure Advance+",
+   "url": "https://se.pureelectric.com/products/pure-advance-plus-electric-scooter"
+  },
+  {
+   "label": "road.cc — test Pure Advance+",
+   "url": "https://road.cc/ebiketips/content/reviews/e-scooter/pure-advance-4747"
+  },
+  {
+   "label": "Mobiwisy — essai Pure Advance",
+   "url": "https://mobiwisy.fr/mobilite-douce/trottinette/essai-pure-electric-advance-confortable-et-simple-dutilisation"
+  }
+ ],
+ "video": {
+  "id": "t0E_s724LR8",
+  "title": "Test Pure Advance + electric scooter",
+  "channel": "Laurent Froment",
+  "uploadDate": "2023-04-08"
+ }
+}

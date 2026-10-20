@@ -1,0 +1,129 @@
+{
+ "displayName": "Pure Escape Pro+ Suspension",
+ "metaTitle": "Pure Escape Pro+ Suspension : fiche technique et pièces",
+ "metaDescription": "Pure Escape Pro+ Suspension : 1 200 W en pointe, double suspension, pneus 10x2.50-6.5 tubeless, frein tambour avant, IP65. Versions, entretien, pièces.",
+ "intro": [
+  "La Pure Escape Pro+ Suspension est la version suspendue de l'Escape Pro+, présentée par Pure Electric dans sa gamme 2026. Elle garde la position de conduite face à la route de la famille Escape. La Fnac la référence ; Cleanrider jugeait en août 2026 sa disponibilité française encore à confirmer.",
+  "Moteur de 500 W (1 200 W en pointe), batterie de 10 Ah, 60 à 75 km annoncés selon la source, fourche avant et amortisseurs arrière, pneus tubeless de 10 pouces, tambour à l'avant et frein électrique à l'arrière. Aucun test indépendant n'est encore publié."
+ ],
+ "specs": [
+  [
+   "Moteur",
+   "500 W (1 200 W en pointe)"
+  ],
+  [
+   "Vitesse",
+   "25 km/h max sur la voie publique en France"
+  ],
+  [
+   "Batterie",
+   "10 Ah : 46,8 V selon la Fnac, 48 V selon Cleanrider"
+  ],
+  [
+   "Autonomie annoncée",
+   "jusqu'à 60 km en mode éco selon la Fnac, 75 km selon Cleanrider"
+  ],
+  [
+   "Poids",
+   "21,8 kg ou 23 kg selon les tableaux de Cleanrider"
+  ],
+  [
+   "Charge max",
+   "120 kg (selon Currys)"
+  ],
+  [
+   "Roues",
+   "10 pouces, 10x2.50-6.5 tubeless (jante 6,5 pouces)"
+  ],
+  [
+   "Freins",
+   "Tambour avant + frein électrique régénératif arrière (selon Currys)"
+  ],
+  [
+   "Suspension",
+   "Fourche télescopique avant, amortisseurs arrière réglables en précharge"
+  ],
+  [
+   "Étanchéité",
+   "IP65 (selon Currys)"
+  ]
+ ],
+ "pros": [
+  "Double suspension pour les surfaces irrégulières, avec précharge réglable (Cleanrider, Currys).",
+  "1 200 W en pointe, contre 900 W pour l'Escape Pro sans suspension (Fnac).",
+  "Étanchéité IP65 et pneus tubeless de 10 pouces (Currys)."
+ ],
+ "cons": [
+  "Aucun test indépendant publié : pas encore d'autonomie mesurée en conditions réelles.",
+  "Les fiches ne s'accordent ni sur la tension (46,8 ou 48 V), ni sur l'autonomie (60 ou 75 km), ni sur le poids.",
+  "Un seul frein mécanique, le tambour avant."
+ ],
+ "parts": [
+  {
+   "label": "Pneu",
+   "size": "10x2.50-6.5 / 60/70-6.5 tubeless (10 pouces)",
+   "count": 14,
+   "to": "/piece/pneu-tubeless-60-70-6-5-wanda",
+   "cta": "Pneus 10 pouces"
+  },
+  {
+   "label": "Chambre à air",
+   "size": "10x2.50, valve droite ou coudée",
+   "count": 6,
+   "to": "/piece/chambre-a-air-10x250-valve-0x90",
+   "cta": "Chambres à air"
+  },
+  {
+   "label": "Pneu plein",
+   "size": "10x2.50-6.5 (jante 6,5 pouces)",
+   "count": 12,
+   "to": "/piece/pneu-plein-10x2-50-6-5-noir-cityneye",
+   "cta": "Pneus pleins"
+  }
+ ],
+ "care": [
+  "Le tambour avant est le seul frein mécanique : fais-le régler dès que la course du levier s'allonge.",
+  "Règle la précharge des amortisseurs arrière selon ton poids, puis contrôle le serrage des bras.",
+  "Pneus tubeless : vérifie la pression chaque mois, la suspension cache un pneu sous-gonflé."
+ ],
+ "faq": [
+  {
+   "q": "Quelle taille de pneu pour la Pure Escape Pro+ Suspension ?",
+   "a": "Des pneus tubeless de 10 pouces en 10x2.50-6.5, aussi notés 60/70-6.5, sur une jante de 6,5 pouces."
+  },
+  {
+   "q": "La Pure Escape Pro+ Suspension a-t-elle des plaquettes de frein ?",
+   "a": "Non. Elle freine avec un tambour à l'avant et un frein électrique régénératif à l'arrière : pas de plaquettes ni de disque à changer."
+  },
+  {
+   "q": "Quelle différence entre l'Escape Pro+ Suspension et l'Escape Ultra Max Suspension ?",
+   "a": "L'Ultra Max monte à 1 900 W en pointe contre 1 200 W, ajoute un frein à disque arrière et pèse environ 26 kg contre 21,8 kg selon Cleanrider."
+  },
+  {
+   "q": "Peut-on mettre une chambre à air sur la Pure Escape Pro+ Suspension ?",
+   "a": "Oui, une chambre à air 10x2.50 se monte dans le pneu tubeless si tu crèves souvent. Choisis la valve (droite ou coudée) qui sort bien de ta jante."
+  },
+  {
+   "q": "Peut-on mettre des pneus pleins sur la Pure Escape Pro+ Suspension ?",
+   "a": "Oui, des pneus pleins en 10x2.50-6.5 existent. Ils suppriment les crevaisons mais filtrent moins les chocs qu'un pneu gonflé."
+  }
+ ],
+ "sources": [
+  {
+   "label": "Fnac — Pure Escape Pro+ Suspension 2026",
+   "url": "https://www.fnac.com/Pure-Escape-Pro-Suspension-500W-2026-Metallic-Grey-EU-Z0/a22915246/w-4"
+  },
+  {
+   "label": "Currys — Pure Escape Pro+ Suspension",
+   "url": "https://www.currys.co.uk/products/pure-electric-pure-escape-pro-suspension-electric-scooter-metallic-grey-10301724.html"
+  },
+  {
+   "label": "Pure Electric — découvrir l'Escape Pro+ Suspension",
+   "url": "https://www.pureelectric.com/pages/discover-escape-pro-plus-suspension"
+  },
+  {
+   "label": "Cleanrider — gamme Pure Air⁶ et Escape 2026 à double suspension",
+   "url": "https://www.cleanrider.com/actus/pure-air6-escape-trottinettes-electriques-double-suspension/"
+  }
+ ]
+}

@@ -1,0 +1,142 @@
+{
+ "displayName": "Pure Air⁶ Pro+ Suspension",
+ "metaTitle": "Pure Air⁶ Pro+ Suspension : fiche technique et pièces",
+ "metaDescription": "Pure Air⁶ Pro+ Suspension : 1 200 W en pointe, batterie 48 V, double suspension, pneus 10x2.50-6.5 et frein tambour avant. Entretien et pièces.",
+ "intro": [
+  "La Pure Air⁶ Pro+ Suspension fait partie de la gamme Air⁶ de Pure Electric, la première de la marque à être suspendue à l'avant et à l'arrière. Elle se place entre l'Air⁶ Suspension d'entrée de gamme et l'Air⁶ Ultra. En août 2026, Cleanrider indiquait que sa disponibilité en France restait à confirmer.",
+  "Moteur de 350 W (1 200 W en pointe), batterie 48 V, jusqu'à 75 km annoncés, pneus tubeless de 10 pouces, tambour à l'avant et frein électrique à l'arrière. À 23 kg, elle vise les trajets quotidiens sur routes abîmées plutôt que le transport à bout de bras."
+ ],
+ "specs": [
+  [
+   "Moteur",
+   "350 W (1 200 W en pointe)"
+  ],
+  [
+   "Vitesse",
+   "25 km/h max sur la voie publique en France"
+  ],
+  [
+   "Batterie",
+   "46,8 V, 10 Ah selon la plupart des fiches ; 48 V, 10,4 Ah (499 Wh) selon Ecraft"
+  ],
+  [
+   "Autonomie annoncée",
+   "jusqu'à 75 km"
+  ],
+  [
+   "Poids",
+   "23 kg (22,6 kg selon Ecraft)"
+  ],
+  [
+   "Charge max",
+   "120 kg"
+  ],
+  [
+   "Roues",
+   "10 pouces, 10x2.50-6.5 tubeless (jante 6,5 pouces)"
+  ],
+  [
+   "Freins",
+   "Tambour avant + frein électrique régénératif arrière"
+  ],
+  [
+   "Suspension",
+   "Fourche télescopique avant, doubles amortisseurs arrière"
+  ],
+  [
+   "Étanchéité",
+   "IP65"
+  ],
+  [
+   "Temps de charge",
+   "5 h 30 selon Ecraft, jusqu'à 7 h selon Rapid Scooter"
+  ]
+ ],
+ "pros": [
+  "Double suspension avant et arrière, absente des anciennes Pure Air (Electric Scooters London).",
+  "Batterie et moteur plus costauds que l'Air⁶ Suspension de base : 1 200 W en pointe contre 924 W (Pure Electric).",
+  "Frein à tambour avant, peu exigeant en entretien, et pneus tubeless de 10 pouces."
+ ],
+ "cons": [
+  "23 kg : à porter dans un escalier, ça se sent.",
+  "Les 75 km sont une valeur constructeur ; aucun test indépendant de la Pro+ n'est encore publié.",
+  "Un seul frein mécanique, le tambour avant.",
+  "Disponibilité en France incertaine à l'été 2026 (Cleanrider)."
+ ],
+ "parts": [
+  {
+   "label": "Pneu",
+   "size": "10x2.50-6.5 / 60/70-6.5 tubeless (10 pouces)",
+   "count": 14,
+   "to": "/piece/pneu-tubeless-10x2-50-6-5-yuanxing",
+   "cta": "Pneus 10 pouces"
+  },
+  {
+   "label": "Chambre à air",
+   "size": "10x2.50, valve droite ou coudée",
+   "count": 6,
+   "to": "/piece/chambre-a-air-10x2-50-valve-coudee-135x45",
+   "cta": "Chambres à air"
+  },
+  {
+   "label": "Pneu plein",
+   "size": "10x2.50-6.5 (jante 6,5 pouces)",
+   "count": 12,
+   "to": "/piece/pneu-plein-10x2-50-6-5-noir-cityneye",
+   "cta": "Pneus pleins"
+  }
+ ],
+ "care": [
+  "Le tambour avant est le seul frein mécanique : fais-le régler dès que la course du levier s'allonge.",
+  "Pneus tubeless : contrôle la pression chaque mois, la suspension masque un pneu sous-gonflé qui s'use alors vite.",
+  "Suspensions : nettoie les axes et vérifie le jeu des bras arrière, surtout après la pluie."
+ ],
+ "faq": [
+  {
+   "q": "Quelle taille de pneu pour la Pure Air⁶ Pro+ Suspension ?",
+   "a": "Des pneus tubeless de 10 pouces en 10x2.50-6.5, aussi notés 60/70-6.5, sur une jante de 6,5 pouces."
+  },
+  {
+   "q": "La Pure Air⁶ Pro+ Suspension a-t-elle des plaquettes de frein ?",
+   "a": "Non. Elle freine avec un tambour à l'avant et un frein électrique régénératif à l'arrière : pas de plaquettes ni de disque à changer."
+  },
+  {
+   "q": "Peut-on mettre une chambre à air sur la Pure Air⁶ Pro+ Suspension ?",
+   "a": "Oui, une chambre à air 10x2.50 se monte dans le pneu tubeless si tu crèves souvent. Choisis la valve (droite ou coudée) qui sort bien de ta jante."
+  },
+  {
+   "q": "Peut-on mettre des pneus pleins sur la Pure Air⁶ Pro+ Suspension ?",
+   "a": "Oui, des pneus pleins en 10x2.50-6.5 existent. Ils suppriment les crevaisons mais filtrent moins les chocs qu'un pneu gonflé."
+  },
+  {
+   "q": "Quelle différence entre l'Air⁶ Pro+ Suspension et l'Air⁶ Suspension ?",
+   "a": "La Pro+ a une batterie plus grosse (environ 48 V contre 36 V) et plus de puissance en pointe (1 200 W contre 924 W). Pure annonce 75 km pour la Pro+ contre 45 km pour l'Air⁶ Suspension."
+  }
+ ],
+ "sources": [
+  {
+   "label": "Pure Electric — Air⁶ Pro+ Suspension",
+   "url": "https://www.pureelectric.com/products/air-6-pro-plus-suspension"
+  },
+  {
+   "label": "Electric Scooters London — Pure Air⁶ Pro+ Suspension",
+   "url": "https://www.electricscooterslondon.com/en-de/products/pure-air6-pro-plus-suspension-electric-scooter"
+  },
+  {
+   "label": "Ecraft — Pure Air⁶ Pro+ Suspension",
+   "url": "https://www.ecraft-shop.de/en/produkt/pure-air6-pro-suspension/sw10966"
+  },
+  {
+   "label": "Rapid Scooter — Pure Air⁶ Pro+ Suspension",
+   "url": "https://rapidscooter.co.uk/product/pure-air6-pro-suspension-electric-scooter"
+  },
+  {
+   "label": "Pure Electric Pays-Bas — Air⁶ Suspension",
+   "url": "https://pureelectric.nl/en/products/air-6-suspension"
+  },
+  {
+   "label": "Cleanrider — gamme Pure Air⁶ et Escape 2026 à double suspension",
+   "url": "https://www.cleanrider.com/actus/pure-air6-escape-trottinettes-electriques-double-suspension/"
+  }
+ ]
+}

@@ -1,0 +1,99 @@
+{
+ "displayName": "Pure Escape Ultra Max Suspension",
+ "metaTitle": "Pure Escape Ultra Max Suspension : fiche et pièces",
+ "metaDescription": "Pure Escape Ultra Max Suspension : 1 900 W en pointe, batterie 46,8 V, pneus 10 pouces 10x2.50, tambour avant et disque arrière, IP65. Fiche et entretien.",
+ "intro": [
+  "La Pure Escape Ultra Max Suspension est le haut de la gamme Escape 2026 de Pure Electric : position de conduite face à la route, double suspension et frein à disque arrière. En août 2026, Cleanrider relevait 879,99 € en Belgique et aucune annonce pour la France.",
+  "Moteur de 500 W (1 900 W en pointe), batterie 46,8 V, 75 à 90 km annoncés selon la page Pure Electric consultée, pneus tubeless de 10 pouces, tambour à l'avant et disque à l'arrière. À environ 26 kg, c'est la plus lourde des Escape."
+ ],
+ "specs": [
+  [
+   "Moteur",
+   "500 W (1 900 W en pointe)"
+  ],
+  [
+   "Vitesse",
+   "25 km/h max sur la voie publique en France"
+  ],
+  [
+   "Batterie",
+   "46,8 V, 13,3 Ah selon Pure Electric Benelux (10 Ah selon Cleanrider)"
+  ],
+  [
+   "Autonomie annoncée",
+   "75 km selon Pure Electric UK, 90 km selon Pure Electric Benelux"
+  ],
+  [
+   "Poids",
+   "26 kg (26,2 kg selon Pure Electric Benelux)"
+  ],
+  [
+   "Charge max",
+   "120 kg (selon Pure Electric Benelux)"
+  ],
+  [
+   "Roues",
+   "10 pouces, 10x2.50 tubeless"
+  ],
+  [
+   "Freins",
+   "Tambour avant + disque arrière, avec frein électrique régénératif"
+  ],
+  [
+   "Suspension",
+   "Fourche télescopique avant, amortisseurs arrière"
+  ],
+  [
+   "Étanchéité",
+   "IP65 (selon Pure Electric Benelux)"
+  ]
+ ],
+ "pros": [
+  "La plus puissante des Escape : 1 900 W en pointe contre 1 200 W pour l'Escape Pro+ Suspension (Cleanrider).",
+  "Deux freins mécaniques : tambour à l'avant, disque à l'arrière (Pure Electric Benelux).",
+  "Batterie amovible selon Pure Electric."
+ ],
+ "cons": [
+  "Environ 26 kg : difficile à porter.",
+  "Autonomie annoncée contradictoire selon les pages Pure Electric (75 ou 90 km), mesurée à 15 km/h en mode éco sur le plat.",
+  "Aucun test de conduite publié, et pas encore annoncée en France (Cleanrider, août 2026)."
+ ],
+ "parts": [],
+ "care": [
+  "Disque arrière : surveille l'épaisseur des plaquettes et garde le disque propre, sans graisse.",
+  "Tambour avant : fais-le régler dès que la course du levier s'allonge.",
+  "Avec 26 kg et 1 900 W, la visserie de la potence et des bras de suspension travaille : contrôle-la régulièrement."
+ ],
+ "faq": [
+  {
+   "q": "Quelle taille de pneu pour la Pure Escape Ultra Max Suspension ?",
+   "a": "Des pneus tubeless de 10 pouces en 10x2.50. Nous n'avons pas encore confirmé le diamètre de jante de ce modèle : relève l'inscription sur le flanc de ton pneu avant de commander."
+  },
+  {
+   "q": "Quelles plaquettes pour la Pure Escape Ultra Max Suspension ?",
+   "a": "Seul le frein arrière est à disque. Nous n'avons pas encore la référence de son étrier : compare la forme de ta plaquette usée avant de commander. L'avant freine par tambour, sans plaquettes."
+  },
+  {
+   "q": "Quelle différence entre l'Escape Ultra Max et l'Escape Pro+ Suspension ?",
+   "a": "L'Ultra Max monte à 1 900 W en pointe contre 1 200 W, ajoute un frein à disque arrière et pèse environ 26 kg contre 21,8 kg selon Cleanrider."
+  },
+  {
+   "q": "Quelle est l'autonomie de la Pure Escape Ultra Max Suspension ?",
+   "a": "Pure Electric annonce 75 km sur son site britannique et 90 km sur son site Benelux, à 15 km/h en mode éco, sur le plat, avec un pilote de 75 kg. Aucune mesure indépendante n'est encore publiée."
+  }
+ ],
+ "sources": [
+  {
+   "label": "Pure Electric — Escape Ultra Max Suspension",
+   "url": "https://www.pureelectric.com/products/escape-ultra-max-suspension"
+  },
+  {
+   "label": "Pure Electric Benelux — Escape Ultra Max Suspension",
+   "url": "https://pureelectric.nl/en/products/escape-ultra-max-suspension"
+  },
+  {
+   "label": "Cleanrider — gamme Pure Air⁶ et Escape 2026 à double suspension",
+   "url": "https://www.cleanrider.com/actus/pure-air6-escape-trottinettes-electriques-double-suspension/"
+  }
+ ]
+}

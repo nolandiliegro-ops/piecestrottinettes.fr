@@ -1,0 +1,139 @@
+{
+ "displayName": "Pure Escape Pro",
+ "metaTitle": "Pure Escape Pro : fiche technique, avis et pièces",
+ "metaDescription": "Pure Escape Pro : 500 W (900 W en pointe), batterie 36 V, cadre acier, pneus 10x2.50-6.5 tubeless, frein tambour avant. Avis, entretien et pièces.",
+ "intro": [
+  "La Pure Escape Pro est une trottinette de la gamme Escape de Pure Electric, au cadre en acier et à la position de conduite face à la route. Cleanrider l'a testée en janvier 2026. C'est la version sans suspension : ne la confonds pas avec l'Escape Pro+ Suspension de 2026.",
+  "Moteur de 500 W (900 W en pointe), batterie 36 V, jusqu'à 62 km annoncés, pneus tubeless de 10 pouces, tambour à l'avant et frein électrique à l'arrière. Avec un peu plus de 19 kg selon Cleanrider, elle vise les trajets quotidiens."
+ ],
+ "specs": [
+  [
+   "Moteur",
+   "500 W (900 W en pointe ; 924 W selon Pure Electric Benelux)"
+  ],
+  [
+   "Vitesse",
+   "25 km/h max sur la voie publique en France"
+  ],
+  [
+   "Batterie",
+   "36 V : 12 Ah selon Darty et la Fnac, 10 Ah selon Pure Electric Suède"
+  ],
+  [
+   "Autonomie annoncée",
+   "jusqu'à 62 km"
+  ],
+  [
+   "Poids",
+   "19,2 kg selon Cleanrider et Pure Electric Benelux (17 kg selon Darty et la Fnac)"
+  ],
+  [
+   "Charge max",
+   "120 kg (selon Pure Electric Benelux)"
+  ],
+  [
+   "Roues",
+   "10 pouces, 10x2.50-6.5 tubeless (jante 6,5 pouces)"
+  ],
+  [
+   "Freins",
+   "Tambour avant + frein électrique régénératif arrière"
+  ],
+  [
+   "Suspension",
+   "aucune"
+  ],
+  [
+   "Étanchéité",
+   "IP65 (selon Pure Electric Benelux)"
+  ],
+  [
+   "Temps de charge",
+   "6 h à 7 h 15 selon les fiches"
+  ]
+ ],
+ "pros": [
+  "Bonnes accélérations, progressives jusqu'à 25 km/h (Cleanrider).",
+  "Pneus larges qui apportent du confort malgré l'absence de suspension (Cleanrider).",
+  "Format compact (Cleanrider)."
+ ],
+ "cons": [
+  "Plus de 19 kg (Cleanrider).",
+  "Autonomie en retrait de l'Escape Pro+ (Cleanrider).",
+  "Les fiches ne s'accordent pas sur la batterie (10 ou 12 Ah) : Cleanrider a mesuré 9,6 Ah sur son exemplaire. Vérifie l'étiquette de ta batterie.",
+  "Pas de suspension et un seul frein mécanique, le tambour avant."
+ ],
+ "parts": [
+  {
+   "label": "Pneu",
+   "size": "10x2.50-6.5 / 60/70-6.5 tubeless (10 pouces)",
+   "count": 14,
+   "to": "/piece/pneu-tubeless-60-70-6-5-wanda",
+   "cta": "Pneus 10 pouces"
+  },
+  {
+   "label": "Chambre à air",
+   "size": "10x2.50, valve droite ou coudée",
+   "count": 6,
+   "to": "/piece/chambre-a-air-10x2-50-valve-coudee-135x45",
+   "cta": "Chambres à air"
+  }
+ ],
+ "care": [
+  "Le tambour avant est le seul frein mécanique : fais-le régler dès que la course du levier s'allonge.",
+  "Cadre en acier : sèche-le après la pluie et surveille les points de rouille sur les rayures.",
+  "Pneus tubeless : contrôle la pression chaque mois, ce sont eux qui remplacent la suspension."
+ ],
+ "price": {
+  "text": "Prix affiché : 549,99 € chez Darty (relevé le 20/10/2026).",
+  "source": "darty.com"
+ },
+ "faq": [
+  {
+   "q": "Quelle taille de pneu pour la Pure Escape Pro ?",
+   "a": "Des pneus tubeless de 10 pouces en 10x2.50-6.5, aussi notés 60/70-6.5, sur une jante de 6,5 pouces."
+  },
+  {
+   "q": "La Pure Escape Pro a-t-elle des plaquettes de frein ?",
+   "a": "Non. Elle freine avec un tambour à l'avant et un frein électrique régénératif à l'arrière : pas de plaquettes ni de disque à changer."
+  },
+  {
+   "q": "Combien de temps pour recharger la Pure Escape Pro ?",
+   "a": "Entre 6 h et 7 h 15 selon les fiches. Avec le chargeur de 2 A, Cleanrider a atteint 50 % en 2 h 30 et 80 % en 4 h."
+  },
+  {
+   "q": "Quelle différence entre l'Escape Pro et l'Escape Pro+ Suspension ?",
+   "a": "L'Escape Pro n'a pas de suspension. L'Escape Pro+ Suspension de 2026 ajoute une fourche avant et des amortisseurs arrière, et monte à 1 200 W en pointe."
+  },
+  {
+   "q": "Peut-on mettre une chambre à air sur la Pure Escape Pro ?",
+   "a": "Oui, une chambre à air 10x2.50 se monte dans le pneu tubeless si tu crèves souvent. Choisis la valve (droite ou coudée) qui sort bien de ta jante."
+  }
+ ],
+ "sources": [
+  {
+   "label": "Cleanrider — test Pure Escape Pro",
+   "url": "https://www.cleanrider.com/essais/trottinette-electrique/test-pure-escape-pro-trottinette-electrique/"
+  },
+  {
+   "label": "Cleanrider — fiche Pure Escape Pro",
+   "url": "https://www.cleanrider.com/catalogue/trottinette-electrique/pure-electric/pure-electric-escape-pro/"
+  },
+  {
+   "label": "Pure Electric Benelux — Escape Pro",
+   "url": "https://pureelectric.be/en/products/pure-escape-pro"
+  },
+  {
+   "label": "Pure Electric Suède — Escape Pro",
+   "url": "https://se.pureelectric.com/products/escape-pro-electric-scooter"
+  },
+  {
+   "label": "Darty — Pure Escape Pro",
+   "url": "https://www.darty.com/nav/achat/sports_loisirs/glisse_urbaine/trottinette_electrique/pure_electric_escape_black.html"
+  },
+  {
+   "label": "Fnac — Pure Escape Pro",
+   "url": "https://www.fnac.com/Trottinette-electrique-Pure-Electric-Escape-noir/a21098539/w-4"
+  }
+ ]
+}

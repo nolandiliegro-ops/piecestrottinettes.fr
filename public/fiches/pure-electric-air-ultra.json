@@ -1,0 +1,131 @@
+{
+ "displayName": "Pure Air⁵ Ultra Suspension",
+ "metaTitle": "Pure Air⁵ Ultra Suspension : fiche technique et pièces",
+ "metaDescription": "Pure Air⁵ Ultra Suspension : 1 201 W en pointe, batterie 48 V, double suspension, pneus 10x2.50-6.5 tubeless, frein tambour avant. Entretien et pièces.",
+ "intro": [
+  "La Pure Air⁵ Ultra Suspension est la version suspendue et longue autonomie de la gamme Air⁵ de Pure Electric, sortie en 2025. La Fnac et Darty la référencent sous le nom « Air5 Pro Ultra Suspension ». Elle précède la gamme Air⁶ : ne confonds pas les deux générations.",
+  "Moteur de 500 W (1 201 W en pointe), batterie 48 V, jusqu'à 93,8 km annoncés, fourche télescopique à l'avant et doubles amortisseurs à l'arrière, pneus tubeless de 10 pouces. À 22,6 kg, elle s'adresse aux longs trajets plus qu'au transport en commun."
+ ],
+ "specs": [
+  [
+   "Moteur",
+   "500 W (1 201 W en pointe)"
+  ],
+  [
+   "Vitesse",
+   "25 km/h max sur la voie publique en France"
+  ],
+  [
+   "Batterie",
+   "48 V : 15 Ah selon la Fnac et Darty, 13 Ah selon Pure Electric"
+  ],
+  [
+   "Autonomie annoncée",
+   "jusqu'à 93,8 km (93 km selon la Fnac et Darty)"
+  ],
+  [
+   "Poids",
+   "22,6 kg"
+  ],
+  [
+   "Charge max",
+   "120 kg"
+  ],
+  [
+   "Roues",
+   "10 pouces, 10x2.50-6.5 tubeless (jante 6,5 pouces)"
+  ],
+  [
+   "Freins",
+   "Tambour avant + frein électrique arrière"
+  ],
+  [
+   "Suspension",
+   "Fourche télescopique avant, doubles amortisseurs arrière réglables"
+  ],
+  [
+   "Étanchéité",
+   "IP65 (IPX5 selon Darty)"
+  ],
+  [
+   "Temps de charge",
+   "6 h"
+  ]
+ ],
+ "pros": [
+  "Double suspension avant et arrière (Pure Electric).",
+  "Présentée par Pure Electric comme sa trottinette la plus puissante de la gamme Air⁵, à 1 201 W en pointe.",
+  "Recharge en 6 h malgré la grosse batterie (Pure Electric, Stuff)."
+ ],
+ "cons": [
+  "22,6 kg : lourde à porter.",
+  "Les 93,8 km sont une valeur constructeur, sans mesure indépendante relevée.",
+  "Indisponible chez la Fnac et Darty lors de notre relevé d'octobre 2026.",
+  "Un seul frein mécanique, le tambour avant."
+ ],
+ "parts": [
+  {
+   "label": "Pneu",
+   "size": "10x2.50-6.5 / 60/70-6.5 tubeless (10 pouces)",
+   "count": 14,
+   "to": "/piece/pneu-tubeless-60-70-6-5-wanda",
+   "cta": "Pneus 10 pouces"
+  },
+  {
+   "label": "Chambre à air",
+   "size": "10x2.50, valve droite ou coudée",
+   "count": 6,
+   "to": "/piece/chambre-a-air-10x250-valve-0x90",
+   "cta": "Chambres à air"
+  }
+ ],
+ "care": [
+  "Le tambour avant est le seul frein mécanique : fais-le régler dès que la course du levier s'allonge.",
+  "Règle la précharge des amortisseurs arrière selon ton poids, puis contrôle le serrage des bras.",
+  "Pneus tubeless : vérifie la pression chaque mois, la suspension masque un pneu sous-gonflé."
+ ],
+ "faq": [
+  {
+   "q": "Quelle taille de pneu pour la Pure Air⁵ Ultra Suspension ?",
+   "a": "Des pneus tubeless de 10 pouces en 10x2.50-6.5, aussi notés 60/70-6.5, sur une jante de 6,5 pouces."
+  },
+  {
+   "q": "La Pure Air⁵ Ultra Suspension a-t-elle des plaquettes de frein ?",
+   "a": "Non. Elle freine avec un tambour à l'avant et un frein électrique régénératif à l'arrière : pas de plaquettes ni de disque à changer."
+  },
+  {
+   "q": "Quelle différence entre l'Air⁵ Ultra Suspension et l'Air⁶ Ultra Suspension ?",
+   "a": "Ce sont deux générations différentes : l'Air⁵ Ultra date de 2025, l'Air⁶ Ultra de 2026. Les pneus 10x2.50-6.5 sont les mêmes, mais vérifie la génération avant de commander une pièce électrique."
+  },
+  {
+   "q": "Peut-on mettre une chambre à air sur la Pure Air⁵ Ultra Suspension ?",
+   "a": "Oui, une chambre à air 10x2.50 se monte dans le pneu tubeless si tu crèves souvent. Choisis la valve (droite ou coudée) qui sort bien de ta jante."
+  }
+ ],
+ "sources": [
+  {
+   "label": "Pure Electric — Air⁵ Ultra Suspension",
+   "url": "https://www.pureelectric.com/products/air5-ultra-suspension"
+  },
+  {
+   "label": "Pure Electric Suède — Air⁵ Ultra Suspension",
+   "url": "https://se.pureelectric.com/products/e-scooter-pure-air-ultra-suspension"
+  },
+  {
+   "label": "Darty — Pure Air⁵ Pro Ultra Suspension",
+   "url": "https://www.darty.com/nav/achat/sports_loisirs/glisse_urbaine/trottinette_electrique/pure_electric_air5_pro_ultra_susp.html"
+  },
+  {
+   "label": "Fnac — Pure Air⁵ Pro Ultra Suspension",
+   "url": "https://www.fnac.com/Trottinette-electrique-Pure-Electric-Air5-Pro-Ultra-Suspension-500-W-Noir/a21894679/w-4"
+  },
+  {
+   "label": "Stuff — Pure Air⁵ Ultra Suspension",
+   "url": "https://www.stuff.tv/features/pure-electric-air-5-ultra-suspension-review/"
+  },
+  {
+   "label": "eCompare — Pure Air⁵ Ultra Suspension",
+   "url": "https://www.ecompare.co.uk/p/05060937158040"
+  }
+ ]
+}

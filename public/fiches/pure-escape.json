@@ -1,0 +1,133 @@
+{
+ "displayName": "Pure Escape",
+ "metaTitle": "Pure Escape : fiche technique, avis et pièces",
+ "metaDescription": "Pure Escape : 350 W (840 W en pointe), batterie 36 V 7,5 Ah, pneus 10x2.50-6.5 tubeless, frein tambour avant, 26,3 km mesurés. Avis et pièces.",
+ "intro": [
+  "La Pure Escape est le modèle d'entrée de la gamme Escape de Pure Electric : cadre en acier, position de conduite face à la route et stabilisation active de la direction. Le Labo Fnac l'a testée en février 2026. Elle se distingue des Escape Pro, Pro+ Suspension et Ultra Max.",
+  "Moteur de 350 W (840 W en pointe), batterie 36 V de 7,5 Ah, 44 km annoncés, pneus tubeless de 10 pouces, tambour à l'avant et frein électrique à l'arrière. À 18 kg selon la Fnac, elle vise les trajets urbains courts."
+ ],
+ "specs": [
+  [
+   "Moteur",
+   "350 W (840 W en pointe)"
+  ],
+  [
+   "Vitesse",
+   "25 km/h max sur la voie publique en France"
+  ],
+  [
+   "Batterie",
+   "36 V, 7,5 Ah"
+  ],
+  [
+   "Autonomie",
+   "44 km annoncés, 26,3 km mesurés par le Labo Fnac"
+  ],
+  [
+   "Poids",
+   "18 kg (selon la Fnac)"
+  ],
+  [
+   "Roues",
+   "10 pouces, 10x2.50-6.5 tubeless (jante 6,5 pouces)"
+  ],
+  [
+   "Freins",
+   "Tambour avant + frein électrique régénératif arrière"
+  ],
+  [
+   "Étanchéité",
+   "IP65 ou IPX5 selon les fiches"
+  ],
+  [
+   "Temps de charge",
+   "6 h annoncées, 4 h 31 mesurées par le Labo Fnac"
+  ]
+ ],
+ "pros": [
+  "Moteur jugé assez puissant pour sa catégorie (L'Éclaireur Fnac).",
+  "Recharge complète en 4 h 31 au Labo Fnac, plus vite que les 6 h annoncées.",
+  "Frein à tambour avant, présenté comme peu exigeant en entretien (Currys)."
+ ],
+ "cons": [
+  "Autonomie réelle de 26,3 km, loin des 44 km annoncés (L'Éclaireur Fnac).",
+  "18 kg avec son cadre en acier : se porte, mais pas longtemps.",
+  "Un seul frein mécanique, le tambour avant."
+ ],
+ "parts": [
+  {
+   "label": "Pneu",
+   "size": "10x2.50-6.5 / 60/70-6.5 tubeless (10 pouces)",
+   "count": 14,
+   "to": "/piece/pneu-tubeless-60-70-6-5-wanda",
+   "cta": "Pneus 10 pouces"
+  },
+  {
+   "label": "Chambre à air",
+   "size": "10x2.50, valve droite ou coudée",
+   "count": 6,
+   "to": "/piece/chambre-a-air-10x250-valve-0x90",
+   "cta": "Chambres à air"
+  },
+  {
+   "label": "Pneu plein",
+   "size": "10x2.50-6.5 (jante 6,5 pouces)",
+   "count": 12,
+   "to": "/piece/pneu-plein-10x2-50-6-5-noir-cityneye",
+   "cta": "Pneus pleins"
+  }
+ ],
+ "care": [
+  "Le tambour avant est le seul frein mécanique : fais-le régler dès que la course du levier s'allonge.",
+  "Cadre en acier : sèche-le après la pluie et surveille la rouille sur les rayures.",
+  "Pneus tubeless : vérifie la pression chaque mois, un pneu mou s'use vite."
+ ],
+ "price": {
+  "text": "Prix affiché : 499,99 € chez Fnac et Darty (relevé le 20/10/2026).",
+  "source": "fnac.com, darty.com"
+ },
+ "faq": [
+  {
+   "q": "Quelle taille de pneu pour la Pure Escape ?",
+   "a": "Des pneus tubeless de 10 pouces en 10x2.50-6.5, aussi notés 60/70-6.5, sur une jante de 6,5 pouces."
+  },
+  {
+   "q": "La Pure Escape a-t-elle des plaquettes de frein ?",
+   "a": "Non. Elle freine avec un tambour à l'avant et un frein électrique régénératif à l'arrière : pas de plaquettes ni de disque à changer."
+  },
+  {
+   "q": "Quelle est l'autonomie réelle de la Pure Escape ?",
+   "a": "Le Labo Fnac a mesuré 26,3 km, pour 44 km annoncés. Ton poids, le relief et le mode de conduite font varier ce chiffre."
+  },
+  {
+   "q": "Combien de temps pour recharger la Pure Escape ?",
+   "a": "Pure annonce 6 heures. Le Labo Fnac a mesuré 4 h 31 pour une charge complète."
+  },
+  {
+   "q": "Peut-on mettre des pneus pleins sur la Pure Escape ?",
+   "a": "Oui, des pneus pleins en 10x2.50-6.5 existent. Ils suppriment les crevaisons mais filtrent moins les chocs qu'un pneu gonflé."
+  }
+ ],
+ "sources": [
+  {
+   "label": "L'Éclaireur Fnac — test Labo Pure Electric Escape",
+   "url": "https://leclaireur.fnac.com/test/653704-test-labo-de-la-pure-electric-escape-elle-a-presque-tout-pour-elle/"
+  },
+  {
+   "label": "Fnac — Pure Escape 350 W",
+   "url": "https://www.fnac.com/Trottinette-electrique-Pure-Electric-Escape-350-W-Noir/a22016575/w-4"
+  },
+  {
+   "label": "Darty — Pure Escape",
+   "url": "https://www.darty.com/nav/achat/sports_loisirs/glisse_urbaine/trottinette_electrique/pure_electric_escape.html"
+  },
+  {
+   "label": "Frandroid — Pure Escape en promotion",
+   "url": "https://www.frandroid.com/bons-plans/2970977_fnac-et-darty-bradent-a-un-super-prix-cette-trottinette-electrique-puissante-confortable-et-robuste"
+  },
+  {
+   "label": "Currys — Pure Escape (vidéo)",
+   "url": "https://www.youtube.com/watch?v=c0cLK4zWnyY"
+  }
+ ]
+}

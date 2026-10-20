@@ -1,0 +1,140 @@
+{
+ "displayName": "Pure Advance Flex",
+ "metaTitle": "Pure Advance Flex : fiche technique, avis et pièces",
+ "metaDescription": "Pure Advance Flex : pliage en trois, 500 W (710 W en pointe), batterie 36 V 9,5 Ah, pneus 10x2.50-6.5 tubeless, frein tambour avant. Avis et pièces.",
+ "intro": [
+  "La Pure Advance Flex est la version pliante de la Pure Advance : même position de conduite face à la route, mais un pliage en trois qui la ramène à la taille d'une valise. Cleanrider l'a essayée en juillet 2023. Elle se range sous un bureau ou dans un coffre.",
+  "Moteur de 500 W (710 W en pointe), batterie 36 V de 9,5 Ah, 40 km annoncés, pneus tubeless de 10 pouces, tambour à l'avant et frein électrique à l'arrière, sans suspension. À 16 kg environ, elle vise les trajets mixtes avec train, métro ou bus."
+ ],
+ "specs": [
+  [
+   "Moteur",
+   "500 W (710 W en pointe)"
+  ],
+  [
+   "Vitesse",
+   "25 km/h max sur la voie publique en France"
+  ],
+  [
+   "Batterie",
+   "36 V, 9,5 Ah (environ 342 Wh)"
+  ],
+  [
+   "Autonomie",
+   "40 km annoncés, 24 à 40 km mesurés selon le parcours (Capital, Cleanrider)"
+  ],
+  [
+   "Poids",
+   "16 à 16,2 kg selon les fiches"
+  ],
+  [
+   "Charge max",
+   "120 kg"
+  ],
+  [
+   "Roues",
+   "10 pouces, 10x2.50-6.5 tubeless (jante 6,5 pouces)"
+  ],
+  [
+   "Freins",
+   "Tambour avant + frein électrique régénératif arrière"
+  ],
+  [
+   "Suspension",
+   "aucune"
+  ],
+  [
+   "Étanchéité",
+   "IPX5 selon Fixwheel et Mobilityurban"
+  ],
+  [
+   "Temps de charge",
+   "environ 6 h"
+  ]
+ ],
+ "pros": [
+  "Pliage compact, facile à emporter dans les transports (Frandroid).",
+  "Jusqu'à 40 km parcourus en mode intermédiaire sur parcours plat (Cleanrider).",
+  "Arrêt en 4,5 m environ depuis 25 km/h (Capital)."
+ ],
+ "cons": [
+  "Pas de suspension : conduite ferme sur chaussée irrégulière (Cleanrider, Frandroid).",
+  "Freinage jugé peu mordant, sans frein mécanique à l'arrière (Cleanrider).",
+  "Environ 24 km seulement à 20–25 km/h avec un pilote de 82 kg (Capital)."
+ ],
+ "parts": [
+  {
+   "label": "Pneu",
+   "size": "10x2.50-6.5 / 60/70-6.5 tubeless (10 pouces)",
+   "count": 14,
+   "to": "/piece/pneu-tubeless-60-70-6-5-wanda",
+   "cta": "Pneus 10 pouces"
+  },
+  {
+   "label": "Chambre à air",
+   "size": "10x2.50, valve droite ou coudée",
+   "count": 6,
+   "to": "/piece/chambre-a-air-10x2-50-valve-coudee-135x45",
+   "cta": "Chambres à air"
+  }
+ ],
+ "care": [
+  "Le pliage en trois a plusieurs articulations : vérifie leur serrage et nettoie-les régulièrement.",
+  "Le tambour avant est le seul frein mécanique : fais-le régler dès que la course du levier s'allonge.",
+  "Sans suspension, garde la bonne pression dans les pneus tubeless : contrôle-la chaque mois."
+ ],
+ "price": {
+  "text": "Prix de référence : 799,99 €, affiché en promotion à 749,99 € chez Fnac et Darty (selon Frandroid, 2026).",
+  "source": "Frandroid"
+ },
+ "faq": [
+  {
+   "q": "Quelle taille de pneu pour la Pure Advance Flex ?",
+   "a": "Des pneus tubeless de 10 pouces en 10x2.50-6.5, aussi notés 60/70-6.5, sur une jante de 6,5 pouces."
+  },
+  {
+   "q": "La Pure Advance Flex a-t-elle des plaquettes de frein ?",
+   "a": "Non. Elle freine avec un tambour à l'avant et un frein électrique régénératif à l'arrière : pas de plaquettes ni de disque à changer."
+  },
+  {
+   "q": "Quelle est l'autonomie réelle de la Pure Advance Flex ?",
+   "a": "Cleanrider a obtenu 40 km en mode intermédiaire sur un parcours plat, et environ 33 km à pleine puissance sur parcours mixte. Capital a mesuré environ 24 km à 20–25 km/h avec un pilote de 82 kg."
+  },
+  {
+   "q": "Quelle différence entre la Pure Advance Flex et la Pure Advance ?",
+   "a": "Le pliage : l'Advance Flex se replie en trois pour devenir très compacte, l'Advance classique se plie seulement à la colonne. La position de conduite face à la route est la même."
+  },
+  {
+   "q": "Peut-on mettre une chambre à air sur la Pure Advance Flex ?",
+   "a": "Oui, une chambre à air 10x2.50 se monte dans le pneu tubeless si tu crèves souvent. Choisis la valve (droite ou coudée) qui sort bien de ta jante."
+  }
+ ],
+ "sources": [
+  {
+   "label": "Cleanrider — essai Pure Advance Flex",
+   "url": "https://www.cleanrider.com/essais/trottinette-electrique/essai-pure-advance-flex-que-vaut-trottinette-electrique-ultra-comapcte/"
+  },
+  {
+   "label": "Capital — test Pure Advance Flex",
+   "url": "https://www.capital.fr/conso/test-pure-advance-flex-une-trottinette-compacte-a-la-conduite-originale-1504349"
+  },
+  {
+   "label": "Frandroid — Pure Advance Flex chez Fnac et Darty",
+   "url": "https://www.frandroid.com/bons-plans/3146377_pure-advance-flex-cette-trottinette-pure-electric-qui-se-plie-en-4-allege-son-prix-chez-fnac-et-darty"
+  },
+  {
+   "label": "Mobilityurban — Pure Advance Flex",
+   "url": "https://www.mobilityurban.fr/marque/trottinette-electrique-pure/trottinette-pure-flex-advanced.html"
+  },
+  {
+   "label": "Fixwheel — Pure Advance Flex",
+   "url": "https://fixwheel.fr/products/pure-advance-flex"
+  }
+ ],
+ "video": {
+  "id": "Nstgtl7TeFM",
+  "title": "Test trottinette électrique Ultra-compacte PURE ADVANCE FLEX un modèle unique !",
+  "channel": "Mobilityurban",
+  "uploadDate": "2024-09-05"
+ }
+}

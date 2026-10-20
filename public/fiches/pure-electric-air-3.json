@@ -1,0 +1,122 @@
+{
+ "displayName": "Pure Air³",
+ "metaTitle": "Pure Air³ : fiche technique et pièces",
+ "metaDescription": "Pure Air³ : 350 W (550 W en pointe), batterie 7,2 Ah, pneus 10x2.50-6.5 tubeless, frein tambour avant, IP65. Différences avec la Pro, entretien et pièces.",
+ "intro": [
+  "La Pure Air³ est la version de base de la troisième génération de Pure Air, la gamme urbaine de la marque britannique Pure Electric. Elle se distingue des Air³ Pro et Air³ Pro+, plus puissantes et mieux dotées en batterie. Ne confonds pas ses cotes avec celles de ses grandes sœurs.",
+  "Moteur de 350 W (550 W en pointe), batterie de 7,2 Ah, jusqu'à 30 km annoncés, pneus tubeless de 10 pouces, tambour à l'avant et frein électrique à l'arrière, sans suspension. C'est une trottinette pour les trajets courts en ville."
+ ],
+ "specs": [
+  [
+   "Moteur",
+   "350 W (550 W en pointe)"
+  ],
+  [
+   "Vitesse",
+   "25 km/h max sur la voie publique en France"
+  ],
+  [
+   "Batterie",
+   "7,2 Ah (selon Voltnation)"
+  ],
+  [
+   "Autonomie annoncée",
+   "jusqu'à 30 km"
+  ],
+  [
+   "Poids",
+   "15,5 kg (selon Boulanger)"
+  ],
+  [
+   "Charge max",
+   "120 kg (selon Boulanger)"
+  ],
+  [
+   "Roues",
+   "10 pouces, 10x2.50-6.5 tubeless (jante 6,5 pouces)"
+  ],
+  [
+   "Freins",
+   "Tambour avant + frein électrique régénératif arrière"
+  ],
+  [
+   "Suspension",
+   "aucune"
+  ],
+  [
+   "Étanchéité",
+   "IP65"
+  ],
+  [
+   "Temps de charge",
+   "4 h (selon Boulanger)"
+  ]
+ ],
+ "pros": [
+  "Légère : 15,5 kg selon la fiche Boulanger.",
+  "Étanchéité IP65 (Halfords, Boulanger).",
+  "Frein à tambour avant, qui demande peu d'entretien, et pneus tubeless de 10 pouces."
+ ],
+ "cons": [
+  "Autonomie modeste : 30 km annoncés, en conditions favorables.",
+  "Pas de suspension : confort limité sur pavés.",
+  "Moteur de 550 W en pointe, moins à l'aise en côte que les Air³ Pro (710 W en pointe selon la Fnac)."
+ ],
+ "parts": [
+  {
+   "label": "Pneu",
+   "size": "10x2.50-6.5 / 60/70-6.5 tubeless (10 pouces)",
+   "count": 14,
+   "to": "/piece/pneu-tubeless-60-70-6-5-wanda",
+   "cta": "Pneus 10 pouces"
+  },
+  {
+   "label": "Chambre à air",
+   "size": "10x2.50, valve droite ou coudée",
+   "count": 6,
+   "to": "/piece/chambre-a-air-10x2-50-valve-coudee-135x45",
+   "cta": "Chambres à air"
+  }
+ ],
+ "care": [
+  "Le tambour avant est le seul frein mécanique : fais-le régler dès que la course du levier s'allonge.",
+  "Sans suspension, ce sont les pneus qui encaissent : vérifie leur pression chaque mois.",
+  "Contrôle le serrage du mécanisme de pliage : un jeu qui s'installe se corrige tôt."
+ ],
+ "faq": [
+  {
+   "q": "Quelle taille de pneu pour la Pure Air³ ?",
+   "a": "Des pneus tubeless de 10 pouces en 10x2.50-6.5, aussi notés 60/70-6.5, sur une jante de 6,5 pouces."
+  },
+  {
+   "q": "La Pure Air³ a-t-elle des plaquettes de frein ?",
+   "a": "Non. Elle freine avec un tambour à l'avant et un frein électrique régénératif à l'arrière : pas de plaquettes ni de disque à changer."
+  },
+  {
+   "q": "Quelle différence entre la Pure Air³ et l'Air³ Pro ?",
+   "a": "La puissance et la batterie : l'Air³ annonce 350 W (550 W en pointe) et 30 km, l'Air³ Pro monte à 500 W (710 W en pointe) selon la Fnac. Vérifie la plaque de ta trottinette avant de commander une pièce électrique."
+  },
+  {
+   "q": "Peut-on mettre une chambre à air sur la Pure Air³ ?",
+   "a": "Oui, une chambre à air 10x2.50 se monte dans le pneu tubeless si tu crèves souvent. Choisis la valve (droite ou coudée) qui sort bien de ta jante."
+  }
+ ],
+ "sources": [
+  {
+   "label": "Boulanger — fiche technique Pure Air³",
+   "url": "https://boulanger.scene7.com/is/content/Boulanger/5060937155094_f_0"
+  },
+  {
+   "label": "Halfords — Pure Air³",
+   "url": "https://www.halfords.com/scooters/all-scooters/pure-air3-electric-scooter-matte-black-271971.html"
+  },
+  {
+   "label": "Voltnation — Pure Air³ reconditionnée",
+   "url": "https://voltnation.fr/fr/menu/outlet/trottinettes-reconditionnees/pure-electric-3894"
+  },
+  {
+   "label": "Fnac — Pure Air³ Pro",
+   "url": "https://www.fnac.com/Trottinette-electrique-Pure-Electric-Pure-Air3-Pro-710-W-Blanc-et-Gris/a17756871/w-4"
+  }
+ ]
+}

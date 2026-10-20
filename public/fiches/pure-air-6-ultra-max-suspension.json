@@ -1,0 +1,142 @@
+{
+ "displayName": "Pure Air⁶ Ultra Max Suspension",
+ "metaTitle": "Pure Air⁶ Ultra Max : fiche technique et pièces",
+ "metaDescription": "Pure Air⁶ Ultra Max Suspension : 1 900 W en pointe, batterie 48 V, double suspension, pneus 10x2.50-6.5, tambour avant et disque arrière. Pièces.",
+ "intro": [
+  "La Pure Air⁶ Ultra Max Suspension est le haut de la gamme Air⁶ de Pure Electric. Elle reprend la batterie de l'Air⁶ Ultra mais monte à 1 900 W en pointe et ajoute un frein à disque à l'arrière. En août 2026, Cleanrider relevait 879,99 € en Belgique et aucune date française.",
+  "Moteur de 500 W (1 900 W en pointe), batterie 46,8 V de 13,3 Ah, jusqu'à 90 km annoncés, double suspension, pneus tubeless de 10 pouces. À 26,2 kg, c'est la plus lourde des Air⁶ : un choix pour les longs trajets et les côtes, pas pour le métro."
+ ],
+ "specs": [
+  [
+   "Moteur",
+   "500 W (1 900 W en pointe)"
+  ],
+  [
+   "Vitesse",
+   "25 km/h max sur la voie publique en France"
+  ],
+  [
+   "Batterie",
+   "46,8 V, 13,3 Ah (environ 622 Wh)"
+  ],
+  [
+   "Autonomie",
+   "jusqu'à 90 km annoncés, 45 km « réalistes » selon Pure Electric Irlande"
+  ],
+  [
+   "Poids",
+   "26,2 kg"
+  ],
+  [
+   "Charge max",
+   "120 kg"
+  ],
+  [
+   "Roues",
+   "10 pouces, 10x2.50-6.5 tubeless (jante 6,5 pouces)"
+  ],
+  [
+   "Freins",
+   "Tambour avant + disque arrière, avec frein électrique régénératif"
+  ],
+  [
+   "Suspension",
+   "Fourche télescopique avant, amortisseurs arrière"
+  ],
+  [
+   "Étanchéité",
+   "IP65"
+  ],
+  [
+   "Temps de charge",
+   "jusqu'à 9 h selon Currys (6 à 10 h selon le manuel)"
+  ]
+ ],
+ "pros": [
+  "La plus puissante des Air⁶ : 1 900 W en pointe contre 1 200 W pour l'Air⁶ Ultra (Cleanrider).",
+  "Deux freins mécaniques : tambour à l'avant, disque à l'arrière (Electric Kicks).",
+  "Double suspension et étanchéité IP65 (Pure Electric)."
+ ],
+ "cons": [
+  "26,2 kg : la porter dans un escalier est une vraie corvée.",
+  "Autonomie annoncée de 90 km, mais Pure Electric Irlande parle lui-même de 45 km réalistes.",
+  "Recharge longue, jusqu'à 9 h avec le chargeur fourni (Currys).",
+  "Pas encore de prix ni de date de sortie en France (Cleanrider, août 2026)."
+ ],
+ "parts": [
+  {
+   "label": "Pneu",
+   "size": "10x2.50-6.5 / 60/70-6.5 tubeless (10 pouces)",
+   "count": 14,
+   "to": "/piece/pneu-tubeless-60-70-6-5-wanda",
+   "cta": "Pneus 10 pouces"
+  },
+  {
+   "label": "Chambre à air",
+   "size": "10x2.50, valve droite ou coudée",
+   "count": 6,
+   "to": "/piece/chambre-a-air-10x250-valve-90x90",
+   "cta": "Chambres à air"
+  },
+  {
+   "label": "Pneu plein",
+   "size": "10x2.50-6.5 (jante 6,5 pouces)",
+   "count": 12,
+   "to": "/piece/pneu-plein-10x2-50-6-5-noir-cityneye",
+   "cta": "Pneus pleins"
+  }
+ ],
+ "care": [
+  "Disque arrière : surveille l'épaisseur des plaquettes et garde le disque propre, sans graisse.",
+  "Tambour avant : fais-le régler dès que la course du levier s'allonge.",
+  "Avec 26 kg et 1 900 W, la visserie de la potence et des bras de suspension travaille : contrôle-la régulièrement."
+ ],
+ "faq": [
+  {
+   "q": "Quelle taille de pneu pour la Pure Air⁶ Ultra Max Suspension ?",
+   "a": "Des pneus tubeless de 10 pouces en 10x2.50-6.5, aussi notés 60/70-6.5, sur une jante de 6,5 pouces."
+  },
+  {
+   "q": "Quelles plaquettes pour la Pure Air⁶ Ultra Max Suspension ?",
+   "a": "Seul le frein arrière est à disque. Nous n'avons pas encore la référence de son étrier : compare la forme de ta plaquette usée avant de commander. L'avant freine par tambour, sans plaquettes."
+  },
+  {
+   "q": "Quelle différence entre l'Air⁶ Ultra Max et l'Air⁶ Ultra ?",
+   "a": "Même batterie et même autonomie annoncée (90 km). L'Ultra Max monte à 1 900 W en pointe au lieu de 1 200 W, ajoute un frein à disque arrière et pèse 26,2 kg contre 23,5 kg (Cleanrider)."
+  },
+  {
+   "q": "Peut-on mettre une chambre à air sur la Pure Air⁶ Ultra Max Suspension ?",
+   "a": "Oui, une chambre à air 10x2.50 se monte dans le pneu tubeless si tu crèves souvent. Choisis la valve (droite ou coudée) qui sort bien de ta jante."
+  },
+  {
+   "q": "Peut-on mettre des pneus pleins sur la Pure Air⁶ Ultra Max Suspension ?",
+   "a": "Oui, des pneus pleins en 10x2.50-6.5 existent. Ils suppriment les crevaisons mais filtrent moins les chocs qu'un pneu gonflé."
+  }
+ ],
+ "sources": [
+  {
+   "label": "Pure Electric — Air⁶ Ultra Max Suspension",
+   "url": "https://www.pureelectric.com/products/air-6-ultra-max-suspension"
+  },
+  {
+   "label": "Pure Electric Pays-Bas — Air⁶ Ultra Max Suspension",
+   "url": "https://pureelectric.nl/en/products/air-6-ultra-max-suspension"
+  },
+  {
+   "label": "Electric Kicks — Pure Air⁶ Ultra Max Suspension",
+   "url": "https://www.electrickicks.com.au/products/pure-air-6-ultra-max-suspension"
+  },
+  {
+   "label": "Currys — Pure Air⁶ Ultra Max Suspension",
+   "url": "https://www.currys.co.uk/products/pure-electric-pure-air6-ultra-max-suspension-folding-scooter-black-10301696.html"
+  },
+  {
+   "label": "Pure Electric Irlande — gamme",
+   "url": "https://pureelectric.ie/collections/all-electric-scooters"
+  },
+  {
+   "label": "Cleanrider — gamme Pure Air⁶ et Escape 2026 à double suspension",
+   "url": "https://www.cleanrider.com/actus/pure-air6-escape-trottinettes-electriques-double-suspension/"
+  }
+ ]
+}

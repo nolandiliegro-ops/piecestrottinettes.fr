@@ -1,0 +1,137 @@
+{
+ "displayName": "Pure Air⁶ Suspension",
+ "metaTitle": "Pure Air⁶ Suspension : fiche technique, avis et pièces",
+ "metaDescription": "Pure Air⁶ Suspension : 924 W en pointe, batterie 36 V, double suspension, pneus 10x2.50-6.5, frein tambour avant, chargeur prise RCA. Avis et pièces.",
+ "intro": [
+  "La Pure Air⁶ Suspension est le modèle d'entrée de la gamme Air⁶ de Pure Electric, la marque britannique. C'est la première Pure Air à recevoir une fourche télescopique à l'avant et des amortisseurs à l'arrière. En août 2026, Cleanrider relevait un prix de 499,99 € en Belgique et une disponibilité française encore incertaine.",
+  "Moteur de 350 W (924 W en pointe), batterie 36 V de 7,5 Ah, jusqu'à 45 km annoncés, pneus tubeless de 10 pouces, tambour à l'avant et frein électrique à l'arrière. C'est une trottinette de ville qui mise sur le confort plus que sur l'autonomie."
+ ],
+ "specs": [
+  [
+   "Moteur",
+   "350 W (924 W en pointe)"
+  ],
+  [
+   "Vitesse",
+   "25 km/h max sur la voie publique en France"
+  ],
+  [
+   "Batterie",
+   "36 V, 7,5 Ah (270 Wh)"
+  ],
+  [
+   "Autonomie",
+   "jusqu'à 45 km annoncés, environ 25 km en usage réel selon Goosed.ie"
+  ],
+  [
+   "Poids",
+   "21,4 kg (selon Pure Electric)"
+  ],
+  [
+   "Roues",
+   "10 pouces, 10x2.50-6.5 tubeless (jante 6,5 pouces)"
+  ],
+  [
+   "Freins",
+   "Tambour avant + frein électrique régénératif arrière"
+  ],
+  [
+   "Suspension",
+   "Fourche télescopique avant, amortisseurs arrière"
+  ],
+  [
+   "Étanchéité",
+   "IP65"
+  ],
+  [
+   "Prise de charge",
+   "RCA"
+  ],
+  [
+   "Chargeur",
+   "36 V (42 V en sortie)"
+  ]
+ ],
+ "pros": [
+  "Double suspension réussie, qui lisse les pavés et les mauvais revêtements (Goosed.ie).",
+  "Frein à tambour avant, présenté comme peu exigeant en entretien (Pure Electric).",
+  "Étanchéité IP65 et pneus tubeless de 10 pouces (Pure Electric)."
+ ],
+ "cons": [
+  "Autonomie réelle d'environ 25 km, loin des 45 km annoncés (Goosed.ie).",
+  "Environ 21 kg : elle se porte, mais pas longtemps.",
+  "Un seul frein mécanique, le tambour avant.",
+  "Disponibilité en France incertaine à l'été 2026 (Cleanrider)."
+ ],
+ "parts": [
+  {
+   "label": "Pneu",
+   "size": "10x2.50-6.5 / 60/70-6.5 tubeless (10 pouces)",
+   "count": 14,
+   "to": "/piece/pneu-tubeless-10x2-50-6-5-yuanxing",
+   "cta": "Pneus 10 pouces"
+  },
+  {
+   "label": "Chambre à air",
+   "size": "10x2.50, valve droite ou coudée",
+   "count": 6,
+   "to": "/piece/chambre-a-air-10x250-valve-90x90",
+   "cta": "Chambres à air"
+  },
+  {
+   "label": "Pneu plein",
+   "size": "10x2.50-6.5 (jante 6,5 pouces)",
+   "count": 12,
+   "to": "/piece/pneu-plein-10x2-50-6-5-noir-cityneye",
+   "cta": "Pneus pleins"
+  },
+  {
+   "label": "Chargeur",
+   "size": "36 V → 42 V, prise RCA",
+   "count": 2,
+   "to": "/piece/pack-chargeur-36v-42v-2a-connecteur-rca",
+   "cta": "Chargeurs 36 V"
+  }
+ ],
+ "care": [
+  "Le tambour avant est le seul frein mécanique : fais-le régler dès que la course du levier s'allonge.",
+  "Pneus tubeless : vérifie la pression chaque mois, un pneu mou s'use vite et crève plus facilement.",
+  "Suspensions : nettoie les axes et contrôle le jeu des bras, surtout après la pluie."
+ ],
+ "faq": [
+  {
+   "q": "Quelle taille de pneu pour la Pure Air⁶ Suspension ?",
+   "a": "Des pneus tubeless de 10 pouces en 10x2.50-6.5, aussi notés 60/70-6.5, sur une jante de 6,5 pouces."
+  },
+  {
+   "q": "La Pure Air⁶ Suspension a-t-elle des plaquettes de frein ?",
+   "a": "Non. Elle freine avec un tambour à l'avant et un frein électrique régénératif à l'arrière : pas de plaquettes ni de disque à changer."
+  },
+  {
+   "q": "Quel chargeur pour la Pure Air⁶ Suspension ?",
+   "a": "Un chargeur 36 V (42 V en sortie) avec prise RCA."
+  },
+  {
+   "q": "Quelle est l'autonomie réelle de la Pure Air⁶ Suspension ?",
+   "a": "Pure annonce jusqu'à 45 km. Le test de Goosed.ie estime environ 25 km en usage réel. Ton poids, le relief et le mode de conduite font varier ce chiffre."
+  },
+  {
+   "q": "Peut-on mettre des pneus pleins sur la Pure Air⁶ Suspension ?",
+   "a": "Oui, des pneus pleins en 10x2.50-6.5 existent. Ils suppriment les crevaisons mais filtrent moins les chocs qu'un pneu gonflé."
+  }
+ ],
+ "sources": [
+  {
+   "label": "Pure Electric Pays-Bas — Air⁶ Suspension",
+   "url": "https://pureelectric.nl/en/products/air-6-suspension"
+  },
+  {
+   "label": "Goosed.ie — test Pure Air⁶ Suspension",
+   "url": "https://goosed.ie/reviews/pure-air-6-suspension-review-comfort-far-beyond-the-price-tag/"
+  },
+  {
+   "label": "Cleanrider — gamme Pure Air⁶ et Escape 2026 à double suspension",
+   "url": "https://www.cleanrider.com/actus/pure-air6-escape-trottinettes-electriques-double-suspension/"
+  }
+ ]
+}

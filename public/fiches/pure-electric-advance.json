@@ -1,0 +1,151 @@
+{
+ "displayName": "Pure Electric Advance",
+ "metaTitle": "Pure Advance : fiche technique, avis et pièces",
+ "metaDescription": "Pure Advance : 500 W (710 W en pointe), 36 V 9,6 Ah, pneus 10x2.50-6.5 tubeless, frein tambour avant, chargeur prise RCA. Entretien et pièces.",
+ "intro": [
+  "La Pure Advance est la trottinette à position de conduite face à la route de Pure Electric : tu poses un pied de chaque côté de la colonne, comme sur un gyropode. Présentée en 2023 avec l'Advance+ et l'Advance Flex, c'est la version de base, avec la plus petite batterie des trois.",
+  "Moteur de 500 W (710 W en pointe), batterie de 9,6 Ah, jusqu'à 40 km annoncés, pneus tubeless de 10 pouces, tambour à l'avant et frein électrique à l'arrière. À 16,2 kg et sans suspension, elle vise la ville et les trajets courts."
+ ],
+ "specs": [
+  [
+   "Moteur",
+   "500 W (710 W en pointe)"
+  ],
+  [
+   "Vitesse",
+   "25 km/h max sur la voie publique en France"
+  ],
+  [
+   "Batterie",
+   "9,6 Ah, 37 V selon Pure Electric France et le manuel (36 V selon Ecraft)"
+  ],
+  [
+   "Autonomie annoncée",
+   "jusqu'à 40 km"
+  ],
+  [
+   "Poids",
+   "16,2 kg"
+  ],
+  [
+   "Charge max",
+   "120 kg"
+  ],
+  [
+   "Roues",
+   "10 pouces, 10x2.50-6.5 tubeless (jante 6,5 pouces)"
+  ],
+  [
+   "Freins",
+   "Tambour avant + frein électrique régénératif arrière"
+  ],
+  [
+   "Suspension",
+   "aucune"
+  ],
+  [
+   "Étanchéité",
+   "IP65"
+  ],
+  [
+   "Prise de charge",
+   "RCA"
+  ],
+  [
+   "Chargeur",
+   "36 V (42 V en sortie)"
+  ],
+  [
+   "Temps de charge",
+   "environ 6 h"
+  ]
+ ],
+ "pros": [
+  "Position de conduite face à la route, un pied de chaque côté de la colonne, comme sur un gyropode (Camping-Car.com).",
+  "16,2 kg : légère pour une trottinette à pneus de 10 pouces (Pure Electric).",
+  "Étanchéité IP65 et pneus tubeless (Pure Electric France)."
+ ],
+ "cons": [
+  "Pas de suspension : confort limité sur pavés et chaussée dégradée.",
+  "Un seul frein mécanique, le tambour avant.",
+  "Plus petite batterie de la gamme Advance : 40 km annoncés contre 50 km pour l'Advance+."
+ ],
+ "parts": [
+  {
+   "label": "Pneu",
+   "size": "10x2.50-6.5 / 60/70-6.5 tubeless (10 pouces)",
+   "count": 14,
+   "to": "/piece/pneu-tubeless-60-70-6-5-wanda",
+   "cta": "Pneus 10 pouces"
+  },
+  {
+   "label": "Chambre à air",
+   "size": "10x2.50, valve droite ou coudée",
+   "count": 6,
+   "to": "/piece/chambre-a-air-10x250-valve-0x90",
+   "cta": "Chambres à air"
+  },
+  {
+   "label": "Chargeur",
+   "size": "36 V → 42 V, prise RCA",
+   "count": 2,
+   "to": "/piece/pack-chargeur-36v-42v-2a-connecteur-rca",
+   "cta": "Chargeurs 36 V"
+  }
+ ],
+ "care": [
+  "Le tambour avant est le seul frein mécanique : fais-le régler dès que la course du levier s'allonge.",
+  "Sans suspension, ce sont les pneus qui encaissent : garde la bonne pression, contrôle-la chaque mois.",
+  "Vérifie le serrage de la colonne et du guidon : un jeu qui s'installe se corrige tôt."
+ ],
+ "faq": [
+  {
+   "q": "Quelle taille de pneu pour la Pure Electric Advance ?",
+   "a": "Des pneus tubeless de 10 pouces en 10x2.50-6.5, aussi notés 60/70-6.5, sur une jante de 6,5 pouces."
+  },
+  {
+   "q": "La Pure Electric Advance a-t-elle des plaquettes de frein ?",
+   "a": "Non. Elle freine avec un tambour à l'avant et un frein électrique régénératif à l'arrière : pas de plaquettes ni de disque à changer."
+  },
+  {
+   "q": "Quel chargeur pour la Pure Electric Advance ?",
+   "a": "Un chargeur 36 V (42 V en sortie) avec prise RCA. Compte environ 6 heures pour une charge complète."
+  },
+  {
+   "q": "Quelle différence entre la Pure Advance et l'Advance+ ?",
+   "a": "La batterie : 9,6 Ah pour l'Advance, 12 Ah pour l'Advance+. Pure annonce 40 km pour la première et 50 km pour la seconde, avec le même moteur de 710 W en pointe."
+  },
+  {
+   "q": "Peut-on mettre une chambre à air sur la Pure Electric Advance ?",
+   "a": "Oui, une chambre à air 10x2.50 se monte dans le pneu tubeless si tu crèves souvent. Choisis la valve (droite ou coudée) qui sort bien de ta jante."
+  }
+ ],
+ "sources": [
+  {
+   "label": "Pure Electric France — Pure Advance",
+   "url": "https://pureelectric.fr/fr/products/pure-advance-electric-scooter"
+  },
+  {
+   "label": "Pure Electric Suède — Pure Advance",
+   "url": "https://se.pureelectric.com/products/pure-advance-electric-scooter"
+  },
+  {
+   "label": "Pure Electric Pays-Bas — Pure Advance",
+   "url": "https://pureelectric.nl/fr/products/pure-advance-electric-scooter"
+  },
+  {
+   "label": "Ecraft — Pure Advance",
+   "url": "https://www.ecraft-shop.de/en/produkt/pure-advance/sw10546.1"
+  },
+  {
+   "label": "Camping-Car.com — les trottinettes Pure Electric",
+   "url": "https://www.camping-car.com/accessoires/equipements-et-accessoires/29309-les-trottinettes-electriques-pure-electric-ideales-pour-les-deplacements-des-camping-caristes/"
+  }
+ ],
+ "video": {
+  "id": "7w74EIuFPC4",
+  "title": "Test de la trottinette Électrique Pure Advance.",
+  "channel": "L'inspecteurrider",
+  "uploadDate": "2023-03-05"
+ }
+}

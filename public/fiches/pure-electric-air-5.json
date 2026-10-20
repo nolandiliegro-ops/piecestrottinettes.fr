@@ -1,0 +1,126 @@
+{
+ "displayName": "Pure Air⁵",
+ "metaTitle": "Pure Air⁵ : fiche technique et pièces",
+ "metaDescription": "Pure Air⁵ : 350 W (840 W en pointe), batterie 36 V 7,5 Ah, pneus 10x2.50-6.5 tubeless, frein tambour avant, IP65. Versions, entretien et pièces.",
+ "intro": [
+  "La Pure Air⁵ est la version de base de la cinquième génération de Pure Air, présentée en 2025 par Pure Electric. La gamme compte aussi une Air⁵ Pro et des versions suspendues, dont l'Air⁵ Ultra Suspension. Cette fiche ne concerne que l'Air⁵ simple, sans suspension.",
+  "Moteur de 350 W (840 W en pointe), batterie 36 V de 7,5 Ah (266 Wh), jusqu'à 46,9 km annoncés, pneus tubeless de 10 pouces, tambour à l'avant et frein électrique à l'arrière. Une trottinette urbaine simple, étanche IP65, pour les trajets quotidiens."
+ ],
+ "specs": [
+  [
+   "Moteur",
+   "350 W (840 W en pointe)"
+  ],
+  [
+   "Vitesse",
+   "25 km/h max sur la voie publique en France"
+  ],
+  [
+   "Batterie",
+   "36 V, 7,5 Ah (266 Wh, selon la Fnac)"
+  ],
+  [
+   "Autonomie annoncée",
+   "jusqu'à 46,9 km"
+  ],
+  [
+   "Poids",
+   "environ 16,2 kg"
+  ],
+  [
+   "Charge max",
+   "120 kg (selon Pure Electric Irlande)"
+  ],
+  [
+   "Roues",
+   "10 pouces, 10x2.50-6.5 tubeless (jante 6,5 pouces)"
+  ],
+  [
+   "Freins",
+   "Tambour avant + frein électrique régénératif arrière"
+  ],
+  [
+   "Suspension",
+   "aucune"
+  ],
+  [
+   "Étanchéité",
+   "IP65"
+  ],
+  [
+   "Temps de charge",
+   "6 h"
+  ]
+ ],
+ "pros": [
+  "Étanchéité IP65 (Pure Electric).",
+  "Frein à tambour avant, qui demande peu d'entretien (Pure Electric Irlande).",
+  "Puissance de pointe en hausse : 840 W sur la fiche actuelle, contre 710 W sur une ancienne page Pure Electric."
+ ],
+ "cons": [
+  "Pas de suspension : confort limité sur pavés et chaussée dégradée.",
+  "Les 46,9 km sont une valeur constructeur, sans mesure indépendante publiée.",
+  "Les fiches Pure Electric ne s'accordent pas (30 km et 710 W sur une ancienne page) : vérifie la version de ta trottinette."
+ ],
+ "parts": [
+  {
+   "label": "Pneu",
+   "size": "10x2.50-6.5 / 60/70-6.5 tubeless (10 pouces)",
+   "count": 14,
+   "to": "/piece/pneu-tubeless-60-70-6-5-wanda",
+   "cta": "Pneus 10 pouces"
+  },
+  {
+   "label": "Chambre à air",
+   "size": "10x2.50, valve droite ou coudée",
+   "count": 6,
+   "to": "/piece/chambre-a-air-10x2-50-valve-coudee-135x45",
+   "cta": "Chambres à air"
+  }
+ ],
+ "care": [
+  "Le tambour avant est le seul frein mécanique : fais-le régler dès que la course du levier s'allonge.",
+  "Pneus tubeless : contrôle la pression chaque mois, un pneu mou s'use vite et crève plus facilement.",
+  "Contrôle le serrage du mécanisme de pliage et de la potence."
+ ],
+ "faq": [
+  {
+   "q": "Quelle taille de pneu pour la Pure Air⁵ ?",
+   "a": "Des pneus tubeless de 10 pouces en 10x2.50-6.5, aussi notés 60/70-6.5, sur une jante de 6,5 pouces."
+  },
+  {
+   "q": "La Pure Air⁵ a-t-elle des plaquettes de frein ?",
+   "a": "Non. Elle freine avec un tambour à l'avant et un frein électrique régénératif à l'arrière : pas de plaquettes ni de disque à changer."
+  },
+  {
+   "q": "Combien de temps pour recharger la Pure Air⁵ ?",
+   "a": "Environ 6 heures pour une charge complète, selon la Fnac et Pure Electric."
+  },
+  {
+   "q": "Quelle différence entre la Pure Air⁵ et l'Air⁵ Ultra Suspension ?",
+   "a": "L'Air⁵ n'a pas de suspension et annonce 350 W (840 W en pointe) pour 46,9 km. L'Air⁵ Ultra Suspension est suspendue, monte à 1 201 W en pointe et annonce 93,8 km (Pure Electric)."
+  },
+  {
+   "q": "Peut-on mettre une chambre à air sur la Pure Air⁵ ?",
+   "a": "Oui, une chambre à air 10x2.50 se monte dans le pneu tubeless si tu crèves souvent. Choisis la valve (droite ou coudée) qui sort bien de ta jante."
+  }
+ ],
+ "sources": [
+  {
+   "label": "Pure Electric — Pure Air⁵",
+   "url": "https://www.pureelectric.com/products/pure-air-5-electric-scooter"
+  },
+  {
+   "label": "Fnac — Pure Air⁵ 350 W",
+   "url": "https://www.fnac.com/Trottinette-electrique-Pure-Electric-Air5-350-W-Noir/a21888221/w-4"
+  },
+  {
+   "label": "Pure Electric Irlande — gamme Pure Air",
+   "url": "https://pureelectric.ie/collections/pure-air-electric-scooters"
+  },
+  {
+   "label": "Pure Electric — découvrir l'Air⁵",
+   "url": "https://www.pureelectric.com/pages/discover-air-5"
+  }
+ ]
+}

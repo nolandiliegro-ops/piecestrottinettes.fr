@@ -1,0 +1,146 @@
+{
+ "displayName": "Pure Air⁶ Ultra Suspension",
+ "metaTitle": "Pure Air⁶ Ultra Suspension : fiche, avis et pièces",
+ "metaDescription": "Pure Air⁶ Ultra Suspension : 1 200 W en pointe, batterie 48 V de 624 Wh, double suspension, pneus 10x2.50-6.5, frein tambour avant. Avis et pièces.",
+ "intro": [
+  "La Pure Air⁶ Ultra Suspension est le modèle longue autonomie de la gamme Air⁶ de Pure Electric, sous l'Ultra Max. Un distributeur suisse la date du 4 février 2026. En août 2026, Cleanrider relevait 649,99 € en Belgique et une sortie française encore à confirmer.",
+  "Moteur de 500 W (1 200 W en pointe), batterie 46,8 V de 13,3 Ah (624 Wh), jusqu'à 90 km annoncés, double suspension et pneus tubeless de 10 pouces. À 23,5 kg, elle s'adresse à ceux qui roulent loin chaque jour sur des pistes cyclables abîmées."
+ ],
+ "specs": [
+  [
+   "Moteur",
+   "500 W (1 200 W en pointe)"
+  ],
+  [
+   "Vitesse",
+   "25 km/h max sur la voie publique en France"
+  ],
+  [
+   "Batterie",
+   "46,8 V, 13,3 Ah (624 Wh)"
+  ],
+  [
+   "Autonomie",
+   "jusqu'à 90 km annoncés, environ 50 km estimés en usage réel par Henntech"
+  ],
+  [
+   "Poids",
+   "23,5 kg"
+  ],
+  [
+   "Charge max",
+   "120 kg (selon Digitec)"
+  ],
+  [
+   "Roues",
+   "10 pouces, 10x2.50-6.5 tubeless (jante 6,5 pouces)"
+  ],
+  [
+   "Freins",
+   "Tambour avant + frein électrique arrière"
+  ],
+  [
+   "Suspension",
+   "Fourche télescopique avant, doubles amortisseurs arrière réglables en précharge"
+  ],
+  [
+   "Étanchéité",
+   "IP65"
+  ],
+  [
+   "Temps de charge",
+   "6 à 9 h selon les fiches, 8 à 9 h mesurées par Henntech"
+  ]
+ ],
+ "pros": [
+  "Double suspension bien réglée, qui absorbe les mauvaises pistes cyclables (Henntech).",
+  "Arrêt d'urgence en moins de 4 m depuis 21 km/h sur sol sec (Henntech).",
+  "Bonne tenue de route : guidon large et stabilisation de direction (Henntech)."
+ ],
+ "cons": [
+  "23,5 kg : lourd à porter à la main (Digitec).",
+  "Recharge longue : 8 à 9 h mesurées avec le chargeur de 1,5 A (Henntech).",
+  "Les 90 km sont obtenus à 15 km/h en mode éco sur terrain plat (Pure Electric) : compte plutôt 50 km (Henntech).",
+  "Disponibilité en France incertaine à l'été 2026 (Cleanrider)."
+ ],
+ "parts": [
+  {
+   "label": "Pneu",
+   "size": "10x2.50-6.5 / 60/70-6.5 tubeless (10 pouces)",
+   "count": 14,
+   "to": "/piece/pneu-tubeless-60-70-6-5-wanda",
+   "cta": "Pneus 10 pouces"
+  },
+  {
+   "label": "Chambre à air",
+   "size": "10x2.50, valve droite ou coudée",
+   "count": 6,
+   "to": "/piece/chambre-a-air-10x250-valve-0x90",
+   "cta": "Chambres à air"
+  },
+  {
+   "label": "Pneu plein",
+   "size": "10x2.50-6.5 (jante 6,5 pouces)",
+   "count": 12,
+   "to": "/piece/pneu-plein-10x2-50-6-5-noir-cityneye",
+   "cta": "Pneus pleins"
+  }
+ ],
+ "care": [
+  "Le tambour avant est le seul frein mécanique : fais-le régler dès que la course du levier s'allonge.",
+  "Règle la précharge des amortisseurs arrière selon ton poids, puis vérifie le serrage des bras.",
+  "Pneus tubeless : contrôle la pression chaque mois, la suspension cache un pneu sous-gonflé."
+ ],
+ "faq": [
+  {
+   "q": "Quelle taille de pneu pour la Pure Air⁶ Ultra Suspension ?",
+   "a": "Des pneus tubeless de 10 pouces en 10x2.50-6.5, aussi notés 60/70-6.5, sur une jante de 6,5 pouces."
+  },
+  {
+   "q": "La Pure Air⁶ Ultra Suspension a-t-elle des plaquettes de frein ?",
+   "a": "Non. Elle freine avec un tambour à l'avant et un frein électrique régénératif à l'arrière : pas de plaquettes ni de disque à changer."
+  },
+  {
+   "q": "Quelle est l'autonomie réelle de la Pure Air⁶ Ultra Suspension ?",
+   "a": "Pure annonce jusqu'à 90 km à 15 km/h en mode éco, sur le plat, avec un pilote de 75 kg. Henntech l'estime à environ 50 km en usage réel."
+  },
+  {
+   "q": "Peut-on mettre une chambre à air sur la Pure Air⁶ Ultra Suspension ?",
+   "a": "Oui, une chambre à air 10x2.50 se monte dans le pneu tubeless si tu crèves souvent. Choisis la valve (droite ou coudée) qui sort bien de ta jante."
+  },
+  {
+   "q": "Peut-on mettre des pneus pleins sur la Pure Air⁶ Ultra Suspension ?",
+   "a": "Oui, des pneus pleins en 10x2.50-6.5 existent. Ils suppriment les crevaisons mais filtrent moins les chocs qu'un pneu gonflé."
+  }
+ ],
+ "sources": [
+  {
+   "label": "Pure Electric Suède — Air⁶ Ultra Suspension",
+   "url": "https://se.pureelectric.com/products/pure-air6-ultra-suspension"
+  },
+  {
+   "label": "Ride and Glide — Pure Air⁶ Ultra Suspension",
+   "url": "https://www.rideandglide.co.uk/product/pure-electric-air%E2%81%B6-ultra-suspension/"
+  },
+  {
+   "label": "Galaxus — Pure Air⁶ Ultra Suspension",
+   "url": "https://www.galaxus.ch/en/s3/product/pure-electric-air6-ultra-suspension-20-kmh-90-km-500-w-e-scooters-standing-66966503?imageIndex=9"
+  },
+  {
+   "label": "Digitec — Pure Air⁶ Ultra Suspension",
+   "url": "https://www.digitec.ch/en/s1/product/pure-electric-air6-ultra-suspension-25-kmh-90-km-500-w-e-scooters-standing-66966503"
+  },
+  {
+   "label": "Henntech — test Pure Air⁶ Ultra (vidéo)",
+   "url": "https://www.youtube.com/watch?v=xhIlL1LDCzo"
+  },
+  {
+   "label": "Manuel Pure Air⁶",
+   "url": "https://manuals.plus/pure-electric/pure-air-6-electric-scooter-manual"
+  },
+  {
+   "label": "Cleanrider — gamme Pure Air⁶ et Escape 2026 à double suspension",
+   "url": "https://www.cleanrider.com/actus/pure-air6-escape-trottinettes-electriques-double-suspension/"
+  }
+ ]
+}
