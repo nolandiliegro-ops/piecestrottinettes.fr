@@ -1,0 +1,145 @@
+{
+ "displayName": "Navee N65i",
+ "metaTitle": "Navee N65i : fiche technique, avis et pièces",
+ "metaDescription": "Navee N65i : 450 W (1 000 W en pointe), batterie 48 V 12,5 Ah, pneus tubeless 80/55-7 (10,5\"), disque arrière 140 mm. Avis, entretien et pièces.",
+ "intro": [
+  "La Navee N65i est l'évolution de la N65, prise en main par Frandroid en juin 2024 au prix de lancement de 699 €. Elle ne doit pas être confondue avec la N65i II, plus récente. Elle se distingue par ses pneus larges et rainurés de 10,5 pouces et par l'absence de suspension.",
+  "Moteur de 450 W (1 000 W en pointe), batterie de 48 V et 12,5 Ah pour 65 km annoncés à 15 km/h, frein à tambour à l'avant, disque et frein électronique à l'arrière. Elle pèse 22,8 kg, accepte 120 kg et reste bridée à 25 km/h."
+ ],
+ "specs": [
+  [
+   "Moteur",
+   "450 W (1 000 W en pointe)"
+  ],
+  [
+   "Vitesse",
+   "25 km/h"
+  ],
+  [
+   "Autonomie",
+   "jusqu'à 65 km annoncés à 15 km/h ; 61,5 km mesurés par le Labo Fnac, 25 à 33 km par Les Numériques (100 kg, mode sport, 0 à 14 °C)"
+  ],
+  [
+   "Batterie",
+   "48 V, 12,5 Ah (600 Wh)"
+  ],
+  [
+   "Poids",
+   "22,8 kg"
+  ],
+  [
+   "Charge max",
+   "120 kg"
+  ],
+  [
+   "Roues",
+   "10,5 pouces, tubeless 80/55-7"
+  ],
+  [
+   "Freins",
+   "Tambour avant + disque arrière Ø 140 mm et frein électronique"
+  ],
+  [
+   "Suspension",
+   "aucune"
+  ],
+  [
+   "Étanchéité",
+   "IPX5"
+  ],
+  [
+   "Temps de charge",
+   "10 h annoncées ; 9 h 27 mesurées par Les Numériques, 9 h 50 par le Labo Fnac"
+  ],
+  [
+   "Prix de lancement",
+   "699 € (juin 2024, selon Frandroid)"
+  ]
+ ],
+ "pros": [
+  "Conception pratique, conduite facile et bonne tenue de route (Les Numériques).",
+  "Pneus larges et rainurés à l'aise sur le gravier et les surfaces humides (Frandroid).",
+  "Autonomie réelle généreuse : 61,5 km au Labo Fnac dans ses conditions de test (L'Éclaireur Fnac)."
+ ],
+ "cons": [
+  "Pas de suspension : le confort repose uniquement sur les pneus (Les Numériques, Frandroid).",
+  "Manque de puissance en côte (Les Numériques).",
+  "Freinage déséquilibré : avant progressif, arrière mordant qui peut faire déraper la roue (Frandroid).",
+  "Recharge longue, près de 10 heures (Les Numériques, Labo Fnac)."
+ ],
+ "parts": [
+  {
+   "label": "Pneu",
+   "size": "80/55-7 tubeless (10,5 pouces)",
+   "count": 1,
+   "to": "/piece/pneu-80-55-7-tubeless-cst-navee-n65i",
+   "cta": "Pneus 80/55-7"
+  },
+  {
+   "label": "Disque de frein",
+   "size": "140 mm, 6 trous, entraxe 44 mm (arrière)",
+   "count": 3,
+   "to": "/piece/disque-de-frein-r6-140mm-entraxe-44mm-3-couleurs-rouge",
+   "cta": "Disques 140 mm"
+  }
+ ],
+ "care": [
+  "Le frein arrière mord fort : surveille l'usure des plaquettes et l'état du disque, et dose le levier sur sol mouillé.",
+  "Pneus tubeless 80/55-7 : sans suspension, ils font tout le confort. Contrôle la pression chaque semaine.",
+  "Le tambour avant se règle : reprends la tension du câble dès que la course du levier s'allonge."
+ ],
+ "price": {
+  "text": "Prix de lancement en France : 699 € (juin 2024).",
+  "source": "Frandroid"
+ },
+ "faq": [
+  {
+   "q": "Quelle taille de pneu pour la Navee N65i ?",
+   "a": "Des pneus tubeless de 10,5 pouces en 80/55-7, sur une jante de 7 pouces. Ce n'est pas la dimension de la N65 d'origine, qui roule en 85/65-6.5."
+  },
+  {
+   "q": "Quel disque de frein pour la Navee N65i ?",
+   "a": "Un disque de 140 mm à 6 trous, entraxe 44 mm, à l'arrière. L'avant freine avec un tambour, sans plaquettes."
+  },
+  {
+   "q": "Quelle est l'autonomie réelle de la Navee N65i ?",
+   "a": "Ça dépend beaucoup des conditions : le Labo Fnac a mesuré 61,5 km, Les Numériques 25 à 33 km avec 100 kg à bord, en mode sport et par temps froid."
+  },
+  {
+   "q": "Combien de temps pour recharger la Navee N65i ?",
+   "a": "Navee annonce 10 heures. Les Numériques a mesuré 9 h 27, le Labo Fnac 9 h 50."
+  },
+  {
+   "q": "Quelle différence entre la Navee N65 et la N65i ?",
+   "a": "La N65i a un moteur de 450 W (contre 500 W), 1 000 W en pointe (contre 900 W), une étanchéité IPX5 (contre IPX4), des pneus 80/55-7 et un tambour à l'avant. Elle n'a pas de suspension. Les pièces de roue ne sont pas interchangeables."
+  }
+ ],
+ "sources": [
+  {
+   "label": "Navee — fiche N65i",
+   "url": "https://www.naveetech.com/fr/navee-n65i/"
+  },
+  {
+   "label": "Les Numériques — test Navee N65i",
+   "url": "https://www.lesnumeriques.com/trottinette-electrique/navee-n65i-p76043/test.html"
+  },
+  {
+   "label": "L'Éclaireur Fnac — test Labo Navee N65i",
+   "url": "https://leclaireur.fnac.com/test/559921-test-labo-de-la-navee-n65i-la-trottinette-ideale/"
+  },
+  {
+   "label": "Frandroid — prise en main Navee N65i",
+   "url": "https://www.frandroid.com/survoltes/trottinette-electrique/2046660_on-a-roule-avec-la-navee-n65i-enfin-une-trottinette-electrique-pratique-a-attacher-avec-un-antivol"
+  },
+  {
+   "label": "Idealo — Navee N65i",
+   "url": "https://www.idealo.fr/prix/203940175/navee-n65i.html"
+  }
+ ],
+ "video": {
+  "id": "fEHChDQOzbo",
+  "title": "TEST NAVEE S60 & N65i",
+  "channel": "Mécanique Sportive",
+  "uploadDate": "2024-08-11"
+ }
+}

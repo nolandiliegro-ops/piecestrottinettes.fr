@@ -1,0 +1,149 @@
+{
+ "displayName": "Navee GT3 Max",
+ "metaTitle": "Navee GT3 Max : fiche technique, avis et pièces",
+ "metaDescription": "Navee GT3 Max : 400 W (1 000 W en pointe), batterie 48 V 12,75 Ah, pneus tubeless 10x2.50-6.5, 44,4 km mesurés par Frandroid. Avis et pièces.",
+ "intro": [
+  "La Navee GT3 Max est la version la plus aboutie de la série GT3, selon Cleanrider. Elle est disponible en France depuis la mi-mars 2025, au tarif de lancement de 499 € selon Frandroid, avec suspensions avant et arrière, clignotants et une batterie nettement plus grosse que la GT3 de base.",
+  "Moteur de 400 W (1 000 W en pointe), batterie de 48 V et 12,75 Ah pour 75 km annoncés à 15 km/h, pneus tubeless de 10 pouces, frein à tambour à l'avant et frein électronique à l'arrière. Elle pèse 23 kg et reste bridée à 25 km/h."
+ ],
+ "specs": [
+  [
+   "Moteur",
+   "400 W (1 000 W en pointe)"
+  ],
+  [
+   "Vitesse",
+   "25 km/h"
+  ],
+  [
+   "Autonomie",
+   "jusqu'à 75 km annoncés à 15 km/h, 44,4 km mesurés par Frandroid"
+  ],
+  [
+   "Batterie",
+   "48 V, 12,75 Ah, environ 596 Wh"
+  ],
+  [
+   "Poids",
+   "23 kg"
+  ],
+  [
+   "Charge max",
+   "120 kg"
+  ],
+  [
+   "Roues",
+   "10 pouces, tubeless 10x2.50-6.5 (60/70-6.5)"
+  ],
+  [
+   "Freins",
+   "Tambour avant + électronique arrière"
+  ],
+  [
+   "Suspension",
+   "Double fourche avant, double cylindre arrière"
+  ],
+  [
+   "Étanchéité",
+   "IPX5"
+  ],
+  [
+   "Temps de charge",
+   "environ 10 h"
+  ],
+  [
+   "Prix de lancement",
+   "499 € (mars 2025, selon Frandroid)"
+  ]
+ ],
+ "pros": [
+  "Autonomie réelle solide pour sa catégorie : 44,4 km mesurés en moyenne, avec un pilote de 80 kg (Frandroid).",
+  "Confort de la suspension intégrale sur chaussée dégradée (Frandroid).",
+  "Version la plus complète de la série GT3, avec une batterie de 596 Wh (Cleanrider)."
+ ],
+ "cons": [
+  "Autonomie mesurée loin des 75 km annoncés : 44,4 km au test de Frandroid.",
+  "Un seul frein mécanique, le tambour avant ; l'arrière freine électroniquement dans le moteur.",
+  "Recharge longue : environ 10 heures avec le chargeur fourni.",
+  "23 kg : elle se porte, mais pas sur de longues distances."
+ ],
+ "parts": [
+  {
+   "label": "Pneu",
+   "size": "10x2.50-6.5 (60/70-6.5) tubeless",
+   "count": 14,
+   "to": "/piece/pneu-tubeless-60-70-6-5-wanda",
+   "cta": "Pneus 10x2.50-6.5"
+  },
+  {
+   "label": "Chambre à air",
+   "size": "10x2.50, valve droite ou coudée",
+   "count": 6,
+   "to": "/piece/chambre-a-air-10x250-valve-0x90",
+   "cta": "Chambres à air"
+  }
+ ],
+ "care": [
+  "Le tambour avant est ton seul frein mécanique : fais-le régler dès que la course du levier s'allonge.",
+  "Pneus tubeless : contrôle la pression chaque mois, un pneu sous-gonflé fait chuter l'autonomie et s'use vite.",
+  "Suspensions à cylindres : nettoie-les après la pluie et contrôle le jeu des bras à chaque révision."
+ ],
+ "price": {
+  "text": "Prix de lancement en France : 499 € (mi-mars 2025), puis 599 € annoncés.",
+  "source": "Frandroid"
+ },
+ "faq": [
+  {
+   "q": "Quelle taille de pneu pour la Navee GT3 Max ?",
+   "a": "Des pneus tubeless de 10 pouces en 10x2.50-6.5, aussi notés 60/70-6.5, sur une jante de 6,5 pouces."
+  },
+  {
+   "q": "La Navee GT3 Max a-t-elle des plaquettes de frein ?",
+   "a": "Non. Elle freine avec un tambour à l'avant et un frein électronique intégré au moteur arrière."
+  },
+  {
+   "q": "Quelle est l'autonomie réelle de la Navee GT3 Max ?",
+   "a": "Frandroid a mesuré 44,4 km en moyenne avec un pilote de 80 kg, pour 75 km annoncés par Navee à 15 km/h."
+  },
+  {
+   "q": "Combien de temps pour recharger la Navee GT3 Max ?",
+   "a": "Environ 10 heures pour une charge complète avec le chargeur fourni."
+  },
+  {
+   "q": "Quelle différence entre la Navee GT3 et la GT3 Max ?",
+   "a": "La GT3 Max a un moteur de 400 W (contre 350 W) et une batterie de 12,75 Ah (contre 7,65 Ah), pour 75 km annoncés au lieu de 50 km. Elle pèse 23 kg, contre 21 kg."
+  }
+ ],
+ "sources": [
+  {
+   "label": "Navee France — Navee GT3 Max",
+   "url": "https://naveetech.fr/products/navee-gt3-max"
+  },
+  {
+   "label": "Navee — fiche GT3 Max",
+   "url": "https://www.naveetech.com/fr/navee-gt3-max/"
+  },
+  {
+   "label": "Frandroid — essai Navee GT3 Max",
+   "url": "https://www.frandroid.com/test/2582181_on-a-essaye-la-navee-gt3-max-une-autonomie-debordante-pour-cette-trottinette-electrique-seduisante"
+  },
+  {
+   "label": "Cleanrider — catalogue Navee GT3",
+   "url": "https://www.cleanrider.com/catalogue/trottinette-electrique/navee/navee-gt3/"
+  },
+  {
+   "label": "Boulanger — Navee GT3 Max",
+   "url": "https://www.boulanger.com/ref/1218831"
+  },
+  {
+   "label": "Pixmania — Navee GT3 Max 400 W",
+   "url": "https://www.pixmania.com/fr/fr/gt3-max-400-w-noir-411967.html"
+  }
+ ],
+ "video": {
+  "id": "mE1qWFSkO20",
+  "title": "NAVEE GT3 MAX : LE MEILLEUR CHOIX À 499€ ?! LA MEILLEURE TROTTINETTE ÉLECTRIQUE ?!",
+  "channel": "RAFTOR",
+  "uploadDate": "2025-07-21"
+ }
+}

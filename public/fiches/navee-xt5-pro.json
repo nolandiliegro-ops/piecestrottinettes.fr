@@ -1,0 +1,129 @@
+{
+ "displayName": "Navee XT5 Pro",
+ "metaTitle": "Navee XT5 Pro : fiche technique, avis et pièces",
+ "metaDescription": "Navee XT5 Pro : 700 W (2 200 W en pointe), batterie 48 V 12,75 Ah, pneus 12\", freins à disque avant et arrière, IPX6, 34,8 kg. Avis et pièces.",
+ "intro": [
+  "La Navee XT5 Pro sort en France à l'automne 2025, le 5 septembre selon Frandroid, au prix de 949 € selon le même média. Elle se distingue par ses pneus de 12 pouces, sa suspension Damping Arm à l'avant et à l'arrière et ses freins à disque sur les deux roues.",
+  "Moteur de 700 W (2 200 W en pointe), batterie de 48 V et 12,75 Ah (596,7 Wh) pour 75 km annoncés à 15 km/h, étanchéité IPX6, charge maximale de 150 kg. Elle pèse 34,8 kg et reste bridée à 25 km/h sur la voie publique."
+ ],
+ "specs": [
+  [
+   "Moteur",
+   "700 W (2 200 W en pointe)"
+  ],
+  [
+   "Vitesse",
+   "25 km/h"
+  ],
+  [
+   "Autonomie",
+   "jusqu'à 75 km annoncés à 15 km/h ; 33 à 36 km mesurés par Frandroid, 52,5 km par le Labo Fnac"
+  ],
+  [
+   "Batterie",
+   "48 V (46,8 V nominal), 12,75 Ah, 596,7 Wh"
+  ],
+  [
+   "Poids",
+   "34,8 kg"
+  ],
+  [
+   "Charge max",
+   "150 kg"
+  ],
+  [
+   "Roues",
+   "12 pouces tubeless"
+  ],
+  [
+   "Freins",
+   "Disques avant et arrière + frein électronique (E-ABS)"
+  ],
+  [
+   "Suspension",
+   "Damping Arm avant et arrière, 60 mm de débattement (selon Navee)"
+  ],
+  [
+   "Étanchéité",
+   "IPX6"
+  ],
+  [
+   "Temps de charge",
+   "5 à 6 h annoncées, 6 h 15 mesurées par le Labo Fnac"
+  ],
+  [
+   "Prix de lancement",
+   "949 € (septembre 2025, selon Frandroid)"
+  ]
+ ],
+ "pros": [
+  "Pneus de 12 pouces rassurants et conception pensée pour sortir des sentiers battus (Frandroid).",
+  "52,5 km d'autonomie mesurés au Labo Fnac dans ses conditions de test (L'Éclaireur Fnac).",
+  "Freins à disque sur les deux roues, étanchéité IPX6 et 150 kg de charge maximale (Navee, Darty, LDLC)."
+ ],
+ "cons": [
+  "Autonomie réelle décevante face à l'annonce : 33 à 36 km mesurés par Frandroid pour 75 km annoncés.",
+  "Environ 35 kg : elle ne se porte pas, ni dans un escalier ni dans les transports (L'Éclaireur Fnac).",
+  "Les mesures d'autonomie divergent d'un test à l'autre (Frandroid, Labo Fnac) : le parcours compte plus que la fiche."
+ ],
+ "parts": [],
+ "care": [
+  "Deux disques : surveille l'épaisseur des plaquettes à l'avant et à l'arrière, et contrôle que les disques ne sont pas voilés après une sortie sur chemin.",
+  "Pneus de 12 pouces : contrôle la pression avant chaque sortie, surtout si tu alternes route et chemin.",
+  "Avec près de 35 kg, la visserie des bras de suspension et du pliage travaille : vérifie son serrage régulièrement."
+ ],
+ "price": {
+  "text": "Prix de lancement en France : 949 € (septembre 2025).",
+  "source": "Frandroid"
+ },
+ "faq": [
+  {
+   "q": "Quelle taille de pneu pour la Navee XT5 Pro ?",
+   "a": "Des pneus tubeless de 12 pouces. Vérifie la dimension inscrite sur le flanc de ton pneu avant d'en commander un."
+  },
+  {
+   "q": "Quelles plaquettes pour la Navee XT5 Pro ?",
+   "a": "Elle a deux freins à disque, donc des plaquettes à l'avant et à l'arrière. Compare la forme de ta plaquette avant de commander."
+  },
+  {
+   "q": "Quelle est l'autonomie réelle de la Navee XT5 Pro ?",
+   "a": "Frandroid a mesuré 33 à 36 km selon le parcours, le Labo Fnac 52,5 km. Navee annonce 75 km à 15 km/h et 50 km à 25 km/h."
+  },
+  {
+   "q": "Combien de temps pour recharger la Navee XT5 Pro ?",
+   "a": "5 à 6 heures avec le chargeur standard selon Navee, 6 h 15 mesurées par le Labo Fnac. Navee annonce 1 h 15 à 1 h 30 avec un chargeur rapide de 10 A."
+  }
+ ],
+ "sources": [
+  {
+   "label": "Navee France — XT5 Pro",
+   "url": "https://naveetech.fr/products/xt5-pro"
+  },
+  {
+   "label": "Frandroid — test Navee XT5 Pro",
+   "url": "https://www.frandroid.com/survoltes/trottinette-electrique/2892957_on-a-teste-la-navee-xt5-pro-une-trottinette-electrique-au-look-agressif-et-des-pneus-de-12-pouces-rassurants"
+  },
+  {
+   "label": "Frandroid — fiche Navee XT5 Pro",
+   "url": "https://www.frandroid.com/produits/trottinette-electrique/navee/2903419-navee-xt5-pro"
+  },
+  {
+   "label": "L'Éclaireur Fnac — test Labo Navee XT5 Pro",
+   "url": "https://leclaireur.fnac.com/test/666419-test-labo-de-la-navee-xt5pron-une-trottinette-sportive-convaincante/"
+  },
+  {
+   "label": "Darty — Navee XT5 Pro",
+   "url": "https://www.darty.com/nav/achat/sports_loisirs/glisse_urbaine/trottinette_electrique/navee_xt5pron.html"
+  },
+  {
+   "label": "LDLC Pro — Navee XT5 Pro",
+   "url": "https://www.ldlc.pro/fiche/PB00744342.html"
+  }
+ ],
+ "video": {
+  "id": "2SMuy5oUGNw",
+  "title": "Test Navee XT5 PRO : le look est racé, la performance…",
+  "channel": "David Nogueira",
+  "uploadDate": "2026-07-25"
+ }
+}

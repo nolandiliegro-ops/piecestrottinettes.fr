@@ -1,0 +1,139 @@
+{
+ "displayName": "Navee GT5 Pro",
+ "metaTitle": "Navee GT5 Pro : fiche technique et pièces",
+ "metaDescription": "Navee GT5 Pro : 600 W (1 350 W en pointe), batterie 48 V 12 Ah, pneus tubeless 10\" 60/70-6.5, frein tambour avant. Fiche, entretien et pièces.",
+ "intro": [
+  "La Navee GT5 Pro est une trottinette urbaine de la gamme GT5, à ne pas confondre avec la GT5 Max, qui a sa propre fiche. Navee France l'affiche à 499,99 €, avec double suspension, clignotants, feux de recul et localisation Apple Localiser, selon Frandroid.",
+  "Moteur de 600 W (1 350 W en pointe), batterie de 561,6 Wh pour 75 km annoncés à 15 km/h, pneus tubeless de 10 pouces, frein à tambour à l'avant et frein électronique à l'arrière. Elle pèse 24,9 kg et reste bridée à 25 km/h."
+ ],
+ "specs": [
+  [
+   "Moteur",
+   "600 W (1 350 W en pointe) selon Navee France ; 500 W nominaux sur le site allemand de Navee"
+  ],
+  [
+   "Vitesse",
+   "25 km/h"
+  ],
+  [
+   "Autonomie annoncée",
+   "jusqu'à 75 km à 15 km/h, 55 km à 25 km/h"
+  ],
+  [
+   "Batterie",
+   "48 V (46,8 V nominal), 12 Ah, 561,6 Wh"
+  ],
+  [
+   "Poids",
+   "24,9 kg"
+  ],
+  [
+   "Charge max",
+   "130 kg (120 kg sur le site allemand de Navee)"
+  ],
+  [
+   "Roues",
+   "10 pouces, tubeless 60/70-6.5"
+  ],
+  [
+   "Freins",
+   "Tambour avant + électronique arrière (E-ABS)"
+  ],
+  [
+   "Suspension",
+   "Fourche avant, amortisseur arrière"
+  ],
+  [
+   "Étanchéité",
+   "IPX5"
+  ],
+  [
+   "Temps de charge",
+   "7 h selon Navee, 8 h selon la Fnac"
+  ]
+ ],
+ "pros": [
+  "Double suspension et pneus tubeless de 10 pouces (Frandroid).",
+  "Équipement de sécurité complet : clignotants, feux de recul, localisation Apple Localiser (Frandroid).",
+  "Batterie de 561,6 Wh pour 75 km annoncés à 15 km/h (Navee France, LDLC)."
+ ],
+ "cons": [
+  "24,9 kg, un poids à prendre en compte avant de l'acheter (Frandroid).",
+  "Recharge d'environ 7 heures (Frandroid).",
+  "Un seul frein mécanique, le tambour avant ; l'arrière freine électroniquement.",
+  "Aucune autonomie mesurée en test de presse à ce jour : les 75 km sont une annonce du fabricant."
+ ],
+ "parts": [
+  {
+   "label": "Pneu",
+   "size": "60/70-6.5 tubeless (10 pouces)",
+   "count": 14,
+   "to": "/piece/pneu-tubeless-60-70-6-5-wanda",
+   "cta": "Pneus 60/70-6.5"
+  },
+  {
+   "label": "Chambre à air",
+   "size": "10x2.50, valve droite ou coudée",
+   "count": 6,
+   "to": "/piece/chambre-a-air-10x250-valve-droite",
+   "cta": "Chambres à air"
+  }
+ ],
+ "care": [
+  "Le tambour avant est ton seul frein mécanique : fais-le régler dès que la course du levier s'allonge.",
+  "Pneus tubeless : vérifie la pression chaque mois, un pneu sous-gonflé s'use vite et réduit l'autonomie.",
+  "Contrôle le serrage du pliage et le jeu de la fourche avant : avec près de 25 kg, ils travaillent beaucoup."
+ ],
+ "price": {
+  "text": "Prix public de référence : 499,99 € (prix initial selon Frandroid, également affiché par Navee France).",
+  "source": "Frandroid, naveetech.fr"
+ },
+ "faq": [
+  {
+   "q": "Quelle taille de pneu pour la Navee GT5 Pro ?",
+   "a": "Des pneus tubeless de 10 pouces en 60/70-6.5, aussi notés 10x2.50-6.5, sur une jante de 6,5 pouces."
+  },
+  {
+   "q": "La Navee GT5 Pro a-t-elle des plaquettes de frein ?",
+   "a": "Non. Elle freine avec un tambour à l'avant et un frein électronique (E-ABS) à l'arrière."
+  },
+  {
+   "q": "Combien de temps pour recharger la Navee GT5 Pro ?",
+   "a": "7 heures selon Navee, 8 heures selon la fiche de la Fnac."
+  },
+  {
+   "q": "Quelle différence entre la Navee GT5 Pro et la GT5 Max ?",
+   "a": "La GT5 Pro a un moteur de 600 W et une batterie de 12 Ah ; la GT5 Max monte 700 W, 12,75 Ah et un frein à disque à l'arrière. Vérifie le nom exact de ta trottinette avant de commander une pièce."
+  }
+ ],
+ "sources": [
+  {
+   "label": "Navee France — trottinette électrique GT5 Pro",
+   "url": "https://naveetech.fr/products/navee-trottinette-electrique-gt5-pro"
+  },
+  {
+   "label": "Navee — fiche GT5 Pro",
+   "url": "https://www.naveetech.com/navee-gt5-pro/"
+  },
+  {
+   "label": "Navee Allemagne — GT5 Pro",
+   "url": "https://naveetech.de/en/products/navee-gt5-pro"
+  },
+  {
+   "label": "Frandroid — Navee GT5 Pro",
+   "url": "https://www.frandroid.com/bons-plans/3152511_navee-gt5-pro-cette-trottinette-electrique-puissante-avec-75-km-dautonomie-profite-elle-aussi-des-soldes-pour-baisser-son-prix-de-100-e"
+  },
+  {
+   "label": "Fnac — Navee GT5 Pro 600 W",
+   "url": "https://www.fnac.com/Trottinette-electrique-Navee-GT5-Pro-600-W-Noir/a22970553/w-4?Origin=SEA_GOOGLE_FL_SPORT"
+  },
+  {
+   "label": "LDLC — Navee GT5 Pro",
+   "url": "https://www.ldlc.com/fiche/PB00744691.html"
+  },
+  {
+   "label": "Boulanger — Navee GT5 Pro",
+   "url": "https://www.boulanger.com/ref/9001065804"
+  }
+ ]
+}

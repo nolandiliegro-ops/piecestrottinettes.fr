@@ -1,0 +1,115 @@
+{
+ "displayName": "Navee ST5 Pro",
+ "metaTitle": "Navee ST5 Pro : fiche technique et pièces",
+ "metaDescription": "Navee ST5 Pro : 600 W (1 350 W en pointe), batterie 48 V 10,2 Ah, freins à disque avant et arrière, IPX6, 150 kg de charge. Fiche et entretien.",
+ "intro": [
+  "La Navee ST5 Pro est une trottinette urbaine suspendue à l'avant et à l'arrière par le système à bras amortisseurs Dual Damping Arm de Navee. Elle se distingue de la ST3 Pro par ses freins à disque à l'avant et à l'arrière, son étanchéité IPX6 et sa charge maximale de 150 kg.",
+  "Moteur de 600 W (1 350 W en pointe), batterie de 48 V et 10,2 Ah (477,36 Wh) pour 75 km annoncés à 15 km/h, pneus tubeless de 10 pouces. Elle pèse 24,8 kg, se recharge en environ 7 heures et reste bridée à 25 km/h en France."
+ ],
+ "specs": [
+  [
+   "Moteur",
+   "600 W (1 350 W en pointe)"
+  ],
+  [
+   "Vitesse",
+   "25 km/h"
+  ],
+  [
+   "Autonomie annoncée",
+   "75 km à 15 km/h, 60 km à 20 km/h, 50 km à 25 km/h"
+  ],
+  [
+   "Batterie",
+   "48 V (46,8 V nominal), 10,2 Ah, 477,36 Wh"
+  ],
+  [
+   "Poids",
+   "24,8 kg"
+  ],
+  [
+   "Charge max",
+   "150 kg"
+  ],
+  [
+   "Roues",
+   "10 pouces tubeless"
+  ],
+  [
+   "Freins",
+   "Disques avant et arrière + frein électronique (E-ABS)"
+  ],
+  [
+   "Suspension",
+   "Bras amortisseurs avant et arrière (Dual Damping Arm)"
+  ],
+  [
+   "Étanchéité",
+   "IPX6 (batterie IPX7 selon les distributeurs)"
+  ],
+  [
+   "Temps de charge",
+   "environ 7 h"
+  ]
+ ],
+ "pros": [
+  "Deux freins à disque et un frein électronique, soit trois systèmes de freinage (Fnac).",
+  "Suspension intégrale à bras amortisseurs avant et arrière (Frandroid, Navee).",
+  "Charge maximale de 150 kg et étanchéité IPX6 (Pixmania, La Clinique Électrique)."
+ ],
+ "cons": [
+  "Autonomie réelle estimée entre 35 et 50 km, loin des 75 km annoncés à 15 km/h (Frandroid).",
+  "24,8 kg : une contrainte si tu dois la porter (Pixmania, La Clinique Électrique).",
+  "Aucun test de presse français avec mesure d'autonomie trouvé à ce jour."
+ ],
+ "parts": [],
+ "care": [
+  "Deux disques : surveille l'épaisseur des plaquettes à l'avant et à l'arrière, et contrôle que les disques ne frottent pas.",
+  "Pneus tubeless : vérifie la pression chaque mois, surtout si tu roules chargé près des 150 kg.",
+  "Les bras amortisseurs travaillent beaucoup : nettoie leurs articulations après la pluie et contrôle leur jeu."
+ ],
+ "faq": [
+  {
+   "q": "Quelle taille de pneu pour la Navee ST5 Pro ?",
+   "a": "Des pneus tubeless de 10 pouces. Vérifie la dimension inscrite sur le flanc de ton pneu avant d'en commander un."
+  },
+  {
+   "q": "Quelles plaquettes pour la Navee ST5 Pro ?",
+   "a": "Elle a deux freins à disque, donc des plaquettes à l'avant et à l'arrière. Compare la forme de ta plaquette avant de commander."
+  },
+  {
+   "q": "Quelle est l'autonomie réelle de la Navee ST5 Pro ?",
+   "a": "Navee annonce 75 km à 15 km/h avec 75 kg à bord. Frandroid estime plutôt 35 à 50 km en usage réel."
+  },
+  {
+   "q": "Quelle différence entre la Navee ST5 Pro et la ST3 Pro ?",
+   "a": "La ST5 Pro a des disques à l'avant et à l'arrière, une étanchéité IPX6 et accepte 150 kg. La ST3 Pro a un tambour à l'avant, une batterie plus grosse (12,75 Ah) et accepte 120 kg."
+  }
+ ],
+ "sources": [
+  {
+   "label": "Navee France — ST5 Pro",
+   "url": "https://naveetech.fr/products/st5-pro"
+  },
+  {
+   "label": "Navee — ST5 Pro",
+   "url": "https://es.naveetech.com/products/st5-pro"
+  },
+  {
+   "label": "Fnac — Navee ST5 Pro 600 W",
+   "url": "https://www.fnac.com/Trottinette-electrique-Navee-ST5-Pro-600-W-Noir/a22970551/w-4"
+  },
+  {
+   "label": "Frandroid — Navee ST5 Pro",
+   "url": "https://www.frandroid.com/bons-plans/3135567_puissante-et-confortable-cette-trottinette-avec-moteur-1350-w-et-suspension-integrale-avant-arriere-tombe-a-629-e"
+  },
+  {
+   "label": "Pixmania — Navee ST5 Pro",
+   "url": "https://www.pixmania.com/fr/fr/trottinette-electrique-adulte-navee-st5-pro-600-w-25-kmh-bluetooth-ipx6-noir-592224.html"
+  },
+  {
+   "label": "La Clinique Électrique — Navee ST5 Pro",
+   "url": "https://www.lacliniqueelectrique.com/product-page/trottinette-electrique-navee-st5-pro-saint-nazaire"
+  }
+ ]
+}

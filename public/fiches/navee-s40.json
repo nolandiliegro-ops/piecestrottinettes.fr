@@ -1,0 +1,129 @@
+{
+ "displayName": "Navee S40",
+ "metaTitle": "Navee S40 : fiche technique, avis et pièces",
+ "metaDescription": "Navee S40 : 350 W (700 W en pointe), batterie 36 V 7,65 Ah, pneus tubeless 10\", tambour avant, double suspension, IPX5. Avis, entretien et pièces.",
+ "intro": [
+  "La Navee S40 est commercialisée en France en 2024, à 599 € selon le relevé de Cleanrider du 11 juin 2024. C'est une trottinette urbaine bridée à 25 km/h, suspendue à l'avant et à l'arrière par des bras oscillants à ressorts, et classée IPX5 pour rouler sous la pluie.",
+  "Moteur de 350 W (700 W en pointe), batterie de 36 V et 7,65 Ah (275 Wh) pour 40 km annoncés à 15 km/h, pneus tubeless de 10 pouces, frein à tambour à l'avant et frein électronique à l'arrière. Elle pèse 22,2 kg et se recharge en environ 6 heures."
+ ],
+ "specs": [
+  [
+   "Moteur",
+   "350 W (700 W en pointe)"
+  ],
+  [
+   "Vitesse",
+   "25 km/h"
+  ],
+  [
+   "Autonomie",
+   "jusqu'à 40 km annoncés à 15 km/h ; 25 à 30 km en usage réel selon Begeek, environ 27 km selon Cleanrider"
+  ],
+  [
+   "Batterie",
+   "36 V, 7,65 Ah, 275 Wh"
+  ],
+  [
+   "Poids",
+   "22,2 kg"
+  ],
+  [
+   "Charge max",
+   "120 kg"
+  ],
+  [
+   "Roues",
+   "10 pouces tubeless"
+  ],
+  [
+   "Freins",
+   "Tambour avant + électronique arrière (E-ABS)"
+  ],
+  [
+   "Suspension",
+   "Double bras oscillant à ressorts, avant et arrière"
+  ],
+  [
+   "Étanchéité",
+   "IPX5"
+  ],
+  [
+   "Temps de charge",
+   "environ 6 h"
+  ],
+  [
+   "Prix",
+   "599 € (relevé du 11 juin 2024)"
+  ]
+ ],
+ "pros": [
+  "Les montées sont bien gérées malgré un moteur de 350 W (Begeek).",
+  "Double suspension et pneus tubeless de 10 pouces pour une trottinette urbaine.",
+  "Recharge en environ 6 heures (Pixmania, Begeek)."
+ ],
+ "cons": [
+  "Autonomie réelle de 25 à 30 km, loin des 40 km annoncés (Begeek, Cleanrider).",
+  "Batterie modeste de 275 Wh en 36 V, pour 22,2 kg sur la balance.",
+  "Un seul frein mécanique, le tambour avant ; l'arrière freine électroniquement."
+ ],
+ "parts": [],
+ "care": [
+  "Le tambour avant est ton seul frein mécanique : fais-le régler dès que la course du levier s'allonge.",
+  "Pneus tubeless : vérifie la pression chaque mois, la suspension masque un pneu sous-gonflé qui s'use alors vite.",
+  "Bras oscillants à ressorts : nettoie les articulations après la pluie et contrôle qu'elles ne prennent pas de jeu."
+ ],
+ "price": {
+  "text": "Prix relevé en France : 599 € (11 juin 2024), 599,99 € dans le test de Begeek (7 juillet 2024).",
+  "source": "Cleanrider, Begeek"
+ },
+ "faq": [
+  {
+   "q": "Quelle taille de pneu pour la Navee S40 ?",
+   "a": "Des pneus tubeless de 10 pouces. Vérifie la dimension inscrite sur le flanc de ton pneu avant d'en commander un."
+  },
+  {
+   "q": "La Navee S40 a-t-elle des plaquettes de frein ?",
+   "a": "Non. Elle freine avec un tambour à l'avant et un frein électronique (E-ABS) à l'arrière."
+  },
+  {
+   "q": "Quelle est l'autonomie réelle de la Navee S40 ?",
+   "a": "Navee annonce 40 km à 15 km/h avec un conducteur de 75 kg sur le plat. Begeek a relevé 25 à 30 km en usage réel, Cleanrider environ 27 km."
+  },
+  {
+   "q": "Combien de temps pour recharger la Navee S40 ?",
+   "a": "Environ 6 heures pour une charge complète."
+  },
+  {
+   "q": "Quelle différence entre la Navee S40 et la S60 ?",
+   "a": "La S40 roule en 36 V avec une batterie de 7,65 Ah et un moteur de 350 W. La S60 passe en 48 V, 10,2 Ah et 1 000 W en pointe. Les deux ne partagent pas la même batterie ni le même chargeur."
+  }
+ ],
+ "sources": [
+  {
+   "label": "Cleanrider — catalogue Navee S40",
+   "url": "https://www.cleanrider.com/catalogue/trottinette-electrique/navee/navee-s40/"
+  },
+  {
+   "label": "Begeek — test Navee S40",
+   "url": "https://www.begeek.fr/test/test-navee-s40-399990"
+  },
+  {
+   "label": "Pixmania — Navee S40",
+   "url": "https://www.pixmania.com/fr/fr/navee-s40-trottinette-electrique-noir-20-kmh-765-ah-419271.html"
+  },
+  {
+   "label": "Auchan — Navee S40 350 W",
+   "url": "https://www.auchan.fr/navee-trottinette-electrique-navee-s40-350-w-noir/pr-9e986f09-c5ce-4149-9ff1-889247327dc9"
+  },
+  {
+   "label": "Navee — aide S40",
+   "url": "https://service.naveetech.com/fr/s40/faqs/"
+  }
+ ],
+ "video": {
+  "id": "ixXP1SjYRgY",
+  "title": "Et si le Cybertruck était une trottinette ? Test de la  NAVEE S40",
+  "channel": "Thameos",
+  "uploadDate": "2024-12-06"
+ }
+}

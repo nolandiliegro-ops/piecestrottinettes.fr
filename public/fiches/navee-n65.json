@@ -1,0 +1,141 @@
+{
+ "displayName": "Navee N65",
+ "metaTitle": "Navee N65 : fiche technique, avis et pièces",
+ "metaDescription": "Navee N65 : 500 W, batterie 48 V 12,5 Ah, pneus larges 85/65-6.5, disque arrière 140 mm, double suspension. Avis, entretien et pièces compatibles.",
+ "intro": [
+  "La Navee N65 est lancée en France le 30 mars 2022 à 699 € selon Mobiwisy, avec des pneus larges et une double suspension. Elle ne doit pas être confondue avec la N65i, une évolution sortie ensuite avec un autre moteur, d'autres pneus et une meilleure étanchéité.",
+  "Moteur avant de 500 W, batterie de 48 V et 12,5 Ah (600 Wh) pour 65 km annoncés, pneus larges de 10 pouces en 85/65-6.5, frein électronique à l'avant et disque à l'arrière. Elle pèse autour de 23,5 kg et reste bridée à 25 km/h."
+ ],
+ "specs": [
+  [
+   "Moteur",
+   "500 W, roue avant (900 W en pointe selon Frandroid)"
+  ],
+  [
+   "Vitesse",
+   "25 km/h"
+  ],
+  [
+   "Autonomie annoncée",
+   "jusqu'à 65 km (70 kg, 20 km/h, terrain plat)"
+  ],
+  [
+   "Batterie",
+   "48 V, 12,5 Ah, 600 Wh"
+  ],
+  [
+   "Poids",
+   "23,5 à 23,8 kg selon les sources"
+  ],
+  [
+   "Charge max",
+   "120 kg"
+  ],
+  [
+   "Roues",
+   "10 pouces, 85/65-6.5"
+  ],
+  [
+   "Freins",
+   "Électronique avant (E-ABS) + disque arrière Ø 140 mm"
+  ],
+  [
+   "Suspension",
+   "double suspension"
+  ],
+  [
+   "Étanchéité",
+   "IPX4"
+  ],
+  [
+   "Temps de charge",
+   "7 à 8 h (selon Mobiwisy)"
+  ],
+  [
+   "Sortie",
+   "mars 2022"
+  ]
+ ],
+ "pros": [
+  "Pneus larges de 10 pouces, plus polyvalents que ceux des trottinettes urbaines classiques (Cleanrider).",
+  "Batterie de 600 Wh (48 V, 12,5 Ah) pour 65 km annoncés (Mobiwisy).",
+  "Autonomie réelle estimée autour de 40 à 45 km (Cleanrider)."
+ ],
+ "cons": [
+  "23,5 kg : un poids qui pénalise le transport en train ou en métro (Cleanrider).",
+  "Autonomie réelle loin des 65 km : environ 50 km en usage courant, 30 km en usage intensif (Mobiwisy).",
+  "Moteur et frein électronique à l'avant : le seul frein mécanique est le disque arrière.",
+  "Étanchéité IPX4 seulement, contre IPX5 sur la N65i (Frandroid)."
+ ],
+ "parts": [
+  {
+   "label": "Pneu",
+   "size": "85/65-6.5 (10 pouces)",
+   "count": 4,
+   "to": "/piece/pneu-85-65-6-5-tubeless-semi-offroad",
+   "cta": "Pneus 85/65-6.5"
+  },
+  {
+   "label": "Disque de frein",
+   "size": "140 mm, 6 trous, entraxe 44 mm (arrière)",
+   "count": 3,
+   "to": "/piece/disque-de-frein-r6-140mm-entraxe-44mm-3-couleurs-bleu",
+   "cta": "Disques 140 mm"
+  }
+ ],
+ "care": [
+  "Le disque arrière est ton seul frein mécanique : surveille l'épaisseur des plaquettes et redresse ou change le disque dès qu'il frotte.",
+  "Pneus 85/65-6.5 : contrôle la pression avant chaque sortie, surtout si tu roules sur chemin.",
+  "Étanchéité IPX4 : évite les grosses flaques et sèche la trottinette après une sortie sous la pluie."
+ ],
+ "price": {
+  "text": "Prix de lancement en France : 699 € (30 mars 2022).",
+  "source": "Mobiwisy"
+ },
+ "faq": [
+  {
+   "q": "Quelle taille de pneu pour la Navee N65 ?",
+   "a": "Des pneus larges de 10 pouces en 85/65-6.5, sur une jante de 6,5 pouces. Ce n'est pas la même dimension que la N65i, qui roule en 80/55-7."
+  },
+  {
+   "q": "Quel disque de frein pour la Navee N65 ?",
+   "a": "Un disque de 140 mm à 6 trous, entraxe 44 mm, à l'arrière. L'avant freine électroniquement."
+  },
+  {
+   "q": "Quelle est l'autonomie réelle de la Navee N65 ?",
+   "a": "Navee annonce 65 km pour un pilote de 70 kg à 20 km/h sur le plat. Cleanrider estime 40 à 45 km réels, Mobiwisy environ 50 km en usage courant et 30 km en usage intensif."
+  },
+  {
+   "q": "Quelle différence entre la Navee N65 et la N65i ?",
+   "a": "La N65i est une évolution : 450 W continus au lieu de 500 W, 1 000 W en pointe au lieu de 900 W, 22,8 kg et une étanchéité IPX5 au lieu d'IPX4, selon Frandroid. Les pneus et les freins ne sont pas les mêmes : vérifie le modèle avant de commander."
+  }
+ ],
+ "sources": [
+  {
+   "label": "Mobiwisy — lancement de la Navee N65",
+   "url": "https://mobiwisy.fr/mobilite-douce/trottinette/navee-n65-nouvelle-trottinette-xiaomi"
+  },
+  {
+   "label": "Cleanrider — gamme Navee",
+   "url": "https://www.cleanrider.com/actus/trottinettes-electriques-navee-continue-de-derouler-sa-gamme-xiaomi-et-ninebot-ont-un-serieux-concurrent/"
+  },
+  {
+   "label": "Frandroid — essai Navee N65i (comparaison avec la N65)",
+   "url": "https://www.frandroid.com/survoltes/trottinette-electrique/2046660_on-a-roule-avec-la-navee-n65i-enfin-une-trottinette-electrique-pratique-a-attacher-avec-un-antivol"
+  },
+  {
+   "label": "Amazon — Navee N65",
+   "url": "https://www.amazon.fr/NAVEE-Trottinette-Electrique-N65-Application/dp/B0B1CX8HLW"
+  },
+  {
+   "label": "Best Buy Canada — Navee N65",
+   "url": "https://www.bestbuy.ca/en-ca/product/navee-n65-electric-scooter-w-40-mi-max-operating-range-20-mph-max-speed-black/19410907"
+  }
+ ],
+ "video": {
+  "id": "y3QGZc-2dn8",
+  "title": "Le Test Complet: Trottinette électrique NAVEE N65 - Autonomie, Vitesse Max, Caractéristiques.",
+  "channel": "Electric Surf",
+  "uploadDate": "2022-08-18"
+ }
+}

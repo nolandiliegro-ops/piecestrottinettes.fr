@@ -1,0 +1,147 @@
+{
+ "displayName": "Navee GT5 Max",
+ "metaTitle": "Navee GT5 Max : fiche technique, avis et pièces",
+ "metaDescription": "Navee GT5 Max : 700 W (1 638 W en pointe), batterie 48 V 12,75 Ah, pneus tubeless 10\" 60/70-6.5, tambour avant et disque arrière. Avis et pièces.",
+ "intro": [
+  "La Navee GT5 Max est lancée en France à la toute fin du printemps 2026, au prix de 599 € selon Frandroid. C'est la grande sœur de la GT5 Pro, avec une batterie plus grosse, une double suspension et une charge maximale de 130 kg.",
+  "Moteur de 700 W (1 638 W en pointe), batterie de 596,7 Wh pour 90 km annoncés à 15 km/h, pneus tubeless de 10 pouces, frein à tambour à l'avant et disque à l'arrière. Elle pèse 24,8 kg et reste bridée à 25 km/h sur la voie publique."
+ ],
+ "specs": [
+  [
+   "Moteur",
+   "700 W (1 638 W en pointe)"
+  ],
+  [
+   "Vitesse",
+   "25 km/h"
+  ],
+  [
+   "Autonomie",
+   "jusqu'à 90 km annoncés à 15 km/h ; 46,6 km mesurés par Frandroid, 70,9 km par le Labo Fnac"
+  ],
+  [
+   "Batterie",
+   "48 V (46,8 V nominal), 12,75 Ah, 596,7 Wh"
+  ],
+  [
+   "Poids",
+   "24,8 kg"
+  ],
+  [
+   "Charge max",
+   "130 kg"
+  ],
+  [
+   "Roues",
+   "10 pouces, tubeless 60/70-6.5"
+  ],
+  [
+   "Freins",
+   "Tambour avant + disque arrière, freinage électronique E-ABS"
+  ],
+  [
+   "Suspension",
+   "Avant et arrière"
+  ],
+  [
+   "Étanchéité",
+   "IPX5"
+  ],
+  [
+   "Temps de charge",
+   "5 h 30 à 6 h annoncées selon le revendeur, 6 h 32 mesurées par le Labo Fnac"
+  ],
+  [
+   "Prix de lancement",
+   "599 € (fin du printemps 2026)"
+  ]
+ ],
+ "pros": [
+  "Grosse batterie pour le prix : 596,7 Wh, et 46,6 km mesurés en moyenne sur trois cycles avec un pilote de 80 kg (Frandroid).",
+  "Double suspension et pneus tubeless de 10 pouces pour le confort en ville (Les Numériques).",
+  "Charge maximale de 130 kg, pour les gabarits lourds (Frandroid, Les Numériques)."
+ ],
+ "cons": [
+  "Vibrations et freinage perfectible (Frandroid).",
+  "Autonomie annoncée de 90 km très optimiste : Les Numériques l'estime plutôt entre 35 et 45 km en conditions favorables.",
+  "Les mesures d'autonomie varient fortement d'un test à l'autre (46,6 km chez Frandroid, 70,9 km au Labo Fnac) : le parcours et le mode de conduite comptent plus que la fiche.",
+  "24,8 kg : peu pratique à porter dans les escaliers."
+ ],
+ "parts": [
+  {
+   "label": "Pneu",
+   "size": "60/70-6.5 tubeless (10 pouces)",
+   "count": 14,
+   "to": "/piece/pneu-tubeless-60-70-6-5-wanda",
+   "cta": "Pneus 60/70-6.5"
+  },
+  {
+   "label": "Chambre à air",
+   "size": "10x2.50, valve droite ou coudée",
+   "count": 6,
+   "to": "/piece/chambre-a-air-10x250-valve-droite",
+   "cta": "Chambres à air"
+  }
+ ],
+ "care": [
+  "Le tambour avant se règle : dès que la course du levier s'allonge, reprends la tension du câble.",
+  "Surveille l'usure des plaquettes du disque arrière, c'est le frein qui travaille le plus en descente.",
+  "Pneus tubeless : vérifie la pression chaque mois, un pneu sous-gonflé fait vibrer la trottinette et s'use vite."
+ ],
+ "price": {
+  "text": "Prix de lancement en France : 599 € (fin du printemps 2026) ; 549,99 € relevés chez Navee et Les Numériques.",
+  "source": "Frandroid, Les Numériques"
+ },
+ "faq": [
+  {
+   "q": "Quelle taille de pneu pour la Navee GT5 Max ?",
+   "a": "Des pneus tubeless de 10 pouces en 60/70-6.5, aussi notés 10x2.50-6.5, sur une jante de 6,5 pouces."
+  },
+  {
+   "q": "Quels freins sur la Navee GT5 Max ?",
+   "a": "Un tambour à l'avant, sans plaquettes, et un disque à l'arrière, complétés par un freinage électronique E-ABS."
+  },
+  {
+   "q": "Quelle est l'autonomie réelle de la Navee GT5 Max ?",
+   "a": "Navee annonce 90 km à 15 km/h. Frandroid a mesuré 46,6 km en moyenne, le Labo Fnac 70,9 km sur son cycle d'essai. Compte plutôt sur la première valeur si tu roules en mode Sport avec du relief."
+  },
+  {
+   "q": "Combien de temps pour recharger la Navee GT5 Max ?",
+   "a": "Entre 5 h 30 et 6 h selon les fiches revendeurs ; le Labo Fnac a mesuré 6 h 32 pour une charge complète."
+  },
+  {
+   "q": "Quelle différence entre la Navee GT5 Max et la GT5 Pro ?",
+   "a": "La GT5 Max a une batterie de 12,75 Ah et un moteur de 700 W, la GT5 Pro une batterie de 12 Ah et un moteur de 600 W. Ce sont deux modèles distincts : vérifie le nom exact avant de commander une pièce."
+  }
+ ],
+ "sources": [
+  {
+   "label": "Navee France — trottinette électrique GT5 Max",
+   "url": "https://naveetech.fr/products/navee-trottinette-electrique-gt5-max"
+  },
+  {
+   "label": "Frandroid — fiche Navee GT5 Max",
+   "url": "https://www.frandroid.com/produits/trottinette-electrique/navee/3249913-navee-gt5-max"
+  },
+  {
+   "label": "Frandroid — essai Navee GT5 Max",
+   "url": "https://www.frandroid.com/survoltes/trottinette-electrique/3249113_essai-navee-gt5-max-une-trottinette-electrique-qui-peut-secouer-segway-et-xiaomi"
+  },
+  {
+   "label": "Les Numériques — test Navee GT5 Max",
+   "url": "https://www.lesnumeriques.com/trottinette-electrique/navee-gt5-max-p78203/test.html"
+  },
+  {
+   "label": "Labo Fnac — mesures Navee GT5 Max",
+   "url": "https://lab.fnac.com/compare/electricScooter/8885022070994"
+  },
+  {
+   "label": "Darty — Navee GT5 Max",
+   "url": "https://www.darty.com/nav/achat/sports_loisirs/glisse_urbaine/trottinette_electrique/navee_gt5maxn.html"
+  },
+  {
+   "label": "Pixmania — Navee GT5 Max 700 W",
+   "url": "https://www.pixmania.com/fr/fr/trottinette-electrique-navee-gt5-max-700w-90-km-noir-580896.html"
+  }
+ ]
+}

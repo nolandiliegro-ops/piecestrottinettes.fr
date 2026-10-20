@@ -1,0 +1,116 @@
+{
+ "displayName": "Navee K100 Pro",
+ "metaTitle": "Navee K100 Pro : fiche technique et pièces",
+ "metaDescription": "Navee K100 Pro : trottinette enfant 130 W, 16 km/h max, roues 7\" increvables, frein tambour arrière, 9 kg. Fiche technique, entretien et pièces.",
+ "intro": [
+  "La Navee K100 Pro est une trottinette électrique pour enfant, conseillée de 6 à 14 ans selon Darty. Elle pèse 9 kg, accepte jusqu'à 50 kg et propose trois paliers de vitesse, 6, 12 et 16 km/h, que le parent règle selon l'âge et l'aisance de l'enfant.",
+  "Moteur de 130 W (160 W en pointe), batterie de 21,6 V et 55 Wh pour 11 km annoncés à 12 km/h, roues de 7 pouces sans chambre à air, frein à tambour à l'arrière. Elle est classée IPX4 et se recharge en environ 3 h 30."
+ ],
+ "specs": [
+  [
+   "Moteur",
+   "130 W (160 W en pointe)"
+  ],
+  [
+   "Vitesse",
+   "16 km/h max, paliers à 6, 12 et 16 km/h"
+  ],
+  [
+   "Autonomie annoncée",
+   "jusqu'à 11 km à 12 km/h, 8 km à 16 km/h"
+  ],
+  [
+   "Batterie",
+   "21,6 V, 2,55 Ah, 55 Wh"
+  ],
+  [
+   "Poids",
+   "9 kg"
+  ],
+  [
+   "Charge max",
+   "50 kg"
+  ],
+  [
+   "Âge conseillé",
+   "6 à 14 ans (selon Darty)"
+  ],
+  [
+   "Roues",
+   "7 pouces, increvables (pneus pleins)"
+  ],
+  [
+   "Freins",
+   "Électronique avant + tambour arrière"
+  ],
+  [
+   "Suspension",
+   "aucune"
+  ],
+  [
+   "Étanchéité",
+   "IPX4"
+  ],
+  [
+   "Temps de charge",
+   "environ 3 h 30"
+  ]
+ ],
+ "pros": [
+  "Trois paliers de vitesse, 6, 12 et 16 km/h, pour adapter la trottinette à l'âge de l'enfant (Navee).",
+  "Roues increvables : pas de crevaison ni de pression à surveiller (Pixmania).",
+  "9 kg et une recharge d'environ 3 h 30 (Navee, Darty)."
+ ],
+ "cons": [
+  "Autonomie courte : 11 km annoncés à 12 km/h, 8 km à 16 km/h (Navee France).",
+  "Charge maximale de 50 kg : elle ne convient pas à un adolescent lourd ni à un adulte.",
+  "Pas de suspension, et des roues pleines qui transmettent les chocs sur les pavés.",
+  "Aucun test de presse français trouvé à ce jour : les chiffres sont ceux du fabricant."
+ ],
+ "parts": [],
+ "care": [
+  "Le tambour arrière est le seul frein mécanique : vérifie avec ton enfant que le levier freine franchement avant chaque sortie.",
+  "IPX4 : elle supporte les éclaboussures, pas les flaques profondes ni le lavage au jet.",
+  "Contrôle régulièrement le serrage du guidon et du pliage, les enfants tapent souvent la trottinette en la posant."
+ ],
+ "faq": [
+  {
+   "q": "Quelle taille de roue pour la Navee K100 Pro ?",
+   "a": "Des roues de 7 pouces increvables, sans chambre à air. Il n'y a donc pas de pression à surveiller."
+  },
+  {
+   "q": "La Navee K100 Pro a-t-elle des plaquettes de frein ?",
+   "a": "Non. Elle freine avec un tambour à l'arrière et un frein électronique à l'avant."
+  },
+  {
+   "q": "Quelle vitesse atteint la Navee K100 Pro ?",
+   "a": "16 km/h au maximum. Elle propose trois paliers, 6, 12 et 16 km/h, pour démarrer doucement avec un jeune enfant."
+  },
+  {
+   "q": "À partir de quel âge pour la Navee K100 Pro ?",
+   "a": "Darty la conseille de 6 à 14 ans, avec une charge maximale de 50 kg."
+  },
+  {
+   "q": "Combien de temps pour recharger la Navee K100 Pro ?",
+   "a": "Environ 3 h 30 pour une charge complète, selon Navee et Darty."
+  }
+ ],
+ "sources": [
+  {
+   "label": "Navee France — Navee K100 Pro",
+   "url": "https://naveetech.fr/products/navee-k100-pro"
+  },
+  {
+   "label": "Navee Europe — K100 Pro",
+   "url": "https://eu.naveetech.com/en-nordic/products/navee-k100-pro"
+  },
+  {
+   "label": "Darty — Navee K100 Pro",
+   "url": "https://www.darty.com/nav/achat/sports_loisirs/glisse_urbaine/trottinette_electrique/navee_k100pror.html"
+  },
+  {
+   "label": "Pixmania — Navee K100 Pro enfant",
+   "url": "https://www.pixmania.com/fr/fr/trottinette-electrique-enfant-navee-k100-pro-130w-16-kmh-11-km-autonomie-noir-et-orange-pliable-519270.html"
+  }
+ ]
+}

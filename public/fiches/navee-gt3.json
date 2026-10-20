@@ -1,0 +1,144 @@
+{
+ "displayName": "Navee GT3",
+ "metaTitle": "Navee GT3 : fiche technique, avis et pièces",
+ "metaDescription": "Navee GT3 : 350 W (700 W en pointe), batterie 48 V 358 Wh, pneus tubeless 10x2.50-6.5, frein tambour avant. Avis, entretien et pièces compatibles.",
+ "intro": [
+  "La Navee GT3 est la version d'entrée de la gamme GT3 de Navee, à côté des GT3 Pro et GT3 Max qui sont des modèles distincts. Elle est commercialisée en France depuis mars 2025, à partir de 399 € selon Cleanrider, avec suspensions avant et arrière, contrôle de traction et clignotants.",
+  "Moteur de 350 W (700 W en pointe), batterie de 358 Wh pour 50 km annoncés à 15 km/h, pneus tubeless de 10 pouces, frein à tambour à l'avant et frein électronique à l'arrière. À 21 kg, c'est une trottinette de trajets urbains, bridée à 25 km/h."
+ ],
+ "specs": [
+  [
+   "Moteur",
+   "350 W (700 W en pointe)"
+  ],
+  [
+   "Vitesse",
+   "25 km/h"
+  ],
+  [
+   "Autonomie",
+   "jusqu'à 50 km annoncés à 15 km/h, 40 km à 25 km/h"
+  ],
+  [
+   "Batterie",
+   "48 V, 7,65 Ah, 358 Wh"
+  ],
+  [
+   "Poids",
+   "21 kg"
+  ],
+  [
+   "Charge max",
+   "110 kg"
+  ],
+  [
+   "Roues",
+   "10 pouces, tubeless 10x2.50-6.5 (60/70-6.5)"
+  ],
+  [
+   "Freins",
+   "Tambour avant + électronique arrière (E-ABS)"
+  ],
+  [
+   "Suspension",
+   "Double suspension avant, deux cylindres à l'arrière"
+  ],
+  [
+   "Étanchéité",
+   "IPX5"
+  ],
+  [
+   "Temps de charge",
+   "environ 8 h"
+  ],
+  [
+   "Sortie",
+   "mars 2025"
+  ]
+ ],
+ "pros": [
+  "Équipement complet pour le prix : suspensions avant et arrière, contrôle de traction, clignotants, compatibilité Apple Localiser (Cleanrider).",
+  "Batterie de 358 Wh pour 50 km annoncés à 15 km/h, 40 km à 25 km/h (Navee).",
+  "Étanchéité IPX5 pour rouler sous la pluie (Cleanrider)."
+ ],
+ "cons": [
+  "Autonomie réelle bien en dessous de l'annonce : 25 à 30 km en usage quotidien, moins de 20 km en mode sport (L'Équipe).",
+  "Un seul frein mécanique, le tambour avant ; l'arrière freine électroniquement.",
+  "Charge maximale de 110 kg, plus basse que sur les GT3 Max et Pro."
+ ],
+ "parts": [
+  {
+   "label": "Pneu",
+   "size": "10x2.50-6.5 (60/70-6.5) tubeless",
+   "count": 14,
+   "to": "/piece/pneu-tubeless-60-70-6-5-wanda",
+   "cta": "Pneus 10x2.50-6.5"
+  },
+  {
+   "label": "Chambre à air",
+   "size": "10x2.50, valve droite ou coudée",
+   "count": 6,
+   "to": "/piece/chambre-a-air-10x250-valve-droite",
+   "cta": "Chambres à air"
+  }
+ ],
+ "care": [
+  "Le tambour avant est ton seul frein mécanique : fais-le régler dès que la course du levier s'allonge.",
+  "Pneus tubeless : contrôle la pression chaque mois, les suspensions masquent un pneu sous-gonflé qui s'use alors vite.",
+  "Après la pluie, essuie les cylindres de suspension arrière et vérifie qu'ils ne prennent pas de jeu."
+ ],
+ "price": {
+  "text": "Prix de commercialisation en France : à partir de 399 € (mars 2025).",
+  "source": "Cleanrider"
+ },
+ "faq": [
+  {
+   "q": "Quelle taille de pneu pour la Navee GT3 ?",
+   "a": "Des pneus tubeless de 10 pouces en 10x2.50-6.5, aussi notés 60/70-6.5, sur une jante de 6,5 pouces."
+  },
+  {
+   "q": "La Navee GT3 a-t-elle des plaquettes de frein ?",
+   "a": "Non. Elle freine avec un tambour à l'avant et un frein électronique (E-ABS) à l'arrière."
+  },
+  {
+   "q": "Quelle est l'autonomie réelle de la Navee GT3 ?",
+   "a": "Navee annonce 50 km à 15 km/h et 40 km à 25 km/h. L'Équipe rapporte 25 à 30 km en usage quotidien et moins de 20 km en mode sport."
+  },
+  {
+   "q": "Peut-on mettre une chambre à air sur la Navee GT3 ?",
+   "a": "Oui, une chambre à air 10x2.50 se monte dans le pneu tubeless si tu enchaînes les crevaisons."
+  },
+  {
+   "q": "Quelle différence entre la Navee GT3, GT3 Pro et GT3 Max ?",
+   "a": "Ce sont trois modèles distincts. La GT3 a un moteur de 350 W et une batterie de 358 Wh ; la GT3 Max monte une batterie de 12,75 Ah pour plus d'autonomie. Vérifie le nom exact sur ta trottinette avant de commander une pièce."
+  }
+ ],
+ "sources": [
+  {
+   "label": "Navee France — Navee GT3",
+   "url": "https://naveetech.fr/products/navee-gt3"
+  },
+  {
+   "label": "Navee — fiche GT3",
+   "url": "https://www.naveetech.com/fr/navee-gt3/"
+  },
+  {
+   "label": "Cleanrider — catalogue Navee GT3",
+   "url": "https://www.cleanrider.com/catalogue/trottinette-electrique/navee/navee-gt3/"
+  },
+  {
+   "label": "Fnac — Navee GT3 350 W",
+   "url": "https://www.fnac.com/Trottinette-electrique-Navee-GT3-350-W-Noir/a21665520/w-4"
+  },
+  {
+   "label": "L'Équipe — quelle trottinette électrique choisir en 2026",
+   "url": "https://www.lequipe.fr/Guide-d-achat/Mode-et-sportswear/Actualites/Quelle-trottinette-electrique-choisir-en-2026-les-10-meilleurs-modeles-pour-la-ville/1722912"
+  }
+ ],
+ "video": {
+  "id": "zzBLU-lFzP8",
+  "title": "Présentation & test de la NAVEE GT3 : on vous dit tout !",
+  "channel": "TURN Shop",
+  "uploadDate": "2025-11-12"
+ }
+}

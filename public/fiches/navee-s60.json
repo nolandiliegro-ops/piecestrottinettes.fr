@@ -1,0 +1,137 @@
+{
+ "displayName": "Navee S60",
+ "metaTitle": "Navee S60 : fiche technique, avis et pièces",
+ "metaDescription": "Navee S60 : 500 W (1 000 W en pointe), batterie 48 V 10,2 Ah, pneus tubeless 250x64, double frein à tambour, double suspension. Avis et pièces.",
+ "intro": [
+  "La Navee S60 sort en France en juin 2024 au prix de lancement de 699 €, selon Cleanrider et Frandroid. Par rapport à la S40, elle passe à une batterie en 48 V et à un moteur plus puissant, avec double suspension et compatibilité Apple Localiser.",
+  "Moteur de 500 W (1 000 W en pointe), batterie de 48 V et 10,2 Ah pour 60 km annoncés à 15 km/h, pneus tubeless de 10 pouces en 250x64, freins à tambour à l'avant et à l'arrière complétés par un frein électronique. Elle pèse autour de 24 kg et reste bridée à 25 km/h."
+ ],
+ "specs": [
+  [
+   "Moteur",
+   "500 W (1 000 W en pointe)"
+  ],
+  [
+   "Vitesse",
+   "25 km/h"
+  ],
+  [
+   "Autonomie",
+   "jusqu'à 60 km annoncés à 15 km/h ; 29,6 km mesurés par Frandroid, 22,4 à 30,2 km par Les Numériques"
+  ],
+  [
+   "Batterie",
+   "48 V, 10,2 Ah (477,2 Wh selon Frandroid, 490 Wh selon Cleanrider et Les Numériques)"
+  ],
+  [
+   "Poids",
+   "24 à 24,6 kg selon les sources"
+  ],
+  [
+   "Charge max",
+   "120 kg"
+  ],
+  [
+   "Roues",
+   "10 pouces, tubeless 250x64"
+  ],
+  [
+   "Freins",
+   "Tambour avant + tambour arrière, frein électronique (E-ABS)"
+  ],
+  [
+   "Suspension",
+   "Double bras oscillant à ressorts, avant et arrière"
+  ],
+  [
+   "Étanchéité",
+   "IPX5"
+  ],
+  [
+   "Temps de charge",
+   "environ 8 h"
+  ],
+  [
+   "Prix de lancement",
+   "699 € (juin 2024)"
+  ]
+ ],
+ "pros": [
+  "Design solide, repose-pied fonctionnel et compatibilité Apple Localiser (Les Numériques).",
+  "Freinage efficace et bonne tenue de route, y compris sous la pluie (Les Numériques).",
+  "Double suspension et conception robuste (Cleanrider)."
+ ],
+ "cons": [
+  "Autonomie réelle de 25 à 30 km environ, loin des 60 km annoncés (Frandroid, Les Numériques).",
+  "Poids et encombrement importants, pliage peu pratique (Les Numériques).",
+  "Recharge d'environ 8 heures."
+ ],
+ "parts": [
+  {
+   "label": "Pneu",
+   "size": "250x64 tubeless (10 pouces)",
+   "count": 3,
+   "to": "/piece/pneu-250x64-cst-tubeless",
+   "cta": "Pneus 250x64"
+  }
+ ],
+ "care": [
+  "Deux freins à tambour : pas de plaquettes à changer, mais règle la tension des câbles dès que la course des leviers s'allonge.",
+  "Pneus tubeless 250x64 : contrôle la pression chaque mois, la double suspension masque un pneu sous-gonflé.",
+  "Avec près de 25 kg, le mécanisme de pliage travaille : vérifie son serrage et son jeu régulièrement."
+ ],
+ "price": {
+  "text": "Prix de lancement en France : 699 € (juin 2024).",
+  "source": "Cleanrider, Frandroid"
+ },
+ "faq": [
+  {
+   "q": "Quelle taille de pneu pour la Navee S60 ?",
+   "a": "Des pneus tubeless de 10 pouces en 250x64, sur une jante de 6,5 pouces. Vérifie la cote inscrite sur le flanc avant de commander."
+  },
+  {
+   "q": "La Navee S60 a-t-elle des plaquettes de frein ?",
+   "a": "Non. Elle freine avec deux tambours, à l'avant et à l'arrière, complétés par un frein électronique."
+  },
+  {
+   "q": "Quelle est l'autonomie réelle de la Navee S60 ?",
+   "a": "Frandroid a mesuré 29,6 km en usage urbain à Paris, Les Numériques entre 22,4 et 30,2 km selon la température et le parcours. Navee annonce 60 km à 15 km/h constants."
+  },
+  {
+   "q": "Combien de temps pour recharger la Navee S60 ?",
+   "a": "Environ 8 heures pour une charge complète."
+  },
+  {
+   "q": "Quelle différence entre la Navee S40 et la S60 ?",
+   "a": "La S60 passe en 48 V avec une batterie de 10,2 Ah et un moteur de 500 W (1 000 W en pointe), contre 36 V, 7,65 Ah et 350 W pour la S40. Elle a aussi un tambour à l'arrière en plus du frein électronique."
+  }
+ ],
+ "sources": [
+  {
+   "label": "Cleanrider — test Navee S60",
+   "url": "https://www.cleanrider.com/essais/trottinette-electrique/test-trottinette-electrique-navee-s60/"
+  },
+  {
+   "label": "Cleanrider — catalogue Navee S60",
+   "url": "https://www.cleanrider.com/catalogue/trottinette-electrique/navee/navee-s60/"
+  },
+  {
+   "label": "Frandroid — test Navee S60",
+   "url": "https://www.frandroid.com/survoltes/trottinette-electrique/2453150_on-a-teste-la-navee-s60-la-trottinette-electrique-cyperpunk-qui-peut-faire-mal-en-promotion"
+  },
+  {
+   "label": "Les Numériques — test Navee S60",
+   "url": "https://www.lesnumeriques.com/trottinette-electrique/navee-s60-p75959/test.html"
+  },
+  {
+   "label": "Navee Belgique — S60",
+   "url": "https://be.naveetech.com/en/products/navee-s60"
+  }
+ ],
+ "video": {
+  "id": "dGjJIp3e0jU",
+  "title": "Navee S60 - Test de la trottinette électrique inspirée du Cybertruck",
+  "channel": "Avis Express - Testeur High-Tech",
+  "uploadDate": "2024-06-29"
+ }
+}

@@ -1,0 +1,119 @@
+{
+ "displayName": "Navee ST3",
+ "metaTitle": "Navee ST3 : fiche technique et pièces",
+ "metaDescription": "Navee ST3 : 500 W (1 000 W en pointe), batterie 48 V 10,2 Ah, pneus tubeless 10x2.50-6.5, tambour avant et disque arrière. Fiche, entretien et pièces.",
+ "intro": [
+  "La Navee ST3 est la version standard de la série ST3, à ne pas confondre avec la ST3 Pro qui a sa propre fiche. Cleanrider la rattache à l'année 2025. Elle est suspendue à l'avant et à l'arrière par des bras amortisseurs et classée IPX5.",
+  "Moteur de 500 W (1 000 W en pointe), batterie de 48 V et 10,2 Ah (477,36 Wh) pour 60 km annoncés à 15 km/h, pneus tubeless de 10 pouces, frein à tambour à l'avant, disque et frein électronique à l'arrière. Elle pèse 24,8 kg et reste bridée à 25 km/h."
+ ],
+ "specs": [
+  [
+   "Moteur",
+   "500 W (1 000 W en pointe)"
+  ],
+  [
+   "Vitesse",
+   "25 km/h"
+  ],
+  [
+   "Autonomie annoncée",
+   "60 km à 15 km/h, 55 km à 20 km/h, 40 km à 25 km/h"
+  ],
+  [
+   "Batterie",
+   "48 V, 10,2 Ah, 477,36 Wh"
+  ],
+  [
+   "Poids",
+   "24,8 kg"
+  ],
+  [
+   "Charge max",
+   "120 kg"
+  ],
+  [
+   "Roues",
+   "10 pouces, tubeless 10x2.50-6.5"
+  ],
+  [
+   "Freins",
+   "Tambour avant + disque arrière et frein électronique (E-ABS)"
+  ],
+  [
+   "Suspension",
+   "Bras amortisseurs avant et arrière"
+  ],
+  [
+   "Étanchéité",
+   "IPX5"
+  ],
+  [
+   "Temps de charge",
+   "environ 8 h"
+  ]
+ ],
+ "pros": [
+  "Suspension par bras amortisseurs à l'avant et à l'arrière (Navee France).",
+  "Trois freins : tambour avant, disque arrière et frein électronique (Navee France).",
+  "Étanchéité IPX5 pour les trajets sous la pluie (Navee France)."
+ ],
+ "cons": [
+  "Autonomie annoncée de 40 km seulement à 25 km/h, contre 60 km à 15 km/h (Navee France).",
+  "24,8 kg : peu pratique à porter dans les escaliers ou les transports.",
+  "Recharge d'environ 8 heures.",
+  "Aucun test de presse français de la ST3 standard trouvé à ce jour : les chiffres sont ceux du fabricant."
+ ],
+ "parts": [
+  {
+   "label": "Pneu",
+   "size": "10x2.50-6.5 (60/70-6.5) tubeless",
+   "count": 14,
+   "to": "/piece/pneu-tubeless-10x2-50-6-5-yuanxing",
+   "cta": "Pneus 10x2.50-6.5"
+  },
+  {
+   "label": "Chambre à air",
+   "size": "10x2.50, valve droite ou coudée",
+   "count": 6,
+   "to": "/piece/chambre-a-air-10x250-valve-0x90",
+   "cta": "Chambres à air"
+  }
+ ],
+ "care": [
+  "Surveille l'usure des plaquettes du disque arrière et l'état du disque, surtout si tu freines fort en descente.",
+  "Le tambour avant se règle : reprends la tension du câble dès que la course du levier s'allonge.",
+  "Pneus tubeless : contrôle la pression chaque mois, les bras amortisseurs masquent un pneu sous-gonflé."
+ ],
+ "faq": [
+  {
+   "q": "Quelle taille de pneu pour la Navee ST3 ?",
+   "a": "Des pneus tubeless de 10 pouces en 10x2.50-6.5, aussi notés 60/70-6.5, sur une jante de 6,5 pouces."
+  },
+  {
+   "q": "Quels freins sur la Navee ST3 ?",
+   "a": "Un tambour à l'avant, sans plaquettes, un disque à l'arrière et un frein électronique (E-ABS). Pour les plaquettes arrière, compare la forme de ta plaquette avant de commander."
+  },
+  {
+   "q": "Quelle autonomie pour la Navee ST3 ?",
+   "a": "Navee annonce 60 km à 15 km/h, 55 km à 20 km/h et 40 km à 25 km/h. Aucune mesure de presse française n'est disponible à ce jour pour la ST3 standard."
+  },
+  {
+   "q": "Quelle différence entre la Navee ST3 et la ST3 Pro ?",
+   "a": "La ST3 Pro monte une batterie de 12,75 Ah contre 10,2 Ah, pour 75 km annoncés au lieu de 60 km. Ce sont deux modèles distincts : vérifie le nom exact de ta trottinette avant de commander une pièce."
+  }
+ ],
+ "sources": [
+  {
+   "label": "Navee France — Navee ST3",
+   "url": "https://naveetech.fr/products/navee-st3"
+  },
+  {
+   "label": "LeGuide — Navee ST3",
+   "url": "https://www.leguide.com/gtin/06975293677618"
+  },
+  {
+   "label": "Cleanrider — catalogue Navee ST3",
+   "url": "https://www.cleanrider.com/catalogue/trottinette-electrique/navee/navee-st3/"
+  }
+ ]
+}
