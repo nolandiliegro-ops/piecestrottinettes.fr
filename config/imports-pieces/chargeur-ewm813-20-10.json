@@ -1,0 +1,28 @@
+[
+ {
+  "categoryName": "Chargeurs",
+  "parts": [
+   {
+    "name": "Chargeur 48V ➡️ 54,6V / 2A connecteur Xiaomi 4 Ultra / 5 / 5 Pro / 6 Pro",
+    "slug": "chargeur-48v-546v-2a-connecteur-xiaomi-4-ultra-5-5-pro-6-pro",
+    "sku": "EW-EWM813",
+    "price": 34.9,
+    "stock_quantity": 0,
+    "description": "<p><strong>Ton chargeur Xiaomi a rendu l'âme ?</strong> Ce chargeur 48 V (sortie 54,6 V, 2 A) porte l'embout du Xiaomi 4 Ultra, aussi monté sur les Scooter 5, 5 Pro, 4 Pro 2e génération et 6 Pro : tu branches, tu recharges, sans adaptateur.</p><ul><li><strong>Le bon embout</strong> : connecteur Mi4 Ultra, celui des Xiaomi 48 V récents.</li><li><strong>54,6 V – 2 A</strong> : la tension de fin de charge d'une batterie 48 V.</li><li><strong>Protégé</strong> : coupure en cas de surcharge, de surchauffe et de court-circuit.</li><li><strong>Compact</strong> : il tient dans un sac, pour recharger au bureau ou en voyage.</li></ul><p><strong>Le bon réflexe :</strong> regarde l'embout avant de commander, le Scooter 5 Max et le 4 Pro Max ont une autre prise. Et un deuxième chargeur au travail, c'est la batterie toujours pleine pour rentrer.</p>",
+    "meta_title": "Chargeur 48V 54,6V 2A Xiaomi 4 Ultra / 5 / 5 Pro / 6 Pro",
+    "meta_description": "Chargeur 48V (sortie 54,6V, 2A) avec l'embout Xiaomi 4 Ultra, Scooter 5, 5 Pro, 4 Pro 2e gén. et 6 Pro. Protections intégrées. Livraison rapide.",
+    "ean": "8435764435959",
+    "characteristics": "Chargeur 48V, sortie 54,6V 2A. Connecteur Xiaomi Mi4 Ultra. Protections surcharge, surchauffe, court-circuit. Réf. fournisseur eWheel EWM813. EAN 8435764435959.",
+    "compatibility_source": "Xiaomi Mi 4 Ultra, Xiaomi Mi 5, Xiaomi Mi 5 Pro, Xiaomi Mi4 Pro Gen2, Xiaomi Mi6 Pro (eWheel)",
+    "electrical_specs": {"connector": "XIAOMI-2X", "voltages": [48]},
+    "source_image_urls": [
+     "https://cdn.shopify.com/s/files/1/0613/0178/4618/files/8435764435959.jpg",
+     "https://cdn.shopify.com/s/files/1/0613/0178/4618/files/8435764435959_1.jpg",
+     "https://cdn.shopify.com/s/files/1/0613/0178/4618/files/8435764435959_2.jpg"
+    ],
+    "supplier": {"name": "ewheel", "sku": "EWM813-IU", "url": "https://ewheel.es/products/chargeur-48v-sortie-54-6v-2a-connecteur-mi4-ultra", "buy_price_ht": 14.95, "stock_supplier": 0, "notes": "import 20/10 (prise XIAOMI-2X), en rupture chez eWheel à l'import"},
+    "technical_metadata": {"source": "airtable", "airtable_id": "recNTN4OVfkAoVQ5U", "import": "chargeur-ewm813-20-10"}
+   }
+  ]
+ }
+]
