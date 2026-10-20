@@ -8,7 +8,7 @@
  */
 import { useState, type ReactNode } from "react";
 import { Link } from "react-router-dom";
-import { ChevronDown, CheckCircle2, HelpCircle, Search, Wrench, Clock, Package, Sparkles, Gauge, Lightbulb } from "lucide-react";
+import { ChevronDown, CheckCircle2, HelpCircle, Search, Wrench, Clock, Package, Sparkles, Gauge, Lightbulb, FileText } from "lucide-react";
 import { sanitizeHtml } from "@/lib/sanitizeHtml";
 import { formatPrice } from "@/lib/formatPrice";
 import type { PartDetail, CompatibleScooter } from "@/hooks/usePartDetail";
@@ -139,11 +139,11 @@ const Specs = ({ f, dark = false, limit }: { f: Fiche; dark?: boolean; limit?: n
   </dl>
 );
 
-const TechFull = ({ f }: { f: Fiche }) => (
+const TechFull = ({ f, noDesc = false }: { f: Fiche; noDesc?: boolean }) => (
   <div>
     <Specs f={f} />
     {f.free.length > 0 && <ul className="mt-3 space-y-1.5">{f.free.map((x) => <li key={x} className={txt}>{x}</li>)}</ul>}
-    {f.descText.length > 60 && (
+    {!noDesc && f.descText.length > 60 && (
       <details className="mt-3 group">
         <summary className="list-none cursor-pointer inline-flex items-center gap-2 min-h-[44px] text-sm font-extrabold uppercase tracking-wider [&::-webkit-details-marker]:hidden" style={{ color: GREEN }}>
           Description du fabricant <ChevronDown className="w-4 h-4 transition-transform group-open:rotate-180" />
@@ -427,7 +427,6 @@ const Replie = ({ part, f, scootersLoading }: P) => {
     <Shell f={f}>
       <div className="border-t-2 pt-6 max-w-4xl" style={{ borderColor: CARBON }}>
         <Title />
-        <p className="sr-only">{part.name} : {f.guideLabel}. Compatible avec {f.n} trottinettes {matchBasis(part)}.</p>
         {/* Un repère, zéro phrase : le chiffre de compat descend au module du bas. */}
         <div className="mt-3 flex flex-wrap gap-2">
           {!scootersLoading && f.n > 0 && (
@@ -439,9 +438,13 @@ const Replie = ({ part, f, scootersLoading }: P) => {
           )}
         </div>
         <div className="mt-5 space-y-2">
+          <Fold icon={FileText} title="Présentation">
+            <CountLine part={part} f={f} loading={scootersLoading} />
+            {f.descText.length > 60 && <div className={`mt-3 quill-content ${txt}`} dangerouslySetInnerHTML={{ __html: sanitizeHtml(f.desc) }} />}
+          </Fold>
           {f.points.length > 0 && <Fold icon={Sparkles} title="Ce qui la distingue"><Traits f={f} /></Fold>}
           {f.guide && <Fold icon={Wrench} title="Montage" teaser={part.youtube_video_id ? "vidéo" : undefined}><Install part={part} f={f} /></Fold>}
-          <Fold icon={Gauge} title="Caractéristiques" teaser={f.rows[0]?.[1].split(" · ")[0]}><TechFull f={f} /></Fold>
+          <Fold icon={Gauge} title="Caractéristiques" teaser={f.rows[0]?.[1].split(" · ")[0]}><TechFull f={f} noDesc /></Fold>
           {f.guide && <Fold icon={Lightbulb} title="Bien choisir"><Choose f={f} /></Fold>}
           {f.faq.length > 0 && <Fold icon={HelpCircle} title="Questions fréquentes" teaser={String(f.faq.length)}><Faq f={f} /></Fold>}
         </div>

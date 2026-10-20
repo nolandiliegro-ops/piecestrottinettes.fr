@@ -28,6 +28,7 @@ import { useSelectedScooter } from "@/contexts/ScooterContext";
 import type { PartDetail, CompatibleScooter } from "@/hooks/usePartDetail";
 import CompatibilityMatrix from "@/components/pdp/CompatibilityMatrix";
 import RelatedProducts from "@/components/pdp/RelatedProducts";
+import { useComplementParts } from "@/hooks/useComplementParts";
 import CompatCompact, { type CompatLook } from "@/components/pdp/CompatCompact";
 import PartSeoFicheLooks, { type FicheLook } from "@/components/pdp/PartSeoFicheLooks";
 import PartSeoFiche from "@/components/pdp/PartSeoFiche";
@@ -344,6 +345,17 @@ const CompatIntro = ({ scooters }: { scooters: CompatibleScooter[] }) => {
   );
 };
 
+/** 20/10 (sous ?seo=1) : vente croisée — catégories complémentaires ; repli sur les voisins de catégorie si rien. */
+const SeoRelated = (p: Props) => {
+  const { data: comp = [], isLoading } = useComplementParts(p.part, p.scooters);
+  const parts = comp.length ? comp : p.related;
+  return (
+    <section className="px-4 py-8" style={{ backgroundColor: "#F5F0E8" }}>
+      <div className="mx-auto max-w-6xl"><RelatedProducts parts={parts} isLoading={(isLoading && !comp.length) || p.relatedLoading} /></div>
+    </section>
+  );
+};
+
 const Bottom = (p: Props & { numbered?: boolean; skipCompat?: boolean }) => {
   // 17/10 : bloc compat compact, 5 formes à comparer via &compat=1..5 (défaut 1 · Pastilles).
   const [sp] = useSearchParams();
@@ -361,9 +373,7 @@ const Bottom = (p: Props & { numbered?: boolean; skipCompat?: boolean }) => {
       <>
         {fiche ? <PartSeoFicheLooks look={fiche} tag={sp.has("fiche")} part={p.part} scooters={p.scooters} scootersLoading={p.scootersLoading} />
           : <PartSeoFiche part={p.part} scooters={p.scooters} scootersLoading={p.scootersLoading} />}
-        <section className="px-4 py-8" style={{ backgroundColor: "#F5F0E8" }}>
-          <div className="mx-auto max-w-6xl"><RelatedProducts parts={p.related} isLoading={p.relatedLoading} /></div>
-        </section>
+        <SeoRelated {...p} />
       </>
     );
   }
