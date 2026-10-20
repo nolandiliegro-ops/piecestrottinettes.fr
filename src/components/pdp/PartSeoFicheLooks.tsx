@@ -8,7 +8,7 @@
  */
 import { useState, type ReactNode } from "react";
 import { Link } from "react-router-dom";
-import { ChevronDown, CheckCircle2, HelpCircle, Search, Wrench, Clock, Package } from "lucide-react";
+import { ChevronDown, CheckCircle2, HelpCircle, Search, Wrench, Clock, Package, Sparkles, Gauge, Lightbulb } from "lucide-react";
 import { sanitizeHtml } from "@/lib/sanitizeHtml";
 import { formatPrice } from "@/lib/formatPrice";
 import type { PartDetail, CompatibleScooter } from "@/hooks/usePartDetail";
@@ -18,7 +18,7 @@ import {
 } from "@/components/pdp/PartSeoFiche";
 
 export type FicheLook = 1 | 2 | 3 | 4 | 5;
-export const FICHE_LOOK_NAMES: Record<FicheLook, string> = { 1: "Repassé", 2: "Tableau de bord", 3: "Parcours", 4: "Tout replié", 5: "Carte d'identité" };
+export const FICHE_LOOK_NAMES: Record<FicheLook, string> = { 1: "Repassé", 2: "Tableau de bord", 3: "Parcours", 4: "Replié, compat en bas", 5: "Carte d'identité" };
 
 type P = { part: PartDetail; scooters: CompatibleScooter[]; scootersLoading: boolean; f: Fiche };
 
@@ -38,11 +38,12 @@ const splitTrait = (t: string): [string, string] => {
 // ─── Briques communes ───────────────────────────────────────────────────────
 
 /** Frise horizontale de plaques de marques. Les modèles de TOUTES les marques sont dans le DOM (classe hidden). */
-const BrandRail = ({ groups, check = false, dark = false }: { groups: Group[]; check?: boolean; dark?: boolean }) => {
+const BrandRail = ({ groups, check = false, dark = false, closed = false }: { groups: Group[]; check?: boolean; dark?: boolean; closed?: boolean }) => {
   const [picked, setSel] = useState("");
   if (!groups.length) return null;
   // Les données arrivent après le premier rendu : la marque ouverte par défaut se lit à chaque rendu, pas à l'init.
-  const sel = groups.some((g) => g.brand === picked) ? picked : groups[0].brand;
+  // closed : aucune marque ouverte tant qu'on n'a pas touché une plaque (les modèles restent dans le DOM).
+  const sel = groups.some((g) => g.brand === picked) ? picked : closed ? "" : groups[0].brand;
   const accent = check ? AMBER : GREEN;
   return (
     <div>
@@ -50,7 +51,7 @@ const BrandRail = ({ groups, check = false, dark = false }: { groups: Group[]; c
         {groups.map((g) => {
           const on = g.brand === sel;
           return (
-            <button key={g.brand} type="button" role="tab" aria-selected={on} onClick={() => setSel(g.brand)}
+            <button key={g.brand} type="button" role="tab" aria-selected={on} onClick={() => setSel(closed && g.brand === sel ? "-" : g.brand)}
               className="snap-start shrink-0 min-h-[56px] min-w-[104px] px-3 py-2 text-left transition-colors"
               style={{ clipPath: CHAMFER, background: on ? (dark ? "#fff" : CARBON) : dark ? "rgba(255,255,255,0.08)" : "#fff",
                 color: on ? (dark ? CARBON : "#fff") : dark ? "#fff" : CARBON, boxShadow: on ? "none" : `inset 0 0 0 1px ${dark ? "rgba(255,255,255,0.18)" : LINE}` }}>
@@ -93,18 +94,18 @@ const SearchBox = ({ part, f, dark = false }: { part: PartDetail; f: Fiche; dark
   </div>
 );
 
-const CompatBlock = ({ part, f, dark = false }: { part: PartDetail; f: Fiche; dark?: boolean }) => (
+const CompatBlock = ({ part, f, dark = false, closed = false }: { part: PartDetail; f: Fiche; dark?: boolean; closed?: boolean }) => (
   <div>
     <h3 className="sr-only">Trottinettes compatibles avec {part.name}</h3>
     {f.verified.length + f.toCheck.length > 0 && <div className="mb-3"><SearchBox part={part} f={f} dark={dark} /></div>}
-    <BrandRail groups={f.groups} dark={dark} />
+    <BrandRail groups={f.groups} dark={dark} closed={closed} />
     {f.checkGroups.length > 0 && (
       <details className="mt-4 group">
         <summary className="list-none cursor-pointer inline-flex items-center gap-2 min-h-[44px] text-sm font-extrabold uppercase tracking-wider [&::-webkit-details-marker]:hidden" style={{ color: dark ? "#FCD34D" : AMBER }}>
           <HelpCircle className="w-4 h-4" /> À vérifier ({f.toCheck.length}) <ChevronDown className="w-4 h-4 transition-transform group-open:rotate-180" />
         </summary>
         <p className={`${dark ? "text-base text-white/80" : txt} mb-2`}>Ces modèles partagent une cote proche : demande-nous avant de commander.</p>
-        <BrandRail groups={f.checkGroups} check dark={dark} />
+        <BrandRail groups={f.checkGroups} check dark={dark} closed={closed} />
       </details>
     )}
     <p className={`mt-2 ${dark ? "text-base text-white/80" : txt}`}>
@@ -306,9 +307,10 @@ const standardTabs = (part: PartDetail, f: Fiche, opts: { compat?: boolean; mont
   return opts.montageFirst ? [...compat, ...montage, ...rest, ...faq] : [...compat, ...rest, ...montage, ...faq];
 };
 
-const Fold = ({ title, teaser, children, open = false }: { title: string; teaser?: string; children: ReactNode; open?: boolean }) => (
+const Fold = ({ title, teaser, children, open = false, icon: Icon }: { title: string; teaser?: string; children: ReactNode; open?: boolean; icon?: typeof Wrench }) => (
   <details className="group bg-white" open={open} style={frame()}>
     <summary className="list-none cursor-pointer flex items-center gap-3 min-h-[60px] px-4 select-none [&::-webkit-details-marker]:hidden">
+      {Icon && <span aria-hidden className="shrink-0 w-9 h-9 flex items-center justify-center text-white transition-colors group-open:bg-[#4A7C59]" style={{ background: CARBON, clipPath: CHAMFER }}><Icon className="w-4 h-4" /></span>}
       <h3 className="flex-1 text-sm lg:text-base font-extrabold uppercase tracking-wider" style={{ color: CARBON }}>{title}</h3>
       {teaser && <span className="text-sm text-right max-w-[45%] truncate" style={{ ...big, color: GREEN }}>{teaser}</span>}
       <ChevronDown className="w-5 h-5 shrink-0 transition-transform group-open:rotate-180" />
@@ -419,24 +421,45 @@ const Parcours = ({ part, f }: P) => (
 );
 
 // ─── 4 · TOUT REPLIÉ : la lecture littérale de « compacter » ───────────────────
-const Replie = ({ part, f, scootersLoading }: P) => (
-  <Shell f={f}>
-    <div className="border-t-2 pt-6 max-w-4xl" style={{ borderColor: CARBON }}>
-      <Title />
-      <CountLine part={part} f={f} loading={scootersLoading} />
-      <div className="mt-4 space-y-2">
-        <Fold title="Compatibilité" teaser={f.n ? `${f.n} trottinettes` : undefined}><CompatBlock part={part} f={f} /></Fold>
-        {f.points.length > 0 && <Fold title="Ce qui la distingue" teaser={splitTrait(f.points[0])[0] || undefined}><Traits f={f} /></Fold>}
-        {f.guide && <Fold title="Montage" teaser={part.youtube_video_id ? "vidéo" : f.guide.install.time}><Install part={part} f={f} /></Fold>}
-        <Fold title="Caractéristiques" teaser={f.rows[0]?.[1].split(" · ")[0]}><TechFull f={f} /></Fold>
-        {f.guide && <Fold title="Bien choisir"><Choose f={f} /></Fold>}
-        {f.faq.length > 0 && <Fold title="Questions fréquentes" teaser={String(f.faq.length)}><Faq f={f} /></Fold>}
+const Replie = ({ part, f, scootersLoading }: P) => {
+  const goCompat = () => document.getElementById("pf-compat-bas")?.scrollIntoView({ behavior: "smooth", block: "start" });
+  return (
+    <Shell f={f}>
+      <div className="border-t-2 pt-6 max-w-4xl" style={{ borderColor: CARBON }}>
+        <Title />
+        <p className="sr-only">{part.name} : {f.guideLabel}. Compatible avec {f.n} trottinettes {matchBasis(part)}.</p>
+        {/* Un repère, zéro phrase : le chiffre de compat descend au module du bas. */}
+        <div className="mt-3 flex flex-wrap gap-2">
+          {!scootersLoading && f.n > 0 && (
+            <button type="button" onClick={goCompat} className="inline-flex items-center gap-2 min-h-[44px] px-4 text-white" style={{ background: GREEN, clipPath: CHAMFER }}>
+              <span className="text-lg leading-none" style={big}>{f.n}</span>
+              <span className="text-sm font-extrabold uppercase tracking-wider">trottinettes</span>
+              <ChevronDown className="w-4 h-4" />
+            </button>
+          )}
+        </div>
+        <div className="mt-5 space-y-2">
+          {f.points.length > 0 && <Fold icon={Sparkles} title="Ce qui la distingue"><Traits f={f} /></Fold>}
+          {f.guide && <Fold icon={Wrench} title="Montage" teaser={part.youtube_video_id ? "vidéo" : undefined}><Install part={part} f={f} /></Fold>}
+          <Fold icon={Gauge} title="Caractéristiques" teaser={f.rows[0]?.[1].split(" · ")[0]}><TechFull f={f} /></Fold>
+          {f.guide && <Fold icon={Lightbulb} title="Bien choisir"><Choose f={f} /></Fold>}
+          {f.faq.length > 0 && <Fold icon={HelpCircle} title="Questions fréquentes" teaser={String(f.faq.length)}><Faq f={f} /></Fold>}
+        </div>
+
+        {/* Module compatibilité, en bas (Nolan 20/10) : recherche + frise, aucune marque ouverte d'office. */}
+        <div id="pf-compat-bas" className="mt-8 scroll-mt-24 p-4 lg:p-5" style={{ background: "#fff", ...frame(4) }}>
+          <div className="mb-3">
+            <h3 className="text-lg lg:text-xl uppercase leading-tight" style={{ ...big, color: CARBON }}>Ça va sur ta trott ?</h3>
+            {f.n > 0 && <p className="mt-1 text-sm font-extrabold uppercase tracking-wider" style={{ color: GREEN }}>{f.n} modèles · {f.groups.length} marques</p>}
+          </div>
+          <CompatBlock part={part} f={f} closed />
+        </div>
       </div>
-    </div>
-    <SiblingRail part={part} f={f} />
-    <Sources f={f} />
-  </Shell>
-);
+      <SiblingRail part={part} f={f} />
+      <Sources f={f} />
+    </Shell>
+  );
+};
 
 // ─── 5 · CARTE D'IDENTITÉ : la pièce en carte sombre, la vidéo dedans ──────────
 const Identite = ({ part, f }: P) => {
@@ -471,14 +494,14 @@ const Identite = ({ part, f }: P) => {
 
 const LOOKS = { 1: Repasse, 2: Dashboard, 3: Parcours, 4: Replie, 5: Identite } as const;
 
-const PartSeoFicheLooks = ({ look, ...p }: { look: FicheLook; part: PartDetail; scooters: CompatibleScooter[]; scootersLoading: boolean }) => {
+const PartSeoFicheLooks = ({ look, tag = false, ...p }: { look: FicheLook; tag?: boolean; part: PartDetail; scooters: CompatibleScooter[]; scootersLoading: boolean }) => {
   const f = useFiche(p.part, p.scooters);
   const V = LOOKS[look];
   return (
     <>
-      <div className="fixed top-20 right-3 z-40 rounded-full px-3 py-1.5 text-sm font-bold text-white shadow" style={{ backgroundColor: CARBON, fontFamily: FONT }}>
+      {tag && <div className="fixed top-20 right-3 z-40 rounded-full px-3 py-1.5 text-sm font-bold text-white shadow" style={{ backgroundColor: CARBON, fontFamily: FONT }}>
         Fiche {look} · {FICHE_LOOK_NAMES[look]}
-      </div>
+      </div>}
       <V {...p} f={f} />
     </>
   );

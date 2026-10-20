@@ -353,12 +353,13 @@ const Bottom = (p: Props & { numbered?: boolean; skipCompat?: boolean }) => {
   const solid = p.part.category?.slug === "pneus-pleins";
   // 20/10 : fiche « Tout savoir » (compat entière dans le DOM + guide de famille), UNIQUEMENT avec ?seo=1 tant que Nolan n'a pas validé.
   if (sp.get("seo") === "1") {
-    // 20/10 : 5 propositions de mise en page du bloc, &fiche=1..5 (sans : bloc actuel).
-    const fn = Number(sp.get("fiche"));
+    // 20/10 : Nolan a choisi la 4 (replié, compat en bas) = rendu par défaut sous ?seo=1.
+    // &fiche=1..5 : les autres propositions ; &fiche=0 : l'ancien bloc à onglets.
+    const fn = sp.has("fiche") ? Number(sp.get("fiche")) : 4;
     const fiche = (fn >= 1 && fn <= 5 ? fn : null) as FicheLook | null;
     return (
       <>
-        {fiche ? <PartSeoFicheLooks look={fiche} part={p.part} scooters={p.scooters} scootersLoading={p.scootersLoading} />
+        {fiche ? <PartSeoFicheLooks look={fiche} tag={sp.has("fiche")} part={p.part} scooters={p.scooters} scootersLoading={p.scootersLoading} />
           : <PartSeoFiche part={p.part} scooters={p.scooters} scootersLoading={p.scootersLoading} />}
         <section className="px-4 py-8" style={{ backgroundColor: "#F5F0E8" }}>
           <div className="mx-auto max-w-6xl"><RelatedProducts parts={p.related} isLoading={p.relatedLoading} /></div>
