@@ -1,0 +1,125 @@
+{
+ "displayName": "Urbanglide Urbanride 85+",
+ "metaTitle": "Urbanglide Urbanride 85+ : fiche technique et pièces",
+ "metaDescription": "Urbanglide Urbanride 85+ : batterie 36 V 7,5 Ah, roues pleines de 8,5 pouces, double suspension, 12,9 kg, jusqu'à 30 km annoncés. Fiche et entretien.",
+ "intro": [
+  "L'Urbanglide Urbanride 85+, aussi appelée Ride 85 Plus, est une petite trottinette urbaine à roues de 8,5 pouces, fabriquée à partir de 2022 selon son manuel. Les fiches des revendeurs se contredisent sur la puissance et le freinage : vérifie l'étiquette et la notice de ta trottinette.",
+  "Batterie de 36 V et 7,5 Ah, soit 270 Wh, jusqu'à 30 km annoncés, double suspension et pneus pleins de 8,5 pouces selon idealo. À 12,9 kg, c'est un modèle léger, bridé à 25 km/h, pour une charge maximale de 100 kg. Elle se recharge en 4 heures environ."
+ ],
+ "specs": [
+  [
+   "Moteur",
+   "350 W selon les caractéristiques Fnac et idealo (250 W dans le texte de la Fnac)"
+  ],
+  [
+   "Vitesse",
+   "25 km/h"
+  ],
+  [
+   "Batterie",
+   "36 V, 7,5 Ah (270 Wh)"
+  ],
+  [
+   "Autonomie annoncée",
+   "jusqu'à 30 km"
+  ],
+  [
+   "Poids",
+   "12,9 kg"
+  ],
+  [
+   "Charge max",
+   "100 kg"
+  ],
+  [
+   "Roues",
+   "8,5 pouces, pneus pleins (selon idealo)"
+  ],
+  [
+   "Freins",
+   "Frein au pied arrière selon idealo, frein avant et arrière selon la Fnac"
+  ],
+  [
+   "Suspension",
+   "Avant et arrière"
+  ],
+  [
+   "Étanchéité",
+   "IPX4"
+  ],
+  [
+   "Temps de charge",
+   "environ 4 h"
+  ]
+ ],
+ "pros": [
+  "Légère : 12,9 kg (Fnac, idealo).",
+  "Double suspension, à l'avant et à l'arrière (Fnac, idealo).",
+  "Recharge en 4 heures environ (Fnac, idealo)."
+ ],
+ "cons": [
+  "Fiches contradictoires sur la puissance (250 ou 350 W) et sur le freinage.",
+  "Les 30 km sont annoncés, aucun test de presse ne les a mesurés.",
+  "IPX4 et charge maximale de 100 kg : un usage urbain sans grosse pluie."
+ ],
+ "parts": [],
+ "care": [
+  "Pneus pleins : ils ne crèvent pas, mais contrôle l'usure de la bande de roulement et remplace-les quand le grip baisse.",
+  "Teste ton freinage avant chaque trajet : sur une petite trottinette, un frein qui faiblit se remarque tard.",
+  "Vérifie régulièrement le serrage du pliage et de la potence : un jeu qui s'installe se corrige tôt."
+ ],
+ "faq": [
+  {
+   "q": "Quelle taille de pneu pour l'Urbanglide Urbanride 85+ ?",
+   "a": "Des roues de 8,5 pouces, en pneus pleins selon idealo. Lis la dimension sur le flanc de ton pneu avant de commander."
+  },
+  {
+   "q": "Quels freins sur l'Urbanglide Urbanride 85+ ?",
+   "a": "Les fiches divergent : frein au pied à l'arrière selon idealo, frein avant et arrière selon la Fnac. Regarde ta trottinette avant de commander une pièce de frein."
+  },
+  {
+   "q": "Quel chargeur pour l'Urbanglide Urbanride 85+ ?",
+   "a": "Un chargeur 36 V (42 V en sortie). Vérifie ta prise de charge avant de commander."
+  },
+  {
+   "q": "Quelle différence entre l'Urbanride 85+ et la Ride 85 Evo ?",
+   "a": "L'Urbanride 85+ a une batterie de 36 V et 7,5 Ah. La Ride 85 Evo a une batterie de 21,6 V et 7,8 Ah et des pneus à chambre à air."
+  },
+  {
+   "q": "Quelle autonomie pour l'Urbanglide Urbanride 85+ ?",
+   "a": "Jusqu'à 30 km annoncés. Aucun test de presse ne l'a mesurée."
+  }
+ ],
+ "sources": [
+  {
+   "label": "Fnac — Urbanglide Ride 85 Plus 350 W",
+   "url": "https://www.fnac.com/Trottinette-electrique-Urbanglide-Ride-85-Plus-350-W-Noir/a15045258/w-4"
+  },
+  {
+   "label": "idealo — Urbanglide Ride 85",
+   "url": "https://www.idealo.fr/prix/201355081/urbanglide-ride-85.html"
+  },
+  {
+   "label": "Cleanrider — Urbanglide Urbanride 85",
+   "url": "https://www.cleanrider.com/catalogue/trottinette-electrique/urbanglide/urbanglide-urbanride-85/"
+  },
+  {
+   "label": "UrbanGlide — manuel Ride 85+ (PDF)",
+   "url": "https://urbanglide.com/wp-content/uploads/2022/05/MANUEL-URBANGLIDE-85.pdf"
+  },
+  {
+   "label": "UrbanGlide — 85 Plus",
+   "url": "https://urbanglide.com/en/produit/85-plus/"
+  },
+  {
+   "label": "UrbanGlide — Ride 85 Evo",
+   "url": "https://urbanglide.com/produit/trottinette-electrique-ride-85-evo/"
+  }
+ ],
+ "video": {
+  "id": "E9Os46cU39Y",
+  "title": "trottinette électrique urban glide 85+",
+  "channel": "pitemarshall",
+  "uploadDate": "2022-08-14"
+ }
+}

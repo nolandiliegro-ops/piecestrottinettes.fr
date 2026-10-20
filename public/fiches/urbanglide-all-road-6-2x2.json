@@ -1,0 +1,117 @@
+{
+ "displayName": "Urbanglide All Road 6 2x2",
+ "metaTitle": "Urbanglide All Road 6 2x2 : fiche technique et pièces",
+ "metaDescription": "Urbanglide All Road 6 2x2 : deux moteurs de 500 W, batterie 48 V 18,2 Ah, deux freins à disque, pneus tubeless 10 pouces, IPX5. Fiche et entretien.",
+ "intro": [
+  "L'Urbanglide All Road 6 2x2 est la version bimoteur de la gamme All Road 6. Elle se distingue de l'All Road 6 Pro, monomoteur et à batterie plus petite. Certaines fiches de revendeurs annoncent une batterie de 54 V : la fiche du fabricant et la Fnac donnent 48 V et 18,2 Ah.",
+  "Deux moteurs, à l'avant et à l'arrière, de 500 W chacun (800 W en pointe), une batterie d'environ 874 Wh et jusqu'à 80 km annoncés par UrbanGlide. Deux freins à disque, suspensions avant et arrière, pneus tubeless tout-terrain de 10 pouces. Elle pèse 30 kg et reste bridée à 25 km/h."
+ ],
+ "specs": [
+  [
+   "Moteurs",
+   "2 × 500 W (2 × 800 W en pointe), avant et arrière"
+  ],
+  [
+   "Vitesse",
+   "25 km/h"
+  ],
+  [
+   "Batterie",
+   "48 V, 18,2 Ah (environ 874 Wh)"
+  ],
+  [
+   "Autonomie annoncée",
+   "jusqu'à 80 km (conducteur de 70 kg, 15 km/h, terrain plat)"
+  ],
+  [
+   "Poids",
+   "30 kg"
+  ],
+  [
+   "Charge max",
+   "120 kg"
+  ],
+  [
+   "Roues",
+   "10 pouces tubeless tout-terrain"
+  ],
+  [
+   "Freins",
+   "Deux disques"
+  ],
+  [
+   "Suspension",
+   "Avant et arrière (selon Connexion)"
+  ],
+  [
+   "Étanchéité",
+   "IPX5"
+  ],
+  [
+   "Temps de charge",
+   "environ 12 h selon UrbanGlide, 13 h selon Connexion"
+  ]
+ ],
+ "pros": [
+  "Deux moteurs, pour 1 000 W nominaux cumulés (UrbanGlide, Fnac).",
+  "Batterie de 48 V et 18,2 Ah, plus grosse que celle de l'All Road 6 Pro (15,6 Ah) (UrbanGlide).",
+  "Freins à disque à l'avant et à l'arrière, indice IPX5 (UrbanGlide)."
+ ],
+ "cons": [
+  "30 kg : elle se porte difficilement dans un escalier.",
+  "Recharge longue : environ 12 h annoncées par UrbanGlide.",
+  "Les 80 km sont obtenus dans des conditions favorables, et aucun test de presse ne les a encore mesurés."
+ ],
+ "parts": [],
+ "care": [
+  "Pneus tubeless tout-terrain : contrôle la pression avant chaque sortie, surtout après un passage sur chemin.",
+  "Avec deux moteurs et 30 kg, vérifie régulièrement le serrage de la potence et des axes de roue.",
+  "Deux freins à disque : surveille l'épaisseur des plaquettes et l'état des disques, ils travaillent beaucoup sur une machine de ce poids."
+ ],
+ "faq": [
+  {
+   "q": "Quelle taille de pneu pour l'Urbanglide All Road 6 2x2 ?",
+   "a": "Des pneus tubeless tout-terrain de 10 pouces. La dimension exacte n'est pas encore relevée dans notre base : lis-la sur le flanc de ton pneu avant de commander."
+  },
+  {
+   "q": "Quelle différence entre l'All Road 6 2x2 et l'All Road 6 Pro ?",
+   "a": "La 2x2 a deux moteurs de 500 W et une batterie de 18,2 Ah. La Pro n'a qu'un moteur de 500 W, à l'arrière, et une batterie de 15,6 Ah."
+  },
+  {
+   "q": "Quel chargeur pour l'Urbanglide All Road 6 2x2 ?",
+   "a": "Un chargeur 48 V (54,6 V en sortie). Vérifie ta prise de charge avant de commander."
+  },
+  {
+   "q": "Quelle autonomie pour l'Urbanglide All Road 6 2x2 ?",
+   "a": "UrbanGlide annonce jusqu'à 80 km avec un conducteur de 70 kg à 15 km/h sur le plat. Aucun test de presse ne l'a mesurée à ce jour."
+  },
+  {
+   "q": "Combien de temps pour recharger l'All Road 6 2x2 ?",
+   "a": "Environ 12 h selon UrbanGlide, 13 h selon le revendeur Connexion."
+  }
+ ],
+ "sources": [
+  {
+   "label": "UrbanGlide — All Road 6 2x2",
+   "url": "https://urbanglide.com/produit/all-road-6-2x2/"
+  },
+  {
+   "label": "UrbanGlide — fiche produit All Road 6 2x2 (PDF)",
+   "url": "https://urbanglide.com/wp-content/uploads/2025/04/FP-AR6-2x2-1.pdf"
+  },
+  {
+   "label": "Fnac — UrbanGlide All Road 6 2x2",
+   "url": "https://www.fnac.com/Trottinette-electrique-UrbanGlide-All-Road-6-2x2-1000-W-Noir/a21413492/w-4"
+  },
+  {
+   "label": "Connexion — UrbanGlide All Road 6 2x2",
+   "url": "https://www.connexion.fr/objets-connectes/mobilite-electrique-jeux/818-130500.html"
+  }
+ ],
+ "video": {
+  "id": "jtcdmnHODlA",
+  "title": "110 kg sur les pavés : Le double moteur change TOUT ! (UrbanGlide All Road 6 2x2)",
+  "channel": "Tarumo",
+  "uploadDate": "2026-05-30"
+ }
+}

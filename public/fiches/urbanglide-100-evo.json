@@ -1,0 +1,131 @@
+{
+ "displayName": "Urbanglide 100 Evo",
+ "metaTitle": "Urbanglide 100 Evo : fiche technique et pièces",
+ "metaDescription": "Urbanglide 100 Evo : moteur 350 W, batterie 21,6 V 10,4 Ah, pneus 10x2.50-6.1 à chambre à air, frein à disque arrière. Fiche, entretien et pièces.",
+ "intro": [
+  "La Urbanglide 100 Evo est une trottinette urbaine de la marque française UrbanGlide, documentée dans un manuel daté de 2025. Elle existe à côté de la 100 Evo Pro, qui a une batterie de 13 Ah et deux freins à disque : cette fiche ne parle que de la 100 Evo standard.",
+  "Moteur avant de 350 W (450 W en pointe), batterie de 21,6 V et 10,4 Ah, pneus de 10 pouces à chambre à air et un seul frein à disque, à l'arrière. UrbanGlide annonce jusqu'à 25 km d'autonomie pour 16,3 kg. Elle est bridée à 25 km/h, avec trois modes de vitesse."
+ ],
+ "specs": [
+  [
+   "Moteur",
+   "350 W (450 W en pointe), dans la roue avant"
+  ],
+  [
+   "Vitesse",
+   "25 km/h, trois modes"
+  ],
+  [
+   "Batterie",
+   "21,6 V, 10,4 Ah (environ 225 Wh)"
+  ],
+  [
+   "Autonomie annoncée",
+   "jusqu'à 25 km (selon UrbanGlide)"
+  ],
+  [
+   "Poids",
+   "16,3 kg (selon UrbanGlide)"
+  ],
+  [
+   "Charge max",
+   "100 kg (selon UrbanGlide)"
+  ],
+  [
+   "Roues",
+   "10 pouces, 10x2.50-6.1 à chambre à air"
+  ],
+  [
+   "Freins",
+   "Disque mécanique arrière"
+  ],
+  [
+   "Suspension",
+   "Fourche avant, pas de suspension arrière"
+  ],
+  [
+   "Étanchéité",
+   "IPX5"
+  ],
+  [
+   "Temps de charge",
+   "6 h selon la fiche PDF UrbanGlide, environ 7 h selon sa page produit et Boulanger"
+  ]
+ ],
+ "pros": [
+  "Pneus de 10 pouces à chambre à air et fourche suspendue à l'avant (UrbanGlide, Boulanger).",
+  "Indice IPX5 contre les projections d'eau (UrbanGlide).",
+  "Trois modes de vitesse, jusqu'à 25 km/h (UrbanGlide)."
+ ],
+ "cons": [
+  "Un seul frein à disque, à l'arrière : pas de frein mécanique à l'avant.",
+  "Autonomie annoncée de 25 km seulement, et aucun test de presse ne l'a encore mesurée.",
+  "Pas de suspension arrière et une charge maximale limitée à 100 kg."
+ ],
+ "parts": [
+  {
+   "label": "Pneu",
+   "size": "10x2.50-6.1 (10 pouces, jante 6,1\")",
+   "count": 1,
+   "to": "/piece/pneu-10x2-50-6-1",
+   "cta": "Pneus 10x2.50"
+  }
+ ],
+ "care": [
+  "Pneus à chambre à air : contrôle la pression chaque semaine, un pneu sous-gonflé pince la chambre et crève.",
+  "Le disque arrière est ton seul frein mécanique : surveille l'épaisseur des plaquettes et retends le câble dès que le levier prend de la course.",
+  "Batterie de 21,6 V : recharge-la après usage et ne la laisse pas vide plusieurs semaines."
+ ],
+ "price": {
+  "text": "Prix relevé chez Boulanger : 249,99 € (14/07/2026).",
+  "source": "boulanger.com"
+ },
+ "faq": [
+  {
+   "q": "Quelle taille de pneu pour la Urbanglide 100 Evo ?",
+   "a": "Des pneus de 10 pouces en 10x2.50-6.1, montés avec chambre à air, sur une jante de 6,1 pouces."
+  },
+  {
+   "q": "Quels freins sur la Urbanglide 100 Evo ?",
+   "a": "Un frein à disque mécanique à l'arrière. La fiche officielle ne mentionne pas de frein mécanique à l'avant."
+  },
+  {
+   "q": "Quel chargeur pour la Urbanglide 100 Evo ?",
+   "a": "Un chargeur pour batterie 21,6 V. Vérifie ta prise de charge avant de commander : nous ne l'avons pas encore relevée."
+  },
+  {
+   "q": "Quelle différence entre la 100 Evo et la 100 Evo Pro ?",
+   "a": "La 100 Evo Pro a une batterie de 21,6 V et 13 Ah et deux freins à disque. La 100 Evo standard a 10,4 Ah et un seul disque, à l'arrière."
+  },
+  {
+   "q": "Quelle autonomie pour la Urbanglide 100 Evo ?",
+   "a": "UrbanGlide annonce jusqu'à 25 km. Aucun test de presse ne l'a mesurée à ce jour : le poids du conducteur, le relief et le mode de vitesse la font baisser."
+  }
+ ],
+ "sources": [
+  {
+   "label": "UrbanGlide — fiche produit 100 Evo (PDF)",
+   "url": "https://urbanglide.com/wp-content/uploads/2025/02/FP-100EVO.pdf"
+  },
+  {
+   "label": "UrbanGlide — Ride 100 Evo",
+   "url": "https://urbanglide.com/produit/trottinette-electrique-ride-100-evo/"
+  },
+  {
+   "label": "UrbanGlide — 100 Evo Pro",
+   "url": "https://urbanglide.com/en/produit/100-evo-pro/"
+  },
+  {
+   "label": "Boulanger — Urbanglide 100 Evo",
+   "url": "https://www.boulanger.com/ref/1230662"
+  },
+  {
+   "label": "Electro Dépôt — Urbanglide 100 Evo",
+   "url": "https://www.electrodepot.fr/trottinette-electrique-urbanglide-100-evo.html"
+  },
+  {
+   "label": "Pixmania — Urbanglide 100 Evo 10,4 Ah",
+   "url": "https://www.pixmania.com/fr/fr/urbanglide-100-evo-noir-25-kmh-104-ah-580238.html"
+  }
+ ]
+}

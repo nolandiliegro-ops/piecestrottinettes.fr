@@ -1,0 +1,136 @@
+{
+ "displayName": "Urbanglide eCross Pro 2",
+ "metaTitle": "Urbanglide eCross Pro 2 : fiche technique et pièces",
+ "metaDescription": "Urbanglide eCross Pro 2 : moteur 600 W, batterie 48 V 12,5 Ah, pneus 10x2.75-6.5, deux disques de 140 mm entraxe 44 mm, IPX5. Fiche et pièces.",
+ "intro": [
+  "L'Urbanglide eCross Pro 2 est la deuxième génération de l'eCross Pro, avec un seul moteur, à l'arrière. À ne pas confondre avec l'eCross Pro Boost 2, sa version à deux moteurs. UrbanGlide annonce jusqu'à 60 km dans son tableau de caractéristiques, mais 50 km dans son texte, comme Darty.",
+  "Moteur de 600 W (800 W en pointe), batterie de 48 V et 12,5 Ah, soit 600 Wh, deux freins à disque de 140 mm et quatre suspensions selon Darty. Elle roule sur des pneus tubeless de 10 pouces, pèse 23 kg, accepte 120 kg et reste bridée à 25 km/h."
+ ],
+ "specs": [
+  [
+   "Moteur",
+   "600 W (800 W en pointe), roue arrière"
+  ],
+  [
+   "Vitesse",
+   "25 km/h"
+  ],
+  [
+   "Batterie",
+   "48 V, 12,5 Ah (600 Wh)"
+  ],
+  [
+   "Autonomie annoncée",
+   "60 km dans le tableau UrbanGlide, 50 km dans son texte et chez Darty"
+  ],
+  [
+   "Poids",
+   "23 kg"
+  ],
+  [
+   "Charge max",
+   "120 kg (selon UrbanGlide)"
+  ],
+  [
+   "Roues",
+   "10 pouces tubeless, 10x2.75-6.5"
+  ],
+  [
+   "Freins",
+   "Deux disques mécaniques, Ø 140 mm, 6 trous, entraxe 44 mm"
+  ],
+  [
+   "Suspension",
+   "Quatre suspensions (selon Darty)"
+  ],
+  [
+   "Étanchéité",
+   "IPX5"
+  ],
+  [
+   "Temps de charge",
+   "environ 9 h"
+  ]
+ ],
+ "pros": [
+  "Deux freins à disque (UrbanGlide).",
+  "Pneus tubeless de 10 pouces (UrbanGlide).",
+  "Indice IPX5, contre IPX4 sur la première eCross Pro (UrbanGlide, Darty)."
+ ],
+ "cons": [
+  "Autonomie annoncée floue, 60 ou 50 km selon les pages, et aucun test de presse ne l'a mesurée.",
+  "23 kg : elle se porte, mais pas longtemps.",
+  "Un seul moteur : pour deux moteurs, il faut passer à l'eCross Pro Boost 2."
+ ],
+ "parts": [
+  {
+   "label": "Pneu",
+   "size": "10x2.75-6.5 tubeless (10 pouces, jante 6,5\")",
+   "count": 6,
+   "to": "/piece/pneu-tubeless-10x2-75-6-5-offroad-runflat-ewheel",
+   "cta": "Pneus 10x2.75-6.5"
+  },
+  {
+   "label": "Disque de frein",
+   "size": "140 mm, 6 trous, entraxe 44 mm",
+   "count": 3,
+   "to": "/piece/disque-de-frein-r6-140mm-entraxe-44mm-3-couleurs-rouge",
+   "cta": "Disques 140 mm"
+  }
+ ],
+ "care": [
+  "Pneus tubeless : vérifie la pression chaque semaine, un pneu sous-gonflé s'use vite et se déjante plus facilement.",
+  "Freins à disque mécaniques : retends les câbles et surveille les plaquettes dès que le levier s'allonge.",
+  "Disques de 140 mm : change un disque voilé ou trop fin, il fait vibrer le levier et use les plaquettes."
+ ],
+ "price": {
+  "text": "Prix affiché : 599,99 € sur urbanglide.com (15/10/2026), 499,99 € chez Darty (19/10/2026).",
+  "source": "urbanglide.com, darty.com"
+ },
+ "faq": [
+  {
+   "q": "Quelle taille de pneu pour l'Urbanglide eCross Pro 2 ?",
+   "a": "Des pneus tubeless de 10 pouces en 10x2.75-6.5, sur une jante de 6,5 pouces."
+  },
+  {
+   "q": "Quel disque de frein pour l'Urbanglide eCross Pro 2 ?",
+   "a": "Un disque de 140 mm à 6 trous, entraxe 44 mm."
+  },
+  {
+   "q": "Quelles plaquettes pour l'Urbanglide eCross Pro 2 ?",
+   "a": "La forme de la plaquette dépend de l'étrier : compare ta plaquette usée avant de commander."
+  },
+  {
+   "q": "Quel chargeur pour l'Urbanglide eCross Pro 2 ?",
+   "a": "Un chargeur 48 V (54,6 V en sortie). Vérifie ta prise de charge avant de commander."
+  },
+  {
+   "q": "Quelle différence entre l'eCross Pro 2 et l'eCross Pro Boost 2 ?",
+   "a": "Même batterie de 48 V et 12,5 Ah. L'eCross Pro 2 a un moteur à l'arrière, l'eCross Pro Boost 2 un moteur à l'avant et un à l'arrière."
+  }
+ ],
+ "sources": [
+  {
+   "label": "UrbanGlide — eCross Pro 2",
+   "url": "https://urbanglide.com/produit/trottinette-electrique-e-cross-pro-2/"
+  },
+  {
+   "label": "Darty — Urbanglide eCross Pro 2",
+   "url": "https://www.darty.com/nav/achat/sports_loisirs/glisse_urbaine/trottinette_electrique/urbanglide_ecross_pro_2.html"
+  },
+  {
+   "label": "Darty — avis et caractéristiques eCross Pro 2",
+   "url": "https://www.darty.com/nav/achat/sports_loisirs/glisse_urbaine/trottinette_electrique/avis_1__urbanglide_ecross_pro_2.html"
+  },
+  {
+   "label": "UrbanGlide — eCross Pro Boost 2",
+   "url": "https://urbanglide.com/en/produit/e-cross-pro-boost-2/"
+  }
+ ],
+ "video": {
+  "id": "kecTacjmn8s",
+  "title": "La trottinette électrique qui est à l'aise partout ?! 1 jour avec la UrbanGlide E-Cross Pro 2",
+  "channel": "iBordelais",
+  "uploadDate": "2024-12-19"
+ }
+}

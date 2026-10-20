@@ -1,0 +1,117 @@
+{
+ "displayName": "Urbanglide eCross Go",
+ "metaTitle": "Urbanglide eCross Go : fiche technique et pièces",
+ "metaDescription": "Urbanglide eCross Go : moteur 600 W (1 200 W en pointe), batterie 48 V 10,4 Ah, freins à disque avant et arrière, IPX5, 22 kg. Fiche et entretien.",
+ "intro": [
+  "L'Urbanglide eCross Go est une trottinette tout-chemin monomoteur de la gamme eCross. Elle ne doit pas être confondue avec l'eCross One : même batterie de 48 V et 10,4 Ah, mais l'eCross Go monte à 1 200 W en pointe, contre 800 W pour l'eCross One. Aucun test de presse ne l'a encore évaluée.",
+  "Moteur arrière de 600 W, batterie de 499 Wh pour jusqu'à 50 km annoncés par UrbanGlide, freins à disque avant et arrière, suspensions avant et arrière, pneus de 10 pouces et indice IPX5. Elle pèse 22 kg, accepte 120 kg et reste bridée à 25 km/h."
+ ],
+ "specs": [
+  [
+   "Moteur",
+   "600 W (1 200 W en pointe), roue arrière"
+  ],
+  [
+   "Vitesse",
+   "25 km/h"
+  ],
+  [
+   "Batterie",
+   "48 V, 10,4 Ah (499 Wh)"
+  ],
+  [
+   "Autonomie annoncée",
+   "jusqu'à 50 km (selon UrbanGlide)"
+  ],
+  [
+   "Poids",
+   "22 kg"
+  ],
+  [
+   "Charge max",
+   "120 kg"
+  ],
+  [
+   "Roues",
+   "10 pouces"
+  ],
+  [
+   "Freins",
+   "Disques avant et arrière"
+  ],
+  [
+   "Suspension",
+   "Avant et arrière (selon Electro Dépôt)"
+  ],
+  [
+   "Étanchéité",
+   "IPX5"
+  ],
+  [
+   "Temps de charge",
+   "environ 7 h"
+  ]
+ ],
+ "pros": [
+  "Pointe à 1 200 W, contre 800 W pour l'eCross One (UrbanGlide).",
+  "Freins à disque aux deux roues (UrbanGlide, Electro Dépôt).",
+  "Indice IPX5 contre les projections d'eau (UrbanGlide, Connexion)."
+ ],
+ "cons": [
+  "22 kg : elle se porte, mais pas longtemps.",
+  "Aucun test de presse à ce jour : les 50 km d'autonomie restent une valeur annoncée.",
+  "Un seul moteur, à l'arrière."
+ ],
+ "parts": [],
+ "care": [
+  "Contrôle la pression des pneus chaque semaine, surtout si tu passes sur des chemins.",
+  "Freins à disque avant et arrière : surveille l'épaisseur des plaquettes et l'état des disques.",
+  "Suspensions : nettoie les axes et vérifie le jeu après la pluie ou la boue."
+ ],
+ "faq": [
+  {
+   "q": "Quelle taille de pneu pour l'Urbanglide eCross Go ?",
+   "a": "Des pneus de 10 pouces. La dimension exacte n'est pas encore relevée dans notre base : lis-la sur le flanc de ton pneu avant de commander."
+  },
+  {
+   "q": "Quels freins sur l'Urbanglide eCross Go ?",
+   "a": "Deux freins à disque, à l'avant et à l'arrière. Compare ta plaquette usée avant d'en commander, la forme dépend de l'étrier."
+  },
+  {
+   "q": "Quel chargeur pour l'Urbanglide eCross Go ?",
+   "a": "Un chargeur 48 V (54,6 V en sortie). Vérifie ta prise de charge avant de commander."
+  },
+  {
+   "q": "Quelle différence entre l'eCross Go et l'eCross One ?",
+   "a": "Même batterie de 48 V et 10,4 Ah et même moteur nominal de 600 W. L'eCross Go monte à 1 200 W en pointe, l'eCross One à 800 W."
+  },
+  {
+   "q": "Quelle autonomie pour l'Urbanglide eCross Go ?",
+   "a": "UrbanGlide annonce jusqu'à 50 km. Aucun test de presse ne l'a mesurée à ce jour."
+  }
+ ],
+ "sources": [
+  {
+   "label": "UrbanGlide — eCross Go",
+   "url": "https://urbanglide.com/produit/e-cross-go/"
+  },
+  {
+   "label": "Electro Dépôt — Urbanglide eCross Go",
+   "url": "https://www.electrodepot.fr/trottinette-electrique-urbanglide-ecross-go.html"
+  },
+  {
+   "label": "Connexion — Urbanglide eCross Go",
+   "url": "https://www.connexion.fr/objets-connectes/mobilite-electrique-jeux/818-136306.html"
+  },
+  {
+   "label": "UrbanGlide — eCross One (fiche PDF)",
+   "url": "https://urbanglide.com/wp-content/uploads/2025/04/FP-ECROSS-ONE-bleu.pdf"
+  }
+ ],
+ "video": {
+  "id": "myPosh7-b6s",
+  "title": "URBANGLIDE E-CROSS GO - UNE TROTTINETTE ÉLECTRIQUE IPX5 À MOINS DE 500 EUROS",
+  "channel": "TaytechTV",
+  "uploadDate": "2026-09-15"
+ }
+}

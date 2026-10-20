@@ -1,0 +1,129 @@
+{
+ "displayName": "Urbanglide Ride 85 Evo",
+ "metaTitle": "Urbanglide Ride 85 Evo : fiche technique et pièces",
+ "metaDescription": "Urbanglide Ride 85 Evo : moteur 250 W, batterie 21,6 V 7,8 Ah, pneus 8.5x3-6.1 à chambre à air, frein à disque arrière, IPX5, 15 kg. Fiche et pièces.",
+ "intro": [
+  "L'Urbanglide Ride 85 Evo est une trottinette urbaine compacte à roues de 8,5 pouces et batterie de 21,6 V. Attention : certaines offres en ligne titrées « 85 Evo » affichent les caractéristiques d'un autre modèle (10 pouces, 10 Ah). Cette fiche suit la fiche officielle du modèle 8,5 pouces.",
+  "Moteur avant de 250 W (300 W en pointe), batterie de 7,8 Ah, soit environ 168 Wh, et jusqu'à 20 km annoncés. Frein à disque à l'arrière, double suspension à l'avant, pneus à chambre à air, indice IPX5. Elle pèse 15 kg, accepte 100 kg et reste bridée à 25 km/h."
+ ],
+ "specs": [
+  [
+   "Moteur",
+   "250 W (300 W en pointe), roue avant"
+  ],
+  [
+   "Vitesse",
+   "25 km/h"
+  ],
+  [
+   "Batterie",
+   "21,6 V, 7,8 Ah (environ 168 Wh)"
+  ],
+  [
+   "Autonomie annoncée",
+   "jusqu'à 20 km"
+  ],
+  [
+   "Poids",
+   "15 kg"
+  ],
+  [
+   "Charge max",
+   "100 kg"
+  ],
+  [
+   "Roues",
+   "8,5 pouces, 8.5x3-6.1 à chambre à air"
+  ],
+  [
+   "Freins",
+   "Disque mécanique arrière"
+  ],
+  [
+   "Suspension",
+   "Double suspension avant"
+  ],
+  [
+   "Étanchéité",
+   "IPX5"
+  ],
+  [
+   "Temps de charge",
+   "environ 5 h (selon UrbanGlide)"
+  ]
+ ],
+ "pros": [
+  "Double suspension à l'avant (UrbanGlide).",
+  "Indice IPX5 contre les projections d'eau (UrbanGlide, idealo, Cdiscount).",
+  "Pneus de 8,5 pouces à chambre à air (UrbanGlide)."
+ ],
+ "cons": [
+  "20 km annoncés : elle est faite pour les petits trajets.",
+  "Un seul frein à disque, à l'arrière.",
+  "Charge maximale limitée à 100 kg."
+ ],
+ "parts": [
+  {
+   "label": "Pneu",
+   "size": "8.5x3-6.1 (8,5 pouces, jante 6,1\")",
+   "count": 1,
+   "to": "/piece/pneu-8-5x3-6-1-xuancheng",
+   "cta": "Pneus 8.5x3"
+  }
+ ],
+ "care": [
+  "Pneus à chambre à air : contrôle la pression chaque semaine, un pneu sous-gonflé pince la chambre et crève.",
+  "Le disque arrière est ton seul frein mécanique : surveille les plaquettes et retends le câble dès que le levier prend de la course.",
+  "Batterie de 21,6 V : recharge-la après usage et ne la laisse pas vide plusieurs semaines."
+ ],
+ "price": {
+  "text": "Prix affiché sur urbanglide.com : 349,99 € (15/10/2026).",
+  "source": "urbanglide.com"
+ },
+ "faq": [
+  {
+   "q": "Quelle taille de pneu pour l'Urbanglide Ride 85 Evo ?",
+   "a": "Des pneus de 8,5 pouces en 8.5x3-6.1, montés avec chambre à air, sur une jante de 6,1 pouces."
+  },
+  {
+   "q": "Quels freins sur l'Urbanglide Ride 85 Evo ?",
+   "a": "Un frein à disque mécanique à l'arrière."
+  },
+  {
+   "q": "Quel chargeur pour l'Urbanglide Ride 85 Evo ?",
+   "a": "Un chargeur pour batterie 21,6 V. Vérifie ta prise de charge avant de commander : nous ne l'avons pas encore relevée."
+  },
+  {
+   "q": "Quelle autonomie pour l'Urbanglide Ride 85 Evo ?",
+   "a": "UrbanGlide annonce jusqu'à 20 km. Aucun test de presse ne l'a mesurée à ce jour."
+  },
+  {
+   "q": "Quelle différence entre la Ride 85 Evo et l'Urbanride 85+ ?",
+   "a": "La Ride 85 Evo a une batterie de 21,6 V et 7,8 Ah et des pneus à chambre à air. L'Urbanride 85+ a une batterie de 36 V et 7,5 Ah."
+  }
+ ],
+ "sources": [
+  {
+   "label": "UrbanGlide — Ride 85 Evo",
+   "url": "https://urbanglide.com/produit/trottinette-electrique-ride-85-evo/"
+  },
+  {
+   "label": "UrbanGlide — 85 Evo",
+   "url": "https://urbanglide.com/en/produit/85-evo/"
+  },
+  {
+   "label": "idealo — Urbanglide Ride 85 Evo",
+   "url": "https://www.idealo.fr/prix/214250291/urbanglide-ride-85-evo.html"
+  },
+  {
+   "label": "Cdiscount — Urbanglide 85 Evo",
+   "url": "https://www.cdiscount.com/le-sport/mobilite-urbaine/trottinette-electrique-urbanglide-85-evo-300/f-1214801-urb1745881795769.html"
+  }
+ ],
+ "video": {
+  "id": "Brr-6zvz2kE",
+  "title": "Je teste dans mon quartier la trottinette éléctrique Urban Glide Evo 85",
+  "channel": "Sam Stéphane",
+  "uploadDate": "2026-07-16"
+ }
+}

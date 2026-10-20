@@ -1,0 +1,123 @@
+{
+ "displayName": "Urbanglide eCross Duo",
+ "metaTitle": "Urbanglide eCross Duo : fiche technique, avis et pièces",
+ "metaDescription": "Urbanglide eCross Duo : deux moteurs de 600 W, batterie 48 V 12,5 Ah, pneus 10x2.75-6.5, environ 40 km mesurés en test. Avis, entretien et pièces.",
+ "intro": [
+  "L'Urbanglide eCross Duo est une trottinette bimoteur de la gamme eCross, présentée par UrbanGlide en mars 2025. Journal du Geek et Les Numériques l'ont testée en 2025 et ont tous deux relevé environ 40 km d'autonomie, loin des 60 km annoncés. Elle est distincte de l'eCross Max 2x2.",
+  "Deux moteurs de 600 W chacun (800 W en pointe), batterie de 48 V et 12,5 Ah, soit 600 Wh, deux freins à disque et six suspensions. Elle roule sur des pneus de 10 pouces en 10x2.75-6.5, pèse 26,4 kg et reste bridée à 25 km/h sur la voie publique."
+ ],
+ "specs": [
+  [
+   "Moteurs",
+   "2 × 600 W (2 × 800 W en pointe), avant et arrière"
+  ],
+  [
+   "Vitesse",
+   "25 km/h"
+  ],
+  [
+   "Batterie",
+   "48 V, 12,5 Ah (600 Wh)"
+  ],
+  [
+   "Autonomie",
+   "jusqu'à 60 km annoncés, environ 40 km mesurés par Les Numériques et Journal du Geek"
+  ],
+  [
+   "Poids",
+   "26,4 kg"
+  ],
+  [
+   "Charge max",
+   "120 kg"
+  ],
+  [
+   "Roues",
+   "10 pouces, 10x2.75-6.5"
+  ],
+  [
+   "Freins",
+   "Deux disques mécaniques"
+  ],
+  [
+   "Suspension",
+   "Six suspensions (selon UrbanGlide)"
+  ],
+  [
+   "Étanchéité",
+   "IPX5"
+  ],
+  [
+   "Temps de charge",
+   "environ 9 h"
+  ]
+ ],
+ "pros": [
+  "Deux moteurs, à l'avant et à l'arrière (UrbanGlide, But).",
+  "Batterie de 600 Wh et deux freins à disque (UrbanGlide).",
+  "Six suspensions et indice IPX5 (UrbanGlide)."
+ ],
+ "cons": [
+  "Autonomie réelle d'environ 40 km avec les deux moteurs, loin des 60 km annoncés (Les Numériques, Journal du Geek).",
+  "Verdict mitigé : « deux moteurs, zéro coup de cœur » (Journal du Geek).",
+  "26,4 kg : elle se porte difficilement."
+ ],
+ "parts": [
+  {
+   "label": "Pneu",
+   "size": "10x2.75-6.5 (10 pouces, jante 6,5\")",
+   "count": 6,
+   "to": "/piece/pneu-tubeless-10x2-75-6-5-offroad-runflat-ewheel",
+   "cta": "Pneus 10x2.75-6.5"
+  }
+ ],
+ "care": [
+  "Pneus 10x2.75-6.5 : contrôle la pression chaque semaine, un pneu mou fatigue la jante et réduit encore l'autonomie.",
+  "Freins à disque mécaniques : retends les câbles et surveille les plaquettes dès que le levier s'allonge.",
+  "Six suspensions : nettoie les articulations et vérifie le jeu des bras après la pluie ou la boue."
+ ],
+ "faq": [
+  {
+   "q": "Quelle taille de pneu pour l'Urbanglide eCross Duo ?",
+   "a": "Des pneus de 10 pouces en 10x2.75-6.5, sur une jante de 6,5 pouces."
+  },
+  {
+   "q": "Quelle est l'autonomie réelle de l'eCross Duo ?",
+   "a": "Environ 40 km avec les deux moteurs, selon les tests de Les Numériques et de Journal du Geek. UrbanGlide annonce jusqu'à 60 km."
+  },
+  {
+   "q": "Quels freins sur l'Urbanglide eCross Duo ?",
+   "a": "Deux freins à disque à commande mécanique. Compare ta plaquette usée avant d'en commander, la forme dépend de l'étrier."
+  },
+  {
+   "q": "Quel chargeur pour l'Urbanglide eCross Duo ?",
+   "a": "Un chargeur 48 V (54,6 V en sortie). Vérifie ta prise de charge avant de commander."
+  },
+  {
+   "q": "Quelle différence entre l'eCross Duo et l'eCross Max 2x2 Gen 2 ?",
+   "a": "Les deux sont bimoteurs. L'eCross Duo a une batterie de 48 V et 12,5 Ah, l'eCross Max 2x2 Gen 2 une batterie de 48 V et 17,5 Ah."
+  }
+ ],
+ "sources": [
+  {
+   "label": "UrbanGlide — eCross Duo",
+   "url": "https://urbanglide.com/produit/trottinette-electrique-e-cross-duo/"
+  },
+  {
+   "label": "But — Urbanglide eCross Duo",
+   "url": "https://www.but.fr/produits/3700092678503/Trottinette-Electrique-Ecross-Duo-Autonomie-De-60-Km-Double-Moteur.html"
+  },
+  {
+   "label": "Les Numériques — test Urbanglide eCross Duo",
+   "url": "https://www.lesnumeriques.com/trottinette-electrique/le-test-du-trottinette-electrique-urbanglide-e-cross-duo-2x2-a-rejoint-notre-comparatif-n241049.html"
+  },
+  {
+   "label": "Journal du Geek — test Urban Glide eCross Duo",
+   "url": "https://www.journaldugeek.com/test/test-trottinette-electrique-urban-glide-ecross-duo-deux-moteurs-zero-coup-de-coeur/"
+  },
+  {
+   "label": "UrbanGlide — eCross Max 2x2 Gen 2",
+   "url": "https://urbanglide.com/produit/e-cross-max-2-2-gen/"
+  }
+ ]
+}

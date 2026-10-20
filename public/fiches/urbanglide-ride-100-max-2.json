@@ -1,0 +1,123 @@
+{
+ "displayName": "Urbanglide Ride 100 Max 2",
+ "metaTitle": "Urbanglide Ride 100 Max 2 : fiche technique, avis et pièces",
+ "metaDescription": "Urbanglide Ride 100 Max 2 : 350 W, batterie 36 V 7,8 Ah, pneus 10x2-6.1 à chambre à air, tambour avant et disque arrière, 24,4 km mesurés. Avis et pièces.",
+ "intro": [
+  "L'Urbanglide Ride 100 Max 2 est la deuxième version de la Ride 100 Max, documentée par UrbanGlide en 2024. Elle passe à une batterie de 7,8 Ah et à des pneus de 10 pouces à chambre à air. Le Labo Fnac lui a donné 3 étoiles sur 5 et a mesuré 24,4 km d'autonomie.",
+  "Moteur avant de 350 W (450 W en pointe), batterie de 36 V, tambour à l'avant, disque à l'arrière, suspensions avant et arrière, indice IPX5. À 14 kg, elle vise les trajets courts en ville, bridée à 25 km/h, avec une charge maximale de 100 kg."
+ ],
+ "specs": [
+  [
+   "Moteur",
+   "350 W (450 W en pointe), roue avant"
+  ],
+  [
+   "Vitesse",
+   "25 km/h"
+  ],
+  [
+   "Batterie",
+   "36 V, 7,8 Ah (environ 281 Wh)"
+  ],
+  [
+   "Autonomie",
+   "jusqu'à 30 km annoncés, 24,4 km mesurés par le Labo Fnac"
+  ],
+  [
+   "Poids",
+   "14 kg"
+  ],
+  [
+   "Charge max",
+   "100 kg"
+  ],
+  [
+   "Roues",
+   "10 pouces, 10x2-6.1 à chambre à air"
+  ],
+  [
+   "Freins",
+   "Tambour avant + disque arrière"
+  ],
+  [
+   "Suspension",
+   "Avant et arrière"
+  ],
+  [
+   "Étanchéité",
+   "IPX5"
+  ],
+  [
+   "Temps de charge",
+   "environ 5 h annoncées, 5 h 25 mesurées par le Labo Fnac"
+  ]
+ ],
+ "pros": [
+  "Légère : 14 kg (L'Éclaireur Fnac).",
+  "Puissance et accélération jugées bonnes (L'Éclaireur Fnac).",
+  "Prestation globalement convenable pour son prix (L'Éclaireur Fnac)."
+ ],
+ "cons": [
+  "Autonomie de 24,4 km mesurée : trop juste pour les longs trajets (L'Éclaireur Fnac).",
+  "Maintien de la vitesse moyenne perfectible sur les parcours prolongés (L'Éclaireur Fnac).",
+  "Charge maximale limitée à 100 kg."
+ ],
+ "parts": [
+  {
+   "label": "Pneu",
+   "size": "10x2-6.1 (10 pouces, jante 6,1\")",
+   "count": 1,
+   "to": "/piece/pneu-10x2-6-1-cityroad-wanda",
+   "cta": "Pneus 10x2"
+  }
+ ],
+ "care": [
+  "Pneus à chambre à air : contrôle la pression chaque semaine, un pneu sous-gonflé pince la chambre et crève.",
+  "Tambour avant : fais-le régler dès que la course du levier s'allonge, et surveille les plaquettes du disque arrière.",
+  "Suspensions : nettoie les axes et vérifie le jeu des bras, surtout après la pluie."
+ ],
+ "faq": [
+  {
+   "q": "Quelle taille de pneu pour l'Urbanglide Ride 100 Max 2 ?",
+   "a": "Des pneus de 10 pouces en 10x2-6.1, montés avec chambre à air, sur une jante de 6,1 pouces."
+  },
+  {
+   "q": "Quels freins sur l'Urbanglide Ride 100 Max 2 ?",
+   "a": "Un tambour à l'avant, sans plaquettes, et un frein à disque à l'arrière."
+  },
+  {
+   "q": "Quelle est l'autonomie réelle de la Ride 100 Max 2 ?",
+   "a": "Le Labo Fnac a mesuré 24,4 km, pour 30 km annoncés par UrbanGlide en conditions idéales."
+  },
+  {
+   "q": "Quelle différence entre la Ride 100 Max 2 et la Ride 100 Max ?",
+   "a": "La Max 2 passe à une batterie de 7,8 Ah au lieu de 7,5 Ah, à des pneus à chambre à air au lieu de pneus alvéolés, et ajoute un tambour à l'avant."
+  },
+  {
+   "q": "Quel chargeur pour l'Urbanglide Ride 100 Max 2 ?",
+   "a": "Un chargeur 36 V (42 V en sortie). Vérifie ta prise de charge avant de commander."
+  }
+ ],
+ "sources": [
+  {
+   "label": "UrbanGlide — Ride 100 Max 2",
+   "url": "https://urbanglide.com/produit/trottinette-electrique-ride-100-max2/"
+  },
+  {
+   "label": "UrbanGlide — fiche produit Ride 100 Max 2 (PDF)",
+   "url": "https://urbanglide.com/wp-content/uploads/2024/08/FP-RIDE-100MAX-2.pdf"
+  },
+  {
+   "label": "L'Éclaireur Fnac — test Labo Ride 100 Max 2",
+   "url": "https://leclaireur.fnac.com/test/648548-test-labo-de-la-urbanglide-ride-100-max-2-du-presque-tout-bon/"
+  },
+  {
+   "label": "Darty — Urbanglide Ride 100 Max 2",
+   "url": "https://www.darty.com/nav/achat/sports_loisirs/glisse_urbaine/trottinette_electrique/urbanglide_ride_100_max_2.html"
+  },
+  {
+   "label": "UrbanGlide — Ride 100 Max",
+   "url": "https://urbanglide.com/produit/trottinette-ride-100max/"
+  }
+ ]
+}

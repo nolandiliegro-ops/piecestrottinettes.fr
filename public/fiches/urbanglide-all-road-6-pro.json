@@ -1,0 +1,119 @@
+{
+ "displayName": "Urbanglide All Road 6 Pro",
+ "metaTitle": "Urbanglide All Road 6 Pro : fiche technique et pièces",
+ "metaDescription": "Urbanglide All Road 6 Pro : moteur 500 W, batterie 48 V 15,6 Ah, fourche en C, deux freins à disque, pneus tubeless 10 pouces. Fiche et entretien.",
+ "intro": [
+  "L'Urbanglide All Road 6 Pro est la version monomoteur de la gamme All Road 6. Elle partage l'allure tout-terrain de l'All Road 6 2x2 mais n'a qu'un moteur, à l'arrière, et une batterie plus petite. Les documents d'UrbanGlide ne s'accordent pas sur son poids ni sur son temps de charge.",
+  "Moteur de 500 W (800 W en pointe), batterie de 48 V et 15,6 Ah, soit environ 749 Wh, et jusqu'à 70 km annoncés par UrbanGlide. Deux freins à disque, fourche avant en C, pneus tubeless tout-terrain de 10 pouces, indice IPX5. Elle est bridée à 25 km/h."
+ ],
+ "specs": [
+  [
+   "Moteur",
+   "500 W (800 W en pointe), roue arrière (selon UrbanGlide)"
+  ],
+  [
+   "Vitesse",
+   "25 km/h"
+  ],
+  [
+   "Batterie",
+   "48 V, 15,6 Ah (environ 749 Wh, selon UrbanGlide)"
+  ],
+  [
+   "Autonomie annoncée",
+   "jusqu'à 70 km (selon UrbanGlide, 70 kg à 15 km/h sur le plat)"
+  ],
+  [
+   "Poids",
+   "26,5 kg sur la page UrbanGlide, 30 kg dans sa fiche PDF"
+  ],
+  [
+   "Charge max",
+   "120 kg"
+  ],
+  [
+   "Roues",
+   "10 pouces tubeless tout-terrain"
+  ],
+  [
+   "Freins",
+   "Deux disques"
+  ],
+  [
+   "Suspension",
+   "Fourche avant en C"
+  ],
+  [
+   "Étanchéité",
+   "IPX5 selon UrbanGlide (IP54 sur une fiche Boulanger)"
+  ],
+  [
+   "Temps de charge",
+   "environ 10 h sur la page UrbanGlide, 7 h dans sa fiche PDF"
+  ]
+ ],
+ "pros": [
+  "Batterie de 749 Wh pour 70 km annoncés (UrbanGlide).",
+  "Deux freins à disque (UrbanGlide).",
+  "Pneus tubeless tout-terrain de 10 pouces et fourche avant en C (UrbanGlide)."
+ ],
+ "cons": [
+  "Les documents d'UrbanGlide ne s'accordent pas sur le poids (26,5 ou 30 kg) ni sur le temps de charge (7 ou 10 h).",
+  "Un seul moteur : la version bimoteur de la gamme est l'All Road 6 2x2.",
+  "Pas encore de test de presse : les 70 km d'autonomie ne sont pas mesurés."
+ ],
+ "parts": [],
+ "care": [
+  "Pneus tubeless : vérifie la pression chaque semaine, un pneu sous-gonflé s'use vite sur chemin.",
+  "Fourche en C : nettoie les axes et contrôle le jeu de la fourche après les sorties boueuses ou sous la pluie.",
+  "Deux freins à disque : surveille l'épaisseur des plaquettes et resserre la visserie des étriers si elle prend du jeu."
+ ],
+ "price": {
+  "text": "Prix affiché : 699,99 € sur urbanglide.com (13/10/2026), 549,99 € en promotion chez Boulanger (07/07/2026).",
+  "source": "urbanglide.com, boulanger.com"
+ },
+ "faq": [
+  {
+   "q": "Quelle taille de pneu pour l'Urbanglide All Road 6 Pro ?",
+   "a": "Des pneus tubeless tout-terrain de 10 pouces. La dimension exacte n'est pas encore relevée dans notre base : lis-la sur le flanc de ton pneu avant de commander."
+  },
+  {
+   "q": "Quels freins sur l'Urbanglide All Road 6 Pro ?",
+   "a": "Deux freins à disque. Compare ta plaquette usée avant d'en commander, la forme dépend de l'étrier."
+  },
+  {
+   "q": "Quel chargeur pour l'Urbanglide All Road 6 Pro ?",
+   "a": "Un chargeur 48 V (54,6 V en sortie). Vérifie ta prise de charge avant de commander."
+  },
+  {
+   "q": "Quelle différence entre l'All Road 6 Pro et l'All Road 6 2x2 ?",
+   "a": "La Pro a un seul moteur de 500 W et une batterie de 15,6 Ah. La 2x2 a deux moteurs de 500 W et 18,2 Ah."
+  },
+  {
+   "q": "Quelle autonomie pour l'Urbanglide All Road 6 Pro ?",
+   "a": "UrbanGlide annonce jusqu'à 70 km avec 70 kg de charge à 15 km/h sur le plat. Aucun test de presse ne l'a mesurée."
+  }
+ ],
+ "sources": [
+  {
+   "label": "UrbanGlide — All Road 6 Pro",
+   "url": "https://urbanglide.com/produit/all-road-6-pro/"
+  },
+  {
+   "label": "UrbanGlide — fiche produit All Road 6 Pro (PDF)",
+   "url": "https://urbanglide.com/wp-content/uploads/2025/04/FP-AR6PRO.pdf"
+  },
+  {
+   "label": "Boulanger — Urbanglide All Road 6 Pro (prix)",
+   "url": "https://www.boulanger.com/ref/9000917333"
+  },
+  {
+   "label": "Boulanger — Urbanglide All Road 6 Pro (fiche)",
+   "url": "https://www.boulanger.com/ref/9000532512"
+  },
+  {
+   "label": "Darty — Urbanglide All Road 6 Pro",
+   "url": "https://www.darty.com/nav/achat/ref/MC353970518.html"
+  }
+ ]
+}

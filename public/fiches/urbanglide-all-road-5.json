@@ -1,0 +1,148 @@
+{
+ "displayName": "Urbanglide All Road 5",
+ "metaTitle": "Urbanglide All Road 5 : fiche technique et pièces",
+ "metaDescription": "Urbanglide All Road 5 : 48 V 10 Ah, moteur 600 W, pneus tubeless 10x2.75-6.5, deux freins à disque, prise GX16-3. Fiche, entretien et pièces.",
+ "intro": [
+  "L'Urbanglide All Road 5 est une trottinette tout-chemin à moteur arrière, présente dans la documentation UrbanGlide depuis 2022. Méfie-toi des chiffres : la page officielle actuelle et la fiche produit PDF ne donnent ni le même poids, ni la même charge maximale. Elle est distincte de l'All Road 5 Pro.",
+  "Moteur de 600 W (800 W en pointe), batterie de 48 V et 10 Ah, soit 480 Wh, pour jusqu'à 40 km annoncés. Elle roule sur des pneus tubeless de 10 pouces en 10x2.75-6.5, freine avec deux disques et se recharge par une prise GX16-3. Elle reste bridée à 25 km/h."
+ ],
+ "specs": [
+  [
+   "Moteur",
+   "600 W (800 W en pointe), roue arrière (selon UrbanGlide)"
+  ],
+  [
+   "Vitesse",
+   "25 km/h"
+  ],
+  [
+   "Batterie",
+   "48 V, 10 Ah (480 Wh)"
+  ],
+  [
+   "Autonomie annoncée",
+   "jusqu'à 40 km selon UrbanGlide et Rue du Commerce, 30 km selon Boulanger"
+  ],
+  [
+   "Poids",
+   "23,5 kg sur la page UrbanGlide, 27,6 kg sur sa fiche PDF, chez Boulanger et idealo"
+  ],
+  [
+   "Charge max",
+   "120 kg (page UrbanGlide, Rue du Commerce) ou 100 kg (fiche PDF, Boulanger, idealo)"
+  ],
+  [
+   "Roues",
+   "10 pouces tubeless, 10x2.75-6.5"
+  ],
+  [
+   "Freins",
+   "Disques avant et arrière"
+  ],
+  [
+   "Suspension",
+   "Avant et arrière selon Boulanger, arrière seule selon Rue du Commerce"
+  ],
+  [
+   "Étanchéité",
+   "IPX4"
+  ],
+  [
+   "Prise de charge",
+   "GX16-3"
+  ],
+  [
+   "Chargeur",
+   "48 V (54,6 V en sortie)"
+  ],
+  [
+   "Temps de charge",
+   "environ 6 h selon UrbanGlide, 5 h selon Boulanger et Pixmania"
+  ]
+ ],
+ "pros": [
+  "Deux freins à disque, à l'avant et à l'arrière (UrbanGlide, idealo).",
+  "Pneus tubeless de 10 pouces en 10x2.75 (UrbanGlide).",
+  "Moteur de 600 W, 800 W en pointe (UrbanGlide)."
+ ],
+ "cons": [
+  "Fiches contradictoires sur le poids (23,5 ou 27,6 kg) et la charge maximale (100 ou 120 kg) : fie-toi à l'étiquette de ta trottinette.",
+  "Batterie de 480 Wh : l'autonomie annoncée va de 30 à 40 km selon les vendeurs, et aucun test de presse ne l'a mesurée.",
+  "IPX4 seulement : évite de rouler sous une grosse averse."
+ ],
+ "parts": [
+  {
+   "label": "Pneu",
+   "size": "10x2.75-6.5 tubeless (10 pouces, jante 6,5\")",
+   "count": 6,
+   "to": "/piece/pneu-10x2-75-6-5-tubeless-aoxin-urbanglide-e-cross",
+   "cta": "Pneus 10x2.75-6.5"
+  },
+  {
+   "label": "Chargeur",
+   "size": "48 V → 54,6 V, prise GX16-3",
+   "count": 2,
+   "to": "/piece/chargeur-48v-546v-2a-connecteur-gx16-3p",
+   "cta": "Chargeurs 48 V"
+  }
+ ],
+ "care": [
+  "Pneus tubeless : vérifie la pression chaque semaine, un pneu sous-gonflé s'use vite et se déjante plus facilement.",
+  "Deux freins à disque : contrôle l'épaisseur des plaquettes des deux côtés et le serrage des disques après les sorties sur chemin.",
+  "Prise GX16-3 : garde-la propre et sèche, et charge uniquement avec un chargeur 48 V."
+ ],
+ "faq": [
+  {
+   "q": "Quelle taille de pneu pour l'Urbanglide All Road 5 ?",
+   "a": "Des pneus tubeless de 10 pouces en 10x2.75-6.5, sur une jante de 6,5 pouces."
+  },
+  {
+   "q": "Quel chargeur pour l'Urbanglide All Road 5 ?",
+   "a": "Un chargeur 48 V (54,6 V en sortie) avec prise GX16-3."
+  },
+  {
+   "q": "Quelles plaquettes pour l'Urbanglide All Road 5 ?",
+   "a": "Elle a deux freins à disque. La forme de la plaquette dépend de l'étrier : compare ta plaquette usée avant de commander."
+  },
+  {
+   "q": "Combien pèse l'Urbanglide All Road 5 ?",
+   "a": "Les fiches ne s'accordent pas : 23,5 kg sur la page actuelle d'UrbanGlide, 27,6 kg sur sa fiche PDF et chez plusieurs revendeurs."
+  },
+  {
+   "q": "Quelle autonomie pour l'Urbanglide All Road 5 ?",
+   "a": "UrbanGlide annonce jusqu'à 40 km, Boulanger 30 km. Aucun test de presse ne l'a mesurée."
+  }
+ ],
+ "sources": [
+  {
+   "label": "UrbanGlide — All Road 5",
+   "url": "https://urbanglide.com/produit/trottinette-all-road-5/"
+  },
+  {
+   "label": "UrbanGlide — fiche produit All Road 5 (PDF)",
+   "url": "https://urbanglide.com/wp-content/uploads/2022/06/URBANGLIDE-ALL-ROAD-5-FICHE-PRODUIT-FR.pdf"
+  },
+  {
+   "label": "Boulanger — Urbanglide All Road 5",
+   "url": "https://www.boulanger.com/ref/1190338"
+  },
+  {
+   "label": "Rue du Commerce — Urbanglide All Road 5",
+   "url": "https://www.rueducommerce.fr/p/r24060023236.html"
+  },
+  {
+   "label": "idealo — Urbanglide All Road 5",
+   "url": "https://www.idealo.fr/prix/202135456/urbanglide-all-road-5.html"
+  },
+  {
+   "label": "Pixmania — Urbanglide All Road 5",
+   "url": "https://www.pixmania.com/fr/fr/urban-glide-all-road-5-25-kmh-noir-10-ah-234335.html"
+  }
+ ],
+ "video": {
+  "id": "QSWyn6WxXWg",
+  "title": "URBANGLIDE ALL ROAD 5 AVIS APRES 180 KM",
+  "channel": "Bertrand Baud",
+  "uploadDate": "2022-10-04"
+ }
+}

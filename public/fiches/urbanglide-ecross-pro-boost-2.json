@@ -1,0 +1,123 @@
+{
+ "displayName": "Urbanglide eCross Pro Boost 2",
+ "metaTitle": "Urbanglide eCross Pro Boost 2 : fiche technique et pièces",
+ "metaDescription": "Urbanglide eCross Pro Boost 2 : deux moteurs de 600 W, batterie 48 V 12,5 Ah, pneus 10x2.75-6.5, six suspensions, IPX5, 26,5 kg. Fiche et pièces.",
+ "intro": [
+  "L'Urbanglide eCross Pro Boost 2 est la version bimoteur de l'eCross Pro 2, présentée par UrbanGlide comme un nouveau modèle en septembre 2024. Elle garde la batterie de 48 V et 12,5 Ah de l'eCross Pro 2 et ajoute un moteur à l'avant. Aucun test de presse ne l'a encore évaluée.",
+  "Deux moteurs de 600 W chacun (800 W en pointe), batterie de 600 Wh, jusqu'à 50 km annoncés par Darty et la Fnac, deux freins à disque et six suspensions. Pneus de 10 pouces en 10x2.75-6.5, 26,5 kg sur la balance et bridage à 25 km/h sur la voie publique."
+ ],
+ "specs": [
+  [
+   "Moteurs",
+   "2 × 600 W (2 × 800 W en pointe), avant et arrière"
+  ],
+  [
+   "Vitesse",
+   "25 km/h"
+  ],
+  [
+   "Batterie",
+   "48 V, 12,5 Ah (600 Wh)"
+  ],
+  [
+   "Autonomie annoncée",
+   "jusqu'à 50 km (Darty, Fnac), 60 km chez Boulanger"
+  ],
+  [
+   "Poids",
+   "26,5 kg"
+  ],
+  [
+   "Charge max",
+   "120 kg"
+  ],
+  [
+   "Roues",
+   "10 pouces off-road, 10x2.75-6.5"
+  ],
+  [
+   "Freins",
+   "Deux disques"
+  ],
+  [
+   "Suspension",
+   "Six suspensions (selon UrbanGlide)"
+  ],
+  [
+   "Étanchéité",
+   "IPX5"
+  ],
+  [
+   "Temps de charge",
+   "environ 9 h"
+  ]
+ ],
+ "pros": [
+  "Deux moteurs, à l'avant et à l'arrière (UrbanGlide, Darty, Fnac).",
+  "Six suspensions (UrbanGlide).",
+  "Indice IPX5 contre les projections d'eau (Darty, Fnac)."
+ ],
+ "cons": [
+  "26,5 kg : elle se porte difficilement.",
+  "Batterie de 600 Wh pour deux moteurs : les 50 km sont annoncés, pas mesurés par un test de presse.",
+  "Recharge d'environ 9 h."
+ ],
+ "parts": [
+  {
+   "label": "Pneu",
+   "size": "10x2.75-6.5 (10 pouces, jante 6,5\")",
+   "count": 6,
+   "to": "/piece/pneu-tubeless-10x2-75-6-5-offroad-runflat-ewheel",
+   "cta": "Pneus 10x2.75-6.5"
+  }
+ ],
+ "care": [
+  "Pneus 10x2.75-6.5 : contrôle la pression chaque semaine, un pneu mou fatigue la jante et réduit l'autonomie.",
+  "Deux freins à disque : surveille l'épaisseur des plaquettes, elles travaillent plus avec deux moteurs.",
+  "Six suspensions : nettoie les articulations et vérifie le jeu des bras après la pluie ou la boue."
+ ],
+ "price": {
+  "text": "Prix affiché chez Boulanger : 649,99 € (18/10/2026).",
+  "source": "boulanger.com"
+ },
+ "faq": [
+  {
+   "q": "Quelle taille de pneu pour l'Urbanglide eCross Pro Boost 2 ?",
+   "a": "Des pneus de 10 pouces en 10x2.75-6.5, sur une jante de 6,5 pouces."
+  },
+  {
+   "q": "Quelle différence entre l'eCross Pro Boost 2 et l'eCross Pro 2 ?",
+   "a": "Même batterie de 48 V et 12,5 Ah. La Pro Boost 2 a deux moteurs, à l'avant et à l'arrière ; la Pro 2 n'en a qu'un, à l'arrière."
+  },
+  {
+   "q": "Quels freins sur l'Urbanglide eCross Pro Boost 2 ?",
+   "a": "Deux freins à disque. Compare ta plaquette usée avant d'en commander, la forme dépend de l'étrier."
+  },
+  {
+   "q": "Quel chargeur pour l'Urbanglide eCross Pro Boost 2 ?",
+   "a": "Un chargeur 48 V (54,6 V en sortie). Vérifie ta prise de charge avant de commander."
+  },
+  {
+   "q": "Quelle autonomie pour l'Urbanglide eCross Pro Boost 2 ?",
+   "a": "Darty et la Fnac annoncent jusqu'à 50 km, Boulanger 60 km. Aucun test de presse ne l'a mesurée."
+  }
+ ],
+ "sources": [
+  {
+   "label": "UrbanGlide — eCross Pro Boost 2",
+   "url": "https://urbanglide.com/en/produit/e-cross-pro-boost-2/"
+  },
+  {
+   "label": "Darty — Urbanglide eCross Pro Boost 2",
+   "url": "https://www.darty.com/nav/achat/sports_loisirs/glisse_urbaine/trottinette_electrique/urbanglide_ecross_pro_boost_2.html"
+  },
+  {
+   "label": "Fnac — Urbanglide eCross Pro Boost 2",
+   "url": "https://www.fnac.com/Trottinette-electrique-Urbanglide-eCross-Pro-Boost-2-600-W-Noir/a20881624/w-4"
+  },
+  {
+   "label": "Boulanger — Urbanglide eCross Pro Boost 2",
+   "url": "https://www.boulanger.com/ref/1204888"
+  }
+ ]
+}

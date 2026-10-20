@@ -1,0 +1,123 @@
+{
+ "displayName": "Urbanglide eCross Max 2x2 Gen 2",
+ "metaTitle": "eCross Max 2x2 Gen 2 : fiche technique, avis et pièces",
+ "metaDescription": "Urbanglide eCross Max 2x2 Gen 2 : deux moteurs de 600 W, batterie 48 V 17,5 Ah, six suspensions, 34,5 km mesurés par le Labo Fnac. Avis et entretien.",
+ "intro": [
+  "L'Urbanglide eCross Max 2x2 Gen 2 est la deuxième génération de la bimoteur eCross Max 2x2. Par rapport à la première, UrbanGlide annonce plus d'autonomie (80 km contre 60 km) et une meilleure protection contre l'eau (IPX5 contre IPX4). Le Labo Fnac l'a testée et a mesuré 34,5 km.",
+  "Deux moteurs de 600 W chacun (800 W en pointe), batterie de 48 V et 17,5 Ah, soit 840 Wh, freins à disque à l'avant et à l'arrière et six suspensions. À 27,6 kg, c'est une trottinette pour les chemins plus que pour les escaliers. Elle reste bridée à 25 km/h sur la voie publique."
+ ],
+ "specs": [
+  [
+   "Moteurs",
+   "2 × 600 W (2 × 800 W en pointe)"
+  ],
+  [
+   "Vitesse",
+   "25 km/h ; 22,8 km/h de moyenne mesurés par le Labo Fnac"
+  ],
+  [
+   "Batterie",
+   "48 V, 17,5 Ah (840 Wh)"
+  ],
+  [
+   "Autonomie",
+   "jusqu'à 80 km annoncés (mode Eco, 15 km/h), 34,5 km mesurés par le Labo Fnac"
+  ],
+  [
+   "Poids",
+   "27,6 kg"
+  ],
+  [
+   "Charge max",
+   "120 kg"
+  ],
+  [
+   "Roues",
+   "10 pouces tubeless tout-terrain"
+  ],
+  [
+   "Freins",
+   "Disques avant et arrière"
+  ],
+  [
+   "Suspension",
+   "Six : quatre à l'avant, deux à l'arrière (selon Darty)"
+  ],
+  [
+   "Étanchéité",
+   "IPX5"
+  ],
+  [
+   "Temps de charge",
+   "environ 10 h annoncées, 11 h 10 mesurées par le Labo Fnac"
+  ]
+ ],
+ "pros": [
+  "Accélération convaincante (L'Éclaireur Fnac).",
+  "Vitesse moyenne qui se défend : 22,8 km/h mesurés (L'Éclaireur Fnac).",
+  "Batterie de 840 Wh et freins à disque aux deux roues (UrbanGlide, Darty)."
+ ],
+ "cons": [
+  "Autonomie mesurée de 34,5 km, loin des 80 km annoncés (L'Éclaireur Fnac).",
+  "Recharge longue : 11 h 10 mesurées (L'Éclaireur Fnac).",
+  "27,6 kg, et un prix jugé élevé pour les performances mesurées (L'Éclaireur Fnac)."
+ ],
+ "parts": [],
+ "care": [
+  "Pneus tubeless tout-terrain : vérifie la pression avant chaque sortie, un pneu mou coûte encore de l'autonomie.",
+  "Freins à disque avant et arrière : surveille les plaquettes, elles s'usent vite avec deux moteurs et près de 28 kg à arrêter.",
+  "Six suspensions : nettoie les articulations et contrôle le jeu des bras et de la potence régulièrement."
+ ],
+ "price": {
+  "text": "Prix affichés : 649,99 € chez Darty (31/07/2026), à partir de 599,99 € en promotion à la Fnac (12/10/2026).",
+  "source": "darty.com, fnac.com"
+ },
+ "faq": [
+  {
+   "q": "Quelle taille de pneu pour l'eCross Max 2x2 Gen 2 ?",
+   "a": "Des pneus tubeless tout-terrain de 10 pouces. La dimension exacte n'est pas encore relevée dans notre base : lis-la sur le flanc de ton pneu avant de commander."
+  },
+  {
+   "q": "Quelle est l'autonomie réelle de l'eCross Max 2x2 Gen 2 ?",
+   "a": "Le Labo Fnac a mesuré 34,5 km. UrbanGlide annonce jusqu'à 80 km en mode Eco à 15 km/h, et 60 km en mode Sport à 25 km/h."
+  },
+  {
+   "q": "Quelle différence entre l'eCross Max 2x2 Gen 1 et Gen 2 ?",
+   "a": "Selon UrbanGlide, la Gen 2 annonce 80 km au lieu de 60 km et passe en IPX5 au lieu d'IPX4. Batterie de 48 V et 17,5 Ah, moteurs et freins à disque restent annoncés à l'identique."
+  },
+  {
+   "q": "Combien de temps pour recharger l'eCross Max 2x2 Gen 2 ?",
+   "a": "Environ 10 h selon UrbanGlide, 11 h 10 mesurées par le Labo Fnac."
+  },
+  {
+   "q": "Quel chargeur pour l'eCross Max 2x2 Gen 2 ?",
+   "a": "Un chargeur 48 V (54,6 V en sortie). Vérifie ta prise de charge avant de commander."
+  }
+ ],
+ "sources": [
+  {
+   "label": "UrbanGlide — eCross Max 2x2 Gen 2",
+   "url": "https://urbanglide.com/produit/e-cross-max-2-2-gen/"
+  },
+  {
+   "label": "L'Éclaireur Fnac — test Labo eCross Max 2x2 Gen 2",
+   "url": "https://leclaireur.fnac.com/test/688242-test-labo-de-la-urbanglide-e-cross-max-2x2-gen-2-une-trottinette-assez-chere-payee/"
+  },
+  {
+   "label": "Darty — Urbanglide eCross Max 2x2 Gen 2",
+   "url": "https://www.darty.com/nav/achat/sports_loisirs/glisse_urbaine/trottinette_electrique/urbanglide_ecross_max_2x2_new.html"
+  },
+  {
+   "label": "Fnac — UrbanGlide E-Cross Max 2x2 2e génération",
+   "url": "https://www.fnac.com/Trottinette-electrique-UrbanGlide-E-Cross-Max-2x2-2eme-generation-1200-W-Noir/a22276756/w-4"
+  },
+  {
+   "label": "Fnac — trottinettes Urbanglide (prix)",
+   "url": "https://www.fnac.com/Trottinette-electrique-Urbanglide/Marques-de-trottinette-electrique/nsh530249/w-4"
+  },
+  {
+   "label": "UrbanGlide — eCross Max 2x2 (1re génération)",
+   "url": "https://urbanglide.com/produit/trottinette-electrique-e-cross-max-2x2/"
+  }
+ ]
+}

@@ -1,0 +1,140 @@
+{
+ "displayName": "Urbanglide eCross Pro",
+ "metaTitle": "Urbanglide eCross Pro : fiche technique et pièces",
+ "metaDescription": "Urbanglide eCross Pro : 48 V 13 Ah, pneus 10x2.70-6.5, deux freins à disque de 140 mm entraxe 44 mm, IPX4, 23 kg. Fiche, entretien et pièces.",
+ "intro": [
+  "L'Urbanglide eCross Pro est la première eCross Pro, monomoteur, avec une batterie de 48 V et 13 Ah. UrbanGlide la signale en fin de vie : elle ne sera plus commercialisée. Elle ne doit pas être confondue avec l'eCross Pro 2, l'eCross Pro Boost ou les versions à deux moteurs.",
+  "Moteur arrière annoncé à 800 W par UrbanGlide et la Fnac, mais à 600 W dans sa notice. Batterie de 624 Wh, jusqu'à 50 km annoncés, deux freins à disque de 140 mm, suspensions avant, arrière et latérales, pneus de 10 pouces en 10x2.70-6.5. Elle pèse 23 kg et reste bridée à 25 km/h."
+ ],
+ "specs": [
+  [
+   "Moteur",
+   "800 W selon UrbanGlide et la Fnac, 600 W selon la notice"
+  ],
+  [
+   "Vitesse",
+   "25 km/h"
+  ],
+  [
+   "Batterie",
+   "48 V, 13 Ah (624 Wh)"
+  ],
+  [
+   "Autonomie annoncée",
+   "jusqu'à 50 km"
+  ],
+  [
+   "Poids",
+   "23 kg"
+  ],
+  [
+   "Charge max",
+   "120 kg"
+  ],
+  [
+   "Roues",
+   "10 pouces, 10x2.70-6.5 tout-terrain"
+  ],
+  [
+   "Freins",
+   "Deux disques, Ø 140 mm, 6 trous, entraxe 44 mm"
+  ],
+  [
+   "Suspension",
+   "Avant, arrière et latérales (selon UrbanGlide)"
+  ],
+  [
+   "Étanchéité",
+   "IPX4"
+  ],
+  [
+   "Temps de charge",
+   "environ 9 h selon UrbanGlide, 6 h selon une fiche Fnac"
+  ]
+ ],
+ "pros": [
+  "Deux freins à disque (UrbanGlide).",
+  "Suspensions avant, arrière et latérales (UrbanGlide).",
+  "Batterie de 624 Wh, un peu plus grosse que celle de l'eCross Pro 2 (600 Wh) (UrbanGlide, Fnac)."
+ ],
+ "cons": [
+  "Modèle en fin de vie selon UrbanGlide : les pièces spécifiques deviendront plus rares.",
+  "IPX4 seulement : évite de rouler sous une grosse averse.",
+  "Puissance contradictoire selon les documents : 800 W sur la fiche, 600 W dans la notice."
+ ],
+ "parts": [
+  {
+   "label": "Pneu",
+   "size": "10x2.70-6.5 (10 pouces, jante 6,5\")",
+   "count": 6,
+   "to": "/piece/pneu-tubeless-10x2-70-6-5-cityroad-ewheel",
+   "cta": "Pneus 10x2.70-6.5"
+  },
+  {
+   "label": "Disque de frein",
+   "size": "140 mm, 6 trous, entraxe 44 mm",
+   "count": 3,
+   "to": "/piece/disque-de-frein-r6-140mm-entraxe-44mm-3-couleurs-vert",
+   "cta": "Disques 140 mm"
+  }
+ ],
+ "care": [
+  "Pneus 10x2.70-6.5 : contrôle la pression chaque semaine, surtout si tu roules sur chemin.",
+  "Deux freins à disque de 140 mm : surveille l'épaisseur des plaquettes et change un disque voilé ou trop fin.",
+  "Suspensions : nettoie les axes et vérifie le jeu des bras après la pluie ou la boue."
+ ],
+ "faq": [
+  {
+   "q": "Quelle taille de pneu pour l'Urbanglide eCross Pro ?",
+   "a": "Des pneus de 10 pouces en 10x2.70-6.5, sur une jante de 6,5 pouces."
+  },
+  {
+   "q": "Quel disque de frein pour l'Urbanglide eCross Pro ?",
+   "a": "Un disque de 140 mm à 6 trous, entraxe 44 mm."
+  },
+  {
+   "q": "Quelles plaquettes pour l'Urbanglide eCross Pro ?",
+   "a": "La forme de la plaquette dépend de l'étrier : compare ta plaquette usée avant de commander."
+  },
+  {
+   "q": "Quel chargeur pour l'Urbanglide eCross Pro ?",
+   "a": "Un chargeur 48 V (54,6 V en sortie). Vérifie ta prise de charge avant de commander."
+  },
+  {
+   "q": "Quelle différence entre l'eCross Pro et l'eCross Pro 2 ?",
+   "a": "La première eCross Pro a une batterie de 48 V et 13 Ah et un indice IPX4. L'eCross Pro 2 a 48 V et 12,5 Ah et passe en IPX5."
+  }
+ ],
+ "sources": [
+  {
+   "label": "UrbanGlide — fiche produit eCross Pro (PDF)",
+   "url": "https://urbanglide.com/wp-content/uploads/2022/06/URBANGLIDE-ECROSS-PRO-FICHE-PRODUIT-FR_.pdf"
+  },
+  {
+   "label": "UrbanGlide — eCross Pro",
+   "url": "https://urbanglide.com/produit/trottinette-e-cross-pro/"
+  },
+  {
+   "label": "Fnac — Urbanglide eCross Pro 800 W",
+   "url": "https://www.fnac.com/Trottinette-electrique-Urbanglide-eCross-Pro-800-W-Noir-et-Rouge/a16416718/w-4"
+  },
+  {
+   "label": "Notice Urbanglide eCross Pro (Darty)",
+   "url": "https://fc.darty.com/notices/e/1/4/8/e1482425a74af58606a955ed1f37fd7ad5a4db4b.pdf"
+  },
+  {
+   "label": "Pixmania — Urbanglide eCross Pro 13 Ah",
+   "url": "https://www.pixmania.com/fr/fr/urbanglide-ecross-pro-25-kmh-noir-13-ah-90247.html"
+  },
+  {
+   "label": "UrbanGlide — eCross Pro 2",
+   "url": "https://urbanglide.com/produit/trottinette-electrique-e-cross-pro-2/"
+  }
+ ],
+ "video": {
+  "id": "KIqdT1vyjfQ",
+  "title": "URBAN GLIDE E-CROSS PRO trottinette électrique test",
+  "channel": "HUGO QLF",
+  "uploadDate": "2023-03-19"
+ }
+}

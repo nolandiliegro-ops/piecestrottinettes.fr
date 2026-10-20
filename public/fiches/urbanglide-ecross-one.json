@@ -1,0 +1,131 @@
+{
+ "displayName": "Urbanglide eCross One",
+ "metaTitle": "Urbanglide eCross One : fiche technique et pièces",
+ "metaDescription": "Urbanglide eCross One : moteur 600 W, batterie 48 V 10,4 Ah, deux freins à disque, pneus tubeless 10 pouces, prise GX16-3. Fiche, entretien et pièces.",
+ "intro": [
+  "L'Urbanglide eCross One est une trottinette tout-chemin monomoteur de la gamme eCross, dont la fiche produit officielle date d'avril 2025. Elle existe en plusieurs coloris, dont rouge et bleu. À ne pas confondre avec l'eCross Go, qui a la même batterie mais monte plus haut en puissance de pointe.",
+  "Moteur arrière de 600 W (800 W en pointe), batterie de 48 V et 10,4 Ah, soit 499 Wh, et jusqu'à 50 km annoncés. Deux freins à disque, quatre amortisseurs selon UrbanGlide, pneus tubeless tout-terrain de 10 pouces et prise de charge GX16-3. Elle pèse 22,1 kg et reste bridée à 25 km/h."
+ ],
+ "specs": [
+  [
+   "Moteur",
+   "600 W (800 W en pointe), roue arrière"
+  ],
+  [
+   "Vitesse",
+   "25 km/h"
+  ],
+  [
+   "Batterie",
+   "48 V, 10,4 Ah (499 Wh)"
+  ],
+  [
+   "Autonomie annoncée",
+   "jusqu'à 50 km"
+  ],
+  [
+   "Poids",
+   "22,1 kg"
+  ],
+  [
+   "Charge max",
+   "120 kg"
+  ],
+  [
+   "Roues",
+   "10 pouces tubeless tout-terrain"
+  ],
+  [
+   "Freins",
+   "Deux disques"
+  ],
+  [
+   "Suspension",
+   "Quatre amortisseurs, deux à l'avant et deux à l'arrière (selon UrbanGlide)"
+  ],
+  [
+   "Étanchéité",
+   "IPX5"
+  ],
+  [
+   "Prise de charge",
+   "GX16-3"
+  ],
+  [
+   "Chargeur",
+   "48 V (54,6 V en sortie)"
+  ],
+  [
+   "Temps de charge",
+   "environ 7 h"
+  ]
+ ],
+ "pros": [
+  "Deux freins à disque (UrbanGlide, Boulanger).",
+  "Quatre amortisseurs, deux à l'avant et deux à l'arrière (UrbanGlide).",
+  "Indice IPX5 contre les projections d'eau (UrbanGlide, Boulanger)."
+ ],
+ "cons": [
+  "22,1 kg : elle se porte, mais pas longtemps.",
+  "Aucun test de presse à ce jour : les 50 km d'autonomie restent une valeur annoncée.",
+  "Pointe limitée à 800 W, contre 1 200 W pour l'eCross Go."
+ ],
+ "parts": [
+  {
+   "label": "Chargeur",
+   "size": "48 V → 54,6 V, prise GX16-3",
+   "count": 2,
+   "to": "/piece/chargeur-48v-546v-2a-connecteur-gx16-3p",
+   "cta": "Chargeurs 48 V"
+  }
+ ],
+ "care": [
+  "Pneus tubeless : vérifie la pression chaque semaine, un pneu sous-gonflé s'use vite et se déjante plus facilement.",
+  "Deux freins à disque : contrôle l'épaisseur des plaquettes et le serrage des disques après les sorties sur chemin.",
+  "Prise GX16-3 : garde-la propre et sèche, et charge uniquement avec un chargeur 48 V."
+ ],
+ "faq": [
+  {
+   "q": "Quelle taille de pneu pour l'Urbanglide eCross One ?",
+   "a": "Des pneus tubeless tout-terrain de 10 pouces. La dimension exacte n'est pas encore relevée dans notre base : lis-la sur le flanc de ton pneu avant de commander."
+  },
+  {
+   "q": "Quel chargeur pour l'Urbanglide eCross One ?",
+   "a": "Un chargeur 48 V (54,6 V en sortie) avec prise GX16-3."
+  },
+  {
+   "q": "Quels freins sur l'Urbanglide eCross One ?",
+   "a": "Deux freins à disque. Compare ta plaquette usée avant d'en commander, la forme dépend de l'étrier."
+  },
+  {
+   "q": "Quelle différence entre l'eCross One et l'eCross Go ?",
+   "a": "Même batterie de 48 V et 10,4 Ah et même moteur nominal de 600 W. L'eCross One monte à 800 W en pointe, l'eCross Go à 1 200 W."
+  },
+  {
+   "q": "Quelle autonomie pour l'Urbanglide eCross One ?",
+   "a": "UrbanGlide annonce jusqu'à 50 km. Aucun test de presse ne l'a mesurée à ce jour."
+  }
+ ],
+ "sources": [
+  {
+   "label": "UrbanGlide — fiche produit eCross One (PDF)",
+   "url": "https://urbanglide.com/wp-content/uploads/2025/04/FP-ECROSS-ONE-bleu.pdf"
+  },
+  {
+   "label": "UrbanGlide — eCross One",
+   "url": "https://urbanglide.com/en/produit/e-cross-one-blue/"
+  },
+  {
+   "label": "Boulanger — Urbanglide eCross One",
+   "url": "https://www.boulanger.com/ref/1222272"
+  },
+  {
+   "label": "Pixmania — Urbanglide eCross One",
+   "url": "https://www.pixmania.com/fr/fr/urbanglide-ecross-one-trottinette-electrique-10-tubeless-25-kmh-50-km-dautonomie-512980.html"
+  },
+  {
+   "label": "UrbanGlide — eCross Go",
+   "url": "https://urbanglide.com/produit/e-cross-go/"
+  }
+ ]
+}

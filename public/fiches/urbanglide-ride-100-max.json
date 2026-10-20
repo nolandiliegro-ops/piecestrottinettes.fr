@@ -1,0 +1,129 @@
+{
+ "displayName": "Urbanglide Ride 100 Max",
+ "metaTitle": "Urbanglide Ride 100 Max : fiche technique et pièces",
+ "metaDescription": "Urbanglide Ride 100 Max : moteur 350 W, batterie 36 V 7,5 Ah, pneus alvéolés 10x2.125-6.5, double suspension, IPX4. Fiche, entretien et pièces.",
+ "intro": [
+  "L'Urbanglide Ride 100 Max est une trottinette urbaine à pneus alvéolés de 10 pouces, dans sa première version à batterie de 36 V et 7,5 Ah. Elle ne doit pas être confondue avec la Ride 100 Max 2, qui passe à 7,8 Ah et à des pneus à chambre à air.",
+  "Moteur avant de 350 W (450 W en pointe), batterie de 270 Wh, jusqu'à 30 km annoncés, frein à disque à l'arrière et double suspension. Elle pèse 14,5 kg selon UrbanGlide, 15 kg selon Darty, se recharge en 5 heures environ et reste bridée à 25 km/h."
+ ],
+ "specs": [
+  [
+   "Moteur",
+   "350 W (450 W en pointe), roue avant"
+  ],
+  [
+   "Vitesse",
+   "25 km/h"
+  ],
+  [
+   "Batterie",
+   "36 V, 7,5 Ah (270 Wh)"
+  ],
+  [
+   "Autonomie annoncée",
+   "jusqu'à 30 km"
+  ],
+  [
+   "Poids",
+   "14,5 kg selon UrbanGlide, 15 kg selon Darty"
+  ],
+  [
+   "Charge max",
+   "100 kg selon UrbanGlide, 120 kg selon Darty"
+  ],
+  [
+   "Roues",
+   "10 pouces alvéolés (increvables), 10x2.125-6.5"
+  ],
+  [
+   "Freins",
+   "Disque arrière (selon UrbanGlide)"
+  ],
+  [
+   "Suspension",
+   "Double suspension (selon UrbanGlide)"
+  ],
+  [
+   "Étanchéité",
+   "IPX4"
+  ],
+  [
+   "Temps de charge",
+   "environ 5 h"
+  ]
+ ],
+ "pros": [
+  "Pneus alvéolés de 10 pouces : pas de chambre à air à crever (UrbanGlide).",
+  "Double suspension (UrbanGlide).",
+  "Recharge en 5 heures environ (UrbanGlide, Darty)."
+ ],
+ "cons": [
+  "Un seul frein à disque, à l'arrière.",
+  "IPX4 seulement : évite de rouler sous une grosse averse.",
+  "Charge maximale floue : 100 kg selon UrbanGlide, 120 kg selon Darty. Garde la valeur la plus basse."
+ ],
+ "parts": [
+  {
+   "label": "Pneu plein",
+   "size": "10x2.125-6.5 alvéolé (jante 6,5\")",
+   "count": 3,
+   "to": "/piece/pneu-plein-10x2-125-6-5-offroad-ultra-leger-jante-44-mm-rouge-nedong",
+   "cta": "Pneus pleins 10x2.125"
+  }
+ ],
+ "care": [
+  "Pneus alvéolés : ils ne crèvent pas, mais contrôle l'usure de la bande de roulement et remplace-les quand le grip baisse.",
+  "Le disque arrière est ton seul frein mécanique : surveille les plaquettes et retends le câble dès que le levier prend de la course.",
+  "Vérifie régulièrement le serrage du pliage et de la potence : un jeu qui s'installe se corrige tôt."
+ ],
+ "faq": [
+  {
+   "q": "Quelle taille de pneu pour l'Urbanglide Ride 100 Max ?",
+   "a": "Des pneus alvéolés de 10 pouces en 10x2.125-6.5, sur une jante de 6,5 pouces. Vérifie aussi la largeur de ta jante avant de commander un pneu plein."
+  },
+  {
+   "q": "Quels freins sur l'Urbanglide Ride 100 Max ?",
+   "a": "Un frein à disque à l'arrière, selon la fiche UrbanGlide."
+  },
+  {
+   "q": "Quelle batterie pour l'Urbanglide Ride 100 Max ?",
+   "a": "Une batterie de 36 V et 7,5 Ah. UrbanGlide vend une batterie de remplacement 36 V 7,5 Ah annoncée compatible avec les Ride 100XS, 100S et 100 Max."
+  },
+  {
+   "q": "Quel chargeur pour l'Urbanglide Ride 100 Max ?",
+   "a": "Un chargeur 36 V (42 V en sortie). Vérifie ta prise de charge avant de commander."
+  },
+  {
+   "q": "Quelle différence entre la Ride 100 Max et la Ride 100 Max 2 ?",
+   "a": "La Ride 100 Max a une batterie de 7,5 Ah et des pneus alvéolés. La Max 2 passe à 7,8 Ah, à des pneus à chambre à air et à un tambour à l'avant en plus du disque arrière."
+  }
+ ],
+ "sources": [
+  {
+   "label": "UrbanGlide — Ride 100 Max",
+   "url": "https://urbanglide.com/produit/trottinette-ride-100max/"
+  },
+  {
+   "label": "Darty — Urbanglide Ride 100 Max",
+   "url": "https://www.darty.com/nav/achat/sports_loisirs/glisse_urbaine/trottinette_electrique/urbanglide_ride_100_max.html"
+  },
+  {
+   "label": "Pixmania — Urbanglide Ride 100 Max 7,5 Ah",
+   "url": "https://www.pixmania.com/fr/fr/urbanglide-ride-100-max-25-kmh-noir-75-ah-60158.html"
+  },
+  {
+   "label": "UrbanGlide — batterie 36 V 7,5 Ah Ride 100XS / 100S / 100 Max",
+   "url": "https://urbanglide.com/produit/batterie-36v-75ah-ride-100xs-100s-100max-350ct-350max/"
+  },
+  {
+   "label": "UrbanGlide — fiche produit Ride 100 Max 2 (PDF)",
+   "url": "https://urbanglide.com/wp-content/uploads/2024/08/FP-RIDE-100MAX-2.pdf"
+  }
+ ],
+ "video": {
+  "id": "aEUZm9bp5Eo",
+  "title": "Trottinette URBANGLIDE RIDE 100 MAX présentation et essai sur route !",
+  "channel": "sebastuces",
+  "uploadDate": "2024-08-15"
+ }
+}
