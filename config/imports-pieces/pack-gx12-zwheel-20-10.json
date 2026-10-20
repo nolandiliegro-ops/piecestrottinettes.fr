@@ -1,0 +1,40 @@
+[
+ {
+  "categoryName": "Chargeurs",
+  "parts": [
+   {
+    "name": "Pack chargeur 48V + adaptateur GX12 (Zwheel ZRino Duo / ZCougar Duo)",
+    "slug": "pack-chargeur-48v-adaptateur-gx12-zwheel",
+    "sku": "PK-SP175-GX12",
+    "price": 45.9,
+    "stock_quantity": 15,
+    "description": "<p><strong>ZRino Duo ou ZCougar Duo : chargeur à remplacer ?</strong> Pack chargeur 48V 2A en GX16-3 + adaptateur vers la prise GX12 3 broches des Zwheel ZRino Duo et ZCougar Duo.</p><ul><li><strong>Adaptateur GX12</strong> : la petite prise ronde 3 broches de ces deux Zwheel.</li><li><strong>Chargeur 48V 2A</strong> : pour leur batterie 48V.</li><li><strong>Chargeur + adaptateur</strong> : tout est dans le pack, rien d'autre à acheter.</li></ul><p><strong>Le bon réflexe :</strong> compare la prise de ta trottinette avec la photo de l'adaptateur avant de commander : les ZRino et ZCougar simples (sans Duo) ont une prise GX16 et n'ont pas besoin d'adaptateur.</p>",
+    "meta_title": "Pack chargeur 48V + adaptateur GX12 pour Zwheel ZRino Duo et ZCougar Duo",
+    "meta_description": "Chargeur 48V 2A livré avec son adaptateur GX12 3 broches : il se branche directement sur ta Zwheel ZRino Duo ou ZCougar Duo. Livraison rapide.",
+    "characteristics": "Contenu : chargeur 48V 2A GX16-3 + adaptateur GX16-3 mâle vers GX12-3 femelle - Tension : 48V",
+    "electrical_specs": {
+     "connector": "GX12-3",
+     "voltages": [48],
+     "pack": {"chargeur": "SP-175", "adaptateur": "SP-170-GX12", "wattiz": ["SP-175", "SP-170-GX12"]}
+    },
+    "source_image_urls": [
+     "https://www.wattiz.fr/99007-large_default/chargeur-54-6v-2a-connecteur-gx16-3.jpg",
+     "https://www.wattiz.fr/108244-large_default/adaptateur-gx16-3-pins-male-vers-gx12-3-pins-femelle.jpg"
+    ],
+    "supplier": {
+     "name": "wattiz",
+     "sku": "SP-175 + SP-170-GX12",
+     "url": "https://www.wattiz.fr/fr/chargeurs/42588-chargeur-54-6v-2a-connecteur-gx16-3-3760351012721.html",
+     "buy_price_ht": 18.70,
+     "notes": "PACK : commander les 2 réf. Wattiz SP-175 + SP-170-GX12 (adaptateur https://www.wattiz.fr/fr/adapteurs-chargeurs/117295-adaptateur-gx16-3-pins-male-vers-gx12-3-pins-femelle-3760351018839.html)"
+    },
+    "technical_metadata": {
+     "source": "pack_1810",
+     "airtable_id": "recXCae3zsi4cq6Du",
+     "pack_of": ["SP-175", "SP-170-GX12"],
+     "import": "pack-gx12-zwheel-20-10"
+    }
+   }
+  ]
+ }
+]
