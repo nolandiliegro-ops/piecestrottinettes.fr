@@ -1,0 +1,28 @@
+[
+ {
+  "categoryName": "Chargeurs",
+  "parts": [
+   {
+    "name": "Chargeur 48V ➡️ 54,6V / 2A connecteur Xiaomi 4 Pro Max / Plus / 5 Max",
+    "slug": "chargeur-48v-546v-2a-connecteur-xiaomi-4-pro-max-plus-5-max",
+    "sku": "EW-EWM675",
+    "price": 34.9,
+    "stock_quantity": 14,
+    "description": "<p><strong>Chargeur perdu, oublié ou grillé ?</strong> Ce chargeur 48 V (sortie 54,6 V, 2 A) porte l'embout des Xiaomi 4 Pro Max, 4 Pro Plus et Scooter 5 Max : tu le branches et tu recharges, sans adaptateur.</p><ul><li><strong>Le bon embout</strong> : connecteur Mi4 Pro Max / Plus, celui de ta trottinette.</li><li><strong>54,6 V – 2 A</strong> : la tension de fin de charge d'une batterie 48 V.</li><li><strong>Protégé</strong> : coupure en cas de surcharge, de surchauffe et de court-circuit.</li></ul><p><strong>Le bon réflexe :</strong> vérifie l'embout avant de commander, le Xiaomi 4 Ultra et le Scooter 5 n'ont pas la même prise. Et garde-en un deuxième au bureau ou dans le sac.</p>",
+    "meta_title": "Chargeur 48V 54,6V 2A Xiaomi 4 Pro Max / Plus / 5 Max",
+    "meta_description": "Chargeur 48V (sortie 54,6V, 2A) avec l'embout Xiaomi 4 Pro Max / Pro Plus et Scooter 5 Max. Protections intégrées. Livraison rapide.",
+    "ean": "8435764434570",
+    "characteristics": "Chargeur 48V, sortie 54,6V 2A. Connecteur Xiaomi Mi4 Pro Max / Pro Plus. Protections surcharge, surchauffe, court-circuit. Réf. fournisseur eWheel EWM675. EAN 8435764434570.",
+    "compatibility_source": "Xiaomi Mi 4 Pro Plus, Xiaomi Mi 4 Pro Max, Xiaomi Mi 5 Max (eWheel)",
+    "electrical_specs": {"connector": "XIAOMI-PROMAX", "voltages": [48]},
+    "source_image_urls": [
+     "https://cdn.shopify.com/s/files/1/0613/0178/4618/files/19241.jpg",
+     "https://cdn.shopify.com/s/files/1/0613/0178/4618/files/19242.jpg",
+     "https://cdn.shopify.com/s/files/1/0613/0178/4618/files/19243.jpg"
+    ],
+    "supplier": {"name": "ewheel", "sku": "EWM675-IU", "url": "https://ewheel.es/products/chargeur-48v-sortie-54-6v-2a-connecteur-mi4-pro-max-plus", "buy_price_ht": 13.95, "stock_supplier": 14, "notes": "import 20/10 (prise XIAOMI-PROMAX)"},
+    "technical_metadata": {"source": "airtable", "airtable_id": "recBoS9GaSN0WIREs", "import": "chargeur-ewm675-20-10"}
+   }
+  ]
+ }
+]
