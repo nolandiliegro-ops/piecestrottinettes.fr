@@ -1,2 +1,1 @@
-write fix2010
-cadrage write kugoo-g2,cecotec-bongo-serie-d30-xl-connected
+compat cles-20-10c
