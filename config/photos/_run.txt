@@ -1,1 +1,1 @@
-compat xiaomi6-20-10
+compat chargeur-cmm236-20-10
