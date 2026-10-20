@@ -1,0 +1,37 @@
+{
+ "lot": "fix2010",
+ "models": [
+  {
+   "id": "99406035-7cc8-4d46-a3ad-4a8dd7383a5d",
+   "slug": "kugoo-g2",
+   "name": "Kugoo G2",
+   "brand": "Kugoo",
+   "candidates": [
+    "https://www.kukirin-scooter.com/cdn/shop/files/KuKirin_G2_Electric_Scooter_1.jpg?v=1783072176&width=1500",
+    "https://www.kukirin-scooter.com/cdn/shop/files/KuKirin_G2_Electric_Scooter_5.jpg?v=1783072164&width=1500",
+    "https://www.kukirin-scooter.com/cdn/shop/files/KuKirin_G2_Electric_Scooter_6.jpg?v=1783071621&width=1920",
+    "https://www.kukirin-scooter.com/cdn/shop/files/G2-2026_1.jpg?v=1777448023&width=1920",
+    "https://www.kukirin-scooter.com/cdn/shop/files/G2-2026_2.jpg?v=1777448024&width=1920",
+    "https://www.kukirin-scooter.com/cdn/shop/files/G2-2026_3.jpg?v=1777448023&width=1920",
+    "https://www.kukirin-scooter.com/cdn/shop/files/G2-26-A2_1542ed10-be6a-4166-aa99-0c9bcf2fc52b.jpg?v=1777465481&width=1920",
+    "https://www.kukirin-scooter.com/cdn/shop/files/G2-26-A4_9b289ce3-b302-480d-8ead-cf6b19234b34.jpg?v=1777465227&width=1920",
+    "https://www.kukirin-scooter.com/cdn/shop/files/2026-G2-With_Front_Fender.jpg?v=1777466615&width=1920"
+   ]
+  },
+  {
+   "id": "1a63e5ea-b111-4f53-a0de-e9a5f67ce644",
+   "slug": "cecotec-bongo-serie-d30-xl-connected",
+   "name": "Cecotec Bongo Serie D30 XL Connected",
+   "brand": "Cecotec",
+   "candidates": [
+    "https://media.cecotec.cloud/07340/bongo-d30-xl-connected_khqvxa_1.png",
+    "https://media.cecotec.cloud/07340/bongo-d30-xl-connected_7kwwsz_2.png",
+    "https://media.cecotec.cloud/07340/bongo-d30-xl-connected_cucgov_3.png",
+    "https://media.cecotec.cloud/07340/bongo-d30-xl-connected_sv1074_4.png",
+    "https://media.cecotec.cloud/07340/bongo-d30-xl-connected_l59q01_5.jpg",
+    "https://media.cecotec.cloud/07340/bongo-d30-xl-connected_78cij6_6.jpg",
+    "https://media.cecotec.cloud/07340/bongo-d30-xl-connected_main.jpg"
+   ]
+  }
+ ]
+}
