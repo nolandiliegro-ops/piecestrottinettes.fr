@@ -292,6 +292,55 @@ const askUrl = (part: PartDetail, model?: string) => {
   return `/contact?${p.toString()}`;
 };
 
+/** Tout ce que la fiche affiche, calculé une fois : partagé par l'actuelle et les 5 propositions (?fiche=1..5, 20/10). */
+export const useFiche = (part: PartDetail, scooters: CompatibleScooter[]) => {
+  const family = part.category?.slug ?? null;
+  const guide = useGuide(family);
+  const caliper = useCaliperLabels(!!part.fitment_specs?.brake_caliper?.length);
+  const siblings = useSiblings(part);
+  const points = traits(part);
+  const [q, setQ] = useState("");
+  const verified = useMemo(() => scooters.filter((s) => s.status === "verified"), [scooters]);
+  const toCheck = useMemo(() => scooters.filter((s) => s.status !== "verified"), [scooters]);
+  const groups = useMemo(() => groupByBrand(verified), [verified]);
+  const checkGroups = useMemo(() => groupByBrand(toCheck), [toCheck]);
+  const n = verified.length;
+  const top = topModels(groups);
+  const key = keyPhrase(part, caliper);
+  const rows = keyRows(part, caliper);
+  const { tiles, free } = parseSpecs(part.description, part.characteristics);
+  const known = new Set(rows.map(([k]) => k.toLowerCase()));
+  const extra = tiles.filter((t) => !known.has(t.label.toLowerCase())
+    && !/^(type|dimension|taille|connecteur|prise|tension|voltage|[ée]trier|diam[eè]tre|entraxe|ean)\b/i.test(t.label));
+  const specs: [string, string][] = [...rows, ...extra.map((t) => [t.label, t.value] as [string, string])];
+  const desc = part.description?.trim() ? cleanDescription(part.description).replace(/<h2>[\s\S]*?<\/h2>/gi, "").trim() : "";
+  const descText = desc.replace(/<[^>]+>/g, " ").replace(/\s+/g, " ").trim();
+  const vars = { name: part.name, count: String(n), top1: top[0] ?? "ta trottinette", top3: listFr(top), size: key };
+  const faq = (guide?.faq ?? [])
+    .filter((f) => n > 0 || !/\{(top1|top3|count)\}/.test(f.q + f.a))
+    .map((f) => ({ q: fill(f.q, vars), a: fill(f.a, vars) }));
+  const nq = q.trim().toLowerCase();
+  const hits = nq.length >= 2 ? scooters.filter((s) => fullName(s).toLowerCase().includes(nq)).slice(0, 5) : [];
+  const guideLabel = guide ? `${guide.label} ${key}`.trim() : key;
+  return { guide, siblings, points, q, setQ, nq, hits, verified, toCheck, groups, checkGroups, n, top, key, rows, specs, free, desc, descText, faq, guideLabel };
+};
+export type Fiche = ReturnType<typeof useFiche>;
+
+export const FaqJsonLd = ({ faq }: { faq: { q: string; a: string }[] }) => faq.length > 0 ? (
+  <Helmet>
+    <script type="application/ld+json">
+      {JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        mainEntity: faq.map((f) => ({ "@type": "Question", name: f.q, acceptedAnswer: { "@type": "Answer", text: f.a } })),
+      })}
+    </script>
+  </Helmet>
+) : null;
+
+export { UNB, FONT, CARBON, GREEN, LINE, CHAMFER, Video, Chip, BrandFold, askUrl, fullName, shortName, listFr, siblingTitle, matchBasis };
+export type { Group, Guide, Sibling };
+
 const PartSeoFiche = ({ part, scooters, scootersLoading }: { part: PartDetail; scooters: CompatibleScooter[]; scootersLoading: boolean }) => {
   const family = part.category?.slug ?? null;
   const guide = useGuide(family);
