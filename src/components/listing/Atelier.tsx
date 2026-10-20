@@ -31,8 +31,9 @@ export const AtelierHead = ({ title, n, unit, query, onQuery, placeholder }: {
   useEffect(() => { if (v === query) return; const t = setTimeout(() => onQuery(v), 250); return () => clearTimeout(t); }, [v]); // eslint-disable-line react-hooks/exhaustive-deps
   return (
     <div>
-      <div className="flex items-end justify-between gap-4">
-        <h1 className="text-3xl md:text-5xl uppercase leading-none" style={{ fontFamily: UNB, fontWeight: 900, fontStyle: "italic", letterSpacing: "-0.03em", color: CARBON }}>{title}</h1>
+      {/* 20/10 : « TROTTINETTES » + « 440 MODÈLES » débordaient de 38 px sur téléphone (scroll horizontal) → retour à la ligne permis */}
+      <div className="flex flex-wrap items-end justify-between gap-x-4 gap-y-2">
+        <h1 className="min-w-0 text-[28px] sm:text-3xl md:text-5xl uppercase leading-none" style={{ fontFamily: UNB, fontWeight: 900, fontStyle: "italic", letterSpacing: "-0.03em", color: CARBON }}>{title}</h1>
         <span className="flex items-baseline gap-1.5 shrink-0" style={{ fontFamily: FONT }}>
           <span className="text-2xl md:text-3xl" style={{ fontFamily: UNB, fontWeight: 900, fontStyle: "italic", color: CARBON }}>{n ?? "…"}</span>
           <span className="text-sm font-bold uppercase tracking-wider text-gray-500">{unit}</span>
