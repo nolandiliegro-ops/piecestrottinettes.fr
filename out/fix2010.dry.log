@@ -1,0 +1,17 @@
+kugoo-g2 #0 FAIL détourage sale / résidu de décor
+kugoo-g2 #1 PASS ok
+kugoo-g2 #2 FAIL détourage sale / résidu de décor · cadrage serré
+kugoo-g2 #3 PASS ok
+kugoo-g2 #4 WARN cadrage serré
+kugoo-g2 #5 PASS ok
+kugoo-g2 #6 PASS ok
+kugoo-g2 #7 WARN petit élément détaché (2 morceaux)
+kugoo-g2 #8 FAIL détourage sale / résidu de décor · élément en plus (logo, badge, téléphone, 2e trottinette) : 5 morceaux
+cecotec-bongo-serie-d30-xl-connected #0 FAIL élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux
+cecotec-bongo-serie-d30-xl-connected #1 PASS ok
+cecotec-bongo-serie-d30-xl-connected #2 WARN cadrage serré
+cecotec-bongo-serie-d30-xl-connected #3 PASS ok
+cecotec-bongo-serie-d30-xl-connected #4 WARN basse définition · cadrage serré
+cecotec-bongo-serie-d30-xl-connected #5 PASS ok
+cecotec-bongo-serie-d30-xl-connected #6 FAIL détourage sale / résidu de décor · basse définition · cadrage serré
+::notice title=photos fix2010 (dry)::16 candidates · PASS 7 · WARN 4 · FAIL 5 · ERREUR 0

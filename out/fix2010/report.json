@@ -1,0 +1,351 @@
+[
+ {
+  "slug": "kugoo-g2",
+  "i": 0,
+  "url": "https://www.kukirin-scooter.com/cdn/shop/files/KuKirin_G2_Electric_Scooter_1.jpg?v=1783072176&width=1500",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0.001,
+   "vivid": 0.031,
+   "fill": 0.319
+  },
+  "size": [
+   1327,
+   739
+  ],
+  "error": null
+ },
+ {
+  "slug": "kugoo-g2",
+  "i": 1,
+  "url": "https://www.kukirin-scooter.com/cdn/shop/files/KuKirin_G2_Electric_Scooter_5.jpg?v=1783072164&width=1500",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0.002,
+   "vivid": 0.025,
+   "fill": 0.559
+  },
+  "size": [
+   1328,
+   742
+  ],
+  "error": null
+ },
+ {
+  "slug": "kugoo-g2",
+  "i": 2,
+  "url": "https://www.kukirin-scooter.com/cdn/shop/files/KuKirin_G2_Electric_Scooter_6.jpg?v=1783071621&width=1920",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.033,
+   "fill": 0.809
+  },
+  "size": [
+   1114,
+   1104
+  ],
+  "error": null
+ },
+ {
+  "slug": "kugoo-g2",
+  "i": 3,
+  "url": "https://www.kukirin-scooter.com/cdn/shop/files/G2-2026_1.jpg?v=1777448023&width=1920",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.054,
+   "fill": 0.517
+  },
+  "size": [
+   879,
+   991
+  ],
+  "error": null
+ },
+ {
+  "slug": "kugoo-g2",
+  "i": 4,
+  "url": "https://www.kukirin-scooter.com/cdn/shop/files/G2-2026_2.jpg?v=1777448024&width=1920",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.049,
+   "fill": 0.812
+  },
+  "size": [
+   624,
+   917
+  ],
+  "error": null
+ },
+ {
+  "slug": "kugoo-g2",
+  "i": 5,
+  "url": "https://www.kukirin-scooter.com/cdn/shop/files/G2-2026_3.jpg?v=1777448023&width=1920",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.051,
+   "fill": 0.838
+  },
+  "size": [
+   756,
+   679
+  ],
+  "error": null
+ },
+ {
+  "slug": "kugoo-g2",
+  "i": 6,
+  "url": "https://www.kukirin-scooter.com/cdn/shop/files/G2-26-A2_1542ed10-be6a-4166-aa99-0c9bcf2fc52b.jpg?v=1777465481&width=1920",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.014,
+   "fill": 0.253
+  },
+  "size": [
+   1732,
+   1087
+  ],
+  "error": null
+ },
+ {
+  "slug": "kugoo-g2",
+  "i": 7,
+  "url": "https://www.kukirin-scooter.com/cdn/shop/files/G2-26-A4_9b289ce3-b302-480d-8ead-cf6b19234b34.jpg?v=1777465227&width=1920",
+  "verdict": "WARN",
+  "reasons": [
+   "petit élément détaché (2 morceaux)"
+  ],
+  "plus": {
+   "verdict": "WARN",
+   "reasons": [
+    "petit élément détaché (2 morceaux)"
+   ],
+   "parts": 2,
+   "second": 0.019,
+   "vivid": 0.037,
+   "fill": 0.17
+  },
+  "size": [
+   1754,
+   1462
+  ],
+  "error": null
+ },
+ {
+  "slug": "kugoo-g2",
+  "i": 8,
+  "url": "https://www.kukirin-scooter.com/cdn/shop/files/2026-G2-With_Front_Fender.jpg?v=1777466615&width=1920",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 5 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 5 morceaux"
+   ],
+   "parts": 5,
+   "second": 0.269,
+   "vivid": 0.109,
+   "fill": 0.589
+  },
+  "size": [
+   1080,
+   1011
+  ],
+  "error": null
+ },
+ {
+  "slug": "cecotec-bongo-serie-d30-xl-connected",
+  "i": 0,
+  "url": "https://media.cecotec.cloud/07340/bongo-d30-xl-connected_khqvxa_1.png",
+  "verdict": "FAIL",
+  "reasons": [
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux"
+   ],
+   "parts": 3,
+   "second": 0.255,
+   "vivid": 0.048,
+   "fill": 0.779
+  },
+  "size": [
+   1340,
+   1756
+  ],
+  "error": null
+ },
+ {
+  "slug": "cecotec-bongo-serie-d30-xl-connected",
+  "i": 1,
+  "url": "https://media.cecotec.cloud/07340/bongo-d30-xl-connected_7kwwsz_2.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.047,
+   "fill": 0.827
+  },
+  "size": [
+   1728,
+   1746
+  ],
+  "error": null
+ },
+ {
+  "slug": "cecotec-bongo-serie-d30-xl-connected",
+  "i": 2,
+  "url": "https://media.cecotec.cloud/07340/bongo-d30-xl-connected_cucgov_3.png",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.041,
+   "fill": 0.814
+  },
+  "size": [
+   1758,
+   1494
+  ],
+  "error": null
+ },
+ {
+  "slug": "cecotec-bongo-serie-d30-xl-connected",
+  "i": 3,
+  "url": "https://media.cecotec.cloud/07340/bongo-d30-xl-connected_sv1074_4.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.029,
+   "fill": 0.765
+  },
+  "size": [
+   995,
+   1756
+  ],
+  "error": null
+ },
+ {
+  "slug": "cecotec-bongo-serie-d30-xl-connected",
+  "i": 4,
+  "url": "https://media.cecotec.cloud/07340/bongo-d30-xl-connected_l59q01_5.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition",
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.058,
+   "fill": 0.783
+  },
+  "size": [
+   428,
+   772
+  ],
+  "error": null
+ },
+ {
+  "slug": "cecotec-bongo-serie-d30-xl-connected",
+  "i": 5,
+  "url": "https://media.cecotec.cloud/07340/bongo-d30-xl-connected_78cij6_6.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.036,
+   "fill": 0.326
+  },
+  "size": [
+   1080,
+   1080
+  ],
+  "error": null
+ },
+ {
+  "slug": "cecotec-bongo-serie-d30-xl-connected",
+  "i": 6,
+  "url": "https://media.cecotec.cloud/07340/bongo-d30-xl-connected_main.jpg",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "basse définition",
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.018,
+   "fill": 0.782
+  },
+  "size": [
+   411,
+   729
+  ],
+  "error": null
+ }
+]
