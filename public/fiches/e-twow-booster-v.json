@@ -1,0 +1,154 @@
+{
+ "displayName": "E-Twow Booster V",
+ "metaTitle": "E-Twow Booster V : fiche technique, avis et pièces",
+ "metaDescription": "E-Twow Booster V : 36 V 10,5 Ah, 500 W, pneus pleins 8 pouces (8x2, 200x50), frein garde-boue arrière et suspensions. Avis, entretien et pièces.",
+ "intro": [
+  "La E-Twow Booster V est une trottinette compacte et légère, autour de 11 kg selon les fiches. Elle apparaît dans la gamme en 2018, en versions Évolution puis Confort selon les revendeurs. Elle mise sur un pliage très compact et un poids qui se porte sans effort dans les transports.",
+  "Moteur de 500 W, batterie 36 V de 10,5 Ah, pneus pleins de 8 pouces et suspensions à ressorts à l'avant et à l'arrière. Elle freine par récupération à l'avant et par le garde-boue arrière au pied. Sur la voie publique en France, elle doit rester bridée à 25 km/h."
+ ],
+ "specs": [
+  [
+   "Moteur",
+   "500 W"
+  ],
+  [
+   "Vitesse",
+   "25 km/h sur la voie publique"
+  ],
+  [
+   "Batterie",
+   "36 V, 10,5 Ah (378 Wh selon Alternative Bike)"
+  ],
+  [
+   "Autonomie annoncée",
+   "30 à 40 km selon les fiches (E-Twow, Alternative Bike, Scooter.guide)"
+  ],
+  [
+   "Poids",
+   "10,9 à 11,9 kg selon les sources"
+  ],
+  [
+   "Charge max",
+   "100 à 125 kg selon les sources"
+  ],
+  [
+   "Roues",
+   "8 pouces, pneus pleins 8x2 (200x50)"
+  ],
+  [
+   "Freins",
+   "Récupération électrique avant + garde-boue arrière au pied"
+  ],
+  [
+   "Suspension",
+   "Avant et arrière à ressorts"
+  ],
+  [
+   "Étanchéité",
+   "IP54 (version Confort, selon Alternative Bike)"
+  ],
+  [
+   "Temps de charge",
+   "3 à 4 h"
+  ],
+  [
+   "Sortie",
+   "2018 (versions Évolution puis Confort)"
+  ]
+ ],
+ "pros": [
+  "Légère et maniable, facile à glisser dans les transports (Les Numériques).",
+  "Confortable sur la plupart des surfaces pour une si petite trottinette (Les Numériques).",
+  "Pneus pleins : pas de crevaison, pas de pression à surveiller."
+ ],
+ "cons": [
+  "Guidon étroit et pas de béquille (Les Numériques).",
+  "Freinage jugé moyen (Les Numériques) : pas de frein à disque, le garde-boue arrière fait office de frein mécanique.",
+  "Les fiches ne s'accordent pas sur le poids, la charge max ni l'autonomie : vérifie la version de ta trottinette (Évolution ou Confort).",
+  "Sa vitesse annoncée de 34 à 35 km/h n'est utilisable que sur terrain privé : en France, la voie publique est limitée à 25 km/h."
+ ],
+ "parts": [
+  {
+   "label": "Pneu plein",
+   "size": "8 pouces, 8x2 (200x50)",
+   "count": 1,
+   "to": "/piece/pneu-plein-200x50-speedway-mini-4-pro-e-twow",
+   "cta": "Pneu plein E-Twow"
+  }
+ ],
+ "care": [
+  "Frein garde-boue arrière : contrôle la fixation et l'usure du garde-boue, c'est ton seul frein mécanique.",
+  "Pneus pleins : surveille l'usure de la bande de roulement, un pneu plein lisse glisse vite sur sol mouillé.",
+  "Avec un pliage aussi compact, vérifie souvent le jeu de la potence et le serrage de la charnière."
+ ],
+ "faq": [
+  {
+   "q": "Quelle taille de pneu pour la E-Twow Booster V ?",
+   "a": "Des pneus pleins de 8 pouces, en 8x2, aussi notés 200x50."
+  },
+  {
+   "q": "La E-Twow Booster V a-t-elle des plaquettes de frein ?",
+   "a": "Non. Elle freine par récupération électrique à l'avant et par le garde-boue arrière, que tu appuies au pied."
+  },
+  {
+   "q": "Quel chargeur pour la E-Twow Booster V ?",
+   "a": "Un chargeur pour batterie 36 V. Vérifie la forme de ta prise avant de commander."
+  },
+  {
+   "q": "Quelle est l'autonomie réelle de la E-Twow Booster V ?",
+   "a": "Les fiches annoncent 30 à 40 km. Les Numériques retient environ 30 km. Un testeur YouTube a parcouru 36,1 km en conditions favorables (70 kg, campagne, 35 °C)."
+  },
+  {
+   "q": "La E-Twow Booster V est-elle légale en France ?",
+   "a": "Oui sur la voie publique à condition d'être bridée à 25 km/h, comme toute trottinette électrique. Débridée, elle n'est utilisable que sur terrain privé."
+  }
+ ],
+ "sources": [
+  {
+   "label": "E-Twow — Booster V 10,5 Ah",
+   "url": "https://www.etwow.net/fr/trottinette-fr/booster-v-105ah"
+  },
+  {
+   "label": "Les Numériques — E-Twow Booster V",
+   "url": "https://www.lesnumeriques.com/trottinette-electrique/e-twow-booster-v-p44183.html"
+  },
+  {
+   "label": "Alternative Bike — E-Twow Booster V",
+   "url": "https://alternative.bike/585-trottinette-e-twow-booster-v.html"
+  },
+  {
+   "label": "Alternative Bike — E-Twow Booster V Confort",
+   "url": "https://alternative.bike/653-trottinette-e-twow-booster-v-confort.html"
+  },
+  {
+   "label": "Scooter.guide — examen E-Twow Booster V",
+   "url": "https://scooter.guide/fr/examen-du-scooter-electrique-e-twow-booster-v/"
+  },
+  {
+   "label": "MadCharge — E-Twow Booster V review",
+   "url": "https://www.madcharge.com/e-twow-booster-v-review/"
+  },
+  {
+   "label": "Solution Trottinette — gamme E-Twow",
+   "url": "https://solution-trottinette.fr/trottinette-electrique/marque/e-twow"
+  },
+  {
+   "label": "entrottinette.com — gamme E-Twow Booster",
+   "url": "https://entrottinette.com/e-twow-booster/"
+  },
+  {
+   "label": "YouTube — Etwow Booster V : test d'autonomie",
+   "url": "https://www.youtube.com/watch?v=1mgL3cOLX4s"
+  },
+  {
+   "label": "Ministère de la Transition écologique — réglementation des trottinettes",
+   "url": "https://www.ecologie.gouv.fr/politiques-publiques/trottinettes-electriques-edpm-reglementation-vigueur"
+  }
+ ],
+ "video": {
+  "id": "1mgL3cOLX4s",
+  "title": "Etwow Booster V : Test d'Autonomie (Conditions Optimales)",
+  "channel": "DuelMan",
+  "uploadDate": "2018-07-16"
+ }
+}

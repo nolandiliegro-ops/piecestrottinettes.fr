@@ -1,0 +1,124 @@
+{
+ "displayName": "E-Twow TankTorq TK3",
+ "metaTitle": "E-Twow TankTorq TK3 : fiche technique et pièces",
+ "metaDescription": "E-Twow TankTorq TK3 : bimoteur 2 × 750 W, batterie 60 V 10 Ah (600 Wh), pneus tubeless 10 pouces, double frein à disque, IPX5. Fiche et entretien.",
+ "intro": [
+  "La E-Twow TankTorq TK3 est la bimoteur intermédiaire de la gamme TankTorq, entre la TK2 et la TK5. Elle pèse environ 24,8 à 25 kg selon les fiches, et passe aux roues de 10 pouces là où la TK2 roule en 9 pouces.",
+  "Deux moteurs de 750 W, avec traction avant, arrière ou intégrale au choix, batterie 60 V de 10 Ah, pneus tubeless auto-obturants et suspensions à l'avant et à l'arrière. Elle freine par deux disques mécaniques et un freinage électronique EBS. Sur la voie publique, elle reste bridée à 25 km/h."
+ ],
+ "specs": [
+  [
+   "Moteurs",
+   "2 × 750 W (1 500 W ; 1 900 W en pointe selon E-Twow)"
+  ],
+  [
+   "Vitesse",
+   "25 km/h sur la voie publique"
+  ],
+  [
+   "Batterie",
+   "60 V, 10 Ah (600 Wh)"
+  ],
+  [
+   "Autonomie annoncée",
+   "45 km selon E-Twow, 40 à 50 km selon Boulanger"
+  ],
+  [
+   "Poids",
+   "24,8 à 25 kg selon les sources"
+  ],
+  [
+   "Charge max",
+   "110 kg selon Boulanger, 130 kg selon E-Twow"
+  ],
+  [
+   "Roues",
+   "10 pouces, tubeless auto-obturant"
+  ],
+  [
+   "Freins",
+   "Double disque mécanique + EBS électronique à trois niveaux"
+  ],
+  [
+   "Suspension",
+   "Avant et arrière"
+  ],
+  [
+   "Étanchéité",
+   "IPX5"
+  ],
+  [
+   "Chargeur",
+   "60 V, 4 A"
+  ],
+  [
+   "Temps de charge",
+   "2 h 30 annoncées par E-Twow"
+  ]
+ ],
+ "pros": [
+  "Deux moteurs de 750 W avec traction avant, arrière ou intégrale au choix (E-Twow).",
+  "Pneus tubeless auto-obturants de 10 pouces : moins de risque de crevaison qu'un pneu à chambre.",
+  "Recharge annoncée en 2 h 30 avec le chargeur 4 A (E-Twow)."
+ ],
+ "cons": [
+  "Environ 25 kg : elle se porte difficilement dans un escalier.",
+  "Les fiches ne s'accordent pas sur la charge max (110 ou 130 kg) : vérifie auprès de ton vendeur.",
+  "Aucun test de presse français trouvé : les chiffres viennent du fabricant et des revendeurs.",
+  "Sa vitesse annoncée d'environ 45 km/h n'est utilisable que sur terrain privé : en France, la voie publique est limitée à 25 km/h."
+ ],
+ "parts": [],
+ "care": [
+  "Freins à disque mécaniques : retends le câble et contrôle l'épaisseur des plaquettes dès que le levier s'allonge.",
+  "Pneus tubeless : vérifie la pression chaque mois, l'auto-obturant colmate les petites perforations mais pas un pneu sous-gonflé qui s'use.",
+  "Avec deux moteurs et 25 kg, la visserie de la colonne et des bras de suspension se desserre : vérifie-la régulièrement."
+ ],
+ "faq": [
+  {
+   "q": "Quelle taille de pneu pour la E-Twow TankTorq TK3 ?",
+   "a": "Des pneus tubeless auto-obturants de 10 pouces. Relève la section exacte sur le flanc de ton pneu avant de commander."
+  },
+  {
+   "q": "Quels freins sur la E-Twow TankTorq TK3 ?",
+   "a": "Deux freins à disque mécaniques, plus un freinage électronique EBS à trois niveaux. Compare la forme de ta plaquette et le diamètre de ton disque avant de commander."
+  },
+  {
+   "q": "Quel chargeur pour la E-Twow TankTorq TK3 ?",
+   "a": "Un chargeur 60 V ; E-Twow livre un modèle 4 A. Vérifie la forme de ta prise avant de commander."
+  },
+  {
+   "q": "Quelle différence entre la TK3 et la TK2 ?",
+   "a": "La TK3 a deux moteurs de 750 W et des roues de 10 pouces, la TK2 deux moteurs de 600 W et des roues de 9 pouces. Les deux ont une batterie 60 V de 10 Ah."
+  },
+  {
+   "q": "La E-Twow TankTorq TK3 est-elle légale en France ?",
+   "a": "Oui sur la voie publique à condition d'être bridée à 25 km/h, comme toute trottinette électrique. Débridée, elle n'est utilisable que sur terrain privé."
+  }
+ ],
+ "sources": [
+  {
+   "label": "E-Twow — TankTorq TK3",
+   "url": "https://e-twow.com/products/tanktorq-tk3"
+  },
+  {
+   "label": "Boulanger — E-Twow TankTorq TK3",
+   "url": "https://www.boulanger.com/ref/9000928124"
+  },
+  {
+   "label": "Boulanger — E-Twow TankTorq TK3 (autre coloris)",
+   "url": "https://www.boulanger.com/ref/9000928127"
+  },
+  {
+   "label": "Pixmania — E-Twow TankTorq TK3",
+   "url": "https://www.pixmania.com/fr/fr/trottinette-electrique-tanktorq-tk3-a-double-moteur-avec-applicationtelecommande-pneus-tubeless-10-pouces-bleue-527222.html"
+  },
+  {
+   "label": "Solution Trottinette — gamme E-Twow",
+   "url": "https://solution-trottinette.fr/trottinette-electrique/marque/e-twow"
+  },
+  {
+   "label": "Ministère de la Transition écologique — réglementation des trottinettes",
+   "url": "https://www.ecologie.gouv.fr/politiques-publiques/trottinettes-electriques-edpm-reglementation-vigueur"
+  }
+ ]
+}

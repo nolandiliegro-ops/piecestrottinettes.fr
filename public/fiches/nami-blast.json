@@ -1,0 +1,157 @@
+{
+ "displayName": "Nami Blast",
+ "metaTitle": "Nami Blast : fiche technique et pièces",
+ "metaDescription": "Nami Blast : 2 × 1 000 W, batterie 60 V, pneus 11 pouces 90/65-6.5, suspensions KKE, freins hydrauliques. Fiche technique, entretien et pièces.",
+ "intro": [
+  "La Nami Blast est le cross-over de Nami, reconnaissable à sa fourche avant inversée. En version standard, elle associe deux moteurs de 1 000 W à une batterie 60 V : 29 Ah selon la fiche Nami actuelle, 28 Ah chez plusieurs revendeurs français. Le poids tourne autour de 45 kg.",
+  "Pneus tubeless de 11 pouces en 90/65-6.5, freins hydrauliques deux pistons et suspensions hydrauliques KKE réglables : elle est faite pour rouler en ville comme sur les chemins. Sur la voie publique en France, elle doit rester bridée à 25 km/h."
+ ],
+ "specs": [
+  [
+   "Moteurs",
+   "2 × 1 000 W, 5 376 W en pointe (selon E-Rider)"
+  ],
+  [
+   "Vitesse",
+   "25 km/h sur la voie publique"
+  ],
+  [
+   "Batterie",
+   "60 V, 29 Ah (1 740 Wh) selon Nami, 28 Ah selon Funtrott et Eleqtron"
+  ],
+  [
+   "Autonomie annoncée",
+   "75 à 85 km selon les fiches"
+  ],
+  [
+   "Poids",
+   "45 à 46 kg selon les fiches"
+  ],
+  [
+   "Charge max",
+   "120 kg"
+  ],
+  [
+   "Roues",
+   "11 pouces, 90/65-6.5 tubeless"
+  ],
+  [
+   "Freins",
+   "Hydrauliques 2 pistons, disques Ø 160 mm au catalogue (140 mm sur la fiche Nami)"
+  ],
+  [
+   "Suspension",
+   "Hydraulique KKE réglable, avant et arrière"
+  ],
+  [
+   "Étanchéité",
+   "IPX5"
+  ],
+  [
+   "Chargeur",
+   "60 V, 5 A (selon Le Ranch)"
+  ],
+  [
+   "Temps de charge",
+   "5 h 30"
+  ]
+ ],
+ "pros": [
+  "Fourche avant inversée (Max Blinker).",
+  "Suspensions hydrauliques KKE réglables et pneus tubeless de 11 pouces (Nami, Le Ranch).",
+  "Recharge en 5 h 30 avec le chargeur 5 A (Le Ranch, Eleqtron)."
+ ],
+ "cons": [
+  "Environ 45 kg : elle ne se porte pas.",
+  "Les fiches divergent sur la batterie (28 ou 29 Ah) et le diamètre des disques (140 ou 160 mm) : mesure ton disque avant d'en commander un.",
+  "Aucun test de presse indépendant trouvé sur ce modèle.",
+  "Sa vitesse de pointe n'est utilisable que sur terrain privé : en France, la voie publique est limitée à 25 km/h."
+ ],
+ "parts": [
+  {
+   "label": "Pneu",
+   "size": "90/65-6.5 (11 pouces)",
+   "count": 11,
+   "to": "/piece/pneu-90-65-6-5-route-tubeless",
+   "cta": "Pneus 90/65-6.5"
+  },
+  {
+   "label": "Chambre à air",
+   "size": "90/65-6.5, valve droite ou coudée",
+   "count": 5,
+   "to": "/piece/chambre-a-air-9065-65-valve-droite",
+   "cta": "Chambres à air"
+  }
+ ],
+ "care": [
+  "Freins hydrauliques : surveille l'épaisseur des plaquettes et purge le circuit dès que le levier devient mou.",
+  "Pneus 90/65-6.5 tubeless : contrôle la pression avant chaque sortie, surtout si tu roules sur les chemins.",
+  "La fourche inversée et les amortisseurs KKE se règlent : contrôle le serrage de la visserie de la fourche régulièrement."
+ ],
+ "price": {
+  "text": "Prix affichés : 2 999 € chez Nami, 2 699 € chez Le Ranch, 3 499 € chez E-Rider (relevés le 20/10/2026).",
+  "source": "nami-electric.com, le-ranch.fr, e-rider.fr"
+ },
+ "faq": [
+  {
+   "q": "Quelle taille de pneu pour la Nami Blast ?",
+   "a": "Des pneus de 11 pouces en 90/65-6.5, en tubeless, sur une jante de 6,5 pouces."
+  },
+  {
+   "q": "Quel disque de frein pour la Nami Blast ?",
+   "a": "Notre catalogue la référence en 160 mm à 6 trous, entraxe 44 mm, mais la fiche Nami actuelle indique 140 mm. Mesure le diamètre de ton disque avant de commander."
+  },
+  {
+   "q": "Quel chargeur pour la Nami Blast ?",
+   "a": "Un chargeur 60 V. Vérifie la prise de ta trottinette avant de commander."
+  },
+  {
+   "q": "Combien de temps pour recharger la Nami Blast ?",
+   "a": "5 h 30 avec le chargeur 60 V 5 A, selon Le Ranch et Eleqtron."
+  },
+  {
+   "q": "Quelle différence entre la Blast et la Blast Max ?",
+   "a": "La Blast Max a des moteurs plus puissants et une plus grosse batterie. La Blast standard reste en deux moteurs de 1 000 W."
+  },
+  {
+   "q": "La Nami Blast est-elle légale en France ?",
+   "a": "Oui sur la voie publique à condition d'être bridée à 25 km/h, comme toute trottinette électrique. Débridée, elle n'est utilisable que sur terrain privé."
+  }
+ ],
+ "sources": [
+  {
+   "label": "Nami Electric — Blast",
+   "url": "https://nami-electric.com/produit/blast/"
+  },
+  {
+   "label": "Le Ranch — Nami Blast",
+   "url": "https://www.le-ranch.fr/product-page/trottinette-%C3%A9lectrique-nami-blast"
+  },
+  {
+   "label": "Eleqtron — Nami Blast 60 V 28 Ah",
+   "url": "https://www.eleqtron.fr/products/trottinette-electrique-nami-blast"
+  },
+  {
+   "label": "Funtrott — Nami Blast 60 V 28 Ah",
+   "url": "https://funtrott.fr/accueil/1752-trottinette-electrique-nami-blast-60v-28ah-.html"
+  },
+  {
+   "label": "E-Rider — Nami",
+   "url": "https://e-rider.fr/55-nami"
+  },
+  {
+   "label": "Max Blinker — Nami Blast",
+   "url": "https://www.maxblinker.fr/fr/trottinettes-electriques/nami-blast"
+  },
+  {
+   "label": "Ministère de la Transition écologique — réglementation des trottinettes",
+   "url": "https://www.ecologie.gouv.fr/politiques-publiques/trottinettes-electriques-edpm-reglementation-vigueur"
+  }
+ ],
+ "video": {
+  "id": "k9kNqRaOVvE",
+  "title": "NOUVELLE NAMI BLAST 2023 : UNE TROTTINETTE ELECTRIQUE DE FOLIE !",
+  "channel": "Weebot Paris",
+  "uploadDate": "2023-02-20"
+ }
+}

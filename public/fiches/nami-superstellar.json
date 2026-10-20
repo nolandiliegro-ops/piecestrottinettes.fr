@@ -1,0 +1,141 @@
+{
+ "displayName": "Nami Superstellar",
+ "metaTitle": "Nami Superstellar : fiche technique et pièces",
+ "metaDescription": "Nami Superstellar : 2 × 1 000 W, 52 V 25 Ah (1 277 Wh), 30 kg, pneus 9x2.5 tubeless, freins hydrauliques 140 mm. Fiche, entretien et pièces.",
+ "intro": [
+  "La Nami Superstellar est la version bimoteur de la Stellar : deux moteurs de 1 000 W, une batterie 52 V de 25 Ah, soit 1 277 Wh, pour 30 kg. Nami annonce jusqu'à 75 km à 25 km/h. Elle garde le format compact de la Stellar, avec plus de puissance et d'autonomie.",
+  "Pneus CST tubeless de 9 pouces, freins hydrauliques à disques de 140 mm et étriers deux pistons, suspensions à ressort avant et arrière : une trottinette urbaine musclée. Sur la voie publique en France, elle doit rester bridée à 25 km/h."
+ ],
+ "specs": [
+  [
+   "Moteurs",
+   "2 × 1 000 W, 2 940 W en pointe (selon Nami)"
+  ],
+  [
+   "Vitesse",
+   "25 km/h sur la voie publique"
+  ],
+  [
+   "Batterie",
+   "52 V, 25 Ah (1 277 Wh)"
+  ],
+  [
+   "Autonomie annoncée",
+   "jusqu'à 75 km à 25 km/h (selon Nami)"
+  ],
+  [
+   "Poids",
+   "30 kg"
+  ],
+  [
+   "Charge max",
+   "110 kg (Nami) ou 120 kg (revendeurs)"
+  ],
+  [
+   "Roues",
+   "9 pouces, 9x2.5 tubeless"
+  ],
+  [
+   "Freins",
+   "Disques hydrauliques Ø 140 mm, étriers 2 pistons"
+  ],
+  [
+   "Suspension",
+   "Ressorts avant et arrière"
+  ],
+  [
+   "Étanchéité",
+   "IPX5 (écran et contrôleurs IP65 selon Nami)"
+  ],
+  [
+   "Chargeur",
+   "52 V, 2 A (selon Nami)"
+  ],
+  [
+   "Temps de charge",
+   "environ 8 h (selon Fastride)"
+  ]
+ ],
+ "pros": [
+  "Deux moteurs de 1 000 W dans un châssis de 30 kg (Nami, Fastride).",
+  "Freins hydrauliques à disques de 140 mm, Logan selon Fastride.",
+  "Batterie de 1 277 Wh pour 75 km annoncés (Nami)."
+ ],
+ "cons": [
+  "Recharge longue avec le chargeur 2 A d'origine : environ 8 h selon Fastride.",
+  "Charge maximale de 110 kg selon Nami.",
+  "Aucun test de presse indépendant trouvé sur ce modèle.",
+  "Sa vitesse de pointe n'est utilisable que sur terrain privé : en France, la voie publique est limitée à 25 km/h."
+ ],
+ "parts": [
+  {
+   "label": "Pneu",
+   "size": "9x2.50-6 (9 pouces)",
+   "count": 4,
+   "to": "/piece/pneu-tubeless-9x2-5-6-cityroad-pantherurban-ewheel",
+   "cta": "Pneus 9x2.50-6"
+  },
+  {
+   "label": "Disque de frein",
+   "size": "140 mm, 6 trous, entraxe 44 mm",
+   "count": 5,
+   "to": "/piece/disque-de-frein-140mm",
+   "cta": "Disques 140 mm"
+  }
+ ],
+ "care": [
+  "Freins hydrauliques : surveille l'épaisseur des plaquettes et purge le circuit dès que le levier devient mou.",
+  "Pneus tubeless de 9 pouces : contrôle la pression chaque semaine, un petit pneu sous-gonflé s'use vite.",
+  "Avec deux moteurs dans un châssis compact, vérifie régulièrement le serrage des axes de roue et de la potence."
+ ],
+ "price": {
+  "text": "Prix affiché par Nami : à partir de 1 399 € ; 1 899 € chez Fastride (relevés le 20/10/2026).",
+  "source": "nami-electric.com, fastride.fr"
+ },
+ "faq": [
+  {
+   "q": "Quelle taille de pneu pour la Nami Superstellar ?",
+   "a": "Des pneus de 9 pouces en 9x2.50-6, en tubeless, sur une jante de 6 pouces."
+  },
+  {
+   "q": "Quel disque de frein pour la Nami Superstellar ?",
+   "a": "Un disque de 140 mm à 6 trous, entraxe 44 mm."
+  },
+  {
+   "q": "Quel chargeur pour la Nami Superstellar ?",
+   "a": "Un chargeur 52 V. Nami livre un chargeur de 2 A. Vérifie la prise de ta trottinette avant de commander."
+  },
+  {
+   "q": "Quelle différence entre la Superstellar et la Stellar ?",
+   "a": "La Superstellar a deux moteurs, une batterie 25 Ah et des freins hydrauliques. La Stellar a un moteur, 15,6 Ah et des freins à câble."
+  },
+  {
+   "q": "La Nami Superstellar est-elle légale en France ?",
+   "a": "Oui sur la voie publique à condition d'être bridée à 25 km/h, comme toute trottinette électrique. Débridée, elle n'est utilisable que sur terrain privé."
+  }
+ ],
+ "sources": [
+  {
+   "label": "Nami Electric — Super Stellar",
+   "url": "https://nami-electric.com/produit/super-stellar/"
+  },
+  {
+   "label": "Nami Electric (pro) — fiche technique Super Stellar",
+   "url": "https://pro.nami-electric.com/shop/namisuperstellar-super-stellar-1746"
+  },
+  {
+   "label": "Fastride — Nami Superstellar",
+   "url": "https://fastride.fr/fr/nami-electric/4308-trottinette-electrique-nami-superstellar.html"
+  },
+  {
+   "label": "Ministère de la Transition écologique — réglementation des trottinettes",
+   "url": "https://www.ecologie.gouv.fr/politiques-publiques/trottinettes-electriques-edpm-reglementation-vigueur"
+  }
+ ],
+ "video": {
+  "id": "xZ89oC2Is3Y",
+  "title": "TEST Trottinette electrique Puissante & Compacte NAMI STELLAR / SUPERSTELLAR (Mieux que Dualtron ?!)",
+  "channel": "Mobilityurban",
+  "uploadDate": "2024-10-05"
+ }
+}

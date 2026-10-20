@@ -1,0 +1,130 @@
+{
+ "displayName": "E-Twow GTS",
+ "metaTitle": "E-Twow GTS : fiche technique et pièces",
+ "metaDescription": "E-Twow GTS : batterie 48 V 10,5 Ah (504 Wh), 700 W en crête, 13 kg, pneus pleins 8 pouces 8x2 (200x50), frein tambour arrière. Fiche et pièces.",
+ "intro": [
+  "La E-Twow GTS est une trottinette compacte de la famille GT, en version Sport. Elle pèse 13 kg selon Wheels-Moov et Nature & Découvertes, et garde le pliage court qui permet de la glisser dans un bus ou un train. Une première série GTS Premium existait en 48 V 9,6 Ah.",
+  "La GTS actuelle passe à une batterie 48 V de 10,5 Ah, avec un moteur de 700 W en crête et des pneus pleins de 8 pouces. Elle freine par récupération d'énergie (KERS) à l'avant et par un tambour à l'arrière. Sur la voie publique, elle est bridée à 25 km/h."
+ ],
+ "specs": [
+  [
+   "Moteur",
+   "700 W en crête"
+  ],
+  [
+   "Vitesse",
+   "25 km/h sur la voie publique"
+  ],
+  [
+   "Batterie",
+   "48 V, 10,5 Ah (504 Wh) ; 48 V 9,6 Ah sur la GTS Premium"
+  ],
+  [
+   "Autonomie annoncée",
+   "jusqu'à 40 km (30 à 35 km pour la GTS Premium)"
+  ],
+  [
+   "Poids",
+   "13 kg"
+  ],
+  [
+   "Charge max",
+   "110 kg (GTS Premium, selon Swiss Distribution)"
+  ],
+  [
+   "Roues",
+   "8 pouces, pneus pleins 8x2 (200x50)"
+  ],
+  [
+   "Freins",
+   "Récupération d'énergie (KERS) avant + tambour arrière"
+  ],
+  [
+   "Suspension",
+   "Avant et arrière"
+  ],
+  [
+   "Temps de charge",
+   "environ 4 h"
+  ]
+ ],
+ "pros": [
+  "13 kg pour une 48 V de 504 Wh.",
+  "Pneus pleins à l'avant et à l'arrière : pas de crevaison.",
+  "Pliage court, pratique dans les transports en commun."
+ ],
+ "cons": [
+  "Deux générations coexistent (9,6 Ah et 10,5 Ah) : vérifie l'étiquette de ta batterie avant d'acheter une pièce.",
+  "Pas de frein à disque : le tambour arrière est le seul frein mécanique.",
+  "Aucun test de presse français trouvé : les chiffres viennent des revendeurs.",
+  "Ses vitesses débridées ne sont utilisables que sur terrain privé : en France, la voie publique est limitée à 25 km/h."
+ ],
+ "parts": [
+  {
+   "label": "Pneu plein",
+   "size": "8 pouces, 8x2 (200x50)",
+   "count": 1,
+   "to": "/piece/pneu-plein-200x50-speedway-mini-4-pro-e-twow",
+   "cta": "Pneu plein E-Twow"
+  }
+ ],
+ "care": [
+  "Frein à tambour arrière : fais-le régler dès que la course du levier s'allonge.",
+  "Pneus pleins : surveille l'usure de la gomme, un pneu lisse glisse vite sur sol mouillé.",
+  "Vérifie souvent le jeu de la potence et le serrage de la charnière de pliage."
+ ],
+ "faq": [
+  {
+   "q": "Quelle taille de pneu pour la E-Twow GTS ?",
+   "a": "Des pneus pleins de 8 pouces, en 8x2, aussi notés 200x50, à l'avant comme à l'arrière."
+  },
+  {
+   "q": "La E-Twow GTS a-t-elle des plaquettes de frein ?",
+   "a": "Non. Elle freine par récupération d'énergie à l'avant et par un tambour à l'arrière, sans disque ni plaquettes."
+  },
+  {
+   "q": "Quel chargeur pour la E-Twow GTS ?",
+   "a": "Un chargeur pour batterie 48 V. Vérifie la forme de ta prise avant de commander."
+  },
+  {
+   "q": "Quelle différence entre la GTS et la GTS Premium ?",
+   "a": "La batterie : 48 V 9,6 Ah sur la GTS Premium, 48 V 10,5 Ah sur la GTS récente, qui gagne un peu d'autonomie (jusqu'à 40 km annoncés contre 30 à 35 km)."
+  },
+  {
+   "q": "La E-Twow GTS est-elle légale en France ?",
+   "a": "Oui sur la voie publique à condition d'être bridée à 25 km/h, comme toute trottinette électrique. Débridée, elle n'est utilisable que sur terrain privé."
+  }
+ ],
+ "sources": [
+  {
+   "label": "Wheels-Moov — E-Twow GTS",
+   "url": "https://wheels-moov.fr/product/__show/144/e-twow-gts-(noir)"
+  },
+  {
+   "label": "Nature & Découvertes — E-Twow GTS",
+   "url": "https://www.natureetdecouvertes.com/outdoor/velos-accessoires/trottinettes-longboards-rollers/trottinette-electrique-etwow-gts-gris-92671480"
+  },
+  {
+   "label": "Swiss Distribution — E-Twow GTS",
+   "url": "https://swiss-distribution.com/produit/trottinette-electrique-e-twow-gts/"
+  },
+  {
+   "label": "Swiss Distribution — E-Twow GTS Premium 48 V 9,6 Ah",
+   "url": "https://swiss-distribution.com/produit/trottinette-electrique-e-twow-gts-premium-48v-96ah-gris/"
+  },
+  {
+   "label": "Wee-Bot — E-Twow GTS",
+   "url": "https://www.wee-bot.com/products/trottinette-electrique-etwow-gts"
+  },
+  {
+   "label": "Ministère de la Transition écologique — réglementation des trottinettes",
+   "url": "https://www.ecologie.gouv.fr/politiques-publiques/trottinettes-electriques-edpm-reglementation-vigueur"
+  }
+ ],
+ "video": {
+  "id": "_S5XMD0nPE4",
+  "title": "eTwow GTS (2022) ... la toute dernière trottinette E-TWOW en version SPORT !",
+  "channel": "MikyFAZ",
+  "uploadDate": "2022-06-05"
+ }
+}

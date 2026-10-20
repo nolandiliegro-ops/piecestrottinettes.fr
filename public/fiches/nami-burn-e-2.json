@@ -1,0 +1,159 @@
+{
+ "displayName": "Nami Burn-E 2",
+ "metaTitle": "Nami Burn-E 2 : fiche technique, avis et pièces",
+ "metaDescription": "Nami Burn-E 2 : 72 V 28 Ah, pneus 11 pouces 90/65-6.5, freins hydrauliques et disques 160 mm. Avis de tests, entretien et pièces compatibles.",
+ "intro": [
+  "La Nami Burn-E 2 est la deuxième génération de la Burn-E, présentée par Rider Guide comme lancée en 2022. Elle reprend une batterie de 72 V et 28 Ah, soit 2 016 Wh, avec deux moteurs de 1 000 W. Ce n'est ni la Burn-E d'origine ni la Burn-E 2 Max, plus puissante.",
+  "Pneus de 11 pouces en 90/65-6.5, freins hydrauliques avec disques de 160 mm, suspensions hydrauliques réglables à 165 mm de débattement selon Speedbikes : elle vise le confort sur les longues distances. Sur la voie publique en France, elle doit rester bridée à 25 km/h."
+ ],
+ "specs": [
+  [
+   "Moteurs",
+   "2 × 1 000 W (2 000 W au total)"
+  ],
+  [
+   "Vitesse",
+   "25 km/h sur la voie publique"
+  ],
+  [
+   "Batterie",
+   "72 V, 28 Ah (2 016 Wh)"
+  ],
+  [
+   "Autonomie",
+   "jusqu'à 80 km annoncés (Speedbikes), environ 79 km mesurés par Rider Guide"
+  ],
+  [
+   "Poids",
+   "47 kg (selon Speedbikes)"
+  ],
+  [
+   "Roues",
+   "11 pouces, 90/65-6.5 tubeless"
+  ],
+  [
+   "Freins",
+   "Disques hydrauliques Ø 160 mm, étriers Logan 2 pistons selon Rider Guide"
+  ],
+  [
+   "Suspension",
+   "Hydraulique réglable avant et arrière, 165 mm (selon Speedbikes)"
+  ],
+  [
+   "Étanchéité",
+   "IPX5 au catalogue, IP55 selon Rider Guide"
+  ],
+  [
+   "Chargeur",
+   "72 V"
+  ],
+  [
+   "Temps de charge",
+   "5 h 30 (selon Fnac)"
+  ]
+ ],
+ "pros": [
+  "Suspensions réglables et confort de conduite salués (Rider Guide, Electric Scooter Insider).",
+  "Freinage efficace : arrêt mesuré à 3,1 m depuis 24 km/h (Rider Guide).",
+  "Guidon plus large et amortisseur de direction réglable pour la stabilité (Rider Guide)."
+ ],
+ "cons": [
+  "47 kg : elle ne se porte pas.",
+  "Étriers à deux pistons seulement selon Rider Guide, là où d'autres 72 V montent des quatre pistons.",
+  "Les fiches ne s'accordent pas sur l'étanchéité (IPX5 ou IP55) : ne la lave pas au jet.",
+  "Sa vitesse de pointe n'est utilisable que sur terrain privé : en France, la voie publique est limitée à 25 km/h."
+ ],
+ "parts": [
+  {
+   "label": "Pneu",
+   "size": "90/65-6.5 (11 pouces)",
+   "count": 11,
+   "to": "/piece/pneu-90-65-6-5-off-road-tubeless",
+   "cta": "Pneus 90/65-6.5"
+  },
+  {
+   "label": "Chambre à air",
+   "size": "90/65-6.5, valve droite ou coudée",
+   "count": 5,
+   "to": "/piece/chambre-a-air-9065-65-valve-droite",
+   "cta": "Chambres à air"
+  },
+  {
+   "label": "Disque de frein",
+   "size": "160 mm, 6 trous, entraxe 44 mm",
+   "count": 7,
+   "to": "/piece/disque-de-frein-160mm",
+   "cta": "Disques 160 mm"
+  },
+  {
+   "label": "Chargeur",
+   "size": "72 V, vérifie ta prise",
+   "count": 1,
+   "to": "/piece/pack-chargeur-72v-adaptateur-nami-rgx16-2",
+   "cta": "Chargeurs 72 V"
+  }
+ ],
+ "care": [
+  "Freins hydrauliques : surveille l'épaisseur des plaquettes et purge le circuit dès que le levier devient mou.",
+  "Pneus 90/65-6.5 tubeless : contrôle la pression avant chaque sortie, un pneu sous-gonflé s'use vite.",
+  "Les suspensions se règlent : note tes réglages et vérifie le serrage des bras de suspension régulièrement."
+ ],
+ "price": {
+  "text": "Prix affiché chez Speedbikes Nîmes : 2 899 € (relevé le 26/01/2024).",
+  "source": "speedbikes.fr"
+ },
+ "faq": [
+  {
+   "q": "Quelle taille de pneu pour la Nami Burn-E 2 ?",
+   "a": "Des pneus de 11 pouces en 90/65-6.5, en tubeless, sur une jante de 6,5 pouces."
+  },
+  {
+   "q": "Quel disque de frein pour la Nami Burn-E 2 ?",
+   "a": "Un disque de 160 mm à 6 trous, entraxe 44 mm."
+  },
+  {
+   "q": "Quel chargeur pour la Nami Burn-E 2 ?",
+   "a": "Un chargeur 72 V. Vérifie la prise de ta trottinette avant de commander : notre pack est livré avec un adaptateur Nami RGX16-2."
+  },
+  {
+   "q": "Quelle est l'autonomie réelle de la Nami Burn-E 2 ?",
+   "a": "Speedbikes annonce jusqu'à 80 km. Rider Guide a mesuré environ 79 km (49,1 miles) dans son protocole d'essai."
+  },
+  {
+   "q": "Quelle différence entre la Burn-E 2 et la Burn-E 2 Max ?",
+   "a": "La Burn-E 2 est la version standard : deux moteurs de 1 000 W et une batterie 72 V 28 Ah. La Max est une version distincte, plus puissante."
+  },
+  {
+   "q": "La Nami Burn-E 2 est-elle légale en France ?",
+   "a": "Oui sur la voie publique à condition d'être bridée à 25 km/h, comme toute trottinette électrique. Débridée, elle n'est utilisable que sur terrain privé."
+  }
+ ],
+ "sources": [
+  {
+   "label": "Speedbikes Nîmes — Nami Burn-E 2",
+   "url": "https://speedbikes.fr/produit/trottinette-electrique-nami-burn-e-2/"
+  },
+  {
+   "label": "Rider Guide — NAMI Burn-E 2 Review",
+   "url": "https://riderguide.com/reviews/nami-burn-e-2-review/"
+  },
+  {
+   "label": "Electric Scooter Insider — NAMI Burn-E 2 Review",
+   "url": "https://www.electricscooterinsider.com/electric-scooters/reviews/nami-burn-e-2-review/"
+  },
+  {
+   "label": "Fnac — Nami Burn-E 2 2000 W",
+   "url": "https://www.fnac.com/Burn-e-2/a17338345/w-4"
+  },
+  {
+   "label": "Ministère de la Transition écologique — réglementation des trottinettes",
+   "url": "https://www.ecologie.gouv.fr/politiques-publiques/trottinettes-electriques-edpm-reglementation-vigueur"
+  }
+ ],
+ "video": {
+  "id": "xQjaf9fLZN0",
+  "title": "NAMI BURN E-2 : UN BIJOU ERGONOMIQUE !",
+  "channel": "Weebot Paris",
+  "uploadDate": "2022-05-13"
+ }
+}

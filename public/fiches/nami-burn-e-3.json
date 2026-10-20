@@ -1,0 +1,160 @@
+{
+ "displayName": "Nami Burn-E 3",
+ "metaTitle": "Nami Burn-E 3 : fiche technique et pièces",
+ "metaDescription": "Nami Burn-E 3 : 72 V 30 Ah, pneus 11 pouces 90/65-6.5, disques 160 mm, prise Nami RGX16-2. Fiche technique, entretien et pièces compatibles.",
+ "intro": [
+  "La Nami Burn-E 3 est la troisième génération de la Burn-E, en version standard : batterie 72 V de 30 Ah, soit 2 190 Wh selon la fiche Nami, et deux moteurs de 1 000 W. Elle ne doit pas être confondue avec la Burn-E 3 Max, qui passe à 40 Ah.",
+  "Pneus de 11 pouces en 90/65-6.5, freins hydrauliques avec disques de 160 mm, suspensions hydrauliques KKE réglables de 165 mm et prise de charge Nami RGX16-2 : c'est une trottinette de grand rouleur. Sur la voie publique en France, elle doit rester bridée à 25 km/h."
+ ],
+ "specs": [
+  [
+   "Moteurs",
+   "2 × 1 000 W, 6 720 W en pointe (selon Nami)"
+  ],
+  [
+   "Vitesse",
+   "25 km/h sur la voie publique"
+  ],
+  [
+   "Batterie",
+   "72 V, 30 Ah (2 190 Wh selon Nami)"
+  ],
+  [
+   "Autonomie annoncée",
+   "100 km (Mécatronice, Electrotraveller), 110 km à 25 km/h selon Nami"
+  ],
+  [
+   "Poids",
+   "45 kg (selon Mécatronice)"
+  ],
+  [
+   "Roues",
+   "11 pouces, 90/65-6.5 tubeless"
+  ],
+  [
+   "Freins",
+   "Disques hydrauliques, Ø 160 mm"
+  ],
+  [
+   "Suspension",
+   "Hydraulique KKE réglable, 165 mm, avant et arrière"
+  ],
+  [
+   "Étanchéité",
+   "IPX5 (écran et contrôleurs IP65 selon Nami)"
+  ],
+  [
+   "Prise de charge",
+   "Nami RGX16-2"
+  ],
+  [
+   "Chargeur",
+   "72 V, 5 A (selon Nami)"
+  ],
+  [
+   "Temps de charge",
+   "9 à 10 h (selon Electrotraveller)"
+  ]
+ ],
+ "pros": [
+  "Batterie de 2 190 Wh pour 100 à 110 km annoncés (Nami, Mécatronice).",
+  "Suspensions hydrauliques KKE réglables de 165 mm (Nami).",
+  "Étanchéité IPX5, avec écran et contrôleurs annoncés IP65 (Nami)."
+ ],
+ "cons": [
+  "Autour de 45 kg : elle ne se porte pas.",
+  "Recharge longue : 9 à 10 h selon Electrotraveller.",
+  "Aucun test de presse français ne publie d'autonomie mesurée : les 100 à 110 km sont des valeurs annoncées.",
+  "Sa vitesse de pointe n'est utilisable que sur terrain privé : en France, la voie publique est limitée à 25 km/h."
+ ],
+ "parts": [
+  {
+   "label": "Pneu",
+   "size": "90/65-6.5 (11 pouces)",
+   "count": 11,
+   "to": "/piece/pneu-90-65-6-5-off-road-tubeless",
+   "cta": "Pneus 90/65-6.5"
+  },
+  {
+   "label": "Chambre à air",
+   "size": "90/65-6.5, valve droite ou coudée",
+   "count": 5,
+   "to": "/piece/chambre-a-air-90-65-6-5-valve-coudee-ewheel",
+   "cta": "Chambres à air"
+  },
+  {
+   "label": "Plaquettes",
+   "size": "étrier Nutt 4 pistons",
+   "count": 4,
+   "to": "/piece/plaquettes-de-freins-shimano-d03s-nutt-4-pistons-thunder-3-nami-semi-metallique",
+   "cta": "Plaquettes Nutt"
+  },
+  {
+   "label": "Disque de frein",
+   "size": "160 mm, 6 trous, entraxe 44 mm",
+   "count": 7,
+   "to": "/piece/disque-de-frein-160mm",
+   "cta": "Disques 160 mm"
+  },
+  {
+   "label": "Chargeur",
+   "size": "72 V, prise Nami RGX16-2",
+   "count": 1,
+   "to": "/piece/pack-chargeur-72v-adaptateur-nami-rgx16-2",
+   "cta": "Chargeurs 72 V"
+  }
+ ],
+ "care": [
+  "Freins hydrauliques : surveille l'épaisseur des plaquettes et purge le circuit dès que le levier devient mou.",
+  "Pneus 90/65-6.5 tubeless : contrôle la pression avant chaque sortie, un pneu sous-gonflé s'use vite et fatigue la jante.",
+  "Utilise un chargeur 72 V avec la bonne prise Nami RGX16-2, et ne laisse pas la batterie vide plusieurs semaines."
+ ],
+ "price": {
+  "text": "Prix catalogue affiché : 4 099 € chez Mécatronice, souvent remisé (relevé le 20/10/2026).",
+  "source": "mecatronice.com"
+ },
+ "faq": [
+  {
+   "q": "Quelle taille de pneu pour la Nami Burn-E 3 ?",
+   "a": "Des pneus de 11 pouces en 90/65-6.5, en tubeless, sur une jante de 6,5 pouces."
+  },
+  {
+   "q": "Quel disque de frein pour la Nami Burn-E 3 ?",
+   "a": "Un disque de 160 mm à 6 trous, entraxe 44 mm."
+  },
+  {
+   "q": "Quel chargeur pour la Nami Burn-E 3 ?",
+   "a": "Un chargeur 72 V avec prise Nami RGX16-2. Nami livre un chargeur de 5 A."
+  },
+  {
+   "q": "Combien de temps pour recharger la Nami Burn-E 3 ?",
+   "a": "9 à 10 heures selon Electrotraveller pour une charge complète."
+  },
+  {
+   "q": "Quelle différence entre la Burn-E 3 et la Burn-E 3 Max ?",
+   "a": "La batterie : 72 V 30 Ah pour la Burn-E 3, 72 V 40 Ah pour la Max, qui est aussi plus lourde."
+  },
+  {
+   "q": "La Nami Burn-E 3 est-elle légale en France ?",
+   "a": "Oui sur la voie publique à condition d'être bridée à 25 km/h, comme toute trottinette électrique. Débridée, elle n'est utilisable que sur terrain privé."
+  }
+ ],
+ "sources": [
+  {
+   "label": "Nami Electric (pro) — fiche Burn-E 3",
+   "url": "https://pro.nami-electric.com/en/shop/e-scooters-9/namiburne-burn-e3-1752"
+  },
+  {
+   "label": "Mécatronice — Nami Burn-E 3",
+   "url": "https://mecatronice.com/produit/nami-burn-e-3/"
+  },
+  {
+   "label": "Electrotraveller — Nami Burn-E 3 30 Ah",
+   "url": "https://electrotraveller.com/electric-scooters/nami-burn-e-3-30-ah/?v=08a4415e9d59"
+  },
+  {
+   "label": "Ministère de la Transition écologique — réglementation des trottinettes",
+   "url": "https://www.ecologie.gouv.fr/politiques-publiques/trottinettes-electriques-edpm-reglementation-vigueur"
+  }
+ ]
+}

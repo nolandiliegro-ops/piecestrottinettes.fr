@@ -1,0 +1,147 @@
+{
+ "displayName": "Nami Blast Max",
+ "metaTitle": "Nami Blast Max : fiche technique et pièces",
+ "metaDescription": "Nami Blast Max : 2 × 1 500 W, batterie 60 V, 44 kg, pneus 11 pouces 90/65-6.5, suspensions KKE. Fiche technique, entretien et pièces compatibles.",
+ "intro": [
+  "La Nami Blast Max est la version la plus puissante de la Blast de première génération : deux moteurs de 1 500 W et une batterie 60 V de 35 ou 40 Ah selon les revendeurs. Elle pèse 44 kg et annonce jusqu'à 100 km. Elle garde la fourche avant inversée de la Blast.",
+  "Pneus CST tubeless de 11 pouces en 90/65-6.5, freins hydrauliques Logan et suspensions hydrauliques KKE réglables à l'avant et à l'arrière : une machine de cross-over pour rouleurs expérimentés. Sur la voie publique en France, elle doit rester bridée à 25 km/h."
+ ],
+ "specs": [
+  [
+   "Moteurs",
+   "2 × 1 500 W"
+  ],
+  [
+   "Vitesse",
+   "25 km/h sur la voie publique"
+  ],
+  [
+   "Batterie",
+   "60 V, 35 Ah (2 100 Wh) ou 40 Ah (2 400 Wh) selon la version"
+  ],
+  [
+   "Autonomie annoncée",
+   "jusqu'à 100 km"
+  ],
+  [
+   "Poids",
+   "44 kg"
+  ],
+  [
+   "Charge max",
+   "120 kg"
+  ],
+  [
+   "Roues",
+   "11 pouces, 90/65-6.5 tubeless"
+  ],
+  [
+   "Freins",
+   "Hydrauliques Logan, disques Ø 160 mm au catalogue (140 mm sur la fiche Nami)"
+  ],
+  [
+   "Suspension",
+   "Hydraulique KKE réglable, avant et arrière"
+  ],
+  [
+   "Étanchéité",
+   "IP55"
+  ],
+  [
+   "Chargeur",
+   "60 V"
+  ],
+  [
+   "Temps de charge",
+   "5 h 30 à 7 h 30 selon la configuration (selon Max Blinker)"
+  ]
+ ],
+ "pros": [
+  "Deux moteurs de 1 500 W, contre 1 000 W sur la Blast standard.",
+  "Fourche inversée et amortisseurs KKE pour le confort (Max Blinker).",
+  "Jusqu'à 100 km d'autonomie annoncés (E-Rider, Nami)."
+ ],
+ "cons": [
+  "44 kg : elle ne se porte pas.",
+  "Plusieurs batteries existent (60 V 35 Ah, 60 V 40 Ah, et une 72 V chez Nami) : vérifie la tienne avant d'acheter un chargeur.",
+  "Max Blinker précise que l'autonomie et le temps de charge n'ont pas été mesurés indépendamment.",
+  "Sa vitesse de pointe n'est utilisable que sur terrain privé : en France, la voie publique est limitée à 25 km/h."
+ ],
+ "parts": [
+  {
+   "label": "Pneu",
+   "size": "90/65-6.5 (11 pouces)",
+   "count": 11,
+   "to": "/piece/pneu-90-65-6-5-off-road-tubeless",
+   "cta": "Pneus 90/65-6.5"
+  },
+  {
+   "label": "Chambre à air",
+   "size": "90/65-6.5, valve droite ou coudée",
+   "count": 5,
+   "to": "/piece/chambre-a-air-9065-65-valve-droite",
+   "cta": "Chambres à air"
+  }
+ ],
+ "care": [
+  "Freins hydrauliques : surveille l'épaisseur des plaquettes et purge le circuit dès que le levier devient mou.",
+  "Pneus 90/65-6.5 tubeless : contrôle la pression avant chaque sortie, surtout en tout-terrain.",
+  "Avec deux moteurs de 1 500 W, la visserie de la fourche et des bras de suspension travaille : vérifie-la régulièrement."
+ ],
+ "price": {
+  "text": "Prix affichés : 3 399 € chez Nami, 3 490 € et 3 499 € chez des revendeurs français (relevés le 20/10/2026).",
+  "source": "nami-electric.com, fohzshop.fr, urbanmoov.fr"
+ },
+ "faq": [
+  {
+   "q": "Quelle taille de pneu pour la Nami Blast Max ?",
+   "a": "Des pneus de 11 pouces en 90/65-6.5, en tubeless, sur une jante de 6,5 pouces."
+  },
+  {
+   "q": "Quel disque de frein pour la Nami Blast Max ?",
+   "a": "Notre catalogue la référence en 160 mm à 6 trous, entraxe 44 mm. La fiche Nami actuelle indique 140 mm : mesure ton disque avant de commander."
+  },
+  {
+   "q": "Quel chargeur pour la Nami Blast Max ?",
+   "a": "Un chargeur adapté à la tension de ta batterie : 60 V sur la version de notre catalogue. Vérifie aussi la prise."
+  },
+  {
+   "q": "Quelle différence entre la Blast Max et la Blast 2 Max ?",
+   "a": "La Blast 2 Max passe en 72 V 40 Ah (2 880 Wh). La Blast Max de première génération est en 60 V."
+  },
+  {
+   "q": "La Nami Blast Max est-elle légale en France ?",
+   "a": "Oui sur la voie publique à condition d'être bridée à 25 km/h, comme toute trottinette électrique. Débridée, elle n'est utilisable que sur terrain privé."
+  }
+ ],
+ "sources": [
+  {
+   "label": "Nami Electric — Blast Max",
+   "url": "https://nami-electric.com/produit/blast-max/"
+  },
+  {
+   "label": "Funtrott — Nami Blast Max 60 V 35 Ah",
+   "url": "https://funtrott.fr/accueil/1753-trottinette-electrique-nami-blast-max-60v-35ah.html"
+  },
+  {
+   "label": "FōhzShop — Nami Blast Max 60 V 40 Ah",
+   "url": "https://fohzshop.fr/fr/trottinettes-electriques/nami/nami-blast-max-60v-40ah"
+  },
+  {
+   "label": "E-Rider — Nami Blast Max",
+   "url": "https://e-rider.fr/trotinettes-electrique/205-trottinette-electrique-nami-blast-max-3770021054777.html"
+  },
+  {
+   "label": "Max Blinker — Nami Blast / Blast Max",
+   "url": "https://www.maxblinker.fr/fr/trottinettes-electriques/nami-blast"
+  },
+  {
+   "label": "Urban Moov — Nami Blast Max",
+   "url": "https://www.urbanmoov.fr/boutique/Trottinette-electrique-Nami-Blast-Max-p471449115"
+  },
+  {
+   "label": "Ministère de la Transition écologique — réglementation des trottinettes",
+   "url": "https://www.ecologie.gouv.fr/politiques-publiques/trottinettes-electriques-edpm-reglementation-vigueur"
+  }
+ ]
+}

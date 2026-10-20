@@ -1,0 +1,131 @@
+{
+ "displayName": "Nami Klima One",
+ "metaTitle": "Nami Klima One : fiche technique et pièces",
+ "metaDescription": "Nami Klima One : monomoteur 1 000 W, batterie 60 V 25 Ah, 33 kg, pneus 10x3 (80/65-6) tubeless. Fiche technique, entretien et pièces compatibles.",
+ "intro": [
+  "La Nami Klima One est la version monomoteur de la Klima : un seul moteur de 1 000 W, mais la même batterie 60 V de 25 Ah que la Klima standard. Elle pèse 33 kg selon Nami et les revendeurs, ce qui en fait la plus légère des Klima à batterie 60 V.",
+  "Pneus de 10 pouces en 10x3 (80/65-6) tubeless, freins hydrauliques à disques et suspensions hydrauliques réglables à l'avant et à l'arrière : elle garde le confort des Klima avec moins de puissance. Sur la voie publique en France, elle doit rester bridée à 25 km/h."
+ ],
+ "specs": [
+  [
+   "Moteur",
+   "1 × 1 000 W"
+  ],
+  [
+   "Vitesse",
+   "25 km/h sur la voie publique"
+  ],
+  [
+   "Batterie",
+   "60 V, 25 Ah"
+  ],
+  [
+   "Autonomie annoncée",
+   "100 km selon les revendeurs, 150 km selon Nami"
+  ],
+  [
+   "Poids",
+   "33 kg"
+  ],
+  [
+   "Roues",
+   "10 pouces, 10x3.00-6 (80/65-6) tubeless"
+  ],
+  [
+   "Freins",
+   "Disques hydrauliques"
+  ],
+  [
+   "Suspension",
+   "Hydraulique réglable avant et arrière, 150 mm (selon Nami)"
+  ],
+  [
+   "Étanchéité",
+   "IPX5 (selon Funtrott)"
+  ],
+  [
+   "Chargeur",
+   "60 V"
+  ]
+ ],
+ "pros": [
+  "33 kg selon Nami et Funtrott, contre environ 38 kg pour la Klima bimoteur.",
+  "Même batterie 60 V 25 Ah que la Klima bimoteur (Funtrott).",
+  "Suspensions hydrauliques réglables à l'avant et à l'arrière (Nami)."
+ ],
+ "cons": [
+  "Accélérations moins fortes que les Klima à deux moteurs (Funtrott).",
+  "Autonomie annoncée incohérente entre Nami (150 km) et les revendeurs (100 km), et aucun test publié ne la mesure.",
+  "Aucun test de presse indépendant trouvé sur ce modèle.",
+  "Sa vitesse de pointe n'est utilisable que sur terrain privé : en France, la voie publique est limitée à 25 km/h."
+ ],
+ "parts": [
+  {
+   "label": "Pneu",
+   "size": "80/65-6 (10x3)",
+   "count": 11,
+   "to": "/piece/pneu-80-65-6-10x3-ewheel",
+   "cta": "Pneus 10x3"
+  },
+  {
+   "label": "Chambre à air",
+   "size": "80/65-6 (10x3), valve droite ou coudée",
+   "count": 3,
+   "to": "/piece/chambre-a-air-80-65-6-10x3-valve-droite-ewheel",
+   "cta": "Chambres à air"
+  }
+ ],
+ "care": [
+  "Freins hydrauliques : surveille l'épaisseur des plaquettes et purge le circuit dès que le levier devient mou.",
+  "Pneus 10x3 tubeless : contrôle la pression chaque semaine, un pneu sous-gonflé s'use vite et crève plus facilement.",
+  "Un seul moteur à l'arrière : contrôle régulièrement le serrage de l'axe et l'état du câble moteur."
+ ],
+ "price": {
+  "text": "Prix affiché par Nami : 1 899 € ; 2 089 € chez Funtrott (relevés le 20/10/2026).",
+  "source": "nami-electric.com, funtrott.fr"
+ },
+ "faq": [
+  {
+   "q": "Quelle taille de pneu pour la Nami Klima One ?",
+   "a": "Des pneus de 10 pouces en 10x3.00-6, aussi notés 80/65-6, en tubeless, sur une jante de 6 pouces."
+  },
+  {
+   "q": "Quelle différence entre la Klima One et la Klima ?",
+   "a": "Le nombre de moteurs : un seul pour la Klima One, deux pour la Klima. La batterie 60 V 25 Ah est la même."
+  },
+  {
+   "q": "Quel chargeur pour la Nami Klima One ?",
+   "a": "Un chargeur 60 V. Vérifie la prise de ta trottinette avant de commander."
+  },
+  {
+   "q": "Quelle est l'autonomie de la Nami Klima One ?",
+   "a": "Les revendeurs annoncent 100 km, Nami 150 km. Aucun test publié ne donne de valeur mesurée."
+  },
+  {
+   "q": "La Nami Klima One est-elle légale en France ?",
+   "a": "Oui sur la voie publique à condition d'être bridée à 25 km/h, comme toute trottinette électrique. Débridée, elle n'est utilisable que sur terrain privé."
+  }
+ ],
+ "sources": [
+  {
+   "label": "Nami Electric — Klima One",
+   "url": "https://nami-electric.com/produit/klima-one/"
+  },
+  {
+   "label": "Funtrott — Nami Klima One",
+   "url": "https://funtrott.fr/accueil/2038-nami-klima-one.html"
+  },
+  {
+   "label": "Mobilitix — Nami Klima One",
+   "url": "https://www.mobilitix.fr/shop/toutes-nos-trottinettes-nami-2456/nami-klima-one-trottinette-electrique-31227"
+  },
+  {
+   "label": "Solution Trottinette — gamme Nami",
+   "url": "https://solution-trottinette.fr/trottinette-electrique/marque/nami"
+  },
+  {
+   "label": "Ministère de la Transition écologique — réglementation des trottinettes",
+   "url": "https://www.ecologie.gouv.fr/politiques-publiques/trottinettes-electriques-edpm-reglementation-vigueur"
+  }
+ ]
+}

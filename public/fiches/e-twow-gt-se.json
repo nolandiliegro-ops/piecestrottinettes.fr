@@ -1,0 +1,122 @@
+{
+ "displayName": "E-Twow GT SE",
+ "metaTitle": "E-Twow GT SE : fiche technique, avis et pièces",
+ "metaDescription": "E-Twow GT SE : batterie 48 V 10,5 Ah, 700 W en crête, pneus pleins 8 pouces 8x2 (200x50), frein tambour arrière. Avis, entretien et pièces.",
+ "intro": [
+  "La E-Twow GT SE est la version connectée de la GT, avec application et verrouillage. Les Numériques a testé sa génération 2022, vendue sous le nom GT Premium SE V2 : 13,4 kg sur la balance, un format compact et une batterie plus grosse que celle des Booster.",
+  "Moteur de 500 W (700 W en crête), batterie 48 V de 10,5 Ah, pneus pleins de 8 pouces et suspensions à ressorts à l'avant et à l'arrière. Elle freine par récupération d'énergie à l'avant et par un tambour à l'arrière. Sur la voie publique, elle reste bridée à 25 km/h."
+ ],
+ "specs": [
+  [
+   "Moteur",
+   "500 W (700 W en crête, selon Les Numériques)"
+  ],
+  [
+   "Vitesse",
+   "25 km/h sur la voie publique"
+  ],
+  [
+   "Batterie",
+   "48 V, 10,5 Ah (504 Wh)"
+  ],
+  [
+   "Autonomie",
+   "35 km mesurés par Les Numériques (35 à 45 km annoncés par E-Twow)"
+  ],
+  [
+   "Poids",
+   "13,4 kg (selon Les Numériques)"
+  ],
+  [
+   "Roues",
+   "8 pouces, pneus pleins 8x2 (200x50)"
+  ],
+  [
+   "Freins",
+   "Récupération d'énergie avant + tambour arrière"
+  ],
+  [
+   "Suspension",
+   "Avant et arrière à ressorts"
+  ],
+  [
+   "Étanchéité",
+   "IPX4 (selon Les Numériques)"
+  ],
+  [
+   "Temps de charge",
+   "moins de 4 h mesurées par Les Numériques, 4 à 5 h annoncées par E-Twow"
+  ]
+ ],
+ "pros": [
+  "Finitions soignées et accélérations vives (Les Numériques).",
+  "Bonne autonomie pour son gabarit, 35 km mesurés, et recharge rapide (Les Numériques).",
+  "Encombrement réduit et confort correct (Les Numériques)."
+ ],
+ "cons": [
+  "Guidon un peu étroit (Les Numériques).",
+  "Freinage jugé moyen (Les Numériques) : pas de frein à disque.",
+  "Chargeur bruyant (Les Numériques).",
+  "Les versions GT 2020 SE et GT SE 2022 n'ont pas exactement les mêmes chiffres : vérifie l'année de ta trottinette avant de commander une pièce."
+ ],
+ "parts": [
+  {
+   "label": "Pneu plein",
+   "size": "8 pouces, 8x2 (200x50)",
+   "count": 1,
+   "to": "/piece/pneu-plein-200x50-speedway-mini-4-pro-e-twow",
+   "cta": "Pneu plein E-Twow"
+  }
+ ],
+ "care": [
+  "Frein à tambour arrière : fais-le régler dès que la course du levier s'allonge.",
+  "Pneus pleins : surveille l'usure de la gomme, un pneu lisse glisse vite sur sol mouillé.",
+  "Vérifie souvent le jeu de la potence et le serrage de la charnière de pliage."
+ ],
+ "faq": [
+  {
+   "q": "Quelle taille de pneu pour la E-Twow GT SE ?",
+   "a": "Des pneus pleins de 8 pouces, en 8x2, aussi notés 200x50."
+  },
+  {
+   "q": "La E-Twow GT SE a-t-elle des plaquettes de frein ?",
+   "a": "Non. Elle freine par récupération d'énergie à l'avant et par un tambour à l'arrière, sans disque ni plaquettes."
+  },
+  {
+   "q": "Quel chargeur pour la E-Twow GT SE ?",
+   "a": "Un chargeur pour batterie 48 V. Vérifie la forme de ta prise avant de commander."
+  },
+  {
+   "q": "Quelle est l'autonomie réelle de la E-Twow GT SE ?",
+   "a": "Les Numériques a mesuré 35 km sur un parcours surtout plat, à 5 °C, avec un conducteur de 65 kg. E-Twow annonce 35 à 45 km."
+  },
+  {
+   "q": "Combien de temps pour recharger la E-Twow GT SE ?",
+   "a": "Moins de 4 heures lors du test des Numériques. E-Twow annonce 4 à 5 heures."
+  }
+ ],
+ "sources": [
+  {
+   "label": "Les Numériques — test E-Twow GT Premium SE V2",
+   "url": "https://www.lesnumeriques.com/trottinette-electrique/e-twow-gt-premium-se-v2-p66781/test.html"
+  },
+  {
+   "label": "E-Twow — gamme trottinettes",
+   "url": "https://www.etwow.net/fr/trottinette-fr"
+  },
+  {
+   "label": "E-Twow — Booster GT 2020 Smart Edition",
+   "url": "https://www.etwow.net/fr/e-twow-booster-gt-2020-smart-edition-pack-security-casque-etwow-poignee-et-sangle-de-transport"
+  },
+  {
+   "label": "Urbalt — historique de la gamme E-Twow GT",
+   "url": "https://urbalt.ee/en/atlas/e-twow/gt"
+  }
+ ],
+ "video": {
+  "id": "LthXDK6YxVw",
+  "title": "ETWOW GT SE : LA TROTTINETTE ELECTRIQUE LA PLUS PRATIQUE DU QUOTIDIEN ! (AVEC BLUETOOH)",
+  "channel": "Weebot Paris",
+  "uploadDate": "2023-08-31"
+ }
+}

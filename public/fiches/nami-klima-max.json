@@ -1,0 +1,150 @@
+{
+ "displayName": "Nami Klima Max",
+ "metaTitle": "Nami Klima Max : fiche technique et pièces",
+ "metaDescription": "Nami Klima Max : 60 V 30 Ah (1 800 Wh), 2 × 1 000 W, pneus 10x3 (80/65-6), disques 140 mm. Fiche technique, entretien et pièces compatibles.",
+ "intro": [
+  "La Nami Klima Max est la version à grosse batterie de la Klima : mêmes deux moteurs de 1 000 W, mais une batterie 60 V de 30 Ah, soit 1 800 Wh. Nami annonce 120 km à 25 km/h et un poids de 38,3 kg. Elle se distingue de la Klima standard (25 Ah) et de la Klima One, monomoteur.",
+  "Pneus de 10 pouces en 10x3 (80/65-6), freins hydrauliques à disques de 140 mm et étriers deux pistons, suspensions hydrauliques KKE réglables de 150 mm : une trottinette polyvalente, ville et chemins. Sur la voie publique en France, elle doit rester bridée à 25 km/h."
+ ],
+ "specs": [
+  [
+   "Moteurs",
+   "2 × 1 000 W, 5 375 W en pointe (selon Nami)"
+  ],
+  [
+   "Vitesse",
+   "25 km/h sur la voie publique"
+  ],
+  [
+   "Batterie",
+   "60 V, 30 Ah (1 800 Wh)"
+  ],
+  [
+   "Autonomie annoncée",
+   "120 km à 25 km/h selon Nami, 85 km selon Funtrott"
+  ],
+  [
+   "Poids",
+   "38,3 kg selon Nami (36 à 38 kg selon les revendeurs)"
+  ],
+  [
+   "Charge max",
+   "110 kg (Nami, Funtrott)"
+  ],
+  [
+   "Roues",
+   "10 pouces, 10x3.00-6 (80/65-6) tubeless"
+  ],
+  [
+   "Freins",
+   "Disques hydrauliques Ø 140 mm, étriers 2 pistons"
+  ],
+  [
+   "Suspension",
+   "Hydraulique KKE réglable, 150 mm, avant et arrière"
+  ],
+  [
+   "Étanchéité",
+   "IPX5 (écran et contrôleur IP65 selon Nami)"
+  ],
+  [
+   "Chargeur",
+   "60 V"
+  ],
+  [
+   "Temps de charge",
+   "6 h (selon Funtrott)"
+  ]
+ ],
+ "pros": [
+  "1 800 Wh dans un châssis d'environ 38 kg (Nami).",
+  "Suspensions hydrauliques KKE réglables de 150 mm (Nami, Funtrott).",
+  "Deux moteurs de 1 000 W : stable et performante selon Scootify."
+ ],
+ "cons": [
+  "Écart entre l'autonomie annoncée et l'autonomie réelle relevé par Scootify.",
+  "Charge maximale de 110 kg selon Nami : un peu juste pour un rouleur lourd équipé.",
+  "Les fiches ne s'accordent pas sur le poids ni sur l'étanchéité : fie-toi à la fiche Nami.",
+  "Sa vitesse de pointe n'est utilisable que sur terrain privé : en France, la voie publique est limitée à 25 km/h."
+ ],
+ "parts": [
+  {
+   "label": "Pneu",
+   "size": "80/65-6 (10x3)",
+   "count": 11,
+   "to": "/piece/pneu-tubeless-80-65-6-10x3-cityroad-ewheel",
+   "cta": "Pneus 10x3"
+  },
+  {
+   "label": "Chambre à air",
+   "size": "80/65-6 (10x3), valve droite ou coudée",
+   "count": 3,
+   "to": "/piece/chambre-a-air-80-65-6-10x3-valve-coudee-ewheel",
+   "cta": "Chambres à air"
+  },
+  {
+   "label": "Disque de frein",
+   "size": "140 mm, 6 trous, entraxe 44 mm",
+   "count": 5,
+   "to": "/piece/disque-de-frein-140mm",
+   "cta": "Disques 140 mm"
+  }
+ ],
+ "care": [
+  "Freins hydrauliques : surveille l'épaisseur des plaquettes et purge le circuit dès que le levier devient mou.",
+  "Pneus 10x3 tubeless : contrôle la pression chaque semaine, un pneu sous-gonflé s'use vite et crève plus facilement.",
+  "Les suspensions KKE se règlent : note tes réglages et contrôle le serrage des bras de suspension régulièrement."
+ ],
+ "price": {
+  "text": "Prix affiché par Nami : 2 999 € (relevé le 25/02/2026) ; 2 490 € chez FōhzShop.",
+  "source": "nami-electric.com, fohzshop.fr"
+ },
+ "faq": [
+  {
+   "q": "Quelle taille de pneu pour la Nami Klima Max ?",
+   "a": "Des pneus de 10 pouces en 10x3.00-6, aussi notés 80/65-6, en tubeless, sur une jante de 6 pouces."
+  },
+  {
+   "q": "Quel disque de frein pour la Nami Klima Max ?",
+   "a": "Un disque de 140 mm à 6 trous, entraxe 44 mm."
+  },
+  {
+   "q": "Quelle est l'autonomie de la Nami Klima Max ?",
+   "a": "Nami annonce 120 km à 25 km/h, Funtrott 85 km. En conduite rapide, compte nettement moins."
+  },
+  {
+   "q": "Quelle différence entre la Klima Max et la Klima ?",
+   "a": "La batterie : 30 Ah (1 800 Wh) pour la Max, 25 Ah (1 500 Wh) pour la Klima. Les moteurs sont les mêmes."
+  },
+  {
+   "q": "La Nami Klima Max est-elle légale en France ?",
+   "a": "Oui sur la voie publique à condition d'être bridée à 25 km/h, comme toute trottinette électrique. Débridée, elle n'est utilisable que sur terrain privé."
+  }
+ ],
+ "sources": [
+  {
+   "label": "Nami Electric — Klima Max",
+   "url": "https://nami-electric.com/produit/klima-max/"
+  },
+  {
+   "label": "FōhzShop — Nami Klima Max 60 V 30 Ah",
+   "url": "https://fohzshop.fr/fr/trottinettes-electriques/nami/nami-klima-max-60v-30ah"
+  },
+  {
+   "label": "Funtrott — Nami Klima Max",
+   "url": "https://funtrott.fr/accueil/1890-nami-klima-max-60v30ah.html"
+  },
+  {
+   "label": "Scootify — Nami Klima Max",
+   "url": "https://scootify.eco/en/products/nami/klima/max/"
+  },
+  {
+   "label": "Trott'avenue — Nami Klima Max",
+   "url": "https://trott-avenue.fr/trottinettes-electriques/44-nami-klima-max-60v-30ah.html"
+  },
+  {
+   "label": "Ministère de la Transition écologique — réglementation des trottinettes",
+   "url": "https://www.ecologie.gouv.fr/politiques-publiques/trottinettes-electriques-edpm-reglementation-vigueur"
+  }
+ ]
+}

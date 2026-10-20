@@ -1,0 +1,124 @@
+{
+ "displayName": "E-Twow TankTorq TK2",
+ "metaTitle": "E-Twow TankTorq TK2 : fiche technique et pièces",
+ "metaDescription": "E-Twow TankTorq TK2 : bimoteur 2 × 600 W, batterie 60 V 10 Ah (600 Wh), pneus tubeless 9 pouces, double frein à disque mécanique. Fiche et entretien.",
+ "intro": [
+  "La E-Twow TankTorq TK2 ouvre la gamme TankTorq, présentée par E-Twow comme un nouveau modèle début janvier 2026. C'est la version bimoteur de la TK2 : la TK2 Lite n'a qu'un moteur. Avec 22,8 kg annoncés par E-Twow, elle sort du format ultraléger habituel de la marque.",
+  "Deux moteurs de 600 W, batterie 60 V de 10 Ah, pneus tubeless auto-obturants de 9 pouces, amortisseurs réglables à l'avant et à l'arrière. Elle freine par deux disques mécaniques et un freinage électronique EBS à trois niveaux. Bridée à 25 km/h, elle atteint 35 km/h débridée selon E-Twow, sur terrain privé seulement."
+ ],
+ "specs": [
+  [
+   "Moteurs",
+   "2 × 600 W (1 200 W)"
+  ],
+  [
+   "Vitesse",
+   "25 km/h sur la voie publique"
+  ],
+  [
+   "Batterie",
+   "60 V, 10 Ah (600 Wh)"
+  ],
+  [
+   "Autonomie annoncée",
+   "40 km selon E-Twow, 40 à 50 km selon Boulanger"
+  ],
+  [
+   "Poids",
+   "22,8 kg (selon E-Twow)"
+  ],
+  [
+   "Charge max",
+   "110 kg (selon Darty)"
+  ],
+  [
+   "Roues",
+   "9 pouces, tubeless auto-obturant"
+  ],
+  [
+   "Freins",
+   "Double disque mécanique + EBS électronique à trois niveaux"
+  ],
+  [
+   "Suspension",
+   "Amortisseurs avant et arrière réglables"
+  ],
+  [
+   "Étanchéité",
+   "IPX5 pour la trottinette, batterie IPX6 ou IPX7 selon les sources"
+  ],
+  [
+   "Temps de charge",
+   "environ 3 h avec un chargeur 4 A (selon Darty)"
+  ]
+ ],
+ "pros": [
+  "Deux moteurs de 600 W, avec choix de la roue motrice ou des deux (E-Twow).",
+  "Pneus tubeless auto-obturants : moins de risque de crevaison qu'un pneu à chambre.",
+  "Double frein à disque et amortisseurs réglables à l'avant et à l'arrière."
+ ],
+ "cons": [
+  "22,8 kg : nettement plus lourde que les GT et Booster de la marque.",
+  "Les fiches ne s'accordent pas sur l'autonomie ni sur l'étanchéité : vérifie auprès de ton vendeur.",
+  "Aucun test de presse français trouvé : les chiffres viennent du fabricant et des revendeurs.",
+  "Sa vitesse débridée de 35 km/h n'est utilisable que sur terrain privé : en France, la voie publique est limitée à 25 km/h."
+ ],
+ "parts": [],
+ "care": [
+  "Freins à disque mécaniques : retends le câble et contrôle l'épaisseur des plaquettes dès que le levier s'allonge.",
+  "Pneus tubeless : vérifie la pression chaque mois, l'auto-obturant colmate les petites perforations mais pas un pneu sous-gonflé qui s'use.",
+  "Amortisseurs réglables : nettoie les axes et contrôle le jeu des bras après la pluie."
+ ],
+ "price": {
+  "text": "Prix affiché chez Boulanger : 1 479 € (relevé le 17/06/2026, prix de référence 1 799 €).",
+  "source": "boulanger.com"
+ },
+ "faq": [
+  {
+   "q": "Quelle taille de pneu pour la E-Twow TankTorq TK2 ?",
+   "a": "Des pneus tubeless auto-obturants de 9 pouces. Relève la section exacte sur le flanc de ton pneu avant de commander."
+  },
+  {
+   "q": "Quels freins sur la E-Twow TankTorq TK2 ?",
+   "a": "Deux freins à disque mécaniques, à l'avant et à l'arrière, plus un freinage électronique EBS. Compare la forme de ta plaquette et le diamètre de ton disque avant de commander."
+  },
+  {
+   "q": "Quel chargeur pour la E-Twow TankTorq TK2 ?",
+   "a": "Un chargeur pour batterie 60 V. Vérifie la forme de ta prise avant de commander."
+  },
+  {
+   "q": "Quelle différence entre la TK2 et la TK2 Lite ?",
+   "a": "La TK2 a deux moteurs de 600 W, la TK2 Lite un seul. Les deux partagent une batterie 60 V de 10 Ah et des pneus tubeless de 9 pouces."
+  },
+  {
+   "q": "La E-Twow TankTorq TK2 est-elle légale en France ?",
+   "a": "Oui sur la voie publique à condition d'être bridée à 25 km/h, comme toute trottinette électrique. Débridée, elle n'est utilisable que sur terrain privé."
+  }
+ ],
+ "sources": [
+  {
+   "label": "E-Twow — blog TankTorq TK2",
+   "url": "https://e-twow.com/fr/blogs/news/blog-trottinette-electrique-tanktorq-tk2"
+  },
+  {
+   "label": "E-Twow — comparaison TK2, TK3, TK5",
+   "url": "https://e-twow.com/fr/blogs/news/blog-comparaison-tk2-tk3-tk5"
+  },
+  {
+   "label": "E-Twow — TankTorq TK2 (international)",
+   "url": "https://e-twow.com/products/tanktorq-tk2"
+  },
+  {
+   "label": "Boulanger — E-Twow TankTorq TK2",
+   "url": "https://www.boulanger.com/ref/9000928120"
+  },
+  {
+   "label": "Darty — E-Twow TankTorq TK2",
+   "url": "https://www.darty.com/nav/achat/ref/MC353320731.html"
+  },
+  {
+   "label": "Ministère de la Transition écologique — réglementation des trottinettes",
+   "url": "https://www.ecologie.gouv.fr/politiques-publiques/trottinettes-electriques-edpm-reglementation-vigueur"
+  }
+ ]
+}

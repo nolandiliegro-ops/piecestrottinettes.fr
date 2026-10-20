@@ -1,0 +1,112 @@
+{
+ "displayName": "E-Twow TankTorq TK2 Lite",
+ "metaTitle": "E-Twow TankTorq TK2 Lite : fiche technique et pièces",
+ "metaDescription": "E-Twow TankTorq TK2 Lite : moteur arrière 600 W, batterie 60 V 10 Ah, pneus tubeless 9 pouces, suspensions hydrauliques, 19 kg. Fiche et entretien.",
+ "intro": [
+  "La E-Twow TankTorq TK2 Lite est la version monomoteur de la TK2 : un seul moteur, à l'arrière, au lieu de deux. Elle pèse 19 kg selon E-Twow, soit près de 4 kg de moins que la TK2 bimoteur, et garde la même batterie 60 V.",
+  "Moteur de 600 W (950 W en pointe selon E-Twow), batterie 60 V de 10 Ah, pneus tubeless de 9 pouces et suspensions hydrauliques à l'avant et à l'arrière. Bridée à 25 km/h, elle monte à 35 km/h débridée selon E-Twow, ce qui n'est permis que sur terrain privé."
+ ],
+ "specs": [
+  [
+   "Moteur",
+   "600 W arrière (950 W en pointe, selon E-Twow)"
+  ],
+  [
+   "Vitesse",
+   "25 km/h sur la voie publique"
+  ],
+  [
+   "Batterie",
+   "60 V, 10 Ah (600 Wh)"
+  ],
+  [
+   "Autonomie annoncée",
+   "jusqu'à 45 km (selon E-Twow)"
+  ],
+  [
+   "Poids",
+   "19 kg (selon E-Twow)"
+  ],
+  [
+   "Charge max",
+   "130 kg (selon E-Twow)"
+  ],
+  [
+   "Roues",
+   "9 pouces, tubeless auto-obturant"
+  ],
+  [
+   "Freins",
+   "Tambour avant + disque arrière"
+  ],
+  [
+   "Suspension",
+   "Hydraulique avant et arrière"
+  ],
+  [
+   "Temps de charge",
+   "environ 5 h avec le chargeur 2 A (selon E-Twow)"
+  ]
+ ],
+ "pros": [
+  "19 kg pour une 60 V de 600 Wh, près de 4 kg de moins que la TK2 bimoteur (E-Twow).",
+  "Suspensions hydrauliques à l'avant et à l'arrière (E-Twow).",
+  "Pneus tubeless de 9 pouces : moins de risque de crevaison qu'un pneu à chambre."
+ ],
+ "cons": [
+  "Un seul moteur : moins de reprise que la TK2 bimoteur.",
+  "Autonomie réelle estimée à 30 à 35 km en ville par ScooterRank, pour 45 km annoncés.",
+  "Aucun test de presse français trouvé : les chiffres viennent du fabricant.",
+  "Sa vitesse débridée n'est utilisable que sur terrain privé : en France, la voie publique est limitée à 25 km/h."
+ ],
+ "parts": [],
+ "care": [
+  "Frein à tambour avant : fais-le régler dès que la course du levier s'allonge.",
+  "Disque arrière : contrôle l'épaisseur des plaquettes et l'état du disque régulièrement.",
+  "Pneus tubeless : vérifie la pression chaque mois, un pneu sous-gonflé s'use vite et crève plus facilement."
+ ],
+ "faq": [
+  {
+   "q": "Quelle taille de pneu pour la E-Twow TankTorq TK2 Lite ?",
+   "a": "Des pneus tubeless auto-obturants de 9 pouces. Relève la section exacte sur le flanc de ton pneu avant de commander."
+  },
+  {
+   "q": "Quels freins sur la E-Twow TankTorq TK2 Lite ?",
+   "a": "Un tambour à l'avant et un disque à l'arrière. Compare la forme de ta plaquette et le diamètre de ton disque avant de commander."
+  },
+  {
+   "q": "Quel chargeur pour la E-Twow TankTorq TK2 Lite ?",
+   "a": "Un chargeur pour batterie 60 V. Vérifie la forme de ta prise avant de commander. E-Twow propose aussi un chargeur rapide 8 A en option."
+  },
+  {
+   "q": "Quelle différence entre la TK2 Lite et la TK2 ?",
+   "a": "La TK2 Lite a un seul moteur de 600 W à l'arrière, la TK2 deux. La Lite pèse 19 kg contre 22,8 kg pour la TK2, selon E-Twow."
+  },
+  {
+   "q": "La E-Twow TankTorq TK2 Lite est-elle légale en France ?",
+   "a": "Oui sur la voie publique à condition d'être bridée à 25 km/h, comme toute trottinette électrique. Débridée, elle n'est utilisable que sur terrain privé."
+  }
+ ],
+ "sources": [
+  {
+   "label": "E-Twow — TankTorq TK2 Lite",
+   "url": "https://e-twow.com/products/tanktork-tk2-lite"
+  },
+  {
+   "label": "E-Twow B2B — TankTorq TK2 Lite 60 V 10 Ah",
+   "url": "https://b2b.e-twow.com/shop/electric-scooters/electric-scooter-tanktorq-tk2-lite-60v-10ah/"
+  },
+  {
+   "label": "E-Twow — comparaison TK2, TK3, TK5",
+   "url": "https://e-twow.com/fr/blogs/news/blog-comparaison-tk2-tk3-tk5"
+  },
+  {
+   "label": "ScooterRank — E-Twow TankTorq TK2 Lite",
+   "url": "https://scooterrank.com/scooters/e-twow-tanktorq-tk2-lite"
+  },
+  {
+   "label": "Ministère de la Transition écologique — réglementation des trottinettes",
+   "url": "https://www.ecologie.gouv.fr/politiques-publiques/trottinettes-electriques-edpm-reglementation-vigueur"
+  }
+ ]
+}

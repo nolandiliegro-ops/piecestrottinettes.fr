@@ -1,0 +1,145 @@
+{
+ "displayName": "Nami Stellar",
+ "metaTitle": "Nami Stellar : fiche technique et pièces",
+ "metaDescription": "Nami Stellar : 1 000 W, 52 V 15,6 Ah, 26,5 kg, pneus 9 pouces 9x2.50-6 tubeless, disques 140 mm. Fiche technique, entretien et pièces.",
+ "intro": [
+  "La Nami Stellar est la trottinette compacte de Nami : un moteur de 1 000 W, une batterie 52 V de 15,6 Ah, soit 786 Wh selon la fiche Nami, et 26,5 kg. Elle est vendue à partir de 1 199 € par la marque et se distingue de la Super Stellar, bimoteur.",
+  "Pneus CST tubeless de 9 pouces en 9x2.50-6, freins à disque à câble de 140 mm, suspensions à ressort avant et arrière : c'est une trottinette pour la ville et les trajets quotidiens. Sur la voie publique en France, elle doit rester bridée à 25 km/h."
+ ],
+ "specs": [
+  [
+   "Moteur",
+   "1 × 1 000 W, 1 470 W en pointe (selon Nami)"
+  ],
+  [
+   "Vitesse",
+   "25 km/h sur la voie publique"
+  ],
+  [
+   "Batterie",
+   "52 V, 15,6 Ah (786 Wh selon Nami, 811 Wh selon des revendeurs)"
+  ],
+  [
+   "Autonomie annoncée",
+   "50 km"
+  ],
+  [
+   "Poids",
+   "26,5 kg"
+  ],
+  [
+   "Charge max",
+   "110 kg (Nami) ou 120 kg (Le Ranch)"
+  ],
+  [
+   "Roues",
+   "9 pouces, 9x2.50-6 tubeless"
+  ],
+  [
+   "Freins",
+   "Disques mécaniques à câble Logan, Ø 140 mm, étriers 2 pistons (selon Nami)"
+  ],
+  [
+   "Suspension",
+   "Ressorts avant et arrière"
+  ],
+  [
+   "Étanchéité",
+   "IPX5 (écran et contrôleur IP65 selon Nami)"
+  ],
+  [
+   "Chargeur",
+   "52 V"
+  ],
+  [
+   "Temps de charge",
+   "8 h (selon Le Ranch)"
+  ]
+ ],
+ "pros": [
+  "26,5 kg (Nami, Urban Moov) : la plus légère des Nami de notre catalogue.",
+  "Pneus tubeless de 9 pouces et suspensions à ressort (Nami).",
+  "Guidon large et suspension réglable (Fastride)."
+ ],
+ "cons": [
+  "Freins à câble seulement, pas d'hydraulique comme sur la Super Stellar (Nami).",
+  "Batterie de 786 Wh : 50 km annoncés, pas plus.",
+  "Aucun test de presse indépendant trouvé sur ce modèle.",
+  "Sa vitesse de pointe n'est utilisable que sur terrain privé : en France, la voie publique est limitée à 25 km/h."
+ ],
+ "parts": [
+  {
+   "label": "Pneu",
+   "size": "9x2.50-6 (9 pouces)",
+   "count": 3,
+   "to": "/piece/pneu-9x2-50-6-nami-stellar-tubeless",
+   "cta": "Pneus 9x2.50-6"
+  },
+  {
+   "label": "Disque de frein",
+   "size": "140 mm, 6 trous, entraxe 44 mm",
+   "count": 5,
+   "to": "/piece/disque-de-frein-140mm",
+   "cta": "Disques 140 mm"
+  }
+ ],
+ "care": [
+  "Freins à câble : retends le câble quand la course du levier s'allonge et contrôle l'usure des plaquettes.",
+  "Pneus tubeless de 9 pouces : contrôle la pression chaque semaine, un petit pneu sous-gonflé s'use vite.",
+  "Vérifie régulièrement le serrage du mécanisme de pliage et de la potence."
+ ],
+ "price": {
+  "text": "Prix affiché par Nami : à partir de 1 199 € ; 1 249 € chez Le Ranch et Urban Moov (relevés le 20/10/2026).",
+  "source": "nami-electric.com, le-ranch.fr, urbanmoov.fr"
+ },
+ "faq": [
+  {
+   "q": "Quelle taille de pneu pour la Nami Stellar ?",
+   "a": "Des pneus de 9 pouces en 9x2.50-6, en tubeless, sur une jante de 6 pouces."
+  },
+  {
+   "q": "Quel disque de frein pour la Nami Stellar ?",
+   "a": "Un disque de 140 mm à 6 trous, entraxe 44 mm. Les freins sont mécaniques, à câble."
+  },
+  {
+   "q": "Quel chargeur pour la Nami Stellar ?",
+   "a": "Un chargeur 52 V. Vérifie la prise de ta trottinette avant de commander."
+  },
+  {
+   "q": "Quelle différence entre la Stellar et la Super Stellar ?",
+   "a": "La Stellar a un moteur de 1 000 W, une batterie 15,6 Ah et des freins à câble. La Super Stellar a deux moteurs, 25 Ah et des freins hydrauliques."
+  },
+  {
+   "q": "La Nami Stellar est-elle légale en France ?",
+   "a": "Oui sur la voie publique à condition d'être bridée à 25 km/h, comme toute trottinette électrique. Débridée, elle n'est utilisable que sur terrain privé."
+  }
+ ],
+ "sources": [
+  {
+   "label": "Nami Electric — Stellar",
+   "url": "https://nami-electric.com/produit/stellar/"
+  },
+  {
+   "label": "Urban Moov — Nami Stellar",
+   "url": "https://www.urbanmoov.fr/boutique/Nami-Stellar-p701226622"
+  },
+  {
+   "label": "Le Ranch — Nami Stellar",
+   "url": "https://www.le-ranch.fr/product-page/trottinette-%C3%A9lectrique-nami-stellar"
+  },
+  {
+   "label": "Fastride — Nami Stellar",
+   "url": "https://fastride.fr/fr/nami-electric/3481-trottinette-electrique-nami-stellar.html"
+  },
+  {
+   "label": "Ministère de la Transition écologique — réglementation des trottinettes",
+   "url": "https://www.ecologie.gouv.fr/politiques-publiques/trottinettes-electriques-edpm-reglementation-vigueur"
+  }
+ ],
+ "video": {
+  "id": "xZ89oC2Is3Y",
+  "title": "TEST Trottinette electrique Puissante & Compacte NAMI STELLAR / SUPERSTELLAR (Mieux que Dualtron ?!)",
+  "channel": "Mobilityurban",
+  "uploadDate": "2024-10-05"
+ }
+}

@@ -1,0 +1,130 @@
+{
+ "displayName": "E-Twow GT SL",
+ "metaTitle": "E-Twow GT SL : fiche technique et pièces",
+ "metaDescription": "E-Twow GT SL : batterie 48 V 7,8 Ah, 700 W en crête, 13,2 kg, pneus pleins 8 pouces 8x2 (200x50), double suspension. Fiche, entretien et pièces.",
+ "intro": [
+  "La E-Twow GT SL est une trottinette compacte de la famille GT, pensée pour les trajets mixtes avec bus ou train. Elle pèse 13,2 kg selon Boulanger et la Fnac, et garde le pliage court de la marque, avec une double suspension et un écran couleur.",
+  "Moteur de 500 W (700 W en crête selon E-Twow), batterie 48 V de 7,8 Ah, pneus pleins de 8 pouces. Elle freine par un frein électromagnétique à l'avant et un frein mécanique à l'arrière. En version européenne, elle est bridée à 25 km/h ; la version américaine monte à 37 km/h."
+ ],
+ "specs": [
+  [
+   "Moteur",
+   "500 W (700 W en crête, selon E-Twow)"
+  ],
+  [
+   "Vitesse",
+   "25 km/h sur la voie publique"
+  ],
+  [
+   "Batterie",
+   "48 V, 7,8 Ah (374 Wh)"
+  ],
+  [
+   "Autonomie annoncée",
+   "25 km selon E-Twow, 35 à 40 km selon Boulanger"
+  ],
+  [
+   "Poids",
+   "13,2 kg"
+  ],
+  [
+   "Charge max",
+   "110 kg (selon la Fnac)"
+  ],
+  [
+   "Roues",
+   "8 pouces, pneus pleins 8x2 (200x50)"
+  ],
+  [
+   "Freins",
+   "Électromagnétique avant + mécanique arrière (tambour ou garde-boue selon les sources)"
+  ],
+  [
+   "Suspension",
+   "Avant et arrière"
+  ],
+  [
+   "Étanchéité",
+   "IPX4 selon la Fnac, IP54 selon d'autres fiches"
+  ],
+  [
+   "Temps de charge",
+   "environ 4 h"
+  ]
+ ],
+ "pros": [
+  "13,2 kg et un pliage court pour une 48 V.",
+  "Double suspension et écran couleur, mis en avant par Boulanger.",
+  "Pneus pleins : pas de crevaison, pas de pression à surveiller."
+ ],
+ "cons": [
+  "Batterie de 374 Wh : E-Twow annonce seulement 25 km, Boulanger 35 à 40 km. Compte plutôt sur le bas de la fourchette.",
+  "Pas de frein à disque.",
+  "Aucun test de presse français trouvé : les chiffres viennent du fabricant et des revendeurs.",
+  "La version américaine à 37 km/h n'est utilisable que sur terrain privé : en France, la voie publique est limitée à 25 km/h."
+ ],
+ "parts": [
+  {
+   "label": "Pneu plein",
+   "size": "8 pouces, 8x2 (200x50)",
+   "count": 1,
+   "to": "/piece/pneu-plein-200x50-speedway-mini-4-pro-e-twow",
+   "cta": "Pneu plein E-Twow"
+  }
+ ],
+ "care": [
+  "Le frein arrière est ton seul frein mécanique : contrôle son réglage et son usure régulièrement.",
+  "Pneus pleins : surveille l'usure de la gomme, un pneu lisse glisse vite sur sol mouillé.",
+  "Vérifie souvent le jeu de la potence et le serrage de la charnière de pliage."
+ ],
+ "faq": [
+  {
+   "q": "Quelle taille de pneu pour la E-Twow GT SL ?",
+   "a": "Des pneus pleins de 8 pouces, en 8x2, aussi notés 200x50."
+  },
+  {
+   "q": "La E-Twow GT SL a-t-elle des plaquettes de frein ?",
+   "a": "Non, elle n'a pas de frein à disque. Elle freine avec un frein électromagnétique à l'avant et un frein mécanique à l'arrière."
+  },
+  {
+   "q": "Quel chargeur pour la E-Twow GT SL ?",
+   "a": "Un chargeur pour batterie 48 V. Vérifie la forme de ta prise avant de commander."
+  },
+  {
+   "q": "Quelle différence entre la GT SL et la GT SE ?",
+   "a": "La batterie : 48 V 7,8 Ah sur la GT SL, 48 V 10,5 Ah sur la GT SE. Les deux roulent en pneus pleins de 8 pouces."
+  },
+  {
+   "q": "La E-Twow GT SL est-elle légale en France ?",
+   "a": "Oui sur la voie publique à condition d'être bridée à 25 km/h, comme toute trottinette électrique. Débridée, elle n'est utilisable que sur terrain privé."
+  }
+ ],
+ "sources": [
+  {
+   "label": "E-Twow — GT SL",
+   "url": "https://e-twow.com/fr/products/e-twow-gt-sl-trottinette-electrique"
+  },
+  {
+   "label": "Boulanger — E-Twow GT SL",
+   "url": "https://www.boulanger.com/ref/9000927739"
+  },
+  {
+   "label": "Boulanger — E-Twow GT SL (autre coloris)",
+   "url": "https://www.boulanger.com/ref/9000927741"
+  },
+  {
+   "label": "Fnac — E-Twow GT SL",
+   "url": "https://www.fnac.com/mp53320542/Trottinette-electrique-E-TWOW-GT-SL-pliable-avec-suspension-et-application-noire/w-4"
+  },
+  {
+   "label": "Ministère de la Transition écologique — réglementation des trottinettes",
+   "url": "https://www.ecologie.gouv.fr/politiques-publiques/trottinettes-electriques-edpm-reglementation-vigueur"
+  }
+ ],
+ "video": {
+  "id": "j4BNrflfF_0",
+  "title": "ETWOW GT SL : LA PLUS PUISSANTE ET LEGERE TROTTINETTE ELECTRIQUE A MOINS DE 1000 EUROS !",
+  "channel": "Weebot Paris",
+  "uploadDate": "2023-07-20"
+ }
+}

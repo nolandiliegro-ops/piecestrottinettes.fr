@@ -1,0 +1,111 @@
+{
+ "displayName": "E-Twow GT Sport",
+ "metaTitle": "E-Twow GT Sport : fiche technique et pièces",
+ "metaDescription": "E-Twow GT Sport : batterie Samsung 48 V 10,5 Ah (504 Wh), 700 W en crête, pneus pleins 8 pouces, frein tambour arrière, IPX4. Fiche et entretien.",
+ "intro": [
+  "La E-Twow GT Sport est une trottinette compacte de la famille GT, annoncée à 13,28 kg par E-Twow et 13,2 kg par Boulanger. Elle reprend le pliage court et le format léger de la marque, avec une batterie plus grosse que celle de la GT SL.",
+  "Moteur de 500 W (700 W en crête selon E-Twow), batterie Samsung 48 V de 10,5 Ah, pneus increvables de 8 pouces et frein à tambour complété par un freinage régénératif. Elle est étanche IPX4 et bridée à 25 km/h en configuration européenne."
+ ],
+ "specs": [
+  [
+   "Moteur",
+   "500 W (700 W en crête, selon E-Twow)"
+  ],
+  [
+   "Vitesse",
+   "25 km/h sur la voie publique"
+  ],
+  [
+   "Batterie",
+   "48 V, 10,5 Ah (504 Wh selon E-Twow)"
+  ],
+  [
+   "Autonomie annoncée",
+   "35 km selon E-Twow, jusqu'à 45 km selon les revendeurs"
+  ],
+  [
+   "Poids",
+   "13,2 à 13,28 kg selon les sources"
+  ],
+  [
+   "Charge max",
+   "110 kg"
+  ],
+  [
+   "Roues",
+   "8 pouces, pneus pleins"
+  ],
+  [
+   "Freins",
+   "Régénératif avant + tambour arrière"
+  ],
+  [
+   "Suspension",
+   "Avant et arrière à ressorts"
+  ],
+  [
+   "Étanchéité",
+   "IPX4"
+  ],
+  [
+   "Temps de charge",
+   "3 à 4 h"
+  ]
+ ],
+ "pros": [
+  "Grosse batterie de 504 Wh pour une trottinette d'à peine plus de 13 kg (E-Twow).",
+  "Pneus increvables : pas de crevaison, pas de pression à surveiller.",
+  "Étanchéité IPX4 annoncée par Boulanger et Pixmania."
+ ],
+ "cons": [
+  "Autonomie annoncée variable selon les fiches, de 35 à 45 km, sans protocole de mesure.",
+  "Pas de frein à disque : le tambour arrière est le seul frein mécanique.",
+  "Aucun test de presse français trouvé : les chiffres viennent du fabricant et des revendeurs."
+ ],
+ "parts": [],
+ "care": [
+  "Frein à tambour arrière : fais-le régler dès que la course du levier s'allonge.",
+  "Pneus pleins : surveille l'usure de la gomme, un pneu lisse glisse vite sur sol mouillé.",
+  "Vérifie souvent le jeu de la potence et le serrage de la charnière de pliage."
+ ],
+ "faq": [
+  {
+   "q": "Quelle taille de pneu pour la E-Twow GT Sport ?",
+   "a": "Des pneus pleins de 8 pouces. Compare avec la section écrite sur ton pneu avant de commander."
+  },
+  {
+   "q": "La E-Twow GT Sport a-t-elle des plaquettes de frein ?",
+   "a": "Non. Elle freine avec un tambour à l'arrière et un freinage régénératif, sans disque ni plaquettes."
+  },
+  {
+   "q": "Quel chargeur pour la E-Twow GT Sport ?",
+   "a": "Un chargeur pour batterie 48 V. Vérifie la forme de ta prise avant de commander."
+  },
+  {
+   "q": "Combien de temps pour recharger la E-Twow GT Sport ?",
+   "a": "Environ 3 h 30 selon E-Twow, 3 à 4 heures selon Boulanger."
+  },
+  {
+   "q": "Quelle différence entre la GT Sport et la GT SL ?",
+   "a": "La batterie : 48 V 10,5 Ah (504 Wh) sur la GT Sport, 48 V 7,8 Ah (374 Wh) sur la GT SL, pour un poids voisin de 13,2 kg."
+  }
+ ],
+ "sources": [
+  {
+   "label": "E-Twow — GT Sport",
+   "url": "https://e-twow.com/fr/products/e-twow-gt-sport-trottinette-electrique"
+  },
+  {
+   "label": "E-Twow — GT Sport édition limitée",
+   "url": "https://e-twow.com/fr/products/e-twow-gt-sport-edition-limitee"
+  },
+  {
+   "label": "Boulanger — E-Twow GT Sport",
+   "url": "https://www.boulanger.com/ref/9000927742"
+  },
+  {
+   "label": "Pixmania — E-Twow GT Sport",
+   "url": "https://www.pixmania.com/fr/fr/trottinette-electrique-etwow-gt-sport-avec-batterie-48-v-105-ah-pneus-8-pouces-527345.html"
+  }
+ ]
+}

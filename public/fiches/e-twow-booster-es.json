@@ -1,0 +1,118 @@
+{
+ "displayName": "E-Twow Booster ES",
+ "metaTitle": "E-Twow Booster ES : fiche technique et pièces",
+ "metaDescription": "E-Twow Booster ES : 500 W, batterie 36 V 7,8 Ah, pneus pleins 8 pouces, suspensions avant et arrière, 11,6 kg. Fiche technique, entretien et pièces.",
+ "intro": [
+  "La E-Twow Booster ES est une petite trottinette pliante de la gamme Booster, annoncée à 11,6 kg par E-Twow. Elle reprend le format compact de la marque, avec un mode trolley sur la roue motrice pour la faire rouler une fois pliée, et vise les trajets courts combinés au bus ou au train.",
+  "Moteur de 500 W (700 W en crête selon E-Twow), batterie 36 V de 7,8 Ah, pneus pleins de 8 pouces et suspensions à l'avant et à l'arrière. Elle freine par récupération d'énergie à l'avant, avec un frein d'urgence à l'arrière. En version européenne, elle est bridée à 25 km/h."
+ ],
+ "specs": [
+  [
+   "Moteur",
+   "500 W (700 W en crête selon E-Twow)"
+  ],
+  [
+   "Vitesse",
+   "25 km/h sur la voie publique"
+  ],
+  [
+   "Batterie",
+   "36 V, 7,8 Ah (280,8 Wh)"
+  ],
+  [
+   "Autonomie annoncée",
+   "30 km (E-Twow), 20 km et plus en mode Eco (selon Gyroroue Shop)"
+  ],
+  [
+   "Poids",
+   "11,6 kg (selon E-Twow)"
+  ],
+  [
+   "Charge max",
+   "100 à 110 kg selon les sources"
+  ],
+  [
+   "Roues",
+   "8 pouces, pneus pleins"
+  ],
+  [
+   "Freins",
+   "Récupération d'énergie avant + frein d'urgence arrière"
+  ],
+  [
+   "Suspension",
+   "Avant et arrière"
+  ],
+  [
+   "Temps de charge",
+   "3 à 4 h"
+  ]
+ ],
+ "pros": [
+  "11,6 kg et un format compact, facile à porter dans les transports (E-Twow).",
+  "Suspensions avant et arrière, rares à ce poids.",
+  "Pneus pleins : pas de crevaison, pas de pression à surveiller."
+ ],
+ "cons": [
+  "Petite batterie de 280,8 Wh : 30 km annoncés, 20 km et plus en mode Eco selon Gyroroue Shop.",
+  "Pas de frein à disque : l'arrière ne sert qu'en freinage d'urgence.",
+  "Aucun test de presse français trouvé : les chiffres viennent du fabricant et des revendeurs.",
+  "Une version loisirs à 30 km/h existe, mais elle n'est utilisable que sur terrain privé : en France, la voie publique est limitée à 25 km/h."
+ ],
+ "parts": [],
+ "care": [
+  "Le frein arrière est ton seul frein mécanique : contrôle sa fixation et son usure régulièrement.",
+  "Pneus pleins : surveille l'usure de la gomme, un pneu lisse glisse vite sur sol mouillé.",
+  "Vérifie souvent le jeu de la potence et le serrage de la charnière de pliage."
+ ],
+ "faq": [
+  {
+   "q": "Quelle taille de pneu pour la E-Twow Booster ES ?",
+   "a": "Des pneus pleins de 8 pouces. Compare avec la section écrite sur ton pneu avant de commander."
+  },
+  {
+   "q": "La E-Twow Booster ES a-t-elle des plaquettes de frein ?",
+   "a": "Non, elle n'a pas de frein à disque. Elle freine par récupération d'énergie à l'avant, avec un frein d'urgence à l'arrière."
+  },
+  {
+   "q": "Quel chargeur pour la E-Twow Booster ES ?",
+   "a": "Un chargeur pour batterie 36 V. Vérifie la forme de ta prise avant de commander."
+  },
+  {
+   "q": "Combien de temps pour recharger la E-Twow Booster ES ?",
+   "a": "Environ 3 heures selon E-Twow, 3 à 4 heures selon les revendeurs."
+  },
+  {
+   "q": "La E-Twow Booster ES est-elle légale en France ?",
+   "a": "Oui sur la voie publique à condition d'être bridée à 25 km/h, comme toute trottinette électrique. Débridée, elle n'est utilisable que sur terrain privé."
+  }
+ ],
+ "sources": [
+  {
+   "label": "E-Twow — Booster ES",
+   "url": "https://e-twow.com/fr/products/e-twow-booster-es-trottinette-electrique"
+  },
+  {
+   "label": "Gyroroue Shop — E-Twow Booster ES",
+   "url": "https://www.gyroroue-shop.fr/boutique/trottinette-electrique/etwow/e-twow-booster-es"
+  },
+  {
+   "label": "Boulanger — E-Twow Booster ES",
+   "url": "https://www.boulanger.com/ref/9000927736"
+  },
+  {
+   "label": "Maxblinker — E-Twow Booster ES",
+   "url": "https://www.maxblinker.fr/fr/trottinettes-electriques/e-twow-booster-es"
+  },
+  {
+   "label": "Ministère de la Transition écologique — réglementation des trottinettes",
+   "url": "https://www.ecologie.gouv.fr/politiques-publiques/trottinettes-electriques-edpm-reglementation-vigueur"
+  }
+ ],
+ "video": {
+  "id": "dJCe3FKevQA",
+  "title": "ETWOW BOOSTER ES : UNE TROTTINETTE ELECTRIQUE PRATIQUE !",
+  "channel": "Weebot Paris",
+  "uploadDate": "2024-08-08"
+ }
+}

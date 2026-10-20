@@ -1,0 +1,155 @@
+{
+ "displayName": "Nami Burn-E",
+ "metaTitle": "Nami Burn-E : fiche technique et pièces",
+ "metaDescription": "Nami Burn-E : 72 V, pneus 11 pouces 90/65-6.5, freins hydrauliques et disques 160 mm. Fiche technique, entretien et pièces compatibles vérifiées.",
+ "intro": [
+  "La Nami Burn-E est la première génération de la Burn-E, la grosse 72 V de la marque Nami. Elle circule en France depuis 2021 : les premiers tests vidéo français datent de mai et juin 2021. Cleanrider la référence en 72 V, avec deux moteurs pour 3 000 W au total et une batterie de 28 ou 32 Ah selon la configuration.",
+  "Des pneus de 11 pouces en 90/65-6.5, des freins hydrauliques avec disques de 160 mm et des suspensions hydrauliques réglables à l'avant et à l'arrière : c'est une machine lourde, pensée pour la puissance et le confort. Sur la voie publique en France, elle doit rester bridée à 25 km/h."
+ ],
+ "specs": [
+  [
+   "Moteurs",
+   "2 moteurs, 3 000 W au total (selon Cleanrider)"
+  ],
+  [
+   "Vitesse",
+   "25 km/h sur la voie publique"
+  ],
+  [
+   "Batterie",
+   "72 V, 28 ou 32 Ah selon la configuration"
+  ],
+  [
+   "Autonomie annoncée",
+   "jusqu'à 150 km (Cleanrider, Solution Trottinette)"
+  ],
+  [
+   "Poids",
+   "45 kg avec batterie (selon Cleanrider)"
+  ],
+  [
+   "Roues",
+   "11 pouces, 90/65-6.5 tubeless"
+  ],
+  [
+   "Freins",
+   "Disques hydrauliques, Ø 160 mm"
+  ],
+  [
+   "Suspension",
+   "Hydraulique réglable, avant et arrière"
+  ],
+  [
+   "Étanchéité",
+   "IPX5"
+  ],
+  [
+   "Chargeur",
+   "72 V"
+  ],
+  [
+   "Sortie",
+   "2021"
+  ]
+ ],
+ "pros": [
+  "Deux moteurs et 3 000 W au total (Cleanrider).",
+  "Suspensions hydrauliques réglables à l'avant et à l'arrière.",
+  "Autonomie annoncée jusqu'à 150 km dans sa plus grosse configuration (Cleanrider)."
+ ],
+ "cons": [
+  "Environ 45 kg : elle ne se porte pas dans un escalier.",
+  "Deux capacités de batterie existent (28 et 32 Ah) : vérifie la tienne avant de te fier à un chiffre d'autonomie.",
+  "Aucun test de presse français ne publie d'autonomie mesurée : les 150 km sont une valeur annoncée.",
+  "Sa vitesse de pointe n'est utilisable que sur terrain privé : en France, la voie publique est limitée à 25 km/h."
+ ],
+ "parts": [
+  {
+   "label": "Pneu",
+   "size": "90/65-6.5 (11 pouces)",
+   "count": 11,
+   "to": "/piece/pneu-90-65-6-5-off-road-tubeless",
+   "cta": "Pneus 90/65-6.5"
+  },
+  {
+   "label": "Chambre à air",
+   "size": "90/65-6.5, valve droite ou coudée",
+   "count": 5,
+   "to": "/piece/chambre-a-air-9065-65-11-pouces",
+   "cta": "Chambres à air"
+  },
+  {
+   "label": "Plaquettes",
+   "size": "étrier Nutt 4 pistons",
+   "count": 4,
+   "to": "/piece/plaquettes-de-freins-shimano-d03s-nutt-4-pistons-thunder-3-nami-semi-metallique",
+   "cta": "Plaquettes Nutt"
+  },
+  {
+   "label": "Disque de frein",
+   "size": "160 mm, 6 trous, entraxe 44 mm",
+   "count": 7,
+   "to": "/piece/disque-de-frein-160mm",
+   "cta": "Disques 160 mm"
+  }
+ ],
+ "care": [
+  "Freins hydrauliques : surveille l'épaisseur des plaquettes et purge le circuit dès que le levier devient mou.",
+  "Pneus 90/65-6.5 tubeless : contrôle la pression avant chaque sortie, un pneu sous-gonflé s'use vite et fatigue la jante.",
+  "Avec deux moteurs et 45 kg, la visserie de la colonne et des bras de suspension se desserre : vérifie-la régulièrement."
+ ],
+ "price": {
+  "text": "Prix de lancement en France : à partir de 4 490 €.",
+  "source": "cleanrider.com, solution-trottinette.fr"
+ },
+ "faq": [
+  {
+   "q": "Quelle taille de pneu pour la Nami Burn-E ?",
+   "a": "Des pneus de 11 pouces en 90/65-6.5, en tubeless, sur une jante de 6,5 pouces."
+  },
+  {
+   "q": "Quel disque de frein pour la Nami Burn-E ?",
+   "a": "Un disque de 160 mm à 6 trous, entraxe 44 mm, à l'avant comme à l'arrière."
+  },
+  {
+   "q": "Quelles plaquettes pour la Nami Burn-E ?",
+   "a": "Des plaquettes pour étrier hydraulique Nutt à quatre pistons, en semi-métallique, métal fritté ou céramique selon ton usage. Compare la forme avec ta plaquette usée avant de commander."
+  },
+  {
+   "q": "Quelle est l'autonomie de la Nami Burn-E ?",
+   "a": "Jusqu'à 150 km annoncés selon Cleanrider, dans la configuration à plus grosse batterie. Aucun test français publié ne donne de valeur mesurée : le poids, le relief et le mode de conduite la font baisser."
+  },
+  {
+   "q": "La Nami Burn-E est-elle légale en France ?",
+   "a": "Oui sur la voie publique à condition d'être bridée à 25 km/h, comme toute trottinette électrique. Débridée, elle n'est utilisable que sur terrain privé."
+  }
+ ],
+ "sources": [
+  {
+   "label": "Cleanrider — fiche Nami Electric Burn-E",
+   "url": "https://www.cleanrider.com/catalogue/trottinette-electrique/nami-electric/nami-electric-burn-e/"
+  },
+  {
+   "label": "Solution Trottinette — gamme Nami",
+   "url": "https://solution-trottinette.fr/trottinette-electrique/marque/nami"
+  },
+  {
+   "label": "Max Blinker — Nami Burn-E",
+   "url": "https://www.maxblinker.fr/fr/trottinettes-electriques/nami-burn-e"
+  },
+  {
+   "label": "Nami Electric — Burn-E",
+   "url": "https://nami-electric.com/produit/burn-e/"
+  },
+  {
+   "label": "Ministère de la Transition écologique — réglementation des trottinettes",
+   "url": "https://www.ecologie.gouv.fr/politiques-publiques/trottinettes-electriques-edpm-reglementation-vigueur"
+  }
+ ],
+ "video": {
+  "id": "cFsHu4myzB8",
+  "title": "Test Nami Burn-E ! Une Tuerie ! Trottinette électrique !",
+  "channel": "KRAMTOO",
+  "uploadDate": "2021-06-13"
+ }
+}

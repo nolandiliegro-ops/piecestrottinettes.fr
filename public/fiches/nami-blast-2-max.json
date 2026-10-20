@@ -1,0 +1,139 @@
+{
+ "displayName": "Nami Blast 2 Max",
+ "metaTitle": "Nami Blast 2 Max : fiche technique et pièces",
+ "metaDescription": "Nami Blast 2 Max : batterie 72 V 40 Ah (2 880 Wh), 2 × 1 500 W, pneus 11 pouces 90/65-6.5 tubeless, freins hydrauliques. Fiche et pièces.",
+ "intro": [
+  "La Nami Blast 2 Max est la deuxième génération de la Blast Max. Elle passe en 72 V avec une batterie de 40 Ah, soit 2 880 Wh, la même que celle de la Burn-E 3 Max selon le catalogue de pièces Nami. Funtrott et Urban Moov annoncent deux moteurs de 1 500 W.",
+  "Pneus CST tubeless de 11 pouces en 90/65-6.5, freins hydrauliques, suspensions hydrauliques KKE et fourche avant inversée : elle reprend la recette de la Blast avec plus de puissance et d'autonomie. Sur la voie publique en France, elle doit rester bridée à 25 km/h."
+ ],
+ "specs": [
+  [
+   "Moteurs",
+   "2 × 1 500 W (Funtrott, Urban Moov), 8 400 W en pointe selon Urban Moov"
+  ],
+  [
+   "Vitesse",
+   "25 km/h sur la voie publique"
+  ],
+  [
+   "Batterie",
+   "72 V, 40 Ah (2 880 Wh)"
+  ],
+  [
+   "Autonomie annoncée",
+   "100 km (Funtrott, Urban Moov), 120 km selon FōhzShop"
+  ],
+  [
+   "Poids",
+   "44 kg (Funtrott) à 55 kg (FōhzShop)"
+  ],
+  [
+   "Charge max",
+   "120 kg (selon FōhzShop)"
+  ],
+  [
+   "Roues",
+   "11 pouces, 90/65-6.5 tubeless"
+  ],
+  [
+   "Freins",
+   "Hydrauliques (2 ou 4 pistons selon les revendeurs)"
+  ],
+  [
+   "Suspension",
+   "Hydraulique KKE réglable, fourche avant inversée"
+  ],
+  [
+   "Étanchéité",
+   "IPX5 (Funtrott, Urban Moov)"
+  ],
+  [
+   "Chargeur",
+   "72 V, 5 A (selon Urban Moov)"
+  ],
+  [
+   "Temps de charge",
+   "environ 8 h (selon FōhzShop)"
+  ]
+ ],
+ "pros": [
+  "Batterie 72 V de 2 880 Wh (Funtrott, Urban Moov, Nami).",
+  "Fourche avant inversée et suspensions hydrauliques réglables (Funtrott).",
+  "Jusqu'à 100 km d'autonomie annoncés (Funtrott, Urban Moov)."
+ ],
+ "cons": [
+  "Les revendeurs ne s'accordent ni sur le poids (44 à 55 kg) ni sur les freins (2 ou 4 pistons) : vérifie ta trottinette avant de commander des plaquettes.",
+  "Recharge longue : environ 8 h selon FōhzShop.",
+  "Aucun test de presse indépendant trouvé sur ce modèle.",
+  "Sa vitesse de pointe n'est utilisable que sur terrain privé : en France, la voie publique est limitée à 25 km/h."
+ ],
+ "parts": [
+  {
+   "label": "Pneu",
+   "size": "90/65-6.5 (11 pouces)",
+   "count": 11,
+   "to": "/piece/pneu-90-65-6-5-route-tubeless",
+   "cta": "Pneus 90/65-6.5"
+  },
+  {
+   "label": "Chambre à air",
+   "size": "90/65-6.5, valve droite ou coudée",
+   "count": 5,
+   "to": "/piece/chambre-a-air-9065-65-valve-droite",
+   "cta": "Chambres à air"
+  }
+ ],
+ "care": [
+  "Freins hydrauliques : surveille l'épaisseur des plaquettes et purge le circuit dès que le levier devient mou.",
+  "Pneus 90/65-6.5 tubeless : contrôle la pression avant chaque sortie, un pneu sous-gonflé s'use vite et fatigue la jante.",
+  "Une batterie de 2 880 Wh se recharge longtemps : utilise un chargeur 72 V et ne la laisse pas vide plusieurs semaines."
+ ],
+ "price": {
+  "text": "Prix affiché chez Funtrott : 3 989 € au lieu de 4 580 € (relevé le 07/02/2025).",
+  "source": "funtrott.fr"
+ },
+ "faq": [
+  {
+   "q": "Quelle taille de pneu pour la Nami Blast 2 Max ?",
+   "a": "Des pneus de 11 pouces en 90/65-6.5, en tubeless, sur une jante de 6,5 pouces."
+  },
+  {
+   "q": "Quel chargeur pour la Nami Blast 2 Max ?",
+   "a": "Un chargeur 72 V. Urban Moov indique un chargeur de 5 A. Vérifie la prise de ta trottinette avant de commander."
+  },
+  {
+   "q": "Quelle différence entre la Blast 2 Max et la Blast Max ?",
+   "a": "La Blast 2 Max passe en 72 V 40 Ah (2 880 Wh), là où la Blast Max de première génération est en 60 V."
+  },
+  {
+   "q": "Quelle est l'autonomie de la Nami Blast 2 Max ?",
+   "a": "Funtrott et Urban Moov annoncent 100 km, FōhzShop 120 km. Aucun test publié ne donne de valeur mesurée."
+  },
+  {
+   "q": "La Nami Blast 2 Max est-elle légale en France ?",
+   "a": "Oui sur la voie publique à condition d'être bridée à 25 km/h, comme toute trottinette électrique. Débridée, elle n'est utilisable que sur terrain privé."
+  }
+ ],
+ "sources": [
+  {
+   "label": "Funtrott — Nami Blast 2 Max 72 V 40 Ah",
+   "url": "https://funtrott.fr/accueil/2448-nami-blast-2-max-72v-40ah.html"
+  },
+  {
+   "label": "Urban Moov — Nami Blast 2 Max",
+   "url": "https://www.urbanmoov.fr/boutique/BLAST-2-MAX-p763702824"
+  },
+  {
+   "label": "FōhzShop — Nami Blast 2 Max 72 V 40 Ah",
+   "url": "https://fohzshop.fr/en/electric-scooters/nami/nami-blast-2-max-72v-40ah"
+  },
+  {
+   "label": "Nami Electric (pro) — batterie 72 V 2 880 Wh Burn-E 3 Max / Blast 2 Max",
+   "url": "https://pro.nami-electric.com/shop/na0084-batterie-burn-e-3-max-blast-2-max-72v-2880wh-1592"
+  },
+  {
+   "label": "Ministère de la Transition écologique — réglementation des trottinettes",
+   "url": "https://www.ecologie.gouv.fr/politiques-publiques/trottinettes-electriques-edpm-reglementation-vigueur"
+  }
+ ]
+}

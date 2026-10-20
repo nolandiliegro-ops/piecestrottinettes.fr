@@ -1,0 +1,156 @@
+{
+ "displayName": "Nami Klima",
+ "metaTitle": "Nami Klima : fiche technique, avis et pièces",
+ "metaDescription": "Nami Klima : 60 V 25 Ah, 2 × 1 000 W, pneus 10x3 (80/65-6), disques 140 mm. Autonomie mesurée en test, entretien et pièces compatibles.",
+ "intro": [
+  "La Nami Klima en version standard associe deux moteurs de 1 000 W, une batterie 60 V de 25 Ah, soit 1 500 Wh, pour environ 38 kg. Rider Guide l'a testée dès mars 2023. Elle existe aussi en Klima Max (30 Ah) et en Klima One, monomoteur.",
+  "Pneus de 10 pouces en 10x3 (80/65-6), freins hydrauliques à disques de 140 mm et suspensions réglables : c'est une trottinette de trajet quotidien qui accepte les chemins. Sur la voie publique en France, elle doit rester bridée à 25 km/h."
+ ],
+ "specs": [
+  [
+   "Moteurs",
+   "2 × 1 000 W, 5 376 W en pointe"
+  ],
+  [
+   "Vitesse",
+   "25 km/h sur la voie publique"
+  ],
+  [
+   "Batterie",
+   "60 V, 25 Ah (1 500 Wh)"
+  ],
+  [
+   "Autonomie",
+   "40,2 km mesurés par Rider Guide (70 à 100 km annoncés selon les fiches)"
+  ],
+  [
+   "Poids",
+   "37,6 kg selon Nami, 38,2 kg mesurés par Rider Guide"
+  ],
+  [
+   "Charge max",
+   "110 kg (Nami) ou 120 kg (Scootify)"
+  ],
+  [
+   "Roues",
+   "10 pouces, 10x3.00-6 (80/65-6) tubeless"
+  ],
+  [
+   "Freins",
+   "Disques hydrauliques Ø 140 mm, étriers 2 pistons"
+  ],
+  [
+   "Suspension",
+   "Hydraulique réglable, avant et arrière"
+  ],
+  [
+   "Étanchéité",
+   "IP55 au catalogue, IPX5 selon Over Watt"
+  ],
+  [
+   "Chargeur",
+   "60 V"
+  ],
+  [
+   "Temps de charge",
+   "environ 6 h avec chargeur rapide (selon Electric Scooter Insider)"
+  ]
+ ],
+ "pros": [
+  "Accélérations très vives pour sa taille (Rider Guide).",
+  "Performances et confort appréciés, freinage mesuré à 2,1 m (Electric Scooter Insider).",
+  "Format plus compact que les Burn-E et Blast : environ 38 kg."
+ ],
+ "cons": [
+  "Autonomie mesurée bien en dessous de l'annonce : 40,2 km chez Rider Guide.",
+  "Frein régénératif jugé trop agressif, même au réglage minimum (Rider Guide).",
+  "Un capteur de frein a coupé la puissance moteur pendant l'essai d'Electric Scooter Insider.",
+  "Sa vitesse de pointe n'est utilisable que sur terrain privé : en France, la voie publique est limitée à 25 km/h."
+ ],
+ "parts": [
+  {
+   "label": "Pneu",
+   "size": "80/65-6 (10x3)",
+   "count": 11,
+   "to": "/piece/pneu-tubeless-80-65-6-10x3-cityroad-ewheel",
+   "cta": "Pneus 10x3"
+  },
+  {
+   "label": "Chambre à air",
+   "size": "80/65-6 (10x3), valve droite ou coudée",
+   "count": 3,
+   "to": "/piece/chambre-a-air-80-65-6-10x3-valve-coudee-90-ewheel",
+   "cta": "Chambres à air"
+  },
+  {
+   "label": "Disque de frein",
+   "size": "140 mm, 6 trous, entraxe 44 mm",
+   "count": 5,
+   "to": "/piece/disque-de-frein-140mm",
+   "cta": "Disques 140 mm"
+  }
+ ],
+ "care": [
+  "Freins hydrauliques : surveille l'épaisseur des plaquettes et purge le circuit dès que le levier devient mou.",
+  "Pneus 10x3 tubeless : contrôle la pression chaque semaine, un pneu sous-gonflé s'use vite et crève plus facilement.",
+  "Si la puissance coupe sans raison, contrôle les capteurs et les connecteurs des leviers de frein avant de chercher plus loin."
+ ],
+ "price": {
+  "text": "Prix affiché par Nami : à partir de 2 299 € (relevé le 24/02/2026) ; 2 479 € chez Over Watt (relevé le 21/04/2026).",
+  "source": "nami-electric.com, over-watt.fr"
+ },
+ "faq": [
+  {
+   "q": "Quelle taille de pneu pour la Nami Klima ?",
+   "a": "Des pneus de 10 pouces en 10x3.00-6, aussi notés 80/65-6, en tubeless, sur une jante de 6 pouces."
+  },
+  {
+   "q": "Quel disque de frein pour la Nami Klima ?",
+   "a": "Un disque de 140 mm à 6 trous, entraxe 44 mm."
+  },
+  {
+   "q": "Quelle est l'autonomie réelle de la Nami Klima ?",
+   "a": "Rider Guide a mesuré 40,2 km en conduite soutenue. Nami annonce jusqu'à 100 km à 25 km/h : rouler bridé et léger rapproche de ce chiffre."
+  },
+  {
+   "q": "Quelle différence entre la Klima, la Klima Max et la Klima One ?",
+   "a": "La Klima a deux moteurs et 25 Ah. La Klima Max garde les deux moteurs avec 30 Ah. La Klima One n'a qu'un moteur."
+  },
+  {
+   "q": "La Nami Klima est-elle légale en France ?",
+   "a": "Oui sur la voie publique à condition d'être bridée à 25 km/h, comme toute trottinette électrique. Débridée, elle n'est utilisable que sur terrain privé."
+  }
+ ],
+ "sources": [
+  {
+   "label": "Nami Electric — Klima",
+   "url": "https://nami-electric.com/produit/klima/"
+  },
+  {
+   "label": "Rider Guide — NAMI Klima Review",
+   "url": "https://riderguide.com/reviews/nami-klima-review/"
+  },
+  {
+   "label": "Electric Scooter Insider — NAMI Klima Review",
+   "url": "https://www.electricscooterinsider.com/electric-scooters/reviews/nami-klima-review/"
+  },
+  {
+   "label": "Scootify — Nami Klima",
+   "url": "https://scootify.eco/en/products/nami/klima/base/"
+  },
+  {
+   "label": "Over Watt — Nami Klima",
+   "url": "https://over-watt.fr/products/nami-klima"
+  },
+  {
+   "label": "Ministère de la Transition écologique — réglementation des trottinettes",
+   "url": "https://www.ecologie.gouv.fr/politiques-publiques/trottinettes-electriques-edpm-reglementation-vigueur"
+  }
+ ],
+ "video": {
+  "id": "0uYwvl-0fsY",
+  "title": "NAMI KLIMA UNE PETITE 60V MONSTRUEUSE !",
+  "channel": "KRAMTOO",
+  "uploadDate": "2023-05-01"
+ }
+}

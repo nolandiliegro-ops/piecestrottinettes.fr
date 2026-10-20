@@ -1,0 +1,174 @@
+{
+ "displayName": "Nami Burn-E 3 Max",
+ "metaTitle": "Nami Burn-E 3 Max : fiche technique et pièces",
+ "metaDescription": "Nami Burn-E 3 Max : 72 V 40 Ah (2 880 Wh), pneus 11 pouces 90/65-6.5, disques 160 mm, prise Nami RGX16-2. Fiche, entretien et pièces.",
+ "intro": [
+  "La Nami Burn-E 3 Max est la version longue distance de la Burn-E 3 : batterie 72 V de 40 Ah, soit 2 880 Wh selon FōhzShop et la fiche batterie Nami. FōhzShop et Urban Moov annoncent 3 000 W de moteurs et jusqu'à 120 km d'autonomie. C'est la plus grosse batterie de la gamme Burn-E.",
+  "Pneus de 11 pouces en 90/65-6.5, freins hydrauliques avec disques de 160 mm, suspensions hydrauliques KKE de 165 mm et prise de charge Nami RGX16-2. Elle pèse entre 51 et 55 kg selon les fiches. Sur la voie publique en France, elle doit rester bridée à 25 km/h."
+ ],
+ "specs": [
+  [
+   "Moteurs",
+   "2 moteurs, 3 000 W au total"
+  ],
+  [
+   "Vitesse",
+   "25 km/h sur la voie publique"
+  ],
+  [
+   "Batterie",
+   "72 V, 40 Ah (2 880 Wh)"
+  ],
+  [
+   "Autonomie annoncée",
+   "jusqu'à 120 km (FōhzShop, Urban Moov), environ 70 km à pleine puissance selon FōhzShop"
+  ],
+  [
+   "Poids",
+   "51 kg (Max Blinker) à 55 kg (FōhzShop)"
+  ],
+  [
+   "Charge max",
+   "120 kg (FōhzShop) ou 130 kg (Max Blinker)"
+  ],
+  [
+   "Roues",
+   "11 pouces, 90/65-6.5 tubeless"
+  ],
+  [
+   "Freins",
+   "Disques hydrauliques Ø 160 mm, 4 pistons (Logan selon FōhzShop, Nutt selon Max Blinker)"
+  ],
+  [
+   "Suspension",
+   "Hydraulique KKE, 165 mm, avant et arrière"
+  ],
+  [
+   "Étanchéité",
+   "IPX5 au catalogue (IP55 selon Max Blinker, IPX6 selon FōhzShop)"
+  ],
+  [
+   "Prise de charge",
+   "Nami RGX16-2"
+  ],
+  [
+   "Chargeur",
+   "72 V"
+  ]
+ ],
+ "pros": [
+  "Batterie de 2 880 Wh, la plus grosse de la gamme Burn-E (FōhzShop).",
+  "Jusqu'à 120 km d'autonomie annoncés (FōhzShop, Urban Moov).",
+  "Suspensions hydrauliques KKE de 165 mm à l'avant et à l'arrière (Max Blinker)."
+ ],
+ "cons": [
+  "51 à 55 kg selon les fiches : Max Blinker souligne qu'elle se range et se porte difficilement.",
+  "Les fiches divergent sur les freins, le poids et l'étanchéité : vérifie l'étrier monté sur ta trottinette avant de commander des plaquettes.",
+  "Aucun test de presse français ne publie d'autonomie mesurée.",
+  "Sa vitesse de pointe n'est utilisable que sur terrain privé : en France, la voie publique est limitée à 25 km/h."
+ ],
+ "parts": [
+  {
+   "label": "Pneu",
+   "size": "90/65-6.5 (11 pouces)",
+   "count": 11,
+   "to": "/piece/pneu-90-65-6-5-off-road-tubeless",
+   "cta": "Pneus 90/65-6.5"
+  },
+  {
+   "label": "Chambre à air",
+   "size": "90/65-6.5, valve droite ou coudée",
+   "count": 5,
+   "to": "/piece/chambre-a-air-90-65-6-5-valve-coudee-ewheel",
+   "cta": "Chambres à air"
+  },
+  {
+   "label": "Plaquettes",
+   "size": "étrier Nutt 4 pistons",
+   "count": 4,
+   "to": "/piece/plaquettes-de-freins-shimano-d03s-nutt-4-pistons-thunder-3-nami-semi-metallique",
+   "cta": "Plaquettes Nutt"
+  },
+  {
+   "label": "Disque de frein",
+   "size": "160 mm, 6 trous, entraxe 44 mm",
+   "count": 7,
+   "to": "/piece/disque-de-frein-160mm",
+   "cta": "Disques 160 mm"
+  },
+  {
+   "label": "Chargeur",
+   "size": "72 V, prise Nami RGX16-2",
+   "count": 1,
+   "to": "/piece/pack-chargeur-72v-adaptateur-nami-rgx16-2",
+   "cta": "Chargeurs 72 V"
+  }
+ ],
+ "care": [
+  "Freins hydrauliques 4 pistons : surveille l'épaisseur des plaquettes et purge le circuit dès que le levier devient mou.",
+  "À plus de 50 kg, contrôle la pression des pneus avant chaque sortie : un 90/65-6.5 sous-gonflé fatigue la jante.",
+  "Une batterie de 2 880 Wh se recharge longtemps : utilise un chargeur 72 V avec prise Nami RGX16-2 et ne la laisse pas vide plusieurs semaines."
+ ],
+ "price": {
+  "text": "Prix affichés par des distributeurs français : de 3 890 € (FōhzShop) à 5 399 € (Urban Moov), 4 350 € chez Funtrott (relevés le 20/10/2026).",
+  "source": "fohzshop.fr, funtrott.fr, urbanmoov.fr"
+ },
+ "faq": [
+  {
+   "q": "Quelle taille de pneu pour la Nami Burn-E 3 Max ?",
+   "a": "Des pneus de 11 pouces en 90/65-6.5, en tubeless, sur une jante de 6,5 pouces."
+  },
+  {
+   "q": "Quelles plaquettes pour la Nami Burn-E 3 Max ?",
+   "a": "Des plaquettes pour étrier hydraulique à quatre pistons. Les revendeurs citent Nutt ou Logan : compare la forme avec ta plaquette usée avant de commander."
+  },
+  {
+   "q": "Quel disque de frein pour la Nami Burn-E 3 Max ?",
+   "a": "Un disque de 160 mm à 6 trous, entraxe 44 mm."
+  },
+  {
+   "q": "Quel chargeur pour la Nami Burn-E 3 Max ?",
+   "a": "Un chargeur 72 V avec prise Nami RGX16-2."
+  },
+  {
+   "q": "Quelle différence entre la Burn-E 3 Max et la Burn-E 3 ?",
+   "a": "La batterie : 40 Ah pour la Max, 30 Ah pour la Burn-E 3. La Max gagne en autonomie et en poids."
+  },
+  {
+   "q": "La Nami Burn-E 3 Max est-elle légale en France ?",
+   "a": "Oui sur la voie publique à condition d'être bridée à 25 km/h, comme toute trottinette électrique. Débridée, elle n'est utilisable que sur terrain privé."
+  }
+ ],
+ "sources": [
+  {
+   "label": "FōhzShop — Nami Burn-E 3 Max 72 V 40 Ah",
+   "url": "https://fohzshop.fr/fr/trottinettes-electriques/nami/nami-burn-e3-max-72v-40ah"
+  },
+  {
+   "label": "Urban Moov — Nami Burn-E 3 Max",
+   "url": "https://www.urbanmoov.fr/boutique/Trottinette-electrique-Nami-Burn-e-3-Max-72V-40AH-p521442243"
+  },
+  {
+   "label": "Max Blinker — Nami Burn-E 3 Max",
+   "url": "https://www.maxblinker.fr/fr/trottinettes-electriques/nami-burn-e-3-max"
+  },
+  {
+   "label": "Nami Electric (pro) — batterie 72 V 2 880 Wh Burn-E 3 Max / Blast 2 Max",
+   "url": "https://pro.nami-electric.com/shop/na0084-batterie-burn-e-3-max-blast-2-max-72v-2880wh-1592"
+  },
+  {
+   "label": "Funtrott — gamme Burn-E 3 / 3 Max",
+   "url": "https://funtrott.fr/285-burn-e-3-3-max"
+  },
+  {
+   "label": "Ministère de la Transition écologique — réglementation des trottinettes",
+   "url": "https://www.ecologie.gouv.fr/politiques-publiques/trottinettes-electriques-edpm-reglementation-vigueur"
+  }
+ ],
+ "video": {
+  "id": "gbAA15DfUXc",
+  "title": "Unboxing et Test off-road de la Nami Burn E3 Max",
+  "channel": "GLISSE URBAINE",
+  "uploadDate": "2023-07-13"
+ }
+}
