@@ -167,6 +167,10 @@ const QV_LOOK: QvLook | null = (() => {
   }
 })();
 const DISPLAY = "'Bebas Neue', 'Inter', sans-serif";
+/* Boutons de la DA du site (Atelier, CategoryExplorer…) : angle coupé en haut à droite,
+   Plus Jakarta Sans 800 majuscules. Demande Nolan 22/10 : « Ajouter » comme les boutons de la DA. */
+const CHAMFER = "polygon(0 0, calc(100% - 12px) 0, 100% 12px, 100% 100%, 0 100%)";
+const DA_FONT = "'Plus Jakarta Sans', 'Inter', sans-serif";
 
 interface DescParts {
   lead: string;
@@ -469,13 +473,15 @@ const QuickViewSheet = ({ open, onClose, part }: Props) => {
   const desc = parseDesc(detail?.description);
   const ficheOutline = {
     height: 48,
-    borderRadius: 13,
-    border: `1.5px solid ${C.sage}`,
+    borderRadius: 0,
+    clipPath: CHAMFER,
+    boxShadow: `inset 0 0 0 1.5px ${C.ink}`,
     background: "#fff",
-    color: C.sageD,
-    fontFamily: DISPLAY,
-    fontSize: 19,
-    letterSpacing: "0.04em",
+    color: C.ink,
+    fontFamily: DA_FONT,
+    fontWeight: 800,
+    fontSize: 14,
+    letterSpacing: "0.06em",
     textTransform: "uppercase" as const,
   };
 
@@ -1219,7 +1225,11 @@ const QuickViewSheet = ({ open, onClose, part }: Props) => {
                       {/* Stepper quantité */}
                       {L !== 4 && <div
                         className="flex items-center overflow-hidden flex-none"
-                        style={{ height: 52, border: `1px solid ${C.line}`, borderRadius: 12, background: "#fff" }}
+                        style={
+                          L
+                            ? { height: 52, borderRadius: 0, clipPath: CHAMFER, boxShadow: `inset 0 0 0 1px ${C.line}`, background: "#fff" }
+                            : { height: 52, border: `1px solid ${C.line}`, borderRadius: 12, background: "#fff" }
+                        }
                       >
                         <button
                           type="button"
@@ -1258,16 +1268,32 @@ const QuickViewSheet = ({ open, onClose, part }: Props) => {
                           "relative flex-1 inline-flex items-center justify-center gap-2 overflow-hidden transition-all duration-200 active:scale-[0.98]",
                           !canBuy && "cursor-not-allowed opacity-60"
                         )}
-                        style={{
-                          height: 52,
-                          borderRadius: 13,
-                          background: canBuy ? C.orange : "#9A9A9A",
-                          color: "#fff",
-                          fontFamily: FONT,
-                          fontWeight: 700,
-                          fontSize: 15,
-                          boxShadow: canBuy ? "0 10px 24px -8px rgba(255,102,0,0.6)" : "none",
-                        }}
+                        style={
+                          L
+                            ? {
+                                height: 52,
+                                borderRadius: 0,
+                                clipPath: CHAMFER,
+                                background: canBuy ? C.orange : "#9A9A9A",
+                                color: "#fff",
+                                fontFamily: DA_FONT,
+                                fontWeight: 800,
+                                fontSize: 14,
+                                letterSpacing: "0.06em",
+                                textTransform: "uppercase",
+                                boxShadow: canBuy ? `inset 0 -3px 0 ${C.orangeD}` : "none",
+                              }
+                            : {
+                                height: 52,
+                                borderRadius: 13,
+                                background: canBuy ? C.orange : "#9A9A9A",
+                                color: "#fff",
+                                fontFamily: FONT,
+                                fontWeight: 700,
+                                fontSize: 15,
+                                boxShadow: canBuy ? "0 10px 24px -8px rgba(255,102,0,0.6)" : "none",
+                              }
+                        }
                         onMouseEnter={(e) => {
                           if (canBuy) e.currentTarget.style.background = C.orangeD;
                         }}
