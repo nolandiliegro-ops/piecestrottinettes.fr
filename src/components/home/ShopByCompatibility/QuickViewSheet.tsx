@@ -22,6 +22,11 @@ import {
   ArrowRight,
   ChevronLeft,
   ChevronRight,
+  ShieldCheck,
+  Ruler,
+  Wrench,
+  HelpCircle,
+  Eye,
 } from "lucide-react";
 import useEmblaCarousel from "embla-carousel-react";
 import { toast } from "sonner";
@@ -146,6 +151,55 @@ const buildSpecChips = (
   fb.push({ label: "Dispo", value: fallback.inStock ? "En stock" : "Rupture" });
   return fb.slice(0, 4);
 };
+
+/* ── Propositions de refonte (22/10/2026, méthode cinq-propositions-rendues) ──
+   ?qv=1..5 → proposition ; sans paramètre → rendu actuel inchangé. */
+type QvLook = 1 | 2 | 3 | 4 | 5;
+const QV_LOOK: QvLook | null = (() => {
+  try {
+    const n = Number(new URLSearchParams(window.location.search).get("qv"));
+    return n >= 1 && n <= 5 ? (n as QvLook) : null;
+  } catch {
+    return null;
+  }
+})();
+const DISPLAY = "'Bebas Neue', 'Inter', sans-serif";
+
+interface DescParts {
+  lead: string;
+  points: { label: string; text: string }[];
+}
+
+/* Description vendeuse (<p><strong>accroche</strong> phrase</p><ul><li><strong>Label</strong> : texte</li>…)
+   → accroche complète + points clés. Repli : texte brut. */
+const parseDesc = (html: string | null | undefined): DescParts => {
+  if (!html) return { lead: "", points: [] };
+  try {
+    const doc = new DOMParser().parseFromString(html, "text/html");
+    const p = doc.querySelector("p");
+    const lead = (p?.textContent ?? "").replace(/\s+/g, " ").trim();
+    const points = Array.from(doc.querySelectorAll("li"))
+      .map((li) => {
+        const strong = li.querySelector("strong")?.textContent ?? "";
+        const label = strong.replace(/\s*:\s*$/, "").trim();
+        const text = (li.textContent ?? "").replace(strong, "").replace(/^\s*:\s*/, "").replace(/\s+/g, " ").trim();
+        return { label, text };
+      })
+      .filter((x) => x.label)
+      .slice(0, 4);
+    if (!lead && points.length === 0) return { lead: stripHtml(html), points: [] };
+    return { lead, points };
+  } catch {
+    return { lead: stripHtml(html), points: [] };
+  }
+};
+
+const FICHE_ITEMS = [
+  { icon: ShieldCheck, label: "Compatibilités vérifiées", sub: "modèle par modèle" },
+  { icon: Ruler, label: "Caractéristiques", sub: "cotes et matériaux" },
+  { icon: Wrench, label: "Montage", sub: "outils et étapes" },
+  { icon: HelpCircle, label: "Questions fréquentes", sub: "les réponses atelier" },
+];
 
 const ZOOM_FACTOR = 2;
 
@@ -408,6 +462,19 @@ const QuickViewSheet = ({ open, onClose, part }: Props) => {
         inStock: !isOut,
       });
   const descText = detail?.description ? stripHtml(detail.description) : "";
+  const L = QV_LOOK;
+  const desc = parseDesc(detail?.description);
+  const ficheOutline = {
+    height: 48,
+    borderRadius: 13,
+    border: `1.5px solid ${C.sage}`,
+    background: "#fff",
+    color: C.sageD,
+    fontFamily: DISPLAY,
+    fontSize: 19,
+    letterSpacing: "0.04em",
+    textTransform: "uppercase" as const,
+  };
 
   // Galerie : toutes les images (triées primary→position) depuis les données carte.
   const galleryImages = getAllImages(part.images, part.image_url);
@@ -594,6 +661,20 @@ const QuickViewSheet = ({ open, onClose, part }: Props) => {
                     ...(isMobile ? {} : { y: 0 }),
                   }}
                   {...sheetMotion}
+                  /* Correctif (propositions ?qv=) : sur téléphone, le `style` de sheetMotion
+                     écrasait tout le style ci-dessus (hauteur max, coins, fond, ombre) :
+                     une fiche longue débordait en haut de l'écran. On fusionne. */
+                  {...(L && isMobile
+                    ? {
+                        style: {
+                          y,
+                          background: C.beige,
+                          borderRadius: "26px 26px 0 0",
+                          maxHeight: "93dvh",
+                          boxShadow: "0 -20px 55px -10px rgba(0,0,0,0.42)",
+                        },
+                      }
+                    : {})}
                 >
                   {/* Poignée drag (mobile) */}
                   {isMobile && (
@@ -610,6 +691,67 @@ const QuickViewSheet = ({ open, onClose, part }: Props) => {
                     </div>
                   )}
 
+                  {/* En-tête « aperçu » des propositions ?qv= */}
+                  {(L === 1 || L === 3 || L === 4) && (
+                    <div
+                      className="flex-none flex items-center gap-2"
+                      style={{ minHeight: 40, padding: isMobile ? "0 60px 0 20px" : "14px 60px 0 20px" }}
+                    >
+                      <span
+                        className="inline-flex items-center gap-1.5"
+                        style={{ fontFamily: FONT, fontSize: 12, fontWeight: 800, letterSpacing: "0.1em", textTransform: "uppercase", color: C.sageD }}
+                      >
+                        <Eye size={15} strokeWidth={2.4} /> Aperçu rapide
+                      </span>
+                      <span style={{ fontFamily: FONT, fontSize: 13, color: C.muted }}>· l'essentiel</span>
+                    </div>
+                  )}
+                  {L === 2 && (
+                    <div className="flex-none" style={{ padding: isMobile ? "0 60px 0 20px" : "14px 60px 0 20px" }}>
+                      <div
+                        className="flex items-center justify-between gap-3"
+                        style={{ minHeight: 40 }}
+                      >
+                        <div className="min-w-0">
+                          <div style={{ fontFamily: DISPLAY, fontSize: 22, lineHeight: 1, color: C.ink, letterSpacing: "0.02em" }}>
+                            APERÇU RAPIDE
+                          </div>
+                          <div style={{ fontFamily: FONT, fontSize: 13, color: C.muted, marginTop: 3 }}>
+                            Le détail complet est sur la fiche.
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  )}
+                  {L === 5 && (
+                    <div className="flex-none" style={{ padding: isMobile ? "0 60px 0 20px" : "14px 60px 0 20px" }}>
+                      <div
+                        className="flex items-stretch"
+                        role="tablist"
+                        style={{ height: 44, padding: 4, borderRadius: 13, background: "#ECE7DD" }}
+                      >
+                        <span
+                          role="tab"
+                          aria-selected
+                          className="flex-1 inline-flex items-center justify-center gap-1.5"
+                          style={{ borderRadius: 10, background: C.ink, color: "#fff", fontFamily: DISPLAY, fontSize: 18, letterSpacing: "0.04em" }}
+                        >
+                          <Eye size={15} strokeWidth={2.4} /> APERÇU
+                        </span>
+                        <button
+                          type="button"
+                          role="tab"
+                          aria-selected={false}
+                          onClick={handleSeeProduct}
+                          className="flex-1 inline-flex items-center justify-center gap-1.5"
+                          style={{ borderRadius: 10, color: C.sageD, fontFamily: DISPLAY, fontSize: 18, letterSpacing: "0.04em" }}
+                        >
+                          FICHE COMPLÈTE <ArrowRight size={15} strokeWidth={2.4} />
+                        </button>
+                      </div>
+                    </div>
+                  )}
+
                   {/* Fermer */}
                   <button
                     type="button"
@@ -617,10 +759,10 @@ const QuickViewSheet = ({ open, onClose, part }: Props) => {
                     aria-label="Fermer l'aperçu"
                     className="absolute z-[3] flex items-center justify-center rounded-full transition-transform duration-200 hover:rotate-90"
                     style={{
-                      top: 12,
+                      top: L && isMobile ? 18 : 12,
                       right: 12,
-                      width: 36,
-                      height: 36,
+                      width: L ? 40 : 36,
+                      height: L ? 40 : 36,
                       background: "#ECE7DD",
                       color: "#6B6457",
                     }}
@@ -643,7 +785,7 @@ const QuickViewSheet = ({ open, onClose, part }: Props) => {
                       style={{
                         borderRadius: 18,
                         marginTop: 6,
-                        aspectRatio: "16 / 11",
+                        aspectRatio: L === 4 ? "2 / 1" : "16 / 11",
                         background:
                           "radial-gradient(120% 110% at 50% 12%, #fff 0%, #f4f2ec 68%, #ece9e1 100%)",
                         border: `1px solid ${C.line}`,
@@ -673,7 +815,7 @@ const QuickViewSheet = ({ open, onClose, part }: Props) => {
                             className="inline-block rounded-full"
                             style={{ width: 6, height: 6, background: catColor }}
                           />
-                          {catShort}
+                          {L ? catName : catShort}
                         </span>
                       )}
 
@@ -713,6 +855,9 @@ const QuickViewSheet = ({ open, onClose, part }: Props) => {
                           🔧
                         </div>
                       )}
+
+                      {/* Reflet qui balaie le produit (même effet que la carte) */}
+                      {L && !zoomed && <span aria-hidden className="qv-shine" />}
 
                       {/* Flèches desktop (galerie multi-images) — masquées au zoom */}
                       {hasGallery && !isMobile && !zoomed && (
@@ -773,7 +918,7 @@ const QuickViewSheet = ({ open, onClose, part }: Props) => {
                     </motion.div>
 
                     {/* Miniatures interactives synchronisées embla */}
-                    {hasGallery && (
+                    {hasGallery && L !== 4 && (
                       <motion.div variants={itemV} className="flex gap-2" style={{ marginTop: 10 }}>
                         {galleryImages.map((im, i) => (
                           <button
@@ -805,7 +950,7 @@ const QuickViewSheet = ({ open, onClose, part }: Props) => {
                     )}
 
                     {/* Catégorie */}
-                    {catName && (
+                    {catName && !L && (
                       <motion.div
                         variants={itemV}
                         style={{
@@ -827,18 +972,20 @@ const QuickViewSheet = ({ open, onClose, part }: Props) => {
                     <motion.div variants={itemV}>
                       <DialogPrimitive.Title asChild>
                         <h2
-                          style={{
-                            fontFamily: FONT,
-                            fontWeight: 700,
-                            fontSize: 21,
-                            lineHeight: 1.18,
-                            letterSpacing: "-0.01em",
-                            color: C.ink,
-                          }}
+                          style={
+                            L
+                              ? { fontFamily: DISPLAY, fontWeight: 400, fontSize: 30, lineHeight: 1.02, letterSpacing: "0.01em", textTransform: "uppercase", color: C.ink, marginTop: 16 }
+                              : { fontFamily: FONT, fontWeight: 700, fontSize: 21, lineHeight: 1.18, letterSpacing: "-0.01em", color: C.ink }
+                          }
                         >
                           {part.name}
                         </h2>
                       </DialogPrimitive.Title>
+                      {L && detail?.sku && (
+                        <div style={{ marginTop: 6, fontFamily: FONT, fontSize: 13, color: C.muted }}>
+                          Réf. {detail.sku}
+                        </div>
+                      )}
                     </motion.div>
 
                     {/* Badge compat (couleur de marque + glow) */}
@@ -871,7 +1018,92 @@ const QuickViewSheet = ({ open, onClose, part }: Props) => {
                     )}
 
                     {/* Mini-description (lazy, stripHtml, clamp 4 lignes, masquée si vide) */}
-                    {detailLoading ? (
+                    {L && !detailLoading && (desc.lead || desc.points.length > 0) && (
+                      <motion.div variants={itemV} style={{ marginTop: 14 }}>
+                        {desc.lead && (
+                          <p
+                            className={L === 4 ? "line-clamp-3" : undefined}
+                            style={{ fontFamily: FONT, fontSize: 14, lineHeight: 1.55, color: "#3F3F3F" }}
+                          >
+                            {desc.lead}
+                          </p>
+                        )}
+                        {desc.points.length > 0 && (L === 1 || L === 5) && (
+                          <ul style={{ marginTop: 12, display: "grid", gap: 8 }}>
+                            {desc.points.map((pt, i) => (
+                              <li key={i} className="flex items-start gap-2.5" style={{ fontFamily: FONT, fontSize: 14, lineHeight: 1.45, color: "#3F3F3F" }}>
+                                <span
+                                  className="inline-flex items-center justify-center rounded-full flex-none"
+                                  style={{ width: 20, height: 20, marginTop: 1, background: hexToRgba(C.sage, 0.14), color: C.sageD }}
+                                >
+                                  <Check size={12} strokeWidth={3} />
+                                </span>
+                                <span>
+                                  <b style={{ color: C.ink, fontWeight: 700 }}>{pt.label}</b>
+                                  {pt.text ? ` — ${pt.text}` : ""}
+                                </span>
+                              </li>
+                            ))}
+                          </ul>
+                        )}
+                        {desc.points.length > 0 && (L === 2 || L === 3 || L === 4) && (
+                          <div className="flex flex-wrap gap-2" style={{ marginTop: 12 }}>
+                            {desc.points.map((pt, i) => (
+                              <span
+                                key={i}
+                                className="inline-flex items-center gap-1.5"
+                                style={{ minHeight: 34, padding: "6px 12px", borderRadius: 99, background: "#fff", border: `1px solid ${C.line}`, fontFamily: FONT, fontSize: 14, fontWeight: 600, color: C.ink }}
+                              >
+                                <Check size={13} strokeWidth={3} style={{ color: C.sage }} />
+                                {pt.label}
+                              </span>
+                            ))}
+                          </div>
+                        )}
+                      </motion.div>
+                    )}
+
+                    {L === 3 && (
+                      <motion.div variants={itemV} style={{ marginTop: 16 }}>
+                        <button
+                          type="button"
+                          onClick={handleSeeProduct}
+                          className="w-full text-left transition-shadow hover:shadow-md"
+                          style={{ background: "#fff", border: `1px solid ${C.line}`, borderRadius: 16, padding: 14 }}
+                        >
+                          <div style={{ fontFamily: DISPLAY, fontSize: 20, letterSpacing: "0.03em", color: C.ink, lineHeight: 1 }}>
+                            DANS LA FICHE COMPLÈTE
+                          </div>
+                          <div className="grid grid-cols-2 gap-x-3 gap-y-3" style={{ marginTop: 12 }}>
+                            {FICHE_ITEMS.map(({ icon: Icon, label, sub }) => (
+                              <div key={label} className="flex items-start gap-2">
+                                <span
+                                  className="inline-flex items-center justify-center flex-none"
+                                  style={{ width: 32, height: 32, borderRadius: 9, background: hexToRgba(C.sage, 0.12), color: C.sageD }}
+                                >
+                                  <Icon size={16} strokeWidth={2.2} />
+                                </span>
+                                <span className="min-w-0">
+                                  <span className="block" style={{ fontFamily: FONT, fontSize: 14, fontWeight: 700, color: C.ink, lineHeight: 1.2 }}>{label}</span>
+                                  <span className="block" style={{ fontFamily: FONT, fontSize: 14, color: C.muted, lineHeight: 1.25 }}>{sub}</span>
+                                </span>
+                              </div>
+                            ))}
+                          </div>
+                          <div
+                            className="flex items-center justify-between"
+                            style={{ marginTop: 14, paddingTop: 12, borderTop: `1px solid ${C.line}`, fontFamily: FONT, fontSize: 14, fontWeight: 700, color: C.sageD }}
+                          >
+                            Ouvrir la fiche complète
+                            <span className="inline-flex items-center justify-center rounded-full" style={{ width: 30, height: 30, background: C.sage, color: "#fff" }}>
+                              <ArrowRight size={15} strokeWidth={2.4} />
+                            </span>
+                          </div>
+                        </button>
+                      </motion.div>
+                    )}
+
+                    {L ? null : detailLoading ? (
                       <motion.div variants={itemV} style={{ marginTop: 14 }} aria-hidden>
                         <div className="qv-skel" style={{ height: 13, width: "92%", marginBottom: 7 }} />
                         <div className="qv-skel" style={{ height: 13, width: "98%", marginBottom: 7 }} />
@@ -894,7 +1126,7 @@ const QuickViewSheet = ({ open, onClose, part }: Props) => {
                     ) : null}
 
                     {/* Chips specs (lazy : allowlist + blackliste, sinon fallback propre) */}
-                    {detailLoading ? (
+                    {L ? null : detailLoading ? (
                       <motion.div
                         variants={itemV}
                         className="flex flex-wrap gap-2"
@@ -971,8 +1203,18 @@ const QuickViewSheet = ({ open, onClose, part }: Props) => {
                     }}
                   >
                     <div className="flex items-center gap-3">
+                      {L === 4 && (
+                        <button
+                          type="button"
+                          onClick={handleSeeProduct}
+                          className="inline-flex items-center justify-center gap-1 flex-none transition-colors hover:bg-[#F1F6F2]"
+                          style={{ ...ficheOutline, height: 52, width: "40%" }}
+                        >
+                          Fiche complète
+                        </button>
+                      )}
                       {/* Stepper quantité */}
-                      <div
+                      {L !== 4 && <div
                         className="flex items-center overflow-hidden flex-none"
                         style={{ height: 52, border: `1px solid ${C.line}`, borderRadius: 12, background: "#fff" }}
                       >
@@ -1002,7 +1244,7 @@ const QuickViewSheet = ({ open, onClose, part }: Props) => {
                         >
                           <Plus size={18} strokeWidth={2.4} />
                         </button>
-                      </div>
+                      </div>}
 
                       {/* CTA achat (orange — réservé à l'achat) */}
                       <button
@@ -1055,7 +1297,38 @@ const QuickViewSheet = ({ open, onClose, part }: Props) => {
                       </button>
                     </div>
 
-                    <button
+                    {L === 1 && (
+                      <button
+                        type="button"
+                        onClick={handleSeeProduct}
+                        className="flex items-center justify-center gap-2 w-full transition-colors hover:bg-[#F1F6F2]"
+                        style={{ ...ficheOutline, marginTop: 10 }}
+                      >
+                        Voir la fiche complète
+                        <ArrowRight size={17} strokeWidth={2.4} />
+                      </button>
+                    )}
+                    {L === 2 && (
+                      <button
+                        type="button"
+                        onClick={handleSeeProduct}
+                        className="flex items-center justify-between gap-3 w-full text-left transition-colors hover:bg-[#F1F6F2]"
+                        style={{ marginTop: 10, minHeight: 56, padding: "8px 8px 8px 14px", borderRadius: 13, background: hexToRgba(C.sage, 0.1) }}
+                      >
+                        <span className="min-w-0">
+                          <span className="block" style={{ fontFamily: DISPLAY, fontSize: 19, letterSpacing: "0.04em", color: C.sageD, lineHeight: 1 }}>
+                            VOIR LA FICHE COMPLÈTE
+                          </span>
+                          <span className="block" style={{ fontFamily: FONT, fontSize: 14, color: C.muted, marginTop: 3 }}>
+                            Compatibilités, montage, FAQ
+                          </span>
+                        </span>
+                        <span className="inline-flex items-center justify-center rounded-full flex-none" style={{ width: 40, height: 40, background: C.sage, color: "#fff" }}>
+                          <ArrowRight size={18} strokeWidth={2.4} />
+                        </span>
+                      </button>
+                    )}
+                    {!L && <button
                       type="button"
                       onClick={handleSeeProduct}
                       className="flex items-center justify-center gap-1.5 w-full transition-all hover:gap-2.5"
@@ -1071,7 +1344,7 @@ const QuickViewSheet = ({ open, onClose, part }: Props) => {
                     >
                       <span className="hover:underline underline-offset-4">Voir la fiche complète</span>
                       <ArrowRight size={15} strokeWidth={2.2} />
-                    </button>
+                    </button>}
                   </div>
                 </motion.div>
               </div>
@@ -1086,9 +1359,21 @@ const QuickViewSheet = ({ open, onClose, part }: Props) => {
         .qv-ripple { transform: scale(0); animation: qvRipple 0.56s ease-out; }
         @keyframes qvPulse { 0%, 100% { opacity: 1; } 50% { opacity: 0.45; } }
         .qv-skel { background: #ECE7DD; border-radius: 6px; animation: qvPulse 1.4s ease-in-out infinite; }
+        @keyframes qvShine {
+          0% { transform: translateX(-150%) skewX(-20deg); opacity: 0; }
+          20% { opacity: 1; } 80% { opacity: 1; }
+          100% { transform: translateX(250%) skewX(-20deg); opacity: 0; }
+        }
+        .qv-shine {
+          position: absolute; top: 0; left: 0; width: 55%; height: 100%; z-index: 2; pointer-events: none;
+          background: linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0.55) 50%, rgba(255,255,255,0) 100%);
+          transform: translateX(-150%) skewX(-20deg);
+          animation: qvShine 4.5s ease-in-out infinite;
+        }
         @media (prefers-reduced-motion: reduce) {
           .qv-ripple { animation: none; opacity: 0; }
           .qv-skel { animation: none; }
+          .qv-shine { animation: none; opacity: 0; }
         }
       `}</style>
     </DialogPrimitive.Root>
