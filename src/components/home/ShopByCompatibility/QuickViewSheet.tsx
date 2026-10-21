@@ -153,14 +153,17 @@ const buildSpecChips = (
 };
 
 /* ── Propositions de refonte (22/10/2026, méthode cinq-propositions-rendues) ──
-   ?qv=1..5 → proposition ; sans paramètre → rendu actuel inchangé. */
+   22/10 : Nolan choisit la 1 « Repassé » = rendu PAR DÉFAUT.
+   ?qv=2..5 → autres propositions ; ?qv=0 → ancien aperçu. */
 type QvLook = 1 | 2 | 3 | 4 | 5;
 const QV_LOOK: QvLook | null = (() => {
   try {
-    const n = Number(new URLSearchParams(window.location.search).get("qv"));
+    const raw = new URLSearchParams(window.location.search).get("qv");
+    if (raw === null) return 1;
+    const n = Number(raw);
     return n >= 1 && n <= 5 ? (n as QvLook) : null;
   } catch {
-    return null;
+    return 1;
   }
 })();
 const DISPLAY = "'Bebas Neue', 'Inter', sans-serif";
