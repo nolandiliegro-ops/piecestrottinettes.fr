@@ -53,7 +53,7 @@ const useScooters = () => useQuery({
   queryKey: ['affiliate-scooters'],
   staleTime: 60_000,
   queryFn: async (): Promise<ScooterRow[]> => {
-    const { data, error } = await supabase.from('scooter_models').select('id, name, slug, published, affiliate_link, brands(name)').order('name');
+    const { data, error } = await supabase.from('scooter_models').select('id, name, slug, published, affiliate_link, brands!scooter_models_brand_id_fkey(name)').order('name');
     if (error) throw error;
     return (data || []).map((s: { id: string; name: string; slug: string; published: boolean | null; affiliate_link: string | null; brands: { name: string } | null }) =>
       ({ id: s.id, name: s.name, slug: s.slug, published: s.published, affiliate_link: s.affiliate_link, brand: s.brands?.name ?? null }));
@@ -214,7 +214,7 @@ const ProgramSheet = ({ p, scooters, onClose }: { p: AffiliateProgram; scooters:
 
 const AffiliateProgramsManager = () => {
   const { data: programs = [], isLoading, error } = usePrograms();
-  const { data: scooters = [] } = useScooters();
+  const { data: scooters = [], error: scootersError } = useScooters();
   const [params, setParams] = useSearchParams();
   const type = params.get('type') === 'fournisseur' ? 'fournisseur' : 'affiliation';
   const statut = params.get('statut') as AffStatut | null;
@@ -245,7 +245,9 @@ const AffiliateProgramsManager = () => {
       <div className="admin-glass-card rounded-2xl p-4 space-y-3">
         <div className="flex flex-wrap items-baseline justify-between gap-2">
           <h3 className="text-base font-black uppercase tracking-wide text-[hsl(var(--admin-text))]">Affiliation & fournisseurs</h3>
-          {type === 'affiliation' && <span className="text-sm text-[hsl(var(--admin-text-muted))] tabular-nums">{linkedTotal} trottinettes avec lien suivi</span>}
+          {type === 'affiliation' && (scootersError
+            ? <span className="text-sm text-red-700">Trottinettes illisibles : {(scootersError as Error).message}</span>
+            : <span className="text-sm text-[hsl(var(--admin-text-muted))] tabular-nums">{linkedTotal} trottinettes avec lien suivi</span>)}
         </div>
         <div className="inline-flex p-1 rounded-xl border border-[hsl(var(--admin-border))] bg-white">
           {(['affiliation', 'fournisseur'] as const).map(t => (
