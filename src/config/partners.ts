@@ -47,6 +47,7 @@ Object.assign(PARTNERS, {
   // 23/10/2026 — GoAffPro : boutique EU officielle de la marque (livraison FR lue dans /meta.json).
   "haloknights.com": OFFICIAL("HALO KNIGHT Europe"),
   "teverunshop.com": OFFICIAL("Teverun Europe"),
+  "fr.engwe.com": OFFICIAL("ENGWE France"),
 });
 
 const shopUrlOf = (url: string): URL => {
