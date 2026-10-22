@@ -44,6 +44,9 @@ Object.assign(PARTNERS, {
   "iscooter.fr": OFFICIAL("iScooter France"),
   "naveetech.fr": OFFICIAL("NAVEE France"),
   "isinwheel.fr": OFFICIAL("isinwheel France"),
+  // 23/10/2026 — GoAffPro : boutique EU officielle de la marque (livraison FR lue dans /meta.json).
+  "haloknights.com": OFFICIAL("HALO KNIGHT Europe"),
+  "teverunshop.com": OFFICIAL("Teverun Europe"),
 });
 
 const shopUrlOf = (url: string): URL => {
