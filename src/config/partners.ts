@@ -33,10 +33,32 @@ export const PARTNERS: Record<string, Partner> = {
   },
 };
 
+/**
+ * 22/10/2026 — liens Awin (awin1.com/cread.php?…&ued=<url boutique>) : le domaine du lien est celui du tracker,
+ * pas de la boutique. On lit la boutique réelle dans `ued` (sinon le bouton affichait « Voir chez awin1.com »).
+ * Boutiques des programmes Awin acceptés le 22/10 : sites officiels des marques (lus le 22/10).
+ */
+const OFFICIAL = (name: string): Partner => ({ name, tagline: "Boutique officielle de la marque" });
+Object.assign(PARTNERS, {
+  "mi.com": OFFICIAL("Xiaomi France"),
+  "iscooter.fr": OFFICIAL("iScooter France"),
+  "naveetech.fr": OFFICIAL("NAVEE France"),
+  "isinwheel.fr": OFFICIAL("isinwheel France"),
+});
+
+const shopUrlOf = (url: string): URL => {
+  const u = new URL(url);
+  const ued = u.searchParams.get("ued");
+  if (/(^|\.)awin1\.com$/.test(u.hostname) && ued) {
+    try { return new URL(ued); } catch { /* lien Awin mal formé : on garde le domaine du tracker */ }
+  }
+  return u;
+};
+
 export const partnerOf = (url?: string | null): (Partner & { host: string }) | null => {
   if (!url) return null;
   try {
-    const host = new URL(url).hostname.replace(/^www\./, "");
+    const host = shopUrlOf(url).hostname.replace(/^www\./, "");
     return { host, ...(PARTNERS[host] ?? { name: host }) };
   } catch {
     return null;
