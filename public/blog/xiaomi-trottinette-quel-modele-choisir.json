@@ -1,0 +1,234 @@
+{
+  "slug": "xiaomi-trottinette-quel-modele-choisir",
+  "title": "Trottinette Xiaomi : quel modèle choisir dans la gamme actuelle ?",
+  "description": "Séries 4 2nd Gen, 5, 6 et Elite : ce qui change d'une génération à l'autre, quel modèle pour quel trajet, et les pièges des noms qui se ressemblent.",
+  "category": "Choisir dans une gamme",
+  "updated": "2026-10-23",
+  "readMinutes": 10,
+  "metaTitle": "Trottinette Xiaomi : quel modèle choisir en 2026 ?",
+  "metaDescription": "Xiaomi 6 Lite, 6, 6 Pro, 5, 5 Pro, 5 Max, 5 Plus, Elite ou 4 Pro 2nd Gen : les vraies différences, l'autonomie mesurée et les pièges des noms proches.",
+  "verdict": [
+    "Série 5 et Elite : roues de 10 pouces en 60/70-6.5, les plus légères (20 à 22,4 kg). Série 6 (sauf la Lite) et 5 Plus : roues de 12 pouces, plus stables mais au-dessus de 26 kg.",
+    "Le suffixe compte plus que le chiffre : une 5 Pro et une 6 Pro n'ont ni les mêmes pneus ni le même frein, une 4 Pro et une 4 Pro 2nd Gen non plus.",
+    "Au Labo Fnac, l'autonomie mesurée va de 64 % (6 Lite) à 83 % (Scooter 5) de l'annonce : choisis ta batterie avec une marge."
+  ],
+  "compare": {
+    "title": "La gamme Xiaomi actuelle",
+    "scooters": [
+      "xiaomi-electric-scooter-6-lite",
+      "xiaomi-electric-scooter-6",
+      "xiaomi-electric-scooter-6-pro",
+      "xiaomi-electric-scooter-elite",
+      "xiaomi-electric-scooter-5",
+      "xiaomi-electric-scooter-5-pro",
+      "xiaomi-electric-scooter-5-max",
+      "xiaomi-electric-scooter-5-plus",
+      "xiaomi-electric-scooter-4-pro-2nd-gen"
+    ]
+  },
+  "sections": [
+    {
+      "id": "generations",
+      "h2": "Ce qui distingue chaque génération",
+      "paragraphs": [
+        "La série 4 2nd Gen (2024) a déplacé le moteur à l'arrière et remplacé le disque arrière par un tambour avant. La 4 Pro 2nd Gen roule sur des pneus tubeless de 10 pouces, sans aucune suspension.",
+        "La série 5 (2025) garde les pneus tubeless 60/70-6.5 de 10 pouces et la batterie de 477 Wh sur les 5, 5 Pro et 5 Max, et ajoute des suspensions : avant seulement sur la 5, avant et arrière sur la 5 Pro et la 5 Max. La 5 Plus, sortie en septembre 2025, est une Scooter 5 sur roues de 12 pouces.",
+        "La série 6 (février 2026) passe aux roues de 12 pouces sur la 6, la 6 Pro et la 6 Max, que Frandroid présente comme une rupture de conception. Contrepartie : elles pèsent 26,3 kg (6), 27,3 kg (6 Pro) et 29,7 kg (6 Max) selon Frandroid. La 6 Lite reste en 10 pouces.",
+        "L'Elite (2025) se place à part : 10 pouces tubeless, batterie de 360 Wh, 20 kg, double ressort à l'avant. C'est une alternative plus légère aux séries 5 et 6."
+      ],
+      "bullets": [
+        "Tambour avant + frein électronique arrière : Elite, toute la série 5, Scooter 6, 4 Pro 2nd Gen. Pas de plaquettes à changer.",
+        "Disque mécanique avant : 6 Pro. Deux disques : 6 Max, selon Frandroid.",
+        "Pneus 60/70-6.5 (10 pouces) : 4 Pro 2nd Gen, 5, 5 Pro, 5 Max, Elite.",
+        "Pneus 60/90-8 (12 pouces) : 5 Plus et Scooter 6. Pneus tout-terrain 12x2.5 : 6 Pro."
+      ]
+    },
+    {
+      "id": "6-lite",
+      "h2": "Xiaomi 6 Lite : petit budget, petits trajets",
+      "paragraphs": [
+        "Moteur de 300 W (500 W en pointe), batterie de 216 Wh, 18,1 kg, pneus gonflables de 10 pouces en 10x2.125-6.5 et double ressort de 25 mm à l'avant, peu courant en entrée de gamme. Le Labo Fnac lui trouve une belle accélération.",
+        "Sa limite, c'est l'autonomie : 16 km mesurés par le Labo Fnac pour 25 km annoncés, et 9 % de pente mesurés pour 15 % annoncés. Elle est étanche IPX4 seulement.",
+        "Pour qui : des trajets de moins de 6 à 7 km par sens, sur le plat."
+      ],
+      "scooter": "xiaomi-electric-scooter-6-lite",
+      "parts": [
+        { "label": "Pneu 10x2.125-6.5", "slugs": ["pneu-10x2-125-6-5-ninebot-f"] }
+      ]
+    },
+    {
+      "id": "elite",
+      "h2": "Xiaomi Elite : le bon compromis en 10 pouces",
+      "paragraphs": [
+        "Moteur arrière de 400 W (700 W en pointe), batterie 36 V de 360 Wh, 20 kg, pneus tubeless 60/70-6.5 et double ressort de 30 mm à l'avant. Le Labo Fnac estime qu'elle a presque tout pour elle : bonne accélération, vitesse stable en côte, facile à transporter.",
+        "Sa limite : 35,2 km mesurés par le Labo Fnac pour 45 km annoncés, et une charge d'environ 7 heures.",
+        "Pour qui : la ville au quotidien quand tu dois la porter de temps en temps."
+      ],
+      "scooter": "xiaomi-electric-scooter-elite",
+      "parts": [
+        { "label": "Pneus tubeless 60/70-6.5", "slugs": ["pneu-tubeless-60-70-6-5-wanda", "pneu-60-70-6-5-gel-anti-crevaison-ewheel", "pneu-tubeless-10x2-50-6-5-gel-anti-crevaison-cst"] }
+      ]
+    },
+    {
+      "id": "5",
+      "h2": "Xiaomi Scooter 5 : la base de la série 5",
+      "paragraphs": [
+        "Moteur de 350 W (700 W en pointe) selon Darty, batterie 48 V de 477 Wh, 20,1 kg, pneus tubeless 60/70-6.5 et suspension à l'avant seulement. L'Éclaireur Fnac a mesuré 50 km pour 60 km annoncés et salue ses performances en côte.",
+        "Sa limite : l'arrière reste ferme sans suspension, et Cleanrider juge le moteur peu nerveux et l'autonomie réelle inférieure à la promesse.",
+        "Pour qui : c'est la meilleure autonomie mesurée par le Labo Fnac dans la gamme, pour des trajets jusqu'à 15-17 km par sens sur bonne chaussée."
+      ],
+      "scooter": "xiaomi-electric-scooter-5",
+      "parts": [
+        { "label": "Pneus tubeless 60/70-6.5", "slugs": ["pneu-tubeless-60-70-6-5-wanda", "pneu-60-70-6-5-gel-anti-crevaison-ewheel", "pneu-tubeless-10x2-50-6-5-gel-anti-crevaison-cst"] }
+      ]
+    },
+    {
+      "id": "5-pro",
+      "h2": "Xiaomi 5 Pro : double suspension et contrôle de traction",
+      "paragraphs": [
+        "Moteur de 400 W (1 000 W en pointe), même batterie de 477 Wh, 22,4 kg, suspensions avant et arrière et contrôle de traction, que Presse-citron juge efficace sur chaussée humide. L'Éclaireur Fnac y voit un solide rapport qualité-prix.",
+        "Sa limite : 46,5 km mesurés au Labo Fnac pour 60 km annoncés, et un seul frein mécanique, le tambour avant, avec environ 6 m pour s'arrêter à pleine vitesse selon Presse-citron et 01net.",
+        "Pour qui : la ville par tous les temps, avec des pavés et des côtes."
+      ],
+      "scooter": "xiaomi-electric-scooter-5-pro",
+      "parts": [
+        { "label": "Pneus tubeless 60/70-6.5", "slugs": ["pneu-tubeless-60-70-6-5-wanda", "pneu-60-70-6-5-gel-anti-crevaison-ewheel", "pneu-tubeless-10x2-50-6-5-gel-anti-crevaison-cst"] }
+      ]
+    },
+    {
+      "id": "5-max",
+      "h2": "Xiaomi 5 Max : le confort de la série 5",
+      "paragraphs": [
+        "Même batterie de 477 Wh et même moteur de 400 W que la 5 Pro, mais une suspension avant hydraulique à double ressort. Frandroid retient le confort, l'agrément de conduite et le grand plateau. Elle pèse 22,3 kg.",
+        "Sa limite : Jeuxvideo.com a fait environ 26 km en conduite énergique avec un pilote de 80 kg, et Frandroid relève une charge lente de 9 heures et un freinage perfectible.",
+        "Pour qui : les chaussées dégradées, quand le confort passe avant tout."
+      ],
+      "scooter": "xiaomi-electric-scooter-5-max",
+      "parts": [
+        { "label": "Pneus tubeless 60/70-6.5", "slugs": ["pneu-tubeless-60-70-6-5-wanda", "pneu-60-70-6-5-gel-anti-crevaison-ewheel", "pneu-tubeless-10x2-50-6-5-gel-anti-crevaison-cst"] }
+      ]
+    },
+    {
+      "id": "5-plus",
+      "h2": "Xiaomi 5 Plus : une Scooter 5 en 12 pouces",
+      "paragraphs": [
+        "Batterie de 477 Wh, moteur de 400 W (900 W en pointe), roues tubeless de 12 pouces en 60/90-8 et double ressort à l'avant. Frandroid lui trouve un comportement plus stable et serein grâce aux grandes roues.",
+        "Sa limite : 26,6 kg selon Xiaomi (26,7 kg selon Cleanrider), une direction moins vive que la Scooter 5 selon Cleanrider, et pas de suspension arrière.",
+        "Pour qui : si tu veux les grandes roues avec la batterie de la série 5 et que tu ne la portes jamais."
+      ],
+      "scooter": "xiaomi-electric-scooter-5-plus",
+      "parts": [
+        { "label": "Pneus tubeless 60/90-8", "slugs": ["pneu-tubeless-60-90-8-yuanxing", "pneu-tubeless-60-90-8-gel-anti-crevaison-yuanxing"] }
+      ]
+    },
+    {
+      "id": "6",
+      "h2": "Xiaomi Scooter 6 : 12 pouces et double suspension",
+      "paragraphs": [
+        "Moteur de 400 W (800 W en pointe), roues tubeless de 12 pouces en 60/90-8, double ressort à l'avant et ressort à l'arrière. Le Labo Fnac retient un moteur réactif qui monte les pentes raides.",
+        "Sa limite : sa batterie est plus petite que celle de la série 5, 360 Wh contre 477 Wh. Le Labo Fnac a mesuré 33,2 km pour 45 km annoncés, et note qu'elle prend de l'embonpoint avec 26,3 kg.",
+        "Pour qui : des trajets courts sur mauvaise chaussée, sans escalier."
+      ],
+      "scooter": "xiaomi-electric-scooter-6",
+      "parts": [
+        { "label": "Pneus tubeless 60/90-8", "slugs": ["pneu-tubeless-60-90-8-yuanxing", "pneu-tubeless-60-90-8-gel-anti-crevaison-yuanxing"] }
+      ]
+    },
+    {
+      "id": "6-pro",
+      "h2": "Xiaomi 6 Pro : la Xiaomi des chemins",
+      "paragraphs": [
+        "Batterie 48 V de 468 Wh, moteur arrière de 400 W (1 000 W en pointe), pneus tout-terrain de 12 pouces en 12x2.5, 15 cm de garde au sol, disque avant et suspensions avant et arrière. Cleanrider salue son efficience, plus de 40 km avec 468 Wh, et sa stabilité.",
+        "Sa limite : Cleanrider mesure plus de 5 m pour s'arrêter à 25 km/h, et à 27,3 kg avec une recharge sur la trottinette uniquement, Frandroid la juge pénible sans ascenseur.",
+        "Pour qui : alterner bitume et chemins de terre."
+      ],
+      "scooter": "xiaomi-electric-scooter-6-pro"
+    },
+    {
+      "id": "4-pro-2nd-gen",
+      "h2": "Xiaomi 4 Pro 2nd Gen : sans suspension, mais endurante",
+      "paragraphs": [
+        "Moteur arrière de 400 W (1 000 W en pointe), batterie 48 V de 468 Wh, 19 kg, pneus tubeless 60/70-6.5. Le Labo Fnac a mesuré 49,5 km et la trouve à l'aise dans les côtes.",
+        "Sa limite : aucune suspension, donc un confort qui repose sur les pneus, et un freinage jugé insuffisant par 01net au regard de la puissance (4,30 m à 25 km/h).",
+        "Pour qui : de bonnes routes et de la distance, au poids le plus faible de la gamme 48 V."
+      ],
+      "scooter": "xiaomi-electric-scooter-4-pro-2nd-gen",
+      "parts": [
+        { "label": "Pneus tubeless 60/70-6.5", "slugs": ["pneu-tubeless-60-70-6-5-wanda", "pneu-60-70-6-5-gel-anti-crevaison-ewheel", "pneu-tubeless-10x2-50-6-5-gel-anti-crevaison-cst"] }
+      ]
+    },
+    {
+      "id": "pieges-noms",
+      "h2": "Les pièges des noms qui se ressemblent",
+      "paragraphs": [
+        "Chez Xiaomi, deux trottinettes au nom presque identique peuvent ne partager aucune pièce d'usure. Avant de commander un pneu ou des plaquettes, lis le nom complet sous le plateau ou dans l'application, et la taille sur le flanc du pneu."
+      ],
+      "bullets": [
+        "4 Pro et 4 Pro 2nd Gen : la première a son moteur à l'avant et un disque arrière de 130 mm ; la 2nd Gen a le moteur à l'arrière et un tambour avant, donc pas de plaquettes (Xiaomi, 01net). Côté pneus, des vendeurs donnent la première en 60/70-7 et la 2nd Gen est en 60/70-6.5 : ils ne s'échangent pas.",
+        "5, 5 Pro et 5 Max : mêmes pneus 60/70-6.5 et même batterie de 477 Wh. La différence est dans les suspensions et le moteur.",
+        "5 Plus : malgré son nom, elle ne prend pas les pneus de la Scooter 5. Elle roule en 12 pouces 60/90-8.",
+        "5 Pro et 6 Pro : la 6 Pro passe aux pneus tout-terrain 12x2.5 et remplace le tambour avant par un disque.",
+        "Scooter 6 et 6 Pro : même diamètre de 12 pouces, mais pas le même pneu (60/90-8 contre 12x2.5) ni le même frein.",
+        "4 Lite 2nd Gen : elle est passée en 10 pouces (10x2.125), la 4 Lite de première génération roulait en 8,5 pouces selon Frandroid."
+      ]
+    },
+    {
+      "id": "quel-trajet",
+      "h2": "Quel modèle pour quel trajet",
+      "paragraphs": [
+        "Pars de ta distance aller-retour et garde une marge de 30 % sur l'autonomie mesurée par les tests : le froid, le poids et les côtes la font baisser."
+      ],
+      "bullets": [
+        "Moins de 12 km aller-retour, budget serré : 6 Lite.",
+        "15 à 25 km aller-retour, à porter parfois : Elite. Jusqu'à 30 km sur bonne route : 4 Pro 2nd Gen.",
+        "30 km et plus aller-retour en ville : Scooter 5, ou 5 Pro si la chaussée est mauvaise ou souvent mouillée.",
+        "Pavés et chaussées dégradées : 5 Max (10 pouces) ou Scooter 6 (12 pouces).",
+        "Bitume et chemins : 6 Pro."
+      ]
+    }
+  ],
+  "faq": [
+    {
+      "q": "Quelle est la différence entre la Xiaomi 5 et la 5 Pro ?",
+      "a": "La Scooter 5 n'est suspendue qu'à l'avant et a un moteur de 350 W. La 5 Pro est suspendue à l'avant et à l'arrière, a un moteur de 400 W (1 000 W en pointe) et un contrôle de traction. Elles ont la même batterie de 477 Wh et les mêmes pneus 60/70-6.5."
+    },
+    {
+      "q": "Quelle Xiaomi a la meilleure autonomie réelle ?",
+      "a": "Parmi les mesures du Labo Fnac, la Scooter 5 arrive à 50 km et la 4 Pro 2nd Gen à 49,5 km. La 5 Pro fait 46,5 km, l'Elite 35,2 km, la Scooter 6 33,2 km et la 6 Lite 16 km."
+    },
+    {
+      "q": "La Xiaomi 4 Pro et la 4 Pro 2nd Gen ont-elles les mêmes pneus ?",
+      "a": "Non. La 4 Pro 2nd Gen roule en 60/70-6.5 sur une jante de 6,5 pouces ; des vendeurs donnent la 4 Pro de première génération en 60/70-7. Le dernier chiffre est la jante : un pneu ne se monte que sur sa jante."
+    },
+    {
+      "q": "Quelles trottinettes Xiaomi ont des plaquettes de frein ?",
+      "a": "Dans la gamme actuelle, la 6 Pro a un disque avant et la 6 Max deux disques, selon Frandroid. L'Elite, toute la série 5, la Scooter 6 et la 4 Pro 2nd Gen freinent avec un tambour avant et un frein électronique : pas de plaquettes."
+    },
+    {
+      "q": "Les roues de 12 pouces de la série 6 valent-elles le coup ?",
+      "a": "Elles rendent la conduite plus stable selon Frandroid et Cleanrider, mais les modèles en 12 pouces pèsent 26,3 à 29,7 kg. Si tu portes ta trottinette, reste en 10 pouces."
+    }
+  ],
+  "sources": [
+    { "label": "Frandroid — Xiaomi Electric Scooter 6, 6 Pro et 6 Max", "url": "https://www.frandroid.com/marques/xiaomi/2990333_les-trottinettes-electriques-xiaomi-electric-scooter-6-6-pro-et-6-max-sont-la-de-la-nouveaute-a-gogo-tout-ce-quil-faut-savoir" },
+    { "label": "L'Éclaireur Fnac — test Labo Xiaomi 6 Lite", "url": "https://leclaireur.fnac.com/test/678909-test-labo-de-la-xiaomi-mi-scooter-6-lite-pour-une-fois-xiaomi-rate-la-marche/" },
+    { "label": "L'Éclaireur Fnac — test Labo Xiaomi Scooter 6", "url": "https://leclaireur.fnac.com/test/689647-test-labo-de-la-xiaomi-electric-scooter-6-toujours-un-excellent-choix-a-prix-modere/" },
+    { "label": "Cleanrider — test Xiaomi Electric Scooter 6 Pro", "url": "https://www.cleanrider.com/essais/trottinette-electrique/test-avis-xiaomi-electric-scooter-6-pro-cette-trottinette-a-roues-de-12-pouces-changent-elles-vraiment-tout/" },
+    { "label": "Frandroid — Xiaomi Electric Scooter 6 Pro", "url": "https://www.frandroid.com/produits/trottinette-electrique/xiaomi/2992319-xiaomi-electric-scooter-6-pro" },
+    { "label": "L'Éclaireur Fnac — test Labo Xiaomi Scooter Elite", "url": "https://leclaireur.fnac.com/test/627470-test-labo-de-la-xiaomi-mi-scoot-elite-n-elle-a-presque-tout-pour-elle/" },
+    { "label": "L'Éclaireur Fnac — test Labo Xiaomi Scooter 5", "url": "https://leclaireur.fnac.com/test/595412-test-labo-de-la-xiaomi-electric-scooter-5-toujours-un-excellent-choix/" },
+    { "label": "Cleanrider — test Xiaomi Electric Scooter 5", "url": "https://www.cleanrider.com/essais/trottinette-electrique/test-xiaomi-electric-scooter-5/" },
+    { "label": "L'Éclaireur Fnac — test Labo Xiaomi 5 Pro", "url": "https://leclaireur.fnac.com/test/595414-test-labo-de-la-xiaomi-miscoot5pron-un-solide-rapport-qualite-prix/" },
+    { "label": "Presse-citron — test Xiaomi Electric Scooter 5 Pro", "url": "https://www.presse-citron.net/test-xiaomi-electric-scooter-5-pro/" },
+    { "label": "Frandroid — on a testé la Xiaomi Electric Scooter 5 Max", "url": "https://www.frandroid.com/marques/2524081_on-a-teste-la-xiaomi-electric-scooter-5-max-un-prix-canon-pour-une-trottinette-electrique-tout-confort" },
+    { "label": "Jeuxvideo.com — test Xiaomi Electric Scooter 5 Max", "url": "https://www.jeuxvideo.com/high-tech/tests/test-1994316.htm" },
+    { "label": "Frandroid — on a testé la Xiaomi Electric Scooter 5 Plus", "url": "https://www.frandroid.com/marques/xiaomi/2920357_on-a-teste-la-xiaomi-electric-scooter-5-plus-une-trottinette-electrique-avec-des-roues-de-12-pouces-qui-offre-une-belle-serenite" },
+    { "label": "Cleanrider — Xiaomi Electric Scooter 5 Plus", "url": "https://www.cleanrider.com/actus/xiaomi-electric-scooter-5-plus/" },
+    { "label": "Xiaomi France — Electric Scooter 4 Pro (1re génération)", "url": "https://www.mi.com/fr/product/xiaomi-electric-scooter-4-pro/" },
+    { "label": "Xiaomi France — Electric Scooter 4 Pro (2nd Gen), caractéristiques", "url": "https://www.mi.com/fr/product/xiaomi-electric-scooter-4-pro-2nd-gen/specs/" },
+    { "label": "L'Éclaireur Fnac — test Labo Xiaomi 4 Pro (2nd Gen)", "url": "https://leclaireur.fnac.com/test/515117-test-labo-de-la-xiaomi-electric-scooter-4-pro-2nd-gen-une-prestation-a-lequilibre/" },
+    { "label": "01net — test Xiaomi Electric Scooter 4 Pro (2e Gén.)", "url": "https://www.01net.com/tests/test-trottinette-xiaomi-electric-scooter-4-pro-2e-gen-la-deuxieme-fois-cest-souvent-mieux-surtout-quand-cest-moins-cher-et-plus-puissant.html" },
+    { "label": "Trot'Nation — pneu tubeless 60/70-7 Xiaomi 4 Pro", "url": "https://www.trotnation.com/products/pneu-tubeless-60-70-7-250x54-xiaomi-4-pro-4-lite" },
+    { "label": "Frandroid — test Xiaomi 4 Lite 2nd Gen", "url": "https://www.frandroid.com/marques/xiaomi/2000818_test-de-la-xiaomi-electric-scooter-4-lite-2nd-gen-2024-bien-plus-abordable-mais-pas-sans-concessions" }
+  ]
+}

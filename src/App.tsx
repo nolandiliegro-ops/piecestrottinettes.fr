@@ -40,6 +40,8 @@ const OrderSuccessPage = lazy(() => import("./pages/OrderSuccessPage"));
 const PaymentSuccessPage = lazy(() => import("./pages/PaymentSuccessPage"));
 const Pepites = lazy(() => import("./pages/Pepites"));
 const Tutos = lazy(() => import("./pages/Tutos"));
+const Blog = lazy(() => import("./pages/Blog"));
+const BlogArticle = lazy(() => import("./pages/BlogArticle"));
 const NotFound = lazy(() => import("./pages/NotFound"));
 const Profile = lazy(() => import("./pages/Profile"));
 const ExpertStudio = lazy(() => import("./pages/ExpertStudio"));
@@ -90,6 +92,8 @@ function App() {
             <Route path="/trottinettes" element={<Scooters />} />
             <Route path="/pepites" element={<Pepites />} />
             <Route path="/tutos" element={<Tutos />} />
+            <Route path="/blog" element={<Blog />} />
+            <Route path="/blog/:slug" element={<BlogArticle />} />
             <Route path="/piece/:slug" element={<PartDetail />} />
             <Route path="/scooter/:slug" element={<ScooterDetail />} />
             <Route path="/showroom/:slug" element={<Showroom />} />
