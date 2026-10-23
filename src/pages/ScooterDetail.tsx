@@ -161,6 +161,7 @@ const ScooterDetail = () => {
         layout={layout}
         fullGridId="toutes-les-pieces"
         title={title}
+        tireSize={scooter.tire_size}
       />
     </div>
   );

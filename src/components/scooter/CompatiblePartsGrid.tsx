@@ -9,7 +9,7 @@ import { tubesCatalogueUrl } from "@/components/pdp/CompatibilityMatrix";
 import { Button } from "@/components/ui/button";
 import { Skeleton } from "@/components/ui/skeleton";
 import PartCard from "@/components/parts/PartCard";
-import TireSizeFinder from "@/components/scooter/TireSizeFinder";
+import TireSizeFinder, { useTailleVariant } from "@/components/scooter/TireSizeFinder";
 import VoltageVariantsAlert from "@/components/scooter/VoltageVariantsAlert";
 
 interface CompatiblePartsGridProps {
@@ -29,6 +29,8 @@ interface CompatiblePartsGridProps {
   fullGridId?: string;
   /** Titre de section (la grille complète sous les tuiles « familles » ne répète pas « Pièces compatibles »). */
   title?: string;
+  /** scooter_models.tire_size (texte libre) : pré-filtre par pouce du bloc « Lis la taille sur ton pneu ». */
+  tireSize?: string | null;
 }
 
 // Familles qui vendent (forte marge) d'abord, puis les autres par nombre de pièces.
@@ -94,7 +96,9 @@ const CompatiblePartsGrid = ({
   layout = "grid",
   fullGridId,
   title = "PIÈCES COMPATIBLES",
+  tireSize,
 }: CompatiblePartsGridProps) => {
+  const tailleVariant = useTailleVariant();
   const fams = useMemo(() => familiesOf(parts), [parts]);
   const [fam, setFam] = useState("all");
   const [expanded, setExpanded] = useState(false);
@@ -142,9 +146,15 @@ const CompatiblePartsGrid = ({
                 {title}
               </h2>
             </div>
+            {tailleVariant > 0 && parts.length === 0 ? (
+            <p className="text-muted-foreground">
+              Pas encore de pièce reliée à ta {scooterName} : trouve ta taille de pneu juste en dessous.
+            </p>
+            ) : (
             <p className="text-muted-foreground">
               {parts.length} pièce{parts.length > 1 ? "s" : ""} détachée{parts.length > 1 ? "s" : ""} compatible{parts.length > 1 ? "s" : ""} avec votre {scooterName}
             </p>
+            )}
           </div>
 
           <Link to="/catalogue">
@@ -286,7 +296,7 @@ const CompatiblePartsGrid = ({
 
         {/* 17/10 : aucun pneu / chambre relié → le client lit sa taille sur le flanc du pneu */}
         {!parts.some((p) => ["pneus", "chambres-a-air", "pneus-pleins"].includes(p.category?.slug ?? "")) && (
-          <TireSizeFinder scooterId={scooterId} scooterName={scooterName} />
+          <TireSizeFinder scooterId={scooterId} scooterName={scooterName} tireSize={tireSize} />
         )}
       </div>
     </section>
