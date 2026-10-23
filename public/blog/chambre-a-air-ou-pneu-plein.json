@@ -1,0 +1,186 @@
+{
+  "slug": "chambre-a-air-ou-pneu-plein",
+  "title": "Chambre à air ou pneu plein : que choisir pour ta trottinette ?",
+  "description": "Chambre à air, tubeless, tubeless avec gel, pneu plein, insert : ce que chaque solution change en confort, en adhérence et au montage. Et comment lire la taille sur le flanc pour commander la bonne.",
+  "category": "Entretien",
+  "updated": "2026-10-23",
+  "readMinutes": 8,
+  "metaTitle": "Chambre à air ou pneu plein pour trottinette ?",
+  "metaDescription": "Chambre à air, tubeless, gel anti-crevaison ou pneu plein : avantages, limites et pour qui. Et comment lire la taille sur le flanc (8,5x2, 10x2.50, 80/65-6).",
+  "verdict": [
+    "Tu roules tous les jours sur plusieurs kilomètres : reste en gonflable. Tubeless avec gel si ta jante l'accepte, sinon chambre à air bien gonflée.",
+    "Le pneu plein supprime les crevaisons, mais il transmet plus de vibrations et accroche moins sur sol mouillé. Il convient aux trajets courts sur revêtement lisse.",
+    "Avant de commander, lis les trois chiffres du flanc : le dernier est la jante, et un pneu ne se monte que sur sa jante."
+  ],
+  "sections": [
+    {
+      "id": "les-solutions",
+      "h2": "Les cinq solutions contre la crevaison",
+      "paragraphs": [
+        "Il y a deux grandes familles : le pneu gonflable, avec ou sans chambre à air, et le pneu plein, qui ne contient pas d'air. Entre les deux, on trouve des pneus tubeless avec un gel qui colmate les petits trous, des liquides préventifs à injecter par la valve, et des inserts en mousse.",
+        "La plupart des crevaisons sur chambre à air viennent d'un pneu sous-gonflé : au premier trottoir, la jante pince la chambre. Selon E-Watts, c'est 90 % des crevaisons. Avant de changer de technologie, contrôle donc ta pression au moins deux fois par mois."
+      ],
+      "bullets": [
+        "Chambre à air : le plus confortable et le plus simple à remplacer, mais le plus exposé aux crevaisons.",
+        "Tubeless : pas de chambre à pincer, se répare souvent avec une mèche sans démonter.",
+        "Tubeless avec gel : colmate tout seul les petites perforations en roulant.",
+        "Pneu plein : zéro crevaison, mais plus de vibrations et moins d'adhérence sur le mouillé.",
+        "Insert en mousse : solution de niche, compatibilité à vérifier au cas par cas."
+      ]
+    },
+    {
+      "id": "chambre-a-air",
+      "h2": "La chambre à air : confort et simplicité",
+      "paragraphs": [
+        "C'est le montage d'origine de beaucoup de trottinettes, dont la Xiaomi M365 et ses dérivées en 8,5 pouces. Le pneu travaille sur un coussin d'air : il épouse les irrégularités et garde une bonne adhérence, y compris sous la pluie.",
+        "Sa limite, c'est la crevaison par pincement quand la pression baisse, et le démontage souvent pénible sur les petites roues. Une rustine dépanne, mais reste temporaire selon Meilleur-Trottinette : remplace la chambre dès que possible.",
+        "Piège à connaître : la valve. Une même taille de chambre existe en valve droite, coudée à 45°, à 90° ou à 135°. Regarde la tienne avant de commander, sinon elle ne sortira pas par le trou de la jante ou butera contre le moteur."
+      ],
+      "parts": [
+        { "label": "Chambres à air 8,5x2 (Xiaomi)", "slugs": ["chambre-a-air-85x2-xiaomi-m365", "chambre-a-air-xiaomi-8-5x2-renforcee"] },
+        { "label": "Chambres à air 10x2.50", "slugs": ["chambre-a-air-10x250-valve-droite", "chambre-a-air-10x250-valve-90x90", "chambre-a-air-10x2-50-valve-45x45"] }
+      ]
+    },
+    {
+      "id": "tubeless",
+      "h2": "Le tubeless, avec ou sans gel",
+      "paragraphs": [
+        "Le pneu tubeless se monte directement sur une jante étanche, sans chambre. Tu ne peux plus pincer de chambre, et en cas de perforation l'air sort plus lentement. Pour un petit trou dans la bande de roulement, une mèche se pose pneu en place, sans démonter la roue (Wheelyshop, Lupéo).",
+        "Beaucoup de tubeless de trottinette ont en plus une couche de gel à l'intérieur, qui se fige sur le trou et le bouche en roulant. Timy Mobility le donne efficace jusqu'à environ 3 à 5 mm. Au-delà, ou sur une coupure du flanc, il faut changer le pneu.",
+        "Ses limites : chaque intervention est plus technique, l'étanchéité pneu-jante demande un montage propre et souvent un compresseur. Et le gel posé en usine ne se recharge en général pas : quand il n'étanche plus, c'est le pneu entier qui se change, selon Wheelyshop. Frandroid a aussi trouvé un pneu à gel plus ferme qu'un pneu à chambre sur une Ninebot F2E.",
+        "Le liquide préventif (type Slime) est une autre option : il s'injecte par la valve, dans un tubeless comme dans une chambre à air. Selon Meilleur-Trottinette, il colmate les perforations jusqu'à 3 mm et se renouvelle tous les 6 à 12 mois ; le fabricant annonce jusqu'à 6 mm et deux ans d'efficacité, selon la fiche E-Watts."
+      ],
+      "parts": [
+        { "label": "Tubeless 8,5x2 avec gel", "slugs": ["pneu-8-5x2-xiaomi-tubeless-avec-gel-anti-crevaison", "pneu-tubeless-8-5x2-6-1-cityroad-gel-anti-crevaison-ewheel"] },
+        { "label": "Tubeless 60/70-6.5 (10x2.50-6.5)", "slugs": ["pneu-tubeless-60-70-6-5-wanda", "pneu-60-70-6-5-gel-anti-crevaison-ewheel", "pneu-tubeless-10x2-50-6-5-gel-anti-crevaison-cst"] }
+      ]
+    },
+    {
+      "id": "pneu-plein",
+      "h2": "Le pneu plein : increvable, mais à quel prix",
+      "paragraphs": [
+        "Le pneu plein est une masse de caoutchouc ou de mousse de polyuréthane : il ne peut pas crever et ne demande aucune pression à vérifier. Le pneu alvéolé, percé de cavités, est un peu plus léger et un peu plus confortable.",
+        "Ses limites sont concrètes. Les vibrations remontent dans le guidon et les poignets, l'adhérence baisse sur sol mouillé, en particulier sur les pavés et les bandes blanches (Solution Trottinette, Weebot, Repair and Run). Trot-Secure ajoute qu'il est plus lourd, ce qui pèse sur l'autonomie et le couple, et qu'il est très difficile à monter.",
+        "Autre effet : les vibrations fatiguent la visserie. Sur pneus pleins, contrôle les serrages plus souvent, surtout sur une trottinette sans suspension dont les pneus faisaient office d'amortisseur.",
+        "Piège à connaître : un pneu plein se choisit aussi à la largeur de jante. Dans la même taille 10x2.50, tu trouveras des pneus pleins pour jante de 34 mm et d'autres pour 43-44 mm. Mesure la tienne avant de commander."
+      ],
+      "parts": [
+        { "label": "Pneus pleins 8,5x2 (Xiaomi)", "slugs": ["pneu-plein-85x2-xiaomi-m365", "pneu-plein-85x2-xiaomi-m365-pro", "pneu-plein-8-5x2-6-1-cityneye"] },
+        { "label": "Pneus pleins 10x2.50-6.5", "slugs": ["pneu-plein-10x2-50-6-5-cityneye", "pneu-plein-10x2-50-6-5-jante-43-mm-ewheel"] }
+      ]
+    },
+    {
+      "id": "insert",
+      "h2": "L'insert anti-crevaison en mousse",
+      "paragraphs": [
+        "L'insert est un boudin de mousse qu'on glisse dans le pneu. Il peut limiter les pincements et permettre de rouler après une perte de pression, mais il ne rend pas le pneu increvable, ajoute du poids et rend le montage plus complexe.",
+        "On a surtout trouvé des inserts conçus pour le vélo et le VTT, rarement documentés pour les petites roues de trottinette. N'en monte un que si le fabricant le donne compatible avec ta taille de pneu, ta jante et ta valve."
+      ]
+    },
+    {
+      "id": "pour-qui",
+      "h2": "Que choisir selon ton usage",
+      "paragraphs": [
+        "Le bon pneu dépend de ton terrain, de ton kilométrage et de ce que te coûte une trottinette immobilisée."
+      ],
+      "bullets": [
+        "Trajets quotidiens de plusieurs kilomètres, par tous les temps : tubeless avec gel si ta jante l'accepte.",
+        "Trottinette d'origine à chambre à air : chambre renforcée, liquide préventif et pression contrôlée deux fois par mois.",
+        "Petits trajets en ville sur revêtement lisse, tu ne veux plus jamais crever : pneu plein, en acceptant le confort plus sec.",
+        "Pavés, chaussées abîmées, trottinette sans suspension : évite le pneu plein.",
+        "Trottinette puissante : reste en gonflable, l'adhérence compte au freinage et en virage sur le mouillé."
+      ]
+    },
+    {
+      "id": "lire-la-taille",
+      "h2": "Comment lire la taille sur le flanc",
+      "paragraphs": [
+        "La taille est moulée sur le flanc du pneu, souvent sous deux formes côte à côte. En pouces, 10x2.50-6.5 se lit : 10 pouces de diamètre extérieur, 2,50 pouces de largeur, jante de 6,5 pouces. En notation européenne (ETRTO), 80/65-6 se lit : 80 mm de largeur, un flanc haut de 65 % de cette largeur, jante de 6 pouces (Mobygum).",
+        "Le dernier chiffre est le plus important. Un pneu 6 pouces ne s'assoit pas sur une jante de 6,5 pouces et risque de déjanter, et un pneu 6,5 pouces ne rentre pas sur une jante de 6 pouces (Mobygum, E-Watts). Sur le flanc, tu trouves aussi la pression maximale (par exemple MAX 58 PSI / 4 BAR) et la flèche du sens de roulage.",
+        "Si le flanc est illisible, cherche la taille dans la fiche de ton modèle sur le site, ou démonte la roue et mesure la jante."
+      ],
+      "bullets": [
+        "8,5x2 = 50/75-6.1 : la taille Xiaomi M365, 1S, Essential, Pro 2, Mi 3.",
+        "10x2.50 : existe en jante 6 pouces (60/85-6 selon Mobygum) et en jante 6,5 pouces (60/70-6.5). Ce ne sont pas les mêmes pneus.",
+        "60/70-6.5 : 10 pouces sur jante 6,5, montée sur les Xiaomi Scooter 5, 5 Pro, 5 Max, Elite et 4 Pro 2nd Gen.",
+        "10x3 = 80/65-6 : 10 pouces larges sur jante 6. Attention, il existe aussi des 10x3 sur jante 6,5.",
+        "90/65-6.5 : 11 pouces sur jante 6,5, montée sur des modèles puissants comme la Teverun Blade GT II."
+      ]
+    },
+    {
+      "id": "10x3",
+      "h2": "Les pièces en 10x3 (80/65-6)",
+      "paragraphs": [
+        "La taille des trottinettes à pneus larges sur jante de 6 pouces. Vérifie le « -6 » sur ton flanc : un 10x3 sur jante 6,5 ne se monte pas à la place."
+      ],
+      "parts": [
+        { "label": "Chambres à air 80/65-6", "slugs": ["chambre-a-air-80-65-6-10x3-valve-droite-ewheel", "chambre-a-air-80-65-6-10x3-valve-coudee-90-ewheel"] },
+        { "label": "Pneus 80/65-6", "slugs": ["pneu-80-65-6-10x3-ewheel", "pneu-tubeless-80-65-6-10x3-cst", "pneu-tubeless-80-65-6-cityroad-gel-anti-crevaison-ewheel"] },
+        { "label": "Pneus pleins 80/65-6", "slugs": ["pneu-plein-80-65-6-10x3-ewheel", "pneu-plein-80-65-6-10x3-noir-amitor"] }
+      ]
+    },
+    {
+      "id": "90-65",
+      "h2": "Les pièces en 90/65-6.5 (11 pouces)",
+      "paragraphs": [
+        "La taille des grosses trottinettes à 11 pouces. Sur ces modèles lourds et puissants, le pneu plein est rarement le bon choix : l'adhérence au freinage compte trop."
+      ],
+      "parts": [
+        { "label": "Chambres à air 90/65-6.5", "slugs": ["chambre-a-air-9065-65-valve-droite", "chambre-a-air-9065-65-11-pouces"] },
+        { "label": "Pneus 90/65-6.5", "slugs": ["pneu-90-65-6-5-route-tubeless", "pneu-90-65-6-5-route-cst", "pneu-90-65-6-5-tubeless-gel-anti-crevaison"] }
+      ]
+    },
+    {
+      "id": "8-5-xiaomi",
+      "h2": "Les pneus gonflables en 8,5x2 (Xiaomi)",
+      "paragraphs": [
+        "Si tu restes en gonflable sur une Xiaomi en 8,5 pouces, choisis un pneu en 8,5x2-6.1 (aussi noté 50/75-6.1)."
+      ],
+      "parts": [
+        { "label": "Pneus 8,5x2", "slugs": ["pneu-8-5x2-xiaomi-50-75-6-1-wanda", "pneu-8-5x2-6-1-cst"] }
+      ]
+    }
+  ],
+  "faq": [
+    {
+      "q": "Est-ce que le pneu plein est une bonne idée sur une trottinette électrique ?",
+      "a": "Il supprime les crevaisons, mais au prix du confort et de l'adhérence sur sol mouillé. Il convient aux petites trottinettes et aux trajets courts en ville, beaucoup moins aux trajets longs, aux pavés et aux modèles puissants."
+    },
+    {
+      "q": "Chambre à air ou tubeless, lequel crève le moins ?",
+      "a": "Le tubeless : sans chambre, il n'y a plus de pincement contre la jante, la cause la plus fréquente des crevaisons. Avec un gel, il colmate aussi les petites perforations en roulant."
+    },
+    {
+      "q": "Comment savoir quelle taille de pneu acheter ?",
+      "a": "Lis le flanc de ton pneu : par exemple 10x2.50-6.5 ou 80/65-6. Le dernier chiffre est le diamètre de la jante en pouces, il doit être identique sur le pneu neuf."
+    },
+    {
+      "q": "Peut-on réparer un pneu tubeless de trottinette ?",
+      "a": "Oui pour un petit trou dans la bande de roulement : une mèche se pose sans démonter le pneu. Un trou dans le flanc ou une grande entaille ne se répare pas de façon sûre : il faut un pneu neuf."
+    },
+    {
+      "q": "Le liquide anti-crevaison marche-t-il dans une chambre à air ?",
+      "a": "Oui, il s'injecte par la valve et colmate les petites perforations. Il ne protège pas des grosses coupures et finit par sécher : Meilleur-Trottinette conseille de le renouveler tous les 6 à 12 mois."
+    },
+    {
+      "q": "Un pneu 10x2.50 va-t-il sur toutes les roues de 10 pouces ?",
+      "a": "Non. Le 10x2.50 existe sur jante de 6 pouces (60/85-6) et de 6,5 pouces (60/70-6.5), et d'autres 10 pouces sont en 10x2.125 ou en 10x3. Vérifie la taille complète, jante comprise."
+    }
+  ],
+  "sources": [
+    { "label": "Mobygum — comment lire les dimensions d'un pneu de trottinette", "url": "https://mobygum.com/dimensions-pneu-trottinette-electrique.htm" },
+    { "label": "E-Watts — pneus 10 pouces trottinette", "url": "https://e-watts.fr/categorie-produit/pieces-detachees-trottinette-electrique/pneu-trottinette-electrique/pneu-10-pouces" },
+    { "label": "E-Watts — pneus de trottinette, types", "url": "https://e-watts.fr/categorie-produit/pieces-detachees-trottinette-electrique/pneu-trottinette-electrique/page/13" },
+    { "label": "E-Watts — préventif anti-crevaison Slime", "url": "https://e-watts.fr/produit/liquide-preventif-anti-crevaison-slime-pneu-tubeless" },
+    { "label": "Solution Trottinette — pneu increvable, chambre à air ou tubeless", "url": "https://solution-trottinette.fr/guides/pneu-trottinette-electrique" },
+    { "label": "Repair and Run — pneu gonflable ou plein", "url": "https://repairandrun.com/articles/choisir-pneu-trottinette-electrique" },
+    { "label": "Weebot — changer le pneu d'une trottinette électrique", "url": "https://www.wee-bot.com/blogs/reparer-sa-trottinette-electrique/changer-pneu-trottinette-electrique" },
+    { "label": "Trot-Secure — quel pneu pour trottinette choisir", "url": "https://www.trot-secure.fr/blogs/blog-trottinette-electrique/pneu-trottinette" },
+    { "label": "Wheelyshop — changer un pneu de trottinette électrique", "url": "https://www.wheelyshop.fr/blogs/entretien-conseils/changer-pneu-trottinette-electrique-guide" },
+    { "label": "Lupéo — réparation pneu trottinette électrique", "url": "https://lupeo.fr/blog/reparation-pneu-trottinette-electrique/" },
+    { "label": "Timy Mobility — pneus plein, chambre à air ou tubeless", "url": "https://www.timy-mobility.fr/blog/pneus-de-trottinette-electrique-plein-chambre-a-air-tubeless/" },
+    { "label": "Meilleur-Trottinette — réparer une crevaison", "url": "https://meilleur-trottinette.fr/articles/guide-reparer-crevaison-trottinette/" },
+    { "label": "Frandroid — test Ninebot KickScooter F2E", "url": "https://www.frandroid.com/marques/segway-ninebot/1698377_test-de-la-ninebot-kickscooter-f2e-tout-en-puissance-a-un-prix-contenu" },
+    { "label": "Cleanrider — comment entretenir une trottinette électrique", "url": "https://www.cleanrider.com/dossiers/trottinette-electrique/comment-entretenir-une-trottinette-electrique/" }
+  ]
+}
