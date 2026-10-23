@@ -17,7 +17,33 @@ export interface FilterableScooter {
   tire_family?: string | null;
   compatible_parts_count?: number | null;
   created_at?: string | null;
+  affiliate_link?: string | null;
+  image_url?: string | null;
+  brand?: { slug?: string | null; name?: string | null } | null;
 }
+
+/** 24/10 (Nolan) : « Notre sélection » = tri par défaut. Ce qui fait vendre en premier :
+ *  lien d'affiliation, beaucoup de pièces compatibles, belles marques ; jamais deux fois la même marque d'affilée en tête. */
+const STAR_BRANDS = ["kukirin", "teverun", "dualtron"]; // citées par Nolan le 24/10
+const NICE_BRANDS = ["xiaomi", "kaabo", "navee", "iscooter", "segway", "ninebot", "nami", "halo-knight", "inokim", "pure-electric", "zero"];
+const selectionScore = (s: FilterableScooter) => {
+  const b = s.brand?.slug ?? "";
+  return (s.affiliate_link ? 100 : 0) +
+    Math.min(Number(s.compatible_parts_count) || 0, 40) * 2 +
+    (STAR_BRANDS.includes(b) ? 90 : NICE_BRANDS.includes(b) ? 40 : 0) +
+    (s.image_url ? 0 : -200);
+};
+/** Écarte les doublons de marque consécutifs dans les `head` premières places (ordre de score conservé sinon). */
+const spreadBrands = <T extends FilterableScooter>(list: T[], head = 36): T[] => {
+  const out: T[] = [];
+  const pool = [...list];
+  while (out.length < head && pool.length) {
+    const last = out[out.length - 1]?.brand?.slug;
+    const i = pool.findIndex((x) => !last || x.brand?.slug !== last);
+    out.push(...pool.splice(i < 0 ? 0 : i, 1));
+  }
+  return [...out, ...pool];
+};
 
 export interface FilterOption<T = FilterableScooter> {
   value: string;
@@ -133,6 +159,7 @@ const asc = (get: (s: FilterableScooter) => number | null) => (a: FilterableScoo
   (get(a) ?? Infinity) - (get(b) ?? Infinity) || a.name.localeCompare(b.name, "fr");
 
 export const SORTS: SortOption[] = [
+  { value: "selection", label: "Notre sélection", cmp: (a, b) => selectionScore(b) - selectionScore(a) || a.name.localeCompare(b.name, "fr") },
   { value: "nom", label: "Nom (A → Z)", cmp: (a, b) => a.name.localeCompare(b.name, "fr") },
   { value: "pieces", label: "Plus de pièces compatibles", cmp: desc((s) => num(s.compatible_parts_count)) },
   { value: "puissance", label: "Les plus puissantes", cmp: desc((s) => num(s.power_watts)) },
@@ -150,7 +177,8 @@ export const applyFilters = <T extends FilterableScooter>(list: T[], sel: Select
     ? list.filter((s) => active.every((g) => g.options.some((o) => sel[g.key].includes(o.value) && o.test(s))))
     : [...list];
   const so = SORTS.find((x) => x.value === sort) ?? SORTS[0];
-  return out.sort(so.cmp);
+  const sorted = out.sort(so.cmp);
+  return so.value === "selection" ? spreadBrands(sorted) : sorted;
 };
 
 export const readSelection = (params: URLSearchParams): Selection => {

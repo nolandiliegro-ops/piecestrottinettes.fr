@@ -71,7 +71,7 @@ const Scooters = () => {
   // Filtres + tri dans l'URL (?puissance=1000,2000&tri=pieces) ; ?marques=1..5 = propositions de carrousel
   const [params, setParams] = useSearchParams();
   const selection: Selection = useMemo(() => readSelection(params), [params]);
-  const sort = params.get("tri") ?? "nom";
+  const sort = params.get("tri") ?? "selection"; // 24/10 : « Notre sélection » par défaut (affiliation, pièces, belles marques)
   const lookParam = Number(params.get("marques"));
   // 16/10 : « Vitrine Air » (1) retenue par Nolan = défaut ; ?marques=0 = ancien carrousel, 2..5 = autres propositions
   const look = (params.get("marques") === null ? 1 : lookParam >= 1 && lookParam <= 5 ? lookParam : 0) as MarquesLook | 0;
@@ -92,7 +92,7 @@ const Scooters = () => {
     if (cur.size) p.set(group, [...cur].join(",")); else p.delete(group);
   });
   const clearFilters = () => setParam((p) => FILTER_GROUPS.forEach((g) => p.delete(g.key)));
-  const setSort = (v: string) => setParam((p) => { if (v === "nom") p.delete("tri"); else p.set("tri", v); });
+  const setSort = (v: string) => setParam((p) => { if (v === "selection") p.delete("tri"); else p.set("tri", v); });
 
   // Photo de couverture + nombre de modèles par marque, dérivés des modèles déjà chargés (0 requête en plus)
   const { covers, counts } = useMemo(() => {
