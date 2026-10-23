@@ -1,0 +1,75 @@
+{
+ "displayName": "Zwheel ZCougar",
+ "metaTitle": "Zwheel ZCougar : fiche technique et pièces",
+ "metaDescription": "Zwheel ZCougar : moteur 800 W, batterie 48 V 10 Ah (480 Wh), 35 km annoncés, roues tubeless 10 pouces, double suspension DUO-SHOCK. Fiche et chargeurs.",
+ "intro": [
+  "La Zwheel ZCougar est la version mono-moteur de la gamme ZCougar de Zwheel, une marque vendue surtout en Espagne, où elle est homologuée DGT. Elle se distingue de la ZCougar Plus et de la ZCougar Duo, qui ont leur propre motorisation.",
+  "La fiche Zwheel lui donne 800 W, une batterie de 48 V et 10 Ah (480 Wh) et jusqu'à 35 km d'autonomie. Elle pèse environ 25,5 kg, accepte 120 kg et roule sur des roues tubeless de 10 pouces avec la double suspension DUO-SHOCK, selon Onuba Mobility."
+ ],
+ "specs": [
+  ["Moteur", "800 W selon Zwheel (nominal ou crête non précisé) ; 500 W continus sur un comparateur ; 1 000 à 1 200 W en pointe selon les revendeurs"],
+  ["Vitesse", "25 km/h"],
+  ["Autonomie annoncée", "jusqu'à 35 km ; 22 à 28 km en ville selon Rueda q Rueda"],
+  ["Batterie", "48 V, 10 Ah, 480 Wh"],
+  ["Poids", "environ 25,5 kg"],
+  ["Charge max", "120 kg"],
+  ["Roues", "10 pouces, tubeless"],
+  ["Freins", "Disque avant + frein électrique arrière selon idealo ; frein à disque et frein régénératif selon les revendeurs"],
+  ["Suspension", "DUO-SHOCK avant et arrière"],
+  ["Temps de charge", "5 à 7 h selon les revendeurs"]
+ ],
+ "pros": [
+  "Double suspension DUO-SHOCK, à l'avant et à l'arrière (Onuba Mobility, Electyum).",
+  "Pneus tubeless de 10 pouces (Onuba Mobility).",
+  "Charge maximale de 120 kg (Onuba Mobility, idealo)."
+ ],
+ "cons": [
+  "Batterie de 480 Wh : 22 à 28 km en ville selon un revendeur.",
+  "Environ 25,5 kg pour une mono-moteur.",
+  "Puissance de pointe non publiée par Zwheel ; les revendeurs donnent des chiffres différents.",
+  "Aucun indice d'étanchéité publié."
+ ],
+ "parts": [
+  {
+   "label": "Chargeur",
+   "size": "48 V (sortie 54,6 V), prise GX16-3",
+   "count": 2,
+   "to": "/piece/chargeur-48v-546v-2a-connecteur-gx16-3p",
+   "cta": "Chargeurs 48 V GX16"
+  }
+ ],
+ "care": [
+  "Pneus tubeless : vérifie la pression toutes les deux semaines, une fuite lente fait chuter l'autonomie sans prévenir.",
+  "Branche toujours un chargeur 48 V (54,6 V en sortie) avec la bonne prise : un mauvais chargeur abîme la batterie.",
+  "Contrôle l'usure des plaquettes du disque et le jeu de la suspension DUO-SHOCK tous les mois."
+ ],
+ "price": {
+  "text": "Prix affiché par la boutique espagnole de Zwheel : 559,99 € (prix d'origine 829,99 € chez un revendeur espagnol). Aucun prix public français trouvé.",
+  "source": "es.zwheel.com, idealo.es"
+ },
+ "faq": [
+  {
+   "q": "Quelle taille de pneu pour la Zwheel ZCougar ?",
+   "a": "Des pneus tubeless de 10 pouces ; aucune source ne publie la section exacte. Prends la mesure sur le flanc de ton pneu actuel avant de passer commande."
+  },
+  {
+   "q": "Quelle autonomie réelle pour la Zwheel ZCougar ?",
+   "a": "Zwheel annonce 35 km. Le revendeur Rueda q Rueda estime 22 à 28 km en usage urbain avec la batterie de 480 Wh."
+  },
+  {
+   "q": "Quel chargeur pour la Zwheel ZCougar ?",
+   "a": "Un chargeur 48 V qui sort 54,6 V. Vérifie la prise de charge de ta trottinette avant d'en acheter un : la ZCougar Duo n'utilise pas la même."
+  },
+  {
+   "q": "Quelle différence entre la Zwheel ZCougar et la ZCougar Duo ?",
+   "a": "La ZCougar a un seul moteur et une batterie de 10 Ah ; la Duo a deux moteurs et 20 Ah, pour environ 28,5 kg. Leurs chargeurs ne se branchent pas sur la même prise."
+  }
+ ],
+ "sources": [
+  {"label": "Zwheel — ZCougar", "url": "https://es.zwheel.com/tienda/patinetes-electricos/zcougar/zcougar/"},
+  {"label": "Onuba Mobility — Zwheel ZCougar", "url": "https://onubamobility.com/product/zhweel-zcougar/"},
+  {"label": "idealo — Zwheel ZCougar", "url": "https://www.idealo.es/precios/204244148/zwheel-zcougar.html"},
+  {"label": "Rueda q Rueda — ZCougar homologado DGT", "url": "https://www.ruedaqrueda.com/en/producto/zcougar-homologado-dgt/"},
+  {"label": "Electyum — Zwheel ZCougar homologado", "url": "https://electyum.com/products/patinete-electrico-zwheel-zcougar-homologado"}
+ ]
+}

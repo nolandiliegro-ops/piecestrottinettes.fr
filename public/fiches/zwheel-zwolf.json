@@ -1,0 +1,118 @@
+{
+  "displayName": "Zwheel ZWolf",
+  "metaTitle": "Zwheel ZWolf : fiche technique et entretien",
+  "metaDescription": "Zwheel ZWolf : 500 W (1 000 W en pointe), batterie 48 V 15 Ah (720 Wh), 50 km annoncés, pneus tubeless 10 pouces mixtes, suspension réglable. Fiche.",
+  "intro": [
+    "La Zwheel ZWolf est la version mono-moteur de la gamme ZWolf, pensée pour la ville comme pour les chemins de terre grâce à ses pneus à crampons mixtes. Elle se distingue de la ZWolf Plus, plus puissante, et de la ZWolf Duo à deux moteurs.",
+    "Son moteur arrière fait 500 W nominaux et 1 000 W en pointe, sa batterie 48 V et 15 Ah (720 Wh) pour 50 km annoncés, selon El Corte Inglés et 360scooters. Elle pèse 28,5 kg, freine avec deux disques mécaniques de 140 mm et se suspend sur deux amortisseurs à ressort réglables."
+  ],
+  "specs": [
+    [
+      "Moteur",
+      "500 W (1 000 W en pointe)"
+    ],
+    [
+      "Vitesse",
+      "25 km/h"
+    ],
+    [
+      "Autonomie annoncée",
+      "jusqu'à 50 km"
+    ],
+    [
+      "Batterie",
+      "48 V, 15 Ah, 720 Wh"
+    ],
+    [
+      "Poids",
+      "28,5 kg"
+    ],
+    [
+      "Charge max",
+      "120 kg (selon El Corte Inglés)"
+    ],
+    [
+      "Roues",
+      "10 pouces, tubeless, crampons mixtes route et chemin ; 36 psi recommandés selon un test vidéo"
+    ],
+    [
+      "Freins",
+      "Disque avant + disque arrière avec frein régénératif ; disques mécaniques de 140 mm selon un test vidéo"
+    ],
+    [
+      "Suspension",
+      "Double suspension à ressort, dureté réglable"
+    ],
+    [
+      "Étanchéité",
+      "IPX4"
+    ],
+    [
+      "Temps de charge",
+      "6 à 7 h (selon El Corte Inglés)"
+    ]
+  ],
+  "pros": [
+    "Suspension réglable selon ton poids, confortable sur chemin (test vidéo LlegaVideos Reviews).",
+    "Autonomie proche de la fiche selon un testeur, qui juge les 50 km réalistes (test vidéo YouTube).",
+    "Pneus tubeless mixtes, à l'aise sur asphalte comme sur terre (test vidéo YouTube)."
+  ],
+  "cons": [
+    "28,5 kg : lourde pour une mono-moteur.",
+    "Freins à disque mécaniques, et non hydrauliques comme sur la ZWolf Plus.",
+    "Indice IPX4 seulement : pas de lavage au jet.",
+    "Puissance moitié moindre que la ZWolf Plus."
+  ],
+  "parts": [],
+  "care": [
+    "Règle la dureté de tes amortisseurs à ton poids avec les molettes : un testeur la laisse d'origine entre 80 et 100 kg.",
+    "Gonfle tes pneus à la pression inscrite sur le flanc (36 psi relevés en test) : sous-gonflés, ils te coûtent de l'autonomie.",
+    "Freins mécaniques : retends les câbles des étriers dès que tes leviers s'enfoncent plus qu'au début."
+  ],
+  "price": {
+    "text": "Prix repéré chez 360scooters : 579 € en promotion (prix barré 749 €). Aucun prix public français trouvé.",
+    "source": "360scooters.com"
+  },
+  "faq": [
+    {
+      "q": "Quelle taille de pneu pour la Zwheel ZWolf ?",
+      "a": "Des pneus tubeless de 10 pouces à crampons mixtes ; la section exacte n'est pas publiée. Commande d'après la cote du flanc : c'est la seule qui fait foi."
+    },
+    {
+      "q": "Quelle différence entre la Zwheel ZWolf et la ZWolf Plus ?",
+      "a": "La ZWolf a 500 W nominaux, 15 Ah et des disques mécaniques ; la Plus passe à 1 000 W, 20 Ah pour 70 km annoncés, et des freins hydrauliques."
+    },
+    {
+      "q": "Quels freins sur la Zwheel ZWolf ?",
+      "a": "Un disque à l'avant et un à l'arrière, mécaniques et de 140 mm selon un test vidéo, plus un frein régénératif à l'arrière."
+    },
+    {
+      "q": "Combien de temps pour recharger la Zwheel ZWolf ?",
+      "a": "Entre 6 et 7 heures selon El Corte Inglés pour sa batterie de 720 Wh."
+    },
+    {
+      "q": "La Zwheel ZWolf résiste-t-elle à la pluie ?",
+      "a": "Elle est IPX4 : la pluie et une flaque peu profonde passent, mais un testeur déconseille le lavage à haute pression."
+    }
+  ],
+  "sources": [
+    {
+      "label": "El Corte Inglés — Zwheel ZWolf",
+      "url": "https://www.elcorteingles.es/deportes/MP_0022337_8436621651857-rojo-pr-patinete-electrico-zwheel-zwolf/"
+    },
+    {
+      "label": "360scooters — Zwheel ZWolf",
+      "url": "https://360scooters.com/es/producto/patinete-electrico-zwheel-zwolf/"
+    },
+    {
+      "label": "Zwheel — ZWolf Plus (comparaison)",
+      "url": "https://es.zwheel.com/patinetes-electricos/zwolf/zwolf-plus"
+    }
+  ],
+  "video": {
+    "id": "czRComF6BqE",
+    "title": "Hemos probado el Patinete ZWheel Zwolf por tierra y no esperaba que fuera tan cómodo por este precio",
+    "channel": "LlegaVideos Reviews",
+    "uploadDate": "2026-06-10"
+  }
+}

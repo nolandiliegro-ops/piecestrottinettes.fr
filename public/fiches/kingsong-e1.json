@@ -1,0 +1,71 @@
+{
+ "displayName": "Kingsong E1",
+ "metaTitle": "Kingsong E1 : fiche technique, pneus et entretien",
+ "metaDescription": "Kingsong E1 : 350 W (550 W en pointe), batterie 36 V 7,8 Ah, roues 8,5 pouces, frein tambour avant. Fiche, versions à distinguer et entretien.",
+ "intro": [
+  "La Kingsong E1 est la petite trottinette d'entrée de gamme de Kingsong, la marque connue aussi pour ses gyroroues. Attention : deux fiches officielles décrivent deux configurations différentes, l'une européenne avec pneus gonflables et suspension avant, l'autre avec pneus pleins et sans suspension.",
+  "La version européenne annonce 350 W (550 W en pointe), une batterie de 36 V et 7,8 Ah (288,6 Wh) et jusqu'à 25 km d'autonomie, selon Kingsong Europe. Elle pèse environ 16,5 kg, roule sur des roues de 8,5 pouces et freine avec un tambour à l'avant et un frein électronique."
+ ],
+ "specs": [
+  ["Moteur", "350 W (550 W en pointe) selon Kingsong Europe ; 250 W (500 W en pointe) sur kingsong.com"],
+  ["Vitesse", "25 km/h (version européenne) ; 20 km/h sur kingsong.com"],
+  ["Autonomie annoncée", "jusqu'à 25 km ; 18 à 22 km en usage courant selon Kingsong Store"],
+  ["Batterie", "36 V (37 V nominal), 7,8 Ah, 288,6 Wh (version européenne) ; 7,5 Ah, 277,5 Wh sur kingsong.com"],
+  ["Poids", "16,2 à 16,5 kg selon les fiches"],
+  ["Charge max", "100 kg selon Kingsong Europe ; 120 kg sur kingsong.com"],
+  ["Roues", "8,5 pouces, gonflables (version européenne) ou pleines (fiche kingsong.com)"],
+  ["Freins", "Tambour avant + électronique (E-ABS) selon Kingsong Europe"],
+  ["Suspension", "Avant selon Kingsong Europe ; aucune selon kingsong.com"],
+  ["Temps de charge", "environ 5 h selon Kingsong Europe, 4 à 6 h selon Kingsong Store"]
+ ],
+ "pros": [
+  "Environ 16,5 kg : elle se porte facilement dans un escalier ou un transport en commun (Kingsong Europe).",
+  "Suspension avant et pneus gonflables sur la version européenne (Kingsong Europe).",
+  "Recharge courte, autour de 5 heures (Kingsong Europe)."
+ ],
+ "cons": [
+  "Petite batterie de 288,6 Wh : 25 km annoncés au mieux.",
+  "Deux configurations circulent sous le même nom : pneus, suspension et freins changent selon la version.",
+  "Charge maximale de 100 kg sur la fiche européenne.",
+  "Aucune autonomie mesurée en test de presse à ce jour."
+ ],
+ "parts": [],
+ "care": [
+  "Le tambour avant est ton seul frein mécanique : fais-le régler dès que le levier devient mou ou que la course s'allonge.",
+  "Si tes pneus sont gonflables, contrôle la pression chaque mois : sur des roues de 8,5 pouces, un pneu dégonflé pince vite la chambre.",
+  "Avec une batterie de 288,6 Wh, évite de la stocker vide : recharge-la après chaque sortie et avant un hivernage."
+ ],
+ "price": {
+  "text": "Repères : 349 € sur la boutique Kingsong Europe (E1 KSE), 389,27 € TTC chez Max Blinker. Prix susceptibles de varier.",
+  "source": "eu.kingsong.com, maxblinker.fr"
+ },
+ "faq": [
+  {
+   "q": "Quelle taille de pneu pour la Kingsong E1 ?",
+   "a": "Des roues de 8,5 pouces, mais les fiches ne s'accordent pas sur le type : gonflables sur la version européenne, pleines sur une autre fiche Kingsong. Avant de commander, relève la cote gravée sur le flanc du pneu."
+  },
+  {
+   "q": "Quelle autonomie réelle pour la Kingsong E1 ?",
+   "a": "Kingsong annonce jusqu'à 25 km. Kingsong Store, revendeur de la marque, parle de 18 à 22 km en usage courant ; aucun test de presse n'a mesuré mieux."
+  },
+  {
+   "q": "Combien de temps pour recharger la Kingsong E1 ?",
+   "a": "Environ 5 heures selon Kingsong Europe, entre 4 et 6 heures selon Kingsong Store."
+  },
+  {
+   "q": "La Kingsong E1 a-t-elle un frein à disque ?",
+   "a": "Non. La version européenne freine avec un tambour à l'avant et un frein électronique ; il n'y a pas de plaquettes à changer."
+  },
+  {
+   "q": "Comment savoir quelle version de Kingsong E1 j'ai ?",
+   "a": "Regarde tes pneus et ta fourche : pneus gonflables avec suspension avant, c'est la version européenne ; pneus pleins sans suspension, c'est l'autre configuration. L'étiquette de la batterie indique aussi 7,8 ou 7,5 Ah."
+  }
+ ],
+ "sources": [
+  {"label": "Kingsong Europe — Kingsong E1", "url": "https://kingsongeurope.com/product/kingsong-e1/"},
+  {"label": "Kingsong — E1 electric scooter", "url": "https://www.kingsong.com/products/kingsong-e1-electric-scooter"},
+  {"label": "Kingsong Store — KS-E1 37 V 7,8 Ah", "url": "https://www.kingsong-store.com/fr/trottinettes-electriques/327-trottinette-electrique-kingsong-ks-e1-37-v-78-ah-3701522012881.html"},
+  {"label": "Max Blinker — Kingsong E1", "url": "https://www.maxblinker.fr/fr/trottinettes-electriques/kingsong-e1"},
+  {"label": "Kingsong Europe — trottinettes électriques", "url": "https://eu.kingsong.com/collections/electric-scooter"}
+ ]
+}

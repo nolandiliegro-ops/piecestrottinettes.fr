@@ -1,0 +1,140 @@
+{
+ "displayName": "Inokim Light 2",
+ "metaTitle": "Inokim Light 2 : fiche technique et pièces",
+ "metaDescription": "Inokim Light 2 : moteur 350 W, batterie 36 V 10,4 Ah, roues 8,5 pouces, double frein à tambour, 13,7 kg. Fiche, autonomie réelle, entretien, chargeur.",
+ "intro": [
+  "L'Inokim Light 2 est la petite trottinette pliante de la marque israélienne Inokim, pensée pour le train, le métro et les escaliers. Elle pèse 13,7 kg selon la brochure Inokim, se plie avec un guidon rabattable et ne mesure que 94 cm une fois repliée. Elle a ensuite été déclinée en Light 2 Super puis Light 2 Max, qui ont chacune leur fiche.",
+  "Elle embarque un moteur arrière de 350 W et une batterie 36 V de 10,4 Ah, pour 27 à 40 km annoncés. Elle freine avec un tambour sur chaque roue, roule sur des roues de 8,5 pouces et n'a aucune suspension : ce sont les pneus qui amortissent. Selon les séries, la roue arrière est gonflable ou pleine."
+ ],
+ "specs": [
+  [
+   "Moteur",
+   "350 W nominaux (600 W en pointe selon le distributeur espagnol Inokim)"
+  ],
+  [
+   "Vitesse",
+   "25 km/h sur la voie publique en France"
+  ],
+  [
+   "Batterie",
+   "36 V, 10,4 Ah (environ 374 Wh)"
+  ],
+  [
+   "Autonomie annoncée",
+   "27 à 40 km (brochure Inokim)"
+  ],
+  [
+   "Autonomie mesurée",
+   "environ 26 km selon Electric Scooter Guide, 29 à 33 km dans un test vidéo de 2022"
+  ],
+  [
+   "Poids",
+   "13,7 kg"
+  ],
+  [
+   "Charge max",
+   "100 kg"
+  ],
+  [
+   "Roues",
+   "8,5 pouces : avant gonflable, arrière gonflable ou plein selon la série"
+  ],
+  [
+   "Freins",
+   "Tambour avant + tambour arrière"
+  ],
+  [
+   "Suspension",
+   "Aucune"
+  ],
+  [
+   "Étanchéité",
+   "IPX4 (selon Electric Scooter Insider)"
+  ],
+  [
+   "Temps de charge",
+   "6 h selon la brochure, 4 à 5 h selon RideReview"
+  ]
+ ],
+ "pros": [
+  "13,7 kg et 94 cm plié : elle se range sous un bureau (Electric Scooter Guide).",
+  "Deux freins à tambour mécaniques, rares sur une trottinette de ce poids (Electric Scooter Guide).",
+  "Freins fermés et moteur sans balais : peu d'entretien au quotidien."
+ ],
+ "cons": [
+  "Aucune suspension (Electric Scooter Insider) : sur les pavés, les vibrations remontent dans les poignets.",
+  "Petites roues de 8,5 pouces et plateau bas : les trottoirs se descendent au pas.",
+  "Autonomie réelle autour de 26 à 33 km en test, loin des 40 km annoncés.",
+  "En côte raide, les 350 W en 36 V peinent : un test vidéo de 2022 a échoué sur une pente de 14 %."
+ ],
+ "parts": [
+  {
+   "label": "Chargeur",
+   "size": "36 V → 42 V, prise DC 5,5 x 2,1 mm",
+   "count": 1,
+   "to": "/piece/chargeur-36v-42v-2a-connecteur-dc-55-21mm",
+   "cta": "Chargeurs 36 V"
+  }
+ ],
+ "care": [
+  "Tes deux freins sont des tambours à câble : retends le câble dès que le levier touche presque la poignée.",
+  "Garde tes pneus gonflables autour de 50 psi : avec des roues de 8,5 pouces, un pneu mou crève vite.",
+  "Contrôle le serrage de la charnière de pliage tous les mois : sur ce modèle, elle se desserre avec les vibrations."
+ ],
+ "faq": [
+  {
+   "q": "Quelle taille de pneu pour l'Inokim Light 2 ?",
+   "a": "Des pneus de 8,5 x 2 pouces. Les boutiques ne donnent pas toutes la même cote de jante (50-134 ou 50-139) : lis la cote moulée sur le flanc de ton pneu avant d'en commander un."
+  },
+  {
+   "q": "Quelle autonomie réelle pour l'Inokim Light 2 ?",
+   "a": "Compte 26 à 33 km en usage normal : Electric Scooter Guide a mesuré environ 26 km, un autre test vidéo 29 à 33 km. Les 40 km de la brochure supposent une conduite douce et un rider léger."
+  },
+  {
+   "q": "Combien de temps pour recharger l'Inokim Light 2 ?",
+   "a": "6 heures selon la brochure Inokim, 4 à 5 heures selon RideReview. Le chargeur d'origine est un 36 V (42 V en fin de charge)."
+  },
+  {
+   "q": "L'Inokim Light 2 a-t-elle des plaquettes de frein ?",
+   "a": "Non. Elle freine avec deux tambours, un par roue : il n'y a ni disque ni plaquettes, seulement des câbles à retendre de temps en temps."
+  },
+  {
+   "q": "L'Inokim Light 2 peut-elle rouler à plus de 25 km/h ?",
+   "a": "Certains marchés l'ont vendue réglée à 35 km/h. En France, une trottinette électrique ne doit pas dépasser 25 km/h sur la voie publique : la déverrouiller pour aller plus vite y est interdit."
+  },
+  {
+   "q": "Quelle différence entre la Light 2, la Light 2 Super et la Light 2 Max ?",
+   "a": "Même cadre et mêmes freins. La Light 2 Max passe à une batterie de 12,8 Ah ; la Super garde 10,4 Ah avec des cellules de marque. Regarde l'étiquette sous le plateau avant de commander une batterie."
+  }
+ ],
+ "sources": [
+  {
+   "label": "Inokim Australie — brochure Light 2",
+   "url": "https://www.inokim.com.au/download/electric_scooter/super_light2/brochure/super_light2_brochure_australia.pdf"
+  },
+  {
+   "label": "Electric Scooter Insider — test Inokim Light 2",
+   "url": "https://www.electricscooterinsider.com/electric-scooters/reviews/inokim-light-2-review/"
+  },
+  {
+   "label": "RideReview — Inokim Light 2",
+   "url": "https://ridereview.com/products/inokim-light-2"
+  },
+  {
+   "label": "Inokim Espagne — Light 2 Super",
+   "url": "https://inokimes.com/tienda/patinetes/inokim-light-2-super/"
+  },
+  {
+   "label": "Electric Scooter Guide — test vidéo Light 2",
+   "url": "https://www.youtube.com/watch?v=t42DCJ3YzKg"
+  },
+  {
+   "label": "Wattiz — pièces Inokim Light 2",
+   "url": "https://www.wattiz.fr/gb/s/494/inokim-light-2"
+  },
+  {
+   "label": "Inokim Shop — pneus Inokim",
+   "url": "https://inokim.shop/products/inokim-tires"
+  }
+ ]
+}

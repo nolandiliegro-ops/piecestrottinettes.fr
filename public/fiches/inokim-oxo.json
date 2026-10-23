@@ -1,0 +1,147 @@
+{
+  "displayName": "Inokim OXO",
+  "metaTitle": "Inokim OXO : fiche technique et pièces",
+  "metaDescription": "Inokim OXO : 2 moteurs de 1 000 W, batterie 60 V 25,6 Ah, freins hydrauliques, suspensions réglables, 33,5 kg. Autonomie mesurée, plaquettes, chargeur.",
+  "intro": [
+    "L'Inokim OXO est la bimoteur haut de gamme d'Inokim, grande sœur de l'OX à un seul moteur. Elle mise sur le confort plus que sur l'accélération : un test vidéo de 2022 note un démarrage volontairement plus doux que celui des bimoteurs concurrents. Ses suspensions avant et arrière se règlent, et elle pèse 33,5 kg.",
+    "Deux moteurs de 1 000 W nominaux (1 300 W chacun en pointe) et une batterie 60 V de 25,6 Ah, soit 1 536 Wh. Inokim annonce 110 km. Elle freine avec deux disques hydrauliques et roule sur des pneus de 10 x 2,5 pouces à chambre à air. La recharge complète est longue : environ 13 heures avec le chargeur d'origine."
+  ],
+  "specs": [
+    [
+      "Moteur",
+      "2 x 1 000 W nominaux, 2 x 1 300 W en pointe (2 600 W cumulés)"
+    ],
+    [
+      "Vitesse",
+      "25 km/h sur la voie publique en France"
+    ],
+    [
+      "Batterie",
+      "60 V, 25,6 Ah (1 536 Wh) ; certaines fiches indiquent 57,6 V ou 26 Ah"
+    ],
+    [
+      "Autonomie annoncée",
+      "jusqu'à 110 km en mode éco"
+    ],
+    [
+      "Autonomie mesurée",
+      "53 à 64 km en conditions réelles selon les tests (Scooter Gear Lab, vidéo de test 2022) ; 94,5 km à 20 km/h constants"
+    ],
+    [
+      "Poids",
+      "33,5 kg"
+    ],
+    [
+      "Charge max",
+      "120 kg"
+    ],
+    [
+      "Roues",
+      "10 x 2,5 pouces gonflables, avec chambre à air (10 x 3 en option tout-terrain)"
+    ],
+    [
+      "Freins",
+      "Disques hydrauliques avant et arrière"
+    ],
+    [
+      "Suspension",
+      "Avant et arrière, réglables"
+    ],
+    [
+      "Étanchéité",
+      "IPX4 selon les revendeurs"
+    ],
+    [
+      "Temps de charge",
+      "12,5 à 13,5 h avec le chargeur d'origine"
+    ]
+  ],
+  "pros": [
+    "Suspensions réglables avant et arrière, confort souligné par tous les tests (Electric Scooter Insider, Voltride).",
+    "Batterie de 1 536 Wh : plus de 60 km réels en ville selon un test vidéo de 2022.",
+    "Deux freins à disque hydrauliques pour arrêter 33 kg (Voltride, Smartwheel)."
+  ],
+  "cons": [
+    "33,5 kg : elle se plie, mais se porte mal dans un escalier.",
+    "Environ 13 heures pour une charge complète avec le chargeur fourni (Electric Scooter Insider).",
+    "Pneus à chambre à air : plus exposés aux crevaisons que des tubeless.",
+    "Accélération volontairement douce : elle ne cherche pas à rivaliser avec les bimoteurs les plus nerveux."
+  ],
+  "parts": [
+    {
+      "label": "Plaquettes",
+      "size": "étrier Zoom",
+      "count": 5,
+      "to": "/piece/plaquettes-de-frein-zoom-semi-metallique",
+      "cta": "Plaquettes Zoom"
+    },
+    {
+      "label": "Chargeur",
+      "size": "60 V → 67,2 V, prise GX16-3",
+      "count": 2,
+      "to": "/piece/chargeur-60v-672v-2a-connecteur-gx16-3p",
+      "cta": "Chargeurs 60 V"
+    }
+  ],
+  "care": [
+    "Freins hydrauliques : fais contrôler le niveau et la purge du liquide une fois par an, et remplace les plaquettes avant d'arriver au métal.",
+    "Règle tes suspensions selon ton poids : trop souples, la plateforme talonne ; trop dures, les vis du cadre souffrent.",
+    "Garde tes pneus bien gonflés : sur 33 kg, une chambre à air sous-gonflée se pince au premier trottoir."
+  ],
+  "faq": [
+    {
+      "q": "Quelle taille de pneu pour l'Inokim OXO ?",
+      "a": "Des pneus de 10 x 2,5 pouces avec chambre à air. Les boutiques ne s'accordent pas sur la jante (6 ou 6,5 pouces) : lis la cote moulée sur le flanc de ton pneu avant d'en commander un."
+    },
+    {
+      "q": "Quelle autonomie réelle pour l'Inokim OXO ?",
+      "a": "Entre 53 et 64 km en conduite normale selon les tests publiés. À 20 km/h constants, un test a atteint 94,5 km. Les 110 km d'Inokim supposent le mode éco."
+    },
+    {
+      "q": "Combien de temps pour recharger l'OXO ?",
+      "a": "Environ 13 heures avec le chargeur 60 V d'origine. Un chargeur rapide GX16-3 réduit ce temps si ta batterie l'accepte."
+    },
+    {
+      "q": "Quelles plaquettes pour l'Inokim OXO ?",
+      "a": "Des plaquettes pour étrier Zoom, montées sur des disques de 140 mm à l'avant et à l'arrière. Vérifie la forme de ta plaquette usée avant de commander."
+    },
+    {
+      "q": "L'Inokim OXO est-elle légale sur la route en France ?",
+      "a": "Ses deux moteurs sont faits pour aller bien plus vite, mais en France une trottinette électrique est limitée à 25 km/h sur la voie publique. Au-delà, elle sort du cadre des EDPM : sur la route, elle reste bridée."
+    },
+    {
+      "q": "Quelle différence entre l'Inokim OXO et l'OX ?",
+      "a": "L'OXO a deux moteurs de 1 000 W et des freins hydrauliques ; l'OX n'a qu'un moteur arrière, un tambour à l'avant et pèse 26 à 28 kg."
+    }
+  ],
+  "sources": [
+    {
+      "label": "Electric Scooter Insider — test Inokim OXO",
+      "url": "https://www.electricscooterinsider.com/electric-scooters/reviews/inokim-oxo-review/"
+    },
+    {
+      "label": "Fluidfreeride — Inokim OXO",
+      "url": "https://fluidfreeride.com/blogs/news/inokim-oxo-review"
+    },
+    {
+      "label": "Voltride — Inokim OXO",
+      "url": "https://voltride.com/electric-scooter-inokim-oxo/"
+    },
+    {
+      "label": "Inokim — OXO (fiche officielle)",
+      "url": "https://inokim.com/products/oxo"
+    },
+    {
+      "label": "Smartwheel — Inokim OXO 1 560 Wh",
+      "url": "https://www.smartwheel.ca/inokim-oxo-1560wh-electric-foldable-scooter/"
+    },
+    {
+      "label": "Scooter Gear Lab — trottinettes Inokim",
+      "url": "https://scootergearlab.com/best/best-inokim-scooter/"
+    },
+    {
+      "label": "Critique vidéo de l'Inokim OXO (2022)",
+      "url": "https://www.youtube.com/watch?v=PSjMqdec9iE"
+    }
+  ]
+}

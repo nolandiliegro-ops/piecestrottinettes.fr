@@ -1,0 +1,116 @@
+{
+ "displayName": "Inokim Mini 2",
+ "metaTitle": "Inokim Mini 2 : fiche technique et entretien",
+ "metaDescription": "Inokim Mini 2 : 250 W, batterie 36 V 7,8 Ah, roues de 6 pouces, frein électrique et frein au pied, 10 kg, 75 kg max. Autonomie mesurée et entretien.",
+ "intro": [
+  "La Mini 2, sortie en 2019, est la plus petite trottinette Inokim. Elle pèse une dizaine de kilos et se tire comme une valise grâce à deux roulettes sous le plateau. Le guidon se règle en hauteur, ce qui la rend utilisable par un adolescent comme par un adulte léger : la charge maximale est de 75 kg selon le manuel Inokim.",
+  "Son moteur arrière de 250 W et sa batterie 36 V de 7,8 Ah donnent 23 à 28 km annoncés. Max Blinker en a mesuré 22,8 km. Elle roule sur deux roues de 6 pouces, gonflable à l'avant, pleine à l'arrière. Elle freine par un frein électrique à la gâchette et un garde-boue arrière à presser du pied."
+ ],
+ "specs": [
+  [
+   "Moteur",
+   "250 W nominaux (450 à 650 W en pointe selon les revendeurs, chiffre non confirmé par Inokim)"
+  ],
+  [
+   "Vitesse",
+   "25 km/h (20 km/h sur la version suisse)"
+  ],
+  [
+   "Batterie",
+   "36 V, 7,8 Ah (environ 281 Wh), cellules LG"
+  ],
+  [
+   "Autonomie annoncée",
+   "23 à 28 km (75 kg, 15 km/h, 25 °C, terrain plat)"
+  ],
+  [
+   "Autonomie mesurée",
+   "22,8 km en test, 19,5 km en cycle urbain (Max Blinker)"
+  ],
+  [
+   "Poids",
+   "10 kg selon le manuel Inokim, 10,5 kg selon d'autres fiches"
+  ],
+  [
+   "Charge max",
+   "75 kg"
+  ],
+  [
+   "Roues",
+   "6 pouces : avant gonflable, arrière plein"
+  ],
+  [
+   "Freins",
+   "Électrique (EABS) + garde-boue arrière au pied"
+  ],
+  [
+   "Suspension",
+   "Arrière, intégrée à l'articulation du plateau (selon les revendeurs)"
+  ],
+  [
+   "Temps de charge",
+   "environ 4 h"
+  ]
+ ],
+ "pros": [
+  "Environ 10 kg et des roulettes pour la tirer pliée comme une valise (manuel Inokim).",
+  "Guidon réglable en hauteur : elle s'adapte à plusieurs riders de la famille (vidéo d'un propriétaire, 2024).",
+  "Roue arrière pleine : la roue motrice ne crève pas."
+ ],
+ "cons": [
+  "Charge maximale de 75 kg seulement : à éviter pour un adulte lourd (manuel Inokim).",
+  "Pas de frein mécanique à la main : le frein électrique ne bloque pas la roue, il faut compléter au pied (vidéo d'un propriétaire, 2024).",
+  "Roues de 6 pouces : chaque nid-de-poule compte.",
+  "Autonomie réelle autour de 20 km (Max Blinker)."
+ ],
+ "parts": [],
+ "care": [
+  "Le frein au pied frotte directement sur le pneu arrière : surveille l'usure de la gomme et du garde-boue.",
+  "Gonfle la petite roue avant régulièrement : un pneu de 6 pouces sous-gonflé pince sa chambre au premier trottoir.",
+  "Ne dépasse pas 75 kg sur le plateau : le cadre et l'articulation arrière sont calculés pour ce poids."
+ ],
+ "faq": [
+  {
+   "q": "Quelle taille de pneu pour l'Inokim Mini 2 ?",
+   "a": "Des roues de 6 pouces : un pneu gonflable avec chambre à air à l'avant, un pneu plein à l'arrière. Les fiches ne donnent pas de cote exacte : lis la cote moulée sur le flanc avant de commander."
+  },
+  {
+   "q": "Quelle autonomie réelle pour la Mini 2 ?",
+   "a": "Autour de 20 km. Max Blinker a mesuré 22,8 km en test et 19,5 km en cycle urbain. Les 28 km d'Inokim correspondent à 15 km/h en mode éco."
+  },
+  {
+   "q": "Comment freine l'Inokim Mini 2 ?",
+   "a": "Avec un frein électrique commandé à la gâchette, qui ralentit le moteur, et un frein au pied sur le garde-boue arrière. Il n'y a ni disque ni tambour."
+  },
+  {
+   "q": "Combien de temps pour recharger l'Inokim Mini 2 ?",
+   "a": "Environ 4 heures pour une charge complète selon le manuel Inokim."
+  },
+  {
+   "q": "La Mini 2 convient-elle à un adulte ?",
+   "a": "À un adulte léger, oui. Le manuel limite la charge à 75 kg. Au-delà, regarde plutôt une Light 2 Max (100 kg) ou une Quick 4 (120 kg)."
+  }
+ ],
+ "sources": [
+  {
+   "label": "Inokim Australie — manuel Mini 2",
+   "url": "https://inokim.com.au/download/electric_scooter/mini2/user_guide/mini2_user_guide_manual_australia.pdf"
+  },
+  {
+   "label": "Max Blinker — test Inokim Mini 2",
+   "url": "https://www.maxblinker.fr/fr/trottinettes-electriques/inokim-mini-2"
+  },
+  {
+   "label": "Motopanda — Inokim Mini 2",
+   "url": "https://www.motopanda.co/en/products/inokim-mini-2"
+  },
+  {
+   "label": "Get Motorized — Inokim Mini 2",
+   "url": "https://getmotorized.ca/inokim-mini-2"
+  },
+  {
+   "label": "Vidéo d'un propriétaire — Inokim Mini 2",
+   "url": "https://www.youtube.com/watch?v=oo_cv1RvuU8"
+  }
+ ]
+}

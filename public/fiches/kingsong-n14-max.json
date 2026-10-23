@@ -1,0 +1,66 @@
+{
+ "displayName": "Kingsong N14 Max",
+ "metaTitle": "Kingsong N14 Max : fiche technique et entretien",
+ "metaDescription": "Kingsong N14 Max : moteur 600 W, batterie 48 V 10,4 Ah (500 Wh), roues 10 pouces, tambour avant et disque arrière, double suspension. Fiche et entretien.",
+ "intro": [
+  "La Kingsong N14 Max est la version 48 V de la petite citadine N14. Le manuel de la marque la distingue d'une N14 de première génération en 37 V et roues de 8,5 pouces ; certaines boutiques vendent pourtant la 48 V sous le simple nom de N14.",
+  "Kingsong Store lui donne un moteur de 600 W, une batterie de 48 V et 10,4 Ah (environ 500 Wh) et jusqu'à 40 km d'autonomie. Elle freine avec un tambour à l'avant et un disque à l'arrière, et se suspend aux deux roues. Son poids varie selon les fiches : 17 ou 24 kg."
+ ],
+ "specs": [
+  ["Moteur", "600 W nominaux selon Kingsong Store et le manuel ; puissance de pointe non publiée"],
+  ["Vitesse", "25 km/h"],
+  ["Autonomie annoncée", "jusqu'à 40 km"],
+  ["Batterie", "48 V, 10,4 Ah, environ 500 Wh"],
+  ["Poids", "17 kg selon Kingsong Store ; 24 kg sur une autre page de la même boutique"],
+  ["Charge max", "120 kg"],
+  ["Roues", "10 pouces ; pleines selon Kingsong Store, pneus CST selon le test de Mobility Urban"],
+  ["Freins", "Tambour avant + disque arrière + frein électronique"],
+  ["Suspension", "Avant et arrière"],
+  ["Temps de charge", "environ 5 h 30 selon Kingsong Store, 5 à 6 h selon le manuel (chargeur 54,6 V 2 A)"]
+ ],
+ "pros": [
+  "Trois freins : tambour avant, disque arrière et frein électronique (Kingsong Store).",
+  "Double suspension sur une trottinette compacte (Kingsong Store).",
+  "Recharge en 5 à 6 heures (manuel Kingsong)."
+ ],
+ "cons": [
+  "Le nom N14 recouvre plusieurs versions : vérifie tension et taille de roue avant de commander une pièce.",
+  "Poids incertain, 17 ou 24 kg selon les fiches.",
+  "Batterie de 500 Wh : 40 km annoncés au mieux.",
+  "Puissance de pointe non publiée par Kingsong pour la Max."
+ ],
+ "parts": [],
+ "care": [
+  "Le tambour avant se règle au câble : reprends la tension dès que ton levier vient toucher la poignée.",
+  "Contrôle l'épaisseur des plaquettes du disque arrière tous les 1 000 km environ.",
+  "Recharge ta batterie avec le chargeur 54,6 V d'origine et ne la laisse pas plusieurs semaines à plat."
+ ],
+ "price": {
+  "text": "Prix repérés : 541,80 € chez Green220, 649 € chez Kingsong Store. Prix susceptibles de varier.",
+  "source": "green220.com, kingsong-store.com"
+ },
+ "faq": [
+  {
+   "q": "Quelle différence entre la Kingsong N14 et la N14 Max ?",
+   "a": "Selon le manuel Kingsong, la N14 d'origine est une 37 V à roues de 8,5 pouces, la N14 Max une 48 V à roues de 10 pouces avec un moteur de 600 W. Des boutiques appellent aussi « N14 » une 48 V de 500 W : regarde l'étiquette de ta batterie."
+  },
+  {
+   "q": "Les pneus de la Kingsong N14 Max sont-ils pleins ou gonflables ?",
+   "a": "Les sources ne sont pas d'accord : Kingsong Store parle de roues pleines, d'autres fiches de pneus gonflables. Regarde s'il y a une valve sur ta jante et lis la cote sur le flanc avant de commander."
+  },
+  {
+   "q": "Quelle autonomie pour la Kingsong N14 Max ?",
+   "a": "Kingsong annonce jusqu'à 40 km avec sa batterie de 500 Wh. Aucun test indépendant n'a publié de mesure complète."
+  },
+  {
+   "q": "Combien de temps pour recharger la Kingsong N14 Max ?",
+   "a": "Environ 5 h 30 selon Kingsong Store, entre 5 et 6 heures selon le manuel, avec le chargeur 54,6 V 2 A."
+  }
+ ],
+ "sources": [
+  {"label": "Kingsong Store — KS-N14", "url": "https://www.kingsong-store.com/en/KSN14"},
+  {"label": "Kingsong Store — KS-N14 48 V 10,4 Ah", "url": "https://www.kingsong-store.com/de/elektroroller/50-kingsong-ks-n14-48-v-10-4-ah-3701522001427.html"},
+  {"label": "Green220 — Kingsong KS-N14 48 V 10,4 Ah", "url": "https://www.green220.com/en/e-scooters/455-electric-scooter-kingsong-ks-n14-48-v-10-4-ah-3701522001427.html"},
+  {"label": "Manuel Kingsong KS-N14 / N14 Max", "url": "https://manuals.plus/kingsong/ks-n14-e-scooter-manual"}
+ ]
+}

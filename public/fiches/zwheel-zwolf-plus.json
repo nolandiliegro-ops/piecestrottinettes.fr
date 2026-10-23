@@ -1,0 +1,72 @@
+{
+ "displayName": "Zwheel ZWolf Plus",
+ "metaTitle": "Zwheel ZWolf Plus : fiche technique et autonomie",
+ "metaDescription": "Zwheel ZWolf Plus : 1 000 W (2 000 W en pointe), batterie 48 V 20 Ah (960 Wh), 70 km annoncés, freins hydrauliques, pneus tubeless. Fiche et entretien.",
+ "intro": [
+  "La Zwheel ZWolf Plus est le modèle intermédiaire de la gamme ZWolf : un seul moteur, comme la ZWolf, mais deux fois plus puissant et une batterie plus grosse, sous la ZWolf Duo à deux moteurs. Zwheel lui donne 1 000 W nominaux et 2 000 W en pointe.",
+  "Sa batterie de 48 V et 20 Ah (960 Wh) est annoncée pour 70 km ; deux testeurs YouTube ont relevé 46 à 50 km réels. Les pages Zwheel ne s'accordent pas sur le poids (24,52 ou 30,5 kg) ni sur les roues (10 ou 11 pouces tubeless), mais toutes mentionnent un freinage hydraulique."
+ ],
+ "specs": [
+  ["Moteur", "1 000 W (2 000 W en pointe)"],
+  ["Vitesse", "25 km/h"],
+  ["Autonomie annoncée", "jusqu'à 70 km ; 46 à 50 km relevés en tests vidéo"],
+  ["Batterie", "48 V, 20 Ah, 960 Wh"],
+  ["Poids", "24,52 kg sur la fiche technique Zwheel ; 30,5 kg sur sa boutique et chez 360scooters"],
+  ["Charge max", "120 kg"],
+  ["Roues", "Tubeless ; 10 pouces sur la boutique Zwheel et chez 360scooters, 11 pouces sur la fiche technique"],
+  ["Freins", "Disque hydraulique avant ; disque arrière avec frein régénératif (hydraulique aussi selon d'autres pages Zwheel)"],
+  ["Suspension", "Avant et arrière : hydraulique selon la fiche technique, double ressort réglable selon la boutique"],
+  ["Étanchéité", "IPX4 (selon Comprasmartphone)"],
+  ["Temps de charge", "8 à 10 h"]
+ ],
+ "pros": [
+  "Batterie de 960 Wh : 46 à 50 km réels relevés en tests vidéo YouTube.",
+  "Freinage hydraulique, au moins à l'avant (Zwheel).",
+  "2 000 W en pointe : elle monte les fortes pentes sans faiblir (tests vidéo YouTube)."
+ ],
+ "cons": [
+  "Recharge longue : 8 à 10 heures.",
+  "Fiches Zwheel contradictoires sur le poids, la taille de roue et la suspension.",
+  "Indice IPX4 seulement, et non confirmé par Zwheel.",
+  "Pliage plus lent qu'attendu selon un testeur."
+ ],
+ "parts": [],
+ "care": [
+  "Freins hydrauliques : si le levier devient mou, fais purger le circuit, ne resserre pas l'étrier.",
+  "Une batterie de 960 Wh se charge en 8 à 10 heures : branche-la le soir, pas juste avant de partir.",
+  "Mesure le diamètre de ta roue et lis la cote du pneu avant toute commande : deux tailles circulent sous ce nom."
+ ],
+ "price": {
+  "text": "Prix repérés : 799,99 € sur la boutique Zwheel (prix barré 949,99 €), 749 € chez 360scooters. Aucun prix public français trouvé.",
+  "source": "zwheel.com, 360scooters.com"
+ },
+ "faq": [
+  {
+   "q": "Quelle taille de pneu pour la Zwheel ZWolf Plus ?",
+   "a": "Les pages Zwheel se contredisent : 10 pouces tubeless sur la boutique, 11 pouces sur la fiche technique. Avant l'achat, lis la dimension imprimée sur le côté du pneu."
+  },
+  {
+   "q": "Quelle autonomie réelle pour la Zwheel ZWolf Plus ?",
+   "a": "Zwheel annonce 70 km. Un testeur YouTube a vidé la batterie en 46 à 47 km après un mois d'usage, un autre parle d'environ 50 km."
+  },
+  {
+   "q": "Quelle différence entre la Zwheel ZWolf Plus et la ZWolf ?",
+   "a": "La Plus double la puissance (1 000 W contre 500 W), passe à 20 Ah de batterie au lieu de 15 Ah et remplace les disques mécaniques par un freinage hydraulique."
+  },
+  {
+   "q": "Combien de temps pour recharger la Zwheel ZWolf Plus ?",
+   "a": "8 à 10 heures selon la fiche Zwheel, 9 à 10 heures selon sa boutique."
+  },
+  {
+   "q": "Avec 2 000 W, la Zwheel ZWolf Plus est-elle légale ?",
+   "a": "Elle est vendue bridée à 25 km/h et homologuée DGT en Espagne. En France, la voie publique impose aussi 25 km/h maximum : sa puissance sert aux côtes, pas à rouler plus vite."
+  }
+ ],
+ "sources": [
+  {"label": "Zwheel — ZWolf Plus, fiche technique", "url": "https://es.zwheel.com/patinetes-electricos/zwolf/zwolf-plus"},
+  {"label": "Zwheel — boutique ZWolf Plus", "url": "https://es.zwheel.com/tienda/patinetes-electricos/zwolf/zwolf-plus/"},
+  {"label": "Zwheel Portugal — ZWolf Plus", "url": "https://es.zwheel.com/pt-pt/tienda/zwolf/zwolf-plus/"},
+  {"label": "360scooters — Zwheel ZWolf Plus", "url": "https://360scooters.com/es/producto/patinete-electrico-zwheel-zwolf-plus/"},
+  {"label": "Comprasmartphone — Zwheel ZWolf Plus", "url": "https://comprasmartphone.com/patinetes-electricos/zwheel-zwolf-plus"}
+ ]
+}

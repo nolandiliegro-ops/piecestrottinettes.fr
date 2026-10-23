@@ -1,0 +1,66 @@
+{
+ "displayName": "Kingsong N12 T3",
+ "metaTitle": "Kingsong N12 T3 : fiche technique double moteur",
+ "metaDescription": "Kingsong N12 T3 : deux moteurs de 1 000 W (1 500 W en pointe chacun), batterie 60 V 15,6 Ah, double frein à disque, roues 10 pouces. Fiche et entretien.",
+ "intro": [
+  "La Kingsong N12 T3 est la déclinaison double moteur de la famille N12. Là où la N12 Pro pousse avec un seul moteur arrière, la T3 entraîne ses deux roues, avec 1 000 W nominaux et 1 500 W en pointe par moteur, selon la fiche du fabricant.",
+  "Sa batterie de 60 V et 15,6 Ah alimente le tout ; Kingsong annonce environ 70 km d'autonomie en conditions idéales. Elle pèse 34,5 kg, freine avec deux disques et un frein électronique, et garde une suspension à l'avant comme à l'arrière."
+ ],
+ "specs": [
+  ["Moteurs", "2 × 1 000 W (2 × 1 500 W en pointe) selon Kingsong"],
+  ["Vitesse", "25 km/h sur la voie publique ; 48 km/h annoncés par Kingsong, sur terrain privé uniquement"],
+  ["Autonomie annoncée", "69 à 72 km selon les deux valeurs de la fiche Kingsong (43 et 45 miles)"],
+  ["Batterie", "60 V, 15,6 Ah (923,5 Wh affichés, 769,6 Wh dans le texte de la même fiche)"],
+  ["Poids", "34,5 kg (selon Kingsong)"],
+  ["Charge max", "120 kg (selon Kingsong)"],
+  ["Roues", "10 pouces"],
+  ["Freins", "Disque avant et arrière + électronique (E-ABS)"],
+  ["Suspension", "Avant et arrière"],
+  ["Étanchéité", "IP54 (selon Kingsong)"],
+  ["Temps de charge", "8 à 9 h (selon Kingsong)"]
+ ],
+ "pros": [
+  "Deux moteurs : la motricité est répartie sur les deux roues (Kingsong).",
+  "Deux freins à disque complétés par un frein électronique (Kingsong).",
+  "Double suspension, avant et arrière (Kingsong)."
+ ],
+ "cons": [
+  "34,5 kg : la porter dans un escalier demande de la force.",
+  "Recharge longue, 8 à 9 heures annoncées.",
+  "La fiche officielle se contredit sur l'énergie de la batterie (923,5 ou 769,6 Wh) et sur l'autonomie.",
+  "Aucune autonomie mesurée en test indépendant à ce jour."
+ ],
+ "parts": [],
+ "care": [
+  "Deux disques, deux jeux de plaquettes : contrôle-les ensemble, une plaquette usée d'un côté déséquilibre ton freinage.",
+  "Un double moteur tire fort sur les pneus : surveille leur usure et leur pression toutes les deux semaines.",
+  "Avec 34,5 kg sur la colonne, vérifie régulièrement le serrage du pliage et le jeu de la direction."
+ ],
+ "price": {
+  "text": "Prix repéré : 869,76 € TTC chez Max Blinker (modèle indiqué indisponible au moment de la recherche).",
+  "source": "maxblinker.com"
+ },
+ "faq": [
+  {
+   "q": "Quelle différence entre la Kingsong N12 T3 et la N12 Pro ?",
+   "a": "La T3 a deux moteurs de 1 000 W et une batterie de 15,6 Ah ; la N12 Pro n'a qu'un moteur arrière de 1 000 W et 14,5 Ah. La T3 freine avec deux disques, la Pro avec un tambour avant et un disque arrière."
+  },
+  {
+   "q": "Quelle taille de pneu pour la Kingsong N12 T3 ?",
+   "a": "Kingsong indique des roues de 10 pouces sans préciser la section. La cote exacte est moulée sur le flanc : note-la avant de choisir."
+  },
+  {
+   "q": "Combien de temps pour recharger la Kingsong N12 T3 ?",
+   "a": "Compte 8 à 9 heures pour une charge complète, selon Kingsong."
+  },
+  {
+   "q": "La Kingsong N12 T3 est-elle autorisée sur la route ?",
+   "a": "Sur la voie publique en France, une trottinette électrique doit rester limitée à 25 km/h. Les 48 km/h de la fiche ne concernent qu'un terrain privé ; la débrider pour rouler en ville est interdit."
+  }
+ ],
+ "sources": [
+  {"label": "Kingsong — KS-N12 T3", "url": "https://www.kingsong.com/products/ks-n12-t3"},
+  {"label": "Kingsong — trottinettes double moteur", "url": "https://www.kingsong.com/collections/dual-motor-electric-scooters"},
+  {"label": "Max Blinker — trottinettes électriques", "url": "https://www.maxblinker.com/en/electric-scooters/scooters-for-beginners"}
+ ]
+}

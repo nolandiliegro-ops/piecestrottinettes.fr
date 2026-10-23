@@ -1,0 +1,72 @@
+{
+ "displayName": "Kingsong N16",
+ "metaTitle": "Kingsong N16 : fiche technique double moteur 60 V",
+ "metaDescription": "Kingsong N16 : 2 × 1 500 W, batterie amovible 60 V 30 Ah (1 776 Wh), pneus tubeless 11 pouces, freins à disque hydrauliques. Fiche et entretien.",
+ "intro": [
+  "La Kingsong N16 est la plus grosse trottinette de la marque : deux moteurs de 1 500 W nominaux, une batterie amovible de 60 V et 30 Ah (1 776 Wh) et des pneus tubeless de 11 pouces, selon la fiche Kingsong.",
+  "Kingsong annonce jusqu'à 90 km d'autonomie et 150 kg de charge maximale, pour un poids d'environ 47 kg. Elle freine avec deux disques hydrauliques et un frein électronique, et se recharge en 5 à 6 heures avec deux chargeurs de 5 A, selon Kingsong Europe."
+ ],
+ "specs": [
+  ["Moteurs", "2 × 1 500 W ; en pointe 2 × 2 100 W selon Kingsong, 2 × 1 800 W selon Kingsong Europe"],
+  ["Vitesse", "25 km/h sur la voie publique ; 80 km/h annoncés par Kingsong, réservés à un terrain privé"],
+  ["Autonomie annoncée", "jusqu'à 90 km"],
+  ["Batterie", "60 V, 30 Ah, 1 776 Wh, amovible"],
+  ["Poids", "environ 47 kg (48 kg chez un revendeur)"],
+  ["Charge max", "150 kg"],
+  ["Roues", "11 × 3,5 pouces, tubeless (selon Kingsong)"],
+  ["Freins", "Disques hydrauliques avant et arrière + électronique"],
+  ["Suspension", "Bras oscillants à ressort avant et arrière, amortissement arrière réglable"],
+  ["Étanchéité", "IPX4 (trottinette), IPX5 (batterie) selon Kingsong Europe"],
+  ["Temps de charge", "5 à 6 h avec deux chargeurs de 5 A"]
+ ],
+ "pros": [
+  "Batterie amovible de 1 776 Wh (Kingsong).",
+  "Deux freins à disque hydrauliques (Kingsong Europe).",
+  "Charge rapide : 5 à 6 heures avec deux chargeurs (Kingsong Europe).",
+  "Charge maximale de 150 kg (Kingsong)."
+ ],
+ "cons": [
+  "Environ 47 kg : elle ne se porte pas, elle se roule.",
+  "Puissance de pointe annoncée différemment selon les fiches Kingsong (1 800 ou 2 100 W par moteur).",
+  "Indice IPX4 seulement pour la trottinette.",
+  "Aucune autonomie mesurée en test indépendant à ce jour."
+ ],
+ "parts": [],
+ "care": [
+  "Freins hydrauliques : si ton levier devient spongieux, fais purger le circuit plutôt que de resserrer les étriers.",
+  "Pneus tubeless de 11 pouces : contrôle la pression toutes les deux semaines, une fuite lente ne se voit pas tout de suite.",
+  "Avec 47 kg et deux moteurs, vérifie le serrage des axes de roue et des bras oscillants chaque mois."
+ ],
+ "price": {
+  "text": "Prix affiché par la boutique Kingsong Europe : 2 099 €, 1 799 € en promotion. Prix susceptible de varier.",
+  "source": "eu.kingsong.com"
+ },
+ "faq": [
+  {
+   "q": "Quelle taille de pneu pour la Kingsong N16 ?",
+   "a": "Kingsong indique des pneus tubeless de 11 × 3,5 pouces. Une fiche secondaire donne une autre cote : avant de commander, lis l'inscription sur le flanc de ton pneu."
+  },
+  {
+   "q": "La Kingsong N16 est-elle légale en ville ?",
+   "a": "En France, une trottinette électrique ne doit pas dépasser 25 km/h sur la voie publique. Les 80 km/h de la fiche ne valent que sur un terrain privé ; la débrider pour rouler en ville est interdit."
+  },
+  {
+   "q": "Combien de temps pour recharger la Kingsong N16 ?",
+   "a": "5 à 6 heures avec les deux chargeurs de 5 A branchés ensemble, selon Kingsong Europe. Avec un seul chargeur, compte plus longtemps."
+  },
+  {
+   "q": "Quels freins sur la Kingsong N16 ?",
+   "a": "Deux freins à disque hydrauliques, à l'avant et à l'arrière, complétés par un frein électronique."
+  },
+  {
+   "q": "La batterie de la Kingsong N16 se retire-t-elle ?",
+   "a": "Oui, Kingsong la présente comme amovible : tu peux la recharger hors de la trottinette."
+  }
+ ],
+ "sources": [
+  {"label": "Kingsong — N16", "url": "https://www.kingsong.com/products/kingsong-n16"},
+  {"label": "Kingsong Europe — N16 dual motor", "url": "https://kingsong-eu.myshopify.com/products/n16-dual-motor-electric-scooter"},
+  {"label": "Kingsong Europe — comparateur", "url": "https://eu.kingsong.com/pages/compare"},
+  {"label": "PEV Scout — Kingsong N16", "url": "https://www.pevscout.com/escooters/kingsong-n16"}
+ ]
+}

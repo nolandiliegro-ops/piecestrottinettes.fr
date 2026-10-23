@@ -1,0 +1,141 @@
+{
+  "displayName": "Inokim Light 2 Super",
+  "metaTitle": "Inokim Light 2 Super : fiche technique et pièces",
+  "metaDescription": "Inokim Light 2 Super : 350 W, batterie 36 V 10,4 Ah, 8,5 pouces gonflables, double tambour, 13,7 kg. Autonomie mesurée, recharge, pneus et entretien.",
+  "intro": [
+    "La Light 2 Super est la version de la Light 2 vendue en Europe avec une batterie à cellules de marque, LG selon le distributeur suisse, Samsung selon un revendeur belge. Elle pèse autour de 13 kg et se plie en quelques secondes, guidon compris. Elle se place entre la Light 2 d'origine et la Light 2 Max, plus endurante.",
+    "Moteur arrière de 350 W, batterie 36 V de 10,4 Ah, roues de 8,5 pouces gonflables et un frein à tambour sur chaque roue. Le distributeur suisse annonce environ 30 km avec un rider de 75 kg. Un testeur espagnol en a fait 32, bridée à 25 km/h. Pas de suspension : le confort vient des pneus."
+  ],
+  "specs": [
+    [
+      "Moteur",
+      "350 W nominaux ; 600 ou 650 W en pointe selon les fiches (250 W sur la fiche Fnac)"
+    ],
+    [
+      "Vitesse",
+      "25 km/h sur la voie publique en France"
+    ],
+    [
+      "Batterie",
+      "36 V, 10,4 Ah (environ 374 Wh)"
+    ],
+    [
+      "Autonomie annoncée",
+      "environ 30 km (75 kg, terrain plat, 20 °C) selon le distributeur suisse"
+    ],
+    [
+      "Autonomie mesurée",
+      "32 km à 25 km/h selon la chaîne Mi Patinete 365"
+    ],
+    [
+      "Poids",
+      "13 à 13,7 kg selon les fiches"
+    ],
+    [
+      "Charge max",
+      "100 kg"
+    ],
+    [
+      "Roues",
+      "8,5 pouces gonflables, pneus CST"
+    ],
+    [
+      "Freins",
+      "Tambour avant + tambour arrière"
+    ],
+    [
+      "Suspension",
+      "Aucune"
+    ],
+    [
+      "Étanchéité",
+      "IPX4 selon Inokim"
+    ],
+    [
+      "Temps de charge",
+      "3 à 5 h selon Inokim, 4 h selon Best Buy"
+    ]
+  ],
+  "pros": [
+    "Double frein à tambour, efficace et sans réglage de plaquettes (Mi Patinete 365).",
+    "Autour de 13 kg : elle se porte d'une main dans les escaliers (Fnac, distributeur suisse).",
+    "32 km mesurés à 25 km/h en conditions variées, proches de l'annonce (Mi Patinete 365)."
+  ],
+  "cons": [
+    "Pas de suspension : sur route dégradée, tu sens tout.",
+    "Fiches contradictoires sur la puissance (250 à 350 W nominaux) et la batterie (10,4 ou 12,8 Ah) selon le pays de vente.",
+    "Petites roues de 8,5 pouces : prudence sur les bordures et les rails de tram."
+  ],
+  "parts": [
+    {
+      "label": "Pneu",
+      "size": "8,5x2.0-5.5 (50-139)",
+      "count": 1,
+      "to": "/piece/pneu-8-5x2-0-5-5-cst-inokim-light-2",
+      "cta": "Pneu 8,5 pouces"
+    }
+  ],
+  "care": [
+    "Gonfle tes pneus autour de 50 psi, la pression utilisée par les testeurs espagnols : en dessous, tu crèves plus souvent.",
+    "Le ressort du frein arrière peut frotter sur la roue avec le temps : nettoie la poussière et graisse-le s'il grince.",
+    "Ne la stocke pas batterie vide : recharge-la au moins une fois par mois si elle dort à la cave."
+  ],
+  "faq": [
+    {
+      "q": "Quelle taille de pneu pour l'Inokim Light 2 Super ?",
+      "a": "Des pneus gonflables de 8,5 pouces en 8,5x2.0 sur jante de 5,5 pouces (cote 50-139 chez Inokim Shop), avec chambre à air."
+    },
+    {
+      "q": "Quelle autonomie réelle pour la Light 2 Super ?",
+      "a": "Environ 30 km. Un testeur espagnol a mesuré 32 km bridé à 25 km/h sur un parcours mixte. Avec un rider lourd ou beaucoup de côtes, compte plutôt 20 à 25 km."
+    },
+    {
+      "q": "La Light 2 Super a-t-elle des freins à disque ?",
+      "a": "Non, elle a deux freins à tambour, un à l'avant et un à l'arrière, actionnés par câble. Rien à changer côté plaquettes."
+    },
+    {
+      "q": "Quelle différence entre la Light 2 Super et la Light 2 Max ?",
+      "a": "La Super a une batterie de 10,4 Ah et deux pneus gonflables ; la Max monte à 12,8 Ah avec une roue arrière pleine. Le moteur de 350 W et les freins sont identiques."
+    },
+    {
+      "q": "Peut-on rouler à 35 km/h avec la Light 2 Super ?",
+      "a": "Sur la voie publique en France, non : la limite est de 25 km/h pour toutes les trottinettes électriques. Les vidéos espagnoles qui montrent un mode plus rapide parlent d'un réglage interdit chez nous sur route."
+    }
+  ],
+  "sources": [
+    {
+      "label": "Fnac — Inokim Light 2 Super 36 V 10,4 Ah",
+      "url": "https://www.fnac.com/Trottinette-electrique-Inokim-Light-2-Super-250-W-36-V-10-4-Ah-Blanc/a12145076/w-4"
+    },
+    {
+      "label": "Inokim — Light 2 (fiche officielle)",
+      "url": "https://inokim.com/products/light-2"
+    },
+    {
+      "label": "Best Buy — Inokim Light 2 Super",
+      "url": "https://www.bestbuy.com/site/inokim-light2-super-scooter-w-25-miles-max-operating-range-21-mph-max-speed-black/6528419.p?skuId=6528419"
+    },
+    {
+      "label": "eRyderz — Inokim Light 2 Super",
+      "url": "https://eryderz.co.uk/products/inokim-light-2-super"
+    },
+    {
+      "label": "Mad Dog Scooters — Inokim Super Light 2",
+      "url": "https://maddogscooters.com.au/products/inokim-super-light-2"
+    },
+    {
+      "label": "Mi Patinete 365 — test Light 2 Super",
+      "url": "https://www.youtube.com/watch?v=7cHtyYAt-CE"
+    },
+    {
+      "label": "Inokim Shop — pneus Inokim",
+      "url": "https://inokim.shop/products/inokim-tires"
+    }
+  ],
+  "video": {
+    "id": "0A21tynp7XQ",
+    "title": "INOKIM Light 2 Super en Profundidad: Reseña y Prueba Exhaustiva del Patinete del Futuro",
+    "channel": "LlegaVideos",
+    "uploadDate": "2022-06-12"
+  }
+}

@@ -1,0 +1,75 @@
+{
+ "displayName": "Zwheel ZCougar Duo",
+ "metaTitle": "Zwheel ZCougar Duo : fiche technique et chargeur",
+ "metaDescription": "Zwheel ZCougar Duo : 2 × 500 W (2 000 W en pointe), batterie 48 V 20 Ah (960 Wh), pneus tubeless 10 pouces, double disque. Fiche, chargeur et entretien.",
+ "intro": [
+  "La Zwheel ZCougar Duo est la version double moteur de la ZCougar, homologuée DGT en Espagne où Zwheel vend l'essentiel de sa gamme. Chaque moteur fait 500 W nominaux et 1 000 W en pointe, soit 2 000 W au total selon la fiche technique Zwheel de 2024.",
+  "Sa batterie de 48 V et 20 Ah (960 Wh) est annoncée pour 70 km ; MuyComputer estime plutôt 50 à 60 km en usage réel. Elle pèse 28,5 kg, freine avec deux disques et un frein électrique arrière, et roule sur des pneus tubeless de 10 pouces."
+ ],
+ "specs": [
+  ["Moteurs", "2 × 500 W (2 × 1 000 W en pointe, 2 000 W au total)"],
+  ["Vitesse", "25 km/h"],
+  ["Autonomie annoncée", "jusqu'à 70 km ; 50 à 60 km estimés par MuyComputer"],
+  ["Batterie", "48 V, 20 Ah, 960 Wh"],
+  ["Poids", "28,5 kg selon la fiche Zwheel ; 22,82 ou 25,5 kg sur d'autres pages"],
+  ["Charge max", "120 kg"],
+  ["Roues", "10 pouces, tubeless"],
+  ["Freins", "Disque avant et arrière + frein électrique régénératif arrière"],
+  ["Suspension", "DUO-SHOCK avant et arrière, arrière réglable"],
+  ["Temps de charge", "8 à 10 h avec le chargeur 54,6 V 2 A"]
+ ],
+ "pros": [
+  "Deux moteurs pour 2 000 W en pointe, en restant à 25 km/h (fiche Zwheel).",
+  "Batterie de 960 Wh : 50 à 60 km réels estimés (MuyComputer).",
+  "Deux freins à disque et suspension arrière réglable (fiche Zwheel)."
+ ],
+ "cons": [
+  "Recharge longue : 8 à 10 heures avec le chargeur fourni.",
+  "28,5 kg selon la fiche du fabricant.",
+  "Prise de charge différente de la ZCougar simple moteur.",
+  "Indice d'étanchéité non publié par Zwheel."
+ ],
+ "parts": [
+  {
+   "label": "Chargeur",
+   "size": "48 V (sortie 54,6 V), prise GX12 via adaptateur",
+   "count": 1,
+   "to": "/piece/pack-chargeur-48v-adaptateur-gx12-zwheel",
+   "cta": "Pack chargeur 48 V GX12"
+  }
+ ],
+ "care": [
+  "Ta batterie de 960 Wh demande 8 à 10 heures : lance la charge le soir et débranche-la le matin.",
+  "Ajuste la dureté de la suspension arrière à ton poids avant de régler tes freins, la géométrie change.",
+  "Deux moteurs, deux disques : vérifie le serrage des axes et l'usure des plaquettes avant et arrière chaque mois."
+ ],
+ "faq": [
+  {
+   "q": "Quelle taille de pneu pour la Zwheel ZCougar Duo ?",
+   "a": "Zwheel indique des pneus tubeless de 10 pouces sans publier la section. Le flanc du pneu porte sa dimension : vérifie-la avant tout achat."
+  },
+  {
+   "q": "Quelle autonomie réelle pour la Zwheel ZCougar Duo ?",
+   "a": "Zwheel annonce 70 km. MuyComputer, qui l'a analysée, estime 50 à 60 km selon ton poids, le relief et le mode moteur."
+  },
+  {
+   "q": "Combien de temps pour recharger la Zwheel ZCougar Duo ?",
+   "a": "Entre 8 et 10 heures avec le chargeur 54,6 V 2 A d'origine, selon la fiche Zwheel."
+  },
+  {
+   "q": "La Zwheel ZCougar Duo est-elle légale ?",
+   "a": "Elle est limitée à 25 km/h d'usine et homologuée DGT en Espagne. En France aussi, 25 km/h est le maximum autorisé sur la voie publique : ses deux moteurs servent à monter les côtes, pas à aller plus vite."
+  },
+  {
+   "q": "Quelle différence entre la ZCougar Duo et la ZCougar ?",
+   "a": "La Duo a deux moteurs de 500 W et 20 Ah de batterie ; la ZCougar n'a qu'un moteur et 10 Ah. La Duo se charge par une prise GX12, différente de la ZCougar."
+  }
+ ],
+ "sources": [
+  {"label": "Zwheel — ZCougar Duo", "url": "https://es.zwheel.com/tienda/patinetes-electricos/zcougar/zcougar-duo/"},
+  {"label": "Fiche technique ZCougar Duo 2024 (PDF)", "url": "https://media.capitanbikeonline.es/product-files/Ficha-ZCougar-DUO-2024-2024-04-10-16_31_12.pdf"},
+  {"label": "MuyComputer — analyse ZCougar Duo", "url": "https://www.muycomputer.com/2025/03/24/zcougar-duo-de-zwheel-analisis/"},
+  {"label": "El Corte Inglés — Zwheel ZCougar Duo", "url": "https://www.elcorteingles.es/electronica/A50441353-8436588187451-pr-patinete-electrico-zwheel-zcougar-duo-negro/"},
+  {"label": "Rueda q Rueda — ZCougar Duo homologado DGT", "url": "https://www.ruedaqrueda.com/en/producto/zcougar-duo-homologado-dgt/"}
+ ]
+}

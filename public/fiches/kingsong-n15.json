@@ -1,0 +1,64 @@
+{
+ "displayName": "Kingsong N15",
+ "metaTitle": "Kingsong N15 : fiche technique et entretien",
+ "metaDescription": "Kingsong N15 : moteur 500 W, batterie 36 V 10,4 Ah (384,8 Wh), roues 10 pouces, tambour avant et disque arrière, double suspension. Fiche et entretien.",
+ "intro": [
+  "La Kingsong N15 est une trottinette urbaine en 36 V à double suspension à ressorts. Son manuel regroupe plusieurs batteries sous les noms N15, N15 Pro et N15 Pro+, de 6 Ah en 36 V jusqu'à 14,5 Ah en 48 V : la version courante vendue en France est la 10,4 Ah.",
+  "Celle-ci annonce un moteur de 500 W, une batterie de 384,8 Wh et 30 à 35 km d'autonomie, selon Green220 et Kingsong Europe. Elle pèse environ 22 kg, freine avec un tambour à l'avant, un disque à l'arrière et un frein électronique, et affiche un indice IP54."
+ ],
+ "specs": [
+  ["Moteur", "500 W (750 W en pointe selon Kingsong Europe, 900 W selon Green220)"],
+  ["Vitesse", "25 km/h sur la voie publique ; 30 km/h sur les fiches"],
+  ["Autonomie annoncée", "30 à 35 km"],
+  ["Batterie", "36 V (37 V nominal), 10,4 Ah, 384,8 Wh"],
+  ["Poids", "21,9 à 22 kg"],
+  ["Charge max", "120 kg"],
+  ["Roues", "10 pouces ; pneus gonflables ou alvéolés selon la configuration"],
+  ["Freins", "Tambour avant + disque arrière + électronique (E-ABS)"],
+  ["Suspension", "Ressorts avant et arrière"],
+  ["Étanchéité", "IP54 (Green220, PEV Scout)"],
+  ["Temps de charge", "5 à 6 h selon Green220, 6 à 7 h selon le manuel"]
+ ],
+ "pros": [
+  "Double suspension à ressorts pour une trottinette de 22 kg (Kingsong Europe).",
+  "Trois freins : tambour, disque et frein électronique (Kingsong Europe).",
+  "Indice IP54 publié (Green220, PEV Scout)."
+ ],
+ "cons": [
+  "Batterie de 384,8 Wh : 30 à 35 km annoncés.",
+  "Plusieurs versions (N15, N15 Pro, N15 Pro+) avec des batteries différentes sous des noms proches.",
+  "Puissance de pointe annoncée différemment selon les vendeurs : 750 ou 900 W.",
+  "Type de pneu variable selon la configuration : gonflable ou alvéolé."
+ ],
+ "parts": [],
+ "care": [
+  "Avant d'acheter une batterie ou un chargeur, lis l'étiquette : la gamme N15 existe en 36 V et en 48 V.",
+  "Règle le tambour avant dès que le levier s'enfonce trop ; c'est ton frein principal en ville.",
+  "Graisse légèrement les axes des ressorts de suspension tous les quelques mois pour éviter grincements et jeu."
+ ],
+ "faq": [
+  {
+   "q": "Quelle différence entre la Kingsong N15 et la N15 Pro ?",
+   "a": "Le manuel Kingsong cite plusieurs batteries sous ces noms, et les revendeurs ne s'accordent pas : une N15 Pro est vendue en 36 V 10,4 Ah chez un revendeur, alors que la N15 Pro+ passe en 48 V 14,5 Ah. Fie-toi à l'étiquette de ta batterie."
+  },
+  {
+   "q": "Quelle taille de pneu pour la Kingsong N15 ?",
+   "a": "Des roues de 10 pouces, gonflables ou alvéolées selon la version. La section n'est pas publiée : lis la cote sur le flanc de ton pneu avant d'en commander un."
+  },
+  {
+   "q": "Quelle autonomie pour la Kingsong N15 ?",
+   "a": "Entre 30 et 35 km annoncés pour la batterie de 10,4 Ah. Aucun test indépendant publié ne donne de mesure complète."
+  },
+  {
+   "q": "La Kingsong N15 résiste-t-elle à la pluie ?",
+   "a": "Elle est donnée IP54, soit une protection contre les projections d'eau. Une averse passe, une flaque profonde ou un lavage au jet non."
+  }
+ ],
+ "sources": [
+  {"label": "Kingsong Europe — Kingsong N15", "url": "https://kingsongeurope.com/product/kingsong-n15/"},
+  {"label": "Green220 — Kingsong KS-N15 37 V 10,4 Ah", "url": "https://www.green220.com/fr/trottinettes-electriques/2193-trottinette-electrique-kingsong-ks-n15-37v-104ah-3701522015028.html"},
+  {"label": "PEV Scout — Kingsong N15", "url": "https://www.pevscout.com/escooters/kingsong-n15"},
+  {"label": "Manuel Kingsong KS-N15 / N15 Pro", "url": "https://manuals.plus/m/c78042537f5516c3eb0bb1594e04c1cb5fd867bd411f2278dda17dfca95eb63b"},
+  {"label": "Max Blinker — Kingsong N15 Pro", "url": "https://www.maxblinker.com/en/electric-scooters/kingsong-n15-pro"}
+ ]
+}

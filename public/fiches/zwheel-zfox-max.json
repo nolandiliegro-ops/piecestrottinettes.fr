@@ -1,0 +1,67 @@
+{
+ "displayName": "Zwheel ZFox Max",
+ "metaTitle": "Zwheel ZFox Max : fiche technique et entretien",
+ "metaDescription": "Zwheel ZFox Max : 400 W (800 W en pointe), batterie 36 V 15 Ah (540 Wh), 16,5 kg, roues 10 pouces à chambre à air, double suspension. Fiche et entretien.",
+ "intro": [
+  "La Zwheel ZFox Max est une trottinette légère de la gamme ZFox, homologuée DGT en Espagne. Zwheel annonce 16,5 kg seulement, avec une suspension avant hydraulique double et une suspension arrière à double ressort ; une ancienne fiche revendeur la décrivait sans suspension.",
+  "Son moteur arrière fait 400 W nominaux et 800 W en pointe, sa batterie 36 V et 15 Ah, soit 540 Wh, pour 50 km annoncés. En test vidéo, un pilote de 92 kg a parcouru 36,5 km à pleine vitesse. Elle freine avec un tambour à l'avant et un disque à l'arrière."
+ ],
+ "specs": [
+  ["Moteur", "400 W (800 W en pointe)"],
+  ["Vitesse", "25 km/h"],
+  ["Autonomie annoncée", "jusqu'à 50 km (25 km sur une ancienne fiche revendeur)"],
+  ["Batterie", "36 V, 15 Ah, 540 Wh"],
+  ["Poids", "16,5 kg selon Zwheel ; 19,1 kg sur une autre page de la marque"],
+  ["Charge max", "100 kg"],
+  ["Roues", "10 pouces, avec chambre à air"],
+  ["Freins", "Tambour avant + disque arrière + frein électrique régénératif"],
+  ["Suspension", "Double hydraulique avant, double ressort arrière"],
+  ["Temps de charge", "6 à 8 h selon Zwheel ; 5 à 6 h sur une fiche revendeur"]
+ ],
+ "pros": [
+  "16,5 kg avec double suspension, selon la fiche Zwheel.",
+  "Batterie de 540 Wh : 36,5 à 42 km parcourus lors de deux tests vidéo YouTube.",
+  "Trois freins : tambour, disque et frein régénératif (Zwheel, Decathlon)."
+ ],
+ "cons": [
+  "Charge maximale limitée à 100 kg.",
+  "Recharge de 6 à 8 heures annoncée par Zwheel.",
+  "Pneus à chambre à air : plus exposés aux crevaisons par pincement qu'un tubeless.",
+  "Aucun indice d'étanchéité publié."
+ ],
+ "parts": [],
+ "care": [
+  "Tes roues ont une chambre à air : garde la pression indiquée sur le flanc, un pneu mou pince la chambre au premier trottoir.",
+  "Règle le tambour avant au câble dès que le levier s'approche de la poignée.",
+  "Ne dépasse pas les 100 kg annoncés, sac compris : les suspensions et le pliage travaillent au-delà de leur limite."
+ ],
+ "price": {
+  "text": "Prix affiché par la boutique Zwheel : 549,99 € (prix initial), 379,99 € en promotion. Aucun prix public français trouvé.",
+  "source": "es.zwheel.com"
+ },
+ "faq": [
+  {
+   "q": "Quelle taille de pneu pour la Zwheel ZFox Max ?",
+   "a": "Zwheel indique des roues de 10 pouces avec chambre à air, sans publier la section. Lis la cote sur le flanc de ton pneu, et celle de la chambre, avant de commander."
+  },
+  {
+   "q": "Quelle autonomie réelle pour la Zwheel ZFox Max ?",
+   "a": "Zwheel annonce 50 km. Deux testeurs YouTube ont relevé 36,5 km à 92 kg en roulant au maximum, et 42 km à 68 kg à 25 km/h."
+  },
+  {
+   "q": "Combien de temps pour recharger la Zwheel ZFox Max ?",
+   "a": "Compte 6 à 8 heures selon Zwheel pour remplir la batterie de 540 Wh."
+  },
+  {
+   "q": "Quels freins sur la Zwheel ZFox Max ?",
+   "a": "Un tambour à l'avant, un disque à l'arrière et un frein électrique régénératif. Seul le disque arrière utilise des plaquettes."
+  }
+ ],
+ "sources": [
+  {"label": "Zwheel — ZFox Max", "url": "https://es.zwheel.com/patinetes-electricos/zfox/zfox-max"},
+  {"label": "Zwheel — boutique ZFox Max", "url": "https://es.zwheel.com/tienda/patinetes-electricos/zfox/zfox-max/?attribute_pa_escoge-tu-color=sky-city"},
+  {"label": "Decathlon — Zwheel ZFox Max", "url": "https://www.decathlon.es/es/p/mp/zwheel/patinete-electrico-zwheel-zfox-max-artic-white-800w-15000mah-50km-blanco/_/R-p-fcbe76ea-f3e0-4fb6-bf5d-99008b12b552"},
+  {"label": "Clemente Bike Shop — Zwheel ZFox Max 400 W", "url": "https://clementebikeshop.com/patinetes/666-patinete-electrico-zwheel-zfox-max-400w.html"},
+  {"label": "Aeropatin — Zwheel ZFox Max", "url": "https://aeropatin.com/patinetes-electricos/zwheel-zfox-max/"}
+ ]
+}

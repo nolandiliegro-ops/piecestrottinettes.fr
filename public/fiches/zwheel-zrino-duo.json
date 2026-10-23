@@ -1,0 +1,74 @@
+{
+ "displayName": "Zwheel ZRino Duo",
+ "metaTitle": "Zwheel ZRino Duo : fiche technique et chargeur",
+ "metaDescription": "Zwheel ZRino Duo : 2 × 500 W, batterie 48 V 12,5 Ah (600 Wh), pneus tubeless 10 pouces anti-crevaison, quatre disques, double suspension. Fiche et chargeur.",
+ "intro": [
+  "La Zwheel ZRino Duo reprend le châssis ZRino avec un moteur dans chaque roue. Elle se distingue de la ZRino Duo Max, qui garde les deux moteurs mais passe à une batterie de 20 Ah. Les deux sont homologuées DGT en Espagne.",
+  "Chaque moteur fait 500 W nominaux ; la batterie de 48 V et 12,5 Ah stocke environ 600 Wh, pour 35 km selon Zwheel et 45 km selon El Corte Inglés. Zwheel annonce un double disque à chaque roue, une suspension avant à quatre amortisseurs et des pneus tubeless de 10 pouces anti-crevaison."
+ ],
+ "specs": [
+  ["Moteurs", "2 × 500 W (1 000 W nominaux au total) ; puissance de pointe non publiée par Zwheel"],
+  ["Vitesse", "25 km/h"],
+  ["Autonomie annoncée", "35 km selon Zwheel ; 45 km selon El Corte Inglés"],
+  ["Batterie", "48 V, 12,5 Ah, environ 600 Wh (13 Ah sur une page Zwheel)"],
+  ["Poids", "22,72 kg net selon Zwheel ; 26,8 kg selon El Corte Inglés"],
+  ["Charge max", "200 kg selon Zwheel ; 120 kg selon El Corte Inglés"],
+  ["Roues", "10 pouces, tubeless anti-crevaison"],
+  ["Freins", "Double disque avant et arrière + frein électrique régénératif arrière (selon Zwheel)"],
+  ["Suspension", "Quatre amortisseurs avant, hydraulique arrière"],
+  ["Temps de charge", "6 à 7 h selon Zwheel ; 5 à 8 h selon El Corte Inglés"]
+ ],
+ "pros": [
+  "Un moteur dans chaque roue : plus de motricité en côte et sur sol glissant (Zwheel).",
+  "Freinage à disques aux deux roues, complété par un frein régénératif (Zwheel).",
+  "Pneus tubeless avec système anti-crevaison (Zwheel)."
+ ],
+ "cons": [
+  "Batterie de 600 Wh pour deux moteurs : 35 à 45 km annoncés.",
+  "Poids et charge maximale très différents entre Zwheel et ses revendeurs.",
+  "Puissance de pointe non publiée.",
+  "Aucun indice d'étanchéité publié."
+ ],
+ "parts": [
+  {
+   "label": "Chargeur",
+   "size": "48 V (sortie 54,6 V), prise GX12 via adaptateur",
+   "count": 1,
+   "to": "/piece/pack-chargeur-48v-adaptateur-gx12-zwheel",
+   "cta": "Pack chargeur 48 V GX12"
+  }
+ ],
+ "care": [
+  "Ta prise de charge est une GX12 : n'y force jamais un chargeur à prise GX16 ou jack, même en 48 V.",
+  "Les quatre amortisseurs avant prennent du jeu avec les chocs : contrôle leurs vis de fixation chaque mois.",
+  "Deux moteurs vident la batterie plus vite en mode double : garde le mode simple moteur pour les trajets plats."
+ ],
+ "faq": [
+  {
+   "q": "Quelle taille de pneu pour la Zwheel ZRino Duo ?",
+   "a": "Zwheel parle de pneus tubeless de 10 pouces anti-crevaison, sans publier la section. Fie-toi à l'inscription sur le flanc plutôt qu'à la fiche du vendeur."
+  },
+  {
+   "q": "Quelle différence entre la ZRino Duo et la ZRino Duo Max ?",
+   "a": "Mêmes deux moteurs de 500 W, mais la Duo Max embarque 20 Ah de batterie et annonce jusqu'à 70 km, contre 12,5 Ah et 35 à 45 km pour la Duo."
+  },
+  {
+   "q": "Quel chargeur pour la Zwheel ZRino Duo ?",
+   "a": "Un chargeur 48 V (54,6 V en sortie) avec une prise GX12. La ZRino simple moteur utilise une autre prise : vérifie la tienne avant d'acheter."
+  },
+  {
+   "q": "Combien de temps pour recharger la Zwheel ZRino Duo ?",
+   "a": "6 à 7 heures selon Zwheel ; El Corte Inglés donne une fourchette plus large, de 5 à 8 heures."
+  },
+  {
+   "q": "Une trottinette à deux moteurs comme la ZRino Duo est-elle légale ?",
+   "a": "Oui tant qu'elle reste à 25 km/h, sa vitesse d'usine. Les deux moteurs ajoutent de la force en montée, pas de vitesse : en France, la limite de 25 km/h s'applique sur la voie publique."
+  }
+ ],
+ "sources": [
+  {"label": "Zwheel — ZRino Duo", "url": "https://es.zwheel.com/patinetes-electricos/zrino/zrino-duo"},
+  {"label": "El Corte Inglés — Zwheel ZRino Duo", "url": "https://www.elcorteingles.es/deportes/MP_0022337_8436588187475-negro-pr-patinete-electrico-zwheel-zrino-duo/"},
+  {"label": "Zwheel Barcelone — gamme ZRino", "url": "https://tiendabarcelona.zwheel.com/gama-zrino/"},
+  {"label": "360scooters — Zwheel ZRino Duo", "url": "https://360scooters.com/es/producto/patinete-zwheel-zrino-duo/"}
+ ]
+}

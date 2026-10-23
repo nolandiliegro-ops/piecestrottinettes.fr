@@ -1,0 +1,65 @@
+{
+ "displayName": "Kingsong S2 Pro",
+ "metaTitle": "Kingsong S2 Pro : fiche technique et entretien",
+ "metaDescription": "Kingsong S2 Pro : 1 000 W (1 440 W en pointe), batterie 60 V, double frein à disque, double suspension, pneus 10 pouces. Fiche, batterie et entretien.",
+ "intro": [
+  "La Kingsong S2 Pro est une trottinette mono-moteur en 60 V, présentée par Trott'n'Shop comme une nouveauté de l'été 2022. À ne pas confondre avec la S22 Pro, qui est une gyroroue de la même marque : les deux machines n'ont ni le même châssis ni les mêmes pièces d'usure.",
+  "Elle annonce 1 000 W nominaux et 1 440 W en pointe, deux freins à disque et une suspension aux deux roues, sur des pneus gonflables de 10 pouces, selon Gyroroue Shop et Trott'n'Shop. Sa batterie reste floue : 14,5 ou 16 Ah selon le vendeur, pour 960 Wh affichés."
+ ],
+ "specs": [
+  ["Moteur", "1 000 W (1 440 W en pointe)"],
+  ["Vitesse", "25 km/h sur la voie publique ; 50 km/h annoncés sur terrain privé"],
+  ["Autonomie annoncée", "jusqu'à 70 km en mode Eco selon Gyroroue Shop (environ 50 km en ville) ; 40 à 50 km en pratique selon Trott'n'Shop"],
+  ["Batterie", "60 V ; 14,5 Ah selon Gyroroue Shop, 16 Ah selon Trott'n'Shop ; 960 Wh affichés"],
+  ["Poids", "23 kg (selon Trott'n'Shop)"],
+  ["Charge max", "134 kg selon Gyroroue Shop ; 100 kg selon Trott'n'Shop"],
+  ["Roues", "10 pouces, gonflables"],
+  ["Freins", "Disque avant et arrière"],
+  ["Suspension", "Amortisseurs avant et arrière"],
+  ["Temps de charge", "6 h (selon Trott'n'Shop)"]
+ ],
+ "pros": [
+  "Deux freins à disque, à l'avant et à l'arrière (Gyroroue Shop, Trott'n'Shop).",
+  "1 000 W nominaux en 60 V pour 23 kg (Trott'n'Shop).",
+  "Double suspension et pneus gonflables de 10 pouces (Gyroroue Shop)."
+ ],
+ "cons": [
+  "Batterie annoncée différemment selon les vendeurs : 14,5 ou 16 Ah.",
+  "Charge maximale contradictoire : 100 ou 134 kg.",
+  "Aucun indice d'étanchéité publié.",
+  "Aucune autonomie mesurée en test indépendant."
+ ],
+ "parts": [],
+ "care": [
+  "Deux disques : vérifie l'épaisseur des plaquettes avant et arrière en même temps, et remplace-les par paire.",
+  "Pas d'indice IP publié : évite la pluie battante et ne passe jamais ta trottinette au jet.",
+  "Avant de commander une batterie, lis son étiquette : la capacité réelle n'est pas la même selon les fiches."
+ ],
+ "price": {
+  "text": "Prix affiché par Gyroroue Shop : 1 199 € TTC. Prix susceptible de varier.",
+  "source": "gyroroue-shop.fr"
+ },
+ "faq": [
+  {
+   "q": "Quelle taille de pneu pour la Kingsong S2 Pro ?",
+   "a": "Des pneus gonflables de 10 pouces ; la section n'est pas publiée. Regarde les chiffres inscrits sur le côté du pneu, c'est eux qui décident."
+  },
+  {
+   "q": "Quelle autonomie réelle pour la Kingsong S2 Pro ?",
+   "a": "Les vendeurs parlent d'environ 50 km en ville (Gyroroue Shop) et de 40 à 50 km en pratique (Trott'n'Shop), loin des 70 à 80 km annoncés au maximum."
+  },
+  {
+   "q": "La Kingsong S2 Pro peut-elle rouler à 50 km/h ?",
+   "a": "Seulement sur un terrain privé. Sur la voie publique en France, elle doit rester à 25 km/h ; une version débridée y est interdite."
+  },
+  {
+   "q": "Quelle différence entre la Kingsong S2 Pro et la S22 Pro ?",
+   "a": "La S2 Pro est une trottinette électrique à guidon ; la S22 Pro est une gyroroue, une monoroue sans guidon. Leurs pièces ne sont pas interchangeables."
+  }
+ ],
+ "sources": [
+  {"label": "Gyroroue Shop — Kingsong S2 Pro", "url": "https://www.gyroroue-shop.fr/boutique/trottinette-electrique/kingsong-trottinette-electrique/kingsong-s2-pro"},
+  {"label": "Trott'n'Shop — Kingsong S2 Pro", "url": "https://www.trottnshop.com/produit/kingsong-s2-pro/"},
+  {"label": "Gyroroue Shop — trottinettes Kingsong", "url": "https://www.gyroroue-shop.fr/product-category/trottinette-electrique/kingsong-trottinette-electrique"}
+ ]
+}

@@ -1,0 +1,132 @@
+{
+  "displayName": "Inokim OXO Super",
+  "metaTitle": "Inokim OXO Super : fiche technique et pièces",
+  "metaDescription": "Inokim OXO Super : 2 x 1 000 W, batterie 60 V 25,6 Ah, freins hydrauliques, suspension OSAP, 33,5 kg, charge 13,5 h. Autonomie testée et pièces.",
+  "intro": [
+    "L'OXO Super est la version renouvelée de l'OXO bimoteur, documentée par le manuel Inokim et le catalogue 2023. Electric Scooter Guide relève un prix américain en baisse, 1 999 $ contre 2 599 $, un plateau en caoutchouc, l'indice IPX4 et des cellules Greenway à la place des LG. La base reste la même : deux moteurs, suspension réglable, freins hydrauliques.",
+    "Deux moteurs de 1 000 W nominaux (1 300 W chacun en pointe), batterie 60 V de 25,6 Ah. Inokim annonce 110 km à 15 km/h ; Electric Scooter Guide a mesuré 53 km sur un parcours vallonné. Elle pèse 33,5 kg, accepte 120 kg et roule en 10 x 2,5 pouces à chambre à air, avec du 10 x 3 en option."
+  ],
+  "specs": [
+    [
+      "Moteur",
+      "2 x 1 000 W nominaux, 2 x 1 300 W en pointe"
+    ],
+    [
+      "Vitesse",
+      "25 km/h sur la voie publique en France"
+    ],
+    [
+      "Batterie",
+      "60 V, 25,6 Ah (1 536 Wh) ; 57,6 V sur certaines fiches"
+    ],
+    [
+      "Autonomie annoncée",
+      "jusqu'à 110 km (15 km/h, 75 kg, 25 °C)"
+    ],
+    [
+      "Autonomie mesurée",
+      "53 km sur parcours vallonné (Electric Scooter Guide)"
+    ],
+    [
+      "Poids",
+      "33,5 kg"
+    ],
+    [
+      "Charge max",
+      "120 kg"
+    ],
+    [
+      "Roues",
+      "10 x 2,5 pouces gonflables à chambre à air ; 10 x 3 en option"
+    ],
+    [
+      "Freins",
+      "Disques hydrauliques avant et arrière"
+    ],
+    [
+      "Suspension",
+      "Avant et arrière réglables, système OSAP"
+    ],
+    [
+      "Étanchéité",
+      "IPX4"
+    ],
+    [
+      "Temps de charge",
+      "13,5 h"
+    ]
+  ],
+  "pros": [
+    "Suspension OSAP réglable : le confort reste son point fort (Electric Scooter Guide).",
+    "Freinage hydraulique puissant mais progressif selon le test de Rider Guide (2023).",
+    "Moins chère que l'OXO de 2020 aux États-Unis, à fiche technique proche (Electric Scooter Guide)."
+  ],
+  "cons": [
+    "Toujours des pneus à chambre à air, plus sujets aux crevaisons que des tubeless (Electric Scooter Guide).",
+    "13,5 heures de charge complète avec le chargeur d'origine (manuel Inokim).",
+    "33,5 kg : pas faite pour être portée tous les jours.",
+    "Autonomie mesurée de 53 km, loin des 110 km annoncés."
+  ],
+  "parts": [],
+  "care": [
+    "Contrôle l'usure des plaquettes tous les 500 km : avec deux moteurs et 33 kg, les freins travaillent dur.",
+    "Resserre la molette de la potence si elle prend du jeu : c'est elle qui empêche le guidon de flotter.",
+    "Vérifie la pression de tes chambres à air chaque semaine : c'est la première cause de crevaison sur cette trottinette."
+  ],
+  "price": {
+    "text": "1 999 $ aux États-Unis au lancement de la version 2023, contre 2 599 $ pour l'OXO précédente (Electric Scooter Guide). Une boutique française affiche l'OXO à 1 200 € (Smartinette).",
+    "source": "electricscooterguide.com, smartinette.com"
+  },
+  "faq": [
+    {
+      "q": "Quelle taille de pneu pour l'Inokim OXO Super ?",
+      "a": "Le manuel Inokim indique du 10 x 2,5 pouces à chambre à air, avec du 10 x 3 en option. Ta trottinette peut porter l'une ou l'autre taille : lis la cote moulée sur le flanc avant de commander."
+    },
+    {
+      "q": "Quelle autonomie réelle pour l'OXO Super ?",
+      "a": "Electric Scooter Guide a fait 53 km sur un parcours vallonné en roulant vite. En ville, à allure modérée, tu iras plus loin, mais les 110 km d'Inokim sont mesurés à 15 km/h."
+    },
+    {
+      "q": "Combien de temps pour charger l'Inokim OXO Super ?",
+      "a": "13,5 heures pour une charge complète selon le manuel et le catalogue Inokim. Branche-la le soir si tu roules tous les jours."
+    },
+    {
+      "q": "Quelle différence entre l'OXO Super et l'OXO de 2020 ?",
+      "a": "Même base bimoteur, mêmes freins hydrauliques et même batterie de 25,6 Ah. La version 2023 ajoute un plateau en caoutchouc et l'indice IPX4, passe aux cellules Greenway et accélère plus franchement selon Rider Guide."
+    },
+    {
+      "q": "Peut-on rouler en OXO Super sur la route en France ?",
+      "a": "Oui, à condition de respecter la limite de 25 km/h des trottinettes électriques. Ses deux moteurs l'emmènent bien au-delà, mais cette vitesse est interdite sur la voie publique française."
+    }
+  ],
+  "sources": [
+    {
+      "label": "Electric Scooter Guide — test Inokim OXO 2023",
+      "url": "https://electricscooterguide.com/inokim-oxo-2023-review/"
+    },
+    {
+      "label": "Inokim Australie — manuel OXO Super",
+      "url": "https://inokim.com.au/download/electric_scooter/oxo_super/user_guide/oxo_super_user_guide_manual_australia.pdf"
+    },
+    {
+      "label": "Catalogue Inokim 2023",
+      "url": "https://www.scribd.com/presentation/662044979/The-INOKIM-Catalog-2023-1"
+    },
+    {
+      "label": "Electric Kicks — guide des trottinettes Inokim 2023",
+      "url": "https://www.electrickicks.com.au/blogs/escooters/the-ultimate-guide-to-inokim-electric-scooters-2023"
+    },
+    {
+      "label": "Mi-Scooter — Inokim OXO",
+      "url": "https://mi-scooter.uk/product/inokim-oxo/"
+    },
+    {
+      "label": "Rider Guide — test vidéo OXO 2023",
+      "url": "https://www.youtube.com/watch?v=j6cT3b84DK0"
+    },
+    {
+      "label": "Smartinette — marque Inokim",
+      "url": "https://smartinette.com/marques/inokim"
+    }
+  ]
+}

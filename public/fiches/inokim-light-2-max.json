@@ -1,0 +1,135 @@
+{
+ "displayName": "Inokim Light 2 Max",
+ "metaTitle": "Inokim Light 2 Max : fiche technique et pièces",
+ "metaDescription": "Inokim Light 2 Max : 350 W, batterie 36 V 12,8 Ah, roues 8,5 pouces dont arrière pleine, double tambour, 14 kg. Autonomie, charge, pneus et entretien.",
+ "intro": [
+  "La Light 2 Max est la dernière version de la Light 2, la trottinette la plus légère d'Inokim. Elle garde le même format compact, moins de 14 kg et moins d'un mètre de long une fois pliée, mais reçoit une batterie plus grosse que la Light 2 Super. Une revue vidéo française de mars 2024 la donne sous 700 €, contre plus de 1 200 € pour les versions précédentes.",
+  "Son moteur arrière fait 350 W nominaux et sa batterie 36 V de 12,8 Ah, soit environ 461 Wh. Inokim annonce 43 km. La roue avant est gonflable, la roue arrière motrice est pleine pour ne plus crever, et les deux roues freinent par tambour. Il n'y a pas de suspension."
+ ],
+ "specs": [
+  [
+   "Moteur",
+   "350 W nominaux ; 600 à 700 W en pointe selon les fiches"
+  ],
+  [
+   "Vitesse",
+   "25 km/h sur la voie publique en France"
+  ],
+  [
+   "Batterie",
+   "36 V, 12,8 Ah (environ 461 Wh)"
+  ],
+  [
+   "Autonomie annoncée",
+   "jusqu'à 43 km (27 miles selon Inokim)"
+  ],
+  [
+   "Poids",
+   "14,1 kg selon Inokim, moins de 14 kg selon la revue vidéo française"
+  ],
+  [
+   "Charge max",
+   "100 kg"
+  ],
+  [
+   "Roues",
+   "8,5 pouces : avant gonflable, arrière plein"
+  ],
+  [
+   "Freins",
+   "Tambour avant + tambour arrière"
+  ],
+  [
+   "Suspension",
+   "Aucune"
+  ],
+  [
+   "Étanchéité",
+   "IPX4 selon Inokim"
+  ],
+  [
+   "Temps de charge",
+   "3 à 5 h selon Inokim, environ 6 h selon la revue vidéo française, 7 h selon Smartwheel"
+  ]
+ ],
+ "pros": [
+  "Roue arrière pleine : plus de crevaison sur la roue motrice, point faible des Light précédentes (revue vidéo française, mars 2024).",
+  "Jante avant démontable : changer la chambre à air prend 10 à 15 minutes (revue vidéo française, mars 2024).",
+  "Batterie de 12,8 Ah, plus grosse que celle de la Light 2 Super (10,4 Ah) (Inokim Espagne)."
+ ],
+ "cons": [
+  "Pas de suspension, et la roue arrière pleine amortit moins qu'un pneu gonflable.",
+  "Aucun test indépendant d'autonomie publié à ce jour : les 43 km sont une annonce d'Inokim (Scooter Gear Lab).",
+  "Les fiches ne donnent pas toutes le même temps de charge : de 3 à 7 heures selon la source."
+ ],
+ "parts": [
+  {
+   "label": "Pneu",
+   "size": "8,5x2.0-5.5 (roue avant gonflable)",
+   "count": 1,
+   "to": "/piece/pneu-8-5x2-0-5-5-cst-inokim-light-2",
+   "cta": "Pneu 8,5 pouces"
+  }
+ ],
+ "care": [
+  "Seule la roue avant est gonflable : vérifie sa pression chaque semaine, c'est elle qui absorbe les chocs.",
+  "Les deux tambours se règlent au câble : resserre-les dès que le freinage devient mou.",
+  "Recharge-la après chaque sortie plutôt que de la vider : une batterie de 36 V vit plus longtemps entre 20 et 80 %."
+ ],
+ "price": {
+  "text": "Moins de 700 € en France à sa sortie, contre plus de 1 200 € pour les versions précédentes (revue vidéo française de mars 2024). La boutique Inokim américaine l'affiche à 995 $ (prix barré 1 400 $).",
+  "source": "YouTube (mars 2024), inokim.shop"
+ },
+ "faq": [
+  {
+   "q": "Quelle taille de pneu pour l'Inokim Light 2 Max ?",
+   "a": "8,5 pouces. L'avant est un pneu gonflable en 8,5x2.0 sur jante de 5,5 pouces (50-139) ; l'arrière est un pneu plein."
+  },
+  {
+   "q": "Quelle autonomie réelle pour l'Inokim Light 2 Max ?",
+   "a": "Inokim annonce 43 km. Une revue française l'estime à 35-40 km en ville pour un adulte, mais aucun test chronométré indépendant n'est publié : pars sur moins si tu pèses lourd ou si ton trajet monte."
+  },
+  {
+   "q": "Combien de temps de charge pour la Light 2 Max ?",
+   "a": "Inokim indique 3 à 5 heures. D'autres fiches parlent de 6 à 7 heures : tout dépend du chargeur livré avec ta trottinette."
+  },
+  {
+   "q": "Quelle différence entre la Light 2 Max et la Light 2 Super ?",
+   "a": "La Max passe à une batterie de 12,8 Ah contre 10,4 Ah pour la Super, et l'autonomie annoncée grimpe de 30 à 43 km selon Inokim Espagne. Moteur 350 W et freins à tambour restent les mêmes."
+  },
+  {
+   "q": "La Light 2 Max est-elle légale en France ?",
+   "a": "Oui, livrée en France elle est réglée à 25 km/h, la limite pour une trottinette électrique sur la voie publique. Elle sait aller plus vite à l'étranger, mais ce réglage n'a pas sa place sur une route française."
+  }
+ ],
+ "sources": [
+  {
+   "label": "Inokim — Light 2 (fiche officielle)",
+   "url": "https://inokim.com/products/light-2"
+  },
+  {
+   "label": "Inokim Shop — Light 2 Max",
+   "url": "https://inokim.shop/products/inokim-light-2-max-electric-scooter"
+  },
+  {
+   "label": "Inokim Espagne — Light 2 Super et Max",
+   "url": "https://inokimes.com/tienda/patinetes/inokim-light-2-super/"
+  },
+  {
+   "label": "Smartwheel — Inokim Light 2 Max",
+   "url": "https://www.smartwheel.ca/inokim-light-2-max-490wh-electric-foldable-scooter/"
+  },
+  {
+   "label": "Scooter Gear Lab — trottinettes Inokim",
+   "url": "https://scootergearlab.com/best/best-inokim-scooter/"
+  },
+  {
+   "label": "Revue vidéo française — Inokim Light 2 Max",
+   "url": "https://www.youtube.com/watch?v=899hJrZDCTw"
+  },
+  {
+   "label": "Inokim Shop — pneus Inokim",
+   "url": "https://inokim.shop/products/inokim-tires"
+  }
+ ]
+}

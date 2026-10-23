@@ -1,0 +1,70 @@
+{
+ "displayName": "Zwheel ZRino SE",
+ "metaTitle": "Zwheel ZRino SE : fiche technique et entretien",
+ "metaDescription": "Zwheel ZRino SE : 600 W (1 200 W en pointe), batterie 48 V 10 Ah (480 Wh), 35 km annoncés, 20,9 kg, pneus tubeless 10 pouces, double disque. Fiche.",
+ "intro": [
+  "La Zwheel ZRino SE est la version allégée de la ZRino : même moteur, batterie réduite à 10 Ah, et 1,9 kg de moins sur la balance. Elle est vendue en Espagne par El Corte Inglés et plusieurs revendeurs, avec l'homologation DGT.",
+  "Son moteur fait 600 W nominaux et 1 200 W en pointe, sa batterie 48 V et 10 Ah (480 Wh) pour 35 km annoncés. El Corte Inglés indique 20,9 kg, deux freins à disque, une double suspension et des pneus tubeless de 10 pouces ; le revendeur Rueda q Rueda estime 22 à 28 km en ville."
+ ],
+ "specs": [
+  ["Moteur", "600 W (1 200 W en pointe)"],
+  ["Vitesse", "25 km/h"],
+  ["Autonomie annoncée", "jusqu'à 35 km ; 22 à 28 km en ville selon Rueda q Rueda"],
+  ["Batterie", "48 V, 10 Ah, 480 Wh"],
+  ["Poids", "20,9 kg (selon El Corte Inglés)"],
+  ["Charge max", "120 kg"],
+  ["Roues", "10 pouces, tubeless"],
+  ["Freins", "Disque avant et arrière"],
+  ["Suspension", "Double amortisseur avant et arrière, hydraulique selon 360scooters"],
+  ["Temps de charge", "5 à 6 h selon El Corte Inglés ; 4 à 5 h selon Liontec"]
+ ],
+ "pros": [
+  "Deux freins à disque (El Corte Inglés, Rueda q Rueda).",
+  "1 200 W en pointe pour monter les côtes urbaines (El Corte Inglés).",
+  "Recharge assez courte, 4 à 6 heures selon les revendeurs."
+ ],
+ "cons": [
+  "Batterie de 480 Wh : 22 à 28 km en ville selon un revendeur.",
+  "20,9 kg, encore lourde à porter longtemps.",
+  "Indice d'étanchéité non publié.",
+  "Chez El Corte Inglés, l'adaptateur de charge est vendu à part."
+ ],
+ "parts": [],
+ "care": [
+  "Contrôle la pression de tes pneus tubeless tous les quinze jours : sous-gonflés, ils s'usent vite sur les flancs.",
+  "Avec deux disques, vérifie que les étriers ne frottent pas après un démontage de roue.",
+  "Sans indice IP publié, évite de rouler sous une pluie forte et sèche le plateau après une sortie mouillée."
+ ],
+ "price": {
+  "text": "Prix repéré : 599 € chez 360scooters. Aucun prix public français trouvé.",
+  "source": "360scooters.com"
+ },
+ "faq": [
+  {
+   "q": "Quelle taille de pneu pour la Zwheel ZRino SE ?",
+   "a": "Des pneus tubeless de 10 pouces ; aucune fiche ne publie la section. La bonne taille est écrite sur le pneu lui-même, côté flanc."
+  },
+  {
+   "q": "Quelle autonomie réelle pour la Zwheel ZRino SE ?",
+   "a": "Zwheel annonce 35 km. Le revendeur Rueda q Rueda parle de 22 à 28 km en usage urbain, selon ton poids et le dénivelé."
+  },
+  {
+   "q": "Quelle différence entre la Zwheel ZRino SE et la ZRino ?",
+   "a": "La SE garde le moteur de 600 W mais passe à 10 Ah de batterie au lieu de 15 Ah : 35 km annoncés contre 50, et 20,9 kg contre 22,8 kg."
+  },
+  {
+   "q": "Combien de temps pour recharger la Zwheel ZRino SE ?",
+   "a": "5 à 6 heures selon El Corte Inglés, 4 à 5 heures selon le revendeur Liontec."
+  },
+  {
+   "q": "Peut-on rouler plus vite que 25 km/h en Zwheel ZRino SE ?",
+   "a": "Non sur la voie publique. Elle est limitée à 25 km/h d'usine, la vitesse maximale légale en France comme en Espagne ; la débrider la rend interdite en circulation."
+  }
+ ],
+ "sources": [
+  {"label": "El Corte Inglés — Zwheel ZRino SE", "url": "https://www.elcorteingles.es/deportes/MP_0022337_8436621652687-negro-pr-patinete-electrico-zwheel-zrino-se/"},
+  {"label": "Rueda q Rueda — ZRino SE homologado DGT", "url": "https://www.ruedaqrueda.com/en/producto/zrino-se-homologado-dgt/"},
+  {"label": "360scooters — Zwheel ZRino SE", "url": "https://360scooters.com/es/producto/patinete-zwheel-zrino-se-homologado-dgt/"},
+  {"label": "Liontec — Zwheel ZRino SE", "url": "https://www.liontec.es/producto/zwheel-zrino-se-homologado-dgt/"}
+ ]
+}

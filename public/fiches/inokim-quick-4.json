@@ -1,0 +1,171 @@
+{
+  "displayName": "Inokim Quick 4",
+  "metaTitle": "Inokim Quick 4 : fiche technique et pièces",
+  "metaDescription": "Inokim Quick 4 : 600 W, batterie 52 V 13 ou 16 Ah, pneus 10 x 2,5, double tambour, double suspension, 21,5 kg. Autonomie réelle, chargeur, pièces.",
+  "intro": [
+    "La Quick 4 est la quatrième génération de la Quick, la trottinette de trajet quotidien d'Inokim. Elle existe en deux batteries : Hero en 13 Ah et Super en 16 Ah à cellules Samsung. Electrek et Zerorider saluent sa finition et la douceur de son accélération ; Zerorider lui reproche un plateau un peu court.",
+    "Moteur arrière de 600 W nominaux, batterie 52 V, pneus gonflables de 10 x 2,5 pouces à chambre à air, suspension avant et arrière. Elle freine avec deux tambours, choix d'Inokim pour limiter l'entretien. Elle pèse 21,5 kg. Electrek compte environ 40 km d'autonomie réelle avec la batterie de 16 Ah."
+  ],
+  "specs": [
+    [
+      "Moteur",
+      "600 W nominaux ; 1 100 W en pointe selon le manuel, 900 W selon Fluidfreeride"
+    ],
+    [
+      "Vitesse",
+      "25 km/h sur la voie publique en France"
+    ],
+    [
+      "Batterie",
+      "52 V, 13 Ah (Hero) ou 16 Ah (Super, 832 Wh)"
+    ],
+    [
+      "Autonomie annoncée",
+      "55 km à 25 km/h et 70 km en mode éco (version 16 Ah)"
+    ],
+    [
+      "Autonomie mesurée",
+      "environ 40 km (Electrek, Fluidfreeride, version 16 Ah)"
+    ],
+    [
+      "Poids",
+      "21,5 kg"
+    ],
+    [
+      "Charge max",
+      "120 kg selon le manuel Inokim (100 kg selon Electrek)"
+    ],
+    [
+      "Roues",
+      "10 x 2,5 pouces gonflables, à chambre à air"
+    ],
+    [
+      "Freins",
+      "Tambour avant + tambour arrière"
+    ],
+    [
+      "Suspension",
+      "Ressort à l'avant, blocs caoutchouc à l'arrière"
+    ],
+    [
+      "Étanchéité",
+      "IPX4 selon Inokim"
+    ],
+    [
+      "Temps de charge",
+      "environ 7 h"
+    ],
+    [
+      "Chargeur",
+      "52 V (58,8 V en sortie), 2 A, prise ronde 8 mm (RCA)"
+    ]
+  ],
+  "pros": [
+    "Deux freins à tambour fermés : ils ne craignent ni la pluie ni les chocs de trottoir (Electrek).",
+    "Accélération progressive et silencieuse, très appréciée au test (Zerorider).",
+    "Autonomie annoncée réaliste : Inokim parle de conditions réelles plutôt que du chiffre le plus flatteur (Electrek)."
+  ],
+  "cons": [
+    "Plateau court : on cherche la place de ses pieds sur les longs trajets (Zerorider).",
+    "Empattement court, un peu moins stable à haute vitesse (Electric Scooter Guide).",
+    "21,5 kg : portable, mais pas légère.",
+    "Pneus à chambre à air, plus exposés aux crevaisons que des tubeless."
+  ],
+  "parts": [
+    {
+      "label": "Pneu",
+      "size": "10x2.50-6",
+      "count": 3,
+      "to": "/piece/pneu-10x2-50-6-wanda",
+      "cta": "Pneus 10x2.50-6"
+    },
+    {
+      "label": "Chambre à air",
+      "size": "10x2.50, valve droite ou coudée",
+      "count": 6,
+      "to": "/piece/chambre-a-air-10x2-50-valve-coudee-135x45",
+      "cta": "Chambres à air"
+    },
+    {
+      "label": "Pneu plein",
+      "size": "10x2.50 (jante 34 mm)",
+      "count": 1,
+      "to": "/piece/pneu-plein-10x250-jante-34-mm",
+      "cta": "Pneu plein"
+    },
+    {
+      "label": "Chargeur",
+      "size": "52 V → 58,8 V, prise ronde 8 mm (RCA)",
+      "count": 1,
+      "to": "/piece/pack-chargeur-52v-adaptateur-rca",
+      "cta": "Chargeur 52 V"
+    }
+  ],
+  "care": [
+    "Tes freins à tambour se règlent au câble : quand la course du levier s'allonge, un tour de molette suffit.",
+    "Gonfle tes chambres à air chaque semaine : sur des roues de 10 pouces, la pression joue sur le confort et sur l'autonomie.",
+    "Vérifie le verrou de pliage avant de partir : des testeurs ont vu la potence bouger quand il était mal enclenché."
+  ],
+  "faq": [
+    {
+      "q": "Quelle taille de pneu pour l'Inokim Quick 4 ?",
+      "a": "Des pneus gonflables de 10 x 2,5 pouces avec chambre à air. Les pneus de notre catalogue pour ce modèle sont en 10x2.50-6 : compare avec la cote moulée sur ton flanc avant de commander."
+    },
+    {
+      "q": "Quelle autonomie réelle pour l'Inokim Quick 4 ?",
+      "a": "Environ 40 km avec la batterie de 16 Ah selon Electrek et Fluidfreeride. La version Hero (13 Ah) en fait moins. Les 70 km d'Inokim sont mesurés en mode éco."
+    },
+    {
+      "q": "Quel chargeur pour l'Inokim Quick 4 ?",
+      "a": "Un chargeur 52 V qui sort 58,8 V sous 2 A, avec une prise ronde de 8 mm (RCA). Le même chargeur convient aux versions Hero et Super."
+    },
+    {
+      "q": "L'Inokim Quick 4 a-t-elle des freins à disque ?",
+      "a": "Non, deux freins à tambour, à l'avant et à l'arrière. Pas de disque ni de plaquettes : seulement les câbles à régler."
+    },
+    {
+      "q": "La Quick 4 peut-elle rouler à 40 km/h en France ?",
+      "a": "Son moteur peut l'emmener vers 40 km/h, mais sur la voie publique française une trottinette électrique est plafonnée à 25 km/h. Rouler plus vite sur la route est interdit."
+    },
+    {
+      "q": "Quelle différence entre la Quick 4 Hero et la Quick 4 Super ?",
+      "a": "Seulement la batterie : 13 Ah pour la Hero, 16 Ah en cellules Samsung pour la Super. Moteur, freins, roues et cadre sont les mêmes."
+    }
+  ],
+  "sources": [
+    {
+      "label": "Electrek — test Inokim Quick 4",
+      "url": "https://electrek.co/2021/05/14/inokim-quick-4-electric-scooter-review-i-love-how-high-quality-these-fast-scooters-are-becoming/"
+    },
+    {
+      "label": "Fluidfreeride — Inokim Quick 4",
+      "url": "https://fluidfreeride.com/blogs/news/inokim-quick-4-review"
+    },
+    {
+      "label": "Inokim — Quick 4 (fiche officielle)",
+      "url": "https://inokim.com/products/quick-4"
+    },
+    {
+      "label": "Manuel Inokim Quick 4",
+      "url": "https://manuals.plus/inokim/quick-4-scooter-manual"
+    },
+    {
+      "label": "Electric Scooter Insider — test Quick 4",
+      "url": "https://www.electricscooterinsider.com/electric-scooters/reviews/inokim-quick-4-review/"
+    },
+    {
+      "label": "Trott en Provence — chargeur Inokim Quick 4",
+      "url": "https://trott-en-provence.fr/chargeur-trottinette-inokim-quick-4/"
+    },
+    {
+      "label": "Inokim Espagne — Quick 4",
+      "url": "https://inokimes.com/tienda/patinetes/inokim-quick-4/"
+    }
+  ],
+  "video": {
+    "id": "ADMgxpOOcSs",
+    "title": "Trottinette électrique Inokim Quick 4 - Le test",
+    "channel": "Zerorider - la chaîne de la trottinette électrique",
+    "uploadDate": "2020-12-19"
+  }
+}

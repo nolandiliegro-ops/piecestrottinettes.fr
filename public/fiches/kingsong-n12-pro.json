@@ -1,0 +1,153 @@
+{
+  "displayName": "Kingsong N12 Pro",
+  "metaTitle": "Kingsong N12 Pro : fiche technique, pneus et pièces",
+  "metaDescription": "Kingsong N12 Pro : 1 000 W (1 400 W en pointe), batterie 60 V 14,5 Ah, pneus 70/65-6.5, tambour avant et disque arrière. Fiche, entretien et pièces.",
+  "intro": [
+    "La Kingsong N12 Pro est une trottinette mono-moteur en 60 V, à suspension avant et arrière. Son moteur arrière développe 1 000 W nominaux et 1 400 W en pointe, selon Kingsong et Kingsong Europe ; il ne faut pas la confondre avec la N12 T3, qui en a deux.",
+    "Sa batterie de 14,5 Ah (858 Wh) est annoncée pour 80 km ; le Labo Fnac en a mesuré 81 dans ses conditions de test. Elle roule sur des pneus de 10 pouces en 70/65-6.5 et freine avec un tambour à l'avant, un disque à l'arrière et un frein électronique."
+  ],
+  "specs": [
+    [
+      "Moteur",
+      "1 000 W (1 400 W en pointe)"
+    ],
+    [
+      "Vitesse",
+      "25 km/h en sortie d'usine ; 50 km/h annoncés, réservés à un terrain privé"
+    ],
+    [
+      "Autonomie annoncée",
+      "jusqu'à 80 km ; 81 km mesurés par le Labo Fnac"
+    ],
+    [
+      "Batterie",
+      "60 V, 14,5 Ah, 858 Wh"
+    ],
+    [
+      "Poids",
+      "29,3 kg selon Kingsong Europe ; 25 kg selon le test Fnac"
+    ],
+    [
+      "Charge max",
+      "120 kg"
+    ],
+    [
+      "Roues",
+      "10 pouces, pneus 70/65-6.5 (selon Kingsong Europe)"
+    ],
+    [
+      "Freins",
+      "Tambour avant + disque arrière + électronique (E-ABS)"
+    ],
+    [
+      "Suspension",
+      "Avant et arrière"
+    ],
+    [
+      "Étanchéité",
+      "IP54 (selon Blueway)"
+    ],
+    [
+      "Temps de charge",
+      "7 h selon Kingsong Europe, 8 h selon Kingsong Store ; 8 h 30 mesurées par la Fnac"
+    ]
+  ],
+  "pros": [
+    "81 km d'autonomie mesurés en laboratoire, au niveau de l'annonce (Labo Fnac).",
+    "Accélération franche pour une mono-moteur 60 V (test vidéo Pat Smage).",
+    "Double suspension, avant et arrière (Kingsong)."
+  ],
+  "cons": [
+    "Près de 29 kg selon Kingsong Europe : lourde à porter.",
+    "Recharge longue, 8 h 30 mesurées par la Fnac.",
+    "Frein tambour à l'avant : un seul disque, à l'arrière.",
+    "Le poids annoncé varie entre 25 et 29,3 kg selon les sources."
+  ],
+  "parts": [
+    {
+      "label": "Pneu",
+      "size": "70/65-6.5 (10 pouces)",
+      "count": 3,
+      "to": "/piece/pneu-voltek-v6-moovway-bw10-70-65-6-5-255x70-renforce",
+      "cta": "Pneus 70/65-6.5"
+    },
+    {
+      "label": "Chambre à air",
+      "size": "10x3.0 (70/65-6.5), valve coudée",
+      "count": 1,
+      "to": "/piece/chambre-a-air-10x30-7065-65",
+      "cta": "Chambre à air 70/65-6.5"
+    }
+  ],
+  "care": [
+    "Ton pneu d'origine est monté avec chambre à air : garde-le à la pression indiquée sur le flanc, un sous-gonflage pince la chambre.",
+    "Le tambour avant se dérègle avec l'usure : retends son câble dès que la course du levier s'allonge.",
+    "Avec 1 400 W en pointe sur la roue arrière, contrôle le serrage de l'axe moteur et l'usure du pneu arrière tous les mois."
+  ],
+  "price": {
+    "text": "Prix affiché par Kingsong Store : 899 € (prix initial), 699 € en promotion. Prix susceptible de varier.",
+    "source": "kingsong-store.com"
+  },
+  "faq": [
+    {
+      "q": "Quelle taille de pneu pour la Kingsong N12 Pro ?",
+      "a": "Des pneus de 10 pouces en 70/65-6.5, selon la fiche pièce de Kingsong Europe. La même cote s'écrit parfois 10x3.0-6.5."
+    },
+    {
+      "q": "La Kingsong N12 Pro a-t-elle des chambres à air ?",
+      "a": "Oui selon un revendeur, qui indique des pneus d'origine avec chambre à air. Certaines annonces parlent de tubeless : regarde ta valve et le flanc du pneu pour en être sûr."
+    },
+    {
+      "q": "Quelle autonomie réelle pour la Kingsong N12 Pro ?",
+      "a": "Le Labo Fnac a mesuré 81 km pour 80 km annoncés. Un testeur YouTube de 85 kg a relevé environ 45 km à 25 km/h par 10 °C : le froid et ton poids pèsent beaucoup."
+    },
+    {
+      "q": "Combien de temps pour recharger la Kingsong N12 Pro ?",
+      "a": "Kingsong annonce 7 à 8 heures ; la Fnac a mesuré 8 h 30 pour une charge complète."
+    },
+    {
+      "q": "Peut-on rouler à 50 km/h en Kingsong N12 Pro ?",
+      "a": "Pas sur la route. Elle sort d'usine bridée à 25 km/h, la limite légale en France ; les 50 km/h de la fiche concernent un circuit ou un terrain privé, et la débrider pour la voie publique est interdit."
+    },
+    {
+      "q": "Quelle différence entre la Kingsong N12 Pro et la N12 T3 ?",
+      "a": "La N12 Pro a un seul moteur arrière de 1 000 W et un tambour avant ; la N12 T3 a deux moteurs de 1 000 W et deux freins à disque, pour 34,5 kg."
+    }
+  ],
+  "sources": [
+    {
+      "label": "Kingsong — N12 Pro",
+      "url": "https://www.kingsong.com/products/kingsong-n12-pro-electric-scooter"
+    },
+    {
+      "label": "Kingsong Europe — N12 Pro",
+      "url": "https://kingsongeurope.com/product/kingsong-n12-pro/"
+    },
+    {
+      "label": "Kingsong Europe — pneu 10 pouces N12 Pro",
+      "url": "https://kingsongeurope.com/product/tire-10/"
+    },
+    {
+      "label": "L'Éclaireur Fnac — test labo Kingsong KS-N12 Pro",
+      "url": "https://leclaireur.fnac.com/test/564271-test-labo-de-la-kingsong-ks-n12-pro-un-bilan-tres-positif/"
+    },
+    {
+      "label": "Kingsong Store — KS-N12 Pro",
+      "url": "https://www.kingsong-store.com/fr/trottinettes-electriques/51-kingsong-ks-n12-pro-59-v-145-ah-3701522001403.html"
+    },
+    {
+      "label": "Blueway — KS-N12 Pro",
+      "url": "https://help.bluewaycorp.com/shop/ks-n12-pro-king-song-n12-pro-9004"
+    },
+    {
+      "label": "Lifty Electric — Kingsong N12 Pro",
+      "url": "https://www.liftyelectric.com/products/kingsong-n12-pro-electric-scooter"
+    }
+  ],
+  "video": {
+    "id": "Ts-KIPlK50Y",
+    "title": "Testing the King Song N12 Pro Electric Scooter!",
+    "channel": "Pat Smage",
+    "uploadDate": "2026-09-06"
+  }
+}
