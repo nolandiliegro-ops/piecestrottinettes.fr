@@ -7,6 +7,7 @@
  *  1 Repassé · 2 Tableau de bord · 3 Parcours · 4 Tout replié · 5 Carte d'identité
  */
 import { useState, type ReactNode } from "react";
+import { FoldIcon, useIconStyle, type FoldKey } from "@/components/pdp/foldIcons";
 import { Link } from "react-router-dom";
 import { ChevronDown, CheckCircle2, HelpCircle, Search, Wrench, Clock, Package, Sparkles, Gauge, Lightbulb, FileText } from "lucide-react";
 import { sanitizeHtml } from "@/lib/sanitizeHtml";
@@ -363,17 +364,20 @@ const standardTabs = (part: PartDetail, f: Fiche, opts: { compat?: boolean; mont
   return opts.montageFirst ? [...compat, ...montage, ...rest, ...faq] : [...compat, ...rest, ...montage, ...faq];
 };
 
-const Fold = ({ title, teaser, children, open = false, icon: Icon }: { title: string; teaser?: string; children: ReactNode; open?: boolean; icon?: typeof Wrench }) => (
+const Fold = ({ title, teaser, children, open = false, icon: Icon, k, n }: { title: string; teaser?: string; children: ReactNode; open?: boolean; icon?: typeof Wrench; k?: FoldKey; n?: number }) => {
+  const iconStyle = useIconStyle();
+  return (
   <details className="group bg-white" open={open} style={frame()}>
     <summary className="list-none cursor-pointer flex items-center gap-3 min-h-[60px] px-4 select-none [&::-webkit-details-marker]:hidden">
-      {Icon && <span aria-hidden className="shrink-0 w-9 h-9 flex items-center justify-center text-white transition-colors group-open:bg-[#4A7C59]" style={{ background: CARBON, clipPath: CHAMFER }}><Icon className="w-4 h-4" /></span>}
+      <FoldIcon k={k} Icon={Icon} n={n} style={iconStyle} />
       <h3 className="flex-1 text-sm lg:text-base font-extrabold uppercase tracking-wider" style={{ color: CARBON }}>{title}</h3>
       {teaser && <span className="text-sm text-right max-w-[45%] truncate" style={{ ...big, color: GREEN }}>{teaser}</span>}
       <ChevronDown className="w-5 h-5 shrink-0 transition-transform group-open:rotate-180" />
     </summary>
     <div className="px-4 pb-5 pt-1">{children}</div>
   </details>
-);
+  );
+};
 
 
 // ─── 1 · REPASSÉ : l'existant à l'identique, compacté ─────────────────────────
@@ -494,12 +498,18 @@ const Replie = ({ part, f, scooters, scootersLoading }: P) => {
           )}
         </div>
         <div className="mt-5 space-y-2">
-          <Fold icon={FileText} title="Présentation" open={isVendeuse(part.description)}><Presentation part={part} f={f} /></Fold>
-          {f.points.length > 0 && <Fold icon={Sparkles} title="Ce qui la distingue"><Traits f={f} /></Fold>}
-          {f.guide && <Fold icon={Wrench} title="Montage" teaser={part.youtube_video_id ? "vidéo" : undefined}><Install part={part} f={f} /></Fold>}
-          <Fold icon={Gauge} title="Caractéristiques" teaser={f.rows[0]?.[1].split(" · ")[0]}><TechFull f={f} noDesc /></Fold>
-          {f.guide && <Fold icon={Lightbulb} title="Bien choisir"><Choose f={f} /></Fold>}
-          {f.faq.length > 0 && <Fold icon={HelpCircle} title="Questions fréquentes" teaser={String(f.faq.length)}><Faq f={f} /></Fold>}
+          {/* 24/10 (Nolan) : tous les volets fermés à l'ouverture, Présentation comprise. */}
+          {(() => {
+            const folds = [
+              { k: "presentation" as const, on: true, el: (n: number) => <Fold key="p" k="presentation" n={n} icon={FileText} title="Présentation"><Presentation part={part} f={f} /></Fold> },
+              { k: "distingue" as const, on: f.points.length > 0, el: (n: number) => <Fold key="d" k="distingue" n={n} icon={Sparkles} title="Ce qui la distingue"><Traits f={f} /></Fold> },
+              { k: "montage" as const, on: !!f.guide, el: (n: number) => <Fold key="m" k="montage" n={n} icon={Wrench} title="Montage" teaser={part.youtube_video_id ? "vidéo" : undefined}><Install part={part} f={f} /></Fold> },
+              { k: "tech" as const, on: true, el: (n: number) => <Fold key="t" k="tech" n={n} icon={Gauge} title="Caractéristiques" teaser={f.rows[0]?.[1].split(" · ")[0]}><TechFull f={f} noDesc /></Fold> },
+              { k: "choisir" as const, on: !!f.guide, el: (n: number) => <Fold key="c" k="choisir" n={n} icon={Lightbulb} title="Bien choisir"><Choose f={f} /></Fold> },
+              { k: "faq" as const, on: f.faq.length > 0, el: (n: number) => <Fold key="f" k="faq" n={n} icon={HelpCircle} title="Questions fréquentes" teaser={String(f.faq.length)}><Faq f={f} /></Fold> },
+            ].filter((x) => x.on);
+            return folds.map((x, i) => x.el(i + 1));
+          })()}
         </div>
 
         {/* Module compatibilité, en bas (Nolan 20/10) : recherche + frise, aucune marque ouverte d'office. */}
