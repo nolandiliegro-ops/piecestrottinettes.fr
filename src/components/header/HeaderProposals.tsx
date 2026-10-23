@@ -39,7 +39,7 @@ const readMenuVariant = (): number => {
     return 3;
   }
 };
-// Familles qui vendent (forte marge) d'abord.
+// Familles qui vendent (forte marge) d'abord. Chaque lien mène à la page famille /categorie/:slug (24/10, Nolan).
 const FAMILIES = ["pneus", "chambres-a-air", "plaquettes", "chargeurs", "pneus-pleins", "disques"];
 
 const FONT = "'Plus Jakarta Sans', sans-serif";
@@ -140,7 +140,7 @@ const HeaderProposals = ({ variant }: { variant: BarreVariant }) => {
         <nav className="hidden lg:flex items-center gap-6 xl:gap-8 relative" onMouseLeave={() => setMegaOpen(false)}>
           <button type="button" onClick={() => setMegaOpen((v) => !v)} onMouseEnter={() => setMegaOpen(true)} aria-expanded={megaOpen}
             className="inline-flex items-center gap-1 py-2 text-sm font-extrabold italic uppercase tracking-[0.06em]"
-            style={{ fontFamily: FONT, color: on("/catalogue") || megaOpen ? CARBON : "#57534E", boxShadow: on("/catalogue") ? `inset 0 -2.5px 0 ${GREEN}` : "none" }}>
+            style={{ fontFamily: FONT, color: on("/catalogue") || on("/categorie") || megaOpen ? CARBON : "#57534E", boxShadow: on("/catalogue") || on("/categorie") ? `inset 0 -2.5px 0 ${GREEN}` : "none" }}>
             Pièces <ChevronDown className={`w-4 h-4 transition-transform ${megaOpen ? "rotate-180" : ""}`} />
           </button>
           {LINKS.slice(1).map((l) => (
@@ -151,7 +151,7 @@ const HeaderProposals = ({ variant }: { variant: BarreVariant }) => {
             <div className="absolute left-0 top-full pt-3 z-50">
               <div className="w-[440px] bg-white p-3 grid grid-cols-2 gap-1.5 shadow-xl" style={{ clipPath: "polygon(0 0, calc(100% - 14px) 0, 100% 14px, 100% 100%, 0 100%)", boxShadow: `inset 0 0 0 1px ${LINE}` }}>
                 {families.map((c) => (
-                  <Link key={c.id} to={`/catalogue?category=${c.id}`} onClick={() => setMegaOpen(false)} className="flex items-center min-h-[44px] px-3 text-sm font-bold hover:bg-[#F5F0E8]" style={{ fontFamily: FONT, color: CARBON }}>
+                  <Link key={c.id} to={`/categorie/${c.slug}`} onClick={() => setMegaOpen(false)} className="flex items-center min-h-[44px] px-3 text-sm font-bold hover:bg-[#F5F0E8]" style={{ fontFamily: FONT, color: CARBON }}>
                     {c.name}
                   </Link>
                 ))}
