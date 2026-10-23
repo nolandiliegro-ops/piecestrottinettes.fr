@@ -1,4 +1,5 @@
-import { lazy, Suspense } from "react";
+import { lazy, Suspense, useState } from "react";
+import SmartSearch, { readRechercheVariant } from "@/components/search/SmartSearch";
 import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
@@ -54,6 +55,12 @@ const RiderPublicCard = lazy(() => import("./pages/RiderPublicCard"));
 
 const queryClient = new QueryClient();
 
+/** 24/10 : propositions de recherche ?recherche=1..5 (SmartSearch) ; sans paramètre = SpotlightCommand. */
+const SearchOverlay = () => {
+  const [v] = useState(readRechercheVariant);
+  return v ? <SmartSearch variant={v} /> : <SpotlightCommand />;
+};
+
 // Minimal loading fallback
 // 24/10 (Nolan) : pendant les chargements, le logo centré plutôt qu'une roue qui tourne. Respire doucement (opacité seule).
 const PageLoader = () => (
@@ -82,7 +89,7 @@ function App() {
               <Toaster />
               <Sonner />
               <BrowserRouter>
-                <SpotlightCommand />
+                <SearchOverlay />
                 <CartSidebar />
                 <MobileNav />
                 <PrelaunchModal />

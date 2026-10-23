@@ -286,7 +286,7 @@ const SpotlightCommand = () => {
               duration: 0.2, 
               ease: [0.16, 1, 0.3, 1]
             }}
-            className="fixed left-1/2 top-[15vh] z-[101] w-full max-w-2xl -translate-x-1/2 px-4"
+            className="fixed inset-x-0 top-[15vh] z-[101] mx-auto w-full max-w-2xl px-4" /* 24/10 : centrage sans translate (framer-motion écrasait transform → panneau décalé à droite sur iPhone) */
           >
             <div className="overflow-hidden rounded-2xl bg-white/95 backdrop-blur-2xl 
                           border-[0.5px] border-mineral/10 
