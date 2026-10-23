@@ -27,13 +27,16 @@ export const readBarreVariant = (): BarreVariant | null => {
   }
 };
 
-/** 24/10 : propositions du menu de gauche (barre « Logo au centre »), ?menu=1..5 ; sans paramètre = menu actuel. */
+/** 24/10 : menu de gauche (barre « Logo au centre ») : défaut = 3 « Pièces déroulant » en italique ; ?menu=1..5 = propositions, ?menu=0 = ancien. */
 const readMenuVariant = (): number => {
   try {
-    const n = Number(new URLSearchParams(window.location.search).get("menu"));
-    return n >= 1 && n <= 5 ? n : 0;
+    // 24/10 : Nolan choisit la 3 « Pièces déroulant », en italique (« plus racing ») = menu par défaut ; ?menu=0 = ancien.
+    const raw = new URLSearchParams(window.location.search).get("menu");
+    if (raw === null) return 3;
+    const n = Number(raw);
+    return n >= 0 && n <= 5 ? n : 3;
   } catch {
-    return 0;
+    return 3;
   }
 };
 // Familles qui vendent (forte marge) d'abord.
@@ -136,12 +139,12 @@ const HeaderProposals = ({ variant }: { variant: BarreVariant }) => {
       return (
         <nav className="hidden lg:flex items-center gap-6 xl:gap-8 relative" onMouseLeave={() => setMegaOpen(false)}>
           <button type="button" onClick={() => setMegaOpen((v) => !v)} onMouseEnter={() => setMegaOpen(true)} aria-expanded={megaOpen}
-            className="inline-flex items-center gap-1 py-2 text-sm font-extrabold uppercase tracking-[0.06em]"
+            className="inline-flex items-center gap-1 py-2 text-sm font-extrabold italic uppercase tracking-[0.06em]"
             style={{ fontFamily: FONT, color: on("/catalogue") || megaOpen ? CARBON : "#57534E", boxShadow: on("/catalogue") ? `inset 0 -2.5px 0 ${GREEN}` : "none" }}>
             Pièces <ChevronDown className={`w-4 h-4 transition-transform ${megaOpen ? "rotate-180" : ""}`} />
           </button>
           {LINKS.slice(1).map((l) => (
-            <Link key={l.href} to={l.href} className="py-2 text-sm font-extrabold uppercase tracking-[0.06em]"
+            <Link key={l.href} to={l.href} className="py-2 text-sm font-extrabold italic uppercase tracking-[0.06em]"
               style={{ fontFamily: FONT, color: on(l.href) ? CARBON : "#57534E", boxShadow: on(l.href) ? `inset 0 -2.5px 0 ${GREEN}` : "none" }}>{l.label}</Link>
           ))}
           {megaOpen && (
