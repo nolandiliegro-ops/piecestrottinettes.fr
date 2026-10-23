@@ -77,7 +77,7 @@ const Count = ({ n, tone }: { n: number; tone: "light" | "dark" | "green" }) => 
 const Img = ({ s, eager, className }: { s: AtelierScooter; eager: boolean; className: string }) => {
   const src = getPrimaryImage(s.images, s.image_url, "");
   return src ? (
-    <img src={optimizedImage(src, 400)} alt={s.name} loading={eager ? "eager" : "lazy"} decoding="async" className={className} style={{ filter: "drop-shadow(0 10px 12px rgba(0,0,0,0.18))" }} />
+    <img src={optimizedImage(src, 700)} alt={s.name} loading={eager ? "eager" : "lazy"} decoding="async" className={className} style={{ filter: "drop-shadow(0 10px 12px rgba(0,0,0,0.18))" }} />
   ) : (
     <span className={`${className} flex items-center justify-center text-5xl opacity-20`}>🛴</span>
   );
@@ -116,13 +116,13 @@ export const ScooterCardAtelier = ({ s, look, index }: { s: AtelierScooter; look
   const band = look === 3 ? s.brand?.signature_color || "#E9E4DA" : null;
 
   return (
-    <Link to={to} className="group block relative pt-12">
-      {/* La trott sort de sa plaque */}
-      <Img s={s} eager={eager} className="absolute z-10 left-1/2 -translate-x-1/2 top-0 w-[96%] h-[160px] md:h-[190px] object-contain transition-transform duration-300 group-hover:-translate-y-1.5" />
+    <Link to={to} className="group block relative pt-12 md:pt-16">
+      {/* La trott sort de sa plaque — 24/10 (Nolan : « plus grosses, plus imposantes ») : photo agrandie, 3 colonnes sur ordinateur. */}
+      <Img s={s} eager={eager} className={`absolute z-10 left-1/2 -translate-x-1/2 top-0 object-contain transition-transform duration-300 group-hover:-translate-y-1.5 ${look === 4 ? "w-[112%] h-[190px] md:h-[260px] lg:h-[320px]" : "w-[96%] h-[160px] md:h-[190px]"}`} />
       <div className="relative" style={{ background: plateBg, clipPath: cut(16), boxShadow: look === 2 ? undefined : `inset 0 0 0 1px ${LINE}` }}>
         {band && <div className="absolute inset-x-0 top-0 h-[96px] md:h-[116px]" style={{ background: band }} />}
         {look === 2 && <div className="absolute inset-x-0 top-0 h-[110px]" style={{ background: "radial-gradient(60% 70% at 50% 40%, rgba(255,255,255,0.16), transparent 70%)" }} />}
-        <div className="relative pt-[118px] md:pt-[148px] px-3 pb-3 flex flex-col gap-1.5">
+        <div className={`relative px-3 pb-3 flex flex-col gap-1.5 ${look === 4 ? "pt-[146px] md:pt-[206px] lg:pt-[262px]" : "pt-[118px] md:pt-[148px]"}`}>
           <div className="flex items-center justify-between gap-2"><Logo s={s} dark={look === 2} /></div>
           <Name s={s} color={look === 2 ? "#FFFFFF" : CARBON} />
           {look === 4 && spec(s) && <p className="text-sm" style={{ fontFamily: FONT, color: "#6B7280" }}>{spec(s)}</p>}
@@ -142,6 +142,6 @@ export const ScooterCardAtelier = ({ s, look, index }: { s: AtelierScooter; look
 
 /** Grille adaptée : 2 colonnes (1 en « Ligne ») sur téléphone, plus d'air vertical pour laisser sortir les trotts. */
 export const cartesGridClass = (look: CarteLook) =>
-  look === 5 ? "grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-4 gap-y-2" : "grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-x-3 md:gap-x-5 gap-y-4 md:gap-y-6";
+  look === 5 ? "grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-4 gap-y-2" : look === 4 ? "grid grid-cols-2 lg:grid-cols-3 gap-x-3 md:gap-x-6 gap-y-6 md:gap-y-10" : "grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-x-3 md:gap-x-5 gap-y-4 md:gap-y-6";
 
 export default ScooterCardAtelier;
