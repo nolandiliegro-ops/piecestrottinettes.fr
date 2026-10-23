@@ -177,10 +177,13 @@ const TireSizeFinder = ({ scooterId, scooterName, tireSize }: TireSizeFinderProp
     const active = g.key === selected;
     setSelected(active ? null : g.key);
     if (!active && scooterId) reportSize(scooterId, g.rim, g.section);
+    // 24/10 (Nolan) : après un choix, on amène les pièces à l'écran — sinon elles s'affichent
+    // sous la longue liste des autres tailles et on croit qu'il n'y a rien.
+    if (!active) window.setTimeout(() => document.getElementById("pt-tire-results")?.scrollIntoView({ behavior: "smooth", block: "start" }), 60);
   };
 
   const results = current && (
-    <div className="mt-6">
+    <div id="pt-tire-results" className="mt-6 scroll-mt-24">
       <p className="text-sm text-muted-foreground mb-4">
         {pieces(current.parts.length)} en {current.label} — vérifie que la taille correspond exactement à celle de ton pneu.
       </p>
@@ -313,13 +316,13 @@ const TireSizeFinder = ({ scooterId, scooterName, tireSize }: TireSizeFinderProp
     </label>
   );
 
-  const allToggle = rest.length > 0 && (
+  const allToggle = (dark = false) => rest.length > 0 && (
     <div className="mt-4">
       <button
         type="button"
         onClick={() => setShowAll((v) => !v)}
         aria-expanded={showAll}
-        className="inline-flex items-center gap-2 min-h-[44px] text-left text-sm font-bold text-[#1A1A1A] underline underline-offset-4 decoration-[#E2DCD0]"
+        className={`inline-flex items-center gap-2 min-h-[44px] text-left text-sm font-bold underline underline-offset-4 ${dark ? "text-white decoration-white/30" : "text-[#1A1A1A] decoration-[#E2DCD0]"}`}
       >
         {showAll ? "Masquer les autres tailles" : `Ta taille n'est pas là ? Voir les ${rest.length} autres tailles`}
         <ChevronDown className={`w-4 h-4 transition-transform ${showAll ? "rotate-180" : ""}`} />
@@ -328,9 +331,9 @@ const TireSizeFinder = ({ scooterId, scooterName, tireSize }: TireSizeFinderProp
         <div className="mt-3">
           {searchBox()}
           <div className="mt-3 flex flex-wrap gap-2">
-            {rest.filter(matchQ).map((g) => chip(g))}
+            {rest.filter(matchQ).map((g) => chip(g, dark))}
             {rest.filter(matchQ).length === 0 && (
-              <p className="text-sm text-gray-500 py-2">Aucune pièce à cette taille pour l'instant — écris-nous, on la trouve pour toi.</p>
+              <p className={`text-sm py-2 ${dark ? "text-white/70" : "text-gray-500"}`}>Aucune pièce à cette taille pour l'instant — écris-nous, on la trouve pour toi.</p>
             )}
           </div>
         </div>
@@ -370,7 +373,7 @@ const TireSizeFinder = ({ scooterId, scooterName, tireSize }: TireSizeFinderProp
           {mineShown.map((g) => chip(g))}
           {moreBtn()}
         </div>
-        {allToggle}
+        {allToggle()}
         {results}
       </>,
     );
@@ -407,7 +410,7 @@ const TireSizeFinder = ({ scooterId, scooterName, tireSize }: TireSizeFinderProp
           })}
         </div>
         {moreBtn() && <div className="mt-2">{moreBtn()}</div>}
-        {allToggle}
+        {allToggle()}
         {results}
       </>,
     );
@@ -496,9 +499,7 @@ const TireSizeFinder = ({ scooterId, scooterName, tireSize }: TireSizeFinderProp
         </div>
         {moreBtn(true) && <div className="mt-2">{moreBtn(true)}</div>}
         {rest.length > 0 && (
-          <div className="mt-4 [&_button]:!text-white [&_button]:decoration-white/30">
-            {allToggle}
-          </div>
+          <div className="mt-4">{allToggle(true)}</div>
         )}
         {current && <div className="mt-6 -mx-4 md:-mx-6 -mb-4 md:-mb-6 p-4 md:p-6 bg-white">{results}</div>}
       </>,
