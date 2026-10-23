@@ -1,0 +1,155 @@
+{
+  "displayName": "Halo Knight T108 Pro",
+  "metaTitle": "Halo Knight T108 Pro : fiche technique et pièces",
+  "metaDescription": "Halo Knight T108 Pro : 2 × 3 000 W, batterie 60 V 38,4 Ah (2 304 Wh), pneus 11 pouces 90/65-6.5, freins hydrauliques, 46,5 kg. Autonomie réelle et pièces.",
+  "intro": [
+    "La Halo Knight T108 Pro partage le moteur et la batterie de la T107 Pro, mais Halo Knight la destine plutôt à la ville : rayon de braquage plus court, autre style. La version 2025 apporte un nouvel écran, des badges NFC, une gâchette revue et un amortisseur de direction monté d'origine, selon un test vidéo.",
+    "Deux moteurs de 3 000 W, batterie de 60 V 38,4 Ah (2 304 Wh), pneus gonflables de 11 pouces en version route ou tout-terrain, freins hydrauliques et suspensions avant et arrière. Elle pèse 46,5 kg et se recharge en 5 à 7 heures avec son chargeur 60 V. Halo Knight annonce 40 à 80 km."
+  ],
+  "specs": [
+    [
+      "Moteurs",
+      "2 × 3 000 W (6 000 W cumulés) ; Halo Knight ne distingue pas nominal et pointe"
+    ],
+    [
+      "Vitesse",
+      "25 km/h en mode bridé ; 80 à 95 km/h annoncés, réservés aux terrains privés"
+    ],
+    [
+      "Batterie",
+      "60 V, 38,4 Ah (2 304 Wh)"
+    ],
+    [
+      "Autonomie annoncée",
+      "40 à 80 km"
+    ],
+    [
+      "Autonomie mesurée",
+      "60 km en moyenne sur deux retours d'utilisateurs (selon ScooterRank)"
+    ],
+    [
+      "Poids",
+      "46,5 kg (54,9 kg emballée)"
+    ],
+    [
+      "Charge max",
+      "150 kg (selon une présentation vidéo ; non confirmé par Halo Knight)"
+    ],
+    [
+      "Roues",
+      "11 pouces, pneus gonflables 90/65-6.5 (cote non publiée par Halo Knight), route ou tout-terrain selon la version"
+    ],
+    [
+      "Freins",
+      "Disques hydrauliques avant et arrière"
+    ],
+    [
+      "Suspension",
+      "Avant et arrière ; amortisseur de direction d'origine sur la version 2025"
+    ],
+    [
+      "Étanchéité",
+      "IP54"
+    ],
+    [
+      "Temps de charge",
+      "5 à 7 h avec le chargeur 60 V 3 A (67,2 V en sortie)"
+    ]
+  ],
+  "pros": [
+    "Rayon de braquage nettement meilleur que la T107 Pro, demi-tour presque sur place (test YouTube comparatif).",
+    "Freinage hydraulique stable sous la pluie à 50 km/h (test YouTube).",
+    "Accélération précise et facile à doser d'une main (test YouTube).",
+    "Pas de bruit parasite relevé sur la version 2025 (test YouTube de la version 2025)."
+  ],
+  "cons": [
+    "46,5 kg : à réserver à qui peut la garer sans la porter.",
+    "Guidon jugé un peu étroit par un testeur (test YouTube).",
+    "Les pneus tout-terrain accrochent moins sur route lisse (test YouTube).",
+    "En France, la voie publique impose 25 km/h : sa puissance ne sert qu'en terrain privé."
+  ],
+  "parts": [
+    {
+      "label": "Pneu",
+      "size": "90/65-6.5 (11 pouces)",
+      "count": 11,
+      "to": "/piece/pneu-90-65-6-5-off-road-tubeless",
+      "cta": "Pneus 90/65-6.5"
+    },
+    {
+      "label": "Chambre à air",
+      "size": "90/65-6.5, valve droite ou coudée",
+      "count": 5,
+      "to": "/piece/chambre-a-air-9065-65-valve-droite",
+      "cta": "Chambres à air 11 pouces"
+    },
+    {
+      "label": "Chargeur",
+      "size": "60 V (67,2 V en sortie), prise GX16-3",
+      "count": 2,
+      "to": "/piece/chargeur-60v-672v-2a-connecteur-gx16-3p",
+      "cta": "Chargeurs 60 V"
+    }
+  ],
+  "care": [
+    "Avec 46,5 kg sur des pneus de 11 pouces, contrôle la pression chaque semaine : un pneu mou chauffe et s'use vite.",
+    "Freins hydrauliques : change les plaquettes avant d'arriver au métal et fais purger le circuit si le levier devient spongieux.",
+    "Recharge uniquement avec un chargeur 60 V (67,2 V en sortie), prise GX16 : un autre voltage abîme la batterie."
+  ],
+  "price": {
+    "text": "1 499 € relevés par Le Dépanneur Tech ; à partir de 1 384 € sur la boutique française de Halo Knight.",
+    "source": "Le Dépanneur Tech, haloknights.com"
+  },
+  "faq": [
+    {
+      "q": "Quelle taille de pneu pour la Halo Knight T108 Pro ?",
+      "a": "Des pneus gonflables de 11 pouces en 90/65-6.5, sur jante de 6,5 pouces. Selon la version, ils sont route ou tout-terrain ; la cote est moulée sur le flanc."
+    },
+    {
+      "q": "Quelle autonomie réelle pour la Halo Knight T108 Pro ?",
+      "a": "Halo Knight annonce 40 à 80 km. ScooterRank relève 60 km en moyenne sur deux retours d'utilisateurs. Bridée à 25 km/h, tu iras plus loin qu'en usage sportif."
+    },
+    {
+      "q": "Combien de temps pour recharger la Halo Knight T108 Pro ?",
+      "a": "5 à 7 heures avec le chargeur 60 V 3 A fourni, qui sort 67,2 V."
+    },
+    {
+      "q": "Quelle différence entre la Halo Knight T108 Pro et la T107 Pro ?",
+      "a": "Même motorisation 2 × 3 000 W et même batterie 60 V 38,4 Ah. La T108 Pro braque plus court et vise la ville ; la T107 Pro est plus lourde, autour de 49 kg, et vise le tout-terrain."
+    },
+    {
+      "q": "Quelle différence entre la Halo Knight T108 Pro et la T108 ?",
+      "a": "La T108 est une 52 V 28,8 Ah en 10 pouces, d'environ 35 kg. La T108 Pro passe en 60 V, en 11 pouces et pèse 46,5 kg : pneus, chambres à air et chargeurs ne sont pas les mêmes."
+    },
+    {
+      "q": "La Halo Knight T108 Pro est-elle légale en France ?",
+      "a": "Seulement en mode bridé à 25 km/h, la limite des trottinettes électriques sur la voie publique. Débridée, elle ne peut rouler que sur un terrain privé et ton assurance peut refuser de te couvrir."
+    }
+  ],
+  "sources": [
+    {
+      "label": "Halo Knight — T108 Pro",
+      "url": "https://www.haloknights.com/products/halo-knight-t108pro-electric-scooter"
+    },
+    {
+      "label": "Halo Knight — revue T108 Pro",
+      "url": "https://www.haloknights.com/en-us/blogs/blog/halo-knight-t108pro-review-the-ultimate-high-performance-electric-scooter"
+    },
+    {
+      "label": "Le Dépanneur Tech — Halo Knight T108 Pro",
+      "url": "https://ledepanneurtech.com/en/halo-knight-t108-pro"
+    },
+    {
+      "label": "Le Dépanneur Tech — T107 Pro vs T108 Pro",
+      "url": "https://ledepanneurtech.com/halo-knight-t107-pro-vs-t108-pro"
+    },
+    {
+      "label": "ScooterRank — Halo Knight T108 Pro",
+      "url": "https://scooterrank.com/scooters/halo-knight-t108pro"
+    },
+    {
+      "label": "Zerorider — test Halo Knight T108 Pro (YouTube)",
+      "url": "https://www.youtube.com/watch?v=f1YNsmbGFeY"
+    }
+  ]
+}

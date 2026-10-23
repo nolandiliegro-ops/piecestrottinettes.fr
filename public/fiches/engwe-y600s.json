@@ -1,0 +1,70 @@
+{
+ "displayName": "Engwe Y600S",
+ "metaTitle": "Engwe Y600S : fiche technique, pneus et autonomie",
+ "metaDescription": "Engwe Y600S : moteur 500 W (830 W en pointe), batterie 48 V 18,2 Ah (874 Wh), pneus 10x2.75, freins à disque, IPX5. Différences avec la Y600 et entretien.",
+ "intro": [
+  "La Engwe Y600S reprend la batterie de la Y600 dans un format plus léger : environ 24 kg au lieu de 26,5 kg, avec des pneus moins larges. Elle est vendue en France, notamment chez Darty, avec un bridage électronique à 25 km/h.",
+  "Moteur arrière de 500 W nominal pour 830 W en pointe, batterie amovible 48 V 18,2 Ah de 874 Wh, deux freins à disque mécaniques et suspension. Les annonces donnent des pneus de 10 pouces en 10x2.75 et une étanchéité IPX5. Engwe annonce jusqu'à 70 km en mode Eco."
+ ],
+ "specs": [
+  ["Moteur", "500 W nominal, 830 W en pointe"],
+  ["Vitesse", "25 km/h (bridage électronique pour la France, selon Darty)"],
+  ["Batterie", "48 V, 18,2 Ah (874 Wh), amovible"],
+  ["Autonomie annoncée", "jusqu'à 70 km en mode Eco"],
+  ["Autonomie estimée", "35 à 50 km en usage réel (selon Wheelyshop, estimation non mesurée)"],
+  ["Poids", "environ 24 kg (21 kg sur certaines annonces françaises)"],
+  ["Charge max", "120 kg"],
+  ["Roues", "10 pouces, 10x2.75 (Electric Ride Co, Riedis)"],
+  ["Freins", "Disques mécaniques avant et arrière"],
+  ["Suspension", "Avant et arrière selon plusieurs annonces ; Darty ne cite que l'arrière"],
+  ["Étanchéité", "IPX5"],
+  ["Temps de charge", "8 à 10 h selon les annonces"]
+ ],
+ "pros": [
+  "Batterie de 874 Wh, la même que sur la Y600, pour environ 2 kg de moins.",
+  "Deux freins à disque et étanchéité IPX5 annoncée (Ceneo, Pixmania).",
+  "Batterie amovible, chargeable hors de la trottinette (Darty)."
+ ],
+ "cons": [
+  "Fiches contradictoires sur le poids (21 ou 24 kg) et sur la suspension avant.",
+  "Aucune autonomie mesurée en test publié à ce jour : les 70 km sont une annonce d'Engwe.",
+  "Recharge longue, 8 à 10 heures avec le chargeur fourni.",
+  "Moteur nominal plus faible que la Y600 : 500 W contre 600 W."
+ ],
+ "parts": [],
+ "care": [
+  "Lis la cote sur le flanc de ton pneu avant d'en commander : la Y600S est donnée en 10x2.75, pas en 10x4.0 comme la Y600.",
+  "Retends les câbles de frein et vérifie les plaquettes dès que le levier s'enfonce davantage.",
+  "Charge la batterie hors de la trottinette, dans un endroit sec et sous surveillance : la recharge dure toute une nuit."
+ ],
+ "price": {
+  "text": "Relevée chez Darty à 625 € (au lieu de 799 €) ; le prix évolue selon les promotions.",
+  "source": "Darty"
+ },
+ "faq": [
+  {
+   "q": "Quelle taille de pneu pour la Engwe Y600S ?",
+   "a": "Des pneus de 10 pouces en 10x2.75 selon les annonces et un revendeur de pièces. Ce n'est pas la même taille que la Y600 (10x4.0) : lis la cote sur le flanc de ton pneu avant de commander."
+  },
+  {
+   "q": "Quelle différence entre la Engwe Y600S et la Y600 ?",
+   "a": "Même batterie 48 V 18,2 Ah et même pointe à 830 W. La Y600S a un moteur de 500 W nominal, des pneus de 10x2.75 et pèse environ 24 kg ; la Y600 a 600 W, des pneus de 10x4.0 et pèse 26,5 kg."
+  },
+  {
+   "q": "Quelle autonomie réelle pour la Engwe Y600S ?",
+   "a": "Engwe annonce 70 km en mode Eco. Aucun test mesuré n'est publié ; un revendeur estime 35 à 50 km en usage normal, selon ton poids et le relief."
+  },
+  {
+   "q": "Combien de temps pour recharger la Engwe Y600S ?",
+   "a": "Compte 8 à 10 heures selon les annonces. La batterie se retire, tu peux la charger à part."
+  }
+ ],
+ "sources": [
+  {"label": "Darty — Engwe Y600S", "url": "https://www.darty.com/nav/achat/ref/MC354099735.html"},
+  {"label": "Ceneo — Engwe Y600S", "url": "https://www.ceneo.pl/196456642"},
+  {"label": "Pixmania — Engwe Y600S", "url": "https://www.pixmania.com/es/es/patinete-electrico-engwe-y600s-500w-bateria-48v18ah-neumaticos-10-freno-de-disco-negro-470999.html"},
+  {"label": "Electric Ride Co — Engwe Y600", "url": "https://electricrideco.com/products/engwe-y600-830w-electric-scooter"},
+  {"label": "Wheelyshop — Engwe", "url": "https://www.wheelyshop.com/collections/engwe-electric-scooter"},
+  {"label": "InTheZone — Engwe Y600 S", "url": "https://e-inthezone.com/products/engwe-y600-s-electric-scooter"}
+ ]
+}

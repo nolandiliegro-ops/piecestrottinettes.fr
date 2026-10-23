@@ -1,0 +1,134 @@
+{
+  "displayName": "Engwe Y600",
+  "metaTitle": "Engwe Y600 : fiche technique, pneus 10x4 et selle",
+  "metaDescription": "Engwe Y600 : moteur 600 W (830 W en pointe), batterie 48 V 18,2 Ah (874 Wh), pneus 10x4.0, freins à disque, selle amovible. Autonomie et entretien.",
+  "intro": [
+    "La Engwe Y600 est une trottinette électrique livrée avec une selle amovible et un guidon réglable en hauteur. Elle se distingue de la Y600S, plus légère et montée sur des pneus moins larges, qui a sa propre fiche. Engwe France l'affiche à 579 €, et elle se conduit aussi bien assis que debout.",
+    "Elle roule sur des pneus de 10x4.0 pouces, mixtes route et chemin, avec une suspension avant et arrière et deux freins à disque mécaniques. Le moteur arrière de 600 W atteint 830 W en pointe, alimenté par une batterie de 48 V 18,2 Ah. Elle pèse 26,5 kg et sort bridée à 25 km/h."
+  ],
+  "specs": [
+    [
+      "Moteur",
+      "600 W nominal, 830 W en pointe (Engwe ; Yuri Francês, YouTube)"
+    ],
+    [
+      "Vitesse",
+      "25 km/h sur la voie publique"
+    ],
+    [
+      "Batterie",
+      "48 V, 18,2 Ah (874 Wh)"
+    ],
+    [
+      "Autonomie annoncée",
+      "jusqu'à 70 km en mode Eco"
+    ],
+    [
+      "Autonomie mesurée",
+      "38,8 km avec encore environ 40 % de batterie, en mode 3 bridé à 25 km/h (test YouTube en portugais) ; 51 km (32 miles) avec un pilote de 100 kg (test YouTube en anglais)"
+    ],
+    [
+      "Poids",
+      "26,5 kg"
+    ],
+    [
+      "Charge max",
+      "120 kg"
+    ],
+    [
+      "Roues",
+      "10 pouces, pneus gonflables 10x4.0"
+    ],
+    [
+      "Freins",
+      "Disques mécaniques avant et arrière + frein moteur"
+    ],
+    [
+      "Suspension",
+      "Fourche avant + amortisseur arrière, tige de selle suspendue"
+    ],
+    [
+      "Étanchéité",
+      "IPX5 selon les fiches revendeurs ; IPX4 selon un testeur américain"
+    ],
+    [
+      "Temps de charge",
+      "environ 8 h (8 à 10 h selon les testeurs)"
+    ]
+  ],
+  "pros": [
+    "Pneus de 10x4 pouces, deux freins à disque et double suspension (baraka vanlife).",
+    "Selle amovible et guidon réglable : elle se conduit assis ou debout (Roberto Jorge).",
+    "Batterie de 874 Wh qui dépasse 38 km bridée à 25 km/h, avec encore de la réserve (test YouTube en portugais)."
+  ],
+  "cons": [
+    "26,5 kg : lourde à porter dans un escalier (Yuri Francês).",
+    "Écran difficile à lire en plein soleil (es1951).",
+    "Freinage jugé brusque par un testeur, à cause du frein moteur (es1951).",
+    "Plateau court quand la selle est montée (es1951)."
+  ],
+  "parts": [],
+  "care": [
+    "Avec des pneus de 10x4 pouces, vérifie la pression chaque mois : un pneu large sous-gonflé freine la trottinette et use vite l'autonomie.",
+    "Les freins à disque sont à câble : retends-les et contrôle les plaquettes dès que le levier vient près de la poignée.",
+    "Resserre la tige de selle et la potence après les premières sorties : plusieurs testeurs signalent du jeu."
+  ],
+  "price": {
+    "text": "Prix affiché par Engwe France : 579 € (prix de lancement non confirmé).",
+    "source": "fr.engwe.com"
+  },
+  "faq": [
+    {
+      "q": "Quelle taille de pneu pour la Engwe Y600 ?",
+      "a": "Des pneus de 10x4.0 pouces selon Engwe France et Engwe US. Ne les confonds pas avec ceux de la Y600S, donnés en 10x2.75. Lis toujours la cote sur le flanc avant de commander."
+    },
+    {
+      "q": "Quelle autonomie réelle pour la Engwe Y600 ?",
+      "a": "Engwe annonce 70 km en mode Eco. Un testeur portugais a roulé 38,8 km en mode 3 bridé à 25 km/h, avec encore environ 40 % de batterie. Un testeur de 100 kg a fait 51 km."
+    },
+    {
+      "q": "Combien de temps pour recharger la Engwe Y600 ?",
+      "a": "Compte environ 8 heures selon Engwe ; un testeur américain parle de 10 heures pour un plein complet. Ne la laisse pas charger sans surveillance."
+    },
+    {
+      "q": "Quelle différence entre la Engwe Y600 et la Y600S ?",
+      "a": "Même batterie 48 V 18,2 Ah. La Y600 a un moteur de 600 W et des pneus de 10x4.0 pour 26,5 kg ; la Y600S a un moteur de 500 W, des pneus de 10x2.75 et pèse environ 24 kg."
+    },
+    {
+      "q": "Peut-on rouler assis sur la Engwe Y600 en France ?",
+      "a": "La selle ne change pas la règle : sur la voie publique, la Y600 doit rester bridée à 25 km/h, comme toute trottinette électrique. Renseigne-toi sur l'assurance obligatoire avant de rouler."
+    }
+  ],
+  "sources": [
+    {
+      "label": "Engwe France — trottinette Y600",
+      "url": "https://fr.engwe.com/products/engwe-y600"
+    },
+    {
+      "label": "Engwe US — Y600",
+      "url": "https://us.engwe.com/products/engwe-y600"
+    },
+    {
+      "label": "Engwe Europe — Y600",
+      "url": "https://engwe-bikes-eu.com/products/engwe-y600"
+    },
+    {
+      "label": "Ebike Guides — Engwe Y600",
+      "url": "https://ebikeguides.com/product/engwe-y600/"
+    },
+    {
+      "label": "baraka vanlife — test Engwe Y600 (YouTube)",
+      "url": "https://www.youtube.com/watch?v=usPxhyeFVHo"
+    },
+    {
+      "label": "es1951 — avis Engwe Y600 (YouTube)",
+      "url": "https://www.youtube.com/watch?v=dReNRW7leMA"
+    }
+  ],
+  "video": {
+    "id": "usPxhyeFVHo",
+    "title": "361- TEST DE ENGWE Y600 - meilleur rapport qualité/prix",
+    "channel": "Baraka Farm Life",
+    "uploadDate": "2025-05-09"
+  }
+}

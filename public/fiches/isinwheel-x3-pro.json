@@ -1,0 +1,111 @@
+{
+ "displayName": "Isinwheel X3 Pro",
+ "metaTitle": "Isinwheel X3 Pro : fiche technique, roues 12 pouces",
+ "metaDescription": "Isinwheel X3 Pro : moteur 1 200 W, batterie 48 V 15 Ah (720 Wh), 60 km annoncés, roues 12 pouces, tambour avant et disque arrière. Fiche et FAQ.",
+ "intro": [
+  "L'Isinwheel X3 Pro est une trottinette à grandes roues de 12 pouces, pensée pour les trajets du quotidien. Selon la FAQ d'Isinwheel, elle combine un pneu gonflable à l'avant et un pneu nid d'abeille à l'arrière, alors que sa fiche technique parle de deux pneus gonflables.",
+  "Isinwheel annonce un moteur de 1 200 W, une batterie 48 V 15 Ah de 720 Wh et jusqu'à 60 km d'autonomie. Elle pèse environ 25 kg et freine avec un tambour à l'avant et un disque à l'arrière. Sa fiche technique ne mentionne aucune suspension."
+ ],
+ "specs": [
+  [
+   "Moteur",
+   "1 200 W (nominale ou crête non précisé par Isinwheel)"
+  ],
+  [
+   "Vitesse",
+   "25 km/h (bridée d'origine)"
+  ],
+  [
+   "Autonomie annoncée",
+   "60 km ; 50 à 60 km selon le manuel"
+  ],
+  [
+   "Batterie",
+   "48 V, 15 Ah, 720 Wh"
+  ],
+  [
+   "Poids",
+   "25 kg"
+  ],
+  [
+   "Charge max",
+   "181 kg selon la fiche Isinwheel ; 150 à 181 kg selon sa FAQ"
+  ],
+  [
+   "Roues",
+   "12 pouces ; avant gonflable, arrière nid d'abeille selon la FAQ Isinwheel"
+  ],
+  [
+   "Freins",
+   "Tambour avant + disque arrière"
+  ],
+  [
+   "Suspension",
+   "Non mentionnée par Isinwheel"
+  ],
+  [
+   "Étanchéité",
+   "IP54 selon la fiche ; IPX4 selon la FAQ Isinwheel"
+  ],
+  [
+   "Temps de charge",
+   "6 à 8 h selon Isinwheel ; 7 à 8 h selon le manuel"
+  ]
+ ],
+ "pros": [
+  "Roues de 12 pouces, plus stables qu'une 10 pouces sur route dégradée.",
+  "Batterie de 720 Wh pour 60 km annoncés.",
+  "Pneu arrière nid d'abeille, qui ne crève pas (selon la FAQ Isinwheel)."
+ ],
+ "cons": [
+  "Aucune suspension mentionnée par Isinwheel.",
+  "Un seul frein à disque, le tambour avant étant moins puissant.",
+  "Aucun test de presse indépendant, et des fiches contradictoires sur les pneus et l'étanchéité."
+ ],
+ "parts": [],
+ "care": [
+  "Le tambour avant se règle à la vis du câble : fais-le dès que le freinage avant faiblit.",
+  "Vérifie la pression du pneu avant chaque semaine ; le pneu arrière nid d'abeille ne demande que de surveiller son usure.",
+  "Sans suspension, contrôle le serrage de la potence et du pliage tous les mois."
+ ],
+ "faq": [
+  {
+   "q": "Quels pneus sur l'Isinwheel X3 Pro ?",
+   "a": "Des roues de 12 pouces. Selon la FAQ Isinwheel, le pneu avant est gonflable et l'arrière en nid d'abeille, mais sa fiche technique parle de pneus gonflables. Lis la cote sur le flanc avant de commander."
+  },
+  {
+   "q": "Quels freins sur l'Isinwheel X3 Pro ?",
+   "a": "Un frein à tambour à l'avant et un frein à disque à l'arrière."
+  },
+  {
+   "q": "Quelle autonomie pour l'Isinwheel X3 Pro ?",
+   "a": "Isinwheel annonce jusqu'à 60 km avec sa batterie de 720 Wh. Aucun test de presse n'a encore publié de mesure."
+  },
+  {
+   "q": "Combien de temps pour recharger l'Isinwheel X3 Pro ?",
+   "a": "6 à 8 heures selon Isinwheel, 7 à 8 heures selon le manuel."
+  },
+  {
+   "q": "L'Isinwheel X3 Pro est-elle légale en France ?",
+   "a": "Sa fiche annonce 45 km/h. En France, une trottinette électrique ne doit pas dépasser 25 km/h sur la voie publique : vérifie qu'elle est bridée à 25 km/h avant de rouler en ville."
+  }
+ ],
+ "sources": [
+  {
+   "label": "Isinwheel — X3 1 200 W",
+   "url": "https://www.isinwheel.com/products/isinwheel-x3-1200w-commuting-electric-scooter"
+  },
+  {
+   "label": "Isinwheel — fiche technique X3",
+   "url": "https://www.isinwheel.com/pages/x3-specification"
+  },
+  {
+   "label": "Isinwheel — FAQ produits",
+   "url": "https://www.isinwheel.com/blogs/news/isinwheel-product-faq-guide"
+  },
+  {
+   "label": "Manuel X3 Pro (manuals.plus)",
+   "url": "https://manuals.plus/m/7842e622e63e5400953072818b2edea1859eb318d67953035ce9af6971354aa6"
+  }
+ ]
+}

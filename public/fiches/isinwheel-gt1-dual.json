@@ -1,0 +1,130 @@
+{
+  "displayName": "Isinwheel GT1 Dual",
+  "metaTitle": "Isinwheel GT1 Dual : fiche technique bimoteur 1 600 W",
+  "metaDescription": "Isinwheel GT1 Dual : deux moteurs de 800 W, batterie 48 V 13 Ah (624 Wh), 55 km annoncés, 33 kg, freins à disque. Fiche, autonomie réelle et FAQ.",
+  "intro": [
+    "L'Isinwheel GT1 Dual reprend la base de la GT1 et ajoute un second moteur dans la roue avant. Résultat : deux moteurs de 800 W, 1 600 W au total, une batterie de 13 Ah au lieu de 10 et une double suspension à bras oscillants. Elle reste une tout-terrain de 10 pouces.",
+    "Isinwheel annonce 55 km avec sa batterie de 624 Wh, 150 kg de charge et une recharge en 6 à 7 heures. En test, l'autonomie descend nettement en mode bimoteur. Elle pèse environ 33 kg : c'est le prix de la double motorisation."
+  ],
+  "specs": [
+    [
+      "Moteur",
+      "2 × 800 W, soit 1 600 W (présentés comme puissance de pointe par Isinwheel UK)"
+    ],
+    [
+      "Vitesse",
+      "25 km/h (bridée d'origine)"
+    ],
+    [
+      "Autonomie annoncée",
+      "55 km"
+    ],
+    [
+      "Autonomie mesurée",
+      "20 à 40 km selon les tests YouTube, selon le mode et le terrain"
+    ],
+    [
+      "Batterie",
+      "48 V, 13 Ah, 624 Wh"
+    ],
+    [
+      "Poids",
+      "33 kg"
+    ],
+    [
+      "Charge max",
+      "150 kg"
+    ],
+    [
+      "Roues",
+      "10 pouces tout-terrain (cote non publiée par Isinwheel)"
+    ],
+    [
+      "Freins",
+      "Disques + frein électronique (E-ABS)"
+    ],
+    [
+      "Suspension",
+      "Bras oscillants avant et arrière"
+    ],
+    [
+      "Étanchéité",
+      "IPX4 selon Isinwheel US ; IPX5 sur la fiche globale"
+    ],
+    [
+      "Temps de charge",
+      "5 à 6 h selon Isinwheel UK ; 6 à 7 h selon Isinwheel US"
+    ]
+  ],
+  "pros": [
+    "Le bimoteur tient 25 km/h en montée sans perte de puissance (test YouTube « Elle grimpe partout »).",
+    "Double suspension à bras oscillants pour les chemins secs.",
+    "Choix d'un ou deux moteurs pour économiser la batterie."
+  ],
+  "cons": [
+    "33 kg, lourd pour une trottinette (test YouTube « performance et autonomie au rendez-vous ? »).",
+    "En bimoteur, l'autonomie tombe autour de 20 à 25 km dans ce même test.",
+    "6 à 7 heures de recharge.",
+    "Isinwheel ne publie pas la cote exacte des pneus."
+  ],
+  "parts": [],
+  "care": [
+    "Roule en monomoteur sur le plat : tu gardes le second moteur pour les côtes et tu gagnes de l'autonomie.",
+    "Deux moteurs, deux câbles de moyeu : vérifie qu'ils ne frottent pas sur la fourche après une sortie sur chemin.",
+    "Contrôle le serrage des axes de bras oscillants tous les mois, la masse de 33 kg les sollicite."
+  ],
+  "price": {
+    "text": "Prix affiché par Isinwheel France : 668,99 € en promotion, pour un prix de référence de 898,99 €.",
+    "source": "isinwheel.fr"
+  },
+  "faq": [
+    {
+      "q": "Quelle autonomie réelle pour l'Isinwheel GT1 Dual ?",
+      "a": "Isinwheel annonce 55 km. En test YouTube, elle fait plutôt 20 à 25 km en bimoteur et 35 à 40 km en mode standard. Un testeur anglophone a mesuré environ 24 km."
+    },
+    {
+      "q": "Quelle différence entre l'Isinwheel GT1 Dual et la GT1 ?",
+      "a": "La GT1 Dual a deux moteurs de 800 W et une batterie de 13 Ah ; la GT1 n'a qu'un moteur arrière de 800 W et 10 Ah. La Dual pèse environ 33 kg contre 23,7 kg pour la GT1."
+    },
+    {
+      "q": "Combien de temps pour recharger l'Isinwheel GT1 Dual ?",
+      "a": "5 à 6 heures selon Isinwheel UK, 6 à 7 heures selon Isinwheel US, avec le chargeur 54,6 V 2 A d'origine."
+    },
+    {
+      "q": "Quelle taille de pneu pour l'Isinwheel GT1 Dual ?",
+      "a": "Des pneus tout-terrain de 10 pouces ; Isinwheel ne publie pas la cote complète. Lis la cote sur le flanc de ton pneu avant d'en commander un."
+    },
+    {
+      "q": "L'Isinwheel GT1 Dual est-elle légale en France ?",
+      "a": "Sur route, l'Isinwheel GT1 Dual roule à 25 km/h maximum : c'est la limite fixée en France pour les trottinettes électriques. Les modes plus rapides de l'application ne sont pas autorisés sur la voie publique."
+    }
+  ],
+  "sources": [
+    {
+      "label": "Isinwheel France — GT1 Dual 1 600 W",
+      "url": "https://www.isinwheel.fr/products/isinwheel-gt1-dual-trottinette-electrique-tout-terrain-a-double-moteur-1600w"
+    },
+    {
+      "label": "Isinwheel UK — GT1 Dual",
+      "url": "https://www.isinwheel.co.uk/products/isinwheel-gt1-dual-motor-off-road-electric-scooter-1600w"
+    },
+    {
+      "label": "Isinwheel US — GT1 Dual",
+      "url": "https://www.isinwheel.com/products/gt1-dual-motor-off-road-electric-scooter"
+    },
+    {
+      "label": "Isinwheel Global — GT1 Dual",
+      "url": "https://www.isinwheelglobal.com/products/isinwheel-gt1-dual/"
+    },
+    {
+      "label": "Isinwheel — monomoteur ou bimoteur pour les côtes",
+      "url": "https://www.isinwheel.com/blogs/news/how-to-choose-between-dual-and-single-motor-for-hill-climbing"
+    }
+  ],
+  "video": {
+    "id": "SB5tBCiVy14",
+    "title": "UNE TROTTINETTE ÉLECTRIQUE AVEC DEUX MOTEUR À MOINS DE 700€",
+    "channel": "DRZ",
+    "uploadDate": "2026-06-15"
+  }
+}

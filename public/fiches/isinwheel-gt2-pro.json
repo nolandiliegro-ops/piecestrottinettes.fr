@@ -1,0 +1,121 @@
+{
+  "displayName": "Isinwheel GT2 Pro",
+  "metaTitle": "Isinwheel GT2 Pro : fiche technique et autonomie",
+  "metaDescription": "Isinwheel GT2 Pro : moteur 1 200 W, batterie 48 V 15,6 Ah (749 Wh), 60 km annoncés, pneus 11 pouces, suspensions hydrauliques. Fiche, avis et FAQ.",
+  "intro": [
+    "L'Isinwheel GT2 Pro est la version haute de la GT2 : même gabarit à roues de 11 pouces, mais un moteur de 1 200 W, une batterie un peu plus grande et des suspensions hydrauliques à l'avant et à l'arrière. Elle a sa propre fiche, séparée de la GT2.",
+    "Isinwheel annonce une batterie 48 V 15,6 Ah de 749 Wh pour 60 km, 27,1 kg et 150 kg de charge. Elle freine avec deux disques et un frein électronique. Un testeur YouTube la juge très confortable en ville grâce à ses quatre amortisseurs."
+  ],
+  "specs": [
+    [
+      "Moteur",
+      "1 200 W (nominale ou crête non précisé par Isinwheel)"
+    ],
+    [
+      "Vitesse",
+      "25 km/h (bridée d'origine)"
+    ],
+    [
+      "Autonomie annoncée",
+      "60 km"
+    ],
+    [
+      "Batterie",
+      "48 V, 15,6 Ah, 749 Wh"
+    ],
+    [
+      "Poids",
+      "27,1 kg"
+    ],
+    [
+      "Charge max",
+      "150 kg"
+    ],
+    [
+      "Roues",
+      "11 pouces tout-terrain gonflables (cote non publiée par Isinwheel)"
+    ],
+    [
+      "Freins",
+      "Disque avant et arrière + frein électronique (E-ABS)"
+    ],
+    [
+      "Suspension",
+      "Hydraulique avant et arrière"
+    ],
+    [
+      "Étanchéité",
+      "IP54 selon Isinwheel US ; IP65 selon Isinwheel UK"
+    ],
+    [
+      "Temps de charge",
+      "5 à 7 h selon Isinwheel US ; 5 à 6 h selon Isinwheel UK"
+    ]
+  ],
+  "pros": [
+    "Confort jugé excellent grâce aux quatre amortisseurs (test YouTube DRZ).",
+    "Freinage mécanique efficace pour sa catégorie (test YouTube DRZ).",
+    "749 Wh de batterie, la plus grande de la gamme GT2."
+  ],
+  "cons": [
+    "Un testeur YouTube relève une latence à l'accélération et un manque de puissance en côte (Manureva).",
+    "27,1 kg à porter.",
+    "Les fiches Isinwheel se contredisent sur l'étanchéité (IP54 ou IP65) et sur le type de pneu."
+  ],
+  "parts": [],
+  "care": [
+    "Suspensions hydrauliques : surveille les fuites d'huile sur les amortisseurs, c'est le premier signe d'usure.",
+    "Les disques sont à commande mécanique : retends les câbles dès que le levier s'allonge.",
+    "Vérifie la pression des pneus de 11 pouces chaque semaine, surtout avant une sortie sur chemin."
+  ],
+  "price": {
+    "text": "Prix relevé en promotion en France : 598,99 € en août 2026 (offre expirée depuis).",
+    "source": "bonsplansmania.fr"
+  },
+  "faq": [
+    {
+      "q": "Quelle différence entre l'Isinwheel GT2 Pro et la GT2 ?",
+      "a": "Selon Isinwheel, la GT2 Pro a un moteur de 1 200 W, une batterie de 15,6 Ah et des suspensions hydrauliques. La GT2 d'origine a un moteur de 800 W (1 000 W en pointe), 15 Ah et des amortisseurs à ressort."
+    },
+    {
+      "q": "Quels freins sur l'Isinwheel GT2 Pro ?",
+      "a": "Deux freins à disque, à l'avant et à l'arrière, plus un frein électronique. Isinwheel ne les annonce pas hydrauliques ; le testeur DRZ parle de freins mécaniques."
+    },
+    {
+      "q": "Quelle taille de pneu pour l'Isinwheel GT2 Pro ?",
+      "a": "Des pneus de 11 pouces. Isinwheel ne publie pas la cote complète et ses fiches ne disent pas toutes s'ils sont tubeless : lis la cote sur le flanc de ton pneu avant d'en commander un."
+    },
+    {
+      "q": "Combien de temps pour recharger l'Isinwheel GT2 Pro ?",
+      "a": "5 à 7 heures selon Isinwheel US, 5 à 6 heures selon Isinwheel UK."
+    },
+    {
+      "q": "L'Isinwheel GT2 Pro est-elle légale en France ?",
+      "a": "En France, l'Isinwheel GT2 Pro doit rester à 25 km/h sur la voie publique, comme toute trottinette électrique. C'est le réglage d'usine : ne le change pas pour circuler en ville."
+    }
+  ],
+  "sources": [
+    {
+      "label": "Isinwheel — GT2 Pro (version 2026)",
+      "url": "https://www.isinwheel.com/products/isinwheel-gt2-pro-off-road-electric-scooter-2026-upgraded-version"
+    },
+    {
+      "label": "Isinwheel UK — GT2 Pro 1 200 W",
+      "url": "https://www.isinwheel.co.uk/products/isinwheel-gt2-pro-off-road-electric-scooter-1200w-peak-power-up-to-32-mph"
+    },
+    {
+      "label": "Isinwheel — GT2 contre GT2 Pro",
+      "url": "https://www.isinwheel.com/blogs/news/gt2-vs-gt2-pro-off-road-electric-scooter-comparison"
+    },
+    {
+      "label": "Bons Plans Mania — GT2 Pro à 598 €",
+      "url": "https://bonsplansmania.fr/article/isinwheel-gt2-pro-trottinette-598-euros-aout-2026"
+    }
+  ],
+  "video": {
+    "id": "OkvfCSQOq8g",
+    "title": "LE MEILLEUR RAPPORT QUALITÉ PRIX SUR LE MARCHÉ ?! ISINWHEEL GT2 PRO",
+    "channel": "DRZ",
+    "uploadDate": "2026-05-02"
+  }
+}

@@ -1,0 +1,130 @@
+{
+  "displayName": "Engwe Y400",
+  "metaTitle": "Engwe Y400 : fiche technique, pneus et freins",
+  "metaDescription": "Engwe Y400 : moteur 500 W (750 W en pointe), batterie 48 V, pneus 10x2.75, double frein à disque, double suspension. Autonomie réelle et entretien.",
+  "intro": [
+    "La Engwe Y400 se place entre la Y10, sans suspension, et la Y600 vendue avec selle. Engwe l'équipe d'une double suspension en C, de deux freins à disque mécaniques et de clignotants. Engwe France l'affiche à 529 €, pour 24 kg sur la balance.",
+    "Son moteur arrière de 500 W monte à 750 W en pointe et roule en 48 V. La capacité varie selon la page : 10,4 Ah sur le site français d'Engwe, 13,5 Ah sur d'autres annonces. Pneus de 10x2.75 pouces, autonomie annoncée entre 40 et 50 km, vitesse limitée à 25 km/h sur la voie publique en France."
+  ],
+  "specs": [
+    [
+      "Moteur",
+      "500 W nominal, 750 W en pointe (740 W sur certaines annonces)"
+    ],
+    [
+      "Vitesse",
+      "25 km/h sur la voie publique"
+    ],
+    [
+      "Batterie",
+      "48 V, 10,4 Ah (499 Wh) selon Engwe France et Engwe US ; 13,5 Ah sur d'autres annonces"
+    ],
+    [
+      "Autonomie annoncée",
+      "40 km ou 50 km selon la page Engwe"
+    ],
+    [
+      "Autonomie mesurée",
+      "environ 20 km avec un pilote de 90 kg en ville vallonnée (Reviews R Us) ; 30 à 35 km estimés à 80 kg (ScooterRank)"
+    ],
+    [
+      "Poids",
+      "24 kg"
+    ],
+    [
+      "Charge max",
+      "120 kg"
+    ],
+    [
+      "Roues",
+      "10 pouces, 10x2.75 (Engwe France) ; 10x2.5 sur une autre page Engwe"
+    ],
+    [
+      "Freins",
+      "Disques mécaniques avant et arrière"
+    ],
+    [
+      "Suspension",
+      "Double suspension en C, avant et arrière"
+    ],
+    [
+      "Étanchéité",
+      "IPX5 selon Engwe France, IPX4 selon Engwe US"
+    ],
+    [
+      "Temps de charge",
+      "6 à 7 h selon la page Engwe"
+    ]
+  ],
+  "pros": [
+    "Double suspension qui filtre bien les bosses en ville (Reviews R Us).",
+    "Deux freins à disque mécaniques, avant et arrière (Engwe France, Engwe US).",
+    "Clignotants, feux avant et arrière et potence réglable en hauteur (Tanners Products)."
+  ],
+  "cons": [
+    "Fiches incohérentes : capacité, taille de pneu, IP et temps de charge changent selon la page Engwe.",
+    "Autonomie réelle bien en dessous de l'annonce : environ 20 km pour un pilote de 90 kg en test (Reviews R Us).",
+    "Montées raides difficiles au-delà de 15° (Reviews R Us).",
+    "24 kg à porter pour une trottinette de 500 W."
+  ],
+  "parts": [],
+  "care": [
+    "Avant d'acheter un pneu ou une chambre à air, lis la cote sur le flanc de ton pneu : Engwe annonce tantôt 10x2.75, tantôt 10x2.5.",
+    "Freins à disque mécaniques : retends le câble et contrôle l'usure des plaquettes dès que le levier touche presque la poignée.",
+    "Vérifie la capacité notée sur ta batterie (10,4 ou 13,5 Ah) avant de commander une batterie ou un chargeur."
+  ],
+  "price": {
+    "text": "Prix affiché par Engwe France : 529 €, également relevé chez un revendeur européen.",
+    "source": "fr.engwe.com, eagsbike.com"
+  },
+  "faq": [
+    {
+      "q": "Quelle taille de pneu pour la Engwe Y400 ?",
+      "a": "Engwe France indique 10x2.75 pouces, une autre page Engwe parle de 10x2.5. Lis la cote moulée sur le flanc de ton pneu avant d'en commander un."
+    },
+    {
+      "q": "Quelle autonomie réelle pour la Engwe Y400 ?",
+      "a": "Engwe annonce 40 à 50 km. Un testeur de 90 kg en ville avec des côtes a parcouru environ 20 km ; ScooterRank estime 30 à 35 km pour 80 kg en usage mixte."
+    },
+    {
+      "q": "Quelle batterie a la Engwe Y400 : 10,4 ou 13,5 Ah ?",
+      "a": "Les deux circulent. Engwe France et Engwe US indiquent 48 V 10,4 Ah ; d'autres annonces parlent de 13,5 Ah. La capacité est imprimée sur l'étiquette de la batterie."
+    },
+    {
+      "q": "Quelle différence entre la Engwe Y400 et la Y600 ?",
+      "a": "La Y600 a un moteur de 600 W, une batterie de 18,2 Ah, des pneus plus larges et une selle. La Y400 est plus légère, autour de 24 kg contre 26,5 kg."
+    },
+    {
+      "q": "La Engwe Y400 est-elle légale sur la route en France ?",
+      "a": "Oui si elle reste bridée à 25 km/h : c'est la limite des trottinettes électriques sur la voie publique. Les vitesses plus élevées des annonces étrangères ne s'appliquent pas en France."
+    }
+  ],
+  "sources": [
+    {
+      "label": "Engwe France — trottinette Y400",
+      "url": "https://fr.engwe.com/products/engwe-y400"
+    },
+    {
+      "label": "Engwe US — Y400",
+      "url": "https://us.engwe.com/products/engwe-y400"
+    },
+    {
+      "label": "Engwe Europe — Y400",
+      "url": "https://engwe-bikes-eu.com/products/engwe-y400"
+    },
+    {
+      "label": "ScooterRank — Engwe Y400",
+      "url": "https://scooterrank.com/scooters/engwe-y400"
+    },
+    {
+      "label": "Reviews R Us — test Engwe Y400 (YouTube)",
+      "url": "https://www.youtube.com/watch?v=jiThKSTkzrk"
+    }
+  ],
+  "video": {
+    "id": "jiThKSTkzrk",
+    "title": "ENGWE Y400 Electric Scooter Review",
+    "channel": "Reviews R Us",
+    "uploadDate": "2024-11-24"
+  }
+}

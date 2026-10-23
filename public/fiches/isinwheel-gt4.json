@@ -1,0 +1,127 @@
+{
+  "displayName": "Isinwheel GT4",
+  "metaTitle": "Isinwheel GT4 : fiche technique bimoteur 52 V",
+  "metaDescription": "Isinwheel GT4 : 2 moteurs 800 W (2 400 W en pointe), batterie 52 V 18,2 Ah (946 Wh), pneus 12 pouces, freins hydrauliques. Fiche, pièces et FAQ.",
+  "intro": [
+    "L'Isinwheel GT4 est la trottinette la plus puissante de la marque : deux moteurs, des roues de 12 pouces, des freins à disque hydrauliques et une double suspension hydraulique à bras oscillants. C'est aussi la seule de la gamme en 52 V.",
+    "Isinwheel annonce deux moteurs de 800 W nominaux et 1 200 W en pointe chacun, soit 2 400 W au total, une batterie 52 V 18,2 Ah de 946 Wh et 80 km en mode éco avec un pilote de 70 kg. Elle pèse 33,4 kg et accepte 150 kg."
+  ],
+  "specs": [
+    [
+      "Moteur",
+      "2 × 800 W nominaux (1 600 W) ; 2 × 1 200 W en pointe (2 400 W)"
+    ],
+    [
+      "Vitesse",
+      "25 km/h (bridée d'origine)"
+    ],
+    [
+      "Autonomie annoncée",
+      "80 km (70 kg, mode éco)"
+    ],
+    [
+      "Batterie",
+      "52 V, 18,2 Ah, 946 Wh (58,8 V en fin de charge)"
+    ],
+    [
+      "Poids",
+      "33,4 kg"
+    ],
+    [
+      "Charge max",
+      "150 kg"
+    ],
+    [
+      "Roues",
+      "12 pouces tout-terrain, 12 x 2.75 selon Isinwheel (12 x 3 selon le testeur Electric Surf)"
+    ],
+    [
+      "Freins",
+      "Disques hydrauliques avant et arrière"
+    ],
+    [
+      "Suspension",
+      "Hydraulique, bras oscillants avant et arrière"
+    ],
+    [
+      "Étanchéité",
+      "IPX4 selon Isinwheel Canada ; IP54 sur une autre fiche"
+    ],
+    [
+      "Temps de charge",
+      "5 à 7 h"
+    ]
+  ],
+  "pros": [
+    "Freins hydrauliques jugés très puissants (test YouTube « Un monstre pas cher »).",
+    "Monte les côtes très facilement en bimoteur (plusieurs tests YouTube).",
+    "Choix d'un ou deux moteurs pour économiser la batterie."
+  ],
+  "cons": [
+    "33,4 kg : impossible à monter au troisième étage sans ascenseur (test YouTube « pas pour tout le monde »).",
+    "Autonomie qui fond en usage puissant : un testeur a perdu 50 % de batterie en 10 km.",
+    "Isinwheel ne publie pas de prix France stable ni de test d'autonomie indépendant."
+  ],
+  "parts": [
+    {
+      "label": "Chargeur",
+      "size": "52 V (sortie 58,8 V), prise GX16 3 broches",
+      "count": 2,
+      "to": "/piece/chargeur-52v-588v-2a-connecteur-gx16-3p",
+      "cta": "Chargeurs 52 V"
+    }
+  ],
+  "care": [
+    "Freins hydrauliques : contrôle l'épaisseur des plaquettes tous les mois, ils freinent fort et les usent vite.",
+    "Ta batterie est en 52 V : un chargeur 48 V ne la chargera pas, prends un modèle 58,8 V.",
+    "Avec 33 kg et deux moteurs, vérifie le serrage des bras oscillants et des axes de roue après chaque sortie sur chemin."
+  ],
+  "price": {
+    "text": "Prix relevé sur la boutique européenne isinwheel.store : 819 € ; un testeur YouTube l'affiche à 898 € en France.",
+    "source": "isinwheel.store, YouTube"
+  },
+  "faq": [
+    {
+      "q": "Quelle autonomie réelle pour l'Isinwheel GT4 ?",
+      "a": "Isinwheel annonce 80 km en mode éco avec un pilote de 70 kg. En usage puissant, un testeur YouTube a consommé la moitié de la batterie en 10 km : compte beaucoup moins en bimoteur."
+    },
+    {
+      "q": "Quelle taille de pneu pour l'Isinwheel GT4 ?",
+      "a": "Des pneus tout-terrain de 12 pouces : Isinwheel écrit 12 x 2.75, un testeur parle de 12 x 3 tubeless. Lis la cote sur le flanc de ton pneu avant d'en commander un."
+    },
+    {
+      "q": "Quels freins sur l'Isinwheel GT4 ?",
+      "a": "Deux freins à disque hydrauliques, à l'avant et à l'arrière."
+    },
+    {
+      "q": "Quel chargeur pour l'Isinwheel GT4 ?",
+      "a": "Un chargeur 52 V qui sort 58,8 V. La prise de ta GT4 doit correspondre à celle du chargeur : vérifie-la avant de commander."
+    },
+    {
+      "q": "L'Isinwheel GT4 est-elle légale en France ?",
+      "a": "Sur route, l'Isinwheel GT4 roule à 25 km/h maximum : c'est la limite fixée en France pour les trottinettes électriques. Les modes plus rapides de l'application ne sont pas autorisés sur la voie publique."
+    }
+  ],
+  "sources": [
+    {
+      "label": "Isinwheel EU — GT4 2 400 W",
+      "url": "https://www.isinwheel.eu/products/isinwheel-gt4-high-performance-2400w-dual-motor-electric-scooter"
+    },
+    {
+      "label": "Isinwheel Canada — fiche technique GT4",
+      "url": "https://www.isinwheel.ca/fr/pages/gt4-specs"
+    },
+    {
+      "label": "Isinwheel Canada — GT4",
+      "url": "https://www.isinwheel.ca/products/gt4-2400w-80km-dual-motor-off-road-electric-scooter"
+    },
+    {
+      "label": "Isinwheel — GT4, performances tout-terrain",
+      "url": "https://www.isinwheel.com/blogs/news/gt4-dual-motor-electric-scooter-2400w-off-road-performance"
+    },
+    {
+      "label": "isinwheel.store — GT4 Dual EU",
+      "url": "https://isinwheel.store/products/isinwheel-gt4-dual-eu-electric-scooter"
+    }
+  ]
+}

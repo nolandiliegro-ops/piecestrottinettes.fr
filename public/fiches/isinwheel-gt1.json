@@ -1,0 +1,134 @@
+{
+  "displayName": "Isinwheel GT1",
+  "metaTitle": "Isinwheel GT1 : fiche technique, autonomie et pièces",
+  "metaDescription": "Isinwheel GT1 : moteur 800 W, batterie 48 V 10 Ah (480 Wh), 45 km annoncés, freins à disque et double suspension. Fiche, pièces, entretien et FAQ.",
+  "intro": [
+    "L'Isinwheel GT1 est la version monomoteur de la gamme GT1 : à ne pas confondre avec la GT1 Dual, qui a deux moteurs et sa propre fiche. C'est une tout-terrain de 10 pouces avec freins à disque à l'avant et à l'arrière, fourche suspendue et double ressort à l'arrière.",
+    "Isinwheel annonce un moteur arrière de 800 W, une batterie 48 V 10 Ah de 480 Wh et 45 km d'autonomie, mesurés par la marque à 15 km/h avec un pilote de 75 kg. Elle accepte 150 kg. Le poids varie selon les fiches de la marque : 21 kg ou 23,7 kg."
+  ],
+  "specs": [
+    [
+      "Moteur",
+      "800 W nominaux (crête non publiée)"
+    ],
+    [
+      "Vitesse",
+      "25 km/h (bridée d'origine)"
+    ],
+    [
+      "Autonomie annoncée",
+      "45 km (75 kg, 15 km/h) ; environ 40 km en usage varié selon Isinwheel France"
+    ],
+    [
+      "Batterie",
+      "48 V, 10 Ah, 480 Wh"
+    ],
+    [
+      "Poids",
+      "23,7 kg selon Isinwheel France ; 21 kg sur une page Isinwheel EU"
+    ],
+    [
+      "Charge max",
+      "150 kg"
+    ],
+    [
+      "Roues",
+      "10 pouces tout-terrain à chambre à air (cote non publiée par Isinwheel)"
+    ],
+    [
+      "Freins",
+      "Disque avant et arrière + frein électronique (E-ABS)"
+    ],
+    [
+      "Suspension",
+      "Fourche avant, double ressort arrière"
+    ],
+    [
+      "Étanchéité",
+      "IPX4 selon Isinwheel France ; IP54 sur la fiche américaine"
+    ],
+    [
+      "Temps de charge",
+      "4 à 5 h selon Isinwheel France ; 5 à 6 h sur la fiche américaine"
+    ]
+  ],
+  "pros": [
+    "Suspensions efficaces en ville comme sur chemin (test YouTube « 800W… suffisant ou pas ? »).",
+    "Freins à disque mécaniques jugés suffisants pour son usage (test YouTube « [TEST] isinwheel GT1 »).",
+    "Agréable et facile à prendre en main pour débuter."
+  ],
+  "cons": [
+    "Le moteur de 800 W montre ses limites en montée (plusieurs tests YouTube).",
+    "Batterie de 480 Wh : l'autonomie est le point faible relevé en test.",
+    "Isinwheel ne publie pas la cote exacte des pneus, et ses fiches se contredisent sur le poids, l'étanchéité et la recharge."
+  ],
+  "parts": [
+    {
+      "label": "Disque de frein",
+      "size": "140 mm, entraxe 44 mm, 6 trous",
+      "count": 3,
+      "to": "/piece/disque-de-frein-r6-140mm-entraxe-44mm-3-couleurs-vert",
+      "cta": "Disques 140 mm"
+    },
+    {
+      "label": "Chargeur",
+      "size": "48 V (sortie 54,6 V), prise GX16 3 broches",
+      "count": 2,
+      "to": "/piece/chargeur-48v-546v-2a-connecteur-gx16-3p",
+      "cta": "Chargeurs 48 V"
+    }
+  ],
+  "care": [
+    "Freins à disque mécaniques : retends les câbles dès que la course du levier s'allonge, ils se détendent avec les premiers kilomètres.",
+    "Pneus à chambre à air : vérifie la pression chaque semaine, un pneu sous-gonflé pince la chambre et crève.",
+    "Après une sortie sur chemin, contrôle la fourche et le serrage du pliage : ce sont eux qui encaissent les chocs."
+  ],
+  "price": {
+    "text": "Prix affiché par Isinwheel France : 428,99 € en promotion, pour un prix de référence de 569,99 €.",
+    "source": "isinwheel.fr"
+  },
+  "faq": [
+    {
+      "q": "Quelle taille de pneu pour l'Isinwheel GT1 ?",
+      "a": "Isinwheel annonce des pneus de 10 pouces sans donner la cote complète, et sa boutique anglaise vend une chambre à air 10x2.75 pour la GT1. Lis la cote sur le flanc de ton pneu avant de commander un pneu ou une chambre."
+    },
+    {
+      "q": "Quelle autonomie réelle pour l'Isinwheel GT1 ?",
+      "a": "Isinwheel annonce 45 km à 15 km/h et environ 40 km en usage varié ; sa boutique américaine affiche 34 km testés à 15 km/h."
+    },
+    {
+      "q": "Quels freins sur l'Isinwheel GT1 ?",
+      "a": "Deux freins à disque mécaniques, à l'avant et à l'arrière, plus un frein électronique. Les disques font 140 mm."
+    },
+    {
+      "q": "Quelle différence entre l'Isinwheel GT1 et la GT1 Dual ?",
+      "a": "La GT1 a un seul moteur de 800 W et une batterie de 10 Ah. La GT1 Dual ajoute un second moteur de 800 W à l'avant, passe à 13 Ah et pèse environ 33 kg. Vérifie le nom sur ta trottinette avant de commander une pièce."
+    },
+    {
+      "q": "L'Isinwheel GT1 est-elle légale en France ?",
+      "a": "L'Isinwheel GT1 est réglée à 25 km/h, la vitesse maximale autorisée en France pour un EDPM sur la voie publique. Rouler plus vite sur la route est interdit et peut te priver de ton assurance en cas d'accident."
+    }
+  ],
+  "sources": [
+    {
+      "label": "Isinwheel France — GT1 tout-terrain",
+      "url": "https://www.isinwheel.fr/products/isinwheel-gt1-trottinette-electrique-tout-terrain"
+    },
+    {
+      "label": "Isinwheel EU — GT1 800 W",
+      "url": "https://www.isinwheel.eu/fr/products/isinwheel-gt1-scooter-electrique-hors-route-800w"
+    },
+    {
+      "label": "Isinwheel — fiche technique GT1",
+      "url": "https://www.isinwheel.com/pages/gt1-specs"
+    },
+    {
+      "label": "Isinwheel — GT1 800 W (autonomie testée)",
+      "url": "https://www.isinwheel.com/products/isinwheel-gt1-800w-off-road-electric-scooter"
+    },
+    {
+      "label": "Isinwheel UK — chambre à air 10x2.75 pour GT1",
+      "url": "https://www.isinwheel.co.uk/products/10-2-75-pneumatic-inner-tube-for-gt1-e-scooter"
+    }
+  ]
+}

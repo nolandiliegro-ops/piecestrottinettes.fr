@@ -1,0 +1,153 @@
+{
+  "displayName": "Halo Knight T107 Pro",
+  "metaTitle": "Halo Knight T107 Pro : fiche technique et pièces",
+  "metaDescription": "Halo Knight T107 Pro : 2 × 3 000 W, batterie 60 V 38,4 Ah (2 304 Wh), pneus 11 pouces 90/65-6.5, freins hydrauliques XOD, 48,9 kg. Autonomie et pièces.",
+  "intro": [
+    "La Halo Knight T107 Pro est une trottinette bimoteur en 60 V, testée en France dès 2024 puis renouvelée en version 2025 avec de nouvelles suspensions. Elle sort d'usine bridée à 25 km/h, avec un mode Eco accessible au guidon. Halo Knight la présente comme la plus orientée tout-terrain et stabilité de sa gamme, face à la T108 Pro plus maniable.",
+    "Deux moteurs de 3 000 W, batterie de 60 V 38,4 Ah (2 304 Wh), pneus gonflables tout-terrain de 11 pouces, freins à disque hydrauliques XOD et amortisseur de direction. Elle pèse entre 47 et 49 kg selon les sources et accepte 150 kg. Halo Knight annonce 40 à 80 km."
+  ],
+  "specs": [
+    [
+      "Moteurs",
+      "2 × 3 000 W (6 000 W cumulés) ; Halo Knight ne distingue pas nominal et pointe"
+    ],
+    [
+      "Vitesse",
+      "25 km/h en sortie d'usine ; 80 à 95 km/h annoncés, réservés aux terrains privés"
+    ],
+    [
+      "Batterie",
+      "60 V, 38,4 Ah (2 304 Wh)"
+    ],
+    [
+      "Autonomie annoncée",
+      "40 à 80 km"
+    ],
+    [
+      "Autonomie mesurée",
+      "24,5 km en mode Turbo bimoteur à 75 kg avec environ la moitié de la batterie restante (Electric Surf) ; environ 50 km en conduite sportive (test YouTube de 2025) ; 60 à 70 km estimés à 40 km/h (ScooterRank)"
+    ],
+    [
+      "Poids",
+      "48,9 kg (ScooterRank) ; 47 kg (Electric Surf) ; 48 kg (RAFTOR)"
+    ],
+    [
+      "Charge max",
+      "150 kg (Halo Knight) ; 200 kg sur certaines annonces"
+    ],
+    [
+      "Roues",
+      "11 pouces, pneus gonflables tout-terrain 90/65-6.5 avec chambre à air (selon un test YouTube)"
+    ],
+    [
+      "Freins",
+      "Disques hydrauliques XOD avant et arrière"
+    ],
+    [
+      "Suspension",
+      "Avant et arrière, amortisseur de direction"
+    ],
+    [
+      "Étanchéité",
+      "IP54"
+    ],
+    [
+      "Temps de charge",
+      "5 à 7 h selon Halo Knight ; environ 6 h avec deux chargeurs (test YouTube)"
+    ]
+  ],
+  "pros": [
+    "Freins hydrauliques XOD jugés efficaces (Electric Surf).",
+    "Suspensions très confortables sur la version récente (HKTROTT).",
+    "Batterie de 2 304 Wh avec deux prises de charge pour recharger plus vite (tests YouTube).",
+    "Bridage à 25 km/h accessible au guidon pour la voie publique (Electric Surf)."
+  ],
+  "cons": [
+    "Près de 49 kg : elle se porte difficilement et se range mal (RAFTOR, Electric Surf).",
+    "Les pneus à crampons s'usent vite quand on accélère fort (test YouTube).",
+    "En France, elle doit rester à 25 km/h sur la voie publique : le reste de sa puissance ne sert qu'en terrain privé."
+  ],
+  "parts": [
+    {
+      "label": "Pneu",
+      "size": "90/65-6.5 (11 pouces)",
+      "count": 11,
+      "to": "/piece/pneu-90-65-6-5-off-road-tubeless",
+      "cta": "Pneus 90/65-6.5"
+    },
+    {
+      "label": "Chambre à air",
+      "size": "90/65-6.5, valve droite ou coudée",
+      "count": 5,
+      "to": "/piece/chambre-a-air-9065-65-11-pouces",
+      "cta": "Chambres à air 11 pouces"
+    },
+    {
+      "label": "Disque de frein",
+      "size": "160 mm, entraxe 44 mm, 6 trous",
+      "count": 6,
+      "to": "/piece/disque-de-frein-r6-160mm-entraxe-44m-3-couleurs-vert",
+      "cta": "Disques 160 mm"
+    },
+    {
+      "label": "Chargeur",
+      "size": "60 V (67,2 V en sortie), prise GX16-3",
+      "count": 2,
+      "to": "/piece/chargeur-60v-672v-2a-connecteur-gx16-3p",
+      "cta": "Chargeurs 60 V"
+    }
+  ],
+  "care": [
+    "Avec près de 50 kg et des pneus à chambre à air, vérifie la pression chaque semaine : un pneu sous-gonflé pince la chambre au premier trottoir.",
+    "Freins hydrauliques : contrôle l'épaisseur des plaquettes et fais purger le circuit si le levier devient mou.",
+    "Recharge uniquement avec un chargeur 60 V (67,2 V en sortie) : un chargeur 52 V ne la chargera pas, un 72 V l'abîmera."
+  ],
+  "price": {
+    "text": "À partir de 1 384 € sur la boutique française de Halo Knight ; 1 299 € relevés en 2024 par Electric Surf.",
+    "source": "haloknights.com, Electric Surf"
+  },
+  "faq": [
+    {
+      "q": "Quelle taille de pneu pour la Halo Knight T107 Pro ?",
+      "a": "Des pneus gonflables de 11 pouces en 90/65-6.5, sur jante de 6,5 pouces, montés avec chambre à air selon un test. Halo Knight ne publie pas la cote exacte : vérifie-la sur le flanc avant de commander."
+    },
+    {
+      "q": "Quelle autonomie réelle pour la Halo Knight T107 Pro ?",
+      "a": "Halo Knight annonce 40 à 80 km. En mode Turbo et bimoteur à 75 kg, Electric Surf a roulé 24,5 km avec environ la moitié de la batterie restante. Un autre testeur parle d'environ 50 km en conduite sportive."
+    },
+    {
+      "q": "Combien de temps pour recharger la Halo Knight T107 Pro ?",
+      "a": "5 à 7 heures selon Halo Knight. Elle a deux prises de charge : avec deux chargeurs, un testeur compte environ 6 heures pour un plein."
+    },
+    {
+      "q": "Quelle différence entre la Halo Knight T107 Pro et la T108 Pro ?",
+      "a": "Même motorisation 2 × 3 000 W et même batterie 60 V 38,4 Ah. Halo Knight oriente la T107 Pro vers le tout-terrain et la stabilité, la T108 Pro vers la ville, avec un meilleur rayon de braquage et un style différent."
+    },
+    {
+      "q": "La Halo Knight T107 Pro est-elle légale en France ?",
+      "a": "Elle sort d'usine bridée à 25 km/h et peut circuler ainsi sur la voie publique. Débridée, elle n'a plus le droit de rouler sur la route et ton assurance peut refuser de te couvrir."
+    }
+  ],
+  "sources": [
+    {
+      "label": "Halo Knight — T107 Pro",
+      "url": "https://www.haloknights.com/en-us/products/halo-knight-t107pro-electric-scooter"
+    },
+    {
+      "label": "Halo Knight — revue T107 Pro",
+      "url": "https://www.haloknights.com/en-us/blogs/blog/halo-knight-t107pro-review"
+    },
+    {
+      "label": "ScooterRank — Halo Knight T107 Pro",
+      "url": "https://scooterrank.com/scooters/halo-knight-t107pro"
+    },
+    {
+      "label": "Electric Surf — test Halo Knight T107 Pro (YouTube)",
+      "url": "https://www.youtube.com/watch?v=QDKr2gnHjXE"
+    },
+    {
+      "label": "RAFTOR — test Halo Knight T107 Pro version 2025 (YouTube)",
+      "url": "https://www.youtube.com/watch?v=UkOdqlD2UwM"
+    }
+  ]
+}

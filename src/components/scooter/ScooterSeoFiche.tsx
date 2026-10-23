@@ -357,7 +357,7 @@ export const PartnerBlock = ({ url, name }: { url: string; name: string }) => {
           <span>Lien partenaire : une petite commission pour nous, aucun surcoût pour toi.</span>
         </p>
       </div>
-      <a href={url} target="_blank" rel="sponsored noopener noreferrer" className="inline-flex items-center justify-center gap-2 min-h-[52px] px-6 text-sm font-extrabold uppercase tracking-wider text-white"
+      <a href={url} target="_blank" rel="sponsored noopener noreferrer" data-placement="fiche" className="inline-flex items-center justify-center gap-2 min-h-[52px] px-6 text-sm font-extrabold uppercase tracking-wider text-white"
         style={{ background: CARBON, clipPath: CHAMFER }}>
         Voir l'offre chez {p.name} <ArrowRight className="w-4 h-4" />
       </a>

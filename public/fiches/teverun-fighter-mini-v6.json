@@ -1,0 +1,108 @@
+{
+ "displayName": "Teverun Fighter Mini V6",
+ "metaTitle": "Teverun Fighter Mini V6 : fiche technique et pièces",
+ "metaDescription": "Teverun Fighter Mini V6 : 52 V 30 Ah (1 560 Wh), 2 moteurs Bosch de 1 000 W, pneus tubeless 10x3 (80/65-6), freins hydrauliques Zoom 140 mm, IPX6.",
+ "intro": [
+  "La Teverun Fighter Mini V6 est la version 2026 de la Fighter Mini en 52 V, avec une batterie de 30 Ah. Ne la confonds pas avec la Fighter Mini d'origine (52 V 20,8 Ah), la Mini Eco (15,6 Ah) ni la Mini Pro V6, qui passe en 60 V 31,8 Ah. Chacune a sa propre fiche.",
+  "Deux moteurs Bosch de 1 000 W, freins à disque hydrauliques de 140 mm, suspensions hydrauliques réglables et pneus tubeless CST de 10x3. Les revendeurs annoncent 90 à 100 km pour 35,5 à 36 kg et une étanchéité IPX6. Sur la voie publique en France, elle doit rester bridée à 25 km/h."
+ ],
+ "specs": [
+  ["Moteurs", "2 × 1 000 W Bosch (2 950 à 3 000 W en pointe selon le revendeur)"],
+  ["Vitesse", "25 km/h sur la voie publique ; 60 km/h annoncés, réservés aux terrains privés"],
+  ["Batterie", "52 V, 30 Ah (1 560 Wh)"],
+  ["Autonomie annoncée", "jusqu'à 90 km (Teverun Europe) ; jusqu'à 100 km en mode Eco (E-Volty)"],
+  ["Poids", "35,5 kg (Electrotraveller) ; environ 36 kg (Teverun Europe)"],
+  ["Charge max", "120 kg"],
+  ["Roues", "10 pouces, pneus tubeless CST 10x3 (80/65-6)"],
+  ["Freins", "Disques hydrauliques Ø 140 mm + eABS"],
+  ["Suspension", "Hydraulique réglable avant et arrière (KKE selon Teverun Europe)"],
+  ["Étanchéité", "IPX6 (E-Volty, Electrotraveller)"],
+  ["Temps de charge", "environ 6 h avec le chargeur rapide (selon Electrotraveller)"]
+ ],
+ "pros": [
+  "Batterie de 1 560 Wh dans le format compact de la Fighter Mini (Teverun Europe, E-Volty).",
+  "Freins hydrauliques de 140 mm et eABS (Electrotraveller).",
+  "Suspensions hydrauliques réglables à l'avant et à l'arrière (Teverun Europe).",
+  "Étanchéité IPX6 annoncée, plus haute que l'IPX5 de la Fighter Mini d'origine (E-Volty)."
+ ],
+ "cons": [
+  "35,5 à 36 kg, nettement plus que les 29,5 kg de la Fighter Mini d'origine.",
+  "Aucune autonomie mesurée en test publié sur cette version : les 90 à 100 km sont des annonces.",
+  "Plusieurs Fighter Mini en 52 V coexistent (20,8, 25 et 30 Ah) : vérifie l'étiquette de ta batterie avant de commander une pièce électrique.",
+  "En France, la voie publique impose 25 km/h : sa vitesse de pointe ne sert qu'en terrain privé."
+ ],
+ "parts": [
+  {
+   "label": "Pneu",
+   "size": "80/65-6 (10x3)",
+   "count": 11,
+   "to": "/piece/pneu-80-65-6-10x3-ewheel",
+   "cta": "Pneus 10x3"
+  },
+  {
+   "label": "Chambre à air",
+   "size": "80/65-6 (10x3), valve droite ou coudée",
+   "count": 3,
+   "to": "/piece/chambre-a-air-80-65-6-10x3-valve-coudee-ewheel",
+   "cta": "Chambres à air 10x3"
+  },
+  {
+   "label": "Plaquettes de frein",
+   "size": "Étrier Zoom",
+   "count": 5,
+   "to": "/piece/plaquettes-de-frein-zoom-semi-metallique",
+   "cta": "Plaquettes Zoom"
+  },
+  {
+   "label": "Disque de frein",
+   "size": "140 mm, entraxe 44 mm, 6 trous",
+   "count": 3,
+   "to": "/piece/disque-de-frein-r6-140mm-entraxe-44mm-3-couleurs-rouge",
+   "cta": "Disques 140 mm"
+  },
+  {
+   "label": "Chargeur",
+   "size": "52 V (58,8 V en sortie), prise LP16-3",
+   "count": 2,
+   "to": "/piece/pack-chargeur-52v-588v-2a-connecteur-lp16-3",
+   "cta": "Chargeurs 52 V"
+  }
+ ],
+ "care": [
+  "Pneus tubeless 10x3 : contrôle la pression chaque mois, avec 36 kg un pneu mou se déjante plus facilement dans les virages.",
+  "Freins hydrauliques Zoom : change les plaquettes avant qu'elles touchent le métal, et fais purger le circuit si le levier devient mou.",
+  "Recharge uniquement avec un chargeur 52 V (58,8 V en sortie) : un chargeur 60 V de Mini Pro abîmerait ta batterie."
+ ],
+ "price": {
+  "text": "Prix de référence : 1 590 € chez E-Volty, 1 699 € chez Teverun Europe ; les remises varient fortement selon les revendeurs.",
+  "source": "e-volty.com, teverun-europe.com"
+ },
+ "faq": [
+  {
+   "q": "Quelle taille de pneu pour la Teverun Fighter Mini V6 ?",
+   "a": "Des pneus tubeless de 10 pouces en 10x3, aussi notés 80/65-6, de marque CST d'origine selon un revendeur. Les chambres à air en 10x2.50 ne conviennent pas."
+  },
+  {
+   "q": "Quelle différence entre la Fighter Mini V6 et la Fighter Mini Pro V6 ?",
+   "a": "La Fighter Mini V6 reste en 52 V avec 30 Ah ; la Mini Pro V6 passe en 60 V 31,8 Ah. Chargeur et batterie ne sont pas interchangeables entre les deux."
+  },
+  {
+   "q": "Quelle autonomie pour la Teverun Fighter Mini V6 ?",
+   "a": "Teverun Europe annonce jusqu'à 90 km, E-Volty jusqu'à 100 km en mode Eco. Aucun test mesuré n'est publié sur cette version : compte moins si tu roules en bimoteur ou si tu es lourd."
+  },
+  {
+   "q": "Quels freins a la Teverun Fighter Mini V6 ?",
+   "a": "Des freins à disque hydrauliques avec des disques de 140 mm, plus un frein électronique eABS. Avant de commander des plaquettes, compare leur forme avec celles de ton étrier."
+  },
+  {
+   "q": "La Teverun Fighter Mini V6 est-elle légale en France ?",
+   "a": "Oui, bridée à 25 km/h, la limite des trottinettes électriques sur la voie publique. Débridée, elle n'a plus le droit de circuler sur la route et ton assurance peut refuser de te couvrir."
+  }
+ ],
+ "sources": [
+  {"label": "Teverun Europe — Fighter Mini", "url": "https://teverun-europe.com/product/fighter-mini/"},
+  {"label": "E-Volty — Teverun Fighter Mini V6", "url": "https://www.e-volty.com/products/trottinette-electrique-teverun-fighter-mini"},
+  {"label": "Electrotraveller — Teverun Fighter Mini", "url": "https://electrotraveller.com/fr/scooters-electriques/teverun-fighter-mini-25ah/?v=08a4415e9d59"},
+  {"label": "Teverun France — Fighter Mini", "url": "https://www.teverun.fr/teverun-fighter-mini/"}
+ ]
+}

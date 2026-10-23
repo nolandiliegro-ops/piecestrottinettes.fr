@@ -212,9 +212,27 @@ const ProgramSheet = ({ p, scooters, onClose }: { p: AffiliateProgram; scooters:
 
 /* ---------- Liste ---------- */
 
+/** 23/10/2026 — clics sur les liens partenaires du site (table affiliate_clicks, lecture admin). */
+const useClicks30 = () => useQuery({
+  queryKey: ['affiliate-clicks-30j'],
+  queryFn: async () => {
+    const since = new Date(Date.now() - 30 * 86_400_000).toISOString();
+    const { data, error } = await (supabase as unknown as { from: (t: string) => any }).from('affiliate_clicks')
+      .select('shop_host,target_host').gte('created_at', since).limit(10000);
+    if (error) throw error;
+    const byShop = new Map<string, number>();
+    for (const r of (data || []) as { shop_host: string | null; target_host: string }[]) {
+      const k = r.shop_host || r.target_host;
+      byShop.set(k, (byShop.get(k) || 0) + 1);
+    }
+    return { total: (data || []).length, top: [...byShop.entries()].sort((x, y) => y[1] - x[1]).slice(0, 3) };
+  },
+});
+
 const AffiliateProgramsManager = () => {
   const { data: programs = [], isLoading, error } = usePrograms();
   const { data: scooters = [], error: scootersError } = useScooters();
+  const { data: clicks, error: clicksError } = useClicks30();
   const [params, setParams] = useSearchParams();
   const type = params.get('type') === 'fournisseur' ? 'fournisseur' : 'affiliation';
   const statut = params.get('statut') as AffStatut | null;
@@ -248,6 +266,11 @@ const AffiliateProgramsManager = () => {
           {type === 'affiliation' && (scootersError
             ? <span className="text-sm text-red-700">Trottinettes illisibles : {(scootersError as Error).message}</span>
             : <span className="text-sm text-[hsl(var(--admin-text-muted))] tabular-nums">{linkedTotal} trottinettes avec lien suivi</span>)}
+          {type === 'affiliation' && (clicksError
+            ? <span className="w-full text-sm text-red-700">Clics illisibles : {(clicksError as Error).message}</span>
+            : clicks && <span className="w-full text-sm text-[hsl(var(--admin-text-muted))] tabular-nums">
+                Clics partenaires sur 30 jours : {clicks.total}{clicks.top.length ? ` · ${clicks.top.map(([h, n]) => `${h} ${n}`).join(' · ')}` : ''}
+              </span>)}
         </div>
         <div className="inline-flex p-1 rounded-xl border border-[hsl(var(--admin-border))] bg-white">
           {(['affiliation', 'fournisseur'] as const).map(t => (

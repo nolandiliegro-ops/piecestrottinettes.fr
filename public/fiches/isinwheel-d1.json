@@ -1,0 +1,126 @@
+{
+  "displayName": "Isinwheel D1",
+  "metaTitle": "Isinwheel D1 : fiche technique, autonomie et pièces",
+  "metaDescription": "Isinwheel D1 : moteur 1 200 W, batterie 48 V 10 Ah (480 Wh), 40 km annoncés, double suspension et freins à disque. Fiche technique, entretien, FAQ.",
+  "intro": [
+    "L'Isinwheel D1 est une trottinette tout-terrain de 10 pouces, vendue en France par Isinwheel avec sa déclinaison D1 Plus, dotée d'une batterie plus grande. Elle mise sur une double suspension à bras oscillants, des freins à disque à l'avant et à l'arrière et un éclairage LED complet.",
+    "Côté chiffres, Isinwheel annonce un moteur de 1 200 W, une batterie 48 V 10 Ah de 480 Wh et 40 km d'autonomie. Elle pèse 25,8 kg, accepte 150 kg et se recharge en 6 à 7 heures. La marque ne précise pas si les 1 200 W sont une puissance nominale ou de pointe."
+  ],
+  "specs": [
+    [
+      "Moteur",
+      "1 200 W (nominale ou crête non précisé par Isinwheel)"
+    ],
+    [
+      "Vitesse",
+      "25 km/h (bridée d'origine)"
+    ],
+    [
+      "Autonomie annoncée",
+      "40 km selon Isinwheel France ; 40 à 50 km selon le manuel"
+    ],
+    [
+      "Batterie",
+      "48 V, 10 Ah, 480 Wh"
+    ],
+    [
+      "Poids",
+      "25,8 kg"
+    ],
+    [
+      "Charge max",
+      "150 kg"
+    ],
+    [
+      "Roues",
+      "10 pouces tout-terrain (cote exacte non publiée)"
+    ],
+    [
+      "Freins",
+      "Disque avant et arrière + frein électronique"
+    ],
+    [
+      "Suspension",
+      "Bras oscillants avant et arrière"
+    ],
+    [
+      "Étanchéité",
+      "IPX4"
+    ],
+    [
+      "Temps de charge",
+      "6 à 7 h"
+    ]
+  ],
+  "pros": [
+    "Double suspension à bras oscillants pour les chemins et les pavés (Isinwheel).",
+    "Deux freins à disque, complétés par un frein électronique.",
+    "150 kg de charge admise, une marge confortable pour un modèle de ce prix."
+  ],
+  "cons": [
+    "25,8 kg : lourde à porter dans un escalier.",
+    "480 Wh seulement : l'autonomie reste modeste pour une tout-terrain.",
+    "Aucun test de presse indépendant n'a mesuré son autonomie à ce jour.",
+    "Isinwheel ne publie pas la cote exacte de ses pneus."
+  ],
+  "parts": [],
+  "care": [
+    "Avec deux bras oscillants, contrôle régulièrement le serrage des axes de suspension : un jeu qui s'installe s'aggrave vite.",
+    "Après une sortie sur chemin, nettoie les disques et vérifie l'usure des plaquettes : la poussière les use plus vite.",
+    "Isinwheel la classe IPX4 : évite les grosses averses et ne la lave jamais au jet."
+  ],
+  "price": {
+    "text": "Prix affiché par Isinwheel France : 398,99 € en promotion, pour un prix de référence de 549 €.",
+    "source": "isinwheel.fr"
+  },
+  "faq": [
+    {
+      "q": "Quelle autonomie réelle pour l'Isinwheel D1 ?",
+      "a": "Isinwheel annonce 40 km. Aucun test de presse n'a encore publié de mesure : compte moins si tu pèses lourd, roules en mode sport ou sur chemin."
+    },
+    {
+      "q": "Quelle taille de pneu pour l'Isinwheel D1 ?",
+      "a": "Ce sont des pneus tout-terrain de 10 pouces, mais Isinwheel ne publie pas la cote complète. Lis la cote sur le flanc de ton pneu avant d'en commander un."
+    },
+    {
+      "q": "Combien de temps pour recharger l'Isinwheel D1 ?",
+      "a": "Compte 6 à 7 heures pour une charge complète de la batterie 48 V 10 Ah, selon Isinwheel."
+    },
+    {
+      "q": "Quelle différence entre l'Isinwheel D1 et la D1 Plus ?",
+      "a": "Même moteur de 1 200 W et mêmes roues de 10 pouces ; la D1 Plus a une batterie plus grande, annoncée pour 60 km dans la vidéo officielle Isinwheel contre 50 km pour la D1. Vérifie l'étiquette de ta batterie avant de commander un chargeur."
+    },
+    {
+      "q": "L'Isinwheel D1 est-elle légale en France ?",
+      "a": "L'Isinwheel D1 sort d'usine limitée à 25 km/h, le plafond légal des trottinettes électriques sur la voie publique en France. Au-delà, elle n'a plus le droit de rouler en ville, quel que soit le mode affiché dans l'application."
+    }
+  ],
+  "sources": [
+    {
+      "label": "Isinwheel France — D1 tout-terrain 1 200 W",
+      "url": "https://www.isinwheel.fr/products/isinwheel-d1-trottinette-electrique-tout-terrain1200w"
+    },
+    {
+      "label": "Isinwheel EU — fiche D1",
+      "url": "https://www.isinwheel.eu/pl/products/skuter-elektryczny-isinwheel%C2%AE-d1-1200w"
+    },
+    {
+      "label": "FinBike — Isinwheel D1",
+      "url": "https://www.finbike.com/collections/electric-scooter/products/isinwheel-d1-electric-scooter"
+    },
+    {
+      "label": "Manuel D1 / D1 Plus (manuals.plus)",
+      "url": "https://manuals.plus/m/09f5471eaeb94a3f91110148f486cd07edb27976e3762ce45dcf54c377508f78"
+    },
+    {
+      "label": "Dealotronic — S9 Max contre D1",
+      "url": "https://dealotronic.com/isinwheel-s9max-vs-d1-comparatif/"
+    }
+  ],
+  "video": {
+    "id": "AsWqvtNniB4",
+    "title": "isinwheel - D1/D1Plus Electric Scooters",
+    "channel": "isinWheel - CEE",
+    "uploadDate": "2026-05-26"
+  }
+}

@@ -1,0 +1,143 @@
+{
+  "displayName": "Engwe Y700",
+  "metaTitle": "Engwe Y700 : fiche technique, freins et autonomie",
+  "metaDescription": "Engwe Y700 : moteur 1 200 W en pointe, batterie 48 V 18,2 Ah (874 Wh), roues 10x3.0, disques 140 mm, double suspension, 31,7 kg. Autonomie réelle.",
+  "intro": [
+    "La Engwe Y700 est une trottinette urbaine de 2026 vendue 599 € par Engwe, prévue pour rester à 25 km/h sur la voie publique. Un seul moteur, à l'arrière, annoncé à 1 200 W en pointe. En Allemagne, une version homologuée appelée Y700 ABE est bridée à 20 km/h.",
+    "Batterie de 48 V 18,2 Ah (874 Wh) logée dans le plateau, roues de 10x3.0 pouces, suspensions avant et arrière, freins à disque mécaniques de 140 mm et frein moteur E-ABS. Elle pèse 31,7 kg et accepte 120 kg. Engwe annonce 85 km ; les testeurs mesurent entre 45 et 65 km."
+  ],
+  "specs": [
+    [
+      "Moteur",
+      "1 200 W en pointe, moteur arrière ; 500 W nominaux sur la version allemande Y700 ABE (Electric Commuter, tuningblog)"
+    ],
+    [
+      "Vitesse",
+      "25 km/h (20 km/h sur la version allemande ABE)"
+    ],
+    [
+      "Batterie",
+      "48 V, 18,2 Ah (874 Wh)"
+    ],
+    [
+      "Autonomie annoncée",
+      "jusqu'à 85 km"
+    ],
+    [
+      "Autonomie mesurée",
+      "26 km sur deux barres de batterie à 80 kg, soit 60 à 65 km estimés (Le Vélo Urbain) ; environ 47 km (Electric Commuter) ; 45 km (test YouTube allemand)"
+    ],
+    [
+      "Poids",
+      "31,7 kg"
+    ],
+    [
+      "Charge max",
+      "120 kg"
+    ],
+    [
+      "Roues",
+      "10 pouces, 10x3.0 ; pneus pleins anti-crevaison selon Engwe, pneumatiques selon tuningblog"
+    ],
+    [
+      "Freins",
+      "Disques mécaniques avant et arrière, Ø 140 mm + E-ABS"
+    ],
+    [
+      "Suspension",
+      "Avant et arrière"
+    ],
+    [
+      "Étanchéité",
+      "IPX5"
+    ],
+    [
+      "Temps de charge",
+      "9 à 10 h avec le chargeur 2 A"
+    ]
+  ],
+  "pros": [
+    "Confort jugé très bon par plusieurs testeurs grâce à la double suspension (Melki Marc, tuningblog).",
+    "Freinage efficace avec deux disques de 140 mm (Le Vélo Urbain).",
+    "Grimpe une côte raide en tenant 20 km/h (Le Vélo Urbain).",
+    "Finition soignée pour 599 € (Melki Marc)."
+  ],
+  "cons": [
+    "31,7 kg : lourde pour une trottinette bridée à 25 km/h (Le Vélo Urbain).",
+    "Autonomie jugée juste au-delà de 80 kg, loin des 85 km annoncés (Melki Marc, test complet YouTube à 599 €).",
+    "Recharge lente : 9 à 10 heures avec le chargeur 2 A fourni (tuningblog).",
+    "Couple limité en montée en mode sport, un seul moteur (Melki Marc)."
+  ],
+  "parts": [
+    {
+      "label": "Disque de frein",
+      "size": "140 mm, entraxe 44 mm, 6 trous",
+      "count": 3,
+      "to": "/piece/disque-de-frein-r6-140mm-entraxe-44mm-3-couleurs-rouge",
+      "cta": "Disques 140 mm"
+    }
+  ],
+  "care": [
+    "Tes freins sont à câble : retends-les et contrôle l'épaisseur des plaquettes dès que le levier s'allonge, surtout avec 31,7 kg à arrêter.",
+    "Avant de commander un pneu, lis la cote et le type sur le flanc : Engwe parle de pneus pleins, certains testeurs de pneus à air.",
+    "La recharge dure 9 à 10 heures : branche-la sous surveillance, jamais toute une nuit sans contrôle."
+  ],
+  "price": {
+    "text": "Prix Engwe : 599 € (affiché 699 € barré sur la page européenne), confirmé dans un test vidéo français.",
+    "source": "it.engwe.com, engwe.com"
+  },
+  "faq": [
+    {
+      "q": "Quelle taille de pneu pour la Engwe Y700 ?",
+      "a": "Des roues de 10 pouces en 10x3.0. Engwe parle de pneus pleins anti-crevaison, mais d'autres sources décrivent des pneus à air. Lis la cote et le type sur le flanc de ton pneu avant d'en commander un."
+    },
+    {
+      "q": "Quelle autonomie réelle pour la Engwe Y700 ?",
+      "a": "Engwe annonce 85 km. Le Vélo Urbain, à 80 kg, a fait 26 km avec deux barres de batterie et estime 60 à 65 km ; deux tests allemands mesurent 45 et 47 km."
+    },
+    {
+      "q": "Quels freins a la Engwe Y700 ?",
+      "a": "Deux freins à disque mécaniques de 140 mm, à l'avant et à l'arrière, plus un frein moteur E-ABS. Les disques sont ventilés selon Engwe."
+    },
+    {
+      "q": "Quelle différence entre la Engwe Y700 et la Y1000 ?",
+      "a": "La Y700 a un seul moteur, une batterie 48 V 18,2 Ah et des freins à câble. La Y1000 a deux moteurs, une batterie 52 V 22,5 Ah et des freins hydrauliques."
+    },
+    {
+      "q": "Combien de temps pour recharger la Engwe Y700 ?",
+      "a": "Compte 9 à 10 heures avec le chargeur 2 A livré, selon Engwe et tuningblog."
+    }
+  ],
+  "sources": [
+    {
+      "label": "Engwe France — trottinette Y700",
+      "url": "https://fr.engwe.com/products/e-scooter-for-adults-y700"
+    },
+    {
+      "label": "Engwe Italie — Y700",
+      "url": "https://it.engwe.com/products/e-scooter-for-adults-y700"
+    },
+    {
+      "label": "Engwe Danemark — Y700",
+      "url": "https://dk.engwe.com/products/e-scooter-for-adults-y700"
+    },
+    {
+      "label": "tuningblog — Engwe Y700 ABE",
+      "url": "https://www.tuningblog.eu/e-scooter-atv-quad/engwe-y700-abe-782885/"
+    },
+    {
+      "label": "Le Vélo Urbain — test Engwe Y700 (YouTube)",
+      "url": "https://www.youtube.com/watch?v=t7ZZK3uaZEs"
+    },
+    {
+      "label": "Melki Marc — avis Engwe Y700 après 1 mois (YouTube)",
+      "url": "https://www.youtube.com/watch?v=frXlqFUZE5A"
+    }
+  ],
+  "video": {
+    "id": "t7ZZK3uaZEs",
+    "title": "ENGWE Y700, presque parfaite ! Test de l'incroyable trottinette de 1200 watts !",
+    "channel": "Le Vélo Urbain",
+    "uploadDate": "2026-03-05"
+  }
+}

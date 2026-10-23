@@ -1,0 +1,133 @@
+{
+  "displayName": "Isinwheel S9 Max",
+  "metaTitle": "Isinwheel S9 Max : fiche technique, pneus pleins",
+  "metaDescription": "Isinwheel S9 Max : moteur 500 W, batterie 36 V 10 Ah, 40 km annoncés, pneus pleins nid d'abeille 10 pouces, double suspension. Fiche, pièces et FAQ.",
+  "intro": [
+    "L'Isinwheel S9 Max est une trottinette urbaine de 10 pouces à pneus pleins nid d'abeille : pas de crevaison possible, la double suspension compense la fermeté du pneu. Elle est plus grande que la S9 Pro, qui roule sur des pneus gonflables de 8,5 pouces.",
+    "Isinwheel annonce un moteur avant de 500 W, une batterie 36 V 10 Ah et 40 km d'autonomie. Elle pèse 15,4 kg et accepte 120 kg. Elle freine électroniquement à l'avant, avec récupération d'énergie, et par disque à l'arrière. En test, elle a tenu 26,3 km."
+  ],
+  "specs": [
+    [
+      "Moteur",
+      "500 W, dans la roue avant (nominale ou crête non précisé)"
+    ],
+    [
+      "Vitesse",
+      "25 km/h (bridée d'origine)"
+    ],
+    [
+      "Autonomie annoncée",
+      "40 km selon Isinwheel France et UK"
+    ],
+    [
+      "Autonomie mesurée",
+      "26,3 km (test YouTube « 500W increvable »)"
+    ],
+    [
+      "Batterie",
+      "36 V, 10 Ah, 360 Wh (42 V en fin de charge)"
+    ],
+    [
+      "Poids",
+      "15,4 kg selon Isinwheel US et UK"
+    ],
+    [
+      "Charge max",
+      "120 kg"
+    ],
+    [
+      "Roues",
+      "10 pouces, pneus pleins nid d'abeille"
+    ],
+    [
+      "Freins",
+      "Électronique avant + disque arrière"
+    ],
+    [
+      "Suspension",
+      "Fourche avant, double ressort arrière"
+    ],
+    [
+      "Étanchéité",
+      "IPX4 selon Isinwheel US ; IP54 selon Isinwheel UK"
+    ],
+    [
+      "Temps de charge",
+      "4 à 6 h selon Isinwheel US ; 3 à 6 h selon Isinwheel UK"
+    ]
+  ],
+  "pros": [
+    "Pneus pleins : aucune crevaison à craindre.",
+    "Double suspension jugée confortable sur sol lisse (test YouTube « m'a vraiment surpris »).",
+    "15,4 kg, facile à porter pour une 10 pouces."
+  ],
+  "cons": [
+    "Moins à l'aise en terrain accidenté que sur sol lisse (même test).",
+    "Peine en côte avec un pilote lourd (test YouTube « La trottinette pas cher cousin »).",
+    "Un seul frein mécanique, le disque arrière."
+  ],
+  "parts": [
+    {
+      "label": "Chargeur",
+      "size": "36 V (sortie 42 V), prise DC 5,5 x 2,1 mm",
+      "count": 1,
+      "to": "/piece/chargeur-36v-42v-2a-connecteur-dc-55-21mm",
+      "cta": "Chargeur 36 V"
+    }
+  ],
+  "care": [
+    "Pneus pleins : pas de pression à surveiller, mais contrôle l'usure de la bande de roulement et les fissures du caoutchouc.",
+    "Le disque arrière est ton seul frein mécanique : règle-le dès que le levier s'allonge.",
+    "Avec des pneus pleins, les vibrations desserrent la visserie : contrôle le pliage et la potence chaque mois."
+  ],
+  "price": {
+    "text": "Prix affiché par Isinwheel France : 298,99 € en promotion, pour un prix de référence de 449,99 €.",
+    "source": "isinwheel.fr"
+  },
+  "faq": [
+    {
+      "q": "Quels pneus sur l'Isinwheel S9 Max ?",
+      "a": "Des pneus pleins nid d'abeille de 10 pouces, sans chambre à air. Ils ne crèvent pas mais filtrent moins les chocs, d'où la double suspension."
+    },
+    {
+      "q": "Quelle autonomie réelle pour l'Isinwheel S9 Max ?",
+      "a": "Isinwheel annonce 40 km. Un testeur YouTube a fait 26,3 km sur une charge complète ; un autre, plus lourd, environ 17 km."
+    },
+    {
+      "q": "Pourquoi la S9 Max est-elle annoncée en 42 V aux États-Unis ?",
+      "a": "42 V est la tension de fin de charge d'une batterie 36 V. C'est la même batterie de 10 Ah, pas une autre version."
+    },
+    {
+      "q": "Quelle différence entre l'Isinwheel S9 Max et la S9 Pro ?",
+      "a": "La S9 Max a un moteur de 500 W, des pneus pleins de 10 pouces, une double suspension et 120 kg de charge. La S9 Pro a 350 W, des pneus gonflables de 8,5 pouces, pas de suspension et 100 kg de charge."
+    },
+    {
+      "q": "Combien de temps pour recharger l'Isinwheel S9 Max ?",
+      "a": "Entre 3 et 6 heures selon les fiches Isinwheel, avec un chargeur 42 V à prise ronde DC."
+    }
+  ],
+  "sources": [
+    {
+      "label": "Isinwheel France — S9 Max 500 W",
+      "url": "https://www.isinwheel.fr/products/s9max-meilleure-trottinette-electrique-adulte-500w"
+    },
+    {
+      "label": "Isinwheel — fiche technique S9 Max",
+      "url": "https://www.isinwheel.com/pages/s9max"
+    },
+    {
+      "label": "Isinwheel UK — S9 Max 500 W",
+      "url": "https://www.isinwheel.co.uk/products/isinwheel-s9max-500w-electric-scooter"
+    },
+    {
+      "label": "Isinwheel — S9 Pro 350 W",
+      "url": "https://www.isinwheel.com/products/s9pro-electric-scooter-350w"
+    }
+  ],
+  "video": {
+    "id": "u1zBUjeqhDY",
+    "title": "isinwheel S9 Max: la MEILLEURE trotinette éléctrique 2025?",
+    "channel": "HYPETEST",
+    "uploadDate": "2025-05-23"
+  }
+}

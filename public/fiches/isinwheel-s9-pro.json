@@ -1,0 +1,141 @@
+{
+ "displayName": "Isinwheel S9 Pro",
+ "metaTitle": "Isinwheel S9 Pro : fiche technique, pneus et pièces",
+ "metaDescription": "Isinwheel S9 Pro : moteur 350 W, batterie 36 V, 13,5 kg, pneus gonflables 8,5 pouces à chambre à air, frein à disque arrière. Fiche, pièces et FAQ.",
+ "intro": [
+  "L'Isinwheel S9 Pro est la petite urbaine de la marque : 13,5 kg, pliable, sans suspension, sur des pneus gonflables de 8,5 pouces à chambre à air. Isinwheel en vend aussi une version à pneus pleins : vérifie la tienne avant de commander un pneu.",
+  "Elle a un moteur de 350 W, 500 W en pointe selon Isinwheel France, et une batterie 36 V dont la capacité varie selon les fiches : 6, 7,5 ou 7,8 Ah. L'autonomie annoncée va de 25 à 30 km. Elle freine électroniquement à l'avant et par disque à l'arrière."
+ ],
+ "specs": [
+  [
+   "Moteur",
+   "350 W nominaux ; 500 W en pointe selon Isinwheel France"
+  ],
+  [
+   "Vitesse",
+   "25 km/h (bridée d'origine)"
+  ],
+  [
+   "Autonomie annoncée",
+   "25 à 30 km selon les fiches Isinwheel"
+  ],
+  [
+   "Batterie",
+   "36 V ; 6 Ah, 7,5 Ah ou 7,8 Ah selon les fiches (42 V en fin de charge)"
+  ],
+  [
+   "Poids",
+   "13,5 kg (11,8 kg sur une fiche régionale)"
+  ],
+  [
+   "Charge max",
+   "100 kg (120 kg sur une fiche américaine)"
+  ],
+  [
+   "Roues",
+   "8,5 pouces gonflables à chambre à air (version pneumatique)"
+  ],
+  [
+   "Freins",
+   "Électronique avant (E-ABS) + disque arrière"
+  ],
+  [
+   "Suspension",
+   "Aucune"
+  ],
+  [
+   "Étanchéité",
+   "IP54"
+  ],
+  [
+   "Temps de charge",
+   "3 à 6 h selon les fiches"
+  ]
+ ],
+ "pros": [
+  "13,5 kg : se porte d'une main et rentre dans un coffre moyen (tests YouTube).",
+  "Plateau assez large pour poser les deux pieds côte à côte (test YouTube).",
+  "Puissance correcte en ville pour un moteur de 350 W."
+ ],
+ "cons": [
+  "Aucune suspension : à réserver aux routes peu dégradées (Electric Surf).",
+  "Ralentit à 12-13 km/h en montée avec un pilote lourd (test YouTube).",
+  "Autonomie modeste, et capacité de batterie différente selon les versions."
+ ],
+ "parts": [
+  {
+   "label": "Pneu",
+   "size": "8,5 x 2 (50/75-6.1)",
+   "count": 8,
+   "to": "/piece/pneu-8-5x2-xiaomi-50-75-6-1-wanda",
+   "cta": "Pneus 8,5 x 2"
+  },
+  {
+   "label": "Chambre à air",
+   "size": "8,5 x 2, valve droite ou coudée",
+   "count": 6,
+   "to": "/piece/chambre-a-air-85x2-xiaomi-m365",
+   "cta": "Chambres à air"
+  },
+  {
+   "label": "Chargeur",
+   "size": "36 V (sortie 42 V), prise DC 5,5 x 2,1 mm",
+   "count": 1,
+   "to": "/piece/chargeur-36v-42v-2a-connecteur-dc-55-21mm",
+   "cta": "Chargeur 36 V"
+  }
+ ],
+ "care": [
+  "Sans suspension, ce sont les pneus qui amortissent : garde la pression recommandée, un pneu mou crève au premier trottoir.",
+  "Le disque arrière est ton seul frein mécanique : règle-le dès que le levier s'allonge.",
+  "Contrôle le jeu du pliage tous les mois, il encaisse tous les chocs."
+ ],
+ "price": {
+  "text": "Prix affiché par Isinwheel France : 288,99 €.",
+  "source": "isinwheel.fr"
+ },
+ "faq": [
+  {
+   "q": "Quelle taille de pneu pour l'Isinwheel S9 Pro ?",
+   "a": "La version pneumatique roule en 8,5 pouces avec chambre à air, soit la cote courante 8,5 x 2 (50/75-6.1). Isinwheel vend aussi une version à pneus pleins : lis la cote sur le flanc de ton pneu avant de commander."
+  },
+  {
+   "q": "Quelle autonomie réelle pour l'Isinwheel S9 Pro ?",
+   "a": "Isinwheel annonce 25 à 30 km selon les versions. Compte moins si tu roules en mode sport ou en côte : sa batterie est petite."
+  },
+  {
+   "q": "L'Isinwheel S9 Pro a-t-elle des suspensions ?",
+   "a": "Non. Ce sont les pneus gonflables de 8,5 pouces qui filtrent les chocs, d'où l'importance de la pression."
+  },
+  {
+   "q": "Quelle différence entre l'Isinwheel S9 Pro et la S9 Max ?",
+   "a": "La S9 Pro a 350 W, des pneus gonflables de 8,5 pouces, pas de suspension et pèse 13,5 kg. La S9 Max a 500 W, des pneus pleins de 10 pouces et une double suspension."
+  },
+  {
+   "q": "Combien de temps pour recharger l'Isinwheel S9 Pro ?",
+   "a": "Entre 3 et 6 heures selon les fiches Isinwheel, avec un chargeur 42 V à prise ronde DC."
+  }
+ ],
+ "sources": [
+  {
+   "label": "Isinwheel France — S9 / S9 Pro",
+   "url": "https://www.isinwheel.fr/products/s9-trottinette-electrique-tout-terrain-electric-scooter-30km-h"
+  },
+  {
+   "label": "Isinwheel — S9 Pro 350 W",
+   "url": "https://www.isinwheel.com/products/s9pro-electric-scooter-350w"
+  },
+  {
+   "label": "isinwheel.store — S9 Pro EU",
+   "url": "https://isinwheel.store/products/isinwheel-s9-pro-eu-electric-scooter"
+  },
+  {
+   "label": "Isinwheel — chambre à air renforcée S9 / S9 Pro",
+   "url": "https://www.isinwheel.com/products/isinwheel-thickened-inner-tubes-inner-tube-for-s9-s9-pro-electric-scooter"
+  },
+  {
+   "label": "Electric Surf — test S9 Pro",
+   "url": "https://www.youtube.com/watch?v=pR988XqduuU"
+  }
+ ]
+}

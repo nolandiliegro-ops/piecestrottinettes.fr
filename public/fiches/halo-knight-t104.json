@@ -1,0 +1,108 @@
+{
+ "displayName": "Halo Knight T104",
+ "metaTitle": "Halo Knight T104 : fiche technique et pièces",
+ "metaDescription": "Halo Knight T104 : bimoteur 52 V 21 Ah (1 092 Wh), pneus tubeless 10x3 (80/65-6), freins à disque, double suspension, 29,7 kg. Autonomie réelle et pièces.",
+ "intro": [
+  "La Halo Knight T104 est une trottinette bimoteur en 52 V, testée par la presse française dès 2024. Un bouton permet de rouler sur un seul moteur ou sur les deux, et un mode Eco la limite à 25 km/h. La puissance annoncée varie selon la version : 2 × 1 000 W dans les tests de 2024, 2 × 1 200 W sur la page actuelle de Halo Knight.",
+  "Batterie fixe de 52 V 21 Ah (1 092 Wh) dans le plateau, pneus tubeless de 10 pouces en 10x3 (80/65-6), freins à disque avant et arrière et suspensions à ressort. Elle pèse 29,7 kg pour 120 kg de charge. Halo Knight annonce jusqu'à 45 km ; un essai à pleine puissance en a mesuré 31,5."
+ ],
+ "specs": [
+  ["Moteurs", "2 × 1 000 W (Ouest-France, Electric Surf) ; 2 × 1 200 W sur la page actuelle de Halo Knight"],
+  ["Vitesse", "25 km/h en mode Eco ; plus de 60 km/h annoncés, réservés aux terrains privés"],
+  ["Batterie", "52 V, 21 Ah (1 092 Wh), intégrée au plateau"],
+  ["Autonomie annoncée", "20 à 45 km selon le mode, un ou deux moteurs"],
+  ["Autonomie mesurée", "31,5 km à 80 kg, en bimoteur et mode Turbo (RAFTOR) ; 30 à 35 km estimés (ScooterRank)"],
+  ["Poids", "29,7 kg"],
+  ["Charge max", "120 kg (150 kg selon une présentation Geekbuying)"],
+  ["Roues", "10 pouces, pneus tubeless 10x3 (80/65-6)"],
+  ["Freins", "Disques mécaniques avant et arrière"],
+  ["Suspension", "Ressorts avant et arrière"],
+  ["Étanchéité", "IP54"],
+  ["Temps de charge", "5 à 7 h avec le chargeur 52 V 3 A"]
+ ],
+ "pros": [
+  "Freins à disque jugés très efficaces (Ouest-France).",
+  "Choix un moteur ou deux moteurs et mode Eco à 25 km/h accessible au guidon (Electric Surf).",
+  "Autonomie mesurée de 31,5 km même à pleine puissance avec 80 kg (RAFTOR).",
+  "Pneus tubeless, plus simples à réparer en cas de crevaison."
+ ],
+ "cons": [
+  "Batterie non amovible : il faut amener la trottinette à la prise (Ouest-France).",
+  "29,7 kg, lourde à porter dans un escalier.",
+  "Les 45 km annoncés sont un chiffre sur terrain plat, pas une mesure (Ouest-France).",
+  "En France, la voie publique impose 25 km/h : le reste de sa puissance ne sert qu'en terrain privé."
+ ],
+ "parts": [
+  {
+   "label": "Pneu",
+   "size": "80/65-6 (10x3)",
+   "count": 11,
+   "to": "/piece/pneu-80-65-6-10x3-ewheel",
+   "cta": "Pneus 10x3"
+  },
+  {
+   "label": "Chambre à air",
+   "size": "80/65-6 (10x3), valve droite ou coudée",
+   "count": 3,
+   "to": "/piece/chambre-a-air-80-65-6-10x3-valve-droite-ewheel",
+   "cta": "Chambres à air 10x3"
+  },
+  {
+   "label": "Disque de frein",
+   "size": "140 mm, entraxe 44 mm, 6 trous",
+   "count": 3,
+   "to": "/piece/disque-de-frein-r6-140mm-entraxe-44mm-3-couleurs-bleu",
+   "cta": "Disques 140 mm"
+  },
+  {
+   "label": "Chargeur",
+   "size": "52 V (58,8 V en sortie), prise GX16-3",
+   "count": 3,
+   "to": "/piece/chargeur-52v-588v-2a-connecteur-gx16-3p",
+   "cta": "Chargeurs 52 V"
+  }
+ ],
+ "care": [
+  "Pneus tubeless de 10x3 : vérifie la pression chaque mois et contrôle l'état du talon de jante si tu perds de l'air lentement.",
+  "Freins à câble sur près de 30 kg : retends-les et change les plaquettes dès que le levier vient près de la poignée.",
+  "Recharge avec un chargeur 52 V (58,8 V en sortie) à prise GX16 : un chargeur 48 V ou 60 V abîme la batterie."
+ ],
+ "price": {
+  "text": "Affichée à 799 € sur le site français de Halo Knight ; Ouest-France relevait 890 € comme prix initial en 2024.",
+  "source": "haloknights.com, Ouest-France"
+ },
+ "faq": [
+  {
+   "q": "Quelle taille de pneu pour la Halo Knight T104 ?",
+   "a": "Des pneus tubeless de 10 pouces en 10x3, aussi notés 80/65-6, sur jante de 6 pouces. Halo Knight vend une version route et une version tout-terrain de cette taille."
+  },
+  {
+   "q": "Quelle autonomie réelle pour la Halo Knight T104 ?",
+   "a": "Halo Knight annonce 20 à 45 km. RAFTOR a mesuré 31,5 km à 80 kg en bimoteur et mode Turbo. En monomoteur et à 25 km/h, tu iras plus loin."
+  },
+  {
+   "q": "Combien de temps pour recharger la Halo Knight T104 ?",
+   "a": "5 à 7 heures avec le chargeur 52 V 3 A fourni, selon Halo Knight. La batterie ne se retire pas."
+  },
+  {
+   "q": "Quels freins a la Halo Knight T104 ?",
+   "a": "Deux freins à disque mécaniques, à l'avant et à l'arrière, avec des disques de 140 mm. Ce ne sont pas des freins hydrauliques."
+  },
+  {
+   "q": "La Halo Knight T104 est-elle légale en France ?",
+   "a": "Sur la voie publique, uniquement en mode Eco à 25 km/h : c'est la limite des trottinettes électriques. Au-delà, elle ne peut rouler que sur un terrain privé, et ton assurance peut refuser de te couvrir."
+  },
+  {
+   "q": "Quelle différence entre la Halo Knight T104 et la T108 ?",
+   "a": "Même tension de 52 V, mais la T108 a une batterie de 28,8 Ah au lieu de 21 Ah, des freins hydrauliques au lieu de freins à câble, et pèse environ 35 kg contre 29,7 kg."
+  }
+ ],
+ "sources": [
+  {"label": "Halo Knight — trottinette T104", "url": "https://www.haloknights.com/products/t104-electric-scooter"},
+  {"label": "Halo Knight France — T104", "url": "https://www.haloknights.com/fr/products/trottinette-electrique-t104"},
+  {"label": "Ouest-France (Android MT) — test Halo Knight T104", "url": "https://android-mt.ouest-france.fr/appareil/test-du-halo-knight-t104-une-trottinette-electrique-puissante-pour-les-utilisateurs-exigeants/164107/"},
+  {"label": "ScooterRank — Halo Knight T104", "url": "https://scooterrank.com/scooters/halo-knight-t104"},
+  {"label": "Manuel Halo Knight T104", "url": "https://manuals.plus/m/5a107a3792c9a45fb7bda69b3ab09f04944518f394af35972b240c1c99481ad7.pdf"},
+  {"label": "Halo Knight — pneu 10x3.0 pour T104/T108", "url": "https://www.haloknights.com/en-eu/products/tuovt-10x3-0-inflatable-off-road-tire-for-t104-t108"}
+ ]
+}

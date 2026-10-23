@@ -1,0 +1,131 @@
+{
+  "displayName": "Engwe Y10",
+  "metaTitle": "Engwe Y10 : fiche technique, pneus et entretien",
+  "metaDescription": "Engwe Y10 : moteur 350 W, batterie 36 V 13 Ah (468 Wh), pneus 10x3.0, frein tambour avant, 17,2 kg. Autonomie réelle, recharge et entretien.",
+  "intro": [
+    "La Engwe Y10 est la trottinette électrique urbaine d'entrée de gamme d'Engwe, marque qui fabrique aussi des vélos électriques. Elle arrive montée dans son carton, se plie en un geste et porte des clignotants aux extrémités du guidon. Engwe France l'affiche à 399 €.",
+    "Elle roule sur des pneus gonflables larges de 10x3.0 pouces, sans suspension : ce sont les pneus qui amortissent. Moteur arrière de 350 W, batterie amovible 36 V 13 Ah, frein à tambour à l'avant et frein moteur à l'arrière. Elle pèse 17,2 kg et sort d'usine bridée à 25 km/h."
+  ],
+  "specs": [
+    [
+      "Moteur",
+      "350 W nominal (500 W en pointe selon ebikeguides et BonsPlansEcolo ; 600 W selon LlegaVideos)"
+    ],
+    [
+      "Vitesse",
+      "25 km/h"
+    ],
+    [
+      "Batterie",
+      "36 V, 13 Ah (468 Wh), amovible"
+    ],
+    [
+      "Autonomie annoncée",
+      "jusqu'à 65 km"
+    ],
+    [
+      "Autonomie mesurée",
+      "environ 40 km (TechNPlay) ; 26 km avec un pilote de plus de 100 kg, souvent à fond (test YouTube en espagnol)"
+    ],
+    [
+      "Poids",
+      "17,2 kg"
+    ],
+    [
+      "Charge max",
+      "120 kg (150 kg dans certains textes d'Engwe)"
+    ],
+    [
+      "Roues",
+      "10 pouces, pneus gonflables 10x3.0 avec chambre à air"
+    ],
+    [
+      "Freins",
+      "Tambour avant + frein moteur arrière (E-ABS)"
+    ],
+    [
+      "Suspension",
+      "Aucune"
+    ],
+    [
+      "Étanchéité",
+      "IPX4 (selon Engwe Europe)"
+    ],
+    [
+      "Temps de charge",
+      "5 à 6 h selon Engwe"
+    ]
+  ],
+  "pros": [
+    "Pneus larges de 10x3 pouces qui absorbent bien les chocs en ville (TechNPlay).",
+    "Clignotants au guidon et écran LCD couleur (BonsPlansEcolo).",
+    "Pliage rapide et sans jeu une fois verrouillé (TechNPlay).",
+    "Autour de 40 km en usage réel pour une batterie de 468 Wh (TechNPlay)."
+  ],
+  "cons": [
+    "Aucune suspension : sur pavés, seuls les pneus filtrent les vibrations.",
+    "Un seul frein mécanique, le tambour avant ; l'arrière freine par le moteur.",
+    "Les 65 km annoncés sont loin de l'usage réel : compte plutôt 26 à 40 km selon ton poids et ta vitesse.",
+    "Pas de régulateur de vitesse ni de compteur kilométrique total à l'écran, selon un testeur YouTube."
+  ],
+  "parts": [],
+  "care": [
+    "Gonfle tes pneus à la pression indiquée sur le flanc chaque mois : sans suspension, un pneu mou use la jante et fatigue la chambre à air.",
+    "Le tambour avant est ton seul frein mécanique : fais-le régler dès que la course du levier s'allonge.",
+    "Retire la batterie pour la recharger au sec et ne roule pas sous forte pluie : la Y10 n'est annoncée qu'en IPX4."
+  ],
+  "price": {
+    "text": "Prix affiché par Engwe France : 399 € (prix de lancement non confirmé).",
+    "source": "fr.engwe.com"
+  },
+  "faq": [
+    {
+      "q": "Quelle taille de pneu pour la Engwe Y10 ?",
+      "a": "Des pneus gonflables de 10x3.0 pouces, avec chambre à air. Avant d'en racheter, lis la cote exacte sur le flanc de ton pneu."
+    },
+    {
+      "q": "Quelle autonomie réelle pour la Engwe Y10 ?",
+      "a": "Engwe annonce 65 km en mode le plus doux. En test, TechNPlay tourne autour de 40 km ; un testeur de plus de 100 kg, souvent à fond, a fait 26 km."
+    },
+    {
+      "q": "Combien de temps pour recharger la Engwe Y10 ?",
+      "a": "Entre 5 et 6 heures selon Engwe. Un testeur espagnol parle plutôt de 8 heures. La batterie est amovible, tu peux la charger à part."
+    },
+    {
+      "q": "La Engwe Y10 a-t-elle une suspension ?",
+      "a": "Non. Elle compte uniquement sur ses pneus larges de 10x3.0 pour amortir. Si tu roules souvent sur des pavés, regarde plutôt la Y400 ou la Y600, suspendues."
+    },
+    {
+      "q": "La Engwe Y10 a-t-elle des freins à disque ?",
+      "a": "Non : frein à tambour à l'avant et frein moteur (E-ABS) à l'arrière. Une page Engwe Europe mentionne un disque, mais la fiche française et les tests montrent un tambour."
+    }
+  ],
+  "sources": [
+    {
+      "label": "Engwe France — trottinette Y10",
+      "url": "https://fr.engwe.com/products/engwe-y10"
+    },
+    {
+      "label": "Engwe Europe — Y10",
+      "url": "https://engwe-bikes-eu.com/products/engwe-y10"
+    },
+    {
+      "label": "Ebike Guides — Engwe Y10",
+      "url": "https://ebikeguides.com/product/engwe-y10-e-scooter/"
+    },
+    {
+      "label": "TechNPlay — test Engwe Y10 (YouTube)",
+      "url": "https://www.youtube.com/watch?v=S6Fk192eiRc"
+    },
+    {
+      "label": "BonsPlansEcolo — test Engwe Y10 (YouTube)",
+      "url": "https://www.youtube.com/watch?v=tVR4KzhHon0"
+    }
+  ],
+  "video": {
+    "id": "tVR4KzhHon0",
+    "title": "Engwe Y10 - Test de cette trotinette électrique en 3 min !",
+    "channel": "BonsPlansEcolo",
+    "uploadDate": "2024-07-24"
+  }
+}

@@ -1,0 +1,162 @@
+{
+  "displayName": "Isinwheel GT2",
+  "metaTitle": "Isinwheel GT2 : fiche technique, pneus 11\" et pièces",
+  "metaDescription": "Isinwheel GT2 : 800 W (1 000 W en pointe), batterie 48 V 15 Ah (720 Wh), pneus 11 pouces 90/65-6.5, deux freins à disque. Fiche, pièces et FAQ.",
+  "intro": [
+    "L'Isinwheel GT2 est la tout-terrain à roues de 11 pouces de la marque, à ne pas confondre avec la GT2 Pro, qui a sa propre fiche. Elle a quatre amortisseurs, deux freins à disque et un plateau éclairé par des LED. Isinwheel la vend aujourd'hui en France dans une version 1 200 W.",
+    "La version d'origine annonce 800 W nominaux et 1 000 W en pointe, une batterie 48 V 15 Ah de 720 Wh et 150 kg de charge. Isinwheel UK donne 55 à 60 km d'autonomie et 25,8 kg, un revendeur canadien 40 à 45 km et 24,3 kg. Les tests vidéo trouvent entre 20 et 30 km."
+  ],
+  "specs": [
+    [
+      "Moteur",
+      "800 W nominaux, 1 000 W en pointe (version d'origine) ; 1 200 W sur la version vendue par Isinwheel France"
+    ],
+    [
+      "Vitesse",
+      "25 km/h (bridée d'origine)"
+    ],
+    [
+      "Autonomie annoncée",
+      "55 à 60 km selon Isinwheel UK ; 40 à 45 km selon Streetrides"
+    ],
+    [
+      "Autonomie mesurée",
+      "22 à 29 km selon les tests YouTube"
+    ],
+    [
+      "Batterie",
+      "48 V, 15 Ah, 720 Wh"
+    ],
+    [
+      "Poids",
+      "25,8 kg selon Isinwheel UK ; 24,3 kg selon Streetrides"
+    ],
+    [
+      "Charge max",
+      "150 kg"
+    ],
+    [
+      "Roues",
+      "11 pouces, 90/65-6.5 à chambre à air (selon Isinwheel)"
+    ],
+    [
+      "Freins",
+      "Disque avant et arrière + frein électronique (E-ABS)"
+    ],
+    [
+      "Suspension",
+      "4 amortisseurs à ressort, avant et arrière"
+    ],
+    [
+      "Étanchéité",
+      "IPX4 selon Isinwheel UK ; IP54 selon Streetrides"
+    ],
+    [
+      "Temps de charge",
+      "5 à 7 h (chargeur 54,6 V 2 A)"
+    ]
+  ],
+  "pros": [
+    "Les roues de 11 pouces la rendent très stable et passent mieux les obstacles (test YouTube TOURNOIS Racing).",
+    "Freinage puissant, jusqu'à bloquer les roues (test YouTube « passe partout ! Mais… »).",
+    "Batterie de 720 Wh, généreuse pour ce prix."
+  ],
+  "cons": [
+    "Pas faite pour le vrai tout-terrain malgré ses pneus à crampons, selon plusieurs testeurs YouTube.",
+    "Suspensions fermes.",
+    "Plusieurs versions (800, 1 000 et 1 200 W) circulent sous le même nom : vérifie la tienne avant de commander."
+  ],
+  "parts": [
+    {
+      "label": "Pneu",
+      "size": "90/65-6.5 (11 pouces)",
+      "count": 11,
+      "to": "/piece/pneu-90-65-6-5-off-road-tubeless",
+      "cta": "Pneus 90/65-6.5"
+    },
+    {
+      "label": "Chambre à air",
+      "size": "90/65-6.5, valve droite ou coudée",
+      "count": 5,
+      "to": "/piece/chambre-a-air-90-65-6-5-valve-coudee-ewheel",
+      "cta": "Chambres à air"
+    },
+    {
+      "label": "Disque de frein",
+      "size": "140 mm, entraxe 44 mm, 6 trous",
+      "count": 3,
+      "to": "/piece/disque-de-frein-r6-140mm-entraxe-44mm-3-couleurs-rouge",
+      "cta": "Disques 140 mm"
+    },
+    {
+      "label": "Chargeur",
+      "size": "48 V (sortie 54,6 V), prise GX16 3 broches",
+      "count": 2,
+      "to": "/piece/chargeur-48v-546v-2a-connecteur-gx16-3p",
+      "cta": "Chargeurs 48 V"
+    }
+  ],
+  "care": [
+    "Pneus de 11 pouces à chambre à air : vérifie la pression chaque semaine, c'est la première cause de crevaison.",
+    "Retends les câbles des freins à disque dès que le levier s'enfonce davantage.",
+    "Après le chemin, contrôle le serrage des quatre amortisseurs et du pliage."
+  ],
+  "price": {
+    "text": "Prix affiché par Isinwheel France pour la GT2 1 200 W : 578,99 € en promotion, prix de référence 749,99 €.",
+    "source": "isinwheel.fr"
+  },
+  "faq": [
+    {
+      "q": "Quelle taille de pneu pour l'Isinwheel GT2 ?",
+      "a": "Des pneus de 11 pouces en 90/65-6.5, montés avec une chambre à air de même cote selon Isinwheel. Contrôle la cote sur le flanc avant de commander."
+    },
+    {
+      "q": "Quelle autonomie réelle pour l'Isinwheel GT2 ?",
+      "a": "Isinwheel annonce jusqu'à 60 km. Les tests YouTube relèvent 22 à 25 km en usage mixte et 29 km en usage soutenu ; un testeur a fait 19 km en mode turbo à mi-batterie."
+    },
+    {
+      "q": "Quelle différence entre l'Isinwheel GT2 et la GT2 Pro ?",
+      "a": "Selon Isinwheel, la GT2 Pro monte 1 200 W, une batterie de 15,6 Ah et des suspensions hydrauliques ; la GT2 d'origine a 800 W (1 000 W en pointe), 15 Ah et des amortisseurs à ressort."
+    },
+    {
+      "q": "Combien de temps pour recharger l'Isinwheel GT2 ?",
+      "a": "5 à 7 heures avec le chargeur d'origine 54,6 V 2 A, selon Isinwheel UK."
+    },
+    {
+      "q": "L'Isinwheel GT2 est-elle légale en France ?",
+      "a": "L'Isinwheel GT2 sort d'usine limitée à 25 km/h, le plafond légal des trottinettes électriques sur la voie publique en France. Au-delà, elle n'a plus le droit de rouler en ville, quel que soit le mode affiché dans l'application."
+    }
+  ],
+  "sources": [
+    {
+      "label": "Isinwheel UK — fiche technique GT2",
+      "url": "https://www.isinwheel.co.uk/pages/gt2-specifications"
+    },
+    {
+      "label": "Isinwheel UK — GT2 800 W",
+      "url": "https://www.isinwheel.co.uk/products/isinwheel-gt2-800w-off-road-electric-scooter"
+    },
+    {
+      "label": "Streetrides — Isinwheel GT2 800 W",
+      "url": "https://streetrides.ca/products/isinwheel-gt2-800w-off-road-electric-scooter"
+    },
+    {
+      "label": "Isinwheel France — GT2 1 200 W",
+      "url": "https://www.isinwheel.fr/products/isinwheel-gt2-trottinette-electrique-tout-terrain-1200w"
+    },
+    {
+      "label": "Isinwheel — GT2 contre GT2 Pro",
+      "url": "https://www.isinwheel.com/blogs/news/gt2-vs-gt2-pro-off-road-electric-scooter-comparison"
+    },
+    {
+      "label": "Isinwheel — pièces (chambre 90/65-6.5 GT2)",
+      "url": "https://www.isinwheel.com/en-au/collections/all-products"
+    }
+  ],
+  "video": {
+    "id": "aZNscwFMv7o",
+    "title": "Je teste la isinwheel GT2 Black friday 668.99€",
+    "channel": "TOURNOIS Racing",
+    "uploadDate": "2023-11-24"
+  }
+}

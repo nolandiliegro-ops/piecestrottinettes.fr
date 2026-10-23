@@ -1,0 +1,115 @@
+{
+  "displayName": "Isinwheel S-NOVA Pro",
+  "metaTitle": "Isinwheel S-NOVA Pro : fiche technique et autonomie",
+  "metaDescription": "Isinwheel S-NOVA Pro : 600 W (1 000 W en pointe), batterie 48 V 13 Ah (624 Wh), 60 km annoncés, pneus 10 x 2.125 à chambre à air. Fiche et FAQ.",
+  "intro": [
+    "L'Isinwheel S-NOVA Pro est une trottinette urbaine de 10 pouces, suspendue à l'avant par un bras oscillant et à l'arrière par un ressort. Elle freine avec deux disques et un frein électronique, et se pilote depuis l'application de la marque.",
+    "Isinwheel annonce 600 W nominaux et 1 000 W en pointe, une batterie 48 V 13 Ah de 624 Wh et jusqu'à 60 km dans des conditions idéales. Elle pèse 27,4 kg et accepte 120 kg. Un testeur polonais a parcouru 34 km, en partie sur terrain difficile."
+  ],
+  "specs": [
+    [
+      "Moteur",
+      "600 W nominaux, 1 000 W en pointe"
+    ],
+    [
+      "Vitesse",
+      "25 km/h (bridée d'origine)"
+    ],
+    [
+      "Autonomie annoncée",
+      "60 km ; 50 à 55 km en ville selon Isinwheel France"
+    ],
+    [
+      "Autonomie mesurée",
+      "34 km (test YouTube, terrain mixte)"
+    ],
+    [
+      "Batterie",
+      "48 V, 13 Ah, 624 Wh"
+    ],
+    [
+      "Poids",
+      "27,4 kg"
+    ],
+    [
+      "Charge max",
+      "120 kg"
+    ],
+    [
+      "Roues",
+      "10 x 2.125 pouces gonflables à chambre à air"
+    ],
+    [
+      "Freins",
+      "Disque avant et arrière + frein électronique"
+    ],
+    [
+      "Suspension",
+      "Bras oscillant avant, ressort arrière"
+    ],
+    [
+      "Étanchéité",
+      "IPX4 selon Isinwheel US ; IP54 selon Isinwheel UK"
+    ],
+    [
+      "Temps de charge",
+      "6 à 7 h"
+    ]
+  ],
+  "pros": [
+    "Freinage court : environ 4 m d'arrêt mesurés en test (YouTube).",
+    "Confortable et agréable à rouler en ville (test YouTube).",
+    "Accélération franche pour un moteur de 600 W nominaux."
+  ],
+  "cons": [
+    "27,4 kg, lourd pour une trottinette urbaine.",
+    "Charge maximale limitée à 120 kg.",
+    "Puissance linéaire : pas faite pour les fortes côtes, selon les testeurs."
+  ],
+  "parts": [],
+  "care": [
+    "Pneus à chambre à air : garde la pression recommandée, un pneu mou pince la chambre au premier trottoir.",
+    "Freins à disque mécaniques : retends les câbles dès que le levier prend de la course.",
+    "Contrôle le jeu du bras oscillant avant tous les mois."
+  ],
+  "price": {
+    "text": "Prix affiché par Isinwheel France : 488,99 € en promotion, pour un prix de référence de 658,99 €.",
+    "source": "isinwheel.fr"
+  },
+  "faq": [
+    {
+      "q": "Quelle taille de pneu pour l'Isinwheel S-NOVA Pro ?",
+      "a": "Des pneus gonflables de 10 x 2.125 pouces avec chambre à air, selon Isinwheel. Lis la cote sur le flanc avant de commander, au cas où ta série serait différente."
+    },
+    {
+      "q": "Quelle autonomie réelle pour l'Isinwheel S-NOVA Pro ?",
+      "a": "Isinwheel annonce 60 km dans des conditions idéales et 50 à 55 km en ville. Un testeur YouTube a fait 34 km sur un parcours en partie tout-terrain."
+    },
+    {
+      "q": "Combien de temps pour recharger l'Isinwheel S-NOVA Pro ?",
+      "a": "6 à 7 heures pour une charge complète, selon Isinwheel."
+    },
+    {
+      "q": "Quelle différence entre l'Isinwheel S-NOVA Pro et la S10 Max ?",
+      "a": "La S10 Max a un moteur de 1 000 W, une batterie de 15 à 15,6 Ah et des pneus 10 x 2.75 tubeless. La S-NOVA Pro a 600 W nominaux, 13 Ah et des pneus 10 x 2.125 à chambre à air."
+    },
+    {
+      "q": "L'Isinwheel S-NOVA Pro est-elle légale en France ?",
+      "a": "L'Isinwheel S-NOVA Pro est réglée à 25 km/h, la vitesse maximale autorisée en France pour un EDPM sur la voie publique. Rouler plus vite sur la route est interdit et peut te priver de ton assurance en cas d'accident."
+    }
+  ],
+  "sources": [
+    {
+      "label": "Isinwheel France — S-NOVA Pro 1 000 W",
+      "url": "https://www.isinwheel.fr/products/isinwheel-s-nova-pro-trottinette-electrique-urbaine-1000w"
+    },
+    {
+      "label": "Isinwheel US — S-NOVA Pro",
+      "url": "https://www.isinwheel.com/products/s-nova-pro-commuting-electric-scooter"
+    },
+    {
+      "label": "Isinwheel UK — S-NOVA Pro",
+      "url": "https://www.isinwheel.co.uk/products/isinwheel-s-nova-pro-electric-scooter"
+    }
+  ]
+}

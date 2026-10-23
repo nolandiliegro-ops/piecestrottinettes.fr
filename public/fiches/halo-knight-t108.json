@@ -1,0 +1,137 @@
+{
+  "displayName": "Halo Knight T108",
+  "metaTitle": "Halo Knight T108 : fiche technique et pièces",
+  "metaDescription": "Halo Knight T108 : bimoteur 2 400 W en pointe, batterie 52 V 28,8 Ah (1 498 Wh), freins hydrauliques, pneus 10 pouces, 35 kg. Autonomie réelle et pièces.",
+  "intro": [
+    "La Halo Knight T108 est la grande sœur de la T104 : même format 10 pouces et même tension de 52 V, mais une batterie plus grosse et des freins hydrauliques. La version 2026 ajoute un démarrage par carte NFC, une application Bluetooth et des LED RVB. Ne la confonds pas avec la T108 Pro, une 60 V en 11 pouces.",
+    "Deux moteurs de 1 000 W nominaux, 2 400 W en pointe, batterie de 52 V 28,8 Ah (1 498 Wh), suspensions avant et arrière, pneus gonflables de 10 pouces. Elle pèse environ 35 kg et accepte 120 kg. Halo Knight annonce 25 à 58 km ; un testeur polonais a dépassé 60 km."
+  ],
+  "specs": [
+    [
+      "Moteurs",
+      "2 × 1 000 W nominaux, 2 × 1 200 W en pointe (2 400 W cumulés)"
+    ],
+    [
+      "Vitesse",
+      "25 km/h en mode bridé ; 60 à 65 km/h annoncés, réservés aux terrains privés"
+    ],
+    [
+      "Batterie",
+      "52 V, 28,8 Ah (1 498 Wh)"
+    ],
+    [
+      "Autonomie annoncée",
+      "25 à 58 km"
+    ],
+    [
+      "Autonomie mesurée",
+      "62 km (Simon Smith, YouTube) ; 27 km à 90 kg et 34 km/h de moyenne avec une batterie défectueuse, puis 45 km après remplacement (LazyTV)"
+    ],
+    [
+      "Poids",
+      "35 kg (Boulanger, Simon Smith) ; 32 kg sur une autre annonce"
+    ],
+    [
+      "Charge max",
+      "120 kg"
+    ],
+    [
+      "Roues",
+      "10 pouces, pneus gonflables route"
+    ],
+    [
+      "Freins",
+      "Hydrauliques avant et arrière + frein électrique"
+    ],
+    [
+      "Suspension",
+      "Avant et arrière, ressorts"
+    ],
+    [
+      "Étanchéité",
+      "IP54"
+    ],
+    [
+      "Temps de charge",
+      "4 à 5 h selon Halo Knight ; 6 à 8 h selon d'autres annonces"
+    ]
+  ],
+  "pros": [
+    "Très stable sur bitume, avec une bonne tenue de route (LazyTV).",
+    "Batterie de 1 498 Wh qui a dépassé 60 km en test (Simon Smith).",
+    "Freins hydrauliques à l'avant et à l'arrière (Halo Knight, Boulanger).",
+    "Grimpe une pente d'environ 17° sans descendre sous 25 km/h (test YouTube de la version 2026)."
+  ],
+  "cons": [
+    "Environ 35 kg : peu pratique à porter.",
+    "Batterie défectueuse à la livraison chez un testeur, remplacée ensuite (LazyTV).",
+    "Fiches contradictoires sur le poids, le temps de charge et la taille exacte des pneus.",
+    "En France, la voie publique impose 25 km/h : sa vitesse de pointe ne sert qu'en terrain privé."
+  ],
+  "parts": [
+    {
+      "label": "Chargeur",
+      "size": "52 V (58,8 V en sortie), prise GX16-3",
+      "count": 3,
+      "to": "/piece/chargeur-52v-588v-2a-connecteur-gx16-3p",
+      "cta": "Chargeurs 52 V"
+    }
+  ],
+  "care": [
+    "Avant de commander un pneu ou une chambre à air, lis la cote sur le flanc de ton pneu : les sources ne s'accordent pas sur la taille exacte.",
+    "Freins hydrauliques : si le levier devient mou, fais purger le circuit plutôt que de forcer sur le réglage.",
+    "Recharge uniquement avec un chargeur 52 V (58,8 V en sortie), jamais un 48 V ou un 60 V."
+  ],
+  "price": {
+    "text": "Affichée 899 € en promotion (949 € hors promotion) sur la boutique française de Halo Knight.",
+    "source": "haloknights.com"
+  },
+  "faq": [
+    {
+      "q": "Quelle taille de pneu pour la Halo Knight T108 ?",
+      "a": "Des pneus gonflables de 10 pouces sur jante de 6 pouces. Halo Knight vend pour la T108 des pneus en 10x3 (80/65-6), mais d'autres catalogues la donnent en 10x2.50. Lis la cote moulée sur le flanc de ton pneu avant de commander."
+    },
+    {
+      "q": "Quelle autonomie réelle pour la Halo Knight T108 ?",
+      "a": "Halo Knight annonce 25 à 58 km. Simon Smith a dépassé 60 km. LazyTV, à 90 kg et vite, a fait 45 km avec la batterie remplacée. Rouler sur un seul moteur à 25 km/h allonge l'autonomie."
+    },
+    {
+      "q": "Combien de temps pour recharger la Halo Knight T108 ?",
+      "a": "4 à 5 heures selon Halo Knight. D'autres annonces parlent de 6 à 8 heures avec le chargeur 3 A fourni."
+    },
+    {
+      "q": "Quelle différence entre la Halo Knight T108 et la T108 Pro ?",
+      "a": "La T108 est une 52 V 28,8 Ah en 10 pouces, d'environ 35 kg. La T108 Pro passe en 60 V 38,4 Ah, en pneus de 11 pouces (90/65-6.5) et pèse 46,5 kg. Leurs pièces ne sont pas interchangeables."
+    },
+    {
+      "q": "La Halo Knight T108 est-elle légale sur la route en France ?",
+      "a": "Seulement bridée à 25 km/h, la limite des trottinettes électriques sur la voie publique. Au-delà, elle n'a plus le droit de circuler sur la route et ton assurance peut refuser de te couvrir."
+    }
+  ],
+  "sources": [
+    {
+      "label": "Halo Knight — T108 52 V 2 400 W 28,8 Ah",
+      "url": "https://www.haloknights.com/en-us/products/halo-knight-t108-electric-scooter-52v-2400w-28-8ah"
+    },
+    {
+      "label": "Halo Knight — revue T108",
+      "url": "https://www.haloknights.com/en-us/blogs/blog/halo-knight-t108-review"
+    },
+    {
+      "label": "Boulanger — Halo Knight T108",
+      "url": "https://www.boulanger.com/ref/9000921814"
+    },
+    {
+      "label": "Pixmania — Halo Knight T108",
+      "url": "https://www.pixmania.com/fr/fr/t108-pneu-de-route-de-10-pouces-double-moteur-1000-w-batterie-52-v-288-ah-358079.html"
+    },
+    {
+      "label": "LazyTV — test Halo Knight T108 (YouTube)",
+      "url": "https://www.youtube.com/watch?v=WZBHy1Q8Bd8"
+    },
+    {
+      "label": "Simon Smith — test Halo Knight T108 (YouTube)",
+      "url": "https://www.youtube.com/watch?v=5FKkQZDebYs"
+    }
+  ]
+}

@@ -3,9 +3,13 @@ import { HelmetProvider } from "react-helmet-async";
 import App from "./App.tsx";
 import "./index.css";
 import { initSentry } from "./lib/sentry";
+import { installAffiliateClickTracker } from "./lib/affiliateClicks";
 
 // Initialize Sentry for error tracking
 initSentry();
+
+// 23/10/2026 : compte chaque clic sur un lien partenaire (rel="sponsored"), voir src/lib/affiliateClicks.ts.
+installAffiliateClickTracker();
 
 // 20/10/2026 : après une publication, un index.html resté en cache (service worker) peut pointer vers un
 // morceau JS qui n'existe plus (404 « Failed to fetch dynamically imported module ») → page blanche.

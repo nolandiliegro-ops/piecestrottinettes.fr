@@ -132,6 +132,7 @@ const ShowroomActionButtons = ({ slug, name, affiliateLink }: ShowroomActionButt
             href={affiliateLink}
             target="_blank"
             rel="noopener noreferrer sponsored"
+            data-placement="showroom"
             aria-label={`Acheter ${name} chez notre partenaire (lien externe)`}
             whileHover={reduceMotion ? undefined : { scale: 1.05 }}
             whileTap={reduceMotion ? undefined : { scale: 0.95 }}

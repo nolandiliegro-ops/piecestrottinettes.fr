@@ -1,0 +1,131 @@
+{
+  "displayName": "Engwe Y1000",
+  "metaTitle": "Engwe Y1000 : fiche technique bimoteur et pièces",
+  "metaDescription": "Engwe Y1000 : 2 moteurs de 1 200 W en pointe, batterie 52 V 22,5 Ah (1 170 Wh), pneus tout-terrain 10x3.0, freins hydrauliques, 36,1 kg. Autonomie réelle.",
+  "intro": [
+    "La Engwe Y1000 est la trottinette bimoteur de la série Y d'Engwe, présentée en 2026 au-dessus de la Y700. Un moteur dans chaque roue, que tu peux couper pour rouler sur le seul moteur arrière et économiser la batterie. Elle se déverrouille par carte NFC ou par l'application.",
+    "Batterie de 52 V 22,5 Ah (1 170 Wh), pneus tout-terrain de 10x3.0 pouces, freins à disque hydrauliques et suspensions avant et arrière. Elle pèse 36,1 kg et accepte 120 kg. Engwe annonce de 85 à 100 km selon la page ; en usage normal, les testeurs relèvent plutôt 50 à 78 km."
+  ],
+  "specs": [
+    [
+      "Moteurs",
+      "2 × 1 200 W en pointe (2 400 W cumulés), 28 Nm par moteur ; puissance nominale non publiée"
+    ],
+    [
+      "Vitesse",
+      "25 km/h sur la voie publique"
+    ],
+    [
+      "Batterie",
+      "52 V, 22,5 Ah (1 170 Wh)"
+    ],
+    [
+      "Autonomie annoncée",
+      "85 km (Engwe France) ou 100 km (autres pages Engwe)"
+    ],
+    [
+      "Autonomie mesurée",
+      "environ 40 km en s'arrêtant à 15-20 % de batterie (autoevolution) ; 50 à 55 km en usage soutenu (MobiliTest) ; 78 km en ville bridée à 25 km/h pour 80 kg (test longue durée YouTube)"
+    ],
+    [
+      "Poids",
+      "36,1 kg"
+    ],
+    [
+      "Charge max",
+      "120 kg"
+    ],
+    [
+      "Roues",
+      "10 pouces, pneus tout-terrain 10x3.0"
+    ],
+    [
+      "Freins",
+      "Disques hydrauliques avant et arrière (Ø 140 mm selon un revendeur, non confirmé par Engwe)"
+    ],
+    [
+      "Suspension",
+      "Avant et arrière"
+    ],
+    [
+      "Étanchéité",
+      "IPX5"
+    ],
+    [
+      "Temps de charge",
+      "5 à 6 h avec le chargeur 4 A (5 h 30 mesurées par autoevolution)"
+    ]
+  ],
+  "pros": [
+    "Freins hydrauliques jugés remarquables en test (MobiliTest).",
+    "Confort très apprécié, sans vibrations sur route abîmée (GLG reviews ; test YouTube à 100 kg).",
+    "Mode un ou deux moteurs au choix, utile pour les montées raides (GLG reviews).",
+    "Recharge rapide pour sa taille de batterie : 5 h 30 mesurées (autoevolution)."
+  ],
+  "cons": [
+    "36,1 kg : difficile à porter et à ranger.",
+    "Pneus tout-terrain peu adhérents sur route mouillée (test YouTube à 100 kg).",
+    "Écran jugé beau mais incomplet par un testeur longue durée (YouTube).",
+    "Sa puissance n'est utilisable que bridée à 25 km/h sur la voie publique en France."
+  ],
+  "parts": [],
+  "care": [
+    "Freins hydrauliques : si le levier devient spongieux, fais purger le circuit en atelier plutôt que de resserrer l'étrier.",
+    "Pneus tout-terrain de 10x3.0 : contrôle la pression chaque mois et lis la cote sur le flanc avant d'en commander un nouveau.",
+    "Avec 36 kg et deux moteurs, vérifie le serrage des axes de roue et du pliage toutes les quelques centaines de kilomètres."
+  ],
+  "price": {
+    "text": "Autour de 1 000 € selon autoevolution, moins de 1 000 € selon MobiliTest ; prix français officiel non confirmé.",
+    "source": "autoevolution, MobiliTest"
+  },
+  "faq": [
+    {
+      "q": "Quelle taille de pneu pour la Engwe Y1000 ?",
+      "a": "Des pneus tout-terrain de 10 pouces en 10x3.0. Engwe les dit anti-crevaison sans préciser s'ils sont tubeless : lis la cote et le marquage sur le flanc avant de commander."
+    },
+    {
+      "q": "Quelle autonomie réelle pour la Engwe Y1000 ?",
+      "a": "Engwe annonce 85 à 100 km. autoevolution s'est arrêté à 40 km avec 15 à 20 % restants. MobiliTest compte 50 à 55 km en usage soutenu. Un testeur de 80 kg a fait 78 km en ville à 25 km/h."
+    },
+    {
+      "q": "Combien de temps pour recharger la Engwe Y1000 ?",
+      "a": "5 à 6 heures avec le chargeur 4 A d'origine selon Engwe ; autoevolution a mesuré environ 5 h 30 depuis 15-20 %."
+    },
+    {
+      "q": "Quelle différence entre la Engwe Y1000 et la Y700 ?",
+      "a": "La Y1000 a deux moteurs, une batterie 52 V 22,5 Ah et des freins hydrauliques pour 36,1 kg. La Y700 n'a qu'un moteur arrière, une batterie 48 V 18,2 Ah et des freins à câble pour 31,7 kg."
+    },
+    {
+      "q": "La Engwe Y1000 est-elle légale en France ?",
+      "a": "Oui, telle que livrée : elle est bridée à 25 km/h, la limite des trottinettes électriques sur la voie publique. Une Y1000 débridée n'a plus le droit de circuler sur la route et ton assurance peut refuser de te couvrir."
+    }
+  ],
+  "sources": [
+    {
+      "label": "Engwe — trottinette Y1000",
+      "url": "https://engwe.com/products/e-scooter-for-adults-y1000"
+    },
+    {
+      "label": "Engwe France — Y1000",
+      "url": "https://fr.engwe.com/products/e-scooter-for-adults-y1000"
+    },
+    {
+      "label": "autoevolution — essai Engwe Y1000",
+      "url": "https://www.autoevolution.com/news/ridden-here-are-3000-reasons-words-why-engwe-s-y1000-is-the-best-budget-e-scooter-of-2026-271298.html"
+    },
+    {
+      "label": "MobiliTest — test Engwe Y1000 (YouTube)",
+      "url": "https://www.youtube.com/watch?v=A3Ok0a__9bE"
+    },
+    {
+      "label": "GLG reviews — test Engwe Y1000 (YouTube)",
+      "url": "https://www.youtube.com/watch?v=DIb4fc6KB1w"
+    }
+  ],
+  "video": {
+    "id": "DIb4fc6KB1w",
+    "title": "ENGWE Y1000 : test de la trottinette double moteur 2 400 W | By GLG",
+    "channel": "GLG reviews",
+    "uploadDate": "2026-03-11"
+  }
+}
