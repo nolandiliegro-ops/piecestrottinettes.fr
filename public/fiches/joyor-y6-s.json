@@ -1,0 +1,136 @@
+{
+ "displayName": "Joyor Y6-S",
+ "metaTitle": "Joyor Y6-S : fiche technique, avis et pièces",
+ "metaDescription": "Joyor Y6-S : moteur 500 W, batterie 48 V 18 Ah (864 Wh), 60 km annoncés, freins à disque mécaniques, double suspension, IP45. Fiche et pièces.",
+ "intro": [
+  "La Joyor Y6-S est la version 18 Ah de la série Y, sur le marché depuis au moins 2021 d'après les premiers tests vidéo. Elle partage avec la Y8-S la suspension avant et arrière et les roues de 10 pouces, avec une batterie plus petite. Les prix affichés vont de 449 € chez Joyor Prime à 519 € chez Joyorscooter.",
+  "Elle a un moteur de 500 W et une batterie de 48 V 18 Ah, soit 864 Wh, pour 60 km annoncés. Deux disques mécaniques assurent le freinage et les pneus tout-chemin de 10 pouces sont montés avec chambre à air. Joyor la donne en IP45. Son poids diffère selon les fiches : 19,5 kg chez Joyor, 24 kg chez Joyor France."
+ ],
+ "specs": [
+  [
+   "Moteur",
+   "500 W nominaux ; 800 W en pic selon un test vidéo"
+  ],
+  [
+   "Vitesse",
+   "25 km/h (version Europe)"
+  ],
+  [
+   "Autonomie annoncée",
+   "jusqu'à 60 km (35 à 60 km sur une autre fiche Joyor)"
+  ],
+  [
+   "Autonomie mesurée",
+   "57 km pour un pilote de 80 kg (test vidéo polonais)"
+  ],
+  [
+   "Batterie",
+   "48 V, 18 Ah, 864 Wh"
+  ],
+  [
+   "Poids",
+   "19,5 kg selon Joyor ; 24 kg selon Joyor France et un test vidéo"
+  ],
+  [
+   "Charge max",
+   "120 kg"
+  ],
+  [
+   "Roues",
+   "10 pouces, tout-chemin à chambre à air"
+  ],
+  [
+   "Freins",
+   "Disques mécaniques avant et arrière"
+  ],
+  [
+   "Suspension",
+   "Avant et arrière"
+  ],
+  [
+   "Étanchéité",
+   "IP45"
+  ],
+  [
+   "Temps de charge",
+   "8 à 10 h"
+  ]
+ ],
+ "pros": [
+  "Double suspension et pneus tout-chemin pour sortir du bitume (Joyor).",
+  "57 km parcourus lors d'un test d'autonomie avec un pilote de 80 kg (test vidéo polonais).",
+  "Étonnamment stable selon un testeur français."
+ ],
+ "cons": [
+  "Freins mécaniques à câble, sans assistance hydraulique.",
+  "8 à 10 h de recharge avec le chargeur 2 A fourni (test vidéo).",
+  "Poids très variable d'une fiche à l'autre (19,5 à 24 kg).",
+  "Batterie de 18 Ah, contre 26 Ah sur la Y8-S."
+ ],
+ "parts": [
+  {
+   "label": "Plaquettes de frein",
+   "size": "Forme Sram Avid (étrier mécanique)",
+   "count": 4,
+   "to": "/piece/plaquettes-de-freins-zero-10x-11x-vsett-10-storm-thunder-sram-avid-semi-metallique",
+   "cta": "Plaquettes Sram Avid"
+  }
+ ],
+ "care": [
+  "Compare tes plaquettes usées avec la photo de la fiche avant de commander : la forme Sram Avid doit correspondre.",
+  "Retends les câbles de frein après les premières centaines de kilomètres : ils se détendent en se mettant en place.",
+  "Joyor vend le pneu de la Y6-S sans chambre : prévois la chambre à air à part quand tu le changes."
+ ],
+ "price": {
+  "text": "449 € chez Joyor Prime, 519 € chez Joyorscooter ; entre 379,99 € et 659,99 € selon les offres Cdiscount.",
+  "source": "joyorprime.com, joyorscooter.com, cdiscount.com"
+ },
+ "faq": [
+  {
+   "q": "Quelle taille de pneu pour la Joyor Y6-S ?",
+   "a": "Des pneus tout-chemin de 10 pouces avec chambre à air. Joyor ne publie pas la cote complète pour ce modèle : relève-la sur le flanc avant de commander."
+  },
+  {
+   "q": "Quelles plaquettes pour la Joyor Y6-S ?",
+   "a": "Notre catalogue relie ses étriers mécaniques aux plaquettes de forme Sram Avid. Compare avec tes plaquettes usées avant de commander."
+  },
+  {
+   "q": "Quelle autonomie réelle pour la Y6-S ?",
+   "a": "Joyor annonce 60 km. Un testeur polonais de 80 kg a fait 57 km avec des réglages favorables ; un testeur français compte plutôt 40 km en roulant à fond."
+  },
+  {
+   "q": "Quelle différence entre la Joyor Y6-S et la Y8-S ?",
+   "a": "La Y8-S a une batterie de 26 Ah contre 18 Ah, et Joyor lui annonce 75 à 100 km. Elle se recharge aussi plus longtemps, 10 à 13 h."
+  },
+  {
+   "q": "Combien de temps pour charger la Y6-S ?",
+   "a": "8 à 10 heures avec le chargeur 2 A livré."
+  }
+ ],
+ "sources": [
+  {
+   "label": "Joyor — Y6-S",
+   "url": "https://joyor.com/products/joyor-y6-s-electric-scooter"
+  },
+  {
+   "label": "Joyorscooter — Y6-S",
+   "url": "https://joyorscooter.com/products/joyor-y6-s-electric-scooter"
+  },
+  {
+   "label": "Joyor Prime — Y6-S",
+   "url": "https://joyorprime.com/fr-eu/products/joyor-y6s"
+  },
+  {
+   "label": "Joyor Prime — pneu tout-terrain Y6-S",
+   "url": "https://joyorprime.com/fr/products/joyor-y6-s-10-inch-off-road-tire-1-pack"
+  },
+  {
+   "label": "Joyor France — Y6-S",
+   "url": "https://www.joyor-fr.com/products/joyor-y6-s-trottinette-electrique?variant=8c3566a2-c792-453c-a97c-1d43774bfa77"
+  },
+  {
+   "label": "Test vidéo Joyor Y6-S, essai d'autonomie (polonais)",
+   "url": "https://www.youtube.com/watch?v=wUonmXeN4Xw"
+  }
+ ]
+}

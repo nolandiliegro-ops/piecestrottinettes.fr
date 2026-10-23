@@ -1,0 +1,132 @@
+{
+ "displayName": "Joyor S5",
+ "metaTitle": "Joyor S5 : fiche technique, avis et pièces",
+ "metaDescription": "Joyor S5 : moteur 500 W, batterie 48 V 13 Ah (624 Wh), roues de 10 pouces, deux freins à disque, double suspension, 22 kg. Fiche, entretien et pièces.",
+ "intro": [
+  "La Joyor S5 est l'entrée de gamme tout-chemin de la série S : une monomoteur 48 V avec suspension avant et arrière, vendue 529 € chez Boulanger. Elle existe en version ABE, homologuée pour l'Allemagne et limitée à 20 km/h, et en variante S5-Z, dont les fiches diffèrent sur plusieurs points.",
+  "Elle a un moteur arrière de 500 W, une batterie de 48 V 13 Ah (624 Wh), des roues gonflables de 10 pouces et un frein à disque sur chaque roue. Joyor annonce 45 km d'autonomie. Elle pèse 22,1 kg selon Boulanger, 22,7 kg selon Joyor. La recharge prend 8 h selon Boulanger, 12 à 14 h selon Joyor."
+ ],
+ "specs": [
+  [
+   "Moteur",
+   "500 W nominaux ; 700 à 800 W en pointe selon un test vidéo allemand (600 W sur certaines fiches revendeurs)"
+  ],
+  [
+   "Vitesse",
+   "20 km/h en version ABE ; 25 km/h sur les fiches françaises"
+  ],
+  [
+   "Autonomie annoncée",
+   "45 km selon Joyor, jusqu'à 55 km selon certains vendeurs"
+  ],
+  [
+   "Batterie",
+   "48 V, 13 Ah, 624 Wh"
+  ],
+  [
+   "Poids",
+   "22,1 kg selon Boulanger, 22,7 kg selon Joyor"
+  ],
+  [
+   "Charge max",
+   "120 kg"
+  ],
+  [
+   "Roues",
+   "10 pouces, gonflables"
+  ],
+  [
+   "Freins",
+   "Disque avant + disque arrière"
+  ],
+  [
+   "Suspension",
+   "Avant et arrière, à bras oscillant"
+  ],
+  [
+   "Étanchéité",
+   "IP54 (version ABE)"
+  ],
+  [
+   "Temps de charge",
+   "8 h selon Boulanger, 12 à 14 h selon Joyor"
+  ]
+ ],
+ "pros": [
+  "Suspension à bras oscillant saluée par chinahandys.net.",
+  "Garde sa vitesse dans une montée raide et sur chemin selon chinahandys.net.",
+  "Un frein à disque par roue, jugé efficace lors d'un test vidéo de 86 km."
+ ],
+ "cons": [
+  "Suspension très ferme au déballage, qui s'assouplit après 100 à 150 km selon un testeur allemand.",
+  "Puissance « pas la plus forte » selon le même testeur : à l'aise pour un pilote de 70 à 80 kg.",
+  "Batterie de 13 Ah : pas une trottinette de longue distance (test vidéo allemand).",
+  "Jusqu'à 12 à 14 h de recharge selon Joyor."
+ ],
+ "parts": [
+  {
+   "label": "Chargeur",
+   "size": "48 V (54,6 V en fin de charge), prise GX16 3 broches",
+   "count": 2,
+   "to": "/piece/chargeur-48v-546v-2a-connecteur-gx16-3p",
+   "cta": "Chargeurs 48 V"
+  }
+ ],
+ "care": [
+  "La saleté durcit le bras oscillant : nettoie et graisse ses axes après chaque sortie sur chemin.",
+  "Deux disques, deux paires de plaquettes : contrôle-les en même temps pour garder un freinage équilibré.",
+  "Joyor ne cote pas les pneus de la S5 : relève la dimension sur le flanc et note-la avant ta première crevaison."
+ ],
+ "price": {
+  "text": "529 € chez Boulanger ; 494,99 € sur une offre partenaire de la Fnac.",
+  "source": "boulanger.com, fnac.com"
+ },
+ "faq": [
+  {
+   "q": "Quelle taille de pneu pour la Joyor S5 ?",
+   "a": "Des pneus gonflables de 10 pouces. Joyor ne précise pas la largeur pour la S5 standard (la S5-Z est donnée en 10x3) : lis la cote sur le flanc de ton pneu avant de commander."
+  },
+  {
+   "q": "Quelle autonomie pour la Joyor S5 ?",
+   "a": "Joyor annonce 45 km. Aucun test publié ne donne de mesure complète pour la S5 standard ; compte moins si tu es lourd ou si ton trajet grimpe."
+  },
+  {
+   "q": "Quels freins sur la Joyor S5 ?",
+   "a": "Un frein à disque sur chaque roue, mécanique selon Joyor."
+  },
+  {
+   "q": "Quelle différence entre la Joyor S5 et la S5 Pro ?",
+   "a": "La S5 Pro garde le moteur de 500 W mais double la batterie : 26 Ah au lieu de 13 Ah. Elle pèse environ 2 kg de plus (25,7 kg)."
+  },
+  {
+   "q": "Combien de temps pour charger la Joyor S5 ?",
+   "a": "8 heures selon Boulanger, 12 à 14 heures selon les fiches Joyor de la version ABE."
+  }
+ ],
+ "sources": [
+  {
+   "label": "Joyor — S5 ABE",
+   "url": "https://joyor.com/products/joyor-s5-abe-electric-scooter"
+  },
+  {
+   "label": "Joyor Europe — S5 ABE",
+   "url": "https://eu.joyorescooter.com/products/dejoyor-s5-abe"
+  },
+  {
+   "label": "Boulanger — Joyor S5",
+   "url": "https://www.boulanger.com/ref/9000921744"
+  },
+  {
+   "label": "Fnac — Joyor S5 48 V 13 Ah",
+   "url": "https://www.fnac.com/mp49767605/Trottinette-electrique-JOYOR-S5-Batterie-48V-13Ah-Moteur-600-W-Vitesse-max-25-km-h-Portee-de-40-a-55-km-avec-certificate-ABE/w-4"
+  },
+  {
+   "label": "chinahandys.net — test vidéo Joyor S5",
+   "url": "https://www.youtube.com/watch?v=wj6VG1FMELo"
+  },
+  {
+   "label": "Test vidéo Joyor S5 (unboxing, 48 V 13 Ah)",
+   "url": "https://www.youtube.com/watch?v=6hg4GqtX6mU"
+  }
+ ]
+}

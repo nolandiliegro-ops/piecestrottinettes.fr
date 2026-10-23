@@ -1,0 +1,139 @@
+{
+  "displayName": "Inmotion Air",
+  "metaTitle": "Inmotion Air : fiche technique, autonomie et pièces",
+  "metaDescription": "Inmotion Air : 350 W (720 W en pointe), batterie 36 V 7,8 Ah (280 Wh), roues gonflables 10\", tambour avant. Autonomie réelle, entretien et pièces.",
+  "intro": [
+    "L'Inmotion Air, aussi vendue sous le nom C1, est la petite trottinette urbaine d'Inmotion, une marque qui fabrique aussi des gyroroues. Elle est à ne pas confondre avec l'Air Pro, plus puissante, plus endurante et équipée d'un pneu arrière plein : chacune a sa propre fiche.",
+    "Moteur arrière de 350 W (720 W en pointe), batterie de 36 V et 7,8 Ah, soit 280 Wh, pour 35 km annoncés. Elle roule sur deux roues gonflables de 10 pouces à chambre à air, freine avec un tambour à l'avant et un frein électronique à l'arrière, n'a pas de suspension et pèse 15,8 kg."
+  ],
+  "specs": [
+    [
+      "Moteur",
+      "350 W nominaux, 720 W en pointe (moteur arrière)"
+    ],
+    [
+      "Vitesse",
+      "25 km/h (version européenne)"
+    ],
+    [
+      "Autonomie annoncée",
+      "jusqu'à 35 km"
+    ],
+    [
+      "Autonomie mesurée",
+      "environ 20 km (selon Mobiwisy)"
+    ],
+    [
+      "Batterie",
+      "36 V, 7,8 Ah, 280 Wh"
+    ],
+    [
+      "Poids",
+      "15,8 kg selon Inmotion ; « près de 15 kg » selon Mobiwisy"
+    ],
+    [
+      "Charge max",
+      "120 kg"
+    ],
+    [
+      "Roues",
+      "10 pouces, gonflables avec chambre à air, avant et arrière"
+    ],
+    [
+      "Freins",
+      "Tambour avant + électronique arrière (EBS), commandés par un seul levier"
+    ],
+    [
+      "Suspension",
+      "Aucune"
+    ],
+    [
+      "Étanchéité",
+      "IP55 (selon le manuel Inmotion C1)"
+    ],
+    [
+      "Temps de charge",
+      "environ 4 h 30"
+    ]
+  ],
+  "pros": [
+    "Légère pour une 10 pouces : 15,8 kg, facile à monter dans un escalier ou un train.",
+    "Recharge courte, environ 4 h 30 (Inmotion).",
+    "Câbles intégrés dans la colonne et prise de charge protégée par un cache (test vidéo iRoll).",
+    "Bonne accélération et bonne tenue en montée pour sa catégorie (test vidéo Alles über Technik)."
+  ],
+  "cons": [
+    "Petite batterie de 280 Wh : environ 20 km mesurés par Mobiwisy, loin des 35 km annoncés.",
+    "Les performances baissent quand la batterie descend sous 60 % (Mobiwisy).",
+    "Pas de suspension : sur pavés, seuls les pneus de 10 pouces amortissent.",
+    "Éclairage jugé faible pour rouler de nuit (test vidéo Alles über Technik)."
+  ],
+  "parts": [
+    {
+      "label": "Chargeur",
+      "size": "36 V (sortie 42 V), prise RCA",
+      "count": 2,
+      "to": "/piece/chargeur-36v-42v-2a-xiaomi-connecteur-rca",
+      "cta": "Chargeurs 36 V"
+    }
+  ],
+  "care": [
+    "Sans suspension, ce sont tes pneus qui encaissent : vérifie la pression chaque mois, un pneu mou pince la chambre à air au premier trottoir.",
+    "Le tambour avant se règle par la molette du câble : resserre-la dès que le levier va trop loin avant de freiner.",
+    "Avec 280 Wh, évite de laisser la batterie à zéro : recharge-la après chaque sortie plutôt qu'une fois vide."
+  ],
+  "price": {
+    "text": "Prix relevé lors du test Mobiwisy (janvier 2023) : 599 €. Les prix ont pu changer depuis.",
+    "source": "mobiwisy.fr"
+  },
+  "faq": [
+    {
+      "q": "Quelle taille de pneu pour l'Inmotion Air ?",
+      "a": "Inmotion annonce des pneus gonflables de 10 pouces à chambre à air, sans publier la largeur exacte. Avant de commander, lis la cote sur le flanc de ton pneu (par exemple 10x2.125 ou 10x2.50) : c'est elle qui décide."
+    },
+    {
+      "q": "Quelle autonomie réelle pour l'Inmotion Air ?",
+      "a": "Inmotion annonce 35 km. En test, Mobiwisy a plutôt tenu autour de 20 km, avec une baisse de punch sous 60 % de batterie."
+    },
+    {
+      "q": "Combien de temps pour recharger l'Inmotion Air ?",
+      "a": "Environ 4 h 30 pour une charge complète de sa batterie de 280 Wh."
+    },
+    {
+      "q": "L'Inmotion Air a-t-elle des plaquettes de frein ?",
+      "a": "Non. Elle freine avec un tambour dans la roue avant et un frein électronique sur le moteur arrière, les deux commandés par le même levier."
+    },
+    {
+      "q": "Quelle différence entre l'Inmotion Air et l'Air Pro ?",
+      "a": "L'Air a 350 W, 280 Wh et deux pneus gonflables. L'Air Pro monte une batterie de 438 Wh pour 45 km annoncés, un moteur plus puissant et un pneu arrière plein. Elles ne partagent pas toutes les pièces : vérifie le nom exact sous le plateau."
+    }
+  ],
+  "sources": [
+    {
+      "label": "Inmotion — Inmotion Air",
+      "url": "https://www.myinmotion.com/inmotion-air-electric-scooter"
+    },
+    {
+      "label": "Inmotion Europe — Inmotion Air",
+      "url": "https://eu.inmotionworld.com/products/inmotion-air"
+    },
+    {
+      "label": "Mobiwisy — essai Inmotion Air",
+      "url": "https://mobiwisy.fr/essai/essai-inmotion-air-trottinette-electrique-prix-2022"
+    },
+    {
+      "label": "Manuel Inmotion C1 (device.report)",
+      "url": "https://device.report/m/947551af622d020be2ea1e1294fb6cf7562e260b227e942c9e4e2a0d43dfe6e8_optim.pdf"
+    },
+    {
+      "label": "Inmotion France — pneu 10\" Air / Air Pro / Climber",
+      "url": "https://www.inmotion-france.fr/fr/pieces-detachees/575-pneu-10-inmotion-air-air-pro-climber-3701522003223.html"
+    }
+  ],
+  "video": {
+    "id": "k-IdEVZc31A",
+    "title": "Inmotion Air E Scooter Test und Vergleich | Was kann der Chinese für 300€",
+    "channel": "AUT Alles über Technik",
+    "uploadDate": "2026-03-30"
+  }
+}

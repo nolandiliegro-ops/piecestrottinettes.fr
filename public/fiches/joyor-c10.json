@@ -1,0 +1,133 @@
+{
+  "displayName": "Joyor C10",
+  "metaTitle": "Joyor C10 : fiche technique, batterie et entretien",
+  "metaDescription": "Joyor C10 : moteur 500 W, batterie amovible 48 V 10,4 Ah (499 Wh), roues de 10 pouces, deux freins à disque, 30 à 40 km annoncés. Fiche et FAQ.",
+  "intro": [
+    "La Joyor C10 est la trottinette urbaine monomoteur de Joyor, que plusieurs testeurs présentent comme la petite sœur de la S10-S-Z bimoteur. Son point original : la batterie se retire du plancher, ce qui permet de la recharger à l'intérieur sans monter la trottinette dans les escaliers. Boulanger et Cdiscount l'affichent à 499 €.",
+    "Elle a un moteur arrière de 500 W, une batterie de 48 V 10,4 Ah (environ 499 Wh), des roues gonflables de 10 pouces et un frein à disque sur chaque roue. Joyor annonce 30 à 40 km d'autonomie et la livre limitée à 25 km/h pour l'Europe. Son poids change selon la fiche : 19,5 ou 20,7 kg."
+  ],
+  "specs": [
+    [
+      "Moteur",
+      "500 W nominaux ; 800 W en pointe selon joyorscooter.com, 1 100 W en crête selon un test vidéo"
+    ],
+    [
+      "Vitesse",
+      "25 km/h (version Europe)"
+    ],
+    [
+      "Autonomie annoncée",
+      "30 à 40 km"
+    ],
+    [
+      "Autonomie constatée",
+      "environ 35 km pour un testeur lourd avec des côtes (test vidéo) ; 25 à 30 km estimés par scooterrank.com"
+    ],
+    [
+      "Batterie",
+      "48 V, 10,4 Ah, environ 499 Wh, amovible"
+    ],
+    [
+      "Poids",
+      "19,5 kg selon Cdiscount et Joyor Europe ; 20,7 kg selon joyor.com"
+    ],
+    [
+      "Charge max",
+      "120 kg"
+    ],
+    [
+      "Roues",
+      "10 pouces, gonflables à chambre à air (selon RAFTOR)"
+    ],
+    [
+      "Freins",
+      "Disque avant + disque arrière"
+    ],
+    [
+      "Suspension",
+      "Avant selon une page Joyor, avant et arrière selon une autre"
+    ],
+    [
+      "Étanchéité",
+      "IP54 selon joyor.com, IPX4 sur une autre page Joyor"
+    ],
+    [
+      "Temps de charge",
+      "5 à 5,5 h selon Joyor, 6 h selon Boulanger"
+    ]
+  ],
+  "pros": [
+    "Batterie amovible qui se sort du plancher en quelques secondes (test vidéo YouTube).",
+    "Un frein à disque sur chaque roue et des roues gonflables de 10 pouces (Joyor).",
+    "Monte les côtes sans difficulté selon deux testeurs YouTube."
+  ],
+  "cons": [
+    "Batterie de 499 Wh : un testeur lourd a fait environ 35 km avec des côtes.",
+    "RAFTOR la trouve sans caractère et juge son freinage « pas extraordinaire ».",
+    "Fiches contradictoires sur le poids, l'étanchéité et la suspension : vérifie la version que tu achètes."
+  ],
+  "parts": [],
+  "care": [
+    "La batterie se retire : l'hiver, range-la au sec et à température ambiante plutôt que dans un garage froid.",
+    "Avec deux freins à disque, contrôle l'épaisseur des quatre plaquettes à chaque changement de saison.",
+    "Gonfle les pneus à la pression inscrite sur leur flanc : une chambre sous-gonflée pince et crève plus vite."
+  ],
+  "price": {
+    "text": "Prix affiché en France : 499 € chez Boulanger et Cdiscount ; 449 € sur la boutique Joyor.",
+    "source": "boulanger.com, cdiscount.com, joyor.com"
+  },
+  "faq": [
+    {
+      "q": "Quelle taille de pneu pour la Joyor C10 ?",
+      "a": "Des pneus gonflables de 10 pouces à chambre à air. Joyor ne publie pas la cote complète : lis-la sur le flanc de ton pneu avant de commander un pneu ou une chambre."
+    },
+    {
+      "q": "La batterie de la Joyor C10 est-elle amovible ?",
+      "a": "Oui. Elle se sort du plancher, ce qui permet de la charger chez toi en laissant la trottinette en bas. C'est une batterie 48 V 10,4 Ah."
+    },
+    {
+      "q": "Quelle autonomie réelle pour la Joyor C10 ?",
+      "a": "Joyor annonce 30 à 40 km. Un testeur YouTube au gabarit costaud a fait environ 35 km avec des montées ; scooterrank.com estime 25 à 30 km en ville."
+    },
+    {
+      "q": "Combien de temps pour charger la Joyor C10 ?",
+      "a": "Entre 5 et 6 heures selon Joyor et Boulanger."
+    },
+    {
+      "q": "Quelle différence entre la Joyor C10 et la S10-S-Z ?",
+      "a": "La C10 a un seul moteur de 500 W et une batterie 48 V de 10,4 Ah. La S10-S-Z a deux moteurs de 1 000 W, une batterie 60 V 18 Ah et pèse environ 27 kg."
+    }
+  ],
+  "sources": [
+    {
+      "label": "Joyor — C10",
+      "url": "https://joyor.com/products/joyor-c10-electric-scooter"
+    },
+    {
+      "label": "Joyor Europe — C10",
+      "url": "https://eu.joyorescooter.com/products/eujoyor-c10"
+    },
+    {
+      "label": "Joyorscooter — C10",
+      "url": "https://joyorscooter.com/products/joyor-c10-electric-scooter"
+    },
+    {
+      "label": "Boulanger — Joyor C10",
+      "url": "https://www.boulanger.com/ref/9000921741"
+    },
+    {
+      "label": "Cdiscount — Joyor C10",
+      "url": "https://www.cdiscount.com/le-sport/mobilite-urbaine/trottinette-lectrique-joyor/f-1214801-aablj49022.html"
+    },
+    {
+      "label": "Scooterrank — Joyor C10",
+      "url": "https://scooterrank.com/scooters/joyor-c10"
+    }
+  ],
+  "video": {
+    "id": "KbXEFW5ZeNE",
+    "title": "My opinion on the Joyor C10 !! Good or bad electric scooter?! Complete review!",
+    "channel": "RAFTOR EN",
+    "uploadDate": "2024-08-05"
+  }
+}

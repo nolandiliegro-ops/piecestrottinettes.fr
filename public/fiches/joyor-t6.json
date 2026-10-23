@@ -1,0 +1,132 @@
+{
+  "displayName": "Joyor T6",
+  "metaTitle": "Joyor T6 : fiche technique, avis et pièces",
+  "metaDescription": "Joyor T6 : moteur 600 W, batterie 48 V 18 Ah (864 Wh), freins à disque à câble, double suspension, 25,6 kg, 70 km annoncés. Fiche et pièces.",
+  "intro": [
+    "La Joyor T6 est la monomoteur de la série T, modèle 2025 selon Joyor Prime et Pixmania. Un testeur la décrit comme plus urbaine que tout-terrain et renvoie vers la T10 bimoteur pour les chemins. Joyor Prime l'affiche à 589 €, Pixmania l'a proposée à 531 €.",
+    "Elle a un moteur arrière de 600 W et une batterie de 48 V 18 Ah (864 Wh) pour 70 km annoncés. Ses roues de 10 pouces en aluminium sont montées à chambre à air, avec un disque de 120 mm commandé par câble sur chaque roue. Elle pèse 25,6 kg et se recharge en 8 à 10 h. Livrée en France, elle est limitée à 25 km/h."
+  ],
+  "specs": [
+    [
+      "Moteur",
+      "600 W nominaux (crête non publiée)"
+    ],
+    [
+      "Vitesse",
+      "25 km/h"
+    ],
+    [
+      "Autonomie annoncée",
+      "jusqu'à 70 km (40 à 70 km chez Darty)"
+    ],
+    [
+      "Batterie",
+      "48 V, 18 Ah, 864 Wh"
+    ],
+    [
+      "Poids",
+      "25,6 kg"
+    ],
+    [
+      "Charge max",
+      "120 kg"
+    ],
+    [
+      "Roues",
+      "10 pouces, jantes aluminium, chambre à air (test vidéo)"
+    ],
+    [
+      "Freins",
+      "Disques mécaniques à câble avant et arrière, 120 mm selon un test vidéo ; hydrauliques selon Boulanger"
+    ],
+    [
+      "Suspension",
+      "Ressort et amortisseur hydraulique, avant et arrière"
+    ],
+    [
+      "Étanchéité",
+      "IP54"
+    ],
+    [
+      "Temps de charge",
+      "8 à 10 h (Darty)"
+    ]
+  ],
+  "pros": [
+    "Suspensions très souples et confortables selon plusieurs testeurs YouTube.",
+    "Bon freinage depuis 25 km/h avec un pilote de 80 kg (test vidéo YouTube).",
+    "Environ 4 kg de moins que la T10 (25,6 contre 29,6 kg)."
+  ],
+  "cons": [
+    "Freins à câble, là où la T10 a des freins hydrauliques.",
+    "Mieux adaptée à la route qu'aux chemins de terre selon un testeur YouTube.",
+    "8 à 10 h de recharge (Darty).",
+    "Aucune autonomie mesurée publiée : les 70 km sont une annonce."
+  ],
+  "parts": [
+    {
+      "label": "Chargeur",
+      "size": "48 V (54,6 V en fin de charge), prise GX16 3 broches",
+      "count": 2,
+      "to": "/piece/chargeur-48v-546v-2a-connecteur-gx16-3p",
+      "cta": "Chargeurs 48 V"
+    }
+  ],
+  "care": [
+    "Freins à câble : retends le câble dès que le levier s'approche de la poignée, et change les plaquettes avant d'arriver au métal.",
+    "Des suspensions aussi souples travaillent beaucoup : contrôle chaque mois le serrage de leurs vis de fixation.",
+    "Garde une chambre de rechange à la bonne cote : relève-la sur le flanc de ton pneu avant d'en acheter une."
+  ],
+  "price": {
+    "text": "589 € chez Joyor Prime ; 531 € chez Pixmania au moment de la recherche.",
+    "source": "joyorprime.com, pixmania.com"
+  },
+  "faq": [
+    {
+      "q": "Quelle taille de pneu pour la Joyor T6 ?",
+      "a": "Des pneus de 10 pouces à chambre à air. Un revendeur les donne en 10x3 (80/65-6) avec le 10x2,5 en équivalence, alors que Joyor écrit seulement « 10 pouces ». Lis la cote sur le flanc de ton pneu avant de commander."
+    },
+    {
+      "q": "La Joyor T6 a-t-elle le droit de rouler sur la route ?",
+      "a": "Oui, dans sa configuration française bridée à 25 km/h et sans siège. Si elle était modifiée pour dépasser cette vitesse, elle sortirait du cadre légal des trottinettes."
+    },
+    {
+      "q": "Quels freins sur la Joyor T6 ?",
+      "a": "Un disque de 120 mm à chaque roue, commandé par câble selon Joyor et un test vidéo. Boulanger parle de freins hydrauliques : regarde ce qui arrive à ton étrier."
+    },
+    {
+      "q": "Joyor T6 ou T10 ?",
+      "a": "La T6 suffit pour la ville : un moteur, 48 V, 25,6 kg. La T10 ajoute un second moteur, une batterie 60 V et des freins hydrauliques, pour 4 kg de plus."
+    },
+    {
+      "q": "Combien de temps pour charger la T6 ?",
+      "a": "8 à 10 heures selon la fiche Darty."
+    }
+  ],
+  "sources": [
+    {
+      "label": "Joyor Prime — T6",
+      "url": "https://joyorprime.com/fr/products/joyor-t6"
+    },
+    {
+      "label": "Joyorscooter — T6",
+      "url": "https://joyorscooter.com/collections/pro-riders/products/joyor-t6-electric-scooter"
+    },
+    {
+      "label": "Darty — Joyor T6",
+      "url": "https://www.darty.com/nav/achat/ref/MC353320619.html"
+    },
+    {
+      "label": "Boulanger — Joyor T6",
+      "url": "https://www.boulanger.com/ref/9000921748"
+    },
+    {
+      "label": "Pixmania — Joyor T6",
+      "url": "https://www.pixmania.com/fr/fr/trottinette-electrique-joyor-t6-pour-adulte-600-w-10-pouces-toutterrain-avec-batterie-48-v-18-ah-404549.html"
+    },
+    {
+      "label": "E-Watts — pneus Joyor T6",
+      "url": "https://e-watts.fr/categorie-produit/pieces-detachees-trottinette-electrique/pneu-trottinette-electrique/pneu-joyor-t6-t6e"
+    }
+  ]
+}

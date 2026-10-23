@@ -1,0 +1,135 @@
+{
+ "displayName": "Joyor S10-S-Z",
+ "metaTitle": "Joyor S10-S-Z : fiche technique, test et pièces",
+ "metaDescription": "Joyor S10-S-Z : 2 x 1 000 W, batterie 60 V 18 Ah, pneus 10x3, freins hydrauliques, 41,5 km mesurés par la Fnac. Fiche, entretien et pièces.",
+ "intro": [
+  "La Joyor S10-S-Z est la bimoteur 60 V de la série S de Joyor : un moteur de 1 000 W dans chaque roue, une batterie de 18 Ah et des suspensions à l'avant et à l'arrière. Joyor l'affiche autour de 669 € ; la Fnac donnait 799 € comme prix de référence avant promotion.",
+  "Elle pèse environ 27 kg selon Joyor et le test labo de L'Éclaireur Fnac, qui a mesuré 41,5 km d'autonomie et 12 h 05 de recharge. Les pneus sont des 10x3 gonflables et Joyor annonce des freins à disque hydrauliques. En Europe, elle sort d'usine limitée à 25 km/h ; la Fnac a relevé 23,8 km/h."
+ ],
+ "specs": [
+  [
+   "Moteur",
+   "2 x 1 000 W nominaux ; 3 000 W en crête selon deux tests vidéo"
+  ],
+  [
+   "Vitesse",
+   "25 km/h en version Europe (23,8 km/h mesurés par la Fnac)"
+  ],
+  [
+   "Autonomie annoncée",
+   "70 à 85 km selon les pages Joyor"
+  ],
+  [
+   "Autonomie mesurée",
+   "41,5 km (L'Éclaireur Fnac)"
+  ],
+  [
+   "Batterie",
+   "60 V, 18 Ah, 1 080 Wh"
+  ],
+  [
+   "Poids",
+   "environ 27 kg (Joyor, L'Éclaireur Fnac)"
+  ],
+  [
+   "Charge max",
+   "120 kg"
+  ],
+  [
+   "Roues",
+   "10 pouces, 10x3 gonflables"
+  ],
+  [
+   "Freins",
+   "Disques hydrauliques avant et arrière selon Joyor (« disque » seulement sur certaines fiches revendeurs)"
+  ],
+  [
+   "Suspension",
+   "Avant et arrière"
+  ],
+  [
+   "Temps de charge",
+   "10 à 12 h annoncées, 12 h 05 mesurées (L'Éclaireur Fnac)"
+  ]
+ ],
+ "pros": [
+  "Deux moteurs de 1 000 W et une batterie 60 V à moins de 700 € sur la boutique Joyor.",
+  "Freins hydrauliques à l'avant et à l'arrière (Joyor), jugés impressionnants par un testeur YouTube.",
+  "Suspension jugée très efficace sur chemin par un testeur YouTube."
+ ],
+ "cons": [
+  "41,5 km mesurés, loin des 70 km et plus annoncés (L'Éclaireur Fnac).",
+  "Recharge très longue : 12 h 05 avec le chargeur fourni (L'Éclaireur Fnac).",
+  "27 kg, un poids que la Fnac juge élevé pour la porter.",
+  "Suspensions un peu raides selon un testeur YouTube."
+ ],
+ "parts": [
+  {
+   "label": "Pneu",
+   "size": "80/65-6 (10x3)",
+   "count": 11,
+   "to": "/piece/pneu-80-65-6-10x3-ewheel",
+   "cta": "Pneus 10x3"
+  },
+  {
+   "label": "Chargeur",
+   "size": "60 V (67,2 V en fin de charge), prise GX16 3 broches",
+   "count": 2,
+   "to": "/piece/chargeur-60v-672v-2a-connecteur-gx16-3p",
+   "cta": "Chargeurs 60 V"
+  }
+ ],
+ "care": [
+  "Freins hydrauliques : si le levier devient spongieux, fais purger le circuit, il n'y a pas de câble à retendre.",
+  "Avec un moteur dans chaque roue, contrôle le serrage des axes et l'état des câbles moteur après les sorties sur chemin.",
+  "Un chargeur 60 V plus rapide existe pour raccourcir les 12 h de charge : vérifie qu'il a la même prise que celui d'origine."
+ ],
+ "price": {
+  "text": "Prix affiché : environ 669 € sur la boutique Joyor ; 699,99 € en promotion à la Fnac, pour 799 € de référence.",
+  "source": "joyorscooter.com, fnac.com"
+ },
+ "faq": [
+  {
+   "q": "Quelle taille de pneu pour la Joyor S10-S-Z ?",
+   "a": "Des pneus gonflables 10x3, aussi notés 80/65-6, sur jante de 6 pouces. Regarde sur ta roue si elle est montée avec ou sans chambre à air avant de commander."
+  },
+  {
+   "q": "Quelle autonomie réelle pour la S10-S-Z ?",
+   "a": "Le labo de L'Éclaireur Fnac a mesuré 41,5 km, presque deux fois moins que les annonces de Joyor. Compte large si tu roules souvent avec les deux moteurs."
+  },
+  {
+   "q": "Combien de temps pour recharger la S10-S-Z ?",
+   "a": "Un peu plus de 12 heures avec le chargeur fourni : 12 h 05 mesurées par la Fnac."
+  },
+  {
+   "q": "La S10-S-Z a-t-elle le droit de rouler en ville ?",
+   "a": "Oui, dans sa configuration d'usine européenne, limitée à 25 km/h. Une S10-S-Z modifiée pour aller plus vite ne fait plus partie des trottinettes admises sur la voie publique : amende, immobilisation et refus d'assurance en cas d'accident."
+  },
+  {
+   "q": "Quelle différence entre la Joyor S10-S-Z et la T10 ?",
+   "a": "Toutes deux ont deux moteurs de 1 000 W et une batterie 60 V 18 Ah. La T10, présentée par un testeur comme sa sœur, reçoit de nouvelles suspensions à ressort et amortisseur hydraulique."
+  }
+ ],
+ "sources": [
+  {
+   "label": "Joyor — S10-S-Z",
+   "url": "https://joyorscooter.com/fr/pages/joyor-s10-s-z-electric-scooter"
+  },
+  {
+   "label": "Joyor Officiel — S10-S-Z",
+   "url": "https://joyorofficial.com/fr-eu/products/joyor-s10s-z-electric-scooter?variant=42403460808740"
+  },
+  {
+   "label": "L'Éclaireur Fnac — test labo de la Joyor S10-S-Z",
+   "url": "https://leclaireur.fnac.com/test/646846-test-labo-de-la-joyor-s10-s-z-une-trottinette-puissante-qui-manque-un-peu-dendurance/"
+  },
+  {
+   "label": "Fnac — Joyor S10-S-Z 2000 W",
+   "url": "https://www.fnac.com/Trottinette-electrique-Joyor-S10-S-Z-2000-W-Noir/a21388240/w-4"
+  },
+  {
+   "label": "Joyor France — S10-S-Z",
+   "url": "https://www.joyor-fr.com/products/joyor-s10s-z-trottinette-electrique"
+  }
+ ]
+}

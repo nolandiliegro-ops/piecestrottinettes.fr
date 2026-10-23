@@ -1,0 +1,128 @@
+{
+ "displayName": "Joyor Y10",
+ "metaTitle": "Joyor Y10 : fiche technique, autonomie et pièces",
+ "metaDescription": "Joyor Y10 : moteur 500 W (810 W max), batterie 48 V 26 Ah (1 248 Wh), 100 km annoncés, deux freins à disque, double suspension. Fiche et pièces.",
+ "intro": [
+  "La Joyor Y10 est le modèle grande autonomie de la série Y. Elle existe en version DGT, homologuée en Espagne, où plusieurs testeurs l'ont essayée. Son argument tient à sa batterie de 26 Ah, la même capacité que la Y8-S, pour une autonomie annoncée jusqu'à 100 km. Idealo a relevé une offre à 549 €.",
+  "Elle a un moteur de 500 W nominaux (810 W au maximum), une batterie de 48 V 26 Ah, soit 1 248 Wh, des roues gonflables de 10 pouces, un disque sur chaque roue et une suspension à ressorts à l'avant et à l'arrière. Joyor la donne à 26 kg. La recharge annoncée va de 5 à 8 h chez un revendeur à 13 à 14 h chez Joyor."
+ ],
+ "specs": [
+  [
+   "Moteur",
+   "500 W nominaux, 810 W max (Joyor, tests vidéo espagnols)"
+  ],
+  [
+   "Vitesse",
+   "25 km/h (version DGT)"
+  ],
+  [
+   "Autonomie annoncée",
+   "90 à 100 km"
+  ],
+  [
+   "Batterie",
+   "48 V, 26 Ah, 1 248 Wh"
+  ],
+  [
+   "Poids",
+   "26 kg selon Joyor ; 23 kg selon Idealo et Mobilboard"
+  ],
+  [
+   "Charge max",
+   "120 kg"
+  ],
+  [
+   "Roues",
+   "10 pouces, gonflables"
+  ],
+  [
+   "Freins",
+   "Disque avant + disque arrière"
+  ],
+  [
+   "Suspension",
+   "Ressorts avant et arrière"
+  ],
+  [
+   "Étanchéité",
+   "IP54 selon Joyor (version DGT)"
+  ],
+  [
+   "Temps de charge",
+   "13 à 14 h selon Joyor, 5 à 8 h selon Mobilboard"
+  ]
+ ],
+ "pros": [
+  "Batterie de 1 248 Wh pour espacer les recharges (Joyor).",
+  "Suspension très souple qui amortit bien sur chemin selon un testeur espagnol.",
+  "Freins avant et arrière jugés efficaces lors d'un test vidéo espagnol."
+ ],
+ "cons": [
+  "Suspension bruyante sur les chemins selon le même testeur.",
+  "Le moteur peine un peu dans les trous et les passages cassants (test vidéo espagnol).",
+  "Jusqu'à 13 à 14 h de recharge selon Joyor.",
+  "Aucune mesure d'autonomie indépendante publiée."
+ ],
+ "parts": [
+  {
+   "label": "Chargeur",
+   "size": "48 V, prise jack DC 5,5 x 2,1 mm",
+   "count": 1,
+   "to": "/piece/pack-chargeur-48v-adaptateur-dc5-5x2-1",
+   "cta": "Chargeur 48 V"
+  }
+ ],
+ "care": [
+  "Branche et débranche le chargeur dans l'axe de la prise, sans tirer sur le câble : un jack tordu ne charge plus.",
+  "Si les ressorts de suspension grincent, un peu de graisse sur leurs axes après un nettoyage les fait taire.",
+  "Une grosse batterie aime les charges partielles : inutile de la vider jusqu'à la dernière barre."
+ ],
+ "price": {
+  "text": "Offre relevée à 549 € sur Idealo ; les prix varient beaucoup d'un vendeur à l'autre.",
+  "source": "idealo.fr"
+ },
+ "faq": [
+  {
+   "q": "Quelle taille de pneu pour la Joyor Y10 ?",
+   "a": "Des pneus gonflables de 10 pouces. Joyor ne publie pas la largeur exacte : lis la cote sur le flanc avant de commander un pneu ou une chambre."
+  },
+  {
+   "q": "La Joyor Y10 fait-elle vraiment 100 km ?",
+   "a": "C'est l'annonce de Joyor. Aucun test indépendant publié ne la confirme ; ce chiffre suppose un pilote léger, du plat et le mode le plus doux."
+  },
+  {
+   "q": "Combien de temps pour charger la Joyor Y10 ?",
+   "a": "13 à 14 heures selon Joyor ; le revendeur Mobilboard annonce 5 à 8 heures."
+  },
+  {
+   "q": "Quelle différence entre la Joyor Y10 et la Y8-S ?",
+   "a": "Elles partagent un moteur de 500 W et une batterie 48 V 26 Ah. Joyor ne publie pas de comparatif détaillé : vérifie le nom inscrit sur ta trottinette avant de commander une pièce."
+  },
+  {
+   "q": "Quels freins sur la Y10 ?",
+   "a": "Un frein à disque à l'avant et un à l'arrière."
+  }
+ ],
+ "sources": [
+  {
+   "label": "Joyorscooter — Y10 DGT",
+   "url": "https://joyorscooter.com/products/joyor-y10-dgt-electric-scooter"
+  },
+  {
+   "label": "Joyorscooter — page Y10",
+   "url": "https://joyorscooter.com/pages/joyor-y10-electric-scooter"
+  },
+  {
+   "label": "Idealo — Joyor Y10",
+   "url": "https://www.idealo.fr/prix/202962851/joyor-y10-black.html"
+  },
+  {
+   "label": "Mobilboard — Joyor Y10",
+   "url": "https://www.mobilboard.com/fr/carnac/vente-de-vehicules/mobilboard-carnac-vente-trottinette-electrique-joyor-y10"
+  },
+  {
+   "label": "Test vidéo Joyor Y10 (espagnol)",
+   "url": "https://www.youtube.com/watch?v=m0YC3GWJ0-g"
+  }
+ ]
+}

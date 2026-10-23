@@ -1,0 +1,125 @@
+{
+  "displayName": "Joyor F5S+",
+  "metaTitle": "Joyor F5S+ : fiche technique et entretien",
+  "metaDescription": "Joyor F5S+ : moteur 500 W (650 W max), batterie 48 V 13 Ah, roues de 8 pouces, avant gonflable et arrière plein, frein à tambour. Fiche et FAQ.",
+  "intro": [
+    "La Joyor F5S+ est une petite trottinette de la série F de Joyor, présentée dès 2018 par un revendeur roumain sous le nom d'Allegria Confort Plus. Elle se distingue de la F5, annoncée en 36 V 18 Ah, par sa batterie de 48 V. C'est un modèle compact, pensé pour les trajets courts et le transport en voiture ou en train.",
+    "Elle a un moteur de 500 W (650 W au maximum), une batterie de 48 V 13 Ah, soit environ 624 Wh, et des roues de 8 pouces : gonflable à l'avant, pleine à l'arrière. Le freinage mécanique repose sur un tambour arrière. Elle pèse 15,5 à 16 kg selon les fiches et Joyor annonce 40 à 50 km."
+  ],
+  "specs": [
+    [
+      "Moteur",
+      "500 W nominaux, 650 W max selon Joyor et Bescooter ; un test vidéo espagnol parle de pics à 1 200 W"
+    ],
+    [
+      "Vitesse",
+      "25 km/h selon le manuel (version limitée)"
+    ],
+    [
+      "Autonomie annoncée",
+      "40 à 50 km"
+    ],
+    [
+      "Autonomie constatée",
+      "environ 49 km à allure modérée (selon boarddeckhq.com)"
+    ],
+    [
+      "Batterie",
+      "48 V, 13 Ah, environ 624 Wh"
+    ],
+    [
+      "Poids",
+      "15,5 à 16 kg selon les fiches"
+    ],
+    [
+      "Charge max",
+      "120 kg selon le manuel (118 kg sur une fiche revendeur)"
+    ],
+    [
+      "Roues",
+      "8 pouces : gonflable à l'avant, pleine à l'arrière"
+    ],
+    [
+      "Freins",
+      "Tambour arrière (manuel Joyor)"
+    ],
+    [
+      "Suspension",
+      "Avant et arrière"
+    ],
+    [
+      "Temps de charge",
+      "6 à 7 h"
+    ]
+  ],
+  "pros": [
+    "Autour de 16 kg, facile à porter une fois pliée.",
+    "Suspension à l'avant et à l'arrière malgré le petit format (Electrotraveller, boarddeckhq).",
+    "Roue arrière pleine : pas de crevaison possible à l'arrière."
+  ],
+  "cons": [
+    "Petites roues de 8 pouces, moins à l'aise sur les pavés et les nids-de-poule qu'une 10 pouces.",
+    "Un seul frein mécanique, le tambour arrière.",
+    "Modèle ancien : peu de tests récents et des fiches qui divergent sur le poids et la vitesse."
+  ],
+  "parts": [],
+  "care": [
+    "Le tambour arrière se règle avec la molette prévue à cet effet : reprends le jeu dès que le levier devient mou.",
+    "Vérifie chaque semaine la pression du pneu avant : c'est le seul gonflable, il encaisse tous les chocs.",
+    "Si tu ne roules pas pendant un mois, recharge quand même la batterie pour qu'elle ne descende pas à zéro."
+  ],
+  "price": {
+    "text": "Prix affichés : 349 € sur la boutique Joyor, 499 € chez le revendeur français Bescooter.",
+    "source": "joyorscooter.com, bescooter.com"
+  },
+  "faq": [
+    {
+      "q": "Quelle taille de pneu pour la Joyor F5S+ ?",
+      "a": "Des roues de 8 pouces : un pneu gonflable à l'avant et un pneu plein à l'arrière. La cote exacte n'est pas publiée : relève-la sur le flanc avant de commander."
+    },
+    {
+      "q": "La Joyor F5S+ a-t-elle un frein à disque ?",
+      "a": "Non. Elle freine avec un tambour à l'arrière, qu'une molette permet de régler soi-même."
+    },
+    {
+      "q": "Combien de temps pour charger la F5S+ ?",
+      "a": "6 à 7 heures selon les fiches techniques."
+    },
+    {
+      "q": "Quelle différence entre la Joyor F5 et la F5S+ ?",
+      "a": "La F5 est annoncée avec une batterie de 36 V 18 Ah, la F5S+ avec une batterie de 48 V 13 Ah. Regarde l'étiquette de ton chargeur pour savoir laquelle tu as."
+    },
+    {
+      "q": "Quelle autonomie réelle pour la F5S+ ?",
+      "a": "Joyor annonce 40 à 50 km. Le site boarddeckhq dit avoir roulé environ 49 km à allure modérée, sans détailler son parcours."
+    }
+  ],
+  "sources": [
+    {
+      "label": "Joyor — série F",
+      "url": "https://joyorscooter.com/collections/f-series"
+    },
+    {
+      "label": "Bescooter — Joyor F5S+",
+      "url": "https://bescooter.com/fr/trottinettes/joyor-f5s.html"
+    },
+    {
+      "label": "Boarddeckhq — Joyor F5S+",
+      "url": "https://boarddeckhq.com/joyor-f5s/"
+    },
+    {
+      "label": "Electrotraveller — Joyor F5S Plus",
+      "url": "https://electrotraveller.com/shop/electric-scooters/joyor-f5s-plus/"
+    },
+    {
+      "label": "Manuel Joyor série F (Manualslib)",
+      "url": "https://www.manualslib.com/manual/3121764/Joyor-F-Series.html"
+    }
+  ],
+  "video": {
+    "id": "UH4rn-gQU5c",
+    "title": "Joyor Allegria Confort Plus (F5S+) - Review",
+    "channel": "namstare",
+    "uploadDate": "2019-02-22"
+  }
+}

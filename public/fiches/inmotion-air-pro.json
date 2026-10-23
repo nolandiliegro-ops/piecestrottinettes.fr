@@ -1,0 +1,125 @@
+{
+ "displayName": "Inmotion Air Pro",
+ "metaTitle": "Inmotion Air Pro : fiche technique, autonomie et pièces",
+ "metaDescription": "Inmotion Air Pro (C1 Pro) : 400 à 500 W (750 W en pointe), batterie 36 V 12 Ah, 45 km annoncés, pneu arrière plein. Fiche, entretien et pièces.",
+ "intro": [
+  "L'Inmotion Air Pro, aussi appelée C1 Pro, est la version renforcée de l'Inmotion Air. Même silhouette compacte et même colonne aux câbles intégrés, mais une batterie plus grosse et un pneu arrière plein rempli de mousse PU qui ne crève pas. L'Air simple, avec ses deux pneus gonflables, a sa propre fiche.",
+  "Batterie de 36 V et 12 Ah (438 Wh) pour 45 km annoncés, moteur arrière de 750 W en pointe, 17,7 kg sur la balance et 120 kg de charge maximale. Elle freine avec un tambour à l'avant et un frein électronique à l'arrière, sans suspension. La recharge complète demande environ 8 heures."
+ ],
+ "specs": [
+  [
+   "Moteur",
+   "400 W nominaux selon Inmotion (site mondial), 500 W selon Inmotion France ; 750 W en pointe"
+  ],
+  [
+   "Vitesse",
+   "25 km/h (version européenne)"
+  ],
+  [
+   "Autonomie annoncée",
+   "jusqu'à 45 km"
+  ],
+  [
+   "Batterie",
+   "36 V, 12 Ah, 438 Wh (432 Wh dans un manuel)"
+  ],
+  [
+   "Poids",
+   "17,7 kg"
+  ],
+  [
+   "Charge max",
+   "120 kg"
+  ],
+  [
+   "Roues",
+   "10 pouces : avant gonflable, arrière plein rempli de PU"
+  ],
+  [
+   "Freins",
+   "Tambour avant + électronique arrière (EBS)"
+  ],
+  [
+   "Suspension",
+   "Aucune"
+  ],
+  [
+   "Étanchéité",
+   "IP55 pour la trottinette (selon un test vidéo The Hai Life)"
+  ],
+  [
+   "Temps de charge",
+   "8 h selon Inmotion France, 8,5 h selon Inmotion Store"
+  ]
+ ],
+ "pros": [
+  "Pneu arrière plein rempli de PU : plus de crevaison à l'arrière, avec un confort jugé proche d'un pneu gonflé (test vidéo Electric Dummies).",
+  "438 Wh pour 17,7 kg : plus d'énergie que l'Air pour moins de 2 kg en plus.",
+  "Tambour avant sans entretien et qui ne se voile pas en cas de choc (test vidéo Electric Dummies).",
+  "Montées franches en mode Sport (test vidéo The Hai Life)."
+ ],
+ "cons": [
+  "Pas de suspension : chemins et pavés secouent, les pneus seuls amortissent (test vidéo The Hai Life).",
+  "Guidon étroit, peu de place pour un support de téléphone (test vidéo The Hai Life).",
+  "Feu arrière jugé trop faible la nuit (test vidéo The Hai Life).",
+  "Recharge longue, environ 8 heures."
+ ],
+ "parts": [
+  {
+   "label": "Chargeur",
+   "size": "36 V (sortie 42 V), prise RCA",
+   "count": 2,
+   "to": "/piece/pack-chargeur-36v-42v-2a-connecteur-rca",
+   "cta": "Chargeurs 36 V"
+  }
+ ],
+ "care": [
+  "Le pneu arrière plein ne se gonfle pas, mais l'avant oui : contrôle sa pression chaque mois, c'est lui qui prend les chocs.",
+  "Quand le levier de frein s'allonge, resserre la molette du câble du tambour avant plutôt que de compter sur le frein moteur.",
+  "Sur un pneu plein, regarde l'usure de la bande de roulement : une fois lisse, il glisse sur le mouillé et se change en entier."
+ ],
+ "faq": [
+  {
+   "q": "Quelle taille de pneu pour l'Inmotion Air Pro ?",
+   "a": "Des roues de 10 pouces : pneu gonflable à chambre à air à l'avant, pneu plein rempli de PU à l'arrière. Inmotion ne publie pas la largeur exacte : lis la cote sur le flanc de ton pneu avant de commander."
+  },
+  {
+   "q": "Quelle est la puissance de l'Inmotion Air Pro ?",
+   "a": "750 W en pointe. Pour la puissance nominale, le site mondial d'Inmotion indique 400 W et Inmotion France 500 W."
+  },
+  {
+   "q": "Combien de temps pour recharger l'Inmotion Air Pro ?",
+   "a": "Compte environ 8 heures pour une charge complète, 8 h 30 selon Inmotion Store."
+  },
+  {
+   "q": "C1 Pro, Air Pro, C1 Air Pro : c'est la même trottinette ?",
+   "a": "Oui, Inmotion utilise ces noms pour le même modèle. Une version 2025 ajoute des clignotants ; vérifie l'étiquette sous le plateau avant de commander une pièce."
+  },
+  {
+   "q": "Quelle différence entre l'Inmotion Air Pro et l'Air ?",
+   "a": "L'Air Pro a une batterie de 438 Wh contre 280 Wh, 45 km annoncés contre 35, un pneu arrière plein et pèse 17,7 kg contre 15,8 kg."
+  }
+ ],
+ "sources": [
+  {
+   "label": "Inmotion France — Inmotion Air Pro",
+   "url": "https://www.inmotion-france.fr/fr/trottinette-electrique-inmotion-air-pro"
+  },
+  {
+   "label": "Inmotion Store — Inmotion Air Pro",
+   "url": "https://inmotion-store.com/fr/produit/inmotion-air-pro/"
+  },
+  {
+   "label": "Inmotion — Air Pro",
+   "url": "https://www.myinmotion.com/inmotion-air-pro-electric-scooter"
+  },
+  {
+   "label": "Inmotion World — Air Pro",
+   "url": "https://inmotionworld.com/products/inmotion-air-pro-portable-folding-electric-scooter-for-adults"
+  },
+  {
+   "label": "Manuel Inmotion Air Pro (Darty)",
+   "url": "https://fc.darty.com/notices/8/9/5/3/8953f35788fed8dd1c31d9d40c38f05bd8494b63.pdf"
+  }
+ ]
+}

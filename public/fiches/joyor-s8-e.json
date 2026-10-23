@@ -1,0 +1,143 @@
+{
+  "displayName": "Joyor S8-E",
+  "metaTitle": "Joyor S8-E : fiche technique, homologation et pièces",
+  "metaDescription": "Joyor S8-E : moteur 800 W, batterie 48 V 26 Ah (1 248 Wh), selle, pneus 10x3, 28,2 kg, homologation cyclomoteur annoncée. Fiche et pièces.",
+  "intro": [
+    "La Joyor S8-E n'est pas une trottinette comme les autres de la série S : elle est vendue avec une selle et un certificat COC qui la présente comme un cyclomoteur L1e-B, prévu pour rouler à 45 km/h avec une plaque. Elle se distingue de la S8, à 600 W et 25 km/h, et de la S8-S, qui a deux moteurs.",
+    "Elle a un moteur arrière de 800 W, une batterie de 48 V 26 Ah (1 248 Wh), des pneus gonflables tout-chemin 10x3 et deux freins à disque. Elle pèse 28,2 kg selon Joyor et Boulanger, accepte 120 kg et se recharge en 10 à 13 h. Joyor annonce jusqu'à 80 km, Boulanger 60 km."
+  ],
+  "specs": [
+    [
+      "Moteur",
+      "800 W"
+    ],
+    [
+      "Vitesse",
+      "45 km/h (catégorie cyclomoteur L1e-B annoncée)"
+    ],
+    [
+      "Autonomie annoncée",
+      "jusqu'à 80 km selon Joyor, 60 km selon Boulanger"
+    ],
+    [
+      "Batterie",
+      "48 V, 26 Ah, 1 248 Wh"
+    ],
+    [
+      "Poids",
+      "28,2 kg"
+    ],
+    [
+      "Charge max",
+      "120 kg"
+    ],
+    [
+      "Roues",
+      "10 pouces, 10x3 tout-chemin à chambre à air"
+    ],
+    [
+      "Freins",
+      "Disques avant et arrière : mécaniques selon Joyor Prime, hydrauliques selon Boulanger et Joyor France"
+    ],
+    [
+      "Suspension",
+      "Avant et arrière, tige de selle suspendue"
+    ],
+    [
+      "Selle",
+      "Oui, amovible"
+    ],
+    [
+      "Étanchéité",
+      "IP54"
+    ],
+    [
+      "Temps de charge",
+      "10 à 13 h"
+    ]
+  ],
+  "pros": [
+    "Selle à ressorts amovible pour rouler assis ou debout (test vidéo YouTube).",
+    "Batterie de 1 248 Wh, la même capacité que les modèles longue distance de Joyor.",
+    "Accélération coupleuse pour une 48 V selon deux testeurs YouTube."
+  ],
+  "cons": [
+    "Immatriculée en L1e-B, elle impose plaque, assurance cyclomoteur, casque homologué et gants.",
+    "Immatriculation française à vérifier : Boulanger ne cite que l'Allemagne et « la plupart » des pays européens.",
+    "28,2 kg, lourde à porter une fois pliée.",
+    "Fiches contradictoires sur la nature des freins, mécaniques ou hydrauliques."
+  ],
+  "parts": [
+    {
+      "label": "Pneu",
+      "size": "80/65-6 (10x3)",
+      "count": 11,
+      "to": "/piece/pneu-80-65-6-10x3-ewheel",
+      "cta": "Pneus 10x3"
+    },
+    {
+      "label": "Chambre à air",
+      "size": "80/65-6 (10x3), valve droite ou coudée",
+      "count": 3,
+      "to": "/piece/chambre-a-air-80-65-6-10x3-valve-coudee-ewheel",
+      "cta": "Chambres à air 10x3"
+    }
+  ],
+  "care": [
+    "Retire la selle de temps en temps pour nettoyer et graisser sa tige : la poussière bloque la suspension.",
+    "À 45 km/h, une usure se paie cher : contrôle pneus et plaquettes plus souvent que sur une trottinette à 25 km/h.",
+    "Lance la charge le soir : avec 10 à 13 h annoncées, elle sera prête le matin."
+  ],
+  "price": {
+    "text": "659 € chez Joyor Prime, 675,98 € sur Joyor France, 729 € chez Boulanger.",
+    "source": "joyorprime.com, joyor-fr.com, boulanger.com"
+  },
+  "faq": [
+    {
+      "q": "La Joyor S8-E peut-elle rouler à 45 km/h sur la route ?",
+      "a": "Seulement si elle est immatriculée comme cyclomoteur L1e-B. Demande au vendeur le certificat de conformité complet et la confirmation qu'il permet la carte grise en France. Ensuite il te faut une assurance, un casque homologué, des gants et le permis AM si tu es né après 1988."
+    },
+    {
+      "q": "Quelle taille de pneu pour la Joyor S8-E ?",
+      "a": "Des pneus tout-chemin 10x3, aussi notés 80/65-6, avec chambre à air."
+    },
+    {
+      "q": "Quels freins sur la S8-E ?",
+      "a": "Deux freins à disque. Les fiches ne s'accordent pas : mécaniques chez Joyor Prime, hydrauliques chez Boulanger. Regarde si c'est une durite ou un câble qui arrive à l'étrier."
+    },
+    {
+      "q": "Quelle différence entre la Joyor S8-E et la S8 ?",
+      "a": "La S8 a un moteur de 600 W et reste une trottinette limitée à 25 km/h. La S8-E passe à 800 W, ajoute une selle et vise l'homologation cyclomoteur à 45 km/h."
+    },
+    {
+      "q": "Combien de temps pour charger la S8-E ?",
+      "a": "10 à 13 heures selon Joyor."
+    }
+  ],
+  "sources": [
+    {
+      "label": "Joyor — S8-E EEC",
+      "url": "https://joyor.com/products/joyor-s8-e-eec-electric-scooter"
+    },
+    {
+      "label": "Joyor France — S8E",
+      "url": "https://www.joyor-fr.com/products/joyor-s8e-trottinette-electrique"
+    },
+    {
+      "label": "Joyor Prime — S8E",
+      "url": "https://joyorprime.com/fr-eu/products/joyor-s8e"
+    },
+    {
+      "label": "Boulanger — Joyor S8-E",
+      "url": "https://www.boulanger.com/ref/9000921747"
+    },
+    {
+      "label": "Joyor — S8E 800 W (pneus 10x3)",
+      "url": "https://www.joyor-escooter.com/products/joyor-s8e-electric-scooter-800w-motor-80km-range-foldable-design-eu-certified"
+    },
+    {
+      "label": "Sécurité routière — dépliant cyclomoteurs",
+      "url": "https://www.securite-routiere.gouv.fr/sites/default/files/2026-02/dsr_depliant_scooter_bd.pdf"
+    }
+  ]
+}

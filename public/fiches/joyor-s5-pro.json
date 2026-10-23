@@ -1,0 +1,142 @@
+{
+ "displayName": "Joyor S5 Pro",
+ "metaTitle": "Joyor S5 Pro : fiche technique, autonomie et pièces",
+ "metaDescription": "Joyor S5 Pro : 500 W, batterie 48 V 26 Ah (1 248 Wh), jusqu'à 90 km annoncés, pneus 10x3, deux freins à disque, 25,7 kg. Fiche et pièces.",
+ "intro": [
+  "La Joyor S5 Pro est la version longue distance de la S5 : même cadre, même moteur, mais une batterie deux fois plus grosse logée dans un plancher plus épais. Joyor la vend surtout en version ABE, homologuée en Allemagne et limitée à 20 km/h. Boulanger l'affiche à 609 €.",
+  "Son moteur arrière de 500 W puise dans une batterie de 48 V 26 Ah, soit 1 248 Wh, pour 90 km annoncés. Un testeur allemand a mesuré 67,5 km en fin d'automne. Elle roule sur des pneus gonflables 10x3, freine avec un disque par roue et pèse 25,7 kg. La recharge prend 12 à 14 h selon Joyor."
+ ],
+ "specs": [
+  [
+   "Moteur",
+   "500 W nominaux ; 1 200 W en pointe selon un test vidéo allemand"
+  ],
+  [
+   "Vitesse",
+   "20 km/h en version ABE (25 km/h sur certaines annonces)"
+  ],
+  [
+   "Autonomie annoncée",
+   "jusqu'à 90 km (70 à 100 km sur certaines pages)"
+  ],
+  [
+   "Autonomie mesurée",
+   "67,5 km par temps froid (test vidéo YouTube après 100 km)"
+  ],
+  [
+   "Batterie",
+   "48 V, 26 Ah, 1 248 Wh"
+  ],
+  [
+   "Poids",
+   "25,7 kg"
+  ],
+  [
+   "Charge max",
+   "120 kg selon Joyor (150 kg sur certaines annonces)"
+  ],
+  [
+   "Roues",
+   "10 pouces, 10x3 gonflables à chambre à air"
+  ],
+  [
+   "Freins",
+   "Disque avant + disque arrière"
+  ],
+  [
+   "Suspension",
+   "Avant et arrière"
+  ],
+  [
+   "Étanchéité",
+   "IP54 selon Joyor"
+  ],
+  [
+   "Temps de charge",
+   "12 à 14 h (10 h sur une ancienne page Joyor)"
+  ]
+ ],
+ "pros": [
+  "67,5 km parcourus en un test d'autonomie, en plein froid (test vidéo allemand).",
+  "Même partie cycle que la S5, avec la batterie doublée (test vidéo allemand).",
+  "Bonne motricité en côte selon un testeur russe."
+ ],
+ "cons": [
+  "12 à 14 h de recharge avec le chargeur fourni (Joyor).",
+  "Environ 2 kg de plus que la S5 standard.",
+  "Freinage dans la moyenne basse : 30e place au classement de freinage du même testeur allemand."
+ ],
+ "parts": [
+  {
+   "label": "Pneu",
+   "size": "80/65-6 (10x3)",
+   "count": 11,
+   "to": "/piece/pneu-80-65-6-10x3-ewheel",
+   "cta": "Pneus 10x3"
+  },
+  {
+   "label": "Chambre à air",
+   "size": "80/65-6 (10x3), valve droite ou coudée",
+   "count": 3,
+   "to": "/piece/chambre-a-air-80-65-6-10x3-valve-droite-ewheel",
+   "cta": "Chambres à air 10x3"
+  }
+ ],
+ "care": [
+  "Si tu ne roules pas pendant plusieurs semaines, stocke la batterie à mi-charge plutôt que pleine.",
+  "Un testeur a reçu une chambre à air de rechange dans le carton : si c'est ton cas, garde-la avec tes démonte-pneus.",
+  "Les suspensions s'assouplissent après environ 200 km : attends ce rodage avant de juger le confort."
+ ],
+ "price": {
+  "text": "609 € chez Boulanger ; offres entre 617,99 € et 699 € sur Cdiscount.",
+  "source": "boulanger.com, cdiscount.com"
+ },
+ "faq": [
+  {
+   "q": "Quelle taille de pneu pour la Joyor S5 Pro ?",
+   "a": "Des pneus gonflables 10x3, aussi notés 80/65-6, avec chambre à air, selon une fiche Joyor ; un testeur a trouvé une chambre de rechange dans le carton."
+  },
+  {
+   "q": "Quelle autonomie réelle pour la S5 Pro ?",
+   "a": "Joyor annonce jusqu'à 90 km. Un testeur allemand a fait 67,5 km fin octobre, par temps froid, et en espère environ 80 en été."
+  },
+  {
+   "q": "Combien de temps pour charger la S5 Pro ?",
+   "a": "12 à 14 heures avec le chargeur d'origine selon Joyor."
+  },
+  {
+   "q": "S5 ou S5 Pro, laquelle choisir ?",
+   "a": "La Pro a la batterie de 26 Ah, la S5 celle de 13 Ah ; le reste est très proche. Si tu ne veux pas recharger tous les jours, prends la Pro ; sinon la S5, plus légère, suffit."
+  },
+  {
+   "q": "Quels freins sur la S5 Pro ?",
+   "a": "Un frein à disque sur chaque roue. Joyor ne dit pas toujours s'ils sont mécaniques : regarde si c'est un câble qui arrive à l'étrier."
+  }
+ ],
+ "sources": [
+  {
+   "label": "Joyor — S5 Pro ABE",
+   "url": "https://joyor.com/products/joyor-s5-pro-abe-electric-scooter"
+  },
+  {
+   "label": "Joyor Europe — S5 Pro ABE",
+   "url": "https://eu.joyorescooter.com/products/dejoyor-s5-pro-abe"
+  },
+  {
+   "label": "Joyor — S5 Pro (pneus 10x3)",
+   "url": "https://www.joyor-electricscooter.com/products/joyor-s5-pro"
+  },
+  {
+   "label": "Boulanger — Joyor S5 Pro",
+   "url": "https://www.boulanger.com/ref/9000843808"
+  },
+  {
+   "label": "Test vidéo Joyor S5 Pro après 100 km",
+   "url": "https://www.youtube.com/watch?v=Qo15lMGain0"
+  },
+  {
+   "label": "Test vidéo Joyor S5 Pro (déballage)",
+   "url": "https://www.youtube.com/watch?v=h4bV7UGo3tQ"
+  }
+ ]
+}

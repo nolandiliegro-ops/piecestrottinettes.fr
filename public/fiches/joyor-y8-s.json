@@ -1,0 +1,133 @@
+{
+  "displayName": "Joyor Y8-S",
+  "metaTitle": "Joyor Y8-S : fiche technique, autonomie et pièces",
+  "metaDescription": "Joyor Y8-S : moteur 500 W, batterie 48 V 26 Ah (1 248 Wh), 75 à 100 km annoncés, freins à disque mécaniques, double suspension. Fiche et pièces.",
+  "intro": [
+    "La Joyor Y8-S est la version longue distance de la série Y, testée dès 2023 en Allemagne, où sa version ABE est homologuée et limitée à 20 km/h. Elle garde la double suspension et les roues de 10 pouces de la Y6-S, mais embarque une batterie de 26 Ah. Un testeur allemand l'a classée première de ses tests d'autonomie.",
+    "Son moteur arrière de 500 W tire son énergie d'une batterie de 48 V 26 Ah, soit 1 248 Wh, pour 75 à 100 km annoncés. Handelsblatt estime qu'on fait plutôt 50 à 80 km au quotidien. Elle freine avec deux disques mécaniques, roule sur des pneus gonflables à chambre à air et se recharge en 10 à 13 h selon Joyor."
+  ],
+  "specs": [
+    [
+      "Moteur",
+      "500 W nominaux ; jusqu'à 900 W en pointe selon un test vidéo allemand"
+    ],
+    [
+      "Vitesse",
+      "20 km/h en version ABE"
+    ],
+    [
+      "Autonomie annoncée",
+      "75 à 100 km"
+    ],
+    [
+      "Autonomie constatée",
+      "50 à 80 km en usage courant (selon Handelsblatt)"
+    ],
+    [
+      "Batterie",
+      "48 V, 26 Ah, 1 248 Wh"
+    ],
+    [
+      "Poids",
+      "24,5 kg (selon joyor.net)"
+    ],
+    [
+      "Charge max",
+      "120 kg"
+    ],
+    [
+      "Roues",
+      "10 pouces, gonflables à chambre à air"
+    ],
+    [
+      "Freins",
+      "Disques mécaniques avant et arrière"
+    ],
+    [
+      "Suspension",
+      "Avant et arrière"
+    ],
+    [
+      "Étanchéité",
+      "IP54 selon Joyor (IPX4 dans un test vidéo)"
+    ],
+    [
+      "Temps de charge",
+      "10 à 13 h selon Joyor (8 à 10 h sur une autre page Joyor)"
+    ]
+  ],
+  "pros": [
+    "Batterie de 1 248 Wh : devant la S5 Pro au classement d'autonomie d'un testeur allemand.",
+    "Très stable grâce à ses gros pneus et son plateau large selon Ebiketester24.",
+    "Facile à prendre en main, même pour un débutant, selon le même testeur."
+  ],
+  "cons": [
+    "10 à 13 h de recharge selon Joyor.",
+    "Freins mécaniques à câble, sans assistance hydraulique.",
+    "Indice d'étanchéité différent selon les sources (IP54 ou IPX4)."
+  ],
+  "parts": [
+    {
+      "label": "Chargeur",
+      "size": "48 V (54,6 V en fin de charge), prise GX16 3 broches",
+      "count": 2,
+      "to": "/piece/chargeur-48v-546v-2a-connecteur-gx16-3p",
+      "cta": "Chargeurs 48 V"
+    }
+  ],
+  "care": [
+    "Branche le chargeur en alignant l'ergot de la prise : forcer tord les broches.",
+    "Deux disques mécaniques : recentre l'étrier si un disque se met à frotter après un choc.",
+    "Si tu ne roules pas pendant plusieurs semaines, laisse la batterie à moitié chargée plutôt que pleine."
+  ],
+  "faq": [
+    {
+      "q": "Quelle taille de pneu pour la Joyor Y8-S ?",
+      "a": "Des pneus gonflables de 10 pouces à chambre à air. Les fiches ne donnent pas la cote complète : vérifie-la sur le flanc avant d'acheter un pneu ou une chambre."
+    },
+    {
+      "q": "Quelle autonomie réelle pour la Y8-S ?",
+      "a": "Joyor annonce 75 à 100 km. Handelsblatt table sur 50 à 80 km selon le poids, le relief et la température."
+    },
+    {
+      "q": "Combien de temps pour charger la Y8-S ?",
+      "a": "10 à 13 heures selon la fiche Joyor."
+    },
+    {
+      "q": "Quelle différence entre la Joyor Y8-S et la S5 Pro ?",
+      "a": "Les deux ont un moteur de 500 W et une batterie 48 V 26 Ah. Lors d'un test d'autonomie allemand, la Y8-S est arrivée devant la S5 Pro. Vérifie le modèle inscrit sur ta trottinette avant de commander une pièce."
+    },
+    {
+      "q": "Quels freins sur la Joyor Y8-S ?",
+      "a": "Un disque mécanique à chaque roue, commandé par câble."
+    }
+  ],
+  "sources": [
+    {
+      "label": "Joyor — Y8-S ABE",
+      "url": "https://joyor.com/products/joyor-y8-s-abe-electric-scooter"
+    },
+    {
+      "label": "Handelsblatt — test Joyor Y8-S",
+      "url": "https://www.handelsblatt.com/adv/tests/joyor-y8-s-e-scooter-test/"
+    },
+    {
+      "label": "Joyor France — Y8-S",
+      "url": "https://www.joyor-fr.com/products/joyor-y8-s-trottinette-electrique"
+    },
+    {
+      "label": "Joyor — Y8-S ABE (joyor.net)",
+      "url": "https://joyor.net/products/joyor-y8-s-abe-electric-scooter"
+    },
+    {
+      "label": "Test vidéo Joyor S5 Pro, classement d'autonomie",
+      "url": "https://www.youtube.com/watch?v=Qo15lMGain0"
+    }
+  ],
+  "video": {
+    "id": "CWSGj2-QhVI",
+    "title": "JOYOR Y8-S E-Scooter mit FETTEN REIFEN im Test [Deutsch]",
+    "channel": "Ebiketester24 Inh. Marco Junger",
+    "uploadDate": "2023-09-28"
+  }
+}

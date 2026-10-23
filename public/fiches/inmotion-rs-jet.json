@@ -1,0 +1,80 @@
+{
+ "displayName": "Inmotion RS Jet",
+ "metaTitle": "Inmotion RS Jet : fiche technique et pièces",
+ "metaDescription": "Inmotion RS Jet : 2 x 1 200 W (4 600 W en pointe), batterie 72 V 25 Ah (1 800 Wh), freins hydrauliques, disques 160 mm, pneus 11\". Fiche et pièces.",
+ "intro": [
+  "L'Inmotion RS Jet est la plus compacte des RS : même famille de châssis bas à bras oscillants, mais une batterie plus petite et un écran tactile sur le guidon. Elle reste une machine lourde, entre 40 et 46 kg selon les sources. La RS et la RS Lite, plus grosses, ont chacune leur fiche.",
+  "Deux moteurs de 1 200 W (4 600 W en pointe au total), batterie de 72 V et 25 Ah, soit 1 800 Wh, pour 90 km annoncés par Inmotion France. Elle roule sur des pneus tubeless de 11 pouces et freine avec deux disques hydrauliques de 160 mm aidés du frein régénératif réglable. La suspension se règle en amortissement."
+ ],
+ "specs": [
+  ["Moteur", "2 x 1 200 W nominaux (2 400 W), 2 x 2 300 W en pointe (4 600 W)"],
+  ["Autonomie annoncée", "jusqu'à 90 km selon Inmotion France, 100 km (62 miles) selon Inmotion USA"],
+  ["Autonomie mesurée", "53 à 56 km par charge (selon New Atlas)"],
+  ["Batterie", "72 V, 25 Ah, 1 800 Wh"],
+  ["Poids", "40 kg selon Inmotion France, environ 41 kg selon Freshly Charged, 46,5 kg selon New Atlas"],
+  ["Charge max", "150 kg"],
+  ["Roues", "11 pouces (11 x 3,5), tubeless"],
+  ["Freins", "Disques hydrauliques avant et arrière de 160 mm, étriers Star Union à deux pistons (selon Freshly Charged) + frein régénératif"],
+  ["Suspension", "Bras oscillants avant et arrière, amortisseurs réglables sur 11 niveaux"],
+  ["Étanchéité", "IPX6 selon Inmotion USA et Freshly Charged ; IP67 affiché par Inmotion France"],
+  ["Temps de charge", "6 h 30 selon Inmotion France ; 9 à 10 h avec le chargeur fourni selon Freshly Charged"]
+ ],
+ "pros": [
+  "Accélération très douce grâce à son contrôleur sinusoïdal (Freshly Charged).",
+  "Freinage hydraulique jugé excellent, avec frein régénératif réglable (Freshly Charged).",
+  "Écran tactile avec code de verrouillage et alarme, sans passer par le téléphone (test vidéo YouTube).",
+  "Une batterie de 72 V à un prix nettement plus bas que la RS (Freshly Charged)."
+ ],
+ "cons": [
+  "Plateau court pour les grands gabarits (Freshly Charged).",
+  "Pneus d'origine peu accrocheurs sur gravier (Freshly Charged).",
+  "Recharge de 9 à 10 heures avec le chargeur fourni (Freshly Charged).",
+  "Ses performances d'origine la placent hors du cadre légal français des trottinettes."
+ ],
+ "parts": [
+  {
+   "label": "Disque de frein",
+   "size": "160 mm, entraxe 44 mm",
+   "count": 6,
+   "to": "/piece/disque-de-frein-r6-160mm-entraxe-44m-3-couleurs-bleu",
+   "cta": "Disques 160 mm"
+  }
+ ],
+ "care": [
+  "Après chaque sortie appuyée, laisse refroidir tes disques avant de les toucher et vérifie qu'ils ne frottent pas.",
+  "Un guidonnage à haute vitesse vient souvent d'un pneu mal équilibré ou sous-gonflé : contrôle la pression avant de rouler.",
+  "Garde la batterie entre 20 et 80 % si tu ne roules pas pendant plusieurs semaines, et recharge-la à température ambiante."
+ ],
+ "price": {
+  "text": "Prix affiché par Inmotion France : 2 590 € (remisé à 2 290 € lors du relevé, susceptible de varier).",
+  "source": "inmotion-france.fr"
+ },
+ "faq": [
+  {
+   "q": "Quelle taille de pneu pour l'Inmotion RS Jet ?",
+   "a": "Des pneus tubeless de 11 pouces en 11 x 3,5 selon Inmotion USA et les essais. La cote avec la jante n'est pas publiée : regarde-la sur le flanc de ton pneu avant d'en acheter un."
+  },
+  {
+   "q": "Quel diamètre de disque sur l'Inmotion RS Jet ?",
+   "a": "Des disques de 160 mm à l'avant et à l'arrière, pincés par des étriers hydrauliques à deux pistons."
+  },
+  {
+   "q": "Quelle autonomie réelle pour l'Inmotion RS Jet ?",
+   "a": "Inmotion France annonce 90 km. New Atlas a tenu 53 à 56 km par charge en usage réel."
+  },
+  {
+   "q": "Peut-on circuler en ville avec l'Inmotion RS Jet ?",
+   "a": "Elle est livrée bridée à 25 km/h, la vitesse maximale des trottinettes sur la voie publique en France. C'est seulement dans ce réglage qu'elle peut rouler en ville ; ses modes rapides sont réservés aux terrains privés."
+  },
+  {
+   "q": "Quelle différence entre l'Inmotion RS Jet et la RS ?",
+   "a": "La RS Jet a une batterie de 25 Ah contre 40 Ah, des moteurs de 1 200 W contre 2 000 W, un écran tactile et pèse une quinzaine de kilos de moins. Leurs pièces ne sont pas toutes identiques : vérifie le modèle avant de commander."
+  }
+ ],
+ "sources": [
+  {"label": "Inmotion France — RS Jet", "url": "https://www.inmotion-france.fr/fr/trottinettes-electriques/865-trottinette-electrique-inmotion-rs-jet-72v-25ah-3701522012867.html"},
+  {"label": "Inmotion — RS Jet", "url": "https://www.myinmotion.com/inmotion-rs-jet-electric-scooter"},
+  {"label": "New Atlas — Inmotion RS Jet review", "url": "https://newatlas.com/urban-transport/inmotion-rs-jet-scooter-review/"},
+  {"label": "Freshly Charged — 2025 Inmotion RS Jet review", "url": "https://www.freshlycharged.com/reviews/414/2025-inmotion-rs-jet-review"}
+ ]
+}

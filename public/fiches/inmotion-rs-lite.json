@@ -1,0 +1,80 @@
+{
+ "displayName": "Inmotion RS Lite",
+ "metaTitle": "Inmotion RS Lite : fiche technique et pièces",
+ "metaDescription": "Inmotion RS Lite : 2 x 1 500 W (6 000 W en pointe), batterie 72 V 30 Ah (2 160 Wh), freins hydrauliques, double suspension. Fiche, entretien et pièces.",
+ "intro": [
+  "L'Inmotion RS Lite partage le châssis, la suspension et les freins de la RS, avec une batterie réduite d'un quart et des moteurs moins puissants. « Lite » ne veut pas dire légère : elle pèse environ 53 kg, quelques kilos de moins que la RS seulement. La RS et la RS Jet ont chacune leur fiche.",
+  "Deux moteurs de 1 500 W (6 000 W en pointe au total), batterie de 72 V et 30 Ah, soit 2 160 Wh, pour 120 km annoncés. Pneus tubeless de 11 pouces, disques hydrauliques à l'avant et à l'arrière, suspension hydraulique réglable sur 11 niveaux avec 96 mm de débattement, et 150 kg de charge maximale."
+ ],
+ "specs": [
+  ["Moteur", "2 x 1 500 W nominaux (3 000 W), 6 000 W en pointe au total"],
+  ["Autonomie annoncée", "jusqu'à 120 km selon Inmotion France (75 miles, soit 121 km, selon Inmotion World)"],
+  ["Autonomie mesurée", "72,6 km (selon Voromotors)"],
+  ["Batterie", "72 V, 30 Ah, 2 160 Wh"],
+  ["Poids", "environ 53 kg"],
+  ["Charge max", "150 kg"],
+  ["Roues", "11 pouces (11 x 3,5), tubeless"],
+  ["Freins", "Disques hydrauliques avant et arrière, étriers Zoom, disques de 160 mm (selon Voromotors)"],
+  ["Suspension", "Hydraulique avant et arrière, 11 niveaux de réglage, 96 mm de débattement"],
+  ["Étanchéité", "IP56 pour le châssis selon Inmotion World ; IP67 affiché par Inmotion France"],
+  ["Temps de charge", "6 h 30 avec un chargeur, 3 h 30 avec deux selon Inmotion World ; 9 h et 4 h 30 selon un test vidéo"]
+ ],
+ "pros": [
+  "Freinage hydraulique parmi les plus courts mesurés par un banc d'essai américain (test vidéo ESG).",
+  "Suspension souple qui absorbe bien graviers et bosses (test vidéo Brian Unboxed).",
+  "Même châssis et même tenue de route que la RS pour un prix plus bas (test vidéo Scoota Gang).",
+  "Deux prises de charge pour recharger avec deux chargeurs."
+ ],
+ "cons": [
+  "Environ 53 kg : pas une trottinette qu'on porte (test vidéo Scoota Gang).",
+  "Connecteurs rapides des moteurs qui ont chauffé et fondu chez un propriétaire après 1 600 km (test vidéo YouTube).",
+  "Un seul chargeur fourni, le second est en option (Inmotion France).",
+  "Elle dépasse de loin le cadre légal français des trottinettes en configuration d'origine."
+ ],
+ "parts": [
+  {
+   "label": "Disque de frein",
+   "size": "160 mm, entraxe 44 mm",
+   "count": 6,
+   "to": "/piece/disque-de-frein-r6-160mm-entraxe-44m-3-couleurs-rouge",
+   "cta": "Disques 160 mm"
+  }
+ ],
+ "care": [
+  "Un disque voilé se sent au levier qui pulse : vérifie qu'il tourne droit et que ses vis sont serrées après chaque choc.",
+  "Inspecte les connecteurs des moteurs de temps en temps : un plastique noirci ou déformé doit être changé avant de repartir.",
+  "Ajuste l'amortissement à ton poids : la RS Lite est réglée pour les gabarits plus légers que la RS."
+ ],
+ "price": {
+  "text": "Prix affiché par Inmotion France : 2 990 € (prix relevé en ligne, susceptible de varier).",
+  "source": "inmotion-france.fr"
+ },
+ "faq": [
+  {
+   "q": "Quelle taille de pneu pour l'Inmotion RS Lite ?",
+   "a": "Des pneus tubeless de 11 pouces en 11 x 3,5. La cote complète avec la jante n'est pas publiée par Inmotion : lis-la sur le flanc de ton pneu avant de commander."
+  },
+  {
+   "q": "Quelle autonomie réelle pour l'Inmotion RS Lite ?",
+   "a": "Inmotion annonce 120 km. Le test publié par Voromotors donne 72,6 km en mode performance, à allure de ville : compte plutôt sur 70 km."
+  },
+  {
+   "q": "La RS Lite est-elle autorisée sur la voie publique en France ?",
+   "a": "Non, telle qu'elle sort du carton. En France, une trottinette électrique doit plafonner à 25 km/h pour circuler, et la RS Lite est construite pour des vitesses bien supérieures. Garde-la pour un usage sur terrain privé."
+  },
+  {
+   "q": "Combien de temps pour recharger l'Inmotion RS Lite ?",
+   "a": "6 h 30 avec un chargeur selon Inmotion, 3 h 30 avec deux. Un testeur annonce plutôt 9 heures et 4 h 30 : la durée dépend du chargeur utilisé."
+  },
+  {
+   "q": "Quelle différence entre l'Inmotion RS Lite et la RS ?",
+   "a": "Même châssis, mêmes freins, même suspension. La RS Lite a une batterie de 30 Ah au lieu de 40 Ah et des moteurs de 1 500 W au lieu de 2 000 W, pour quelques kilos de moins."
+  }
+ ],
+ "sources": [
+  {"label": "Inmotion World — RS Lite", "url": "https://inmotionworld.com/products/inmotion-rs-lite"},
+  {"label": "Inmotion — RS Lite", "url": "https://www.myinmotion.com/inmotion-rs-lite-electric-scooter"},
+  {"label": "Inmotion France — RS Lite", "url": "https://www.inmotion-france.fr/fr/trottinettes-electriques/861-trottinette-electrique-inmotion-rs-lite-84-v-25-ah-3701522009911.html"},
+  {"label": "Voromotors — Inmotion RS vs RS Lite", "url": "https://www.voromotors.com/blogs/news/inmotion-rs-vs-rs-lite-comparison"}
+ ]
+}

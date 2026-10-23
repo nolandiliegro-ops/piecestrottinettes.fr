@@ -1,0 +1,127 @@
+{
+ "displayName": "Joyor T10",
+ "metaTitle": "Joyor T10 : fiche technique, freins et pièces",
+ "metaDescription": "Joyor T10 : 2 x 1 000 W, batterie 60 V 18 Ah (1 080 Wh), freins hydrauliques, double suspension, 29,6 kg, 75 km annoncés. Fiche, entretien et pièces.",
+ "intro": [
+  "La Joyor T10 est la bimoteur 60 V de la série T, présentée par un testeur comme la sœur de la S10-S-Z avec des suspensions revues. Elle associe deux moteurs de 1 000 W, des freins hydrauliques et des amortisseurs mêlant ressort et huile. Boulanger l'affiche à 749 €, Joyor France à 725,98 €.",
+  "Sa batterie de 60 V 18 Ah stocke 1 080 Wh, pour 75 km annoncés par Joyor. Elle pèse 29,6 kg nets selon Boulanger, accepte 120 kg et se recharge en 9 à 10 h. Les roues sont des 10 pouces tout-chemin à chambre à air. La version vendue en France sort d'usine limitée à 25 km/h."
+ ],
+ "specs": [
+  [
+   "Moteur",
+   "2 x 1 000 W nominaux"
+  ],
+  [
+   "Vitesse",
+   "25 km/h en version française"
+  ],
+  [
+   "Autonomie annoncée",
+   "jusqu'à 75 km"
+  ],
+  [
+   "Batterie",
+   "60 V, 18 Ah, 1 080 Wh"
+  ],
+  [
+   "Poids",
+   "29,6 kg nets selon Boulanger (30,1 kg sur une page Joyor)"
+  ],
+  [
+   "Charge max",
+   "120 kg"
+  ],
+  [
+   "Roues",
+   "10 pouces, tout-chemin à chambre à air"
+  ],
+  [
+   "Freins",
+   "Disques hydrauliques avant et arrière"
+  ],
+  [
+   "Suspension",
+   "Ressort et amortisseur hydraulique, avant et arrière"
+  ],
+  [
+   "Étanchéité",
+   "IP54"
+  ],
+  [
+   "Temps de charge",
+   "9 à 10 h"
+  ]
+ ],
+ "pros": [
+  "Freins à disque hydrauliques sur les deux roues (Joyor).",
+  "Suspension à ressort et amortisseur hydraulique à l'avant et à l'arrière (Joyor).",
+  "Deux moteurs de 1 000 W pour les côtes et les chemins."
+ ],
+ "cons": [
+  "Près de 30 kg à soulever.",
+  "Pas pour débuter : son accélération surprend même les habitués selon un testeur YouTube.",
+  "Aucune autonomie mesurée en test indépendant : les 75 km sont une annonce de Joyor."
+ ],
+ "parts": [
+  {
+   "label": "Chargeur",
+   "size": "60 V (67,2 V en fin de charge), prise GX16 3 broches",
+   "count": 2,
+   "to": "/piece/chargeur-60v-672v-2a-connecteur-gx16-3p",
+   "cta": "Chargeurs 60 V"
+  }
+ ],
+ "care": [
+  "Freins hydrauliques : vérifie que les durites ne frottent pas contre la fourche quand tu braques à fond.",
+  "Après une sortie sur chemin, essuie les tiges des amortisseurs : la boue use leurs joints.",
+  "Relève la cote de tes pneus sur le flanc et note-la : tu gagneras du temps le jour où il faudra une chambre."
+ ],
+ "price": {
+  "text": "749 € chez Boulanger, 725,98 € sur Joyor France.",
+  "source": "boulanger.com, joyor-fr.com"
+ },
+ "faq": [
+  {
+   "q": "Quelle taille de pneu pour la Joyor T10 ?",
+   "a": "Des pneus tout-chemin de 10 pouces avec chambre à air. Les fiches Joyor ne donnent pas la cote complète : lis-la sur le flanc avant de commander."
+  },
+  {
+   "q": "La Joyor T10 est-elle autorisée en ville ?",
+   "a": "Telle qu'elle est livrée en France, oui : elle est limitée à 25 km/h. Au-delà, une trottinette n'a plus sa place sur la voie publique, et ton assureur peut refuser de couvrir un engin modifié."
+  },
+  {
+   "q": "Combien de temps pour charger la T10 ?",
+   "a": "9 à 10 heures avec le chargeur fourni selon Joyor."
+  },
+  {
+   "q": "Quels freins sur la Joyor T10 ?",
+   "a": "Des freins à disque hydrauliques à l'avant et à l'arrière."
+  },
+  {
+   "q": "Quelle différence entre la Joyor T10 et la T6 ?",
+   "a": "La T6 a un seul moteur de 600 W, une batterie 48 V 18 Ah et des freins à câble ; elle pèse 25,6 kg. La T10 double les moteurs et passe en 60 V."
+  }
+ ],
+ "sources": [
+  {
+   "label": "Joyor — T10",
+   "url": "https://joyor.com/products/joyor-t10-us-electric-scooter"
+  },
+  {
+   "label": "Boulanger — Joyor T10",
+   "url": "https://www.boulanger.com/ref/9000921749"
+  },
+  {
+   "label": "Joyor France — T10",
+   "url": "https://www.joyor-fr.com/products/joyor-t10-trottinette-electrique"
+  },
+  {
+   "label": "Joyor Prime — chambre à air T10",
+   "url": "https://joyorprime.com/fr-eu/products/joyor-t10-10-inch-inner-tube-1-pack"
+  },
+  {
+   "label": "Joyorscooter — T10",
+   "url": "https://joyorscooter.com/fr/collections/sport/products/joyor-t10-electric-scooter"
+  }
+ ]
+}

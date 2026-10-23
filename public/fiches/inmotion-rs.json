@@ -1,0 +1,96 @@
+{
+ "displayName": "Inmotion RS",
+ "metaTitle": "Inmotion RS : fiche technique, freins et pièces",
+ "metaDescription": "Inmotion RS : 2 x 2 000 W (8 400 W en pointe), batterie 72 V 40 Ah (2 880 Wh), freins hydrauliques Zoom, disques 160 mm. Fiche, entretien et pièces.",
+ "intro": [
+  "L'Inmotion RS est la plus lourde et la plus puissante trottinette de la marque : deux moteurs, un énorme accu logé dans le plateau, une suspension hydraulique réglable en dureté et en hauteur de caisse. C'est une machine de 56 kg, plus proche d'un petit deux-roues que d'une trottinette de ville. La RS Lite et la RS Jet, plus légères, ont leur propre fiche.",
+  "Deux moteurs de 2 000 W (8 400 W en pointe au total), batterie de 72 V et 40 Ah, soit 2 880 Wh, pour 160 km annoncés. Elle roule sur des pneus tubeless de 11 pouces, freine avec deux disques hydrauliques Zoom de 160 mm et le frein régénératif, et se recharge en 8 h 30 avec un chargeur, 4 h 30 avec deux."
+ ],
+ "specs": [
+  ["Moteur", "2 x 2 000 W nominaux (4 000 W), 8 400 W en pointe au total"],
+  ["Autonomie annoncée", "jusqu'à 160 km (120 à 160 km selon Inmotion France)"],
+  ["Autonomie mesurée", "environ 100 km en mode normal (test vidéo Alexius Vidalius) ; 47 km avec encore 64 % de batterie (test vidéo CoJaWidze w USA)"],
+  ["Batterie", "72 V, 40 Ah, 2 880 Wh"],
+  ["Poids", "56 kg selon Inmotion France ; 58 kg sur la fiche internationale"],
+  ["Charge max", "150 kg"],
+  ["Roues", "11 pouces (11 x 3,5), tubeless"],
+  ["Freins", "Deux disques hydrauliques, étriers Zoom, disques de 160 mm + frein régénératif"],
+  ["Suspension", "Hydraulique avant et arrière, 11 niveaux d'amortissement, hauteur de caisse réglable"],
+  ["Étanchéité", "IPX6 selon Inmotion France (d'autres pages Inmotion affichent IP56 ou IP67)"],
+  ["Temps de charge", "environ 8 h 30 avec un chargeur, 4 h 30 avec deux"]
+ ],
+ "pros": [
+  "Châssis jugé très stable et précis en virage (tests vidéo Electron et Monoblog).",
+  "Suspension réglable en dureté et en hauteur selon l'usage (test vidéo Monoblog).",
+  "Batterie de 2 880 Wh : une centaine de kilomètres en mode normal (test vidéo Alexius Vidalius).",
+  "IPX6 annoncé, rare sur une trottinette de cette puissance (test vidéo Jeff Riide)."
+ ],
+ "cons": [
+  "56 à 58 kg : impossible à porter dans un escalier ou un transport en commun.",
+  "Freins qui chauffent et perdent du mordant en usage très appuyé (test vidéo Monoblog).",
+  "Recharge d'environ 9 heures avec le chargeur fourni de 5 A (test vidéo Alexius Vidalius).",
+  "Ses performances d'origine dépassent largement le cadre légal des trottinettes en France."
+ ],
+ "parts": [
+  {
+   "label": "Plaquettes de frein",
+   "size": "Étrier Zoom hydraulique",
+   "count": 5,
+   "to": "/piece/plaquettes-de-frein-zoom-semi-metallique",
+   "cta": "Plaquettes Zoom"
+  },
+  {
+   "label": "Disque de frein",
+   "size": "160 mm, entraxe 44 mm",
+   "count": 6,
+   "to": "/piece/disque-de-frein-r6-160mm-entraxe-44m-3-couleurs-rouge",
+   "cta": "Disques 160 mm"
+  },
+  {
+   "label": "Chargeur",
+   "size": "72 V (sortie 84 V), prise GX16-3",
+   "count": 2,
+   "to": "/piece/chargeur-72v-84v-2a-connecteur-gx16-3p",
+   "cta": "Chargeurs 72 V"
+  }
+ ],
+ "care": [
+  "Avec 56 kg et deux moteurs, tes plaquettes s'usent vite : contrôle-les tous les mois et purge le liquide des freins hydrauliques une fois par an.",
+  "Règle la suspension à ton poids et à ton usage : trop molle, elle talonne ; trop dure, elle fatigue le châssis et tes poignets.",
+  "Recharge sur une surface dure et ventilée : 2 880 Wh, c'est une grosse batterie, ne la laisse pas branchée sans surveillance toute la nuit."
+ ],
+ "price": {
+  "text": "Inmotion France affiche 3 490 € pour l'édition Casper ; Inmotion Store annonce 3 090 à 3 790 € selon la configuration (prix relevés en ligne, susceptibles de varier).",
+  "source": "inmotion-france.fr, inmotion-store.com"
+ },
+ "faq": [
+  {
+   "q": "Quelle taille de pneu pour l'Inmotion RS ?",
+   "a": "Inmotion annonce des pneus tubeless de 11 pouces en 11 x 3,5, sans publier la cote complète avec la jante. Lis la cote sur le flanc de ton pneu avant d'en commander un : c'est la seule référence sûre."
+  },
+  {
+   "q": "Quelles plaquettes de frein pour l'Inmotion RS ?",
+   "a": "La RS freine avec des étriers hydrauliques Zoom sur des disques de 160 mm. Prends des plaquettes au format Zoom ; le métal fritté tient mieux la chaleur si tu roules chargé ou en descente."
+  },
+  {
+   "q": "Peut-on rouler avec l'Inmotion RS sur la route en France ?",
+   "a": "Pas dans sa configuration d'origine. La loi française limite les trottinettes électriques à 25 km/h sur la voie publique, et la RS est conçue pour aller bien au-delà. Hors d'un circuit ou d'un terrain privé, elle n'a pas sa place dans la circulation, et ton assurance peut refuser de te couvrir."
+  },
+  {
+   "q": "Combien de temps pour recharger l'Inmotion RS ?",
+   "a": "Environ 8 h 30 avec le chargeur fourni. Elle a deux prises : avec deux chargeurs, tu descends autour de 4 h 30."
+  },
+  {
+   "q": "Quelle différence entre l'Inmotion RS, la RS Lite et la RS Jet ?",
+   "a": "La RS a la plus grosse batterie (40 Ah) et les moteurs les plus puissants. La RS Lite descend à 30 Ah et 2 x 1 500 W, la RS Jet à 25 Ah et 2 x 1 200 W pour une quarantaine de kilos. Vérifie ton modèle avant de commander une pièce."
+  }
+ ],
+ "sources": [
+  {"label": "Inmotion France — RS", "url": "https://www.inmotion-france.fr/en/RS"},
+  {"label": "Inmotion World — RS", "url": "https://inmotionworld.com/products/inmotion-rs"},
+  {"label": "Inmotion — RS", "url": "https://www.myinmotion.com/inmotion-rs"},
+  {"label": "Inmotion France — RS Casper", "url": "https://www.inmotion-france.fr/fr/trottinettes-electriques/612-trottinette-electrique-inmotion-rs-casper-72-v-40-ah-3701522011891.html"},
+  {"label": "Inmotion Store — RS", "url": "https://inmotion-store.com/fr/produit/inmotion-rs/"},
+  {"label": "Monoblog — test ride Inmotion RS", "url": "https://monoblog.com.ar/2023/10/06/test-ride-inmotion-rs/"}
+ ]
+}

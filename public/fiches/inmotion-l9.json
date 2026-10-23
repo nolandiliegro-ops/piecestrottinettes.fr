@@ -1,0 +1,138 @@
+{
+  "displayName": "Inmotion L9",
+  "metaTitle": "Inmotion L9 : fiche technique, autonomie et pièces",
+  "metaDescription": "Inmotion L9 : 500 W (1 000 W en pointe) à l'avant, batterie 54 V 12,5 Ah (675 Wh), double suspension, pneus tubeless 10\". Fiche, entretien, pièces.",
+  "intro": [
+    "L'Inmotion L9 est la grande trottinette de ville d'Inmotion sortie en 2021 : guidon haut, plateau long, suspension à l'avant comme à l'arrière et deux prises de charge. Son moteur est dans la roue avant. Elle a une cousine, la S1F, au moteur arrière et au freinage différent : chacune a sa fiche.",
+    "Moteur avant de 500 W (1 000 W en pointe), batterie de 54 V et 12,5 Ah, soit 675 Wh, pour 80 km annoncés par Inmotion France. Elle pèse 24 kg, accepte 140 kg, roule sur des pneus tubeless de 10 pouces et freine avec un disque à câble à l'arrière et le frein régénératif du moteur avant."
+  ],
+  "specs": [
+    [
+      "Moteur",
+      "500 W nominaux, 1 000 W en pointe, dans la roue avant"
+    ],
+    [
+      "Vitesse",
+      "25 km/h (version européenne)"
+    ],
+    [
+      "Autonomie annoncée",
+      "jusqu'à 80 km selon Inmotion France (95 km sur d'autres fiches)"
+    ],
+    [
+      "Autonomie mesurée",
+      "38 km par grand froid (test vidéo Electron) ; environ 45 km en usage normal (Mobilityurban, test vidéo Monoblog)"
+    ],
+    [
+      "Batterie",
+      "54 V, 12,5 Ah, 675 Wh"
+    ],
+    [
+      "Poids",
+      "24 kg"
+    ],
+    [
+      "Charge max",
+      "140 kg"
+    ],
+    [
+      "Roues",
+      "10 pouces tubeless, 10x2.50-6.5 (selon Fohzshop)"
+    ],
+    [
+      "Freins",
+      "Disque mécanique arrière + frein régénératif avant"
+    ],
+    [
+      "Suspension",
+      "Fourche hydraulique avant, double amortisseur à ressort arrière"
+    ],
+    [
+      "Temps de charge",
+      "environ 7 h, 3 h 30 avec deux chargeurs branchés en même temps"
+    ]
+  ],
+  "pros": [
+    "Double suspension et pneus tubeless : conduite confortable en ville (Mobilityurban).",
+    "675 Wh et deux prises de charge : 3 h 30 de recharge avec deux chargeurs (Inmotion France).",
+    "Accepte jusqu'à 140 kg (Inmotion France).",
+    "Guidon haut adapté aux grands gabarits, au-delà d'1,80 m (test vidéo Monoblog)."
+  ],
+  "cons": [
+    "Un seul frein mécanique, à l'arrière ; une mise à jour logicielle a dû corriger le frein régénératif avant (test vidéo Monoblog).",
+    "Le moteur avant patine parfois au démarrage en côte (test vidéo YouTube).",
+    "Suspension avant jugée ferme pour un pilote léger (test vidéo Monoblog).",
+    "Autonomie réelle autour de 45 km, loin des 80 km annoncés."
+  ],
+  "parts": [
+    {
+      "label": "Pneu",
+      "size": "10x2.50-6.5 tubeless (aussi noté 60/70-6.5)",
+      "count": 13,
+      "to": "/piece/pneu-tubeless-60-70-6-5-wanda",
+      "cta": "Pneus 10x2.50-6.5"
+    },
+    {
+      "label": "Chambre à air",
+      "size": "10x2.50, valve droite ou coudée",
+      "count": 6,
+      "to": "/piece/chambre-a-air-10x250-valve-droite",
+      "cta": "Chambres à air"
+    }
+  ],
+  "care": [
+    "Le disque arrière fait tout le freinage mécanique : surveille l'usure des plaquettes et retends le câble dès que le levier devient mou.",
+    "Pneus tubeless : contrôle la pression chaque mois ; une crevaison lente se voit d'abord à une pression qui baisse.",
+    "Tu peux régler la dureté des amortisseurs arrière : adapte-la à ton poids plutôt que de rouler sur une suspension trop dure."
+  ],
+  "faq": [
+    {
+      "q": "Quelle taille de pneu pour l'Inmotion L9 ?",
+      "a": "Des pneus tubeless de 10 pouces en 10x2.50-6.5, la même dimension que la S1F. Cette taille est aussi vendue sous la cote 60/70-6.5."
+    },
+    {
+      "q": "Quelle autonomie réelle pour l'Inmotion L9 ?",
+      "a": "Inmotion France annonce 80 km. Les tests tournent plutôt autour de 45 km en usage normal, et 38 km par grand froid."
+    },
+    {
+      "q": "Combien de temps pour recharger l'Inmotion L9 ?",
+      "a": "Environ 7 heures avec un chargeur. Elle a deux prises : avec deux chargeurs branchés, tu descends à 3 h 30 environ."
+    },
+    {
+      "q": "Quels freins sur l'Inmotion L9 ?",
+      "a": "Un frein à disque à câble sur la roue arrière, et le frein régénératif du moteur dans la roue avant."
+    },
+    {
+      "q": "Quelle différence entre l'Inmotion L9 et la S1F ?",
+      "a": "Même batterie de 675 Wh et même poids de 24 kg. La L9 a son moteur à l'avant et un disque à l'arrière, et porte 140 kg ; la S1F a son moteur à l'arrière, un tambour à l'avant et porte 120 kg. Les pièces de frein ne sont pas les mêmes."
+    }
+  ],
+  "sources": [
+    {
+      "label": "Inmotion France — L9",
+      "url": "https://www.inmotion-france.fr/en/l9"
+    },
+    {
+      "label": "Inmotion — L9",
+      "url": "https://www.myinmotion.com/products/electric-kick-scooter-l9"
+    },
+    {
+      "label": "Max Blinker — Inmotion L9",
+      "url": "https://www.maxblinker.com/en/electric-scooters/inmotion-l9"
+    },
+    {
+      "label": "Inmotion France — pneu tubeless 10\" L9 / S1 / S1F",
+      "url": "https://www.inmotion-france.fr/en/spare-parts/406-10-tubeless-tyre-l9-s1-s1f-3701522000581.html"
+    },
+    {
+      "label": "Fohzshop — pneus Inmotion",
+      "url": "https://fohzshop.fr/fr/pieces-detachees/type/pneu/inmotion"
+    }
+  ],
+  "video": {
+    "id": "71fExtkuZ5E",
+    "title": "TROTTINETTE ÉLECTRIQUE : LEMOTION S1F, (Ex INMOTION L9) UNE TROTTINETTE DE 80 KM D'AUTONOMIE ?",
+    "channel": "Mobilityurban",
+    "uploadDate": "2021-02-12"
+  }
+}

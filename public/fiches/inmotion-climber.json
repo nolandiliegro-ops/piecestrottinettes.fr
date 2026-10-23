@@ -1,0 +1,82 @@
+{
+ "displayName": "Inmotion Climber",
+ "metaTitle": "Inmotion Climber : fiche technique et pièces",
+ "metaDescription": "Inmotion Climber : double moteur 2 x 450 W (1 500 W en pointe), batterie 36 V 15 Ah (533 Wh), roues 10\", disque arrière, IPX6. Fiche, entretien, pièces.",
+ "intro": [
+  "L'Inmotion Climber est une trottinette compacte à deux moteurs, un dans chaque roue, pensée pour les villes en pente. Elle garde le gabarit d'une 10 pouces urbaine, sans suspension, mais double la motricité. Inmotion fabrique aussi des gyroroues : ici, il s'agit bien de la trottinette.",
+  "Deux moteurs de 450 W (1 500 W en pointe au total), batterie Samsung de 36 V et 15 Ah, soit 533 Wh, pour 55 km annoncés. Elle pèse 20,8 kg, freine avec un disque mécanique à l'arrière et le frein électronique des deux moteurs, et résiste aux projections d'eau (IPX6 selon Inmotion)."
+ ],
+ "specs": [
+  ["Moteur", "2 x 450 W nominaux (900 W), 2 x 750 W en pointe (1 500 W)"],
+  ["Vitesse", "25 km/h (version européenne)"],
+  ["Autonomie annoncée", "55 km selon Inmotion France, 56 km selon d'autres fiches"],
+  ["Autonomie mesurée", "environ 45 km (selon IT-Connect) ; 39 km en mode Sport avec quelques côtes (test vidéo YouTube)"],
+  ["Batterie", "36 V, 15 Ah, 533 Wh (cellules Samsung)"],
+  ["Poids", "20,8 kg"],
+  ["Charge max", "130 kg selon Inmotion World et IT-Connect ; 140 kg selon Inmotion France"],
+  ["Roues", "10 pouces, gonflables avec chambre à air"],
+  ["Freins", "Disque mécanique arrière + frein électronique sur les deux moteurs"],
+  ["Suspension", "Aucune"],
+  ["Étanchéité", "IPX6 selon Inmotion ; IP56 selon IT-Connect"],
+  ["Temps de charge", "environ 9 h"]
+ ],
+ "pros": [
+  "Deux roues motrices : elle garde de la vitesse dans les fortes pentes (test vidéo YouTube, pilote de 100 kg).",
+  "IPX6 annoncé par Inmotion, rare sur une trottinette de ce gabarit.",
+  "Freinage combiné disque + deux moteurs jugé mordant (test vidéo YouTube).",
+  "Environ 45 km mesurés par IT-Connect, proche de l'annonce."
+ ],
+ "cons": [
+  "Aucune suspension : sur racines et pavés, les chocs remontent dans le guidon.",
+  "Guidon étroit (test vidéo YouTube).",
+  "Recharge d'environ 9 heures.",
+  "Un seul frein mécanique, à l'arrière : la roue arrière peut glisser en freinage appuyé (test vidéo YouTube)."
+ ],
+ "parts": [
+  {
+   "label": "Chargeur",
+   "size": "36 V (sortie 42 V), prise RCA",
+   "count": 2,
+   "to": "/piece/chargeur-36v-42v-2a-xiaomi-connecteur-rca",
+   "cta": "Chargeurs 36 V"
+  }
+ ],
+ "care": [
+  "Le disque arrière est ton seul frein mécanique : dès que le levier devient mou, fais retendre le câble et contrôle l'épaisseur des plaquettes.",
+  "Deux moteurs, deux roues qui tirent : vérifie la pression des deux pneus chaque mois, un pneu mou fatigue le moteur de sa roue.",
+  "IPX6 ne veut pas dire immersion : évite les flaques profondes et laisse-la sécher dépliée après une averse."
+ ],
+ "price": {
+  "text": "Prix relevé lors du test IT-Connect : 1 199 € ; 900 € affichés sur le site Inmotion au moment d'un test vidéo de 2024. Les prix varient.",
+  "source": "it-connect.fr, test vidéo YouTube"
+ },
+ "faq": [
+  {
+   "q": "Quelle taille de pneu pour l'Inmotion Climber ?",
+   "a": "Des pneus gonflables de 10 pouces à chambre à air, le même pneu de rechange que l'Air et l'Air Pro chez Inmotion France. La largeur exacte n'est pas publiée : lis la cote sur le flanc de ton pneu avant d'en commander un."
+  },
+  {
+   "q": "Quelle autonomie réelle pour l'Inmotion Climber ?",
+   "a": "Inmotion annonce 55 km. IT-Connect a mesuré environ 45 km ; un testeur vidéo est tombé à 39 km en mode Sport avec des côtes."
+  },
+  {
+   "q": "L'Inmotion Climber a-t-elle une suspension ?",
+   "a": "Non. Seuls les pneus gonflables de 10 pouces amortissent : garde une pression correcte et plie un peu les jambes sur les mauvais revêtements."
+  },
+  {
+   "q": "L'Inmotion Climber peut-elle rouler sur la route en France ?",
+   "a": "Oui, telle qu'elle est livrée en Europe : elle plafonne à 25 km/h, la limite des trottinettes en France. Ses deux moteurs servent à garder cette vitesse en montée, pas à aller plus vite ; une trottinette modifiée pour dépasser 25 km/h n'a plus le droit de circuler sur la voie publique."
+  },
+  {
+   "q": "Combien de temps pour recharger l'Inmotion Climber ?",
+   "a": "Environ 9 heures pour remplir sa batterie de 533 Wh avec le chargeur d'origine."
+  }
+ ],
+ "sources": [
+  {"label": "Inmotion France — Climber", "url": "https://www.inmotion-france.fr/en/climber"},
+  {"label": "Inmotion World — Climber", "url": "https://inmotionworld.com/products/inmotion-climber"},
+  {"label": "IT-Connect — test Inmotion Climber", "url": "https://www.it-connect.fr/test-inmotion-climber/"},
+  {"label": "Inmotion Store — Climber", "url": "https://inmotion-store.com/fr/produit/inmotion-climber/"},
+  {"label": "Inmotion France — chambre à air Air / Air Pro / Climber", "url": "https://www.inmotion-france.fr/en/spare-parts/592-inner-tube-inmotion-air-air-pro-climber-3701522003216.html"}
+ ]
+}
