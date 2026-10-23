@@ -1,0 +1,124 @@
+{
+ "displayName": "Wispeed SUVPILOT 150R",
+ "metaTitle": "Wispeed SUVPILOT 150R : fiche technique et pièces",
+ "metaDescription": "Wispeed SUVPILOT 150R : 500 W (800 W en pointe), batterie 36 V 15,6 Ah, pneus cross 10\", deux freins tambour, double suspension. Fiche et pièces.",
+ "intro": [
+  "La Wispeed SUVPILOT 150 R est la version 36 V de la gamme tout-chemin SUVPILOT de Wispeed, sous la SUVPILOT 480. On la trouve chez Boulanger, Darty ou Cdiscount. Pneus cross, double suspension réglable et freins à tambour : elle est pensée pour les routes abîmées plus que pour la vitesse.",
+  "Son moteur fait 500 W (800 W en pointe) et sa batterie 36 V 15,6 Ah, environ 562 Wh, pour 60 km annoncés. Les roues de 10 pouces ont des pneus gonflables à chambre à air. Elle freine par deux tambours et pèse 30 kg selon Wispeed et Boulanger."
+ ],
+ "specs": [
+  [
+   "Moteur",
+   "500 W nominaux, 800 W en pointe"
+  ],
+  [
+   "Vitesse",
+   "25 km/h en mode S, 20 km/h en mode D (selon le manuel)"
+  ],
+  [
+   "Autonomie annoncée",
+   "jusqu'à 60 km"
+  ],
+  [
+   "Batterie",
+   "36 V, 15,6 Ah, environ 562 Wh"
+  ],
+  [
+   "Poids",
+   "30 kg selon Wispeed et Boulanger (32,5 kg sur certaines fiches revendeurs)"
+  ],
+  [
+   "Charge max",
+   "120 kg"
+  ],
+  [
+   "Roues",
+   "10 pouces, pneus cross gonflables à chambre à air"
+  ],
+  [
+   "Freins",
+   "Tambour avant + tambour arrière"
+  ],
+  [
+   "Suspension",
+   "Avant et arrière"
+  ],
+  [
+   "Étanchéité",
+   "IPX6 chez certains revendeurs, IPX5 sur un comparateur"
+  ],
+  [
+   "Temps de charge",
+   "environ 8 h"
+  ]
+ ],
+ "pros": [
+  "Double suspension et pneus à profil cross pour les chemins (Wispeed, Cdiscount).",
+  "Deux freins à tambour, fermés et peu sensibles à la boue.",
+  "Batterie d'environ 562 Wh pour 60 km annoncés (Darty)."
+ ],
+ "cons": [
+  "30 kg au minimum : difficile à monter dans un escalier.",
+  "Aucune autonomie mesurée en test publié.",
+  "Recharge d'environ 8 h.",
+  "Les fiches ne s'accordent ni sur le poids ni sur l'indice d'étanchéité."
+ ],
+ "parts": [
+  {
+   "label": "Chargeur",
+   "size": "36 V (42 V), prise RCA",
+   "count": 2,
+   "to": "/piece/pack-chargeur-36v-42v-2a-connecteur-rca",
+   "cta": "Chargeurs 36 V RCA"
+  }
+ ],
+ "care": [
+  "Deux tambours : fais-les régler ensemble, un frein qui tire plus d'un côté déstabilise en descente.",
+  "La suspension se règle : adapte-la à ton poids et vérifie le serrage des axes après les sorties sur chemin.",
+  "Les pneus cross accrochent bien mais crèvent comme les autres : garde une chambre à air de rechange à la bonne cote."
+ ],
+ "faq": [
+  {
+   "q": "Quelle taille de pneu pour la Wispeed SUVPILOT 150 R ?",
+   "a": "Des pneus cross de 10 pouces à chambre à air. Wispeed ne publie pas leur cote : lis-la sur le flanc de ton pneu avant de commander."
+  },
+  {
+   "q": "La SUVPILOT 150 R a-t-elle des plaquettes de frein ?",
+   "a": "Non. Elle a un tambour à l'avant et un autre à l'arrière : ce sont des mâchoires internes, pas des plaquettes."
+  },
+  {
+   "q": "Combien de temps pour recharger la SUVPILOT 150 R ?",
+   "a": "Environ 8 heures selon Darty, Cdiscount et Boulanger."
+  },
+  {
+   "q": "Quelle différence entre la SUVPILOT 150 R et la SUVPILOT 480 ?",
+   "a": "La 480 passe en 48 V avec 18 Ah et 900 W en pointe, et ses freins sont annoncés à disque. La 150 R reste en 36 V 15,6 Ah, 800 W en pointe, avec deux tambours."
+  },
+  {
+   "q": "Peut-on rouler en SUVPILOT 150 R sur la route ?",
+   "a": "Oui, en mode S elle plafonne à 25 km/h, la limite légale, et n'a pas de siège. Tu la conduis sur la chaussée ou la piste cyclable avec une assurance responsabilité civile."
+  }
+ ],
+ "sources": [
+  {
+   "label": "Wispeed — trottinette SUVPILOT 150 R",
+   "url": "https://www.wispeed.net/3354-3426-trottinette-suvpilot-150-r.html"
+  },
+  {
+   "label": "Darty — Wispeed SUVPILOT 150 R",
+   "url": "https://www.darty.com/nav/achat/sports_loisirs/glisse_urbaine/trottinette_electrique/wispeed_suvpilot_150_b_r.html"
+  },
+  {
+   "label": "Manuel SUVPILOT 150 R (Fnac)",
+   "url": "https://static.fnac-static.com/multimedia/editorial/pdf/3483070030912.pdf"
+  },
+  {
+   "label": "Cdiscount — Wispeed SUVPILOT 150 R",
+   "url": "https://www.cdiscount.com/le-sport/mobilite-urbaine/trottinette-electrique-wispeed-suvpilot-150-r/f-1214801-wis3483070027400.html"
+  },
+  {
+   "label": "Boulanger — Wispeed SUVPILOT 150 R",
+   "url": "https://www.boulanger.com/ref/1237602"
+  }
+ ]
+}

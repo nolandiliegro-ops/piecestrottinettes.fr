@@ -1,0 +1,128 @@
+{
+ "displayName": "Wispeed X1050 Max",
+ "metaTitle": "Wispeed X1050 Max : fiche technique et pièces",
+ "metaDescription": "Wispeed X1050 Max : 350 W (700 W en pointe), batterie 36 V 13,2 Ah, 44 km mesurés au Labo Fnac, roues 10\", disque arrière. Fiche, pièces et FAQ.",
+ "intro": [
+  "La Wispeed X1050 Max est une trottinette de ville à roues de 10 pouces de la gamme X de Wispeed, vendue à la Fnac, chez Darty ou But. Le Labo Fnac l'a testée en novembre 2023 et lui trouve un bon rapport qualité-prix.",
+  "Elle a un moteur avant de 350 W (700 W en pointe) et une batterie de 36 V 13,2 Ah (475,2 Wh). Les fiches annoncent 40 à 50 km et le Labo Fnac en a mesuré 44. Elle freine par un disque arrière et un frein électronique avant, roule sur des pneus à chambre à air et pèse 17,5 kg."
+ ],
+ "specs": [
+  [
+   "Moteur",
+   "350 W nominaux, 700 W en pointe"
+  ],
+  [
+   "Vitesse",
+   "25 km/h (24,5 km/h mesurés par le Labo Fnac)"
+  ],
+  [
+   "Autonomie annoncée",
+   "40 km selon la notice, jusqu'à 50 km sur les fiches revendeurs"
+  ],
+  [
+   "Autonomie mesurée",
+   "44 km (Labo Fnac)"
+  ],
+  [
+   "Batterie",
+   "36 V, 13,2 Ah, 475,2 Wh"
+  ],
+  [
+   "Poids",
+   "17,5 kg (16,8 kg sur une notice Darty)"
+  ],
+  [
+   "Charge max",
+   "120 kg"
+  ],
+  [
+   "Roues",
+   "10 pouces, gonflables à chambre à air"
+  ],
+  [
+   "Freins",
+   "Électronique avant + disque arrière"
+  ],
+  [
+   "Étanchéité",
+   "IPX5"
+  ],
+  [
+   "Temps de charge",
+   "environ 7 h (6 h 55 mesurées par le Labo Fnac)"
+  ]
+ ],
+ "pros": [
+  "44 km mesurés sur une charge par le Labo Fnac.",
+  "Le Labo Fnac salue un « bon rapport qualité-prix ».",
+  "Roues de 10 pouces et charge maximale de 120 kg (Fnac, Darty)."
+ ],
+ "cons": [
+  "Les fiches ne s'accordent pas sur l'autonomie annoncée (40 ou 50 km).",
+  "Des acheteurs rapportent 23 à 27 km en usage réel (avis Fnac).",
+  "Un seul frein mécanique, le disque arrière.",
+  "Recharge d'environ 7 heures."
+ ],
+ "parts": [
+  {
+   "label": "Plaquettes de frein",
+   "size": "étrier type Xiaomi M365",
+   "count": 2,
+   "to": "/piece/plaquettes-de-frein-xiaomi-m365-pro-dualtron-forever",
+   "cta": "Plaquettes M365"
+  }
+ ],
+ "care": [
+  "Le disque arrière fait le gros du freinage : change les plaquettes dès que le levier touche la poignée.",
+  "Avant de commander un pneu, lis sa cote sur le flanc : les boutiques de pièces ne donnent pas toutes la même.",
+  "Recharge-la après chaque usage, sans attendre que la dernière barre clignote."
+ ],
+ "faq": [
+  {
+   "q": "Quelle taille de pneu pour la Wispeed X1050 Max ?",
+   "a": "Des pneus de 10 pouces à chambre à air. Une boutique de pièces la donne en 10x2.50-6.5, mais Wispeed ne publie pas la cote : lis-la sur le flanc de ton pneu avant de commander."
+  },
+  {
+   "q": "Quelle autonomie réelle pour la X1050 Max ?",
+   "a": "Le Labo Fnac a mesuré 44 km. Des acheteurs parlent plutôt de 23 à 27 km au quotidien, selon leur poids et leur parcours."
+  },
+  {
+   "q": "Quelles plaquettes pour la X1050 Max ?",
+   "a": "Notre catalogue relie son étrier arrière aux plaquettes de type Xiaomi M365. Compare quand même leur forme avec tes plaquettes usées avant de commander."
+  },
+  {
+   "q": "Combien de temps pour charger la X1050 Max ?",
+   "a": "Environ 7 heures ; le Labo Fnac a mesuré 6 h 55."
+  },
+  {
+   "q": "La X1050 Max a-t-elle le droit de rouler en ville ?",
+   "a": "Oui, elle sort d'usine limitée à 25 km/h, sans siège, ce qui la classe parmi les trottinettes électriques autorisées. Le trottoir reste interdit et l'assurance obligatoire."
+  }
+ ],
+ "sources": [
+  {
+   "label": "L'Éclaireur Fnac — test labo de la Wispeed X1050 Max",
+   "url": "https://leclaireur.fnac.com/test/363200-test-labo-de-la-wispeed-x1050-max-un-bon-rapport-qualite-prix/"
+  },
+  {
+   "label": "Fnac — Wispeed X1050 Max 700 W",
+   "url": "https://www.fnac.com/Trottinette-electrique-Wispeed-X1050-Max-700-W-Bleu-Nuit/a18125752/w-4"
+  },
+  {
+   "label": "Darty — Wispeed X1050 Max",
+   "url": "https://www.darty.com/nav/achat/sports_loisirs/glisse_urbaine/trottinette_electrique/wispeed_x1050_max_bleu_nuit.html"
+  },
+  {
+   "label": "Notice Wispeed X1050 Max (Darty)",
+   "url": "https://fc.darty.com/notices/b/6/f/e/b6fe4f1ccbe3604098c3528c3fec7bf1783566fe.pdf"
+  },
+  {
+   "label": "Fiche produit X1050 Max (But)",
+   "url": "https://media.but.fr/products/media/3483074000768/3483074000768_FP.pdf"
+  },
+  {
+   "label": "Trott en Provence — pneu Wispeed X1050 Max",
+   "url": "https://trott-en-provence.fr/pneu-trottinette-electrique-wispeed-x1050-max/"
+  }
+ ]
+}

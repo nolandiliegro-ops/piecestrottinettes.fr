@@ -1,0 +1,139 @@
+{
+ "displayName": "Vsett 11+ Super",
+ "metaTitle": "Vsett 11+ Super 72 : fiche technique et pièces",
+ "metaDescription": "Vsett 11+ Super 72 : bimoteur 72 V 2 × 2 000 W, batterie 32 ou 35 Ah, 76 km mesurés par Rider Guide, freins hydrauliques Nutt. Fiche, entretien, pièces.",
+ "intro": [
+  "La Vsett 11+ Super, souvent appelée Super 72, reprend le gabarit de la 11+ mais passe en 72 V : deux moteurs de 2 000 W nominaux et une batterie de 32 ou 35 Ah selon Vsett. Rider Guide a relevé 8 568 W en pointe sur sa version de 2 520 Wh et l'a pesée à 56,8 kg.",
+  "Lors de son test, Rider Guide a parcouru 76,3 km sur une charge à 33 km/h de moyenne, loin des 140 km annoncés pour la 35 Ah. Pneus gonflables de 11 x 4 pouces, freins hydrauliques Nutt, suspensions hydrauliques à l'avant et à l'arrière. En France, la voie publique lui impose malgré tout 25 km/h."
+ ],
+ "specs": [
+  [
+   "Moteurs",
+   "2 × 2 000 W nominaux (4 000 W) ; 8 568 W en pointe mesurés par Rider Guide"
+  ],
+  [
+   "Vitesse",
+   "25 km/h sur la voie publique"
+  ],
+  [
+   "Batterie",
+   "72 V : 32 Ah ou 35 Ah (2 520 Wh)"
+  ],
+  [
+   "Autonomie annoncée",
+   "60 à 125 km (32 Ah) ou 70 à 140 km (35 Ah) selon Vsett"
+  ],
+  [
+   "Autonomie mesurée",
+   "76,3 km à 33 km/h de moyenne (Rider Guide)"
+  ],
+  [
+   "Poids",
+   "56,8 kg mesurés (Rider Guide)"
+  ],
+  [
+   "Charge max",
+   "150 kg"
+  ],
+  [
+   "Roues",
+   "11 x 4 pouces, gonflables"
+  ],
+  [
+   "Freins",
+   "Disques hydrauliques Nutt avant et arrière, ABS électronique"
+  ],
+  [
+   "Suspension",
+   "Hydraulique avant et arrière"
+  ],
+  [
+   "Étanchéité",
+   "IP54 selon Vsett ; aucune selon le test de Rider Guide"
+  ],
+  [
+   "Chargeur",
+   "72 V (84 V en fin de charge), deux prises"
+  ],
+  [
+   "Temps de charge",
+   "un peu moins de 12 h avec les deux chargeurs 1,5 A (Rider Guide) ; 8 à 21 h selon la batterie et le chargeur (Vsett)"
+  ]
+ ],
+ "pros": [
+  "Autonomie mesurée de 76,3 km à 33 km/h de moyenne (Rider Guide).",
+  "Suspensions hydrauliques à l'avant et à l'arrière (Promech, Ride Electric).",
+  "Deux chargeurs utilisables en même temps pour réduire la recharge (Rider Guide)."
+ ],
+ "cons": [
+  "56,8 kg mesurés (Rider Guide) : pas question de la porter.",
+  "Pas d'indice d'étanchéité selon Rider Guide, alors que Vsett annonce IP54 : évite la pluie battante.",
+  "Autonomie réelle bien en dessous de l'annonce du fabricant (Rider Guide).",
+  "Une 72 V pensée pour des vitesses interdites sur route en France : bridée, elle n'exploite qu'une petite part de sa puissance."
+ ],
+ "parts": [
+  {
+   "label": "Plaquettes",
+   "size": "étrier Nutt, plaquettes format Sram Avid",
+   "count": 4,
+   "to": "/piece/plaquettes-de-freins-zero-10x-11x-vsett-10-storm-thunder-sram-avid-semi-metallique",
+   "cta": "Plaquettes Sram Avid"
+  },
+  {
+   "label": "Disque de frein",
+   "size": "160 mm, entraxe 44 mm",
+   "count": 6,
+   "to": "/piece/disque-de-frein-r6-160mm-entraxe-44m-3-couleurs-bleu",
+   "cta": "Disques 160 mm"
+  }
+ ],
+ "care": [
+  "Branche les deux chargeurs fournis en même temps : Rider Guide passe ainsi sous les 12 heures de charge.",
+  "Avec 72 V et près de 57 kg, les plaquettes travaillent dur : contrôle leur épaisseur régulièrement.",
+  "Sans étanchéité confirmée, sèche la trottinette et vérifie les prises de charge après une sortie sous la pluie."
+ ],
+ "faq": [
+  {
+   "q": "Quelle taille de pneu pour la Vsett 11+ Super ?",
+   "a": "Vsett annonce des pneus gonflables de 11 x 4 pouces. En boutique, la même taille peut s'écrire autrement, par exemple 90/65-6.5 : lis la cote du flanc de ton pneu avant de commander."
+  },
+  {
+   "q": "Quelle est l'autonomie réelle de la Vsett 11+ Super ?",
+   "a": "Rider Guide a mesuré 76,3 km sur une charge à 33 km/h de moyenne avec la batterie de 2 520 Wh. Vsett annonce jusqu'à 140 km, un chiffre obtenu en roulant beaucoup plus doucement."
+  },
+  {
+   "q": "Combien de temps pour recharger la Vsett 11+ Super ?",
+   "a": "Un peu moins de 12 heures avec les deux chargeurs 1,5 A branchés ensemble, selon Rider Guide. Avec un seul chargeur, compte le double."
+  },
+  {
+   "q": "Quel chargeur pour la Vsett 11+ Super ?",
+   "a": "Un chargeur 72 V, qui monte à 84 V en fin de charge. Un chargeur 60 V de Vsett 11+ ne convient pas."
+  },
+  {
+   "q": "Quelle différence entre la Vsett 11+ Super et la 11+ ?",
+   "a": "La Super passe de 60 à 72 V et de deux moteurs de 1 500 W à deux moteurs de 2 000 W, avec une suspension hydraulique à l'avant et à l'arrière."
+  },
+  {
+   "q": "Est-il légal de rouler en Vsett 11+ Super en France ?",
+   "a": "Sur la voie publique, uniquement en restant sous 25 km/h, comme n'importe quelle trottinette électrique. Le reste de ses performances est réservé aux circuits et terrains privés."
+  }
+ ],
+ "sources": [
+  {
+   "label": "Rider Guide — Vsett 11+ Super 72 review",
+   "url": "https://riderguide.com/reviews/vsett-11-plus-review/"
+  },
+  {
+   "label": "Vsett — fiche 11+ Super",
+   "url": "http://www.vsett.com/product/11.html"
+  },
+  {
+   "label": "Promech — Vsett 11+ Super 72",
+   "url": "https://promechbc.com/products/vsett-11-super-72"
+  },
+  {
+   "label": "Ride Electric — Vsett 11+ Super 72 V 35 Ah",
+   "url": "https://rideelectric.com.au/products/vsett-11-super-electric-scooter-72v-35lg"
+  }
+ ]
+}

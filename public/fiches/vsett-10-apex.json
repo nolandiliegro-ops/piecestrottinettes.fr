@@ -1,0 +1,149 @@
+{
+  "displayName": "Vsett 10 Apex",
+  "metaTitle": "Vsett 10 Apex : fiche technique, pièces et entretien",
+  "metaDescription": "Vsett 10 Apex : bimoteur 60 V 2 × 1 500 W, batterie amovible 20,8 ou 25,6 Ah, pneus 10x3, freins hydrauliques 4 pistons. Fiche, entretien et pièces.",
+  "intro": [
+    "La Vsett 10 Apex est la nouvelle génération de la Vsett 10+, et pas la même trottinette : elle garde le format 60 V bimoteur mais passe à deux moteurs de 1 500 W, des étriers hydrauliques à 4 pistons et une batterie amovible. Vsett Shop la vend en 20,8 Ah ou 25,6 Ah, de 1 799 à 2 099 € selon la version.",
+    "Elle pèse 36 kg et accepte 130 kg de charge, selon Vsett Australie et Vsett Shop. Pneus gonflables de 10 x 3 pouces, suspensions avant et arrière réglables : elle est taillée pour les longs trajets sur des routes abîmées. Sur la voie publique, elle reste bridée à 25 km/h."
+  ],
+  "specs": [
+    [
+      "Moteurs",
+      "2 × 1 500 W nominaux (3 000 W) ; 4 300 W en pointe selon Electrotraveller"
+    ],
+    [
+      "Vitesse",
+      "25 km/h sur la voie publique"
+    ],
+    [
+      "Batterie",
+      "60 V amovible : 20,8 Ah (1 248 Wh) ou 25,6 Ah (1 536 Wh)"
+    ],
+    [
+      "Autonomie annoncée",
+      "jusqu'à 90 km (20,8 Ah) ou 110 km (25,6 Ah) en mono-moteur selon Vsett Australie ; 85 km pour la 20,8 Ah selon Vsett Shop"
+    ],
+    [
+      "Poids",
+      "36 kg"
+    ],
+    [
+      "Charge max",
+      "130 kg"
+    ],
+    [
+      "Roues",
+      "10 x 3 pouces, gonflables"
+    ],
+    [
+      "Freins",
+      "Disques hydrauliques avant et arrière, étriers 4 pistons, frein électronique"
+    ],
+    [
+      "Suspension",
+      "Avant et arrière, réglables"
+    ],
+    [
+      "Étanchéité",
+      "IPX6 (selon Solution Trottinette)"
+    ],
+    [
+      "Temps de charge",
+      "environ 10 h (20,8 Ah) ou 12 h 30 (25,6 Ah) avec le chargeur 2 A ; 4 à 5 h avec un chargeur 5 A (Vsett Shop)"
+    ]
+  ],
+  "pros": [
+    "Étriers hydrauliques à 4 pistons sur les deux roues (Vsett Shop).",
+    "Batterie amovible, que l'on peut recharger sans monter la trottinette chez soi (Vsett Shop, essais vidéo).",
+    "Deux capacités au choix, 20,8 ou 25,6 Ah (Vsett Shop, Vsett Australie).",
+    "Suspensions avant et arrière réglables (Vsett Shop)."
+  ],
+  "cons": [
+    "36 kg : difficile à monter dans un escalier ou à glisser dans un coffre.",
+    "Recharge de 10 h à 12 h 30 avec le chargeur 2 A (Vsett Shop).",
+    "Aucune autonomie mesurée en test de presse à ce jour : les 90 et 110 km sont des chiffres du fabricant en mono-moteur.",
+    "Ses performances au-delà de 25 km/h ne s'utilisent que sur terrain privé."
+  ],
+  "parts": [
+    {
+      "label": "Pneu",
+      "size": "80/65-6 (10x3)",
+      "count": 11,
+      "to": "/piece/pneu-tubeless-80-65-6-10x3-cityroad-ewheel",
+      "cta": "Pneus 10x3"
+    },
+    {
+      "label": "Chambre à air",
+      "size": "80/65-6 (10x3), valve droite ou coudée",
+      "count": 3,
+      "to": "/piece/chambre-a-air-80-65-6-10x3-valve-droite-ewheel",
+      "cta": "Chambres à air 10x3"
+    },
+    {
+      "label": "Plaquettes",
+      "size": "étrier 4 pistons type Nutt",
+      "count": 4,
+      "to": "/piece/plaquettes-de-freins-shimano-d03s-nutt-4-pistons-thunder-3-nami-semi-metallique",
+      "cta": "Plaquettes Nutt 4 pistons"
+    }
+  ],
+  "care": [
+    "Étriers 4 pistons : contrôle l'épaisseur des plaquettes et fais purger le circuit dès que le levier devient spongieux.",
+    "Batterie amovible : garde les contacts du logement propres et secs avant de la remettre en place.",
+    "Pneus 10x3 : vérifie la pression avant chaque longue sortie, un pneu mou pince la chambre à air."
+  ],
+  "price": {
+    "text": "Vsett Shop France l'affiche de 1 799 à 2 099 € selon la batterie.",
+    "source": "vsett-shop.com"
+  },
+  "faq": [
+    {
+      "q": "Quelle taille de pneu pour la Vsett 10 Apex ?",
+      "a": "Des pneus gonflables de 10 x 3 pouces, que les boutiques notent aussi 80/65-6 ou 10x3.00-6. Lis la cote sur le flanc de ton pneu avant de commander."
+    },
+    {
+      "q": "Quelle est l'autonomie réelle de la Vsett 10 Apex ?",
+      "a": "Vsett annonce 90 ou 110 km en mono-moteur selon la batterie. Aucun test de presse n'a publié de mesure : en bimoteur et avec du dénivelé, compte nettement moins."
+    },
+    {
+      "q": "Combien de temps pour recharger la Vsett 10 Apex ?",
+      "a": "Environ 10 h pour la 20,8 Ah et 12 h 30 pour la 25,6 Ah avec le chargeur 2 A, ou 4 à 5 h avec un chargeur 5 A, selon Vsett Shop."
+    },
+    {
+      "q": "Quelle différence entre la Vsett 10 Apex et la Vsett 10+ ?",
+      "a": "La 10 Apex passe à deux moteurs de 1 500 W au lieu de 1 400 W, à des étriers 4 pistons et à une batterie amovible. Les étriers changent, donc les plaquettes aussi : vérifie le nom exact de ta trottinette avant de commander."
+    },
+    {
+      "q": "Peut-on rouler vite avec la Vsett 10 Apex en France ?",
+      "a": "Non sur route ni sur piste cyclable : le Code de la route plafonne toutes les trottinettes à 25 km/h. Sa puissance supplémentaire ne regarde que le terrain privé, et nous ne conseillons pas de la débrider."
+    }
+  ],
+  "sources": [
+    {
+      "label": "Vsett Shop France — Vsett 10 Apex",
+      "url": "https://vsett-shop.com/fr/produit/vsett-10-apex-2/"
+    },
+    {
+      "label": "Vsett Shop Europe — Vsett 10 Apex",
+      "url": "https://vsett-shop.com/product/vsett-10-apex/"
+    },
+    {
+      "label": "Vsett Australie — Vsett 10 Apex",
+      "url": "https://vsett.com.au/products/vsett-10-apex-electric-scooter"
+    },
+    {
+      "label": "Electrotraveller — Vsett 10 Apex",
+      "url": "https://electrotraveller.com/electric-scooters/vsett-10-apex/"
+    },
+    {
+      "label": "Solution Trottinette — gamme Vsett",
+      "url": "https://solution-trottinette.fr/trottinette-electrique/marque/vsett"
+    }
+  ],
+  "video": {
+    "id": "aA7IW_EZ9Aw",
+    "title": "Vsett 10 Apex - král komfortu, co se trochu zasekl v minulosti . Recenze.",
+    "channel": "Karotka",
+    "uploadDate": "2024-10-07"
+  }
+}

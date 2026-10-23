@@ -1,0 +1,161 @@
+{
+  "displayName": "Vsett 8",
+  "metaTitle": "Vsett 8 : fiche technique, pièces et entretien",
+  "metaDescription": "Vsett 8 : moteur 600 W, batterie 48 V de 15,6 à 21 Ah, pneu avant 8,5 x 3 gonflable et arrière plein, freins à tambour. Fiche, entretien et pièces.",
+  "intro": [
+    "La Vsett 8 est la petite citadine de Vsett, sortie en 2021. Un seul moteur arrière de 600 W, une batterie 48 V de 15,6 Ah, 19,2 Ah ou 21 Ah selon Vsett Shop, et un poids de 19 à 21 kg selon la batterie. La version 15,6 Ah, vendue sous le nom de Vsett 8 Lite, a sa propre fiche.",
+    "Elle roule sur un pneu gonflable de 8,5 x 3 pouces à l'avant et un pneu plein à l'arrière, avec des freins à tambour sur les deux roues et des suspensions avant et arrière. Freshly Charged estime l'autonomie réelle à 32 km en 15,6 Ah et 56 km en 21 Ah, loin des 60 à 90 km annoncés."
+  ],
+  "specs": [
+    [
+      "Moteur",
+      "600 W nominaux ; 850 W en pointe selon Max Blinker, 1 100 W selon Freshly Charged"
+    ],
+    [
+      "Vitesse",
+      "25 km/h sur la voie publique"
+    ],
+    [
+      "Batterie",
+      "48 V : 15,6 Ah (749 Wh), 19,2 Ah (922 Wh) ou 21 Ah (1 008 Wh)"
+    ],
+    [
+      "Autonomie annoncée",
+      "60, 80 ou 90 km selon la batterie, en mode éco (Vsett Shop)"
+    ],
+    [
+      "Autonomie estimée",
+      "32 km (15,6 Ah) à 56 km (21 Ah) selon Freshly Charged ; 35 à 50 km selon Gyroroue Shop"
+    ],
+    [
+      "Poids",
+      "19 kg (15,6 Ah) à 21 kg (21 Ah)"
+    ],
+    [
+      "Charge max",
+      "120 kg"
+    ],
+    [
+      "Roues",
+      "avant 8,5 x 3 pouces gonflable, arrière 8 pouces plein (200 x 60)"
+    ],
+    [
+      "Freins",
+      "Tambour avant et arrière, frein électronique"
+    ],
+    [
+      "Suspension",
+      "Avant et arrière"
+    ],
+    [
+      "Étanchéité",
+      "IP54"
+    ],
+    [
+      "Chargeur",
+      "48 V (54,6 V en fin de charge)"
+    ],
+    [
+      "Temps de charge",
+      "7 h (15,6 Ah), 9 h 30 (19,2 Ah) ou 10 h 30 (21 Ah) avec le chargeur 2 A (Vsett Shop)"
+    ]
+  ],
+  "pros": [
+    "Deuxième place ex aequo du comparatif de neuf trottinettes du TCS en 2023 (TCS).",
+    "Pneu arrière plein : une crevaison possible en moins.",
+    "Trois capacités de batterie au choix (Vsett Shop).",
+    "Freins à tambour, peu exigeants en entretien."
+  ],
+  "cons": [
+    "Accélération brusque et modes de conduite réglables uniquement par l'application (TCS).",
+    "Autonomie réelle bien inférieure à l'annonce (Freshly Charged).",
+    "Pneu arrière plein : moins de confort sur les pavés.",
+    "Un seul moteur : la vitesse chute nettement en côte avec un adulte."
+  ],
+  "parts": [
+    {
+      "label": "Pneu",
+      "size": "8,5 x 3 pouces (avant)",
+      "count": 2,
+      "to": "/piece/pneu-8-5x3-0-semi-off-road-vsett-8-9-renforce",
+      "cta": "Pneus 8,5 x 3"
+    },
+    {
+      "label": "Pneu plein",
+      "size": "8,5 x 3 pouces (conversion de la roue avant)",
+      "count": 1,
+      "to": "/piece/pneu-plein-85x3-vsett-8-9-kukirin-g2-pro",
+      "cta": "Pneu plein 8,5 x 3"
+    },
+    {
+      "label": "Chargeur",
+      "size": "48 V → 54,6 V, prise GX16-3",
+      "count": 2,
+      "to": "/piece/chargeur-48v-546v-2a-connecteur-gx16-3p",
+      "cta": "Chargeurs 48 V"
+    }
+  ],
+  "care": [
+    "Freins à tambour : retends le câble dès que la course du levier s'allonge.",
+    "Pneu avant gonflable : vérifie la pression chaque semaine, une roue de 8,5 pouces se pince vite.",
+    "Pneu arrière plein : surveille l'usure de la gomme, il ne te préviendra pas par une crevaison."
+  ],
+  "price": {
+    "text": "Prix relevés : de 649 à 1 099 € selon la batterie chez Gyroroue Shop ; 1 149,99 € pour la 21 Ah chez Fnac.",
+    "source": "gyroroue-shop.fr, fnac.com"
+  },
+  "faq": [
+    {
+      "q": "Quelle taille de pneu pour la Vsett 8 ?",
+      "a": "À l'avant, un pneu gonflable de 8,5 x 3 pouces. À l'arrière, un pneu plein de 8 pouces (200 x 60). Lis la cote sur le flanc avant de commander."
+    },
+    {
+      "q": "La Vsett 8 a-t-elle des plaquettes de frein ?",
+      "a": "Non. Elle freine avec deux tambours, à l'avant et à l'arrière, aidés d'un frein électronique."
+    },
+    {
+      "q": "Quelle est l'autonomie réelle de la Vsett 8 ?",
+      "a": "Freshly Charged l'estime à environ 32 km avec la batterie de 15,6 Ah et 56 km avec la 21 Ah. Vsett annonce 60 à 90 km en mode éco."
+    },
+    {
+      "q": "Quelle différence entre la Vsett 8 et la Vsett 8+ ?",
+      "a": "La 8+ a deux moteurs de 600 W et des pneus pleins de 8 pouces à l'avant comme à l'arrière. La Vsett 8 n'a qu'un moteur et garde un pneu gonflable à l'avant."
+    },
+    {
+      "q": "Jusqu'où la Vsett 8 peut-elle rouler en France ?",
+      "a": "Sur la voie publique, jusqu'à 25 km/h : c'est le plafond légal de toutes les trottinettes électriques. Ce qu'elle sait faire au-dessus est réservé au terrain privé."
+    }
+  ],
+  "sources": [
+    {
+      "label": "Vsett Shop France — Vsett 8",
+      "url": "https://vsett-shop.com/fr/produit/vsett-8/"
+    },
+    {
+      "label": "Freshly Charged — Vsett 8 review",
+      "url": "https://freshlycharged.com/vsett-electric-scooter-review/"
+    },
+    {
+      "label": "Gyroroue Shop — Vsett 8",
+      "url": "https://www.gyroroue-shop.fr/boutique/trottinette-electrique/vsett/vsett-8-trottinette-electrique-vsett"
+    },
+    {
+      "label": "Maz Rider — Vsett 8 48 V 21 Ah",
+      "url": "https://mazrider.com/en/products/vsett-8-48v-21ah-electric-scooter"
+    },
+    {
+      "label": "Fnac — Vsett 8 Super 21 Ah",
+      "url": "https://www.fnac.com/Trottinette-electrique-Vsett-8-Super-21-AH-600-W-Vert-et-Noir/a15825415/w-4"
+    },
+    {
+      "label": "Max Blinker — Vsett 8",
+      "url": "https://www.maxblinker.com/en/electric-scooters/vsett-8"
+    }
+  ],
+  "video": {
+    "id": "6k3afvba-dY",
+    "title": "Test comparatif des 9 meilleures trottinettes électriques 2023 - TCS Suisse",
+    "channel": "TCS Schweiz-Suisse-Svizzero",
+    "uploadDate": "2023-08-02"
+  }
+}

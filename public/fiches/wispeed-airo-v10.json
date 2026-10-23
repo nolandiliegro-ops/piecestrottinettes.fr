@@ -1,0 +1,124 @@
+{
+ "displayName": "Wispeed AIRO V10",
+ "metaTitle": "Wispeed AIRO V10 : fiche technique et entretien",
+ "metaDescription": "Wispeed AIRO V10 : 400 W (700 W en pointe), batterie 36 V 10,4 Ah, 34,8 km mesurés au Labo Fnac, double suspension. Fiche, entretien et FAQ.",
+ "intro": [
+  "La Wispeed AIRO V10 est le modèle du milieu de la série AIRO de Wispeed, la marque de mobilité du groupe Logicom. Elle se place entre l'AIRO V6, plus petite, et l'AIRO V16, qui garde le même moteur avec une plus grosse batterie. Wispeed l'affiche à 329 € sur son site.",
+  "Elle a un moteur de 400 W (700 W en pointe), une batterie de 36 V 10,4 Ah, des roues gonflables de 10 pouces et une suspension à l'avant et à l'arrière. Le freinage combine un disque arrière et un frein électronique avant. Elle pèse 19,65 kg et le Labo Fnac a mesuré 34,8 km d'autonomie."
+ ],
+ "specs": [
+  [
+   "Moteur",
+   "400 W nominaux, 700 W en pointe selon Wispeed et Boulanger (680 W sur la fiche Darty)"
+  ],
+  [
+   "Vitesse",
+   "25 km/h (23,5 km/h mesurés par le Labo Fnac)"
+  ],
+  [
+   "Autonomie annoncée",
+   "jusqu'à 40 km"
+  ],
+  [
+   "Autonomie mesurée",
+   "34,8 km (Labo Fnac)"
+  ],
+  [
+   "Batterie",
+   "36 V, 10,4 Ah, environ 374 Wh"
+  ],
+  [
+   "Poids",
+   "19,65 kg"
+  ],
+  [
+   "Charge max",
+   "120 kg"
+  ],
+  [
+   "Roues",
+   "10 pouces, gonflables"
+  ],
+  [
+   "Freins",
+   "Électronique avant + disque arrière"
+  ],
+  [
+   "Suspension",
+   "Avant et arrière"
+  ],
+  [
+   "Étanchéité",
+   "IP65 selon Wispeed, IPX5 sur les fiches Fnac et Darty"
+  ],
+  [
+   "Temps de charge",
+   "10 à 11 h annoncées, 10 h 15 mesurées par le Labo Fnac"
+  ]
+ ],
+ "pros": [
+  "Suspension avant et arrière avec des roues gonflables de 10 pouces (Wispeed, Darty).",
+  "Autonomie mesurée proche de l'annonce : 34,8 km pour 40 km annoncés (Labo Fnac).",
+  "Charge maximale de 120 kg (Darty)."
+ ],
+ "cons": [
+  "Recharge longue : 10 h 15 mesurées par le Labo Fnac.",
+  "Le Labo Fnac la juge un peu juste en puissance (« manque un peu de souffle »).",
+  "Un seul frein mécanique, le disque arrière.",
+  "Près de 20 kg à porter une fois pliée."
+ ],
+ "parts": [],
+ "care": [
+  "Ton seul frein mécanique est le disque arrière : fais contrôler les plaquettes dès que le levier s'enfonce plus loin.",
+  "Avec des pneus gonflables, vérifie la pression chaque mois : un pneu mou use la batterie et crève plus vite.",
+  "La recharge dure plus de 10 h : branche-la le soir pour la retrouver pleine au matin."
+ ],
+ "price": {
+  "text": "Prix affiché par Wispeed : 329 €. Boulanger l'a référencée à 349,99 €.",
+  "source": "wispeed.net, Boulanger"
+ },
+ "faq": [
+  {
+   "q": "Quelle taille de pneu pour la Wispeed AIRO V10 ?",
+   "a": "Des pneus gonflables de 10 pouces à l'avant et à l'arrière. Wispeed ne publie pas la cote complète : lis-la sur le flanc de ton pneu avant de commander un pneu ou une chambre à air."
+  },
+  {
+   "q": "Quelle autonomie réelle pour l'AIRO V10 ?",
+   "a": "Le Labo Fnac a parcouru 34,8 km sur une charge, pour 40 km annoncés par Wispeed. Ton poids, le relief et le froid peuvent faire baisser ce chiffre."
+  },
+  {
+   "q": "Combien de temps pour recharger l'AIRO V10 ?",
+   "a": "Wispeed annonce 10 à 11 heures. Le Labo Fnac a mesuré 10 h 15 pour une charge complète."
+  },
+  {
+   "q": "Quelle différence entre l'AIRO V10 et l'AIRO V16 ?",
+   "a": "Même moteur de 400 W, mais la V16 a une batterie de 15,6 Ah contre 10,4 Ah pour la V10, et Wispeed lui annonce 60 km au lieu de 40 km. La V16 pèse 20,5 kg."
+  },
+  {
+   "q": "Peut-on rouler avec l'AIRO V10 sur la voie publique ?",
+   "a": "Oui. Livrée bridée à 25 km/h et sans siège, elle entre dans la catégorie des engins de déplacement personnel motorisés. Le trottoir t'est interdit et il faut avoir au moins 12 ans."
+  }
+ ],
+ "sources": [
+  {
+   "label": "Wispeed — trottinette AIRO V10",
+   "url": "https://www.wispeed.net/3350-trottinette-airo-v10.html"
+  },
+  {
+   "label": "Boulanger — Wispeed AIRO V10",
+   "url": "https://www.boulanger.com/ref/1227207"
+  },
+  {
+   "label": "Darty — Wispeed W-AIRO V10",
+   "url": "https://www.darty.com/nav/achat/sports_loisirs/glisse_urbaine/trottinette_electrique/wispeed_w_airo_v10_black.html"
+  },
+  {
+   "label": "Fnac — Wispeed AIRO V10 400 W",
+   "url": "https://www.fnac.com/Trottinette-electrique-Wispeed-Airo-V10-400-W-Noir/a21971757/w-4"
+  },
+  {
+   "label": "L'Éclaireur Fnac — test labo de la Wispeed W-AIRO V10",
+   "url": "https://leclaireur.fnac.com/test/649567-test-labo-de-la-wispeed-w-airo-v10-black-un-modele-abordable-qui-manque-un-peu-de-souffle/"
+  }
+ ]
+}

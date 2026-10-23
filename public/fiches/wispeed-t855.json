@@ -1,0 +1,128 @@
+{
+ "displayName": "Wispeed T855",
+ "metaTitle": "Wispeed T855 : fiche technique et entretien",
+ "metaDescription": "Wispeed T855 : 300 W (500 W en pointe), batterie 36 V 7,8 Ah, roues 8,5\", 22 km mesurés par Les Numériques, 14,5 kg. Fiche, entretien et FAQ.",
+ "intro": [
+  "La Wispeed T855 est la trottinette d'entrée de gamme que Wispeed a lancée vers 2021 autour de 349 €, testée par Les Numériques et Frandroid. Elle a une version Pro, avec une batterie plus grosse, qui a sa propre fiche. Vérifie bien le modèle inscrit sur ta trottinette.",
+  "Elle a un moteur avant de 300 W (500 W en pointe), une batterie de 36 V 7,8 Ah (280,8 Wh), des roues gonflables de 8,5 pouces et un frein à disque. Wispeed annonce 30 km ; Les Numériques en a mesuré 22 et Frandroid 19,25 avec un pilote de 100 kg. Elle pèse 14,5 kg."
+ ],
+ "specs": [
+  [
+   "Moteur",
+   "300 W nominaux, 500 W en pointe"
+  ],
+  [
+   "Vitesse",
+   "25 km/h"
+  ],
+  [
+   "Autonomie annoncée",
+   "jusqu'à 30 km"
+  ],
+  [
+   "Autonomie mesurée",
+   "22 km (Les Numériques, pilote de 65 kg) ; 19,25 km et 11,8 km en montée (Frandroid, pilote de 100 kg)"
+  ],
+  [
+   "Batterie",
+   "36 V, 7,8 Ah, 280,8 Wh"
+  ],
+  [
+   "Poids",
+   "14,5 kg"
+  ],
+  [
+   "Charge max",
+   "100 kg"
+  ],
+  [
+   "Roues",
+   "8,5 pouces, gonflables à chambre à air"
+  ],
+  [
+   "Freins",
+   "Disque (moteur à l'avant)"
+  ],
+  [
+   "Étanchéité",
+   "IPX4 (selon la Fnac)"
+  ],
+  [
+   "Temps de charge",
+   "4 h selon Frandroid, 5 h 10 mesurées par Les Numériques"
+  ]
+ ],
+ "pros": [
+  "14,5 kg, facile à porter (Les Numériques).",
+  "Recharge en 4 à 5 heures (Frandroid, Les Numériques).",
+  "Testée par deux médias, avec des mesures d'autonomie publiées."
+ ],
+ "cons": [
+  "Autonomie réelle loin de l'annonce : 19 à 22 km mesurés pour 30 km annoncés.",
+  "Frandroid la juge « exaltante mais insuffisante ».",
+  "Un testeur sur YouTube a relevé du jeu dans la direction après moins de 100 km.",
+  "Charge maximale limitée à 100 kg."
+ ],
+ "parts": [
+  {
+   "label": "Chargeur",
+   "size": "36 V (42 V), prise jack DC 5,5 x 2,5 mm",
+   "count": 1,
+   "to": "/piece/pack-chargeur-36v-adaptateur-dc5-5x2-5",
+   "cta": "Chargeur 36 V"
+  }
+ ],
+ "care": [
+  "Contrôle régulièrement le jeu de la potence et du pliage : un testeur en a trouvé dès les premiers kilomètres.",
+  "Sur des roues de 8,5 pouces, une pression trop basse fait vite pincer la chambre à air : gonfle toutes les deux semaines.",
+  "Avec 280 Wh, ne vide pas la batterie à zéro : elle s'arrête d'un coup quand elle est à plat."
+ ],
+ "price": {
+  "text": "Prix de lancement : 349 € selon Frandroid, environ 350 € selon Les Numériques.",
+  "source": "Frandroid, Les Numériques"
+ },
+ "faq": [
+  {
+   "q": "Quelle taille de pneu pour la Wispeed T855 ?",
+   "a": "Des roues gonflables de 8,5 pouces avec chambre à air. La cote complète n'est pas confirmée par les sources : lis-la sur le flanc de ton pneu avant de commander une chambre."
+  },
+  {
+   "q": "Quelle autonomie réelle pour la Wispeed T855 ?",
+   "a": "Les Numériques a mesuré 22 km avec un pilote de 65 kg. Frandroid a relevé 19,25 km sur parcours standard et 11,8 km en montée avec 100 kg."
+  },
+  {
+   "q": "Combien de temps pour charger la T855 ?",
+   "a": "4 heures selon Frandroid, 5 h 10 mesurées par Les Numériques."
+  },
+  {
+   "q": "Quelle différence entre la T855 et la T855 Pro ?",
+   "a": "La batterie : 7,8 Ah et 30 km annoncés pour la T855, 10,4 Ah et 40 km pour la Pro. La Pro pèse environ 1 kg de plus."
+  },
+  {
+   "q": "La T855 est-elle conforme à la loi française ?",
+   "a": "Oui, elle est limitée d'usine à 25 km/h et n'a pas de siège. Rouler plus vite sur la voie publique est interdit, tout comme le trottoir."
+  }
+ ],
+ "sources": [
+  {
+   "label": "Les Numériques — test Wispeed T855",
+   "url": "https://www.lesnumeriques.com/trottinette-electrique/wispeed-t855-p65299/test.html"
+  },
+  {
+   "label": "Frandroid — test de la Wispeed T855",
+   "url": "https://www.frandroid.com/marques/segway-ninebot/1458436_test-de-la-wispeed-t855-une-trottinette-electrique-exaltante-mais-insuffisante"
+  },
+  {
+   "label": "Notice Wispeed T855 (Darty)",
+   "url": "https://fc.darty.com/notices/7/5/2/f/752fcb132435030bc00837308838c4ecf9fa11aa.pdf"
+  },
+  {
+   "label": "Fnac — Wispeed T855 300 W",
+   "url": "https://www.fnac.com/Trottinette-electrique-Wispeed-T855-300-W-Kaki/a17457562/w-4"
+  },
+  {
+   "label": "YouTube — retour après quelques kilomètres sur la Wispeed T855",
+   "url": "https://www.youtube.com/watch?v=IRU45DswkZs"
+  }
+ ]
+}

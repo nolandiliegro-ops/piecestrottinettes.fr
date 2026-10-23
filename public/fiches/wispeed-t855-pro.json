@@ -1,0 +1,120 @@
+{
+ "displayName": "Wispeed T855 Pro",
+ "metaTitle": "Wispeed T855 Pro : fiche technique et entretien",
+ "metaDescription": "Wispeed T855 Pro : 300 W (500 W en pointe), batterie 36 V 10,4 Ah, 37,4 km mesurés au Labo Fnac, roues 8,5\", 15,5 kg. Fiche, entretien et FAQ.",
+ "intro": [
+  "La Wispeed T855 Pro est la version longue autonomie de la T855. Elle garde le même format compact à roues de 8,5 pouces, mais monte une batterie de 10,4 Ah au lieu de 7,8 Ah. Un comparateur la référence depuis août 2021. La T855 standard a sa propre fiche.",
+  "Son moteur avant fait 300 W en nominal et 500 W en pointe, sa batterie 36 V 10,4 Ah, environ 374 Wh. Wispeed annonce 40 km et le Labo Fnac en a mesuré 37,4. Elle freine par un disque arrière et le moteur avant, n'a pas de suspension et pèse 15,5 kg au Labo Fnac."
+ ],
+ "specs": [
+  [
+   "Moteur",
+   "300 W nominaux, 500 W en pointe (certaines fiches marchandes affichent 500 W sans préciser)"
+  ],
+  [
+   "Vitesse",
+   "25 km/h (26,3 km/h mesurés par le Labo Fnac)"
+  ],
+  [
+   "Autonomie annoncée",
+   "jusqu'à 40 km"
+  ],
+  [
+   "Autonomie mesurée",
+   "37,4 km (Labo Fnac)"
+  ],
+  [
+   "Batterie",
+   "36 V, 10,4 Ah, environ 374 Wh"
+  ],
+  [
+   "Poids",
+   "15 kg selon les revendeurs, 15,5 kg mesurés par le Labo Fnac"
+  ],
+  [
+   "Charge max",
+   "100 kg"
+  ],
+  [
+   "Roues",
+   "8,5 pouces, gonflables à chambre à air"
+  ],
+  [
+   "Freins",
+   "Électronique avant + disque arrière"
+  ],
+  [
+   "Suspension",
+   "Aucune"
+  ],
+  [
+   "Étanchéité",
+   "IPX4"
+  ],
+  [
+   "Temps de charge",
+   "4 h selon le manuel, 4 h 42 mesurées par le Labo Fnac"
+  ]
+ ],
+ "pros": [
+  "37,4 km mesurés pour 40 km annoncés (Labo Fnac).",
+  "Recharge en moins de 5 heures (Labo Fnac).",
+  "Format compact de 15,5 kg avec roues gonflables."
+ ],
+ "cons": [
+  "Pas de suspension (Labo Fnac).",
+  "Un seul frein mécanique, le disque arrière.",
+  "Charge maximale limitée à 100 kg.",
+  "Roues de 8,5 pouces, sensibles aux trous et aux pavés."
+ ],
+ "parts": [],
+ "care": [
+  "Le disque arrière fait l'essentiel du freinage : surveille l'usure des plaquettes et le serrage du câble.",
+  "Gonfle les pneus toutes les deux semaines : en 8,5 pouces sans suspension, c'est ton seul amorti.",
+  "Contrôle chaque mois le serrage du pliage et de la potence : un jeu qui s'installe se répare mieux tôt que tard."
+ ],
+ "faq": [
+  {
+   "q": "Quelle taille de pneu pour la Wispeed T855 Pro ?",
+   "a": "Des pneus gonflables de 8,5 pouces avec chambre à air. Les sources ne donnent pas la cote complète : lis-la sur le flanc de ton pneu avant de commander."
+  },
+  {
+   "q": "La T855 Pro tient-elle ses 40 km ?",
+   "a": "Presque : le Labo Fnac a mesuré 37,4 km. Avec un poids plus élevé ou du relief, prévois moins."
+  },
+  {
+   "q": "Combien de temps de charge pour la T855 Pro ?",
+   "a": "4 heures selon le manuel, 4 h 42 mesurées par le Labo Fnac."
+  },
+  {
+   "q": "T855 Pro ou T855 : comment les distinguer ?",
+   "a": "La Pro a une batterie de 10,4 Ah (40 km annoncés), la standard 7,8 Ah (30 km). Le modèle exact est inscrit sur l'étiquette sous le plateau."
+  },
+  {
+   "q": "La T855 Pro est-elle homologuée pour la rue ?",
+   "a": "Elle respecte le cadre des engins de déplacement personnel motorisés : 25 km/h maximum d'usine, aucun siège. Pistes cyclables et chaussée, pas de trottoir, 12 ans minimum."
+  }
+ ],
+ "sources": [
+  {
+   "label": "Logicom — Wispeed T855 et T855 Pro",
+   "url": "https://www.logicom-europe.com/fr/trottinettes/785-wispeed-t855-t855pro.html"
+  },
+  {
+   "label": "L'Éclaireur Fnac — test labo de la Wispeed T855 Pro",
+   "url": "https://leclaireur.fnac.com/test/291390-test-labo-de-la-wispeed-t855-pro/"
+  },
+  {
+   "label": "Fnac — Wispeed T855 Pro",
+   "url": "https://www.fnac.com/Trottinette-electrique-Wispeed-T855-Pro-500-W-Noir/a14701962/w-4"
+  },
+  {
+   "label": "Manuel Wispeed T855 Pro (Boulanger)",
+   "url": "https://boulanger.scene7.com/is/content/Boulanger/3483079716527_n_0"
+  },
+  {
+   "label": "LDLC — Wispeed T855 Pro",
+   "url": "https://www.ldlc.com/fiche/PB00347090.html"
+  }
+ ]
+}

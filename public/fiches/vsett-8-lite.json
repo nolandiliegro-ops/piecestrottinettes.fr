@@ -1,0 +1,134 @@
+{
+  "displayName": "Vsett 8 Lite",
+  "metaTitle": "Vsett 8 Lite : fiche technique et entretien",
+  "metaDescription": "Vsett 8 Lite : moteur 600 W, batterie 48 V 15,6 Ah (749 Wh), 19 kg, pneu avant 8,5 pouces gonflable et arrière plein, freins à tambour. Fiche et entretien.",
+  "intro": [
+    "La Vsett 8 Lite n'est pas un modèle à part : c'est la Vsett 8 avec sa plus petite batterie, une 48 V de 15,6 Ah (749 Wh). Même moteur arrière de 600 W, mêmes freins à tambour, mais un poids ramené à 19 kg selon Le Ranch et Full Mobility, pour 120 kg de charge maximale.",
+    "Les revendeurs lui prêtent de 45 à 80 km d'autonomie ; Freshly Charged estime plutôt 32 km en usage réel avec cette batterie. Pneu gonflable de 8,5 pouces à l'avant, pneu plein de 8 pouces à l'arrière. Vendue entre 899 et 1 029 € dans les boutiques relevées, elle vise les trajets urbains courts."
+  ],
+  "specs": [
+    [
+      "Moteur",
+      "600 W nominaux (puissance crête non publiée pour cette version)"
+    ],
+    [
+      "Vitesse",
+      "25 km/h sur la voie publique"
+    ],
+    [
+      "Batterie",
+      "48 V, 15,6 Ah (749 Wh)"
+    ],
+    [
+      "Autonomie annoncée",
+      "de 45 à 80 km selon les revendeurs"
+    ],
+    [
+      "Autonomie estimée",
+      "environ 32 km (selon Freshly Charged)"
+    ],
+    [
+      "Poids",
+      "19 kg"
+    ],
+    [
+      "Charge max",
+      "120 kg"
+    ],
+    [
+      "Roues",
+      "avant 8,5 pouces gonflable, arrière 8 pouces plein"
+    ],
+    [
+      "Freins",
+      "Tambour avant et arrière, frein électronique"
+    ],
+    [
+      "Suspension",
+      "Avant et arrière"
+    ],
+    [
+      "Étanchéité",
+      "IPX4 (selon Fnac)"
+    ],
+    [
+      "Chargeur",
+      "48 V (54,6 V en fin de charge)"
+    ],
+    [
+      "Temps de charge",
+      "7 h avec un chargeur 2 A (Vsett Shop) ; 3 h 30 avec deux chargeurs 2 A (Urbanmoov)"
+    ]
+  ],
+  "pros": [
+    "19 kg, la plus légère des Vsett 8 (Le Ranch, Full Mobility).",
+    "Recharge en 7 h, ou 3 h 30 en branchant deux chargeurs (Urbanmoov).",
+    "Freins à tambour, quasiment sans réglage au quotidien."
+  ],
+  "cons": [
+    "Autonomie réelle estimée à 32 km (Freshly Charged) : à réserver aux trajets courts.",
+    "Un seul moteur de 600 W, vite à la peine en côte.",
+    "Pneu arrière plein, plus dur sur les pavés.",
+    "Indice d'étanchéité qui varie selon les fiches : IPX4 chez Fnac, IP54 ailleurs."
+  ],
+  "parts": [],
+  "care": [
+    "Roule avec le pneu avant bien gonflé : sur une roue de 8,5 pouces, quelques dixièmes de bar en moins suffisent à pincer la chambre.",
+    "Les tambours se règlent au câble : rattrape le jeu dès que le levier vient toucher la poignée.",
+    "Recharge la batterie après chaque usage et évite de la laisser vide plusieurs jours."
+  ],
+  "price": {
+    "text": "Prix relevés chez des revendeurs français : 899 € (épuisé), 999 € et 1 029 €.",
+    "source": "le-ranch.fr, urbanmoov.fr"
+  },
+  "faq": [
+    {
+      "q": "Quelle taille de pneu pour la Vsett 8 Lite ?",
+      "a": "Un pneu gonflable de 8,5 pouces à l'avant et un pneu plein de 8 pouces à l'arrière. Lis la cote sur le flanc de chaque pneu avant de commander."
+    },
+    {
+      "q": "Quelle est l'autonomie réelle de la Vsett 8 Lite ?",
+      "a": "Autour de 32 km selon l'estimation de Freshly Charged pour la batterie de 15,6 Ah. Les chiffres de 45 à 80 km des revendeurs supposent une conduite très douce."
+    },
+    {
+      "q": "Quelle différence entre la Vsett 8 Lite et les autres Vsett 8 ?",
+      "a": "Seulement la batterie : 15,6 Ah pour la Lite, contre 19,2 ou 21 Ah pour les versions plus chères, qui pèsent jusqu'à 2 kg de plus."
+    },
+    {
+      "q": "Quel chargeur pour la Vsett 8 Lite ?",
+      "a": "Un chargeur 48 V, qui délivre 54,6 V en fin de charge. Vérifie la tension et la prise sur ton chargeur d'origine avant d'en racheter un."
+    },
+    {
+      "q": "La Vsett 8 Lite est-elle légale sur piste cyclable ?",
+      "a": "Oui, tant qu'elle reste à 25 km/h maximum, la limite imposée en France aux trottinettes électriques. Plus vite, c'est uniquement sur terrain privé."
+    }
+  ],
+  "sources": [
+    {
+      "label": "Le Ranch — Vsett 8 Lite",
+      "url": "https://www.le-ranch.fr/product-page/vsett-8-lite"
+    },
+    {
+      "label": "Urbanmoov — Vsett 8 Lite 48 V 15,6 Ah",
+      "url": "https://www.urbanmoov.fr/boutique/VSETT-8-48-V-15-6AH-LITE-New-display-LCD-p559626627"
+    },
+    {
+      "label": "Full Mobility — Vsett 8 Lite",
+      "url": "https://full-mobility.com/produit/trottinette-electrique-vsett-8-lite-48v-15-6-ah/"
+    },
+    {
+      "label": "Freshly Charged — Vsett 8 review",
+      "url": "https://freshlycharged.com/vsett-electric-scooter-review/"
+    },
+    {
+      "label": "Vsett Shop France — Vsett 8",
+      "url": "https://vsett-shop.com/fr/produit/vsett-8/"
+    }
+  ],
+  "video": {
+    "id": "vQ1Y3k-Fabo",
+    "title": "PRESENTATION VSETT 8 ! LA TROTTINETTE ÉLECTRIQUE IDÉALE !",
+    "channel": "Rider X",
+    "uploadDate": "2023-03-08"
+  }
+}

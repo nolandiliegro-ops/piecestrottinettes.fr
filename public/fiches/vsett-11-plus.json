@@ -1,0 +1,156 @@
+{
+  "displayName": "Vsett 11+",
+  "metaTitle": "Vsett 11+ : fiche technique, pièces et entretien",
+  "metaDescription": "Vsett 11+ : bimoteur 60 V 2 × 1 500 W, batterie 31,2 ou 42 Ah, pneus gonflables de 11 pouces, freins hydrauliques Nutt. Fiche, entretien et pièces.",
+  "intro": [
+    "La Vsett 11+ est la grande 60 V de Vsett, apparue en 2021 avec une batterie de 31,2 Ah, puis en 42 Ah à partir de 2022 selon Urbalt. À ne pas confondre avec la 11+ Super, une 72 V qui a sa propre fiche. Elle embarque deux moteurs de 1 500 W nominaux, jusqu'à 6 000 W en pointe selon Max Blinker.",
+    "Son poids tourne autour de 58 kg selon Vsett, 61 kg selon Vsett Shop, pour 150 kg de charge admise. Pneus gonflables de 11 pouces, freins à disque hydrauliques Nutt à l'avant et à l'arrière : c'est une trottinette de grand gabarit, faite pour les longues distances. Sur la voie publique, elle doit rester à 25 km/h."
+  ],
+  "specs": [
+    [
+      "Moteurs",
+      "2 × 1 500 W nominaux ; jusqu'à 6 000 W en pointe (selon Max Blinker)"
+    ],
+    [
+      "Vitesse",
+      "25 km/h sur la voie publique"
+    ],
+    [
+      "Batterie",
+      "60 V : 31,2 Ah (1 872 Wh) ou 42 Ah (2 520 Wh)"
+    ],
+    [
+      "Autonomie annoncée",
+      "jusqu'à 160 km selon les revendeurs ; les chiffres varient d'une boutique à l'autre"
+    ],
+    [
+      "Autonomie estimée",
+      "68 à 76 km en conduite soutenue, 129 à 137 km au niveau de vitesse le plus bas (selon Electric Scooter Insider)"
+    ],
+    [
+      "Poids",
+      "58 kg (Vsett) à 61 kg (Vsett Shop)"
+    ],
+    [
+      "Charge max",
+      "150 kg"
+    ],
+    [
+      "Roues",
+      "11 pouces, gonflables (notées 11 x 4 pouces par Vsett)"
+    ],
+    [
+      "Freins",
+      "Disques hydrauliques Nutt avant et arrière"
+    ],
+    [
+      "Suspension",
+      "Avant et arrière (montage décrit différemment selon les revendeurs)"
+    ],
+    [
+      "Chargeur",
+      "60 V (67,2 V en fin de charge)"
+    ],
+    [
+      "Temps de charge",
+      "11 à 22 h selon la batterie et le chargeur (Max Blinker) ; environ 16 h selon Pie Technologie"
+    ]
+  ],
+  "pros": [
+    "Deux grosses batteries au choix, jusqu'à 2 520 Wh (Vsett, Max Blinker).",
+    "Freins hydrauliques Nutt sur les deux roues (Vsett).",
+    "Freinage et autonomie salués par KRAMTOO dans son test vidéo sur route et hors route."
+  ],
+  "cons": [
+    "58 à 61 kg : elle se pousse plus qu'elle ne se porte.",
+    "Recharge très longue avec le chargeur standard : 11 à 22 h selon la version (Max Blinker).",
+    "Indice d'étanchéité non confirmé par Vsett pour cette version 60 V.",
+    "Autonomies annoncées très différentes d'un revendeur à l'autre."
+  ],
+  "parts": [
+    {
+      "label": "Plaquettes",
+      "size": "étrier Nutt, plaquettes format Sram Avid",
+      "count": 4,
+      "to": "/piece/plaquettes-de-freins-zero-10x-11x-vsett-10-storm-thunder-sram-avid-semi-metallique",
+      "cta": "Plaquettes Sram Avid"
+    },
+    {
+      "label": "Disque de frein",
+      "size": "160 mm, entraxe 44 mm",
+      "count": 6,
+      "to": "/piece/disque-de-frein-r6-160mm-entraxe-44m-3-couleurs-rouge",
+      "cta": "Disques 160 mm"
+    },
+    {
+      "label": "Chargeur",
+      "size": "60 V → 67,2 V, prise GX16-3",
+      "count": 2,
+      "to": "/piece/chargeur-60v-672v-2a-connecteur-gx16-3p",
+      "cta": "Chargeurs 60 V"
+    }
+  ],
+  "care": [
+    "Avec près de 60 kg, contrôle chaque mois le serrage de la double colonne et des pièces de pliage.",
+    "Freins hydrauliques : fais purger le circuit dès que le levier devient mou et change les plaquettes avant qu'elles n'arrivent au métal.",
+    "Recharge longue : branche-la le soir sur une surface non inflammable et débranche-la une fois la charge terminée."
+  ],
+  "price": {
+    "text": "Prix relevés chez des revendeurs français : de 3 279,90 € à 3 490 € selon la version.",
+    "source": "moovrider.com, pietechnologie.com"
+  },
+  "faq": [
+    {
+      "q": "Quelle taille de pneu pour la Vsett 11+ ?",
+      "a": "Vsett l'annonce en 11 pouces (11 x 4). Les boutiques vendent les pneus de 11 pouces sous plusieurs cotes, comme 90/65-6.5 : lis celle moulée sur le flanc de ton pneu avant d'en commander un."
+    },
+    {
+      "q": "Quels freins sur la Vsett 11+ ?",
+      "a": "Des freins à disque hydrauliques Nutt, à l'avant et à l'arrière."
+    },
+    {
+      "q": "Combien de temps pour recharger la Vsett 11+ ?",
+      "a": "De 11 à 22 heures selon la batterie et le chargeur, d'après Max Blinker. Un chargeur rapide 60 V raccourcit nettement ce délai."
+    },
+    {
+      "q": "Quelle différence entre la Vsett 11+ et la 11+ Super ?",
+      "a": "La 11+ est une 60 V (31,2 ou 42 Ah) à deux moteurs de 1 500 W. La Super passe en 72 V (32 ou 35 Ah) avec deux moteurs de 2 000 W. Leurs chargeurs ne sont pas interchangeables."
+    },
+    {
+      "q": "La Vsett 11+ a-t-elle le droit de rouler en ville ?",
+      "a": "Oui, à condition de ne pas dépasser 25 km/h, la limite légale des trottinettes électriques en France. Ses capacités au-delà ne concernent que le terrain privé."
+    }
+  ],
+  "sources": [
+    {
+      "label": "Vsett Shop France — Vsett 11+",
+      "url": "https://vsett-shop.com/fr/produit/vsett-11/"
+    },
+    {
+      "label": "Max Blinker — Vsett 11+",
+      "url": "https://www.maxblinker.fr/fr/trottinettes-electriques/vsett-11"
+    },
+    {
+      "label": "Pie Technologie — Vsett 11+",
+      "url": "https://pietechnologie.com/en-eu/products/trottinette-electrique-vsett-11"
+    },
+    {
+      "label": "Electric Scooter Insider — Vsett 11+ review",
+      "url": "https://www.electricscooterinsider.com/electric-scooters/reviews/vsett-11-plus-review/"
+    },
+    {
+      "label": "Urbalt — historique de la Vsett 11+",
+      "url": "https://urbalt.ee/en/atlas/vsett/vsett11"
+    },
+    {
+      "label": "Moovrider — Vsett 11+",
+      "url": "https://moovrider.com/products/vsett-11-trottinette-electrique-vsett"
+    }
+  ],
+  "video": {
+    "id": "S_4xgCvFBSQ",
+    "title": "Vsett11+ Test Road And Off Road ! Electric Scooter",
+    "channel": "KRAMTOO",
+    "uploadDate": "2021-06-02"
+  }
+}

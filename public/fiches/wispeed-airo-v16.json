@@ -1,0 +1,116 @@
+{
+ "displayName": "Wispeed AIRO V16",
+ "metaTitle": "Wispeed AIRO V16 : fiche technique et entretien",
+ "metaDescription": "Wispeed AIRO V16 : 400 W (700 W en pointe), batterie 36 V 15,6 Ah de 561,6 Wh, 60 km annoncés, double suspension, 20,5 kg. Fiche et entretien.",
+ "intro": [
+  "La Wispeed AIRO V16 est la version longue autonomie de la série AIRO, vendue par Wispeed (groupe Logicom) en grande distribution. Elle reprend la base de l'AIRO V10 et change surtout la batterie. Boulanger et la Fnac l'affichent à 369,99 €.",
+  "Sous le plateau, une batterie de 36 V 15,6 Ah (561,6 Wh) pour 60 km annoncés par Wispeed. Le moteur fait 400 W (700 W en pointe), les roues gonflables font 10 pouces et la suspension travaille à l'avant comme à l'arrière. Elle pèse 20,5 kg et accepte 120 kg."
+ ],
+ "specs": [
+  [
+   "Moteur",
+   "400 W nominaux, 700 W en pointe"
+  ],
+  [
+   "Vitesse",
+   "25 km/h, modes 6, 15 et 20 km/h (selon Darty)"
+  ],
+  [
+   "Autonomie annoncée",
+   "jusqu'à 60 km en conditions favorables"
+  ],
+  [
+   "Batterie",
+   "36 V, 15,6 Ah, 561,6 Wh"
+  ],
+  [
+   "Poids",
+   "20,5 kg"
+  ],
+  [
+   "Charge max",
+   "120 kg"
+  ],
+  [
+   "Roues",
+   "10 pouces, gonflables"
+  ],
+  [
+   "Freins",
+   "Disque (selon Wispeed et Darty)"
+  ],
+  [
+   "Suspension",
+   "Avant et arrière"
+  ],
+  [
+   "Étanchéité",
+   "IP65 selon Wispeed et Darty, IPX6 sur la fiche Fnac"
+  ],
+  [
+   "Temps de charge",
+   "10 h"
+  ]
+ ],
+ "pros": [
+  "Batterie de 561,6 Wh, la plus grosse de la série AIRO (Wispeed).",
+  "Suspension avant et arrière et roues gonflables de 10 pouces (Wispeed).",
+  "Accepte jusqu'à 120 kg (Wispeed, Darty)."
+ ],
+ "cons": [
+  "Aucune autonomie mesurée en test publié à ce jour : les 60 km sont une annonce du fabricant.",
+  "10 heures pour une charge complète.",
+  "20,5 kg, plus lourde que l'AIRO V10.",
+  "Wispeed ne publie pas la cote exacte de ses pneus."
+ ],
+ "parts": [],
+ "care": [
+  "Grosse batterie, longue charge : branche-la la nuit et débranche-la une fois pleine.",
+  "Contrôle la pression des pneus chaque mois : sur 60 km annoncés, un pneu mou te coûte des kilomètres.",
+  "Vérifie de temps en temps le serrage du pliage et de la fourche, la double suspension les fait travailler."
+ ],
+ "price": {
+  "text": "369,99 € chez Boulanger et à la Fnac ; Darty indique un prix conseillé de 389,99 €.",
+  "source": "Boulanger, Fnac, Darty"
+ },
+ "faq": [
+  {
+   "q": "Quelle taille de pneu pour la Wispeed AIRO V16 ?",
+   "a": "Des pneus gonflables de 10 pouces. Les fiches Wispeed et des revendeurs ne donnent ni la largeur ni la jante : regarde la cote inscrite sur le flanc avant d'acheter un pneu."
+  },
+  {
+   "q": "L'AIRO V16 fait-elle vraiment 60 km ?",
+   "a": "C'est l'annonce de Wispeed, en conditions favorables. Aucun test publié ne l'a encore mesurée : compte moins si tu es lourd, si ça monte ou s'il fait froid."
+  },
+  {
+   "q": "Combien de temps pour charger l'AIRO V16 ?",
+   "a": "Environ 10 heures pour une charge complète, selon Wispeed et Darty."
+  },
+  {
+   "q": "AIRO V16 ou AIRO V10 : que change le modèle ?",
+   "a": "La batterie : 15,6 Ah sur la V16, 10,4 Ah sur la V10. Moteur, roues et suspension sont annoncés identiques. La V16 pèse 850 g de plus."
+  },
+  {
+   "q": "L'AIRO V16 est-elle autorisée en France ?",
+   "a": "Oui. Elle sort d'usine limitée à 25 km/h, sans siège, comme l'exige la règle des trottinettes électriques. Tu roules sur la piste cyclable ou la chaussée, jamais sur le trottoir."
+  }
+ ],
+ "sources": [
+  {
+   "label": "Wispeed — trottinette AIRO V16",
+   "url": "https://www.wispeed.net/3352-trottinette-airo-v16.html"
+  },
+  {
+   "label": "Darty — Wispeed W-AIRO V16",
+   "url": "https://www.darty.com/nav/achat/sports_loisirs/glisse_urbaine/trottinette_electrique/wispeed_w_airo_v16_black.html"
+  },
+  {
+   "label": "Boulanger — Wispeed AIRO V16",
+   "url": "https://www.boulanger.com/ref/1227178"
+  },
+  {
+   "label": "Fnac Belgique — Wispeed AIRO V16 400 W",
+   "url": "https://www.fr.fnac.be/Trottinette-electrique-Wispeed-Airo-V16-400-W-Noir/a21900321"
+  }
+ ]
+}

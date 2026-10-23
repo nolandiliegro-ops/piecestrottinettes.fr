@@ -1,0 +1,136 @@
+{
+ "displayName": "Vsett 8+",
+ "metaTitle": "Vsett 8+ : fiche technique, pièces et entretien",
+ "metaDescription": "Vsett 8+ : deux moteurs de 600 W, batterie 48 V 16 Ah (768 Wh), pneus pleins 8 pouces 200 x 60, freins à tambour avant et arrière. Fiche, entretien, pièces.",
+ "intro": [
+  "La Vsett 8+ est la version bimoteur de la Vsett 8 : deux moteurs de 600 W, un dans chaque roue, et une batterie 48 V de 16 Ah (768 Wh). Max Blinker y a mesuré 1 498 W en pointe. Autre différence avec la Vsett 8 : des pneus pleins de 8 pouces (200 x 60) à l'avant comme à l'arrière.",
+  "Freins à tambour sur les deux roues, suspensions à ressort avant et arrière, 120 kg de charge admise. Le poids annoncé varie de 20 à 25 kg selon les sources. En ville, Max Blinker a parcouru un peu plus de 32 km sur une charge. Le Ranch l'affiche à 1 490 €."
+ ],
+ "specs": [
+  [
+   "Moteurs",
+   "2 × 600 W nominaux ; 1 498 W en pointe mesurés par Max Blinker"
+  ],
+  [
+   "Vitesse",
+   "25 km/h sur la voie publique"
+  ],
+  [
+   "Batterie",
+   "48 V, 16 Ah (768 Wh)"
+  ],
+  [
+   "Autonomie annoncée",
+   "jusqu'à 50 km en bimoteur, 70 à 90 km en mono-moteur selon les revendeurs"
+  ],
+  [
+   "Autonomie mesurée",
+   "32 à 34 km en ville, 47 km au maximum (Max Blinker)"
+  ],
+  [
+   "Poids",
+   "20 à 25 kg selon les sources"
+  ],
+  [
+   "Charge max",
+   "120 kg"
+  ],
+  [
+   "Roues",
+   "8 pouces 200 x 60, pleines, avant et arrière"
+  ],
+  [
+   "Freins",
+   "Tambour avant et arrière, frein électronique"
+  ],
+  [
+   "Suspension",
+   "Ressorts avant et arrière"
+  ],
+  [
+   "Chargeur",
+   "48 V (54,6 V en fin de charge)"
+  ],
+  [
+   "Temps de charge",
+   "environ 7 h avec un chargeur 2 A selon evolt ; plus de 11 h selon Scooter Guide, 5 h 30 avec deux chargeurs"
+  ]
+ ],
+ "pros": [
+  "Pneus pleins aux deux roues : aucune crevaison possible (evolt).",
+  "Deux moteurs, utiles dans les côtes (Scooter Guide).",
+  "Tambours et pneus pleins : très peu d'entretien courant."
+ ],
+ "cons": [
+  "Pneus pleins et petites roues : confort limité sur une chaussée dégradée.",
+  "Freinage par tambours moins mordant qu'un frein à disque.",
+  "Autonomie réelle autour de 32 à 34 km en ville (Max Blinker).",
+  "Poids annoncé de 20 à 25 kg selon les sources : pèse-la si tu dois la porter souvent."
+ ],
+ "parts": [
+  {
+   "label": "Chargeur",
+   "size": "48 V → 54,6 V, prise GX16-3",
+   "count": 2,
+   "to": "/piece/chargeur-48v-546v-2a-connecteur-gx16-3p",
+   "cta": "Chargeurs 48 V"
+  }
+ ],
+ "care": [
+  "Pneus pleins : contrôle l'usure et l'état des jantes, les chocs passent directement dans la roue.",
+  "Tambours : rattrape le jeu du câble à la molette dès que le freinage s'allonge.",
+  "Deux moteurs, deux connecteurs : vérifie de temps en temps que les câbles des roues ne frottent pas sur la fourche."
+ ],
+ "price": {
+  "text": "Le Ranch l'affiche à 1 490 € TTC.",
+  "source": "le-ranch.fr"
+ },
+ "faq": [
+  {
+   "q": "Quelle taille de pneu pour la Vsett 8+ ?",
+   "a": "Des pneus pleins de 8 pouces en 200 x 60 (8 x 2), à l'avant et à l'arrière. Pas de chambre à air."
+  },
+  {
+   "q": "La Vsett 8+ a-t-elle des freins à disque ?",
+   "a": "Non, la version vendue en France freine avec deux tambours et un frein électronique. Une édition suisse homologuée existe avec des disques : vérifie la tienne."
+  },
+  {
+   "q": "Quelle est l'autonomie réelle de la Vsett 8+ ?",
+   "a": "Max Blinker a relevé 32 à 34 km en usage urbain et 47 km au maximum. Les 70 à 90 km annoncés supposent un seul moteur et une allure très douce."
+  },
+  {
+   "q": "Combien de temps pour recharger la Vsett 8+ ?",
+   "a": "Environ 7 heures selon evolt, plus de 11 heures selon Scooter Guide avec un seul chargeur 2 A. En branchant deux chargeurs, Scooter Guide descend à 5 h 30."
+  },
+  {
+   "q": "Quelle différence entre la Vsett 8+ et la Vsett 8 ?",
+   "a": "La 8+ a deux moteurs au lieu d'un et des pneus pleins aux deux roues ; la Vsett 8 garde un pneu gonflable à l'avant. Les pneus ne sont donc pas les mêmes."
+  },
+  {
+   "q": "La Vsett 8+ peut-elle dépasser 25 km/h ?",
+   "a": "Techniquement oui, légalement non sur la voie publique : en France, la loi plafonne les trottinettes électriques à 25 km/h. Au-delà, c'est terrain privé uniquement."
+  }
+ ],
+ "sources": [
+  {
+   "label": "Max Blinker — Vsett 8+",
+   "url": "https://www.maxblinker.com/en/electric-scooters/vsett-8-pls"
+  },
+  {
+   "label": "evolt — Vsett 8+",
+   "url": "https://evolt.si/en/products/electric-scooter-vsett-8-plus"
+  },
+  {
+   "label": "Scooter Guide — Vsett 8+ review",
+   "url": "https://scooter.guide/vsett-8-plus-electric-scooter-review/"
+  },
+  {
+   "label": "Vsett Australie — Vsett 8+",
+   "url": "https://vsett.com.au/products/vsett-8-electric-scooter-1"
+  },
+  {
+   "label": "Le Ranch — trottinettes Vsett",
+   "url": "https://www.le-ranch.fr/vsett-trottinette-electrique"
+  }
+ ]
+}

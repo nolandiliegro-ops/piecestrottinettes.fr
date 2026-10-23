@@ -1,0 +1,128 @@
+{
+ "displayName": "Wispeed C10-55 Max",
+ "metaTitle": "Wispeed C10-55 Max : fiche technique et pièces",
+ "metaDescription": "Wispeed C10-55 Max : 350 W (650 W en pointe), batterie 36 V 15,6 Ah, 39,9 km mesurés au Labo Fnac, pneus 10\", tambour arrière. Fiche et pièces.",
+ "intro": [
+  "La Wispeed C10-55 Max est la version grande autonomie de la gamme C10 de Wispeed, au-dessus de la C10-40 Pro. Même format de ville à roues de 10 pouces, même moteur, mais une batterie plus grosse. La Fnac la vendait déjà fin 2024.",
+  "Moteur de 350 W (650 W en pointe), batterie de 36 V 15,6 Ah (561,6 Wh) et 55 km annoncés : le Labo Fnac en a mesuré 39,9. Elle n'a pas de suspension, roule sur des pneus à chambre à air et freine avec un tambour arrière et un frein électronique avant. Elle pèse 19,2 kg."
+ ],
+ "specs": [
+  [
+   "Moteur",
+   "350 W nominaux, 650 W en pointe"
+  ],
+  [
+   "Vitesse",
+   "25 km/h (24,5 km/h mesurés par le Labo Fnac)"
+  ],
+  [
+   "Autonomie annoncée",
+   "jusqu'à 55 km"
+  ],
+  [
+   "Autonomie mesurée",
+   "39,9 km (Labo Fnac)"
+  ],
+  [
+   "Batterie",
+   "36 V, 15,6 Ah, 561,6 Wh"
+  ],
+  [
+   "Poids",
+   "19,2 kg"
+  ],
+  [
+   "Charge max",
+   "120 kg"
+  ],
+  [
+   "Roues",
+   "10 pouces, pneus à chambre à air, cote 10x2.125-6 (selon Trott en Provence)"
+  ],
+  [
+   "Freins",
+   "Électronique avant + tambour arrière"
+  ],
+  [
+   "Suspension",
+   "Aucune"
+  ],
+  [
+   "Étanchéité",
+   "IPX5"
+  ],
+  [
+   "Temps de charge",
+   "environ 8 h selon la notice, 5,5 h sur les fiches Fnac et Darty"
+  ]
+ ],
+ "pros": [
+  "39,9 km mesurés sur une charge par le Labo Fnac.",
+  "Batterie de 561,6 Wh dans un format de 19,2 kg (notice Wispeed).",
+  "Tambour arrière, un frein qui demande peu d'entretien."
+ ],
+ "cons": [
+  "Pas de suspension (Labo Fnac).",
+  "Recharge d'environ 8 h selon la notice.",
+  "Les 55 km annoncés n'ont pas été atteints en test (39,9 km au Labo Fnac).",
+  "Pneus à chambre à air, plus sensibles aux crevaisons."
+ ],
+ "parts": [
+  {
+   "label": "Pneu",
+   "size": "10x2.125-6",
+   "count": 3,
+   "to": "/piece/pneu-tubeless-10x2-125-6-offroad-ewheel",
+   "cta": "Pneus 10x2.125-6"
+  }
+ ],
+ "care": [
+  "Sans suspension, garde des pneus bien gonflés : ils protègent aussi les jantes et le moteur avant.",
+  "Fais régler le tambour arrière dès que tu dois serrer plus fort pour t'arrêter.",
+  "La charge peut durer 8 h : lance-la le soir plutôt que juste avant de partir."
+ ],
+ "faq": [
+  {
+   "q": "Quelle taille de pneu sur la Wispeed C10-55 Max ?",
+   "a": "Des pneus de 10 pouces à chambre à air, en 10x2.125-6 selon Trott en Provence. Wispeed ne publie pas cette cote : confirme-la sur le flanc de ton pneu."
+  },
+  {
+   "q": "Quelle autonomie réelle pour la C10-55 Max ?",
+   "a": "Le Labo Fnac a mesuré 39,9 km pour 55 km annoncés. C'est un bon repère pour un usage en ville à 25 km/h."
+  },
+  {
+   "q": "Combien de temps de charge pour la C10-55 Max ?",
+   "a": "La notice indique environ 8 heures. Les fiches Fnac et Darty affichent 5,5 heures : compte plutôt sur la notice."
+  },
+  {
+   "q": "C10-55 Max ou C10-40 Pro ?",
+   "a": "Elles partagent le moteur de 350 W et les freins. La C10-55 Max a 15,6 Ah de batterie contre 10,4 Ah, pour 1,3 kg de plus."
+  },
+  {
+   "q": "A-t-on le droit de circuler en C10-55 Max en France ?",
+   "a": "Oui : elle est vendue avec une vitesse plafonnée à 25 km/h et sans siège. Reste sur les pistes cyclables ou la chaussée, et assure-toi en responsabilité civile."
+  }
+ ],
+ "sources": [
+  {
+   "label": "Notice Wispeed C10-55 Max (U-Techno)",
+   "url": "https://www.u-techno.fr/media/5e/1c/e2/1736152853/Instructions-d-utilisation-Trottinette-electrique-WISPEED-C10-55M-NOIR.pdf?ts=1736152853"
+  },
+  {
+   "label": "Fnac — Wispeed C10-55 Max 650 W",
+   "url": "https://www.fnac.com/Trottinette-electrique-Wispeed-C10-55-MAX-650-W-Bleu/a20217345/w-4"
+  },
+  {
+   "label": "Labo Fnac — mesures Wispeed C10-55 Max",
+   "url": "https://lab.fnac.com/compare/electricScooter/3483074000942"
+  },
+  {
+   "label": "Darty — Wispeed W-C10-55 Max",
+   "url": "https://www.darty.com/nav/achat/sports_loisirs/glisse_urbaine/trottinette_electrique/wispeed_w_c10-55_max_blue.html"
+  },
+  {
+   "label": "Trott en Provence — pneu Wispeed C10-55 Max",
+   "url": "https://trott-en-provence.fr/pneu-wispeed-c10-55-max/"
+  }
+ ]
+}

@@ -1,0 +1,124 @@
+{
+ "displayName": "Wispeed AIRO V6",
+ "metaTitle": "Wispeed AIRO V6 : fiche technique et entretien",
+ "metaDescription": "Wispeed AIRO V6 : 350 W (540 W en pointe), batterie 36 V 6 Ah de 216 Wh, roues 8,5\", 24,2 km mesurés au Labo Fnac, 15,5 kg. Fiche et entretien.",
+ "intro": [
+  "La Wispeed AIRO V6 est la plus petite de la série AIRO de Wispeed. Elle vise les trajets courts : roues de 8,5 pouces, batterie de 216 Wh et 15,5 kg sur la balance. Boulanger et la Fnac l'affichent à 279,99 €, avec des offres autour de 259,99 € selon la période.",
+  "Son moteur fait 350 W (540 W en pointe), sa batterie 36 V 6 Ah. Wispeed annonce 20 km et le Labo Fnac en a mesuré 24,2 dans son protocole. Elle a un frein à disque, une suspension avant et des pneus gonflables. Charge maximale : 100 kg."
+ ],
+ "specs": [
+  [
+   "Moteur",
+   "350 W nominaux, 540 W en pointe (selon Wispeed)"
+  ],
+  [
+   "Vitesse",
+   "25 km/h"
+  ],
+  [
+   "Autonomie annoncée",
+   "jusqu'à 20 km"
+  ],
+  [
+   "Autonomie mesurée",
+   "24,2 km (Labo Fnac)"
+  ],
+  [
+   "Batterie",
+   "36 V, 6 Ah, 216 Wh"
+  ],
+  [
+   "Poids",
+   "15,5 kg"
+  ],
+  [
+   "Charge max",
+   "100 kg"
+  ],
+  [
+   "Roues",
+   "8,5 pouces, gonflables"
+  ],
+  [
+   "Freins",
+   "Disque"
+  ],
+  [
+   "Suspension",
+   "Avant"
+  ],
+  [
+   "Étanchéité",
+   "IP65 selon Wispeed, IPX6 sur la fiche Fnac"
+  ],
+  [
+   "Temps de charge",
+   "6 h annoncées, 6 h 18 mesurées par le Labo Fnac"
+  ]
+ ],
+ "pros": [
+  "15,5 kg : la plus légère de la série AIRO (Wispeed).",
+  "Le Labo Fnac a mesuré plus que l'annonce : 24,2 km pour 20 km annoncés.",
+  "Suspension avant malgré son petit format (Wispeed)."
+ ],
+ "cons": [
+  "Petite batterie de 216 Wh : pense trajets courts.",
+  "Le Labo Fnac parle de « compromis à ne pas occulter » dans son test.",
+  "Charge maximale limitée à 100 kg.",
+  "Roues de 8,5 pouces, moins à l'aise sur les pavés que des 10 pouces."
+ ],
+ "parts": [],
+ "care": [
+  "Avec une petite batterie, évite de la laisser vide : recharge-la après chaque trajet.",
+  "En 8,5 pouces, la pression compte encore plus : vérifie-la toutes les deux semaines.",
+  "Fais régler le frein à disque dès que le levier devient mou ou que le disque frotte."
+ ],
+ "price": {
+  "text": "279,99 € chez Boulanger et à la Fnac ; des offres autour de 259,99 € ont été relevées selon la période et le vendeur.",
+  "source": "Boulanger, Fnac"
+ },
+ "faq": [
+  {
+   "q": "Quelle taille de pneu pour la Wispeed AIRO V6 ?",
+   "a": "Des pneus gonflables de 8,5 pouces. La cote complète n'est pas publiée par Wispeed : lis-la sur le flanc de ton pneu avant de commander une chambre à air."
+  },
+  {
+   "q": "Quelle autonomie réelle pour l'AIRO V6 ?",
+   "a": "Le Labo Fnac a relevé 24,2 km, au-dessus des 20 km annoncés. En usage quotidien, compte plutôt sur l'annonce, voire moins en côte ou en hiver."
+  },
+  {
+   "q": "Combien de temps de charge pour l'AIRO V6 ?",
+   "a": "Wispeed annonce 6 heures, le Labo Fnac a mesuré 6 h 18."
+  },
+  {
+   "q": "AIRO V6 ou AIRO V10 : laquelle choisir ?",
+   "a": "La V6 est plus légère (15,5 kg) avec des roues de 8,5 pouces et une suspension avant. La V10 passe à 10 pouces, 400 W, suspension avant et arrière et 40 km annoncés, pour 19,65 kg."
+  },
+  {
+   "q": "L'AIRO V6 peut-elle rouler en ville en toute légalité ?",
+   "a": "Oui : sans siège et plafonnée à 25 km/h d'usine, elle suit le cadre des trottinettes électriques. Il te faut 12 ans minimum, et le trottoir reste interdit."
+  }
+ ],
+ "sources": [
+  {
+   "label": "Wispeed — trottinette AIRO V6",
+   "url": "https://www.wispeed.net/3349-trottinette-airo-v6.html"
+  },
+  {
+   "label": "Boulanger — Wispeed AIRO V6",
+   "url": "https://www.boulanger.com/ref/1227206"
+  },
+  {
+   "label": "Fnac — Wispeed AIRO V6 350 W",
+   "url": "https://www.fnac.com/Trottinette-electrique-Wispeed-Airo-V6-350-W-Noir/a21900319/w-4"
+  },
+  {
+   "label": "L'Éclaireur Fnac — test labo de la Wispeed W-AIRO V6",
+   "url": "https://leclaireur.fnac.com/test/648547-test-labo-de-la-wispeed-w-airo-v6-black-des-compromis-a-ne-pas-occulter/"
+  },
+  {
+   "label": "Darty — Wispeed W-AIRO V6",
+   "url": "https://www.darty.com/nav/achat/sports_loisirs/glisse_urbaine/trottinette_electrique/wispeed_w_airo_v6_black.html"
+  }
+ ]
+}

@@ -1,0 +1,131 @@
+{
+ "displayName": "Wispeed SUVPILOT 480",
+ "metaTitle": "Wispeed SUVPILOT 480 : fiche technique et pièces",
+ "metaDescription": "Wispeed SUVPILOT 480 : 500 W (900 W en pointe), batterie 48 V 18 Ah de 864 Wh, pneus cross 10\", double suspension réglable. Fiche et pièces.",
+ "intro": [
+  "La Wispeed SUVPILOT 480 est le haut de la gamme SUVPILOT, au-dessus de la 150 R. Elle passe en 48 V et embarque la plus grosse batterie de la marque dans cette fiche : 864 Wh. Wispeed la présente aujourd'hui sous le nom SUVPILOT 480 R, avec 65 km annoncés au lieu de 60.",
+  "Moteur de 500 W (900 W en pointe), batterie 48 V 18 Ah, pneus cross de 10 pouces à chambre à air et suspension réglable à l'avant et à l'arrière. Wispeed annonce des freins à disque devant et derrière. Le poids va de 30,35 kg sur la notice à 32 kg sur la page Wispeed."
+ ],
+ "specs": [
+  [
+   "Moteur",
+   "500 W nominaux, 900 W en pointe"
+  ],
+  [
+   "Vitesse",
+   "25 km/h"
+  ],
+  [
+   "Autonomie annoncée",
+   "60 km sur la notice, 65 km sur la page Wispeed de la 480 R"
+  ],
+  [
+   "Batterie",
+   "48 V, 18 Ah, 864 Wh"
+  ],
+  [
+   "Poids",
+   "30,35 kg selon la notice, 32 kg selon Wispeed et Boulanger"
+  ],
+  [
+   "Charge max",
+   "120 kg"
+  ],
+  [
+   "Roues",
+   "10 pouces, pneus cross gonflables à chambre à air (selon la Fnac)"
+  ],
+  [
+   "Freins",
+   "Disque avant + disque arrière selon Wispeed (fiches revendeurs contradictoires)"
+  ],
+  [
+   "Suspension",
+   "Avant et arrière, réglables"
+  ],
+  [
+   "Étanchéité",
+   "IP65 selon Wispeed et la notice, IPX5 sur la fiche Fnac"
+  ],
+  [
+   "Temps de charge",
+   "environ 9 h"
+  ]
+ ],
+ "pros": [
+  "Batterie de 864 Wh en 48 V (notice Wispeed).",
+  "Suspension réglable à l'avant et à l'arrière (Wispeed).",
+  "Pneus cross de 10 pouces pour les chemins (Wispeed, Fnac)."
+ ],
+ "cons": [
+  "Plus de 30 kg : pense au rangement et aux escaliers.",
+  "Recharge d'environ 9 heures.",
+  "Aucune autonomie mesurée en test publié.",
+  "Les fiches revendeurs se contredisent sur les freins : vérifie sur ta trottinette avant de commander une pièce de freinage."
+ ],
+ "parts": [
+  {
+   "label": "Disque de frein",
+   "size": "140 mm, entraxe 44 mm",
+   "count": 3,
+   "to": "/piece/disque-de-frein-r6-140mm-entraxe-44mm-3-couleurs-bleu",
+   "cta": "Disques 140 mm"
+  },
+  {
+   "label": "Chargeur",
+   "size": "48 V (54,6 V), prise type Xiaomi",
+   "count": 1,
+   "to": "/piece/chargeur-48v-546v-2a-connecteur-xiaomi-4-ultra-5-5-pro-6-pro",
+   "cta": "Chargeur 48 V"
+  }
+ ],
+ "care": [
+  "Une batterie de 864 Wh se charge en 9 h : branche-la le soir et ne la stocke pas vide.",
+  "Avant de changer un disque, mesure son diamètre et l'entraxe de ses trous de fixation.",
+  "Règle la suspension selon ton poids et resserre les axes après les sorties sur terrain cassant."
+ ],
+ "faq": [
+  {
+   "q": "Quelle taille de pneu pour la Wispeed SUVPILOT 480 ?",
+   "a": "Des pneus cross de 10 pouces à chambre à air. Aucune source ne confirme la cote complète : relève-la sur le flanc de ton pneu avant d'acheter."
+  },
+  {
+   "q": "Quels freins sur la SUVPILOT 480 ?",
+   "a": "Wispeed annonce un disque à l'avant et un à l'arrière. Boulanger mentionne aussi un frein électronique avant. Regarde tes roues : un disque se voit de l'extérieur."
+  },
+  {
+   "q": "Quelle autonomie pour la SUVPILOT 480 ?",
+   "a": "60 km selon la notice, 65 km selon la page Wispeed de la 480 R. Aucun test indépendant ne l'a encore mesurée."
+  },
+  {
+   "q": "Combien de temps de charge pour la SUVPILOT 480 ?",
+   "a": "Environ 9 heures selon la notice et Wispeed."
+  },
+  {
+   "q": "SUVPILOT 480 ou SUVPILOT 150 R ?",
+   "a": "La 480 est en 48 V 18 Ah (864 Wh), 900 W en pointe. La 150 R est en 36 V 15,6 Ah, 800 W en pointe, avec des freins à tambour. Les deux ont pneus cross et double suspension."
+  },
+  {
+   "q": "La SUVPILOT 480 peut-elle circuler en France ?",
+   "a": "Oui : malgré ses 900 W en pointe, sa vitesse reste plafonnée à 25 km/h d'usine et elle n'a pas de siège. Tu dois être assuré en responsabilité civile."
+  }
+ ],
+ "sources": [
+  {
+   "label": "Notice Wispeed SUVPILOT 480 (Darty)",
+   "url": "https://fc.darty.com/notices/0/9/c/1/09c12b02a1cf3ac20eb55ae8ae05841f475b956c.pdf"
+  },
+  {
+   "label": "Wispeed — trottinette SUVPILOT 480 R",
+   "url": "https://www.wispeed.net/3355-trottinette-suvpilot-480-r.html"
+  },
+  {
+   "label": "Fnac — Wispeed SUVPILOT 480",
+   "url": "https://www.fnac.com/WISPEED-SUVPILOT-480/a21171071/w-4"
+  },
+  {
+   "label": "Boulanger — Wispeed SUVPILOT 480",
+   "url": "https://www.boulanger.com/ref/1215373"
+  }
+ ]
+}

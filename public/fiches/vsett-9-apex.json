@@ -1,0 +1,127 @@
+{
+  "displayName": "Vsett 9 Apex",
+  "metaTitle": "Vsett 9 Apex : fiche technique et entretien",
+  "metaDescription": "Vsett 9 Apex : bimoteur 2 × 700 W, batterie amovible 48 V 15,6 ou 19,2 Ah, pneus gonflables 8,5 x 3, freins hydrauliques. Fiche technique et entretien.",
+  "intro": [
+    "La Vsett 9 Apex est la version Apex de la Vsett 9+ : deux moteurs de 700 W nominaux, jusqu'à 2 620 W en pointe selon Vsett Shop, et une batterie amovible de 48 V. Elle existe en 15,6 Ah (Apex) et 19,2 Ah (Apex+), pour 45 ou 65 km annoncés en mono-moteur.",
+    "Pneus gonflables de 8,5 x 3 pouces, freins à disque hydrauliques à l'avant et à l'arrière, suspensions sur les deux roues : elle reste compacte mais pèse 29 à 30 kg, pour 120 kg de charge. En France, la voie publique lui impose 25 km/h, quelle que soit la puissance disponible."
+  ],
+  "specs": [
+    [
+      "Moteurs",
+      "2 × 700 W nominaux ; 2 620 W en pointe (selon Vsett Shop)"
+    ],
+    [
+      "Vitesse",
+      "25 km/h sur la voie publique"
+    ],
+    [
+      "Batterie",
+      "48 V amovible : 15,6 Ah (749 Wh) ou 19,2 Ah (922 Wh) pour l'Apex+"
+    ],
+    [
+      "Autonomie annoncée",
+      "45 km (15,6 Ah) ou 65 km (19,2 Ah) en mono-moteur (Vsett Shop)"
+    ],
+    [
+      "Poids",
+      "29 à 30 kg"
+    ],
+    [
+      "Charge max",
+      "120 kg"
+    ],
+    [
+      "Roues",
+      "8,5 x 3 pouces, gonflables"
+    ],
+    [
+      "Freins",
+      "Disques hydrauliques avant et arrière, frein électronique"
+    ],
+    [
+      "Suspension",
+      "Avant et arrière"
+    ],
+    [
+      "Étanchéité",
+      "IP54 (selon eCraft)"
+    ],
+    [
+      "Temps de charge",
+      "environ 8 h (15,6 Ah) ou 10 h (19,2 Ah) avec le chargeur 2 A (Vsett Shop)"
+    ]
+  ],
+  "pros": [
+    "Freins hydrauliques sur les deux roues (Fnac, eCraft).",
+    "Batterie amovible (Vsett Shop, Fnac).",
+    "Confort de suspension mis en avant par Karotka dans ses essais vidéo.",
+    "Mode mono-moteur pour ménager la batterie (Vsett Shop)."
+  ],
+  "cons": [
+    "29 à 30 kg pour une trottinette à roues de 8,5 pouces.",
+    "Petites roues, plus sensibles aux gros trous que des 10 pouces.",
+    "Aucune autonomie mesurée dans un test publié.",
+    "Prix très variable d'un revendeur à l'autre."
+  ],
+  "parts": [],
+  "care": [
+    "Freins hydrauliques : un levier qui s'enfonce plus loin qu'avant signale de l'air dans le circuit, fais-le purger.",
+    "Pneus 8,5 x 3 gonflables : contrôle la pression avant chaque semaine de trajets, c'est ce qui protège la chambre à air.",
+    "Batterie amovible : verrouille-la bien dans son logement, un jeu fait vibrer les contacts."
+  ],
+  "price": {
+    "text": "Prix relevés chez des revendeurs français : 1 299 € et 1 399 €.",
+    "source": "vsett-shop.com, fastride.fr"
+  },
+  "faq": [
+    {
+      "q": "Quelle taille de pneu pour la Vsett 9 Apex ?",
+      "a": "Des pneus gonflables de 8,5 x 3 pouces à l'avant et à l'arrière. Vérifie la cote sur le flanc avant de commander un pneu ou une chambre à air."
+    },
+    {
+      "q": "Quelle autonomie pour la Vsett 9 Apex ?",
+      "a": "Vsett Shop annonce 45 km avec la 15,6 Ah et 65 km avec la 19,2 Ah, sur un seul moteur. Avec les deux moteurs enclenchés, l'autonomie baisse nettement."
+    },
+    {
+      "q": "Combien de temps pour recharger la Vsett 9 Apex ?",
+      "a": "Environ 8 heures pour la 15,6 Ah et 10 heures pour la 19,2 Ah avec le chargeur 2 A fourni, selon Vsett Shop."
+    },
+    {
+      "q": "Quelle différence entre la Vsett 9 Apex et la Vsett 9+ ?",
+      "a": "La 9 Apex monte deux moteurs de 700 W contre 650 W sur la 9+, des freins hydrauliques et une batterie que l'on peut retirer."
+    },
+    {
+      "q": "Peut-on rouler sur la route avec une Vsett 9 Apex ?",
+      "a": "Oui, en restant à 25 km/h au maximum, comme l'exige la réglementation française des trottinettes. Ses modes plus rapides ne se conçoivent que sur un terrain privé."
+    }
+  ],
+  "sources": [
+    {
+      "label": "Vsett Shop France — Vsett 9 Apex",
+      "url": "https://vsett-shop.com/fr/produit/vsett-9-apex/"
+    },
+    {
+      "label": "Vsett Shop Europe — Vsett 9 Apex",
+      "url": "https://vsett-shop.com/product/vsett-9-apex/"
+    },
+    {
+      "label": "Fnac — Vsett 9 Apex 1 400 W",
+      "url": "https://www.fnac.com/Trottinette-electrique-Vsett-9-Apex-1400-W-Noir/a22165515/w-4"
+    },
+    {
+      "label": "eCraft — Vsett 9 Apex",
+      "url": "https://www.ecraft-shop.de/en/produkt/vsett-9-apex/sw10480.1"
+    },
+    {
+      "label": "Fastride — gamme Vsett Apex",
+      "url": "https://fastride.fr/en/95-vsett-apex"
+    }
+  ],
+  "video": {
+    "id": "ujW3fm5d54E",
+    "title": "Vsett 9 Apex - král komfortu se slušným výkonem . Recenze",
+    "channel": "Karotka",
+    "uploadDate": "2024-10-02"
+  }
+}

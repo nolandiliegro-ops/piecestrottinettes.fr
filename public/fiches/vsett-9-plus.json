@@ -1,0 +1,143 @@
+{
+  "displayName": "Vsett 9+",
+  "metaTitle": "Vsett 9+ : fiche technique, pièces et entretien",
+  "metaDescription": "Vsett 9+ : bimoteur 2 × 650 W, batterie 48 V de 15,6 à 21 Ah, pneus gonflables 8,5 x 3, freins à disque avant et arrière, IP54. Fiche, entretien, pièces.",
+  "intro": [
+    "La Vsett 9+ se place entre la 8+ et la 10+ : deux moteurs de 650 W nominaux, jusqu'à 2 200 W en pointe selon des revendeurs britanniques, sur un châssis compact à roues de 8,5 pouces. Sa batterie 48 V existe en 15,6, 19,2 ou 21 Ah, la dernière étant souvent vendue sous le nom de 9+R.",
+    "Pneus gonflables de 8,5 x 3 pouces à l'avant et à l'arrière, freins à disque sur les deux roues, suspensions avant et arrière, indice IP54. Elle pèse 25 à 27 kg selon la version. Pour la 21 Ah, les revendeurs britanniques estiment 45 à 50 km d'autonomie réelle, contre 100 km annoncés."
+  ],
+  "specs": [
+    [
+      "Moteurs",
+      "2 × 650 W nominaux ; jusqu'à 2 200 W en pointe (selon Personal Electric Transport)"
+    ],
+    [
+      "Vitesse",
+      "25 km/h sur la voie publique"
+    ],
+    [
+      "Batterie",
+      "48 V : 15,6 Ah (749 Wh), 19,2 Ah (922 Wh) ou 21 Ah (1 008 Wh, version 9+R)"
+    ],
+    [
+      "Autonomie annoncée",
+      "jusqu'à 100 km pour la 21 Ah"
+    ],
+    [
+      "Autonomie estimée",
+      "45 à 50 km pour la 21 Ah (selon Personal Electric Transport)"
+    ],
+    [
+      "Poids",
+      "25 kg (Scooter Guide) à 27 kg (Vsett Shop)"
+    ],
+    [
+      "Charge max",
+      "120 kg"
+    ],
+    [
+      "Roues",
+      "8,5 x 3 pouces, gonflables, avant et arrière"
+    ],
+    [
+      "Freins",
+      "Disques avant et arrière ; hydrauliques selon Vsett Shop, à câble selon Scooter Guide"
+    ],
+    [
+      "Suspension",
+      "Avant et arrière"
+    ],
+    [
+      "Étanchéité",
+      "IP54"
+    ],
+    [
+      "Temps de charge",
+      "10 h 30 pour la 21 Ah (selon Pie Technologie)"
+    ]
+  ],
+  "pros": [
+    "Deux moteurs dans un format compact (Electric Scooter Insider).",
+    "Pneus gonflables de 8,5 x 3 pouces, plus confortables que les pneus pleins de la 8+ (Vsett Shop).",
+    "Étanchéité IP54 (Vsett).",
+    "Arrêt de 25 km/h à 0 en 3,4 m mesuré dans un essai vidéo en espagnol."
+  ],
+  "cons": [
+    "Roues de 8,5 pouces délicates à démonter en cas de crevaison, selon un essai vidéo de 2026.",
+    "Les sources ne s'accordent pas sur le type de freins : vérifie ton étrier avant d'acheter des plaquettes.",
+    "Autonomie réelle environ moitié moindre que l'annonce (Personal Electric Transport).",
+    "25 à 27 kg, à porter avec les deux mains."
+  ],
+  "parts": [
+    {
+      "label": "Pneu",
+      "size": "8,5 x 3 pouces",
+      "count": 2,
+      "to": "/piece/pneu-8-5x3-0-route-vsett-8-9-renforce",
+      "cta": "Pneus 8,5 x 3"
+    }
+  ],
+  "care": [
+    "Démonter une roue de 8,5 pouces prend du temps : un liquide anti-crevaison dans la chambre t'évite bien des réparations.",
+    "Disques de 120 mm : nettoie-les à l'alcool si le freinage siffle, et ne touche jamais les pistes avec des doigts gras.",
+    "Vérifie le serrage du mécanisme de pliage de la colonne tous les mois."
+  ],
+  "faq": [
+    {
+      "q": "Quelle taille de pneu pour la Vsett 9+ ?",
+      "a": "Des pneus gonflables de 8,5 x 3 pouces, à l'avant comme à l'arrière. Lis la cote sur le flanc avant de commander, et note celle de ta chambre à air."
+    },
+    {
+      "q": "Quelles plaquettes pour la Vsett 9+ ?",
+      "a": "Ça dépend de ton étrier : certaines fiches annoncent des freins hydrauliques, d'autres des freins à câble. Photographie ton étrier et compare la forme des plaquettes avant d'en commander."
+    },
+    {
+      "q": "Quel chargeur pour la Vsett 9+ ?",
+      "a": "La 9+ vendue en France est en 48 V (54,6 V en fin de charge), mais des versions 52 V existent chez certains revendeurs. Lis la tension sur l'étiquette de ta batterie avant d'acheter un chargeur."
+    },
+    {
+      "q": "Quelle est l'autonomie réelle de la Vsett 9+ ?",
+      "a": "Avec la batterie de 21 Ah, un revendeur britannique estime 45 à 50 km en usage réel, pour 100 km annoncés. Les versions 15,6 et 19,2 Ah vont moins loin."
+    },
+    {
+      "q": "Quelle différence entre la Vsett 9+ et la Vsett 9 Apex ?",
+      "a": "La 9 Apex est plus récente : moteurs de 700 W au lieu de 650 W, freins hydrauliques et batterie amovible. Les pièces de freinage ne sont pas forcément les mêmes."
+    },
+    {
+      "q": "La Vsett 9+ est-elle légale en France ?",
+      "a": "Sur la voie publique, oui, bridée à 25 km/h : c'est la règle pour toutes les trottinettes électriques. Plus vite, elle ne peut rouler que sur un terrain privé."
+    }
+  ],
+  "sources": [
+    {
+      "label": "Vsett Shop Europe — Vsett 9+",
+      "url": "https://vsett-shop.com/product/vsett-9/"
+    },
+    {
+      "label": "Vsett — fiche 9+",
+      "url": "http://www.vsett.com/product/4.html"
+    },
+    {
+      "label": "Scooter Guide — Vsett 9+ review",
+      "url": "https://scooter.guide/vsett-9-plus-dual-motor-electric-scooter-review/"
+    },
+    {
+      "label": "Electric Scooter Insider — Vsett 9+ review",
+      "url": "https://www.electricscooterinsider.com/electric-scooters/reviews/vsett-9-plus-review/"
+    },
+    {
+      "label": "Personal Electric Transport — Vsett 9+",
+      "url": "https://personalelectrictransport.co.uk/shop/uncategorised/vsett-9-plus-dual-motor/"
+    },
+    {
+      "label": "Pie Technologie — Vsett 9",
+      "url": "https://pietechnologie.com/en-eu/products/trottinette-electrique-vsett-9"
+    }
+  ],
+  "video": {
+    "id": "944eJthpnDM",
+    "title": "Critique de la trottinette électrique Vsett 9+",
+    "channel": "Max Blinker France",
+    "uploadDate": "2023-01-26"
+  }
+}

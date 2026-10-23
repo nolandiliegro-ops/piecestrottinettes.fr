@@ -1,0 +1,160 @@
+{
+  "displayName": "Wispeed SUV1000",
+  "metaTitle": "Wispeed SUV1000 : fiche technique et pièces",
+  "metaDescription": "Wispeed SUV1000 : 320 W (500 W en pointe), batterie 36 V 10,4 Ah, pneus 10x2.50, deux freins à disque, 31 km mesurés par Les Numériques. Fiche et pièces.",
+  "intro": [
+    "La Wispeed SUV1000 est un modèle plus ancien de Wispeed, testé par Les Numériques et vendu chez Darty, LDLC ou Pixmania. Elle se distingue par ses deux freins à disque mécaniques, avant et arrière, rares à ce niveau de puissance. Pixmania affichait un prix de référence de 609,99 €.",
+    "Son moteur fait 320 W (500 W en pointe) et sa batterie 36 V 10,4 Ah (374,4 Wh). Wispeed annonce 40 km et Les Numériques a mesuré 31 km avec un pilote de 65 kg. Elle roule sur des pneus de 10 pouces à chambre à air, n'a pas de suspension et pèse 18 kg."
+  ],
+  "specs": [
+    [
+      "Moteur",
+      "320 W nominaux, 500 W en pointe"
+    ],
+    [
+      "Vitesse",
+      "25 km/h (20 km/h sur une autre notice Darty)"
+    ],
+    [
+      "Autonomie annoncée",
+      "jusqu'à 40 km"
+    ],
+    [
+      "Autonomie mesurée",
+      "31 km (Les Numériques, pilote de 65 kg, terrain plat)"
+    ],
+    [
+      "Batterie",
+      "36 V, 10,4 Ah, 374,4 Wh"
+    ],
+    [
+      "Poids",
+      "18 kg"
+    ],
+    [
+      "Charge max",
+      "100 kg"
+    ],
+    [
+      "Roues",
+      "10 pouces, 10x2.50 à chambre à air"
+    ],
+    [
+      "Freins",
+      "Disque mécanique avant + disque mécanique arrière"
+    ],
+    [
+      "Suspension",
+      "Aucune"
+    ],
+    [
+      "Étanchéité",
+      "IPX4 (selon Fixwheel)"
+    ],
+    [
+      "Temps de charge",
+      "environ 5 h"
+    ]
+  ],
+  "pros": [
+    "Deux freins à disque, à l'avant et à l'arrière (notice Darty, test vidéo YouTube).",
+    "31 km mesurés par Les Numériques pour 40 km annoncés.",
+    "Recharge en 5 h environ (notice Wispeed)."
+  ],
+  "cons": [
+    "Aucune suspension.",
+    "Charge maximale limitée à 100 kg.",
+    "Deux notices donnent deux vitesses maximales (25 et 20 km/h) : vérifie la version de ta trottinette.",
+    "Pneus à chambre à air, exposés aux crevaisons."
+  ],
+  "parts": [
+    {
+      "label": "Chambre à air",
+      "size": "10x2.50, plusieurs formes de valve",
+      "count": 6,
+      "to": "/piece/chambre-a-air-10x2-50-valve-coudee-135x45",
+      "cta": "Chambres à air 10x2.50"
+    },
+    {
+      "label": "Pneu",
+      "size": "10x2.50-6",
+      "count": 3,
+      "to": "/piece/pneu-10x2-50-6-wanda",
+      "cta": "Pneus 10x2.50-6"
+    },
+    {
+      "label": "Chargeur",
+      "size": "36 V (42 V), prise jack DC 5,5 x 2,5 mm",
+      "count": 1,
+      "to": "/piece/pack-chargeur-36v-adaptateur-dc5-5x2-5",
+      "cta": "Chargeur 36 V"
+    }
+  ],
+  "care": [
+    "Deux disques mécaniques : retends les câbles et contrôle les plaquettes des deux côtés, pas seulement à l'arrière.",
+    "Avant d'acheter une chambre à air, regarde la forme de la valve de l'ancienne : droite ou coudée, elle doit passer dans la jante.",
+    "Sans suspension, ce sont les pneus qui encaissent : vérifie la pression toutes les deux semaines."
+  ],
+  "price": {
+    "text": "Prix de référence affiché par Pixmania : 609,99 €. Des testeurs sur YouTube parlent d'environ 500 €.",
+    "source": "Pixmania, YouTube"
+  },
+  "faq": [
+    {
+      "q": "Quelle taille de pneu pour la Wispeed SUV1000 ?",
+      "a": "Du 10x2.50, aussi noté 10 x 2,50 pouces, avec chambre à air. C'est la cote donnée par Wattiz et e-watts pour ce modèle."
+    },
+    {
+      "q": "Quels freins sur la Wispeed SUV1000 ?",
+      "a": "Deux freins à disque mécaniques, un à l'avant et un à l'arrière, actionnés par câble."
+    },
+    {
+      "q": "Quelle autonomie réelle pour la SUV1000 ?",
+      "a": "Les Numériques a mesuré 31 km avec un pilote de 65 kg sur terrain plat, par 25 °C. Un testeur sur YouTube relève environ 25 km au même poids."
+    },
+    {
+      "q": "Combien de temps de charge pour la SUV1000 ?",
+      "a": "Environ 5 heures selon la notice."
+    },
+    {
+      "q": "La SUV1000 est-elle légale sur la voie publique ?",
+      "a": "Oui, dans sa configuration d'usine limitée à 25 km/h et sans siège. Tu circules sur piste cyclable ou chaussée, jamais sur le trottoir, à partir de 12 ans."
+    }
+  ],
+  "sources": [
+    {
+      "label": "Notice Wispeed SUV1000 (Darty)",
+      "url": "https://fc.darty.com/notices/e/2/3/5/e23519456d8c3942bf1fc91d86804c7bdc97fb41.pdf"
+    },
+    {
+      "label": "Les Numériques — test Wispeed SUV1000",
+      "url": "https://www.lesnumeriques.com/trottinette-electrique/trotinette-electrique-trotinette-electrique-adulte-scoot-p65297/test.html"
+    },
+    {
+      "label": "Wattiz — pièces Wispeed SUV 1000",
+      "url": "https://www.wattiz.fr/fr/s/585/wispeed-suv-1000"
+    },
+    {
+      "label": "e-watts — pneu Wispeed SUV1000",
+      "url": "https://e-watts.fr/categorie-produit/pieces-detachees-trottinette-electrique/pneu-trottinette-electrique/pneu-wispeed-suv1000"
+    },
+    {
+      "label": "Fixwheel — Wispeed reconditionnées AIRO V10 et SUV 1000",
+      "url": "https://fixwheel.fr/en/blogs/infos/wispeed-reconditionnee-airo-v10-suv-1000"
+    },
+    {
+      "label": "YouTube — essai de la Wispeed SUV1000 après 850 km",
+      "url": "https://www.youtube.com/watch?v=PFcTrPiyfbc"
+    },
+    {
+      "label": "Pixmania — Wispeed SUV1000",
+      "url": "https://www.pixmania.com/fr/fr/wispeed-suv1000-trottinette-electrique-25-kmh-noir-104-ah-90244.html"
+    }
+  ],
+  "video": {
+    "id": "YEkdDDMIgJk",
+    "title": "Présentation Wispeed SUV 1000 : Trottinette électrique concurrente Xiaomi Mi Electric Scooter Pro 2",
+    "channel": "Trott en Provence",
+    "uploadDate": "2022-12-14"
+  }
+}

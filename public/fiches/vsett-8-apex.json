@@ -1,0 +1,131 @@
+{
+  "displayName": "Vsett 8 Apex",
+  "metaTitle": "Vsett 8 Apex : fiche technique et pièces",
+  "metaDescription": "Vsett 8 Apex : bimoteur 2 × 600 W, batterie amovible 48 V 15,6 ou 19,2 Ah, pneus pleins 8,5 x 3, freins à disque. Fiche, entretien et pièces compatibles.",
+  "intro": [
+    "La Vsett 8 Apex est la déclinaison Apex de la Vsett 8, présentée en 2024. Elle passe à deux moteurs de 600 W, jusqu'à 2 502 W en pointe selon Vsett Shop, avec une batterie amovible de 48 V en 15,6 Ah (Apex) ou 19,2 Ah (Apex+). Vsett Shop France l'affiche entre 1 499 et 1 599 € selon la version.",
+    "Elle roule sur des pneus pleins de 8,5 x 3 pouces à l'avant et à l'arrière, avec des freins à disque sur les deux roues et des suspensions Spring-R. Elle pèse 27,5 à 28 kg selon la batterie, environ 7 kg de plus qu'une Vsett 8 classique : le prix du second moteur et des disques."
+  ],
+  "specs": [
+    [
+      "Moteurs",
+      "2 × 600 W nominaux ; 2 502 W en pointe (selon Vsett Shop)"
+    ],
+    [
+      "Vitesse",
+      "25 km/h sur la voie publique"
+    ],
+    [
+      "Batterie",
+      "48 V amovible : 15,6 Ah (749 Wh) ou 19,2 Ah (922 Wh) pour l'Apex+"
+    ],
+    [
+      "Autonomie annoncée",
+      "45 km (15,6 Ah) ou 65 km (19,2 Ah) en mono-moteur selon Vsett Shop ; 55 et 75 km selon Fastride"
+    ],
+    [
+      "Poids",
+      "27,5 kg (Apex), 28 kg (Apex+)"
+    ],
+    [
+      "Charge max",
+      "120 kg"
+    ],
+    [
+      "Roues",
+      "8,5 x 3 pouces, pleines, avant et arrière"
+    ],
+    [
+      "Freins",
+      "Disques avant et arrière, frein électronique"
+    ],
+    [
+      "Suspension",
+      "Spring-R avant et arrière"
+    ],
+    [
+      "Étanchéité",
+      "IP44 (selon evolt)"
+    ],
+    [
+      "Temps de charge",
+      "8 h (15,6 Ah) ou 10 h (19,2 Ah) avec le chargeur 2 A ; 3 à 4 h avec un chargeur 5 A (Vsett Shop)"
+    ]
+  ],
+  "pros": [
+    "Pneus pleins à l'avant et à l'arrière : plus de crevaison (Fastride, evolt).",
+    "Batterie amovible (Vsett Shop, Fastride).",
+    "Deux moteurs, là où la Vsett 8 n'en a qu'un (Vsett Shop).",
+    "Freins à disque sur les deux roues au lieu des tambours de la Vsett 8 (Fastride)."
+  ],
+  "cons": [
+    "Pneus pleins : adhérence limitée sur sol mouillé, relevée dans un essai vidéo en tchèque.",
+    "27,5 à 28 kg, lourde pour une trottinette à roues de 8,5 pouces.",
+    "Autonomies annoncées différentes selon les revendeurs : 45 ou 55 km pour la 15,6 Ah.",
+    "Aucune autonomie mesurée dans un test publié."
+  ],
+  "parts": [
+    {
+      "label": "Disque de frein",
+      "size": "140 mm, entraxe 44 mm",
+      "count": 3,
+      "to": "/piece/disque-de-frein-r6-140mm-entraxe-44mm-3-couleurs-rouge",
+      "cta": "Disques 140 mm"
+    }
+  ],
+  "care": [
+    "Freins à disque : contrôle l'usure des plaquettes et recentre l'étrier si le disque frotte.",
+    "Pneus pleins : inspecte la gomme, des fissures apparaissent souvent avant l'usure complète.",
+    "Batterie amovible : garde le logement et les contacts propres et secs."
+  ],
+  "price": {
+    "text": "Vsett Shop France l'affiche de 1 499 à 1 599 € selon la batterie.",
+    "source": "vsett-shop.com"
+  },
+  "faq": [
+    {
+      "q": "Quels pneus sur la Vsett 8 Apex ?",
+      "a": "Des pneus pleins de 8,5 x 3 pouces, à l'avant comme à l'arrière : pas de chambre à air, donc pas de crevaison."
+    },
+    {
+      "q": "Quelle différence entre la Vsett 8 Apex et la Vsett 8 ?",
+      "a": "L'Apex a deux moteurs de 600 W, des freins à disque, des pneus pleins aux deux roues et une batterie amovible. La Vsett 8 n'a qu'un moteur, des freins à tambour et un pneu gonflable à l'avant."
+    },
+    {
+      "q": "Quelle différence entre la Vsett 8 Apex et l'Apex+ ?",
+      "a": "La batterie : 15,6 Ah pour l'Apex, 19,2 Ah pour l'Apex+, qui pèse 500 g de plus et gagne environ 20 km d'autonomie annoncée."
+    },
+    {
+      "q": "Combien de temps pour recharger la Vsett 8 Apex ?",
+      "a": "8 heures pour la 15,6 Ah et 10 heures pour la 19,2 Ah avec le chargeur 2 A, ou 3 à 4 heures avec un chargeur 5 A, selon Vsett Shop."
+    },
+    {
+      "q": "Que dit la loi pour la Vsett 8 Apex ?",
+      "a": "En France, une trottinette électrique ne doit pas dépasser 25 km/h sur la voie publique. Les modes plus rapides n'ont leur place que sur un terrain privé."
+    }
+  ],
+  "sources": [
+    {
+      "label": "Vsett Shop France — Vsett 8 Apex",
+      "url": "https://vsett-shop.com/fr/produit/vsett-8-apex/"
+    },
+    {
+      "label": "Vsett Shop Europe — Vsett 8 Apex",
+      "url": "https://vsett-shop.com/product/vsett-8-apex/"
+    },
+    {
+      "label": "Fastride — Vsett 8 Apex",
+      "url": "https://fastride.fr/fr/vsett-apex/3841-trottinette-electrique-vsett-8-apex.html"
+    },
+    {
+      "label": "evolt — Vsett 8 Apex",
+      "url": "https://evolt.si/en/products/electric-scooter-vsett-8-apex"
+    }
+  ],
+  "video": {
+    "id": "81oI90l-ezU",
+    "title": "Vsett 8 vs Vsett 8 Apex: Коя си заслужава повече през 2024?",
+    "channel": "Go e-motion",
+    "uploadDate": "2024-10-26"
+  }
+}
