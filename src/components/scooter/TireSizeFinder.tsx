@@ -15,7 +15,7 @@ import { inchLabel, inchOfScooter, inchOfSize, isMakerSection } from "@/lib/tire
  * Chaque choix est enregistré (tire_size_reports, insertion seule) : plusieurs clients
  * concordants = une compatibilité à corroborer, jamais écrite telle quelle.
  *
- * 23/10/2026 — propositions de mise en page (?taille=1..5, 0 ou absent = rendu d'origine) :
+ * 23/10/2026 — propositions de mise en page (?taille=1..5 ; 4 « Flanc » = défaut choisi par Nolan ; ?taille=0 = ancien bloc) :
  * le pouce lu dans scooter_models.tire_size ne montre que les tailles de CE diamètre,
  * le reste est replié. 1 Repassé · 2 Ses tailles · 3 Deux temps · 4 Flanc · 5 Recherche.
  */
@@ -98,8 +98,10 @@ const reportSize = (scooterId: string, rim: string, section: string) => {
 /** Variante d'affichage lue dans l'URL (?taille=1..5). 0 = rendu d'origine. */
 export const useTailleVariant = () => {
   const [params] = useSearchParams();
-  const n = Number(params.get("taille"));
-  return n >= 1 && n <= 5 ? n : 0;
+  const raw = params.get("taille");
+  if (raw === null) return 4; // 23/10 : Nolan choisit la 4 « Flanc » = rendu par défaut.
+  const n = Number(raw);
+  return n >= 0 && n <= 5 ? n : 4;
 };
 
 interface TireSizeFinderProps {
