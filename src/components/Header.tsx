@@ -16,6 +16,7 @@ import { useBrandAsset } from "@/hooks/useBrandAssets";
 import { SiteLogo, readLogoVariant } from "@/components/brand/SiteLogo";
 import GarageBadge from "@/components/GarageBadge";
 import ScooterSelectorSheet from "@/components/scooter/ScooterSelectorSheet";
+import HeaderProposals, { readBarreVariant } from "@/components/header/HeaderProposals";
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -62,7 +63,7 @@ export const ScooterIcon = ({ className = "w-5 h-5", strokeWidth = 2, style }: {
   </svg>
 );
 
-const Header = () => {
+const HeaderLegacy = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [nav] = useState(readNavVariant);
   const { pathname } = useLocation();
@@ -710,6 +711,12 @@ const Header = () => {
       <ScooterSelectorSheet open={scooterSheetOpen} onOpenChange={setScooterSheetOpen} />
     </header>
   );
+};
+
+/** 24/10 : propositions de barre ?barre=1..5 (HeaderProposals) ; sans paramètre, barre actuelle inchangée. */
+const Header = () => {
+  const [barre] = useState(readBarreVariant);
+  return barre ? <HeaderProposals variant={barre} /> : <HeaderLegacy />;
 };
 
 export default Header;
