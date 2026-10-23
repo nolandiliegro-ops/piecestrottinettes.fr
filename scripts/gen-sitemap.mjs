@@ -6,7 +6,7 @@
 // FAIL-SOFT : toute erreur réseau/REST -> sitemap minimal (statiques + catégories si dispo) + exit 0.
 //             Le build ne doit JAMAIS planter à cause du sitemap.
 
-import { writeFileSync } from "node:fs";
+import { writeFileSync, readFileSync, existsSync } from "node:fs";
 import { fileURLToPath } from "node:url";
 import { dirname, resolve } from "node:path";
 
@@ -28,6 +28,7 @@ const STATIC_PAGES = [
   { path: "/catalogue", priority: "0.9", changefreq: "daily" },
   { path: "/trottinettes", priority: "0.8", changefreq: "weekly" },
   { path: "/pepites", priority: "0.7", changefreq: "weekly" },
+  { path: "/blog", priority: "0.8", changefreq: "weekly" },
   { path: "/tutos", priority: "0.6", changefreq: "monthly" },
   { path: "/contact", priority: "0.5", changefreq: "monthly" },
   { path: "/cgv", priority: "0.3", changefreq: "yearly" },
@@ -151,11 +152,30 @@ async function main() {
       });
     }
 
+    // 6. Articles du blog (23/10/2026) : public/blog/index.json, fichier local du repo.
+    const blogIndex = resolve(dirname(OUT_PATH), "blog", "index.json");
+    let articles = [];
+    try {
+      if (existsSync(blogIndex)) articles = JSON.parse(readFileSync(blogIndex, "utf8"));
+    } catch (e) {
+      console.warn(`[sitemap] WARN: blog/index.json illisible (${e.message}), articles ignorés.`);
+    }
+    body += `\n  <!-- Blog -->\n`;
+    for (const a of articles) {
+      if (!a || !a.slug) continue;
+      body += urlEntry({
+        loc: `/blog/${xmlEscape(a.slug)}`,
+        lastmod: toLastmod(a.updated),
+        changefreq: "monthly",
+        priority: "0.7",
+      });
+    }
+
     const total =
-      STATIC_PAGES.length + keptCategories.length + parts.length + scooters.length + brands.length;
+      STATIC_PAGES.length + keptCategories.length + parts.length + scooters.length + brands.length + articles.length;
     writeFileSync(OUT_PATH, wrap(body), "utf8");
     console.log(
-      `[sitemap] OK -> ${total} URLs (${STATIC_PAGES.length} statiques, ${keptCategories.length} catégories, ${parts.length} pièces, ${scooters.length} scooters, ${brands.length} marques)`
+      `[sitemap] OK -> ${total} URLs (${STATIC_PAGES.length} statiques, ${keptCategories.length} catégories, ${parts.length} pièces, ${scooters.length} scooters, ${brands.length} marques, ${articles.length} articles)`
     );
   } catch (err) {
     // FAIL-SOFT : sitemap minimal, le build continue.
