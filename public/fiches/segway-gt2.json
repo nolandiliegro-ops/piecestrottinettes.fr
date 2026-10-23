@@ -1,0 +1,145 @@
+{
+  "displayName": "Segway GT2",
+  "metaTitle": "Segway GT2 : fiche technique, pneus et pièces",
+  "metaDescription": "Segway GT2 (GT2P) : deux moteurs de 1 500 W, batterie 1 512 Wh, pneus tubeless 11\" 90/55-7, deux freins à disque, 52,6 kg. Fiche, légalité et pièces.",
+  "intro": [
+    "La Segway GT2, GT2P en Europe, est le haut de gamme bimoteur de la série GT, lancé en 2022 à 2 999 € selon Frandroid. Segway la présente lui-même comme un équipement sportif pour usage privé, pas pour la voie publique : elle n'est pas bridée par construction à 25 km/h.",
+    "Deux moteurs de 1 500 W nominaux, batterie 52 V de 30 Ah, soit 1 512 Wh, pour 90 km annoncés et environ 60 km en usage typique. Disques à l'avant et à l'arrière, suspensions hydrauliques réglables, pneus tubeless de 11 pouces, 52,6 kg selon le manuel et 150 kg de charge maximale."
+  ],
+  "specs": [
+    [
+      "Moteur",
+      "2 × 1 500 W nominaux (avant et arrière), 2 × 3 000 W en pointe (manuel Segway)"
+    ],
+    [
+      "Vitesse",
+      "non bridée à 25 km/h : réservée à un usage privé hors voie publique"
+    ],
+    [
+      "Autonomie annoncée",
+      "jusqu'à 90 km ; environ 60 km en usage typique (Segway)"
+    ],
+    [
+      "Batterie",
+      "52 V (50,4 V nominal), 30 Ah, 1 512 Wh"
+    ],
+    [
+      "Poids",
+      "52,6 kg (manuel Segway), environ 53 kg sur la fiche support"
+    ],
+    [
+      "Charge max",
+      "150 kg (Frandroid)"
+    ],
+    [
+      "Roues",
+      "11 pouces, tubeless avec gel autocicatrisant, 90/55-7"
+    ],
+    [
+      "Freins",
+      "Disque avant + disque arrière, E-ABS arrière (Segway France)"
+    ],
+    [
+      "Suspension",
+      "Avant et arrière, hydraulique à amortissement réglable"
+    ],
+    [
+      "Étanchéité",
+      "IPX4"
+    ],
+    [
+      "Temps de charge",
+      "environ 16 h avec un chargeur, 8 h avec deux (manuel Segway)"
+    ]
+  ],
+  "pros": [
+    "Transmission intégrale par deux moteurs (Segway).",
+    "Deux freins à disque et un frein électronique arrière (Segway France).",
+    "1 512 Wh de batterie (manuel Segway)."
+  ],
+  "cons": [
+    "Interdite sur la voie publique en France dans sa configuration d'origine : terrain privé uniquement.",
+    "52,6 kg : impossible à porter.",
+    "Environ 16 heures de charge avec un seul chargeur (manuel Segway).",
+    "IPX4 seulement : protégée des éclaboussures, pas d'une averse prolongée."
+  ],
+  "parts": [
+    {
+      "label": "Pneu",
+      "size": "90/55-7 tubeless (11 pouces)",
+      "count": 3,
+      "to": "/piece/pneu-tubeless-90-55-7-offroad",
+      "cta": "Pneus 90/55-7"
+    },
+    {
+      "label": "Disque de frein",
+      "size": "140 mm, entraxe 44 mm, 6 trous",
+      "count": 3,
+      "to": "/piece/disque-de-frein-r6-140mm-entraxe-44mm-3-couleurs-vert",
+      "cta": "Disques 140 mm"
+    }
+  ],
+  "care": [
+    "Deux moteurs, deux freins à disque : contrôle les plaquettes avant et arrière plus souvent que sur une trottinette urbaine.",
+    "Avec plus de 50 kg à vide, des tubeless sous-gonflés se déforment vite : vérifie la pression avant chaque sortie.",
+    "Recharge avec les deux chargeurs pour gagner du temps, et stocke la batterie à mi-charge si la trottinette reste plusieurs semaines au garage."
+  ],
+  "price": {
+    "text": "Prix de lancement en France : 2 999 € (2022).",
+    "source": "Frandroid"
+  },
+  "faq": [
+    {
+      "q": "La Segway GT2 est-elle légale en France ?",
+      "a": "Pas sur la route. Une trottinette électrique doit être limitée par construction à 25 km/h pour circuler sur la voie publique ; la GT2P ne l'est pas. Segway la destine à un usage privé, sur un terrain fermé à la circulation."
+    },
+    {
+      "q": "Quelle taille de pneu pour la Segway GT2 ?",
+      "a": "Du 90/55-7 tubeless, 11 pouces sur jante de 7 pouces, identique à la GT1."
+    },
+    {
+      "q": "Combien de temps pour charger la Segway GT2 ?",
+      "a": "Environ 16 heures avec un chargeur, 8 heures avec deux chargeurs branchés en même temps, selon le manuel Segway."
+    },
+    {
+      "q": "Quels freins sur la Segway GT2 ?",
+      "a": "Un disque à l'avant, un disque à l'arrière et un frein électronique E-ABS sur la roue arrière, selon Segway France."
+    },
+    {
+      "q": "Quelle différence entre la Segway GT2 et la GT1 ?",
+      "a": "La GT2 a deux moteurs et 1 512 Wh, la GT1 un seul moteur et 1 008 Wh. La GT1E européenne est bridée à 25 km/h et peut rouler sur la voie publique ; la GT2P non."
+    }
+  ],
+  "sources": [
+    {
+      "label": "Segway France — KickScooter GT2P",
+      "url": "https://fr-fr.segway.com/ekickscooter/products/gt2p.html"
+    },
+    {
+      "label": "Segway — manuel série GT (PDF)",
+      "url": "https://support.segway.com/product_files/20230616022702_Segway%20SuperScooter%20GT%20Series%20Product%20Manual.pdf"
+    },
+    {
+      "label": "Segway Support — fiche GT2",
+      "url": "https://support.segway.com/support_product.php?segcatid=19"
+    },
+    {
+      "label": "Frandroid — lancement des Segway GT1E et GT2P",
+      "url": "https://www.frandroid.com/survoltes/trottinette-electrique/1408725_trottinettes-electriques-segway-lance-deux-rolls-royce-ultra-puissantes-et-endurantes"
+    },
+    {
+      "label": "Segway France — pneu tubeless 90/55-7 pour GT1 / GT2",
+      "url": "https://www.segwayfrance.com/boutique/Pneu-Tubeless-90-55-7-avec-Gel-Auto-cicatrisant-pour-Segway-GT1-GT2-p707387623"
+    },
+    {
+      "label": "Service-Public.fr — règles de circulation des trottinettes électriques",
+      "url": "https://www.service-public.gouv.fr/particuliers/vosdroits/F308?lang=en"
+    }
+  ],
+  "video": {
+    "id": "yZNiW-OXn_s",
+    "title": "Segway KickScooter GT Series",
+    "channel": "Segway-Ninebot Europe",
+    "uploadDate": "2022-08-10"
+  }
+}

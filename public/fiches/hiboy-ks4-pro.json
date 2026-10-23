@@ -1,0 +1,125 @@
+{
+  "displayName": "Hiboy KS4 Pro",
+  "metaTitle": "Hiboy KS4 Pro : fiche technique et pièces",
+  "metaDescription": "Hiboy KS4 Pro : 500 W (750 W en pointe), batterie 36 V 11,6 Ah, pneus pleins alvéolés 10 pouces, disque arrière, 40 km annoncés. Fiche et FAQ.",
+  "intro": [
+    "La Hiboy KS4 Pro est la grande sœur de la KS4 : moteur de 500 W au lieu de 350 W, batterie de 11,6 Ah au lieu de 7,5 Ah, et pneus pleins alvéolés de 10 pouces au lieu de 8,5. Elle garde la suspension arrière par ressorts et le freinage disque plus électronique.",
+    "Hiboy annonce 750 W en pointe, 417,6 Wh et jusqu'à 40 km d'autonomie, mesurés avec un pilote de 75 kg sur terrain plat. Les essais publiés tombent plutôt entre 27 et 34 km. Son poids varie selon les fiches, de 17,5 à 18,4 kg, pour 100 kg de charge maximale."
+  ],
+  "specs": [
+    [
+      "Moteur",
+      "500 W nominaux, 750 W en pointe"
+    ],
+    [
+      "Vitesse",
+      "30 km/h (19 mph) sur la fiche américaine ; 25 km/h maximum autorisés sur la voie publique en France"
+    ],
+    [
+      "Autonomie annoncée",
+      "jusqu'à 40 km (25 miles), pilote de 75 kg sur le plat"
+    ],
+    [
+      "Autonomie mesurée",
+      "27 à 32 km selon un utilisateur (Best Buy), environ 34 km estimés par ActiveGearReview"
+    ],
+    [
+      "Batterie",
+      "36 V, 11,6 Ah, 417,6 Wh (42 V en fin de charge)"
+    ],
+    [
+      "Poids",
+      "17,5 kg (ActiveGearReview) à 18,4 kg (Hiboy)"
+    ],
+    [
+      "Charge max",
+      "100 kg"
+    ],
+    [
+      "Roues",
+      "10 pouces, pneus pleins alvéolés"
+    ],
+    [
+      "Freins",
+      "Électronique avant + disque arrière"
+    ],
+    [
+      "Suspension",
+      "Arrière, à ressorts"
+    ],
+    [
+      "Étanchéité",
+      "IPX4"
+    ],
+    [
+      "Temps de charge",
+      "5 à 7 h selon ActiveGearReview, 5 à 6 h selon un utilisateur"
+    ]
+  ],
+  "pros": [
+    "Pneus pleins de 10 pouces : pas de crevaison, et plus de passage sur les bosses que la KS4 en 8,5 pouces (tests YouTube).",
+    "Batterie de 417,6 Wh, près de 50 % de plus que la KS4.",
+    "Freinage jugé progressif et rassurant par les testeurs (tests YouTube)."
+  ],
+  "cons": [
+    "Les pneus pleins transmettent davantage les chocs sur route abîmée qu'un pneu gonflable (test YouTube).",
+    "Ralentit nettement en forte côte avec un pilote de 90 kg (test YouTube).",
+    "Poids et temps de charge diffèrent d'une fiche à l'autre."
+  ],
+  "parts": [],
+  "care": [
+    "Tes pneus pleins ne crèvent pas, mais surveille leur usure : un pneu lisse glisse sur sol mouillé.",
+    "Le disque arrière est ton frein mécanique : nettoie-le avec un dégraissant frein s'il se met à siffler.",
+    "Vérifie les ressorts de la suspension arrière et leurs vis de fixation après quelques centaines de kilomètres."
+  ],
+  "faq": [
+    {
+      "q": "Quelle taille de pneu pour la Hiboy KS4 Pro ?",
+      "a": "Des pneus pleins alvéolés de 10 pouces. Avant de commander, lis la cote exacte sur le flanc de ton pneu : les références de 10 pouces ne sont pas toutes interchangeables."
+    },
+    {
+      "q": "Quelle autonomie réelle pour la Hiboy KS4 Pro ?",
+      "a": "Hiboy annonce 40 km. Les retours d'essais vont de 27 à 34 km, selon ton poids, le relief et le mode de conduite."
+    },
+    {
+      "q": "La KS4 Pro accepte-t-elle les pneus de la KS4 ?",
+      "a": "Non. La KS4 roule en 8,5 pouces et la KS4 Pro en 10 pouces. Vérifie le modèle inscrit sur ta trottinette avant d'acheter."
+    },
+    {
+      "q": "Combien de temps pour recharger la Hiboy KS4 Pro ?",
+      "a": "Compte 5 à 7 heures pour une charge complète, selon ActiveGearReview."
+    },
+    {
+      "q": "Peut-on rouler à 30 km/h avec la KS4 Pro en France ?",
+      "a": "Non. Les 30 km/h annoncés concernent la fiche américaine. En France, la voie publique est limitée à 25 km/h pour les trottinettes électriques."
+    }
+  ],
+  "sources": [
+    {
+      "label": "Hiboy — KS4 Pro (reconditionnée)",
+      "url": "https://www.hiboy.com/products/hiboy-ks4-pro-refurbished-electric-scooter"
+    },
+    {
+      "label": "eBikeOracle — Hiboy KS4 Pro",
+      "url": "https://ebikeoracle.com/electric-scooters/hiboy-ks4-pro"
+    },
+    {
+      "label": "ActiveGearReview — Hiboy KS4 Pro review",
+      "url": "https://www.activegearreview.com/cycling/electric-bikes/hiboy-ks4-pro-electric-scooter-review/"
+    },
+    {
+      "label": "Best Buy — Hiboy KS4 Pro",
+      "url": "https://www.bestbuy.com/product/hiboy-ks4-pro-foldable-electric-scooter-w-25-mi-max-operating-range-19-mph-max-speed-black/J3Q5Q3SW4F"
+    },
+    {
+      "label": "YouTube — HIBOY KS4 Pro Unboxing and Review",
+      "url": "https://www.youtube.com/watch?v=QDwIa8om7IA"
+    }
+  ],
+  "video": {
+    "id": "LzaIGKD-O_8",
+    "title": "HiBoy KS4 Pro Vs. NUI KQi3 Pro - Review + Test Ride",
+    "channel": "Toasty DIY",
+    "uploadDate": "2025-05-13"
+  }
+}

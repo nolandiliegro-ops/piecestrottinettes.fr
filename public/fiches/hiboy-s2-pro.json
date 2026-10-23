@@ -1,0 +1,131 @@
+{
+ "displayName": "Hiboy S2 Pro",
+ "metaTitle": "Hiboy S2 Pro : fiche technique, chargeur et pièces",
+ "metaDescription": "Hiboy S2 Pro : moteur 500 W, batterie 36 V 11,6 Ah, pneus pleins alvéolés 10 pouces, disque arrière, 40 km annoncés. Fiche, chargeur et FAQ.",
+ "intro": [
+  "La Hiboy S2 Pro est la version 10 pouces de la S2 : pneus pleins alvéolés plus grands, moteur de 500 W et batterie de 11,6 Ah. Elle garde la suspension arrière, le frein à disque arrière et le frein électronique avant, pour environ 17 kg et 100 kg de charge maximale.",
+  "Hiboy annonce 40 km d'autonomie. Les utilisateurs filmés en relèvent 22 à 26 km, et un testeur a parcouru 20 km en gardant 35 % de batterie. La puissance de pointe change selon les pages Hiboy, 600 ou 750 W, comme le temps de charge : 4 à 6 h, ou 8 h sur Amazon."
+ ],
+ "specs": [
+  [
+   "Moteur",
+   "500 W nominaux ; 600 W en pointe sur la fiche Hiboy États-Unis, 750 W sur d'autres pages Hiboy"
+  ],
+  [
+   "Vitesse",
+   "25 km/h sur la fiche Hiboy Australie ; 30 km/h (19 mph) sur la fiche américaine"
+  ],
+  [
+   "Autonomie annoncée",
+   "jusqu'à 40 km (25 miles)"
+  ],
+  [
+   "Autonomie mesurée",
+   "22 à 26 km pour un pilote d'environ 100 kg (selon un test YouTube)"
+  ],
+  [
+   "Batterie",
+   "36 V, 11,6 Ah, 417,6 Wh (42 V en fin de charge)"
+  ],
+  [
+   "Poids",
+   "16,5 à 17 kg selon les fiches"
+  ],
+  [
+   "Charge max",
+   "100 kg"
+  ],
+  [
+   "Roues",
+   "10 pouces, pneus pleins alvéolés"
+  ],
+  [
+   "Freins",
+   "Électronique avant + disque arrière"
+  ],
+  [
+   "Suspension",
+   "Arrière"
+  ],
+  [
+   "Étanchéité",
+   "IPX4"
+  ],
+  [
+   "Temps de charge",
+   "4 à 6 h selon Hiboy, 8 h selon Amazon"
+  ]
+ ],
+ "pros": [
+  "Pneus pleins de 10 pouces : aucune crevaison et plus d'aisance sur les trottoirs que la S2 en 8,5 pouces.",
+  "Bonne tenue en côte pour un moteur de 500 W (tests YouTube).",
+  "Cadre jugé rigide et stable à pleine vitesse (test YouTube)."
+ ],
+ "cons": [
+  "Ça secoue sur route fissurée : les pneus pleins n'amortissent pas comme un pneu gonflable (tests YouTube).",
+  "Autonomie réelle bien en dessous des 40 km annoncés.",
+  "Chiffres incohérents d'une page Hiboy à l'autre (puissance de pointe, temps de charge)."
+ ],
+ "parts": [
+  {
+   "label": "Chargeur",
+   "size": "36 V (sortie 42 V), prise jack DC 5,5 x 2,5 mm",
+   "count": 1,
+   "to": "/piece/pack-chargeur-36v-adaptateur-dc5-5x2-5",
+   "cta": "Chargeur 36 V"
+  }
+ ],
+ "care": [
+  "Garde ta batterie entre 20 et 80 % au quotidien et charge à 100 % seulement avant une longue sortie.",
+  "Le disque arrière siffle s'il est gras : nettoie-le au dégraissant frein, jamais au lubrifiant.",
+  "Resserre les vis de la colonne et du guidon chaque mois : les pneus pleins font vibrer toute la trottinette."
+ ],
+ "faq": [
+  {
+   "q": "Quelle taille de pneu pour la Hiboy S2 Pro ?",
+   "a": "Des pneus pleins alvéolés de 10 pouces. Les références de 10 pouces varient : lis la cote sur le flanc de ton pneu avant d'en commander un."
+  },
+  {
+   "q": "Quel chargeur pour la Hiboy S2 Pro ?",
+   "a": "Un chargeur 36 V, qui délivre 42 V en fin de charge. Vérifie aussi la fiche : un chargeur de la bonne tension mais avec la mauvaise prise ne se branchera pas."
+  },
+  {
+   "q": "Quelle autonomie réelle pour la Hiboy S2 Pro ?",
+   "a": "Compte 22 à 26 km selon les retours filmés d'un pilote d'environ 100 kg. Plus léger et en mode lent, tu t'approcheras davantage des 40 km annoncés."
+  },
+  {
+   "q": "Quelle différence entre la Hiboy S2 Pro et la S2 Max ?",
+   "a": "La S2 Pro reste en 36 V avec pneus pleins et disque arrière. La S2 Max passe en 48 V, 557 Wh, frein tambour avant et pneus gonflables ou tubeless."
+  },
+  {
+   "q": "La Hiboy S2 Pro est-elle bridée à 25 km/h ?",
+   "a": "Hiboy liste une version à 25 km/h sur certains marchés et une version à 30 km/h aux États-Unis. Sur la voie publique en France, tu ne dois pas dépasser 25 km/h."
+  }
+ ],
+ "sources": [
+  {
+   "label": "Hiboy — S2 Pro",
+   "url": "https://www.hiboy.com/products/hiboy-s2pro-electric-scooter-for-daily-commuting"
+  },
+  {
+   "label": "Hiboy Australie — S2 Pro",
+   "url": "https://hiboy.com.au/product/hiboy-s2-pro-electric-scooter/"
+  },
+  {
+   "label": "Hiboy — FAQ S2 Pro",
+   "url": "https://www.hiboy.com/blogs/news/hiboy-s2-pro-electric-scooter-faqs-2026"
+  },
+  {
+   "label": "eBikeOracle — Hiboy S2 Pro",
+   "url": "https://ebikeoracle.com/electric-scooters/hiboy-s2-pro"
+  },
+  {
+   "label": "YouTube — Skip This or Buy It? Hiboy S2 Pro Review",
+   "url": "https://www.youtube.com/watch?v=kznXXkAjT34"
+  },
+  {
+   "label": "YouTube — Hiboy S2 Pro | Skate Into The Spotlight With Style!",
+   "url": "https://www.youtube.com/watch?v=LhH_ViNcroQ"
+  }
+ ]
+}

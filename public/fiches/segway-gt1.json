@@ -1,0 +1,145 @@
+{
+  "displayName": "Segway GT1",
+  "metaTitle": "Segway GT1 : fiche technique, pneus et pièces",
+  "metaDescription": "Segway GT1 (GT1E) : batterie 50,4 V 1 008 Wh, 70 km annoncés, pneus tubeless 11\" 90/55-7, suspensions hydrauliques réglables, 47,6 kg. Fiche et pièces.",
+  "intro": [
+    "La Segway GT1, vendue en France sous le nom GT1E, est le modèle monomoteur de la série GT, présentée en juillet 2022 à 2 499 € selon Frandroid. C'est une grosse trottinette de 47,6 kg, avec suspensions hydrauliques réglables à l'avant et à l'arrière et pneus tubeless de 11 pouces. La GT1E européenne est bridée à 25 km/h.",
+    "Batterie 50,4 V de 20 Ah, soit 1 008 Wh, pour 70 km annoncés et 50 km en usage typique selon Segway. Les chiffres de moteur varient selon les fiches : 500 W nominaux et 1 500 W en pointe pour la GT1E chez Frandroid et Idealo, 1 400 W nominaux sur la fiche support Segway. Elle accepte 150 kg."
+  ],
+  "specs": [
+    [
+      "Moteur",
+      "un moteur arrière ; GT1E : 500 W nominaux, 1 500 W en pointe (Frandroid, Idealo) ; 1 400 W nominaux sur la fiche support Segway"
+    ],
+    [
+      "Vitesse",
+      "25 km/h (version européenne GT1E)"
+    ],
+    [
+      "Autonomie annoncée",
+      "jusqu'à 70 km ; 50 km en usage typique (Segway)"
+    ],
+    [
+      "Batterie",
+      "50,4 V, 20 Ah, 1 008 Wh"
+    ],
+    [
+      "Poids",
+      "47,6 kg"
+    ],
+    [
+      "Charge max",
+      "150 kg"
+    ],
+    [
+      "Roues",
+      "11 pouces, tubeless avec gel autocicatrisant, 90/55-7"
+    ],
+    [
+      "Freins",
+      "disque avant + E-ABS arrière selon Segway France ; deux disques selon d'autres fiches (Darty, vidéo Segway Benelux)"
+    ],
+    [
+      "Suspension",
+      "Avant et arrière, hydraulique à amortissement réglable"
+    ],
+    [
+      "Étanchéité",
+      "IPX4 (IPX5 sur la fiche Darty)"
+    ],
+    [
+      "Temps de charge",
+      "environ 12 h avec un chargeur, 6 h avec deux (Darty)"
+    ]
+  ],
+  "pros": [
+    "Suspensions hydrauliques réglables à l'avant et à l'arrière (Segway France).",
+    "1 008 Wh de batterie et 150 kg de charge admise (Frandroid).",
+    "Pneus tubeless de 11 pouces avec gel autocicatrisant (Segway France)."
+  ],
+  "cons": [
+    "47,6 kg : elle ne se porte pas, elle se gare.",
+    "Recharge d'environ 12 heures avec un seul chargeur (Darty).",
+    "IPX4 seulement selon Segway : à éviter sous forte pluie.",
+    "Fiches contradictoires sur le moteur et le freinage arrière : vérifie la plaque de ta trottinette avant de commander une pièce de frein."
+  ],
+  "parts": [
+    {
+      "label": "Pneu",
+      "size": "90/55-7 tubeless (11 pouces)",
+      "count": 3,
+      "to": "/piece/pneu-tubeless-90-55-7-offroad",
+      "cta": "Pneus 90/55-7"
+    },
+    {
+      "label": "Disque de frein",
+      "size": "140 mm, entraxe 44 mm, 6 trous",
+      "count": 3,
+      "to": "/piece/disque-de-frein-r6-140mm-entraxe-44mm-3-couleurs-vert",
+      "cta": "Disques 140 mm"
+    }
+  ],
+  "care": [
+    "Règle tes amortisseurs selon ton poids : trop durs, ils font sautiller la roue ; trop mous, la trottinette talonne dans les trous.",
+    "Avec près de 50 kg plus le pilote, vérifie la pression des tubeless toutes les deux semaines.",
+    "Branche les deux chargeurs si tu en as deux : la recharge passe d'environ 12 h à 6 h, mais ne laisse pas la batterie stockée à 100 %."
+  ],
+  "price": {
+    "text": "Prix de lancement en France : 2 499 € (juillet 2022).",
+    "source": "Frandroid"
+  },
+  "faq": [
+    {
+      "q": "Quelle taille de pneu pour la Segway GT1 ?",
+      "a": "Du 90/55-7 tubeless, soit 11 pouces sur une jante de 7 pouces. C'est la même taille que la GT2 : Segway France vend le même pneu pour les deux."
+    },
+    {
+      "q": "Peut-on rouler avec une Segway GT1 sur la route ?",
+      "a": "Oui pour la GT1E européenne, parce qu'elle est bridée par construction à 25 km/h. En France, aucune trottinette électrique ne peut dépasser cette vitesse sur la voie publique, pistes cyclables comprises."
+    },
+    {
+      "q": "Quelle autonomie réelle pour la Segway GT1 ?",
+      "a": "Segway annonce 70 km au mieux et 50 km en usage typique. Ton poids, le froid et le relief comptent beaucoup sur une machine de près de 50 kg."
+    },
+    {
+      "q": "Combien de temps pour charger la Segway GT1 ?",
+      "a": "Environ 12 heures avec un chargeur. Le port de charge accepte deux chargeurs en même temps, ce qui ramène la charge à environ 6 heures selon Darty."
+    },
+    {
+      "q": "Quelle différence entre la Segway GT1 et la GT2 ?",
+      "a": "La GT1 a un seul moteur et 1 008 Wh ; la GT2 a deux moteurs, 1 512 Wh et pèse 5 kg de plus. La GT2P n'est pas bridée à 25 km/h, elle est réservée à un usage privé. Les deux partagent le pneu 90/55-7."
+    }
+  ],
+  "sources": [
+    {
+      "label": "Segway France — KickScooter GT1E",
+      "url": "https://fr-fr.segway.com/ekickscooter/products/gt1e.html"
+    },
+    {
+      "label": "Frandroid — lancement des Segway GT1E et GT2P",
+      "url": "https://www.frandroid.com/survoltes/trottinette-electrique/1408725_trottinettes-electriques-segway-lance-deux-rolls-royce-ultra-puissantes-et-endurantes"
+    },
+    {
+      "label": "Darty — Segway GT1E",
+      "url": "https://www.darty.com/nav/achat/sports_loisirs/glisse_urbaine/trottinette_electrique/segway_trotinette_gt1e.html"
+    },
+    {
+      "label": "Segway Support — fiche GT1",
+      "url": "https://support.segway.com/support_product.php?segcatid=18"
+    },
+    {
+      "label": "Segway France — pneu tubeless 90/55-7 pour GT1 / GT2",
+      "url": "https://www.segwayfrance.com/boutique/Pneu-Tubeless-90-55-7-avec-Gel-Auto-cicatrisant-pour-Segway-GT1-GT2-p707387623"
+    },
+    {
+      "label": "Idealo — Ninebot by Segway KickScooter GT1E",
+      "url": "https://www.idealo.fr/prix/202242210/ninebot-by-segway-kickscooter-gt1e.html"
+    }
+  ],
+  "video": {
+    "id": "yZNiW-OXn_s",
+    "title": "Segway KickScooter GT Series",
+    "channel": "Segway-Ninebot Europe",
+    "uploadDate": "2022-08-10"
+  }
+}

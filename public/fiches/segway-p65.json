@@ -1,0 +1,148 @@
+{
+  "displayName": "Segway P65",
+  "metaTitle": "Segway P65 : fiche technique, pneus et pièces",
+  "metaDescription": "Segway P65 (P65E) : 500 W (980 W en pointe), batterie 48 V 561 Wh, 65 km annoncés, pneus tubeless 10.5x2.75-7, disque avant, 4 h de charge. Fiche et pièces.",
+  "intro": [
+    "La Segway P65, P65E en version européenne, est la petite sœur de la P100S dans la série P de Segway-Ninebot. Elle garde le gros gabarit, les pneus de 10,5 pouces et l'éclairage complet, mais avec une batterie deux fois plus petite et un seul disque de frein. Frandroid la situe à 1 199 € au lancement.",
+    "Moteur arrière de 500 W nominaux (980 W en pointe), batterie 46,8 V de 12 Ah, soit 561 Wh, pour 65 km annoncés à 16 km/h de moyenne. Elle n'a pas de suspension : le confort repose sur ses pneus tubeless avec couche de gel. Elle pèse 28 kg selon Segway et se recharge en 4 heures environ."
+  ],
+  "specs": [
+    [
+      "Moteur",
+      "500 W nominaux, 980 W en pointe (roue arrière)"
+    ],
+    [
+      "Vitesse",
+      "25 km/h (version européenne P65E)"
+    ],
+    [
+      "Autonomie annoncée",
+      "jusqu'à 65 km (75 kg, 25 °C, 16 km/h de moyenne)"
+    ],
+    [
+      "Batterie",
+      "48 V (46,8 V nominal), 12 Ah, 561 Wh"
+    ],
+    [
+      "Poids",
+      "28 kg selon Segway France ; 26,3 kg sur la fiche américaine"
+    ],
+    [
+      "Charge max",
+      "120 kg"
+    ],
+    [
+      "Roues",
+      "10,5 pouces, tubeless avec couche de gel, 10.5x2.75-7"
+    ],
+    [
+      "Freins",
+      "Disque avant + électronique arrière"
+    ],
+    [
+      "Suspension",
+      "Aucune"
+    ],
+    [
+      "Étanchéité",
+      "IPX5"
+    ],
+    [
+      "Temps de charge",
+      "environ 4 h"
+    ]
+  ],
+  "pros": [
+    "561 Wh rechargés en environ 4 heures (Segway).",
+    "Pneus tubeless de 10,5 pouces avec couche de gel anti-crevaison (Segway UK).",
+    "Clignotants avant et arrière de série."
+  ],
+  "cons": [
+    "Aucune suspension, sur une trottinette de 28 kg.",
+    "Un seul disque, à l'avant ; la P100S en a deux.",
+    "Lourde à porter dans un escalier ou un transport en commun.",
+    "Aucune autonomie mesurée en test de presse retenue ici : les 65 km sont une annonce du fabricant."
+  ],
+  "parts": [
+    {
+      "label": "Pneu",
+      "size": "10.5x2.75-7 tubeless (10,5 pouces)",
+      "count": 7,
+      "to": "/piece/pneu-tubeless-10-5x2-75-7-cityroad-xuancheng",
+      "cta": "Pneus 10.5x2.75"
+    },
+    {
+      "label": "Disque de frein",
+      "size": "140 mm, entraxe 44 mm, 6 trous (avant)",
+      "count": 3,
+      "to": "/piece/disque-de-frein-r6-140mm-entraxe-44mm-3-couleurs-bleu",
+      "cta": "Disques 140 mm"
+    },
+    {
+      "label": "Plaquettes de frein",
+      "size": "étrier type Xtech Zoom",
+      "count": 3,
+      "to": "/piece/plaquettes-de-freins-xtech-zoom-xiaomi-mi3",
+      "cta": "Plaquettes"
+    }
+  ],
+  "care": [
+    "Ton disque avant fait presque tout le freinage mécanique : contrôle l'épaisseur des plaquettes tous les 1 000 km environ.",
+    "Sans suspension, les pneus sont ton amortisseur : garde la pression recommandée sur le flanc, ni plus ni moins.",
+    "Le moteur est à l'arrière : au démontage de la roue, débranche proprement le câble moteur avant de tirer sur l'axe."
+  ],
+  "price": {
+    "text": "Prix de lancement : 1 199 €.",
+    "source": "Frandroid"
+  },
+  "faq": [
+    {
+      "q": "Quelle taille de pneu pour la Segway P65 ?",
+      "a": "Du 10.5x2.75-7 tubeless, 10,5 pouces sur une jante de 7 pouces. C'est la même taille que la P100S."
+    },
+    {
+      "q": "La Segway P65 a-t-elle une suspension ?",
+      "a": "Non. Segway compte sur ses pneus larges de 10,5 pouces avec couche de gel pour absorber les chocs."
+    },
+    {
+      "q": "Combien de temps pour charger la Segway P65 ?",
+      "a": "Environ 4 heures pour ses 561 Wh, selon Segway."
+    },
+    {
+      "q": "Peut-on rouler à plus de 25 km/h avec la Segway P65 ?",
+      "a": "Pas sur la voie publique en France : la P65E européenne est limitée à 25 km/h, et c'est la seule vitesse autorisée pour une trottinette sur route ou piste cyclable."
+    },
+    {
+      "q": "Quelle différence entre la Segway P65 et la P100S ?",
+      "a": "La P100S a un moteur de 650 W, une batterie de 1 086 Wh pour 100 km annoncés, un second disque à l'arrière et une suspension. La P65 se contente de 561 Wh, d'un disque avant et pèse moins lourd."
+    }
+  ],
+  "sources": [
+    {
+      "label": "Segway France — KickScooter P65E",
+      "url": "https://fr-fr.segway.com/ekickscooter/products/p65e.html"
+    },
+    {
+      "label": "Segway UK — KickScooter P65E",
+      "url": "https://uk-en.segway.com/ekickscooter/products/p65e.html"
+    },
+    {
+      "label": "Frandroid — comment choisir sa trottinette Segway-Ninebot",
+      "url": "https://www.frandroid.com/guide-dachat/guides-dachat-survoltes/guides-dachat-trottinettes-electriques/2032120_segway-ninebot-comment-choisir-sa-trottinette-electrique-kickscooter"
+    },
+    {
+      "label": "Cleanrider — Ninebot by Segway P65E",
+      "url": "https://www.cleanrider.com/catalogue/trottinette-electrique/ninebot-by-segway/ninebot-by-segway-p65e/"
+    },
+    {
+      "label": "Escootnow — pneu 10.5x2.75 P65 / P100S",
+      "url": "https://escootnow.com.au/products/tyre-10.5x2.75"
+    }
+  ],
+  "video": {
+    "id": "zwbkg35CKX0",
+    "title": "Segway Ninebot P65E : Un MONSTRE (Légal) de trottinette électrique !",
+    "channel": "Selectos Tech",
+    "uploadDate": "2022-12-20"
+  }
+}

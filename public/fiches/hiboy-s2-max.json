@@ -1,0 +1,121 @@
+{
+  "displayName": "Hiboy S2 Max",
+  "metaTitle": "Hiboy S2 Max : fiche technique, autonomie et pièces",
+  "metaDescription": "Hiboy S2 Max : 500 W (650 W en pointe), batterie 48 V 11,6 Ah, 64 km annoncés, roues 10 pouces, tambour avant. Fiche technique, entretien et FAQ.",
+  "intro": [
+    "La Hiboy S2 Max est la routière de la gamme S2 : batterie 48 V, roues de 10 pouces et 64 km d'autonomie annoncés. Elle porte le nom S2 mais n'a ni les roues, ni la batterie, ni les freins d'une S2 classique : regarde le nom inscrit sur le cadre avant de commander une pièce.",
+    "Le moteur fait 500 W, 650 W en pointe, et la batterie de 11,6 Ah stocke environ 557 Wh. En usage réel, les tests relèvent 45 à 51 km sur un trajet vallonné, et plus de 32 km en roulant près de la vitesse maximale. Elle freine par tambour à l'avant et électroniquement à l'arrière, pour 18,8 kg."
+  ],
+  "specs": [
+    [
+      "Moteur",
+      "500 W nominaux, 650 W en pointe"
+    ],
+    [
+      "Vitesse",
+      "25 km/h sur la fiche Hiboy Australie ; 30 km/h (19 mph) sur la fiche américaine"
+    ],
+    [
+      "Autonomie annoncée",
+      "jusqu'à 64 km (40 miles)"
+    ],
+    [
+      "Autonomie mesurée",
+      "45 à 51 km sur trajet vallonné (selon modelrec.com) ; plus de 32 km près de la vitesse max (selon un test YouTube)"
+    ],
+    [
+      "Batterie",
+      "48 V, 11,6 Ah, environ 557 Wh (54,6 V en fin de charge)"
+    ],
+    [
+      "Poids",
+      "18,8 kg"
+    ],
+    [
+      "Charge max",
+      "100 kg"
+    ],
+    [
+      "Roues",
+      "10 pouces ; pneus gonflables selon Hiboy Australie, tubeless autoréparants selon Hiboy États-Unis"
+    ],
+    [
+      "Freins",
+      "Tambour avant + électronique arrière"
+    ],
+    [
+      "Étanchéité",
+      "IPX4"
+    ],
+    [
+      "Temps de charge",
+      "6 à 7 h"
+    ]
+  ],
+  "pros": [
+    "Grande autonomie pour une trottinette de moins de 19 kg (tests YouTube et modelrec.com).",
+    "Le moteur de 500 W monte bien les côtes, selon un test vidéo.",
+    "Freinage stable malgré un frein principal à l'avant, grâce à l'empattement long (test YouTube)."
+  ],
+  "cons": [
+    "Le tambour avant est le seul frein mécanique.",
+    "Recharge longue : 6 à 7 heures.",
+    "Type de pneu différent selon le marché : chambre à air ou tubeless, à vérifier sur ta trottinette."
+  ],
+  "parts": [],
+  "care": [
+    "Le tambour avant fait l'essentiel du freinage : fais-le régler dès que la course du levier s'allonge.",
+    "Pneu gonflable ou tubeless, la pression se contrôle chaque mois : un pneu mou use la batterie plus vite.",
+    "Charge la batterie 48 V à température ambiante, pas juste après un trajet par grand froid."
+  ],
+  "faq": [
+    {
+      "q": "Quelle taille de pneu pour la Hiboy S2 Max ?",
+      "a": "Des roues de 10 pouces, mais Hiboy a changé de pneu en cours de route : gonflable sur certaines fiches, tubeless autoréparant sur d'autres. Lis la cote sur le flanc de ton pneu avant de commander."
+    },
+    {
+      "q": "Quelle autonomie réelle pour la Hiboy S2 Max ?",
+      "a": "Hiboy annonce 64 km. Les essais publiés relèvent 45 à 51 km sur un trajet vallonné, et un peu plus de 32 km en roulant à fond tout le temps."
+    },
+    {
+      "q": "La Hiboy S2 Max a-t-elle des freins à disque ?",
+      "a": "Non : un frein à tambour à l'avant et un frein électronique à l'arrière."
+    },
+    {
+      "q": "Quelle différence entre la Hiboy S2 Max et la S2 Pro ?",
+      "a": "La S2 Max passe à une batterie 48 V de 557 Wh et un frein tambour avant. La S2 Pro reste en 36 V et 417,6 Wh, avec des pneus pleins et un disque arrière."
+    },
+    {
+      "q": "Peut-on utiliser la S2 Max à 30 km/h en France ?",
+      "a": "Pas sur la voie publique : la loi française plafonne les trottinettes électriques à 25 km/h. Hiboy vend d'ailleurs une version à 25 km/h sur certains marchés."
+    }
+  ],
+  "sources": [
+    {
+      "label": "Hiboy — S2 MAX",
+      "url": "https://www.hiboy.com/products/hiboy-s2-max-electric-scooter"
+    },
+    {
+      "label": "Hiboy Australie — S2 MAX",
+      "url": "https://hiboy.com.au/product/hiboy-s2-max-electric-scooter/"
+    },
+    {
+      "label": "Hiboy — S2 MAX passe au pneu tubeless autoréparant",
+      "url": "https://www.hiboy.com/blogs/news/hiboy-s2-max-upgraded-to-self-healing-tubeless-tire"
+    },
+    {
+      "label": "Modelrec — commuter electric scooters",
+      "url": "https://modelrec.com/best-commuter-electric-scooters/"
+    },
+    {
+      "label": "YouTube — Hiboy S2 Max 48-VOLT Performance Review",
+      "url": "https://www.youtube.com/watch?v=_9WYBLW8omM"
+    }
+  ],
+  "video": {
+    "id": "Im8SvpM2GGo",
+    "title": "Hiboy S2 Max Electric Scooter Test & Review",
+    "channel": "Electric Revolution",
+    "uploadDate": "2022-03-26"
+  }
+}

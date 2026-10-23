@@ -1,0 +1,129 @@
+{
+  "displayName": "Hiboy KS4",
+  "metaTitle": "Hiboy KS4 : fiche technique, pneus pleins et pièces",
+  "metaDescription": "Hiboy KS4 : moteur 350 W (500 W en pointe), batterie 36 V 7,5 Ah, pneus pleins alvéolés 8,5 pouces, frein à disque arrière. Fiche, pièces, FAQ.",
+  "intro": [
+    "La Hiboy KS4 est une trottinette de ville de 14,8 kg, montée sur des pneus pleins alvéolés de 8,5 pouces, avec une suspension arrière. Un testeur YouTube la présente comme une évolution de la Hiboy S2. Ne la confonds pas avec la KS4 Pro, plus puissante et équipée de roues de 10 pouces.",
+    "Son moteur avant fait 350 W, 500 W en pointe, avec une batterie 36 V de 7,5 Ah, soit 270 Wh. Hiboy annonce 22 à 27 km d'autonomie ; un test en anglais a relevé environ 21 km en roulant surtout à pleine vitesse. Elle freine électroniquement à l'avant et par disque à l'arrière."
+  ],
+  "specs": [
+    [
+      "Moteur",
+      "350 W nominaux, 500 W en pointe (manuel Hiboy, test YouTube)"
+    ],
+    [
+      "Vitesse",
+      "30 km/h (19 mph) sur la fiche américaine ; 25 km/h maximum autorisés sur la voie publique en France"
+    ],
+    [
+      "Autonomie annoncée",
+      "22 à 27,3 km (13,6 à 17 miles)"
+    ],
+    [
+      "Autonomie mesurée",
+      "environ 21 km, surtout à pleine vitesse (selon un test YouTube)"
+    ],
+    [
+      "Batterie",
+      "36 V, 7,5 Ah, 270 Wh (42 V en fin de charge)"
+    ],
+    [
+      "Poids",
+      "14,8 kg"
+    ],
+    [
+      "Charge max",
+      "100 kg"
+    ],
+    [
+      "Roues",
+      "8,5 pouces, pneus pleins alvéolés"
+    ],
+    [
+      "Freins",
+      "Électronique avant + disque arrière"
+    ],
+    [
+      "Suspension",
+      "Arrière"
+    ],
+    [
+      "Étanchéité",
+      "IPX4"
+    ],
+    [
+      "Temps de charge",
+      "4 à 6 h selon Hiboy, 3 à 5 h selon le manuel"
+    ]
+  ],
+  "pros": [
+    "Pneus pleins : pas de crevaison à craindre (tests YouTube).",
+    "14,8 kg, elle se porte sans peine dans un escalier ou un train.",
+    "Deux freins : électronique à l'avant, disque à l'arrière."
+  ],
+  "cons": [
+    "Conduite ferme : les petits pneus pleins et la suspension arrière filtrent peu les chocs (test YouTube).",
+    "Le moteur de 350 W peine dans les côtes avec un pilote lourd (tests YouTube).",
+    "Autonomie réelle autour de 21 km en roulant vite, loin des 27 km annoncés."
+  ],
+  "parts": [
+    {
+      "label": "Pneu plein",
+      "size": "8,5 pouces (8,5 x 2, jante 6.1)",
+      "count": 27,
+      "to": "/piece/pneu-plein-8-5x2-6-1-ultra-leger-jante-34-mm-lisere-rouge-nedong",
+      "cta": "Pneus pleins 8,5 x 2"
+    }
+  ],
+  "care": [
+    "Un pneu plein ne se gonfle pas, mais il s'use : remplace-le quand la bande de roulement est lisse ou fendue.",
+    "Le disque arrière est ton seul frein mécanique : fais vérifier les plaquettes et le réglage du câble dès que le levier devient mou.",
+    "Contrôle de temps en temps le serrage de la colonne et du système de pliage, ils prennent les vibrations des pneus pleins."
+  ],
+  "faq": [
+    {
+      "q": "Quelle taille de pneu pour la Hiboy KS4 ?",
+      "a": "Des pneus pleins alvéolés de 8,5 pouces, à l'avant comme à l'arrière. Il n'y a pas de chambre à air à changer."
+    },
+    {
+      "q": "Quelle autonomie réelle pour la Hiboy KS4 ?",
+      "a": "Hiboy annonce 22 à 27 km. Un testeur qui roulait surtout à fond a obtenu environ 21 km. Compte plus si tu roules en mode lent et sur le plat."
+    },
+    {
+      "q": "Combien de temps pour recharger la Hiboy KS4 ?",
+      "a": "Entre 3 et 6 heures selon les documents Hiboy : 4 à 6 h sur la fiche produit, 3 à 5 h dans le manuel."
+    },
+    {
+      "q": "Quelle différence entre la Hiboy KS4 et la KS4 Pro ?",
+      "a": "La KS4 a un moteur de 350 W, une batterie de 7,5 Ah et des roues de 8,5 pouces. La KS4 Pro passe à 500 W, 11,6 Ah et des roues de 10 pouces : ses pneus ne vont pas sur la KS4."
+    },
+    {
+      "q": "La Hiboy KS4 est-elle autorisée sur la route en France ?",
+      "a": "La fiche américaine annonce 30 km/h. En France, une trottinette électrique ne doit pas dépasser 25 km/h sur la voie publique : règle la vitesse maximale à 25 km/h avant de sortir."
+    }
+  ],
+  "sources": [
+    {
+      "label": "Myrtle Wheels — Hiboy KS4",
+      "url": "https://www.myrtlewheels.com/products/hiboy-ks4-electric-scooter"
+    },
+    {
+      "label": "Manuel Hiboy KS4 / KS4 Pro (manuals.plus)",
+      "url": "https://manuals.plus/m/2f686d86be141d9d34c1547ed60dd2f7b30978d20e81459256cdb9a570bdde71"
+    },
+    {
+      "label": "YouTube — Hiboy KS4 Review, A Good Scooter, but Not for Everyone",
+      "url": "https://www.youtube.com/watch?v=3Wsrt6efvkQ"
+    },
+    {
+      "label": "YouTube — Hiboy KS4 Electric Scooter Review",
+      "url": "https://www.youtube.com/watch?v=eaF5dHQ7gVM"
+    }
+  ],
+  "video": {
+    "id": "MNeDgx_R6SI",
+    "title": "$500 Budget Electric Scooter | HIBOY KS4",
+    "channel": "Albert Kim",
+    "uploadDate": "2023-06-24"
+  }
+}

@@ -1,0 +1,149 @@
+{
+  "displayName": "Ninebot E2 Pro",
+  "metaTitle": "Ninebot E2 Pro : fiche technique, pneus et pièces",
+  "metaDescription": "Ninebot E2 Pro : 350 W (750 W en pointe), batterie 36 V 275 Wh, pneus tubeless 10\" 60/70-6.5 et 60/65-6.9, autonomie testée ~20 km. Fiche et pièces.",
+  "intro": [
+    "La Ninebot E2 Pro, E2 Pro E en version européenne, est sortie en février 2024 à 449 € selon Frandroid. Elle reprend le nom de la petite E2 mais change de catégorie : moteur arrière, pneus tubeless de 10 pouces, clignotants et antipatinage (TCS). Elle est bridée à 25 km/h.",
+    "Moteur de 350 W nominaux (750 W en pointe), batterie 36 V de 7,65 Ah, soit 275 Wh, pour 35 km annoncés en mode D. Frandroid a mesuré environ 20 km par charge. Tambour à l'avant, frein électronique à l'arrière, aucune suspension, 18,8 kg et 100 kg de charge maximale."
+  ],
+  "specs": [
+    [
+      "Moteur",
+      "350 W nominaux, 750 W en pointe (roue arrière)"
+    ],
+    [
+      "Vitesse",
+      "25 km/h"
+    ],
+    [
+      "Autonomie annoncée",
+      "jusqu'à 35 km en mode D à 20 km/h ; 27 km à 25 km/h"
+    ],
+    [
+      "Autonomie mesurée",
+      "environ 20 km par charge (selon Frandroid)"
+    ],
+    [
+      "Batterie",
+      "36 V, 7,65 Ah, 275 Wh"
+    ],
+    [
+      "Poids",
+      "18,8 kg (environ 19 kg pesés par Frandroid)"
+    ],
+    [
+      "Charge max",
+      "100 kg (selon Frandroid) ; 120 kg annoncés dans certains tests vidéo"
+    ],
+    [
+      "Roues",
+      "10 pouces tubeless : avant 60/70-6.5, arrière 60/65-6.9 (selon Segway France)"
+    ],
+    [
+      "Freins",
+      "Tambour avant + électronique arrière"
+    ],
+    [
+      "Suspension",
+      "Aucune"
+    ],
+    [
+      "Étanchéité",
+      "IPX4"
+    ],
+    [
+      "Temps de charge",
+      "environ 5 h selon la fiche, 4 h 30 mesurées par Frandroid"
+    ]
+  ],
+  "pros": [
+    "750 W en pointe sur la roue arrière : elle tient bien les côtes pour sa taille (Frandroid).",
+    "Clignotants, antipatinage TCS et localisation Apple Localiser (Frandroid).",
+    "Pneus tubeless de 10 pouces, plus confortables que les roues pleines des petites E2."
+  ],
+  "cons": [
+    "Autonomie mesurée d'environ 20 km, loin des 35 km annoncés (Frandroid).",
+    "Aucune suspension.",
+    "Deux tailles de pneus différentes entre l'avant et l'arrière : attention à la commande.",
+    "Charge maximale de 100 kg (Frandroid)."
+  ],
+  "parts": [
+    {
+      "label": "Pneu avant",
+      "size": "60/70-6.5 tubeless (10 pouces)",
+      "count": 14,
+      "to": "/piece/pneu-tubeless-60-70-6-5-wanda",
+      "cta": "Pneus avant 60/70-6.5"
+    },
+    {
+      "label": "Chambre à air avant",
+      "size": "10x2.50 (pour le 60/70-6.5 avant), valve droite ou coudée",
+      "count": 6,
+      "to": "/piece/chambre-a-air-10x250-valve-droite",
+      "cta": "Chambres à air 10x2.50"
+    }
+  ],
+  "care": [
+    "Avant 60/70-6.5, arrière 60/65-6.9 : lis la cote sur le flanc de chaque roue avant de commander un pneu.",
+    "Pneus tubeless : vérifie la pression chaque mois, un pneu mou use la batterie et s'abîme sur les bordures.",
+    "Le tambour avant est ton seul frein mécanique : fais-le régler dès que la course du levier s'allonge."
+  ],
+  "price": {
+    "text": "Prix de lancement : 449 € (février 2024), vue à partir de 399 € chez certains revendeurs.",
+    "source": "Frandroid"
+  },
+  "faq": [
+    {
+      "q": "Quelle taille de pneu pour la Ninebot E2 Pro ?",
+      "a": "Deux tailles : 60/70-6.5 à l'avant et 60/65-6.9 à l'arrière, toutes deux tubeless de 10 pouces, selon Segway France. Ne commande pas deux pneus identiques sans avoir lu le flanc de chaque roue."
+    },
+    {
+      "q": "Quelle autonomie réelle pour la Ninebot E2 Pro ?",
+      "a": "Segway annonce 35 km en mode D. Frandroid a obtenu environ 20 km par charge en conditions réelles. Pour un trajet quotidien, vise 20 km aller-retour au maximum."
+    },
+    {
+      "q": "Combien de temps pour recharger la Ninebot E2 Pro ?",
+      "a": "Environ 5 heures selon la fiche, 4 h 30 mesurées par Frandroid."
+    },
+    {
+      "q": "Quels freins sur la Ninebot E2 Pro ?",
+      "a": "Un frein à tambour à l'avant et un frein électronique à l'arrière. Pas de disque, donc pas de plaquettes à remplacer."
+    },
+    {
+      "q": "Quelle différence entre la Ninebot E2 Pro et la E2 ?",
+      "a": "La E2 roule à 20 km/h sur des pneus pleins de 8,1 pouces avec 220 Wh. La E2 Pro monte à 25 km/h, a 275 Wh, un moteur de 750 W en pointe et des pneus gonflables tubeless de 10 pouces. Aucune pièce de roue n'est commune aux deux."
+    }
+  ],
+  "sources": [
+    {
+      "label": "Segway France — Ninebot KickScooter E2 Pro E",
+      "url": "https://fr-fr.segway.com/ekickscooter/products/e2-pro-e.html"
+    },
+    {
+      "label": "Segway France — pression et dimensions des pneus",
+      "url": "https://www.segwayfrance.com/pages/pression-pneus-trottinette-segway-ninebot"
+    },
+    {
+      "label": "Frandroid — test de la Ninebot E2 Pro E",
+      "url": "https://www.frandroid.com/survoltes/trottinette-electrique/1978548_test-de-la-ninebot-segway-e2-pro-e-une-trottinette-electrique-qui-dompte-les-cotes"
+    },
+    {
+      "label": "Frandroid — fiche Ninebot E2 Pro E",
+      "url": "https://www.frandroid.com/produits/trottinette-electrique/ninebot/1988382-ninebot-segway-kickscooter-e2-pro-e"
+    },
+    {
+      "label": "Segway — manuel E2 Pro",
+      "url": "https://support.segway.com/product_files/20240118053648_E2_Pro_Product_Manual.pdf"
+    },
+    {
+      "label": "Casey Cycles — pneu 60/65-6.9 Segway Ninebot",
+      "url": "https://www.caseycycles.com.au/segway-ninebot-electric-scooter-tyre-60-65-6.9"
+    }
+  ],
+  "video": {
+    "id": "1T62GrrAWkQ",
+    "title": "Segway-Ninebot F2 E vs E2 Pro E comparo de 2 trottinettes électriques",
+    "channel": "TheGrandTest",
+    "uploadDate": "2024-08-31"
+  }
+}

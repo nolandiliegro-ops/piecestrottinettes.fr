@@ -1,0 +1,116 @@
+{
+ "displayName": "Hiboy X300",
+ "metaTitle": "Hiboy X300 : fiche technique, roues 12 pouces et pièces",
+ "metaDescription": "Hiboy X300 : 500 W (700 W en pointe), batterie amovible 48 V 13,5 Ah, pneus gonflables 12 pouces, fourche hydraulique, freins à disque. Fiche et FAQ.",
+ "intro": [
+  "La Hiboy X300 est montée sur de grandes roues gonflables de 12 pouces, avec une fourche avant à amortisseur hydraulique. Sa batterie 48 V de 13,5 Ah se retire et se verrouille. Elle pèse 24 kg et accepte un pilote jusqu'à 120 kg, plus que la plupart des Hiboy.",
+  "Son moteur arrière fait 500 W, 700 W en pointe, pour 60 km d'autonomie annoncés par Hiboy. Elle freine par disque et par frein électronique ; un test vidéo décrit deux disques, à l'avant et à l'arrière. La version américaine monte à 37 km/h, au-dessus de ce qu'autorise la France."
+ ],
+ "specs": [
+  [
+   "Moteur",
+   "500 W nominaux, 700 W en pointe, moteur arrière"
+  ],
+  [
+   "Vitesse",
+   "37 km/h (23 mph) sur la fiche américaine, trois modes (21, 29 et 37 km/h)"
+  ],
+  [
+   "Autonomie annoncée",
+   "jusqu'à 60 km (37,3 miles)"
+  ],
+  [
+   "Batterie",
+   "48 V, 13,5 Ah, 648 Wh, amovible et verrouillable (54,6 V en fin de charge)"
+  ],
+  [
+   "Poids",
+   "24 kg"
+  ],
+  [
+   "Charge max",
+   "120 kg"
+  ],
+  [
+   "Roues",
+   "12 pouces, pneus gonflables"
+  ],
+  [
+   "Freins",
+   "Disque + électronique (E-ABS) ; disques avant et arrière selon un test YouTube"
+  ],
+  [
+   "Suspension",
+   "Fourche avant hydraulique"
+  ],
+  [
+   "Étanchéité",
+   "IPX5"
+  ],
+  [
+   "Temps de charge",
+   "7 h selon Hiboy, 6 h selon Amazon"
+  ]
+ ],
+ "pros": [
+  "Roues de 12 pouces et fourche hydraulique : passe mieux les trous et les graviers (tests YouTube).",
+  "Batterie amovible avec deux ports de charge (test YouTube).",
+  "Charge maximale de 120 kg, une des plus élevées de la marque."
+ ],
+ "cons": [
+  "24 kg : lourde à monter dans un escalier.",
+  "Pas de suspension arrière.",
+  "Vitesse d'origine de 37 km/h, à limiter à 25 km/h pour rouler en France.",
+  "Aucune autonomie mesurée en test publiée à ce jour : les 60 km sont une annonce."
+ ],
+ "parts": [],
+ "care": [
+  "Gonfle tes pneus de 12 pouces chaque mois : sous-gonflés, ils pincent la chambre sur les trottoirs.",
+  "Vérifie que la fourche hydraulique ne suinte pas d'huile après les sorties sur chemin.",
+  "Retire et verrouille la batterie si ta trottinette dort dehors ou dans un local partagé."
+ ],
+ "faq": [
+  {
+   "q": "Quelle taille de pneu pour la Hiboy X300 ?",
+   "a": "Des pneus gonflables de 12 pouces. Hiboy ne donne pas la cote complète : lis-la sur le flanc de ton pneu avant de commander un pneu ou une chambre à air."
+  },
+  {
+   "q": "La batterie de la Hiboy X300 est-elle amovible ?",
+   "a": "Oui. Elle se retire et se verrouille, et la trottinette propose deux façons de la charger, selon un test vidéo."
+  },
+  {
+   "q": "La Hiboy X300 est-elle légale en France ?",
+   "a": "Seulement si sa vitesse reste plafonnée à 25 km/h. Le mode Sport à 37 km/h de la version américaine n'a pas sa place sur la voie publique française."
+  },
+  {
+   "q": "Combien de temps pour recharger la Hiboy X300 ?",
+   "a": "Environ 7 heures selon Hiboy, 6 heures selon la fiche Amazon."
+  },
+  {
+   "q": "Quelle différence entre la Hiboy X300 et la S2 Max ?",
+   "a": "Toutes deux sont en 48 V et 500 W. La X300 ajoute des roues de 12 pouces, une fourche hydraulique, une batterie amovible de 13,5 Ah et des freins à disque, pour 24 kg contre 18,8 kg."
+  }
+ ],
+ "sources": [
+  {
+   "label": "Hiboy — X300 Big Wheel",
+   "url": "https://www.hiboy.com/products/hiboy-x300-big-wheel-electric-scooter"
+  },
+  {
+   "label": "Hiboy Canada — lancement de la X300",
+   "url": "https://www.hiboy.ca/blogs/news/hiboy-canada-launches-x300-electric-scooter-big-tires-off-road-power-and-smooth-comfort-5"
+  },
+  {
+   "label": "Amazon — Hiboy X300",
+   "url": "https://www.amazon.com/Hiboy-Electric-Pneumatic-Hydraulic-Suspension/dp/B0D3TM5P66"
+  },
+  {
+   "label": "YouTube — Hiboy X300 Electric Scooter Review, Real-World Test",
+   "url": "https://www.youtube.com/watch?v=O3uFuYfoBxs"
+  },
+  {
+   "label": "YouTube — Hiboy's Largest Scooter EVER! X300 Review",
+   "url": "https://www.youtube.com/watch?v=oh4W3R9ff-Y"
+  }
+ ]
+}

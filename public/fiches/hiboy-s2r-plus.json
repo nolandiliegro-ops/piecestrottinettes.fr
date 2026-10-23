@@ -1,0 +1,125 @@
+{
+  "displayName": "Hiboy S2R Plus",
+  "metaTitle": "Hiboy S2R Plus : fiche technique, batterie et pièces",
+  "metaDescription": "Hiboy S2R Plus : batterie amovible 36 V 8,7 Ah, moteur 350 W (500 W en pointe), pneus gonflables 9 pouces, disque arrière, 14,3 kg. Fiche et FAQ.",
+  "intro": [
+    "La Hiboy S2R Plus se distingue dans la gamme S2 par sa batterie amovible : tu peux la retirer pour la charger chez toi, ou en prévoir une seconde pour doubler tes trajets. Elle roule sur des pneus gonflables de 9 pouces, pèse 14,3 kg et accepte 100 kg.",
+    "Son moteur avant fait 350 W, 500 W en pointe, avec une batterie 36 V de 8,7 Ah, soit 313 Wh, pour 35 km annoncés. Un testeur d'environ 86 kg a relevé 26 à 27 km en moyenne. Elle freine par disque arrière et frein électronique. La présence d'une suspension varie selon les tests."
+  ],
+  "specs": [
+    [
+      "Moteur",
+      "350 W nominaux, 500 W en pointe"
+    ],
+    [
+      "Vitesse",
+      "30 km/h (19 mph) sur la fiche américaine ; 27 km/h relevés en test (ActiveGearReview) ; 25 km/h maximum autorisés en France"
+    ],
+    [
+      "Autonomie annoncée",
+      "jusqu'à 35 km (22 miles), pilote de 75 kg sur le plat"
+    ],
+    [
+      "Autonomie mesurée",
+      "26 à 27 km en moyenne pour un pilote d'environ 86 kg (selon un test YouTube)"
+    ],
+    [
+      "Batterie",
+      "36 V, 8,7 Ah, environ 313 Wh, amovible (42 V en fin de charge)"
+    ],
+    [
+      "Poids",
+      "14,3 kg"
+    ],
+    [
+      "Charge max",
+      "100 kg"
+    ],
+    [
+      "Roues",
+      "9 pouces, pneus gonflables"
+    ],
+    [
+      "Freins",
+      "Électronique + disque arrière"
+    ],
+    [
+      "Suspension",
+      "Double amortisseur arrière selon Electric Scooter Guides, aucune selon ActiveGearReview"
+    ],
+    [
+      "Étanchéité",
+      "IPX4"
+    ],
+    [
+      "Temps de charge",
+      "5 à 6 h selon Hiboy, 3 à 5 h selon une testeuse"
+    ]
+  ],
+  "pros": [
+    "Batterie amovible : recharge au bureau ou à l'appartement sans monter la trottinette (tests YouTube).",
+    "14,3 kg, facile à ranger dans un coffre ou un camping-car (test YouTube).",
+    "Autonomie réelle proche de l'annonce pour un pilote léger (test YouTube)."
+  ],
+  "cons": [
+    "Pas une trottinette rapide : 19 à 21 km/h en côte avec un pilote de 86 kg (test YouTube).",
+    "Pneus gonflables : la crevaison reste possible.",
+    "Pas de compteur kilométrique pratique pour suivre tes trajets, selon un testeur (test YouTube)."
+  ],
+  "parts": [],
+  "care": [
+    "Retire la batterie pour la charger à l'intérieur l'hiver : elle se charge mieux à température ambiante.",
+    "Gonfle tes pneus de 9 pouces chaque mois à la pression inscrite sur leur flanc.",
+    "Nettoie les contacts de la batterie amovible s'ils noircissent : un mauvais contact coupe le moteur."
+  ],
+  "faq": [
+    {
+      "q": "Quelle taille de pneu pour la Hiboy S2R Plus ?",
+      "a": "Des pneus gonflables de 9 pouces. Pour la chambre à air ou le pneu, lis la cote exacte sur le flanc avant de commander."
+    },
+    {
+      "q": "La batterie de la Hiboy S2R Plus se retire-t-elle ?",
+      "a": "Oui. Elle se démonte pour la charger à part, et tu peux acheter une batterie de rechange pour rouler plus longtemps."
+    },
+    {
+      "q": "Quelle autonomie réelle pour la Hiboy S2R Plus ?",
+      "a": "Hiboy annonce 35 km. Un testeur d'environ 86 kg a tenu 26 à 27 km par charge en moyenne."
+    },
+    {
+      "q": "Quelle différence entre la S2R Plus et la S2 ?",
+      "a": "La S2R Plus a une batterie amovible de 8,7 Ah et des pneus gonflables de 9 pouces. La S2 a une batterie fixe de 7,5 Ah et des pneus pleins de 8,5 pouces."
+    },
+    {
+      "q": "Peut-on rouler avec la S2R Plus sur la piste cyclable ?",
+      "a": "Oui, si elle ne dépasse pas 25 km/h. Le plafond américain de 30 km/h n'est pas permis sur la voie publique en France."
+    }
+  ],
+  "sources": [
+    {
+      "label": "Hiboy — S2R Plus (reconditionnée)",
+      "url": "https://www.hiboy.com/products/hiboy-s2r-plus-refurbished-electric-scooter"
+    },
+    {
+      "label": "Electric Scooter Guides — Hiboy S2R Plus",
+      "url": "https://www.electricscooterguides.com/reviews/hiboy-s2r-plus"
+    },
+    {
+      "label": "ActiveGearReview — Hiboy S2R Plus review",
+      "url": "https://www.activegearreview.com/electronics/hiboy-s2r-plus-electric-scooter-review/"
+    },
+    {
+      "label": "Manuel Hiboy S2R Plus (manuals.plus)",
+      "url": "https://manuals.plus/m/ea0c8be7ee7e82eea206447c77a103effa8a7058fdba9440004356e6fcb763a0"
+    },
+    {
+      "label": "YouTube — Hiboy S2R Plus Review, best electric scooter for the money?",
+      "url": "https://www.youtube.com/watch?v=_OedIpbVeZs"
+    }
+  ],
+  "video": {
+    "id": "9Xjzak3qyTE",
+    "title": "Get to Moving With HiBoy's S2R Plus Electric Scooter Review!",
+    "channel": "Mama Baird's",
+    "uploadDate": "2023-07-28"
+  }
+}

@@ -1,0 +1,129 @@
+{
+  "displayName": "Hiboy S2",
+  "metaTitle": "Hiboy S2 : fiche technique, pneus pleins et pièces",
+  "metaDescription": "Hiboy S2 : moteur 350 W (500 W en pointe), batterie 36 V 7,5 Ah, pneus pleins alvéolés 8,5 pouces, suspension arrière. Fiche, pièces et FAQ.",
+  "intro": [
+    "La Hiboy S2 est le modèle de base d'une gamme qui compte aussi les S2 Lite, S2 Pro, S2 Max, S2 Nova et S2R Plus. Elle roule sur des pneus pleins alvéolés de 8,5 pouces, avec une suspension arrière, et se plie pour tenir dans un coffre. Vérifie bien le nom exact de ta S2 avant de commander une pièce.",
+    "Elle a un moteur avant de 350 W, 500 W en pointe, et une batterie 36 V de 7,5 Ah (270 Wh) pour 27 km annoncés. Le poids varie selon les documents Hiboy : 14,4 kg dans le manuel, 16,1 kg sur la fiche américaine. Elle freine électroniquement à l'avant et par disque à l'arrière."
+  ],
+  "specs": [
+    [
+      "Moteur",
+      "350 W nominaux, 500 W en pointe"
+    ],
+    [
+      "Vitesse",
+      "25 km/h sur la fiche Hiboy Australie ; 30 km/h (19 mph) sur la fiche américaine"
+    ],
+    [
+      "Autonomie annoncée",
+      "jusqu'à 27 km (17 miles)"
+    ],
+    [
+      "Batterie",
+      "36 V, 7,5 Ah, 270 Wh (42 V en fin de charge)"
+    ],
+    [
+      "Poids",
+      "14,4 kg selon le manuel Hiboy, 16,1 kg sur la fiche américaine"
+    ],
+    [
+      "Charge max",
+      "100 kg"
+    ],
+    [
+      "Roues",
+      "8,5 pouces, pneus pleins alvéolés avant et arrière"
+    ],
+    [
+      "Freins",
+      "Électronique avant + disque arrière"
+    ],
+    [
+      "Suspension",
+      "Arrière"
+    ],
+    [
+      "Étanchéité",
+      "IPX4"
+    ],
+    [
+      "Temps de charge",
+      "3 à 5 h"
+    ]
+  ],
+  "pros": [
+    "Pneus pleins alvéolés : aucune crevaison possible.",
+    "Régulateur de vitesse et réglages par l'application Hiboy (test YouTube).",
+    "Recharge en 3 à 5 heures, une nuit suffit largement."
+  ],
+  "cons": [
+    "Peine dans les côtes raides avec un pilote d'une centaine de kilos (test vidéo).",
+    "Les pneus pleins de 8,5 pouces encaissent mal les pavés et les nids-de-poule.",
+    "Aucune autonomie mesurée en test publiée à ce jour : les 27 km sont une annonce de Hiboy."
+  ],
+  "parts": [
+    {
+      "label": "Pneu plein",
+      "size": "8,5 x 2 (jante 6.1)",
+      "count": 27,
+      "to": "/piece/pneu-plein-8-5x2-6-1-ultra-leger-jante-34-mm-lisere-rouge-nedong",
+      "cta": "Pneus pleins 8,5 x 2"
+    }
+  ],
+  "care": [
+    "Remplace un pneu plein dès qu'il se fissure entre les alvéoles : il perd alors son amorti.",
+    "Règle le câble du frein à disque arrière quand la course du levier s'allonge.",
+    "Évite les flaques profondes : la S2 est classée IPX4, elle supporte les éclaboussures, pas l'immersion."
+  ],
+  "faq": [
+    {
+      "q": "Quelle taille de pneu pour la Hiboy S2 ?",
+      "a": "Des pneus pleins alvéolés de 8,5 pouces, notés 8,5 x 2, à l'avant et à l'arrière. Pas de chambre à air sur ce modèle."
+    },
+    {
+      "q": "Quel est le poids de la Hiboy S2 ?",
+      "a": "14,4 kg selon le manuel Hiboy, 16,1 kg sur la fiche américaine du fabricant. Les deux chiffres circulent, sans explication de l'écart."
+    },
+    {
+      "q": "Combien de temps pour recharger la Hiboy S2 ?",
+      "a": "Compte 3 à 5 heures avec le chargeur d'origine."
+    },
+    {
+      "q": "Quelle différence entre la Hiboy S2 et la S2 Pro ?",
+      "a": "La S2 a un moteur de 350 W, une batterie de 7,5 Ah et des roues de 8,5 pouces. La S2 Pro monte un moteur de 500 W, 11,6 Ah et des roues de 10 pouces."
+    },
+    {
+      "q": "La Hiboy S2 est-elle légale en France ?",
+      "a": "Oui, à condition qu'elle ne dépasse pas 25 km/h, la vitesse maximale des trottinettes électriques sur la voie publique. Certaines fiches étrangères annoncent 30 km/h : en France, c'est 25."
+    }
+  ],
+  "sources": [
+    {
+      "label": "Hiboy — S2 Electric Scooter",
+      "url": "https://www.hiboy.com/products/s2-electric-scooter-with-seat"
+    },
+    {
+      "label": "Hiboy Australie — S2",
+      "url": "https://hiboy.com.au/product/s2-electric-scooter-with-seat/"
+    },
+    {
+      "label": "Manuel Hiboy S2 / S2 Pro (manuals.plus)",
+      "url": "https://manuals.plus/m/4e99f34baa81e75ca580a16261e23f71b4003f44603464901d8d63ae23be9f68"
+    },
+    {
+      "label": "Best Buy — Hiboy S2",
+      "url": "https://www.bestbuy.com/product/hiboy-s2-foldable-electric-scooter-w-17-mi-max-operating-range-19-mph-max-speed-gray/J3Q5Q3SW4Y"
+    },
+    {
+      "label": "YouTube — Hiboy S2 w/ Rear Suspension, test ride and review",
+      "url": "https://www.youtube.com/watch?v=I4zhZNvlwKo"
+    }
+  ],
+  "video": {
+    "id": "YPWlQUMbV5w",
+    "title": "Hiboy S2 | Embrace You Life with Every Step!",
+    "channel": "Hiboy official",
+    "uploadDate": "2024-04-22"
+  }
+}

@@ -1,0 +1,156 @@
+{
+  "displayName": "Ninebot F3 Pro E",
+  "metaTitle": "Ninebot F3 Pro E : fiche technique, pneus et pièces",
+  "metaDescription": "Ninebot F3 Pro E : 550 W (1 200 W en pointe), batterie 48 V 477 Wh, deux freins à disque, double suspension, pneus tubeless 10\". Fiche et pièces.",
+  "intro": [
+    "La Ninebot F3 Pro E est la version européenne, bridée à 25 km/h, de la F3 Pro sortie au printemps 2025. Elle prend la suite de la F2 Pro dans la gamme Segway-Ninebot, annoncée à 649 € au lancement selon une présentation vidéo de Fastride. Elle se distingue de la F3 E par un second disque de frein à l'arrière et un moteur plus fort.",
+    "Moteur arrière de 550 W nominaux (1 200 W en pointe), batterie 46,8 V de 10,2 Ah, soit 477 Wh, pour 70 km annoncés à 15 km/h. Frandroid juge 35 à 40 km plus réalistes. Suspension hydraulique à l'avant, bras oscillant à l'arrière, pneus tubeless autocicatrisants de 10 pouces, 19,3 kg et 120 kg de charge."
+  ],
+  "specs": [
+    [
+      "Moteur",
+      "550 W nominaux, 1 200 W en pointe (roue arrière)"
+    ],
+    [
+      "Vitesse",
+      "25 km/h"
+    ],
+    [
+      "Autonomie annoncée",
+      "jusqu'à 70 km en Eco à 15 km/h ; 50 km à 25 km/h en Sport"
+    ],
+    [
+      "Autonomie estimée en essai",
+      "35 à 40 km en usage courant (selon Frandroid)"
+    ],
+    [
+      "Batterie",
+      "48 V (46,8 V nominal), 10,2 Ah, 477 Wh"
+    ],
+    [
+      "Poids",
+      "19,3 kg"
+    ],
+    [
+      "Charge max",
+      "120 kg"
+    ],
+    [
+      "Roues",
+      "10 pouces tubeless autocicatrisants : avant 60/70-6.5, arrière 60/65-6.9 (selon Segway France)"
+    ],
+    [
+      "Freins",
+      "Disque avant + disque et électronique arrière"
+    ],
+    [
+      "Suspension",
+      "Hydraulique avant, bras oscillant arrière"
+    ],
+    [
+      "Étanchéité",
+      "IPX6, batterie IPX7"
+    ],
+    [
+      "Temps de charge",
+      "environ 8 h (chargeur d'origine 54,6 V, 1,3 A)"
+    ]
+  ],
+  "pros": [
+    "Deux freins à disque, là où la F3 E n'en a qu'un (Segway France, Frandroid).",
+    "IPX6 sur la trottinette et IPX7 sur la batterie (Segway France).",
+    "Une batterie de 477 Wh qui accepte une batterie additionnelle de 460 Wh vendue à part (Segway France)."
+  ],
+  "cons": [
+    "Recharge lente : environ 8 heures avec le chargeur fourni.",
+    "Les 70 km annoncés supposent 15 km/h ; Frandroid table sur 35 à 40 km.",
+    "19,3 kg, plus lourde que les E3.",
+    "Pneus avant et arrière de dimensions différentes."
+  ],
+  "parts": [
+    {
+      "label": "Pneu avant",
+      "size": "60/70-6.5 tubeless (10 pouces)",
+      "count": 14,
+      "to": "/piece/pneu-tubeless-60-70-6-5-wanda",
+      "cta": "Pneus avant 60/70-6.5"
+    },
+    {
+      "label": "Chambre à air avant",
+      "size": "10x2.50 (pour le 60/70-6.5 avant), valve droite ou coudée",
+      "count": 6,
+      "to": "/piece/chambre-a-air-10x250-valve-droite",
+      "cta": "Chambres à air 10x2.50"
+    },
+    {
+      "label": "Chargeur",
+      "size": "48 V → 54,6 V, prise Xiaomi Pro Max",
+      "count": 1,
+      "to": "/piece/chargeur-48v-546v-2a-connecteur-xiaomi-4-pro-max-plus-5-max",
+      "cta": "Chargeur 48 V"
+    }
+  ],
+  "care": [
+    "Deux disques, deux paires de plaquettes : contrôle leur épaisseur à chaque changement de saison, l'arrière s'use souvent plus vite.",
+    "Segway recommande 42 à 48 psi (2,9 à 3,3 bar) : un tubeless sous-gonflé fait chuter l'autonomie.",
+    "La fourche hydraulique ne demande pas de réglage, mais une fuite d'huile sur le fourreau doit te faire passer à l'atelier."
+  ],
+  "price": {
+    "text": "Prix annoncé au lancement : 649 € (599 € pour la F3 E) ; relevé à 649,98 € à la Fnac.",
+    "source": "Fastride (vidéo de lancement), Fnac"
+  },
+  "faq": [
+    {
+      "q": "Quelle taille de pneu pour la Ninebot F3 Pro E ?",
+      "a": "60/70-6.5 à l'avant et 60/65-6.9 à l'arrière, des tubeless autocicatrisants de 10 pouces selon Segway France. Commande chaque roue avec sa propre cote."
+    },
+    {
+      "q": "Combien de freins à disque sur la Ninebot F3 Pro E ?",
+      "a": "Deux : un à l'avant, un à l'arrière, avec en plus un frein électronique sur la roue arrière. La F3 E n'a qu'un disque, à l'avant."
+    },
+    {
+      "q": "Quelle autonomie réelle pour la Ninebot F3 Pro E ?",
+      "a": "Segway annonce 70 km à 15 km/h et 50 km à 25 km/h. Après son essai, Frandroid estime 35 à 40 km en usage courant."
+    },
+    {
+      "q": "Combien de temps pour charger la Ninebot F3 Pro E ?",
+      "a": "Environ 8 heures avec le chargeur d'origine de 54,6 V et 1,3 A. Segway France vend un chargeur rapide de 3,9 A compatible F3."
+    },
+    {
+      "q": "Quelle différence entre la Ninebot F3 Pro E et la F3 E ?",
+      "a": "La F3 Pro E a un moteur de 550 W (1 200 W en pointe) contre 450 W (1 000 W) et un second disque à l'arrière. Segway annonce aussi 70 km d'autonomie contre 50 km pour la F3 E."
+    }
+  ],
+  "sources": [
+    {
+      "label": "Segway France — Ninebot F3 Pro",
+      "url": "https://www.segwayfrance.com/pages/ninebot-f3-pro"
+    },
+    {
+      "label": "Segway France — Ninebot F3 Pro E",
+      "url": "https://www.segwayfrance.com/products/ninebot-f3-e-pro-ekickscooter"
+    },
+    {
+      "label": "Segway France — pièces F3 E",
+      "url": "https://www.segwayfrance.com/collections/pieces-f3-e"
+    },
+    {
+      "label": "Frandroid — premier essai Segway Ninebot F3 Pro E",
+      "url": "https://www.frandroid.com/marques/segway-ninebot/2536203_on-a-roule-avec-la-future-star-des-trottinettes-electriques-segway-de-tres-bonnes-premieres-impressions"
+    },
+    {
+      "label": "Fnac — Segway Ninebot F3 Pro E",
+      "url": "https://www.fnac.com/Trottinette-electrique-Segway-Ninebot-F3-Pro-E-550-W-Gris-et-Noir/a21336196/w-4"
+    },
+    {
+      "label": "Segway — manuel série F3 (PDF)",
+      "url": "https://store.segway.com/media/wysiwyg/f3-page/F3_Series_User_Manual.pdf"
+    }
+  ],
+  "video": {
+    "id": "lrF_qFXgc50",
+    "title": "Ninebot F3 Pro : Le Verdict Final ! Mon avis complet",
+    "channel": "World review",
+    "uploadDate": "2026-07-31"
+  }
+}

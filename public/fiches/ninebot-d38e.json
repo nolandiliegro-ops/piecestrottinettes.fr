@@ -1,0 +1,140 @@
+{
+  "displayName": "Ninebot D38E",
+  "metaTitle": "Ninebot D38E : fiche technique, pneus et pièces",
+  "metaDescription": "Ninebot D38E : 350 W (500 W en pointe), batterie 36 V 367 Wh, pneus 10x2.125 à chambre à air, frein tambour arrière. Autonomie, entretien et pièces.",
+  "intro": [
+    "La Ninebot D38E est la plus grosse batterie de la série D de Segway-Ninebot, au-dessus des D18E et D28E. C'est une trottinette urbaine simple : pas de suspension, des pneus gonflables de 10 pouces à chambre à air, et une vitesse limitée à 25 km/h pour la version européenne.",
+    "Moteur de 350 W nominaux (500 W en pointe selon Segway), batterie 36 V de 10,2 Ah, soit 367 Wh, pour 38 km annoncés. Elle freine électroniquement à l'avant et par tambour à l'arrière, pèse 16,3 kg et accepte 120 kg. Comptez environ 6 h 30 pour une charge complète."
+  ],
+  "specs": [
+    [
+      "Moteur",
+      "350 W nominaux, 500 W en pointe (selon Segway)"
+    ],
+    [
+      "Vitesse",
+      "25 km/h"
+    ],
+    [
+      "Autonomie annoncée",
+      "jusqu'à 38 km"
+    ],
+    [
+      "Batterie",
+      "36 V, 10,2 Ah, 367 Wh"
+    ],
+    [
+      "Poids",
+      "16,3 kg"
+    ],
+    [
+      "Charge max",
+      "120 kg"
+    ],
+    [
+      "Roues",
+      "10 pouces, pneumatiques à chambre à air, 10x2.125-6.5"
+    ],
+    [
+      "Freins",
+      "Électronique avant + tambour arrière"
+    ],
+    [
+      "Suspension",
+      "Aucune"
+    ],
+    [
+      "Étanchéité",
+      "IPX5"
+    ],
+    [
+      "Temps de charge",
+      "environ 6 h 30 (selon Segway)"
+    ]
+  ],
+  "pros": [
+    "367 Wh dans une trottinette de 16,3 kg : la plus grande batterie de la série D (Segway).",
+    "Frein à tambour arrière : il demande peu d'entretien et ne craint pas la pluie.",
+    "Pneus gonflables de 10 pouces avec chambre à air : une crevaison se répare avec une chambre standard."
+  ],
+  "cons": [
+    "Aucune suspension : le confort dépend uniquement de la pression des pneus.",
+    "Chambres à air : plus exposée aux crevaisons qu'un pneu tubeless avec gel.",
+    "Recharge d'environ 6 h 30 (Segway).",
+    "Aucune autonomie mesurée en test de presse retenue ici : les 38 km sont une annonce du fabricant."
+  ],
+  "parts": [
+    {
+      "label": "Pneu",
+      "size": "10x2.125-6.5 (10 pouces)",
+      "count": 3,
+      "to": "/piece/pneu-10x2-125-6-5-ninebot-f",
+      "cta": "Pneus 10x2.125"
+    },
+    {
+      "label": "Chambre à air",
+      "size": "10x2.125, valve droite ou coudée",
+      "count": 8,
+      "to": "/piece/chambre-a-air-10-pouces-10x2-125-valve-droite",
+      "cta": "Chambres à air"
+    },
+    {
+      "label": "Chargeur",
+      "size": "36 V → 42 V, prise RCA",
+      "count": 2,
+      "to": "/piece/chargeur-36v-42v-2a-xiaomi-connecteur-rca",
+      "cta": "Chargeurs 36 V"
+    }
+  ],
+  "care": [
+    "Avec des chambres à air, la pression fait tout : un pneu mou pince la chambre au premier trottoir. Contrôle-la chaque mois.",
+    "Le tambour arrière se règle par le câble : retends-le dès que le levier devient mou ou s'approche de la poignée.",
+    "Sans suspension, les vis du guidon et du pliage encaissent les chocs : vérifie leur serrage régulièrement."
+  ],
+  "faq": [
+    {
+      "q": "Quelle taille de pneu pour la Ninebot D38E ?",
+      "a": "Du 10x2.125-6.5, monté avec une chambre à air 10x2.125. C'est la cote donnée par les boutiques de pièces pour toute la série D (D18E, D28E, D38E). Vérifie l'inscription sur le flanc avant de commander."
+    },
+    {
+      "q": "Quelle différence entre la Ninebot D38E et la D28E ?",
+      "a": "La D38E a une batterie de 367 Wh contre 275 Wh, un moteur de 350 W contre 300 W, et Segway annonce 38 km contre 28 km. Elle pèse 1 kg de plus (16,3 kg contre 15,3 kg). Freins et pneus sont du même type."
+    },
+    {
+      "q": "Combien de temps pour recharger une Ninebot D38E ?",
+      "a": "Environ 6 h 30 selon Segway. Le chargeur est un 36 V qui sort 42 V, avec prise ronde RCA."
+    },
+    {
+      "q": "La Ninebot D38E a-t-elle des freins à disque ?",
+      "a": "Non. Elle freine avec le moteur à l'avant (frein électronique) et un tambour à l'arrière. Il n'y a donc pas de plaquettes à changer."
+    },
+    {
+      "q": "Quelle autonomie réelle pour la Ninebot D38E ?",
+      "a": "Segway annonce jusqu'à 38 km. Ton poids, le vent, les côtes et le mode Sport la réduisent : prévois de la marge sur un trajet que tu fais pour la première fois."
+    }
+  ],
+  "sources": [
+    {
+      "label": "Segway France — série D (D18E, D28E, D38E)",
+      "url": "https://fr-fr.segway.com/ekickscooter/products/d-series.html"
+    },
+    {
+      "label": "Segway Europe — D-Series",
+      "url": "https://eu-en.segway.com/ekickscooter/products/d-series.html"
+    },
+    {
+      "label": "E-Watts — pneus Ninebot D18E / D28E / D38E",
+      "url": "https://e-watts.fr/categorie-produit/pieces-detachees-trottinette-electrique/pneu-trottinette-electrique/pneu-ninebot-d18e-d28e-d38e"
+    },
+    {
+      "label": "Pro-Urbain — pneu 10x2.125 Ninebot F / D",
+      "url": "https://pro-urbain.fr/products/pneu-10-2-125-ninebot-f25-f30-f40-d18e-d28e-d38e"
+    }
+  ],
+  "video": {
+    "id": "zKbWWI15ZV0",
+    "title": "Ninebot Segway D38E nouvelle référence des trottinettes électriques",
+    "channel": "TheGrandTest",
+    "uploadDate": "2022-03-26"
+  }
+}

@@ -1,0 +1,56 @@
+{
+ "displayName": "Ninebot E2",
+ "metaTitle": "Ninebot E2 : fiche technique, pneus et entretien",
+ "metaDescription": "Ninebot E2 : 250 W (450 W en pointe), batterie 220 Wh, 20 km/h, pneus pleins alvéolés de 8,1 pouces, frein tambour avant. Fiche, entretien et FAQ.",
+ "intro": [
+  "La Ninebot E2, vendue en Europe sous le nom E2 E, est la trottinette d'entrée de gamme de Segway-Ninebot. Elle est limitée à 20 km/h, porte 90 kg au maximum et roule sur des pneus pleins alvéolés de 8,1 pouces, sans chambre à air. Cleanrider l'annonçait à 329 € à sa sortie en 2023.",
+  "Moteur de 250 W nominaux (450 W en pointe), batterie de 220 Wh (21,6 V, 10,2 Ah) pour 25 km annoncés, 20 km en usage typique selon Segway. Elle freine par tambour à l'avant et électroniquement à l'arrière, pèse 14,2 kg et demande environ 7 h 30 de charge."
+ ],
+ "specs": [
+  ["Moteur", "250 W nominaux, 450 W en pointe"],
+  ["Vitesse", "20 km/h"],
+  ["Autonomie annoncée", "jusqu'à 25 km ; environ 20 km en usage typique (Segway, Frandroid)"],
+  ["Batterie", "21,6 V, 10,2 Ah, 220 Wh (selon Segway)"],
+  ["Poids", "14,2 kg"],
+  ["Charge max", "90 kg (selon Segway)"],
+  ["Roues", "8,1 pouces, pneus pleins alvéolés (creux à l'intérieur)"],
+  ["Freins", "Tambour avant + électronique arrière"],
+  ["Suspension", "Aucune ; les pneus alvéolés absorbent une partie des vibrations"],
+  ["Étanchéité", "IPX4"],
+  ["Temps de charge", "environ 7 h 30"]
+ ],
+ "pros": [
+  "Pneus pleins alvéolés : aucune crevaison, aucun gonflage (Segway).",
+  "14,2 kg : facile à porter dans un escalier ou un train (Frandroid).",
+  "Frein à tambour avant, enfermé et peu sensible à la pluie."
+ ],
+ "cons": [
+  "Limitée à 20 km/h, en dessous des 25 km/h autorisés en France.",
+  "Charge maximale de 90 kg (Segway) : trop juste pour un adulte lourd avec un sac.",
+  "Petites roues de 8,1 pouces sans suspension : peu de confort sur pavés.",
+  "Recharge longue pour une petite batterie : environ 7 h 30."
+ ],
+ "parts": [],
+ "care": [
+  "Pas de pression à surveiller, mais regarde l'usure : quand les rainures du pneu plein disparaissent, l'adhérence sur sol mouillé chute.",
+  "Le tambour avant se règle au câble : retends-le dès que le levier devient mou.",
+  "Respecte la limite de 90 kg : au-delà, le cadre, les roues et la batterie travaillent hors de ce que Segway a prévu."
+ ],
+ "price": {
+  "text": "Prix de lancement : 329 € (2023).",
+  "source": "Cleanrider"
+ },
+ "faq": [
+  {"q": "Quels pneus sur la Ninebot E2 ?", "a": "Des pneus pleins alvéolés de 8,1 pouces : ils sont creux à l'intérieur mais ne se gonflent pas. Pas de chambre à air à prévoir."},
+  {"q": "Quelle vitesse maximale pour la Ninebot E2 ?", "a": "20 km/h. C'est sous la limite française de 25 km/h : elle roule légalement sur la voie publique, sans réglage à faire."},
+  {"q": "Quelle autonomie réelle pour la Ninebot E2 ?", "a": "Segway annonce 25 km au mieux et environ 20 km en usage typique. Avec du froid, du dénivelé ou un poids proche de 90 kg, prévois moins."},
+  {"q": "Combien de temps pour charger la Ninebot E2 ?", "a": "Environ 7 h 30 pour une charge complète. Un branchement le soir suffit pour repartir le matin."},
+  {"q": "Quelle différence entre la Ninebot E2, la E2 Plus et la E2 Pro ?", "a": "La E2 Plus garde la même base mais monte à 25 km/h. La E2 Pro change de catégorie : moteur de 350 W (750 W en pointe), batterie de 275 Wh et pneus gonflables tubeless de 10 pouces. Vérifie le modèle inscrit sous le plateau avant de commander une pièce."}
+ ],
+ "sources": [
+  {"label": "Segway France — Ninebot KickScooter E2 E", "url": "https://fr-fr.segway.com/ekickscooter/products/e2-e.html"},
+  {"label": "Segway Support — fiche E2", "url": "https://support.segway.com/support_product.php?segcatid=81"},
+  {"label": "Frandroid — Ninebot KickScooter E2 E", "url": "https://www.frandroid.com/produits/trottinette-electrique/ninebot/1763127-ninebot-segway-kickscooter-e2-e"},
+  {"label": "Cleanrider — Ninebot by Segway E2", "url": "https://www.cleanrider.com/catalogue/trottinette-electrique/ninebot-by-segway/ninebot-by-segway-e2/"}
+ ]
+}

@@ -1,0 +1,138 @@
+{
+  "displayName": "Segway ZT3 Pro E",
+  "metaTitle": "Segway ZT3 Pro E : fiche technique, pneus et pièces",
+  "metaDescription": "Segway ZT3 Pro E : 650 W (1 600 W en pointe), batterie 48 V 597 Wh, pneus tout-terrain 11\" 70/60-7.5, deux disques, autonomie testée ~31 km. Fiche et pièces.",
+  "intro": [
+    "La Segway ZT3 Pro E est la version européenne, bridée à 25 km/h, de la ZT3 Pro, la trottinette à allure tout-terrain de Segway-Ninebot commercialisée en Europe depuis octobre 2024. Frandroid l'annonçait à 699 € ; Cleanrider citait 749 € en précommande. Elle partage sa batterie de 597 Wh avec la future Max G3.",
+    "Moteur arrière de 650 W nominaux (1 600 W en pointe), 70 km annoncés à 15 km/h et 50 km à 25 km/h. En hiver à Paris, Frandroid a obtenu environ 31 km en moyenne. Deux disques mécaniques, fourche télescopique, ressort arrière, pneus tubeless à crampons de 11 pouces, 29,7 kg et 4 heures de charge."
+  ],
+  "specs": [
+    [
+      "Moteur",
+      "650 W nominaux, 1 600 W en pointe (roue arrière)"
+    ],
+    [
+      "Vitesse",
+      "25 km/h"
+    ],
+    [
+      "Autonomie annoncée",
+      "jusqu'à 70 km en Eco à 15 km/h ; 50 km en Sport à 25 km/h"
+    ],
+    [
+      "Autonomie mesurée",
+      "environ 31 km en moyenne par 5 à 10 °C (selon Frandroid)"
+    ],
+    [
+      "Batterie",
+      "48 V (46,8 V nominal), 12,75 Ah, 597 Wh"
+    ],
+    [
+      "Poids",
+      "29,7 kg"
+    ],
+    [
+      "Charge max",
+      "120 kg"
+    ],
+    [
+      "Roues",
+      "11 pouces, tubeless tout-terrain 70/60-7.5 avant et arrière"
+    ],
+    [
+      "Freins",
+      "Disque avant + disque arrière, mécaniques"
+    ],
+    [
+      "Suspension",
+      "Fourche télescopique avant, ressort arrière"
+    ],
+    [
+      "Étanchéité",
+      "IPX5, batterie IPX7"
+    ],
+    [
+      "Temps de charge",
+      "environ 4 h"
+    ]
+  ],
+  "pros": [
+    "Recharge en 4 heures environ pour 597 Wh (Segway France).",
+    "Deux freins à disque et des pneus à crampons de 11 pouces (Cleanrider).",
+    "Batterie protégée IPX7 et contrôle de traction TCS."
+  ],
+  "cons": [
+    "29,7 kg : lourde à porter.",
+    "Environ 31 km mesurés en hiver par Frandroid, loin des 70 km annoncés.",
+    "Un style tout-terrain, mais un seul moteur et des petites roues : les chemins cassants restent inconfortables.",
+    "Charge maximale de 120 kg."
+  ],
+  "parts": [
+    {
+      "label": "Pneu",
+      "size": "70/60-7.5 tubeless (11 pouces)",
+      "count": 4,
+      "to": "/piece/pneu-tubeless-70-60-7-5-pantherurban-ewheel",
+      "cta": "Pneus 70/60-7.5"
+    }
+  ],
+  "care": [
+    "Crampons et asphalte ne font pas bon ménage : si tu roules surtout en ville, un pneu route 70/60-7.5 s'usera moins vite.",
+    "Après un passage en chemin, nettoie les disques et vérifie que les étriers ne frottent pas.",
+    "Contrôle la pression toutes les deux semaines : sur 30 kg, un tubeless mou chauffe et s'abîme."
+  ],
+  "price": {
+    "text": "Prix public annoncé : 699 € (749 € en précommande selon Cleanrider).",
+    "source": "Frandroid, Cleanrider"
+  },
+  "faq": [
+    {
+      "q": "Quelle taille de pneu pour la Segway ZT3 Pro E ?",
+      "a": "Du 70/60-7.5 tubeless, 11 pouces, à l'avant et à l'arrière. La monte d'origine est à crampons ; un pneu route de même taille se monte aussi."
+    },
+    {
+      "q": "Quelle autonomie réelle pour la Segway ZT3 Pro E ?",
+      "a": "Frandroid a relevé environ 31 km en moyenne sur un parcours parisien entre 5 et 10 °C. Segway annonce 50 km à 25 km/h et 70 km à 15 km/h."
+    },
+    {
+      "q": "Combien de temps pour recharger la Segway ZT3 Pro E ?",
+      "a": "Environ 4 heures selon Segway, pour une batterie de 597 Wh."
+    },
+    {
+      "q": "Quels freins sur la Segway ZT3 Pro E ?",
+      "a": "Deux freins à disque mécaniques, un par roue. Ils se règlent au câble et les plaquettes se changent sans purge."
+    },
+    {
+      "q": "Quelle différence entre la Segway ZT3 Pro E et la ZT3 Pro ?",
+      "a": "La ZT3 Pro E est bridée en usine à 25 km/h pour circuler légalement en Europe. Moteur, batterie, poids et pièces sont les mêmes que sur la ZT3 Pro vendue hors Europe."
+    }
+  ],
+  "sources": [
+    {
+      "label": "Segway France — Segway ZT3 Pro",
+      "url": "https://www.segwayfrance.com/pages/segway-zt3-pro"
+    },
+    {
+      "label": "Frandroid — test de la Segway ZT3 Pro E",
+      "url": "https://www.frandroid.com/survoltes/trottinette-electrique/2429528_on-a-teste-la-segway-zt3-pro-e-une-trottinette-electrique-avec-un-excellent-rapport-qualite-prix"
+    },
+    {
+      "label": "Frandroid — fiche Segway ZT3 Pro E",
+      "url": "https://www.frandroid.com/produits/trottinette-electrique/ninebot/2445594-ninebot-segway-zt3-pro-e"
+    },
+    {
+      "label": "Cleanrider — Segway ZT3 Pro E",
+      "url": "https://www.cleanrider.com/actus/segway-zt3-pro-e-cette-trottinette-electrique-tout-terrain-a-prix-abordable-envoie-du-lourd/"
+    },
+    {
+      "label": "Segway France — pneu Segway ZT3 Pro",
+      "url": "https://www.segwayfrance.com/boutique/Pneu-Segway-ninebot-ZT3-Pro-p770196133"
+    }
+  ],
+  "video": {
+    "id": "et-DTAR44WI",
+    "title": "Essai Segway ZT3 PRO E : un best-seller... et je vous explique pourquoi !",
+    "channel": "David Nogueira",
+    "uploadDate": "2025-07-23"
+  }
+}

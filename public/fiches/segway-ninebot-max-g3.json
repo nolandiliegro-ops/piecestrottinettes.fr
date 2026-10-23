@@ -1,0 +1,149 @@
+{
+  "displayName": "Ninebot Max G3",
+  "metaTitle": "Ninebot Max G3 : fiche technique, pneus et pièces",
+  "metaDescription": "Ninebot Max G3 (Max G3 E) : 700 W (2 000 W en pointe), batterie 48 V 597 Wh, pneus tubeless 11\" 70/60-7.5, deux disques, charge en 3 h 30. Fiche et pièces.",
+  "intro": [
+    "La Ninebot Max G3, Max G3 E en Europe, remplace la Max G2 en 2025 dans la gamme Segway-Ninebot. Elle passe aux pneus de 11 pouces, à deux freins à disque et à une suspension hydraulique à l'avant comme à l'arrière. Segway la vend 899 € en France, bridée à 25 km/h.",
+    "Moteur arrière de 700 W nominaux (2 000 W en pointe), batterie 46,8 V de 12,76 Ah, soit 597 Wh, pour 80 km annoncés en Eco et 65 km en Sport. Frandroid rapporte environ 50 km en conditions favorables. Elle pèse 24,3 kg, accepte 130 kg et se recharge en 3 h 30 environ."
+  ],
+  "specs": [
+    [
+      "Moteur",
+      "700 W nominaux, 2 000 W en pointe (roue arrière)"
+    ],
+    [
+      "Vitesse",
+      "25 km/h (version européenne Max G3 E)"
+    ],
+    [
+      "Autonomie annoncée",
+      "jusqu'à 80 km en Eco à 15 km/h ; 65 km en Sport à 25 km/h"
+    ],
+    [
+      "Autonomie mesurée",
+      "environ 50 km en conditions favorables (selon Frandroid)"
+    ],
+    [
+      "Batterie",
+      "48 V (46,8 V nominal), 12,76 Ah, 597 Wh"
+    ],
+    [
+      "Poids",
+      "24,3 kg (24,6 kg sur certaines fiches)"
+    ],
+    [
+      "Charge max",
+      "130 kg"
+    ],
+    [
+      "Roues",
+      "11 pouces, tubeless autocicatrisants, 70/60-7.5 avant et arrière (Segway France)"
+    ],
+    [
+      "Freins",
+      "Disque avant + disque arrière"
+    ],
+    [
+      "Suspension",
+      "Hydraulique avant et arrière, arrière réglable"
+    ],
+    [
+      "Étanchéité",
+      "IPX6, batterie IPX7"
+    ],
+    [
+      "Temps de charge",
+      "environ 3 h 30 ; 2 h 30 en charge double entrée (Segway France)"
+    ]
+  ],
+  "pros": [
+    "Recharge en 3 h 30 environ, rare pour 597 Wh (Segway France).",
+    "Deux freins à disque à la place du tambour de la Max G2 (Segway France).",
+    "130 kg de charge admise et 30 % de pente annoncée (Segway France)."
+  ],
+  "cons": [
+    "24,3 kg : plus lourde que la Max G2.",
+    "Les 80 km supposent 15 km/h ; Frandroid rapporte environ 50 km.",
+    "Prix de 899 € chez Segway.",
+    "Pas de chambre à air prévue : en cas de crevaison lourde, c'est le pneu tubeless qu'on change."
+  ],
+  "parts": [
+    {
+      "label": "Pneu",
+      "size": "70/60-7.5 tubeless (11 pouces)",
+      "count": 4,
+      "to": "/piece/pneu-tubeless-70-60-7-5-pantherurban-ewheel",
+      "cta": "Pneus 70/60-7.5"
+    },
+    {
+      "label": "Chargeur",
+      "size": "48 V → 54,6 V, prise Xiaomi Pro Max",
+      "count": 1,
+      "to": "/piece/chargeur-48v-546v-2a-connecteur-xiaomi-4-pro-max-plus-5-max",
+      "cta": "Chargeur 48 V"
+    }
+  ],
+  "care": [
+    "Le même pneu 70/60-7.5 va devant et derrière : tourne-les à mi-vie si l'arrière s'use plus vite, c'est la roue motrice.",
+    "Règle la suspension arrière selon ton poids : trop molle, tu talonnes ; trop ferme, la roue rebondit sur les pavés.",
+    "Deux disques : vérifie les plaquettes avant et arrière tous les 1 000 km environ, et ne laisse pas une plaquette usée jusqu'au métal."
+  ],
+  "price": {
+    "text": "Prix catalogue Segway France : 899 €.",
+    "source": "Segway, Frandroid"
+  },
+  "faq": [
+    {
+      "q": "Quelle taille de pneu pour la Ninebot Max G3 ?",
+      "a": "Du 70/60-7.5 tubeless, 11 pouces, à l'avant comme à l'arrière selon Segway France. C'est la même taille que la Segway ZT3 Pro."
+    },
+    {
+      "q": "Quelle autonomie réelle pour la Ninebot Max G3 ?",
+      "a": "Segway annonce 80 km à 15 km/h et 65 km à 25 km/h. Frandroid rapporte environ 50 km en conditions favorables. En hiver ou en côte, compte moins."
+    },
+    {
+      "q": "Combien de temps pour charger la Ninebot Max G3 ?",
+      "a": "Environ 3 h 30 avec le chargeur fourni, et environ 2 h 30 en charge double entrée selon Segway France."
+    },
+    {
+      "q": "Quels freins sur la Ninebot Max G3 ?",
+      "a": "Un frein à disque à l'avant et un à l'arrière. La Max G2 qu'elle remplace avait un tambour avant et un frein électronique arrière."
+    },
+    {
+      "q": "Quelle différence entre la Ninebot Max G3 et la Max G2 ?",
+      "a": "La Max G3 passe à 597 Wh contre 551 Wh, à des pneus de 11 pouces contre 10 pouces, à deux freins à disque et à une suspension hydraulique arrière. Ses pneus ne se montent pas sur une Max G2."
+    }
+  ],
+  "sources": [
+    {
+      "label": "Segway France — Ninebot Max G3",
+      "url": "https://www.segwayfrance.com/pages/ninebot-max-g3"
+    },
+    {
+      "label": "Segway — Ninebot Max G3 E",
+      "url": "https://shop.segway.com/fr_fr/ninebot-max-g3-e.html"
+    },
+    {
+      "label": "Segway France — pneu Ninebot Max G3 E avec gel",
+      "url": "https://www.segwayfrance.com/products/pneu-ninebot-max-g3-e-avec-gel-anti-crevaison"
+    },
+    {
+      "label": "Frandroid — test de la Segway Ninebot Max G3",
+      "url": "https://www.frandroid.com/marques/segway-ninebot/2484902_on-a-teste-la-segway-ninebot-max-g3-la-reference-des-trottinettes-electriques-met-la-barre-tres-tres-haut"
+    },
+    {
+      "label": "Darty — Segway Ninebot Max G3 E",
+      "url": "https://www.darty.com/nav/achat/sports_loisirs/glisse_urbaine/trottinette_electrique/segway_ninebot_max_g3_e.html"
+    },
+    {
+      "label": "Decathlon Pro — Segway Ninebot Max G3",
+      "url": "https://www.decathlonpro.fr/segway-ninebot-max-g3-id-8980049.html"
+    }
+  ],
+  "video": {
+    "id": "zh6Z-gedK3A",
+    "title": "Essai Segway Max G3 : l'un des meilleurs rapports qualité/prix ?",
+    "channel": "David Nogueira",
+    "uploadDate": "2026-03-14"
+  }
+}

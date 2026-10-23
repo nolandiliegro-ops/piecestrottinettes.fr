@@ -1,0 +1,141 @@
+{
+  "displayName": "Ninebot ES2",
+  "metaTitle": "Ninebot ES2 : fiche technique, pneus et pièces",
+  "metaDescription": "Ninebot ES2 : 300 W (700 W en pointe), batterie 36 V 187 Wh, pneus pleins 8\" et 7,5\", double suspension, frein garde-boue. Fiche, entretien et pièces.",
+  "intro": [
+    "La Ninebot ES2 appartient à la série ES de Segway-Ninebot, avec les ES1 et ES4, et circule depuis fin 2017. Elle a longtemps servi de base aux flottes de trottinettes en libre-service. Petite et légère, elle roule sur des pneus pleins de 8 pouces à l'avant et 7,5 pouces à l'arrière, avec une suspension à chaque bout.",
+    "Moteur de 300 W nominaux (700 W en pointe), batterie 36 V de 187 Wh pour 25 km annoncés ; TechGearLab a mesuré environ 13,7 km. Elle freine électroniquement à l'avant et au pied sur le garde-boue arrière, pèse 12,5 kg, porte 100 kg et se recharge en 3 h 30 environ."
+  ],
+  "specs": [
+    [
+      "Moteur",
+      "300 W nominaux, 700 W en pointe"
+    ],
+    [
+      "Vitesse",
+      "25 km/h"
+    ],
+    [
+      "Autonomie annoncée",
+      "jusqu'à 25 km"
+    ],
+    [
+      "Autonomie mesurée",
+      "environ 13,7 km (selon TechGearLab)"
+    ],
+    [
+      "Batterie",
+      "36 V, 5,2 Ah, 187 Wh"
+    ],
+    [
+      "Poids",
+      "12,5 kg"
+    ],
+    [
+      "Charge max",
+      "100 kg"
+    ],
+    [
+      "Roues",
+      "pneus pleins, 8 pouces à l'avant, 7,5 pouces à l'arrière"
+    ],
+    [
+      "Freins",
+      "Électronique avant + frein au pied sur le garde-boue arrière"
+    ],
+    [
+      "Suspension",
+      "Avant et arrière"
+    ],
+    [
+      "Étanchéité",
+      "IP54"
+    ],
+    [
+      "Temps de charge",
+      "environ 3 h 30"
+    ]
+  ],
+  "pros": [
+    "12,5 kg : une des plus faciles à porter de la gamme Segway-Ninebot.",
+    "Pneus pleins : jamais de crevaison.",
+    "Suspension avant et arrière, rare sur une trottinette de ce poids (Segway)."
+  ],
+  "cons": [
+    "Autonomie mesurée d'environ 13,7 km, loin des 25 km annoncés (TechGearLab).",
+    "Pas de frein à disque ni à tambour : seulement le moteur et le garde-boue arrière.",
+    "Petites roues pleines : peu d'adhérence sur sol mouillé.",
+    "Roues avant et arrière de tailles différentes."
+  ],
+  "parts": [
+    {
+      "label": "Pneu plein avant",
+      "size": "8 pouces, spécifique Ninebot série ES",
+      "count": 1,
+      "to": "/piece/pneu-plein-ninebot-es1-es2-es3-es4",
+      "cta": "Pneu plein ES"
+    },
+    {
+      "label": "Chargeur",
+      "size": "36 V → 42 V, prise RCA",
+      "count": 2,
+      "to": "/piece/pack-chargeur-36v-42v-2a-connecteur-rca",
+      "cta": "Chargeurs 36 V"
+    }
+  ],
+  "care": [
+    "Le frein arrière, c'est le garde-boue : vérifie que ses vis et sa charnière ne prennent pas de jeu, sinon il freine mal.",
+    "Prends un pneu avant vendu pour la série ES : un 200x50 générique n'a pas la même largeur d'assise.",
+    "IP54 : elle supporte les projections, pas les flaques profondes. Évite de rouler sous une forte pluie."
+  ],
+  "faq": [
+    {
+      "q": "Quelle taille de pneu pour la Ninebot ES2 ?",
+      "a": "Des pneus pleins de 8 pouces à l'avant et 7,5 pouces à l'arrière. Le pneu avant est propre à la série ES (ES1, ES2, ES3, ES4) : ne commande pas un 200x50 standard sans comparer les mesures."
+    },
+    {
+      "q": "Quelle autonomie réelle pour la Ninebot ES2 ?",
+      "a": "Segway annonce 25 km. TechGearLab a relevé environ 13,7 km en test. Compte une quinzaine de kilomètres, moins si la batterie a plusieurs années."
+    },
+    {
+      "q": "Comment freine la Ninebot ES2 ?",
+      "a": "Avec le frein électronique du moteur avant, commandé à la poignée, et en appuyant du pied sur le garde-boue arrière. Il n'y a ni disque ni plaquettes."
+    },
+    {
+      "q": "Combien de temps pour charger la Ninebot ES2 ?",
+      "a": "Environ 3 h 30 avec le chargeur 36 V d'origine, qui sort 42 V en fin de charge."
+    },
+    {
+      "q": "Quelle différence entre la Ninebot ES2, l'ES1 et l'ES4 ?",
+      "a": "L'ES1 a un moteur de 250 W, roule à 20 km/h et pèse 11,3 kg. L'ES4 garde le moteur de 300 W mais ajoute une batterie externe : 374 Wh au total, 45 km annoncés et 14 kg. La batterie est l'élément qui change, les roues restent les mêmes."
+    }
+  ],
+  "sources": [
+    {
+      "label": "Segway — Ninebot KickScooter ES2",
+      "url": "https://www.segway.com/ekickscooter/products/es2.html"
+    },
+    {
+      "label": "Segway — manuel de la série ES (PDF)",
+      "url": "https://m.media-amazon.com/images/I/C1rEO6VVkML.pdf"
+    },
+    {
+      "label": "TechGearLab — test Ninebot ES2",
+      "url": "https://www.techgearlab.com/reviews/cool-gadgets/electric-scooter/ninebot-kickscooter-by-segway-es2"
+    },
+    {
+      "label": "Wattiz — pièces Ninebot ES2",
+      "url": "https://www.wattiz.fr/fr/s/625/ninebot-es2"
+    },
+    {
+      "label": "Family Trott — pneu plein Ninebot ES1/2/3/4",
+      "url": "https://familytrott.fr/produit/pneu-plein-ninebot-es1-2-3-4/"
+    }
+  ],
+  "video": {
+    "id": "7e5FjiWwVHY",
+    "title": "Comment faire le premier essai de la Ninebot ES2 [Test & Démonstration]",
+    "channel": "Hover Store Avis",
+    "uploadDate": "2018-11-28"
+  }
+}

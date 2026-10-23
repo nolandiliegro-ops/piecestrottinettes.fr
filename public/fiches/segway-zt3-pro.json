@@ -1,0 +1,160 @@
+{
+  "displayName": "Segway ZT3 Pro",
+  "metaTitle": "Segway ZT3 Pro : fiche technique, pneus et pièces",
+  "metaDescription": "Segway ZT3 Pro : 650 W (1 600 W en pointe), batterie 597 Wh, pneus 11\" 70/60-7.5, deux disques, 29,7 kg. Fiche, version E, légalité et pièces.",
+  "intro": [
+    "La Segway ZT3 Pro est la trottinette « crossover » de Segway-Ninebot présentée en 2024 : châssis surélevé, pneus de 11 pouces à crampons et double suspension. Hors d'Europe, Segway l'annonce jusqu'à 40 km/h ; en France, elle est vendue en version ZT3 Pro E, bridée à 25 km/h.",
+    "Moteur arrière de 650 W nominaux (1 600 W en pointe) et batterie de 597 Wh pour 70 km annoncés à 15 km/h. Electric Scooter Guide a mesuré environ 33 km sur un parcours vallonné. Deux disques mécaniques, fourche télescopique et ressort arrière, 29,7 kg et une recharge de 4 heures environ."
+  ],
+  "specs": [
+    [
+      "Moteur",
+      "650 W nominaux, 1 600 W en pointe (roue arrière)"
+    ],
+    [
+      "Vitesse",
+      "40 km/h annoncés (version hors Europe) ; la ZT3 Pro E européenne est bridée à 25 km/h"
+    ],
+    [
+      "Autonomie annoncée",
+      "jusqu'à 70 km à 15 km/h ; 30 km à vitesse maximale (Segway US)"
+    ],
+    [
+      "Autonomie mesurée",
+      "environ 33 km (selon Electric Scooter Guide) ; environ 31 km pour la version E (Frandroid)"
+    ],
+    [
+      "Batterie",
+      "48 V (46,8 V nominal), 12,75 Ah, 597 Wh"
+    ],
+    [
+      "Poids",
+      "29,7 kg"
+    ],
+    [
+      "Charge max",
+      "120 kg"
+    ],
+    [
+      "Roues",
+      "11 pouces, tubeless tout-terrain 70/60-7.5 avant et arrière"
+    ],
+    [
+      "Freins",
+      "Disque avant + disque arrière, mécaniques"
+    ],
+    [
+      "Suspension",
+      "Fourche télescopique avant, ressort arrière"
+    ],
+    [
+      "Étanchéité",
+      "IPX5, batterie IPX7"
+    ],
+    [
+      "Temps de charge",
+      "environ 4 h"
+    ]
+  ],
+  "pros": [
+    "Recharge rapide : environ 4 heures pour 597 Wh (Segway).",
+    "Pneus tout-terrain de 11 pouces et double suspension (Cleanrider).",
+    "Deux freins à disque mécaniques, simples à régler."
+  ],
+  "cons": [
+    "29,7 kg à porter (Segway).",
+    "Autonomie réelle autour de 31 à 33 km en test (Frandroid, Electric Scooter Guide).",
+    "Le modèle hors Europe dépasse 25 km/h : il ne peut pas circuler sur la voie publique en France.",
+    "Écran qui vibre et suspensions bruyantes, d'après des retours d'utilisateurs en vidéo."
+  ],
+  "parts": [
+    {
+      "label": "Pneu",
+      "size": "70/60-7.5 tubeless (11 pouces)",
+      "count": 4,
+      "to": "/piece/pneu-tubeless-70-60-7-5-pantherurban-ewheel",
+      "cta": "Pneus 70/60-7.5"
+    },
+    {
+      "label": "Pneu plein",
+      "size": "70/60-7.5 (11 pouces)",
+      "count": 6,
+      "to": "/piece/pneu-plein-70-60-7-5-noir",
+      "cta": "Pneus pleins 70/60-7.5"
+    },
+    {
+      "label": "Chargeur",
+      "size": "48 V → 54,6 V, prise Xiaomi Pro Max",
+      "count": 1,
+      "to": "/piece/chargeur-48v-546v-2a-connecteur-xiaomi-4-pro-max-plus-5-max",
+      "cta": "Chargeur 48 V"
+    }
+  ],
+  "care": [
+    "Un pneu plein 70/60-7.5 supprime les crevaisons, mais il filtre moins : réserve-le à un usage urbain sur bon revêtement.",
+    "Les disques mécaniques se règlent au câble : retends-les dès que le levier touche presque la poignée.",
+    "Après une sortie sous la pluie, laisse-la sécher avant de la brancher, même si la batterie est IPX7."
+  ],
+  "price": {
+    "text": "En France, la version E est annoncée à 699 € ; aux États-Unis, Segway affiche la ZT3 Pro entre 799,99 et 999,99 $ selon les offres.",
+    "source": "Frandroid, Segway US"
+  },
+  "faq": [
+    {
+      "q": "La Segway ZT3 Pro est-elle légale en France ?",
+      "a": "Seulement en version ZT3 Pro E, limitée à 25 km/h dès la sortie d'usine. La version vendue hors Europe, annoncée jusqu'à 40 km/h, n'a pas sa place sur la route ni sur les pistes cyclables françaises."
+    },
+    {
+      "q": "Quelle taille de pneu pour la Segway ZT3 Pro ?",
+      "a": "Du 70/60-7.5 tubeless de 11 pouces, devant et derrière. Il existe aussi des pneus pleins dans cette taille si tu ne veux plus jamais crever."
+    },
+    {
+      "q": "Quelle autonomie réelle pour la Segway ZT3 Pro ?",
+      "a": "Autour de 31 à 33 km dans les tests : 33 km chez Electric Scooter Guide sur un parcours vallonné, 31 km chez Frandroid en hiver avec la version E."
+    },
+    {
+      "q": "Combien de temps pour charger la Segway ZT3 Pro ?",
+      "a": "Environ 4 heures pour une charge complète, selon Segway."
+    },
+    {
+      "q": "Quelle différence entre la Segway ZT3 Pro et la Max G3 ?",
+      "a": "Même batterie de 597 Wh et même pneu 70/60-7.5, mais la Max G3 a des suspensions hydrauliques, un moteur de 2 000 W en pointe et pèse 5 kg de moins. La ZT3 Pro mise sur un châssis plus haut et des pneus à crampons."
+    }
+  ],
+  "sources": [
+    {
+      "label": "Segway France — Segway ZT3 Pro",
+      "url": "https://www.segwayfrance.com/pages/segway-zt3-pro"
+    },
+    {
+      "label": "Electric Scooter Guide — test Segway ZT3 Pro",
+      "url": "https://electricscooterguide.com/segway-zt3-pro-review/"
+    },
+    {
+      "label": "Segway US — ZT3 Pro",
+      "url": "https://store.segway.com/segway-ekickscooter-zt3-pro"
+    },
+    {
+      "label": "Frandroid — test de la Segway ZT3 Pro E",
+      "url": "https://www.frandroid.com/survoltes/trottinette-electrique/2429528_on-a-teste-la-segway-zt3-pro-e-une-trottinette-electrique-avec-un-excellent-rapport-qualite-prix"
+    },
+    {
+      "label": "Frandroid — fiche Segway ZT3 Pro E",
+      "url": "https://www.frandroid.com/produits/trottinette-electrique/ninebot/2445594-ninebot-segway-zt3-pro-e"
+    },
+    {
+      "label": "Cleanrider — Segway ZT3 Pro E",
+      "url": "https://www.cleanrider.com/actus/segway-zt3-pro-e-cette-trottinette-electrique-tout-terrain-a-prix-abordable-envoie-du-lourd/"
+    },
+    {
+      "label": "Segway France — pneu Segway ZT3 Pro",
+      "url": "https://www.segwayfrance.com/boutique/Pneu-Segway-ninebot-ZT3-Pro-p770196133"
+    }
+  ],
+  "video": {
+    "id": "et-DTAR44WI",
+    "title": "Essai Segway ZT3 PRO E : un best-seller... et je vous explique pourquoi !",
+    "channel": "David Nogueira",
+    "uploadDate": "2025-07-23"
+  }
+}

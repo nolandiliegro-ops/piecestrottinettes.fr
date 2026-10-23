@@ -1,0 +1,153 @@
+{
+  "displayName": "Segway P100S",
+  "metaTitle": "Segway P100S : fiche technique, pneus et pièces",
+  "metaDescription": "Segway P100S (P100SE) : 650 W (1 350 W en pointe), batterie 48 V 1 086 Wh, 100 km annoncés, pneus tubeless 10.5x2.75-7, deux disques. Fiche et pièces.",
+  "intro": [
+    "La Segway P100S, vendue en Europe sous le nom P100SE, est la grande routière de la série P de Segway-Ninebot, présentée en 2022 avec la P65. Elle mise tout sur la batterie : 1 086 Wh, de loin la plus grosse de la gamme à son lancement. Cleanrider l'affiche à 1 799 €.",
+    "Moteur arrière de 650 W nominaux (1 350 W en pointe), batterie 48 V de 23 Ah pour 100 km annoncés. Les essais publiés donnent plutôt 55 à 85 km selon le poids, le relief et la température. Deux freins à disque, une suspension à chaque roue, des pneus tubeless de 10,5 pouces, 32,9 kg et 120 kg de charge."
+  ],
+  "specs": [
+    [
+      "Moteur",
+      "650 W nominaux, 1 350 W en pointe (roue arrière)"
+    ],
+    [
+      "Vitesse",
+      "25 km/h (version européenne P100SE)"
+    ],
+    [
+      "Autonomie annoncée",
+      "jusqu'à 100 km"
+    ],
+    [
+      "Autonomie en essai",
+      "environ 55 à 85 km selon les conditions (Scooterrank, UsaCarDrive)"
+    ],
+    [
+      "Batterie",
+      "48 V, 23 Ah, 1 086 Wh"
+    ],
+    [
+      "Poids",
+      "32,9 kg"
+    ],
+    [
+      "Charge max",
+      "120 kg"
+    ],
+    [
+      "Roues",
+      "10,5 pouces, tubeless autoréparants, 10.5x2.75-7"
+    ],
+    [
+      "Freins",
+      "Disque avant + disque arrière, frein électronique régénératif à l'arrière"
+    ],
+    [
+      "Suspension",
+      "Avant et arrière"
+    ],
+    [
+      "Étanchéité",
+      "IPX5"
+    ],
+    [
+      "Temps de charge",
+      "environ 7 h"
+    ]
+  ],
+  "pros": [
+    "1 086 Wh : l'autonomie pour plusieurs jours de trajets sans recharge (Segway).",
+    "Deux freins à disque et un frein régénératif à l'arrière.",
+    "Pneus tubeless autoréparants de 10,5 pouces et double suspension (Autoevolution)."
+  ],
+  "cons": [
+    "32,9 kg : elle se porte mal, prévois un rangement de plain-pied.",
+    "Environ 7 heures de charge pour une batterie aussi grosse (Segway).",
+    "Prix élevé : 1 799 € selon Cleanrider.",
+    "Les 100 km annoncés sont un maximum : les essais tournent plutôt entre 55 et 85 km."
+  ],
+  "parts": [
+    {
+      "label": "Pneu",
+      "size": "10.5x2.75-7 tubeless (10,5 pouces)",
+      "count": 5,
+      "to": "/piece/pneu-tubeless-10-5x2-75-7-cityroad-xuancheng",
+      "cta": "Pneus 10.5x2.75"
+    },
+    {
+      "label": "Disque de frein",
+      "size": "140 mm, entraxe 44 mm, 6 trous",
+      "count": 3,
+      "to": "/piece/disque-de-frein-r6-140mm-entraxe-44mm-3-couleurs-rouge",
+      "cta": "Disques 140 mm"
+    }
+  ],
+  "care": [
+    "Avec 33 kg sur les roues, la pression compte double : vérifie tes tubeless toutes les deux semaines.",
+    "Deux disques mécaniques : retends les câbles dès que la course du levier s'allonge, et contrôle les plaquettes à chaque saison.",
+    "Une batterie de 1 086 Wh se ménage : évite de la stocker vide ou pleine pendant des semaines, vise 40 à 60 % si elle reste au garage."
+  ],
+  "price": {
+    "text": "Prix public relevé : 1 799 €.",
+    "source": "Cleanrider"
+  },
+  "faq": [
+    {
+      "q": "Quelle taille de pneu pour la Segway P100S ?",
+      "a": "Du 10.5x2.75-7 tubeless : 10,5 pouces de diamètre sur une jante de 7 pouces. C'est la même taille que sur la P65."
+    },
+    {
+      "q": "Quelle autonomie réelle pour la Segway P100S ?",
+      "a": "Segway annonce 100 km. Les essais publiés donnent entre 55 et 85 km selon ton poids, le relief et la température. En hiver, prévois le bas de la fourchette."
+    },
+    {
+      "q": "Combien de temps pour charger la Segway P100S ?",
+      "a": "Environ 7 heures pour une charge complète de ses 1 086 Wh."
+    },
+    {
+      "q": "La Segway P100S est-elle légale en France ?",
+      "a": "La P100SE vendue en Europe est limitée à 25 km/h : c'est cette version qui peut circuler sur la voie publique. Une vitesse plus élevée, même réglable dans l'application, n'est pas autorisée sur la route en France."
+    },
+    {
+      "q": "Quelle différence entre la Segway P100S et la P65 ?",
+      "a": "La P100S a un moteur de 650 W contre 500 W, une batterie de 1 086 Wh contre 561 Wh et 100 km annoncés contre 65 km. Elle ajoute un second disque à l'arrière et pèse plus lourd. Les deux prennent le même pneu 10.5x2.75-7."
+    }
+  ],
+  "sources": [
+    {
+      "label": "Segway France — KickScooter P100SE",
+      "url": "https://fr-fr.segway.com/ekickscooter/products/p100se.html"
+    },
+    {
+      "label": "Cleanrider — Segway P100SE",
+      "url": "https://www.cleanrider.com/catalogue/trottinette-electrique/segway/segway-p100se/"
+    },
+    {
+      "label": "Autoevolution — lancement de la série P",
+      "url": "https://www.autoevolution.com/news/segway-launches-its-premium-kickscooter-p-series-it-is-meant-to-go-the-distance-smoothly-193228.html"
+    },
+    {
+      "label": "Scooterrank — Segway Ninebot P100S",
+      "url": "https://scooterrank.com/scooters/segway-ninebot-p100s"
+    },
+    {
+      "label": "Smartwheel — Segway Ninebot P100S",
+      "url": "https://www.smartwheel.ca/segway-ninebot-p100s-electric-kick-scooter/"
+    },
+    {
+      "label": "Escootnow — pneu 10.5x2.75 P65 / P100S",
+      "url": "https://escootnow.com.au/products/tyre-10.5x2.75"
+    },
+    {
+      "label": "EcoMotion — pièces Segway Ninebot",
+      "url": "https://ecomotion.com.au/collections/parts-segway-ninebot?page=2"
+    }
+  ],
+  "video": {
+    "id": "APYFkwuIRq4",
+    "title": "Segway KickScooter P100SE",
+    "channel": "Segway-Ninebot Europe",
+    "uploadDate": "2022-08-10"
+  }
+}

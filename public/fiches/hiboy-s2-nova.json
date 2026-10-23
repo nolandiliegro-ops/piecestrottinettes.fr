@@ -1,0 +1,123 @@
+{
+ "displayName": "Hiboy S2 Nova",
+ "metaTitle": "Hiboy S2 Nova : fiche technique, pneus et pièces",
+ "metaDescription": "Hiboy S2 Nova : 350 W (420 W en pointe), batterie 36 V 9 Ah, pneu plein avant et gonflable arrière en 8,5 pouces, tambour arrière. Fiche et FAQ.",
+ "intro": [
+  "La Hiboy S2 Nova mélange deux types de pneus de 8,5 pouces : plein à l'avant, gonflable à l'arrière. Tu n'as donc pas de crevaison à craindre devant, et l'arrière garde un peu d'amorti, aidé par une suspension. Elle pèse 15,6 kg et accepte 100 kg.",
+  "Son moteur arrière fait 350 W, 420 W en pointe selon Hiboy, et sa batterie 36 V de 9 Ah stocke 324 Wh pour 32 km annoncés. Lors d'un test d'autonomie filmé, la batterie a lâché un peu avant 24 km. Elle freine par tambour arrière, complété d'un frein électronique."
+ ],
+ "specs": [
+  [
+   "Moteur",
+   "350 W nominaux ; 420 W en pointe selon Hiboy, 430 W selon un test YouTube"
+  ],
+  [
+   "Vitesse",
+   "30 km/h (19 mph) sur la fiche américaine ; 25 km/h maximum autorisés sur la voie publique en France"
+  ],
+  [
+   "Autonomie annoncée",
+   "jusqu'à 32 km (20 miles)"
+  ],
+  [
+   "Autonomie mesurée",
+   "un peu moins de 24 km (selon un test YouTube)"
+  ],
+  [
+   "Batterie",
+   "36 V, 9 Ah, 324 Wh (42 V en fin de charge)"
+  ],
+  [
+   "Poids",
+   "15,6 kg"
+  ],
+  [
+   "Charge max",
+   "100 kg"
+  ],
+  [
+   "Roues",
+   "8,5 pouces : plein à l'avant, gonflable à l'arrière"
+  ],
+  [
+   "Freins",
+   "Tambour arrière + électronique"
+  ],
+  [
+   "Suspension",
+   "Arrière"
+  ],
+  [
+   "Étanchéité",
+   "IPX4"
+  ],
+  [
+   "Temps de charge",
+   "environ 5,5 h"
+  ]
+ ],
+ "pros": [
+  "Pneu plein à l'avant : aucune crevaison ni chambre à air à changer sur cette roue.",
+  "Confort jugé meilleur qu'attendu pour sa taille (test YouTube).",
+  "Freinage à tambour, peu sensible à la pluie et à la boue."
+ ],
+ "cons": [
+  "Autonomie mesurée sous les 24 km, loin des 32 km annoncés (test YouTube).",
+  "Le pneu arrière gonflable peut crever : garde de quoi le réparer.",
+  "Le bloc chargeur chauffe pendant la charge, selon un testeur (test YouTube)."
+ ],
+ "parts": [],
+ "care": [
+  "Contrôle la pression du pneu arrière chaque mois : c'est le seul qui se gonfle.",
+  "Le tambour arrière se règle par le câble : retends-le dès que le levier touche presque la poignée.",
+  "Recharge dans un endroit aéré : le bloc chargeur chauffe pendant l'opération."
+ ],
+ "faq": [
+  {
+   "q": "Quelle taille de pneu pour la Hiboy S2 Nova ?",
+   "a": "8,5 pouces à l'avant (plein) comme à l'arrière (gonflable). Pour la chambre à air ou le pneu arrière, lis la cote exacte sur le flanc de ton pneu avant de commander."
+  },
+  {
+   "q": "Quelle autonomie réelle pour la Hiboy S2 Nova ?",
+   "a": "Hiboy annonce 32 km. Un testeur a vidé la batterie juste avant 24 km ; un autre site estime 18 à 22 km en usage courant."
+  },
+  {
+   "q": "La Hiboy S2 Nova a-t-elle un frein à disque ?",
+   "a": "Non. Elle freine avec un tambour à l'arrière et un frein électronique."
+  },
+  {
+   "q": "Quelle différence entre la Hiboy S2 Nova et la S2 ?",
+   "a": "La S2 roule en pneus pleins des deux côtés avec un disque arrière. La S2 Nova garde un pneu plein devant mais passe en gonflable derrière, avec un tambour et une batterie de 9 Ah au lieu de 7,5 Ah."
+  },
+  {
+   "q": "La S2 Nova est-elle légale en France à 30 km/h ?",
+   "a": "Non. La version américaine atteint 30 km/h, mais en France une trottinette électrique ne doit pas dépasser 25 km/h sur la route ou la piste cyclable."
+  }
+ ],
+ "sources": [
+  {
+   "label": "Hiboy — S2 Nova (reconditionnée)",
+   "url": "https://www.hiboy.com/products/hiboy-s2-nova-refurbished-electric-scooter"
+  },
+  {
+   "label": "Wilson eBikes — Hiboy S2 Nova",
+   "url": "https://www.wilsonebikes.com/products/hiboy-s2-nova-electric-scooter"
+  },
+  {
+   "label": "PEV Scout — Hiboy S2 Nova",
+   "url": "https://www.pevscout.com/escooters/hiboy-s2-nova"
+  },
+  {
+   "label": "eScooterWise — Hiboy S2 Nova",
+   "url": "https://escooterwise.com/scooters/hiboy-s2-nova"
+  },
+  {
+   "label": "YouTube — Range Testing The Hiboy S2 Nova Scooter",
+   "url": "https://www.youtube.com/watch?v=-Cs_uqBVHd8"
+  },
+  {
+   "label": "YouTube — Hiboy Nova S2 Review",
+   "url": "https://www.youtube.com/watch?v=rIx8Tt5zqQw"
+  }
+ ]
+}

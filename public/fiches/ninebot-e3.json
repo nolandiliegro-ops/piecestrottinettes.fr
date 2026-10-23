@@ -1,0 +1,149 @@
+{
+  "displayName": "Ninebot E3",
+  "metaTitle": "Ninebot E3 : fiche technique, pneus et pièces",
+  "metaDescription": "Ninebot E3 : 400 W (800 W en pointe), batterie 36 V 276 Wh, double suspension, pneus tubeless 60/70-6.5 et 60/65-6.9. Autonomie testée et pièces.",
+  "intro": [
+    "La Ninebot E3, E3 E en Europe, fait partie de la génération 2025 de Segway-Ninebot présentée au CES. C'est la version à petite batterie de la série E3, sous la E3 Pro. Elle apporte une double suspension, rare à ce prix : Darty et la Fnac l'affichaient autour de 420 €.",
+    "Moteur de 400 W nominaux (800 W en pointe), batterie 36 V de 7,65 Ah (276 Wh) pour 45 km annoncés en mode Eco. Le Labo Fnac a mesuré 22,4 km. Pneus tubeless de 10 pouces de deux tailles, tambour à l'avant, frein électronique à l'arrière, 17,5 kg et 100 kg de charge maximale."
+  ],
+  "specs": [
+    [
+      "Moteur",
+      "400 W nominaux, 800 W en pointe"
+    ],
+    [
+      "Vitesse",
+      "25 km/h"
+    ],
+    [
+      "Autonomie annoncée",
+      "jusqu'à 45 km en mode Eco (15 km/h, 75 kg, 25 °C)"
+    ],
+    [
+      "Autonomie mesurée",
+      "22,4 km (selon le Labo Fnac)"
+    ],
+    [
+      "Batterie",
+      "36 V, 7,65 Ah, 276 Wh"
+    ],
+    [
+      "Poids",
+      "17,5 kg"
+    ],
+    [
+      "Charge max",
+      "100 kg"
+    ],
+    [
+      "Roues",
+      "10 pouces tubeless : avant 60/70-6.5, arrière 60/65-6.9 (selon Segway France)"
+    ],
+    [
+      "Freins",
+      "Tambour avant + électronique arrière"
+    ],
+    [
+      "Suspension",
+      "Avant et arrière"
+    ],
+    [
+      "Étanchéité",
+      "IPX5, batterie IPX7 (selon le manuel Segway)"
+    ],
+    [
+      "Temps de charge",
+      "environ 5 h 30 selon la fiche, 4 h 20 mesurées par le Labo Fnac"
+    ]
+  ],
+  "pros": [
+    "Double suspension sur une trottinette de 17,5 kg (Darty, Vélo et Trottinette).",
+    "800 W en pointe : un démarrage franc selon le test vidéo de NeozOne.",
+    "Recharge rapide : 4 h 20 mesurées par le Labo Fnac."
+  ],
+  "cons": [
+    "Autonomie mesurée de 22,4 km, moitié moins que les 45 km annoncés (Labo Fnac).",
+    "Charge maximale de 100 kg.",
+    "Pneus avant et arrière de tailles différentes : deux références à gérer.",
+    "Un seul frein mécanique, le tambour avant."
+  ],
+  "parts": [
+    {
+      "label": "Pneu avant",
+      "size": "60/70-6.5 tubeless (10 pouces)",
+      "count": 14,
+      "to": "/piece/pneu-tubeless-60-70-6-5-wanda",
+      "cta": "Pneus avant 60/70-6.5"
+    },
+    {
+      "label": "Chambre à air avant",
+      "size": "10x2.50 (pour le 60/70-6.5 avant), valve droite ou coudée",
+      "count": 6,
+      "to": "/piece/chambre-a-air-10x2-50-valve-45x45",
+      "cta": "Chambres à air 10x2.50"
+    }
+  ],
+  "care": [
+    "Ta roue arrière est en 60/65-6.9, pas en 60/70-6.5 : vérifie le flanc avant de commander un pneu arrière.",
+    "Segway France recommande 2,9 à 3,3 bar (42 à 48 psi) : contrôle chaque mois, les tubeless perdent de l'air lentement.",
+    "Les suspensions à élastomère n'aiment pas le jeu : si tu entends un claquement à l'avant, fais vérifier les axes de bras."
+  ],
+  "price": {
+    "text": "Prix public relevé : 419,98 € chez Darty, à partir de 419,99 € à la Fnac.",
+    "source": "Darty, Fnac"
+  },
+  "faq": [
+    {
+      "q": "Quelle taille de pneu pour la Ninebot E3 ?",
+      "a": "60/70-6.5 à l'avant et 60/65-6.9 à l'arrière, en tubeless de 10 pouces, selon Segway France. Les deux roues ne prennent pas le même pneu."
+    },
+    {
+      "q": "Quelle autonomie réelle pour la Ninebot E3 ?",
+      "a": "Le Labo Fnac a mesuré 22,4 km, pour 45 km annoncés en mode Eco à 15 km/h. Si tu roules à 25 km/h, base-toi sur une vingtaine de kilomètres."
+    },
+    {
+      "q": "Combien de temps pour recharger la Ninebot E3 ?",
+      "a": "Environ 5 h 30 d'après la fiche produit. Le Labo Fnac a relevé 4 h 20 pour une charge complète."
+    },
+    {
+      "q": "Quelle pression pour les pneus de la Ninebot E3 ?",
+      "a": "Entre 42 et 48 psi, soit 2,9 à 3,3 bar, selon Segway France. Ne descends pas sous 30 psi."
+    },
+    {
+      "q": "Quelle différence entre la Ninebot E3 et la E3 Pro ?",
+      "a": "La batterie : 276 Wh sur la E3, 368 Wh sur la E3 Pro, soit 45 km contre 55 km annoncés. La Pro pèse 400 g de plus. Moteur, freins, suspensions et pneus sont les mêmes."
+    }
+  ],
+  "sources": [
+    {
+      "label": "Fnac L'Éclaireur — test labo Segway Ninebot E3 E",
+      "url": "https://leclaireur.fnac.com/test/665050-test-labo-de-la-segway-ninebot-e3-e-une-trottinette-dans-la-moyenne-mais-qui-manque-de-souffle/"
+    },
+    {
+      "label": "Darty — Segway Ninebot E3 E",
+      "url": "https://www.darty.com/nav/achat/sports_loisirs/glisse_urbaine/trottinette_electrique/segway_ninebot_e3_e.html"
+    },
+    {
+      "label": "Vélo et Trottinette — Segway Ninebot E3 E",
+      "url": "https://veloettrottinette.fr/en/modele/segway-ninebot-e3-e"
+    },
+    {
+      "label": "Segway France — pression et dimensions des pneus",
+      "url": "https://www.segwayfrance.com/pages/pression-pneus-trottinette-segway-ninebot"
+    },
+    {
+      "label": "Segway France — pneu arrière 60/65-6.9 pour Ninebot E3",
+      "url": "https://www.segwayfrance.com/boutique/Pneu-dorigine-60-65-6-9-arriere-pour-Ninebot-E3-p823809725"
+    },
+    {
+      "label": "Segway — manuel série E3",
+      "url": "https://segwaycenter.b-cdn.net/Manual%20series%20E3.pdf"
+    }
+  ],
+  "video": {
+    "id": "gSN8PGJc-DQ",
+    "title": "Je teste (l'excellente) trottinette électrique Segway Ninebot E3 E",
+    "channel": "NeozOne",
+    "uploadDate": "2025-09-30"
+  }
+}

@@ -1,0 +1,133 @@
+{
+  "displayName": "Hiboy S2 Lite",
+  "metaTitle": "Hiboy S2 Lite : fiche technique, chargeur et pièces",
+  "metaDescription": "Hiboy S2 Lite : 9,9 kg, moteur 250 W, batterie 36 V 5 Ah, roues pleines 6,5 pouces, 21 km/h max, frein au pied arrière. Fiche, chargeur et FAQ.",
+  "intro": [
+    "La Hiboy S2 Lite est la plus petite trottinette de la gamme S2 : 9,9 kg, roues pleines de 6,5 pouces et aucune suspension. Hiboy la vise aux ados et aux trajets courts, avec une charge maximale de 82 kg et une vitesse plafonnée à 21 km/h, sous la limite française.",
+    "Son moteur avant fait 250 W, 400 W en pointe selon Hiboy, avec une batterie 36 V de 5 Ah, soit 180 Wh. Hiboy annonce 17 km ; un test en anglais a mesuré 16 km. Pour freiner, un frein électronique agit à l'avant et un frein au pied appuie sur la roue arrière via le garde-boue."
+  ],
+  "specs": [
+    [
+      "Moteur",
+      "250 W nominaux ; 400 W en pointe selon Hiboy"
+    ],
+    [
+      "Vitesse",
+      "21 km/h (13 mph)"
+    ],
+    [
+      "Autonomie annoncée",
+      "jusqu'à 17 km (10,6 miles)"
+    ],
+    [
+      "Autonomie mesurée",
+      "16 km (selon un test YouTube)"
+    ],
+    [
+      "Batterie",
+      "36 V, 5 Ah, 180 Wh (42 V en fin de charge)"
+    ],
+    [
+      "Poids",
+      "9,9 kg (10 kg pesés en test)"
+    ],
+    [
+      "Charge max",
+      "82 kg"
+    ],
+    [
+      "Roues",
+      "6,5 pouces, pleines"
+    ],
+    [
+      "Freins",
+      "Électronique avant + frein au pied arrière (garde-boue)"
+    ],
+    [
+      "Suspension",
+      "Aucune"
+    ],
+    [
+      "Étanchéité",
+      "IPX4 selon Hiboy"
+    ],
+    [
+      "Temps de charge",
+      "3 à 5 h selon Hiboy, 5 à 6 h selon Electric Scooter Insider"
+    ]
+  ],
+  "pros": [
+    "Moins de 10 kg : un ado la porte sans difficulté.",
+    "Autonomie mesurée proche de l'annonce : 16 km pour 17 km promis (test YouTube).",
+    "Bonne visibilité grâce au phare et aux éclairages latéraux (test YouTube)."
+  ],
+  "cons": [
+    "Roulage dur hors asphalte lisse : petites roues pleines et aucune suspension (test YouTube).",
+    "Charge maximale de 82 kg, trop juste pour beaucoup d'adultes.",
+    "Pas de frein à disque : le freinage repose sur l'électronique et le pied."
+  ],
+  "parts": [
+    {
+      "label": "Chargeur",
+      "size": "36 V (sortie 42 V), prise jack DC 5,5 x 2,5 mm",
+      "count": 1,
+      "to": "/piece/pack-chargeur-36v-adaptateur-dc5-5x2-5",
+      "cta": "Chargeur 36 V"
+    }
+  ],
+  "care": [
+    "Le frein au pied frotte directement le pneu arrière : vérifie que le garde-boue n'est ni fendu ni desserré.",
+    "Ne laisse pas la batterie vide pendant des semaines : recharge-la au moins une fois par mois si la trottinette dort.",
+    "Les roues pleines de 6,5 pouces s'usent vite sur le bitume rugueux : contrôle leur état tous les quelques mois."
+  ],
+  "faq": [
+    {
+      "q": "Quelle taille de roue pour la Hiboy S2 Lite ?",
+      "a": "Des roues pleines de 6,5 pouces, sans chambre à air. Pour un remplacement, lis la référence sur le flanc de ta roue."
+    },
+    {
+      "q": "Quel chargeur pour la Hiboy S2 Lite ?",
+      "a": "Un chargeur 36 V qui sort 42 V, en 2 A, avec une fiche jack de 5,5 mm. Un chargeur d'une autre tension peut abîmer la batterie."
+    },
+    {
+      "q": "Quelle autonomie réelle pour la S2 Lite ?",
+      "a": "Un testeur a mesuré 16 km pour 17 km annoncés. Electric Scooter Insider estime plutôt 8 à 10 km en roulant tout le temps à pleine vitesse."
+    },
+    {
+      "q": "Quelle différence entre la Hiboy S2 Lite et la S2 ?",
+      "a": "La S2 Lite pèse 9,9 kg, roule en 6,5 pouces sans suspension et plafonne à 21 km/h. La S2 passe à 8,5 pouces, ajoute une suspension arrière et un frein à disque."
+    },
+    {
+      "q": "La S2 Lite peut-elle rouler dans la rue en France ?",
+      "a": "Sa vitesse maximale de 21 km/h reste sous les 25 km/h imposés aux trottinettes électriques. Les règles des engins de déplacement personnel motorisés s'appliquent quand même, assurance comprise."
+    }
+  ],
+  "sources": [
+    {
+      "label": "Hiboy — S2 Lite (reconditionnée)",
+      "url": "https://www.hiboy.com/products/hiboy-s2-lite-refurbished-electric-scooter"
+    },
+    {
+      "label": "Electric Scooter Insider — Hiboy S2 Lite review",
+      "url": "https://www.electricscooterinsider.com/electric-scooters/reviews/hiboy-s2-lite-review/"
+    },
+    {
+      "label": "Wilson eBikes — Hiboy S2 Lite",
+      "url": "https://www.wilsonebikes.com/products/hiboy-s2-lite-electric-scooter"
+    },
+    {
+      "label": "Trott en Provence — chargeur Hiboy S2 Lite",
+      "url": "https://trott-en-provence.fr/chargeur-trottinette-hiboy-s2-lite/"
+    },
+    {
+      "label": "YouTube — Hiboy S2 Lite FULL Review",
+      "url": "https://www.youtube.com/watch?v=ed5MnLYdxNQ"
+    }
+  ],
+  "video": {
+    "id": "tmLSMqXSyQ0",
+    "title": "Hiboy S2 Lite: Look Cool, Arrive Cool.",
+    "channel": "Hiboy official",
+    "uploadDate": "2025-09-02"
+  }
+}

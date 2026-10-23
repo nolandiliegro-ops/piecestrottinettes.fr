@@ -1,0 +1,134 @@
+{
+  "displayName": "Segway GT3",
+  "metaTitle": "Segway GT3 : fiche technique, autonomie et pièces",
+  "metaDescription": "Segway GT3 (GT3 E) : 700 W (2 400 W en pointe), batterie 48 V 899 Wh, 75 km annoncés à 25 km/h, deux disques, IPX6, pneus 11\" tubeless. Fiche et pièces.",
+  "intro": [
+    "La Segway GT3, vendue en France sous le nom GT3 E, est la GT de la génération 2025 : un seul moteur, bridée à 25 km/h, et 39,5 kg au lieu des 47,6 kg de l'ancienne GT1. Segway France l'affiche à 1 499 €. Au-dessus, la GT3 Pro bimoteur n'est pas bridée et vise un autre usage.",
+    "Moteur arrière de 700 W nominaux (2 400 W en pointe), batterie 46,8 V de 19,21 Ah, soit 899 Wh, pour 75 km annoncés à 25 km/h et 95 km à 15 km/h. Deux freins à disque mécaniques, suspension hydraulique avant et bras oscillant hydraulique arrière, IPX6 et 150 kg de charge maximale."
+  ],
+  "specs": [
+    [
+      "Moteur",
+      "700 W nominaux, 2 400 W en pointe (roue arrière)"
+    ],
+    [
+      "Vitesse",
+      "25 km/h (GT3 E)"
+    ],
+    [
+      "Autonomie annoncée",
+      "75 km à 25 km/h en Sport, 95 km à 15 km/h en Eco (Segway France)"
+    ],
+    [
+      "Batterie",
+      "48 V (46,8 V nominal), 19,21 Ah, 899 Wh"
+    ],
+    [
+      "Poids",
+      "39,5 kg"
+    ],
+    [
+      "Charge max",
+      "150 kg"
+    ],
+    [
+      "Roues",
+      "11 pouces, tubeless autocicatrisants, 80 mm de large"
+    ],
+    [
+      "Freins",
+      "Disque avant + disque arrière, mécaniques"
+    ],
+    [
+      "Suspension",
+      "Double amortisseur hydraulique avant, bras oscillant hydraulique arrière"
+    ],
+    [
+      "Étanchéité",
+      "IPX6, batterie IPX7"
+    ],
+    [
+      "Temps de charge",
+      "environ 5 h 30 (jusqu'à 6 h selon les revendeurs)"
+    ]
+  ],
+  "pros": [
+    "IPX6 sur la trottinette et IPX7 sur la batterie : elle supporte une vraie pluie (Segway France).",
+    "Deux freins à disque et une double suspension hydraulique (Segway France).",
+    "Un gabarit de GT bridé à 25 km/h, donc utilisable sur la voie publique."
+  ],
+  "cons": [
+    "39,5 kg : elle reste lourde à monter dans un escalier.",
+    "Aucune autonomie mesurée sur un cycle complet par la presse française à ce jour : Frandroid et Cleanrider n'ont publié que des prises en main.",
+    "Prix de 1 499 € chez Segway France.",
+    "Dimension exacte du pneu non publiée par Segway : il faut lire le flanc avant de commander."
+  ],
+  "parts": [
+    {
+      "label": "Chargeur",
+      "size": "48 V → 54,6 V, prise Xiaomi Pro Max",
+      "count": 1,
+      "to": "/piece/chargeur-48v-546v-2a-connecteur-xiaomi-4-pro-max-plus-5-max",
+      "cta": "Chargeur 48 V"
+    }
+  ],
+  "care": [
+    "Avant de commander un pneu, lis la cote moulée sur le flanc : Segway annonce 11 pouces et 80 mm de large, sans publier la référence complète.",
+    "Freins à disque mécaniques : resserre les câbles quand la course du levier s'allonge, et contrôle les plaquettes avant et arrière à chaque saison.",
+    "Sur 40 kg, le bras oscillant arrière travaille beaucoup : fais vérifier le jeu de ses axes si tu entends un claquement."
+  ],
+  "price": {
+    "text": "Prix affiché par Segway France : 1 499 €.",
+    "source": "segwayfrance.com"
+  },
+  "faq": [
+    {
+      "q": "Quelle taille de pneu pour la Segway GT3 ?",
+      "a": "Des tubeless autocicatrisants de 11 pouces et 80 mm de large, selon Segway France. La référence complète n'est pas publiée : lis la cote sur le flanc de ton pneu avant d'en commander un."
+    },
+    {
+      "q": "Quelle autonomie pour la Segway GT3 ?",
+      "a": "Segway annonce 75 km à 25 km/h et 95 km à 15 km/h, pour un pilote de 75 kg à 25 °C. Aucun test complet n'a encore été publié par la presse française : prévois de la marge en hiver ou en côte."
+    },
+    {
+      "q": "La Segway GT3 peut-elle rouler sur la route ?",
+      "a": "La GT3 E européenne est limitée à 25 km/h dès l'usine, ce qui la rend utilisable sur la voie publique en France. La GT3 Pro, plus rapide, n'a pas ce bridage et relève d'un usage privé."
+    },
+    {
+      "q": "Combien de temps pour charger la Segway GT3 ?",
+      "a": "Environ 5 h 30 selon les fiches françaises, jusqu'à 6 heures selon le revendeur."
+    },
+    {
+      "q": "Quelle différence entre la Segway GT3 et la GT3 Pro ?",
+      "a": "La GT3 a un moteur et reste bridée à 25 km/h. La GT3 Pro a deux moteurs et une batterie 72 V bien plus grosse ; elle n'est pas conçue pour la voie publique. Leurs pièces de transmission et de batterie ne sont pas interchangeables."
+    }
+  ],
+  "sources": [
+    {
+      "label": "Segway France — Segway GT3 E",
+      "url": "https://www.segwayfrance.com/pages/segway-gt3-e"
+    },
+    {
+      "label": "Segway France — SuperScooter GT3 E",
+      "url": "https://www.segwayfrance.com/products/segway-gt3-e-superscooter"
+    },
+    {
+      "label": "Darty — Segway GT3 E",
+      "url": "https://www.darty.com/nav/achat/sports_loisirs/glisse_urbaine/trottinette_electrique/segway_gt3_e.html"
+    },
+    {
+      "label": "Idealo — Segway SuperScooter GT3 E",
+      "url": "https://www.idealo.fr/prix/206971882/segway-superscooter-gt3-e.html"
+    },
+    {
+      "label": "Frandroid — prise en main de la Segway GT3 E",
+      "url": "https://www.frandroid.com/marques/segway-ninebot/2536825_on-a-roule-avec-la-trottinette-electrique-la-plus-haut-de-gamme-de-segway-gps-integre-double-suspension-et-prix-en-baisse"
+    }
+  ],
+  "video": {
+    "id": "SAW4uR_Qltk",
+    "title": "DÉCOUVERTE ET TEST DE LA TROTTINETTE ÉLECTRIQUE SEGWAY NINEBOT GT3 JUSQU'A 95 KM AVEC SES 2400W",
+    "channel": "Fastride",
+    "uploadDate": "2025-04-11"
+  }
+}

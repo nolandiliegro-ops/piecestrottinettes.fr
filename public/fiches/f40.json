@@ -1,0 +1,165 @@
+{
+  "displayName": "Ninebot F40",
+  "metaTitle": "Ninebot F40 : fiche technique, pneus et pièces",
+  "metaDescription": "Ninebot F40 : 350 W (700 W en pointe), batterie 36 V 367 Wh, pneus tubeless 10x2.125-6.5, disque arrière. Autonomie réelle, entretien et pièces.",
+  "intro": [
+    "La Ninebot F40 est le haut de la première série F de Segway-Ninebot, qui compte aussi les F20, F25 et F30. En Europe, elle est vendue sous le nom F40E, bridée à 25 km/h. Jeuxvideo.com l'a testée à 569 € hors remise. Elle n'a pas de suspension : le confort vient de ses pneus de 10 pouces.",
+    "Moteur avant de 350 W (700 W en pointe), batterie 36 V de 10,2 Ah (367 Wh) pour 40 km annoncés. En test urbain, Jeuxvideo.com a relevé 30 km en mode Eco et 21 km en Sport avec un pilote de 80 kg. Elle freine électroniquement à l'avant et par disque à l'arrière, et se recharge en 6 h 30 environ."
+  ],
+  "specs": [
+    [
+      "Moteur",
+      "350 W nominaux, 700 W en pointe (roue avant)"
+    ],
+    [
+      "Vitesse",
+      "25 km/h (version européenne F40E)"
+    ],
+    [
+      "Autonomie annoncée",
+      "jusqu'à 40 km"
+    ],
+    [
+      "Autonomie mesurée",
+      "30 km en Eco, 21 km en Sport, pilote de 80 kg (selon Jeuxvideo.com)"
+    ],
+    [
+      "Batterie",
+      "36 V, 10,2 Ah, 367 Wh"
+    ],
+    [
+      "Poids",
+      "17,1 kg selon Segway France (F40E) ; 15,8 kg annoncés dans certains tests"
+    ],
+    [
+      "Charge max",
+      "120 kg"
+    ],
+    [
+      "Roues",
+      "10 pouces, tubeless 10x2.125-6.5 avec couche de gel"
+    ],
+    [
+      "Freins",
+      "Électronique avant + disque mécanique arrière"
+    ],
+    [
+      "Suspension",
+      "Aucune"
+    ],
+    [
+      "Étanchéité",
+      "IPX5"
+    ],
+    [
+      "Temps de charge",
+      "environ 6 h 30 (selon Segway)"
+    ]
+  ],
+  "pros": [
+    "700 W en pointe : de la reprise pour une 36 V urbaine (Segway France).",
+    "Pneus tubeless de 10 pouces avec couche de gel contre les crevaisons (Segway UK).",
+    "Un vrai frein à disque à l'arrière, en plus du frein électronique avant."
+  ],
+  "cons": [
+    "Aucune suspension : les pavés se sentent dans les bras.",
+    "Autonomie réelle bien en dessous des 40 km annoncés : 21 à 30 km en test (Jeuxvideo.com).",
+    "Recharge longue, environ 6 h 30 (Segway)."
+  ],
+  "parts": [
+    {
+      "label": "Pneu",
+      "size": "10x2.125-6.5 (10 pouces)",
+      "count": 3,
+      "to": "/piece/pneu-10x2-125-6-5-ninebot-f",
+      "cta": "Pneus 10x2.125"
+    },
+    {
+      "label": "Chambre à air",
+      "size": "10x2.125, valve droite ou coudée",
+      "count": 8,
+      "to": "/piece/chambre-a-air-10-pouces-10x2-125-valve-droite",
+      "cta": "Chambres à air"
+    },
+    {
+      "label": "Pneu plein",
+      "size": "10x2.125-6.5, jante 44 mm",
+      "count": 3,
+      "to": "/piece/pneu-plein-10x2-125-6-5-offroad-ultra-leger-jante-44-mm-bleu-nedong",
+      "cta": "Pneus pleins"
+    },
+    {
+      "label": "Disque de frein",
+      "size": "140 mm, entraxe 44 mm, 6 trous (arrière)",
+      "count": 3,
+      "to": "/piece/disque-de-frein-r6-140mm-entraxe-44mm-3-couleurs-rouge",
+      "cta": "Disques 140 mm"
+    },
+    {
+      "label": "Chargeur",
+      "size": "36 V → 42 V, prise RCA",
+      "count": 2,
+      "to": "/piece/pack-chargeur-36v-42v-2a-connecteur-rca",
+      "cta": "Chargeurs 36 V"
+    }
+  ],
+  "care": [
+    "Sans suspension, tes pneus font tout le travail : garde-les à la pression indiquée sur le flanc, contrôle chaque mois.",
+    "Le disque arrière est ton seul frein mécanique : resserre le câble dès que le levier arrive trop près de la poignée.",
+    "Roue motrice à l'avant : vérifie régulièrement le serrage de l'axe et l'état du câble moteur à la fourche."
+  ],
+  "price": {
+    "text": "Prix public relevé lors du test : 569 € hors réduction (version F40E).",
+    "source": "Jeuxvideo.com"
+  },
+  "faq": [
+    {
+      "q": "Quelle taille de pneu pour la Ninebot F40 ?",
+      "a": "Du 10x2.125-6.5 : 10 pouces de diamètre, jante de 6,5 pouces. D'origine, c'est un tubeless avec gel. Ce n'est pas la même taille que les F2 (10x2.50) : lis la cote sur le flanc avant de commander."
+    },
+    {
+      "q": "Quelle autonomie réelle pour la Ninebot F40 ?",
+      "a": "Segway annonce 40 km. Jeuxvideo.com a mesuré 30 km en Eco et 21 km en Sport, en ville, avec un pilote de 80 kg. Compte plutôt 20 à 30 km selon ton poids et ton parcours."
+    },
+    {
+      "q": "Combien de temps pour charger une Ninebot F40 ?",
+      "a": "Environ 6 h 30 pour une charge complète, selon Segway. Le chargeur est un 36 V qui sort 42 V en fin de charge."
+    },
+    {
+      "q": "Quels freins sur la Ninebot F40 ?",
+      "a": "Un frein électronique sur la roue avant motrice et un frein à disque mécanique de 140 mm sur la roue arrière."
+    },
+    {
+      "q": "Quelle différence entre la Ninebot F40 et la F40E ?",
+      "a": "La F40E est la version européenne, limitée à 25 km/h pour rouler légalement sur la voie publique. Côté pièces, pneus et batterie sont les mêmes."
+    }
+  ],
+  "sources": [
+    {
+      "label": "Segway France — Ninebot KickScooter F40E",
+      "url": "https://fr-fr.segway.com/ekickscooter/products/f40e.html"
+    },
+    {
+      "label": "Segway UK — Ninebot KickScooter F40E",
+      "url": "https://uk-en.segway.com/ekickscooter/products/f40e.html"
+    },
+    {
+      "label": "Jeuxvideo.com — test Ninebot F40E",
+      "url": "https://www.jeuxvideo.com/high-tech/tests/test-1569740.htm"
+    },
+    {
+      "label": "Electric Rider — pneus Ninebot série F",
+      "url": "https://electricrider.fr/pieces/pneu-trottinette-ninebot-serie-f"
+    },
+    {
+      "label": "E-Watts — pneus Ninebot F20 / F25 / F30 / F40",
+      "url": "https://e-watts.fr/categorie-produit/pieces-detachees-trottinette-electrique/pneu-trottinette-electrique/pneu-ninebot-f20-f25-f30-f40"
+    }
+  ],
+  "video": {
+    "id": "DI6wvVlk2sg",
+    "title": "Déballage et caractéristiques du trottinette électrique Segway Ninebot F40E",
+    "channel": "Eu Amo Tecnologia",
+    "uploadDate": "2024-10-24"
+  }
+}
