@@ -6,7 +6,8 @@
  */
 import { useState } from "react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
-import { ChevronDown, Menu, Search, ShoppingCart, UserRound, X } from "lucide-react";
+import { ChevronDown, Menu, Search, ShoppingCart, UserRound, X, CircleDot, Tag } from "lucide-react";
+import { useCategories } from "@/hooks/useScooterData";
 import { useAuth } from "@/hooks/useAuth";
 import { useCart } from "@/hooks/useCart";
 import { useSelectedScooter } from "@/contexts/ScooterContext";
@@ -25,6 +26,18 @@ export const readBarreVariant = (): BarreVariant | null => {
     return 2;
   }
 };
+
+/** 24/10 : propositions du menu de gauche (barre « Logo au centre »), ?menu=1..5 ; sans paramètre = menu actuel. */
+const readMenuVariant = (): number => {
+  try {
+    const n = Number(new URLSearchParams(window.location.search).get("menu"));
+    return n >= 1 && n <= 5 ? n : 0;
+  } catch {
+    return 0;
+  }
+};
+// Familles qui vendent (forte marge) d'abord.
+const FAMILIES = ["pneus", "chambres-a-air", "plaquettes", "chargeurs", "pneus-pleins", "disques"];
 
 const FONT = "'Plus Jakarta Sans', sans-serif";
 const CUT = "polygon(0 0, calc(100% - 8px) 0, 100% 8px, 100% 100%, 0 100%)";
@@ -56,6 +69,10 @@ const HeaderProposals = ({ variant }: { variant: BarreVariant }) => {
   const { openSpotlight } = useSpotlight();
   const [sheet, setSheet] = useState(false);
   const [menu, setMenu] = useState(false);
+  const [menuV] = useState(readMenuVariant);
+  const [megaOpen, setMegaOpen] = useState(false);
+  const { data: categories = [] } = useCategories();
+  const families = FAMILIES.map((slug) => categories.find((c) => c.slug === slug)).filter((c): c is NonNullable<typeof c> => !!c);
   const dark = variant === 5;
   const ink = dark ? "#FFFFFF" : CARBON;
   const on = (href: string) => pathname.startsWith(href);
@@ -79,6 +96,94 @@ const HeaderProposals = ({ variant }: { variant: BarreVariant }) => {
       ))}
     </nav>
   );
+
+  /** Menu de gauche de la barre « Logo au centre » : 5 propositions (?menu=1..5). */
+  const SUBS: Record<string, string> = { "/catalogue": "pneus, freins, chargeurs", "/trottinettes": "trouve la tienne", "/marques": "de A à Z" };
+  const ICONS: Record<string, React.ReactNode> = {
+    "/catalogue": <CircleDot className="w-4 h-4" strokeWidth={2.4} />,
+    "/trottinettes": <ScooterGlyph className="w-4 h-4" />,
+    "/marques": <Tag className="w-4 h-4" strokeWidth={2.4} />,
+  };
+  const leftMenu = () => {
+    if (menuV === 0) return links();
+    if (menuV === 1) {
+      return (
+        <nav className="hidden lg:flex items-center gap-7 xl:gap-9">
+          {LINKS.map((l) => (
+            <Link key={l.href} to={l.href} className="relative py-2 text-[15px] font-extrabold uppercase tracking-[0.08em] transition-colors hover:text-[#1A1A1A]"
+              style={{ fontFamily: FONT, color: on(l.href) ? CARBON : "#78716C" }}>
+              {l.label}
+              <span aria-hidden className="absolute left-0 right-0 -bottom-0.5 h-[3px] transition-transform origin-left" style={{ background: GREEN, transform: on(l.href) ? "scaleX(1)" : "scaleX(0)" }} />
+            </Link>
+          ))}
+        </nav>
+      );
+    }
+    if (menuV === 2) {
+      return (
+        <nav className="hidden lg:flex items-center gap-4 xl:gap-8">
+          {LINKS.map((l) => (
+            <Link key={l.href} to={l.href} className="inline-flex items-center gap-2 py-2 text-sm font-extrabold uppercase tracking-[0.06em] [&>span:first-child]:hidden xl:[&>span:first-child]:flex"
+              style={{ fontFamily: FONT, color: on(l.href) ? CARBON : "#57534E" }}>
+              <span className="w-7 h-7 flex items-center justify-center text-white" style={{ background: on(l.href) ? GREEN : CARBON, clipPath: CUT }}>{ICONS[l.href]}</span>
+              {l.label}
+            </Link>
+          ))}
+        </nav>
+      );
+    }
+    if (menuV === 3) {
+      return (
+        <nav className="hidden lg:flex items-center gap-6 xl:gap-8 relative" onMouseLeave={() => setMegaOpen(false)}>
+          <button type="button" onClick={() => setMegaOpen((v) => !v)} onMouseEnter={() => setMegaOpen(true)} aria-expanded={megaOpen}
+            className="inline-flex items-center gap-1 py-2 text-sm font-extrabold uppercase tracking-[0.06em]"
+            style={{ fontFamily: FONT, color: on("/catalogue") || megaOpen ? CARBON : "#57534E", boxShadow: on("/catalogue") ? `inset 0 -2.5px 0 ${GREEN}` : "none" }}>
+            Pièces <ChevronDown className={`w-4 h-4 transition-transform ${megaOpen ? "rotate-180" : ""}`} />
+          </button>
+          {LINKS.slice(1).map((l) => (
+            <Link key={l.href} to={l.href} className="py-2 text-sm font-extrabold uppercase tracking-[0.06em]"
+              style={{ fontFamily: FONT, color: on(l.href) ? CARBON : "#57534E", boxShadow: on(l.href) ? `inset 0 -2.5px 0 ${GREEN}` : "none" }}>{l.label}</Link>
+          ))}
+          {megaOpen && (
+            <div className="absolute left-0 top-full pt-3 z-50">
+              <div className="w-[440px] bg-white p-3 grid grid-cols-2 gap-1.5 shadow-xl" style={{ clipPath: "polygon(0 0, calc(100% - 14px) 0, 100% 14px, 100% 100%, 0 100%)", boxShadow: `inset 0 0 0 1px ${LINE}` }}>
+                {families.map((c) => (
+                  <Link key={c.id} to={`/catalogue?category=${c.id}`} onClick={() => setMegaOpen(false)} className="flex items-center min-h-[44px] px-3 text-sm font-bold hover:bg-[#F5F0E8]" style={{ fontFamily: FONT, color: CARBON }}>
+                    {c.name}
+                  </Link>
+                ))}
+                <Link to="/catalogue" onClick={() => setMegaOpen(false)} className="col-span-2 flex items-center justify-center min-h-[44px] text-sm font-extrabold uppercase tracking-[0.06em] text-white" style={{ fontFamily: FONT, background: CARBON, clipPath: CUT }}>
+                  Toutes les pièces
+                </Link>
+              </div>
+            </div>
+          )}
+        </nav>
+      );
+    }
+    if (menuV === 4) {
+      return (
+        <nav className="hidden lg:flex items-center gap-1.5">
+          {LINKS.map((l) => (
+            <Link key={l.href} to={l.href} className="inline-flex items-center min-h-[40px] px-3.5 text-[13px] font-extrabold uppercase tracking-[0.06em]"
+              style={{ fontFamily: FONT, clipPath: CUT, background: on(l.href) ? CARBON : "transparent", color: on(l.href) ? "#fff" : CARBON, boxShadow: on(l.href) ? "none" : `inset 0 0 0 1px ${LINE}` }}>
+              {l.label}
+            </Link>
+          ))}
+        </nav>
+      );
+    }
+    return (
+      <nav className="hidden lg:flex items-center gap-4 xl:gap-8">
+        {LINKS.map((l) => (
+          <Link key={l.href} to={l.href} className="flex flex-col leading-none py-1.5 pl-3" style={{ boxShadow: `inset 3px 0 0 ${on(l.href) ? GREEN : LINE}` }}>
+            <span className="text-[15px] font-extrabold uppercase tracking-[0.05em]" style={{ fontFamily: FONT, color: CARBON }}>{l.label}</span>
+            <span className="mt-1 text-sm text-gray-500 hidden xl:block" style={{ fontFamily: FONT }}>{SUBS[l.href]}</span>
+          </Link>
+        ))}
+      </nav>
+    );
+  };
 
   const cart = (
     <button type="button" onClick={() => openCart(true)} aria-label="Panier" className="relative hidden md:inline-flex w-11 h-11 items-center justify-center" style={{ color: ink }}>
@@ -206,14 +311,15 @@ const HeaderProposals = ({ variant }: { variant: BarreVariant }) => {
     return shell(
       <div className="grid grid-cols-[1fr_auto_1fr] items-center h-16 lg:h-20">
         {/* Téléphone : menu + recherche à gauche, trott + profil à droite → 2 icônes de chaque côté, logo au centre exact. */}
-        <div className="flex items-center gap-1">{burger}<span className="lg:hidden">{searchIcon("")}</span>{links()}</div>
+        <div className="flex items-center gap-1">{burger}<span className="lg:hidden">{searchIcon("")}</span>{leftMenu()}</div>
         {logo("h-[38px] lg:h-[50px]")}
         <div className="flex items-center justify-end gap-0.5 lg:gap-2">
           <span className="hidden lg:inline-flex">{searchIcon("")}</span>
           {scooterBtn("icon")}
           {cart}
-          <span className="hidden lg:inline-flex">{profileBtn({ in: "Profil rider", out: "Connexion" }, "text")}</span>
-          <span className="lg:hidden">{profileBtn({ in: "Profil rider", out: "Connexion" }, "icon")}</span>
+          {/* Entre 1024 et 1280 px le libellé touchait le logo (mesuré) : icône seule sous 1280 px. */}
+          <span className="hidden xl:inline-flex">{profileBtn({ in: "Profil rider", out: "Connexion" }, "text")}</span>
+          <span className="xl:hidden">{profileBtn({ in: "Profil rider", out: "Connexion" }, "icon")}</span>
         </div>
       </div>,
     );
