@@ -1,0 +1,133 @@
+{
+ "displayName": "Cecotec Bongo Serie A Connected",
+ "metaTitle": "Cecotec Bongo Serie A Connected : fiche et pièces",
+ "metaDescription": "Cecotec Bongo Serie A Connected : 350 W (700 W en pointe), batterie amovible 36 V 6,4 Ah, pneus tubeless 8,5\", disque arrière. Fiche, autonomie et pièces.",
+ "intro": [
+  "La Bongo Serie A Connected est l'un des premiers modèles connectés de Cecotec, testé par Xataka dès janvier 2020. Son point fort : une batterie amovible et interchangeable, qui se retire sans outil pour la recharger ou la remplacer par une seconde. À ne pas confondre avec la Serie A Advance Connected, qui a sa propre fiche.",
+  "Moteur de 350 W (700 W en pointe), batterie de 36 V et 6,4 Ah (environ 230 Wh) pour 25 km annoncés, vitesse limitée à 25 km/h. Elle roule sur des pneus tubeless de 8,5 pouces et freine avec un frein électrique à l'avant, un disque et un frein au pied à l'arrière. Xataka a mesuré un peu plus de 15 km en mode Sport."
+ ],
+ "specs": [
+  [
+   "Moteur",
+   "350 W nominaux, 700 W en pointe"
+  ],
+  [
+   "Vitesse",
+   "25 km/h"
+  ],
+  [
+   "Autonomie annoncée",
+   "25 km"
+  ],
+  [
+   "Autonomie mesurée",
+   "un peu plus de 15 km en mode Sport, plus de 20 km en conduite économe (Xataka)"
+  ],
+  [
+   "Batterie",
+   "36 V, 6,4 Ah, environ 230 Wh, amovible"
+  ],
+  [
+   "Poids",
+   "13,5 kg (selon Xataka)"
+  ],
+  [
+   "Charge max",
+   "120 kg"
+  ],
+  [
+   "Roues",
+   "8,5 pouces, tubeless"
+  ],
+  [
+   "Freins",
+   "Électrique à l'avant + disque et frein au pied à l'arrière"
+  ],
+  [
+   "Étanchéité",
+   "IPX4"
+  ],
+  [
+   "Temps de charge",
+   "4 à 5 h"
+  ]
+ ],
+ "pros": [
+  "Batterie amovible : tu peux la recharger chez toi et en acheter une seconde pour doubler l'autonomie (test vidéo YouTube).",
+  "Pneus tubeless de 8,5 pouces, aucune crevaison après un an d'usage pour un testeur sur YouTube.",
+  "Triple freinage : électrique, disque et frein au pied (fiche Cecotec).",
+  "Application pour régler les vitesses depuis le téléphone."
+ ],
+ "cons": [
+  "Autonomie réelle autour de 15 à 20 km selon le mode (Xataka).",
+  "Pas de suspension, signalé par plusieurs testeurs.",
+  "Modèle ancien, affiché épuisé sur la boutique Cecotec Espagne.",
+  "Batterie de 230 Wh, modeste face aux modèles récents."
+ ],
+ "parts": [
+  {
+   "label": "Chargeur",
+   "size": "36 V (42 V), prise DC 5.5x2.1",
+   "count": 1,
+   "to": "/piece/chargeur-36v-42v-2a-connecteur-dc-55-21mm",
+   "cta": "Chargeur 36 V"
+  }
+ ],
+ "care": [
+  "Pneus tubeless : contrôle la pression toutes les deux semaines, un tubeless sous-gonflé peut se décoller de la jante. Pas de chambre à air à prévoir.",
+  "Retire la batterie pour la recharger à l'intérieur, et nettoie ses contacts de temps en temps.",
+  "Avec trois freins, pense à vérifier le frein au pied : il frotte sur le pneu arrière et l'use."
+ ],
+ "price": {
+  "text": "Prix affiché sur la boutique Cecotec Espagne : 449 €, modèle indiqué comme épuisé. Un testeur l'a vu à 349 € en promotion en 2020, un autre à 399 € en 2021.",
+  "source": "cecotec.es, YouTube"
+ },
+ "faq": [
+  {
+   "q": "Quelle taille de pneu pour la Cecotec Bongo Serie A Connected ?",
+   "a": "Des pneus tubeless de 8,5 pouces, sans chambre à air. Cecotec ne publie pas la cote complète : lis-la sur le flanc de ton pneu avant de commander."
+  },
+  {
+   "q": "Quelle autonomie réelle pour la Bongo Serie A Connected ?",
+   "a": "Xataka a mesuré un peu plus de 15 km en mode Sport et plus de 20 km en roulant doucement, pour 25 km annoncés. Une seconde batterie amovible double l'autonomie."
+  },
+  {
+   "q": "La batterie de la Bongo Serie A Connected est-elle amovible ?",
+   "a": "Oui, elle se retire et se remet sans outil. Tu peux la recharger séparément, en 4 à 5 heures."
+  },
+  {
+   "q": "Quels freins sur la Serie A Connected ?",
+   "a": "Trois : un frein électrique dans le moteur avant, un disque à l'arrière et un frein au pied sur le garde-boue arrière."
+  },
+  {
+   "q": "Peut-on rouler en Serie A Connected en France ?",
+   "a": "Oui. Elle est limitée à 25 km/h et se conduit debout, comme le prévoit la règle française des engins de déplacement personnel motorisés. Pas de trottoir, et 12 ans minimum."
+  },
+  {
+   "q": "Quelle différence entre la Serie A Connected et la Serie A Advance Connected ?",
+   "a": "Ce sont deux modèles différents de la même série. Les pneus et la jante ne sont pas les mêmes : vérifie le nom exact sous le plateau avant de commander un pneu ou une chambre."
+  }
+ ],
+ "sources": [
+  {
+   "label": "Cecotec Espagne — Bongo Serie A Connected",
+   "url": "https://cecotec.es/es/patinetes-electricos/bongo-serie-a-connected"
+  },
+  {
+   "label": "Cecotec — fiche technique Serie A Connected (PDF)",
+   "url": "https://cecotec.es/images/manuales/FichaTecnica_SerieAConnected.pdf"
+  },
+  {
+   "label": "Xataka — analyse Cecotec Bongo Serie A Connected",
+   "url": "https://www.xataka.com/analisis/cecotec-bongo-serie-a-connected-analisis-caracteristicas-precio-especificaciones"
+  },
+  {
+   "label": "Idealo Espagne — Bongo Serie A Connected",
+   "url": "https://www.idealo.es/precios/7071720/cecotec-bongo-serie-a-connected.html"
+  },
+  {
+   "label": "Milar — Bongo Serie A Connected",
+   "url": "https://www.milar.es/cecotec-patinete-electrico-bongo-serie-a-connected.html"
+  }
+ ]
+}

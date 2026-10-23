@@ -1,0 +1,130 @@
+{
+  "displayName": "Smartgyro Z-One 2",
+  "metaTitle": "Smartgyro Z-One 2 : fiche technique et entretien",
+  "metaDescription": "Smartgyro Z-One 2 : moteur avant 350 W, batterie 36 V 8 Ah, 30 km annoncés, roues de 10 pouces, 12,6 kg, sans suspension. Fiche, entretien et questions.",
+  "intro": [
+    "La Z-One 2 est la trottinette la plus légère de Smartgyro, marque espagnole, présentée en juin 2025. Elle succède à la Z-One avec la carte NFC, l'application Smartgyro Core et des clignotants. À ne pas confondre avec la Z-Pro, plus puissante et suspendue.",
+    "Moteur avant de 350 W nominaux, batterie de 36 V 8 Ah (288 Wh) pour 30 km annoncés, roues pneumatiques de 10 pouces, frein électrique à l'avant, disque à l'arrière et frein régénératif avec levier dédié. Elle pèse 12,6 kg, n'a pas de suspension et reste bridée à 25 km/h."
+  ],
+  "specs": [
+    [
+      "Moteur",
+      "350 W, avant ; en pointe 400 W selon la présentation Smartgyro, 800 W sur la fiche produit"
+    ],
+    [
+      "Vitesse",
+      "25 km/h"
+    ],
+    [
+      "Autonomie annoncée",
+      "jusqu'à 30 km"
+    ],
+    [
+      "Autonomie constatée",
+      "20 à 22 km (Comprarpatinetelectrico), 20 à 25 km (test vidéo YouTube)"
+    ],
+    [
+      "Batterie",
+      "36 V, 8 Ah, 288 Wh"
+    ],
+    [
+      "Poids",
+      "12,6 kg"
+    ],
+    [
+      "Charge max",
+      "100 kg (selon un test vidéo YouTube)"
+    ],
+    [
+      "Roues",
+      "10 pouces, pneumatiques"
+    ],
+    [
+      "Freins",
+      "Électrique avant + disque arrière + frein régénératif à levier dédié"
+    ],
+    [
+      "Suspension",
+      "Aucune"
+    ],
+    [
+      "Temps de charge",
+      "4 à 5 h"
+    ]
+  ],
+  "pros": [
+    "12,6 kg avec des roues de 10 pouces : facile à monter dans un escalier ou un train (Smartgyro).",
+    "Carte NFC, application et éclairage sous le plateau à ce prix (tests vidéo YouTube).",
+    "Clignotants au guidon et à l'arrière (Smartgyro)."
+  ],
+  "cons": [
+    "Aucune suspension : les vibrations se sentent sur les pavés et les chemins (test vidéo YouTube).",
+    "Moteur avant de 350 W : il ralentit à 6-10 km/h dans les côtes raides (test vidéo YouTube).",
+    "Autonomie constatée de 20 à 25 km.",
+    "Charge maximale de 100 kg."
+  ],
+  "parts": [],
+  "care": [
+    "Sans suspension, ce sont les pneus qui amortissent : garde la pression conseillée sur le flanc, un pneu mou pince la chambre au premier trottoir.",
+    "Un seul frein mécanique, le disque arrière : contrôle les plaquettes et la tension du câble chaque mois.",
+    "Batterie de 8 Ah : recharge-la après chaque usage, une batterie de petite taille vieillit vite si elle reste vide."
+  ],
+  "price": {
+    "text": "Prix relevé en Espagne : 350 € (selon AppleAdictos).",
+    "source": "AppleAdictos (YouTube)"
+  },
+  "faq": [
+    {
+      "q": "Quelle taille de pneu pour la Smartgyro Z-One 2 ?",
+      "a": "Des pneus pneumatiques de 10 pouces. Smartgyro ne précise ni la cote ni le type de montage : lis le flanc de ton pneu avant de commander un pneu ou une chambre à air."
+    },
+    {
+      "q": "Quelle autonomie réelle pour la Z-One 2 ?",
+      "a": "Smartgyro annonce 30 km. Les tests donnent 20 à 25 km en usage courant, selon ton poids et le relief."
+    },
+    {
+      "q": "Combien de temps pour recharger la Z-One 2 ?",
+      "a": "4 à 5 heures, d'après un test vidéo et le manuel de la gamme."
+    },
+    {
+      "q": "La Z-One 2 a-t-elle des freins à disque ?",
+      "a": "Un seul, à l'arrière. À l'avant, c'est le moteur qui freine électriquement, et un levier à part commande le frein régénératif."
+    },
+    {
+      "q": "Quelle différence entre la Z-One 2 et la Z-Pro ?",
+      "a": "La Z-Pro a un moteur plus puissant, une batterie plus grande et une suspension avant et arrière. La Z-One 2 est plus légère mais n'a aucune suspension."
+    },
+    {
+      "q": "La Z-One 2 est-elle autorisée en France ?",
+      "a": "Oui : bridée à 25 km/h dès l'usine, elle reste sous la vitesse maximale fixée en France pour une trottinette électrique. Elle roule hors trottoir et doit être assurée en responsabilité civile."
+    }
+  ],
+  "sources": [
+    {
+      "label": "Smartgyro — Z-One 2",
+      "url": "https://smartgyro.es/distribuidores/single-motor/patinete-electrico-smartgyro-z-one-2-gray-certificado"
+    },
+    {
+      "label": "Smartgyro — présentation de la Z-One 2",
+      "url": "https://smartgyro.es/blog/entradas/ya-esta-aqui-el-smartgyro-z-one-2-"
+    },
+    {
+      "label": "Comprarpatinetelectrico — Smartgyro Z-One 2",
+      "url": "https://comprarpatinetelectrico.es/reviews/smartgyro-z-one-2"
+    },
+    {
+      "label": "YouTube — Smartgyro Z-One 2 (AppleAdictos)",
+      "url": "https://www.youtube.com/watch?v=t9Bgs4nnHsM"
+    },
+    {
+      "label": "YouTube — Smartgyro Z-One 2 (doctorchispas)",
+      "url": "https://www.youtube.com/watch?v=n1nytbI2vlU"
+    }
+  ],
+  "video": {
+    "id": "uou2TdBG7WU",
+    "title": "REVIEW oficial SMARTGYRO Z-ONE 2 | Ligero, compacto y con tecnología CORE INSIDE (NFC y APP).",
+    "channel": "smartGyro",
+    "uploadDate": "2025-07-27"
+  }
+}

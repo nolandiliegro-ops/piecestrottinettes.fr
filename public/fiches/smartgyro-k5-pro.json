@@ -1,0 +1,130 @@
+{
+  "displayName": "Smartgyro K5 Pro",
+  "metaTitle": "Smartgyro K5 Pro : fiche technique et entretien",
+  "metaDescription": "Smartgyro K5 Pro : moteur 900 W (2 000 W en pointe), batterie 48 V 15 Ah, pneus tubeless 10\", deux freins à disque, 26 kg. Fiche, entretien et questions.",
+  "intro": [
+    "La K5 Pro est une trottinette compacte de la série K de Smartgyro, marque espagnole, qui succède à la K2 Pro. Elle existe en deux batteries : cette fiche porte sur la version standard de 15 Ah, pas sur la K5 Pro LR de 20 Ah. Elle a une fourche avant inversée, une carte NFC et des feux RGB.",
+    "Moteur arrière de 900 W nominaux (2 000 W en pointe), batterie de 48 V 15 Ah (720 Wh), pneus tubeless mixtes de 10 pouces et deux freins à disque. Smartgyro annonce 60 km, 26,05 kg sur la balance et 140 kg de charge maximale. Elle est bridée à 25 km/h."
+  ],
+  "specs": [
+    [
+      "Moteur",
+      "900 W (2 000 W en pointe), arrière"
+    ],
+    [
+      "Vitesse",
+      "25 km/h"
+    ],
+    [
+      "Autonomie annoncée",
+      "jusqu'à 60 km"
+    ],
+    [
+      "Autonomie constatée",
+      "environ 40 km (pilote de 67 kg, Cosas de patinetes) à 44 km (StratosTech)"
+    ],
+    [
+      "Batterie",
+      "48 V, 15 Ah, 720 Wh"
+    ],
+    [
+      "Poids",
+      "26,05 kg (masse en ordre de marche déclarée ≤ 25 kg)"
+    ],
+    [
+      "Charge max",
+      "140 kg"
+    ],
+    [
+      "Roues",
+      "10 pouces, tubeless mixtes asphalte/chemin"
+    ],
+    [
+      "Freins",
+      "Disque avant + disque arrière + frein régénératif ; disques de 140 mm selon Cosas de patinetes"
+    ],
+    [
+      "Suspension",
+      "Fourche avant inversée, ressort arrière"
+    ],
+    [
+      "Étanchéité",
+      "IPX4"
+    ],
+    [
+      "Temps de charge",
+      "jusqu'à 10 h selon Smartgyro"
+    ]
+  ],
+  "pros": [
+    "Couple franc au démarrage et en côte pour un monomoteur (StratosTech, Cosas de patinetes).",
+    "Pneus mixtes qui passent de l'asphalte aux chemins de terre (Taller del Patinete).",
+    "140 kg de charge maximale annoncée pour 26 kg de trottinette (Smartgyro)."
+  ],
+  "cons": [
+    "Recharge longue : jusqu'à 10 heures selon Smartgyro.",
+    "Autonomie constatée de 40 à 44 km pour 60 km annoncés.",
+    "26 kg réels : les 25 kg affichés sont la masse déclarée, pas le poids sur la balance.",
+    "Suspension ferme, pas très souple sur les pavés (StratosTech)."
+  ],
+  "parts": [],
+  "care": [
+    "Pneus tubeless : contrôle la pression chaque mois, et plus souvent si tu passes sur des chemins.",
+    "Vérifie l'usure des plaquettes avant et arrière tous les 500 km environ, le moteur de 2 000 W fait travailler les freins.",
+    "Recharge la batterie de 15 Ah sans attendre qu'elle soit vide, de préférence la nuit vu le temps de charge."
+  ],
+  "price": {
+    "text": "Prix public en Espagne : 679 € sur la boutique Smartgyro au moment de la consultation.",
+    "source": "smartgyro.es"
+  },
+  "faq": [
+    {
+      "q": "Quelle taille de pneu pour la Smartgyro K5 Pro ?",
+      "a": "Des pneus tubeless mixtes de 10 pouces. La cote complète n'est pas publiée par Smartgyro : relève-la sur le flanc de ton pneu avant d'en commander un."
+    },
+    {
+      "q": "Quelle autonomie réelle pour la Smartgyro K5 Pro ?",
+      "a": "Smartgyro annonce 60 km. En test, un pilote de 67 kg a fait environ 40 km sur tous types de terrains, et un autre testeur 44 km. Compte 40 km en usage normal."
+    },
+    {
+      "q": "Combien de temps pour recharger la K5 Pro ?",
+      "a": "Jusqu'à 10 heures selon Smartgyro. Une fiche technique d'un revendeur parle de 7 à 8 heures : le temps varie selon le chargeur."
+    },
+    {
+      "q": "Quelle différence entre la K5 Pro et la K5 Pro LR ?",
+      "a": "Même moteur de 900 W et même cadre. La LR a une batterie de 20 Ah et annonce 75 km, la K5 Pro standard a 15 Ah et annonce 60 km."
+    },
+    {
+      "q": "La K5 Pro peut-elle circuler légalement en France ?",
+      "a": "Oui, tant qu'elle reste bridée à 25 km/h comme à la sortie d'usine. La certification DGT dont parle Smartgyro est espagnole ; en France, c'est la règle des 25 km/h et l'assurance obligatoire qui comptent."
+    }
+  ],
+  "sources": [
+    {
+      "label": "Smartgyro — K5 Pro",
+      "url": "https://smartgyro.es/single-motor/patinete-electrico-smartgyro-k5-pro-certificado"
+    },
+    {
+      "label": "Smartgyro — tableau comparatif des modèles",
+      "url": "https://smartgyro.es/content/tabla-comparativa-de-smartgyro"
+    },
+    {
+      "label": "Cosas de patinetes — Smartgyro K5 Pro",
+      "url": "https://cosasdepatinetes.com/smartgyro-k5-pro-patinete-electrico-compacto-y-potente/"
+    },
+    {
+      "label": "360 Scooters — Smartgyro K5 Pro",
+      "url": "https://360scooters.com/es/producto/patinete-electrico-smartgyro-k5-pro/"
+    },
+    {
+      "label": "YouTube — Xiaomi 6 Ultra vs Smartgyro K5 Pro (StratosTech)",
+      "url": "https://www.youtube.com/watch?v=n6mAe5wed1o"
+    }
+  ],
+  "video": {
+    "id": "6Ra-B2z4tmQ",
+    "title": "SMARTGYRO K5 PRO - El patinete eléctrico que me compraría en 2026",
+    "channel": "Cosasdepatinetes",
+    "uploadDate": "2026-06-07"
+  }
+}

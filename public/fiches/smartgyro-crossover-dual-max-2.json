@@ -1,0 +1,112 @@
+{
+ "displayName": "Smartgyro Crossover Dual Max 2",
+ "metaTitle": "Smartgyro Crossover Dual Max 2 : fiche et entretien",
+ "metaDescription": "Smartgyro Crossover Dual Max 2 : 2 moteurs de 500 W (2 800 W en pointe), batterie 48 V 15 Ah, pneus tubeless 10\", deux freins à disque. Fiche et entretien.",
+ "intro": [
+  "La Crossover Dual Max 2 est la trottinette bimoteur de Smartgyro, marque espagnole. Présentée début 2025, elle remplace la première Dual Max avec un nouveau châssis, un nouveau pliage, un écran avec carte NFC et l'application Smartgyro Core. Ne la confonds pas avec la Dual Max 2 LR, qui a une plus grosse batterie.",
+  "Elle a un moteur de 500 W dans chaque roue, soit 1 000 W nominaux et 2 800 W en pointe selon Smartgyro, une batterie de 48 V 15 Ah (720 Wh), des pneus tubeless de 10 pouces et deux freins à disque. Elle pèse 31,4 kg et reste bridée à 25 km/h."
+ ],
+ "specs": [
+  [
+   "Moteurs",
+   "2 × 500 W (1 000 W nominaux), 2 800 W en pointe selon Smartgyro"
+  ],
+  [
+   "Vitesse",
+   "25 km/h"
+  ],
+  [
+   "Autonomie annoncée",
+   "50 km sur la fiche Smartgyro, 60 km dans l'article de lancement de la marque"
+  ],
+  [
+   "Autonomie constatée",
+   "environ 40 km en usage sportif, ville et chemins (test vidéo YouTube)"
+  ],
+  [
+   "Batterie",
+   "48 V, 15 Ah, 720 Wh"
+  ],
+  [
+   "Poids",
+   "31,4 kg selon Smartgyro (30 kg sur le dépliant du distributeur DMI)"
+  ],
+  [
+   "Charge max",
+   "120 kg (selon Smartgyro)"
+  ],
+  [
+   "Roues",
+   "10 pouces, tubeless Dual Grip"
+  ],
+  [
+   "Freins",
+   "Disque avant + disque arrière + frein régénératif"
+  ],
+  [
+   "Suspension",
+   "Avant et arrière, réglables (selon DMI)"
+  ],
+  [
+   "Temps de charge",
+   "jusqu'à 8 h selon Smartgyro, 7 à 8 h selon DMI"
+  ]
+ ],
+ "pros": [
+  "Deux roues motrices : elle garde de la motricité sur la terre et dans les côtes raides (tests vidéo YouTube).",
+  "Double suspension et pneus tubeless de 10 pouces pour les chemins.",
+  "Démarrage par carte NFC et application Smartgyro Core (Smartgyro)."
+ ],
+ "cons": [
+  "31,4 kg : lourde à porter dans un escalier.",
+  "Les deux moteurs vident la batterie plus vite : environ 40 km constatés pour 50 à 60 km annoncés (test vidéo YouTube).",
+  "Un testeur a relevé des freins qui couinent dès les premiers jours (vidéo YouTube).",
+  "Smartgyro publie deux autonomies différentes (50 et 60 km) pour la même batterie."
+ ],
+ "parts": [],
+ "care": [
+  "Avec deux moteurs, la batterie travaille fort : recharge-la après chaque sortie et ne la laisse pas vide plusieurs jours.",
+  "Pneus tubeless : vérifie la pression chaque mois, surtout si tu roules souvent sur les chemins.",
+  "Contrôle le serrage du pliage et des axes de roue après chaque sortie tout-terrain."
+ ],
+ "faq": [
+  {
+   "q": "Quelle taille de pneu pour la Smartgyro Crossover Dual Max 2 ?",
+   "a": "Des pneus tubeless de 10 pouces (Dual Grip selon Smartgyro). La marque ne publie pas la cote complète : lis la dimension gravée sur le flanc de ton pneu avant d'en commander un."
+  },
+  {
+   "q": "Quelle autonomie réelle pour la Crossover Dual Max 2 ?",
+   "a": "Smartgyro annonce 50 km sur sa fiche produit. Un testeur YouTube a fait environ 40 km en moyenne en roulant fort, avec des côtes et des chemins. En mode un seul moteur, tu consommes moins."
+  },
+  {
+   "q": "Combien de temps pour recharger la Crossover Dual Max 2 ?",
+   "a": "Jusqu'à 8 heures selon Smartgyro, 7 à 8 heures selon le dépliant du distributeur DMI."
+  },
+  {
+   "q": "Quelle différence entre la Crossover Dual Max 2 et la Dual Max 2 LR ?",
+   "a": "Même cadre et mêmes moteurs. La LR a une batterie plus grosse (17,5 Ah selon DMI) et annonce environ 70 km. La version standard a 15 Ah. Vérifie l'étiquette de la batterie avant de commander une pièce électrique."
+  },
+  {
+   "q": "La Crossover Dual Max 2 est-elle légale en France ?",
+   "a": "Oui telle qu'elle est livrée : elle est bridée à 25 km/h, la limite des trottinettes électriques en France. Tu roules sur la chaussée ou les pistes cyclables, jamais sur le trottoir, avec une assurance responsabilité civile."
+  }
+ ],
+ "sources": [
+  {
+   "label": "Smartgyro — Crossover Dual Max 2",
+   "url": "https://smartgyro.es/dual-motor/patinete-electrico-smartgyro-crossover-dual-max-2-certificado"
+  },
+  {
+   "label": "Smartgyro — lancement de la Crossover Dual Max 2",
+   "url": "https://smartgyro.es/blog/entradas/nuevo-smartgyro-crossover-dual-max-2-revolucion-core-inside"
+  },
+  {
+   "label": "DMI — dépliant Crossover Dual Max 2",
+   "url": "https://www.dmi.es/pdf/6450/110061/62314096/leaflet.pdf"
+  },
+  {
+   "label": "YouTube — review Crossover Dual 2 Max",
+   "url": "https://www.youtube.com/watch?v=QDX_izQagBk"
+  }
+ ]
+}

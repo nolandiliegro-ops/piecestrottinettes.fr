@@ -1,0 +1,126 @@
+{
+  "displayName": "Smartgyro Raptor EVO",
+  "metaTitle": "Smartgyro Raptor EVO : fiche technique et entretien",
+  "metaDescription": "Smartgyro Raptor EVO : moteur 1 000 W, batterie 48 V 16 Ah, deux freins hydrauliques, pneus tubeless 10\", suspension à élastomères. Fiche et conseils.",
+  "intro": [
+    "La Raptor EVO est la version 2025 de la Raptor, le modèle haut de gamme de Smartgyro, marque espagnole. Cette fiche porte sur la version à un seul moteur, pas sur la Raptor Dual EVO ni sur les versions LR. Elle se distingue par ses freins hydrauliques et ses feux qui courent le long du châssis.",
+    "Moteur arrière de 1 000 W, batterie de 48 V 16 Ah (768 Wh), pneus tubeless Dual Grip de 10 pouces, freins hydrauliques à l'avant et à l'arrière avec frein régénératif, suspension à élastomères. Smartgyro annonce 60 km d'autonomie et une charge maximale de 110 kg. Elle est bridée à 25 km/h."
+  ],
+  "specs": [
+    [
+      "Moteur",
+      "1 000 W nominaux ; 2 000 W en pointe selon Smartgyro et Comprasmartphone, 1 000 W max selon MediaMarkt"
+    ],
+    [
+      "Vitesse",
+      "25 km/h"
+    ],
+    [
+      "Autonomie annoncée",
+      "jusqu'à 60 km"
+    ],
+    [
+      "Autonomie constatée",
+      "environ 45 km au mode le plus puissant, tous terrains (StratosTech)"
+    ],
+    [
+      "Batterie",
+      "48 V, 16 Ah, 768 Wh"
+    ],
+    [
+      "Poids",
+      "22 kg sur la fiche Smartgyro ; 27 kg dans le tableau récapitulatif de la marque"
+    ],
+    [
+      "Charge max",
+      "110 kg (Smartgyro, MediaMarkt)"
+    ],
+    [
+      "Roues",
+      "10 pouces, tubeless Dual Grip"
+    ],
+    [
+      "Freins",
+      "Hydrauliques avant et arrière + frein régénératif"
+    ],
+    [
+      "Suspension",
+      "Élastomères avant et arrière"
+    ],
+    [
+      "Étanchéité",
+      "IPX4"
+    ],
+    [
+      "Temps de charge",
+      "jusqu'à 8 h"
+    ]
+  ],
+  "pros": [
+    "Freins hydrauliques à l'avant et à l'arrière, dosables et puissants (StratosTech).",
+    "Suspension ferme qui amortit bien les chocs (StratosTech).",
+    "Feux et clignotants intégrés tout le long du châssis (Smartgyro)."
+  ],
+  "cons": [
+    "Charge maximale de 110 kg seulement, moins que d'autres Smartgyro.",
+    "Un testeur aurait voulu un peu plus de reprise du moteur (StratosTech).",
+    "Le poids publié varie de 22 à 27 kg selon les documents Smartgyro.",
+    "Puissance de pointe floue : 2 000 W selon Smartgyro, 1 000 W chez MediaMarkt."
+  ],
+  "parts": [],
+  "care": [
+    "Freins hydrauliques : si le levier devient spongieux, fais purger le circuit plutôt que de serrer plus fort.",
+    "Ne touche pas les disques avec les doigts ni avec un produit gras : une plaquette souillée ne freine plus.",
+    "Les élastomères durcissent avec le froid et l'âge : contrôle-les si la trottinette devient sèche sur les bosses."
+  ],
+  "price": {
+    "text": "Prix public en Espagne : 699 € en promotion, 799 € prix barré sur la boutique Smartgyro au moment de la consultation.",
+    "source": "smartgyro.es"
+  },
+  "faq": [
+    {
+      "q": "Quelle taille de pneu pour la Smartgyro Raptor EVO ?",
+      "a": "Des pneus tubeless Dual Grip de 10 pouces. La cote exacte n'apparaît pas sur la fiche Smartgyro : lis-la sur le flanc du pneu monté."
+    },
+    {
+      "q": "Quelle autonomie réelle pour la Raptor EVO ?",
+      "a": "Smartgyro annonce 60 km. Un testeur a fait environ 45 km en restant au mode le plus puissant, à 25 km/h, sur plat, montées et descentes."
+    },
+    {
+      "q": "La Raptor EVO a-t-elle des freins hydrauliques ?",
+      "a": "Oui, à l'avant et à l'arrière, avec en plus un frein régénératif dont tu règles l'intensité dans l'application."
+    },
+    {
+      "q": "Quelle différence entre la Raptor EVO et la Raptor Dual EVO ?",
+      "a": "La Raptor EVO a un seul moteur, à l'arrière. La Dual EVO en a deux, un par roue, pour plus de motricité dans les côtes. Il existe aussi des versions LR à batterie de 20 Ah."
+    },
+    {
+      "q": "La Raptor EVO est-elle autorisée sur la route en France ?",
+      "a": "Oui dans sa configuration d'origine, bridée à 25 km/h, comme toute trottinette électrique en France. Garde-la sur la chaussée ou les pistes cyclables et assure-la en responsabilité civile."
+    }
+  ],
+  "sources": [
+    {
+      "label": "Smartgyro — Raptor EVO",
+      "url": "https://smartgyro.es/distribuidores/single-motor/patinete-electrico-smartgyro-raptor-evo"
+    },
+    {
+      "label": "Comprasmartphone — Smartgyro Raptor EVO",
+      "url": "https://comprasmartphone.com/patinetes-electricos/smartgyro-raptor-evo"
+    },
+    {
+      "label": "MediaMarkt — Smartgyro Raptor EVO",
+      "url": "https://www.mediamarkt.es/es/product/_patinete-electrico-smartgyro-raptor-evo-potencia-nominal-y-maxima-1000w-carga-max-110-kg-16000-mah-25-kmh-azul-1594671.html"
+    },
+    {
+      "label": "Smartgyro — tableau des trottinettes (PDF)",
+      "url": "https://www.smartgyro.es/tablascooters.pdf"
+    }
+  ],
+  "video": {
+    "id": "Kb00jAi-IgY",
+    "title": "¡El PATINETE del FUTURO! - Smartgyro RAPTOR EVO | Review a fondo",
+    "channel": "StratosTech",
+    "uploadDate": "2025-05-16"
+  }
+}

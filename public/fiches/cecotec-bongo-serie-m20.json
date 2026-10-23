@@ -1,0 +1,122 @@
+{
+  "displayName": "Cecotec Bongo Serie M20",
+  "metaTitle": "Cecotec Bongo Serie M20 : fiche technique",
+  "metaDescription": "Cecotec Bongo Serie M20 : 350 W (500 W en pointe), batterie 36 V 5 Ah 180 Wh, 12 kg, roues gonflables 8,5\", disque arrière, IPX4. Fiche et entretien.",
+  "intro": [
+    "La Bongo Serie M20 est la petite sœur de la M30 Connected dans la série M de Cecotec, lancée au printemps 2023. Elle vise les trajets courts en ville avec un poids de 12 kg. À ne pas confondre avec la Bongo D20, de la série D, qui a un moteur de 250 W.",
+    "Moteur de 350 W (500 W en pointe), batterie de 36 V et 5 Ah (180 Wh) pour 20 km annoncés. Elle roule sur des pneus gonflables de 8,5 pouces et freine avec un disque à l'arrière et un E-ABS régénératif à l'avant. Cecotec la donne étanche IPX4 et capable de porter 120 kg."
+  ],
+  "specs": [
+    [
+      "Moteur",
+      "350 W nominaux, 500 W en pointe"
+    ],
+    [
+      "Vitesse",
+      "25 km/h (selon Idealo)"
+    ],
+    [
+      "Autonomie annoncée",
+      "jusqu'à 20 km"
+    ],
+    [
+      "Autonomie estimée",
+      "12 à 15 km en usage réel (selon comprasmartphone.com)"
+    ],
+    [
+      "Batterie",
+      "36 V, 5 Ah, 180 Wh"
+    ],
+    [
+      "Poids",
+      "12 kg"
+    ],
+    [
+      "Charge max",
+      "120 kg"
+    ],
+    [
+      "Roues",
+      "8,5 pouces, gonflables"
+    ],
+    [
+      "Freins",
+      "E-ABS régénératif à l'avant + disque à l'arrière"
+    ],
+    [
+      "Étanchéité",
+      "IPX4"
+    ]
+  ],
+  "pros": [
+    "12 kg, facile à porter et à ranger (Cecotec).",
+    "Charge maximale de 120 kg, plus que la Bongo D20 (Cecotec).",
+    "Double freinage disque arrière et E-ABS avant (Cecotec)."
+  ],
+  "cons": [
+    "Batterie de 180 Wh : 12 à 15 km en vrai selon comprasmartphone.com.",
+    "Pas de suspension mentionnée par Cecotec.",
+    "Temps de charge non publié par Cecotec.",
+    "Peu de tests indépendants publiés sur ce modèle."
+  ],
+  "parts": [],
+  "care": [
+    "Gonfle tes pneus de 8,5 pouces chaque mois : c'est ce qui protège ta jante et ta chambre à air.",
+    "Contrôle l'usure des plaquettes du disque arrière, c'est ton seul frein mécanique.",
+    "IPX4, ça veut dire éclaboussures, pas flaques : évite de rouler sous une grosse pluie."
+  ],
+  "price": {
+    "text": "Prix affichés : 279 € sur la boutique Cecotec Espagne, 289 € sur la boutique Cecotec France. Les prix varient selon les revendeurs.",
+    "source": "cecotec.es, storececotec.fr"
+  },
+  "faq": [
+    {
+      "q": "Quelle autonomie réelle pour la Cecotec Bongo M20 ?",
+      "a": "Cecotec annonce 20 km. Une estimation en usage réel donne plutôt 12 à 15 km, selon ton poids et le mode utilisé."
+    },
+    {
+      "q": "Quelle taille de pneu sur la Bongo Serie M20 ?",
+      "a": "Des pneus gonflables de 8,5 pouces. Lis la cote complète sur le flanc de ton pneu avant de commander une chambre à air."
+    },
+    {
+      "q": "Combien de temps pour recharger la Bongo M20 ?",
+      "a": "Cecotec ne publie pas de temps de charge sur sa fiche, et aucun test ne l'a mesuré. Regarde l'étiquette de ton chargeur ou demande au vendeur avant de compter dessus."
+    },
+    {
+      "q": "Quelle différence entre la Bongo M20 et la M30 Connected ?",
+      "a": "La M30 Connected a une batterie de 7,5 Ah pour 30 km annoncés et une application ; la M20 se contente de 5 Ah et 20 km. Les deux ont des roues de 8,5 pouces."
+    },
+    {
+      "q": "La Bongo M20 respecte-t-elle la loi française ?",
+      "a": "Oui : sans siège et limitée à 25 km/h, c'est un engin de déplacement personnel motorisé. Tu dois avoir 12 ans, rouler sur la chaussée ou la piste cyclable et jamais sur le trottoir."
+    }
+  ],
+  "sources": [
+    {
+      "label": "Cecotec Espagne — Bongo Serie M20",
+      "url": "https://cecotec.es/es/patinetes-electricos/bongo-serie-m20"
+    },
+    {
+      "label": "Cecotec Espagne — Bongo Serie M20 Sense",
+      "url": "https://cecotec.es/es/patinetes-electricos/bongo-serie-m20-sense"
+    },
+    {
+      "label": "Idealo Espagne — Bongo Serie M20",
+      "url": "https://www.idealo.es/precios/202737321/cecotec-bongo-serie-m20.html"
+    },
+    {
+      "label": "PcComponentes — Bongo Serie M20",
+      "url": "https://www.pccomponentes.com/cecotec-bongo-serie-m20-patinete-electrico-85-350w"
+    },
+    {
+      "label": "Comprasmartphone — Bongo Serie M20",
+      "url": "https://comprasmartphone.com/patinetes-electricos/cecotec-bongo-serie-m20"
+    }
+  ],
+  "video": {
+    "id": "n6AMCM9OEwc",
+    "title": "Cecotec BONGO M20 - Patinete eléctrico ECONÓMICO",
+    "channel": "Rafeta Byte",
+    "uploadDate": "2023-06-11"
+  }
+}

@@ -1,0 +1,126 @@
+{
+  "displayName": "Smartgyro Rockway GTS",
+  "metaTitle": "Smartgyro Rockway GTS : fiche technique et entretien",
+  "metaDescription": "Smartgyro Rockway GTS : moteur 1 000 W (2 000 W en pointe), batterie 48 V 20 Ah, 75 km annoncés, pneus tubeless 10\", deux freins à disque. Fiche et entretien.",
+  "intro": [
+    "La Rockway GTS est le haut de gamme monomoteur de la gamme Rockway GT de Smartgyro, marque espagnole, renouvelée pour 2026. Par rapport à la Rockway GT, seuls le moteur et la batterie changent : le cadre, les feux, la suspension et le pliage sont les mêmes.",
+    "Moteur arrière de 1 000 W nominaux (2 000 W en pointe), batterie de 48 V 20 Ah (960 Wh) pour 75 km annoncés, pneus tubeless mixtes de 10 pouces, deux freins à disque et un frein régénératif. Smartgyro indique 28 kg et 120 kg de charge maximale. Elle est bridée à 25 km/h."
+  ],
+  "specs": [
+    [
+      "Moteur",
+      "1 000 W (2 000 W en pointe), arrière"
+    ],
+    [
+      "Vitesse",
+      "25 km/h"
+    ],
+    [
+      "Autonomie annoncée",
+      "jusqu'à 75 km"
+    ],
+    [
+      "Batterie",
+      "48 V, 20 Ah, 960 Wh"
+    ],
+    [
+      "Poids",
+      "28 kg selon Smartgyro (24,5 kg chez 360 Scooters, 30 kg sur Idealo)"
+    ],
+    [
+      "Charge max",
+      "120 kg (tableau comparatif Smartgyro)"
+    ],
+    [
+      "Roues",
+      "10 pouces, tubeless mixtes"
+    ],
+    [
+      "Freins",
+      "Disque avant + disque arrière + frein régénératif"
+    ],
+    [
+      "Suspension",
+      "Ressorts avant et arrière"
+    ],
+    [
+      "Étanchéité",
+      "IPX4"
+    ],
+    [
+      "Temps de charge",
+      "jusqu'à 10 h"
+    ]
+  ],
+  "pros": [
+    "La plus grosse batterie de la gamme Rockway GT : 960 Wh pour 75 km annoncés (Smartgyro).",
+    "Démarrages plus vifs que la Rockway GT grâce aux 2 000 W de pointe (StratosTech).",
+    "Hormis le moteur et la batterie, tout est identique à la Rockway GT : cadre, feux, suspension, application (StratosTech)."
+  ],
+  "cons": [
+    "En côte, elle n'est pas plus rapide que la Rockway GT (StratosTech).",
+    "Recharge longue : jusqu'à 10 heures.",
+    "28 kg selon Smartgyro, à prendre en compte si tu dois la porter.",
+    "Aucune autonomie mesurée en test publiée à ce jour : les 75 km sont une annonce."
+  ],
+  "parts": [],
+  "care": [
+    "Une batterie de 20 Ah aime les charges partielles : branche-la le soir sans attendre qu'elle soit à plat.",
+    "Pneus tubeless : vérifie la pression chaque mois, un pneu sous-gonflé te coûte des kilomètres.",
+    "Contrôle l'usure des plaquettes : avec 28 kg et un moteur de 2 000 W en pointe, les freins chauffent vite en descente."
+  ],
+  "price": {
+    "text": "Prix relevé en Espagne : 779 € chez le revendeur 360 Scooters ; la page Smartgyro consultée n'affichait pas de prix.",
+    "source": "360scooters.com"
+  },
+  "faq": [
+    {
+      "q": "Quelle taille de pneu pour la Smartgyro Rockway GTS ?",
+      "a": "Des pneus tubeless mixtes de 10 pouces, comme toute la gamme Rockway GT. La cote complète n'est pas publiée : lis-la sur le flanc de ton pneu."
+    },
+    {
+      "q": "Quelle autonomie pour la Rockway GTS ?",
+      "a": "Smartgyro annonce 75 km, mesurés à 75 kg sur terrain plat. Aucun test publié ne donne encore de mesure : compte nettement moins si tu roules au mode le plus puissant."
+    },
+    {
+      "q": "Combien de temps pour recharger la Rockway GTS ?",
+      "a": "Jusqu'à 10 heures selon Smartgyro, le prix d'une batterie de 20 Ah."
+    },
+    {
+      "q": "Quelle différence entre la Rockway GTS et la Rockway GT ?",
+      "a": "La GTS a un moteur de 1 000 W (2 000 W en pointe) et une batterie de 20 Ah pour 75 km. La GT a 800 W (1 800 W en pointe) et 15 Ah pour 60 km. Le reste est identique."
+    },
+    {
+      "q": "La Rockway GTS respecte-t-elle la loi française ?",
+      "a": "Oui telle qu'elle est vendue : sa vitesse est limitée à 25 km/h, comme l'exige la réglementation française des trottinettes électriques. N'oublie pas l'assurance responsabilité civile."
+    }
+  ],
+  "sources": [
+    {
+      "label": "Smartgyro — Rockway GTS",
+      "url": "https://smartgyro.es/distribuidores/single-motor/patinete-electrico-smartgyro-rockway-gts"
+    },
+    {
+      "label": "Smartgyro — tableau comparatif des modèles",
+      "url": "https://smartgyro.es/content/tabla-comparativa-de-smartgyro"
+    },
+    {
+      "label": "360 Scooters — boutique Smartgyro",
+      "url": "https://360scooters.com/es/smartgyro-store/"
+    },
+    {
+      "label": "Idealo — Smartgyro Rockway GTS",
+      "url": "https://www.idealo.es/precios/210698478/smartgyro-rockway-gts-eu.html"
+    },
+    {
+      "label": "YouTube — review officielle Rockway GT/GTS (smartGyro)",
+      "url": "https://www.youtube.com/watch?v=X_tkpLG62qs"
+    }
+  ],
+  "video": {
+    "id": "ZcKNMs7YXXI",
+    "title": "EL MÁS DEPORTIVO | smartGyro Rockway GTS (2026) Pruebas extremas",
+    "channel": "StratosTech",
+    "uploadDate": "2026-03-14"
+  }
+}

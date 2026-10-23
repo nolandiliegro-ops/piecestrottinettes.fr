@@ -1,0 +1,130 @@
+{
+  "displayName": "Smartgyro K1",
+  "metaTitle": "Smartgyro K1 : fiche technique et pièces",
+  "metaDescription": "Smartgyro K1 : moteur 500 W (1 300 W en pointe), batterie 36 V 13 Ah, roues de 10 pouces, freins à disque, 21 kg. Fiche technique, entretien et questions.",
+  "intro": [
+    "La K1 est la trottinette urbaine d'entrée de gamme de la série K de Smartgyro, marque espagnole. Annoncée en janvier 2025, elle vise les trajets quotidiens : un poids d'environ 20 kg, une double suspension et l'application Smartgyro Core pour le régulateur de vitesse et le verrouillage.",
+    "Moteur arrière de 500 W nominaux (1 300 W en pointe), batterie de 36 V 13 Ah (environ 468 Wh), roues pneumatiques de 10 pouces et freinage par disques avec frein régénératif. Smartgyro annonce 50 km d'autonomie et la livre bridée à 25 km/h. Smartgyro l'affiche à 459 € sur son site espagnol."
+  ],
+  "specs": [
+    [
+      "Moteur",
+      "500 W (1 300 W en pointe), arrière"
+    ],
+    [
+      "Vitesse",
+      "25 km/h"
+    ],
+    [
+      "Autonomie annoncée",
+      "50 km sur la fiche Smartgyro (55 km dans un article de la marque)"
+    ],
+    [
+      "Autonomie constatée",
+      "33 km au mode le plus puissant (pilote de 60 kg), environ 40 km en mode Sport (tests vidéo YouTube)"
+    ],
+    [
+      "Batterie",
+      "36 V, 13 Ah, environ 468 Wh"
+    ],
+    [
+      "Poids",
+      "21 kg sur la fiche Smartgyro, 20 kg dans l'article de lancement"
+    ],
+    [
+      "Charge max",
+      "120 kg"
+    ],
+    [
+      "Roues",
+      "10 pouces, pneumatiques"
+    ],
+    [
+      "Freins",
+      "Disque avant + disque arrière + frein régénératif (fiche Smartgyro)"
+    ],
+    [
+      "Suspension",
+      "Avant à élastomère, arrière à ressort (selon Comprasmartphone)"
+    ],
+    [
+      "Étanchéité",
+      "IPX4"
+    ],
+    [
+      "Temps de charge",
+      "jusqu'à 6 h (selon Smartgyro)"
+    ]
+  ],
+  "pros": [
+    "Environ 20 kg avec double suspension : rare à ce poids (tests vidéo YouTube).",
+    "Moteur de 1 300 W en pointe qui tient les côtes de ville (StratosTech).",
+    "Application avec régulateur de vitesse, réglage du frein régénératif et verrouillage (Smartgyro)."
+  ],
+  "cons": [
+    "Batterie de 36 V : autonomie réelle de 33 à 40 km selon les tests, loin des 50 km annoncés.",
+    "Suspension pensée pour l'asphalte, pas pour les chemins (test vidéo YouTube).",
+    "Smartgyro décrit le freinage de deux façons : disque avant et arrière sur la fiche, frein électrique avant dans l'article de lancement.",
+    "Freins à commande mécanique, pas hydrauliques (Taller del Patinete)."
+  ],
+  "parts": [],
+  "care": [
+    "Freins mécaniques : retends le câble dès que la course du levier s'allonge, et change les plaquettes avant qu'elles touchent le métal.",
+    "Roues pneumatiques : vérifie la pression chaque mois, un pneu mou use la batterie et crève plus vite.",
+    "L'élastomère avant se tasse avec le temps : s'il ne filtre plus les chocs, fais-le contrôler."
+  ],
+  "price": {
+    "text": "Prix public en Espagne : 459 € sur la boutique Smartgyro.",
+    "source": "smartgyro.es"
+  },
+  "faq": [
+    {
+      "q": "Quelle taille de pneu pour la Smartgyro K1 ?",
+      "a": "Des pneus pneumatiques de 10 pouces. Smartgyro ne publie pas la cote complète : lis-la sur le flanc de ton pneu avant de commander un pneu ou une chambre à air."
+    },
+    {
+      "q": "Quelle autonomie réelle pour la Smartgyro K1 ?",
+      "a": "Smartgyro annonce 50 km. En test, un pilote de 60 kg a fait 33 km au mode le plus puissant, et un autre testeur parle d'environ 40 km en mode Sport. En Eco, tu te rapproches du chiffre annoncé."
+    },
+    {
+      "q": "Combien de temps pour recharger la Smartgyro K1 ?",
+      "a": "Jusqu'à 6 heures selon la fiche Smartgyro."
+    },
+    {
+      "q": "La Smartgyro K1 a-t-elle des freins à disque ?",
+      "a": "Oui. La fiche Smartgyro annonce un disque à l'avant, un disque à l'arrière et un frein régénératif. Les étriers sont à câble, pas hydrauliques."
+    },
+    {
+      "q": "Peut-on rouler en Smartgyro K1 en France ?",
+      "a": "Oui : elle est vendue bridée à 25 km/h, la vitesse maximale autorisée pour une trottinette électrique en France. Pas de trottoir, et une assurance responsabilité civile est obligatoire."
+    }
+  ],
+  "sources": [
+    {
+      "label": "Smartgyro — K1",
+      "url": "https://smartgyro.es/urbanos-y-ligeros/patinete-electrico-smartgyro-k1"
+    },
+    {
+      "label": "Smartgyro — lancement de la K1",
+      "url": "https://smartgyro.es/blog/entradas/nuevo-smartgyro-k1"
+    },
+    {
+      "label": "360 Scooters — Smartgyro K1",
+      "url": "https://360scooters.com/es/producto/patinete-electrico-smartgyro-k1/"
+    },
+    {
+      "label": "Comprasmartphone — Smartgyro K1",
+      "url": "https://comprasmartphone.com/patinetes-electricos/smartgyro-k1"
+    },
+    {
+      "label": "YouTube — smartGyro K1, analyse en profondeur",
+      "url": "https://www.youtube.com/watch?v=yekPPHrN5C4"
+    }
+  ],
+  "video": {
+    "id": "cP-qW4JIuQc",
+    "title": "El MEJOR patinete COMPACTO | smartGyro K1 - Pruebas EXTREMAS",
+    "channel": "StratosTech",
+    "uploadDate": "2026-02-20"
+  }
+}

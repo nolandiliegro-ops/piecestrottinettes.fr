@@ -1,0 +1,144 @@
+{
+  "displayName": "Smartgyro Speedway",
+  "metaTitle": "Smartgyro Speedway : fiche technique et pièces",
+  "metaDescription": "Smartgyro Speedway : moteur 500 W (800 W en pointe), batterie 48 V 13 Ah, pneus tubeless 10\", deux freins à disque, double suspension. Fiche et pièces.",
+  "intro": [
+    "La Speedway est un classique de Smartgyro, marque espagnole, vendue depuis 2020 en plusieurs versions (V2.0, puis Speedway Certificado). Cette fiche suit la version actuelle. À ne pas confondre avec la Speedway Pro, plus puissante, qui a sa propre fiche.",
+    "Moteur de 500 W nominaux (800 W en pointe), batterie de 48 V 13 Ah (624 Wh) pour 50 km annoncés, pneus tubeless de 10 pouces, double suspension et deux freins à disque avec frein régénératif. Elle pèse environ 23 kg et se plie aussi au guidon. Elle est bridée à 25 km/h."
+  ],
+  "specs": [
+    [
+      "Moteur",
+      "500 W (800 W en pointe)"
+    ],
+    [
+      "Vitesse",
+      "25 km/h"
+    ],
+    [
+      "Autonomie annoncée",
+      "50 km (45 km pour l'ancienne V2.0)"
+    ],
+    [
+      "Autonomie constatée",
+      "34 km au mode intermédiaire, 31,9 km au mode le plus rapide (test vidéo YouTube)"
+    ],
+    [
+      "Batterie",
+      "48 V, 13 Ah, 624 Wh"
+    ],
+    [
+      "Poids",
+      "23 kg selon Smartgyro, 23,35 kg sur la fiche produit diffusée"
+    ],
+    [
+      "Charge max",
+      "120 kg"
+    ],
+    [
+      "Roues",
+      "10 pouces, tubeless Dual Grip"
+    ],
+    [
+      "Freins",
+      "Disque avant + disque arrière + frein régénératif"
+    ],
+    [
+      "Suspension",
+      "Avant et arrière"
+    ],
+    [
+      "Étanchéité",
+      "IPX4"
+    ],
+    [
+      "Temps de charge",
+      "jusqu'à 7 h"
+    ]
+  ],
+  "pros": [
+    "Garde presque sa vitesse maximale en côte et face au vent grâce aux 800 W de pointe (test vidéo YouTube).",
+    "Guidon et potence repliables : elle tient dans un coffre (Smartgyro).",
+    "Un modèle vendu depuis 2020 : les pièces d'usure sont faciles à trouver."
+  ],
+  "cons": [
+    "Plus grande et plus lourde qu'une trottinette urbaine classique (StratosTech).",
+    "Autonomie constatée de 32 à 34 km pour 50 km annoncés (test vidéo YouTube).",
+    "Plusieurs générations sous le même nom : les pneus et la batterie ont changé selon les années."
+  ],
+  "parts": [
+    {
+      "label": "Disque de frein",
+      "size": "140 mm, 6 trous, entraxe 44 mm",
+      "count": 3,
+      "to": "/piece/disque-de-frein-r6-140mm-entraxe-44mm-3-couleurs-bleu",
+      "cta": "Disques 140 mm"
+    },
+    {
+      "label": "Chargeur",
+      "size": "48 V → 54,6 V, prise GX16-3",
+      "count": 2,
+      "to": "/piece/chargeur-48v-546v-2a-connecteur-gx16-3p",
+      "cta": "Chargeurs 48 V"
+    }
+  ],
+  "care": [
+    "Vérifie l'usure des plaquettes avant et arrière tous les 500 km : deux disques, c'est deux paires de plaquettes à suivre.",
+    "Pneus tubeless : contrôle la pression chaque mois, la Speedway est lourde et use vite un pneu mou.",
+    "Graisse et resserre la charnière du guidon repliable quand elle prend du jeu."
+  ],
+  "price": {
+    "text": "Prix public en Espagne : 699 € sur la boutique Smartgyro ; 649 € de prix conseillé dans le catalogue 2025 de la marque.",
+    "source": "smartgyro.es"
+  },
+  "faq": [
+    {
+      "q": "Quelle taille de pneu pour la Smartgyro Speedway ?",
+      "a": "Smartgyro indique seulement des pneus tubeless de 10 pouces, et la dimension a varié selon les générations. Lis la cote gravée sur le flanc de ton pneu avant d'en commander un."
+    },
+    {
+      "q": "Quelle autonomie réelle pour la Smartgyro Speedway ?",
+      "a": "Smartgyro annonce 50 km. Un testeur a fait 34 km au mode intermédiaire et 31,9 km au mode le plus rapide, éclairage allumé."
+    },
+    {
+      "q": "Quel chargeur pour la Smartgyro Speedway ?",
+      "a": "Un chargeur 48 V qui sort 54,6 V en fin de charge. Vérifie la prise de ta trottinette avant de commander."
+    },
+    {
+      "q": "Quelle différence entre la Speedway et la Speedway Pro ?",
+      "a": "La Speedway a 500 W (800 W en pointe) et une batterie de 13 Ah. La Speedway Pro monte 800 W et 15 Ah, pour 60 km annoncés. Le nom est sur la plaque du châssis."
+    },
+    {
+      "q": "La Speedway est-elle légale sur la voie publique en France ?",
+      "a": "Oui, bridée à 25 km/h comme elle sort d'usine. La retirer de ce bridage est interdit sur la voie publique. Ajoute une assurance responsabilité civile et reste hors des trottoirs."
+    }
+  ],
+  "sources": [
+    {
+      "label": "Smartgyro — Speedway",
+      "url": "https://smartgyro.es/single-motor/patinete-electrico-smartgyro-speedway-certificado"
+    },
+    {
+      "label": "Smartgyro — Speedway reconditionnée",
+      "url": "https://smartgyro.es/reacondicionados/patinete-electrico-smartgyro-speedway-certificado-seminuevo"
+    },
+    {
+      "label": "Smartgyro — catalogue 2025 (PDF)",
+      "url": "https://smartgyro.es/img/cms/10%20aniversario/ROADMAP_SMARTGYRO%202025__compressed.pdf"
+    },
+    {
+      "label": "Tienda Zona Móvil — Smartgyro Speedway",
+      "url": "https://tiendazonamovil.es/producto/smartgyro-speedway/"
+    },
+    {
+      "label": "YouTube — Smartgyro Speedway, avis et review",
+      "url": "https://www.youtube.com/watch?v=3EgxiYF0p1g"
+    }
+  ],
+  "video": {
+    "id": "Gia8YIHwpP0",
+    "title": "REVIEW OFICIAL Smartgyro SPEEDWAY | El gran clásico. Estructura plegable, potencia y autonomía.",
+    "channel": "smartGyro",
+    "uploadDate": "2025-06-17"
+  }
+}

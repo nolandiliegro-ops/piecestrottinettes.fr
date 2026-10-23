@@ -1,0 +1,119 @@
+{
+ "displayName": "Smartgyro Rockway GL",
+ "metaTitle": "Smartgyro Rockway GL : fiche technique et entretien",
+ "metaDescription": "Smartgyro Rockway GL : moteur 600 W (1 600 W en pointe), batterie 48 V 13 Ah, pneus tubeless 10\", deux freins à disque, 24,5 kg. Fiche et entretien.",
+ "intro": [
+  "La Rockway GL est le modèle le moins cher de la gamme Rockway GT de Smartgyro, marque espagnole, renouvelée pour 2026. Elle se place sous la Rockway GT et la Rockway GTS, avec le même style : feux « Snake » sur le guidon, pliage à double verrouillage, écran et carte NFC.",
+  "La vidéo officielle et plusieurs revendeurs donnent un moteur de 600 W (1 600 W en pointe), une batterie de 48 V 13 Ah et 45 km d'autonomie. Attention, la page produit Smartgyro affiche aussi des chiffres de Rockway GT (800 W, 15 Ah, 60 km). Elle pèse 24,5 kg, roule sur des pneus tubeless de 10 pouces et freine par deux disques."
+ ],
+ "specs": [
+  [
+   "Moteur",
+   "600 W (1 600 W en pointe) selon la vidéo officielle et les revendeurs ; la page Smartgyro affiche aussi 800 W (1 800 W)"
+  ],
+  [
+   "Vitesse",
+   "25 km/h"
+  ],
+  [
+   "Autonomie annoncée",
+   "45 km (60 km dans un bloc de la page Smartgyro, valeur de la Rockway GT)"
+  ],
+  [
+   "Batterie",
+   "48 V, 13 Ah, 624 Wh (15 Ah dans un bloc de la page Smartgyro)"
+  ],
+  [
+   "Poids",
+   "24,5 kg"
+  ],
+  [
+   "Charge max",
+   "120 kg (selon Comprasmartphone)"
+  ],
+  [
+   "Roues",
+   "10 pouces, tubeless mixtes"
+  ],
+  [
+   "Freins",
+   "Disque avant + disque arrière + frein régénératif"
+  ],
+  [
+   "Suspension",
+   "Avant et arrière : à ressort selon la page Smartgyro, à élastomères selon la vidéo officielle"
+  ],
+  [
+   "Étanchéité",
+   "IPX4"
+  ],
+  [
+   "Temps de charge",
+   "jusqu'à 8 h"
+  ]
+ ],
+ "pros": [
+  "Le prix d'entrée de la gamme Rockway GT, avec le même cadre et les mêmes feux (Smartgyro).",
+  "Masse déclarée sous 25 kg, avec double suspension et pneus tubeless (Smartgyro).",
+  "Deux freins à disque et un frein régénératif."
+ ],
+ "cons": [
+  "La page produit Smartgyro mélange deux fiches techniques : vérifie l'étiquette de ta batterie avant d'acheter une pièce électrique.",
+  "Aucune autonomie mesurée en test publiée à ce jour : les 45 km sont une annonce.",
+  "Batterie de 13 Ah, plus petite que celle de la Rockway GT (15 Ah)."
+ ],
+ "parts": [],
+ "care": [
+  "Avant de commander un chargeur ou une batterie, lis l'étiquette sous le plateau : la fiche officielle ne permet pas de trancher entre 13 et 15 Ah.",
+  "Pneus tubeless : contrôle la pression chaque mois, c'est le premier réglage qui joue sur l'autonomie.",
+  "Vérifie le serrage du pliage et le jeu de la potence régulièrement, même avec le double verrouillage."
+ ],
+ "price": {
+  "text": "Prix public en Espagne : 599 € annoncé par Smartgyro dans sa présentation du modèle.",
+  "source": "smartgyro.es"
+ },
+ "faq": [
+  {
+   "q": "Quelle taille de pneu pour la Smartgyro Rockway GL ?",
+   "a": "Des pneus tubeless mixtes de 10 pouces. La cote complète n'est pas publiée : lis-la sur le flanc de ton pneu avant d'en commander un."
+  },
+  {
+   "q": "Quelle autonomie pour la Rockway GL ?",
+   "a": "45 km annoncés avec la batterie de 13 Ah, selon la vidéo officielle et les revendeurs. Aucun test publié ne donne encore une autonomie mesurée."
+  },
+  {
+   "q": "Combien de temps pour recharger la Rockway GL ?",
+   "a": "Jusqu'à 8 heures selon Smartgyro."
+  },
+  {
+   "q": "Quelle différence entre la Rockway GL, la GT et la GTS ?",
+   "a": "Même cadre. La GL a 600 W et 13 Ah (45 km annoncés), la GT 800 W et 15 Ah (60 km), la GTS 1 000 W et 20 Ah (75 km). Le nom exact est sur la plaque du châssis."
+  },
+  {
+   "q": "Ai-je le droit de rouler en Rockway GL en France ?",
+   "a": "Oui : livrée bridée à 25 km/h, elle respecte la limite française des trottinettes électriques. Interdite sur le trottoir, elle doit être assurée en responsabilité civile."
+  }
+ ],
+ "sources": [
+  {
+   "label": "Smartgyro — Rockway GL",
+   "url": "https://smartgyro.es/single-motor/patinete-electrico-smartgyro-rockway-gl"
+  },
+  {
+   "label": "Smartgyro — présentation de la Rockway GL",
+   "url": "https://smartgyro.es/blog/entradas/asi-es-el-smartgyro-rockway-gl-el-patinete-con-el-mejor-precio-de-toda-la-gama-gt"
+  },
+  {
+   "label": "Tienda Zona Móvil — Smartgyro Rockway GL",
+   "url": "https://tiendazonamovil.es/producto/smartgyro-rockway-gl/"
+  },
+  {
+   "label": "Onuba Mobility — Smartgyro Rockway GL",
+   "url": "https://onubamobility.com/product/dgt-smartgyro-rockway-gl/"
+  },
+  {
+   "label": "YouTube — review Smartgyro Rockway GL",
+   "url": "https://www.youtube.com/watch?v=IP7HIjnNOus"
+  }
+ ]
+}

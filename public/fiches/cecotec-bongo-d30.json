@@ -1,0 +1,119 @@
+{
+  "displayName": "Cecotec Bongo D30",
+  "metaTitle": "Cecotec Bongo D30 : fiche technique et autonomie",
+  "metaDescription": "Cecotec Bongo Serie D30 : 350 W, batterie 36 V 7,5 Ah 270 Wh, 30 km annoncés (22 km mesurés), roues gonflables 8,5\", disque arrière. Fiche et entretien.",
+  "intro": [
+    "La Bongo Serie D30 est le modèle du milieu de la série D de Cecotec, entre la D20 et la D40. Elle garde les roues de 8,5 pouces : la version à roues de 10 pouces s'appelle D30 XL Connected et a sa propre fiche. Une variante Mobile ajoute un support de téléphone sur le guidon.",
+    "Moteur avant de 350 W, batterie de 36 V et 7,5 Ah (270 Wh) pour 30 km annoncés, vitesse limitée à 25 km/h. Freinage par moteur électrique à l'avant et disque à l'arrière, sans suspension. En test vidéo en mode Sport, elle a parcouru environ 22 km, et 27 à 28 km en mode Confort à 20 km/h."
+  ],
+  "specs": [
+    [
+      "Moteur",
+      "350 W nominaux ; en pointe 650 W selon Cecotec, 700 W selon Idealo et certains revendeurs"
+    ],
+    [
+      "Vitesse",
+      "25 km/h"
+    ],
+    [
+      "Autonomie annoncée",
+      "jusqu'à 30 km (mesure Cecotec à 15 km/h, terrain plat, 75 kg)"
+    ],
+    [
+      "Autonomie mesurée",
+      "environ 22 km en mode Sport, 27 à 28 km en mode 20 km/h (test vidéo YouTube)"
+    ],
+    [
+      "Batterie",
+      "36 V, 7,5 Ah, 270 Wh"
+    ],
+    [
+      "Poids",
+      "15 kg selon Cecotec, 14,8 kg chez certains revendeurs"
+    ],
+    [
+      "Roues",
+      "8,5 pouces, gonflables"
+    ],
+    [
+      "Freins",
+      "Électrique à l'avant + disque à l'arrière"
+    ],
+    [
+      "Suspension",
+      "Aucune"
+    ],
+    [
+      "Temps de charge",
+      "5 à 6 h (selon le manuel)"
+    ]
+  ],
+  "pros": [
+    "Autonomie réelle correcte : environ 22 km en mode Sport (test vidéo YouTube).",
+    "Pas de perte de puissance quand la batterie baisse, selon un testeur sur YouTube.",
+    "Moteur jugé vif pour le prix, à l'aise dans les côtes urbaines (test vidéo YouTube).",
+    "Frein à disque arrière en complément du frein moteur avant."
+  ],
+  "cons": [
+    "Pas de suspension : les 8,5 pouces encaissent seuls les chocs.",
+    "Recharge de 5 à 6 heures selon le manuel.",
+    "Puissance de pointe annoncée différemment selon les fiches (650 ou 700 W).",
+    "Petites roues moins à l'aise sur les chemins que celles de la D30 XL."
+  ],
+  "parts": [],
+  "care": [
+    "Garde tes pneus de 8,5 pouces bien gonflés : sous-gonflés, ils pincent la chambre à air au premier trottoir.",
+    "Vérifie que le disque arrière est droit et que l'étrier ne frotte pas quand tu fais tourner la roue à la main.",
+    "Stocke la trottinette à l'intérieur l'hiver : une batterie au froid perd de l'autonomie et vieillit plus vite."
+  ],
+  "price": {
+    "text": "Prix affiché par la boutique Cecotec Espagne : 269 € TTC. Les testeurs l'achetaient autour de 279 à 300 € à sa sortie en 2023.",
+    "source": "cecotec.es, YouTube"
+  },
+  "faq": [
+    {
+      "q": "Quelle est l'autonomie réelle de la Cecotec Bongo D30 ?",
+      "a": "Environ 22 km en mode Sport et 27 à 28 km en mode Confort limité à 20 km/h, d'après un test vidéo. Cecotec annonce 30 km à 15 km/h."
+    },
+    {
+      "q": "Quelle taille de pneu pour la Bongo D30 ?",
+      "a": "Des pneus gonflables de 8,5 pouces. La cote complète n'est pas publiée par Cecotec : regarde le flanc de ton pneu avant d'acheter une chambre à air."
+    },
+    {
+      "q": "Combien de temps pour charger la Bongo D30 ?",
+      "a": "5 à 6 heures pour une charge complète, selon le manuel du modèle."
+    },
+    {
+      "q": "Quelle différence entre la Bongo D30 et la D30 XL Connected ?",
+      "a": "La D30 XL Connected garde la même batterie de 270 Wh mais passe à des roues de 10 pouces et ajoute une application. La D30 standard roule en 8,5 pouces et pèse un peu moins."
+    },
+    {
+      "q": "Peut-on rouler en Bongo D30 en France ?",
+      "a": "Oui : elle plafonne à 25 km/h, la limite des trottinettes électriques en France. Tu roules sur les pistes cyclables, jamais sur le trottoir, et il faut avoir 12 ans."
+    }
+  ],
+  "sources": [
+    {
+      "label": "Cecotec Espagne — Bongo D30",
+      "url": "https://cecotec.es/es/patinetes-electricos/bongo-d30"
+    },
+    {
+      "label": "Idealo Espagne — Cecotec Bongo D30",
+      "url": "https://www.idealo.es/precios/203188595/cecotec-bongo-d30.html"
+    },
+    {
+      "label": "Manuel Bongo D30 (Scribd)",
+      "url": "https://www.scribd.com/document/772073263/bongo-d30-user-manual"
+    },
+    {
+      "label": "YouTube — Bongo D30, review et autonomie",
+      "url": "https://www.youtube.com/watch?v=mUaBdaJUwK0"
+    }
+  ],
+  "video": {
+    "id": "koAKx9Fm8Eg",
+    "title": "CECOTEC BONGO D30 – Bonne surprise ou grosse déception ? #cecotec #ride #escooter",
+    "channel": "TomRider78",
+    "uploadDate": "2025-06-21"
+  }
+}

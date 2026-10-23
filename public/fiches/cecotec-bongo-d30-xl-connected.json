@@ -1,0 +1,126 @@
+{
+  "displayName": "Cecotec Bongo D30 XL Connected",
+  "metaTitle": "Cecotec Bongo D30 XL Connected : fiche et pièces",
+  "metaDescription": "Cecotec Bongo D30 XL Connected : 350 W (700 W en pointe), batterie 36 V 7,5 Ah 270 Wh, roues gonflables 10\", disque arrière, 25 km/h. Fiche et entretien.",
+  "intro": [
+    "La Bongo D30 XL Connected est la version à grandes roues de la Bongo D30 de Cecotec. Elle passe aux pneus gonflables de 10 pouces et ajoute un écran connecté à une application. Elle se place entre la D20 XL Connected (plus petite batterie) et la D40 XL (plus d'autonomie).",
+    "Moteur de 350 W (700 W en pointe), batterie de 36 V et 7,5 Ah (270 Wh) pour 30 km annoncés, vitesse limitée à 25 km/h. Le freinage associe un frein électrique à l'avant et un disque à l'arrière. Cecotec France l'affiche à 259 €, hors écotaxe."
+  ],
+  "specs": [
+    [
+      "Moteur",
+      "350 W nominaux, 700 W en pointe"
+    ],
+    [
+      "Vitesse",
+      "25 km/h"
+    ],
+    [
+      "Autonomie annoncée",
+      "jusqu'à 30 km (mesure Cecotec à 15 km/h, terrain plat, 75 kg)"
+    ],
+    [
+      "Batterie",
+      "36 V, 7,5 Ah, 270 Wh"
+    ],
+    [
+      "Poids",
+      "16,5 kg selon Cecotec, 16,9 kg selon fichas.escotr.com"
+    ],
+    [
+      "Charge max",
+      "120 kg selon Cecotec Espagne, 100 kg selon fichas.escotr.com"
+    ],
+    [
+      "Roues",
+      "10 pouces, gonflables"
+    ],
+    [
+      "Freins",
+      "Électrique à l'avant + disque à l'arrière"
+    ],
+    [
+      "Étanchéité",
+      "IPX4 (selon fichas.escotr.com)"
+    ],
+    [
+      "Temps de charge",
+      "5 à 6 h selon la notice Cecotec, 4 à 5 h selon une présentation vidéo YouTube"
+    ],
+    [
+      "Connectivité",
+      "Écran Bluetooth et application"
+    ]
+  ],
+  "pros": [
+    "Les roues de 10 pouces gardent la trottinette stable sur une route abîmée (YOTECH, YouTube).",
+    "Freinage puissant, jugé « très fort » en test (YOTECH, YouTube).",
+    "Plateau antidérapant et position de conduite confortable (YOTECH, YouTube)."
+  ],
+  "cons": [
+    "Aucune autonomie mesurée en test indépendant : les 30 km sont une annonce de Cecotec.",
+    "Pas de suspension annoncée : seuls les pneus filtrent les chocs.",
+    "Poids et charge maximale différents selon les fiches.",
+    "Plus lourde et plus encombrante que la D30 standard."
+  ],
+  "parts": [],
+  "care": [
+    "Les 10 pouces gonflables sont ton seul amorti : contrôle la pression toutes les deux semaines.",
+    "Le freinage est mordant : vérifie la tension du câble du disque arrière et l'usure des plaquettes régulièrement.",
+    "Recharge à température ambiante et débranche une fois pleine, la batterie de 270 Wh n'aime pas rester branchée des jours."
+  ],
+  "price": {
+    "text": "Prix affiché par la boutique Cecotec France : 259 €, hors écotaxe. En Espagne, Idealo relève des offres à partir de 279 €.",
+    "source": "storececotec.fr, idealo.es"
+  },
+  "faq": [
+    {
+      "q": "Quelle taille de pneu pour la Cecotec Bongo D30 XL Connected ?",
+      "a": "Des pneus gonflables de 10 pouces à l'avant et à l'arrière. Cecotec ne publie pas la largeur : lis la cote sur le flanc de ton pneu avant de commander."
+    },
+    {
+      "q": "Quelle autonomie pour la D30 XL Connected ?",
+      "a": "Cecotec annonce 30 km, mesurés à 15 km/h avec 75 kg. Aucun test indépendant n'a publié de mesure ; en mode Sport ou avec un pilote plus lourd, compte moins."
+    },
+    {
+      "q": "Combien de temps pour recharger la D30 XL Connected ?",
+      "a": "5 à 6 heures selon la notice Cecotec du modèle. Une présentation vidéo parle de 4 à 5 heures : prévois une nuit pour être tranquille."
+    },
+    {
+      "q": "Quels freins sur la Bongo D30 XL Connected ?",
+      "a": "Un frein électrique dans le moteur avant et un frein à disque à l'arrière. Le disque utilise des plaquettes : fais-les vérifier dès que la poignée devient molle."
+    },
+    {
+      "q": "La D30 XL Connected est-elle légale en France ?",
+      "a": "Oui, bridée à 25 km/h et sans siège, elle respecte le cadre des engins de déplacement personnel motorisés. Interdit sur le trottoir, piste cyclable obligatoire quand elle existe."
+    },
+    {
+      "q": "Quelle différence entre la D30 XL Connected et la D30 ?",
+      "a": "Même batterie de 270 Wh et même moteur de 350 W. La XL Connected roule sur des 10 pouces au lieu de 8,5 et ajoute l'application."
+    }
+  ],
+  "sources": [
+    {
+      "label": "Cecotec Espagne — Bongo D30 XL Connected",
+      "url": "https://cecotec.es/es/patinetes-electricos/bongo-d30-xl-connected"
+    },
+    {
+      "label": "Cecotec France — Bongo D30 XL Connected",
+      "url": "https://www.storececotec.fr/fr/trottinettes-electriques/bongo-d30-xl-connected"
+    },
+    {
+      "label": "Cecotec — manuel Bongo D30 XL Connected (PDF)",
+      "url": "https://cdn.cecotec.cloud/media/files/bongo-d30-xl-connected-phone-holder_user_manual.pdf"
+    },
+    {
+      "label": "Fichas Escotr — Bongo D30 XL Connected",
+      "url": "https://fichas.escotr.com/en/details-cecotec-bongo-d30-xl-connected-01KR7B7B8ZJPEXDZPTVED4ECA4"
+    }
+  ],
+  "video": {
+    "id": "FCw0fr0Fokg",
+    "title": "CETTE TROTTINETTE BONGO D30 XL CONNECTED DE CHEZ CECOTEC VA VOUS SÉDUIRE !",
+    "channel": "YOTECH",
+    "uploadDate": "2025-11-25"
+  }
+}

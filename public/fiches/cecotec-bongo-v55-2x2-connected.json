@@ -1,0 +1,135 @@
+{
+  "displayName": "Cecotec Bongo V55 2x2 Connected",
+  "metaTitle": "Cecotec Bongo V55 2x2 Connected : fiche et pièces",
+  "metaDescription": "Cecotec Bongo V55 2x2 Connected : 2 moteurs de 500 W (1 600 W en pointe), batterie 48 V 12,5 Ah 600 Wh, 41 km mesurés, double suspension. Fiche et entretien.",
+  "intro": [
+    "La Bongo V55 2x2 Connected est la trottinette à deux roues motrices de Cecotec : un moteur dans chaque roue, que tu peux activer ensemble ou séparément. Testée dès janvier 2025, elle a ensuite été rejointe par la V70 Connected, qui n'a qu'un moteur arrière mais plus de batterie.",
+    "Deux moteurs de 500 W (1 600 W en pointe au total), batterie de 48 V et 12,5 Ah (600 Wh) pour 55 km annoncés en mode Eco, vitesse limitée à 25 km/h. Double suspension, roues de 10 pouces, disques avant et arrière avec frein régénératif. Un test a mesuré 41 km en mode Sport avec les deux moteurs."
+  ],
+  "specs": [
+    [
+      "Moteur",
+      "2 x 500 W nominaux (1 000 W), 2 x 800 W en pointe (1 600 W)"
+    ],
+    [
+      "Vitesse",
+      "25 km/h"
+    ],
+    [
+      "Autonomie annoncée",
+      "jusqu'à 55 km en mode Eco (à 15 km/h, terrain plat, 75 kg)"
+    ],
+    [
+      "Autonomie mesurée",
+      "41 km avec 67 kg, deux moteurs, mode Sport (cosasdepatinetes.com) ; environ 35 km avec 92 kg en mode Turbo (test vidéo YouTube)"
+    ],
+    [
+      "Batterie",
+      "48 V, 12,5 Ah, 600 Wh"
+    ],
+    [
+      "Poids",
+      "31,4 kg selon la fiche Cecotec actuelle ; 30,1 kg ou 28 kg selon d'autres fiches"
+    ],
+    [
+      "Charge max",
+      "120 kg (selon ecomove.es)"
+    ],
+    [
+      "Roues",
+      "10 pouces, profil tout-terrain"
+    ],
+    [
+      "Freins",
+      "Disque avant + disque arrière + E-ABS régénératif"
+    ],
+    [
+      "Suspension",
+      "Double, avant et arrière"
+    ],
+    [
+      "Étanchéité",
+      "IPX4 (selon un test vidéo YouTube)"
+    ],
+    [
+      "Temps de charge",
+      "6 à 7 h"
+    ]
+  ],
+  "pros": [
+    "Deux moteurs qui montent toutes les côtes de ville sans perdre de vitesse, après 3 mois d'usage (La cueva del lagarto, YouTube).",
+    "Autonomie réelle de 35 à 41 km selon le poids du pilote (cosasdepatinetes.com, test vidéo YouTube).",
+    "Suspension souple et construction jugée très soignée (test vidéo YouTube).",
+    "Freins à disque sur les deux roues."
+  ],
+  "cons": [
+    "Plus de 30 kg : difficile à porter et à ranger en appartement.",
+    "Recharge longue, 6 à 7 heures.",
+    "Poids annoncé différent selon les fiches (28 à 31,4 kg).",
+    "Affichée épuisée sur la boutique Cecotec France."
+  ],
+  "parts": [],
+  "care": [
+    "Deux moteurs, deux câbles de moteur : vérifie que les gaines qui sortent des axes ne frottent pas sur la fourche ou le bras arrière.",
+    "Contrôle les plaquettes des deux disques tous les 500 km, l'arrière s'use souvent plus vite.",
+    "Roule en un seul moteur sur le plat : tu gagnes de l'autonomie et tu ménages la batterie."
+  ],
+  "price": {
+    "text": "Prix affiché par la boutique Cecotec France : 639 €, modèle indiqué épuisé. Un acheteur l'a vue à 664 € en promotion sur le site Cecotec en mai 2025.",
+    "source": "storececotec.fr, YouTube"
+  },
+  "faq": [
+    {
+      "q": "Quelle autonomie réelle pour la Cecotec Bongo V55 2x2 Connected ?",
+      "a": "41 km avec un pilote de 67 kg en mode Sport sur deux moteurs, et environ 35 km avec 92 kg en mode Turbo. Cecotec annonce 55 km en mode Eco."
+    },
+    {
+      "q": "Combien de temps pour recharger la Bongo V55 2x2 ?",
+      "a": "Compte 6 à 7 heures pour remplir sa batterie de 600 Wh."
+    },
+    {
+      "q": "Quels freins sur la V55 2x2 Connected ?",
+      "a": "Un disque à l'avant, un disque à l'arrière et un frein électrique régénératif. Le type de commande (mécanique ou hydraulique) n'est pas précisé par Cecotec : regarde si tes leviers ont un câble ou une durite."
+    },
+    {
+      "q": "Quelle taille de pneu pour la Bongo V55 2x2 ?",
+      "a": "Des pneus de 10 pouces à crampons. Cecotec ne publie pas la cote complète : relève-la sur le flanc avant d'acheter un pneu ou une chambre."
+    },
+    {
+      "q": "Quelle différence entre la V55 2x2 et la V70 Connected ?",
+      "a": "La V55 a deux moteurs de 500 W et 12,5 Ah de batterie ; la V70 a un seul moteur arrière de 800 W et 15 Ah, pour 70 km annoncés. La V55 grimpe mieux, la V70 va plus loin."
+    },
+    {
+      "q": "La V55 2x2 est-elle légale en France ?",
+      "a": "Oui, dans sa configuration d'origine bridée à 25 km/h et sans siège. Toute modification pour dépasser cette vitesse est interdite sur la voie publique."
+    }
+  ],
+  "sources": [
+    {
+      "label": "Cecotec Espagne — Bongo V55 2x2 Connected",
+      "url": "https://cecotec.es/es/patinetes-electricos/bongo-v55-2x2-connected"
+    },
+    {
+      "label": "Cosas de Patinetes — Cecotec Bongo V55",
+      "url": "https://cosasdepatinetes.com/cecotec-bongo-v55/"
+    },
+    {
+      "label": "Ecomove — Bongo V55 2x2 Connected",
+      "url": "https://www.ecomove.es/patinete-cecotec-bongo-v55-2x2-connected/"
+    },
+    {
+      "label": "Idealo Espagne — Bongo V55 2x2 Connected",
+      "url": "https://www.idealo.es/precios/206036835/cecotec-bongo-v55-2x2-connected.html"
+    },
+    {
+      "label": "Autobild — patinete 1 600 W à double traction",
+      "url": "https://www.autobild.es/noticias/potente-patinete-electrico-1600w-tiene-traccion-dos-ruedas-conduces-tierra-mejor-opcion-1462408"
+    }
+  ],
+  "video": {
+    "id": "vt0olQxubC4",
+    "title": "3 Meses con el Bongo V55 2x2: ¿La Mejor Decisión? | Review y Opiniones",
+    "channel": "La cueva del lagarto",
+    "uploadDate": "2025-05-15"
+  }
+}

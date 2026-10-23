@@ -1,0 +1,131 @@
+{
+  "displayName": "Cecotec Bongo D20",
+  "metaTitle": "Cecotec Bongo D20 : fiche technique et entretien",
+  "metaDescription": "Cecotec Bongo Serie D20 : 250 W (500 W en pointe), batterie 36 V 5 Ah, roues gonflables 8,5\", disque arrière, 20 km/h. Fiche, autonomie réelle et entretien.",
+  "intro": [
+    "La Bongo Serie D20 est l'entrée de gamme de la série D de Cecotec, une marque espagnole. Elle existe aussi en version Mobile, avec support de téléphone sur le guidon. À ne pas confondre avec la D20 XL Connected (roues de 10 pouces) ni avec la D20E Connected (plus légère, avec application) : chacune a sa propre fiche.",
+    "Moteur de 250 W (500 W en pointe) selon le manuel Cecotec, batterie de 36 V et 5 Ah (180 Wh), vitesse limitée à 20 km/h. Elle roule sur des roues gonflables de 8,5 pouces, freine avec un frein électrique à l'avant et un disque à l'arrière, et n'a pas de suspension."
+  ],
+  "specs": [
+    [
+      "Moteur",
+      "250 W nominaux, 500 W en pointe selon le manuel Cecotec ; la page Cecotec et MediaMarkt affichent aussi 630 W en pointe (300 W nominaux chez MediaMarkt)"
+    ],
+    [
+      "Vitesse",
+      "20 km/h"
+    ],
+    [
+      "Autonomie annoncée",
+      "20 km (22 km dans le manuel)"
+    ],
+    [
+      "Autonomie mesurée",
+      "14 km en mode intermédiaire, 12,9 km en mode Sport, pilote de 90 kg (test vidéo YouTube)"
+    ],
+    [
+      "Batterie",
+      "36 V, 5 Ah, 180 Wh"
+    ],
+    [
+      "Poids",
+      "15 kg selon Cecotec"
+    ],
+    [
+      "Charge max",
+      "100 kg (selon un test vidéo YouTube)"
+    ],
+    [
+      "Roues",
+      "8,5 pouces, gonflables"
+    ],
+    [
+      "Freins",
+      "Électrique à l'avant (E-ABS) + disque à l'arrière"
+    ],
+    [
+      "Suspension",
+      "Aucune"
+    ],
+    [
+      "Étanchéité",
+      "IPX4"
+    ],
+    [
+      "Temps de charge",
+      "4 à 5 h"
+    ]
+  ],
+  "pros": [
+    "Un vrai frein à disque à l'arrière, jugé fiable en freinage d'urgence (test vidéo YouTube).",
+    "Pneus gonflables de 8,5 pouces qui filtrent mieux que des pneus pleins.",
+    "Recharge courte, 4 à 5 heures (manuel Cecotec).",
+    "Prix d'entrée bas : 229 € chez Cecotec Espagne."
+  ],
+  "cons": [
+    "Petite batterie de 180 Wh : 13 à 14 km mesurés en test, loin des 20 km annoncés.",
+    "Pas de suspension : les pavés et les trottoirs abaissés se sentent dans les bras.",
+    "Limitée à 20 km/h, en dessous des 25 km/h autorisés en France.",
+    "Puissance de pointe affichée différemment selon les fiches (500 ou 630 W)."
+  ],
+  "parts": [],
+  "care": [
+    "Gonfle tes pneus de 8,5 pouces au moins une fois par mois : sans suspension, ce sont eux qui encaissent tout.",
+    "Le disque arrière est ton seul frein mécanique : vérifie qu'il ne frotte pas et que la poignée garde de la résistance.",
+    "Ne laisse pas la batterie vide plusieurs jours : une petite batterie de 5 Ah supporte mal les décharges profondes."
+  ],
+  "price": {
+    "text": "Prix public : 229 € sur la boutique Cecotec Espagne, 249 € chez MediaMarkt Espagne (prix relevés en ligne, susceptibles de varier).",
+    "source": "cecotec.es, mediamarkt.es"
+  },
+  "faq": [
+    {
+      "q": "Quelle taille de pneu sur la Cecotec Bongo D20 ?",
+      "a": "Des pneus gonflables de 8,5 pouces. Cecotec ne publie pas la cote complète : lis-la sur le flanc de ton pneu avant de commander une chambre à air ou un pneu."
+    },
+    {
+      "q": "Quelle est l'autonomie réelle de la Bongo D20 ?",
+      "a": "Cecotec annonce 20 km. En test vidéo, avec un pilote de 90 kg, elle a tenu 14 km en mode intermédiaire et 12,9 km en mode Sport. Compte plutôt 12 à 15 km dans la vraie vie."
+    },
+    {
+      "q": "Combien de temps pour recharger la Bongo D20 ?",
+      "a": "4 à 5 heures pour une charge complète, selon le manuel Cecotec."
+    },
+    {
+      "q": "Quels freins sur la Cecotec Bongo D20 ?",
+      "a": "Un frein électrique (E-ABS) dans le moteur avant et un frein à disque à l'arrière. Les plaquettes de ce disque s'usent : fais-les contrôler si le freinage s'allonge."
+    },
+    {
+      "q": "La Bongo D20 est-elle autorisée en France ?",
+      "a": "Oui. Bridée à 20 km/h, sans siège, elle entre dans la catégorie des engins de déplacement personnel motorisés, limités à 25 km/h. Tu dois avoir au moins 12 ans et rouler sur piste cyclable quand il y en a une."
+    },
+    {
+      "q": "Quelle différence entre la Bongo D20 et la D20 XL Connected ?",
+      "a": "La D20 XL Connected passe à des roues gonflables de 10 pouces, un moteur de 300 W (630 W en pointe) et une application. La batterie reste la même, 36 V et 5 Ah. Vérifie le nom inscrit sous le plateau avant d'acheter une pièce."
+    }
+  ],
+  "sources": [
+    {
+      "label": "Cecotec Espagne — Bongo Serie D20",
+      "url": "https://cecotec.es/es/patinetes-electricos/bongo-serie-d20"
+    },
+    {
+      "label": "Cecotec — manuel Bongo D20 Mobile (PDF)",
+      "url": "https://cdn.cecotec.cloud/media/files/bongo-d20-mobile_user_manual_es.pdf"
+    },
+    {
+      "label": "MediaMarkt Espagne — Cecotec Bongo D20",
+      "url": "https://www.mediamarkt.es/es/product/_patinete-electrico-cecotec-bongo-d20-630-w-300-w-nominal-autonomia-20-km-inclinacion-15percent-ruedas-85-black-1579705.html"
+    },
+    {
+      "label": "YouTube — Bongo D20 Mobile, review et test d'autonomie",
+      "url": "https://www.youtube.com/watch?v=BF2KqSLXOXI"
+    }
+  ],
+  "video": {
+    "id": "2OHc6WhjHJI",
+    "title": "Review Patinete CECOTEC BONGO Serie D20 \"Toda la verdad\" El patinete por menos de menos de 300€",
+    "channel": "Kolixta",
+    "uploadDate": "2023-05-03"
+  }
+}

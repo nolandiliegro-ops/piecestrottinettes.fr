@@ -1,0 +1,125 @@
+{
+  "displayName": "Smartgyro Rockway GT Dual",
+  "metaTitle": "Smartgyro Rockway GT Dual : fiche et entretien",
+  "metaDescription": "Smartgyro Rockway GT Dual : 2 moteurs de 500 W (2 800 W en pointe), batterie 48 V 15 Ah, pneus tubeless 10\", deux freins à disque. Fiche et entretien.",
+  "intro": [
+    "La Rockway GT Dual est le premier bimoteur de la gamme Rockway GT de Smartgyro, marque espagnole, présenté en juillet 2026. Elle reprend le cadre, les feux et le pliage de la Rockway GT, mais ajoute un moteur dans la roue avant pour gagner en motricité sur la terre et dans les côtes.",
+    "Deux moteurs de 500 W (1 000 W nominaux, 2 800 W en pointe au total), batterie de 48 V 15 Ah (720 Wh), pneus tubeless mixtes de 10 pouces, deux freins à disque et un frein régénératif. Smartgyro annonce 50 km ; un testeur en a fait 47 en mode bimoteur. Elle est bridée à 25 km/h."
+  ],
+  "specs": [
+    [
+      "Moteurs",
+      "2 × 500 W (1 000 W nominaux), 2 800 W en pointe au total"
+    ],
+    [
+      "Vitesse",
+      "25 km/h"
+    ],
+    [
+      "Autonomie annoncée",
+      "jusqu'à 50 km"
+    ],
+    [
+      "Autonomie constatée",
+      "47 km en mode bimoteur, au mode le plus puissant (StratosTech)"
+    ],
+    [
+      "Batterie",
+      "48 V, 15 Ah, 720 Wh"
+    ],
+    [
+      "Poids",
+      "29 kg (selon e-Planet Mobility) ; masse déclarée 24,9 kg (StratosTech)"
+    ],
+    [
+      "Roues",
+      "10 pouces, tubeless DualGrip mixtes"
+    ],
+    [
+      "Freins",
+      "Disque avant + disque arrière + frein régénératif"
+    ],
+    [
+      "Suspension",
+      "Avant et arrière, à ressort (selon e-Planet Mobility), arrière réglable"
+    ],
+    [
+      "Étanchéité",
+      "IPX4 (Orange, e-Planet Mobility)"
+    ],
+    [
+      "Temps de charge",
+      "jusqu'à 8 h"
+    ]
+  ],
+  "pros": [
+    "Deux roues motrices : elle monte une côte de 8 à 10 % à 22 km/h de moyenne (StratosTech).",
+    "Autonomie constatée de 47 km, proche des 50 km annoncés (StratosTech).",
+    "Se conduit lentement en tout-terrain sans perdre d'adhérence (StratosTech)."
+  ],
+  "cons": [
+    "Autour de 29 kg : à éviter si tu dois la monter dans un escalier.",
+    "10 km d'autonomie annoncée en moins que la Rockway GT, avec la même batterie.",
+    "Aucune charge maximale publiée dans les sources consultées."
+  ],
+  "parts": [],
+  "care": [
+    "Roule sur un seul moteur sur le plat : tu ménages la batterie et tu gardes les deux pour les côtes.",
+    "Avec deux moteurs, vérifie aussi les câbles de la roue avant : ils passent dans la fourche et souffrent au pliage.",
+    "Pneus tubeless : garde la même pression à l'avant et à l'arrière, les deux roues tirent."
+  ],
+  "price": {
+    "text": "Prix public en Espagne : 799 € annoncé par Smartgyro.",
+    "source": "smartgyro.es"
+  },
+  "faq": [
+    {
+      "q": "Quelle taille de pneu pour la Smartgyro Rockway GT Dual ?",
+      "a": "Des pneus tubeless mixtes de 10 pouces. La cote exacte n'est pas publiée : lis-la sur le flanc du pneu, et note que la roue avant porte ici un moteur."
+    },
+    {
+      "q": "Quelle autonomie réelle pour la Rockway GT Dual ?",
+      "a": "Smartgyro annonce 50 km. Après deux mois d'usage, un testeur a fait 47 km en bimoteur, au mode le plus puissant, à 25 km/h et en terrain vallonné."
+    },
+    {
+      "q": "Combien de temps pour recharger la Rockway GT Dual ?",
+      "a": "Jusqu'à 8 heures selon Smartgyro."
+    },
+    {
+      "q": "Quelle différence entre la Rockway GT Dual et la Crossover Dual Max 2 ?",
+      "a": "Les deux sont des bimoteurs Smartgyro de 2 × 500 W et 48 V 15 Ah. La Rockway GT Dual reprend le cadre et les feux de la gamme Rockway GT ; la Crossover Dual Max 2 a son propre châssis et pèse 31,4 kg."
+    },
+    {
+      "q": "La Rockway GT Dual est-elle légale en France malgré ses 2 800 W ?",
+      "a": "Oui. Les 2 800 W sont une puissance de pointe, mais la vitesse reste bridée à 25 km/h, la limite française. Tu circules hors trottoir, avec une assurance responsabilité civile."
+    }
+  ],
+  "sources": [
+    {
+      "label": "Smartgyro — Rockway GT Dual",
+      "url": "https://smartgyro.es/patinetes-electricos/patinete-electrico-smartgyro-rockway-gt-dual"
+    },
+    {
+      "label": "Smartgyro — présentation de la Rockway GT Dual",
+      "url": "https://smartgyro.es/blog/entradas/ya-esta-aqui-el-smartgyro-rockway-gt-dual-mas-potencia-mas-traccion-asi-es-el-primer-dual-motor-de-la-familia-gt"
+    },
+    {
+      "label": "e-Planet Mobility — Smartgyro Rockway GT Dual",
+      "url": "https://e-planetmobility.com/producto/patinete-electrico-smartgyro-rockway-gt-dual/"
+    },
+    {
+      "label": "Orange — Smartgyro Rockway GT Dual",
+      "url": "https://www.orange.es/dispositivos/patinetes-electricos/smartgyro/patinete-electrico-rockway-gt-dual/MKP001174873797.html"
+    },
+    {
+      "label": "YouTube — Rockway GT Dual, avis après 2 mois (StratosTech)",
+      "url": "https://www.youtube.com/watch?v=Rhtzg9gDYCA"
+    }
+  ],
+  "video": {
+    "id": "Wrg1eDUAseA",
+    "title": "LA NUEVA BESTIA | smartGyro Rockway GT DUAL - Pruebas extremas",
+    "channel": "StratosTech",
+    "uploadDate": "2026-07-16"
+  }
+}

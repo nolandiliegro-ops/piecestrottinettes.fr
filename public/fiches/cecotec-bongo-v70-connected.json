@@ -1,0 +1,78 @@
+{
+ "displayName": "Cecotec Bongo V70 Connected",
+ "metaTitle": "Cecotec Bongo V70 Connected : fiche et autonomie",
+ "metaDescription": "Cecotec Bongo V70 Connected : 800 W (1 500 W en pointe), batterie 48 V 15 Ah 720 Wh, 40 à 53 km mesurés, double suspension, deux disques. Fiche et entretien.",
+ "intro": [
+  "La Bongo V70 Connected est la trottinette la plus endurante de la série V de Cecotec, testée par la presse spécialisée à partir du printemps 2025. Elle succède à la V55 2x2 Connected avec un seul moteur, placé à l'arrière, au lieu de deux. Cecotec France l'affiche à 579 €.",
+  "Moteur arrière de 800 W (1 500 W en pointe), batterie de 48 V et 15 Ah (720 Wh) pour 70 km annoncés, vitesse limitée à 25 km/h. Double suspension, roues de 10 pouces et freinage par deux disques mécaniques plus un frein régénératif. Elle pèse 26,45 kg."
+ ],
+ "specs": [
+  ["Moteur", "800 W nominaux, 1 500 W en pointe, à l'arrière"],
+  ["Vitesse", "25 km/h"],
+  ["Autonomie annoncée", "jusqu'à 70 km (à 15 km/h, terrain plat, 75 kg)"],
+  ["Autonomie mesurée", "53 km avec 67 kg en mode Sport (cosasdepatinetes.com) ; près de 40 km avec 92 kg en mode Turbo et 46 km dans un autre test (vidéos YouTube)"],
+  ["Batterie", "48 V, 15 Ah, 720 Wh"],
+  ["Poids", "26,45 kg"],
+  ["Charge max", "120 kg selon comprasmartphone.com, 100 kg selon un test vidéo"],
+  ["Roues", "10 pouces, tubeless tout-terrain (selon un test vidéo YouTube)"],
+  ["Freins", "Deux disques mécaniques de 140 mm + frein régénératif (selon un test vidéo YouTube)"],
+  ["Suspension", "Double, avant et arrière"],
+  ["Temps de charge", "5 à 6 h avec le chargeur 2 A"]
+ ],
+ "pros": [
+  "Autonomie réelle élevée : 53 km mesurés par cosasdepatinetes.com, près de 40 km pour un pilote de 92 kg (test vidéo YouTube).",
+  "Moteur arrière qui monte les côtes raides sans faiblir (test vidéo YouTube).",
+  "Double suspension et grandes roues jugées confortables (test vidéo YouTube).",
+  "Clignotants, grand écran couleur et application avec mises à jour."
+ ],
+ "cons": [
+  "26,45 kg : lourde à porter dans un escalier.",
+  "Freins à disque mécaniques, pas hydrauliques.",
+  "Suspension arrière jugée un peu ferme pour les pilotes légers (test vidéo YouTube).",
+  "Charge maximale différente selon les sources (100 ou 120 kg)."
+ ],
+ "parts": [],
+ "care": [
+  "Gonfle tes tubeless de 10 pouces à la pression indiquée sur le flanc ; un testeur roule à 36 PSI.",
+  "Les deux disques sont mécaniques : retends les câbles dès que la course des leviers s'allonge.",
+  "Avec 26 kg et deux amortisseurs, contrôle le serrage des axes de suspension et du pliage tous les mois."
+ ],
+ "price": {
+  "text": "Prix affiché par la boutique Cecotec France : 579 €. Un testeur l'a présentée autour de 600 € en Espagne en mai 2025.",
+  "source": "storececotec.fr, YouTube"
+ },
+ "faq": [
+  {
+   "q": "Quelle autonomie réelle pour la Cecotec Bongo V70 Connected ?",
+   "a": "Entre 40 et 53 km selon le poids du pilote : 53 km avec 67 kg en mode Sport, près de 40 km avec 92 kg en mode Turbo. Cecotec annonce 70 km à 15 km/h."
+  },
+  {
+   "q": "Quels freins sur la Bongo V70 Connected ?",
+   "a": "Deux freins à disque mécaniques de 140 mm, à l'avant et à l'arrière, plus un frein régénératif dans le moteur, selon un test vidéo détaillé."
+  },
+  {
+   "q": "Combien de temps pour recharger la V70 Connected ?",
+   "a": "5 à 6 heures avec le chargeur fourni de 2 A, pour remplir 720 Wh."
+  },
+  {
+   "q": "Quelle taille de pneu pour la Bongo V70 Connected ?",
+   "a": "Des pneus de 10 pouces, tubeless à profil tout-terrain selon un test vidéo. La cote exacte n'est pas publiée : lis-la sur le flanc de ton pneu avant de commander."
+  },
+  {
+   "q": "Quelle différence entre la Bongo V70 Connected et la V55 2x2 Connected ?",
+   "a": "La V55 a deux moteurs, un par roue ; la V70 n'en a qu'un, à l'arrière, mais une batterie plus grande de 15 Ah pour 70 km annoncés contre 55 km."
+  },
+  {
+   "q": "Peut-on rouler en V70 Connected en France ?",
+   "a": "Oui, telle qu'elle sort de l'usine : elle est bridée à 25 km/h et n'a pas de siège. La modifier pour aller plus vite est interdit sur la voie publique et fait perdre la couverture de ton assurance."
+  }
+ ],
+ "sources": [
+  {"label": "Cecotec Espagne — Bongo V70 Connected", "url": "https://cecotec.es/es/patinetes-electricos/bongo-v70-connected"},
+  {"label": "Cecotec France — Bongo V70 Connected", "url": "https://www.storececotec.fr/fr/trottinettes-electriques/bongo-v70-connected"},
+  {"label": "Cosas de Patinetes — review Bongo V70", "url": "https://cosasdepatinetes.com/cecotec-bongo-v70-el-nuevo-patinete-potente-de-cecotec-review/"},
+  {"label": "Comprasmartphone — Bongo V70 Connected", "url": "https://comprasmartphone.com/patinetes-electricos/cecotec-bongo-v70-connected"},
+  {"label": "Ecomove — Bongo V70 Connected", "url": "https://www.ecomove.es/patinete-cecotec-bongo-v70-connected/"},
+  {"label": "YouTube — test de batterie Bongo V70 Connected", "url": "https://www.youtube.com/watch?v=8IP7omI59qA"}
+ ]
+}

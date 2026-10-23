@@ -1,0 +1,123 @@
+{
+  "displayName": "Cecotec Bongo D20 XL Connected",
+  "metaTitle": "Cecotec Bongo D20 XL Connected : fiche et pièces",
+  "metaDescription": "Cecotec Bongo D20 XL Connected : 300 W (630 W en pointe), batterie 36 V 5 Ah, roues gonflables 10\", disque arrière, application. Fiche technique et entretien.",
+  "intro": [
+    "La Bongo D20 XL Connected reprend la base de la Bongo D20 de Cecotec, mais avec des roues gonflables de 10 pouces au lieu de 8,5 et une application pour smartphone. Elle fait partie de la gamme D XL, avec la D30 XL et la D40 XL, qui ont plus de batterie.",
+    "Moteur de 300 W (630 W en pointe), batterie de 36 V et 5 Ah (180 Wh) pour 20 km annoncés. Le freinage associe un frein électrique à l'avant et un disque à l'arrière. Cecotec France l'affiche à 229 €. Un testeur sur YouTube a mesuré 20 km/h en pointe, la vitesse indiquée dans le manuel."
+  ],
+  "specs": [
+    [
+      "Moteur",
+      "300 W nominaux, 630 W en pointe"
+    ],
+    [
+      "Vitesse",
+      "20 km/h selon le manuel et un test vidéo (la page Cecotec affiche 25 km/h)"
+    ],
+    [
+      "Autonomie annoncée",
+      "jusqu'à 20 km"
+    ],
+    [
+      "Batterie",
+      "36 V, 5 Ah, 180 Wh"
+    ],
+    [
+      "Poids",
+      "16 kg (selon fichas.escotr.com)"
+    ],
+    [
+      "Charge max",
+      "120 kg selon Cecotec Espagne, 100 kg selon MediaMarkt"
+    ],
+    [
+      "Roues",
+      "10 pouces, gonflables"
+    ],
+    [
+      "Freins",
+      "Électrique à l'avant (E-ABS) + disque à l'arrière"
+    ],
+    [
+      "Étanchéité",
+      "IPX4 (selon fichas.escotr.com)"
+    ],
+    [
+      "Temps de charge",
+      "4 à 5 h (selon fichas.escotr.com)"
+    ],
+    [
+      "Connectivité",
+      "Application smartphone"
+    ]
+  ],
+  "pros": [
+    "Roues gonflables de 10 pouces qui absorbent bien les petites irrégularités (test vidéo YouTube).",
+    "Frein électrique avant jugé très mordant en freinage d'urgence (test vidéo YouTube).",
+    "Application pour suivre les infos de la trottinette depuis ton téléphone.",
+    "Prix bas : 229 € chez Cecotec France."
+  ],
+  "cons": [
+    "Même petite batterie de 180 Wh que la D20 : 20 km annoncés, sans mesure indépendante publiée.",
+    "Vitesse réelle de 20 km/h, alors que la page produit annonçait 25 km/h.",
+    "Charge maximale différente selon les fiches (100 ou 120 kg).",
+    "Pas de suspension annoncée par Cecotec."
+  ],
+  "parts": [],
+  "care": [
+    "Les 10 pouces gonflables ne font leur travail qu'à la bonne pression : contrôle-les toutes les deux semaines.",
+    "Le frein électrique avant mord fort : dose la poignée, surtout sur sol mouillé.",
+    "Vérifie le serrage de l'étrier du disque arrière après les premières semaines de roulage."
+  ],
+  "price": {
+    "text": "Prix affiché par la boutique Cecotec France : 229 €. En Espagne, Idealo relève des offres à partir de 159 €.",
+    "source": "storececotec.fr, idealo.es"
+  },
+  "faq": [
+    {
+      "q": "Quelle taille de pneu pour la Cecotec Bongo D20 XL Connected ?",
+      "a": "Des pneus gonflables de 10 pouces. Cecotec ne donne pas la largeur exacte : lis la cote sur le flanc de ton pneu avant de commander."
+    },
+    {
+      "q": "Quelle vitesse atteint la Bongo D20 XL Connected ?",
+      "a": "20 km/h. La page Cecotec annonçait 25 km/h, mais le manuel et un test sur route donnent 20 km/h ; le testeur a confirmé l'erreur auprès de Cecotec."
+    },
+    {
+      "q": "Quelle autonomie pour la D20 XL Connected ?",
+      "a": "Cecotec annonce 20 km avec une batterie de 180 Wh. Aucune mesure indépendante n'est publiée ; avec un pilote lourd ou en mode Sport, prévois moins."
+    },
+    {
+      "q": "Peut-on rouler avec la D20 XL Connected sur la route en France ?",
+      "a": "Oui, c'est un engin de déplacement personnel motorisé : sa vitesse reste sous les 25 km/h et elle n'a pas de siège. Pistes cyclables en priorité, trottoir interdit, et 12 ans minimum."
+    },
+    {
+      "q": "Quelle différence entre la D20 XL Connected et la D30 XL Connected ?",
+      "a": "La D30 XL Connected a un moteur de 350 W et une batterie de 7,5 Ah pour 30 km annoncés ; la D20 XL reste à 300 W et 5 Ah. Les deux ont des roues de 10 pouces."
+    }
+  ],
+  "sources": [
+    {
+      "label": "Cecotec Espagne — Bongo D20 XL Connected",
+      "url": "https://cecotec.es/es/patinetes-electricos/bongo-d20-xl-connected"
+    },
+    {
+      "label": "Cecotec France — Bongo D20 XL Connected",
+      "url": "https://www.storececotec.fr/fr/trottinettes-electriques/bongo-d20-xl-connected"
+    },
+    {
+      "label": "Fichas Escotr — Cecotec Bongo D20 XL Connected",
+      "url": "https://fichas.escotr.com/en/details-cecotec-bongo-d20-xl-connected-01KR6SHJKZ6H19S2BKZ343VC0S"
+    },
+    {
+      "label": "MediaMarkt Espagne — Bongo D20 XL Connected",
+      "url": "https://www.mediamarkt.es/es/product/_patinete-electrico-cecotec-bongo-d20-xl-connected-630-w-100-kg-5000-mah-20-kmh-silver-138921444.html"
+    }
+  ],
+  "video": {
+    "id": "o7FBFmzCz28",
+    "title": "Gama de Patinetes eléctricos Bongo D XL Connected",
+    "channel": "Cecotec",
+    "uploadDate": "2024-04-19"
+  }
+}

@@ -1,0 +1,143 @@
+{
+  "displayName": "Smartgyro Speedway Pro",
+  "metaTitle": "Smartgyro Speedway Pro : fiche technique et pièces",
+  "metaDescription": "Smartgyro Speedway Pro : moteur 800 W, batterie 48 V 15 Ah, 60 km annoncés, roues de 10 pouces, deux freins à disque, double suspension. Fiche et pièces.",
+  "intro": [
+    "La Speedway Pro est la version musclée de la Speedway de Smartgyro, marque espagnole. Elle a connu une V2.0 en 2022, puis une version certifiée. À ne pas confondre avec la Speedway simple, moins puissante, ni avec la Rockway Pro.",
+    "Moteur de 800 W nominaux, batterie de 48 V 15 Ah (720 Wh) pour 60 km annoncés, roues de 10 pouces, double suspension et deux freins à disque avec frein régénératif. La puissance de pointe varie selon les sources : 1 000 W chez les revendeurs, 1 200 W dans les tests. Elle est bridée à 25 km/h."
+  ],
+  "specs": [
+    [
+      "Moteur",
+      "800 W ; 1 000 W en pointe selon les revendeurs, 1 200 W selon les tests vidéo"
+    ],
+    [
+      "Vitesse",
+      "25 km/h"
+    ],
+    [
+      "Autonomie annoncée",
+      "50 à 60 km"
+    ],
+    [
+      "Autonomie constatée",
+      "44 km (pilote de 70 kg), 35 km (pilote de 100 kg en conduite soutenue) (tests vidéo YouTube)"
+    ],
+    [
+      "Batterie",
+      "48 V, 15 Ah, 720 Wh"
+    ],
+    [
+      "Poids",
+      "23,35 kg à 25 kg selon les revendeurs"
+    ],
+    [
+      "Charge max",
+      "120 kg chez Ridenroll, 140 kg chez Idealo"
+    ],
+    [
+      "Roues",
+      "10 pouces, pneumatiques"
+    ],
+    [
+      "Freins",
+      "Disque avant + disque arrière + frein régénératif"
+    ],
+    [
+      "Suspension",
+      "Avant et arrière"
+    ],
+    [
+      "Étanchéité",
+      "IPX4 (selon Ridenroll)"
+    ],
+    [
+      "Temps de charge",
+      "jusqu'à 8 h (6 à 7 h selon certains revendeurs)"
+    ]
+  ],
+  "pros": [
+    "Moteur très silencieux, sans sifflement (test vidéo YouTube).",
+    "Garde ses 25 km/h dans les côtes de Barcelone avec un pilote de 100 kg (test vidéo YouTube).",
+    "Construction solide, peu de plastique (test vidéo YouTube)."
+  ],
+  "cons": [
+    "Pneus lisses : peu d'accroche sur les chemins (test vidéo YouTube).",
+    "Suspension dure, inconfortable sur les chemins caillouteux (test vidéo YouTube).",
+    "Le guidon se décale si on ne le serre pas bien, et les câbles restent apparents (test vidéo YouTube).",
+    "Lourde à porter dans les transports."
+  ],
+  "parts": [
+    {
+      "label": "Disque de frein",
+      "size": "140 mm, 6 trous, entraxe 44 mm",
+      "count": 3,
+      "to": "/piece/disque-de-frein-r6-140mm-entraxe-44mm-3-couleurs-rouge",
+      "cta": "Disques 140 mm"
+    },
+    {
+      "label": "Chargeur",
+      "size": "48 V → 54,6 V, prise GX16-3",
+      "count": 2,
+      "to": "/piece/chargeur-48v-546v-2a-connecteur-gx16-3p",
+      "cta": "Chargeurs 48 V"
+    }
+  ],
+  "care": [
+    "Resserre le collier du guidon dès qu'il prend du jeu : un guidon qui tourne dans la potence est dangereux.",
+    "Change les plaquettes dès qu'elles crissent, et graisse les points de pliage, comme le conseille un testeur après des centaines de kilomètres.",
+    "Surveille la tension affichée : un testeur relève 52,5 V batterie pleine et une coupure vers 39,5 V. Recharge avant d'y arriver."
+  ],
+  "price": {
+    "text": "Prix relevé en Espagne : autour de 799 € chez les revendeurs (769 € sur la boutique Smartgyro en 2022, d'après un test vidéo).",
+    "source": "idealo.es, ridenroll.es"
+  },
+  "faq": [
+    {
+      "q": "Quelle taille de pneu pour la Smartgyro Speedway Pro ?",
+      "a": "Des roues de 10 pouces. Les sources ne s'accordent pas sur le montage tubeless ou à chambre : lis la cote et la mention « tubeless » sur le flanc de ton pneu avant de commander."
+    },
+    {
+      "q": "Quelle autonomie réelle pour la Speedway Pro ?",
+      "a": "Un testeur de 70 kg a fait 44 km, un autre de 100 kg en a fait 35 en roulant fort. Smartgyro annonce jusqu'à 60 km."
+    },
+    {
+      "q": "Quel chargeur pour la Smartgyro Speedway Pro ?",
+      "a": "Un chargeur 48 V qui sort 54,6 V en fin de charge, avec la bonne prise. Un chargeur d'une autre tension abîme la batterie."
+    },
+    {
+      "q": "Quelle différence entre la Speedway Pro et la Speedway ?",
+      "a": "La Pro a un moteur de 800 W au lieu de 500 W et une batterie de 15 Ah au lieu de 13 Ah. Les deux ont deux freins à disque et une double suspension."
+    },
+    {
+      "q": "La Speedway Pro est-elle autorisée en France ?",
+      "a": "Oui avec son bridage d'usine à 25 km/h, la limite des trottinettes électriques en France. Sur la voie publique, la faire rouler plus vite est interdit. L'assurance responsabilité civile est obligatoire."
+    }
+  ],
+  "sources": [
+    {
+      "label": "Idealo — Smartgyro Speedway Pro",
+      "url": "https://www.idealo.es/precios/202848031/smartgyro-speedway-pro.html"
+    },
+    {
+      "label": "Ridenroll — Smartgyro Speedway Pro",
+      "url": "https://ridenroll.es/producto/smartgyro-speedway-pro-certificado/"
+    },
+    {
+      "label": "Ecomovilidad Ícaro — Smartgyro Speedway Pro",
+      "url": "https://ecomovilidadicaro.es/producto/smartgyro-speedway-pro/"
+    },
+    {
+      "label": "Smartgyro — Speedway Pro reconditionnée",
+      "url": "https://smartgyro.es/distribuidores/reacondicionados/patinete-electrico-smartgyro-speedway-pro-certificado-seminuevo"
+    },
+    {
+      "label": "YouTube — review Speedway Pro V2.0",
+      "url": "https://www.youtube.com/watch?v=eb95pTJUBEA"
+    },
+    {
+      "label": "YouTube — review Speedway Pro 1200 W",
+      "url": "https://www.youtube.com/watch?v=AJ9G3XoayZE"
+    }
+  ]
+}

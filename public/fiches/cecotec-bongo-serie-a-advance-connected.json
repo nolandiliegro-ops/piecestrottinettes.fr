@@ -1,0 +1,132 @@
+{
+ "displayName": "Cecotec Bongo Serie A Advance Connected",
+ "metaTitle": "Cecotec Bongo Serie A Advance Connected : fiche",
+ "metaDescription": "Cecotec Bongo Serie A Advance Connected : 350 W (700 W en pointe), batterie amovible 36 V 7,8 Ah 281 Wh, pneus tubeless 8,5\", IP54. Fiche, autonomie, pièces.",
+ "intro": [
+  "La Bongo Serie A Advance Connected est la version à plus grosse batterie de la Serie A Connected de Cecotec, en vente depuis au moins novembre 2020. Elle garde la batterie amovible de la série, mais passe à 7,8 Ah. Au-dessus, la Serie A Advance Connected Max pousse encore l'autonomie : ce sont trois modèles distincts.",
+  "Moteur de 350 W (700 W en pointe), batterie de 36 V et 7,8 Ah (280,8 Wh) pour 35 km annoncés, vitesse limitée à 25 km/h. Elle roule sur des pneus tubeless de 8,5 pouces, sans suspension. En test vidéo, un pilote a parcouru 25 km d'une traite à 22 km/h de moyenne en mode Confort."
+ ],
+ "specs": [
+  [
+   "Moteur",
+   "350 W nominaux, 700 W en pointe"
+  ],
+  [
+   "Vitesse",
+   "25 km/h"
+  ],
+  [
+   "Autonomie annoncée",
+   "jusqu'à 35 km (pilote de 70 kg, terrain plat, sans vent)"
+  ],
+  [
+   "Autonomie mesurée",
+   "25 km en mode Confort à environ 22 km/h (test vidéo YouTube)"
+  ],
+  [
+   "Batterie",
+   "36 V, 7,8 Ah, 280,8 Wh, amovible"
+  ],
+  [
+   "Poids",
+   "environ 14 kg"
+  ],
+  [
+   "Charge max",
+   "120 kg (selon biciscope.com)"
+  ],
+  [
+   "Roues",
+   "8,5 pouces, tubeless"
+  ],
+  [
+   "Freins",
+   "Frein moteur avant + disque arrière + frein au pied (selon un unboxing vidéo)"
+  ],
+  [
+   "Suspension",
+   "Aucune"
+  ],
+  [
+   "Étanchéité",
+   "IP54 (selon la notice)"
+  ],
+  [
+   "Temps de charge",
+   "5 h selon la notice, 4 à 5 h selon Tien21"
+  ]
+ ],
+ "pros": [
+  "Batterie amovible et interchangeable, vendue aussi en pièce détachée par Cecotec.",
+  "Autonomie réelle correcte : 25 km mesurés en mode Confort (test vidéo YouTube).",
+  "Pneus tubeless difficiles à crever, qui absorbent les petits chocs (test vidéo YouTube).",
+  "Application complète : vitesse, batterie, température moteur, kilométrage (test vidéo YouTube)."
+ ],
+ "cons": [
+  "Manque de force dans les côtes, selon un testeur sur YouTube.",
+  "Pas de suspension.",
+  "Prix de lancement non publié par Cecotec pour cette version exacte."
+ ],
+ "parts": [
+  {
+   "label": "Chargeur",
+   "size": "36 V (42 V), prise DC 5.5x2.1",
+   "count": 1,
+   "to": "/piece/chargeur-36v-42v-2a-connecteur-dc-55-21mm",
+   "cta": "Chargeur 36 V"
+  }
+ ],
+ "care": [
+  "Sors la batterie pour la recharger au chaud l'hiver : à 281 Wh, elle perd vite au froid.",
+  "Vérifie la pression de tes tubeless tous les quinze jours ; une fuite lente se voit d'abord à l'autonomie.",
+  "Le frein au pied frotte sur le pneu arrière : utilise-le en secours, pas à chaque arrêt."
+ ],
+ "price": {
+  "text": "Prix relevé par un testeur en septembre 2021 : 399 €. Cecotec ne publie plus de prix pour cette version.",
+  "source": "YouTube"
+ },
+ "faq": [
+  {
+   "q": "Quelle autonomie réelle pour la Bongo Serie A Advance Connected ?",
+   "a": "Un testeur a fait 25 km sans s'arrêter, en mode Confort, autour de 22 km/h. Cecotec annonce 35 km pour un pilote de 70 kg sur le plat."
+  },
+  {
+   "q": "Quelle taille de pneu pour la Serie A Advance Connected ?",
+   "a": "Des pneus tubeless de 8,5 pouces. La cote complète n'est pas confirmée par les sources : lis-la sur le flanc de ton pneu avant d'en commander un."
+  },
+  {
+   "q": "Combien de temps pour recharger la Serie A Advance Connected ?",
+   "a": "5 heures selon la notice. Comme la batterie s'enlève, tu peux la recharger sans monter la trottinette chez toi."
+  },
+  {
+   "q": "Quelle différence entre la Serie A Advance Connected et la Serie A Connected ?",
+   "a": "Même moteur de 350 W, mais l'Advance a une batterie de 7,8 Ah (35 km annoncés) contre 6,4 Ah (25 km) pour la Serie A Connected. Les pneus ne sont pas forcément identiques : vérifie avant d'en commander."
+  },
+  {
+   "q": "Est-elle autorisée sur la route en France ?",
+   "a": "Oui : pas de siège et une vitesse bloquée à 25 km/h, elle reste dans les règles des trottinettes électriques. Pistes cyclables d'abord, jamais de trottoir, et tu dois avoir au moins 12 ans."
+  }
+ ],
+ "sources": [
+  {
+   "label": "Tien21 — Bongo Serie A Advance Connected",
+   "url": "https://www.tien21.es/cecotec-bongo-serie-a-advance-connected-35-km.html"
+  },
+  {
+   "label": "Notice Bongo Serie A Advance Connected (notice-facile)",
+   "url": "https://www.notice-facile.com/en/manual/710698/cecotec+bongo-serie-a-advance-connected"
+  },
+  {
+   "label": "Fnac Espagne — Bongo Serie A Advance Connected",
+   "url": "https://www.fnac.es/Patinete-electrico-Cecotec-Bongo-Serie-A-Advance-Connected-Deportes-de-motor-Patinete/a7064584"
+  },
+  {
+   "label": "Biciscope — patinetes Bongo Serie A",
+   "url": "https://www.biciscope.com/patinetes-bongo-serie-cecotec-opiniones-precios/"
+  },
+  {
+   "label": "Cecotec — batterie V2 Bongo Serie A Advance Connected",
+   "url": "https://cecotec.es/es/repuestos-movilidad/bater-a-v2-bongo-serie-a-advance-connected"
+  }
+ ]
+}

@@ -1,0 +1,125 @@
+{
+ "displayName": "Cecotec Bongo Serie M30 Connected",
+ "metaTitle": "Cecotec Bongo M30 Connected : fiche technique",
+ "metaDescription": "Cecotec Bongo Serie M30 Connected : 350 W (700 W en pointe), batterie 36 V 7,5 Ah 270 Wh, roues 8,5\" à chambre à air, disque arrière, app. Fiche et entretien.",
+ "intro": [
+  "La Bongo Serie M30 Connected est le modèle intermédiaire de la série M de Cecotec, sortie au printemps 2023 avec la M20. Elle ajoute à la M20 une batterie plus grande, une application et un système qui ajuste l'assistance dans les côtes. La M40 XL, plus endurante, garde le même moteur selon un testeur sur YouTube.",
+  "Moteur avant de 350 W (700 W en pointe), batterie de 36 V et 7,5 Ah (270 Wh) pour 30 km annoncés, vitesse limitée à 25 km/h. Elle roule sur des pneus de 8,5 pouces à chambre à air et freine avec un E-ABS régénératif à l'avant et un disque à l'arrière. Cecotec France l'affiche à 319 €."
+ ],
+ "specs": [
+  [
+   "Moteur",
+   "350 W nominaux, 700 W en pointe"
+  ],
+  [
+   "Vitesse",
+   "25 km/h"
+  ],
+  [
+   "Autonomie annoncée",
+   "jusqu'à 30 km (mode Eco, terrain plat, 80 kg)"
+  ],
+  [
+   "Batterie",
+   "36 V, 7,5 Ah, 270 Wh"
+  ],
+  [
+   "Poids",
+   "20 kg (selon Idealo)"
+  ],
+  [
+   "Charge max",
+   "100 kg selon la fiche technique Cecotec, 120 kg chez Euronics"
+  ],
+  [
+   "Roues",
+   "8,5 pouces, gonflables avec chambre à air"
+  ],
+  [
+   "Freins",
+   "E-ABS régénératif à l'avant + disque à l'arrière"
+  ],
+  [
+   "Suspension",
+   "Aucune"
+  ],
+  [
+   "Étanchéité",
+   "IPX4"
+  ],
+  [
+   "Temps de charge",
+   "4 à 5 h selon un test vidéo, 5 h 30 mesurées par un autre testeur, 4 à 8 h selon Idealo"
+  ],
+  [
+   "Connectivité",
+   "Application Bongo Smart"
+  ]
+ ],
+ "pros": [
+  "Accélération vive pour un 350 W, jugée « brutale » en test (review YouTube).",
+  "Tient 19 à 20 km/h dans une côte raide (test vidéo YouTube).",
+  "Application complète pour régler vitesse et modes (test vidéo YouTube).",
+  "Aucun souci de pneus après 5 mois d'usage en ville (test longue durée YouTube)."
+ ],
+ "cons": [
+  "Aucune autonomie mesurée publiée : les 30 km sont une annonce de Cecotec.",
+  "Charge max de 100 kg sur la fiche officielle, limite pour un pilote chargé.",
+  "Pas de suspension.",
+  "Recharge assez lente, environ 5 h 30 mesurées en test (review YouTube)."
+ ],
+ "parts": [],
+ "care": [
+  "Tes pneus ont une chambre à air : vérifie la pression chaque semaine, c'est la première cause de crevaison par pincement.",
+  "Le frein régénératif avant soulage le disque arrière, mais contrôle quand même les plaquettes tous les 500 km.",
+  "Garde l'application à jour : elle sert aussi à repérer un défaut de batterie ou de moteur."
+ ],
+ "price": {
+  "text": "Prix affiché sur les boutiques Cecotec France et Espagne : 319 €. À sa sortie en 2023, les testeurs le trouvaient entre 250 et 339 € en promotion.",
+  "source": "storececotec.fr, cecotec.es, YouTube"
+ },
+ "faq": [
+  {
+   "q": "Quelle taille de pneu pour la Cecotec Bongo M30 Connected ?",
+   "a": "Des pneus gonflables de 8,5 pouces avec chambre à air. Avant de commander, lis la cote exacte sur le flanc de ton pneu."
+  },
+  {
+   "q": "Combien de temps pour charger la Bongo M30 Connected ?",
+   "a": "Entre 4 et 5 h selon une présentation vidéo ; un testeur a mesuré environ 5 h 30 pour une charge complète."
+  },
+  {
+   "q": "Quelle autonomie pour la M30 Connected ?",
+   "a": "Cecotec annonce 30 km en mode Eco avec 80 kg sur le plat. Aucune mesure indépendante n'a été publiée ; en mode Sport, attends-toi à moins."
+  },
+  {
+   "q": "Quelle différence entre la Bongo M30 Connected et la M20 ?",
+   "a": "La M30 a 7,5 Ah de batterie (30 km annoncés), un moteur qui monte à 700 W en pointe et une application. La M20 a 5 Ah, 500 W en pointe, et pas d'application."
+  },
+  {
+   "q": "Où rouler avec la M30 Connected en France ?",
+   "a": "Elle est limitée à 25 km/h et n'a pas de siège : elle se conduit comme tout engin de déplacement personnel motorisé, sur piste cyclable ou chaussée, jamais sur le trottoir, à partir de 12 ans."
+  }
+ ],
+ "sources": [
+  {
+   "label": "Cecotec Espagne — Bongo Serie M30 Connected",
+   "url": "https://cecotec.es/es/patinetes-electricos/bongo-serie-m30-connected"
+  },
+  {
+   "label": "Cecotec France — Bongo Serie M30 Connected",
+   "url": "https://www.storececotec.fr/fr/trottinettes-electriques/bongo-serie-m30-connected"
+  },
+  {
+   "label": "Cecotec — fiche technique M30 Connected (PDF)",
+   "url": "https://cdn.cecotec.cloud/media/files/bongo-serie-m30-connected_technical_specs_es.pdf"
+  },
+  {
+   "label": "Euronics — Bongo Serie M30 Connected",
+   "url": "https://www.euronics.es/cecotec-bongo-serie-m30-connected-patinete-electrico2.html"
+  },
+  {
+   "label": "Idealo Espagne — Bongo Serie M30 Connected",
+   "url": "https://www.idealo.es/precios/210698911/cecotec-bongo-serie-m30-connected-coloring-tech-eu.html"
+  }
+ ]
+}

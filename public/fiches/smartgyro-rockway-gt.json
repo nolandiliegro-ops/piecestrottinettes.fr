@@ -1,0 +1,126 @@
+{
+  "displayName": "Smartgyro Rockway GT",
+  "metaTitle": "Smartgyro Rockway GT : fiche technique et entretien",
+  "metaDescription": "Smartgyro Rockway GT : moteur 800 W (1 800 W en pointe), batterie 48 V 15 Ah, pneus tubeless 10\", deux freins à disque, double suspension. Fiche et entretien.",
+  "intro": [
+    "La Rockway GT est le modèle intermédiaire de la gamme Rockway GT de Smartgyro, marque espagnole, présentée fin 2025. Elle se place entre la Rockway GL et la Rockway GTS, et à ne pas confondre avec la Rockway GT Dual, qui a deux moteurs, ni avec les anciennes Rockway.",
+    "Moteur arrière de 800 W nominaux (1 800 W en pointe), batterie de 48 V 15 Ah (720 Wh), pneus tubeless mixtes de 10 pouces, deux freins à disque avec frein régénératif et suspension à ressort réglable. Smartgyro annonce 60 km ; un testeur en a fait 42. Elle est bridée à 25 km/h."
+  ],
+  "specs": [
+    [
+      "Moteur",
+      "800 W (1 800 W en pointe), arrière"
+    ],
+    [
+      "Vitesse",
+      "25 km/h"
+    ],
+    [
+      "Autonomie annoncée",
+      "jusqu'à 60 km"
+    ],
+    [
+      "Autonomie constatée",
+      "42 km au mode le plus puissant, pilote de 60 kg (StratosTech)"
+    ],
+    [
+      "Batterie",
+      "48 V, 15 Ah, 720 Wh"
+    ],
+    [
+      "Poids",
+      "28 kg selon Repsol et StratosTech, 29,5 kg selon Escotr"
+    ],
+    [
+      "Roues",
+      "10 pouces, tubeless mixtes"
+    ],
+    [
+      "Freins",
+      "Disque avant + disque arrière + frein régénératif"
+    ],
+    [
+      "Suspension",
+      "Ressorts avant et arrière, réglables"
+    ],
+    [
+      "Étanchéité",
+      "IPX4 (fiches revendeurs)"
+    ],
+    [
+      "Temps de charge",
+      "jusqu'à 8 h"
+    ]
+  ],
+  "pros": [
+    "Accélération vive et bonne tenue en côte pour un monomoteur (StratosTech).",
+    "Suspension souple et réglable (StratosTech).",
+    "Pneus mixtes, plateau long et large, éclairage complet (tests vidéo YouTube)."
+  ],
+  "cons": [
+    "Environ 28 kg : un testeur rappelle qu'elle n'a rien d'une trottinette légère (vidéo YouTube).",
+    "Autonomie constatée de 42 km pour 60 km annoncés (StratosTech).",
+    "Elle cale avant le sommet sur les côtes extrêmes que passent les bimoteurs (StratosTech).",
+    "Aucune charge maximale publiée dans les sources consultées."
+  ],
+  "parts": [],
+  "care": [
+    "Règle la précharge des ressorts selon ton poids : trop souple, la trottinette talonne ; trop dure, tu perds du confort.",
+    "Pneus tubeless : contrôle la pression chaque mois et cherche les petits clous avant qu'ils ne vident le pneu.",
+    "Après une sortie sous la pluie, essuie les disques et vérifie que les plaquettes ne crissent pas."
+  ],
+  "price": {
+    "text": "Prix public en Espagne : 699 € sur la boutique Smartgyro au moment de la consultation (799 € à l'annonce).",
+    "source": "smartgyro.es"
+  },
+  "faq": [
+    {
+      "q": "Quelle taille de pneu pour la Smartgyro Rockway GT ?",
+      "a": "Des pneus tubeless mixtes de 10 pouces. La dimension complète n'est pas publiée : regarde la cote sur le flanc de ton pneu avant de commander."
+    },
+    {
+      "q": "Quelle autonomie réelle pour la Rockway GT ?",
+      "a": "Smartgyro annonce 60 km. Un testeur de 60 kg a fait 42 km au mode le plus puissant, à 25 km/h, en montées et descentes. Un autre parle de 35 à 40 km en usage normal."
+    },
+    {
+      "q": "Combien de temps pour recharger la Rockway GT ?",
+      "a": "Jusqu'à 8 heures selon Smartgyro."
+    },
+    {
+      "q": "Quelle différence entre la Rockway GT et la Rockway GT Dual ?",
+      "a": "La GT a un seul moteur de 800 W à l'arrière et annonce 60 km. La GT Dual a deux moteurs de 500 W, un par roue, et annonce 50 km avec la même batterie de 15 Ah."
+    },
+    {
+      "q": "La Rockway GT est-elle homologuée pour la France ?",
+      "a": "Elle est bridée à 25 km/h, la vitesse maximale des trottinettes électriques en France, donc tu peux rouler avec telle qu'elle est livrée. La certification DGT annoncée est espagnole."
+    }
+  ],
+  "sources": [
+    {
+      "label": "Smartgyro — Rockway GT",
+      "url": "https://smartgyro.es/single-motor/patinete-electrico-smartgyro-rockway-gt"
+    },
+    {
+      "label": "Smartgyro — présentation de la Rockway GT",
+      "url": "https://smartgyro.es/blog/entradas/asi-es-el-nuevo-smartgyro-rockway-gt"
+    },
+    {
+      "label": "Repsol — Smartgyro Rockway GT",
+      "url": "https://www.repsol.es/tienda/producto/patinete-electrico-smartgyro-rockway-gt/"
+    },
+    {
+      "label": "Escotr — fiche Smartgyro Rockway GT",
+      "url": "https://fichas.escotr.com/en/details-smartgyro-rockway-gt-01KR682MHQH6C75H255CHC0BXM"
+    },
+    {
+      "label": "YouTube — Rockway GT 2026, pruebas extremas (StratosTech)",
+      "url": "https://www.youtube.com/watch?v=iAqp2QrzWQw"
+    }
+  ],
+  "video": {
+    "id": "qY0_V8ALoPw",
+    "title": "Mi experiencia con el smartGyro Rockway GT, ¿un patín MUY potente? | Review",
+    "channel": "StratosTech",
+    "uploadDate": "2026-02-08"
+  }
+}
