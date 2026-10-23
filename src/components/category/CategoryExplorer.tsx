@@ -9,7 +9,8 @@
 import { useSelectedCompatIds, compatFirst } from "@/hooks/useSelectedCompatIds";
 import { useEffect, useMemo, useState } from "react";
 import { useQuery } from "@tanstack/react-query";
-import { Search, X, ChevronLeft } from "lucide-react";
+import { Search, X, ChevronLeft, ChevronDown } from "lucide-react";
+import { inchOfSize, inchLabel } from "@/lib/tireSize";
 import { supabase } from "@/integrations/supabase/client";
 import { useSelectedScooter } from "@/contexts/ScooterContext";
 import { classifyCompat } from "@/lib/compatibilityStatus";
@@ -87,6 +88,25 @@ const sizeOf = (slug: string, name: string): string | null => {
   return null;
 };
 const sizeNum = (s: string) => parseFloat(s.replace(/[^\d.]/g, "")) || 0;
+const TIRE_SLUGS = ["pneus", "pneus-pleins", "chambres-a-air"];
+/** Diamètre de roue (pouces, au demi) d'une pièce pneu/chambre, lu dans son nom (24/10 : regrouper les ~70 tailles). */
+const inchOfPart = (name: string): number | null => {
+  const n = name.replace(/,/g, ".");
+  const metric = n.match(/\b(\d{2,3})\/(\d{2})\s*-\s*(\d+(?:\.\d+)?)/);
+  if (metric) return inchOfSize(`${metric[1]}/${metric[2]}`, metric[3]);
+  const m = n.match(/\b(\d{1,3}(?:\.\d+)?)\s?[x×]\s?(\d{1,3}(?:\.\d+)?)/i);
+  if (m) return inchOfSize(`${m[1]}x${m[2]}`, "");
+  return null;
+};
+/** 24/10 : 5 compositions de la zone de filtres (?filtres=1..5) ; sans paramètre = rendu actuel. */
+const readFiltresVariant = (): number => {
+  try {
+    const n = Number(new URLSearchParams(window.location.search).get("filtres"));
+    return n >= 1 && n <= 5 ? n : 0;
+  } catch {
+    return 0;
+  }
+};
 
 const Plate = ({ on, onClick, children }: { on: boolean; onClick: () => void; children: React.ReactNode }) => (
   <button type="button" onClick={onClick} aria-pressed={on}
@@ -144,8 +164,13 @@ const CategoryExplorer = ({ slug, name, parts }: Props) => {
   const [model, setModel] = useState<string | null>(null); // modèle choisi (étape 2), filtre
   const [size, setSize] = useState<string | null>(null);
   const [allBrands, setAllBrands] = useState(false);
+  const [variant] = useState(readFiltresVariant);
+  const [inch, setInch] = useState<number | null>(null);
+  const [moreSizes, setMoreSizes] = useState(false);
+  const [tab, setTab] = useState<"trott" | "taille">("taille");
+  const [pop, setPop] = useState<null | "trott" | "taille">(null);
   const [visible, setVisible] = useState(12);
-  useEffect(() => { setQ(""); setBrand(null); setModel(null); setSize(null); setVisible(12); }, [slug]);
+  useEffect(() => { setQ(""); setBrand(null); setModel(null); setSize(null); setInch(null); setMoreSizes(false); setVisible(12); }, [slug]);
   useEffect(() => setVisible(12), [q, model, size]);
   // Trottinette du garage / sélecteur : présélectionnée si elle a des pièces ici.
   useEffect(() => { if (selectedScooter && modelMap[selectedScooter.id] && !model) { setModel(selectedScooter.id); setBrand(modelMap[selectedScooter.id].brand); } }, [selectedScooter, modelMap]); // eslint-disable-line react-hooks/exhaustive-deps
@@ -164,6 +189,22 @@ const CategoryExplorer = ({ slug, name, parts }: Props) => {
     return [...m.entries()].sort((a, b) => sizeNum(a[0]) - sizeNum(b[0]));
   }, [parts, slug, model, modelMap]);
 
+  const isTire = TIRE_SLUGS.includes(slug);
+  /** Taille → diamètre ; diamètres présents (pneus / chambres / pleins seulement). */
+  const sizeInch = useMemo(() => {
+    const m = new Map<string, number | null>();
+    if (!isTire) return m;
+    parts.forEach((p) => { const sz = sizeOf(slug, p.name); if (sz && !m.has(sz)) m.set(sz, inchOfPart(p.name)); });
+    return m;
+  }, [parts, slug, isTire]);
+  const inches = useMemo(() => {
+    const c = new Map<number, number>();
+    sizes.forEach(([sz, n]) => { const i = sizeInch.get(sz); if (i != null && i >= 6 && i <= 14) c.set(i, (c.get(i) ?? 0) + n); });
+    return [...c.entries()].sort((a, b) => a[0] - b[0]);
+  }, [sizes, sizeInch]);
+  const sizesByCount = useMemo(() => [...sizes].sort((a, b) => b[1] - a[1]), [sizes]);
+  const sizesOfInch = inch == null ? sizesByCount : sizesByCount.filter(([sz]) => sizeInch.get(sz) === inch);
+
   const norm = (s: string) => s.toLowerCase().normalize("NFD").replace(/[̀-ͯ]/g, "").replace(/,/g, ".");
   const compatIds = useSelectedCompatIds();
   const shown = useMemo(() => {
@@ -176,6 +217,208 @@ const CategoryExplorer = ({ slug, name, parts }: Props) => {
   }, [parts, model, modelMap, size, q, slug, compatIds]);
 
   const brandList = allBrands ? brands : brands.slice(0, 10);
+
+
+  /* ─── Zone de filtres : rendu d'origine (0) et 5 compositions (?filtres=1..5), 24/10 ─── */
+  const origTrott = (
+    <>
+          {brands.length > 0 && (
+            <div className="mt-5">
+              <Label>Ta trottinette</Label>
+              {model && modelMap[model] ? (
+                <div className="flex flex-wrap items-center gap-2">
+                  <Plate on onClick={() => { setModel(null); setSize(null); }}>{modelMap[model].brandName} {modelMap[model].name.replace(new RegExp(`^${modelMap[model].brandName}\\s+`, "i"), "")} <Num n={modelMap[model].parts.size} on /> <X className="w-4 h-4" /></Plate>
+                  <span className="text-sm text-gray-600" style={{ fontFamily: FONT }}>Seules les pièces vérifiées pour ce modèle sont affichées.</span>
+                </div>
+              ) : brand ? (
+                <>
+                  <div className="flex flex-wrap gap-2">
+                    <button type="button" onClick={() => setBrand(null)} className="inline-flex items-center gap-1 h-11 pl-2 pr-3 text-sm font-bold" style={{ fontFamily: FONT, color: CARBON }}><ChevronLeft className="w-4 h-4" />{brands.find((x) => x.slug === brand)?.name}</button>
+                    {brandModels.map((m) => (
+                      <Plate key={m.id} on={false} onClick={() => { setModel(m.id); setSize(null); }}>{m.name.replace(new RegExp(`^${m.brandName}\\s+`, "i"), "")} <Num n={m.parts.size} on={false} /></Plate>
+                    ))}
+                  </div>
+                  <p className="mt-2 text-sm text-gray-600" style={{ fontFamily: FONT }}>Choisis ton modèle : chaque modèle a ses propres tailles.</p>
+                </>
+              ) : (
+                <>
+                  <div className="flex flex-wrap gap-2">
+                    {brandList.map((b) => (
+                      <Plate key={b.slug} on={false} onClick={() => setBrand(b.slug)}>{b.name} <span className="text-sm font-semibold text-gray-500">{b.n} modèle{b.n > 1 ? "s" : ""}</span></Plate>
+                    ))}
+                    {brands.length > 10 && (
+                      <button type="button" onClick={() => setAllBrands(!allBrands)} className="h-11 px-3 text-sm font-bold underline" style={{ fontFamily: FONT, color: CARBON }}>
+                        {allBrands ? "Moins" : `+ ${brands.length - 10} marques`}
+                      </button>
+                    )}
+                  </div>
+                  <p className="mt-2 text-sm text-gray-600" style={{ fontFamily: FONT }}>Choisis ta marque, puis ton modèle.</p>
+                </>
+              )}
+            </div>
+          )}
+
+    </>
+  );
+  const origSize = (
+    <>
+          {(sizes.length > 1 || (size && sizes.length > 0)) && (
+            <div className="mt-5">
+              <Label>Par taille</Label>
+              <div className="flex gap-2 overflow-x-auto -mx-4 px-4 md:mx-0 md:px-0 md:flex-wrap pb-1" style={{ scrollbarWidth: "none" }}>
+                {sizes.map(([s, n]) => (
+                  <Plate key={s} on={size === s} onClick={() => setSize(size === s ? null : s)}>{s} <Num n={n} on={size === s} /></Plate>
+                ))}
+              </div>
+            </div>
+          )}
+    </>
+  );
+  const chosenModel = model && modelMap[model] ? modelMap[model] : null;
+  const modelLabel = chosenModel ? `${chosenModel.brandName} ${chosenModel.name.replace(new RegExp(`^${chosenModel.brandName}\\s+`, "i"), "")}` : null;
+  /** Choix marque → modèle compact, en deux listes déroulantes natives (lisible au pouce, 0 pastille). */
+  const trottSelects = (
+    <div className="flex flex-wrap items-center gap-2">
+      <select value={brand ?? ""} onChange={(e) => { setBrand(e.target.value || null); setModel(null); setSize(null); }} aria-label="Marque de ta trottinette"
+        className="h-11 pl-3 pr-8 text-sm font-bold bg-white" style={{ fontFamily: FONT, color: CARBON, clipPath: CHAMFER, boxShadow: `inset 0 0 0 1px ${LINE}` }}>
+        <option value="">Marque…</option>
+        {brands.map((b) => <option key={b.slug} value={b.slug}>{b.name} ({b.n})</option>)}
+      </select>
+      <select value={model ?? ""} disabled={!brand} onChange={(e) => { setModel(e.target.value || null); setSize(null); setInch(null); }} aria-label="Modèle de ta trottinette"
+        className="h-11 pl-3 pr-8 text-sm font-bold bg-white disabled:opacity-50" style={{ fontFamily: FONT, color: CARBON, clipPath: CHAMFER, boxShadow: `inset 0 0 0 1px ${LINE}` }}>
+        <option value="">Modèle…</option>
+        {brandModels.map((m) => <option key={m.id} value={m.id}>{m.name.replace(new RegExp(`^${m.brandName}\\s+`, "i"), "")} ({m.parts.size})</option>)}
+      </select>
+      {chosenModel && <button type="button" onClick={() => { setModel(null); setBrand(null); setSize(null); }} className="h-11 px-2 text-sm font-bold underline" style={{ fontFamily: FONT, color: CARBON }}>Effacer</button>}
+    </div>
+  );
+  const inchRow = inches.length > 1 && (
+    <div className="flex flex-wrap gap-2">
+      {inches.map(([i, n]) => (
+        <button key={i} type="button" onClick={() => { setInch(inch === i ? null : i); setSize(null); setMoreSizes(false); }} aria-pressed={inch === i}
+          className="min-w-[64px] h-14 px-3 flex flex-col items-center justify-center leading-none"
+          style={{ fontFamily: FONT, clipPath: CHAMFER, background: inch === i ? CARBON : "#fff", color: inch === i ? "#fff" : CARBON, boxShadow: inch === i ? "none" : `inset 0 0 0 1px ${LINE}` }}>
+          <span className="text-lg font-extrabold">{inchLabel(i)}</span>
+          <span className="text-sm mt-1 opacity-70">{n} réf.</span>
+        </button>
+      ))}
+    </div>
+  );
+  const sizeChips = (list: [string, number][], limit: number) => (
+    <div className="flex flex-wrap gap-2">
+      {(moreSizes ? list : list.slice(0, limit)).map(([sz, n]) => (
+        <Plate key={sz} on={size === sz} onClick={() => setSize(size === sz ? null : sz)}>{sz} <Num n={n} on={size === sz} /></Plate>
+      ))}
+      {list.length > limit && !moreSizes && (
+        <button type="button" onClick={() => setMoreSizes(true)} className="h-11 px-3 text-sm font-bold underline" style={{ fontFamily: FONT, color: CARBON }}>+ {list.length - limit} tailles</button>
+      )}
+    </div>
+  );
+  const hint = (t: string) => <p className="mt-2 text-sm text-gray-600" style={{ fontFamily: FONT }}>{t}</p>;
+  const showSizes = sizes.length > 1 || (size && sizes.length > 0);
+
+  let filtersZone: React.ReactNode;
+  if (variant === 0) {
+    filtersZone = <>{origTrott}{origSize}</>;
+  } else if (variant === 1) {
+    // 1 · Repassé : mêmes blocs, la liste des tailles réduite aux 8 plus vendues (+ le reste replié), 6 marques.
+    filtersZone = (
+      <>
+        {brands.length > 0 && <div className="mt-5"><Label>Ta trottinette</Label>{trottSelects}</div>}
+        {showSizes && <div className="mt-5"><Label>Les tailles les plus demandées</Label>{sizeChips(sizesByCount, 8)}</div>}
+      </>
+    );
+  } else if (variant === 2) {
+    // 2 · Diamètre d'abord : la roue, puis la taille exacte (pneus / chambres / pleins) ; sinon tailles directes.
+    filtersZone = (
+      <>
+        {showSizes && (
+          <div className="mt-5">
+            <Label>{isTire && inches.length > 1 ? "1 · Ta roue fait" : "Taille"}</Label>
+            {isTire && inches.length > 1 ? (
+              <>
+                {inchRow}
+                <div className="mt-4"><Label>2 · Ce qui est écrit sur le flanc</Label>{inch == null ? hint("Choisis d'abord le diamètre de ta roue.") : sizeChips(sizesOfInch, 8)}</div>
+              </>
+            ) : sizeChips(sizesByCount, 10)}
+          </div>
+        )}
+        {brands.length > 0 && <div className="mt-5"><Label>Ou par ta trottinette</Label>{trottSelects}</div>}
+      </>
+    );
+  } else if (variant === 3) {
+    // 3 · Onglets : un seul chemin ouvert à la fois.
+    filtersZone = (
+      <div className="mt-5">
+        <div className="flex gap-1.5">
+          {([["taille", "Par taille"], ["trott", "Par ma trottinette"]] as const).filter(([k]) => k === "trott" ? brands.length > 0 : showSizes).map(([k, l]) => (
+            <button key={k} type="button" onClick={() => setTab(k)} aria-pressed={tab === k}
+              className="h-11 px-4 text-sm font-extrabold uppercase tracking-[0.06em]"
+              style={{ fontFamily: FONT, clipPath: CHAMFER, background: tab === k ? CARBON : "#fff", color: tab === k ? "#fff" : CARBON, boxShadow: tab === k ? "none" : `inset 0 0 0 1px ${LINE}` }}>{l}</button>
+          ))}
+        </div>
+        <div className="mt-3 p-4 bg-white" style={{ boxShadow: `inset 0 0 0 1px ${LINE}`, clipPath: "polygon(0 0, calc(100% - 14px) 0, 100% 14px, 100% 100%, 0 100%)" }}>
+          {tab === "trott" ? <>{trottSelects}{hint("Seules les pièces vérifiées pour ton modèle restent affichées.")}</> : (
+            isTire && inches.length > 1 ? <>{inchRow}{inch != null && <div className="mt-3">{sizeChips(sizesOfInch, 10)}</div>}</> : sizeChips(sizesByCount, 10)
+          )}
+        </div>
+      </div>
+    );
+  } else if (variant === 4) {
+    // 4 · Barre de filtres : deux boutons déroulants, comme la page Trottinettes (PUISSANCE ▾…).
+    const btn = (k: "trott" | "taille", label: string, value: string | null) => (
+      <button type="button" onClick={() => setPop(pop === k ? null : k)} aria-expanded={pop === k}
+        className="inline-flex items-center gap-2 h-11 pl-3.5 pr-3 text-sm font-extrabold uppercase tracking-[0.04em] max-w-[260px]"
+        style={{ fontFamily: FONT, clipPath: CHAMFER, background: value ? CARBON : "#fff", color: value ? "#fff" : CARBON, boxShadow: value ? "none" : `inset 0 0 0 1px ${LINE}` }}>
+        <span className="truncate">{value ?? label}</span><ChevronDown className={`w-4 h-4 shrink-0 transition-transform ${pop === k ? "rotate-180" : ""}`} />
+      </button>
+    );
+    filtersZone = (
+      <div className="mt-5">
+        <div className="flex flex-wrap gap-2">
+          {brands.length > 0 && btn("trott", "Ma trottinette", modelLabel)}
+          {showSizes && btn("taille", "Taille", size ?? (inch != null ? inchLabel(inch) : null))}
+          {(model || size || inch != null) && <button type="button" onClick={() => { setModel(null); setBrand(null); setSize(null); setInch(null); }} className="h-11 px-2 text-sm font-bold underline" style={{ fontFamily: FONT, color: CARBON }}>Tout effacer</button>}
+        </div>
+        {pop && (
+          <div className="mt-2 p-4 bg-white max-w-3xl" style={{ boxShadow: `inset 0 0 0 1px ${LINE}, 0 12px 30px rgba(0,0,0,0.08)` }}>
+            {pop === "trott" ? trottSelects : isTire && inches.length > 1 ? <>{inchRow}<div className="mt-3">{sizeChips(sizesOfInch, 10)}</div></> : sizeChips(sizesByCount, 12)}
+          </div>
+        )}
+      </div>
+    );
+  } else {
+    // 5 · Carte « Flanc » : une seule question mise en avant, la trottinette en ligne secondaire.
+    filtersZone = (
+      <div className="mt-5 p-4 md:p-5" style={{ background: CARBON, clipPath: "polygon(0 0, calc(100% - 16px) 0, 100% 16px, 100% 100%, 0 100%)" }}>
+        <p className="text-lg md:text-xl uppercase text-white" style={{ fontFamily: UNB, fontWeight: 900, fontStyle: "italic" }}>{isTire ? "Quelle taille est écrite sur ton pneu ?" : "Ta taille"}</p>
+        {isTire && inches.length > 1 && (
+          <div className="mt-3 flex flex-wrap gap-2">
+            {inches.map(([i]) => (
+              <button key={i} type="button" onClick={() => { setInch(inch === i ? null : i); setSize(null); setMoreSizes(false); }} aria-pressed={inch === i}
+                className="min-w-[56px] h-11 px-3 text-base font-extrabold" style={{ fontFamily: FONT, clipPath: CHAMFER, background: inch === i ? GREEN : "#2A2A2A", color: "#fff" }}>{inchLabel(i)}</button>
+            ))}
+          </div>
+        )}
+        <div className="mt-3 grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-2">
+          {(moreSizes ? sizesOfInch : sizesOfInch.slice(0, 6)).map(([sz, n]) => (
+            <button key={sz} type="button" onClick={() => setSize(size === sz ? null : sz)} aria-pressed={size === sz}
+              className="min-h-[60px] px-3 py-2 text-left" style={{ clipPath: CHAMFER, background: size === sz ? GREEN : "#2A2A2A", color: "#F5F0E8" }}>
+              <span className="block text-base font-extrabold tracking-[0.08em]" style={{ fontFamily: FONT }}>{sz}</span>
+              <span className="block text-sm text-white/60" style={{ fontFamily: FONT }}>{n} réf.</span>
+            </button>
+          ))}
+        </div>
+        {sizesOfInch.length > 6 && !moreSizes && <button type="button" onClick={() => setMoreSizes(true)} className="mt-2 h-11 text-sm font-bold text-white underline" style={{ fontFamily: FONT }}>+ {sizesOfInch.length - 6} tailles</button>}
+        {brands.length > 0 && (
+          <div className="mt-4 pt-4 flex flex-wrap items-center gap-3" style={{ borderTop: "1px solid rgba(255,255,255,0.12)" }}>
+            <span className="text-sm font-bold text-white/80" style={{ fontFamily: FONT }}>Ou ta trottinette :</span>
+            {trottSelects}
+          </div>
+        )}
+      </div>
+    );
+  }
 
   return (
     <>
@@ -218,52 +461,7 @@ const CategoryExplorer = ({ slug, name, parts }: Props) => {
             {q && <button type="button" onClick={() => setQ("")} aria-label="Effacer" className="w-10 h-10 flex items-center justify-center"><X className="w-4 h-4 text-gray-500" /></button>}
           </label>
 
-          {brands.length > 0 && (
-            <div className="mt-5">
-              <Label>Ta trottinette</Label>
-              {model && modelMap[model] ? (
-                <div className="flex flex-wrap items-center gap-2">
-                  <Plate on onClick={() => { setModel(null); setSize(null); }}>{modelMap[model].brandName} {modelMap[model].name.replace(new RegExp(`^${modelMap[model].brandName}\\s+`, "i"), "")} <Num n={modelMap[model].parts.size} on /> <X className="w-4 h-4" /></Plate>
-                  <span className="text-sm text-gray-600" style={{ fontFamily: FONT }}>Seules les pièces vérifiées pour ce modèle sont affichées.</span>
-                </div>
-              ) : brand ? (
-                <>
-                  <div className="flex flex-wrap gap-2">
-                    <button type="button" onClick={() => setBrand(null)} className="inline-flex items-center gap-1 h-11 pl-2 pr-3 text-sm font-bold" style={{ fontFamily: FONT, color: CARBON }}><ChevronLeft className="w-4 h-4" />{brands.find((x) => x.slug === brand)?.name}</button>
-                    {brandModels.map((m) => (
-                      <Plate key={m.id} on={false} onClick={() => { setModel(m.id); setSize(null); }}>{m.name.replace(new RegExp(`^${m.brandName}\\s+`, "i"), "")} <Num n={m.parts.size} on={false} /></Plate>
-                    ))}
-                  </div>
-                  <p className="mt-2 text-sm text-gray-600" style={{ fontFamily: FONT }}>Choisis ton modèle : chaque modèle a ses propres tailles.</p>
-                </>
-              ) : (
-                <>
-                  <div className="flex flex-wrap gap-2">
-                    {brandList.map((b) => (
-                      <Plate key={b.slug} on={false} onClick={() => setBrand(b.slug)}>{b.name} <span className="text-sm font-semibold text-gray-500">{b.n} modèle{b.n > 1 ? "s" : ""}</span></Plate>
-                    ))}
-                    {brands.length > 10 && (
-                      <button type="button" onClick={() => setAllBrands(!allBrands)} className="h-11 px-3 text-sm font-bold underline" style={{ fontFamily: FONT, color: CARBON }}>
-                        {allBrands ? "Moins" : `+ ${brands.length - 10} marques`}
-                      </button>
-                    )}
-                  </div>
-                  <p className="mt-2 text-sm text-gray-600" style={{ fontFamily: FONT }}>Choisis ta marque, puis ton modèle.</p>
-                </>
-              )}
-            </div>
-          )}
-
-          {(sizes.length > 1 || (size && sizes.length > 0)) && (
-            <div className="mt-5">
-              <Label>Par taille</Label>
-              <div className="flex gap-2 overflow-x-auto -mx-4 px-4 md:mx-0 md:px-0 md:flex-wrap pb-1" style={{ scrollbarWidth: "none" }}>
-                {sizes.map(([s, n]) => (
-                  <Plate key={s} on={size === s} onClick={() => setSize(size === s ? null : s)}>{s} <Num n={n} on={size === s} /></Plate>
-                ))}
-              </div>
-            </div>
-          )}
+          {filtersZone}
         </div>
       </section>
 
