@@ -1,6 +1,6 @@
 /**
- * Barre du haut — 5 propositions (24/10/2026), UNIQUEMENT avec ?barre=1..5 (sans paramètre : Header actuel inchangé).
- * Retours Nolan : logo trop gras (→ lettrage affiné, /brand/logo-pt-2026-fin.svg), « Ma trottinette » pas clair,
+ * Barre du haut — 5 propositions (24/10/2026), ?barre=1..5 ; défaut = 2 « Logo au centre » (choix Nolan) ; ?barre=0 = ancienne barre.
+ * Retours Nolan : « Ma trottinette » pas clair,
  * « ? » sur le badge garage quand on n'est pas inscrit, « garage » pas compris comme un profil.
  * 1 Repassé · 2 Logo au centre · 3 Deux étages · 4 Tout dans la recherche · 5 Barre noire
  */
@@ -16,10 +16,13 @@ import ScooterSelectorSheet from "@/components/scooter/ScooterSelectorSheet";
 export type BarreVariant = 1 | 2 | 3 | 4 | 5;
 export const readBarreVariant = (): BarreVariant | null => {
   try {
-    const n = Number(new URLSearchParams(window.location.search).get("barre"));
-    return n >= 1 && n <= 5 ? (n as BarreVariant) : null;
+    // 24/10 : Nolan choisit la 2 « Logo au centre » = barre par défaut ; ?barre=0 = ancienne barre.
+    const raw = new URLSearchParams(window.location.search).get("barre");
+    if (raw === null) return 2;
+    const n = Number(raw);
+    return n >= 1 && n <= 5 ? (n as BarreVariant) : n === 0 ? null : 2;
   } catch {
-    return null;
+    return 2;
   }
 };
 
@@ -28,8 +31,9 @@ const CUT = "polygon(0 0, calc(100% - 8px) 0, 100% 8px, 100% 100%, 0 100%)";
 const CARBON = "#1A1A1A";
 const GREEN = "#4A7C59";
 const LINE = "#E2DCD0";
-const LOGO_FIN = "/brand/logo-pt-2026-fin.svg";
-const LOGO_FIN_NEG = "/brand/logo-pt-2026-fin-negatif.svg";
+// 24/10 : Nolan refuse le lettrage affiné → logo d'origine (Marqueur 2026), clair et négatif.
+const LOGO = "/brand/logo-pt-2026.svg";
+const LOGO_NEG = "/brand/logo-pt-2026-negatif.svg";
 
 const LINKS = [
   { label: "Pièces", href: "/catalogue" },
@@ -61,7 +65,7 @@ const HeaderProposals = ({ variant }: { variant: BarreVariant }) => {
 
   const logo = (h = "h-[40px] lg:h-[48px]") => (
     <Link to="/" aria-label="piecestrottinettes.fr — accueil" className="shrink-0 flex items-center">
-      <img src={dark ? LOGO_FIN_NEG : LOGO_FIN} alt="piecestrottinettes.fr" width={937} height={268} className={`block w-auto ${h}`} />
+      <img src={dark ? LOGO_NEG : LOGO} alt="piecestrottinettes.fr" width={937} height={268} className={`block w-auto ${h}`} />
     </Link>
   );
 
@@ -201,10 +205,11 @@ const HeaderProposals = ({ variant }: { variant: BarreVariant }) => {
   if (variant === 2) {
     return shell(
       <div className="grid grid-cols-[1fr_auto_1fr] items-center h-16 lg:h-20">
-        <div className="flex items-center gap-1">{burger}{links()}</div>
+        {/* Téléphone : menu + recherche à gauche, trott + profil à droite → 2 icônes de chaque côté, logo au centre exact. */}
+        <div className="flex items-center gap-1">{burger}<span className="lg:hidden">{searchIcon("")}</span>{links()}</div>
         {logo("h-[38px] lg:h-[50px]")}
         <div className="flex items-center justify-end gap-0.5 lg:gap-2">
-          {searchIcon("")}
+          <span className="hidden lg:inline-flex">{searchIcon("")}</span>
           {scooterBtn("icon")}
           {cart}
           <span className="hidden lg:inline-flex">{profileBtn({ in: "Profil rider", out: "Connexion" }, "text")}</span>

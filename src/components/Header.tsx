@@ -713,7 +713,7 @@ const HeaderLegacy = () => {
   );
 };
 
-/** 24/10 : propositions de barre ?barre=1..5 (HeaderProposals) ; sans paramètre, barre actuelle inchangée. */
+/** 24/10 : barre « Logo au centre » par défaut (HeaderProposals, ?barre=1..5) ; ?barre=0 = ancienne barre (HeaderLegacy). */
 const Header = () => {
   const [barre] = useState(readBarreVariant);
   return barre ? <HeaderProposals variant={barre} /> : <HeaderLegacy />;

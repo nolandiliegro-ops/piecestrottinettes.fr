@@ -55,9 +55,10 @@ const RiderPublicCard = lazy(() => import("./pages/RiderPublicCard"));
 const queryClient = new QueryClient();
 
 // Minimal loading fallback
+// 24/10 (Nolan) : pendant les chargements, le logo centré plutôt qu'une roue qui tourne. Respire doucement (opacité seule).
 const PageLoader = () => (
-  <div className="min-h-screen flex items-center justify-center bg-background">
-    <div className="w-8 h-8 border-2 border-primary border-t-transparent rounded-full animate-spin" />
+  <div className="min-h-screen flex items-center justify-center bg-background" role="status" aria-label="Chargement">
+    <img src="/brand/logo-pt-2026.svg" alt="" width={937} height={268} className="w-[220px] sm:w-[280px] h-auto animate-pulse motion-reduce:animate-none" />
   </div>
 );
 
