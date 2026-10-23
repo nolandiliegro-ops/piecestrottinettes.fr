@@ -1,5 +1,5 @@
 /**
- * Recherche du site — 5 propositions (24/10/2026), ?recherche=1..5 (sans paramètre : ancienne SpotlightCommand).
+ * Recherche du site (24/10/2026) : défaut = 5 « Vitrine » (choix Nolan) ; ?recherche=1..4 = autres propositions, ?recherche=0 = ancienne SpotlightCommand.
  * Même moteur pour les 5 (useSmartSearch) : instantané, fautes tolérées, résultats SÉPARÉS
  * (marque · trottinettes · pièces · familles) avec onglets et compteurs.
  * 1 Palette · 2 Plein écran · 3 Panneau · 4 Noir racing · 5 Vitrine
@@ -14,10 +14,13 @@ import { optimizedImage } from "@/lib/imageTransform";
 
 export const readRechercheVariant = (): number => {
   try {
-    const n = Number(new URLSearchParams(window.location.search).get("recherche"));
-    return n >= 1 && n <= 5 ? n : 0;
+    // 24/10 : Nolan choisit la 5 « Vitrine » (Marques gardées) = recherche par défaut ; ?recherche=0 = ancienne SpotlightCommand.
+    const raw = new URLSearchParams(window.location.search).get("recherche");
+    if (raw === null) return 5;
+    const n = Number(raw);
+    return n >= 0 && n <= 5 ? n : 5;
   } catch {
-    return 0;
+    return 5;
   }
 };
 

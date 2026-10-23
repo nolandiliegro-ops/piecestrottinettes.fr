@@ -55,7 +55,7 @@ const RiderPublicCard = lazy(() => import("./pages/RiderPublicCard"));
 
 const queryClient = new QueryClient();
 
-/** 24/10 : propositions de recherche ?recherche=1..5 (SmartSearch) ; sans paramètre = SpotlightCommand. */
+/** 24/10 : recherche « Vitrine » par défaut (SmartSearch) ; ?recherche=0 = ancienne SpotlightCommand. */
 const SearchOverlay = () => {
   const [v] = useState(readRechercheVariant);
   return v ? <SmartSearch variant={v} /> : <SpotlightCommand />;
