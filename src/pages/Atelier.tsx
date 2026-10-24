@@ -14,6 +14,20 @@ const CARBON = "#1A1A1A";
 const GREEN = "#4A7C59";
 const SITE = "https://piecestrottinettes.fr";
 
+/* 25/10 (Nolan : « la page atelier, c'est pas du tout la même DA que tout le site ») : la page garde sa mise en page
+ * mais prend le langage du site — coins coupés au lieu des arrondis, filet fin #E2DCD0 au lieu des ombres, boutons
+ * et pastilles à angle coupé. ?atelierda=0 = ancien rendu arrondi. */
+const DA_CSS = `
+.atelier-da :is(.rounded-2xl,.rounded-3xl,.rounded-xl){border-radius:0!important;clip-path:polygon(0 0,calc(100% - 14px) 0,100% 14px,100% 100%,0 100%)}
+@media (min-width:1024px){.atelier-da .lg\\:rounded-3xl{border-radius:0!important;clip-path:polygon(0 0,calc(100% - 22px) 0,100% 22px,100% 100%,0 100%)}}
+.atelier-da .shadow-md{box-shadow:inset 0 0 0 1px #E2DCD0!important}
+.atelier-da .hover\\:shadow-xl{transition:transform .2s ease,box-shadow .2s ease}
+.atelier-da .hover\\:shadow-xl:hover{box-shadow:inset 0 0 0 1px #4A7C59!important;transform:translateY(-2px)}
+.atelier-da :is(a,button).rounded-lg{border-radius:0!important;clip-path:polygon(0 0,calc(100% - 10px) 0,100% 10px,100% 100%,0 100%)}
+.atelier-da :is(input,textarea,select).rounded-lg{border-radius:0!important;border-color:#E2DCD0!important}
+.atelier-da a.rounded-full{border-radius:0!important;clip-path:polygon(0 0,calc(100% - 10px) 0,100% 10px,100% 100%,0 100%);border-color:#E2DCD0!important}
+`;
+
 /* 24/10/2026 — « L'Atelier » : le hub (guides, vidéos, tutos, questions). Plan claude/PT-lot-atelier-hub.md. */
 const Atelier = () => {
   const [params] = useSearchParams();
@@ -31,6 +45,7 @@ const Atelier = () => {
   // 24/10 : 5 propositions de haut de page derrière ?atelier=1..5 (Nolan : « ça va pas du tout… il manque des images »).
   // Sans paramètre : rendu d'origine (seul le décalage sous la barre fixe est corrigé).
   // Choix de Nolan le 24/10 : 2 « Grande photo » par défaut ; ?atelier=0 = ancien rendu.
+  const da = params.get("atelierda") !== "0";
   const rawV = params.get("atelier");
   const variant = rawV === null ? 2 : Math.max(0, Math.min(5, Number(rawV) || 0));
   // Photos maison (pas de vignette YouTube tierce en porte d'entrée : titres en langue étrangère).
@@ -195,7 +210,8 @@ const Atelier = () => {
   };
 
   return (
-    <div className="min-h-screen flex flex-col" style={{ backgroundColor: "#F5F0E8", fontFamily: FONT }}>
+    <div className={`min-h-screen flex flex-col${da ? " atelier-da" : ""}`} style={{ backgroundColor: "#F5F0E8", fontFamily: FONT }}>
+      {da && <style>{DA_CSS}</style>}
       <SEO
         title="L'Atelier : guides, vidéos et questions trottinette"
         description="Pose ta question à un atelier de réparation de trottinettes à Marseille. Guides d'achat, tutos et vidéos par modèle, avec les pièces compatibles."

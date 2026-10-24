@@ -54,7 +54,10 @@ const ORANGE = "#FF6600";
 const STONE = "#F2EFE8";
 const LINE = "#E2DCD0";
 const CUT = (px: number) => `polygon(0 0, calc(100% - ${px}px) 0, 100% ${px}px, 100% 100%, 0 100%)`;
-const BOOST: Record<string, number> = { plaquettes: 1.2, "disques-plaquettes": 1, disques: 0.9, chargeurs: 0.85, "chambres-a-air": 1.05 }; // 20/10 Nolan : disques et chargeurs « un chouïa gros », l'effet qui dépasse est gardé
+// 20/10 Nolan : disques et chargeurs « un chouïa gros », l'effet qui dépasse est gardé.
+// 25/10 Nolan : « les plaquettes sortent même sur le téléphone, plus petites ; les produits un peu plus courts, sans déborder »
+// → plaquettes 1.2 → 0.9, et largeur max × agrandissement ≤ 92 % de la carte pour toutes les familles.
+const BOOST: Record<string, number> = { plaquettes: 0.9, "disques-plaquettes": 0.9, disques: 0.85, chargeurs: 0.85, "chambres-a-air": 1.05 };
 const POS: Partial<Record<FitmentPosition, string>> = { avant: "Avant", arriere: "Arrière" };
 
 interface Props {
@@ -193,17 +196,17 @@ const PartCardAtelier = ({ part, look, position, hideCompat = false, className }
   // ── 1 · ÇA DÉPASSE (accueil à l'identique) ──
   if (look === 1) {
     return (
-      <div className={cn("group/pa relative pt-16 md:pt-20", className)} data-carte={1}>
-        <div className="absolute inset-x-0 top-0 h-[180px] md:h-[210px] z-[2] pointer-events-none flex items-center justify-center">
+      <div className={cn("group/pa relative pt-12 md:pt-16", className)} data-carte={1}>
+        <div className="absolute inset-x-0 top-0 h-[150px] md:h-[178px] z-[2] pointer-events-none flex items-center justify-center">
           {img && <span aria-hidden className="absolute -inset-x-[4%] top-0 bottom-[-6%] opacity-0 scale-75 transition-all duration-300 group-hover/pa:opacity-100 group-hover/pa:scale-100"
             style={{ background: "radial-gradient(closest-side, rgba(143,191,156,0.85), rgba(143,191,156,0.35) 55%, transparent 100%)" }} />}
           {img ? (
             <img src={display} alt={part.name} loading="lazy" decoding="async"
-              className={cn("relative h-full w-auto max-w-[94%] object-contain origin-bottom transition-transform duration-300 ease-out group-hover/pa:-translate-y-1.5 group-hover/pa:scale-[1.08] group-hover/pa:brightness-110", isOut && "grayscale-[60%] opacity-70")}
+              className={cn("relative h-full w-auto max-w-[88%] object-contain origin-bottom transition-transform duration-300 ease-out group-hover/pa:-translate-y-1.5 group-hover/pa:scale-[1.08] group-hover/pa:brightness-110", isOut && "grayscale-[60%] opacity-70")}
               style={{ filter: "drop-shadow(0 12px 14px rgba(0,0,0,0.16))", scale: String(BOOST[catSlug] ?? 1) }} />
           ) : <span className="text-3xl opacity-30">🔧</span>}
         </div>
-        <div className="relative pt-[124px] md:pt-[140px] transition-shadow duration-300 group-hover/pa:shadow-[0_14px_30px_rgba(26,26,26,0.12)]"
+        <div className="relative pt-[106px] md:pt-[120px] transition-shadow duration-300 group-hover/pa:shadow-[0_14px_30px_rgba(26,26,26,0.12)]"
           style={{ background: "#fff", boxShadow: badgeLook === 2 && showCompat ? `inset 0 0 0 2px ${GREEN}` : `inset 0 0 0 1px ${LINE}`, clipPath: CUT(14) }}>
           {stretched}
           {fav}

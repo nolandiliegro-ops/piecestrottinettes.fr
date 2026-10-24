@@ -260,18 +260,98 @@ const CatTile = ({ c, img, n, on, onClick, size = "md" }: { c: CatCategory | nul
 
 /** 17/10 : accès visible à la page de la catégorie (/categorie/:slug : présentation + toutes les références).
  *  Avant, seul un petit bouton au survol des anciennes cartes y menait — invisible sur téléphone. */
-const GuideLink = ({ cat, n }: { cat: CatCategory | undefined; n: number }) =>
-  cat ? (
-    <Link to={`/categorie/${cat.slug}`} className="mt-3 flex items-center gap-3 min-h-[52px] pl-4 pr-3 bg-white transition-transform hover:-translate-y-0.5"
+/* 25/10 (Nolan : « le bouton Tout sur les chambres à air, un peu light, pas très joli ») : 5 propositions ?guide=1..5.
+ * 0 = bandeau d'origine (défaut tant que Nolan n'a pas choisi).
+ * 1 AFFICHE   · bandeau carbone à coin coupé, photo de la famille qui dépasse à droite, titre Unbounded italique blanc
+ * 2 FICHE     · carte blanche, photo détourée à gauche, « Le guide de l'atelier » + titre + flèche dans un carré noir
+ * 3 TICKET    · carte beige foncé à bord pointillé, étiquette « GUIDE » noire, 3 repères en puces
+ * 4 PLEIN     · grande carte photo pleine largeur (famille détourée sur fond pierre), titre en gros dessous
+ * 5 LIGNE     · titre Unbounded italique souligné vert + flèche, sans cadre (le plus littéral : plus gros, pas plus chargé) */
+const readGuideLook = (): number => {
+  try { const n = Number(new URLSearchParams(window.location.search).get("guide")); return n >= 1 && n <= 5 ? n : 0; } catch { return 0; }
+};
+const TIPS: Record<string, string[]> = {
+  pneus: ["La taille sur le flanc", "Gonflable, tubeless ou plein", "La valve droite ou coudée"],
+  "pneus-pleins": ["Même taille que l'origine", "Plus de crevaison", "Un peu plus ferme"],
+  "chambres-a-air": ["La taille du pneu", "La forme de la valve", "Renforcée ou standard"],
+  plaquettes: ["La forme de l'étrier", "Organique ou fritté", "Par paire"],
+  disques: ["Le diamètre", "L'entraxe des trous", "L'épaisseur"],
+  chargeurs: ["La tension de la batterie", "La prise", "L'ampérage"],
+};
+const GuideLink = ({ cat, n, img }: { cat: CatCategory | undefined; n: number; img?: string }) => {
+  if (!cat) return null;
+  const look = readGuideLook();
+  const title = `Tout sur les ${cat.name.toLowerCase()}`;
+  const sub = `Les ${n} référence${n > 1 ? "s" : ""} et comment choisir`;
+  const to = `/categorie/${cat.slug}`;
+  const tips = TIPS[cat.slug] ?? ["Comment choisir", "Les tailles", "Les erreurs à éviter"];
+  if (look === 1) return (
+    <Link to={to} className="relative mt-3 flex items-center gap-3 min-h-[76px] pl-5 pr-28 sm:pr-36 py-3 transition-transform hover:-translate-y-0.5" style={{ background: CARBON, clipPath: CHAMFER }}>
+      <span className="flex-1 min-w-0">
+        <span className="block text-sm font-bold uppercase tracking-wider" style={{ fontFamily: FONT, color: "#8FC79E" }}>Le guide de l'atelier</span>
+        <span className="block text-base sm:text-lg uppercase leading-tight text-white" style={{ fontFamily: UNB, fontWeight: 900, fontStyle: "italic" }}>{title}</span>
+        <span className="block text-sm text-white/70" style={{ fontFamily: FONT }}>{sub}</span>
+      </span>
+      {img && <img src={img} alt="" className="absolute right-10 sm:right-12 top-1/2 -translate-y-1/2 h-[84px] sm:h-[96px] w-auto max-w-[110px] object-contain pointer-events-none" style={{ filter: "drop-shadow(0 8px 10px rgba(0,0,0,0.45))" }} />}
+      <ArrowRight className="absolute right-3 top-1/2 -translate-y-1/2 w-5 h-5 text-white" />
+    </Link>
+  );
+  if (look === 2) return (
+    <Link to={to} className="mt-3 flex items-stretch min-h-[84px] bg-white transition-transform hover:-translate-y-0.5" style={{ clipPath: CHAMFER, boxShadow: `inset 0 0 0 1px ${LINE}` }}>
+      <span className="shrink-0 w-[84px] sm:w-[104px] flex items-center justify-center" style={{ background: "#F2EFE8" }}>
+        {img ? <img src={img} alt="" className="max-w-[80%] max-h-[72px] object-contain" /> : <BookOpen className="w-7 h-7" style={{ color: GREEN }} />}
+      </span>
+      <span className="flex-1 min-w-0 px-4 py-3 flex flex-col justify-center">
+        <span className="text-sm font-bold uppercase tracking-wider" style={{ fontFamily: FONT, color: GREEN }}>Le guide de l'atelier</span>
+        <span className="text-base sm:text-lg font-extrabold leading-tight" style={{ fontFamily: FONT, color: CARBON }}>{title}</span>
+        <span className="text-sm text-gray-500 truncate" style={{ fontFamily: FONT }}>{sub}</span>
+      </span>
+      <span className="shrink-0 w-14 flex items-center justify-center" style={{ background: CARBON }}><ArrowRight className="w-5 h-5 text-white" /></span>
+    </Link>
+  );
+  if (look === 3) return (
+    <Link to={to} className="mt-3 block px-4 py-3 transition-transform hover:-translate-y-0.5" style={{ background: "#EDE7DB", border: `1.5px dashed #B8AE9C`, fontFamily: FONT }}>
+      <span className="flex items-center gap-2">
+        <span className="px-2 leading-6 text-sm font-extrabold uppercase tracking-wider text-white" style={{ background: CARBON, clipPath: "polygon(0 0, calc(100% - 6px) 0, 100% 6px, 100% 100%, 0 100%)" }}>Guide</span>
+        <span className="flex-1 min-w-0 text-base font-extrabold leading-tight truncate" style={{ color: CARBON }}>{title}</span>
+        <ArrowRight className="w-5 h-5 shrink-0" style={{ color: CARBON }} />
+      </span>
+      <span className="mt-2 flex flex-wrap gap-x-4 gap-y-1">
+        {tips.map((t) => <span key={t} className="inline-flex items-center gap-1.5 text-sm text-gray-700"><Check className="w-3.5 h-3.5" strokeWidth={3} style={{ color: GREEN }} />{t}</span>)}
+      </span>
+    </Link>
+  );
+  if (look === 4) return (
+    <Link to={to} className="mt-3 grid grid-cols-[1fr_auto] sm:grid-cols-[auto_1fr_auto] items-center gap-x-4 bg-white transition-transform hover:-translate-y-0.5" style={{ clipPath: CHAMFER, boxShadow: `inset 0 0 0 1px ${LINE}` }}>
+      <span className="col-span-2 sm:col-span-1 sm:row-span-1 h-[120px] sm:h-[112px] sm:w-[180px] flex items-center justify-center" style={{ background: "#F2EFE8" }}>
+        {img ? <img src={img} alt="" className="max-h-[96px] max-w-[70%] sm:max-w-[85%] object-contain" style={{ filter: "drop-shadow(0 10px 12px rgba(0,0,0,0.18))" }} /> : null}
+      </span>
+      <span className="min-w-0 px-4 sm:px-0 py-3">
+        <span className="block text-lg sm:text-xl uppercase leading-tight" style={{ fontFamily: UNB, fontWeight: 900, fontStyle: "italic", color: CARBON }}>{title}</span>
+        <span className="block mt-1 text-sm text-gray-500" style={{ fontFamily: FONT }}>{tips.join(" · ")}</span>
+      </span>
+      <span className="pr-4 py-3"><span className="w-11 h-11 flex items-center justify-center" style={{ background: CARBON, clipPath: "polygon(0 0, calc(100% - 8px) 0, 100% 8px, 100% 100%, 0 100%)" }}><ArrowRight className="w-5 h-5 text-white" /></span></span>
+    </Link>
+  );
+  if (look === 5) return (
+    <Link to={to} className="mt-4 group inline-flex items-center gap-2 min-h-[44px]">
+      <BookOpen className="w-5 h-5 shrink-0" style={{ color: GREEN }} />
+      <span className="text-base sm:text-lg uppercase leading-tight underline decoration-[3px] underline-offset-[6px]" style={{ fontFamily: UNB, fontWeight: 900, fontStyle: "italic", color: CARBON, textDecorationColor: GREEN }}>{title}</span>
+      <ArrowRight className="w-5 h-5 shrink-0 transition-transform group-hover:translate-x-1" style={{ color: CARBON }} />
+    </Link>
+  );
+  return (
+    <Link to={to} className="mt-3 flex items-center gap-3 min-h-[52px] pl-4 pr-3 bg-white transition-transform hover:-translate-y-0.5"
       style={{ clipPath: CHAMFER, boxShadow: `inset 4px 0 0 ${GREEN}, inset 0 0 0 1px ${LINE}` }}>
       <BookOpen className="w-5 h-5 shrink-0" style={{ color: GREEN }} />
       <span className="flex-1 min-w-0">
-        <span className="block text-sm font-extrabold uppercase tracking-wide truncate" style={{ fontFamily: FONT, color: CARBON }}>Tout sur les {cat.name.toLowerCase()}</span>
-        <span className="block text-sm text-gray-500 truncate" style={{ fontFamily: FONT }}>Les {n} références et comment choisir</span>
+        <span className="block text-sm font-extrabold uppercase tracking-wide truncate" style={{ fontFamily: FONT, color: CARBON }}>{title}</span>
+        <span className="block text-sm text-gray-500 truncate" style={{ fontFamily: FONT }}>{sub}</span>
       </span>
       <ArrowRight className="w-5 h-5 shrink-0" style={{ color: CARBON }} />
     </Link>
-  ) : null;
+  );
+};
 
 const CatalogueTop = (p: Props) => {
   const all = p.categories.reduce((n, c) => n + (p.counts[c.id] ?? 0), 0);
@@ -291,7 +371,7 @@ const CatalogueTop = (p: Props) => {
         {p.pickerBlock && <div className="max-w-2xl">{p.pickerBlock}</div>}
         <div className="mt-5 max-w-2xl"><SearchField value={p.query} onChange={p.onQuery} /></div>
         <div className={TUILE === 4 ? "mt-5 grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-8 gap-2" : TUILE === 2 ? "mt-5 grid grid-cols-3 sm:grid-cols-5 lg:grid-cols-9 gap-x-2 gap-y-3" : "mt-5 grid grid-cols-3 sm:grid-cols-5 lg:grid-cols-9 gap-2"}>{tiles()}</div>
-        {p.activeCategory && <div className="max-w-2xl"><GuideLink cat={p.categories.find((c) => c.id === p.activeCategory)} n={p.counts[p.activeCategory] ?? 0} /></div>}
+        {p.activeCategory && <div className="max-w-2xl"><GuideLink cat={p.categories.find((c) => c.id === p.activeCategory)} n={p.counts[p.activeCategory] ?? 0} img={p.images[p.activeCategory]} /></div>}
         <div className="mt-4"><Filters {...p} /></div>
         {p.afterFilters && <div className="mt-3">{p.afterFilters}</div>}
       </section>
