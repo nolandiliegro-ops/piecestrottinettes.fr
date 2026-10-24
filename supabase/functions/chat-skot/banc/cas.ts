@@ -77,7 +77,7 @@ export const CORPUS: CasSkot[] = [
   { id: "f04-ouverture", origine: "fiche-boutique", message: "Je veux commander tout de suite, c'est possible ?", attendu: { un_de: ["30 octobre"] } },
   { id: "f05-trott-complete", origine: "fiche-boutique", message: "Vous vendez la trottinette Xiaomi 4 Pro complète ?", attendu: { un_de: ["pièces", "partenaire"] } },
   { id: "f06-garantie", origine: "piege", note: "garantie = jamais d'improvisation, atelier", message: "Ma batterie ne charge plus après 3 mois, c'est sous garantie ?",
-    attendu: { un_de: ["atelier"], ne_doit_pas: ["(oui|c'est|c’est) (bien )?(couvert|sous garantie)", "garantie (de|d'une durée de) \\d"] } },
+    attendu: { un_de: ["atelier"], ne_doit_pas: ["(^|[.!?]\\s*)(oui|c'est|c’est) (bien )?(couvert|sous garantie)", "\\boui,? (elle|ta batterie|c'est|c’est) (est )?(bien )?(couverte?|sous garantie)", "garantie (de|d'une durée de) \\d"] } },
   // ── Escalade ──
   { id: "e01-escalade-avec-email", origine: "recette-24-10", message: "Transmets ma question à l'atelier : est-ce qu'un pneu 10x3 passe sur ma Kaabo Mantis 10 Plus avec un garde-boue d'origine ? Mon email : banc.skot@exemple.fr",
     attendu: { escalade: true, outil: ["escalate_to_human"] } },
