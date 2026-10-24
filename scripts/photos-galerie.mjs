@@ -151,7 +151,7 @@ async function write() {
       const res = await fetch(URL_, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json', 'x-admin-secret': env.ADMIN_BULK_SECRET },
-        body: JSON.stringify({ entity_type: 'scooter', entity_id: m.id, images_base64: [bufs[k].toString('base64')], alt_base: m.name, reset: !APPEND && k === 0 }),
+        body: JSON.stringify({ entity_type: lot.entity === 'part' ? 'part' : 'scooter', entity_id: m.id, images_base64: [bufs[k].toString('base64')], alt_base: m.name, reset: !APPEND && k === 0 }),
       });
       const t = await res.text();
       if (res.ok && /"success"\s*:\s*true/.test(t)) posted++;
