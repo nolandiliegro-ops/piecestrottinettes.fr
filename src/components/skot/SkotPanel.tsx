@@ -4,16 +4,21 @@
 // Commun aux 5 : la mascotte remplace l'avatar « Le pilote », et son visage suit la conversation
 // (clin d'œil à l'ouverture, écoute, réfléchit pendant la recherche, content quand la réponse arrive).
 import { useEffect, useRef, useState, type FormEvent, type ReactNode, type RefObject } from "react";
-import { X, Send, Camera, Loader2, ThumbsUp, ThumbsDown, Search, Package, Wrench } from "lucide-react";
+import { Link } from "react-router-dom";
+import { X, Send, Camera, Loader2, ThumbsUp, ThumbsDown, Search, Package, Wrench, Bike, CircleDot, LayoutGrid } from "lucide-react";
+import { skotSaison, SAISON_TEXTE, type SkotSaison } from "@/lib/skotSaison";
 import type { SkotCard } from "@/lib/skot";
 
 export type SkotFenVariant = 1 | 2 | 3 | 4 | 5;
 export const readSkotFenVariant = (): SkotFenVariant | null => {
   try {
-    const n = Number(new URLSearchParams(window.location.search).get("skotfen"));
-    return n >= 1 && n <= 5 ? (n as SkotFenVariant) : null;
+    // 25/10 : Nolan choisit la 3 « Il te parle » = défaut ; ?skotfen=0 = ancienne fenêtre, 1..5 = les autres propositions.
+    const raw = new URLSearchParams(window.location.search).get("skotfen");
+    if (raw === null) return 3;
+    const n = Number(raw);
+    return n >= 1 && n <= 5 ? (n as SkotFenVariant) : n === 0 ? null : 3;
   } catch {
-    return null;
+    return 3;
   }
 };
 
@@ -49,7 +54,20 @@ const CSS = `
 .skf-pulse{animation:skf-pulse 1.6s infinite}
 .skf-bar{animation:skf-bar 1.1s ease-in-out infinite}
 .skf-bob{animation:skf-bob 3.4s ease-in-out infinite}
-@media (prefers-reduced-motion:reduce){.skf-dot,.skf-in,.skf-pulse,.skf-bar,.skf-bob{animation:none!important}}`;
+@keyframes skf-pose{0%{opacity:0;transform:translateY(10px) scale(.9)}60%{opacity:1;transform:translateY(-4px) scale(1.04)}100%{transform:none}}
+@keyframes skf-jump{0%,100%{transform:translateY(0)}30%{transform:translateY(-22px) rotate(-4deg)}55%{transform:translateY(0) rotate(2deg)}70%{transform:translateY(-8px)}}
+@keyframes skf-shake{0%,100%{transform:rotate(0)}20%{transform:rotate(-5deg)}40%{transform:rotate(4deg)}60%{transform:rotate(-3deg)}80%{transform:rotate(2deg)}}
+@keyframes skf-breathe{0%,100%{transform:scale(1) translateY(0)}50%{transform:scale(1.02,.985) translateY(2px)}}
+@keyframes skf-scan{0%,100%{transform:rotate(-3deg) translateX(-3px)}50%{transform:rotate(3deg) translateX(3px)}}
+@keyframes skf-roll{0%{transform:translateX(-30px)}100%{transform:translateX(0)}}
+.skf-pose{animation:skf-pose .45s cubic-bezier(.2,.9,.3,1.25) both}
+.skf-a-jump{transform-origin:50% 100%;animation:skf-jump 1.1s ease-in-out 2}
+.skf-a-shake{transform-origin:50% 100%;animation:skf-shake .7s ease-in-out 3}
+.skf-a-breathe{transform-origin:50% 100%;animation:skf-breathe 3.6s ease-in-out infinite}
+.skf-a-scan{transform-origin:50% 100%;animation:skf-scan 1.6s ease-in-out infinite}
+.skf-a-roll{animation:skf-roll .6s cubic-bezier(.2,.9,.3,1.2) both}
+.skf-a-bob{transform-origin:50% 100%;animation:skf-bob 3.4s ease-in-out infinite}
+@media (prefers-reduced-motion:reduce){.skf-dot,.skf-in,.skf-pulse,.skf-bar,.skf-bob,.skf-pose,.skf-a-jump,.skf-a-shake,.skf-a-breathe,.skf-a-scan,.skf-a-roll,.skf-a-bob{animation:none!important}}`;
 let cssInjected = false;
 
 /* Le visage suit la conversation : clin d'œil à l'ouverture, réfléchit pendant la recherche, content 3,5 s après une réponse. */
@@ -223,6 +241,188 @@ const CloseBtn = ({ onClose, light = false }: { onClose: () => void; light?: boo
   </button>
 );
 
+/* ───────────── 3 · « Il te parle » — la scène animée (retenue par Nolan le 25/10/2026) ─────────────
+   SKOT en entier en haut ; sa pose et sa phrase suivent la conversation :
+   salut à l'ouverture · écoute · photo quand une photo est jointe · loupe/réfléchit pendant la recherche
+   (colis pour une commande, clé pour l'atelier) · trouvé quand une pièce sort · oups si rien · rire au 👍 ou quand on le touche ·
+   il s'endort après 60 s sans rien, sursaute quand on revient. Tenue de saison (lib/skotSaison) au repos. */
+type Pose = Mood | "salut" | "loupe" | "trouve" | "oups" | "rire" | "dort" | "photo" | "cle" | "colis" | "surpris" | "roule" | SkotSaison;
+type Anim = "bob" | "jump" | "shake" | "breathe" | "scan" | "roll";
+type Scene = { pose: Pose; title: string; sub: string; anim: Anim };
+
+const BASE: Pose[] = ["ecoute", "clin", "reflechit", "content"];
+const poseSrc = (p: Pose) => (BASE.includes(p) ? `/skot/skot-${p}.webp` : `/skot/p-${p}.webp`);
+const ALL_POSES: Pose[] = ["ecoute", "clin", "reflechit", "content", "salut", "loupe", "trouve", "oups", "rire", "dort", "photo", "cle", "colis", "surpris"];
+const SEARCHING = ["Je fouille l'atelier…", "Je mesure la jante…", "Je croise les compatibilités…", "Je vérifie le stock…"];
+const NOT_FOUND = /(pas trouv|aucun|aucune|je n'ai pas|introuvable|désolé|crevaison|pas encore en catalogue)/i;
+const IDLE_SLEEP_MS = 60_000;
+
+const ScenePanel = (p: SkotPanelProps) => {
+  const [saison] = useState(() => skotSaison());
+  const rest: Pose = saison ?? "ecoute";
+  const idle = (): Scene => ({ pose: rest, title: "Je t'écoute.", sub: saison ? SAISON_TEXTE[saison][1] : "Ta trott, ta pièce, ta commande : vas-y.", anim: saison ? "bob" : "breathe" });
+  const [scene, setScene] = useState<Scene>(() =>
+    saison ? { pose: saison, title: SAISON_TEXTE[saison][0], sub: SAISON_TEXTE[saison][1], anim: "jump" } : { pose: "salut", title: "Salut !", sub: "Pose ta question, je vérifie tout dans le catalogue.", anim: "jump" },
+  );
+  const timer = useRef<ReturnType<typeof setTimeout>>();
+  const lastActivity = useRef(Date.now());
+  const play = (steps: { s: Scene; ms?: number }[]) => {
+    clearTimeout(timer.current);
+    const run = (i: number) => {
+      setScene(steps[i].s);
+      if (i + 1 < steps.length) timer.current = setTimeout(() => run(i + 1), steps[i].ms ?? 2500);
+    };
+    run(0);
+  };
+  const toIdle = (ms: number) => { clearTimeout(timer.current); timer.current = setTimeout(() => setScene(idle()), ms); };
+  const poke = () => { lastActivity.current = Date.now(); };
+
+  // Toutes les poses chargées d'avance : pas de trou blanc au changement.
+  useEffect(() => { [...ALL_POSES, ...(saison ? [saison] : [])].forEach((x) => { new Image().src = poseSrc(x); }); toIdle(2400); return () => clearTimeout(timer.current); }, []); // eslint-disable-line react-hooks/exhaustive-deps
+
+  // Il s'endort sans activité, sursaute quand on revient.
+  useEffect(() => {
+    const t = setInterval(() => {
+      if (!p.busy && Date.now() - lastActivity.current > IDLE_SLEEP_MS) setScene((s) => (s.pose === "dort" ? s : { pose: "dort", title: "Zzz…", sub: "Écris-moi, je me réveille.", anim: "breathe" }));
+    }, 5000);
+    return () => clearInterval(t);
+  }, [p.busy]);
+  const wake = () => {
+    poke();
+    if (scene.pose === "dort") play([{ s: { pose: "surpris", title: "Ah ! Je suis là.", sub: "Je t'écoute, vas-y.", anim: "jump" }, ms: 1300 }, { s: idle() }]);
+  };
+
+  // Ce qu'il fait pendant que tu écris / joins une photo.
+  useEffect(() => {
+    if (p.busy) return;
+    if (p.photo) { poke(); play([{ s: { pose: "photo", title: "Joli cliché !", sub: "Envoie, je regarde le flanc et les marquages.", anim: "shake" } }]); }
+  }, [p.photo]); // eslint-disable-line react-hooks/exhaustive-deps
+  useEffect(() => { if (p.input) wake(); }, [p.input]); // eslint-disable-line react-hooks/exhaustive-deps
+
+  // Pendant la recherche : la pose dépend de la question.
+  const lastUser = [...p.msgs].reverse().find((m) => m.role === "user");
+  useEffect(() => {
+    if (!p.busy) return;
+    poke();
+    clearTimeout(timer.current);
+    if (lastUser?.text.startsWith("Où en est ma commande")) { setScene({ pose: "colis", title: "Je retrouve ta commande…", sub: "Numéro, statut, livraison : je regarde.", anim: "roll" }); return; }
+    if (lastUser?.text.includes("question à l'atelier")) { setScene({ pose: "cle", title: "Je préviens l'atelier…", sub: "Un vrai mécano va te répondre.", anim: "bob" }); return; }
+    let i = 0;
+    const tick = () => {
+      const pose: Pose = lastUser?.image && i === 0 ? "photo" : i % 2 === 0 ? "loupe" : "reflechit";
+      setScene({ pose, title: SEARCHING[i % SEARCHING.length], sub: "Je ne te montre que ce qui monte vraiment.", anim: pose === "loupe" ? "scan" : "bob" });
+      i += 1;
+      timer.current = setTimeout(tick, 1700);
+    };
+    tick();
+    return () => clearTimeout(timer.current);
+  }, [p.busy]); // eslint-disable-line react-hooks/exhaustive-deps
+
+  // La réponse arrive : trouvé, oups ou content.
+  const skotCount = p.msgs.filter((m) => m.role === "skot").length;
+  const prevCount = useRef(skotCount);
+  useEffect(() => {
+    if (skotCount <= prevCount.current) return;
+    prevCount.current = skotCount;
+    const last = p.msgs[p.msgs.length - 1];
+    const n = last?.cards?.length ?? 0;
+    if (n > 0) play([{ s: { pose: "trouve", title: "Trouvé !", sub: n > 1 ? `${n} pièces qui montent sur ta trott.` : "Une pièce qui monte sur ta trott.", anim: "jump" }, ms: 2600 }, { s: { pose: "content", title: "Voilà !", sub: "Dis-moi si tu veux que je creuse.", anim: "bob" }, ms: 3500 }, { s: idle() }]);
+    else if (NOT_FOUND.test(last?.text ?? "")) play([{ s: { pose: "oups", title: "Oups…", sub: "Pas trouvé cette fois. L'atelier peut chercher pour toi.", anim: "shake" }, ms: 4500 }, { s: idle() }]);
+    else play([{ s: { pose: "content", title: "Voilà !", sub: "Dis-moi si tu veux que je creuse.", anim: "bob" }, ms: 3500 }, { s: idle() }]);
+  }, [skotCount]); // eslint-disable-line react-hooks/exhaustive-deps
+
+  const rate = (i: number, v: 1 | -1) => {
+    p.rate(i, v);
+    poke();
+    play([{ s: v === 1 ? { pose: "rire", title: "Merci !", sub: "Ça me fait rouler de joie.", anim: "shake" } : { pose: "oups", title: "Je note…", sub: "L'atelier relit ma réponse et on corrige.", anim: "shake" }, ms: 2800 }, { s: idle() }]);
+  };
+  const tickle = () => {
+    if (scene.pose === "dort") return wake();
+    poke();
+    play([{ s: { pose: "rire", title: "Hé, ça chatouille !", sub: "Pose-moi plutôt une question.", anim: "shake" }, ms: 2000 }, { s: idle() }]);
+  };
+
+  // Façons de chercher (avant la première question).
+  const fresh = !p.msgs.some((m) => m.role === "user");
+  const prefill = (t: string, s: Scene) => {
+    p.setInput(t); poke(); play([{ s, ms: 4000 }, { s: idle() }]);
+    setTimeout(() => { const el = document.getElementById("skot-input") as HTMLInputElement | null; el?.focus(); el?.setSelectionRange(t.length, t.length); }, 30);
+  };
+  const TILES: { label: string; sub: string; icon: typeof Bike; go: () => void; to?: string }[] = [
+    { label: "Ma trottinette", sub: "Dis-moi le modèle", icon: Bike, go: () => prefill("Ma trottinette, c'est une ", { pose: "clin", title: "Laquelle ?", sub: "Marque et modèle, je connais tout le catalogue.", anim: "bob" }) },
+    { label: "Une photo", sub: "Pneu, prise, pièce", icon: Camera, go: () => { poke(); p.pickPhoto(); } },
+    { label: "Taille de pneu", sub: "Lue sur le flanc", icon: CircleDot, go: () => prefill("Sur le flanc de mon pneu, c'est écrit ", { pose: "loupe", title: "Montre-moi ça.", sub: "Ex. 10x2.5 ou 60/70-6.5 : je trouve ce qui monte.", anim: "scan" }) },
+    { label: "Le catalogue", sub: "Par famille de pièces", icon: LayoutGrid, go: p.onClose, to: "/catalogue" },
+    { label: "Ma commande", sub: "Où elle en est", icon: Package, go: () => p.send("Où en est ma commande ?") },
+    { label: "L'atelier", sub: "Un vrai mécano", icon: Wrench, go: () => p.send("Je veux poser une question à l'atelier") },
+  ];
+  const tileCls = "flex items-center gap-2.5 min-h-[56px] px-3 text-left bg-white disabled:opacity-50";
+  const tileInner = (t: (typeof TILES)[number]) => (
+    <>
+      <t.icon className="w-5 h-5 shrink-0" style={{ color: GREEN }} strokeWidth={2.4} />
+      <span className="min-w-0">
+        <span className="block text-[14px] font-extrabold leading-tight" style={{ fontFamily: JAK, color: CARBON }}>{t.label}</span>
+        <span className="block text-[12.5px] leading-tight mt-0.5" style={{ fontFamily: JAK, color: "#6B6B6B" }}>{t.sub}</span>
+      </span>
+    </>
+  );
+
+  return (
+    <Shell width={440}>
+      <div className="relative flex items-end gap-1 pl-1 pr-3 h-[176px] md:h-[190px] shrink-0 overflow-hidden"
+        style={{ paddingTop: "max(8px, env(safe-area-inset-top))", background: `radial-gradient(120% 90% at 18% 100%, #ffffff 0%, ${BEIGE} 55%, #EAE2D2 100%)`, borderBottom: `3px solid ${CARBON}` }}>
+        <span aria-hidden className="absolute left-3 right-[55%] bottom-[6px] h-[10px] rounded-[50%]" style={{ background: "radial-gradient(closest-side, rgba(0,0,0,.18), transparent)" }} />
+        <button type="button" onClick={tickle} aria-label="SKOT" className="relative block -mb-1 shrink-0 w-[160px] h-[160px] md:w-[180px] md:h-[180px]">
+          <span key={scene.pose + scene.anim} className={`absolute inset-0 skf-a-${scene.anim}`}>
+            <img key={scene.pose} src={poseSrc(scene.pose)} alt="" draggable={false} className="block w-full h-full select-none skf-pose" style={{ filter: "drop-shadow(0 10px 12px rgba(0,0,0,.18))" }} />
+          </span>
+        </button>
+        <div className="flex-1 min-w-0 self-center pt-2 pr-9">
+          <span className="block p-[2px]" style={{ background: CARBON, clipPath: cut2(10) }}>
+            <span className="block bg-white px-3.5 py-2.5" style={{ clipPath: cut2(9) }}>
+              <span key={scene.title} className="block italic uppercase leading-tight skf-in" style={{ fontFamily: UNB, fontWeight: 900, fontSize: 16, color: CARBON }}>{scene.title}</span>
+              <span key={scene.sub} className="block text-[14px] leading-snug mt-1 skf-in line-clamp-3" style={{ fontFamily: JAK, color: "#555" }}>{scene.sub}</span>
+            </span>
+          </span>
+          <p className="mt-2 uppercase italic text-[12px] font-extrabold tracking-wide" style={{ fontFamily: JAK, color: GREEN }}>SKOT · l'IA de l'atelier</p>
+        </div>
+        <span className="absolute right-1 top-[max(4px,env(safe-area-inset-top))]"><CloseBtn onClose={p.onClose} /></span>
+      </div>
+      <SearchBar onSearch={p.onSearch} className="mx-3 mt-3" />
+      <div ref={p.listRef} className="flex-1 overflow-y-auto px-3 py-4 space-y-3" aria-live="polite" onPointerDown={wake}>
+        {p.msgs.map((m, i) =>
+          m.role === "user" ? <UserMsg key={i} m={m} tone="green" /> : (
+            <div key={i} className="max-w-[92%] space-y-2 skf-in">
+              <Bubble>{m.text}</Bubble>
+              {m.cards?.map((c) => <div key={c.slug}>{p.renderCard(c)}</div>)}
+              <Rating m={m} i={i} rate={rate} />
+            </div>
+          ),
+        )}
+        {fresh && (
+          <div className="skf-in">
+            <p className="uppercase italic text-[12px] font-extrabold tracking-wide mb-2" style={{ fontFamily: JAK, color: GREEN }}>Comment tu cherches ?</p>
+            <div className="grid grid-cols-2 gap-2">
+              {TILES.map((t) => {
+                const wrap = (child: ReactNode) => (
+                  <span key={t.label} className="block p-[1.5px]" style={{ background: CARBON, clipPath: cutTR(10) }}>{child}</span>
+                );
+                return t.to
+                  ? wrap(<Link to={t.to} onClick={t.go} className={tileCls} style={{ clipPath: cutTR(9.5) }}>{tileInner(t)}</Link>)
+                  : wrap(<button type="button" disabled={p.busy} onClick={t.go} className={`w-full ${tileCls}`} style={{ clipPath: cutTR(9.5) }}>{tileInner(t)}</button>);
+              })}
+            </div>
+          </div>
+        )}
+        {p.busy && <Bubble><Dots label="Je cherche…" /></Bubble>}
+      </div>
+      {!fresh && <Chips p={p} />}
+      <PhotoRow p={p} />
+      <Composer p={p} />
+    </Shell>
+  );
+};
+
 const SkotPanel = (p: SkotPanelProps) => {
   if (!cssInjected && typeof document !== "undefined") {
     const el = document.createElement("style");
@@ -312,44 +512,8 @@ const SkotPanel = (p: SkotPanelProps) => {
       </Shell>
     );
 
-  /* 3 · Il te parle — une scène en haut : SKOT en entier, il te dit en gros ce qu'il fait (écoute, cherche, trouvé). */
-  if (p.variant === 3) {
-    const [title, sub] = STATUS[mood];
-    return (
-      <Shell width={440}>
-        <div className="relative flex items-end gap-1 pl-1 pr-3 h-[168px] md:h-[184px] shrink-0 overflow-hidden"
-          style={{ ...topPad, background: `radial-gradient(120% 90% at 18% 100%, #ffffff 0%, ${BEIGE} 55%, #EAE2D2 100%)`, borderBottom: `3px solid ${CARBON}` }}>
-          <span className="block -mb-1 shrink-0 skf-bob"><Body mood={mood} size={176} /></span>
-          <div className="flex-1 min-w-0 pb-5 pr-9">
-            <span className="block p-[2px]" style={{ background: CARBON, clipPath: cut2(10) }}>
-              <span className="block bg-white px-3.5 py-2.5" style={{ clipPath: cut2(9) }}>
-                <span key={title} className="block italic uppercase leading-tight skf-in" style={{ fontFamily: UNB, fontWeight: 900, fontSize: 18, color: CARBON }}>{title}</span>
-                <span className="block text-[14px] leading-snug mt-1" style={{ fontFamily: JAK, color: "#555" }}>{sub}</span>
-              </span>
-            </span>
-            <p className="mt-2 uppercase italic text-[12px] font-extrabold tracking-wide" style={{ fontFamily: JAK, color: GREEN }}>SKOT · l'IA de l'atelier</p>
-          </div>
-          <span className="absolute right-1 top-[max(4px,env(safe-area-inset-top))]"><CloseBtn onClose={p.onClose} /></span>
-        </div>
-        <SearchBar onSearch={p.onSearch} className="mx-3 mt-3" />
-        <div ref={p.listRef} className="flex-1 overflow-y-auto px-3 py-4 space-y-3" aria-live="polite">
-          {p.msgs.map((m, i) =>
-            m.role === "user" ? <UserMsg key={i} m={m} tone="green" /> : (
-              <div key={i} className="max-w-[92%] space-y-2 skf-in">
-                <Bubble>{m.text}</Bubble>
-                {m.cards?.map((c) => <div key={c.slug}>{p.renderCard(c)}</div>)}
-                <Rating m={m} i={i} rate={p.rate} />
-              </div>
-            ),
-          )}
-          {p.busy && <Bubble><Dots label="Je cherche…" /></Bubble>}
-        </div>
-        <Chips p={p} />
-        <PhotoRow p={p} />
-        <Composer p={p} />
-      </Shell>
-    );
-  }
+  /* 3 · Il te parle — retenue le 25/10 : scène animée (poses, saisons, façons de chercher) → ScenePanel. */
+  if (p.variant === 3) return <ScenePanel {...p} />;
 
   /* 4 · Phare — le côté site moderne : en-tête carbone, tête dans un phare chromé avec voyant « en ligne », bulles arrondies. */
   if (p.variant === 4)

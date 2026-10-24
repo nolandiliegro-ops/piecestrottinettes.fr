@@ -26,7 +26,7 @@ export default defineConfig(({ mode }) => ({
         navigateFallbackDenylist: [/^\/~oauth/],
         globPatterns: ["**/*.{js,css,html,ico,png,svg,jpg,webp,woff,woff2}"],
         // 19/10 : packshots catégories servis à la demande, pas dans le précache (14 fichiers, ~600 Ko)
-        globIgnores: ["**/categories/**"],
+        globIgnores: ["**/categories/**", "**/skot/**"], // 25/10 : poses de SKOT chargées à l'ouverture du chat, HD marketing jamais précachées
         maximumFileSizeToCacheInBytes: 5 * 1024 * 1024, // 5 MiB
       },
       manifest: {
