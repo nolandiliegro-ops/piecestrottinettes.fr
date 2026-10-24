@@ -56,6 +56,29 @@ export function getStoredRef(): string | null {
   }
 }
 
+/** Identifiant aléatoire du navigateur (aucune donnée personnelle) : sert seulement à ne compter qu'un clic par 24 h. */
+function visitorId(): string {
+  try {
+    let v = localStorage.getItem('pt-visitor');
+    if (!v) {
+      v = (crypto.randomUUID?.() ?? `${Date.now().toString(36)}-${Math.random().toString(36).slice(2, 12)}`);
+      localStorage.setItem('pt-visitor', v);
+    }
+    return v;
+  } catch {
+    return `${Date.now().toString(36)}-${Math.random().toString(36).slice(2, 12)}`;
+  }
+}
+
+/** Compte un clic sur un lien créateur (la base ignore les codes inconnus et les doublons de 24 h). */
+export async function logRefVisit(code: string): Promise<void> {
+  try {
+    await (supabase as any).rpc('log_ref_visit', { p_code: code, p_visitor: visitorId() });
+  } catch {
+    /* un clic non compté ne doit jamais gêner la navigation */
+  }
+}
+
 /** Vérifie un code côté base (fonction check_promo_code, invités compris). */
 export async function checkPromoCode(code: string): Promise<PromoCheck | null> {
   const { data, error } = await (supabase as any).rpc('check_promo_code', { p_code: code });

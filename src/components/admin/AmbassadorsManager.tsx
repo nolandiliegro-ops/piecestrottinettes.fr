@@ -8,6 +8,7 @@ import { Input } from '@/components/ui/input';
 import { Sheet, SheetContent, SheetHeader, SheetTitle, SheetDescription } from '@/components/ui/sheet';
 import { cn } from '@/lib/utils';
 import AmbassadorsBoard, { COLONNES, Avatar, abonnes, type AmbStatut, type BoardRow } from './ambassadors/AmbassadorsBoard';
+import { Contact, Coordonnees, Contrat, Journal, alerteLegale } from './ambassadors/FicheExtras';
 
 /* 24/10/2026 (Nolan, GO « programme ambassadeurs ») — les créateurs qui amènent des ventes.
    Un ambassadeur = un code promo -10 % (plafond 30 €) relié à lui (promo_codes.ambassador_id) + un lien ?ref=CODE.
@@ -25,6 +26,9 @@ interface StatRow {
   taux_commission: number; email_paypal: string | null; codes_actifs: string | null; cartes_rider: number;
   commandes: number; base_commissionnable_ht: number; commission_acquise: number; commission_en_attente: number; deja_paye: number;
   reseau: string | null; avatar_url: string | null; abonnes: number | null; prochaine_action: string | null; relance_le: string | null; notes: string | null;
+  email: string | null; telephone: string | null; adresse: string | null; pays_residence: string | null; statut_juridique: string | null; siret: string | null;
+  produits_offerts_eur: number; contrat_signe_le: string | null; contrat_version: string | null; espace_active: boolean;
+  clics_30j: number; clics_total: number; remuneration_annee: number;
 }
 interface CodeRow { code: string; active: boolean; created_at: string }
 interface OrderRow { id: string; order_number: string; status: string; total_ttc: number; promo_code: string; customer_email: string; created_at: string }
@@ -45,6 +49,7 @@ const toBoard = (r: StatRow): BoardRow => ({
   abonnes: r.abonnes, statut: r.statut, taux_commission: Number(r.taux_commission), codes_actifs: r.codes_actifs,
   cartes_rider: Number(r.cartes_rider), commandes: Number(r.commandes), a_verser: solde(r),
   prochaine_action: r.prochaine_action, relance_le: r.relance_le,
+  clics: Number(r.clics_30j ?? 0), alerte: alerteLegale(r),
 });
 
 const copier = async (txt: string, quoi: string) => {
@@ -201,6 +206,7 @@ const Fiche = ({ row, onClose }: { row: StatRow; onClose: () => void }) => {
   const refresh = () => {
     qc.invalidateQueries({ queryKey: ['ambassador-stats'] });
     qc.invalidateQueries({ queryKey: ['ambassador-codes', row.ambassador_id] });
+    qc.invalidateQueries({ queryKey: ['ambassador-events', row.ambassador_id] });
   };
 
   const { data: codes = [] } = useQuery({
@@ -310,9 +316,13 @@ const Fiche = ({ row, onClose }: { row: StatRow; onClose: () => void }) => {
         >
           <p className="text-sm text-[hsl(var(--admin-text-muted))]">Touche la photo (ou glisse une image ici) pour la changer.</p>
 
+          <Contact r={row} />
+
           <div className="grid grid-cols-2 gap-2">
+            <Chiffre label="Clics (30 jours)" value={`${row.clics_30j} · ${row.clics_total} au total`} />
             <Chiffre label="Cartes Rider ramenées" value={row.cartes_rider} />
             <Chiffre label="Commandes" value={row.commandes} />
+            <Chiffre label="Rémunération cette année" value={eur(row.remuneration_annee)} />
             <Chiffre label="En attente (< 30 j)" value={eur(row.commission_en_attente)} />
             <Chiffre label="À verser" value={eur(solde(row))} strong />
           </div>
@@ -361,6 +371,10 @@ const Fiche = ({ row, onClose }: { row: StatRow; onClose: () => void }) => {
             </div>
           </section>
 
+          <Contrat r={row} />
+
+          <Coordonnees r={row} onSave={(patch) => maj.mutate(patch)} />
+
           <section className="space-y-3">
             {champ('nom', 'Prénom ou pseudo')}
             {champ('handle', 'Compte')}
@@ -406,6 +420,8 @@ const Fiche = ({ row, onClose }: { row: StatRow; onClose: () => void }) => {
                 </ul>
               )}
           </section>
+
+          <Journal ambassadorId={row.ambassador_id} />
         </div>
       </SheetContent>
     </Sheet>

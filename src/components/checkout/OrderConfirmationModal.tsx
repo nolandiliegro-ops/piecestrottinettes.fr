@@ -70,7 +70,7 @@ const OrderConfirmationModal = ({
   const [deliveryMethod, setDeliveryMethod] = useState<DeliveryMethod>("standard");
   const [recommendations, setRecommendations] = useState("");
   const [promoCode, setPromoCode] = useState("");
-  const [promoApplied, setPromoApplied] = useState<{ code: string; discount_type: string; discount_value: number } | null>(null);
+  const [promoApplied, setPromoApplied] = useState<{ code: string; discount_type: string; discount_value: number; max_discount_eur: number | null } | null>(null);
   const [promoLoading, setPromoLoading] = useState(false);
   const [promoError, setPromoError] = useState("");
   const [freeShippingThreshold, setFreeShippingThreshold] = useState<number | null>(null);
@@ -111,7 +111,20 @@ const OrderConfirmationModal = ({
   }));
 
   const selectedDelivery = deliveryOptions.find((d) => d.id === deliveryMethod)!;
-  const finalTotalTTC = totals.totalTTC + selectedDelivery.price;
+  // Remise affichée = même calcul que create-checkout-session (pourcentage plafonné, arrondi au centime).
+  // Les catégories exclues des remises en % (trottinettes, batteries) n'existent pas au catalogue au 24/10/2026.
+  const remise = (() => {
+    if (!promoApplied) return 0;
+    let r = 0;
+    if (promoApplied.discount_type === "percent") {
+      r = totals.subtotalHT * (promoApplied.discount_value / 100);
+      if (promoApplied.max_discount_eur != null) r = Math.min(r, promoApplied.max_discount_eur);
+    } else if (promoApplied.discount_type === "fixed") {
+      r = Math.min(totals.subtotalHT, promoApplied.discount_value);
+    }
+    return Math.round(r * 100) / 100;
+  })();
+  const finalTotalTTC = Math.max(0, totals.totalTTC - remise) + selectedDelivery.price;
   const finalLoyaltyPoints = Math.floor(finalTotalTTC);
 
   // Vérification par la base (check_promo_code) : marche aussi pour les invités, mêmes règles que le serveur.
@@ -143,6 +156,7 @@ const OrderConfirmationModal = ({
         code: res.code,
         discount_type: res.discount_type,
         discount_value: Number(res.discount_value),
+        max_discount_eur: res.max_discount_eur,
       });
       setPromoError("");
     } catch {
@@ -367,11 +381,17 @@ const OrderConfirmationModal = ({
 
               {/* Totals */}
               <div className="border-t border-greige/50 pt-4 space-y-1.5">
-                <div className="flex justify-between text-xs">
+                <div className="flex justify-between text-sm">
                   <span className="text-muted-foreground">Sous-total</span>
                   <span className="text-carbon">{formatPrice(totals.subtotalHT)}</span>
                 </div>
-                <div className="flex justify-between text-xs">
+                {remise > 0 && promoApplied && (
+                  <div className="flex justify-between text-sm">
+                    <span className="text-emerald-700 font-medium">Remise {promoApplied.code}</span>
+                    <span className="text-emerald-700 font-medium">−{formatPrice(remise)}</span>
+                  </div>
+                )}
+                <div className="flex justify-between text-sm">
                   <span className="text-muted-foreground">Livraison ({selectedDelivery.name})</span>
                   <span className="text-carbon">
                     {selectedDelivery.price === 0 ? (

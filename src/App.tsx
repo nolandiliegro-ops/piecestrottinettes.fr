@@ -55,6 +55,8 @@ const Profile = lazy(() => import("./pages/Profile"));
 const ExpertStudio = lazy(() => import("./pages/ExpertStudio"));
 const CGV = lazy(() => import("./pages/CGV"));
 const MentionsLegales = lazy(() => import("./pages/MentionsLegales"));
+const Ambassadeur = lazy(() => import("./pages/Ambassadeur"));
+const DevenirAmbassadeur = lazy(() => import("./pages/DevenirAmbassadeur"));
 const Contact = lazy(() => import("./pages/Contact"));
 const OAuthConsent = lazy(() => import("./pages/OAuthConsent"));
 const RiderPublicCard = lazy(() => import("./pages/RiderPublicCard"));
@@ -154,6 +156,8 @@ function App() {
             } />
             <Route path="/cgv" element={<CGV />} />
             <Route path="/mentions-legales" element={<MentionsLegales />} />
+            <Route path="/ambassadeur" element={<Ambassadeur />} />
+            <Route path="/devenir-ambassadeur" element={<DevenirAmbassadeur />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/.lovable/oauth/consent" element={<OAuthConsent />} />
                 {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}

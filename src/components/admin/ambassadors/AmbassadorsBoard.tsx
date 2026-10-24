@@ -1,5 +1,5 @@
 import { useMemo, useState } from 'react';
-import { Copy, Link2, Users, ShoppingBag, Wallet, CalendarClock, Crown, Plus } from 'lucide-react';
+import { Copy, Link2, Users, ShoppingBag, Wallet, CalendarClock, Crown, Plus, MousePointerClick, AlertTriangle } from 'lucide-react';
 import { cn } from '@/lib/utils';
 
 /* 24/10/2026 — Ambassadeurs en kanban (propositions ?amb=1..5, cf. skill cinq-propositions-rendues).
@@ -10,6 +10,7 @@ export interface BoardRow {
   ambassador_id: string; nom: string; handle: string | null; reseau: string | null; avatar_url: string | null;
   abonnes: number | null; statut: AmbStatut; taux_commission: number; codes_actifs: string | null;
   cartes_rider: number; commandes: number; a_verser: number; prochaine_action: string | null; relance_le: string | null;
+  clics?: number; alerte?: string | null;
 }
 
 export const COLONNES: { k: AmbStatut; label: string; dot: string; ring: string; chip: string }[] = [
@@ -97,6 +98,7 @@ const CarteCockpit = ({ r, a }: { r: BoardRow; a: Actions }) => (
     </div>
     {(r.statut === 'actif' || r.statut === 'test' || r.statut === 'pause') && (
       <div className="flex flex-wrap gap-x-4 gap-y-1">
+        {r.clics != null && <Mini icon={MousePointerClick} v={r.clics} label="Clics (30 jours)" />}
         <Mini icon={Users} v={r.cartes_rider} label="Cartes Rider ramenées" />
         <Mini icon={ShoppingBag} v={r.commandes} label="Commandes" />
         <Mini icon={Wallet} v={eur(r.a_verser)} label="À verser" />
@@ -104,6 +106,7 @@ const CarteCockpit = ({ r, a }: { r: BoardRow; a: Actions }) => (
     )}
     {r.statut !== 'prospect' && <CodeChip r={r} a={a} />}
     <Relance r={r} />
+    {r.alerte && <p className="flex items-start gap-1.5 text-sm font-semibold text-red-700"><AlertTriangle className="w-4 h-4 shrink-0 mt-0.5" />{r.alerte}</p>}
   </li>
 );
 
