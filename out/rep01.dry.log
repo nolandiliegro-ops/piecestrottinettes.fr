@@ -1,0 +1,290 @@
+aprilia-esr2-evo #0 PASS ok
+aprilia-esr2-evo #1 FAIL détourage sale / résidu de décor · cadrage serré
+aprilia-esr2-evo #2 FAIL élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux
+aprilia-esr2-evo #3 FAIL détourage sale / résidu de décor
+aprilia-esr2-evo #4 WARN basse définition
+aprilia-esr2-evo #5 FAIL détourage sale / résidu de décor · cadrage serré
+aprilia-esr2-evo #6 WARN couleurs vives 83 % (visuel marketing ?)
+aprilia-esr2-evo #7 FAIL détourage sale / résidu de décor
+cecotec-bongo-serie-a-advance-connected #0 WARN basse définition
+cecotec-bongo-serie-a-advance-connected #1 PASS ok
+cecotec-bongo-serie-a-advance-connected #2 PASS ok
+cecotec-bongo-serie-a-advance-connected #3 PASS ok
+cecotec-bongo-serie-a-advance-connected #4 WARN basse définition · cadrage serré
+cecotec-bongo-serie-a-advance-connected #5 FAIL détourage sale / résidu de décor · basse définition · cadrage serré
+cecotec-bongo-serie-a-advance-connected #6 FAIL élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux
+cecotec-bongo-serie-a-advance-connected #7 PASS ok
+e-twow-booster-se #0 PASS ok
+e-twow-booster-se #1 PASS ok
+e-twow-booster-se #2 PASS ok
+e-twow-booster-se #3 FAIL détourage sale / résidu de décor
+e-twow-booster-se #4 WARN cadrage serré
+e-twow-booster-se #5 WARN cadrage serré
+e-twow-gts #0 PASS ok
+e-twow-gts #1 PASS ok
+e-twow-gts #2 ERROR Input buffer has corrupt header: glib: XML does not have <svg> root
+e-twow-gts #3 PASS ok
+e-twow-gts #4 FAIL détourage sale / résidu de décor · élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux
+e-twow-gts #5 FAIL détourage sale / résidu de décor · cadrage serré
+engwe-y1000 #0 PASS ok
+engwe-y1000 #1 PASS ok
+engwe-y1000 #2 WARN cadrage serré
+engwe-y1000 #3 PASS ok
+engwe-y1000 #4 PASS ok
+engwe-y1000 #5 PASS ok
+engwe-y1000 #6 WARN cadrage serré
+hiboy-s2 #0 PASS ok
+hiboy-s2 #1 WARN cadrage serré
+hiboy-s2 #2 PASS ok
+hiboy-s2 #3 WARN cadrage serré
+hiboy-s2 #4 FAIL élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux · couleurs vives 39 % (visuel marketing ?)
+hiboy-s2 #5 WARN cadrage serré
+hikerboy-curtis-plus #0 PASS ok
+hikerboy-curtis-plus #1 PASS ok
+hikerboy-curtis-plus #2 PASS ok
+hikerboy-curtis-plus #3 PASS ok
+hikerboy-curtis-plus #4 PASS ok
+hikerboy-curtis-plus #5 PASS ok
+inokim-mini-2 #0 PASS ok
+inokim-mini-2 #1 PASS ok
+inokim-mini-2 #2 PASS ok
+inokim-mini-2 #3 FAIL élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux · couleurs vives 37 % (visuel marketing ?)
+inokim-mini-2 #4 WARN cadrage serré
+inokim-mini-2 #5 PASS ok
+inokim-mini-2 #6 PASS ok
+inokim-mini-2 #7 PASS ok
+iscooter-w9-air #0 FAIL élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux
+iscooter-w9-air #1 FAIL détourage sale / résidu de décor · cadrage serré · élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux
+iscooter-w9-air #2 FAIL détourage sale / résidu de décor · élément en plus (logo, badge, téléphone, 2e trottinette) : 6 morceaux
+iscooter-w9-air #3 FAIL détourage sale / résidu de décor · cadrage serré · élément en plus (logo, badge, téléphone, 2e trottinette) : 5 morceaux
+iscooter-w9-air #4 FAIL élément en plus (logo, badge, téléphone, 2e trottinette) : 6 morceaux
+iscooter-w9-air #5 FAIL détourage sale / résidu de décor · élément en plus (logo, badge, téléphone, 2e trottinette) : 4 morceaux
+iscooter-w9-air #6 FAIL détourage sale / résidu de décor · cadrage serré · élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux · couleurs vives 53 % (visuel marketing ?)
+iscooter-w9-air #7 FAIL détourage sale / résidu de décor · élément en plus (logo, badge, téléphone, 2e trottinette) : 4 morceaux
+kaabo-urban #0 WARN cadrage serré
+kaabo-urban #1 PASS ok
+kaabo-urban #2 WARN cadrage serré
+kaabo-urban #3 PASS ok
+kaabo-urban #4 PASS ok
+micro-explorer #0 WARN basse définition · cadrage serré
+micro-explorer #1 PASS ok
+micro-explorer #2 PASS ok
+micro-explorer #3 FAIL détourage sale / résidu de décor · basse définition
+micro-explorer #4 FAIL détourage sale / résidu de décor · basse définition
+micro-explorer #5 FAIL détourage sale / résidu de décor · basse définition · petit élément détaché (2 morceaux)
+micro-explorer #6 FAIL détourage sale / résidu de décor
+ninebot-max-g2 #0 FAIL détourage sale / résidu de décor · cadrage serré
+ninebot-max-g2 #1 PASS ok
+ninebot-max-g2 #2 WARN basse définition
+ninebot-max-g2 #3 WARN cadrage serré
+ninebot-max-g2 #4 WARN basse définition
+ninebot-max-g2 #5 PASS ok
+pure-electric-advance #0 PASS ok
+pure-electric-advance #1 FAIL détourage sale / résidu de décor · petit élément détaché (2 morceaux)
+pure-electric-advance #2 FAIL détourage sale / résidu de décor · élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux
+pure-electric-advance #3 FAIL détourage sale / résidu de décor · élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux
+pure-electric-advance #4 FAIL détourage sale / résidu de décor · élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux
+pure-electric-advance #5 PASS ok
+pure-electric-advance #6 FAIL détourage sale / résidu de décor · cadrage serré
+pure-electric-advance #7 PASS ok
+segway-gt3 #0 PASS ok
+segway-gt3 #1 WARN basse définition
+segway-gt3 #2 FAIL détourage sale / résidu de décor
+segway-gt3 #3 FAIL détourage sale / résidu de décor · petit élément détaché (2 morceaux) · couleurs vives 48 % (visuel marketing ?)
+segway-gt3 #4 FAIL élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux
+segway-gt3 #5 PASS ok
+speedway-leger-pro #0 FAIL détourage sale / résidu de décor · cadrage serré
+speedway-leger-pro #1 WARN cadrage serré
+speedway-leger-pro #2 PASS ok
+speedway-leger-pro #3 PASS ok
+speedway-leger-pro #4 WARN basse définition · cadrage serré
+urbanglide-ecross-duo #0 PASS ok
+urbanglide-ecross-duo #1 WARN basse définition · cadrage serré
+urbanglide-ecross-duo #2 FAIL détourage sale / résidu de décor
+urbanglide-ecross-duo #3 WARN cadrage serré
+urbanglide-ecross-duo #4 WARN cadrage serré
+urbanglide-ecross-duo #5 PASS ok
+wispeed-suvpilot-480 #0 ERROR téléchargement vide
+wispeed-suvpilot-480 #1 ERROR téléchargement vide
+wispeed-suvpilot-480 #2 ERROR téléchargement vide
+wispeed-suvpilot-480 #3 ERROR téléchargement vide
+wispeed-suvpilot-480 #4 ERROR téléchargement vide
+wispeed-suvpilot-480 #5 ERROR téléchargement vide
+wispeed-suvpilot-480 #6 ERROR téléchargement vide
+wispeed-suvpilot-480 #7 ERROR téléchargement vide
+cecotec-bongo-d20 #0 FAIL détourage sale / résidu de décor · basse définition
+cecotec-bongo-d20 #1 FAIL détourage sale / résidu de décor
+cecotec-bongo-d20 #2 FAIL détourage sale / résidu de décor · basse définition · cadrage serré
+cecotec-bongo-d20 #3 FAIL détourage sale / résidu de décor · cadrage serré · petit élément détaché (2 morceaux)
+cecotec-bongo-d20 #4 WARN cadrage serré
+cecotec-bongo-d20 #5 PASS ok
+cecotec-bongo-serie-m20 #0 PASS ok
+cecotec-bongo-serie-m20 #1 FAIL détourage sale / résidu de décor
+cecotec-bongo-serie-m20 #2 WARN basse définition · cadrage serré
+cecotec-bongo-serie-m20 #3 PASS ok
+cecotec-bongo-serie-m20 #4 PASS ok
+cecotec-bongo-serie-m20 #5 FAIL détourage sale / résidu de décor · élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux
+e-twow-booster-v #0 PASS ok
+e-twow-booster-v #1 PASS ok
+e-twow-booster-v #2 PASS ok
+e-twow-booster-v #3 PASS ok
+e-twow-booster-v #4 WARN cadrage serré
+e-twow-booster-v #5 PASS ok
+e-twow-tanktorq-tk3 #0 FAIL détourage sale / résidu de décor
+e-twow-tanktorq-tk3 #1 FAIL élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux
+e-twow-tanktorq-tk3 #2 FAIL élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux
+e-twow-tanktorq-tk3 #3 PASS ok
+e-twow-tanktorq-tk3 #4 FAIL élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux
+e-twow-tanktorq-tk3 #5 PASS ok
+hikerboy-brio #0 FAIL détourage sale / résidu de décor · élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux
+hikerboy-brio #1 PASS ok
+hikerboy-brio #2 PASS ok
+hikerboy-brio #3 WARN cadrage serré
+hikerboy-brio #4 PASS ok
+hikerboy-brio #5 PASS ok
+hikerboy-brio #6 WARN basse définition
+inmotion-climber #0 PASS ok
+inmotion-climber #1 PASS ok
+inmotion-climber #2 PASS ok
+inokim-oxo #0 WARN cadrage serré
+inokim-oxo #1 PASS ok
+inokim-oxo #2 FAIL détourage sale / résidu de décor · élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux · couleurs vives 59 % (visuel marketing ?)
+inokim-oxo #3 WARN cadrage serré
+inokim-oxo #4 FAIL détourage sale / résidu de décor
+inokim-oxo #5 FAIL détourage sale / résidu de décor
+isinwheel-gt2 #0 FAIL détourage sale / résidu de décor · élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux
+isinwheel-gt2 #1 FAIL détourage sale / résidu de décor · cadrage serré · élément en plus (logo, badge, téléphone, 2e trottinette) : 6 morceaux
+isinwheel-gt2 #2 WARN cadrage serré
+isinwheel-gt2 #3 FAIL détourage sale / résidu de décor
+isinwheel-gt2 #4 PASS ok
+kaabo-wolf-king-gtr #0 FAIL détourage sale / résidu de décor · couleurs vives 45 % (visuel marketing ?)
+kaabo-wolf-king-gtr #1 FAIL détourage sale / résidu de décor · cadrage serré · couleurs vives 35 % (visuel marketing ?)
+kaabo-wolf-king-gtr #2 WARN cadrage serré
+kaabo-wolf-king-gtr #3 FAIL détourage sale / résidu de décor · cadrage serré
+ninebot-e3 #0 WARN basse définition
+ninebot-e3 #1 FAIL détourage sale / résidu de décor · basse définition · cadrage serré · élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux
+ninebot-e3 #2 FAIL détourage sale / résidu de décor · basse définition · cadrage serré
+niu-kqi-100p #0 PASS ok
+niu-kqi-100p #1 PASS ok
+niu-kqi-100p #2 PASS ok
+niu-kqi-100p #3 PASS ok
+pure-electric-air-5 #0 FAIL détourage sale / résidu de décor · élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux
+pure-electric-air-5 #1 FAIL détourage sale / résidu de décor · élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux · couleurs vives 34 % (visuel marketing ?)
+pure-electric-air-5 #2 FAIL détourage sale / résidu de décor · élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux
+pure-electric-air-5 #3 FAIL détourage sale / résidu de décor · élément en plus (logo, badge, téléphone, 2e trottinette) : 5 morceaux
+pure-electric-air-5 #4 FAIL détourage sale / résidu de décor · cadrage serré · élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux
+pure-electric-air-5 #5 FAIL détourage sale / résidu de décor · élément en plus (logo, badge, téléphone, 2e trottinette) : 4 morceaux
+segway-ninebot-max-g3 #0 PASS ok
+segway-ninebot-max-g3 #1 FAIL détourage sale / résidu de décor · élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux
+segway-ninebot-max-g3 #2 PASS ok
+segway-ninebot-max-g3 #3 FAIL détourage sale / résidu de décor · cadrage serré
+segway-ninebot-max-g3 #4 WARN cadrage serré
+segway-ninebot-max-g3 #5 FAIL détourage sale / résidu de décor · élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux
+urbanglide-100-evo #0 WARN basse définition · cadrage serré
+urbanglide-100-evo #1 FAIL détourage sale / résidu de décor · basse définition · cadrage serré
+urbanglide-100-evo #2 WARN cadrage serré
+urbanglide-100-evo #3 FAIL détourage sale / résidu de décor · cadrage serré
+weped-ff #0 FAIL détourage sale / résidu de décor · cadrage serré
+weped-ff #1 FAIL détourage sale / résidu de décor · cadrage serré
+weped-ff #2 FAIL détourage sale / résidu de décor · petit élément détaché (2 morceaux)
+weped-ff #3 FAIL détourage sale / résidu de décor · petit élément détaché (3 morceaux)
+weped-ff #4 FAIL détourage sale / résidu de décor · cadrage serré
+xiaomi-electric-scooter-4-pro #0 FAIL basse définition · élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux
+xiaomi-electric-scooter-4-pro #1 WARN basse définition · cadrage serré
+xiaomi-electric-scooter-4-pro #2 ERROR téléchargement vide
+xiaomi-electric-scooter-4-pro #3 ERROR téléchargement vide
+xiaomi-electric-scooter-4-pro #4 ERROR téléchargement vide
+xiaomi-electric-scooter-4-pro #5 FAIL image vide
+cecotec-bongo-doble-y85-2x2-xxl-connected #0 PASS ok
+cecotec-bongo-doble-y85-2x2-xxl-connected #1 PASS ok
+cecotec-bongo-doble-y85-2x2-xxl-connected #2 WARN cadrage serré
+cecotec-bongo-doble-y85-2x2-xxl-connected #3 WARN basse définition
+cecotec-bongo-doble-y85-2x2-xxl-connected #4 FAIL élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux
+cecotec-bongo-doble-y85-2x2-xxl-connected #5 WARN basse définition
+cecotec-bongo-doble-y85-2x2-xxl-connected #6 WARN basse définition · cadrage serré
+e-twow-booster-es #0 PASS ok
+e-twow-booster-es #1 PASS ok
+e-twow-booster-es #2 PASS ok
+e-twow-booster-es #3 PASS ok
+e-twow-booster-es #4 WARN cadrage serré
+e-twow-booster-es #5 PASS ok
+e-twow-booster-es #6 FAIL détourage sale / résidu de décor · cadrage serré
+e-twow-gt-sport #0 FAIL détourage sale / résidu de décor · cadrage serré
+e-twow-gt-sport #1 PASS ok
+e-twow-gt-sport #2 WARN cadrage serré
+e-twow-gt-sport #3 PASS ok
+e-twow-gt-sport #4 PASS ok
+e-twow-gt-sport #5 FAIL détourage sale / résidu de décor · cadrage serré
+engwe-y10 #0 PASS ok
+engwe-y10 #1 WARN basse définition
+engwe-y10 #2 WARN basse définition · cadrage serré
+engwe-y10 #3 WARN basse définition
+engwe-y10 #4 PASS ok
+hiboy-ks4-pro #0 FAIL détourage sale / résidu de décor · élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux
+hiboy-ks4-pro #1 WARN cadrage serré
+hiboy-ks4-pro #2 PASS ok
+hiboy-ks4-pro #3 WARN basse définition · cadrage serré
+hiboy-ks4-pro #4 WARN cadrage serré
+hiboy-ks4-pro #5 FAIL élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux
+hiboy-ks4-pro #6 PASS ok
+hikerboy-curtis #0 PASS ok
+hikerboy-curtis #1 FAIL élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux
+hikerboy-curtis #2 PASS ok
+inmotion-rs #0 FAIL élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux
+inmotion-rs #1 PASS ok
+inmotion-rs #2 PASS ok
+inmotion-rs #3 WARN cadrage serré
+inmotion-rs #4 PASS ok
+inokim-quick-4-super #0 FAIL détourage sale / résidu de décor · basse définition
+inokim-quick-4-super #1 WARN basse définition
+inokim-quick-4-super #2 FAIL détourage sale / résidu de décor · basse définition
+inokim-quick-4-super #3 FAIL basse définition · élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux
+inokim-quick-4-super #4 WARN cadrage serré
+inokim-quick-4-super #5 FAIL détourage sale / résidu de décor · cadrage serré
+inokim-quick-4-super #6 FAIL détourage sale / résidu de décor · basse définition
+isinwheel-s-nova-pro #0 FAIL élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux
+isinwheel-s-nova-pro #1 FAIL détourage sale / résidu de décor · cadrage serré · élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux
+isinwheel-s-nova-pro #2 FAIL détourage sale / résidu de décor · élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux
+isinwheel-s-nova-pro #3 FAIL cadrage serré · élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux
+isinwheel-s-nova-pro #4 FAIL détourage sale / résidu de décor · élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux
+isinwheel-s-nova-pro #5 PASS ok
+isinwheel-s-nova-pro #6 WARN cadrage serré
+kaabo-wolf-warrior-king-gtr-max #0 WARN cadrage serré
+kaabo-wolf-warrior-king-gtr-max #1 WARN cadrage serré
+kaabo-wolf-warrior-king-gtr-max #2 PASS ok
+kaabo-wolf-warrior-king-gtr-max #3 WARN cadrage serré
+kaabo-wolf-warrior-king-gtr-max #4 WARN cadrage serré
+ninebot-f3-pro-e #0 FAIL détourage sale / résidu de décor
+ninebot-f3-pro-e #1 FAIL détourage sale / résidu de décor · cadrage serré · petit élément détaché (2 morceaux)
+ninebot-f3-pro-e #2 FAIL détourage sale / résidu de décor
+ninebot-f3-pro-e #3 FAIL détourage sale / résidu de décor · élément en plus (logo, badge, téléphone, 2e trottinette) : 5 morceaux
+ninebot-f3-pro-e #4 FAIL détourage sale / résidu de décor · cadrage serré
+ninebot-f3-pro-e #5 FAIL détourage sale / résidu de décor · cadrage serré
+ninebot-f3-pro-e #6 FAIL élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux
+niu-kqi3-pro #0 PASS ok
+niu-kqi3-pro #1 PASS ok
+niu-kqi3-pro #2 FAIL élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux · couleurs vives 40 % (visuel marketing ?)
+niu-kqi3-pro #3 FAIL détourage sale / résidu de décor · élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux
+niu-kqi3-pro #4 FAIL détourage sale / résidu de décor
+niu-kqi3-pro #5 PASS ok
+pure-escape #0 FAIL détourage sale / résidu de décor · élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux
+pure-escape #1 FAIL détourage sale / résidu de décor · élément en plus (logo, badge, téléphone, 2e trottinette) : 9 morceaux
+pure-escape #2 FAIL détourage sale / résidu de décor · petit élément détaché (2 morceaux)
+pure-escape #3 FAIL détourage sale / résidu de décor · cadrage serré · petit élément détaché (2 morceaux) · couleurs vives 36 % (visuel marketing ?)
+pure-escape #4 FAIL détourage sale / résidu de décor · élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux
+pure-escape #5 FAIL détourage sale / résidu de décor · élément en plus (logo, badge, téléphone, 2e trottinette) : 4 morceaux
+segway-zt3-pro-e #0 PASS ok
+segway-zt3-pro-e #1 PASS ok
+segway-zt3-pro-e #2 FAIL détourage sale / résidu de décor · cadrage serré
+segway-zt3-pro-e #3 FAIL cadrage serré · élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux
+segway-zt3-pro-e #4 FAIL détourage sale / résidu de décor
+segway-zt3-pro-e #5 WARN basse définition · cadrage serré
+segway-zt3-pro-e #6 PASS ok
+urbanglide-all-road-6-2x2 #0 PASS ok
+urbanglide-all-road-6-2x2 #1 FAIL détourage sale / résidu de décor · élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux · couleurs vives 91 % (visuel marketing ?)
+urbanglide-all-road-6-2x2 #2 FAIL détourage sale / résidu de décor · petit élément détaché (2 morceaux)
+urbanglide-all-road-6-2x2 #3 PASS ok
+urbanglide-all-road-6-2x2 #4 WARN basse définition · cadrage serré
+weped-fold-11 #0 PASS ok
+weped-fold-11 #1 PASS ok
+::notice title=photos rep01 (dry)::289 candidates · PASS 103 · WARN 60 · FAIL 114 · ERREUR 12
