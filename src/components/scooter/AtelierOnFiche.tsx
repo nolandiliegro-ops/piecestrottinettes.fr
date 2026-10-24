@@ -20,9 +20,12 @@ const cut = (px: number) => `polygon(0 0, calc(100% - ${px}px) 0, 100% ${px}px, 
 // 2e tour (24/10, Nolan : « cartes photo OK, deux colonnes j'aime bien parce que les cartes sortent mieux,
 // mais ça fait trop blog, la bande noire bof, je veux un truc original ») : ?conseils=6..10.
 export type ConseilsLook = 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10;
+// 24/10 (choix de Nolan) : « Affiches + ordre de réparation » (6) par défaut ; ?conseils=0 = anciens blocs.
 export const conseilsParam = (): ConseilsLook | null => {
-  if (typeof window === "undefined") return null;
-  const n = Number(new URLSearchParams(window.location.search).get("conseils"));
+  if (typeof window === "undefined") return 6;
+  const sp = new URLSearchParams(window.location.search);
+  if (!sp.has("conseils")) return 6;
+  const n = Number(sp.get("conseils"));
   return n >= 1 && n <= 10 ? (n as ConseilsLook) : null;
 };
 
