@@ -94,7 +94,7 @@ const HeaderProposals = ({ variant }: { variant: BarreVariant }) => {
   const links = (cls = "") => (
     <nav className={`hidden lg:flex items-center gap-6 xl:gap-8 ${cls}`}>
       {LINKS.map((l) => (
-        <Link key={l.href} to={l.href} className="py-2 text-sm font-extrabold uppercase tracking-[0.06em] transition-colors"
+        <Link key={l.href} to={l.href} className={`py-2 text-sm font-extrabold uppercase tracking-[0.06em] transition-colors ${l.href === "/blog" ? "!hidden xl:!inline-flex" : ""}`}
           style={{ fontFamily: FONT, color: on(l.href) ? ink : dark ? "rgba(255,255,255,0.7)" : "#57534E", boxShadow: on(l.href) ? `inset 0 -2.5px 0 ${GREEN}` : "none" }}>
           {l.label}
         </Link>
@@ -116,7 +116,7 @@ const HeaderProposals = ({ variant }: { variant: BarreVariant }) => {
       return (
         <nav className="hidden lg:flex items-center gap-7 xl:gap-9">
           {LINKS.map((l) => (
-            <Link key={l.href} to={l.href} className="relative py-2 text-[15px] font-extrabold uppercase tracking-[0.08em] transition-colors hover:text-[#1A1A1A]"
+            <Link key={l.href} to={l.href} className={`relative py-2 text-[15px] font-extrabold uppercase tracking-[0.08em] transition-colors hover:text-[#1A1A1A] ${l.href === "/blog" ? "!hidden xl:!inline-flex" : ""}`}
               style={{ fontFamily: FONT, color: on(l.href) ? CARBON : "#78716C" }}>
               {l.label}
               <span aria-hidden className="absolute left-0 right-0 -bottom-0.5 h-[3px] transition-transform origin-left" style={{ background: GREEN, transform: on(l.href) ? "scaleX(1)" : "scaleX(0)" }} />
@@ -129,7 +129,7 @@ const HeaderProposals = ({ variant }: { variant: BarreVariant }) => {
       return (
         <nav className="hidden lg:flex items-center gap-4 xl:gap-8">
           {LINKS.map((l) => (
-            <Link key={l.href} to={l.href} className="inline-flex items-center gap-2 py-2 text-sm font-extrabold uppercase tracking-[0.06em] [&>span:first-child]:hidden xl:[&>span:first-child]:flex"
+            <Link key={l.href} to={l.href} className={`inline-flex items-center gap-2 py-2 text-sm font-extrabold uppercase tracking-[0.06em] [&>span:first-child]:hidden xl:[&>span:first-child]:flex ${l.href === "/blog" ? "!hidden xl:!inline-flex" : ""}`}
               style={{ fontFamily: FONT, color: on(l.href) ? CARBON : "#57534E" }}>
               <span className="w-7 h-7 flex items-center justify-center text-white" style={{ background: on(l.href) ? GREEN : CARBON, clipPath: CUT }}>{ICONS[l.href]}</span>
               {l.label}
@@ -147,7 +147,7 @@ const HeaderProposals = ({ variant }: { variant: BarreVariant }) => {
             Pièces <ChevronDown className={`w-4 h-4 transition-transform ${megaOpen ? "rotate-180" : ""}`} />
           </button>
           {LINKS.slice(1).map((l) => (
-            <Link key={l.href} to={l.href} className="py-2 text-sm font-extrabold italic uppercase tracking-[0.06em]"
+            <Link key={l.href} to={l.href} className={`py-2 text-sm font-extrabold italic uppercase tracking-[0.06em] ${l.href === "/blog" ? "!hidden xl:!inline-flex" : ""}`}
               style={{ fontFamily: FONT, color: on(l.href) ? CARBON : "#57534E", boxShadow: on(l.href) ? `inset 0 -2.5px 0 ${GREEN}` : "none" }}>{l.label}</Link>
           ))}
           {megaOpen && (
@@ -171,7 +171,7 @@ const HeaderProposals = ({ variant }: { variant: BarreVariant }) => {
       return (
         <nav className="hidden lg:flex items-center gap-1.5">
           {LINKS.map((l) => (
-            <Link key={l.href} to={l.href} className="inline-flex items-center min-h-[40px] px-3.5 text-[13px] font-extrabold uppercase tracking-[0.06em]"
+            <Link key={l.href} to={l.href} className={`inline-flex items-center min-h-[40px] px-3.5 text-[13px] font-extrabold uppercase tracking-[0.06em] ${l.href === "/blog" ? "!hidden xl:!inline-flex" : ""}`}
               style={{ fontFamily: FONT, clipPath: CUT, background: on(l.href) ? CARBON : "transparent", color: on(l.href) ? "#fff" : CARBON, boxShadow: on(l.href) ? "none" : `inset 0 0 0 1px ${LINE}` }}>
               {l.label}
             </Link>
@@ -182,7 +182,7 @@ const HeaderProposals = ({ variant }: { variant: BarreVariant }) => {
     return (
       <nav className="hidden lg:flex items-center gap-4 xl:gap-8">
         {LINKS.map((l) => (
-          <Link key={l.href} to={l.href} className="flex flex-col leading-none py-1.5 pl-3" style={{ boxShadow: `inset 3px 0 0 ${on(l.href) ? GREEN : LINE}` }}>
+          <Link key={l.href} to={l.href} className={`flex flex-col leading-none py-1.5 pl-3 ${l.href === "/blog" ? "!hidden xl:!inline-flex" : ""}`} style={{ boxShadow: `inset 3px 0 0 ${on(l.href) ? GREEN : LINE}` }}>
             <span className="text-[15px] font-extrabold uppercase tracking-[0.05em]" style={{ fontFamily: FONT, color: CARBON }}>{l.label}</span>
             <span className="mt-1 text-sm text-gray-500 hidden xl:block" style={{ fontFamily: FONT }}>{SUBS[l.href]}</span>
           </Link>
