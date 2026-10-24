@@ -1,0 +1,952 @@
+{
+ "lot": "vt01",
+ "entity": "part",
+ "note": "3e vue technique générée (A2, 24/10) — append en fin de galerie",
+ "models": [
+  {
+   "id": "15de857e-bf08-4c24-b810-48d58556e3fe",
+   "slug": "chambre-a-air-10-pouces-10x2-125-valve-droite",
+   "name": "Chambre à air 10x2.125 valve droite",
+   "brand": "",
+   "candidates": [
+    "https://raw.githubusercontent.com/nolandiliegro-ops/piecestrottinettes.fr/main/config/photos/visuels/chambre-a-air-10-pouces-10x2-125-valve-droite.png"
+   ]
+  },
+  {
+   "id": "e77cf560-78fb-42b3-a1ed-fb0a94ee3d3e",
+   "slug": "chambre-a-air-10x2-50-valve-45x45",
+   "name": "Chambre à air 10x2.50 valve 45x45°",
+   "brand": "",
+   "candidates": [
+    "https://raw.githubusercontent.com/nolandiliegro-ops/piecestrottinettes.fr/main/config/photos/visuels/chambre-a-air-10x2-50-valve-45x45.png"
+   ]
+  },
+  {
+   "id": "b4294022-0bae-4290-a2ae-468a92ed6cfe",
+   "slug": "chambre-a-air-10x2125-renforcee-90x90",
+   "name": "Chambre à air 10x2.125 renforcée valve coudée 90x90°",
+   "brand": "",
+   "candidates": [
+    "https://raw.githubusercontent.com/nolandiliegro-ops/piecestrottinettes.fr/main/config/photos/visuels/chambre-a-air-10x2125-renforcee-90x90.png"
+   ]
+  },
+  {
+   "id": "b857f262-dfa5-49fd-b58e-607c75b7332c",
+   "slug": "chambre-a-air-10x2125-valve-0x90",
+   "name": "Chambre à air 10x2.125 valve 0x90°",
+   "brand": "",
+   "candidates": [
+    "https://raw.githubusercontent.com/nolandiliegro-ops/piecestrottinettes.fr/main/config/photos/visuels/chambre-a-air-10x2125-valve-0x90.png"
+   ]
+  },
+  {
+   "id": "5e18a951-593f-45ef-be0c-62abaa499f91",
+   "slug": "chambre-a-air-10x2125-valve-45x45",
+   "name": "Chambre à air 10x2.125 valve 45x45°",
+   "brand": "",
+   "candidates": [
+    "https://raw.githubusercontent.com/nolandiliegro-ops/piecestrottinettes.fr/main/config/photos/visuels/chambre-a-air-10x2125-valve-45x45.png"
+   ]
+  },
+  {
+   "id": "8b49f7eb-2866-4698-afdf-98e9c315550c",
+   "slug": "chambre-a-air-10x2125-valve-90x90",
+   "name": "Chambre à air 10x2.125 valve 90x90°",
+   "brand": "",
+   "candidates": [
+    "https://raw.githubusercontent.com/nolandiliegro-ops/piecestrottinettes.fr/main/config/photos/visuels/chambre-a-air-10x2125-valve-90x90.png"
+   ]
+  },
+  {
+   "id": "5e718728-c8bf-4bdb-8e9c-f903b4ec6aef",
+   "slug": "chambre-a-air-10x250-valve-0x90",
+   "name": "Chambre à air 10x2.50 valve 0x90°",
+   "brand": "",
+   "candidates": [
+    "https://raw.githubusercontent.com/nolandiliegro-ops/piecestrottinettes.fr/main/config/photos/visuels/chambre-a-air-10x250-valve-0x90.png"
+   ]
+  },
+  {
+   "id": "2f007854-c2ee-4b7f-83b8-7734666480ae",
+   "slug": "chambre-a-air-10x250-valve-90x90",
+   "name": "Chambre à air 10x2.50 valve 90x90°",
+   "brand": "",
+   "candidates": [
+    "https://raw.githubusercontent.com/nolandiliegro-ops/piecestrottinettes.fr/main/config/photos/visuels/chambre-a-air-10x250-valve-90x90.png"
+   ]
+  },
+  {
+   "id": "cb9a2325-1138-4111-8e04-4f7eef1189ef",
+   "slug": "chambre-a-air-10x250-valve-droite",
+   "name": "Chambre à air 10x2.50 valve droite",
+   "brand": "",
+   "candidates": [
+    "https://raw.githubusercontent.com/nolandiliegro-ops/piecestrottinettes.fr/main/config/photos/visuels/chambre-a-air-10x250-valve-droite.png"
+   ]
+  },
+  {
+   "id": "f761d338-a306-4774-a7c2-87b2e1d9298d",
+   "slug": "chambre-a-air-10x30-7065-65",
+   "name": "Chambre à air 10x3.0 (70/65-6.5) valve coudée 90x90°",
+   "brand": "",
+   "candidates": [
+    "https://raw.githubusercontent.com/nolandiliegro-ops/piecestrottinettes.fr/main/config/photos/visuels/chambre-a-air-10x30-7065-65.png"
+   ]
+  },
+  {
+   "id": "a71e6a11-0437-43cf-ba17-11b745fec26e",
+   "slug": "chambre-a-air-14x2-50-valve-droite-dualtron-city",
+   "name": "Chambre à air 14x2.50 valve droite (Dualtron City)",
+   "brand": "",
+   "candidates": [
+    "https://raw.githubusercontent.com/nolandiliegro-ops/piecestrottinettes.fr/main/config/photos/visuels/chambre-a-air-14x2-50-valve-droite-dualtron-city.png"
+   ]
+  },
+  {
+   "id": "cfce23cf-a8d4-475d-9e43-9d00bfc6ebf8",
+   "slug": "chambre-a-air-200x50-speedway-mini4-pro",
+   "name": "Chambre à air 200x50 valve coudée 90x90° (Speedway Mini 4 Pro)",
+   "brand": "",
+   "candidates": [
+    "https://raw.githubusercontent.com/nolandiliegro-ops/piecestrottinettes.fr/main/config/photos/visuels/chambre-a-air-200x50-speedway-mini4-pro.png"
+   ]
+  },
+  {
+   "id": "a643a027-84a2-4fec-90e3-63b6388a5f4c",
+   "slug": "chambre-a-air-6x2-pouces",
+   "name": "Chambre à air 6x2 valve coudée 45x45°",
+   "brand": "",
+   "candidates": [
+    "https://raw.githubusercontent.com/nolandiliegro-ops/piecestrottinettes.fr/main/config/photos/visuels/chambre-a-air-6x2-pouces.png"
+   ]
+  },
+  {
+   "id": "79aba024-f10d-4942-9161-c50c738a24cc",
+   "slug": "chambre-a-air-70-100-19-valve-droite",
+   "name": "Chambre à air 70/100-19 valve droite",
+   "brand": "",
+   "candidates": [
+    "https://raw.githubusercontent.com/nolandiliegro-ops/piecestrottinettes.fr/main/config/photos/visuels/chambre-a-air-70-100-19-valve-droite.png"
+   ]
+  },
+  {
+   "id": "b191919c-ec3a-467e-a85b-df3e47827a0c",
+   "slug": "chambre-a-air-80-65-6-10x3-valve-coudee-ewheel",
+   "name": "Chambre à air 80/65-6 (10x3) valve coudée eWheel",
+   "brand": "",
+   "candidates": [
+    "https://raw.githubusercontent.com/nolandiliegro-ops/piecestrottinettes.fr/main/config/photos/visuels/chambre-a-air-80-65-6-10x3-valve-coudee-ewheel.png"
+   ]
+  },
+  {
+   "id": "d1fe3150-a414-4d17-a22e-53b3355b126e",
+   "slug": "chambre-a-air-85x2-dualtron-mini-valve-90x90",
+   "name": "Chambre à air 8,5x2 Dualtron Mini (valve 90x90°)",
+   "brand": "",
+   "candidates": [
+    "https://raw.githubusercontent.com/nolandiliegro-ops/piecestrottinettes.fr/main/config/photos/visuels/chambre-a-air-85x2-dualtron-mini-valve-90x90.png"
+   ]
+  },
+  {
+   "id": "18959465-ceb3-4b18-beb2-73184cd1e1dc",
+   "slug": "chambre-a-air-85x2-renforcee-dualtron-mini-speedway-leger",
+   "name": "Chambre à air 8,5x2 renforcée valve coudée 90x90° (Dualtron Mini, Speedway Leger)",
+   "brand": "",
+   "candidates": [
+    "https://raw.githubusercontent.com/nolandiliegro-ops/piecestrottinettes.fr/main/config/photos/visuels/chambre-a-air-85x2-renforcee-dualtron-mini-speedway-leger.png"
+   ]
+  },
+  {
+   "id": "e1c7afb0-1f93-42f4-8d90-352bd53e659a",
+   "slug": "chambre-a-air-85x2-valve-coudee-90-jante-zero-134mm",
+   "name": "Chambre à air 8,5x2 valve coudée 90° (jante Zero 134mm)",
+   "brand": "",
+   "candidates": [
+    "https://raw.githubusercontent.com/nolandiliegro-ops/piecestrottinettes.fr/main/config/photos/visuels/chambre-a-air-85x2-valve-coudee-90-jante-zero-134mm.png"
+   ]
+  },
+  {
+   "id": "10587564-0771-47f1-a5e1-02d84f9a9e6f",
+   "slug": "chambre-a-air-85x2-vsett-8-9-z8-pro-140mm",
+   "name": "Chambre à air 8,5x2 valve coudée 90x90° (Vsett 8 & 9 / Z8 Pro, jante 140 mm)",
+   "brand": "",
+   "candidates": [
+    "https://raw.githubusercontent.com/nolandiliegro-ops/piecestrottinettes.fr/main/config/photos/visuels/chambre-a-air-85x2-vsett-8-9-z8-pro-140mm.png"
+   ]
+  },
+  {
+   "id": "9c005880-f006-46d4-9b6b-ee295d7b93a5",
+   "slug": "chambre-a-air-85x2-xiaomi-m365",
+   "name": "Chambre à air 8,5x2 valve droite (Xiaomi M365)",
+   "brand": "",
+   "candidates": [
+    "https://raw.githubusercontent.com/nolandiliegro-ops/piecestrottinettes.fr/main/config/photos/visuels/chambre-a-air-85x2-xiaomi-m365.png"
+   ]
+  },
+  {
+   "id": "71e46fe3-97b6-42ec-b490-0307f27db584",
+   "slug": "chambre-a-air-85x2-zero-8-9",
+   "name": "Chambre à air 8,5x2 valve coudée 45x45° (Zero 8 & 9)",
+   "brand": "",
+   "candidates": [
+    "https://raw.githubusercontent.com/nolandiliegro-ops/piecestrottinettes.fr/main/config/photos/visuels/chambre-a-air-85x2-zero-8-9.png"
+   ]
+  },
+  {
+   "id": "f01b7ff0-2bbd-4835-8204-07297e913eed",
+   "slug": "chambre-a-air-8x2-e-road-ciwo",
+   "name": "Chambre à air 8x2 valve coudée 70x45° (E-road Ciwo)",
+   "brand": "",
+   "candidates": [
+    "https://raw.githubusercontent.com/nolandiliegro-ops/piecestrottinettes.fr/main/config/photos/visuels/chambre-a-air-8x2-e-road-ciwo.png"
+   ]
+  },
+  {
+   "id": "044be9ed-9fae-4af1-97b1-e76676d32411",
+   "slug": "chambre-a-air-90-65-6-5-valve-coudee-ewheel",
+   "name": "Chambre à air 90/65-6.5 valve coudée eWheel",
+   "brand": "",
+   "candidates": [
+    "https://raw.githubusercontent.com/nolandiliegro-ops/piecestrottinettes.fr/main/config/photos/visuels/chambre-a-air-90-65-6-5-valve-coudee-ewheel.png"
+   ]
+  },
+  {
+   "id": "445b9cba-97ef-404c-8227-4008be227f6f",
+   "slug": "chambre-a-air-9065-65-11-pouces",
+   "name": "Chambre à air 90/65-6.5 (11 pouces) valve coudée 90x90°",
+   "brand": "",
+   "candidates": [
+    "https://raw.githubusercontent.com/nolandiliegro-ops/piecestrottinettes.fr/main/config/photos/visuels/chambre-a-air-9065-65-11-pouces.png"
+   ]
+  },
+  {
+   "id": "fb7e1378-a96b-4bf5-99a5-64aa3ab61662",
+   "slug": "chambre-a-air-9065-65-valve-droite",
+   "name": "Chambre à air 90/65-6.5 valve droite",
+   "brand": "",
+   "candidates": [
+    "https://raw.githubusercontent.com/nolandiliegro-ops/piecestrottinettes.fr/main/config/photos/visuels/chambre-a-air-9065-65-valve-droite.png"
+   ]
+  },
+  {
+   "id": "c8c2d99f-87d6-4ea6-b2d4-9704774ea7b2",
+   "slug": "chambre-a-air-cst-410350-4",
+   "name": "Chambre à air CST 4.10/3.50-4 valve coudée 90x90°",
+   "brand": "",
+   "candidates": [
+    "https://raw.githubusercontent.com/nolandiliegro-ops/piecestrottinettes.fr/main/config/photos/visuels/chambre-a-air-cst-410350-4.png"
+   ]
+  },
+  {
+   "id": "a5030135-67e6-4bd4-b4cc-fc833fcd6ef0",
+   "slug": "chambre-a-air-draisienne-12x175",
+   "name": "Chambre à air draisienne 12x1.75 valve coudée 70x45°",
+   "brand": "",
+   "candidates": [
+    "https://raw.githubusercontent.com/nolandiliegro-ops/piecestrottinettes.fr/main/config/photos/visuels/chambre-a-air-draisienne-12x175.png"
+   ]
+  },
+  {
+   "id": "f0c80176-f04c-4dc1-aca1-e5b4ed78eb38",
+   "slug": "chambre-a-air-draisienne-12x2-125",
+   "name": "Chambre à air draisienne 12x2.125 valve coudée 0x90°",
+   "brand": "",
+   "candidates": [
+    "https://raw.githubusercontent.com/nolandiliegro-ops/piecestrottinettes.fr/main/config/photos/visuels/chambre-a-air-draisienne-12x2-125.png"
+   ]
+  },
+  {
+   "id": "460af7b8-631a-40d8-a6c3-84f4e38a12f7",
+   "slug": "chambre-a-air-kaabo-skywalker-200x50-diam-94mm-30x90",
+   "name": "Chambre à air 200x50 valve coudée 30x90° (Kaabo Skywalker, jante 94 mm)",
+   "brand": "",
+   "candidates": [
+    "https://raw.githubusercontent.com/nolandiliegro-ops/piecestrottinettes.fr/main/config/photos/visuels/chambre-a-air-kaabo-skywalker-200x50-diam-94mm-30x90.png"
+   ]
+  },
+  {
+   "id": "2c168feb-caf5-4749-9d03-fb5868543880",
+   "slug": "chambre-a-air-renforce-10x2-50-90x90",
+   "name": "Chambre à air 10x2.50 renforcée valve coudée 90x90°",
+   "brand": "",
+   "candidates": [
+    "https://raw.githubusercontent.com/nolandiliegro-ops/piecestrottinettes.fr/main/config/photos/visuels/chambre-a-air-renforce-10x2-50-90x90.png"
+   ]
+  },
+  {
+   "id": "8e397910-f700-45f0-9620-45aa04e3bea8",
+   "slug": "chambre-a-air-xiaomi-8-5x2-renforcee",
+   "name": "Chambre à air 8,5x2 renforcée valve droite (Xiaomi)",
+   "brand": "",
+   "candidates": [
+    "https://raw.githubusercontent.com/nolandiliegro-ops/piecestrottinettes.fr/main/config/photos/visuels/chambre-a-air-xiaomi-8-5x2-renforcee.png"
+   ]
+  },
+  {
+   "id": "36146534-c899-435a-a7ff-1ef54c39b04f",
+   "slug": "chargeur-24v-294v-2a-connecteur-gx16-3p",
+   "name": "Chargeur 24V ➡️ 29.4V / 2A (connecteur GX16-3p)",
+   "brand": "",
+   "candidates": [
+    "https://raw.githubusercontent.com/nolandiliegro-ops/piecestrottinettes.fr/main/config/photos/visuels/chargeur-24v-294v-2a-connecteur-gx16-3p.png"
+   ]
+  },
+  {
+   "id": "10c201fc-08c3-486a-9a0e-870a3ed2e9ed",
+   "slug": "chargeur-36v-42v-2a-connecteur-dc-55-21mm",
+   "name": "Chargeur 36V - 42V / 2A (connecteur DC 5.5 - 2.1mm)",
+   "brand": "",
+   "candidates": [
+    "https://raw.githubusercontent.com/nolandiliegro-ops/piecestrottinettes.fr/main/config/photos/visuels/chargeur-36v-42v-2a-connecteur-dc-55-21mm.png"
+   ]
+  },
+  {
+   "id": "dd8a449c-9112-4d7c-bdb3-f84276eff809",
+   "slug": "chargeur-36v-42v-2a-connecteur-gx16-3p",
+   "name": "Chargeur 36V ➡️ 42V / 2A (connecteur GX16-3p)",
+   "brand": "",
+   "candidates": [
+    "https://raw.githubusercontent.com/nolandiliegro-ops/piecestrottinettes.fr/main/config/photos/visuels/chargeur-36v-42v-2a-connecteur-gx16-3p.png"
+   ]
+  },
+  {
+   "id": "fc01424e-5f00-422b-9b9e-c3b30a6f8e69",
+   "slug": "chargeur-36v-42v-2a-xiaomi-connecteur-rca",
+   "name": "Chargeur 36V - 42V / 2A  Xiaomi (connecteur RCA)",
+   "brand": "",
+   "candidates": [
+    "https://raw.githubusercontent.com/nolandiliegro-ops/piecestrottinettes.fr/main/config/photos/visuels/chargeur-36v-42v-2a-xiaomi-connecteur-rca.png"
+   ]
+  },
+  {
+   "id": "06bbf637-2acf-40d5-876c-e91e8c57e7e7",
+   "slug": "chargeur-36v-42v-3a-connecteur-gx16-3p",
+   "name": "Chargeur 36V➡️ 42V / 3A (connecteur GX16-3p)",
+   "brand": "",
+   "candidates": [
+    "https://raw.githubusercontent.com/nolandiliegro-ops/piecestrottinettes.fr/main/config/photos/visuels/chargeur-36v-42v-3a-connecteur-gx16-3p.png"
+   ]
+  },
+  {
+   "id": "1ff988f5-08db-44a6-b9dc-9b65a9d63c52",
+   "slug": "chargeur-48v-546v-2a-connecteur-gx16-3p",
+   "name": "Chargeur 48V ➡️ 54.6V / 2A (connecteur GX16-3p)",
+   "brand": "",
+   "candidates": [
+    "https://raw.githubusercontent.com/nolandiliegro-ops/piecestrottinettes.fr/main/config/photos/visuels/chargeur-48v-546v-2a-connecteur-gx16-3p.png"
+   ]
+  },
+  {
+   "id": "c2a92e7e-fac0-4cf0-addf-eceeb6fc76ae",
+   "slug": "chargeur-48v-546v-3a-gx16-3p",
+   "name": "Chargeur 48v-54.6V 3A GX16-3P",
+   "brand": "",
+   "candidates": [
+    "https://raw.githubusercontent.com/nolandiliegro-ops/piecestrottinettes.fr/main/config/photos/visuels/chargeur-48v-546v-3a-gx16-3p.png"
+   ]
+  },
+  {
+   "id": "e1912226-7d12-4444-b330-42ed791f7b44",
+   "slug": "chargeur-52v-588v-2a-connecteur-gx16-3p",
+   "name": "Chargeur 52V ➡️ 58.8V / 2A (connecteur GX16-3p)",
+   "brand": "",
+   "candidates": [
+    "https://raw.githubusercontent.com/nolandiliegro-ops/piecestrottinettes.fr/main/config/photos/visuels/chargeur-52v-588v-2a-connecteur-gx16-3p.png"
+   ]
+  },
+  {
+   "id": "67d49a2d-d91e-4b41-997c-8020d0ad61a5",
+   "slug": "chargeur-52v-588v-3a-connecteur-gx16-3p",
+   "name": "Chargeur 52V➡️ 58.8V / 3A (connecteur GX16-3p)",
+   "brand": "",
+   "candidates": [
+    "https://raw.githubusercontent.com/nolandiliegro-ops/piecestrottinettes.fr/main/config/photos/visuels/chargeur-52v-588v-3a-connecteur-gx16-3p.png"
+   ]
+  },
+  {
+   "id": "a469fade-7b55-4846-9bab-2dd56582e344",
+   "slug": "chargeur-60v-672v-2a-connecteur-gx16-3p",
+   "name": "Chargeur 60V ➡️ 67.2V / 2A (connecteur GX16-3p)",
+   "brand": "",
+   "candidates": [
+    "https://raw.githubusercontent.com/nolandiliegro-ops/piecestrottinettes.fr/main/config/photos/visuels/chargeur-60v-672v-2a-connecteur-gx16-3p.png"
+   ]
+  },
+  {
+   "id": "c663c317-4cab-4436-946c-49d421a31eac",
+   "slug": "chargeur-63v-2a-inmotion-s1s1f",
+   "name": "Chargeur 63V / 2A Inmotion S1/S1F",
+   "brand": "",
+   "candidates": [
+    "https://raw.githubusercontent.com/nolandiliegro-ops/piecestrottinettes.fr/main/config/photos/visuels/chargeur-63v-2a-inmotion-s1s1f.png"
+   ]
+  },
+  {
+   "id": "f569c640-e9aa-4010-937e-0e7b8edd8cb7",
+   "slug": "chargeur-72v-84v-2a-connecteur-gx16-3p",
+   "name": "Chargeur 72V ➡️ 84V / 2A (connecteur GX16-3p)",
+   "brand": "",
+   "candidates": [
+    "https://raw.githubusercontent.com/nolandiliegro-ops/piecestrottinettes.fr/main/config/photos/visuels/chargeur-72v-84v-2a-connecteur-gx16-3p.png"
+   ]
+  },
+  {
+   "id": "09eb50cd-e229-4e40-9262-697c422c50d3",
+   "slug": "chargeur-72v-84v-2a-connecteur-lp16-3",
+   "name": "Chargeur 72V ➡️ 84V / 2A (connecteur LP16-3)",
+   "brand": "",
+   "candidates": [
+    "https://raw.githubusercontent.com/nolandiliegro-ops/piecestrottinettes.fr/main/config/photos/visuels/chargeur-72v-84v-2a-connecteur-lp16-3.png"
+   ]
+  },
+  {
+   "id": "25ffedc5-983a-412f-9c30-2d5d3ddccd6d",
+   "slug": "chargeur-72v-84v-reglable-1-20-a-prise-xt90",
+   "name": "Chargeur 72v-84V Reglable 1-20 A Prise XT90",
+   "brand": "",
+   "candidates": [
+    "https://raw.githubusercontent.com/nolandiliegro-ops/piecestrottinettes.fr/main/config/photos/visuels/chargeur-72v-84v-reglable-1-20-a-prise-xt90.png"
+   ]
+  },
+  {
+   "id": "01fad123-fe29-4e5c-b17e-89106ba93623",
+   "slug": "chargeur-rapide-52v-58v-5a-prise-gx16",
+   "name": "Chargeur rapide 52V-58V 5A prise GX16",
+   "brand": "",
+   "candidates": [
+    "https://raw.githubusercontent.com/nolandiliegro-ops/piecestrottinettes.fr/main/config/photos/visuels/chargeur-rapide-52v-58v-5a-prise-gx16.png"
+   ]
+  },
+  {
+   "id": "ed59ea13-b9da-43c5-91c6-0e651a45160d",
+   "slug": "chargeur-rapide-60v-67v-1-10a-gx16-3p",
+   "name": "Chargeur rapide 60V ➡️ 67V 1-10A GX16-3P",
+   "brand": "",
+   "candidates": [
+    "https://raw.githubusercontent.com/nolandiliegro-ops/piecestrottinettes.fr/main/config/photos/visuels/chargeur-rapide-60v-67v-1-10a-gx16-3p.png"
+   ]
+  },
+  {
+   "id": "0ee66974-5336-409a-a3f8-48c6c071e2a9",
+   "slug": "chargeur-rapide-72v-84v-1-10a-gx16-3p",
+   "name": "Chargeur rapide 72V ➡️ 84V 1-10A GX16-3P",
+   "brand": "",
+   "candidates": [
+    "https://raw.githubusercontent.com/nolandiliegro-ops/piecestrottinettes.fr/main/config/photos/visuels/chargeur-rapide-72v-84v-1-10a-gx16-3p.png"
+   ]
+  },
+  {
+   "id": "d7858089-07fd-4e3c-82ba-ac9196ba6edc",
+   "slug": "disque-de-frein-120mm-6-trous",
+   "name": "Disque de frein 120MM 6 trous",
+   "brand": "",
+   "candidates": [
+    "https://raw.githubusercontent.com/nolandiliegro-ops/piecestrottinettes.fr/main/config/photos/visuels/disque-de-frein-120mm-6-trous.png"
+   ]
+  },
+  {
+   "id": "c7937f3f-a5ae-4d4d-a5f9-d411f67164f0",
+   "slug": "disque-de-frein-135mm-5-trous",
+   "name": "Disque de frein 135mm 5 trous",
+   "brand": "",
+   "candidates": [
+    "https://raw.githubusercontent.com/nolandiliegro-ops/piecestrottinettes.fr/main/config/photos/visuels/disque-de-frein-135mm-5-trous.png"
+   ]
+  },
+  {
+   "id": "512fd5e5-59b8-4ea5-bd31-d10868910a65",
+   "slug": "disque-de-frein-140mm",
+   "name": "Disque de frein 140MM",
+   "brand": "",
+   "candidates": [
+    "https://raw.githubusercontent.com/nolandiliegro-ops/piecestrottinettes.fr/main/config/photos/visuels/disque-de-frein-140mm.png"
+   ]
+  },
+  {
+   "id": "a9e75639-865e-4a09-9512-e6bc110d1b43",
+   "slug": "disque-de-frein-140mm-5-trous-xiaomi-mi4",
+   "name": "Disque de frein 140mm 5 trous Xiaomi Mi4",
+   "brand": "",
+   "candidates": [
+    "https://raw.githubusercontent.com/nolandiliegro-ops/piecestrottinettes.fr/main/config/photos/visuels/disque-de-frein-140mm-5-trous-xiaomi-mi4.png"
+   ]
+  },
+  {
+   "id": "c5a17e18-5f4f-4b67-bd38-86fb34f9ba72",
+   "slug": "disque-de-frein-140mm-kukirin-g2-pro",
+   "name": "Disque de frein 140mm Kukirin G2 Pro",
+   "brand": "",
+   "candidates": [
+    "https://raw.githubusercontent.com/nolandiliegro-ops/piecestrottinettes.fr/main/config/photos/visuels/disque-de-frein-140mm-kukirin-g2-pro.png"
+   ]
+  },
+  {
+   "id": "7f9a9b93-acf7-4fd2-a812-8e808079098e",
+   "slug": "disque-de-frein-160mm",
+   "name": "Disque de frein 160mm",
+   "brand": "",
+   "candidates": [
+    "https://raw.githubusercontent.com/nolandiliegro-ops/piecestrottinettes.fr/main/config/photos/visuels/disque-de-frein-160mm.png"
+   ]
+  },
+  {
+   "id": "050417d5-f22a-4e82-a5cb-1668c264d787",
+   "slug": "disque-de-frein-160mm-28mm-entraxe-44mm",
+   "name": "Disque de frein 160mm 2.8mm entraxe 44mm",
+   "brand": "",
+   "candidates": [
+    "https://raw.githubusercontent.com/nolandiliegro-ops/piecestrottinettes.fr/main/config/photos/visuels/disque-de-frein-160mm-28mm-entraxe-44mm.png"
+   ]
+  },
+  {
+   "id": "4d44552c-f386-4972-a5e0-127dd8628e14",
+   "slug": "disque-de-frein-160mm-28mm-entraxe-48mm",
+   "name": "Disque de frein 160mm 2.8mm entraxe 48mm",
+   "brand": "",
+   "candidates": [
+    "https://raw.githubusercontent.com/nolandiliegro-ops/piecestrottinettes.fr/main/config/photos/visuels/disque-de-frein-160mm-28mm-entraxe-48mm.png"
+   ]
+  },
+  {
+   "id": "84b59561-04e7-4f21-963d-33ae7e34f7e9",
+   "slug": "disque-de-frein-160mm-dualtron-thunder-ultra",
+   "name": "Disque de frein 160mm Dualtron Thunder ultra",
+   "brand": "",
+   "candidates": [
+    "https://raw.githubusercontent.com/nolandiliegro-ops/piecestrottinettes.fr/main/config/photos/visuels/disque-de-frein-160mm-dualtron-thunder-ultra.png"
+   ]
+  },
+  {
+   "id": "0dec7214-6333-4a1f-bb1f-0be2f6f7ac8d",
+   "slug": "disque-de-frein-180mm",
+   "name": "Disque de frein 180mm",
+   "brand": "",
+   "candidates": [
+    "https://raw.githubusercontent.com/nolandiliegro-ops/piecestrottinettes.fr/main/config/photos/visuels/disque-de-frein-180mm.png"
+   ]
+  },
+  {
+   "id": "b3682902-21d8-4511-9235-64f25c138b87",
+   "slug": "disque-de-frein-xiaomi-120mm-m365-pro",
+   "name": "Disque de frein Xiaomi 120mm M365 Pro",
+   "brand": "",
+   "candidates": [
+    "https://raw.githubusercontent.com/nolandiliegro-ops/piecestrottinettes.fr/main/config/photos/visuels/disque-de-frein-xiaomi-120mm-m365-pro.png"
+   ]
+  },
+  {
+   "id": "aeed6d51-4e03-46a8-90f2-b332459eb885",
+   "slug": "disque-de-freins-140mm-entraxe-48mm",
+   "name": "Disque de freins 140mm entraxe 48mm",
+   "brand": "",
+   "candidates": [
+    "https://raw.githubusercontent.com/nolandiliegro-ops/piecestrottinettes.fr/main/config/photos/visuels/disque-de-freins-140mm-entraxe-48mm.png"
+   ]
+  },
+  {
+   "id": "64282816-5a7d-4536-8d1f-22a15052e9de",
+   "slug": "disque-de-freins-145-mm-6-trous",
+   "name": "Disque de freins 145 mm 6 trous",
+   "brand": "",
+   "candidates": [
+    "https://raw.githubusercontent.com/nolandiliegro-ops/piecestrottinettes.fr/main/config/photos/visuels/disque-de-freins-145-mm-6-trous.png"
+   ]
+  },
+  {
+   "id": "04b82437-857f-42cb-9c0d-d7356fb07779",
+   "slug": "pack-chargeur-36v-42v-2a-connecteur-rca",
+   "name": "Pack Chargeur 36V ➡️ 42V / 2A (connecteur RCA)",
+   "brand": "",
+   "candidates": [
+    "https://raw.githubusercontent.com/nolandiliegro-ops/piecestrottinettes.fr/main/config/photos/visuels/pack-chargeur-36v-42v-2a-connecteur-rca.png"
+   ]
+  },
+  {
+   "id": "1c26b20b-6f5b-45ef-91a2-34ab2c2ce9d6",
+   "slug": "pack-chargeur-36v-adaptateur-dc5-5x2-5",
+   "name": "Pack chargeur 36V + adaptateur Jack DC 5,5 x 2,5 mm",
+   "brand": "",
+   "candidates": [
+    "https://raw.githubusercontent.com/nolandiliegro-ops/piecestrottinettes.fr/main/config/photos/visuels/pack-chargeur-36v-adaptateur-dc5-5x2-5.png"
+   ]
+  },
+  {
+   "id": "e6d54134-468c-4b0c-91a6-5e3f188a1649",
+   "slug": "pack-chargeur-48v-adaptateur-dc5-5x2-1",
+   "name": "Pack chargeur 48V + adaptateur Jack DC 5,5 x 2,1 mm",
+   "brand": "",
+   "candidates": [
+    "https://raw.githubusercontent.com/nolandiliegro-ops/piecestrottinettes.fr/main/config/photos/visuels/pack-chargeur-48v-adaptateur-dc5-5x2-1.png"
+   ]
+  },
+  {
+   "id": "354dd7a8-8b32-44b7-912c-9bb44938e0d1",
+   "slug": "pack-chargeur-48v-adaptateur-dc5-5x2-5",
+   "name": "Pack chargeur 48V + adaptateur Jack DC 5,5 x 2,5 mm",
+   "brand": "",
+   "candidates": [
+    "https://raw.githubusercontent.com/nolandiliegro-ops/piecestrottinettes.fr/main/config/photos/visuels/pack-chargeur-48v-adaptateur-dc5-5x2-5.png"
+   ]
+  },
+  {
+   "id": "b5e67741-e17d-4e13-81a9-38e7503ed4e1",
+   "slug": "pack-chargeur-48v-adaptateur-gx12-zwheel",
+   "name": "Pack chargeur 48V + adaptateur GX12 (Zwheel ZRino Duo / ZCougar Duo)",
+   "brand": "",
+   "candidates": [
+    "https://raw.githubusercontent.com/nolandiliegro-ops/piecestrottinettes.fr/main/config/photos/visuels/pack-chargeur-48v-adaptateur-gx12-zwheel.png"
+   ]
+  },
+  {
+   "id": "ee0decd1-51e3-4439-9af0-4f082f0d4715",
+   "slug": "pack-chargeur-52v-588v-2a-connecteur-lp16-3",
+   "name": "Pack Chargeur 52V ➡️ 58.8V / 2A (connecteur LP16-3)",
+   "brand": "",
+   "candidates": [
+    "https://raw.githubusercontent.com/nolandiliegro-ops/piecestrottinettes.fr/main/config/photos/visuels/pack-chargeur-52v-588v-2a-connecteur-lp16-3.png"
+   ]
+  },
+  {
+   "id": "64e829bc-4ce9-4ed9-9f7a-29c3c399166b",
+   "slug": "pack-chargeur-52v-adaptateur-dc5-5x2-1",
+   "name": "Pack chargeur 52V + adaptateur Jack DC 5,5 x 2,1 mm",
+   "brand": "",
+   "candidates": [
+    "https://raw.githubusercontent.com/nolandiliegro-ops/piecestrottinettes.fr/main/config/photos/visuels/pack-chargeur-52v-adaptateur-dc5-5x2-1.png"
+   ]
+  },
+  {
+   "id": "0491cc31-061a-49eb-a92e-aec4e44e6141",
+   "slug": "pack-chargeur-52v-adaptateur-rca",
+   "name": "Pack chargeur 52V + adaptateur rond 8 mm (RCA)",
+   "brand": "",
+   "candidates": [
+    "https://raw.githubusercontent.com/nolandiliegro-ops/piecestrottinettes.fr/main/config/photos/visuels/pack-chargeur-52v-adaptateur-rca.png"
+   ]
+  },
+  {
+   "id": "d15dc188-4190-42c5-b5eb-89707dc600f6",
+   "slug": "pack-chargeur-60v-adaptateur-dc5-5x2-1",
+   "name": "Pack chargeur 60V + adaptateur Jack DC 5,5 x 2,1 mm",
+   "brand": "",
+   "candidates": [
+    "https://raw.githubusercontent.com/nolandiliegro-ops/piecestrottinettes.fr/main/config/photos/visuels/pack-chargeur-60v-adaptateur-dc5-5x2-1.png"
+   ]
+  },
+  {
+   "id": "7d32907d-e8e1-45ce-8b7e-5193df140d52",
+   "slug": "pack-chargeur-72v-adaptateur-nami-rgx16-2",
+   "name": "Pack chargeur 72V + adaptateur Nami GX16 2 broches",
+   "brand": "",
+   "candidates": [
+    "https://raw.githubusercontent.com/nolandiliegro-ops/piecestrottinettes.fr/main/config/photos/visuels/pack-chargeur-72v-adaptateur-nami-rgx16-2.png"
+   ]
+  },
+  {
+   "id": "2f909792-4cc7-43ca-989b-faa2d0caaafc",
+   "slug": "plaquette-de-frein-kaabo-skywalker-e-cross-pro-smartgyro-semi-metallique",
+   "name": "Plaquette de frein Kaabo Skywalker E-cross Pro Smartgyro Semi-Metallique",
+   "brand": "",
+   "candidates": [
+    "https://raw.githubusercontent.com/nolandiliegro-ops/piecestrottinettes.fr/main/config/photos/visuels/plaquette-de-frein-kaabo-skywalker-e-cross-pro-smartgyro-semi-metallique.png"
+   ]
+  },
+  {
+   "id": "55f6e7e2-9fef-4383-8449-1e3a8a73af3b",
+   "slug": "plaquette-de-frein-magura-9c",
+   "name": "Plaquette de frein Magura 9.C",
+   "brand": "",
+   "candidates": [
+    "https://raw.githubusercontent.com/nolandiliegro-ops/piecestrottinettes.fr/main/config/photos/visuels/plaquette-de-frein-magura-9c.png"
+   ]
+  },
+  {
+   "id": "dbbf5bda-9d0c-4a63-9df6-2bafaec06f3f",
+   "slug": "plaquette-de-frein-magura-9c-ceramique",
+   "name": "Plaquette de frein Magura 9.C ceramique",
+   "brand": "",
+   "candidates": [
+    "https://raw.githubusercontent.com/nolandiliegro-ops/piecestrottinettes.fr/main/config/photos/visuels/plaquette-de-frein-magura-9c-ceramique.png"
+   ]
+  },
+  {
+   "id": "7e69effd-80cd-4297-9ad2-d9a221f0950f",
+   "slug": "plaquette-de-frein-magura-9c-metallique",
+   "name": "Plaquette de frein Magura 9.C Metallique",
+   "brand": "",
+   "candidates": [
+    "https://raw.githubusercontent.com/nolandiliegro-ops/piecestrottinettes.fr/main/config/photos/visuels/plaquette-de-frein-magura-9c-metallique.png"
+   ]
+  },
+  {
+   "id": "85164d89-54f3-4d35-b604-6905b768a33a",
+   "slug": "plaquette-de-freins-magura-mt5-mt7",
+   "name": "Plaquette de freins Magura MT5 MT7",
+   "brand": "",
+   "candidates": [
+    "https://raw.githubusercontent.com/nolandiliegro-ops/piecestrottinettes.fr/main/config/photos/visuels/plaquette-de-freins-magura-mt5-mt7.png"
+   ]
+  },
+  {
+   "id": "6f666b69-1ebf-4abd-a149-fde55e188e2e",
+   "slug": "plaquette-de-freins-magura-mt5-mt7-ceramique",
+   "name": "Plaquette de freins Magura MT5 MT7 ceramique",
+   "brand": "",
+   "candidates": [
+    "https://raw.githubusercontent.com/nolandiliegro-ops/piecestrottinettes.fr/main/config/photos/visuels/plaquette-de-freins-magura-mt5-mt7-ceramique.png"
+   ]
+  },
+  {
+   "id": "a8f2e793-18c1-46b8-94fc-9efebcfcc8eb",
+   "slug": "plaquette-de-freins-speedway-et-dualtron",
+   "name": "Plaquette de freins Speedway et Dualtron",
+   "brand": "",
+   "candidates": [
+    "https://raw.githubusercontent.com/nolandiliegro-ops/piecestrottinettes.fr/main/config/photos/visuels/plaquette-de-freins-speedway-et-dualtron.png"
+   ]
+  },
+  {
+   "id": "7923724b-30d9-4555-82e1-26889106e1c5",
+   "slug": "plaquette-de-freins-speedway-et-dualtron-metal-fritte-haute-performance",
+   "name": "Plaquette de freins Speedway et Dualtron Metal Fritté Haute Performance",
+   "brand": "",
+   "candidates": [
+    "https://raw.githubusercontent.com/nolandiliegro-ops/piecestrottinettes.fr/main/config/photos/visuels/plaquette-de-freins-speedway-et-dualtron-metal-fritte-haute-performance.png"
+   ]
+  },
+  {
+   "id": "0df227e4-f803-4616-bb39-364eb24d35cd",
+   "slug": "plaquettes-de-frein-dualtron-togo-ltd-kukirin-g2pro-g2-max-hitway-h5-urbanglide-allroad",
+   "name": "Plaquettes de frein Dualtron Togo Ltd Kukirin G2Pro /G2 Max Hitway H5 Urbanglide AllRoad",
+   "brand": "",
+   "candidates": [
+    "https://raw.githubusercontent.com/nolandiliegro-ops/piecestrottinettes.fr/main/config/photos/visuels/plaquettes-de-frein-dualtron-togo-ltd-kukirin-g2pro-g2-max-hitway-h5-urbanglide-allroad.png"
+   ]
+  },
+  {
+   "id": "89a5b28a-d3e1-4f5b-938d-04bdf8667954",
+   "slug": "plaquettes-de-frein-etrier-jak-5-laotie",
+   "name": "Plaquettes de frein etrier Jak 5 Laotie",
+   "brand": "",
+   "candidates": [
+    "https://raw.githubusercontent.com/nolandiliegro-ops/piecestrottinettes.fr/main/config/photos/visuels/plaquettes-de-frein-etrier-jak-5-laotie.png"
+   ]
+  },
+  {
+   "id": "2992d364-7ba3-41ad-819d-0c43158eacc2",
+   "slug": "plaquettes-de-frein-hope-tech4-v4-metalliques",
+   "name": "Plaquettes de frein Hope Tech4 V4 metalliques",
+   "brand": "",
+   "candidates": [
+    "https://raw.githubusercontent.com/nolandiliegro-ops/piecestrottinettes.fr/main/config/photos/visuels/plaquettes-de-frein-hope-tech4-v4-metalliques.png"
+   ]
+  },
+  {
+   "id": "16124b11-7777-4daa-b40c-5e0ffdfa0804",
+   "slug": "plaquettes-de-frein-hope-tech4-v4-semi-metalliques",
+   "name": "Plaquettes de frein Hope Tech4 V4 semi metalliques",
+   "brand": "",
+   "candidates": [
+    "https://raw.githubusercontent.com/nolandiliegro-ops/piecestrottinettes.fr/main/config/photos/visuels/plaquettes-de-frein-hope-tech4-v4-semi-metalliques.png"
+   ]
+  },
+  {
+   "id": "5b171866-e4e7-4f4c-a908-281b86040d7b",
+   "slug": "plaquettes-de-frein-shimano-b01s-kaabo-mantis-zoom-30mm-ceramique",
+   "name": "Plaquettes de frein Shimano B01S Kaabo Mantis Zoom 30mm Ceramique",
+   "brand": "",
+   "candidates": [
+    "https://raw.githubusercontent.com/nolandiliegro-ops/piecestrottinettes.fr/main/config/photos/visuels/plaquettes-de-frein-shimano-b01s-kaabo-mantis-zoom-30mm-ceramique.png"
+   ]
+  },
+  {
+   "id": "fb3e0efe-5ca3-499c-9ddc-ba0430f11c1c",
+   "slug": "plaquettes-de-frein-shimano-b01s-kaabo-mantis-zoom-30mm-semi-metallique",
+   "name": "Plaquettes de frein Shimano B01S Kaabo Mantis Zoom 30mm Semi-Metallique",
+   "brand": "",
+   "candidates": [
+    "https://raw.githubusercontent.com/nolandiliegro-ops/piecestrottinettes.fr/main/config/photos/visuels/plaquettes-de-frein-shimano-b01s-kaabo-mantis-zoom-30mm-semi-metallique.png"
+   ]
+  },
+  {
+   "id": "336cb8ab-9428-46b9-9a06-374784451ddd",
+   "slug": "plaquettes-de-frein-xiaomi-m365",
+   "name": "Plaquettes de frein Xiaomi M365",
+   "brand": "",
+   "candidates": [
+    "https://raw.githubusercontent.com/nolandiliegro-ops/piecestrottinettes.fr/main/config/photos/visuels/plaquettes-de-frein-xiaomi-m365.png"
+   ]
+  },
+  {
+   "id": "6a7fc04d-6d1b-4758-b90b-22c0d54aaa35",
+   "slug": "plaquettes-de-frein-xiaomi-m365-pro-dualtron-forever",
+   "name": "Plaquettes de frein Xiaomi M365 Pro Dualtron Forever",
+   "brand": "",
+   "candidates": [
+    "https://raw.githubusercontent.com/nolandiliegro-ops/piecestrottinettes.fr/main/config/photos/visuels/plaquettes-de-frein-xiaomi-m365-pro-dualtron-forever.png"
+   ]
+  },
+  {
+   "id": "c735bde9-2eac-449f-9aaa-e1dc965b5277",
+   "slug": "plaquettes-de-frein-zoom-semi-metallique",
+   "name": "Plaquettes de frein Zoom Semi-Metallique",
+   "brand": "",
+   "candidates": [
+    "https://raw.githubusercontent.com/nolandiliegro-ops/piecestrottinettes.fr/main/config/photos/visuels/plaquettes-de-frein-zoom-semi-metallique.png"
+   ]
+  },
+  {
+   "id": "7f4ac7cf-2bf6-49b9-8186-c8f07034e2bd",
+   "slug": "plaquettes-de-freins-draisienne",
+   "name": "Plaquettes de freins draisienne",
+   "brand": "",
+   "candidates": [
+    "https://raw.githubusercontent.com/nolandiliegro-ops/piecestrottinettes.fr/main/config/photos/visuels/plaquettes-de-freins-draisienne.png"
+   ]
+  },
+  {
+   "id": "4f4e1c5f-c77e-4839-bb63-ad2bb2fc7731",
+   "slug": "plaquettes-de-freins-hope-tech4-v4-ceramique",
+   "name": "Plaquettes de freins Hope Tech4 V4 ceramique",
+   "brand": "",
+   "candidates": [
+    "https://raw.githubusercontent.com/nolandiliegro-ops/piecestrottinettes.fr/main/config/photos/visuels/plaquettes-de-freins-hope-tech4-v4-ceramique.png"
+   ]
+  },
+  {
+   "id": "e64e1331-7004-4838-bbcf-88bbe5f6f414",
+   "slug": "plaquettes-de-freins-hope-tech4-v4-metal-fritte-haute-performance",
+   "name": "Plaquettes de freins Hope Tech4 V4 Metal Fritté Haute Performance",
+   "brand": "",
+   "candidates": [
+    "https://raw.githubusercontent.com/nolandiliegro-ops/piecestrottinettes.fr/main/config/photos/visuels/plaquettes-de-freins-hope-tech4-v4-metal-fritte-haute-performance.png"
+   ]
+  },
+  {
+   "id": "b2ed6e67-f03b-49c7-9a7d-32728f3e354b",
+   "slug": "plaquettes-de-freins-kugoo-gbooster-11e",
+   "name": "Plaquettes de freins Kugoo Gbooster 11E",
+   "brand": "",
+   "candidates": [
+    "https://raw.githubusercontent.com/nolandiliegro-ops/piecestrottinettes.fr/main/config/photos/visuels/plaquettes-de-freins-kugoo-gbooster-11e.png"
+   ]
+  },
+  {
+   "id": "f5fd8c8d-9031-4140-9389-bfe7118285d6",
+   "slug": "plaquettes-de-freins-nutt-4-pistons-thunder-3-nami-metalliques",
+   "name": "Plaquettes de freins Nutt 4 pistons Thunder 3 Nami metalliques",
+   "brand": "",
+   "candidates": [
+    "https://raw.githubusercontent.com/nolandiliegro-ops/piecestrottinettes.fr/main/config/photos/visuels/plaquettes-de-freins-nutt-4-pistons-thunder-3-nami-metalliques.png"
+   ]
+  },
+  {
+   "id": "3eccf652-8e92-4a67-b691-2d897805bd72",
+   "slug": "plaquettes-de-freins-nutt-ventilees-dualtron-thunder-metal-fritte-haute-resistance",
+   "name": "Plaquettes de freins Nutt ventilées Dualtron Thunder Metal Fritté Haute Resistance",
+   "brand": "",
+   "candidates": [
+    "https://raw.githubusercontent.com/nolandiliegro-ops/piecestrottinettes.fr/main/config/photos/visuels/plaquettes-de-freins-nutt-ventilees-dualtron-thunder-metal-fritte-haute-resistance.png"
+   ]
+  },
+  {
+   "id": "d0a8e5e9-b172-4fed-b196-1d03f33e611c",
+   "slug": "plaquettes-de-freins-shimano-d03s-nutt-4-pistons-thunder-3-nami-ceramique",
+   "name": "Plaquettes de freins Shimano D03S Nutt 4 pistons Thunder 3 Nami ceramique",
+   "brand": "",
+   "candidates": [
+    "https://raw.githubusercontent.com/nolandiliegro-ops/piecestrottinettes.fr/main/config/photos/visuels/plaquettes-de-freins-shimano-d03s-nutt-4-pistons-thunder-3-nami-ceramique.png"
+   ]
+  },
+  {
+   "id": "491bad57-dad4-4305-8f77-2efacdcf878a",
+   "slug": "plaquettes-de-freins-shimano-d03s-nutt-4-pistons-thunder-3-nami-metal-fritte-haute-performance",
+   "name": "Plaquettes de freins Shimano D03S Nutt 4 pistons Thunder 3 Nami Metal Fritté Haute Performance",
+   "brand": "",
+   "candidates": [
+    "https://raw.githubusercontent.com/nolandiliegro-ops/piecestrottinettes.fr/main/config/photos/visuels/plaquettes-de-freins-shimano-d03s-nutt-4-pistons-thunder-3-nami-metal-fritte-haute-performance.png"
+   ]
+  },
+  {
+   "id": "831bbde7-cf4e-4686-aabf-5c4dd97afd6d",
+   "slug": "plaquettes-de-freins-speedtrott-rs8001600-02b",
+   "name": "Plaquettes de freins SpeedTrott RS800/1600 02B",
+   "brand": "",
+   "candidates": [
+    "https://raw.githubusercontent.com/nolandiliegro-ops/piecestrottinettes.fr/main/config/photos/visuels/plaquettes-de-freins-speedtrott-rs8001600-02b.png"
+   ]
+  },
+  {
+   "id": "d8dcdb62-fb0f-4a47-991b-8722c54197cd",
+   "slug": "plaquettes-de-freins-ventilees-dualtron-thunder",
+   "name": "Plaquettes de freins ventilées Dualtron Thunder",
+   "brand": "",
+   "candidates": [
+    "https://raw.githubusercontent.com/nolandiliegro-ops/piecestrottinettes.fr/main/config/photos/visuels/plaquettes-de-freins-ventilees-dualtron-thunder.png"
+   ]
+  },
+  {
+   "id": "bf32c378-13b5-4a2a-92de-375c3228854d",
+   "slug": "plaquettes-de-freins-xiaomi-mi4-niu-kqi2-kqi3",
+   "name": "Plaquettes de freins Xiaomi Mi4 Niu Kqi2 Kqi3",
+   "brand": "",
+   "candidates": [
+    "https://raw.githubusercontent.com/nolandiliegro-ops/piecestrottinettes.fr/main/config/photos/visuels/plaquettes-de-freins-xiaomi-mi4-niu-kqi2-kqi3.png"
+   ]
+  },
+  {
+   "id": "292fce99-cfac-4441-ac55-cd51ece05f00",
+   "slug": "plaquettes-de-freins-xtech-zoom-xiaomi-mi3",
+   "name": "Plaquettes de freins Xtech Zoom Xiaomi Mi3",
+   "brand": "",
+   "candidates": [
+    "https://raw.githubusercontent.com/nolandiliegro-ops/piecestrottinettes.fr/main/config/photos/visuels/plaquettes-de-freins-xtech-zoom-xiaomi-mi3.png"
+   ]
+  },
+  {
+   "id": "1b45632e-824f-49d5-9e9d-d789d3b9b7ec",
+   "slug": "plaquettes-de-freins-xtech-zoom-xiaomi-mi3-metal-fritte-haute-performance",
+   "name": "Plaquettes de freins Xtech Zoom Xiaomi Mi3 Metal Fritté Haute Performance",
+   "brand": "",
+   "candidates": [
+    "https://raw.githubusercontent.com/nolandiliegro-ops/piecestrottinettes.fr/main/config/photos/visuels/plaquettes-de-freins-xtech-zoom-xiaomi-mi3-metal-fritte-haute-performance.png"
+   ]
+  },
+  {
+   "id": "31718aaa-374e-4713-993c-d678ee0edbf0",
+   "slug": "plaquettes-de-freins-zero-10x-11x-vsett-10-storm-thunder-sram-avid-ceramique",
+   "name": "Plaquettes de freins Zero 10x 11x Vsett 10+ Storm Thunder Sram Avid Céramique",
+   "brand": "",
+   "candidates": [
+    "https://raw.githubusercontent.com/nolandiliegro-ops/piecestrottinettes.fr/main/config/photos/visuels/plaquettes-de-freins-zero-10x-11x-vsett-10-storm-thunder-sram-avid-ceramique.png"
+   ]
+  },
+  {
+   "id": "3fa1adae-f351-4449-b1a7-0b88017926c1",
+   "slug": "plaquettes-de-freins-zero-10x-11x-vsett-10-storm-thunder-sram-avid-metal-fritte-haute-performance",
+   "name": "Plaquettes de freins Zero 10x 11x Vsett 10+ Storm Thunder Sram Avid Metal Fritté Haute Performance",
+   "brand": "",
+   "candidates": [
+    "https://raw.githubusercontent.com/nolandiliegro-ops/piecestrottinettes.fr/main/config/photos/visuels/plaquettes-de-freins-zero-10x-11x-vsett-10-storm-thunder-sram-avid-metal-fritte-haute-performance.png"
+   ]
+  },
+  {
+   "id": "72040bd2-04dc-4d93-a332-047e6c7f876a",
+   "slug": "plaquettes-de-freins-zero-10x-11x-vsett-10-storm-thunder-sram-avid-metalliques",
+   "name": "Plaquettes de freins Zero 10x 11x Vsett 10+ Storm Thunder Sram Avid Métalliques",
+   "brand": "",
+   "candidates": [
+    "https://raw.githubusercontent.com/nolandiliegro-ops/piecestrottinettes.fr/main/config/photos/visuels/plaquettes-de-freins-zero-10x-11x-vsett-10-storm-thunder-sram-avid-metalliques.png"
+   ]
+  },
+  {
+   "id": "2aa9b916-c415-4854-b4c5-6565f35e4275",
+   "slug": "plaquettes-de-freins-zero-10x-11x-vsett-10-storm-thunder-sram-avid-semi-metallique",
+   "name": "Plaquettes de freins Zero 10x 11x Vsett 10+ Storm Thunder Sram Avid semi-metallique",
+   "brand": "",
+   "candidates": [
+    "https://raw.githubusercontent.com/nolandiliegro-ops/piecestrottinettes.fr/main/config/photos/visuels/plaquettes-de-freins-zero-10x-11x-vsett-10-storm-thunder-sram-avid-semi-metallique.png"
+   ]
+  }
+ ]
+}
