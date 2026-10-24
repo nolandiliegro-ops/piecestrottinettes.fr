@@ -6,6 +6,7 @@ interface CategoryWithCount {
   name: string;
   slug: string;
   icon: string | null;
+  image_url: string | null;
   parts_count: number;
 }
 
@@ -21,6 +22,7 @@ export const useCategoryPartsCount = () => {
           name,
           slug,
           icon,
+          image_url,
           parts:parts(count)
         `)
         .eq("parts.published", true)
@@ -34,6 +36,7 @@ export const useCategoryPartsCount = () => {
         name: cat.name,
         slug: cat.slug,
         icon: cat.icon,
+        image_url: cat.image_url ?? null,
         parts_count: cat.parts?.[0]?.count || 0,
       }));
     },

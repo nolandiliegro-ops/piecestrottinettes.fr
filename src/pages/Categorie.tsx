@@ -1,4 +1,4 @@
-import { useParams, Link } from "react-router-dom";
+import { useParams, Link, useSearchParams } from "react-router-dom";
 import { motion } from "framer-motion";
 import { Loader2, ChevronRight } from "lucide-react";
 import SEO from "@/components/SEO";
@@ -11,6 +11,7 @@ import { usableMetaDescription } from "@/lib/seoText";
 import { optimizedImage } from "@/lib/imageTransform";
 import CategorySwitcher from "@/components/category/CategorySwitcher";
 import CategoryExplorer from "@/components/category/CategoryExplorer";
+import CategoryVitrine from "@/components/category/CategoryVitrine";
 
 const FONT = "'Plus Jakarta Sans', sans-serif";
 const HEAD = "'Anton', sans-serif";
@@ -23,6 +24,9 @@ const GRAIN_BG =
 const Categorie = () => {
   const { slug } = useParams<{ slug: string }>();
   const { category, parts, isLoading } = useCategoryData(slug);
+  // 24/10 : haut de page « Vitrine montante » (choix de Nolan). Ancien bandeau : ?vitrine=0.
+  const [searchParams] = useSearchParams();
+  const legacyHero = searchParams.get("vitrine") === "0";
 
 
   // Loading — until we know whether the category exists.
@@ -118,7 +122,22 @@ const Categorie = () => {
           </ol>
         </nav>
 
-        {/* 2. Hero catégorie — recâblage image / icône / accent_label / neon */}
+        {!legacyHero ? (
+          <>
+            <CategoryVitrine
+              name={category.name}
+              heading={heading}
+              imageUrl={category.image_url}
+              imageAlt={category.alt_text || category.name}
+              bodyText={bodyText}
+              parts={parts}
+            />
+            <div className="max-w-7xl mx-auto w-full px-4 md:px-8 pb-8 md:pb-10">
+              <CategorySwitcher currentSlug={category.slug} />
+            </div>
+          </>
+        ) : (
+        /* 2. Ancien hero catégorie (?vitrine=0) — image / icône / accent_label / neon */
         <section className="max-w-7xl mx-auto w-full px-4 md:px-8 pt-3 pb-8 md:pb-12">
           <div
             className="relative overflow-hidden rounded-[2rem] ring-1 ring-black/5"
@@ -185,6 +204,7 @@ const Categorie = () => {
             {bodyText}
           </p>
         </section>
+        )}
 
         {/* 4. 17/10 : comment choisir + filtres (marque de trottinette, taille, recherche) + grille */}
         {parts.length === 0 ? (
