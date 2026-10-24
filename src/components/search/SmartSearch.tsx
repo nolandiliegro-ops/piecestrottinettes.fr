@@ -7,7 +7,7 @@
 import { useEffect, useRef, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { AnimatePresence, motion } from "framer-motion";
-import { ArrowRight, Clock, Search, X } from "lucide-react";
+import { ArrowRight, ChevronLeft, ChevronRight, Clock, Search, X } from "lucide-react";
 import { useSpotlight } from "@/contexts/SpotlightContext";
 import { useSmartSearch, type SBrand, type SFamily, type SPart, type SScooter } from "@/hooks/useSmartSearch";
 import { optimizedImage } from "@/lib/imageTransform";
@@ -37,6 +37,34 @@ const img = (u: string | null, w = 200) => (u ? optimizedImage(u, w) : null);
 
 type Tab = "tout" | "trotts" | "pieces" | "marques";
 type Recent = { label: string; to: string };
+
+/** Rangée défilante avec flèches (ordinateur) — sans flèches, une souris ne peut pas parcourir les cartes (retour Nolan 24/10). */
+const Rail = ({ children }: { children: React.ReactNode }) => {
+  const ref = useRef<HTMLDivElement>(null);
+  const [edge, setEdge] = useState({ start: true, end: false });
+  const measure = () => {
+    const el = ref.current;
+    if (!el) return;
+    const start = el.scrollLeft < 8, end = el.scrollLeft + el.clientWidth >= el.scrollWidth - 8;
+    setEdge((e) => (e.start === start && e.end === end ? e : { start, end }));
+  };
+  useEffect(() => { measure(); }, [children]);
+  const move = (dir: 1 | -1) => ref.current?.scrollBy({ left: dir * ref.current.clientWidth * 0.85, behavior: "smooth" });
+  const arrow = (dir: 1 | -1, hidden: boolean) => (
+    <button type="button" onClick={() => move(dir)} aria-label={dir > 0 ? "Voir les suivants" : "Voir les précédents"}
+      className={`hidden md:flex absolute top-[38%] z-10 w-11 h-11 items-center justify-center bg-white text-[#1A1A1A] shadow-lg transition-opacity hover:bg-[#1A1A1A] hover:text-white ${dir > 0 ? "right-1" : "left-1"} ${hidden ? "opacity-0 pointer-events-none" : "opacity-100"}`}
+      style={{ clipPath: "polygon(0 0, calc(100% - 8px) 0, 100% 8px, 100% 100%, 0 100%)", boxShadow: `inset 0 0 0 1px ${LINE}` }}>
+      {dir > 0 ? <ChevronRight className="w-5 h-5" /> : <ChevronLeft className="w-5 h-5" />}
+    </button>
+  );
+  return (
+    <div className="relative">
+      {arrow(-1, edge.start)}
+      <div ref={ref} onScroll={measure} className="flex gap-3 overflow-x-auto px-3 pb-2 snap-x scroll-px-3 [&>*]:snap-start [&>*]:w-[46%] sm:[&>*]:w-[30%] lg:[&>*]:w-[19%]" style={{ scrollbarWidth: "none" }}>{children}</div>
+      {arrow(1, edge.end)}
+    </div>
+  );
+};
 const readRecent = (): Recent[] => {
   try { return JSON.parse(localStorage.getItem(RECENT_KEY) || "[]").slice(0, 5); } catch { return []; }
 };
@@ -50,6 +78,8 @@ const SmartSearch = ({ variant }: { variant: number }) => {
   const [q, setQ] = useState("");
   const [tab, setTab] = useState<Tab>("tout");
   const [recent, setRecent] = useState<Recent[]>([]);
+  const [fam, setFam] = useState<string | null>(null);
+  const [shown, setShown] = useState(24);
   const input = useRef<HTMLInputElement>(null);
   const r = useSmartSearch(q, isOpen);
   const dark = variant === 4;
@@ -65,6 +95,7 @@ const SmartSearch = ({ variant }: { variant: number }) => {
     return () => { clearTimeout(t); window.removeEventListener("keydown", onKey); document.body.style.overflow = ""; };
   }, [isOpen, closeSpotlight]);
   useEffect(() => setTab("tout"), [q]);
+  useEffect(() => { setFam(null); setShown(24); }, [q, tab]);
 
   const go = (to: string, label: string) => {
     saveRecent({ to, label });
@@ -200,7 +231,7 @@ const SmartSearch = ({ variant }: { variant: number }) => {
 
   /** Cartes (propositions 2 et 5). */
   const ScooterCard = ({ s }: { s: SScooter }) => (
-    <button type="button" onClick={() => go(`/scooter/${s.slug}`, s.name)} className="group shrink-0 text-left bg-white" style={{ clipPath: CUT, boxShadow: `inset 0 0 0 1px ${LINE}` }}>
+    <button type="button" onClick={() => go(`/scooter/${s.slug}`, s.name)} className="group shrink-0 flex flex-col text-left bg-white transition-shadow hover:shadow-[inset_0_0_0_2px_#1A1A1A]" style={{ clipPath: CUT, boxShadow: `inset 0 0 0 1px ${LINE}` }}>
       <span className="block aspect-[4/3] bg-[#F5F0E8] p-2">{s.image && <img src={img(s.image, 360)!} alt="" loading="lazy" className="w-full h-full object-contain mix-blend-multiply transition-transform group-hover:scale-105" />}</span>
       <span className="block p-3">
         <span className="block text-sm font-bold uppercase tracking-wide" style={{ fontFamily: FONT, color: "#6B7280" }}>{s.brandName}</span>
@@ -210,29 +241,88 @@ const SmartSearch = ({ variant }: { variant: number }) => {
     </button>
   );
   const PartCardS = ({ p }: { p: SPart }) => (
-    <button type="button" onClick={() => go(`/piece/${p.slug}`, p.name)} className="group shrink-0 text-left bg-white" style={{ clipPath: CUT, boxShadow: `inset 0 0 0 1px ${LINE}` }}>
-      <span className="block aspect-square bg-[#F5F0E8] p-3">{p.image && <img src={img(p.image, 300)!} alt="" loading="lazy" className="w-full h-full object-contain mix-blend-multiply transition-transform group-hover:scale-105" />}</span>
-      <span className="block p-3">
-        <span className="block text-sm" style={{ fontFamily: FONT, color: "#6B7280" }}>{p.catName}</span>
-        <span className="block text-sm font-bold leading-snug line-clamp-2" style={{ fontFamily: FONT, color: CARBON }}>{p.name}</span>
-        <span className="block mt-1 text-[15px] font-extrabold" style={{ fontFamily: FONT, color: CARBON }}>{euro(p.price)}</span>
+    <button type="button" onClick={() => go(`/piece/${p.slug}`, p.name)} className="group shrink-0 flex flex-col text-left bg-white transition-shadow hover:shadow-[inset_0_0_0_2px_#1A1A1A]" style={{ clipPath: CUT, boxShadow: `inset 0 0 0 1px ${LINE}` }}>
+      <span className="block aspect-[5/4] m-1 bg-[#F5F0E8] p-3" style={{ clipPath: CUT }}>{p.image && <img src={img(p.image, 300)!} alt="" loading="lazy" className="w-full h-full object-contain mix-blend-multiply transition-transform duration-300 group-hover:scale-105" />}</span>
+      <span className="flex flex-1 flex-col px-3 pb-3 pt-2">
+        <span className="block text-sm font-extrabold sm:uppercase sm:tracking-[0.06em] truncate" style={{ fontFamily: FONT, color: GREEN }}>{p.catName}</span>
+        <span className="block mt-0.5 text-sm font-bold leading-snug line-clamp-2 min-h-[2.6em]" style={{ fontFamily: FONT, color: CARBON }}>{p.name}</span>
+        <span className="mt-auto pt-2 flex items-end justify-between gap-2">
+          <span className="text-base font-extrabold" style={{ fontFamily: FONT, color: CARBON }}>{euro(p.price)}</span>
+          <ArrowRight className="w-4 h-4 shrink-0 text-[#1A1A1A] opacity-0 -translate-x-1 transition-all group-hover:opacity-100 group-hover:translate-x-0" />
+        </span>
       </span>
     </button>
   );
+  /** Familles présentes dans les pièces trouvées → filtre dans l'onglet Pièces (120 pièces Dualtron = on doit pouvoir trier). */
+  const famsOfPieces = (() => {
+    const m = new Map<string, { slug: string; name: string; n: number }>();
+    pieces.forEach((p) => { const x = m.get(p.catSlug) ?? { slug: p.catSlug, name: p.catName, n: 0 }; x.n++; m.set(p.catSlug, x); });
+    return [...m.values()].sort((a, b) => b.n - a.n);
+  })();
+  const famFilter = famsOfPieces.length > 1 && (
+    <div className="flex gap-2 overflow-x-auto px-3 pt-1 pb-3" style={{ scrollbarWidth: "none" }}>
+      {[{ slug: null as string | null, name: "Toutes", n: pieces.length }, ...famsOfPieces].map((f) => {
+        const on = fam === f.slug;
+        return (
+          <button key={f.slug ?? "all"} type="button" onClick={() => { setFam(f.slug); setShown(24); }} aria-pressed={on}
+            className="shrink-0 inline-flex items-center gap-1.5 min-h-[44px] px-3.5 text-sm font-bold whitespace-nowrap transition-colors"
+            style={{ fontFamily: FONT, clipPath: CUT, background: on ? GREEN : "#FFFFFF", color: on ? "#fff" : CARBON, boxShadow: on ? "none" : `inset 0 0 0 1px ${LINE}` }}>
+            {f.name} <span className={on ? "opacity-80" : "opacity-50"}>{f.n}</span>
+          </button>
+        );
+      })}
+    </div>
+  );
+  const seeAllCard = (label: string, n: number, to: Tab) => (
+    <button type="button" onClick={() => setTab(to)} className="shrink-0 flex flex-col items-center justify-center gap-3 min-h-[200px] text-white transition-colors hover:bg-black" style={{ clipPath: CUT, background: CARBON }}>
+      <span className="w-12 h-12 flex items-center justify-center bg-white text-[#1A1A1A]" style={{ clipPath: CUT }}><ArrowRight className="w-5 h-5" /></span>
+      <span className="px-3 text-center text-sm font-extrabold uppercase tracking-[0.08em]" style={{ fontFamily: FONT }}>Voir les {n}<br />{label}</span>
+    </button>
+  );
+  const grid = (children: React.ReactNode) => <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3 px-3">{children}</div>;
+  const more = (total: number) => total > shown && (
+    <div className="flex justify-center px-3 pt-4">
+      <button type="button" onClick={() => setShown((n) => n + 24)} className="min-h-[48px] px-6 text-sm font-extrabold uppercase tracking-[0.08em] text-white" style={{ fontFamily: FONT, clipPath: CUT, background: CARBON }}>
+        Afficher plus · {total - shown} restantes
+      </button>
+    </div>
+  );
   const cardResults = (rail: boolean) => {
-    const wrap = (children: React.ReactNode) => rail
-      ? <div className="flex gap-3 overflow-x-auto px-3 pb-2 snap-x [&>*]:snap-start [&>*]:w-[46%] sm:[&>*]:w-[30%] lg:[&>*]:w-[19%]" style={{ scrollbarWidth: "none" }}>{children}</div>
-      : <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-3 px-3">{children}</div>;
-    const lim = (n: number) => (tab === "tout" ? (rail ? 12 : 5) : n);
-    return (
-      <div className="pb-4">
-        {tab === "tout" && brandBanner}
-        {tab === "tout" && familyChips(r.families)}
-        {(tab === "tout" || tab === "marques") && !r.brand && counts.marques > 0 && <><SectionHead label="Marques" n={counts.marques} />{r.brands.map(brandRow)}</>}
-        {(tab === "tout" || tab === "trotts") && counts.trotts > 0 && <><SectionHead label={r.brand ? `Trottinettes ${r.brand.name}` : "Trottinettes"} n={counts.trotts} onAll={tab === "tout" ? () => setTab("trotts") : undefined} />{wrap(r.scooters.slice(0, lim(60)).map((s) => <ScooterCard key={s.id} s={s} />))}</>}
-        {(tab === "tout" || tab === "pieces") && counts.pieces > 0 && <><SectionHead label={r.brand ? `Pièces compatibles ${r.brand.name}` : "Pièces"} n={counts.pieces} onAll={tab === "tout" ? () => setTab("pieces") : undefined} />{wrap(pieces.slice(0, lim(60)).map((p) => <PartCardS key={p.id} p={p} />))}</>}
+    // « Tout » = rangées à flèches (aperçu) ; un onglet = grille qu'on parcourt vers le bas, avec filtre par famille.
+    if (tab === "tout") {
+      const wrap = (children: React.ReactNode) => (rail ? <Rail>{children}</Rail> : grid(children));
+      const lim = rail ? 12 : 8;
+      return (
+        <div className="pb-4">
+          {brandBanner}
+          {familyChips(r.families)}
+          {!r.brand && counts.marques > 0 && <><SectionHead label="Marques" n={counts.marques} />{r.brands.map(brandRow)}</>}
+          {counts.trotts > 0 && <><SectionHead label={r.brand ? `Trottinettes ${r.brand.name}` : "Trottinettes"} n={counts.trotts} onAll={() => setTab("trotts")} />
+            {wrap(<>{r.scooters.slice(0, lim).map((s) => <ScooterCard key={s.id} s={s} />)}{rail && counts.trotts > lim && seeAllCard("trottinettes", counts.trotts, "trotts")}</>)}</>}
+          {counts.pieces > 0 && <><SectionHead label={r.brand ? `Pièces compatibles ${r.brand.name}` : "Pièces"} n={counts.pieces} onAll={() => setTab("pieces")} />
+            {wrap(<>{pieces.slice(0, lim).map((p) => <PartCardS key={p.id} p={p} />)}{rail && counts.pieces > lim && seeAllCard("pièces", counts.pieces, "pieces")}</>)}</>}
+        </div>
+      );
+    }
+    if (tab === "trotts") return (
+      <div className="pb-6">
+        <SectionHead label={r.brand ? `Trottinettes ${r.brand.name}` : "Trottinettes"} n={counts.trotts} />
+        {grid(r.scooters.slice(0, shown).map((s) => <ScooterCard key={s.id} s={s} />))}
+        {more(counts.trotts)}
       </div>
     );
+    if (tab === "pieces") {
+      const list = fam ? pieces.filter((p) => p.catSlug === fam) : pieces;
+      return (
+        <div className="pb-6">
+          <SectionHead label={r.brand ? `Pièces compatibles ${r.brand.name}` : "Pièces"} n={list.length} />
+          {famFilter}
+          {grid(list.slice(0, shown).map((p) => <PartCardS key={p.id} p={p} />))}
+          {more(list.length)}
+        </div>
+      );
+    }
+    return <div className="pb-4"><SectionHead label="Marques" n={counts.marques} />{r.brands.map(brandRow)}</div>;
   };
 
   const inputBar = (big = false) => (
