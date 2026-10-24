@@ -46,6 +46,7 @@ interface OrderDetails {
   tvaAmount: number;
   deliveryPrice: number;
   deliveryMethod: string;
+  deliveryEstimate?: string | null;
   address: string;
   postalCode: string;
   city: string;
@@ -70,7 +71,8 @@ const generateConfirmationHTML = (
     </tr>
   `).join("");
 
-  const deliveryLabel = details.deliveryMethod || "Standard";
+  // Lot livraison (24/10/2026) : un seul mode, « suivie ». Les anciennes valeurs restent lisibles.
+  const deliveryLabel = details.deliveryMethod === "standard" || !details.deliveryMethod ? "suivie" : details.deliveryMethod;
 
   return `<!DOCTYPE html>
 <html lang="fr">
@@ -196,7 +198,7 @@ const generateConfirmationHTML = (
             <td style="padding:0 32px 28px;">
               <div style="background:rgba(44,44,44,0.04);border:1px solid rgba(44,44,44,0.1);border-radius:12px;padding:24px 28px;">
                 <p style="margin:0 0 10px;font-size:11px;color:#888;text-transform:uppercase;letter-spacing:2px;font-weight:600;">📦 Étape suivante</p>
-                <p style="margin:0 0 20px;font-size:14px;color:#555;line-height:1.7;">Nos mécanos préparent votre colis avec soin. Un numéro de suivi vous sera envoyé par email dès que votre commande sera expédiée.</p>
+                <p style="margin:0 0 20px;font-size:14px;color:#555;line-height:1.7;">Nos mécanos préparent votre colis avec soin.${details.deliveryEstimate ? ` Livraison estimée : <strong>${details.deliveryEstimate}</strong>.` : ""} Un numéro de suivi vous sera envoyé par email dès que votre commande sera expédiée.</p>
                 <a href="https://piecestrottinettes.fr/garage?tab=orders" target="_blank" style="display:inline-block;background:transparent;color:#2C2C2C;text-decoration:none;font-size:14px;font-weight:600;padding:12px 32px;border-radius:10px;border:2px solid #2C2C2C;letter-spacing:0.5px;">Suivre ma commande</a>
               </div>
             </td>
@@ -338,6 +340,7 @@ serve(async (req) => {
         tvaAmount: order.tva_amount,
         deliveryPrice: order.delivery_price || 0,
         deliveryMethod: order.delivery_method || "Standard",
+        deliveryEstimate: order.delivery_estimate ?? null,
         address: order.address,
         postalCode: order.postal_code,
         city: order.city,

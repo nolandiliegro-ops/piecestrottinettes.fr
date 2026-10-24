@@ -104,6 +104,26 @@ const CheckoutPage = () => {
         if (metadata.first_name) form.setValue("firstName", metadata.first_name);
         if (metadata.last_name) form.setValue("lastName", metadata.last_name);
       }
+
+      // Lot livraison M2 (24/10/2026) : adresse et téléphone repris de la dernière commande
+      // du client connecté, sans écraser ce qu'il a déjà tapé.
+      const { data: lastOrder } = await supabase
+        .from("orders")
+        .select("address, postal_code, city, customer_phone")
+        .eq("user_id", user.id)
+        .not("address", "is", null)
+        .order("created_at", { ascending: false })
+        .limit(1)
+        .maybeSingle();
+      if (lastOrder) {
+        const fill = (field: "address" | "postalCode" | "city" | "phone", value: string | null) => {
+          if (value && !form.getValues(field)) form.setValue(field, value);
+        };
+        fill("address", lastOrder.address);
+        fill("postalCode", lastOrder.postal_code);
+        fill("city", lastOrder.city);
+        fill("phone", lastOrder.customer_phone);
+      }
     };
 
     prefillUserData();

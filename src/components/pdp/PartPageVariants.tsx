@@ -24,6 +24,7 @@ import { getAllImages } from "@/lib/entityImage";
 import { optimizedImage } from "@/lib/imageTransform";
 import { sanitizeHtml } from "@/lib/sanitizeHtml";
 import { SHOP_OPEN, openPrelaunch } from "@/config/launch";
+import { partDelay } from "@/lib/delivery";
 import { useSelectedScooter } from "@/contexts/ScooterContext";
 import type { PartDetail, CompatibleScooter } from "@/hooks/usePartDetail";
 import CompatibilityMatrix from "@/components/pdp/CompatibilityMatrix";
@@ -152,7 +153,7 @@ const BuyButton = ({ part, look = "slant", full = false }: { part: PartDetail; l
 const StockLine = ({ part }: { part: PartDetail }) => {
   const inStock = part.stock_quantity !== null && part.stock_quantity > 0;
   return inStock ? (
-    <span className="inline-flex items-center gap-1.5 text-sm font-semibold text-green-700" style={{ fontFamily: FONT }}><Check className="w-4 h-4" /> En stock</span>
+    <span className="inline-flex items-center gap-1.5 text-sm font-semibold text-green-700" style={{ fontFamily: FONT }}><Check className="w-4 h-4" /> En stock · livraison {partDelay(part.category?.slug)}</span>
   ) : (
     <span className="inline-flex items-center gap-1.5 text-sm font-semibold text-amber-700" style={{ fontFamily: FONT }}><AlertCircle className="w-4 h-4" /> Rupture de stock</span>
   );

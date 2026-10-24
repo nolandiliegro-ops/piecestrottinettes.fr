@@ -14,6 +14,7 @@ import {
   MessageSquare
 } from "lucide-react";
 import { supabase } from "@/integrations/supabase/client";
+import { CARRIERS, trackingLink } from "@/lib/tracking";
 import { formatPrice } from "@/lib/formatPrice";
 import { cn } from "@/lib/utils";
 import { Button } from "@/components/ui/button";
@@ -57,6 +58,12 @@ type Order = {
   notes: string | null;
   tracking_number: string | null;
   stripe_payment_intent_id?: string | null;
+  // Lot livraison (24/10/2026)
+  carrier?: string | null;
+  tracking_url?: string | null;
+  delivery_estimate?: string | null;
+  shipped_at?: string | null;
+  shipping_email_sent_at?: string | null;
 };
 
 type OrderItem = {
@@ -211,6 +218,61 @@ const OrderDetailSheet = ({ order, isOpen, onClose, onStatusUpdate }: OrderDetai
   const queryClient = useQueryClient();
   const [isUpdating, setIsUpdating] = useState(false);
   const [trackingNumber, setTrackingNumber] = useState("");
+  // Lot livraison M4 : bloc Expédition (transporteur + suivi → statut Expédié → mail client)
+  const [carrier, setCarrier] = useState<string>("colissimo");
+  const [trackingUrl, setTrackingUrl] = useState("");
+  const [shipping, setShipping] = useState(false);
+  const [emailSentAt, setEmailSentAt] = useState<string | null>(null);
+  useEffect(() => {
+    setCarrier(order?.carrier || "colissimo");
+    setTrackingNumber(order?.tracking_number || "");
+    setTrackingUrl(order?.tracking_url || "");
+    setEmailSentAt(order?.shipping_email_sent_at ?? null);
+  }, [order?.id, order?.carrier, order?.tracking_number, order?.tracking_url, order?.shipping_email_sent_at]);
+
+  const sendShippingEmail = async (force: boolean) => {
+    if (!order?.id) return false;
+    const { data, error } = await supabase.functions.invoke("send-shipping-email", {
+      body: { order_id: order.id, force },
+    });
+    if (error || !data?.ok) {
+      toast.error(`Mail non envoyé : ${data?.message || data?.error || error?.message || "erreur inconnue"}`);
+      return false;
+    }
+    if (data.skipped) {
+      toast.info("Mail déjà envoyé — utilise « Renvoyer » pour le renvoyer");
+      return true;
+    }
+    setEmailSentAt(data.sent_at ?? new Date().toISOString());
+    toast.success("Mail d'expédition envoyé au client");
+    return true;
+  };
+
+  const handleShip = async (opts: { markShipped: boolean; resend: boolean }) => {
+    if (!order?.id) return;
+    const n = trackingNumber.trim();
+    const url = trackingUrl.trim();
+    if (!n) { toast.error("Numéro de suivi obligatoire"); return; }
+    if (url && !url.startsWith("https://")) { toast.error("Le lien de suivi doit commencer par https://"); return; }
+    if (carrier === "autre" && !url) { toast.error("Transporteur « Autre » : colle le lien de suivi"); return; }
+    setShipping(true);
+    try {
+      const updateData: Record<string, any> = { carrier, tracking_number: n, tracking_url: url || null };
+      if (opts.markShipped) updateData.status = "shipped";
+      // Colonnes du lot livraison absentes de types.ts tant que Lovable ne l'a pas régénéré
+      const { error } = await supabase.from("orders").update(updateData as never).eq("id", order.id);
+      if (error) throw error;
+      queryClient.invalidateQueries({ queryKey: ["admin-orders"] });
+      queryClient.invalidateQueries({ queryKey: ["user-orders"] });
+      if (opts.markShipped || opts.resend) await sendShippingEmail(opts.resend);
+      else toast.success("Suivi enregistré");
+      onStatusUpdate();
+    } catch {
+      toast.error("Erreur lors de l'enregistrement de l'expédition");
+    } finally {
+      setShipping(false);
+    }
+  };
 
   // Fetch order items
   const { data: orderItems, isLoading: itemsLoading } = useQuery({
@@ -416,31 +478,73 @@ const OrderDetailSheet = ({ order, isOpen, onClose, onStatusUpdate }: OrderDetai
               </div>
             )}
 
-            {/* Tracking Number */}
-            {(order.status === 'shipped' || order.status === 'delivered') && (
+            {/* Expédition — lot livraison M4 (24/10/2026) */}
+            {['paid', 'processing', 'shipped', 'delivered'].includes(order.status) && (
               <div className="space-y-3">
                 <div className="flex items-center gap-2 text-sm font-medium text-foreground">
                   <Truck className="w-4 h-4 text-primary" />
-                  Numéro de suivi
+                  Expédition
+                  {order.delivery_estimate && (
+                    <span className="text-sm font-normal text-muted-foreground">· délai annoncé : {order.delivery_estimate}</span>
+                  )}
                 </div>
-                <div className="bg-muted/30 rounded-xl p-4">
-                  <div className="flex items-center gap-2">
-                    <input
-                      type="text"
-                      value={trackingNumber || order.tracking_number || ''}
-                      onChange={(e) => setTrackingNumber(e.target.value)}
-                      placeholder="Ex: 1Z999AA10123456784"
-                      className="flex-1 text-sm bg-background/50 border border-border/30 rounded-lg px-3 py-2 text-foreground placeholder:text-muted-foreground focus:outline-none focus:border-primary"
-                    />
-                    <Button
-                      size="sm"
-                      variant="outline"
-                      disabled={saveTrackingMutation.isPending}
-                      onClick={() => saveTrackingMutation.mutate(trackingNumber || order.tracking_number || '')}
-                    >
-                      {saveTrackingMutation.isPending ? <Loader2 className="w-4 h-4 animate-spin" /> : 'Sauver'}
+                <div className="bg-muted/30 rounded-xl p-4 space-y-3">
+                  <label className="block text-sm text-muted-foreground" htmlFor="ship-carrier">Transporteur</label>
+                  <select
+                    id="ship-carrier"
+                    value={carrier}
+                    onChange={(e) => setCarrier(e.target.value)}
+                    className="w-full min-h-[44px] text-sm bg-background/50 border border-border/30 rounded-lg px-3 text-foreground focus:outline-none focus:border-primary"
+                  >
+                    {CARRIERS.map((c) => <option key={c.id} value={c.id}>{c.label}</option>)}
+                  </select>
+                  <label className="block text-sm text-muted-foreground" htmlFor="ship-number">Numéro de suivi</label>
+                  <input
+                    id="ship-number"
+                    type="text"
+                    value={trackingNumber}
+                    onChange={(e) => setTrackingNumber(e.target.value)}
+                    placeholder="Ex : 6A12345678901"
+                    className="w-full min-h-[44px] text-sm bg-background/50 border border-border/30 rounded-lg px-3 text-foreground placeholder:text-muted-foreground focus:outline-none focus:border-primary font-mono"
+                  />
+                  <label className="block text-sm text-muted-foreground" htmlFor="ship-url">
+                    Lien de suivi {carrier === 'autre' ? '(obligatoire)' : '(facultatif, remplace le lien automatique)'}
+                  </label>
+                  <input
+                    id="ship-url"
+                    type="url"
+                    value={trackingUrl}
+                    onChange={(e) => setTrackingUrl(e.target.value)}
+                    placeholder="https://…"
+                    className="w-full min-h-[44px] text-sm bg-background/50 border border-border/30 rounded-lg px-3 text-foreground placeholder:text-muted-foreground focus:outline-none focus:border-primary"
+                  />
+                  {(() => {
+                    const link = trackingLink({ carrier, tracking_number: trackingNumber, tracking_url: trackingUrl });
+                    return link ? (
+                      <a href={link} target="_blank" rel="noopener noreferrer" className="block text-sm text-primary underline break-all">
+                        Tester le lien de suivi
+                      </a>
+                    ) : null;
+                  })()}
+                  {order.status === 'paid' || order.status === 'processing' ? (
+                    <Button className="w-full min-h-[44px]" disabled={shipping} onClick={() => handleShip({ markShipped: true, resend: false })}>
+                      {shipping ? <Loader2 className="w-4 h-4 animate-spin" /> : "Marquer expédiée et prévenir le client"}
                     </Button>
-                  </div>
+                  ) : (
+                    <div className="flex flex-wrap gap-2">
+                      <Button variant="outline" className="min-h-[44px]" disabled={shipping} onClick={() => handleShip({ markShipped: false, resend: false })}>
+                        Enregistrer le suivi
+                      </Button>
+                      <Button variant="outline" className="min-h-[44px]" disabled={shipping} onClick={() => handleShip({ markShipped: false, resend: true })}>
+                        {emailSentAt ? "Renvoyer le mail de suivi" : "Envoyer le mail de suivi"}
+                      </Button>
+                    </div>
+                  )}
+                  <p className="text-sm text-muted-foreground">
+                    {emailSentAt
+                      ? `Mail d'expédition envoyé le ${format(new Date(emailSentAt), "d MMM yyyy 'à' HH:mm", { locale: fr })}`
+                      : "Mail d'expédition pas encore envoyé"}
+                  </p>
                 </div>
               </div>
             )}

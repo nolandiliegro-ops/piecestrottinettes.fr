@@ -31,11 +31,17 @@ interface CheckoutRequest {
 }
 
 // Default delivery pricing (used as fallback)
+// Lot livraison (24/10/2026, arbitrage A3) : un seul mode tenu à l'ouverture.
+// Express et Point Relais retirés (aucun service express, aucun choix de point relais) :
+// une requête qui les envoie est refusée (« Mode de livraison invalide »).
 const DEFAULT_DELIVERY_PRICES: Record<string, number> = {
   standard: 4.90,
-  express: 9.90,
-  relay: 3.90,
 };
+
+// Délai annoncé — DOUBLON de src/lib/delivery.ts (tenir en phase) : stock magasin par catégorie.
+const STOCK_CATEGORY_SLUGS = ["pneus", "pneus-pleins", "chambres-a-air", "chargeurs", "plaquettes", "disques"];
+const DELAY_STOCK = "48-72 h";
+const DELAY_SUPPLIER = "3 à 5 jours ouvrés";
 
 interface PromoResult {
   valid: boolean;
@@ -245,13 +251,21 @@ serve(async (req) => {
       }
     }
 
+    // Snapshot du délai annoncé au moment de l'achat (jamais réécrit après coup)
+    const allFromStock = items.every((cartItem) => {
+      const part = parts.find((p) => p.id === cartItem.id) as { categories?: { slug?: string | null } | null } | undefined;
+      const slug = part?.categories?.slug ?? null;
+      return !!slug && STOCK_CATEGORY_SLUGS.includes(slug);
+    });
+    const deliveryEstimate = allFromStock ? DELAY_STOCK : DELAY_SUPPLIER;
+
     // Add delivery line item (even if 0€ to show it)
     if (deliveryPrice > 0) {
       lineItems.push({
         price_data: {
           currency: "eur",
           product_data: {
-            name: `Livraison ${deliveryMethod === "express" ? "Express" : deliveryMethod === "relay" ? "Point Relais" : "Standard"}`,
+            name: `Livraison suivie (${deliveryEstimate})`,
           },
           unit_amount: Math.round(deliveryPrice * 100),
         },
@@ -301,6 +315,7 @@ serve(async (req) => {
         status: "awaiting_payment",
         delivery_method: deliveryMethod,
         delivery_price: deliveryPrice,
+        delivery_estimate: deliveryEstimate,
         notes: notes || null,
         promo_code: appliedPromoCode,
       })

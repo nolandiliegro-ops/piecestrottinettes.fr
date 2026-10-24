@@ -11,6 +11,7 @@ import { fr } from 'date-fns/locale';
 import { cn } from '@/lib/utils';
 import { useOrderItemsInstallationStatus } from '@/hooks/useGarageModifications';
 import MarkAsInstalledDialog from './MarkAsInstalledDialog';
+import { carrierLabel, trackingLink } from '@/lib/tracking';
 
 // Status pipeline
 const STATUS_PIPELINE = [
@@ -122,24 +123,38 @@ const OrderItemsDetails = ({ order }: { order: Order }) => {
         {/* Timeline */}
         <OrderTimeline status={order.status} />
 
-        {/* Tracking Number */}
-        {order.tracking_number && (order.status === 'shipped' || order.status === 'delivered') && (
-          <div className="flex items-center gap-3 bg-purple-500/10 rounded-xl p-3">
-            <Truck className="w-4 h-4 text-purple-600 shrink-0" />
-            <div className="flex-1 min-w-0">
-              <p className="text-[10px] text-carbon/50 uppercase tracking-wide">Numéro de suivi</p>
-              <p className="text-sm font-mono font-semibold text-purple-700">{order.tracking_number}</p>
+        {/* Suivi du colis — lot livraison M5 (24/10/2026) : vrai lien transporteur, dates */}
+        {order.tracking_number && (order.status === 'shipped' || order.status === 'delivered') && (() => {
+          const link = trackingLink(order);
+          const label = carrierLabel(order.carrier);
+          return (
+            <div className="bg-purple-500/10 rounded-xl p-3 space-y-2">
+              <div className="flex items-center gap-3">
+                <Truck className="w-4 h-4 text-purple-600 shrink-0" />
+                <div className="flex-1 min-w-0">
+                  <p className="text-sm text-carbon/60">{label ? `Suivi ${label}` : 'Numéro de suivi'}</p>
+                  <p className="text-sm font-mono font-semibold text-purple-700 break-all">{order.tracking_number}</p>
+                </div>
+              </div>
+              {link && (
+                <a
+                  href={link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center justify-center gap-2 min-h-[44px] rounded-lg bg-purple-600 text-white text-sm font-semibold hover:bg-purple-700 transition-colors"
+                >
+                  Suivre mon colis <ExternalLink className="w-4 h-4" />
+                </a>
+              )}
+              {order.shipped_at && (
+                <p className="text-sm text-carbon/60">
+                  Expédiée le {format(new Date(order.shipped_at), 'd MMMM', { locale: fr })}
+                  {order.delivered_at ? ` · livrée le ${format(new Date(order.delivered_at), 'd MMMM', { locale: fr })}` : ''}
+                </p>
+              )}
             </div>
-            <a
-              href={`https://www.google.com/search?q=${encodeURIComponent(order.tracking_number)}`}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-purple-600 hover:text-purple-800 transition-colors"
-            >
-              <ExternalLink className="w-4 h-4" />
-            </a>
-          </div>
-        )}
+          );
+        })()}
 
         {/* Delivery Info */}
         <div className="grid sm:grid-cols-2 gap-3">
@@ -158,11 +173,12 @@ const OrderItemsDetails = ({ order }: { order: Order }) => {
           <div className="flex items-start gap-3 bg-greige/50 rounded-xl p-3 border border-carbon/5">
             <Truck className="w-4 h-4 text-mineral mt-0.5 shrink-0" />
             <div className="min-w-0">
-              <p className="text-[10px] text-carbon/50 uppercase tracking-wide mb-1">Mode de livraison</p>
+              <p className="text-sm text-carbon/50 mb-1">Mode de livraison</p>
               <p className="text-sm text-carbon font-medium">
-                {order.delivery_method === 'express' ? 'Express (24-48h)' :
+                {order.delivery_method === 'express' ? 'Express' :
                  order.delivery_method === 'relay' ? 'Point Relais' :
-                 'Standard (3-5j)'}
+                 'Livraison suivie'}
+                {order.delivery_estimate ? ` · ${order.delivery_estimate}` : ''}
               </p>
               <p className="text-xs text-carbon/70">
                 {order.delivery_price && order.delivery_price > 0
@@ -289,6 +305,13 @@ interface Order {
   delivery_method: string | null;
   delivery_price: number | null;
   tracking_number: string | null;
+  // Lot livraison (24/10/2026)
+  carrier?: string | null;
+  tracking_url?: string | null;
+  delivery_estimate?: string | null;
+  paid_at?: string | null;
+  shipped_at?: string | null;
+  delivered_at?: string | null;
 }
 
 // Order Card
@@ -355,6 +378,9 @@ const OrderHistorySection = ({ userId }: OrderHistorySectionProps) => {
     queryKey: ['user-orders', userId],
     queryFn: async () => {
       if (!userId) return [];
+      // Lot livraison M5 : rattache les commandes passées en invité avec le même email VÉRIFIÉ.
+      // Silencieux en cas d'échec : l'historique s'affiche quand même.
+      try { await supabase.rpc('link_guest_orders' as never); } catch { /* sans effet sur l'affichage */ }
       const { data, error } = await supabase
         .from('orders')
         .select('*')

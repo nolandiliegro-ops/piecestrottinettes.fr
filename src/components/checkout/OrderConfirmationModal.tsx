@@ -8,6 +8,7 @@ import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group";
 import { formatPrice } from "@/lib/formatPrice";
 import { useState, useEffect } from "react";
 import { supabase } from "@/integrations/supabase/client";
+import { STANDARD_DELIVERY, DELAY_STOCK, fetchCartDelay } from "@/lib/delivery";
 
 interface CartItem {
   id: string;
@@ -17,7 +18,9 @@ interface CartItem {
   image_url?: string | null;
 }
 
-type DeliveryMethod = "standard" | "express" | "relay";
+// Lot livraison (24/10/2026, arbitrage A3) : un seul mode tenu à l'ouverture.
+// Express et Point Relais retirés (pas de service express, pas de choix de point relais).
+type DeliveryMethod = "standard";
 
 interface DeliveryOption {
   id: DeliveryMethod;
@@ -27,10 +30,8 @@ interface DeliveryOption {
   originalPrice: number;
 }
 
-const BASE_DELIVERY_OPTIONS = [
-  { id: "standard" as DeliveryMethod, name: "Livraison Standard", delay: "5-7 jours ouvrés", price: 4.90 },
-  { id: "express" as DeliveryMethod, name: "Livraison Express", delay: "2-3 jours ouvrés", price: 9.90 },
-  { id: "relay" as DeliveryMethod, name: "Point Relais", delay: "4-6 jours ouvrés", price: 3.90 },
+const baseDeliveryOptions = (delay: string) => [
+  { id: STANDARD_DELIVERY.id as DeliveryMethod, name: STANDARD_DELIVERY.name, delay: `Livraison ${delay} · n° de suivi par email`, price: STANDARD_DELIVERY.price },
 ];
 
 interface OrderConfirmationModalProps {
@@ -72,6 +73,16 @@ const OrderConfirmationModal = ({
   const [promoLoading, setPromoLoading] = useState(false);
   const [promoError, setPromoError] = useState("");
   const [freeShippingThreshold, setFreeShippingThreshold] = useState<number | null>(null);
+  const [cartDelay, setCartDelay] = useState<string>(DELAY_STOCK);
+
+  // Délai annoncé = le plus long des pièces du panier (src/lib/delivery.ts)
+  const itemIdsKey = items.map((i) => i.id).join(",");
+  useEffect(() => {
+    if (!isOpen) return;
+    let alive = true;
+    fetchCartDelay(itemIdsKey ? itemIdsKey.split(",") : []).then((d) => { if (alive) setCartDelay(d); });
+    return () => { alive = false; };
+  }, [isOpen, itemIdsKey]);
 
   // Fetch free shipping threshold
   useEffect(() => {
@@ -92,7 +103,7 @@ const OrderConfirmationModal = ({
   const isFreeShippingByPromo = promoApplied?.discount_type === "shipping";
 
   // Build delivery options with dynamic pricing
-  const deliveryOptions: DeliveryOption[] = BASE_DELIVERY_OPTIONS.map(opt => ({
+  const deliveryOptions: DeliveryOption[] = baseDeliveryOptions(cartDelay).map(opt => ({
     ...opt,
     originalPrice: opt.price,
     price: (isFreeShippingByThreshold || isFreeShippingByPromo) ? 0 : opt.price,
@@ -246,7 +257,7 @@ const OrderConfirmationModal = ({
                         <RadioGroupItem value={option.id} className="text-mineral" />
                         <div>
                           <p className="text-sm font-medium text-carbon">{option.name}</p>
-                          <p className="text-xs text-muted-foreground">{option.delay}</p>
+                          <p className="text-sm text-muted-foreground">{option.delay}</p>
                         </div>
                       </div>
                       <span className="text-sm font-semibold text-mineral">

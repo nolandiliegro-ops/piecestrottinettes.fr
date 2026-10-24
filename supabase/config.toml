@@ -62,3 +62,6 @@ verify_jwt = false
 
 [functions.ingest-fitment-raw]
 verify_jwt = false
+
+[functions.send-shipping-email]
+verify_jwt = false
