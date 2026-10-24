@@ -10,6 +10,7 @@
 import { useState } from "react";
 import { PartnerBlockNew, achatParam, useBuyCtx } from "@/components/scooter/BuyProposals";
 import { OfferComparator, comparoParam } from "@/components/scooter/OfferComparator";
+import { NoOfferBlock } from "@/components/scooter/PriceAlert";
 import { Link } from "react-router-dom";
 import { ArrowRight, Check, ChevronDown, Minus, Play, ShieldCheck } from "lucide-react";
 import { partnerOf } from "@/config/partners";
@@ -495,7 +496,7 @@ const Tabs = ({ seo, affiliateLink }: { seo: ScooterSeo; affiliateLink?: string 
           </div>
         </div>
 
-        {affiliateLink && <PartnerBlock url={affiliateLink} name={name} />}
+        {affiliateLink ? <PartnerBlock url={affiliateLink} name={name} /> : <NoOfferBlock name={name} />}
 
         {/* 18/10 (Nolan) : sources repliées — discrètes à l'écran, toujours dans la page pour Google. */}
         <details className="mt-6 text-sm text-gray-500" style={{ fontFamily: FONT }}>

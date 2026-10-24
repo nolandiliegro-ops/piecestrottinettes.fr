@@ -32,6 +32,8 @@ const Register = lazy(() => import("./pages/Register"));
 const Garage = lazy(() => import("./pages/Garage"));
 const Admin = lazy(() => import("./pages/Admin"));
 const ScooterDetail = lazy(() => import("./pages/ScooterDetail"));
+const PriceAlertStop = lazy(() => import("./pages/PriceAlertStop"));
+const GoOffer = lazy(() => import("./pages/GoOffer"));
 const Showroom = lazy(() => import("./pages/Showroom"));
 const Brand = lazy(() => import("./pages/Brand"));
 const Brands = lazy(() => import("./pages/Brands"));
@@ -112,6 +114,8 @@ function App() {
             <Route path="/blog/:slug" element={<BlogArticle />} />
             <Route path="/piece/:slug" element={<PartDetail />} />
             <Route path="/scooter/:slug" element={<ScooterDetail />} />
+            <Route path="/alerte-prix/stop" element={<PriceAlertStop />} />
+            <Route path="/go/:id" element={<GoOffer />} />
             <Route path="/showroom/:slug" element={<Showroom />} />
             <Route path="/marque/:slug" element={<Brand />} />
             <Route path="/marques" element={<Brands />} />

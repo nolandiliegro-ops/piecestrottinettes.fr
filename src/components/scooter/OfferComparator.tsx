@@ -4,13 +4,14 @@
    Règles : prix affiché seulement s'il a 7 jours ou moins (livePrice) ; « dès » quand la boutique vend plusieurs
    versions (price_max) ; en stock d'abord, puis le moins cher ; Amazon jamais en tête s'il existe une autre offre
    (dernier recours, choix de Nolan) ; tout lien sortant en rel="sponsored" (compté par affiliateClicks). */
-import { ArrowRight, Bell, Check, ShieldCheck } from "lucide-react";
+import { ArrowRight, Check, ShieldCheck } from "lucide-react";
 import { useQuery } from "@tanstack/react-query";
 import { supabase } from "@/integrations/supabase/client";
 import { partnerOf, type Partner } from "@/config/partners";
 import { laName } from "@/lib/article";
 import { livePrice, partnerLogo, useBuyCtx, TagLink } from "@/components/scooter/BuyProposals";
 import type { ReactNode } from "react";
+import { PriceAlertForm } from "@/components/scooter/PriceAlert";
 
 const UNB = "'Unbounded', sans-serif";
 const FONT = "'Plus Jakarta Sans', sans-serif";
@@ -111,15 +112,8 @@ const Go = ({ o, label = "Voir l'offre", tone = GREEN, full = false, small = fal
     <span className="whitespace-nowrap">{label}</span><ArrowRight className="w-5 h-5 transition-transform group-hover:translate-x-0.5" />
   </a>
 );
-// Alerte de baisse de prix : PAS encore branchée (inscription + mail du robot = mission 4). Visible seulement avec
-// ?alerte=1 pour la recette : jamais de bouton factice en prod.
-const alerteOn = () => typeof window !== "undefined" && new URLSearchParams(window.location.search).get("alerte") === "1";
-const Alert = () => !alerteOn() ? null : (
-  <button type="button" className="inline-flex items-center gap-2 min-h-[44px] px-4 text-sm font-bold" style={{ color: CARBON, boxShadow: `inset 0 0 0 1.5px ${CARBON}`, fontFamily: FONT }}
-    onClick={() => window.alert("Bientôt : on te prévient par mail quand le prix baisse.")}>
-    <Bell className="w-4 h-4" /> Préviens-moi si le prix baisse
-  </button>
-);
+// Alerte de baisse de prix : branchée le 24/10 (PriceAlert.tsx → subscribe_price_alert, mail la nuit).
+const Alert = () => <PriceAlertForm />;
 const Title = ({ name }: { name: string }) => (
   <h2 className="text-xl lg:text-2xl uppercase" style={{ fontFamily: UNB, fontWeight: 900, fontStyle: "italic", color: CARBON }}>Où acheter {laName(name)}</h2>
 );

@@ -68,3 +68,6 @@ verify_jwt = false
 
 [functions.chat-skot]
 verify_jwt = false
+
+[functions.send-price-alerts]
+verify_jwt = false

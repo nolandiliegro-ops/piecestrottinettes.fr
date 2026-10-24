@@ -14,6 +14,7 @@ import CompatiblePartsGrid from "@/components/scooter/CompatiblePartsGrid";
 import RelatedScootersTabs from "@/components/scooter/RelatedScootersTabs";
 import ScooterPageVariants, { type PageStyle } from "@/components/scooter/ScooterPageVariants";
 import ScooterSeoFiche, { PartnerBlock } from "@/components/scooter/ScooterSeoFiche";
+import { NoOfferBlock } from "@/components/scooter/PriceAlert";
 import ScooterGuides from "@/components/scooter/ScooterGuides";
 import ScooterQuestions from "@/components/scooter/ScooterQuestions";
 import { AtelierOnFiche, conseilsParam } from "@/components/scooter/AtelierOnFiche";
@@ -176,7 +177,12 @@ const ScooterDetail = () => {
       <section className="px-4 pb-10 lg:px-8" style={{ backgroundColor: "#FAFAF8" }}>
         <div className="mx-auto max-w-6xl"><PartnerBlock url={scooter.affiliate_link} name={scooter.name} /></div>
       </section>
-    ) : null;
+    ) : (
+      // 24/10 : sans vendeur partenaire, on propose l'alerte « premier prix relevé » (jamais de cul-de-sac).
+      <section className="px-4 pb-10 lg:px-8" style={{ backgroundColor: "#FAFAF8" }}>
+        <div className="mx-auto max-w-6xl"><NoOfferBlock name={scooter.name} /></div>
+      </section>
+    );
   // Sans fiche « Tout savoir », la grille complète reste la règle (les propositions ne concernent que les pages longues).
   const ps = seoFiche ? piecesStyle : 0;
   const partsBlock = (
