@@ -1,0 +1,115 @@
+{
+ "displayName": "Hitway H9",
+ "metaTitle": "Hitway H9 : fiche technique 48 V 15,6 Ah",
+ "metaDescription": "Hitway H9 : moteur 500 W (800 W en pointe), batterie 48 V 15,6 Ah, roues 10 pouces, deux freins à disque, double suspension, IP54. Fiche et FAQ.",
+ "intro": [
+  "La Hitway H9 est la version d'entrée de la gamme H9 : même cadre que la H9 Pro, mais batterie de 48 V et 15,6 Ah. Hitway la décrit avec un moteur de 500 W nominaux, 800 W en pointe, deux freins à disque, une suspension à ressorts aux deux roues et l'indice IP54.",
+  "Hitway annonce environ 70 km d'autonomie et 22,1 kg pour cette batterie, 120 kg de charge et 6 à 8 heures de recharge. La nature des pneus de 10 pouces varie selon les pages Hitway : pleins alvéolés sur certaines, tubeless sur d'autres."
+ ],
+ "specs": [
+  [
+   "Moteur",
+   "500 W nominaux, 800 W en pointe"
+  ],
+  [
+   "Vitesse",
+   "25 km/h (modes 10, 15 et 25 km/h) ; 20 km/h sur la version homologuée allemande"
+  ],
+  [
+   "Autonomie annoncée",
+   "environ 70 km (60 à 70 km selon le manuel)"
+  ],
+  [
+   "Batterie",
+   "48 V, 15,6 Ah, environ 749 Wh (54,6 V en fin de charge)"
+  ],
+  [
+   "Poids",
+   "22,1 kg"
+  ],
+  [
+   "Charge max",
+   "120 kg"
+  ],
+  [
+   "Roues",
+   "10 pouces ; pleins alvéolés ou tubeless selon les pages Hitway"
+  ],
+  [
+   "Freins",
+   "Disque avant et arrière"
+  ],
+  [
+   "Suspension",
+   "Ressorts avant et arrière"
+  ],
+  [
+   "Étanchéité",
+   "IP54"
+  ],
+  [
+   "Temps de charge",
+   "6 à 8 h"
+  ]
+ ],
+ "pros": [
+  "Deux freins à disque (Hitway).",
+  "Double suspension à ressorts (Hitway).",
+  "La plus légère de la gamme H9 avec 22,1 kg (Hitway)."
+ ],
+ "cons": [
+  "Type de pneu annoncé différemment selon les pages Hitway.",
+  "Batterie la plus petite de la gamme H9.",
+  "Suspension avant simple qui claque, relevée sur le même cadre en H9 Pro (test YouTube)."
+ ],
+ "parts": [],
+ "care": [
+  "Regarde si tes pneus sont pleins ou tubeless avant tout achat : la gamme H9 a été livrée avec les deux.",
+  "Nettoie les deux disques au dégraissant frein si le freinage devient bruyant, jamais au lubrifiant.",
+  "Resserre l'axe de la fourche avant si tu entends un claquement : c'est le point faible relevé sur ce cadre."
+ ],
+ "faq": [
+  {
+   "q": "Quelle différence entre la Hitway H9 et la H9 Pro ?",
+   "a": "Le cadre, le moteur et les freins sont les mêmes. La H9 a une batterie de 15,6 Ah (environ 70 km), la H9 Pro passe à 20,8 ou 27 Ah, jusqu'à 110 km annoncés."
+  },
+  {
+   "q": "La Hitway H9 a-t-elle des pneus pleins ?",
+   "a": "Les pages Hitway se contredisent : pneus pleins alvéolés sur certaines, tubeless sur d'autres. Regarde les tiens et lis la cote du flanc avant de commander."
+  },
+  {
+   "q": "Quelle autonomie pour la Hitway H9 ?",
+   "a": "Environ 70 km annoncés par Hitway avec la batterie de 15,6 Ah, 60 à 70 km selon le manuel."
+  },
+  {
+   "q": "Quelle vitesse maximale pour la Hitway H9 ?",
+   "a": "25 km/h, le maximum autorisé en France sur la voie publique. La version homologuée pour l'Allemagne est bridée à 20 km/h."
+  },
+  {
+   "q": "Quel chargeur pour la Hitway H9 ?",
+   "a": "Un chargeur 48 V qui délivre 54,6 V en fin de charge, avec la même fiche que celui livré."
+  }
+ ],
+ "sources": [
+  {
+   "label": "Hitway — H9 et H9 Pro",
+   "url": "https://hitway.eu/products/h9-h9pro-folding-electric-scooter"
+  },
+  {
+   "label": "Hitway — H9 et H9 Pro (page allemande)",
+   "url": "https://hitway.eu/de/products/h9-h9pro-folding-electric-scooter"
+  },
+  {
+   "label": "Hitway B2B — H9",
+   "url": "https://b2b.hitway.eu/product/h9-electric-scooter-2/"
+  },
+  {
+   "label": "Manualslib — Hitway H9",
+   "url": "https://www.manualslib.com/manual/3579640/Hitway-H9.html"
+  },
+  {
+   "label": "MediaMarkt — Hitway H9 Pro",
+   "url": "https://www.mediamarkt.de/de/product/_hitway-h9pro-e-scooter-10-zoll-schwarz-orange-148621477.html"
+  }
+ ]
+}

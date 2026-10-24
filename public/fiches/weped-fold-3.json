@@ -1,0 +1,105 @@
+{
+ "displayName": "Weped Fold 3",
+ "metaTitle": "Weped Fold 3 : fiche technique, batterie et freins",
+ "metaDescription": "Weped Fold 3 : bimoteur, batterie 60 V 30 Ah (67,2 V en charge), freins hydrauliques 4 pistons, double suspension, 42 à 45 kg. Fiche, limites et FAQ.",
+ "intro": [
+  "La Weped Fold 3 est une trottinette pliante à deux moteurs de moyeu, fabriquée en Corée. Sa batterie de 30 Ah en cellules Samsung 21700 affiche 67,2 V en fin de charge, soit une batterie de 60 V nominaux. Elle freine avec des étriers hydrauliques à 4 pistons à l'avant et à l'arrière.",
+  "Fastride et Trotinetes Portugal annoncent environ 100 km d'autonomie et 42 kg, mais divergent sur la vitesse (80 ou 90 km/h) et sur la taille des roues (10 ou 11 pouces tubeless). Une version Fold 3 Pro existe à part, avec batterie amovible."
+ ],
+ "specs": [
+  [
+   "Moteurs",
+   "2 moteurs de moyeu ; 3 600 W selon Trotinetes Portugal (puissance de pointe non communiquée)"
+  ],
+  [
+   "Vitesse",
+   "25 km/h sur la voie publique ; 80 à 90 km/h annoncés selon les revendeurs, terrain privé seulement"
+  ],
+  [
+   "Autonomie annoncée",
+   "environ 100 km"
+  ],
+  [
+   "Batterie",
+   "60 V nominaux (67,2 V en fin de charge), 30 Ah, environ 2 kWh, cellules Samsung SDI 21700 50E"
+  ],
+  [
+   "Poids",
+   "42 kg selon Fastride et Trotinetes Portugal, 45 kg selon Solution Trottinette"
+  ],
+  [
+   "Roues",
+   "pneus tubeless de 10 pouces selon Trotinetes Portugal, 11 pouces selon Fastride"
+  ],
+  [
+   "Freins",
+   "hydrauliques à 4 pistons avant et arrière + frein électrique"
+  ],
+  [
+   "Suspension",
+   "avant à ressort unique, arrière à double ressort"
+  ],
+  [
+   "Dimensions",
+   "1 244 × 250 × 1 181 mm dépliée ; 988 × 250 × 460 mm pliée"
+  ]
+ ],
+ "pros": [
+  "Freins hydrauliques à 4 pistons sur les deux roues (Fastride).",
+  "Double suspension à ressorts (Fastride).",
+  "Pliage compact : 988 mm de long une fois repliée (Fastride).",
+  "Limiteur de vitesse par boutons et pack LED inclus (Fastride)."
+ ],
+ "cons": [
+  "42 à 45 kg : impossible à porter au quotidien.",
+  "Taille de roue publiée différemment selon les revendeurs (10 ou 11 pouces).",
+  "Aucun indice d'étanchéité publié.",
+  "Prix élevé : 4 890 € chez Fastride."
+ ],
+ "parts": [],
+ "care": [
+  "Des étriers à 4 pistons demandent des plaquettes contrôlées souvent : remplace-les avant d'atteindre la plaque métallique.",
+  "Avant de remettre en charge ta batterie de 60 V, laisse-la refroidir une vingtaine de minutes après une sortie sportive.",
+  "Le mécanisme de pliage encaisse le poids de 42 kg : vérifie son serrage et l'absence de jeu chaque mois."
+ ],
+ "price": {
+  "text": "Prix affiché chez Fastride : 4 890 €. Prix susceptible de varier.",
+  "source": "fastride.fr"
+ },
+ "faq": [
+  {
+   "q": "Quelle taille de pneu pour la Weped Fold 3 ?",
+   "a": "Les revendeurs ne sont pas d'accord : 10 pouces tubeless pour l'un, 11 pouces pour l'autre. Avant de commander, lis la cote moulée sur le flanc de ton pneu."
+  },
+  {
+   "q": "La batterie de la Weped Fold 3 est-elle en 60 V ou en 67,2 V ?",
+   "a": "C'est la même batterie : 67,2 V correspond à sa tension en fin de charge, pour une batterie de 60 V nominaux et 30 Ah."
+  },
+  {
+   "q": "Quelle différence entre la Fold 3 et la Fold 3 Pro ?",
+   "a": "La Fold 3 Pro est un modèle distinct, présenté par Weped comme une trottinette à batterie amovible et vendue plus cher. Ne commande pas ses pièces sans vérifier la plaque de ta machine."
+  },
+  {
+   "q": "La Weped Fold 3 est-elle autorisée sur route ?",
+   "a": "Sur la voie publique française, elle doit rester à 25 km/h, d'où le limiteur par boutons. Ses 80 à 90 km/h de pointe ne s'exploitent que sur un terrain privé ; circuler débridé est interdit."
+  }
+ ],
+ "sources": [
+  {
+   "label": "Fastride — Weped Fold 3",
+   "url": "https://fastride.fr/fr/weped/3060-trottinette-electrique-weped-fold-3-.html"
+  },
+  {
+   "label": "Trotinetes Portugal — Weped Fold 3",
+   "url": "https://trotinetesportugal.com/product/weped-fold-3/"
+  },
+  {
+   "label": "Solution Trottinette — gamme Weped",
+   "url": "https://solution-trottinette.fr/trottinette-electrique/marque/weped"
+  },
+  {
+   "label": "Weped USA — Fold3 Pro",
+   "url": "https://weped-usa.com/product/fold3-pro/359/"
+  }
+ ]
+}

@@ -1,0 +1,131 @@
+{
+  "displayName": "Micro X21",
+  "metaTitle": "Micro X21 : fiche technique, freins et avis",
+  "metaDescription": "Micro X21 : moteur 350 W (500 W max), batterie 36 V 7,5 Ah (270 Wh), roues alvéolées 200 mm, frein à disque arrière, 14,3 kg. Fiche, avis et FAQ.",
+  "intro": [
+    "La Micro X21, présentée par Micro Mobility France en décembre 2021, est une trottinette urbaine à roues alvéolées de 200 mm, donc increvables. Elle freine avec un levier de type vélo qui actionne à la fois le frein moteur avant et un disque mécanique à l'arrière, plus une gâchette de frein régénératif.",
+    "Son moteur de 350 W (500 W au maximum) et sa batterie de 36 V et 7,5 Ah (270 Wh) visent 30 km ; un testeur de 65 kg en a parcouru 19 en terrain vallonné. Sans suspension, elle pèse 14,3 kg. Micro Mobility a arrêté de vendre ses trottinettes électriques en France fin 2026, et ses pièces restent en vente."
+  ],
+  "specs": [
+    [
+      "Moteur",
+      "350 W, 500 W maximum"
+    ],
+    [
+      "Vitesse",
+      "25 km/h"
+    ],
+    [
+      "Autonomie annoncée",
+      "30 km (Micro) ; 25 km selon un revendeur"
+    ],
+    [
+      "Autonomie mesurée",
+      "19 km pour un pilote de 65 kg en terrain mixte (test YouTube)"
+    ],
+    [
+      "Batterie",
+      "36 V, 7,5 Ah, 270 Wh selon Micro France ; 7,8 Ah et 280 Wh dans le catalogue 2022"
+    ],
+    [
+      "Poids",
+      "14,3 kg"
+    ],
+    [
+      "Charge max",
+      "100 kg"
+    ],
+    [
+      "Roues",
+      "200 mm (8 pouces), alvéolées anti-crevaison"
+    ],
+    [
+      "Freins",
+      "Frein moteur avant + disque mécanique arrière au levier, gâchette de frein régénératif"
+    ],
+    [
+      "Suspension",
+      "aucune"
+    ],
+    [
+      "Étanchéité",
+      "IP54"
+    ],
+    [
+      "Temps de charge",
+      "5 h selon Micro France ; 3,5 h dans le catalogue 2022"
+    ]
+  ],
+  "pros": [
+    "Vrai frein à disque mécanique à l'arrière, rare sur une trottinette à roues pleines (test YouTube).",
+    "Roues alvéolées increvables (Micro).",
+    "Finitions soignées et câbles bien dissimulés (test YouTube).",
+    "Grimpe les côtes sans pousser, en redescendant vers 20 km/h (test YouTube)."
+  ],
+  "cons": [
+    "Pas de suspension : vibrations sur les trottoirs et les pavés (test YouTube).",
+    "Autonomie réelle d'environ 19 km pour 30 km annoncés (test YouTube).",
+    "Guidon fixe de 103 cm, non réglable en hauteur (catalogue Micro).",
+    "Commercialisation arrêtée en France."
+  ],
+  "parts": [],
+  "care": [
+    "Le disque arrière assure tout le freinage mécanique : dégraisse-le s'il siffle et surveille l'épaisseur des plaquettes.",
+    "Sans suspension, les vis du guidon et du pliage encaissent chaque choc : resserre-les tous les mois.",
+    "Inspecte les alvéoles des roues : une fissure ou un morceau de gomme arraché signifie qu'il faut changer la roue."
+  ],
+  "faq": [
+    {
+      "q": "La Micro X21 est-elle toujours vendue ?",
+      "a": "Micro Mobility ne vend plus de trottinettes électriques en France depuis fin 2026. Les pièces de la X21, comme l'ensemble disque et étrier arrière, restent en vente."
+    },
+    {
+      "q": "Quelle autonomie réelle pour la Micro X21 ?",
+      "a": "Un testeur de 65 kg a parcouru 19 km en terrain mixte, avec 70 % de plat et 30 % de montée. Micro annonce 30 km sur terrain plat."
+    },
+    {
+      "q": "Les roues de la Micro X21 peuvent-elles crever ?",
+      "a": "Non : ce sont des roues alvéolées de 200 mm, sans air. En contrepartie, elles filtrent moins les chocs qu'un pneu gonflable."
+    },
+    {
+      "q": "Comment freine la Micro X21 ?",
+      "a": "Le levier de type vélo déclenche ensemble le frein moteur avant et le disque arrière. Une gâchette au guidon ajoute un frein moteur seul, pour ralentir en douceur."
+    },
+    {
+      "q": "La Micro X21 roule-t-elle sous la pluie ?",
+      "a": "Elle est certifiée IP54 : elle supporte les projections d'eau, pas l'immersion. Ralentis sur sol mouillé, une roue alvéolée y accroche moins."
+    }
+  ],
+  "sources": [
+    {
+      "label": "Micro Mobility France — Micro X21",
+      "url": "https://micro-mobility.fr/trottinette-electrique/1701-trottinette-electrique-micro-x21-7630053544843.html"
+    },
+    {
+      "label": "Micro Mobility France — pièces Micro X21",
+      "url": "https://www.micro-mobility.fr/392-micro-x21"
+    },
+    {
+      "label": "Catalogue Micro Électriques 2022",
+      "url": "https://www.calameo.com/books/005948896cc8b256d8235"
+    },
+    {
+      "label": "Mobility Urban — Micro X21",
+      "url": "https://www.mobilityurban.fr/trottinette-electrique/legere-et-compacte/trottinette-electrique-micro-x21.html"
+    },
+    {
+      "label": "Cleanrider — Micro Mobility X21",
+      "url": "https://www.cleanrider.com/catalogue/trottinette-electrique/micro-mobility/micro-mobility-x21/feed/"
+    },
+    {
+      "label": "YouTube — Nouveauté Micro : la trottinette électrique Micro X21",
+      "url": "https://www.youtube.com/watch?v=n7bpnpCzAwk"
+    }
+  ],
+  "video": {
+    "id": "n7bpnpCzAwk",
+    "title": "NOUVEAUTÉ MICRO : La trottinette électrique Micro X21 !",
+    "channel": "Micro Mobility France",
+    "uploadDate": "2021-12-13"
+  }
+}

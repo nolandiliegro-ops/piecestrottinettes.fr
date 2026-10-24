@@ -21,6 +21,8 @@ export interface ScooterDetail {
   max_speed_kmh: number | null;
   max_speed_private_kmh: number | null;
   price_eur: number | null;
+  /** Date du dernier relevé de prix (24/10) : le prix ne s'affiche que s'il a 7 jours ou moins. */
+  price_checked_at: string | null;
   range_km: number | null;
   tire_size: string | null;
   youtube_video_id: string | null;
@@ -109,6 +111,7 @@ export const useScooterBySlug = (slug: string | undefined) => {
           max_speed_kmh,
           max_speed_private_kmh,
           price_eur,
+          price_checked_at,
           range_km,
           tire_size,
           youtube_video_id,

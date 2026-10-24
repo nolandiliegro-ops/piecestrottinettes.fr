@@ -29,6 +29,8 @@ import type { ShowroomCarouselScooter } from "@/hooks/useShowroomData";
 import GammeCarousel, { type GalStyle } from "@/components/scooter/GammeCarousel";
 import BrandExplorer, { type ExploBrand, type ExploLook } from "@/components/scooter/BrandExplorer";
 import { useBrands } from "@/hooks/useScooterData";
+import { TopGammeNav, navParam } from "@/components/scooter/TopNavProposals";
+import { BuyHeroButton, achatParam, livePrice } from "@/components/scooter/BuyProposals";
 
 export type PageStyle = 1 | 2 | 3 | 4 | 5 | 6;
 export const STYLE_NAMES: Record<PageStyle, string> = { 1: "Paddock", 2: "Cockpit", 3: "Grille", 4: "Stand", 5: "Pit-wall", 6: "Pit-stand" };
@@ -210,7 +212,10 @@ const RacingActions = ({ scooter, partsCount, look, accent, full = false, onDark
           </span>
         </button>
       </div>
-      {scooter.affiliate_link && (
+      {scooter.affiliate_link && achatParam() && (
+        <div className="basis-full"><BuyHeroButton look={achatParam()!} url={scooter.affiliate_link} price={livePrice(scooter.price_eur, scooter.price_checked_at)} /></div>
+      )}
+      {scooter.affiliate_link && !achatParam() && (
         // 18/10 (Nolan) : plus de saut direct chez le partenaire — rebond sur le bloc « Où l'acheter » qui explique
         // le partenariat. Carbone, pas orange : l'orange reste réservé à l'achat de NOS pièces.
         <a href="#ou-acheter" className={base}
@@ -550,10 +555,17 @@ const PitWall = ({ scooter, specs, gamme, accent, brand, partsCount, tag, gammeB
   // 16/10 : « Plaque » (4) choisi par Nolan = défaut ; ?gal=0 = ancien carrousel.
   const galStyle = (sp.has("gal") ? (galN >= 1 && galN <= 5 ? galN : null) : 4) as GalStyle | null;
   const btnLook: Look = BTN[sp.get("btn") ?? ""] ?? (gammeBelow ? "slant" : "pit"); // 16/10 : biseau retenu pour Pit-stand
+  // 24/10 : navigation entre trottinettes en haut de fiche, propositions ?nav=1..5 (sans paramètre : inchangé).
+  const nav = gammeBelow ? navParam() : null;
+  const topNav = nav && all.length > 0 ? (
+    <TopGammeNav look={nav} all={all} brand={brand} current={scooter.slug}
+      bottomPlayer={<GammePlayer all={all} brand={brand} current={scooter.slug} style={galStyle ?? 4} />} />
+  ) : null;
   return (
     <>
       {tag}
-      <section className="px-4 pt-24 lg:pt-28 pb-10 relative overflow-hidden" style={{ backgroundColor: "#FAFAF8" }}>
+      {topNav}
+      <section className={`px-4 ${topNav ? "pt-8 lg:pt-10" : "pt-24 lg:pt-28"} pb-10 relative overflow-hidden`} style={{ backgroundColor: "#FAFAF8" }}>
         <div aria-hidden className="hidden lg:block absolute -right-24 top-24 w-[520px] h-[120px] -rotate-12 opacity-[0.05]" style={{ backgroundImage: `conic-gradient(${CARBON} 25%, transparent 0 50%, ${CARBON} 0 75%, transparent 0)`, backgroundSize: "40px 40px" }} />
         <div className="mx-auto max-w-6xl grid lg:grid-cols-2 gap-6 lg:gap-12 items-center relative">
           <Gallery scooter={scooter} accent={accent} height="clamp(230px, 36vw, 440px)" />
@@ -600,7 +612,7 @@ const PitWall = ({ scooter, specs, gamme, accent, brand, partsCount, tag, gammeB
           </div>
         </section>
       )}
-      {gammeBelow && galStyle && all.length > 0 && <GammePlayer all={all} brand={brand} current={scooter.slug} style={galStyle} />}
+      {gammeBelow && galStyle && all.length > 0 && nav !== 5 && <GammePlayer all={all} brand={brand} current={scooter.slug} style={galStyle} />}
       {gammeBelow && gamme.length > 1 && !galStyle && (
         <section className="px-4 py-8" style={{ backgroundColor: "#F5F0E8" }}>
           <div className="mx-auto max-w-6xl"><GammeHeader brand={brand} count={gamme.length} accent={accent} /><GammeSnap models={gamme} current={scooter.slug} accent={accent} /></div>

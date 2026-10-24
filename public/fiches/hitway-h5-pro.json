@@ -1,0 +1,103 @@
+{
+ "displayName": "Hitway H5 Pro",
+ "metaTitle": "Hitway H5 Pro : fiche technique, pneus pleins",
+ "metaDescription": "Hitway H5 Pro : moteur 800 W, batterie 48 V 13 Ah, pneus pleins tout-terrain 10 pouces, double suspension, environ 23,5 kg. Fiche, limites et FAQ.",
+ "intro": [
+  "La Hitway H5 Pro est une version renforcée de la H5, pensée pour les chemins : pneus pleins tout-terrain de 10 pouces, suspension avant et arrière et cadre en aluminium, selon Hitway. Elle a été vendue en France notamment par Cdiscount.",
+  "Son manuel donne un moteur de 800 W, une batterie de 13 Ah et 50 km d'autonomie au maximum, pour environ 23,6 kg et 120 kg de charge. La tension de 48 V est indiquée par Le Parisien et par un vendeur d'occasion. Le freinage diffère selon les sources : deux disques, ou un disque avant et un frein électronique arrière."
+ ],
+ "specs": [
+  [
+   "Moteur",
+   "800 W (le manuel ne précise pas nominale ou pointe)"
+  ],
+  [
+   "Vitesse",
+   "25 km/h sur la voie publique ; 45 km/h annoncés par Hitway en mode sport, réservés à un terrain privé"
+  ],
+  [
+   "Autonomie annoncée",
+   "jusqu'à 50 km"
+  ],
+  [
+   "Batterie",
+   "48 V, 13 Ah (54,6 V en fin de charge)"
+  ],
+  [
+   "Poids",
+   "environ 23,6 kg"
+  ],
+  [
+   "Charge max",
+   "120 kg"
+  ],
+  [
+   "Roues",
+   "10 pouces pleins tout-terrain"
+  ],
+  [
+   "Freins",
+   "Disque avant et arrière selon Hitway ; disque avant + frein électronique arrière selon le manuel"
+  ],
+  [
+   "Suspension",
+   "Amortisseurs avant et arrière"
+  ]
+ ],
+ "pros": [
+  "Pneus pleins : aucune crevaison possible (Hitway).",
+  "Suspension aux deux roues pour compenser la dureté des pneus pleins (Hitway).",
+  "Moteur de 800 W présenté comme puissant pour une trottinette urbaine (Le Parisien)."
+ ],
+ "cons": [
+  "Les pneus pleins transmettent plus de chocs que des pneus gonflables.",
+  "Configuration de freinage différente entre le site Hitway et le manuel.",
+  "Autonomie limitée à 50 km annoncés, avec une batterie de 13 Ah."
+ ],
+ "parts": [],
+ "care": [
+  "Inspecte tes pneus pleins tous les mois : quand les crampons sont lisses, l'adhérence chute nettement sur sol mouillé.",
+  "Les pneus pleins font vibrer la trottinette : resserre la potence et les vis du plateau régulièrement.",
+  "Vérifie ce qui freine vraiment à l'arrière sur ta H5 Pro (disque ou frein électronique) avant de commander des plaquettes."
+ ],
+ "faq": [
+  {
+   "q": "La Hitway H5 Pro a-t-elle des pneus pleins ?",
+   "a": "Oui, des pneus pleins tout-terrain de 10 pouces selon Hitway et le manuel. Pour en racheter, lis la cote complète sur le flanc du tien."
+  },
+  {
+   "q": "Quelle batterie a la Hitway H5 Pro ?",
+   "a": "Une batterie de 48 V et 13 Ah. Elle donne jusqu'à 50 km d'autonomie selon le manuel."
+  },
+  {
+   "q": "Quels freins sur la Hitway H5 Pro ?",
+   "a": "Hitway parle de deux freins à disque, le manuel d'un disque à l'avant et d'un frein électronique à l'arrière. Regarde ta roue arrière pour savoir lequel tu as."
+  },
+  {
+   "q": "La Hitway H5 Pro peut-elle rouler à 45 km/h ?",
+   "a": "Seulement hors de la voie publique. La réglementation française bloque les trottinettes à 25 km/h sur route et piste, quelle que soit la vitesse permise par le mode sport."
+  }
+ ],
+ "sources": [
+  {
+   "label": "Hitway — présentation de la gamme",
+   "url": "https://hitway.eu/blogs/news/introducing-the-hitway-range-of-electric-scooters"
+  },
+  {
+   "label": "Manuals+ — manuel Hitway H5 Pro",
+   "url": "https://manuals.plus/asin/B0CNW6NMS4"
+  },
+  {
+   "label": "Le Parisien — Hitway H5 Pro",
+   "url": "https://www.leparisien.fr/guide-shopping/conso/sport/naviguez-en-ville-sans-embouteillages-avec-cette-trottinette-electrique-qui-profite-de-510-euros-de-remise-15-08-2023-I3D3BLJ7UNFMDF5PHW3KDJIYQY.php"
+  },
+  {
+   "label": "Wallapop — Hitway H5 Pro",
+   "url": "https://es.wallapop.com/item/patinete-electrico-hitway-h5-pro-1191266570"
+  },
+  {
+   "label": "eScooter Clinic — pneu plein Hitway H5",
+   "url": "https://escooterclinic.co.uk/en/products/solid-tyre-for-hitway-h5-3961"
+  }
+ ]
+}

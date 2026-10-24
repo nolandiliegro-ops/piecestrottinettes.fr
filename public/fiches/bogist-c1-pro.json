@@ -1,0 +1,136 @@
+{
+ "displayName": "Bogist C1 Pro",
+ "metaTitle": "Bogist C1 Pro : fiche technique, selle et entretien",
+ "metaDescription": "Bogist C1 Pro : moteur 500 W, batterie 48 V 13 Ah, pneus 10 pouces tout-chemin, tambour avant et disque arrière, double suspension. Fiche et FAQ.",
+ "intro": [
+  "La Bogist C1 Pro est une trottinette électrique tout-chemin livrée avec une selle amovible. Elle associe un moteur de 500 W dans la roue arrière, une batterie de 48 V et 13 Ah (624 Wh), des pneus de 10 pouces à crampons et une suspension à l'avant comme à l'arrière, selon Bogist et Rue du Commerce.",
+  "Bogist annonce 40 à 45 km d'autonomie, 23,21 kg sur la balance et 150 kg de charge maximale. Elle freine avec un tambour à l'avant et un disque à l'arrière, porte un indice IP64 et se recharge en 6 à 8 heures avec un chargeur de 54,6 V."
+ ],
+ "specs": [
+  [
+   "Moteur",
+   "500 W, dans la roue arrière (puissance de pointe non communiquée)"
+  ],
+  [
+   "Vitesse",
+   "25 km/h sur la voie publique ; 45 km/h annoncés par Rue du Commerce et des tests vidéo, réservés à un terrain privé"
+  ],
+  [
+   "Autonomie annoncée",
+   "40 à 45 km"
+  ],
+  [
+   "Batterie",
+   "48 V, 13 Ah, 624 Wh (54,6 V en fin de charge) ; une version 15 Ah existe chez certains revendeurs"
+  ],
+  [
+   "Poids",
+   "23,21 kg selon Bogist et Boulanger (29,6 kg affichés par Pixmania)"
+  ],
+  [
+   "Charge max",
+   "150 kg selon Bogist et Rue du Commerce (120 kg sur d'autres fiches)"
+  ],
+  [
+   "Roues",
+   "10 pouces, pneus gonflables à crampons"
+  ],
+  [
+   "Freins",
+   "Tambour avant + disque arrière à commande par câble"
+  ],
+  [
+   "Suspension",
+   "Avant et arrière"
+  ],
+  [
+   "Étanchéité",
+   "IP64 selon Bogist (IP65 selon Pixmania)"
+  ],
+  [
+   "Temps de charge",
+   "6 à 8 h selon Bogist, 7 h selon Boulanger"
+  ],
+  [
+   "Équipement",
+   "Selle amovible, support de téléphone fourni"
+  ]
+ ],
+ "pros": [
+  "Indice IP64, rare à ce prix, avec une prise de charge protégée par deux bouchons (test vidéo en français).",
+  "Double suspension et pneus à crampons pour les chemins (Bogist, Rue du Commerce).",
+  "Charge maximale annoncée de 150 kg (Bogist)."
+ ],
+ "cons": [
+  "Plus de 23 kg : elle se transporte mal dans les escaliers.",
+  "Vitesse, indice d'étanchéité et charge maximale changent d'une fiche revendeur à l'autre.",
+  "Un acheteur Fnac signale du jeu dans la colonne à réception : contrôle-la dès le déballage.",
+  "Autonomie réelle estimée autour de 20 km par un testeur, loin des 40 à 45 km annoncés."
+ ],
+ "parts": [],
+ "care": [
+  "Le tambour avant se règle au câble : quand la course du levier s'allonge, reprends la tension au tendeur avant qu'il ne freine plus du tout.",
+  "Vérifie la pression des deux pneus chaque semaine ; un pneu à crampons sous-gonflé se pince sur le premier trottoir.",
+  "Après chaque sortie sur chemin, contrôle le serrage de la colonne et du système de pliage : c'est là que le jeu apparaît en premier."
+ ],
+ "price": {
+  "text": "Prix constaté chez Gleeride : 479 € pour la version 13 Ah. Prix susceptible de varier.",
+  "source": "fr.gleeride.com"
+ },
+ "faq": [
+  {
+   "q": "Peut-on rouler avec la selle de la Bogist C1 Pro en France ?",
+   "a": "Le Code de la route définit la trottinette électrique comme un engin sans place assise. Pour circuler sur la voie publique, retire la selle, comme le rappelle un testeur YouTube."
+  },
+  {
+   "q": "La Bogist C1 Pro est-elle légale à 45 km/h ?",
+   "a": "Non. Sur route, piste cyclable ou en agglomération, ta trottinette doit rester sous 25 km/h. Les 45 km/h affichés ne concernent qu'un terrain privé, et la débrider pour la rue est interdit."
+  },
+  {
+   "q": "Quel chargeur pour la Bogist C1 Pro ?",
+   "a": "Un chargeur pour batterie 48 V, soit 54,6 V en sortie, autour de 2 A. Avant d'en racheter un, compare la prise de ton chargeur d'origine : Bogist ne la précise pas sur ses fiches."
+  },
+  {
+   "q": "Quelle taille de pneu pour la Bogist C1 Pro ?",
+   "a": "Bogist annonce seulement 10 pouces, sans largeur exacte. Lis la cote gravée sur le flanc de ton pneu avant de commander un pneu ou une chambre à air."
+  },
+  {
+   "q": "Quels freins sur la Bogist C1 Pro ?",
+   "a": "Un tambour à l'avant et un disque à l'arrière actionné par câble, d'après les tests vidéo."
+  }
+ ],
+ "sources": [
+  {
+   "label": "Bogist — C1 Pro",
+   "url": "https://www.bogist.net/products/2004115"
+  },
+  {
+   "label": "Rue du Commerce — Bogist C1 Pro",
+   "url": "https://www.rueducommerce.fr/p/m25078889930.html"
+  },
+  {
+   "label": "Boulanger — Bogist C1 Pro",
+   "url": "https://www.boulanger.com/ref/9000921802"
+  },
+  {
+   "label": "Pixmania — Bogist C1 Pro",
+   "url": "https://www.pixmania.com/fr/fr/trottinette-electrique-pliable-bogist-c1-pro-10-moteur-500w-batterie-48v-13ah-303978.html"
+  },
+  {
+   "label": "Gleeride — Bogist C1 Pro",
+   "url": "https://fr.gleeride.com/products/bogist-c1-pro-trottinette-electrique-pliante-10-inch-tire-500w-motor-48v-13ah-batterie"
+  },
+  {
+   "label": "Fnac — avis Bogist C1 Pro",
+   "url": "https://www.fnac.com/Trottinette-electrique-Bogist-C1-Pro-48V-600W/mp45840971/avis"
+  },
+  {
+   "label": "YouTube — test Bogist C1 Pro IP64",
+   "url": "https://www.youtube.com/watch?v=j1acjvhk8Hw"
+  },
+  {
+   "label": "YouTube — unboxing Bogist C1 Pro",
+   "url": "https://www.youtube.com/watch?v=AjyeyBCNgJc"
+  }
+ ]
+}

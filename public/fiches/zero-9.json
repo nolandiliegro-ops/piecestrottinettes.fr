@@ -1,0 +1,137 @@
+{
+  "displayName": "Zero 9",
+  "metaTitle": "Zero 9 : fiche technique, pneus 8,5 x 2 et freins",
+  "metaDescription": "Zero 9 : moteur 600 W, batterie 48 V 13 Ah, pneus gonflables 8,5 x 2, disque avant et tambour arrière, 18 kg. Fiche, pneus compatibles et FAQ.",
+  "intro": [
+    "La Zero 9 se place entre la Zero 8 et la Zero 10. Zero la décrit avec un moteur de 600 W, une batterie de 48 V et 13 Ah, un frein à disque à l'avant et un tambour à l'arrière, et une suspension aux deux roues. Elle pèse environ 18 kg.",
+    "Ses pneus sont gonflables à l'avant comme à l'arrière, en 8,5 × 2 pouces (50-134), même si une page Zero parle de 9 pouces. Zero annonce 40 à 45 km d'autonomie ; un essai filmé relève environ 35 km à vitesse soutenue."
+  ],
+  "specs": [
+    [
+      "Moteur",
+      "600 W selon Zero (moteur de 500 W poussé à 600 W par le contrôleur selon un revendeur)"
+    ],
+    [
+      "Vitesse",
+      "25 km/h sur la voie publique ; 47 à 48 km/h annoncés, réservés à un terrain privé"
+    ],
+    [
+      "Autonomie annoncée",
+      "40 à 45 km"
+    ],
+    [
+      "Batterie",
+      "48 V, 13 Ah, 624 Wh (54,6 V en fin de charge) ; des batteries 52 V existent en remplacement"
+    ],
+    [
+      "Poids",
+      "environ 18 kg"
+    ],
+    [
+      "Charge max",
+      "100 kg selon Zero, 120 kg selon des revendeurs"
+    ],
+    [
+      "Roues",
+      "8,5 × 2 pouces gonflables (50-134), avant et arrière"
+    ],
+    [
+      "Freins",
+      "Disque avant (120 mm selon un revendeur) + tambour arrière"
+    ],
+    [
+      "Suspension",
+      "Ressort à l'avant, amortisseurs à l'arrière"
+    ],
+    [
+      "Temps de charge",
+      "7 à 9 heures selon les revendeurs"
+    ]
+  ],
+  "pros": [
+    "Arrêt en 3,1 m depuis 24 km/h lors d'un test filmé, avec disque, tambour et frein moteur.",
+    "Environ 18 kg : elle reste portable pour sa puissance (tests YouTube).",
+    "Même pneu à l'avant et à l'arrière, facile à trouver (E-Watts, Fastride)."
+  ],
+  "cons": [
+    "Amortissement correct mais moins confortable qu'une Zero 10X, selon un test filmé.",
+    "Fiches Zero contradictoires sur la taille des roues (8,5 ou 9 pouces).",
+    "Coexistence de batteries 48 V et 52 V qui complique le choix du chargeur."
+  ],
+  "parts": [
+    {
+      "label": "Pneu",
+      "size": "8,5 × 2 (50-134), à chambre à air",
+      "count": 2,
+      "to": "/piece/pneu-zero-8-1-2x2-pouces-50-134",
+      "cta": "Pneus 8,5 × 2"
+    },
+    {
+      "label": "Chambre à air",
+      "size": "8,5 × 2 (50-134)",
+      "count": 3,
+      "to": "/piece/chambre-a-air-8-5x2-50-134-valve-droite-ewheel",
+      "cta": "Chambres 8,5 × 2"
+    },
+    {
+      "label": "Pneu plein",
+      "size": "8,5 × 2 (50-134)",
+      "count": 1,
+      "to": "/piece/pneu-plein-zero-8-zero-9-inokim-light-1-2",
+      "cta": "Pneu plein"
+    }
+  ],
+  "care": [
+    "Le tambour arrière s'use lentement mais se règle : retends son câble quand le levier arrière devient mou.",
+    "Un pneu plein 8,5 × 2 se monte très difficilement : prévois de l'aide ou confie-le à un atelier.",
+    "Avant toute recharge avec un chargeur d'occasion, vérifie qu'il sort 54,6 V si ta batterie est d'origine en 48 V."
+  ],
+  "faq": [
+    {
+      "q": "Quelle taille de pneu pour la Zero 9 ?",
+      "a": "Du 8,5 × 2 pouces, cote 50-134, à l'avant comme à l'arrière, avec chambre à air. Le même pneu existe en version pleine."
+    },
+    {
+      "q": "Quels freins sur la Zero 9 ?",
+      "a": "Un frein à disque à l'avant et un tambour à l'arrière, aidés par le frein moteur."
+    },
+    {
+      "q": "Quelle différence entre la Zero 9 et la Zero 8 ?",
+      "a": "La Zero 9 passe en 48 V avec un moteur de 600 W, ajoute un disque à l'avant et monte des pneus gonflables aux deux roues. La Zero 8 garde un pneu plein à l'arrière et un seul tambour."
+    },
+    {
+      "q": "Quelle autonomie pour la Zero 9 ?",
+      "a": "Zero annonce 40 à 45 km. Un essai filmé à vitesse soutenue relève plutôt 35 km : prévois de la marge pour un trajet aller-retour."
+    },
+    {
+      "q": "Puis-je utiliser la Zero 9 à 48 km/h ?",
+      "a": "Seulement sur un terrain privé. Sur route et piste cyclable, la loi française te limite à 25 km/h, et une Zero 9 débridée n'a pas sa place sur la voie publique."
+    }
+  ],
+  "sources": [
+    {
+      "label": "Zero — Zero 9",
+      "url": "https://zeroelectricscooter.com/products/zero-9"
+    },
+    {
+      "label": "Zero Scooters Australia — Zero 9",
+      "url": "https://www.zeroscooters.com.au/products/zero-9-electric-scooter"
+    },
+    {
+      "label": "Zero Scooter Romania — Zero 9",
+      "url": "https://zeroscooter.ro/produs/zero-9-electric-scooter-40-45-km-range-top-speed-48-km-h-motor-600w-9-pneumatic-wheels-black/?lang=en"
+    },
+    {
+      "label": "E-Watts — pneu plein Zero 8 / Zero 9",
+      "url": "https://e-watts.fr/produit/pneu-plein-zero-8-zero-9-z8-pro"
+    },
+    {
+      "label": "Roue Libre Bandol — pneu Zero 8,5 × 2",
+      "url": "https://rouelibrebandol.fr/produit/pneu-zero-8-1-2x2-pouces-50-134/"
+    },
+    {
+      "label": "YouTube — ZERO 9 Electric Scooter Review",
+      "url": "https://www.youtube.com/watch?v=6idaCA59plM"
+    }
+  ]
+}

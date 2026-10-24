@@ -1,0 +1,112 @@
+{
+ "displayName": "Micro Merlin",
+ "metaTitle": "Micro Merlin : fiche technique, poids et entretien",
+ "metaDescription": "Micro Merlin : moteur 250 W (500 W max), batterie 36 V 7,8 Ah (280 Wh), 11,7 à 12 kg, roues 200 mm anti-crevaison, frein tambour. Fiche et FAQ.",
+ "intro": [
+  "La Micro Merlin est la trottinette électrique la plus légère du catalogue Micro de 2022 : 11,7 kg selon ce catalogue, 12 kg selon la fiche française. Elle se plie au pied, se tire comme un trolley et roule sur des roues de 200 mm anti-crevaison, suspendues à l'avant et à l'arrière.",
+  "Son moteur avant de 250 W nominaux (500 W maximum) et sa batterie LG de 36 V et 7,8 Ah (280 Wh) visent 25 à 30 km selon les documents Micro. Elle freine au tambour, au moteur et au pied. Micro a mis fin à la vente de ses trottinettes électriques en France fin 2026 ; les pièces restent proposées."
+ ],
+ "specs": [
+  [
+   "Moteur",
+   "250 W nominaux, 500 W maximum"
+  ],
+  [
+   "Vitesse",
+   "25 km/h"
+  ],
+  [
+   "Autonomie annoncée",
+   "25 km (fiche française) à 30 km (catalogue 2022)"
+  ],
+  [
+   "Batterie",
+   "36 V, 7,8 Ah, 280 Wh, cellules LG"
+  ],
+  [
+   "Poids",
+   "11,7 à 12 kg"
+  ],
+  [
+   "Charge max",
+   "100 kg"
+  ],
+  [
+   "Roues",
+   "200 mm (8 pouces), anti-crevaison"
+  ],
+  [
+   "Freins",
+   "Tambour (type vélo), frein moteur, frein au pied par friction"
+  ],
+  [
+   "Suspension",
+   "Avant et arrière"
+  ],
+  [
+   "Étanchéité",
+   "IP54"
+  ],
+  [
+   "Temps de charge",
+   "3 h"
+  ]
+ ],
+ "pros": [
+  "11,7 à 12 kg, le poids plume de la gamme Micro (catalogue Micro).",
+  "Se transporte pliée en mode trolley (Micro).",
+  "Triple freinage avec tambour (Micro)."
+ ],
+ "cons": [
+  "Autonomie annoncée de 25 à 30 km seulement (Micro).",
+  "Un test italien de 2019 critique la stabilité et un guidon qui bouge (YouTube).",
+  "Régulateur de vitesse compliqué à activer, selon le même test.",
+  "Plus commercialisée neuve en France."
+ ],
+ "parts": [],
+ "care": [
+  "Le garde-boue arrière sert aussi de frein au pied : garde-le propre pour qu'il appuie franchement sur la roue.",
+  "Contrôle le serrage du guidon et du mécanisme de pliage : c'est là que les testeurs ont relevé du jeu.",
+  "Débranche le chargeur une fois le voyant passé au vert plutôt que de laisser ta Merlin branchée plusieurs jours."
+ ],
+ "faq": [
+  {
+   "q": "Peut-on encore acheter une Micro Merlin neuve ?",
+   "a": "En France, la marque a arrêté de vendre ses trottinettes électriques fin 2026. Pour la tienne, les pièces détachées restent disponibles."
+  },
+  {
+   "q": "Combien pèse la Micro Merlin ?",
+   "a": "11,7 kg d'après le catalogue Micro 2022, 12 kg d'après la fiche française."
+  },
+  {
+   "q": "Quelle autonomie pour la Micro Merlin ?",
+   "a": "Micro annonce 25 km sur sa fiche française et 30 km dans son catalogue 2022. Ces valeurs supposent un terrain plat et un pilote d'environ 75 kg."
+  },
+  {
+   "q": "Quelle différence entre la Merlin et la Merlin II ?",
+   "a": "La Merlin II passe à 300 W nominaux selon Micro, annonce 30 à 35 km et pèse 12 à 13 kg. La Merlin garde 250 W."
+  },
+  {
+   "q": "Comment freine la Micro Merlin ?",
+   "a": "Avec trois systèmes : un tambour commandé au guidon, le frein moteur, et le garde-boue arrière sur lequel tu appuies du pied."
+  }
+ ],
+ "sources": [
+  {
+   "label": "Micro Mobility France — fiche Micro Merlin",
+   "url": "https://www.micro-mobility.fr/img/cms/fiche%20nouvelle-micro-merlin%20.pdf"
+  },
+  {
+   "label": "Catalogue Micro Électriques 2022",
+   "url": "https://www.calameo.com/books/005948896cc8b256d8235"
+  },
+  {
+   "label": "YouTube — Trottinette Micro Merlin",
+   "url": "https://www.youtube.com/watch?v=SMGuGDFkVNA"
+  },
+  {
+   "label": "YouTube — Recensione MICRO MERLIN",
+   "url": "https://www.youtube.com/watch?v=vwmZ1p1yka4"
+  }
+ ]
+}

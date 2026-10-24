@@ -1,0 +1,140 @@
+{
+  "displayName": "Laotie Ti30",
+  "metaTitle": "Laotie Ti30 : fiche technique, pneus 11 pouces",
+  "metaDescription": "Laotie Ti30 : bimoteur 60 V 38,4 Ah, pneus 11 pouces 90/65-6.5, freins hydrauliques Zoom 140 mm, 200 kg de charge. Fiche, pièces et FAQ.",
+  "intro": [
+    "La Laotie Ti30, aussi appelée Landbreaker, est la grosse bimoteur 11 pouces de Laotie. Son manuel donne deux moteurs de 2 800 W, une batterie de 60 V et 38,4 Ah, des pneus tubeless de 11 pouces et des freins hydrauliques Zoom à l'avant et à l'arrière.",
+    "Laotie annonce 85 km/h sur terrain privé, jusqu'à 140 km sur un moteur et 60 à 70 km sur les deux. Le manuel indique 49 kg emballée et 200 kg de charge. Un essai slovaque de plus de 2 000 km relève des pneus encore peu usés et aucune fuite d'huile."
+  ],
+  "specs": [
+    [
+      "Moteurs",
+      "2 × 2 800 W ; les fiches ne précisent pas s'il s'agit de puissance nominale ou de pointe"
+    ],
+    [
+      "Vitesse",
+      "25 km/h sur la voie publique ; 85 km/h annoncés, réservés à un terrain privé"
+    ],
+    [
+      "Autonomie annoncée",
+      "jusqu'à 140 km sur un moteur ; 60 à 70 km sur deux"
+    ],
+    [
+      "Batterie",
+      "60 V, 38,4 Ah selon le manuel (38,6 ou 35 Ah selon d'autres annonces) ; 67,2 V en fin de charge"
+    ],
+    [
+      "Poids",
+      "49 kg emballée (poids brut du manuel)"
+    ],
+    [
+      "Charge max",
+      "200 kg"
+    ],
+    [
+      "Roues",
+      "11 pouces, 90/65-6.5, tubeless, version route ou tout-terrain"
+    ],
+    [
+      "Freins",
+      "Disques hydrauliques Zoom avant et arrière, 140 mm + frein électronique"
+    ],
+    [
+      "Temps de charge",
+      "5 à 6 h annoncées avec deux chargeurs"
+    ]
+  ],
+  "pros": [
+    "Pneus encore peu usés après plus de 2 000 km (Touchit.sk).",
+    "Freinage hydraulique jugé efficace en test (MobiliTest).",
+    "Suspensions un peu plus souples que celles de la Duotts D88 selon MobiliTest."
+  ],
+  "cons": [
+    "Guidon court et vis de pliage qui se desserre selon MobiliTest.",
+    "Pneus de près de 10 cm de large : il faut pencher davantage en virage (Touchit.sk).",
+    "Accélérateur à doser avec prudence, la puissance arrive fort (MobiliTest).",
+    "Capacité de batterie différente selon les annonces."
+  ],
+  "parts": [
+    {
+      "label": "Pneu",
+      "size": "90/65-6.5 (11 pouces)",
+      "count": 11,
+      "to": "/piece/pneu-90-65-6-5-off-road-tubeless",
+      "cta": "Pneus 90/65-6.5"
+    },
+    {
+      "label": "Chambre à air",
+      "size": "90/65-6.5",
+      "count": 5,
+      "to": "/piece/chambre-a-air-9065-65-11-pouces",
+      "cta": "Chambres 90/65-6.5"
+    },
+    {
+      "label": "Plaquettes de frein",
+      "size": "Étrier hydraulique Zoom",
+      "count": 5,
+      "to": "/piece/plaquettes-de-frein-zoom-semi-metallique",
+      "cta": "Plaquettes Zoom"
+    }
+  ],
+  "care": [
+    "Gonfle tes pneus de 11 pouces juste sous la pression maximale du flanc, comme MobiliTest à 45 PSI pour 50 indiqués.",
+    "Contrôle la vis de pliage du guidon avant chaque sortie : c'est elle qui se desserre le plus souvent.",
+    "Garde un œil sur les joints de fourche : un voile d'huile sur les tubes annonce une révision des amortisseurs."
+  ],
+  "faq": [
+    {
+      "q": "Quelle taille de pneu pour la Laotie Ti30 ?",
+      "a": "Du 11 pouces en 90/65-6.5. Laotie la livre en tubeless, mais un pneu de même cote à chambre à air se monte aussi avec la chambre adaptée."
+    },
+    {
+      "q": "Quels freins sur la Laotie Ti30 ?",
+      "a": "Des freins hydrauliques Zoom à l'avant et à l'arrière sur des disques de 140 mm, plus un frein électronique."
+    },
+    {
+      "q": "Quelle est la batterie de la Laotie Ti30 ?",
+      "a": "Une 60 V de 38,4 Ah selon le manuel. Certaines annonces parlent de 38,6 ou 35 Ah : vérifie l'étiquette de la tienne."
+    },
+    {
+      "q": "La Laotie Ti30 a-t-elle le droit de rouler à 85 km/h ?",
+      "a": "Pas sur la route. Au-delà de 25 km/h, une trottinette sort du cadre légal français ; les 85 km/h ne valent que sur un terrain privé, et la débrider pour la voie publique est interdit."
+    },
+    {
+      "q": "Quel pneu choisir sur la Laotie Ti30, route ou tout-terrain ?",
+      "a": "Le profil route pour le bitume, plus silencieux et plus précis en virage. Le profil à crampons seulement si tu roules souvent sur chemin."
+    }
+  ],
+  "sources": [
+    {
+      "label": "Manuals+ — manuel Laotie Ti30",
+      "url": "https://manuals.plus/m/88a717d94d09ea9dd6db83611b3ccc5eef182eac9c816ca7dd08c99e1c2d4f43"
+    },
+    {
+      "label": "Priceboon — Laotie Ti30 Landbreaker",
+      "url": "https://www.priceboon.com/product/laotie-ti30-landbreaker/"
+    },
+    {
+      "label": "Touchit.sk — Laotie Ti30, essai longue durée",
+      "url": "https://touchit.sk/kolobezka-laotie-ti30-recenzia-dlhodobe-skusenosti/444983/"
+    },
+    {
+      "label": "YouVelo — pneu 90/65-6.5 CST compatible Laotie Ti30",
+      "url": "https://youvelo.fr/vtt/840-pneu-9065-65-cst-off-road-11-tubetype-compatible-dualtron-thunder-ultra-kaabo-wolf-warrior-zero-11x.html"
+    },
+    {
+      "label": "Amazon — pneu 90/65-6.5 compatible Laotie Ti30",
+      "url": "https://www.amazon.fr/pneu-90-65-6-5/s?k=pneu+90/65+6.5"
+    },
+    {
+      "label": "YouTube — Laotie Ti30, test MobiliTest",
+      "url": "https://www.youtube.com/watch?v=448lLp2TH9Y"
+    }
+  ],
+  "video": {
+    "id": "448lLp2TH9Y",
+    "title": "Laotie Ti30 - la trotinette électrique au meilleur rapport qualité prix ? TEST",
+    "channel": "MobiliTest",
+    "uploadDate": "2022-11-21"
+  }
+}

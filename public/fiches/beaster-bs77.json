@@ -1,0 +1,108 @@
+{
+ "displayName": "Beaster BS77",
+ "metaTitle": "Beaster BS77 : fiche technique double moteur 60 V",
+ "metaDescription": "Beaster BS77 : 2 × 1 200 W, batterie 60 V 23,4 Ah, 80 km et 75 km/h annoncés, freins hydrauliques, 35 kg. Usage hors voie publique. Fiche et entretien.",
+ "intro": [
+  "La Beaster BS77 est une trottinette double moteur : deux moteurs de 1 200 W, un par roue, soit 2 400 W au total, alimentés par une batterie de 60 V et 23,4 Ah (environ 1 400 Wh), d'après inSPORTline et Varle.",
+  "Les revendeurs annoncent 75 km/h, jusqu'à 80 km d'autonomie, 35 kg et 120 kg de charge maximale, avec des freins hydrauliques et des pneus à chambre à air. inSPORTline précise qu'elle n'est pas destinée à la circulation publique. La recharge prend 10 à 12 heures."
+ ],
+ "specs": [
+  [
+   "Moteurs",
+   "2 × 1 200 W (2 400 W au total)"
+  ],
+  [
+   "Vitesse",
+   "75 km/h annoncés ; le revendeur la réserve à un usage hors voie publique"
+  ],
+  [
+   "Autonomie annoncée",
+   "jusqu'à 80 km"
+  ],
+  [
+   "Batterie",
+   "60 V, 23,4 Ah (environ 1 404 Wh par calcul)"
+  ],
+  [
+   "Poids",
+   "35 kg (selon inSPORTline)"
+  ],
+  [
+   "Charge max",
+   "120 kg"
+  ],
+  [
+   "Roues",
+   "pneus à chambre à air, profil route (selon inSPORTline)"
+  ],
+  [
+   "Freins",
+   "Hydrauliques"
+  ],
+  [
+   "Pente max",
+   "jusqu'à 40° (selon inSPORTline)"
+  ],
+  [
+   "Temps de charge",
+   "10 à 12 h (selon inSPORTline)"
+  ]
+ ],
+ "pros": [
+  "Double motorisation de 2 × 1 200 W (inSPORTline).",
+  "Batterie d'environ 1 400 Wh pour 80 km annoncés (Varle).",
+  "Freins hydrauliques (Varle, inSPORTline)."
+ ],
+ "cons": [
+  "Pas destinée à la voie publique selon son revendeur.",
+  "35 kg : elle ne se porte pas.",
+  "Recharge très longue, 10 à 12 heures.",
+  "Taille des pneus non communiquée."
+ ],
+ "parts": [],
+ "care": [
+  "Avec des freins hydrauliques, un levier qui devient mou signale de l'air dans le circuit : fais-le purger plutôt que de resserrer l'étrier.",
+  "Deux moteurs et 35 kg fatiguent les axes : contrôle le serrage des roues et du pliage chaque mois.",
+  "Une recharge de 10 à 12 heures se lance la nuit, mais toujours sur une surface non inflammable et jamais sans surveillance prolongée."
+ ],
+ "price": {
+  "text": "Prix affiché par Erasportas (Lituanie) : 1 155 € au lieu de 1 650 € ; 1 598 € chez PowerSport. Prix susceptible de varier.",
+  "source": "erasportas.lt"
+ },
+ "faq": [
+  {
+   "q": "La Beaster BS77 peut-elle rouler sur la voie publique ?",
+   "a": "Non, le revendeur inSPORTline la présente comme non destinée à la circulation publique. En France, une trottinette doit être limitée à 25 km/h pour circuler ; à 75 km/h, elle sort de ce cadre."
+  },
+  {
+   "q": "Quelle puissance pour la Beaster BS77 ?",
+   "a": "Deux moteurs de 1 200 W, un à l'avant et un à l'arrière, soit 2 400 W au total selon inSPORTline."
+  },
+  {
+   "q": "Quelle taille de pneu pour la Beaster BS77 ?",
+   "a": "Les fiches parlent de pneus à chambre à air sans donner leur cote. Avant d'acheter un pneu ou une chambre, lis la dimension sur le flanc du tien."
+  },
+  {
+   "q": "Combien de temps pour recharger la Beaster BS77 ?",
+   "a": "10 à 12 heures avec le chargeur fourni, selon inSPORTline, pour une batterie de 60 V et 23,4 Ah."
+  }
+ ],
+ "sources": [
+  {
+   "label": "inSPORTline — Beaster BS77",
+   "url": "https://insportline.lt/en/751904/electric-scooter-beaster-bs77-2400w-60v-234ah"
+  },
+  {
+   "label": "Varle — trottinettes Beaster",
+   "url": "https://www.varle.lt/elektriniai-paspirtukai/?f.s-gamintojas=Beaster"
+  },
+  {
+   "label": "Erasportas — gamme Beaster",
+   "url": "https://www.erasportas.lt/1250-beaster?page=2"
+  },
+  {
+   "label": "PowerSport — trottinettes électriques",
+   "url": "https://powersport.lt/en/2329-electric-scooters"
+  }
+ ]
+}

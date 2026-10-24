@@ -1,0 +1,113 @@
+{
+ "displayName": "Weped FF",
+ "metaTitle": "Weped FF : fiche technique bimoteur 60 V 30 Ah",
+ "metaDescription": "Weped FF : deux moteurs de moyeu, 12 000 W en pointe, batterie 60 V 30 Ah (1 800 Wh), pneus tubeless 11 pouces, freins hydrauliques. Fiche et FAQ.",
+ "intro": [
+  "La Weped FF est la sportive compacte du constructeur coréen Weped, sortie en 2020. Deux moteurs de moyeu, une batterie de 60 V et 30 Ah (1 800 Wh) et des pneus tubeless de 11 pouces : Scooter.guide mesure 3 600 W en continu par moteur et jusqu'à 12 000 W en pointe pour l'ensemble.",
+  "Weped annonce 100 km d'autonomie ; dans son essai, Scooter.guide a parcouru 28 miles, environ 45 km, en conduite mixte. Elle pèse 34 à 36 kg selon les sources, freine avec deux disques hydrauliques NUTT de 160 mm et n'a pas de frein électrique régénératif. Weped l'a depuis remplacée par la FF2S, en 72 V."
+ ],
+ "specs": [
+  [
+   "Moteurs",
+   "2 moteurs de moyeu ; 3 600 W continus par moteur selon Scooter.guide ; 12 000 W en pointe au total"
+  ],
+  [
+   "Vitesse",
+   "25 km/h sur la voie publique ; 100 km/h annoncés (89 km/h mesurés par Scooter.guide), sur terrain privé uniquement"
+  ],
+  [
+   "Autonomie annoncée",
+   "jusqu'à 100 km ; 32 à 48 km en usage courant selon Scooter.guide"
+  ],
+  [
+   "Batterie",
+   "60 V, 30 Ah, 1 800 Wh, cellules Samsung 21700"
+  ],
+  [
+   "Poids",
+   "34 kg selon Scooter.guide, 36 kg selon le forum Madcharge"
+  ],
+  [
+   "Charge max",
+   "160 kg (selon Scooter.guide)"
+  ],
+  [
+   "Roues",
+   "11 pouces, pneus tubeless"
+  ],
+  [
+   "Freins",
+   "disques hydrauliques NUTT de 160 mm avant et arrière, sans frein régénératif (selon Scooter.guide)"
+  ],
+  [
+   "Suspension",
+   "avant à ressort unique (inversée), arrière à double ressort"
+  ],
+  [
+   "Étanchéité",
+   "aucun indice IP communiqué"
+  ],
+  [
+   "Temps de charge",
+   "environ 17 h avec le chargeur de 1,7 A, 7,5 h avec le chargeur rapide de 4,4 A (selon Scooter.guide)"
+  ]
+ ],
+ "pros": [
+  "Accélérations hors norme pour une trottinette compacte (Scooter.guide).",
+  "Freins hydrauliques NUTT avec disques de 160 mm à l'avant et à l'arrière (Scooter.guide).",
+  "Encombrement réduit pour cette puissance : 1 000 mm de long une fois pliée (Scooter.guide).",
+  "Grosse batterie de 1 800 Wh en cellules Samsung (Scooter.guide)."
+ ],
+ "cons": [
+  "Aucun indice d'étanchéité : à éviter sous la pluie (Scooter.guide).",
+  "Plateau étroit et suspensions très fermes (Scooter.guide).",
+  "Pas d'éclairage avant ni de klaxon d'origine (Scooter.guide).",
+  "Autonomie réelle bien loin des 100 km annoncés."
+ ],
+ "parts": [],
+ "care": [
+  "Sans indice IP, ta FF ne doit pas rouler sous la pluie : si elle est mouillée, sèche-la avant de la remettre en charge.",
+  "Avec freins hydrauliques et aucun frein moteur, purge le circuit dès que le levier devient mou ; ne te contente pas de serrer les étriers.",
+  "Ses pneus s'usent vite sous une telle puissance : contrôle l'usure de la bande de roulement et la pression avant chaque sortie."
+ ],
+ "faq": [
+  {
+   "q": "Quelle taille de pneu pour la Weped FF ?",
+   "a": "Des pneus tubeless de 11 pouces. La cote complète n'est pas confirmée par deux sources : lis l'inscription sur le flanc de ton pneu avant de commander."
+  },
+  {
+   "q": "Quelle différence entre la Weped FF et la FF2S ?",
+   "a": "La FF2S est la remplaçante de la FF : batterie de 72 V au lieu de 60 V, et 46 kg selon Fastride. Les pièces électriques ne sont donc pas interchangeables sans vérification."
+  },
+  {
+   "q": "Peut-on rouler avec la Weped FF en ville ?",
+   "a": "En France, toute trottinette électrique est limitée à 25 km/h dans la rue. Les 100 km/h annoncés pour la FF n'ont leur place que sur un circuit ou un terrain privé, et la rouler débridée sur route est interdit."
+  },
+  {
+   "q": "La Weped FF a-t-elle un frein électrique ?",
+   "a": "Non, selon Scooter.guide : elle freine uniquement avec ses deux freins hydrauliques. Garde-les en parfait état."
+  },
+  {
+   "q": "Combien de temps pour charger la Weped FF ?",
+   "a": "Environ 17 heures avec le chargeur standard de 1,7 A, ou 7,5 heures avec un chargeur rapide de 4,4 A, d'après Scooter.guide."
+  }
+ ],
+ "sources": [
+  {
+   "label": "Scooter.guide — Weped FF review",
+   "url": "https://scooter.guide/weped-ff-review/"
+  },
+  {
+   "label": "Madcharge — Weped FF specifications",
+   "url": "https://forum.madcharge.com/d/27-weped-ff-specifications"
+  },
+  {
+   "label": "Reddit — Weped Fold vs FF",
+   "url": "https://www.reddit.com/r/ElectricScooters/comments/idxiyd/weped_fold_vs_weped_ff_electric_scooter_when_do/"
+  },
+  {
+   "label": "Fastride — Weped FF2S",
+   "url": "https://fastride.fr/fr/weped/2666-trottinette-electrique-weped-ff2s-e-scooter.html"
+  }
+ ]
+}

@@ -4,6 +4,9 @@ import { askAtelier } from "@/lib/atelier";
 
 const GREEN = "#4A7C59";
 const CARBON = "#1A1A1A";
+/* Bouton à angle coupé, même gabarit que l'aperçu rapide (22/10). */
+const CHAMFER = "polygon(0 0, calc(100% - 12px) 0, 100% 12px, 100% 100%, 0 100%)";
+const DA_FONT = "'Plus Jakarta Sans', 'Inter', sans-serif";
 
 /* Formulaire « Pose ta question à l'atelier » (24/10/2026). La question part en base (ask_atelier) et
    n'est publiée qu'après la réponse de l'atelier. Anti-spam géré par la base. */
@@ -61,7 +64,8 @@ const AskAtelierForm = ({ scooterSlug, scooterName }: { scooterSlug?: string | n
       </label>
       {err && <p className="text-sm font-semibold text-[#DC2626]" role="alert">{err}</p>}
       <button type="submit" disabled={state === "sending"}
-        className="w-full sm:w-auto min-h-[48px] px-6 rounded-lg font-semibold text-white bg-green-700 hover:bg-green-800 disabled:opacity-60 inline-flex items-center justify-center gap-2">
+        className="w-full sm:w-auto min-h-[48px] px-7 text-white bg-[#4A7C59] hover:bg-[#3A6449] transition-colors disabled:opacity-60 inline-flex items-center justify-center gap-2"
+        style={{ clipPath: CHAMFER, fontFamily: DA_FONT, fontWeight: 800, fontSize: 14, letterSpacing: "0.06em", textTransform: "uppercase" }}>
         {state === "sending" ? <Loader2 className="w-4 h-4 animate-spin" /> : <Send className="w-4 h-4" />} Envoyer à l'atelier
       </button>
       <p className="text-sm text-gray-500">Réponse sous 48 h par un réparateur. Les questions sur le débridage ne sont pas publiées : c'est interdit sur la voie publique.</p>

@@ -1,0 +1,189 @@
+{
+ "displayName": "Kuickwheel S1-C Pro",
+ "metaTitle": "Kuickwheel S1-C Pro : fiche, pneus et chargeur",
+ "metaDescription": "Kuickwheel S1-C Pro : 500 W, batterie 36 V 13 Ah, IPX7, pneu avant gonflable et arrière plein 10x2.50, chargeur 42 V jack 5,5 x 2,1 mm. Fiche et pièces.",
+ "intro": [
+  "La Kuickwheel S1-C Pro mise sur la solidité : indice d'étanchéité IPX7, moteur de 500 W (750 W en crête selon Wellbots), batterie de 36 V et 13 Ah, et une monte de pneus peu courante : gonflable à l'avant, plein à l'arrière, en 10 x 2,50 pouces.",
+  "Pour 22 kg et 120 kg de charge maximale, les revendeurs annoncent 40 à 55 km d'autonomie. Le testeur Raftor estime l'autonomie réelle à 20 à 25 km quand on roule toujours au maximum. Elle freine par tambour avant et frein électronique arrière, avec une double suspension avant et rien à l'arrière."
+ ],
+ "specs": [
+  [
+   "Moteur",
+   "500 W nominaux ; 750 W en crête selon Wellbots"
+  ],
+  [
+   "Vitesse",
+   "25 km/h sur la voie publique"
+  ],
+  [
+   "Autonomie annoncée",
+   "40 à 55 km selon les revendeurs"
+  ],
+  [
+   "Autonomie mesurée",
+   "20 à 25 km à pleine vitesse pour un pilote d'environ 80 kg (selon un test YouTube)"
+  ],
+  [
+   "Batterie",
+   "36 V, 13 Ah (468 Wh)"
+  ],
+  [
+   "Poids",
+   "22 kg"
+  ],
+  [
+   "Charge max",
+   "120 kg"
+  ],
+  [
+   "Roues",
+   "10 x 2,50 pouces : pneu gonflable à chambre à air à l'avant (10 x 2,50-6), pneu plein à l'arrière (10 x 2,50-6,5)"
+  ],
+  [
+   "Freins",
+   "Tambour avant + frein électronique arrière (disque avant selon Darty)"
+  ],
+  [
+   "Suspension",
+   "Double suspension avant, aucune à l'arrière"
+  ],
+  [
+   "Étanchéité",
+   "IPX7"
+  ],
+  [
+   "Charge",
+   "chargeur 42 V, prise jack DC 5,5 x 2,1 mm ; 4 à 5 h"
+  ]
+ ],
+ "pros": [
+  "IPX7 : un des indices d'étanchéité les plus élevés du marché (Trott'n'Shop).",
+  "Pneu arrière plein : pas de crevaison sur la roue motrice (Swiss Distribution).",
+  "Bon couple au démarrage pour un 500 W (test YouTube en anglais).",
+  "Potence tenue par six vis, jugée plus stable dans le temps (test YouTube en anglais)."
+ ],
+ "cons": [
+  "L'arrière secoue : pneu plein sans suspension, jugé brutal par le testeur Raftor.",
+  "Le pneu plein peut glisser sur sol mouillé et en rond-point (avis clients Fnac).",
+  "22 kg : lourde pour une trottinette urbaine en 36 V.",
+  "Autonomie réelle bien en dessous des 55 km annoncés."
+ ],
+ "parts": [
+  {
+   "label": "Chambre à air avant",
+   "size": "10 x 2,50 (jante 6 pouces)",
+   "count": 6,
+   "to": "/piece/chambre-a-air-10x2-50-valve-coudee-135x45",
+   "cta": "Chambres 10x2.50"
+  },
+  {
+   "label": "Pneu plein arrière",
+   "size": "10 x 2,50-6,5",
+   "count": 14,
+   "to": "/piece/pneu-plein-10x2-50-6-5-noir-cityneye",
+   "cta": "Pneus pleins 10x2.50"
+  },
+  {
+   "label": "Chargeur",
+   "size": "36 V (sortie 42 V), prise jack DC 5,5 x 2,1 mm",
+   "count": 1,
+   "to": "/piece/chargeur-36v-42v-2a-connecteur-dc-55-21mm",
+   "cta": "Chargeur 36 V"
+  }
+ ],
+ "care": [
+  "Le pneu plein arrière s'use sans prévenir : vérifie la profondeur de sa bande de roulement tous les mois, il perd son grip une fois lisse.",
+  "Contrôle la pression du pneu avant chaque semaine, c'est le seul élément qui amortit avec la fourche.",
+  "Si la potence prend du jeu, resserre ses six vis sans attendre : un jeu qui s'installe abîme les filetages."
+ ],
+ "price": {
+  "text": "Prix affiché par Wellbots : 589 € ; 629 € chez Trotti R. Prix susceptible de varier.",
+  "source": "wellbots.fr"
+ },
+ "faq": [
+  {
+   "q": "Quels pneus sur la Kuickwheel S1-C Pro ?",
+   "a": "Un pneu gonflable à chambre à air à l'avant et un pneu plein à l'arrière, tous deux en 10 x 2,50 pouces. Certains revendeurs ont proposé une version « confort » avec un pneu gonflable à l'arrière."
+  },
+  {
+   "q": "Quel chargeur pour la Kuickwheel S1-C Pro ?",
+   "a": "Un chargeur de 42 V pour batterie 36 V, avec une prise jack DC 5,5 x 2,1 mm. Le chargeur d'origine délivre 3 A ; un modèle de 2 A fonctionne aussi, il charge simplement plus lentement."
+  },
+  {
+   "q": "La Kuickwheel S1-C Pro est-elle vraiment étanche ?",
+   "a": "Elle est annoncée IPX7, ce qui couvre une immersion temporaire. Rouler sous la pluie ne pose pas de problème, mais rince-la et sèche la prise de charge après une sortie boueuse."
+  },
+  {
+   "q": "Quelle autonomie réelle pour la Kuickwheel S1-C Pro ?",
+   "a": "Le testeur Raftor l'estime à 20 à 25 km pour un pilote d'environ 80 kg toujours à fond. En mode éco et à allure modérée, tu dépasseras ce chiffre."
+  },
+  {
+   "q": "La Kuickwheel S1-C Pro peut-elle circuler sur la route ?",
+   "a": "Oui, elle sort d'usine limitée à 25 km/h avec clignotants, feu stop et sonnette. Toute modification pour aller plus vite te ferait sortir du cadre légal sur la voie publique."
+  }
+ ],
+ "sources": [
+  {
+   "label": "Wellbots — Kuickwheel S1-C Pro",
+   "url": "https://wellbots.fr/products/kuickwheel-trottinette-electrique-s1-c-pro"
+  },
+  {
+   "label": "Trotti R — Kuickwheel S1-C Pro",
+   "url": "https://www.trottir.com/product-page/trottinette-kuickwheel-s1-c-pro-36v-13ah"
+  },
+  {
+   "label": "Darty — Kuickwheel S1C Pro",
+   "url": "https://www.darty.com/nav/achat/sports_loisirs/glisse_urbaine/trottinette_electrique/kuickwheel_kuickw_s1cpro36v13ah.html"
+  },
+  {
+   "label": "Fnac — avis Kuickwheel S1 C Pro",
+   "url": "https://www.fnac.com/Trottinette-electrique-Kuickwheel-S1-C-Pro-500-W-Noir/a15649782/avis"
+  },
+  {
+   "label": "Swiss Distribution — Kuickwheel S1-C Pro",
+   "url": "https://swiss-distribution.com/produit/kuickwheel-s1-c-pro/"
+  },
+  {
+   "label": "Stelfia — chargeur Kuickwheel d'origine 42 V 3 A",
+   "url": "https://stelfia.com/shop/pieces-et-accessoires/chargeur-36v-42v-3a-prise-jack-5-5-2-1-kuickwheel-original/"
+  },
+  {
+   "label": "Trott en Provence — chargeur Kuickwheel S1-C Pro",
+   "url": "https://trott-en-provence.fr/chargeur-trottinette-kuickwheel-s1-c-pro/"
+  },
+  {
+   "label": "Family Trott — pneu plein 10x2.50 Kuickwheel",
+   "url": "https://familytrott.fr/produit/pneu-plein-10x2-50-kuickwheel/"
+  },
+  {
+   "label": "Urban Moov — pneu plein S1-C Pro 10x2.5",
+   "url": "https://www.urbanmoov.fr/boutique/pneu-plein-arriere-Kuickwheel-s1-c-pro-v1-&-v2-p597783718"
+  },
+  {
+   "label": "Wattiz — Kuickwheel S1C Pro (pneu 10x2.50-6)",
+   "url": "https://www.wattiz.fr/fr/s/455/kuickwheel-s1c-pro"
+  },
+  {
+   "label": "E-Watts — pneu 10x2.50-6 (S1-C Pro)",
+   "url": "https://e-watts.fr/produit/pneu-10x2-5-cst"
+  },
+  {
+   "label": "YouTube — Raftor, test Kuickwheel S1-C Pro",
+   "url": "https://www.youtube.com/watch?v=KuQQvFJ-u_Q"
+  },
+  {
+   "label": "YouTube — Trott'n'Shop, présentation S1-C Pro",
+   "url": "https://www.youtube.com/watch?v=9Bnm6PY1sIs"
+  },
+  {
+   "label": "YouTube — Review Kuickwheel S1-C PRO",
+   "url": "https://www.youtube.com/watch?v=CQeXNe_ZzuY"
+  }
+ ],
+ "video": {
+  "id": "KuQQvFJ-u_Q",
+  "title": "Kuickwheel S1-C Pro : la Trottinette Électrique la plus Étanche et la plus Résistante du Monde ?!",
+  "channel": "RAFTOR",
+  "uploadDate": "2025-01-28"
+ }
+}

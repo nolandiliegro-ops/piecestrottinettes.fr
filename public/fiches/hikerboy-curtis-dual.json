@@ -1,0 +1,127 @@
+{
+  "displayName": "Hikerboy Curtis Dual",
+  "metaTitle": "Hikerboy Curtis Dual : fiche technique double moteur",
+  "metaDescription": "Hikerboy Curtis Dual : 2 moteurs de 250 W (1 000 W en pointe), batterie 48 V 10,4 Ah, 20,5 kg, disque arrière et E-ABS, IPX5. Fiche, avis et FAQ.",
+  "intro": [
+    "La Hikerboy Curtis Dual place un moteur de 250 W dans chaque roue : 500 W nominaux au total, 1 000 W en pointe selon le manuel. Sa batterie de 48 V et 10,4 Ah est la même que celle de la Curtis Plus, pour un poids de 20,5 kg selon Hikerboy.",
+    "On choisit un ou deux moteurs selon le terrain. Dans son test, Raftor tient 25 km/h dans une montée moyenne et environ 20 km/h dans une côte raide, mais juge le freinage moyen : un disque mécanique à l'arrière, et seulement du freinage électronique à l'avant."
+  ],
+  "specs": [
+    [
+      "Moteurs",
+      "2 × 250 W nominaux (500 W) ; 1 000 W en pointe"
+    ],
+    [
+      "Vitesse",
+      "25 km/h sur la voie publique ; 35 km/h annoncés par Electrotraveller, réservés à un terrain privé"
+    ],
+    [
+      "Autonomie annoncée",
+      "jusqu'à 40 km"
+    ],
+    [
+      "Batterie",
+      "48 V, 10,4 Ah, soit 499 Wh (54,6 V en fin de charge)"
+    ],
+    [
+      "Poids",
+      "20,5 kg selon Hikerboy (19,5 kg selon Electrotraveller)"
+    ],
+    [
+      "Charge max",
+      "100 kg selon Hikerboy et plusieurs revendeurs suisses"
+    ],
+    [
+      "Roues",
+      "10 pouces, pneus gonflables avec chambre à air"
+    ],
+    [
+      "Freins",
+      "disque mécanique arrière + freinage électronique (E-ABS)"
+    ],
+    [
+      "Suspension",
+      "avant"
+    ],
+    [
+      "Étanchéité",
+      "IPX5 selon Hikerboy (IP55 chez un revendeur suisse)"
+    ],
+    [
+      "Temps de charge",
+      "5,5 h"
+    ]
+  ],
+  "pros": [
+    "Double motorisation à moins de 800 €, avec bascule un ou deux moteurs (Raftor).",
+    "Tient 25 km/h dans une montée moyenne (test Raftor).",
+    "Confort jugé très bon à 25 km/h (Raftor).",
+    "Pente maximale annoncée de 25 %, contre 20 % pour la Curtis Plus (Hikerboy)."
+  ],
+  "cons": [
+    "Freinage moyen : un seul frein mécanique, à l'arrière (Raftor).",
+    "Puissance modeste pour une bimoteur, 250 W par roue (Raftor).",
+    "Plateau un peu court selon le même testeur.",
+    "Charge maximale de 100 kg."
+  ],
+  "parts": [],
+  "care": [
+    "Le disque arrière fait tout le freinage mécanique : surveille l'épaisseur de tes plaquettes plus souvent que sur une trottinette à deux disques.",
+    "Deux moteurs, deux câbles de roue : contrôle que les gaines à la sortie des axes ne frottent pas et ne sont pas pincées.",
+    "Garde une pression identique dans les deux chambres à air pour que les deux moteurs travaillent de façon équilibrée."
+  ],
+  "price": {
+    "text": "Annoncée à moins de 800 € dans le test de Raftor (octobre 2025). Prix susceptible de varier.",
+    "source": "YouTube — Raftor"
+  },
+  "faq": [
+    {
+      "q": "Quelle différence entre la Curtis Dual et la Curtis Dual Pro ?",
+      "a": "Même moteurs et même batterie. La Dual Pro ajoute un frein à disque à l'avant, là où la Dual ne freine devant qu'électroniquement, et pèse environ 21 kg."
+    },
+    {
+      "q": "La Curtis Dual peut-elle rouler à 35 km/h ?",
+      "a": "Certains revendeurs annoncent 35 km/h, mais cette vitesse ne concerne qu'un terrain privé. Sur route et piste cyclable, la loi française fixe le plafond à 25 km/h, et modifier le bridage pour circuler plus vite est interdit."
+    },
+    {
+      "q": "Quels freins sur la Hikerboy Curtis Dual ?",
+      "a": "Un frein à disque mécanique à l'arrière, complété par un freinage électronique. Un revendeur mentionne un tambour avant, mais le manuel Hikerboy et le test Raftor n'en parlent pas."
+    },
+    {
+      "q": "Peut-on rouler sur un seul moteur ?",
+      "a": "Oui : tu peux passer d'un moteur à deux selon le terrain, ce qui économise la batterie sur le plat."
+    },
+    {
+      "q": "Quelle taille de pneu pour la Curtis Dual ?",
+      "a": "Des pneus de 10 pouces avec chambre à air. La cote exacte n'est pas publiée : regarde l'inscription sur le flanc avant de commander."
+    }
+  ],
+  "sources": [
+    {
+      "label": "Hikerboy — Curtis Dual",
+      "url": "https://hikerboyscooter.com/fr/products/curtis-dual"
+    },
+    {
+      "label": "Manuel Hikerboy Curtis (manuals.plus)",
+      "url": "https://manuals.plus/hikerboy/ddhbc16neb-dual-electric-scooter-manual"
+    },
+    {
+      "label": "Electrotraveller — Hikerboy Curtis Dual",
+      "url": "https://electrotraveller.com/de/e-scooter-3/wandererboy-curtis-dual-rot/?v=08a4415e9d59"
+    },
+    {
+      "label": "Stelfia — Hikerboy Curtis Dual 48V",
+      "url": "https://stelfia.com/shop/vehicules/trottinette/hikerboy-curtis-dual-48v/"
+    },
+    {
+      "label": "YouTube — Test complet Hikerboy Curtis Dual (Raftor)",
+      "url": "https://www.youtube.com/watch?v=ADhxZj7smM0"
+    }
+  ],
+  "video": {
+    "id": "ADhxZj7smM0",
+    "title": "TEST COMPLET – Hikerboy Curtis Dual : la trottinette électrique légère à moins de 800 € !",
+    "channel": "RAFTOR",
+    "uploadDate": "2025-10-18"
+  }
+}

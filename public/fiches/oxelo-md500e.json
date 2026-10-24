@@ -1,0 +1,135 @@
+{
+  "displayName": "Oxelo MD500E",
+  "metaTitle": "Decathlon MD500E : fiche technique, rappel et pièces",
+  "metaDescription": "Decathlon Btwin (ex-Oxelo) MD500E : 350 W (700 W en pointe), batterie 10,4 Ah 416 Wh, pneus 10 pouces tubeless, 17 kg, IPX5. Rappel 2026 et FAQ.",
+  "intro": [
+    "La MD500E est la trottinette électrique « moyenne distance » de Decathlon, vendue sous la marque Oxelo puis Btwin. Elle associe un moteur de 350 W dans la roue avant (700 W en pointe selon Capital et Frandroid), une batterie de 10,4 Ah et 416 Wh et des pneus tubeless de 10 pouces, sans suspension.",
+    "Elle pèse 17 kg, accepte 100 kg et résiste aux projections d'eau (IPX5). Capital a parcouru 22 à 24 km en mode Sport avec 78 kg. Attention : Decathlon a lancé en 2026 un rappel pour un risque de fissure entre le cadre et la potence."
+  ],
+  "specs": [
+    [
+      "Moteur",
+      "350 W nominaux, 700 W en pointe (Capital, Frandroid), dans la roue avant"
+    ],
+    [
+      "Vitesse",
+      "25 km/h maximum, conforme à la limite de la voie publique"
+    ],
+    [
+      "Autonomie annoncée",
+      "35 km en Éco, 24 km en Normal, 18 km en Sport (Capital) ; la fiche Decathlon actuelle donne 45 / 35 / 30 km"
+    ],
+    [
+      "Autonomie mesurée",
+      "22 à 24 km en Sport avec 78 kg (Capital)"
+    ],
+    [
+      "Batterie",
+      "10,4 Ah, 416 Wh (Decathlon)"
+    ],
+    [
+      "Poids",
+      "17 kg"
+    ],
+    [
+      "Charge max",
+      "100 kg (taille 1,45 à 1,95 m)"
+    ],
+    [
+      "Roues",
+      "10 pouces, tubeless"
+    ],
+    [
+      "Freins",
+      "Électronique avant (moteur) + disque arrière"
+    ],
+    [
+      "Suspension",
+      "Aucune"
+    ],
+    [
+      "Étanchéité",
+      "IPX5"
+    ],
+    [
+      "Chargeur",
+      "64 W, 1,5 A ; environ 5 h de charge (Capital)"
+    ]
+  ],
+  "pros": [
+    "Decathlon annonce l'autonomie mode par mode, et Capital a fait mieux que prévu en Sport.",
+    "Pneus tubeless de 10 pouces stables et accrocheurs, même sous la pluie (Frandroid).",
+    "Réparable dans les ateliers Decathlon, avec les pièces disponibles (Decathlon).",
+    "Jugée « recommandée » par le TCS dans son comparatif 2025."
+  ],
+  "cons": [
+    "Rappel 2026 : risque de fissure à la jonction du cadre et de la potence sur les modèles vendus du 1er septembre 2024 au 15 juin 2026.",
+    "Aucune suspension : conduite ferme sur les pavés (Frandroid, Capital).",
+    "Frein mécanique jugé peu performant par Frandroid.",
+    "Au-delà de 100 kg tout équipé, Decathlon ne la garantit plus."
+  ],
+  "parts": [],
+  "care": [
+    "Si ta MD500E a été achetée entre septembre 2024 et mi-juin 2026, arrête de rouler et contacte Decathlon : elle est concernée par le rappel cadre-potence.",
+    "Inspecte la jonction entre le cadre et la potence chaque mois, à la recherche d'une fissure dans la peinture.",
+    "Garde une pression constante dans les pneus tubeless : sans suspension, ce sont eux qui absorbent les chocs."
+  ],
+  "price": {
+    "text": "Prix affiché par Decathlon : 299,99 € (prix de référence 349,99 €). Prix susceptible de varier.",
+    "source": "decathlon.fr"
+  },
+  "faq": [
+    {
+      "q": "Ma Decathlon MD500E est-elle concernée par le rappel ?",
+      "a": "Oui si tu l'as achetée entre le 1er septembre 2024 et le 15 juin 2026 (codes modèle 5234673 et 5263834). Un usage intensif peut fissurer la jonction cadre-potence : ne roule plus avec et contacte Decathlon pour la réparation."
+    },
+    {
+      "q": "Quelle différence entre la MD500E et la SD500E ?",
+      "a": "La batterie : 416 Wh pour la MD500E contre 208 Wh pour la SD500E, soit le double d'énergie selon Decathlon. Le moteur de 350 W et les roues de 10 pouces sont les mêmes."
+    },
+    {
+      "q": "La MD500E respecte-t-elle la vitesse légale ?",
+      "a": "Oui, Decathlon la bride à 25 km/h, le plafond fixé par le Code de la route pour une trottinette électrique en France."
+    },
+    {
+      "q": "Quelle taille de pneu pour la Decathlon MD500E ?",
+      "a": "Decathlon annonce des pneus tubeless de 10 pouces sans donner la cote complète. Lis l'inscription sur le flanc de ton pneu avant de commander un remplaçant."
+    },
+    {
+      "q": "Combien de temps pour recharger la MD500E ?",
+      "a": "Environ 5 heures avec le chargeur fourni de 64 W, selon Capital."
+    }
+  ],
+  "sources": [
+    {
+      "label": "Decathlon — MD500E (fiche produit)",
+      "url": "https://www.decathlon.com.gr/en/p/356022-456814-md500-e-electric-scooter.html"
+    },
+    {
+      "label": "Decathlon — meilleure trottinette électrique (prix)",
+      "url": "https://www.decathlon.fr/vc/meilleure-trottinette-electrique"
+    },
+    {
+      "label": "Capital — test Decathlon Btwin MD500E",
+      "url": "https://www.capital.fr/conso/test-decathlon-btwin-md500e-la-trottinette-pas-chere-qui-veut-concurrencer-segway-et-xiaomi-1520341"
+    },
+    {
+      "label": "Frandroid — test Btwin MD500E",
+      "url": "https://www.frandroid.com/marques/decathlon/2614485_on-a-teste-la-nouvelle-trottinette-electrique-de-decathlon-endurante-pour-son-petit-prix-et-cest-bien-tout"
+    },
+    {
+      "label": "Rappel Conso — trottinettes SD500E et MD500E",
+      "url": "https://rappel.conso.gouv.fr/fiche-rappel/22670/interne"
+    },
+    {
+      "label": "Decathlon — rappels produits",
+      "url": "https://www.decathlon.fr/lp/i/rappels-produits"
+    }
+  ],
+  "video": {
+    "id": "bVSce7cDke4",
+    "title": "Test comparatif de 10 trottinettes électriques pas chères 2025 - TCS Suisse",
+    "channel": "TCS Schweiz-Suisse-Svizzero",
+    "uploadDate": "2025-04-08"
+  }
+}

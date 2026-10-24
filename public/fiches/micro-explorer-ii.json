@@ -1,0 +1,117 @@
+{
+ "displayName": "Micro Explorer II",
+ "metaTitle": "Micro Explorer II : fiche technique et entretien",
+ "metaDescription": "Micro Explorer II : 350 W (500 W max), batterie 36 V 7,8 Ah (280 Wh), 35 km en mode Éco, roues 200 mm, double suspension, frein tambour. Fiche et FAQ.",
+ "intro": [
+  "La Micro Explorer II reprend la recette de l'Explorer avec un moteur avant plus puissant : 350 W nominaux et 500 W au maximum. Micro Mobility annonce 35 km en mode Éco, 13,6 kg et 100 kg de charge maximale, avec des roues de 200 mm en caoutchouc et une suspension réglable à l'avant et à l'arrière.",
+  "Le revendeur suisse Microcorner détaille son freinage : récupération d'énergie à l'avant et tambour à l'arrière, plus un frein au pied. La batterie de 36 V et 7,8 Ah (280 Wh) se recharge en 3,5 heures. Micro Mobility ne commercialise plus ses trottinettes électriques en France depuis fin 2026 ; ses pièces détachées restent au catalogue."
+ ],
+ "specs": [
+  [
+   "Moteur",
+   "350 W nominaux, 500 W maximum"
+  ],
+  [
+   "Vitesse",
+   "25 km/h (20 km/h sur la version suisse)"
+  ],
+  [
+   "Autonomie annoncée",
+   "35 km en mode Éco"
+  ],
+  [
+   "Batterie",
+   "36 V, 7,8 Ah, 280 Wh"
+  ],
+  [
+   "Poids",
+   "13,6 kg selon Micro, 13 kg selon des revendeurs suisses"
+  ],
+  [
+   "Charge max",
+   "100 kg"
+  ],
+  [
+   "Roues",
+   "200 mm (8 pouces), caoutchouc"
+  ],
+  [
+   "Freins",
+   "Récupération d'énergie à l'avant, tambour à l'arrière au frein à main (Microcorner ; Galaxus indique un disque), frein au pied"
+  ],
+  [
+   "Suspension",
+   "Avant et arrière, amortisseurs réglables"
+  ],
+  [
+   "Pente max",
+   "16 % (Microcorner)"
+  ],
+  [
+   "Temps de charge",
+   "3,5 h"
+  ]
+ ],
+ "pros": [
+  "350 W nominaux, contre 250 W pour la première Explorer (Micro).",
+  "Amortisseurs réglables à l'avant et à l'arrière (Micro).",
+  "Frein à main avec sonnette intégrée, complété par deux autres systèmes (Micro).",
+  "Recharge en 3,5 heures (Micro)."
+ ],
+ "cons": [
+  "Batterie de 280 Wh : les 35 km annoncés supposent le mode Éco (Micro).",
+  "Pente maximale de 16 % selon Microcorner.",
+  "Roues en caoutchouc : moins d'amorti qu'un pneu gonflable, en partie compensé par les suspensions.",
+  "Commercialisation arrêtée en France fin 2026."
+ ],
+ "parts": [],
+ "care": [
+  "Branche-la au retour plutôt que d'attendre la batterie vide : une batterie lithium-ion vieillit mieux sans décharges profondes.",
+  "Surveille la bande de roulement de tes roues en caoutchouc : lisse, elle accroche beaucoup moins sur sol mouillé.",
+  "Quand le frein à main demande de serrer de plus en plus fort, rattrape la tension du câble du tambour arrière."
+ ],
+ "faq": [
+  {
+   "q": "La Micro Explorer II est-elle encore vendue neuve ?",
+   "a": "Plus en France : la marque a cessé fin 2026 d'y commercialiser ses trottinettes électriques. Ses pièces détachées restent proposées pour entretenir la tienne."
+  },
+  {
+   "q": "Quelle est l'autonomie de la Micro Explorer II ?",
+   "a": "35 km selon Micro, en mode Éco. En mode Sport, avec du relief ou un pilote lourd, attends-toi à moins."
+  },
+  {
+   "q": "Quelle différence entre l'Explorer et l'Explorer II ?",
+   "a": "L'Explorer II monte un moteur de 350 W nominaux au lieu de 250 W et annonce 35 km au lieu de 30. La batterie garde la même capacité de 280 Wh."
+  },
+  {
+   "q": "Pourquoi la version suisse est-elle limitée à 20 km/h ?",
+   "a": "La réglementation suisse plafonne ce type d'engin à 20 km/h. En France, la version vendue monte à 25 km/h, la limite légale."
+  },
+  {
+   "q": "Quels freins équipent la Micro Explorer II ?",
+   "a": "Une récupération d'énergie sur la roue avant, un tambour sur la roue arrière actionné par le frein à main, et un frein au pied."
+  }
+ ],
+ "sources": [
+  {
+   "label": "Micro Mobility — Micro Explorer II",
+   "url": "https://www.micro-mobility.com/en/products/micro-explorer-ii"
+  },
+  {
+   "label": "Micro (boutique suisse) — Micro Explorer II",
+   "url": "https://www.micro-scooter.com/ch_fr/micro-explorer-ii"
+  },
+  {
+   "label": "Microcorner — Micro Explorer II",
+   "url": "https://www.microcorner.ch/fr/micro-explorer-ii/"
+  },
+  {
+   "label": "Galaxus — Micro Explorer II",
+   "url": "https://www.galaxus.fr/fr/s3/product/micro-explorer-ii-20-kmh-35-km-350-w-trottinette-electrique-24378300"
+  },
+  {
+   "label": "Tec-Way — Micro Explorer 2",
+   "url": "https://tec-way.ch/shop/e-mobilite/trottinettes-electriques/e-micro/trottinette-electrique-micro-explorer-2-swiss-edition/"
+  }
+ ]
+}

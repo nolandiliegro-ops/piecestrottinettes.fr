@@ -1,0 +1,115 @@
+{
+ "displayName": "Hitway H6",
+ "metaTitle": "Hitway H6 : fiche technique, freins à tambour",
+ "metaDescription": "Hitway H6 : moteur 500 W (800 W en pointe), batterie 48 V 15,6 Ah, pneus gonflables 8,5 pouces, deux freins à tambour, IP54. Fiche et FAQ.",
+ "intro": [
+  "La Hitway H6 est une trottinette urbaine de 8,5 pouces à pneus gonflables. Hitway lui donne un moteur de 500 W nominaux, 800 W en pointe, une batterie de 48 V et 15,6 Ah, et deux freins à tambour, une solution qui demande peu d'entretien.",
+  "Hitway annonce 60 à 70 km d'autonomie, 23 kg, 120 kg de charge maximale, l'indice IP54 et 6 à 8 heures de recharge. Elle a des amortisseurs à ressort à l'avant et à l'arrière. Un manuel tiers parle de pneus de 10 pouces et de freins à disque, mais Hitway maintient 8,5 pouces et tambours."
+ ],
+ "specs": [
+  [
+   "Moteur",
+   "500 W nominaux, 800 W en pointe (selon Hitway)"
+  ],
+  [
+   "Vitesse",
+   "25 km/h (modes 10, 15 et 25 km/h)"
+  ],
+  [
+   "Autonomie annoncée",
+   "60 à 70 km"
+  ],
+  [
+   "Batterie",
+   "48 V, 15,6 Ah, environ 749 Wh (54,6 V en fin de charge)"
+  ],
+  [
+   "Poids",
+   "23 kg (26,5 kg emballée)"
+  ],
+  [
+   "Charge max",
+   "120 kg"
+  ],
+  [
+   "Roues",
+   "8,5 pouces gonflables"
+  ],
+  [
+   "Freins",
+   "Tambour avant et arrière (selon Hitway)"
+  ],
+  [
+   "Suspension",
+   "Ressorts avant et arrière"
+  ],
+  [
+   "Étanchéité",
+   "IP54"
+  ],
+  [
+   "Temps de charge",
+   "6 à 8 h"
+  ]
+ ],
+ "pros": [
+  "Freins à tambour aux deux roues, protégés de la pluie et de la boue (Hitway).",
+  "Double suspension et pneus gonflables pour amortir la ville (Hitway).",
+  "Batterie de 15,6 Ah généreuse pour une 8,5 pouces (Hitway)."
+ ],
+ "cons": [
+  "23 kg : lourde pour une trottinette de 8,5 pouces.",
+  "Fiches tierces contradictoires sur les pneus et les freins.",
+  "Freins à tambour moins mordants qu'un bon disque."
+ ],
+ "parts": [],
+ "care": [
+  "Règle les câbles de tes tambours dès que la garde du levier augmente : ils se détendent avec l'usure des garnitures.",
+  "Gonfle tes pneus de 8,5 pouces chaque semaine, un petit pneu sous-gonflé crève vite.",
+  "Malgré l'indice IP54, évite de laisser la H6 dehors sous la pluie et sèche-la avant de la recharger."
+ ],
+ "faq": [
+  {
+   "q": "Quelle taille de pneu pour la Hitway H6 ?",
+   "a": "Hitway indique des pneus gonflables de 8,5 pouces, sans la largeur. Les boutiques ne donnent pas toutes la même : lis la cote sur le flanc de ton pneu avant d'acheter."
+  },
+  {
+   "q": "Quels freins sur la Hitway H6 ?",
+   "a": "Deux freins à tambour, à l'avant et à l'arrière, selon Hitway. Ils s'entretiennent par simple réglage du câble."
+  },
+  {
+   "q": "Quelle autonomie pour la Hitway H6 ?",
+   "a": "Hitway annonce 60 à 70 km avec la batterie de 15,6 Ah. Compte moins en hiver ou avec beaucoup de montées."
+  },
+  {
+   "q": "La Hitway H6 respecte-t-elle la limite de vitesse ?",
+   "a": "Oui, Hitway la donne à 25 km/h au maximum en Europe, le plafond français sur la voie publique. Une version allemande homologuée est même limitée à 20 km/h."
+  },
+  {
+   "q": "Quel chargeur pour la Hitway H6 ?",
+   "a": "Un chargeur 48 V qui sort 54,6 V, comme celui d'origine de 2 A. Vérifie la forme de la prise avant d'en commander un."
+  }
+ ],
+ "sources": [
+  {
+   "label": "Hitway B2B — H6",
+   "url": "https://b2b.hitway.eu/product/h6-electric-scooters-2/"
+  },
+  {
+   "label": "Hitway — H6 et H6 ABE",
+   "url": "https://de.hitway.eu/en/products/h6"
+  },
+  {
+   "label": "Manuals+ — manuel Hitway H6",
+   "url": "https://manuals.plus/asin/B0DG8BYYJ6"
+  },
+  {
+   "label": "Manualslib — Hitway H6",
+   "url": "https://www.manualslib.fr/manual/942023/Hitway-H6.html"
+  },
+  {
+   "label": "E-Watts — pneu Hitway H6",
+   "url": "https://e-watts.fr/categorie-produit/pieces-detachees-trottinette-electrique/pneu-trottinette-electrique/pneu-hitway-h6"
+  }
+ ]
+}

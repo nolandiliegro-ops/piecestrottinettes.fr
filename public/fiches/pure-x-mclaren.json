@@ -1,0 +1,147 @@
+{
+  "displayName": "Pure x McLaren",
+  "metaTitle": "Pure x McLaren : fiche technique, autonomie et avis",
+  "metaDescription": "Pure x McLaren : édition spéciale de l'Advance+, 500 W, batterie 36 V 12 Ah (432 Wh), pneus 10 pouces tubeless, tambour avant, IP65. Tests et FAQ.",
+  "intro": [
+    "La Pure x McLaren est une édition spéciale née en 2024 de la collaboration entre Pure Electric et l'écurie McLaren. Mac4ever la décrit comme une Pure Advance+ habillée aux couleurs de McLaren : même conduite face à la route sur deux repose-pieds repliables, même direction stabilisée, même batterie de 36 V et 12 Ah (432 Wh).",
+    "Elle pèse 16,2 kg, roule sur des pneus tubeless de 10 pouces sans suspension et freine avec un tambour avant et le moteur arrière. Pure l'annonce désormais à 62,4 km d'autonomie, mesurés à 15 km/h ; Caradisiac n'a parcouru que 18,7 km par 4 °C avec un pilote de 90 kg."
+  ],
+  "specs": [
+    [
+      "Moteur",
+      "500 W nominaux ; 924 W en pointe sur les fiches Pure actuelles (710 W sur les fiches de lancement)"
+    ],
+    [
+      "Vitesse",
+      "25 km/h maximum, conforme à la limite de la voie publique"
+    ],
+    [
+      "Autonomie annoncée",
+      "62,4 km depuis le nouveau test Pure de l'été 2025 (50 km auparavant)"
+    ],
+    [
+      "Autonomie mesurée",
+      "18,7 km par 4 °C (Caradisiac, Journal du Geek) ; 44,5 km au Labo Fnac"
+    ],
+    [
+      "Batterie",
+      "36 V, 12 Ah, 432 Wh (42 V en fin de charge)"
+    ],
+    [
+      "Poids",
+      "16,2 kg (16,4 kg mesurés par Caradisiac)"
+    ],
+    [
+      "Charge max",
+      "120 kg"
+    ],
+    [
+      "Roues",
+      "10 pouces, tubeless, 36 psi"
+    ],
+    [
+      "Freins",
+      "Tambour avant + frein moteur régénératif arrière"
+    ],
+    [
+      "Suspension",
+      "Aucune ; direction stabilisée"
+    ],
+    [
+      "Étanchéité",
+      "IP65 selon Pure (IPX5 selon Caradisiac)"
+    ],
+    [
+      "Temps de charge",
+      "7 h 15 selon Pure, 7 h 40 mesurées au Labo Fnac"
+    ],
+    [
+      "Chargeur",
+      "42 V, 2 A"
+    ],
+    [
+      "Dimensions pliée",
+      "54 x 15 x 104 cm"
+    ]
+  ],
+  "pros": [
+    "Pieds côte à côte, face à la route : une posture jugée stable et rassurante (Caradisiac, Journal du Geek, Le Figaro).",
+    "Finition soignée, quasi premium (Caradisiac, Journal du Geek).",
+    "Pliée, elle ne fait que 15 cm de large (Pure, Caradisiac).",
+    "Elle a passé plusieurs semaines dehors sous la pluie et la neige sans panne (Caradisiac)."
+  ],
+  "cons": [
+    "Autonomie qui fond par temps froid : 18,7 km mesurés à 4 °C par Caradisiac.",
+    "Plus de 7 heures pour une recharge complète.",
+    "Aucune suspension : les pneus de 10 pouces ne suffisent pas à passer les trottoirs selon Mac4ever.",
+    "Écran et application jugés pauvres par le Journal du Geek."
+  ],
+  "parts": [],
+  "care": [
+    "Le tambour avant s'use lentement mais se dérègle : si le levier part au guidon, fais reprendre la tension du câble avant de rouler.",
+    "Garde tes pneus tubeless à 36 psi (2,5 bar) comme le demande Pure : sous-gonflés, ils s'usent plus vite et protègent moins la jante.",
+    "Par temps froid, range la trottinette à l'intérieur et recharge-la à température ambiante : la batterie en tirera plus de kilomètres."
+  ],
+  "price": {
+    "text": "Lancée à 999 €, la Pure x McLaren était affichée à 799 € début 2026 selon Mac4ever et Caradisiac. Prix susceptible de varier.",
+    "source": "mac4ever.com"
+  },
+  "faq": [
+    {
+      "q": "Quelle différence entre la Pure x McLaren et la Pure Advance+ ?",
+      "a": "Mac4ever explique que la Pure x McLaren reprend l'Advance+ : même moteur, même batterie de 12 Ah, même posture. Elle s'en distingue par sa livrée McLaren (papaye, noir ou chrome). Une version Pure x McLaren Flex existe à part, sur la base pliable Flex."
+    },
+    {
+      "q": "La Pure x McLaren peut-elle rouler plus vite que 25 km/h ?",
+      "a": "Non. Pure la limite d'usine à 25 km/h, la vitesse maximale autorisée pour une trottinette électrique en France. Inutile de chercher à la débrider : c'est interdit sur la voie publique."
+    },
+    {
+      "q": "Quelle autonomie réelle pour la Pure x McLaren ?",
+      "a": "Pure annonce 62,4 km à 15 km/h en mode Éco. En vrai, Caradisiac a obtenu 18,7 km par 4 °C à 25 km/h avec 90 kg, et le Labo Fnac 44,5 km. Ton poids, la température et le mode choisi font toute la différence."
+    },
+    {
+      "q": "Quelle taille de pneu pour la Pure x McLaren ?",
+      "a": "Pure indique des pneus tubeless de 10 pouces gonflés à 36 psi, sans préciser la cote complète. Lis l'inscription sur le flanc de ton pneu avant d'en commander un."
+    },
+    {
+      "q": "La Pure x McLaren a-t-elle des plaquettes de frein ?",
+      "a": "Non. Elle freine avec un tambour à l'avant et le moteur à l'arrière : il n'y a ni disque ni plaquettes à remplacer."
+    }
+  ],
+  "sources": [
+    {
+      "label": "Pure Electric — collection Pure x McLaren",
+      "url": "https://www.pureelectric.com/collections/pure-x-mclaren"
+    },
+    {
+      "label": "Pure Electric — Pure x McLaren Black (fiche technique)",
+      "url": "https://se.pureelectric.com/products/pure-x-mclaren-black-edition"
+    },
+    {
+      "label": "Caradisiac — essai Pure X McLaren",
+      "url": "https://www.caradisiac.com/nous-avons-essaye-la-mclaren-la-moins-chere-du-marche-220110.htm"
+    },
+    {
+      "label": "Journal du Geek — test Pure X McLaren",
+      "url": "https://www.journaldugeek.com/test/test-trottinette-electrique-pure-x-mclaren-la-mclaren-la-plus-accessible-se-conduit-debout/"
+    },
+    {
+      "label": "Labo Fnac — test Pure x McLaren",
+      "url": "https://leclaireur.fnac.com/test/595413-test-labo-de-la-pure-electric-pure-x-mclaren-une-trottinette-originale-et-legere-qui-a-presque-tout-pour-elle/"
+    },
+    {
+      "label": "Mac4ever — test Pure x McLaren",
+      "url": "https://www.mac4ever.com/mobilite/194407-test-de-la-trottinette-mclaren-pure-x-merite-t-elle-son-blason"
+    },
+    {
+      "label": "Halfords — Pure x McLaren Special Edition",
+      "url": "https://www.halfords.com/scooters/electric-scooters/pure-x-mclaren-special-edition-electric-scooter-black-297227.html"
+    }
+  ],
+  "video": {
+    "id": "9KwI-B0CDdc",
+    "title": "Pure x McLaren Papaya Electric Scooter Review: Wear a helmet",
+    "channel": "NAG",
+    "uploadDate": "2026-08-26"
+  }
+}

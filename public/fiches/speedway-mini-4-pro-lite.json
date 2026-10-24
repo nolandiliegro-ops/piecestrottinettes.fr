@@ -1,0 +1,146 @@
+{
+  "displayName": "Speedway Mini 4 Pro Lite",
+  "metaTitle": "Speedway Mini 4 Pro Lite : fiche technique 36 V",
+  "metaDescription": "Speedway Mini 4 Pro Lite : 350 W, batterie 36 V 10 Ah (360 Wh), 30 km annoncés, roues 200x50, frein tambour arrière, environ 16 kg. Fiche et pièces.",
+  "intro": [
+    "La Speedway Mini 4 Pro Lite est la version d'entrée de la Mini 4 Pro chez Minimotors : même châssis compact d'environ 16 kg et mêmes roues de 8 pouces en 200x50, mais une batterie de 36 V et 10 Ah (360 Wh) et un moteur de 350 W nominaux au lieu de 500 W.",
+    "La notice annonce 30 km d'autonomie et une recharge de 4 à 6 heures. Le freinage associe un tambour arrière et le frein moteur, et la suspension travaille à l'avant comme à l'arrière. Pour l'étanchéité, un revendeur indique IP54 et Que Choisir IP34."
+  ],
+  "specs": [
+    [
+      "Moteur",
+      "350 W nominaux"
+    ],
+    [
+      "Vitesse",
+      "25 km/h sur la voie publique ; 30 km/h annoncés, réservés à un terrain privé"
+    ],
+    [
+      "Autonomie annoncée",
+      "jusqu'à 30 km (notice)"
+    ],
+    [
+      "Batterie",
+      "36 V, 10 Ah, 360 Wh (42 V en fin de charge)"
+    ],
+    [
+      "Poids",
+      "environ 16 kg"
+    ],
+    [
+      "Charge max",
+      "100 kg selon la notice"
+    ],
+    [
+      "Roues",
+      "8 pouces, 200x50"
+    ],
+    [
+      "Freins",
+      "Tambour arrière + frein électronique"
+    ],
+    [
+      "Suspension",
+      "Avant et arrière (notice)"
+    ],
+    [
+      "Étanchéité",
+      "IP54 selon Trott'n Shop, IP34 selon Que Choisir"
+    ],
+    [
+      "Temps de charge",
+      "4 à 6 h"
+    ],
+    [
+      "Prise de charge",
+      "GX16 3 broches (Wattiz, Weebot)"
+    ]
+  ],
+  "pros": [
+    "Format compact d'environ 16 kg (notice).",
+    "Suspension à l'avant et à l'arrière (notice).",
+    "Recharge en 4 à 6 heures (notice)."
+  ],
+  "cons": [
+    "Autonomie modeste : 30 km annoncés (notice).",
+    "Un seul frein mécanique, à l'arrière (Trott'n Shop).",
+    "Étanchéité incertaine : IP34 selon Que Choisir.",
+    "350 W seulement, contre 500 W sur la Mini 4 Pro en 48 V."
+  ],
+  "parts": [
+    {
+      "label": "Chargeur",
+      "size": "36 V (sortie 42 V), prise GX16 3 broches",
+      "count": 2,
+      "to": "/piece/chargeur-36v-42v-2a-connecteur-gx16-3p",
+      "cta": "Chargeur 36 V"
+    },
+    {
+      "label": "Pneu avant",
+      "size": "200x50 gonflable",
+      "count": 1,
+      "to": "/piece/pneu-speedway-mini4-pro-200x50-94-renforce",
+      "cta": "Pneu avant 200x50"
+    },
+    {
+      "label": "Pneu plein avant",
+      "size": "200x50, jante 94 mm",
+      "count": 1,
+      "to": "/piece/pneu-plein-200x50-jante-94-mm",
+      "cta": "Pneu plein avant 200x50"
+    }
+  ],
+  "care": [
+    "Si tu ne roules pas pendant plusieurs semaines, stocke-la vers 50 % de charge : une petite batterie de 360 Wh laissée vide en hiver vieillit vite.",
+    "Nettoie et règle le câble du tambour arrière tous les deux mois : c'est ton seul frein mécanique.",
+    "Avec un indice IP34 selon Que Choisir, contourne les flaques et sèche le plateau après la pluie."
+  ],
+  "faq": [
+    {
+      "q": "Quelle différence entre la Mini 4 Pro Lite et la Mini 4 Pro ?",
+      "a": "La Lite se contente de 36 V, 10 Ah et 350 W pour 30 km annoncés. La Mini 4 Pro monte à 48 V, 13 ou 16 Ah et 500 W."
+    },
+    {
+      "q": "Quelle taille de pneu pour la Mini 4 Pro Lite ?",
+      "a": "Des pneus 200x50 (8 pouces). Les sources ne s'accordent pas sur le type d'origine selon la roue, gonflable ou plein : regarde le flanc de ton pneu et lis la cote avant de commander."
+    },
+    {
+      "q": "La Mini 4 Pro Lite est-elle étanche ?",
+      "a": "Pas vraiment. Un revendeur annonce IP54, Que Choisir indique IP34 : roule sous la pluie le moins possible."
+    },
+    {
+      "q": "Jusqu'à quelle vitesse peut-on rouler en ville ?",
+      "a": "25 km/h, c'est la règle sur la voie publique en France. Les 30 km/h de la fiche ne concernent qu'un terrain privé, et toucher au bridage pour la rue est interdit."
+    },
+    {
+      "q": "Combien de temps dure une recharge ?",
+      "a": "De 4 à 6 heures selon la notice."
+    }
+  ],
+  "sources": [
+    {
+      "label": "Notice Speedway Mini 4 Pro / Lite (Darty)",
+      "url": "https://fc.darty.com/notices/DOCUMENTATION/2019/11/4656989_NOTCOMP.pdf"
+    },
+    {
+      "label": "Wattiz — Speedway Mini 4 Pro Lite",
+      "url": "https://www.wattiz.fr/fr/s/645/speedway-mini-4-pro-lite"
+    },
+    {
+      "label": "Weebot — pièces Mini 4 Pro Lite",
+      "url": "https://www.wee-bot.com/collections/accessoires-et-pieces-detachees-pour-trottinette-electrique-speedway-mini-4-pro-lite"
+    },
+    {
+      "label": "Que Choisir — Speedway Mini Pro Lite",
+      "url": "https://www.quechoisir.org/comparatif-trottinettes-electriques-n86059/minimotors-speedway-mini-pro-lite-p244175/"
+    },
+    {
+      "label": "Trott'n Shop — Mini 4 Pro Lite",
+      "url": "https://www.trottnshop.com/produit/speedway-mini-4-pro-lite/"
+    },
+    {
+      "label": "Fnac — Mini 4 Pro Lite",
+      "url": "https://www.fnac.com/Trottinette-electrique-Minimotors-Speedway-Mini-4-Pro-Lite-350-W-Bleu/a15159483/w-4"
+    }
+  ]
+}

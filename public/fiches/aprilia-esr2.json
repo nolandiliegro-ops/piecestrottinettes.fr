@@ -1,0 +1,116 @@
+{
+ "displayName": "Aprilia eSR2",
+ "metaTitle": "Aprilia eSR2 : fiche technique et différences Evo",
+ "metaDescription": "Aprilia eSR2 : moteur 350 W, batterie 36 V 8 Ah (288 Wh), 25 km annoncés, double suspension, pneus 10 pouces à chambre à air. Fiche et différences avec l'Evo.",
+ "intro": [
+  "L'Aprilia eSR2 est la version 36 V de la gamme eSR2 de MT Distribution : moteur de 350 W, batterie de 8 Ah (288 Wh), suspensions avant et arrière et pneus de 10 pouces à chambre à air, d'après le manuel commun aux modèles Aprilia.",
+  "Le manuel annonce 25 km/h, jusqu'à 25 km d'autonomie, 16,5 kg et 100 kg de charge maximale. Elle freine par un tambour à l'avant et un frein électronique à l'arrière. Ne la confonds pas avec l'eSR2 Evo, qui passe en 48 V et 500 W pour 18,5 kg."
+ ],
+ "specs": [
+  [
+   "Moteur",
+   "350 W nominaux"
+  ],
+  [
+   "Vitesse",
+   "25 km/h sur la voie publique"
+  ],
+  [
+   "Autonomie annoncée",
+   "jusqu'à 25 km"
+  ],
+  [
+   "Batterie",
+   "36 V, 8 Ah, 288 Wh"
+  ],
+  [
+   "Poids",
+   "16,5 kg"
+  ],
+  [
+   "Charge max",
+   "100 kg"
+  ],
+  [
+   "Roues",
+   "10 pouces à chambre à air ; 10 x 2,125 selon les boutiques de pièces"
+  ],
+  [
+   "Freins",
+   "Tambour avant + électronique arrière"
+  ],
+  [
+   "Suspension",
+   "Avant et arrière"
+  ],
+  [
+   "Étanchéité",
+   "IPX4"
+  ],
+  [
+   "Charge",
+   "chargeur 42 V 1,5 A ; 5 à 6 h"
+  ]
+ ],
+ "pros": [
+  "Suspensions avant et arrière sur une trottinette de 16,5 kg (manuel Aprilia).",
+  "Frein à tambour avant, peu exigeant en entretien (manuel Aprilia).",
+  "Pneus et chambres en 10 x 2,125 faciles à trouver (Monsieur Trottinettes)."
+ ],
+ "cons": [
+  "Batterie de 288 Wh : 25 km annoncés seulement.",
+  "Moteur de 350 W, à la peine dans les fortes pentes.",
+  "IPX4 : évite les grosses averses.",
+  "Facile à confondre avec l'eSR2 Evo, qui n'utilise pas le même chargeur."
+ ],
+ "parts": [],
+ "care": [
+  "Règle le câble du tambour avant dès que la course du levier augmente : un tambour mal réglé freine mal sans prévenir.",
+  "Gonfle tes pneus à chambre à air à la pression gravée sur leur flanc et contrôle-la chaque semaine.",
+  "Utilise un chargeur de 42 V uniquement : un chargeur d'eSR2 Evo (54,6 V) endommagerait ta batterie de 36 V."
+ ],
+ "faq": [
+  {
+   "q": "Quelle différence entre l'Aprilia eSR2 et l'eSR2 Evo ?",
+   "a": "L'eSR2 tourne en 36 V avec 350 W et 288 Wh. L'Evo passe en 48 V, 500 W et 691 Wh, pèse 2 kg de plus et utilise un chargeur de 54,6 V."
+  },
+  {
+   "q": "Quelle taille de pneu pour l'Aprilia eSR2 ?",
+   "a": "Des pneus de 10 pouces à chambre à air, vendus en 10 x 2,125 par les boutiques de pièces. Le diamètre de jante varie selon les fiches : lis la cote complète sur le flanc de ton pneu avant de commander."
+  },
+  {
+   "q": "Quel chargeur pour l'Aprilia eSR2 ?",
+   "a": "Le manuel indique un chargeur de 42 V et 1,5 A pour l'eSR2. N'utilise jamais celui d'une eSR2 Evo, qui sort 54,6 V."
+  },
+  {
+   "q": "L'Aprilia eSR2 est-elle autorisée en ville ?",
+   "a": "Sa vitesse maximale de 25 km/h correspond pile au plafond que la loi française impose aux trottinettes électriques. Tu peux donc circuler sur les pistes cyclables et la chaussée autorisées."
+  },
+  {
+   "q": "L'Aprilia eSR2 a-t-elle des suspensions ?",
+   "a": "Oui, à l'avant et à l'arrière selon le manuel Aprilia, ce qui compense en partie ses pneus de 10 pouces assez étroits."
+  }
+ ],
+ "sources": [
+  {
+   "label": "Manuel Aprilia eSR2 / eSR2 Evo / eSRZ (device.report)",
+   "url": "https://device.report/manual/5208971"
+  },
+  {
+   "label": "Notice Facile — manuel Aprilia",
+   "url": "https://www.notice-facile.com/notice/590870/aprilia+esrz"
+  },
+  {
+   "label": "Manuel Aprilia eSR2 (PDF)",
+   "url": "https://e-trotineta.ro/wp-content/uploads/2022/11/Manual-Trotineta-electrica-Aprilia-eSR2.pdf"
+  },
+  {
+   "label": "Monsieur Trottinettes — Aprilia ESR2",
+   "url": "https://monsieurtrottinettes.be/fr/89-aprilia-esr2"
+  },
+  {
+   "label": "E-Watts — pneu Aprilia eSR2 / eSR2-Evo",
+   "url": "https://e-watts.fr/categorie-produit/pieces-detachees-trottinette-electrique/pneu-trottinette-electrique/pneu-aprilia-esr2-esr2-evo"
+  }
+ ]
+}

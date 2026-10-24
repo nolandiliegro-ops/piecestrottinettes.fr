@@ -1,0 +1,148 @@
+{
+ "displayName": "Jeep Urban Camou",
+ "metaTitle": "Jeep 2xe Urban Camou : fiche technique et pièces",
+ "metaDescription": "Jeep 2xe Urban Camou : 500 W (700 W en pointe), 48 V 9,6 Ah (461 Wh), pneus 10x2.50-6.5 tubeless, double suspension, charge 5 h. Pièces et FAQ.",
+ "intro": [
+  "La Jeep 2xe Urban Camou est la plus puissante des deux trottinettes Jeep à suspension. Elle passe en 48 V avec une batterie de 9,6 Ah (461 Wh) et un moteur de 500 W qui atteint 700 W en pointe, d'après Darty et Euronics. Elle grimpe jusqu'à 26 % de pente.",
+  "Elle garde le cadre en magnésium, la double suspension, les pneus tubeless de 10 pouces et le freinage électronique avant avec disque arrière de l'Adventurer. Comptez 45 km d'autonomie annoncée, 5 heures de recharge, 19 kg et 100 kg de charge maximale, avec clignotants intégrés."
+ ],
+ "specs": [
+  [
+   "Moteur",
+   "500 W nominaux, 700 W en pointe, 23 Nm"
+  ],
+  [
+   "Vitesse",
+   "25 km/h maximum, conforme à la limite de la voie publique"
+  ],
+  [
+   "Autonomie annoncée",
+   "45 km (50 km sur certaines fiches)"
+  ],
+  [
+   "Batterie",
+   "48 V, 9,6 Ah, 461 Wh (54,6 V en fin de charge)"
+  ],
+  [
+   "Poids",
+   "19 kg (19,5 kg sur certaines fiches)"
+  ],
+  [
+   "Charge max",
+   "100 kg"
+  ],
+  [
+   "Roues",
+   "10 pouces, tubeless 10x2.50-6.5"
+  ],
+  [
+   "Freins",
+   "Électronique avant + disque arrière, récupération d'énergie (KERS)"
+  ],
+  [
+   "Suspension",
+   "Avant et arrière"
+  ],
+  [
+   "Étanchéité",
+   "IPX4"
+  ],
+  [
+   "Temps de charge",
+   "5 h avec le chargeur 54,6 V 2 A"
+  ],
+  [
+   "Pente max",
+   "26 %"
+  ]
+ ],
+ "pros": [
+  "48 V et 700 W en pointe : elle avale les côtes jusqu'à 26 % (Darty, Euronics).",
+  "Recharge en 5 heures, plus rapide que l'Adventurer (Darty).",
+  "Double suspension et pneus tubeless pour les rues dégradées (Cdiscount, Euronics).",
+  "Clignotants intégrés et application Bluetooth (Euronics)."
+ ],
+ "cons": [
+  "Charge maximale de 100 kg seulement.",
+  "Indice IPX4 : elle supporte les éclaboussures, pas les grosses averses.",
+  "Un acheteur Krëfel signale un garde-boue arrière fendu après une petite bosse.",
+  "19 kg à porter dès qu'il y a des marches."
+ ],
+ "parts": [
+  {
+   "label": "Pneu",
+   "size": "10x2.50-6.5 / 60/70-6.5 tubeless (10 pouces)",
+   "count": 14,
+   "to": "/piece/pneu-tubeless-60-70-6-5-wanda",
+   "cta": "Pneus 10x2.50-6.5"
+  },
+  {
+   "label": "Chambre à air",
+   "size": "10x2.50, valve droite ou coudée",
+   "count": 6,
+   "to": "/piece/chambre-a-air-10x250-valve-droite",
+   "cta": "Chambres à air 10x2.50"
+  }
+ ],
+ "care": [
+  "Vérifie la pression des pneus tubeless toutes les semaines : une fuite lente sur jante 6,5 pouces passe souvent inaperçue.",
+  "Surveille les garde-boue et leurs fixations après chaque choc : ils sont exposés sur une trottinette à suspension.",
+  "Avec un indice IPX4, gare-la à l'abri et essuie le connecteur de charge avant de brancher si elle a pris la pluie."
+ ],
+ "price": {
+  "text": "Prix affiché par Bruno.it : 899,99 € (prix conseillé 999,99 €). Prix susceptible de varier.",
+  "source": "bruno.it"
+ },
+ "faq": [
+  {
+   "q": "Quelle taille de pneu pour la Jeep Urban Camou ?",
+   "a": "Des pneus tubeless de 10 pouces en 10x2.50-6.5 (60/70-6.5), comme sur l'Adventurer. E-Watts et Happytec vendent des pneus de remplacement dans cette cote."
+  },
+  {
+   "q": "Quelle vitesse maximale pour la Jeep Urban Camou ?",
+   "a": "25 km/h. Malgré ses 700 W en pointe, Jeep la règle sur la vitesse maximale qu'autorise le Code de la route pour une trottinette électrique."
+  },
+  {
+   "q": "Quel chargeur pour la Jeep Urban Camou ?",
+   "a": "Un chargeur 48 V, soit 54,6 V en sortie, de 2 A selon Euronics. Compare la prise de ton chargeur d'origine avant d'en commander un autre."
+  },
+  {
+   "q": "Peut-on monter une chambre à air dans les pneus de l'Urban Camou ?",
+   "a": "Oui, une chambre à air 10x2.50 se monte dans le pneu tubeless si ta jante ne tient plus l'air. Prends une valve adaptée au trou de ta jante."
+  },
+  {
+   "q": "Quelle autonomie pour la Jeep Urban Camou ?",
+   "a": "Jeep annonce jusqu'à 45 km, certaines fiches 50 km. Ton poids, le relief et le mode choisi font baisser ce chiffre en usage réel."
+  }
+ ],
+ "sources": [
+  {
+   "label": "Darty — Jeep Urban Camou",
+   "url": "https://www.darty.com/nav/achat/sports_loisirs/glisse_urbaine/trottinette_electrique/jeep_troticamoucl.html"
+  },
+  {
+   "label": "Euronics — Jeep E-Scooter 2xe Urban Camou",
+   "url": "https://www.euronics.it/mobilita-elettrica/veicoli-elettrici/monopattini-elettrici/jeep---e-scooter-2xe-urban-camou-(with-turn-signals)/222010023.html"
+  },
+  {
+   "label": "Cdiscount — Jeep 2XE Camou",
+   "url": "https://www.cdiscount.com/le-sport/mobilite-urbaine/trottinette-electrique-jeep-2xe-camou-10-25-km-h/f-1214801-jee8052679458684.html"
+  },
+  {
+   "label": "Krëfel — Jeep Urban Camou",
+   "url": "https://www.krefel.be/fr/p/43001032-elektrische-step-urban-camou"
+  },
+  {
+   "label": "E-Watts — pneu Jeep Urban Camou",
+   "url": "https://e-watts.fr/categorie-produit/pieces-detachees-trottinette-electrique/pneu-trottinette-electrique/pneu-jeep-urban-camou"
+  },
+  {
+   "label": "Happytec — fiche technique Jeep 2XE Urban Camou",
+   "url": "https://shop.happytec.it/fr/jeep-2xe-urban-camou-scheda-tecnica/"
+  },
+  {
+   "label": "Bruno.it — Jeep 2xe Urban Camou",
+   "url": "https://www.bruno.it/auto-droni-e-veicoli-elettrici/mobilita-elettrica/monopattini-elettrici/manufacturer--jeep/"
+  }
+ ]
+}

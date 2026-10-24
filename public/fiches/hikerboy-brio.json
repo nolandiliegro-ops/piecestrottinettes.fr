@@ -1,0 +1,123 @@
+{
+  "displayName": "Hikerboy Brio",
+  "metaTitle": "Hikerboy Brio : fiche technique, avis et entretien",
+  "metaDescription": "Hikerboy Brio : moteur 350 W, batterie 36 V 7,8 Ah, roues 10 pouces à chambre à air, tambour avant et disque arrière, 13 kg. Fiche, limites et FAQ.",
+  "intro": [
+    "La Hikerboy Brio est la petite urbaine de la gamme Hikerboy : un moteur arrière de 350 W, une batterie de 36 V et 7,8 Ah, des roues de 10 pouces avec chambre à air et un poids d'environ 13 kg, selon les fiches d'AMHMA et de Monecobike.",
+    "La vitesse est bridée à 25 km/h et Hikerboy annonce jusqu'à 30 km d'autonomie. Mobilityurban, qui la présente en vidéo, parle plutôt de 20 à 25 km par charge. Elle freine avec un tambour à l'avant et un disque à l'arrière, commandés par deux leviers au guidon."
+  ],
+  "specs": [
+    [
+      "Moteur",
+      "350 W nominaux, moteur arrière ; puissance de pointe non communiquée"
+    ],
+    [
+      "Vitesse",
+      "25 km/h"
+    ],
+    [
+      "Autonomie annoncée",
+      "jusqu'à 30 km (20 à 25 km selon Mobilityurban)"
+    ],
+    [
+      "Batterie",
+      "36 V, 7,8 Ah, soit environ 281 Wh (42 V en fin de charge)"
+    ],
+    [
+      "Poids",
+      "environ 13 kg"
+    ],
+    [
+      "Charge max",
+      "100 kg"
+    ],
+    [
+      "Roues",
+      "10 pouces, pneus gonflables avec chambre à air"
+    ],
+    [
+      "Freins",
+      "tambour avant + disque arrière"
+    ],
+    [
+      "Suspension",
+      "aucune selon Freemoov ; le confort vient des pneus à air"
+    ],
+    [
+      "Étanchéité",
+      "IP54 (selon AMHMA)"
+    ],
+    [
+      "Temps de charge",
+      "4 à 6 h (selon AMHMA)"
+    ]
+  ],
+  "pros": [
+    "Environ 13 kg : l'une des plus légères de la gamme Hikerboy (Freemoov).",
+    "Pneus de 10 pouces à air, plus confortables que de petites roues pleines (Mobilityurban).",
+    "Deux freins mécaniques, tambour devant et disque derrière (AMHMA).",
+    "Régulateur de vitesse et application pour verrouiller la trottinette (Mobilityurban)."
+  ],
+  "cons": [
+    "Batterie de 281 Wh : l'autonomie réelle tourne plutôt autour de 20 à 25 km.",
+    "Pas de suspension, les chaussées dégradées se ressentent dans le guidon.",
+    "Chambres à air : une crevaison reste possible, contrairement à un pneu plein.",
+    "Moteur de 350 W prévu pour la ville, pas pour les fortes pentes."
+  ],
+  "parts": [],
+  "care": [
+    "Gonfle tes pneus à la pression indiquée sur le flanc au moins une fois par semaine : une chambre à air sous-gonflée pince et crève.",
+    "Le tambour avant se règle au câble : si le levier vient presque toucher la poignée, retends-le avant de rouler.",
+    "Recharge ta Brio après chaque trajet plutôt que de la laisser à plat : une petite batterie supporte mal les décharges profondes."
+  ],
+  "price": {
+    "text": "Prix constaté chez AMHMA et Monecobike : 469 €. Prix susceptible de varier.",
+    "source": "amhma.fr, monecobike.com"
+  },
+  "faq": [
+    {
+      "q": "Quelle taille de pneu pour la Hikerboy Brio ?",
+      "a": "Des pneus de 10 pouces à chambre à air, devant et derrière. Les cotes de 10 pouces sont nombreuses : avant de commander, lis l'inscription moulée sur le flanc de ton pneu."
+    },
+    {
+      "q": "Quelle autonomie réelle pour la Hikerboy Brio ?",
+      "a": "Hikerboy annonce 30 km. Mobilityurban, qui la vend, parle de 20 à 25 km : compte sur cette fourchette si tu pèses plus de 75 kg ou si ton trajet monte."
+    },
+    {
+      "q": "La Hikerboy Brio a-t-elle des suspensions ?",
+      "a": "Non. Ce sont ses pneus gonflables de 10 pouces qui filtrent les petites irrégularités."
+    },
+    {
+      "q": "Peut-on rouler plus vite que 25 km/h avec la Brio ?",
+      "a": "Non : elle est bridée à 25 km/h, ce qui correspond au plafond fixé en France pour une trottinette électrique sur la voie publique."
+    },
+    {
+      "q": "Combien de temps pour recharger la Hikerboy Brio ?",
+      "a": "Entre 4 et 6 heures selon la fiche d'AMHMA, avec le chargeur fourni."
+    }
+  ],
+  "sources": [
+    {
+      "label": "AMHMA — Hikerboy Brio 36V 7,8Ah",
+      "url": "https://www.amhma.fr/store/HIKERBOY-Brio-36V-7-8Ah-p769352063"
+    },
+    {
+      "label": "Monecobike — Hikerboy Brio",
+      "url": "https://monecobike.com/produit/hikerboy-brio/"
+    },
+    {
+      "label": "Freemoov — gamme Hikerboy",
+      "url": "https://www.freemoov.com/shop/category/trottinette-electrique-hikerboy-115"
+    },
+    {
+      "label": "YouTube — Hikerboy Brio (Mobilityurban)",
+      "url": "https://www.youtube.com/watch?v=sAsI7zBtHtI"
+    }
+  ],
+  "video": {
+    "id": "sAsI7zBtHtI",
+    "title": "HIKERBOY BRIO : LA TROTTINETTE ÉLECTRIQUE PAS CHÈRE À GRANDES ROUES SUISSE À MOINS DE 500€ !",
+    "channel": "Mobilityurban",
+    "uploadDate": "2023-02-27"
+  }
+}

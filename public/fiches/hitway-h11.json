@@ -1,0 +1,128 @@
+{
+ "displayName": "Hitway H11",
+ "metaTitle": "Hitway H11 : fiche technique bimoteur 52 V",
+ "metaDescription": "Hitway H11 : 2 x 500 W (1 800 W en pointe chacun), batterie 52 V 23,4 Ah, pneus tubeless 10 x 3, double suspension, 33,5 kg. Fiche et FAQ.",
+ "intro": [
+  "La Hitway H11 est la bimoteur tout-terrain de la marque chinoise Hitway, vendue en Europe sur sa boutique et chez des enseignes comme OBI. Hitway annonce deux moteurs de 500 W nominaux, 1 800 W en pointe chacun, et une batterie de 52 V et 23,4 Ah (1 217 Wh).",
+  "Elle roule sur des pneus tubeless de 10 × 3 pouces, avec deux bras oscillants suspendus, pour 33,5 kg. Hitway promet 90 à 100 km ; les tests allemands mesurent 70 à 80 km. Deux prises de charge permettent de la recharger en environ 6 heures avec les deux chargeurs fournis."
+ ],
+ "specs": [
+  [
+   "Moteurs",
+   "2 × 500 W nominaux ; 2 × 1 800 W en pointe selon Hitway (2 × 1 600 W sur des versions plus anciennes)"
+  ],
+  [
+   "Vitesse",
+   "25 km/h sur la voie publique ; 50 à 60 km/h annoncés selon les pages Hitway, réservés à un terrain privé"
+  ],
+  [
+   "Autonomie annoncée",
+   "90 à 100 km (Hitway) ; jusqu'à 130 km chez OBI"
+  ],
+  [
+   "Autonomie mesurée",
+   "70 à 80 km (Henntech) ; 78 km (Scootervergleich) ; 76 km dans un autre comparatif"
+  ],
+  [
+   "Batterie",
+   "52 V, 23,4 Ah, 1 217 Wh (58,8 V en fin de charge)"
+  ],
+  [
+   "Poids",
+   "33,5 kg selon Hitway et les tests (34 kg chez OBI)"
+  ],
+  [
+   "Charge max",
+   "120 kg selon le manuel, 170 kg sur la version homologuée allemande"
+  ],
+  [
+   "Roues",
+   "10 × 3 pouces tubeless"
+  ],
+  [
+   "Freins",
+   "Disque avant et arrière"
+  ],
+  [
+   "Suspension",
+   "Bras oscillants avec amortisseurs avant et arrière, réglables"
+  ],
+  [
+   "Étanchéité",
+   "IP54"
+  ],
+  [
+   "Temps de charge",
+   "environ 6 h avec deux chargeurs sur les deux prises"
+  ]
+ ],
+ "pros": [
+  "Grosse capacité en côte grâce aux deux moteurs (Scootervergleich, Henntech).",
+  "Autonomie mesurée de 70 à 80 km, proche de l'annonce (Henntech).",
+  "Recharge en 6 h avec deux chargeurs (Hitway)."
+ ],
+ "cons": [
+  "33,5 kg : à ranger de plain-pied (Henntech).",
+  "Accélérateur nerveux et suspension ferme (Scooterhelden).",
+  "Application jugée pauvre (Scootervergleich).",
+  "Vitesse et puissance de pointe annoncées différemment selon les pages Hitway."
+ ],
+ "parts": [],
+ "care": [
+  "Branche les deux chargeurs en même temps pour profiter des 6 heures annoncées ; avec un seul, prévois le double.",
+  "Tes pneus tubeless se réparent souvent avec une mèche : garde un kit dans ton sac plutôt que de rentrer à pied.",
+  "Règle la précharge des amortisseurs selon ton poids : trop dure, la suspension rebondit sur les pavés."
+ ],
+ "faq": [
+  {
+   "q": "Quelle autonomie réelle pour la Hitway H11 ?",
+   "a": "Trois tests allemands mesurent entre 70 et 80 km avec un pilote d'environ 80 kg. Les 90 à 100 km de Hitway restent atteignables en roulant doucement sur un seul moteur."
+  },
+  {
+   "q": "Quelle taille de pneu pour la Hitway H11 ?",
+   "a": "Hitway indique du 10 × 3 pouces tubeless. Le diamètre de jante n'est pas précisé : relève la cote complète sur le flanc de ton pneu avant d'en acheter un."
+  },
+  {
+   "q": "Combien de temps pour charger la Hitway H11 ?",
+   "a": "Environ 6 heures avec les deux chargeurs branchés sur les deux prises. Avec un seul chargeur, compte à peu près deux fois plus."
+  },
+  {
+   "q": "La Hitway H11 peut-elle rouler à 60 km/h en France ?",
+   "a": "Non. Hitway affiche cette vitesse déverrouillée, mais en France tu restes à 25 km/h dès que tu es sur la voie publique. Passé ce seuil, c'est uniquement sur un terrain privé."
+  },
+  {
+   "q": "Combien pèse la Hitway H11 ?",
+   "a": "33,5 kg selon Hitway et les tests. Elle se plie, mais se porte difficilement."
+  }
+ ],
+ "sources": [
+  {
+   "label": "Hitway — H11",
+   "url": "https://hitway.eu/products/h11-e-scooter"
+  },
+  {
+   "label": "Hitway — H11 ABE",
+   "url": "https://de.hitway.eu/en/products/h11-abe"
+  },
+  {
+   "label": "OBI — Hitway H11",
+   "url": "https://www.obi.de/p/2191177204549/hitway-h11-e-scooter-500-w-motor-spitzenleistung-1800-w-23-4-ah-akku-reichweite-130-km-10-zoll-hohlkammerreifen-mit-app-und-nfc"
+  },
+  {
+   "label": "Henntech — Hitway H11 Test",
+   "url": "https://henntech.de/2026/09/28/hitway-h11-test/"
+  },
+  {
+   "label": "Scootervergleich — Hitway H11 Test",
+   "url": "https://www.scootervergleich.net/test/e-scooter/hitway-h11/"
+  },
+  {
+   "label": "Scooterhelden — Hitway H11 im Härtetest",
+   "url": "https://scooterhelden.de/2025/10/15/hitway-h11-im-haertetest-power-preis-und-das-grosse-aber/"
+  },
+  {
+   "label": "Manuals+ — manuel Hitway H11",
+   "url": "https://manuals.plus/asin/B0G52S59F7.pdf"
+  }
+ ]
+}

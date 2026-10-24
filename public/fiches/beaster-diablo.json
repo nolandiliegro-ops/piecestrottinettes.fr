@@ -1,0 +1,109 @@
+{
+ "displayName": "Beaster Diablo",
+ "metaTitle": "Beaster Diablo : fiche technique 1 000 W 60 V",
+ "metaDescription": "Beaster Diablo : moteur 1 000 W, batterie 60 V 20,8 Ah, 65 km annoncés, pneus 10 x 3 pouces, freins hydrauliques, 30 kg. Différences avec le Diablo PRO.",
+ "intro": [
+  "La Beaster Diablo est le modèle d'entrée de la famille Diablo : un moteur de 1 000 W, une batterie de 60 V et 20,8 Ah (environ 1 250 Wh), des pneus de 10 x 3 pouces et un cadre en aluminium 6061, selon le manuel distribué par Krinona et la fiche Houstera.",
+  "Elle pèse 30 kg, accepte 120 kg, freine avec des freins hydrauliques et se recharge en 10 à 12 heures. Les revendeurs annoncent 55 à 60 km/h et 65 km d'autonomie, et la classent parmi les modèles tout-terrain. Le Diablo PRO, lui, passe à deux moteurs de 1 200 W et 24 Ah."
+ ],
+ "specs": [
+  [
+   "Moteur",
+   "1 000 W"
+  ],
+  [
+   "Vitesse",
+   "55 à 60 km/h annoncés, réservés à un terrain privé ; 25 km/h maximum sur la voie publique"
+  ],
+  [
+   "Autonomie annoncée",
+   "jusqu'à 65 km"
+  ],
+  [
+   "Batterie",
+   "60 V, 20,8 Ah (environ 1 248 Wh par calcul)"
+  ],
+  [
+   "Poids",
+   "30 kg"
+  ],
+  [
+   "Charge max",
+   "120 kg"
+  ],
+  [
+   "Roues",
+   "10 x 3 pouces (25,4 x 7,6 cm)"
+  ],
+  [
+   "Freins",
+   "Hydrauliques"
+  ],
+  [
+   "Pente max",
+   "20°"
+  ],
+  [
+   "Temps de charge",
+   "10 à 12 h"
+  ]
+ ],
+ "pros": [
+  "Grosse batterie de 60 V pour 65 km annoncés (Houstera).",
+  "Freins hydrauliques (manuel Beaster).",
+  "Pneus larges de 10 x 3 pouces (manuel Beaster).",
+  "Cadre en aluminium 6061 (Houstera)."
+ ],
+ "cons": [
+  "30 kg : à rouler, pas à porter.",
+  "Recharge de 10 à 12 heures.",
+  "Un seul moteur et 20° de pente maximum, loin du Diablo PRO.",
+  "Suspension et étanchéité non communiquées."
+ ],
+ "parts": [],
+ "care": [
+  "Vérifie l'usure des plaquettes de tes freins hydrauliques tous les 500 km environ : au-delà de 55 km/h annoncés, un freinage dégradé ne pardonne pas.",
+  "Ne charge pas la batterie sous 5 °C ni au-dessus de 45 °C, comme le demande le manuel Beaster.",
+  "Le manuel recommande une visite d'entretien tous les six mois : profites-en pour faire contrôler le serrage des axes."
+ ],
+ "price": {
+  "text": "Prix affiché par Houstera (Lituanie) : 1 190 € au lieu de 1 490 €. Prix susceptible de varier.",
+  "source": "houstera.lt"
+ },
+ "faq": [
+  {
+   "q": "Quelle différence entre la Beaster Diablo et le Diablo PRO ?",
+   "a": "Le Diablo a un moteur de 1 000 W et 20,8 Ah ; le PRO passe à deux moteurs de 1 200 W, 24 Ah, 80 km annoncés et 33 kg. Le manuel Beaster les distingue clairement."
+  },
+  {
+   "q": "Quelle taille de pneu pour la Beaster Diablo ?",
+   "a": "Du 10 x 3 pouces selon le manuel et Houstera, sans précision sur la jante ni sur la présence d'une chambre à air. Lis la cote complète sur ton pneu avant de commander."
+  },
+  {
+   "q": "Peut-on rouler avec la Beaster Diablo en ville ?",
+   "a": "Pas à sa vitesse annoncée : 55 à 60 km/h dépassent largement les 25 km/h permis aux trottinettes en France. Ces performances ne s'entendent que sur un terrain privé."
+  },
+  {
+   "q": "Combien de temps pour recharger la Beaster Diablo ?",
+   "a": "Compte 10 à 12 heures pour une charge complète, d'après le manuel. Laisse la batterie revenir à température ambiante avant de brancher."
+  }
+ ],
+ "sources": [
+  {
+   "label": "Manuel Beaster Diablo / Diablo PRO (Krinona, PDF)",
+   "url": "http://instrukcijos.krinona.lt/KLIENTAMS%20INSTRUKCIJOS/Beaster%20Scooter/BSDIABLO%20elektriniai%20paspirtukai.pdf"
+  },
+  {
+   "label": "Houstera — Beaster Diablo BSDIABLOS",
+   "url": "https://houstera.lt/produktas/elektrinis-paspirtukas-beaster-scooter-diablo-bsdiablos-1000-w-60-v-20-8-ah-juodas-sidabrinis/"
+  },
+  {
+   "label": "Varle — trottinettes Beaster",
+   "url": "https://www.varle.lt/elektriniai-paspirtukai/?f.s-gamintojas=Beaster"
+  },
+  {
+   "label": "Erasportas — gamme Beaster",
+   "url": "https://www.erasportas.lt/1250-beaster?page=2"
+  }
+ ]
+}

@@ -1,0 +1,105 @@
+{
+ "displayName": "Hikerboy Curtis Dual Pro",
+ "metaTitle": "Hikerboy Curtis Dual Pro : fiche technique et freins",
+ "metaDescription": "Hikerboy Curtis Dual Pro : 2 × 250 W (1 000 W en pointe), batterie 48 V 10,4 Ah, deux freins à disque, 21 kg, IPX5. Fiche, limites et FAQ.",
+ "intro": [
+  "La Hikerboy Curtis Dual Pro garde la base de la Curtis Dual, deux moteurs de 250 W et une batterie de 48 V et 10,4 Ah, mais ajoute un deuxième frein à disque mécanique à l'avant. C'est la principale différence relevée par KissMyWheels.",
+  "Le manuel Hikerboy lui donne 21 kg et 1 000 W en pointe. Wheelyshop ajoute un contrôle de traction, une fourche à deux ressorts, des clignotants et la compatibilité avec le réseau Localiser d'Apple. Hikerboy annonce 40 km d'autonomie et 25 km/h."
+ ],
+ "specs": [
+  [
+   "Moteurs",
+   "2 × 250 W nominaux (500 W) ; 1 000 W en pointe"
+  ],
+  [
+   "Vitesse",
+   "25 km/h sur la voie publique ; 35 km/h annoncés par KissMyWheels pour un terrain privé"
+  ],
+  [
+   "Autonomie annoncée",
+   "jusqu'à 40 km"
+  ],
+  [
+   "Batterie",
+   "48 V, 10,4 Ah, soit 499 Wh (54,6 V en fin de charge)"
+  ],
+  [
+   "Poids",
+   "21 kg"
+  ],
+  [
+   "Charge max",
+   "100 kg (recommandée selon Wheelyshop)"
+  ],
+  [
+   "Roues",
+   "10 pouces, pneus gonflables ; 10 × 2,125 selon Wheelyshop"
+  ],
+  [
+   "Freins",
+   "disque avant + disque arrière (mécaniques) + E-ABS"
+  ],
+  [
+   "Suspension",
+   "avant à deux ressorts, pas de suspension arrière"
+  ],
+  [
+   "Étanchéité",
+   "IPX5 (selon Wheelyshop)"
+  ],
+  [
+   "Temps de charge",
+   "environ 5,5 h (selon KissMyWheels)"
+  ]
+ ],
+ "pros": [
+  "Deux freins à disque mécaniques, là où la Curtis Dual n'en a qu'un (KissMyWheels).",
+  "Contrôle de traction et passage d'un à deux moteurs (Wheelyshop).",
+  "Pente maximale annoncée de 25 % (KissMyWheels).",
+  "Compatible avec le réseau Localiser d'Apple pour la retrouver (Wheelyshop)."
+ ],
+ "cons": [
+  "21 kg, la plus lourde des Curtis.",
+  "Pas de suspension arrière (Wheelyshop).",
+  "Charge maximale recommandée de 100 kg.",
+  "Aucun test indépendant publié en français à ce jour."
+ ],
+ "parts": [],
+ "care": [
+  "Deux disques mécaniques, deux câbles : règle-les ensemble pour que l'avant et l'arrière mordent au même moment.",
+  "Nettoie tes disques au dégraissant frein si ça siffle, jamais avec un lubrifiant ou un nettoyant pour chaîne.",
+  "Contrôle tous les mois les deux ressorts de fourche et le serrage de la colonne : avec 21 kg, les chocs de trottoir fatiguent l'avant."
+ ],
+ "faq": [
+  {
+   "q": "Quelle différence entre la Curtis Dual Pro et la Curtis Dual ?",
+   "a": "Les moteurs, la batterie et l'autonomie sont identiques. La Dual Pro ajoute un frein à disque mécanique à l'avant et pèse 21 kg contre 20,5 kg."
+  },
+  {
+   "q": "Quelle taille de pneu pour la Curtis Dual Pro ?",
+   "a": "Wheelyshop indique 10 × 2,125 pouces, mais c'est la seule source : vérifie la cote gravée sur le flanc de ton pneu avant de commander."
+  },
+  {
+   "q": "La Curtis Dual Pro dépasse-t-elle 25 km/h ?",
+   "a": "Un revendeur suisse annonce 35 km/h en vitesse de pointe, utilisable seulement hors voie publique. En ville comme sur piste cyclable, tu restes à 25 km/h, et la débrider pour rouler plus vite est interdit."
+  },
+  {
+   "q": "La Curtis Dual Pro a-t-elle une suspension arrière ?",
+   "a": "Non, elle n'a qu'une fourche avant à deux ressorts, et pas de selle."
+  }
+ ],
+ "sources": [
+  {
+   "label": "Manuel Hikerboy Curtis (manuals.plus)",
+   "url": "https://manuals.plus/hikerboy/ddhbc16neb-dual-electric-scooter-manual"
+  },
+  {
+   "label": "KissMyWheels — Curtis Dual Pro Swiss Edition",
+   "url": "https://kissmywheels.ch/en/escooter/hikerboy-curtis-dual-pro-swiss-edition/"
+  },
+  {
+   "label": "Wheelyshop — Hikerboy Curtis Dual Pro",
+   "url": "https://www.wheelyshop.com/collections/hikerboy"
+  }
+ ]
+}

@@ -1,0 +1,120 @@
+{
+  "displayName": "Laotie SR10",
+  "metaTitle": "Laotie SR10 : fiche technique 60 V et pièces",
+  "metaDescription": "Laotie SR10 : 2 x 1 800 W, batterie 60 V 28,8 Ah, pneus 10 pouces, freins hydrauliques Zoom 140 mm, environ 40 kg. Fiche, plaquettes et FAQ.",
+  "intro": [
+    "La Laotie SR10 est une bimoteur de 10 pouces que plusieurs testeurs comparent à la Zero 10X, dont elle reprend l'allure des bras oscillants. Laotie la vend avec deux moteurs de 1 800 W, une batterie de 60 V et 28,8 Ah en cellules 21700 et 150 kg de charge maximale.",
+    "Laotie annonce 70 km/h et 100 km. Promotrott mesure 60 km/h, 86 km à 25 km/h et 58 km en roulant à fond. Elle pèse 40 à 41 kg, freine avec des disques hydrauliques Zoom de 140 mm et se recharge en environ 14 heures avec le chargeur de 2 A."
+  ],
+  "specs": [
+    [
+      "Moteurs",
+      "2 × 1 800 W (3 600 W au total) ; présentés comme puissance de pointe dans le manuel, nominale par un testeur"
+    ],
+    [
+      "Vitesse",
+      "25 km/h sur la voie publique ; 65 à 70 km/h annoncés, réservés à un terrain privé"
+    ],
+    [
+      "Autonomie annoncée",
+      "100 km"
+    ],
+    [
+      "Autonomie mesurée",
+      "86 km à 25 km/h, 58 km sans bridage (Promotrott)"
+    ],
+    [
+      "Batterie",
+      "60 V, 28,8 Ah, cellules 21700 (67,2 V en fin de charge)"
+    ],
+    [
+      "Poids",
+      "40 kg selon le manuel, 41 kg selon Promotrott"
+    ],
+    [
+      "Charge max",
+      "150 kg selon Laotie (100 kg dans la fiche Promotrott)"
+    ],
+    [
+      "Roues",
+      "10 pouces larges, tubeless selon Laotie"
+    ],
+    [
+      "Freins",
+      "Disques hydrauliques Zoom avant et arrière, 140 mm + frein électronique"
+    ],
+    [
+      "Suspension",
+      "Amortisseurs avant et arrière ; avant jugé souple par un testeur"
+    ],
+    [
+      "Temps de charge",
+      "environ 14 h avec le chargeur de 2 A"
+    ]
+  ],
+  "pros": [
+    "Bonne tenue à haute vitesse selon un essai slovaque (e-fanatic).",
+    "Autonomie mesurée de 86 km à 25 km/h (Promotrott).",
+    "Freins hydrauliques à étriers Zoom, dont les plaquettes se trouvent facilement (manuel Laotie)."
+  ],
+  "cons": [
+    "Recharge d'environ 14 heures avec le chargeur fourni (Promotrott).",
+    "Environ 40 kg : peu transportable.",
+    "Suspension avant à faible débattement selon un testeur YouTube.",
+    "Charge maximale annoncée différemment selon les sources (100 ou 150 kg)."
+  ],
+  "parts": [
+    {
+      "label": "Plaquettes de frein",
+      "size": "Étrier hydraulique Zoom",
+      "count": 5,
+      "to": "/piece/plaquettes-de-frein-zoom-semi-metallique",
+      "cta": "Plaquettes Zoom"
+    }
+  ],
+  "care": [
+    "Remplace tes plaquettes Zoom par paire dès qu'il reste moins de 1 mm de garniture, sinon le disque de 140 mm se raye.",
+    "Le chargeur de 2 A est lent : un chargeur 60 V plus puissant raccourcit la charge, à condition d'avoir la bonne prise.",
+    "Vérifie le serrage des axes des bras oscillants tous les mois, ils encaissent tout le poids de la machine."
+  ],
+  "faq": [
+    {
+      "q": "Quelles plaquettes pour la Laotie SR10 ?",
+      "a": "Des plaquettes pour étrier hydraulique Zoom, le modèle monté à l'avant et à l'arrière selon le manuel Laotie."
+    },
+    {
+      "q": "Quelle taille de pneu pour la Laotie SR10 ?",
+      "a": "Des pneus de 10 pouces, mais les vendeurs ne donnent pas tous la même cote. Lis celle qui est moulée sur le flanc de ton pneu avant de commander."
+    },
+    {
+      "q": "La Laotie SR10 ressemble-t-elle à la Zero 10X ?",
+      "a": "Oui, plusieurs testeurs la comparent à une Zero 10X, avec un plateau plus long qui loge une batterie de 28,8 Ah en 60 V."
+    },
+    {
+      "q": "Quelle autonomie réelle pour la Laotie SR10 ?",
+      "a": "Promotrott a mesuré 86 km en restant à 25 km/h et 58 km en roulant sans limitation. Les 100 km annoncés demandent une conduite très douce."
+    },
+    {
+      "q": "Où rouler à 70 km/h avec la Laotie SR10 ?",
+      "a": "Uniquement sur un terrain privé. Dans la rue et sur les pistes, la règle française impose 25 km/h au maximum, et une SR10 débridée n'a pas le droit d'y circuler."
+    }
+  ],
+  "sources": [
+    {
+      "label": "Laotie — SR10",
+      "url": "https://www.laotie.zone/LAOTIE--SR10-60V-28_8Ah-21700-Battery-3600W-Dual-Foldable-Electric-Scooter-100km-Mileage-150kg-Max-Load-EU-Plug-p-1929186.html"
+    },
+    {
+      "label": "Promotrott — Laotie SR10",
+      "url": "https://promotrott.com/laotie/"
+    },
+    {
+      "label": "Scribd — manuel Laotie",
+      "url": "https://www.scribd.com/document/778806974/Laotie-scooter"
+    },
+    {
+      "label": "YouTube — Laotie SR10, mieux qu'une Zero 10X ?",
+      "url": "https://www.youtube.com/watch?v=bp47F4rhX2s"
+    }
+  ]
+}

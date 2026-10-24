@@ -1,5 +1,6 @@
 import { useParams, Link, useSearchParams } from "react-router-dom";
 import { useScooterFicheState } from "@/hooks/useScooterFiche";
+import { BuyCtx, livePrice } from "@/components/scooter/BuyProposals";
 import { motion } from "framer-motion";
 import { Loader2, ArrowLeft, ChevronRight } from "lucide-react";
 import SEO from "@/components/SEO";
@@ -210,6 +211,7 @@ const ScooterDetail = () => {
       />
       <ShowroomHeader />
 
+      <BuyCtx.Provider value={{ price: livePrice(scooter.price_eur, scooter.price_checked_at), brandLogo: scooter.brand?.logo_url ?? null }}>
       <motion.main
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
@@ -319,6 +321,7 @@ const ScooterDetail = () => {
         />}
         {pageStyle === 4 && <div className="h-20 lg:hidden" aria-hidden />}
       </motion.main>
+      </BuyCtx.Provider>
 
       <Footer />
     </div>
