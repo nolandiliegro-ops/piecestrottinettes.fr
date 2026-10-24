@@ -1,6 +1,7 @@
 // 24/10/2026 — Barre du bas téléphone : 5 propositions (Nolan : « ça fait trop site classique »).
 // ?barrebas=1..5 = propositions, ?barrebas=0 ou sans paramètre = barre actuelle (MobileNav).
 // DA : angles coupés, Unbounded italique, Plus Jakarta, vert #4A7C59, carbone #1A1A1A. Aucun halo qui pulse.
+import { useEffect, useRef, useState } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
 import { Package, ShoppingBag, Search, Warehouse, Plus } from "lucide-react";
 import { ScooterIcon } from "@/components/Header";
@@ -73,38 +74,49 @@ const Shell = ({ children, floating = false, dark = false }: { children: React.R
     style={
       floating
         ? { bottom: "calc(max(env(safe-area-inset-bottom), 8px) + 6px)" }
-        : { paddingBottom: "max(env(safe-area-inset-bottom), 6px)", background: dark ? CARBON : STONE, borderTop: dark ? "none" : "1px solid rgba(26,26,26,0.12)" }
+        : {
+            paddingBottom: "max(env(safe-area-inset-bottom), 6px)",
+            background: dark ? CARBON : STONE,
+            borderTop: dark ? "none" : "1px solid rgba(26,26,26,0.12)",
+            // 24/10 (Nolan : « elle bouge quand je navigue ») : calque propre, jamais recalculé avec la page (Safari iPhone).
+            transform: "translate3d(0,0,0)",
+            WebkitTransform: "translate3d(0,0,0)",
+            backfaceVisibility: "hidden",
+            willChange: "transform",
+          }
     }
   >
     {children}
   </nav>
 );
 
+/* Onglet partagé, défini hors des barres : un composant recréé à chaque rendu se remonte à chaque changement de page (clignement). */
+const TabBtn = ({ it, on, onGo, count, bar = false }: { it: Item; on: boolean; onGo: (it: Item) => void; count: number; bar?: boolean }) => {
+  const I = it.icon;
+  return (
+    <button type="button" onClick={() => onGo(it)} className="relative flex-1 min-h-[56px] flex flex-col items-center justify-center gap-1">
+      {bar && <span className="absolute top-0 left-1/2 -translate-x-1/2 h-[3px] transition-[width] duration-200" style={{ width: on ? 28 : 0, background: GREEN }} />}
+      <span className="relative"><I className="w-[22px] h-[22px]" strokeWidth={on ? 2.4 : 1.9} style={{ color: on ? GREEN : CARBON }} />{it.key === "cart" && <CartCount n={count} />}</span>
+      <span className="text-[14px] leading-none italic" style={{ fontFamily: JAK, fontWeight: on ? 800 : 600, color: on ? GREEN : MUTED }}>{it.label}</span>
+    </button>
+  );
+};
+
 /* 1 · Repassé — même disposition, nouvelle DA : filet vert sur l'onglet actif, bouton central à angle coupé. */
 const V1 = () => {
   const m = useNavModel();
   const { pieces, garage, search, trottes, cart } = m.items;
-  const Tab = ({ it }: { it: Item }) => {
-    const on = m.active(it);
-    const I = it.icon;
-    return (
-      <button type="button" onClick={() => m.go(it)} className="relative flex-1 min-h-[56px] flex flex-col items-center justify-center gap-1">
-        <span className="absolute top-0 left-1/2 -translate-x-1/2 h-[3px] transition-all duration-200" style={{ width: on ? 28 : 0, background: GREEN }} />
-        <span className="relative"><I className="w-[22px] h-[22px]" strokeWidth={on ? 2.4 : 1.9} style={{ color: on ? GREEN : CARBON }} />{it.key === "cart" && <CartCount n={m.count} />}</span>
-        <span className="text-[14px] leading-none italic" style={{ fontFamily: JAK, fontWeight: on ? 800 : 600, color: on ? GREEN : MUTED }}>{it.label}</span>
-      </button>
-    );
-  };
+  const tab = (it: Item) => <TabBtn key={it.key} it={it} on={m.active(it)} onGo={m.go} count={m.count} bar />;
   return (
     <Shell>
       <div className="flex items-end px-1">
-        <Tab it={pieces} /><Tab it={garage} />
+        {tab(pieces)}{tab(garage)}
         <div className="flex-1 flex justify-center">
           <button type="button" onClick={() => m.go(search)} aria-label="Chercher" className="-mt-5 w-[58px] h-[58px] grid place-items-center shadow-[0_6px_14px_rgba(74,124,89,0.35)]" style={{ background: GREEN, clipPath: cut(12) }}>
             <Search className="w-6 h-6 text-white" strokeWidth={2.6} />
           </button>
         </div>
-        <Tab it={trottes} /><Tab it={cart} />
+        {tab(trottes)}{tab(cart)}
       </div>
     </Shell>
   );
@@ -212,6 +224,30 @@ const V4 = () => {
   );
 };
 
+/* SKOT rentre dans la barre quand on fait défiler vers le bas, ressort à l'arrêt (0,9 s) ou en remontant. */
+const useSkotOut = () => {
+  const [out, setOut] = useState(true);
+  const last = useRef(0);
+  const timer = useRef<ReturnType<typeof setTimeout>>();
+  const { pathname } = useLocation();
+  useEffect(() => { setOut(true); }, [pathname]);
+  useEffect(() => {
+    last.current = window.scrollY;
+    const onScroll = () => {
+      const y = window.scrollY;
+      const dy = y - last.current;
+      last.current = y;
+      if (dy > 4 && y > 40) setOut(false);
+      else if (dy < -4) setOut(true);
+      if (timer.current) clearTimeout(timer.current);
+      timer.current = setTimeout(() => setOut(true), 900);
+    };
+    window.addEventListener("scroll", onScroll, { passive: true });
+    return () => { window.removeEventListener("scroll", onScroll); if (timer.current) clearTimeout(timer.current); };
+  }, []);
+  return out;
+};
+
 /* 5 · SKOT au centre — l'avatar « Le pilote » remplace la loupe (la recherche reste dans la barre du haut) ; la bulle flottante disparaît. */
 const POP_CSS = `@keyframes skl-pop{0%,70%,100%{transform:translateY(0) scale(1)}76%{transform:translateY(-10px) scale(1.12) rotate(-5deg)}84%{transform:translateY(0) scale(.96) rotate(3deg)}90%{transform:translateY(-3px) scale(1) rotate(0)}}
 .skl-pop{animation:skl-pop 3.8s 1s ease-in-out infinite}@media (prefers-reduced-motion:reduce){.skl-pop{animation:none}}`;
@@ -225,29 +261,27 @@ const V5 = () => {
   const { pathname } = useLocation();
   // Panier, paiement, admin : SKOT y est masqué → le bouton central ouvre la recherche.
   const openSkot = () => { buzz(); if (skotEnabled() && !skotHiddenOn(pathname)) window.dispatchEvent(new Event("skot:open")); else m.openSpotlight(); };
-  const Tab = ({ it }: { it: Item }) => {
-    const on = m.active(it);
-    const I = it.icon;
-    return (
-      <button type="button" onClick={() => m.go(it)} className="relative flex-1 min-h-[56px] flex flex-col items-center justify-center gap-1">
-        <span className="relative"><I className="w-[22px] h-[22px]" strokeWidth={on ? 2.4 : 1.9} style={{ color: on ? GREEN : CARBON }} />{it.key === "cart" && <CartCount n={m.count} />}</span>
-        <span className="text-[14px] leading-none italic" style={{ fontFamily: JAK, fontWeight: on ? 800 : 600, color: on ? GREEN : MUTED }}>{it.label}</span>
-      </button>
-    );
-  };
+  const tab = (it: Item) => <TabBtn key={it.key} it={it} on={m.active(it)} onGo={m.go} count={m.count} />;
+  const out = useSkotOut();
   return (
     <Shell>
       <div className="flex items-end px-1">
-        <Tab it={pieces} /><Tab it={garage} />
+        {tab(pieces)}{tab(garage)}
         <div className="flex-1 flex justify-center">
-          <button type="button" onClick={openSkot} aria-label="Demander à SKOT" className="-mt-8 flex flex-col items-center">
+          <button
+            type="button"
+            onClick={openSkot}
+            aria-label="Demander à SKOT"
+            className="-mt-8 flex flex-col items-center"
+            style={{ transform: out ? "translateY(0) scale(1)" : "translateY(22px) scale(0.82)", transition: "transform .38s cubic-bezier(.2,.9,.3,1.25)" }}
+          >
             <span className="w-[64px] h-[64px] p-[2px]" style={{ background: CARBON, clipPath: cut(12) }}>
-              <span className="w-full h-full grid place-items-center overflow-hidden" style={{ background: "#FFFFFF", clipPath: cut(11) }}><span className="skl-pop block"><SkotAvatar size={54} /></span></span>
+              <span className="w-full h-full grid place-items-center overflow-hidden" style={{ background: "#FFFFFF", clipPath: cut(11) }}><span className={out ? "skl-pop block" : "block"}><SkotAvatar size={54} /></span></span>
             </span>
-            <span className="-mt-2 px-2 py-0.5 text-white italic uppercase" style={{ background: GREEN, fontFamily: UNB, fontWeight: 800, fontSize: 11, clipPath: cutTR(6) }}>SKOT</span>
+            <span className="-mt-2 px-2 py-0.5 text-white italic uppercase" style={{ background: GREEN, fontFamily: UNB, fontWeight: 800, fontSize: 11, clipPath: cutTR(6), opacity: out ? 1 : 0, transition: "opacity .2s" }}>SKOT</span>
           </button>
         </div>
-        <Tab it={trottes} /><Tab it={cart} />
+        {tab(trottes)}{tab(cart)}
       </div>
     </Shell>
   );
