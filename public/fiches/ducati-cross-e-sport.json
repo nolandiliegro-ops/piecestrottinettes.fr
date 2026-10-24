@@ -1,0 +1,145 @@
+{
+ "displayName": "Ducati Cross-E Sport",
+ "metaTitle": "Ducati Cross-E Sport : fiche technique et pneus 110/50",
+ "metaDescription": "Ducati Cross-E Sport : moteur arrière 500 W (950 W en pointe), batterie 48 V 10,4 Ah (499 Wh), pneus fat tubeless 110/50-6.5, 45 km. Fiche et pièces.",
+ "intro": [
+  "La Cross-E Sport est la trottinette « Scrambler » de Ducati Urban e-Mobility, faite pour les chemins autant que pour la ville. Elle se reconnaît à ses pneus « fat » tubeless de 110/50-6.5 à l'avant et à l'arrière, montés sur un cadre en acier, sans suspension.",
+  "Le moteur arrière de 500 W (950 W en pointe selon les revendeurs) tire son énergie d'une batterie amovible de 48 V et 10,4 Ah (499 Wh), pour 45 km annoncés. Elle freine par disque à l'avant et à l'arrière, pèse 28 à 29 kg et accepte 120 kg. Sa vitesse est limitée à 25 km/h."
+ ],
+ "specs": [
+  [
+   "Moteur",
+   "500 W, moteur arrière ; 950 W en pointe selon les revendeurs"
+  ],
+  [
+   "Vitesse",
+   "25 km/h"
+  ],
+  [
+   "Autonomie annoncée",
+   "jusqu'à 45 km (Ducati)"
+  ],
+  [
+   "Batterie",
+   "48 V, 10,4 Ah, 499 Wh, amovible (54,6 V en fin de charge)"
+  ],
+  [
+   "Poids",
+   "28,3 à 29 kg selon les fiches"
+  ],
+  [
+   "Charge max",
+   "120 kg"
+  ],
+  [
+   "Roues",
+   "110/50-6.5 tubeless « fat », avant et arrière"
+  ],
+  [
+   "Freins",
+   "Disque à l'avant et à l'arrière"
+  ],
+  [
+   "Suspension",
+   "aucune"
+  ],
+  [
+   "Étanchéité",
+   "IPX4"
+  ],
+  [
+   "Temps de charge",
+   "environ 4 h ; 6 à 8 h selon un revendeur colombien"
+  ],
+  [
+   "Cadre",
+   "acier"
+  ],
+  [
+   "Pente max",
+   "29 %"
+  ]
+ ],
+ "pros": [
+  "Pneus fat de 110/50-6.5 à l'aise sur les chemins non goudronnés (Ducati).",
+  "Batterie amovible de 499 Wh (Ducati).",
+  "Deux freins à disque (Urbun Riders, Cicli Dondi).",
+  "Charge maximale de 120 kg (Trovaprezzi)."
+ ],
+ "cons": [
+  "28 à 29 kg : lourde à porter.",
+  "Aucune suspension : seuls les gros pneus amortissent (Ktronix).",
+  "Étanchéité IPX4 seulement (Trovaprezzi).",
+  "Des boutiques hors d'Europe annoncent 45 km/h, ce qui ne correspond pas à la version européenne."
+ ],
+ "parts": [
+  {
+   "label": "Pneu",
+   "size": "110/50-6.5 tubeless, avant et arrière",
+   "count": 2,
+   "to": "/piece/pneu-tubeless-110-50-6-5-qind",
+   "cta": "Pneus 110/50-6.5"
+  }
+ ],
+ "care": [
+  "Contrôle la pression de tes pneus fat avant chaque sortie en chemin : un tubeless trop mou encaisse mal les chocs contre les cailloux.",
+  "Après un passage dans la boue, rince les étriers de frein à l'eau claire, sans jet haute pression, puis laisse sécher.",
+  "Si ta Cross-E Sport dort dans un garage froid, retire la batterie et range-la au sec, à température ambiante."
+ ],
+ "faq": [
+  {
+   "q": "Quelle taille de pneu pour la Ducati Cross-E Sport ?",
+   "a": "Des pneus tubeless « fat » de 110/50-6.5, identiques à l'avant et à l'arrière. Quelques revendeurs parlent de 11 pouces : fie-toi à la cote 110/50-6.5 gravée sur le flanc."
+  },
+  {
+   "q": "La Cross-E Sport a-t-elle une suspension ?",
+   "a": "Non. Le confort vient de ses pneus larges, qui absorbent une partie des chocs."
+  },
+  {
+   "q": "Quelle batterie équipe la Ducati Cross-E Sport ?",
+   "a": "Une batterie amovible de 48 V et 10,4 Ah (499 Wh), à 52 cellules selon Ducati. Son chargeur délivre 54,6 V, la tension de fin de charge d'une batterie 48 V."
+  },
+  {
+   "q": "La Ducati Cross-E Sport peut-elle rouler à 45 km/h ?",
+   "a": "Une boutique américaine l'annonce, mais la version européenne est limitée à 25 km/h. C'est aussi le maximum autorisé sur la voie publique en France."
+  },
+  {
+   "q": "Quelle différence avec la Cross-E City ?",
+   "a": "La Cross-E City utilise des pneus 70/65-6.5, plus étroits. La Cross-E Sport monte des 110/50-6.5, pensés pour les chemins."
+  }
+ ],
+ "sources": [
+  {
+   "label": "Ducati Urban e-Mobility — Cross-E Sport",
+   "url": "https://www.ducatiurbanemobility.fr/product/cross-e-sport/"
+  },
+  {
+   "label": "Trovaprezzi — Ducati Cross-E Sport",
+   "url": "https://www.trovaprezzi.it/monopattini-elettrici/prezzi-scheda-prodotto/ducati_cross_e_sport"
+  },
+  {
+   "label": "Urbun Riders — Ducati Scrambler Cross-E Sport",
+   "url": "https://urbunriders.com/product/ducati-scrambler-cross-e-sport/"
+  },
+  {
+   "label": "Cicli Dondi — Ducati Scrambler Cross-E Sport",
+   "url": "https://ciclidondi.com/prodotto/ducati-scrambler-cross-e-sport/"
+  },
+  {
+   "label": "4air — Ducati Cross-E Sport",
+   "url": "https://4air.pl/pl/p/Ducati-Scrambler-Electric-Scooter-Cross-E-Sport-blackyellow-hulajnoga-elektryczna/7231"
+  },
+  {
+   "label": "Ktronix — Ducati Cross E-Sport",
+   "url": "https://www.ktronix.com/patineta-electrica-scooter-ducati-cross-sport/p/7707118759952"
+  },
+  {
+   "label": "Movit Scooters — Ducati Cross-E Sport",
+   "url": "https://movitscooters.com/tienda/ducati-cross-e-sport"
+  },
+  {
+   "label": "Golden Ride — pièces Ducati",
+   "url": "https://shop.goldenride.it/en/catalog/spare-parts/scooters?page=3"
+  }
+ ]
+}

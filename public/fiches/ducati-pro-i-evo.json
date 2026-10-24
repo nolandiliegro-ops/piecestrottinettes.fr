@@ -1,0 +1,132 @@
+{
+ "displayName": "Ducati Pro-I Evo",
+ "metaTitle": "Ducati Pro-I Evo : fiche technique et entretien",
+ "metaDescription": "Ducati Pro-I Evo : moteur 350 W (500 W max), batterie 36 V 7,8 Ah (280 Wh), roues 8,5 pouces à chambre à air, disque arrière, 12 kg. Fiche et FAQ.",
+ "intro": [
+  "La Ducati Pro-I Evo est la trottinette d'entrée de la ligne Ducati Urban e-Mobility, conçue sous licence par MT Distribution et disponible depuis le 1er février 2021 selon Ducati. Elle pèse 12 kg, roule sur des roues de 8,5 pouces à chambre à air et se connecte en Bluetooth à une application.",
+  "Son moteur de 350 W (500 W au maximum) et sa batterie de 36 V et 7,8 Ah (280 Wh) visent 25 km, avec une recharge d'environ 4 heures. Elle freine électroniquement à l'avant et par disque à l'arrière. La fiche technique annonce IP54, des revendeurs comme Darty indiquent IPX5."
+ ],
+ "specs": [
+  [
+   "Moteur",
+   "350 W nominaux, 500 W maximum"
+  ],
+  [
+   "Vitesse",
+   "25 km/h (mode S)"
+  ],
+  [
+   "Autonomie annoncée",
+   "jusqu'à 25 km"
+  ],
+  [
+   "Batterie",
+   "36 V, 7,8 Ah, 280 Wh (42 V en fin de charge)"
+  ],
+  [
+   "Poids",
+   "12 kg"
+  ],
+  [
+   "Charge max",
+   "100 kg"
+  ],
+  [
+   "Roues",
+   "8,5 pouces avec chambre à air, 3,4 bars"
+  ],
+  [
+   "Freins",
+   "Électronique à l'avant + disque à l'arrière, avec KERS"
+  ],
+  [
+   "Suspension",
+   "aucune"
+  ],
+  [
+   "Étanchéité",
+   "IP54 (fiche Ducati) ; IPX5 chez Darty et Fnac"
+  ],
+  [
+   "Temps de charge",
+   "environ 4 h"
+  ],
+  [
+   "Chargeur",
+   "42 V, 1,5 A, fiche DC 2.1 (Ducati)"
+  ],
+  [
+   "Pente max",
+   "15 %"
+  ]
+ ],
+ "pros": [
+  "12 kg seulement, facile à porter (Ducati).",
+  "Écran couleur et application Bluetooth (Ducati).",
+  "Recharge en 4 heures environ (Ducati)."
+ ],
+ "cons": [
+  "Autonomie limitée à 25 km (Ducati).",
+  "Pas de suspension, et des roues de 8,5 pouces : les pavés se font sentir.",
+  "Chambres à air exposées aux crevaisons.",
+  "Indice d'étanchéité différent selon les sources (IP54 ou IPX5)."
+ ],
+ "parts": [],
+ "care": [
+  "Gonfle tes chambres à air à 3,4 bars, la pression indiquée par la notice Ducati : en dessous, tu risques un pincement au premier trottoir.",
+  "Le disque arrière est ton seul frein mécanique : un frottement continu en roulant signale un étrier à recentrer.",
+  "Avec 25 km d'autonomie, consulte la charge dans l'application avant de partir pour ne pas finir à pied."
+ ],
+ "faq": [
+  {
+   "q": "Quelle taille de pneu pour la Ducati Pro-I Evo ?",
+   "a": "Ducati indique des roues de 8,5 pouces avec chambre à air, sans préciser la largeur. Lis la cote sur le flanc de ton pneu avant d'en commander un."
+  },
+  {
+   "q": "Quelle différence entre la Pro-I Evo et la Pro-II Evo ?",
+   "a": "La Pro-II Evo passe aux roues de 10 pouces tubeless, ajoute une suspension avant et arrière et une batterie de 374 Wh pour 40 km. La Pro-I Evo reste plus légère, à 12 kg."
+  },
+  {
+   "q": "Combien de temps pour recharger la Ducati Pro-I Evo ?",
+   "a": "Environ 4 heures avec le chargeur d'origine de 42 V et 1,5 A."
+  },
+  {
+   "q": "La Ducati Pro-I Evo peut-elle aller plus vite que 25 km/h ?",
+   "a": "Non, son mode S plafonne à 25 km/h, la vitesse autorisée en France. Ses autres modes la limitent à 6 et 20 km/h."
+  },
+  {
+   "q": "La Ducati Pro-I Evo a-t-elle une suspension ?",
+   "a": "Non. Le confort repose sur les chambres à air de 8,5 pouces, d'où l'intérêt de surveiller leur pression."
+  }
+ ],
+ "sources": [
+  {
+   "label": "Ducati Urban e-Mobility — fiche technique Pro-I Evo",
+   "url": "https://www.ducatiurbanemobility.fr/wp-content/uploads/2021/09/Ducati_Pro-I_evo_FR_fiche_technique_09_21.pdf"
+  },
+  {
+   "label": "Ducati — nouvelle trottinette Pro-I Evo",
+   "url": "https://www.ducati.com/fr/fr/news/decrouvrez-la-nouvelle-trottinette-electrique-pro-i-evo"
+  },
+  {
+   "label": "Ducati — Pro-I Evo (annonce)",
+   "url": "https://www.ducati.com/ww/en/news/ducati-mt-distribution-pro1evo-scooter"
+  },
+  {
+   "label": "Darty — Ducati Pro I Evo Safe Ride",
+   "url": "https://www.darty.com/nav/achat/sports_loisirs/glisse_urbaine/trottinette_electrique/ducati_pro_i_evo_safe_ride.html"
+  },
+  {
+   "label": "Fnac — Ducati Pro I Evo",
+   "url": "https://www.fnac.com/Trottinette-electrique-Ducati-Pro-I-EVO-350-W-Noir-et-rouge/a17377206/w-4"
+  },
+  {
+   "label": "Stylistme — Ducati Pro I Evo",
+   "url": "https://stylistme.com/vehicule-electrique/ducati-pro-1-evo-avis-test"
+  },
+  {
+   "label": "Manuals.plus — manuel Ducati Pro-I Evo",
+   "url": "https://manuals.plus/fr/ducati/pro-i-evo-electric-scooter-manual"
+  }
+ ]
+}

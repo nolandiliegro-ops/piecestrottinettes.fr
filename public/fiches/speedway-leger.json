@@ -1,0 +1,151 @@
+{
+ "displayName": "Speedway Leger",
+ "metaTitle": "Speedway Leger : fiche technique, chambres à air, pièces",
+ "metaDescription": "Speedway Leger : moteur 500 W, batterie 48 V 15,6 Ah, pneus 8,5x2 à chambre à air, frein tambour arrière, double suspension. Fiche, entretien et pièces.",
+ "intro": [
+  "La Speedway Leger est une trottinette compacte de Minimotors que le forum EspritRoue présente comme l'évolution de la Speedway Mini 4 Pro : même base, mais deux pneus gonflables plus larges de 8,5 pouces à chambre à air et un plateau revu. Elle pèse environ 20 kg et accepte 120 kg.",
+  "Son moteur de 500 W nominaux (1 360 W en crête) puise dans une batterie de 48 V et 15,6 Ah (749 Wh), une version 16 Ah ayant aussi existé. Minimotors annonce 45 à 55 km, les membres d'EspritRoue en relèvent 35 à 45. Le freinage repose sur un tambour arrière et le frein moteur."
+ ],
+ "specs": [
+  [
+   "Moteur",
+   "500 W nominaux, 1 360 W en crête"
+  ],
+  [
+   "Vitesse",
+   "25 km/h sur la voie publique ; 45 à 50 km/h annoncés, réservés à un terrain privé"
+  ],
+  [
+   "Autonomie annoncée",
+   "45 à 55 km selon Minimotors"
+  ],
+  [
+   "Autonomie constatée",
+   "35 à 45 km selon les utilisateurs d'EspritRoue"
+  ],
+  [
+   "Batterie",
+   "48 V, 15,6 Ah, 749 Wh (16 Ah selon les séries) ; 54,6 V en fin de charge"
+  ],
+  [
+   "Poids",
+   "19 à 20,6 kg selon les fiches"
+  ],
+  [
+   "Charge max",
+   "120 kg"
+  ],
+  [
+   "Roues",
+   "8,5 pouces, pneus 8,5x2 à chambre à air, avant et arrière"
+  ],
+  [
+   "Freins",
+   "Tambour arrière + frein électronique régénératif"
+  ],
+  [
+   "Suspension",
+   "Avant et arrière"
+  ],
+  [
+   "Étanchéité",
+   "IP54 selon le revendeur Inrevolta ; « non waterproof » selon EspritRoue"
+  ],
+  [
+   "Temps de charge",
+   "7 à 9 h avec le chargeur de 2 A"
+  ]
+ ],
+ "pros": [
+  "Deux pneus gonflables, plus confortables que la roue arrière pleine de la Mini 4 Pro (EspritRoue).",
+  "Suspension à l'avant et à l'arrière (Inrevolta).",
+  "Environ 20 kg pour une batterie de 749 Wh (Minimotors)."
+ ],
+ "cons": [
+  "Un seul frein mécanique, le tambour arrière, jugé insuffisant en freinage d'urgence (EspritRoue).",
+  "Autonomie réelle de 35 à 45 km, en retrait sur l'annonce (EspritRoue).",
+  "Un propriétaire décrit des difficultés dans une côte d'environ 16 % (Reddit).",
+  "Chambres à air : exposées aux crevaisons, contrairement à un pneu plein."
+ ],
+ "parts": [
+  {
+   "label": "Chambre à air",
+   "size": "8,5x2 (avant et arrière)",
+   "count": 6,
+   "to": "/piece/chambre-a-air-85x2-dualtron-mini-valve-90x90",
+   "cta": "Chambres à air 8,5x2"
+  },
+  {
+   "label": "Pneu",
+   "size": "8,5x2",
+   "count": 9,
+   "to": "/piece/pneu-8-5x2-xiaomi-50-75-6-1-wanda",
+   "cta": "Pneus 8,5x2"
+  }
+ ],
+ "care": [
+  "Garde tes chambres à air bien gonflées : un pneu 8,5 pouces mou se pince sur la jante à la première bordure et crève.",
+  "Le tambour arrière se rattrape avec la molette du câble : tourne-la dès que ton levier touche presque la poignée.",
+  "Si l'indicateur de batterie te paraît faux, vérifie que le paramètre P1 de l'écran est bien réglé sur 48 V, comme le recommande la FAQ d'EspritRoue."
+ ],
+ "price": {
+  "text": "Prix affiché par Dualtron Store (France) : 1 190 €, constaté en octobre 2026. Prix susceptible de varier.",
+  "source": "dualtron-store.com"
+ },
+ "faq": [
+  {
+   "q": "Quelle taille de chambre à air pour la Speedway Leger ?",
+   "a": "Du 8,5x2, la même cote que le pneu, à l'avant comme à l'arrière. Lis l'inscription sur le flanc de ton pneu pour confirmer avant de commander."
+  },
+  {
+   "q": "La Speedway Leger peut-elle dépasser 25 km/h ?",
+   "a": "Elle sait aller plus vite, autour de 45 km/h selon les fiches, mais seulement sur un terrain privé. Dans la rue, la loi française impose 25 km/h au maximum et lever le bridage pour circuler est interdit."
+  },
+  {
+   "q": "Combien de temps pour recharger la Speedway Leger ?",
+   "a": "Compte 7 à 9 heures avec le chargeur de 2 A livré, selon Inrevolta et EspritRoue."
+  },
+  {
+   "q": "Quelle différence entre la Speedway Leger et la Leger Pro ?",
+   "a": "La Leger Pro passe en 52 V, avec des batteries de 18,2 à 25,6 Ah, et ajoute un tambour à l'avant selon Voltride. La Leger reste en 48 V avec un seul tambour, à l'arrière."
+  },
+  {
+   "q": "La Speedway Leger a-t-elle des suspensions ?",
+   "a": "Oui, une à l'avant et une à l'arrière, qui s'ajoutent à l'amorti des pneus gonflables."
+  }
+ ],
+ "sources": [
+  {
+   "label": "Minimotors — Speedway Leger",
+   "url": "https://www.minimotors.com/product_detail.html?code=1676479752189677569"
+  },
+  {
+   "label": "Inrevolta — Speedway Leger",
+   "url": "https://www.inrevolta.com/fr/speedway-leger.html"
+  },
+  {
+   "label": "EspritRoue — FAQ Speedway Leger",
+   "url": "https://www.espritroue.fr/topic/10350-faq-speedway-leger/"
+  },
+  {
+   "label": "Wattiz — Speedway Leger",
+   "url": "https://www.wattiz.fr/fr/s/499/speedway-leger"
+  },
+  {
+   "label": "E-Watts — Speedway Leger",
+   "url": "https://e-watts.fr/produit/trottinette-electrique-speedway-leger"
+  },
+  {
+   "label": "Dualtron Store — Speedway Leger",
+   "url": "https://dualtron-store.com/index.php/produit/speedway-leger/"
+  },
+  {
+   "label": "Smartwheel — Speedway Leger 48V",
+   "url": "https://www.smartwheel.ca/speedway-leger-48v-electric-scooter-500w-motors-748wh-battery/"
+  },
+  {
+   "label": "Reddit — Speedway Leger owners please help!",
+   "url": "https://www.reddit.com/r/ElectricScooters/comments/12rtmyu/speedway_leger_owners_please_help/"
+  }
+ ]
+}

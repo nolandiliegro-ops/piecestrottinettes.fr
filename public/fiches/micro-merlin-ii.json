@@ -1,0 +1,124 @@
+{
+ "displayName": "Micro Merlin II",
+ "metaTitle": "Micro Merlin II : fiche technique et entretien",
+ "metaDescription": "Micro Merlin II : 300 W (500 W max), batterie 36 V 7,8 Ah (280 Wh), 30 à 35 km annoncés, 12 à 13 kg, double suspension, frein tambour. Fiche et FAQ.",
+ "intro": [
+  "La Micro Merlin II succède à la Merlin avec un moteur de 300 W nominaux et 500 W au maximum, selon la fiche de Micro Mobility France et la boutique suisse de Micro. Elle conserve les roues de 200 mm anti-crevaison, la suspension avant et arrière et le frein à tambour.",
+  "Sa batterie LG de 36 V et 7,8 Ah (281 Wh) vise 30 km selon la fiche française, 35 km en mode Éco selon Micro. Le poids varie de 12 à 13 kg selon les documents. La marque a stoppé fin 2026 la vente de ses trottinettes électriques en France, sans retirer ses pièces détachées."
+ ],
+ "specs": [
+  [
+   "Moteur",
+   "300 W nominaux, 500 W maximum (Micro) ; 250 W sur d'autres fiches"
+  ],
+  [
+   "Vitesse",
+   "25 km/h (20 km/h en Suisse)"
+  ],
+  [
+   "Autonomie annoncée",
+   "30 km (fiche française) à 35 km en mode Éco (Micro)"
+  ],
+  [
+   "Batterie",
+   "36 V, 7,8 Ah, 280 à 281 Wh, cellules LG"
+  ],
+  [
+   "Poids",
+   "12 kg (fiche française) à 13 kg (Micro)"
+  ],
+  [
+   "Charge max",
+   "100 kg"
+  ],
+  [
+   "Roues",
+   "200 mm (8 pouces), caoutchouc anti-crevaison « Airless »"
+  ],
+  [
+   "Freins",
+   "Frein moteur, tambour, friction au pied"
+  ],
+  [
+   "Suspension",
+   "Avant et arrière"
+  ],
+  [
+   "Étanchéité",
+   "IP55 (fiche française)"
+  ],
+  [
+   "Temps de charge",
+   "3 à 3,5 h"
+  ]
+ ],
+ "pros": [
+  "300 W nominaux, plus que les 250 W de la première Merlin (Micro).",
+  "Roues anti-crevaison « Airless » (fiche Micro France).",
+  "Indice IP55 annoncé par la fiche française.",
+  "Se tire comme un trolley une fois pliée (Micro)."
+ ],
+ "cons": [
+  "Chiffres différents selon les fiches : 250 ou 300 W, 25 à 35 km.",
+  "Charge maximale de 100 kg (Micro).",
+  "Plus vendue neuve en France."
+ ],
+ "parts": [],
+ "care": [
+  "Après une sortie mouillée, essuie le plateau et la prise de charge avant de brancher le chargeur.",
+  "Écoute tes suspensions : un claquement à l'arrière signale du jeu à corriger avant qu'il n'abîme les fixations.",
+  "Ne laisse pas la batterie à 0 % : recharge-la dans la journée qui suit une grosse sortie."
+ ],
+ "faq": [
+  {
+   "q": "La Micro Merlin II est-elle encore commercialisée ?",
+   "a": "Pas en France : Micro Mobility a stoppé fin 2026 la vente de ses trottinettes électriques dans le pays. Les pièces détachées restent disponibles."
+  },
+  {
+   "q": "Quelle puissance pour la Micro Merlin II ?",
+   "a": "300 W nominaux et 500 W au maximum selon Micro. Certains revendeurs et Cleanrider indiquent 250 W."
+  },
+  {
+   "q": "Quelle autonomie pour la Micro Merlin II ?",
+   "a": "30 km selon la fiche de Micro Mobility France, 35 km en mode Éco selon Micro. Un revendeur suisse donne 25 km."
+  },
+  {
+   "q": "La Micro Merlin II supporte-t-elle la pluie ?",
+   "a": "La fiche française annonce IP55, une bonne protection contre les projections d'eau. Évite tout de même les flaques profondes."
+  },
+  {
+   "q": "Quelle batterie équipe la Micro Merlin II ?",
+   "a": "Une batterie lithium-ion LG de 36 V et 7,8 Ah, soit environ 280 Wh. Micro vend la même batterie pour l'Explorer et la Merlin II."
+  }
+ ],
+ "sources": [
+  {
+   "label": "Micro Mobility France — fiche Micro Merlin II",
+   "url": "https://www.micro-mobility.fr/img/cms/ficheproduit-merlin2grey-02-A4%20(1).pdf"
+  },
+  {
+   "label": "Micro Mobility — Micro Merlin II",
+   "url": "https://www.micro-mobility.com/en/products/micro-merlin-ii"
+  },
+  {
+   "label": "Micro (boutique) — Micro Merlin II",
+   "url": "https://www.micro-scooter.com/micro-merlin-ii"
+  },
+  {
+   "label": "Brack — Micro Merlin II",
+   "url": "https://www.brack.ch/fr/micro-mobility-trottinette-electrique-merlin-ii-1531564"
+  },
+  {
+   "label": "Micro Autriche — E-Micro Merlin II",
+   "url": "https://www.micro-scooter.at/E-Scooter/MICRO-Elektroscooter-E-MICRO-MERLIN-II-mit-Handbremse-EM0086.htm?a=article&ProdNr=EM0086&p=33"
+  },
+  {
+   "label": "Cleanrider — Micro Mobility Merlin II",
+   "url": "https://www.cleanrider.com/catalogue/trottinette-electrique/micro-mobility/micro-mobility-merlin-ii/"
+  },
+  {
+   "label": "Micro Mobility France — pièces (batterie Explorer et Merlin 2)",
+   "url": "https://micro-mobility.fr/pieces-detachees/micro-explorer"
+  }
+ ]
+}

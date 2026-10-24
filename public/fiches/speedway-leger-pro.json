@@ -1,0 +1,119 @@
+{
+ "displayName": "Speedway Leger Pro",
+ "metaTitle": "Speedway Leger Pro : fiche technique 52 V et entretien",
+ "metaDescription": "Speedway Leger Pro : batterie 52 V de 18,2 à 25,6 Ah, 60 à 80 km annoncés, pneus 8,5x2 à chambre à air, freins tambour avant et arrière. Fiche et FAQ.",
+ "intro": [
+  "La Speedway Leger Pro est la déclinaison 52 V de la Speedway Leger chez Minimotors. Elle garde le format compact, les roues de 8,5 pouces à chambre à air et la double suspension à ressorts, mais embarque une batterie nettement plus grosse, proposée en 18,2, 20,8 ou 25,6 Ah selon les séries.",
+  "Minimotors annonce 60, 70 ou 80 km d'autonomie selon la batterie et 1 360 W de puissance maximale. Le revendeur Voltride la donne à 20 kg, avec 600 W nominaux et deux freins à tambour. Aucun indice d'étanchéité n'est publié : mieux vaut éviter les fortes pluies."
+ ],
+ "specs": [
+  [
+   "Moteur",
+   "600 W nominaux selon Voltride ; 1 360 W maximum selon Minimotors"
+  ],
+  [
+   "Vitesse",
+   "25 km/h sur la voie publique"
+  ],
+  [
+   "Autonomie annoncée",
+   "60 km (18,2 Ah), 70 km (20,8 Ah) ou 80 km (25,6 Ah) selon Minimotors"
+  ],
+  [
+   "Batterie",
+   "52 V ; 18,2, 20,8 ou 25,6 Ah selon la version (58,8 V en fin de charge)"
+  ],
+  [
+   "Poids",
+   "environ 20 kg (Voltride)"
+  ],
+  [
+   "Charge max",
+   "120 kg"
+  ],
+  [
+   "Roues",
+   "8,5 x 2 pouces, avec chambre à air"
+  ],
+  [
+   "Freins",
+   "Tambour avant et arrière + frein régénératif (Voltride)"
+  ],
+  [
+   "Suspension",
+   "Ressorts avant et arrière"
+  ],
+  [
+   "Étanchéité",
+   "aucun indice publié (Voltride)"
+  ],
+  [
+   "Temps de charge",
+   "9 h, 11 h ou 13 h avec un chargeur 2 A, selon la batterie (Minimotors)"
+  ]
+ ],
+ "pros": [
+  "Trois tailles de batterie, jusqu'à 80 km annoncés (Minimotors).",
+  "Deux freins à tambour, un par roue (Voltride).",
+  "Double suspension à ressorts pour environ 20 kg (Voltride)."
+ ],
+ "cons": [
+  "Aucun indice d'étanchéité communiqué (Voltride).",
+  "Recharge longue : jusqu'à 13 h avec le chargeur 2 A sur la plus grosse batterie (Minimotors).",
+  "Puissance annoncée différemment selon les sources : 600 W nominaux chez Voltride, 1 360 W maximum chez Minimotors."
+ ],
+ "parts": [],
+ "care": [
+  "Avec deux tambours, règle chaque câble séparément : un tambour qui frotte en permanence s'use et te coûte de l'autonomie.",
+  "Ta batterie 52 V se recharge avec un chargeur qui délivre 58,8 V ; regarde aussi la prise de ta trottinette avant d'en racheter un, car GX16 et LP16 coexistent chez Minimotors.",
+  "Sans indice d'étanchéité annoncé, sèche ta Leger Pro après une sortie sous la pluie et ne la range pas dans un local humide."
+ ],
+ "price": {
+  "text": "Prix affiché par le revendeur Voltride : 799,99 € en promotion (1 249,99 € avant remise), constaté en octobre 2026. Prix susceptible de varier.",
+  "source": "voltride.com"
+ },
+ "faq": [
+  {
+   "q": "Quelle batterie choisir sur la Speedway Leger Pro ?",
+   "a": "Minimotors la propose en 52 V avec 18,2, 20,8 ou 25,6 Ah. Plus d'ampères-heures donne plus d'autonomie (de 60 à 80 km annoncés) mais allonge la recharge, de 9 à 13 heures."
+  },
+  {
+   "q": "Quelle taille de pneu pour la Speedway Leger Pro ?",
+   "a": "Des pneus de 8,5 x 2 pouces montés avec chambre à air. Avant d'en acheter, lis la cote sur le flanc de ton pneu : c'est elle qui fait foi."
+  },
+  {
+   "q": "A-t-on le droit de rouler à plus de 25 km/h avec ?",
+   "a": "Pas sur l'espace public français, où 25 km/h est le plafond des trottinettes électriques. Une vitesse supérieure ne se pratique que sur terrain privé, et modifier le bridage pour la rue est interdit."
+  },
+  {
+   "q": "Quelle différence avec la Speedway Leger ?",
+   "a": "La Leger reste en 48 V (15,6 Ah) avec un seul frein à tambour, à l'arrière. La Leger Pro passe en 52 V, propose de plus grosses batteries et freine sur les deux roues."
+  },
+  {
+   "q": "La Speedway Leger Pro résiste-t-elle à la pluie ?",
+   "a": "Voltride n'indique aucun indice IP. Considère-la comme non étanche : roule prudemment sur sol mouillé et évite les flaques profondes."
+  }
+ ],
+ "sources": [
+  {
+   "label": "Minimotors — gamme Speedway Leger",
+   "url": "https://www.minimotors.com/product_detail.html?code=1676479752189677569"
+  },
+  {
+   "label": "Voltride — Speedway Leger Pro",
+   "url": "https://voltride.com/speedway-leger-pro/"
+  },
+  {
+   "label": "Wattiz — Speedway Leger Pro MAX",
+   "url": "https://www.wattiz.fr/fr/s/177/speedway-leger-pro-max"
+  },
+  {
+   "label": "Wattiz — chargeur 52 V 58,8 V GX16",
+   "url": "https://www.wattiz.fr/fr/chargeurs/42602-chargeur-58-8v-2a-connecteur-magnetique-gx16-3-3760351012653.html"
+  },
+  {
+   "label": "Li6 — chargeur rapide 52 V",
+   "url": "https://li6.fr/produit/chargeur-rapide-52v-5a/"
+  }
+ ]
+}

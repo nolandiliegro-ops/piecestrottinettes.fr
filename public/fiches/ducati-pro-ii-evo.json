@@ -1,0 +1,147 @@
+{
+ "displayName": "Ducati Pro-II Evo",
+ "metaTitle": "Ducati Pro-II Evo : fiche technique, pneus et pièces",
+ "metaDescription": "Ducati Pro-II Evo : 350 W (515 W max), batterie 36 V 10,4 Ah (374 Wh), 40 km, pneus tubeless 10x2.50-6.5, double suspension. Fiche et pièces.",
+ "intro": [
+  "La Ducati Pro-II Evo est la trottinette à double suspension de la gamme Ducati Urban e-Mobility, produite sous licence par MT Distribution. Son cadre en alliage de magnésium porte des roues tubeless de 10 pouces, une suspension avant et arrière et un écran LED de 3,5 pouces, pour 16,7 kg.",
+  "Le moteur de 350 W (515 W en pointe) et la batterie de 36 V et 10,4 Ah (374 Wh) annoncent jusqu'à 40 km, avec une recharge d'environ 7 heures. Le freinage combine un frein électronique avant et un disque arrière avec récupération d'énergie. Le site Scootered la juge plus aboutie techniquement que les Xiaomi et la Lamborghini AL1, mais un peu plus lourde."
+ ],
+ "specs": [
+  [
+   "Moteur",
+   "350 W nominaux, 515 W en pointe"
+  ],
+  [
+   "Vitesse",
+   "25 km/h (mode L4)"
+  ],
+  [
+   "Autonomie annoncée",
+   "jusqu'à 40 km"
+  ],
+  [
+   "Batterie",
+   "36 V, 10,4 Ah, 374 Wh (42 V en fin de charge)"
+  ],
+  [
+   "Poids",
+   "16,7 kg"
+  ],
+  [
+   "Charge max",
+   "100 kg"
+  ],
+  [
+   "Roues",
+   "10 pouces tubeless, cote 10x2.50-6.5 (60/70-6.5) selon les revendeurs de pièces ; 3 bars"
+  ],
+  [
+   "Freins",
+   "Électronique à l'avant + disque à l'arrière, avec KERS (disque de 120 mm selon un revendeur)"
+  ],
+  [
+   "Suspension",
+   "Avant et arrière"
+  ],
+  [
+   "Étanchéité",
+   "IPX4"
+  ],
+  [
+   "Temps de charge",
+   "environ 7 h"
+  ],
+  [
+   "Chargeur",
+   "42 V, 1,5 A, fiche DC 2.1 (Ducati)"
+  ],
+  [
+   "Cadre",
+   "alliage de magnésium"
+  ]
+ ],
+ "pros": [
+  "Suspension à l'avant et à l'arrière, peu courante dans cette catégorie (Scootered).",
+  "Pneus tubeless de 10 pouces (Ducati).",
+  "Application avec localisation et historique des trajets (Scootered)."
+ ],
+ "cons": [
+  "16,7 kg : un peu plus lourde que ses concurrentes (Scootered).",
+  "Recharge longue, environ 7 heures (Ducati).",
+  "Étanchéité IPX4 seulement (Ducati).",
+  "Un seul frein mécanique, le disque arrière (Ducati)."
+ ],
+ "parts": [
+  {
+   "label": "Pneu",
+   "size": "10x2.50-6.5 (60/70-6.5) tubeless, avant et arrière",
+   "count": 13,
+   "to": "/piece/pneu-tubeless-10x2-50-6-5-yuanxing",
+   "cta": "Pneus 10x2.50-6.5"
+  },
+  {
+   "label": "Chargeur",
+   "size": "36 V (sortie 42 V), prise DC 5,5 x 2,1 mm",
+   "count": 1,
+   "to": "/piece/chargeur-36v-42v-2a-connecteur-dc-55-21mm",
+   "cta": "Chargeur 36 V"
+  }
+ ],
+ "care": [
+  "Garde 3 bars dans tes pneus tubeless, la pression sur laquelle Ducati insiste : sous-gonflés, ils s'usent vite et tiennent moins bien la route.",
+  "Contrôle les articulations des suspensions chaque mois : un claquement ou du jeu à l'arrière se corrige mieux tôt que tard.",
+  "Le disque arrière fait tout le freinage mécanique : change les plaquettes dès que la garniture devient très fine."
+ ],
+ "faq": [
+  {
+   "q": "Quelle taille de pneu pour la Ducati Pro-II Evo ?",
+   "a": "Des pneus tubeless de 10 pouces en 10x2.50-6.5, aussi notés 60/70-6.5, à l'avant comme à l'arrière. Ducati recommande 3 bars (44 psi)."
+  },
+  {
+   "q": "Quelle différence entre la Pro-II Evo et la Pro-III ?",
+   "a": "La Pro-III passe à 468 Wh pour 50 km, freine par disque sur les deux roues et démarre avec un badge NFC. La Pro-II Evo garde 374 Wh mais offre une suspension avant et arrière."
+  },
+  {
+   "q": "Combien de temps pour recharger la Ducati Pro-II Evo ?",
+   "a": "Environ 7 heures avec le chargeur fourni de 42 V et 1,5 A."
+  },
+  {
+   "q": "La Ducati Pro-II Evo est-elle étanche ?",
+   "a": "Elle est classée IPX4 : résistante aux éclaboussures, pas à la pluie battante ni aux flaques profondes."
+  },
+  {
+   "q": "Quelle vitesse maximale pour la Pro-II Evo ?",
+   "a": "25 km/h en mode L4, le plus rapide des quatre. Les autres la limitent à 6, 15 et 20 km/h, pratiques en zone piétonne ou sous la pluie."
+  }
+ ],
+ "sources": [
+  {
+   "label": "Ducati Urban e-Mobility — fiche technique Pro-II Evo (EN)",
+   "url": "https://www.ducatiurbanemobility.com/wp-content/uploads/2021/11/Ducati_PRO-II-EVO_EN_data_sheet_10_21-1.pdf"
+  },
+  {
+   "label": "Ducati Urban e-Mobility — Pro-II Evo",
+   "url": "https://www.ducatiurbanemobility.fr/product/pro-ii-evo/"
+  },
+  {
+   "label": "Scootered — Ducati Pro II Evo review",
+   "url": "https://www.scootered.co.uk/reviews/ducati-pro-ii-evo-electric-scooter-review.html"
+  },
+  {
+   "label": "Trott en Provence — pneu Ducati Pro 2 Evo",
+   "url": "https://trott-en-provence.fr/pneu-trottinette-electrique-ducati-pro-2-evo/"
+  },
+  {
+   "label": "Golden Ride — pneu 10x2.50-6.5 Ducati",
+   "url": "https://shop.goldenride.it/en/products/pneumatico-10-x250-65-tubeless-adatto-x-ruota-anteriore-e-posteriore-8052870484673"
+  },
+  {
+   "label": "HappyTec — Ducati Pro-II Evo",
+   "url": "https://shop.happytec.it/fr/ducati-pro-ii-evo-scheda-tecnica/"
+  },
+  {
+   "label": "Heureka — Ducati Pro-II Evo",
+   "url": "https://elektrokolobezky.heureka.cz/ducati-pro-ii-evo/"
+  }
+ ]
+}

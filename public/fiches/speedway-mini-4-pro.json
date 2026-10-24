@@ -1,0 +1,154 @@
+{
+  "displayName": "Speedway Mini 4 Pro",
+  "metaTitle": "Speedway Mini 4 Pro : fiche technique, pneus et pièces",
+  "metaDescription": "Speedway Mini 4 Pro : 500 W, batterie 48 V 13 ou 16 Ah, roues 200x50 (gonflable à l'avant, plein à l'arrière), frein tambour arrière. Fiche et pièces.",
+  "intro": [
+    "La Speedway Mini 4 Pro est une trottinette compacte de Minimotors d'environ 16 kg. Sa particularité : une roue avant gonflable à chambre à air en 200x50 et une roue arrière en pneu plein de même dimension, ce qui supprime les crevaisons à l'arrière.",
+    "Le nom couvre plusieurs batteries. La notice française liste une version 48 V 13 Ah (624 Wh) et une version Super en 48 V 16 Ah (768 Wh), toutes deux avec un moteur de 500 W nominaux. La Mini 4 Pro Lite, en 36 V, est un modèle à part. Le freinage associe un tambour arrière et le frein moteur."
+  ],
+  "specs": [
+    [
+      "Moteur",
+      "500 W nominaux ; 1 300 à 1 350 W en pointe selon un revendeur"
+    ],
+    [
+      "Vitesse",
+      "25 km/h sur la voie publique ; 35 km/h (13 Ah) ou 45 km/h (Super 16 Ah) dans la notice, réservés à un terrain privé"
+    ],
+    [
+      "Autonomie annoncée",
+      "35 à 40 km (13 Ah), 45 km (Super 16 Ah) selon la notice"
+    ],
+    [
+      "Batterie",
+      "48 V, 13 Ah (624 Wh) ou 16 Ah (768 Wh) ; 54,6 V en fin de charge"
+    ],
+    [
+      "Poids",
+      "environ 16 kg"
+    ],
+    [
+      "Charge max",
+      "100 kg selon la notice"
+    ],
+    [
+      "Roues",
+      "8 pouces, 200x50 : gonflable à chambre à air à l'avant, pneu plein à l'arrière"
+    ],
+    [
+      "Freins",
+      "Tambour arrière + frein électronique"
+    ],
+    [
+      "Suspension",
+      "Arrière selon la notice ; amortisseur avant référencé chez les revendeurs de pièces"
+    ],
+    [
+      "Temps de charge",
+      "5 à 7 h (13 Ah), 6 à 8 h (16 Ah) selon la notice"
+    ],
+    [
+      "Prise de charge",
+      "GX16 3 broches (selon les revendeurs)"
+    ]
+  ],
+  "pros": [
+    "Pneu plein à l'arrière : aucune crevaison possible sur cette roue (Urban Moov).",
+    "Environ 16 kg, facile à porter (notice).",
+    "Pièces en 200x50 répandues chez les revendeurs (Urban Moov, Fastride)."
+  ],
+  "cons": [
+    "Un seul frein mécanique, le tambour arrière (notice).",
+    "Jeu dans la direction cité comme défaut fréquent par un propriétaire passé à la Speedway 5 (e-samokat).",
+    "Charge maximale de 100 kg selon la notice.",
+    "Plusieurs batteries sous le même nom : identifie la tienne avant d'acheter un chargeur ou une batterie."
+  ],
+  "parts": [
+    {
+      "label": "Chambre à air avant",
+      "size": "200x50 (8x2), roue avant",
+      "count": 1,
+      "to": "/piece/chambre-a-air-200x50-speedway-mini4-pro",
+      "cta": "Chambre à air 200x50"
+    },
+    {
+      "label": "Pneu avant",
+      "size": "200x50 gonflable",
+      "count": 1,
+      "to": "/piece/pneu-speedway-mini4-pro-200x50-94-renforce",
+      "cta": "Pneu avant 200x50"
+    },
+    {
+      "label": "Pneu arrière (plein)",
+      "size": "200x50 plein",
+      "count": 1,
+      "to": "/piece/pneu-plein-200x50-speedway-mini-4-pro-e-twow",
+      "cta": "Pneu plein arrière 200x50"
+    }
+  ],
+  "care": [
+    "Ta roue arrière pleine ne crève pas, mais la chambre à air avant si : contrôle sa pression chaque semaine.",
+    "Le jeu dans la colonne de direction est un souci connu sur les Mini : resserre-la dès que tu entends un claquement au freinage.",
+    "Avant de racheter un chargeur, lis l'étiquette de ta batterie : des Mini 4 très proches existent en 36 V et en 48 V, et la tension doit correspondre exactement."
+  ],
+  "faq": [
+    {
+      "q": "Quelle taille de pneu pour la Speedway Mini 4 Pro ?",
+      "a": "Du 200x50 (8 pouces) à l'avant comme à l'arrière. L'avant est gonflable avec chambre à air, l'arrière est un pneu plein : ce ne sont pas les mêmes articles."
+    },
+    {
+      "q": "Quelle différence entre la Mini 4 Pro et la Mini 4 Pro Lite ?",
+      "a": "La Lite tourne en 36 V et 10 Ah, avec un moteur de 350 W et 30 km annoncés. La Mini 4 Pro passe en 48 V, 13 ou 16 Ah, avec 500 W et plus d'autonomie."
+    },
+    {
+      "q": "Combien de temps pour recharger la Speedway Mini 4 Pro ?",
+      "a": "5 à 7 heures pour la batterie de 13 Ah, 6 à 8 heures pour la Super de 16 Ah, d'après la notice."
+    },
+    {
+      "q": "Peut-on rouler à 45 km/h avec la Mini 4 Pro Super ?",
+      "a": "Seulement sur un terrain privé. Sur la voie publique, ta trottinette doit rester sous 25 km/h, et la débrider pour la ville est interdit."
+    },
+    {
+      "q": "Peut-on mettre un pneu plein à l'avant ?",
+      "a": "Des pneus pleins 200x50 pour la roue avant existent, chez E-Watts par exemple. Tu supprimes les crevaisons, mais tu perds le seul pneu qui amortissait."
+    }
+  ],
+  "sources": [
+    {
+      "label": "Notice Speedway Mini 4 Pro (Darty)",
+      "url": "https://fc.darty.com/notices/DOCUMENTATION/2019/11/4656989_NOTCOMP.pdf"
+    },
+    {
+      "label": "Notice Speedway (Darty)",
+      "url": "https://fc.darty.com/notices/a/e/5/0/ae504deb078d92017a38eed47d25a76e0e25b90f.pdf"
+    },
+    {
+      "label": "Urban Moov — pneu avant Mini 4 Pro",
+      "url": "https://www.urbanmoov.fr/boutique/Pneu-Avant-SPEEDWAY-Mini-4-Pro-p414870280"
+    },
+    {
+      "label": "Urban Moov — pneu plein arrière Mini 4 Pro",
+      "url": "https://www.urbanmoov.fr/boutique/Pneu-plein-arriere-Speedway-Mini-4-Pro-p414870293"
+    },
+    {
+      "label": "Fastride — pièces Speedway",
+      "url": "https://fastride.fr/fr/62-speedway"
+    },
+    {
+      "label": "E-Watts — pneu plein 200x50 avant",
+      "url": "https://e-watts.fr/produit/pneu-plein-200-50"
+    },
+    {
+      "label": "E-Watts — chargeur Minimotors 48 V GX16",
+      "url": "https://e-watts.fr/produit/chargeur-minimotors-48v-54v-2a-gx16"
+    },
+    {
+      "label": "Help My Trott — pièces Mini4 Pro",
+      "url": "https://helpmytrott.fr/trottinette/speedway-mini4-pro"
+    },
+    {
+      "label": "e-samokat — avis Speedway 5 et Mini 4 Pro",
+      "url": "https://e-samokat.com/elektrosamokat-otzyvy/speedway-5"
+    }
+  ]
+}

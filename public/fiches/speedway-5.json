@@ -1,0 +1,174 @@
+{
+  "displayName": "Speedway 5",
+  "metaTitle": "Speedway 5 : fiche technique, pneus et pièces",
+  "metaDescription": "Speedway 5 : double moteur, batterie 60 V 23,4 Ah (1 404 Wh), pneus tubeless 10x2.70-6.5, freins à disque 140 mm. Fiche, entretien et pièces.",
+  "intro": [
+    "La Speedway 5 est la trottinette double moteur de la gamme Speedway de Minimotors, le fabricant coréen qui produit aussi les Dualtron. Elle associe deux moteurs-roues, une batterie de 60 V et 23,4 Ah (1 404 Wh), des pneus tubeless de 10 pouces et une suspension à l'avant comme à l'arrière, pour un poids de 29 à 31 kg selon les fiches.",
+    "Livrée bridée à 25 km/h en France, elle est annoncée pour environ 70 km d'autonomie par les revendeurs français ; le testeur Electron Surfer en a mesuré près de 55. Ses deux freins à disque de 140 mm sont commandés par câble et complétés par un frein électronique réglable."
+  ],
+  "specs": [
+    [
+      "Moteurs",
+      "2 moteurs-roues : 2 × 1 000 W selon les revendeurs français, 2 × 800 W selon d'autres fiches ; 3 600 W en pointe (Trottin'Elec, Electron Surfer)"
+    ],
+    [
+      "Vitesse",
+      "25 km/h sur la voie publique ; 55 à 65 km/h annoncés, réservés à un terrain privé"
+    ],
+    [
+      "Autonomie annoncée",
+      "70 km chez les revendeurs français, jusqu'à 75 à 85 km chez d'autres"
+    ],
+    [
+      "Autonomie mesurée",
+      "environ 55 km (34 miles) pour un pilote de 79 kg, selon Electron Surfer"
+    ],
+    [
+      "Batterie",
+      "60 V, 23,4 Ah, 1 404 Wh (67,2 V en fin de charge)"
+    ],
+    [
+      "Poids",
+      "29 à 31 kg selon les fiches"
+    ],
+    [
+      "Charge max",
+      "110 à 150 kg selon les revendeurs"
+    ],
+    [
+      "Roues",
+      "10 pouces, pneus tubeless 10x2.70-6.5"
+    ],
+    [
+      "Freins",
+      "Disques de 140 mm à l'avant et à l'arrière, commande par câble, + frein électronique"
+    ],
+    [
+      "Suspension",
+      "Avant et arrière"
+    ],
+    [
+      "Étanchéité",
+      "IP54 selon certains revendeurs ; aucun indice officiel publié selon d'autres"
+    ],
+    [
+      "Prise de charge",
+      "GX16 3 broches sur les premières séries, LP16 sur des versions plus récentes (selon les revendeurs)"
+    ],
+    [
+      "Temps de charge",
+      "environ 10 à 13 h avec le chargeur standard selon les sources"
+    ]
+  ],
+  "pros": [
+    "Accélérations franches en double moteur, bien au-dessus d'une trottinette à un seul moteur (Electron Surfer).",
+    "Jante en deux parties : réparer une crevaison ne demande pas de forcer le pneu (Electron Surfer).",
+    "Grosse batterie de 1 404 Wh pour sa catégorie (Urbalt).",
+    "Guidon réglable en hauteur, pratique pour les grands comme pour les petits gabarits (test de Teddy Yang)."
+  ],
+  "cons": [
+    "29 à 31 kg : pénible à monter dans un escalier (Urbalt).",
+    "Freins à disque à câble, pas hydrauliques, et usure rapide des plaquettes relevée par des propriétaires (Urbalt, e-samokat).",
+    "Étanchéité jugée faible : l'eau peut entrer par le passage des câbles dans le plateau (avis e-samokat).",
+    "Autonomie réelle en retrait sur les chiffres des fiches (Electron Surfer)."
+  ],
+  "parts": [
+    {
+      "label": "Pneu",
+      "size": "10x2.70-6.5 tubeless (avant et arrière)",
+      "count": 6,
+      "to": "/piece/pneu-tubeless-10x2-70-6-5-cityroad-ewheel",
+      "cta": "Pneus 10x2.70-6.5"
+    },
+    {
+      "label": "Plaquettes",
+      "size": "étrier Speedway / Dualtron",
+      "count": 3,
+      "to": "/piece/plaquette-de-freins-speedway-et-dualtron",
+      "cta": "Plaquettes Speedway 5"
+    }
+  ],
+  "care": [
+    "Gonfle tes pneus tubeless autour de 3 bars, la valeur donnée par la FAQ du forum EspritRoue, et contrôle-les chaque semaine : sur une machine de 30 kg, un 10 pouces sous-gonflé s'use vite.",
+    "Les plaquettes partent vite sur cette trottinette lourde : regarde leur épaisseur tous les mois et retends les câbles de frein dès que le levier prend de la course.",
+    "Resserre régulièrement les vis de la potence et celles placées sous le garde-boue avant : plusieurs propriétaires y ont constaté du jeu ou des vis tordues."
+  ],
+  "price": {
+    "text": "Prix affichés par des revendeurs français : 1 399 € chez Urban Moov, 1 490 € chez Le Ranch (constatés en octobre 2026). Prix susceptible de varier.",
+    "source": "urbanmoov.fr, le-ranch.fr"
+  },
+  "faq": [
+    {
+      "q": "Quelle taille de pneu pour la Speedway 5 ?",
+      "a": "Du 10x2.70-6.5 tubeless, à l'avant comme à l'arrière : c'est la même cote que la Dualtron 3. Certaines boutiques proposent aussi du 10x2.75-6.5, alors vérifie la cote gravée sur ton pneu avant de commander."
+    },
+    {
+      "q": "La Speedway 5 peut-elle rouler à 60 km/h en ville ?",
+      "a": "Non. Sur la route et les pistes cyclables françaises, une trottinette électrique est limitée à 25 km/h. Les 55 à 65 km/h des fiches ne valent que sur un terrain privé, et retirer le bridage pour circuler en ville est interdit."
+    },
+    {
+      "q": "Quelle batterie équipe la Speedway 5 ?",
+      "a": "Une batterie de 60 V et 23,4 Ah, soit 1 404 Wh. Son chargeur délivre 67,2 V : c'est la tension de fin de charge d'une batterie 60 V, pas une autre version."
+    },
+    {
+      "q": "Quels freins sur la Speedway 5 ?",
+      "a": "Deux freins à disque de 140 mm, un par roue, actionnés par câble, plus un frein électronique dont tu peux régler l'intensité. Ils ne sont pas hydrauliques."
+    },
+    {
+      "q": "Quelle autonomie réelle pour la Speedway 5 ?",
+      "a": "Electron Surfer a parcouru environ 55 km avec un pilote de 79 kg, contre 70 km et plus annoncés. Le double moteur et le relief font nettement baisser ce chiffre."
+    }
+  ],
+  "sources": [
+    {
+      "label": "Le Ranch — Speedway 5",
+      "url": "https://www.le-ranch.fr/product-page/speedway-5"
+    },
+    {
+      "label": "Urban Moov — Speedway 5",
+      "url": "https://www.urbanmoov.fr/boutique/TROTTINETTE-ELECTRIQUE-SPEEDWAY-5-p414870405"
+    },
+    {
+      "label": "Urban Moov — pièces Speedway 5",
+      "url": "https://www.urbanmoov.fr/boutique/Speedway-5-c164920047"
+    },
+    {
+      "label": "Jump-way — pneu 10x2.70-6.5 Speedway 5",
+      "url": "https://jump-way.fr/produit/pneu-10x2-70-6-5-speedway-5-dt3-renforce-tubeless/"
+    },
+    {
+      "label": "YouVelo — pneu 10x2.70-6.5 Dualtron 3 / Speedway 5",
+      "url": "https://youvelo.fr/vtt/594-pneu-10x270-65-tubeless-dualtron-3-et-speedway-5.html"
+    },
+    {
+      "label": "Trottin'Elec — test Speedway 5",
+      "url": "https://trottinelec.fr/speedway-5-test-avis/"
+    },
+    {
+      "label": "Urbalt — Minimotors Speedway 5",
+      "url": "https://urbalt.ee/en/atlas/minimotors/speedway-5"
+    },
+    {
+      "label": "EspritRoue — FAQ Speedway 5",
+      "url": "https://www.espritroue.fr/topic/8917-faq-speedway-5/page/2/"
+    },
+    {
+      "label": "e-samokat — avis Speedway 5",
+      "url": "https://e-samokat.com/elektrosamokat-otzyvy/speedway-5"
+    },
+    {
+      "label": "VTT Cycliste — Speedway 5 (port LP16)",
+      "url": "https://www.vttcycliste.com/product/trottinette-electrique-speedway-5/"
+    },
+    {
+      "label": "YouTube — Speedway 5 Electric Scooter Review! (Electron Surfer)",
+      "url": "https://www.youtube.com/watch?v=mcrY7FF3ECg"
+    }
+  ],
+  "video": {
+    "id": "mcrY7FF3ECg",
+    "title": "Speedway 5 Electric Scooter Review!",
+    "channel": "Electron Surfer",
+    "uploadDate": "2020-10-29"
+  }
+}

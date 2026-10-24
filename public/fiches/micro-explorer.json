@@ -1,0 +1,121 @@
+{
+ "displayName": "Micro Explorer",
+ "metaTitle": "Micro Explorer : fiche technique, freins et entretien",
+ "metaDescription": "Micro Explorer : moteur 250 W (500 W max), batterie 36 V 7,8 Ah, roues 200 mm anti-crevaison, frein tambour, double suspension. Fiche et entretien.",
+ "intro": [
+  "La Micro Explorer est une trottinette électrique du suisse Micro Mobility, que la marque présentait comme conçue pour durer. Elle roule sur des roues de 200 mm en caoutchouc anti-crevaison, avec une suspension avant et arrière réglable et un pliage au pied.",
+  "Son moteur avant de 250 W nominaux (500 W maximum) puise dans une batterie LG de 36 V et 7,8 Ah (280 Wh), pour 30 km annoncés. La marque a arrêté de vendre ses trottinettes électriques en France fin 2026, mais les pièces restent disponibles, des roues à tambour à la batterie."
+ ],
+ "specs": [
+  [
+   "Moteur",
+   "250 W nominaux, 500 W maximum"
+  ],
+  [
+   "Vitesse",
+   "25 km/h"
+  ],
+  [
+   "Autonomie annoncée",
+   "30 km (mode Éco, pilote de 75 kg, terrain plat)"
+  ],
+  [
+   "Batterie",
+   "36 V, 7,8 Ah, 280 Wh, cellules LG"
+  ],
+  [
+   "Poids",
+   "12,5 kg (notice) à 13,5 kg (fiche produit)"
+  ],
+  [
+   "Charge max",
+   "100 kg"
+  ],
+  [
+   "Roues",
+   "200 mm (8 pouces), caoutchouc anti-crevaison"
+  ],
+  [
+   "Freins",
+   "Tambour arrière au levier, frein moteur, frein au pied"
+  ],
+  [
+   "Suspension",
+   "Avant et arrière, réglable"
+  ],
+  [
+   "Étanchéité",
+   "IP54"
+  ],
+  [
+   "Temps de charge",
+   "3 à 3,5 h"
+  ],
+  [
+   "Connexion",
+   "Bluetooth, application Micro"
+  ]
+ ],
+ "pros": [
+  "Roues anti-crevaison : aucune chambre à air à réparer (Micro).",
+  "Trois systèmes de freinage, dont un tambour arrière au levier (notice Micro).",
+  "Double suspension réglable (catalogue Micro 2022).",
+  "Pièces détachées vendues par Micro Mobility France (micro-mobility.fr)."
+ ],
+ "cons": [
+  "30 km annoncés, mesurés en mode Éco avec un pilote de 75 kg (notice).",
+  "Moteur de 250 W nominaux seulement.",
+  "Charge maximale de 100 kg (Micro).",
+  "Plus vendue neuve en France depuis l'arrêt de la gamme électrique."
+ ],
+ "parts": [],
+ "care": [
+  "Règle les suspensions selon ton poids : trop souples, elles talonnent dans les bordures ; trop fermes, tu perds l'intérêt du réglage.",
+  "Le tambour arrière se rattrape au câble : resserre-le quand le levier vient toucher la poignée en freinant.",
+  "Si ta Micro Explorer passe l'hiver au garage, recharge sa batterie à mi-niveau environ une fois par mois."
+ ],
+ "faq": [
+  {
+   "q": "Micro vend-elle encore la Micro Explorer ?",
+   "a": "Non. Micro Mobility a arrêté de vendre ses trottinettes électriques en France fin 2026. Les pièces détachées restent disponibles, ce qui te permet d'entretenir celle que tu as."
+  },
+  {
+   "q": "Quelle taille de roue sur la Micro Explorer ?",
+   "a": "Des roues de 200 mm (8 pouces) en caoutchouc anti-crevaison, sans chambre à air."
+  },
+  {
+   "q": "Quelle autonomie pour la Micro Explorer ?",
+   "a": "Micro annonce 30 km en mode Éco, sur terrain plat, à 20 °C, avec un pilote de 75 kg. En mode Sport ou en côte, prévois moins."
+  },
+  {
+   "q": "Quels freins sur la Micro Explorer ?",
+   "a": "Un tambour sur la roue arrière commandé au guidon, le frein moteur et un frein au pied par friction. Le levier déclenche aussi le frein moteur."
+  },
+  {
+   "q": "Quelle différence entre l'Explorer et l'Explorer S ?",
+   "a": "Selon le catalogue Micro 2022, l'Explorer S passe à 450 W nominaux et à une batterie de 374 Wh pour 40 km, contre 280 Wh et 30 km pour l'Explorer."
+  }
+ ],
+ "sources": [
+  {
+   "label": "Micro Mobility France — notice Micro Explorer",
+   "url": "https://www.micro-mobility.fr/img/cms/explorer.pdf"
+  },
+  {
+   "label": "Boulanger — fiche Micro Explorer",
+   "url": "https://boulanger.scene7.com/is/content/Boulanger/7630053526818_f_0"
+  },
+  {
+   "label": "Catalogue Micro Électriques 2022",
+   "url": "https://www.calameo.com/books/005948896cc8b256d8235"
+  },
+  {
+   "label": "Micro Mobility France — pièces Micro Explorer",
+   "url": "https://micro-mobility.fr/pieces-detachees/micro-explorer"
+  },
+  {
+   "label": "Micro Mobility France — Semaine de la mobilité 2022",
+   "url": "https://micro-mobility.fr/blog/semaine-europeenne-de-la-mobilite-2022/"
+  }
+ ]
+}

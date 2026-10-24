@@ -1,0 +1,159 @@
+{
+ "displayName": "Ducati Pro-III",
+ "metaTitle": "Ducati Pro-III : fiche technique, pneus et pièces",
+ "metaDescription": "Ducati Pro-III : 350 W (515 W max), batterie 36 V 13 Ah (468 Wh), 50 km annoncés, pneus tubeless 10 pouces, double frein à disque, 17,5 kg. Fiche.",
+ "intro": [
+  "La Ducati Pro-III, présentée en novembre 2021 avec MT Distribution, est la trottinette la plus équipée de la gamme Ducati Urban e-Mobility. Cadre en magnésium, roues tubeless de 10 pouces, deux freins à disque et démarrage par badge NFC : elle pèse 17,5 kg et accepte 100 kg.",
+  "Son moteur arrière de 350 W (515 W en pointe) est associé à une batterie amovible de 36 V et 13 Ah (468 Wh), pour 50 km annoncés et environ 9 heures de recharge. L'écran de 3,2 pouces intègre un port USB. Elle a été lancée au prix de 799 €, selon Frandroid et Cleanrider."
+ ],
+ "specs": [
+  [
+   "Moteur",
+   "350 W nominaux, 515 W en pointe, dans la roue arrière"
+  ],
+  [
+   "Vitesse",
+   "25 km/h (mode L4)"
+  ],
+  [
+   "Autonomie annoncée",
+   "jusqu'à 50 km"
+  ],
+  [
+   "Batterie",
+   "36 V, 13 Ah, 468 Wh, amovible (42 V en fin de charge)"
+  ],
+  [
+   "Poids",
+   "17,5 kg"
+  ],
+  [
+   "Charge max",
+   "100 kg"
+  ],
+  [
+   "Roues",
+   "10 pouces tubeless, cote 10x2.50-6.5 selon les revendeurs de pièces ; 3 bars"
+  ],
+  [
+   "Freins",
+   "Disque à l'avant et à l'arrière, avec KERS"
+  ],
+  [
+   "Suspension",
+   "non mentionnée par la fiche Ducati ; suspension arrière selon Stylistme"
+  ],
+  [
+   "Étanchéité",
+   "IPX4 (fiche Ducati) ; IPX5 pour la version Advanced Safety selon la Fnac"
+  ],
+  [
+   "Temps de charge",
+   "environ 9 h (8 h selon la Fnac)"
+  ],
+  [
+   "Chargeur",
+   "42 V, 1,5 A, fiche DC 2.1 (Ducati)"
+  ],
+  [
+   "Démarrage",
+   "badge NFC"
+  ]
+ ],
+ "pros": [
+  "Batterie de 468 Wh pour 50 km annoncés (Ducati).",
+  "Deux freins à disque (Ducati).",
+  "Port USB et démarrage par badge NFC (Cleanrider)."
+ ],
+ "cons": [
+  "Recharge longue, environ 9 heures (Ducati).",
+  "17,5 kg à porter (Ducati).",
+  "Étanchéité IPX4 sur la fiche officielle (Ducati).",
+  "Fiches contradictoires dans la presse : 280 Wh et 15,2 kg chez Le Repaire des Motards."
+ ],
+ "parts": [
+  {
+   "label": "Pneu",
+   "size": "10x2.50-6.5 (60/70-6.5) tubeless, avant et arrière",
+   "count": 13,
+   "to": "/piece/pneu-tubeless-10x2-50-6-5-yuanxing",
+   "cta": "Pneus 10x2.50-6.5"
+  },
+  {
+   "label": "Chargeur",
+   "size": "36 V (sortie 42 V), prise DC 5,5 x 2,1 mm",
+   "count": 1,
+   "to": "/piece/chargeur-36v-42v-2a-connecteur-dc-55-21mm",
+   "cta": "Chargeur 36 V"
+  }
+ ],
+ "care": [
+  "L'hiver, retire la batterie amovible pour la recharger dans une pièce chauffée : une batterie lithium ne doit pas se charger sous 0 °C.",
+  "Avec deux disques, contrôle les plaquettes avant et arrière séparément : elles ne s'usent pas au même rythme.",
+  "Garde le second badge NFC livré dans un endroit sûr : c'est lui qui te dépanne si tu perds le premier."
+ ],
+ "price": {
+  "text": "Prix de lancement : 799 € (novembre 2021). Prix susceptible de varier.",
+  "source": "Frandroid, Cleanrider"
+ },
+ "faq": [
+  {
+   "q": "Quelle taille de pneu pour la Ducati Pro-III ?",
+   "a": "Du 10 pouces tubeless en 10x2.50-6.5, la même cote que la Pro-II Evo. Gonfle à 3 bars, comme l'indique la notice Ducati."
+  },
+  {
+   "q": "Combien de temps pour recharger la Ducati Pro-III ?",
+   "a": "Environ 9 heures avec le chargeur d'origine de 42 V et 1,5 A. La batterie se retire : tu peux la charger hors de la trottinette."
+  },
+  {
+   "q": "Comment démarre la Ducati Pro-III ?",
+   "a": "Tu passes un badge NFC devant l'écran ; deux badges sont fournis. L'application Ducati Urban e-Mobility affiche ensuite la charge et la dernière position connue."
+  },
+  {
+   "q": "Quelle différence entre la Pro-III et la Pro-III Evo ?",
+   "a": "La boutique Ducati vend une Pro-III Evo « Turn Signal » aux mêmes chiffres : 350 W, 468 Wh et 50 km. Son nom indique l'ajout de clignotants."
+  },
+  {
+   "q": "La Pro-III a-t-elle des freins hydrauliques ?",
+   "a": "Frandroid l'a écrit au lancement, mais la fiche technique Ducati parle seulement de freins à disque avant et arrière avec récupération d'énergie, sans mentionner d'hydraulique."
+  }
+ ],
+ "sources": [
+  {
+   "label": "Ducati Urban e-Mobility — fiche technique Pro-III (EN)",
+   "url": "https://www.ducatiurbanemobility.com/wp-content/uploads/2021/11/Ducati_PRO-III_EN_-data_sheet_10_21.pdf"
+  },
+  {
+   "label": "Ducati — présentation de la Pro-III",
+   "url": "https://www.ducati.com/gb/en/news/ducati-and-mt-distribution-present-pro-iii-the-most-advanced-electric-scooter-of-the-ducati-urban-e-mobility-line"
+  },
+  {
+   "label": "Cleanrider — Ducati Pro-III",
+   "url": "https://www.cleanrider.com/actus/ducati-pro-iii-une-trottinette-electrique-encore-plus-performante/"
+  },
+  {
+   "label": "Frandroid — Ducati Pro-III",
+   "url": "https://www.frandroid.com/survoltes/trottinette-electrique/1116607_ducati-revele-une-nouvelle-trottinette-electrique-endurante-a-defaut-de-se-lancer-dans-les-motos-branchees"
+  },
+  {
+   "label": "Notice Facile — Ducati Pro-III",
+   "url": "https://www.notice-facile.com/notice/625774/ducati+proiii"
+  },
+  {
+   "label": "Fnac — Ducati Pro III Advanced Safety",
+   "url": "https://www.fnac.com/Trottinette-electrique-Ducati-Pro-III-Advanced-Safety-avec-clignotants-515-W-Noir-et-Rouge/a17895474/w-4"
+  },
+  {
+   "label": "Boutique Ducati — Pro III Evo Turn Signal",
+   "url": "https://shop.ducati.com/fr/fr/trottinette-ducati-pro-iii-evo-turn-signal.html"
+  },
+  {
+   "label": "Golden Ride — pneus Ducati",
+   "url": "https://shop.goldenride.it/en/catalog/spare-parts/scooters/wheel-tires"
+  },
+  {
+   "label": "Le Repaire des Motards — Ducati Pro-III",
+   "url": "https://www.lerepairedesmotards.com/actualites/2021/trottinette-electrique-ducati-pro-iii.php"
+  }
+ ]
+}
