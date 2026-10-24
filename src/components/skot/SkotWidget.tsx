@@ -3,7 +3,8 @@
 // Téléphone : plein écran à l'ouverture. Ordinateur : panneau de 400 px à droite.
 import { useEffect, useRef, useState, type FormEvent } from "react";
 import { Link, useLocation } from "react-router-dom";
-import { X, Send, Camera, Loader2, ShoppingCart, ThumbsUp, ThumbsDown } from "lucide-react";
+import { X, Send, Camera, Loader2, ShoppingCart, ThumbsUp, ThumbsDown, Search } from "lucide-react";
+import { useSpotlight } from "@/contexts/SpotlightContext";
 import { readBarreBasVariant } from "@/components/navigation/MobileNavProposals";
 import SkotAvatar from "./SkotAvatar";
 import SkotLauncher, { readSkotBtnVariant } from "./SkotLauncher";
@@ -78,6 +79,7 @@ const SkotWidget = () => {
   const [inNav] = useState(() => readBarreBasVariant() === 5);
   // 24/10 : ?skotbtn=1..4 = SKOT qui sort de la barre du bas (téléphone) ; l'ordinateur garde le bouton vert.
   const [btn] = useState(readSkotBtnVariant);
+  const { openSpotlight } = useSpotlight();
   useEffect(() => { listRef.current?.scrollTo({ top: listRef.current.scrollHeight, behavior: "smooth" }); }, [msgs, busy]);
   useEffect(() => {
     if (!open) return;
@@ -151,6 +153,20 @@ const SkotWidget = () => {
               <X className="w-6 h-6" />
             </button>
           </div>
+
+          {/* 24/10 (Nolan) : SKOT a pris la place de la loupe dans la barre du bas → la recherche classique reste à un toucher, ici. */}
+          <button
+            type="button"
+            onClick={() => { setOpen(false); openSpotlight(); }}
+            className="mx-3 mt-3 p-[2px] bg-[#1A1A1A] text-left"
+            style={{ clipPath: CHAMFER }}
+          >
+            <span className="flex items-center gap-2.5 min-h-[46px] px-3 bg-white" style={{ clipPath: "polygon(0 0, calc(100% - 11px) 0, 100% 11px, 100% 100%, 0 100%)" }}>
+              <Search className="w-5 h-5 shrink-0 text-[#4A7C59]" strokeWidth={2.6} />
+              <span className="flex-1 min-w-0 truncate text-[15px] text-[#6B6B6B]">Chercher une pièce…</span>
+              <span className="text-xs font-extrabold uppercase italic text-[#4A7C59]">Recherche</span>
+            </span>
+          </button>
 
           <div ref={listRef} className="flex-1 overflow-y-auto px-3 py-4 space-y-3" aria-live="polite">
             {msgs.map((m, i) =>
