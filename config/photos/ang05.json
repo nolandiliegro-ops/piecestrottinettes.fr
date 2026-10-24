@@ -1,0 +1,481 @@
+{
+ "lot": "ang05",
+ "models": [
+  {
+   "id": "52da403f-64c5-4f51-a3e9-e45c959f648e",
+   "slug": "cecotec-bongo-d20",
+   "name": "Cecotec Bongo D20",
+   "brand": "Cecotec",
+   "candidates": [
+    "https://cdn.webshopapp.com/shops/210536/files/425443713/1652x1652x2/cecotec-cecotec-elektrische-scooter-bongo-d20-seri.jpg",
+    "https://cdn.webshopapp.com/shops/210536/files/425443714/1652x1652x2/cecotec-cecotec-elektrische-scooter-bongo-d20-seri.jpg",
+    "https://cdn.webshopapp.com/shops/210536/files/425443716/1652x1652x2/cecotec-cecotec-elektrische-scooter-bongo-d20-seri.jpg",
+    "https://cdn.webshopapp.com/shops/210536/files/425443717/1652x1652x2/cecotec-cecotec-elektrische-scooter-bongo-d20-seri.jpg",
+    "https://cdn.webshopapp.com/shops/210536/files/425443712/1652x1652x2/cecotec-cecotec-elektrische-scooter-bongo-d20-seri.jpg",
+    "https://cdn.webshopapp.com/shops/210536/files/425443715/1652x1652x2/cecotec-cecotec-elektrische-scooter-bongo-d20-seri.jpg"
+   ]
+  },
+  {
+   "id": "66a99376-6188-4c90-9c11-5cc93a7d65d3",
+   "slug": "cecotec-bongo-doble-y85-2x2-xxl-connected",
+   "name": "Cecotec Bongo Doble Y85 2x2 XXL Connected",
+   "brand": "Cecotec",
+   "candidates": [
+    "https://media.cecotec.cloud/09280/bongo-doble-y85-2x2-xxl-connected_0xk2yj_2.png",
+    "https://media.cecotec.cloud/09280/bongo-doble-y85-2x2-xxl-connected_fx0f0q_3.png",
+    "https://media.cecotec.cloud/09280/bongo-doble-y85-2x2-xxl-connected_0r7tcq_4.jpg",
+    "https://media.cecotec.cloud/09280/bongo-doble-y85-2x2-xxl-connected_xs8fve_5.jpg",
+    "https://media.cecotec.cloud/09280/bongo-doble-y85-2x2-xxl-connected_ht91u9_6.jpg",
+    "https://media.cecotec.cloud/09280/bongo-doble-y85-2x2-xxl-connected_1awp69_7.jpg",
+    "https://media.cecotec.cloud/09280/bongo-doble-y85-2x2-xxl-connected_bd5vqv_8.jpg",
+    "https://media.cecotec.cloud/09280/bongo-doble-y85-2x2-xxl-connected_2e457r_1.png"
+   ]
+  },
+  {
+   "id": "227ebd25-e7b5-4a74-b5f6-a4ef3c519d5d",
+   "slug": "cecotec-bongo-serie-a-advance-connected",
+   "name": "Cecotec Bongo Serie A Advance Connected",
+   "brand": "Cecotec",
+   "candidates": [
+    "https://www.discoazul.com/uploads/media/images/scooter-electrico-cecotec-bongo-serie-a-advance-connected-gris-11.jpg",
+    "https://www.discoazul.com/uploads/media/images/scooter-electrico-cecotec-bongo-serie-a-advance-connected-gris-12.jpg",
+    "https://www.discoazul.com/uploads/media/images/scooter-electrico-cecotec-bongo-serie-a-advance-connected-gris-13.jpg",
+    "https://www.discoazul.com/uploads/media/images/scooter-electrico-cecotec-bongo-serie-a-advance-connected-gris-14.jpg",
+    "https://www.discoazul.com/uploads/media/images/scooter-electrico-cecotec-bongo-serie-a-advance-connected-gris-1.jpg",
+    "https://d2e6ccujb3mkqf.cloudfront.net/81ca0a1f-6b00-496c-a88b-8aae6e65afa6-1_45fc7988-80bb-4d88-8d9c-4933d515c02e.jpg"
+   ]
+  },
+  {
+   "id": "623b64ff-6779-4823-8442-682dcdf0e729",
+   "slug": "cecotec-bongo-serie-m30-connected",
+   "name": "Cecotec Bongo Serie M30 Connected",
+   "brand": "Cecotec",
+   "candidates": [
+    "https://media.cecotec.cloud/07106/bongo-serie-m30-connected_qfcp5z_1.png",
+    "https://media.cecotec.cloud/07106/bongo-serie-m30-connected_uq37de_2.png",
+    "https://media.cecotec.cloud/07106/bongo-serie-m30-connected_xfbuu2_4.jpg",
+    "https://media.cecotec.cloud/07106/bongo-serie-m30-connected_7qhz5t_5.jpg",
+    "https://media.cecotec.cloud/07106/bongo-serie-m30-connected_dxbe3o_6.jpg",
+    "https://media.cecotec.cloud/07106/bongo-serie-m30-connected_uguts9_7.jpg",
+    "https://media.cecotec.cloud/07106/bongo-serie-m30-connected_xq250f_8.jpg",
+    "https://media.cecotec.cloud/07106/bongo-serie-m30-connected_main.jpg"
+   ]
+  },
+  {
+   "id": "db0b21d2-113f-473d-8efe-1bf86f452604",
+   "slug": "hitway-h5-pro",
+   "name": "Hitway H5 Pro",
+   "brand": "Hitway",
+   "candidates": [
+    "https://m.media-amazon.com/images/I/71gT6+bQBiL.jpg",
+    "https://m.media-amazon.com/images/I/615WqedS0WL.jpg",
+    "https://m.media-amazon.com/images/I/61I8i4lpWeL.jpg",
+    "https://m.media-amazon.com/images/I/51ZRbEeJ7HL.jpg",
+    "https://m.media-amazon.com/images/I/41W7v49d5bL.jpg"
+   ]
+  },
+  {
+   "id": "957d9276-930d-4ae2-bfee-fcd7ba99a184",
+   "slug": "hitway-h9",
+   "name": "Hitway H9",
+   "brand": "Hitway",
+   "candidates": [
+    "https://electricbikescootercar.co.uk/wp-content/uploads/2025/02/s-l1600-1-1.webp",
+    "https://electricbikescootercar.co.uk/wp-content/uploads/2025/02/s-l1600-2-1.webp",
+    "https://electricbikescootercar.co.uk/wp-content/uploads/2025/02/s-l1600-3-1.webp",
+    "https://electricbikescootercar.co.uk/wp-content/uploads/2025/02/s-l1600-4-1.webp",
+    "https://electricbikescootercar.co.uk/wp-content/uploads/2025/02/s-l1600-5-1.webp",
+    "https://electricbikescootercar.co.uk/wp-content/uploads/2025/02/s-l1600-6-1.webp",
+    "https://electricbikescootercar.co.uk/wp-content/uploads/2025/02/s-l1600-7-1.webp"
+   ]
+  },
+  {
+   "id": "1ac13d13-9a17-432e-b6b7-7136686ef078",
+   "slug": "hitway-h9-pro",
+   "name": "Hitway H9 Pro",
+   "brand": "Hitway",
+   "candidates": [
+    "https://b2b.hitway.eu/wp-content/uploads/2024/11/2-4.jpg",
+    "https://b2b.hitway.eu/wp-content/uploads/2024/11/3-4.jpg",
+    "https://b2b.hitway.eu/wp-content/uploads/2024/11/4-4.jpg",
+    "https://b2b.hitway.eu/wp-content/uploads/2024/11/5-4.jpg",
+    "https://b2b.hitway.eu/wp-content/uploads/2024/11/6-4.jpg",
+    "https://b2b.hitway.eu/wp-content/uploads/2024/11/7-4.jpg",
+    "https://b2b.hitway.eu/wp-content/uploads/2024/11/8.jpg",
+    "https://b2b.hitway.eu/wp-content/uploads/2024/11/9.jpg",
+    "https://b2b.hitway.eu/wp-content/uploads/2024/11/10.jpg",
+    "https://b2b.hitway.eu/wp-content/uploads/2024/11/1-5.jpg"
+   ]
+  },
+  {
+   "id": "bea5df5d-c3d0-4916-b2c7-7f65cb7c2fe0",
+   "slug": "inokim-light-2",
+   "name": "Inokim Light 2",
+   "brand": "Inokim",
+   "candidates": [
+    "https://www.maxblinker.fr/134-panda_thickbox_default/inokim-light-2.jpg",
+    "https://www.maxblinker.fr/135-panda_thickbox_default/inokim-light-2.jpg",
+    "https://www.maxblinker.fr/136-panda_thickbox_default/inokim-light-2.jpg",
+    "https://www.maxblinker.fr/137-panda_thickbox_default/inokim-light-2.jpg",
+    "https://www.maxblinker.fr/138-panda_thickbox_default/inokim-light-2.jpg",
+    "https://www.maxblinker.fr/139-panda_thickbox_default/inokim-light-2.jpg",
+    "https://www.maxblinker.fr/140-panda_thickbox_default/inokim-light-2.jpg",
+    "https://www.maxblinker.fr/141-panda_thickbox_default/inokim-light-2.jpg",
+    "https://www.maxblinker.fr/155-panda_thickbox_default/inokim-light-2.jpg"
+   ]
+  },
+  {
+   "id": "5913ac8b-2571-4f37-9288-6993f320a9ac",
+   "slug": "inokim-light-2-max",
+   "name": "Inokim Light 2 Max",
+   "brand": "Inokim",
+   "candidates": [
+    "https://alternative.bike/3304-large_default/trottinette-electrique-inokim-light-2-max.jpg",
+    "https://alternative.bike/3305-large_default/trottinette-electrique-inokim-light-2-max.jpg",
+    "https://alternative.bike/3306-large_default/trottinette-electrique-inokim-light-2-max.jpg",
+    "https://alternative.bike/3307-large_default/trottinette-electrique-inokim-light-2-max.jpg",
+    "https://alternative.bike/3308-large_default/trottinette-electrique-inokim-light-2-max.jpg",
+    "https://alternative.bike/3309-large_default/trottinette-electrique-inokim-light-2-max.jpg",
+    "https://alternative.bike/3310-large_default/trottinette-electrique-inokim-light-2-max.jpg",
+    "https://alternative.bike/3311-large_default/trottinette-electrique-inokim-light-2-max.jpg",
+    "https://cdn.shopify.com/s/files/1/0870/8993/8748/files/L_1.png?v=1762970903",
+    "https://cdn.shopify.com/s/files/1/0870/8993/8748/files/light-product-green.png?v=1762970903"
+   ]
+  },
+  {
+   "id": "4daec1e9-e9c3-44a0-9f92-7660d7a7ef0d",
+   "slug": "inokim-oxo",
+   "name": "Inokim OXO",
+   "brand": "Inokim",
+   "candidates": [
+    "https://cdn.shopify.com/s/files/1/0870/8993/8748/files/carbon_01_d41db245-891a-4963-9d03-15ebaf02147a.jpg?v=1742141079",
+    "https://cdn.shopify.com/s/files/1/0870/8993/8748/files/carbon_red_03_1_819x_f0c43991-5dbe-4832-8f14-98e39d4223fd.webp?v=1728396485",
+    "https://pietechnologie.com/cdn/shop/products/trottinette-electrique-oxo-inokim_1200x1200.jpg?v=1669346096",
+    "https://pietechnologie.com/cdn/shop/products/TrottinetteelectriqueInokimOXO-60V25Ah-PIETECHNOLOGIE-min_1200x1200.png?v=1669346096",
+    "https://pietechnologie.com/cdn/shop/products/trottinette-electrique-oxo-inokim-26Ah-pietechnologie_1200x1200.png?v=1665587474",
+    "https://pietechnologie.com/cdn/shop/products/trottinette-electrique-oxo-inokim-60V-pietechnologie_1200x1200.png?v=1665587474"
+   ]
+  },
+  {
+   "id": "f004d366-d5fb-4fec-9e90-2cf9af19cd38",
+   "slug": "inokim-oxo-super",
+   "name": "Inokim OXO Super",
+   "brand": "Inokim",
+   "candidates": [
+    "https://cdn.shopify.com/s/files/1/0870/8993/8748/files/carbon_01_d41db245-891a-4963-9d03-15ebaf02147a.jpg?v=1742141079",
+    "https://cdn.shopify.com/s/files/1/0870/8993/8748/files/carbon_red_03_1_819x_f0c43991-5dbe-4832-8f14-98e39d4223fd.webp?v=1728396485",
+    "https://pietechnologie.com/cdn/shop/products/trottinette-electrique-oxo-inokim_1200x1200.jpg?v=1669346096",
+    "https://pietechnologie.com/cdn/shop/products/TrottinetteelectriqueInokimOXO-60V25Ah-PIETECHNOLOGIE-min_1200x1200.png?v=1669346096",
+    "https://pietechnologie.com/cdn/shop/products/trottinette-electrique-oxo-inokim-26Ah-pietechnologie_1200x1200.png?v=1665587474",
+    "https://pietechnologie.com/cdn/shop/products/trottinette-electrique-oxo-inokim-60V-pietechnologie_1200x1200.png?v=1665587474"
+   ]
+  },
+  {
+   "id": "818f5f7c-c28b-4c70-88c0-55c24a5deb76",
+   "slug": "inokim-quick-4",
+   "name": "Inokim Quick 4",
+   "brand": "Inokim",
+   "candidates": [
+    "https://www.maxblinker.fr/9262-panda_thickbox_default/inokim-quick-4.jpg",
+    "https://www.maxblinker.fr/9263-panda_thickbox_default/inokim-quick-4.jpg",
+    "https://www.maxblinker.fr/9264-panda_thickbox_default/inokim-quick-4.jpg",
+    "https://www.maxblinker.fr/9265-panda_thickbox_default/inokim-quick-4.jpg",
+    "https://www.maxblinker.fr/9266-panda_thickbox_default/inokim-quick-4.jpg",
+    "https://www.maxblinker.fr/9267-panda_thickbox_default/inokim-quick-4.jpg",
+    "https://www.maxblinker.fr/9268-panda_thickbox_default/inokim-quick-4.jpg",
+    "https://www.maxblinker.fr/9269-panda_thickbox_default/inokim-quick-4.jpg",
+    "https://cdn.shopify.com/s/files/1/0870/8993/8748/files/Q_1.png?v=1742157557"
+   ]
+  },
+  {
+   "id": "cc99c820-15c6-40f1-bd29-1be9adbe2963",
+   "slug": "kuickwheel-f1",
+   "name": "Kuickwheel F1",
+   "brand": "Kuickwheel",
+   "candidates": [
+    "https://cdn.shopify.com/s/files/1/0902/8013/2992/files/TROTTINETTEKUICKWHEELF136V7_8Ah_1.jpg?v=1760375395",
+    "https://cdn.shopify.com/s/files/1/0902/8013/2992/files/TROTTINETTEKUICKWHEELF136V7_8Ah_2.jpg?v=1760375395",
+    "https://cdn.shopify.com/s/files/1/0902/8013/2992/files/TROTTINETTEKUICKWHEELF136V7_8Ah_3.jpg?v=1760375395",
+    "https://cdn.shopify.com/s/files/1/0902/8013/2992/files/TROTTINETTEKUICKWHEELF136V7_8Ah_4.jpg?v=1760375395",
+    "https://cdn.shopify.com/s/files/1/0902/8013/2992/files/TROTTINETTEKUICKWHEELF136V7_8Ah_5.jpg?v=1760375395",
+    "https://cdn.shopify.com/s/files/1/0902/8013/2992/files/TROTTINETTEKUICKWHEELF136V7_8Ah_6.jpg?v=1760375395",
+    "https://cdn.shopify.com/s/files/1/0902/8013/2992/files/TROTTINETTEKUICKWHEELF136V7_8Ah_7.jpg?v=1760375395",
+    "https://cdn.shopify.com/s/files/1/0902/8013/2992/files/TROTTINETTEKUICKWHEELF136V7_8Ah_8.jpg?v=1760375395",
+    "https://cdn.shopify.com/s/files/1/0902/8013/2992/files/KUICKWHEELF1_TROTTINETTEKUICKWHEELF136V7_8Ah.jpg?v=1760375396"
+   ]
+  },
+  {
+   "id": "bd356df9-d381-484e-800e-ce48490d73fd",
+   "slug": "kuickwheel-s1-c-pro",
+   "name": "Kuickwheel S1-C Pro",
+   "brand": "Kuickwheel",
+   "candidates": [
+    "https://cdn.shopify.com/s/files/1/0959/8697/5069/files/TROTTINETTEKUICKWHEELS1-CPRO36V13Ah.jpg?v=1757572700",
+    "https://cdn.shopify.com/s/files/1/0959/8697/5069/files/TROTTINETTEKUICKWHEELS1-CPRO36V13Ah_2.jpg?v=1757572700",
+    "https://cdn.shopify.com/s/files/1/0959/8697/5069/files/TROTTINETTEKUICKWHEELS1-CPRO36V13Ah_3.jpg?v=1757572700",
+    "https://cdn.shopify.com/s/files/1/0959/8697/5069/files/TROTTINETTEKUICKWHEELS1-CPRO36V13Ah_4.jpg?v=1757572700",
+    "https://cdn.shopify.com/s/files/1/0959/8697/5069/files/TROTTINETTEKUICKWHEELS1-CPRO36V13Ah_1.jpg?v=1757572700",
+    "https://cdn.shopify.com/s/files/1/0959/8697/5069/files/KUICKWHEELS1CPRO_TROTTINETTEKUICKWHEELS1-CPRO36V13Ah.jpg?v=1757572615"
+   ]
+  },
+  {
+   "id": "d68b5703-975e-40e3-84a5-0c448a16fb8d",
+   "slug": "kuickwheel-s9",
+   "name": "Kuickwheel S9",
+   "brand": "Kuickwheel",
+   "candidates": [
+    "https://www.minimotors.fr/web/image/product.image/685/image_1024/TROTTINETTE%20KUICKWHEEL%20S9%2036V%2015%2C6%20Ah%20GRIS?unique=6ae0d4a",
+    "https://www.minimotors.fr/web/image/product.image/686/image_1024/TROTTINETTE%20KUICKWHEEL%20S9%2036V%2015%2C6%20Ah%20GRIS?unique=6ae0d4a",
+    "https://www.minimotors.fr/web/image/product.image/687/image_1024/TROTTINETTE%20KUICKWHEEL%20S9%2036V%2015%2C6%20Ah%20GRIS?unique=6ae0d4a",
+    "https://www.minimotors.fr/web/image/product.image/688/image_1024/TROTTINETTE%20KUICKWHEEL%20S9%2036V%2015%2C6%20Ah%20GRIS?unique=6ae0d4a",
+    "https://www.minimotors.fr/web/image/product.image/689/image_1024/TROTTINETTE%20KUICKWHEEL%20S9%2036V%2015%2C6%20Ah%20GRIS?unique=6ae0d4a",
+    "https://fastride.fr/11251-large_default/trottinette-electrique-kuickwheel-s9.jpg",
+    "https://fastride.fr/11252-large_default/trottinette-electrique-kuickwheel-s9.jpg"
+   ]
+  },
+  {
+   "id": "ac87c3ac-d036-444c-abf8-1d0a4709142a",
+   "slug": "laotie-es10p",
+   "name": "Laotie ES10P",
+   "brand": "Laotie",
+   "candidates": [
+    "https://icbimg.chiccdn.com/laotie/thumb/view//08/06/d38f0b75-a306-474f-a758-cf3c2ee45be1.jpg",
+    "https://icbimg.chiccdn.com/laotie/thumb/view//42/9E/883cfdf1-88ad-4c20-b886-d412a846b552.jpg",
+    "https://icbimg.chiccdn.com/laotie/thumb/view//16/0D/291ac8ad-a8cf-4a03-a10f-6d889868c4dd.jpg",
+    "https://icbimg.chiccdn.com/laotie/thumb/view//9D/16/55e046c1-b9b7-4005-9ffb-dc69d5bd03a1.jpg",
+    "https://icbimg.chiccdn.com/laotie/thumb/view//4C/32/b09de9fd-48e1-4e46-8afe-e744df8faf85.jpg",
+    "https://icbimg.chiccdn.com/laotie/thumb/view//16/ED/53eca3df-a75b-4e3c-b5a7-e6a67805283d.jpg",
+    "https://icbimg.chiccdn.com/laotie/thumb/view//D5/CD/abcdec5c-7736-471c-838f-5f3dd21bcc82.jpg",
+    "https://icbimg.chiccdn.com/laotie/thumb/view//30/54/aa0f794c-4907-48f2-afa5-8f8914eada15.jpg"
+   ]
+  },
+  {
+   "id": "ffb5779f-cd7c-4c54-97fe-44c1ee85a4e4",
+   "slug": "laotie-es19",
+   "name": "Laotie ES19",
+   "brand": "Laotie",
+   "candidates": [
+    "https://icbimg.chiccdn.com/laotie/thumb/view//7F/A2/112a8875-e6cc-4930-b939-b9003b4e491a.jpg",
+    "https://icbimg.chiccdn.com/laotie/thumb/view//67/42/76672a2e-045b-4d44-af9d-183a568d5127.jpg",
+    "https://icbimg.chiccdn.com/laotie/thumb/view//C6/9C/9767b1df-1388-4d3b-b57f-0e9e2221040a.jpg",
+    "https://icbimg.chiccdn.com/laotie/thumb/view//89/08/c77237fc-2417-4da7-8b32-0019978ba59d.jpg",
+    "https://icbimg.chiccdn.com/laotie/thumb/view//A0/0D/82047b34-edb4-4cb0-9360-6cc7cf7975aa.jpg",
+    "https://icbimg.chiccdn.com/laotie/thumb/view//7D/7D/9149793a-acef-4f46-be88-94f2da747d63.jpg",
+    "https://icbimg.chiccdn.com/laotie/thumb/view//B6/B2/8b039439-c2f3-4d1b-a107-b1f0df8b5252.jpg",
+    "https://icbimg.chiccdn.com/laotie/thumb/view//B5/5A/b14fd1b2-f83a-40e2-8e19-b65260cc5e97.jpg",
+    "https://icbimg.chiccdn.com/laotie/thumb/view//DC/90/9491a753-94a2-4022-982c-4c26d3aada1d.jpg"
+   ]
+  },
+  {
+   "id": "4fc4e753-0dd7-4c2e-bb11-6ffc8f01a048",
+   "slug": "laotie-h6-pro",
+   "name": "Laotie H6 Pro",
+   "brand": "Laotie",
+   "candidates": [
+    "https://icbimg.chiccdn.com/laotie/thumb/view//10/29/ad661e4e-003d-4a92-b618-13d0901350ed.jpg",
+    "https://icbimg.chiccdn.com/laotie/thumb/view//EF/3F/2f42a1e3-30bd-4f2a-97bf-db6f3f0b499f.jpg",
+    "https://icbimg.chiccdn.com/laotie/thumb/view//5A/86/173b54f8-6bef-4a07-92eb-65a74524d834.jpg",
+    "https://icbimg.chiccdn.com/laotie/thumb/view//51/F0/1a97e28b-9f07-4984-8f1e-a075d161fca1.jpg",
+    "https://icbimg.chiccdn.com/laotie/thumb/view//06/64/e4051c05-dc71-4dd6-8f6b-355bfb4f54b1.jpg",
+    "https://icbimg.chiccdn.com/laotie/thumb/view//24/3C/63c5939c-2cf5-4ec8-8da7-16b3b91a8516.jpg",
+    "https://icbimg.chiccdn.com/laotie/thumb/view//8B/AF/e6d0529b-382e-4fe0-8392-994a9910c0cb.jpg",
+    "https://icbimg.chiccdn.com/laotie/thumb/view//A1/DD/e7ffc04d-c770-4856-a7a8-9288f116f290.jpg",
+    "https://icbimg.chiccdn.com/laotie/thumb/view//45/5F/66a81e2b-098f-4fbf-b588-5f5ded6cbf48.jpg"
+   ]
+  },
+  {
+   "id": "436e7f75-6b6b-47da-a231-f9fd83ab43fd",
+   "slug": "laotie-sr10",
+   "name": "Laotie SR10",
+   "brand": "Laotie",
+   "candidates": [
+    "https://icbimg.chiccdn.com/laotie/thumb/view//73/32/22662598-af51-41cd-a421-172f80f6ba44.png",
+    "https://icbimg.chiccdn.com/laotie/thumb/view//B1/7C/90bf7b47-d512-4f17-bb11-a1c35ad1e00b.jpg",
+    "https://icbimg.chiccdn.com/laotie/thumb/view//94/60/4cb52ae4-fac9-4644-b6bf-65529f1ae9d1.jpg",
+    "https://icbimg.chiccdn.com/laotie/thumb/view//BB/4D/9be42cbf-97f8-4579-8691-1bdd1041cf04.jpg",
+    "https://icbimg.chiccdn.com/laotie/thumb/view//C8/BD/1ea194a4-84cb-4ebf-8e18-426d3012a292.jpg",
+    "https://icbimg.chiccdn.com/laotie/thumb/view//F4/32/dd88e3d9-3d16-43ae-a366-b07aeb3cfd35.jpg",
+    "https://icbimg.chiccdn.com/laotie/thumb/view//66/08/a5c85895-2e28-404b-a128-29d14de108d1.jpg",
+    "https://icbimg.chiccdn.com/laotie/thumb/view//3A/D7/bc9db11a-05d4-48c8-8f7d-676caaaf0184.jpg",
+    "https://icbimg.chiccdn.com/laotie/thumb/view//0E/C4/6afa1398-8e5a-4d71-b9b8-7963567f9f4c.jpg"
+   ]
+  },
+  {
+   "id": "4b3d9fe8-2b24-4672-81a2-6c9d5c349b30",
+   "slug": "pure-electric-advance",
+   "name": "Pure Electric Advance",
+   "brand": "Pure Electric",
+   "candidates": [
+    "https://cdn.shopify.com/s/files/1/0710/1156/5788/files/pure-scooter-black-advance-33049038159960_8ff43706-06bf-455b-b413-c510296ddf78.jpg?v=1751530755",
+    "https://cdn.shopify.com/s/files/1/0710/1156/5788/files/pure-scooter-advance-30263663067224_ca3bcfcc-ff18-44fe-b05a-7492b53f6101.jpg?v=1751530756",
+    "https://cdn.shopify.com/s/files/1/0710/1156/5788/files/pure-scooter-advance-30263663132760_6ba72163-e477-4819-b130-2a632d75b226.jpg?v=1751530757",
+    "https://cdn.shopify.com/s/files/1/0710/1156/5788/files/pure-scooter-advance-30263663099992_c66f38de-cef7-4fc4-938c-f1818c076204.jpg?v=1751530759",
+    "https://cdn.shopify.com/s/files/1/0710/1156/5788/files/pure-scooter-advance-30263662936152_f708b176-248f-4c36-a615-9277135a8e83.jpg?v=1751530760",
+    "https://cdn.shopify.com/s/files/1/0710/1156/5788/files/pure-scooter-advance-32040596865112_a71eae41-bd01-431d-a3d2-36fb025e49a9.jpg?v=1751530762",
+    "https://cdn.shopify.com/s/files/1/0710/1156/5788/files/pure-scooter-advance-32040596734040_00e715b1-d746-4b13-ae94-d498f2b004ea.jpg?v=1751530763",
+    "https://cdn.shopify.com/s/files/1/0710/1156/5788/files/pure-scooter-grey-advance-32234873618520_9012391f-fb10-45f9-b368-ae905b170443.jpg?v=1751530764",
+    "https://cdn.shopify.com/s/files/1/0710/1156/5788/files/pure-scooter-advance-30263662903384_eefde4bd-36e2-4f86-a734-81876aedc893.jpg?v=1751530766"
+   ]
+  },
+  {
+   "id": "387a8089-21b2-4562-9c2e-79a7c7d3bb90",
+   "slug": "pure-electric-advance-plus",
+   "name": "Pure Electric Advance+",
+   "brand": "Pure Electric",
+   "candidates": [
+    "https://cdn.shopify.com/s/files/1/0710/1156/5788/files/pure-scooter-platinum-advance-33049019514968_07bd266e-ea16-4782-9022-11532716baa7.jpg?v=1751530685",
+    "https://cdn.shopify.com/s/files/1/0710/1156/5788/files/pure-scooter-mercury-grey-advance-33049019482200_df13cf51-4c43-44ea-b206-10a81403c90c.jpg?v=1751530691",
+    "https://cdn.shopify.com/s/files/1/0710/1156/5788/files/pure-scooter-advance-32930306588760_adb968da-db82-46bc-a553-f44e7eba9ad7.jpg?v=1751530686",
+    "https://cdn.shopify.com/s/files/1/0710/1156/5788/files/pure-scooter-advance-32930313437272_62d2e937-f07c-47a5-acdc-66888bf1b6a6.jpg?v=1751530688",
+    "https://cdn.shopify.com/s/files/1/0710/1156/5788/files/pure-scooter-advance-32930305441880_59a14ac2-8b52-4c80-b251-e6cef3d5614e.jpg?v=1751530690",
+    "https://cdn.shopify.com/s/files/1/0710/1156/5788/files/pure-scooter-advance-32930312093784_a513327a-72e7-4cc9-afe5-01c95f6be7dc.jpg?v=1751530692",
+    "https://cdn.shopify.com/s/files/1/0710/1156/5788/files/pure-scooter-advance-32930315108440_af28f22d-9922-4701-859b-fb1ac9e79974.jpg?v=1751530694",
+    "https://cdn.shopify.com/s/files/1/0710/1156/5788/files/pure-scooter-advance-32930369732696_50755462-f3f3-4f54-890b-b23a0b7dd4f7.png?v=1751530699"
+   ]
+  },
+  {
+   "id": "1af89d70-8ec4-4d92-98f3-4a420ed65f96",
+   "slug": "pure-electric-air-5",
+   "name": "Pure Electric Air⁵",
+   "brand": "Pure Electric",
+   "candidates": [
+    "https://rapidscooter.co.uk/wp-content/uploads/2025/09/pure-scooter-black-air-1166903966.webp",
+    "https://rapidscooter.co.uk/wp-content/uploads/2025/09/pure-scooter-black-air-1166903968.webp",
+    "https://rapidscooter.co.uk/wp-content/uploads/2025/09/pure-scooter-black-air-1166903969.webp",
+    "https://rapidscooter.co.uk/wp-content/uploads/2025/09/pure-scooter-black-air-1166903970.webp"
+   ]
+  },
+  {
+   "id": "904b41de-dfc3-43a9-b05d-5fb8550479ef",
+   "slug": "pure-escape",
+   "name": "Pure Escape",
+   "brand": "Pure Electric",
+   "candidates": [
+    "https://cdn.shopify.com/s/files/1/0063/2714/0425/files/pure-scooter-black-gunmetal-escape-1244805360.jpg",
+    "https://cdn.shopify.com/s/files/1/0063/2714/0425/files/pure-scooter-black-gunmetal-escape-1247004510.jpg",
+    "https://cdn.shopify.com/s/files/1/0063/2714/0425/files/pure-scooter-black-gunmetal-escape-1244805358.jpg",
+    "https://cdn.shopify.com/s/files/1/0063/2714/0425/files/pure-scooter-black-gunmetal-escape-1244805355.jpg",
+    "https://cdn.shopify.com/s/files/1/0063/2714/0425/files/pure-scooter-black-gunmetal-escape-1244805352.jpg",
+    "https://cdn.shopify.com/s/files/1/0063/2714/0425/files/pure-scooter-black-gunmetal-escape-1244805349.jpg",
+    "https://cdn.shopify.com/s/files/1/0063/2714/0425/files/pure-scooter-black-gunmetal-escape-1244805346.jpg",
+    "https://cdn.shopify.com/s/files/1/0063/2714/0425/files/pure-scooter-black-gunmetal-escape-1244805343.jpg",
+    "https://cdn.shopify.com/s/files/1/0063/2714/0425/files/pure-scooter-black-gunmetal-escape-1244805340.jpg"
+   ]
+  },
+  {
+   "id": "c9958d10-3f92-4b3d-9033-4def32009130",
+   "slug": "weped-ff",
+   "name": "Weped FF",
+   "brand": "Weped",
+   "candidates": [
+    "https://cdn.shopify.com/s/files/1/0517/1416/2860/products/ff-1.jpg?v=1635131684",
+    "https://cdn.shopify.com/s/files/1/0517/1416/2860/products/ScreenShot2022-03-30at1.37.49AM.png?v=1648618919",
+    "https://cdn.shopify.com/s/files/1/0517/1416/2860/products/ScreenShot2022-03-30at1.37.58AM.png?v=1648618918",
+    "https://cdn.shopify.com/s/files/1/0517/1416/2860/products/ScreenShot2022-03-30at1.38.07AM.png?v=1648618918",
+    "https://cdn.shopify.com/s/files/1/0517/1416/2860/products/ScreenShot2022-03-30at1.38.16AM.png?v=1648618918",
+    "https://cdn.shopify.com/s/files/1/0517/1416/2860/products/ScreenShot2022-03-30at1.38.26AM.png?v=1648618919"
+   ]
+  },
+  {
+   "id": "3b4f4646-de12-4670-a6ef-72ac6d79b9a7",
+   "slug": "weped-fold-11",
+   "name": "Weped Fold 11",
+   "brand": "Weped",
+   "candidates": [
+    "https://cdn.shopify.com/s/files/1/0506/5113/6182/products/trottinette-electrique-weped-fold-11.jpg?v=1632923311"
+   ]
+  },
+  {
+   "id": "098ce5d9-a1d0-4157-b0c4-13690ac8e64e",
+   "slug": "weped-ssgt",
+   "name": "Weped SSGT",
+   "brand": "Weped",
+   "candidates": [
+    "https://fastride.fr/19623-large_default/trottinette-electrique-weped-ssgt.jpg",
+    "https://fastride.fr/19622-large_default/trottinette-electrique-weped-ssgt.jpg",
+    "https://fastride.fr/19624-large_default/trottinette-electrique-weped-ssgt.jpg"
+   ]
+  },
+  {
+   "id": "70da46ff-7b49-4173-b3aa-cf257ba46f0d",
+   "slug": "yeep-me-100a-start",
+   "name": "Yeep.me 100a start",
+   "brand": "Yeep.me",
+   "candidates": [
+    "https://yeep.me/3810-thickbox_default/yeepme-100a-start.jpg",
+    "https://yeep.me/3811-thickbox_default/yeepme-100a-start.jpg",
+    "https://yeep.me/3812-thickbox_default/yeepme-100a-start.jpg",
+    "https://yeep.me/3813-thickbox_default/yeepme-100a-start.jpg",
+    "https://yeep.me/3814-thickbox_default/yeepme-100a-start.jpg",
+    "https://yeep.me/3815-thickbox_default/yeepme-100a-start.jpg",
+    "https://yeep.me/3816-thickbox_default/yeepme-100a-start.jpg",
+    "https://yeep.me/3818-thickbox_default/yeepme-100a-start.jpg",
+    "https://yeep.me/3808-thickbox_default/yeepme-100a-start.jpg"
+   ]
+  },
+  {
+   "id": "b50b8790-d064-45cf-ab0b-5e9c17856ac1",
+   "slug": "yeep-me-85a-evo",
+   "name": "Yeep.me 85a Evo",
+   "brand": "Yeep.me",
+   "candidates": [
+    "https://yeep.me/4222-thickbox_default/yeepme-85a-evo.jpg",
+    "https://yeep.me/4223-thickbox_default/yeepme-85a-evo.jpg",
+    "https://yeep.me/4224-thickbox_default/yeepme-85a-evo.jpg",
+    "https://yeep.me/4225-thickbox_default/yeepme-85a-evo.jpg",
+    "https://yeep.me/4226-thickbox_default/yeepme-85a-evo.jpg",
+    "https://yeep.me/4227-thickbox_default/yeepme-85a-evo.jpg",
+    "https://yeep.me/4228-thickbox_default/yeepme-85a-evo.jpg",
+    "https://yeep.me/4229-thickbox_default/yeepme-85a-evo.jpg",
+    "https://yeep.me/4221-thickbox_default/yeepme-85a-evo.jpg"
+   ]
+  },
+  {
+   "id": "8e785e6a-472f-4979-ada7-007c831c7e9c",
+   "slug": "zero-10x",
+   "name": "Zero 10X",
+   "brand": "Zero",
+   "candidates": [
+    "https://cdn.shopify.com/s/files/1/0908/0796/files/ZERO_10X_lower_profile.jpg?v=1553337177",
+    "https://cdn.shopify.com/s/files/1/0908/0796/files/ZERO_10X_top_profile.jpg?v=1553336826",
+    "https://cdn.shopify.com/s/files/1/1809/7915/products/20180923_Zero_13.jpg?v=1590231548",
+    "https://cdn.shopify.com/s/files/1/1809/7915/products/20180923_Zero_15.jpg?v=1590231548",
+    "https://cdn.shopify.com/s/files/1/1809/7915/products/20180923_Zero_21.jpg?v=1590231548",
+    "https://cdn.shopify.com/s/files/1/1809/7915/products/20180923_Zero_24.jpg?v=1590231548",
+    "https://cdn.shopify.com/s/files/1/0908/0796/files/ZERO_10X_Rear_brake_small.jpg?v=1553336622",
+    "https://cdn.shopify.com/s/files/1/0908/0796/files/ZERO_10X_front_motor.jpg?v=1553336887",
+    "https://cdn.shopify.com/s/files/1/1809/7915/products/zero10x_d9750b21-1a3b-4521-a407-10bbfe697fd3.png?v=1590231548"
+   ]
+  },
+  {
+   "id": "ba5bd11f-43ac-47cb-8894-1ab023654c80",
+   "slug": "zero-11x",
+   "name": "Zero 11X",
+   "brand": "Zero",
+   "candidates": [
+    "https://cdn.shopify.com/s/files/1/1809/7915/products/KS7pjfqJQMeufJGdN1ay_ZERO_11X_render_3_ffe69f7c-b19c-4091-8373-25775650ff71.jpg?v=1634351545",
+    "https://cdn.shopify.com/s/files/1/1809/7915/products/YIlwSXEcSuirRcrUtF8A_ZERO_11X_render_4_db613c51-4ef0-4cb8-9a9e-e6dc97c7f471.jpg?v=1634351545",
+    "https://cdn.shopify.com/s/files/1/1809/7915/products/dua_1d872987-8a32-4183-b911-aec36fcfb750.jpg?v=1634351545",
+    "https://cdn.shopify.com/s/files/1/1809/7915/products/Zero-11X-Electric-Scooter-Standing_aa5b6410-edfb-47f2-8026-bb29293edbf6.jpg?v=1634351544",
+    "https://cdn.shopify.com/s/files/1/1809/7915/products/Zero-11X-Electric-Scooter_15a2cbde-974c-4ba9-92a7-f9e34318c3d7.jpg?v=1634351544",
+    "https://cdn.shopify.com/s/files/1/1809/7915/products/uRI3xOGJT3acDMTCYWXk_IMG_8923_with_logo_4934d568-fc20-4b44-9dec-8b7e5e4c00ae.png?v=1634351545"
+   ]
+  },
+  {
+   "id": "e771d2cb-50ba-4172-b89e-83e23ac27cae",
+   "slug": "zero-9",
+   "name": "Zero 9",
+   "brand": "Zero",
+   "candidates": [
+    "https://cdn.shopify.com/s/files/1/1809/7915/products/Zero9-folded-rear-view.png?v=1590231682",
+    "https://cdn.shopify.com/s/files/1/1809/7915/products/zero-9-tail-lights.png?v=1590231683",
+    "https://cdn.shopify.com/s/files/1/1809/7915/products/zero-steering-led-lights.png?v=1590231683",
+    "https://cdn.shopify.com/s/files/1/1809/7915/products/zero-9-rear-rear-suspension.png?v=1590231683",
+    "https://cdn.shopify.com/s/files/1/1809/7915/products/zero-9-l-c-d.png?v=1590231682",
+    "https://cdn.shopify.com/s/files/1/1809/7915/products/zero-9-front-disc.png?v=1590231683",
+    "https://cdn.shopify.com/s/files/1/1809/7915/products/zero-9-two-brakes.png?v=1590231683",
+    "https://cdn.shopify.com/s/files/1/1809/7915/products/zero-9.png?v=1590231682"
+   ]
+  }
+ ]
+}
