@@ -18,8 +18,8 @@ export interface Partner {
   perks?: PartnerPerk[];
   /** Logo du partenaire (public/partners/…), utilisé avec son accord. */
   logo?: string;
-  /** 24/10/2026 — arguments courts affichés sous le prix dans « Où acheter » (2 à 3, lus sur le site du
-   *  partenaire le jour indiqué, jamais inventés ; à relire si la boutique change ses conditions). */
+  /** 24/10/2026 — arguments affichés dans « Où acheter » : 2 ou 3, deux-trois mots chacun (Nolan : « trop de texte »),
+   *  lus sur le site du partenaire le 24/10 (« Stock en Europe » ENGWE = entrepôts France et Pologne), jamais inventés. */
   atouts?: string[];
 }
 
@@ -28,7 +28,7 @@ export const PARTNERS: Record<string, Partner> = {
     name: "Dualtron Store",
     tagline: "La boutique officielle Dualtron en France",
     logo: "/partners/dualtron-store.webp",
-    atouts: ["Boutique officielle Dualtron", "2 boutiques avec atelier, Paris et Le Mans", "Paiement jusqu'à 60 fois"],
+    atouts: ["Boutique officielle", "Showroom Paris et Le Mans", "Jusqu'à 60× sans frais"],
     perks: [
       { title: "Officiel", text: "Trottinettes et pièces 100 % officielles, réparation Dualtron" },
       { title: "Paris & Le Mans", text: "2 boutiques avec showroom et atelier : tu peux l'essayer" },
@@ -45,16 +45,16 @@ export const PARTNERS: Record<string, Partner> = {
 const OFFICIAL = (name: string, atouts?: string[]): Partner => ({ name, tagline: "Boutique officielle de la marque", ...(atouts ? { atouts } : {}) });
 Object.assign(PARTNERS, {
   "mi.com": OFFICIAL("Xiaomi France"),
-  "iscooter.fr": OFFICIAL("iScooter France", ["Livraison gratuite en France", "Paiement en 3 ou 4 fois sans frais", "Retour sous 30 jours"]),
-  "naveetech.fr": OFFICIAL("NAVEE France", ["Garantie jusqu'à 3 ans", "Paiement plus tard avec Klarna, 0 % d'intérêt"]),
-  "isinwheel.fr": OFFICIAL("isinwheel France", ["Livraison gratuite en 2 à 3 jours", "Paiement en 3 fois sans frais", "Garantie jusqu'à 24 mois"]),
+  "iscooter.fr": OFFICIAL("iScooter France", ["Livraison offerte", "3 ou 4× sans frais", "Retour 30 jours"]),
+  "naveetech.fr": OFFICIAL("NAVEE France", ["Garantie jusqu'à 3 ans", "Klarna 0 %"]),
+  "isinwheel.fr": OFFICIAL("isinwheel France", ["Livraison offerte", "3× sans frais", "Garantie jusqu'à 2 ans"]),
   // 24/10/2026 — atouts lus le 24/10 sur la page d'accueil ou les conditions de chaque boutique (mi.com : aucun).
   // 23/10/2026 — GoAffPro : boutique EU officielle de la marque (livraison FR lue dans /meta.json).
-  "haloknights.com": OFFICIAL("HALO KNIGHT Europe", ["Livraison gratuite"]),
-  "teverunshop.com": OFFICIAL("Teverun Europe", ["Expédiée sous 1 à 2 jours ouvrés", "Retour sous 14 jours"]),
-  "fr.engwe.com": OFFICIAL("ENGWE France", ["Livraison gratuite en 2 à 5 jours", "Expédiée depuis la France ou la Pologne", "Retour sous 30 jours"]),
+  "haloknights.com": OFFICIAL("HALO KNIGHT Europe", ["Livraison offerte"]),
+  "teverunshop.com": OFFICIAL("Teverun Europe", ["Expédiée en 1 à 2 jours", "Retour 14 jours"]),
+  "fr.engwe.com": OFFICIAL("ENGWE France", ["Livraison offerte", "Stock en Europe", "Retour 30 jours"]),
   // 24/10/2026 — GoAffPro OOTD (o-otd.com, boutique officielle, livraison FR prouvée le 24/10).
-  "o-otd.com": OFFICIAL("OOTD", ["Garantie 2 ans", "Retour sous 30 jours"]),
+  "o-otd.com": OFFICIAL("OOTD", ["Garantie 2 ans", "Retour 30 jours"]),
   // 24/10/2026 — Amazon Partenaires : dernier recours, posé à la main par Nolan sur les fiches sans autre offre.
   "amazon.fr": { name: "Amazon" },
 });

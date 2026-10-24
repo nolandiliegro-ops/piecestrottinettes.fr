@@ -50,7 +50,8 @@ export const livePrice = (price?: number | null, checkedAt?: string | null): num
   const age = (Date.now() - new Date(checkedAt).getTime()) / 86_400_000;
   return age <= 7 ? price : null;
 };
-const eur = (n: number) => `${new Intl.NumberFormat("fr-FR", { maximumFractionDigits: 0 }).format(n).replace(/\s/g, "\u00a0")}\u00a0€`;
+// 24/10 : centimes affichés quand le prix en a (578,99 € et non 579 €) : même prix en haut et dans « Où acheter ».
+const eur = (n: number) => `${new Intl.NumberFormat("fr-FR", { minimumFractionDigits: n % 1 ? 2 : 0, maximumFractionDigits: n % 1 ? 2 : 0 }).format(n).replace(/\s/g, "\u00a0")}\u00a0€`;
 
 type P = Partner & { host: string };
 const isOfficial = (p: P) => (p.tagline ?? "").toLowerCase().includes("officielle");
@@ -175,10 +176,10 @@ export const boutonParam = (): AffilLook | null => {
 const DAMIER = `repeating-conic-gradient(${CARBON} 0 25%, #F5F0E8 0 50%) 0 0 / 14px 14px`;
 const TAG = "polygon(14px 0, 100% 0, 100% 100%, 14px 100%, 0 50%)";
 /** Bouton d'affiliation « Étiquette » : partagé par le bouton du haut et le comparateur. Lien externe = rel sponsored. */
-export const TagLink = ({ href, onClick, line1, line2, price, full = false }: { href: string; onClick?: (e: React.MouseEvent) => void; line1: string; line2?: string; price?: number | null; full?: boolean }) => {
+export const TagLink = ({ href, onClick, line1, line2, price, full = false, placement = "comparateur" }: { href: string; onClick?: (e: React.MouseEvent) => void; line1: string; line2?: string; price?: number | null; full?: boolean; placement?: string }) => {
   const external = !href.startsWith("#");
   return (
-    <a href={href} onClick={onClick} {...(external ? { target: "_blank", rel: "sponsored noopener noreferrer", "data-placement": "comparateur" } : {})}
+    <a href={href} onClick={onClick} {...(external ? { target: "_blank", rel: "sponsored noopener noreferrer", "data-placement": placement } : {})}
       className={`group inline-block ${full ? "w-full" : "w-full sm:w-auto"} p-[2px] transition-transform hover:-translate-y-0.5`} style={{ background: CARBON, clipPath: TAG, fontFamily: FONT, color: CARBON }}>
       <span className="relative flex items-center gap-4 min-h-[60px] pl-9 pr-5" style={{ background: "#F5F0E8", clipPath: TAG }}>
         <span className="absolute left-[19px] top-1/2 -translate-y-1/2 w-2.5 h-2.5 rounded-full" style={{ background: CARBON }} />
@@ -192,7 +193,8 @@ export const TagLink = ({ href, onClick, line1, line2, price, full = false }: { 
     </a>
   );
 };
-const AffilHero = ({ look, p, price }: { look: AffilLook; p: P; price: number | null }) => {
+const hautDescend = () => typeof window !== "undefined" && new URLSearchParams(window.location.search).get("haut") === "descend";
+const AffilHero = ({ look, p, price, url }: { look: AffilLook; p: P; price: number | null; url: string }) => {
   const priceTxt = price != null ? eur(price) : null;
   const ital = { fontFamily: UNB, fontWeight: 900, fontStyle: "italic" as const };
   const props = { href: "#ou-acheter", onClick: goBlock };
@@ -209,7 +211,11 @@ const AffilHero = ({ look, p, price }: { look: AffilLook; p: P; price: number | 
     </a>
   );
   // 2 · Étiquette (RETENUE le 24/10) : une vraie étiquette de prix (pointe + œillet), beige cerclée carbone.
-  if (look === 2) return <div className="mt-3"><TagLink href="#ou-acheter" onClick={goBlock} line1="Où l'acheter" line2={`chez ${p.name}`} price={price} /></div>;
+  // 24/10 soir (Nolan : « on a l'impression de cliquer deux fois sur le même bouton ») : elle va DIRECTEMENT chez le
+  // vendeur, lien suivi (un clic au lieu de deux). ?haut=descend = ancien comportement (descend vers « Où acheter »).
+  if (look === 2) return hautDescend()
+    ? <div className="mt-3"><TagLink href="#ou-acheter" onClick={goBlock} line1="Où l'acheter" line2={`chez ${p.name}`} price={price} /></div>
+    : <div className="mt-3 grid gap-1 justify-items-start"><TagLink href={url} line1="Voir l'offre" line2={`chez ${p.name}`} price={price} placement="fiche-haut" /><span className="text-sm text-gray-500">Lien partenaire</span></div>;
   // 3 · Choix de l'atelier : carte blanche cerclée carbone, badge « Choix de l'atelier » qui déborde en haut.
   if (look === 3) return (
     <a {...props} className="group mt-6 relative inline-flex items-center gap-4 w-full sm:w-auto min-h-[68px] px-5 bg-white transition-transform hover:-translate-y-0.5" style={{ boxShadow: `inset 0 0 0 2.5px ${CARBON}, 5px 5px 0 ${CARBON}`, fontFamily: FONT, color: CARBON }}>
@@ -253,7 +259,7 @@ const AffilHero = ({ look, p, price }: { look: AffilLook; p: P; price: number | 
 export const BuyHeroButton = ({ look, url, price }: { look: BuyLook; url: string; price: number | null }) => {
   const p = partnerOf(url);
   const af = boutonParam();
-  if (af && p) return <div className="basis-full"><AffilHero look={af} p={p} price={price} /></div>;
+  if (af && p) return <div className="basis-full"><AffilHero look={af} p={p} price={price} url={url} /></div>;
   const skin = offreParam();
   if (skin && p) return <div className="mt-3"><OfferSkinButton skin={skin} url={url} p={p} price={price} full={false} hero /></div>;
   const name = p?.name ?? "notre partenaire";
