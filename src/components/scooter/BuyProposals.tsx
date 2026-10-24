@@ -35,10 +35,13 @@ export const achatParam = (): BuyLook | null => {
 
 /** Bouton « Voir l'offre » (24/10) : Nolan trouve le vert + noir « particulier » → 5 peaux derrière ?offre=1..5. */
 export type OfferSkin = 0 | 1 | 2 | 3 | 4 | 5;
+// 24/10 (choix de Nolan, reco) : « Grand vert deux lignes » (4) par défaut ; ?offre=0 = ancien bouton carbone + vert.
 export const offreParam = (): OfferSkin => {
-  if (typeof window === "undefined") return 0;
-  const n = Number(new URLSearchParams(window.location.search).get("offre"));
-  return (n >= 1 && n <= 5 ? n : 0) as OfferSkin;
+  if (typeof window === "undefined") return 4;
+  const sp = new URLSearchParams(window.location.search);
+  if (!sp.has("offre")) return 4;
+  const n = Number(sp.get("offre"));
+  return (n >= 0 && n <= 5 ? n : 4) as OfferSkin;
 };
 
 /** Prix « en ce moment » : relevé il y a 7 jours ou moins, sinon null. */

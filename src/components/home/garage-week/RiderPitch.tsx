@@ -16,9 +16,12 @@ const PAPER = "#FAFAF8";
 const cut = (px: number) => `polygon(0 0, calc(100% - ${px}px) 0, 100% ${px}px, 100% 100%, 0 100%)`;
 
 export type RiderPitchLook = 1 | 2 | 3 | 4 | 5;
+// 24/10 (choix de Nolan, reco) : « La carte d'abord » (2) par défaut ; ?rider=0 = ancienne liste (wallpapers).
 export const riderParam = (): RiderPitchLook | null => {
-  if (typeof window === "undefined") return null;
-  const n = Number(new URLSearchParams(window.location.search).get("rider"));
+  if (typeof window === "undefined") return 2;
+  const sp = new URLSearchParams(window.location.search);
+  if (!sp.has("rider")) return 2;
+  const n = Number(sp.get("rider"));
   return n >= 1 && n <= 5 ? (n as RiderPitchLook) : null;
 };
 

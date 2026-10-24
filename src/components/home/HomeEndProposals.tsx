@@ -17,9 +17,12 @@ const LINE = "#E7E1D6";
 const cut = (px: number) => `polygon(0 0, calc(100% - ${px}px) 0, 100% ${px}px, 100% 100%, 0 100%)`;
 
 export type EndLook = 1 | 2 | 3 | 4 | 5;
+// 24/10 (choix de Nolan, reco) : « L'Atelier en vitrine » (2) par défaut ; ?fin=0 = favoris + ancienne bande.
 export const finParam = (): EndLook | null => {
-  if (typeof window === "undefined") return null;
-  const n = Number(new URLSearchParams(window.location.search).get("fin"));
+  if (typeof window === "undefined") return 2;
+  const sp = new URLSearchParams(window.location.search);
+  if (!sp.has("fin")) return 2;
+  const n = Number(sp.get("fin"));
   return n >= 1 && n <= 5 ? (n as EndLook) : null;
 };
 
