@@ -9,6 +9,7 @@
  */
 import { useState } from "react";
 import { PartnerBlockNew, achatParam, useBuyCtx } from "@/components/scooter/BuyProposals";
+import { OfferComparator, comparoParam } from "@/components/scooter/OfferComparator";
 import { Link } from "react-router-dom";
 import { ArrowRight, Check, ChevronDown, Minus, Play, ShieldCheck } from "lucide-react";
 import { partnerOf } from "@/config/partners";
@@ -338,6 +339,9 @@ export const PartnerBlock = ({ url, name }: { url: string; name: string }) => {
   const achat = achatParam();
   const p = partnerOf(url);
   if (!p) return null;
+  // 24/10 : comparateur multi-offres (?comparo=1..5), lit scooter_offers ; sans paramètre : inchangé.
+  const comparo = comparoParam();
+  if (comparo) return <OfferComparator look={comparo} name={name} />;
   // 24/10 : propositions « Où l'acheter » (?achat=1..5).
   if (achat) return <PartnerBlockNew look={achat} url={url} name={name} price={buy.price} brandLogo={buy.brandLogo} />;
   const v = variantParam();

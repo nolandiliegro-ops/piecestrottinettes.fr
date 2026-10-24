@@ -20,7 +20,7 @@ const CHAMFER = "polygon(0 0, calc(100% - 12px) 0, 100% 12px, 100% 100%, 0 100%)
 const CHAMFER_L = "polygon(0 0, calc(100% - 18px) 0, 100% 18px, 100% 100%, 0 100%)";
 
 /** Prix frais et logo de marque de la fiche ouverte, lus par le bloc partenaire sans traverser 4 composants. */
-export const BuyCtx = createContext<{ price: number | null; brandLogo: string | null }>({ price: null, brandLogo: null });
+export const BuyCtx = createContext<{ price: number | null; brandLogo: string | null; scooterId?: string | null }>({ price: null, brandLogo: null, scooterId: null });
 export const useBuyCtx = () => useContext(BuyCtx);
 
 export type BuyLook = 1 | 2 | 3 | 4 | 5;
@@ -160,9 +160,93 @@ const OfferSkinButton = ({ skin, url, p, price, full, hero = false }: { skin: Of
   );
 };
 
+// ─── Bouton d'affiliation (24/10, Nolan) ───────────────────────────────────
+// Vert = actions du site, orange = achat de NOS produits : les trottinettes recommandées en affiliation ont leur
+// propre signature, dans la charte (carbone, beige, damier). Propositions derrière ?bouton=1..5 ; sans paramètre : inchangé.
+export type AffilLook = 1 | 2 | 3 | 4 | 5;
+export const boutonParam = (): AffilLook | null => {
+  if (typeof window === "undefined") return null;
+  const sp = new URLSearchParams(window.location.search);
+  if (!sp.has("bouton")) return null;
+  const n = Number(sp.get("bouton"));
+  return n >= 1 && n <= 5 ? (n as AffilLook) : null;
+};
+const DAMIER = `repeating-conic-gradient(${CARBON} 0 25%, #F5F0E8 0 50%) 0 0 / 14px 14px`;
+const TAG = "polygon(14px 0, 100% 0, 100% 100%, 14px 100%, 0 50%)";
+const AffilHero = ({ look, p, price }: { look: AffilLook; p: P; price: number | null }) => {
+  const priceTxt = price != null ? eur(price) : null;
+  const ital = { fontFamily: UNB, fontWeight: 900, fontStyle: "italic" as const };
+  const props = { href: "#ou-acheter", onClick: goBlock };
+  // 1 · Damier : carbone, bande damier de course à gauche, prix sur pastille beige.
+  if (look === 1) return (
+    <a {...props} className="group mt-3 inline-flex items-stretch w-full sm:w-auto min-h-[64px] text-white transition-transform hover:-translate-y-0.5" style={{ background: CARBON, clipPath: CHAMFER_L, fontFamily: FONT }}>
+      <span className="w-5 shrink-0" style={{ background: DAMIER }} />
+      <span className="flex-1 flex flex-col justify-center px-4 py-2">
+        <span className="text-base font-extrabold uppercase tracking-wider leading-tight whitespace-nowrap">Où l'acheter</span>
+        <span className="text-sm text-white/70 leading-tight whitespace-nowrap">chez {p.name}</span>
+      </span>
+      {priceTxt && <span className="flex items-center px-4 text-xl text-[#1A1A1A]" style={{ background: "#F5F0E8", ...ital }}>{priceTxt}</span>}
+      <span className="flex items-center justify-center w-12 pr-1"><ArrowRight className="w-5 h-5 transition-transform group-hover:translate-x-0.5" /></span>
+    </a>
+  );
+  // 2 · Étiquette : une vraie étiquette de prix (pointe + œillet), beige cerclée carbone (contour qui suit la pointe).
+  if (look === 2) return (
+    <a {...props} className="group mt-3 inline-block w-full sm:w-auto p-[2px] transition-transform hover:-translate-y-0.5" style={{ background: CARBON, clipPath: TAG, fontFamily: FONT, color: CARBON }}>
+      <span className="relative flex items-center gap-4 min-h-[60px] pl-9 pr-5" style={{ background: "#F5F0E8", clipPath: TAG }}>
+        <span className="absolute left-[19px] top-1/2 -translate-y-1/2 w-2.5 h-2.5 rounded-full" style={{ background: CARBON }} />
+        <span className="flex-1 min-w-0">
+          <span className="block text-base font-extrabold uppercase tracking-wider leading-tight whitespace-nowrap">Où l'acheter</span>
+          <span className="block text-sm text-gray-600 leading-tight truncate">chez {p.name}</span>
+        </span>
+        {priceTxt && <span className="text-2xl whitespace-nowrap" style={ital}>{priceTxt}</span>}
+        <ArrowRight className="w-5 h-5 shrink-0 transition-transform group-hover:translate-x-0.5" />
+      </span>
+    </a>
+  );
+  // 3 · Choix de l'atelier : carte blanche cerclée carbone, badge « Choix de l'atelier » qui déborde en haut.
+  if (look === 3) return (
+    <a {...props} className="group mt-6 relative inline-flex items-center gap-4 w-full sm:w-auto min-h-[68px] px-5 bg-white transition-transform hover:-translate-y-0.5" style={{ boxShadow: `inset 0 0 0 2.5px ${CARBON}, 5px 5px 0 ${CARBON}`, fontFamily: FONT, color: CARBON }}>
+      <span className="absolute -top-3 left-4 px-2 py-0.5 text-sm font-extrabold uppercase tracking-wider text-white" style={{ background: CARBON }}>Choix de l'atelier</span>
+      <span className="flex-1 min-w-0 pt-1">
+        <span className="block text-base font-extrabold uppercase tracking-wider leading-tight whitespace-nowrap">Où l'acheter</span>
+        <span className="block text-sm text-gray-600 leading-tight whitespace-nowrap">chez {p.name}</span>
+      </span>
+      {priceTxt && <span className="text-2xl whitespace-nowrap" style={ital}>{priceTxt}</span>}
+      <ArrowRight className="w-5 h-5 shrink-0 transition-transform group-hover:translate-x-0.5" />
+    </a>
+  );
+  // 4 · Carbone premium : noir texturé de fines diagonales, filet beige intérieur, prix beige.
+  if (look === 4) return (
+    <a {...props} className="group mt-3 inline-flex items-center gap-4 w-full sm:w-auto min-h-[68px] pl-6 pr-2 text-white transition-transform hover:-translate-y-0.5"
+      style={{ background: `repeating-linear-gradient(135deg, #1A1A1A 0 6px, #222 6px 7px)`, clipPath: CHAMFER_L, boxShadow: "inset 0 0 0 1px rgba(245,240,232,0.35)", fontFamily: FONT }}>
+      <span className="flex-1 min-w-0">
+        <span className="block text-sm font-bold uppercase tracking-[0.2em] text-[#F5F0E8]/70 leading-tight">Recommandé</span>
+        <span className="block text-base font-extrabold uppercase tracking-wider leading-tight whitespace-nowrap">Où l'acheter</span>
+        <span className="block text-sm text-white/70 leading-tight truncate">chez {p.name}</span>
+      </span>
+      {priceTxt && <span className="text-2xl whitespace-nowrap text-[#F5F0E8]" style={ital}>{priceTxt}</span>}
+      <span className="w-11 h-11 shrink-0 flex items-center justify-center bg-[#F5F0E8] text-[#1A1A1A]"><ArrowRight className="w-5 h-5 transition-transform group-hover:translate-x-0.5" /></span>
+    </a>
+  );
+  // 5 · Ruban partenaire : barre beige pleine largeur, ruban carbone « Partenaire » à gauche, prix à droite.
+  return (
+    <a {...props} className="group mt-3 flex items-stretch w-full min-h-[64px] transition-transform hover:-translate-y-0.5" style={{ background: "#F5F0E8", boxShadow: `inset 0 0 0 1.5px ${CARBON}`, fontFamily: FONT, color: CARBON }}>
+      <span className="flex items-center pl-3 pr-5 text-sm font-extrabold uppercase tracking-wider text-white" style={{ background: CARBON, clipPath: "polygon(0 0, 100% 0, calc(100% - 12px) 50%, 100% 100%, 0 100%)" }}>Partenaire</span>
+      <span className="flex-1 min-w-0 flex flex-col justify-center px-4 py-2">
+        <span className="text-base font-extrabold uppercase tracking-wider leading-tight whitespace-nowrap">Où l'acheter</span>
+        <span className="text-sm text-gray-600 leading-tight truncate">chez {p.name}</span>
+      </span>
+      {priceTxt && <span className="flex items-center px-3 text-2xl whitespace-nowrap" style={ital}>{priceTxt}</span>}
+      <span className="flex items-center pr-4"><ArrowRight className="w-5 h-5 transition-transform group-hover:translate-x-0.5" /></span>
+    </a>
+  );
+};
+
 // ─── Bouton du haut (à côté de « Pièces compatibles ») ─────────────────────
 export const BuyHeroButton = ({ look, url, price }: { look: BuyLook; url: string; price: number | null }) => {
   const p = partnerOf(url);
+  const af = boutonParam();
+  if (af && p) return <div className="basis-full"><AffilHero look={af} p={p} price={price} /></div>;
   const skin = offreParam();
   if (skin && p) return <div className="mt-3"><OfferSkinButton skin={skin} url={url} p={p} price={price} full={false} hero /></div>;
   const name = p?.name ?? "notre partenaire";

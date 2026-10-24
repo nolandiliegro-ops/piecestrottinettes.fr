@@ -212,7 +212,7 @@ const ScooterDetail = () => {
       />
       <ShowroomHeader />
 
-      <BuyCtx.Provider value={{ price: livePrice(scooter.price_eur, scooter.price_checked_at), brandLogo: scooter.brand?.logo_url ?? null }}>
+      <BuyCtx.Provider value={{ price: livePrice(scooter.price_eur, scooter.price_checked_at), brandLogo: scooter.brand?.logo_url ?? null, scooterId: scooter.id }}>
       <motion.main
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}

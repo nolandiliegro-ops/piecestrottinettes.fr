@@ -48,6 +48,10 @@ Object.assign(PARTNERS, {
   "haloknights.com": OFFICIAL("HALO KNIGHT Europe"),
   "teverunshop.com": OFFICIAL("Teverun Europe"),
   "fr.engwe.com": OFFICIAL("ENGWE France"),
+  // 24/10/2026 — GoAffPro OOTD (o-otd.com, boutique officielle, livraison FR prouvée le 24/10).
+  "o-otd.com": OFFICIAL("OOTD"),
+  // 24/10/2026 — Amazon Partenaires : dernier recours, posé à la main par Nolan sur les fiches sans autre offre.
+  "amazon.fr": { name: "Amazon" },
 });
 
 const shopUrlOf = (url: string): URL => {
