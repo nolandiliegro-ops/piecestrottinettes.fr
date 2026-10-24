@@ -1,0 +1,212 @@
+bogist-m1-elite #0 PASS ok
+bogist-m1-elite #1 PASS ok
+bogist-m1-elite #2 PASS ok
+bogist-m1-elite #3 PASS ok
+bogist-m1-elite #4 PASS ok
+bogist-m1-elite #5 PASS ok
+e-twow-booster-es #0 PASS ok
+e-twow-booster-es #1 PASS ok
+e-twow-booster-es #2 PASS ok
+e-twow-booster-es #3 PASS ok
+e-twow-booster-es #4 WARN cadrage serré
+e-twow-booster-es #5 WARN cadrage serré
+e-twow-booster-es #6 PASS ok
+e-twow-booster-es #7 PASS ok
+e-twow-booster-es #8 WARN basse définition
+e-twow-booster-se #0 ERROR Input buffer contains unsupported image format
+e-twow-booster-se #1 ERROR Input buffer contains unsupported image format
+e-twow-booster-se #2 ERROR Input buffer contains unsupported image format
+e-twow-booster-se #3 ERROR Input buffer contains unsupported image format
+e-twow-booster-se #4 ERROR Input buffer contains unsupported image format
+e-twow-booster-se #5 ERROR Input buffer contains unsupported image format
+e-twow-booster-se #6 PASS ok
+e-twow-booster-v #0 PASS ok
+e-twow-booster-v #1 PASS ok
+e-twow-booster-v #2 PASS ok
+e-twow-booster-v #3 PASS ok
+e-twow-booster-v #4 PASS ok
+e-twow-gt-se #0 WARN basse définition
+e-twow-gt-se #1 WARN basse définition · cadrage serré
+e-twow-gt-se #2 FAIL détourage sale / résidu de décor · basse définition
+e-twow-gt-se #3 FAIL bandeau, pas un produit · basse définition · cadrage serré
+e-twow-gt-se #4 WARN basse définition
+e-twow-gt-se #5 WARN basse définition
+e-twow-gt-se #6 WARN basse définition · cadrage serré
+e-twow-gt-se #7 PASS ok
+e-twow-gt-se #8 FAIL détourage sale / résidu de décor · basse définition · élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux
+e-twow-gt-se #9 FAIL détourage sale / résidu de décor · basse définition
+e-twow-gt-sl #0 PASS ok
+e-twow-gt-sl #1 PASS ok
+e-twow-gt-sl #2 PASS ok
+e-twow-gt-sl #3 PASS ok
+e-twow-gt-sl #4 WARN cadrage serré
+e-twow-gt-sl #5 PASS ok
+e-twow-gt-sl #6 PASS ok
+e-twow-gt-sl #7 FAIL détourage sale / résidu de décor
+e-twow-gt-sport #0 FAIL détourage sale / résidu de décor · cadrage serré
+e-twow-gt-sport #1 PASS ok
+e-twow-gt-sport #2 WARN cadrage serré
+e-twow-gt-sport #3 PASS ok
+e-twow-gt-sport #4 WARN basse définition · cadrage serré
+e-twow-gt-sport #5 PASS ok
+e-twow-gt-sport #6 PASS ok
+e-twow-gt-sport #7 PASS ok
+e-twow-gts #0 WARN basse définition · cadrage serré
+e-twow-gts #1 WARN cadrage serré
+e-twow-gts #2 WARN cadrage serré
+e-twow-gts #3 FAIL détourage sale / résidu de décor · cadrage serré
+e-twow-gts #4 WARN basse définition · cadrage serré
+e-twow-gts #5 PASS ok
+e-twow-gts #6 PASS ok
+e-twow-gts #7 WARN couleurs vives 32 % (visuel marketing ?)
+e-twow-gts #8 PASS ok
+e-twow-tanktorq-tk2 #0 FAIL détourage sale / résidu de décor
+e-twow-tanktorq-tk2 #1 PASS ok
+e-twow-tanktorq-tk2 #2 PASS ok
+e-twow-tanktorq-tk2 #3 FAIL élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux
+e-twow-tanktorq-tk2 #4 WARN cadrage serré
+e-twow-tanktorq-tk2 #5 FAIL élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux
+e-twow-tanktorq-tk2 #6 WARN basse définition
+e-twow-tanktorq-tk3 #0 FAIL détourage sale / résidu de décor
+e-twow-tanktorq-tk3 #1 FAIL élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux
+e-twow-tanktorq-tk3 #2 FAIL élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux
+e-twow-tanktorq-tk3 #3 PASS ok
+e-twow-tanktorq-tk3 #4 FAIL élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux
+e-twow-tanktorq-tk3 #5 PASS ok
+e-twow-tanktorq-tk3 #6 FAIL détourage sale / résidu de décor
+e-twow-tanktorq-tk3 #7 PASS ok
+joyor-c10 #0 PASS ok
+joyor-c10 #1 WARN cadrage serré
+joyor-c10 #2 WARN cadrage serré
+joyor-c10 #3 FAIL détourage sale / résidu de décor · élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux
+joyor-c10 #4 PASS ok
+joyor-c10 #5 FAIL élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux
+joyor-f5s-plus #0 PASS ok
+joyor-f5s-plus #1 PASS ok
+joyor-f5s-plus #2 PASS ok
+joyor-f5s-plus #3 PASS ok
+joyor-f5s-plus #4 PASS ok
+joyor-f5s-plus #5 FAIL détourage sale / résidu de décor
+joyor-f5s-plus #6 WARN basse définition · cadrage serré
+joyor-f5s-plus #7 WARN cadrage serré
+joyor-f5s-plus #8 WARN cadrage serré
+joyor-s5 #0 PASS ok
+joyor-s5 #1 PASS ok
+joyor-s5 #2 FAIL élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux
+joyor-s5-pro #0 PASS ok
+joyor-s5-pro #1 PASS ok
+joyor-s5-pro #2 FAIL élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux
+joyor-s8-e #0 FAIL élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux
+joyor-s8-e #1 PASS ok
+joyor-s8-e #2 PASS ok
+joyor-s8-e #3 PASS ok
+joyor-s8-e #4 WARN cadrage serré
+joyor-s8-e #5 WARN cadrage serré
+joyor-s8-e #6 WARN cadrage serré
+joyor-s8-e #7 FAIL détourage sale / résidu de décor · cadrage serré
+joyor-y6-s #0 PASS ok
+joyor-y6-s #1 FAIL élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux
+joyor-y6-s #2 PASS ok
+joyor-y6-s #3 WARN cadrage serré
+joyor-y6-s #4 PASS ok
+joyor-y8-s #0 PASS ok
+joyor-y8-s #1 WARN cadrage serré
+joyor-y8-s #2 PASS ok
+joyor-y8-s #3 WARN cadrage serré
+joyor-y8-s #4 PASS ok
+joyor-y8-s #5 PASS ok
+navee-gt3-max #0 FAIL détourage sale / résidu de décor · élément en plus (logo, badge, téléphone, 2e trottinette) : 5 morceaux
+navee-gt3-max #1 WARN basse définition · cadrage serré
+navee-gt3-max #2 WARN cadrage serré
+navee-gt3-max #3 WARN cadrage serré
+navee-gt3-max #4 PASS ok
+navee-gt3-max #5 PASS ok
+navee-gt3-max #6 WARN basse définition · cadrage serré
+navee-k100-pro #0 WARN couleurs vives 37 % (visuel marketing ?)
+navee-k100-pro #1 WARN couleurs vives 37 % (visuel marketing ?)
+navee-k100-pro #2 WARN couleurs vives 40 % (visuel marketing ?)
+navee-k100-pro #3 WARN couleurs vives 33 % (visuel marketing ?)
+navee-n65 #0 PASS ok
+navee-n65 #1 PASS ok
+navee-n65 #2 PASS ok
+navee-n65 #3 PASS ok
+navee-n65 #4 PASS ok
+navee-n65 #5 PASS ok
+navee-n65i #0 PASS ok
+navee-n65i #1 WARN basse définition
+navee-n65i #2 PASS ok
+navee-n65i #3 WARN basse définition · cadrage serré
+navee-n65i #4 PASS ok
+navee-n65i #5 PASS ok
+navee-n65i #6 PASS ok
+navee-n65i #7 WARN basse définition
+navee-n65i #8 WARN basse définition
+smartgyro-k5-pro #0 FAIL détourage sale / résidu de décor · cadrage serré
+smartgyro-k5-pro #1 FAIL détourage sale / résidu de décor · élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux
+smartgyro-k5-pro #2 PASS ok
+smartgyro-k5-pro #3 PASS ok
+smartgyro-k5-pro #4 PASS ok
+smartgyro-k5-pro #5 PASS ok
+smartgyro-k5-pro #6 PASS ok
+smartgyro-speedway #0 WARN basse définition
+smartgyro-speedway #1 FAIL détourage sale / résidu de décor
+smartgyro-speedway #2 WARN basse définition · cadrage serré
+smartgyro-speedway #3 WARN basse définition · cadrage serré
+smartgyro-speedway #4 WARN basse définition · cadrage serré
+smartgyro-speedway #5 WARN cadrage serré
+smartgyro-speedway #6 PASS ok
+smartgyro-speedway #7 WARN cadrage serré
+vsett-10-lite #0 WARN cadrage serré
+vsett-10-lite #1 PASS ok
+vsett-10-lite #2 PASS ok
+vsett-10-lite #3 PASS ok
+vsett-10-lite #4 WARN cadrage serré
+vsett-10-lite #5 WARN basse définition
+vsett-10-lite #6 PASS ok
+vsett-10-lite #7 PASS ok
+vsett-10-lite #8 PASS ok
+vsett-10-plus #0 WARN basse définition · cadrage serré
+vsett-10-plus #1 FAIL cadrage serré · élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux
+vsett-10-plus #2 WARN basse définition · cadrage serré
+vsett-10-plus #3 WARN cadrage serré
+vsett-10-plus #4 FAIL détourage sale / résidu de décor · petit élément détaché (2 morceaux)
+vsett-10-plus #5 FAIL détourage sale / résidu de décor · cadrage serré
+vsett-10-plus #6 FAIL détourage sale / résidu de décor · basse définition · cadrage serré
+vsett-10-plus #7 FAIL détourage sale / résidu de décor · cadrage serré
+vsett-10-plus #8 FAIL élément en plus (logo, badge, téléphone, 2e trottinette) : 4 morceaux
+vsett-10-plus #9 FAIL détourage sale / résidu de décor
+vsett-11-plus #0 WARN cadrage serré
+vsett-11-plus #1 WARN cadrage serré
+vsett-11-plus #2 FAIL détourage sale / résidu de décor · cadrage serré
+vsett-11-plus #3 PASS ok
+vsett-11-plus #4 FAIL détourage sale / résidu de décor · cadrage serré
+vsett-11-plus #5 FAIL détourage sale / résidu de décor · cadrage serré
+vsett-11-plus #6 PASS ok
+vsett-11-plus #7 PASS ok
+vsett-11-plus #8 PASS ok
+vsett-8 #0 WARN basse définition
+vsett-8 #1 WARN basse définition · cadrage serré
+vsett-8 #2 FAIL détourage sale / résidu de décor · cadrage serré
+vsett-8 #3 WARN basse définition · cadrage serré
+vsett-8 #4 FAIL détourage sale / résidu de décor · cadrage serré
+vsett-8 #5 PASS ok
+vsett-8 #6 FAIL détourage sale / résidu de décor · cadrage serré
+vsett-8-plus #0 WARN basse définition · cadrage serré
+vsett-8-plus #1 FAIL détourage sale / résidu de décor · petit élément détaché (2 morceaux)
+vsett-8-plus #2 FAIL détourage sale / résidu de décor · basse définition · cadrage serré
+vsett-8-plus #3 WARN basse définition · cadrage serré
+vsett-8-plus #4 FAIL détourage sale / résidu de décor
+vsett-8-plus #5 WARN basse définition
+vsett-8-plus #6 FAIL détourage sale / résidu de décor · basse définition · cadrage serré
+vsett-8-plus #7 FAIL détourage sale / résidu de décor · cadrage serré
+vsett-9-plus #0 WARN basse définition · cadrage serré
+vsett-9-plus #1 WARN cadrage serré
+vsett-9-plus #2 FAIL détourage sale / résidu de décor · basse définition · cadrage serré · couleurs vives 33 % (visuel marketing ?)
+vsett-9-plus #3 WARN cadrage serré
+vsett-9-plus #4 WARN cadrage serré
+vsett-9-plus #5 FAIL détourage sale / résidu de décor · cadrage serré
+vsett-9-plus #6 WARN basse définition
+vsett-9-plus #7 WARN basse définition · cadrage serré
+vsett-9-plus #8 FAIL détourage sale / résidu de décor
+vsett-9-plus #9 WARN cadrage serré
+::notice title=photos ang04 (dry)::211 candidates · PASS 89 · WARN 68 · FAIL 48 · ERREUR 6
