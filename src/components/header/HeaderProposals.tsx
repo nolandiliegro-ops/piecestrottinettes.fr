@@ -27,6 +27,18 @@ export const readBarreVariant = (): BarreVariant | null => {
   }
 };
 
+/** 24/10 (Nolan : « le menu téléphone, plus racing, plus dans la DA ») : menu ☰ du téléphone, ?tel=1..5 = propositions, sans paramètre = actuel. */
+const readTelVariant = (): number => {
+  try {
+    const n = Number(new URLSearchParams(window.location.search).get("tel"));
+    return n >= 1 && n <= 5 ? n : 0;
+  } catch {
+    return 0;
+  }
+};
+const UNB = "'Unbounded', sans-serif";
+const TEL_IMG: Record<string, string> = { "/catalogue": "/categories/pneus-a.webp", "/trottinettes": "/brand-heroes/xiaomi.webp", "/marques": "/brand-heroes/dualtron.webp", "/atelier": "/categories/plaquettes-a.webp" };
+
 /** 24/10 : menu de gauche (barre « Logo au centre ») : défaut = 3 « Pièces déroulant » en italique ; ?menu=1..5 = propositions, ?menu=0 = ancien. */
 const readMenuVariant = (): number => {
   try {
@@ -75,6 +87,7 @@ const HeaderProposals = ({ variant }: { variant: BarreVariant }) => {
   const [sheet, setSheet] = useState(false);
   const [menu, setMenu] = useState(false);
   const [menuV] = useState(readMenuVariant);
+  const [telV] = useState(readTelVariant);
   const [megaOpen, setMegaOpen] = useState(false);
   const { data: categories = [] } = useCategories();
   const families = FAMILIES.map((slug) => categories.find((c) => c.slug === slug)).filter((c): c is NonNullable<typeof c> => !!c);
@@ -269,16 +282,63 @@ const HeaderProposals = ({ variant }: { variant: BarreVariant }) => {
     </button>
   );
 
+  const profileBtn = (
+    <button type="button" onClick={() => { setMenu(false); goProfile(); }} className="mt-3 w-full min-h-[48px] text-sm font-extrabold italic uppercase tracking-[0.06em] text-white" style={{ fontFamily: FONT, background: GREEN, clipPath: CUT }}>
+      {user ? "Mon profil rider" : "Se connecter / créer mon profil"}
+    </button>
+  );
+  const telLink = (l: (typeof LINKS)[number], cls: string, children: React.ReactNode, style?: React.CSSProperties) => (
+    <Link key={l.href} to={l.href} onClick={() => setMenu(false)} aria-current={on(l.href) ? "page" : undefined} className={cls} style={style}>{children}</Link>
+  );
+  const telBody = () => {
+    // 1 · Racing : italique comme la barre ordinateur, filet vert sur la page active, sous-titre
+    if (telV === 1) return LINKS.map((l) => telLink(l, "flex flex-col justify-center min-h-[56px] pl-3", (
+      <>
+        <span className="text-lg font-extrabold italic uppercase tracking-[0.06em]" style={{ fontFamily: FONT, color: ink }}>{l.label}</span>
+        <span className="text-sm text-gray-500" style={{ fontFamily: FONT }}>{SUBS[l.href]}</span>
+      </>
+    ), { boxShadow: `inset 3px 0 0 ${on(l.href) ? GREEN : LINE}` }));
+    // 2 · Pastilles : icône dans un carré chanfreiné, titre Unbounded, flèche
+    if (telV === 2) return LINKS.map((l) => telLink(l, "flex items-center gap-3 min-h-[60px] border-b last:border-b-0", (
+      <>
+        <span className="w-10 h-10 shrink-0 flex items-center justify-center text-white" style={{ background: on(l.href) ? GREEN : CARBON, clipPath: CUT }}>{ICONS[l.href]}</span>
+        <span className="flex-1 min-w-0">
+          <span className="block text-base uppercase leading-tight" style={{ fontFamily: UNB, fontWeight: 900, fontStyle: "italic", color: ink }}>{l.label}</span>
+          <span className="block text-sm text-gray-500" style={{ fontFamily: FONT }}>{SUBS[l.href]}</span>
+        </span>
+        <ChevronDown className="w-5 h-5 -rotate-90 shrink-0" style={{ color: GREEN }} />
+      </>
+    ), { borderColor: LINE }));
+    // 3 · Tuiles photo 2 × 2
+    if (telV === 3) return (
+      <div className="grid grid-cols-2 gap-2">
+        {LINKS.map((l) => telLink(l, "relative block h-[104px] overflow-hidden", (
+          <>
+            <img src={TEL_IMG[l.href]} alt="" className="absolute inset-0 w-full h-full object-cover" />
+            <span className="absolute inset-0" style={{ background: on(l.href) ? "linear-gradient(180deg, rgba(74,124,89,0.25), rgba(74,124,89,0.9))" : "linear-gradient(180deg, rgba(26,26,26,0.05), rgba(26,26,26,0.8))" }} />
+            <span className="absolute left-2.5 right-2 bottom-2 text-white text-[15px] uppercase leading-tight" style={{ fontFamily: UNB, fontWeight: 900, fontStyle: "italic" }}>{l.label}</span>
+          </>
+        ), { clipPath: CUT }))}
+      </div>
+    );
+    // 4 · Numéros de course
+    if (telV === 4) return LINKS.map((l, i) => telLink(l, "flex items-baseline gap-4 min-h-[56px] py-2 border-b last:border-b-0", (
+      <>
+        <span className="w-9 shrink-0 text-xl" style={{ fontFamily: UNB, fontWeight: 900, fontStyle: "italic", color: on(l.href) ? GREEN : "#C9C2B4" }}>{String(i + 1).padStart(2, "0")}</span>
+        <span className="text-xl uppercase leading-none" style={{ fontFamily: UNB, fontWeight: 900, fontStyle: "italic", color: ink }}>{l.label}</span>
+      </>
+    ), { borderColor: LINE }));
+    // 5 · Grand titre : la même liste, en gros caractères de titre (Unbounded italique)
+    if (telV === 5) return LINKS.map((l) => telLink(l, "flex items-center min-h-[56px] px-1", (
+      <span className="text-[26px] uppercase leading-none" style={{ fontFamily: UNB, fontWeight: 900, fontStyle: "italic", letterSpacing: "-0.02em", color: on(l.href) ? GREEN : ink }}>{l.label}</span>
+    )));
+    // 0 · Actuel
+    return LINKS.map((l) => telLink(l, "flex items-center min-h-[48px] px-1 text-base font-extrabold uppercase tracking-[0.05em]", <>{l.label}</>, { fontFamily: FONT, color: ink }));
+  };
   const mobileMenu = menu && (
-    <nav className="lg:hidden pb-4 pt-2 border-t" style={{ borderColor: dark ? "rgba(255,255,255,0.12)" : LINE }}>
-      {LINKS.map((l) => (
-        <Link key={l.href} to={l.href} onClick={() => setMenu(false)} className="flex items-center min-h-[48px] px-1 text-base font-extrabold uppercase tracking-[0.05em]" style={{ fontFamily: FONT, color: ink }}>
-          {l.label}
-        </Link>
-      ))}
-      <button type="button" onClick={() => { setMenu(false); goProfile(); }} className="mt-2 w-full min-h-[48px] text-sm font-extrabold uppercase tracking-[0.06em] text-white" style={{ fontFamily: FONT, background: GREEN, clipPath: CUT }}>
-        {user ? "Mon profil rider" : "Se connecter / créer mon profil"}
-      </button>
+    <nav className="lg:hidden pb-4 pt-2 border-t" style={{ borderColor: dark ? "rgba(255,255,255,0.12)" : LINE }} data-tel={telV}>
+      {telBody()}
+      {profileBtn}
     </nav>
   );
 
