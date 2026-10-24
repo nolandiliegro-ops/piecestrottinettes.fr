@@ -9,6 +9,7 @@ import { readBarreBasVariant } from "@/components/navigation/MobileNavProposals"
 import SkotAvatar from "./SkotAvatar";
 import SkotLauncher, { readSkotBtnVariant } from "./SkotLauncher";
 import SkotDesktopLauncher, { readSkotPcVariant } from "./SkotDesktopLauncher";
+import SkotPanel, { readSkotFenVariant, SKOT_GREETING_V2 } from "./SkotPanel";
 import { askSkot, compressImage, sendSkotFeedback, skotEnabled, skotHiddenOn, skotPageContext, type SkotCard } from "@/lib/skot";
 import { useCart } from "@/hooks/useCart";
 import { SHOP_OPEN, openPrelaunch } from "@/config/launch";
@@ -64,7 +65,9 @@ const SkotWidget = () => {
   const { pathname } = useLocation();
   const [enabled] = useState(() => skotEnabled());
   const [open, setOpen] = useState(false);
-  const [msgs, setMsgs] = useState<Msg[]>([GREETING]);
+  // 25/10 : ?skotfen=1..5 = fenêtre aux couleurs de la mascotte (5 propositions) ; sans paramètre = fenêtre actuelle.
+  const [fen] = useState(readSkotFenVariant);
+  const [msgs, setMsgs] = useState<Msg[]>(() => [fen ? { role: "skot", text: SKOT_GREETING_V2 } : GREETING]);
   const [input, setInput] = useState("");
   const [busy, setBusy] = useState(false);
   const [photo, setPhoto] = useState<{ media_type: string; data: string; preview: string } | null>(null);
@@ -140,7 +143,19 @@ const SkotWidget = () => {
         </button>
       )}
 
-      {open && (
+      {open && fen && (
+        <>
+          <input ref={fileRef} id="skot-photo" type="file" accept="image/*" capture="environment" className="hidden" onChange={(e) => void onPhoto(e.target.files?.[0])} />
+          <SkotPanel
+            variant={fen} msgs={msgs} busy={busy} input={input} setInput={setInput} onSubmit={onSubmit}
+            send={(t) => void send(t)} onClose={() => setOpen(false)} onSearch={() => { setOpen(false); openSpotlight(); }}
+            pickPhoto={() => fileRef.current?.click()} photo={photo} clearPhoto={() => setPhoto(null)}
+            rate={(i, v) => void rate(i, v)} listRef={listRef} renderCard={(c) => <PartCard card={c} />}
+          />
+        </>
+      )}
+
+      {open && !fen && (
         <div
           role="dialog"
           aria-label="SKOT, l'assistant de l'atelier"
