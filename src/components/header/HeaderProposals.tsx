@@ -6,7 +6,7 @@
  */
 import { useState } from "react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
-import { ChevronDown, Menu, Search, ShoppingCart, UserRound, X, CircleDot, Tag } from "lucide-react";
+import { ChevronDown, Menu, Search, ShoppingCart, UserRound, X, CircleDot, Tag, BookOpen } from "lucide-react";
 import { useCategories } from "@/hooks/useScooterData";
 import { useAuth } from "@/hooks/useAuth";
 import { useCart } from "@/hooks/useCart";
@@ -55,6 +55,8 @@ const LINKS = [
   { label: "Pièces", href: "/catalogue" },
   { label: "Trottinettes", href: "/trottinettes" },
   { label: "Marques", href: "/marques" },
+  // 24/10 (Nolan) : les guides de l'atelier (/blog) dans le menu, sous le mot « Conseils » (aide à l'achat).
+  { label: "Conseils", href: "/blog" },
 ];
 
 const ScooterGlyph = ({ className = "w-5 h-5" }: { className?: string }) => (
@@ -101,11 +103,12 @@ const HeaderProposals = ({ variant }: { variant: BarreVariant }) => {
   );
 
   /** Menu de gauche de la barre « Logo au centre » : 5 propositions (?menu=1..5). */
-  const SUBS: Record<string, string> = { "/catalogue": "pneus, freins, chargeurs", "/trottinettes": "trouve la tienne", "/marques": "de A à Z" };
+  const SUBS: Record<string, string> = { "/catalogue": "pneus, freins, chargeurs", "/trottinettes": "trouve la tienne", "/marques": "de A à Z", "/blog": "guides de l'atelier" };
   const ICONS: Record<string, React.ReactNode> = {
     "/catalogue": <CircleDot className="w-4 h-4" strokeWidth={2.4} />,
     "/trottinettes": <ScooterGlyph className="w-4 h-4" />,
     "/marques": <Tag className="w-4 h-4" strokeWidth={2.4} />,
+    "/blog": <BookOpen className="w-4 h-4" strokeWidth={2.4} />,
   };
   const leftMenu = () => {
     if (menuV === 0) return links();

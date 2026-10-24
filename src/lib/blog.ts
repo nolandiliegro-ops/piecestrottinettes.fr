@@ -17,6 +17,12 @@ export interface BlogSummary {
   category: BlogCategory;
   updated: string; // AAAA-MM-JJ
   readMinutes: number;
+  /** 24/10 : fiches trottinettes qui affichent ce guide (slugs cités dans l'article). */
+  scooters?: string[];
+  /** Slugs de marque : le guide s'affiche sur toutes les fiches de la marque. */
+  brands?: string[];
+  /** Guide d'entretien général : s'affiche sur toutes les fiches, après les guides ciblés. */
+  everywhere?: boolean;
 }
 
 export interface BlogSection {

@@ -106,10 +106,11 @@ const HeaderLegacy = () => {
     { label: "Marques", href: "/marques" },
     { label: "Les Pépites", href: "/pepites" },
     { label: "Tutos", href: "/tutos" },
+    { label: "Conseils", href: "/blog" },
   ];
   const shownLinks = !nav || nav === 1 ? navLinks
     // 19/10 : Tutos (aucune vidéo encore) et Pépites (0 pièce mise en avant publiée) sortis du menu ; ils restent dans le menu ☰ du téléphone
-    : nav === 5 ? navLinks.filter((l) => ["/catalogue", "/trottinettes", "/marques"].includes(l.href)).map((l) => (l.href === "/catalogue" ? { ...l, label: "Pièces" } : l))
+    : nav === 5 ? navLinks.filter((l) => ["/catalogue", "/trottinettes", "/marques", "/blog"].includes(l.href)).map((l) => (l.href === "/catalogue" ? { ...l, label: "Pièces" } : l))
     : navLinks.filter((l) => l.href !== "/").map((l) => (l.href === "/catalogue" ? { ...l, label: "Pièces" } : l));
   const isActive = (href: string) => (href === "/" ? pathname === "/" : pathname.startsWith(href));
 
