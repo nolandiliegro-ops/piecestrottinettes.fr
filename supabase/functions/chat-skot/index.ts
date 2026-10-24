@@ -14,7 +14,10 @@ const VERSION = "chat-skot@2026-10-24";
 const MODEL = "claude-haiku-5-5";
 const MAX_TOOL_ROUNDS = 4;
 const HISTORY_LIMIT = 14;
-const DAILY_TOKEN_CAP = 1_000_000; // tous clients confondus ; au-delà, SKOT passe la main à l'atelier
+// Plafond journalier tous clients confondus ; au-delà, SKOT passe la main à l'atelier.
+// Haiku 5.5 (tarif 24/10/2026) : 0,10 $/M en entrée, 0,50 $/M en sortie, 0,01 $/M en lecture de cache.
+// ~10 000 à 15 000 tokens par message client (2-3 appels avec outils) → 15 M tokens ≈ 1 000 messages ≈ 2 $/jour max.
+const DAILY_TOKEN_CAP = 15_000_000;
 const SITE = "https://piecestrottinettes.fr";
 
 const corsHeaders = {
