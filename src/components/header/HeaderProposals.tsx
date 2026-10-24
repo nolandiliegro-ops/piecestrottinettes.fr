@@ -6,7 +6,8 @@
  */
 import { useState } from "react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
-import { ChevronDown, Menu, Search, ShoppingCart, UserRound, X, CircleDot, Tag, BookOpen } from "lucide-react";
+import { ChevronDown, Menu, Search, ShoppingCart, UserRound, X, CircleDot, Tag, BookOpen, Megaphone } from "lucide-react";
+import { useMyAmbassador } from "@/hooks/useMyAmbassador";
 import { useCategories } from "@/hooks/useScooterData";
 import { useAuth } from "@/hooks/useAuth";
 import { useCart } from "@/hooks/useCart";
@@ -85,6 +86,7 @@ const HeaderProposals = ({ variant }: { variant: BarreVariant }) => {
   const { pathname } = useLocation();
   const navigate = useNavigate();
   const { user, profile } = useAuth();
+  const { data: monAmb } = useMyAmbassador();
   const { setIsOpen: openCart, totals } = useCart();
   const { selectedScooter } = useSelectedScooter();
   const { openSpotlight } = useSpotlight();
@@ -343,6 +345,13 @@ const HeaderProposals = ({ variant }: { variant: BarreVariant }) => {
     <nav className="lg:hidden pb-4 pt-2 border-t" style={{ borderColor: dark ? "rgba(255,255,255,0.12)" : LINE }} data-tel={telV}>
       {telBody()}
       {telProfileBtn}
+      {user && monAmb && (
+        <Link to="/ambassadeur" onClick={() => setMenu(false)}
+          className="mt-2 w-full min-h-[48px] inline-flex items-center justify-center gap-2 text-sm font-extrabold italic uppercase tracking-[0.06em]"
+          style={{ fontFamily: FONT, color: ink, boxShadow: `inset 0 0 0 1px ${dark ? "rgba(255,255,255,0.25)" : LINE}`, clipPath: CUT }}>
+          <Megaphone className="w-4 h-4" />Mon espace ambassadeur
+        </Link>
+      )}
     </nav>
   );
 

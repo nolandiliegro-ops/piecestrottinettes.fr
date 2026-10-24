@@ -1,4 +1,5 @@
-import { Search, ShoppingCart, Menu, Home, LogIn, LogOut, User, Bike, ChevronDown, X, Plus, Trophy } from "lucide-react";
+import { Search, ShoppingCart, Menu, Home, LogIn, LogOut, User, Bike, ChevronDown, X, Plus, Trophy, Megaphone } from "lucide-react";
+import { useMyAmbassador } from "@/hooks/useMyAmbassador";
 import { Button } from "@/components/ui/button";
 import { useState, useEffect, useRef, useCallback } from "react";
 import { Link, useNavigate, useLocation } from "react-router-dom";
@@ -76,6 +77,7 @@ const HeaderLegacy = () => {
   useHeaderScooterDropdownRegistration(openScooterDropdown);
   
   const { user, profile, signOut } = useAuth();
+  const { data: monAmb } = useMyAmbassador();
   const { setIsOpen: openCart, totals } = useCart();
   const { selectedScooter, setSelectedScooter, clearSelection, selectedBrandColors } = useSelectedScooter();
   const { data: garageScooters, isLoading: garageLoading } = useUserGarage();
@@ -626,6 +628,14 @@ const HeaderLegacy = () => {
                         Mon Garage
                       </Link>
                     </DropdownMenuItem>
+                    {monAmb && (
+                      <DropdownMenuItem asChild>
+                        <Link to="/ambassadeur" className="flex items-center gap-2 cursor-pointer">
+                          <Megaphone className="w-4 h-4" />
+                          Espace ambassadeur
+                        </Link>
+                      </DropdownMenuItem>
+                    )}
                     <DropdownMenuSeparator />
                     <DropdownMenuItem 
                       onClick={handleSignOut}
@@ -685,8 +695,18 @@ const HeaderLegacy = () => {
                       </span>
                     )}
                   </Link>
-                  <Button 
-                    variant="ghost" 
+                  {monAmb && (
+                    <Link
+                      to="/ambassadeur"
+                      className="flex items-center justify-center gap-2 min-h-[44px] rounded-full border border-border text-sm font-semibold text-foreground"
+                      onClick={() => setIsMenuOpen(false)}
+                    >
+                      <Megaphone className="w-4 h-4" />
+                      Espace ambassadeur
+                    </Link>
+                  )}
+                  <Button
+                    variant="ghost"
                     onClick={() => { handleSignOut(); setIsMenuOpen(false); }}
                     className="text-garage"
                   >

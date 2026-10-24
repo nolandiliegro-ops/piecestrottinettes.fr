@@ -13,6 +13,7 @@ import OrderHistorySection from '@/components/garage/OrderHistorySection';
 import GarageMessages from '@/components/garage/GarageMessages';
 import GarageHeaderBar from '@/components/garage/GarageHeaderBar';
 import RiderLaunchCode from '@/components/launch/RiderLaunchCode';
+import AmbassadorGarageCard from '@/components/garage/AmbassadorGarageCard';
 import GarageTimeline from '@/components/garage/GarageTimeline';
 import { useCompatibleParts } from '@/hooks/useCompatibleParts';
 import QuickAddModificationDialog from '@/components/garage/QuickAddModificationDialog';
@@ -152,6 +153,11 @@ const Garage = () => {
             onTabChange={setActiveTab}
             totalUnread={totalUnread}
           />
+          {user && activeTab === 'garage' && (
+            <div className="mt-3 lg:max-w-md lg:ml-auto">
+              <AmbassadorGarageCard />
+            </div>
+          )}
         </div>
 
         <AnimatePresence mode="wait">
@@ -385,6 +391,7 @@ const Garage = () => {
                         </span>
                       </span>
                     </button>
+                    <AmbassadorGarageCard invite />
                   </aside>
                 </div>
 
