@@ -1,15 +1,15 @@
 {
  "displayName": "Pure Advance Flex",
  "metaTitle": "Pure Advance Flex : fiche technique, avis et pièces",
- "metaDescription": "Pure Advance Flex : pliage en trois, 500 W (710 W en pointe), batterie 36 V 9,5 Ah, pneus 10x2.50-6.5 tubeless, frein tambour avant. Avis et pièces.",
+ "metaDescription": "Pure Advance Flex : pliage compact, 500 W (924 W en pointe), batterie 36 V 9,5 Ah, 52 km annoncés, pneus 10x2.50-6.5 tubeless. Avis et pièces.",
  "intro": [
   "La Pure Advance Flex est la version pliante de la Pure Advance : même position de conduite face à la route, mais un pliage en trois qui la ramène à la taille d'une valise. Cleanrider l'a essayée en juillet 2023. Elle se range sous un bureau ou dans un coffre.",
-  "Moteur de 500 W (710 W en pointe), batterie 36 V de 9,5 Ah, 40 km annoncés, pneus tubeless de 10 pouces, tambour à l'avant et frein électrique à l'arrière, sans suspension. À 16 kg environ, elle vise les trajets mixtes avec train, métro ou bus."
+  "Moteur de 500 W (924 W en pointe selon la fiche Pure actuelle, 710 W sur les fiches de lancement), batterie 36 V de 9,5 Ah, 52 km annoncés depuis 2025 (40 km auparavant), pneus tubeless de 10 pouces, tambour à l'avant et frein électrique à l'arrière, sans suspension. À 16 kg environ, elle vise les trajets mixtes avec train, métro ou bus."
  ],
  "specs": [
   [
    "Moteur",
-   "500 W (710 W en pointe)"
+   "500 W (924 W en pointe selon Pure en 2026 ; 710 W sur les fiches de lancement)"
   ],
   [
    "Vitesse",
@@ -21,11 +21,11 @@
   ],
   [
    "Autonomie",
-   "40 km annoncés, 24 à 40 km mesurés selon le parcours (Capital, Cleanrider)"
+   "52 km annoncés par Pure depuis 2025 (40 km auparavant) ; 24 à 40 km mesurés selon le parcours (Capital, Cleanrider)"
   ],
   [
    "Poids",
-   "16 à 16,2 kg selon les fiches"
+   "16,2 kg selon Pure"
   ],
   [
    "Charge max",
@@ -49,7 +49,7 @@
   ],
   [
    "Temps de charge",
-   "environ 6 h"
+   "environ 5 h 45 selon Pure"
   ]
  ],
  "pros": [
@@ -110,6 +110,10 @@
   }
  ],
  "sources": [
+  {
+   "label": "Pure Electric — Advance Flex (fiche officielle)",
+   "url": "https://www.pureelectric.com/products/pure-advance-flex-electric-scooter"
+  },
   {
    "label": "Cleanrider — essai Pure Advance Flex",
    "url": "https://www.cleanrider.com/essais/trottinette-electrique/essai-pure-advance-flex-que-vaut-trottinette-electrique-ultra-comapcte/"
