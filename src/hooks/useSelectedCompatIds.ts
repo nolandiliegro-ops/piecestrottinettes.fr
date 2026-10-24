@@ -18,18 +18,22 @@ const readVoltages = (embedded: unknown): number[] | null => {
 const useCompatSets = () => {
   const { selectedScooter } = useSelectedScooter();
   const { data } = useQuery({
-    queryKey: ["selected-compat-ids-v2", selectedScooter?.id],
-    queryFn: async (): Promise<{ ids: Set<string>; slugs: Set<string> }> => {
+    queryKey: ["selected-compat-ids-v3", selectedScooter?.id],
+    queryFn: async (): Promise<{ ids: Set<string>; slugs: Set<string>; maybe: Set<string> }> => {
       const { data, error } = await supabase
         .from("part_compatibility")
         .select("part_id, confidence_level, suggestion_reason, parts(slug, electrical_specs)")
         .eq("scooter_model_id", selectedScooter!.id);
       if (error) throw error;
-      const ok = (data || []).filter((r) => isVerdictSafe(readVoltages(r.parts)) && classifyCompat(r) === "verified");
+      const safe = (data || []).filter((r) => isVerdictSafe(readVoltages(r.parts)));
+      const ok = safe.filter((r) => classifyCompat(r) === "verified");
+      // 24/10 : 🟡 « à confirmer » (jamais présenté comme compatible — badge distinct, section à part).
+      const maybe = new Set(safe.filter((r) => classifyCompat(r) === "unverified").map((r) => r.part_id as string));
       const slugOf = (r: (typeof ok)[number]) => ((Array.isArray(r.parts) ? r.parts[0] : r.parts) as { slug?: string } | null)?.slug;
       return {
         ids: new Set(ok.map((r) => r.part_id as string)),
         slugs: new Set(ok.map(slugOf).filter((x): x is string => !!x)),
+        maybe,
       };
     },
     enabled: !!selectedScooter?.id,
@@ -39,6 +43,8 @@ const useCompatSets = () => {
 };
 
 export const useSelectedCompatIds = (): Set<string> | null => useCompatSets()?.ids ?? null;
+/** Pièces 🟡 « à confirmer » pour la trottinette choisie (vérifiées exclues). */
+export const useSelectedCompatMaybeIds = (): Set<string> | null => useCompatSets()?.maybe ?? null;
 /** Même chose par slug (résultats de recherche, qui n'ont pas l'id). */
 export const useSelectedCompatSlugs = (): Set<string> | null => useCompatSets()?.slugs ?? null;
 

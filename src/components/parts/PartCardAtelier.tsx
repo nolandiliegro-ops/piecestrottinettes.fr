@@ -20,7 +20,8 @@ import { cn } from "@/lib/utils";
 import { useCart } from "@/hooks/useCart";
 import { getPrimaryImage } from "@/lib/entityImage";
 import { optimizedImage } from "@/lib/imageTransform";
-import { useSelectedCompatIds } from "@/hooks/useSelectedCompatIds";
+import { useSelectedCompatIds, useSelectedCompatMaybeIds } from "@/hooks/useSelectedCompatIds";
+import { readBadgeLook } from "@/lib/compatBadge";
 import { useSelectedScooter } from "@/contexts/ScooterContext";
 import { SHOP_OPEN, openPrelaunch } from "@/config/launch";
 import type { CompatiblePart } from "@/hooks/useScooterData";
@@ -64,6 +65,47 @@ interface Props {
   className?: string;
 }
 
+/* ─── 24/10 soir : badge « compatible » de la carte 1 (?badge=1..5) ───
+ * Dans le corps de la plaque, au-dessus de la catégorie (la photo qui dépasse recouvre le haut de la plaque).
+ * ok = vérifiée pour la trott choisie ; sinon « à confirmer » (gris, jamais vert ni coché). */
+const Badge = ({ look, ok, model, full }: { look: number; ok: boolean; model: string; full: string }) => {
+  const F = "'Plus Jakarta Sans', sans-serif";
+  if (!ok) return (
+    <span className="inline-flex items-center gap-1.5 px-2 leading-7 text-sm font-bold max-w-full"
+      style={{ fontFamily: F, color: "#5E5A52", background: "#F2EFE8", boxShadow: "inset 0 0 0 1px #D6CFC2", clipPath: CUT(6) }}>
+      <span className="w-1.5 h-1.5 rounded-full bg-[#B8AE9C] shrink-0" /><span className="truncate">À confirmer</span>
+    </span>
+  );
+  if (look === 1) return (
+    <span className="inline-flex flex-col max-w-full pl-2 pr-3 py-1" style={{ fontFamily: F, background: CARBON, clipPath: CUT(8) }}>
+      <span className="inline-flex items-center gap-1 text-sm font-extrabold uppercase tracking-wide text-white leading-tight"><Check className="w-3.5 h-3.5 shrink-0" strokeWidth={3.5} style={{ color: "#8FC79E" }} />Compatible</span>
+      <span className="text-sm font-semibold text-white/70 leading-tight truncate">{model}</span>
+    </span>
+  );
+  if (look === 2) return (
+    <span className="-mx-3 flex items-center gap-1.5 px-3 h-8 text-sm font-extrabold text-white" style={{ fontFamily: F, background: GREEN }}>
+      <Check className="w-4 h-4 shrink-0" strokeWidth={3} /><span className="truncate">Va sur ta {model}</span>
+    </span>
+  );
+  if (look === 3) return (
+    <span className="inline-flex items-center gap-2 text-sm font-extrabold" style={{ fontFamily: F, color: GREEN }} title={`Compatible avec ta ${full}`}>
+      <span className="w-7 h-7 rounded-full flex items-center justify-center shrink-0" style={{ background: GREEN, boxShadow: "0 3px 8px rgba(74,124,89,0.35)" }}><Check className="w-4 h-4 text-white" strokeWidth={3.5} /></span>
+      <span className="truncate">Compatible</span>
+    </span>
+  );
+  if (look === 4) return (
+    <span className="-mx-3 flex items-center gap-1.5 px-3 h-8 text-sm font-bold" style={{ fontFamily: F, background: "#EAF2EC", color: "#2F5A3C", borderTop: "1px solid #CFE2D4", borderBottom: "1px solid #CFE2D4" }}>
+      <Check className="w-4 h-4 shrink-0" strokeWidth={3} /><span className="truncate">Va sur ta {model}</span>
+    </span>
+  );
+  return (
+    <span className="inline-flex items-center gap-1 px-2 py-0.5 text-sm font-extrabold uppercase tracking-wide whitespace-nowrap -rotate-2 origin-left"
+      style={{ fontFamily: F, color: GREEN, border: `2px solid ${GREEN}`, borderRadius: 4 }}>
+      <Check className="w-4 h-4 shrink-0" strokeWidth={3.5} />Vérifié atelier
+    </span>
+  );
+};
+
 const PartCardAtelier = ({ part, look, position, hideCompat = false, className }: Props) => {
   const { addItem, setIsOpen } = useCart();
   const img = getPrimaryImage(part.images, part.image_url, "");
@@ -75,6 +117,10 @@ const PartCardAtelier = ({ part, look, position, hideCompat = false, className }
   const { selectedScooter, selectedBrandColors } = useSelectedScooter();
   const compatIds = useSelectedCompatIds();
   const showCompat = !hideCompat && !!selectedScooter && !!compatIds?.has(part.id);
+  // 24/10 soir : badge compatible ?badge=1..5 (carte 1) + badge distinct « à confirmer » (🟡, jamais présenté comme compatible).
+  const maybeIds = useSelectedCompatMaybeIds();
+  const badgeLook = look === 1 ? readBadgeLook() : null;
+  const showMaybe = !!badgeLook && !hideCompat && !!selectedScooter && !showCompat && !!maybeIds?.has(part.id);
   const brand = (selectedScooter?.brandName ?? "").trim();
   const sName = selectedScooter?.name ?? "";
   const model = brand && sName.toLowerCase().startsWith(brand.toLowerCase() + " ") ? sName.slice(brand.length + 1) : sName;
@@ -158,11 +204,12 @@ const PartCardAtelier = ({ part, look, position, hideCompat = false, className }
           ) : <span className="text-3xl opacity-30">🔧</span>}
         </div>
         <div className="relative pt-[124px] md:pt-[140px] transition-shadow duration-300 group-hover/pa:shadow-[0_14px_30px_rgba(26,26,26,0.12)]"
-          style={{ background: "#fff", boxShadow: `inset 0 0 0 1px ${LINE}`, clipPath: CUT(14) }}>
+          style={{ background: "#fff", boxShadow: badgeLook === 2 && showCompat ? `inset 0 0 0 2px ${GREEN}` : `inset 0 0 0 1px ${LINE}`, clipPath: CUT(14) }}>
           {stretched}
           {fav}
           <div className="px-3 pb-3">
-            {compat && <div className="mb-2 relative z-10">{compat}</div>}
+            {!badgeLook && compat && <div className="mb-2 relative z-10">{compat}</div>}
+            {badgeLook && (showCompat || showMaybe) && <div className="mb-2 relative z-10 flex">{<Badge look={badgeLook} ok={showCompat} model={model} full={`${brand} ${model}`.trim()} />}</div>}
             {eyebrow}
             <div className="mt-1">{name}</div>
             <div className="mt-1.5 flex items-end justify-between gap-2 flex-wrap">{priceEl()}{stock}</div>
