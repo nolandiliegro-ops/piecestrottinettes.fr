@@ -1,0 +1,4188 @@
+[
+ {
+  "slug": "dyu-c4",
+  "i": 0,
+  "url": "https://fr.dyucycle.com/cdn/shop/files/C4-PC_16001040_b59634f7-5457-460f-9729-865bf30ab26c.jpg?v=1753846846",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0.005,
+   "vivid": 0.07,
+   "fill": 0.566
+  },
+  "size": [
+   1728,
+   1168
+  ],
+  "error": null
+ },
+ {
+  "slug": "dyu-c4",
+  "i": 1,
+  "url": "https://fr.dyucycle.com/cdn/shop/files/C4-PC_16001040_4c598189-f68f-4752-9047-b66f67f3c647.jpg?v=1753846846",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.028,
+   "fill": 0.785
+  },
+  "size": [
+   815,
+   1037
+  ],
+  "error": null
+ },
+ {
+  "slug": "dyu-c4",
+  "i": 2,
+  "url": "https://fr.dyucycle.com/cdn/shop/files/C4-PC_16001040_20605370-3859-408e-a1f2-d1bc132719d8.jpg?v=1753846846",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.14,
+   "fill": 0.815
+  },
+  "size": [
+   887,
+   1101
+  ],
+  "error": null
+ },
+ {
+  "slug": "dyu-c4",
+  "i": 3,
+  "url": "https://fr.dyucycle.com/cdn/shop/files/C4-PC_16001040.jpg?v=1753846846",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.016,
+   "fill": 0.758
+  },
+  "size": [
+   701,
+   1054
+  ],
+  "error": null
+ },
+ {
+  "slug": "dyu-c4",
+  "i": 4,
+  "url": "https://fr.dyucycle.com/cdn/shop/files/1_e1f47814-d100-4ac3-8f36-b5557000355a.jpg?v=1753846846",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.021,
+   "fill": 0.83
+  },
+  "size": [
+   1114,
+   1355
+  ],
+  "error": null
+ },
+ {
+  "slug": "dyu-c4",
+  "i": 5,
+  "url": "https://fr.dyucycle.com/cdn/shop/files/c4.jpg?v=1726826671",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.047,
+   "fill": 0.829
+  },
+  "size": [
+   1348,
+   1091
+  ],
+  "error": null
+ },
+ {
+  "slug": "dyu-c4",
+  "i": 6,
+  "url": "https://fr.dyucycle.com/cdn/shop/files/s-l1600.jpg?v=1726826672",
+  "verdict": "FAIL",
+  "reasons": [
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+   ],
+   "parts": 2,
+   "second": 0.187,
+   "vivid": 0.05,
+   "fill": 0.842
+  },
+  "size": [
+   1610,
+   1527
+  ],
+  "error": null
+ },
+ {
+  "slug": "dyu-c4",
+  "i": 7,
+  "url": "https://fr.dyucycle.com/cdn/shop/products/800-800png8.png?v=1698043787",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition",
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.007,
+   "fill": 0.8
+  },
+  "size": [
+   804,
+   446
+  ],
+  "error": null
+ },
+ {
+  "slug": "engwe-y10",
+  "i": 0,
+  "url": "https://fr.engwe.com/cdn/shop/files/3_7dd524bc-704a-48e4-a79b-1f422b13ac67.jpg?v=1747923114",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.017,
+   "fill": 0.209
+  },
+  "size": [
+   1377,
+   1828
+  ],
+  "error": null
+ },
+ {
+  "slug": "engwe-y10",
+  "i": 1,
+  "url": "https://fr.engwe.com/cdn/shop/files/4_ed39097f-5a1f-4ac7-950a-96fa56b1ee97.jpg?v=1747923115",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.036,
+   "fill": 0.761
+  },
+  "size": [
+   1742,
+   906
+  ],
+  "error": null
+ },
+ {
+  "slug": "engwe-y10",
+  "i": 2,
+  "url": "https://fr.engwe.com/cdn/shop/files/5_df6fd3eb-a255-4d03-a11c-c1d0088b0ac6.jpg?v=1747923115",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.001,
+   "fill": 0.751
+  },
+  "size": [
+   1752,
+   899
+  ],
+  "error": null
+ },
+ {
+  "slug": "engwe-y10",
+  "i": 3,
+  "url": "https://fr.engwe.com/cdn/shop/files/6_93ad80bc-a097-486e-a2c3-de9dfbc80321.jpg?v=1747923115",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.033,
+   "fill": 0.84
+  },
+  "size": [
+   1556,
+   1598
+  ],
+  "error": null
+ },
+ {
+  "slug": "engwe-y10",
+  "i": 4,
+  "url": "https://fr.engwe.com/cdn/shop/files/7_7e393a13-9a8e-42fb-bd39-a6ef61eecc32.jpg?v=1747923115",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.065,
+   "fill": 0.82
+  },
+  "size": [
+   1434,
+   1746
+  ],
+  "error": null
+ },
+ {
+  "slug": "engwe-y10",
+  "i": 5,
+  "url": "https://fr.engwe.com/cdn/shop/files/2_c2840e42-f324-4cdd-85f8-09249c9bb32d.jpg?v=1747923114",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.036,
+   "fill": 0.844
+  },
+  "size": [
+   1589,
+   1648
+  ],
+  "error": null
+ },
+ {
+  "slug": "engwe-y10",
+  "i": 6,
+  "url": "https://fr.engwe.com/cdn/shop/files/1_85d2aefa-f74d-4885-a301-9bfb1560347a.jpg?v=1747923114",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.018,
+   "fill": 0.196
+  },
+  "size": [
+   1377,
+   1828
+  ],
+  "error": null
+ },
+ {
+  "slug": "engwe-y10",
+  "i": 7,
+  "url": "https://fr.engwe.com/cdn/shop/files/Y10_629fbfd2-2d76-48d0-8981-4f0097075768.png?v=1747923114",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.026,
+   "fill": 0.789
+  },
+  "size": [
+   1003,
+   1736
+  ],
+  "error": null
+ },
+ {
+  "slug": "engwe-y400",
+  "i": 0,
+  "url": "https://fr.engwe.com/cdn/shop/files/2_d8336e87-2799-4af1-8afb-56bccf5196bf.jpg?v=1770112368",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.066,
+   "fill": 0.765
+  },
+  "size": [
+   1694,
+   808
+  ],
+  "error": null
+ },
+ {
+  "slug": "engwe-y400",
+  "i": 1,
+  "url": "https://fr.engwe.com/cdn/shop/files/3_58765fe5-9e29-4163-b4fd-7188925e44bb.jpg?v=1770112368",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.02,
+   "fill": 0.797
+  },
+  "size": [
+   1269,
+   1752
+  ],
+  "error": null
+ },
+ {
+  "slug": "engwe-y400",
+  "i": 2,
+  "url": "https://fr.engwe.com/cdn/shop/files/5_7a56c28c-849d-44a9-9ec4-f4b5e9d61cf8.jpg?v=1770112368",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.014,
+   "fill": 0.283
+  },
+  "size": [
+   1377,
+   1828
+  ],
+  "error": null
+ },
+ {
+  "slug": "engwe-y400",
+  "i": 3,
+  "url": "https://fr.engwe.com/cdn/shop/files/1_58be3677-7222-40b6-98e8-a2b6ce5d3820.jpg?v=1770112368",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.022,
+   "fill": 0.755
+  },
+  "size": [
+   1694,
+   808
+  ],
+  "error": null
+ },
+ {
+  "slug": "engwe-y400",
+  "i": 4,
+  "url": "https://fr.engwe.com/cdn/shop/files/6_223aac2a-37e8-49dd-b2a9-d8461c4828ea.jpg?v=1770112368",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.038,
+   "fill": 0.283
+  },
+  "size": [
+   1377,
+   1828
+  ],
+  "error": null
+ },
+ {
+  "slug": "engwe-y400",
+  "i": 5,
+  "url": "https://fr.engwe.com/cdn/shop/files/7_8617e9aa-8ebc-4750-bc01-14c1bbe6cabe.jpg?v=1770112368",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.01,
+   "fill": 0.805
+  },
+  "size": [
+   1362,
+   1748
+  ],
+  "error": null
+ },
+ {
+  "slug": "engwe-y400",
+  "i": 6,
+  "url": "https://fr.engwe.com/cdn/shop/files/8_dae8af73-7762-4366-8bb6-2a1dfd657cf8.jpg?v=1770112368",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.044,
+   "fill": 0.805
+  },
+  "size": [
+   1362,
+   1748
+  ],
+  "error": null
+ },
+ {
+  "slug": "engwe-y400",
+  "i": 7,
+  "url": "https://fr.engwe.com/cdn/shop/files/9_23299df8-38db-4427-83ef-538566e18c6e.jpg?v=1770112368",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.016,
+   "fill": 0.698
+  },
+  "size": [
+   884,
+   1770
+  ],
+  "error": null
+ },
+ {
+  "slug": "engwe-y600",
+  "i": 0,
+  "url": "https://fr.engwe.com/cdn/shop/files/3_9cc1cba2-fdf2-422f-97b0-254fade1cef7.jpg?v=1747923069",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.048,
+   "fill": 0.831
+  },
+  "size": [
+   1716,
+   1742
+  ],
+  "error": null
+ },
+ {
+  "slug": "engwe-y600",
+  "i": 1,
+  "url": "https://fr.engwe.com/cdn/shop/files/4_febcfa69-d1f4-4a5e-b06d-b2d3d2c5879b.jpg?v=1747923069",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.029,
+   "fill": 0.751
+  },
+  "size": [
+   1740,
+   825
+  ],
+  "error": null
+ },
+ {
+  "slug": "engwe-y600",
+  "i": 2,
+  "url": "https://fr.engwe.com/cdn/shop/files/10_d87e7753-2604-45fd-802b-f95a3133e4b5.jpg?v=1747923069",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition",
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.019,
+   "fill": 0.79
+  },
+  "size": [
+   442,
+   695
+  ],
+  "error": null
+ },
+ {
+  "slug": "engwe-y600",
+  "i": 3,
+  "url": "https://fr.engwe.com/cdn/shop/files/2_da194579-b63e-494a-b37e-36479837d763.jpg?v=1747923069",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.051,
+   "fill": 0.245
+  },
+  "size": [
+   1377,
+   1828
+  ],
+  "error": null
+ },
+ {
+  "slug": "engwe-y600",
+  "i": 4,
+  "url": "https://fr.engwe.com/cdn/shop/files/Y600_Black.jpg?v=1747923069",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.033,
+   "fill": 0.229
+  },
+  "size": [
+   1377,
+   1828
+  ],
+  "error": null
+ },
+ {
+  "slug": "engwe-y600",
+  "i": 5,
+  "url": "https://fr.engwe.com/cdn/shop/files/Y600_bd49d4cc-00a6-4e40-adc2-5d1107f3fe60.png?v=1747923069",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.049,
+   "fill": 0.801
+  },
+  "size": [
+   1075,
+   1738
+  ],
+  "error": null
+ },
+ {
+  "slug": "engwe-y600s",
+  "i": 0,
+  "url": "https://cdn.auchan.fr/media/a0076e2f-a5d4-4abc-8534-eae7a0162d5c_0x0/B2CD/?width=2048&height=2048&fit=pad",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.057,
+   "fill": 0.766
+  },
+  "size": [
+   995,
+   1746
+  ],
+  "error": null
+ },
+ {
+  "slug": "engwe-y600s",
+  "i": 1,
+  "url": "https://cdn.auchan.fr/media/939ec17e-ba1f-4939-88bc-3011a9bb6412_0x0/B2CD/?width=2048&height=2048&fit=pad",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.028,
+   "fill": 0.746
+  },
+  "size": [
+   1740,
+   785
+  ],
+  "error": null
+ },
+ {
+  "slug": "engwe-y600s",
+  "i": 2,
+  "url": "https://cdn.auchan.fr/media/b4b8e8bc-c459-487b-8290-4ae04ecfecb6_0x0/B2CD/?width=2048&height=2048&fit=pad",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.029,
+   "fill": 0.829
+  },
+  "size": [
+   1560,
+   1738
+  ],
+  "error": null
+ },
+ {
+  "slug": "engwe-y600s",
+  "i": 3,
+  "url": "https://cdn.auchan.fr/media/6cf7ead3-497f-4cb5-80cd-c6133a1348ea_0x0/B2CD/?width=2048&height=2048&fit=pad",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.091,
+   "fill": 0.527
+  },
+  "size": [
+   1699,
+   1764
+  ],
+  "error": null
+ },
+ {
+  "slug": "engwe-y600s",
+  "i": 4,
+  "url": "https://cdn.auchan.fr/media/597f473f-23f6-47b9-bb01-a6efed1e7fcd_0x0/B2CD/?width=2048&height=2048&fit=pad",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.038,
+   "fill": 0.493
+  },
+  "size": [
+   1381,
+   1760
+  ],
+  "error": null
+ },
+ {
+  "slug": "engwe-y600s",
+  "i": 5,
+  "url": "https://cdn.auchan.fr/media/bfef7928-4215-498a-bfd8-2d9f9d460b1a_0x0/B2CD/?width=2048&height=2048&fit=pad",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.03,
+   "fill": 0.78
+  },
+  "size": [
+   1104,
+   1750
+  ],
+  "error": null
+ },
+ {
+  "slug": "engwe-y600s",
+  "i": 6,
+  "url": "https://cdn.auchan.fr/media/340c2e52-04aa-44a2-a2ee-0953159847de_0x0/B2CD/?width=2048&height=2048&fit=pad",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.04,
+   "fill": 0.766
+  },
+  "size": [
+   995,
+   1748
+  ],
+  "error": null
+ },
+ {
+  "slug": "engwe-y600s",
+  "i": 7,
+  "url": "https://img.gkbcdn.com/s3/p/2025-07-10/engwe-y600-trottinette--lectrique-avec-si-ge-60bc67-1752130346387.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.04,
+   "fill": 0.416
+  },
+  "size": [
+   1080,
+   1080
+  ],
+  "error": null
+ },
+ {
+  "slug": "inmotion-air",
+  "i": 0,
+  "url": "https://inmotionworld.com/cdn/shop/files/2_9724a8e8-8d7e-4fc0-bc93-0b600287943f.jpg?v=1735721795&width=1946",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition",
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.002,
+   "fill": 0.673
+  },
+  "size": [
+   476,
+   981
+  ],
+  "error": null
+ },
+ {
+  "slug": "inmotion-air",
+  "i": 1,
+  "url": "https://inmotionworld.com/cdn/shop/files/3_aedfb313-1d1a-44b8-9deb-9e0711ed2ca5.jpg?v=1735721795&width=1946",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition",
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0,
+   "fill": 0.726
+  },
+  "size": [
+   374,
+   982
+  ],
+  "error": null
+ },
+ {
+  "slug": "inmotion-air",
+  "i": 2,
+  "url": "https://inmotionworld.com/cdn/shop/files/5d0873e8ecf3604b6a7a9f8b8ed252da_e996a9c8-a5e5-42f0-8b0b-155c8a0186e8.jpg?v=1735721795&width=1946",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.003,
+   "fill": 0.795
+  },
+  "size": [
+   616,
+   1041
+  ],
+  "error": null
+ },
+ {
+  "slug": "inmotion-air",
+  "i": 3,
+  "url": "https://inmotionworld.com/cdn/shop/files/ef2909840e65e8fef88e20dc209ce066_f3d63062-38b2-49dd-9685-aaee9ae7699c.jpg?v=1735721795&width=1946",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition",
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.001,
+   "fill": 0.747
+  },
+  "size": [
+   501,
+   1036
+  ],
+  "error": null
+ },
+ {
+  "slug": "inmotion-air",
+  "i": 4,
+  "url": "https://inmotionworld.com/cdn/shop/files/1_f76ee26a-97c3-4e71-b882-b30f0a72daf2.jpg?v=1790761049&width=1946",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.001,
+   "fill": 0.478
+  },
+  "size": [
+   1081,
+   1080
+  ],
+  "error": null
+ },
+ {
+  "slug": "inmotion-air",
+  "i": 5,
+  "url": "https://inmotionworld.com/cdn/shop/files/1_a3169e15-aea4-49d0-9eb7-efc88e6f0de3.jpg?v=1790761049&width=1946",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.007,
+   "fill": 0.612
+  },
+  "size": [
+   1081,
+   1080
+  ],
+  "error": null
+ },
+ {
+  "slug": "inmotion-air",
+  "i": 6,
+  "url": "https://inmotionworld.com/cdn/shop/files/20261021-__10.png?v=1792563565&width=1946",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.007,
+   "fill": 0.352
+  },
+  "size": [
+   1081,
+   1080
+  ],
+  "error": null
+ },
+ {
+  "slug": "inmotion-air-pro",
+  "i": 0,
+  "url": "https://inmotionworld.com/cdn/shop/files/207-_3_d4d99aa2-39b6-40f4-9458-d67e16db0009.png?v=1761538990&width=1946",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.021,
+   "fill": 0.65
+  },
+  "size": [
+   1180,
+   1285
+  ],
+  "error": null
+ },
+ {
+  "slug": "inmotion-air-pro",
+  "i": 1,
+  "url": "https://inmotionworld.com/cdn/shop/files/207-_4.png?v=1761538990&width=1946",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.031,
+   "fill": 0.704
+  },
+  "size": [
+   1260,
+   1165
+  ],
+  "error": null
+ },
+ {
+  "slug": "inmotion-air-pro",
+  "i": 2,
+  "url": "https://inmotionworld.com/cdn/shop/files/207-_1_ce8e2545-1b59-42c2-b62a-846561d41d27.png?v=1751253278&width=1946",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.017,
+   "fill": 0.64
+  },
+  "size": [
+   1103,
+   1269
+  ],
+  "error": null
+ },
+ {
+  "slug": "inmotion-air-pro",
+  "i": 3,
+  "url": "https://inmotionworld.com/cdn/shop/files/05_2d9ca78c-eda4-44d7-8753-da969f88ac91.jpg?v=1761538990&width=1946",
+  "verdict": "FAIL",
+  "reasons": [
+   "cadrage serré",
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+   ],
+   "parts": 2,
+   "second": 0.382,
+   "vivid": 0,
+   "fill": 0.701
+  },
+  "size": [
+   1011,
+   1207
+  ],
+  "error": null
+ },
+ {
+  "slug": "inmotion-air-pro",
+  "i": 4,
+  "url": "https://inmotionworld.com/cdn/shop/files/06_ec1e365d-0f4c-481c-bbed-c3c5fff4b3d9.jpg?v=1761538990&width=1946",
+  "verdict": "FAIL",
+  "reasons": [
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+   ],
+   "parts": 2,
+   "second": 0.471,
+   "vivid": 0.013,
+   "fill": 0.656
+  },
+  "size": [
+   1296,
+   1296
+  ],
+  "error": null
+ },
+ {
+  "slug": "inmotion-air-pro",
+  "i": 5,
+  "url": "https://inmotionworld.com/cdn/shop/files/07_5403c52d-87fb-4bfb-b3a4-2fec7918da7d.jpg?v=1761538990&width=1946",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition",
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.033,
+   "fill": 0.715
+  },
+  "size": [
+   547,
+   1041
+  ],
+  "error": null
+ },
+ {
+  "slug": "inmotion-air-pro",
+  "i": 6,
+  "url": "https://inmotionworld.com/cdn/shop/files/20261021-__12.png?v=1792563565&width=1946",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.02,
+   "fill": 0.428
+  },
+  "size": [
+   829,
+   1036
+  ],
+  "error": null
+ },
+ {
+  "slug": "inmotion-climber",
+  "i": 0,
+  "url": "https://inmotionworld.com/cdn/shop/files/208-01_3_e2aa9e8e-8341-41d8-9bbf-a6c9ece7304b.png?v=1770190936&width=1946",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.055,
+   "fill": 0.671
+  },
+  "size": [
+   1051,
+   1281
+  ],
+  "error": null
+ },
+ {
+  "slug": "inmotion-climber",
+  "i": 1,
+  "url": "https://inmotionworld.com/cdn/shop/files/208-01_4_1aa4a55f-07f6-4445-b2a2-a7fd8d701bcd.png?v=1770190936&width=1946",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.053,
+   "fill": 0.721
+  },
+  "size": [
+   1280,
+   1165
+  ],
+  "error": null
+ },
+ {
+  "slug": "inmotion-climber",
+  "i": 2,
+  "url": "https://inmotionworld.com/cdn/shop/files/208-01_2_71d67b1d-f6d4-4b33-ad9d-bc795c3ad88d.png?v=1770190936&width=1946",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.046,
+   "fill": 0.708
+  },
+  "size": [
+   1264,
+   1156
+  ],
+  "error": null
+ },
+ {
+  "slug": "inmotion-climber",
+  "i": 3,
+  "url": "https://inmotionworld.com/cdn/shop/files/20261021-__02.png?v=1792563565&width=1946",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.072,
+   "fill": 0.813
+  },
+  "size": [
+   577,
+   842
+  ],
+  "error": null
+ },
+ {
+  "slug": "inmotion-climber",
+  "i": 4,
+  "url": "https://inmotionworld.com/cdn/shop/files/05_38bbd8ee-7ca1-4944-a5d6-97366f46f191.jpg?v=1770190936&width=1946",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.07,
+   "fill": 0.549
+  },
+  "size": [
+   1296,
+   1225
+  ],
+  "error": null
+ },
+ {
+  "slug": "inmotion-climber",
+  "i": 5,
+  "url": "https://inmotionworld.com/cdn/shop/files/06_e2296527-af4b-42c8-b93e-22eb58059c5b.jpg?v=1770190936&width=1946",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition",
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.017,
+   "fill": 0.678
+  },
+  "size": [
+   511,
+   1218
+  ],
+  "error": null
+ },
+ {
+  "slug": "inmotion-climber",
+  "i": 6,
+  "url": "https://inmotionworld.com/cdn/shop/files/07_1f2b91ea-1fe7-4cf5-9aa9-4bde93253aea.jpg?v=1770190936&width=1946",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.172,
+   "fill": 0.409
+  },
+  "size": [
+   936,
+   1210
+  ],
+  "error": null
+ },
+ {
+  "slug": "inmotion-climber",
+  "i": 7,
+  "url": "https://inmotionworld.com/cdn/shop/files/08_b935cade-cd16-4144-9fa9-4e1df646f5da.jpg?v=1770190936&width=1946",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.065,
+   "fill": 0.366
+  },
+  "size": [
+   1208,
+   1296
+  ],
+  "error": null
+ },
+ {
+  "slug": "inmotion-rs",
+  "i": 0,
+  "url": "https://inmotionworld.com/cdn/shop/files/RS-_-__01-02_e704ed32-1491-4dd8-9ac6-b43a6844d774.png?v=1775035760&width=1946",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.117,
+   "fill": 0.601
+  },
+  "size": [
+   1082,
+   1204
+  ],
+  "error": null
+ },
+ {
+  "slug": "inmotion-rs",
+  "i": 1,
+  "url": "https://inmotionworld.com/cdn/shop/files/RS-_-__01-03_5425b724-0576-48a5-9689-0df2f543c4d9.png?v=1775035760&width=1946",
+  "verdict": "FAIL",
+  "reasons": [
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+   ],
+   "parts": 2,
+   "second": 0.052,
+   "vivid": 0.163,
+   "fill": 0.735
+  },
+  "size": [
+   1296,
+   1117
+  ],
+  "error": null
+ },
+ {
+  "slug": "inmotion-rs",
+  "i": 2,
+  "url": "https://inmotionworld.com/cdn/shop/files/RS-_-__01-04_07ded73c-09ea-467f-9f58-a860a7143498.png?v=1775035760&width=1946",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.124,
+   "fill": 0.566
+  },
+  "size": [
+   1239,
+   1186
+  ],
+  "error": null
+ },
+ {
+  "slug": "inmotion-rs",
+  "i": 3,
+  "url": "https://inmotionworld.com/cdn/shop/files/RS_6363e2c1-1052-4c2a-bcac-642edb720c52.png?v=1790575155&width=1946",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.119,
+   "fill": 0.473
+  },
+  "size": [
+   945,
+   1001
+  ],
+  "error": null
+ },
+ {
+  "slug": "inmotion-rs",
+  "i": 4,
+  "url": "https://inmotionworld.com/cdn/shop/files/1_03c9ddeb-9d13-4173-bec2-8b00588e813b.jpg?v=1775035760&width=1946",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition",
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.09,
+   "fill": 0.779
+  },
+  "size": [
+   560,
+   1036
+  ],
+  "error": null
+ },
+ {
+  "slug": "inmotion-rs",
+  "i": 5,
+  "url": "https://inmotionworld.com/cdn/shop/files/1_2_1fc63b56-5971-4811-b3ee-5c8d0b574b02.jpg?v=1775035760&width=1946",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.097,
+   "fill": 0.758
+  },
+  "size": [
+   811,
+   1130
+  ],
+  "error": null
+ },
+ {
+  "slug": "inmotion-rs",
+  "i": 6,
+  "url": "https://inmotionworld.com/cdn/shop/files/5_15dbf162-3462-4893-8157-71665f52bddf.jpg?v=1775035760&width=1946",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.071,
+   "fill": 0.68
+  },
+  "size": [
+   1176,
+   1171
+  ],
+  "error": null
+ },
+ {
+  "slug": "inmotion-rs",
+  "i": 7,
+  "url": "https://inmotionworld.com/cdn/shop/files/6_02505ad9-9503-4370-8816-4bb4b33f22ba.jpg?v=1775035760&width=1946",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.072,
+   "fill": 0.824
+  },
+  "size": [
+   1024,
+   881
+  ],
+  "error": null
+ },
+ {
+  "slug": "inmotion-rs",
+  "i": 8,
+  "url": "https://inmotionworld.com/cdn/shop/files/7_32a1f67c-1645-49a8-ad65-fd7017cac3f3.jpg?v=1775035760&width=1946",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.061,
+   "fill": 0.805
+  },
+  "size": [
+   668,
+   801
+  ],
+  "error": null
+ },
+ {
+  "slug": "inmotion-rs",
+  "i": 9,
+  "url": "https://inmotionworld.com/cdn/shop/files/8_a68b9d2b-dfdf-4952-ae4f-85a0fd312cb9.jpg?v=1775035760&width=1946",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.086,
+   "fill": 0.788
+  },
+  "size": [
+   734,
+   1172
+  ],
+  "error": null
+ },
+ {
+  "slug": "inmotion-rs-jet",
+  "i": 0,
+  "url": "https://inmotionworld.com/cdn/shop/files/20261021-RS_-__04.png?v=1792572886&width=1946",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.001,
+   "fill": 0.466
+  },
+  "size": [
+   848,
+   1030
+  ],
+  "error": null
+ },
+ {
+  "slug": "inmotion-rs-jet",
+  "i": 1,
+  "url": "https://inmotionworld.com/cdn/shop/files/20261021-RS_-__08.png?v=1792572886&width=1946",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.12,
+   "fill": 0.347
+  },
+  "size": [
+   1081,
+   1080
+  ],
+  "error": null
+ },
+ {
+  "slug": "inmotion-rs-jet",
+  "i": 2,
+  "url": "https://inmotionworld.com/cdn/shop/files/20261021-RS_-__02.png?v=1792572886&width=1946",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.002,
+   "fill": 0.354
+  },
+  "size": [
+   1081,
+   1080
+  ],
+  "error": null
+ },
+ {
+  "slug": "inmotion-rs-jet",
+  "i": 3,
+  "url": "https://inmotionworld.com/cdn/shop/files/20261021-RS_-__06.png?v=1792572886&width=1946",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.12,
+   "fill": 0.347
+  },
+  "size": [
+   1081,
+   1080
+  ],
+  "error": null
+ },
+ {
+  "slug": "inmotion-rs-jet",
+  "i": 4,
+  "url": "https://inmotionworld.com/cdn/shop/files/1_587881a9-88e5-4551-af70-8d470a75ced2.jpg?v=1780541692&width=1946",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.201,
+   "fill": 0.781
+  },
+  "size": [
+   648,
+   1224
+  ],
+  "error": null
+ },
+ {
+  "slug": "inmotion-rs-jet",
+  "i": 5,
+  "url": "https://inmotionworld.com/cdn/shop/files/2_99835af2-b72c-4aec-8f45-677b27b2dbc4.jpg?v=1780541693&width=1946",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.135,
+   "fill": 0.676
+  },
+  "size": [
+   1620,
+   1620
+  ],
+  "error": null
+ },
+ {
+  "slug": "inmotion-rs-jet",
+  "i": 6,
+  "url": "https://inmotionworld.com/cdn/shop/files/3_d93c06d0-f5f9-4533-9d05-b4c911a6842c.jpg?v=1780541693&width=1946",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.079,
+   "fill": 0.833
+  },
+  "size": [
+   1241,
+   1055
+  ],
+  "error": null
+ },
+ {
+  "slug": "inmotion-rs-jet",
+  "i": 7,
+  "url": "https://inmotionworld.com/cdn/shop/files/4_fa099fcf-9d3e-4ed7-b179-a479e8f9c0c3.jpg?v=1780541693&width=1946",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.086,
+   "fill": 0.795
+  },
+  "size": [
+   1041,
+   1291
+  ],
+  "error": null
+ },
+ {
+  "slug": "inmotion-rs-jet",
+  "i": 8,
+  "url": "https://inmotionworld.com/cdn/shop/files/66b79f8f55e883eaa331126c55de86dc.jpg?v=1789725451&width=1946",
+  "verdict": "FAIL",
+  "reasons": [
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 5 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 5 morceaux"
+   ],
+   "parts": 5,
+   "second": 0.416,
+   "vivid": 0.152,
+   "fill": 0.735
+  },
+  "size": [
+   1620,
+   1620
+  ],
+  "error": null
+ },
+ {
+  "slug": "inmotion-rs-lite",
+  "i": 0,
+  "url": "https://inmotionworld.com/cdn/shop/files/RSlite-_-__01-03_1914648a-bfe0-4895-83bc-e3da2b56b4e9.png?v=1735644459&width=1946",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.177,
+   "fill": 0.739
+  },
+  "size": [
+   1296,
+   1055
+  ],
+  "error": null
+ },
+ {
+  "slug": "inmotion-rs-lite",
+  "i": 1,
+  "url": "https://inmotionworld.com/cdn/shop/files/RSlite-_-__01-04_e99c9d5a-4a00-4100-8df1-13b60c807645.png?v=1735644459&width=1946",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.118,
+   "fill": 0.488
+  },
+  "size": [
+   1122,
+   1206
+  ],
+  "error": null
+ },
+ {
+  "slug": "inmotion-rs-lite",
+  "i": 2,
+  "url": "https://inmotionworld.com/cdn/shop/files/RSlite-_-__01-02_75d91047-4b35-42bf-a977-0c133e82eda6.png?v=1735644459&width=1946",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.117,
+   "fill": 0.514
+  },
+  "size": [
+   1172,
+   1161
+  ],
+  "error": null
+ },
+ {
+  "slug": "inmotion-rs-lite",
+  "i": 3,
+  "url": "https://inmotionworld.com/cdn/shop/files/b58ce7b99582c961375527c3c6b27ebb_7ad409fa-edda-4975-9426-a78570f862b4.png?v=1790132662&width=1946",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.119,
+   "fill": 0.466
+  },
+  "size": [
+   968,
+   1029
+  ],
+  "error": null
+ },
+ {
+  "slug": "inmotion-rs-lite",
+  "i": 4,
+  "url": "https://inmotionworld.com/cdn/shop/files/1_b21de3a5-79ef-4680-9ba6-225054590533.jpg?v=1735718404&width=1946",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition",
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.039,
+   "fill": 0.755
+  },
+  "size": [
+   477,
+   1074
+  ],
+  "error": null
+ },
+ {
+  "slug": "inmotion-rs-lite",
+  "i": 5,
+  "url": "https://inmotionworld.com/cdn/shop/files/2_e702a6e9-57ae-4dc0-82dc-206e302c1362.jpg?v=1735718404&width=1946",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "basse définition",
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.064,
+   "fill": 0.76
+  },
+  "size": [
+   525,
+   1023
+  ],
+  "error": null
+ },
+ {
+  "slug": "inmotion-rs-lite",
+  "i": 6,
+  "url": "https://inmotionworld.com/cdn/shop/files/3_cd3d3da0-effe-40f2-a218-32fec03139f7.jpg?v=1735718404&width=1946",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.075,
+   "fill": 0.666
+  },
+  "size": [
+   1115,
+   1015
+  ],
+  "error": null
+ },
+ {
+  "slug": "inmotion-rs-lite",
+  "i": 7,
+  "url": "https://inmotionworld.com/cdn/shop/files/4_96dbe9de-f565-4f35-98b3-8f746f3f02d6.jpg?v=1735718404&width=1946",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition",
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.04,
+   "fill": 0.753
+  },
+  "size": [
+   548,
+   1136
+  ],
+  "error": null
+ },
+ {
+  "slug": "kingsong-n12-pro",
+  "i": 0,
+  "url": "https://www.kingsong.com/cdn/shop/files/kingsong-n12-pro-folded-portable-studio-render.webp?v=1783929899",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.024,
+   "fill": 0.729
+  },
+  "size": [
+   844,
+   864
+  ],
+  "error": null
+ },
+ {
+  "slug": "kingsong-n12-pro",
+  "i": 1,
+  "url": "https://www.kingsong.com/cdn/shop/files/kingsong-n12-pro-rear-disc-brake-studio-render.webp?v=1783929898",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.023,
+   "fill": 0.617
+  },
+  "size": [
+   746,
+   551
+  ],
+  "error": null
+ },
+ {
+  "slug": "kingsong-n12-pro",
+  "i": 2,
+  "url": "https://www.kingsong.com/cdn/shop/files/kingsong-n12-pro-rear-tail-light-closeup.webp?v=1783929901",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0.001,
+   "vivid": 0.041,
+   "fill": 0.846
+  },
+  "size": [
+   864,
+   864
+  ],
+  "error": null
+ },
+ {
+  "slug": "kingsong-n12-pro",
+  "i": 3,
+  "url": "https://www.kingsong.com/cdn/shop/files/kingsong-n12-pro-dashboard-display-closeup.webp?v=1783929898",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.036,
+   "fill": 0.61
+  },
+  "size": [
+   864,
+   672
+  ],
+  "error": null
+ },
+ {
+  "slug": "kingsong-n12-pro",
+  "i": 4,
+  "url": "https://www.kingsong.com/cdn/shop/files/KINGSONG-N12_PRO-_.1214.png?v=1792681623",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.032,
+   "fill": 0.801
+  },
+  "size": [
+   1312,
+   1748
+  ],
+  "error": null
+ },
+ {
+  "slug": "kingsong-n12-pro",
+  "i": 5,
+  "url": "https://www.kingsong.com/cdn/shop/files/KINGSONG-N12_PRO-_.1215.png?v=1792681634",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.018,
+   "fill": 0.573
+  },
+  "size": [
+   1760,
+   1760
+  ],
+  "error": null
+ },
+ {
+  "slug": "kingsong-n12-pro",
+  "i": 6,
+  "url": "https://www.kingsong.com/cdn/shop/files/KINGSONG-N12_PRO-_.1216.png?v=1792681635",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.03,
+   "fill": 0.71
+  },
+  "size": [
+   1572,
+   1758
+  ],
+  "error": null
+ },
+ {
+  "slug": "kingsong-n12-pro",
+  "i": 7,
+  "url": "https://www.kingsong.com/cdn/shop/files/KINGSONG-N12_PRO-_.1213.png?v=1792681632",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.031,
+   "fill": 0.735
+  },
+  "size": [
+   1760,
+   1760
+  ],
+  "error": null
+ },
+ {
+  "slug": "kingsong-n12-pro",
+  "i": 8,
+  "url": "https://www.kingsong.com/cdn/shop/files/kingsong-n12pro-3.jpg?v=1792681626",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 4 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 4 morceaux"
+   ],
+   "parts": 4,
+   "second": 0.366,
+   "vivid": 0.186,
+   "fill": 0.443
+  },
+  "size": [
+   1728,
+   1728
+  ],
+  "error": null
+ },
+ {
+  "slug": "kingsong-n12-pro",
+  "i": 9,
+  "url": "https://www.kingsong.com/cdn/shop/files/kingsong-n12pro-4.jpg?v=1792681626",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0.003,
+   "vivid": 0.038,
+   "fill": 0.754
+  },
+  "size": [
+   1728,
+   1728
+  ],
+  "error": null
+ },
+ {
+  "slug": "kingsong-n12-t3",
+  "i": 0,
+  "url": "https://www.kingsong.com/cdn/shop/files/kingsong-n12t3-electric-scooter-folded-storage-detail.webp?v=1791259151",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition",
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.022,
+   "fill": 0.789
+  },
+  "size": [
+   817,
+   472
+  ],
+  "error": null
+ },
+ {
+  "slug": "kingsong-n12-t3",
+  "i": 1,
+  "url": "https://www.kingsong.com/cdn/shop/files/kingsong-n12T3-dual-motor-escooter-2.png?v=1792682085",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.038,
+   "fill": 0.697
+  },
+  "size": [
+   1760,
+   1705
+  ],
+  "error": null
+ },
+ {
+  "slug": "kingsong-n12-t3",
+  "i": 2,
+  "url": "https://www.kingsong.com/cdn/shop/files/kingsong-n12T3-dual-motor-escooter-3.png?v=1792682076",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.041,
+   "fill": 0.802
+  },
+  "size": [
+   1335,
+   1752
+  ],
+  "error": null
+ },
+ {
+  "slug": "kingsong-n12-t3",
+  "i": 3,
+  "url": "https://www.kingsong.com/cdn/shop/files/kingsong-n12T3-dual-motor-escooter-4.png?v=1792682088",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.02,
+   "fill": 0.658
+  },
+  "size": [
+   1511,
+   1756
+  ],
+  "error": null
+ },
+ {
+  "slug": "kingsong-n12-t3",
+  "i": 4,
+  "url": "https://www.kingsong.com/cdn/shop/files/kingsong-n12T3-dual-motor-escooter-5.png?v=1792682096",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.029,
+   "fill": 0.534
+  },
+  "size": [
+   1760,
+   1760
+  ],
+  "error": null
+ },
+ {
+  "slug": "kingsong-n12-t3",
+  "i": 5,
+  "url": "https://www.kingsong.com/cdn/shop/files/kingsong-n12t3-electric-scooter-handlebar-display-detail.webp?v=1791259167",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "petit élément détaché (2 morceaux)"
+  ],
+  "plus": {
+   "verdict": "WARN",
+   "reasons": [
+    "petit élément détaché (2 morceaux)"
+   ],
+   "parts": 2,
+   "second": 0.028,
+   "vivid": 0,
+   "fill": 0.818
+  },
+  "size": [
+   864,
+   625
+  ],
+  "error": null
+ },
+ {
+  "slug": "kingsong-n12-t3",
+  "i": 6,
+  "url": "https://www.kingsong.com/cdn/shop/files/kingsong-n12t3-electric-scooter-front-rear-suspension-detail.webp?v=1791259071",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition",
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.019,
+   "fill": 0.801
+  },
+  "size": [
+   865,
+   535
+  ],
+  "error": null
+ },
+ {
+  "slug": "kingsong-n12-t3",
+  "i": 7,
+  "url": "https://www.kingsong.com/cdn/shop/files/kingsong-n12T3-dual-motor-escooter-1.png?v=1792682087",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.053,
+   "fill": 0.822
+  },
+  "size": [
+   1624,
+   1750
+  ],
+  "error": null
+ },
+ {
+  "slug": "kingsong-n16",
+  "i": 0,
+  "url": "https://www.kingsong.com/cdn/shop/files/kingsong-n16-electric-scooter-01-fold-1.webp?v=1792681386",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.087,
+   "fill": 0.799
+  },
+  "size": [
+   1570,
+   956
+  ],
+  "error": null
+ },
+ {
+  "slug": "kingsong-n16",
+  "i": 1,
+  "url": "https://www.kingsong.com/cdn/shop/files/kingsong-n16-electric-scooter-01-fold-2.webp?v=1792681386",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.112,
+   "fill": 0.807
+  },
+  "size": [
+   1435,
+   932
+  ],
+  "error": null
+ },
+ {
+  "slug": "kingsong-n16",
+  "i": 2,
+  "url": "https://www.kingsong.com/cdn/shop/files/kingsong_n16_dual_motor_escooter_2.png?v=1792681384",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.136,
+   "fill": 0.664
+  },
+  "size": [
+   1760,
+   1760
+  ],
+  "error": null
+ },
+ {
+  "slug": "kingsong-n16",
+  "i": 3,
+  "url": "https://www.kingsong.com/cdn/shop/files/kingsong_n16_dual_motor_escooter_3_a31bf5d7-d63c-42d7-974b-54976dc8c8ad.png?v=1792681376",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.101,
+   "fill": 0.616
+  },
+  "size": [
+   1514,
+   1756
+  ],
+  "error": null
+ },
+ {
+  "slug": "kingsong-n16",
+  "i": 4,
+  "url": "https://www.kingsong.com/cdn/shop/files/kingsong_n16_dual_motor_escooter_5.png?v=1792681386",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.092,
+   "fill": 0.56
+  },
+  "size": [
+   1760,
+   1760
+  ],
+  "error": null
+ },
+ {
+  "slug": "kingsong-n16",
+  "i": 5,
+  "url": "https://www.kingsong.com/cdn/shop/files/kingsong_n16_dual_motor_escooter_6.png?v=1792681388",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.104,
+   "fill": 0.496
+  },
+  "size": [
+   1760,
+   1760
+  ],
+  "error": null
+ },
+ {
+  "slug": "kingsong-n16",
+  "i": 6,
+  "url": "https://www.kingsong.com/cdn/shop/files/kingsong-n16-electric-scooter-05-hydraulic-brakes.webp?v=1792681378",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0.001,
+   "vivid": 0.039,
+   "fill": 0.779
+  },
+  "size": [
+   1620,
+   1620
+  ],
+  "error": null
+ },
+ {
+  "slug": "kingsong-n16",
+  "i": 7,
+  "url": "https://www.kingsong.com/cdn/shop/files/kingsong-n16-electric-scooter-04-hydraulic-suspension.webp?v=1792681378",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0.008,
+   "vivid": 0.137,
+   "fill": 0.646
+  },
+  "size": [
+   1620,
+   1620
+  ],
+  "error": null
+ },
+ {
+  "slug": "kingsong-n16",
+  "i": 8,
+  "url": "https://www.kingsong.com/cdn/shop/files/kingsong-n16-electric-scooter-01-main.webp?v=1792681382",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.11,
+   "fill": 0.583
+  },
+  "size": [
+   1620,
+   1620
+  ],
+  "error": null
+ },
+ {
+  "slug": "kingsong-s2-pro",
+  "i": 0,
+  "url": "https://media.cdnws.com/_i/21277/5227/808/29/trottinette-kingsong-s2-pro-frein-disque-avant.png",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.024,
+   "fill": 0.865
+  },
+  "size": [
+   648,
+   648
+  ],
+  "error": null
+ },
+ {
+  "slug": "kingsong-s2-pro",
+  "i": 1,
+  "url": "https://media.cdnws.com/_i/21277/5226/1215/28/trottinette-kingsong-s2-moteur-1000w-roue-10-pouce.png",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition",
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.022,
+   "fill": 0.842
+  },
+  "size": [
+   648,
+   548
+  ],
+  "error": null
+ },
+ {
+  "slug": "kingsong-s2-pro",
+  "i": 2,
+  "url": "https://media.cdnws.com/_i/21277/5228/3132/30/trottinette-electrique-ks-s2-amortisseur-avant.png",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0.005,
+   "vivid": 0.054,
+   "fill": 0.792
+  },
+  "size": [
+   648,
+   648
+  ],
+  "error": null
+ },
+ {
+  "slug": "kingsong-s2-pro",
+  "i": 3,
+  "url": "https://media.cdnws.com/_i/21277/5225/46/27/tropttinette-electrique-kingson-s2-pro-1000w-60v-16ah.png",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.008,
+   "fill": 0.833
+  },
+  "size": [
+   477,
+   632
+  ],
+  "error": null
+ },
+ {
+  "slug": "micro-explorer",
+  "i": 0,
+  "url": "https://static.fnac-static.com/multimedia/Images/FR/MDM/3f/41/fe/16662847/1543-2/tsp20240915134931/Trottinette-electrique-Micro-Explorer-500-W-Noir.jpg",
+  "verdict": "ERROR",
+  "reasons": [],
+  "plus": null,
+  "size": null,
+  "error": "téléchargement vide"
+ },
+ {
+  "slug": "micro-explorer",
+  "i": 1,
+  "url": "https://static.fnac-static.com/multimedia/Images/FR/MDM/3f/41/fe/16662847/1543-3/tsp20240915134931/Trottinette-electrique-Micro-Explorer-500-W-Noir.jpg",
+  "verdict": "ERROR",
+  "reasons": [],
+  "plus": null,
+  "size": null,
+  "error": "téléchargement vide"
+ },
+ {
+  "slug": "micro-explorer",
+  "i": 2,
+  "url": "https://static.fnac-static.com/multimedia/Images/FR/MDM/3f/41/fe/16662847/1543-4/tsp20240915134931/Trottinette-electrique-Micro-Explorer-500-W-Noir.jpg",
+  "verdict": "ERROR",
+  "reasons": [],
+  "plus": null,
+  "size": null,
+  "error": "téléchargement vide"
+ },
+ {
+  "slug": "micro-explorer",
+  "i": 3,
+  "url": "https://static.fnac-static.com/multimedia/Images/FR/MDM/3f/41/fe/16662847/1543-5/tsp20240915134931/Trottinette-electrique-Micro-Explorer-500-W-Noir.jpg",
+  "verdict": "ERROR",
+  "reasons": [],
+  "plus": null,
+  "size": null,
+  "error": "téléchargement vide"
+ },
+ {
+  "slug": "micro-explorer",
+  "i": 4,
+  "url": "https://static.fnac-static.com/multimedia/Images/FR/MDM/3f/41/fe/16662847/1543-6/tsp20240915134931/Trottinette-electrique-Micro-Explorer-500-W-Noir.jpg",
+  "verdict": "ERROR",
+  "reasons": [],
+  "plus": null,
+  "size": null,
+  "error": "téléchargement vide"
+ },
+ {
+  "slug": "micro-explorer",
+  "i": 5,
+  "url": "https://static.fnac-static.com/multimedia/Images/FR/MDM/3f/41/fe/16662847/1543-7/tsp20240915134931/Trottinette-electrique-Micro-Explorer-500-W-Noir.jpg",
+  "verdict": "ERROR",
+  "reasons": [],
+  "plus": null,
+  "size": null,
+  "error": "téléchargement vide"
+ },
+ {
+  "slug": "micro-explorer",
+  "i": 6,
+  "url": "https://static.fnac-static.com/multimedia/Images/FR/MDM/3f/41/fe/16662847/1543-8/tsp20240915134931/Trottinette-electrique-Micro-Explorer-500-W-Noir.jpg",
+  "verdict": "ERROR",
+  "reasons": [],
+  "plus": null,
+  "size": null,
+  "error": "téléchargement vide"
+ },
+ {
+  "slug": "micro-explorer",
+  "i": 7,
+  "url": "https://static.fnac-static.com/multimedia/Images/FR/MDM/3f/41/fe/16662847/1543-1/tsp20240915134931/Trottinette-electrique-Micro-Explorer-500-W-Noir.jpg",
+  "verdict": "ERROR",
+  "reasons": [],
+  "plus": null,
+  "size": null,
+  "error": "téléchargement vide"
+ },
+ {
+  "slug": "micro-explorer-ii",
+  "i": 0,
+  "url": "https://www.micro-mobility.com/resources/public/lava3/media/explorer-ii-2-min.png",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.006,
+   "fill": 0.773
+  },
+  "size": [
+   816,
+   961
+  ],
+  "error": null
+ },
+ {
+  "slug": "micro-explorer-ii",
+  "i": 1,
+  "url": "https://www.micro-mobility.com/resources/public/lava3/media/explorer-ii-3-min.png",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "basse définition",
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.006,
+   "fill": 0.681
+  },
+  "size": [
+   433,
+   923
+  ],
+  "error": null
+ },
+ {
+  "slug": "micro-explorer-ii",
+  "i": 2,
+  "url": "https://www.micro-mobility.com/resources/public/lava3/media/explorer-ii-4-min.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.003,
+   "fill": 0.771
+  },
+  "size": [
+   666,
+   990
+  ],
+  "error": null
+ },
+ {
+  "slug": "micro-explorer-ii",
+  "i": 3,
+  "url": "https://www.micro-mobility.com/resources/public/lava3/media/explorer-ii-1-min.png",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.005,
+   "fill": 0.664
+  },
+  "size": [
+   701,
+   1028
+  ],
+  "error": null
+ },
+ {
+  "slug": "micro-explorer-ii",
+  "i": 4,
+  "url": "https://www.micro-mobility.com/resources/public/lava3/media/usp-kickstand.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition",
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.011,
+   "fill": 0.794
+  },
+  "size": [
+   768,
+   432
+  ],
+  "error": null
+ },
+ {
+  "slug": "f40",
+  "i": 0,
+  "url": "https://s7ap1.scene7.com/is/image/ninebotstage/assets_segway_cdn_com_Product-Pictures__product_full_F40D-F40E_Product-picture_360-side-view-30?dpr=on,3&network=on&fmt=png-alpha",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "basse définition"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.047,
+   "fill": 0.428
+  },
+  "size": [
+   648,
+   577
+  ],
+  "error": null
+ },
+ {
+  "slug": "f40",
+  "i": 1,
+  "url": "https://s7ap1.scene7.com/is/image/ninebotstage/assets_segway_cdn_com_Product-Pages_KickScooters_KickScooter-F40__hero_full_Ninebot-KickScooter-F40_Folded-kickscooter-30?dpr=on,3&network=on",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.02,
+   "fill": 0.347
+  },
+  "size": [
+   1701,
+   1407
+  ],
+  "error": null
+ },
+ {
+  "slug": "f40",
+  "i": 2,
+  "url": "https://s7ap1.scene7.com/is/image/ninebotstage/assets_segway_cdn_com_Product-Pages_KickScooters_KickScooter-F40__collection_Ninebot-KickScooter-F30-F40_Dashboard-30?dpr=on,3&network=on",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "basse définition"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0.007,
+   "vivid": 0.035,
+   "fill": 0.827
+  },
+  "size": [
+   616,
+   513
+  ],
+  "error": null
+ },
+ {
+  "slug": "f40",
+  "i": 3,
+  "url": "https://s7ap1.scene7.com/is/image/ninebotstage/assets_segway_cdn_com_Product-Pages_KickScooters_KickScooter-F40__collection_Ninebot-KickScooter-F40_Braking-system-30?dpr=on,3&network=on",
+  "verdict": "FAIL",
+  "reasons": [
+   "basse définition",
+   "cadrage serré",
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+   ],
+   "parts": 2,
+   "second": 0.273,
+   "vivid": 0.043,
+   "fill": 0.633
+  },
+  "size": [
+   616,
+   516
+  ],
+  "error": null
+ },
+ {
+  "slug": "f40",
+  "i": 4,
+  "url": "https://s7ap1.scene7.com/is/image/ninebotstage/assets_segway_cdn_com_Product-Pages_KickScooters_KickScooter-F40__hero_full_Ninebot-KickScooter-F40_Hero-picture2-30?dpr=on,3&network=on",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.07,
+   "fill": 0.629
+  },
+  "size": [
+   1473,
+   1366
+  ],
+  "error": null
+ },
+ {
+  "slug": "g30-max",
+  "i": 0,
+  "url": "https://segway.imgix.net/catalog/product/cache/d3ec3723470ff918c92e447639eaf984/m/a/max_g30-2_1_1.png?w=3840&auto=format%2Ccompress&fit=max&q=75",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.056,
+   "fill": 0.763
+  },
+  "size": [
+   673,
+   655
+  ],
+  "error": null
+ },
+ {
+  "slug": "g30-max",
+  "i": 1,
+  "url": "https://segway.imgix.net/catalog/product/cache/d3ec3723470ff918c92e447639eaf984/m/a/max_g30-3_1_1.png?w=3840&auto=format%2Ccompress&fit=max&q=75",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.043,
+   "fill": 0.724
+  },
+  "size": [
+   487,
+   657
+  ],
+  "error": null
+ },
+ {
+  "slug": "g30-max",
+  "i": 2,
+  "url": "https://segway.imgix.net/catalog/product/cache/d3ec3723470ff918c92e447639eaf984/m/a/max_g30-1_1_2.png?w=3840&auto=format%2Ccompress&fit=max&q=75",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.043,
+   "fill": 0.705
+  },
+  "size": [
+   500,
+   656
+  ],
+  "error": null
+ },
+ {
+  "slug": "g30-max",
+  "i": 3,
+  "url": "https://segway.imgix.net/media/catalog/product/8/_/8_bring_your_scooter_anywhere_with_one-step_folding.jpg",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "basse définition",
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.037,
+   "fill": 0.757
+  },
+  "size": [
+   987,
+   559
+  ],
+  "error": null
+ },
+ {
+  "slug": "g30-max",
+  "i": 4,
+  "url": "https://segway.imgix.net/media/catalog/product/3/_/3_change_modes_with_the_led_dashboard.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.01,
+   "fill": 0.79
+  },
+  "size": [
+   1088,
+   868
+  ],
+  "error": null
+ },
+ {
+  "slug": "g30-max",
+  "i": 5,
+  "url": "https://segway.imgix.net/media/catalog/product/1/0/10_dual_braking_system_for_ultimate_stability.jpg",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.035,
+   "fill": 0.692
+  },
+  "size": [
+   1089,
+   868
+  ],
+  "error": null
+ },
+ {
+  "slug": "ninebot-e2",
+  "i": 0,
+  "url": "https://static.fnac-static.com/multimedia/Images/FR/MDMFR/MDM/7e/bb/50/22068094/1543-2/tsp20250905112001/Trottinette-electrique-Ninebot-E2-E-Segway-450-W-Noir.jpg",
+  "verdict": "ERROR",
+  "reasons": [],
+  "plus": null,
+  "size": null,
+  "error": "téléchargement vide"
+ },
+ {
+  "slug": "ninebot-e2",
+  "i": 1,
+  "url": "https://static.fnac-static.com/multimedia/Images/FR/MDMFR/MDM/7e/bb/50/22068094/1543-3/tsp20250905112001/Trottinette-electrique-Ninebot-E2-E-Segway-450-W-Noir.jpg",
+  "verdict": "ERROR",
+  "reasons": [],
+  "plus": null,
+  "size": null,
+  "error": "téléchargement vide"
+ },
+ {
+  "slug": "ninebot-e2",
+  "i": 2,
+  "url": "https://static.fnac-static.com/multimedia/Images/FR/MDMFR/MDM/7e/bb/50/22068094/1543-4/tsp20250905112001/Trottinette-electrique-Ninebot-E2-E-Segway-450-W-Noir.jpg",
+  "verdict": "ERROR",
+  "reasons": [],
+  "plus": null,
+  "size": null,
+  "error": "téléchargement vide"
+ },
+ {
+  "slug": "ninebot-e2",
+  "i": 3,
+  "url": "https://static.fnac-static.com/multimedia/Images/FR/MDMFR/MDM/7e/bb/50/22068094/1543-5/tsp20250905112001/Trottinette-electrique-Ninebot-E2-E-Segway-450-W-Noir.jpg",
+  "verdict": "ERROR",
+  "reasons": [],
+  "plus": null,
+  "size": null,
+  "error": "téléchargement vide"
+ },
+ {
+  "slug": "ninebot-e2",
+  "i": 4,
+  "url": "https://static.fnac-static.com/multimedia/Images/FR/MDMFR/MDM/7e/bb/50/22068094/1543-6/tsp20250905112001/Trottinette-electrique-Ninebot-E2-E-Segway-450-W-Noir.jpg",
+  "verdict": "ERROR",
+  "reasons": [],
+  "plus": null,
+  "size": null,
+  "error": "téléchargement vide"
+ },
+ {
+  "slug": "ninebot-e2",
+  "i": 5,
+  "url": "https://static.fnac-static.com/multimedia/Images/FR/MDMFR/MDM/7e/bb/50/22068094/1543-7/tsp20250905112001/Trottinette-electrique-Ninebot-E2-E-Segway-450-W-Noir.jpg",
+  "verdict": "ERROR",
+  "reasons": [],
+  "plus": null,
+  "size": null,
+  "error": "téléchargement vide"
+ },
+ {
+  "slug": "ninebot-e2",
+  "i": 6,
+  "url": "https://static.fnac-static.com/multimedia/Images/FR/MDMFR/MDM/7e/bb/50/22068094/1543-8/tsp20250905112001/Trottinette-electrique-Ninebot-E2-E-Segway-450-W-Noir.jpg",
+  "verdict": "ERROR",
+  "reasons": [],
+  "plus": null,
+  "size": null,
+  "error": "téléchargement vide"
+ },
+ {
+  "slug": "ninebot-e2",
+  "i": 7,
+  "url": "https://static.fnac-static.com/multimedia/Images/FR/MDMFR/MDM/7e/bb/50/22068094/1543-9/tsp20250905112001/Trottinette-electrique-Ninebot-E2-E-Segway-450-W-Noir.jpg",
+  "verdict": "ERROR",
+  "reasons": [],
+  "plus": null,
+  "size": null,
+  "error": "téléchargement vide"
+ },
+ {
+  "slug": "ninebot-e2",
+  "i": 8,
+  "url": "https://static.fnac-static.com/multimedia/Images/FR/MDMFR/MDM/7e/bb/50/22068094/1543-10/tsp20250905112001/Trottinette-electrique-Ninebot-E2-E-Segway-450-W-Noir.jpg",
+  "verdict": "ERROR",
+  "reasons": [],
+  "plus": null,
+  "size": null,
+  "error": "téléchargement vide"
+ },
+ {
+  "slug": "ninebot-e2",
+  "i": 9,
+  "url": "https://static.fnac-static.com/multimedia/Images/FR/MDMFR/MDM/7e/bb/50/22068094/1543-11/tsp20250905112001/Trottinette-electrique-Ninebot-E2-E-Segway-450-W-Noir.jpg",
+  "verdict": "ERROR",
+  "reasons": [],
+  "plus": null,
+  "size": null,
+  "error": "téléchargement vide"
+ },
+ {
+  "slug": "ninebot-e3",
+  "i": 0,
+  "url": "https://shop.segway.com/media/catalog/product/cache/a3990b288e26759fcf8347bbc168a102/3/_/3_12_4.png",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.01,
+   "fill": 0.54
+  },
+  "size": [
+   108,
+   108
+  ],
+  "error": null
+ },
+ {
+  "slug": "ninebot-e3",
+  "i": 1,
+  "url": "https://shop.segway.com/media/catalog/product/cache/a3990b288e26759fcf8347bbc168a102/e/3/e3_series_product_picture.png",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "basse définition",
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+   ],
+   "parts": 2,
+   "second": 0.441,
+   "vivid": 0.001,
+   "fill": 0.6
+  },
+  "size": [
+   108,
+   75
+  ],
+  "error": null
+ },
+ {
+  "slug": "ninebot-e3",
+  "i": 2,
+  "url": "https://shop.segway.com/media/catalog/product/cache/a3990b288e26759fcf8347bbc168a102/e/3/e3_series_product_picture_3-inch_dashboard.png",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "basse définition",
+   "cadrage serré",
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+   ],
+   "parts": 2,
+   "second": 0.035,
+   "vivid": 0.023,
+   "fill": 0.496
+  },
+  "size": [
+   84,
+   49
+  ],
+  "error": null
+ },
+ {
+  "slug": "ninebot-e3",
+  "i": 3,
+  "url": "https://shop.segway.com/media/catalog/product/cache/a3990b288e26759fcf8347bbc168a102/e/3/e3_series_indicator_on_handlebar.png",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "basse définition",
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.082,
+   "fill": 0.739
+  },
+  "size": [
+   92,
+   87
+  ],
+  "error": null
+ },
+ {
+  "slug": "ninebot-e3",
+  "i": 4,
+  "url": "https://shop.segway.com/media/catalog/product/cache/a3990b288e26759fcf8347bbc168a102/2/_/2_12_3.png",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.007,
+   "fill": 0.684
+  },
+  "size": [
+   108,
+   108
+  ],
+  "error": null
+ },
+ {
+  "slug": "ninebot-f3-pro-e",
+  "i": 0,
+  "url": "https://shop.segway.com/media/catalog/product/cache/a3990b288e26759fcf8347bbc168a102/u/n/untitled_design_10__1.png",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.013,
+   "fill": 0.475
+  },
+  "size": [
+   108,
+   108
+  ],
+  "error": null
+ },
+ {
+  "slug": "ninebot-f3-pro-e",
+  "i": 1,
+  "url": "https://shop.segway.com/media/catalog/product/cache/a3990b288e26759fcf8347bbc168a102/u/n/untitled_design_9__1.png",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.009,
+   "fill": 0.63
+  },
+  "size": [
+   108,
+   108
+  ],
+  "error": null
+ },
+ {
+  "slug": "ninebot-f3-pro-e",
+  "i": 2,
+  "url": "https://shop.segway.com/media/catalog/product/cache/a3990b288e26759fcf8347bbc168a102/n/i/ninebot_f3_pro_e_d_lifestyle_picture__back_and_ground_view_gravel-2140x1427_72_1.jpg",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "basse définition",
+   "petit élément détaché (2 morceaux)"
+  ],
+  "plus": {
+   "verdict": "WARN",
+   "reasons": [
+    "petit élément détaché (2 morceaux)"
+   ],
+   "parts": 2,
+   "second": 0.023,
+   "vivid": 0,
+   "fill": 0.341
+  },
+  "size": [
+   55,
+   48
+  ],
+  "error": null
+ },
+ {
+  "slug": "ninebot-f3-pro-e",
+  "i": 3,
+  "url": "https://shop.segway.com/media/catalog/product/cache/a3990b288e26759fcf8347bbc168a102/n/i/ninebot_f3_pro_d_lifestyle_picture__airlock-2140x1427_72_1.jpg",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "basse définition"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0,
+   "fill": 0.249
+  },
+  "size": [
+   65,
+   44
+  ],
+  "error": null
+ },
+ {
+  "slug": "ninebot-f3-pro-e",
+  "i": 4,
+  "url": "https://eu-en.segway.com/content/dam/segway-ninebot/general/mmbu-3rdgen-revamp/eu/f3-pro/pc/left-copy.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.002,
+   "fill": 0.225
+  },
+  "size": [
+   1830,
+   870
+  ],
+  "error": null
+ },
+ {
+  "slug": "ninebot-f3-pro-e",
+  "i": 5,
+  "url": "https://eu-en.segway.com/content/dam/segway-ninebot/general/mmbu-3rdgen-revamp/eu/f3-pro/pc/F3%20F3proEU%20PC.jpg",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.014,
+   "fill": 0.702
+  },
+  "size": [
+   1796,
+   1203
+  ],
+  "error": null
+ },
+ {
+  "slug": "urbanglide-100-evo",
+  "i": 0,
+  "url": "https://urbanglide.com/wp-content/uploads/2025/01/RIDE-100EVO.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.032,
+   "fill": 0.843
+  },
+  "size": [
+   824,
+   858
+  ],
+  "error": null
+ },
+ {
+  "slug": "urbanglide-100-evo",
+  "i": 1,
+  "url": "https://urbanglide.com/wp-content/webp-express/webp-images/uploads/2025/02/100EVO-plie.png.webp",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition",
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.015,
+   "fill": 0.773
+  },
+  "size": [
+   764,
+   381
+  ],
+  "error": null
+ },
+ {
+  "slug": "urbanglide-100-evo",
+  "i": 2,
+  "url": "https://urbanglide.com/wp-content/uploads/2025/02/100EVO-pliee.webp",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "basse définition",
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.003,
+   "fill": 0.765
+  },
+  "size": [
+   772,
+   389
+  ],
+  "error": null
+ },
+ {
+  "slug": "urbanglide-100-evo",
+  "i": 3,
+  "url": "https://urbanglide.com/wp-content/uploads/2025/02/100EVO-frein.webp",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.15,
+   "fill": 0.845
+  },
+  "size": [
+   1178,
+   950
+  ],
+  "error": null
+ },
+ {
+  "slug": "urbanglide-100-evo",
+  "i": 4,
+  "url": "https://urbanglide.com/wp-content/uploads/2025/02/100EVO-ecran-fd-violetpoignee.webp",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.044,
+   "fill": 0.629
+  },
+  "size": [
+   1750,
+   814
+  ],
+  "error": null
+ },
+ {
+  "slug": "urbanglide-100-evo",
+  "i": 5,
+  "url": "https://urbanglide.com/wp-content/uploads/2025/02/100EVO-roue-test-futuriste.webp",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.015,
+   "fill": 0.516
+  },
+  "size": [
+   1016,
+   938
+  ],
+  "error": null
+ },
+ {
+  "slug": "urbanglide-all-road-6-2x2",
+  "i": 0,
+  "url": "https://urbanglide.com/wp-content/uploads/2025/04/AR62x2-roue-frein-a-disque.webp",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.226,
+   "fill": 0.37
+  },
+  "size": [
+   1766,
+   832
+  ],
+  "error": null
+ },
+ {
+  "slug": "urbanglide-all-road-6-2x2",
+  "i": 1,
+  "url": "https://urbanglide.com/wp-content/uploads/2025/04/AR62x2-LED-RGB.webp",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux",
+   "couleurs vives 91 % (visuel marketing ?)"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux",
+    "couleurs vives 91 % (visuel marketing ?)"
+   ],
+   "parts": 2,
+   "second": 0.075,
+   "vivid": 0.909,
+   "fill": 0.348
+  },
+  "size": [
+   1754,
+   751
+  ],
+  "error": null
+ },
+ {
+  "slug": "urbanglide-all-road-6-2x2",
+  "i": 2,
+  "url": "https://urbanglide.com/wp-content/uploads/2025/04/AR62x2-cle-de-demarrage.webp",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "petit élément détaché (2 morceaux)"
+  ],
+  "plus": {
+   "verdict": "WARN",
+   "reasons": [
+    "petit élément détaché (2 morceaux)"
+   ],
+   "parts": 2,
+   "second": 0.018,
+   "vivid": 0.068,
+   "fill": 0.333
+  },
+  "size": [
+   1766,
+   832
+  ],
+  "error": null
+ },
+ {
+  "slug": "urbanglide-all-road-6-2x2",
+  "i": 3,
+  "url": "https://urbanglide.com/wp-content/uploads/2025/04/AR62x2-pliee-1.webp",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition",
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.095,
+   "fill": 0.791
+  },
+  "size": [
+   787,
+   447
+  ],
+  "error": null
+ },
+ {
+  "slug": "urbanglide-all-road-6-2x2",
+  "i": 4,
+  "url": "https://urbanglide.com/wp-content/uploads/2025/04/AR62x2-2.webp",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.214,
+   "fill": 0.837
+  },
+  "size": [
+   769,
+   865
+  ],
+  "error": null
+ },
+ {
+  "slug": "urbanglide-ecross-duo",
+  "i": 0,
+  "url": "https://urbanglide.com/wp-content/uploads/2025/03/E-CROSS-DUO-PLIEE.webp",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition",
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.06,
+   "fill": 0.808
+  },
+  "size": [
+   510,
+   335
+  ],
+  "error": null
+ },
+ {
+  "slug": "urbanglide-ecross-duo",
+  "i": 1,
+  "url": "https://urbanglide.com/wp-content/uploads/2025/01/E-CROSS-DUO-pliee.webp",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.017,
+   "fill": 0.476
+  },
+  "size": [
+   1062,
+   840
+  ],
+  "error": null
+ },
+ {
+  "slug": "urbanglide-ecross-duo",
+  "i": 2,
+  "url": "https://urbanglide.com/wp-content/uploads/2025/02/E-CROSS-DUO-PNEUS.webp",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0.005,
+   "vivid": 0.115,
+   "fill": 0.352
+  },
+  "size": [
+   1766,
+   832
+  ],
+  "error": null
+ },
+ {
+  "slug": "urbanglide-ecross-duo",
+  "i": 3,
+  "url": "https://urbanglide.com/wp-content/uploads/2025/02/E-CROSS-DUO-SUSPENSIONS.webp",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.062,
+   "fill": 0.804
+  },
+  "size": [
+   1534,
+   883
+  ],
+  "error": null
+ },
+ {
+  "slug": "urbanglide-ecross-duo",
+  "i": 4,
+  "url": "https://urbanglide.com/wp-content/uploads/2025/04/E-CROSS-DUO-MOTEURS-copie.webp",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.125,
+   "fill": 0.651
+  },
+  "size": [
+   1007,
+   736
+  ],
+  "error": null
+ },
+ {
+  "slug": "urbanglide-ecross-duo",
+  "i": 5,
+  "url": "https://urbanglide.com/wp-content/uploads/2025/02/ECROSSDUO.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.099,
+   "fill": 0.474
+  },
+  "size": [
+   1080,
+   1080
+  ],
+  "error": null
+ },
+ {
+  "slug": "urbanglide-ecross-one",
+  "i": 0,
+  "url": "https://www.electrodepot.be/media/catalog/product/cache/478344f765a3acbaa16897afd5e57a0e/P10010405-2.jpg?frz-v=4852",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition",
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.01,
+   "fill": 0.806
+  },
+  "size": [
+   362,
+   234
+  ],
+  "error": null
+ },
+ {
+  "slug": "urbanglide-ecross-one",
+  "i": 1,
+  "url": "https://www.electrodepot.be/media/catalog/product/cache/478344f765a3acbaa16897afd5e57a0e/P10010405-3.jpg?frz-v=4852",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.015,
+   "fill": 0.788
+  },
+  "size": [
+   356,
+   222
+  ],
+  "error": null
+ },
+ {
+  "slug": "urbanglide-ecross-one",
+  "i": 2,
+  "url": "https://www.electrodepot.be/media/catalog/product/cache/478344f765a3acbaa16897afd5e57a0e/P10010405-4.jpg?frz-v=4852",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition",
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.06,
+   "fill": 0.819
+  },
+  "size": [
+   333,
+   371
+  ],
+  "error": null
+ },
+ {
+  "slug": "urbanglide-ecross-one",
+  "i": 3,
+  "url": "https://www.electrodepot.be/media/catalog/product/cache/478344f765a3acbaa16897afd5e57a0e/P10010405-1.jpg?frz-v=4852",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.032,
+   "fill": 0.499
+  },
+  "size": [
+   404,
+   404
+  ],
+  "error": null
+ },
+ {
+  "slug": "urbanglide-ecross-one",
+  "i": 4,
+  "url": "https://www.electrodepot.be/media/catalog/product/cache/478344f765a3acbaa16897afd5e57a0e/P10010405-5.jpg?frz-v=4852",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition",
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.191,
+   "fill": 0.493
+  },
+  "size": [
+   404,
+   404
+  ],
+  "error": null
+ },
+ {
+  "slug": "urbanglide-ecross-one",
+  "i": 5,
+  "url": "https://www.electrodepot.be/media/catalog/product/cache/478344f765a3acbaa16897afd5e57a0e/P10010405-6.jpg?frz-v=4852",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition",
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.06,
+   "fill": 0.819
+  },
+  "size": [
+   333,
+   371
+  ],
+  "error": null
+ },
+ {
+  "slug": "urbanglide-ecross-one",
+  "i": 6,
+  "url": "https://urbanglide.com/wp-content/uploads/2025/02/ECROSSONE-1.webp",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.085,
+   "fill": 0.839
+  },
+  "size": [
+   779,
+   859
+  ],
+  "error": null
+ },
+ {
+  "slug": "urbanglide-ride-85-evo",
+  "i": 0,
+  "url": "https://urbanglide.com/wp-content/uploads/2025/02/85EVO-BANNIERE-34.webp",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.029,
+   "fill": 0.808
+  },
+  "size": [
+   639,
+   971
+  ],
+  "error": null
+ },
+ {
+  "slug": "urbanglide-ride-85-evo",
+  "i": 1,
+  "url": "https://urbanglide.com/wp-content/webp-express/webp-images/uploads/2025/02/120001-scaled.jpg.webp",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.014,
+   "fill": 0.739
+  },
+  "size": [
+   1754,
+   882
+  ],
+  "error": null
+ },
+ {
+  "slug": "urbanglide-ride-85-evo",
+  "i": 2,
+  "url": "https://urbanglide.com/wp-content/uploads/2025/02/85EVO-pliee.webp",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.009,
+   "fill": 0.747
+  },
+  "size": [
+   1130,
+   751
+  ],
+  "error": null
+ },
+ {
+  "slug": "urbanglide-ride-85-evo",
+  "i": 3,
+  "url": "https://urbanglide.com/wp-content/uploads/2025/02/85EVO-frein-a-disque.webp",
+  "verdict": "WARN",
+  "reasons": [
+   "petit élément détaché (2 morceaux)"
+  ],
+  "plus": {
+   "verdict": "WARN",
+   "reasons": [
+    "petit élément détaché (2 morceaux)"
+   ],
+   "parts": 2,
+   "second": 0.021,
+   "vivid": 0.086,
+   "fill": 0.673
+  },
+  "size": [
+   1750,
+   814
+  ],
+  "error": null
+ },
+ {
+  "slug": "urbanglide-ride-85-evo",
+  "i": 4,
+  "url": "https://urbanglide.com/wp-content/uploads/2025/02/85EVO-ecran-fd-violet-poignee.webp",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.028,
+   "fill": 0.602
+  },
+  "size": [
+   1399,
+   883
+  ],
+  "error": null
+ },
+ {
+  "slug": "urbanglide-ride-85-evo",
+  "i": 5,
+  "url": "https://urbanglide.com/wp-content/uploads/2025/01/RIDE-85EVO.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.033,
+   "fill": 0.843
+  },
+  "size": [
+   822,
+   858
+  ],
+  "error": null
+ },
+ {
+  "slug": "urbanglide-urbanride-100xs",
+  "i": 0,
+  "url": "https://static.fnac-static.com/multimedia/Images/FR/MDM/36/53/f0/15749942/1543-3/tsp20260908140653/Trottinette-electrique-Urbanglide-Ride-100-XS-350-W-Noir.jpg",
+  "verdict": "ERROR",
+  "reasons": [],
+  "plus": null,
+  "size": null,
+  "error": "téléchargement vide"
+ },
+ {
+  "slug": "urbanglide-urbanride-100xs",
+  "i": 1,
+  "url": "https://static.fnac-static.com/multimedia/Images/FR/MDM/36/53/f0/15749942/1543-4/tsp20260908140653/Trottinette-electrique-Urbanglide-Ride-100-XS-350-W-Noir.jpg",
+  "verdict": "ERROR",
+  "reasons": [],
+  "plus": null,
+  "size": null,
+  "error": "téléchargement vide"
+ },
+ {
+  "slug": "urbanglide-urbanride-100xs",
+  "i": 2,
+  "url": "https://static.fnac-static.com/multimedia/Images/FR/MDM/36/53/f0/15749942/1543-5/tsp20260908140653/Trottinette-electrique-Urbanglide-Ride-100-XS-350-W-Noir.jpg",
+  "verdict": "ERROR",
+  "reasons": [],
+  "plus": null,
+  "size": null,
+  "error": "téléchargement vide"
+ },
+ {
+  "slug": "urbanglide-urbanride-100xs",
+  "i": 3,
+  "url": "https://static.fnac-static.com/multimedia/Images/FR/MDM/36/53/f0/15749942/1543-6/tsp20260908140653/Trottinette-electrique-Urbanglide-Ride-100-XS-350-W-Noir.jpg",
+  "verdict": "ERROR",
+  "reasons": [],
+  "plus": null,
+  "size": null,
+  "error": "téléchargement vide"
+ },
+ {
+  "slug": "urbanglide-urbanride-100xs",
+  "i": 4,
+  "url": "https://static.fnac-static.com/multimedia/Images/FR/MDM/36/53/f0/15749942/1543-7/tsp20260908140653/Trottinette-electrique-Urbanglide-Ride-100-XS-350-W-Noir.jpg",
+  "verdict": "ERROR",
+  "reasons": [],
+  "plus": null,
+  "size": null,
+  "error": "téléchargement vide"
+ },
+ {
+  "slug": "urbanglide-urbanride-100xs",
+  "i": 5,
+  "url": "https://static.fnac-static.com/multimedia/Images/FR/MDM/36/53/f0/15749942/1543-8/tsp20260908140653/Trottinette-electrique-Urbanglide-Ride-100-XS-350-W-Noir.jpg",
+  "verdict": "ERROR",
+  "reasons": [],
+  "plus": null,
+  "size": null,
+  "error": "téléchargement vide"
+ },
+ {
+  "slug": "urbanglide-urbanride-100xs",
+  "i": 6,
+  "url": "https://static.fnac-static.com/multimedia/Images/FR/MDM/36/53/f0/15749942/1543-9/tsp20260908140653/Trottinette-electrique-Urbanglide-Ride-100-XS-350-W-Noir.jpg",
+  "verdict": "ERROR",
+  "reasons": [],
+  "plus": null,
+  "size": null,
+  "error": "téléchargement vide"
+ },
+ {
+  "slug": "urbanglide-urbanride-100xs",
+  "i": 7,
+  "url": "https://static.fnac-static.com/multimedia/Images/FR/MDM/36/53/f0/15749942/1543-10/tsp20260908140653/Trottinette-electrique-Urbanglide-Ride-100-XS-350-W-Noir.jpg",
+  "verdict": "ERROR",
+  "reasons": [],
+  "plus": null,
+  "size": null,
+  "error": "téléchargement vide"
+ },
+ {
+  "slug": "urbanglide-urbanride-100xs",
+  "i": 8,
+  "url": "https://static.fnac-static.com/multimedia/Images/FR/MDM/36/53/f0/15749942/1543-2/tsp20260908140653/Trottinette-electrique-Urbanglide-Ride-100-XS-350-W-Noir.jpg",
+  "verdict": "ERROR",
+  "reasons": [],
+  "plus": null,
+  "size": null,
+  "error": "téléchargement vide"
+ },
+ {
+  "slug": "urbanglide-urbanride-85-plus",
+  "i": 0,
+  "url": "https://urbanglide.com/wp-content/webp-express/webp-images/uploads/2022/05/Ride-85-1.png.webp",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.001,
+   "fill": 0.472
+  },
+  "size": [
+   884,
+   1166
+  ],
+  "error": null
+ },
+ {
+  "slug": "urbanglide-urbanride-85-plus",
+  "i": 1,
+  "url": "https://urbanglide.com/wp-content/webp-express/webp-images/uploads/2022/06/Ride-85-roues.png.webp",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.003,
+   "fill": 0.83
+  },
+  "size": [
+   691,
+   886
+  ],
+  "error": null
+ },
+ {
+  "slug": "urbanglide-urbanride-85-plus",
+  "i": 2,
+  "url": "https://urbanglide.com/wp-content/webp-express/webp-images/uploads/2022/06/Ride-85-suspension.png.webp",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "basse définition",
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.018,
+   "fill": 0.798
+  },
+  "size": [
+   940,
+   571
+  ],
+  "error": null
+ },
+ {
+  "slug": "urbanglide-urbanride-85-plus",
+  "i": 3,
+  "url": "https://urbanglide.com/wp-content/webp-express/webp-images/uploads/2022/06/Ride-85-ecran.png.webp",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.018,
+   "fill": 0.665
+  },
+  "size": [
+   1329,
+   817
+  ],
+  "error": null
+ },
+ {
+  "slug": "urbanglide-urbanride-85-plus",
+  "i": 4,
+  "url": "https://urbanglide.com/wp-content/webp-express/webp-images/uploads/2022/10/Ride-85-batterie.png.webp",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.001,
+   "fill": 0.618
+  },
+  "size": [
+   1140,
+   1609
+  ],
+  "error": null
+ },
+ {
+  "slug": "urbanglide-urbanride-85-plus",
+  "i": 5,
+  "url": "https://urbanglide.com/wp-content/uploads/2022/05/RIDE-85.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.006,
+   "fill": 0.843
+  },
+  "size": [
+   838,
+   880
+  ],
+  "error": null
+ }
+]

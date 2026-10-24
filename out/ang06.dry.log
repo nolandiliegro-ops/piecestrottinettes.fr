@@ -1,0 +1,209 @@
+dyu-c4 #0 FAIL détourage sale / résidu de décor
+dyu-c4 #1 WARN cadrage serré
+dyu-c4 #2 WARN cadrage serré
+dyu-c4 #3 WARN cadrage serré
+dyu-c4 #4 WARN cadrage serré
+dyu-c4 #5 PASS ok
+dyu-c4 #6 FAIL élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux
+dyu-c4 #7 WARN basse définition · cadrage serré
+engwe-y10 #0 PASS ok
+engwe-y10 #1 WARN cadrage serré
+engwe-y10 #2 PASS ok
+engwe-y10 #3 WARN cadrage serré
+engwe-y10 #4 PASS ok
+engwe-y10 #5 PASS ok
+engwe-y10 #6 PASS ok
+engwe-y10 #7 PASS ok
+engwe-y400 #0 WARN cadrage serré
+engwe-y400 #1 PASS ok
+engwe-y400 #2 PASS ok
+engwe-y400 #3 WARN cadrage serré
+engwe-y400 #4 PASS ok
+engwe-y400 #5 PASS ok
+engwe-y400 #6 PASS ok
+engwe-y400 #7 WARN cadrage serré
+engwe-y600 #0 PASS ok
+engwe-y600 #1 FAIL détourage sale / résidu de décor · cadrage serré
+engwe-y600 #2 WARN basse définition · cadrage serré
+engwe-y600 #3 PASS ok
+engwe-y600 #4 PASS ok
+engwe-y600 #5 PASS ok
+engwe-y600s #0 PASS ok
+engwe-y600s #1 WARN cadrage serré
+engwe-y600s #2 PASS ok
+engwe-y600s #3 FAIL détourage sale / résidu de décor · cadrage serré
+engwe-y600s #4 PASS ok
+engwe-y600s #5 WARN cadrage serré
+engwe-y600s #6 PASS ok
+engwe-y600s #7 PASS ok
+inmotion-air #0 WARN basse définition · cadrage serré
+inmotion-air #1 WARN basse définition · cadrage serré
+inmotion-air #2 WARN cadrage serré
+inmotion-air #3 WARN basse définition · cadrage serré
+inmotion-air #4 PASS ok
+inmotion-air #5 PASS ok
+inmotion-air #6 PASS ok
+inmotion-air-pro #0 PASS ok
+inmotion-air-pro #1 PASS ok
+inmotion-air-pro #2 PASS ok
+inmotion-air-pro #3 FAIL cadrage serré · élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux
+inmotion-air-pro #4 FAIL élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux
+inmotion-air-pro #5 WARN basse définition · cadrage serré
+inmotion-air-pro #6 PASS ok
+inmotion-climber #0 PASS ok
+inmotion-climber #1 PASS ok
+inmotion-climber #2 PASS ok
+inmotion-climber #3 WARN basse définition
+inmotion-climber #4 PASS ok
+inmotion-climber #5 WARN basse définition · cadrage serré
+inmotion-climber #6 PASS ok
+inmotion-climber #7 PASS ok
+inmotion-rs #0 PASS ok
+inmotion-rs #1 FAIL élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux
+inmotion-rs #2 PASS ok
+inmotion-rs #3 PASS ok
+inmotion-rs #4 WARN basse définition · cadrage serré
+inmotion-rs #5 WARN cadrage serré
+inmotion-rs #6 PASS ok
+inmotion-rs #7 WARN cadrage serré
+inmotion-rs #8 WARN cadrage serré
+inmotion-rs #9 WARN cadrage serré
+inmotion-rs-jet #0 PASS ok
+inmotion-rs-jet #1 PASS ok
+inmotion-rs-jet #2 PASS ok
+inmotion-rs-jet #3 PASS ok
+inmotion-rs-jet #4 WARN cadrage serré
+inmotion-rs-jet #5 PASS ok
+inmotion-rs-jet #6 WARN cadrage serré
+inmotion-rs-jet #7 WARN cadrage serré
+inmotion-rs-jet #8 FAIL élément en plus (logo, badge, téléphone, 2e trottinette) : 5 morceaux
+inmotion-rs-lite #0 PASS ok
+inmotion-rs-lite #1 PASS ok
+inmotion-rs-lite #2 PASS ok
+inmotion-rs-lite #3 PASS ok
+inmotion-rs-lite #4 WARN basse définition · cadrage serré
+inmotion-rs-lite #5 FAIL détourage sale / résidu de décor · basse définition · cadrage serré
+inmotion-rs-lite #6 WARN cadrage serré
+inmotion-rs-lite #7 WARN basse définition · cadrage serré
+kingsong-n12-pro #0 WARN cadrage serré
+kingsong-n12-pro #1 WARN basse définition
+kingsong-n12-pro #2 FAIL détourage sale / résidu de décor · cadrage serré
+kingsong-n12-pro #3 WARN cadrage serré
+kingsong-n12-pro #4 PASS ok
+kingsong-n12-pro #5 PASS ok
+kingsong-n12-pro #6 PASS ok
+kingsong-n12-pro #7 PASS ok
+kingsong-n12-pro #8 FAIL détourage sale / résidu de décor · élément en plus (logo, badge, téléphone, 2e trottinette) : 4 morceaux
+kingsong-n12-pro #9 FAIL détourage sale / résidu de décor · cadrage serré
+kingsong-n12-t3 #0 WARN basse définition · cadrage serré
+kingsong-n12-t3 #1 PASS ok
+kingsong-n12-t3 #2 PASS ok
+kingsong-n12-t3 #3 PASS ok
+kingsong-n12-t3 #4 PASS ok
+kingsong-n12-t3 #5 FAIL détourage sale / résidu de décor · petit élément détaché (2 morceaux)
+kingsong-n12-t3 #6 WARN basse définition · cadrage serré
+kingsong-n12-t3 #7 PASS ok
+kingsong-n16 #0 WARN cadrage serré
+kingsong-n16 #1 WARN cadrage serré
+kingsong-n16 #2 PASS ok
+kingsong-n16 #3 PASS ok
+kingsong-n16 #4 PASS ok
+kingsong-n16 #5 PASS ok
+kingsong-n16 #6 FAIL détourage sale / résidu de décor · cadrage serré
+kingsong-n16 #7 FAIL détourage sale / résidu de décor
+kingsong-n16 #8 PASS ok
+kingsong-s2-pro #0 WARN cadrage serré
+kingsong-s2-pro #1 WARN basse définition · cadrage serré
+kingsong-s2-pro #2 FAIL détourage sale / résidu de décor · cadrage serré
+kingsong-s2-pro #3 WARN basse définition
+micro-explorer #0 ERROR téléchargement vide
+micro-explorer #1 ERROR téléchargement vide
+micro-explorer #2 ERROR téléchargement vide
+micro-explorer #3 ERROR téléchargement vide
+micro-explorer #4 ERROR téléchargement vide
+micro-explorer #5 ERROR téléchargement vide
+micro-explorer #6 ERROR téléchargement vide
+micro-explorer #7 ERROR téléchargement vide
+micro-explorer-ii #0 FAIL détourage sale / résidu de décor
+micro-explorer-ii #1 FAIL détourage sale / résidu de décor · basse définition · cadrage serré
+micro-explorer-ii #2 PASS ok
+micro-explorer-ii #3 FAIL détourage sale / résidu de décor
+micro-explorer-ii #4 WARN basse définition · cadrage serré
+f40 #0 FAIL détourage sale / résidu de décor · basse définition
+f40 #1 PASS ok
+f40 #2 FAIL détourage sale / résidu de décor · basse définition
+f40 #3 FAIL basse définition · cadrage serré · élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux
+f40 #4 FAIL détourage sale / résidu de décor
+g30-max #0 PASS ok
+g30-max #1 WARN basse définition
+g30-max #2 WARN basse définition
+g30-max #3 FAIL détourage sale / résidu de décor · basse définition · cadrage serré
+g30-max #4 WARN cadrage serré
+g30-max #5 FAIL détourage sale / résidu de décor · cadrage serré
+ninebot-e2 #0 ERROR téléchargement vide
+ninebot-e2 #1 ERROR téléchargement vide
+ninebot-e2 #2 ERROR téléchargement vide
+ninebot-e2 #3 ERROR téléchargement vide
+ninebot-e2 #4 ERROR téléchargement vide
+ninebot-e2 #5 ERROR téléchargement vide
+ninebot-e2 #6 ERROR téléchargement vide
+ninebot-e2 #7 ERROR téléchargement vide
+ninebot-e2 #8 ERROR téléchargement vide
+ninebot-e2 #9 ERROR téléchargement vide
+ninebot-e3 #0 WARN basse définition
+ninebot-e3 #1 FAIL détourage sale / résidu de décor · basse définition · élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux
+ninebot-e3 #2 FAIL détourage sale / résidu de décor · basse définition · cadrage serré · élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux
+ninebot-e3 #3 FAIL détourage sale / résidu de décor · basse définition · cadrage serré
+ninebot-e3 #4 WARN basse définition
+ninebot-f3-pro-e #0 WARN basse définition
+ninebot-f3-pro-e #1 WARN basse définition
+ninebot-f3-pro-e #2 FAIL détourage sale / résidu de décor · basse définition · petit élément détaché (2 morceaux)
+ninebot-f3-pro-e #3 FAIL détourage sale / résidu de décor · basse définition
+ninebot-f3-pro-e #4 PASS ok
+ninebot-f3-pro-e #5 FAIL détourage sale / résidu de décor · cadrage serré
+urbanglide-100-evo #0 PASS ok
+urbanglide-100-evo #1 WARN basse définition · cadrage serré
+urbanglide-100-evo #2 FAIL détourage sale / résidu de décor · basse définition · cadrage serré
+urbanglide-100-evo #3 WARN cadrage serré
+urbanglide-100-evo #4 PASS ok
+urbanglide-100-evo #5 FAIL détourage sale / résidu de décor · cadrage serré
+urbanglide-all-road-6-2x2 #0 PASS ok
+urbanglide-all-road-6-2x2 #1 FAIL détourage sale / résidu de décor · élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux · couleurs vives 91 % (visuel marketing ?)
+urbanglide-all-road-6-2x2 #2 FAIL détourage sale / résidu de décor · petit élément détaché (2 morceaux)
+urbanglide-all-road-6-2x2 #3 WARN basse définition · cadrage serré
+urbanglide-all-road-6-2x2 #4 PASS ok
+urbanglide-ecross-duo #0 WARN basse définition · cadrage serré
+urbanglide-ecross-duo #1 PASS ok
+urbanglide-ecross-duo #2 FAIL détourage sale / résidu de décor
+urbanglide-ecross-duo #3 WARN cadrage serré
+urbanglide-ecross-duo #4 WARN cadrage serré
+urbanglide-ecross-duo #5 PASS ok
+urbanglide-ecross-one #0 WARN basse définition · cadrage serré
+urbanglide-ecross-one #1 WARN basse définition
+urbanglide-ecross-one #2 WARN basse définition · cadrage serré
+urbanglide-ecross-one #3 WARN basse définition
+urbanglide-ecross-one #4 WARN basse définition · cadrage serré
+urbanglide-ecross-one #5 WARN basse définition · cadrage serré
+urbanglide-ecross-one #6 PASS ok
+urbanglide-ride-85-evo #0 PASS ok
+urbanglide-ride-85-evo #1 WARN cadrage serré
+urbanglide-ride-85-evo #2 FAIL détourage sale / résidu de décor · cadrage serré
+urbanglide-ride-85-evo #3 WARN petit élément détaché (2 morceaux)
+urbanglide-ride-85-evo #4 PASS ok
+urbanglide-ride-85-evo #5 PASS ok
+urbanglide-urbanride-100xs #0 ERROR téléchargement vide
+urbanglide-urbanride-100xs #1 ERROR téléchargement vide
+urbanglide-urbanride-100xs #2 ERROR téléchargement vide
+urbanglide-urbanride-100xs #3 ERROR téléchargement vide
+urbanglide-urbanride-100xs #4 ERROR téléchargement vide
+urbanglide-urbanride-100xs #5 ERROR téléchargement vide
+urbanglide-urbanride-100xs #6 ERROR téléchargement vide
+urbanglide-urbanride-100xs #7 ERROR téléchargement vide
+urbanglide-urbanride-100xs #8 ERROR téléchargement vide
+urbanglide-urbanride-85-plus #0 PASS ok
+urbanglide-urbanride-85-plus #1 WARN cadrage serré
+urbanglide-urbanride-85-plus #2 FAIL détourage sale / résidu de décor · basse définition · cadrage serré
+urbanglide-urbanride-85-plus #3 WARN cadrage serré
+urbanglide-urbanride-85-plus #4 PASS ok
+urbanglide-urbanride-85-plus #5 PASS ok
+::notice title=photos ang06 (dry)::208 candidates · PASS 78 · WARN 65 · FAIL 38 · ERREUR 27
