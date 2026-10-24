@@ -307,7 +307,7 @@ const ScooterDetail = () => {
 
         {/* 24/10 : guides de l'atelier liés à cette trottinette (fiche → article → pièces) */}
         {/* 24/10 : conseils + question de l'atelier, propositions ?conseils=1..5 (sans paramètre : inchangés). */}
-        {conseilsParam() ? <AtelierOnFiche look={conseilsParam()!} slug={scooter.slug} brandSlug={scooter.brand?.slug} scooterName={scooter.name} />
+        {conseilsParam() ? <AtelierOnFiche look={conseilsParam()!} slug={scooter.slug} brandSlug={scooter.brand?.slug} scooterName={scooter.name} scooterImage={scooter.image_url} />
           : <><ScooterGuides slug={scooter.slug} brandSlug={scooter.brand?.slug} scooterName={scooter.name} />
             <ScooterQuestions slug={scooter.slug} scooterName={scooter.name} /></>}
 
