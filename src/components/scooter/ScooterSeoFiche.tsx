@@ -8,6 +8,7 @@
  * pièces d'usure et tailles exactes (liens vers nos fiches pièces), entretien, prix / où l'acheter, FAQ, sources.
  */
 import { useState } from "react";
+import { PartnerBlockNew, achatParam, useBuyCtx } from "@/components/scooter/BuyProposals";
 import { Link } from "react-router-dom";
 import { ArrowRight, Check, ChevronDown, Minus, Play, ShieldCheck } from "lucide-react";
 import { partnerOf } from "@/config/partners";
@@ -332,8 +333,12 @@ const PartnerV9 = ({ url, name, p }: { url: string; name: string; p: P }) => (
 
 /** « Où l'acheter » : le partenaire présenté comme un choix de l'atelier, lien partenaire assumé. */
 export const PartnerBlock = ({ url, name }: { url: string; name: string }) => {
+  const buy = useBuyCtx();
+  const achat = achatParam();
   const p = partnerOf(url);
   if (!p) return null;
+  // 24/10 : propositions « Où l'acheter » (?achat=1..5).
+  if (achat) return <PartnerBlockNew look={achat} url={url} name={name} price={buy.price} brandLogo={buy.brandLogo} />;
   const v = variantParam();
   if (v === 6) return <PartnerV6 url={url} name={name} p={p} />;
   if (v === 7) return <PartnerV7 url={url} name={name} p={p} />;
