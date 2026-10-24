@@ -185,6 +185,11 @@ const Catalogue = () => {
   useEffect(() => {
     if (pickerLook && selectedScooter && !scooterIdFilter && searchParams.get("tout") !== "1")
       setP((sp) => sp.set("scooter", selectedScooter.id));
+    // 25/10 : UNE seule sélection — trott changée ou retirée en haut (en-tête) → le filtre de la page suit.
+    else if (pickerLook && scooterIdFilter && selectedScooter && scooterIdFilter !== selectedScooter.id)
+      setP((sp) => sp.set("scooter", selectedScooter.id));
+    else if (pickerLook && scooterIdFilter && !selectedScooter)
+      setP((sp) => sp.delete("scooter"));
   }, [pickerLook, selectedScooter?.id]); // eslint-disable-line react-hooks/exhaustive-deps
   const compatIds = useSelectedCompatIds();
   const maybeIds = useSelectedCompatMaybeIds();

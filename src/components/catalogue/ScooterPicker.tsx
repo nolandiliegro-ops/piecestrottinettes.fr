@@ -380,7 +380,7 @@ export const PickerDiscreet = (p: PickerProps & { openSheet: () => void }) => {
           <span className="max-w-[150px] truncate">{shortName(s)}</span>
           {p.filterOn && p.count != null && <span className="text-sm font-semibold text-gray-500">{p.count}</span>}
         </button>
-        <button type="button" onClick={() => p.onFilter(!p.filterOn)} aria-label={p.filterOn ? "Voir toutes les pièces" : "Ne voir que mes pièces"} className="h-full w-10 flex items-center justify-center border-l" style={{ borderColor: LINE2, color: CARBON }}>
+        <button type="button" onClick={() => (p.filterOn ? forget() : p.onFilter(true))} aria-label={p.filterOn ? "Retirer ma trottinette" : "Ne voir que mes pièces"} className="h-full w-10 flex items-center justify-center border-l" style={{ borderColor: LINE2, color: CARBON }}>
           {p.filterOn ? <X className="w-4 h-4" /> : <Check className="w-4 h-4" />}
         </button>
       </span>

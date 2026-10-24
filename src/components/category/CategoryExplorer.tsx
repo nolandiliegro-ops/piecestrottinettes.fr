@@ -158,7 +158,7 @@ const CategoryExplorer = ({ slug, name, parts }: Props) => {
       return out;
     },
   });
-  const { selectedScooter, setSelectedScooter, allScooters } = useSelectedScooter();
+  const { selectedScooter, setSelectedScooter, clearSelection, allScooters } = useSelectedScooter();
   const pickerOn = typeof window !== "undefined" && readPickerLook(new URLSearchParams(window.location.search)) !== null;
 
   const [q, setQ] = useState("");
@@ -181,7 +181,14 @@ const CategoryExplorer = ({ slug, name, parts }: Props) => {
     if (s) setSelectedScooter({ id: s.id, name: s.name, slug: s.slug, brandName: s.brandName, imageUrl: s.imageUrl });
   }, [model, allScooters]); // eslint-disable-line react-hooks/exhaustive-deps
   // Trottinette du garage / sélecteur : présélectionnée si elle a des pièces ici.
-  useEffect(() => { if (selectedScooter && modelMap[selectedScooter.id] && !model) { setModel(selectedScooter.id); setBrand(modelMap[selectedScooter.id].brand); } }, [selectedScooter, modelMap]); // eslint-disable-line react-hooks/exhaustive-deps
+  // 25/10 (Nolan : « problème entre la sélection des trottinettes en haut et en bas ») : UNE seule sélection.
+  // La trott du site (en-tête) pilote le choix d'ici : changée en haut → suivie ici ; retirée en haut → retirée ici.
+  useEffect(() => {
+    if (selectedScooter && modelMap[selectedScooter.id]) { if (model !== selectedScooter.id) { setModel(selectedScooter.id); setBrand(modelMap[selectedScooter.id].brand); } }
+    else if (!selectedScooter && model) { setModel(null); setBrand(null); setSize(null); }
+  }, [selectedScooter?.id, modelMap]); // eslint-disable-line react-hooks/exhaustive-deps
+  /** Retirer la trott ici la retire aussi en haut (badges, tri « compatibles d'abord », icône de l'en-tête). */
+  const clearTrott = () => { setModel(null); setBrand(null); setSize(null); setInch(null); if (pickerOn) clearSelection(); };
 
   const brands = useMemo(() => {
     const m = new Map<string, { name: string; models: number }>();
@@ -235,7 +242,7 @@ const CategoryExplorer = ({ slug, name, parts }: Props) => {
               <Label>Ta trottinette</Label>
               {model && modelMap[model] ? (
                 <div className="flex flex-wrap items-center gap-2">
-                  <Plate on onClick={() => { setModel(null); setSize(null); }}>{modelMap[model].brandName} {modelMap[model].name.replace(new RegExp(`^${modelMap[model].brandName}\\s+`, "i"), "")} <Num n={modelMap[model].parts.size} on /> <X className="w-4 h-4" /></Plate>
+                  <Plate on onClick={clearTrott}>{modelMap[model].brandName} {modelMap[model].name.replace(new RegExp(`^${modelMap[model].brandName}\\s+`, "i"), "")} <Num n={modelMap[model].parts.size} on /> <X className="w-4 h-4" /></Plate>
                   <span className="text-sm text-gray-600" style={{ fontFamily: FONT }}>Seules les pièces vérifiées pour ce modèle sont affichées.</span>
                 </div>
               ) : brand ? (
@@ -297,7 +304,7 @@ const CategoryExplorer = ({ slug, name, parts }: Props) => {
         <option value="">Modèle…</option>
         {brandModels.map((m) => <option key={m.id} value={m.id}>{m.name.replace(new RegExp(`^${m.brandName}\\s+`, "i"), "")} ({m.parts.size})</option>)}
       </select>
-      {chosenModel && <button type="button" onClick={() => { setModel(null); setBrand(null); setSize(null); }} className="h-11 px-2 text-sm font-bold underline" style={{ fontFamily: FONT, color: CARBON }}>Effacer</button>}
+      {chosenModel && <button type="button" onClick={clearTrott} className="h-11 px-2 text-sm font-bold underline" style={{ fontFamily: FONT, color: CARBON }}>Effacer</button>}
     </div>
   );
   const inchRow = inches.length > 1 && (
@@ -386,7 +393,7 @@ const CategoryExplorer = ({ slug, name, parts }: Props) => {
         <div className="flex flex-wrap gap-2">
           {brands.length > 0 && btn("trott", "Ma trottinette", modelLabel)}
           {showSizes && btn("taille", "Taille", size ?? (inch != null ? inchLabel(inch) : null))}
-          {(model || size || inch != null) && <button type="button" onClick={() => { setModel(null); setBrand(null); setSize(null); setInch(null); }} className="h-11 px-2 text-sm font-bold underline" style={{ fontFamily: FONT, color: CARBON }}>Tout effacer</button>}
+          {(model || size || inch != null) && <button type="button" onClick={clearTrott} className="h-11 px-2 text-sm font-bold underline" style={{ fontFamily: FONT, color: CARBON }}>Tout effacer</button>}
         </div>
         {pop && (
           <div className="mt-2 p-4 bg-white max-w-3xl" style={{ boxShadow: `inset 0 0 0 1px ${LINE}, 0 12px 30px rgba(0,0,0,0.08)` }}>
@@ -475,7 +482,7 @@ const CategoryExplorer = ({ slug, name, parts }: Props) => {
 
       <section className="max-w-7xl mx-auto w-full px-4 md:px-8 pb-20">
         {shown.length === 0 ? (
-          <p className="py-10 text-base text-gray-600" style={{ fontFamily: FONT }}>Aucune pièce avec ces critères. <button type="button" onClick={() => { setQ(""); setBrand(null); setModel(null); setSize(null); }} className="font-bold underline min-h-[44px]" style={{ color: CARBON }}>Tout réafficher</button></p>
+          <p className="py-10 text-base text-gray-600" style={{ fontFamily: FONT }}>Aucune pièce avec ces critères. <button type="button" onClick={() => { setQ(""); clearTrott(); }} className="font-bold underline min-h-[44px]" style={{ color: CARBON }}>Tout réafficher</button></p>
         ) : (
           <>
             <div className="grid grid-cols-2 gap-4 md:grid-cols-3 md:gap-6 lg:grid-cols-4">
