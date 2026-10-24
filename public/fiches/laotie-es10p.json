@@ -1,0 +1,115 @@
+{
+ "displayName": "Laotie ES10P",
+ "metaTitle": "Laotie ES10P : fiche technique bimoteur 52 V",
+ "metaDescription": "Laotie ES10P : 2 x 1 000 W, batterie 52 V 28,8 Ah, pneus gonflables 10 pouces, freins hydrauliques, 32 kg. Fiche, autonomie, charge et FAQ.",
+ "intro": [
+  "La Laotie ES10P est une trottinette chinoise bimoteur vendue surtout par Banggood et les places de marché. Les fiches s'accordent sur deux moteurs de 1 000 W, une batterie de 52 V et 28,8 Ah en cellules 21700, des pneus gonflables de 10 pouces et environ 32 kg.",
+  "Laotie annonce 70 km/h et 100 km d'autonomie, deux chiffres de vendeur. Un testeur français mesure plutôt une quarantaine de kilomètres à fond et dépasse les 100 km à 25 km/h. Le chargeur fourni de 2 A demande environ 14 heures pour une charge complète."
+ ],
+ "specs": [
+  [
+   "Moteurs",
+   "2 × 1 000 W ; certaines fiches les donnent en pointe, un testeur les juge nominaux"
+  ],
+  [
+   "Vitesse",
+   "25 km/h sur la voie publique ; 70 km/h annoncés, réservés à un terrain privé"
+  ],
+  [
+   "Autonomie annoncée",
+   "100 km"
+  ],
+  [
+   "Batterie",
+   "52 V (51,8 V nominal), 28,8 Ah, cellules 21700 ; 58,8 V en fin de charge"
+  ],
+  [
+   "Poids",
+   "31 à 32 kg selon les fiches"
+  ],
+  [
+   "Charge max",
+   "120 kg (une autre annonce dit 200 kg)"
+  ],
+  [
+   "Roues",
+   "10 pouces gonflables, version route ou tout-terrain"
+  ],
+  [
+   "Freins",
+   "Disques hydrauliques avant et arrière, 140 mm selon un testeur"
+  ],
+  [
+   "Suspension",
+   "Avant et arrière ; arrière réglable, avant jugé dur par un testeur"
+  ],
+  [
+   "Temps de charge",
+   "14 h avec le chargeur de 2 A fourni (tests) ; 5 à 8 h annoncées par des vendeurs"
+  ]
+ ],
+ "pros": [
+  "Grosse batterie de 28,8 Ah pour sa catégorie de prix (test français sur YouTube).",
+  "Freins hydrauliques à l'avant et à l'arrière, rares à ce tarif (tests YouTube).",
+  "Choix entre pneus route et tout-terrain à la commande (comparatif ES10 / ES18 sur YouTube)."
+ ],
+ "cons": [
+  "Recharge d'environ 14 heures avec le chargeur fourni.",
+  "Fourche avant ferme, qui transmet les petits chocs (comparatif YouTube).",
+  "Fiches vendeurs contradictoires sur la charge maximale et le type de puissance."
+ ],
+ "parts": [],
+ "care": [
+  "Avec un seul chargeur de 2 A, lance la recharge le soir : une batterie de 28,8 Ah n'est pas pleine en quelques heures.",
+  "Purge les freins hydrauliques si le levier devient spongieux, au lieu de rapprocher les plaquettes à la main.",
+  "Relève la cote moulée sur le flanc de tes pneus dès la livraison : tu sauras quoi commander le jour où il faudra les changer."
+ ],
+ "faq": [
+  {
+   "q": "Quelle taille de pneu pour la Laotie ES10P ?",
+   "a": "Des pneus gonflables de 10 pouces, mais les vendeurs ne s'accordent pas sur la largeur exacte. Lis la cote sur le flanc de ton pneu avant toute commande."
+  },
+  {
+   "q": "Quel chargeur pour la Laotie ES10P ?",
+   "a": "Un chargeur 52 V qui sort 58,8 V, comme celui fourni. Vérifie aussi la forme de la prise de ta trottinette : un testeur a reçu un adaptateur avec le sien."
+  },
+  {
+   "q": "Combien de temps de charge pour la Laotie ES10P ?",
+   "a": "Environ 14 heures avec le chargeur de 2 A d'origine, selon deux testeurs. Les 5 à 8 heures des fiches supposent un chargeur plus puissant."
+  },
+  {
+   "q": "Quelle autonomie réelle pour la Laotie ES10P ?",
+   "a": "Un testeur estime une quarantaine de kilomètres à pleine puissance, et plus de 100 km en roulant à 25 km/h. Ton poids et le relief feront varier ces chiffres."
+  },
+  {
+   "q": "Les 70 km/h de la Laotie ES10P sont-ils légaux ?",
+   "a": "Non, pas sur la voie publique. Le code de la route plafonne les trottinettes à 25 km/h ; les 70 km/h ne s'envisagent que sur un circuit privé, et la débrider pour la rue est interdit."
+  }
+ ],
+ "sources": [
+  {
+   "label": "Ceneo — Laotie ES10P",
+   "url": "https://www.ceneo.pl/105224531"
+  },
+  {
+   "label": "Laotie — trottinettes électriques",
+   "url": "https://www.laotie.zone/Electric-Scooter-c-13.html"
+  },
+  {
+   "label": "Vordeo — chargeur 52 V Laotie ES10P",
+   "url": "https://vordeo.com/products/laotie-52v-electric-scooter-charger-for-t30-es18-lite-l8s-pro-es10p"
+  },
+  {
+   "label": "YouTube — Test trottinette électrique Laotie ES10P",
+   "url": "https://www.youtube.com/watch?v=oJZAYs9XyFs"
+  },
+  {
+   "label": "YouTube — Laotie ES10P unboxing",
+   "url": "https://www.youtube.com/watch?v=KhOKgA1p92U"
+  },
+  {
+   "label": "YouTube — Comparison Laotie ES10 vs Laotie ES18",
+   "url": "https://www.youtube.com/watch?v=OVFihFGqnJo"
+  }
+ ]
+}

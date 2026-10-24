@@ -1,0 +1,120 @@
+{
+ "displayName": "Zero 10",
+ "metaTitle": "Zero 10 : fiche technique, autonomie et entretien",
+ "metaDescription": "Zero 10 : moteur arrière 1 000 W, batterie 52 V 18 Ah, pneus gonflables 10 pouces, deux freins à disque, 24 kg. Fiche technique, avis et FAQ.",
+ "intro": [
+  "La Zero 10 est la version monomoteur de 10 pouces de la gamme Zero, entre la Zero 9 et la Zero 10X bimoteur. Zero la décrit avec un moteur arrière de 1 000 W nominaux (1 600 W en pointe), une batterie de 52 V et 18 Ah, des pneus gonflables de 10 × 2,5 pouces et deux freins à disque.",
+  "Elle pèse environ 24 kg et Zero annonce 70 km d'autonomie, quand des revendeurs en promettent 60 à 65. Les mesures indépendantes sont plus basses : 46 km au mieux et 35 km en ville chez Max Blinker, 38 km dans le mode le plus rapide chez Monoblog. ElectricScooterInsider la signale aujourd'hui comme arrêtée."
+ ],
+ "specs": [
+  [
+   "Moteur",
+   "1 000 W nominaux, 1 600 W en pointe (selon Zero) ; un autre document de la gamme donne 800 W nominaux"
+  ],
+  [
+   "Vitesse",
+   "25 km/h sur la voie publique ; 48 km/h annoncés par Zero, réservés à un terrain privé"
+  ],
+  [
+   "Autonomie annoncée",
+   "70 km selon Zero, 60 à 65 km selon des revendeurs"
+  ],
+  [
+   "Autonomie mesurée",
+   "35 km en ville et 46 km au mieux (Max Blinker) ; 38 km en mode 3 (Monoblog)"
+  ],
+  [
+   "Batterie",
+   "52 V, 18 Ah, soit environ 936 Wh (58,8 V en fin de charge)"
+  ],
+  [
+   "Poids",
+   "24 kg selon Zero et Max Blinker (23 kg chez un revendeur)"
+  ],
+  [
+   "Charge max",
+   "120 kg selon Zero (100 kg chez un revendeur)"
+  ],
+  [
+   "Roues",
+   "10 × 2,5 pouces gonflables (selon Zero)"
+  ],
+  [
+   "Freins",
+   "Disque avant et arrière, à câble selon le test Monoblog"
+  ],
+  [
+   "Suspension",
+   "Ressort à l'avant, amortisseur à l'arrière"
+  ],
+  [
+   "Temps de charge",
+   "5 à 9 heures selon les revendeurs"
+  ]
+ ],
+ "pros": [
+  "Freinage efficace : 4,2 m pour s'arrêter depuis 25 km/h (Monoblog).",
+  "Confortable en ville grâce aux pneus gonflables et à la double suspension (ElectricScooterInsider).",
+  "Guidon pliable et réglable en hauteur, pratique pour la ranger (ElectricScooterInsider)."
+ ],
+ "cons": [
+  "24 kg : lourde à porter dans un escalier (Max Blinker).",
+  "Autonomie mesurée nettement sous les 70 km annoncés.",
+  "Guidon qui se desserre en roulant, relevé par Monoblog.",
+  "Rapport qualité-prix jugé faible par ElectricScooterInsider."
+ ],
+ "parts": [],
+ "care": [
+  "Contrôle la pression de tes pneus de 10 pouces chaque semaine : un pneu à chambre sous-gonflé pince et crève plus vite.",
+  "Les freins à câble se détendent avec l'usure des plaquettes : reprends la tension au réglage du levier dès que la course s'allonge.",
+  "Vérifie le serrage du guidon et de la colonne tous les 15 jours, c'est le jeu qui revient le plus souvent dans les tests."
+ ],
+ "price": {
+  "text": "Prix relevé par ElectricScooterInsider : 1 399 $ aux États-Unis, modèle signalé comme arrêté. Prix susceptible de varier.",
+  "source": "electricscooterinsider.com"
+ },
+ "faq": [
+  {
+   "q": "Quelle autonomie réelle pour la Zero 10 ?",
+   "a": "Compte 35 à 46 km selon les mesures de Max Blinker, et 38 km dans le mode le plus rapide chez Monoblog. Les 70 km de Zero supposent une conduite lente et un pilote léger."
+  },
+  {
+   "q": "Quelle taille de pneu pour la Zero 10 ?",
+   "a": "Zero indique du 10 × 2,5 pouces gonflable. Avant de commander, lis la cote moulée sur le flanc de ton pneu : c'est elle qui fait foi."
+  },
+  {
+   "q": "Peut-on rouler à 48 km/h en ville avec la Zero 10 ?",
+   "a": "Non. En France, une trottinette électrique est limitée à 25 km/h sur la route et les pistes. Les 48 km/h annoncés ne concernent qu'un terrain privé, et la débrider pour la voie publique est interdit."
+  },
+  {
+   "q": "Quelle différence entre la Zero 10 et la Zero 10X ?",
+   "a": "La Zero 10 n'a qu'un moteur de 1 000 W et pèse 24 kg. La Zero 10X ajoute un second moteur, des pneus plus larges de 10 × 3 pouces et monte à 35 kg."
+  },
+  {
+   "q": "Quels freins sur la Zero 10 ?",
+   "a": "Un disque à l'avant et un à l'arrière. Monoblog précise qu'ils sont commandés par câble, pas en hydraulique."
+  }
+ ],
+ "sources": [
+  {
+   "label": "Zero — Zero 10",
+   "url": "https://zeroelectricscooter.com/products/zero-10"
+  },
+  {
+   "label": "ElectricScooterInsider — Zero 10 Review",
+   "url": "https://www.electricscooterinsider.com/electric-scooters/reviews/zero-10-review/"
+  },
+  {
+   "label": "Max Blinker — Zero 10",
+   "url": "https://www.maxblinker.fr/fr/trottinettes-electriques/zero-10"
+  },
+  {
+   "label": "Monoblog — Test Ride Zero 10 52 V 18 Ah",
+   "url": "https://monoblog.com.ar/2025/02/07/test-ride-zero-10-52v-18ah/"
+  },
+  {
+   "label": "Gyroroue Shop — Zero 10 monomoteur",
+   "url": "https://www.gyroroue-shop.fr/boutique/trottinette-electrique/zero-10-monomoteur"
+  }
+ ]
+}

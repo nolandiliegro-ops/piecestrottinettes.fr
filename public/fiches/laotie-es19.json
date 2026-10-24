@@ -1,0 +1,120 @@
+{
+ "displayName": "Laotie ES19",
+ "metaTitle": "Laotie ES19 : fiche technique 60 V et entretien",
+ "metaDescription": "Laotie ES19 : deux moteurs 3 000 W en pointe, batterie 60 V 38,4 Ah, pneus larges 10 pouces, freins hydrauliques, 52 kg. Fiche, limites et FAQ.",
+ "intro": [
+  "La Laotie ES19 est une grosse bimoteur chinoise reconnaissable à ses pneus très larges et à son amortisseur de direction. Laotie la décrit avec deux moteurs de 3 000 W en pointe, une batterie de 60 V et 38,4 Ah, environ 52 kg et 200 kg de charge maximale.",
+  "Laotie annonce jusqu'à 135 km sur un moteur, mais seulement 60 à 70 km avec les deux. Banggood vend aussi une version de 35 Ah annoncée à 80 à 105 km. Les testeurs français saluent l'autonomie mais pointent un guidonnage à haute vitesse et un amortisseur de direction d'origine à remplacer."
+ ],
+ "specs": [
+  [
+   "Moteurs",
+   "2 × 3 000 W en pointe selon Laotie ; puissance nominale non publiée"
+  ],
+  [
+   "Vitesse",
+   "25 km/h sur la voie publique ; 85 à 100 km/h annoncés selon les vendeurs, réservés à un terrain privé"
+  ],
+  [
+   "Autonomie annoncée",
+   "jusqu'à 135 km sur un moteur, 60 à 70 km sur deux (Laotie) ; 80 à 105 km pour la version 35 Ah (Banggood)"
+  ],
+  [
+   "Batterie",
+   "60 V, 38,4 Ah selon Laotie ; 35 Ah sur une version Banggood (67,2 V en fin de charge)"
+  ],
+  [
+   "Poids",
+   "environ 52 kg"
+  ],
+  [
+   "Charge max",
+   "200 kg"
+  ],
+  [
+   "Roues",
+   "10 × 4,5 pouces gonflables selon Laotie ; un autre test indique 10 × 2,5"
+  ],
+  [
+   "Freins",
+   "Disques hydrauliques avant et arrière (Zoom selon une fiche) + frein électronique"
+  ],
+  [
+   "Suspension",
+   "Avant et arrière, avec amortisseur de direction"
+  ],
+  [
+   "Temps de charge",
+   "5 à 6 h selon Laotie, avec deux ports de charge"
+  ]
+ ],
+ "pros": [
+  "Autonomie jugée très solide après 5 000 km, sans perte notable de batterie (test YouTube).",
+  "Amortisseur de direction monté d'origine (Banggood).",
+  "Charge maximale de 200 kg (Laotie)."
+ ],
+ "cons": [
+  "Environ 52 kg : impossible à porter.",
+  "Guidonnage signalé à haute vitesse, corrigé par des testeurs en changeant l'amortisseur de direction (tests YouTube).",
+  "Accélération jugée trop brutale en double moteur, même à basse vitesse (Zerorider).",
+  "Capacité de batterie, vitesse et taille de pneu différentes selon les vendeurs."
+ ],
+ "parts": [],
+ "care": [
+  "Contrôle le jeu de la colonne de direction dès la réception et après chaque grosse sortie : c'est le point faible relevé par les testeurs.",
+  "Sur des pneus aussi larges, garde la pression recommandée sur le flanc : trop gonflés, ils rebondissent et la trottinette danse.",
+  "Avec 52 kg à freiner, surveille l'épaisseur des plaquettes tous les 300 à 500 km."
+ ],
+ "faq": [
+  {
+   "q": "Quelle batterie a la Laotie ES19 ?",
+   "a": "Une batterie de 60 V, en 38,4 Ah selon Laotie. Banggood a aussi vendu une version de 35 Ah : l'étiquette de ta batterie te dira laquelle tu as."
+  },
+  {
+   "q": "Quelle taille de pneu pour la Laotie ES19 ?",
+   "a": "Laotie parle de 10 × 4,5 pouces, mais un test donne une autre cote. Avant d'acheter un pneu ou une chambre, lis l'inscription sur le flanc de ton pneu."
+  },
+  {
+   "q": "La Laotie ES19 est-elle stable ?",
+   "a": "Plusieurs testeurs ont constaté un guidonnage à haute vitesse. Ils l'ont réglé en changeant l'amortisseur de direction et en resserrant la colonne."
+  },
+  {
+   "q": "Peut-on rouler en ville avec la Laotie ES19 à pleine vitesse ?",
+   "a": "Non. En France, la vitesse d'une trottinette électrique sur la voie publique est bloquée à 25 km/h ; les 85 à 100 km/h annoncés relèvent du terrain privé, et circuler débridé est interdit."
+  },
+  {
+   "q": "Combien pèse la Laotie ES19 ?",
+   "a": "Environ 52 kg. Prévois un rangement de plain-pied : elle se pousse, elle ne se porte pas."
+  }
+ ],
+ "sources": [
+  {
+   "label": "Laotie — ES19",
+   "url": "https://www.laotie.zone/ES19-Steering-Damper-Scooter-6000W-135km-Mileage-p-1796950.html"
+  },
+  {
+   "label": "Banggood — Laotie ES19 review",
+   "url": "https://blog.banggood.com/laotie-es19-review-71824.html"
+  },
+  {
+   "label": "Banggood — pneu 10 × 4,5 Laotie ES19",
+   "url": "https://fr.banggood.com/LAOTIE-10x4_5inch-Wide-Wheel-Electric-Scooter-Road-Tire-Fat-Tire-Wide-Tire-Anti-Explosion-Shock-Absorption-Tire-For-LAOTIE-ES19-p-2032684.html"
+  },
+  {
+   "label": "Priceboon — Laotie ES19",
+   "url": "https://www.priceboon.com/product/laotie-es19/"
+  },
+  {
+   "label": "YouTube — Laotie ES19, un monstre pour moins de 1400 €",
+   "url": "https://www.youtube.com/watch?v=Wbany0V5xKs"
+  },
+  {
+   "label": "YouTube — Laotie ES19, comment éviter de guidonner ?",
+   "url": "https://www.youtube.com/watch?v=F7PaFwc_XQU"
+  },
+  {
+   "label": "YouTube — Que vaut une Laotie après 5000 km",
+   "url": "https://www.youtube.com/watch?v=CLU6mybbiIo"
+  }
+ ]
+}

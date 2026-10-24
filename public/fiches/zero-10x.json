@@ -1,0 +1,139 @@
+{
+ "displayName": "Zero 10X",
+ "metaTitle": "Zero 10X : fiche technique, versions et pièces",
+ "metaDescription": "Zero 10X : deux moteurs, batterie 52 V ou 60 V selon la version, pneus 10 x 3 (80/65-6), 35 kg, suspensions à ressort. Fiche, pneus et FAQ.",
+ "intro": [
+  "La Zero 10X est la bimoteur de 10 pouces de Zero. Elle a connu plusieurs versions : 52 V en 18 ou 23 Ah avec deux moteurs de 1 000 W, puis 60 V en 21 Ah avec deux moteurs de 1 200 W, selon la fiche Zero. Toutes gardent des suspensions à ressort à l'avant et à l'arrière et des pneus de 10 × 3 pouces.",
+  "Elle pèse 35 kg pour 120 kg de charge maximale. Zero annonce de 65 à 110 km selon la batterie, en mode éco sur un seul moteur. Le freinage dépend de la version : disques mécaniques sur la 18 Ah, hydrauliques sur les autres, avec des étriers Zoom sur la 60 V."
+ ],
+ "specs": [
+  [
+   "Moteurs",
+   "2 × 1 000 W (52 V) ou 2 × 1 200 W (60 V) ; en pointe 3 200 ou 3 600 W, Zero se contredit sur sa propre fiche"
+  ],
+  [
+   "Vitesse",
+   "25 km/h sur la voie publique ; 65 km/h annoncés par Zero, réservés à un terrain privé"
+  ],
+  [
+   "Autonomie annoncée",
+   "65 km (52 V 18 Ah), 110 km (52 V 23 Ah), 75 km (60 V 21 Ah), en mode éco monomoteur"
+  ],
+  [
+   "Batterie",
+   "52 V 18 ou 23 Ah, ou 60 V 21 Ah selon la version (58,8 ou 67,2 V en fin de charge)"
+  ],
+  [
+   "Poids",
+   "35 kg"
+  ],
+  [
+   "Charge max",
+   "120 kg"
+  ],
+  [
+   "Roues",
+   "10 × 3 pouces gonflables (80/65-6, jante 6 pouces), à chambre à air"
+  ],
+  [
+   "Freins",
+   "Disques mécaniques (18 Ah) ou hydrauliques (23 Ah et 60 V, Zoom sur la 60 V)"
+  ],
+  [
+   "Suspension",
+   "Ressorts avant et arrière sur bras oscillants"
+  ],
+  [
+   "Prise de charge",
+   "GX16 à 3 broches (port Zero)"
+  ],
+  [
+   "Temps de charge",
+   "10 à 12 h selon Zero ; 9 h annoncées par un revendeur pour la 52 V 23 Ah"
+  ]
+ ],
+ "pros": [
+  "Suspensions jugées très confortables, y compris hors bitume (Trottinette-Lab).",
+  "Deux moteurs utilisables séparément pour économiser la batterie (Zero).",
+  "Pneus de 10 × 3 pouces faciles à trouver : la même taille équipe plusieurs Kaabo et Dualtron (Wattiz)."
+ ],
+ "cons": [
+  "35 kg : elle se pousse plus qu'elle ne se porte (Trottinette-Lab).",
+  "Autonomie jugée décevante pour la catégorie par Trottinette-Lab.",
+  "Jeu de colonne et finition critiqués par un acheteur de la version 60 V (forum EspritRoue).",
+  "Fiche constructeur incohérente sur la puissance de pointe."
+ ],
+ "parts": [
+  {
+   "label": "Pneu",
+   "size": "10 × 3 (80/65-6), jante 6 pouces",
+   "count": 11,
+   "to": "/piece/pneu-80-65-6-10x3-ewheel",
+   "cta": "Pneus 80/65-6"
+  },
+  {
+   "label": "Chambre à air",
+   "size": "80/65-6 (10 × 3)",
+   "count": 3,
+   "to": "/piece/chambre-a-air-80-65-6-10x3-valve-droite-ewheel",
+   "cta": "Chambres 80/65-6"
+  }
+ ],
+ "care": [
+  "Gonfle tes pneus 10 × 3 entre 2,5 et 3,5 bars : en dessous, la chambre se pince sur la jante à la première bordure.",
+  "Graisse les axes des bras oscillants et nettoie les ressorts après une sortie boueuse : la terre les fait grincer puis s'user.",
+  "Identifie ta version (52 ou 60 V) sur l'étiquette de la batterie avant de racheter un chargeur : les deux ne sont pas interchangeables."
+ ],
+ "faq": [
+  {
+   "q": "Quelle taille de pneu pour la Zero 10X ?",
+   "a": "Du 10 × 3 pouces, aussi noté 80/65-6 ou 255 × 80, sur une jante de 6 pouces. D'origine, il se monte avec une chambre à air."
+  },
+  {
+   "q": "Comment savoir si ma Zero 10X est en 52 V ou en 60 V ?",
+   "a": "Regarde l'étiquette de la batterie ou le voltmètre de l'écran à pleine charge : 58,8 V pour une 52 V, 67,2 V pour une 60 V. C'est indispensable avant d'acheter un chargeur."
+  },
+  {
+   "q": "La Zero 10X a-t-elle des freins hydrauliques ?",
+   "a": "Ça dépend de la version. Zero liste des disques mécaniques sur la 52 V 18 Ah et des freins hydrauliques sur la 23 Ah et la 60 V, avec des étriers Zoom sur cette dernière."
+  },
+  {
+   "q": "Quelle autonomie réelle attendre de la Zero 10X ?",
+   "a": "Zero annonce 65 à 110 km en mode éco sur un seul moteur. Un acheteur de la version 60 V n'a parcouru que 25 km à 15 km/h à Paris : compte nettement moins que l'annonce dès que tu roules en double moteur."
+  },
+  {
+   "q": "La Zero 10X peut-elle rouler à 65 km/h sur la route ?",
+   "a": "Pas en France : sur la voie publique, une trottinette est plafonnée à 25 km/h. La vitesse annoncée par Zero ne vaut que sur un terrain privé, et une 10X débridée n'a pas le droit de circuler."
+  }
+ ],
+ "sources": [
+  {
+   "label": "Zero — Zero 10X",
+   "url": "https://zeroelectricscooter.com/products/zero-10x-electric-scooter"
+  },
+  {
+   "label": "Zero — Zero 10X Limited",
+   "url": "https://zeroelectricscooter.com/products/zero-10x-limited-electric-escooter"
+  },
+  {
+   "label": "Trottinette-Lab — Zero 10X, notre avis",
+   "url": "https://trottinette-lab.fr/zero10x-notre-avis/"
+  },
+  {
+   "label": "EspritRoue — retour sur une Zero 10X 60 V",
+   "url": "https://www.espritroue.fr/topic/12583-zero-10x-60v-neuve-mauvaise-qualit%C3%A9-et-probl%C3%A8mes-importants/"
+  },
+  {
+   "label": "Trott Pneu — pneu 10x3 Hota Zero 10X",
+   "url": "https://www.trottpneu.fr/products/pneu-10x3-hota"
+  },
+  {
+   "label": "Wattiz — pneus gonflables",
+   "url": "https://www.wattiz.fr/fr/5765-pneus-gonflables"
+  },
+  {
+   "label": "Zero Scooters Australia — port de charge",
+   "url": "https://www.zeroscooters.com.au/products/zero-charging-port"
+  }
+ ]
+}

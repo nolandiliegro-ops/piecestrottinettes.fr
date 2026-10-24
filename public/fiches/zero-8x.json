@@ -1,0 +1,119 @@
+{
+  "displayName": "Zero 8X",
+  "metaTitle": "Zero 8X : fiche technique bimoteur 52 V",
+  "metaDescription": "Zero 8X : deux moteurs de 800 W, batterie 52 V 18 ou 26 Ah, pneus 8 x 3,5 pouces pleins ou gonflables, freins à disque. Fiche, chargeur et FAQ.",
+  "intro": [
+    "La Zero 8X reprend la recette de la Zero 10X, deux moteurs et une double suspension, dans un format de 8 pouces plus court. Zero la décrit avec deux moteurs de 800 W, 2 300 W en pointe, et une batterie de 52 V en 18 Ah ou 26 Ah.",
+    "Elle roule sur des pneus de 8 × 3,5 pouces, pleins alvéolés ou gonflables selon la version, et freine avec deux disques. Zero annonce 65 à 75 km d'autonomie avec 18 Ah et jusqu'à 110 km avec 26 Ah, en mode éco, pour 33 à 35 kg."
+  ],
+  "specs": [
+    [
+      "Moteurs",
+      "2 × 800 W ; 2 300 W en pointe"
+    ],
+    [
+      "Vitesse",
+      "25 km/h sur la voie publique ; 55 km/h (pneus pleins) à 60 km/h (pneus gonflables) annoncés, réservés à un terrain privé"
+    ],
+    [
+      "Autonomie annoncée",
+      "65 à 75 km (18 Ah) ; jusqu'à 110 km (26 Ah), en mode éco monomoteur"
+    ],
+    [
+      "Autonomie mesurée",
+      "27 km dans le mode le plus rapide (Monoblog) ; 34 km environ en conduite soutenue (test YouTube)"
+    ],
+    [
+      "Batterie",
+      "52 V, 18 Ah ou 26 Ah (58,8 V en fin de charge)"
+    ],
+    [
+      "Poids",
+      "33 kg (18 Ah) ou 35 kg (26 Ah)"
+    ],
+    [
+      "Charge max",
+      "120 kg"
+    ],
+    [
+      "Roues",
+      "8 × 3,5 pouces, pleins alvéolés ou gonflables selon la version"
+    ],
+    [
+      "Freins",
+      "Disque avant et arrière"
+    ],
+    [
+      "Suspension",
+      "Ressorts hydrauliques avant et arrière"
+    ],
+    [
+      "Prise de charge",
+      "GX16 à 3 broches (port Zero)"
+    ]
+  ],
+  "pros": [
+    "Freinage très court : 3,4 m depuis 24 km/h lors d'un test filmé.",
+    "Accélération vive grâce aux deux moteurs (tests YouTube).",
+    "Plus compacte qu'une Zero 10X, pour une puissance comparable (Zero)."
+  ],
+  "cons": [
+    "33 à 35 kg pour une 8 pouces : pas faite pour être portée.",
+    "Autonomie réelle bien inférieure aux chiffres annoncés.",
+    "Petites roues plus sensibles aux trous qu'une 10 pouces."
+  ],
+  "parts": [
+    {
+      "label": "Chargeur",
+      "size": "52 V (sortie 58,8 V), prise GX16 3 broches",
+      "count": 3,
+      "to": "/piece/chargeur-52v-588v-2a-connecteur-gx16-3p",
+      "cta": "Chargeur 52 V"
+    }
+  ],
+  "care": [
+    "Si ta 8X est en pneus pleins, inspecte leur bande de roulement tous les mois : un caillou incrusté abîme le caoutchouc.",
+    "Utilise le mode monomoteur en ville : tu ménages la batterie et l'usure des plaquettes.",
+    "Nettoie les deux disques au dégraissant frein après la pluie, jamais avec un lubrifiant."
+  ],
+  "faq": [
+    {
+      "q": "Quel chargeur pour la Zero 8X ?",
+      "a": "Un chargeur 52 V qui délivre 58,8 V, avec une prise GX16 à 3 broches comme sur les autres Zero. Le 2 A suffit ; un modèle plus puissant raccourcit la charge."
+    },
+    {
+      "q": "La Zero 8X a-t-elle des pneus pleins ?",
+      "a": "Ça dépend de la version : Zero la vend en 8 × 3,5 pouces pleins alvéolés ou gonflables. Regarde tes pneus, et lis la cote sur leur flanc avant d'en commander."
+    },
+    {
+      "q": "Quelle autonomie réelle pour la Zero 8X ?",
+      "a": "Monoblog a mesuré 27 km dans le mode le plus rapide, et un test filmé américain environ 34 km en conduite soutenue. En usage normal, compte bien moins que les 65 à 110 km annoncés."
+    },
+    {
+      "q": "La Zero 8X peut-elle dépasser 25 km/h ?",
+      "a": "Pas sur la voie publique : 25 km/h, c'est le maximum légal en France. Les 55 à 60 km/h de Zero ne concernent qu'un terrain privé, et circuler débridé est interdit."
+    }
+  ],
+  "sources": [
+    {
+      "label": "Zero — Zero 8X",
+      "url": "https://zeroelectricscooter.com/products/zero-8x-electric-scooter"
+    },
+    {
+      "label": "Mad Dog Scooters — Zero 8X",
+      "url": "https://maddogscooters.com.au/products/zero-8x"
+    },
+    {
+      "label": "Macfly — Zero 8X",
+      "url": "https://www.macfly.eu/en/product/zero-8x/"
+    },
+    {
+      "label": "Wattiz — Zero 8X",
+      "url": "https://www.wattiz.fr/fr/s/162/zero-8x"
+    },
+    {
+      "label": "YouTube — Zero 8X Test Ride Monoblog Argentina",
+      "url": "https://www.youtube.com/watch?v=8bU9TPMKCWQ"
+    }
+  ]
+}

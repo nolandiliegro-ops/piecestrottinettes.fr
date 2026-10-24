@@ -1,0 +1,111 @@
+{
+ "displayName": "Laotie H6 Pro",
+ "metaTitle": "Laotie H6 Pro : fiche technique et autonomie",
+ "metaDescription": "Laotie H6 Pro : moteur 500 W, batterie 48 V 17,5 Ah, pneus tubeless 10 pouces, deux freins à disque, IP54, 20 kg. Fiche, origine Aerlang et FAQ.",
+ "intro": [
+  "La Laotie H6 Pro est une trottinette monomoteur de 10 pouces vendue par Laotie avec la mention « Produced With Aerlang ». Un testeur français explique que Laotie a repris le stock de l'Aerlang H6 V2 et la commercialise sous ce nom.",
+  "Son manuel donne un moteur arrière de 500 W, une batterie de 48 V et 17,5 Ah, des pneus tubeless de 10 pouces, deux freins à disque et un indice IP54, pour 20 kg et 120 kg de charge. Il annonce 60 à 70 km d'autonomie et 7 à 8 heures de recharge."
+ ],
+ "specs": [
+  [
+   "Moteur",
+   "500 W (présentés comme puissance de pointe sur une annonce)"
+  ],
+  [
+   "Vitesse",
+   "25 km/h sur la voie publique (mode D) ; 40 km/h en mode S, réservés à un terrain privé"
+  ],
+  [
+   "Autonomie annoncée",
+   "60 à 70 km"
+  ],
+  [
+   "Batterie",
+   "48 V, 17,5 Ah, soit 840 Wh (54,6 V en fin de charge)"
+  ],
+  [
+   "Poids",
+   "20 kg"
+  ],
+  [
+   "Charge max",
+   "120 kg"
+  ],
+  [
+   "Roues",
+   "10 pouces tubeless, profil route"
+  ],
+  [
+   "Freins",
+   "Disque avant et arrière + frein électronique (EABS)"
+  ],
+  [
+   "Étanchéité",
+   "IP54"
+  ],
+  [
+   "Temps de charge",
+   "7 à 8 h"
+  ]
+ ],
+ "pros": [
+  "Grosse batterie de 840 Wh pour une trottinette de 20 kg (manuel Laotie).",
+  "Deux freins à disque et un frein électronique (manuel Laotie).",
+  "Pneus tubeless de 10 pouces, plus confortables que des pneus pleins (test YouTube)."
+ ],
+ "cons": [
+  "Puissance de 500 W présentée tantôt comme nominale, tantôt comme puissance de pointe.",
+  "Montée limitée à 15° selon le manuel.",
+  "Modèle signalé en rupture sur la boutique Laotie : pièces d'origine à chercher sous le nom Aerlang H6."
+ ],
+ "parts": [],
+ "care": [
+  "Un pneu tubeless perd son air lentement : vérifie la pression chaque semaine plutôt que d'attendre qu'il soit mou.",
+  "Recharge après chaque sortie plutôt que de vider la batterie jusqu'à la coupure.",
+  "Pour trouver une pièce d'origine, cherche aussi sous le nom Aerlang H6 V2, c'est la même trottinette."
+ ],
+ "faq": [
+  {
+   "q": "La Laotie H6 Pro est-elle une Aerlang ?",
+   "a": "Oui. Laotie la vend avec la mention « Produced With Aerlang », et un testeur explique que Laotie a racheté le stock de l'Aerlang H6 V2 pour la vendre sous ce nom."
+  },
+  {
+   "q": "Quelle autonomie pour la Laotie H6 Pro ?",
+   "a": "Le manuel annonce 60 à 70 km avec la batterie de 17,5 Ah. Un testeur cite 40 à 60 km : ton poids et le mode choisi font la différence."
+  },
+  {
+   "q": "La Laotie H6 Pro est-elle étanche ?",
+   "a": "Elle est donnée IP54 : elle supporte les projections d'eau, pas l'immersion. Évite les flaques profondes et ne la lave pas au jet."
+  },
+  {
+   "q": "Quel mode utiliser sur la route avec la Laotie H6 Pro ?",
+   "a": "Le mode D, plafonné à 25 km/h, la vitesse maximale autorisée en France. Le mode S à 40 km/h n'a pas sa place sur la voie publique."
+  },
+  {
+   "q": "Quel chargeur pour la Laotie H6 Pro ?",
+   "a": "Un chargeur 48 V, qui sort 54,6 V en fin de charge. Vérifie la prise de ta trottinette avant d'en commander un."
+  }
+ ],
+ "sources": [
+  {
+   "label": "Manuals+ — manuel Laotie H6 Pro",
+   "url": "https://manuals.plus/fr/laotie/electric-scooter-h6-pro-manual"
+  },
+  {
+   "label": "Laotie — trottinettes électriques",
+   "url": "https://www.laotie.zone/Electric-Scooter-c-13.html"
+  },
+  {
+   "label": "Reddit — Laotie H6 Pro",
+   "url": "https://www.reddit.com/r/ElectricScooters/comments/15x06ai/anyone_own_or_know_anything_about_laotie_h6_pro/"
+  },
+  {
+   "label": "YouTube — Laotie / Aerlang H6 Pro, test",
+   "url": "https://www.youtube.com/watch?v=AocJyqdX_pA"
+  },
+  {
+   "label": "YouTube — Aerlang H6 v2, avis et test autonomie",
+   "url": "https://www.youtube.com/watch?v=DaJGyOlaYwk"
+  }
+ ]
+}

@@ -1,0 +1,119 @@
+{
+ "displayName": "Hitway H9 Pro",
+ "metaTitle": "Hitway H9 Pro : fiche technique 48 V 27 Ah",
+ "metaDescription": "Hitway H9 Pro : moteur 500 W (800 W en pointe), batterie 48 V 20,8 ou 27 Ah, jusqu'à 110 km annoncés, roues 10 pouces, freins à disque. Fiche et FAQ.",
+ "intro": [
+  "La Hitway H9 Pro reprend le cadre de la H9 avec une batterie plus grosse : 48 V en 20,8 Ah ou 27 Ah (1 296 Wh), selon Hitway. Le moteur reste un 500 W nominaux, 800 W en pointe, avec deux freins à disque et une suspension à l'avant et à l'arrière.",
+  "Hitway annonce 90 km avec 20,8 Ah et 100 à 110 km avec 27 Ah, pour 24,1 à 24,6 kg et 120 kg de charge. Un testeur allemand relève une fourche avant basique qui claque et un amortisseur arrière plus efficace. Les pneus de 10 pouces sont décrits pleins chez MediaMarkt, tubeless chez Hitway B2B."
+ ],
+ "specs": [
+  [
+   "Moteur",
+   "500 W nominaux, 800 W en pointe"
+  ],
+  [
+   "Vitesse",
+   "25 km/h (modes 10, 15 et 25 km/h) ; 20 km/h sur la version homologuée allemande"
+  ],
+  [
+   "Autonomie annoncée",
+   "90 km (20,8 Ah) ; 100 à 110 km (27 Ah)"
+  ],
+  [
+   "Batterie",
+   "48 V, 20,8 Ah ou 27 Ah (1 296 Wh) ; 54,6 V en fin de charge"
+  ],
+  [
+   "Poids",
+   "24,1 kg (20,8 Ah) ou 24,6 kg (27 Ah)"
+  ],
+  [
+   "Charge max",
+   "120 kg"
+  ],
+  [
+   "Roues",
+   "10 pouces ; tubeless selon Hitway B2B, pleins selon MediaMarkt"
+  ],
+  [
+   "Freins",
+   "Disque avant et arrière"
+  ],
+  [
+   "Suspension",
+   "Fourche à ressort à l'avant, amortisseur hydraulique à l'arrière selon un testeur"
+  ],
+  [
+   "Étanchéité",
+   "IP54"
+  ],
+  [
+   "Temps de charge",
+   "6 à 8 h"
+  ]
+ ],
+ "pros": [
+  "Batterie de 27 Ah annoncée pour 100 à 110 km (Hitway B2B).",
+  "Amortisseur arrière efficace selon un test YouTube.",
+  "Deux freins à disque (Hitway B2B)."
+ ],
+ "cons": [
+  "Fourche avant basique qui claque (test YouTube).",
+  "Type de pneu annoncé différemment selon les vendeurs.",
+  "Moteur de 500 W nominaux un peu juste dans les fortes côtes selon un testeur."
+ ],
+ "parts": [],
+ "care": [
+  "Avec 27 Ah, ne laisse pas la batterie vide plusieurs semaines : recharge-la à moitié avant un stockage long.",
+  "Si la fourche avant claque, contrôle son serrage et son jeu plutôt que de rouler avec, le bruit annonce de l'usure.",
+  "Note la cote exacte de tes pneus dès réception, la H9 Pro a été vendue en pneus pleins comme en tubeless."
+ ],
+ "faq": [
+  {
+   "q": "Quelle autonomie pour la Hitway H9 Pro ?",
+   "a": "Hitway annonce 90 km avec la batterie de 20,8 Ah et 100 à 110 km avec celle de 27 Ah. Un testeur d'environ 80 kg s'attend à 80 à 110 km avec la 27 Ah."
+  },
+  {
+   "q": "Quelle différence entre la Hitway H9 Pro et la H9 ?",
+   "a": "Seule la batterie change : 20,8 ou 27 Ah sur la Pro contre 15,6 Ah sur la H9. Le moteur de 500 W, les freins et le cadre sont identiques."
+  },
+  {
+   "q": "La Hitway H9 Pro a-t-elle des pneus pleins ?",
+   "a": "Les sources divergent : MediaMarkt parle de pneus pleins, la fiche Hitway B2B de tubeless. Vérifie les tiens et lis la cote sur le flanc avant de commander."
+  },
+  {
+   "q": "La Hitway H9 Pro est-elle homologuée pour la route ?",
+   "a": "Elle est donnée pour 25 km/h, ce qui respecte la règle française. Hitway vend aussi une version homologuée en Allemagne, limitée à 20 km/h."
+  },
+  {
+   "q": "Combien de temps pour recharger la Hitway H9 Pro ?",
+   "a": "6 à 8 heures selon Hitway, avec le chargeur d'origine."
+  }
+ ],
+ "sources": [
+  {
+   "label": "Hitway B2B — H9 Pro",
+   "url": "https://b2b.hitway.eu/product/h9-pro-electric-scooter/"
+  },
+  {
+   "label": "Hitway — H9 et H9 Pro (page allemande)",
+   "url": "https://hitway.eu/de/products/h9-h9pro-folding-electric-scooter"
+  },
+  {
+   "label": "MediaMarkt — Hitway H9 Pro",
+   "url": "https://www.mediamarkt.de/de/product/_hitway-h9pro-e-scooter-10-zoll-schwarz-orange-148621477.html"
+  },
+  {
+   "label": "Kaufland — Hitway H9 Pro",
+   "url": "https://www.kaufland.de/product/523717791/"
+  },
+  {
+   "label": "YouTube — Ich teste den E-Scooter Hitway H9 Pro 48V 27Ah",
+   "url": "https://www.youtube.com/watch?v=KiuUoctTkjM"
+  },
+  {
+   "label": "YouTube — Hitway H9 Pro, 48V & 27AH für 799 €",
+   "url": "https://www.youtube.com/watch?v=yBrl7ZIZSGk"
+  }
+ ]
+}

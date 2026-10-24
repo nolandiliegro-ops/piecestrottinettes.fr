@@ -1,0 +1,148 @@
+{
+ "displayName": "Zero 8",
+ "metaTitle": "Zero 8 : fiche technique, pneus avant et arrière",
+ "metaDescription": "Zero 8 : petite trottinette 8 pouces, pneu gonflable 8,5 x 2 à l'avant, pneu plein 200 x 60 à l'arrière, versions 36 V et 48 V. Fiche et FAQ.",
+ "intro": [
+  "La Zero 8 est la plus compacte de la gamme Zero. Elle associe un pneu gonflable de 8,5 × 2 pouces à l'avant et un pneu plein de 8 pouces à l'arrière, monté sur le moteur. Elle a de la suspension aux deux bouts et un seul frein mécanique, un tambour à l'arrière.",
+  "Plusieurs versions circulent : 36 V 10 Ah avec un moteur de 350 W, ou 48 V avec un moteur de 500 W et une batterie de 10,4 ou 13 Ah. L'autonomie annoncée va de 30 à 45 km selon la batterie, pour un poids d'environ 17 à 18 kg."
+ ],
+ "specs": [
+  [
+   "Moteur",
+   "350 W (version 36 V) ou 500 W (versions 48 V)"
+  ],
+  [
+   "Vitesse",
+   "25 km/h sur la voie publique ; 30 à 40 km/h annoncés selon les versions, réservés à un terrain privé"
+  ],
+  [
+   "Autonomie annoncée",
+   "30 km (36 V 10 Ah), 35 km (48 V 10,4 Ah), 45 km (48 V 13 Ah)"
+  ],
+  [
+   "Batterie",
+   "36 V 10 Ah ou 48 V 10,4 / 13 Ah selon la version"
+  ],
+  [
+   "Poids",
+   "17 à 18 kg selon les fiches"
+  ],
+  [
+   "Charge max",
+   "100 kg selon Zero, 120 kg chez un revendeur"
+  ],
+  [
+   "Roues",
+   "Avant 8,5 × 2 gonflable (50-134, avec chambre) ; arrière 8 pouces plein (200 × 60)"
+  ],
+  [
+   "Freins",
+   "Tambour arrière, complété selon les versions par un frein moteur"
+  ],
+  [
+   "Suspension",
+   "Ressort à l'avant, amortisseur à l'arrière"
+  ],
+  [
+   "Temps de charge",
+   "4 à 7 heures selon la batterie et le revendeur"
+  ]
+ ],
+ "pros": [
+  "Pneu arrière plein : la roue motrice ne crève jamais (Family Trott).",
+  "Petit gabarit, autour de 17 kg, facile à glisser dans un coffre.",
+  "Suspension avant et arrière malgré un poids d'environ 17 kg (Zero)."
+ ],
+ "cons": [
+  "Un seul frein mécanique, à l'arrière.",
+  "Le pneu plein arrière transmet davantage les vibrations (Family Trott).",
+  "Versions multiples : tension, puissance et autonomie changent d'une Zero 8 à l'autre."
+ ],
+ "parts": [
+  {
+   "label": "Pneu avant",
+   "size": "8,5 × 2 (50-134), à chambre à air",
+   "count": 2,
+   "to": "/piece/pneu-zero-8-1-2x2-pouces-50-134",
+   "cta": "Pneus 8,5 × 2"
+  },
+  {
+   "label": "Chambre à air avant",
+   "size": "8,5 × 2 (50-134)",
+   "count": 3,
+   "to": "/piece/chambre-a-air-85x2-zero-8-9",
+   "cta": "Chambres 8,5 × 2"
+  },
+  {
+   "label": "Pneu plein avant",
+   "size": "8,5 × 2 (50-134)",
+   "count": 1,
+   "to": "/piece/pneu-plein-zero-8-zero-9-inokim-light-1-2",
+   "cta": "Pneu plein avant"
+  },
+  {
+   "label": "Pneu arrière",
+   "size": "200 × 60, plein",
+   "count": 1,
+   "to": "/piece/pneu-plein-200x60-zero-8-dualtron-raptor",
+   "cta": "Pneu plein 200 × 60"
+  }
+ ],
+ "care": [
+  "Ton seul frein mécanique est le tambour arrière : resserre son câble dès que le levier touche presque la poignée.",
+  "Gonfle le pneu avant chaque semaine ; le pneu arrière plein n'en a pas besoin, mais surveille qu'il ne bouge pas sur la jante.",
+  "Avant d'acheter un chargeur, lis la tension sur l'étiquette de ta batterie : il existe des Zero 8 en 36 V et en 48 V."
+ ],
+ "faq": [
+  {
+   "q": "Quels pneus pour la Zero 8 ?",
+   "a": "À l'avant, un 8,5 × 2 pouces (50-134) avec chambre à air, ou sa version pleine. À l'arrière, un pneu plein de 200 × 60. Les deux roues ne prennent pas la même référence."
+  },
+  {
+   "q": "Quel chargeur pour la Zero 8 ?",
+   "a": "Tout dépend de ta version : 36 V (42 V en fin de charge) ou 48 V (54,6 V). Vérifie l'étiquette de la batterie, un chargeur de mauvaise tension peut l'abîmer."
+  },
+  {
+   "q": "La Zero 8 est-elle autorisée sur la route ?",
+   "a": "Oui, à condition de rester sous 25 km/h, la limite française pour les trottinettes électriques. Les versions annoncées à 30 ou 40 km/h ne peuvent dépasser ce seuil qu'en dehors de la voie publique."
+  },
+  {
+   "q": "Quelle autonomie pour la Zero 8 ?",
+   "a": "De 30 km pour la 36 V 10 Ah à 45 km pour la 48 V 13 Ah, selon les fiches. Ce sont des valeurs annoncées, à revoir à la baisse avec un pilote lourd ou du relief."
+  },
+  {
+   "q": "Le pneu arrière de la Zero 8 peut-il crever ?",
+   "a": "Non, il est plein. En contrepartie il filtre moins les chocs, et son remplacement demande de démonter la roue moteur."
+  }
+ ],
+ "sources": [
+  {
+   "label": "Zero — Zero 8",
+   "url": "https://zeroelectricscooter.com/products/zero-8-electric-scooter"
+  },
+  {
+   "label": "Zero — moteur Zero 8 48 V 500 W",
+   "url": "https://zeroelectricscooter.com/products/zero-8-48v-500w-motor"
+  },
+  {
+   "label": "Pie Technologie — Zero 8 pouces",
+   "url": "https://pietechnologie.com/en-eu/products/trottinette-electrique-zero-8-pouces"
+  },
+  {
+   "label": "Max Blinker — Zero 8",
+   "url": "https://www.maxblinker.com/en/electric-scooters/zero-8"
+  },
+  {
+   "label": "Family Trott — pièces Zero 8",
+   "url": "https://familytrott.fr/pieces-trottinette/zero-8/"
+  },
+  {
+   "label": "Wattiz — roues",
+   "url": "https://www.wattiz.fr/fr/5751-roues"
+  },
+  {
+   "label": "Fastride — pneus",
+   "url": "https://fastride.fr/fr/12-roues"
+  }
+ ]
+}

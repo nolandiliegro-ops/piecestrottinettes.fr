@@ -1,0 +1,142 @@
+{
+  "displayName": "Zero 11X",
+  "metaTitle": "Zero 11X : fiche technique 72 V, pneus et chargeur",
+  "metaDescription": "Zero 11X : 2 × 1 600 W, batterie 72 V 26 ou 32 Ah, pneus 11 pouces 90/65-6.5, freins hydrauliques, environ 53 kg. Fiche, pièces et FAQ.",
+  "intro": [
+    "La Zero 11X est la plus puissante de la gamme Zero : deux moteurs de 1 600 W nominaux, une batterie de 72 V en 26 ou 32 Ah et des roues de 11 pouces, selon la fiche Zero. La puissance de pointe change selon les vendeurs, 5 400 ou 5 600 W.",
+    "Zero annonce 95 km/h sur terrain privé et 120 à 160 km d'autonomie en mode éco avec la batterie de 32 Ah. Elle pèse 52 à 54 kg pour 120 kg de charge, freine avec deux disques hydrauliques et se recharge par deux prises GX16, utilisables en même temps."
+  ],
+  "specs": [
+    [
+      "Moteurs",
+      "2 × 1 600 W nominaux ; en pointe 5 400 W selon certains vendeurs, 5 600 W selon d'autres"
+    ],
+    [
+      "Vitesse",
+      "25 km/h sur la voie publique ; 95 km/h annoncés par Zero, réservés à un terrain privé"
+    ],
+    [
+      "Autonomie annoncée",
+      "80 à 110 km (26 Ah) ; 120 à 160 km (32 Ah), en mode éco"
+    ],
+    [
+      "Batterie",
+      "72 V, 26 Ah ou 32 Ah (84 V en fin de charge)"
+    ],
+    [
+      "Poids",
+      "52 à 54 kg selon les fiches"
+    ],
+    [
+      "Charge max",
+      "120 kg selon Zero"
+    ],
+    [
+      "Roues",
+      "11 pouces gonflables, 90/65-6.5 ; montage avec ou sans chambre selon les vendeurs"
+    ],
+    [
+      "Freins",
+      "Disques hydrauliques avant et arrière de 160 mm ; étriers NUTT selon Zero, Zoom selon d'autres fiches"
+    ],
+    [
+      "Suspension",
+      "Bras oscillants avec amortisseurs hydrauliques à ressort"
+    ],
+    [
+      "Prise de charge",
+      "Deux ports GX16 à 3 broches"
+    ],
+    [
+      "Temps de charge",
+      "jusqu'à 20 h avec un seul chargeur ; deux chargeurs en parallèle divisent ce temps par deux"
+    ]
+  ],
+  "pros": [
+    "Freins hydrauliques jugés parmi les meilleurs de la catégorie (Pete Finn sur YouTube).",
+    "Roues de 11 pouces qui stabilisent nettement la conduite (tests YouTube).",
+    "Deux prises de charge pour recharger avec deux chargeurs à la fois (test roumain sur YouTube)."
+  ],
+  "cons": [
+    "Plus de 50 kg : difficile à soulever, et la colonne ne se verrouille pas une fois pliée (Pete Finn).",
+    "Recharge très longue avec un seul chargeur.",
+    "Suspension plutôt ferme selon un essai roumain.",
+    "Chiffres de vitesse, de pointe et de pneus différents d'un vendeur à l'autre."
+  ],
+  "parts": [
+    {
+      "label": "Pneu",
+      "size": "90/65-6.5 (11 pouces)",
+      "count": 11,
+      "to": "/piece/pneu-90-65-6-5-off-road-tubeless",
+      "cta": "Pneus 90/65-6.5"
+    },
+    {
+      "label": "Chambre à air",
+      "size": "90/65-6.5",
+      "count": 5,
+      "to": "/piece/chambre-a-air-90-65-6-5-valve-coudee-ewheel",
+      "cta": "Chambres 90/65-6.5"
+    },
+    {
+      "label": "Chargeur",
+      "size": "72 V (sortie 84 V), prise GX16 3 broches",
+      "count": 2,
+      "to": "/piece/chargeur-72v-84v-2a-connecteur-gx16-3p",
+      "cta": "Chargeur 72 V"
+    }
+  ],
+  "care": [
+    "Branche tes deux chargeurs à la fois sur les deux prises : tu divises le temps de charge par deux sans forcer sur la batterie.",
+    "Avec 2 × 1 600 W, les plaquettes chauffent fort : contrôle leur épaisseur tous les 500 km et purge les freins si le levier devient mou.",
+    "Vérifie la pression de tes pneus de 11 pouces avant chaque longue sortie : sur une machine de 53 kg, un pneu mou se déjante plus facilement."
+  ],
+  "faq": [
+    {
+      "q": "Quel chargeur pour la Zero 11X ?",
+      "a": "Un chargeur 72 V qui sort 84 V en fin de charge, avec une fiche GX16 à 3 broches. Un 60 V ou un 52 V ne chargera pas cette batterie."
+    },
+    {
+      "q": "Quelle taille de pneu pour la Zero 11X ?",
+      "a": "Des pneus de 11 pouces en 90/65-6.5. Les vendeurs ne sont pas d'accord sur le montage d'origine (avec ou sans chambre) : regarde l'intérieur de ta jante avant de choisir."
+    },
+    {
+      "q": "Combien de temps pour recharger la Zero 11X ?",
+      "a": "Jusqu'à une vingtaine d'heures avec un seul chargeur, d'après plusieurs essais. Avec deux chargeurs sur les deux prises, compte à peu près la moitié."
+    },
+    {
+      "q": "Quelle est la vitesse autorisée pour la Zero 11X ?",
+      "a": "Sur la voie publique, tu restes à 25 km/h comme toute trottinette en France. Les 95 km/h de la fiche sont une valeur de terrain privé, et la débrider pour rouler en ville est interdit."
+    },
+    {
+      "q": "Quelle différence entre la Zero 11X et la Zero 10X ?",
+      "a": "La 11X passe en 72 V avec deux moteurs de 1 600 W et des roues de 11 pouces. La 10X reste en 52 ou 60 V avec des moteurs plus petits et des pneus de 10 pouces."
+    }
+  ],
+  "sources": [
+    {
+      "label": "Zero — Zero 11X",
+      "url": "https://zeroelectricscooter.com/products/zero-11x-electric-scooter"
+    },
+    {
+      "label": "Pedl — Zero 11X review",
+      "url": "https://www.pedl.com.au/blogs/news/zero-11x-review"
+    },
+    {
+      "label": "eBikeScooter — Zero 11X 72 V",
+      "url": "https://ebikescooter.com/product/zero-11x-72v-3200w-100km-h-double-drive/"
+    },
+    {
+      "label": "Wattiz — Zero 11X",
+      "url": "https://www.wattiz.fr/gb/s/564/zero-11x"
+    },
+    {
+      "label": "YouVelo — pneu 90/65-6.5 CST",
+      "url": "https://youvelo.fr/vtt/840-pneu-9065-65-cst-off-road-11-tubetype-compatible-dualtron-thunder-ultra-kaabo-wolf-warrior-zero-11x.html"
+    },
+    {
+      "label": "Gypi — port de charge 3 broches Zero",
+      "url": "https://www.gypi.fr/fr/pieces_detachees/2735-port-de-charge-universel-a-3-broches-"
+    }
+  ]
+}
