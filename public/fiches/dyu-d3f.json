@@ -1,0 +1,125 @@
+{
+ "displayName": "DYU D3F",
+ "metaTitle": "DYU D3F : fiche technique du mini vélo pliant 14 pouces",
+ "metaDescription": "DYU D3F : mini vélo électrique pliant à pédales, 250 W, 36 V 10 Ah, pneus 14 x 2,125, freins à disque mécaniques, 19 kg, IP54. Tests, entretien et FAQ.",
+ "intro": [
+  "La DYU D3F n'est pas une trottinette mais un mini vélo électrique pliant à pédales, sur roues de 14 pouces. Elle combine un moteur de 250 W dans la roue arrière, une batterie de 36 V et 10 Ah (360 Wh) et deux freins à disque mécaniques qui coupent le moteur au freinage, selon DYU et Electric Bike Report.",
+  "DYU annonce 50 km en assistance au pédalage, 19 kg et 120 kg de charge maximale, avec un indice IP54. Electric Bike Report a obtenu près de 48 km (29,65 miles) en test, et un testeur de DYU environ 42 km par charge pendant un mois à Vienne."
+ ],
+ "specs": [
+  [
+   "Moteur",
+   "250 W, dans la roue arrière (500 W en pointe selon DYU)"
+  ],
+  [
+   "Vitesse",
+   "25 km/h maximum d'assistance"
+  ],
+  [
+   "Autonomie annoncée",
+   "50 km en pédalage assisté"
+  ],
+  [
+   "Autonomie mesurée",
+   "environ 48 km (Electric Bike Report) ; environ 42 km par charge sur un mois (test publié par DYU)"
+  ],
+  [
+   "Batterie",
+   "36 V, 10 Ah, 360 Wh, amovible"
+  ],
+  [
+   "Poids",
+   "19 kg (19,7 kg selon Darty)"
+  ],
+  [
+   "Charge max",
+   "120 kg"
+  ],
+  [
+   "Roues",
+   "14 x 2,125 pouces"
+  ],
+  [
+   "Freins",
+   "Disques mécaniques avant et arrière, avec coupure moteur"
+  ],
+  [
+   "Suspension",
+   "Aucune selon Electric Bike Report ; selle suspendue selon le test publié par DYU"
+  ],
+  [
+   "Étanchéité",
+   "IP54"
+  ],
+  [
+   "Temps de charge",
+   "5 à 6 h"
+  ]
+ ],
+ "pros": [
+  "Freins à disque mécaniques puissants, avec coupure du moteur au freinage (Electric Bike Report).",
+  "Autonomie proche de l'annonce : près de 48 km en test (Electric Bike Report).",
+  "Assez compacte pliée pour le métro et le coffre (DYU).",
+  "Pneus 14 x 2,125 restés sans crevaison sur 380 km de pavés (test publié par DYU)."
+ ],
+ "cons": [
+  "Direction très vive avec ses petites roues : il faut s'y habituer (Electric Bike Report, avis clients).",
+  "Les petites roues transmettent les défauts de la chaussée.",
+  "Electric Bike Report a reçu un exemplaire aux leviers de frein inversés.",
+  "Cockpit étroit pour les grands gabarits."
+ ],
+ "parts": [],
+ "care": [
+  "À réception, vérifie quel levier commande quel frein : Electric Bike Report a reçu un exemplaire aux freins inversés.",
+  "Gonfle les pneus 14 x 2,125 entre 35 et 40 psi, la plage donnée par Darty : sous-gonflés, ils rendent la direction encore plus nerveuse.",
+  "Retends les câbles de frein quand les leviers deviennent mous, et graisse la chaîne tous les 300 km."
+ ],
+ "price": {
+  "text": "Prix affiché par DYU France : 549 € (prix barré 649 €). Prix susceptible de varier.",
+  "source": "fr.dyucycle.com"
+ },
+ "faq": [
+  {
+   "q": "La DYU D3F est-elle un vélo ou une trottinette ?",
+   "a": "Un vélo électrique pliant : elle a des pédales et une selle, et l'assistance se déclenche quand tu pédales. Elle n'obéit donc pas aux règles des trottinettes électriques."
+  },
+  {
+   "q": "Peut-on rouler uniquement à l'accélérateur avec la DYU D3F ?",
+   "a": "La D3F a un accélérateur, mais en France l'assistance d'un vélo électrique ne doit fonctionner que lorsque tu pédales ; seule une aide au démarrage sans pédaler est tolérée jusqu'à 6 km/h. Rouler à l'accélérateur seul sur la voie publique sort de ce cadre."
+  },
+  {
+   "q": "Quelle taille de pneu pour la DYU D3F ?",
+   "a": "Des pneus de 14 x 2,125 pouces, d'après Darty et le test publié par DYU, à gonfler entre 35 et 40 psi."
+  },
+  {
+   "q": "Quelle autonomie réelle pour la DYU D3F ?",
+   "a": "DYU annonce 50 km en assistance. Electric Bike Report a mesuré 29,65 miles, soit près de 48 km, et un testeur a tenu une moyenne d'environ 42 km par charge pendant un mois."
+  }
+ ],
+ "sources": [
+  {
+   "label": "DYU France — D3F",
+   "url": "https://fr.dyucycle.com/products/dyu-small-electric-bike-d3f"
+  },
+  {
+   "label": "DYU Bikes — D3F 14 pouces",
+   "url": "https://dyubikes.com/fr/produit/dyu-d3f-14-inch-mini-folding-electric-bike/"
+  },
+  {
+   "label": "DYU Bikes — test D3F 2026",
+   "url": "https://dyubikes.com/fr/dyu-d3f-review-2026/"
+  },
+  {
+   "label": "Electric Bike Report — DYU D3F",
+   "url": "https://electricbikereport.com/dyu-d3f-review/"
+  },
+  {
+   "label": "Darty — DYU D3F",
+   "url": "https://www.darty.com/nav/achat/ref/MC353767058.html"
+  },
+  {
+   "label": "Sports Insiders — test DYU D3F",
+   "url": "https://www.sports-insiders.net/test-velo-electrique-pliable14-pouces-velo-electrique-portablesmart-e-bike-pedalage-assiste-hauteur-reglable-portable-compact-adulte-unisexe-noir-d3f-10ah"
+  }
+ ]
+}

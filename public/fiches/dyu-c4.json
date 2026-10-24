@@ -1,0 +1,117 @@
+{
+ "displayName": "DYU C4",
+ "metaTitle": "DYU C4 : fiche technique, statut et entretien",
+ "metaDescription": "DYU C4 : engin pliable à selle et roues de 14 pouces, 250 W (500 W en pointe), 36 V 10 Ah, 42 km, double frein à disque, 20,7 kg. Fiche et FAQ.",
+ "intro": [
+  "La DYU C4 est un petit engin électrique pliable à selle et à roues de 14 pouces, vendu par DYU comme un « vélo électrique » mais sans pédales : elle avance uniquement à l'accélérateur, et le mode pédalage assisté est absent de sa fiche, selon DYU et New Tech Store.",
+  "Son moteur de 250 W (500 W en pointe) et sa batterie de 36 V et 10 Ah (360 Wh) annoncent 42 km d'autonomie à 25 km/h maximum. Elle pèse 20,7 kg, accepte 120 kg, freine avec deux disques et se recharge en 6 à 7 heures. Un grand panier arrière complète l'équipement."
+ ],
+ "specs": [
+  [
+   "Moteur",
+   "250 W nominaux, 500 W en pointe"
+  ],
+  [
+   "Vitesse",
+   "25 km/h maximum"
+  ],
+  [
+   "Autonomie annoncée",
+   "42 km à l'accélérateur"
+  ],
+  [
+   "Batterie",
+   "36 V, 10 Ah, 360 Wh (42 V en fin de charge)"
+  ],
+  [
+   "Poids",
+   "20,7 kg"
+  ],
+  [
+   "Charge max",
+   "120 kg"
+  ],
+  [
+   "Roues",
+   "14 pouces (largeur non précisée)"
+  ],
+  [
+   "Freins",
+   "Disques avant et arrière"
+  ],
+  [
+   "Pente max",
+   "15°"
+  ],
+  [
+   "Temps de charge",
+   "6 à 7 h"
+  ],
+  [
+   "Selle",
+   "Réglable de 710 à 770 mm du sol"
+  ],
+  [
+   "Dimensions pliée",
+   "121,5 x 33 x 60 cm"
+  ]
+ ],
+ "pros": [
+  "Selle réglable et grand panier arrière pour les courses (DYU, New Tech Store).",
+  "Deux freins à disque (DYU).",
+  "Roues de 14 pouces, plus stables que les petites roues de trottinette (DYU).",
+  "Pliage en deux étapes, 33 cm de large une fois pliée (DYU)."
+ ],
+ "cons": [
+  "Statut flou en France : ni trottinette (elle a une selle), ni vélo à assistance (pas de pédales).",
+  "20,7 kg à soulever une fois pliée.",
+  "Largeur de pneu, étanchéité et suspension non communiquées par DYU.",
+  "Compte 6 à 7 heures branchée pour refaire le plein."
+ ],
+ "parts": [],
+ "care": [
+  "Contrôle l'usure des plaquettes de tes deux freins à disque tous les 500 km et retends les câbles quand la course des leviers s'allonge.",
+  "Gonfle les pneus de 14 pouces à la pression inscrite sur leur flanc : sous-gonflés, ils rendent la direction lourde.",
+  "Vérifie le verrou de pliage et la tige de selle avant chaque trajet : ce sont les pièces qui encaissent le plus d'efforts."
+ ],
+ "price": {
+  "text": "Prix affiché par DYU France : 449 € (prix barré 649 €). Prix susceptible de varier.",
+  "source": "fr.dyucycle.com"
+ },
+ "faq": [
+  {
+   "q": "La DYU C4 est-elle une trottinette ou un vélo électrique ?",
+   "a": "Ni l'un ni l'autre au sens du Code de la route : elle a une selle, alors qu'une trottinette électrique se conduit debout, et elle n'a pas de pédales, alors qu'un vélo à assistance doit aider le pédalage. Renseigne-toi sur son statut et son assurance avant de rouler sur la voie publique."
+  },
+  {
+   "q": "Quelle autonomie pour la DYU C4 ?",
+   "a": "DYU annonce 42 km à l'accélérateur avec la batterie de 36 V et 10 Ah. Ton poids, le relief et la température réduisent ce chiffre."
+  },
+  {
+   "q": "Quelle taille de pneu pour la DYU C4 ?",
+   "a": "DYU parle seulement de roues de 14 pouces. Relève la cote complète inscrite sur le flanc de ton pneu avant d'acheter un pneu ou une chambre à air."
+  },
+  {
+   "q": "Quels freins sur la DYU C4 ?",
+   "a": "Un frein à disque à l'avant et un autre à l'arrière, selon DYU."
+  }
+ ],
+ "sources": [
+  {
+   "label": "DYU France — C4 14 pouces",
+   "url": "https://fr.dyucycle.com/fr/products/velo-electrique-pliable-dyu-c4-14-pouces"
+  },
+  {
+   "label": "DYU Italie — C4 14 inch",
+   "url": "https://it.dyucycle.com/products/dyu-c4-14-inch-foldable-e-bike"
+  },
+  {
+   "label": "New Tech Store — DYU C4 avec siège",
+   "url": "https://fr.newtechstore.eu/produit/dyu-c4-velo-electrique-pliable-avec-siege/"
+  },
+  {
+   "label": "Shopum — DYU C4",
+   "url": "https://www.shopum.cz/dyu-skladaci-elektricka-kolobezka-c4/"
+  }
+ ]
+}

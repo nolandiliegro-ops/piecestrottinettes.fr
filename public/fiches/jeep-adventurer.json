@@ -1,0 +1,156 @@
+{
+ "displayName": "Jeep Adventurer",
+ "metaTitle": "Jeep 2xe Adventurer : fiche technique, pneus et pièces",
+ "metaDescription": "Jeep 2xe Adventurer : 350 W (515 W en pointe), 36 V 10,4 Ah (374 Wh), pneus 10x2.50-6.5 tubeless, double suspension, disque arrière. Pièces et FAQ.",
+ "intro": [
+  "La Jeep 2xe Adventurer est une trottinette électrique sous licence Jeep, pensée pour la ville et les chemins. Elle reçoit un cadre en alliage de magnésium, une suspension à l'avant et à l'arrière, des pneus tubeless de 10 pouces et un moteur de 350 W qui monte à 515 W en pointe, selon la Fnac et Kaufland.",
+  "Sa batterie de 36 V et 10,4 Ah (374 Wh) annonce 40 km d'autonomie à 15 km/h de moyenne. Elle pèse 19 kg, accepte 100 kg et freine électriquement à l'avant, par disque à l'arrière, avec récupération d'énergie. Une version 2025 annonce 400 W et 18,4 kg."
+ ],
+ "specs": [
+  [
+   "Moteur",
+   "350 W nominaux, 515 W en pointe (version 2025 : 400 W, 670 W en pointe selon Pixmania)"
+  ],
+  [
+   "Vitesse",
+   "25 km/h maximum, conforme à la limite de la voie publique"
+  ],
+  [
+   "Autonomie annoncée",
+   "40 km à 15 km/h de moyenne (45 km sur certaines fiches)"
+  ],
+  [
+   "Batterie",
+   "36 V, 10,4 Ah, 374 Wh (42 V en fin de charge)"
+  ],
+  [
+   "Poids",
+   "19 kg (18,4 kg pour la version 2025)"
+  ],
+  [
+   "Charge max",
+   "100 kg"
+  ],
+  [
+   "Roues",
+   "10 pouces, tubeless 10x2.50-6.5"
+  ],
+  [
+   "Freins",
+   "Électronique avant + disque arrière, récupération d'énergie (KERS)"
+  ],
+  [
+   "Suspension",
+   "Avant et arrière"
+  ],
+  [
+   "Étanchéité",
+   "IPX4 (Kaufland) ; IPX5 sur les versions vendues par Pixmania"
+  ],
+  [
+   "Temps de charge",
+   "Environ 7 h avec le chargeur 42 V 1,5 A"
+  ],
+  [
+   "Pente max",
+   "18 %"
+  ]
+ ],
+ "pros": [
+  "Double suspension et pneus tubeless à crampons pour les chemins (Kaufland, Trott en Provence).",
+  "Cadre en alliage de magnésium (Kaufland, eMuoviti).",
+  "Pneus en 10x2.50-6.5, une taille courante facile à remplacer (E-Watts, Trot'Nation).",
+  "Application Bluetooth et régulateur de vitesse (Kaufland)."
+ ],
+ "cons": [
+  "19 kg : lourde pour une 350 W.",
+  "100 kg de charge admise, sac à dos compris.",
+  "Recharge longue, environ 7 heures.",
+  "Plusieurs versions sous le même nom (2022, Advanced Safety, 2025) aux puissances différentes."
+ ],
+ "parts": [
+  {
+   "label": "Pneu",
+   "size": "10x2.50-6.5 / 60/70-6.5 tubeless (10 pouces)",
+   "count": 14,
+   "to": "/piece/pneu-tubeless-10x2-50-6-5-yuanxing",
+   "cta": "Pneus 10x2.50-6.5"
+  },
+  {
+   "label": "Chambre à air",
+   "size": "10x2.50, valve droite ou coudée",
+   "count": 6,
+   "to": "/piece/chambre-a-air-10x250-valve-droite",
+   "cta": "Chambres à air 10x2.50"
+  }
+ ],
+ "care": [
+  "Pneus tubeless : vérifie leur pression chaque semaine et glisse un liquide préventif si tu roules souvent sur des chemins caillouteux.",
+  "Les suspensions avant et arrière prennent du jeu avec le temps : contrôle les axes et leurs écrous tous les mois.",
+  "Après une sortie boueuse, rince à l'éponge, jamais au jet haute pression : l'Adventurer n'est protégée que contre les projections."
+ ],
+ "price": {
+  "text": "Prix relevés sur Idealo : de 639 € à 1 055,66 € selon le vendeur. Prix susceptible de varier.",
+  "source": "idealo.fr"
+ },
+ "faq": [
+  {
+   "q": "Quelle taille de pneu pour la Jeep 2xe Adventurer ?",
+   "a": "Des pneus tubeless de 10 pouces en 10x2.50-6.5, aussi notés 60/70-6.5, sur jante de 6,5 pouces. Trot'Nation, E-Watts et Monsieur Trottinettes la vendent dans cette cote."
+  },
+  {
+   "q": "Peut-on mettre une chambre à air dans la Jeep Adventurer ?",
+   "a": "Oui, une chambre à air 10x2.50 se glisse dans le pneu si ta jante fuit ou si tu crèves souvent. Choisis une valve qui sort bien par le trou de ta jante."
+  },
+  {
+   "q": "Jusqu'à quelle vitesse roule la Jeep Adventurer ?",
+   "a": "25 km/h, sa vitesse maximale d'usine, qui correspond au plafond légal d'une trottinette électrique sur la voie publique. Son mode le plus doux plafonne à 6 km/h."
+  },
+  {
+   "q": "Quelle différence entre la Jeep Adventurer et l'Urban Camou ?",
+   "a": "L'Urban Camou passe en 48 V avec un moteur de 500 W (700 W en pointe) et se recharge en 5 heures. L'Adventurer reste en 36 V et 350 W, avec la même double suspension et les mêmes roues de 10 pouces."
+  },
+  {
+   "q": "Quel chargeur pour la Jeep Adventurer ?",
+   "a": "Un chargeur pour batterie 36 V, 42 V en sortie, de 1,5 A d'origine selon Kaufland. Compare la prise de ton chargeur avant d'en racheter un."
+  }
+ ],
+ "sources": [
+  {
+   "label": "Fnac — Jeep E-Scooter 2xe Adventurer",
+   "url": "https://www.fnac.com/JEEP-E-SCOOTER-2XE-ADVENTURER/a16881491/w-4"
+  },
+  {
+   "label": "Kaufland — Jeep 2xe Adventurer",
+   "url": "https://www.kaufland.sk/product/464367993/"
+  },
+  {
+   "label": "eMuoviti — Jeep 2xe Adventurer 2022",
+   "url": "https://www.emuoviti.it/off-road-monopattini-elettrici/1588-jeep-2xe-adventurer-with-turn-signals-vers2022-8052679458677"
+  },
+  {
+   "label": "Trott en Provence — pièces Jeep",
+   "url": "https://trott-en-provence.fr/pieces-detachees-trottinette-electrique/pieces-detachees-trottinette-jeep/"
+  },
+  {
+   "label": "Trot'Nation — Jeep 2XE Adventurer",
+   "url": "https://www.trotnation.com/collections/jeep-2xe-adventurer"
+  },
+  {
+   "label": "E-Watts — pneu Jeep 2XE Adventurer",
+   "url": "https://e-watts.fr/categorie-produit/pieces-detachees-trottinette-electrique/pneu-trottinette-electrique/pneu-jeep-2xe-adventurer"
+  },
+  {
+   "label": "Monsieur Trottinettes — Jeep 2xe Adventurer",
+   "url": "https://monsieurtrottinettes.be/be/91-jeep-2xe-adventurer"
+  },
+  {
+   "label": "Pixmania — trottinettes Jeep",
+   "url": "https://www.pixmania.com/fr/fr/trottinettes-electriques/jeep.html"
+  },
+  {
+   "label": "Idealo — Jeep 2xe Adventurer",
+   "url": "https://www.idealo.fr/prix/201879931/jeep-2xe-adventurer.html"
+  }
+ ]
+}

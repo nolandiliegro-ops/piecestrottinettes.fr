@@ -1,0 +1,117 @@
+{
+ "displayName": "Oxelo SD500E",
+ "metaTitle": "Decathlon SD500E : fiche technique, rappel et entretien",
+ "metaDescription": "Decathlon Btwin (ex-Oxelo) SD500E : 350 W, batterie 5,2 Ah 208 Wh, 25 km en Éco, pneus 10 pouces tubeless, 16,2 kg, IPX5. Rappel 2026 et FAQ.",
+ "intro": [
+  "La SD500E est la trottinette électrique « courte distance » de Decathlon, d'abord sous la marque Oxelo puis Btwin. Elle partage le moteur de 350 W et les roues tubeless de 10 pouces de la MD500E, mais embarque une batterie deux fois plus petite : 5,2 Ah et 208 Wh, selon Decathlon.",
+  "Decathlon annonce 25 km en mode Éco, mesurés avec 65 kg à 15 km/h, et 16,2 kg sur la balance. Elle est livrée avec béquille, éclairage LED et indice IPX5. Comme la MD500E, elle fait l'objet d'un rappel en 2026 pour un risque de fissure à la jonction du cadre et de la potence."
+ ],
+ "specs": [
+  [
+   "Moteur",
+   "350 W nominaux ; 700 W en pointe selon Frandroid"
+  ],
+  [
+   "Vitesse",
+   "25 km/h maximum, conforme à la limite de la voie publique"
+  ],
+  [
+   "Autonomie annoncée",
+   "25 km en Éco, 18 km en Normal, 12 à 15 km en Sport selon les fiches Decathlon"
+  ],
+  [
+   "Batterie",
+   "5,2 Ah, 208 Wh (Decathlon)"
+  ],
+  [
+   "Poids",
+   "16,2 kg (16,1 kg sur la fiche Decathlon Irlande)"
+  ],
+  [
+   "Charge max",
+   "100 kg (taille 1,45 à 1,95 m)"
+  ],
+  [
+   "Roues",
+   "10 pouces, gonflables tubeless"
+  ],
+  [
+   "Freins",
+   "Électronique avant + disque arrière"
+  ],
+  [
+   "Suspension",
+   "Aucune"
+  ],
+  [
+   "Étanchéité",
+   "IPX5 (Frandroid)"
+  ]
+ ],
+ "pros": [
+  "Petit prix, régulièrement sous les 250 € chez Decathlon (Frandroid).",
+  "Roues tubeless de 10 pouces, plus confortables que du 8,5 pouces (Decathlon).",
+  "Pièces détachées vendues par Decathlon (roue arrière, pneu, disque de frein).",
+  "Indice IPX5 pour rouler sous la pluie (Frandroid)."
+ ],
+ "cons": [
+  "Rappel 2026 : fissure possible entre cadre et potence sur les exemplaires vendus du 1er septembre 2024 au 15 juin 2026.",
+  "Batterie de 208 Wh : 25 km au mieux, bien moins par temps froid ou en côte (Frandroid).",
+  "Aucune suspension.",
+  "Pilote de 1,45 à 1,95 m et 100 kg au plus : les gabarits lourds devront regarder ailleurs."
+ ],
+ "parts": [],
+ "care": [
+  "Achetée entre septembre 2024 et le 15 juin 2026 ? Ne roule plus avec et prends rendez-vous chez Decathlon dans le cadre du rappel.",
+  "Avec une petite batterie, évite de la vider complètement : recharge-la dès qu'il te reste une ou deux barres.",
+  "Nettoie le disque arrière au dégraissant frein s'il siffle, et surveille l'épaisseur des plaquettes tous les 500 km."
+ ],
+ "price": {
+  "text": "Prix affiché par Decathlon : 249,99 € (prix de référence 279,99 €). Prix susceptible de varier.",
+  "source": "decathlon.fr"
+ },
+ "faq": [
+  {
+   "q": "La SD500E fait-elle partie du rappel Decathlon ?",
+   "a": "Oui, pour les exemplaires vendus entre le 1er septembre 2024 et le 15 juin 2026 (codes modèle 5177606 et 5244742). Arrête de l'utiliser et contacte ton magasin Decathlon."
+  },
+  {
+   "q": "Quelle autonomie réelle pour la Decathlon SD500E ?",
+   "a": "Decathlon annonce 25 km en Éco avec 65 kg à 15 km/h. En mode Sport, compte plutôt 12 à 15 km selon ses propres fiches, et moins encore si tu pèses plus lourd ou s'il fait froid."
+  },
+  {
+   "q": "Peut-on rouler plus vite que 25 km/h avec la SD500E ?",
+   "a": "Non, et c'est voulu : Decathlon la plafonne à 25 km/h, la limite légale des trottinettes électriques sur la voie publique en France."
+  },
+  {
+   "q": "Quelle taille de pneu pour la SD500E ?",
+   "a": "Des pneus tubeless de 10 pouces, d'après Decathlon. La cote complète n'est pas publiée : relève celle inscrite sur le flanc de ton pneu avant d'acheter."
+  }
+ ],
+ "sources": [
+  {
+   "label": "Decathlon — SD500E (fiche produit)",
+   "url": "https://www.decathlon.ie/p/sd500-e-electric-scooter/353775/c229m8873735"
+  },
+  {
+   "label": "Decathlon — meilleure trottinette électrique (prix)",
+   "url": "https://www.decathlon.fr/vc/meilleure-trottinette-electrique"
+  },
+  {
+   "label": "Frandroid — Btwin SD500E à moins de 250 €",
+   "url": "https://www.frandroid.com/bons-plans/3292743_decathlon-brade-sa-trottinette-btwin-sd500e-a-moins-de-250-e-parfaite-pour-les-petit-budgets"
+  },
+  {
+   "label": "Cleanrider — Decathlon Oxelo SD500E",
+   "url": "https://www.cleanrider.com/catalogue/trottinette-electrique/decathlon/decathlon-oxelo-sd500e/"
+  },
+  {
+   "label": "Rappel Conso — trottinettes SD500E et MD500E",
+   "url": "https://rappel.conso.gouv.fr/fiche-rappel/22670/interne"
+  },
+  {
+   "label": "Decathlon — pneu trottinette électrique",
+   "url": "https://www.decathlon.fr/vc/pneu-trottinette-electrique"
+  }
+ ]
+}

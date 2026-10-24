@@ -1,0 +1,129 @@
+{
+ "displayName": "Bogist M5 Pro",
+ "metaTitle": "Bogist M5 Pro : fiche technique, versions et entretien",
+ "metaDescription": "Bogist M5 Pro : moteur 500 W, 48 V en 11, 13 ou 15 Ah, pneus 12 pouces gonflables, freins à disque avant et arrière, selle et panier. Fiche et FAQ.",
+ "intro": [
+  "La Bogist M5 Pro est une trottinette électrique à grandes roues de 12 pouces, vendue avec selle et panier. Elle embarque un moteur de 500 W dans la roue arrière, une batterie de 48 V, deux freins à disque et une suspension avant, selon Boulanger et Techno-Science.",
+  "Le même nom couvre plusieurs batteries : 11 Ah (testée par Techno-Science), 13 Ah (Boulanger) et 15 Ah (Darty, Cdiscount). L'autonomie annoncée passe de 30 à 45 km selon la version, pour un poids de 20,5 à 25 kg et une charge maximale de 120 ou 150 kg."
+ ],
+ "specs": [
+  [
+   "Moteur",
+   "500 W, dans la roue arrière ; 885 W en pointe annoncés pour la version 15 Ah (Darty, Cdiscount)"
+  ],
+  [
+   "Vitesse",
+   "25 km/h sur la voie publique ; 40 à 45 km/h annoncés selon les vendeurs, réservés à un terrain privé"
+  ],
+  [
+   "Autonomie annoncée",
+   "30 à 35 km (11 Ah), 30 à 40 km (13 Ah), 25 à 40 km (15 Ah)"
+  ],
+  [
+   "Batterie",
+   "48 V : 11 Ah, 13 Ah ou 15 Ah selon la version (54,6 V en fin de charge)"
+  ],
+  [
+   "Poids",
+   "20,5 kg (Techno-Science, Darty) à 25 kg (Rue du Commerce)"
+  ],
+  [
+   "Charge max",
+   "150 kg (Boulanger, Techno-Science) ou 120 kg (Darty, Cdiscount)"
+  ],
+  [
+   "Roues",
+   "12 pouces, pneus gonflables (12 x 2,125 selon Boulanger et Darty)"
+  ],
+  [
+   "Freins",
+   "Disques mécaniques avant et arrière + frein électronique"
+  ],
+  [
+   "Suspension",
+   "Amortisseur avant (Boulanger, Rue du Commerce)"
+  ],
+  [
+   "Étanchéité",
+   "IP54 (Boulanger), IP64 (Techno-Science) ou IPX4 (Darty, Cdiscount) selon la version"
+  ],
+  [
+   "Temps de charge",
+   "5 à 7 h avec le chargeur 54,6 V 2 A (Cdiscount) ; 6 à 8 h pour la version 11 Ah"
+  ],
+  [
+   "Équipement",
+   "Selle, panier ou porte-bagages"
+  ]
+ ],
+ "pros": [
+  "Roues de 12 pouces, plus à l'aise sur les bordures et les pavés qu'une 10 pouces (Techno-Science).",
+  "Deux freins à disque, à l'avant et à l'arrière (Boulanger, Darty).",
+  "Panier ou porte-bagages pour les courses (Rue du Commerce).",
+  "Charge maximale jusqu'à 150 kg sur certaines versions (Boulanger)."
+ ],
+ "cons": [
+  "Trois batteries sous le même nom : autonomie, poids et étanchéité changent d'une version à l'autre.",
+  "Plus de 20 kg et un gabarit large : peu pratique à monter dans un escalier.",
+  "Cadre en fer sur la version 15 Ah selon Darty, ce qui alourdit l'ensemble.",
+  "Les vitesses de 40 à 45 km/h mises en avant par les vendeurs sont interdites sur la voie publique."
+ ],
+ "parts": [],
+ "care": [
+  "Deux freins à disque à câble : retends les câbles dès que les leviers touchent presque le guidon, et remplace les plaquettes à 1 mm de garniture.",
+  "Les pneus de 12 pouces sont gonflables : vérifie leur pression toutes les deux semaines, un pneu mou use la chambre à air.",
+  "Graisse légèrement l'axe de la suspension avant et contrôle son serrage chaque mois, surtout si tu roules souvent sur des chemins."
+ ],
+ "price": {
+  "text": "Prix relevé sur Idealo : 489 € pour la version 48 V 15 Ah. Prix susceptible de varier.",
+  "source": "idealo.fr"
+ },
+ "faq": [
+  {
+   "q": "Quelle est la différence entre les Bogist M5 Pro 11 Ah, 13 Ah et 15 Ah ?",
+   "a": "La capacité de batterie, donc l'autonomie annoncée : environ 35 km en 11 Ah, 40 km en 13 Ah et jusqu'à 40 km en 15 Ah selon les fiches. Le moteur de 500 W et la tension de 48 V restent les mêmes."
+  },
+  {
+   "q": "La selle de la Bogist M5 Pro est-elle autorisée en France ?",
+   "a": "En France, la trottinette électrique est définie comme un engin sans place assise. Pour rouler sur la voie publique dans ce cadre, démonte la selle."
+  },
+  {
+   "q": "À quelle vitesse peut-on rouler en Bogist M5 Pro ?",
+   "a": "À 25 km/h au maximum dans la rue, comme toute trottinette électrique. Techno-Science précise qu'elle sort d'usine bridée à cette vitesse ; la débrider pour la voie publique est interdit."
+  },
+  {
+   "q": "Quelle taille de pneu pour la Bogist M5 Pro ?",
+   "a": "12 pouces gonflables. Boulanger et Darty indiquent 12 x 2,125, une fiche Bogist parle de 12 x 2,25 : lis la cote sur le flanc de ton pneu avant de commander."
+  },
+  {
+   "q": "Quel chargeur pour la Bogist M5 Pro ?",
+   "a": "Un chargeur pour batterie 48 V, soit 54,6 V en sortie, d'environ 2 A selon Cdiscount. Vérifie la forme de la prise sur ton chargeur d'origine avant d'en racheter un."
+  }
+ ],
+ "sources": [
+  {
+   "label": "Boulanger — Bogist M5 Pro",
+   "url": "https://www.boulanger.com/ref/9000921800"
+  },
+  {
+   "label": "Techno-Science — test Bogist M5 Pro",
+   "url": "https://www.techno-science.net/fr/tests/test-bogist-m5-pro-la-trottinette-electrique-pour-voyager-avec-confort-117"
+  },
+  {
+   "label": "Darty — Bogist M5 Pro 15 Ah",
+   "url": "https://www.darty.com/nav/achat/ref/MC354217191.html"
+  },
+  {
+   "label": "Cdiscount — Bogist M5 Pro 15 Ah",
+   "url": "https://www.cdiscount.com/le-sport/mobilite-urbaine/bogist-m5-pro-trottinette/f-1214801-aadez50036.html"
+  },
+  {
+   "label": "Rue du Commerce — Bogist M5 Pro",
+   "url": "https://www.rueducommerce.fr/p/m24107800046.html"
+  },
+  {
+   "label": "Idealo — Bogist M5 Pro",
+   "url": "https://www.idealo.fr/liste/121005715/bogist-m5-pro.html"
+  }
+ ]
+}

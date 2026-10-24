@@ -1,0 +1,117 @@
+{
+ "displayName": "Velity 511-Sx",
+ "metaTitle": "Velity 511-Sx : fiche technique, freins Magura et pièces",
+ "metaDescription": "Velity 511-Sx : hyper trottinette de circuit, 79,2 V 45 Ah, 16 800 W en pointe, freins Magura MT5e, pneus PMT 11 pouces, écran tactile. Fiche et pièces.",
+ "intro": [
+  "La Velity 511-Sx est le modèle intermédiaire de Velity, marque thaïlandaise d'hyper trottinettes de circuit. Fastride, son distributeur exclusif en France, annonce une batterie de 79,2 V et 45 Ah, 16 800 W au maximum et 150 km d'autonomie. Elle est conçue pour les circuits et les terrains privés.",
+  "Elle freine avec deux étriers hydrauliques Magura MT5e, roule sur des pneus PMT T41 de 11 pouces et reçoit un amortisseur de direction, des suspensions à cartouche réglables et un écran tactile de 4,5 pouces. Un forum détaille des cellules Samsung 50S et des disques Magura Storm HC de 160 mm."
+ ],
+ "specs": [
+  [
+   "Puissance",
+   "16 800 W au maximum (puissance nominale non communiquée)"
+  ],
+  [
+   "Vitesse",
+   "140 à 150 km/h annoncés sur circuit privé ; une trottinette ne doit pas dépasser 25 km/h sur la voie publique"
+  ],
+  [
+   "Autonomie annoncée",
+   "jusqu'à 150 km (selon Fastride)"
+  ],
+  [
+   "Batterie",
+   "79,2 V, 45 Ah (environ 3 564 Wh) ; cellules Samsung 50S selon le forum Hardware.fr"
+  ],
+  [
+   "Poids",
+   "47 kg selon Fastride, 58 kg selon le forum Hardware.fr"
+  ],
+  [
+   "Roues",
+   "11 pouces, PMT T41"
+  ],
+  [
+   "Freins",
+   "Hydrauliques Magura MT5e avant et arrière ; disques Magura Storm HC 160 mm selon le forum Hardware.fr"
+  ],
+  [
+   "Suspension",
+   "Cartouches réglables avant et arrière ; amortisseur de direction"
+  ],
+  [
+   "Modes",
+   "6 : Park, Hyper Smooth, Rain, Eco, Drive, Smart Racing"
+  ],
+  [
+   "Écran",
+   "Tactile 4,5 pouces"
+  ],
+  [
+   "Chargeur",
+   "90,6 V, 20 A ; prise Neutrik PowerCon selon le forum Hardware.fr"
+  ]
+ ],
+ "pros": [
+  "Freins Magura MT5e, une référence en hydraulique, à l'avant et à l'arrière (Fastride, Hardware.fr).",
+  "Amortisseur de direction et suspensions à cartouche réglables (Fastride).",
+  "Six modes de conduite, dont un mode pluie (Fastride).",
+  "Recharge rapide possible avec le chargeur 20 A (Fastride)."
+ ],
+ "cons": [
+  "Réservée au circuit : ses vitesses sont interdites sur la voie publique.",
+  "47 à 58 kg selon les sources : il faut un utilitaire pour la déplacer.",
+  "Peu de sources indépendantes, essentiellement le distributeur.",
+  "Le prix n'est pas affiché publiquement par le distributeur français."
+ ],
+ "parts": [
+  {
+   "label": "Plaquettes de frein",
+   "size": "Étrier Magura MT5 / MT7",
+   "count": 3,
+   "to": "/piece/plaquette-de-freins-magura-mt5-mt7",
+   "cta": "Plaquettes Magura"
+  }
+ ],
+ "care": [
+  "Purge le circuit Magura au liquide minéral Magura Royal Blood, jamais au DOT : un mauvais liquide détruit les joints.",
+  "Contrôle les plaquettes après chaque journée de circuit et change-les sous 1 mm de garniture.",
+  "Recharge avec le chargeur fourni sur une prise adaptée à 20 A, et ne laisse jamais la batterie charger sans surveillance."
+ ],
+ "faq": [
+  {
+   "q": "La Velity 511-Sx est-elle autorisée sur la route ?",
+   "a": "Non à ses performances : Fastride la destine aux circuits et chemins privés. La loi limite les trottinettes électriques à 25 km/h sur la voie publique, alors que la 511-Sx dépasse les 140 km/h."
+  },
+  {
+   "q": "Quelles plaquettes pour la Velity 511-Sx ?",
+   "a": "Des plaquettes pour étrier Magura MT5, puisqu'elle est équipée de freins Magura MT5e. Les plaquettes MT5 conviennent aussi aux étriers MT7 : choisis le composé selon ton usage."
+  },
+  {
+   "q": "Quelle différence entre la Velity 511-Sx et la 511-Ss ?",
+   "a": "La 511-Sx a une batterie plus grosse (79,2 V et 45 Ah contre 72 V et 38 Ah), l'unité de contrôle de deuxième génération, six modes au lieu de trois et un écran tactile."
+  },
+  {
+   "q": "Quel liquide de frein pour la Velity 511-Sx ?",
+   "a": "Les freins Magura fonctionnent à l'huile minérale Magura Royal Blood. N'y mets jamais de liquide DOT."
+  }
+ ],
+ "sources": [
+  {
+   "label": "Fastride — Velity 511-Sx",
+   "url": "https://fastride.fr/fr/trottinettes-electriques/2977-trottinette-electrique-velity-511-sx.html"
+  },
+  {
+   "label": "Hardware.fr — forum trottinettes électriques",
+   "url": "https://forum.hardware.fr/hfr/Discussions/Viepratique/trottinettes-electriques-preferes-sujet_79694_332.htm"
+  },
+  {
+   "label": "Velity — site officiel",
+   "url": "https://velity.tech/"
+  },
+  {
+   "label": "Fastride — Velity 511-Ss",
+   "url": "https://fastride.fr/fr/velity/2978-trottinette-electrique-velity-511-ss.html"
+  }
+ ]
+}

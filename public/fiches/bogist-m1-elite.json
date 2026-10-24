@@ -1,0 +1,121 @@
+{
+ "displayName": "Bogist M1 Elite",
+ "metaTitle": "Bogist M1 Elite : fiche technique et entretien",
+ "metaDescription": "Bogist M1 Elite : 350 W, 36 V, pneus pleins alvéolés 8,5 pouces, frein électrique avant et disque arrière, 12,5 kg, IP54. Versions, avis et FAQ.",
+ "intro": [
+  "La Bogist M1 Elite est une petite trottinette urbaine de 12,5 kg avec un moteur de 350 W dans la roue avant et des pneus pleins alvéolés de 8,5 pouces, selon Boulanger. Elle se pilote aussi depuis l'application Tuya Smart, avec régulateur de vitesse et verrouillage.",
+  "Sa batterie de 36 V existe en deux capacités selon les vendeurs : 10 Ah (360 Wh) chez Boulanger et Pixmania, 7,8 Ah (280 Wh) chez SXT. L'autonomie annoncée va donc de 20 à 30 km. Elle freine électriquement à l'avant et par disque à l'arrière, et porte un indice IP54."
+ ],
+ "specs": [
+  [
+   "Moteur",
+   "350 W, dans la roue avant"
+  ],
+  [
+   "Vitesse",
+   "25 km/h sur la voie publique (version vendue par Boulanger) ; 30 km/h sur la version vendue par SXT, réservés à un terrain privé"
+  ],
+  [
+   "Autonomie annoncée",
+   "25 à 30 km avec la batterie 10 Ah ; 20 km avec la batterie 7,8 Ah (selon SXT)"
+  ],
+  [
+   "Batterie",
+   "36 V : 10 Ah, 360 Wh (Boulanger, Pixmania) ou 7,8 Ah, 280 Wh (SXT)"
+  ],
+  [
+   "Poids",
+   "12,5 kg (12,3 kg selon SXT)"
+  ],
+  [
+   "Charge max",
+   "120 kg selon Boulanger, 100 kg selon SXT"
+  ],
+  [
+   "Roues",
+   "8,5 pouces, pneus pleins alvéolés"
+  ],
+  [
+   "Freins",
+   "Électrique avant + disque arrière (110 mm selon SXT)"
+  ],
+  [
+   "Suspension",
+   "Aucune annoncée"
+  ],
+  [
+   "Étanchéité",
+   "IP54"
+  ],
+  [
+   "Temps de charge",
+   "4 à 6 h selon Boulanger, 6 h selon SXT"
+  ],
+  [
+   "Connectivité",
+   "Application Tuya Smart (Bluetooth)"
+  ]
+ ],
+ "pros": [
+  "12,5 kg seulement : elle se porte d'une main dans le métro (Boulanger).",
+  "Pneus pleins alvéolés : plus aucune crevaison à réparer (Boulanger, SXT).",
+  "Application avec régulateur de vitesse et verrouillage (SXT).",
+  "Prix d'entrée bas, souvent sous les 300 € en promotion (Boulanger)."
+ ],
+ "cons": [
+  "Sans suspension et avec des pneus pleins, chaque fissure de la chaussée remonte dans les mains.",
+  "Deux capacités de batterie circulent sous le même nom : vérifie laquelle tu achètes.",
+  "Autonomie modeste, 20 à 30 km annoncés.",
+  "Pente maximale de 15 % : les fortes côtes la ralentissent nettement."
+ ],
+ "parts": [],
+ "care": [
+  "Avec des pneus pleins, la vibration desserre les vis : contrôle le guidon, la potence et les garde-boue tous les mois.",
+  "Le seul frein mécanique est le disque arrière : garde-le propre et sec, un disque gras perd la moitié de sa puissance.",
+  "Ne laisse pas la batterie vide plusieurs semaines : recharge-la au moins une fois par mois si la trottinette dort au garage."
+ ],
+ "price": {
+  "text": "Prix affiché par Boulanger : 299 € (prix de référence 629 €). Prix susceptible de varier.",
+  "source": "boulanger.com"
+ },
+ "faq": [
+  {
+   "q": "Quelle batterie a la Bogist M1 Elite ?",
+   "a": "Une batterie de 36 V. Boulanger et Pixmania annoncent 10 Ah (360 Wh), SXT annonce 7,8 Ah (280 Wh). Regarde l'étiquette sous le plateau ou la fiche de ton vendeur pour savoir laquelle tu as."
+  },
+  {
+   "q": "La Bogist M1 Elite peut-elle crever ?",
+   "a": "Non, ses pneus de 8,5 pouces sont pleins et alvéolés. En contrepartie, ils filtrent moins bien les chocs qu'un pneu gonflable."
+  },
+  {
+   "q": "La Bogist M1 Elite roule-t-elle à 30 km/h en France ?",
+   "a": "Pas sur la voie publique : la limite y est de 25 km/h, et la version vendue en France par Boulanger est réglée sur cette vitesse. Les 30 km/h de la version allemande sont réservés au terrain privé."
+  },
+  {
+   "q": "Quels freins sur la Bogist M1 Elite ?",
+   "a": "Un frein électrique sur la roue avant motrice et un frein à disque mécanique à l'arrière, de 110 mm selon SXT."
+  }
+ ],
+ "sources": [
+  {
+   "label": "Boulanger — Bogist M1 Elite",
+   "url": "https://www.boulanger.com/ref/9000921806"
+  },
+  {
+   "label": "SXT Scooters — Bogist M1 Elite",
+   "url": "https://sxt-scooters.de/en/products/bogist-m1-elite-e-scooter"
+  },
+  {
+   "label": "Pixmania — Bogist M1 Elite",
+   "url": "https://www.pixmania.com/it/it/monopattino-elettrico-pieghevole-bogist-m1-elite-motore-da-85-pollici-da-350-w-batteria-da-36-v-10-ah-489615.html"
+  },
+  {
+   "label": "Bogist Shop — M1 Elite",
+   "url": "https://bogistshop.com/products/bogist-m1-elite-zima-blue-electric-scooter-350w-max-speed-30-km-h-with-app"
+  },
+  {
+   "label": "Heureka — Bogist M1 Elite",
+   "url": "https://elektrokolobezky.heureka.sk/bogist-m1-elite/"
+  }
+ ]
+}

@@ -1,0 +1,101 @@
+{
+ "displayName": "Velity 511-Ss",
+ "metaTitle": "Velity 511-Ss : fiche technique de l'hyper trottinette",
+ "metaDescription": "Velity 511-Ss : hyper trottinette de circuit, 72 V 38 Ah, 16 800 W en pointe, pneus 11 pouces, suspensions à cartouche réglables, 47 kg. Fiche et FAQ.",
+ "intro": [
+  "La Velity 511-Ss est le premier modèle de Velity, une marque thaïlandaise d'hyper trottinettes destinées au circuit. Selon Fastride, son distributeur exclusif en France, elle associe une batterie de 72 V et 38 Ah à deux moteurs qui délivrent 16 800 W au maximum, pour 47 kg.",
+  "D'origine, elle roule sur des pneus VRM217 et freine avec des étriers hydrauliques Nutt. Fastride la propose équipée de pneus slick PMT T41 de 11 pouces et de freins Magura MT5e sur disques de 160 mm. Ses suspensions à cartouche se règlent selon le poids du pilote."
+ ],
+ "specs": [
+  [
+   "Puissance",
+   "16 800 W au maximum (puissance nominale non communiquée), selon Fastride"
+  ],
+  [
+   "Vitesse",
+   "140 km/h annoncés sur circuit privé ; une trottinette ne doit pas dépasser 25 km/h sur la voie publique"
+  ],
+  [
+   "Autonomie annoncée",
+   "jusqu'à 145 km (selon Fastride)"
+  ],
+  [
+   "Batterie",
+   "72 V, 38 Ah (environ 2 736 Wh)"
+  ],
+  [
+   "Poids",
+   "47 kg (selon Fastride)"
+  ],
+  [
+   "Roues",
+   "11 pouces : VRM217 d'origine, PMT slick T41 sur la version Fastride"
+  ],
+  [
+   "Freins",
+   "Hydrauliques Nutt d'origine ; Magura MT5e sur disques 160 mm x 3 mm chez Fastride"
+  ],
+  [
+   "Suspension",
+   "Cartouches réglables avant et arrière"
+  ],
+  [
+   "Modes",
+   "3 : Hyper smooth, Eco, Racing"
+  ],
+  [
+   "Chargeur",
+   "84 V, 5 A"
+  ]
+ ],
+ "pros": [
+  "Suspensions à cartouche réglables selon ton poids (Fastride).",
+  "Freins Magura MT5e sur disques renforcés de 3 mm dans la version Fastride.",
+  "Autonomie annoncée jusqu'à 145 km avec 2,7 kWh de batterie (Fastride).",
+  "Repose-pied en carbone et inserts de plateau en aluminium (Fastride)."
+ ],
+ "cons": [
+  "Engin de circuit : interdit de rouler à ces vitesses sur la voie publique.",
+  "47 kg, intransportable à la main.",
+  "Une seule source détaillée en français (le distributeur), sans test indépendant publié.",
+  "Écran LCD simple et unité de contrôle de première génération, contre un écran tactile sur la 511-Sx."
+ ],
+ "parts": [],
+ "care": [
+  "Après chaque séance sur circuit, contrôle l'épaisseur des plaquettes et l'état des disques : à ces vitesses, l'usure va vite.",
+  "Règle la précharge des suspensions à ton poids équipé, et revérifie-la si tu changes de pneus.",
+  "Vérifie la pression et l'usure des pneus slick avant chaque sortie : un slick usé ou froid décroche sans prévenir."
+ ],
+ "faq": [
+  {
+   "q": "Peut-on rouler en Velity 511-Ss sur la route ?",
+   "a": "Pas à ses performances d'origine : Fastride la destine aux circuits et terrains privés. Sur la voie publique, une trottinette électrique est plafonnée à 25 km/h, très loin de ses 140 km/h."
+  },
+  {
+   "q": "Quelle différence entre la Velity 511-Ss et la 511-Sx ?",
+   "a": "La 511-Sx passe à 79,2 V et 45 Ah, avec une unité de contrôle de deuxième génération, six modes et un écran tactile de 4,5 pouces. La 511-Ss reste en 72 V et 38 Ah, avec trois modes et un écran LCD."
+  },
+  {
+   "q": "Quels freins sur la Velity 511-Ss ?",
+   "a": "Des étriers hydrauliques Nutt d'origine. Fastride la livre avec des Magura MT5e sur disques de 160 mm : vérifie le modèle d'étrier monté sur la tienne avant de commander des plaquettes."
+  },
+  {
+   "q": "Quel chargeur pour la Velity 511-Ss ?",
+   "a": "Fastride la livre avec un chargeur 84 V de 5 A, adapté à sa batterie de 72 V."
+  }
+ ],
+ "sources": [
+  {
+   "label": "Fastride — Velity 511-Ss",
+   "url": "https://fastride.fr/fr/velity/2978-trottinette-electrique-velity-511-ss.html"
+  },
+  {
+   "label": "Velity — site officiel",
+   "url": "https://velity.tech/"
+  },
+  {
+   "label": "Fastride — Velity 511-Sx",
+   "url": "https://fastride.fr/fr/trottinettes-electriques/2977-trottinette-electrique-velity-511-sx.html"
+  }
+ ]
+}
