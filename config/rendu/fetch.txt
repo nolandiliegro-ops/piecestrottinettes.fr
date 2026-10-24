@@ -1,1 +1,4 @@
-rendu/pc-m365.json https://kqsxscjtlipregkrmucg.supabase.co/rest/v1/part_compatibility?select=part_id,confidence_level,suggestion_reason,parts(slug,electrical_specs)&scooter_model_id=eq.8060ae3d-dd7a-4d0a-ad85-7deb853e4db4
+rendu/img/6fb3a7dd7b40c0c6 https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/render/image/public/part-images/096c75e0-1c52-45fe-87fc-5a45b101d943/1792430668653_0.png?width=400&resize=contain&quality=75
+rendu/img/fafe5ef15f15a982 https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/render/image/public/part-images/17255237-e0ba-430b-9958-bcc10589d1c4/1792430826302_0.png?width=400&resize=contain&quality=75
+rendu/img/e65696c45b928c68 https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/render/image/public/part-images/b8a9e013-6196-490d-ac97-b8c8fee1d8da/1792432208371_0.png?width=400&resize=contain&quality=75
+rendu/img/ab74fffbc4fccc1e https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/render/image/public/scooter-photos/8060ae3d-dd7a-4d0a-ad85-7deb853e4db4/1792451016321_0.png?width=112&resize=contain&quality=75
