@@ -1,0 +1,113 @@
+{
+ "displayName": "Weped SSGT",
+ "metaTitle": "Weped SSGT : fiche technique 60 V 30 Ah et freins",
+ "metaDescription": "Weped SSGT : deux moteurs pour 20 000 W annoncés, batterie Samsung 60 V 30 Ah, contrôleurs Kelly, pneus kart 130 mm, 35 kg. Fiche technique et FAQ.",
+ "intro": [
+  "La Weped SSGT est présentée par PIE Technologie comme la remplaçante de la Weped GTS : même batterie Samsung de 60 V et 30 Ah, mais de nouveaux contrôleurs Kelly 7218S et 20 000 W annoncés pour ses deux moteurs brushless, un chiffre de puissance de pointe.",
+  "Elle pèse 35 kg, accepte 120 kg et roule sur des pneus de type kart de 130 mm, des Shinko d'origine selon Fastride. PIE Technologie annonce 80 km d'autonomie en mode éco et 15 heures de charge ; elle freine avec des étriers hydrauliques de type NUTT."
+ ],
+ "specs": [
+  [
+   "Moteurs",
+   "2 moteurs brushless, 20 000 W annoncés en pointe ; puissance nominale non communiquée"
+  ],
+  [
+   "Contrôleurs",
+   "Kelly 7218S"
+  ],
+  [
+   "Vitesse",
+   "25 km/h sur la voie publique ; 85 à 95 km/h annoncés, réservés à un terrain privé"
+  ],
+  [
+   "Autonomie annoncée",
+   "80 km en mode éco"
+  ],
+  [
+   "Batterie",
+   "60 V, 30 Ah, 1 800 Wh, cellules Samsung SDI 21700 50E"
+  ],
+  [
+   "Poids",
+   "35 kg"
+  ],
+  [
+   "Charge max",
+   "120 kg"
+  ],
+  [
+   "Roues",
+   "pneus type kart de 130 mm, Shinko d'origine (selon Fastride)"
+  ],
+  [
+   "Freins",
+   "hydrauliques type NUTT (selon Fastride)"
+  ],
+  [
+   "Suspension",
+   "avant hydraulique, arrière à ressort (selon PIE Technologie)"
+  ],
+  [
+   "Temps de charge",
+   "15 h avec le chargeur d'origine"
+  ]
+ ],
+ "pros": [
+  "Contrôleurs Kelly 7218S, plus réactifs que ceux de la GTS selon PIE Technologie.",
+  "Pneus kart de 130 mm pour l'adhérence (Fastride).",
+  "35 kg pour une machine de cette puissance (PIE Technologie).",
+  "Pente maximale annoncée de 40 % (PIE Technologie)."
+ ],
+ "cons": [
+  "Puissance nominale non publiée : seuls les 20 000 W de pointe sont annoncés.",
+  "Charge de 15 heures avec le chargeur fourni.",
+  "Aucun indice d'étanchéité communiqué.",
+  "Prix relevé de 2 990 à 4 000 € selon le revendeur."
+ ],
+ "parts": [],
+ "care": [
+  "Contrôle le serrage des connecteurs de puissance entre la batterie et les contrôleurs Kelly : un contact qui chauffe se voit souvent à une gaine noircie.",
+  "Garde tes pneus kart à la pression conseillée par le fabricant du pneu : sous-gonflés, ils chauffent et s'arrachent vite.",
+  "Purge tes freins hydrauliques au moins une fois par an si tu roules sur circuit."
+ ],
+ "price": {
+  "text": "Prix relevés : à partir de 2 990 € selon Solution Trottinette, 4 000 € chez Fastride. Prix susceptible de varier.",
+  "source": "solution-trottinette.fr, fastride.fr"
+ },
+ "faq": [
+  {
+   "q": "Les 20 000 W de la Weped SSGT sont-ils une puissance nominale ?",
+   "a": "Non : PIE Technologie les compare aux 18 000 W de pointe de la GTS : c'est une puissance de pointe. La puissance nominale n'est pas publiée."
+  },
+  {
+   "q": "Quels pneus sur la Weped SSGT ?",
+   "a": "Des pneus de type kart de 130 mm de large, des Shinko d'origine selon Fastride, avec des PMT possibles en option. Lis la cote sur le flanc avant d'en commander."
+  },
+  {
+   "q": "Peut-on utiliser la SSGT à 95 km/h ?",
+   "a": "Uniquement sur circuit ou terrain privé. Sur la chaussée en France, la vitesse d'une trottinette électrique est plafonnée à 25 km/h, et modifier le bridage pour y circuler est interdit."
+  },
+  {
+   "q": "La batterie de la SSGT est-elle la même que celle de la GTS ?",
+   "a": "Oui, une batterie de 60 V et 30 Ah. Les packs de remplacement vendus par les ateliers sont annoncés compatibles avec les deux modèles."
+  }
+ ],
+ "sources": [
+  {
+   "label": "PIE Technologie — Weped SSGT",
+   "url": "https://pietechnologie.com/products/trottinette-electrique-weped-ssgt-20-000w-60v30ah"
+  },
+  {
+   "label": "Fastride — Weped SSGT",
+   "url": "https://fastride.fr/en/weped/5336-trottinette-electrique-weped-ssgt.html"
+  },
+  {
+   "label": "Solution Trottinette — gamme Weped",
+   "url": "https://solution-trottinette.fr/trottinette-electrique/marque/weped"
+  },
+  {
+   "label": "Save My Battery — batterie Weped GTS / SSGT",
+   "url": "https://savemybattery.fr/fr/batteries-pour-weped-gtsssgt/406-batterie-60v-30ah-weped-gtsssgt.html"
+  }
+ ]
+}

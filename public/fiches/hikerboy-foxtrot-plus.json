@@ -1,0 +1,127 @@
+{
+  "displayName": "Hikerboy Foxtrot Plus",
+  "metaTitle": "Hikerboy Foxtrot Plus : batterie amovible et fiche",
+  "metaDescription": "Hikerboy Foxtrot Plus : 500 W, batterie amovible 48 V 10,4 Ah (499 Wh), double suspension, pneus tubeless 10 pouces, 20 kg. Fiche technique et FAQ.",
+  "intro": [
+    "La Hikerboy Foxtrot Plus se distingue par sa batterie amovible de 48 V et 10,4 Ah (499 Wh) : tu peux la retirer pour la recharger chez toi. Elle embarque un moteur arrière de 500 W, des suspensions avant et arrière et des pneus tubeless de 10 pouces, selon Hikerboy.",
+    "Hikerboy annonce 45 km d'autonomie, 20 kg et 130 kg de charge maximale. Monecobike, qui la vend, parle plutôt d'environ 35 km. Elle freine avec un tambour devant et un disque derrière, et ajoute une connexion Bluetooth, une application mobile, un support de téléphone et un port USB pour recharger ton smartphone en route."
+  ],
+  "specs": [
+    [
+      "Moteur",
+      "500 W, moteur arrière"
+    ],
+    [
+      "Vitesse",
+      "25 km/h sur la voie publique ; 35 km/h annoncés par Hikerboy sur route privée"
+    ],
+    [
+      "Autonomie annoncée",
+      "jusqu'à 45 km (environ 35 km selon Monecobike)"
+    ],
+    [
+      "Batterie",
+      "48 V, 10,4 Ah, 499,2 Wh, amovible (54,6 V en fin de charge)"
+    ],
+    [
+      "Poids",
+      "20 kg (20,5 kg selon Electrotraveller)"
+    ],
+    [
+      "Charge max",
+      "130 kg selon Hikerboy, 120 kg chez certains revendeurs"
+    ],
+    [
+      "Roues",
+      "10 pouces, pneus tubeless avant et arrière"
+    ],
+    [
+      "Freins",
+      "tambour avant + disque arrière"
+    ],
+    [
+      "Suspension",
+      "avant et arrière"
+    ],
+    [
+      "Étanchéité",
+      "IP54"
+    ],
+    [
+      "Temps de charge",
+      "5 h selon Hikerboy (4 à 6 h selon Electrotraveller)"
+    ]
+  ],
+  "pros": [
+    "Batterie amovible, rechargeable hors de la trottinette (Hikerboy).",
+    "Double suspension avant et arrière (Hikerboy).",
+    "Passe sans difficulté sur des chemins de forêt boueux selon le test d'Auto-Domo.",
+    "Charge maximale de 130 kg (Hikerboy)."
+  ],
+  "cons": [
+    "20 kg : se porte difficilement dans un escalier.",
+    "Autonomie annoncée de 45 km, environ 35 km selon un revendeur.",
+    "Charge maximale annoncée différemment selon les sources (120 ou 130 kg).",
+    "Tambour à l'avant, moins mordant qu'un disque."
+  ],
+  "parts": [],
+  "care": [
+    "Pneus tubeless : contrôle la pression toutes les deux semaines, une fuite lente au talon ne se voit pas à l'œil.",
+    "Quand tu retires la batterie, garde ses contacts propres et secs, et ne force jamais pour l'enclencher.",
+    "Les deux suspensions supportent mal la boue séchée : rince-les à l'éponge après une sortie en chemin, pas au jet."
+  ],
+  "faq": [
+    {
+      "q": "La batterie de la Hikerboy Foxtrot Plus est-elle amovible ?",
+      "a": "Oui. Tu peux la recharger sur la trottinette ou la retirer pour la brancher ailleurs. Hikerboy vend cette batterie de 48 V et 10,4 Ah en pièce détachée, compatible Foxtrot Plus uniquement."
+    },
+    {
+      "q": "Quelle taille de pneu pour la Foxtrot Plus ?",
+      "a": "Hikerboy indique des pneus tubeless de 10 pouces sans publier la cote complète. Avant de commander, lis la dimension moulée sur le flanc de ton pneu."
+    },
+    {
+      "q": "La Foxtrot Plus peut-elle aller à 35 km/h ?",
+      "a": "Hikerboy indique 35 km/h sur route privée uniquement. Dans la rue, une trottinette électrique ne doit pas dépasser 25 km/h, et lever le bridage pour y rouler plus vite est interdit."
+    },
+    {
+      "q": "Quelle différence entre la Foxtrot et la Foxtrot Plus ?",
+      "a": "Les batteries ne sont pas interchangeables : Mobilityurban vend une batterie 36 V pour la Foxtrot et une batterie 48 V pour la Foxtrot Plus, qui passe aussi à 500 W."
+    },
+    {
+      "q": "Combien de temps pour recharger la Foxtrot Plus ?",
+      "a": "Environ 5 heures selon Hikerboy ; Electrotraveller donne 4 à 6 heures."
+    }
+  ],
+  "sources": [
+    {
+      "label": "Hikerboy — Foxtrot Plus",
+      "url": "https://hikerboyscooter.com/fr/products/foxtrot-plus"
+    },
+    {
+      "label": "Hikerboy — batterie Foxtrot Plus",
+      "url": "https://hikerboyscooter.com/products/batterie-trottinette-foxtrot-plus"
+    },
+    {
+      "label": "Electrotraveller — Hikerboy Foxtrot Plus",
+      "url": "https://electrotraveller.com/electric-scooters/hikerboy-foxtrot-plus-grey/?v=08a4415e9d59"
+    },
+    {
+      "label": "Monecobike — Hikerboy Foxtrot Plus",
+      "url": "https://monecobike.com/produit/hikerboy-foxtrot-plus/"
+    },
+    {
+      "label": "Mobilityurban — gamme Hikerboy",
+      "url": "https://www.mobilityurban.fr/marque/trottinette-hikerboy/"
+    },
+    {
+      "label": "YouTube — Hikerboy Foxtrot Plus (Auto-Domo)",
+      "url": "https://www.youtube.com/watch?v=023UCHB4QnI"
+    }
+  ],
+  "video": {
+    "id": "023UCHB4QnI",
+    "title": "Hikerboy Foxtrot plus, la trottinette electrique connectée",
+    "channel": "Auto-Domo•Fr High-Tech & Domotique",
+    "uploadDate": "2024-04-04"
+  }
+}

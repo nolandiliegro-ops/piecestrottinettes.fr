@@ -1,0 +1,109 @@
+{
+ "displayName": "Weped GTS",
+ "metaTitle": "Weped GTS : fiche technique 10 000 W, 60 V 30 Ah",
+ "metaDescription": "Weped GTS : deux moteurs pour 10 000 W annoncés, batterie 60 V 30 Ah (1 800 Wh), pneus 11 pouces type kart de 130 mm, 35 kg. Fiche, limites et FAQ.",
+ "intro": [
+  "La Weped GTS est une trottinette sportive coréenne à deux moteurs brushless pour 10 000 W annoncés, 18 000 W en pointe selon PIE Technologie. Elle succède à la GT, donnée pour 6 000 W, et roule sur des pneus tubeless de 11 pouces très larges, 130 mm, de type kart.",
+  "Sa batterie Samsung de 60 V et 30 Ah stocke 1 800 Wh pour 100 km d'autonomie annoncée. Elle pèse 35 kg, accepte 120 kg et freine avec des disques à assistance hydraulique, des Magura en option chez certains revendeurs. PIE Technologie précise qu'elle n'est plus fabriquée, remplacée par la SSGT."
+ ],
+ "specs": [
+  [
+   "Moteurs",
+   "2 moteurs brushless, 10 000 W annoncés ; 18 000 W en pointe selon PIE Technologie"
+  ],
+  [
+   "Vitesse",
+   "25 km/h sur la voie publique ; 70 km/h annoncés par Solution Trottinette, uniquement hors route"
+  ],
+  [
+   "Autonomie annoncée",
+   "jusqu'à 100 km"
+  ],
+  [
+   "Batterie",
+   "60 V, 30 Ah, 1 800 Wh, cellules Samsung"
+  ],
+  [
+   "Poids",
+   "35 kg"
+  ],
+  [
+   "Charge max",
+   "120 kg"
+  ],
+  [
+   "Roues",
+   "11 pouces tubeless, type kart de 130 mm de large (selon PIE Technologie)"
+  ],
+  [
+   "Freins",
+   "disques à assistance hydraulique avant et arrière ; Magura en option"
+  ],
+  [
+   "Suspension",
+   "avant et arrière, à air comprimé selon PIE Technologie"
+  ],
+  [
+   "Pente max",
+   "40 %"
+  ],
+  [
+   "Temps de charge",
+   "environ 17 h avec le chargeur d'origine"
+  ]
+ ],
+ "pros": [
+  "Pneus de 130 mm de large pour une grande surface de contact (PIE Technologie).",
+  "Freins Magura proposés en option (Solution Trottinette).",
+  "35 kg seulement pour 10 000 W annoncés (PIE Technologie).",
+  "Pente maximale annoncée de 40 % (Solution Trottinette)."
+ ],
+ "cons": [
+  "Plus fabriquée selon PIE Technologie : pièces d'origine à vérifier avant achat.",
+  "Recharge très longue, environ 17 h avec le chargeur fourni.",
+  "Plateau étroit, 16 cm (Solution Trottinette).",
+  "Puissance annoncée sans précision claire entre nominal et pointe."
+ ],
+ "parts": [],
+ "care": [
+  "Des pneus kart de 130 mm s'usent au centre sous la puissance : surveille la bande de roulement et la pression avant chaque sortie.",
+  "Si tu as les freins Magura, utilise uniquement l'huile minérale prévue par Magura pour la purge, jamais du liquide DOT.",
+  "Ta batterie de 1 800 Wh met 17 h à se charger : branche-la sur une prise dédiée, loin de toute matière inflammable."
+ ],
+ "price": {
+  "text": "À partir de 3 290 € relevés par Solution Trottinette (octobre 2026). Prix susceptible de varier.",
+  "source": "solution-trottinette.fr"
+ },
+ "faq": [
+  {
+   "q": "Quelle différence entre la Weped GTS et la SSGT ?",
+   "a": "PIE Technologie présente la SSGT comme la remplaçante de la GTS : 20 000 W annoncés contre 18 000 W en pointe, et une vitesse de pointe relevée par de nouveaux contrôleurs. Les deux partagent la même batterie de 60 V."
+  },
+  {
+   "q": "Quelle taille de pneu pour la Weped GTS ?",
+   "a": "Des pneus tubeless de 11 pouces, type kart, de 130 mm de large. Relève la cote complète sur le flanc avant de commander un pneu."
+  },
+  {
+   "q": "La Weped GTS a-t-elle le droit de circuler sur route ?",
+   "a": "Seulement bridée à 25 km/h, le maximum autorisé en France pour une trottinette. Les 70 km/h annoncés sont réservés à un terrain privé ; enlever le bridage pour rouler en ville est interdit."
+  },
+  {
+   "q": "Quelle batterie pour la Weped GTS ?",
+   "a": "Une batterie de 60 V et 30 Ah, soit 1 800 Wh. Des ateliers proposent des packs de remplacement compatibles GTS et SSGT, en 30 ou 40 Ah."
+  }
+ ],
+ "sources": [
+  {
+   "label": "PIE Technologie — Weped GTS",
+   "url": "https://pietechnologie.com/es-eu/products/trottinette-electrique-weeped-gts-18000w-60v-30ah"
+  },
+  {
+   "label": "Solution Trottinette — Weped GTS",
+   "url": "https://solution-trottinette.fr/trottinette-electrique/weped-gts-60v-30ah"
+  },
+  {
+   "label": "Wee-bot — batterie Weped GTS / SSGT",
+   "url": "https://www.wee-bot.com/products/batterie-trottinette-electrique-60v-gts-ssgt-weped-batterie-uniquement"
+  }
+ ]
+}

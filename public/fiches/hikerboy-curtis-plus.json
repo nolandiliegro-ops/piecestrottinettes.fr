@@ -1,0 +1,123 @@
+{
+  "displayName": "Hikerboy Curtis Plus",
+  "metaTitle": "Hikerboy Curtis Plus : fiche technique 500 W 48 V",
+  "metaDescription": "Hikerboy Curtis Plus : moteur 500 W (1 000 W en pointe), batterie 48 V 10,4 Ah, 19 kg, roues 10 pouces, IPX5, charge 5,5 h. Fiche, avis et FAQ.",
+  "intro": [
+    "La Hikerboy Curtis Plus reprend le cadre de la Curtis mais passe en 48 V : moteur arrière de 500 W nominaux, 1 000 W en pointe selon Elektromoped, et batterie de 10,4 Ah d'après la fiche Hikerboy. Elle pèse environ 19 kg et reste bridée à 25 km/h.",
+    "Hikerboy annonce 40 km d'autonomie et 20 % de pente maximale. Dans son test, Raftor a tenu 23 km/h dans une côte et estime l'autonomie réelle entre 20 et 25 km pour un pilote de 80 kg en conduite dynamique."
+  ],
+  "specs": [
+    [
+      "Moteur",
+      "500 W nominaux ; 1 000 W en pointe (Elektromoped, manuel Hikerboy)"
+    ],
+    [
+      "Vitesse",
+      "25 km/h (20 km/h sur la version suisse)"
+    ],
+    [
+      "Autonomie annoncée",
+      "jusqu'à 40 km ; 20 à 25 km en conduite dynamique selon Raftor"
+    ],
+    [
+      "Batterie",
+      "48 V, 10,4 Ah selon Hikerboy, soit 499 Wh (54,6 V en fin de charge) ; un revendeur suisse annonce 13 Ah"
+    ],
+    [
+      "Poids",
+      "19 kg selon Hikerboy (18,4 à 22 kg selon les revendeurs)"
+    ],
+    [
+      "Charge max",
+      "100 kg selon Hikerboy, 120 kg selon Elektromoped"
+    ],
+    [
+      "Roues",
+      "10 pouces, pneus gonflables"
+    ],
+    [
+      "Freins",
+      "tambour avant + disque arrière + E-ABS selon Hikerboy ; un revendeur suisse annonce deux disques"
+    ],
+    [
+      "Suspension",
+      "avant (selon Mobilityurban)"
+    ],
+    [
+      "Étanchéité",
+      "IPX5"
+    ],
+    [
+      "Temps de charge",
+      "5,5 h"
+    ]
+  ],
+  "pros": [
+    "Tient 23 km/h dans une côte où un 350 W ralentit (test Raftor).",
+    "Excellent freinage selon Raftor dans son test de la Curtis Dual.",
+    "Clignotants avant et arrière et suspension avant (Mobilityurban).",
+    "Certification IPX5 (Hikerboy)."
+  ],
+  "cons": [
+    "Charge maximale de 100 kg seulement sur la fiche Hikerboy.",
+    "Capacité de batterie annoncée différemment selon les revendeurs (10,4, 13 ou 15 Ah).",
+    "19 kg : plus lourde que la Curtis de base.",
+    "Autonomie réelle de 20 à 25 km en conduite dynamique (Raftor)."
+  ],
+  "parts": [],
+  "care": [
+    "Le tambour avant s'use lentement mais se dérègle : reprends la tension du câble dès que la course du levier s'allonge.",
+    "Avec 500 W sur la roue arrière, l'écrou d'axe moteur travaille : vérifie son serrage tous les mois.",
+    "Pour préserver ta batterie de 48 V, évite de la stocker pleine ou vide plusieurs semaines ; vise environ 50 % si tu ne roules pas."
+  ],
+  "faq": [
+    {
+      "q": "Quelle batterie équipe la Hikerboy Curtis Plus ?",
+      "a": "Une batterie lithium de 48 V et 10,4 Ah d'après Hikerboy, soit environ 499 Wh. Certains revendeurs affichent 13 ou 15 Ah : vérifie l'étiquette de ta batterie avant d'en commander une neuve."
+    },
+    {
+      "q": "La Curtis Plus monte-t-elle bien les côtes ?",
+      "a": "Hikerboy annonce 20 % de pente. Dans son essai, Raftor garde 23 km/h dans une montée moyenne et environ 17 km/h dans une côte très raide."
+    },
+    {
+      "q": "Quelle différence entre la Curtis Plus et la Curtis Dual ?",
+      "a": "La Curtis Plus a un seul moteur arrière de 500 W. La Curtis Dual répartit la même puissance nominale sur deux moteurs de 250 W, un par roue, et pèse environ 20,5 kg."
+    },
+    {
+      "q": "La Hikerboy Curtis Plus est-elle bridée ?",
+      "a": "Oui, elle sort d'usine à 25 km/h, ce qui la rend utilisable sur la voie publique en France. Hikerboy propose aussi une version à 20 km/h pour la Suisse."
+    },
+    {
+      "q": "Quel temps de charge pour la Curtis Plus ?",
+      "a": "Environ 5 heures et demie avec le chargeur d'origine, selon Hikerboy."
+    }
+  ],
+  "sources": [
+    {
+      "label": "Hikerboy — Curtis Plus",
+      "url": "https://hikerboyscooter.com/products/curtis-plus"
+    },
+    {
+      "label": "Elektromoped — Curtis Plus 48V 500W",
+      "url": "https://www.elektromoped.at/en/curtis-plus-electric-scooter-500w-48v-25kmh.html"
+    },
+    {
+      "label": "Mobilityurban — Curtis Plus",
+      "url": "https://www.mobilityurban.fr/marque/trottinette-hikerboy/trottinette-electrique-moderne-curtis-plus.html"
+    },
+    {
+      "label": "Tec-Way — Hikerboy Curtis Plus",
+      "url": "https://tec-way.ch/shop/e-mobilite/trottinettes-electriques/hikerboy/trottinette-electrique-hikerboy-curtis-plus-500w/"
+    },
+    {
+      "label": "YouTube — Test Hikerboy Curtis Plus (Raftor)",
+      "url": "https://www.youtube.com/watch?v=a6qTnLKuVww"
+    }
+  ],
+  "video": {
+    "id": "a6qTnLKuVww",
+    "title": "TEST HIKERBOY CURTIS PLUS : LA TROTTINETTE LÉGÈRE QUI MONTE LES CÔTES À 25 KM/H !",
+    "channel": "RAFTOR",
+    "uploadDate": "2025-04-27"
+  }
+}

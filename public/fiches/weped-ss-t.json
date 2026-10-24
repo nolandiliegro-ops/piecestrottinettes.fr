@@ -1,0 +1,117 @@
+{
+ "displayName": "Weped SS-T",
+ "metaTitle": "Weped SS-T : fiche technique 72 V 45 Ah (3 240 Wh)",
+ "metaDescription": "Weped SS-T : deux moteurs, batterie Samsung 72 V 45 Ah (3 240 Wh), pneus 11 pouces kart de 130 mm, freins hydrauliques, 52 à 60 kg. Fiche et FAQ.",
+ "intro": [
+  "La Weped SS-T, parfois écrite SST, est la plus lourde des sportives de cette sélection : batterie Samsung de 72 V et 45 Ah (3 240 Wh), deux moteurs de moyeu et des pneus tubeless de 11 pouces type kart, de 130 mm de large, selon PIE Technologie et Scooter.guide.",
+  "PIE Technologie annonce 150 km d'autonomie, 52 kg et 150 kg de charge ; Scooter.guide l'a pesée à 60 kg. La puissance est donnée de façon très différente : 10 080 W selon PIE Technologie, jusqu'à 33 000 W en pointe selon Scooter.guide. Elle freine avec deux disques hydrauliques."
+ ],
+ "specs": [
+  [
+   "Moteurs",
+   "2 moteurs de moyeu ; 10 080 W selon PIE Technologie (puissance de pointe chez un revendeur anglais) ; jusqu'à 33 000 W en pointe selon Scooter.guide"
+  ],
+  [
+   "Vitesse",
+   "25 km/h sur la voie publique ; 110 km/h annoncés, 124 km/h mesurés par Scooter.guide, sur terrain privé seulement"
+  ],
+  [
+   "Autonomie annoncée",
+   "120 à 150 km selon PIE Technologie ; environ 48 km en conduite moyenne selon Scooter.guide"
+  ],
+  [
+   "Batterie",
+   "72 V, 45 Ah, 3 240 Wh, cellules Samsung 21700"
+  ],
+  [
+   "Poids",
+   "52 kg selon PIE Technologie, 60 kg selon Scooter.guide"
+  ],
+  [
+   "Charge max",
+   "150 kg selon PIE Technologie, 160 kg selon Scooter.guide"
+  ],
+  [
+   "Roues",
+   "11 pouces tubeless type kart, 130 mm de large"
+  ],
+  [
+   "Freins",
+   "disques hydrauliques avant et arrière, disques de 160 mm (selon Scooter.guide)"
+  ],
+  [
+   "Suspension",
+   "avant et arrière"
+  ],
+  [
+   "Étanchéité",
+   "aucun indice IP communiqué (selon Scooter.guide)"
+  ],
+  [
+   "Temps de charge",
+   "15 h selon PIE Technologie, 21 h avec le chargeur standard selon Scooter.guide"
+  ]
+ ],
+ "pros": [
+  "Batterie de 3 240 Wh, l'une des plus grosses de la gamme Weped en cellules Samsung (PIE Technologie).",
+  "Pneus kart de 130 mm, très stables en ligne droite (Scooter.guide).",
+  "Freins hydrauliques à l'avant et à l'arrière (PIE Technologie).",
+  "Charge maximale de 150 kg (PIE Technologie)."
+ ],
+ "cons": [
+  "52 à 60 kg : il faut un rangement de plain-pied.",
+  "Les pneus larges et plats rendent la direction moins agile en virage (Scooter.guide).",
+  "Pas d'indice d'étanchéité (Scooter.guide).",
+  "Chiffres de puissance très différents d'une source à l'autre."
+ ],
+ "parts": [],
+ "care": [
+  "Avec 52 kg ou plus, vérifie avant chaque sortie le serrage des axes de roue et des vis de la potence.",
+  "Charge ta batterie de 3 240 Wh dans un local ventilé, jamais sans surveillance la nuit dans un logement.",
+  "Ses pneus kart s'usent vite : remplace-les dès que la gomme devient lisse, une trottinette de ce poids freine mal sur un pneu usé."
+ ],
+ "price": {
+  "text": "Prix relevé : à partir de 5 290 € selon Solution Trottinette. Prix susceptible de varier.",
+  "source": "solution-trottinette.fr"
+ },
+ "faq": [
+  {
+   "q": "Quelle puissance a vraiment la Weped SS-T ?",
+   "a": "Les sources ne s'accordent pas : 10 080 W selon PIE Technologie, présentés comme une puissance de pointe par un revendeur anglais, et jusqu'à 33 000 W en pointe selon Scooter.guide. Aucune puissance nominale officielle n'est publiée."
+  },
+  {
+   "q": "Quelle taille de pneu pour la Weped SS-T ?",
+   "a": "Des pneus tubeless de 11 pouces, type kart, de 130 mm de large. La cote complète varie selon les fiches : vérifie l'inscription sur le flanc avant de commander."
+  },
+  {
+   "q": "La Weped SS-T est-elle légale en France ?",
+   "a": "Seulement si elle ne dépasse pas 25 km/h sur la voie publique. Ses 110 km/h annoncés relèvent du circuit fermé ; circuler débridé sur route est interdit et dangereux avec une machine de ce poids."
+  },
+  {
+   "q": "Combien pèse la Weped SS-T ?",
+   "a": "52 kg selon PIE Technologie et Solution Trottinette, 60 kg sur la balance de Scooter.guide. Dans les deux cas, elle ne se porte pas."
+  },
+  {
+   "q": "Combien de temps pour recharger la SS-T ?",
+   "a": "Environ 15 heures selon PIE Technologie avec le chargeur d'origine, 21 heures selon Scooter.guide avec le chargeur standard, 7,5 heures avec un chargeur rapide."
+  }
+ ],
+ "sources": [
+  {
+   "label": "PIE Technologie — Weped SS-T",
+   "url": "https://pietechnologie.com/products/trottinette-electrique-weeped-ss-t-30000w-72v-45ah"
+  },
+  {
+   "label": "Solution Trottinette — Weped SS-T",
+   "url": "https://solution-trottinette.fr/trottinette-electrique/weped-ss-t-72v-45ah"
+  },
+  {
+   "label": "Scooter.guide — Weped SST review",
+   "url": "https://scooter.guide/weped-sst-review/"
+  },
+  {
+   "label": "Personal Electric Transport — Weped SS",
+   "url": "https://personalelectrictransport.co.uk/shop/electric-scooters/weped-ss/"
+  }
+ ]
+}

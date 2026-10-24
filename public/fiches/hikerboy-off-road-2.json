@@ -1,0 +1,121 @@
+{
+ "displayName": "Hikerboy Off-Road 2",
+ "metaTitle": "Hikerboy Off-Road 2 : trottinette 3 roues, fiche",
+ "metaDescription": "Hikerboy Off-Road 2 : trottinette 3 roues, 500 W, batterie 48 V 18 Ah, roue avant 10 pouces tubeless, deux roues arrière 6 pouces, 27 kg. Fiche et FAQ.",
+ "intro": [
+  "La Hikerboy Off-Road 2 est une trottinette à trois roues : une roue avant de 10 pouces tubeless et deux roues arrière de 6 pouces avec chambre à air. Un moteur de 500 W entraîne la roue avant, alimenté par une batterie de 48 V et 18 Ah, selon Hikerboy.",
+  "Elle pèse 27 kg, accepte 120 kg et freine avec des disques à l'avant et à l'arrière, plus un freinage électronique. Hikerboy annonce 40 km d'autonomie et 9 heures de charge. Une selle est proposée en option, et le guidon se règle en hauteur selon Trottinettes Valais."
+ ],
+ "specs": [
+  [
+   "Moteur",
+   "500 W, entraînement par la roue avant"
+  ],
+  [
+   "Vitesse",
+   "25 km/h sur la voie publique ; 40 km/h annoncés par Hikerboy sur route privée"
+  ],
+  [
+   "Autonomie annoncée",
+   "jusqu'à 40 km"
+  ],
+  [
+   "Batterie",
+   "48 V, 18 Ah (18,2 Ah chez certains revendeurs), environ 864 Wh (54,6 V en fin de charge)"
+  ],
+  [
+   "Poids",
+   "27 kg"
+  ],
+  [
+   "Charge max",
+   "120 kg"
+  ],
+  [
+   "Roues",
+   "avant 10 pouces tubeless ; deux roues arrière de 6 pouces à chambre à air"
+  ],
+  [
+   "Freins",
+   "disque avant + disques arrière + eABS"
+  ],
+  [
+   "Suspension",
+   "double à l'avant, suspension arrière"
+  ],
+  [
+   "Étanchéité",
+   "IP54 (selon Trottinettes Valais et Fuel Outlets)"
+  ],
+  [
+   "Temps de charge",
+   "9 h selon Hikerboy (8 à 10 h selon les revendeurs)"
+  ]
+ ],
+ "pros": [
+  "Trois roues : plus stable qu'une trottinette classique sur sol irrégulier (Electrotraveller).",
+  "Batterie de 18 Ah, la plus grosse de la gamme Hikerboy (Hikerboy).",
+  "Freins à disque devant et derrière (Hikerboy).",
+  "Selle disponible en option (Trottinettes Valais)."
+ ],
+ "cons": [
+  "27 kg : se transporte en voiture, pas dans les transports en commun.",
+  "Charge longue, 8 à 10 heures.",
+  "Trois tailles de pneus et chambres à surveiller (10 et 6 pouces).",
+  "Prix élevé : 1 290 € sans la selle à sa sortie en 2024."
+ ],
+ "parts": [],
+ "care": [
+  "Les deux roues arrière de 6 pouces ont des chambres à air : gonfle-les à la même pression, sinon la trottinette tire d'un côté.",
+  "Contrôle la roue avant tubeless toutes les deux semaines, c'est elle qui porte le moteur et le freinage principal.",
+  "Après une sortie en chemin, nettoie les disques arrière : la boue et les gravillons rayent les plaquettes."
+ ],
+ "price": {
+  "text": "1 290 € sans l'option selle, prix annoncé à la présentation en juillet 2024. Prix susceptible de varier.",
+  "source": "YouTube — présentation Hikerboy Off-Road 2"
+ },
+ "faq": [
+  {
+   "q": "Quelle taille de pneus pour la Hikerboy Off-Road 2 ?",
+   "a": "Une roue avant de 10 pouces tubeless et deux roues arrière de 6 pouces à chambre à air. Avant de commander, relève la cote exacte sur le flanc de chaque pneu."
+  },
+  {
+   "q": "L'Off-Road 2 peut-elle rouler à 40 km/h ?",
+   "a": "Ces 40 km/h sont annoncés pour une route privée. Sur la voie publique, la réglementation française impose 25 km/h au maximum, et un débridage pour y circuler est interdit."
+  },
+  {
+   "q": "Peut-on ajouter une selle à l'Off-Road 2 ?",
+   "a": "Oui, Hikerboy et ses revendeurs la proposent en option."
+  },
+  {
+   "q": "Combien de temps pour recharger la Hikerboy Off-Road 2 ?",
+   "a": "Environ 9 heures selon Hikerboy, avec un chargeur de 54,6 V et 2 A. Une charge de nuit suffit."
+  },
+  {
+   "q": "Quelle roue est motrice sur l'Off-Road 2 ?",
+   "a": "La roue avant, selon Electrotraveller et Trottinettes Valais. Les deux roues arrière ne sont pas motorisées."
+  }
+ ],
+ "sources": [
+  {
+   "label": "Hikerboy — Off-Road 2",
+   "url": "https://hikerboyscooter.com/fr/products/off-road-2"
+  },
+  {
+   "label": "Electrotraveller — Hikerboy Off Road 2",
+   "url": "https://electrotraveller.com/fr/scooters-electriques/hikerboy-off-road-2/?v=08a4415e9d59"
+  },
+  {
+   "label": "Trottinettes Valais — Hikerboy Off-Road 2",
+   "url": "https://www.trottinettes-valais.ch/product/22992635/hikerboy-off-road-2"
+  },
+  {
+   "label": "Fuel Outlets — Hikerboy Off-Road 2",
+   "url": "https://fueloutlets.com/produkt/hikerboy-off-road-2-three-wheel-electric-scooter/"
+  },
+  {
+   "label": "YouTube — Présentation Hikerboy Off-Road 2",
+   "url": "https://www.youtube.com/watch?v=TT8uroBWJes"
+  }
+ ]
+}

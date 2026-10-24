@@ -1,0 +1,131 @@
+{
+  "displayName": "Hikerboy Curtis",
+  "metaTitle": "Hikerboy Curtis 350 W : fiche technique et entretien",
+  "metaDescription": "Hikerboy Curtis : 350 W (680 W en pointe), batterie 36 V 10,4 Ah, roues 10 pouces à chambre à air, fourche suspendue, IPX5. Fiche, avis et FAQ.",
+  "intro": [
+    "La Hikerboy Curtis est le modèle d'entrée de la famille Curtis, que le manuel appelle aussi Curtis Lite. Elle garde un seul moteur arrière de 350 W et une batterie de 36 V, là où les Curtis Plus, Dual et Dual Pro passent en 48 V.",
+    "Hikerboy annonce 40 km d'autonomie, 25 km/h et un indice IPX5. Elle roule sur des pneus de 10 pouces à chambre à air, freine avec un tambour devant et un disque derrière, et ajoute une fourche suspendue et des clignotants avant et arrière, selon AMHMA et Cleanrider."
+  ],
+  "specs": [
+    [
+      "Moteur",
+      "350 W nominaux ; 680 W en pointe selon le manuel Hikerboy"
+    ],
+    [
+      "Vitesse",
+      "25 km/h (20 km/h sur les versions suisse et allemande)"
+    ],
+    [
+      "Autonomie annoncée",
+      "jusqu'à 40 km ; 30 km d'autonomie typique dans le manuel"
+    ],
+    [
+      "Batterie",
+      "36 V, 10,4 Ah, soit 374 Wh (42 V en fin de charge)"
+    ],
+    [
+      "Poids",
+      "15 à 16,7 kg selon les fiches"
+    ],
+    [
+      "Charge max",
+      "100 kg"
+    ],
+    [
+      "Roues",
+      "10 pouces, pneus gonflables avec chambre à air"
+    ],
+    [
+      "Freins",
+      "tambour avant + disque arrière + frein électronique"
+    ],
+    [
+      "Suspension",
+      "avant, à ressort"
+    ],
+    [
+      "Étanchéité",
+      "IPX5"
+    ],
+    [
+      "Temps de charge",
+      "5 h"
+    ]
+  ],
+  "pros": [
+    "Fourche suspendue, rare à ce niveau de prix (Cleanrider).",
+    "Indice IPX5 et clignotants avant et arrière (Hikerboy).",
+    "Prise en main facile et bonne stabilité (test Nébur Gaming).",
+    "Poids contenu, autour de 15 à 16,7 kg selon les fiches."
+  ],
+  "cons": [
+    "Freinage jugé trop progressif lors d'un arrêt d'urgence (test Nébur Gaming).",
+    "Application peu fiable et mal traduite selon le même testeur.",
+    "Confort limité sur les routes abîmées malgré la fourche.",
+    "Poids annoncé différemment d'une fiche à l'autre (15, 16, 16,5 ou 16,7 kg)."
+  ],
+  "parts": [],
+  "care": [
+    "Vérifie la pression de tes chambres à air chaque semaine : sur une 10 pouces, un pneu mou use la chambre et fait chuter l'autonomie.",
+    "Garde un œil sur le jeu de la fourche avant : si tu entends un claquement sur les bordures, fais contrôler l'axe et les ressorts.",
+    "Après une sortie sous la pluie, laisse sécher ta Curtis à l'intérieur avant de la recharger, même si elle est certifiée IPX5."
+  ],
+  "price": {
+    "text": "Prix constaté chez AMHMA : 569 € ; 579 € chez Speedbikes Nîmes. Prix susceptible de varier.",
+    "source": "amhma.fr, speedbikes.fr"
+  },
+  "faq": [
+    {
+      "q": "Quelle différence entre la Hikerboy Curtis et la Curtis Plus ?",
+      "a": "La Curtis reste en 36 V avec un moteur de 350 W. La Curtis Plus passe en 48 V avec un moteur de 500 W (1 000 W en pointe) et pèse environ 19 kg."
+    },
+    {
+      "q": "Quelle taille de pneu pour la Hikerboy Curtis ?",
+      "a": "Des pneus de 10 pouces à chambre à air. Les fiches ne donnent pas la cote complète : relève-la sur le flanc de ton pneu avant d'acheter une chambre ou un pneu."
+    },
+    {
+      "q": "La Hikerboy Curtis roule-t-elle sous la pluie ?",
+      "a": "Elle est certifiée IPX5, donc protégée contre les projections d'eau. Évite tout de même les flaques profondes et ne la lave jamais au jet haute pression."
+    },
+    {
+      "q": "À quelle vitesse roule la Hikerboy Curtis ?",
+      "a": "Elle est réglée d'usine à 25 km/h, la limite autorisée en France pour une trottinette sur route et piste cyclable. Les versions suisse et allemande sont limitées à 20 km/h."
+    },
+    {
+      "q": "Quelle autonomie réelle pour la Hikerboy Curtis ?",
+      "a": "Hikerboy affiche 40 km sur sa fiche, mais son propre manuel retient 30 km en usage typique. Le poids du pilote et le relief font varier ce chiffre."
+    }
+  ],
+  "sources": [
+    {
+      "label": "Hikerboy — Curtis",
+      "url": "https://hikerboyscooter.com/products/curtis"
+    },
+    {
+      "label": "Hikerboy — spécifications Curtis",
+      "url": "https://hikerboyscooter.com/fr/pages/curtis-product-specifications"
+    },
+    {
+      "label": "Manuel Hikerboy Curtis (manuals.plus)",
+      "url": "https://manuals.plus/hikerboy/ddhbc16neb-dual-electric-scooter-manual"
+    },
+    {
+      "label": "AMHMA — Hikerboy Curtis 36V 10,4Ah",
+      "url": "https://www.amhma.fr/store/HIKERBOY-Curtis-36V-10-4Ah-p771500174"
+    },
+    {
+      "label": "Cleanrider — Hikerboy Curtis",
+      "url": "https://www.cleanrider.com/actus/suspendue-tres-bien-equipee-et-abordable-cette-trottinette-electrique-peut-faire-mal-a-xiaomi/"
+    },
+    {
+      "label": "YouTube — Test Hikerboy Curtis (Nébur Gaming)",
+      "url": "https://www.youtube.com/watch?v=gnZlrTg2tO8"
+    }
+  ],
+  "video": {
+    "id": "gnZlrTg2tO8",
+    "title": "TEST HIKERBOY CURTIS : UNE TROTINETTE CITADINE ETANCHE ET LEGERE",
+    "channel": "Nébur",
+    "uploadDate": "2025-05-24"
+  }
+}
