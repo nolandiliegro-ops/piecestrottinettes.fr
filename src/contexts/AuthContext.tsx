@@ -2,6 +2,7 @@ import React, { createContext, useContext, useEffect, useState, ReactNode } from
 import { User, Session } from '@supabase/supabase-js';
 import { supabase } from '@/integrations/supabase/client';
 import { setUserContext, clearUserContext } from '@/lib/sentry';
+import { getStoredRef } from '@/lib/referral';
 
 interface Profile {
   id: string;
@@ -134,6 +135,7 @@ export const AuthProvider = ({ children }: AuthProviderProps) => {
         data: {
           display_name: displayName,
           marketing_consent: marketingConsent,
+          referred_by: getStoredRef(),
         },
       },
     });

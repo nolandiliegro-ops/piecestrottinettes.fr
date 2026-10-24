@@ -13,6 +13,7 @@ import { HeaderScooterDropdownProvider } from "@/contexts/HeaderScooterDropdownC
 import CartSidebar from "@/components/cart/CartSidebar";
 import MobileNav from "@/components/navigation/MobileNav";
 import SkotWidget from "@/components/skot/SkotWidget";
+import ReferralCapture from "@/components/ReferralCapture";
 import SpotlightCommand from "@/components/search/SpotlightCommand";
 import ProtectedRoute from "./components/auth/ProtectedRoute";
 import PrelaunchModal from "./components/launch/PrelaunchModal";
@@ -100,6 +101,7 @@ function App() {
                 <MobileNav />
                 <PrelaunchModal />
                 <SkotWidget />
+                <ReferralCapture />
             <Suspense fallback={<PageLoader />}>
             <Routes>
             <Route path="/" element={<Index />} />

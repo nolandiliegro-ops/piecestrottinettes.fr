@@ -9,6 +9,7 @@ import { formatPrice } from "@/lib/formatPrice";
 import { useState, useEffect } from "react";
 import { supabase } from "@/integrations/supabase/client";
 import { STANDARD_DELIVERY, DELAY_STOCK, fetchCartDelay } from "@/lib/delivery";
+import { checkPromoCode, getStoredRef } from "@/lib/referral";
 
 interface CartItem {
   id: string;
@@ -113,49 +114,56 @@ const OrderConfirmationModal = ({
   const finalTotalTTC = totals.totalTTC + selectedDelivery.price;
   const finalLoyaltyPoints = Math.floor(finalTotalTTC);
 
-  const handleApplyPromo = async () => {
-    if (!promoCode.trim()) return;
+  // Vérification par la base (check_promo_code) : marche aussi pour les invités, mêmes règles que le serveur.
+  const applyPromo = async (raw: string, silent = false) => {
+    const code = raw.toUpperCase().trim();
+    if (!code) return;
     setPromoLoading(true);
-    setPromoError("");
+    if (!silent) setPromoError("");
 
     try {
-      const { data, error } = await supabase
-        .from("promo_codes")
-        .select("code, discount_type, discount_value, active, max_uses, current_uses, expires_at")
-        .eq("code", promoCode.toUpperCase().trim())
-        .eq("active", true)
-        .maybeSingle();
+      const res = await checkPromoCode(code);
 
-      if (error || !data) {
-        setPromoError("Code promo invalide");
+      if (!res || !res.valid || !res.code || !res.discount_type) {
+        if (!silent) {
+          setPromoError(
+            res?.reason === "expire" ? "Ce code promo a expiré"
+            : res?.reason === "epuise" ? "Ce code promo n'est plus disponible"
+            : res?.reason === "pas_encore" ? "Ce code promo n'est pas encore actif"
+            : res === null ? "Erreur de validation"
+            : "Code promo invalide"
+          );
+        }
         setPromoApplied(null);
         return;
       }
 
-      if (data.expires_at && new Date(data.expires_at) < new Date()) {
-        setPromoError("Ce code promo a expiré");
-        setPromoApplied(null);
-        return;
-      }
-
-      if (data.max_uses !== null && data.current_uses >= data.max_uses) {
-        setPromoError("Ce code promo n'est plus disponible");
-        setPromoApplied(null);
-        return;
-      }
-
+      setPromoCode(res.code);
       setPromoApplied({
-        code: data.code,
-        discount_type: data.discount_type,
-        discount_value: Number(data.discount_value),
+        code: res.code,
+        discount_type: res.discount_type,
+        discount_value: Number(res.discount_value),
       });
       setPromoError("");
     } catch {
-      setPromoError("Erreur de validation");
+      if (!silent) setPromoError("Erreur de validation");
     } finally {
       setPromoLoading(false);
     }
   };
+
+  const handleApplyPromo = () => applyPromo(promoCode);
+
+  // Lien créateur (?ref=CODE, mémorisé 30 j) : code pré-rempli et appliqué à l'ouverture, sans message d'erreur s'il ne vaut plus rien.
+  useEffect(() => {
+    if (!isOpen || promoApplied || promoCode) return;
+    const ref = getStoredRef();
+    if (ref) {
+      setPromoCode(ref);
+      applyPromo(ref, true);
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [isOpen]);
 
   const handleRemovePromo = () => {
     setPromoApplied(null);
