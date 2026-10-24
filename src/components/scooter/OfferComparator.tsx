@@ -121,6 +121,115 @@ const Title = ({ name }: { name: string }) => (
   <h2 className="text-xl lg:text-2xl uppercase" style={{ fontFamily: UNB, fontWeight: 900, fontStyle: "italic", color: CARBON }}>Où acheter {laName(name)}</h2>
 );
 
+
+// ─── Arguments du vendeur + mention de commission (24/10, Nolan : « bien intégré, joli, avec une petite phrase ») ───
+// Propositions derrière ?atouts=1..5 ; sans paramètre : la carte d'aujourd'hui. Arguments = partners.ts (`atouts`,
+// lus sur le site de chaque boutique). Mention de commission remontée juste sous le bouton, au tutoiement du site.
+export type AtoutsLook = 1 | 2 | 3 | 4 | 5;
+export const atoutsParam = (): AtoutsLook | null => {
+  if (typeof window === "undefined") return null;
+  const sp = new URLSearchParams(window.location.search);
+  if (!sp.has("atouts")) return null;
+  const n = Number(sp.get("atouts"));
+  return n >= 1 && n <= 5 ? (n as AtoutsLook) : null;
+};
+const lower1 = (t: string) => t.charAt(0).toLowerCase() + t.slice(1);
+const joinFr = (xs: string[]) => xs.length <= 1 ? xs.join("") : `${xs.slice(0, -1).join(", ")} et ${xs[xs.length - 1]}`;
+const Commission = () => (
+  <p className="flex items-start gap-1.5 text-sm text-gray-500 leading-snug">
+    <ShieldCheck className="w-4 h-4 mt-0.5 shrink-0" />
+    <span>Si tu achètes par ce lien, on touche une petite commission, sans surcoût pour toi.</span>
+  </p>
+);
+const Checks = ({ items }: { items: string[] }) => (
+  <ul className="grid gap-1.5">
+    {items.map((t) => <li key={t} className="flex items-start gap-2 text-sm font-semibold" style={{ color: CARBON }}><Check className="w-4 h-4 mt-0.5 shrink-0" style={{ color: GREEN }} />{t}</li>)}
+  </ul>
+);
+
+const BestCard = ({ best, n, brandLogo }: { best: Offer; n: number; brandLogo: string | null }) => {
+  const look = atoutsParam();
+  const at = best.p.atouts ?? [];
+  const head = (
+    <div className="flex items-center gap-4 min-w-0">
+      <Logo o={best} brandLogo={brandLogo} size={72} />
+      <div className="min-w-0">
+        <p className="text-sm font-extrabold uppercase tracking-[0.14em]" style={{ color: GREEN }}>{n > 1 ? "Le meilleur prix en ce moment" : "Prix en ce moment"}</p>
+        <p className="mt-1"><PriceTxt o={best} size="text-4xl" /></p>
+        <p className="mt-1 text-base font-bold" style={{ color: CARBON }}>chez {best.p.name} <span className="ml-2"><Stock o={best} /></span></p>
+      </div>
+    </div>
+  );
+  const btn = <TagLink href={best.affiliate_url} line1="Voir l'offre" line2={`chez ${best.p.name}`} full />;
+  const card = "mt-3 p-5 lg:p-7 bg-white grid lg:grid-cols-[1fr_auto] gap-5 items-center";
+  const cardStyle = { clipPath: CHAMFER_L, boxShadow: `inset 0 0 0 2px ${CARBON}` };
+
+  // Sans paramètre (ou boutique sans argument) : la carte d'aujourd'hui.
+  if (!look || at.length === 0) return <div className={card} style={cardStyle}>{head}{btn}</div>;
+
+  // 1 · Coches : « Choisie par l'atelier » + les arguments en liste cochée sous le prix, mention sous le bouton.
+  if (look === 1) return (
+    <div className={card} style={cardStyle}>
+      <div className="grid gap-4 min-w-0">
+        {head}
+        <div className="lg:pl-[88px] grid gap-2">
+          <p className="text-sm font-extrabold uppercase tracking-[0.14em] text-gray-500">Choisie par l'atelier</p>
+          <Checks items={at} />
+        </div>
+      </div>
+      <div className="grid gap-2 lg:w-[300px]">{btn}<Commission /></div>
+    </div>
+  );
+
+  // 2 · Pastilles : les arguments en étiquettes sur une ligne, en bas de la carte.
+  if (look === 2) return (
+    <div className={card} style={cardStyle}>
+      {head}
+      <div className="grid gap-2 lg:w-[300px]">{btn}<Commission /></div>
+      <ul className="lg:col-span-2 flex flex-wrap gap-2">
+        {at.map((t) => <li key={t} className="inline-flex items-center gap-1.5 min-h-[36px] px-3 text-sm font-bold" style={{ background: STONE, color: CARBON }}><Check className="w-4 h-4" style={{ color: GREEN }} />{t}</li>)}
+      </ul>
+    </div>
+  );
+
+  // 3 · Bandeau atelier : une bande sous la carte, « Pourquoi elle » puis les arguments séparés par des points.
+  if (look === 3) return (
+    <div className="mt-3 bg-white" style={cardStyle}>
+      <div className="p-5 lg:p-7 grid lg:grid-cols-[1fr_auto] gap-5 items-center">{head}<div className="grid gap-2 lg:w-[300px]">{btn}<Commission /></div></div>
+      <div className="px-5 lg:px-7 py-3 flex flex-wrap items-baseline gap-x-3 gap-y-1" style={{ background: "#FBF8F3", borderTop: `2px dashed ${LINE}` }}>
+        <span className="text-sm font-extrabold uppercase tracking-[0.14em]" style={{ color: GREEN }}>Pourquoi elle</span>
+        <span className="text-sm font-semibold" style={{ color: CARBON }}>{at.join(" · ")}</span>
+      </div>
+    </div>
+  );
+
+  // 4 · Mot de l'atelier : une phrase écrite, signée, sous le nom de la boutique.
+  if (look === 4) return (
+    <div className={card} style={cardStyle}>
+      <div className="grid gap-4 min-w-0">
+        {head}
+        <blockquote className="lg:ml-[88px] pl-4 text-base italic leading-relaxed" style={{ borderLeft: `3px solid ${GREEN}`, color: "#374151" }}>
+          « On l'a choisie : {joinFr(at.map(lower1))}. »
+          <span className="block mt-1 text-sm not-italic font-bold" style={{ color: CARBON }}>L'atelier piecestrottinettes</span>
+        </blockquote>
+      </div>
+      <div className="grid gap-2 lg:w-[300px]">{btn}<Commission /></div>
+    </div>
+  );
+
+  // 5 · Sous le bouton : les arguments collés au bouton, là où se décide le clic.
+  return (
+    <div className={card} style={cardStyle}>
+      {head}
+      <div className="grid gap-3 lg:w-[320px]">
+        {btn}
+        <div className="px-1"><Checks items={at} /></div>
+        <Commission />
+      </div>
+    </div>
+  );
+};
+
 export const OfferComparator = ({ look, name, fallback = null }: { look: ComparoLook; name: string; fallback?: ReactNode }) => {
   const buy = useBuyCtx();
   const { data: offers } = useOffers(buy.scooterId);
@@ -184,17 +293,7 @@ export const OfferComparator = ({ look, name, fallback = null }: { look: Comparo
   if (look === 3) return (
     <div id="ou-acheter" className="mt-10 scroll-mt-24" style={{ fontFamily: FONT }}>
       <Title name={name} />
-      <div className="mt-3 p-5 lg:p-7 bg-white grid lg:grid-cols-[1fr_auto] gap-5 items-center" style={{ clipPath: CHAMFER_L, boxShadow: `inset 0 0 0 2px ${CARBON}` }}>
-        <div className="flex items-center gap-4 min-w-0">
-          <Logo o={best} brandLogo={brandLogo} size={72} />
-          <div className="min-w-0">
-            <p className="text-sm font-extrabold uppercase tracking-[0.14em]" style={{ color: GREEN }}>{n > 1 ? "Le meilleur prix en ce moment" : "Prix en ce moment"}</p>
-            <p className="mt-1"><PriceTxt o={best} size="text-4xl" /></p>
-            <p className="mt-1 text-base font-bold" style={{ color: CARBON }}>chez {best.p.name} <span className="ml-2"><Stock o={best} /></span></p>
-          </div>
-        </div>
-        <TagLink href={best.affiliate_url} line1="Voir l'offre" line2={`chez ${best.p.name}`} full />
-      </div>
+      <BestCard best={best} n={n} brandLogo={brandLogo} />
       {others.length > 0 && (
         <ul className="mt-2">
           {others.map((o) => (
@@ -210,7 +309,7 @@ export const OfferComparator = ({ look, name, fallback = null }: { look: Comparo
         </ul>
       )}
       <div className="mt-4 flex flex-wrap items-center gap-3"><Alert /><Checked offers={offers} /></div>
-      <div className="mt-3"><Legal /></div>
+      <div className="mt-3">{atoutsParam() ? <p className="text-sm text-gray-500">Prix relevés chaque nuit sur les boutiques, à vérifier au moment de l'achat.</p> : <Legal />}</div>
     </div>
   );
 
