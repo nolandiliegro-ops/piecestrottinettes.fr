@@ -8,7 +8,7 @@ import { useSelectedScooter } from "@/contexts/ScooterContext";
 import { useCart } from "@/hooks/useCart";
 import { useSpotlight } from "@/contexts/SpotlightContext";
 import SkotAvatar from "@/components/skot/SkotAvatar";
-import { skotEnabled } from "@/lib/skot";
+import { skotEnabled, skotHiddenOn } from "@/lib/skot";
 
 export type BarreBasVariant = 1 | 2 | 3 | 4 | 5;
 export const readBarreBasVariant = (): BarreBasVariant | null => {
@@ -222,7 +222,9 @@ const V5 = () => {
   const m = useNavModel();
   const { pieces, garage, trottes, cart } = m.items;
   // Tant que SKOT est caché au public (avant l'ouverture), le bouton retombe sur la recherche.
-  const openSkot = () => { buzz(); if (skotEnabled()) window.dispatchEvent(new Event("skot:open")); else m.openSpotlight(); };
+  const { pathname } = useLocation();
+  // Panier, paiement, admin : SKOT y est masqué → le bouton central ouvre la recherche.
+  const openSkot = () => { buzz(); if (skotEnabled() && !skotHiddenOn(pathname)) window.dispatchEvent(new Event("skot:open")); else m.openSpotlight(); };
   const Tab = ({ it }: { it: Item }) => {
     const on = m.active(it);
     const I = it.icon;

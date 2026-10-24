@@ -3,7 +3,7 @@
 import { supabase } from "@/integrations/supabase/client";
 
 /** Ouverture publique du widget. Tant que false : visible seulement avec ?skot=1 (par onglet), ?skot=0 le referme. */
-export const SKOT_PUBLIC = false;
+export const SKOT_PUBLIC = true; // 24/10 : Nolan met SKOT en public (banc 24/26 vert à 16h30).
 
 export function skotEnabled(): boolean {
   if (SKOT_PUBLIC) return true;
