@@ -12,6 +12,7 @@ import { SpotlightProvider } from "@/contexts/SpotlightContext";
 import { HeaderScooterDropdownProvider } from "@/contexts/HeaderScooterDropdownContext";
 import CartSidebar from "@/components/cart/CartSidebar";
 import MobileNav from "@/components/navigation/MobileNav";
+import SkotWidget from "@/components/skot/SkotWidget";
 import SpotlightCommand from "@/components/search/SpotlightCommand";
 import ProtectedRoute from "./components/auth/ProtectedRoute";
 import PrelaunchModal from "./components/launch/PrelaunchModal";
@@ -96,6 +97,7 @@ function App() {
                 <CartSidebar />
                 <MobileNav />
                 <PrelaunchModal />
+                <SkotWidget />
             <Suspense fallback={<PageLoader />}>
             <Routes>
             <Route path="/" element={<Index />} />
