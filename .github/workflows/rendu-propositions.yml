@@ -46,9 +46,9 @@ jobs:
         run: |
           git config user.name "rendu-bot"; git config user.email "rendu-bot@users.noreply.github.com"
           LOTS=$(tr '\n' ' ' < config/rendu/_run.txt)
-          cp -r out /tmp/out
+          cp -r out /tmp/out && rm -rf out
           git fetch origin donnees-rendu || true
-          if git rev-parse --verify origin/donnees-rendu > /dev/null 2>&1; then git checkout -B donnees-rendu origin/donnees-rendu; else git checkout --orphan donnees-rendu; git rm -rf . > /dev/null; fi
+          if git rev-parse --verify origin/donnees-rendu > /dev/null 2>&1; then git checkout -f -B donnees-rendu origin/donnees-rendu; else git checkout --orphan donnees-rendu; git rm -rf . > /dev/null; fi
           mkdir -p out && cp -r /tmp/out/* out/
           git add out && git commit -m "rendu: $LOTS" || echo "rien à committer"
           git push origin donnees-rendu
