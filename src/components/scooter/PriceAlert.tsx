@@ -5,6 +5,7 @@
    par le lien du mail (/alerte-prix/stop). */
 import { FormEvent, useId, useState } from "react";
 import { Bell, Check, Loader2 } from "lucide-react";
+import { useQuery } from "@tanstack/react-query";
 import { supabase } from "@/integrations/supabase/client";
 import { useAuth } from "@/hooks/useAuth";
 import { laName } from "@/lib/article";
@@ -87,15 +88,49 @@ export const PriceAlertForm = ({ label = "Préviens-moi si le prix baisse" }: { 
   );
 };
 
+// 24/10 (recette Dualtron Mini) : une trottinette ARRÊTÉE (commercial_status, 2 sources) n'aura jamais de prix neuf :
+// lui promettre une alerte serait un mensonge. On dit qu'elle n'est plus vendue neuve et on renvoie vers ses pièces.
+const useCommercialStatus = (scooterId?: string | null) => useQuery({
+  queryKey: ["scooter-commercial-status", scooterId],
+  enabled: !!scooterId,
+  staleTime: 10 * 60 * 1000,
+  queryFn: async () => {
+    // Colonne hors des types générés : cast local.
+    const { data } = await (supabase as unknown as { from: (t: string) => { select: (c: string) => { eq: (k: string, v: string) => { maybeSingle: () => Promise<{ data: { commercial_status: string | null } | null }> } } } })
+      .from("scooter_models").select("commercial_status").eq("id", scooterId as string).maybeSingle();
+    return data?.commercial_status ?? null;
+  },
+});
+
 /** Fiche sans vendeur partenaire : pas de cul-de-sac, on propose d'être prévenu au premier prix relevé. */
-export const NoOfferBlock = ({ name }: { name: string }) => (
-  <div id="ou-acheter" className="mt-10 scroll-mt-24" style={{ fontFamily: FONT }}>
-    <h2 className="text-xl lg:text-2xl uppercase" style={{ fontFamily: UNB, fontWeight: 900, fontStyle: "italic", color: CARBON }}>Où acheter {laName(name)}</h2>
-    <div className="mt-3 p-5 lg:p-7 bg-white grid gap-4" style={{ clipPath: CHAMFER_L, boxShadow: `inset 0 0 0 1px ${LINE}` }}>
-      <p className="text-base text-[#374151] leading-relaxed max-w-2xl">
-        On n'a pas encore de vendeur qu'on recommande pour cette trottinette. Laisse ton mail : on te prévient dès qu'on relève un prix chez une boutique sérieuse.
-      </p>
-      <PriceAlertForm label="Préviens-moi dès qu'un prix est relevé" />
+export const NoOfferBlock = ({ name }: { name: string }) => {
+  const { scooterId } = useBuyCtx();
+  const { data: status, isLoading } = useCommercialStatus(scooterId);
+  const stopped = status === "arretee";
+  return (
+    <div id="ou-acheter" className="mt-10 scroll-mt-24" style={{ fontFamily: FONT }}>
+      <h2 className="text-xl lg:text-2xl uppercase" style={{ fontFamily: UNB, fontWeight: 900, fontStyle: "italic", color: CARBON }}>
+        {stopped ? "Plus vendue neuve" : `Où acheter ${laName(name)}`}
+      </h2>
+      <div className="mt-3 p-5 lg:p-7 bg-white grid gap-4" style={{ clipPath: CHAMFER_L, boxShadow: `inset 0 0 0 1px ${LINE}` }}>
+        {isLoading && scooterId ? <div className="h-12" aria-hidden /> : stopped ? (
+          <>
+            <p className="text-base text-[#374151] leading-relaxed max-w-2xl">
+              Le fabricant ne vend plus {laName(name)} neuve. Si tu en as une, on a les pièces pour la garder en forme.
+            </p>
+            <a href="#showroom-parts" className="inline-flex items-center justify-center min-h-[44px] w-fit px-5 text-sm font-bold text-white bg-green-700 hover:bg-green-800">
+              Voir ses pièces compatibles
+            </a>
+          </>
+        ) : (
+          <>
+            <p className="text-base text-[#374151] leading-relaxed max-w-2xl">
+              On n'a pas encore de vendeur qu'on recommande pour cette trottinette. Laisse ton mail : on te prévient dès qu'on relève un prix chez une boutique sérieuse.
+            </p>
+            <PriceAlertForm label="Préviens-moi dès qu'un prix est relevé" />
+          </>
+        )}
+      </div>
     </div>
-  </div>
-);
+  );
+};
