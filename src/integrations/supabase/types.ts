@@ -7531,12 +7531,95 @@ export type Database = {
         }
         Relationships: []
       }
+      skot_eval_runs: {
+        Row: {
+          detail: Json | null
+          finished_at: string | null
+          id: string
+          kind: string
+          n_cas: number | null
+          n_juge_rouge: number | null
+          n_rouge: number | null
+          n_vert: number | null
+          run_day: string | null
+          started_at: string
+          tokens: number | null
+          version: string | null
+        }
+        Insert: {
+          detail?: Json | null
+          finished_at?: string | null
+          id?: string
+          kind: string
+          n_cas?: number | null
+          n_juge_rouge?: number | null
+          n_rouge?: number | null
+          n_vert?: number | null
+          run_day?: string | null
+          started_at?: string
+          tokens?: number | null
+          version?: string | null
+        }
+        Update: {
+          detail?: Json | null
+          finished_at?: string | null
+          id?: string
+          kind?: string
+          n_cas?: number | null
+          n_juge_rouge?: number | null
+          n_rouge?: number | null
+          n_vert?: number | null
+          run_day?: string | null
+          started_at?: string
+          tokens?: number | null
+          version?: string | null
+        }
+        Relationships: []
+      }
+      skot_flags: {
+        Row: {
+          conversation_id: string
+          created_at: string
+          extrait: string | null
+          id: string
+          message_id: string
+          note: string | null
+          source: string
+          traite: boolean
+          type: string
+        }
+        Insert: {
+          conversation_id: string
+          created_at?: string
+          extrait?: string | null
+          id?: string
+          message_id: string
+          note?: string | null
+          source: string
+          traite?: boolean
+          type: string
+        }
+        Update: {
+          conversation_id?: string
+          created_at?: string
+          extrait?: string | null
+          id?: string
+          message_id?: string
+          note?: string | null
+          source?: string
+          traite?: boolean
+          type?: string
+        }
+        Relationships: []
+      }
       skot_messages: {
         Row: {
           content: string
           conversation_id: string
           created_at: string
           escalated: boolean
+          feedback: number | null
+          feedback_at: string | null
           has_image: boolean
           id: string
           ip_hash: string | null
@@ -7545,6 +7628,8 @@ export type Database = {
           page_slug: string | null
           page_type: string | null
           role: string
+          tokens_cache_read: number | null
+          tokens_cache_write: number | null
           tokens_in: number | null
           tokens_out: number | null
           tool_calls: Json | null
@@ -7555,6 +7640,8 @@ export type Database = {
           conversation_id: string
           created_at?: string
           escalated?: boolean
+          feedback?: number | null
+          feedback_at?: string | null
           has_image?: boolean
           id?: string
           ip_hash?: string | null
@@ -7563,6 +7650,8 @@ export type Database = {
           page_slug?: string | null
           page_type?: string | null
           role: string
+          tokens_cache_read?: number | null
+          tokens_cache_write?: number | null
           tokens_in?: number | null
           tokens_out?: number | null
           tool_calls?: Json | null
@@ -7573,6 +7662,8 @@ export type Database = {
           conversation_id?: string
           created_at?: string
           escalated?: boolean
+          feedback?: number | null
+          feedback_at?: string | null
           has_image?: boolean
           id?: string
           ip_hash?: string | null
@@ -7581,6 +7672,8 @@ export type Database = {
           page_slug?: string | null
           page_type?: string | null
           role?: string
+          tokens_cache_read?: number | null
+          tokens_cache_write?: number | null
           tokens_in?: number | null
           tokens_out?: number | null
           tool_calls?: Json | null
