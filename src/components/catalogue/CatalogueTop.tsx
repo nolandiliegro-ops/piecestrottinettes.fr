@@ -267,8 +267,9 @@ const CatTile = ({ c, img, n, on, onClick, size = "md" }: { c: CatCategory | nul
  * 3 TICKET    · carte beige foncé à bord pointillé, étiquette « GUIDE » noire, 3 repères en puces
  * 4 PLEIN     · grande carte photo pleine largeur (famille détourée sur fond pierre), titre en gros dessous
  * 5 LIGNE     · titre Unbounded italique souligné vert + flèche, sans cadre (le plus littéral : plus gros, pas plus chargé) */
+// 25/10 : Nolan a retenu la 1 « Affiche » = défaut ; ?guide=0 = ancien bandeau blanc, 2..5 = autres propositions.
 const readGuideLook = (): number => {
-  try { const n = Number(new URLSearchParams(window.location.search).get("guide")); return n >= 1 && n <= 5 ? n : 0; } catch { return 0; }
+  try { const v = new URLSearchParams(window.location.search).get("guide"); if (v === null) return 1; const n = Number(v); return n >= 0 && n <= 5 ? n : 1; } catch { return 1; }
 };
 const TIPS: Record<string, string[]> = {
   pneus: ["La taille sur le flanc", "Gonflable, tubeless ou plein", "La valve droite ou coudée"],
