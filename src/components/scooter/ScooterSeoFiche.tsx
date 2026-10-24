@@ -13,6 +13,7 @@ import { Link } from "react-router-dom";
 import { ArrowRight, Check, ChevronDown, Minus, Play, ShieldCheck } from "lucide-react";
 import { partnerOf } from "@/config/partners";
 import type { ScooterSeo } from "@/data/scooterSeo";
+import { laName } from "@/lib/article";
 
 const UNB = "'Unbounded', sans-serif";
 const FONT = "'Plus Jakarta Sans', sans-serif";
@@ -93,7 +94,7 @@ const PartnerV1 = ({ url, name, p }: { url: string; name: string; p: P }) => (
     <div className="grid lg:grid-cols-[1fr_auto] gap-4 lg:gap-8 items-center">
       <div>
         <div className="flex flex-wrap items-center gap-2">
-          <p className="text-sm font-extrabold uppercase tracking-[0.14em]" style={{ color: GREEN }}>Où acheter la {name}</p>
+          <p className="text-sm font-extrabold uppercase tracking-[0.14em]" style={{ color: GREEN }}>Où acheter {laName(name)}</p>
           <span className="inline-flex items-center gap-1 px-2 py-0.5 text-[14px] font-extrabold uppercase tracking-wider text-white" style={{ background: GREEN }}>
             <Check className="w-3.5 h-3.5" /> Partenaire officiel
           </span>
@@ -120,7 +121,7 @@ const PartnerV1 = ({ url, name, p }: { url: string; name: string; p: P }) => (
 /** 2 · Vitrine carbone : fond carbone, nom en grand, atouts en colonnes, bouton blanc. */
 const PartnerV2 = ({ url, name, p }: { url: string; name: string; p: P }) => (
   <div id="ou-acheter" className="mt-8 scroll-mt-24 p-6 lg:p-9 text-white" style={{ background: CARBON, clipPath: CHAMFER, fontFamily: FONT }}>
-    <p className="text-sm font-extrabold uppercase tracking-[0.18em]" style={{ color: "#8FC29F" }}>Partenaire officiel · Où acheter la {name}</p>
+    <p className="text-sm font-extrabold uppercase tracking-[0.18em]" style={{ color: "#8FC29F" }}>Partenaire officiel · Où acheter {laName(name)}</p>
     <div className="mt-3 grid lg:grid-cols-[1fr_auto] gap-5 lg:gap-10 items-end">
       <div>
         <Wordmark p={p} size="text-4xl lg:text-6xl" color="#FFFFFF" />
@@ -150,7 +151,7 @@ const PartnerV3 = ({ url, name, p }: { url: string; name: string; p: P }) => (
     </div>
     <div className="p-5 lg:p-7 grid lg:grid-cols-[1.1fr_1fr] gap-6 lg:gap-10">
       <div>
-        <p className="text-sm font-extrabold uppercase tracking-[0.14em]" style={{ color: GREEN }}>Où acheter la {name}</p>
+        <p className="text-sm font-extrabold uppercase tracking-[0.14em]" style={{ color: GREEN }}>Où acheter {laName(name)}</p>
         <Wordmark p={p} size="text-3xl lg:text-5xl" />
         <p className="mt-3 text-base text-[#374151] leading-relaxed max-w-xl">
           On vend les pièces, pas les trottinettes. Pour la machine, on t'envoie chez {p.name}{p.tagline ? ` : ${p.tagline.charAt(0).toLowerCase()}${p.tagline.slice(1)}` : ""}.
@@ -180,7 +181,7 @@ const PartnerV4 = ({ url, name, p }: { url: string; name: string; p: P }) => (
       <span className="text-2xl font-light text-gray-400">×</span>
       <span className="text-lg lg:text-2xl uppercase" style={{ fontFamily: UNB, fontWeight: 900, fontStyle: "italic", color: CARBON }}>{p.name}</span>
     </div>
-    <p className="mt-2 text-sm font-extrabold uppercase tracking-[0.16em] text-gray-500">Partenaires · Où acheter la {name}</p>
+    <p className="mt-2 text-sm font-extrabold uppercase tracking-[0.16em] text-gray-500">Partenaires · Où acheter {laName(name)}</p>
     {p.perks && (
       <ul className="mt-5 grid sm:grid-cols-3 gap-3">
         {p.perks.map((k) => (
@@ -216,7 +217,7 @@ const PartnerV5 = ({ url, name, p }: { url: string; name: string; p: P }) => (
     <div className="flex items-start gap-4 lg:gap-7">
       <Seal />
       <div className="min-w-0">
-        <p className="text-sm font-extrabold uppercase tracking-[0.14em]" style={{ color: GREEN }}>Où acheter la {name}</p>
+        <p className="text-sm font-extrabold uppercase tracking-[0.14em]" style={{ color: GREEN }}>Où acheter {laName(name)}</p>
         <p className="mt-1 text-2xl lg:text-4xl uppercase leading-tight" style={{ fontFamily: UNB, fontWeight: 900, fontStyle: "italic", color: CARBON }}>Achète-la chez {p.name}</p>
         {p.tagline && <p className="mt-2 text-base font-semibold" style={{ color: CARBON }}>{p.tagline}</p>}
       </div>
@@ -258,7 +259,7 @@ const PerkChips = ({ p }: { p: P }) => p.perks ? (
 /** 6 · Badge : carte blanche, logo à gauche, tampon « Partenaire officiel », atouts en dessous. */
 const PartnerV6 = ({ url, name, p }: { url: string; name: string; p: P }) => (
   <div id="ou-acheter" className="mt-8 scroll-mt-24 bg-white p-5 lg:p-7" style={{ clipPath: CHAMFER, boxShadow: `inset 4px 0 0 ${GREEN}, inset 0 0 0 1px ${LINE}`, fontFamily: FONT }}>
-    <p className="text-sm font-extrabold uppercase tracking-[0.14em]" style={{ color: GREEN }}>Où acheter la {name}</p>
+    <p className="text-sm font-extrabold uppercase tracking-[0.14em]" style={{ color: GREEN }}>Où acheter {laName(name)}</p>
     <div className="mt-3 flex flex-col lg:flex-row lg:items-center gap-4 lg:gap-8">
       <div className="flex items-center gap-4 min-w-0 flex-1">
         <PartnerLogo p={p} size={88} />
@@ -278,7 +279,7 @@ const PartnerV6 = ({ url, name, p }: { url: string; name: string; p: P }) => (
 /** 7 · Coupure pierre : bande pleine largeur couleur pierre (la coupure sans noir), logo centré en grand. */
 const PartnerV7 = ({ url, name, p }: { url: string; name: string; p: P }) => (
   <div id="ou-acheter" className="mt-10 scroll-mt-24 -mx-4 lg:mx-0 px-5 py-8 lg:px-10 lg:py-10 text-center" style={{ background: "#EDE6DA", fontFamily: FONT, clipPath: CHAMFER }}>
-    <p className="text-sm font-extrabold uppercase tracking-[0.16em]" style={{ color: GREEN }}>Où acheter la {name}</p>
+    <p className="text-sm font-extrabold uppercase tracking-[0.16em]" style={{ color: GREEN }}>Où acheter {laName(name)}</p>
     <div className="mt-4 flex justify-center"><PartnerLogo p={p} size={112} /></div>
     <div className="mt-3 flex justify-center"><OfficialTag /></div>
     <p className="mt-2 text-3xl lg:text-4xl uppercase leading-tight" style={{ fontFamily: UNB, fontWeight: 900, fontStyle: "italic", color: CARBON }}>{p.name}</p>
@@ -297,7 +298,7 @@ const PartnerV8 = ({ url, name, p }: { url: string; name: string; p: P }) => (
       <OfficialTag />
     </div>
     <div className="p-5 lg:p-7">
-      <p className="text-sm font-extrabold uppercase tracking-[0.14em]" style={{ color: GREEN }}>Où acheter la {name}</p>
+      <p className="text-sm font-extrabold uppercase tracking-[0.14em]" style={{ color: GREEN }}>Où acheter {laName(name)}</p>
       <p className="mt-1 text-2xl lg:text-3xl uppercase leading-tight" style={{ fontFamily: UNB, fontWeight: 900, fontStyle: "italic", color: CARBON }}>Notre partenaire : {p.name}</p>
       {p.tagline && <p className="mt-1 text-base font-semibold" style={{ color: CARBON }}>{p.tagline}</p>}
       {p.perks && (
@@ -320,7 +321,7 @@ const PartnerV9 = ({ url, name, p }: { url: string; name: string; p: P }) => (
     <PartnerLogo p={p} size={80} />
     <div className="min-w-0">
       <div className="flex flex-wrap items-center gap-2">
-        <p className="text-sm font-extrabold uppercase tracking-[0.14em]" style={{ color: GREEN }}>Où acheter la {name}</p>
+        <p className="text-sm font-extrabold uppercase tracking-[0.14em]" style={{ color: GREEN }}>Où acheter {laName(name)}</p>
         <OfficialTag />
       </div>
       <p className="mt-1 text-xl lg:text-2xl uppercase" style={{ fontFamily: UNB, fontWeight: 900, fontStyle: "italic", color: CARBON }}>Notre partenaire : {p.name}</p>
@@ -352,7 +353,7 @@ export const PartnerBlock = ({ url, name }: { url: string; name: string }) => {
   return (
     <div id="ou-acheter" className="mt-8 scroll-mt-24 bg-white p-5 lg:p-6 grid lg:grid-cols-[1fr_auto] gap-4 lg:gap-8 items-center" style={{ clipPath: CHAMFER, boxShadow: `inset 4px 0 0 ${GREEN}, inset 0 0 0 1px ${LINE}`, fontFamily: FONT }}>
       <div>
-        <p className="text-sm font-extrabold uppercase tracking-[0.14em]" style={{ color: GREEN }}>Où acheter la {name}</p>
+        <p className="text-sm font-extrabold uppercase tracking-[0.14em]" style={{ color: GREEN }}>Où acheter {laName(name)}</p>
         <p className="mt-1 text-xl lg:text-2xl uppercase" style={{ fontFamily: UNB, fontWeight: 900, fontStyle: "italic", color: CARBON }}>Notre partenaire : {p.name}</p>
         <p className="mt-2 text-base text-[#374151] leading-relaxed max-w-2xl">
           On vend les pièces, pas les trottinettes. Pour la machine, on te conseille un vendeur que notre atelier connaît.
@@ -390,9 +391,9 @@ const Tabs = ({ seo, affiliateLink }: { seo: ScooterSeo; affiliateLink?: string 
     <section id="tout-savoir" className="px-4 py-10 lg:px-8 scroll-mt-20" style={{ backgroundColor: "#FAFAF8" }}>
       <div className="mx-auto max-w-6xl border-t pt-8" style={{ borderColor: LINE }}>
         <h2 className="text-2xl lg:text-3xl uppercase leading-tight" style={{ fontFamily: UNB, fontWeight: 900, fontStyle: "italic", letterSpacing: "-0.02em", color: CARBON }}>
-          Tout savoir sur la {name}
+          Tout savoir sur {laName(name)}
         </h2>
-        <div role="tablist" aria-label={`Tout savoir sur la ${name}`} className="mt-5 -mx-4 px-4 lg:mx-0 lg:px-0 flex gap-2 overflow-x-auto pb-1 [scrollbar-width:none]">
+        <div role="tablist" aria-label={`Tout savoir sur ${laName(name)}`} className="mt-5 -mx-4 px-4 lg:mx-0 lg:px-0 flex gap-2 overflow-x-auto pb-1 [scrollbar-width:none]">
           {tabs.map((t) => (
             <button key={t.k} type="button" role="tab" aria-selected={tab === t.k} aria-controls={`ts-${t.k}`} onClick={() => setTab(t.k)}
               className="shrink-0 min-h-[44px] px-4 text-sm font-extrabold uppercase tracking-wider transition-colors"
@@ -459,7 +460,7 @@ const Tabs = ({ seo, affiliateLink }: { seo: ScooterSeo; affiliateLink?: string 
           </div>
 
           <div id="ts-entretien" role="tabpanel" className={panel("entretien")}>
-            <h3 className={h3} style={{ color: GREEN }}>Entretien de la {name}</h3>
+            <h3 className={h3} style={{ color: GREEN }}>Entretien de {laName(name)}</h3>
             <ul className="space-y-3">
               {seo.care.map((c) => (
                 <li key={c} className="flex gap-3 text-base text-[#374151] leading-relaxed">

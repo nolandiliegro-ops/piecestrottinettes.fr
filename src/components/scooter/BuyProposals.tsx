@@ -7,6 +7,7 @@
 import { ArrowRight, Check, ExternalLink, ShieldCheck, Tag } from "lucide-react";
 import { createContext, useContext } from "react";
 import { partnerOf, type Partner } from "@/config/partners";
+import { laName } from "@/lib/article";
 
 const UNB = "'Unbounded', sans-serif";
 const FONT = "'Plus Jakarta Sans', sans-serif";
@@ -198,7 +199,7 @@ export const PartnerBlockNew = ({ look, url, name, price, brandLogo }: { look: B
   const p = partnerOf(url);
   if (!p) return null;
   const logo = partnerLogo(p, brandLogo);
-  const kicker = <p className="text-sm font-extrabold uppercase tracking-[0.16em]" style={{ color: GREEN }}>Où acheter la {name}</p>;
+  const kicker = <p className="text-sm font-extrabold uppercase tracking-[0.16em]" style={{ color: GREEN }}>Où acheter {laName(name)}</p>;
   const perks = p.perks ? (
     <ul className="mt-4 grid sm:grid-cols-3 gap-2">
       {p.perks.map((k) => (
@@ -247,7 +248,7 @@ export const PartnerBlockNew = ({ look, url, name, price, brandLogo }: { look: B
       <div className="grid lg:grid-cols-[auto_1fr_auto] gap-5 lg:gap-8 items-center">
         <Logo src={logo} p={p} size={88} />
         <div className="min-w-0">
-          <p className="text-sm font-extrabold uppercase tracking-[0.16em]" style={{ color: "#9BC4A7" }}>Où acheter la {name}</p>
+          <p className="text-sm font-extrabold uppercase tracking-[0.16em]" style={{ color: "#9BC4A7" }}>Où acheter {laName(name)}</p>
           <p className="mt-1 text-2xl lg:text-3xl uppercase leading-tight" style={{ fontFamily: UNB, fontWeight: 900, fontStyle: "italic" }}>{p.name}</p>
           <div className="mt-2"><Official p={p} dark /></div>
         </div>
@@ -261,7 +262,7 @@ export const PartnerBlockNew = ({ look, url, name, price, brandLogo }: { look: B
   if (look === 4) return (
     <div id="ou-acheter" className="mt-10 scroll-mt-24" style={{ fontFamily: FONT }}>
       <div className="flex items-end justify-between gap-3 mb-3">
-        <h2 className="text-xl lg:text-2xl uppercase" style={{ fontFamily: UNB, fontWeight: 900, fontStyle: "italic", color: CARBON }}>Où acheter la {name}</h2>
+        <h2 className="text-xl lg:text-2xl uppercase" style={{ fontFamily: UNB, fontWeight: 900, fontStyle: "italic", color: CARBON }}>Où acheter {laName(name)}</h2>
         <span className="hidden sm:inline text-sm text-gray-500">Vendeurs que l'atelier connaît</span>
       </div>
       <div className="bg-white grid grid-cols-[auto_1fr] lg:grid-cols-[auto_1fr_auto_auto] gap-4 items-center p-4 lg:p-5" style={{ clipPath: CHAMFER_L, boxShadow: `inset 4px 0 0 ${GREEN}, inset 0 0 0 1px ${LINE}` }}>

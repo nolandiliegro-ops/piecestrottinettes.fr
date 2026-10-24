@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { Play, Youtube } from "lucide-react";
+import { laName } from "@/lib/article";
 
 interface ScooterVideoProps {
   youtubeVideoId: string | null;
@@ -46,7 +47,7 @@ const ScooterVideo = ({ youtubeVideoId, scooterName }: ScooterVideoProps) => {
             className="text-center text-muted-foreground mt-4 flex items-center justify-center gap-2"
           >
             <Play className="w-4 h-4" />
-            Découvrez la {scooterName} en action
+            Découvrez {laName(scooterName)} en action
           </motion.p>
         </motion.div>
       </div>
