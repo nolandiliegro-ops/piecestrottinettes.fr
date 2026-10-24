@@ -155,6 +155,24 @@ export type Database = {
         }
         Relationships: []
       }
+      _backup_affiliate_ootd_20261024: {
+        Row: {
+          affiliate_link: string | null
+          id: string | null
+          slug: string | null
+        }
+        Insert: {
+          affiliate_link?: string | null
+          id?: string | null
+          slug?: string | null
+        }
+        Update: {
+          affiliate_link?: string | null
+          id?: string | null
+          slug?: string | null
+        }
+        Relationships: []
+      }
       _backup_affiliate_programs_20261024: {
         Row: {
           canal: string | null
@@ -2905,6 +2923,33 @@ export type Database = {
           disc_holes_code?: string | null
           disc_pcd_code?: string | null
           id?: string | null
+          slug?: string | null
+        }
+        Relationships: []
+      }
+      _backup_scooter_links_prices_20261024: {
+        Row: {
+          affiliate_link: string | null
+          id: string | null
+          price_checked_at: string | null
+          price_eur: number | null
+          price_source: string | null
+          slug: string | null
+        }
+        Insert: {
+          affiliate_link?: string | null
+          id?: string | null
+          price_checked_at?: string | null
+          price_eur?: number | null
+          price_source?: string | null
+          slug?: string | null
+        }
+        Update: {
+          affiliate_link?: string | null
+          id?: string | null
+          price_checked_at?: string | null
+          price_eur?: number | null
+          price_source?: string | null
           slug?: string | null
         }
         Relationships: []
@@ -6759,6 +6804,53 @@ export type Database = {
         }
         Relationships: []
       }
+      price_runs: {
+        Row: {
+          http_status: number | null
+          id: number
+          in_stock_read: boolean | null
+          offer_id: string
+          price_read: number | null
+          reason: string | null
+          request_id: number | null
+          run_at: string
+          url: string
+          written: boolean
+        }
+        Insert: {
+          http_status?: number | null
+          id?: number
+          in_stock_read?: boolean | null
+          offer_id: string
+          price_read?: number | null
+          reason?: string | null
+          request_id?: number | null
+          run_at?: string
+          url: string
+          written?: boolean
+        }
+        Update: {
+          http_status?: number | null
+          id?: number
+          in_stock_read?: boolean | null
+          offer_id?: string
+          price_read?: number | null
+          reason?: string | null
+          request_id?: number | null
+          run_at?: string
+          url?: string
+          written?: boolean
+        }
+        Relationships: [
+          {
+            foreignKeyName: "price_runs_offer_id_fkey"
+            columns: ["offer_id"]
+            isOneToOne: false
+            referencedRelation: "scooter_offers"
+            referencedColumns: ["id"]
+          },
+        ]
+      }
       profiles: {
         Row: {
           active_theme_key: string | null
@@ -7299,6 +7391,74 @@ export type Database = {
             isOneToOne: false
             referencedRelation: "fitment_tire_sections"
             referencedColumns: ["code"]
+          },
+        ]
+      }
+      scooter_offers: {
+        Row: {
+          affiliate_url: string
+          created_at: string
+          id: string
+          in_stock: boolean | null
+          is_active: boolean
+          last_status: string | null
+          merchant_host: string
+          notes: string | null
+          offer_type: string
+          price_checked_at: string | null
+          price_eur: number | null
+          price_max: number | null
+          product_url: string
+          scooter_model_id: string
+          source_kind: string
+          updated_at: string
+          variant_id: string | null
+        }
+        Insert: {
+          affiliate_url: string
+          created_at?: string
+          id?: string
+          in_stock?: boolean | null
+          is_active?: boolean
+          last_status?: string | null
+          merchant_host: string
+          notes?: string | null
+          offer_type?: string
+          price_checked_at?: string | null
+          price_eur?: number | null
+          price_max?: number | null
+          product_url: string
+          scooter_model_id: string
+          source_kind?: string
+          updated_at?: string
+          variant_id?: string | null
+        }
+        Update: {
+          affiliate_url?: string
+          created_at?: string
+          id?: string
+          in_stock?: boolean | null
+          is_active?: boolean
+          last_status?: string | null
+          merchant_host?: string
+          notes?: string | null
+          offer_type?: string
+          price_checked_at?: string | null
+          price_eur?: number | null
+          price_max?: number | null
+          product_url?: string
+          scooter_model_id?: string
+          source_kind?: string
+          updated_at?: string
+          variant_id?: string | null
+        }
+        Relationships: [
+          {
+            foreignKeyName: "scooter_offers_scooter_model_id_fkey"
+            columns: ["scooter_model_id"]
+            isOneToOne: false
+            referencedRelation: "scooter_models"
+            referencedColumns: ["id"]
           },
         ]
       }
@@ -7962,6 +8122,20 @@ export type Database = {
         Args: { ids: string[] }
         Returns: undefined
       }
+      refresh_prices_collect: {
+        Args: { p_write?: boolean }
+        Returns: {
+          ancien: number
+          decision: string
+          dispo: boolean
+          host: string
+          prix_lu: number
+          prix_max_lu: number
+          slug: string
+          statut: number
+        }[]
+      }
+      refresh_prices_send: { Args: never; Returns: number }
       search_parts_fuzzy: {
         Args: {
           p_category_ids?: string[]
