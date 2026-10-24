@@ -14,6 +14,312 @@ export type Database = {
   }
   public: {
     Tables: {
+      _backup_200x50_redelete_20_10: {
+        Row: {
+          auto_suggested: boolean | null
+          confidence_level: string | null
+          created_at: string | null
+          id: string | null
+          k: string | null
+          part_id: string | null
+          position: string | null
+          scooter_model_id: string | null
+          slug: string | null
+          suggestion_reason: string | null
+        }
+        Insert: {
+          auto_suggested?: boolean | null
+          confidence_level?: string | null
+          created_at?: string | null
+          id?: string | null
+          k?: string | null
+          part_id?: string | null
+          position?: string | null
+          scooter_model_id?: string | null
+          slug?: string | null
+          suggestion_reason?: string | null
+        }
+        Update: {
+          auto_suggested?: boolean | null
+          confidence_level?: string | null
+          created_at?: string | null
+          id?: string | null
+          k?: string | null
+          part_id?: string | null
+          position?: string | null
+          scooter_model_id?: string | null
+          slug?: string | null
+          suggestion_reason?: string | null
+        }
+        Relationships: []
+      }
+      _backup_6lite_cfg_20_10: {
+        Row: {
+          id: string | null
+          ncfg: number | null
+          saved_at: string | null
+          slug: string | null
+        }
+        Insert: {
+          id?: string | null
+          ncfg?: number | null
+          saved_at?: string | null
+          slug?: string | null
+        }
+        Update: {
+          id?: string | null
+          ncfg?: number | null
+          saved_at?: string | null
+          slug?: string | null
+        }
+        Relationships: []
+      }
+      _backup_affiliate_awin_20261022: {
+        Row: {
+          affiliate_link: string | null
+          id: string | null
+          saved_at: string | null
+          slug: string | null
+        }
+        Insert: {
+          affiliate_link?: string | null
+          id?: string | null
+          saved_at?: string | null
+          slug?: string | null
+        }
+        Update: {
+          affiliate_link?: string | null
+          id?: string | null
+          saved_at?: string | null
+          slug?: string | null
+        }
+        Relationships: []
+      }
+      _backup_affiliate_engwe_20261023: {
+        Row: {
+          affiliate_link: string | null
+          id: string | null
+          saved_at: string | null
+          slug: string | null
+        }
+        Insert: {
+          affiliate_link?: string | null
+          id?: string | null
+          saved_at?: string | null
+          slug?: string | null
+        }
+        Update: {
+          affiliate_link?: string | null
+          id?: string | null
+          saved_at?: string | null
+          slug?: string | null
+        }
+        Relationships: []
+      }
+      _backup_affiliate_haloknight_20261023: {
+        Row: {
+          affiliate_link: string | null
+          id: string | null
+          saved_at: string | null
+          slug: string | null
+        }
+        Insert: {
+          affiliate_link?: string | null
+          id?: string | null
+          saved_at?: string | null
+          slug?: string | null
+        }
+        Update: {
+          affiliate_link?: string | null
+          id?: string | null
+          saved_at?: string | null
+          slug?: string | null
+        }
+        Relationships: []
+      }
+      _backup_affiliate_links_20261024: {
+        Row: {
+          affiliate_link: string | null
+          id: string | null
+          slug: string | null
+        }
+        Insert: {
+          affiliate_link?: string | null
+          id?: string | null
+          slug?: string | null
+        }
+        Update: {
+          affiliate_link?: string | null
+          id?: string | null
+          slug?: string | null
+        }
+        Relationships: []
+      }
+      _backup_affiliate_programs_20261024: {
+        Row: {
+          canal: string | null
+          code_client: string | null
+          code_ref: string | null
+          commission: string | null
+          contact_email: string | null
+          contact_nom: string | null
+          created_at: string | null
+          id: string | null
+          id_marchand: string | null
+          lien_base: string | null
+          lien_motif: string | null
+          marque: string | null
+          notes: string | null
+          plateforme: string | null
+          priorite: string | null
+          statut: string | null
+          type: string | null
+          updated_at: string | null
+          url_inscription: string | null
+          url_paiements: string | null
+          url_tableau_de_bord: string | null
+        }
+        Insert: {
+          canal?: string | null
+          code_client?: string | null
+          code_ref?: string | null
+          commission?: string | null
+          contact_email?: string | null
+          contact_nom?: string | null
+          created_at?: string | null
+          id?: string | null
+          id_marchand?: string | null
+          lien_base?: string | null
+          lien_motif?: string | null
+          marque?: string | null
+          notes?: string | null
+          plateforme?: string | null
+          priorite?: string | null
+          statut?: string | null
+          type?: string | null
+          updated_at?: string | null
+          url_inscription?: string | null
+          url_paiements?: string | null
+          url_tableau_de_bord?: string | null
+        }
+        Update: {
+          canal?: string | null
+          code_client?: string | null
+          code_ref?: string | null
+          commission?: string | null
+          contact_email?: string | null
+          contact_nom?: string | null
+          created_at?: string | null
+          id?: string | null
+          id_marchand?: string | null
+          lien_base?: string | null
+          lien_motif?: string | null
+          marque?: string | null
+          notes?: string | null
+          plateforme?: string | null
+          priorite?: string | null
+          statut?: string | null
+          type?: string | null
+          updated_at?: string | null
+          url_inscription?: string | null
+          url_paiements?: string | null
+          url_tableau_de_bord?: string | null
+        }
+        Relationships: []
+      }
+      _backup_affiliate_programs_20261024b: {
+        Row: {
+          canal: string | null
+          code_client: string | null
+          code_ref: string | null
+          commission: string | null
+          contact_email: string | null
+          contact_nom: string | null
+          created_at: string | null
+          id: string | null
+          id_marchand: string | null
+          lien_base: string | null
+          lien_motif: string | null
+          marque: string | null
+          notes: string | null
+          plateforme: string | null
+          priorite: string | null
+          statut: string | null
+          type: string | null
+          updated_at: string | null
+          url_inscription: string | null
+          url_paiements: string | null
+          url_tableau_de_bord: string | null
+        }
+        Insert: {
+          canal?: string | null
+          code_client?: string | null
+          code_ref?: string | null
+          commission?: string | null
+          contact_email?: string | null
+          contact_nom?: string | null
+          created_at?: string | null
+          id?: string | null
+          id_marchand?: string | null
+          lien_base?: string | null
+          lien_motif?: string | null
+          marque?: string | null
+          notes?: string | null
+          plateforme?: string | null
+          priorite?: string | null
+          statut?: string | null
+          type?: string | null
+          updated_at?: string | null
+          url_inscription?: string | null
+          url_paiements?: string | null
+          url_tableau_de_bord?: string | null
+        }
+        Update: {
+          canal?: string | null
+          code_client?: string | null
+          code_ref?: string | null
+          commission?: string | null
+          contact_email?: string | null
+          contact_nom?: string | null
+          created_at?: string | null
+          id?: string | null
+          id_marchand?: string | null
+          lien_base?: string | null
+          lien_motif?: string | null
+          marque?: string | null
+          notes?: string | null
+          plateforme?: string | null
+          priorite?: string | null
+          statut?: string | null
+          type?: string | null
+          updated_at?: string | null
+          url_inscription?: string | null
+          url_paiements?: string | null
+          url_tableau_de_bord?: string | null
+        }
+        Relationships: []
+      }
+      _backup_affiliate_teverun_20261021: {
+        Row: {
+          affiliate_link: string | null
+          id: string | null
+          saved_at: string | null
+          slug: string | null
+        }
+        Insert: {
+          affiliate_link?: string | null
+          id?: string | null
+          saved_at?: string | null
+          slug?: string | null
+        }
+        Update: {
+          affiliate_link?: string | null
+          id?: string | null
+          saved_at?: string | null
+          slug?: string | null
+        }
+        Relationships: []
+      }
       _backup_alias_20260905: {
         Row: {
           created_at: string | null
@@ -62,6 +368,48 @@ export type Database = {
           amperage?: number | null
           id?: string | null
           saved_at?: string | null
+        }
+        Relationships: []
+      }
+      _backup_b01s_24_10: {
+        Row: {
+          fitment_specs: Json | null
+          id: string | null
+          saved_at: string | null
+          sku: string | null
+        }
+        Insert: {
+          fitment_specs?: Json | null
+          id?: string | null
+          saved_at?: string | null
+          sku?: string | null
+        }
+        Update: {
+          fitment_specs?: Json | null
+          id?: string | null
+          saved_at?: string | null
+          sku?: string | null
+        }
+        Relationships: []
+      }
+      _backup_batt_20_10: {
+        Row: {
+          id: string | null
+          saved_at: string | null
+          slug: string | null
+          voltage: number | null
+        }
+        Insert: {
+          id?: string | null
+          saved_at?: string | null
+          slug?: string | null
+          voltage?: number | null
+        }
+        Update: {
+          id?: string | null
+          saved_at?: string | null
+          slug?: string | null
+          voltage?: number | null
         }
         Relationships: []
       }
@@ -356,6 +704,48 @@ export type Database = {
         }
         Relationships: []
       }
+      _backup_cat_images_20261019: {
+        Row: {
+          id: string | null
+          image_url: string | null
+          name: string | null
+          slug: string | null
+        }
+        Insert: {
+          id?: string | null
+          image_url?: string | null
+          name?: string | null
+          slug?: string | null
+        }
+        Update: {
+          id?: string | null
+          image_url?: string | null
+          name?: string | null
+          slug?: string | null
+        }
+        Relationships: []
+      }
+      _backup_cecotec_m_24_10: {
+        Row: {
+          charge_connectors: string[] | null
+          id: string | null
+          saved_at: string | null
+          slug: string | null
+        }
+        Insert: {
+          charge_connectors?: string[] | null
+          id?: string | null
+          saved_at?: string | null
+          slug?: string | null
+        }
+        Update: {
+          charge_connectors?: string[] | null
+          id?: string | null
+          saved_at?: string | null
+          slug?: string | null
+        }
+        Relationships: []
+      }
       _backup_chambres_1025_jante6_20260929: {
         Row: {
           fitment_specs: Json | null
@@ -493,6 +883,111 @@ export type Database = {
           rim_diameter_code?: string | null
           slug?: string | null
           tire_family?: string | null
+          tire_section_code?: string | null
+        }
+        Relationships: []
+      }
+      _backup_cles_20_10: {
+        Row: {
+          charge_connectors: string[] | null
+          id: string | null
+          rim_diameter_code: string | null
+          saved_at: string | null
+          slug: string | null
+          tire_section_code: string | null
+        }
+        Insert: {
+          charge_connectors?: string[] | null
+          id?: string | null
+          rim_diameter_code?: string | null
+          saved_at?: string | null
+          slug?: string | null
+          tire_section_code?: string | null
+        }
+        Update: {
+          charge_connectors?: string[] | null
+          id?: string | null
+          rim_diameter_code?: string | null
+          saved_at?: string | null
+          slug?: string | null
+          tire_section_code?: string | null
+        }
+        Relationships: []
+      }
+      _backup_cles_20_10b: {
+        Row: {
+          charge_connectors: string[] | null
+          id: string | null
+          rim_diameter_code: string | null
+          saved_at: string | null
+          slug: string | null
+          tire_section_code: string | null
+        }
+        Insert: {
+          charge_connectors?: string[] | null
+          id?: string | null
+          rim_diameter_code?: string | null
+          saved_at?: string | null
+          slug?: string | null
+          tire_section_code?: string | null
+        }
+        Update: {
+          charge_connectors?: string[] | null
+          id?: string | null
+          rim_diameter_code?: string | null
+          saved_at?: string | null
+          slug?: string | null
+          tire_section_code?: string | null
+        }
+        Relationships: []
+      }
+      _backup_cles_20_10c: {
+        Row: {
+          charge_connectors: string[] | null
+          id: string | null
+          rim_diameter_code: string | null
+          saved_at: string | null
+          slug: string | null
+          tire_section_code: string | null
+        }
+        Insert: {
+          charge_connectors?: string[] | null
+          id?: string | null
+          rim_diameter_code?: string | null
+          saved_at?: string | null
+          slug?: string | null
+          tire_section_code?: string | null
+        }
+        Update: {
+          charge_connectors?: string[] | null
+          id?: string | null
+          rim_diameter_code?: string | null
+          saved_at?: string | null
+          slug?: string | null
+          tire_section_code?: string | null
+        }
+        Relationships: []
+      }
+      _backup_cles_20261020_lot1: {
+        Row: {
+          charge_connectors: string[] | null
+          id: string | null
+          rim_diameter_code: string | null
+          slug: string | null
+          tire_section_code: string | null
+        }
+        Insert: {
+          charge_connectors?: string[] | null
+          id?: string | null
+          rim_diameter_code?: string | null
+          slug?: string | null
+          tire_section_code?: string | null
+        }
+        Update: {
+          charge_connectors?: string[] | null
+          id?: string | null
+          rim_diameter_code?: string | null
+          slug?: string | null
           tire_section_code?: string | null
         }
         Relationships: []
@@ -947,6 +1442,30 @@ export type Database = {
         }
         Relationships: []
       }
+      _backup_ewm813_images_20_10: {
+        Row: {
+          id: string | null
+          image_url: string | null
+          images: Json | null
+          saved_at: string | null
+          sku: string | null
+        }
+        Insert: {
+          id?: string | null
+          image_url?: string | null
+          images?: Json | null
+          saved_at?: string | null
+          sku?: string | null
+        }
+        Update: {
+          id?: string | null
+          image_url?: string | null
+          images?: Json | null
+          saved_at?: string | null
+          sku?: string | null
+        }
+        Relationships: []
+      }
       _backup_galeries_20261016: {
         Row: {
           backed_up_at: string | null
@@ -1379,6 +1898,39 @@ export type Database = {
           id?: string | null
           slug?: string | null
           tire_family?: string | null
+        }
+        Relationships: []
+      }
+      _backup_part_compat_20_10: {
+        Row: {
+          auto_suggested: boolean | null
+          confidence_level: string | null
+          created_at: string | null
+          id: string | null
+          part_id: string | null
+          position: string | null
+          scooter_model_id: string | null
+          suggestion_reason: string | null
+        }
+        Insert: {
+          auto_suggested?: boolean | null
+          confidence_level?: string | null
+          created_at?: string | null
+          id?: string | null
+          part_id?: string | null
+          position?: string | null
+          scooter_model_id?: string | null
+          suggestion_reason?: string | null
+        }
+        Update: {
+          auto_suggested?: boolean | null
+          confidence_level?: string | null
+          created_at?: string | null
+          id?: string | null
+          part_id?: string | null
+          position?: string | null
+          scooter_model_id?: string | null
+          suggestion_reason?: string | null
         }
         Relationships: []
       }
@@ -1886,6 +2438,27 @@ export type Database = {
         }
         Relationships: []
       }
+      _backup_prises_xiaomi_20_10: {
+        Row: {
+          charge_connectors: string[] | null
+          id: string | null
+          saved_at: string | null
+          slug: string | null
+        }
+        Insert: {
+          charge_connectors?: string[] | null
+          id?: string | null
+          saved_at?: string | null
+          slug?: string | null
+        }
+        Update: {
+          charge_connectors?: string[] | null
+          id?: string | null
+          saved_at?: string | null
+          slug?: string | null
+        }
+        Relationships: []
+      }
       _backup_prix_regle_20261017: {
         Row: {
           backed_up_at: string | null
@@ -1907,6 +2480,27 @@ export type Database = {
           price?: number | null
           price_override?: boolean | null
           sku?: string | null
+        }
+        Relationships: []
+      }
+      _backup_pub_scooters_20261019: {
+        Row: {
+          backed_up_at: string | null
+          id: string | null
+          name: string | null
+          published: boolean | null
+        }
+        Insert: {
+          backed_up_at?: string | null
+          id?: string | null
+          name?: string | null
+          published?: boolean | null
+        }
+        Update: {
+          backed_up_at?: string | null
+          id?: string | null
+          name?: string | null
+          published?: boolean | null
         }
         Relationships: []
       }
@@ -1988,6 +2582,27 @@ export type Database = {
           id?: string | null
           published?: boolean | null
           slug?: string | null
+        }
+        Relationships: []
+      }
+      _backup_ref_prises_20_10: {
+        Row: {
+          code: string | null
+          label_client: string | null
+          note: string | null
+          saved_at: string | null
+        }
+        Insert: {
+          code?: string | null
+          label_client?: string | null
+          note?: string | null
+          saved_at?: string | null
+        }
+        Update: {
+          code?: string | null
+          label_client?: string | null
+          note?: string | null
+          saved_at?: string | null
         }
         Relationships: []
       }
@@ -2486,6 +3101,24 @@ export type Database = {
         }
         Relationships: []
       }
+      _backup_top_moment_20261019: {
+        Row: {
+          id: string | null
+          is_top_moment: boolean | null
+          slug: string | null
+        }
+        Insert: {
+          id?: string | null
+          is_top_moment?: boolean | null
+          slug?: string | null
+        }
+        Update: {
+          id?: string | null
+          is_top_moment?: boolean | null
+          slug?: string | null
+        }
+        Relationships: []
+      }
       _backup_unpub_cst_20261017: {
         Row: {
           backed_up_at: string | null
@@ -2504,6 +3137,33 @@ export type Database = {
           id?: string | null
           published?: boolean | null
           sku?: string | null
+        }
+        Relationships: []
+      }
+      _backup_urbanglide_20_10: {
+        Row: {
+          charge_connectors: string[] | null
+          disc_diameter_code: string | null
+          disc_holes_code: string | null
+          disc_pcd_code: string | null
+          id: string | null
+          slug: string | null
+        }
+        Insert: {
+          charge_connectors?: string[] | null
+          disc_diameter_code?: string | null
+          disc_holes_code?: string | null
+          disc_pcd_code?: string | null
+          id?: string | null
+          slug?: string | null
+        }
+        Update: {
+          charge_connectors?: string[] | null
+          disc_diameter_code?: string | null
+          disc_holes_code?: string | null
+          disc_pcd_code?: string | null
+          id?: string | null
+          slug?: string | null
         }
         Relationships: []
       }
@@ -2558,6 +3218,30 @@ export type Database = {
         }
         Relationships: []
       }
+      _backup_xiaomi6_20_10: {
+        Row: {
+          charge_connectors: string[] | null
+          id: string | null
+          saved_at: string | null
+          slug: string | null
+          voltage: number | null
+        }
+        Insert: {
+          charge_connectors?: string[] | null
+          id?: string | null
+          saved_at?: string | null
+          slug?: string | null
+          voltage?: number | null
+        }
+        Update: {
+          charge_connectors?: string[] | null
+          id?: string | null
+          saved_at?: string | null
+          slug?: string | null
+          voltage?: number | null
+        }
+        Relationships: []
+      }
       _bak_battery_configs_1810: {
         Row: {
           amperage: number | null
@@ -2579,6 +3263,243 @@ export type Database = {
           id?: string | null
           scooter_model_id?: string | null
           voltage?: number | null
+        }
+        Relationships: []
+      }
+      _bak_blackcat_1910: {
+        Row: {
+          attributes: Json | null
+          category_id: string | null
+          characteristics: string | null
+          compatibility_source: string | null
+          created_at: string | null
+          description: string | null
+          difficulty_level: number | null
+          ean: string | null
+          electrical_specs: Json | null
+          estimated_install_time_minutes: number | null
+          fitment_specs: Json | null
+          id: string | null
+          image_url: string | null
+          images: Json | null
+          is_featured: boolean | null
+          meta_description: string | null
+          meta_title: string | null
+          min_stock_alert: number | null
+          name: string | null
+          price: number | null
+          price_override: boolean | null
+          published: boolean | null
+          required_tools: string[] | null
+          search_document: string | null
+          sku: string | null
+          slug: string | null
+          slug_locked_at: string | null
+          stock_quantity: number | null
+          technical_metadata: Json | null
+          updated_at: string | null
+          youtube_video_id: string | null
+        }
+        Insert: {
+          attributes?: Json | null
+          category_id?: string | null
+          characteristics?: string | null
+          compatibility_source?: string | null
+          created_at?: string | null
+          description?: string | null
+          difficulty_level?: number | null
+          ean?: string | null
+          electrical_specs?: Json | null
+          estimated_install_time_minutes?: number | null
+          fitment_specs?: Json | null
+          id?: string | null
+          image_url?: string | null
+          images?: Json | null
+          is_featured?: boolean | null
+          meta_description?: string | null
+          meta_title?: string | null
+          min_stock_alert?: number | null
+          name?: string | null
+          price?: number | null
+          price_override?: boolean | null
+          published?: boolean | null
+          required_tools?: string[] | null
+          search_document?: string | null
+          sku?: string | null
+          slug?: string | null
+          slug_locked_at?: string | null
+          stock_quantity?: number | null
+          technical_metadata?: Json | null
+          updated_at?: string | null
+          youtube_video_id?: string | null
+        }
+        Update: {
+          attributes?: Json | null
+          category_id?: string | null
+          characteristics?: string | null
+          compatibility_source?: string | null
+          created_at?: string | null
+          description?: string | null
+          difficulty_level?: number | null
+          ean?: string | null
+          electrical_specs?: Json | null
+          estimated_install_time_minutes?: number | null
+          fitment_specs?: Json | null
+          id?: string | null
+          image_url?: string | null
+          images?: Json | null
+          is_featured?: boolean | null
+          meta_description?: string | null
+          meta_title?: string | null
+          min_stock_alert?: number | null
+          name?: string | null
+          price?: number | null
+          price_override?: boolean | null
+          published?: boolean | null
+          required_tools?: string[] | null
+          search_document?: string | null
+          sku?: string | null
+          slug?: string | null
+          slug_locked_at?: string | null
+          stock_quantity?: number | null
+          technical_metadata?: Json | null
+          updated_at?: string | null
+          youtube_video_id?: string | null
+        }
+        Relationships: []
+      }
+      _bak_ch1025_links_1910: {
+        Row: {
+          auto_suggested: boolean | null
+          confidence_level: string | null
+          created_at: string | null
+          id: string | null
+          part_id: string | null
+          position: string | null
+          scooter_model_id: string | null
+          suggestion_reason: string | null
+        }
+        Insert: {
+          auto_suggested?: boolean | null
+          confidence_level?: string | null
+          created_at?: string | null
+          id?: string | null
+          part_id?: string | null
+          position?: string | null
+          scooter_model_id?: string | null
+          suggestion_reason?: string | null
+        }
+        Update: {
+          auto_suggested?: boolean | null
+          confidence_level?: string | null
+          created_at?: string | null
+          id?: string | null
+          part_id?: string | null
+          position?: string | null
+          scooter_model_id?: string | null
+          suggestion_reason?: string | null
+        }
+        Relationships: []
+      }
+      _bak_ch1025_parts_1910: {
+        Row: {
+          attributes: Json | null
+          category_id: string | null
+          characteristics: string | null
+          compatibility_source: string | null
+          created_at: string | null
+          description: string | null
+          difficulty_level: number | null
+          ean: string | null
+          electrical_specs: Json | null
+          estimated_install_time_minutes: number | null
+          fitment_specs: Json | null
+          id: string | null
+          image_url: string | null
+          images: Json | null
+          is_featured: boolean | null
+          meta_description: string | null
+          meta_title: string | null
+          min_stock_alert: number | null
+          name: string | null
+          price: number | null
+          price_override: boolean | null
+          published: boolean | null
+          required_tools: string[] | null
+          search_document: string | null
+          sku: string | null
+          slug: string | null
+          slug_locked_at: string | null
+          stock_quantity: number | null
+          technical_metadata: Json | null
+          updated_at: string | null
+          youtube_video_id: string | null
+        }
+        Insert: {
+          attributes?: Json | null
+          category_id?: string | null
+          characteristics?: string | null
+          compatibility_source?: string | null
+          created_at?: string | null
+          description?: string | null
+          difficulty_level?: number | null
+          ean?: string | null
+          electrical_specs?: Json | null
+          estimated_install_time_minutes?: number | null
+          fitment_specs?: Json | null
+          id?: string | null
+          image_url?: string | null
+          images?: Json | null
+          is_featured?: boolean | null
+          meta_description?: string | null
+          meta_title?: string | null
+          min_stock_alert?: number | null
+          name?: string | null
+          price?: number | null
+          price_override?: boolean | null
+          published?: boolean | null
+          required_tools?: string[] | null
+          search_document?: string | null
+          sku?: string | null
+          slug?: string | null
+          slug_locked_at?: string | null
+          stock_quantity?: number | null
+          technical_metadata?: Json | null
+          updated_at?: string | null
+          youtube_video_id?: string | null
+        }
+        Update: {
+          attributes?: Json | null
+          category_id?: string | null
+          characteristics?: string | null
+          compatibility_source?: string | null
+          created_at?: string | null
+          description?: string | null
+          difficulty_level?: number | null
+          ean?: string | null
+          electrical_specs?: Json | null
+          estimated_install_time_minutes?: number | null
+          fitment_specs?: Json | null
+          id?: string | null
+          image_url?: string | null
+          images?: Json | null
+          is_featured?: boolean | null
+          meta_description?: string | null
+          meta_title?: string | null
+          min_stock_alert?: number | null
+          name?: string | null
+          price?: number | null
+          price_override?: boolean | null
+          published?: boolean | null
+          required_tools?: string[] | null
+          search_document?: string | null
+          sku?: string | null
+          slug?: string | null
+          slug_locked_at?: string | null
+          stock_quantity?: number | null
+          technical_metadata?: Json | null
+          updated_at?: string | null
+          youtube_video_id?: string | null
         }
         Relationships: []
       }
@@ -2642,6 +3563,237 @@ export type Database = {
           published?: boolean | null
           sku?: string | null
           t?: string | null
+        }
+        Relationships: []
+      }
+      _bak_desc_chambres_2010: {
+        Row: {
+          description: string | null
+          id: string | null
+          saved_at: string | null
+          slug: string | null
+        }
+        Insert: {
+          description?: string | null
+          id?: string | null
+          saved_at?: string | null
+          slug?: string | null
+        }
+        Update: {
+          description?: string | null
+          id?: string | null
+          saved_at?: string | null
+          slug?: string | null
+        }
+        Relationships: []
+      }
+      _bak_desc_chargeurs_2010: {
+        Row: {
+          description: string | null
+          id: string | null
+          saved_at: string | null
+          slug: string | null
+          updated_at: string | null
+        }
+        Insert: {
+          description?: string | null
+          id?: string | null
+          saved_at?: string | null
+          slug?: string | null
+          updated_at?: string | null
+        }
+        Update: {
+          description?: string | null
+          id?: string | null
+          saved_at?: string | null
+          slug?: string | null
+          updated_at?: string | null
+        }
+        Relationships: []
+      }
+      _bak_desc_disques_2010: {
+        Row: {
+          description: string | null
+          id: string | null
+          saved_at: string | null
+          slug: string | null
+          updated_at: string | null
+        }
+        Insert: {
+          description?: string | null
+          id?: string | null
+          saved_at?: string | null
+          slug?: string | null
+          updated_at?: string | null
+        }
+        Update: {
+          description?: string | null
+          id?: string | null
+          saved_at?: string | null
+          slug?: string | null
+          updated_at?: string | null
+        }
+        Relationships: []
+      }
+      _bak_desc_pilotes_2010: {
+        Row: {
+          description: string | null
+          id: string | null
+          image_url: string | null
+          saved_at: string | null
+          slug: string | null
+        }
+        Insert: {
+          description?: string | null
+          id?: string | null
+          image_url?: string | null
+          saved_at?: string | null
+          slug?: string | null
+        }
+        Update: {
+          description?: string | null
+          id?: string | null
+          image_url?: string | null
+          saved_at?: string | null
+          slug?: string | null
+        }
+        Relationships: []
+      }
+      _bak_desc_plaquettes_2010: {
+        Row: {
+          description: string | null
+          id: string | null
+          saved_at: string | null
+          slug: string | null
+          updated_at: string | null
+        }
+        Insert: {
+          description?: string | null
+          id?: string | null
+          saved_at?: string | null
+          slug?: string | null
+          updated_at?: string | null
+        }
+        Update: {
+          description?: string | null
+          id?: string | null
+          saved_at?: string | null
+          slug?: string | null
+          updated_at?: string | null
+        }
+        Relationships: []
+      }
+      _bak_desc_pneus_2010: {
+        Row: {
+          description: string | null
+          id: string | null
+          saved_at: string | null
+          slug: string | null
+        }
+        Insert: {
+          description?: string | null
+          id?: string | null
+          saved_at?: string | null
+          slug?: string | null
+        }
+        Update: {
+          description?: string | null
+          id?: string | null
+          saved_at?: string | null
+          slug?: string | null
+        }
+        Relationships: []
+      }
+      _bak_desc_pneus_pleins_2010: {
+        Row: {
+          description: string | null
+          id: string | null
+          saved_at: string | null
+          slug: string | null
+        }
+        Insert: {
+          description?: string | null
+          id?: string | null
+          saved_at?: string | null
+          slug?: string | null
+        }
+        Update: {
+          description?: string | null
+          id?: string | null
+          saved_at?: string | null
+          slug?: string | null
+        }
+        Relationships: []
+      }
+      _bak_images_recadrage_1910: {
+        Row: {
+          id: string | null
+          image_url: string | null
+          images: Json | null
+          saved_at: string | null
+          slug: string | null
+        }
+        Insert: {
+          id?: string | null
+          image_url?: string | null
+          images?: Json | null
+          saved_at?: string | null
+          slug?: string | null
+        }
+        Update: {
+          id?: string | null
+          image_url?: string | null
+          images?: Json | null
+          saved_at?: string | null
+          slug?: string | null
+        }
+        Relationships: []
+      }
+      _bak_images_scooters_1910: {
+        Row: {
+          id: string | null
+          image_url: string | null
+          images: Json | null
+          saved_at: string | null
+          slug: string | null
+        }
+        Insert: {
+          id?: string | null
+          image_url?: string | null
+          images?: Json | null
+          saved_at?: string | null
+          slug?: string | null
+        }
+        Update: {
+          id?: string | null
+          image_url?: string | null
+          images?: Json | null
+          saved_at?: string | null
+          slug?: string | null
+        }
+        Relationships: []
+      }
+      _bak_images_scooters_2010: {
+        Row: {
+          id: string | null
+          image_url: string | null
+          images: Json | null
+          saved_at: string | null
+          slug: string | null
+        }
+        Insert: {
+          id?: string | null
+          image_url?: string | null
+          images?: Json | null
+          saved_at?: string | null
+          slug?: string | null
+        }
+        Update: {
+          id?: string | null
+          image_url?: string | null
+          images?: Json | null
+          saved_at?: string | null
+          slug?: string | null
         }
         Relationships: []
       }
@@ -2726,6 +3878,60 @@ export type Database = {
         }
         Relationships: []
       }
+      _bak_prix_chambres_1910: {
+        Row: {
+          at_id: string | null
+          id: string | null
+          image_url: string | null
+          name: string | null
+          price: number | null
+          saved_at: string | null
+        }
+        Insert: {
+          at_id?: string | null
+          id?: string | null
+          image_url?: string | null
+          name?: string | null
+          price?: number | null
+          saved_at?: string | null
+        }
+        Update: {
+          at_id?: string | null
+          id?: string | null
+          image_url?: string | null
+          name?: string | null
+          price?: number | null
+          saved_at?: string | null
+        }
+        Relationships: []
+      }
+      _bak_ps_ewheel_1910: {
+        Row: {
+          buy_price_ht: number | null
+          id: string | null
+          part_id: string | null
+          saved_at: string | null
+          stock_supplier: number | null
+          supplier_sku: string | null
+        }
+        Insert: {
+          buy_price_ht?: number | null
+          id?: string | null
+          part_id?: string | null
+          saved_at?: string | null
+          stock_supplier?: number | null
+          supplier_sku?: string | null
+        }
+        Update: {
+          buy_price_ht?: number | null
+          id?: string | null
+          part_id?: string | null
+          saved_at?: string | null
+          stock_supplier?: number | null
+          supplier_sku?: string | null
+        }
+        Relationships: []
+      }
       _bak_pure_roue_1910: {
         Row: {
           id: string | null
@@ -2792,6 +3998,54 @@ export type Database = {
         }
         Relationships: []
       }
+      _bak_velo_depub_1910: {
+        Row: {
+          id: string | null
+          image_url: string | null
+          name: string | null
+          published: boolean | null
+          saved_at: string | null
+        }
+        Insert: {
+          id?: string | null
+          image_url?: string | null
+          name?: string | null
+          published?: boolean | null
+          saved_at?: string | null
+        }
+        Update: {
+          id?: string | null
+          image_url?: string | null
+          name?: string | null
+          published?: boolean | null
+          saved_at?: string | null
+        }
+        Relationships: []
+      }
+      _bak_zrino_roue_1910: {
+        Row: {
+          id: string | null
+          name: string | null
+          rim_diameter_code: string | null
+          saved_at: string | null
+          tire_section_code: string | null
+        }
+        Insert: {
+          id?: string | null
+          name?: string | null
+          rim_diameter_code?: string | null
+          saved_at?: string | null
+          tire_section_code?: string | null
+        }
+        Update: {
+          id?: string | null
+          name?: string | null
+          rim_diameter_code?: string | null
+          saved_at?: string | null
+          tire_section_code?: string | null
+        }
+        Relationships: []
+      }
       _stage_brand_seo_20261013: {
         Row: {
           country: string | null
@@ -2834,6 +4088,108 @@ export type Database = {
         Update: {
           description?: string | null
           slug?: string
+        }
+        Relationships: []
+      }
+      affiliate_clicks: {
+        Row: {
+          created_at: string
+          id: number
+          page_path: string
+          placement: string | null
+          scooter_slug: string | null
+          shop_host: string | null
+          target_host: string
+        }
+        Insert: {
+          created_at?: string
+          id?: never
+          page_path: string
+          placement?: string | null
+          scooter_slug?: string | null
+          shop_host?: string | null
+          target_host: string
+        }
+        Update: {
+          created_at?: string
+          id?: never
+          page_path?: string
+          placement?: string | null
+          scooter_slug?: string | null
+          shop_host?: string | null
+          target_host?: string
+        }
+        Relationships: []
+      }
+      affiliate_programs: {
+        Row: {
+          canal: string | null
+          code_client: string | null
+          code_ref: string | null
+          commission: string | null
+          contact_email: string | null
+          contact_nom: string | null
+          created_at: string
+          id: string
+          id_marchand: string | null
+          lien_base: string | null
+          lien_motif: string | null
+          marque: string
+          notes: string | null
+          plateforme: string | null
+          priorite: string | null
+          statut: string
+          type: string
+          updated_at: string
+          url_inscription: string | null
+          url_paiements: string | null
+          url_tableau_de_bord: string | null
+        }
+        Insert: {
+          canal?: string | null
+          code_client?: string | null
+          code_ref?: string | null
+          commission?: string | null
+          contact_email?: string | null
+          contact_nom?: string | null
+          created_at?: string
+          id?: string
+          id_marchand?: string | null
+          lien_base?: string | null
+          lien_motif?: string | null
+          marque: string
+          notes?: string | null
+          plateforme?: string | null
+          priorite?: string | null
+          statut?: string
+          type?: string
+          updated_at?: string
+          url_inscription?: string | null
+          url_paiements?: string | null
+          url_tableau_de_bord?: string | null
+        }
+        Update: {
+          canal?: string | null
+          code_client?: string | null
+          code_ref?: string | null
+          commission?: string | null
+          contact_email?: string | null
+          contact_nom?: string | null
+          created_at?: string
+          id?: string
+          id_marchand?: string | null
+          lien_base?: string | null
+          lien_motif?: string | null
+          marque?: string
+          notes?: string | null
+          plateforme?: string | null
+          priorite?: string | null
+          statut?: string
+          type?: string
+          updated_at?: string
+          url_inscription?: string | null
+          url_paiements?: string | null
+          url_tableau_de_bord?: string | null
         }
         Relationships: []
       }
@@ -2928,6 +4284,972 @@ export type Database = {
             referencedColumns: ["id"]
           },
         ]
+      }
+      atelier_questions: {
+        Row: {
+          choix: string[]
+          cle: string | null
+          contexte: string | null
+          created_at: string
+          famille: string
+          id: string
+          note: string | null
+          ordre: number
+          regarder: string | null
+          repondu_le: string | null
+          repondu_par: string | null
+          reponse: string | null
+          scooter_slug: string | null
+          source: string
+          titre: string
+          traitee: boolean
+        }
+        Insert: {
+          choix?: string[]
+          cle?: string | null
+          contexte?: string | null
+          created_at?: string
+          famille: string
+          id: string
+          note?: string | null
+          ordre?: number
+          regarder?: string | null
+          repondu_le?: string | null
+          repondu_par?: string | null
+          reponse?: string | null
+          scooter_slug?: string | null
+          source?: string
+          titre: string
+          traitee?: boolean
+        }
+        Update: {
+          choix?: string[]
+          cle?: string | null
+          contexte?: string | null
+          created_at?: string
+          famille?: string
+          id?: string
+          note?: string | null
+          ordre?: number
+          regarder?: string | null
+          repondu_le?: string | null
+          repondu_par?: string | null
+          reponse?: string | null
+          scooter_slug?: string | null
+          source?: string
+          titre?: string
+          traitee?: boolean
+        }
+        Relationships: []
+      }
+      bk_200x50_20261020: {
+        Row: {
+          auto_suggested: boolean | null
+          confidence_level: string | null
+          created_at: string | null
+          id: string | null
+          k: string | null
+          part_id: string | null
+          position: string | null
+          scooter_model_id: string | null
+          slug: string | null
+          suggestion_reason: string | null
+        }
+        Insert: {
+          auto_suggested?: boolean | null
+          confidence_level?: string | null
+          created_at?: string | null
+          id?: string | null
+          k?: string | null
+          part_id?: string | null
+          position?: string | null
+          scooter_model_id?: string | null
+          slug?: string | null
+          suggestion_reason?: string | null
+        }
+        Update: {
+          auto_suggested?: boolean | null
+          confidence_level?: string | null
+          created_at?: string | null
+          id?: string | null
+          k?: string | null
+          part_id?: string | null
+          position?: string | null
+          scooter_model_id?: string | null
+          slug?: string | null
+          suggestion_reason?: string | null
+        }
+        Relationships: []
+      }
+      bk_compat_recos_20261019: {
+        Row: {
+          auto_suggested: boolean | null
+          confidence_level: string | null
+          created_at: string | null
+          id: string | null
+          part_id: string | null
+          position: string | null
+          scooter_model_id: string | null
+          suggestion_reason: string | null
+        }
+        Insert: {
+          auto_suggested?: boolean | null
+          confidence_level?: string | null
+          created_at?: string | null
+          id?: string | null
+          part_id?: string | null
+          position?: string | null
+          scooter_model_id?: string | null
+          suggestion_reason?: string | null
+        }
+        Update: {
+          auto_suggested?: boolean | null
+          confidence_level?: string | null
+          created_at?: string | null
+          id?: string | null
+          part_id?: string | null
+          position?: string | null
+          scooter_model_id?: string | null
+          suggestion_reason?: string | null
+        }
+        Relationships: []
+      }
+      bk_grille_chambres_20261019: {
+        Row: {
+          attributes: Json | null
+          category_id: string | null
+          characteristics: string | null
+          compatibility_source: string | null
+          created_at: string | null
+          description: string | null
+          difficulty_level: number | null
+          ean: string | null
+          electrical_specs: Json | null
+          estimated_install_time_minutes: number | null
+          fitment_specs: Json | null
+          id: string | null
+          image_url: string | null
+          images: Json | null
+          is_featured: boolean | null
+          meta_description: string | null
+          meta_title: string | null
+          min_stock_alert: number | null
+          name: string | null
+          price: number | null
+          price_override: boolean | null
+          published: boolean | null
+          required_tools: string[] | null
+          search_document: string | null
+          sku: string | null
+          slug: string | null
+          slug_locked_at: string | null
+          stock_quantity: number | null
+          technical_metadata: Json | null
+          updated_at: string | null
+          youtube_video_id: string | null
+        }
+        Insert: {
+          attributes?: Json | null
+          category_id?: string | null
+          characteristics?: string | null
+          compatibility_source?: string | null
+          created_at?: string | null
+          description?: string | null
+          difficulty_level?: number | null
+          ean?: string | null
+          electrical_specs?: Json | null
+          estimated_install_time_minutes?: number | null
+          fitment_specs?: Json | null
+          id?: string | null
+          image_url?: string | null
+          images?: Json | null
+          is_featured?: boolean | null
+          meta_description?: string | null
+          meta_title?: string | null
+          min_stock_alert?: number | null
+          name?: string | null
+          price?: number | null
+          price_override?: boolean | null
+          published?: boolean | null
+          required_tools?: string[] | null
+          search_document?: string | null
+          sku?: string | null
+          slug?: string | null
+          slug_locked_at?: string | null
+          stock_quantity?: number | null
+          technical_metadata?: Json | null
+          updated_at?: string | null
+          youtube_video_id?: string | null
+        }
+        Update: {
+          attributes?: Json | null
+          category_id?: string | null
+          characteristics?: string | null
+          compatibility_source?: string | null
+          created_at?: string | null
+          description?: string | null
+          difficulty_level?: number | null
+          ean?: string | null
+          electrical_specs?: Json | null
+          estimated_install_time_minutes?: number | null
+          fitment_specs?: Json | null
+          id?: string | null
+          image_url?: string | null
+          images?: Json | null
+          is_featured?: boolean | null
+          meta_description?: string | null
+          meta_title?: string | null
+          min_stock_alert?: number | null
+          name?: string | null
+          price?: number | null
+          price_override?: boolean | null
+          published?: boolean | null
+          required_tools?: string[] | null
+          search_document?: string | null
+          sku?: string | null
+          slug?: string | null
+          slug_locked_at?: string | null
+          stock_quantity?: number | null
+          technical_metadata?: Json | null
+          updated_at?: string | null
+          youtube_video_id?: string | null
+        }
+        Relationships: []
+      }
+      bk_noms_valves_20261019: {
+        Row: {
+          id: string | null
+          name: string | null
+          updated_at: string | null
+        }
+        Insert: {
+          id?: string | null
+          name?: string | null
+          updated_at?: string | null
+        }
+        Update: {
+          id?: string | null
+          name?: string | null
+          updated_at?: string | null
+        }
+        Relationships: []
+      }
+      bk_plein94_20261019: {
+        Row: {
+          auto_suggested: boolean | null
+          confidence_level: string | null
+          created_at: string | null
+          id: string | null
+          part_id: string | null
+          position: string | null
+          scooter_model_id: string | null
+          suggestion_reason: string | null
+        }
+        Insert: {
+          auto_suggested?: boolean | null
+          confidence_level?: string | null
+          created_at?: string | null
+          id?: string | null
+          part_id?: string | null
+          position?: string | null
+          scooter_model_id?: string | null
+          suggestion_reason?: string | null
+        }
+        Update: {
+          auto_suggested?: boolean | null
+          confidence_level?: string | null
+          created_at?: string | null
+          id?: string | null
+          part_id?: string | null
+          position?: string | null
+          scooter_model_id?: string | null
+          suggestion_reason?: string | null
+        }
+        Relationships: []
+      }
+      bk_plein94_part_20261019: {
+        Row: {
+          fitment_specs: Json | null
+          id: string | null
+        }
+        Insert: {
+          fitment_specs?: Json | null
+          id?: string | null
+        }
+        Update: {
+          fitment_specs?: Json | null
+          id?: string | null
+        }
+        Relationships: []
+      }
+      bk_pneus_65_cles_20261019: {
+        Row: {
+          attributes: Json | null
+          category_id: string | null
+          characteristics: string | null
+          compatibility_source: string | null
+          created_at: string | null
+          description: string | null
+          difficulty_level: number | null
+          ean: string | null
+          electrical_specs: Json | null
+          estimated_install_time_minutes: number | null
+          fitment_specs: Json | null
+          id: string | null
+          image_url: string | null
+          images: Json | null
+          is_featured: boolean | null
+          meta_description: string | null
+          meta_title: string | null
+          min_stock_alert: number | null
+          name: string | null
+          price: number | null
+          price_override: boolean | null
+          published: boolean | null
+          required_tools: string[] | null
+          search_document: string | null
+          sku: string | null
+          slug: string | null
+          slug_locked_at: string | null
+          stock_quantity: number | null
+          technical_metadata: Json | null
+          updated_at: string | null
+          youtube_video_id: string | null
+        }
+        Insert: {
+          attributes?: Json | null
+          category_id?: string | null
+          characteristics?: string | null
+          compatibility_source?: string | null
+          created_at?: string | null
+          description?: string | null
+          difficulty_level?: number | null
+          ean?: string | null
+          electrical_specs?: Json | null
+          estimated_install_time_minutes?: number | null
+          fitment_specs?: Json | null
+          id?: string | null
+          image_url?: string | null
+          images?: Json | null
+          is_featured?: boolean | null
+          meta_description?: string | null
+          meta_title?: string | null
+          min_stock_alert?: number | null
+          name?: string | null
+          price?: number | null
+          price_override?: boolean | null
+          published?: boolean | null
+          required_tools?: string[] | null
+          search_document?: string | null
+          sku?: string | null
+          slug?: string | null
+          slug_locked_at?: string | null
+          stock_quantity?: number | null
+          technical_metadata?: Json | null
+          updated_at?: string | null
+          youtube_video_id?: string | null
+        }
+        Update: {
+          attributes?: Json | null
+          category_id?: string | null
+          characteristics?: string | null
+          compatibility_source?: string | null
+          created_at?: string | null
+          description?: string | null
+          difficulty_level?: number | null
+          ean?: string | null
+          electrical_specs?: Json | null
+          estimated_install_time_minutes?: number | null
+          fitment_specs?: Json | null
+          id?: string | null
+          image_url?: string | null
+          images?: Json | null
+          is_featured?: boolean | null
+          meta_description?: string | null
+          meta_title?: string | null
+          min_stock_alert?: number | null
+          name?: string | null
+          price?: number | null
+          price_override?: boolean | null
+          published?: boolean | null
+          required_tools?: string[] | null
+          search_document?: string | null
+          sku?: string | null
+          slug?: string | null
+          slug_locked_at?: string | null
+          stock_quantity?: number | null
+          technical_metadata?: Json | null
+          updated_at?: string | null
+          youtube_video_id?: string | null
+        }
+        Relationships: []
+      }
+      bk_pneus_tri_prix_20261019: {
+        Row: {
+          attributes: Json | null
+          category_id: string | null
+          characteristics: string | null
+          compatibility_source: string | null
+          created_at: string | null
+          description: string | null
+          difficulty_level: number | null
+          ean: string | null
+          electrical_specs: Json | null
+          estimated_install_time_minutes: number | null
+          fitment_specs: Json | null
+          id: string | null
+          image_url: string | null
+          images: Json | null
+          is_featured: boolean | null
+          meta_description: string | null
+          meta_title: string | null
+          min_stock_alert: number | null
+          name: string | null
+          price: number | null
+          price_override: boolean | null
+          published: boolean | null
+          required_tools: string[] | null
+          search_document: string | null
+          sku: string | null
+          slug: string | null
+          slug_locked_at: string | null
+          stock_quantity: number | null
+          technical_metadata: Json | null
+          updated_at: string | null
+          youtube_video_id: string | null
+        }
+        Insert: {
+          attributes?: Json | null
+          category_id?: string | null
+          characteristics?: string | null
+          compatibility_source?: string | null
+          created_at?: string | null
+          description?: string | null
+          difficulty_level?: number | null
+          ean?: string | null
+          electrical_specs?: Json | null
+          estimated_install_time_minutes?: number | null
+          fitment_specs?: Json | null
+          id?: string | null
+          image_url?: string | null
+          images?: Json | null
+          is_featured?: boolean | null
+          meta_description?: string | null
+          meta_title?: string | null
+          min_stock_alert?: number | null
+          name?: string | null
+          price?: number | null
+          price_override?: boolean | null
+          published?: boolean | null
+          required_tools?: string[] | null
+          search_document?: string | null
+          sku?: string | null
+          slug?: string | null
+          slug_locked_at?: string | null
+          stock_quantity?: number | null
+          technical_metadata?: Json | null
+          updated_at?: string | null
+          youtube_video_id?: string | null
+        }
+        Update: {
+          attributes?: Json | null
+          category_id?: string | null
+          characteristics?: string | null
+          compatibility_source?: string | null
+          created_at?: string | null
+          description?: string | null
+          difficulty_level?: number | null
+          ean?: string | null
+          electrical_specs?: Json | null
+          estimated_install_time_minutes?: number | null
+          fitment_specs?: Json | null
+          id?: string | null
+          image_url?: string | null
+          images?: Json | null
+          is_featured?: boolean | null
+          meta_description?: string | null
+          meta_title?: string | null
+          min_stock_alert?: number | null
+          name?: string | null
+          price?: number | null
+          price_override?: boolean | null
+          published?: boolean | null
+          required_tools?: string[] | null
+          search_document?: string | null
+          sku?: string | null
+          slug?: string | null
+          slug_locked_at?: string | null
+          stock_quantity?: number | null
+          technical_metadata?: Json | null
+          updated_at?: string | null
+          youtube_video_id?: string | null
+        }
+        Relationships: []
+      }
+      bk_ps_wattiz_prix_20261019: {
+        Row: {
+          buy_price_ht: number | null
+          created_at: string | null
+          id: string | null
+          is_primary: boolean | null
+          notes: string | null
+          part_id: string | null
+          shipping_time_days: number | null
+          stock_supplier: number | null
+          supplier_name: string | null
+          supplier_sku: string | null
+          supplier_url: string | null
+          updated_at: string | null
+        }
+        Insert: {
+          buy_price_ht?: number | null
+          created_at?: string | null
+          id?: string | null
+          is_primary?: boolean | null
+          notes?: string | null
+          part_id?: string | null
+          shipping_time_days?: number | null
+          stock_supplier?: number | null
+          supplier_name?: string | null
+          supplier_sku?: string | null
+          supplier_url?: string | null
+          updated_at?: string | null
+        }
+        Update: {
+          buy_price_ht?: number | null
+          created_at?: string | null
+          id?: string | null
+          is_primary?: boolean | null
+          notes?: string | null
+          part_id?: string | null
+          shipping_time_days?: number | null
+          stock_supplier?: number | null
+          supplier_name?: string | null
+          supplier_sku?: string | null
+          supplier_url?: string | null
+          updated_at?: string | null
+        }
+        Relationships: []
+      }
+      bk_scooters_cles_corpus_20261019: {
+        Row: {
+          affiliate_link: string | null
+          amperage: number | null
+          brake_type: string | null
+          brand_id: string | null
+          caliper_family: string | null
+          charge_connectors: string[] | null
+          compatible_parts_count: number | null
+          created_at: string | null
+          description: string | null
+          disc_diameter_code: string | null
+          disc_holes_code: string | null
+          disc_pcd_code: string | null
+          foldable: boolean | null
+          id: string | null
+          image_url: string | null
+          images: Json | null
+          ip_rating: string | null
+          is_featured_home: boolean | null
+          is_top_moment: boolean | null
+          max_load_kg: number | null
+          max_speed_kmh: number | null
+          max_speed_private_kmh: number | null
+          meta_description: string | null
+          meta_title: string | null
+          name: string | null
+          power_watts: number | null
+          price_checked_at: string | null
+          price_eur: number | null
+          price_source: string | null
+          published: boolean | null
+          range_km: number | null
+          rim_diameter_code: string | null
+          rim_type: string | null
+          rim_width_code: string | null
+          score_auto_adj: number | null
+          score_autonomy: number | null
+          score_offroad: number | null
+          score_offroad_adj: number | null
+          score_perf_adj: number | null
+          score_performance: number | null
+          search_terms: string | null
+          slug: string | null
+          solid_conversion: string | null
+          suspension: string | null
+          technical_signature: Json | null
+          tire_family: string | null
+          tire_section_code: string | null
+          tire_size: string | null
+          top_rank: number | null
+          voltage: number | null
+          weight_kg: number | null
+          wheel_inches: number | null
+          wheel_size_inches: number | null
+          year: number | null
+          youtube_video_id: string | null
+        }
+        Insert: {
+          affiliate_link?: string | null
+          amperage?: number | null
+          brake_type?: string | null
+          brand_id?: string | null
+          caliper_family?: string | null
+          charge_connectors?: string[] | null
+          compatible_parts_count?: number | null
+          created_at?: string | null
+          description?: string | null
+          disc_diameter_code?: string | null
+          disc_holes_code?: string | null
+          disc_pcd_code?: string | null
+          foldable?: boolean | null
+          id?: string | null
+          image_url?: string | null
+          images?: Json | null
+          ip_rating?: string | null
+          is_featured_home?: boolean | null
+          is_top_moment?: boolean | null
+          max_load_kg?: number | null
+          max_speed_kmh?: number | null
+          max_speed_private_kmh?: number | null
+          meta_description?: string | null
+          meta_title?: string | null
+          name?: string | null
+          power_watts?: number | null
+          price_checked_at?: string | null
+          price_eur?: number | null
+          price_source?: string | null
+          published?: boolean | null
+          range_km?: number | null
+          rim_diameter_code?: string | null
+          rim_type?: string | null
+          rim_width_code?: string | null
+          score_auto_adj?: number | null
+          score_autonomy?: number | null
+          score_offroad?: number | null
+          score_offroad_adj?: number | null
+          score_perf_adj?: number | null
+          score_performance?: number | null
+          search_terms?: string | null
+          slug?: string | null
+          solid_conversion?: string | null
+          suspension?: string | null
+          technical_signature?: Json | null
+          tire_family?: string | null
+          tire_section_code?: string | null
+          tire_size?: string | null
+          top_rank?: number | null
+          voltage?: number | null
+          weight_kg?: number | null
+          wheel_inches?: number | null
+          wheel_size_inches?: number | null
+          year?: number | null
+          youtube_video_id?: string | null
+        }
+        Update: {
+          affiliate_link?: string | null
+          amperage?: number | null
+          brake_type?: string | null
+          brand_id?: string | null
+          caliper_family?: string | null
+          charge_connectors?: string[] | null
+          compatible_parts_count?: number | null
+          created_at?: string | null
+          description?: string | null
+          disc_diameter_code?: string | null
+          disc_holes_code?: string | null
+          disc_pcd_code?: string | null
+          foldable?: boolean | null
+          id?: string | null
+          image_url?: string | null
+          images?: Json | null
+          ip_rating?: string | null
+          is_featured_home?: boolean | null
+          is_top_moment?: boolean | null
+          max_load_kg?: number | null
+          max_speed_kmh?: number | null
+          max_speed_private_kmh?: number | null
+          meta_description?: string | null
+          meta_title?: string | null
+          name?: string | null
+          power_watts?: number | null
+          price_checked_at?: string | null
+          price_eur?: number | null
+          price_source?: string | null
+          published?: boolean | null
+          range_km?: number | null
+          rim_diameter_code?: string | null
+          rim_type?: string | null
+          rim_width_code?: string | null
+          score_auto_adj?: number | null
+          score_autonomy?: number | null
+          score_offroad?: number | null
+          score_offroad_adj?: number | null
+          score_perf_adj?: number | null
+          score_performance?: number | null
+          search_terms?: string | null
+          slug?: string | null
+          solid_conversion?: string | null
+          suspension?: string | null
+          technical_signature?: Json | null
+          tire_family?: string | null
+          tire_section_code?: string | null
+          tire_size?: string | null
+          top_rank?: number | null
+          voltage?: number | null
+          weight_kg?: number | null
+          wheel_inches?: number | null
+          wheel_size_inches?: number | null
+          year?: number | null
+          youtube_video_id?: string | null
+        }
+        Relationships: []
+      }
+      bk_scooters_recos_20261019: {
+        Row: {
+          affiliate_link: string | null
+          amperage: number | null
+          brake_type: string | null
+          brand_id: string | null
+          caliper_family: string | null
+          charge_connectors: string[] | null
+          compatible_parts_count: number | null
+          created_at: string | null
+          description: string | null
+          disc_diameter_code: string | null
+          disc_holes_code: string | null
+          disc_pcd_code: string | null
+          foldable: boolean | null
+          id: string | null
+          image_url: string | null
+          images: Json | null
+          ip_rating: string | null
+          is_featured_home: boolean | null
+          is_top_moment: boolean | null
+          max_load_kg: number | null
+          max_speed_kmh: number | null
+          max_speed_private_kmh: number | null
+          meta_description: string | null
+          meta_title: string | null
+          name: string | null
+          power_watts: number | null
+          price_checked_at: string | null
+          price_eur: number | null
+          price_source: string | null
+          published: boolean | null
+          range_km: number | null
+          rim_diameter_code: string | null
+          rim_type: string | null
+          rim_width_code: string | null
+          score_auto_adj: number | null
+          score_autonomy: number | null
+          score_offroad: number | null
+          score_offroad_adj: number | null
+          score_perf_adj: number | null
+          score_performance: number | null
+          search_terms: string | null
+          slug: string | null
+          solid_conversion: string | null
+          suspension: string | null
+          technical_signature: Json | null
+          tire_family: string | null
+          tire_section_code: string | null
+          tire_size: string | null
+          top_rank: number | null
+          voltage: number | null
+          weight_kg: number | null
+          wheel_inches: number | null
+          wheel_size_inches: number | null
+          year: number | null
+          youtube_video_id: string | null
+        }
+        Insert: {
+          affiliate_link?: string | null
+          amperage?: number | null
+          brake_type?: string | null
+          brand_id?: string | null
+          caliper_family?: string | null
+          charge_connectors?: string[] | null
+          compatible_parts_count?: number | null
+          created_at?: string | null
+          description?: string | null
+          disc_diameter_code?: string | null
+          disc_holes_code?: string | null
+          disc_pcd_code?: string | null
+          foldable?: boolean | null
+          id?: string | null
+          image_url?: string | null
+          images?: Json | null
+          ip_rating?: string | null
+          is_featured_home?: boolean | null
+          is_top_moment?: boolean | null
+          max_load_kg?: number | null
+          max_speed_kmh?: number | null
+          max_speed_private_kmh?: number | null
+          meta_description?: string | null
+          meta_title?: string | null
+          name?: string | null
+          power_watts?: number | null
+          price_checked_at?: string | null
+          price_eur?: number | null
+          price_source?: string | null
+          published?: boolean | null
+          range_km?: number | null
+          rim_diameter_code?: string | null
+          rim_type?: string | null
+          rim_width_code?: string | null
+          score_auto_adj?: number | null
+          score_autonomy?: number | null
+          score_offroad?: number | null
+          score_offroad_adj?: number | null
+          score_perf_adj?: number | null
+          score_performance?: number | null
+          search_terms?: string | null
+          slug?: string | null
+          solid_conversion?: string | null
+          suspension?: string | null
+          technical_signature?: Json | null
+          tire_family?: string | null
+          tire_section_code?: string | null
+          tire_size?: string | null
+          top_rank?: number | null
+          voltage?: number | null
+          weight_kg?: number | null
+          wheel_inches?: number | null
+          wheel_size_inches?: number | null
+          year?: number | null
+          youtube_video_id?: string | null
+        }
+        Update: {
+          affiliate_link?: string | null
+          amperage?: number | null
+          brake_type?: string | null
+          brand_id?: string | null
+          caliper_family?: string | null
+          charge_connectors?: string[] | null
+          compatible_parts_count?: number | null
+          created_at?: string | null
+          description?: string | null
+          disc_diameter_code?: string | null
+          disc_holes_code?: string | null
+          disc_pcd_code?: string | null
+          foldable?: boolean | null
+          id?: string | null
+          image_url?: string | null
+          images?: Json | null
+          ip_rating?: string | null
+          is_featured_home?: boolean | null
+          is_top_moment?: boolean | null
+          max_load_kg?: number | null
+          max_speed_kmh?: number | null
+          max_speed_private_kmh?: number | null
+          meta_description?: string | null
+          meta_title?: string | null
+          name?: string | null
+          power_watts?: number | null
+          price_checked_at?: string | null
+          price_eur?: number | null
+          price_source?: string | null
+          published?: boolean | null
+          range_km?: number | null
+          rim_diameter_code?: string | null
+          rim_type?: string | null
+          rim_width_code?: string | null
+          score_auto_adj?: number | null
+          score_autonomy?: number | null
+          score_offroad?: number | null
+          score_offroad_adj?: number | null
+          score_perf_adj?: number | null
+          score_performance?: number | null
+          search_terms?: string | null
+          slug?: string | null
+          solid_conversion?: string | null
+          suspension?: string | null
+          technical_signature?: Json | null
+          tire_family?: string | null
+          tire_section_code?: string | null
+          tire_size?: string | null
+          top_rank?: number | null
+          voltage?: number | null
+          weight_kg?: number | null
+          wheel_inches?: number | null
+          wheel_size_inches?: number | null
+          year?: number | null
+          youtube_video_id?: string | null
+        }
+        Relationships: []
+      }
+      bk_solid_conv_20261019: {
+        Row: {
+          id: string | null
+          slug: string | null
+          solid_conversion: string | null
+          tire_family: string | null
+        }
+        Insert: {
+          id?: string | null
+          slug?: string | null
+          solid_conversion?: string | null
+          tire_family?: string | null
+        }
+        Update: {
+          id?: string | null
+          slug?: string | null
+          solid_conversion?: string | null
+          tire_family?: string | null
+        }
+        Relationships: []
+      }
+      bk_titre_conf_20261019: {
+        Row: {
+          confidence_level: string | null
+          id: string | null
+        }
+        Insert: {
+          confidence_level?: string | null
+          id?: string | null
+        }
+        Update: {
+          confidence_level?: string | null
+          id?: string | null
+        }
+        Relationships: []
+      }
+      blog_articles: {
+        Row: {
+          created_at: string
+          id: string
+          notes_atelier: string | null
+          publie_le: string | null
+          rubrique: string
+          slug: string
+          statut: string
+          titre: string
+          updated_at: string
+        }
+        Insert: {
+          created_at?: string
+          id?: string
+          notes_atelier?: string | null
+          publie_le?: string | null
+          rubrique?: string
+          slug: string
+          statut?: string
+          titre: string
+          updated_at?: string
+        }
+        Update: {
+          created_at?: string
+          id?: string
+          notes_atelier?: string | null
+          publie_le?: string | null
+          rubrique?: string
+          slug?: string
+          statut?: string
+          titre?: string
+          updated_at?: string
+        }
+        Relationships: []
       }
       brand_assets: {
         Row: {
@@ -3113,6 +5435,35 @@ export type Database = {
             columns: ["showcase_model_id"]
             isOneToOne: false
             referencedRelation: "scooter_models"
+            referencedColumns: ["id"]
+          },
+        ]
+      }
+      canaris: {
+        Row: {
+          note: string | null
+          part_id: string
+          pose_le: string
+          ref: string
+        }
+        Insert: {
+          note?: string | null
+          part_id: string
+          pose_le?: string
+          ref: string
+        }
+        Update: {
+          note?: string | null
+          part_id?: string
+          pose_le?: string
+          ref?: string
+        }
+        Relationships: [
+          {
+            foreignKeyName: "canaris_part_id_fkey"
+            columns: ["part_id"]
+            isOneToOne: true
+            referencedRelation: "parts"
             referencedColumns: ["id"]
           },
         ]
@@ -3924,12 +6275,15 @@ export type Database = {
       orders: {
         Row: {
           address: string
+          carrier: string | null
           city: string
           created_at: string
           customer_email: string
           customer_first_name: string
           customer_last_name: string
           customer_phone: string | null
+          delivered_at: string | null
+          delivery_estimate: string | null
           delivery_method: string | null
           delivery_price: number | null
           id: string
@@ -3939,24 +6293,30 @@ export type Database = {
           paid_at: string | null
           postal_code: string
           promo_code: string | null
+          shipped_at: string | null
+          shipping_email_sent_at: string | null
           status: string
           stripe_payment_intent_id: string | null
           stripe_session_id: string | null
           subtotal_ht: number
           total_ttc: number
           tracking_number: string | null
+          tracking_url: string | null
           tva_amount: number
           updated_at: string
           user_id: string | null
         }
         Insert: {
           address: string
+          carrier?: string | null
           city: string
           created_at?: string
           customer_email: string
           customer_first_name: string
           customer_last_name: string
           customer_phone?: string | null
+          delivered_at?: string | null
+          delivery_estimate?: string | null
           delivery_method?: string | null
           delivery_price?: number | null
           id?: string
@@ -3966,24 +6326,30 @@ export type Database = {
           paid_at?: string | null
           postal_code: string
           promo_code?: string | null
+          shipped_at?: string | null
+          shipping_email_sent_at?: string | null
           status?: string
           stripe_payment_intent_id?: string | null
           stripe_session_id?: string | null
           subtotal_ht: number
           total_ttc: number
           tracking_number?: string | null
+          tracking_url?: string | null
           tva_amount: number
           updated_at?: string
           user_id?: string | null
         }
         Update: {
           address?: string
+          carrier?: string | null
           city?: string
           created_at?: string
           customer_email?: string
           customer_first_name?: string
           customer_last_name?: string
           customer_phone?: string | null
+          delivered_at?: string | null
+          delivery_estimate?: string | null
           delivery_method?: string | null
           delivery_price?: number | null
           id?: string
@@ -3993,12 +6359,15 @@ export type Database = {
           paid_at?: string | null
           postal_code?: string
           promo_code?: string | null
+          shipped_at?: string | null
+          shipping_email_sent_at?: string | null
           status?: string
           stripe_payment_intent_id?: string | null
           stripe_session_id?: string | null
           subtotal_ht?: number
           total_ttc?: number
           tracking_number?: string | null
+          tracking_url?: string | null
           tva_amount?: number
           updated_at?: string
           user_id?: string | null
@@ -4450,6 +6819,63 @@ export type Database = {
         }
         Relationships: []
       }
+      rider_questions: {
+        Row: {
+          brouillon: string | null
+          created_at: string
+          email: string | null
+          id: string
+          ip_hash: string | null
+          question: string
+          repondu_le: string | null
+          repondu_par: string | null
+          reponse: string | null
+          scooter_name: string | null
+          scooter_slug: string | null
+          slug: string | null
+          statut: string
+          titre: string | null
+          updated_at: string
+          user_id: string | null
+        }
+        Insert: {
+          brouillon?: string | null
+          created_at?: string
+          email?: string | null
+          id?: string
+          ip_hash?: string | null
+          question: string
+          repondu_le?: string | null
+          repondu_par?: string | null
+          reponse?: string | null
+          scooter_name?: string | null
+          scooter_slug?: string | null
+          slug?: string | null
+          statut?: string
+          titre?: string | null
+          updated_at?: string
+          user_id?: string | null
+        }
+        Update: {
+          brouillon?: string | null
+          created_at?: string
+          email?: string | null
+          id?: string
+          ip_hash?: string | null
+          question?: string
+          repondu_le?: string | null
+          repondu_par?: string | null
+          reponse?: string | null
+          scooter_name?: string | null
+          scooter_slug?: string | null
+          slug?: string | null
+          statut?: string
+          titre?: string | null
+          updated_at?: string
+          user_id?: string | null
+        }
+        Relationships: []
+      }
       scan_validations: {
         Row: {
           ai_brand: string
@@ -4587,7 +7013,6 @@ export type Database = {
           ip_rating: string | null
           is_featured_home: boolean
           is_top_moment: boolean
-          top_rank: number | null
           max_load_kg: number | null
           max_speed_kmh: number | null
           max_speed_private_kmh: number | null
@@ -4617,6 +7042,7 @@ export type Database = {
           tire_family: string | null
           tire_section_code: string | null
           tire_size: string | null
+          top_rank: number | null
           voltage: number | null
           weight_kg: number | null
           wheel_inches: number | null
@@ -4644,7 +7070,6 @@ export type Database = {
           ip_rating?: string | null
           is_featured_home?: boolean
           is_top_moment?: boolean
-          top_rank?: number | null
           max_load_kg?: number | null
           max_speed_kmh?: number | null
           max_speed_private_kmh?: number | null
@@ -4674,6 +7099,7 @@ export type Database = {
           tire_family?: string | null
           tire_section_code?: string | null
           tire_size?: string | null
+          top_rank?: number | null
           voltage?: number | null
           weight_kg?: number | null
           wheel_inches?: number | null
@@ -4701,7 +7127,6 @@ export type Database = {
           ip_rating?: string | null
           is_featured_home?: boolean
           is_top_moment?: boolean
-          top_rank?: number | null
           max_load_kg?: number | null
           max_speed_kmh?: number | null
           max_speed_private_kmh?: number | null
@@ -4731,6 +7156,7 @@ export type Database = {
           tire_family?: string | null
           tire_section_code?: string | null
           tire_size?: string | null
+          top_rank?: number | null
           voltage?: number | null
           weight_kg?: number | null
           wheel_inches?: number | null
@@ -4803,6 +7229,36 @@ export type Database = {
             referencedColumns: ["code"]
           },
         ]
+      }
+      scooters_absents: {
+        Row: {
+          brand_name: string | null
+          created_at: string
+          created_by: string | null
+          id: string
+          model_name: string
+          notes: string | null
+          status: string
+        }
+        Insert: {
+          brand_name?: string | null
+          created_at?: string
+          created_by?: string | null
+          id?: string
+          model_name: string
+          notes?: string | null
+          status?: string
+        }
+        Update: {
+          brand_name?: string | null
+          created_at?: string
+          created_by?: string | null
+          id?: string
+          model_name?: string
+          notes?: string | null
+          status?: string
+        }
+        Relationships: []
       }
       site_assets: {
         Row: {
@@ -5218,6 +7674,42 @@ export type Database = {
       }
     }
     Views: {
+      rider_questions_publiques: {
+        Row: {
+          created_at: string | null
+          question: string | null
+          repondu_le: string | null
+          repondu_par: string | null
+          reponse: string | null
+          scooter_name: string | null
+          scooter_slug: string | null
+          slug: string | null
+          titre: string | null
+        }
+        Insert: {
+          created_at?: string | null
+          question?: string | null
+          repondu_le?: string | null
+          repondu_par?: string | null
+          reponse?: string | null
+          scooter_name?: string | null
+          scooter_slug?: string | null
+          slug?: string | null
+          titre?: string | null
+        }
+        Update: {
+          created_at?: string | null
+          question?: string | null
+          repondu_le?: string | null
+          repondu_par?: string | null
+          reponse?: string | null
+          scooter_name?: string | null
+          scooter_slug?: string | null
+          slug?: string | null
+          titre?: string | null
+        }
+        Relationships: []
+      }
       v_fitment_claims: {
         Row: {
           alias_key: string | null
@@ -5274,6 +7766,24 @@ export type Database = {
       }
     }
     Functions: {
+      admin_compat_counts: {
+        Args: never
+        Returns: {
+          scooter_model_id: string
+          to_validate: number
+          total: number
+        }[]
+      }
+      admin_dashboard_stats: { Args: never; Returns: Json }
+      ask_atelier: {
+        Args: {
+          p_email?: string
+          p_question: string
+          p_scooter_name?: string
+          p_scooter_slug?: string
+        }
+        Returns: string
+      }
       calculate_modification_xp: {
         Args: {
           p_category_name: string
@@ -5291,6 +7801,7 @@ export type Database = {
         Returns: boolean
       }
       issue_rider_launch_code: { Args: { p_user: string }; Returns: string }
+      link_guest_orders: { Args: never; Returns: number }
       match_brake_compatibility: {
         Args: never
         Returns: {
