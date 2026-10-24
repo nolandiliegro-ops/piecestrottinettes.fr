@@ -5,9 +5,9 @@ import { Textarea } from '@/components/ui/textarea';
 import { cn } from '@/lib/utils';
 import {
   STATUTS, type Program, type Scooter, type Offer, type Derived, brandKey, coverage, parseJournal, todayFr,
-  copy, useSaveProgram, programOfOffer, fmtDate,
+  copy, useSaveProgram, programOfOffer, fmtDate, parseRate, gainOf,
 } from './data';
-import { Logo, StatusPill, OfferLine, OfferForm } from './parts';
+import { Logo, StatusPill, OfferLine, OfferForm, ScooterPhoto } from './parts';
 
 /* Fiche d'un programme (marque, revendeur ou fournisseur) — 24/10/2026.
    Ordinateur : panneau à droite de la liste. Téléphone : plein écran (bouton « Marques » pour revenir). */
@@ -19,7 +19,9 @@ export const ScooterOffersRow = ({ s, offers, programs }: { s: Scooter; offers: 
   const [adding, setAdding] = useState(false);
   const sorted = [...offers].sort((a, b) => Number(b.is_active) - Number(a.is_active) || (a.price_eur ?? 1e9) - (b.price_eur ?? 1e9));
   return (
-    <div className={cn('grid gap-2 px-3 sm:px-4 py-3 border-t border-[#F0ECE3] first:border-t-0', !s.published && 'opacity-70')}>
+    <div className={cn('grid grid-cols-[auto_minmax(0,1fr)] gap-x-3 gap-y-2 px-3 sm:px-4 py-3 border-t border-[#F0ECE3] first:border-t-0', !s.published && 'opacity-70')}>
+      <ScooterPhoto src={s.image} name={s.name} />
+      <div className="grid gap-2 min-w-0">
       <div className="flex items-center justify-between gap-3 min-h-[44px]">
         <a href={`/scooter/${s.slug}`} target="_blank" rel="noopener noreferrer" className="inline-flex items-center min-h-[44px] text-sm font-bold text-[hsl(var(--admin-text))] hover:underline underline-offset-2">
           {s.name}{!s.published && <span className="font-normal text-[hsl(var(--admin-text-muted))]"> · non publiée</span>}
@@ -34,6 +36,7 @@ export const ScooterOffersRow = ({ s, offers, programs }: { s: Scooter; offers: 
         ? <div className="grid gap-2">{sorted.map(o => <OfferLine key={o.id} o={o} programs={programs} />)}</div>
         : !adding && <p className="text-sm text-[hsl(var(--admin-text-muted))]">Sans lien.</p>}
       {adding && <OfferForm scooterId={s.id} onDone={() => setAdding(false)} />}
+      </div>
     </div>
   );
 };
@@ -88,8 +91,10 @@ const BrandPanel = ({ p, programs, scooters, d, onBack }: Props) => {
   const [tab, setTab] = useState<'trott' | 'prog' | 'hist' | 'contact'>(hasScooterTab ? 'trott' : 'prog');
   const [nextV, setNextV] = useState(p.prochaine_action ?? '');
   const [entry, setEntry] = useState('');
-  const activeOffers = (sid: string) => (d.offersByScooter.get(sid) || []).filter(o => o.is_active).length;
-  const offersCount = models.reduce((n, s) => n + activeOffers(s.id), 0) + programOffers.reduce((n, s) => n + activeOffers(s.id), 0);
+  const rate = parseRate(p.commission);
+  // Gain estimé par vente : offres actives de CE programme (motif), au prix du jour.
+  const gains = [...models, ...programOffers].flatMap(s => (d.offersByScooter.get(s.id) || [])
+    .filter(o => o.is_active && programOfOffer(o, [p])).map(o => gainOf(o.price_eur, rate)?.hi).filter((g): g is number => g != null));
 
   const tabs = [
     hasScooterTab && { k: 'trott' as const, label: `Trottinettes ${cov.hasBrand ? models.length : programOffers.length}` },
@@ -132,11 +137,11 @@ const BrandPanel = ({ p, programs, scooters, d, onBack }: Props) => {
 
       {p.type === 'affiliation' && (
         <div className="grid grid-cols-3 gap-2">
-          {[[cov.hasBrand ? `${cov.linked}/${cov.total}` : '—', cov.hasBrand ? 'fiches publiées liées' : 'revendeur multi-marques'],
-            [String(offersCount), 'offres actives'],
-            [cov.hasBrand ? String(cov.total - cov.linked) : String(programOffers.length), cov.hasBrand ? 'publiées sans lien' : 'trottinettes couvertes']]
+          {[[cov.hasBrand ? `${cov.linked}/${cov.total}` : String(programOffers.length), cov.hasBrand ? 'fiches publiées liées' : 'trottinettes couvertes'],
+            [rate ? (rate.min == null ? `≤ ${rate.max} %` : rate.min === rate.max ? `${rate.max} %` : `${rate.min}-${rate.max} %`) : '—', 'commission'],
+            [gains.length ? `${Math.round(gains.reduce((n, g) => n + g, 0) / gains.length)} €` : '—', gains.length ? `gain moyen par vente (max ${Math.max(...gains)} €)` : 'gain par vente']]
             .map(([a, b]) => (
-              <div key={b} className="rounded-xl border border-[hsl(var(--admin-border))] bg-white px-3 py-2">
+              <div key={b} className="rounded-xl border border-[hsl(var(--admin-border))] bg-white px-3 py-2 min-w-0">
                 <div className="text-xl font-black tabular-nums text-[hsl(var(--admin-text))]">{a}</div>
                 <div className="text-sm text-[hsl(var(--admin-text-muted))] leading-tight">{b}</div>
               </div>
@@ -159,11 +164,31 @@ const BrandPanel = ({ p, programs, scooters, d, onBack }: Props) => {
         {p.relance_le && <p className="text-sm text-[hsl(var(--admin-text-muted))]">Relance prévue {fmtDate(p.relance_le)}.</p>}
       </div>
 
-      <div className="flex flex-wrap gap-2">
-        {p.url_tableau_de_bord && <a href={p.url_tableau_de_bord} target="_blank" rel="noopener noreferrer" className={linkCls}><LayoutDashboard className="w-4 h-4" />Tableau de bord</a>}
-        {p.url_paiements && <a href={p.url_paiements} target="_blank" rel="noopener noreferrer" className={linkCls}><Wallet className="w-4 h-4" />Paiements</a>}
-        {p.code_client && <button type="button" onClick={() => copy(p.code_client!.split(' ')[0], 'Code client')} className={linkCls}><Copy className="w-4 h-4" />Code {p.code_client.split(' ')[0]}</button>}
-        {p.lien_base && <button type="button" onClick={() => copy(p.lien_base!, 'Lien de base')} className={linkCls}><Copy className="w-4 h-4" />Lien de base</button>}
+      {/* Kit de vente : tout ce qu'il faut copier pour partager, en un tap. */}
+      <div className="grid gap-2.5 rounded-xl border border-[hsl(var(--admin-border))] bg-white p-3">
+        <p className="text-sm font-black uppercase tracking-wide text-[hsl(var(--admin-text))]">Mes codes et liens</p>
+        <div className="grid sm:grid-cols-2 gap-2">
+          {[
+            { label: 'Code promo client', value: p.code_client?.split(' ')[0] ?? null, hint: p.code_client?.split(' ').slice(1).join(' ') || null, what: 'Code promo' },
+            { label: 'Mon code partenaire (ref)', value: p.code_ref, hint: null, what: 'Code partenaire' },
+          ].map(k => (
+            <button key={k.label} type="button" disabled={!k.value} onClick={() => k.value && copy(k.value, k.what)}
+              className="text-left grid gap-0.5 min-h-[60px] rounded-xl border border-dashed border-[hsl(var(--admin-border))] px-3 py-2 disabled:opacity-60 hover:border-[hsl(var(--admin-accent))]">
+              <span className="text-sm text-[hsl(var(--admin-text-muted))]">{k.label}</span>
+              <span className="flex items-center justify-between gap-2">
+                <b className="font-mono text-base text-[hsl(var(--admin-text))] break-all">{k.value ?? 'Aucun'}</b>
+                {k.value && <Copy className="w-4 h-4 shrink-0 text-[hsl(var(--admin-text-muted))]" />}
+              </span>
+              {k.hint && <span className="text-sm text-[hsl(var(--admin-accent))] font-semibold">{k.hint}</span>}
+            </button>
+          ))}
+        </div>
+        <div className="flex flex-wrap gap-2">
+          {p.lien_base && <button type="button" onClick={() => copy(p.lien_base!, 'Lien de la boutique')} className="inline-flex items-center gap-1.5 min-h-[44px] px-3 rounded-xl bg-[hsl(var(--admin-text))] text-white text-sm font-semibold"><Copy className="w-4 h-4" />Lien de la boutique</button>}
+          {p.url_tableau_de_bord && <a href={p.url_tableau_de_bord} target="_blank" rel="noopener noreferrer" className={linkCls}><LayoutDashboard className="w-4 h-4" />Tableau de bord</a>}
+          {p.url_paiements && <a href={p.url_paiements} target="_blank" rel="noopener noreferrer" className={linkCls}><Wallet className="w-4 h-4" />Paiements</a>}
+        </div>
+        {!p.code_client && !p.code_ref && !p.lien_base && <p className="text-sm text-[hsl(var(--admin-text-muted))]">Rien à copier pour l'instant : renseigne les codes dans l'onglet Programme dès que le programme est actif.</p>}
       </div>
 
       <div className="flex gap-1 overflow-x-auto scrollbar-none border-b border-[hsl(var(--admin-border))]" role="tablist">

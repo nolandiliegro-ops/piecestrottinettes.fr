@@ -17,7 +17,7 @@ export interface Program {
   url_paiements: string | null; url_inscription: string | null; contact_nom: string | null; contact_email: string | null;
   notes: string | null; prochaine_action: string | null; relance_le: string | null; updated_at: string;
 }
-export interface Scooter { id: string; name: string; slug: string; published: boolean; brand: string | null; logo: string | null }
+export interface Scooter { id: string; name: string; slug: string; published: boolean; brand: string | null; logo: string | null; image: string | null }
 export interface Offer {
   id: string; scooter_model_id: string; merchant_host: string; offer_type: 'marque' | 'revendeur' | 'amazon';
   affiliate_url: string; product_url: string; price_eur: number | null; in_stock: boolean | null; is_active: boolean;
@@ -54,10 +54,10 @@ export const useScooters = () => useQuery({
   staleTime: 60_000,
   queryFn: async (): Promise<Scooter[]> => {
     const { data, error } = await supabase.from('scooter_models')
-      .select('id, name, slug, published, brands!scooter_models_brand_id_fkey(name, logo_url)').order('name');
+      .select('id, name, slug, published, image_url, brands!scooter_models_brand_id_fkey(name, logo_url)').order('name');
     if (error) throw error;
-    return (data || []).map((s: { id: string; name: string; slug: string; published: boolean | null; brands: { name: string; logo_url: string | null } | null }) =>
-      ({ id: s.id, name: s.name, slug: s.slug, published: !!s.published, brand: s.brands?.name ?? null, logo: s.brands?.logo_url ?? null }));
+    return (data || []).map((s: { id: string; name: string; slug: string; published: boolean | null; image_url: string | null; brands: { name: string; logo_url: string | null } | null }) =>
+      ({ id: s.id, name: s.name, slug: s.slug, published: !!s.published, brand: s.brands?.name ?? null, logo: s.brands?.logo_url ?? null, image: s.image_url ?? null }));
   },
 });
 
@@ -198,4 +198,26 @@ export const useSaveOffer = () => {
       : `Pas enregistrée : ${e.message}`),
     onSettled: () => { qc.invalidateQueries({ queryKey: ['aff2-offers'] }); qc.invalidateQueries({ queryKey: ['affiliate-scooters'] }); },
   });
+};
+
+/** 24/10/2026 (Nolan : « combien on gagne par trottinette ») — taux lu dans le champ texte Commission du programme.
+ *  « 5 % » → 5 ; « 3 à 10 % » → 3 à 10 ; « Jusqu'à 2 % » → jusqu'à 2 ; « à négocier » → rien (pas de gain affiché). */
+export interface Rate { min: number | null; max: number }
+export const parseRate = (txt: string | null | undefined): Rate | null => {
+  if (!txt || /n[ée]goci/i.test(txt)) return null;
+  const t = txt.replace(/,/g, '.');
+  const range = t.match(/(\d+(?:\.\d+)?)\s*(?:à|-|–)\s*(\d+(?:\.\d+)?)\s*%/);
+  if (range) return { min: Number(range[1]), max: Number(range[2]) };
+  const pct = [...t.matchAll(/(\d+(?:\.\d+)?)\s*%/g)].map(m => Number(m[1]));
+  if (!pct.length) return null;
+  if (/jusqu/i.test(txt)) return { min: null, max: pct[0] };
+  return { min: pct[0], max: pct[0] };
+};
+
+/** Gain estimé sur une vente au prix du jour. */
+export const gainOf = (price: number | null, r: Rate | null) => {
+  if (price == null || !r) return null;
+  const hi = Math.round(price * r.max / 100);
+  const lo = r.min == null ? null : Math.round(price * r.min / 100);
+  return { lo, hi, label: lo == null ? `jusqu'à ${hi} €` : lo === hi ? `${hi} €` : `${lo} à ${hi} €`, rate: r.min == null ? `jusqu'à ${r.max} %` : r.min === r.max ? `${r.max} %` : `${r.min} à ${r.max} %` };
 };

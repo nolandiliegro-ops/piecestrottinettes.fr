@@ -6,7 +6,7 @@ import { Sheet, SheetContent, SheetTitle, SheetDescription } from '@/components/
 import { cn } from '@/lib/utils';
 import {
   STATUTS, LIST_ORDER, type AffStatut, type Program, type Derived, type Scooter,
-  usePrograms, useScooters, useOffers, useClicks30, derive, coverage, brandKey, lastJournal, daysUntil, fmtDate, programOfOffer,
+  usePrograms, useScooters, useOffers, useClicks30, derive, coverage, brandKey, lastJournal, daysUntil, fmtDate, programOfOffer, parseRate,
 } from './data';
 import { Logo, StatusPill, StatusDot, Gauge } from './parts';
 import BrandPanel, { ScooterOffersRow } from './BrandPanel';
@@ -26,6 +26,7 @@ const FILTRES: { k: Filtre; label: string }[] = [
 const chip = (on: boolean) => cn('inline-flex items-center gap-2 min-h-[44px] px-3.5 rounded-xl text-sm font-semibold border whitespace-nowrap tabular-nums',
   on ? 'bg-[hsl(var(--admin-text))] text-white border-transparent' : 'bg-white border-[hsl(var(--admin-border))] text-[hsl(var(--admin-text))]');
 
+const rateTxt = (p: Program) => { const r = parseRate(p.commission); return r ? (r.min == null ? `≤ ${r.max} %` : r.min === r.max ? `${r.max} %` : `${r.min}-${r.max} %`) : ''; };
 const nextOf = (p: Program) => p.prochaine_action || (lastJournal(p.notes)?.text ?? '');
 
 /* ---------- En-tête : chiffres + cette semaine ---------- */
@@ -82,7 +83,7 @@ const BrandRow = ({ p, d, selected, onOpen }: { p: Program; d: Derived; selected
         selected && 'bg-[#EEF4EF] shadow-[inset_3px_0_0_hsl(var(--admin-accent))]')}>
       <Logo src={d.logoByBrand.get(brandKey(p.marque))} name={p.marque} size={40} />
       <span className="min-w-0">
-        <span className="flex items-center gap-2"><b className="text-sm text-[hsl(var(--admin-text))] truncate">{p.marque}</b><StatusDot s={p.statut} /></span>
+        <span className="flex items-center gap-2"><b className="text-sm text-[hsl(var(--admin-text))] truncate">{p.marque}</b><StatusDot s={p.statut} />{rateTxt(p) && <span className="text-sm font-semibold text-[hsl(var(--admin-accent))] whitespace-nowrap">{rateTxt(p)}</span>}</span>
         <span className={cn('block text-sm truncate', p.prochaine_action ? 'text-[hsl(var(--admin-text))]' : 'text-[hsl(var(--admin-text-muted))]')}>
           {p.relance_le && <b className="mr-1.5 text-[hsl(var(--admin-accent))]">{fmtDate(p.relance_le)}</b>}{next || '—'}
         </span>

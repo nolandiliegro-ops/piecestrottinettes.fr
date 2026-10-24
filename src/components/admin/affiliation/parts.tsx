@@ -3,7 +3,7 @@ import { Copy, ExternalLink, Plus } from 'lucide-react';
 import { Input } from '@/components/ui/input';
 import { Switch } from '@/components/ui/switch';
 import { cn } from '@/lib/utils';
-import { STATUT, type AffStatut, type Offer, type Program, eur, copy, hasTrackingParam, programOfOffer, useSaveOffer, useOffers } from './data';
+import { STATUT, type AffStatut, type Offer, type Program, eur, copy, hasTrackingParam, programOfOffer, useSaveOffer, useOffers, gainOf, parseRate } from './data';
 
 /* Briques visuelles de l'admin Affiliation v2 (24/10/2026). */
 
@@ -42,22 +42,47 @@ export const IconBtn = ({ label, onClick, href, children }: { label: string; onC
 export const OfferLine = ({ o, programs }: { o: Offer; programs: Program[] }) => {
   const save = useSaveOffer();
   const prog = programOfOffer(o, programs);
+  const gain = gainOf(o.price_eur, parseRate(prog?.commission));
   return (
-    <div className={cn('flex flex-wrap items-center gap-x-3 gap-y-1.5 rounded-xl border border-[hsl(var(--admin-border))] bg-[#FBFAF7] px-3 py-2', !o.is_active && 'opacity-60')}>
-      <span className="font-bold text-sm text-[hsl(var(--admin-text))] break-all">{o.merchant_host.replace(/^www\./, '')}</span>
-      {o.offer_type !== 'marque' && <span className="text-sm font-bold uppercase tracking-wide text-[hsl(var(--admin-text-muted))]">{o.offer_type}</span>}
-      {o.price_eur != null && <span className="text-sm tabular-nums font-semibold">{eur(o.price_eur)}</span>}
-      {o.in_stock != null && <span className={cn('text-sm font-semibold', o.in_stock ? 'text-[#2F6B45]' : 'text-amber-700')}>{o.in_stock ? 'en stock' : 'rupture'}</span>}
-      <span className={cn('text-sm font-semibold', prog ? 'text-[#2F6B45]' : 'text-amber-700')}>{prog ? 'suivi ✓' : 'sans suivi'}</span>
-      <span className="ml-auto flex items-center gap-1.5">
-        <IconBtn label="Copier le lien partenaire" onClick={() => copy(o.affiliate_url, 'Lien')}><Copy className="w-4 h-4" /></IconBtn>
-        <IconBtn label="Ouvrir la page produit" href={o.product_url}><ExternalLink className="w-4 h-4" /></IconBtn>
-        <label className="inline-flex items-center gap-2 min-h-[44px] px-1 text-sm text-[hsl(var(--admin-text-muted))]">
-          <Switch checked={o.is_active} disabled={save.isPending} onCheckedChange={v => save.mutate({ id: o.id, patch: { is_active: v } })} aria-label={o.is_active ? 'Désactiver cette offre' : 'Activer cette offre'} />
-          <span className="hidden sm:inline">{o.is_active ? 'Active' : 'Coupée'}</span>
-        </label>
-      </span>
+    <div className={cn('grid gap-2 rounded-xl border border-[hsl(var(--admin-border))] bg-[#FBFAF7] px-3 py-2.5', !o.is_active && 'opacity-60')}>
+      <div className="flex flex-wrap items-center gap-x-3 gap-y-1">
+        <span className="font-bold text-sm text-[hsl(var(--admin-text))] break-all">{o.merchant_host.replace(/^www\./, '')}</span>
+        {o.offer_type !== 'marque' && <span className="text-sm font-bold uppercase tracking-wide text-[hsl(var(--admin-text-muted))]">{o.offer_type}</span>}
+        {o.price_eur != null && <span className="text-sm tabular-nums font-semibold">{eur(o.price_eur)}</span>}
+        {o.in_stock != null && <span className={cn('text-sm font-semibold', o.in_stock ? 'text-[#2F6B45]' : 'text-amber-700')}>{o.in_stock ? 'en stock' : 'rupture'}</span>}
+        <span className={cn('text-sm font-semibold', prog ? 'text-[#2F6B45]' : 'text-amber-700')}>{prog ? 'suivi ✓' : 'sans suivi'}</span>
+      </div>
+      <div className="flex flex-wrap items-center gap-2">
+        {gain
+          ? <span className="inline-flex items-baseline gap-1.5 rounded-lg bg-[hsl(var(--admin-accent))] text-white px-2.5 py-1.5">
+              <span className="text-sm">Tu gagnes</span><b className="text-base tabular-nums">{gain.label}</b><span className="text-sm opacity-90">par vente · {gain.rate}</span>
+            </span>
+          : <span className="text-sm text-[hsl(var(--admin-text-muted))]">{prog ? (o.price_eur == null ? 'Gain : prix pas encore relevé' : 'Gain : commission à renseigner dans Programme') : 'Gain : aucun programme reconnu'}</span>}
+        <span className="ml-auto flex items-center gap-1.5">
+          <button type="button" onClick={() => copy(o.affiliate_url, 'Lien partenaire')}
+            className="inline-flex items-center gap-1.5 min-h-[44px] px-3 rounded-xl bg-[hsl(var(--admin-text))] text-white text-sm font-semibold">
+            <Copy className="w-4 h-4" />Mon lien
+          </button>
+          <IconBtn label="Ouvrir la page produit" href={o.product_url}><ExternalLink className="w-4 h-4" /></IconBtn>
+          <label className="inline-flex items-center gap-2 min-h-[44px] px-1 text-sm text-[hsl(var(--admin-text-muted))]">
+            <Switch checked={o.is_active} disabled={save.isPending} onCheckedChange={v => save.mutate({ id: o.id, patch: { is_active: v } })} aria-label={o.is_active ? 'Désactiver cette offre' : 'Activer cette offre'} />
+            <span className="hidden sm:inline">{o.is_active ? 'Active' : 'Coupée'}</span>
+          </label>
+        </span>
+      </div>
     </div>
+  );
+};
+
+/** Photo de la trottinette (repli : initiales de la marque). */
+export const ScooterPhoto = ({ src, name, size = 64 }: { src: string | null; name: string; size?: number }) => {
+  const [broken, setBroken] = useState(false);
+  return (
+    <span style={{ width: size, height: size }} className="shrink-0 rounded-xl bg-white border border-[hsl(var(--admin-border))] inline-flex items-center justify-center overflow-hidden">
+      {src && !broken
+        ? <img src={src} alt={name} loading="lazy" onError={() => setBroken(true)} className="w-full h-full object-contain p-1" />
+        : <span className="text-sm font-black text-[hsl(var(--admin-text-muted))]">{name.slice(0, 2).toUpperCase()}</span>}
+    </span>
   );
 };
 
