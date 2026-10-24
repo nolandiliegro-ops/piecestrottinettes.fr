@@ -76,12 +76,20 @@ const SkotDesktopLauncher = ({ variant, onOpen }: { variant: SkotPcVariant; onOp
   /* 1 · Surgit du bord — à moitié sorti du bord droit de l'écran ; au survol il sort en entier et parle. */
   if (variant === 1)
     return (
-      <button type="button" onClick={onOpen} aria-label={LABEL} {...hp} className="hidden md:flex fixed z-40 right-0 bottom-6 items-end" style={{ animation: "skpc-in-right .7s cubic-bezier(.2,.9,.3,1.15) both" }}>
+      // Le conteneur ne capte aucun clic : seule la mascotte est un bouton (la bulle invisible ne doit pas bloquer la page).
+      <div className="hidden md:flex fixed z-40 right-0 bottom-6 items-end pointer-events-none" style={{ animation: "skpc-in-right .7s cubic-bezier(.2,.9,.3,1.15) both" }}>
         <Bubble className="mb-36 -mr-6 max-w-[230px] transition-all duration-300" style={{ opacity: hover ? 1 : 0, transform: hover ? "none" : "translateX(20px)" }}><Hello /></Bubble>
-        <span className="block transition-transform duration-500" style={{ transform: hover ? "translateX(0)" : "translateX(38%)", transitionTimingFunction: "cubic-bezier(.2,.9,.3,1.2)" }}>
+        <button
+          type="button"
+          onClick={onOpen}
+          aria-label={LABEL}
+          {...hp}
+          className="block pointer-events-auto transition-transform duration-500"
+          style={{ transform: hover ? "translateX(0)" : "translateX(38%)", transitionTimingFunction: "cubic-bezier(.2,.9,.3,1.2)" }}
+        >
           <Skot size={220} wink={hover} />
-        </span>
-      </button>
+        </button>
+      </div>
     );
 
   /* 2 · Debout dans le coin — en entier, qui se balance ; il dit bonjour à l'arrivée, puis au survol. */
