@@ -117,7 +117,8 @@ jobs:
               read -r table iou slugs <<< "$extra"
               aargs="--lot $lot --table ${table:-scooter_models}"
               [ -n "$iou" ] && aargs="$aargs --iou $iou"
-              [ -n "$slugs" ] && aargs="$aargs --slugs $slugs"
+              [ -n "$slugs" ] && [ "$slugs" != "toutes" ] && aargs="$aargs --slugs $slugs"
+              [ "$slugs" = "toutes" ] && aargs="$aargs --toutes"
               node scripts/audit-angles.mjs $aargs > "out/angles-$lot.log" 2>&1
               echo "::notice title=$lot angles::EXIT=$?"
               grep '^::' "out/angles-$lot.log" | head -5

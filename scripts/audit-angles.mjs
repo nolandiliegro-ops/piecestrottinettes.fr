@@ -29,6 +29,7 @@ const TABLE = arg('--table', 'scooter_models');
 if (!['scooter_models', 'parts'].includes(TABLE)) throw new Error('table inconnue');
 const SLUGS = (arg('--slugs', '') || '').split(',').map((s) => s.trim()).filter(Boolean);
 const SEUIL_IOU = Number(arg('--iou', '0.82'));
+const ALL = args.includes('--toutes');
 const LOT = arg('--lot', TABLE === 'parts' ? 'pieces' : 'trottinettes');
 const OUT = resolve(ROOT, 'out', `angles-${LOT}`);
 mkdirSync(OUT, { recursive: true });
@@ -158,7 +159,7 @@ async function auditOne(s) {
   };
   rec.verdict = rec.angles >= 3 && rec.a_retirer.length === 0 && rec.non_detourees.length === 0 ? 'ok'
     : rec.angles >= 3 ? 'nettoyer' : 'completer';
-  const tiles = rec.verdict === 'ok' ? null : await Promise.all(items.slice(0, 8).map((it) => {
+  const tiles = rec.verdict === 'ok' && !ALL ? null : await Promise.all(items.slice(0, 8).map((it) => {
     const g = it.hash !== undefined ? groupOf(it.i) : -1;
     const lettre = g >= 0 ? String.fromCharCode(65 + g) : '?';
     const dup = rec.a_retirer.includes(it.i);

@@ -1,1 +1,1 @@
-angles trottinettes scooter_models 0.82
+angles trottinettes-toutes scooter_models 0.82 toutes
