@@ -4,7 +4,9 @@
 import { useEffect, useRef, useState, type FormEvent } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { X, Send, Camera, Loader2, ShoppingCart, ThumbsUp, ThumbsDown } from "lucide-react";
+import { readBarreBasVariant } from "@/components/navigation/MobileNavProposals";
 import SkotAvatar from "./SkotAvatar";
+import SkotLauncher, { readSkotBtnVariant } from "./SkotLauncher";
 import { askSkot, compressImage, sendSkotFeedback, skotEnabled, skotHiddenOn, skotPageContext, type SkotCard } from "@/lib/skot";
 import { useCart } from "@/hooks/useCart";
 import { SHOP_OPEN, openPrelaunch } from "@/config/launch";
@@ -67,6 +69,15 @@ const SkotWidget = () => {
   const listRef = useRef<HTMLDivElement>(null);
   const fileRef = useRef<HTMLInputElement>(null);
 
+  // 24/10 : la barre du bas « SKOT au centre » (?barrebas=5) ouvre SKOT par cet événement et remplace la bulle flottante.
+  useEffect(() => {
+    const onOpen = () => setOpen(true);
+    window.addEventListener("skot:open", onOpen);
+    return () => window.removeEventListener("skot:open", onOpen);
+  }, []);
+  const [inNav] = useState(() => readBarreBasVariant() === 5);
+  // 24/10 : ?skotbtn=1..4 = SKOT qui sort de la barre du bas (téléphone) ; l'ordinateur garde le bouton vert.
+  const [btn] = useState(readSkotBtnVariant);
   useEffect(() => { listRef.current?.scrollTo({ top: listRef.current.scrollHeight, behavior: "smooth" }); }, [msgs, busy]);
   useEffect(() => {
     if (!open) return;
@@ -109,12 +120,13 @@ const SkotWidget = () => {
 
   return (
     <>
+      {!open && btn && !inNav && <SkotLauncher variant={btn} onOpen={() => setOpen(true)} />}
       {!open && (
         <button
           type="button"
           onClick={() => setOpen(true)}
           aria-label="Ouvrir SKOT, l'assistant de l'atelier"
-          className="fixed z-40 right-3 md:right-6 bottom-[calc(84px+env(safe-area-inset-bottom))] md:bottom-6 flex items-center gap-2 pl-1.5 pr-4 min-h-[52px] bg-[#4A7C59] hover:bg-[#3A6449] text-white shadow-lg"
+          className={`fixed z-40 right-3 md:right-6 bottom-[calc(84px+env(safe-area-inset-bottom))] md:bottom-6 ${inNav || btn ? "hidden md:flex" : "flex"} items-center gap-2 pl-1.5 pr-4 min-h-[52px] bg-[#4A7C59] hover:bg-[#3A6449] text-white shadow-lg`}
           style={{ clipPath: CHAMFER }}
         >
           <span className="bg-white rounded-full grid place-items-center w-10 h-10"><SkotAvatar size={36} /></span>

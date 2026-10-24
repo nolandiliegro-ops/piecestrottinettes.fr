@@ -6,6 +6,8 @@ import { useSelectedScooter } from '@/contexts/ScooterContext';
 import { useCart } from '@/hooks/useCart';
 import { useSpotlight } from '@/contexts/SpotlightContext';
 import { cn } from '@/lib/utils';
+import { useState } from 'react';
+import MobileNavProposals, { readBarreBasVariant } from './MobileNavProposals';
 
 interface NavItem {
   icon: React.ElementType;
@@ -15,7 +17,7 @@ interface NavItem {
   isSpotlight?: boolean;
 }
 
-const MobileNav = () => {
+const MobileNavLegacy = () => {
   const location = useLocation();
   const navigate = useNavigate();
   const { selectedBrandColors, selectedScooter } = useSelectedScooter();
@@ -270,6 +272,12 @@ const MobileNav = () => {
       </div>
     </motion.nav>
   );
+};
+
+// 24/10 : ?barrebas=1..5 = propositions de nouvelle barre ; sans paramètre = barre actuelle.
+const MobileNav = () => {
+  const [variant] = useState(readBarreBasVariant);
+  return variant ? <MobileNavProposals variant={variant} /> : <MobileNavLegacy />;
 };
 
 export default MobileNav;
