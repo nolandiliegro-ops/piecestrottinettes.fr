@@ -112,8 +112,11 @@ const Go = ({ o, label = "Voir l'offre", tone = GREEN, full = false, small = fal
     <span className="whitespace-nowrap">{label}</span><ArrowRight className="w-5 h-5 transition-transform group-hover:translate-x-0.5" />
   </a>
 );
-// Alerte de baisse de prix : branchée le 24/10 (PriceAlert.tsx → subscribe_price_alert, mail la nuit).
-const Alert = () => <PriceAlertForm />;
+// Alerte de baisse de prix : RETIRÉE des fiches qui ont un vendeur (24/10, Nolan : « le but, c'est que les gens
+// achètent ») — une raison d'attendre = une commission qui peut partir ailleurs. Elle reste sur les fiches SANS
+// vendeur (NoOfferBlock, PriceAlert.tsx), où elle ne coûte aucune vente. Visible ici seulement avec ?alerte=1.
+const alerteOn = () => typeof window !== "undefined" && new URLSearchParams(window.location.search).get("alerte") === "1";
+const Alert = () => alerteOn() ? <PriceAlertForm /> : null;
 const Title = ({ name }: { name: string }) => (
   <h2 className="text-xl lg:text-2xl uppercase" style={{ fontFamily: UNB, fontWeight: 900, fontStyle: "italic", color: CARBON }}>Où acheter {laName(name)}</h2>
 );
