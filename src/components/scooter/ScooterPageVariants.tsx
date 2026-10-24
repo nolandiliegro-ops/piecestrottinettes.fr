@@ -32,6 +32,8 @@ import BrandExplorer, { type ExploBrand, type ExploLook } from "@/components/sco
 import { useBrands } from "@/hooks/useScooterData";
 import { TopGammeNav, navParam, byPower } from "@/components/scooter/TopNavProposals";
 import { BuyHeroButton, achatParam, livePrice } from "@/components/scooter/BuyProposals";
+import { StatusOnFiche, readEtiquette, type WithCommercialStatus } from "@/components/scooter/CommercialStatus";
+import { laName } from "@/lib/article";
 
 export type PageStyle = 1 | 2 | 3 | 4 | 5 | 6;
 export const STYLE_NAMES: Record<PageStyle, string> = { 1: "Paddock", 2: "Cockpit", 3: "Grille", 4: "Stand", 5: "Pit-wall", 6: "Pit-stand" };
@@ -555,6 +557,7 @@ const PitWall = ({ scooter, specs, gamme, accent, brand, partsCount, tag, gammeB
   const galN = Number(sp.get("gal"));
   // 16/10 : « Plaque » (4) choisi par Nolan = défaut ; ?gal=0 = ancien carrousel.
   const galStyle = (sp.has("gal") ? (galN >= 1 && galN <= 5 ? galN : null) : 4) as GalStyle | null;
+  const etiquette = readEtiquette(sp); // 24/10 : statut commercial sous le titre, propositions ?etiquette=1..5
   const btnLook: Look = BTN[sp.get("btn") ?? ""] ?? (gammeBelow ? "slant" : "pit"); // 16/10 : biseau retenu pour Pit-stand
   const reduceMotion = useReducedMotion();
   // 24/10 : navigation entre trottinettes en haut de fiche, propositions ?nav=1..5 (sans paramètre : inchangé).
@@ -577,6 +580,7 @@ const PitWall = ({ scooter, specs, gamme, accent, brand, partsCount, tag, gammeB
           <div>
             <BrandLock scooter={scooter} accent={accent} />
             <div className="mt-2"><Title name={scooter.name} italic /></div>
+            {etiquette && <StatusOnFiche s={scooter as WithCommercialStatus} look={etiquette} name={laName(scooter.name)} />}
             {/* 16/10 : sur Pit-stand, plus d'onglets — Nolan ne trouvait pas la description cachée derrière « Présentation ». */}
             {!gammeBelow && <div className="mt-5 inline-flex rounded-full p-1 bg-white border border-[#ECE7DD]" role="tablist">
               {tabs.map((t) => (

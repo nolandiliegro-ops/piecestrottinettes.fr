@@ -39,6 +39,9 @@ export interface ScooterDetail {
     slug: string;
     logo_url: string | null;
   } | null;
+  // 24/10 : statut commercial (en vente / plus vendue neuve), posé avec preuve — colonnes hors des types générés.
+  commercial_status?: string | null;
+  sold_until_year?: number | null;
 }
 
 /** Colonnes trotte nécessaires à solidConversionState (fiche pièce, trotte du garage). */
@@ -121,6 +124,8 @@ export const useScooterBySlug = (slug: string | undefined) => {
           affiliate_link,
           tire_family,
           solid_conversion,
+          commercial_status,
+          sold_until_year,
           brand:brands!scooter_models_brand_id_fkey(id, name, slug, logo_url)
         `)
         .eq("slug", slug)

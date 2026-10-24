@@ -16,6 +16,7 @@ import { Skeleton } from "@/components/ui/skeleton";
 import { Button } from "@/components/ui/button";
 import { useBrands, useScooterModels } from "@/hooks/useScooterData";
 import { getPrimaryImage } from "@/lib/entityImage";
+import { readEtiquette } from "@/components/scooter/CommercialStatus";
 import { AtelierHead, PhotoTile, brandPhoto } from "@/components/listing/Atelier";
 
 const normalize = (v: string) =>
@@ -78,6 +79,7 @@ const Scooters = () => {
   // 17/10 : habillage racing des filtres + recherche à comparer, ?filtres=1..5 (sans paramètre : barre actuelle)
   const fl = Number(params.get("filtres"));
   // 17/10 : « Plaques » (1) retenue par Nolan = défaut ; ?filtres=0 = ancienne barre, 2..5 = autres propositions
+  const etiquette = readEtiquette(params); // 24/10 : statut commercial sur les cartes, propositions ?etiquette=1..5
   const cartes = readCartesLook(params); // 18/10 : 5 propositions de cartes ?cartes=1..5, sans paramètre = carte actuelle
   const atelier = params.get("vue") !== "0"; // 17/10 : « Atelier » par défaut (choix Nolan), ancienne page sur ?vue=0
   const filterLook = (params.get("filtres") === null ? 1 : fl >= 1 && fl <= 5 ? fl : null) as FilterLook | null;
@@ -310,7 +312,7 @@ const Scooters = () => {
                 data-cartes={cartes ?? 0}
               >
                 {shownScooters.map((scooter, index) =>
-                  cartes ? <ScooterCardAtelier key={scooter.id} s={scooter} look={cartes} index={index} /> : <ScooterModelCard key={scooter.id} scooter={scooter} index={index} />
+                  cartes ? <ScooterCardAtelier key={scooter.id} s={scooter} look={cartes} index={index} etiquette={etiquette} /> : <ScooterModelCard key={scooter.id} scooter={scooter} index={index} />
                 )}
               </motion.div>
             ) : (

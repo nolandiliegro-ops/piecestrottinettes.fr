@@ -20,6 +20,7 @@ export interface FilterableScooter {
   affiliate_link?: string | null;
   image_url?: string | null;
   brand?: { slug?: string | null; name?: string | null } | null;
+  commercial_status?: string | null;
 }
 
 /** 24/10 (Nolan) : « Notre sélection » = tri par défaut. Ce qui fait vendre en premier :
@@ -89,6 +90,15 @@ export const brakeClass = (s: FilterableScooter): "hydraulic" | "disc" | "drum" 
 };
 
 export const FILTER_GROUPS: FilterGroup[] = [
+  // 24/10 (Nolan) : séparer ce qui s'achète neuf de ce qui ne se vend plus. Statut posé avec preuve (status_source) ;
+  // « a_verifier » n'entre dans aucune des deux options : visible seulement sans filtre (« Toutes »).
+  {
+    key: "vente", label: "Vente",
+    options: [
+      { value: "oui", label: "En vente neuve", test: (s) => s.commercial_status === "en_vente" },
+      { value: "non", label: "Plus vendue neuve", test: (s) => s.commercial_status === "arretee" || s.commercial_status === "fin_de_serie" },
+    ],
+  },
   {
     key: "puissance", label: "Puissance",
     options: [
