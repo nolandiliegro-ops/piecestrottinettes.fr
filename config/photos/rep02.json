@@ -1,0 +1,799 @@
+{
+ "lot": "rep02",
+ "models": [
+  {
+   "id": "20d3306b-b077-46e5-85b1-2163f149be12",
+   "slug": "apollo-go",
+   "name": "Apollo Go",
+   "brand": "Apollo",
+   "candidates": [
+    "https://cdn.shopify.com/s/files/1/0030/8183/0512/files/Renders_M06022024_2_1.png?v=1776450086",
+    "https://cdn.shopify.com/s/files/1/0030/8183/0512/files/BEST_E-SCOOTERS_OF_2026_1.png?v=1776450086",
+    "https://cdn.shopify.com/s/files/1/0030/8183/0512/files/7_5caf06fb-3919-419f-af48-40e79916a1db.png?v=1776450086",
+    "https://cdn.shopify.com/s/files/1/0030/8183/0512/files/8_cb0a2a7e-92eb-4173-8dc8-6336ba751360.png?v=1776450086",
+    "https://cdn.shopify.com/s/files/1/0030/8183/0512/files/9_Tires.jpg?v=1776450086",
+    "https://cdn.shopify.com/s/files/1/0030/8183/0512/files/10_Lights.jpg?v=1776450086"
+   ]
+  },
+  {
+   "id": "52da403f-64c5-4f51-a3e9-e45c959f648e",
+   "slug": "cecotec-bongo-d20",
+   "name": "Cecotec Bongo D20",
+   "brand": "Cecotec",
+   "candidates": [
+    "https://media.cecotec.cloud/07104/bongo-serie-d20_njwdj9_1.png",
+    "https://media.cecotec.cloud/07104/bongo-serie-d20_7ri7od_2.jpg",
+    "https://media.cecotec.cloud/07104/bongo-serie-d20_tykotl_3.jpg",
+    "https://media.cecotec.cloud/07104/bongo-serie-d20_ovbrzb_4.jpg",
+    "https://media.cecotec.cloud/07104/bongo-serie-d20_6vbvl6_5.jpg",
+    "https://media.cecotec.cloud/07104/bongo-serie-d20_r58kgf_7.jpg",
+    "https://media.cecotec.cloud/07104/bongo-serie-d20_0f890u_8.jpg",
+    "https://media.cecotec.cloud/07104/bongo-serie-d20_4xszww_9.jpg"
+   ]
+  },
+  {
+   "id": "623b64ff-6779-4823-8442-682dcdf0e729",
+   "slug": "cecotec-bongo-serie-m30-connected",
+   "name": "Cecotec Bongo Serie M30 Connected",
+   "brand": "Cecotec",
+   "candidates": [
+    "https://media.cecotec.cloud/07106/bongo-serie-m30-connected_uq37de_2.png",
+    "https://media.cecotec.cloud/07106/bongo-serie-m30-connected_xfbuu2_4.jpg",
+    "https://media.cecotec.cloud/07106/bongo-serie-m30-connected_7qhz5t_5.jpg",
+    "https://media.cecotec.cloud/07106/bongo-serie-m30-connected_dxbe3o_6.jpg",
+    "https://media.cecotec.cloud/07106/bongo-serie-m30-connected_uguts9_7.jpg",
+    "https://media.cecotec.cloud/07106/bongo-serie-m30-connected_xq250f_8.jpg",
+    "https://media.cecotec.cloud/07106/bongo-serie-m30-connected_0sqzk1_11.jpg"
+   ]
+  },
+  {
+   "id": "fc75e858-7731-4a9e-ae19-f2029cfa257d",
+   "slug": "engwe-y400",
+   "name": "Engwe Y400",
+   "brand": "Engwe",
+   "candidates": [
+    "https://cdn.shopify.com/s/files/1/0237/3536/9792/files/6_29b222b2-42f3-4c82-a4b7-c7d72c92db03.jpg?v=1735283830",
+    "https://cdn.shopify.com/s/files/1/0237/3536/9792/files/5_8d322de0-753c-4e6a-b5d8-b0614253113a.jpg?v=1735283831",
+    "https://cdn.shopify.com/s/files/1/0237/3536/9792/files/4_3c0e118e-a1f9-44b9-976d-f5ed0559f0f5.jpg?v=1735283831",
+    "https://www.evolt.si/cdn/shop/files/Elektricni-skiro-Engwe-Y400-evolt-1.webp?v=1773938511"
+   ]
+  },
+  {
+   "id": "0c105498-abf0-4a0e-ac55-9794c503610e",
+   "slug": "hiboy-ks4",
+   "name": "Hiboy KS4",
+   "brand": "Hiboy",
+   "candidates": [
+    "https://cdn.shopify.com/s/files/1/0718/5521/0790/files/3_595f69ab-07b9-4101-8764-3c53943c1680.webp?v=1697072099",
+    "https://cdn.shopify.com/s/files/1/0718/5521/0790/files/4_4ac21566-b765-4d85-99d1-1a5b455b249a.webp?v=1697072100",
+    "https://cdn.shopify.com/s/files/1/0718/5521/0790/files/5_774b4a6c-320d-4402-8596-324142dcc596.webp?v=1697072100",
+    "https://cdn.shopify.com/s/files/1/0718/5521/0790/files/7_41d3ac09-bd9b-41ae-a4ef-9c3ee4638938.webp?v=1697072103",
+    "https://cdn.shopify.com/s/files/1/0718/5521/0790/files/8_2a439993-4e49-424c-a0aa-28398387a7dc.webp?v=1697072100",
+    "https://cdn.shopify.com/s/files/1/0718/5521/0790/files/9_e159e1fc-7977-4233-951d-dc33718acd9f.webp?v=1697072101",
+    "https://cdn.shopify.com/s/files/1/0718/5521/0790/files/ks4_209c7485-4eec-4e60-847f-92a089fbe4e7.webp?v=1697072102",
+    "https://cdn.shopify.com/s/files/1/0752/0482/1277/products/KS4.jpg?v=1683760222"
+   ]
+  },
+  {
+   "id": "4b2b49a5-7b3e-4c8a-8f22-5f8f8f0b29bb",
+   "slug": "hiboy-s2-pro",
+   "name": "Hiboy S2 Pro",
+   "brand": "Hiboy",
+   "candidates": [
+    "https://cdn.shopify.com/s/files/1/0425/6350/2247/files/S2pro_59b10ee6-f456-4270-8c5d-89e59eaf7a3c.jpg?v=1759219343",
+    "https://cdn.shopify.com/s/files/1/0425/6350/2247/files/s2pro_12.jpg?v=1777011435",
+    "https://cdn.shopify.com/s/files/1/0425/6350/2247/products/5.jpg?v=1759219343",
+    "https://cdn.shopify.com/s/files/1/0425/6350/2247/products/4_c2fda6fe-f79e-4a5d-bbf2-865f72786cac.jpg?v=1759219343",
+    "https://cdn.shopify.com/s/files/1/0425/6350/2247/files/3_bbf5919c-09ca-4426-beac-decf4039a880.jpg?v=1759219343",
+    "https://cdn.shopify.com/s/files/1/0425/6350/2247/products/4_8b769f87-7b0a-49a7-bd9d-df82046d224d.jpg?v=1759219343",
+    "https://cdn.shopify.com/s/files/1/0425/6350/2247/files/4_87efd10c-e8da-4cac-aaa8-9bb63b84628a.jpg?v=1759219343",
+    "https://cdn.shopify.com/s/files/1/0425/6350/2247/files/S2-Pro_10a19be9-8729-46dd-9749-aebd2f887079.png?v=1774941762"
+   ]
+  },
+  {
+   "id": "784c0fb9-a041-40c2-b1ad-e1fbd940c75d",
+   "slug": "inmotion-air-pro",
+   "name": "Inmotion Air Pro",
+   "brand": "Inmotion",
+   "candidates": [
+    "https://cdn.shopify.com/s/files/1/0630/1951/6082/files/207-_3_d4d99aa2-39b6-40f4-9458-d67e16db0009.png?v=1761538990",
+    "https://cdn.shopify.com/s/files/1/0630/1951/6082/files/207-_1_ce8e2545-1b59-42c2-b62a-846561d41d27.png?v=1751253278",
+    "https://cdn.shopify.com/s/files/1/0630/1951/6082/files/20261021-__12.png?v=1792563565",
+    "https://scooterhut.com.au/cdn/shop/products/InmotionAirStudio-099-Edit.jpg?v=1745398615&width=2048",
+    "https://cdn.shopify.com/s/files/1/0630/1951/6082/files/207-_4.png?v=1761538990"
+   ]
+  },
+  {
+   "id": "dff1a983-35ff-4b47-810f-6b609e52cb99",
+   "slug": "inokim-light-2-super",
+   "name": "Inokim Light 2 Super",
+   "brand": "Inokim",
+   "candidates": [
+    "https://cdn.shopify.com/s/files/1/0114/7404/2980/files/INOKIM_LIGHT_2_SUPER_D__22_28.jpg?v=1770671191",
+    "https://cdn.shopify.com/s/files/1/0114/7404/2980/files/1_cfa2760a-be06-47f1-97f9-af1ba0cc4add.png?v=1770671191",
+    "https://cdn.shopify.com/s/files/1/0114/7404/2980/files/2_2cb2e51b-aa95-49c5-99f5-887653d352b8.png?v=1770671191",
+    "https://cdn.shopify.com/s/files/1/0114/7404/2980/files/32.png?v=1770671191",
+    "https://cdn.shopify.com/s/files/1/0114/7404/2980/files/33.png?v=1770671191",
+    "https://cdn.shopify.com/s/files/1/0114/7404/2980/files/25.png?v=1770671191",
+    "https://cdn.shopify.com/s/files/1/0114/7404/2980/files/3_8b8dbb3c-a2b8-4cc5-b7e4-9b15cedaf02c.png?v=1770671191",
+    "https://cdn.shopify.com/s/files/1/0114/7404/2980/files/5_f8cc3a7a-14b4-4dc5-b445-77df4dd81981.png?v=1770671191"
+   ]
+  },
+  {
+   "id": "c179efbc-c143-4b69-9e74-8cf63177ac40",
+   "slug": "iscooter-w9-air",
+   "name": "iScooter W9 Air",
+   "brand": "iScooter",
+   "candidates": [
+    "https://cdn.shopify.com/s/files/1/0659/8082/5864/files/W9Airrearwhite.png?v=1780305321",
+    "https://cdn.shopify.com/s/files/1/0659/8082/5864/files/W9Airfrontwhite.png?v=1780305321",
+    "https://cdn.shopify.com/s/files/1/0659/8082/5864/files/W9Airwhitefold.png?v=1780305321",
+    "https://cdn.shopify.com/s/files/1/0659/8082/5864/files/W9Airlookdownwhite.png?v=1780305321",
+    "https://cdn.shopify.com/s/files/1/0659/8082/5864/files/W9Airrightwhite.png?v=1780305321",
+    "https://cdn.shopify.com/s/files/1/0659/8082/5864/files/W9Airleftwhite.png?v=1780305321",
+    "https://cdn.shopify.com/s/files/1/0659/8082/5864/files/W9Airrearsuspension.png?v=1780305322",
+    "https://cdn.shopify.com/s/files/1/0659/8082/5864/files/W9Airfrontsuspension.png?v=1780305322"
+   ]
+  },
+  {
+   "id": "0328acad-fec5-42b4-b491-d406665f9337",
+   "slug": "kaabo-mantis-10-elite",
+   "name": "Kaabo Mantis 10 Elite",
+   "brand": "Kaabo",
+   "candidates": [
+    "https://cdn.shopify.com/s/files/1/0034/7504/6445/products/kaabo-mantis-elite-offroad-scooter-side.jpg?v=1686747665",
+    "https://cdn.shopify.com/s/files/1/0034/7504/6445/products/kaabo-mantis-elite-electric-scooter-folded.jpg?v=1686747667",
+    "https://cdn.shopify.com/s/files/1/0034/7504/6445/products/kaabo-mantis-elite-electric-scooter-rear-wheel-suspension.jpg?v=1686747672",
+    "https://cdn.shopify.com/s/files/1/0034/7504/6445/products/kaabo-mantis-elite-electric-scooter-front-wheel.jpg?v=1686747670",
+    "https://cdn.shopify.com/s/files/1/0034/7504/6445/products/kaabo-mantis-elite-electric-scooter-handlebar-dashboard.jpg?v=1686747669"
+   ]
+  },
+  {
+   "id": "3f7fec50-e518-4966-9a4d-00340adf2207",
+   "slug": "kukirin-c1-pro",
+   "name": "Kukirin C1 Pro",
+   "brand": "Kukirin",
+   "candidates": [
+    "https://cdn.shopify.com/s/files/1/0617/7482/3631/files/C1Proscooters_4.jpg?v=1751364487",
+    "https://cdn.shopify.com/s/files/1/0617/7482/3631/files/C1Proscooters_1.jpg?v=1751364487",
+    "https://cdn.shopify.com/s/files/1/0617/7482/3631/files/C1Proscooters_2.jpg?v=1751364487",
+    "https://cdn.shopify.com/s/files/1/0617/7482/3631/files/C1Proscooters_9.jpg?v=1751364478",
+    "https://cdn.shopify.com/s/files/1/0617/7482/3631/files/C1Proscooters_8.jpg?v=1751364478",
+    "https://cdn.shopify.com/s/files/1/0617/7482/3631/files/C1Proscooters_10.jpg?v=1751364478"
+   ]
+  },
+  {
+   "id": "39f83610-c1f1-4a52-8949-96a1e557d573",
+   "slug": "navee-k100-pro",
+   "name": "Navee K100 Pro",
+   "brand": "Navee",
+   "candidates": [
+    "https://cdn.shopify.com/s/files/1/0552/1057/3937/files/Product_Image_19.jpg?v=1762331802",
+    "https://cdn.shopify.com/s/files/1/0552/1057/3937/files/Product_Image_24.jpg?v=1762331802",
+    "https://cdn.shopify.com/s/files/1/0552/1057/3937/files/Product_Image_25.jpg?v=1762331802",
+    "https://cdn.shopify.com/s/files/1/0552/1057/3937/files/Product_Image_104.jpg?v=1762331802",
+    "https://cdn.shopify.com/s/files/1/0552/1057/3937/files/Product_Image_105.jpg?v=1762331802",
+    "https://cdn.shopify.com/s/files/1/0552/1057/3937/files/Product_Image_113_ed9fb742-da45-4864-ade2-677b2db6c74e.jpg?v=1762331802",
+    "https://cdn.shopify.com/s/files/1/0552/1057/3937/files/20251009-112822.png?v=1762331802",
+    "https://cdn.shopify.com/s/files/1/0552/1057/3937/files/Product_Image_21.jpg?v=1762331802"
+   ]
+  },
+  {
+   "id": "19d9217a-017c-4ca1-bc22-2569d6562fce",
+   "slug": "ninebot-f3-pro-e",
+   "name": "Ninebot F3 Pro E",
+   "brand": "Ninebot",
+   "candidates": [
+    "https://voltride.com/wp-content/uploads/2025/09/segway-ninebot-f3-pro-e-scooter-rear-side-angeled-view.jpg",
+    "https://voltride.com/wp-content/uploads/2025/09/segway-ninebot-f3-pro-e-scooter-rear-view.jpg",
+    "https://voltride.com/wp-content/uploads/2025/09/segway-ninebot-f3-pro-e-scooter-front-view.jpg",
+    "https://voltride.com/wp-content/uploads/2025/09/segway-ninebot-f3-pro-e-scooter-side-angeled-view.jpg",
+    "https://voltride.com/wp-content/uploads/2025/10/segway-ninebot-f3-pro-e-rear-suspension.jpg",
+    "https://voltride.com/wp-content/uploads/2025/10/segway-ninebot-f3-pro-e-front-suspension.jpg"
+   ]
+  },
+  {
+   "id": "35fe7643-24d6-46e3-887e-181d794284c0",
+   "slug": "segway-gt1",
+   "name": "Segway GT1",
+   "brand": "Segway",
+   "candidates": [
+    "https://segway.imgix.net/catalog/product/1/6/16.png",
+    "https://cdn.shopify.com/s/files/1/0735/5478/8668/products/17.png?v=1680244948",
+    "https://cdn.shopify.com/s/files/1/0735/5478/8668/products/18.png?v=1680244948",
+    "https://cdn.shopify.com/s/files/1/0735/5478/8668/products/19.png?v=1680244948",
+    "https://cdn.shopify.com/s/files/1/0735/5478/8668/products/gt1_708x708_1.png?v=1680244948",
+    "https://escondido.ebikesupershop.com/cdn/shop/files/gt1.png?v=1763663132"
+   ]
+  },
+  {
+   "id": "c886d269-9194-4363-952b-aa1fd1453dd7",
+   "slug": "segway-zt3-pro",
+   "name": "Segway ZT3 Pro",
+   "brand": "Segway",
+   "candidates": [
+    "https://cdn.shopify.com/s/files/1/1002/0057/9449/files/ZT3-Pro-E-Block-1-Background-Photoroom-1.webp?v=1780254777",
+    "https://cdn.shopify.com/s/files/1/1002/0057/9449/files/segway-ninebot-kickscooter-zt3-pro-3-Photoroom-1.webp?v=1780254778",
+    "https://cdn.shopify.com/s/files/1/1002/0057/9449/files/trottinette-electrique-ninebot-zt3-pro-e-1-Photoroom-1.webp?v=1780254777",
+    "https://cdn.shopify.com/s/files/1/1002/0057/9449/files/Segway-Ninebot-ZT3-Pro-e-scooter-Photoroom-1.webp?v=1780254778",
+    "https://segway.imgix.net/catalog/product/cache/d3ec3723470ff918c92e447639eaf984/z/t/zt3_pro-2_1_1.png"
+   ]
+  },
+  {
+   "id": "4aeb9d54-c0ca-4426-a064-bbbe7fafbd3a",
+   "slug": "velity-511-ss",
+   "name": "Velity 511-Ss",
+   "brand": "Velity",
+   "candidates": [
+    "https://fastride.fr/16134-large_default/trottinette-electrique-velity-511-ss.jpg",
+    "https://fastride.fr/16135-large_default/trottinette-electrique-velity-511-ss.jpg",
+    "https://fastride.fr/16136-large_default/trottinette-electrique-velity-511-ss.jpg",
+    "https://fastride.fr/16137-large_default/trottinette-electrique-velity-511-ss.jpg",
+    "https://fastride.fr/16138-large_default/trottinette-electrique-velity-511-ss.jpg",
+    "https://cdn.shopify.com/s/files/1/0760/3254/1014/files/trottinette-electrique-velity-511-ss_2.jpg?v=1708691656",
+    "https://cdn.shopify.com/s/files/1/0760/3254/1014/files/trottinette-electrique-velity-511-ss_3.jpg?v=1708691656"
+   ]
+  },
+  {
+   "id": "c9958d10-3f92-4b3d-9033-4def32009130",
+   "slug": "weped-ff",
+   "name": "Weped FF",
+   "brand": "Weped",
+   "candidates": [
+    "https://scooter.guide/wp-content/uploads/2021/04/weped-ff.jpg",
+    "https://scooter.guide/wp-content/uploads/2021/04/20210415_213238.jpg",
+    "https://scooter.guide/wp-content/uploads/2021/04/20210415_213040.jpg",
+    "https://scooter.guide/wp-content/uploads/2021/04/20210429_232036-1024x768.jpg"
+   ]
+  },
+  {
+   "id": "67d2f0b1-b78c-498c-a74e-01c41d9dd354",
+   "slug": "wispeed-airo-v10",
+   "name": "Wispeed AIRO V10",
+   "brand": "Wispeed",
+   "candidates": [
+    "https://www.wispeed.net/7905-large_default/trottinette-airo-v10.jpg",
+    "https://media.carrefour.fr/medias/d55019fd48c845fa861cd9865d018962/p_1500x1500/e6cf34478a0f425685767e6540db28a6_image.jpg",
+    "https://media.carrefour.fr/medias/acccaf454c51431ba7a13cf078d29e2e/p_1500x1500/db72622bf6de42b3aaa7aab0a9f7bced_image.jpg",
+    "https://media.carrefour.fr/medias/a229474e463d4036b6b828415089576e/p_1500x1500/a581fafd99fe460ea6fb194c81165307_image.jpg",
+    "https://media.carrefour.fr/medias/554896d231494e009e524e35edfaab5c/p_1500x1500/e9f71dd513cb4073bb393dca96d70f4c_image.jpg",
+    "https://media.carrefour.fr/medias/f9eeebea29bc4fd4a4ccec3a1993ad1c/p_1500x1500/ed992716e72544b59a505f760e37e4b9_image.jpg"
+   ]
+  },
+  {
+   "id": "b50b8790-d064-45cf-ab0b-5e9c17856ac1",
+   "slug": "yeep-me-85a-evo",
+   "name": "Yeep.me 85a Evo",
+   "brand": "Yeep.me",
+   "candidates": [
+    "https://yeep.me/4222-thickbox_default/yeepme-85a-evo.jpg",
+    "https://yeep.me/4223-thickbox_default/yeepme-85a-evo.jpg",
+    "https://yeep.me/4224-thickbox_default/yeepme-85a-evo.jpg",
+    "https://yeep.me/4225-thickbox_default/yeepme-85a-evo.jpg",
+    "https://yeep.me/4226-thickbox_default/yeepme-85a-evo.jpg",
+    "https://yeep.me/4227-thickbox_default/yeepme-85a-evo.jpg",
+    "https://yeep.me/4228-thickbox_default/yeepme-85a-evo.jpg",
+    "https://yeep.me/4229-thickbox_default/yeepme-85a-evo.jpg"
+   ]
+  },
+  {
+   "id": "766a1d5c-fa41-432a-8c9c-4a9de0188443",
+   "slug": "apollo-phantom-2-0",
+   "name": "Apollo Phantom 2.0",
+   "brand": "Apollo",
+   "candidates": [
+    "https://cdn.shopify.com/s/files/1/0030/8183/0512/files/A11_Black_springs_update_20250604_3_3f139638-6dd3-43c3-a7d6-3a59d290ed22.png?v=1773931411",
+    "https://cdn.shopify.com/s/files/1/0030/8183/0512/files/A11_Black_springs_update_20250604_12.png?v=1773931411",
+    "https://www.rideandglide.co.uk/wp-content/uploads/Deep_Folding.png",
+    "https://cdn.shopify.com/s/files/1/0030/8183/0512/files/A11_Mkt_01102024_9.png?v=1773931411",
+    "https://cdn.shopify.com/s/files/1/0030/8183/0512/files/A11_Mkt_01102024_5.png?v=1773931411"
+   ]
+  },
+  {
+   "id": "66a99376-6188-4c90-9c11-5cc93a7d65d3",
+   "slug": "cecotec-bongo-doble-y85-2x2-xxl-connected",
+   "name": "Cecotec Bongo Doble Y85 2x2 XXL Connected",
+   "brand": "Cecotec",
+   "candidates": [
+    "https://www.tradeinn.com/f/14248/142486202_3/cecotec-bongo-doble-y85-2x2-xxl-connected-10-electric-scooter-18.2ah.webp",
+    "https://www.tradeinn.com/f/14248/142486202_2/cecotec-bongo-doble-y85-2x2-xxl-connected-10-electric-scooter-18.2ah.webp",
+    "https://www.tradeinn.com/f/14248/142486202_4/cecotec-bongo-doble-y85-2x2-xxl-connected-10-electric-scooter-18.2ah.webp",
+    "https://www.tradeinn.com/f/14248/142486202_5/cecotec-bongo-doble-y85-2x2-xxl-connected-10-electric-scooter-18.2ah.webp",
+    "https://media.cecotec.cloud/09280/gallery/bongo-doble-y85-2x2-xxl-connected_6.jpg"
+   ]
+  },
+  {
+   "id": "61a2b888-5269-49cf-9179-70c0f6c4793c",
+   "slug": "ducati-pro-iii",
+   "name": "Ducati Pro-III",
+   "brand": "Ducati",
+   "candidates": [
+    "https://cdn.shopify.com/s/files/1/0609/2917/9820/files/ducati-pro-iii-electric-scooter-urban-commuting-fast-lightweight-350w-motor.png?v=1777454325",
+    "https://cdn.shopify.com/s/files/1/0609/2917/9820/files/ducati-pro-iii-electric-scooter-high-performance-urban-commuting-350w-motor-25kmh-lightweight-durable.png?v=1777454325",
+    "https://cdn.shopify.com/s/files/1/0609/2917/9820/files/ducati-pro-iii-electric-scooter-rear-wheel-features-urban-commuting-compact-design.png?v=1777454325",
+    "https://cdn.shopify.com/s/files/1/0609/2917/9820/files/ducati-pro-iii-electric-scooter-front-wheel-brakes-lightweight-design-urban-commuting.png?v=1777454325",
+    "https://cdn.shopify.com/s/files/1/0609/2917/9820/files/ducati-pro-iii-electric-scooter-handlebar-closeup-performance-350W-black-design.png?v=1777454325",
+    "https://cdn.shopify.com/s/files/1/0609/2917/9820/files/ducati-pro-iii-electric-scooter-display-panel-urban-commuting.png?v=1777454325",
+    "https://cdn.shopify.com/s/files/1/0274/6076/3761/files/ducati-ducati-pro-iii-electric-scooter-e-scooter-30778731659377.webp?v=1690207596",
+    "https://www.cycling2000.co.uk/images/products/D/Du/Ducati%20PRO-III7688_modif_bianco.jpg"
+   ]
+  },
+  {
+   "id": "58709fac-dfd0-40be-bedc-c09125a74b41",
+   "slug": "engwe-y600",
+   "name": "Engwe Y600",
+   "brand": "Engwe",
+   "candidates": [
+    "https://cdn.shopify.com/s/files/1/0237/3536/9792/files/1_3_707fc1dd-d8e7-4300-aed7-0cdaddd3baa8.jpg?v=1747289981",
+    "https://cdn.shopify.com/s/files/1/0237/3536/9792/files/1_1_87154c07-d523-49dd-a611-025169e234c5.jpg?v=1747289981",
+    "https://cdn.shopify.com/s/files/1/0237/3536/9792/files/2_1_98ffce80-3ce2-4f70-8635-a2e97c183a2a.jpg?v=1747289981",
+    "https://cdn.shopify.com/s/files/1/0237/3536/9792/files/3_1_d2a5cad5-299c-40ba-9974-8b7ae0cad3fc.jpg?v=1747289981",
+    "https://cdn.shopify.com/s/files/1/0237/3536/9792/files/4_1_4c438faf-fbf4-4e7f-af51-42ec115b57ff.jpg?v=1747289981",
+    "https://buymoreway.com/cdn/shop/files/ENGWE_Y600_6.jpg?v=1725353883",
+    "https://sc04.alicdn.com/kf/H11043160e02c480292a7de0771cfb0a6a.jpg"
+   ]
+  },
+  {
+   "id": "64b4d7b0-3863-486e-9d90-4077bafdc0ad",
+   "slug": "hiboy-ks4-pro",
+   "name": "Hiboy KS4 Pro",
+   "brand": "Hiboy",
+   "candidates": [
+    "https://cdn.shopify.com/s/files/1/0425/6350/2247/files/daf.jpg?v=1752481041",
+    "https://cdn.shopify.com/s/files/1/0425/6350/2247/files/s2-pro_6db76dc8-0317-4c95-9351-ad96f8855788.jpg?v=1752481041",
+    "https://cdn.shopify.com/s/files/1/0425/6350/2247/files/s2-pro_d25252b0-06b8-4dbe-b8e1-fac228b4cb67.jpg?v=1752481041",
+    "https://cdn.shopify.com/s/files/1/0425/6350/2247/files/e33469cfe8c5aefb5a5bd9ea966217e7_66503424-71a0-4893-8068-67d80289f627.jpg?v=1752481041",
+    "https://cdn.shopify.com/s/files/1/0425/6350/2247/products/8_3927bb25-5083-4e36-8b63-45d1783c2228.jpg?v=1752481041",
+    "https://cdn.shopify.com/s/files/1/0425/6350/2247/files/1-2_726c37d3-eb28-4c38-bb00-5dde52ed2526.png?v=1725260756"
+   ]
+  },
+  {
+   "id": "78482e84-2479-4aee-8405-a8367048d048",
+   "slug": "hiboy-s2r-plus",
+   "name": "Hiboy S2R Plus",
+   "brand": "Hiboy",
+   "candidates": [
+    "https://cdn.shopify.com/s/files/1/0425/6350/2247/files/1_2fca90b3-ce42-440b-b3a4-8d62dbd26a58.jpg?v=1761115142",
+    "https://cdn.shopify.com/s/files/1/0425/6350/2247/files/4_b4c65962-4481-4ac1-824f-752f4fea614a.jpg?v=1761115142",
+    "https://cdn.shopify.com/s/files/1/0425/6350/2247/products/b58ce7b99582c961375527c3c6b27ebb.png?v=1725261690",
+    "https://cdn.shopify.com/s/files/1/0425/6350/2247/files/p23.jpg?v=1761278902",
+    "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/cb4330c1-111d-4746-822d-fc7726037967.jpg"
+   ]
+  },
+  {
+   "id": "a2155ed2-587a-4c17-a3cd-095aa9f76ddf",
+   "slug": "inmotion-climber",
+   "name": "Inmotion Climber",
+   "brand": "Inmotion",
+   "candidates": [
+    "https://cdn.shopify.com/s/files/1/0619/5527/6963/files/InmotionClimberStudio-3.jpg?v=1745398582",
+    "https://cdn.shopify.com/s/files/1/0619/5527/6963/files/InmotionClimberStudio-4.jpg?v=1745398582",
+    "https://cdn.shopify.com/s/files/1/0619/5527/6963/files/InmotionClimberStudio-5.jpg?v=1745398582",
+    "https://cdn.shopify.com/s/files/1/0619/5527/6963/files/InmotionClimberStudio-6.jpg?v=1745398582",
+    "https://cdn.shopify.com/s/files/1/0619/5527/6963/files/InmotionClimberStudio-8.jpg?v=1745398583",
+    "https://cdn.shopify.com/s/files/1/2476/0976/files/P1096637.jpg?v=1759865437",
+    "https://cdn.shopify.com/s/files/1/2476/0976/files/P1096651.jpg?v=1759865437",
+    "https://cdn.shopify.com/s/files/1/2476/0976/files/P1096649.jpg?v=1759865437"
+   ]
+  },
+  {
+   "id": "818f5f7c-c28b-4c70-88c0-55c24a5deb76",
+   "slug": "inokim-quick-4",
+   "name": "Inokim Quick 4",
+   "brand": "Inokim",
+   "candidates": [
+    "https://cdn.shopify.com/s/files/1/0114/7404/2980/files/1_8fe6ec8e-f3ab-49f2-ba48-621a0a1265df.png?v=1772452030",
+    "https://cdn.shopify.com/s/files/1/0114/7404/2980/files/2_c4dfabd6-757a-47e3-a231-1cdc5e21f4f1.png?v=1772452030",
+    "https://cdn.shopify.com/s/files/1/0114/7404/2980/files/3_c8df335c-9c98-4599-a2ec-dc316b2da191.png?v=1772452030",
+    "https://cdn.shopify.com/s/files/1/0114/7404/2980/files/4_cdc2eb81-f3f0-48aa-a57b-7ff9b469f65d.png?v=1772452030",
+    "https://cdn.shopify.com/s/files/1/0114/7404/2980/files/5_1f5c93eb-7211-4ae8-8bdd-1cdc594122b3.png?v=1772452030",
+    "https://cdn.shopify.com/s/files/1/0114/7404/2980/files/6_9bf46b75-f4e4-4868-86f0-67f5c62c3096.png?v=1772452030",
+    "https://cdn.shopify.com/s/files/1/0114/7404/2980/files/17_d89625e6-9d0e-488c-b6d0-cf7b97bb97d6.png?v=1772452030",
+    "https://cdn.shopify.com/s/files/1/0114/7404/2980/files/24.png?v=1772452030"
+   ]
+  },
+  {
+   "id": "44d19aef-9276-4970-9577-536efc42f7ff",
+   "slug": "isinwheel-gt1",
+   "name": "Isinwheel GT1",
+   "brand": "Isinwheel",
+   "candidates": [
+    "https://cdn.shopify.com/s/files/1/0588/3592/7218/files/exec-4b870416-7905-47cd-978d-52f1dd78bc4e_1.png?v=1787126734",
+    "https://cdn.shopify.com/s/files/1/0588/3592/7218/files/exec-df8c851a-a42e-4a33-8bf1-f0de6dc9b50d_1.png?v=1787126734",
+    "https://cdn.shopify.com/s/files/1/0588/3592/7218/files/2_49d3d5b5-637b-4374-91cd-1c7c14ebff5c.png?v=1787048260",
+    "https://cdn.shopify.com/s/files/1/0588/3592/7218/files/5_703ecd9e-4834-4247-9b72-eb37ca7dc937.png?v=1787048260",
+    "https://cdn.shopify.com/s/files/1/0588/3592/7218/files/6_a1a8ff08-04c0-465b-be25-e286fb91d6e9.png?v=1787048260",
+    "https://cdn.shopify.com/s/files/1/0588/3592/7218/files/7_b2f8e30d-18ba-43f4-b061-240954ca2a11.png?v=1787048260",
+    "https://cdn.shopify.com/s/files/1/0588/3592/7218/files/4_feef5760-bb8a-40ed-9556-5c10a0bd4726.png?v=1787048260",
+    "https://cdn.shopify.com/s/files/1/0588/3592/7218/files/Frame_2147226926.png?v=1787126736"
+   ]
+  },
+  {
+   "id": "6e6aa0b5-3d7c-4d5f-b13e-e3069d667c2b",
+   "slug": "kingsong-e1",
+   "name": "Kingsong E1",
+   "brand": "Kingsong",
+   "candidates": [
+    "https://cdn.shopify.com/s/files/1/0944/8911/6985/files/e1kse06.webp?v=1792681391",
+    "https://cdn.shopify.com/s/files/1/0944/8911/6985/files/e1kse03.webp?v=1792681389",
+    "https://cdn.shopify.com/s/files/1/0944/8911/6985/files/e1kse04.webp?v=1792681389",
+    "https://cdn.shopify.com/s/files/1/0944/8911/6985/files/e1kse01.webp?v=1792681388",
+    "https://cdn.shopify.com/s/files/1/0944/8911/6985/files/e1kse07.webp?v=1792681393",
+    "https://cdn.shopify.com/s/files/1/0944/8911/6985/files/e1kse08.webp?v=1792681393",
+    "https://cdn.shopify.com/s/files/1/0944/8911/6985/files/kingsong-e1-kse-electric-scooter-1.png?v=1792681396"
+   ]
+  },
+  {
+   "id": "9b0c8e44-4293-446d-bfc3-9218bd371806",
+   "slug": "langfeite-c1",
+   "name": "Langfeite C1",
+   "brand": "Langfeite",
+   "candidates": [
+    "https://langfeite.com/static/upfile/202608060900381298.jpg",
+    "https://langfeite.com/static/upfile/202608060900595063.jpg",
+    "https://langfeite.com/static/upfile/202608060932287491.jpg",
+    "https://langfeite.com/static/upfile/202608060903095875.jpg",
+    "https://langfeite.com/static/upfile/202405310638268326.png"
+   ]
+  },
+  {
+   "id": "35600319-a72d-44bb-8bf0-b80ea98e0099",
+   "slug": "ninebot-e3",
+   "name": "Ninebot E3",
+   "brand": "Ninebot",
+   "candidates": [
+    "https://eu-en.segway.com/content/dam/segway-ninebot/general/mmbu-3rdgen-revamp/eu/e3/2-card_1.png",
+    "https://eu-en.segway.com/content/dam/segway-ninebot/general/mmbu-3rdgen-revamp/eu/e3/2-card_2.png",
+    "https://eu-en.segway.com/content/dam/segway-ninebot/general/mmbu-3rdgen-revamp/eu/e3/2-card_3.png",
+    "https://eu-en.segway.com/content/dam/segway-ninebot/general/mmbu-3rdgen-revamp/eu/e3/2-card_4.png",
+    "https://eu-en.segway.com/content/dam/segway-ninebot/general/mmbu-3rdgen-revamp/eu/e3/compact.jpg",
+    "https://eu-en.segway.com/content/dam/segway-ninebot/general/mmbu-3rdgen-revamp/eu/e3/light_system_brakelights.jpg",
+    "https://eu-en.segway.com/content/dam/segway-ninebot/general/mmbu-3rdgen-revamp/eu/e3/front_drum_brake.jpg",
+    "https://eu-en.segway.com/content/dam/segway-ninebot/general/mmbu-3rdgen-revamp/eu/e3/data_glance.jpg"
+   ]
+  },
+  {
+   "id": "84df766a-fa5a-4a06-b91d-a057b53b4432",
+   "slug": "niu-kqi1-pro",
+   "name": "NIU KQi1 Pro",
+   "brand": "NIU",
+   "candidates": [
+    "https://m.media-amazon.com/images/I/718iWbka3KL.jpg",
+    "https://m.media-amazon.com/images/I/71t+wfIMzqL.jpg",
+    "https://m.media-amazon.com/images/I/81LkWqFVJkL._AC_SL1500_.jpg",
+    "https://cdn.shopify.com/s/files/1/0554/6944/1084/files/HAN-P-K1.jpg?v=1792393413",
+    "https://i5.walmartimages.com/seo/NIU-KQi1-Pro-Electric-kick-scooter-Foldable-Fast-15MPH-15-5mi-distance-Charging-Battery-Commuting-White_3387db10-96f5-4a76-b1e7-62ef65e96332.a3f50247141af1efc7a62a6ac5dc43b8.jpeg"
+   ]
+  },
+  {
+   "id": "0c8c9884-40dd-419b-867d-2f2229b6ca48",
+   "slug": "segway-gt3",
+   "name": "Segway GT3",
+   "brand": "Segway",
+   "candidates": [
+    "https://voltride.com/wp-content/uploads/2026/06/segway-ninebot-gt3-e-rear-angle.jpg",
+    "https://cdn.shopify.com/s/files/1/0084/0731/8607/files/segway-superscooter-gt3-2418095.jpg?v=1774547773",
+    "https://cdn.shopify.com/s/files/1/0084/0731/8607/files/segway-superscooter-gt3-2738003.jpg?v=1774547773",
+    "https://cdn.shopify.com/s/files/1/0084/0731/8607/files/segway-superscooter-gt3-9689675.jpg?v=1774547773",
+    "https://cdn.shopify.com/s/files/1/0084/0731/8607/files/segway-superscooter-gt3-8616435.jpg?v=1774547773",
+    "https://cdn.shopify.com/s/files/1/0084/0731/8607/files/segway-superscooter-gt3-8596265.jpg?v=1774547774",
+    "https://cdn.shopify.com/s/files/1/0084/0731/8607/files/segway-superscooter-gt3-1687988.jpg?v=1774547774",
+    "https://cdn.shopify.com/s/files/1/0084/0731/8607/files/segway-superscooter-gt3-1110242.jpg?v=1774547774"
+   ]
+  },
+  {
+   "id": "6e58e0eb-ed4a-40f3-8c9d-293d0463493e",
+   "slug": "urbanglide-all-road-6-2x2",
+   "name": "Urbanglide All Road 6 2x2",
+   "brand": "Urbanglide",
+   "candidates": [
+    "https://www.cdiscount.com/pdt2/4/7/3/2/700x700/urb3700092678473/rw/trottinette-electrique-urbanglide-all-road-6-2.jpg",
+    "https://www.cdiscount.com/pdt2/4/7/3/3/700x700/urb3700092678473/rw/trottinette-electrique-urbanglide-all-road-6-2.jpg",
+    "https://www.cdiscount.com/pdt2/4/7/3/4/700x700/urb3700092678473/rw/trottinette-electrique-urbanglide-all-road-6-2.jpg",
+    "https://www.cdiscount.com/pdt2/4/7/3/5/700x700/urb3700092678473/rw/trottinette-electrique-urbanglide-all-road-6-2.jpg",
+    "https://www.cdiscount.com/pdt2/4/7/3/6/700x700/urb3700092678473/rw/trottinette-electrique-urbanglide-all-road-6-2.jpg",
+    "https://www.cdiscount.com/pdt2/4/7/3/7/700x700/urb3700092678473/rw/trottinette-electrique-urbanglide-all-road-6-2.jpg",
+    "https://cache.natureetdecouvertes.com/Medias/Images/Articles/92809390/92809390-urbanglide-all-road-6-2x2-trottinette-lectrique-10-double-moteur_1.jpg",
+    "https://m.media-amazon.com/images/I/61o5fYHpMmL.jpg"
+   ]
+  },
+  {
+   "id": "de8f0438-2398-4eee-8c02-ab4bfa9040b6",
+   "slug": "vsett-10-plus",
+   "name": "Vsett 10+",
+   "brand": "Vsett",
+   "candidates": [
+    "https://cdn.shopify.com/s/files/1/0093/1672/8892/files/DSC05485.webp?v=1708025265",
+    "https://cdn.shopify.com/s/files/1/0093/1672/8892/files/DSC05505.webp?v=1708025265",
+    "https://cdn.shopify.com/s/files/1/0093/1672/8892/files/DSC05530_6470951d-5c4f-4e75-8d52-a4e9ff88a33d.webp?v=1708025265",
+    "https://cdn.shopify.com/s/files/1/0093/1672/8892/files/DSC05754-Edit_06903e01-e31f-49dc-a808-7adb963284da.webp?v=1708025265",
+    "https://cdn.shopify.com/s/files/1/0093/1672/8892/files/DSC05552-Edit_2fa269e2-92fc-454c-bf7b-129dcb29ac84.webp?v=1708025265",
+    "https://vsett-shop.com/wp-content/uploads/2021/03/vsett-10-plus-electric-scooter-12-scaled.jpg",
+    "https://vsett-shop.com/wp-content/uploads/2021/03/vsett-10-plus-electric-scooter-13-scaled.jpg",
+    "https://freshlycharged.com/storage/841/VSETT-10-Folded-1024x759.png"
+   ]
+  },
+  {
+   "id": "3b4f4646-de12-4670-a6ef-72ac6d79b9a7",
+   "slug": "weped-fold-11",
+   "name": "Weped Fold 11",
+   "brand": "Weped",
+   "candidates": [
+    "https://weped.wordpress.com/wp-content/uploads/2020/11/img-20200606-wa0011-2.jpg",
+    "https://preview.redd.it/weped-fold-vs-weped-ff-electric-scooter-when-do-these-v0-sr1wnc2g4di51.jpg?width=1054&format=pjpg&auto=webp&s=bfbb260c5847a5a3d4647d010d50e069c8452fe9"
+   ]
+  },
+  {
+   "id": "e36ebdda-6127-4b27-a2c1-0abbd9d36759",
+   "slug": "wispeed-airo-v16",
+   "name": "Wispeed AIRO V16",
+   "brand": "Wispeed",
+   "candidates": [
+    "https://www.cdiscount.com/pdt2/9/0/3/2/700x700/aabjo54903/rw/trottinette-electrique-wispeed-airo-v16-36-v.jpg",
+    "https://www.cdiscount.com/pdt2/9/0/3/3/700x700/aabjo54903/rw/trottinette-electrique-wispeed-airo-v16-36-v.jpg",
+    "https://www.cdiscount.com/pdt2/9/0/3/4/700x700/aabjo54903/rw/trottinette-electrique-wispeed-airo-v16-36-v.jpg",
+    "https://www.cdiscount.com/pdt2/9/0/3/5/700x700/aabjo54903/rw/trottinette-electrique-wispeed-airo-v16-36-v.jpg",
+    "https://www.cdiscount.com/pdt2/9/0/3/6/700x700/aabjo54903/rw/trottinette-electrique-wispeed-airo-v16-36-v.jpg",
+    "https://www.cdiscount.com/pdt2/9/0/3/7/700x700/aabjo54903/rw/trottinette-electrique-wispeed-airo-v16-36-v.jpg",
+    "https://www.wispeed.net/7906-large_default/trottinette-airo-v16.jpg",
+    "https://m.media-amazon.com/images/I/61nGjJseDoL.jpg"
+   ]
+  },
+  {
+   "id": "2c7cb21b-baa5-4f6c-adfd-c9112408b52f",
+   "slug": "bogist-c1-pro",
+   "name": "Bogist C1 Pro",
+   "brand": "Bogist",
+   "candidates": [
+    "https://cdn.shopify.com/s/files/1/0975/3182/2360/files/bogist-c1-pro-20ah-scaled.jpg?v=1772683044",
+    "https://cdn.shopify.com/s/files/1/0975/3182/2360/files/7-12.jpg?v=1772683044",
+    "https://cdn.shopify.com/s/files/1/0975/3182/2360/files/3-10.jpg?v=1772683044",
+    "https://cdn.shopify.com/s/files/1/0975/3182/2360/files/5-9.jpg?v=1772683044",
+    "https://cdn.shopify.com/s/files/1/0975/3182/2360/files/6-10.jpg?v=1772683044",
+    "https://cdn.shopify.com/s/files/1/0975/3182/2360/files/4-9.jpg?v=1772683044",
+    "https://cdn.shopify.com/s/files/1/0975/3182/2360/files/1000-1.jpg?v=1772683044"
+   ]
+  },
+  {
+   "id": "227ebd25-e7b5-4a74-b5f6-a4ef3c519d5d",
+   "slug": "cecotec-bongo-serie-a-advance-connected",
+   "name": "Cecotec Bongo Serie A Advance Connected",
+   "brand": "Cecotec",
+   "candidates": [
+    "https://mimejorhogar.com/wp-content/uploads/2021/10/07028_2.jpg",
+    "https://mimejorhogar.com/wp-content/uploads/2021/10/07028_3.jpg",
+    "https://mimejorhogar.com/wp-content/uploads/2021/10/07028_4.jpg",
+    "https://mimejorhogar.com/wp-content/uploads/2021/10/07028_5.jpg",
+    "https://mimejorhogar.com/wp-content/uploads/2021/10/07028_1.jpg"
+   ]
+  },
+  {
+   "id": "45ad6555-d6d3-4213-8a44-9e5955647bef",
+   "slug": "e-twow-tanktorq-tk3",
+   "name": "E-Twow TankTorq TK3",
+   "brand": "E-Twow",
+   "candidates": [
+    "https://cdn.shopify.com/s/files/1/0742/6922/9308/files/E-TWOW_TK3_escooter.png?v=1778740535",
+    "https://cdn.shopify.com/s/files/1/0742/6922/9308/files/E-TWOW_TK3_ELECTRIC_SCOOTER_gray.png?v=1776328548",
+    "https://cdn.shopify.com/s/files/1/0742/6922/9308/files/electric_scooter_e-twow_tk3_royal_purple.png?v=1784864278",
+    "https://cdn.shopify.com/s/files/1/0742/6922/9308/files/3_f0101699-30ac-4e08-99f1-bf29804f01a5.jpg?v=1776328548",
+    "https://cdn.shopify.com/s/files/1/0742/6922/9308/files/4_74d95ba9-4250-4591-8403-abb130fd7d47.jpg?v=1776328548",
+    "https://cdn.shopify.com/s/files/1/0742/6922/9308/files/6_9cdaf671-5e47-4058-b1f5-3973f9444840.jpg?v=1776328548",
+    "https://cdn.shopify.com/s/files/1/0742/6922/9308/files/etwow_tk.jpg?v=1778740338"
+   ]
+  },
+  {
+   "id": "e198481d-2a23-41bc-ae03-cebedf1c4b72",
+   "slug": "f40",
+   "name": "F40",
+   "brand": "Ninebot",
+   "candidates": [
+    "https://s7ap1.scene7.com/is/image/ninebotstage/assets_segway_cdn_com_Product-Pictures__product_full_F40D-F40E_Product-picture_360-side-view-6?dpr=on,3&network=on&fmt=png-alpha",
+    "https://cdn.shopify.com/s/files/1/0034/7504/6445/products/segway-ninebot-f40-right.jpg?v=1686750653",
+    "https://cdn.shopify.com/s/files/1/0034/7504/6445/products/segway-ninebot-f40-left.jpg?v=1686750655",
+    "https://cdn.shopify.com/s/files/1/0034/7504/6445/products/segway-ninebot-f40-folded.jpg?v=1686750658",
+    "https://cdn.shopify.com/s/files/1/0034/7504/6445/products/segway-ninebot-f40-handles.jpg?v=1686750665",
+    "https://s7ap1.scene7.com/is/image/ninebotstage/assets_segway_cdn_com_Product-Pages_KickScooters_KickScooter-F40__hero_full_Ninebot-KickScooter-F40_Folded-kickscooter-6?dpr=on,3&network=on"
+   ]
+  },
+  {
+   "id": "8e751af1-240a-4f3f-8c61-0a8dff833feb",
+   "slug": "hiboy-s2",
+   "name": "Hiboy S2",
+   "brand": "Hiboy",
+   "candidates": [
+    "https://cdn.shopify.com/s/files/1/0425/6350/2247/files/p1.jpg?v=1774941762",
+    "https://cdn.shopify.com/s/files/1/0425/6350/2247/files/1600x1600p2.jpg?v=1774941762",
+    "https://cdn.shopify.com/s/files/1/0425/6350/2247/files/9_8066f230-1dba-4707-8546-258ae76bcd4b.jpg?v=1758441558",
+    "https://cdn.shopify.com/s/files/1/0425/6350/2247/files/10_40909272-efab-4eb8-af5f-7e3028715448.jpg?v=1774941762",
+    "https://cdn.shopify.com/s/files/1/0425/6350/2247/files/12_190b31fc-4110-4a76-9fb9-125b185666f4.jpg?v=1774941762",
+    "https://cdn.shopify.com/s/files/1/0425/6350/2247/files/13_545c4ea3-4e66-40e8-9d51-2e65a145413e.jpg?v=1774941762",
+    "https://cdn.shopify.com/s/files/1/0425/6350/2247/products/001-4.png?v=1774941762"
+   ]
+  },
+  {
+   "id": "470816ac-6d6f-4005-aa8c-874053c7c432",
+   "slug": "hikerboy-curtis-dual-pro",
+   "name": "Hikerboy Curtis Dual Pro",
+   "brand": "Hikerboy",
+   "candidates": [
+    "https://cdn.shopify.com/s/files/1/0513/1698/1950/files/hikerboy-curtis-dual-pro-elsparkcykel-8134066.png?v=1785267191",
+    "https://cdn.shopify.com/s/files/1/0513/1698/1950/files/hikerboy-curtis-dual-pro-elsparkcykel-7984978.png?v=1785267192",
+    "https://cdn.shopify.com/s/files/1/0513/1698/1950/files/hikerboy-curtis-dual-pro-elsparkcykel-8574430.png?v=1785267192",
+    "https://cdn.shopify.com/s/files/1/0513/1698/1950/files/hikerboy-curtis-dual-pro-elsparkcykel-7974744.png?v=1785267191",
+    "https://cdn.shopify.com/s/files/1/0513/1698/1950/files/hikerboy-curtis-dual-pro-elsparkcykel-5648584.png?v=1785357099",
+    "https://cdn.shopify.com/s/files/1/0513/1698/1950/files/hikerboy-curtis-dual-pro-elsparkcykel-4810360.png?v=1785357151"
+   ]
+  },
+  {
+   "id": "e6a9c39b-9ce5-488a-ba77-bf1f5b954e91",
+   "slug": "inmotion-rs",
+   "name": "Inmotion RS",
+   "brand": "Inmotion",
+   "candidates": [
+    "https://cdn.shopify.com/s/files/1/0630/1951/6082/files/RS-_-__01-03_5425b724-0576-48a5-9689-0df2f543c4d9.png?v=1775035760",
+    "https://cdn.shopify.com/s/files/1/0630/1951/6082/files/RS-_-__01-02_e704ed32-1491-4dd8-9ac6-b43a6844d774.png?v=1775035760",
+    "https://cdn.shopify.com/s/files/1/0630/1951/6082/files/RS-_-__01-04_07ded73c-09ea-467f-9f58-a860a7143498.png?v=1775035760",
+    "https://cdn.shopify.com/s/files/1/0630/1951/6082/files/RS_6363e2c1-1052-4c2a-bcac-642edb720c52.png?v=1790575155"
+   ]
+  },
+  {
+   "id": "3841fb15-9983-4d37-b8e0-4d799ebfdca9",
+   "slug": "iscooter-w8",
+   "name": "iScooter W8",
+   "brand": "iScooter",
+   "candidates": [
+    "https://cdn.shopify.com/s/files/1/0859/2126/7959/files/iScooter_W8_T1.webp?v=1776224396",
+    "https://cdn.shopify.com/s/files/1/0859/2126/7959/files/iScooter_W8_T2.webp?v=1776224396",
+    "https://cdn.shopify.com/s/files/1/0859/2126/7959/files/iScooter_W8_T3.webp?v=1776224396",
+    "https://cdn.shopify.com/s/files/1/0859/2126/7959/files/iScooter_W8_T4.webp?v=1776224396",
+    "https://cdn.shopify.com/s/files/1/0859/2126/7959/files/4_df5f9a8b-9a7f-4fcb-9752-7ddbc7bdcb2a.jpg?v=1776224396",
+    "https://cdn.shopify.com/s/files/1/0859/2126/7959/files/iscooter_W8_T.jpg?v=1776224396",
+    "https://cdn.shopify.com/s/files/1/0859/2126/7959/files/iscooter_W8_D.jpg?v=1776224396"
+   ]
+  },
+  {
+   "id": "a13cf842-3c46-43bc-bc48-bcb09782acc9",
+   "slug": "isinwheel-gt2",
+   "name": "Isinwheel GT2",
+   "brand": "Isinwheel",
+   "candidates": [
+    "https://cdn.shopify.com/s/files/1/0914/5968/2594/files/GT2_1_da2ae137-005f-4814-84ba-f9db4ca5037b.jpg?v=1773989859",
+    "https://cdn.shopify.com/s/files/1/0914/5968/2594/files/isinwheel-gt2_9.webp?v=1773989859",
+    "https://cdn.shopify.com/s/files/1/0914/5968/2594/files/isinwheel-gt2_11.webp?v=1773989859",
+    "https://cdn.shopify.com/s/files/1/0914/5968/2594/files/isinwheel-gt2_12.webp?v=1773989859",
+    "https://cdn.shopify.com/s/files/1/0914/5968/2594/files/isinwheel-gt2_13.webp?v=1773989859",
+    "https://cdn.shopify.com/s/files/1/0914/5968/2594/files/isinwheel-gt2_14.webp?v=1773989859",
+    "https://cdn.shopify.com/s/files/1/0914/5968/2594/files/GT2-1.jpg?v=1769757527"
+   ]
+  },
+  {
+   "id": "d68b5703-975e-40e3-84a5-0c448a16fb8d",
+   "slug": "kuickwheel-s9",
+   "name": "Kuickwheel S9",
+   "brand": "Kuickwheel",
+   "candidates": [
+    "https://cdn.shopify.com/s/files/1/0959/8697/5069/files/TROTTINETTE_KUICKWHEEL_S9_36V_15_6_Ah_GRIS_1.jpg?v=1774974903",
+    "https://cdn.shopify.com/s/files/1/0959/8697/5069/files/TROTTINETTE_KUICKWHEEL_S9_36V_15_6_Ah_GRIS_2.jpg?v=1774974903",
+    "https://cdn.shopify.com/s/files/1/0959/8697/5069/files/TROTTINETTE_KUICKWHEEL_S9_36V_15_6_Ah_GRIS_3.jpg?v=1774974903",
+    "https://cdn.shopify.com/s/files/1/0959/8697/5069/files/TROTTINETTE_KUICKWHEEL_S9_36V_15_6_Ah_GRIS_4.jpg?v=1774974903",
+    "https://cdn.shopify.com/s/files/1/0959/8697/5069/files/Trottinette_Electrique_Kuickwheel_S9_roue_avant-updated.jpg?v=1751797178",
+    "https://cdn.shopify.com/s/files/1/0959/8697/5069/files/TROTTINETTEKUICKWHEELS936V15_6Ah_1.jpg?v=1751797177"
+   ]
+  },
+  {
+   "id": "1e607937-03b5-4fa8-9368-102f4606ded8",
+   "slug": "langfeite-gt2-mini",
+   "name": "Langfeite GT2 Mini",
+   "brand": "Langfeite",
+   "candidates": [
+    "https://cdn.shopify.com/s/files/1/0921/6642/2833/files/GT2_Mini_05_TI3323LP40BI.jpg?v=1751784921",
+    "https://cdn.shopify.com/s/files/1/0921/6642/2833/files/GT2_Mini_03_TI331R55ZDT3.jpg?v=1751784921",
+    "https://cdn.shopify.com/s/files/1/0921/6642/2833/files/GT2_Mini_02_TI331VL0AA4S.jpg?v=1751784921",
+    "https://cdn.shopify.com/s/files/1/0921/6642/2833/files/GT2_Mini_06_TI331SBU4G9M.jpg?v=1751784921",
+    "https://cdn.shopify.com/s/files/1/0921/6642/2833/files/GT2_Mini_12_TI331TFR2KM9.jpg?v=1751784921"
+   ]
+  },
+  {
+   "id": "ce627e3b-d3df-4ee2-a99e-08233d1d09b2",
+   "slug": "ninebot-e3-pro-e",
+   "name": "Ninebot E3 Pro E",
+   "brand": "Ninebot",
+   "candidates": [
+    "https://cdn.shopify.com/s/files/1/0084/0731/8607/files/segway-e3-pro-kickscooter-8522257.png?v=1774547775",
+    "https://cdn.shopify.com/s/files/1/0084/0731/8607/files/segway-e3-pro-kickscooter-7134846.png?v=1774547775",
+    "https://cdn.shopify.com/s/files/1/0084/0731/8607/files/segway-e3-pro-kickscooter-2561529.png?v=1774547775",
+    "https://cdn.shopify.com/s/files/1/0084/0731/8607/files/segway-e3-pro-kickscooter-9004541.png?v=1774547775",
+    "https://cdn.shopify.com/s/files/1/0084/0731/8607/files/segway-e3-pro-kickscooter-8832004.png?v=1774547776",
+    "https://cdn.shopify.com/s/files/1/0084/0731/8607/files/segway-e3-pro-kickscooter-4619466.png?v=1774547776"
+   ]
+  },
+  {
+   "id": "e47d2d83-bd81-41f9-b0b3-81d8238bce93",
+   "slug": "p100s",
+   "name": "P100S",
+   "brand": "Segway",
+   "candidates": [
+    "https://cdn.shopify.com/s/files/1/0084/0731/8607/products/P100S.39.png?v=1680128480",
+    "https://cdn.shopify.com/s/files/1/0084/0731/8607/products/P100S.40.png?v=1680128589",
+    "https://cdn.shopify.com/s/files/1/0084/0731/8607/products/P100S.41.png?v=1680128650",
+    "https://cdn.shopify.com/s/files/1/0084/0731/8607/products/P100S.42.png?v=1680128742",
+    "https://cdn.shopify.com/s/files/1/0084/0731/8607/products/P100S.43.png?v=1680128829",
+    "https://cdn.shopify.com/s/files/1/0084/0731/8607/products/P100S.46.png?v=1680129021",
+    "https://cdn.shopify.com/s/files/1/0084/0731/8607/products/P100S.47.png?v=1680129072"
+   ]
+  },
+  {
+   "id": "3052f999-de22-49ef-ae65-92266b895003",
+   "slug": "segway-p65",
+   "name": "Segway P65",
+   "brand": "Segway",
+   "candidates": [
+    "https://cdn.shopify.com/s/files/1/0084/0731/8607/products/P65-03.png?v=1676418203",
+    "https://cdn.shopify.com/s/files/1/0084/0731/8607/products/P65-04.png?v=1676418204",
+    "https://cdn.shopify.com/s/files/1/0084/0731/8607/products/P65-05.png?v=1676418203",
+    "https://cdn.shopify.com/s/files/1/0084/0731/8607/products/P65-06.png?v=1676418204",
+    "https://cdn.shopify.com/s/files/1/0084/0731/8607/products/P65-11.png?v=1676418320",
+    "https://cdn.shopify.com/s/files/1/0084/0731/8607/products/P65-16.png?v=1676418320",
+    "https://cdn.shopify.com/s/files/1/0084/0731/8607/products/P65-09.png?v=1676418320"
+   ]
+  },
+  {
+   "id": "7e78e4a5-4159-48b9-9671-dbea2e18cb04",
+   "slug": "urbanglide-ecross-one",
+   "name": "Urbanglide eCross One",
+   "brand": "Urbanglide",
+   "candidates": [
+    "https://urbanglide.com/wp-content/uploads/2025/03/E-CROSS-ONE-PLIEE.webp",
+    "https://www.cdiscount.com/pdt2/1/6/1/2/700x700/urb1745795518161/rw/trottinette-electrique-urbanglide-ecross-one.jpg",
+    "https://www.cdiscount.com/pdt2/1/6/1/3/700x700/urb1745795518161/rw/trottinette-electrique-urbanglide-ecross-one.jpg",
+    "https://www.cdiscount.com/pdt2/1/6/1/4/700x700/urb1745795518161/rw/trottinette-electrique-urbanglide-ecross-one.jpg",
+    "https://www.cdiscount.com/pdt2/1/6/1/5/700x700/urb1745795518161/rw/trottinette-electrique-urbanglide-ecross-one.jpg",
+    "https://www.cdiscount.com/pdt2/1/6/1/6/700x700/urb1745795518161/rw/trottinette-electrique-urbanglide-ecross-one.jpg",
+    "https://www.cdiscount.com/pdt2/1/6/1/7/700x700/urb1745795518161/rw/trottinette-electrique-urbanglide-ecross-one.jpg"
+   ]
+  },
+  {
+   "id": "b03c6a4d-8fb9-4d27-ac62-2bac410169cc",
+   "slug": "vsett-11-plus-super",
+   "name": "Vsett 11+ Super",
+   "brand": "Vsett",
+   "candidates": [
+    "https://cdn.shopify.com/s/files/1/0549/2201/8981/products/Super72nobg.png?v=1667930720",
+    "https://cdn.shopify.com/s/files/1/0549/2201/8981/products/front.jpg?v=1667930720",
+    "https://cdn.shopify.com/s/files/1/0549/2201/8981/products/side-lower.jpg?v=1667930720",
+    "https://cdn.shopify.com/s/files/1/0549/2201/8981/products/rear-suspension.jpg?v=1667930720",
+    "https://cdn.shopify.com/s/files/1/0549/2201/8981/products/rear-tire.jpg?v=1667930720",
+    "https://cdn.shopify.com/s/files/1/0549/2201/8981/products/front-tire.jpg?v=1667930720",
+    "https://cdn.shopify.com/s/files/1/0549/2201/8981/products/right-handelbar.jpg?v=1667930720"
+   ]
+  },
+  {
+   "id": "098ce5d9-a1d0-4157-b0c4-13690ac8e64e",
+   "slug": "weped-ssgt",
+   "name": "Weped SSGT",
+   "brand": "Weped",
+   "candidates": [
+    "https://cdn.shopify.com/s/files/1/0506/5113/6182/products/wepedssgt1.jpg?v=1645506348",
+    "https://cdn.shopify.com/s/files/1/0506/5113/6182/products/wepedssgt2.jpg?v=1645506347",
+    "https://fastride.fr/19623-large_default/trottinette-electrique-weped-ssgt.jpg",
+    "https://fastride.fr/19622-large_default/trottinette-electrique-weped-ssgt.jpg",
+    "https://fastride.fr/19624-large_default/trottinette-electrique-weped-ssgt.jpg"
+   ]
+  },
+  {
+   "id": "d363af03-a87a-491e-8967-7d82bf0b5dc8",
+   "slug": "xiaomi-electric-scooter-4-pro",
+   "name": "Xiaomi Electric Scooter 4 Pro",
+   "brand": "Xiaomi",
+   "candidates": [
+    "https://i02.appmifile.com/mi-com-product/fly-birds/xiaomi-scooter-4-pro/72166068e70e2440326b9562da28e510.jpg",
+    "https://cdn.shopify.com/s/files/1/0690/3021/5861/files/1_de7eefa0-bcec-42c2-9775-4e4cf926ff2a.jpg?v=1746688182",
+    "https://cdn.shopify.com/s/files/1/0690/3021/5861/files/a.png?v=1746688182",
+    "https://cdn.shopify.com/s/files/1/0690/3021/5861/files/b_35b34e3e-f194-4fdf-b40a-b22c59ace7a0.jpg?v=1746688182",
+    "https://cdn.shopify.com/s/files/1/0690/3021/5861/files/c_db333af5-b98d-4d71-af81-c1dd7594da60.jpg?v=1746688182",
+    "https://cdn.shopify.com/s/files/1/0634/5460/9643/products/xiaomi-bikes-ride-ons-accessories-xiaomi-electric-scooter-4-pro-up-to-25-km-h-and-45-km-distance-700-w-power-climbs-up-to-20-incline-bhr5398gl-aluminum-lcd-display-1198-x-484-x-1240-m.jpg?v=1669667329"
+   ]
+  }
+ ]
+}
