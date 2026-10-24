@@ -341,9 +341,10 @@ export const PartnerBlock = ({ url, name }: { url: string; name: string }) => {
   if (!p) return null;
   // 24/10 : comparateur multi-offres (?comparo=1..5), lit scooter_offers ; sans paramètre : inchangé.
   const comparo = comparoParam();
-  if (comparo) return <OfferComparator look={comparo} name={name} />;
   // 24/10 : propositions « Où l'acheter » (?achat=1..5).
-  if (achat) return <PartnerBlockNew look={achat} url={url} name={name} price={buy.price} brandLogo={buy.brandLogo} />;
+  const legacy = achat ? <PartnerBlockNew look={achat} url={url} name={name} price={buy.price} brandLogo={buy.brandLogo} /> : null;
+  if (comparo) return <OfferComparator look={comparo} name={name} fallback={legacy} />;
+  if (legacy) return legacy;
   const v = variantParam();
   if (v === 6) return <PartnerV6 url={url} name={name} p={p} />;
   if (v === 7) return <PartnerV7 url={url} name={name} p={p} />;

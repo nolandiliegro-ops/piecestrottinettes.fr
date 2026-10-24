@@ -9,7 +9,8 @@ import { useQuery } from "@tanstack/react-query";
 import { supabase } from "@/integrations/supabase/client";
 import { partnerOf, type Partner } from "@/config/partners";
 import { laName } from "@/lib/article";
-import { livePrice, partnerLogo, useBuyCtx } from "@/components/scooter/BuyProposals";
+import { livePrice, partnerLogo, useBuyCtx, TagLink } from "@/components/scooter/BuyProposals";
+import type { ReactNode } from "react";
 
 const UNB = "'Unbounded', sans-serif";
 const FONT = "'Plus Jakarta Sans', sans-serif";
@@ -22,10 +23,11 @@ const CHAMFER = "polygon(0 0, calc(100% - 12px) 0, 100% 12px, 100% 100%, 0 100%)
 const CHAMFER_L = "polygon(0 0, calc(100% - 18px) 0, 100% 18px, 100% 100%, 0 100%)";
 
 export type ComparoLook = 1 | 2 | 3 | 4 | 5;
+// 24/10 (choix de Nolan, reco) : « Le meilleur d'abord » (3) par défaut ; ?comparo=0 = ancien bloc, 1..5 = propositions.
 export const comparoParam = (): ComparoLook | null => {
-  if (typeof window === "undefined") return null;
+  if (typeof window === "undefined") return 3;
   const sp = new URLSearchParams(window.location.search);
-  if (!sp.has("comparo")) return null;
+  if (!sp.has("comparo")) return 3;
   const n = Number(sp.get("comparo"));
   return n >= 1 && n <= 5 ? (n as ComparoLook) : null;
 };
@@ -69,7 +71,9 @@ const useOffers = (scooterId?: string | null) => useQuery({
       const p = partnerOf(r.affiliate_url);
       if (!p) return [];
       const price = livePrice(r.price_eur, r.price_checked_at);
-      return [{ ...r, p, price, from: price != null && r.price_max != null && Number(r.price_max) > price }];
+      // Pas de « dès » (24/10) : le prix max d'une page produit mélange parfois un autre modèle (Blade Mini Pro/Ultra)
+      // ou un pack de 2 (i9Ultra × 2). On affiche le prix exact de la variante où atterrit le visiteur.
+      return [{ ...r, p, price, from: false }];
     }).sort(byRank);
   },
 });
@@ -107,8 +111,10 @@ const Go = ({ o, label = "Voir l'offre", tone = GREEN, full = false, small = fal
     <span className="whitespace-nowrap">{label}</span><ArrowRight className="w-5 h-5 transition-transform group-hover:translate-x-0.5" />
   </a>
 );
-// Maquette : l'alerte de baisse de prix se branche après le choix de la proposition (table + mail).
-const Alert = () => (
+// Alerte de baisse de prix : PAS encore branchée (inscription + mail du robot = mission 4). Visible seulement avec
+// ?alerte=1 pour la recette : jamais de bouton factice en prod.
+const alerteOn = () => typeof window !== "undefined" && new URLSearchParams(window.location.search).get("alerte") === "1";
+const Alert = () => !alerteOn() ? null : (
   <button type="button" className="inline-flex items-center gap-2 min-h-[44px] px-4 text-sm font-bold" style={{ color: CARBON, boxShadow: `inset 0 0 0 1.5px ${CARBON}`, fontFamily: FONT }}
     onClick={() => window.alert("Bientôt : on te prévient par mail quand le prix baisse.")}>
     <Bell className="w-4 h-4" /> Préviens-moi si le prix baisse
@@ -118,10 +124,11 @@ const Title = ({ name }: { name: string }) => (
   <h2 className="text-xl lg:text-2xl uppercase" style={{ fontFamily: UNB, fontWeight: 900, fontStyle: "italic", color: CARBON }}>Où acheter {laName(name)}</h2>
 );
 
-export const OfferComparator = ({ look, name }: { look: ComparoLook; name: string }) => {
+export const OfferComparator = ({ look, name, fallback = null }: { look: ComparoLook; name: string; fallback?: ReactNode }) => {
   const buy = useBuyCtx();
   const { data: offers } = useOffers(buy.scooterId);
-  if (!offers || offers.length === 0) return null;
+  // Chargement, erreur ou aucune offre en base : l'ancien bloc à un lien reste affiché (jamais de trou).
+  if (!offers || offers.length === 0) return <>{fallback}</>;
   const best = offers[0];
   const others = offers.slice(1);
   const brandLogo = buy.brandLogo;
@@ -189,7 +196,7 @@ export const OfferComparator = ({ look, name }: { look: ComparoLook; name: strin
             <p className="mt-1 text-base font-bold" style={{ color: CARBON }}>chez {best.p.name} <span className="ml-2"><Stock o={best} /></span></p>
           </div>
         </div>
-        <Go o={best} label="Voir l'offre" tone={CARBON} full />
+        <TagLink href={best.affiliate_url} line1="Voir l'offre" line2={`chez ${best.p.name}`} full />
       </div>
       {others.length > 0 && (
         <ul className="mt-2">

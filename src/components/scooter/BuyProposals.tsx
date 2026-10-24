@@ -162,17 +162,36 @@ const OfferSkinButton = ({ skin, url, p, price, full, hero = false }: { skin: Of
 
 // ─── Bouton d'affiliation (24/10, Nolan) ───────────────────────────────────
 // Vert = actions du site, orange = achat de NOS produits : les trottinettes recommandées en affiliation ont leur
-// propre signature, dans la charte (carbone, beige, damier). Propositions derrière ?bouton=1..5 ; sans paramètre : inchangé.
+// propre signature, dans la charte (carbone, beige, damier). Retenu le 24/10 : l'Étiquette (TagLink, réutilisée par le comparateur).
 export type AffilLook = 1 | 2 | 3 | 4 | 5;
+// 24/10 (choix de Nolan, reco) : « Étiquette » (2) par défaut ; ?bouton=0 = ancien bouton vert, 1..5 = propositions.
 export const boutonParam = (): AffilLook | null => {
-  if (typeof window === "undefined") return null;
+  if (typeof window === "undefined") return 2;
   const sp = new URLSearchParams(window.location.search);
-  if (!sp.has("bouton")) return null;
+  if (!sp.has("bouton")) return 2;
   const n = Number(sp.get("bouton"));
   return n >= 1 && n <= 5 ? (n as AffilLook) : null;
 };
 const DAMIER = `repeating-conic-gradient(${CARBON} 0 25%, #F5F0E8 0 50%) 0 0 / 14px 14px`;
 const TAG = "polygon(14px 0, 100% 0, 100% 100%, 14px 100%, 0 50%)";
+/** Bouton d'affiliation « Étiquette » : partagé par le bouton du haut et le comparateur. Lien externe = rel sponsored. */
+export const TagLink = ({ href, onClick, line1, line2, price, full = false }: { href: string; onClick?: (e: React.MouseEvent) => void; line1: string; line2?: string; price?: number | null; full?: boolean }) => {
+  const external = !href.startsWith("#");
+  return (
+    <a href={href} onClick={onClick} {...(external ? { target: "_blank", rel: "sponsored noopener noreferrer", "data-placement": "comparateur" } : {})}
+      className={`group inline-block ${full ? "w-full" : "w-full sm:w-auto"} p-[2px] transition-transform hover:-translate-y-0.5`} style={{ background: CARBON, clipPath: TAG, fontFamily: FONT, color: CARBON }}>
+      <span className="relative flex items-center gap-4 min-h-[60px] pl-9 pr-5" style={{ background: "#F5F0E8", clipPath: TAG }}>
+        <span className="absolute left-[19px] top-1/2 -translate-y-1/2 w-2.5 h-2.5 rounded-full" style={{ background: CARBON }} />
+        <span className="flex-1 min-w-0">
+          <span className="block text-base font-extrabold uppercase tracking-wider leading-tight whitespace-nowrap">{line1}</span>
+          {line2 && <span className="block text-sm text-gray-600 leading-tight truncate">{line2}</span>}
+        </span>
+        {price != null && <span className="text-2xl whitespace-nowrap" style={{ fontFamily: UNB, fontWeight: 900, fontStyle: "italic" }}>{eur(price)}</span>}
+        <ArrowRight className="w-5 h-5 shrink-0 transition-transform group-hover:translate-x-0.5" />
+      </span>
+    </a>
+  );
+};
 const AffilHero = ({ look, p, price }: { look: AffilLook; p: P; price: number | null }) => {
   const priceTxt = price != null ? eur(price) : null;
   const ital = { fontFamily: UNB, fontWeight: 900, fontStyle: "italic" as const };
@@ -189,20 +208,8 @@ const AffilHero = ({ look, p, price }: { look: AffilLook; p: P; price: number | 
       <span className="flex items-center justify-center w-12 pr-1"><ArrowRight className="w-5 h-5 transition-transform group-hover:translate-x-0.5" /></span>
     </a>
   );
-  // 2 · Étiquette : une vraie étiquette de prix (pointe + œillet), beige cerclée carbone (contour qui suit la pointe).
-  if (look === 2) return (
-    <a {...props} className="group mt-3 inline-block w-full sm:w-auto p-[2px] transition-transform hover:-translate-y-0.5" style={{ background: CARBON, clipPath: TAG, fontFamily: FONT, color: CARBON }}>
-      <span className="relative flex items-center gap-4 min-h-[60px] pl-9 pr-5" style={{ background: "#F5F0E8", clipPath: TAG }}>
-        <span className="absolute left-[19px] top-1/2 -translate-y-1/2 w-2.5 h-2.5 rounded-full" style={{ background: CARBON }} />
-        <span className="flex-1 min-w-0">
-          <span className="block text-base font-extrabold uppercase tracking-wider leading-tight whitespace-nowrap">Où l'acheter</span>
-          <span className="block text-sm text-gray-600 leading-tight truncate">chez {p.name}</span>
-        </span>
-        {priceTxt && <span className="text-2xl whitespace-nowrap" style={ital}>{priceTxt}</span>}
-        <ArrowRight className="w-5 h-5 shrink-0 transition-transform group-hover:translate-x-0.5" />
-      </span>
-    </a>
-  );
+  // 2 · Étiquette (RETENUE le 24/10) : une vraie étiquette de prix (pointe + œillet), beige cerclée carbone.
+  if (look === 2) return <div className="mt-3"><TagLink href="#ou-acheter" onClick={goBlock} line1="Où l'acheter" line2={`chez ${p.name}`} price={price} /></div>;
   // 3 · Choix de l'atelier : carte blanche cerclée carbone, badge « Choix de l'atelier » qui déborde en haut.
   if (look === 3) return (
     <a {...props} className="group mt-6 relative inline-flex items-center gap-4 w-full sm:w-auto min-h-[68px] px-5 bg-white transition-transform hover:-translate-y-0.5" style={{ boxShadow: `inset 0 0 0 2.5px ${CARBON}, 5px 5px 0 ${CARBON}`, fontFamily: FONT, color: CARBON }}>
