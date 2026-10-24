@@ -16,9 +16,12 @@ const LINE = "#E7E1D6";
 const CHAMFER = "polygon(0 0, calc(100% - 12px) 0, 100% 12px, 100% 100%, 0 100%)";
 
 export type NavLook = 1 | 2 | 3 | 4 | 5;
+// 24/10 (choix de Nolan) : « Plaques » (1) par défaut ; ?nav=0 = rien en haut, 1..5 = propositions.
 export const navParam = (): NavLook | null => {
-  if (typeof window === "undefined") return null;
-  const n = Number(new URLSearchParams(window.location.search).get("nav"));
+  if (typeof window === "undefined") return 1;
+  const sp = new URLSearchParams(window.location.search);
+  if (!sp.has("nav")) return 1;
+  const n = Number(sp.get("nav"));
   return n >= 1 && n <= 5 ? (n as NavLook) : null;
 };
 

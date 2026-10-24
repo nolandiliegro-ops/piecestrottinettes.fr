@@ -19,6 +19,8 @@ export default {
         montserrat: ["Montserrat", "sans-serif"],
       },
       colors: {
+        // 24/10/2026 : green-600/700/800 = vert maison (84 usages affichaient le vert vif Tailwind #15803d).
+        green: { 600: "#4A7C59", 700: "#4A7C59", 800: "#3A6449" },
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",

@@ -23,10 +23,21 @@ export const BuyCtx = createContext<{ price: number | null; brandLogo: string | 
 export const useBuyCtx = () => useContext(BuyCtx);
 
 export type BuyLook = 1 | 2 | 3 | 4 | 5;
+// 24/10 (choix de Nolan) : « Ligne de comparateur » (4) par défaut ; ?achat=0 = ancienne carte, 1..5 = propositions.
 export const achatParam = (): BuyLook | null => {
-  if (typeof window === "undefined") return null;
-  const n = Number(new URLSearchParams(window.location.search).get("achat"));
+  if (typeof window === "undefined") return 4;
+  const sp = new URLSearchParams(window.location.search);
+  if (!sp.has("achat")) return 4;
+  const n = Number(sp.get("achat"));
   return n >= 1 && n <= 5 ? (n as BuyLook) : null;
+};
+
+/** Bouton « Voir l'offre » (24/10) : Nolan trouve le vert + noir « particulier » → 5 peaux derrière ?offre=1..5. */
+export type OfferSkin = 0 | 1 | 2 | 3 | 4 | 5;
+export const offreParam = (): OfferSkin => {
+  if (typeof window === "undefined") return 0;
+  const n = Number(new URLSearchParams(window.location.search).get("offre"));
+  return (n >= 1 && n <= 5 ? n : 0) as OfferSkin;
 };
 
 /** Prix « en ce moment » : relevé il y a 7 jours ou moins, sinon null. */
@@ -65,6 +76,8 @@ const Official = ({ p, dark = false }: { p: P; dark?: boolean }) => isOfficial(p
 
 /** Le bouton « Voir l'offre » : grand, angle coupé, deux lignes (action + boutique), prix à droite s'il est frais. */
 const OfferButton = ({ url, p, price, tone = "carbon", full = false }: { url: string; p: P; price: number | null; tone?: "carbon" | "green" | "white"; full?: boolean }) => {
+  const skin = offreParam();
+  if (skin) return <OfferSkinButton skin={skin} url={url} p={p} price={price} full={full} />;
   const bg = tone === "green" ? GREEN : tone === "white" ? "#fff" : CARBON;
   const fg = tone === "white" ? CARBON : "#fff";
   return (
@@ -88,9 +101,66 @@ const OfferButton = ({ url, p, price, tone = "carbon", full = false }: { url: st
   );
 };
 
+
+/** Les 5 peaux du bouton « Voir l'offre ». Une seule couleur par bouton (fini le vert + noir), prix intégré au texte. */
+const OfferSkinButton = ({ skin, url, p, price, full, hero = false }: { skin: OfferSkin; url: string; p: P; price: number | null; full: boolean; hero?: boolean }) => {
+  const w = full ? "w-full" : "w-full sm:w-auto";
+  // En haut de fiche, le même bouton descend vers le bloc « Où acheter » au lieu de sortir du site.
+  const common = (hero ? { href: "#ou-acheter", onClick: goBlock } : { href: url, target: "_blank", rel: "sponsored noopener noreferrer", "data-placement": "fiche" }) as React.AnchorHTMLAttributes<HTMLAnchorElement>;
+  const L1 = hero ? "Où l'acheter" : "Voir l'offre";
+  const priceTxt = price != null ? eur(price) : null;
+  // 1 · Plein vert : un seul aplat vert maison, texte blanc, prix séparé par un filet.
+  if (skin === 1) return (
+    <a {...common} className={`group inline-flex items-center gap-4 min-h-[60px] px-6 ${w} text-white bg-[#4A7C59] hover:bg-[#3A6449] transition-colors`} style={{ clipPath: CHAMFER_L, fontFamily: FONT }}>
+      <span className="flex-1 text-base font-extrabold uppercase tracking-wider leading-tight sm:whitespace-nowrap">{L1} chez {p.name}</span>
+      {priceTxt && <span className="pl-4 border-l border-white/40 text-lg whitespace-nowrap" style={{ fontFamily: UNB, fontWeight: 900, fontStyle: "italic" }}>{priceTxt}</span>}
+      <ArrowRight className="w-5 h-5 shrink-0 transition-transform group-hover:translate-x-1" />
+    </a>
+  );
+  // 2 · Carbone uni : noir plein, flèche dans un rond blanc.
+  if (skin === 2) return (
+    <a {...common} className={`group inline-flex items-center gap-4 min-h-[60px] pl-6 pr-3 ${w} text-white bg-[#1A1A1A] hover:bg-black transition-colors`} style={{ clipPath: CHAMFER_L, fontFamily: FONT }}>
+      <span className="flex-1 min-w-0">
+        <span className="block text-base font-extrabold uppercase tracking-wider whitespace-nowrap">{L1}</span>
+        <span className="block text-sm text-white/70 whitespace-nowrap">chez {p.name}{priceTxt ? ` · ${priceTxt}` : ""}</span>
+      </span>
+      <span className="w-10 h-10 rounded-full bg-white text-[#1A1A1A] flex items-center justify-center shrink-0 transition-transform group-hover:translate-x-0.5"><ArrowRight className="w-5 h-5" /></span>
+    </a>
+  );
+  // 3 · Biseau course : penché comme « Pièces compatibles » en haut de fiche, ombre carbone décalée.
+  if (skin === 3) return (
+    <a {...common} className={`group inline-flex items-center justify-center gap-3 min-h-[56px] px-7 ${w} text-white -skew-x-12 transition-transform hover:-translate-y-0.5`} style={{ background: GREEN, borderRadius: 4, boxShadow: `5px 5px 0 ${CARBON}`, fontFamily: UNB, fontWeight: 700, fontStyle: "italic" }}>
+      <span className="skew-x-12 inline-flex items-center gap-3 text-sm uppercase tracking-[0.1em] whitespace-nowrap">
+        {L1}{priceTxt ? ` · ${priceTxt}` : ""} <ArrowRight className="w-5 h-5" />
+      </span>
+    </a>
+  );
+  // 4 · Grand vert deux lignes : action en gros, boutique dessous, prix à droite, un seul vert.
+  if (skin === 4) return (
+    <a {...common} className={`group inline-flex items-center gap-4 min-h-[68px] px-6 ${w} text-white bg-[#4A7C59] hover:bg-[#3A6449] transition-colors`} style={{ clipPath: CHAMFER_L, fontFamily: FONT }}>
+      <span className="flex-1 min-w-0">
+        <span className="block text-lg font-extrabold uppercase tracking-wider leading-tight whitespace-nowrap">{L1}</span>
+        <span className="block text-sm text-white/80 leading-tight whitespace-nowrap">chez {p.name}</span>
+      </span>
+      {priceTxt && <span className="text-2xl whitespace-nowrap" style={{ fontFamily: UNB, fontWeight: 900, fontStyle: "italic" }}>{priceTxt}</span>}
+      <ArrowRight className="w-6 h-6 shrink-0 transition-transform group-hover:translate-x-1" />
+    </a>
+  );
+  // 5 · Contour : bordure carbone épaisse, se remplit au survol. Le plus sobre.
+  return (
+    <a {...common} className={`group inline-flex items-center gap-3 min-h-[60px] px-6 ${w} bg-white text-[#1A1A1A] hover:bg-[#1A1A1A] hover:text-white transition-colors`} style={{ boxShadow: `inset 0 0 0 2.5px ${CARBON}`, fontFamily: FONT }}>
+      <span className="flex-1 text-base font-extrabold uppercase tracking-wider leading-tight sm:whitespace-nowrap">{L1} chez {p.name}</span>
+      {priceTxt && <span className="text-lg whitespace-nowrap" style={{ fontFamily: UNB, fontWeight: 900, fontStyle: "italic" }}>{priceTxt}</span>}
+      <ArrowRight className="w-5 h-5 shrink-0" />
+    </a>
+  );
+};
+
 // ─── Bouton du haut (à côté de « Pièces compatibles ») ─────────────────────
 export const BuyHeroButton = ({ look, url, price }: { look: BuyLook; url: string; price: number | null }) => {
   const p = partnerOf(url);
+  const skin = offreParam();
+  if (skin && p) return <div className="mt-3"><OfferSkinButton skin={skin} url={url} p={p} price={price} full={false} hero /></div>;
   const name = p?.name ?? "notre partenaire";
   const line2 = price != null ? `${eur(price)} chez ${name}` : `chez ${name}`;
   if (look === 3) {
