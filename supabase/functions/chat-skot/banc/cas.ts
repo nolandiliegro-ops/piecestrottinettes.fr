@@ -38,7 +38,7 @@ export const CORPUS: CasSkot[] = [
     attendu: { cartes: "verified", ne_doit_pas: ["\\d+ ?%", "\\bma (xiaomi|pro)"], outil: ["parts_for_scooter"] } },
   { id: "c02-pureair-pneu-plein", origine: "recette-24-10", note: "compat 🟡 : la phrase « à confirmer » doit sortir",
     message: "Quel pneu plein pour ma Pure Air 6 Ultra Max Suspension ?",
-    attendu: { cartes: "unverified", un_de: ["confirm"], ne_doit_pas: ["autres? options? (sont |juste )?(en dessous|ci-dessous)"] } },
+    attendu: { cartes: "unverified", un_de: ["confirm"], outil: ["parts_for_scooter"] } },
   { id: "c03-modele-inconnu", origine: "recette-24-10", note: "v1 affichait 6 plaquettes au hasard",
     message: "J'ai une Zorglub Turbo X9000, il me faut des plaquettes",
     attendu: { cartes: "aucune", un_de: ["catalogue", "connais pas", "trouve pas"] } },

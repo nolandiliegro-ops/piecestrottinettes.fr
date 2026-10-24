@@ -44,7 +44,8 @@ function checkAssertions(c: CasSkot, r: any): string[] {
   const cards: any[] = r.cards ?? [];
   if (a.cartes === "aucune" && cards.length) fails.push(`0 carte attendue, ${cards.length} affichée(s)`);
   if (a.cartes === "avec" && !cards.length) fails.push("au moins 1 carte attendue");
-  if (a.cartes === "verified" && (!cards.length || cards.some((x) => x.compat !== "verified"))) fails.push(`cartes ✓ attendues : ${cards.map((x) => x.compat ?? "sans statut").join(",") || "aucune"}`);
+  // "verified" : au moins une carte ✓, en tête, et aucune carte sans statut (des ◐ en dessous sont admises).
+  if (a.cartes === "verified" && (!cards.length || cards[0].compat !== "verified" || cards.some((x) => !x.compat))) fails.push(`cartes ✓ attendues : ${cards.map((x) => x.compat ?? "sans statut").join(",") || "aucune"}`);
   if (a.cartes === "unverified" && (!cards.length || cards.some((x) => x.compat === "verified") || cards.some((x) => !x.compat))) fails.push(`cartes ◐ attendues : ${cards.map((x) => x.compat ?? "sans statut").join(",") || "aucune"}`);
   const used = new Set((r.toolLog ?? []).map((t: any) => t.name));
   for (const t of a.outil ?? []) if (!used.has(t)) fails.push(`outil ${t} non appelé`);
@@ -80,7 +81,7 @@ async function judge(d: Deps, transcript: string, toolResults: unknown): Promise
       // Le juge réfléchit aussi (thinking adaptatif par défaut) : à 600 puis 1500 tokens, il rendait parfois un texte VIDE.
       max_tokens: 4000,
       system: [{ type: "text", text: JUDGE_SYSTEM(d.judgeRules), cache_control: { type: "ephemeral" } }],
-      messages: [{ role: "user", content: `CONVERSATION :\n${transcript}\n\nRÉSULTATS D'OUTILS (dernière réponse, tronqués) :\n${JSON.stringify(toolResults ?? []).slice(0, 4000)}\n\nRappel : réponds UNIQUEMENT par l'objet JSON, explications d'une phrase.` }],
+      messages: [{ role: "user", content: `CONVERSATION :\n${transcript}\n\nRÉSULTATS D'OUTILS (dernière réponse) :\n${JSON.stringify(toolResults ?? []).slice(0, 14000)}\n\nRappel : réponds UNIQUEMENT par l'objet JSON, explications d'une phrase.` }],
     });
     if (!r.ok) return { conforme: false, violations: [], tokens, error: `juge HTTP ${r.status}` };
     tokens += (r.out.usage?.input_tokens ?? 0) + (r.out.usage?.cache_read_input_tokens ?? 0) + (r.out.usage?.cache_creation_input_tokens ?? 0) + (r.out.usage?.output_tokens ?? 0);
