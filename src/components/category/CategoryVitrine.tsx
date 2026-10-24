@@ -167,11 +167,11 @@ const CategoryVitrine = ({ heading, imageUrl, imageAlt, bodyText, parts, layout 
               alt={imageAlt}
               loading="eager"
               // Plafonnée à 520 px (taille réelle des visuels détourés) : jamais étirée, donc nette.
-              className="pointer-events-none absolute w-[290px] -right-[56px] top-[14px] md:w-[min(520px,48%)] md:right-[-24px] md:top-1/2 md:-translate-y-1/2"
+              className="pointer-events-none absolute w-[250px] max-h-[250px] object-contain -right-[34px] top-[12px] md:max-h-[92%] md:w-auto md:max-w-[min(520px,48%)] md:right-[-24px] md:top-1/2 md:-translate-y-1/2"
               style={{ rotate: "-8deg", filter: "drop-shadow(0 24px 30px rgba(0,0,0,0.3))" }}
             />
           )}
-          <div className="relative z-10 w-full md:max-w-[60%] px-5 pb-6 pt-[270px] md:px-10 md:py-12" style={{ containerType: "inline-size" }}>
+          <div className="relative z-10 w-full md:max-w-[60%] px-5 pb-6 pt-[262px] md:px-10 md:py-12" style={{ containerType: "inline-size" }}>
             <h1 className="uppercase" style={{ fontFamily: DISP, fontWeight: 900, fontStyle: "italic", fontSize: titleSize, lineHeight: 0.95, letterSpacing: "-0.03em", color: INK }}>
               {heading}
             </h1>
