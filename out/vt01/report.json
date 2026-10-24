@@ -1,0 +1,2524 @@
+[
+ {
+  "slug": "chambre-a-air-10-pouces-10x2-125-valve-droite",
+  "i": 0,
+  "url": "https://raw.githubusercontent.com/nolandiliegro-ops/piecestrottinettes.fr/main/config/photos/visuels/chambre-a-air-10-pouces-10x2-125-valve-droite.png",
+  "verdict": "FAIL",
+  "reasons": [
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 6 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 6 morceaux"
+   ],
+   "parts": 6,
+   "second": 0.285,
+   "vivid": 0.002,
+   "fill": 0.846
+  },
+  "size": [
+   1023,
+   1157
+  ],
+  "error": null
+ },
+ {
+  "slug": "chambre-a-air-10x2-50-valve-45x45",
+  "i": 0,
+  "url": "https://raw.githubusercontent.com/nolandiliegro-ops/piecestrottinettes.fr/main/config/photos/visuels/chambre-a-air-10x2-50-valve-45x45.png",
+  "verdict": "FAIL",
+  "reasons": [
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 5 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 5 morceaux"
+   ],
+   "parts": 5,
+   "second": 0.283,
+   "vivid": 0.001,
+   "fill": 0.856
+  },
+  "size": [
+   1013,
+   1157
+  ],
+  "error": null
+ },
+ {
+  "slug": "chambre-a-air-10x2125-renforcee-90x90",
+  "i": 0,
+  "url": "https://raw.githubusercontent.com/nolandiliegro-ops/piecestrottinettes.fr/main/config/photos/visuels/chambre-a-air-10x2125-renforcee-90x90.png",
+  "verdict": "FAIL",
+  "reasons": [
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 5 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 5 morceaux"
+   ],
+   "parts": 5,
+   "second": 0.31,
+   "vivid": 0.002,
+   "fill": 0.846
+  },
+  "size": [
+   1023,
+   1157
+  ],
+  "error": null
+ },
+ {
+  "slug": "chambre-a-air-10x2125-valve-0x90",
+  "i": 0,
+  "url": "https://raw.githubusercontent.com/nolandiliegro-ops/piecestrottinettes.fr/main/config/photos/visuels/chambre-a-air-10x2125-valve-0x90.png",
+  "verdict": "FAIL",
+  "reasons": [
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 6 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 6 morceaux"
+   ],
+   "parts": 6,
+   "second": 0.28,
+   "vivid": 0.002,
+   "fill": 0.846
+  },
+  "size": [
+   1023,
+   1157
+  ],
+  "error": null
+ },
+ {
+  "slug": "chambre-a-air-10x2125-valve-45x45",
+  "i": 0,
+  "url": "https://raw.githubusercontent.com/nolandiliegro-ops/piecestrottinettes.fr/main/config/photos/visuels/chambre-a-air-10x2125-valve-45x45.png",
+  "verdict": "FAIL",
+  "reasons": [
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 5 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 5 morceaux"
+   ],
+   "parts": 5,
+   "second": 0.313,
+   "vivid": 0.002,
+   "fill": 0.846
+  },
+  "size": [
+   1023,
+   1157
+  ],
+  "error": null
+ },
+ {
+  "slug": "chambre-a-air-10x2125-valve-90x90",
+  "i": 0,
+  "url": "https://raw.githubusercontent.com/nolandiliegro-ops/piecestrottinettes.fr/main/config/photos/visuels/chambre-a-air-10x2125-valve-90x90.png",
+  "verdict": "FAIL",
+  "reasons": [
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 5 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 5 morceaux"
+   ],
+   "parts": 5,
+   "second": 0.31,
+   "vivid": 0.002,
+   "fill": 0.846
+  },
+  "size": [
+   1023,
+   1157
+  ],
+  "error": null
+ },
+ {
+  "slug": "chambre-a-air-10x250-valve-0x90",
+  "i": 0,
+  "url": "https://raw.githubusercontent.com/nolandiliegro-ops/piecestrottinettes.fr/main/config/photos/visuels/chambre-a-air-10x250-valve-0x90.png",
+  "verdict": "FAIL",
+  "reasons": [
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 6 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 6 morceaux"
+   ],
+   "parts": 6,
+   "second": 0.276,
+   "vivid": 0.002,
+   "fill": 0.856
+  },
+  "size": [
+   1013,
+   1157
+  ],
+  "error": null
+ },
+ {
+  "slug": "chambre-a-air-10x250-valve-90x90",
+  "i": 0,
+  "url": "https://raw.githubusercontent.com/nolandiliegro-ops/piecestrottinettes.fr/main/config/photos/visuels/chambre-a-air-10x250-valve-90x90.png",
+  "verdict": "FAIL",
+  "reasons": [
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 5 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 5 morceaux"
+   ],
+   "parts": 5,
+   "second": 0.304,
+   "vivid": 0.002,
+   "fill": 0.846
+  },
+  "size": [
+   1022,
+   1157
+  ],
+  "error": null
+ },
+ {
+  "slug": "chambre-a-air-10x250-valve-droite",
+  "i": 0,
+  "url": "https://raw.githubusercontent.com/nolandiliegro-ops/piecestrottinettes.fr/main/config/photos/visuels/chambre-a-air-10x250-valve-droite.png",
+  "verdict": "FAIL",
+  "reasons": [
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 6 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 6 morceaux"
+   ],
+   "parts": 6,
+   "second": 0.282,
+   "vivid": 0.002,
+   "fill": 0.856
+  },
+  "size": [
+   1013,
+   1157
+  ],
+  "error": null
+ },
+ {
+  "slug": "chambre-a-air-10x30-7065-65",
+  "i": 0,
+  "url": "https://raw.githubusercontent.com/nolandiliegro-ops/piecestrottinettes.fr/main/config/photos/visuels/chambre-a-air-10x30-7065-65.png",
+  "verdict": "FAIL",
+  "reasons": [
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 6 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 6 morceaux"
+   ],
+   "parts": 6,
+   "second": 0.273,
+   "vivid": 0.001,
+   "fill": 0.853
+  },
+  "size": [
+   986,
+   1157
+  ],
+  "error": null
+ },
+ {
+  "slug": "chambre-a-air-14x2-50-valve-droite-dualtron-city",
+  "i": 0,
+  "url": "https://raw.githubusercontent.com/nolandiliegro-ops/piecestrottinettes.fr/main/config/photos/visuels/chambre-a-air-14x2-50-valve-droite-dualtron-city.png",
+  "verdict": "FAIL",
+  "reasons": [
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 5 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 5 morceaux"
+   ],
+   "parts": 5,
+   "second": 0.292,
+   "vivid": 0.002,
+   "fill": 0.851
+  },
+  "size": [
+   1013,
+   1157
+  ],
+  "error": null
+ },
+ {
+  "slug": "chambre-a-air-200x50-speedway-mini4-pro",
+  "i": 0,
+  "url": "https://raw.githubusercontent.com/nolandiliegro-ops/piecestrottinettes.fr/main/config/photos/visuels/chambre-a-air-200x50-speedway-mini4-pro.png",
+  "verdict": "FAIL",
+  "reasons": [
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 6 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 6 morceaux"
+   ],
+   "parts": 6,
+   "second": 0.277,
+   "vivid": 0.001,
+   "fill": 0.846
+  },
+  "size": [
+   1023,
+   1157
+  ],
+  "error": null
+ },
+ {
+  "slug": "chambre-a-air-6x2-pouces",
+  "i": 0,
+  "url": "https://raw.githubusercontent.com/nolandiliegro-ops/piecestrottinettes.fr/main/config/photos/visuels/chambre-a-air-6x2-pouces.png",
+  "verdict": "FAIL",
+  "reasons": [
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 6 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 6 morceaux"
+   ],
+   "parts": 6,
+   "second": 0.252,
+   "vivid": 0.001,
+   "fill": 0.852
+  },
+  "size": [
+   961,
+   1157
+  ],
+  "error": null
+ },
+ {
+  "slug": "chambre-a-air-70-100-19-valve-droite",
+  "i": 0,
+  "url": "https://raw.githubusercontent.com/nolandiliegro-ops/piecestrottinettes.fr/main/config/photos/visuels/chambre-a-air-70-100-19-valve-droite.png",
+  "verdict": "FAIL",
+  "reasons": [
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 5 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 5 morceaux"
+   ],
+   "parts": 5,
+   "second": 0.302,
+   "vivid": 0.001,
+   "fill": 0.854
+  },
+  "size": [
+   1054,
+   1157
+  ],
+  "error": null
+ },
+ {
+  "slug": "chambre-a-air-80-65-6-10x3-valve-coudee-ewheel",
+  "i": 0,
+  "url": "https://raw.githubusercontent.com/nolandiliegro-ops/piecestrottinettes.fr/main/config/photos/visuels/chambre-a-air-80-65-6-10x3-valve-coudee-ewheel.png",
+  "verdict": "FAIL",
+  "reasons": [
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 5 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 5 morceaux"
+   ],
+   "parts": 5,
+   "second": 0.311,
+   "vivid": 0.001,
+   "fill": 0.851
+  },
+  "size": [
+   1018,
+   1157
+  ],
+  "error": null
+ },
+ {
+  "slug": "chambre-a-air-85x2-dualtron-mini-valve-90x90",
+  "i": 0,
+  "url": "https://raw.githubusercontent.com/nolandiliegro-ops/piecestrottinettes.fr/main/config/photos/visuels/chambre-a-air-85x2-dualtron-mini-valve-90x90.png",
+  "verdict": "FAIL",
+  "reasons": [
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 6 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 6 morceaux"
+   ],
+   "parts": 6,
+   "second": 0.257,
+   "vivid": 0.001,
+   "fill": 0.846
+  },
+  "size": [
+   1022,
+   1157
+  ],
+  "error": null
+ },
+ {
+  "slug": "chambre-a-air-85x2-renforcee-dualtron-mini-speedway-leger",
+  "i": 0,
+  "url": "https://raw.githubusercontent.com/nolandiliegro-ops/piecestrottinettes.fr/main/config/photos/visuels/chambre-a-air-85x2-renforcee-dualtron-mini-speedway-leger.png",
+  "verdict": "FAIL",
+  "reasons": [
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 6 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 6 morceaux"
+   ],
+   "parts": 6,
+   "second": 0.259,
+   "vivid": 0.001,
+   "fill": 0.846
+  },
+  "size": [
+   1023,
+   1157
+  ],
+  "error": null
+ },
+ {
+  "slug": "chambre-a-air-85x2-valve-coudee-90-jante-zero-134mm",
+  "i": 0,
+  "url": "https://raw.githubusercontent.com/nolandiliegro-ops/piecestrottinettes.fr/main/config/photos/visuels/chambre-a-air-85x2-valve-coudee-90-jante-zero-134mm.png",
+  "verdict": "FAIL",
+  "reasons": [
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 6 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 6 morceaux"
+   ],
+   "parts": 6,
+   "second": 0.26,
+   "vivid": 0.001,
+   "fill": 0.846
+  },
+  "size": [
+   1023,
+   1157
+  ],
+  "error": null
+ },
+ {
+  "slug": "chambre-a-air-85x2-vsett-8-9-z8-pro-140mm",
+  "i": 0,
+  "url": "https://raw.githubusercontent.com/nolandiliegro-ops/piecestrottinettes.fr/main/config/photos/visuels/chambre-a-air-85x2-vsett-8-9-z8-pro-140mm.png",
+  "verdict": "FAIL",
+  "reasons": [
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 6 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 6 morceaux"
+   ],
+   "parts": 6,
+   "second": 0.261,
+   "vivid": 0.001,
+   "fill": 0.841
+  },
+  "size": [
+   1023,
+   1158
+  ],
+  "error": null
+ },
+ {
+  "slug": "chambre-a-air-85x2-xiaomi-m365",
+  "i": 0,
+  "url": "https://raw.githubusercontent.com/nolandiliegro-ops/piecestrottinettes.fr/main/config/photos/visuels/chambre-a-air-85x2-xiaomi-m365.png",
+  "verdict": "FAIL",
+  "reasons": [
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 5 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 5 morceaux"
+   ],
+   "parts": 5,
+   "second": 0.307,
+   "vivid": 0.001,
+   "fill": 0.841
+  },
+  "size": [
+   964,
+   1157
+  ],
+  "error": null
+ },
+ {
+  "slug": "chambre-a-air-85x2-zero-8-9",
+  "i": 0,
+  "url": "https://raw.githubusercontent.com/nolandiliegro-ops/piecestrottinettes.fr/main/config/photos/visuels/chambre-a-air-85x2-zero-8-9.png",
+  "verdict": "FAIL",
+  "reasons": [
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 6 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 6 morceaux"
+   ],
+   "parts": 6,
+   "second": 0.259,
+   "vivid": 0.001,
+   "fill": 0.846
+  },
+  "size": [
+   1022,
+   1157
+  ],
+  "error": null
+ },
+ {
+  "slug": "chambre-a-air-8x2-e-road-ciwo",
+  "i": 0,
+  "url": "https://raw.githubusercontent.com/nolandiliegro-ops/piecestrottinettes.fr/main/config/photos/visuels/chambre-a-air-8x2-e-road-ciwo.png",
+  "verdict": "FAIL",
+  "reasons": [
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 6 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 6 morceaux"
+   ],
+   "parts": 6,
+   "second": 0.267,
+   "vivid": 0.001,
+   "fill": 0.852
+  },
+  "size": [
+   961,
+   1157
+  ],
+  "error": null
+ },
+ {
+  "slug": "chambre-a-air-90-65-6-5-valve-coudee-ewheel",
+  "i": 0,
+  "url": "https://raw.githubusercontent.com/nolandiliegro-ops/piecestrottinettes.fr/main/config/photos/visuels/chambre-a-air-90-65-6-5-valve-coudee-ewheel.png",
+  "verdict": "FAIL",
+  "reasons": [
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 5 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 5 morceaux"
+   ],
+   "parts": 5,
+   "second": 0.318,
+   "vivid": 0.001,
+   "fill": 0.858
+  },
+  "size": [
+   1054,
+   1157
+  ],
+  "error": null
+ },
+ {
+  "slug": "chambre-a-air-9065-65-11-pouces",
+  "i": 0,
+  "url": "https://raw.githubusercontent.com/nolandiliegro-ops/piecestrottinettes.fr/main/config/photos/visuels/chambre-a-air-9065-65-11-pouces.png",
+  "verdict": "FAIL",
+  "reasons": [
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 5 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 5 morceaux"
+   ],
+   "parts": 5,
+   "second": 0.294,
+   "vivid": 0.001,
+   "fill": 0.858
+  },
+  "size": [
+   1054,
+   1157
+  ],
+  "error": null
+ },
+ {
+  "slug": "chambre-a-air-9065-65-valve-droite",
+  "i": 0,
+  "url": "https://raw.githubusercontent.com/nolandiliegro-ops/piecestrottinettes.fr/main/config/photos/visuels/chambre-a-air-9065-65-valve-droite.png",
+  "verdict": "FAIL",
+  "reasons": [
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 6 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 6 morceaux"
+   ],
+   "parts": 6,
+   "second": 0.295,
+   "vivid": 0.001,
+   "fill": 0.858
+  },
+  "size": [
+   1054,
+   1157
+  ],
+  "error": null
+ },
+ {
+  "slug": "chambre-a-air-cst-410350-4",
+  "i": 0,
+  "url": "https://raw.githubusercontent.com/nolandiliegro-ops/piecestrottinettes.fr/main/config/photos/visuels/chambre-a-air-cst-410350-4.png",
+  "verdict": "FAIL",
+  "reasons": [
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 4 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 4 morceaux"
+   ],
+   "parts": 4,
+   "second": 0.356,
+   "vivid": 0.002,
+   "fill": 0.86
+  },
+  "size": [
+   1082,
+   1157
+  ],
+  "error": null
+ },
+ {
+  "slug": "chambre-a-air-draisienne-12x175",
+  "i": 0,
+  "url": "https://raw.githubusercontent.com/nolandiliegro-ops/piecestrottinettes.fr/main/config/photos/visuels/chambre-a-air-draisienne-12x175.png",
+  "verdict": "FAIL",
+  "reasons": [
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 5 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 5 morceaux"
+   ],
+   "parts": 5,
+   "second": 0.271,
+   "vivid": 0.002,
+   "fill": 0.849
+  },
+  "size": [
+   995,
+   1157
+  ],
+  "error": null
+ },
+ {
+  "slug": "chambre-a-air-draisienne-12x2-125",
+  "i": 0,
+  "url": "https://raw.githubusercontent.com/nolandiliegro-ops/piecestrottinettes.fr/main/config/photos/visuels/chambre-a-air-draisienne-12x2-125.png",
+  "verdict": "FAIL",
+  "reasons": [
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 5 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 5 morceaux"
+   ],
+   "parts": 5,
+   "second": 0.287,
+   "vivid": 0.002,
+   "fill": 0.856
+  },
+  "size": [
+   1021,
+   1157
+  ],
+  "error": null
+ },
+ {
+  "slug": "chambre-a-air-kaabo-skywalker-200x50-diam-94mm-30x90",
+  "i": 0,
+  "url": "https://raw.githubusercontent.com/nolandiliegro-ops/piecestrottinettes.fr/main/config/photos/visuels/chambre-a-air-kaabo-skywalker-200x50-diam-94mm-30x90.png",
+  "verdict": "FAIL",
+  "reasons": [
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 5 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 5 morceaux"
+   ],
+   "parts": 5,
+   "second": 0.294,
+   "vivid": 0.002,
+   "fill": 0.856
+  },
+  "size": [
+   1013,
+   1157
+  ],
+  "error": null
+ },
+ {
+  "slug": "chambre-a-air-renforce-10x2-50-90x90",
+  "i": 0,
+  "url": "https://raw.githubusercontent.com/nolandiliegro-ops/piecestrottinettes.fr/main/config/photos/visuels/chambre-a-air-renforce-10x2-50-90x90.png",
+  "verdict": "FAIL",
+  "reasons": [
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 5 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 5 morceaux"
+   ],
+   "parts": 5,
+   "second": 0.281,
+   "vivid": 0.002,
+   "fill": 0.856
+  },
+  "size": [
+   1013,
+   1157
+  ],
+  "error": null
+ },
+ {
+  "slug": "chambre-a-air-xiaomi-8-5x2-renforcee",
+  "i": 0,
+  "url": "https://raw.githubusercontent.com/nolandiliegro-ops/piecestrottinettes.fr/main/config/photos/visuels/chambre-a-air-xiaomi-8-5x2-renforcee.png",
+  "verdict": "FAIL",
+  "reasons": [
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 5 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 5 morceaux"
+   ],
+   "parts": 5,
+   "second": 0.278,
+   "vivid": 0.001,
+   "fill": 0.841
+  },
+  "size": [
+   964,
+   1157
+  ],
+  "error": null
+ },
+ {
+  "slug": "chargeur-24v-294v-2a-connecteur-gx16-3p",
+  "i": 0,
+  "url": "https://raw.githubusercontent.com/nolandiliegro-ops/piecestrottinettes.fr/main/config/photos/visuels/chargeur-24v-294v-2a-connecteur-gx16-3p.png",
+  "verdict": "FAIL",
+  "reasons": [
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 9 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 9 morceaux"
+   ],
+   "parts": 9,
+   "second": 0.179,
+   "vivid": 0,
+   "fill": 0.85
+  },
+  "size": [
+   1009,
+   1165
+  ],
+  "error": null
+ },
+ {
+  "slug": "chargeur-36v-42v-2a-connecteur-dc-55-21mm",
+  "i": 0,
+  "url": "https://raw.githubusercontent.com/nolandiliegro-ops/piecestrottinettes.fr/main/config/photos/visuels/chargeur-36v-42v-2a-connecteur-dc-55-21mm.png",
+  "verdict": "FAIL",
+  "reasons": [
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 8 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 8 morceaux"
+   ],
+   "parts": 8,
+   "second": 0.184,
+   "vivid": 0,
+   "fill": 0.858
+  },
+  "size": [
+   1120,
+   1165
+  ],
+  "error": null
+ },
+ {
+  "slug": "chargeur-36v-42v-2a-connecteur-gx16-3p",
+  "i": 0,
+  "url": "https://raw.githubusercontent.com/nolandiliegro-ops/piecestrottinettes.fr/main/config/photos/visuels/chargeur-36v-42v-2a-connecteur-gx16-3p.png",
+  "verdict": "FAIL",
+  "reasons": [
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 9 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 9 morceaux"
+   ],
+   "parts": 9,
+   "second": 0.183,
+   "vivid": 0,
+   "fill": 0.85
+  },
+  "size": [
+   1009,
+   1165
+  ],
+  "error": null
+ },
+ {
+  "slug": "chargeur-36v-42v-2a-xiaomi-connecteur-rca",
+  "i": 0,
+  "url": "https://raw.githubusercontent.com/nolandiliegro-ops/piecestrottinettes.fr/main/config/photos/visuels/chargeur-36v-42v-2a-xiaomi-connecteur-rca.png",
+  "verdict": "FAIL",
+  "reasons": [
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 7 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 7 morceaux"
+   ],
+   "parts": 7,
+   "second": 0.182,
+   "vivid": 0,
+   "fill": 0.851
+  },
+  "size": [
+   1089,
+   1165
+  ],
+  "error": null
+ },
+ {
+  "slug": "chargeur-36v-42v-3a-connecteur-gx16-3p",
+  "i": 0,
+  "url": "https://raw.githubusercontent.com/nolandiliegro-ops/piecestrottinettes.fr/main/config/photos/visuels/chargeur-36v-42v-3a-connecteur-gx16-3p.png",
+  "verdict": "FAIL",
+  "reasons": [
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 9 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 9 morceaux"
+   ],
+   "parts": 9,
+   "second": 0.183,
+   "vivid": 0,
+   "fill": 0.85
+  },
+  "size": [
+   1009,
+   1165
+  ],
+  "error": null
+ },
+ {
+  "slug": "chargeur-48v-546v-2a-connecteur-gx16-3p",
+  "i": 0,
+  "url": "https://raw.githubusercontent.com/nolandiliegro-ops/piecestrottinettes.fr/main/config/photos/visuels/chargeur-48v-546v-2a-connecteur-gx16-3p.png",
+  "verdict": "FAIL",
+  "reasons": [
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 7 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 7 morceaux"
+   ],
+   "parts": 7,
+   "second": 0.211,
+   "vivid": 0,
+   "fill": 0.85
+  },
+  "size": [
+   1009,
+   1165
+  ],
+  "error": null
+ },
+ {
+  "slug": "chargeur-48v-546v-3a-gx16-3p",
+  "i": 0,
+  "url": "https://raw.githubusercontent.com/nolandiliegro-ops/piecestrottinettes.fr/main/config/photos/visuels/chargeur-48v-546v-3a-gx16-3p.png",
+  "verdict": "FAIL",
+  "reasons": [
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 8 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 8 morceaux"
+   ],
+   "parts": 8,
+   "second": 0.178,
+   "vivid": 0,
+   "fill": 0.85
+  },
+  "size": [
+   1009,
+   1165
+  ],
+  "error": null
+ },
+ {
+  "slug": "chargeur-52v-588v-2a-connecteur-gx16-3p",
+  "i": 0,
+  "url": "https://raw.githubusercontent.com/nolandiliegro-ops/piecestrottinettes.fr/main/config/photos/visuels/chargeur-52v-588v-2a-connecteur-gx16-3p.png",
+  "verdict": "FAIL",
+  "reasons": [
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 9 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 9 morceaux"
+   ],
+   "parts": 9,
+   "second": 0.178,
+   "vivid": 0,
+   "fill": 0.85
+  },
+  "size": [
+   1009,
+   1165
+  ],
+  "error": null
+ },
+ {
+  "slug": "chargeur-52v-588v-3a-connecteur-gx16-3p",
+  "i": 0,
+  "url": "https://raw.githubusercontent.com/nolandiliegro-ops/piecestrottinettes.fr/main/config/photos/visuels/chargeur-52v-588v-3a-connecteur-gx16-3p.png",
+  "verdict": "FAIL",
+  "reasons": [
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 9 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 9 morceaux"
+   ],
+   "parts": 9,
+   "second": 0.178,
+   "vivid": 0,
+   "fill": 0.85
+  },
+  "size": [
+   1009,
+   1165
+  ],
+  "error": null
+ },
+ {
+  "slug": "chargeur-60v-672v-2a-connecteur-gx16-3p",
+  "i": 0,
+  "url": "https://raw.githubusercontent.com/nolandiliegro-ops/piecestrottinettes.fr/main/config/photos/visuels/chargeur-60v-672v-2a-connecteur-gx16-3p.png",
+  "verdict": "FAIL",
+  "reasons": [
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 9 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 9 morceaux"
+   ],
+   "parts": 9,
+   "second": 0.179,
+   "vivid": 0,
+   "fill": 0.85
+  },
+  "size": [
+   1009,
+   1165
+  ],
+  "error": null
+ },
+ {
+  "slug": "chargeur-63v-2a-inmotion-s1s1f",
+  "i": 0,
+  "url": "https://raw.githubusercontent.com/nolandiliegro-ops/piecestrottinettes.fr/main/config/photos/visuels/chargeur-63v-2a-inmotion-s1s1f.png",
+  "verdict": "FAIL",
+  "reasons": [
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 8 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 8 morceaux"
+   ],
+   "parts": 8,
+   "second": 0.187,
+   "vivid": 0,
+   "fill": 0.85
+  },
+  "size": [
+   1009,
+   1165
+  ],
+  "error": null
+ },
+ {
+  "slug": "chargeur-72v-84v-2a-connecteur-gx16-3p",
+  "i": 0,
+  "url": "https://raw.githubusercontent.com/nolandiliegro-ops/piecestrottinettes.fr/main/config/photos/visuels/chargeur-72v-84v-2a-connecteur-gx16-3p.png",
+  "verdict": "FAIL",
+  "reasons": [
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 7 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 7 morceaux"
+   ],
+   "parts": 7,
+   "second": 0.184,
+   "vivid": 0,
+   "fill": 0.85
+  },
+  "size": [
+   1009,
+   1165
+  ],
+  "error": null
+ },
+ {
+  "slug": "chargeur-72v-84v-2a-connecteur-lp16-3",
+  "i": 0,
+  "url": "https://raw.githubusercontent.com/nolandiliegro-ops/piecestrottinettes.fr/main/config/photos/visuels/chargeur-72v-84v-2a-connecteur-lp16-3.png",
+  "verdict": "FAIL",
+  "reasons": [
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 7 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 7 morceaux"
+   ],
+   "parts": 7,
+   "second": 0.186,
+   "vivid": 0,
+   "fill": 0.849
+  },
+  "size": [
+   992,
+   1165
+  ],
+  "error": null
+ },
+ {
+  "slug": "chargeur-72v-84v-reglable-1-20-a-prise-xt90",
+  "i": 0,
+  "url": "https://raw.githubusercontent.com/nolandiliegro-ops/piecestrottinettes.fr/main/config/photos/visuels/chargeur-72v-84v-reglable-1-20-a-prise-xt90.png",
+  "verdict": "FAIL",
+  "reasons": [
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 9 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 9 morceaux"
+   ],
+   "parts": 9,
+   "second": 0.177,
+   "vivid": 0.001,
+   "fill": 0.839
+  },
+  "size": [
+   999,
+   1165
+  ],
+  "error": null
+ },
+ {
+  "slug": "chargeur-rapide-52v-58v-5a-prise-gx16",
+  "i": 0,
+  "url": "https://raw.githubusercontent.com/nolandiliegro-ops/piecestrottinettes.fr/main/config/photos/visuels/chargeur-rapide-52v-58v-5a-prise-gx16.png",
+  "verdict": "FAIL",
+  "reasons": [
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 6 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 6 morceaux"
+   ],
+   "parts": 6,
+   "second": 0.22,
+   "vivid": 0,
+   "fill": 0.847
+  },
+  "size": [
+   975,
+   1165
+  ],
+  "error": null
+ },
+ {
+  "slug": "chargeur-rapide-60v-67v-1-10a-gx16-3p",
+  "i": 0,
+  "url": "https://raw.githubusercontent.com/nolandiliegro-ops/piecestrottinettes.fr/main/config/photos/visuels/chargeur-rapide-60v-67v-1-10a-gx16-3p.png",
+  "verdict": "FAIL",
+  "reasons": [
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 8 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 8 morceaux"
+   ],
+   "parts": 8,
+   "second": 0.191,
+   "vivid": 0,
+   "fill": 0.85
+  },
+  "size": [
+   1009,
+   1165
+  ],
+  "error": null
+ },
+ {
+  "slug": "chargeur-rapide-72v-84v-1-10a-gx16-3p",
+  "i": 0,
+  "url": "https://raw.githubusercontent.com/nolandiliegro-ops/piecestrottinettes.fr/main/config/photos/visuels/chargeur-rapide-72v-84v-1-10a-gx16-3p.png",
+  "verdict": "FAIL",
+  "reasons": [
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 9 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 9 morceaux"
+   ],
+   "parts": 9,
+   "second": 0.193,
+   "vivid": 0,
+   "fill": 0.85
+  },
+  "size": [
+   1009,
+   1165
+  ],
+  "error": null
+ },
+ {
+  "slug": "disque-de-frein-120mm-6-trous",
+  "i": 0,
+  "url": "https://raw.githubusercontent.com/nolandiliegro-ops/piecestrottinettes.fr/main/config/photos/visuels/disque-de-frein-120mm-6-trous.png",
+  "verdict": "FAIL",
+  "reasons": [
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 7 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 7 morceaux"
+   ],
+   "parts": 7,
+   "second": 0.29,
+   "vivid": 0.001,
+   "fill": 0.85
+  },
+  "size": [
+   1010,
+   1165
+  ],
+  "error": null
+ },
+ {
+  "slug": "disque-de-frein-135mm-5-trous",
+  "i": 0,
+  "url": "https://raw.githubusercontent.com/nolandiliegro-ops/piecestrottinettes.fr/main/config/photos/visuels/disque-de-frein-135mm-5-trous.png",
+  "verdict": "FAIL",
+  "reasons": [
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 8 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 8 morceaux"
+   ],
+   "parts": 8,
+   "second": 0.298,
+   "vivid": 0.001,
+   "fill": 0.848
+  },
+  "size": [
+   983,
+   1157
+  ],
+  "error": null
+ },
+ {
+  "slug": "disque-de-frein-140mm",
+  "i": 0,
+  "url": "https://raw.githubusercontent.com/nolandiliegro-ops/piecestrottinettes.fr/main/config/photos/visuels/disque-de-frein-140mm.png",
+  "verdict": "FAIL",
+  "reasons": [
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 7 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 7 morceaux"
+   ],
+   "parts": 7,
+   "second": 0.294,
+   "vivid": 0.003,
+   "fill": 0.85
+  },
+  "size": [
+   1010,
+   1165
+  ],
+  "error": null
+ },
+ {
+  "slug": "disque-de-frein-140mm-5-trous-xiaomi-mi4",
+  "i": 0,
+  "url": "https://raw.githubusercontent.com/nolandiliegro-ops/piecestrottinettes.fr/main/config/photos/visuels/disque-de-frein-140mm-5-trous-xiaomi-mi4.png",
+  "verdict": "FAIL",
+  "reasons": [
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 7 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 7 morceaux"
+   ],
+   "parts": 7,
+   "second": 0.295,
+   "vivid": 0.003,
+   "fill": 0.85
+  },
+  "size": [
+   1009,
+   1165
+  ],
+  "error": null
+ },
+ {
+  "slug": "disque-de-frein-140mm-kukirin-g2-pro",
+  "i": 0,
+  "url": "https://raw.githubusercontent.com/nolandiliegro-ops/piecestrottinettes.fr/main/config/photos/visuels/disque-de-frein-140mm-kukirin-g2-pro.png",
+  "verdict": "FAIL",
+  "reasons": [
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 7 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 7 morceaux"
+   ],
+   "parts": 7,
+   "second": 0.294,
+   "vivid": 0.003,
+   "fill": 0.85
+  },
+  "size": [
+   1010,
+   1165
+  ],
+  "error": null
+ },
+ {
+  "slug": "disque-de-frein-160mm",
+  "i": 0,
+  "url": "https://raw.githubusercontent.com/nolandiliegro-ops/piecestrottinettes.fr/main/config/photos/visuels/disque-de-frein-160mm.png",
+  "verdict": "FAIL",
+  "reasons": [
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 7 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 7 morceaux"
+   ],
+   "parts": 7,
+   "second": 0.293,
+   "vivid": 0.002,
+   "fill": 0.85
+  },
+  "size": [
+   1010,
+   1165
+  ],
+  "error": null
+ },
+ {
+  "slug": "disque-de-frein-160mm-28mm-entraxe-44mm",
+  "i": 0,
+  "url": "https://raw.githubusercontent.com/nolandiliegro-ops/piecestrottinettes.fr/main/config/photos/visuels/disque-de-frein-160mm-28mm-entraxe-44mm.png",
+  "verdict": "FAIL",
+  "reasons": [
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 6 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 6 morceaux"
+   ],
+   "parts": 6,
+   "second": 0.288,
+   "vivid": 0.002,
+   "fill": 0.851
+  },
+  "size": [
+   1014,
+   1165
+  ],
+  "error": null
+ },
+ {
+  "slug": "disque-de-frein-160mm-28mm-entraxe-48mm",
+  "i": 0,
+  "url": "https://raw.githubusercontent.com/nolandiliegro-ops/piecestrottinettes.fr/main/config/photos/visuels/disque-de-frein-160mm-28mm-entraxe-48mm.png",
+  "verdict": "FAIL",
+  "reasons": [
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 5 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 5 morceaux"
+   ],
+   "parts": 5,
+   "second": 0.29,
+   "vivid": 0.003,
+   "fill": 0.851
+  },
+  "size": [
+   1013,
+   1165
+  ],
+  "error": null
+ },
+ {
+  "slug": "disque-de-frein-160mm-dualtron-thunder-ultra",
+  "i": 0,
+  "url": "https://raw.githubusercontent.com/nolandiliegro-ops/piecestrottinettes.fr/main/config/photos/visuels/disque-de-frein-160mm-dualtron-thunder-ultra.png",
+  "verdict": "FAIL",
+  "reasons": [
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 7 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 7 morceaux"
+   ],
+   "parts": 7,
+   "second": 0.291,
+   "vivid": 0.002,
+   "fill": 0.85
+  },
+  "size": [
+   1009,
+   1165
+  ],
+  "error": null
+ },
+ {
+  "slug": "disque-de-frein-180mm",
+  "i": 0,
+  "url": "https://raw.githubusercontent.com/nolandiliegro-ops/piecestrottinettes.fr/main/config/photos/visuels/disque-de-frein-180mm.png",
+  "verdict": "FAIL",
+  "reasons": [
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 5 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 5 morceaux"
+   ],
+   "parts": 5,
+   "second": 0.285,
+   "vivid": 0.002,
+   "fill": 0.841
+  },
+  "size": [
+   1023,
+   1165
+  ],
+  "error": null
+ },
+ {
+  "slug": "disque-de-frein-xiaomi-120mm-m365-pro",
+  "i": 0,
+  "url": "https://raw.githubusercontent.com/nolandiliegro-ops/piecestrottinettes.fr/main/config/photos/visuels/disque-de-frein-xiaomi-120mm-m365-pro.png",
+  "verdict": "FAIL",
+  "reasons": [
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 7 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 7 morceaux"
+   ],
+   "parts": 7,
+   "second": 0.302,
+   "vivid": 0.001,
+   "fill": 0.848
+  },
+  "size": [
+   986,
+   1165
+  ],
+  "error": null
+ },
+ {
+  "slug": "disque-de-freins-140mm-entraxe-48mm",
+  "i": 0,
+  "url": "https://raw.githubusercontent.com/nolandiliegro-ops/piecestrottinettes.fr/main/config/photos/visuels/disque-de-freins-140mm-entraxe-48mm.png",
+  "verdict": "FAIL",
+  "reasons": [
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 7 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 7 morceaux"
+   ],
+   "parts": 7,
+   "second": 0.293,
+   "vivid": 0.003,
+   "fill": 0.85
+  },
+  "size": [
+   1009,
+   1165
+  ],
+  "error": null
+ },
+ {
+  "slug": "disque-de-freins-145-mm-6-trous",
+  "i": 0,
+  "url": "https://raw.githubusercontent.com/nolandiliegro-ops/piecestrottinettes.fr/main/config/photos/visuels/disque-de-freins-145-mm-6-trous.png",
+  "verdict": "FAIL",
+  "reasons": [
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 7 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 7 morceaux"
+   ],
+   "parts": 7,
+   "second": 0.289,
+   "vivid": 0.001,
+   "fill": 0.85
+  },
+  "size": [
+   1010,
+   1165
+  ],
+  "error": null
+ },
+ {
+  "slug": "pack-chargeur-36v-42v-2a-connecteur-rca",
+  "i": 0,
+  "url": "https://raw.githubusercontent.com/nolandiliegro-ops/piecestrottinettes.fr/main/config/photos/visuels/pack-chargeur-36v-42v-2a-connecteur-rca.png",
+  "verdict": "FAIL",
+  "reasons": [
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 7 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 7 morceaux"
+   ],
+   "parts": 7,
+   "second": 0.182,
+   "vivid": 0,
+   "fill": 0.851
+  },
+  "size": [
+   1089,
+   1165
+  ],
+  "error": null
+ },
+ {
+  "slug": "pack-chargeur-36v-adaptateur-dc5-5x2-5",
+  "i": 0,
+  "url": "https://raw.githubusercontent.com/nolandiliegro-ops/piecestrottinettes.fr/main/config/photos/visuels/pack-chargeur-36v-adaptateur-dc5-5x2-5.png",
+  "verdict": "FAIL",
+  "reasons": [
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 12 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 12 morceaux"
+   ],
+   "parts": 12,
+   "second": 0.257,
+   "vivid": 0,
+   "fill": 0.848
+  },
+  "size": [
+   1110,
+   1165
+  ],
+  "error": null
+ },
+ {
+  "slug": "pack-chargeur-48v-adaptateur-dc5-5x2-1",
+  "i": 0,
+  "url": "https://raw.githubusercontent.com/nolandiliegro-ops/piecestrottinettes.fr/main/config/photos/visuels/pack-chargeur-48v-adaptateur-dc5-5x2-1.png",
+  "verdict": "FAIL",
+  "reasons": [
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 12 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 12 morceaux"
+   ],
+   "parts": 12,
+   "second": 0.259,
+   "vivid": 0,
+   "fill": 0.848
+  },
+  "size": [
+   1110,
+   1165
+  ],
+  "error": null
+ },
+ {
+  "slug": "pack-chargeur-48v-adaptateur-dc5-5x2-5",
+  "i": 0,
+  "url": "https://raw.githubusercontent.com/nolandiliegro-ops/piecestrottinettes.fr/main/config/photos/visuels/pack-chargeur-48v-adaptateur-dc5-5x2-5.png",
+  "verdict": "FAIL",
+  "reasons": [
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 12 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 12 morceaux"
+   ],
+   "parts": 12,
+   "second": 0.258,
+   "vivid": 0,
+   "fill": 0.848
+  },
+  "size": [
+   1110,
+   1165
+  ],
+  "error": null
+ },
+ {
+  "slug": "pack-chargeur-48v-adaptateur-gx12-zwheel",
+  "i": 0,
+  "url": "https://raw.githubusercontent.com/nolandiliegro-ops/piecestrottinettes.fr/main/config/photos/visuels/pack-chargeur-48v-adaptateur-gx12-zwheel.png",
+  "verdict": "FAIL",
+  "reasons": [
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 13 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 13 morceaux"
+   ],
+   "parts": 13,
+   "second": 0.264,
+   "vivid": 0,
+   "fill": 0.848
+  },
+  "size": [
+   1110,
+   1165
+  ],
+  "error": null
+ },
+ {
+  "slug": "pack-chargeur-52v-588v-2a-connecteur-lp16-3",
+  "i": 0,
+  "url": "https://raw.githubusercontent.com/nolandiliegro-ops/piecestrottinettes.fr/main/config/photos/visuels/pack-chargeur-52v-588v-2a-connecteur-lp16-3.png",
+  "verdict": "FAIL",
+  "reasons": [
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 9 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 9 morceaux"
+   ],
+   "parts": 9,
+   "second": 0.18,
+   "vivid": 0,
+   "fill": 0.849
+  },
+  "size": [
+   992,
+   1165
+  ],
+  "error": null
+ },
+ {
+  "slug": "pack-chargeur-52v-adaptateur-dc5-5x2-1",
+  "i": 0,
+  "url": "https://raw.githubusercontent.com/nolandiliegro-ops/piecestrottinettes.fr/main/config/photos/visuels/pack-chargeur-52v-adaptateur-dc5-5x2-1.png",
+  "verdict": "FAIL",
+  "reasons": [
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 12 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 12 morceaux"
+   ],
+   "parts": 12,
+   "second": 0.252,
+   "vivid": 0,
+   "fill": 0.848
+  },
+  "size": [
+   1110,
+   1165
+  ],
+  "error": null
+ },
+ {
+  "slug": "pack-chargeur-52v-adaptateur-rca",
+  "i": 0,
+  "url": "https://raw.githubusercontent.com/nolandiliegro-ops/piecestrottinettes.fr/main/config/photos/visuels/pack-chargeur-52v-adaptateur-rca.png",
+  "verdict": "FAIL",
+  "reasons": [
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 12 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 12 morceaux"
+   ],
+   "parts": 12,
+   "second": 0.252,
+   "vivid": 0,
+   "fill": 0.848
+  },
+  "size": [
+   1110,
+   1165
+  ],
+  "error": null
+ },
+ {
+  "slug": "pack-chargeur-60v-adaptateur-dc5-5x2-1",
+  "i": 0,
+  "url": "https://raw.githubusercontent.com/nolandiliegro-ops/piecestrottinettes.fr/main/config/photos/visuels/pack-chargeur-60v-adaptateur-dc5-5x2-1.png",
+  "verdict": "FAIL",
+  "reasons": [
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 12 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 12 morceaux"
+   ],
+   "parts": 12,
+   "second": 0.26,
+   "vivid": 0,
+   "fill": 0.848
+  },
+  "size": [
+   1110,
+   1165
+  ],
+  "error": null
+ },
+ {
+  "slug": "pack-chargeur-72v-adaptateur-nami-rgx16-2",
+  "i": 0,
+  "url": "https://raw.githubusercontent.com/nolandiliegro-ops/piecestrottinettes.fr/main/config/photos/visuels/pack-chargeur-72v-adaptateur-nami-rgx16-2.png",
+  "verdict": "FAIL",
+  "reasons": [
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 12 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 12 morceaux"
+   ],
+   "parts": 12,
+   "second": 0.25,
+   "vivid": 0,
+   "fill": 0.848
+  },
+  "size": [
+   1110,
+   1165
+  ],
+  "error": null
+ },
+ {
+  "slug": "plaquette-de-frein-kaabo-skywalker-e-cross-pro-smartgyro-semi-metallique",
+  "i": 0,
+  "url": "https://raw.githubusercontent.com/nolandiliegro-ops/piecestrottinettes.fr/main/config/photos/visuels/plaquette-de-frein-kaabo-skywalker-e-cross-pro-smartgyro-semi-metallique.png",
+  "verdict": "FAIL",
+  "reasons": [
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 5 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 5 morceaux"
+   ],
+   "parts": 5,
+   "second": 0.227,
+   "vivid": 0,
+   "fill": 0.856
+  },
+  "size": [
+   1097,
+   1165
+  ],
+  "error": null
+ },
+ {
+  "slug": "plaquette-de-frein-magura-9c",
+  "i": 0,
+  "url": "https://raw.githubusercontent.com/nolandiliegro-ops/piecestrottinettes.fr/main/config/photos/visuels/plaquette-de-frein-magura-9c.png",
+  "verdict": "FAIL",
+  "reasons": [
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 6 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 6 morceaux"
+   ],
+   "parts": 6,
+   "second": 0.192,
+   "vivid": 0,
+   "fill": 0.856
+  },
+  "size": [
+   1097,
+   1165
+  ],
+  "error": null
+ },
+ {
+  "slug": "plaquette-de-frein-magura-9c-ceramique",
+  "i": 0,
+  "url": "https://raw.githubusercontent.com/nolandiliegro-ops/piecestrottinettes.fr/main/config/photos/visuels/plaquette-de-frein-magura-9c-ceramique.png",
+  "verdict": "FAIL",
+  "reasons": [
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 6 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 6 morceaux"
+   ],
+   "parts": 6,
+   "second": 0.21,
+   "vivid": 0.001,
+   "fill": 0.856
+  },
+  "size": [
+   1097,
+   1165
+  ],
+  "error": null
+ },
+ {
+  "slug": "plaquette-de-frein-magura-9c-metallique",
+  "i": 0,
+  "url": "https://raw.githubusercontent.com/nolandiliegro-ops/piecestrottinettes.fr/main/config/photos/visuels/plaquette-de-frein-magura-9c-metallique.png",
+  "verdict": "FAIL",
+  "reasons": [
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 6 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 6 morceaux"
+   ],
+   "parts": 6,
+   "second": 0.208,
+   "vivid": 0.001,
+   "fill": 0.856
+  },
+  "size": [
+   1097,
+   1165
+  ],
+  "error": null
+ },
+ {
+  "slug": "plaquette-de-freins-magura-mt5-mt7",
+  "i": 0,
+  "url": "https://raw.githubusercontent.com/nolandiliegro-ops/piecestrottinettes.fr/main/config/photos/visuels/plaquette-de-freins-magura-mt5-mt7.png",
+  "verdict": "FAIL",
+  "reasons": [
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 6 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 6 morceaux"
+   ],
+   "parts": 6,
+   "second": 0.192,
+   "vivid": 0,
+   "fill": 0.856
+  },
+  "size": [
+   1097,
+   1165
+  ],
+  "error": null
+ },
+ {
+  "slug": "plaquette-de-freins-magura-mt5-mt7-ceramique",
+  "i": 0,
+  "url": "https://raw.githubusercontent.com/nolandiliegro-ops/piecestrottinettes.fr/main/config/photos/visuels/plaquette-de-freins-magura-mt5-mt7-ceramique.png",
+  "verdict": "FAIL",
+  "reasons": [
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 6 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 6 morceaux"
+   ],
+   "parts": 6,
+   "second": 0.208,
+   "vivid": 0.001,
+   "fill": 0.856
+  },
+  "size": [
+   1097,
+   1165
+  ],
+  "error": null
+ },
+ {
+  "slug": "plaquette-de-freins-speedway-et-dualtron",
+  "i": 0,
+  "url": "https://raw.githubusercontent.com/nolandiliegro-ops/piecestrottinettes.fr/main/config/photos/visuels/plaquette-de-freins-speedway-et-dualtron.png",
+  "verdict": "FAIL",
+  "reasons": [
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 6 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 6 morceaux"
+   ],
+   "parts": 6,
+   "second": 0.215,
+   "vivid": 0,
+   "fill": 0.856
+  },
+  "size": [
+   1097,
+   1165
+  ],
+  "error": null
+ },
+ {
+  "slug": "plaquette-de-freins-speedway-et-dualtron-metal-fritte-haute-performance",
+  "i": 0,
+  "url": "https://raw.githubusercontent.com/nolandiliegro-ops/piecestrottinettes.fr/main/config/photos/visuels/plaquette-de-freins-speedway-et-dualtron-metal-fritte-haute-performance.png",
+  "verdict": "FAIL",
+  "reasons": [
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 6 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 6 morceaux"
+   ],
+   "parts": 6,
+   "second": 0.23,
+   "vivid": 0.001,
+   "fill": 0.856
+  },
+  "size": [
+   1097,
+   1165
+  ],
+  "error": null
+ },
+ {
+  "slug": "plaquettes-de-frein-dualtron-togo-ltd-kukirin-g2pro-g2-max-hitway-h5-urbanglide-allroad",
+  "i": 0,
+  "url": "https://raw.githubusercontent.com/nolandiliegro-ops/piecestrottinettes.fr/main/config/photos/visuels/plaquettes-de-frein-dualtron-togo-ltd-kukirin-g2pro-g2-max-hitway-h5-urbanglide-allroad.png",
+  "verdict": "FAIL",
+  "reasons": [
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 6 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 6 morceaux"
+   ],
+   "parts": 6,
+   "second": 0.213,
+   "vivid": 0,
+   "fill": 0.856
+  },
+  "size": [
+   1097,
+   1165
+  ],
+  "error": null
+ },
+ {
+  "slug": "plaquettes-de-frein-etrier-jak-5-laotie",
+  "i": 0,
+  "url": "https://raw.githubusercontent.com/nolandiliegro-ops/piecestrottinettes.fr/main/config/photos/visuels/plaquettes-de-frein-etrier-jak-5-laotie.png",
+  "verdict": "FAIL",
+  "reasons": [
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 5 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 5 morceaux"
+   ],
+   "parts": 5,
+   "second": 0.27,
+   "vivid": 0,
+   "fill": 0.856
+  },
+  "size": [
+   1097,
+   1165
+  ],
+  "error": null
+ },
+ {
+  "slug": "plaquettes-de-frein-hope-tech4-v4-metalliques",
+  "i": 0,
+  "url": "https://raw.githubusercontent.com/nolandiliegro-ops/piecestrottinettes.fr/main/config/photos/visuels/plaquettes-de-frein-hope-tech4-v4-metalliques.png",
+  "verdict": "FAIL",
+  "reasons": [
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 6 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 6 morceaux"
+   ],
+   "parts": 6,
+   "second": 0.233,
+   "vivid": 0.001,
+   "fill": 0.856
+  },
+  "size": [
+   1097,
+   1165
+  ],
+  "error": null
+ },
+ {
+  "slug": "plaquettes-de-frein-hope-tech4-v4-semi-metalliques",
+  "i": 0,
+  "url": "https://raw.githubusercontent.com/nolandiliegro-ops/piecestrottinettes.fr/main/config/photos/visuels/plaquettes-de-frein-hope-tech4-v4-semi-metalliques.png",
+  "verdict": "FAIL",
+  "reasons": [
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 6 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 6 morceaux"
+   ],
+   "parts": 6,
+   "second": 0.224,
+   "vivid": 0.001,
+   "fill": 0.856
+  },
+  "size": [
+   1097,
+   1165
+  ],
+  "error": null
+ },
+ {
+  "slug": "plaquettes-de-frein-shimano-b01s-kaabo-mantis-zoom-30mm-ceramique",
+  "i": 0,
+  "url": "https://raw.githubusercontent.com/nolandiliegro-ops/piecestrottinettes.fr/main/config/photos/visuels/plaquettes-de-frein-shimano-b01s-kaabo-mantis-zoom-30mm-ceramique.png",
+  "verdict": "FAIL",
+  "reasons": [
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 6 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 6 morceaux"
+   ],
+   "parts": 6,
+   "second": 0.226,
+   "vivid": 0.001,
+   "fill": 0.856
+  },
+  "size": [
+   1097,
+   1165
+  ],
+  "error": null
+ },
+ {
+  "slug": "plaquettes-de-frein-shimano-b01s-kaabo-mantis-zoom-30mm-semi-metallique",
+  "i": 0,
+  "url": "https://raw.githubusercontent.com/nolandiliegro-ops/piecestrottinettes.fr/main/config/photos/visuels/plaquettes-de-frein-shimano-b01s-kaabo-mantis-zoom-30mm-semi-metallique.png",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 7 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 7 morceaux"
+   ],
+   "parts": 7,
+   "second": 0.181,
+   "vivid": 0.001,
+   "fill": 0.856
+  },
+  "size": [
+   1097,
+   1165
+  ],
+  "error": null
+ },
+ {
+  "slug": "plaquettes-de-frein-xiaomi-m365",
+  "i": 0,
+  "url": "https://raw.githubusercontent.com/nolandiliegro-ops/piecestrottinettes.fr/main/config/photos/visuels/plaquettes-de-frein-xiaomi-m365.png",
+  "verdict": "FAIL",
+  "reasons": [
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 6 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 6 morceaux"
+   ],
+   "parts": 6,
+   "second": 0.209,
+   "vivid": 0,
+   "fill": 0.856
+  },
+  "size": [
+   1097,
+   1165
+  ],
+  "error": null
+ },
+ {
+  "slug": "plaquettes-de-frein-xiaomi-m365-pro-dualtron-forever",
+  "i": 0,
+  "url": "https://raw.githubusercontent.com/nolandiliegro-ops/piecestrottinettes.fr/main/config/photos/visuels/plaquettes-de-frein-xiaomi-m365-pro-dualtron-forever.png",
+  "verdict": "FAIL",
+  "reasons": [
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 6 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 6 morceaux"
+   ],
+   "parts": 6,
+   "second": 0.209,
+   "vivid": 0,
+   "fill": 0.856
+  },
+  "size": [
+   1097,
+   1165
+  ],
+  "error": null
+ },
+ {
+  "slug": "plaquettes-de-frein-zoom-semi-metallique",
+  "i": 0,
+  "url": "https://raw.githubusercontent.com/nolandiliegro-ops/piecestrottinettes.fr/main/config/photos/visuels/plaquettes-de-frein-zoom-semi-metallique.png",
+  "verdict": "FAIL",
+  "reasons": [
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 6 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 6 morceaux"
+   ],
+   "parts": 6,
+   "second": 0.214,
+   "vivid": 0.001,
+   "fill": 0.856
+  },
+  "size": [
+   1097,
+   1165
+  ],
+  "error": null
+ },
+ {
+  "slug": "plaquettes-de-freins-draisienne",
+  "i": 0,
+  "url": "https://raw.githubusercontent.com/nolandiliegro-ops/piecestrottinettes.fr/main/config/photos/visuels/plaquettes-de-freins-draisienne.png",
+  "verdict": "FAIL",
+  "reasons": [
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 4 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 4 morceaux"
+   ],
+   "parts": 4,
+   "second": 0.296,
+   "vivid": 0,
+   "fill": 0.856
+  },
+  "size": [
+   1097,
+   1165
+  ],
+  "error": null
+ },
+ {
+  "slug": "plaquettes-de-freins-hope-tech4-v4-ceramique",
+  "i": 0,
+  "url": "https://raw.githubusercontent.com/nolandiliegro-ops/piecestrottinettes.fr/main/config/photos/visuels/plaquettes-de-freins-hope-tech4-v4-ceramique.png",
+  "verdict": "FAIL",
+  "reasons": [
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 6 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 6 morceaux"
+   ],
+   "parts": 6,
+   "second": 0.235,
+   "vivid": 0.001,
+   "fill": 0.856
+  },
+  "size": [
+   1097,
+   1165
+  ],
+  "error": null
+ },
+ {
+  "slug": "plaquettes-de-freins-hope-tech4-v4-metal-fritte-haute-performance",
+  "i": 0,
+  "url": "https://raw.githubusercontent.com/nolandiliegro-ops/piecestrottinettes.fr/main/config/photos/visuels/plaquettes-de-freins-hope-tech4-v4-metal-fritte-haute-performance.png",
+  "verdict": "FAIL",
+  "reasons": [
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 6 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 6 morceaux"
+   ],
+   "parts": 6,
+   "second": 0.232,
+   "vivid": 0.001,
+   "fill": 0.856
+  },
+  "size": [
+   1097,
+   1165
+  ],
+  "error": null
+ },
+ {
+  "slug": "plaquettes-de-freins-kugoo-gbooster-11e",
+  "i": 0,
+  "url": "https://raw.githubusercontent.com/nolandiliegro-ops/piecestrottinettes.fr/main/config/photos/visuels/plaquettes-de-freins-kugoo-gbooster-11e.png",
+  "verdict": "FAIL",
+  "reasons": [
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 6 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 6 morceaux"
+   ],
+   "parts": 6,
+   "second": 0.197,
+   "vivid": 0,
+   "fill": 0.856
+  },
+  "size": [
+   1097,
+   1165
+  ],
+  "error": null
+ },
+ {
+  "slug": "plaquettes-de-freins-nutt-4-pistons-thunder-3-nami-metalliques",
+  "i": 0,
+  "url": "https://raw.githubusercontent.com/nolandiliegro-ops/piecestrottinettes.fr/main/config/photos/visuels/plaquettes-de-freins-nutt-4-pistons-thunder-3-nami-metalliques.png",
+  "verdict": "FAIL",
+  "reasons": [
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 6 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 6 morceaux"
+   ],
+   "parts": 6,
+   "second": 0.238,
+   "vivid": 0.001,
+   "fill": 0.856
+  },
+  "size": [
+   1097,
+   1165
+  ],
+  "error": null
+ },
+ {
+  "slug": "plaquettes-de-freins-nutt-ventilees-dualtron-thunder-metal-fritte-haute-resistance",
+  "i": 0,
+  "url": "https://raw.githubusercontent.com/nolandiliegro-ops/piecestrottinettes.fr/main/config/photos/visuels/plaquettes-de-freins-nutt-ventilees-dualtron-thunder-metal-fritte-haute-resistance.png",
+  "verdict": "FAIL",
+  "reasons": [
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 7 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 7 morceaux"
+   ],
+   "parts": 7,
+   "second": 0.181,
+   "vivid": 0.001,
+   "fill": 0.856
+  },
+  "size": [
+   1097,
+   1165
+  ],
+  "error": null
+ },
+ {
+  "slug": "plaquettes-de-freins-shimano-d03s-nutt-4-pistons-thunder-3-nami-ceramique",
+  "i": 0,
+  "url": "https://raw.githubusercontent.com/nolandiliegro-ops/piecestrottinettes.fr/main/config/photos/visuels/plaquettes-de-freins-shimano-d03s-nutt-4-pistons-thunder-3-nami-ceramique.png",
+  "verdict": "FAIL",
+  "reasons": [
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 6 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 6 morceaux"
+   ],
+   "parts": 6,
+   "second": 0.241,
+   "vivid": 0.001,
+   "fill": 0.856
+  },
+  "size": [
+   1097,
+   1165
+  ],
+  "error": null
+ },
+ {
+  "slug": "plaquettes-de-freins-shimano-d03s-nutt-4-pistons-thunder-3-nami-metal-fritte-haute-performance",
+  "i": 0,
+  "url": "https://raw.githubusercontent.com/nolandiliegro-ops/piecestrottinettes.fr/main/config/photos/visuels/plaquettes-de-freins-shimano-d03s-nutt-4-pistons-thunder-3-nami-metal-fritte-haute-performance.png",
+  "verdict": "FAIL",
+  "reasons": [
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 6 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 6 morceaux"
+   ],
+   "parts": 6,
+   "second": 0.237,
+   "vivid": 0.001,
+   "fill": 0.856
+  },
+  "size": [
+   1097,
+   1165
+  ],
+  "error": null
+ },
+ {
+  "slug": "plaquettes-de-freins-speedtrott-rs8001600-02b",
+  "i": 0,
+  "url": "https://raw.githubusercontent.com/nolandiliegro-ops/piecestrottinettes.fr/main/config/photos/visuels/plaquettes-de-freins-speedtrott-rs8001600-02b.png",
+  "verdict": "FAIL",
+  "reasons": [
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 6 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 6 morceaux"
+   ],
+   "parts": 6,
+   "second": 0.241,
+   "vivid": 0,
+   "fill": 0.856
+  },
+  "size": [
+   1097,
+   1165
+  ],
+  "error": null
+ },
+ {
+  "slug": "plaquettes-de-freins-ventilees-dualtron-thunder",
+  "i": 0,
+  "url": "https://raw.githubusercontent.com/nolandiliegro-ops/piecestrottinettes.fr/main/config/photos/visuels/plaquettes-de-freins-ventilees-dualtron-thunder.png",
+  "verdict": "FAIL",
+  "reasons": [
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 7 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 7 morceaux"
+   ],
+   "parts": 7,
+   "second": 0.174,
+   "vivid": 0,
+   "fill": 0.856
+  },
+  "size": [
+   1097,
+   1165
+  ],
+  "error": null
+ },
+ {
+  "slug": "plaquettes-de-freins-xiaomi-mi4-niu-kqi2-kqi3",
+  "i": 0,
+  "url": "https://raw.githubusercontent.com/nolandiliegro-ops/piecestrottinettes.fr/main/config/photos/visuels/plaquettes-de-freins-xiaomi-mi4-niu-kqi2-kqi3.png",
+  "verdict": "FAIL",
+  "reasons": [
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 6 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 6 morceaux"
+   ],
+   "parts": 6,
+   "second": 0.208,
+   "vivid": 0,
+   "fill": 0.856
+  },
+  "size": [
+   1097,
+   1165
+  ],
+  "error": null
+ },
+ {
+  "slug": "plaquettes-de-freins-xtech-zoom-xiaomi-mi3",
+  "i": 0,
+  "url": "https://raw.githubusercontent.com/nolandiliegro-ops/piecestrottinettes.fr/main/config/photos/visuels/plaquettes-de-freins-xtech-zoom-xiaomi-mi3.png",
+  "verdict": "FAIL",
+  "reasons": [
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 6 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 6 morceaux"
+   ],
+   "parts": 6,
+   "second": 0.198,
+   "vivid": 0,
+   "fill": 0.856
+  },
+  "size": [
+   1097,
+   1165
+  ],
+  "error": null
+ },
+ {
+  "slug": "plaquettes-de-freins-xtech-zoom-xiaomi-mi3-metal-fritte-haute-performance",
+  "i": 0,
+  "url": "https://raw.githubusercontent.com/nolandiliegro-ops/piecestrottinettes.fr/main/config/photos/visuels/plaquettes-de-freins-xtech-zoom-xiaomi-mi3-metal-fritte-haute-performance.png",
+  "verdict": "FAIL",
+  "reasons": [
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 6 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 6 morceaux"
+   ],
+   "parts": 6,
+   "second": 0.212,
+   "vivid": 0.001,
+   "fill": 0.856
+  },
+  "size": [
+   1097,
+   1165
+  ],
+  "error": null
+ },
+ {
+  "slug": "plaquettes-de-freins-zero-10x-11x-vsett-10-storm-thunder-sram-avid-ceramique",
+  "i": 0,
+  "url": "https://raw.githubusercontent.com/nolandiliegro-ops/piecestrottinettes.fr/main/config/photos/visuels/plaquettes-de-freins-zero-10x-11x-vsett-10-storm-thunder-sram-avid-ceramique.png",
+  "verdict": "FAIL",
+  "reasons": [
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 6 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 6 morceaux"
+   ],
+   "parts": 6,
+   "second": 0.208,
+   "vivid": 0.001,
+   "fill": 0.856
+  },
+  "size": [
+   1097,
+   1165
+  ],
+  "error": null
+ },
+ {
+  "slug": "plaquettes-de-freins-zero-10x-11x-vsett-10-storm-thunder-sram-avid-metal-fritte-haute-performance",
+  "i": 0,
+  "url": "https://raw.githubusercontent.com/nolandiliegro-ops/piecestrottinettes.fr/main/config/photos/visuels/plaquettes-de-freins-zero-10x-11x-vsett-10-storm-thunder-sram-avid-metal-fritte-haute-performance.png",
+  "verdict": "FAIL",
+  "reasons": [
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 6 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 6 morceaux"
+   ],
+   "parts": 6,
+   "second": 0.205,
+   "vivid": 0.001,
+   "fill": 0.856
+  },
+  "size": [
+   1097,
+   1165
+  ],
+  "error": null
+ },
+ {
+  "slug": "plaquettes-de-freins-zero-10x-11x-vsett-10-storm-thunder-sram-avid-metalliques",
+  "i": 0,
+  "url": "https://raw.githubusercontent.com/nolandiliegro-ops/piecestrottinettes.fr/main/config/photos/visuels/plaquettes-de-freins-zero-10x-11x-vsett-10-storm-thunder-sram-avid-metalliques.png",
+  "verdict": "FAIL",
+  "reasons": [
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 7 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 7 morceaux"
+   ],
+   "parts": 7,
+   "second": 0.172,
+   "vivid": 0.001,
+   "fill": 0.856
+  },
+  "size": [
+   1097,
+   1165
+  ],
+  "error": null
+ },
+ {
+  "slug": "plaquettes-de-freins-zero-10x-11x-vsett-10-storm-thunder-sram-avid-semi-metallique",
+  "i": 0,
+  "url": "https://raw.githubusercontent.com/nolandiliegro-ops/piecestrottinettes.fr/main/config/photos/visuels/plaquettes-de-freins-zero-10x-11x-vsett-10-storm-thunder-sram-avid-semi-metallique.png",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 7 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 7 morceaux"
+   ],
+   "parts": 7,
+   "second": 0.166,
+   "vivid": 0.001,
+   "fill": 0.856
+  },
+  "size": [
+   1097,
+   1165
+  ],
+  "error": null
+ }
+]

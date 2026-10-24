@@ -1,0 +1,2414 @@
+[
+ {
+  "slug": "chambre-a-air-14x2-125-valve-coudee-65x65-ewheel",
+  "i": 0,
+  "url": "http://d7rh5s3nxmpy4.cloudfront.net/CMP10286/8435764421471_1.jpg",
+  "verdict": "ERROR",
+  "reasons": [],
+  "plus": null,
+  "size": null,
+  "error": "téléchargement vide"
+ },
+ {
+  "slug": "chambre-a-air-14x2-125-valve-coudee-65x65-ewheel",
+  "i": 1,
+  "url": "http://d7rh5s3nxmpy4.cloudfront.net/CMP10286/8435764421471_2.jpg",
+  "verdict": "ERROR",
+  "reasons": [],
+  "plus": null,
+  "size": null,
+  "error": "téléchargement vide"
+ },
+ {
+  "slug": "chambre-a-air-14x2-125-valve-coudee-65x65-ewheel",
+  "i": 2,
+  "url": "http://d7rh5s3nxmpy4.cloudfront.net/CMP10286/8435764421471_3.jpg",
+  "verdict": "ERROR",
+  "reasons": [],
+  "plus": null,
+  "size": null,
+  "error": "téléchargement vide"
+ },
+ {
+  "slug": "chambre-a-air-14x2-125-valve-coudee-65x65-ewheel",
+  "i": 3,
+  "url": "http://d7rh5s3nxmpy4.cloudfront.net/CMP10286/8435764421471_4.jpg",
+  "verdict": "ERROR",
+  "reasons": [],
+  "plus": null,
+  "size": null,
+  "error": "téléchargement vide"
+ },
+ {
+  "slug": "chambre-a-air-14x2-125-valve-coudee-65x65-ewheel",
+  "i": 4,
+  "url": "http://d7rh5s3nxmpy4.cloudfront.net/CMP10286/8435764421471_5.jpg",
+  "verdict": "ERROR",
+  "reasons": [],
+  "plus": null,
+  "size": null,
+  "error": "téléchargement vide"
+ },
+ {
+  "slug": "chambre-a-air-14x2-125-valve-coudee-65x65-ewheel",
+  "i": 5,
+  "url": "http://d7rh5s3nxmpy4.cloudfront.net/CMP10286/8435764421471_6.jpg",
+  "verdict": "ERROR",
+  "reasons": [],
+  "plus": null,
+  "size": null,
+  "error": "téléchargement vide"
+ },
+ {
+  "slug": "chambre-a-air-14x2-125-valve-coudee-65x65-ewheel",
+  "i": 6,
+  "url": "http://d7rh5s3nxmpy4.cloudfront.net/CMP10286/8435764421471_7.jpg",
+  "verdict": "ERROR",
+  "reasons": [],
+  "plus": null,
+  "size": null,
+  "error": "téléchargement vide"
+ },
+ {
+  "slug": "chambre-a-air-14x2-125-valve-coudee-65x65-ewheel",
+  "i": 7,
+  "url": "http://d7rh5s3nxmpy4.cloudfront.net/CMP10286/8435764421471_8.jpg",
+  "verdict": "ERROR",
+  "reasons": [],
+  "plus": null,
+  "size": null,
+  "error": "téléchargement vide"
+ },
+ {
+  "slug": "pneu-plein-10x2-125-6-1-noir-cityneye",
+  "i": 0,
+  "url": "http://d7rh5s3nxmpy4.cloudfront.net/CMP10286/8435764431319_1.jpg",
+  "verdict": "ERROR",
+  "reasons": [],
+  "plus": null,
+  "size": null,
+  "error": "téléchargement vide"
+ },
+ {
+  "slug": "pneu-plein-10x2-125-6-1-noir-cityneye",
+  "i": 1,
+  "url": "http://d7rh5s3nxmpy4.cloudfront.net/CMP10286/8435764431319_2.jpg",
+  "verdict": "ERROR",
+  "reasons": [],
+  "plus": null,
+  "size": null,
+  "error": "téléchargement vide"
+ },
+ {
+  "slug": "pneu-plein-10x2-125-6-1-noir-cityneye",
+  "i": 2,
+  "url": "http://d7rh5s3nxmpy4.cloudfront.net/CMP10286/8435764431319_3.jpg",
+  "verdict": "ERROR",
+  "reasons": [],
+  "plus": null,
+  "size": null,
+  "error": "téléchargement vide"
+ },
+ {
+  "slug": "pneu-plein-10x2-125-6-1-noir-cityneye",
+  "i": 3,
+  "url": "http://d7rh5s3nxmpy4.cloudfront.net/CMP10286/8435764431319_4.jpg",
+  "verdict": "FAIL",
+  "reasons": [
+   "cadrage serré",
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux"
+   ],
+   "parts": 3,
+   "second": 0.365,
+   "vivid": 0.001,
+   "fill": 0.77
+  },
+  "size": [
+   864,
+   864
+  ],
+  "error": null
+ },
+ {
+  "slug": "pneu-plein-10x2-125-6-1-noir-cityneye",
+  "i": 4,
+  "url": "http://d7rh5s3nxmpy4.cloudfront.net/CMP10286/8435764431319_5.jpg",
+  "verdict": "ERROR",
+  "reasons": [],
+  "plus": null,
+  "size": null,
+  "error": "téléchargement vide"
+ },
+ {
+  "slug": "pneu-plein-10x2-125-6-1-noir-cityneye",
+  "i": 5,
+  "url": "http://d7rh5s3nxmpy4.cloudfront.net/CMP10286/8435764431319_6.jpg",
+  "verdict": "ERROR",
+  "reasons": [],
+  "plus": null,
+  "size": null,
+  "error": "téléchargement vide"
+ },
+ {
+  "slug": "pneu-plein-10x2-125-6-1-noir-cityneye",
+  "i": 6,
+  "url": "http://d7rh5s3nxmpy4.cloudfront.net/CMP10286/8435764431319_7.jpg",
+  "verdict": "ERROR",
+  "reasons": [],
+  "plus": null,
+  "size": null,
+  "error": "téléchargement vide"
+ },
+ {
+  "slug": "pneu-plein-10x2-125-6-1-noir-cityneye",
+  "i": 7,
+  "url": "http://d7rh5s3nxmpy4.cloudfront.net/CMP10286/8435764431319_8.jpg",
+  "verdict": "ERROR",
+  "reasons": [],
+  "plus": null,
+  "size": null,
+  "error": "téléchargement vide"
+ },
+ {
+  "slug": "pneu-plein-10x2-125-6-1-ultra-leger-jante-34-mm-lisere-noir-ewheel",
+  "i": 0,
+  "url": "http://d7rh5s3nxmpy4.cloudfront.net/CMP10286/8435764420931_1.jpg",
+  "verdict": "ERROR",
+  "reasons": [],
+  "plus": null,
+  "size": null,
+  "error": "téléchargement vide"
+ },
+ {
+  "slug": "pneu-plein-10x2-125-6-1-ultra-leger-jante-34-mm-lisere-noir-ewheel",
+  "i": 1,
+  "url": "http://d7rh5s3nxmpy4.cloudfront.net/CMP10286/8435764420931_2.jpg",
+  "verdict": "ERROR",
+  "reasons": [],
+  "plus": null,
+  "size": null,
+  "error": "téléchargement vide"
+ },
+ {
+  "slug": "pneu-plein-10x2-125-6-1-ultra-leger-jante-34-mm-lisere-noir-ewheel",
+  "i": 2,
+  "url": "http://d7rh5s3nxmpy4.cloudfront.net/CMP10286/8435764420931_3.jpg",
+  "verdict": "ERROR",
+  "reasons": [],
+  "plus": null,
+  "size": null,
+  "error": "téléchargement vide"
+ },
+ {
+  "slug": "pneu-plein-10x2-125-6-1-ultra-leger-jante-34-mm-lisere-noir-ewheel",
+  "i": 3,
+  "url": "http://d7rh5s3nxmpy4.cloudfront.net/CMP10286/8435764420931_4.jpg",
+  "verdict": "ERROR",
+  "reasons": [],
+  "plus": null,
+  "size": null,
+  "error": "téléchargement vide"
+ },
+ {
+  "slug": "pneu-plein-10x2-125-6-1-ultra-leger-jante-34-mm-lisere-noir-ewheel",
+  "i": 4,
+  "url": "http://d7rh5s3nxmpy4.cloudfront.net/CMP10286/8435764420931_5.jpg",
+  "verdict": "ERROR",
+  "reasons": [],
+  "plus": null,
+  "size": null,
+  "error": "téléchargement vide"
+ },
+ {
+  "slug": "pneu-plein-10x2-125-6-1-ultra-leger-jante-34-mm-lisere-noir-ewheel",
+  "i": 5,
+  "url": "http://d7rh5s3nxmpy4.cloudfront.net/CMP10286/8435764420931_6.jpg",
+  "verdict": "ERROR",
+  "reasons": [],
+  "plus": null,
+  "size": null,
+  "error": "téléchargement vide"
+ },
+ {
+  "slug": "pneu-plein-10x2-125-6-1-ultra-leger-jante-34-mm-lisere-noir-ewheel",
+  "i": 6,
+  "url": "http://d7rh5s3nxmpy4.cloudfront.net/CMP10286/8435764420931_7.jpg",
+  "verdict": "ERROR",
+  "reasons": [],
+  "plus": null,
+  "size": null,
+  "error": "téléchargement vide"
+ },
+ {
+  "slug": "pneu-plein-10x2-125-6-1-ultra-leger-jante-34-mm-lisere-noir-ewheel",
+  "i": 7,
+  "url": "http://d7rh5s3nxmpy4.cloudfront.net/CMP10286/8435764420931_8.jpg",
+  "verdict": "ERROR",
+  "reasons": [],
+  "plus": null,
+  "size": null,
+  "error": "téléchargement vide"
+ },
+ {
+  "slug": "pneu-plein-10x2-125-6-1-ultra-leger-jante-34-mm-lisere-rouge-nedong",
+  "i": 0,
+  "url": "http://d7rh5s3nxmpy4.cloudfront.net/CMP10286/7427251899178_1.jpg",
+  "verdict": "ERROR",
+  "reasons": [],
+  "plus": null,
+  "size": null,
+  "error": "téléchargement vide"
+ },
+ {
+  "slug": "pneu-plein-10x2-125-6-1-ultra-leger-jante-34-mm-lisere-rouge-nedong",
+  "i": 1,
+  "url": "http://d7rh5s3nxmpy4.cloudfront.net/CMP10286/7427251899178_2.jpg",
+  "verdict": "ERROR",
+  "reasons": [],
+  "plus": null,
+  "size": null,
+  "error": "téléchargement vide"
+ },
+ {
+  "slug": "pneu-plein-10x2-125-6-1-ultra-leger-jante-34-mm-lisere-rouge-nedong",
+  "i": 2,
+  "url": "http://d7rh5s3nxmpy4.cloudfront.net/CMP10286/7427251899178_3.jpg",
+  "verdict": "ERROR",
+  "reasons": [],
+  "plus": null,
+  "size": null,
+  "error": "téléchargement vide"
+ },
+ {
+  "slug": "pneu-plein-10x2-125-6-1-ultra-leger-jante-34-mm-lisere-rouge-nedong",
+  "i": 3,
+  "url": "http://d7rh5s3nxmpy4.cloudfront.net/CMP10286/7427251899178_4.jpg",
+  "verdict": "ERROR",
+  "reasons": [],
+  "plus": null,
+  "size": null,
+  "error": "téléchargement vide"
+ },
+ {
+  "slug": "pneu-plein-10x2-125-6-1-ultra-leger-jante-34-mm-lisere-rouge-nedong",
+  "i": 4,
+  "url": "http://d7rh5s3nxmpy4.cloudfront.net/CMP10286/7427251899178_5.jpg",
+  "verdict": "ERROR",
+  "reasons": [],
+  "plus": null,
+  "size": null,
+  "error": "téléchargement vide"
+ },
+ {
+  "slug": "pneu-plein-10x2-125-6-1-ultra-leger-jante-34-mm-lisere-rouge-nedong",
+  "i": 5,
+  "url": "http://d7rh5s3nxmpy4.cloudfront.net/CMP10286/7427251899178_6.jpg",
+  "verdict": "ERROR",
+  "reasons": [],
+  "plus": null,
+  "size": null,
+  "error": "téléchargement vide"
+ },
+ {
+  "slug": "pneu-plein-10x2-125-6-1-ultra-leger-jante-34-mm-lisere-rouge-nedong",
+  "i": 6,
+  "url": "http://d7rh5s3nxmpy4.cloudfront.net/CMP10286/7427251899178_7.jpg",
+  "verdict": "ERROR",
+  "reasons": [],
+  "plus": null,
+  "size": null,
+  "error": "téléchargement vide"
+ },
+ {
+  "slug": "pneu-plein-10x2-125-6-1-ultra-leger-jante-34-mm-lisere-rouge-nedong",
+  "i": 7,
+  "url": "http://d7rh5s3nxmpy4.cloudfront.net/CMP10286/7427251899178_8.jpg",
+  "verdict": "ERROR",
+  "reasons": [],
+  "plus": null,
+  "size": null,
+  "error": "téléchargement vide"
+ },
+ {
+  "slug": "pneu-plein-10x2-125-6-1-ultra-leger-jante-34-mm-points-bleus-nedong",
+  "i": 0,
+  "url": "http://d7rh5s3nxmpy4.cloudfront.net/CMP10286/7427255406655_1.jpg",
+  "verdict": "ERROR",
+  "reasons": [],
+  "plus": null,
+  "size": null,
+  "error": "téléchargement vide"
+ },
+ {
+  "slug": "pneu-plein-10x2-125-6-1-ultra-leger-jante-34-mm-points-bleus-nedong",
+  "i": 1,
+  "url": "http://d7rh5s3nxmpy4.cloudfront.net/CMP10286/7427255406655_2.jpg",
+  "verdict": "ERROR",
+  "reasons": [],
+  "plus": null,
+  "size": null,
+  "error": "téléchargement vide"
+ },
+ {
+  "slug": "pneu-plein-10x2-125-6-1-ultra-leger-jante-34-mm-points-bleus-nedong",
+  "i": 2,
+  "url": "http://d7rh5s3nxmpy4.cloudfront.net/CMP10286/7427255406655_3.jpg",
+  "verdict": "ERROR",
+  "reasons": [],
+  "plus": null,
+  "size": null,
+  "error": "téléchargement vide"
+ },
+ {
+  "slug": "pneu-plein-10x2-125-6-1-ultra-leger-jante-34-mm-points-bleus-nedong",
+  "i": 3,
+  "url": "http://d7rh5s3nxmpy4.cloudfront.net/CMP10286/7427255406655_4.jpg",
+  "verdict": "ERROR",
+  "reasons": [],
+  "plus": null,
+  "size": null,
+  "error": "téléchargement vide"
+ },
+ {
+  "slug": "pneu-plein-10x2-125-6-1-ultra-leger-jante-34-mm-points-bleus-nedong",
+  "i": 4,
+  "url": "http://d7rh5s3nxmpy4.cloudfront.net/CMP10286/7427255406655_5.jpg",
+  "verdict": "ERROR",
+  "reasons": [],
+  "plus": null,
+  "size": null,
+  "error": "téléchargement vide"
+ },
+ {
+  "slug": "pneu-plein-10x2-125-6-1-ultra-leger-jante-34-mm-points-bleus-nedong",
+  "i": 5,
+  "url": "http://d7rh5s3nxmpy4.cloudfront.net/CMP10286/7427255406655_6.jpg",
+  "verdict": "ERROR",
+  "reasons": [],
+  "plus": null,
+  "size": null,
+  "error": "téléchargement vide"
+ },
+ {
+  "slug": "pneu-plein-10x2-125-6-1-ultra-leger-jante-34-mm-points-bleus-nedong",
+  "i": 6,
+  "url": "http://d7rh5s3nxmpy4.cloudfront.net/CMP10286/7427255406655_7.jpg",
+  "verdict": "ERROR",
+  "reasons": [],
+  "plus": null,
+  "size": null,
+  "error": "téléchargement vide"
+ },
+ {
+  "slug": "pneu-plein-10x2-125-6-1-ultra-leger-jante-34-mm-points-bleus-nedong",
+  "i": 7,
+  "url": "http://d7rh5s3nxmpy4.cloudfront.net/CMP10286/7427255406655_8.jpg",
+  "verdict": "ERROR",
+  "reasons": [],
+  "plus": null,
+  "size": null,
+  "error": "téléchargement vide"
+ },
+ {
+  "slug": "pneu-plein-10x2-125-6-5-offroad-ultra-leger-jante-44-mm-bleu-nedong",
+  "i": 0,
+  "url": "http://d7rh5s3nxmpy4.cloudfront.net/CMP10286/8435764436468_1.jpg",
+  "verdict": "ERROR",
+  "reasons": [],
+  "plus": null,
+  "size": null,
+  "error": "téléchargement vide"
+ },
+ {
+  "slug": "pneu-plein-10x2-125-6-5-offroad-ultra-leger-jante-44-mm-bleu-nedong",
+  "i": 1,
+  "url": "http://d7rh5s3nxmpy4.cloudfront.net/CMP10286/8435764436468_2.jpg",
+  "verdict": "ERROR",
+  "reasons": [],
+  "plus": null,
+  "size": null,
+  "error": "téléchargement vide"
+ },
+ {
+  "slug": "pneu-plein-10x2-125-6-5-offroad-ultra-leger-jante-44-mm-bleu-nedong",
+  "i": 2,
+  "url": "http://d7rh5s3nxmpy4.cloudfront.net/CMP10286/8435764436468_3.jpg",
+  "verdict": "ERROR",
+  "reasons": [],
+  "plus": null,
+  "size": null,
+  "error": "téléchargement vide"
+ },
+ {
+  "slug": "pneu-plein-10x2-125-6-5-offroad-ultra-leger-jante-44-mm-bleu-nedong",
+  "i": 3,
+  "url": "http://d7rh5s3nxmpy4.cloudfront.net/CMP10286/8435764436468_4.jpg",
+  "verdict": "ERROR",
+  "reasons": [],
+  "plus": null,
+  "size": null,
+  "error": "téléchargement vide"
+ },
+ {
+  "slug": "pneu-plein-10x2-125-6-5-offroad-ultra-leger-jante-44-mm-bleu-nedong",
+  "i": 4,
+  "url": "http://d7rh5s3nxmpy4.cloudfront.net/CMP10286/8435764436468_5.jpg",
+  "verdict": "ERROR",
+  "reasons": [],
+  "plus": null,
+  "size": null,
+  "error": "téléchargement vide"
+ },
+ {
+  "slug": "pneu-plein-10x2-125-6-5-offroad-ultra-leger-jante-44-mm-bleu-nedong",
+  "i": 5,
+  "url": "http://d7rh5s3nxmpy4.cloudfront.net/CMP10286/8435764436468_6.jpg",
+  "verdict": "ERROR",
+  "reasons": [],
+  "plus": null,
+  "size": null,
+  "error": "téléchargement vide"
+ },
+ {
+  "slug": "pneu-plein-10x2-125-6-5-offroad-ultra-leger-jante-44-mm-bleu-nedong",
+  "i": 6,
+  "url": "http://d7rh5s3nxmpy4.cloudfront.net/CMP10286/8435764436468_7.jpg",
+  "verdict": "ERROR",
+  "reasons": [],
+  "plus": null,
+  "size": null,
+  "error": "téléchargement vide"
+ },
+ {
+  "slug": "pneu-plein-10x2-125-6-5-offroad-ultra-leger-jante-44-mm-bleu-nedong",
+  "i": 7,
+  "url": "http://d7rh5s3nxmpy4.cloudfront.net/CMP10286/8435764436468_8.jpg",
+  "verdict": "ERROR",
+  "reasons": [],
+  "plus": null,
+  "size": null,
+  "error": "téléchargement vide"
+ },
+ {
+  "slug": "pneu-plein-10x2-125-6-5-offroad-ultra-leger-jante-44-mm-rouge-nedong",
+  "i": 0,
+  "url": "http://d7rh5s3nxmpy4.cloudfront.net/CMP10286/8435764437533_1.jpg",
+  "verdict": "ERROR",
+  "reasons": [],
+  "plus": null,
+  "size": null,
+  "error": "téléchargement vide"
+ },
+ {
+  "slug": "pneu-plein-10x2-125-6-5-offroad-ultra-leger-jante-44-mm-rouge-nedong",
+  "i": 1,
+  "url": "http://d7rh5s3nxmpy4.cloudfront.net/CMP10286/8435764437533_2.jpg",
+  "verdict": "ERROR",
+  "reasons": [],
+  "plus": null,
+  "size": null,
+  "error": "téléchargement vide"
+ },
+ {
+  "slug": "pneu-plein-10x2-125-6-5-offroad-ultra-leger-jante-44-mm-rouge-nedong",
+  "i": 2,
+  "url": "http://d7rh5s3nxmpy4.cloudfront.net/CMP10286/8435764437533_3.jpg",
+  "verdict": "ERROR",
+  "reasons": [],
+  "plus": null,
+  "size": null,
+  "error": "téléchargement vide"
+ },
+ {
+  "slug": "pneu-plein-10x2-125-6-5-offroad-ultra-leger-jante-44-mm-rouge-nedong",
+  "i": 3,
+  "url": "http://d7rh5s3nxmpy4.cloudfront.net/CMP10286/8435764437533_4.jpg",
+  "verdict": "ERROR",
+  "reasons": [],
+  "plus": null,
+  "size": null,
+  "error": "téléchargement vide"
+ },
+ {
+  "slug": "pneu-plein-10x2-125-6-5-offroad-ultra-leger-jante-44-mm-rouge-nedong",
+  "i": 4,
+  "url": "http://d7rh5s3nxmpy4.cloudfront.net/CMP10286/8435764437533_5.jpg",
+  "verdict": "ERROR",
+  "reasons": [],
+  "plus": null,
+  "size": null,
+  "error": "téléchargement vide"
+ },
+ {
+  "slug": "pneu-plein-10x2-125-6-5-offroad-ultra-leger-jante-44-mm-rouge-nedong",
+  "i": 5,
+  "url": "http://d7rh5s3nxmpy4.cloudfront.net/CMP10286/8435764437533_6.jpg",
+  "verdict": "ERROR",
+  "reasons": [],
+  "plus": null,
+  "size": null,
+  "error": "téléchargement vide"
+ },
+ {
+  "slug": "pneu-plein-10x2-125-6-5-offroad-ultra-leger-jante-44-mm-rouge-nedong",
+  "i": 6,
+  "url": "http://d7rh5s3nxmpy4.cloudfront.net/CMP10286/8435764437533_7.jpg",
+  "verdict": "ERROR",
+  "reasons": [],
+  "plus": null,
+  "size": null,
+  "error": "téléchargement vide"
+ },
+ {
+  "slug": "pneu-plein-10x2-125-6-5-offroad-ultra-leger-jante-44-mm-rouge-nedong",
+  "i": 7,
+  "url": "http://d7rh5s3nxmpy4.cloudfront.net/CMP10286/8435764437533_8.jpg",
+  "verdict": "ERROR",
+  "reasons": [],
+  "plus": null,
+  "size": null,
+  "error": "téléchargement vide"
+ },
+ {
+  "slug": "pneu-plein-10x2-50-6-1-ultra-leger-jante-34-mm-lisere-bleu-nedong",
+  "i": 0,
+  "url": "http://d7rh5s3nxmpy4.cloudfront.net/CMP10286/7427255405436_1.jpg",
+  "verdict": "ERROR",
+  "reasons": [],
+  "plus": null,
+  "size": null,
+  "error": "téléchargement vide"
+ },
+ {
+  "slug": "pneu-plein-10x2-50-6-1-ultra-leger-jante-34-mm-lisere-bleu-nedong",
+  "i": 1,
+  "url": "http://d7rh5s3nxmpy4.cloudfront.net/CMP10286/7427255405436_2.jpg",
+  "verdict": "ERROR",
+  "reasons": [],
+  "plus": null,
+  "size": null,
+  "error": "téléchargement vide"
+ },
+ {
+  "slug": "pneu-plein-10x2-50-6-1-ultra-leger-jante-34-mm-lisere-bleu-nedong",
+  "i": 2,
+  "url": "http://d7rh5s3nxmpy4.cloudfront.net/CMP10286/7427255405436_3.jpg",
+  "verdict": "ERROR",
+  "reasons": [],
+  "plus": null,
+  "size": null,
+  "error": "téléchargement vide"
+ },
+ {
+  "slug": "pneu-plein-10x2-50-6-1-ultra-leger-jante-34-mm-lisere-bleu-nedong",
+  "i": 3,
+  "url": "http://d7rh5s3nxmpy4.cloudfront.net/CMP10286/7427255405436_4.jpg",
+  "verdict": "ERROR",
+  "reasons": [],
+  "plus": null,
+  "size": null,
+  "error": "téléchargement vide"
+ },
+ {
+  "slug": "pneu-plein-10x2-50-6-1-ultra-leger-jante-34-mm-lisere-bleu-nedong",
+  "i": 4,
+  "url": "http://d7rh5s3nxmpy4.cloudfront.net/CMP10286/7427255405436_5.jpg",
+  "verdict": "ERROR",
+  "reasons": [],
+  "plus": null,
+  "size": null,
+  "error": "téléchargement vide"
+ },
+ {
+  "slug": "pneu-plein-10x2-50-6-1-ultra-leger-jante-34-mm-lisere-bleu-nedong",
+  "i": 5,
+  "url": "http://d7rh5s3nxmpy4.cloudfront.net/CMP10286/7427255405436_6.jpg",
+  "verdict": "ERROR",
+  "reasons": [],
+  "plus": null,
+  "size": null,
+  "error": "téléchargement vide"
+ },
+ {
+  "slug": "pneu-plein-10x2-50-6-1-ultra-leger-jante-34-mm-lisere-bleu-nedong",
+  "i": 6,
+  "url": "http://d7rh5s3nxmpy4.cloudfront.net/CMP10286/7427255405436_7.jpg",
+  "verdict": "ERROR",
+  "reasons": [],
+  "plus": null,
+  "size": null,
+  "error": "téléchargement vide"
+ },
+ {
+  "slug": "pneu-plein-10x2-50-6-1-ultra-leger-jante-34-mm-lisere-bleu-nedong",
+  "i": 7,
+  "url": "http://d7rh5s3nxmpy4.cloudfront.net/CMP10286/7427255405436_8.jpg",
+  "verdict": "ERROR",
+  "reasons": [],
+  "plus": null,
+  "size": null,
+  "error": "téléchargement vide"
+ },
+ {
+  "slug": "pneu-plein-10x2-50-6-1-ultra-leger-jante-34-mm-lisere-noir-ewheel",
+  "i": 0,
+  "url": "http://d7rh5s3nxmpy4.cloudfront.net/CMP10286/8435764420948_1.jpg",
+  "verdict": "ERROR",
+  "reasons": [],
+  "plus": null,
+  "size": null,
+  "error": "téléchargement vide"
+ },
+ {
+  "slug": "pneu-plein-10x2-50-6-1-ultra-leger-jante-34-mm-lisere-noir-ewheel",
+  "i": 1,
+  "url": "http://d7rh5s3nxmpy4.cloudfront.net/CMP10286/8435764420948_2.jpg",
+  "verdict": "ERROR",
+  "reasons": [],
+  "plus": null,
+  "size": null,
+  "error": "téléchargement vide"
+ },
+ {
+  "slug": "pneu-plein-10x2-50-6-1-ultra-leger-jante-34-mm-lisere-noir-ewheel",
+  "i": 2,
+  "url": "http://d7rh5s3nxmpy4.cloudfront.net/CMP10286/8435764420948_3.jpg",
+  "verdict": "ERROR",
+  "reasons": [],
+  "plus": null,
+  "size": null,
+  "error": "téléchargement vide"
+ },
+ {
+  "slug": "pneu-plein-10x2-50-6-1-ultra-leger-jante-34-mm-lisere-noir-ewheel",
+  "i": 3,
+  "url": "http://d7rh5s3nxmpy4.cloudfront.net/CMP10286/8435764420948_4.jpg",
+  "verdict": "ERROR",
+  "reasons": [],
+  "plus": null,
+  "size": null,
+  "error": "téléchargement vide"
+ },
+ {
+  "slug": "pneu-plein-10x2-50-6-1-ultra-leger-jante-34-mm-lisere-noir-ewheel",
+  "i": 4,
+  "url": "http://d7rh5s3nxmpy4.cloudfront.net/CMP10286/8435764420948_5.jpg",
+  "verdict": "ERROR",
+  "reasons": [],
+  "plus": null,
+  "size": null,
+  "error": "téléchargement vide"
+ },
+ {
+  "slug": "pneu-plein-10x2-50-6-1-ultra-leger-jante-34-mm-lisere-noir-ewheel",
+  "i": 5,
+  "url": "http://d7rh5s3nxmpy4.cloudfront.net/CMP10286/8435764420948_6.jpg",
+  "verdict": "ERROR",
+  "reasons": [],
+  "plus": null,
+  "size": null,
+  "error": "téléchargement vide"
+ },
+ {
+  "slug": "pneu-plein-10x2-50-6-1-ultra-leger-jante-34-mm-lisere-noir-ewheel",
+  "i": 6,
+  "url": "http://d7rh5s3nxmpy4.cloudfront.net/CMP10286/8435764420948_7.jpg",
+  "verdict": "ERROR",
+  "reasons": [],
+  "plus": null,
+  "size": null,
+  "error": "téléchargement vide"
+ },
+ {
+  "slug": "pneu-plein-10x2-50-6-1-ultra-leger-jante-34-mm-lisere-noir-ewheel",
+  "i": 7,
+  "url": "http://d7rh5s3nxmpy4.cloudfront.net/CMP10286/8435764420948_8.jpg",
+  "verdict": "ERROR",
+  "reasons": [],
+  "plus": null,
+  "size": null,
+  "error": "téléchargement vide"
+ },
+ {
+  "slug": "pneu-plein-10x2-50-6-1-ultra-leger-jante-44-mm-points-bleus-nedong",
+  "i": 0,
+  "url": "http://d7rh5s3nxmpy4.cloudfront.net/CMP10286/7427255405429_1.jpg",
+  "verdict": "ERROR",
+  "reasons": [],
+  "plus": null,
+  "size": null,
+  "error": "téléchargement vide"
+ },
+ {
+  "slug": "pneu-plein-10x2-50-6-1-ultra-leger-jante-44-mm-points-bleus-nedong",
+  "i": 1,
+  "url": "http://d7rh5s3nxmpy4.cloudfront.net/CMP10286/7427255405429_2.jpg",
+  "verdict": "ERROR",
+  "reasons": [],
+  "plus": null,
+  "size": null,
+  "error": "téléchargement vide"
+ },
+ {
+  "slug": "pneu-plein-10x2-50-6-1-ultra-leger-jante-44-mm-points-bleus-nedong",
+  "i": 2,
+  "url": "http://d7rh5s3nxmpy4.cloudfront.net/CMP10286/7427255405429_3.jpg",
+  "verdict": "ERROR",
+  "reasons": [],
+  "plus": null,
+  "size": null,
+  "error": "téléchargement vide"
+ },
+ {
+  "slug": "pneu-plein-10x2-50-6-1-ultra-leger-jante-44-mm-points-bleus-nedong",
+  "i": 3,
+  "url": "http://d7rh5s3nxmpy4.cloudfront.net/CMP10286/7427255405429_4.jpg",
+  "verdict": "ERROR",
+  "reasons": [],
+  "plus": null,
+  "size": null,
+  "error": "téléchargement vide"
+ },
+ {
+  "slug": "pneu-plein-10x2-50-6-1-ultra-leger-jante-44-mm-points-bleus-nedong",
+  "i": 4,
+  "url": "http://d7rh5s3nxmpy4.cloudfront.net/CMP10286/7427255405429_5.jpg",
+  "verdict": "ERROR",
+  "reasons": [],
+  "plus": null,
+  "size": null,
+  "error": "téléchargement vide"
+ },
+ {
+  "slug": "pneu-plein-10x2-50-6-1-ultra-leger-jante-44-mm-points-bleus-nedong",
+  "i": 5,
+  "url": "http://d7rh5s3nxmpy4.cloudfront.net/CMP10286/7427255405429_6.jpg",
+  "verdict": "ERROR",
+  "reasons": [],
+  "plus": null,
+  "size": null,
+  "error": "téléchargement vide"
+ },
+ {
+  "slug": "pneu-plein-10x2-50-6-1-ultra-leger-jante-44-mm-points-bleus-nedong",
+  "i": 6,
+  "url": "http://d7rh5s3nxmpy4.cloudfront.net/CMP10286/7427255405429_7.jpg",
+  "verdict": "ERROR",
+  "reasons": [],
+  "plus": null,
+  "size": null,
+  "error": "téléchargement vide"
+ },
+ {
+  "slug": "pneu-plein-10x2-50-6-1-ultra-leger-jante-44-mm-points-bleus-nedong",
+  "i": 7,
+  "url": "http://d7rh5s3nxmpy4.cloudfront.net/CMP10286/7427255405429_8.jpg",
+  "verdict": "ERROR",
+  "reasons": [],
+  "plus": null,
+  "size": null,
+  "error": "téléchargement vide"
+ },
+ {
+  "slug": "pneu-plein-10x2-50-6-5-noir-cityneye",
+  "i": 0,
+  "url": "http://d7rh5s3nxmpy4.cloudfront.net/CMP10286/8435764435324_1.jpg",
+  "verdict": "ERROR",
+  "reasons": [],
+  "plus": null,
+  "size": null,
+  "error": "téléchargement vide"
+ },
+ {
+  "slug": "pneu-plein-10x2-50-6-5-noir-cityneye",
+  "i": 1,
+  "url": "http://d7rh5s3nxmpy4.cloudfront.net/CMP10286/8435764435324_2.jpg",
+  "verdict": "ERROR",
+  "reasons": [],
+  "plus": null,
+  "size": null,
+  "error": "téléchargement vide"
+ },
+ {
+  "slug": "pneu-plein-10x2-50-6-5-noir-cityneye",
+  "i": 2,
+  "url": "http://d7rh5s3nxmpy4.cloudfront.net/CMP10286/8435764435324_3.jpg",
+  "verdict": "ERROR",
+  "reasons": [],
+  "plus": null,
+  "size": null,
+  "error": "téléchargement vide"
+ },
+ {
+  "slug": "pneu-plein-10x2-50-6-5-noir-cityneye",
+  "i": 3,
+  "url": "http://d7rh5s3nxmpy4.cloudfront.net/CMP10286/8435764435324_4.jpg",
+  "verdict": "FAIL",
+  "reasons": [
+   "cadrage serré",
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux"
+   ],
+   "parts": 3,
+   "second": 0.365,
+   "vivid": 0.001,
+   "fill": 0.77
+  },
+  "size": [
+   864,
+   864
+  ],
+  "error": null
+ },
+ {
+  "slug": "pneu-plein-10x2-50-6-5-noir-cityneye",
+  "i": 4,
+  "url": "http://d7rh5s3nxmpy4.cloudfront.net/CMP10286/8435764435324_5.jpg",
+  "verdict": "ERROR",
+  "reasons": [],
+  "plus": null,
+  "size": null,
+  "error": "téléchargement vide"
+ },
+ {
+  "slug": "pneu-plein-10x2-50-6-5-noir-cityneye",
+  "i": 5,
+  "url": "http://d7rh5s3nxmpy4.cloudfront.net/CMP10286/8435764435324_6.jpg",
+  "verdict": "ERROR",
+  "reasons": [],
+  "plus": null,
+  "size": null,
+  "error": "téléchargement vide"
+ },
+ {
+  "slug": "pneu-plein-10x2-50-6-5-noir-cityneye",
+  "i": 6,
+  "url": "http://d7rh5s3nxmpy4.cloudfront.net/CMP10286/8435764435324_7.jpg",
+  "verdict": "ERROR",
+  "reasons": [],
+  "plus": null,
+  "size": null,
+  "error": "téléchargement vide"
+ },
+ {
+  "slug": "pneu-plein-10x2-50-6-5-noir-cityneye",
+  "i": 7,
+  "url": "http://d7rh5s3nxmpy4.cloudfront.net/CMP10286/8435764435324_8.jpg",
+  "verdict": "ERROR",
+  "reasons": [],
+  "plus": null,
+  "size": null,
+  "error": "téléchargement vide"
+ },
+ {
+  "slug": "pneu-plein-10x2-50-6-5-offroad-ultra-leger-jante-44-mm-bleu-nedong",
+  "i": 0,
+  "url": "http://d7rh5s3nxmpy4.cloudfront.net/CMP10286/8435764436475_1.jpg",
+  "verdict": "ERROR",
+  "reasons": [],
+  "plus": null,
+  "size": null,
+  "error": "téléchargement vide"
+ },
+ {
+  "slug": "pneu-plein-10x2-50-6-5-offroad-ultra-leger-jante-44-mm-bleu-nedong",
+  "i": 1,
+  "url": "http://d7rh5s3nxmpy4.cloudfront.net/CMP10286/8435764436475_2.jpg",
+  "verdict": "ERROR",
+  "reasons": [],
+  "plus": null,
+  "size": null,
+  "error": "téléchargement vide"
+ },
+ {
+  "slug": "pneu-plein-10x2-50-6-5-offroad-ultra-leger-jante-44-mm-bleu-nedong",
+  "i": 2,
+  "url": "http://d7rh5s3nxmpy4.cloudfront.net/CMP10286/8435764436475_3.jpg",
+  "verdict": "ERROR",
+  "reasons": [],
+  "plus": null,
+  "size": null,
+  "error": "téléchargement vide"
+ },
+ {
+  "slug": "pneu-plein-10x2-50-6-5-offroad-ultra-leger-jante-44-mm-bleu-nedong",
+  "i": 3,
+  "url": "http://d7rh5s3nxmpy4.cloudfront.net/CMP10286/8435764436475_4.jpg",
+  "verdict": "ERROR",
+  "reasons": [],
+  "plus": null,
+  "size": null,
+  "error": "téléchargement vide"
+ },
+ {
+  "slug": "pneu-plein-10x2-50-6-5-offroad-ultra-leger-jante-44-mm-bleu-nedong",
+  "i": 4,
+  "url": "http://d7rh5s3nxmpy4.cloudfront.net/CMP10286/8435764436475_5.jpg",
+  "verdict": "ERROR",
+  "reasons": [],
+  "plus": null,
+  "size": null,
+  "error": "téléchargement vide"
+ },
+ {
+  "slug": "pneu-plein-10x2-50-6-5-offroad-ultra-leger-jante-44-mm-bleu-nedong",
+  "i": 5,
+  "url": "http://d7rh5s3nxmpy4.cloudfront.net/CMP10286/8435764436475_6.jpg",
+  "verdict": "ERROR",
+  "reasons": [],
+  "plus": null,
+  "size": null,
+  "error": "téléchargement vide"
+ },
+ {
+  "slug": "pneu-plein-10x2-50-6-5-offroad-ultra-leger-jante-44-mm-bleu-nedong",
+  "i": 6,
+  "url": "http://d7rh5s3nxmpy4.cloudfront.net/CMP10286/8435764436475_7.jpg",
+  "verdict": "ERROR",
+  "reasons": [],
+  "plus": null,
+  "size": null,
+  "error": "téléchargement vide"
+ },
+ {
+  "slug": "pneu-plein-10x2-50-6-5-offroad-ultra-leger-jante-44-mm-bleu-nedong",
+  "i": 7,
+  "url": "http://d7rh5s3nxmpy4.cloudfront.net/CMP10286/8435764436475_8.jpg",
+  "verdict": "ERROR",
+  "reasons": [],
+  "plus": null,
+  "size": null,
+  "error": "téléchargement vide"
+ },
+ {
+  "slug": "pneu-plein-10x2-50-6-5-ultra-leger-jante-44-mm-lisere-bleu-nedong",
+  "i": 0,
+  "url": "http://d7rh5s3nxmpy4.cloudfront.net/CMP10286/7427255407010_1.jpg",
+  "verdict": "ERROR",
+  "reasons": [],
+  "plus": null,
+  "size": null,
+  "error": "téléchargement vide"
+ },
+ {
+  "slug": "pneu-plein-10x2-50-6-5-ultra-leger-jante-44-mm-lisere-bleu-nedong",
+  "i": 1,
+  "url": "http://d7rh5s3nxmpy4.cloudfront.net/CMP10286/7427255407010_2.jpg",
+  "verdict": "ERROR",
+  "reasons": [],
+  "plus": null,
+  "size": null,
+  "error": "téléchargement vide"
+ },
+ {
+  "slug": "pneu-plein-10x2-50-6-5-ultra-leger-jante-44-mm-lisere-bleu-nedong",
+  "i": 2,
+  "url": "http://d7rh5s3nxmpy4.cloudfront.net/CMP10286/7427255407010_3.jpg",
+  "verdict": "ERROR",
+  "reasons": [],
+  "plus": null,
+  "size": null,
+  "error": "téléchargement vide"
+ },
+ {
+  "slug": "pneu-plein-10x2-50-6-5-ultra-leger-jante-44-mm-lisere-bleu-nedong",
+  "i": 3,
+  "url": "http://d7rh5s3nxmpy4.cloudfront.net/CMP10286/7427255407010_4.jpg",
+  "verdict": "ERROR",
+  "reasons": [],
+  "plus": null,
+  "size": null,
+  "error": "téléchargement vide"
+ },
+ {
+  "slug": "pneu-plein-10x2-50-6-5-ultra-leger-jante-44-mm-lisere-bleu-nedong",
+  "i": 4,
+  "url": "http://d7rh5s3nxmpy4.cloudfront.net/CMP10286/7427255407010_5.jpg",
+  "verdict": "ERROR",
+  "reasons": [],
+  "plus": null,
+  "size": null,
+  "error": "téléchargement vide"
+ },
+ {
+  "slug": "pneu-plein-10x2-50-6-5-ultra-leger-jante-44-mm-lisere-bleu-nedong",
+  "i": 5,
+  "url": "http://d7rh5s3nxmpy4.cloudfront.net/CMP10286/7427255407010_6.jpg",
+  "verdict": "ERROR",
+  "reasons": [],
+  "plus": null,
+  "size": null,
+  "error": "téléchargement vide"
+ },
+ {
+  "slug": "pneu-plein-10x2-50-6-5-ultra-leger-jante-44-mm-lisere-bleu-nedong",
+  "i": 6,
+  "url": "http://d7rh5s3nxmpy4.cloudfront.net/CMP10286/7427255407010_7.jpg",
+  "verdict": "ERROR",
+  "reasons": [],
+  "plus": null,
+  "size": null,
+  "error": "téléchargement vide"
+ },
+ {
+  "slug": "pneu-plein-10x2-50-6-5-ultra-leger-jante-44-mm-lisere-bleu-nedong",
+  "i": 7,
+  "url": "http://d7rh5s3nxmpy4.cloudfront.net/CMP10286/7427255407010_8.jpg",
+  "verdict": "ERROR",
+  "reasons": [],
+  "plus": null,
+  "size": null,
+  "error": "téléchargement vide"
+ },
+ {
+  "slug": "pneu-plein-10x2-50-7-noir-cityneye",
+  "i": 0,
+  "url": "http://d7rh5s3nxmpy4.cloudfront.net/CMP10286/8435764433771_1.jpg",
+  "verdict": "ERROR",
+  "reasons": [],
+  "plus": null,
+  "size": null,
+  "error": "téléchargement vide"
+ },
+ {
+  "slug": "pneu-plein-10x2-50-7-noir-cityneye",
+  "i": 1,
+  "url": "http://d7rh5s3nxmpy4.cloudfront.net/CMP10286/8435764433771_2.jpg",
+  "verdict": "ERROR",
+  "reasons": [],
+  "plus": null,
+  "size": null,
+  "error": "téléchargement vide"
+ },
+ {
+  "slug": "pneu-plein-10x2-50-7-noir-cityneye",
+  "i": 2,
+  "url": "http://d7rh5s3nxmpy4.cloudfront.net/CMP10286/8435764433771_3.jpg",
+  "verdict": "ERROR",
+  "reasons": [],
+  "plus": null,
+  "size": null,
+  "error": "téléchargement vide"
+ },
+ {
+  "slug": "pneu-plein-10x2-50-7-noir-cityneye",
+  "i": 3,
+  "url": "http://d7rh5s3nxmpy4.cloudfront.net/CMP10286/8435764433771_4.jpg",
+  "verdict": "FAIL",
+  "reasons": [
+   "cadrage serré",
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux"
+   ],
+   "parts": 3,
+   "second": 0.365,
+   "vivid": 0.001,
+   "fill": 0.77
+  },
+  "size": [
+   864,
+   864
+  ],
+  "error": null
+ },
+ {
+  "slug": "pneu-plein-10x2-50-7-noir-cityneye",
+  "i": 4,
+  "url": "http://d7rh5s3nxmpy4.cloudfront.net/CMP10286/8435764433771_5.jpg",
+  "verdict": "ERROR",
+  "reasons": [],
+  "plus": null,
+  "size": null,
+  "error": "téléchargement vide"
+ },
+ {
+  "slug": "pneu-plein-10x2-50-7-noir-cityneye",
+  "i": 5,
+  "url": "http://d7rh5s3nxmpy4.cloudfront.net/CMP10286/8435764433771_6.jpg",
+  "verdict": "ERROR",
+  "reasons": [],
+  "plus": null,
+  "size": null,
+  "error": "téléchargement vide"
+ },
+ {
+  "slug": "pneu-plein-10x2-50-7-noir-cityneye",
+  "i": 6,
+  "url": "http://d7rh5s3nxmpy4.cloudfront.net/CMP10286/8435764433771_7.jpg",
+  "verdict": "ERROR",
+  "reasons": [],
+  "plus": null,
+  "size": null,
+  "error": "téléchargement vide"
+ },
+ {
+  "slug": "pneu-plein-10x2-50-7-noir-cityneye",
+  "i": 7,
+  "url": "http://d7rh5s3nxmpy4.cloudfront.net/CMP10286/8435764433771_8.jpg",
+  "verdict": "ERROR",
+  "reasons": [],
+  "plus": null,
+  "size": null,
+  "error": "téléchargement vide"
+ },
+ {
+  "slug": "pneu-plein-10x2-50-offroad-ultra-leger-jante-44-mm-jaune-nedong",
+  "i": 0,
+  "url": "http://d7rh5s3nxmpy4.cloudfront.net/CMP10286/8435764434488_1.jpg",
+  "verdict": "ERROR",
+  "reasons": [],
+  "plus": null,
+  "size": null,
+  "error": "téléchargement vide"
+ },
+ {
+  "slug": "pneu-plein-10x2-50-offroad-ultra-leger-jante-44-mm-jaune-nedong",
+  "i": 1,
+  "url": "http://d7rh5s3nxmpy4.cloudfront.net/CMP10286/8435764434488_2.jpg",
+  "verdict": "ERROR",
+  "reasons": [],
+  "plus": null,
+  "size": null,
+  "error": "téléchargement vide"
+ },
+ {
+  "slug": "pneu-plein-10x2-50-offroad-ultra-leger-jante-44-mm-jaune-nedong",
+  "i": 2,
+  "url": "http://d7rh5s3nxmpy4.cloudfront.net/CMP10286/8435764434488_3.jpg",
+  "verdict": "ERROR",
+  "reasons": [],
+  "plus": null,
+  "size": null,
+  "error": "téléchargement vide"
+ },
+ {
+  "slug": "pneu-plein-10x2-50-offroad-ultra-leger-jante-44-mm-jaune-nedong",
+  "i": 3,
+  "url": "http://d7rh5s3nxmpy4.cloudfront.net/CMP10286/8435764434488_4.jpg",
+  "verdict": "ERROR",
+  "reasons": [],
+  "plus": null,
+  "size": null,
+  "error": "téléchargement vide"
+ },
+ {
+  "slug": "pneu-plein-10x2-50-offroad-ultra-leger-jante-44-mm-jaune-nedong",
+  "i": 4,
+  "url": "http://d7rh5s3nxmpy4.cloudfront.net/CMP10286/8435764434488_5.jpg",
+  "verdict": "ERROR",
+  "reasons": [],
+  "plus": null,
+  "size": null,
+  "error": "téléchargement vide"
+ },
+ {
+  "slug": "pneu-plein-10x2-50-offroad-ultra-leger-jante-44-mm-jaune-nedong",
+  "i": 5,
+  "url": "http://d7rh5s3nxmpy4.cloudfront.net/CMP10286/8435764434488_6.jpg",
+  "verdict": "ERROR",
+  "reasons": [],
+  "plus": null,
+  "size": null,
+  "error": "téléchargement vide"
+ },
+ {
+  "slug": "pneu-plein-10x2-50-offroad-ultra-leger-jante-44-mm-jaune-nedong",
+  "i": 6,
+  "url": "http://d7rh5s3nxmpy4.cloudfront.net/CMP10286/8435764434488_7.jpg",
+  "verdict": "ERROR",
+  "reasons": [],
+  "plus": null,
+  "size": null,
+  "error": "téléchargement vide"
+ },
+ {
+  "slug": "pneu-plein-10x2-50-offroad-ultra-leger-jante-44-mm-jaune-nedong",
+  "i": 7,
+  "url": "http://d7rh5s3nxmpy4.cloudfront.net/CMP10286/8435764434488_8.jpg",
+  "verdict": "ERROR",
+  "reasons": [],
+  "plus": null,
+  "size": null,
+  "error": "téléchargement vide"
+ },
+ {
+  "slug": "pneu-plein-10x2-75-6-5-offroad-ultra-leger-jante-55-mm-lisere-rouge-ewheel",
+  "i": 0,
+  "url": "http://d7rh5s3nxmpy4.cloudfront.net/CMP10286/8435764434471_1.jpg",
+  "verdict": "ERROR",
+  "reasons": [],
+  "plus": null,
+  "size": null,
+  "error": "téléchargement vide"
+ },
+ {
+  "slug": "pneu-plein-10x2-75-6-5-offroad-ultra-leger-jante-55-mm-lisere-rouge-ewheel",
+  "i": 1,
+  "url": "http://d7rh5s3nxmpy4.cloudfront.net/CMP10286/8435764434471_2.jpg",
+  "verdict": "ERROR",
+  "reasons": [],
+  "plus": null,
+  "size": null,
+  "error": "téléchargement vide"
+ },
+ {
+  "slug": "pneu-plein-10x2-75-6-5-offroad-ultra-leger-jante-55-mm-lisere-rouge-ewheel",
+  "i": 2,
+  "url": "http://d7rh5s3nxmpy4.cloudfront.net/CMP10286/8435764434471_3.jpg",
+  "verdict": "ERROR",
+  "reasons": [],
+  "plus": null,
+  "size": null,
+  "error": "téléchargement vide"
+ },
+ {
+  "slug": "pneu-plein-10x2-75-6-5-offroad-ultra-leger-jante-55-mm-lisere-rouge-ewheel",
+  "i": 3,
+  "url": "http://d7rh5s3nxmpy4.cloudfront.net/CMP10286/8435764434471_4.jpg",
+  "verdict": "ERROR",
+  "reasons": [],
+  "plus": null,
+  "size": null,
+  "error": "téléchargement vide"
+ },
+ {
+  "slug": "pneu-plein-10x2-75-6-5-offroad-ultra-leger-jante-55-mm-lisere-rouge-ewheel",
+  "i": 4,
+  "url": "http://d7rh5s3nxmpy4.cloudfront.net/CMP10286/8435764434471_5.jpg",
+  "verdict": "ERROR",
+  "reasons": [],
+  "plus": null,
+  "size": null,
+  "error": "téléchargement vide"
+ },
+ {
+  "slug": "pneu-plein-10x2-75-6-5-offroad-ultra-leger-jante-55-mm-lisere-rouge-ewheel",
+  "i": 5,
+  "url": "http://d7rh5s3nxmpy4.cloudfront.net/CMP10286/8435764434471_6.jpg",
+  "verdict": "ERROR",
+  "reasons": [],
+  "plus": null,
+  "size": null,
+  "error": "téléchargement vide"
+ },
+ {
+  "slug": "pneu-plein-10x2-75-6-5-offroad-ultra-leger-jante-55-mm-lisere-rouge-ewheel",
+  "i": 6,
+  "url": "http://d7rh5s3nxmpy4.cloudfront.net/CMP10286/8435764434471_7.jpg",
+  "verdict": "ERROR",
+  "reasons": [],
+  "plus": null,
+  "size": null,
+  "error": "téléchargement vide"
+ },
+ {
+  "slug": "pneu-plein-10x2-75-6-5-offroad-ultra-leger-jante-55-mm-lisere-rouge-ewheel",
+  "i": 7,
+  "url": "http://d7rh5s3nxmpy4.cloudfront.net/CMP10286/8435764434471_8.jpg",
+  "verdict": "ERROR",
+  "reasons": [],
+  "plus": null,
+  "size": null,
+  "error": "téléchargement vide"
+ },
+ {
+  "slug": "pneu-plein-10x3-6-tricolore-cityneye",
+  "i": 0,
+  "url": "http://d7rh5s3nxmpy4.cloudfront.net/CMP10286/8435764437205_1.jpg",
+  "verdict": "ERROR",
+  "reasons": [],
+  "plus": null,
+  "size": null,
+  "error": "téléchargement vide"
+ },
+ {
+  "slug": "pneu-plein-10x3-6-tricolore-cityneye",
+  "i": 1,
+  "url": "http://d7rh5s3nxmpy4.cloudfront.net/CMP10286/8435764437205_2.jpg",
+  "verdict": "ERROR",
+  "reasons": [],
+  "plus": null,
+  "size": null,
+  "error": "téléchargement vide"
+ },
+ {
+  "slug": "pneu-plein-10x3-6-tricolore-cityneye",
+  "i": 2,
+  "url": "http://d7rh5s3nxmpy4.cloudfront.net/CMP10286/8435764437205_3.jpg",
+  "verdict": "ERROR",
+  "reasons": [],
+  "plus": null,
+  "size": null,
+  "error": "téléchargement vide"
+ },
+ {
+  "slug": "pneu-plein-10x3-6-tricolore-cityneye",
+  "i": 3,
+  "url": "http://d7rh5s3nxmpy4.cloudfront.net/CMP10286/8435764437205_4.jpg",
+  "verdict": "FAIL",
+  "reasons": [
+   "cadrage serré",
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux"
+   ],
+   "parts": 3,
+   "second": 0.367,
+   "vivid": 0.054,
+   "fill": 0.761
+  },
+  "size": [
+   864,
+   864
+  ],
+  "error": null
+ },
+ {
+  "slug": "pneu-plein-10x3-6-tricolore-cityneye",
+  "i": 4,
+  "url": "http://d7rh5s3nxmpy4.cloudfront.net/CMP10286/8435764437205_5.jpg",
+  "verdict": "ERROR",
+  "reasons": [],
+  "plus": null,
+  "size": null,
+  "error": "téléchargement vide"
+ },
+ {
+  "slug": "pneu-plein-10x3-6-tricolore-cityneye",
+  "i": 5,
+  "url": "http://d7rh5s3nxmpy4.cloudfront.net/CMP10286/8435764437205_6.jpg",
+  "verdict": "ERROR",
+  "reasons": [],
+  "plus": null,
+  "size": null,
+  "error": "téléchargement vide"
+ },
+ {
+  "slug": "pneu-plein-10x3-6-tricolore-cityneye",
+  "i": 6,
+  "url": "http://d7rh5s3nxmpy4.cloudfront.net/CMP10286/8435764437205_7.jpg",
+  "verdict": "ERROR",
+  "reasons": [],
+  "plus": null,
+  "size": null,
+  "error": "téléchargement vide"
+ },
+ {
+  "slug": "pneu-plein-10x3-6-tricolore-cityneye",
+  "i": 7,
+  "url": "http://d7rh5s3nxmpy4.cloudfront.net/CMP10286/8435764437205_8.jpg",
+  "verdict": "ERROR",
+  "reasons": [],
+  "plus": null,
+  "size": null,
+  "error": "téléchargement vide"
+ },
+ {
+  "slug": "pneu-plein-230x50-offroad-ultra-leger-lisere-rouge-ewheel",
+  "i": 0,
+  "url": "http://d7rh5s3nxmpy4.cloudfront.net/CMP10286/8435764436154_1.jpg",
+  "verdict": "ERROR",
+  "reasons": [],
+  "plus": null,
+  "size": null,
+  "error": "téléchargement vide"
+ },
+ {
+  "slug": "pneu-plein-230x50-offroad-ultra-leger-lisere-rouge-ewheel",
+  "i": 1,
+  "url": "http://d7rh5s3nxmpy4.cloudfront.net/CMP10286/8435764436154_2.jpg",
+  "verdict": "ERROR",
+  "reasons": [],
+  "plus": null,
+  "size": null,
+  "error": "téléchargement vide"
+ },
+ {
+  "slug": "pneu-plein-230x50-offroad-ultra-leger-lisere-rouge-ewheel",
+  "i": 2,
+  "url": "http://d7rh5s3nxmpy4.cloudfront.net/CMP10286/8435764436154_3.jpg",
+  "verdict": "ERROR",
+  "reasons": [],
+  "plus": null,
+  "size": null,
+  "error": "téléchargement vide"
+ },
+ {
+  "slug": "pneu-plein-230x50-offroad-ultra-leger-lisere-rouge-ewheel",
+  "i": 3,
+  "url": "http://d7rh5s3nxmpy4.cloudfront.net/CMP10286/8435764436154_4.jpg",
+  "verdict": "ERROR",
+  "reasons": [],
+  "plus": null,
+  "size": null,
+  "error": "téléchargement vide"
+ },
+ {
+  "slug": "pneu-plein-230x50-offroad-ultra-leger-lisere-rouge-ewheel",
+  "i": 4,
+  "url": "http://d7rh5s3nxmpy4.cloudfront.net/CMP10286/8435764436154_5.jpg",
+  "verdict": "ERROR",
+  "reasons": [],
+  "plus": null,
+  "size": null,
+  "error": "téléchargement vide"
+ },
+ {
+  "slug": "pneu-plein-230x50-offroad-ultra-leger-lisere-rouge-ewheel",
+  "i": 5,
+  "url": "http://d7rh5s3nxmpy4.cloudfront.net/CMP10286/8435764436154_6.jpg",
+  "verdict": "ERROR",
+  "reasons": [],
+  "plus": null,
+  "size": null,
+  "error": "téléchargement vide"
+ },
+ {
+  "slug": "pneu-plein-230x50-offroad-ultra-leger-lisere-rouge-ewheel",
+  "i": 6,
+  "url": "http://d7rh5s3nxmpy4.cloudfront.net/CMP10286/8435764436154_7.jpg",
+  "verdict": "ERROR",
+  "reasons": [],
+  "plus": null,
+  "size": null,
+  "error": "téléchargement vide"
+ },
+ {
+  "slug": "pneu-plein-230x50-offroad-ultra-leger-lisere-rouge-ewheel",
+  "i": 7,
+  "url": "http://d7rh5s3nxmpy4.cloudfront.net/CMP10286/8435764436154_8.jpg",
+  "verdict": "ERROR",
+  "reasons": [],
+  "plus": null,
+  "size": null,
+  "error": "téléchargement vide"
+ },
+ {
+  "slug": "pneu-plein-60-70-6-5-offroad-ultra-leger-jante-44-mm-lisere-rouge-ewheel",
+  "i": 0,
+  "url": "http://d7rh5s3nxmpy4.cloudfront.net/CMP10286/9501352829444_1.jpg",
+  "verdict": "ERROR",
+  "reasons": [],
+  "plus": null,
+  "size": null,
+  "error": "téléchargement vide"
+ },
+ {
+  "slug": "pneu-plein-60-70-6-5-offroad-ultra-leger-jante-44-mm-lisere-rouge-ewheel",
+  "i": 1,
+  "url": "http://d7rh5s3nxmpy4.cloudfront.net/CMP10286/9501352829444_2.jpg",
+  "verdict": "ERROR",
+  "reasons": [],
+  "plus": null,
+  "size": null,
+  "error": "téléchargement vide"
+ },
+ {
+  "slug": "pneu-plein-60-70-6-5-offroad-ultra-leger-jante-44-mm-lisere-rouge-ewheel",
+  "i": 2,
+  "url": "http://d7rh5s3nxmpy4.cloudfront.net/CMP10286/9501352829444_3.jpg",
+  "verdict": "ERROR",
+  "reasons": [],
+  "plus": null,
+  "size": null,
+  "error": "téléchargement vide"
+ },
+ {
+  "slug": "pneu-plein-60-70-6-5-offroad-ultra-leger-jante-44-mm-lisere-rouge-ewheel",
+  "i": 3,
+  "url": "http://d7rh5s3nxmpy4.cloudfront.net/CMP10286/9501352829444_4.jpg",
+  "verdict": "ERROR",
+  "reasons": [],
+  "plus": null,
+  "size": null,
+  "error": "téléchargement vide"
+ },
+ {
+  "slug": "pneu-plein-60-70-6-5-offroad-ultra-leger-jante-44-mm-lisere-rouge-ewheel",
+  "i": 4,
+  "url": "http://d7rh5s3nxmpy4.cloudfront.net/CMP10286/9501352829444_5.jpg",
+  "verdict": "ERROR",
+  "reasons": [],
+  "plus": null,
+  "size": null,
+  "error": "téléchargement vide"
+ },
+ {
+  "slug": "pneu-plein-60-70-6-5-offroad-ultra-leger-jante-44-mm-lisere-rouge-ewheel",
+  "i": 5,
+  "url": "http://d7rh5s3nxmpy4.cloudfront.net/CMP10286/9501352829444_6.jpg",
+  "verdict": "ERROR",
+  "reasons": [],
+  "plus": null,
+  "size": null,
+  "error": "téléchargement vide"
+ },
+ {
+  "slug": "pneu-plein-60-70-6-5-offroad-ultra-leger-jante-44-mm-lisere-rouge-ewheel",
+  "i": 6,
+  "url": "http://d7rh5s3nxmpy4.cloudfront.net/CMP10286/9501352829444_7.jpg",
+  "verdict": "ERROR",
+  "reasons": [],
+  "plus": null,
+  "size": null,
+  "error": "téléchargement vide"
+ },
+ {
+  "slug": "pneu-plein-60-70-6-5-offroad-ultra-leger-jante-44-mm-lisere-rouge-ewheel",
+  "i": 7,
+  "url": "http://d7rh5s3nxmpy4.cloudfront.net/CMP10286/9501352829444_8.jpg",
+  "verdict": "ERROR",
+  "reasons": [],
+  "plus": null,
+  "size": null,
+  "error": "téléchargement vide"
+ },
+ {
+  "slug": "pneu-plein-60-70-7-offroad-ultra-leger-jante-50-mm-lisere-rouge-ewheel",
+  "i": 0,
+  "url": "http://d7rh5s3nxmpy4.cloudfront.net/CMP10286/8435764436161_1.jpg",
+  "verdict": "ERROR",
+  "reasons": [],
+  "plus": null,
+  "size": null,
+  "error": "téléchargement vide"
+ },
+ {
+  "slug": "pneu-plein-60-70-7-offroad-ultra-leger-jante-50-mm-lisere-rouge-ewheel",
+  "i": 1,
+  "url": "http://d7rh5s3nxmpy4.cloudfront.net/CMP10286/8435764436161_2.jpg",
+  "verdict": "ERROR",
+  "reasons": [],
+  "plus": null,
+  "size": null,
+  "error": "téléchargement vide"
+ },
+ {
+  "slug": "pneu-plein-60-70-7-offroad-ultra-leger-jante-50-mm-lisere-rouge-ewheel",
+  "i": 2,
+  "url": "http://d7rh5s3nxmpy4.cloudfront.net/CMP10286/8435764436161_3.jpg",
+  "verdict": "ERROR",
+  "reasons": [],
+  "plus": null,
+  "size": null,
+  "error": "téléchargement vide"
+ },
+ {
+  "slug": "pneu-plein-60-70-7-offroad-ultra-leger-jante-50-mm-lisere-rouge-ewheel",
+  "i": 3,
+  "url": "http://d7rh5s3nxmpy4.cloudfront.net/CMP10286/8435764436161_4.jpg",
+  "verdict": "ERROR",
+  "reasons": [],
+  "plus": null,
+  "size": null,
+  "error": "téléchargement vide"
+ },
+ {
+  "slug": "pneu-plein-60-70-7-offroad-ultra-leger-jante-50-mm-lisere-rouge-ewheel",
+  "i": 4,
+  "url": "http://d7rh5s3nxmpy4.cloudfront.net/CMP10286/8435764436161_5.jpg",
+  "verdict": "ERROR",
+  "reasons": [],
+  "plus": null,
+  "size": null,
+  "error": "téléchargement vide"
+ },
+ {
+  "slug": "pneu-plein-60-70-7-offroad-ultra-leger-jante-50-mm-lisere-rouge-ewheel",
+  "i": 5,
+  "url": "http://d7rh5s3nxmpy4.cloudfront.net/CMP10286/8435764436161_6.jpg",
+  "verdict": "ERROR",
+  "reasons": [],
+  "plus": null,
+  "size": null,
+  "error": "téléchargement vide"
+ },
+ {
+  "slug": "pneu-plein-60-70-7-offroad-ultra-leger-jante-50-mm-lisere-rouge-ewheel",
+  "i": 6,
+  "url": "http://d7rh5s3nxmpy4.cloudfront.net/CMP10286/8435764436161_7.jpg",
+  "verdict": "ERROR",
+  "reasons": [],
+  "plus": null,
+  "size": null,
+  "error": "téléchargement vide"
+ },
+ {
+  "slug": "pneu-plein-60-70-7-offroad-ultra-leger-jante-50-mm-lisere-rouge-ewheel",
+  "i": 7,
+  "url": "http://d7rh5s3nxmpy4.cloudfront.net/CMP10286/8435764436161_8.jpg",
+  "verdict": "ERROR",
+  "reasons": [],
+  "plus": null,
+  "size": null,
+  "error": "téléchargement vide"
+ },
+ {
+  "slug": "pneu-plein-8-5x2-5-6-1-ultra-leger-jante-58-mm-dualtron-mini-lisere-rouge-ewheel",
+  "i": 0,
+  "url": "http://d7rh5s3nxmpy4.cloudfront.net/CMP10286/7427255408949_1.jpg",
+  "verdict": "ERROR",
+  "reasons": [],
+  "plus": null,
+  "size": null,
+  "error": "téléchargement vide"
+ },
+ {
+  "slug": "pneu-plein-8-5x2-5-6-1-ultra-leger-jante-58-mm-dualtron-mini-lisere-rouge-ewheel",
+  "i": 1,
+  "url": "http://d7rh5s3nxmpy4.cloudfront.net/CMP10286/7427255408949_2.jpg",
+  "verdict": "ERROR",
+  "reasons": [],
+  "plus": null,
+  "size": null,
+  "error": "téléchargement vide"
+ },
+ {
+  "slug": "pneu-plein-8-5x2-5-6-1-ultra-leger-jante-58-mm-dualtron-mini-lisere-rouge-ewheel",
+  "i": 2,
+  "url": "http://d7rh5s3nxmpy4.cloudfront.net/CMP10286/7427255408949_3.jpg",
+  "verdict": "ERROR",
+  "reasons": [],
+  "plus": null,
+  "size": null,
+  "error": "téléchargement vide"
+ },
+ {
+  "slug": "pneu-plein-8-5x2-5-6-1-ultra-leger-jante-58-mm-dualtron-mini-lisere-rouge-ewheel",
+  "i": 3,
+  "url": "http://d7rh5s3nxmpy4.cloudfront.net/CMP10286/7427255408949_4.jpg",
+  "verdict": "ERROR",
+  "reasons": [],
+  "plus": null,
+  "size": null,
+  "error": "téléchargement vide"
+ },
+ {
+  "slug": "pneu-plein-8-5x2-5-6-1-ultra-leger-jante-58-mm-dualtron-mini-lisere-rouge-ewheel",
+  "i": 4,
+  "url": "http://d7rh5s3nxmpy4.cloudfront.net/CMP10286/7427255408949_5.jpg",
+  "verdict": "ERROR",
+  "reasons": [],
+  "plus": null,
+  "size": null,
+  "error": "téléchargement vide"
+ },
+ {
+  "slug": "pneu-plein-8-5x2-5-6-1-ultra-leger-jante-58-mm-dualtron-mini-lisere-rouge-ewheel",
+  "i": 5,
+  "url": "http://d7rh5s3nxmpy4.cloudfront.net/CMP10286/7427255408949_6.jpg",
+  "verdict": "ERROR",
+  "reasons": [],
+  "plus": null,
+  "size": null,
+  "error": "téléchargement vide"
+ },
+ {
+  "slug": "pneu-plein-8-5x2-5-6-1-ultra-leger-jante-58-mm-dualtron-mini-lisere-rouge-ewheel",
+  "i": 6,
+  "url": "http://d7rh5s3nxmpy4.cloudfront.net/CMP10286/7427255408949_7.jpg",
+  "verdict": "ERROR",
+  "reasons": [],
+  "plus": null,
+  "size": null,
+  "error": "téléchargement vide"
+ },
+ {
+  "slug": "pneu-plein-8-5x2-5-6-1-ultra-leger-jante-58-mm-dualtron-mini-lisere-rouge-ewheel",
+  "i": 7,
+  "url": "http://d7rh5s3nxmpy4.cloudfront.net/CMP10286/7427255408949_8.jpg",
+  "verdict": "ERROR",
+  "reasons": [],
+  "plus": null,
+  "size": null,
+  "error": "téléchargement vide"
+ },
+ {
+  "slug": "pneu-plein-8-5x2-6-1-alveole-jante-34-mm-rouge",
+  "i": 0,
+  "url": "http://d7rh5s3nxmpy4.cloudfront.net/CMP10286/7427251493628_1.jpg",
+  "verdict": "ERROR",
+  "reasons": [],
+  "plus": null,
+  "size": null,
+  "error": "téléchargement vide"
+ },
+ {
+  "slug": "pneu-plein-8-5x2-6-1-alveole-jante-34-mm-rouge",
+  "i": 1,
+  "url": "http://d7rh5s3nxmpy4.cloudfront.net/CMP10286/7427251493628_2.jpg",
+  "verdict": "ERROR",
+  "reasons": [],
+  "plus": null,
+  "size": null,
+  "error": "téléchargement vide"
+ },
+ {
+  "slug": "pneu-plein-8-5x2-6-1-alveole-jante-34-mm-rouge",
+  "i": 2,
+  "url": "http://d7rh5s3nxmpy4.cloudfront.net/CMP10286/7427251493628_3.jpg",
+  "verdict": "ERROR",
+  "reasons": [],
+  "plus": null,
+  "size": null,
+  "error": "téléchargement vide"
+ },
+ {
+  "slug": "pneu-plein-8-5x2-6-1-alveole-jante-34-mm-rouge",
+  "i": 3,
+  "url": "http://d7rh5s3nxmpy4.cloudfront.net/CMP10286/7427251493628_4.jpg",
+  "verdict": "ERROR",
+  "reasons": [],
+  "plus": null,
+  "size": null,
+  "error": "téléchargement vide"
+ },
+ {
+  "slug": "pneu-plein-8-5x2-6-1-alveole-jante-34-mm-rouge",
+  "i": 4,
+  "url": "http://d7rh5s3nxmpy4.cloudfront.net/CMP10286/7427251493628_5.jpg",
+  "verdict": "ERROR",
+  "reasons": [],
+  "plus": null,
+  "size": null,
+  "error": "téléchargement vide"
+ },
+ {
+  "slug": "pneu-plein-8-5x2-6-1-alveole-jante-34-mm-rouge",
+  "i": 5,
+  "url": "http://d7rh5s3nxmpy4.cloudfront.net/CMP10286/7427251493628_6.jpg",
+  "verdict": "ERROR",
+  "reasons": [],
+  "plus": null,
+  "size": null,
+  "error": "téléchargement vide"
+ },
+ {
+  "slug": "pneu-plein-8-5x2-6-1-alveole-jante-34-mm-rouge",
+  "i": 6,
+  "url": "http://d7rh5s3nxmpy4.cloudfront.net/CMP10286/7427251493628_7.jpg",
+  "verdict": "ERROR",
+  "reasons": [],
+  "plus": null,
+  "size": null,
+  "error": "téléchargement vide"
+ },
+ {
+  "slug": "pneu-plein-8-5x2-6-1-alveole-jante-34-mm-rouge",
+  "i": 7,
+  "url": "http://d7rh5s3nxmpy4.cloudfront.net/CMP10286/7427251493628_8.jpg",
+  "verdict": "ERROR",
+  "reasons": [],
+  "plus": null,
+  "size": null,
+  "error": "téléchargement vide"
+ },
+ {
+  "slug": "plaquettes-de-freins-metalliques-speedtrott-rs8001600-02b",
+  "i": 0,
+  "url": "https://wattiz.fr/img/phone/30757-1.jpg",
+  "verdict": "FAIL",
+  "reasons": [
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+   ],
+   "parts": 2,
+   "second": 0.491,
+   "vivid": 0.001,
+   "fill": 0.257
+  },
+  "size": [
+   1080,
+   1080
+  ],
+  "error": null
+ },
+ {
+  "slug": "plaquettes-de-freins-metalliques-speedtrott-rs8001600-02b",
+  "i": 1,
+  "url": "https://wattiz.fr/img/phone/30757-2.jpg",
+  "verdict": "FAIL",
+  "reasons": [
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+   ],
+   "parts": 2,
+   "second": 0.498,
+   "vivid": 0,
+   "fill": 0.283
+  },
+  "size": [
+   1080,
+   1080
+  ],
+  "error": null
+ },
+ {
+  "slug": "plaquettes-de-freins-metalliques-speedtrott-rs8001600-02b",
+  "i": 2,
+  "url": "https://wattiz.fr/img/phone/30757-3.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition",
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.11,
+   "fill": 0.792
+  },
+  "size": [
+   448,
+   644
+  ],
+  "error": null
+ },
+ {
+  "slug": "plaquettes-de-freins-metalliques-speedtrott-rs8001600-02b",
+  "i": 3,
+  "url": "https://wattiz.fr/img/phone/30757-4.jpg",
+  "verdict": "ERROR",
+  "reasons": [],
+  "plus": null,
+  "size": null,
+  "error": "téléchargement vide"
+ },
+ {
+  "slug": "plaquettes-de-freins-metalliques-speedtrott-rs8001600-02b",
+  "i": 4,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/part-images/a29968ea-3c39-4024-8514-267529b73c79/1792434798658_0.png",
+  "verdict": "FAIL",
+  "reasons": [
+   "basse définition",
+   "cadrage serré",
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux",
+   "couleurs vives 93 % (visuel marketing ?)"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux",
+    "couleurs vives 93 % (visuel marketing ?)"
+   ],
+   "parts": 3,
+   "second": 0.466,
+   "vivid": 0.932,
+   "fill": 0.808
+  },
+  "size": [
+   587,
+   426
+  ],
+  "error": null
+ },
+ {
+  "slug": "plaquettes-de-freins-metalliques-speedtrott-rs8001600-02b",
+  "i": 5,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/part-images/a29968ea-3c39-4024-8514-267529b73c79/1792434802234_0.png",
+  "verdict": "FAIL",
+  "reasons": [
+   "basse définition",
+   "cadrage serré",
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux",
+   "couleurs vives 87 % (visuel marketing ?)"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux",
+    "couleurs vives 87 % (visuel marketing ?)"
+   ],
+   "parts": 2,
+   "second": 0.486,
+   "vivid": 0.867,
+   "fill": 0.784
+  },
+  "size": [
+   363,
+   203
+  ],
+  "error": null
+ },
+ {
+  "slug": "plaquettes-de-freins-metalliques-speedtrott-rs8001600-02b",
+  "i": 6,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/part-images/a29968ea-3c39-4024-8514-267529b73c79/1792434803627_0.png",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "basse définition",
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux",
+   "couleurs vives 81 % (visuel marketing ?)"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux",
+    "couleurs vives 81 % (visuel marketing ?)"
+   ],
+   "parts": 3,
+   "second": 0.386,
+   "vivid": 0.81,
+   "fill": 0.831
+  },
+  "size": [
+   486,
+   428
+  ],
+  "error": null
+ },
+ {
+  "slug": "plaquettes-de-freins-metalliques-speedway-et-dualtron",
+  "i": 0,
+  "url": "https://wattiz.fr/img/phone/30758-1.jpg",
+  "verdict": "FAIL",
+  "reasons": [
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+   ],
+   "parts": 2,
+   "second": 0.493,
+   "vivid": 0,
+   "fill": 0.259
+  },
+  "size": [
+   1080,
+   1080
+  ],
+  "error": null
+ },
+ {
+  "slug": "plaquettes-de-freins-metalliques-speedway-et-dualtron",
+  "i": 1,
+  "url": "https://wattiz.fr/img/phone/30758-2.jpg",
+  "verdict": "FAIL",
+  "reasons": [
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+   ],
+   "parts": 2,
+   "second": 0.486,
+   "vivid": 0,
+   "fill": 0.265
+  },
+  "size": [
+   1080,
+   1080
+  ],
+  "error": null
+ },
+ {
+  "slug": "plaquettes-de-freins-metalliques-speedway-et-dualtron",
+  "i": 2,
+  "url": "https://wattiz.fr/img/phone/30758-3.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition",
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.151,
+   "fill": 0.796
+  },
+  "size": [
+   445,
+   643
+  ],
+  "error": null
+ },
+ {
+  "slug": "plaquettes-de-freins-metalliques-speedway-et-dualtron",
+  "i": 3,
+  "url": "https://wattiz.fr/img/phone/30758-4.jpg",
+  "verdict": "ERROR",
+  "reasons": [],
+  "plus": null,
+  "size": null,
+  "error": "téléchargement vide"
+ },
+ {
+  "slug": "plaquettes-de-freins-metalliques-speedway-et-dualtron",
+  "i": 4,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/part-images/13449b05-4dfb-42db-b462-165f7428c4c8/1792430776798_0.png",
+  "verdict": "FAIL",
+  "reasons": [
+   "basse définition",
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux",
+   "couleurs vives 59 % (visuel marketing ?)"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux",
+    "couleurs vives 59 % (visuel marketing ?)"
+   ],
+   "parts": 3,
+   "second": 0.461,
+   "vivid": 0.594,
+   "fill": 0.811
+  },
+  "size": [
+   576,
+   411
+  ],
+  "error": null
+ },
+ {
+  "slug": "plaquettes-de-freins-metalliques-speedway-et-dualtron",
+  "i": 5,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/part-images/13449b05-4dfb-42db-b462-165f7428c4c8/1792430776798_2.png",
+  "verdict": "FAIL",
+  "reasons": [
+   "basse définition",
+   "cadrage serré",
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+   ],
+   "parts": 2,
+   "second": 0.487,
+   "vivid": 0.279,
+   "fill": 0.813
+  },
+  "size": [
+   383,
+   263
+  ],
+  "error": null
+ },
+ {
+  "slug": "plaquettes-de-freins-metalliques-speedway-et-dualtron",
+  "i": 6,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/part-images/13449b05-4dfb-42db-b462-165f7428c4c8/1792430776798_3.png",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "basse définition",
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 4 morceaux",
+   "couleurs vives 51 % (visuel marketing ?)"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 4 morceaux",
+    "couleurs vives 51 % (visuel marketing ?)"
+   ],
+   "parts": 4,
+   "second": 0.38,
+   "vivid": 0.513,
+   "fill": 0.836
+  },
+  "size": [
+   486,
+   426
+  ],
+  "error": null
+ },
+ {
+  "slug": "plaquettes-de-freins-speedtrott-rs8001600-02b",
+  "i": 0,
+  "url": "https://wattiz.fr/img/phone/28412-1.jpg",
+  "verdict": "FAIL",
+  "reasons": [
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+   ],
+   "parts": 2,
+   "second": 0.497,
+   "vivid": 0.258,
+   "fill": 0.346
+  },
+  "size": [
+   756,
+   860
+  ],
+  "error": null
+ },
+ {
+  "slug": "plaquettes-de-freins-speedtrott-rs8001600-02b",
+  "i": 1,
+  "url": "https://wattiz.fr/img/phone/28412-2.jpg",
+  "verdict": "FAIL",
+  "reasons": [
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+   ],
+   "parts": 2,
+   "second": 0.498,
+   "vivid": 0.26,
+   "fill": 0.185
+  },
+  "size": [
+   709,
+   860
+  ],
+  "error": null
+ },
+ {
+  "slug": "plaquettes-de-freins-speedtrott-rs8001600-02b",
+  "i": 2,
+  "url": "https://wattiz.fr/img/phone/28412-3.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition",
+   "cadrage serré",
+   "petit élément détaché (3 morceaux)"
+  ],
+  "plus": {
+   "verdict": "WARN",
+   "reasons": [
+    "petit élément détaché (3 morceaux)"
+   ],
+   "parts": 3,
+   "second": 0.021,
+   "vivid": 0.258,
+   "fill": 0.802
+  },
+  "size": [
+   719,
+   448
+  ],
+  "error": null
+ },
+ {
+  "slug": "plaquettes-de-freins-speedtrott-rs8001600-02b",
+  "i": 3,
+  "url": "https://wattiz.fr/img/phone/28412-4.jpg",
+  "verdict": "ERROR",
+  "reasons": [],
+  "plus": null,
+  "size": null,
+  "error": "téléchargement vide"
+ },
+ {
+  "slug": "plaquettes-de-freins-speedtrott-rs8001600-02b",
+  "i": 4,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/part-images/831bbde7-cf4e-4686-aabf-5c4dd97afd6d/1792431763851_0.png",
+  "verdict": "FAIL",
+  "reasons": [
+   "basse définition",
+   "cadrage serré",
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+   ],
+   "parts": 2,
+   "second": 0.5,
+   "vivid": 0.265,
+   "fill": 0.804
+  },
+  "size": [
+   215,
+   319
+  ],
+  "error": null
+ },
+ {
+  "slug": "plaquettes-de-freins-speedtrott-rs8001600-02b",
+  "i": 5,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/part-images/831bbde7-cf4e-4686-aabf-5c4dd97afd6d/1792879569570_0.png",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition",
+   "cadrage serré",
+   "petit élément détaché (3 morceaux)"
+  ],
+  "plus": {
+   "verdict": "WARN",
+   "reasons": [
+    "petit élément détaché (3 morceaux)"
+   ],
+   "parts": 3,
+   "second": 0.021,
+   "vivid": 0.259,
+   "fill": 0.802
+  },
+  "size": [
+   719,
+   448
+  ],
+  "error": null
+ },
+ {
+  "slug": "plaquettes-de-freins-hope-tech4-v4-metal-fritte-haute-performance",
+  "i": 0,
+  "url": "https://wattiz.fr/img/phone/116287-1.jpg",
+  "verdict": "FAIL",
+  "reasons": [
+   "basse définition",
+   "cadrage serré",
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 4 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 4 morceaux"
+   ],
+   "parts": 4,
+   "second": 0.411,
+   "vivid": 0.125,
+   "fill": 0.762
+  },
+  "size": [
+   336,
+   665
+  ],
+  "error": null
+ },
+ {
+  "slug": "plaquettes-de-freins-hope-tech4-v4-metal-fritte-haute-performance",
+  "i": 1,
+  "url": "https://wattiz.fr/img/phone/116287-2.jpg",
+  "verdict": "FAIL",
+  "reasons": [
+   "basse définition",
+   "cadrage serré",
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+   ],
+   "parts": 2,
+   "second": 0.485,
+   "vivid": 0.091,
+   "fill": 0.726
+  },
+  "size": [
+   768,
+   290
+  ],
+  "error": null
+ },
+ {
+  "slug": "plaquettes-de-freins-hope-tech4-v4-metal-fritte-haute-performance",
+  "i": 2,
+  "url": "https://wattiz.fr/img/phone/116287-3.jpg",
+  "verdict": "FAIL",
+  "reasons": [
+   "basse définition",
+   "cadrage serré",
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 4 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 4 morceaux"
+   ],
+   "parts": 4,
+   "second": 0.403,
+   "vivid": 0.038,
+   "fill": 0.788
+  },
+  "size": [
+   829,
+   517
+  ],
+  "error": null
+ },
+ {
+  "slug": "plaquettes-de-freins-hope-tech4-v4-metal-fritte-haute-performance",
+  "i": 3,
+  "url": "https://wattiz.fr/img/phone/116287-4.jpg",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 5 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 5 morceaux"
+   ],
+   "parts": 5,
+   "second": 0.37,
+   "vivid": 0.07,
+   "fill": 0.827
+  },
+  "size": [
+   869,
+   685
+  ],
+  "error": null
+ },
+ {
+  "slug": "plaquettes-de-freins-hope-tech4-v4-metal-fritte-haute-performance",
+  "i": 4,
+  "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/part-images/e64e1331-7004-4838-bbcf-88bbe5f6f414/1792435560512_0.png",
+  "verdict": "FAIL",
+  "reasons": [
+   "basse définition",
+   "cadrage serré",
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 4 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 4 morceaux"
+   ],
+   "parts": 4,
+   "second": 0.417,
+   "vivid": 0.13,
+   "fill": 0.776
+  },
+  "size": [
+   166,
+   327
+  ],
+  "error": null
+ }
+]

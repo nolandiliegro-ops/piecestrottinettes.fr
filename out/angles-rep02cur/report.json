@@ -1,0 +1,1454 @@
+[
+ {
+  "slug": "apollo-go",
+  "nom": "Apollo Go",
+  "photos": 2,
+  "angles": 2,
+  "groupes": [
+   [
+    0
+   ],
+   [
+    1
+   ]
+  ],
+  "a_retirer": [],
+  "erreurs": [],
+  "non_detourees": [],
+  "pairs": [
+   {
+    "a": 0,
+    "b": 1,
+    "dhash": 27,
+    "iou": 0.082,
+    "same": false
+   }
+  ],
+  "verdict": "completer"
+ },
+ {
+  "slug": "apollo-phantom-2-0",
+  "nom": "Apollo Phantom 2.0",
+  "photos": 2,
+  "angles": 2,
+  "groupes": [
+   [
+    0
+   ],
+   [
+    1
+   ]
+  ],
+  "a_retirer": [],
+  "erreurs": [],
+  "non_detourees": [],
+  "pairs": [
+   {
+    "a": 0,
+    "b": 1,
+    "dhash": 31,
+    "iou": 0.171,
+    "same": false
+   }
+  ],
+  "verdict": "completer"
+ },
+ {
+  "slug": "bogist-c1-pro",
+  "nom": "Bogist C1 Pro",
+  "photos": 2,
+  "angles": 2,
+  "groupes": [
+   [
+    0
+   ],
+   [
+    1
+   ]
+  ],
+  "a_retirer": [],
+  "erreurs": [],
+  "non_detourees": [],
+  "pairs": [
+   {
+    "a": 0,
+    "b": 1,
+    "dhash": 23,
+    "iou": 0.178,
+    "same": false
+   }
+  ],
+  "verdict": "completer"
+ },
+ {
+  "slug": "cecotec-bongo-d20",
+  "nom": "Cecotec Bongo D20",
+  "photos": 2,
+  "angles": 2,
+  "groupes": [
+   [
+    0
+   ],
+   [
+    1
+   ]
+  ],
+  "a_retirer": [],
+  "erreurs": [],
+  "non_detourees": [],
+  "pairs": [
+   {
+    "a": 0,
+    "b": 1,
+    "dhash": 34,
+    "iou": 0.148,
+    "same": false
+   }
+  ],
+  "verdict": "completer"
+ },
+ {
+  "slug": "cecotec-bongo-doble-y85-2x2-xxl-connected",
+  "nom": "Cecotec Bongo Doble Y85 2x2 XXL Connected",
+  "photos": 2,
+  "angles": 2,
+  "groupes": [
+   [
+    0
+   ],
+   [
+    1
+   ]
+  ],
+  "a_retirer": [],
+  "erreurs": [],
+  "non_detourees": [],
+  "pairs": [
+   {
+    "a": 0,
+    "b": 1,
+    "dhash": 16,
+    "iou": 0.195,
+    "same": false
+   }
+  ],
+  "verdict": "completer"
+ },
+ {
+  "slug": "cecotec-bongo-serie-a-advance-connected",
+  "nom": "Cecotec Bongo Serie A Advance Connected",
+  "photos": 2,
+  "angles": 2,
+  "groupes": [
+   [
+    0
+   ],
+   [
+    1
+   ]
+  ],
+  "a_retirer": [],
+  "erreurs": [],
+  "non_detourees": [],
+  "pairs": [
+   {
+    "a": 0,
+    "b": 1,
+    "dhash": 28,
+    "iou": 0.439,
+    "same": false
+   }
+  ],
+  "verdict": "completer"
+ },
+ {
+  "slug": "cecotec-bongo-serie-m30-connected",
+  "nom": "Cecotec Bongo Serie M30 Connected",
+  "photos": 2,
+  "angles": 2,
+  "groupes": [
+   [
+    0
+   ],
+   [
+    1
+   ]
+  ],
+  "a_retirer": [],
+  "erreurs": [],
+  "non_detourees": [],
+  "pairs": [
+   {
+    "a": 0,
+    "b": 1,
+    "dhash": 26,
+    "iou": 0.052,
+    "same": false
+   }
+  ],
+  "verdict": "completer"
+ },
+ {
+  "slug": "ducati-pro-iii",
+  "nom": "Ducati Pro-III",
+  "photos": 2,
+  "angles": 2,
+  "groupes": [
+   [
+    0
+   ],
+   [
+    1
+   ]
+  ],
+  "a_retirer": [],
+  "erreurs": [],
+  "non_detourees": [],
+  "pairs": [
+   {
+    "a": 0,
+    "b": 1,
+    "dhash": 29,
+    "iou": 0.045,
+    "same": false
+   }
+  ],
+  "verdict": "completer"
+ },
+ {
+  "slug": "e-twow-tanktorq-tk3",
+  "nom": "E-Twow TankTorq TK3",
+  "photos": 2,
+  "angles": 2,
+  "groupes": [
+   [
+    0
+   ],
+   [
+    1
+   ]
+  ],
+  "a_retirer": [],
+  "erreurs": [],
+  "non_detourees": [],
+  "pairs": [
+   {
+    "a": 0,
+    "b": 1,
+    "dhash": 25,
+    "iou": 0.267,
+    "same": false
+   }
+  ],
+  "verdict": "completer"
+ },
+ {
+  "slug": "engwe-y400",
+  "nom": "Engwe Y400",
+  "photos": 2,
+  "angles": 2,
+  "groupes": [
+   [
+    0
+   ],
+   [
+    1
+   ]
+  ],
+  "a_retirer": [],
+  "erreurs": [],
+  "non_detourees": [],
+  "pairs": [
+   {
+    "a": 0,
+    "b": 1,
+    "dhash": 26,
+    "iou": 0.041,
+    "same": false
+   }
+  ],
+  "verdict": "completer"
+ },
+ {
+  "slug": "engwe-y600",
+  "nom": "Engwe Y600",
+  "photos": 2,
+  "angles": 2,
+  "groupes": [
+   [
+    0
+   ],
+   [
+    1
+   ]
+  ],
+  "a_retirer": [],
+  "erreurs": [],
+  "non_detourees": [],
+  "pairs": [
+   {
+    "a": 0,
+    "b": 1,
+    "dhash": 30,
+    "iou": 0.194,
+    "same": false
+   }
+  ],
+  "verdict": "completer"
+ },
+ {
+  "slug": "f40",
+  "nom": "F40",
+  "photos": 2,
+  "angles": 1,
+  "groupes": [
+   [
+    0,
+    1
+   ]
+  ],
+  "a_retirer": [
+   1
+  ],
+  "erreurs": [],
+  "non_detourees": [],
+  "pairs": [
+   {
+    "a": 0,
+    "b": 1,
+    "dhash": 6,
+    "iou": 0.243,
+    "same": true
+   }
+  ],
+  "verdict": "completer"
+ },
+ {
+  "slug": "hiboy-ks4",
+  "nom": "Hiboy KS4",
+  "photos": 1,
+  "angles": 1,
+  "groupes": [
+   [
+    0
+   ]
+  ],
+  "a_retirer": [],
+  "erreurs": [],
+  "non_detourees": [],
+  "pairs": [],
+  "verdict": "completer"
+ },
+ {
+  "slug": "hiboy-ks4-pro",
+  "nom": "Hiboy KS4 Pro",
+  "photos": 2,
+  "angles": 1,
+  "groupes": [
+   [
+    0,
+    1
+   ]
+  ],
+  "a_retirer": [
+   1
+  ],
+  "erreurs": [],
+  "non_detourees": [],
+  "pairs": [
+   {
+    "a": 0,
+    "b": 1,
+    "dhash": 6,
+    "iou": 0.789,
+    "same": true
+   }
+  ],
+  "verdict": "completer"
+ },
+ {
+  "slug": "hiboy-s2",
+  "nom": "Hiboy S2",
+  "photos": 2,
+  "angles": 2,
+  "groupes": [
+   [
+    0
+   ],
+   [
+    1
+   ]
+  ],
+  "a_retirer": [],
+  "erreurs": [],
+  "non_detourees": [],
+  "pairs": [
+   {
+    "a": 0,
+    "b": 1,
+    "dhash": 19,
+    "iou": 0.059,
+    "same": false
+   }
+  ],
+  "verdict": "completer"
+ },
+ {
+  "slug": "hiboy-s2-pro",
+  "nom": "Hiboy S2 Pro",
+  "photos": 2,
+  "angles": 2,
+  "groupes": [
+   [
+    0
+   ],
+   [
+    1
+   ]
+  ],
+  "a_retirer": [],
+  "erreurs": [],
+  "non_detourees": [],
+  "pairs": [
+   {
+    "a": 0,
+    "b": 1,
+    "dhash": 18,
+    "iou": 0.202,
+    "same": false
+   }
+  ],
+  "verdict": "completer"
+ },
+ {
+  "slug": "hiboy-s2r-plus",
+  "nom": "Hiboy S2R Plus",
+  "photos": 2,
+  "angles": 2,
+  "groupes": [
+   [
+    0
+   ],
+   [
+    1
+   ]
+  ],
+  "a_retirer": [],
+  "erreurs": [],
+  "non_detourees": [],
+  "pairs": [
+   {
+    "a": 0,
+    "b": 1,
+    "dhash": 31,
+    "iou": 0.186,
+    "same": false
+   }
+  ],
+  "verdict": "completer"
+ },
+ {
+  "slug": "hikerboy-curtis-dual-pro",
+  "nom": "Hikerboy Curtis Dual Pro",
+  "photos": 2,
+  "angles": 2,
+  "groupes": [
+   [
+    0
+   ],
+   [
+    1
+   ]
+  ],
+  "a_retirer": [],
+  "erreurs": [],
+  "non_detourees": [],
+  "pairs": [
+   {
+    "a": 0,
+    "b": 1,
+    "dhash": 23,
+    "iou": 0.219,
+    "same": false
+   }
+  ],
+  "verdict": "completer"
+ },
+ {
+  "slug": "inmotion-air-pro",
+  "nom": "Inmotion Air Pro",
+  "photos": 2,
+  "angles": 2,
+  "groupes": [
+   [
+    0
+   ],
+   [
+    1
+   ]
+  ],
+  "a_retirer": [],
+  "erreurs": [],
+  "non_detourees": [],
+  "pairs": [
+   {
+    "a": 0,
+    "b": 1,
+    "dhash": 12,
+    "iou": 0.161,
+    "same": false
+   }
+  ],
+  "verdict": "completer"
+ },
+ {
+  "slug": "inmotion-climber",
+  "nom": "Inmotion Climber",
+  "photos": 2,
+  "angles": 2,
+  "groupes": [
+   [
+    0
+   ],
+   [
+    1
+   ]
+  ],
+  "a_retirer": [],
+  "erreurs": [],
+  "non_detourees": [],
+  "pairs": [
+   {
+    "a": 0,
+    "b": 1,
+    "dhash": 23,
+    "iou": 0.123,
+    "same": false
+   }
+  ],
+  "verdict": "completer"
+ },
+ {
+  "slug": "inmotion-rs",
+  "nom": "Inmotion RS",
+  "photos": 1,
+  "angles": 1,
+  "groupes": [
+   [
+    0
+   ]
+  ],
+  "a_retirer": [],
+  "erreurs": [],
+  "non_detourees": [],
+  "pairs": [],
+  "verdict": "completer"
+ },
+ {
+  "slug": "inokim-light-2-super",
+  "nom": "Inokim Light 2 Super",
+  "photos": 2,
+  "angles": 2,
+  "groupes": [
+   [
+    0
+   ],
+   [
+    1
+   ]
+  ],
+  "a_retirer": [],
+  "erreurs": [],
+  "non_detourees": [],
+  "pairs": [
+   {
+    "a": 0,
+    "b": 1,
+    "dhash": 25,
+    "iou": 0.158,
+    "same": false
+   }
+  ],
+  "verdict": "completer"
+ },
+ {
+  "slug": "inokim-quick-4",
+  "nom": "Inokim Quick 4",
+  "photos": 2,
+  "angles": 2,
+  "groupes": [
+   [
+    0
+   ],
+   [
+    1
+   ]
+  ],
+  "a_retirer": [],
+  "erreurs": [],
+  "non_detourees": [],
+  "pairs": [
+   {
+    "a": 0,
+    "b": 1,
+    "dhash": 26,
+    "iou": 0.185,
+    "same": false
+   }
+  ],
+  "verdict": "completer"
+ },
+ {
+  "slug": "iscooter-w8",
+  "nom": "iScooter W8",
+  "photos": 2,
+  "angles": 2,
+  "groupes": [
+   [
+    0
+   ],
+   [
+    1
+   ]
+  ],
+  "a_retirer": [],
+  "erreurs": [],
+  "non_detourees": [],
+  "pairs": [
+   {
+    "a": 0,
+    "b": 1,
+    "dhash": 33,
+    "iou": 0.079,
+    "same": false
+   }
+  ],
+  "verdict": "completer"
+ },
+ {
+  "slug": "iscooter-w9-air",
+  "nom": "iScooter W9 Air",
+  "photos": 2,
+  "angles": 2,
+  "groupes": [
+   [
+    0
+   ],
+   [
+    1
+   ]
+  ],
+  "a_retirer": [],
+  "erreurs": [],
+  "non_detourees": [],
+  "pairs": [
+   {
+    "a": 0,
+    "b": 1,
+    "dhash": 20,
+    "iou": 0.068,
+    "same": false
+   }
+  ],
+  "verdict": "completer"
+ },
+ {
+  "slug": "isinwheel-gt1",
+  "nom": "Isinwheel GT1",
+  "photos": 2,
+  "angles": 2,
+  "groupes": [
+   [
+    0
+   ],
+   [
+    1
+   ]
+  ],
+  "a_retirer": [],
+  "erreurs": [],
+  "non_detourees": [],
+  "pairs": [
+   {
+    "a": 0,
+    "b": 1,
+    "dhash": 28,
+    "iou": 0.103,
+    "same": false
+   }
+  ],
+  "verdict": "completer"
+ },
+ {
+  "slug": "isinwheel-gt2",
+  "nom": "Isinwheel GT2",
+  "photos": 2,
+  "angles": 2,
+  "groupes": [
+   [
+    0
+   ],
+   [
+    1
+   ]
+  ],
+  "a_retirer": [],
+  "erreurs": [],
+  "non_detourees": [],
+  "pairs": [
+   {
+    "a": 0,
+    "b": 1,
+    "dhash": 34,
+    "iou": 0.04,
+    "same": false
+   }
+  ],
+  "verdict": "completer"
+ },
+ {
+  "slug": "kaabo-mantis-10-elite",
+  "nom": "Kaabo Mantis 10 Elite",
+  "photos": 2,
+  "angles": 2,
+  "groupes": [
+   [
+    0
+   ],
+   [
+    1
+   ]
+  ],
+  "a_retirer": [],
+  "erreurs": [],
+  "non_detourees": [],
+  "pairs": [
+   {
+    "a": 0,
+    "b": 1,
+    "dhash": 32,
+    "iou": 0.116,
+    "same": false
+   }
+  ],
+  "verdict": "completer"
+ },
+ {
+  "slug": "kingsong-e1",
+  "nom": "Kingsong E1",
+  "photos": 2,
+  "angles": 2,
+  "groupes": [
+   [
+    0
+   ],
+   [
+    1
+   ]
+  ],
+  "a_retirer": [],
+  "erreurs": [],
+  "non_detourees": [],
+  "pairs": [
+   {
+    "a": 0,
+    "b": 1,
+    "dhash": 22,
+    "iou": 0.063,
+    "same": false
+   }
+  ],
+  "verdict": "completer"
+ },
+ {
+  "slug": "kuickwheel-s9",
+  "nom": "Kuickwheel S9",
+  "photos": 2,
+  "angles": 2,
+  "groupes": [
+   [
+    0
+   ],
+   [
+    1
+   ]
+  ],
+  "a_retirer": [],
+  "erreurs": [],
+  "non_detourees": [],
+  "pairs": [
+   {
+    "a": 0,
+    "b": 1,
+    "dhash": 22,
+    "iou": 0.375,
+    "same": false
+   }
+  ],
+  "verdict": "completer"
+ },
+ {
+  "slug": "kukirin-c1-pro",
+  "nom": "Kukirin C1 Pro",
+  "photos": 2,
+  "angles": 2,
+  "groupes": [
+   [
+    0
+   ],
+   [
+    1
+   ]
+  ],
+  "a_retirer": [],
+  "erreurs": [],
+  "non_detourees": [],
+  "pairs": [
+   {
+    "a": 0,
+    "b": 1,
+    "dhash": 33,
+    "iou": 0.14,
+    "same": false
+   }
+  ],
+  "verdict": "completer"
+ },
+ {
+  "slug": "langfeite-c1",
+  "nom": "Langfeite C1",
+  "photos": 2,
+  "angles": 2,
+  "groupes": [
+   [
+    0
+   ],
+   [
+    1
+   ]
+  ],
+  "a_retirer": [],
+  "erreurs": [],
+  "non_detourees": [],
+  "pairs": [
+   {
+    "a": 0,
+    "b": 1,
+    "dhash": 24,
+    "iou": 0.069,
+    "same": false
+   }
+  ],
+  "verdict": "completer"
+ },
+ {
+  "slug": "langfeite-gt2-mini",
+  "nom": "Langfeite GT2 Mini",
+  "photos": 2,
+  "angles": 2,
+  "groupes": [
+   [
+    0
+   ],
+   [
+    1
+   ]
+  ],
+  "a_retirer": [],
+  "erreurs": [],
+  "non_detourees": [],
+  "pairs": [
+   {
+    "a": 0,
+    "b": 1,
+    "dhash": 21,
+    "iou": 0.061,
+    "same": false
+   }
+  ],
+  "verdict": "completer"
+ },
+ {
+  "slug": "navee-k100-pro",
+  "nom": "Navee K100 Pro",
+  "photos": 2,
+  "angles": 2,
+  "groupes": [
+   [
+    0
+   ],
+   [
+    1
+   ]
+  ],
+  "a_retirer": [],
+  "erreurs": [],
+  "non_detourees": [],
+  "pairs": [
+   {
+    "a": 0,
+    "b": 1,
+    "dhash": 17,
+    "iou": 0.136,
+    "same": false
+   }
+  ],
+  "verdict": "completer"
+ },
+ {
+  "slug": "ninebot-e3",
+  "nom": "Ninebot E3",
+  "photos": 2,
+  "angles": 2,
+  "groupes": [
+   [
+    0
+   ],
+   [
+    1
+   ]
+  ],
+  "a_retirer": [],
+  "erreurs": [],
+  "non_detourees": [],
+  "pairs": [
+   {
+    "a": 0,
+    "b": 1,
+    "dhash": 19,
+    "iou": 0.168,
+    "same": false
+   }
+  ],
+  "verdict": "completer"
+ },
+ {
+  "slug": "ninebot-e3-pro-e",
+  "nom": "Ninebot E3 Pro E",
+  "photos": 2,
+  "angles": 2,
+  "groupes": [
+   [
+    0
+   ],
+   [
+    1
+   ]
+  ],
+  "a_retirer": [],
+  "erreurs": [],
+  "non_detourees": [],
+  "pairs": [
+   {
+    "a": 0,
+    "b": 1,
+    "dhash": 22,
+    "iou": 0.035,
+    "same": false
+   }
+  ],
+  "verdict": "completer"
+ },
+ {
+  "slug": "ninebot-f3-pro-e",
+  "nom": "Ninebot F3 Pro E",
+  "photos": 2,
+  "angles": 2,
+  "groupes": [
+   [
+    0
+   ],
+   [
+    1
+   ]
+  ],
+  "a_retirer": [],
+  "erreurs": [],
+  "non_detourees": [],
+  "pairs": [
+   {
+    "a": 0,
+    "b": 1,
+    "dhash": 15,
+    "iou": 0.185,
+    "same": false
+   }
+  ],
+  "verdict": "completer"
+ },
+ {
+  "slug": "niu-kqi1-pro",
+  "nom": "NIU KQi1 Pro",
+  "photos": 2,
+  "angles": 2,
+  "groupes": [
+   [
+    0
+   ],
+   [
+    1
+   ]
+  ],
+  "a_retirer": [],
+  "erreurs": [],
+  "non_detourees": [],
+  "pairs": [
+   {
+    "a": 0,
+    "b": 1,
+    "dhash": 17,
+    "iou": 0.209,
+    "same": false
+   }
+  ],
+  "verdict": "completer"
+ },
+ {
+  "slug": "p100s",
+  "nom": "P100S",
+  "photos": 2,
+  "angles": 2,
+  "groupes": [
+   [
+    0
+   ],
+   [
+    1
+   ]
+  ],
+  "a_retirer": [],
+  "erreurs": [],
+  "non_detourees": [],
+  "pairs": [
+   {
+    "a": 0,
+    "b": 1,
+    "dhash": 18,
+    "iou": 0.228,
+    "same": false
+   }
+  ],
+  "verdict": "completer"
+ },
+ {
+  "slug": "segway-gt1",
+  "nom": "Segway GT1",
+  "photos": 2,
+  "angles": 2,
+  "groupes": [
+   [
+    0
+   ],
+   [
+    1
+   ]
+  ],
+  "a_retirer": [],
+  "erreurs": [],
+  "non_detourees": [],
+  "pairs": [
+   {
+    "a": 0,
+    "b": 1,
+    "dhash": 32,
+    "iou": 0.179,
+    "same": false
+   }
+  ],
+  "verdict": "completer"
+ },
+ {
+  "slug": "segway-gt3",
+  "nom": "Segway GT3",
+  "photos": 2,
+  "angles": 2,
+  "groupes": [
+   [
+    0
+   ],
+   [
+    1
+   ]
+  ],
+  "a_retirer": [],
+  "erreurs": [],
+  "non_detourees": [],
+  "pairs": [
+   {
+    "a": 0,
+    "b": 1,
+    "dhash": 16,
+    "iou": 0.19,
+    "same": false
+   }
+  ],
+  "verdict": "completer"
+ },
+ {
+  "slug": "segway-p65",
+  "nom": "Segway P65",
+  "photos": 2,
+  "angles": 2,
+  "groupes": [
+   [
+    0
+   ],
+   [
+    1
+   ]
+  ],
+  "a_retirer": [],
+  "erreurs": [],
+  "non_detourees": [],
+  "pairs": [
+   {
+    "a": 0,
+    "b": 1,
+    "dhash": 18,
+    "iou": 0.219,
+    "same": false
+   }
+  ],
+  "verdict": "completer"
+ },
+ {
+  "slug": "segway-zt3-pro",
+  "nom": "Segway ZT3 Pro",
+  "photos": 2,
+  "angles": 2,
+  "groupes": [
+   [
+    0
+   ],
+   [
+    1
+   ]
+  ],
+  "a_retirer": [],
+  "erreurs": [],
+  "non_detourees": [],
+  "pairs": [
+   {
+    "a": 0,
+    "b": 1,
+    "dhash": 24,
+    "iou": 0.22,
+    "same": false
+   }
+  ],
+  "verdict": "completer"
+ },
+ {
+  "slug": "urbanglide-all-road-6-2x2",
+  "nom": "Urbanglide All Road 6 2x2",
+  "photos": 2,
+  "angles": 2,
+  "groupes": [
+   [
+    0
+   ],
+   [
+    1
+   ]
+  ],
+  "a_retirer": [],
+  "erreurs": [],
+  "non_detourees": [],
+  "pairs": [
+   {
+    "a": 0,
+    "b": 1,
+    "dhash": 28,
+    "iou": 0.041,
+    "same": false
+   }
+  ],
+  "verdict": "completer"
+ },
+ {
+  "slug": "urbanglide-ecross-one",
+  "nom": "Urbanglide eCross One",
+  "photos": 2,
+  "angles": 2,
+  "groupes": [
+   [
+    0
+   ],
+   [
+    1
+   ]
+  ],
+  "a_retirer": [],
+  "erreurs": [],
+  "non_detourees": [],
+  "pairs": [
+   {
+    "a": 0,
+    "b": 1,
+    "dhash": 26,
+    "iou": 0.18,
+    "same": false
+   }
+  ],
+  "verdict": "completer"
+ },
+ {
+  "slug": "velity-511-ss",
+  "nom": "Velity 511-Ss",
+  "photos": 2,
+  "angles": 2,
+  "groupes": [
+   [
+    0
+   ],
+   [
+    1
+   ]
+  ],
+  "a_retirer": [],
+  "erreurs": [],
+  "non_detourees": [],
+  "pairs": [
+   {
+    "a": 0,
+    "b": 1,
+    "dhash": 39,
+    "iou": 0.39,
+    "same": false
+   }
+  ],
+  "verdict": "completer"
+ },
+ {
+  "slug": "vsett-10-plus",
+  "nom": "Vsett 10+",
+  "photos": 2,
+  "angles": 2,
+  "groupes": [
+   [
+    0
+   ],
+   [
+    1
+   ]
+  ],
+  "a_retirer": [],
+  "erreurs": [],
+  "non_detourees": [],
+  "pairs": [
+   {
+    "a": 0,
+    "b": 1,
+    "dhash": 9,
+    "iou": 0.605,
+    "same": false
+   }
+  ],
+  "verdict": "completer"
+ },
+ {
+  "slug": "vsett-11-plus-super",
+  "nom": "Vsett 11+ Super",
+  "photos": 2,
+  "angles": 2,
+  "groupes": [
+   [
+    0
+   ],
+   [
+    1
+   ]
+  ],
+  "a_retirer": [],
+  "erreurs": [],
+  "non_detourees": [],
+  "pairs": [
+   {
+    "a": 0,
+    "b": 1,
+    "dhash": 28,
+    "iou": 0.105,
+    "same": false
+   }
+  ],
+  "verdict": "completer"
+ },
+ {
+  "slug": "weped-ff",
+  "nom": "Weped FF",
+  "photos": 2,
+  "angles": 2,
+  "groupes": [
+   [
+    0
+   ],
+   [
+    1
+   ]
+  ],
+  "a_retirer": [],
+  "erreurs": [],
+  "non_detourees": [],
+  "pairs": [
+   {
+    "a": 0,
+    "b": 1,
+    "dhash": 30,
+    "iou": 0.133,
+    "same": false
+   }
+  ],
+  "verdict": "completer"
+ },
+ {
+  "slug": "weped-fold-11",
+  "nom": "Weped Fold 11",
+  "photos": 2,
+  "angles": 2,
+  "groupes": [
+   [
+    0
+   ],
+   [
+    1
+   ]
+  ],
+  "a_retirer": [],
+  "erreurs": [],
+  "non_detourees": [],
+  "pairs": [
+   {
+    "a": 0,
+    "b": 1,
+    "dhash": 35,
+    "iou": 0.216,
+    "same": false
+   }
+  ],
+  "verdict": "completer"
+ },
+ {
+  "slug": "weped-ssgt",
+  "nom": "Weped SSGT",
+  "photos": 1,
+  "angles": 1,
+  "groupes": [
+   [
+    0
+   ]
+  ],
+  "a_retirer": [],
+  "erreurs": [],
+  "non_detourees": [],
+  "pairs": [],
+  "verdict": "completer"
+ },
+ {
+  "slug": "wispeed-airo-v10",
+  "nom": "Wispeed AIRO V10",
+  "photos": 2,
+  "angles": 2,
+  "groupes": [
+   [
+    0
+   ],
+   [
+    1
+   ]
+  ],
+  "a_retirer": [],
+  "erreurs": [],
+  "non_detourees": [],
+  "pairs": [
+   {
+    "a": 0,
+    "b": 1,
+    "dhash": 31,
+    "iou": 0.156,
+    "same": false
+   }
+  ],
+  "verdict": "completer"
+ },
+ {
+  "slug": "wispeed-airo-v16",
+  "nom": "Wispeed AIRO V16",
+  "photos": 2,
+  "angles": 2,
+  "groupes": [
+   [
+    0
+   ],
+   [
+    1
+   ]
+  ],
+  "a_retirer": [],
+  "erreurs": [],
+  "non_detourees": [],
+  "pairs": [
+   {
+    "a": 0,
+    "b": 1,
+    "dhash": 29,
+    "iou": 0.152,
+    "same": false
+   }
+  ],
+  "verdict": "completer"
+ },
+ {
+  "slug": "xiaomi-electric-scooter-4-pro",
+  "nom": "Xiaomi Electric Scooter 4 Pro",
+  "photos": 2,
+  "angles": 2,
+  "groupes": [
+   [
+    0
+   ],
+   [
+    1
+   ]
+  ],
+  "a_retirer": [],
+  "erreurs": [],
+  "non_detourees": [],
+  "pairs": [
+   {
+    "a": 0,
+    "b": 1,
+    "dhash": 19,
+    "iou": 0.187,
+    "same": false
+   }
+  ],
+  "verdict": "completer"
+ },
+ {
+  "slug": "yeep-me-85a-evo",
+  "nom": "Yeep.me 85a Evo",
+  "photos": 2,
+  "angles": 2,
+  "groupes": [
+   [
+    0
+   ],
+   [
+    1
+   ]
+  ],
+  "a_retirer": [],
+  "erreurs": [],
+  "non_detourees": [],
+  "pairs": [
+   {
+    "a": 0,
+    "b": 1,
+    "dhash": 29,
+    "iou": 0.148,
+    "same": false
+   }
+  ],
+  "verdict": "completer"
+ }
+]
