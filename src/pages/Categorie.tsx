@@ -7,6 +7,7 @@ import Footer from "@/components/Footer";
 import { useCategoryData } from "@/hooks/useCategoryData";
 import { resolveCategoryIcon } from "@/lib/categoryIcons";
 import { buildCategoryJsonLd } from "@/lib/categorySchema";
+import { usableMetaDescription } from "@/lib/seoText";
 import { optimizedImage } from "@/lib/imageTransform";
 import CategorySwitcher from "@/components/category/CategorySwitcher";
 import CategoryExplorer from "@/components/category/CategoryExplorer";
@@ -37,6 +38,8 @@ const Categorie = () => {
   if (!category) {
     return (
       <div className="min-h-[100dvh] flex flex-col" style={{ backgroundColor: "#F5F0E8" }}>
+        {/* SPA : la page répond 200 → noindex pour ne pas laisser Google indexer une soft 404 (audit SEO 24/10). */}
+        <SEO noindex title="Catégorie introuvable" description="Cette catégorie n'existe pas ou n'a plus de pièces." />
         <Header />
         <main className="flex-1 flex items-center justify-center px-4 py-20">
           <div className="text-center">
@@ -70,7 +73,8 @@ const Categorie = () => {
   const bodyText = category.description?.trim() || fallbackText;
 
   const seoTitle = category.meta_title || `${category.name} — Pièces détachées trottinette`;
-  const seoDescription = category.meta_description || fallbackText;
+  // 24/10 (audit SEO) : une meta en base hors bornes 70-160 (« plaquettes » : 8 caractères) n'est plus publiée.
+  const seoDescription = usableMetaDescription(category.meta_description) ?? fallbackText;
   const canonical = `https://piecestrottinettes.fr/categorie/${category.slug}`;
 
   const schema = buildCategoryJsonLd({

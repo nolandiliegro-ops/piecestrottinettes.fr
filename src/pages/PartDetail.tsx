@@ -6,6 +6,7 @@ import { useSelectedScooter } from "@/contexts/ScooterContext";
 import Header from "@/components/Header";
 import SEO from "@/components/SEO";
 import { seoMeta } from "@/lib/partFicheText";
+import { usableMetaTitle, usableMetaDescription, firstFitting, clampDescription } from "@/lib/seoText";
 import { sanitizeHtml, stripHtml } from "@/lib/sanitizeHtml";
 import { getPrimaryImage } from "@/lib/entityImage";
 import { isVerdictSafe } from "@/lib/batteryVoltage";
@@ -75,6 +76,8 @@ const PartDetail = () => {
   if (error || !part) {
     return (
       <div className="min-h-screen bg-[hsl(var(--greige))]">
+        {/* SPA : la page répond 200 → noindex pour ne pas laisser Google indexer une soft 404 (audit SEO 24/10). */}
+        <SEO noindex title="Pièce introuvable" description="Cette pièce n'existe pas ou a été retirée du catalogue." />
         <Header />
         <div className="pt-24 px-4 flex flex-col items-center justify-center">
           <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} className="text-center">
@@ -171,18 +174,17 @@ const PartDetail = () => {
       <SEO
         title={
           generatedMeta?.title
-            ?? (part.meta_title?.trim()
-              ? part.meta_title
-              : `${part.name} - Pièce compatible trottinette électrique`)
+            ?? usableMetaTitle(part.meta_title, part.name)
+            ?? firstFitting([`${part.name} - Pièce trottinette électrique`, part.name])
         }
         description={
           generatedMeta?.description
-            ?? (part.meta_description?.trim()
-              ? part.meta_description
-              : `Achetez ${part.name} pour trottinette électrique. Compatible ${compatibleModels || "nombreux modèles"}. Livraison rapide.`)
+            ?? usableMetaDescription(part.meta_description)
+            ?? clampDescription(`Achetez ${part.name} pour trottinette électrique. Compatible ${compatibleModels || "nombreux modèles"}. Livraison rapide.`)
         }
         image={part.image_url ?? undefined}
         canonical={productUrl}
+        type="product"
         schema={[productSchema, breadcrumbSchema]}
       />
       <Header />

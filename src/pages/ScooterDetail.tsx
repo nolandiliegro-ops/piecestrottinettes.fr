@@ -1,5 +1,5 @@
 import { useParams, Link, useSearchParams } from "react-router-dom";
-import { useScooterFiche } from "@/hooks/useScooterFiche";
+import { useScooterFicheState } from "@/hooks/useScooterFiche";
 import { BuyCtx, livePrice } from "@/components/scooter/BuyProposals";
 import { motion } from "framer-motion";
 import { Loader2, ArrowLeft, ChevronRight } from "lucide-react";
@@ -19,6 +19,7 @@ import ScooterQuestions from "@/components/scooter/ScooterQuestions";
 import { useShowroomData } from "@/hooks/useShowroomData";
 import { getBrandColors } from "@/contexts/ScooterContext";
 import { solidConversionState } from "@/lib/compatibilityStatus";
+import { firstFitting, clampDescription } from "@/lib/seoText";
 import {
   Breadcrumb,
   BreadcrumbItem,
@@ -37,7 +38,7 @@ const ScooterDetail = () => {
     useShowroomData(slug);
   // Mise en page (16/10) : sans paramètre = Pit-stand (6). ?style=0 ancienne page, ?style=1..5 autres propositions.
   const [searchParams] = useSearchParams();
-  const seoFiche = useScooterFiche(slug);
+  const { fiche: seoFiche, settled: ficheSettled } = useScooterFicheState(slug);
   const styleNum = Number(searchParams.get("style"));
   // 16/10 : Pit-stand (6) validée par Nolan = page par défaut. ?style=0 = ancienne page (référence), ?style=1..5 = autres propositions.
   const hasStyleParam = searchParams.has("style");
@@ -67,6 +68,8 @@ const ScooterDetail = () => {
   if (!scooter) {
     return (
       <div className="min-h-screen flex flex-col" style={{ backgroundColor: "#F5F0E8" }}>
+        {/* SPA : la page répond 200 → noindex pour ne pas laisser Google indexer une soft 404 (audit SEO 24/10). */}
+        <SEO noindex title="Modèle introuvable" description="Cette trottinette n'existe pas ou n'est plus disponible." />
         <ShowroomHeader />
         <main className="flex-1 flex items-center justify-center px-4 pt-20">
           <div className="text-center">
@@ -98,42 +101,39 @@ const ScooterDetail = () => {
   const brand = getBrandColors(brandName);
   const count = compatibleParts.length;
 
-  // Prix réel = prix des PIÈCES compatibles (le scooter n'a pas de prix).
-  const prices = compatibleParts.map((p) => p.price).filter((p): p is number => p != null && p > 0);
-  const lowPrice = prices.length > 0 ? Math.min(...prices) : null;
-
   // Nav gamme (même marque) — liens simples sous le breadcrumb.
   const sameBrandModels = allScooters.filter(
     (s) => s.slug !== scooter.slug && brandName && s.brand_name === brandName
   );
 
   // 13/10 : titre calé sur « pièces <modèle> » + les familles qui vendent (avant : « — Pièces compatibles »).
-  const seoTitle = seoFiche?.metaTitle ?? `Pièces ${scooter.name} : pneus, freins, chargeur compatibles`;
-  const seoDescription = seoFiche?.metaDescription ?? `Découvre toutes les pièces compatibles avec ta ${brandName ? `${brandName} ` : ""}${scooter.name} : ${count} pièce${count > 1 ? "s" : ""} référencée${count > 1 ? "s" : ""}, livraison rapide. Freins, pneus, batteries, contrôleurs et plus sur piècestrottinettes.`;
+  // 24/10 (audit SEO) : variantes plus courtes si le nom est long (≤ 60), description ≤ 158, marque pas répétée.
+  const seoTitle = seoFiche?.metaTitle ?? firstFitting([
+    `Pièces ${scooter.name} : pneus, freins, chargeur compatibles`,
+    `Pièces ${scooter.name} : pneus, freins, chargeur`,
+    `Pièces détachées ${scooter.name}`,
+    `Pièces ${scooter.name}`,
+  ]);
+  const fullModel = brandName && !scooter.name.toLowerCase().startsWith(brandName.toLowerCase()) ? `${brandName} ${scooter.name}` : scooter.name;
+  const seoDescription = seoFiche?.metaDescription ?? clampDescription(`Pièces compatibles avec ta ${fullModel} : ${count} référence${count > 1 ? "s" : ""}, pneus, freins, chargeurs, batteries. Livraison rapide.`);
+  // Ni pièce compatible ni fiche « Tout savoir » : page vide → noindex (et hors sitemap). Une fiche suffit à garder la page.
+  const emptyPage = !isPartsLoading && ficheSettled && count === 0 && !seoFiche;
   const canonical = `${SITE}/scooter/${scooter.slug}`;
 
-  // JSON-LD Product + AggregateOffer (prix réel issu des pièces compatibles)
-  const productSchema = {
+  // JSON-LD : la trottinette n'est PAS vendue ici → pas de Product/Offer (avant : AggregateOffer au prix de la pièce
+  // la moins chère, présenté comme le prix de la trottinette — audit SEO 24/10). On décrit la liste des pièces vendues.
+  const partsSchema = count > 0 ? {
     "@context": "https://schema.org",
-    "@type": "Product",
-    name: scooter.name,
-    ...(scooter.image_url ? { image: scooter.image_url } : {}),
-    description: scooter.description || seoDescription,
-    sku: scooter.slug,
-    brand: { "@type": "Brand", name: brandName || "Pièces Trottinettes" },
-    ...(lowPrice != null
-      ? {
-          offers: {
-            "@type": "AggregateOffer",
-            priceCurrency: "EUR",
-            lowPrice,
-            offerCount: prices.length,
-            availability: "https://schema.org/InStock",
-            url: canonical,
-          },
-        }
-      : {}),
-  };
+    "@type": "ItemList",
+    name: `Pièces compatibles ${fullModel}`,
+    numberOfItems: count,
+    itemListElement: compatibleParts.slice(0, 50).map((p, i) => ({
+      "@type": "ListItem",
+      position: i + 1,
+      url: `${SITE}/piece/${p.slug}`,
+      name: p.name,
+    })),
+  } : null;
 
   // JSON-LD BreadcrumbList
   const breadcrumbItems = [
@@ -195,7 +195,8 @@ const ScooterDetail = () => {
         description={seoDescription}
         image={scooter.image_url ?? undefined}
         canonical={canonical}
-        schema={seoFiche ? [productSchema, breadcrumbSchema, {
+        noindex={emptyPage}
+        schema={seoFiche ? [...(partsSchema ? [partsSchema] : []), breadcrumbSchema, {
           "@context": "https://schema.org", "@type": "FAQPage",
           mainEntity: seoFiche.faq.map((f) => ({ "@type": "Question", name: f.q, acceptedAnswer: { "@type": "Answer", text: f.a } })),
         }, ...(seoFiche.video ? [{
@@ -206,7 +207,7 @@ const ScooterDetail = () => {
           uploadDate: seoFiche.video.uploadDate,
           embedUrl: `https://www.youtube-nocookie.com/embed/${seoFiche.video.id}`,
           contentUrl: `https://www.youtube.com/watch?v=${seoFiche.video.id}`,
-        }] : [])] : [productSchema, breadcrumbSchema]}
+        }] : [])] : [...(partsSchema ? [partsSchema] : []), breadcrumbSchema]}
       />
       <ShowroomHeader />
 

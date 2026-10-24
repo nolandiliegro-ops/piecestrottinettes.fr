@@ -198,7 +198,7 @@ const Atelier = () => {
     <div className="min-h-screen flex flex-col" style={{ backgroundColor: "#F5F0E8", fontFamily: FONT }}>
       <SEO
         title="L'Atelier : guides, vidéos et questions trottinette"
-        description="Pose ta question à un atelier de réparation de trottinettes électriques à Marseille. Guides d'achat, tutos d'entretien et vidéos rangées par modèle, avec les pièces compatibles."
+        description="Pose ta question à un atelier de réparation de trottinettes à Marseille. Guides d'achat, tutos et vidéos par modèle, avec les pièces compatibles."
         canonical={`${SITE}/atelier`}
         schema={{ "@context": "https://schema.org", "@type": "CollectionPage", name: "L'Atelier — Pièces Trottinettes", url: `${SITE}/atelier` }}
       />

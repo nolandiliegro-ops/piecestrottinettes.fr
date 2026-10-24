@@ -8,6 +8,7 @@ const CGV = () => {
       <SEO
         title="Conditions Générales de Vente | Pièces Trottinettes"
         description="Consultez les conditions générales de vente de piècestrottinettes.fr : commande, livraison, retour, garantie."
+        canonical="https://piecestrottinettes.fr/cgv"
       />
       <Header />
       <main className="pt-24 pb-16 px-4">

@@ -16,8 +16,13 @@ const isFiche = (j: unknown): j is ScooterSeo => {
 };
 
 export function useScooterFiche(slug?: string | null): ScooterSeo | undefined {
+  return useScooterFicheState(slug).fiche;
+}
+
+/** Même fiche + `settled` : vrai quand on SAIT s'il y a une fiche ou non (pour décider d'un noindex sans clignoter). */
+export function useScooterFicheState(slug?: string | null): { fiche: ScooterSeo | undefined; settled: boolean } {
   const local = slug ? SCOOTER_SEO[slug] : undefined;
-  const { data } = useQuery({
+  const { data, isFetched } = useQuery({
     queryKey: ["scooter-fiche", slug],
     enabled: !!slug && !local,
     staleTime: Infinity,
@@ -33,5 +38,5 @@ export function useScooterFiche(slug?: string | null): ScooterSeo | undefined {
       }
     },
   });
-  return local ?? data ?? undefined;
+  return { fiche: local ?? data ?? undefined, settled: !!local || isFetched };
 }
