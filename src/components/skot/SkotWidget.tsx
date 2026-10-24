@@ -3,9 +3,9 @@
 // Téléphone : plein écran à l'ouverture. Ordinateur : panneau de 400 px à droite.
 import { useEffect, useRef, useState, type FormEvent } from "react";
 import { Link, useLocation } from "react-router-dom";
-import { X, Send, Camera, Loader2, ShoppingCart } from "lucide-react";
+import { X, Send, Camera, Loader2, ShoppingCart, ThumbsUp, ThumbsDown } from "lucide-react";
 import SkotAvatar from "./SkotAvatar";
-import { askSkot, compressImage, skotEnabled, skotHiddenOn, skotPageContext, type SkotCard } from "@/lib/skot";
+import { askSkot, compressImage, sendSkotFeedback, skotEnabled, skotHiddenOn, skotPageContext, type SkotCard } from "@/lib/skot";
 import { useCart } from "@/hooks/useCart";
 import { SHOP_OPEN, openPrelaunch } from "@/config/launch";
 import { formatPrice } from "@/lib/formatPrice";
@@ -14,7 +14,7 @@ import { toast } from "sonner";
 const CHAMFER = "polygon(0 0, calc(100% - 12px) 0, 100% 12px, 100% 100%, 0 100%)";
 const CHAMFER_S = "polygon(0 0, calc(100% - 8px) 0, 100% 8px, 100% 100%, 0 100%)";
 
-type Msg = { role: "user" | "skot"; text: string; cards?: SkotCard[]; image?: string };
+type Msg = { role: "user" | "skot"; text: string; cards?: SkotCard[]; image?: string; id?: string | null; conv?: string; fb?: 1 | -1 };
 
 const GREETING: Msg = {
   role: "skot",
@@ -86,11 +86,20 @@ const SkotWidget = () => {
     setPhoto(null);
     setBusy(true);
     const r = await askSkot(t, skotPageContext(pathname), img ? { media_type: img.media_type, data: img.data } : undefined);
-    setMsgs((m) => [...m, { role: "skot", text: r.reply, cards: r.cards }]);
+    setMsgs((m) => [...m, { role: "skot", text: r.reply, cards: r.cards, id: r.message_id, conv: r.conversation_id }]);
     setBusy(false);
   };
 
   const onSubmit = (e: FormEvent) => { e.preventDefault(); void send(input); };
+
+  const rate = async (i: number, value: 1 | -1) => {
+    const m = msgs[i];
+    if (!m?.id || !m.conv || m.fb) return;
+    setMsgs((all) => all.map((x, k) => (k === i ? { ...x, fb: value } : x)));
+    const ok = await sendSkotFeedback(m.id, m.conv, value);
+    if (!ok) setMsgs((all) => all.map((x, k) => (k === i ? { ...x, fb: undefined } : x)));
+    else if (value === -1) toast("Merci, l'atelier va regarder cette réponse.");
+  };
 
   const onPhoto = async (f: File | undefined) => {
     if (!f) return;
@@ -146,6 +155,19 @@ const SkotWidget = () => {
                   <div className="min-w-0 flex-1 space-y-2">
                     <p className="text-sm text-[#1A1A1A] whitespace-pre-wrap border-l-[3px] border-[#4A7C59] pl-2.5">{m.text}</p>
                     {m.cards?.map((c) => <PartCard key={c.slug} card={c} />)}
+                    {m.id && (
+                      <div className="flex items-center gap-1 text-gray-500">
+                        <button type="button" onClick={() => void rate(i, 1)} disabled={!!m.fb} aria-label="Réponse utile" aria-pressed={m.fb === 1}
+                          className={`w-11 h-11 grid place-items-center ${m.fb === 1 ? "text-[#4A7C59]" : "hover:text-[#1A1A1A]"} disabled:cursor-default`}>
+                          <ThumbsUp className="w-4 h-4" />
+                        </button>
+                        <button type="button" onClick={() => void rate(i, -1)} disabled={!!m.fb} aria-label="Réponse pas utile" aria-pressed={m.fb === -1}
+                          className={`w-11 h-11 grid place-items-center ${m.fb === -1 ? "text-[#DC2626]" : "hover:text-[#1A1A1A]"} disabled:cursor-default`}>
+                          <ThumbsDown className="w-4 h-4" />
+                        </button>
+                        {m.fb && <span className="text-sm">{m.fb === 1 ? "Merci !" : "Noté, on corrige."}</span>}
+                      </div>
+                    )}
                   </div>
                 </div>
               ),

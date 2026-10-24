@@ -5,12 +5,16 @@
 // - Historique relu en base, jamais fourni par le client.
 // - Anti-spam en base (trigger sur skot_messages) + plafond de tokens journalier.
 // - Secret DÉDIÉ : SKOT_ANTHROPIC_API_KEY (jamais ANTHROPIC_API_KEY, partagé avec d'autres fonctions).
-// - action "ping" : lecture pure pour smoke-test (version + clé configurée oui/non, rien d'autre).
+// - action "ping" : lecture pure pour smoke-test (version + clé configurée oui/non, taille du corpus).
+// - actions "banc" (admin) et "nuit" (pg_cron, 1 fois/jour) : banc d'essai + mine des conversations — skill skot-amelioration-continue.
+// - action "feedback" : 👍/👎 du client.
 import { serve } from "https://deno.land/std@0.190.0/http/server.ts";
 import { createClient, type SupabaseClient } from "https://esm.sh/@supabase/supabase-js@2.57.2";
 import { classifyCompat, unverifiedLabel, verifiedReason, partDelay } from "../_shared/compat_status.ts";
+import { CORPUS } from "./banc/cas.ts";
+import { runBanc, runNuit } from "./banc/banc.ts";
 
-const VERSION = "chat-skot@2026-10-24d";
+const VERSION = "chat-skot@2026-10-24e";
 const MODEL = "claude-haiku-5-5";
 const MAX_TOOL_ROUNDS = 4;
 const HISTORY_LIMIT = 14;
@@ -128,6 +132,8 @@ interface Ctx {
   cards: Record<string, unknown>[];
   orderFailed: boolean;
   escalated: boolean;
+  /** Banc d'essai : aucune écriture réelle (escalade simulée). */
+  dryRun?: boolean;
 }
 
 const words = (q: string) =>
@@ -296,6 +302,7 @@ async function runTool(name: string, input: Record<string, any>, ctx: Ctx): Prom
       const email = (ctx.userEmail ?? String(input.email ?? "")).trim().toLowerCase();
       if (question.length < 10) return { ok: false, error: "question trop courte" };
       if (!email || !/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(email)) return { ok: false, error: "email manquant : demande-le au client" };
+      if (ctx.dryRun) { ctx.escalated = true; return { ok: true, message: "Question transmise à l'atelier, réponse par email." }; }
       let scooterName: string | null = null;
       if (input.scooter_slug) scooterName = ((await scooterBySlug(db, String(input.scooter_slug))) as any)?.name ?? null;
       const ipAtelier = ctx.ip ? await sha256Hex(ctx.ip + "pt-atelier") : null;
@@ -338,6 +345,135 @@ async function pageContext(db: SupabaseClient, page: { type?: string; slug?: str
   return lines.join("\n");
 }
 
+// ───────────────────────── Appel Claude (avec reprise sur 429 / 529) ─────────────────────────
+export async function callClaude(apiKey: string, payload: Record<string, unknown>): Promise<{ ok: true; out: any } | { ok: false; status: number; text: string }> {
+  for (let attempt = 0; attempt < 3; attempt++) {
+    const res = await fetch("https://api.anthropic.com/v1/messages", {
+      method: "POST",
+      headers: { "x-api-key": apiKey, "anthropic-version": "2023-06-01", "content-type": "application/json" },
+      body: JSON.stringify(payload),
+    });
+    if (res.ok) return { ok: true, out: await res.json() };
+    const text = await res.text();
+    if ((res.status === 429 || res.status === 529) && attempt < 2) {
+      const wait = Math.min(20, Number(res.headers.get("retry-after") ?? "0") || 4 * (attempt + 1));
+      await new Promise((r) => setTimeout(r, wait * 1000));
+      continue;
+    }
+    return { ok: false, status: res.status, text };
+  }
+  return { ok: false, status: 0, text: "retries" };
+}
+
+// ───────────────────────── Cœur d'une conversation (site ET banc) ─────────────────────────
+export interface ConverseInput {
+  db: SupabaseClient;
+  apiKey: string;
+  message: string;
+  image?: { media_type?: string; data?: string };
+  page?: { type: string; slug: string };
+  conversationId: string;
+  history: { role: string; content: string }[];
+  userId: string | null;
+  userEmail: string | null;
+  ipHash: string | null;
+  ip: string;
+  dryRun?: boolean;
+}
+export interface ConverseOutput {
+  ok: boolean;
+  error?: string;
+  reply: string;
+  cards: any[];
+  toolLog: { name: string; input: unknown }[];
+  toolResults: { name: string; result: unknown }[];
+  escalated: boolean;
+  orderFailed: boolean;
+  tokensIn: number; tokensOut: number; cacheRead: number; cacheWrite: number;
+}
+
+export async function converse(inp: ConverseInput): Promise<ConverseOutput> {
+  const ctx: Ctx = { db: inp.db, userId: inp.userId, userEmail: inp.userEmail, ipHash: inp.ipHash, ip: inp.ip, cards: [], orderFailed: false, escalated: false, dryRun: inp.dryRun };
+  const contextText = await pageContext(inp.db, inp.page, inp.userId);
+  const messages: any[] = inp.history.map((m) => ({ role: m.role, content: m.content }));
+  while (messages.length && messages[0].role !== "user") messages.shift();
+  const userContent: any[] = [];
+  if (inp.image?.data) userContent.push({ type: "image", source: { type: "base64", media_type: inp.image.media_type, data: inp.image.data } });
+  userContent.push({ type: "text", text: inp.message || "Voilà une photo, tu peux m'aider ?" });
+  messages.push({ role: "user", content: userContent });
+
+  const o: ConverseOutput = { ok: true, reply: "", cards: [], toolLog: [], toolResults: [], escalated: false, orderFailed: false, tokensIn: 0, tokensOut: 0, cacheRead: 0, cacheWrite: 0 };
+  try {
+    for (let round = 0; round <= MAX_TOOL_ROUNDS; round++) {
+      const r = await callClaude(inp.apiKey, {
+        model: MODEL,
+        max_tokens: 1000,
+        system: [
+          { type: "text", text: SYSTEM_PROMPT, cache_control: { type: "ephemeral" } },
+          { type: "text", text: `CONTEXTE DE CETTE VISITE (lu en base) :\n${contextText}\nDate : ${new Date().toISOString().slice(0, 10)}.` },
+        ],
+        tools: TOOLS,
+        ...(round >= MAX_TOOL_ROUNDS ? { tool_choice: { type: "none" } } : {}),
+        messages,
+      });
+      if (!r.ok) {
+        console.error("[chat-skot] anthropic", r.status, r.text.slice(0, 300));
+        return { ...o, ok: false, error: "UPSTREAM", reply: "Petite crevaison de mon côté… Réessaie dans un instant, ou pose ta question à l'atelier : piecestrottinettes.fr/atelier" };
+      }
+      const out = r.out;
+      o.tokensIn += out.usage?.input_tokens ?? 0;
+      o.cacheRead += out.usage?.cache_read_input_tokens ?? 0;
+      o.cacheWrite += out.usage?.cache_creation_input_tokens ?? 0;
+      o.tokensOut += out.usage?.output_tokens ?? 0;
+      const content = out.content ?? [];
+      messages.push({ role: "assistant", content });
+      const uses = content.filter((c: any) => c.type === "tool_use");
+      if (out.stop_reason !== "tool_use" || !uses.length) {
+        o.reply = content.filter((c: any) => c.type === "text").map((c: any) => c.text).join("\n").trim();
+        if (out.stop_reason === "max_tokens") console.error("[chat-skot] reponse coupee (max_tokens)");
+        break;
+      }
+      const results = [];
+      for (const u of uses) {
+        o.toolLog.push({ name: u.name, input: u.name === "get_order_status" || u.name === "escalate_to_human" ? "(masqué)" : u.input });
+        let res: unknown;
+        try { res = await runTool(u.name, u.input ?? {}, ctx); } catch (e) { console.error("[chat-skot] tool", u.name, e); res = { error: "outil indisponible" }; }
+        o.toolResults.push({ name: u.name, result: res });
+        results.push({ type: "tool_result", tool_use_id: u.id, content: JSON.stringify(res).slice(0, 12000) });
+      }
+      messages.push({ role: "user", content: results });
+    }
+  } catch (e) {
+    console.error("[chat-skot] loop", e);
+    return { ...o, ok: false, error: "ERROR", reply: "Petite crevaison de mon côté… Réessaie dans un instant." };
+  }
+  if (!o.reply) o.reply = "Je sèche sur celle-là ! Je peux transmettre ta question à l'atelier si tu me laisses ton email.";
+
+  // Cartes — règles de la recette du 24/10 :
+  // dédoublonnage par slug (la version avec statut ✓/◐ gagne), « citée » = nom complet présent dans la réponse,
+  // une recherche brute sans statut n'est jamais affichée si elle n'est pas citée, et disparaît dès qu'une carte a un statut.
+  const bySlug = new Map<string, any>();
+  for (const c of ctx.cards as any[]) { const prev = bySlug.get(c.slug); if (!prev || (!prev.compat && c.compat)) bySlug.set(c.slug, c); }
+  const cards = [...bySlug.values()];
+  const low = o.reply.toLowerCase();
+  const cited = cards.filter((c: any) => low.includes(String(c.name).toLowerCase()));
+  const pool = cited.length ? cited : cards.filter((c: any) => c.compat);
+  o.cards = (pool.some((c: any) => c.compat) ? pool.filter((c: any) => c.compat) : pool).slice(0, 6);
+  o.escalated = ctx.escalated;
+  o.orderFailed = ctx.orderFailed;
+  return o;
+}
+
+async function adminFromRequest(db: SupabaseClient, req: Request) {
+  const t = (req.headers.get("Authorization") ?? "").replace("Bearer ", "");
+  if (!t || t.split(".").length !== 3) return null;
+  const { data: u } = await db.auth.getUser(t);
+  const uid = u?.user?.id ?? null;
+  if (!uid) return null;
+  const { data: adm } = await db.from("user_roles").select("id").eq("user_id", uid).eq("role", "admin").maybeSingle();
+  return adm ? { id: uid, email: u!.user!.email ?? null } : null;
+}
+
 // ───────────────────────── Serveur ─────────────────────────
 serve(async (req) => {
   if (req.method === "OPTIONS") return new Response(null, { headers: corsHeaders });
@@ -346,24 +482,54 @@ serve(async (req) => {
   const apiKey = Deno.env.get("SKOT_ANTHROPIC_API_KEY");
   let body: any = {};
   try { body = await req.json(); } catch { return json({ ok: false, error: "BAD_JSON" }, 400); }
-  if (body?.action === "ping") return json({ ok: true, version: VERSION, configured: !!apiKey, model: MODEL });
+  if (body?.action === "ping") return json({ ok: true, version: VERSION, configured: !!apiKey, model: MODEL, corpus: CORPUS.length });
 
   const db = createClient(Deno.env.get("SUPABASE_URL")!, Deno.env.get("SUPABASE_SERVICE_ROLE_KEY")!);
 
-  // action "tool" (ADMIN uniquement) : exécute un outil seul, sans appeler Claude — recette des outils sans clé API.
+  // action "tool" (ADMIN) : exécute un outil seul, sans appeler Claude.
   if (body?.action === "tool") {
-    const t = (req.headers.get("Authorization") ?? "").replace("Bearer ", "");
-    const { data: u } = t ? await db.auth.getUser(t) : { data: null };
-    const uid = u?.user?.id ?? null;
-    const { data: adm } = uid ? await db.from("user_roles").select("id").eq("user_id", uid).eq("role", "admin").maybeSingle() : { data: null };
+    const adm = await adminFromRequest(db, req);
     if (!adm) return json({ ok: false, error: "FORBIDDEN" }, 403);
     if (body.name === "escalate_to_human") return json({ ok: false, error: "écriture non testable par ce chemin" }, 400);
-    const tctx: Ctx = { db, userId: uid, userEmail: u?.user?.email ?? null, ipHash: null, ip: "", cards: [], orderFailed: false, escalated: false };
+    const tctx: Ctx = { db, userId: adm.id, userEmail: adm.email, ipHash: null, ip: "", cards: [], orderFailed: false, escalated: false, dryRun: true };
     try {
       return json({ ok: true, result: await runTool(String(body.name), body.input ?? {}, tctx), cards: tctx.cards.length });
     } catch (e) {
       return json({ ok: false, error: e instanceof Error ? e.message : "ERROR" }, 500);
     }
+  }
+
+  // action "banc" (ADMIN) : rejoue le corpus (ou body.ids) dans la vraie chaîne, juge, enregistre un run.
+  if (body?.action === "banc") {
+    const adm = await adminFromRequest(db, req);
+    if (!adm) return json({ ok: false, error: "FORBIDDEN" }, 403);
+    if (!apiKey) return json({ ok: false, error: "NOT_CONFIGURED" }, 503);
+    const ids = Array.isArray(body.ids) ? body.ids.map(String) : null;
+    const run = await runBanc({ db, apiKey, converse, callClaude, admin: adm, ids, kind: "banc", version: VERSION, judgeRules: SYSTEM_PROMPT });
+    return json(run, run.ok ? 200 : 500);
+  }
+
+  // action "nuit" (planification pg_cron, sans authentification) : une seule fois par jour, garantie par un index unique en base.
+  if (body?.action === "nuit") {
+    if (!apiKey) return json({ ok: false, error: "NOT_CONFIGURED" }, 503);
+    const run = await runNuit({ db, apiKey, converse, callClaude, version: VERSION, judgeRules: SYSTEM_PROMPT });
+    return json(run, run.ok ? 200 : (run.error === "ALREADY_DONE" ? 409 : 500));
+  }
+
+  // action "feedback" : 👍 / 👎 du client sur une réponse de SKOT.
+  if (body?.action === "feedback") {
+    const mid = String(body.message_id ?? ""), conv = String(body.conversation_id ?? "");
+    const value = Number(body.value);
+    if (!/^[0-9a-f-]{36}$/i.test(mid) || !/^[0-9a-f-]{36}$/i.test(conv) || ![1, -1].includes(value)) return json({ ok: false, error: "BAD_INPUT" }, 400);
+    const ip = (req.headers.get("x-forwarded-for") ?? "").split(",")[0].trim();
+    const ipHash = ip ? await sha256Hex(ip + "pt-skot") : null;
+    const { data: row } = await db.from("skot_messages").select("id, conversation_id, role, ip_hash, content").eq("id", mid).maybeSingle();
+    if (!row || (row as any).role !== "assistant" || (row as any).conversation_id !== conv || (row as any).ip_hash !== ipHash) return json({ ok: false, error: "NOT_FOUND" }, 404);
+    await db.from("skot_messages").update({ feedback: value, feedback_at: new Date().toISOString() }).eq("id", mid);
+    if (value === -1) {
+      await db.from("skot_flags").upsert({ conversation_id: conv, message_id: mid, type: "client_pouce_bas", source: "client", extrait: String((row as any).content).slice(0, 300) }, { onConflict: "message_id,type", ignoreDuplicates: true });
+    }
+    return json({ ok: true });
   }
 
   const message = String(body?.message ?? "").trim();
@@ -393,7 +559,7 @@ serve(async (req) => {
   if (past?.length && !past.some((m: any) => (ipHash && m.ip_hash === ipHash) || (userId && m.user_id === userId))) {
     conversationId = crypto.randomUUID();
   }
-  const history = (past ?? []).filter(() => true).reverse();
+  const history = (past ?? []).slice().reverse().map((m: any) => ({ role: m.role, content: m.content }));
 
   const page = body?.page_context as { type?: string; slug?: string } | undefined;
   const safePage = page && ["piece", "scooter", "garage", "autre"].includes(String(page.type)) ? { type: String(page.type), slug: String(page.slug ?? "").slice(0, 120) } : undefined;
@@ -411,97 +577,30 @@ serve(async (req) => {
     return json({ ok: false, error: "DB" }, 500);
   }
 
-  const fallback = (reply: string, error: string) => json({ ok: false, error, conversation_id: conversationId, reply, cards: [] }, 200);
+  // Toute réponse de repli est AUSSI enregistrée (model = "fallback:<code>") : la mine de nuit les compte.
+  const fallback = async (reply: string, error: string) => {
+    await db.from("skot_messages").insert({ conversation_id: conversationId, role: "assistant", content: reply, ip_hash: ipHash, user_id: userId, model: `fallback:${error}` });
+    return json({ ok: false, error, conversation_id: conversationId, reply, cards: [] }, 200);
+  };
   if (!apiKey) return fallback("Je chauffe encore mes roulements, je suis en rodage ! En attendant, pose ta question à l'atelier : piecestrottinettes.fr/atelier", "NOT_CONFIGURED");
 
-  // Plafond journalier global
+  // Plafond journalier global (les messages du banc n'y comptent pas)
   const dayStart = new Date(); dayStart.setUTCHours(0, 0, 0, 0);
-  const { data: usage } = await db.from("skot_messages").select("tokens_in, tokens_out").eq("role", "assistant").gte("created_at", dayStart.toISOString()).limit(5000);
+  const { data: usage } = await db.from("skot_messages").select("tokens_in, tokens_out").eq("role", "assistant").gte("created_at", dayStart.toISOString())
+    .or("page_type.is.null,page_type.neq.banc").limit(5000);
   const used = (usage ?? []).reduce((s: number, r: any) => s + (r.tokens_in ?? 0) + (r.tokens_out ?? 0), 0);
   if (used > DAILY_TOKEN_CAP) return fallback("Gros rush aujourd'hui, je passe la main à l'atelier : pose ta question ici, ils te répondent par mail → piecestrottinettes.fr/atelier", "DAILY_CAP");
 
-  const ctx: Ctx = { db, userId, userEmail, ipHash, ip, cards: [], orderFailed: false, escalated: false };
-  const contextText = await pageContext(db, safePage, userId);
+  const r = await converse({ db, apiKey, message, image, page: safePage, conversationId, history, userId, userEmail, ipHash, ip });
+  if (!r.ok) return fallback(r.reply, r.error ?? "ERROR");
 
-  const messages: any[] = history.map((m: any) => ({ role: m.role, content: m.content }));
-  // l'historique doit commencer par un message client
-  while (messages.length && messages[0].role !== "user") messages.shift();
-  const userContent: any[] = [];
-  if (image?.data) userContent.push({ type: "image", source: { type: "base64", media_type: image.media_type, data: image.data } });
-  userContent.push({ type: "text", text: message || "Voilà une photo, tu peux m'aider ?" });
-  messages.push({ role: "user", content: userContent });
+  if (r.orderFailed && userRow?.id) await db.from("skot_messages").update({ order_lookup_failed: true }).eq("id", userRow.id);
+  const { data: aRow } = await db.from("skot_messages").insert({
+    conversation_id: conversationId, role: "assistant", content: maskOrder(maskEmail(r.reply)).slice(0, 6000),
+    tool_calls: r.toolLog.length ? r.toolLog : null, ip_hash: ipHash, user_id: userId,
+    tokens_in: r.tokensIn + r.cacheRead + r.cacheWrite, tokens_out: r.tokensOut, tokens_cache_read: r.cacheRead, tokens_cache_write: r.cacheWrite,
+    model: MODEL, escalated: r.escalated,
+  }).select("id").single();
 
-  let tokensIn = 0, tokensOut = 0;
-  let reply = "";
-  const toolLog: { name: string; input: unknown }[] = [];
-  try {
-    for (let round = 0; round <= MAX_TOOL_ROUNDS; round++) {
-      const res = await fetch("https://api.anthropic.com/v1/messages", {
-        method: "POST",
-        headers: { "x-api-key": apiKey, "anthropic-version": "2023-06-01", "content-type": "application/json" },
-        body: JSON.stringify({
-          model: MODEL,
-          max_tokens: 1000,
-          system: [
-            { type: "text", text: SYSTEM_PROMPT, cache_control: { type: "ephemeral" } },
-            { type: "text", text: `CONTEXTE DE CETTE VISITE (lu en base) :\n${contextText}\nDate : ${new Date().toISOString().slice(0, 10)}.` },
-          ],
-          tools: TOOLS,
-          // Dernier tour : plus d'outil, il doit répondre avec ce qu'il a
-          ...(round >= MAX_TOOL_ROUNDS ? { tool_choice: { type: "none" } } : {}),
-          messages,
-        }),
-      });
-      if (!res.ok) {
-        const t = await res.text();
-        console.error("[chat-skot] anthropic", res.status, t.slice(0, 300));
-        return fallback("Petite crevaison de mon côté… Réessaie dans un instant, ou pose ta question à l'atelier : piecestrottinettes.fr/atelier", "UPSTREAM");
-      }
-      const out = await res.json();
-      tokensIn += (out.usage?.input_tokens ?? 0) + (out.usage?.cache_read_input_tokens ?? 0) + (out.usage?.cache_creation_input_tokens ?? 0);
-      tokensOut += out.usage?.output_tokens ?? 0;
-      const content = out.content ?? [];
-      messages.push({ role: "assistant", content });
-      const uses = content.filter((c: any) => c.type === "tool_use");
-      if (out.stop_reason !== "tool_use" || !uses.length) {
-        reply = content.filter((c: any) => c.type === "text").map((c: any) => c.text).join("\n").trim();
-        break;
-      }
-      const results = [];
-      for (const u of uses) {
-        toolLog.push({ name: u.name, input: u.name === "get_order_status" || u.name === "escalate_to_human" ? "(masqué)" : u.input });
-        let r: unknown;
-        try { r = await runTool(u.name, u.input ?? {}, ctx); } catch (e) { console.error("[chat-skot] tool", u.name, e); r = { error: "outil indisponible" }; }
-        results.push({ type: "tool_result", tool_use_id: u.id, content: JSON.stringify(r).slice(0, 12000) });
-      }
-      messages.push({ role: "user", content: results });
-    }
-  } catch (e) {
-    console.error("[chat-skot] loop", e);
-    return fallback("Petite crevaison de mon côté… Réessaie dans un instant.", "ERROR");
-  }
-  if (!reply) reply = "Je sèche sur celle-là ! Je peux transmettre ta question à l'atelier si tu me laisses ton email.";
-
-  // Cartes : dédoublonnées, 6 max ; on ne montre que les pièces citées dans la réponse si possible
-  // Dédoublonnage par slug : la version qui porte un statut de compat gagne (recherche brute puis parts_for_scooter = même pièce).
-  const bySlug = new Map<string, any>();
-  for (const c of ctx.cards as any[]) { const prev = bySlug.get(c.slug); if (!prev || (!prev.compat && c.compat)) bySlug.set(c.slug, c); }
-  const cards = [...bySlug.values()];
-  // « Citée » = nom complet présent dans la réponse (un préfixe de 18 caractères attrapait toutes les « Chambre à air 8,5x… »).
-  const low = reply.toLowerCase();
-  const cited = cards.filter((c: any) => low.includes(String(c.name).toLowerCase()));
-  // Recette 24/10 : une recherche brute (sans compat) non citée dans la réponse ne s'affiche jamais en carte —
-  // sinon SKOT dit « je ne peux pas confirmer » au-dessus de 6 plaquettes au hasard.
-  // Quand des cartes portent un statut de compat (question sur une trottinette), les résultats de recherche brute sans statut sont retirés.
-  const pool = cited.length ? cited : cards.filter((c: any) => c.compat);
-  const shown = (pool.some((c: any) => c.compat) ? pool.filter((c: any) => c.compat) : pool).slice(0, 6);
-
-  if (ctx.orderFailed && userRow?.id) await db.from("skot_messages").update({ order_lookup_failed: true }).eq("id", userRow.id);
-  await db.from("skot_messages").insert({
-    conversation_id: conversationId, role: "assistant", content: maskOrder(maskEmail(reply)).slice(0, 6000),
-    tool_calls: toolLog.length ? toolLog : null, ip_hash: ipHash, user_id: userId,
-    tokens_in: tokensIn, tokens_out: tokensOut, model: MODEL, escalated: ctx.escalated,
-  });
-
-  return json({ ok: true, conversation_id: conversationId, reply, cards: shown, escalated: ctx.escalated });
+  return json({ ok: true, conversation_id: conversationId, message_id: aRow?.id ?? null, reply: r.reply, cards: r.cards, escalated: r.escalated });
 });

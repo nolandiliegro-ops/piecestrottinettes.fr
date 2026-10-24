@@ -53,6 +53,8 @@ export interface SkotReply {
   reply: string;
   cards: SkotCard[];
   conversation_id?: string;
+  /** Id de la réponse en base (sert au 👍/👎). */
+  message_id?: string | null;
   error?: string;
 }
 
@@ -77,8 +79,18 @@ export async function askSkot(message: string, page: SkotPage, image?: { media_t
     ok: !!payload?.ok,
     reply: payload?.reply || "Petite crevaison de mon côté… Réessaie dans un instant.",
     cards: Array.isArray(payload?.cards) ? payload!.cards : [],
+    conversation_id: payload?.conversation_id,
+    message_id: payload?.message_id ?? null,
     error: payload?.error,
   };
+}
+
+/** 👍 / 👎 sur une réponse de SKOT : un 👎 crée un signal que la boucle d'amélioration traite (skill skot-amelioration-continue). */
+export async function sendSkotFeedback(messageId: string, conversationId: string, value: 1 | -1): Promise<boolean> {
+  const { data, error } = await supabase.functions.invoke("chat-skot", {
+    body: { action: "feedback", message_id: messageId, conversation_id: conversationId, value },
+  });
+  return !error && !!data?.ok;
 }
 
 /** Réduit une photo à 1024 px max en JPEG avant envoi (poids et coût). */
