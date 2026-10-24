@@ -209,7 +209,7 @@ const PartCardAtelier = ({ part, look, position, hideCompat = false, className }
           {fav}
           <div className="px-3 pb-3">
             {!badgeLook && compat && <div className="mb-2 relative z-10">{compat}</div>}
-            {badgeLook && (showCompat || showMaybe) && <div className="mb-2 relative z-10 flex">{<Badge look={badgeLook} ok={showCompat} model={model} full={`${brand} ${model}`.trim()} />}</div>}
+            {badgeLook && (showCompat || showMaybe) && <div className="mb-2 relative z-10 flex">{badgeLook === 6 && showCompat ? compat : <Badge look={badgeLook} ok={showCompat} model={model} full={`${brand} ${model}`.trim()} />}</div>}
             {eyebrow}
             <div className="mt-1">{name}</div>
             <div className="mt-1.5 flex items-end justify-between gap-2 flex-wrap">{priceEl()}{stock}</div>

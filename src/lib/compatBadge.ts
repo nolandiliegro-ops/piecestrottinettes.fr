@@ -13,18 +13,20 @@
  * 3 MÉDAILLON   · rond vert coché sur le bord de la photo + « Compatible » en vert à côté du prix
  * 4 BANDEAU     · bande pleine largeur sous la photo, beige foncé : « ✓ Va sur ta Xiaomi Mi M365 »
  * 5 SCEAU       · tampon « Vérifié atelier » contour vert, légèrement incliné, dans le coin de la photo
+ * 6 MARQUE      · RETENU (Nolan, 24/10 soir) : la pastille d'origine à la couleur de la marque, juste le modèle
+ *               (« Mi 3 » en rouge pour Xiaomi), désormais visible aussi en vue filtrée.
  */
-export type BadgeLook = 1 | 2 | 3 | 4 | 5;
+export type BadgeLook = 1 | 2 | 3 | 4 | 5 | 6;
 
 /** Variante en prod sans paramètre (null tant que Nolan n'a pas choisi). */
-export const DEFAULT_BADGE: BadgeLook | null = null;
+export const DEFAULT_BADGE: BadgeLook | null = 6;
 
 export const readBadgeLook = (): BadgeLook | null => {
   try {
     const v = new URLSearchParams(window.location.search).get("badge");
     if (v === null) return DEFAULT_BADGE;
     const n = Number(v);
-    return n >= 1 && n <= 5 ? (n as BadgeLook) : null;
+    return n >= 1 && n <= 6 ? (n as BadgeLook) : null;
   } catch {
     return DEFAULT_BADGE;
   }
