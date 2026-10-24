@@ -299,6 +299,78 @@ export type Database = {
         }
         Relationships: []
       }
+      _backup_affiliate_programs_20261024c: {
+        Row: {
+          canal: string | null
+          code_client: string | null
+          code_ref: string | null
+          commission: string | null
+          contact_email: string | null
+          contact_nom: string | null
+          created_at: string | null
+          id: string | null
+          id_marchand: string | null
+          lien_base: string | null
+          lien_motif: string | null
+          marque: string | null
+          notes: string | null
+          plateforme: string | null
+          priorite: string | null
+          statut: string | null
+          type: string | null
+          updated_at: string | null
+          url_inscription: string | null
+          url_paiements: string | null
+          url_tableau_de_bord: string | null
+        }
+        Insert: {
+          canal?: string | null
+          code_client?: string | null
+          code_ref?: string | null
+          commission?: string | null
+          contact_email?: string | null
+          contact_nom?: string | null
+          created_at?: string | null
+          id?: string | null
+          id_marchand?: string | null
+          lien_base?: string | null
+          lien_motif?: string | null
+          marque?: string | null
+          notes?: string | null
+          plateforme?: string | null
+          priorite?: string | null
+          statut?: string | null
+          type?: string | null
+          updated_at?: string | null
+          url_inscription?: string | null
+          url_paiements?: string | null
+          url_tableau_de_bord?: string | null
+        }
+        Update: {
+          canal?: string | null
+          code_client?: string | null
+          code_ref?: string | null
+          commission?: string | null
+          contact_email?: string | null
+          contact_nom?: string | null
+          created_at?: string | null
+          id?: string | null
+          id_marchand?: string | null
+          lien_base?: string | null
+          lien_motif?: string | null
+          marque?: string | null
+          notes?: string | null
+          plateforme?: string | null
+          priorite?: string | null
+          statut?: string | null
+          type?: string | null
+          updated_at?: string | null
+          url_inscription?: string | null
+          url_paiements?: string | null
+          url_tableau_de_bord?: string | null
+        }
+        Relationships: []
+      }
       _backup_affiliate_teverun_20261021: {
         Row: {
           affiliate_link: string | null
@@ -7296,6 +7368,63 @@ export type Database = {
           seo_name?: string | null
           subtitle?: string | null
           updated_at?: string
+        }
+        Relationships: []
+      }
+      skot_messages: {
+        Row: {
+          content: string
+          conversation_id: string
+          created_at: string
+          escalated: boolean
+          has_image: boolean
+          id: string
+          ip_hash: string | null
+          model: string | null
+          order_lookup_failed: boolean
+          page_slug: string | null
+          page_type: string | null
+          role: string
+          tokens_in: number | null
+          tokens_out: number | null
+          tool_calls: Json | null
+          user_id: string | null
+        }
+        Insert: {
+          content: string
+          conversation_id: string
+          created_at?: string
+          escalated?: boolean
+          has_image?: boolean
+          id?: string
+          ip_hash?: string | null
+          model?: string | null
+          order_lookup_failed?: boolean
+          page_slug?: string | null
+          page_type?: string | null
+          role: string
+          tokens_in?: number | null
+          tokens_out?: number | null
+          tool_calls?: Json | null
+          user_id?: string | null
+        }
+        Update: {
+          content?: string
+          conversation_id?: string
+          created_at?: string
+          escalated?: boolean
+          has_image?: boolean
+          id?: string
+          ip_hash?: string | null
+          model?: string | null
+          order_lookup_failed?: boolean
+          page_slug?: string | null
+          page_type?: string | null
+          role?: string
+          tokens_in?: number | null
+          tokens_out?: number | null
+          tool_calls?: Json | null
+          user_id?: string | null
         }
         Relationships: []
       }
