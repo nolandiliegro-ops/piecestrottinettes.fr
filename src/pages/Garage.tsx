@@ -139,6 +139,7 @@ const Garage = () => {
     <div className="relative min-h-screen flex flex-col overflow-x-hidden pb-24 md:pb-0">
       <GarageBackground />
       <SEO
+        noindex
         title="Mon Garage"
         description="Ton cockpit personnel : suivi de maintenance, pièces compatibles, tutos et historique de modifications pour ta trottinette électrique."
       />

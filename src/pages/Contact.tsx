@@ -69,8 +69,9 @@ const Contact = () => {
   return (
     <div className="min-h-screen bg-background">
       <SEO
-        title="Contact | Pièces Trottinettes"
+        title="Contact : une question sur une pièce trottinette ?"
         description="Contactez l'équipe piècestrottinettes.fr pour toute question sur vos pièces détachées de trottinette électrique."
+        canonical="https://piecestrottinettes.fr/contact"
       />
       <Header />
       <main className="pt-24 pb-16 px-4">

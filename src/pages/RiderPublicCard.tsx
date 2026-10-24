@@ -80,6 +80,9 @@ const RiderPublicCard = () => {
         <meta property="og:title" content={`Le garage de ${name}`} />
         <meta property="og:description" content={`${machines.length} machine${machines.length > 1 ? "s" : ""} · les pièces qui vont dessus.`} />
         <meta property="og:type" content="profile" />
+        {username && <link rel="canonical" href={`https://piecestrottinettes.fr/rider/${encodeURIComponent(username)}`} />}
+        {/* Garage vide ou introuvable : la page répond 200 → noindex (audit SEO 24/10). */}
+        {!isLoading && (!data || machines.length === 0) && <meta name="robots" content="noindex, nofollow" />}
         <meta name="twitter:card" content="summary_large_image" />
       </Helmet>
       <Header />

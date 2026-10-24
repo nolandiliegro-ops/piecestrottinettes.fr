@@ -5,6 +5,7 @@ import Footer from "@/components/Footer";
 import { BRAND_ASSETS_FALLBACK } from "@/config/brand";
 import { useBrandData, useBrandsNavigation } from "@/hooks/useBrandData";
 import { buildBrandJsonLd } from "@/lib/brandSchema";
+import { clampDescription, DESC_MAX } from "@/lib/seoText";
 import BrandHeader from "@/components/brand/BrandHeader";
 import BrandHero from "@/components/brand/BrandHero";
 import BrandExpertNote from "@/components/brand/BrandExpertNote";
@@ -47,6 +48,8 @@ const Brand = () => {
   if (!brand) {
     return (
       <div className="min-h-[100dvh] flex flex-col" style={{ backgroundColor: "#F5F0E8" }}>
+        {/* SPA : la page répond 200 → noindex pour ne pas laisser Google indexer une soft 404 (audit SEO 24/10). */}
+        <SEO noindex title="Marque introuvable" description="Cette marque n'existe pas ou n'est plus référencée." />
         <BrandHeader />
         <main className="flex-1 flex items-center justify-center px-4 pt-20">
           <div className="text-center">
@@ -90,7 +93,13 @@ const Brand = () => {
 
   // 13/10 : titre calé sur la requête « pièces détachées <marque> » (avant : « Histoire, modèles & pièces »).
   const seoTitle = `Pièces détachées ${brand.name} : pneus, freins, chargeurs`;
-  const seoDescription = `Pièces détachées ${brand.name} compatibles : pneus, chambres à air, plaquettes, chargeurs pour ${models.length} modèle${models.length > 1 ? "s" : ""}${brand.tagline ? `. ${brand.tagline}` : ""}. L'avis expert piecestrottinettes.fr.`;
+  // 24/10 (audit SEO) : 47/50 descriptions dépassaient 160 → on retire d'abord la signature, puis l'accroche, avant de couper.
+  const descBase = `Pièces détachées ${brand.name} compatibles : pneus, chambres à air, plaquettes, chargeurs pour ${models.length} modèle${models.length > 1 ? "s" : ""}`;
+  const seoDescription = [
+    `${descBase}${brand.tagline ? `. ${brand.tagline}` : ""}. L'avis expert piecestrottinettes.fr.`,
+    `${descBase}${brand.tagline ? `. ${brand.tagline}` : ""}.`,
+    `${descBase}. L'avis expert piecestrottinettes.fr.`,
+  ].find((d) => d.length <= DESC_MAX) ?? clampDescription(`${descBase}.`);
   const canonical = `https://piecestrottinettes.fr/marque/${brand.slug}`;
   const prevUrl = prev ? `https://piecestrottinettes.fr/marque/${prev.slug}` : undefined;
   const nextUrl = next ? `https://piecestrottinettes.fr/marque/${next.slug}` : undefined;

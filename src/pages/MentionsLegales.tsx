@@ -8,6 +8,7 @@ const MentionsLegales = () => {
       <SEO
         title="Mentions Légales | Pièces Trottinettes"
         description="Mentions légales du site piècestrottinettes.fr : éditeur, hébergeur, propriété intellectuelle, données personnelles."
+        canonical="https://piecestrottinettes.fr/mentions-legales"
       />
       <Header />
       <main className="pt-24 pb-16 px-4">

@@ -5,6 +5,7 @@
  * (page blanche « reading 'default' » au premier essai).
  */
 import type { PartDetail, CompatibleScooter } from "@/hooks/usePartDetail";
+import { fitTitle, clampDescription, TITLE_MAX } from "@/lib/seoText";
 
 export const fullName = (s: CompatibleScooter) => {
   const b = s.brand?.name?.trim() ?? "";
@@ -52,10 +53,21 @@ export const matchBasis = (part: PartDetail) => {
 
 /** Nom propre pour un titre : sans parenthèses, sans flèches ni émojis, espaces resserrés. */
 const cleanName = (n: string) => n.replace(/\([^)]*\)/g, " ").replace(/\s*[\u2794\u27A1\u2B95]\uFE0F?\s*/g, " → ").replace(/[\u2190-\u2191\u2193-\u21FF\u2700-\u27BF\u2B00-\u2BFF\uFE0F\u{1F000}-\u{1FAFF}]/gu, " ").replace(/\s+/g, " ").replace(/\s+([,.])/g, "$1").trim();
-const cut = (t: string, max: number) => {
-  if (t.length <= max) return t;
-  const c = t.slice(0, max - 1);
-  return `${c.slice(0, c.lastIndexOf(" ") > max * 0.6 ? c.lastIndexOf(" ") : c.length).replace(/[,;:\s–-]+$/, "")}…`;
+
+/**
+ * Nom pour le title Google (audit SEO 24/10) : les parenthèses restent en texte (connecteur, cote, modèle…), sauf
+ * « (2 couleurs) » ; la couleur passe en fin de nom. Avant, toutes les parenthèses sautaient : « (Noir) »/« (Rouge) »
+ * et « (connecteur GX16-3p) »/« (connecteur LP16-3) » donnaient le même titre (7 groupes, 17 fiches).
+ */
+const COLOR = /^(noir|rouge|bleu|vert|blanc|jaune|orange|gris|violet|rose|dor[ée]|argent)$/i;
+export const titleName = (n: string) => {
+  let color = "";
+  const flat = n.replace(/\(([^)]*)\)/g, (_, raw: string) => {
+    const p = raw.trim();
+    if (COLOR.test(p)) { color = p; return " "; }
+    return /^\d+\s*couleurs?$/i.test(p) ? " " : ` ${p} `;
+  });
+  return cleanName(color ? `${flat} ${color}` : flat);
 };
 
 /**
@@ -68,17 +80,18 @@ export const seoMeta = (part: PartDetail, scooters: CompatibleScooter[]): { titl
   if (!verified.length) return null;
   const groups = groupByBrand(verified);
   const top = topModels(groups, 3);
-  const name = cleanName(part.name);
-  // Nom court : on ajoute les modèles les plus courts qui tiennent ; nom long (il cite souvent déjà des modèles) : coupé seul.
+  const name = titleName(part.name);
+  // Nom court : on ajoute les modèles les plus courts qui tiennent ; nom long (il cite souvent déjà des modèles) : raccourci seul.
+  // Plafond 60 (Google tronque au-delà ; c'était 66 avant l'audit SEO du 24/10).
   const short = [...top].sort((a, b) => a.length - b.length);
-  let title = cut(name, 66);
-  if (name.length <= 48) {
+  let title = fitTitle(name);
+  if (name.length <= 44) {
     title = name;
-    for (const m of short) { const t = `${title}${title === name ? " – " : ", "}${m}`; if (t.length <= 66) title = t; }
+    for (const m of short) { const t = `${title}${title === name ? " – " : ", "}${m}`; if (t.length <= TITLE_MAX) title = t; }
   }
   const n = verified.length;
   const more = groups.length > top.length ? `, sur ${groups.length} marques` : "";
-  const description = cut(`${name} : compatible avec ${n} trottinette${n > 1 ? "s" : ""}, dont ${listFr(top)}${more}. Compatibilité vérifiée ${matchBasis(part)}.`, 158);
+  const description = clampDescription(`${name} : compatible avec ${n} trottinette${n > 1 ? "s" : ""}, dont ${listFr(top)}${more}. Compatibilité vérifiée ${matchBasis(part)}.`);
   return { title, description };
 };
 

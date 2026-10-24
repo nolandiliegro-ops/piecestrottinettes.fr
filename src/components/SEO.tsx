@@ -9,6 +9,8 @@ interface SEOProps {
   schema?: object;
   prevUrl?: string;
   nextUrl?: string;
+  /** og:type — « product » sur les fiches pièce (audit SEO 24/10), « website » partout ailleurs. */
+  type?: "website" | "product";
 }
 
 const SITE_BRAND = "Pièces Trottinettes";
@@ -23,7 +25,7 @@ function stripBranding(raw: string): string {
     .trim();
 }
 
-const SEO = ({ title, description, image, canonical, noindex = false, schema, prevUrl, nextUrl }: SEOProps) => {
+const SEO = ({ title, description, image, canonical, noindex = false, schema, prevUrl, nextUrl, type = "website" }: SEOProps) => {
   // Le meta_title produit est déjà un titre complet/optimisé. On dédoublonne tout
   // branding existant, puis on rajoute la marque UNE fois — seulement si on reste ≤ 60c
   // (sinon Google tronque). Au-delà, on garde le titre nu.
@@ -40,7 +42,7 @@ const SEO = ({ title, description, image, canonical, noindex = false, schema, pr
       {noindex && <meta name="robots" content="noindex, nofollow" />}
 
       {/* Open Graph */}
-      <meta property="og:type" content="website" />
+      <meta property="og:type" content={type} />
       <meta property="og:locale" content="fr_FR" />
       <meta property="og:title" content={fullTitle} />
       <meta property="og:description" content={description} />

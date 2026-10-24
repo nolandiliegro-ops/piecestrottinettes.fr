@@ -6,7 +6,7 @@
 // FAIL-SOFT : toute erreur réseau/REST -> sitemap minimal (statiques + catégories si dispo) + exit 0.
 //             Le build ne doit JAMAIS planter à cause du sitemap.
 
-import { writeFileSync, readFileSync, existsSync } from "node:fs";
+import { writeFileSync, readFileSync, existsSync, readdirSync } from "node:fs";
 import { fileURLToPath } from "node:url";
 import { dirname, resolve } from "node:path";
 
@@ -27,6 +27,7 @@ const STATIC_PAGES = [
   { path: "/", priority: "1.0", changefreq: "daily" },
   { path: "/catalogue", priority: "0.9", changefreq: "daily" },
   { path: "/trottinettes", priority: "0.8", changefreq: "weekly" },
+  { path: "/marques", priority: "0.7", changefreq: "weekly" },
   { path: "/pepites", priority: "0.7", changefreq: "weekly" },
   { path: "/atelier", priority: "0.8", changefreq: "weekly" },
   { path: "/atelier/videos", priority: "0.6", changefreq: "weekly" },
@@ -71,10 +72,26 @@ function urlEntry({ loc, lastmod, changefreq, priority }) {
   return out;
 }
 
+// Pas de lastmod sur les statiques (24/10, audit SEO) : la date du build à chaque déploiement « ment » à Google,
+// qui finit par ignorer tous les lastmod du sitemap.
 function renderStaticBlock() {
   return STATIC_PAGES.map((p) =>
-    urlEntry({ loc: p.path, lastmod: TODAY, changefreq: p.changefreq, priority: p.priority })
+    urlEntry({ loc: p.path, changefreq: p.changefreq, priority: p.priority })
   ).join("");
+}
+
+// Trottinettes qui ont une fiche « Tout savoir » (public/fiches/<slug>.json ou src/data/scooterSeo.ts) :
+// la page a du contenu même sans pièce compatible. Miroir de la règle noindex de src/pages/ScooterDetail.tsx.
+function scooterSlugsWithFiche(root) {
+  const slugs = new Set();
+  try {
+    for (const f of readdirSync(resolve(root, "public", "fiches"))) if (f.endsWith(".json")) slugs.add(f.slice(0, -5));
+  } catch { /* dossier absent : aucune fiche JSON */ }
+  try {
+    const src = readFileSync(resolve(root, "src", "data", "scooterSeo.ts"), "utf8");
+    for (const m of src.matchAll(/^  "([a-z0-9-]+)": \{/gm)) slugs.add(m[1]);
+  } catch { /* fichier absent */ }
+  return slugs;
 }
 
 function wrap(body) {
@@ -88,7 +105,7 @@ async function main() {
     // avant de décider. Évite les sockets undici en suspens → sortie process propre.
     const settled = await Promise.allSettled([
       restGet("parts?select=slug,updated_at,category_id&published=eq.true&limit=5000"),
-      restGet("scooter_models?select=slug,created_at&published=eq.true&limit=5000"),
+      restGet("scooter_models?select=slug,created_at,compatible_parts_count&published=eq.true&limit=5000"),
       restGet("brands?select=slug,created_at&published=eq.true&limit=5000"),
       restGet("categories?select=slug,id,created_at&limit=5000"),
     ]);
@@ -133,8 +150,11 @@ async function main() {
     }
 
     // 4. Scooters /scooter/{slug} (singulier). /showroom parké (duplicate content, canonical à part).
+    //    24/10 (audit SEO) : sans pièce compatible NI fiche « Tout savoir », la page est vide (noindex) → exclue.
+    const withFiche = scooterSlugsWithFiche(resolve(dirname(OUT_PATH), ".."));
+    const keptScooters = scooters.filter((s) => (s.compatible_parts_count ?? 0) > 0 || withFiche.has(s.slug));
     body += `\n  <!-- Trottinettes -->\n`;
-    for (const s of scooters) {
+    for (const s of keptScooters) {
       body += urlEntry({
         loc: `/scooter/${xmlEscape(s.slug)}`,
         lastmod: toLastmod(s.created_at),
@@ -187,17 +207,23 @@ async function main() {
     }
 
     const total =
-      STATIC_PAGES.length + keptCategories.length + parts.length + scooters.length + brands.length + articles.length + questions.length;
+      STATIC_PAGES.length + keptCategories.length + parts.length + keptScooters.length + brands.length + articles.length + questions.length;
     writeFileSync(OUT_PATH, wrap(body), "utf8");
     console.log(
-      `[sitemap] OK -> ${total} URLs (${STATIC_PAGES.length} statiques, ${keptCategories.length} catégories, ${parts.length} pièces, ${scooters.length} scooters, ${brands.length} marques, ${articles.length} articles, ${questions.length} questions)`
+      `[sitemap] OK -> ${total} URLs (${STATIC_PAGES.length} statiques, ${keptCategories.length} catégories, ${parts.length} pièces, ${keptScooters.length} scooters (${scooters.length - keptScooters.length} vides exclus), ${brands.length} marques, ${articles.length} articles, ${questions.length} questions)`
     );
   } catch (err) {
-    // FAIL-SOFT : sitemap minimal, le build continue.
-    console.warn(`[sitemap] WARN: génération dynamique échouée (${err.message}). Fallback minimal.`);
-    const minimal = `  <!-- Pages statiques (fallback) -->\n` + renderStaticBlock();
-    writeFileSync(OUT_PATH, wrap(minimal), "utf8");
-    console.log(`[sitemap] fallback écrit (${STATIC_PAGES.length} pages statiques).`);
+    // FAIL-SOFT : le build continue. 24/10 (audit SEO) : on GARDE le sitemap existant s'il est plus riche que le
+    // minimal (avant : écrasé par 11 pages statiques, en silence → plus de 1 000 URLs perdues pour Google).
+    const existing = existsSync(OUT_PATH) ? (readFileSync(OUT_PATH, "utf8").match(/<url>/g) || []).length : 0;
+    if (existing > STATIC_PAGES.length) {
+      console.error(`[sitemap] ERREUR: génération dynamique échouée (${err.message}). Sitemap existant CONSERVÉ (${existing} URLs, peut être daté).`);
+    } else {
+      console.error(`[sitemap] ERREUR: génération dynamique échouée (${err.message}). Fallback minimal.`);
+      const minimal = `  <!-- Pages statiques (fallback) -->\n` + renderStaticBlock();
+      writeFileSync(OUT_PATH, wrap(minimal), "utf8");
+      console.log(`[sitemap] fallback écrit (${STATIC_PAGES.length} pages statiques).`);
+    }
     // Pas de process.exit() : on laisse l'event loop se vider naturellement (sortie code 0).
     // Forcer process.exit() pendant la fermeture des sockets undici crashe sur Node/Windows.
     process.exitCode = 0;

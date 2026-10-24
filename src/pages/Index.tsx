@@ -25,7 +25,7 @@ const Index = () => {
     >
       <SEO
         title="Pièces Trottinette Électrique | Trouve ta pièce compatible — piècestrottinettes.fr"
-        description="Plus jamais la mauvaise pièce. Sélectionne ton modèle (Dualtron, Kaabo, Ninebot, Kukirin, Segway) et achète des pièces 100% compatibles. Expédition 24h, méca pro."
+        description="Plus jamais la mauvaise pièce. Sélectionne ton modèle (Dualtron, Kaabo, Ninebot, Kukirin) et achète des pièces 100% compatibles. Expédition 24h, méca pro."
         canonical="https://piecestrottinettes.fr/"
       />
 
