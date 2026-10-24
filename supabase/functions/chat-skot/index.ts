@@ -14,7 +14,7 @@ import { classifyCompat, unverifiedLabel, verifiedReason, partDelay } from "../_
 import { CORPUS } from "./banc/cas.ts";
 import { runBanc, runNuit, looksCut } from "./banc/banc.ts";
 
-const VERSION = "chat-skot@2026-10-24f";
+const VERSION = "chat-skot@2026-10-24g";
 const MODEL = "claude-haiku-5-5";
 const MAX_TOOL_ROUNDS = 4;
 const HISTORY_LIMIT = 14;
@@ -51,7 +51,7 @@ RÈGLES ABSOLUES
 1. Compatibilité : tu n'affirmes « ça monte » QUE si l'outil check_compatibility ou parts_for_scooter renvoie status "verified", et tu donnes sa raison. Status "unverified" : tu dis que ce n'est pas encore confirmé et tu donnes la phrase "label" fournie, sans la reformuler en promesse. Aucune ligne ou modèle inconnu : tu dis franchement que tu ne sais pas et tu proposes de poser la question à l'atelier (escalate_to_human). Jamais de pourcentage, jamais d'invention.
 2. Trottinette absente du catalogue : tu ne réponds pas « en général » ; tu proposes l'atelier.
 3. Livraison, retours, code Rider : uniquement la FICHE BOUTIQUE ci-dessous. Garantie, remboursement, délai précis d'un colis, prix non affiché : jamais d'improvisation, atelier.
-4. Commande : client connecté → get_order_status sans rien demander. Sinon tu demandes le numéro (PT-XXXX) ET l'email de la commande, ensemble. Si ça ne trouve rien, tu dis seulement « je ne trouve pas de commande avec ces infos » : tu ne commentes jamais pourquoi.
+4. Commande : client connecté → get_order_status sans rien demander. Sinon tu demandes le numéro (PT-XXXX) ET l'email de la commande, ensemble. Si ça ne trouve rien, tu dis « je ne trouve pas de commande avec ces infos », puis toujours la même suite, quel que soit le cas : « Vérifie le numéro et l'email de ta confirmation de commande, ou je transmets ta demande à l'atelier. » Tu ne dis jamais lequel des deux est faux ni si la commande existe.
 5. Tu ne passes, n'annules, ne modifies et ne rembourses aucune commande. Tu montres la pièce (elle s'affiche en carte avec un bouton) ; c'est le client qui l'ajoute au panier.
 6. Photo : tu peux lire une cote sur une photo (flanc de pneu, prise de charge, étrier). Une cote lue reste « à confirmer » tant que l'outil ne la retrouve pas dans le catalogue. Ne décris jamais une personne visible sur une photo.
 7. Jamais de conseil de débridage, ni de vitesse au-delà de ce que permet la loi. Pas de diagnostic de panne sans source : atelier.
@@ -465,8 +465,12 @@ export async function converse(inp: ConverseInput): Promise<ConverseOutput> {
   const cards = [...bySlug.values()];
   const low = o.reply.toLowerCase();
   const cited = cards.filter((c: any) => low.includes(String(c.name).toLowerCase()));
-  const pool = cited.length ? cited : cards.filter((c: any) => c.compat);
-  o.cards = (pool.some((c: any) => c.compat) ? pool.filter((c: any) => c.compat) : pool).slice(0, 6);
+  // Banc 24/10 (c02) : dès qu'une question porte sur une trottinette (au moins une carte avec statut), une carte SANS statut
+  // n'est jamais affichée, même citée — sinon un pneu « sans ligne de compatibilité » apparaît avec un bouton Ajouter.
+  const hasCompat = cards.some((c: any) => c.compat);
+  let shown = hasCompat ? cited.filter((c: any) => c.compat) : cited;
+  if (!shown.length && hasCompat) shown = cards.filter((c: any) => c.compat);
+  o.cards = shown.slice(0, 6);
   o.escalated = ctx.escalated;
   o.orderFailed = ctx.orderFailed;
   return o;
