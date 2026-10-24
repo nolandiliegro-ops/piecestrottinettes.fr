@@ -1,0 +1,570 @@
+{
+ "lot": "ang03",
+ "models": [
+  {
+   "id": "27b0390b-c1dd-4bca-ae69-1cae035031d7",
+   "slug": "beaster-bs77",
+   "name": "Beaster BS77",
+   "brand": "Beaster",
+   "candidates": [
+    "https://lt2.pigugroup.eu/colours/555/002/94/55500294/elektrinis-paspirtukas-beaster-scooter-bs77-juodas-f828b-atsiliepimai_original.jpg",
+    "https://lt2.pigugroup.eu/colours/555/002/94/55500294/elektrinis-paspirtukas-beaster-scooter-bs77-juodas-7ce98-kaina_original.jpg",
+    "https://lt2.pigugroup.eu/colours/555/002/94/55500294/elektrinis-paspirtukas-beaster-scooter-bs77-juodas-abca9-pigiau_original.jpg",
+    "https://lt2.pigugroup.eu/colours/555/002/94/55500294/elektrinis-paspirtukas-beaster-scooter-bs77-juodas-da6f5-internetu_original.jpg",
+    "https://lt2.pigugroup.eu/colours/555/002/94/55500294/elektrinis-paspirtukas-beaster-scooter-bs77-juodas-07e46_original.jpg",
+    "https://images.morele.net/i1064/14076300_0_i1064.jpg",
+    "https://houstera.lt/wp-content/uploads/2021/11/elektrinis-paspirtukas-beaster-scooter-bs77-2400-w-60-v-234-ah-hidrauliniai-stabdziai.jpg"
+   ]
+  },
+  {
+   "id": "53bd35b7-eb62-449a-a77c-e97f126298ee",
+   "slug": "dualtron-aminia",
+   "name": "Dualtron Aminia",
+   "brand": "Dualtron",
+   "candidates": [
+    "https://cdn.shopify.com/s/files/1/0018/7616/4681/files/DT-Aminia-Image-2.jpg",
+    "https://cdn.shopify.com/s/files/1/0018/7616/4681/files/DT-Aminia-Image-3.jpg",
+    "https://cdn.shopify.com/s/files/1/0018/7616/4681/files/DT-Aminia-Image-4.jpg",
+    "https://cdn.shopify.com/s/files/1/0018/7616/4681/files/DT-Aminia-Image-5.jpg",
+    "https://cdn.shopify.com/s/files/1/0018/7616/4681/files/DT-Aminia-Image-9.jpg",
+    "https://cdn.shopify.com/s/files/1/0018/7616/4681/files/DT-Aminia-Image-1.jpg",
+    "https://cdn.shopify.com/s/files/1/0018/7616/4681/files/DT-Aminia-Image-6.jpg",
+    "https://cdn.shopify.com/s/files/1/0018/7616/4681/files/DT-Aminia-Image-7.jpg",
+    "https://cdn.shopify.com/s/files/1/0018/7616/4681/files/DT-Aminia-Image-8.jpg"
+   ]
+  },
+  {
+   "id": "a533cd48-4574-4d08-b072-759602b7effe",
+   "slug": "dualtron-city-2025",
+   "name": "Dualtron City 2025",
+   "brand": "Dualtron",
+   "candidates": [
+    "https://cdn.shopify.com/s/files/1/0959/8697/5069/files/TROTTINETTEELECTRIQUEDUALTRONNEWCITY60Vprofildroit.jpg",
+    "https://cdn.shopify.com/s/files/1/0959/8697/5069/files/TROTTINETTEELECTRIQUEDUALTRONNEWCITY60Vprofilgauche.jpg",
+    "https://cdn.shopify.com/s/files/1/0959/8697/5069/files/TROTTINETTEELECTRIQUEDUALTRONNEWCITY60Vface.jpg",
+    "https://cdn.shopify.com/s/files/1/0959/8697/5069/files/TROTTINETTEELECTRIQUEDUALTRONNEWCITY60Vpliee.jpg",
+    "https://cdn.shopify.com/s/files/1/0959/8697/5069/files/trottinette_electrique_dualtron_city_comodo_phare.jpg",
+    "https://cdn.shopify.com/s/files/1/0018/7616/4681/files/DT-City-2-Image-2.jpg",
+    "https://cdn.shopify.com/s/files/1/0018/7616/4681/files/DT-City-2-Image-3.jpg",
+    "https://cdn.shopify.com/s/files/1/0018/7616/4681/files/DT-City-2-Image-4.jpg",
+    "https://cdn.shopify.com/s/files/1/0018/7616/4681/files/DT-City-2-Image-5.jpg"
+   ]
+  },
+  {
+   "id": "28ff423c-fb48-410b-8681-b1c8e127275c",
+   "slug": "dualtron-dolphin",
+   "name": "Dualtron Dolphin",
+   "brand": "Dualtron",
+   "candidates": [
+    "https://cdn.shopify.com/s/files/1/0018/7616/4681/files/DT-Dolphin-Image-2.jpg",
+    "https://cdn.shopify.com/s/files/1/0018/7616/4681/files/DT-Dolphin-Image-3.jpg",
+    "https://cdn.shopify.com/s/files/1/0018/7616/4681/files/DT-Dolphin-Image-4.jpg",
+    "https://cdn.shopify.com/s/files/1/0018/7616/4681/files/DT-Dolphin-Image-5.jpg",
+    "https://cdn.shopify.com/s/files/1/0018/7616/4681/files/DT-Dolphin-Image-6.jpg",
+    "https://cdn.shopify.com/s/files/1/0018/7616/4681/files/DT-Dolphin-Image-7.jpg",
+    "https://cdn.shopify.com/s/files/1/0018/7616/4681/files/DT-Dolphin-Image-8.jpg",
+    "https://cdn.shopify.com/s/files/1/0018/7616/4681/files/DT-Dolphin-Image-1.jpg"
+   ]
+  },
+  {
+   "id": "11bbbf20-7d05-4ca6-9906-b174a6bf7bae",
+   "slug": "dualtron-mini",
+   "name": "Dualtron Mini",
+   "brand": "Dualtron",
+   "candidates": [
+    "https://voltride.com/wp-content/uploads/2025/11/dualtron-mini-dual-brake-side.jpg",
+    "https://voltride.com/wp-content/uploads/2025/09/dualtron-mini-dual-brake-rear.jpeg",
+    "https://voltride.com/wp-content/uploads/2025/11/dualtron-mini-dual-brake-folded.jpg",
+    "https://voltride.com/wp-content/uploads/2025/09/dualtron-mini-dual-brake-front.jpeg",
+    "https://voltride.com/wp-content/uploads/2025/11/dt-mini-folding-system.jpeg",
+    "https://voltride.com/wp-content/uploads/2025/11/dt-mini-suspension.jpeg"
+   ]
+  },
+  {
+   "id": "daac542d-a54c-43e1-919f-9c2816593065",
+   "slug": "dualtron-mini-special",
+   "name": "Dualtron Mini Special",
+   "brand": "Dualtron",
+   "candidates": [
+    "https://cdn.shopify.com/s/files/1/0959/8697/5069/files/TROTTINETTEELECTRIQUEDUALTRONMINISPECIAL52V21AhNEWEY3CONNECTE_3.jpg",
+    "https://cdn.shopify.com/s/files/1/0959/8697/5069/files/TROTTINETTEELECTRIQUEDUALTRONMINISPECIAL52V21AhNEWEY3CONNECTE_4.jpg",
+    "https://cdn.shopify.com/s/files/1/0959/8697/5069/files/trottinette-electrique-dualtron-mini-special-double-moteur_vue_haut-223569.png",
+    "https://cdn.shopify.com/s/files/1/0959/8697/5069/files/TROTTINETTEELECTRIQUEDUALTRONMINISPECIAL52V21AhNEWEY3CONNECTE_2.jpg",
+    "https://cdn.shopify.com/s/files/1/0959/8697/5069/files/TROTTINETTEELECTRIQUEDUALTRONMINISPECIAL52V21AhNEWEY3CONNECTE_1.jpg",
+    "https://cdn.shopify.com/s/files/1/0959/8697/5069/files/trottinette-electrique-dualtron-mini-special-guidon-ey3-minimotors-987267.png",
+    "https://cdn.shopify.com/s/files/1/0959/8697/5069/files/MMDUALTRONMINI52V21SAPP_TROTTINETTEELECTRIQUEDUALTRONMINISPECIAL52V21AhNEWEY3CONNECTE.jpg"
+   ]
+  },
+  {
+   "id": "ce420bc8-eb01-4f1d-9953-09c4b27571e6",
+   "slug": "dualtron-thunder-3",
+   "name": "Dualtron Thunder 3",
+   "brand": "Dualtron",
+   "candidates": [
+    "https://cdn.shopify.com/s/files/1/0260/3312/7472/files/dualtron-thunder-3-electric-scooter-side_2000x_05df9634-d026-4430-b189-189727707db0.png",
+    "https://cdn.shopify.com/s/files/1/0260/3312/7472/files/dualtron-thunder-3-electric-scooter-rear_2000x_ba170181-e985-4c03-b514-ffec771a6c43.png",
+    "https://cdn.shopify.com/s/files/1/0260/3312/7472/files/dualtron-thunder-3-electric-scooter-lcd-screen_2000x_9e6d9f6a-78d6-480d-97fe-cee37543d2e6.png",
+    "https://cdn.shopify.com/s/files/1/0018/7616/4681/files/DT-Thunder-3-Image-4.jpg",
+    "https://cdn.shopify.com/s/files/1/0018/7616/4681/files/DT-Thunder-3-Image-2.jpg",
+    "https://cdn.shopify.com/s/files/1/0018/7616/4681/files/DT-Thunder-3-Image-3.jpg",
+    "https://cdn.shopify.com/s/files/1/0018/7616/4681/files/DT-Thunder-3-Image-6.jpg",
+    "https://cdn.shopify.com/s/files/1/0260/3312/7472/files/dualtron-thunder-3-electric-scooter-front-left_2000x_719d5541-bd69-46c0-a6e0-f12555ba2cbc.png"
+   ]
+  },
+  {
+   "id": "6177308c-701f-40e6-a503-98c233fe9901",
+   "slug": "dualtron-togo-max",
+   "name": "Dualtron Togo Max",
+   "brand": "Dualtron",
+   "candidates": [
+    "https://cdn.shopify.com/s/files/1/0959/8697/5069/files/dualtron-togomax-01.jpg",
+    "https://cdn.shopify.com/s/files/1/0959/8697/5069/files/dualtron-togomax-02.jpg",
+    "https://cdn.shopify.com/s/files/1/0959/8697/5069/files/dualtron-togomax-03.jpg",
+    "https://cdn.shopify.com/s/files/1/0959/8697/5069/files/dualtron-togomax-04.jpg",
+    "https://cdn.shopify.com/s/files/1/0959/8697/5069/files/dualtron-togomax-05.jpg",
+    "https://cdn.shopify.com/s/files/1/0959/8697/5069/files/dualtron-togomax-06.jpg",
+    "https://cdn.shopify.com/s/files/1/0959/8697/5069/files/dualtron-togomax-07.jpg",
+    "https://cdn.shopify.com/s/files/1/0959/8697/5069/files/dualtron-togomax-08.jpg",
+    "https://cdn.shopify.com/s/files/1/0959/8697/5069/files/dualtron-togomax-09.jpg",
+    "https://cdn.shopify.com/s/files/1/0959/8697/5069/files/dualtron-togomax-10.jpg"
+   ]
+  },
+  {
+   "id": "fc56d779-e310-425b-98af-3946e95025ed",
+   "slug": "dualtron-togo-plus",
+   "name": "Dualtron Togo Plus",
+   "brand": "Dualtron",
+   "candidates": [
+    "https://cdn.shopify.com/s/files/1/0959/8697/5069/files/dualtron-togo-15.jpg",
+    "https://cdn.shopify.com/s/files/1/0959/8697/5069/files/dualtron-togo-14.jpg",
+    "https://cdn.shopify.com/s/files/1/0959/8697/5069/files/dualtron-togo-01.jpg",
+    "https://cdn.shopify.com/s/files/1/0959/8697/5069/files/dualtron-togo-02.jpg",
+    "https://cdn.shopify.com/s/files/1/0959/8697/5069/files/dualtron-togo-03.jpg",
+    "https://cdn.shopify.com/s/files/1/0959/8697/5069/files/dualtron-togo-04.jpg",
+    "https://cdn.shopify.com/s/files/1/0959/8697/5069/files/dualtron-togo-10.jpg",
+    "https://cdn.shopify.com/s/files/1/0959/8697/5069/files/dualtron-togo-06.jpg",
+    "https://cdn.shopify.com/s/files/1/0959/8697/5069/files/dualtron-togo-00.jpg"
+   ]
+  },
+  {
+   "id": "d4cd80af-a231-485f-8b69-d3d9be161805",
+   "slug": "dualtron-ultra-2",
+   "name": "Dualtron Ultra 2",
+   "brand": "Dualtron",
+   "candidates": [
+    "https://voltride.com/wp-content/uploads/2025/02/electric-scooter-dualtron-ultra-2-side-rear.jpg",
+    "https://cdn.shopify.com/s/files/1/0260/3312/7472/products/Dualtron-ultra-II-rear_124e822e-289e-454b-bc58-6c59b5d02138.jpg",
+    "https://voltride.com/wp-content/uploads/2025/02/electric-scooter-dualtron-ultra-2-left-side.jpg",
+    "https://voltride.com/wp-content/uploads/2025/02/electric-scooter-dualtron-ultra-2-rear-wheel.jpg",
+    "https://cdn.shopify.com/s/files/1/0260/3312/7472/products/Dualtron-ultra-II-top-view_9523becf-1540-48e3-b099-fe2c2b955ed0.jpg",
+    "https://voltride.com/wp-content/uploads/2025/02/electric-scooter-dualtron-ultra-2-main-product-image.jpg"
+   ]
+  },
+  {
+   "id": "92e8bccd-a133-4ed8-a9c3-27ab75bdc7b7",
+   "slug": "dualtron-victor-2025",
+   "name": "Dualtron Victor 2025",
+   "brand": "Dualtron",
+   "candidates": [
+    "https://cdn.shopify.com/s/files/1/0959/8697/5069/files/TROTTINETTE_ELECTRIQUE_DUALTRON_VICTOR_60V_24AH_EY4_NUTT_2025_9.jpg",
+    "https://cdn.shopify.com/s/files/1/0959/8697/5069/files/trottinette_electrique_dualtron_victor_minimotors_IPX5_puissante_ecran_EY4.jpg",
+    "https://cdn.shopify.com/s/files/1/0959/8697/5069/files/TROTTINETTE_ELECTRIQUE_DUALTRON_VICTOR_60V_24AH_EY4_NUTT_2025_2.jpg",
+    "https://cdn.shopify.com/s/files/1/0959/8697/5069/files/TROTTINETTE-ELECTRIQUE-DUALTRON-VICTOR-60V-24AH-EY4-NUTT-2025-3-_14.jpg",
+    "https://cdn.shopify.com/s/files/1/0959/8697/5069/files/TROTTINETTE_ELECTRIQUE_DUALTRON_VICTOR_60V_24AH_EY4_NUTT_2025_10.jpg",
+    "https://cdn.shopify.com/s/files/1/0959/8697/5069/files/TROTTINETTE_ELECTRIQUE_DUALTRON_VICTOR_60V_24AH_EY4_NUTT_2025_11.jpg",
+    "https://cdn.shopify.com/s/files/1/0959/8697/5069/files/TROTTINETTE_ELECTRIQUE_DUALTRON_VICTOR_60V_24AH_EY4_NUTT_2025_7.jpg",
+    "https://cdn.shopify.com/s/files/1/0959/8697/5069/files/TROTTINETTEELECTRIQUEDUALTRONVICTOR60V24AHEY4NUTT2025.jpg"
+   ]
+  },
+  {
+   "id": "75c08b66-003c-4d75-a475-82fbcaf72f66",
+   "slug": "thunder",
+   "name": "Thunder",
+   "brand": "Dualtron",
+   "candidates": [
+    "https://www.maxblinker.com/9694-panda_thickbox_default/dualtron-thunder.jpg",
+    "https://www.maxblinker.com/9695-panda_thickbox_default/dualtron-thunder.jpg",
+    "https://www.maxblinker.com/9697-panda_thickbox_default/dualtron-thunder.jpg",
+    "https://www.maxblinker.com/9698-panda_thickbox_default/dualtron-thunder.jpg",
+    "https://www.maxblinker.com/9699-panda_thickbox_default/dualtron-thunder.jpg",
+    "https://www.maxblinker.com/9700-panda_thickbox_default/dualtron-thunder.jpg",
+    "https://www.maxblinker.com/9701-panda_thickbox_default/dualtron-thunder.jpg",
+    "https://www.maxblinker.com/9702-panda_thickbox_default/dualtron-thunder.jpg",
+    "https://www.maxblinker.com/9703-panda_thickbox_default/dualtron-thunder.jpg",
+    "https://www.maxblinker.com/9704-panda_thickbox_default/dualtron-thunder.jpg"
+   ]
+  },
+  {
+   "id": "faf61b40-125e-4ad7-b5e8-f155d5166014",
+   "slug": "kugoo-g2-master",
+   "name": "Kugoo G2 Master",
+   "brand": "Kugoo",
+   "candidates": [
+    "https://cdn.shopify.com/s/files/1/0291/3422/5501/files/KuKirin_G2_Master_2.png",
+    "https://cdn.shopify.com/s/files/1/0291/3422/5501/files/KuKirin_G2_Master_3.png",
+    "https://cdn.shopify.com/s/files/1/0291/3422/5501/files/KuKirin_G2_Master_4.png",
+    "https://cdn.shopify.com/s/files/1/0291/3422/5501/files/KuKirin_G2_Master_5.png",
+    "https://cdn.shopify.com/s/files/1/0291/3422/5501/files/G2_Master_New_Version-A.png",
+    "https://cdn.shopify.com/s/files/1/0291/3422/5501/files/G2_Master_New_Version-B.png",
+    "https://cdn.shopify.com/s/files/1/0291/3422/5501/files/KuKirin_G2_Master.png",
+    "https://cdn.shopify.com/s/files/1/0291/3422/5501/files/G2_Master_7dac118b-8f92-4bf3-b53f-ba663ce86978.jpg"
+   ]
+  },
+  {
+   "id": "3fefe1e1-ece6-4334-9302-29089eb6cb33",
+   "slug": "kugoo-g2-max",
+   "name": "Kugoo G2 Max",
+   "brand": "Kugoo",
+   "candidates": [
+    "https://cdn.shopify.com/s/files/1/0291/3422/5501/files/G2_Max-1.jpg",
+    "https://cdn.shopify.com/s/files/1/0291/3422/5501/files/G2_Max-2.jpg",
+    "https://cdn.shopify.com/s/files/1/0291/3422/5501/files/G2_Max-3.jpg",
+    "https://cdn.shopify.com/s/files/1/0291/3422/5501/files/G2_Max-4.jpg",
+    "https://cdn.shopify.com/s/files/1/0291/3422/5501/files/G2_Max-5.jpg",
+    "https://cdn.shopify.com/s/files/1/0291/3422/5501/files/G2_Max-6.jpg",
+    "https://cdn.shopify.com/s/files/1/0291/3422/5501/files/G2_Max-7.jpg",
+    "https://cdn.shopify.com/s/files/1/0291/3422/5501/files/G2_Max-8.jpg",
+    "https://cdn.shopify.com/s/files/1/0291/3422/5501/files/G2_Max.jpg"
+   ]
+  },
+  {
+   "id": "7c971be9-d05b-406e-b1eb-eae7c6531036",
+   "slug": "kugoo-g3",
+   "name": "Kugoo G3",
+   "brand": "Kugoo",
+   "candidates": [
+    "https://cdn.shopify.com/s/files/1/0617/7482/3631/files/G3_scooters_2.jpg",
+    "https://cdn.shopify.com/s/files/1/0617/7482/3631/files/G3_scooters_1.jpg",
+    "https://cdn.shopify.com/s/files/1/0617/7482/3631/files/G3_scooters_9.jpg",
+    "https://cdn.shopify.com/s/files/1/0617/7482/3631/files/G3_scooters_4.jpg",
+    "https://cdn.shopify.com/s/files/1/0617/7482/3631/files/G3_scooters_3.jpg",
+    "https://cdn.shopify.com/s/files/1/0617/7482/3631/files/G3_scooters_6.jpg",
+    "https://cdn.shopify.com/s/files/1/0617/7482/3631/files/G3_scooters_10.jpg"
+   ]
+  },
+  {
+   "id": "9bdfc8b8-dacf-4e75-a6d6-eb65b2fb1821",
+   "slug": "langfeite-gt2-rs",
+   "name": "Langfeite GT2 RS",
+   "brand": "Langfeite",
+   "candidates": [
+    "https://langfeite.com/static/upfile/202409140909146054.jpg",
+    "https://langfeite.com/static/upfile/202409050614093543.jpg",
+    "https://langfeite.com/static/upfile/202509240530264898.png",
+    "https://langfeite.com/static/upfile/202509110807252109.png",
+    "https://langfeite.com/static/upfile/202504020847224606.png",
+    "https://roguescooters.com/cdn/shop/files/GT2-4347_4000x.jpg"
+   ]
+  },
+  {
+   "id": "3b3e10ce-c312-4ba6-b535-58de53e96826",
+   "slug": "niu-kqi-100f",
+   "name": "NIU KQi 100F",
+   "brand": "NIU",
+   "candidates": [
+    "https://cdn.shopify.com/s/files/1/0554/6944/1084/files/KQi-100F_Basic-Render_Gray_Right-45.jpg",
+    "https://cdn.shopify.com/s/files/1/0554/6944/1084/files/KQi-100F_Basic-Render_Gray_Right-90.jpg",
+    "https://cdn.shopify.com/s/files/1/0554/6944/1084/files/KQi-100F_Basic-Render_Gray_Left-90.jpg",
+    "https://cdn.shopify.com/s/files/1/0554/6944/1084/files/KQi-100F_Basic-Render_Gray_Front.jpg",
+    "https://cdn.shopify.com/s/files/1/0554/6944/1084/files/KQi-100F_Basic-Render_Black_Right-45.jpg",
+    "https://cdn.shopify.com/s/files/1/0554/6944/1084/files/KQi-100F_Basic-Render_Gray_Left-45.jpg"
+   ]
+  },
+  {
+   "id": "c51022c0-eb21-466d-bd25-4546bd6a9a3a",
+   "slug": "niu-kqi-300x",
+   "name": "NIU KQi 300X",
+   "brand": "NIU",
+   "candidates": [
+    "https://cdn.shopify.com/s/files/1/0554/6944/1084/files/KQi-300X_180__Space-Gray.jpg",
+    "https://cdn.shopify.com/s/files/1/0554/6944/1084/files/KQi-300X_180__Black_ae55504a-24f3-449f-aa20-f1371bd100b3.jpg",
+    "https://cdn.shopify.com/s/files/1/0554/6944/1084/files/KQi-300X_90__Black_1024x1024_765409a5-4211-41d3-af25-49b818e43e8c.jpg",
+    "https://cdn.shopify.com/s/files/1/0554/6944/1084/files/KQi-300X_0__Space-Gray_8ff2aa47-42a2-4b3a-a76e-b5bcdb5eeaf8.jpg",
+    "https://cdn.shopify.com/s/files/1/0554/6944/1084/files/KQi-300X_45__Black_1024x1024_75228b52-6345-4444-805a-437d4d2bc4e5.jpg",
+    "https://cdn.shopify.com/s/files/1/0554/6944/1084/files/K300-X-2.jpg",
+    "https://cdn.shopify.com/s/files/1/0554/6944/1084/files/K300-X.jpg"
+   ]
+  },
+  {
+   "id": "cec56777-c1d0-4a15-b830-36d9f02a80a3",
+   "slug": "niu-kqi-air-x",
+   "name": "NIU KQi Air X",
+   "brand": "NIU",
+   "candidates": [
+    "https://cdn.shopify.com/s/files/1/0554/6944/1084/files/3_cdc2850b-e13b-4d3b-b133-d8384b2b9a50.jpg",
+    "https://cdn.shopify.com/s/files/1/0554/6944/1084/files/2_d0b6e62b-6f7d-4792-bc5d-b1497e7c71c5.jpg",
+    "https://cdn.shopify.com/s/files/1/0554/6944/1084/files/6_f8bf6973-a459-47f2-ad97-cb3e018d383b.jpg",
+    "https://cdn.shopify.com/s/files/1/0554/6944/1084/files/cf9297a0e939385ac9804f0d61d54fc6_8f1a0054-f246-497d-afbb-cb48190eebc2.jpg",
+    "https://cdn.shopify.com/s/files/1/0554/6944/1084/files/4_7a4f979d-bbfb-4b73-b6c6-9ea7de61cf60.jpg"
+   ]
+  },
+  {
+   "id": "84df766a-fa5a-4a06-b91d-a057b53b4432",
+   "slug": "niu-kqi1-pro",
+   "name": "NIU KQi1 Pro",
+   "brand": "NIU",
+   "candidates": [
+    "https://cdn.shopify.com/s/files/1/0554/6944/1084/files/KQi1_Pro_Folding.jpg",
+    "https://cdn.shopify.com/s/files/1/0554/6944/1084/files/KQi_90E-3.jpg",
+    "https://cdn.shopify.com/s/files/1/0554/6944/1084/files/KQi_90E-4.jpg",
+    "https://cdn.shopify.com/s/files/1/0554/6944/1084/files/KQi1_Pro_Type-C_Charging.jpg"
+   ]
+  },
+  {
+   "id": "23a51d9c-7c9a-4f0d-a7b0-f79247c50f5c",
+   "slug": "niu-kqi1-sport",
+   "name": "NIU KQi1 Sport",
+   "brand": "NIU",
+   "candidates": [
+    "https://cdn.shopify.com/s/files/1/0554/6944/1084/products/K1_2.jpg",
+    "https://cdn.shopify.com/s/files/1/0554/6944/1084/products/K1_3.jpg",
+    "https://cdn.shopify.com/s/files/1/0554/6944/1084/products/K1_4.jpg",
+    "https://cdn.shopify.com/s/files/1/0554/6944/1084/products/K1_5.jpg",
+    "https://cdn.shopify.com/s/files/1/0554/6944/1084/products/5_4ee2e2c8-74b6-4901-a7f7-d287704a6fef.jpg",
+    "https://cdn.shopify.com/s/files/1/0554/6944/1084/products/K1.jpg"
+   ]
+  },
+  {
+   "id": "4fb8c587-311c-4249-a091-eb08e9999bd2",
+   "slug": "ninebot-max-g2",
+   "name": "Ninebot Max G2",
+   "brand": "Segway",
+   "candidates": [
+    "https://segway.imgix.net/catalog/product/cache/d3ec3723470ff918c92e447639eaf984/m/a/max_g2-2_1.png",
+    "https://segway.imgix.net/catalog/product/cache/d3ec3723470ff918c92e447639eaf984/m/a/max_g2-3_1.png",
+    "https://s7ap1.scene7.com/is/image/ninebotstage/assets_segway_cdn_com_customproductpages_21-fold-1-1?dpr=on,3&network=on",
+    "https://s7ap1.scene7.com/is/image/ninebotstage/assets_segway_cdn_com_Product-Pictures__product_full_MAX-G2-1?dpr=on,3&network=on&fmt=png-alpha",
+    "https://segway.imgix.net/catalog/product/cache/d3ec3723470ff918c92e447639eaf984/m/a/max_g2-1_2.png"
+   ]
+  },
+  {
+   "id": "144a228d-db02-4d87-9c3d-4ba821332605",
+   "slug": "teverun-blade-gt-ii",
+   "name": "Teverun Blade GT II",
+   "brand": "Teverun",
+   "candidates": [
+    "https://cdn.shopify.com/s/files/1/2476/0976/files/BLADE_GT_II_angle_left_rear.webp",
+    "https://cdn.shopify.com/s/files/1/2476/0976/files/BLADE_GT_II_angle_right.webp",
+    "https://cdn.shopify.com/s/files/1/2476/0976/files/6_277156fc-1512-49e2-a047-fccad3b5b4b7.webp",
+    "https://cdn.shopify.com/s/files/1/2476/0976/files/7_2309a1f8-a34c-473f-af48-2ad585045f71.webp",
+    "https://cdn.shopify.com/s/files/1/0684/3190/4923/files/GTII202603.png",
+    "https://cdn.shopify.com/s/files/1/0684/3190/4923/files/GTII202605.png",
+    "https://cdn.shopify.com/s/files/1/0684/3190/4923/files/BLADE_GT_II_89893a7e-fb63-47b3-8f6c-c60f4d499b5e.png"
+   ]
+  },
+  {
+   "id": "92039446-23d1-4d19-af55-4e9e36c82d59",
+   "slug": "teverun-fighter-11-plus",
+   "name": "Teverun Fighter 11+",
+   "brand": "Teverun",
+   "candidates": [
+    "https://cdn.shopify.com/s/files/1/0684/3190/4923/files/teverun-fighter-11-plus-side-view.png",
+    "https://cdn.shopify.com/s/files/1/0684/3190/4923/files/26.jpg",
+    "https://cdn.shopify.com/s/files/1/0684/3190/4923/files/7_19a5e2ba-94a7-4227-a384-1b058a99e8a2.jpg",
+    "https://cdn.shopify.com/s/files/1/0684/3190/4923/files/5_02fae409-ebfc-4eca-adff-eef9903534cd.jpg",
+    "https://cdn.shopify.com/s/files/1/0959/8697/5069/files/TEVERUN_FIGHTER_ELEVEN_PLUS_60V_37_1_AH_2026_3.jpg",
+    "https://cdn.shopify.com/s/files/1/0959/8697/5069/files/fighter_eleven_plus_2026.webp",
+    "https://cdn.shopify.com/s/files/1/0684/3190/4923/files/Teverun_Fighter_11.png"
+   ]
+  },
+  {
+   "id": "0d1a9f57-bdb6-4360-948f-03a9ae107632",
+   "slug": "teverun-fighter-mini-pro",
+   "name": "Teverun Fighter Mini Pro",
+   "brand": "Teverun",
+   "candidates": [
+    "https://cdn.shopify.com/s/files/1/2476/0976/files/2_6106d4e0-1193-43c6-9e9a-842595c60a62.jpg",
+    "https://cdn.shopify.com/s/files/1/2476/0976/files/3_99b778f6-fec5-41b0-b629-204e10368da1.jpg",
+    "https://cdn.shopify.com/s/files/1/2476/0976/files/6_8d82f045-b431-4543-9b91-ccfb4f6babd3.jpg",
+    "https://cdn.shopify.com/s/files/1/2476/0976/files/7_18353f61-1382-43b9-b0ef-80098e070a9e.jpg",
+    "https://cdn.shopify.com/s/files/1/2476/0976/files/8_34dc1d29-e75a-48f1-881b-54a3d771d7a7.jpg",
+    "https://cdn.shopify.com/s/files/1/0684/3190/4923/files/teverun-fighter-mini-pro-rear-wheel-brake.jpg",
+    "https://cdn.shopify.com/s/files/1/0684/3190/4923/files/fighter-mini-pro-electric-scooter-side-angle.jpg",
+    "https://cdn.shopify.com/s/files/1/2476/0976/files/1_c0efbdd2-6426-43e5-96e3-029ab1e75744.jpg"
+   ]
+  },
+  {
+   "id": "a36d4d3a-c6c4-43d1-ab61-7b09cc47c113",
+   "slug": "teverun-fighter-mini-pro-v6",
+   "name": "Teverun Fighter Mini Pro V6",
+   "brand": "Teverun",
+   "candidates": [
+    "https://cdn.shopify.com/s/files/1/0684/3190/4923/files/teverun-fighter-mini-pro-rear-wheel-brake.jpg",
+    "https://cdn.shopify.com/s/files/1/0684/3190/4923/files/fighter-mini-pro-electric-scooter-side-angle.jpg",
+    "https://cdn.shopify.com/s/files/1/0684/3190/4923/files/fighter_mini_pro.jpg",
+    "https://cdn.shopify.com/s/files/1/0684/3190/4923/files/teverun-fighter-mini-pro-front-tire-view.jpg",
+    "https://cdn.shopify.com/s/files/1/0684/3190/4923/files/Fighte_mini_pro-display.jpg",
+    "https://fastride.fr/20193-large_default/trottinette-electrique-teverun-fighter-mini-pro-2026-60v-318ah.jpg",
+    "https://fastride.fr/20204-large_default/trottinette-electrique-teverun-fighter-mini-pro-2026-60v-318ah.jpg",
+    "https://cdn.shopify.com/s/files/1/0684/3190/4923/files/fighter_mini_pro_2026.png"
+   ]
+  },
+  {
+   "id": "56e2bf27-1aa4-44c3-ae05-66925462d843",
+   "slug": "teverun-fighter-mini-q",
+   "name": "Teverun Fighter Mini Q",
+   "brand": "Teverun",
+   "candidates": [
+    "https://cdn.shopify.com/s/files/1/0959/8697/5069/files/TEVERUN-FIGHTER-MINI-Q-3-_10.jpg",
+    "https://cdn.shopify.com/s/files/1/0959/8697/5069/files/TEVERUN-FIGHTER-MINI-Q-4-_9.jpg",
+    "https://cdn.shopify.com/s/files/1/0959/8697/5069/files/TEVERUN-FIGHTER-MINI-Q-6-_8.jpg",
+    "https://cdn.shopify.com/s/files/1/0959/8697/5069/files/TEVERUN-FIGHTER-MINI-Q-5-_6.jpg",
+    "https://cdn.shopify.com/s/files/1/0959/8697/5069/files/TROTTINETTEELECTRIQUETEVERUNFIGHTERMINIQ52V13AHPNEUROUTE_5.jpg",
+    "https://cdn.shopify.com/s/files/1/0959/8697/5069/files/Trottinette_Electrique_Teverun_Fighter_Q_Pliable-598149.jpg",
+    "https://cdn.shopify.com/s/files/1/0959/8697/5069/files/Trottinette_Electrique_Teverun_Fighter_Q_guidon-668988.jpg",
+    "https://cdn.shopify.com/s/files/1/0959/8697/5069/files/TEVERUNFIGHTERQ_TROTTINETTEELECTRIQUETEVERUNFIGHTERMINIQ52V13AH_Route.jpg"
+   ]
+  },
+  {
+   "id": "0da85a7f-d5f3-49dc-ba52-ddfab8741615",
+   "slug": "teverun-fighter-mini-v6",
+   "name": "Teverun Fighter Mini V6",
+   "brand": "Teverun",
+   "candidates": [
+    "https://cdn.shopify.com/s/files/1/0959/8697/5069/files/TROTTINETTE_ELECTRIQUE_TEVERUN_FIGHTER_MINI_ECO_CARBONE_52V_20_8AH_2026_4.jpg",
+    "https://cdn.shopify.com/s/files/1/0959/8697/5069/files/TROTTINETTE_ELECTRIQUE_TEVERUN_FIGHTER_MINI_ECO_52V_20_8AH_MOTEUR_BOSCH_2025_7.jpg",
+    "https://cdn.shopify.com/s/files/1/0959/8697/5069/files/TROTTINETTE_ELECTRIQUE_TEVERUN_FIGHTER_MINI_ECO_52V_20_8AH_MOTEUR_BOSCH_2025_8.jpg",
+    "https://cdn.shopify.com/s/files/1/0959/8697/5069/files/TROTTINETTE_ELECTRIQUE_TEVERUN_FIGHTER_MINI_ECO_52V_20_8AH_MOTEUR_BOSCH_2025_10.jpg",
+    "https://cdn.shopify.com/s/files/1/0959/8697/5069/files/TROTTINETTE_ELECTRIQUE_TEVERUN_FIGHTER_MINI_ECO_CARBONE_52V_20_8AH_2026_6.jpg",
+    "https://cdn.shopify.com/s/files/1/0959/8697/5069/files/TROTTINETTE_ELECTRIQUE_TEVERUN_FIGHTER_MINI_ECO_CARBONE_52V_20_8AH_2026_3.jpg",
+    "https://fastride.fr/20279-large_default/trottinette-electrique-teverun-fighter-mini-2026-52v-30ah-finition-carbone.jpg"
+   ]
+  },
+  {
+   "id": "43d0ceac-fac2-438d-9acf-da8bb1bff9ea",
+   "slug": "teverun-fighter-supreme-ultra",
+   "name": "Teverun Fighter Supreme Ultra",
+   "brand": "Teverun",
+   "candidates": [
+    "https://cdn.shopify.com/s/files/1/2476/0976/files/tfsu2-135.webp",
+    "https://cdn.shopify.com/s/files/1/2476/0976/files/tfsu2-90.webp",
+    "https://cdn.shopify.com/s/files/1/2476/0976/files/tfsu-other45.webp",
+    "https://cdn.shopify.com/s/files/1/0684/3190/4923/files/b8909c0dac90838d4d9692be33af1cd1.png",
+    "https://cdn.shopify.com/s/files/1/0684/3190/4923/files/d4a55999bbf3c943fddba2853db2c368.png",
+    "https://cdn.shopify.com/s/files/1/0684/3190/4923/files/367c47c62f77498e09e966fa4589798b.png",
+    "https://cdn.shopify.com/s/files/1/2476/0976/files/tfsu2-45.webp"
+   ]
+  },
+  {
+   "id": "8a52e127-964b-4523-a253-0715e764635a",
+   "slug": "iscooter-i10",
+   "name": "iScooter i10",
+   "brand": "iScooter",
+   "candidates": [
+    "https://cdn.shopify.com/s/files/1/0923/5998/3402/files/1_13fdc9f1-edb1-4f88-a7ab-026c508b90e7.jpg",
+    "https://cdn.shopify.com/s/files/1/0923/5998/3402/files/2_3e674bb9-654e-47b5-b247-5b960156c466.jpg",
+    "https://cdn.shopify.com/s/files/1/0923/5998/3402/files/3_d06a6eba-a8cf-4add-9d21-644428ed276d.jpg",
+    "https://cdn.shopify.com/s/files/1/0923/5998/3402/files/4_4c35e9c7-9d16-4460-87df-8c50e610fd6c.jpg",
+    "https://cdn.shopify.com/s/files/1/0923/5998/3402/files/5_5d522fec-6b5b-487a-82eb-f109c17c7e4b.jpg",
+    "https://cdn.shopify.com/s/files/1/0923/5998/3402/files/6_01f8e139-53d0-4064-a837-a6b6a4f6cfa7.jpg",
+    "https://cdn.shopify.com/s/files/1/0923/5998/3402/files/9_21299246-4e21-4d90-b88e-56d9fbefe09c.jpg",
+    "https://cdn.shopify.com/s/files/1/0923/5998/3402/files/i10_42d3cf05-72c4-4320-be1d-c18d27025b14.png"
+   ]
+  },
+  {
+   "id": "4e10954e-74e1-468b-b46d-d746c2fdf5c1",
+   "slug": "iscooter-i10-max",
+   "name": "iScooter i10 Max",
+   "brand": "iScooter",
+   "candidates": [
+    "https://cdn.shopify.com/s/files/1/0732/5640/3225/files/2_f85ba45e-362a-4f4a-8d31-77d9c0ae56e2.jpg",
+    "https://cdn.shopify.com/s/files/1/0732/5640/3225/files/3_57318673-f918-4881-8b4e-2c2a79df0ee9.jpg",
+    "https://cdn.shopify.com/s/files/1/0732/5640/3225/files/4_4c35e9c7-9d16-4460-87df-8c50e610fd6c.jpg",
+    "https://cdn.shopify.com/s/files/1/0732/5640/3225/files/6_01f8e139-53d0-4064-a837-a6b6a4f6cfa7.jpg",
+    "https://cdn.shopify.com/s/files/1/0732/5640/3225/files/8_52e2424f-83af-44de-be38-ab2cc8edda84.jpg",
+    "https://cdn.shopify.com/s/files/1/0732/5640/3225/files/10_882c4120-27bc-4150-b16f-7d03d1ed7279.jpg"
+   ]
+  },
+  {
+   "id": "544581e7-0e91-4c53-beda-baf4c74a0c2c",
+   "slug": "iscooter-i9-max",
+   "name": "iScooter i9 Max",
+   "brand": "iScooter",
+   "candidates": [
+    "https://cdn.shopify.com/s/files/1/0659/8082/5864/files/iScooteri9MaxElectricScooter_2.jpg",
+    "https://cdn.shopify.com/s/files/1/0659/8082/5864/files/iScooteri9MaxElectricScooter_5.jpg",
+    "https://cdn.shopify.com/s/files/1/0659/8082/5864/files/iScooteri9MaxElectricScooter_6.jpg",
+    "https://cdn.shopify.com/s/files/1/0659/8082/5864/files/iScooteri9MaxElectricScooter_7.jpg",
+    "https://cdn.shopify.com/s/files/1/0659/8082/5864/files/iScooteri9MaxElectricScooter_8.jpg",
+    "https://cdn.shopify.com/s/files/1/0659/8082/5864/files/iScooteri9MaxElectricScooter_9.jpg",
+    "https://cdn.shopify.com/s/files/1/0659/8082/5864/files/iScooteri9MaxElectricScooter_11.jpg",
+    "https://cdn.shopify.com/s/files/1/0659/8082/5864/files/iScooteri9MaxElectricScooter_1.jpg",
+    "https://cdn.shopify.com/s/files/1/0659/8082/5864/files/iScooteri9MaxElectricScooter_3.jpg"
+   ]
+  },
+  {
+   "id": "cb1a19b5-4e37-413c-8b3e-3b4b172b20fd",
+   "slug": "iscooter-ix3",
+   "name": "iScooter iX3",
+   "brand": "iScooter",
+   "candidates": [
+    "https://cdn.shopify.com/s/files/1/0923/5998/3402/files/2_455ea7f4-8c74-4824-a100-d43ddd18a3e4.jpg",
+    "https://cdn.shopify.com/s/files/1/0923/5998/3402/files/3_e4c2eb0d-ca24-47b2-98e4-9fd2a4290772.jpg",
+    "https://cdn.shopify.com/s/files/1/0923/5998/3402/files/4_e1e6a49a-71af-4c2e-95cb-034c57749c2b.jpg",
+    "https://cdn.shopify.com/s/files/1/0923/5998/3402/files/5_1c355037-c332-461e-ad94-61a589df052e.jpg",
+    "https://cdn.shopify.com/s/files/1/0923/5998/3402/files/6_1d9ffb2c-edb1-4fde-b669-2d8a78f72936.jpg",
+    "https://cdn.shopify.com/s/files/1/0923/5998/3402/files/7_67e103c2-18f7-4b7f-835b-f6d8e60990b0.jpg",
+    "https://cdn.shopify.com/s/files/1/0923/5998/3402/files/1_40f92ccf-af0b-4731-9b32-3cf7a83c1002.jpg",
+    "https://cdn.shopify.com/s/files/1/0923/5998/3402/files/1_6b7d30d6-06be-473b-9800-cba7c6d4b671.jpg"
+   ]
+  },
+  {
+   "id": "13b82bb6-ca86-4c9d-9890-1f73ca95f065",
+   "slug": "iscooter-ix8",
+   "name": "iScooter iX8",
+   "brand": "iScooter",
+   "candidates": [
+    "https://cdn.shopify.com/s/files/1/0659/8082/5864/files/ix8-off-road-e-scooter-foldable.jpg",
+    "https://cdn.shopify.com/s/files/1/0659/8082/5864/files/ix8-off-road-e-scooter-brakes.jpg",
+    "https://cdn.shopify.com/s/files/1/0659/8082/5864/files/ix8-off-road-e-scooter-TIRE.jpg",
+    "https://cdn.shopify.com/s/files/1/0659/8082/5864/files/ix8-e-scooter_7.jpg",
+    "https://cdn.shopify.com/s/files/1/0923/5998/3402/files/3_dbeb62e4-962f-48f5-b664-467c0b565c26.jpg",
+    "https://cdn.shopify.com/s/files/1/0923/5998/3402/files/2_6a0a6371-3c58-40f6-9d88-489a61c0a525.jpg",
+    "https://cdn.shopify.com/s/files/1/0659/8082/5864/files/ix8-e-scooter_2.jpg"
+   ]
+  },
+  {
+   "id": "6c8f0c29-a8ea-41d5-96ae-7030bf145140",
+   "slug": "iscooter-w6",
+   "name": "iScooter W6",
+   "brand": "iScooter",
+   "candidates": [
+    "https://cdn.shopify.com/s/files/1/0659/8082/5864/files/w6_14.jpg",
+    "https://cdn.shopify.com/s/files/1/0659/8082/5864/files/w6-detail_1.jpg",
+    "https://cdn.shopify.com/s/files/1/0659/8082/5864/files/w6-detail_2.jpg",
+    "https://cdn.shopify.com/s/files/1/0659/8082/5864/files/w6-detail_5.jpg",
+    "https://cdn.shopify.com/s/files/1/0659/8082/5864/files/w6-display-detail.jpg",
+    "https://cdn.shopify.com/s/files/1/0659/8082/5864/files/w6_1.jpg"
+   ]
+  },
+  {
+   "id": "3841fb15-9983-4d37-b8e0-4d799ebfdca9",
+   "slug": "iscooter-w8",
+   "name": "iScooter W8",
+   "brand": "iScooter",
+   "candidates": [
+    "https://cdn.shopify.com/s/files/1/0659/8082/5864/files/w8_6.jpg",
+    "https://cdn.shopify.com/s/files/1/0659/8082/5864/files/w8_4.jpg",
+    "https://cdn.shopify.com/s/files/1/0659/8082/5864/files/w8-electric-scooter-tire-main_bd07c76d-71ea-46b5-b5d6-5d2cf3c1e870.jpg",
+    "https://cdn.shopify.com/s/files/1/0659/8082/5864/files/w8-electric-scooter-suspensions-main_79371c5a-a0a0-40a5-8b56-26fc0a1c2690.jpg",
+    "https://cdn.shopify.com/s/files/1/0659/8082/5864/files/w8-electric-scooter-display_894d4465-a3a4-44e4-829e-c771a476d584.jpg",
+    "https://cdn.shopify.com/s/files/1/0659/8082/5864/files/w8_1.jpg"
+   ]
+  },
+  {
+   "id": "c179efbc-c143-4b69-9e74-8cf63177ac40",
+   "slug": "iscooter-w9-air",
+   "name": "iScooter W9 Air",
+   "brand": "iScooter",
+   "candidates": [
+    "https://cdn.shopify.com/s/files/1/0659/8082/5864/files/W9Airwithappwhite.png",
+    "https://cdn.shopify.com/s/files/1/0659/8082/5864/files/W9Airbrightrearlight.png",
+    "https://cdn.shopify.com/s/files/1/0659/8082/5864/files/W9Airrearsuspension.png",
+    "https://cdn.shopify.com/s/files/1/0659/8082/5864/files/W9Airbrake.png",
+    "https://cdn.shopify.com/s/files/1/0659/8082/5864/files/W9Airfrontsuspension.png",
+    "https://cdn.shopify.com/s/files/1/0659/8082/5864/files/W9Airlcdscreen.png",
+    "https://cdn.shopify.com/s/files/1/0659/8082/5864/files/W9Airbrightfrontlight.png"
+   ]
+  }
+ ]
+}
