@@ -1,3 +1,1 @@
-dry fix01
-angles rep02cur scooter_models 0.82 toutes:apollo-go,cecotec-bongo-d20,cecotec-bongo-serie-m30-connected,engwe-y400,hiboy-ks4,hiboy-s2-pro,inmotion-air-pro,inokim-light-2-super,iscooter-w9-air,kaabo-mantis-10-elite,kukirin-c1-pro,navee-k100-pro,ninebot-f3-pro-e,segway-gt1,segway-zt3-pro,velity-511-ss,weped-ff,wispeed-airo-v10,yeep-me-85a-evo,apollo-phantom-2-0,cecotec-bongo-doble-y85-2x2-xxl-connected,ducati-pro-iii,engwe-y600,hiboy-ks4-pro,hiboy-s2r-plus,inmotion-climber,inokim-quick-4,isinwheel-gt1,kingsong-e1,langfeite-c1,ninebot-e3,niu-kqi1-pro,segway-gt3,urbanglide-all-road-6-2x2,vsett-10-plus,weped-fold-11,wispeed-airo-v16,bogist-c1-pro,cecotec-bongo-serie-a-advance-connected,e-twow-tanktorq-tk3,f40,hiboy-s2,hikerboy-curtis-dual-pro,inmotion-rs,iscooter-w8,isinwheel-gt2,kuickwheel-s9,langfeite-gt2-mini,ninebot-e3-pro-e,p100s,segway-p65,urbanglide-ecross-one,vsett-11-plus-super,weped-ssgt,xiaomi-electric-scooter-4-pro
-dry vt01
+append vt01

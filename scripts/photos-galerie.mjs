@@ -72,6 +72,19 @@ async function cutout(url) {
     .resize(1600, 1600, { fit: 'inside', withoutEnlargement: true }).png().toBuffer();
 }
 
+// Lot « genere » (25/10) : visuels techniques dessinés par scripts/visuel-technique.py (schéma coté = plusieurs morceaux par
+// nature, le garde-fou photo les refuserait tous). Contrôle dédié : PNG à fond transparent, assez grand, URL de NOTRE dépôt.
+async function genQc(png, url) {
+  const m = await sharp(png).metadata();
+  const reasons = [];
+  if (!m.hasAlpha) reasons.push('pas de transparence');
+  if (Math.max(m.width, m.height) < 600) reasons.push('trop petit');
+  if (!/^https:\/\/raw\.githubusercontent\.com\/nolandiliegro-ops\/piecestrottinettes\.fr\//.test(url)) reasons.push('visuel généré hors dépôt');
+  const verdict = reasons.length ? 'FAIL' : 'PASS';
+  return { verdict, reasons, plus: { verdict }, width: m.width, height: m.height };
+}
+const qcFor = (png, url) => (lot.genere ? genQc(png, url) : photoQcAll(png));
+
 function judge(qc, position) {
   if (qc.verdict !== 'FAIL') return { ok: true, why: qc.reasons };
   if (position === 0) return { ok: false, why: qc.reasons };
@@ -112,7 +125,7 @@ async function dry() {
     for (let i = 0; i < (m.candidates || []).length; i++) {
       const url = m.candidates[i];
       let png = null, qc = null, err = null;
-      try { png = await cutout(url); qc = await photoQcAll(png); } catch (e) { err = e.message.slice(0, 120); }
+      try { png = await cutout(url); qc = await qcFor(png, url); } catch (e) { err = e.message.slice(0, 120); }
       const verdict = err ? 'ERROR' : qc.verdict;
       const short = err ? err : (qc.reasons.join(' · ') || 'ok');
       console.log(`${m.slug} #${i} ${verdict} ${short}`);
@@ -139,7 +152,7 @@ async function write() {
       const url = m.candidates[idx];
       try {
         const png = await cutout(url);
-        const qc = await photoQcAll(png);
+        const qc = await qcFor(png, url);
         const j = judge(qc, APPEND ? 1 : bufs.length);
         if (!j.ok) { console.log(`::warning title=REFUSÉ ${m.slug} #${idx}::${j.why.join(' · ')}`); continue; }
         bufs.push(png);
