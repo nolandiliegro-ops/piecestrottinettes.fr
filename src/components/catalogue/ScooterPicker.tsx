@@ -8,7 +8,7 @@
  * 5 propositions, ?selecteur=1..5 (sans paramètre : page inchangée) :
  * 1 REPASSÉ      · la plaque « Ma trottinette » toujours visible en tête des filtres, ouvre la fenêtre de choix
  * 2 DEUX LISTES  · « Ta trottinette : [Marque] [Modèle] » sous le titre, listes natives (le plus littéral)
- * 3 PLAQUE       · bloc carbone « Quelle est ta trottinette ? » + champ de recherche + raccourcis
+ * 3 PLAQUE       · bloc vert (retenu, défaut) « Quelle est ta trottinette ? » + champ de recherche + raccourcis
  * 4 FRISE        · frise de trottinettes détourées (garage puis plus demandées) + « Autre modèle »
  * 5 BANDEAU      · fine barre collée sous l'en-tête, visible pendant tout le défilement
  */
@@ -33,7 +33,8 @@ const CHAMFER_S = "polygon(0 0, calc(100% - 8px) 0, 100% 8px, 100% 100%, 0 100%)
 
 /** ?selecteur=1..5 → variante ; 0 ou absent → rien (page d'avant). */
 /** Variante en prod sans paramètre (null tant que Nolan n'a pas choisi). */
-export const DEFAULT_PICKER: PickerLook | null = null;
+/** 24/10 : Nolan a retenu la 3 « Plaque », en vert (« j'en ai marre de ce noir »). */
+export const DEFAULT_PICKER: PickerLook | null = 3;
 export const readPickerLook = (sp: URLSearchParams): PickerLook | null => {
   if (sp.get("selecteur") === null) return DEFAULT_PICKER;
   const n = Number(sp.get("selecteur"));
@@ -61,7 +62,7 @@ const usePartCounts = () =>
   }).data ?? {};
 
 const Thumb = ({ url, size = 48, dark = false }: { url?: string | null; size?: number; dark?: boolean }) => (
-  <span className="shrink-0 flex items-center justify-center overflow-hidden" style={{ width: size, height: size, background: dark ? "rgba(255,255,255,0.06)" : "#F5F0E8", clipPath: CHAMFER_S }}>
+  <span className="shrink-0 flex items-center justify-center overflow-hidden" style={{ width: size, height: size, background: dark ? "#F5F0E8" : "#F5F0E8", clipPath: CHAMFER_S }}>
     {url ? <img src={optimizedImage(url, size * 2)} alt="" loading="lazy" className="w-full h-full object-contain p-1" /> : <span className="text-xs text-gray-400">—</span>}
   </span>
 );
@@ -161,15 +162,15 @@ const ChosenLine = ({ scooter, filterOn, count, total, onAll, onFilter, onChange
   <div className="flex items-center gap-3" style={{ fontFamily: FONT }}>
     <Thumb url={scooter.imageUrl} size={56} dark={dark} />
     <div className="flex-1 min-w-0">
-      <p className={cn("text-sm font-semibold leading-tight", dark ? "text-white/60" : "text-gray-500")}>{filterOn ? "Pièces pour ta" : "Ta trottinette"}</p>
+      <p className={cn("text-sm font-semibold leading-tight", dark ? "text-white/80" : "text-gray-500")}>{filterOn ? "Pièces pour ta" : "Ta trottinette"}</p>
       <p className={cn("text-base md:text-lg font-extrabold leading-tight truncate", dark ? "text-white" : "text-carbon")}>{fullName(scooter)}</p>
-      {filterOn && count != null && <p className="text-sm font-bold leading-tight" style={{ color: dark ? "#8FC79E" : GREEN }}>{count} pièce{count > 1 ? "s" : ""} vérifiée{count > 1 ? "s" : ""}</p>}
+      {filterOn && count != null && <p className="text-sm font-bold leading-tight" style={{ color: dark ? "#fff" : GREEN }}>{count} pièce{count > 1 ? "s" : ""} vérifiée{count > 1 ? "s" : ""}</p>}
     </div>
     <div className="flex flex-col md:flex-row items-end md:items-center gap-1 md:gap-2 shrink-0">
       {filterOn
         ? <button type="button" onClick={onAll} className={cn("h-11 px-3 text-sm font-bold underline", dark ? "text-white" : "text-carbon")}>Voir les {total}</button>
         : <button type="button" onClick={onFilter} className="h-11 px-4 text-sm font-bold text-white" style={{ background: GREEN, clipPath: CHAMFER_S }}>Mes pièces</button>}
-      <button type="button" onClick={onChange} className={cn("h-11 px-3 text-sm font-bold", dark ? "text-white/70" : "text-gray-600")}>Changer</button>
+      <button type="button" onClick={onChange} className={cn("h-11 px-3 text-sm font-bold", dark ? "text-white/85" : "text-gray-600")}>Changer</button>
     </div>
   </div>
 );
@@ -222,13 +223,13 @@ export const PickerBlock = (p: PickerProps & { openSheet: () => void }) => {
 
   // 3 · PLAQUE carbone
   if (p.look === 3) return (
-    <div className="mt-5 p-4 md:p-5" style={{ background: CARBON, clipPath: CHAMFER }}>
+    <div className="mt-5 p-4 md:p-5" style={{ background: GREEN, clipPath: CHAMFER }}>
       {chosen ?? (
         <>
           <p className="text-lg md:text-2xl uppercase text-white leading-tight" style={{ fontFamily: UNB, fontWeight: 900, fontStyle: "italic" }}>Quelle est ta trottinette ?</p>
-          <p className="mt-1 text-sm text-white/65" style={{ fontFamily: FONT }}>On ne te montre que les pièces vérifiées pour ton modèle.</p>
-          <button type="button" onClick={p.openSheet} className="mt-3 w-full flex items-center gap-3 h-14 px-4 text-left" style={{ background: "rgba(255,255,255,0.10)", fontFamily: FONT }}>
-            <Search className="w-5 h-5 text-white/60" /><span className="text-base text-white/55">Xiaomi 4 Pro, Dualtron Thunder…</span>
+          <p className="mt-1 text-sm text-white/85" style={{ fontFamily: FONT }}>On ne te montre que les pièces vérifiées pour ton modèle.</p>
+          <button type="button" onClick={p.openSheet} className="mt-3 w-full flex items-center gap-3 h-14 px-4 text-left" style={{ background: "#fff", fontFamily: FONT, clipPath: CHAMFER_S }}>
+            <Search className="w-5 h-5 text-gray-400" /><span className="text-base text-gray-500">Xiaomi 4 Pro, Dualtron Thunder…</span>
           </button>
         </>
       )}

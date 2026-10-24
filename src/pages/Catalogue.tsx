@@ -373,6 +373,7 @@ const Catalogue = () => {
       {/* Main content area */}
       <main className="pt-16 lg:pt-20">
         {/* Title Section - COMPACT for above the fold */}
+        {pickerProps?.look === 5 && <PickerBlock {...pickerProps} openSheet={openPicker} />}
         {vue && (
           <CatalogueTop
             look={vue}
@@ -391,14 +392,13 @@ const Catalogue = () => {
             onStock={(on) => setP((sp) => { if (on) sp.set("stock", "1"); else sp.delete("stock"); })}
             sort={partSort}
             onSort={(v) => setP((sp) => { if (v) sp.set("tri", v); else sp.delete("tri"); })}
-            myScooter={selectedScooter ? { id: selectedScooter.id, name: selectedScooter.name } : null}
+            myScooter={!pickerLook && selectedScooter ? { id: selectedScooter.id, name: selectedScooter.name } : null}
             scooterOn={!!selectedScooter && scooterIdFilter === selectedScooter.id}
             onScooter={(on) => setP((sp) => { if (on && selectedScooter) sp.set("scooter", selectedScooter.id); else sp.delete("scooter"); })}
             pickerBlock={pickerProps && pickerProps.look >= 2 && pickerProps.look <= 4 ? <PickerBlock {...pickerProps} openSheet={openPicker} /> : undefined}
             filtersLead={pickerProps && pickerProps.look === 1 ? <PickerPlate {...pickerProps} openSheet={openPicker} /> : undefined}
           />
         )}
-        {pickerProps?.look === 5 && <PickerBlock {...pickerProps} openSheet={openPicker} />}
         {pickerProps && <PickerSheet open={pickerOpen} onClose={() => setPickerOpen(false)} onPick={pickerProps.onPick} />}
         <section className={vue ? "container mx-auto px-4 text-center" : "container mx-auto px-4 py-6 lg:py-8 text-center"}>
           {!vue && <>
