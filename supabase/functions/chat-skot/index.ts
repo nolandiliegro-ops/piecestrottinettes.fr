@@ -10,7 +10,7 @@ import { serve } from "https://deno.land/std@0.190.0/http/server.ts";
 import { createClient, type SupabaseClient } from "https://esm.sh/@supabase/supabase-js@2.57.2";
 import { classifyCompat, unverifiedLabel, verifiedReason, partDelay } from "../_shared/compat_status.ts";
 
-const VERSION = "chat-skot@2026-10-24b";
+const VERSION = "chat-skot@2026-10-24c";
 const MODEL = "claude-haiku-5-5";
 const MAX_TOOL_ROUNDS = 4;
 const HISTORY_LIMIT = 14;
@@ -483,9 +483,13 @@ serve(async (req) => {
   if (!reply) reply = "Je sèche sur celle-là ! Je peux transmettre ta question à l'atelier si tu me laisses ton email.";
 
   // Cartes : dédoublonnées, 6 max ; on ne montre que les pièces citées dans la réponse si possible
-  const seen = new Set<string>();
-  const cards = ctx.cards.filter((c: any) => (seen.has(c.slug) ? false : (seen.add(c.slug), true)));
-  const cited = cards.filter((c: any) => reply.toLowerCase().includes(String(c.name).toLowerCase().slice(0, 18)));
+  // Dédoublonnage par slug : la version qui porte un statut de compat gagne (recherche brute puis parts_for_scooter = même pièce).
+  const bySlug = new Map<string, any>();
+  for (const c of ctx.cards as any[]) { const prev = bySlug.get(c.slug); if (!prev || (!prev.compat && c.compat)) bySlug.set(c.slug, c); }
+  const cards = [...bySlug.values()];
+  // « Citée » = nom complet présent dans la réponse (un préfixe de 18 caractères attrapait toutes les « Chambre à air 8,5x… »).
+  const low = reply.toLowerCase();
+  const cited = cards.filter((c: any) => low.includes(String(c.name).toLowerCase()));
   // Recette 24/10 : une recherche brute (sans compat) non citée dans la réponse ne s'affiche jamais en carte —
   // sinon SKOT dit « je ne peux pas confirmer » au-dessus de 6 plaquettes au hasard.
   // Quand des cartes portent un statut de compat (question sur une trottinette), les résultats de recherche brute sans statut sont retirés.
