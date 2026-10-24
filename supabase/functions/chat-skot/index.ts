@@ -128,6 +128,11 @@ interface Ctx {
 const words = (q: string) =>
   q.toLowerCase().normalize("NFD").replace(/[̀-ͯ]/g, "").split(/[^a-z0-9.,/x]+/).filter((w) => w.length >= 2).slice(0, 6);
 
+const fullName = (brand: string | null | undefined, name: string | null | undefined) => {
+  const b = (brand ?? "").trim(), n = (name ?? "").trim();
+  return b && !n.toLowerCase().startsWith(b.toLowerCase()) ? `${b} ${n}` : n;
+};
+
 async function scooterBySlug(db: SupabaseClient, slug: string) {
   const { data, error: qErr } = await db.from("scooter_models")
     .select("id, name, slug, voltage, amperage, tire_size, wheel_inches, tire_family, rim_diameter_code, tire_section_code, rim_type, charge_connectors, brake_type, caliper_family, disc_diameter_code, affiliate_link, published, brands!scooter_models_brand_id_fkey(name)")
@@ -172,7 +177,7 @@ async function runTool(name: string, input: Record<string, any>, ctx: Ctx): Prom
       for (const w of ws.slice(0, 4)) q = q.or(`name.ilike.%${w}%,search_terms.ilike.%${w}%,slug.ilike.%${w}%`);
       const { data, error: qErr } = await q.limit(5);
       if (qErr) { console.error("[chat-skot] find_scooter", qErr.message); return { error: "requête impossible", detail: qErr.message }; }
-      return { results: (data ?? []).map((s: any) => ({ name: `${s.brands?.name ?? ""} ${s.name}`.trim(), slug: s.slug })) };
+      return { results: (data ?? []).map((s: any) => ({ name: fullName(s.brands?.name, s.name), slug: s.slug })) };
     }
     case "get_scooter": {
       const s = await scooterBySlug(db, String(input.slug ?? ""));
@@ -187,7 +192,7 @@ async function runTool(name: string, input: Record<string, any>, ctx: Ctx): Prom
       } catch { /* fiche absente : sans effet */ }
       return {
         found: true,
-        name: `${(s.brands as any)?.name ?? ""} ${s.name}`.trim(), slug: s.slug,
+        name: fullName((s.brands as any)?.name, s.name as string), slug: s.slug,
         voltage: s.voltage, amperage: s.amperage, tire_size: s.tire_size, wheel_inches: s.wheel_inches,
         tire_family: s.tire_family, rim_diameter: s.rim_diameter_code, tire_section: s.tire_section_code, rim_type: s.rim_type,
         charge_connectors: s.charge_connectors, brake_type: s.brake_type, caliper_family: s.caliper_family, disc_diameter: s.disc_diameter_code,
@@ -213,7 +218,7 @@ async function runTool(name: string, input: Record<string, any>, ctx: Ctx): Prom
         out.push({ name: card.name, slug: card.slug, price: card.price, in_stock: card.in_stock, delay: card.delay, position: r.position ?? null,
           status: st, ...(st === "verified" ? { reason: verifiedReason(r.suggestion_reason) } : { label: unverifiedLabel(r.suggestion_reason) }) });
       }
-      return { found: true, scooter: `${(s.brands as any)?.name ?? ""} ${s.name}`.trim(), total_listed: rows.length, parts: out };
+      return { found: true, scooter: fullName((s.brands as any)?.name, s.name as string), total_listed: rows.length, parts: out };
     }
     case "check_compatibility": {
       const s = await scooterBySlug(db, String(input.scooter_slug ?? ""));
@@ -314,12 +319,12 @@ async function pageContext(db: SupabaseClient, page: { type?: string; slug?: str
   }
   if (page?.type === "scooter" && page.slug) {
     const s = await scooterBySlug(db, page.slug);
-    if (s) lines.push(`Le client regarde la fiche trottinette « ${(s.brands as any)?.name ?? ""} ${s.name} » (slug ${s.slug}).`);
+    if (s) lines.push(`Le client regarde la fiche trottinette « ${fullName((s.brands as any)?.name, s.name as string)} » (slug ${s.slug}).`);
   }
   if (userId) {
     const { data } = await db.from("user_garage").select("nickname, current_km, last_maintenance_date, scooter_models(name, slug, brands!scooter_models_brand_id_fkey(name))")
       .eq("user_id", userId).order("is_featured", { ascending: false }).limit(3);
-    const g = (data ?? []).map((x: any) => `${x.scooter_models?.brands?.name ?? ""} ${x.scooter_models?.name ?? ""} (slug ${x.scooter_models?.slug ?? "?"}${x.current_km ? `, ${x.current_km} km` : ""}${x.last_maintenance_date ? `, dernier entretien ${String(x.last_maintenance_date).slice(0, 10)}` : ""})`.trim());
+    const g = (data ?? []).map((x: any) => `${fullName(x.scooter_models?.brands?.name, x.scooter_models?.name)} (slug ${x.scooter_models?.slug ?? "?"}${x.current_km ? `, ${x.current_km} km` : ""}${x.last_maintenance_date ? `, dernier entretien ${String(x.last_maintenance_date).slice(0, 10)}` : ""})`.trim());
     if (g.length) lines.push(`Client connecté. Trottinette(s) dans son Garage : ${g.join(" ; ")}. Pars de là sans lui redemander son modèle.`);
     else lines.push("Client connecté, Garage vide.");
   } else {
