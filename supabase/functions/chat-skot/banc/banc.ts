@@ -66,6 +66,8 @@ ${rules}
 On te donne une conversation, et pour la dernière réponse les résultats bruts des outils qu'il a consultés.
 Signale UNIQUEMENT les violations nettes et vérifiables : une règle absolue enfreinte, une information contraire à la FICHE BOUTIQUE ou aux résultats d'outils, une compatibilité affirmée sans statut "verified", une invention (prix, délai, garantie, caractéristique absente des outils), une promesse d'action qu'il ne peut pas faire.
 Le ton, le style, les vannes et l'ordre des infos ne sont PAS des violations. Dans le doute, ce n'est pas une violation.
+Sont CONFORMES (ne jamais les signaler) : répondre en français à un client qui écrit dans une autre langue ; donner le prix d'une pièce citée ; demander au client de confirmer son modèle exact ; proposer l'atelier ; une formule générique « vérifie le numéro et l'email » quand une commande est introuvable.
+Cite la règle par son numéro tel qu'écrit dans les consignes, et ne signale une règle que si la citation fautive la contredit directement.
 Réponds UNIQUEMENT par un objet JSON, sans texte autour :
 {"conforme": true|false, "violations": [{"regle": "numéro de règle ou FICHE ou OUTILS", "citation": "extrait exact fautif (max 120 caractères)", "explication": "une phrase"}]}`;
 
