@@ -31,9 +31,10 @@ const Atelier = () => {
   // 24/10 : 5 propositions de haut de page derrière ?atelier=1..5 (Nolan : « ça va pas du tout… il manque des images »).
   // Sans paramètre : rendu d'origine (seul le décalage sous la barre fixe est corrigé).
   const variant = Math.max(0, Math.min(5, Number(params.get("atelier") ?? 0) || 0));
-  const vthumb = videos?.[0] ? `https://i.ytimg.com/vi/${videos[0].id}/hqdefault.jpg` : "/brand-heroes/dualtron.webp";
+  // Photos maison (pas de vignette YouTube tierce en porte d'entrée : titres en langue étrangère).
+  const vthumb = "/brand-heroes/dualtron.webp";
   const doors = [
-    { to: "/blog", icon: BookOpen, title: "Guides", text: "Choisir, comparer, entretenir.", count: guides?.length, unit: "guide", img: "/brand-heroes/xiaomi.webp" },
+    { to: "/blog", icon: BookOpen, title: "Guides", text: "Choisir, comparer, entretenir.", count: guides?.length, unit: "guide", img: "/brand-heroes/navee.webp" },
     { to: "/atelier/videos", icon: PlayCircle, title: "Vidéos", text: "Les meilleurs tests, rangés par trottinette.", count: videos?.length, unit: "vidéo", img: vthumb },
     { to: "/tutos", icon: Wrench, title: "Tutos", text: "Changer un pneu, des plaquettes, un chargeur.", count: undefined, unit: "", img: "/categories/pneus-a.webp" },
     { to: "#question", icon: MessageCircleQuestion, title: "Questions", text: "Pose ta question, un réparateur répond.", count: questions?.length, unit: "réponse", img: "/categories/plaquettes-a.webp" },
