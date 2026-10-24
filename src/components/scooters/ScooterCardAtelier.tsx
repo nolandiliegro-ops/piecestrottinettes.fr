@@ -9,6 +9,7 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 import { getPrimaryImage } from "@/lib/entityImage";
 import { optimizedImage } from "@/lib/imageTransform";
+import { StatusOnCard, StampOnPhoto, type EtiquetteLook, type WithCommercialStatus } from "@/components/scooter/CommercialStatus";
 
 const UNB = "'Unbounded', sans-serif";
 const FONT = "'Plus Jakarta Sans', sans-serif";
@@ -27,7 +28,7 @@ export const readCartesLook = (p: URLSearchParams): CarteLook | null => {
   return n >= 1 && n <= 5 ? (n as CarteLook) : null;
 };
 
-export interface AtelierScooter {
+export interface AtelierScooter extends WithCommercialStatus {
   id: string;
   name: string;
   slug: string;
@@ -89,7 +90,8 @@ const Name = ({ s, color = CARBON, size = "text-[15px]" }: { s: AtelierScooter; 
 
 const spec = (s: AtelierScooter) => [s.voltage ? `${s.voltage} V` : null, s.power_watts ? `${s.power_watts} W` : null, s.wheel_inches ? `${s.wheel_inches}"` : null].filter(Boolean).join(" · ");
 
-export const ScooterCardAtelier = ({ s, look, index }: { s: AtelierScooter; look: CarteLook; index: number }) => {
+// 24/10 : statut commercial (en vente / plus vendue neuve), 5 propositions ?etiquette=1..5 — sans paramètre, carte inchangée.
+export const ScooterCardAtelier = ({ s, look, index, etiquette = null }: { s: AtelierScooter; look: CarteLook; index: number; etiquette?: EtiquetteLook | null }) => {
   const n = s.compatible_parts_count ?? 0;
   const eager = index < 6;
   const to = `/scooter/${s.slug}`;
@@ -118,6 +120,7 @@ export const ScooterCardAtelier = ({ s, look, index }: { s: AtelierScooter; look
   return (
     <Link to={to} className="group block relative pt-12 md:pt-16">
       {/* La trott sort de sa plaque — 24/10 (Nolan : « plus grosses, plus imposantes ») : photo agrandie, 3 colonnes sur ordinateur. */}
+      {etiquette === 2 && <StampOnPhoto s={s} />}
       <Img s={s} eager={eager} className={`absolute z-10 left-1/2 -translate-x-1/2 top-0 object-contain transition-transform duration-300 group-hover:-translate-y-1.5 ${look === 4 ? "w-[112%] h-[190px] md:h-[260px] lg:h-[320px]" : "w-[96%] h-[160px] md:h-[190px]"}`} />
       <div className="relative" style={{ background: plateBg, clipPath: cut(16), boxShadow: look === 2 ? undefined : `inset 0 0 0 1px ${LINE}` }}>
         {band && <div className="absolute inset-x-0 top-0 h-[96px] md:h-[116px]" style={{ background: band }} />}
@@ -125,6 +128,7 @@ export const ScooterCardAtelier = ({ s, look, index }: { s: AtelierScooter; look
         <div className={`relative px-3 pb-3 flex flex-col gap-1.5 ${look === 4 ? "pt-[146px] md:pt-[206px] lg:pt-[262px]" : "pt-[118px] md:pt-[148px]"}`}>
           <div className="flex items-center justify-between gap-2"><Logo s={s} dark={look === 2} /></div>
           <Name s={s} color={look === 2 ? "#FFFFFF" : CARBON} />
+          {etiquette && etiquette !== 2 && <StatusOnCard s={s} look={etiquette} />}
           {look === 4 && spec(s) && <p className="text-sm" style={{ fontFamily: FONT, color: "#6B7280" }}>{spec(s)}</p>}
           {look === 4 ? (
             <div className="mt-1 flex items-end justify-between" style={{ borderTop: `1px solid ${LINE}`, paddingTop: 8 }}>

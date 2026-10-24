@@ -1,0 +1,54 @@
+# Rendu des propositions visuelles (24/10/2026) — lecture seule, n'écrit jamais en base.
+# Pousser une branche « propositions-* » qui modifie config/rendu/_run.txt (une ligne = un lot : config/rendu/<lot>.json).
+# Le runner builde LA BRANCHE, la sert en local, capture téléphone + ordinateur avec les vraies données publiques,
+# et pousse les JPEG sur la branche donnees-rendu (out/<lot>/). Rien n'est publié.
+name: rendu-propositions
+
+on:
+  push:
+    branches: ['propositions-*']
+    paths: ['config/rendu/_run.txt']
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  rendu:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - name: Dépendances du site (registre public, sans lockfile)
+        run: |
+          rm -f package-lock.json bun.lockb
+          npm install --ignore-scripts --no-audit --no-fund
+      - name: Build + serveur local
+        run: |
+          npx vite build
+          nohup npx vite preview --host 127.0.0.1 --port 4173 > /tmp/preview.log 2>&1 &
+          for i in $(seq 1 30); do curl -sf http://127.0.0.1:4173/ > /dev/null && break; sleep 1; done
+      - name: Playwright
+        run: |
+          mkdir -p /tmp/pw && cd /tmp/pw && npm init -y > /dev/null && npm install playwright@1 --no-audit --no-fund
+          npx playwright install --with-deps chromium
+      - name: Captures
+        run: |
+          mkdir -p out
+          while read -r lot; do
+            [ -z "$lot" ] && continue
+            PW_REQUIRE=/tmp/pw/package.json node scripts/rendu-propositions.mjs "config/rendu/$lot.json" "out/$lot"
+          done < config/rendu/_run.txt
+      - name: Résultats → branche donnees-rendu
+        run: |
+          git config user.name "rendu-bot"; git config user.email "rendu-bot@users.noreply.github.com"
+          LOTS=$(tr '\n' ' ' < config/rendu/_run.txt)
+          cp -r out /tmp/out
+          git fetch origin donnees-rendu || true
+          if git rev-parse --verify origin/donnees-rendu > /dev/null 2>&1; then git checkout -B donnees-rendu origin/donnees-rendu; else git checkout --orphan donnees-rendu; git rm -rf . > /dev/null; fi
+          mkdir -p out && cp -r /tmp/out/* out/
+          git add out && git commit -m "rendu: $LOTS" || echo "rien à committer"
+          git push origin donnees-rendu
