@@ -69,7 +69,7 @@ const Thumb = ({ url, size = 48, dark = false }: { url?: string | null; size?: n
 /* ─────────────── Fenêtre de choix (plein écran au téléphone, panneau à l'ordinateur) ─────────────── */
 export const PickerSheet = ({ open, onClose, onPick }: { open: boolean; onClose: () => void; onPick: (s: SelectedScooter) => void }) => {
   const { allScooters, selectedScooter } = useSelectedScooter();
-  const { scooters: garage = [] } = useGarageScooters();
+  const garage = useGarageScooters().scooters ?? [];
   const counts = usePartCounts();
   const [q, setQ] = useState("");
   const inputRef = useRef<HTMLInputElement>(null);
@@ -211,7 +211,7 @@ export const PickerPlate = (p: PickerProps & { openSheet: () => void }) => {
 /** Blocs des variantes 2 à 5 (sous le titre). La variante 1 vit dans les filtres (PickerPlate). */
 export const PickerBlock = (p: PickerProps & { openSheet: () => void }) => {
   const { selectedScooter, allScooters } = useSelectedScooter();
-  const { scooters: garage = [] } = useGarageScooters();
+  const garage = useGarageScooters().scooters ?? [];
   const counts = usePartCounts();
   const chosen = selectedScooter ? (
     <ChosenLine scooter={selectedScooter} filterOn={p.filterOn} count={p.count} total={p.total} onAll={() => p.onFilter(false)} onFilter={() => p.onFilter(true)} onChange={p.openSheet} dark={p.look === 3} />
