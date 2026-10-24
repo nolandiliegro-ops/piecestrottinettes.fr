@@ -1,0 +1,157 @@
+{
+ "displayName": "Apollo City Pro",
+ "metaTitle": "Apollo City Pro : fiche technique, pneus et pièces",
+ "metaDescription": "Apollo City Pro : 2 moteurs de 500 W, batterie 48 V 20 Ah (960 Wh), pneus tubeless 10x2.70-6.5, tambours, IP66. Fiche, pneus compatibles et FAQ.",
+ "intro": [
+  "L'Apollo City Pro est la trottinette de ville à deux moteurs qu'Apollo a vendue avant sa nouvelle gamme 2026. Deux moteurs de 500 W nominaux, une batterie de 48 V et des pneus tubeless auto-obturants de 10 pouces : la version 2023-2024 passe à 20 Ah (960 Wh), contre 18 Ah pour celle de 2022.",
+  "Apollo annonce jusqu'à 69 km d'autonomie et 51 km/h hors voie publique, pour environ 29,5 kg et 120 kg de charge maximale. Elle freine avec deux tambours et un frein régénératif, et sa triple suspension à ressorts est souvent citée par les testeurs comme son point fort."
+ ],
+ "specs": [
+  [
+   "Moteurs",
+   "2 × 500 W nominaux ; 2 × 1 000 W en pointe selon un revendeur européen"
+  ],
+  [
+   "Vitesse",
+   "25 km/h sur la voie publique ; 51 km/h annoncés, réservés à un terrain privé"
+  ],
+  [
+   "Autonomie annoncée",
+   "jusqu'à 69 km (version 20 Ah, mode Eco)"
+  ],
+  [
+   "Autonomie mesurée",
+   "environ 35 km pour un testeur de 98 kg (Electric Scooter Guide, cité par SickEBike)"
+  ],
+  [
+   "Batterie",
+   "48 V, 20 Ah, 960 Wh (2023-2024) ; 48 V, 18 Ah (2022)"
+  ],
+  [
+   "Poids",
+   "environ 29,5 kg"
+  ],
+  [
+   "Charge max",
+   "120 kg"
+  ],
+  [
+   "Roues",
+   "10 pouces, tubeless auto-obturants 10x2.70-6.5"
+  ],
+  [
+   "Freins",
+   "Tambour avant et arrière + freinage régénératif"
+  ],
+  [
+   "Suspension",
+   "Triple ressort (1 à l'avant, 2 à l'arrière)"
+  ],
+  [
+   "Étanchéité",
+   "IP66 (2023-2024)"
+  ],
+  [
+   "Chargeur",
+   "54,6 V (batterie 48 V), même chargeur pour les City 2022 à 2024 selon Apollo"
+  ],
+  [
+   "Temps de charge",
+   "4,5 h selon plusieurs revendeurs, 6 h selon un autre"
+  ]
+ ],
+ "pros": [
+  "Jusqu'à 48 km mesurés en roulant doucement (test YouTube 2023).",
+  "Confort jugé très haut pour son prix grâce à la triple suspension (test YouTube 2023).",
+  "Freins tambour et régénératif quasi sans entretien (Apollo).",
+  "Pneus tubeless 10x2.70-6.5 faciles à trouver hors réseau Apollo (forum r/ApolloScooters)."
+ ],
+ "cons": [
+  "Autonomie réelle autour de la moitié du chiffre annoncé selon les tests.",
+  "Remplacer un pneu tubeless sur cette roue reste une opération délicate.",
+  "Modèle remplacé par la City 2.0 et la City Stellar chez Apollo.",
+  "Deux générations (2022 et 2023-2024) aux batteries différentes : vérifie la tienne avant d'acheter une pièce."
+ ],
+ "parts": [
+  {
+   "label": "Pneu",
+   "size": "10x2.70-6.5 tubeless",
+   "count": 6,
+   "to": "/piece/pneu-tubeless-10x2-70-6-5-cityroad-ewheel",
+   "cta": "Pneus 10x2.70-6.5"
+  }
+ ],
+ "care": [
+  "Contrôle la pression chaque semaine : Apollo recommande 45 PSI (environ 3,1 bars) dans son manuel.",
+  "Si le freinage faiblit, règle d'abord le tendeur de câble des tambours avant de penser à changer les mâchoires.",
+  "Ne laisse pas la trottinette branchée des jours entiers : débranche le chargeur une fois la charge terminée, comme le demande le manuel Apollo."
+ ],
+ "price": {
+  "text": "1 699,95 € chez le revendeur allemand ecraft pour la City Pro 2024, affichée indisponible. Aucune boutique Apollo France trouvée. Prix susceptible de varier.",
+  "source": "ecraft-shop.de"
+ },
+ "faq": [
+  {
+   "q": "Quelle taille de pneu pour l'Apollo City Pro ?",
+   "a": "Un pneu tubeless 10x2.70-6.5, sur les versions 2022, 2023 et 2024. La cote est moulée sur le flanc : vérifie-la avant de commander, certains pneus 10x2.75 ne se montent pas aussi bien."
+  },
+  {
+   "q": "Quelle différence entre la City Pro 2022 et 2023 ?",
+   "a": "La 2023-2024 passe d'une batterie de 18 Ah à 20 Ah, gagne en autonomie annoncée et reçoit l'indice IP66. Moteurs, freins, suspension et taille de pneu restent les mêmes."
+  },
+  {
+   "q": "Quel chargeur pour l'Apollo City Pro ?",
+   "a": "Un chargeur 48 V, qui délivre 54,6 V en fin de charge. Apollo vend le même chargeur pour les City et City Pro 2022 à 2024. Vérifie aussi la forme de la prise de ta trottinette avant d'en commander un autre."
+  },
+  {
+   "q": "L'Apollo City Pro est-elle autorisée sur la route ?",
+   "a": "Oui, à condition de rouler à 25 km/h maximum : c'est la limite française pour une trottinette électrique. Les 51 km/h annoncés sont réservés à un terrain privé, et le débridage reste interdit sur la voie publique."
+  },
+  {
+   "q": "Quelle autonomie réelle pour l'Apollo City Pro ?",
+   "a": "Un testeur d'environ 98 kg a parcouru près de 35 km, loin des 69 km annoncés en mode Eco. Plus léger et plus doux sur l'accélérateur, tu feras mieux."
+  }
+ ],
+ "sources": [
+  {
+   "label": "Electric Scooter Guide — Apollo City Pro",
+   "url": "https://electricscooterguide.com/apollo-city-pro-review/"
+  },
+  {
+   "label": "YouTube — Apollo City Review: A Game-Changing Electric Scooter!",
+   "url": "https://www.youtube.com/watch?v=91YsxmAeD-c"
+  },
+  {
+   "label": "ERideHero — Apollo City Pro",
+   "url": "https://eridehero.com/apollo-city-pro-electric-scooter-review/"
+  },
+  {
+   "label": "ecraft — Apollo City Pro 2024",
+   "url": "https://www.ecraft-shop.de/en/produkt/apollo-city-2024/apollo-city-pro-2024"
+  },
+  {
+   "label": "Brothers Mobility — Apollo City Pro 2023",
+   "url": "https://www.brothers.mu/apollo-city-pro"
+  },
+  {
+   "label": "Apollo — chargeur City 2023-24",
+   "url": "https://apolloscooters.co/products/apollo-city-city-pro-2023-charger-assembly"
+  },
+  {
+   "label": "E-Craft — pneu CST 10x2.70-6.5 (Apollo City)",
+   "url": "https://www.e-craft.at/en/produkt/cst-10x2.70-6.5-inch-tubeless-tire/pn-79"
+  },
+  {
+   "label": "Reddit r/ApolloScooters — pneus City",
+   "url": "https://www.reddit.com/r/ApolloScooters/comments/1d2wpav/city_replacement_tires/"
+  },
+  {
+   "label": "SickEBike — Apollo City Pro",
+   "url": "https://sickebike.com/articles/apollo-city-pro"
+  },
+  {
+   "label": "Manuel Apollo City Pro",
+   "url": "https://manuals.plus/m/26146aae025b2f478efd1da3b14bb1842f6bd66b9669709f0f82f42cba32e0d1"
+  }
+ ]
+}

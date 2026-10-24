@@ -1,0 +1,128 @@
+{
+ "displayName": "Ootd T10",
+ "metaTitle": "Ootd T10 : fiche technique, batterie et freins",
+ "metaDescription": "Ootd T10 : moteur 48 V de 900 W, batterie 13,5 ou 18 Ah, roues tubeless de 11 pouces, deux disques de 140 mm, double suspension. Fiche et entretien.",
+ "intro": [
+  "L'Ootd T10 est une trottinette mono-moteur à grandes roues : pneus tubeless hybrides de 11 pouces, suspensions à ressort à l'avant et à l'arrière, moteur arrière de 48 V. Ootd l'annonce à 900 W ; Darty et Amazon parlent de 500 W nominaux et 900 W en pointe.",
+  "Elle existe avec deux batteries de 48 V : 13,5 Ah (environ 27,2 kg) et 18 Ah (environ 28,1 kg). Ootd annonce 45 à 60 km d'autonomie selon les conditions. Le freinage est confié à deux disques mécaniques de 140 mm, et la charge prend 6 à 7 heures selon la fiche française d'Ootd."
+ ],
+ "specs": [
+  [
+   "Moteur",
+   "900 W selon Ootd ; 500 W nominaux et 900 W en pointe selon Darty et Amazon"
+  ],
+  [
+   "Vitesse",
+   "25 km/h sur la voie publique ; 50 km/h annoncés par Ootd, réservés à un terrain privé"
+  ],
+  [
+   "Autonomie annoncée",
+   "45 à 60 km selon Ootd ; jusqu'à 80 km en version 18 Ah, mode lent et pilote de 60 kg"
+  ],
+  [
+   "Batterie",
+   "48 V, 13,5 Ah (648 Wh) ou 18 Ah (864 Wh)"
+  ],
+  [
+   "Poids",
+   "environ 27,2 kg (13,5 Ah) ou 28,1 kg (18 Ah)"
+  ],
+  [
+   "Charge max",
+   "120 kg selon Ootd ; 150 kg sur Amazon"
+  ],
+  [
+   "Roues",
+   "11 pouces, tubeless hybrides"
+  ],
+  [
+   "Freins",
+   "Disques mécaniques avant et arrière, 140 mm"
+  ],
+  [
+   "Suspension",
+   "Ressorts avant et arrière"
+  ],
+  [
+   "Étanchéité",
+   "IP54 (selon Amazon)"
+  ],
+  [
+   "Temps de charge",
+   "6 à 7 h (chargeur 54,6 V, 3 A selon Darty)"
+  ]
+ ],
+ "pros": [
+  "Grandes roues de 11 pouces et double suspension pour une trottinette de ce prix (Ootd).",
+  "Deux capacités de batterie au choix, 13,5 ou 18 Ah (Ootd).",
+  "Freinage sans difficulté lors de l'essai du Vélo Urbain."
+ ],
+ "cons": [
+  "Puissance moteur annoncée différemment selon les vendeurs (500 ou 900 W).",
+  "Le Vélo Urbain plafonnait à 23 km/h en mode bridé et estime environ 30 km d'autonomie réelle.",
+  "Freins mécaniques à câble seulement.",
+  "Plus de 27 kg, ce qui limite le portage."
+ ],
+ "parts": [
+  {
+   "label": "Disque de frein",
+   "size": "140 mm, entraxe 44 mm",
+   "count": 3,
+   "to": "/piece/disque-de-frein-r6-140mm-entraxe-44mm-3-couleurs-rouge",
+   "cta": "Disques 140 mm"
+  }
+ ],
+ "care": [
+  "Règle le jeu des étriers à câble dès qu'un disque frotte : un frottement permanent chauffe le disque et grignote ton autonomie.",
+  "Vérifie le serrage des vis de suspension et de l'axe de roue après les premiers 100 km, puis tous les mois.",
+  "Si tu as la version 13,5 Ah, évite de descendre sous 10 % de batterie : la tension chute vite en fin de décharge."
+ ],
+ "price": {
+  "text": "Version 13,5 Ah affichée 479 € sur la boutique française d'Ootd ; version 18 Ah à 489 € chez Boulanger. Prix susceptible de varier.",
+  "source": "fr.o-otd.com"
+ },
+ "faq": [
+  {
+   "q": "Quelle taille de pneu pour l'Ootd T10 ?",
+   "a": "Des pneus tubeless de 11 pouces. La cote 90/65-6.5 circule pour la gamme T10, mais une seule source la confirme pour ce modèle : lis l'inscription sur le flanc de ton pneu avant de commander."
+  },
+  {
+   "q": "Quelle batterie choisir sur l'Ootd T10 ?",
+   "a": "La 18 Ah (864 Wh) ajoute environ 0,9 kg et nettement plus d'autonomie que la 13,5 Ah (648 Wh). Pour des trajets quotidiens au-delà de 20 km, elle a plus de sens."
+  },
+  {
+   "q": "Peut-on dépasser 25 km/h avec l'Ootd T10 ?",
+   "a": "Sur la voie publique, non : tu restes à 25 km/h, limite légale française et réglage de sortie d'usine. La vitesse supérieure annoncée par Ootd ne concerne qu'un usage sur terrain privé."
+  },
+  {
+   "q": "Quel chargeur pour l'Ootd T10 ?",
+   "a": "Il faut un chargeur 48 V (sortie 54,6 V). Darty mentionne un modèle de 3 A pour une charge en 6 à 7 heures."
+  },
+  {
+   "q": "Quelle différence entre l'Ootd T10 et l'Ootd T10 Pro ?",
+   "a": "La T10 Pro passe à deux moteurs, une batterie 52 V de 23,4 Ah et des freins hydrauliques, pour environ 40,5 kg contre 28 kg pour la T10."
+  }
+ ],
+ "sources": [
+  {
+   "label": "Ootd France — T10",
+   "url": "https://fr.o-otd.com/products/ootd-t10-e-scooter"
+  },
+  {
+   "label": "Darty — Ootd T10 18 Ah",
+   "url": "https://www.darty.com/nav/achat/ref/MC353595117.html"
+  },
+  {
+   "label": "Amazon — Ootd T10",
+   "url": "https://www.amazon.fr/OOTD-T10-Trottinette-Electrique-Trotinette/dp/B0FQTKTC93"
+  },
+  {
+   "label": "Boulanger — Ootd T10",
+   "url": "https://www.boulanger.com/ref/9000921757"
+  },
+  {
+   "label": "YouTube — Test de la surprenante trottinette électrique OOTD T10",
+   "url": "https://www.youtube.com/watch?v=xUnv9-V4U_0"
+  }
+ ]
+}

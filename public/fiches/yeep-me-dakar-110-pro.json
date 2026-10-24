@@ -1,0 +1,123 @@
+{
+  "displayName": "Yeep.me Dakar 110 Pro",
+  "metaTitle": "Yeep.me Dakar 110 Pro : fiche technique 48 V",
+  "metaDescription": "Yeep.me Dakar 110 Pro : moteur 48 V de 1 000 W (1 800 W en pointe), batterie 18 Ah 864 Wh, roues tubeless 11 pouces, freins hydrauliques. Fiche et FAQ.",
+  "intro": [
+    "La Dakar 110 Pro est la trottinette tout chemin de Yeep.me : moteur arrière de 48 V de 1 000 W nominaux et 1 800 W en pointe, batterie de 18 Ah (864 Wh) et roues de 11 pouces en pneus tubeless à crampons, selon Yeep.me, Darty et Boulanger.",
+    "Elle freine avec deux disques hydrauliques, combine fourche hydraulique et amortisseurs arrière, et revendique une étanchéité IPX6, IPX7 pour la batterie et le moteur. Yeep.me annonce jusqu'à 70 km d'autonomie pour un poids de 32 kg et 120 kg de charge maximale."
+  ],
+  "specs": [
+    [
+      "Moteur",
+      "1 000 W nominaux, 1 800 W en pointe (48 V) ; 1 600 W en pointe sur la fiche Boulanger"
+    ],
+    [
+      "Vitesse",
+      "25 km/h"
+    ],
+    [
+      "Autonomie annoncée",
+      "jusqu'à 70 km"
+    ],
+    [
+      "Batterie",
+      "48 V, 18 Ah, 864 Wh"
+    ],
+    [
+      "Poids",
+      "32 kg"
+    ],
+    [
+      "Charge max",
+      "120 kg"
+    ],
+    [
+      "Roues",
+      "11 pouces, tubeless tout chemin"
+    ],
+    [
+      "Freins",
+      "Disques hydrauliques avant et arrière"
+    ],
+    [
+      "Suspension",
+      "Fourche hydraulique avant + amortisseurs arrière"
+    ],
+    [
+      "Étanchéité",
+      "IPX6 (batterie et moteur IPX7)"
+    ],
+    [
+      "Temps de charge",
+      "environ 8 h selon Darty et Boulanger"
+    ]
+  ],
+  "pros": [
+    "Étanchéité IPX6 sur l'ensemble, IPX7 pour la batterie et le moteur (Yeep.me, Boulanger).",
+    "Freins hydrauliques sur les deux roues (Yeep.me, Darty).",
+    "Plateau extra-large de 20 cm et garde au sol de 19 cm (Yeep.me).",
+    "Garantie étendue à 5 ans, batterie garantie 25 000 km (Yeep.me)."
+  ],
+  "cons": [
+    "32 kg : on la roule plus qu'on ne la porte.",
+    "Charge maximale de 120 kg seulement pour un modèle tout chemin.",
+    "Le tableau technique de la page Yeep.me reprend des valeurs d'un autre modèle (1 200 W, 13,5 Ah) : fie-toi au descriptif.",
+    "Puissance de pointe annoncée différemment chez Boulanger (1 600 W)."
+  ],
+  "parts": [],
+  "care": [
+    "Même étanche, ne la passe pas au jet haute pression : l'eau sous pression force les joints que l'IPX6 ne couvre pas.",
+    "Après une sortie sur chemin, nettoie la boue autour des étriers hydrauliques et des amortisseurs avant qu'elle sèche.",
+    "Gonfle les pneus tubeless à la pression inscrite sur leur flanc et vérifie l'état des valves tous les mois."
+  ],
+  "price": {
+    "text": "Affichée 869 € sur la boutique Yeep.me (999 € barré). Prix susceptible de varier.",
+    "source": "yeep.me"
+  },
+  "faq": [
+    {
+      "q": "Quelle taille de pneu pour la Yeep.me Dakar 110 Pro ?",
+      "a": "Des pneus tubeless tout chemin de 11 pouces. La cote complète n'est pas publiée : lis-la sur le flanc de ton pneu avant de commander."
+    },
+    {
+      "q": "La Dakar 110 Pro est-elle vraiment étanche ?",
+      "a": "Yeep.me la certifie IPX6 dans son ensemble, avec batterie et moteur en IPX7, résistants à une immersion de courte durée. Ce n'est pas une invitation à traverser des gués."
+    },
+    {
+      "q": "À quelle vitesse rouler en Dakar 110 Pro sur la route ?",
+      "a": "25 km/h au maximum, comme le règle Yeep.me : au-delà, une trottinette n'a plus le droit de circuler sur la voie publique en France."
+    },
+    {
+      "q": "Quels freins sur la Yeep.me Dakar 110 Pro ?",
+      "a": "Deux freins à disque hydrauliques de grand diamètre, à l'avant et à l'arrière."
+    },
+    {
+      "q": "Combien de temps pour recharger la Dakar 110 Pro ?",
+      "a": "Environ 8 heures selon Darty et Boulanger, pour une batterie de 864 Wh."
+    }
+  ],
+  "sources": [
+    {
+      "label": "Yeep.me — Dakar 110 Pro",
+      "url": "https://yeep.me/trottinettes-electriques/1864-dakar-110-pro-by-yeepme-2026-3700293223922.html"
+    },
+    {
+      "label": "Darty — Yeep.me Dakar 110 Pro",
+      "url": "https://www.darty.com/nav/achat/ref/MC352857802.html"
+    },
+    {
+      "label": "Boulanger — Yeep.me Dakar 110 Pro",
+      "url": "https://www.boulanger.com/ref/9000921136"
+    },
+    {
+      "label": "YouTube — Une trottinette waterproof à moins de 900 euros ! (TaytechTV)",
+      "url": "https://www.youtube.com/watch?v=FZuK8nndRV4"
+    }
+  ],
+  "video": {
+    "id": "FZuK8nndRV4",
+    "title": "Une trottinette waterproof à moins de 900 euros ! La Yeep.me Dakar 110 Pro",
+    "channel": "TaytechTV",
+    "uploadDate": "2026-09-14"
+  }
+}

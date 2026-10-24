@@ -1,0 +1,124 @@
+{
+  "displayName": "Ootd T90",
+  "metaTitle": "Ootd T90 : fiche technique 60 V et roues 13 pouces",
+  "metaDescription": "Ootd T90 : deux moteurs de 2 100 W, batterie 60 V 31,2 Ah, roues tubeless de 13 pouces, freins hydrauliques 160 mm, 54 kg. Fiche technique et pièces.",
+  "intro": [
+    "L'Ootd T90 est la trottinette la plus puissante d'Ootd : deux moteurs de 2 100 W nominaux et 3 000 W en pointe chacun, une batterie de 60 V et 31,2 Ah (environ 1 872 Wh) et des roues tubeless de 13 pouces. Elle est aussi vendue sous le nom Apefox T90.",
+    "Ootd annonce jusqu'à 100 km d'autonomie, 54,2 kg et 150 kg de charge maximale. Elle freine avec deux disques hydrauliques de 160 mm, s'appuie sur une double fourche hydraulique à l'avant et un double ressort à l'arrière, et se recharge en 7 à 8 heures."
+  ],
+  "specs": [
+    [
+      "Moteurs",
+      "2 × 2 100 W nominaux ; 2 × 3 000 W en pointe"
+    ],
+    [
+      "Vitesse",
+      "25 km/h sur la voie publique ; 85 km/h annoncés par Ootd, réservés à un terrain privé"
+    ],
+    [
+      "Autonomie annoncée",
+      "jusqu'à 100 km"
+    ],
+    [
+      "Batterie",
+      "60 V, 31,2 Ah, environ 1 872 Wh"
+    ],
+    [
+      "Poids",
+      "environ 54,2 kg"
+    ],
+    [
+      "Charge max",
+      "150 kg"
+    ],
+    [
+      "Roues",
+      "13 pouces, tubeless"
+    ],
+    [
+      "Freins",
+      "Disques hydrauliques avant et arrière, 160 mm"
+    ],
+    [
+      "Suspension",
+      "Double hydraulique avant (1 350 lb), double ressort arrière (1 400 lb)"
+    ],
+    [
+      "Étanchéité",
+      "IPX4 selon le manuel et Oolactive ; IP54 selon le testeur Zerorider"
+    ],
+    [
+      "Temps de charge",
+      "7 à 8 h (chargeur 5 A)"
+    ]
+  ],
+  "pros": [
+    "Très stable à haute vitesse sur terrain privé, sans guidonnage (tests TaytechTV et Zerorider).",
+    "Freins hydrauliques à double piston sur disques de 160 mm (Zerorider).",
+    "Batterie d'environ 1 872 Wh (Ootd)."
+  ],
+  "cons": [
+    "Plus de 54 kg : ni portable ni facile à ranger en appartement.",
+    "Pas d'amortisseur de direction (test TaytechTV).",
+    "Indice d'étanchéité annoncé différemment selon les sources.",
+    "Dimension exacte des pneus absente des fiches officielles."
+  ],
+  "parts": [
+    {
+      "label": "Disque de frein",
+      "size": "160 mm, entraxe 44 mm",
+      "count": 6,
+      "to": "/piece/disque-de-frein-r6-160mm-entraxe-44m-3-couleurs-vert",
+      "cta": "Disques 160 mm"
+    }
+  ],
+  "care": [
+    "Gonfle sans excès : le testeur Zerorider conseille de ne pas dépasser environ 2,5 bars sur ces gros pneus de 13 pouces.",
+    "Avec plus de 54 kg et 6 000 W en pointe, vérifie les axes de roue et les bras de suspension toutes les deux semaines.",
+    "Remplace les plaquettes par paire et rode-les par une série de freinages progressifs avant de rouler normalement."
+  ],
+  "price": {
+    "text": "Affichée 1 299 € sur la boutique Ootd ; 1 449 € chez Oolactive et 1 499 € chez Tabvelo. Prix susceptible de varier.",
+    "source": "o-otd.com"
+  },
+  "faq": [
+    {
+      "q": "Quelle taille de pneu pour l'Ootd T90 ?",
+      "a": "Ootd annonce des pneus tubeless de 13 pouces sans publier la cote complète. Avant de commander un pneu, lis la dimension inscrite sur son flanc."
+    },
+    {
+      "q": "Peut-on circuler en ville avec une Ootd T90 ?",
+      "a": "Seulement réglée à 25 km/h, son mode d'usine, puisque c'est la vitesse maximale d'une trottinette sur la voie publique en France. Ses 85 km/h théoriques sont à réserver à un terrain privé fermé."
+    },
+    {
+      "q": "Ootd T90 ou Apefox T90 : quelle différence ?",
+      "a": "Il s'agit de la même trottinette : la boutique Ootd la présente désormais sous le nom Apefox T90, avec la même fiche technique."
+    },
+    {
+      "q": "Quels freins sur l'Ootd T90 ?",
+      "a": "Des freins hydrauliques à l'avant et à l'arrière, sur des disques de 160 mm."
+    },
+    {
+      "q": "Combien de temps pour recharger l'Ootd T90 ?",
+      "a": "7 à 8 heures avec le chargeur de 5 A fourni, selon Ootd."
+    }
+  ],
+  "sources": [
+    {
+      "label": "Ootd — T90",
+      "url": "https://o-otd.com/products/ootd-t90-escooter"
+    },
+    {
+      "label": "Oolactive — Ootd T90",
+      "url": "https://www.oolactive.com/products/ootd-t90-electric-scooter"
+    },
+    {
+      "label": "Tabvelo — Ootd T90",
+      "url": "https://www.tabvelo.com/products/ootd-t90-electric-scooter-60v-2100-2-motor-31-2ah"
+    },
+    {
+      "label": "Le Tech — T90 ou T107 Pro",
+      "url": "https://ledepanneurtech.com/tests"
+    }
+  ]
+}

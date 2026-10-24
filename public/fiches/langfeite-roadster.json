@@ -1,0 +1,133 @@
+{
+ "displayName": "Langfeite Roadster",
+ "metaTitle": "Langfeite Roadster : fiche technique 48 V et FAQ",
+ "metaDescription": "Langfeite Roadster : double moteur, batterie 48 V 21 Ah (1 008 Wh), pneus tubeless 10 pouces, freins et suspensions hydrauliques, 29 kg. Fiche et FAQ.",
+ "intro": [
+  "La Langfeite Roadster est une double moteur urbaine en 48 V : batterie de 20,8 à 21 Ah (environ 1 008 Wh), pneus tubeless de 10 pouces, freins à disque hydrauliques et suspensions hydrauliques à l'avant et à l'arrière, pour 29 à 30 kg.",
+  "Langfeite annonce 2 × 800 W nominaux, quand FōhzShop affiche 2 × 500 W nominaux et 800 W en pointe par moteur. L'autonomie annoncée tourne autour de 60 km et la vitesse hors voie publique autour de 55 km/h. Attention à ne pas la confondre avec la Roadster GT, une version 60 V."
+ ],
+ "specs": [
+  [
+   "Moteurs",
+   "2 × 800 W nominaux selon Langfeite ; 2 × 500 W nominaux et 800 W en pointe par moteur selon FōhzShop"
+  ],
+  [
+   "Vitesse",
+   "25 km/h sur la voie publique (livrée bridée) ; 55 km/h annoncés, réservés à un terrain privé"
+  ],
+  [
+   "Autonomie annoncée",
+   "environ 60 km"
+  ],
+  [
+   "Batterie",
+   "48 V, 20,8 Ah selon Langfeite, 21 Ah selon les revendeurs (environ 1 008 Wh)"
+  ],
+  [
+   "Poids",
+   "29 à 30 kg"
+  ],
+  [
+   "Charge max",
+   "120 kg"
+  ],
+  [
+   "Roues",
+   "10 pouces, tubeless"
+  ],
+  [
+   "Freins",
+   "Disques hydrauliques avant et arrière + frein régénératif"
+  ],
+  [
+   "Suspension",
+   "Ressorts hydrauliques avant et arrière"
+  ],
+  [
+   "Étanchéité",
+   "IPX5 selon Swiss Distribution"
+  ],
+  [
+   "Temps de charge",
+   "environ 9 h avec le chargeur 54,6 V 2 A (selon Ezotron)"
+  ]
+ ],
+ "pros": [
+  "Freins hydrauliques aux deux roues sur un modèle urbain (FōhzShop, Swiss Distribution).",
+  "Batterie d'environ 1 000 Wh pour moins de 30 kg (solution-trottinette).",
+  "Clignotants et démarrage NFC (FōhzShop).",
+  "Batterie amovible selon un revendeur roumain (Ezotron)."
+ ],
+ "cons": [
+  "Puissance nominale annoncée de deux façons différentes.",
+  "Charge longue, environ 9 heures.",
+  "Peu de retours de tests indépendants.",
+  "Nom proche de la Roadster GT 60 V : vérifie ta version avant d'acheter une pièce."
+ ],
+ "parts": [],
+ "care": [
+  "Contrôle les plaquettes hydrauliques tous les 500 km environ : un frein qui siffle signale souvent un disque encrassé.",
+  "Les ressorts hydrauliques aiment la propreté : essuie les tubes de suspension après une sortie sous la pluie.",
+  "Recharge ta batterie à température ambiante, jamais juste après l'avoir rentrée d'un froid intense."
+ ],
+ "price": {
+  "text": "999 € chez Fastride, 1 190 € chez FōhzShop, 1 199 € chez Vélo Shop Obernai. Prix susceptible de varier.",
+  "source": "fastride.fr, fohzshop.fr, veloshop-obernai.com"
+ },
+ "faq": [
+  {
+   "q": "Quelle différence entre la Langfeite Roadster et la Roadster GT ?",
+   "a": "La Roadster tourne en 48 V avec environ 21 Ah. La Roadster GT passe en 60 V et 27 Ah. Leurs chargeurs ne sont pas interchangeables."
+  },
+  {
+   "q": "Quelle taille de pneu pour la Langfeite Roadster ?",
+   "a": "Des pneus tubeless de 10 pouces. La cote complète n'est pas publiée : lis-la sur le flanc de ton pneu avant d'en commander un."
+  },
+  {
+   "q": "Peut-on rouler à 55 km/h avec la Langfeite Roadster ?",
+   "a": "Pas sur la voie publique : elle est livrée bridée à 25 km/h, la vitesse maximale légale en France. Retirer ce bridage pour circuler sur la route est interdit ; les 55 km/h restent réservés à un terrain privé."
+  },
+  {
+   "q": "La Langfeite Roadster a-t-elle des freins hydrauliques ?",
+   "a": "Oui, des freins à disque hydrauliques à l'avant et à l'arrière, complétés par un frein régénératif, selon plusieurs revendeurs."
+  },
+  {
+   "q": "Combien de temps pour charger la Langfeite Roadster ?",
+   "a": "Environ 9 heures avec le chargeur fourni de 2 A, selon un revendeur."
+  }
+ ],
+ "sources": [
+  {
+   "label": "Langfeite — Roadster",
+   "url": "https://langfeite.com/Products/Roadster.html"
+  },
+  {
+   "label": "Langfeite — boutique (gamme)",
+   "url": "https://langfeite.com/shops/indexs"
+  },
+  {
+   "label": "FōhzShop — Langfeite Roadster",
+   "url": "https://fohzshop.fr/fr/trottinettes-electriques/langfeite/langfeite-roadster-dual-48v-21ah"
+  },
+  {
+   "label": "Swiss Distribution — Langfeite Roadster",
+   "url": "https://swiss-distribution.com/produit/trottinette-electrique-langfeite-roadster-dual-48v-21ah/"
+  },
+  {
+   "label": "Ezotron — Langfeite Roadster",
+   "url": "https://ezotron.ro/acasa/359-trotineta-electrica-langfeite-roaster-1600w-48v-21ah-frane-hidraulice.html"
+  },
+  {
+   "label": "Solution Trottinette — gamme Langfeite",
+   "url": "https://solution-trottinette.fr/trottinette-electrique/marque/langfeite"
+  },
+  {
+   "label": "Fastride — trottinettes électriques",
+   "url": "https://fastride.fr/fr/3-trottinettes-electriques"
+  },
+  {
+   "label": "Vélo Shop Obernai — Langfeite",
+   "url": "https://www.veloshop-obernai.com/en/collections/trott-langfeite"
+  }
+ ]
+}

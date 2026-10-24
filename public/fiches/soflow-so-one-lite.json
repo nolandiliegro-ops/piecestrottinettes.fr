@@ -1,0 +1,120 @@
+{
+ "displayName": "SoFlow SO ONE Lite",
+ "metaTitle": "SoFlow SO ONE Lite : fiche technique et entretien",
+ "metaDescription": "SoFlow SO ONE Lite : moteur 350 W (600 W en pointe), batterie 36 V 7,8 Ah, pneus 9 pouces, frein tambour avant, 35 km annoncés. Fiche, limites et entretien.",
+ "intro": [
+  "La SoFlow SO ONE Lite est la trottinette d'entrée de gamme de SoFlow, marque suisse présente en Allemagne. Moteur arrière de 350 W nominaux et 600 W en pointe, batterie 36 V de 7,8 Ah, cadre en acier : elle vise les trajets quotidiens courts plutôt que les longues sorties.",
+  "Elle roule sur des pneus gonflables de 9 pouces en 9 × 2,125 bordés d'une bande réfléchissante, freine avec un tambour à l'avant et un frein électronique à l'arrière, et annonce 35 km d'autonomie. Sa vitesse plafonne à 22 km/h selon SoFlow, 20 km/h sur la version homologuée en Allemagne. Une SO ONE Lite 2, en pneus tubeless, lui succède."
+ ],
+ "specs": [
+  [
+   "Moteur",
+   "350 W nominaux, 600 W en pointe, roue arrière (17 Nm)"
+  ],
+  [
+   "Vitesse",
+   "22 km/h maximum selon SoFlow ; 20 km/h sur la version homologuée en Allemagne"
+  ],
+  [
+   "Autonomie annoncée",
+   "jusqu'à 35 km"
+  ],
+  [
+   "Autonomie constatée",
+   "30 à 32 km pour un pilote de 82 kg (selon idealo.de)"
+  ],
+  [
+   "Batterie",
+   "36 V 7,8 Ah, environ 281 Wh (42 V en fin de charge)"
+  ],
+  [
+   "Poids",
+   "17 kg selon SoFlow, 18 kg selon Galaxus"
+  ],
+  [
+   "Charge max",
+   "120 kg"
+  ],
+  [
+   "Roues",
+   "9 × 2,125 pouces, pneus gonflables à bande réfléchissante"
+  ],
+  [
+   "Freins",
+   "Tambour avant + frein électronique arrière"
+  ],
+  [
+   "Suspension",
+   "Aucune annoncée par SoFlow"
+  ],
+  [
+   "Étanchéité",
+   "IPX4 (selon Galaxus)"
+  ],
+  [
+   "Temps de charge",
+   "5 h maximum"
+  ]
+ ],
+ "pros": [
+  "Bande réfléchissante sur les pneus pour être vu de côté la nuit (SoFlow).",
+  "Frein tambour avant, quasiment sans entretien (SoFlow).",
+  "Phare avant de 60 lux (SoFlow)."
+ ],
+ "cons": [
+  "Moteur de 350 W et pente maximale de 15 % : elle peine dans les côtes raides (SoFlow).",
+  "Pas de suspension annoncée : seuls les pneus de 9 pouces amortissent.",
+  "Batterie de 281 Wh environ : autonomie modeste pour de longs trajets.",
+  "Poids différent selon les fiches (17 ou 18 kg)."
+ ],
+ "parts": [],
+ "care": [
+  "Pneus de 9 pouces gonflables : vérifie la pression toutes les deux semaines, un pneu sous-gonflé crève plus facilement.",
+  "Le frein tambour se règle à la molette du câble : resserre-le dès que le levier touche presque la poignée.",
+  "Recharge la batterie après chaque sortie plutôt que de la laisser à vide plusieurs jours."
+ ],
+ "faq": [
+  {
+   "q": "La SoFlow SO ONE Lite peut-elle rouler sur la route en France ?",
+   "a": "Sa vitesse plafonne à 22 km/h, sous la limite française de 25 km/h pour les trottinettes. Respecte ensuite les règles habituelles : pistes cyclables, éclairage, âge minimum et assurance."
+  },
+  {
+   "q": "Quelle autonomie réelle pour la SoFlow SO ONE Lite ?",
+   "a": "Un utilisateur de 82 kg rapporte 30 à 32 km, pour 35 km annoncés. Plus lourd ou par temps froid, compte moins."
+  },
+  {
+   "q": "Quelle différence entre la SO ONE Lite et la SO ONE Lite 2 ?",
+   "a": "La Lite 2 garde le moteur de 350 W et la batterie 36 V 7,8 Ah, mais passe aux pneus tubeless de 9 pouces, à 18 kg et ajoute des clignotants avant."
+  },
+  {
+   "q": "Quelle taille de pneu pour la SoFlow SO ONE Lite ?",
+   "a": "SoFlow indique 9 × 2,125 pouces. Les références de 9 pouces varient : lis la cote sur le flanc de ton pneu avant d'en commander un."
+  },
+  {
+   "q": "Combien de temps pour recharger la SoFlow SO ONE Lite ?",
+   "a": "Environ 5 heures au maximum pour une charge complète, selon SoFlow."
+  }
+ ],
+ "sources": [
+  {
+   "label": "SoFlow — SO ONE Lite",
+   "url": "https://www.soflow.com/de/produkt/so-one-lite/"
+  },
+  {
+   "label": "SoFlow — SO ONE Lite 2",
+   "url": "https://www.soflow.com/de/produkt/so-one-lite-2/"
+  },
+  {
+   "label": "Galaxus — SoFlow So One Lite",
+   "url": "https://www.galaxus.ch/en/s3/product/soflow-so-one-lite-22-kmh-35-km-350-w-e-scooters-standing-53197955"
+  },
+  {
+   "label": "idealo.de — SoFlow SO One Lite",
+   "url": "https://www.idealo.de/preisvergleich/OffersOfProduct/206310431_-so-one-lite-soflow.html"
+  },
+  {
+   "label": "expert.de — SoFlow SO ONE Lite 2",
+   "url": "https://www.expert.de/shop/unsere-produkte/gaming-freizeit/e-mobilitat/e-scooter/13930000740-so-one-lite-2-e-scooter.html"
+  }
+ ]
+}

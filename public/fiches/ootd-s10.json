@@ -1,0 +1,128 @@
+{
+ "displayName": "Ootd S10",
+ "metaTitle": "Ootd S10 : fiche technique 48 V, freins et pièces",
+ "metaDescription": "Ootd S10 : moteur 800 W (1 400 W en pointe), batterie 48 V 20 Ah, roues de 10 pouces, deux disques de 140 mm. Fiche, entretien et pièces de frein.",
+ "intro": [
+  "L'Ootd S10 est une trottinette mono-moteur de gabarit moyen : moteur arrière de 800 W nominaux et 1 400 W en pointe, batterie de 48 V et 20 Ah (960 Wh), roues gonflables de 10 pouces et suspensions à ressort à l'avant comme à l'arrière, selon la fiche Ootd.",
+  "Ootd annonce 60 à 70 km d'autonomie et une charge maximale de 120 kg, pour un poids d'environ 27 kg (28 kg dans le manuel). Elle freine avec deux disques mécaniques de 140 mm et se recharge en 8 à 10 heures avec le chargeur 54,6 V de 2 A fourni."
+ ],
+ "specs": [
+  [
+   "Moteur",
+   "800 W nominaux, 1 400 W en pointe (moteur arrière)"
+  ],
+  [
+   "Vitesse",
+   "25 km/h sur la voie publique ; 55 km/h annoncés par des revendeurs, réservés à un terrain privé"
+  ],
+  [
+   "Autonomie annoncée",
+   "60 à 70 km"
+  ],
+  [
+   "Batterie",
+   "48 V, 20 Ah, 960 Wh (54,6 V en fin de charge)"
+  ],
+  [
+   "Poids",
+   "environ 27 kg (28 kg selon le manuel)"
+  ],
+  [
+   "Charge max",
+   "120 kg"
+  ],
+  [
+   "Roues",
+   "10 pouces, pneus gonflables"
+  ],
+  [
+   "Freins",
+   "Disques mécaniques avant et arrière, 140 mm"
+  ],
+  [
+   "Suspension",
+   "Ressorts avant et arrière"
+  ],
+  [
+   "Étanchéité",
+   "IPX4"
+  ],
+  [
+   "Temps de charge",
+   "8 à 10 h (chargeur 54,6 V, 2 A)"
+  ]
+ ],
+ "pros": [
+  "Batterie de 960 Wh rare à ce niveau de prix (fiche Ootd).",
+  "Agile en ville et compacte pour son poids (test HOC.hu).",
+  "Décélération correcte grâce au frein moteur arrière qui épaule les disques (test HOC.hu)."
+ ],
+ "cons": [
+  "Suspension ferme : les routes très dégradées se ressentent nettement (test HOC.hu).",
+  "Freins à câble, moins mordants que des freins hydrauliques.",
+  "Recharge longue : 8 à 10 heures avec le chargeur d'origine.",
+  "27 à 28 kg selon les fiches : la porter dans un escalier reste un effort."
+ ],
+ "parts": [
+  {
+   "label": "Disque de frein",
+   "size": "140 mm, entraxe 44 mm",
+   "count": 3,
+   "to": "/piece/disque-de-frein-r6-140mm-entraxe-44mm-3-couleurs-rouge",
+   "cta": "Disques 140 mm"
+  }
+ ],
+ "care": [
+  "Freins à câble : reprends la tension des câbles dès que la course des leviers s'allonge, sans attendre qu'ils touchent la poignée.",
+  "Gonfle tes pneus de 10 pouces à la pression inscrite sur leur flanc ; un pneu mou abîme la jante et vide la batterie plus vite.",
+  "Avant l'hiver, garde la batterie autour de 50 % et recharge-la une fois par mois si la trottinette ne roule pas."
+ ],
+ "price": {
+  "text": "Prix affiché par la boutique officielle Ootd : 549 €. Des revendeurs l'affichent entre 479 et 610 €. Prix susceptible de varier.",
+  "source": "o-otd.com"
+ },
+ "faq": [
+  {
+   "q": "Quelle taille de pneu pour l'Ootd S10 ?",
+   "a": "Ootd indique des pneus gonflables de 10 pouces sans préciser la cote complète. Avant de commander un pneu ou une chambre, lis la dimension gravée sur le flanc de ton pneu."
+  },
+  {
+   "q": "L'Ootd S10 peut-elle rouler à 55 km/h en ville ?",
+   "a": "Non. Elle est livrée limitée à 25 km/h, et c'est le maximum autorisé sur la route et les pistes cyclables en France. Les 55 km/h affichés par certains vendeurs ne concernent qu'un terrain privé."
+  },
+  {
+   "q": "Quel chargeur pour l'Ootd S10 ?",
+   "a": "Un chargeur pour batterie 48 V, qui délivre 54,6 V en fin de charge. Ootd fournit un modèle de 2 A : compte 8 à 10 heures pour une charge complète."
+  },
+  {
+   "q": "Quels freins équipent l'Ootd S10 ?",
+   "a": "Deux freins à disque mécaniques, commandés par câble, avec des disques de 140 mm à l'avant et à l'arrière."
+  },
+  {
+   "q": "L'Ootd S10 convient-elle au tout-terrain ?",
+   "a": "Pas vraiment : le testeur de HOC.hu la réserve aux pistes cyclables et à un bitume correct, sa suspension restant ferme sur les chemins cassants."
+  }
+ ],
+ "sources": [
+  {
+   "label": "Ootd — S10",
+   "url": "https://o-otd.com/products/ootd-s10-scooter"
+  },
+  {
+   "label": "Manuel Ootd S10 (manuals.plus)",
+   "url": "https://manuals.plus/ootd/s10-electric-scooter-manual-2.pdf"
+  },
+  {
+   "label": "ScooterRank — Ootd S10",
+   "url": "https://scooterrank.com/scooters/ootd-s10"
+  },
+  {
+   "label": "HOC.hu — test de l'Ootd S10",
+   "url": "https://fr.hoc.hu/Test-du-scooter-S10-en-ville--bon-pour-le-tout-terrain--petit/"
+  },
+  {
+   "label": "Solution Trottinette — Ootd S10",
+   "url": "https://solution-trottinette.fr/trottinette-electrique/ootd-s10-48v-20ah"
+  }
+ ]
+}

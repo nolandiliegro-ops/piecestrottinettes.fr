@@ -1,0 +1,154 @@
+{
+  "displayName": "Kugoo G2",
+  "metaTitle": "Kugoo G2 (Kukirin G2) : fiche technique et pièces",
+  "metaDescription": "Kugoo G2, vendue aujourd'hui sous le nom Kukirin G2 : moteur 800 W, batterie 48 V 15 Ah, pneus tubeless 10 pouces, deux disques. Fiche, avis et entretien.",
+  "intro": [
+    "La Kugoo G2 est le modèle d'entrée de la gamme tout-chemin G2. Depuis que Kugoo Kirin est devenu Kukirin, elle se vend sous le nom Kukirin G2 : le fabricant la présente lui-même comme la trottinette que beaucoup connaissent sous le nom Kugoo Kirin G2. Ne la confonds pas avec la G2 Pro (9 pouces), la G2 Max ni la G2 Master.",
+    "Elle associe un moteur arrière de 800 W, une batterie 48 V de 15 Ah (720 Wh), des pneus tubeless tout-terrain de 10 pouces, des ressorts à l'avant et à l'arrière et deux freins à disque. Elle pèse environ 26 kg. Le fabricant annonce 45 km/h, une vitesse réservée à un terrain privé : en France, elle roule bridée à 25 km/h."
+  ],
+  "specs": [
+    [
+      "Moteur",
+      "800 W nominaux, roue arrière ; 1 200 W en pointe selon plusieurs revendeurs"
+    ],
+    [
+      "Vitesse",
+      "25 km/h sur la voie publique ; 45 km/h annoncés par Kukirin, réservés à un terrain privé"
+    ],
+    [
+      "Autonomie annoncée",
+      "jusqu'à 55 km (pilote de 65 kg, vitesse moyenne)"
+    ],
+    [
+      "Autonomie constatée",
+      "40 à 50 km selon un test YouTube (Amateurs 2 Roues)"
+    ],
+    [
+      "Batterie",
+      "48 V 15 Ah (720 Wh) ; 15,6 Ah sur la version 2026 vendue en France (54,6 V en fin de charge)"
+    ],
+    [
+      "Poids",
+      "environ 26 kg"
+    ],
+    [
+      "Charge max",
+      "120 kg"
+    ],
+    [
+      "Roues",
+      "10 pouces, pneus tubeless tout-terrain (36 psi recommandés par Kukirin)"
+    ],
+    [
+      "Freins",
+      "Disques avant et arrière à commande par câble + coupure moteur"
+    ],
+    [
+      "Suspension",
+      "Ressorts avant et arrière"
+    ],
+    [
+      "Étanchéité",
+      "IP54"
+    ],
+    [
+      "Temps de charge",
+      "8 à 9 h avec le chargeur d'origine 54,6 V 2 A"
+    ]
+  ],
+  "pros": [
+    "Double suspension à ressorts appréciée sur route abîmée (test Amateurs 2 Roues).",
+    "Pneus tubeless de 10 pouces : moins de crevaisons qu'avec une chambre à air (Kukirin).",
+    "Moteur de 800 W qui grimpe des pentes annoncées à 20° (Kukirin).",
+    "Prix contenu, sous les 500 € chez plusieurs revendeurs français (idealo.fr)."
+  ],
+  "cons": [
+    "Guidon non réglable en hauteur : les grands gabarits s'y sentent à l'étroit (idealo.fr, test Amateurs 2 Roues).",
+    "Freins à disque à câble, moins mordants qu'un système hydraulique (test Testeur G33K).",
+    "Béquille peu stable et pas de garde-boue avant (idealo.fr).",
+    "Environ 26 kg : pliable, mais lourde à monter dans un escalier."
+  ],
+  "parts": [
+    {
+      "label": "Disques de frein",
+      "size": "Ø 140 mm, entraxe 44 mm",
+      "count": 3,
+      "to": "/piece/disque-de-frein-r6-140mm-entraxe-44mm-3-couleurs-rouge",
+      "cta": "Disques 140 mm"
+    },
+    {
+      "label": "Plaquettes",
+      "size": "étrier type Togo / G2",
+      "count": 2,
+      "to": "/piece/plaquettes-de-frein-dualtron-togo-ltd-kukirin-g2pro-g2-max-hitway-h5-urbanglide-allroad",
+      "cta": "Plaquettes de frein"
+    }
+  ],
+  "care": [
+    "Freins à câble : quand ta course de levier s'allonge, retends le câble à la molette avant de changer les plaquettes.",
+    "Pneus tubeless : vérifie la pression chaque semaine, Kukirin recommande 36 psi (250 kPa).",
+    "Les ressorts et l'axe de pliage prennent du jeu : contrôle le serrage de la potence tous les mois."
+  ],
+  "price": {
+    "text": "Entre 469 et 599 € chez les revendeurs français relevés en octobre 2026, selon la version (15 ou 15,6 Ah). Prix susceptible de varier.",
+    "source": "idealo.fr, cdiscount.com"
+  },
+  "faq": [
+    {
+      "q": "Kugoo G2 et Kukirin G2, c'est la même trottinette ?",
+      "a": "Oui. Kugoo Kirin a pris le nom Kukirin et la G2 se vend désormais sous ce nom, avec le même moteur de 800 W et la même batterie 48 V. Seule la version 2026 annonce 15,6 Ah au lieu de 15 Ah."
+    },
+    {
+      "q": "Puis-je rouler à 45 km/h en ville avec la Kugoo G2 ?",
+      "a": "Non. Livrée bridée, elle reste à 25 km/h sur route et piste cyclable, comme l'impose le Code de la route. Les 45 km/h n'ont de sens que sur un terrain privé, et la débrider pour circuler est interdit."
+    },
+    {
+      "q": "Quelle autonomie réelle pour la Kugoo G2 ?",
+      "a": "Compte plutôt 40 à 50 km que les 55 km annoncés, selon un testeur de 85 kg. Ton poids, le froid et le mode de vitesse font varier ce chiffre."
+    },
+    {
+      "q": "Quelle taille de pneu pour la Kugoo G2 ?",
+      "a": "Kukirin indique des pneus tubeless de 10 pouces sans préciser la section. Avant d'en commander un, lis la cote inscrite sur le flanc de ton pneu."
+    },
+    {
+      "q": "Combien de temps pour recharger la Kugoo G2 ?",
+      "a": "Compte 8 à 9 heures avec le chargeur fourni, qui délivre 54,6 V sous 2 A."
+    }
+  ],
+  "sources": [
+    {
+      "label": "Kukirin — G2 (fiche officielle)",
+      "url": "https://www.kukirin-scooter.com/products/kukirin-g2-electric-scooter"
+    },
+    {
+      "label": "Kukirin Official — G2 2026",
+      "url": "https://kukirinofficial.com/products/kukirin-g2-2026-electric-scooter"
+    },
+    {
+      "label": "Kukirin Australie — G2",
+      "url": "https://www.kukirinau.com/products/kukirin-g2-electric-scooter"
+    },
+    {
+      "label": "idealo.fr — Kugoo Kukirin G2",
+      "url": "https://www.idealo.fr/prix/205135791/kugoo-kukirin-g2.html"
+    },
+    {
+      "label": "Cdiscount — Kukirin G2",
+      "url": "https://www.cdiscount.com/le-sport/mobilite-urbaine/vlo-lectrique-pliable/f-1214801-aabjp01168.html"
+    },
+    {
+      "label": "Kugoo Kukirin Estonie — comparatif des modèles",
+      "url": "https://kugookukirin.ee/en/blogs/guides/kugoo-kukirin-scooter-comparison"
+    },
+    {
+      "label": "YouTube — Kukirin G2 Modèle 2026, test complet (Mc Aventure)",
+      "url": "https://www.youtube.com/watch?v=LXmREmZ8i5c"
+    }
+  ],
+  "video": {
+    "id": "LXmREmZ8i5c",
+    "title": "Kukirin G2 Modèle 2026 : Difficile de Faire Mieux ! 459€ - Déballage et Test Complet !",
+    "channel": "Mc Aventure",
+    "uploadDate": "2026-08-07"
+  }
+}

@@ -1,0 +1,117 @@
+{
+ "displayName": "Apollo City 2.0",
+ "metaTitle": "Apollo City 2.0 : fiche technique, freins et entretien",
+ "metaDescription": "Apollo City 2.0 : moteur 1 200 W (1 900 W en pointe), batterie 48 V 18 Ah, pneus 10 pouces auto-obturants, freins tambour, IP66. Fiche, prix et FAQ.",
+ "intro": [
+  "L'Apollo City 2.0 est la nouvelle trottinette de ville d'Apollo, la marque montréalaise. Contrairement à l'ancienne City Pro à deux moteurs, elle n'a qu'un seul moteur : 1 200 W nominaux et 1 900 W en pointe, alimenté par une batterie de 48 V et 18 Ah (864 Wh).",
+  "Apollo annonce 65 km d'autonomie, 33 kg sur la balance et 120 kg de charge maximale. Elle freine avec deux tambours et un frein régénératif, roule sur des pneus tubeless auto-obturants de 10 pouces et porte l'indice IP66. Les précommandes ont ouvert en juillet 2026, pour des livraisons annoncées au quatrième trimestre."
+ ],
+ "specs": [
+  [
+   "Moteur",
+   "1 moteur, 1 200 W nominaux, 1 900 W en pointe"
+  ],
+  [
+   "Vitesse",
+   "25 km/h sur la voie publique ; 51 km/h annoncés par Apollo, réservés à un terrain privé"
+  ],
+  [
+   "Autonomie annoncée",
+   "jusqu'à 65 km (environ 51 km en usage courant selon Apollo)"
+  ],
+  [
+   "Batterie",
+   "48 V, 18 Ah, 864 Wh"
+  ],
+  [
+   "Poids",
+   "33 kg"
+  ],
+  [
+   "Charge max",
+   "120 kg"
+  ],
+  [
+   "Roues",
+   "10 pouces, tubeless auto-obturants"
+  ],
+  [
+   "Freins",
+   "Tambour avant et arrière + freinage régénératif"
+  ],
+  [
+   "Suspension",
+   "AirFlow, triple ressort"
+  ],
+  [
+   "Étanchéité",
+   "IP66"
+  ],
+  [
+   "Temps de charge",
+   "environ 6 h avec le chargeur standard (selon Apollo)"
+  ]
+ ],
+ "pros": [
+  "Indice IP66 : pensée pour rouler sous la pluie (Apollo).",
+  "Freins tambour et régénératif, presque sans réglage (Apollo).",
+  "Pneus tubeless auto-obturants qui colmatent les petites perforations (Apollo).",
+  "Puissance maintenue jusqu'à la fin de la batterie selon le fabricant (Apollo)."
+ ],
+ "cons": [
+  "Un seul moteur, là où l'ancienne City Pro en avait deux (SickEBike).",
+  "33 kg : plus lourde que la génération précédente.",
+  "Aucune autonomie mesurée en test indépendant à ce jour.",
+  "Pas de boutique Apollo en France : achat à l'étranger ou chez un revendeur."
+ ],
+ "parts": [],
+ "care": [
+  "Les tambours s'usent lentement : si la course du levier s'allonge, retends le câble au tendeur avant de toucher aux mâchoires.",
+  "Garde tes pneus auto-obturants à la pression indiquée sur le flanc : le liquide colmate mieux un pneu bien gonflé.",
+  "Même avec l'IP66, essuie la trottinette après une grosse averse et laisse sécher la trappe de charge avant de brancher."
+ ],
+ "price": {
+  "text": "Prix affiché sur la boutique Apollo américaine : 1 399 $ (précommande). Aucune boutique Apollo France ou Europe trouvée. Prix susceptible de varier.",
+  "source": "apolloscooters.co"
+ },
+ "faq": [
+  {
+   "q": "Quelle différence entre l'Apollo City 2.0 et la City Pro ?",
+   "a": "La City Pro avait deux moteurs de 500 W et une batterie de 960 Wh. La City 2.0 passe à un seul moteur, plus puissant en pointe (1 900 W), avec 864 Wh. La version à deux moteurs de la nouvelle gamme s'appelle City Stellar."
+  },
+  {
+   "q": "Peut-on rouler à 51 km/h avec l'Apollo City 2.0 ?",
+   "a": "Pas sur la route en France : une trottinette électrique y est limitée à 25 km/h. Les 51 km/h de la fiche Apollo ne concernent qu'un terrain privé, et la débrider pour circuler en ville est interdit."
+  },
+  {
+   "q": "Quelle taille de pneu pour l'Apollo City 2.0 ?",
+   "a": "Apollo indique des pneus tubeless auto-obturants de 10 pouces, sans préciser la cote complète. Avant de commander, lis la cote inscrite sur le flanc de ton pneu."
+  },
+  {
+   "q": "Combien de temps pour recharger l'Apollo City 2.0 ?",
+   "a": "Compte environ 6 heures avec le chargeur standard, batterie vide, selon Apollo."
+  },
+  {
+   "q": "L'Apollo City 2.0 roule-t-elle sous la pluie ?",
+   "a": "Elle est certifiée IP66, ce qui couvre la pluie et les flaques. Évite simplement de l'immerger, par exemple dans une rue inondée."
+  }
+ ],
+ "sources": [
+  {
+   "label": "Apollo — City 2.0 (États-Unis)",
+   "url": "https://apolloscooters.co/products/apollo-city-2-0"
+  },
+  {
+   "label": "Apollo Canada — City 2.0",
+   "url": "https://apolloscooters.ca/products/apollo-city-2-0"
+  },
+  {
+   "label": "PR Newswire — lancement City 2.0 et City Stellar",
+   "url": "https://www.prnewswire.com/news-releases/apollo-scooters-launches-the-city-2-0-and-city-stellar-commuter-electric-scooters-pre-orders-open-302817062.html"
+  },
+  {
+   "label": "SickEBike — City Pro, City 2.0 et City Stellar",
+   "url": "https://sickebike.com/articles/apollo-city-pro"
+  }
+ ]
+}

@@ -1,0 +1,162 @@
+{
+  "displayName": "SoFlow SO4 Pro Max",
+  "metaTitle": "SoFlow SO4 Pro Max : fiche, test ADAC et pièces",
+  "metaDescription": "SoFlow SO4 Pro Max : moteur à engrenages 500 W (1 300 W en pointe), batterie amovible 576 Wh, pneus tubeless 10x2,5, double suspension. Fiche et pièces.",
+  "intro": [
+    "La SoFlow SO4 Pro Max est une trottinette de la marque suisse SoFlow construite autour d'un moteur arrière à engrenages planétaires : 500 W nominaux, 1 300 W en pointe et 50 Nm de couple, pour grimper des pentes annoncées à 33 %. Sa batterie 48 V de 12 Ah (576 Wh) se retire pour être rechargée à la maison.",
+    "Elle roule sur des pneus tubeless de 10 × 2,5 pouces, avec fourche avant réglable et double amortisseur arrière, tambour à l'avant et disque à l'arrière. L'ADAC a mesuré 44,6 km d'autonomie pour 75 km annoncés et l'a jugée la mieux suspendue de son test 2026. Une SO4 Pro Max 2 lui succède."
+  ],
+  "specs": [
+    [
+      "Moteur",
+      "500 W nominaux, 1 300 W en pointe, à engrenages planétaires (50 Nm)"
+    ],
+    [
+      "Vitesse",
+      "22 km/h maximum ; 20 km/h sur la version homologuée en Allemagne, tolérance comprise 22 km/h"
+    ],
+    [
+      "Autonomie annoncée",
+      "jusqu'à 75 km"
+    ],
+    [
+      "Autonomie mesurée",
+      "44,6 km au banc ADAC (90 kg, mode Sport) ; 31,7 km à pleine charge selon Notebookcheck"
+    ],
+    [
+      "Batterie",
+      "48 V 12 Ah (576 Wh), amovible ; 10,5 Ah selon idealo.de"
+    ],
+    [
+      "Poids",
+      "24 kg (23,7 kg pesés par l'ADAC)"
+    ],
+    [
+      "Charge max",
+      "150 kg"
+    ],
+    [
+      "Roues",
+      "10 × 2,5 pouces tubeless, avec gel anti-crevaison"
+    ],
+    [
+      "Freins",
+      "Tambour avant + disque arrière + frein électronique"
+    ],
+    [
+      "Suspension",
+      "Double fourche réglable à l'avant, double amortisseur à l'arrière"
+    ],
+    [
+      "Étanchéité",
+      "IP65 selon SoFlow et Notebookcheck (IPX5 chez un revendeur)"
+    ],
+    [
+      "Temps de charge",
+      "environ 4 h (4 h 15 mesurées par l'ADAC), chargeur de 3 A"
+    ]
+  ],
+  "pros": [
+    "Meilleure suspension du test trottinettes 2026 de l'ADAC.",
+    "Charge la plus rapide de ce même test : 4 h 15 (ADAC).",
+    "Grimpe toutes les côtes du parcours de Notebookcheck, son meilleur résultat à ce jour.",
+    "Batterie amovible, avec possibilité d'acheter un second pack (test Technik Tests)."
+  ],
+  "cons": [
+    "Freins qui mordent tard puis brutalement (ADAC).",
+    "Moteur à engrenages audible et potence qui grince (ADAC).",
+    "Garde-boue avant qui vibre et disque arrière qui couine (test Technik Tests).",
+    "24 kg : lourde à porter au quotidien."
+  ],
+  "parts": [
+    {
+      "label": "Pneu",
+      "size": "10 x 2.50-6.5 (60/70-6.5), tubeless",
+      "count": 13,
+      "to": "/piece/pneu-tubeless-10x2-50-6-5-yuanxing",
+      "cta": "Pneus 10x2,50"
+    },
+    {
+      "label": "Chambre à air",
+      "size": "10 x 2.50, valve droite ou coudée",
+      "count": 6,
+      "to": "/piece/chambre-a-air-10x250-valve-droite",
+      "cta": "Chambres à air"
+    }
+  ],
+  "care": [
+    "Pneus tubeless : SoFlow demande au moins 40 psi (2,8 bar) ; contrôle-les chaque semaine avec un manomètre.",
+    "Si le disque arrière couine, nettoie-le au dégraissant frein et vérifie l'usure des plaquettes, jamais d'huile dessus.",
+    "Resserre régulièrement la potence et la fixation du garde-boue avant : ce sont les points qui grincent et vibrent sur ce modèle."
+  ],
+  "price": {
+    "text": "Prix public conseillé de 799 € en Allemagne (ADAC, 2026) ; pas de prix français relevé. Prix susceptible de varier.",
+    "source": "adac.de"
+  },
+  "faq": [
+    {
+      "q": "La SoFlow SO4 Pro Max respecte-t-elle la limite française de vitesse ?",
+      "a": "Oui : SoFlow la bride à 22 km/h au maximum, en dessous des 25 km/h autorisés en France. Elle a été conçue d'abord pour l'homologation allemande, plafonnée à 20 km/h."
+    },
+    {
+      "q": "Quelle autonomie réelle pour la SoFlow SO4 Pro Max ?",
+      "a": "L'ADAC a mesuré 44,6 km avec un pilote de 90 kg en mode Sport, et Notebookcheck 31,7 km à pleine charge sur un parcours vallonné. Les 75 km annoncés restent un maximum théorique."
+    },
+    {
+      "q": "La batterie de la SoFlow SO4 Pro Max se retire-t-elle ?",
+      "a": "Oui. Tu peux la sortir pour la recharger chez toi, et en acheter une seconde pour rouler plus loin."
+    },
+    {
+      "q": "Quelle différence entre la SO4 Pro Max et la SO4 Pro Max 2 ?",
+      "a": "La Max 2 garde le moteur de 1 300 W en pointe et la batterie de 576 Wh, mais passe à deux freins à disque et annonce 15 % de débattement en plus à l'avant."
+    },
+    {
+      "q": "Quels freins sur la SoFlow SO4 Pro Max ?",
+      "a": "Un tambour à l'avant, un disque à l'arrière et un frein électronique. L'ADAC leur reproche une attaque tardive et peu dosable."
+    }
+  ],
+  "sources": [
+    {
+      "label": "SoFlow — SO4 Pro Max",
+      "url": "https://www.soflow.com/de/produkt/so4-pro-max/"
+    },
+    {
+      "label": "SoFlow — SO4 Pro Max 2",
+      "url": "https://www.soflow.com/de/produkt/so4-pro-max2/"
+    },
+    {
+      "label": "ADAC — test SoFlow SO4 Pro Max (2026)",
+      "url": "https://www.adac.de/rund-ums-fahrzeug/elektromobilitaet/e-kleinstfahrzeuge/e-scooter-test-2026/soflow-so4-pro-max-id-5196/"
+    },
+    {
+      "label": "Notebookcheck — SoFlow SO4 Pro Max tested",
+      "url": "https://www.notebookcheck.net/It-gets-up-everywhere-SoFlow-SO4-Pro-Max-e-scooter-tested.1292747.0.html"
+    },
+    {
+      "label": "openPR — nouvelles trottinettes SoFlow",
+      "url": "https://www.openpr.de/news/1279068/Maximale-Power-smarte-Technik-die-neuen-SoFlow-E-Scooter.html"
+    },
+    {
+      "label": "idealo.de — SoFlow SO4 Pro Max",
+      "url": "https://www.idealo.de/preisvergleich/OffersOfProduct/207087289_-so4-pro-max-soflow.html"
+    },
+    {
+      "label": "Digitec — pneus SoFlow (10x2.5x6.5 SO4 Pro Max)",
+      "url": "https://www.digitec.ch/de/s1/producttype/toplist/brand/zubehoer-e-mobility-2171/soflow-23457"
+    },
+    {
+      "label": "YouTube — SoFlow SO4 Pro MAX Test (HennTech)",
+      "url": "https://www.youtube.com/watch?v=XZmW_1H7820"
+    },
+    {
+      "label": "YouTube — Soflow So4 Pro MAX Review / Test (Technik Tests)",
+      "url": "https://www.youtube.com/watch?v=MUTMloNn88k"
+    }
+  ],
+  "video": {
+    "id": "XZmW_1H7820",
+    "title": "SoFlow SO4 Pro MAX Test: Vollgefederter E-Scooter für 799€ (REVIEW)",
+    "channel": "HennTech",
+    "uploadDate": "2025-04-14"
+  }
+}

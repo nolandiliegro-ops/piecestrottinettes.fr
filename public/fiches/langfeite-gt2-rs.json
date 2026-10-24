@@ -1,0 +1,129 @@
+{
+ "displayName": "Langfeite GT2 RS",
+ "metaTitle": "Langfeite GT2 RS : fiche technique 84 V 50 Ah",
+ "metaDescription": "Langfeite GT2 RS : 2 × 4 000 W (11 592 W en pointe), batterie Samsung 84 V 50 Ah, pneus 13 pouces, freins hydrauliques à 4 pistons. Fiche et prix.",
+ "intro": [
+  "La Langfeite GT2 RS est le modèle le plus extrême de la marque : deux moteurs de 4 000 W nominaux pour 11 592 W en pointe selon Langfeite, une batterie Samsung de 84 V et 50 Ah (4 200 Wh) et des pneus tubeless de 13 pouces.",
+  "Elle freine avec quatre étriers hydrauliques à 4 pistons, deux par roue, et s'appuie sur une double suspension hydraulique réglable. Son poids varie fortement selon les sources, de 82 à 97 kg. Langfeite annonce environ 170 km d'autonomie à vitesse modérée et jusqu'à 120 km/h hors voie publique."
+ ],
+ "specs": [
+  [
+   "Moteurs",
+   "2 × 4 000 W nominaux ; 11 592 W en pointe selon Langfeite"
+  ],
+  [
+   "Vitesse",
+   "25 km/h sur la voie publique (livrée bridée) ; 110 à 120 km/h annoncés, réservés à un terrain privé"
+  ],
+  [
+   "Autonomie annoncée",
+   "jusqu'à 170 km (75 kg, 25 km/h) ; 140 km chez certains revendeurs français"
+  ],
+  [
+   "Batterie",
+   "84 V, 50 Ah, 4 200 Wh, cellules Samsung 21700"
+  ],
+  [
+   "Poids",
+   "82 kg (Langfeite Amérique du Nord), 88 kg (Urban Moov), 97 kg (Fastride)"
+  ],
+  [
+   "Charge max",
+   "120 à 200 kg selon les sources"
+  ],
+  [
+   "Roues",
+   "13 pouces, tubeless (CST selon un revendeur)"
+  ],
+  [
+   "Freins",
+   "Hydrauliques, 4 étriers à 4 pistons"
+  ],
+  [
+   "Suspension",
+   "Double amortisseur hydraulique réglable, avant et arrière"
+  ],
+  [
+   "Étanchéité",
+   "IPX6 selon Langfeite Amérique du Nord, IPX5 selon un revendeur"
+  ],
+  [
+   "Temps de charge",
+   "4 à 8 h selon les revendeurs, 8 h selon Langfeite Amérique du Nord"
+  ]
+ ],
+ "pros": [
+  "Quatre étriers hydrauliques à 4 pistons, deux par roue (Langfeite).",
+  "Batterie de 4 200 Wh, rare sur une trottinette (Langfeite).",
+  "Pneus de 13 pouces stables sur tous les terrains (Langfeite).",
+  "Jantes à moteur démontable selon Langfeite."
+ ],
+ "cons": [
+  "82 à 97 kg selon les sources : un engin à manier avec expérience.",
+  "Prix au-dessus de 5 000 €.",
+  "Charge maximale et poids incohérents d'une fiche à l'autre.",
+  "Hors bridage, ses performances relèvent du circuit fermé, pas de la route."
+ ],
+ "parts": [],
+ "care": [
+  "Avec quatre étriers, purge les circuits hydrauliques au moins une fois par an et dès que le levier devient spongieux.",
+  "Vérifie le couple de serrage des axes de roue avant chaque sortie : à ce poids, un axe desserré ne pardonne pas.",
+  "Stocke la batterie de 4 200 Wh à mi-charge si la trottinette reste immobile plusieurs semaines."
+ ],
+ "price": {
+  "text": "5 290 € chez Vélo Shop Obernai, 5 899 € chez Urban Moov, 5 900 € chez Fastride, 6 899 € chez Nature & Découvertes. Prix susceptible de varier.",
+  "source": "veloshop-obernai.com, urbanmoov.fr, fastride.fr, natureetdecouvertes.com"
+ },
+ "faq": [
+  {
+   "q": "Combien pèse la Langfeite GT2 RS ?",
+   "a": "Les sources divergent : 82 kg pour Langfeite Amérique du Nord, 88 kg chez Urban Moov, 97 kg chez Fastride. Compte en tout cas plus de 80 kg."
+  },
+  {
+   "q": "Quelle taille de pneu pour la Langfeite GT2 RS ?",
+   "a": "Des pneus tubeless de 13 pouces, de marque CST selon un revendeur. La cote complète n'est pas publiée : lis-la sur le flanc de ton pneu."
+  },
+  {
+   "q": "La Langfeite GT2 RS a-t-elle le droit de rouler sur la route ?",
+   "a": "Seulement bridée à 25 km/h, comme toute trottinette électrique en France. Ses 110 à 120 km/h relèvent du terrain privé ; lever le bridage pour rouler sur la voie publique est interdit."
+  },
+  {
+   "q": "Quelle autonomie pour la Langfeite GT2 RS ?",
+   "a": "Langfeite annonce jusqu'à 170 km pour un pilote de 75 kg à 25 km/h. À vitesse élevée, l'autonomie fond très vite."
+  },
+  {
+   "q": "Quels freins sur la Langfeite GT2 RS ?",
+   "a": "Des freins hydrauliques à 4 pistons, avec deux étriers sur chaque roue, soit quatre au total."
+  }
+ ],
+ "sources": [
+  {
+   "label": "Langfeite — GT2 RS",
+   "url": "https://langfeite.com/Products/gt2rs.html"
+  },
+  {
+   "label": "Langfeite Amérique du Nord — GT2 RS",
+   "url": "https://langfeitena.com/models/gt2-rs"
+  },
+  {
+   "label": "Urban Moov — Langfeite GT2 RS",
+   "url": "https://www.urbanmoov.fr/boutique/LANGFEITE-GT2-RS-DUAL-84V-50Ah-p810893137"
+  },
+  {
+   "label": "Fastride — Langfeite GT2 RS",
+   "url": "https://fastride.fr/fr/langfeite/5103-trottinette-electrique-langfeite-gt2-rs-dual-84v-50ah.html"
+  },
+  {
+   "label": "Eko Drive — Langfeite GT2-RS",
+   "url": "https://www.ekodrive.si/izdelek/elektricni-skiro-langfeite-gt2-rs/"
+  },
+  {
+   "label": "Nature & Découvertes — Langfeite GT2 RS",
+   "url": "https://www.natureetdecouvertes.com/outdoor/velos-accessoires/trottinettes-longboards-rollers/trottinette-electrique-langfeite-gt2-rs-92672070"
+  },
+  {
+   "label": "Vélo Shop Obernai — Langfeite GT2 RS",
+   "url": "https://www.veloshop-obernai.com/en/products/langfeite-gt2-rs-dual-84v-50ah"
+  }
+ ]
+}

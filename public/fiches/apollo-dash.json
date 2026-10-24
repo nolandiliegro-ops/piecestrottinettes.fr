@@ -1,0 +1,139 @@
+{
+  "displayName": "Apollo Dash",
+  "metaTitle": "Apollo Dash : fiche technique de l'Apollo d'entrée",
+  "metaDescription": "Apollo Dash : moteur Bosch 600 W (1 200 W en pointe), batterie 48 V 10 Ah, pneus 9,5 pouces auto-obturants, 19,5 kg, sans suspension. Fiche et FAQ.",
+  "intro": [
+    "L'Apollo Dash est la trottinette la moins chère de la gamme Apollo, lancée en 2026. Elle garde une architecture 48 V, rare à ce prix, avec un moteur Bosch de 600 W nominaux et 1 200 W en pointe, et une batterie de 10 Ah (480 Wh).",
+    "Elle pèse 19,5 kg, accepte 100 kg et roule sur des pneus tubeless auto-obturants de 9,5 pouces, sans suspension. Elle freine avec un tambour arrière et le frein régénératif Power RBS. Apollo annonce 40 km d'autonomie en mode Eco ; un testeur américain a parcouru environ 27,5 km en mode Sport."
+  ],
+  "specs": [
+    [
+      "Moteur",
+      "Bosch, 600 W nominaux, 1 200 W en pointe"
+    ],
+    [
+      "Vitesse",
+      "25 km/h sur la voie publique ; 32 à 35 km/h annoncés selon les pages Apollo, réservés à un terrain privé"
+    ],
+    [
+      "Autonomie annoncée",
+      "jusqu'à 40 km (mode Eco)"
+    ],
+    [
+      "Autonomie mesurée",
+      "environ 27,5 km en mode Sport (test Tom's Gadget Garage)"
+    ],
+    [
+      "Batterie",
+      "48 V, 10 Ah, 480 Wh"
+    ],
+    [
+      "Poids",
+      "19,5 kg"
+    ],
+    [
+      "Charge max",
+      "100 kg"
+    ],
+    [
+      "Roues",
+      "9,5 pouces, tubeless auto-obturants"
+    ],
+    [
+      "Freins",
+      "Tambour arrière + freinage régénératif"
+    ],
+    [
+      "Suspension",
+      "Aucune"
+    ],
+    [
+      "Étanchéité",
+      "IP66 selon Apollo (IP54 selon ScooterRank)"
+    ],
+    [
+      "Temps de charge",
+      "environ 5 h avec le chargeur 54,6 V 1,5 A (selon Apollo Canada)"
+    ]
+  ],
+  "pros": [
+    "Batterie 48 V et moteur Bosch, rares sur une trottinette d'entrée de gamme (Apollo).",
+    "Tenue de route jugée stable et rassurante (T3).",
+    "Frein régénératif réglable, apprécié en descente (T3).",
+    "Moins de 20 kg : elle se porte encore dans un escalier."
+  ],
+  "cons": [
+    "Pas de suspension : chaque fissure du bitume se ressent (ScooterRank).",
+    "Charge maximale limitée à 100 kg.",
+    "Un seul frein mécanique, un tambour à l'arrière (T3 aurait préféré un disque).",
+    "Vitesse et indice d'étanchéité qui varient d'une page Apollo ou d'un site à l'autre."
+  ],
+  "parts": [],
+  "care": [
+    "Sans suspension, les vis encaissent tout : resserre colonne, guidon et charnière de pliage chaque mois.",
+    "Vérifie la pression des petits pneus de 9,5 pouces toutes les semaines : ils perdent vite quelques dixièmes de bar.",
+    "Règle le frein régénératif assez fort dans l'application : le tambour arrière s'usera moins vite."
+  ],
+  "price": {
+    "text": "Lancement aux États-Unis à 649 $ ; 749 $ CA en promotion au Canada (849 $ CA hors promotion). Aucun prix européen trouvé. Prix susceptible de varier.",
+    "source": "apolloscooters.ca"
+  },
+  "faq": [
+    {
+      "q": "L'Apollo Dash a-t-elle une suspension ?",
+      "a": "Non. Ce sont ses pneus gonflables de 9,5 pouces qui absorbent les chocs. Si tes trajets passent par des pavés, regarde plutôt l'Apollo Go ou l'Explore 2.0, suspendues."
+    },
+    {
+      "q": "Quelle autonomie réelle pour l'Apollo Dash ?",
+      "a": "Un testeur a parcouru environ 27,5 km en mode Sport. Apollo annonce 40 km en mode Eco, le plus lent."
+    },
+    {
+      "q": "La vitesse de l'Apollo Dash est-elle légale en France ?",
+      "a": "Sur la chaussée et les pistes cyclables, ta limite est de 25 km/h. Les 32 à 35 km/h des fiches Apollo ne sont permis que sur un terrain privé ; débrider la trottinette pour la route est interdit."
+    },
+    {
+      "q": "Quel est le poids maximal accepté par l'Apollo Dash ?",
+      "a": "100 kg selon Apollo, équipement compris. C'est moins que les autres Apollo, souvent données pour 120 kg."
+    },
+    {
+      "q": "Combien de temps pour charger l'Apollo Dash ?",
+      "a": "Environ 5 heures avec le chargeur fourni de 54,6 V et 1,5 A, selon Apollo Canada."
+    }
+  ],
+  "sources": [
+    {
+      "label": "Apollo Canada — Dash",
+      "url": "https://apolloscooters.ca/products/apollo-dash"
+    },
+    {
+      "label": "T3 — Apollo Dash review",
+      "url": "https://www.t3.com/active/electric-scooters/apollo-dash-electric-scooter-review-stunning-entry-level-e-scooter-with-features-aplenty"
+    },
+    {
+      "label": "Apollo — fiches techniques expliquées",
+      "url": "https://apolloscooters.co/blogs/news/electric-scooter-specifications-explained"
+    },
+    {
+      "label": "Apollo — modèles 2026 et disponibilité",
+      "url": "https://support.apolloscooters.co/en-US/2026-models-and-availability-4160934"
+    },
+    {
+      "label": "ScooterRank — Apollo Dash",
+      "url": "https://scooterrank.com/scooters/apollo-dash"
+    },
+    {
+      "label": "YouTube — Apollo Dash Range Test (Tom's Gadget Garage)",
+      "url": "https://www.youtube.com/watch?v=oVEHlOtRogc"
+    },
+    {
+      "label": "YouTube — Apollo Dash First Ride (Tom's Gadget Garage)",
+      "url": "https://www.youtube.com/watch?v=FVoBbZc6KEI"
+    }
+  ],
+  "video": {
+    "id": "FVoBbZc6KEI",
+    "title": "Apollo Dash First Ride: How Much Electric Scooter Does $699 Get You?",
+    "channel": "Tom's Gadget Garage",
+    "uploadDate": "2026-09-29"
+  }
+}

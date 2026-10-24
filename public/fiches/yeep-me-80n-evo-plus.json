@@ -1,0 +1,117 @@
+{
+ "displayName": "Yeep.me 80N Evo Plus",
+ "metaTitle": "Yeep.me 80N Evo Plus : fiche technique et chargeur",
+ "metaDescription": "Yeep.me 80N Evo Plus : 12 kg, roues pleines de 8 pouces, moteur 350 W, batterie 36 V 7,8 Ah, triple freinage, IPX6. Fiche technique, chargeur et FAQ.",
+ "intro": [
+  "La Yeep.me 80N Evo Plus est la trottinette la plus légère de la marque française : 12 kg, pliable, avec des roues pleines de 8 pouces qui ne crèvent pas. Elle vise les trajets courts et les déplacements combinés avec le train, le tram ou le métro.",
+  "Yeep.me annonce un moteur de 36 V de 350 W au maximum, 250 W nominaux, une batterie de 7,8 Ah et jusqu'à 30 km d'autonomie. Elle freine avec un disque, un frein à pied arrière et un frein électronique, et se pilote aussi depuis l'application Yeep.me Mobility."
+ ],
+ "specs": [
+  [
+   "Moteur",
+   "350 W au maximum, 250 W nominaux (36 V)"
+  ],
+  [
+   "Vitesse",
+   "25 km/h"
+  ],
+  [
+   "Autonomie annoncée",
+   "jusqu'à 30 km"
+  ],
+  [
+   "Batterie",
+   "36 V, 7,8 Ah, environ 281 Wh (42 V en fin de charge)"
+  ],
+  [
+   "Poids",
+   "12 kg"
+  ],
+  [
+   "Charge max",
+   "120 kg"
+  ],
+  [
+   "Roues",
+   "8 pouces, pleines"
+  ],
+  [
+   "Freins",
+   "Disque + frein à pied arrière + frein électronique"
+  ],
+  [
+   "Suspension",
+   "Aucune"
+  ],
+  [
+   "Étanchéité",
+   "IPX6 selon Yeep.me ; IPX5 sur la fiche Darty"
+  ],
+  [
+   "Prise et charge",
+   "chargeur 42 V, 2 A, fiche jack 5,5 mm ; 3 à 4 h selon Yeep.me"
+  ]
+ ],
+ "pros": [
+  "12 kg seulement, l'une des plus légères de sa catégorie (Yeep.me, Darty).",
+  "Roues pleines : aucune crevaison à réparer (Yeep.me).",
+  "Trois systèmes de freinage, dont un frein à pied (Yeep.me).",
+  "Garantie étendue à 5 ans après enregistrement (Yeep.me)."
+ ],
+ "cons": [
+  "Pas de suspension et roues pleines : les pavés se ressentent dans les poignets.",
+  "Petites roues de 8 pouces, peu à l'aise sur les bordures et les nids-de-poule.",
+  "Fiche officielle contradictoire sur la batterie (5,2 Ah dans le tableau, 7,8 Ah dans le descriptif).",
+  "Pente maximale annoncée de 10° seulement."
+ ],
+ "parts": [],
+ "care": [
+  "Roues pleines ne veut pas dire sans entretien : surveille l'usure de la bande de roulement et le jeu des roulements.",
+  "Sans suspension, les vis prennent cher : resserre la colonne et le guidon chaque mois.",
+  "Utilise le bouton d'hivernage si tu ranges la trottinette plusieurs semaines, après l'avoir chargée à moitié."
+ ],
+ "price": {
+  "text": "Affichée 229,99 € sur la boutique Yeep.me (299,99 € barré) et 229 € chez Darty. Prix susceptible de varier.",
+  "source": "yeep.me"
+ },
+ "faq": [
+  {
+   "q": "Quel chargeur pour la Yeep.me 80N Evo Plus ?",
+   "a": "Un chargeur pour batterie 36 V, qui sort 42 V, avec une fiche jack de 5,5 mm. Yeep.me indique un modèle de 2 A."
+  },
+  {
+   "q": "La Yeep.me 80N Evo Plus peut-elle crever ?",
+   "a": "Non : ses roues de 8 pouces sont pleines. En contrepartie, elles filtrent moins les vibrations qu'un pneu gonflé."
+  },
+  {
+   "q": "La Yeep.me 80N Evo Plus respecte-t-elle la loi ?",
+   "a": "Oui : Yeep.me la limite à 25 km/h, le plafond fixé pour les trottinettes électriques sur la voie publique. Le mode individuel de l'application règle la vitesse entre 5 et 25 km/h, jamais au-delà."
+  },
+  {
+   "q": "Peut-on la prendre dans le train avec soi ?",
+   "a": "C'est son usage prévu : 12 kg, pliage rapide et poignées dévissables, selon Yeep.me."
+  },
+  {
+   "q": "Quelle autonomie pour la Yeep.me 80N Evo Plus ?",
+   "a": "Yeep.me annonce jusqu'à 30 km dans des conditions optimales, après un rodage de 100 km. Le poids du pilote, le froid et le relief la réduisent."
+  }
+ ],
+ "sources": [
+  {
+   "label": "Yeep.me — 80N Evo Plus",
+   "url": "https://yeep.me/trottinettes-electriques/1858-yeepme-80n-evo-3700293230555.html"
+  },
+  {
+   "label": "Yeep.me — catalogue trottinettes",
+   "url": "https://yeep.me/147-trottinettes-electriques"
+  },
+  {
+   "label": "Darty — Yeep.me 80N Evo+",
+   "url": "https://www.darty.com/nav/achat/ref/MC352436609.html"
+  },
+  {
+   "label": "Trott en Provence — chargeur 80N Evo Plus",
+   "url": "https://trott-en-provence.fr/chargeur-trottinette-yeep-me-80n-evo-plus/"
+  }
+ ]
+}

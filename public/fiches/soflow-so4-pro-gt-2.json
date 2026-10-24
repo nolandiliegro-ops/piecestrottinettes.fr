@@ -1,0 +1,133 @@
+{
+ "displayName": "SoFlow SO4 Pro GT 2",
+ "metaTitle": "SoFlow SO4 Pro GT 2 : fiche technique et entretien",
+ "metaDescription": "SoFlow SO4 Pro GT 2 : 500 W (1 600 W en pointe, 70 Nm), batterie amovible 48 V 18 Ah (864 Wh), pneus tubeless 11x3, deux disques, 100 km annoncés.",
+ "intro": [
+  "La SoFlow SO4 Pro GT 2 est le haut de gamme de la série SO4 de la marque suisse SoFlow, présenté à l'été 2026. Son moteur arrière à engrenages délivre 500 W nominaux, 1 600 W en pointe et 70 Nm, et sa batterie amovible de 48 V et 18 Ah (864 Wh) promet jusqu'à 100 km.",
+  "Par rapport à la première SO4 Pro GT, elle passe à des pneus tubeless de 11 × 3 pouces et à une fourche avant réglable, avec suspension pneumatique à l'arrière et deux freins à disque. Elle pèse 26 kg pour 150 kg de charge maximale et plafonne à 22 km/h, 20 km/h sur la version homologuée en Allemagne."
+ ],
+ "specs": [
+  [
+   "Moteur",
+   "500 W nominaux, 1 600 W en pointe, à engrenages (70 Nm)"
+  ],
+  [
+   "Vitesse",
+   "22 km/h maximum ; 20 km/h sur la version homologuée en Allemagne"
+  ],
+  [
+   "Autonomie annoncée",
+   "jusqu'à 100 km"
+  ],
+  [
+   "Batterie",
+   "48 V 18 Ah (864 Wh), amovible (54,6 V en fin de charge)"
+  ],
+  [
+   "Poids",
+   "26 kg"
+  ],
+  [
+   "Charge max",
+   "150 kg"
+  ],
+  [
+   "Roues",
+   "11 × 3 pouces, pneus tubeless anti-crevaison à bande réfléchissante"
+  ],
+  [
+   "Freins",
+   "Disques avant et arrière"
+  ],
+  [
+   "Suspension",
+   "Fourche avant réglable + suspension pneumatique réglable à l'arrière"
+  ],
+  [
+   "Étanchéité",
+   "IPX5 (selon Netto et Otto)"
+  ],
+  [
+   "Temps de charge",
+   "6 à 7 h"
+  ]
+ ],
+ "pros": [
+  "Batterie amovible de 864 Wh, la plus grosse de la gamme SoFlow (SoFlow, Notebookcheck).",
+  "Pneus tubeless de 11 × 3 pouces, plus larges que les 10 × 2,5 de la première GT (HennTech).",
+  "Pentes annoncées jusqu'à 35 % grâce au moteur à engrenages de 70 Nm (SoFlow).",
+  "150 kg de charge maximale (SoFlow, expert.de)."
+ ],
+ "cons": [
+  "26 kg : à garer de plain-pied plutôt qu'à porter dans un escalier (Scooterhelden).",
+  "Prix élevé : 1 399 € en Allemagne (SoFlow, Scooterhelden).",
+  "Aucune autonomie mesurée en test indépendant à ce jour : les 70 à 85 km cités sont des estimations de revendeurs.",
+  "Plusieurs fonctions passent par l'application SoFlow (Scooterhelden)."
+ ],
+ "parts": [],
+ "care": [
+  "Suspension pneumatique arrière : contrôle sa pression à la pompe haute pression chaque mois, elle baisse lentement.",
+  "Pneus tubeless de 11 × 3 : vérifie la pression avant chaque longue sortie, un pneu mou use la carcasse et la jante.",
+  "Retire la batterie pour la stocker au sec si tu ne roules pas pendant plusieurs semaines, chargée autour de 50 %."
+ ],
+ "price": {
+  "text": "Prix affiché par SoFlow en Allemagne : 1 399 € ; pas de prix français relevé. Prix susceptible de varier.",
+  "source": "soflow.com"
+ },
+ "faq": [
+  {
+   "q": "Peut-on utiliser la SoFlow SO4 Pro GT 2 sur les routes françaises ?",
+   "a": "Sa vitesse est limitée à 22 km/h, sous le plafond de 25 km/h fixé en France pour les engins de déplacement personnel motorisés. Les règles habituelles s'appliquent : assurance, éclairage et pistes cyclables."
+  },
+  {
+   "q": "Quelle autonomie réelle attendre de la SoFlow SO4 Pro GT 2 ?",
+   "a": "Aucun test indépendant ne l'a encore mesurée. Des revendeurs l'estiment entre 68 et 85 km selon le poids et le mode, pour 100 km annoncés."
+  },
+  {
+   "q": "Quelle différence entre la SO4 Pro GT et la GT 2 ?",
+   "a": "La GT 2 garde le moteur de 70 Nm et la batterie de 864 Wh, mais passe des pneus 10 × 2,5 aux 11 × 3 pouces, ajoute une fourche avant réglable et la localisation Android en plus d'Apple."
+  },
+  {
+   "q": "La batterie de la SoFlow SO4 Pro GT 2 est-elle amovible ?",
+   "a": "Oui, elle se retire pour être rechargée à part, et tu peux prévoir un second pack pour les longues sorties."
+  },
+  {
+   "q": "Combien de temps pour recharger la SoFlow SO4 Pro GT 2 ?",
+   "a": "SoFlow annonce 6 à 7 heures pour une charge complète de la batterie de 864 Wh."
+  }
+ ],
+ "sources": [
+  {
+   "label": "SoFlow — SO4 Pro GT 2",
+   "url": "https://www.soflow.com/de/produkt/so4-pro-gt-2/"
+  },
+  {
+   "label": "expert.de — SoFlow SO4 Pro GT 2",
+   "url": "https://www.expert.de/shop/unsere-produkte/gaming-freizeit/e-mobilitat/e-scooter/13930006740-so4-pro-gt-2-e-scooter.html"
+  },
+  {
+   "label": "Scooterhelden — SO4 Pro GT 2 présentée",
+   "url": "https://scooterhelden.de/2026/07/27/soflow-so4-pro-gt-2-vorgestellt-100-km-reichweite-und-wechselakku/"
+  },
+  {
+   "label": "Notebookcheck — SoFlow SO4 Pro GT 2",
+   "url": "https://www.notebookcheck.com/Neuer-E-Scooter-mit-ABE-bietet-beeindruckende-Leistung-und-Reichweite-ist-zudem-ortbar.1355429.0.html"
+  },
+  {
+   "label": "HennTech — test SO4 Pro GT et évolutions GT 2",
+   "url": "https://henntech.de/2026/10/02/soflow-so4-pro-gt-test/"
+  },
+  {
+   "label": "E-Scooter Center Kassel — SO4 Pro GT 2",
+   "url": "https://www.e-scooter-center-kassel.de/produkt/soflow-so4-pro-gt-2/"
+  },
+  {
+   "label": "escootercheck.de — SO4 Pro GT 2",
+   "url": "https://escootercheck.de/e-scooter/soflow-so4-pro-gt-2/"
+  },
+  {
+   "label": "Netto — SoFlow SO4 Pro GT 2",
+   "url": "https://www.netto-online.de/soflow-so4-pro-gt-2-schwarz-e-scooter/p-3178115000"
+  }
+ ]
+}

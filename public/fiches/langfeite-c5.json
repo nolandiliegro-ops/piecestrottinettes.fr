@@ -1,0 +1,133 @@
+{
+ "displayName": "Langfeite C5",
+ "metaTitle": "Langfeite C5 : fiche technique 60 V 27 Ah et FAQ",
+ "metaDescription": "Langfeite C5 : double moteur, batterie 60 V 27 Ah (1 620 Wh), pneus tubeless 10 pouces, freins et suspensions hydrauliques, 37 kg. Fiche et FAQ.",
+ "intro": [
+  "La Langfeite C5 est la double moteur compacte de Langfeite : batterie de 60 V et 27 Ah, pneus tubeless de 10 pouces, freins à disque hydrauliques et suspensions hydrauliques aux deux roues, pour 37 kg selon la plupart des revendeurs.",
+  "Langfeite elle-même publie deux puissances : 2 × 1 500 W nominaux sur sa page anglaise, 2 × 1 100 W sur sa page espagnole et chez Cdiscount. La marque annonce 60 à 80 km d'autonomie et 70 km/h hors voie publique. Plusieurs boutiques européennes la classent IPX5."
+ ],
+ "specs": [
+  [
+   "Moteurs",
+   "2 × 1 500 W nominaux selon la page anglaise de Langfeite ; 2 × 1 100 W selon sa page espagnole ; pointe de 3 000 à 3 200 W au total selon les revendeurs"
+  ],
+  [
+   "Vitesse",
+   "25 km/h sur la voie publique ; 70 km/h annoncés, réservés à un terrain privé"
+  ],
+  [
+   "Autonomie annoncée",
+   "60 à 80 km selon les pages Langfeite"
+  ],
+  [
+   "Batterie",
+   "60 V, 27 Ah, 1 620 Wh (cellules 21700)"
+  ],
+  [
+   "Poids",
+   "37 kg"
+  ],
+  [
+   "Charge max",
+   "120 à 150 kg selon les revendeurs"
+  ],
+  [
+   "Roues",
+   "10 pouces, tubeless (90/55-6.5 selon deux revendeurs)"
+  ],
+  [
+   "Freins",
+   "Disques hydrauliques avant et arrière + frein régénératif"
+  ],
+  [
+   "Suspension",
+   "Hydraulique avant et arrière"
+  ],
+  [
+   "Étanchéité",
+   "IPX5 selon plusieurs revendeurs"
+  ],
+  [
+   "Temps de charge",
+   "environ 6 h (chargeur 67,2 V 2 A)"
+  ]
+ ],
+ "pros": [
+  "Freins à disque hydrauliques et frein régénératif (Langfeite).",
+  "Double suspension hydraulique pour un modèle de 37 kg (Langfeite, Electrique Performance).",
+  "Grosse batterie de 1 620 Wh pour son gabarit (Langfeite).",
+  "Démarrage par carte NFC (Langfeite)."
+ ],
+ "cons": [
+  "Puissance nominale contradictoire jusque sur le site du fabricant.",
+  "37 kg : lourde pour une trottinette de 10 pouces.",
+  "Charge maximale variable selon les vendeurs, de 100 à 150 kg.",
+  "Aucun test d'autonomie indépendant trouvé."
+ ],
+ "parts": [],
+ "care": [
+  "Surveille l'usure des plaquettes hydrauliques : quand le levier va plus loin, ne laisse pas le métal toucher le disque.",
+  "Contrôle la pression des pneus tubeless chaque semaine ; les revendeurs conseillent 3,5 bars.",
+  "Après une sortie sous la pluie, sèche la prise de charge avant de brancher le chargeur."
+ ],
+ "price": {
+  "text": "Prix public conseillé affiché par Langfeite : 1 999 $. Prix susceptible de varier.",
+  "source": "langfeite.com"
+ },
+ "faq": [
+  {
+   "q": "Quelle est la puissance de la Langfeite C5 ?",
+   "a": "Langfeite annonce 2 × 1 500 W nominaux sur sa page anglaise et 2 × 1 100 W ailleurs. Les revendeurs parlent de 3 000 à 3 200 W en pointe au total. Fie-toi à la plaque de ta trottinette."
+  },
+  {
+   "q": "Quelle taille de pneu pour la Langfeite C5 ?",
+   "a": "Des pneus tubeless de 10 pouces ; deux revendeurs indiquent 90/55-6.5. Lis la cote sur le flanc de ton pneu avant d'en commander un."
+  },
+  {
+   "q": "La Langfeite C5 peut-elle rouler à 70 km/h ?",
+   "a": "Uniquement sur un terrain privé. En France, sur la route comme sur les pistes cyclables, ta trottinette ne doit pas dépasser 25 km/h, et lever le bridage pour y rouler est interdit."
+  },
+  {
+   "q": "Combien pèse la Langfeite C5 ?",
+   "a": "37 kg selon la plupart des revendeurs (39 kg pour une version simple moteur). Elle se plie, mais se porte difficilement."
+  },
+  {
+   "q": "La Langfeite C5 craint-elle la pluie ?",
+   "a": "Plusieurs revendeurs la donnent IPX5, ce qui couvre les projections d'eau. Évite tout de même les flaques profondes."
+  }
+ ],
+ "sources": [
+  {
+   "label": "Langfeite — C5",
+   "url": "https://www.langfeite.com/Products/c5.html"
+  },
+  {
+   "label": "Langfeite — C5 (page espagnole)",
+   "url": "https://langfeite.com/es/two_c5.html"
+  },
+  {
+   "label": "Cdiscount — Langfeite C5",
+   "url": "https://www.cdiscount.com/le-sport/mobilite-urbaine/trottinette-lectrique/f-1214801-aabfe23828.html"
+  },
+  {
+   "label": "Electrique Performance — Langfeite C5",
+   "url": "https://www.electrique-performance.com/products/trottinette-electrique-langfeite-c5-dual-60v-27ah"
+  },
+  {
+   "label": "Futureboard — Langfeite C5",
+   "url": "https://www.futureboard.hu/langfeite-c5-elektromos-roller"
+  },
+  {
+   "label": "Tupatineta — Langfeite C5",
+   "url": "https://tupatineta.com/producto/langfeite-c5-patineta-electrica/"
+  },
+  {
+   "label": "Peter E-Bike — Langfeite C5",
+   "url": "https://www.peter-ebike.com/product-page/langfeite-c5"
+  },
+  {
+   "label": "Lifty Electric — Langfeite C5",
+   "url": "https://www.liftyelectric.com/products/langfeite-c5-dual-60v-27ah-electric-scooter"
+  }
+ ]
+}

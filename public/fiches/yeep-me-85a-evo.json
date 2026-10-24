@@ -1,0 +1,109 @@
+{
+  "displayName": "Yeep.me 85A Evo",
+  "metaTitle": "Yeep.me 85A Evo : fiche technique, pneus et charge",
+  "metaDescription": "Yeep.me 85A Evo : moteur 36 V de 500 W en pointe, batterie 7,8 Ah, pneus gonflables de 8,5 pouces, clignotants et badge NFC, IPX6. Fiche et entretien.",
+  "intro": [
+    "La Yeep.me 85A Evo est une trottinette urbaine de la série A de la marque française Yeep.me, pensée pour les trajets courts en ville : pneus gonflables de 8,5 pouces avec chambre à air, clignotants au guidon, démarrage par badge NFC et châssis en acier tubulaire certifié IPX6.",
+    "Son moteur de 36 V développe 250 W nominaux et 500 W en pointe selon le manuel, alimenté par une batterie de 7,8 Ah annoncée pour 25 à 30 km. Elle freine avec un disque arrière et un frein électronique avant, pèse 17,5 kg et accepte 120 kg."
+  ],
+  "specs": [
+    [
+      "Moteur",
+      "250 W nominaux, 500 W en pointe selon le manuel (350 W nominaux selon la Fnac)"
+    ],
+    [
+      "Vitesse",
+      "25 km/h"
+    ],
+    [
+      "Autonomie annoncée",
+      "25 à 30 km"
+    ],
+    [
+      "Batterie",
+      "36 V, 7,8 Ah, 281 Wh"
+    ],
+    [
+      "Poids",
+      "17,5 kg"
+    ],
+    [
+      "Charge max",
+      "120 kg"
+    ],
+    [
+      "Roues",
+      "8,5 pouces, gonflables avec chambre à air"
+    ],
+    [
+      "Freins",
+      "Disque arrière + électronique avant"
+    ],
+    [
+      "Étanchéité",
+      "IPX6"
+    ],
+    [
+      "Temps de charge",
+      "5 à 6 h (chargeur 42 V, 1,5 A)"
+    ]
+  ],
+  "pros": [
+    "Clignotants au guidon et démarrage par badge NFC (Yeep.me).",
+    "Pneus gonflables plus confortables que des roues pleines (Yeep.me).",
+    "Étanchéité IPX6 annoncée par Yeep.me et la Fnac.",
+    "Garantie étendue à 5 ans, batterie garantie 15 000 km (Fnac)."
+  ],
+  "cons": [
+    "Pneus avec chambre à air : une crevaison reste possible.",
+    "Autonomie modeste de 25 à 30 km avec 281 Wh.",
+    "Pas de suspension.",
+    "Puissance nominale annoncée différemment selon les fiches (250 ou 350 W)."
+  ],
+  "parts": [],
+  "care": [
+    "Les chambres à air de 8,5 pouces se pincent vite quand le pneu est mou : contrôle la pression chaque semaine.",
+    "Garde un badge NFC de secours à la maison : sans lui, la trottinette ne démarre pas.",
+    "Après un trajet sous la pluie, laisse-la sécher dépliée avant de la ranger."
+  ],
+  "price": {
+    "text": "Affichée 199,99 € sur la boutique Yeep.me (303,99 € barré) et chez Darty. Prix susceptible de varier.",
+    "source": "yeep.me"
+  },
+  "faq": [
+    {
+      "q": "Quelle taille de pneu pour la Yeep.me 85A Evo ?",
+      "a": "Des pneus gonflables de 8,5 pouces avec chambre à air. Les cotes de 8,5 pouces varient en largeur : relève l'inscription sur le flanc avant de commander."
+    },
+    {
+      "q": "Quel chargeur pour la Yeep.me 85A Evo ?",
+      "a": "Un chargeur pour batterie 36 V, qui délivre 42 V. Le manuel indique un modèle de 1,5 A pour une charge en 5 à 6 heures."
+    },
+    {
+      "q": "La Yeep.me 85A Evo est-elle limitée à 25 km/h ?",
+      "a": "Oui, Yeep.me la bride à 25 km/h, ce qui correspond à la vitesse maximale permise sur route et piste cyclable en France."
+    },
+    {
+      "q": "Comment démarre la Yeep.me 85A Evo ?",
+      "a": "Avec un badge NFC : deux sont fournis, et Yeep.me en vend en remplacement en cas de perte."
+    }
+  ],
+  "sources": [
+    {
+      "label": "Yeep.me — 85A Evo",
+      "url": "https://yeep.me/trottinettes-electriques/1837-yeepme-85a-evo-3700293230531.html"
+    },
+    {
+      "label": "Manuel Yeep.me 85A Evo",
+      "url": "https://download.yeep.me/res/yeep173/device_manual.pdf"
+    },
+    {
+      "label": "Fnac — Yeep.me 85A Evo",
+      "url": "https://www.fnac.com/mp53079386/Trottinette-electrique-YEEP-ME-85a-EVO-500W-30km-Clignos-Badge-NFC/w-4"
+    },
+    {
+      "label": "Darty — trottinettes Yeep.me",
+      "url": "https://www.darty.com/nav/achat/sports_loisirs/glisse_urbaine/trottinette_electrique/marque__yeep_me__YEEP.html"
+    }
+  ]
+}

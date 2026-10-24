@@ -1,0 +1,128 @@
+{
+ "displayName": "Ootd SR1",
+ "metaTitle": "Ootd SR1 : fiche technique, freins et autonomie",
+ "metaDescription": "Ootd SR1 : moteur 1 400 W en pointe, batterie 48 V 20 Ah, pneus tubeless 10 pouces, freins à disque à câble, 70 km annoncés. Fiche, tests et FAQ.",
+ "intro": [
+  "L'Ootd SR1 est une trottinette urbaine mono-moteur : moteur arrière annoncé à 1 400 W, une valeur de pointe pour 800 W en continu selon un testeur, batterie de 48 V et 20 Ah (960 Wh), pneus tubeless de 10 pouces et suspensions à ressort à l'avant et à l'arrière.",
+  "Ootd annonce jusqu'à 70 km d'autonomie, 26,26 kg et 120 kg de charge maximale. Le freinage repose sur deux disques mécaniques à câble ; un testeur belge a eu besoin de près de 10 mètres pour s'arrêter depuis 25 km/h. La recharge prend 9 à 10 heures."
+ ],
+ "specs": [
+  [
+   "Moteur",
+   "1 400 W en pointe ; 800 W en continu selon laurentwillen.be"
+  ],
+  [
+   "Vitesse",
+   "25 km/h sur la voie publique ; 50 km/h annoncés par Ootd, réservés à un terrain privé"
+  ],
+  [
+   "Autonomie annoncée",
+   "jusqu'à 70 km"
+  ],
+  [
+   "Autonomie estimée",
+   "environ 50 km pour un adulte (selon Le Vélo Urbain)"
+  ],
+  [
+   "Batterie",
+   "48 V, 20 Ah, 960 Wh"
+  ],
+  [
+   "Poids",
+   "26,26 kg"
+  ],
+  [
+   "Charge max",
+   "120 kg"
+  ],
+  [
+   "Roues",
+   "10 pouces, tubeless"
+  ],
+  [
+   "Freins",
+   "Disques mécaniques à câble avant et arrière, 140 mm selon Ootd"
+  ],
+  [
+   "Suspension",
+   "Ressorts avant et arrière (2 000 lb)"
+  ],
+  [
+   "Étanchéité",
+   "IP54"
+  ],
+  [
+   "Temps de charge",
+   "9 à 10 h"
+  ]
+ ],
+ "pros": [
+  "Montée de côte sans descendre sous 23 km/h avec un pilote de 80 kg (Le Vélo Urbain).",
+  "Accélération franche dans le troisième mode (laurentwillen.be).",
+  "Batterie de 960 Wh et pneus tubeless de 10 pouces (Ootd)."
+ ],
+ "cons": [
+  "Freinage jugé un peu long : près de 10 m depuis 25 km/h (laurentwillen.be).",
+  "Autonomie réelle en dessous des 70 km annoncés selon les tests.",
+  "Plus de 26 kg : peu adaptée à un trajet combiné avec les transports en commun.",
+  "Recharge de 9 à 10 heures."
+ ],
+ "parts": [],
+ "care": [
+  "Contrôle l'usure des plaquettes tous les 500 km environ : avec des freins à câble, la distance d'arrêt s'allonge vite quand elles s'amincissent.",
+  "Un pneu tubeless se répare souvent avec une mèche ; garde un kit et une petite pompe dans ton sac.",
+  "Essuie la trottinette après la pluie et laisse-la sécher avant de la recharger : IP54 protège des projections, pas des flaques profondes."
+ ],
+ "price": {
+  "text": "Affichée 599 € chez E-Velo et 535 € chez Pixmania au moment du relevé. Prix susceptible de varier.",
+  "source": "evelostore.fr"
+ },
+ "faq": [
+  {
+   "q": "Quelle taille de pneu pour l'Ootd SR1 ?",
+   "a": "Ootd indique seulement des pneus tubeless de 10 pouces, et les vendeurs citent 10x2.70 ou 10x2.75. Lis la cote sur le flanc de ton pneu avant d'en commander un."
+  },
+  {
+   "q": "L'Ootd SR1 est-elle autorisée sur la route ?",
+   "a": "Oui, dans sa configuration d'origine limitée à 25 km/h, comme toute trottinette électrique en France. Les 50 km/h de la fiche Ootd restent cantonnés à un terrain privé."
+  },
+  {
+   "q": "Quelle autonomie réelle pour l'Ootd SR1 ?",
+   "a": "Le Vélo Urbain estime environ 50 km pour un adulte. Un autre testeur situe la fourchette entre 40 et 70 km selon le poids, le relief et le mode utilisé."
+  },
+  {
+   "q": "Les freins de l'Ootd SR1 sont-ils hydrauliques ?",
+   "a": "Non. Ce sont deux freins à disque mécaniques commandés par câble, à l'avant et à l'arrière."
+  },
+  {
+   "q": "Quelle différence entre l'Ootd SR1 et l'Ootd SR3 ?",
+   "a": "La SR1 a un moteur, une batterie 48 V et des freins à câble. La SR3 passe à deux moteurs de 1 200 W, une batterie 60 V et des freins hydrauliques, pour environ 40 kg."
+  }
+ ],
+ "sources": [
+  {
+   "label": "Ootd — SR1",
+   "url": "https://o-otd.com/products/ootd-sr1-e-scooter"
+  },
+  {
+   "label": "Rue du Commerce — Ootd SR1",
+   "url": "https://www.rueducommerce.fr/p/m26039483456.html"
+  },
+  {
+   "label": "laurentwillen.be — test Ootd SR1",
+   "url": "https://www.laurentwillen.be/gadgets/velos/trottinette-electrique-o-otd-sr1-test-avis/"
+  },
+  {
+   "label": "Le Vélo Urbain — test Ootd SR1",
+   "url": "https://le-velo-urbain.com/test-avis-trottinette-electrique-ootd-sr1/"
+  },
+  {
+   "label": "Cdiscount — Ootd SR1",
+   "url": "https://www.cdiscount.com/le-sport/mobilite-urbaine/ootd-sr1-trottinette/f-1214801-aacyh71202.html"
+  },
+  {
+   "label": "E-Velo — Ootd SR1",
+   "url": "https://evelostore.fr/products/ootd-sr1"
+  }
+ ]
+}

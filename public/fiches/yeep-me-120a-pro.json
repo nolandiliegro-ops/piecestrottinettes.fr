@@ -1,0 +1,105 @@
+{
+ "displayName": "Yeep.me 120A Pro",
+ "metaTitle": "Yeep.me 120A Pro : fiche technique 800 W, 15 Ah",
+ "metaDescription": "Yeep.me 120A Pro : roues tubeless de 12 pouces, moteur 36 V de 800 W en pointe, batterie 15 Ah (540 Wh), 60 km annoncés, 19,9 kg. Fiche et FAQ.",
+ "intro": [
+  "La Yeep.me 120A Pro est la version longue distance de la 120A : mêmes roues tubeless de 12 pouces, même démarrage par badge NFC, mais une batterie de 15 Ah (540 Wh) annoncée pour 60 km et un moteur de 36 V qui monte à 800 W en pointe.",
+  "Yeep.me donne 350 W nominaux, quand la fiche Boulanger évoque 500 W. Elle pèse 19,9 kg selon Yeep.me, accepte 120 kg, n'a pas d'amortisseur et freine avec un disque arrière et un frein électronique avant. La charge complète prend 7 à 8 heures."
+ ],
+ "specs": [
+  [
+   "Moteur",
+   "800 W en pointe ; 350 W nominaux selon Yeep.me, 500 W selon le descriptif Boulanger"
+  ],
+  [
+   "Vitesse",
+   "25 km/h"
+  ],
+  [
+   "Autonomie annoncée",
+   "jusqu'à 60 km"
+  ],
+  [
+   "Batterie",
+   "36 V, 15 Ah, 540 Wh"
+  ],
+  [
+   "Poids",
+   "19,9 kg selon Yeep.me ; 19 à 19,5 kg selon Boulanger"
+  ],
+  [
+   "Charge max",
+   "120 kg"
+  ],
+  [
+   "Roues",
+   "12 pouces, tubeless"
+  ],
+  [
+   "Freins",
+   "Disque arrière + électronique avant"
+  ],
+  [
+   "Suspension",
+   "Aucune (selon Boulanger)"
+  ],
+  [
+   "Temps de charge",
+   "7 à 8 h"
+  ]
+ ],
+ "pros": [
+  "Batterie de 540 Wh pour 60 km annoncés (Yeep.me, Boulanger).",
+  "Roues tubeless de 12 pouces (Yeep.me).",
+  "Moins de 20 kg pour cette autonomie (Yeep.me).",
+  "Batterie garantie 25 000 km selon Yeep.me."
+ ],
+ "cons": [
+  "Pas d'amortisseur (Boulanger).",
+  "Recharge de 7 à 8 heures.",
+  "Puissance nominale annoncée différemment selon les fiches.",
+  "Un seul frein mécanique, à l'arrière."
+ ],
+ "parts": [],
+ "care": [
+  "Pour préserver la batterie de 15 Ah, vise une recharge entre 20 et 80 % au quotidien et une charge complète avant les longues sorties.",
+  "Contrôle la pression des pneus de 12 pouces tous les quinze jours : sous-gonflés, ils freinent ton autonomie.",
+  "Écoute le frein arrière : un grincement signale souvent des plaquettes en fin de vie."
+ ],
+ "price": {
+  "text": "Affichée 459 € sur la boutique Yeep.me (499 € barré) et 549 € chez Boulanger. Prix susceptible de varier.",
+  "source": "yeep.me"
+ },
+ "faq": [
+  {
+   "q": "Quelle autonomie pour la Yeep.me 120A Pro ?",
+   "a": "Yeep.me annonce jusqu'à 60 km dans des conditions optimales, après 100 km de rodage. En hiver ou avec un pilote lourd, compte nettement moins."
+  },
+  {
+   "q": "Quelle taille de pneu pour la Yeep.me 120A Pro ?",
+   "a": "Ce sont des 12 pouces tubeless, comme sur la 120A. La cote exacte n'est pas publiée : relève-la sur le flanc avant d'acheter un pneu."
+  },
+  {
+   "q": "La Yeep.me 120A Pro est-elle bridée ?",
+   "a": "Oui, à 25 km/h. C'est la valeur maximale autorisée pour circuler en trottinette électrique, et Yeep.me n'annonce aucune autre vitesse."
+  },
+  {
+   "q": "Combien de temps pour la recharger ?",
+   "a": "7 à 8 heures selon Yeep.me, environ 7 heures selon Boulanger."
+  }
+ ],
+ "sources": [
+  {
+   "label": "Yeep.me — 120A Pro",
+   "url": "https://yeep.me/trottinettes-electriques/1856-yeepme-120a-pro-12-800w-60km-3700293232993.html"
+  },
+  {
+   "label": "Boulanger — Yeep.me 120A Pro",
+   "url": "https://www.boulanger.com/ref/9000921134"
+  },
+  {
+   "label": "Solution Trottinette — Yeep.me 120A Pro",
+   "url": "https://solution-trottinette.fr/trottinette-electrique/yeep-me-120a-pro"
+  }
+ ]
+}

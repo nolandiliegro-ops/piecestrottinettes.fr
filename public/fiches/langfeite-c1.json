@@ -1,0 +1,125 @@
+{
+  "displayName": "Langfeite C1",
+  "metaTitle": "Langfeite C1 : fiche technique double moteur 60 V",
+  "metaDescription": "Langfeite C1 : double moteur, batterie amovible 60 V 26 Ah, pneus tubeless 11 pouces, freins et suspensions hydrauliques, 43 à 45 kg. Fiche et FAQ.",
+  "intro": [
+    "La Langfeite C1 est une trottinette tout-terrain à deux moteurs du fabricant chinois Langfeite. Elle embarque une batterie amovible de 60 V et 26 Ah, des pneus tubeless de 11 pouces, des freins à disque hydrauliques et des suspensions hydrauliques à l'avant comme à l'arrière.",
+    "Les fiches se contredisent sur la puissance : Langfeite donne 2 × 1 200 W nominaux et 4 000 W en pointe sur sa page espagnole, quand plusieurs revendeurs annoncent 2 × 2 000 W. Elle pèse 43 à 45 kg selon les sources, accepte 150 kg et promet jusqu'à 70 km d'autonomie."
+  ],
+  "specs": [
+    [
+      "Moteurs",
+      "2 × 1 200 W nominaux et 4 000 W en pointe selon Langfeite ; 2 × 2 000 W selon plusieurs revendeurs"
+    ],
+    [
+      "Vitesse",
+      "25 km/h sur la voie publique (livrée bridée) ; 80 à 90 km/h annoncés selon les pages Langfeite, réservés à un terrain privé"
+    ],
+    [
+      "Autonomie annoncée",
+      "jusqu'à 70 km (26 Ah) ; jusqu'à 105 km avec la batterie 36 Ah proposée par certains revendeurs"
+    ],
+    [
+      "Batterie",
+      "60 V, 26 Ah, amovible (option 36 Ah chez certains revendeurs)"
+    ],
+    [
+      "Poids",
+      "43 à 45 kg selon les sources"
+    ],
+    [
+      "Charge max",
+      "150 kg"
+    ],
+    [
+      "Roues",
+      "11 pouces, tubeless"
+    ],
+    [
+      "Freins",
+      "Disques hydrauliques avant et arrière (140 mm selon eVolt) + frein électrique"
+    ],
+    [
+      "Suspension",
+      "Hydraulique avant (type C) et arrière"
+    ],
+    [
+      "Étanchéité",
+      "IPX4 à IP55 selon les revendeurs"
+    ],
+    [
+      "Temps de charge",
+      "environ 8 h (chargeur 67,2 V 2 A pour la batterie 26 Ah)"
+    ]
+  ],
+  "pros": [
+    "Batterie amovible : tu la recharges hors de la trottinette (Langfeite).",
+    "Freins et suspensions hydrauliques aux deux roues (Langfeite, eVolt).",
+    "Stable et rassurante au freinage selon un testeur français (YouTube).",
+    "Amortisseur de direction intégré contre les guidonnages (eVolt)."
+  ],
+  "cons": [
+    "Puissance, vitesse et autonomie différentes d'une fiche Langfeite à l'autre.",
+    "43 à 45 kg : lourde à porter et à plier.",
+    "Écran jugé de qualité moyenne par un testeur (YouTube).",
+    "Cote exacte des pneus non confirmée : 100/65-6.5 chez eVolt, non précisée par Langfeite."
+  ],
+  "parts": [],
+  "care": [
+    "Freins hydrauliques : si le levier devient mou, fais purger le circuit au lieu de serrer les étriers.",
+    "Retire la batterie pour la stocker l'hiver, chargée autour de 60 %, dans une pièce tempérée.",
+    "Vérifie le serrage des axes et des bras de suspension chaque mois : 45 kg et deux moteurs fatiguent la visserie."
+  ],
+  "faq": [
+    {
+      "q": "Quelle taille de pneu pour la Langfeite C1 ?",
+      "a": "Langfeite indique des pneus tubeless de 11 pouces sans donner la cote, et un revendeur parle de 100/65-6.5. Avant de commander, lis la cote moulée sur le flanc de ton pneu."
+    },
+    {
+      "q": "Quelle est la puissance réelle de la Langfeite C1 ?",
+      "a": "Langfeite annonce 2 × 1 200 W nominaux et 4 000 W en pointe. Les 2 × 2 000 W affichés par certains revendeurs correspondent plutôt à la pointe de chaque moteur."
+    },
+    {
+      "q": "La batterie de la Langfeite C1 est-elle amovible ?",
+      "a": "Oui pour la version 26 Ah, présentée comme amovible par Langfeite. Un revendeur slovène indique que la version 36 Ah est fixe."
+    },
+    {
+      "q": "Peut-on rouler avec la Langfeite C1 sur la route ?",
+      "a": "Oui, en mode bridé : elle est livrée à 25 km/h, la limite légale en France. Ses 80 à 90 km/h ne s'utilisent que sur un terrain privé, et la débrider pour circuler sur la voie publique est interdit."
+    },
+    {
+      "q": "Combien de temps pour recharger la Langfeite C1 ?",
+      "a": "Environ 8 heures pour la batterie de 26 Ah avec le chargeur fourni de 2 A, selon plusieurs revendeurs."
+    }
+  ],
+  "sources": [
+    {
+      "label": "Langfeite — C1",
+      "url": "https://langfeite.com/Products/c1.html"
+    },
+    {
+      "label": "Langfeite — C1 (page espagnole)",
+      "url": "https://langfeite.com/es/two_c1.html"
+    },
+    {
+      "label": "eVolt — Langfeite C1",
+      "url": "https://www.evolt.eu/products/electric-scooter-langfeite-c1"
+    },
+    {
+      "label": "Eko Drive — Langfeite C1",
+      "url": "https://www.ekodrive.si/izdelek/elektricni-skiro-langfeite-c1/"
+    },
+    {
+      "label": "imoveblue — Langfeite C1",
+      "url": "https://www.imoveblue.es/patinete-electrico/963-langfeite-c1.html"
+    },
+    {
+      "label": "Nature & Découvertes — Langfeite C1",
+      "url": "https://www.natureetdecouvertes.com/outdoor/velos-accessoires/trottinettes-longboards-rollers/langfeite-trottinette-electrique-langfeite-c1-92672110"
+    },
+    {
+      "label": "Urbango — Langfeite C1",
+      "url": "https://www.urbango.cl/en/langfeite-c1-60v-26ah"
+    }
+  ]
+}

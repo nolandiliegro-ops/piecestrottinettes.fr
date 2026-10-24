@@ -1,0 +1,139 @@
+{
+  "displayName": "Apollo Phantom 2.0",
+  "metaTitle": "Apollo Phantom 2.0 52 V : fiche technique et freins",
+  "metaDescription": "Apollo Phantom 2.0 52 V : 2 × 1 560 W (3 500 W en pointe), batterie 52 V 27 Ah, pneus 11 × 4 pouces, disques mécaniques, 46 kg. Fiche, prix et FAQ.",
+  "intro": [
+    "L'Apollo Phantom 2.0 de 2025 est une machine entièrement nouvelle : Apollo précise qu'aucune pièce n'est commune avec l'ancienne Phantom. Cette fiche concerne la version 52 V, avec deux moteurs de 1 560 W nominaux (3 500 W en pointe au total) et une batterie de 27 Ah, environ 1 400 Wh.",
+    "Apollo annonce 80 km d'autonomie en mode Eco, 46 kg et 150 kg de charge maximale. Elle roule sur des pneus tubeless auto-obturants de 11 × 4 pouces, avec une double suspension à ressorts de 125 mm. La version 52 V freine avec deux disques mécaniques de 2,3 mm d'épaisseur ; les freins hydrauliques sont réservés à la Phantom 2.0 Stellar en 60 V."
+  ],
+  "specs": [
+    [
+      "Moteurs",
+      "2 × 1 560 W nominaux ; 2 × 1 750 W en pointe (3 500 W au total)"
+    ],
+    [
+      "Vitesse",
+      "25 km/h sur la voie publique ; 70 km/h annoncés, réservés à un terrain privé"
+    ],
+    [
+      "Autonomie annoncée",
+      "jusqu'à 80 km (mode Eco)"
+    ],
+    [
+      "Batterie",
+      "52 V, 27 Ah, environ 1 400 Wh (58,8 V en fin de charge)"
+    ],
+    [
+      "Poids",
+      "environ 46 kg"
+    ],
+    [
+      "Charge max",
+      "150 kg"
+    ],
+    [
+      "Roues",
+      "11 × 4 pouces, tubeless auto-obturants"
+    ],
+    [
+      "Freins",
+      "Disques mécaniques avant et arrière (2,3 mm) + freinage régénératif"
+    ],
+    [
+      "Suspension",
+      "Double ressort, 125 mm de débattement"
+    ],
+    [
+      "Étanchéité",
+      "IP66"
+    ],
+    [
+      "Temps de charge",
+      "environ 13 h avec le chargeur 58,8 V 2 A (selon Apollo)"
+    ]
+  ],
+  "pros": [
+    "Frein régénératif dédié, très progressif, qui assure l'essentiel du freinage (Apollo).",
+    "Disques épais de 2,3 mm, moins sujets au voilage selon Apollo.",
+    "Grosse batterie de 1 400 Wh et charge maximale de 150 kg (Apollo).",
+    "Pièces et tutoriels de réparation publiés par Apollo (chaîne Apollo Scooters Service)."
+  ],
+  "cons": [
+    "46 kg : elle se roule, elle ne se porte pas.",
+    "Charge très longue avec le chargeur fourni, environ 13 heures.",
+    "Freins mécaniques à câble, quand la Stellar 60 V a des hydrauliques.",
+    "Suspension jugée décevante par un propriétaire (Reddit)."
+  ],
+  "parts": [],
+  "care": [
+    "Le frein régénératif use peu les plaquettes, mais contrôle quand même leur épaisseur tous les 1 000 km.",
+    "Avec 46 kg et des pneus de 11 × 4, vérifie la pression chaque semaine : un pneu dégonflé se déforme vite sous ce poids.",
+    "Ne remonte jamais une pièce de l'ancienne Phantom sur la 2.0 : Apollo indique qu'aucune n'est compatible."
+  ],
+  "price": {
+    "text": "2 899,95 € chez le revendeur ecraft (Allemagne/Autriche) ; 2 199 $ sur la boutique Apollo américaine. Pas de boutique Apollo France trouvée. Prix susceptible de varier.",
+    "source": "ecraft-shop.de"
+  },
+  "faq": [
+    {
+      "q": "Quelle différence entre la Phantom 2.0 52 V et la Phantom 2.0 Stellar ?",
+      "a": "La Stellar passe en 60 V et 30 Ah, avec des moteurs plus puissants, une suspension et des freins hydrauliques à quatre pistons. La 52 V garde des ressorts et des freins mécaniques à câble."
+    },
+    {
+      "q": "Les pièces de l'ancienne Apollo Phantom vont-elles sur la 2.0 ?",
+      "a": "Non. Apollo indique qu'aucune pièce n'est interchangeable entre la Phantom d'origine (2021-2024) et la Phantom 2.0, conçue dans une autre usine."
+    },
+    {
+      "q": "Peut-on passer la Phantom 2.0 52 V en freins hydrauliques ?",
+      "a": "Techniquement oui, selon Apollo, mais ce n'est pas un simple échange de pièces : il faut savoir router et purger un circuit hydraulique. Confie-le à un atelier si tu n'en as jamais fait."
+    },
+    {
+      "q": "La Phantom 2.0 est-elle légale à 70 km/h ?",
+      "a": "Non, pas sur la route. Une trottinette électrique est plafonnée à 25 km/h sur la voie publique en France ; la vitesse annoncée ne concerne qu'un terrain privé et débrider la trottinette pour la rue est interdit."
+    },
+    {
+      "q": "Quel chargeur pour l'Apollo Phantom 2.0 52 V ?",
+      "a": "Un chargeur pour batterie 52 V, qui délivre 58,8 V en fin de charge. Celui fourni débite 2 A et met environ 13 heures pour une charge complète."
+    }
+  ],
+  "sources": [
+    {
+      "label": "Apollo — Phantom 2.0 (52 V)",
+      "url": "https://apolloscooters.co/products/apollo-phantom-2-0"
+    },
+    {
+      "label": "Apollo Australie — Phantom 2.0",
+      "url": "https://apolloscooters.au/products/apollo-phantom-2-0"
+    },
+    {
+      "label": "Apollo — fiches techniques expliquées",
+      "url": "https://apolloscooters.co/blogs/news/electric-scooter-specifications-explained"
+    },
+    {
+      "label": "Apollo — batteries de chaque modèle",
+      "url": "https://support.apolloscooters.co/en-US/battery-specs-for-each-apollo-scooter-models-5684766"
+    },
+    {
+      "label": "Apollo — pièces et compatibilités",
+      "url": "https://support.apolloscooters.co/en-US/articles/parts-accessories-and-upgrades-325246"
+    },
+    {
+      "label": "Electric Scooter Guide — Phantom 2.0 Stellar vs 52 V",
+      "url": "https://electricscooterguide.com/apollo-phantom-2-0-stellar-vs-2-0/"
+    },
+    {
+      "label": "E-Craft — Apollo Phantom 2.0",
+      "url": "https://www.e-craft.at/en/produkt/apollo-phantom-2.0/sw10719"
+    },
+    {
+      "label": "YouTube — Apollo Phantom 2.0 52V vs STELLAR Comparison",
+      "url": "https://www.youtube.com/watch?v=Dfp6gyToBF4"
+    }
+  ],
+  "video": {
+    "id": "Dfp6gyToBF4",
+    "title": "Apollo Phantom 2.0 52V vs STELLAR Comparison",
+    "channel": "Apollo Scooters",
+    "uploadDate": "2025-06-14"
+  }
+}

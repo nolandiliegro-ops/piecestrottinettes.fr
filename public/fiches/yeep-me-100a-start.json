@@ -1,0 +1,113 @@
+{
+ "displayName": "Yeep.me 100A Start",
+ "metaTitle": "Yeep.me 100A Start : fiche, roues pleines et charge",
+ "metaDescription": "Yeep.me 100A Start : roues pleines alvéolées de 10 pouces, moteur 36 V de 500 W en pointe, batterie 7,8 Ah, 30 km annoncés, IPX6. Fiche et chargeur.",
+ "intro": [
+  "La Yeep.me 100A Start est la version d'entrée de la 100A : même châssis en acier de la série A et mêmes roues de 10 pouces, mais avec des pneus pleins alvéolés increvables et une batterie plus petite de 7,8 Ah (280 Wh), annoncée pour 30 km.",
+  "Son moteur de 36 V délivre 350 W nominaux et 500 W en pointe. Elle pèse 19 kg, accepte 120 kg, freine avec un disque arrière et un frein électronique avant, et se recharge en 4 à 5 heures avec un chargeur 42 V de 1,5 A, selon Yeep.me."
+ ],
+ "specs": [
+  [
+   "Moteur",
+   "350 W nominaux, 500 W en pointe (36 V)"
+  ],
+  [
+   "Vitesse",
+   "25 km/h"
+  ],
+  [
+   "Autonomie annoncée",
+   "jusqu'à 30 km"
+  ],
+  [
+   "Batterie",
+   "36 V, 7,8 Ah, 280 Wh"
+  ],
+  [
+   "Poids",
+   "19 kg"
+  ],
+  [
+   "Charge max",
+   "120 kg"
+  ],
+  [
+   "Roues",
+   "10 pouces, pleines alvéolées"
+  ],
+  [
+   "Freins",
+   "Disque arrière + électronique avant"
+  ],
+  [
+   "Suspension",
+   "Aucune"
+  ],
+  [
+   "Étanchéité",
+   "IPX6"
+  ],
+  [
+   "Temps de charge",
+   "4 à 5 h (chargeur 42 V, 1,5 A)"
+  ]
+ ],
+ "pros": [
+  "Pneus pleins alvéolés : plus de crevaison (Yeep.me, Darty).",
+  "Étanchéité IPX6 (Yeep.me).",
+  "Recharge en 4 à 5 heures (Yeep.me).",
+  "Garantie de 5 ans, batterie garantie 15 000 km (Darty)."
+ ],
+ "cons": [
+  "Pas de suspension, et des roues pleines qui transmettent davantage les chocs.",
+  "Autonomie limitée à 30 km annoncés.",
+  "19 kg, presque autant que la 100A mieux équipée.",
+  "Pas de clignotants, contrairement à la 100A."
+ ],
+ "parts": [],
+ "care": [
+  "Sur roues pleines, ralentis avant les pavés et les bordures : ce sont les roulements et la potence qui encaissent.",
+  "Une batterie de 280 Wh vieillit mieux rechargée souvent que vidée à fond : branche-la dès que tu passes sous 30 %.",
+  "Nettoie le disque arrière au dégraissant frein s'il siffle, jamais avec un lubrifiant."
+ ],
+ "price": {
+  "text": "Affichée 229 € sur la boutique Yeep.me (349 € barré). Prix susceptible de varier.",
+  "source": "yeep.me"
+ },
+ "faq": [
+  {
+   "q": "La Yeep.me 100A Start a-t-elle des pneus gonflables ?",
+   "a": "Non, ses roues de 10 pouces sont pleines, avec un intérieur alvéolé pour un peu de souplesse. Aucune chambre à air à remplacer."
+  },
+  {
+   "q": "Quel chargeur pour la Yeep.me 100A Start ?",
+   "a": "Un chargeur pour batterie 36 V délivrant 42 V ; Yeep.me fournit un modèle de 1,5 A."
+  },
+  {
+   "q": "Quelle vitesse sur route pour la Yeep.me 100A Start ?",
+   "a": "25 km/h au maximum : c'est la limite légale pour une trottinette électrique en France, et la valeur réglée par Yeep.me."
+  },
+  {
+   "q": "Quelle différence avec la Yeep.me 100A ?",
+   "a": "La 100A ajoute des clignotants, une batterie de 10,4 Ah pour 40 km annoncés et des pneus gonflables plus confortables."
+  }
+ ],
+ "sources": [
+  {
+   "label": "Yeep.me — 100A Start",
+   "url": "https://yeep.me/trottinettes-electriques/1244-yeepme-100a-start-3700293223403.html"
+  },
+  {
+   "label": "Yeep.me — accueil",
+   "url": "https://yeep.me/2-accueil"
+  },
+  {
+   "label": "Darty — trottinettes Yeep.me",
+   "url": "https://www.darty.com/nav/achat/sports_loisirs/glisse_urbaine/trottinette_electrique/marque__yeep_me__YEEP.html"
+  },
+  {
+   "label": "Solution Trottinette — Yeep.me 100A Start",
+   "url": "https://solution-trottinette.fr/trottinette-electrique/yeep-me-100a-start"
+  }
+ ]
+}

@@ -1,0 +1,100 @@
+{
+ "displayName": "Yeep.me 120A",
+ "metaTitle": "Yeep.me 120A : fiche technique, roues 12 pouces",
+ "metaDescription": "Yeep.me 120A : grandes roues tubeless de 12 pouces, moteur 36 V de 650 W en pointe, batterie 10,4 Ah, 40 km annoncés, 18,5 kg. Fiche et entretien.",
+ "intro": [
+  "La Yeep.me 120A mise sur de grandes roues : des pneus tubeless de 12 pouces, rares sur une trottinette de ce gabarit, pour plus de stabilité sur les chaussées abîmées. Elle démarre par badge NFC et porte des clignotants au guidon.",
+  "Son moteur de 36 V délivre 350 W nominaux et 650 W en pointe, avec une batterie de 10,4 Ah (374 Wh) annoncée pour 40 km. Elle pèse 18,5 kg, accepte 120 kg, freine avec un disque arrière et un frein électronique avant, et se recharge en 5 à 6 heures."
+ ],
+ "specs": [
+  [
+   "Moteur",
+   "350 W nominaux, 650 W en pointe (36 V)"
+  ],
+  [
+   "Vitesse",
+   "25 km/h"
+  ],
+  [
+   "Autonomie annoncée",
+   "jusqu'à 40 km"
+  ],
+  [
+   "Batterie",
+   "36 V, 10,4 Ah, 374 Wh"
+  ],
+  [
+   "Poids",
+   "18,5 kg"
+  ],
+  [
+   "Charge max",
+   "120 kg"
+  ],
+  [
+   "Roues",
+   "12 pouces, tubeless"
+  ],
+  [
+   "Freins",
+   "Disque arrière + électronique avant"
+  ],
+  [
+   "Temps de charge",
+   "5 à 6 h"
+  ]
+ ],
+ "pros": [
+  "Roues tubeless de 12 pouces pour la stabilité (Yeep.me, Boulanger).",
+  "18,5 kg malgré ses grandes roues (Yeep.me).",
+  "Batterie garantie 20 000 km (Yeep.me)."
+ ],
+ "cons": [
+  "Autonomie de 40 km annoncés, sans plus.",
+  "Le frein avant est uniquement électronique.",
+  "Encombrante une fois pliée : 133 cm de long.",
+  "Aucune suspension mentionnée par Yeep.me."
+ ],
+ "parts": [],
+ "care": [
+  "Les pneus tubeless de 12 pouces perdent leur pression lentement : un contrôle tous les quinze jours suffit à éviter les mauvaises surprises.",
+  "Si un clignotant faiblit, vérifie d'abord la connexion au guidon avant de commander une pièce.",
+  "Laisse la batterie se refroidir une demi-heure après un long trajet avant de la brancher."
+ ],
+ "price": {
+  "text": "Affichée 359,99 € sur la boutique Yeep.me et 439,99 € chez Boulanger. Prix susceptible de varier.",
+  "source": "yeep.me"
+ },
+ "faq": [
+  {
+   "q": "Quelle taille de pneu pour la Yeep.me 120A ?",
+   "a": "Des pneus tubeless de 12 pouces. Yeep.me ne publie pas la cote exacte : regarde l'inscription moulée sur le flanc de ton pneu."
+  },
+  {
+   "q": "Yeep.me 120A ou 120A Pro ?",
+   "a": "La 120A Pro reprend le même châssis avec un moteur de 800 W en pointe et une batterie de 15 Ah pour 60 km annoncés, pour environ 1,4 kg de plus."
+  },
+  {
+   "q": "La Yeep.me 120A dépasse-t-elle 25 km/h ?",
+   "a": "Non. Yeep.me la livre plafonnée à 25 km/h, la vitesse maximale autorisée aux trottinettes sur la voie publique."
+  },
+  {
+   "q": "Combien de temps pour recharger la Yeep.me 120A ?",
+   "a": "5 à 6 heures selon Yeep.me, environ 5 heures selon Boulanger."
+  }
+ ],
+ "sources": [
+  {
+   "label": "Yeep.me — 120A",
+   "url": "https://yeep.me/trottinettes-electriques/1855-yeepme-120a-12-650w-40km-3700293231521.html"
+  },
+  {
+   "label": "Boulanger — Yeep.me 120A",
+   "url": "https://www.boulanger.com/ref/9000921133"
+  },
+  {
+   "label": "Yeep.me — catalogue trottinettes",
+   "url": "https://yeep.me/147-trottinettes-electriques"
+  }
+ ]
+}

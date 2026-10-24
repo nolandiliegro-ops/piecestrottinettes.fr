@@ -1,0 +1,129 @@
+{
+ "displayName": "Langfeite Coupé",
+ "metaTitle": "Langfeite Coupé : fiche technique 48 V et FAQ",
+ "metaDescription": "Langfeite Coupé : 2 × 800 W, batterie 48 V 15,6 Ah, pneus tubeless 9,5 pouces, freins à disque, suspension à huile, 31 à 35 kg. Fiche, prix et FAQ.",
+ "intro": [
+  "La Langfeite Coupé est la trottinette la plus citadine de la marque : deux moteurs de 800 W nominaux, une batterie de 48 V et 15,6 Ah (environ 749 Wh) et des pneus tubeless de 9,5 pouces, avec une suspension à huile.",
+  "Langfeite annonce 45 km d'autonomie et 55 km/h hors voie publique ; les revendeurs français parlent de 50 km. Son poids varie selon les sources, 31 kg pour Langfeite et 35 kg chez les boutiques. Elle freine avec des disques mécaniques, là où la Roadster de la même marque passe à l'hydraulique."
+ ],
+ "specs": [
+  [
+   "Moteurs",
+   "2 × 800 W nominaux"
+  ],
+  [
+   "Vitesse",
+   "25 km/h sur la voie publique (livrée bridée) ; 55 km/h annoncés, réservés à un terrain privé"
+  ],
+  [
+   "Autonomie annoncée",
+   "45 km selon Langfeite, 50 km selon les revendeurs (75 kg, 25 km/h)"
+  ],
+  [
+   "Batterie",
+   "48 V, 15,6 Ah, environ 749 Wh (54,6 V en fin de charge)"
+  ],
+  [
+   "Poids",
+   "31 kg selon Langfeite, 35 kg selon les revendeurs français"
+  ],
+  [
+   "Charge max",
+   "120 kg selon Langfeite (150 kg chez un revendeur)"
+  ],
+  [
+   "Roues",
+   "9,5 pouces, tubeless"
+  ],
+  [
+   "Freins",
+   "Disques mécaniques"
+  ],
+  [
+   "Suspension",
+   "À huile"
+  ],
+  [
+   "Étanchéité",
+   "IP56 selon Fix My Trott ; non précisée ailleurs"
+  ],
+  [
+   "Temps de charge",
+   "environ 6 h"
+  ]
+ ],
+ "pros": [
+  "Deux moteurs pour une trottinette urbaine de 9,5 pouces (Langfeite).",
+  "Pneus tubeless moins sensibles aux crevaisons (Langfeite).",
+  "Démarrage par carte NFC (solution-trottinette).",
+  "L'une des Langfeite les moins chères en France (prix revendeurs)."
+ ],
+ "cons": [
+  "31 à 35 kg selon les sources, lourd pour une citadine.",
+  "Freins mécaniques seulement, contrairement à la Roadster hydraulique.",
+  "Indice d'étanchéité rarement indiqué.",
+  "Cote exacte des pneus non publiée par Langfeite."
+ ],
+ "parts": [],
+ "care": [
+  "Les disques mécaniques se dérèglent avec l'usure des plaquettes : rattrape le jeu au tendeur de câble dès que le levier s'allonge.",
+  "Gonfle les pneus de 9,5 pouces à la pression conseillée (3,5 bars selon un revendeur) : trop mous, ils chauffent et s'usent vite.",
+  "Débranche le chargeur une fois la charge terminée, sans laisser la Coupé branchée toute la nuit."
+ ],
+ "price": {
+  "text": "899 € chez Over Watt, 999 € chez Fix My Trott, 1 159 € chez Nature & Découvertes. Prix susceptible de varier.",
+  "source": "over-watt.fr, fixmytrott.com, natureetdecouvertes.com"
+ },
+ "faq": [
+  {
+   "q": "Quelle taille de pneu pour la Langfeite Coupé ?",
+   "a": "Langfeite indique des pneus tubeless de 9,5 pouces, sans la cote complète. Lis-la sur le flanc de ton pneu avant de commander."
+  },
+  {
+   "q": "Quelle différence entre la Langfeite Coupé et la Roadster ?",
+   "a": "La Roadster a une batterie plus grosse (environ 21 Ah), des roues de 10 pouces et des freins hydrauliques. La Coupé reste en 15,6 Ah, 9,5 pouces et freins mécaniques."
+  },
+  {
+   "q": "Les 55 km/h de la Coupé sont-ils autorisés ?",
+   "a": "Non sur la voie publique, où la loi limite les trottinettes à 25 km/h. Elle est d'ailleurs livrée bridée ; la débrider pour la rue est interdit, cette vitesse n'est permise que sur un terrain privé."
+  },
+  {
+   "q": "Combien pèse la Langfeite Coupé ?",
+   "a": "31 kg selon Langfeite, 35 kg selon les revendeurs français. Prévois un ascenseur si tu habites en étage."
+  },
+  {
+   "q": "Quelle autonomie réelle pour la Langfeite Coupé ?",
+   "a": "Langfeite annonce 45 km et les revendeurs 50 km, mesurés avec un pilote de 75 kg à 25 km/h. Aucun test indépendant n'a été trouvé."
+  }
+ ],
+ "sources": [
+  {
+   "label": "Langfeite — Coupé",
+   "url": "https://langfeite.com/Products/coupe.html"
+  },
+  {
+   "label": "Fix My Trott — Langfeite Coupé",
+   "url": "https://fixmytrott.com/products/langfeite-coupe-48v"
+  },
+  {
+   "label": "Trott'n Shop — Langfeite Coupé",
+   "url": "https://www.trottnshop.com/produit/langfeite-coupe/"
+  },
+  {
+   "label": "Fastride — Langfeite Coupé",
+   "url": "https://fastride.fr/fr/langfeite/5113-trottinette-electrique-langfeite-coupe-dual-48v-156a.html"
+  },
+  {
+   "label": "Nature & Découvertes — Langfeite Coupé",
+   "url": "https://www.natureetdecouvertes.com/outdoor/velos-accessoires/trottinettes-longboards-rollers/trottinette-electrique-langfeite-coupe-92672120"
+  },
+  {
+   "label": "Over Watt — Langfeite Coupé",
+   "url": "https://over-watt.fr/products/trottinette-electrique-langfeite-coupe"
+  },
+  {
+   "label": "Solution Trottinette — gamme Langfeite",
+   "url": "https://solution-trottinette.fr/trottinette-electrique/marque/langfeite"
+  }
+ ]
+}

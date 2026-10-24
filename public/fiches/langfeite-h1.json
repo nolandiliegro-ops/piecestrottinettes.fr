@@ -1,0 +1,137 @@
+{
+ "displayName": "Langfeite H1",
+ "metaTitle": "Langfeite H1 : fiche technique tout-terrain 72 V",
+ "metaDescription": "Langfeite H1 : 2 × 2 000 W, batterie Samsung 72 V 35 Ah (2 520 Wh), pneus tubeless 11 pouces, freins hydrauliques, 53 kg. Fiche, prix et FAQ.",
+ "intro": [
+  "La Langfeite H1 est la tout-terrain de la marque : deux moteurs de 2 000 W nominaux, une batterie Samsung de 72 V et 35 Ah (2 520 Wh), des pneus tubeless de 11 pouces et un très large plateau caoutchouté. Langfeite lui donne une fourche avant de type moto et de gros ressorts à l'arrière.",
+  "Elle pèse 53 kg. Langfeite annonce plus de 120 km d'autonomie, les revendeurs français plutôt 75 km. La puissance de pointe varie selon les vendeurs, de 6 720 à 8 400 W au total, et la vitesse hors voie publique de 65 à 105 km/h."
+ ],
+ "specs": [
+  [
+   "Moteurs",
+   "2 × 2 000 W nominaux ; pointe de 6 720 à 8 400 W au total selon les revendeurs"
+  ],
+  [
+   "Vitesse",
+   "25 km/h sur la voie publique ; 65 à 105 km/h annoncés selon les sources, réservés à un terrain privé"
+  ],
+  [
+   "Autonomie annoncée",
+   "75 km chez les revendeurs français ; plus de 120 km (75 miles) selon Langfeite"
+  ],
+  [
+   "Batterie",
+   "72 V, 35 Ah, 2 520 Wh, cellules Samsung 21700 (84 V en fin de charge)"
+  ],
+  [
+   "Poids",
+   "53 kg"
+  ],
+  [
+   "Charge max",
+   "120 à 150 kg selon les revendeurs"
+  ],
+  [
+   "Roues",
+   "11 pouces, tubeless"
+  ],
+  [
+   "Freins",
+   "Disques hydrauliques avant et arrière"
+  ],
+  [
+   "Suspension",
+   "Fourche avant de type moto, ressorts hydrauliques à l'arrière"
+  ],
+  [
+   "Étanchéité",
+   "IP54 selon deux revendeurs français, IPX5 selon un autre"
+  ],
+  [
+   "Temps de charge",
+   "environ 9 h avec un chargeur, 4,5 h avec deux (selon eVolt)"
+  ]
+ ],
+ "pros": [
+  "Batterie Samsung de 2 520 Wh à cellules 21700 (Langfeite).",
+  "Fourche avant de type moto pour le tout-terrain (Langfeite).",
+  "Freins hydrauliques aux deux roues (Langfeite).",
+  "Charge accélérée possible avec deux chargeurs (eVolt)."
+ ],
+ "cons": [
+  "53 kg : impossible à porter au quotidien.",
+  "Puissance de pointe et vitesse très différentes d'un revendeur à l'autre.",
+  "Cote des pneus contradictoire : 100/65-6.5 chez un revendeur, 90/65-6.5 chez un autre.",
+  "Aucun test d'autonomie indépendant trouvé."
+ ],
+ "parts": [],
+ "care": [
+  "Avec deux chargeurs branchés ensemble, laisse la batterie refroidir après une sortie avant de lancer la charge.",
+  "En tout-terrain, nettoie les disques et les étriers après chaque sortie boueuse : la terre ronge les plaquettes.",
+  "Contrôle la pression des pneus de 11 pouces avant chaque sortie ; les revendeurs donnent 3,1 à 3,5 bars."
+ ],
+ "price": {
+  "text": "2 499 € chez Countr-E-Ride, 2 699 € chez Fix My Trott, 3 459 € chez Nature & Découvertes. Prix susceptible de varier.",
+  "source": "countr-e-ride-by-trott-rider.com, fixmytrott.com, natureetdecouvertes.com"
+ },
+ "faq": [
+  {
+   "q": "Quelle taille de pneu pour la Langfeite H1 ?",
+   "a": "Des pneus tubeless de 11 pouces. Les revendeurs ne s'accordent pas sur la cote (100/65-6.5 ou 90/65-6.5) : lis l'inscription sur le flanc de ton pneu avant toute commande."
+  },
+  {
+   "q": "Quelle autonomie pour la Langfeite H1 ?",
+   "a": "Les revendeurs français annoncent 75 km, Langfeite plus de 120 km. Ces chiffres sont mesurés à vitesse modérée ; en tout-terrain, attends-toi à beaucoup moins."
+  },
+  {
+   "q": "La Langfeite H1 est-elle légale sur la route ?",
+   "a": "Elle est vendue bridée à 25 km/h pour rester dans la loi française. Au-delà, c'est une machine de terrain privé : la débrider pour la voie publique est interdit et t'expose à une sanction."
+  },
+  {
+   "q": "Combien de temps pour charger la Langfeite H1 ?",
+   "a": "Environ 9 heures avec un chargeur. Avec deux chargeurs branchés en même temps, un revendeur annonce 4 h 30."
+  },
+  {
+   "q": "Quelle différence entre la Langfeite H1 et la C1 ?",
+   "a": "La H1 passe en 72 V et 2 520 Wh, avec une fourche de type moto et 53 kg. La C1 reste en 60 V, plus légère, avec une batterie amovible."
+  }
+ ],
+ "sources": [
+  {
+   "label": "Langfeite — H1",
+   "url": "https://www.langfeite.com/Products/h1.html"
+  },
+  {
+   "label": "Langfeite — H1 (page espagnole)",
+   "url": "https://langfeite.com/es/two_h1.html"
+  },
+  {
+   "label": "eVolt — Langfeite H1",
+   "url": "https://evolt.si/en/products/electric-scooter-langfeite-h1"
+  },
+  {
+   "label": "Fix My Trott — Langfeite H1",
+   "url": "https://fixmytrott.com/products/h1"
+  },
+  {
+   "label": "Countr-E-Ride — Langfeite H1",
+   "url": "https://www.countr-e-ride-by-trott-rider.com/product/20635974/trottinette-electrique-langfeite-h1-dual-72v-35ah"
+  },
+  {
+   "label": "Nature & Découvertes — Langfeite H1",
+   "url": "https://www.natureetdecouvertes.com/outdoor/velos-accessoires/trottinettes-longboards-rollers/trottinette-electrique-langfeite-h1-92672090"
+  },
+  {
+   "label": "Weebot — Langfeite H1",
+   "url": "https://www.wee-bot.com/products/trottinette-electrique-langfeite-h1"
+  },
+  {
+   "label": "Peter E-Bike — Langfeite H1",
+   "url": "https://www.peter-ebike.com/product-page/langfeite-h1"
+  },
+  {
+   "label": "FōhzShop — Langfeite GT2 Mini (pièces Langfeite)",
+   "url": "https://fohzshop.fr/fr/trottinettes-electriques/langfeite/langfeite-gt2-mini-dual-52v-18-2ah"
+  }
+ ]
+}

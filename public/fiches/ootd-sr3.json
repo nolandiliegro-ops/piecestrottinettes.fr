@@ -1,0 +1,120 @@
+{
+ "displayName": "Ootd SR3",
+ "metaTitle": "Ootd SR3 : fiche technique bi-moteur 60 V",
+ "metaDescription": "Ootd SR3 : deux moteurs de 1 200 W, batterie 60 V 23,4 Ah, freins hydrauliques 140 mm, suspensions hydrauliques, 80 km annoncés. Fiche et entretien.",
+ "intro": [
+  "L'Ootd SR3 est la version bi-moteur de la série SR : deux moteurs de 1 200 W (2 400 W cumulés, 3 600 W en pointe selon deux revendeurs), une batterie de 60 V et 23,4 Ah, soit environ 1 404 Wh, et des pneus tout-terrain de 10 pouces.",
+  "Ootd annonce jusqu'à 80 km d'autonomie pour environ 39,8 kg. Elle freine avec deux disques hydrauliques de 140 mm et s'appuie sur des suspensions hydrauliques à l'avant et à l'arrière. Ootd indique 12 heures de charge avec le chargeur 67,2 V de 2 A ; Voltrix annonce 8 à 9 heures."
+ ],
+ "specs": [
+  [
+   "Moteurs",
+   "2 × 1 200 W (2 400 W cumulés) ; 3 600 W en pointe selon Fnac et Wheelyshop"
+  ],
+  [
+   "Vitesse",
+   "25 km/h sur la voie publique ; 65 km/h annoncés par Ootd, réservés à un terrain privé"
+  ],
+  [
+   "Autonomie annoncée",
+   "jusqu'à 80 km"
+  ],
+  [
+   "Batterie",
+   "60 V, 23,4 Ah, environ 1 404 Wh (67,2 V en fin de charge)"
+  ],
+  [
+   "Poids",
+   "environ 39,8 kg"
+  ],
+  [
+   "Charge max",
+   "150 kg selon Ootd ; 120 kg sur les fiches Fnac et Cdiscount"
+  ],
+  [
+   "Roues",
+   "10 pouces, pneus tout-terrain gonflables (tubeless selon Voltrix)"
+  ],
+  [
+   "Freins",
+   "Disques hydrauliques avant et arrière, 140 × 1,8 mm"
+  ],
+  [
+   "Suspension",
+   "Hydraulique avant et arrière (1 500 lb)"
+  ],
+  [
+   "Étanchéité",
+   "IPX4 selon Voltrix"
+  ],
+  [
+   "Temps de charge",
+   "12 h selon Ootd, 8 à 9 h selon Voltrix (chargeur 67,2 V, 2 A)"
+  ]
+ ],
+ "pros": [
+  "Batterie 60 V d'environ 1 404 Wh, la plus grosse de la série SR (Ootd).",
+  "Freins hydrauliques sur les deux roues (Ootd, Wheelyshop).",
+  "Suspensions hydrauliques avant et arrière (Ootd)."
+ ],
+ "cons": [
+  "Près de 40 kg : difficile à soulever, même pliée.",
+  "Recharge très longue d'après Ootd : 12 heures avec le chargeur d'origine.",
+  "Charge maximale annoncée différemment selon les fiches (120 ou 150 kg).",
+  "Dimension exacte des pneus jamais publiée."
+ ],
+ "parts": [],
+ "care": [
+  "Avec 60 V et deux moteurs, fais vérifier une fois par an le serrage des connecteurs de batterie et des câbles moteur.",
+  "Garde les disques hydrauliques propres : un disque taché d'huile ou de lubrifiant perd une grande partie de son mordant.",
+  "Recharge-la dans une pièce tempérée et jamais juste après une longue montée, quand la batterie est encore chaude."
+ ],
+ "price": {
+  "text": "Affichée 1 199 € chez le revendeur Voltrix. Prix susceptible de varier.",
+  "source": "voltrix.fr"
+ },
+ "faq": [
+  {
+   "q": "Quelle taille de pneu pour l'Ootd SR3 ?",
+   "a": "Ootd parle de pneus tout-terrain de 10 pouces sans donner la cote complète. Lis la dimension sur le flanc de ton pneu avant d'acheter un remplacement."
+  },
+  {
+   "q": "La vitesse de l'Ootd SR3 est-elle conforme en ville ?",
+   "a": "Elle l'est dans son réglage d'usine à 25 km/h. Les 65 km/h de la fiche ne valent que sur un terrain privé : modifier ce bridage pour circuler sur la route est interdit."
+  },
+  {
+   "q": "Combien de temps pour recharger l'Ootd SR3 ?",
+   "a": "Ootd annonce 12 heures avec le chargeur 67,2 V de 2 A fourni. Voltrix donne 8 à 9 heures : prévois une nuit complète dans tous les cas."
+  },
+  {
+   "q": "Quels freins sur l'Ootd SR3 ?",
+   "a": "Deux freins à disque hydrauliques, avec des disques en inox de 140 mm de diamètre et 1,8 mm d'épaisseur."
+  },
+  {
+   "q": "Quel poids maximal pour l'Ootd SR3 ?",
+   "a": "Ootd annonce 150 kg, mais certaines fiches revendeurs indiquent 120 kg. Par prudence, retiens 120 kg si tu es proche de cette limite."
+  }
+ ],
+ "sources": [
+  {
+   "label": "Ootd France — SR3",
+   "url": "https://fr.o-otd.com/products/ootd-sr3-e-scooter"
+  },
+  {
+   "label": "Fnac — Ootd SR3",
+   "url": "https://www.fnac.com/mp54105586/Trottinette-electrique-pliable-OOTD-SR3-moteur-2400W-60V-23-4Ah-Jaune/w-4"
+  },
+  {
+   "label": "Voltrix — Ootd SR3",
+   "url": "https://voltrix.fr/produits/trottinettes-electriques/trottinettes-electriques-par-prix/entre-500e-et-1000e/ootd-sr3/"
+  },
+  {
+   "label": "Wheelyshop — Ootd SR3",
+   "url": "https://www.wheelyshop.fr/products/ootd-sr3"
+  },
+  {
+   "label": "Cdiscount — Ootd SR3",
+   "url": "https://www.cdiscount.com/le-sport/mobilite-urbaine/ootd-sr3-trottinette/f-1214801-aadnw08719.html"
+  }
+ ]
+}

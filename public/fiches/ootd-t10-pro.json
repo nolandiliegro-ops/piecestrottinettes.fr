@@ -1,0 +1,147 @@
+{
+  "displayName": "Ootd T10 Pro",
+  "metaTitle": "Ootd T10 Pro : fiche bi-moteur, pneus 90/65-6.5",
+  "metaDescription": "Ootd T10 Pro : deux moteurs de 800 W (1 300 W en pointe), batterie 52 V 23,4 Ah, pneus tubeless 90/65-6.5, freins hydrauliques. Fiche et pièces.",
+  "intro": [
+    "L'Ootd T10 Pro est la version bi-moteur de la T10 : deux moteurs de 800 W nominaux et 1 300 W en pointe chacun, une batterie de 52 V et 23,4 Ah (environ 1 217 Wh) et des pneus tubeless hybrides de 11 pouces en 90/65-6.5, selon Ootd et le revendeur Xvelo.",
+    "Elle pèse environ 40,5 kg et accepte 150 kg de charge. Ootd annonce environ 70 km d'autonomie. Elle freine avec deux disques hydrauliques de 140 mm, combine double ressort à l'avant et amortisseur à l'arrière, et se recharge en 7 à 8 heures avec son chargeur 58,8 V de 3 A."
+  ],
+  "specs": [
+    [
+      "Moteurs",
+      "2 × 800 W nominaux ; 2 × 1 300 W en pointe (2 600 W cumulés)"
+    ],
+    [
+      "Vitesse",
+      "25 km/h sur la voie publique ; 65 km/h annoncés par Ootd, réservés à un terrain privé"
+    ],
+    [
+      "Autonomie annoncée",
+      "environ 70 km (60 à 80 km selon le mode et le pilote)"
+    ],
+    [
+      "Batterie",
+      "52 V, 23,4 Ah, environ 1 217 Wh (58,8 V en fin de charge)"
+    ],
+    [
+      "Poids",
+      "environ 40,5 kg"
+    ],
+    [
+      "Charge max",
+      "150 kg"
+    ],
+    [
+      "Roues",
+      "11 pouces, tubeless hybrides 90/65-6.5"
+    ],
+    [
+      "Freins",
+      "Disques hydrauliques avant et arrière, 140 mm"
+    ],
+    [
+      "Suspension",
+      "Double ressort avant ; arrière à ressort, passé en hydraulique selon Ootd"
+    ],
+    [
+      "Étanchéité",
+      "IP54 selon ECOLYMP, IPX4 selon Pogocycles"
+    ],
+    [
+      "Temps de charge",
+      "7 à 8 h (chargeur 58,8 V, 3 A)"
+    ]
+  ],
+  "pros": [
+    "Accélération et tenue en côte saluées par les testeurs français (TomRider78, YouTube).",
+    "Freins hydrauliques et charge maximale de 150 kg (Ootd).",
+    "On peut rouler sur un seul moteur ou sur les deux pour économiser la batterie (test YouTube).",
+    "Pneus 90/65-6.5, une dimension courante en remplacement (Ootd, Xvelo)."
+  ],
+  "cons": [
+    "Environ 40,5 kg : la porter est hors de question au quotidien.",
+    "Un testeur la juge lente au démarrage en mode bridé avec un pilote lourd (YouTube).",
+    "IP54 ou IPX4 : les revendeurs ne s'accordent pas sur l'étanchéité.",
+    "Pas de Bluetooth selon la fiche Cdiscount."
+  ],
+  "parts": [
+    {
+      "label": "Pneu",
+      "size": "90/65-6.5 tubeless (11 pouces)",
+      "count": 11,
+      "to": "/piece/pneu-90-65-6-5-route-tubeless",
+      "cta": "Pneus 90/65-6.5"
+    },
+    {
+      "label": "Chambre à air",
+      "size": "90/65-6.5, pour dépanner un tubeless",
+      "count": 5,
+      "to": "/piece/chambre-a-air-90-65-6-5-valve-coudee-90-ewheel",
+      "cta": "Chambres 90/65-6.5"
+    },
+    {
+      "label": "Disque de frein",
+      "size": "140 mm, entraxe 44 mm",
+      "count": 3,
+      "to": "/piece/disque-de-frein-r6-140mm-entraxe-44mm-3-couleurs-vert",
+      "cta": "Disques 140 mm"
+    }
+  ],
+  "care": [
+    "En usage tranquille, roule sur un seul moteur : tu ménages la batterie et les deux moteurs ne chauffent pas pour rien.",
+    "Purge les freins hydrauliques une fois par an ou dès que le levier s'enfonce davantage qu'à la livraison.",
+    "Avec 40 kg à bord, contrôle chaque mois le serrage de la colonne et du mécanisme de pliage."
+  ],
+  "price": {
+    "text": "Affichée 839 € chez Xvelo et 1 114 € chez ECOLYMP au moment du relevé. Prix susceptible de varier.",
+    "source": "xvelogo.com"
+  },
+  "faq": [
+    {
+      "q": "Quelle taille de pneu pour l'Ootd T10 Pro ?",
+      "a": "Des pneus tubeless hybrides de 11 pouces en 90/65-6.5. En cas de crevaison difficile à colmater, une chambre à air de même dimension peut te dépanner."
+    },
+    {
+      "q": "L'Ootd T10 Pro est-elle légale avec ses 65 km/h annoncés ?",
+      "a": "Elle est livrée limitée à 25 km/h, le plafond imposé en France sur la voie publique. Lever cette limite pour rouler dans la rue est interdit ; les 65 km/h ne concernent qu'un terrain privé."
+    },
+    {
+      "q": "Combien de temps pour recharger l'Ootd T10 Pro ?",
+      "a": "7 à 8 heures avec le chargeur fourni, qui délivre 58,8 V et 3 A, selon Ootd."
+    },
+    {
+      "q": "Quels freins sur l'Ootd T10 Pro ?",
+      "a": "Deux freins à disque hydrauliques avec des disques de 140 mm, là où la T10 simple se contente de freins à câble."
+    },
+    {
+      "q": "Quel poids maximal pour l'Ootd T10 Pro ?",
+      "a": "150 kg selon Ootd, soit 30 kg de plus que la T10 simple."
+    }
+  ],
+  "sources": [
+    {
+      "label": "Ootd — T10 Pro",
+      "url": "https://o-otd.com/products/ootd-t10-pro-escooter"
+    },
+    {
+      "label": "Xvelo — guide Ootd T10 Pro",
+      "url": "https://xvelogo.com/fr/pages/guide-ootd-t10-pro-france"
+    },
+    {
+      "label": "Cdiscount — Ootd T10 Pro",
+      "url": "https://www.cdiscount.com/le-sport/mobilite-urbaine/trottinette-lectrique-ootd/f-1214801-aackd37679.html"
+    },
+    {
+      "label": "ECOLYMP — Ootd T10 Pro",
+      "url": "https://ecolymp.eu/sl/product/ootd-t10-pro-electric-scooter/"
+    },
+    {
+      "label": "Pogocycles — Ootd T10 Pro",
+      "url": "https://pogocycles.ie/products/ootd-t10-pro-electric-scooter"
+    },
+    {
+      "label": "YouTube — Test OOTD T10 Pro (TomRider78)",
+      "url": "https://www.youtube.com/watch?v=zIfcKKfUhRc"
+    }
+  ]
+}

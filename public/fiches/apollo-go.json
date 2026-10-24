@@ -1,0 +1,133 @@
+{
+ "displayName": "Apollo Go",
+ "metaTitle": "Apollo Go : fiche technique double moteur 36 V",
+ "metaDescription": "Apollo Go : 2 moteurs de 350 W (750 W en pointe chacun), batterie 36 V 15 Ah (540 Wh), pneus 9 pouces tubeless, IP66, 21 à 22 kg. Fiche et FAQ.",
+ "intro": [
+  "L'Apollo Go est la petite double moteur d'Apollo : deux moteurs de 350 W nominaux, 750 W en pointe chacun, une batterie de 36 V et 15 Ah (540 Wh) et seulement 21 à 22 kg selon les sources. Elle est sortie fin 2023 et Apollo la vend encore comme modèle 2024.",
+  "Apollo annonce 45 km/h hors voie publique et 48 à 58 km d'autonomie selon les pages. Les tests mesurent plutôt 28 à 32 km en conduite normale. Elle freine avec un tambour arrière et le frein régénératif, roule sur des pneus tubeless auto-obturants de 9 pouces et porte l'indice IP66."
+ ],
+ "specs": [
+  [
+   "Moteurs",
+   "2 × 350 W nominaux, 2 × 750 W en pointe"
+  ],
+  [
+   "Vitesse",
+   "25 km/h sur la voie publique ; 45 km/h annoncés, réservés à un terrain privé"
+  ],
+  [
+   "Autonomie annoncée",
+   "48 km sur les premières fiches, jusqu'à 58 km (mode Eco) sur la page américaine actuelle"
+  ],
+  [
+   "Autonomie mesurée",
+   "28 km (Electric Scooter Insider) à 32 km (ERideHero, pilote de 79 kg)"
+  ],
+  [
+   "Batterie",
+   "36 V, 15 Ah, 540 Wh (cellules 21700)"
+  ],
+  [
+   "Poids",
+   "21 à 22 kg selon les sources"
+  ],
+  [
+   "Charge max",
+   "120 kg"
+  ],
+  [
+   "Roues",
+   "9 pouces, tubeless auto-obturants"
+  ],
+  [
+   "Freins",
+   "Tambour arrière + freinage régénératif sur les deux moteurs"
+  ],
+  [
+   "Suspension",
+   "Ressort à l'avant, bloc caoutchouc à l'arrière"
+  ],
+  [
+   "Étanchéité",
+   "IP66"
+  ],
+  [
+   "Temps de charge",
+   "environ 7,5 h avec le chargeur 36 V 2 A"
+  ]
+ ],
+ "pros": [
+  "Très bonne tenue en côte pour moins de 22 kg (ERideHero).",
+  "Accélération vive grâce aux deux moteurs (Electrek).",
+  "Frein régénératif doux et tambour quasi sans entretien (ERideHero).",
+  "Indice IP66 (Apollo)."
+ ],
+ "cons": [
+  "Batterie 36 V : la vitesse baisse quand la charge descend (ERideHero).",
+  "Pneus de 9 pouces, moins confortables que des 10 pouces (Electric Scooter Insider).",
+  "Autonomie réelle autour de 30 km, loin des chiffres annoncés.",
+  "Plateau jugé un peu étroit sur les longs trajets (avis Best Buy)."
+ ],
+ "parts": [],
+ "care": [
+  "Les pneus de 9 pouces perdent vite de la pression : contrôle-les chaque semaine pour limiter les crevaisons.",
+  "Un peu de graisse au lithium sur le ressort avant et la cartouche arrière garde la suspension silencieuse.",
+  "Vérifie le serrage des vis Allen du guidon et de la potence tous les mois, surtout les premières semaines."
+ ],
+ "price": {
+  "text": "1 099 € chez le revendeur ecraft pour la version bridée à 25 km/h ; 749 $ en promotion sur la boutique Apollo américaine. Prix susceptible de varier.",
+  "source": "ecraft-shop.de"
+ },
+ "faq": [
+  {
+   "q": "L'Apollo Go a-t-elle vraiment deux moteurs ?",
+   "a": "Oui, un dans chaque roue : 350 W nominaux chacun, 750 W en pointe. Apollo écrit parfois « 750 W × 2 », ce qui correspond à la pointe, pas à la puissance continue."
+  },
+  {
+   "q": "Quelle autonomie réelle pour l'Apollo Go ?",
+   "a": "Autour de 28 à 32 km en conduite normale selon les tests. Monte jusqu'à 38 km en roulant doucement, d'après ERideHero."
+  },
+  {
+   "q": "À quelle vitesse peut-on rouler en France avec l'Apollo Go ?",
+   "a": "25 km/h au maximum sur la voie publique. La version européenne est d'ailleurs vendue bridée ; les 45 km/h ne s'envisagent que sur un terrain privé, et la débrider pour la route est interdit."
+  },
+  {
+   "q": "Quelle taille de pneu pour l'Apollo Go ?",
+   "a": "Des pneus tubeless auto-obturants de 9 pouces ; un testeur indique 9 × 2 pouces. Lis la cote sur le flanc de ton pneu avant d'en commander un."
+  },
+  {
+   "q": "Quel chargeur pour l'Apollo Go ?",
+   "a": "Un chargeur pour batterie 36 V, qui délivre 42 V en fin de charge. Celui d'origine débite 2 A et recharge en 7 h 30 environ."
+  }
+ ],
+ "sources": [
+  {
+   "label": "Apollo — Go (États-Unis)",
+   "url": "https://apolloscooters.co/products/apollo-go"
+  },
+  {
+   "label": "Apollo Australie — Go",
+   "url": "https://apolloscooters.au/pages/apollo-go"
+  },
+  {
+   "label": "Electrek — Apollo Go review",
+   "url": "https://electrek.co/2024/06/03/apollo-go-review-electric-scooter-testing-at-28-mph/"
+  },
+  {
+   "label": "ERideHero — Apollo Go",
+   "url": "https://eridehero.com/apollo-go-review/"
+  },
+  {
+   "label": "Electric Scooter Insider — Apollo Go",
+   "url": "https://www.electricscooterinsider.com/electric-scooters/reviews/apollo-go-review/"
+  },
+  {
+   "label": "Electric Scooter Guide — Apollo Go",
+   "url": "https://electricscooterguide.com/apollo-go-review/"
+  },
+  {
+   "label": "ecraft — Apollo",
+   "url": "https://www.ecraft-shop.de/en/apollo"
+  }
+ ]
+}

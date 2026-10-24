@@ -1,0 +1,129 @@
+{
+  "displayName": "Langfeite GT2 Mini",
+  "metaTitle": "Langfeite GT2 Mini : fiche technique 52 V et FAQ",
+  "metaDescription": "Langfeite GT2 Mini : 2 × 1 200 W, batterie 52 V 18,2 Ah, pneus tubeless 10 pouces, freins hydrauliques à 4 pistons, 32 kg, IPX6. Fiche, prix et FAQ.",
+  "intro": [
+    "La Langfeite GT2 Mini reprend le style de la GT2 dans un format de 10 pouces. Elle a deux moteurs de 1 200 W nominaux, une batterie de 52 V et 18,2 Ah (environ 946 Wh), des freins hydrauliques à 4 pistons et une double suspension hydraulique, pour 32 à 33 kg.",
+    "Les revendeurs français annoncent 60 km d'autonomie (pilote de 75 kg à 25 km/h), 60 km/h hors voie publique et l'indice IPX6. La puissance de pointe varie selon les fiches : 2 940 W au total chez certains, 2 × 2 400 W chez d'autres. Elle est livrée bridée à 25 km/h."
+  ],
+  "specs": [
+    [
+      "Moteurs",
+      "2 × 1 200 W nominaux ; pointe de 2 940 W au total (Fastride, Urban Moov) ou 2 × 2 400 W (FōhzShop)"
+    ],
+    [
+      "Vitesse",
+      "25 km/h sur la voie publique (livrée bridée) ; 60 km/h annoncés, réservés à un terrain privé"
+    ],
+    [
+      "Autonomie annoncée",
+      "jusqu'à 60 km (pilote de 75 kg à 25 km/h)"
+    ],
+    [
+      "Batterie",
+      "52 V, 18,2 Ah, environ 946 Wh (58,8 V en fin de charge)"
+    ],
+    [
+      "Poids",
+      "32 à 33 kg"
+    ],
+    [
+      "Charge max",
+      "120 kg selon Langfeite et FōhzShop, 200 kg selon d'autres revendeurs"
+    ],
+    [
+      "Roues",
+      "10 pouces, tubeless semi-tout-terrain"
+    ],
+    [
+      "Freins",
+      "Disques hydrauliques à 4 pistons avant et arrière"
+    ],
+    [
+      "Suspension",
+      "Hydraulique avant et arrière"
+    ],
+    [
+      "Étanchéité",
+      "IPX6 selon deux revendeurs français"
+    ],
+    [
+      "Temps de charge",
+      "4 à 8 h selon le chargeur"
+    ]
+  ],
+  "pros": [
+    "Freins hydrauliques à 4 pistons, rares à ce gabarit (Fastride, Urban Moov).",
+    "Très stable selon un testeur français (YouTube).",
+    "Indice IPX6 annoncé (Fastride, Nature & Découvertes).",
+    "Agréable même en mode un seul moteur selon le même testeur (YouTube)."
+  ],
+  "cons": [
+    "32 à 33 kg malgré son nom de « Mini ».",
+    "Charge maximale contradictoire : 120 kg ou 200 kg selon les vendeurs.",
+    "Puissance de pointe annoncée de deux façons différentes.",
+    "Pas de test d'autonomie indépendant trouvé."
+  ],
+  "parts": [],
+  "care": [
+    "Les étriers à 4 pistons demandent des plaquettes propres : ne pulvérise jamais de lubrifiant près des disques.",
+    "Garde la batterie entre 20 et 80 % au quotidien et charge à 100 % la veille d'une longue sortie.",
+    "Contrôle la pression des pneus tubeless chaque semaine : sur une 10 pouces, un pneu mou se déjante plus facilement."
+  ],
+  "price": {
+    "text": "1 390 € chez FōhzShop, 1 399 € chez Fastride, 1 799 € chez Nature & Découvertes. Prix susceptible de varier.",
+    "source": "fohzshop.fr, fastride.fr, natureetdecouvertes.com"
+  },
+  "faq": [
+    {
+      "q": "Quelle taille de pneu pour la Langfeite GT2 Mini ?",
+      "a": "Des pneus tubeless de 10 pouces, semi-tout-terrain. Les vendeurs ne précisent pas la cote complète : lis-la sur le flanc de ton pneu avant d'en acheter un."
+    },
+    {
+      "q": "Quelle différence entre la GT2 Mini et la GT2 RS ?",
+      "a": "Rien à voir en gabarit : la GT2 RS est une 84 V de plus de 80 kg sur roues de 13 pouces. La GT2 Mini reste en 52 V, 10 pouces et environ 32 kg."
+    },
+    {
+      "q": "La GT2 Mini peut-elle rouler à 60 km/h en ville ?",
+      "a": "Non. Elle est livrée bridée à 25 km/h, le maximum autorisé sur la voie publique en France. Les 60 km/h annoncés ne valent que sur un terrain privé, et la débrider pour la ville est interdit."
+    },
+    {
+      "q": "Quel poids maximal supporte la Langfeite GT2 Mini ?",
+      "a": "Langfeite et FōhzShop indiquent 120 kg, d'autres boutiques 200 kg. Pour ta sécurité, retiens la valeur la plus basse."
+    },
+    {
+      "q": "Combien de temps pour charger la GT2 Mini ?",
+      "a": "Entre 4 et 8 heures selon le chargeur utilisé ; le chargeur standard délivre 58,8 V et 2 A."
+    }
+  ],
+  "sources": [
+    {
+      "label": "Langfeite — GT2 Mini",
+      "url": "https://langfeite.com/Products/GT2mini.html"
+    },
+    {
+      "label": "Langfeite — boutique (gamme)",
+      "url": "https://langfeite.com/shops/indexs"
+    },
+    {
+      "label": "Fastride — Langfeite GT2 Mini",
+      "url": "https://fastride.fr/fr/langfeite/5112-trottinette-electrique-langfeite-gt2-mini-dual-52v-182ah.html"
+    },
+    {
+      "label": "Urban Moov — Langfeite GT2 Mini",
+      "url": "https://www.urbanmoov.fr/boutique/LANGFEITE-GT2-MINI-DUAL-52V-18-2Ah-p810897327"
+    },
+    {
+      "label": "FōhzShop — Langfeite GT2 Mini",
+      "url": "https://fohzshop.fr/fr/trottinettes-electriques/langfeite/langfeite-gt2-mini-dual-52v-18-2ah"
+    },
+    {
+      "label": "Nature & Découvertes — Langfeite GT2 Mini",
+      "url": "https://www.natureetdecouvertes.com/outdoor/velos-accessoires/trottinettes-longboards-rollers/trottinette-electrique-langfeite-gt2-mini-92672080"
+    },
+    {
+      "label": "Peter E-Bike — Langfeite GT2 Mini",
+      "url": "https://www.peter-ebike.com/product-page/langfeite-gt2-mini"
+    }
+  ]
+}

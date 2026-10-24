@@ -1,0 +1,140 @@
+{
+ "displayName": "Ootd S30",
+ "metaTitle": "Ootd S30 : fiche bi-moteur 52 V et pneus 10x2.75",
+ "metaDescription": "Ootd S30 : deux moteurs de 1 200 W, batterie 52 V 23,4 Ah, pneus tubeless 10x2.75, freins hydrauliques 140 mm. Fiche technique, entretien et pièces.",
+ "intro": [
+  "L'Ootd S30 est le modèle bi-moteur de la série S : deux moteurs de 1 200 W, soit 2 400 W cumulés, une batterie de 52 V et 23,4 Ah (environ 1 217 Wh) et des pneus tubeless tout-terrain de 10 x 2,75 pouces, selon Ootd et plusieurs revendeurs.",
+  "Elle combine freins à disque hydrauliques de 140 mm, suspensions hydrauliques et à ressort à l'avant et à l'arrière, et pèse environ 36,5 kg pour 120 kg de charge maximale. Ootd annonce 60 km d'autonomie et une recharge d'environ 8 heures avec deux chargeurs de 2 A."
+ ],
+ "specs": [
+  [
+   "Moteurs",
+   "2 × 1 200 W (2 400 W cumulés) ; puissance de pointe non communiquée"
+  ],
+  [
+   "Vitesse",
+   "25 km/h sur la voie publique ; 65 km/h annoncés par Ootd, réservés à un terrain privé"
+  ],
+  [
+   "Autonomie annoncée",
+   "60 km selon Ootd, 70 km chez certains revendeurs"
+  ],
+  [
+   "Batterie",
+   "52 V, 23,4 Ah, environ 1 217 Wh"
+  ],
+  [
+   "Poids",
+   "environ 36,5 kg (39 kg sur une fiche Cdiscount)"
+  ],
+  [
+   "Charge max",
+   "120 kg"
+  ],
+  [
+   "Roues",
+   "10 x 2,75 pouces, tubeless tout-terrain"
+  ],
+  [
+   "Freins",
+   "Disques hydrauliques avant et arrière, 140 mm"
+  ],
+  [
+   "Suspension",
+   "Hydraulique + ressort, avant et arrière"
+  ],
+  [
+   "Étanchéité",
+   "IP54 selon Cdiscount et Vasik (IPX4 chez un autre revendeur)"
+  ],
+  [
+   "Temps de charge",
+   "environ 8 h avec deux chargeurs de 2 A"
+  ]
+ ],
+ "pros": [
+  "Deux moteurs pour 2 400 W cumulés (Ootd).",
+  "Freins hydrauliques à l'avant et à l'arrière avec disques de 140 mm (Ootd).",
+  "Charge plus rapide en branchant deux chargeurs de 2 A en même temps (manuel Ootd).",
+  "Pneus tubeless de 10 x 2,75, une dimension courante chez les fournisseurs (Cdiscount, manuel)."
+ ],
+ "cons": [
+  "Environ 36,5 kg : elle se pousse plus qu'elle ne se porte.",
+  "Puissance de pointe jamais communiquée par Ootd.",
+  "Indice d'étanchéité annoncé différemment selon les revendeurs.",
+  "Aucune mesure d'autonomie indépendante trouvée à ce jour."
+ ],
+ "parts": [
+  {
+   "label": "Pneu",
+   "size": "10 x 2,75-6,5 tubeless",
+   "count": 6,
+   "to": "/piece/pneu-10x2-75-6-5-tubeless-aoxin-urbanglide-e-cross",
+   "cta": "Pneus 10x2.75"
+  },
+  {
+   "label": "Disque de frein",
+   "size": "140 mm, entraxe 44 mm",
+   "count": 3,
+   "to": "/piece/disque-de-frein-r6-140mm-entraxe-44mm-3-couleurs-vert",
+   "cta": "Disques 140 mm"
+  }
+ ],
+ "care": [
+  "Freins hydrauliques : un levier qui devient mou annonce une purge, pas un simple serrage d'étrier.",
+  "Tubeless : surveille la pression chaque semaine, une fuite lente par la valve passe inaperçue sur des pneus aussi larges.",
+  "Branche les deux chargeurs fournis pour gagner du temps, mais débranche-les une fois la charge terminée."
+ ],
+ "price": {
+  "text": "Relevé sur Amazon.fr Marketplace via leDénicheur : 999 €. D'autres boutiques européennes l'affichent entre 929 et 1 169 €. Prix susceptible de varier.",
+  "source": "ledenicheur.fr"
+ },
+ "faq": [
+  {
+   "q": "Quelle taille de pneu pour l'Ootd S30 ?",
+   "a": "Des pneus tubeless de 10 x 2,75 pouces. Le marquage complet en 10x2.75-6.5 figure sur le flanc : vérifie-le avant de commander pour être sûr de la jante."
+  },
+  {
+   "q": "Puis-je rouler avec l'Ootd S30 au-delà de 25 km/h ?",
+   "a": "Pas sur la voie publique : la loi française plafonne les trottinettes électriques à 25 km/h, et l'Ootd S30 sort d'usine réglée ainsi. Rouler plus vite n'est envisageable que sur un terrain privé."
+  },
+  {
+   "q": "Combien de temps pour recharger l'Ootd S30 ?",
+   "a": "Environ 8 heures avec les deux chargeurs de 2 A branchés ensemble, selon le manuel Ootd."
+  },
+  {
+   "q": "Quels freins sur l'Ootd S30 ?",
+   "a": "Des freins à disque hydrauliques à l'avant et à l'arrière, avec des disques de 140 mm de diamètre."
+  },
+  {
+   "q": "Quelle différence entre l'Ootd S30 et l'Ootd S10 ?",
+   "a": "La S10 a un seul moteur (800 W nominaux), une batterie 48 V et des freins à câble. La S30 passe à deux moteurs de 1 200 W, une batterie 52 V et des freins hydrauliques, pour environ 9 kg de plus."
+  }
+ ],
+ "sources": [
+  {
+   "label": "Ootd — S30",
+   "url": "https://o-otd.com/pt/products/ootd-s30-e-scooter"
+  },
+  {
+   "label": "Manuel Ootd S30 (manuals.plus)",
+   "url": "https://manuals.plus/ae/1005012161118837"
+  },
+  {
+   "label": "Cdiscount — Ootd S30",
+   "url": "https://www.cdiscount.com/le-sport/mobilite-urbaine/trottinette-lectrique-ootd/f-1214801-aackd69131.html"
+  },
+  {
+   "label": "Vasik — Ootd S30",
+   "url": "https://vasikgo.com/fr/produit/trottinette-electrique-ootd-s30/"
+  },
+  {
+   "label": "Darty — Ootd S30",
+   "url": "https://www.darty.com/nav/achat/ref/MC353556337.html"
+  },
+  {
+   "label": "Ootd Suède — S30",
+   "url": "https://ootd.se/en/products/ootd-s30-electric-scooter"
+  }
+ ]
+}

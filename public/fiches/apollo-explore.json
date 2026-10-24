@@ -1,0 +1,128 @@
+{
+ "displayName": "Apollo Explore (1re génération)",
+ "metaTitle": "Apollo Explore 52 V : fiche technique 1re génération",
+ "metaDescription": "Apollo Explore 1re génération : moteur 1 000 W (1 400 W en pointe), batterie 52 V 18,2 Ah, freins à disque, pneus 10 pouces à chambre. Fiche et FAQ.",
+ "intro": [
+  "Cette fiche concerne l'Apollo Explore de première génération, vendue à partir de 2020, à ne pas confondre avec l'Explore 2.0 de 2025. Elle tourne en 52 V avec une batterie Dynavolt de 18,2 Ah (environ 946 Wh) et un moteur arrière de 1 000 W nominaux, 1 400 W en pointe.",
+  "Apollo annonçait 55 km d'autonomie, environ 23 kg et 120 kg de charge maximale. Elle freine avec deux disques mécaniques et un frein régénératif, et roule sur des pneus de 10 pouces à chambre à air, avec un ressort à l'avant et une double suspension à l'arrière."
+ ],
+ "specs": [
+  [
+   "Moteur",
+   "1 000 W nominaux, 1 400 W en pointe, roue arrière"
+  ],
+  [
+   "Vitesse",
+   "25 km/h sur la voie publique ; 50 km/h annoncés, réservés à un terrain privé"
+  ],
+  [
+   "Autonomie annoncée",
+   "jusqu'à 55 km"
+  ],
+  [
+   "Autonomie mesurée",
+   "environ 45 km en usage varié (selon Fluidfreeride)"
+  ],
+  [
+   "Batterie",
+   "52 V, 18,2 Ah Dynavolt, environ 946 Wh (58,8 V en fin de charge)"
+  ],
+  [
+   "Poids",
+   "environ 23 kg"
+  ],
+  [
+   "Charge max",
+   "120 kg"
+  ],
+  [
+   "Roues",
+   "10 pouces, pneumatiques à chambre à air"
+  ],
+  [
+   "Freins",
+   "Disques mécaniques avant et arrière + freinage régénératif"
+  ],
+  [
+   "Suspension",
+   "Ressort à l'avant, double suspension à l'arrière"
+  ],
+  [
+   "Temps de charge",
+   "8 à 9 h avec le chargeur standard, environ 4 à 5 h avec le chargeur rapide en option"
+  ]
+ ],
+ "pros": [
+  "Freinage efficace : arrêt en 3,3 m depuis 24 km/h (Electric Scooter Insider).",
+  "Confort salué grâce à la suspension et aux pneus de 10 pouces (Fluidfreeride).",
+  "Batterie de 946 Wh pour environ 23 kg (Apollo)."
+ ],
+ "cons": [
+  "Pneus à chambre à air : plus exposés aux crevaisons que des tubeless.",
+  "Charge longue avec le chargeur d'origine, jusqu'à 9 heures.",
+  "Phare jugé peu puissant (Fluidfreeride).",
+  "Le nom « Explore » désigne aussi l'Explore 2.0 en 48 V : vérifie ta génération avant d'acheter une pièce."
+ ],
+ "parts": [
+  {
+   "label": "Chargeur",
+   "size": "52 V (sortie 58,8 V), prise GX16 3 broches — Explore 1re génération uniquement",
+   "count": 3,
+   "to": "/piece/chargeur-52v-588v-2a-connecteur-gx16-3p",
+   "cta": "Chargeur 52 V"
+  }
+ ],
+ "care": [
+  "Avec des chambres à air, la pression fait tout : contrôle-la chaque semaine pour éviter le pincement sur un trottoir.",
+  "Les disques mécaniques se règlent au câble : rattrape le jeu dès que le levier touche presque la poignée.",
+  "Graisse légèrement les ressorts de suspension et vérifie le serrage des axes arrière tous les mois."
+ ],
+ "price": {
+  "text": "Prix de vente aux États-Unis en 2020 : 1 249 $ selon Tom's Guide. Pas de prix neuf actuel trouvé en Europe. Prix susceptible de varier.",
+  "source": "Tom's Guide"
+ },
+ "faq": [
+  {
+   "q": "Comment savoir si j'ai une Apollo Explore 1re génération ou une Explore 2.0 ?",
+   "a": "Regarde la batterie ou le chargeur : la première génération est en 52 V (chargeur 58,8 V) avec des freins à disque. L'Explore 2.0 de 2025 est en 48 V (chargeur 54,6 V) avec un tambour avant."
+  },
+  {
+   "q": "Quelle autonomie réelle pour l'Apollo Explore ?",
+   "a": "Autour de 45 km en conduite variée selon Fluidfreeride, pour 55 km annoncés. En roulant souvent à pleine vitesse, compte nettement moins."
+  },
+  {
+   "q": "Quelle taille de pneu pour l'Apollo Explore ?",
+   "a": "Des pneus de 10 pouces à chambre à air ; la largeur varie selon les sources (2,5 ou 2,75 pouces). Lis la cote sur le flanc de ton pneu avant de commander."
+  },
+  {
+   "q": "L'Apollo Explore peut-elle rouler à 50 km/h en ville ?",
+   "a": "Non. La loi française plafonne les trottinettes à 25 km/h sur la voie publique. Les 50 km/h annoncés valent uniquement sur un terrain privé, et tout débridage pour la route est interdit."
+  },
+  {
+   "q": "Peut-on charger l'Apollo Explore plus vite ?",
+   "a": "Oui, Apollo proposait un chargeur rapide en option, qui ramène la charge complète à 4 ou 5 heures selon les sources, contre 8 à 9 heures avec le chargeur standard."
+  }
+ ],
+ "sources": [
+  {
+   "label": "Electric Scooter Insider — Apollo Explore",
+   "url": "https://www.electricscooterinsider.com/electric-scooters/reviews/apollo-explore-review/"
+  },
+  {
+   "label": "Fluidfreeride — Apollo Explore review",
+   "url": "https://fluidfreeride.com/blogs/news/apollo-explore-review"
+  },
+  {
+   "label": "scooter.guide — Apollo Explore",
+   "url": "https://scooter.guide/apollo-explore-review/"
+  },
+  {
+   "label": "Tom's Guide — Apollo Explore",
+   "url": "https://www.tomsguide.com/reviews/apollo-explore"
+  },
+  {
+   "label": "Lymington Spring — Apollo Explore",
+   "url": "https://lymingtonspring.com/product/apollo-explore-electric-scooter/"
+  }
+ ]
+}

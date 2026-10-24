@@ -1,0 +1,136 @@
+{
+ "displayName": "SoFlow SO4 Pro",
+ "metaTitle": "SoFlow SO4 Pro : fiche technique, chargeur et avis",
+ "metaDescription": "SoFlow SO4 Pro : moteur 500 W, batterie 48 V 10,5 Ah (504 Wh), pneus gonflables 10 pouces, disques avant et arrière, 40 km annoncés. Fiche et chargeur.",
+ "intro": [
+  "La SoFlow SO4 Pro est la version musclée de la SO4, lancée par la marque suisse SoFlow autour de 2019-2020. Moteur de 500 W, batterie 48 V de 10,5 Ah (504 Wh), pneus gonflables de 10 pouces et freins à disque à l'avant comme à l'arrière : c'est une trottinette de ville pensée pour les trajets du quotidien.",
+  "La deuxième génération (Gen 2) ajoute des clignotants au guidon et une batterie amovible. SoFlow annonce 40 km d'autonomie ; un testeur allemand en a mesuré 28 à 31 km. Elle est homologuée en Allemagne à 20 km/h, donc sous la limite française de 25 km/h."
+ ],
+ "specs": [
+  [
+   "Moteur",
+   "500 W nominaux ; 1 100 W en pointe selon electric-commuter.de"
+  ],
+  [
+   "Vitesse",
+   "20 km/h (version homologuée en Allemagne) ; 22 km/h selon electric-commuter.de"
+  ],
+  [
+   "Autonomie annoncée",
+   "jusqu'à 40 km"
+  ],
+  [
+   "Autonomie mesurée",
+   "28,6 à 31 km selon electric-commuter.de (pilotes de 72 à 117 kg)"
+  ],
+  [
+   "Batterie",
+   "48 V 10,5 Ah (504 Wh), amovible sur la Gen 2 ; chargeur 54,6 V 2 A"
+  ],
+  [
+   "Poids",
+   "17 kg"
+  ],
+  [
+   "Charge max",
+   "150 kg selon Amazon, Galaxus et Geizhals ; 120 kg sur la fiche de lancement de 2020"
+  ],
+  [
+   "Roues",
+   "10 pouces, pneus gonflables"
+  ],
+  [
+   "Freins",
+   "Disques mécaniques avant et arrière"
+  ],
+  [
+   "Étanchéité",
+   "IPX5 sur la Gen 2 (selon Galaxus)"
+  ],
+  [
+   "Temps de charge",
+   "environ 5 h"
+  ]
+ ],
+ "pros": [
+  "Deux freins à disque, une rareté sur une trottinette de ville de 17 kg (Geizhals, Quelle).",
+  "Batterie amovible sur la Gen 2, que tu peux recharger chez toi (Galaxus).",
+  "Classée « bien » (4e sur 7) par Stiftung Warentest en août 2025 (Galaxus)."
+ ],
+ "cons": [
+  "Autonomie réelle mesurée autour de 30 km, loin des 40 km annoncés (electric-commuter.de).",
+  "Des acheteurs signalent bruit, faux contacts et coupures (avis Amazon.de).",
+  "Le verrouillage par NFC n'empêche pas de pousser la trottinette : un antivol reste nécessaire (Notebookcheck, via Geizhals).",
+  "Pas de suspension mentionnée dans les fiches."
+ ],
+ "parts": [
+  {
+   "label": "Chargeur",
+   "size": "48 V (sortie 54,6 V), prise jack DC 5,5 x 2,5 mm",
+   "count": 1,
+   "to": "/piece/pack-chargeur-48v-adaptateur-dc5-5x2-5",
+   "cta": "Chargeur 48 V"
+  }
+ ],
+ "care": [
+  "Ne branche jamais le chargeur d'une SO4 simple : sa fiche est identique, mais il sort 42 V au lieu des 54,6 V attendus.",
+  "Disques mécaniques : retends les câbles et recentre les étriers dès que le freinage devient mou ou qu'un disque frotte.",
+  "Pneus gonflables de 10 pouces : contrôle la pression chaque semaine pour limiter les crevaisons par pincement."
+ ],
+ "faq": [
+  {
+   "q": "La SoFlow SO4 Pro est-elle autorisée sur la voie publique en France ?",
+   "a": "Elle est conçue pour l'homologation allemande à 20 km/h, donc sous les 25 km/h tolérés en France. Comme pour toute trottinette, tu dois rouler sur les pistes cyclables quand elles existent et être assuré."
+  },
+  {
+   "q": "Quelle autonomie réelle pour la SoFlow SO4 Pro ?",
+   "a": "Le site electric-commuter.de a mesuré entre 28,6 et 31 km selon le poids du pilote. Les 40 km annoncés supposent des conditions idéales."
+  },
+  {
+   "q": "Quelle différence entre la SO4 Pro Gen 1 et Gen 2 ?",
+   "a": "La Gen 2 garde le moteur de 500 W et la batterie 48 V 10,5 Ah, mais ajoute des clignotants au guidon et une batterie amovible."
+  },
+  {
+   "q": "Quels freins sur la SoFlow SO4 Pro ?",
+   "a": "Un disque à l'avant et un à l'arrière, à commande mécanique par câble, selon Geizhals et Quelle."
+  },
+  {
+   "q": "Quelle taille de pneu pour la SoFlow SO4 Pro ?",
+   "a": "Les fiches indiquent des pneus gonflables de 10 pouces sans préciser la section. Lis la cote sur le flanc de ton pneu avant d'en acheter un."
+  }
+ ],
+ "sources": [
+  {
+   "label": "electric-commuter.de — SoFlow SO4 Pro",
+   "url": "https://electric-commuter.de/escooter/modell/15/soflow_so4pro"
+  },
+  {
+   "label": "Galaxus — SoFlow SO4 Pro Gen 2",
+   "url": "https://www.galaxus.ch/de/s3/product/soflow-so4-pro-gen-2-20-kmh-40-km-500-w-e-scooter-17287680"
+  },
+  {
+   "label": "Geizhals — SoFlow SO4 Pro",
+   "url": "https://geizhals.de/soflow-so4-pro-elektro-roller-schwarz-gruen-a2362949.html"
+  },
+  {
+   "label": "Amazon.de — SoFlow SO4 Pro Gen 2",
+   "url": "https://www.amazon.de/SoFlow-SO4-PRO-10-5-Blinker/dp/B08X97HCLB"
+  },
+  {
+   "label": "Quelle — SoFlow SO4 Pro",
+   "url": "https://www.quelle.de/p/AKLBB1717116791"
+  },
+  {
+   "label": "Stadt Bremerhaven — gamme SoFlow 2020",
+   "url": "https://stadt-bremerhaven.de/soflow-das-ist-das-neue-scooter-lineup/"
+  },
+  {
+   "label": "Handyersatzteilshop — chargeur SoFlow SO4 Pro",
+   "url": "https://www.handyersatzteilshop.de/ladegeraet-54-6v-fuer-soflow-so-4-pro-e-scooter/s818127-71"
+  },
+  {
+   "label": "CSI Elektronik — chargeur SoFlow SO4 Pro",
+   "url": "https://www.csi-elektronik.de/Ladegeraet-546V-kompatibel-mit-SoFlow-SO4-Pro-30043002-e-Scooter"
+  }
+ ]
+}

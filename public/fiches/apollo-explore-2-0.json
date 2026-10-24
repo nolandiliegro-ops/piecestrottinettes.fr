@@ -1,0 +1,133 @@
+{
+ "displayName": "Apollo Explore 2.0",
+ "metaTitle": "Apollo Explore 2.0 : fiche technique, avis et FAQ",
+ "metaDescription": "Apollo Explore 2.0 : 1 650 W en pointe, batterie 48 V 13,5 Ah (648 Wh), triple suspension, pneus 10 pouces auto-obturants, IP66. Fiche, tests et FAQ.",
+ "intro": [
+  "L'Apollo Explore 2.0, sortie en 2025, n'a presque rien gardé de la première Explore : elle passe en 48 V avec une batterie de 13,5 Ah (648 Wh) à cellules 21700, un seul moteur arrière de 1 650 W en pointe et une triple suspension à ressorts.",
+  "Apollo annonce 60 km d'autonomie en mode Eco, 27 kg et 120 kg de charge maximale. Elle freine avec un tambour avant et le frein régénératif Power RBS, et roule sur des pneus tubeless auto-obturants de 10 pouces. En test, deux pilotes de 90 à 107 kg ont parcouru environ 33 à 35 km."
+ ],
+ "specs": [
+  [
+   "Moteur",
+   "1 650 W en pointe selon Apollo (1 600 W selon d'autres sites) ; 500 W nominaux selon Tom's Guide"
+  ],
+  [
+   "Vitesse",
+   "25 km/h sur la voie publique ; 40 km/h annoncés, réservés à un terrain privé"
+  ],
+  [
+   "Autonomie annoncée",
+   "jusqu'à 60 km (mode Eco)"
+  ],
+  [
+   "Autonomie mesurée",
+   "33 km (RK9 Rides, pilote de 90 kg) à 35 km (Electric Scooter Guide, pilote de 107 kg)"
+  ],
+  [
+   "Batterie",
+   "48 V, 13,5 Ah, 648 Wh (cellules 21700)"
+  ],
+  [
+   "Poids",
+   "environ 27 kg"
+  ],
+  [
+   "Charge max",
+   "120 kg"
+  ],
+  [
+   "Roues",
+   "10 pouces, tubeless auto-obturants"
+  ],
+  [
+   "Freins",
+   "Tambour avant + freinage régénératif"
+  ],
+  [
+   "Suspension",
+   "Triple ressort (1 à l'avant, 2 à l'arrière)"
+  ],
+  [
+   "Étanchéité",
+   "IP66"
+  ],
+  [
+   "Temps de charge",
+   "environ 8 h avec le chargeur 54,6 V 1,5 A ; environ 3 h avec un chargeur rapide en option"
+  ]
+ ],
+ "pros": [
+  "Accélérations vives pour un seul moteur (RK9 Rides).",
+  "Suspension qui encaisse bien les nids-de-poule (Electric Scooter Guide).",
+  "Autonomie réelle correcte : 33 à 35 km en test (RK9 Rides, Electric Scooter Guide).",
+  "Grand plateau confortable pour les pilotes grands (Apollo)."
+ ],
+ "cons": [
+  "Puissance nominale non publiée par Apollo, seuls les chiffres de pointe le sont.",
+  "Un seul frein mécanique, à tambour, à l'avant.",
+  "Suspension jugée bruyante par un acheteur (Best Buy).",
+  "Charge lente avec le chargeur fourni : 8 heures."
+ ],
+ "parts": [],
+ "care": [
+  "Le frein régénératif fait l'essentiel du travail : règle-le haut dans l'application pour ménager le tambour avant.",
+  "Une suspension qui couine se calme avec un peu de graisse au lithium sur les ressorts ; vérifie aussi le serrage des axes.",
+  "Pour la batterie, privilégie le chargeur standard au quotidien et garde le chargeur rapide pour les jours pressés."
+ ],
+ "price": {
+  "text": "749 $ en promotion, 849 $ prix normal, sur la boutique Apollo américaine ; pas de prix officiel en euros trouvé. Prix susceptible de varier.",
+  "source": "apolloscooters.co"
+ },
+ "faq": [
+  {
+   "q": "Quelle différence entre l'Apollo Explore 2.0 et la première Explore ?",
+   "a": "L'Explore 2.0 passe en 48 V et 648 Wh, avec un tambour avant et des pneus tubeless. La première Explore était en 52 V et 946 Wh, avec deux freins à disque et des chambres à air. Leurs pièces ne sont pas interchangeables."
+  },
+  {
+   "q": "Quelle autonomie réelle pour l'Apollo Explore 2.0 ?",
+   "a": "Compte 33 à 35 km selon deux tests menés par des pilotes de 90 à 107 kg. Les 60 km annoncés supposent le mode Eco, très lent."
+  },
+  {
+   "q": "Les 40 km/h de l'Explore 2.0 sont-ils autorisés ?",
+   "a": "Seulement hors de la voie publique. En France, tu dois rester à 25 km/h sur la route et les pistes ; débrider l'Explore 2.0 pour y rouler plus vite est interdit."
+  },
+  {
+   "q": "Quel chargeur pour l'Apollo Explore 2.0 ?",
+   "a": "Un chargeur 48 V, qui délivre 54,6 V en fin de charge, comme celui fourni (1,5 A). Un chargeur 52 V de la première Explore ne convient pas."
+  },
+  {
+   "q": "Existe-t-il une Explore 2.0 à deux moteurs ?",
+   "a": "Oui, mais c'est un modèle distinct : l'Explore Stellar, en 52 V. L'Explore 2.0 classique n'a qu'un moteur."
+  }
+ ],
+ "sources": [
+  {
+   "label": "Apollo — Explore 2.0 (États-Unis)",
+   "url": "https://apolloscooters.co/products/apollo-explore-2-0"
+  },
+  {
+   "label": "Apollo Canada — Explore 2.0",
+   "url": "https://apolloscooters.ca/products/apollo-explore-2-0"
+  },
+  {
+   "label": "Apollo — batteries de chaque modèle",
+   "url": "https://support.apolloscooters.co/en-US/battery-specs-for-each-apollo-scooter-models-5684766"
+  },
+  {
+   "label": "Tom's Guide — Apollo Explore 2.0",
+   "url": "https://www.tomsguide.com/vehicle-tech/electric-scooters/apollo-explore-2-review"
+  },
+  {
+   "label": "Electric Scooter Guide — Explore 2.0",
+   "url": "https://electricscooterguide.com/apollo-explore-2-0-review/"
+  },
+  {
+   "label": "RK9 Rides — Explore 2.0",
+   "url": "https://rk9rides.com/apollo-explore-2-0-review/"
+  },
+  {
+   "label": "Best Buy — avis Explore 2.0",
+   "url": "https://www.bestbuy.com/product/apollo-explore-2025-premium-electric-scooter-w-37-mi-max-range-25-mph-max-speed-space-gray/J3Q5Q3HJX6/sku/6643423/reviews"
+  }
+ ]
+}

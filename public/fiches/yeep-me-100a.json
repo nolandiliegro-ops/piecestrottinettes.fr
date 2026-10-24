@@ -1,0 +1,117 @@
+{
+ "displayName": "Yeep.me 100A",
+ "metaTitle": "Yeep.me 100A : fiche technique, pneus et batterie",
+ "metaDescription": "Yeep.me 100A : moteur 36 V de 500 W en pointe, batterie 10,4 Ah (374 Wh), pneus 10 pouces à chambre à air, 4 clignotants, IPX6. Fiche et entretien.",
+ "intro": [
+  "La Yeep.me 100A est la trottinette routière à clignotants de la série A de la marque : roues de 10 pouces avec pneus gonflables larges et chambre à air, quatre clignotants, démarrage par clé et châssis en acier certifié IPX6, selon Yeep.me.",
+  "Son moteur de 36 V délivre 350 W nominaux et 500 W en pointe, épaulé par le contrôleur Y-Control. La batterie de 10,4 Ah (374 Wh) est annoncée pour 40 km. Elle pèse environ 19,4 kg, accepte 120 kg, n'a pas de suspension et se recharge en 5 à 6 heures."
+ ],
+ "specs": [
+  [
+   "Moteur",
+   "350 W nominaux, 500 W en pointe (36 V)"
+  ],
+  [
+   "Vitesse",
+   "25 km/h"
+  ],
+  [
+   "Autonomie annoncée",
+   "jusqu'à 40 km"
+  ],
+  [
+   "Batterie",
+   "36 V, 10,4 Ah, 374 Wh"
+  ],
+  [
+   "Poids",
+   "19,4 kg selon Yeep.me ; 19,5 à 19,7 kg selon les revendeurs"
+  ],
+  [
+   "Charge max",
+   "120 kg"
+  ],
+  [
+   "Roues",
+   "10 pouces, gonflables avec chambre à air"
+  ],
+  [
+   "Freins",
+   "Disque arrière + électronique avant"
+  ],
+  [
+   "Suspension",
+   "Aucune"
+  ],
+  [
+   "Étanchéité",
+   "IPX6"
+  ],
+  [
+   "Temps de charge",
+   "5 à 6 h"
+  ]
+ ],
+ "pros": [
+  "Quatre clignotants, à l'avant et à l'arrière (Yeep.me, Darty).",
+  "Batterie de 374 Wh garantie 20 000 km (Darty).",
+  "Étanchéité IPX6 avec compartiment batterie renforcé (Yeep.me).",
+  "Pneus larges de 10 pouces pour le confort (Yeep.me)."
+ ],
+ "cons": [
+  "Aucune suspension : seuls les pneus amortissent.",
+  "Pneus à chambre à air, donc exposés aux crevaisons.",
+  "Près de 20 kg pour une trottinette de 500 W.",
+  "Démarrage par clé physique, à ne pas égarer."
+ ],
+ "parts": [],
+ "care": [
+  "Pour éviter les pincements de chambre, gonfle à la pression indiquée sur le flanc avant chaque semaine de trajets.",
+  "Le frein arrière est le seul frein mécanique : fais vérifier l'épaisseur des plaquettes tous les 1 000 km.",
+  "Range la seconde clé de démarrage à la maison, loin de ton trousseau habituel."
+ ],
+ "price": {
+  "text": "Affichée 249,99 € sur la boutique Yeep.me et chez Darty, 339,99 € chez Boulanger. Prix susceptible de varier.",
+  "source": "yeep.me"
+ },
+ "faq": [
+  {
+   "q": "Quelle taille de pneu pour la Yeep.me 100A ?",
+   "a": "Des pneus gonflables de 10 pouces avec chambre à air. Yeep.me ne publie pas la cote complète : lis-la sur le flanc de ton pneu avant de commander."
+  },
+  {
+   "q": "Yeep.me 100A ou 100A Start : laquelle choisir ?",
+   "a": "La 100A a une batterie plus grande (10,4 Ah contre 7,8 Ah), 40 km annoncés au lieu de 30 et des pneus gonflables. La 100A Start mise sur des roues pleines increvables."
+  },
+  {
+   "q": "Faut-il un permis pour la Yeep.me 100A ?",
+   "a": "Non. Bridée à 25 km/h par Yeep.me, elle reste dans la catégorie des engins de déplacement personnel motorisés, qui doivent rouler sur la voie publique sans jamais dépasser cette vitesse."
+  },
+  {
+   "q": "Combien de temps pour recharger la Yeep.me 100A ?",
+   "a": "5 à 6 heures selon Yeep.me, environ 5 h 30 selon Boulanger."
+  },
+  {
+   "q": "La Yeep.me 100A craint-elle la pluie ?",
+   "a": "Elle est certifiée IPX6, avec moteur et compartiment batterie étanches selon Yeep.me. Évite tout de même de rouler dans des flaques profondes."
+  }
+ ],
+ "sources": [
+  {
+   "label": "Yeep.me — 100A",
+   "url": "https://yeep.me/trottinettes-electriques/1246-trottinette-electrique-yeepme-100a-3700293221089.html"
+  },
+  {
+   "label": "Darty — Yeep.me 100A",
+   "url": "https://www.darty.com/nav/achat/ref/MC350099256.html"
+  },
+  {
+   "label": "Boulanger — Yeep.me 100A",
+   "url": "https://www.boulanger.com/ref/9000680454"
+  },
+  {
+   "label": "Auchan — Yeep.me 100A",
+   "url": "https://www.auchan.fr/yeep-me-trottinette-electrique-yeep-me-100a-500w-10-10-4ah-40km-clignotants-garantie-5-ans/pr-ac81df6a-ea3d-4539-b83a-813a8efd39d5"
+  }
+ ]
+}
