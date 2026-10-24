@@ -1,0 +1,195 @@
+aprilia-esr2 #0 ERROR téléchargement vide
+aprilia-esr2 #1 ERROR téléchargement vide
+aprilia-esr2 #2 ERROR téléchargement vide
+aprilia-esr2 #3 WARN basse définition
+aprilia-esr2 #4 PASS ok
+aprilia-esr2 #5 WARN cadrage serré
+aprilia-esr2-evo #0 PASS ok
+aprilia-esr2-evo #1 PASS ok
+aprilia-esr2-evo #2 WARN cadrage serré
+aprilia-esr2-evo #3 FAIL détourage sale / résidu de décor · cadrage serré
+aprilia-esr2-evo #4 FAIL détourage sale / résidu de décor · basse définition
+aprilia-esr2-evo #5 PASS ok
+halo-knight-t108-pro #0 PASS ok
+halo-knight-t108-pro #1 PASS ok
+halo-knight-t108-pro #2 PASS ok
+halo-knight-t108-pro #3 WARN cadrage serré
+halo-knight-t108-pro #4 PASS ok
+halo-knight-t108-pro #5 PASS ok
+halo-knight-t108-pro #6 PASS ok
+halo-knight-t108-pro #7 PASS ok
+hiboy-ks4-pro #0 WARN cadrage serré
+hiboy-ks4-pro #1 FAIL élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux
+hiboy-ks4-pro #2 WARN cadrage serré
+hiboy-ks4-pro #3 PASS ok
+hiboy-ks4-pro #4 FAIL détourage sale / résidu de décor · élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux
+hiboy-ks4-pro #5 PASS ok
+hiboy-ks4-pro #6 FAIL cadrage serré · élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux
+hiboy-ks4-pro #7 WARN cadrage serré
+hiboy-s2 #0 PASS ok
+hiboy-s2 #1 WARN cadrage serré
+hiboy-s2 #2 FAIL détourage sale / résidu de décor · petit élément détaché (2 morceaux)
+hiboy-s2 #3 WARN cadrage serré
+hiboy-s2 #4 FAIL détourage sale / résidu de décor · cadrage serré
+hiboy-s2 #5 WARN cadrage serré
+hiboy-s2 #6 PASS ok
+hiboy-s2-lite #0 FAIL détourage sale / résidu de décor
+hiboy-s2-lite #1 WARN cadrage serré
+hiboy-s2-lite #2 PASS ok
+hiboy-s2-lite #3 PASS ok
+hiboy-s2-lite #4 PASS ok
+hiboy-s2-lite #5 FAIL élément en plus (logo, badge, téléphone, 2e trottinette) : 7 morceaux
+hiboy-s2-lite #6 PASS ok
+hiboy-s2-nova #0 PASS ok
+hiboy-s2-nova #1 PASS ok
+hiboy-s2-nova #2 PASS ok
+hiboy-s2-nova #3 PASS ok
+hiboy-s2-nova #4 WARN cadrage serré
+hiboy-s2-nova #5 PASS ok
+hiboy-s2-nova #6 PASS ok
+hiboy-s2-pro #0 PASS ok
+hiboy-s2-pro #1 WARN cadrage serré
+hiboy-s2-pro #2 FAIL détourage sale / résidu de décor · élément en plus (logo, badge, téléphone, 2e trottinette) : 4 morceaux
+hiboy-s2-pro #3 WARN cadrage serré
+hiboy-s2-pro #4 PASS ok
+hiboy-s2-pro #5 PASS ok
+hiboy-s2-pro #6 FAIL détourage sale / résidu de décor · cadrage serré
+hiboy-s2-pro #7 PASS ok
+hiboy-s2r-plus #0 FAIL détourage sale / résidu de décor · élément en plus (logo, badge, téléphone, 2e trottinette) : 4 morceaux
+hiboy-s2r-plus #1 FAIL détourage sale / résidu de décor · cadrage serré
+hiboy-s2r-plus #2 FAIL élément en plus (logo, badge, téléphone, 2e trottinette) : 4 morceaux · couleurs vives 44 % (visuel marketing ?)
+hiboy-s2r-plus #3 FAIL élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux
+hiboy-s2r-plus #4 FAIL élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux
+hiboy-s2r-plus #5 FAIL détourage sale / résidu de décor · élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux
+hiboy-s2r-plus #6 FAIL détourage sale / résidu de décor
+hiboy-titan-pro #0 WARN cadrage serré
+hiboy-titan-pro #1 FAIL détourage sale / résidu de décor · élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux
+hiboy-titan-pro #2 FAIL détourage sale / résidu de décor
+hiboy-titan-pro #3 PASS ok
+hiboy-titan-pro #4 PASS ok
+hiboy-titan-pro #5 WARN cadrage serré
+hiboy-titan-pro #6 WARN cadrage serré
+hiboy-titan-pro #7 FAIL détourage sale / résidu de décor
+kaabo-urban #0 PASS ok
+kaabo-urban #1 PASS ok
+kaabo-urban #2 PASS ok
+kaabo-urban #3 PASS ok
+kaabo-urban #4 WARN cadrage serré
+kaabo-urban #5 PASS ok
+kaabo-urban #6 WARN cadrage serré
+kaabo-urban #7 PASS ok
+kaabo-urban #8 PASS ok
+kaabo-urban #9 PASS ok
+kaabo-wolf-king-gt-pro #0 WARN cadrage serré
+kaabo-wolf-king-gt-pro #1 WARN cadrage serré
+kaabo-wolf-king-gt-pro #2 PASS ok
+kaabo-wolf-king-gt-pro #3 WARN cadrage serré
+kaabo-wolf-king-gt-pro #4 PASS ok
+kaabo-wolf-king-gt-pro #5 WARN basse définition · cadrage serré
+kaabo-wolf-king-gt-pro #6 FAIL élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux
+kaabo-wolf-king-gtr #0 PASS ok
+kaabo-wolf-king-gtr #1 WARN cadrage serré
+kaabo-wolf-king-gtr #2 WARN cadrage serré
+kaabo-wolf-king-gtr #3 FAIL détourage sale / résidu de décor · cadrage serré
+kaabo-wolf-king-gtr #4 FAIL détourage sale / résidu de décor · couleurs vives 45 % (visuel marketing ?)
+kaabo-wolf-king-gtr #5 FAIL détourage sale / résidu de décor · cadrage serré · couleurs vives 35 % (visuel marketing ?)
+kaabo-wolf-king-gtr #6 PASS ok
+kaabo-wolf-warrior-11-plus #0 PASS ok
+kaabo-wolf-warrior-11-plus #1 FAIL détourage sale / résidu de décor · élément en plus (logo, badge, téléphone, 2e trottinette) : 8 morceaux · couleurs vives 58 % (visuel marketing ?)
+kaabo-wolf-warrior-11-plus #2 FAIL détourage sale / résidu de décor · cadrage serré
+kaabo-wolf-warrior-11-plus #3 WARN cadrage serré
+kaabo-wolf-warrior-11-plus #4 PASS ok
+kaabo-wolf-warrior-11-plus #5 PASS ok
+kaabo-wolf-warrior-x-gt #0 PASS ok
+kaabo-wolf-warrior-x-gt #1 WARN cadrage serré
+kaabo-wolf-warrior-x-gt #2 WARN cadrage serré
+kaabo-wolf-warrior-x-gt #3 WARN cadrage serré
+kaabo-wolf-warrior-x-gt #4 PASS ok
+kaabo-wolf-warrior-x-plus #0 PASS ok
+kaabo-wolf-warrior-x-plus #1 PASS ok
+kaabo-wolf-warrior-x-plus #2 PASS ok
+kaabo-wolf-warrior-x-plus #3 WARN basse définition · cadrage serré
+kaabo-wolf-warrior-x-plus #4 WARN cadrage serré
+kaabo-wolf-warrior-x-plus #5 WARN basse définition · cadrage serré
+wolf-warrior #0 PASS ok
+wolf-warrior #1 FAIL détourage sale / résidu de décor · élément en plus (logo, badge, téléphone, 2e trottinette) : 8 morceaux · couleurs vives 58 % (visuel marketing ?)
+wolf-warrior #2 FAIL détourage sale / résidu de décor · cadrage serré
+wolf-warrior #3 WARN cadrage serré
+ootd-s10 #0 PASS ok
+ootd-s10 #1 PASS ok
+ootd-s10 #2 PASS ok
+ootd-s10 #3 PASS ok
+ootd-s10 #4 PASS ok
+ootd-s10 #5 PASS ok
+ootd-s10 #6 PASS ok
+ootd-s10 #7 PASS ok
+ootd-s30 #0 PASS ok
+ootd-s30 #1 PASS ok
+ootd-s30 #2 PASS ok
+ootd-s30 #3 PASS ok
+ootd-s30 #4 PASS ok
+ootd-s30 #5 WARN cadrage serré
+ootd-s30 #6 PASS ok
+ootd-sr3 #0 PASS ok
+ootd-sr3 #1 PASS ok
+ootd-sr3 #2 WARN basse définition · cadrage serré
+ootd-sr3 #3 PASS ok
+ootd-t10-pro #0 PASS ok
+ootd-t10-pro #1 PASS ok
+ootd-t10-pro #2 WARN basse définition · cadrage serré
+ootd-t10-pro #3 PASS ok
+ootd-t10-pro #4 PASS ok
+speedway-leger #0 WARN basse définition · cadrage serré
+speedway-leger #1 FAIL détourage sale / résidu de décor
+speedway-leger #2 WARN cadrage serré
+speedway-leger #3 WARN basse définition · cadrage serré
+speedway-leger #4 FAIL détourage sale / résidu de décor
+speedway-leger-pro #0 PASS ok
+speedway-leger-pro #1 FAIL détourage sale / résidu de décor · cadrage serré
+speedway-leger-pro #2 WARN basse définition · cadrage serré
+speedway-leger-pro #3 WARN cadrage serré
+speedway-leger-pro #4 PASS ok
+speedway-leger-pro #5 PASS ok
+speedway-mini-4-pro-lite #0 WARN basse définition · cadrage serré
+speedway-mini-4-pro-lite #1 PASS ok
+speedway-mini-4-pro-lite #2 PASS ok
+speedway-mini-4-pro-lite #3 WARN basse définition · cadrage serré
+speedway-mini-4-pro-lite #4 WARN cadrage serré
+mi-pro-2 #0 WARN basse définition · cadrage serré
+mi-pro-2 #1 PASS ok
+mi-pro-2 #2 WARN basse définition
+mi-pro-2 #3 WARN basse définition
+mi-pro-2 #4 WARN cadrage serré
+mi-pro-2 #5 WARN basse définition
+mi-pro-2 #6 WARN basse définition
+mi-pro-2 #7 WARN basse définition · cadrage serré
+xiaomi-electric-scooter-4-pro #0 PASS ok
+xiaomi-electric-scooter-4-pro #1 FAIL basse définition · élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux
+xiaomi-electric-scooter-4-pro #2 WARN basse définition · cadrage serré
+xiaomi-electric-scooter-4-pro #3 ERROR téléchargement vide
+xiaomi-electric-scooter-4-pro #4 ERROR téléchargement vide
+xiaomi-electric-scooter-4-pro #5 ERROR téléchargement vide
+xiaomi-electric-scooter-6 #0 WARN petit élément détaché (2 morceaux)
+xiaomi-electric-scooter-6 #1 FAIL détourage sale / résidu de décor · élément en plus (logo, badge, téléphone, 2e trottinette) : 4 morceaux
+xiaomi-electric-scooter-6 #2 PASS ok
+xiaomi-electric-scooter-6 #3 FAIL élément en plus (logo, badge, téléphone, 2e trottinette) : 4 morceaux
+xiaomi-electric-scooter-6 #4 FAIL détourage sale / résidu de décor · petit élément détaché (3 morceaux)
+xiaomi-electric-scooter-6 #5 FAIL détourage sale / résidu de décor
+xiaomi-electric-scooter-6 #6 PASS ok
+xiaomi-electric-scooter-6 #7 PASS ok
+xiaomi-electric-scooter-6-pro #0 FAIL détourage sale / résidu de décor
+xiaomi-electric-scooter-6-pro #1 FAIL élément en plus (logo, badge, téléphone, 2e trottinette) : 4 morceaux
+xiaomi-electric-scooter-6-pro #2 FAIL détourage sale / résidu de décor
+xiaomi-electric-scooter-6-pro #3 PASS ok
+xiaomi-electric-scooter-6-pro #4 FAIL détourage sale / résidu de décor · élément en plus (logo, badge, téléphone, 2e trottinette) : 6 morceaux
+xiaomi-electric-scooter-6-pro #5 PASS ok
+xiaomi-electric-scooter-6-pro #6 PASS ok
+xiaomi-electric-scooter-6-pro #7 WARN petit élément détaché (3 morceaux)
+xiaomi-mi-m365 #0 ERROR téléchargement vide
+xiaomi-mi-m365 #1 ERROR téléchargement vide
+xiaomi-mi-m365 #2 ERROR téléchargement vide
+xiaomi-mi-m365 #3 ERROR téléchargement vide
+xiaomi-mi-m365 #4 ERROR téléchargement vide
+xiaomi-mi-m365 #5 ERROR téléchargement vide
+xiaomi-mi-m365 #6 WARN basse définition
+::notice title=photos ang02 (dry)::194 candidates · PASS 86 · WARN 55 · FAIL 41 · ERREUR 12
