@@ -1,0 +1,133 @@
+{
+ "displayName": "Punk Rebel",
+ "metaTitle": "Punk Rebel : fiche technique double moteur 60 V",
+ "metaDescription": "Punk Rebel : 2 × 1 000 W (3 600 W en crête), batterie 60 V 23,4 Ah, pneus tubeless 11 x 3,5, freins hydrauliques, 75 à 90 km annoncés. Fiche et entretien.",
+ "intro": [
+  "La Punk Rebel est la grosse trottinette de Punk Electric : deux moteurs de 1 000 W (3 600 W en crête), une batterie de 60 V et 23,4 Ah (environ 1 400 Wh) et des pneus tubeless auto-obturants de 11 x 3,5 pouces, selon punkelectric.eu et Epic Cycles.",
+  "Punk annonce jusqu'à 90 km en mode éco, plusieurs revendeurs 75 km. Elle pèse 38 kg selon GTS Shop et Fastride, accepte 130 kg et freine par disques hydrauliques avec récupération d'énergie. La recharge demande environ 11 heures. La Clinique Électrique l'affiche à 1 799 €."
+ ],
+ "specs": [
+  [
+   "Moteurs",
+   "2 × 1 000 W ; 3 600 W en crête"
+  ],
+  [
+   "Vitesse",
+   "25 km/h sur la voie publique ; 65 à 70 km/h annoncés sur terrain privé"
+  ],
+  [
+   "Autonomie annoncée",
+   "75 km selon les revendeurs, 90 km selon Punk (mode éco)"
+  ],
+  [
+   "Batterie",
+   "60 V, 23,4 Ah (environ 1 404 Wh par calcul)"
+  ],
+  [
+   "Poids",
+   "38 kg"
+  ],
+  [
+   "Charge max",
+   "130 kg"
+  ],
+  [
+   "Roues",
+   "11 x 3,5 pouces, tubeless auto-obturants"
+  ],
+  [
+   "Freins",
+   "Disques hydrauliques avant et arrière + frein régénératif"
+  ],
+  [
+   "Suspension",
+   "Avant et arrière, cartouches en caoutchouc"
+  ],
+  [
+   "Étanchéité",
+   "IPX6 selon Punk ; IP67 selon GTS Shop"
+  ],
+  [
+   "Temps de charge",
+   "environ 11 h"
+  ]
+ ],
+ "pros": [
+  "Deux moteurs de 1 000 W et 3 600 W en crête (Punk Electric).",
+  "Freins hydrauliques à disque à l'avant et à l'arrière (GTS Shop).",
+  "Pneus tubeless auto-obturants de 11 pouces (Epic Cycles).",
+  "Charge maximale de 130 kg (La Clinique Électrique)."
+ ],
+ "cons": [
+  "38 kg : impossible à porter longtemps.",
+  "Recharge d'environ 11 heures.",
+  "Autonomie annoncée de 75 ou 90 km selon les sources.",
+  "Un revendeur la décrit avec des freins à tambour, contrairement à Punk."
+ ],
+ "parts": [],
+ "care": [
+  "Fais contrôler le liquide de tes freins hydrauliques une fois par an : 38 kg lancés usent vite les plaquettes.",
+  "Vérifie la pression de tes pneus tubeless de 11 pouces toutes les deux semaines, le produit auto-obturant ne remplace pas le gonflage.",
+  "Avec deux moteurs et une batterie de 60 V, laisse la trottinette refroidir avant de la mettre en charge après une longue sortie."
+ ],
+ "price": {
+  "text": "Prix affiché par La Clinique Électrique : 1 799 €. Prix susceptible de varier.",
+  "source": "lacliniqueelectrique.com"
+ },
+ "faq": [
+  {
+   "q": "Quelle taille de pneu pour la Punk Rebel ?",
+   "a": "Des pneus tubeless auto-obturants de 11 x 3,5 pouces selon Epic Cycles et Lifty. Un revendeur parle de 10 x 3,5 : lis la cote sur ton pneu avant d'en commander un."
+  },
+  {
+   "q": "Quels freins sur la Punk Rebel ?",
+   "a": "Des freins hydrauliques à disque à l'avant et à l'arrière, complétés par un frein régénératif, selon Punk et plusieurs revendeurs."
+  },
+  {
+   "q": "Quel chargeur pour la Punk Rebel ?",
+   "a": "Un chargeur de 67,2 V pour sa batterie de 60 V. La forme de la prise n'est pas précisée par Punk : compare avec le chargeur fourni."
+  },
+  {
+   "q": "Peut-on rouler en Punk Rebel sur la voie publique ?",
+   "a": "Oui, dans sa version limitée à 25 km/h. Les 65 à 70 km/h évoqués par les revendeurs ne sont permis que sur terrain privé ; la débrider pour la route est interdit."
+  },
+  {
+   "q": "Quelle différence entre la Punk Rebel, la Rebel Pro et la Rebel Pro Max ?",
+   "a": "Toutes gardent deux moteurs de 1 000 W. La Rebel a 23,4 Ah, la Rebel Pro 31,2 Ah et la Pro Max 38,4 Ah, d'où des autonomies et des poids croissants."
+  }
+ ],
+ "sources": [
+  {
+   "label": "Punk Electric — Punk Rebel",
+   "url": "https://punkelectric.eu/products/punk-rebel"
+  },
+  {
+   "label": "Punk Electric — Punk Rebel Pro",
+   "url": "https://punkelectric.eu/fr/products/punk-rebel-pro"
+  },
+  {
+   "label": "Epic Cycles — Punk Rebel",
+   "url": "https://epiccycles.ca/product/punk-rebel/"
+  },
+  {
+   "label": "GTS Shop — Punk Rebel Dual Motor",
+   "url": "https://www.gtsshop.fr/en/electric-scooters/6361-punk-rebel-dual-motor.html"
+  },
+  {
+   "label": "La Clinique Électrique — Punk Rebel",
+   "url": "https://www.lacliniqueelectrique.com/product-page/trottinette-electrique-punk-rebel-saint-nazaire"
+  },
+  {
+   "label": "Fastride — Punk Electric",
+   "url": "https://fastride.fr/en/400-punk-electric"
+  },
+  {
+   "label": "Lifty — Punk Rebel",
+   "url": "https://www.lifty.co/en-de/products/punk-rebel-electric-scooter"
+  },
+  {
+   "label": "Gyroroue Shop — Punk Rebel",
+   "url": "https://www.gyroroue-shop.fr/boutique/trottinette-electrique/punk-electric/punk-rebel"
+  }
+ ]
+}

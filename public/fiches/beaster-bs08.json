@@ -1,0 +1,108 @@
+{
+ "displayName": "Beaster BS08",
+ "metaTitle": "Beaster BS08 : fiche technique et entretien",
+ "metaDescription": "Beaster BS08 : moteur 250 W, batterie 36 V 7,5 Ah, 25 à 30 km annoncés, roues 9 pouces gonflables, 15 kg en magnésium. Caractéristiques, limites et FAQ.",
+ "intro": [
+  "La Beaster BS08 est une petite trottinette urbaine de Beaster Scooter, une marque surtout distribuée par des enseignes lituaniennes. Elle combine un moteur de 250 W, une batterie de 36 V et 7,5 Ah et des roues gonflables de 9 pouces (23 cm), sur un cadre en alliage de magnésium.",
+  "Senukai annonce 25 km/h, 25 à 30 km d'autonomie, 15 kg et 100 kg de charge maximale, avec une recharge en 4 heures. La même fiche décrit un tambour avant et un frein E-ABS arrière dans son texte, mais des freins à disque mécaniques dans son tableau : contrôle ta propre trottinette."
+ ],
+ "specs": [
+  [
+   "Moteur",
+   "250 W"
+  ],
+  [
+   "Vitesse",
+   "25 km/h sur la voie publique"
+  ],
+  [
+   "Autonomie annoncée",
+   "25 à 30 km (selon Senukai)"
+  ],
+  [
+   "Batterie",
+   "36 V, 7,5 Ah (270 Wh par calcul)"
+  ],
+  [
+   "Poids",
+   "15 kg (selon Senukai)"
+  ],
+  [
+   "Charge max",
+   "100 kg (selon Senukai)"
+  ],
+  [
+   "Roues",
+   "9 pouces (23 cm), pneus gonflables (selon Senukai)"
+  ],
+  [
+   "Freins",
+   "tambour avant + E-ABS arrière dans le descriptif Senukai ; disques mécaniques dans son tableau"
+  ],
+  [
+   "Pente max",
+   "14° (selon Senukai)"
+  ],
+  [
+   "Temps de charge",
+   "4 h (selon Senukai)"
+  ]
+ ],
+ "pros": [
+  "15 kg grâce à un cadre en alliage de magnésium (Senukai).",
+  "Recharge complète en 4 heures (Senukai).",
+  "Écran affichant vitesse, distance et mode (Senukai)."
+ ],
+ "cons": [
+  "Moteur de 250 W : il peine dans les côtes (14° maximum annoncés).",
+  "Roues de 9 pouces, peu à l'aise sur les pavés.",
+  "Fiche constructeur introuvable : seules des boutiques lituaniennes la décrivent.",
+  "Système de freinage décrit de deux façons sur la même fiche."
+ ],
+ "parts": [],
+ "care": [
+  "Garde des pneus de 9 pouces bien gonflés : sous-gonflés, ils s'usent et crèvent beaucoup plus vite.",
+  "Repère ton type de frein avant avant toute pièce : un tambour se règle au câble, un disque se change avec ses plaquettes.",
+  "Recharge la batterie de 7,5 Ah après chaque usage plutôt que de la stocker presque vide."
+ ],
+ "price": {
+  "text": "Prix affiché par Houstera (Lituanie) : 369 € au lieu de 459 €. Prix susceptible de varier.",
+  "source": "houstera.lt"
+ },
+ "faq": [
+  {
+   "q": "Quelle taille de pneu pour la Beaster BS08 ?",
+   "a": "Des roues de 9 pouces (23 cm) avec pneus gonflables, mais aucune source ne donne la cote complète. Lis l'inscription moulée sur le flanc de ton pneu avant d'en commander un."
+  },
+  {
+   "q": "La Beaster BS08 a-t-elle des freins à disque ?",
+   "a": "Senukai décrit dans son texte un tambour avant et un frein E-ABS arrière, mais son tableau parle de disques mécaniques. Regarde ta roue avant : un disque métallique se voit tout de suite."
+  },
+  {
+   "q": "Quelle autonomie pour la Beaster BS08 ?",
+   "a": "25 à 30 km selon Senukai, avec une batterie de 270 Wh. Un pilote lourd ou un trajet vallonné réduira nettement ce chiffre."
+  },
+  {
+   "q": "Peut-on rouler en ville avec la Beaster BS08 ?",
+   "a": "Oui, elle plafonne à 25 km/h, ce qui la place dans le cadre légal des trottinettes électriques en France. Les règles d'éclairage et de circulation s'appliquent comme pour toute trottinette."
+  }
+ ],
+ "sources": [
+  {
+   "label": "Senukai — Beaster Scooter BS08",
+   "url": "https://www.senukai.lt/p/elektrinis-paspirtukas-beaster-scooter-bs08-juoda-sp-pilka-sp/ks2y"
+  },
+  {
+   "label": "Erasportas — gamme Beaster",
+   "url": "https://www.erasportas.lt/aktyvaus-laisvalaikio-turizmo-prekes/paspirtukai/elektriniai-paspirtukai"
+  },
+  {
+   "label": "Houstera — Beaster BS08 (fiche liée)",
+   "url": "https://houstera.lt/produktas/elektrinis-paspirtukas-beaster-scooter-bszalw-350-w-36-v-8-ah-zalgiris-edition/"
+  },
+  {
+   "label": "Krinona — trottinettes Beaster",
+   "url": "https://krinona.lt/944-elektriniai-paspirtukai"
+  }
+ ]
+}

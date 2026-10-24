@@ -1,0 +1,121 @@
+{
+ "displayName": "Aprilia eSR2 Evo",
+ "metaTitle": "Aprilia eSR2 Evo : fiche technique 48 V et FAQ",
+ "metaDescription": "Aprilia eSR2 Evo : 500 W, batterie 48 V 14,4 Ah (691 Wh), 35 à 50 km annoncés, double suspension, tambour avant, chargeur 54,6 V. Fiche et entretien.",
+ "intro": [
+  "L'Aprilia eSR2 Evo reprend le cadre de l'eSR2 mais change d'architecture : 48 V au lieu de 36 V, moteur de 500 W (700 W en crête selon Motorbox) et une batterie de 14,4 Ah, soit 691 Wh, plus du double de l'eSR2.",
+  "Elle pèse 18,5 kg et accepte 100 kg. Le manuel annonce 35 km d'autonomie, Motorbox 50 km. Pneus de 10 pouces à chambre à air, suspensions avant et arrière, tambour à l'avant et frein électronique à l'arrière. Motorbox l'affichait à 799 €."
+ ],
+ "specs": [
+  [
+   "Moteur",
+   "500 W nominaux ; 700 W en crête selon Motorbox"
+  ],
+  [
+   "Vitesse",
+   "25 km/h sur la voie publique (modes 6, 20 et 25 km/h selon Motorbox)"
+  ],
+  [
+   "Autonomie annoncée",
+   "35 km selon le manuel, 50 km selon Motorbox"
+  ],
+  [
+   "Batterie",
+   "48 V, 14,4 Ah, 691 Wh"
+  ],
+  [
+   "Poids",
+   "18,5 kg"
+  ],
+  [
+   "Charge max",
+   "100 kg"
+  ],
+  [
+   "Roues",
+   "10 pouces à chambre à air ; 10 x 2,125 selon les boutiques de pièces"
+  ],
+  [
+   "Freins",
+   "Tambour avant + électronique arrière, récupération d'énergie"
+  ],
+  [
+   "Suspension",
+   "Avant et arrière"
+  ],
+  [
+   "Étanchéité",
+   "IPX4"
+  ],
+  [
+   "Charge",
+   "chargeur 54,6 V 2 A ; 6 à 7 h"
+  ]
+ ],
+ "pros": [
+  "Batterie de 691 Wh, plus du double de l'eSR2 (manuel Aprilia).",
+  "Passage en 48 V et 500 W pour mieux tenir les côtes (Motorbox).",
+  "Suspensions avant et arrière conservées (manuel Aprilia).",
+  "Récupération d'énergie au freinage (Motorbox)."
+ ],
+ "cons": [
+  "Autonomie annoncée incohérente : 35 km dans le manuel, 50 km chez Motorbox.",
+  "Recharge de 6 à 7 heures.",
+  "Indice IPX4 seulement.",
+  "Chargeur de 54,6 V différent de celui de l'eSR2 : attention aux confusions."
+ ],
+ "parts": [],
+ "care": [
+  "Recharge ta batterie de 48 V uniquement avec un chargeur de 54,6 V, celui de l'eSR2 en 42 V ne la remplira pas.",
+  "Le tambour avant s'use lentement mais se dérègle : vérifie la garde du levier chaque mois.",
+  "Les deux suspensions encaissent les bordures : contrôle régulièrement le serrage de leurs vis d'axe."
+ ],
+ "price": {
+  "text": "Prix publié par Motorbox au lancement : 799 €. Prix susceptible de varier.",
+  "source": "motorbox.com"
+ },
+ "faq": [
+  {
+   "q": "Quel chargeur pour l'Aprilia eSR2 Evo ?",
+   "a": "Un chargeur de 54,6 V, car la batterie est en 48 V. Le manuel indique 2 A. Vérifie la prise de ton chargeur d'origine avant d'en commander un nouveau."
+  },
+  {
+   "q": "Quelle taille de pneu pour l'Aprilia eSR2 Evo ?",
+   "a": "Des pneus de 10 pouces à chambre à air, vendus en 10 x 2,125 pour l'Evo par plusieurs boutiques. Le diamètre de jante n'est pas le même selon les fiches : relis la cote sur ton pneu."
+  },
+  {
+   "q": "Quelle autonomie pour l'Aprilia eSR2 Evo ?",
+   "a": "Le manuel annonce 35 km et Motorbox 50 km. Avec 691 Wh, une trentaine de kilomètres en conduite normale reste une estimation prudente."
+  },
+  {
+   "q": "À quelle vitesse roule l'Aprilia eSR2 Evo ?",
+   "a": "Elle propose trois modes, à 6, 20 et 25 km/h selon Motorbox. Le dernier correspond au maximum autorisé pour une trottinette sur la voie publique en France."
+  },
+  {
+   "q": "Peut-on passer d'une eSR2 à une eSR2 Evo en changeant la batterie ?",
+   "a": "Non : l'Evo fonctionne en 48 V avec un moteur et une électronique différents. Une batterie de 48 V n'est pas prévue pour l'eSR2 en 36 V."
+  }
+ ],
+ "sources": [
+  {
+   "label": "Manuel Aprilia eSR2 / eSR2 Evo / eSRZ (device.report)",
+   "url": "https://device.report/manual/5208971"
+  },
+  {
+   "label": "Motorbox — Aprilia eSR2 Evo, prix et fiche",
+   "url": "https://www.motorbox.com/moto/magazine-moto/moto-novita/monopattino-elettrico-aprilia-esr2-evo-prezzo-scheda-tecnica"
+  },
+  {
+   "label": "Notice Facile — manuel Aprilia (chargeurs)",
+   "url": "https://www.notice-facile.com/notice/590870/aprilia+esrz"
+  },
+  {
+   "label": "HappyTec — fiche technique eSR2 Evo",
+   "url": "https://shop.happytec.it/fr/aprilia-esr2-evo-scheda-tecnica/"
+  },
+  {
+   "label": "Monsieur Trottinettes — pneu 10x2.125 ESR2 / ESR2 EVO",
+   "url": "https://monsieurtrottinettes.be/fr/pneus-anti-crevaison/665-pneu-anti-crevaison-10x2125-aprilia-esr2-esr2-evo-5430003484890.html"
+  }
+ ]
+}

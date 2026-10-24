@@ -1,0 +1,129 @@
+{
+ "displayName": "Kuickwheel S9",
+ "metaTitle": "Kuickwheel S9 : fiche technique, freins et FAQ",
+ "metaDescription": "Kuickwheel S9 : 500 W (750 W en crête), batterie 36 V 15,6 Ah, 60 à 65 km annoncés, double suspension, roues 10 pouces. Fiche, entretien et questions.",
+ "intro": [
+  "La Kuickwheel S9 est la trottinette la plus endurante de la gamme 36 V de Kuickwheel : batterie de 15,6 Ah (environ 562 Wh), moteur de 500 W nominaux et 750 W en crête selon Urban Moov, et suspensions à l'avant comme à l'arrière.",
+  "Kuickwheel annonce 60 km d'autonomie, certains revendeurs 65 km. Elle pèse 23 à 24,5 kg et accepte 120 kg. Ses roues de 10 pouces sont équipées de pneus à chambre à air. Le freinage est décrit de trois façons selon les sources, ce qui invite à vérifier ta propre trottinette."
+ ],
+ "specs": [
+  [
+   "Moteur",
+   "500 W nominaux ; 750 W en crête selon Urban Moov"
+  ],
+  [
+   "Vitesse",
+   "25 km/h sur la voie publique"
+  ],
+  [
+   "Autonomie annoncée",
+   "60 km selon Kuickwheel, 65 km selon les revendeurs"
+  ],
+  [
+   "Batterie",
+   "36 V, 15,6 Ah (environ 562 Wh par calcul)"
+  ],
+  [
+   "Poids",
+   "23 kg selon Trott'n'Shop, 24,5 kg selon Kuickwheel"
+  ],
+  [
+   "Charge max",
+   "120 kg"
+  ],
+  [
+   "Roues",
+   "10 pouces, pneus à chambre à air"
+  ],
+  [
+   "Freins",
+   "disque avant + tambour arrière selon Urban Moov ; disques avant et arrière selon La Maison de la Trott'"
+  ],
+  [
+   "Suspension",
+   "Avant et arrière"
+  ],
+  [
+   "Étanchéité",
+   "IPX5 (selon Urban Moov)"
+  ],
+  [
+   "Temps de charge",
+   "environ 6 h selon Trott'n'Shop, 7 à 8 h selon Kuickwheel"
+  ]
+ ],
+ "pros": [
+  "Grosse batterie de 562 Wh pour une trottinette en 36 V (Urban Moov).",
+  "Suspensions avant et arrière (Vepace).",
+  "Pneus à chambre à air larges, présentés comme anti-crevaison (Trott'n'Shop).",
+  "Positionnée par le revendeur La Clinique Électrique comme la plus confortable des Kuickwheel."
+ ],
+ "cons": [
+  "23 à 24,5 kg : pénible à porter dans les escaliers.",
+  "Étanchéité IPX5, en retrait de l'IPX7 de la S1-C Pro (La Clinique Électrique).",
+  "Recharge longue, jusqu'à 7 à 8 heures selon Kuickwheel.",
+  "Système de freinage décrit différemment d'une fiche à l'autre."
+ ],
+ "parts": [],
+ "care": [
+  "Identifie ton système de freinage avant de commander des plaquettes : la S9 est décrite avec disque et tambour, ou avec deux disques.",
+  "Les deux suspensions travaillent beaucoup : contrôle le serrage de leurs axes tous les mois.",
+  "Recharge ta batterie après chaque grosse sortie plutôt que de la laisser plusieurs jours presque vide."
+ ],
+ "price": {
+  "text": "Prix affiché par Urban Moov : 699 €. Prix susceptible de varier.",
+  "source": "urbanmoov.fr"
+ },
+ "faq": [
+  {
+   "q": "Quelle taille de pneu pour la Kuickwheel S9 ?",
+   "a": "Un revendeur indique 10 x 2,50 à l'avant et 60/70-6,5 à l'arrière, les autres parlent seulement de 10 pouces. Lis la cote sur le flanc de chacun de tes pneus avant de commander."
+  },
+  {
+   "q": "Quels freins sur la Kuickwheel S9 ?",
+   "a": "Urban Moov annonce un disque avant et un tambour arrière, La Maison de la Trott' deux disques, et la page Kuickwheel cite un double tambour. Regarde tes roues : un disque se voit à l'œil nu."
+  },
+  {
+   "q": "Quelle autonomie pour la Kuickwheel S9 ?",
+   "a": "Kuickwheel annonce 60 km et certains revendeurs 65 km. Ces chiffres sont mesurés en mode éco : en conduite normale, prévois moins."
+  },
+  {
+   "q": "À quelle vitesse peut rouler la Kuickwheel S9 en ville ?",
+   "a": "À 25 km/h au maximum, comme toute trottinette électrique sur la voie publique en France. La version vendue chez nous est bridée à cette valeur."
+  },
+  {
+   "q": "Quel chargeur pour la Kuickwheel S9 ?",
+   "a": "Un chargeur de 42 V pour sa batterie de 36 V ; des revendeurs proposent des modèles de 2 ou 3 A. Vérifie la prise sur ton chargeur d'origine avant d'en acheter un neuf."
+  }
+ ],
+ "sources": [
+  {
+   "label": "Kuickwheel — S9",
+   "url": "https://www.kuickwheel.com/s9-2/"
+  },
+  {
+   "label": "Urban Moov — Kuickwheel S9",
+   "url": "https://www.urbanmoov.fr/boutique/TROTTINETTE-KUICKWHEEL-S9-36V-15-6-Ah-p649266058"
+  },
+  {
+   "label": "Trott'n'Shop — Kuickwheel S9",
+   "url": "https://www.trottnshop.com/produit/kuickwheel-s9/"
+  },
+  {
+   "label": "Vepace — Kuickwheel S9",
+   "url": "https://vepace.com/fr/products/kuickwheel-s9-electric-scooter"
+  },
+  {
+   "label": "La Maison de la Trott' — Kuickwheel S9",
+   "url": "https://www.maisondelatrott.fr/products/trottinette-electrique-kuickwheel-s9"
+  },
+  {
+   "label": "La Clinique Électrique — gamme Kuickwheel",
+   "url": "https://www.lacliniqueelectrique.com/post/kuickwheel-trottinette-electrique-saint-nazaire"
+  },
+  {
+   "label": "E-Watts — pneu Kuickwheel S9",
+   "url": "https://e-watts.fr/categorie-produit/pieces-detachees-trottinette-electrique/pneu-trottinette-electrique/pneu-kuickwheel-s9"
+  }
+ ]
+}

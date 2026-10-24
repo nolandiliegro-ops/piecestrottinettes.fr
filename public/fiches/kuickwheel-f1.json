@@ -1,0 +1,121 @@
+{
+ "displayName": "Kuickwheel F1",
+ "metaTitle": "Kuickwheel F1 : fiche technique, entretien et FAQ",
+ "metaDescription": "Kuickwheel F1 : moteur 350 W (650 W en crête), batterie 36 V 7,8 Ah, 30 km annoncés, roues 10 pouces, 16 kg. Caractéristiques, limites et entretien.",
+ "intro": [
+  "La Kuickwheel F1 est la trottinette d'entrée de gamme de Kuickwheel : moteur de 350 W nominaux (650 W en crête), batterie de 36 V et 7,8 Ah, roues de 10 pouces et 16 kg sur la balance, d'après les fiches des revendeurs français Urban Moov et E-Rider.",
+  "Elle est bridée à 25 km/h et les revendeurs lui prêtent jusqu'à 30 km d'autonomie. Elle freine avec un tambour à l'avant et un frein électronique à l'arrière. Son prix constaté tourne autour de 399 € en France. Les fiches ne s'accordent pas sur la présence d'une suspension avant."
+ ],
+ "specs": [
+  [
+   "Moteur",
+   "350 W nominaux ; 650 W en crête"
+  ],
+  [
+   "Vitesse",
+   "25 km/h sur la voie publique"
+  ],
+  [
+   "Autonomie annoncée",
+   "jusqu'à 30 km"
+  ],
+  [
+   "Batterie",
+   "36 V, 7,8 Ah (environ 281 Wh par calcul)"
+  ],
+  [
+   "Poids",
+   "16 kg"
+  ],
+  [
+   "Charge max",
+   "120 kg"
+  ],
+  [
+   "Roues",
+   "10 pouces, à chambre à air selon E-Rider"
+  ],
+  [
+   "Freins",
+   "Tambour avant + frein électronique (E-ABS) arrière"
+  ],
+  [
+   "Suspension",
+   "aucune selon Swiss Distribution ; suspension avant selon La Maison de la Trott'"
+  ],
+  [
+   "Étanchéité",
+   "IPX5"
+  ],
+  [
+   "Temps de charge",
+   "4 h (selon La Maison de la Trott')"
+  ]
+ ],
+ "pros": [
+  "16 kg : une des plus légères de la gamme Kuickwheel (Urban Moov).",
+  "Indice IPX5 annoncé, rare à ce prix (E-Rider).",
+  "Clignotants et éclairage LED de série (Urban Moov).",
+  "Prix d'appel autour de 399 € chez plusieurs revendeurs (Vélo Shop Obernai)."
+ ],
+ "cons": [
+  "Batterie de 281 Wh seulement : autonomie limitée pour les longs trajets.",
+  "Suspension avant annoncée par un revendeur, absente chez un autre : fiches peu fiables.",
+  "Un seul frein mécanique, à tambour, à l'avant.",
+  "Aucun test indépendant publié à ce jour."
+ ],
+ "parts": [],
+ "care": [
+  "Contrôle la pression de tes pneus à chambre à air chaque semaine : un pneu de 10 pouces sous-gonflé pince sa chambre au premier trottoir.",
+  "Le tambour avant se règle au câble : si ta poignée arrive au guidon, reprends la tension avant de rouler.",
+  "Ne laisse pas la batterie de 7,8 Ah se vider à zéro, recharge-la dès qu'il te reste une ou deux barres."
+ ],
+ "price": {
+  "text": "Prix affiché par E-Rider, Urban Moov et Vélo Shop Obernai : 399 €. Prix susceptible de varier.",
+  "source": "e-rider.fr"
+ },
+ "faq": [
+  {
+   "q": "Quelle taille de pneu pour la Kuickwheel F1 ?",
+   "a": "Les revendeurs annoncent des roues de 10 pouces sans donner la cote exacte. Avant de commander un pneu ou une chambre à air, lis la dimension gravée sur le flanc de ton pneu."
+  },
+  {
+   "q": "La Kuickwheel F1 a-t-elle une suspension ?",
+   "a": "Les fiches se contredisent : Swiss Distribution n'en indique aucune, La Maison de la Trott' parle d'une suspension avant. Regarde la fourche de ta trottinette pour en avoir le cœur net."
+  },
+  {
+   "q": "Quelle autonomie pour la Kuickwheel F1 ?",
+   "a": "Jusqu'à 30 km selon les revendeurs. Avec 281 Wh de batterie, compte nettement moins si tu pèses lourd ou si ton trajet monte."
+  },
+  {
+   "q": "Peut-on rouler plus vite que 25 km/h avec la Kuickwheel F1 ?",
+   "a": "Non : elle est livrée bridée à 25 km/h, et c'est la limite que le code de la route impose aux trottinettes en France. Modifier ce bridage pour la voie publique est interdit."
+  },
+  {
+   "q": "Quels freins sur la Kuickwheel F1 ?",
+   "a": "Un frein à tambour à l'avant et un frein électronique (E-ABS) à l'arrière, selon Urban Moov et E-Rider."
+  }
+ ],
+ "sources": [
+  {
+   "label": "E-Rider — Kuickwheel F1 36V 7,8Ah",
+   "url": "https://e-rider.fr/accueil/260-trottinette-kuickwheel-f1-36v-78ah-3701122125356.html"
+  },
+  {
+   "label": "Urban Moov — Kuickwheel F1",
+   "url": "https://www.urbanmoov.fr/boutique/TROTTINETTE-KUICKWHEEL-F1-36V-7-8Ah-p786619589"
+  },
+  {
+   "label": "Swiss Distribution — Kuickwheel F1",
+   "url": "https://swiss-distribution.com/produit/trottinette-electrique-kuickwheel-f1-36v-7-8ah/"
+  },
+  {
+   "label": "La Maison de la Trott' — Kuickwheel F1",
+   "url": "https://www.maisondelatrott.fr/products/trottinette-electrique-kuickwheel-s1-c-pro-copie"
+  },
+  {
+   "label": "Vélo Shop Obernai — Kuickwheel",
+   "url": "https://www.veloshop-obernai.com/collections/trottinettes-kuickwheel"
+  }
+ ]
+}

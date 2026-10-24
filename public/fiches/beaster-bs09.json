@@ -1,0 +1,108 @@
+{
+ "displayName": "Beaster BS09",
+ "metaTitle": "Beaster BS09 : fiche technique, autonomie et FAQ",
+ "metaDescription": "Beaster BS09 : moteur 250 W, batterie 36 V 10 Ah, 35 à 40 km annoncés, roues 9 pouces, tambour avant et E-ABS arrière, 15 kg. Fiche, entretien et FAQ.",
+ "intro": [
+  "La Beaster BS09 est la grande sœur de la BS08 : même moteur de 250 W et même cadre de 15 kg en alliage de magnésium, mais une batterie de 10 Ah au lieu de 7,5 Ah, d'après Senukai et Houstera. Elle roule sur des roues de 9 pouces (23 cm).",
+  "Les revendeurs annoncent 25 km/h, 35 à 40 km d'autonomie et 100 kg de charge maximale, avec une recharge en 4 heures. Elle freine par un tambour à l'avant et un système E-ABS à l'arrière. Son prix varie fortement selon les boutiques, de 336 à 499 €."
+ ],
+ "specs": [
+  [
+   "Moteur",
+   "250 W"
+  ],
+  [
+   "Vitesse",
+   "25 km/h sur la voie publique"
+  ],
+  [
+   "Autonomie annoncée",
+   "35 à 40 km"
+  ],
+  [
+   "Batterie",
+   "36 V, 10 Ah (360 Wh par calcul)"
+  ],
+  [
+   "Poids",
+   "15 kg"
+  ],
+  [
+   "Charge max",
+   "100 kg"
+  ],
+  [
+   "Roues",
+   "9 pouces (23 cm)"
+  ],
+  [
+   "Freins",
+   "Tambour avant + E-ABS arrière"
+  ],
+  [
+   "Pente max",
+   "14° (selon Senukai)"
+  ],
+  [
+   "Temps de charge",
+   "4 h"
+  ]
+ ],
+ "pros": [
+  "Batterie de 10 Ah pour 15 kg seulement (Senukai).",
+  "Jusqu'à 40 km annoncés, 10 de plus que la BS08 (Varle).",
+  "Tambour avant peu exigeant en entretien (Senukai)."
+ ],
+ "cons": [
+  "250 W : performances modestes en montée.",
+  "Roues de 9 pouces sans suspension mentionnée.",
+  "Aucune fiche constructeur ni test indépendant trouvés.",
+  "Étanchéité non communiquée."
+ ],
+ "parts": [],
+ "care": [
+  "Sans suspension annoncée, ce sont tes pneus qui amortissent : garde-les à la bonne pression.",
+  "Le tambour avant se règle au câble ; si le levier touche presque la poignée, retends-le avant ta prochaine sortie.",
+  "L'étanchéité n'étant pas annoncée, évite les flaques et range la trottinette au sec."
+ ],
+ "price": {
+  "text": "Prix affiché par Varle (Lituanie) : 335,99 € ; 439 € chez Houstera. Prix susceptible de varier.",
+  "source": "varle.lt"
+ },
+ "faq": [
+  {
+   "q": "Quelle différence entre la Beaster BS08 et la BS09 ?",
+   "a": "La BS09 garde le moteur de 250 W et les 15 kg de la BS08 mais passe à une batterie de 10 Ah, pour 35 à 40 km annoncés au lieu de 25 à 30 km."
+  },
+  {
+   "q": "Quelle taille de pneu pour la Beaster BS09 ?",
+   "a": "Des roues de 9 pouces (23 cm), sans cote détaillée dans les fiches. Relève la dimension inscrite sur le flanc de ton pneu avant de commander."
+  },
+  {
+   "q": "Quels freins sur la Beaster BS09 ?",
+   "a": "Un frein à tambour sur la roue avant et un freinage électronique E-ABS sur la roue arrière, selon Senukai."
+  },
+  {
+   "q": "La Beaster BS09 est-elle conforme pour circuler en France ?",
+   "a": "Sa vitesse maximale de 25 km/h respecte la limite légale des trottinettes électriques. Vérifie seulement que ton éclairage et ton avertisseur fonctionnent."
+  }
+ ],
+ "sources": [
+  {
+   "label": "Senukai — Beaster Scooter BS09",
+   "url": "https://www.senukai.lt/p/elektrinis-paspirtukas-beaster-scooter-bs09-juoda-sp-pilka-sp/ks28"
+  },
+  {
+   "label": "Varle — trottinettes Beaster",
+   "url": "https://www.varle.lt/elektriniai-paspirtukai/?f.s-gamintojas=Beaster"
+  },
+  {
+   "label": "Houstera — Beaster BS09",
+   "url": "https://houstera.lt/produktas/elektrinis-paspirtukas-beaster-scooter-bs09-250-w-36-v-10-ah/"
+  },
+  {
+   "label": "PowerSport — Beaster BS09",
+   "url": "https://powersport.lt/en/2329-electric-scooters"
+  }
+ ]
+}

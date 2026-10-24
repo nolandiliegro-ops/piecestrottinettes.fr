@@ -1,0 +1,136 @@
+{
+ "displayName": "Aprilia eSRZ",
+ "metaTitle": "Aprilia eSRZ : fiche technique, pneus 8,5x2 et FAQ",
+ "metaDescription": "Aprilia eSRZ : moteur 300 W (450 W en crête), batterie 36 V 6 Ah, 20 km annoncés, 13,8 kg, pneus 8,5x2 à chambre à air, IPX5. Fiche, pièces et entretien.",
+ "intro": [
+  "L'Aprilia eSRZ (référence AP-MO-210005) est la petite trottinette de la gamme : 13,8 kg, moteur avant de 300 W nominaux et 450 W en crête, batterie de 36 V et 6 Ah (216 Wh), selon Darty et la Fnac. Elle est pensée pour les trajets courts combinés au train ou au bus.",
+  "Elle annonce 20 km d'autonomie, 25 km/h et 100 kg de charge maximale. Ses roues de 8,5 pouces portent des pneus 8,5 x 2 (50/75-6,1) à chambre à air. Indice IPX5, recharge en 4 heures. Des variantes Advanced Safety et Safe Ride existent avec d'autres valeurs : vérifie ta référence."
+ ],
+ "specs": [
+  [
+   "Moteur",
+   "300 W nominaux ; 450 W en crête (moteur avant)"
+  ],
+  [
+   "Vitesse",
+   "25 km/h sur la voie publique"
+  ],
+  [
+   "Autonomie annoncée",
+   "jusqu'à 20 km"
+  ],
+  [
+   "Batterie",
+   "36 V, 6 Ah, 216 Wh"
+  ],
+  [
+   "Poids",
+   "13,8 kg"
+  ],
+  [
+   "Charge max",
+   "100 kg"
+  ],
+  [
+   "Roues",
+   "8,5 pouces, pneus 8,5 x 2 (50/75-6,1) à chambre à air"
+  ],
+  [
+   "Freins",
+   "électronique avant + disque arrière selon la Fnac et Idealo ; Darty indique l'inverse"
+  ],
+  [
+   "Étanchéité",
+   "IPX5"
+  ],
+  [
+   "Charge",
+   "chargeur 42 V 1,5 A ; environ 4 h"
+  ]
+ ],
+ "pros": [
+  "13,8 kg : facile à porter dans les transports (Fnac).",
+  "IPX5, mieux protégée que les eSR1 et eSR2 en IPX4 (Darty).",
+  "Recharge en 4 heures environ (Darty).",
+  "Pneus 8,5 x 2 très courants, les mêmes que la Xiaomi M365 (E-Watts)."
+ ],
+ "cons": [
+  "Batterie de 216 Wh : 20 km annoncés au mieux.",
+  "Roues de 8,5 pouces, sensibles aux pavés et aux nids-de-poule.",
+  "Pas de suspension.",
+  "Plusieurs variantes eSRZ aux fiches différentes, source de confusion."
+ ],
+ "parts": [
+  {
+   "label": "Pneu",
+   "size": "8,5 x 2 (50/75-6,1)",
+   "count": 8,
+   "to": "/piece/pneu-8-5x2-xiaomi-50-75-6-1-wanda",
+   "cta": "Pneus 8,5x2"
+  },
+  {
+   "label": "Chambre à air",
+   "size": "8,5 x 2 (jante 6,1 pouces)",
+   "count": 6,
+   "to": "/piece/chambre-a-air-85x2-xiaomi-m365",
+   "cta": "Chambres 8,5x2"
+  }
+ ],
+ "care": [
+  "Sur des roues de 8,5 pouces, une pression trop basse fait pincer la chambre au premier trottoir : vérifie-la chaque semaine.",
+  "Nettoie le disque arrière au dégraissant frein s'il siffle, et ne le touche jamais avec les doigts gras.",
+  "Ne descends pas sous les 20 % de batterie trop souvent : avec 216 Wh, chaque cycle compte."
+ ],
+ "faq": [
+  {
+   "q": "Quelle taille de pneu pour l'Aprilia eSRZ ?",
+   "a": "Du 8,5 x 2, aussi noté 50/75-6,1, avec une chambre à air. C'est la taille de la Xiaomi M365, très facile à trouver."
+  },
+  {
+   "q": "Quelle différence entre l'eSRZ, l'eSRZ Advanced Safety et l'eSRZ Safe Ride ?",
+   "a": "L'eSRZ de base (AP-MO-210005) a une batterie de 6 Ah et 300 W. Les variantes Advanced Safety et Safe Ride changent la batterie, le moteur ou le freinage selon les fiches : relève la référence sur ta trottinette."
+  },
+  {
+   "q": "Quel chargeur pour l'Aprilia eSRZ ?",
+   "a": "Le manuel indique un chargeur de 42 V et 1,5 A. Contrôle la forme de la prise sur ton chargeur d'origine avant d'en commander un autre."
+  },
+  {
+   "q": "L'Aprilia eSRZ peut-elle circuler dans la rue ?",
+   "a": "Oui, avec ses 25 km/h maximum elle reste dans la limite que la réglementation française fixe aux engins de déplacement personnel motorisés."
+  },
+  {
+   "q": "Quelle autonomie réelle pour l'Aprilia eSRZ ?",
+   "a": "Darty et la Fnac annoncent 20 km. Pour un adulte proche des 100 kg autorisés, compte nettement moins, surtout en côte."
+  }
+ ],
+ "sources": [
+  {
+   "label": "Darty — Aprilia ESRZ AP-MO-210005",
+   "url": "https://www.darty.com/nav/achat/sports_loisirs/glisse_urbaine/trottinette_electrique/aprilia_trotiesrz.html"
+  },
+  {
+   "label": "Fnac — Aprilia eSRZ Safe Ride",
+   "url": "https://www.fnac.com/Aprilia-eSRZ-Safe-Ride-Trottinette-electrique-25-km-h/a19376110/w-4"
+  },
+  {
+   "label": "Idealo — Aprilia eSRZ",
+   "url": "https://www.idealo.fr/prix/202002777/aprilia-esrz.html"
+  },
+  {
+   "label": "Monsieur Trottinettes — pièces Aprilia ESRZ",
+   "url": "https://monsieurtrottinettes.be/fr/156-aprilia-esrz"
+  },
+  {
+   "label": "E-Watts — pneu Aprilia eSRZ",
+   "url": "https://e-watts.fr/categorie-produit/pieces-detachees-trottinette-electrique/pneu-trottinette-electrique/pneu-aprilia-esrz"
+  },
+  {
+   "label": "Trott en Provence — chambre à air Aprilia eSRZ",
+   "url": "https://trott-en-provence.fr/chambre-a-air-trottinette-aprilia-esrz/"
+  },
+  {
+   "label": "Notice Facile — manuel Aprilia (chargeurs)",
+   "url": "https://www.notice-facile.com/notice/590870/aprilia+esrz"
+  }
+ ]
+}

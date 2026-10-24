@@ -1,0 +1,125 @@
+{
+ "displayName": "Kuickwheel M16 Pro",
+ "metaTitle": "Kuickwheel M16 Pro : fiche technique et entretien",
+ "metaDescription": "Kuickwheel M16 Pro : 350 W (500 W en crête), batterie 36 V 10,4 Ah, 40 km annoncés, roues 10 pouces à chambre à air, disque arrière, IPX5. Fiche et FAQ.",
+ "intro": [
+  "La Kuickwheel M16 Pro est une trottinette urbaine équipée d'un moteur arrière de 350 W nominaux, qui monte à 500 W en crête selon Darty et la Fnac. Sa batterie de 36 V et 10,4 Ah (environ 374 Wh) se recharge en 4 heures.",
+  "Les revendeurs annoncent 40 km d'autonomie, 25 km/h, 17 à 18 kg et 120 kg de charge maximale. Elle roule sur des roues de 10 pouces à chambre à air, freine par un disque arrière et affiche un indice IPX5. Darty l'a retirée de son catalogue, d'autres boutiques la vendent encore autour de 499 €."
+ ],
+ "specs": [
+  [
+   "Moteur",
+   "350 W nominaux ; 500 W en crête"
+  ],
+  [
+   "Vitesse",
+   "25 km/h sur la voie publique"
+  ],
+  [
+   "Autonomie annoncée",
+   "jusqu'à 40 km (45 km en mode éco selon Trott'n'Shop)"
+  ],
+  [
+   "Batterie",
+   "36 V, 10,4 Ah (environ 374 Wh par calcul)"
+  ],
+  [
+   "Poids",
+   "17 à 18 kg selon les fiches"
+  ],
+  [
+   "Charge max",
+   "120 kg"
+  ],
+  [
+   "Roues",
+   "10 pouces, à chambre à air"
+  ],
+  [
+   "Freins",
+   "Disque arrière"
+  ],
+  [
+   "Suspension",
+   "avant et arrière selon Trott'n'Shop ; double suspension avant selon Tallerme"
+  ],
+  [
+   "Étanchéité",
+   "IPX5"
+  ],
+  [
+   "Temps de charge",
+   "environ 4 h"
+  ]
+ ],
+ "pros": [
+  "Batterie de 374 Wh pour 40 km annoncés, à moins de 500 € (Le Cycle Nantais).",
+  "Indice IPX5 : elle supporte les projections d'eau (Darty).",
+  "Recharge en 4 heures environ (Fnac).",
+  "Clignotants, éclairage LED et Bluetooth de série (Trott'n'Shop)."
+ ],
+ "cons": [
+  "Moteur de 350 W nominaux : les fortes côtes la ralentissent.",
+  "Suspensions décrites différemment selon les revendeurs.",
+  "Retirée du catalogue Darty : disponibilité inégale.",
+  "Pneus à chambre à air, donc exposés aux crevaisons."
+ ],
+ "parts": [],
+ "care": [
+  "Le disque arrière est ton seul frein mécanique : surveille l'épaisseur des plaquettes tous les mois.",
+  "Garde tes pneus à chambre à air à la pression inscrite sur le flanc, c'est la meilleure protection contre les pincements.",
+  "Après une sortie sous la pluie, essuie la trottinette et laisse sécher le cache de la prise de charge avant de brancher le chargeur."
+ ],
+ "price": {
+  "text": "Prix affiché par Le Cycle Nantais : 499 €. Prix susceptible de varier.",
+  "source": "lecyclenantais.fr"
+ },
+ "faq": [
+  {
+   "q": "Quelle taille de pneu pour la Kuickwheel M16 Pro ?",
+   "a": "Des roues de 10 pouces à chambre à air, mais aucune fiche consultée ne donne la cote exacte. Lis l'inscription sur le flanc de ton pneu avant de commander un pneu ou une chambre."
+  },
+  {
+   "q": "Quel chargeur pour la Kuickwheel M16 Pro ?",
+   "a": "Un chargeur de 42 V pour sa batterie de 36 V. Les revendeurs ne donnent pas tous la même prise : compare l'embout de ton chargeur d'origine avant d'en acheter un autre."
+  },
+  {
+   "q": "Quelle est la puissance réelle de la Kuickwheel M16 Pro ?",
+   "a": "350 W en continu et 500 W en pointe, selon Darty et la Fnac. Les fiches qui annoncent 500 W donnent la valeur de crête."
+  },
+  {
+   "q": "La Kuickwheel M16 Pro respecte-t-elle la loi française ?",
+   "a": "Oui, sa vitesse est limitée à 25 km/h, le plafond fixé aux trottinettes électriques sur la voie publique. Pense aussi à l'éclairage allumé la nuit et au casque, fortement conseillé."
+  },
+  {
+   "q": "La Kuickwheel M16 Pro supporte-t-elle la pluie ?",
+   "a": "Elle est annoncée IPX5, donc protégée contre les jets d'eau. Évite tout de même les flaques profondes et ne la laisse pas dehors sous l'averse."
+  }
+ ],
+ "sources": [
+  {
+   "label": "Darty — Kuickwheel M16 Pro",
+   "url": "https://www.darty.com/nav/achat/sports_loisirs/glisse_urbaine/trottinette_electrique/kuickwheel_m16pro.html"
+  },
+  {
+   "label": "Fnac — Kuickwheel M16 Pro",
+   "url": "https://www.fnac.com/Trottinette-electrique-Kuickwheel-M16-Pro-350-W-Noir/a20486945/w-4"
+  },
+  {
+   "label": "Trotti R — Kuickwheel M16 Pro",
+   "url": "https://www.trottir.com/product-page/trottinette-kuickwheel-m16-pro"
+  },
+  {
+   "label": "Le Cycle Nantais — Kuickwheel M16 Pro",
+   "url": "https://lecyclenantais.fr/produit/kuickwheel-m16-pro/"
+  },
+  {
+   "label": "Trott'n'Shop — M16 Pro Kuickwheel",
+   "url": "https://www.trottnshop.com/produit/m16-pro-kuickwheel/"
+  },
+  {
+   "label": "Tallerme — Kuickwheel M16 Pro",
+   "url": "https://www.tallermespain.com/product-page/patinete-el%C3%A9ctrico-kuickwheel-m16-pro"
+  }
+ ]
+}

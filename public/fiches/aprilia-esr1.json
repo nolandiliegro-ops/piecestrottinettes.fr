@@ -1,0 +1,125 @@
+{
+ "displayName": "Aprilia eSR1",
+ "metaTitle": "Aprilia eSR1 : fiche technique, pneus et entretien",
+ "metaDescription": "Aprilia eSR1 : moteur 350 W, batterie amovible 36 V 7,8 Ah, pneus tubeless 10x2.5-6.5, disque arrière, 15,5 kg, IPX4. Fiche, pneus compatibles et FAQ.",
+ "intro": [
+  "L'Aprilia eSR1 est la première trottinette électrique sous licence Aprilia, produite et vendue par MT Distribution selon le groupe Piaggio. Elle associe un moteur de 350 W, une batterie amovible de 36 V et 7,8 Ah (281 Wh) et des pneus tubeless de 10 pouces.",
+  "La brochure Aprilia annonce 25 km/h, jusqu'à 30 km d'autonomie, 15,5 kg et 100 kg de charge maximale. Elle freine avec un frein électrique à l'avant et un disque à l'arrière, et revendique un indice IPX4. Ses pneus d'origine se remplacent par des modèles en 10 x 2,5-6,5, la taille de la Ninebot Max G30."
+ ],
+ "specs": [
+  [
+   "Moteur",
+   "350 W nominaux"
+  ],
+  [
+   "Vitesse",
+   "25 km/h sur la voie publique (modes 6, 20 et 25 km/h)"
+  ],
+  [
+   "Autonomie annoncée",
+   "jusqu'à 30 km"
+  ],
+  [
+   "Batterie",
+   "36 V, 7,8 Ah, 281 Wh, amovible"
+  ],
+  [
+   "Poids",
+   "15,5 kg"
+  ],
+  [
+   "Charge max",
+   "100 kg"
+  ],
+  [
+   "Roues",
+   "10 pouces tubeless, 10 x 2,5-6,5 (60/70-6,5)"
+  ],
+  [
+   "Freins",
+   "Électrique avant + disque arrière"
+  ],
+  [
+   "Étanchéité",
+   "IPX4"
+  ],
+  [
+   "Charge",
+   "chargeur 42 V ; 5 à 6 h selon la brochure, 6 à 8 h selon le manuel"
+  ]
+ ],
+ "pros": [
+  "Batterie amovible : tu peux la recharger hors de la trottinette (brochure Aprilia).",
+  "Pneus tubeless de 10 pouces, plus confortables qu'un 8,5 pouces (brochure Aprilia).",
+  "Taille de pneu répandue : 10 x 2,5-6,5, comme la Ninebot Max G30 (YouVelo, Urban Moov).",
+  "15,5 kg pour une 10 pouces (brochure Aprilia)."
+ ],
+ "cons": [
+  "Batterie de 281 Wh : autonomie modeste.",
+  "Pas de frein mécanique à l'avant, seulement un frein électrique.",
+  "IPX4 : protégée contre les éclaboussures, pas plus.",
+  "Aucune suspension mentionnée dans les fiches consultées."
+ ],
+ "parts": [
+  {
+   "label": "Pneu",
+   "size": "10 x 2,5-6,5 (60/70-6,5) tubeless",
+   "count": 14,
+   "to": "/piece/pneu-tubeless-60-70-6-5-wanda",
+   "cta": "Pneus 10x2.5-6.5"
+  }
+ ],
+ "care": [
+  "Avec des pneus tubeless, vérifie la pression toutes les deux semaines : une fuite lente sur la valve passe inaperçue jusqu'au pneu à plat.",
+  "Le disque arrière est ton unique frein à friction : remplace les plaquettes dès qu'elles crissent ou que le levier s'allonge.",
+  "Retire et range la batterie amovible au sec quand la trottinette reste dehors l'hiver."
+ ],
+ "faq": [
+  {
+   "q": "Quelle taille de pneu pour l'Aprilia eSR1 ?",
+   "a": "Des pneus tubeless de 10 pouces en 10 x 2,5-6,5, aussi notés 60/70-6,5. Plusieurs boutiques de pièces l'indiquent, et c'est la même taille que la Ninebot Max G30."
+  },
+  {
+   "q": "La batterie de l'Aprilia eSR1 est-elle amovible ?",
+   "a": "Oui, la brochure Aprilia la présente comme amovible. Tu peux donc la recharger chez toi en laissant la trottinette au garage."
+  },
+  {
+   "q": "Quel chargeur pour l'Aprilia eSR1 ?",
+   "a": "Un chargeur de 42 V, puisque la batterie est en 36 V. Compare la prise et la polarité avec ton chargeur d'origine avant d'en acheter un autre."
+  },
+  {
+   "q": "L'Aprilia eSR1 peut-elle rouler sur la chaussée ?",
+   "a": "Oui : son mode le plus rapide plafonne à 25 km/h, la vitesse maximale autorisée pour une trottinette électrique sur la voie publique en France."
+  },
+  {
+   "q": "Qui fabrique les trottinettes Aprilia ?",
+   "a": "Aprilia a accordé une licence à MT Distribution, qui produit et commercialise les trottinettes de la marque, selon le groupe Piaggio."
+  }
+ ],
+ "sources": [
+  {
+   "label": "Aprilia — brochure eSR1 (PDF)",
+   "url": "https://wlassets.aprilia.com/wlassets/aprilia/it/eSR1_monopattino/brochure/flyer_e-SR1/original/flyer_e-SR1.pdf?1608132130758"
+  },
+  {
+   "label": "Piaggio Group — licence Aprilia / MT Distribution",
+   "url": "https://wide.piaggiogroup.com/en/articles/markets/aprilia-signs-licensing-agreement-with-mt-distribution/index.html"
+  },
+  {
+   "label": "HappyTec — pneu tubeless d'origine eSR1",
+   "url": "https://shop.happytec.it/en/shop/ricambi-per-monopattini-elettrici/ricambi-per-modello-monopattini-elettrici/ducati-ricambi-e-scooter/pneumatico-tubeless-da-10-pollici-per-monopattino-ducati-pro-ii/"
+  },
+  {
+   "label": "YouVelo — pneu 10x2.5-6.5 CST (eSR1)",
+   "url": "https://youvelo.fr/vtt/851-pneu-10x25-65-cst-ducati-pro-2-evo.html"
+  },
+  {
+   "label": "Urban Moov — pneu tubeless 10x2.5-6.5",
+   "url": "https://www.urbanmoov.fr/boutique/Pneu-tout-terrain-tubeless-10x2-5-6-5-p596714179"
+  },
+  {
+   "label": "Notice Facile — manuel Aprilia eSR2 / eSR1 / eSRZ",
+   "url": "https://www.notice-facile.com/notice/590870/aprilia+esrz"
+  }
+ ]
+}

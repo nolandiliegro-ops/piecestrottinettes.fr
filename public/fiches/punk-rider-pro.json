@@ -1,0 +1,129 @@
+{
+ "displayName": "Punk Rider Pro",
+ "metaTitle": "Punk Rider Pro : fiche technique double moteur 52 V",
+ "metaDescription": "Punk Rider Pro : 2 × 600 W, batterie 52 V 18 Ah (936 Wh), 70 km annoncés, pneus tubeless 10x3, tambours ou hydrauliques selon la version. Fiche et FAQ.",
+ "intro": [
+  "La Punk Rider Pro ajoute un second moteur à la Rider : deux moteurs de 600 W, une batterie de 52 V et 18 Ah (936 Wh) et des pneus tubeless auto-obturants de 10 x 3 pouces, selon punkelectric.eu, Alternative Bike et Streetride.",
+  "Punk annonce jusqu'à 70 km en mode éco, 30 kg et 120 kg de charge maximale. Les premières séries freinent par tambours ; la version 2026 passe à des freins hydrauliques à disque, d'après la page Punk et Streetride. La puissance de crête varie selon les pages : 2 080, 2 400 ou 2 600 W."
+ ],
+ "specs": [
+  [
+   "Moteurs",
+   "2 × 600 W ; en crête 2 400 ou 2 600 W selon Punk, 2 080 W selon Gyroroue Shop"
+  ],
+  [
+   "Vitesse",
+   "25 km/h sur la voie publique ; 50 km/h annoncés par Punk sur terrain privé"
+  ],
+  [
+   "Autonomie annoncée",
+   "jusqu'à 70 km en mode éco"
+  ],
+  [
+   "Batterie",
+   "52 V, 18 Ah, 936 Wh (cellules 21700)"
+  ],
+  [
+   "Poids",
+   "30 kg (selon Punk)"
+  ],
+  [
+   "Charge max",
+   "120 kg"
+  ],
+  [
+   "Roues",
+   "10 x 3 pouces, tubeless auto-obturants"
+  ],
+  [
+   "Freins",
+   "tambours avant et arrière (premières séries) ; disques hydrauliques sur la version 2026 ; frein régénératif"
+  ],
+  [
+   "Suspension",
+   "Avant et arrière, cartouches en caoutchouc"
+  ],
+  [
+   "Étanchéité",
+   "IPX6"
+  ],
+  [
+   "Temps de charge",
+   "7 à 10 h selon Punk, environ 9 h selon Alternative Bike"
+  ]
+ ],
+ "pros": [
+  "Double moteur et 936 Wh de batterie (Alternative Bike).",
+  "Pneus tubeless auto-obturants contre les crevaisons (Punk Electric).",
+  "Freins hydrauliques sur la version 2026 (Streetride).",
+  "IPX6 (Punk Electric)."
+ ],
+ "cons": [
+  "Puissance de crête annoncée de trois façons selon les pages.",
+  "Recharge de 7 à 10 heures avec le chargeur fourni.",
+  "Deux générations de freins sous le même nom : vérifie la tienne avant d'acheter des pièces.",
+  "30 kg à porter."
+ ],
+ "parts": [],
+ "care": [
+  "Identifie tes freins avant de commander : tambours sur les premières séries, disques hydrauliques sur la version 2026.",
+  "Avec deux moteurs, contrôle le serrage des deux axes de roue chaque mois.",
+  "Charge ta batterie de 52 V avec le chargeur d'origine et débranche-le une fois le voyant passé au vert."
+ ],
+ "price": {
+  "text": "Prix affiché sur punkelectric.eu : 1 249 € (1 099 € en promotion). Prix susceptible de varier.",
+  "source": "punkelectric.eu"
+ },
+ "faq": [
+  {
+   "q": "La Punk Rider Pro a-t-elle des freins hydrauliques ?",
+   "a": "Ça dépend de la série : Punk annonce le passage des tambours aux freins hydrauliques à disque sur la version 2026. Regarde tes roues pour savoir laquelle tu as."
+  },
+  {
+   "q": "Quelle taille de pneu pour la Punk Rider Pro ?",
+   "a": "Des pneus tubeless auto-obturants de 10 x 3 pouces. Le diamètre de jante n'est pas précisé : lis la cote sur le flanc de ton pneu avant de le remplacer."
+  },
+  {
+   "q": "Quel chargeur pour la Punk Rider Pro ?",
+   "a": "La batterie est en 52 V, ce qui demande un chargeur d'environ 58,8 V. Le type de prise n'est pas confirmé par Punk : compare avec ton chargeur d'origine."
+  },
+  {
+   "q": "Quelle vitesse autorisée pour la Punk Rider Pro ?",
+   "a": "25 km/h, sa vitesse de sortie d'usine et la limite fixée aux trottinettes sur la voie publique en France. Les 50 km/h évoqués par Punk ne valent que hors voie publique."
+  },
+  {
+   "q": "Quelle différence entre la Punk Rider Pro et la Rider Pro Max ?",
+   "a": "La Pro Max garde les deux moteurs de 600 W mais reçoit une batterie de 52 V et 20 Ah et des freins hydrauliques Nutt, pour 80 km annoncés."
+  }
+ ],
+ "sources": [
+  {
+   "label": "Punk Electric — Punk Rider Pro",
+   "url": "https://punkelectric.eu/products/punk-rider-pro-new"
+  },
+  {
+   "label": "Punk Electric — collection Rider",
+   "url": "https://punkelectric.eu/collections/punk-rider-scooter"
+  },
+  {
+   "label": "Punk Electric — Rider Pro Max",
+   "url": "https://punkelectric.eu/products/punk-rider-pro-max"
+  },
+  {
+   "label": "Alternative Bike — Punk Rider Pro",
+   "url": "https://alternative.bike/862-punk-rider-pro.html"
+  },
+  {
+   "label": "Streetride — Punk Rider Pro",
+   "url": "https://www.streetride.be/products/punk-rider-pro"
+  },
+  {
+   "label": "Gyroroue Shop — Punk Rider Pro",
+   "url": "https://www.gyroroue-shop.fr/boutique/trottinette-electrique/punk-electric/punk-rider-pro"
+  },
+  {
+   "label": "Punk Electric — boutique",
+   "url": "https://punkelectric.eu/collections/scooters"
+  }
+ ]
+}
