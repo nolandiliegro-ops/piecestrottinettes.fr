@@ -1,0 +1,486 @@
+{
+ "lot": "ang01",
+ "models": [
+  {
+   "id": "d526a407-6a21-42fe-9219-fb6420eff198",
+   "slug": "apollo-explore",
+   "name": "Apollo Explore",
+   "brand": "Apollo",
+   "candidates": [
+    "https://files.refurbed.com/pi/apollo-explore-1704793948.jpg",
+    "https://files.refurbed.com/pi/apollo-explore-1704793953.jpg",
+    "https://files.refurbed.com/pi/apollo-explore-1704793957.jpg",
+    "https://files.refurbed.com/pi/apollo-explore-1704793961.jpg",
+    "https://files.refurbed.com/pi/apollo-explore-1704793942.jpg"
+   ]
+  },
+  {
+   "id": "a3fdb0ac-6105-4245-a1bf-97122c4dd6fe",
+   "slug": "apollo-explore-2-0",
+   "name": "Apollo Explore 2.0",
+   "brand": "Apollo",
+   "candidates": [
+    "https://apolloscooters.co/cdn/shop/files/Apollo_Explore_PC10__Website_Standard_2.png?v=1761843123&width=2160",
+    "https://apolloscooters.co/cdn/shop/files/Apollo_Explore_PC10__Website_Standard_4.png?v=1761843123&width=2160",
+    "https://apolloscooters.co/cdn/shop/files/Apollo_Explore_PC10__Website_Standard_1.png?v=1761843123&width=2160",
+    "https://apolloscooters.co/cdn/shop/files/Apollo_Explore_PC10__Website_Standard_3.png?v=1755612989&width=2160",
+    "https://apolloscooters.co/cdn/shop/files/Explore_front_view_cropped.jpg?v=1761843123&width=4411",
+    "https://apolloscooters.co/cdn/shop/files/Explore_Deck.png?v=1755042522&width=1500",
+    "https://apolloscooters.co/cdn/shop/files/Explore_Braking.png?v=1755101501&width=3840"
+   ]
+  },
+  {
+   "id": "20d3306b-b077-46e5-85b1-2163f149be12",
+   "slug": "apollo-go",
+   "name": "Apollo Go",
+   "brand": "Apollo",
+   "candidates": [
+    "https://apolloscooters.co/cdn/shop/files/R62L0643.png?v=1776450086&width=2309",
+    "https://apolloscooters.co/cdn/shop/files/R62L9586.png?v=1776450086&width=2309",
+    "https://apolloscooters.co/cdn/shop/files/R62L0486.png?v=1776450086&width=2309",
+    "https://apolloscooters.co/cdn/shop/files/Renders_M06022024_2_1.png?v=1776450086&width=2160",
+    "https://apolloscooters.co/cdn/shop/files/Apollo_GO_Assets_Update_20250421-12_1_866f3e1c-7441-439b-a129-fab74550b0d1.png?v=1761611781&width=3305",
+    "https://apolloscooters.co/cdn/shop/files/b515436c3f3d580ce595a88bccaf455b41f146d6_1.png?v=1747145414&width=4096",
+    "https://apolloscooters.co/cdn/shop/files/0U3A2748-Edit-min_cce4249b-04c9-4bbf-8756-5b29801c648c.jpg?v=1776450086&width=4750"
+   ]
+  },
+  {
+   "id": "766a1d5c-fa41-432a-8c9c-4a9de0188443",
+   "slug": "apollo-phantom-2-0",
+   "name": "Apollo Phantom 2.0",
+   "brand": "Apollo",
+   "candidates": [
+    "https://apolloscooters.co/cdn/shop/files/A11_Black_springs_update_20250604_3_3f139638-6dd3-43c3-a7d6-3a59d290ed22.png?v=1773931411&width=2160",
+    "https://apolloscooters.co/cdn/shop/files/A11_Black_springs_update_20250604_12.png?v=1773931411&width=2160",
+    "https://apolloscooters.co/cdn/shop/files/A11_Mkt_01102024_5.png?v=1773931411&width=2000",
+    "https://apolloscooters.co/cdn/shop/files/A11_Mkt_01102024_9.png?v=1773931411&width=2000",
+    "https://apolloscooters.co/cdn/shop/files/A11_Mkt_01102024_12.png?v=1773931411&width=2000",
+    "https://apolloscooters.co/cdn/shop/files/A11_Black_springs_update_20250604_2.png?v=1773931411&width=2160",
+    "https://apolloscooters.co/cdn/shop/files/R62L0204.jpg?v=1787173326&width=2309",
+    "https://apolloscooters.co/cdn/shop/files/R62L9753.jpg?v=1787173354&width=2310"
+   ]
+  },
+  {
+   "id": "ab62a280-5876-4e20-9423-4a3426856114",
+   "slug": "hikerboy-curtis-dual",
+   "name": "Hikerboy Curtis Dual",
+   "brand": "Hikerboy",
+   "candidates": [
+    "https://hikerboyscooter.com/cdn/shop/files/3._Curtis_Dual_HikerboyScooter_4_fe3179ca-a90f-4161-8014-edbd1aadc6c3.webp?v=1749213009",
+    "https://hikerboyscooter.com/cdn/shop/files/4._Curtis_Dual_HikerboyScooter_3_d2303541-c92d-4cd8-a2e3-a5872d623ba1.webp?v=1749213009",
+    "https://hikerboyscooter.com/cdn/shop/files/5._Curtis_Dual_HikerboyScooter_5_8ff808b0-7ba5-4c91-8612-e4b79bd535a6.webp?v=1749213009",
+    "https://hikerboyscooter.com/cdn/shop/files/6._Curtis_Dual_HikerboyScooter_6_b5e0ff4a-1720-4032-8b66-da712d729095.webp?v=1749213009",
+    "https://hikerboyscooter.com/cdn/shop/files/2._Curtis_Dual_HikerboyScooter_1_1cd66646-470b-404d-8b29-621d90979a8c.webp?v=1749213009",
+    "https://hikerboyscooter.com/cdn/shop/files/3._Curtis_Dual_Grey_HikerboyScooter_1_5f0b14e9-f0a8-4404-bd59-68e2277238d3.webp?v=1749213009",
+    "https://hikerboyscooter.com/cdn/shop/files/4._Curtis_Dual_Grey_HikerboyScooter_6_6f8956ec-8041-4ac2-83c6-7bae15d5b3fe.webp?v=1749213007",
+    "https://hikerboyscooter.com/cdn/shop/files/1._Curtis_Dual_HikerboyScooter_2_1_e154bb13-e033-4228-a127-6c3b2576417e.webp?v=1749213009"
+   ]
+  },
+  {
+   "id": "470816ac-6d6f-4005-aa8c-874053c7c432",
+   "slug": "hikerboy-curtis-dual-pro",
+   "name": "Hikerboy Curtis Dual Pro",
+   "brand": "Hikerboy",
+   "candidates": [
+    "https://hikerboyscooter.com/cdn/shop/files/CurtisDualPro_Gold_HikerboyScooter_434d9017-b79b-41ad-89ca-5f3e6139f3a4.webp?v=1785319556",
+    "https://hikerboyscooter.com/cdn/shop/files/C_20250205.965.png?v=1785319245",
+    "https://hikerboyscooter.com/cdn/shop/files/CurtisDualPro_Grey_HikerboyScooter.webp?v=1785319436",
+    "https://hikerboyscooter.com/cdn/shop/files/CurtisDualPro_Gold_HikerboyScooter.webp?v=1785319533"
+   ]
+  },
+  {
+   "id": "609dc353-fc81-420d-9c59-a4e18bd9aa15",
+   "slug": "hikerboy-curtis-plus",
+   "name": "Hikerboy Curtis Plus",
+   "brand": "Hikerboy",
+   "candidates": [
+    "https://hikerboyscooter.com/cdn/shop/files/3.CurtisPlus_Grey_HikerboyScooter_3.webp?v=1749213937",
+    "https://hikerboyscooter.com/cdn/shop/files/4.CurtisPlus_Grey_HikerboyScooter_4.webp?v=1749213937",
+    "https://hikerboyscooter.com/cdn/shop/files/5.CurtisPlus_Grey_HikerboyScooter_5.webp?v=1749213937",
+    "https://hikerboyscooter.com/cdn/shop/files/6.CurtisPlus_Grey_HikerboyScooter_6.webp?v=1749214624",
+    "https://hikerboyscooter.com/cdn/shop/files/2.CurtisPlus_Grey_HikerboyScooter_1.webp?v=1749213937",
+    "https://hikerboyscooter.com/cdn/shop/files/fold_2888dc6f-badb-430e-a795-4d5887bb4ef8.webp?v=1749217795",
+    "https://hikerboyscooter.com/cdn/shop/files/C_20231218.1257.webp?v=1749214624"
+   ]
+  },
+  {
+   "id": "24bcc9be-d1ce-4d3f-84a7-716ca81b4836",
+   "slug": "hikerboy-foxtrot-plus",
+   "name": "Hikerboy Foxtrot Plus",
+   "brand": "Hikerboy",
+   "candidates": [
+    "https://hikerboyscooter.com/cdn/shop/files/Foxtrot_Plus_Gallery_HikerboyScooter_1.webp?v=1748955076",
+    "https://hikerboyscooter.com/cdn/shop/files/Foxtrot_Plus_Gallery_HikerboyScooter_2.webp?v=1748955076",
+    "https://hikerboyscooter.com/cdn/shop/files/Foxtrot_Plus_Gallery_HikerboyScooter_3.webp?v=1748955076",
+    "https://hikerboyscooter.com/cdn/shop/files/Foxtrot_Plus_Gallery_HikerboyScooter_4.webp?v=1748955076",
+    "https://hikerboyscooter.com/cdn/shop/files/Foxtrot_Plus_Gallery_HikerboyScooter_5.webp?v=1748955076",
+    "https://hikerboyscooter.com/cdn/shop/files/Foxtrot_Plus_Gallery_HikerboyScooter_6.webp?v=1748955076",
+    "https://hikerboyscooter.com/cdn/shop/files/Foxtrot_Plus_Gallery_HikerboyScooter_7.webp?v=1748955076",
+    "https://hikerboyscooter.com/cdn/shop/files/handle.webp?v=1729171072"
+   ]
+  },
+  {
+   "id": "a13cf842-3c46-43bc-bc48-bcb09782acc9",
+   "slug": "isinwheel-gt2",
+   "name": "Isinwheel GT2",
+   "brand": "Isinwheel",
+   "candidates": [
+    "https://www.isinwheel.fr/cdn/shop/files/GT2B03V01.jpg?v=1765876318",
+    "https://www.isinwheel.fr/cdn/shop/files/GT2B04V01.jpg?v=1765876318",
+    "https://www.isinwheel.fr/cdn/shop/files/GT2B07V01.jpg?v=1765876318",
+    "https://www.isinwheel.fr/cdn/shop/products/GT2A01V01_1.jpg?v=1765876318",
+    "https://www.isinwheel.fr/cdn/shop/files/GT2_MAIN_PIC_1.jpg?v=1765876318",
+    "https://www.isinwheel.fr/cdn/shop/files/GT2-12.webp?v=1749352005",
+    "https://www.isinwheel.fr/cdn/shop/files/ISINWHEEL_GT2_5.jpg?v=1727666800",
+    "https://www.isinwheel.fr/cdn/shop/files/ISINWHEEL_GT2_6.jpg?v=1727666800"
+   ]
+  },
+  {
+   "id": "b68e1f6b-88ea-49e4-bf96-be98c015ff3c",
+   "slug": "isinwheel-gt2-pro",
+   "name": "Isinwheel GT2 Pro",
+   "brand": "Isinwheel",
+   "candidates": [
+    "https://www.isinwheel.com/cdn/shop/files/1773823205872_1.png?v=1783481086&width=2000",
+    "https://www.isinwheel.com/cdn/shop/files/1773969398086_1.png?v=1783481086&width=2000",
+    "https://www.isinwheel.com/cdn/shop/files/1773726156683_1.png?v=1783481086&width=2000",
+    "https://www.isinwheel.com/cdn/shop/files/1773736931157_1.png?v=1783481086&width=2000",
+    "https://www.isinwheel.com/cdn/shop/files/1773969815195_1.png?v=1783481086&width=2000",
+    "https://www.isinwheel.com/cdn/shop/files/1773729256110_1.png?v=1783481086&width=2000",
+    "https://www.isinwheel.com/cdn/shop/files/31_bdcabce1-cf31-4273-a2cb-f8819919d2b4.png?v=1783481028&width=4000",
+    "https://www.isinwheel.com/cdn/shop/files/35.png?v=1783481028&width=4000",
+    "https://www.isinwheel.com/cdn/shop/files/ISINWHEEL_1_3f9be6e9-2ace-4c5e-bb26-508a8c630a9d.png?v=1787823735&width=2000"
+   ]
+  },
+  {
+   "id": "54f29042-c5aa-460a-9a92-fd34fc962792",
+   "slug": "isinwheel-s-nova-pro",
+   "name": "Isinwheel S-NOVA Pro",
+   "brand": "Isinwheel",
+   "candidates": [
+    "https://www.isinwheel.com/cdn/shop/files/Group_2023316996.png?v=1792408276&width=2000",
+    "https://www.isinwheel.com/cdn/shop/files/01041b844f9910aae6a981417283e630.png?v=1792407006&width=1448",
+    "https://www.isinwheel.com/cdn/shop/files/89d217eb03cdec8de32040da1964e92c.png?v=1792407006&width=1448",
+    "https://www.isinwheel.com/cdn/shop/files/ab613331b85e89caa76e1400c3bf781c.png?v=1792407006&width=1448",
+    "https://www.isinwheel.com/cdn/shop/files/7bd0f19ac5ea2199465cf433fc9e7259.png?v=1792407006&width=1448",
+    "https://www.isinwheel.com/cdn/shop/files/ISINWHEEL_1_881e53bb-153e-426f-9eb5-e184c838613d.png?v=1792407129&width=2000",
+    "https://www.isinwheel.com/cdn/shop/files/ISINWHEEL_3_3dddf0ca-5c90-4828-8fd0-7aef1aa0c144.png?v=1792407129&width=2000"
+   ]
+  },
+  {
+   "id": "76474606-db65-4d08-8248-0dfb2b828227",
+   "slug": "isinwheel-s9-pro",
+   "name": "Isinwheel S9 Pro",
+   "brand": "Isinwheel",
+   "candidates": [
+    "https://www.isinwheel.com/cdn/shop/files/S9Pro-1.png?v=1783490256&width=2000",
+    "https://www.isinwheel.com/cdn/shop/files/S9Pro-2.png?v=1783490256&width=2000",
+    "https://www.isinwheel.com/cdn/shop/files/S9Pro-3.png?v=1783490256&width=2000",
+    "https://www.isinwheel.com/cdn/shop/files/S9Pro-4.png?v=1783490255&width=2000",
+    "https://www.isinwheel.com/cdn/shop/files/ISINWHEEL_1_9d73150e-2905-41e9-9eb4-87c89220a263.png?v=1785988138&width=2000",
+    "https://www.isinwheel.com/cdn/shop/files/19_7f87e3d2-ac20-4fb8-ae87-e0948c7643b4.png?v=1783490322&width=4000",
+    "https://www.isinwheel.com/cdn/shop/files/20_1.png?v=1783490235&width=4000",
+    "https://www.isinwheel.com/cdn/shop/files/ISINWHEEL_2_555e8a1e-c6a6-489d-a476-387fa74c16b5.png?v=1785995538&width=2000"
+   ]
+  },
+  {
+   "id": "5a943837-6252-4526-9954-5c937936b032",
+   "slug": "isinwheel-x3-pro",
+   "name": "Isinwheel X3 Pro",
+   "brand": "Isinwheel",
+   "candidates": [
+    "https://aiwheelz.com/wp-content/uploads/2024/10/031500x1500_b90f05e0-b7c7-4e0a-97b2-f40c86f43341.webp",
+    "https://aiwheelz.com/wp-content/uploads/2024/10/041500x1500_613e3b01-2f87-421b-8672-ba5602db45e2.webp",
+    "https://aiwheelz.com/wp-content/uploads/2024/10/051500x1500_f13e964d-0d4d-40ef-9f6b-cccce44f8122.webp",
+    "https://aiwheelz.com/wp-content/uploads/2024/10/061500x1500_92a1821c-5790-47c4-9137-126cbf4465ef.webp",
+    "https://aiwheelz.com/wp-content/uploads/2024/10/071500x1500_5f35394c-856b-438f-ab4f-0d3cf406acc1.webp",
+    "https://aiwheelz.com/wp-content/uploads/2024/10/X3pro_B4_2210251_3d79b0ac-378c-4ca2-9ea8-51502edd4523.webp",
+    "https://aiwheelz.com/wp-content/uploads/2024/10/71Y50tSOWIL._AC_SL1500.webp",
+    "https://aiwheelz.com/wp-content/uploads/2024/10/x3p_50e7399b-0630-441e-b3ec-bc5da9e6d22e.webp"
+   ]
+  },
+  {
+   "id": "778234b9-1683-4ee3-9621-e2ecba899431",
+   "slug": "kukirin-g2-max-2026",
+   "name": "Kukirin G2 Max (2026)",
+   "brand": "Kukirin",
+   "candidates": [
+    "https://www.kukirin-scooter.com/cdn/shop/files/G2_Max-2.jpg?v=1770203217",
+    "https://www.kukirin-scooter.com/cdn/shop/files/G2_Max-3.jpg?v=1770203217",
+    "https://www.kukirin-scooter.com/cdn/shop/files/G2_Max-4.jpg?v=1770203217",
+    "https://www.kukirin-scooter.com/cdn/shop/files/G2_Max-5.jpg?v=1770203217",
+    "https://www.kukirin-scooter.com/cdn/shop/files/G2_Max-6.jpg?v=1770203217",
+    "https://www.kukirin-scooter.com/cdn/shop/files/G2_Max-7.jpg?v=1770203217",
+    "https://www.kukirin-scooter.com/cdn/shop/files/G2_Max-8.jpg?v=1770203217",
+    "https://www.kukirin-scooter.com/cdn/shop/files/G2_MAX-V2.jpg?v=1770203217",
+    "https://www.kukirin-scooter.com/cdn/shop/files/G2_Max-1.jpg?v=1770203217"
+   ]
+  },
+  {
+   "id": "7c4d516d-3386-4b59-ba37-5bd40aa51480",
+   "slug": "kukirin-g3-adventurers",
+   "name": "Kukirin G3 Adventurers",
+   "brand": "Kukirin",
+   "candidates": [
+    "https://www.kukirin-officiel.com/cdn/shop/files/kukirin-g3-adventurers-trottinette-off-road-1200w-cadre-monobloc-60km-50kmh-8708101_2048x.webp?v=1764467605",
+    "https://www.kukirin-officiel.com/cdn/shop/files/kukirin-g3-adventurers-trottinette-off-road-1200w-cadre-monobloc-60km-50kmh-1580539_2048x.webp?v=1764467605",
+    "https://www.kukirin-officiel.com/cdn/shop/files/kukirin-g3-adventurers-trottinette-off-road-1200w-cadre-monobloc-60km-50kmh-9142451_2048x.webp?v=1764467606",
+    "https://www.kukirin-officiel.com/cdn/shop/files/kukirin-g3-adventurers-trottinette-off-road-1200w-cadre-monobloc-60km-50kmh-1050383_2048x.webp?v=1764467606",
+    "https://www.kukirin-officiel.com/cdn/shop/files/kukirin-g3-adventurers-trottinette-off-road-1200w-cadre-monobloc-60km-50kmh-1355247_2048x.webp?v=1764467607",
+    "https://www.kukirin-officiel.com/cdn/shop/files/kukirin-g3-adventurers-trottinette-off-road-1200w-cadre-monobloc-60km-50kmh-4987727_2048x.webp?v=1764467607",
+    "https://www.kukirin-officiel.com/cdn/shop/files/kukirin-g3-adventurers-trottinette-off-road-1200w-cadre-monobloc-60km-50kmh-3107354_2048x.webp?v=1764467608",
+    "https://www.kukirin-officiel.com/cdn/shop/files/kukirin-g3-adventurers-trottinette-off-road-1200w-cadre-monobloc-60km-50kmh-8639952_2048x.webp?v=1764467608",
+    "https://www.kukirin-officiel.com/cdn/shop/files/kukirin-g3-adventurers-trottinette-off-road-1200w-cadre-monobloc-60km-50kmh-3663846_2048x.webp?v=1764467608",
+    "https://www.kukirin-officiel.com/cdn/shop/files/kukirin-g3-adventurers-trottinette-off-road-1200w-cadre-monobloc-60km-50kmh-2623978_2048x.webp?v=1764467608"
+   ]
+  },
+  {
+   "id": "57da2084-1759-4216-b2ed-e4d7098ffa76",
+   "slug": "kukirin-g3-pro",
+   "name": "Kukirin G3 Pro",
+   "brand": "Kukirin",
+   "candidates": [
+    "https://www.kukirin-scooter.com/cdn/shop/products/KuKirinG3Pro-2.jpg?v=1786699050",
+    "https://www.kukirin-scooter.com/cdn/shop/products/KuKirinG3Pro-3.jpg?v=1786699040",
+    "https://www.kukirin-scooter.com/cdn/shop/products/KuKirinG3Pro-4.jpg?v=1786699029",
+    "https://www.kukirin-scooter.com/cdn/shop/products/KuKirinG3Pro-5.jpg?v=1786699021",
+    "https://www.kukirin-scooter.com/cdn/shop/products/KuKirinG3Pro-6.jpg?v=1786699015",
+    "https://www.kukirin-scooter.com/cdn/shop/products/KuKirinG3Pro-7.jpg?v=1786699009",
+    "https://www.kukirin-scooter.com/cdn/shop/products/KuKirinG3Pro-8.jpg?v=1786699001",
+    "https://www.kukirin-scooter.com/cdn/shop/products/KuKirinG3Pro-9.jpg?v=1786698995",
+    "https://www.kukirin-scooter.com/cdn/shop/files/KuKirinG3Pro.jpg?v=1786698980"
+   ]
+  },
+  {
+   "id": "7cd4904d-a282-4f4e-aab1-501be0a7b8e3",
+   "slug": "kukirin-g4-max",
+   "name": "Kukirin G4 Max",
+   "brand": "Kukirin",
+   "candidates": [
+    "https://img.staticdj.com/5e0d61e89ab26d0c6192ae309b132acf.png",
+    "https://img.staticdj.com/95394561858fd20e3d813252c433e218.png",
+    "https://img.staticdj.com/c350c533efc7cabd15fe108d05c1b884.png",
+    "https://img.staticdj.com/0a1ee8df3ddb882e1948366c74445be6.png",
+    "https://img.staticdj.com/1649a56c3ffc031c0a04741d985a53b9.png",
+    "https://img.staticdj.com/fa86c02f332cb526773d26c9869dd12d.png",
+    "https://img.staticdj.com/31a617a2bbc9780aeef1ce193828d9b1.png",
+    "https://img.staticdj.com/7268b01e75124c21fe6ca384232babdb.png"
+   ]
+  },
+  {
+   "id": "90784d31-a431-4f78-9937-2014139ba54b",
+   "slug": "nami-burn-e",
+   "name": "Nami Burn-E",
+   "brand": "Nami",
+   "candidates": [
+    "https://www.voltride.sk/img/cms/Produkty/Nami%20Burn-E/nami2_4000x-progressive.jpg",
+    "https://www.maxblinker.com/9913-panda_thickbox_default/nami-burn-e.jpg",
+    "https://www.maxblinker.com/9914-panda_thickbox_default/nami-burn-e.jpg",
+    "https://www.maxblinker.com/9915-panda_thickbox_default/nami-burn-e.jpg",
+    "https://www.maxblinker.com/9916-panda_thickbox_default/nami-burn-e.jpg",
+    "https://www.maxblinker.com/9917-panda_thickbox_default/nami-burn-e.jpg",
+    "https://www.maxblinker.com/9918-panda_thickbox_default/nami-burn-e.jpg",
+    "https://www.maxblinker.com/9919-panda_thickbox_default/nami-burn-e.jpg",
+    "https://www.maxblinker.com/9920-panda_thickbox_default/nami-burn-e.jpg",
+    "https://www.maxblinker.com/9921-panda_thickbox_default/nami-burn-e.jpg"
+   ]
+  },
+  {
+   "id": "b8e4da68-45b3-4a69-85a5-3604f43001e8",
+   "slug": "nami-burn-e-3",
+   "name": "Nami Burn-E 3",
+   "brand": "Nami",
+   "candidates": [
+    "https://www.speedwayridersnyc.com/wp-content/uploads/2026/09/nami-burn-e-3-electric-scooter-2.png",
+    "https://www.speedwayridersnyc.com/wp-content/uploads/2025/04/Burn-e-3-Max-roue-arrire-scaled-1.jpg",
+    "https://www.speedwayridersnyc.com/wp-content/uploads/2025/04/Burn-e-3-max-amortisseur-de-direction-scaled-1.jpg",
+    "https://www.speedwayridersnyc.com/wp-content/uploads/2025/04/Burn-e-3-Max-scaled-1.jpg",
+    "https://www.ridefatdaddy.com/wp-content/uploads/2024/08/Nami-Burn-e-3-hero-Shot.jpg",
+    "https://www.speedwayridersnyc.com/wp-content/uploads/2026/09/nami-burn-e-3-electric-scooter-1.png"
+   ]
+  },
+  {
+   "id": "d7030f71-4701-4a3c-9de6-051a65ee0897",
+   "slug": "punk-rebel",
+   "name": "Punk Rebel",
+   "brand": "Punk",
+   "candidates": [
+    "https://punkelectric.eu/cdn/shop/files/fd11ecce25b7abcdac4b9053ce04f383d53e3cb1_1.png?v=1773300517",
+    "https://punkelectric.eu/cdn/shop/files/62788054f9b40cd055039e09a0d35bd00acd1933_1.png?v=1775712062",
+    "https://punkelectric.eu/cdn/shop/files/794945388de4c884ef404c56ac308b2b0e0de1e6_1.png?v=1775712062",
+    "https://punkelectric.eu/cdn/shop/files/ebd81423df9d6678e0d569124d4d18400621fc61_1.png?v=1775712062",
+    "https://punkelectric.eu/cdn/shop/files/bfb4a2cecf333b8388f491ea4e3615c6f27d2023_1.png?v=1775712062",
+    "https://punkelectric.eu/cdn/shop/files/ec0697b8e04134c7cb462b45803d02862269ecac_1.png?v=1775712062",
+    "https://punkelectric.eu/cdn/shop/files/f3d2dee805d3e3c2af769f86692cf0d864dd322f_1.png?v=1775712062",
+    "https://punkelectric.eu/cdn/shop/files/da4d60af10f63aa7ba1586303a2b9c14ffa082ae_1_1.png?v=1775712062",
+    "https://punkelectric.eu/cdn/shop/files/604e812848ca12a645a59ee88da11639d6b6642f_1.png?v=1775712062",
+    "https://punkelectric.eu/cdn/shop/files/9635f501663e46337b1d651bed0bc3bb3fd38655_1_1.png?v=1775712062"
+   ]
+  },
+  {
+   "id": "d7796d17-9beb-4612-a9ae-218c73c08bde",
+   "slug": "punk-rider",
+   "name": "Punk Rider",
+   "brand": "Punk",
+   "candidates": [
+    "https://punkelectric.eu/cdn/shop/files/pr-2.png?v=1775711751",
+    "https://punkelectric.eu/cdn/shop/files/pr-3.png?v=1775711751",
+    "https://punkelectric.eu/cdn/shop/files/pr-4.png?v=1775711751",
+    "https://punkelectric.eu/cdn/shop/files/pr-5.png?v=1775711751",
+    "https://punkelectric.eu/cdn/shop/files/pr-6.png?v=1775711751",
+    "https://punkelectric.eu/cdn/shop/files/pr-7.png?v=1775711751",
+    "https://punkelectric.eu/cdn/shop/files/pr-8.png?v=1775711751",
+    "https://punkelectric.eu/cdn/shop/files/pr-9.png?v=1775711751",
+    "https://punkelectric.eu/cdn/shop/files/pr-1.png?v=1775711751",
+    "https://punkelectric.eu/cdn/shop/files/pr-10.png?v=1773231981"
+   ]
+  },
+  {
+   "id": "d5eb0e25-9c73-4f0f-9d5c-b1233e156069",
+   "slug": "punk-rider-pro",
+   "name": "Punk Rider Pro",
+   "brand": "Punk",
+   "candidates": [
+    "https://cdn.shopify.com/s/files/1/0983/6625/9510/files/Punk_Rider_0002_0369190f-8502-4f5a-a51e-60afd8419897.jpg?v=1788973971",
+    "https://cdn.shopify.com/s/files/1/0983/6625/9510/files/Punk_Rider_0006_2ce1ea97-ba7d-4b0b-8342-ec9e26e71dc7.jpg?v=1788973972",
+    "https://cdn.shopify.com/s/files/1/0983/6625/9510/files/Punk_Rider_0007_4ae642e4-0aeb-4bb1-9ff9-75ee0e4b239b.jpg?v=1788973972",
+    "https://cdn.shopify.com/s/files/1/0983/6625/9510/files/Punk_Rider_0012_7efa588b-0739-4b31-b4d2-435582ed7a18.png?v=1788973973",
+    "https://cdn.shopify.com/s/files/1/0983/6625/9510/files/Punk_Rider_Pro-1_0c6dcd21-54fe-4d0d-a33b-a93eff30d386.jpg?v=1788973972",
+    "https://cdn.shopify.com/s/files/1/0983/6625/9510/files/Punk_Rider_Pro-3_7fb52ba7-81f7-49a6-9581-3627c5be973e.jpg?v=1780368230",
+    "https://cdn.shopify.com/s/files/1/0983/6625/9510/files/Punk_Rider_0001_8304dd3b-55f4-49d0-8cf2-0f8dd2e15909.jpg?v=1788973972"
+   ]
+  },
+  {
+   "id": "40d7a5dc-60de-4087-b723-6ec57075641e",
+   "slug": "soflow-so4-pro-max",
+   "name": "SoFlow SO4 Pro Max",
+   "brand": "SoFlow",
+   "candidates": [
+    "https://www.soflow.com/wp-content/uploads/2025/02/9767.png",
+    "https://www.soflow.com/wp-content/uploads/2025/02/9769.png",
+    "https://www.soflow.com/wp-content/uploads/2025/02/9770.png",
+    "https://www.soflow.com/wp-content/uploads/2025/02/9771-1.png",
+    "https://www.soflow.com/wp-content/uploads/2025/02/9793.png",
+    "https://www.soflow.com/wp-content/uploads/2025/02/9801.png",
+    "https://www.soflow.com/wp-content/uploads/2025/02/9803.png",
+    "https://www.soflow.com/wp-content/uploads/2025/02/9804.png",
+    "https://www.soflow.com/wp-content/uploads/2025/02/SO4-PRO-MAX.png"
+   ]
+  },
+  {
+   "id": "4aeb9d54-c0ca-4426-a064-bbbe7fafbd3a",
+   "slug": "velity-511-ss",
+   "name": "Velity 511-Ss",
+   "brand": "Velity",
+   "candidates": [
+    "https://fastride.fr/16134-large_default/trottinette-electrique-velity-511-ss.jpg",
+    "https://fastride.fr/16135-large_default/trottinette-electrique-velity-511-ss.jpg",
+    "https://fastride.fr/16136-large_default/trottinette-electrique-velity-511-ss.jpg",
+    "https://fastride.fr/16137-large_default/trottinette-electrique-velity-511-ss.jpg",
+    "https://fastride.fr/16138-large_default/trottinette-electrique-velity-511-ss.jpg",
+    "https://fastride.fr/16133-large_default/trottinette-electrique-velity-511-ss.jpg"
+   ]
+  },
+  {
+   "id": "6f4f87b2-c609-4785-a866-eb6154fc5123",
+   "slug": "velity-511-sx",
+   "name": "Velity 511-Sx",
+   "brand": "Velity",
+   "candidates": [
+    "https://fastride.fr/15785-large_default/trottinette-electrique-velity-511-sx.jpg",
+    "https://fastride.fr/15786-large_default/trottinette-electrique-velity-511-sx.jpg",
+    "https://fastride.fr/15788-large_default/trottinette-electrique-velity-511-sx.jpg",
+    "https://fastride.fr/15787-large_default/trottinette-electrique-velity-511-sx.jpg"
+   ]
+  },
+  {
+   "id": "67d2f0b1-b78c-498c-a74e-01c41d9dd354",
+   "slug": "wispeed-airo-v10",
+   "name": "Wispeed AIRO V10",
+   "brand": "Wispeed",
+   "candidates": [
+    "https://www.wispeed.net/7843-large_default/trottinette-airo-v10.jpg",
+    "https://www.wispeed.net/img/cms/PRESTASHOP%209/PRODUITS/TROTTINETTES/AIRO%20V10/hf_20260708_072116_64bccf83-7bb5-437f-8ee3-6dff2ecf2ba9.png",
+    "https://www.wispeed.net/img/cms/PRESTASHOP%209/PRODUITS/TROTTINETTES/AIRO%20V10/hf_20260708_072632_9e5f41f3-473f-4879-8d37-9a353a0b0b05.png",
+    "https://www.wispeed.net/img/cms/PRESTASHOP%209/PRODUITS/TROTTINETTES/AIRO%20V10/hf_20260708_073044_56c3b585-ec8c-4938-b11f-feeb1564ba13.png",
+    "https://www.wispeed.net/img/cms/PRESTASHOP%209/PRODUITS/TROTTINETTES/AIRO%20V10/hf_20260708_074115_22ac66bd-15b2-4dc3-aea4-90e6e2404dc6.png",
+    "https://www.wispeed.net/img/cms/PRESTASHOP%209/PRODUITS/TROTTINETTES/AIRO%20V16/LIFESTYLE/AIRO%20V1X%20Quai%20parisien.png",
+    "https://www.wispeed.net/7842-large_default/trottinette-airo-v10.jpg"
+   ]
+  },
+  {
+   "id": "e36ebdda-6127-4b27-a2c1-0abbd9d36759",
+   "slug": "wispeed-airo-v16",
+   "name": "Wispeed AIRO V16",
+   "brand": "Wispeed",
+   "candidates": [
+    "https://www.wispeed.net/7845-large_default/trottinette-airo-v16.jpg",
+    "https://www.wispeed.net/img/cms/PRESTASHOP%209/PRODUITS/TROTTINETTES/AIRO%20V16/hf_20260708_092010_9935f02e-6313-4e39-894d-af82d4cdfdb3.png",
+    "https://www.wispeed.net/img/cms/PRESTASHOP%209/PRODUITS/TROTTINETTES/AIRO%20V16/8b06b8b1-e16d-446a-8e4a-9084e244168a.png",
+    "https://www.wispeed.net/img/cms/PRESTASHOP%209/PRODUITS/TROTTINETTES/AIRO%20V16/Arri%C3%A8re-plan%20%20coffre%20de%20voiture%20ouvert.png",
+    "https://www.wispeed.net/img/cms/PRESTASHOP%209/PRODUITS/TROTTINETTES/AIRO%20V16/LIFESTYLE/AIRO%20V1X%20Bord%20de%20mer.png",
+    "https://www.wispeed.net/7844-large_default/trottinette-airo-v16.jpg"
+   ]
+  },
+  {
+   "id": "3408088c-1baa-484d-b855-f7920c7e57a1",
+   "slug": "wispeed-airo-v6",
+   "name": "Wispeed AIRO V6",
+   "brand": "Wispeed",
+   "candidates": [
+    "https://www.wispeed.net/7841-large_default/trottinette-airo-v6.jpg",
+    "https://www.wispeed.net/img/cms/PRESTASHOP%209/PRODUITS/TROTTINETTES/AIRO%20V6/hf_20260707_134744_3098ce00-58c8-4b67-b385-86025b74a345.png",
+    "https://www.wispeed.net/img/cms/PRESTASHOP%209/PRODUITS/TROTTINETTES/AIRO%20V6/hf_20260707_140402_c85a986d-2e0c-4fe6-a461-91f9fd69c5e4.png",
+    "https://www.wispeed.net/img/cms/PRESTASHOP%209/PRODUITS/TROTTINETTES/AIRO%20V6/hf_20260707_141204_e4020594-f056-464d-8f23-1302100a81b2.png",
+    "https://www.wispeed.net/img/cms/PRESTASHOP%209/PRODUITS/TROTTINETTES/AIRO%20V6/hf_20260707_141715_0ede22e4-89b6-495f-af16-74a653192edf.png",
+    "https://www.wispeed.net/img/cms/PRESTASHOP%209/PRODUITS/TROTTINETTES/AIRO%20V6/hf_20260707_145107_0b3c6b86-3d57-49fb-8dbe-4bd62b21a737.png",
+    "https://www.wispeed.net/img/cms/PRESTASHOP%209/PRODUITS/TROTTINETTES/AIRO%20V6/AIRO%20V6%20-%20batiment%20haussmanian.png",
+    "https://www.wispeed.net/7840-large_default/trottinette-airo-v6.jpg"
+   ]
+  },
+  {
+   "id": "a8a75aaf-d835-429f-8d12-23d204467b46",
+   "slug": "wispeed-suv1000",
+   "name": "Wispeed SUV1000",
+   "brand": "Wispeed",
+   "candidates": [
+    "https://static.fnac-static.com/multimedia/Images/FR/MDM/86/43/e4/14959494/1543-2/tsp20250417115638/Trottinette-electrique-Wispeed-Suv-1000-500-W-Noir-et-Blanc.jpg",
+    "https://static.fnac-static.com/multimedia/Images/FR/MDM/86/43/e4/14959494/1543-3/tsp20250417115638/Trottinette-electrique-Wispeed-Suv-1000-500-W-Noir-et-Blanc.jpg",
+    "https://static.fnac-static.com/multimedia/Images/FR/MDM/86/43/e4/14959494/1543-4/tsp20250417115638/Trottinette-electrique-Wispeed-Suv-1000-500-W-Noir-et-Blanc.jpg",
+    "https://static.fnac-static.com/multimedia/Images/FR/MDM/86/43/e4/14959494/1543-5/tsp20250417115638/Trottinette-electrique-Wispeed-Suv-1000-500-W-Noir-et-Blanc.jpg",
+    "https://static.fnac-static.com/multimedia/Images/FR/MDM/86/43/e4/14959494/1543-6/tsp20250417115638/Trottinette-electrique-Wispeed-Suv-1000-500-W-Noir-et-Blanc.jpg",
+    "https://static.fnac-static.com/multimedia/Images/FR/MDM/86/43/e4/14959494/1543-7/tsp20250417115638/Trottinette-electrique-Wispeed-Suv-1000-500-W-Noir-et-Blanc.jpg",
+    "https://static.fnac-static.com/multimedia/Images/FR/MDM/86/43/e4/14959494/1543-1/tsp20250417115638/Trottinette-electrique-Wispeed-Suv-1000-500-W-Noir-et-Blanc.jpg"
+   ]
+  },
+  {
+   "id": "f10f7de1-d10c-449e-b52e-31022b22892c",
+   "slug": "wispeed-t855-pro",
+   "name": "Wispeed T855 Pro",
+   "brand": "Wispeed",
+   "candidates": [
+    "https://www.logicom-europe.com/5348-thickbox_default/wispeed-trottinette-t855-t855pro.jpg",
+    "https://www.logicom-europe.com/5349-thickbox_default/wispeed-trottinette-t855-t855pro.jpg",
+    "https://www.logicom-europe.com/5350-thickbox_default/wispeed-trottinette-t855-t855pro.jpg",
+    "https://www.logicom-europe.com/5351-thickbox_default/wispeed-trottinette-t855-t855pro.jpg",
+    "https://www.logicom-europe.com/5355-thickbox_default/wispeed-trottinette-t855-t855pro.jpg",
+    "https://www.logicom-europe.com/5356-thickbox_default/wispeed-trottinette-t855-t855pro.jpg",
+    "https://www.logicom-europe.com/5357-thickbox_default/wispeed-trottinette-t855-t855pro.jpg",
+    "https://www.logicom-europe.com/5347-thickbox_default/wispeed-trottinette-t855-t855pro.jpg"
+   ]
+  },
+  {
+   "id": "7e0102a6-1c23-4bb9-b5fd-8f8959bb26c1",
+   "slug": "wispeed-x1050-max",
+   "name": "Wispeed X1050 Max",
+   "brand": "Wispeed",
+   "candidates": [
+    "https://medias-az-img.ubaldi.com/visuels/7296246/WISPEEDX1050MAXBLK-4487ef2c59-43.jpg",
+    "https://medias-az-img.ubaldi.com/visuels/7296246/WISPEEDX1050MAXBLK-f42ace9c64-43.jpg",
+    "https://medias-az-img.ubaldi.com/visuels/7296246/WISPEEDX1050MAXBLK-ba61783131-43.jpg",
+    "https://medias-az-img.ubaldi.com/visuels/7296246/WISPEEDX1050MAXBLK-83b6659b19-43.jpg",
+    "https://medias-az-img.ubaldi.com/visuels/7296246/WISPEEDX1050MAXBLK-6e65fccc3b-43.jpg"
+   ]
+  }
+ ]
+}
