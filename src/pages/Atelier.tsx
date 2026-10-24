@@ -30,7 +30,9 @@ const Atelier = () => {
 
   // 24/10 : 5 propositions de haut de page derrière ?atelier=1..5 (Nolan : « ça va pas du tout… il manque des images »).
   // Sans paramètre : rendu d'origine (seul le décalage sous la barre fixe est corrigé).
-  const variant = Math.max(0, Math.min(5, Number(params.get("atelier") ?? 0) || 0));
+  // Choix de Nolan le 24/10 : 2 « Grande photo » par défaut ; ?atelier=0 = ancien rendu.
+  const rawV = params.get("atelier");
+  const variant = rawV === null ? 2 : Math.max(0, Math.min(5, Number(rawV) || 0));
   // Photos maison (pas de vignette YouTube tierce en porte d'entrée : titres en langue étrangère).
   const vthumb = "/brand-heroes/dualtron.webp";
   const doors = [

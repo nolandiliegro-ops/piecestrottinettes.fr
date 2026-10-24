@@ -30,14 +30,18 @@ export const readBarreVariant = (): BarreVariant | null => {
 /** 24/10 (Nolan : « le menu téléphone, plus racing, plus dans la DA ») : menu ☰ du téléphone, ?tel=1..5 = propositions, sans paramètre = actuel. */
 const readTelVariant = (): number => {
   try {
-    const n = Number(new URLSearchParams(window.location.search).get("tel"));
-    return n >= 1 && n <= 5 ? n : 0;
+    // 24/10 : Nolan choisit la 3 « Tuiles photo » = menu ☰ par défaut ; ?tel=0 = ancien, ?tel=1..5 = propositions.
+    const raw = new URLSearchParams(window.location.search).get("tel");
+    if (raw === null) return 3;
+    const n = Number(raw);
+    return n >= 0 && n <= 5 ? n : 3;
   } catch {
-    return 0;
+    return 3;
   }
 };
 const UNB = "'Unbounded', sans-serif";
-const TEL_IMG: Record<string, string> = { "/catalogue": "/categories/pneus-a.webp", "/trottinettes": "/brand-heroes/xiaomi.webp", "/marques": "/brand-heroes/dualtron.webp", "/atelier": "/categories/plaquettes-a.webp" };
+// Photos choisies le 24/10 : la pièce iconique, une trottinette en situation, une grande marque, et la photo du haut de L'Atelier.
+const TEL_IMG: Record<string, string> = { "/catalogue": "/categories/plaquettes-a.webp", "/trottinettes": "/brand-heroes/navee.webp", "/marques": "/brand-heroes/dualtron.webp", "/atelier": "/brand-heroes/xiaomi.webp" };
 
 /** 24/10 : menu de gauche (barre « Logo au centre ») : défaut = 3 « Pièces déroulant » en italique ; ?menu=1..5 = propositions, ?menu=0 = ancien. */
 const readMenuVariant = (): number => {
