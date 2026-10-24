@@ -22,7 +22,7 @@ import { useGarageScooters } from "@/hooks/useGarageScooters";
 import { optimizedImage } from "@/lib/imageTransform";
 import { cn } from "@/lib/utils";
 
-export type PickerLook = 1 | 2 | 3 | 4 | 5;
+export type PickerLook = 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10;
 const UNB = "'Unbounded', sans-serif";
 const FONT = "'Plus Jakarta Sans', sans-serif";
 const CARBON = "#1A1A1A";
@@ -38,7 +38,7 @@ export const DEFAULT_PICKER: PickerLook | null = 3;
 export const readPickerLook = (sp: URLSearchParams): PickerLook | null => {
   if (sp.get("selecteur") === null) return DEFAULT_PICKER;
   const n = Number(sp.get("selecteur"));
-  return n >= 1 && n <= 5 ? (n as PickerLook) : null;
+  return n >= 1 && n <= 10 ? (n as PickerLook) : null;
 };
 
 /** « Xiaomi » + « Xiaomi 4 Pro » → « 4 Pro » ; « Dualtron » + « Thunder » → « Thunder ». */
@@ -340,3 +340,113 @@ export const PickerEmpty = ({ scooter, total, onAll }: { scooter: SelectedScoote
     </div>
   </div>
 );
+
+/* ─────────────── Tour 2 (24/10 soir) : 5 sélecteurs DISCRETS, plus de bloc en haut ───────────────
+ * Nolan : « pas le sélecteur en haut… plus discret, au niveau des filtres », et plus de grand aplat vert.
+ * 6 PLAQUE FILTRE · première plaque de la barre de filtres, blanche, mini-photo + nom + ✕
+ * 7 LIGNE         · une ligne de texte sous le titre : « Pour ta Inmotion RS · changer · tout voir »
+ * 8 PASTILLE      · carré photo de la trott en tête des filtres (pointillé « + Ta trott » si vide)
+ * 9 COMPTEUR      · « 32 sur 564 · pour ta Inmotion RS ✕ » collé au compteur du titre
+ * 10 BASCULE      · interrupteur deux positions sous les filtres : Toutes les pièces | Pour ma trott
+ */
+const LINE2 = "#D6CFC2";
+const MiniThumb = ({ url, size = 28 }: { url?: string | null; size?: number }) => (
+  <span className="shrink-0 flex items-center justify-center overflow-hidden bg-white" style={{ width: size, height: size, borderRadius: 4 }}>
+    {url ? <img src={optimizedImage(url, 112)} alt="" loading="lazy" className="w-full h-full object-contain" /> : null}
+  </span>
+);
+const ScootIcon = ({ className = "w-4 h-4" }: { className?: string }) => (
+  <svg viewBox="0 0 24 24" className={className} fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+    <circle cx="5" cy="18" r="2.5" /><circle cx="19" cy="18" r="2.5" /><path d="M7.5 18h9M15 6h2.5l-1.5 9.5M15 6l-1-2" />
+  </svg>
+);
+
+export const PickerDiscreet = (p: PickerProps & { openSheet: () => void }) => {
+  const { selectedScooter, clearSelection } = useSelectedScooter();
+  const s = selectedScooter;
+  const forget = () => { clearSelection(); p.onFilter(false); };
+
+  // 6 · PLAQUE FILTRE
+  if (p.look === 6) {
+    if (!s) return (
+      <button type="button" onClick={p.openSheet} className="shrink-0 inline-flex items-center gap-2 h-11 pl-3 pr-3.5 text-sm font-bold bg-white" style={{ fontFamily: FONT, color: CARBON, boxShadow: `inset 0 0 0 1.5px ${CARBON}`, clipPath: CHAMFER_S }}>
+        <ScootIcon /> Ma trottinette <ChevronDown className="w-4 h-4 opacity-60" />
+      </button>
+    );
+    return (
+      <span className="shrink-0 inline-flex items-center h-11 bg-white" style={{ fontFamily: FONT, boxShadow: `inset 0 0 0 1.5px ${CARBON}`, clipPath: CHAMFER_S }}>
+        <button type="button" onClick={p.openSheet} className="h-full inline-flex items-center gap-2 pl-1.5 pr-2 text-sm font-bold" style={{ color: CARBON }}>
+          <MiniThumb url={s.imageUrl} size={32} />
+          <span className="max-w-[150px] truncate">{shortName(s)}</span>
+          {p.filterOn && p.count != null && <span className="text-sm font-semibold text-gray-500">{p.count}</span>}
+        </button>
+        <button type="button" onClick={() => p.onFilter(!p.filterOn)} aria-label={p.filterOn ? "Voir toutes les pièces" : "Ne voir que mes pièces"} className="h-full w-10 flex items-center justify-center border-l" style={{ borderColor: LINE2, color: CARBON }}>
+          {p.filterOn ? <X className="w-4 h-4" /> : <Check className="w-4 h-4" />}
+        </button>
+      </span>
+    );
+  }
+
+  // 7 · LIGNE
+  if (p.look === 7) return (
+    <p className="mt-3 text-sm text-gray-600 flex flex-wrap items-center gap-x-2" style={{ fontFamily: FONT }}>
+      {s ? (
+        <>
+          <span className="inline-flex items-center gap-1.5"><ScootIcon className="w-4 h-4 text-carbon shrink-0" />{p.filterOn ? "Pièces pour ta" : "Ta trottinette :"} <b className="text-carbon">{fullName(s)}</b></span>
+          <span aria-hidden="true">·</span>
+          <button type="button" onClick={p.openSheet} className="min-h-[44px] font-bold underline text-carbon">changer</button>
+          <span aria-hidden="true">·</span>
+          {p.filterOn
+            ? <button type="button" onClick={() => p.onFilter(false)} className="min-h-[44px] font-bold underline text-carbon">voir les {p.total}</button>
+            : <button type="button" onClick={() => p.onFilter(true)} className="min-h-[44px] font-bold underline text-carbon">ne voir que mes pièces</button>}
+        </>
+      ) : (
+        <button type="button" onClick={p.openSheet} className="min-h-[44px] text-left inline-flex items-center gap-1.5"><ScootIcon className="w-4 h-4 text-carbon shrink-0" /><span><span className="font-bold underline text-carbon">Choisis ta trottinette</span> pour ne voir que ses pièces</span></button>
+      )}
+    </p>
+  );
+
+  // 8 · PASTILLE photo
+  if (p.look === 8) {
+    if (!s) return (
+      <button type="button" onClick={p.openSheet} aria-label="Choisir ma trottinette" className="shrink-0 inline-flex items-center gap-2 h-11 pl-1.5 pr-3 text-sm font-bold" style={{ fontFamily: FONT, color: CARBON, border: `1.5px dashed ${CARBON}`, borderRadius: 6 }}>
+        <span className="w-8 h-8 flex items-center justify-center" style={{ background: "#EDE7DB", borderRadius: 4 }}><Plus className="w-4 h-4" strokeWidth={3} /></span>Ta trott
+      </button>
+    );
+    return (
+      <button type="button" onClick={p.openSheet} aria-label={`Ta trottinette : ${fullName(s)}, changer`} className="shrink-0 relative inline-flex items-center h-11 pl-1 pr-3 gap-2 text-sm font-extrabold"
+        style={{ fontFamily: FONT, color: p.filterOn ? "#fff" : CARBON, background: p.filterOn ? CARBON : "#fff", borderRadius: 6, boxShadow: p.filterOn ? undefined : `inset 0 0 0 1px ${LINE}` }}>
+        <MiniThumb url={s.imageUrl} size={36} />
+        <span className="max-w-[120px] truncate">{shortName(s)}</span>
+      </button>
+    );
+  }
+
+  // 9 · COMPTEUR
+  if (p.look === 9) return s ? (
+    <span className="inline-flex items-center gap-1.5 text-sm font-semibold text-gray-600" style={{ fontFamily: FONT }}>
+      {p.filterOn ? <>pour ta <button type="button" onClick={p.openSheet} className="min-h-[44px] font-extrabold text-carbon underline decoration-dotted underline-offset-4">{fullName(s)}</button>
+        <button type="button" onClick={() => p.onFilter(false)} aria-label="Voir toutes les pièces" className="w-11 h-11 -ml-2 flex items-center justify-center text-carbon"><X className="w-4 h-4" /></button></>
+        : <button type="button" onClick={() => p.onFilter(true)} className="min-h-[44px] font-bold underline text-carbon">voir celles de ma {shortName(s)}</button>}
+    </span>
+  ) : (
+    <button type="button" onClick={p.openSheet} className="min-h-[44px] inline-flex items-center gap-1.5 text-sm font-bold text-carbon underline decoration-dotted underline-offset-4" style={{ fontFamily: FONT }}>
+      <ScootIcon /> pour ma trott ?
+    </button>
+  );
+
+  // 10 · BASCULE
+  const seg = (on: boolean) => cn("flex-1 min-w-0 h-11 px-3 inline-flex items-center justify-center gap-2 text-sm font-bold truncate transition-colors", on ? "bg-carbon text-white" : "text-carbon");
+  return (
+    <div className="flex items-stretch p-1 bg-white max-w-md" role="tablist" style={{ fontFamily: FONT, boxShadow: `inset 0 0 0 1px ${LINE}`, borderRadius: 8 }}>
+      <button type="button" role="tab" aria-selected={!p.filterOn} onClick={() => p.onFilter(false)} className={seg(!p.filterOn)} style={{ borderRadius: 6 }}>Toutes les pièces</button>
+      {s ? (
+        <button type="button" role="tab" aria-selected={p.filterOn} onClick={() => (p.filterOn ? p.openSheet() : p.onFilter(true))} className={seg(p.filterOn)} style={{ borderRadius: 6 }}>
+          <MiniThumb url={s.imageUrl} size={26} /><span className="truncate">Ma {shortName(s)}</span>{p.filterOn && <ChevronDown className="w-4 h-4 shrink-0 opacity-70" />}
+        </button>
+      ) : (
+        <button type="button" role="tab" aria-selected={false} onClick={p.openSheet} className={seg(false)} style={{ borderRadius: 6 }}><ScootIcon /> Pour ma trott</button>
+      )}
+    </div>
+  );
+};

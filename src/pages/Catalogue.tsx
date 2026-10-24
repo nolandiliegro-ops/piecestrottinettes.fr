@@ -21,7 +21,7 @@ import CatalogueTop, { EtabliSidebar, PRICE_OPTS, type CatalogueLook } from "@/c
 import { useCategoryImages } from "@/hooks/useCategoryImages";
 import { useSelectedCompatIds, compatFirst } from "@/hooks/useSelectedCompatIds";
 import { useSelectedScooter } from "@/contexts/ScooterContext";
-import { PickerSheet, PickerPlate, PickerBlock, PickerEmpty, readPickerLook, type PickerProps } from "@/components/catalogue/ScooterPicker";
+import { PickerSheet, PickerPlate, PickerBlock, PickerEmpty, PickerDiscreet, readPickerLook, type PickerProps } from "@/components/catalogue/ScooterPicker";
 
 // Skeleton grid for loading state
 const SkeletonGrid = () => (
@@ -395,8 +395,10 @@ const Catalogue = () => {
             myScooter={!pickerLook && selectedScooter ? { id: selectedScooter.id, name: selectedScooter.name } : null}
             scooterOn={!!selectedScooter && scooterIdFilter === selectedScooter.id}
             onScooter={(on) => setP((sp) => { if (on && selectedScooter) sp.set("scooter", selectedScooter.id); else sp.delete("scooter"); })}
-            pickerBlock={pickerProps && pickerProps.look >= 2 && pickerProps.look <= 4 ? <PickerBlock {...pickerProps} openSheet={openPicker} /> : undefined}
-            filtersLead={pickerProps && pickerProps.look === 1 ? <PickerPlate {...pickerProps} openSheet={openPicker} /> : undefined}
+            pickerBlock={pickerProps && pickerProps.look >= 2 && pickerProps.look <= 4 ? <PickerBlock {...pickerProps} openSheet={openPicker} /> : pickerProps?.look === 7 ? <PickerDiscreet {...pickerProps} openSheet={openPicker} /> : undefined}
+            filtersLead={pickerProps && pickerProps.look === 1 ? <PickerPlate {...pickerProps} openSheet={openPicker} /> : pickerProps && (pickerProps.look === 6 || pickerProps.look === 8) ? <PickerDiscreet {...pickerProps} openSheet={openPicker} /> : undefined}
+            countAside={pickerProps?.look === 9 ? <PickerDiscreet {...pickerProps} openSheet={openPicker} /> : undefined}
+            afterFilters={pickerProps?.look === 10 ? <PickerDiscreet {...pickerProps} openSheet={openPicker} /> : undefined}
           />
         )}
         {pickerProps && <PickerSheet open={pickerOpen} onClose={() => setPickerOpen(false)} onPick={pickerProps.onPick} />}
