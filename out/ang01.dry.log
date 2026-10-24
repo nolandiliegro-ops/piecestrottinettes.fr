@@ -1,0 +1,234 @@
+apollo-explore #0 PASS ok
+apollo-explore #1 WARN basse définition · cadrage serré
+apollo-explore #2 WARN cadrage serré
+apollo-explore #3 WARN cadrage serré
+apollo-explore #4 PASS ok
+apollo-explore-2-0 #0 PASS ok
+apollo-explore-2-0 #1 PASS ok
+apollo-explore-2-0 #2 PASS ok
+apollo-explore-2-0 #3 PASS ok
+apollo-explore-2-0 #4 WARN cadrage serré
+apollo-explore-2-0 #5 PASS ok
+apollo-explore-2-0 #6 FAIL détourage sale / résidu de décor
+apollo-go #0 WARN cadrage serré
+apollo-go #1 PASS ok
+apollo-go #2 WARN cadrage serré
+apollo-go #3 PASS ok
+apollo-go #4 PASS ok
+apollo-go #5 PASS ok
+apollo-go #6 PASS ok
+apollo-phantom-2-0 #0 FAIL détourage sale / résidu de décor
+apollo-phantom-2-0 #1 FAIL détourage sale / résidu de décor
+apollo-phantom-2-0 #2 PASS ok
+apollo-phantom-2-0 #3 FAIL détourage sale / résidu de décor
+apollo-phantom-2-0 #4 PASS ok
+apollo-phantom-2-0 #5 FAIL détourage sale / résidu de décor
+apollo-phantom-2-0 #6 PASS ok
+apollo-phantom-2-0 #7 WARN cadrage serré
+hikerboy-curtis-dual #0 PASS ok
+hikerboy-curtis-dual #1 PASS ok
+hikerboy-curtis-dual #2 PASS ok
+hikerboy-curtis-dual #3 PASS ok
+hikerboy-curtis-dual #4 PASS ok
+hikerboy-curtis-dual #5 PASS ok
+hikerboy-curtis-dual #6 PASS ok
+hikerboy-curtis-dual #7 PASS ok
+hikerboy-curtis-dual-pro #0 PASS ok
+hikerboy-curtis-dual-pro #1 PASS ok
+hikerboy-curtis-dual-pro #2 PASS ok
+hikerboy-curtis-dual-pro #3 PASS ok
+hikerboy-curtis-plus #0 PASS ok
+hikerboy-curtis-plus #1 PASS ok
+hikerboy-curtis-plus #2 PASS ok
+hikerboy-curtis-plus #3 PASS ok
+hikerboy-curtis-plus #4 PASS ok
+hikerboy-curtis-plus #5 PASS ok
+hikerboy-curtis-plus #6 PASS ok
+hikerboy-foxtrot-plus #0 FAIL cadrage serré · élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux
+hikerboy-foxtrot-plus #1 WARN basse définition · cadrage serré
+hikerboy-foxtrot-plus #2 PASS ok
+hikerboy-foxtrot-plus #3 PASS ok
+hikerboy-foxtrot-plus #4 FAIL détourage sale / résidu de décor · élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux
+hikerboy-foxtrot-plus #5 PASS ok
+hikerboy-foxtrot-plus #6 PASS ok
+hikerboy-foxtrot-plus #7 PASS ok
+isinwheel-gt2 #0 WARN cadrage serré
+isinwheel-gt2 #1 FAIL détourage sale / résidu de décor · cadrage serré · élément en plus (logo, badge, téléphone, 2e trottinette) : 6 morceaux
+isinwheel-gt2 #2 FAIL détourage sale / résidu de décor · élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux
+isinwheel-gt2 #3 PASS ok
+isinwheel-gt2 #4 FAIL élément en plus (logo, badge, téléphone, 2e trottinette) : 4 morceaux
+isinwheel-gt2 #5 FAIL détourage sale / résidu de décor · cadrage serré · élément en plus (logo, badge, téléphone, 2e trottinette) : 4 morceaux
+isinwheel-gt2 #6 WARN basse définition
+isinwheel-gt2 #7 WARN cadrage serré · couleurs vives 33 % (visuel marketing ?)
+isinwheel-gt2-pro #0 PASS ok
+isinwheel-gt2-pro #1 FAIL élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux · couleurs vives 32 % (visuel marketing ?)
+isinwheel-gt2-pro #2 FAIL cadrage serré · élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux
+isinwheel-gt2-pro #3 FAIL cadrage serré · élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux
+isinwheel-gt2-pro #4 WARN cadrage serré
+isinwheel-gt2-pro #5 PASS ok
+isinwheel-gt2-pro #6 PASS ok
+isinwheel-gt2-pro #7 PASS ok
+isinwheel-gt2-pro #8 PASS ok
+isinwheel-s-nova-pro #0 FAIL détourage sale / résidu de décor · élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux · couleurs vives 37 % (visuel marketing ?)
+isinwheel-s-nova-pro #1 FAIL élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux
+isinwheel-s-nova-pro #2 FAIL détourage sale / résidu de décor · élément en plus (logo, badge, téléphone, 2e trottinette) : 5 morceaux
+isinwheel-s-nova-pro #3 FAIL détourage sale / résidu de décor · élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux · couleurs vives 50 % (visuel marketing ?)
+isinwheel-s-nova-pro #4 FAIL détourage sale / résidu de décor · cadrage serré
+isinwheel-s-nova-pro #5 FAIL élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux
+isinwheel-s-nova-pro #6 FAIL élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux
+isinwheel-s9-pro #0 FAIL détourage sale / résidu de décor · basse définition · cadrage serré
+isinwheel-s9-pro #1 PASS ok
+isinwheel-s9-pro #2 WARN basse définition · cadrage serré
+isinwheel-s9-pro #3 FAIL détourage sale / résidu de décor
+isinwheel-s9-pro #4 WARN cadrage serré
+isinwheel-s9-pro #5 PASS ok
+isinwheel-s9-pro #6 PASS ok
+isinwheel-s9-pro #7 PASS ok
+isinwheel-x3-pro #0 FAIL détourage sale / résidu de décor
+isinwheel-x3-pro #1 WARN cadrage serré
+isinwheel-x3-pro #2 FAIL élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux
+isinwheel-x3-pro #3 FAIL détourage sale / résidu de décor · élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux
+isinwheel-x3-pro #4 FAIL détourage sale / résidu de décor · cadrage serré · élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux
+isinwheel-x3-pro #5 FAIL détourage sale / résidu de décor · élément en plus (logo, badge, téléphone, 2e trottinette) : 4 morceaux
+isinwheel-x3-pro #6 PASS ok
+isinwheel-x3-pro #7 FAIL élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux
+kukirin-g2-max-2026 #0 PASS ok
+kukirin-g2-max-2026 #1 WARN basse définition
+kukirin-g2-max-2026 #2 PASS ok
+kukirin-g2-max-2026 #3 PASS ok
+kukirin-g2-max-2026 #4 WARN cadrage serré
+kukirin-g2-max-2026 #5 FAIL détourage sale / résidu de décor · cadrage serré
+kukirin-g2-max-2026 #6 FAIL détourage sale / résidu de décor · cadrage serré
+kukirin-g2-max-2026 #7 PASS ok
+kukirin-g2-max-2026 #8 PASS ok
+kukirin-g3-adventurers #0 PASS ok
+kukirin-g3-adventurers #1 PASS ok
+kukirin-g3-adventurers #2 PASS ok
+kukirin-g3-adventurers #3 WARN cadrage serré
+kukirin-g3-adventurers #4 WARN cadrage serré
+kukirin-g3-adventurers #5 PASS ok
+kukirin-g3-adventurers #6 FAIL détourage sale / résidu de décor · cadrage serré
+kukirin-g3-adventurers #7 PASS ok
+kukirin-g3-adventurers #8 PASS ok
+kukirin-g3-adventurers #9 PASS ok
+kukirin-g3-pro #0 FAIL détourage sale / résidu de décor · cadrage serré
+kukirin-g3-pro #1 WARN cadrage serré
+kukirin-g3-pro #2 PASS ok
+kukirin-g3-pro #3 PASS ok
+kukirin-g3-pro #4 PASS ok
+kukirin-g3-pro #5 FAIL détourage sale / résidu de décor · élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux
+kukirin-g3-pro #6 FAIL basse définition · élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux · couleurs vives 94 % (visuel marketing ?)
+kukirin-g3-pro #7 PASS ok
+kukirin-g3-pro #8 PASS ok
+kukirin-g4-max #0 WARN basse définition · cadrage serré
+kukirin-g4-max #1 WARN basse définition · cadrage serré
+kukirin-g4-max #2 WARN basse définition · cadrage serré
+kukirin-g4-max #3 WARN basse définition · cadrage serré
+kukirin-g4-max #4 FAIL détourage sale / résidu de décor · basse définition · élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux
+kukirin-g4-max #5 WARN basse définition
+kukirin-g4-max #6 WARN basse définition · cadrage serré
+kukirin-g4-max #7 PASS ok
+nami-burn-e #0 WARN basse définition
+nami-burn-e #1 PASS ok
+nami-burn-e #2 PASS ok
+nami-burn-e #3 WARN cadrage serré
+nami-burn-e #4 WARN basse définition · cadrage serré
+nami-burn-e #5 WARN cadrage serré
+nami-burn-e #6 WARN cadrage serré
+nami-burn-e #7 WARN basse définition · cadrage serré
+nami-burn-e #8 FAIL détourage sale / résidu de décor · basse définition · cadrage serré
+nami-burn-e #9 PASS ok
+nami-burn-e-3 #0 PASS ok
+nami-burn-e-3 #1 WARN cadrage serré
+nami-burn-e-3 #2 WARN cadrage serré
+nami-burn-e-3 #3 PASS ok
+nami-burn-e-3 #4 PASS ok
+nami-burn-e-3 #5 FAIL détourage sale / résidu de décor
+punk-rebel #0 PASS ok
+punk-rebel #1 WARN cadrage serré
+punk-rebel #2 PASS ok
+punk-rebel #3 WARN cadrage serré
+punk-rebel #4 WARN cadrage serré
+punk-rebel #5 PASS ok
+punk-rebel #6 PASS ok
+punk-rebel #7 FAIL détourage sale / résidu de décor · cadrage serré
+punk-rebel #8 WARN cadrage serré
+punk-rebel #9 PASS ok
+punk-rider #0 WARN cadrage serré
+punk-rider #1 FAIL détourage sale / résidu de décor · basse définition
+punk-rider #2 FAIL détourage sale / résidu de décor · basse définition
+punk-rider #3 PASS ok
+punk-rider #4 FAIL détourage sale / résidu de décor
+punk-rider #5 PASS ok
+punk-rider #6 PASS ok
+punk-rider #7 PASS ok
+punk-rider #8 FAIL détourage sale / résidu de décor · cadrage serré
+punk-rider #9 PASS ok
+punk-rider-pro #0 PASS ok
+punk-rider-pro #1 PASS ok
+punk-rider-pro #2 WARN cadrage serré
+punk-rider-pro #3 WARN cadrage serré
+punk-rider-pro #4 WARN produit minuscule dans le cadre
+punk-rider-pro #5 PASS ok
+punk-rider-pro #6 PASS ok
+soflow-so4-pro-max #0 PASS ok
+soflow-so4-pro-max #1 FAIL détourage sale / résidu de décor
+soflow-so4-pro-max #2 PASS ok
+soflow-so4-pro-max #3 PASS ok
+soflow-so4-pro-max #4 FAIL détourage sale / résidu de décor · élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux
+soflow-so4-pro-max #5 WARN cadrage serré
+soflow-so4-pro-max #6 WARN cadrage serré
+soflow-so4-pro-max #7 PASS ok
+soflow-so4-pro-max #8 PASS ok
+velity-511-ss #0 ERROR Input buffer contains unsupported image format
+velity-511-ss #1 ERROR Input buffer contains unsupported image format
+velity-511-ss #2 ERROR Input buffer contains unsupported image format
+velity-511-ss #3 ERROR Input buffer contains unsupported image format
+velity-511-ss #4 ERROR Input buffer contains unsupported image format
+velity-511-ss #5 ERROR Input buffer contains unsupported image format
+velity-511-sx #0 ERROR Input buffer contains unsupported image format
+velity-511-sx #1 ERROR Input buffer contains unsupported image format
+velity-511-sx #2 ERROR Input buffer contains unsupported image format
+velity-511-sx #3 ERROR Input buffer contains unsupported image format
+wispeed-airo-v10 #0 PASS ok
+wispeed-airo-v10 #1 PASS ok
+wispeed-airo-v10 #2 WARN cadrage serré
+wispeed-airo-v10 #3 FAIL détourage sale / résidu de décor
+wispeed-airo-v10 #4 FAIL détourage sale / résidu de décor · cadrage serré · petit élément détaché (2 morceaux)
+wispeed-airo-v10 #5 WARN basse définition · cadrage serré
+wispeed-airo-v10 #6 WARN basse définition
+wispeed-airo-v16 #0 PASS ok
+wispeed-airo-v16 #1 PASS ok
+wispeed-airo-v16 #2 PASS ok
+wispeed-airo-v16 #3 FAIL cadrage serré · élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux
+wispeed-airo-v16 #4 FAIL détourage sale / résidu de décor · élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux
+wispeed-airo-v16 #5 WARN basse définition
+wispeed-airo-v6 #0 PASS ok
+wispeed-airo-v6 #1 PASS ok
+wispeed-airo-v6 #2 FAIL détourage sale / résidu de décor · cadrage serré · élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux
+wispeed-airo-v6 #3 PASS ok
+wispeed-airo-v6 #4 FAIL détourage sale / résidu de décor · élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux
+wispeed-airo-v6 #5 FAIL détourage sale / résidu de décor · élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux
+wispeed-airo-v6 #6 WARN cadrage serré
+wispeed-airo-v6 #7 WARN basse définition
+wispeed-suv1000 #0 ERROR téléchargement vide
+wispeed-suv1000 #1 ERROR téléchargement vide
+wispeed-suv1000 #2 ERROR téléchargement vide
+wispeed-suv1000 #3 ERROR téléchargement vide
+wispeed-suv1000 #4 ERROR téléchargement vide
+wispeed-suv1000 #5 ERROR téléchargement vide
+wispeed-suv1000 #6 ERROR téléchargement vide
+wispeed-t855-pro #0 PASS ok
+wispeed-t855-pro #1 PASS ok
+wispeed-t855-pro #2 PASS ok
+wispeed-t855-pro #3 PASS ok
+wispeed-t855-pro #4 PASS ok
+wispeed-t855-pro #5 WARN basse définition · cadrage serré
+wispeed-t855-pro #6 WARN cadrage serré
+wispeed-t855-pro #7 PASS ok
+wispeed-x1050-max #0 WARN basse définition
+wispeed-x1050-max #1 WARN basse définition
+wispeed-x1050-max #2 WARN basse définition
+wispeed-x1050-max #3 WARN basse définition
+wispeed-x1050-max #4 WARN basse définition
+::notice title=photos ang01 (dry)::233 candidates · PASS 107 · WARN 57 · FAIL 52 · ERREUR 17

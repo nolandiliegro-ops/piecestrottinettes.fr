@@ -1,0 +1,4837 @@
+[
+ {
+  "slug": "apollo-explore",
+  "i": 0,
+  "url": "https://files.refurbed.com/pi/apollo-explore-1704793948.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.038,
+   "fill": 0.331
+  },
+  "size": [
+   1130,
+   1130
+  ],
+  "error": null
+ },
+ {
+  "slug": "apollo-explore",
+  "i": 1,
+  "url": "https://files.refurbed.com/pi/apollo-explore-1704793953.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition",
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.006,
+   "fill": 0.776
+  },
+  "size": [
+   891,
+   456
+  ],
+  "error": null
+ },
+ {
+  "slug": "apollo-explore",
+  "i": 2,
+  "url": "https://files.refurbed.com/pi/apollo-explore-1704793957.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.045,
+   "fill": 0.829
+  },
+  "size": [
+   795,
+   601
+  ],
+  "error": null
+ },
+ {
+  "slug": "apollo-explore",
+  "i": 3,
+  "url": "https://files.refurbed.com/pi/apollo-explore-1704793961.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.016,
+   "fill": 0.838
+  },
+  "size": [
+   817,
+   1029
+  ],
+  "error": null
+ },
+ {
+  "slug": "apollo-explore",
+  "i": 4,
+  "url": "https://files.refurbed.com/pi/apollo-explore-1704793942.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.009,
+   "fill": 0.462
+  },
+  "size": [
+   1130,
+   1130
+  ],
+  "error": null
+ },
+ {
+  "slug": "apollo-explore-2-0",
+  "i": 0,
+  "url": "https://apolloscooters.co/cdn/shop/files/Apollo_Explore_PC10__Website_Standard_2.png?v=1761843123&width=2160",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.005,
+   "fill": 0.771
+  },
+  "size": [
+   1768,
+   1234
+  ],
+  "error": null
+ },
+ {
+  "slug": "apollo-explore-2-0",
+  "i": 1,
+  "url": "https://apolloscooters.co/cdn/shop/files/Apollo_Explore_PC10__Website_Standard_4.png?v=1761843123&width=2160",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.024,
+   "fill": 0.796
+  },
+  "size": [
+   1407,
+   1764
+  ],
+  "error": null
+ },
+ {
+  "slug": "apollo-explore-2-0",
+  "i": 2,
+  "url": "https://apolloscooters.co/cdn/shop/files/Apollo_Explore_PC10__Website_Standard_1.png?v=1761843123&width=2160",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.01,
+   "fill": 0.817
+  },
+  "size": [
+   1717,
+   1764
+  ],
+  "error": null
+ },
+ {
+  "slug": "apollo-explore-2-0",
+  "i": 3,
+  "url": "https://apolloscooters.co/cdn/shop/files/Apollo_Explore_PC10__Website_Standard_3.png?v=1755612989&width=2160",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.02,
+   "fill": 0.786
+  },
+  "size": [
+   1225,
+   1764
+  ],
+  "error": null
+ },
+ {
+  "slug": "apollo-explore-2-0",
+  "i": 4,
+  "url": "https://apolloscooters.co/cdn/shop/files/Explore_front_view_cropped.jpg?v=1761843123&width=4411",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.022,
+   "fill": 0.44
+  },
+  "size": [
+   1059,
+   1894
+  ],
+  "error": null
+ },
+ {
+  "slug": "apollo-explore-2-0",
+  "i": 5,
+  "url": "https://apolloscooters.co/cdn/shop/files/Explore_Deck.png?v=1755042522&width=1500",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.203,
+   "fill": 0.509
+  },
+  "size": [
+   1120,
+   1620
+  ],
+  "error": null
+ },
+ {
+  "slug": "apollo-explore-2-0",
+  "i": 6,
+  "url": "https://apolloscooters.co/cdn/shop/files/Explore_Braking.png?v=1755101501&width=3840",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.002,
+   "fill": 0.622
+  },
+  "size": [
+   1874,
+   1254
+  ],
+  "error": null
+ },
+ {
+  "slug": "apollo-go",
+  "i": 0,
+  "url": "https://apolloscooters.co/cdn/shop/files/R62L0643.png?v=1776450086&width=2309",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0,
+   "fill": 0.703
+  },
+  "size": [
+   691,
+   1746
+  ],
+  "error": null
+ },
+ {
+  "slug": "apollo-go",
+  "i": 1,
+  "url": "https://apolloscooters.co/cdn/shop/files/R62L9586.png?v=1776450086&width=2309",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.001,
+   "fill": 0.787
+  },
+  "size": [
+   1483,
+   1784
+  ],
+  "error": null
+ },
+ {
+  "slug": "apollo-go",
+  "i": 2,
+  "url": "https://apolloscooters.co/cdn/shop/files/R62L0486.png?v=1776450086&width=2309",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.006,
+   "fill": 0.657
+  },
+  "size": [
+   1784,
+   1784
+  ],
+  "error": null
+ },
+ {
+  "slug": "apollo-go",
+  "i": 3,
+  "url": "https://apolloscooters.co/cdn/shop/files/Renders_M06022024_2_1.png?v=1776450086&width=2160",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.001,
+   "fill": 0.77
+  },
+  "size": [
+   1143,
+   1762
+  ],
+  "error": null
+ },
+ {
+  "slug": "apollo-go",
+  "i": 4,
+  "url": "https://apolloscooters.co/cdn/shop/files/Apollo_GO_Assets_Update_20250421-12_1_866f3e1c-7441-439b-a129-fab74550b0d1.png?v=1761611781&width=3305",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.001,
+   "fill": 0.695
+  },
+  "size": [
+   1864,
+   1407
+  ],
+  "error": null
+ },
+ {
+  "slug": "apollo-go",
+  "i": 5,
+  "url": "https://apolloscooters.co/cdn/shop/files/b515436c3f3d580ce595a88bccaf455b41f146d6_1.png?v=1747145414&width=4096",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.034,
+   "fill": 0.61
+  },
+  "size": [
+   1920,
+   1166
+  ],
+  "error": null
+ },
+ {
+  "slug": "apollo-go",
+  "i": 6,
+  "url": "https://apolloscooters.co/cdn/shop/files/0U3A2748-Edit-min_cce4249b-04c9-4bbf-8756-5b29801c648c.jpg?v=1776450086&width=4750",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.014,
+   "fill": 0.584
+  },
+  "size": [
+   1247,
+   1934
+  ],
+  "error": null
+ },
+ {
+  "slug": "apollo-phantom-2-0",
+  "i": 0,
+  "url": "https://apolloscooters.co/cdn/shop/files/A11_Black_springs_update_20250604_3_3f139638-6dd3-43c3-a7d6-3a59d290ed22.png?v=1773931411&width=2160",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0,
+   "fill": 0.468
+  },
+  "size": [
+   1772,
+   1744
+  ],
+  "error": null
+ },
+ {
+  "slug": "apollo-phantom-2-0",
+  "i": 1,
+  "url": "https://apolloscooters.co/cdn/shop/files/A11_Black_springs_update_20250604_12.png?v=1773931411&width=2160",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0,
+   "fill": 0.602
+  },
+  "size": [
+   1683,
+   1768
+  ],
+  "error": null
+ },
+ {
+  "slug": "apollo-phantom-2-0",
+  "i": 2,
+  "url": "https://apolloscooters.co/cdn/shop/files/A11_Mkt_01102024_5.png?v=1773931411&width=2000",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.001,
+   "fill": 0.822
+  },
+  "size": [
+   1635,
+   1752
+  ],
+  "error": null
+ },
+ {
+  "slug": "apollo-phantom-2-0",
+  "i": 3,
+  "url": "https://apolloscooters.co/cdn/shop/files/A11_Mkt_01102024_9.png?v=1773931411&width=2000",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.002,
+   "fill": 0.501
+  },
+  "size": [
+   1758,
+   1760
+  ],
+  "error": null
+ },
+ {
+  "slug": "apollo-phantom-2-0",
+  "i": 4,
+  "url": "https://apolloscooters.co/cdn/shop/files/A11_Mkt_01102024_12.png?v=1773931411&width=2000",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0,
+   "fill": 0.818
+  },
+  "size": [
+   1754,
+   1568
+  ],
+  "error": null
+ },
+ {
+  "slug": "apollo-phantom-2-0",
+  "i": 5,
+  "url": "https://apolloscooters.co/cdn/shop/files/A11_Black_springs_update_20250604_2.png?v=1773931411&width=2160",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.001,
+   "fill": 0.419
+  },
+  "size": [
+   1772,
+   1739
+  ],
+  "error": null
+ },
+ {
+  "slug": "apollo-phantom-2-0",
+  "i": 6,
+  "url": "https://apolloscooters.co/cdn/shop/files/R62L0204.jpg?v=1787173326&width=2309",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.007,
+   "fill": 0.521
+  },
+  "size": [
+   1742,
+   1493
+  ],
+  "error": null
+ },
+ {
+  "slug": "apollo-phantom-2-0",
+  "i": 7,
+  "url": "https://apolloscooters.co/cdn/shop/files/R62L9753.jpg?v=1787173354&width=2310",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.002,
+   "fill": 0.66
+  },
+  "size": [
+   874,
+   1608
+  ],
+  "error": null
+ },
+ {
+  "slug": "hikerboy-curtis-dual",
+  "i": 0,
+  "url": "https://hikerboyscooter.com/cdn/shop/files/3._Curtis_Dual_HikerboyScooter_4_fe3179ca-a90f-4161-8014-edbd1aadc6c3.webp?v=1749213009",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.038,
+   "fill": 0.408
+  },
+  "size": [
+   1868,
+   1561
+  ],
+  "error": null
+ },
+ {
+  "slug": "hikerboy-curtis-dual",
+  "i": 1,
+  "url": "https://hikerboyscooter.com/cdn/shop/files/4._Curtis_Dual_HikerboyScooter_3_d2303541-c92d-4cd8-a2e3-a5872d623ba1.webp?v=1749213009",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.037,
+   "fill": 0.388
+  },
+  "size": [
+   1864,
+   1616
+  ],
+  "error": null
+ },
+ {
+  "slug": "hikerboy-curtis-dual",
+  "i": 2,
+  "url": "https://hikerboyscooter.com/cdn/shop/files/5._Curtis_Dual_HikerboyScooter_5_8ff808b0-7ba5-4c91-8612-e4b79bd535a6.webp?v=1749213009",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.03,
+   "fill": 0.488
+  },
+  "size": [
+   1866,
+   1690
+  ],
+  "error": null
+ },
+ {
+  "slug": "hikerboy-curtis-dual",
+  "i": 3,
+  "url": "https://hikerboyscooter.com/cdn/shop/files/6._Curtis_Dual_HikerboyScooter_6_b5e0ff4a-1720-4032-8b66-da712d729095.webp?v=1749213009",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.011,
+   "fill": 0.364
+  },
+  "size": [
+   1854,
+   1551
+  ],
+  "error": null
+ },
+ {
+  "slug": "hikerboy-curtis-dual",
+  "i": 4,
+  "url": "https://hikerboyscooter.com/cdn/shop/files/2._Curtis_Dual_HikerboyScooter_1_1cd66646-470b-404d-8b29-621d90979a8c.webp?v=1749213009",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.061,
+   "fill": 0.484
+  },
+  "size": [
+   1862,
+   1751
+  ],
+  "error": null
+ },
+ {
+  "slug": "hikerboy-curtis-dual",
+  "i": 5,
+  "url": "https://hikerboyscooter.com/cdn/shop/files/3._Curtis_Dual_Grey_HikerboyScooter_1_5f0b14e9-f0a8-4404-bd59-68e2277238d3.webp?v=1749213009",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.028,
+   "fill": 0.47
+  },
+  "size": [
+   1844,
+   1643
+  ],
+  "error": null
+ },
+ {
+  "slug": "hikerboy-curtis-dual",
+  "i": 6,
+  "url": "https://hikerboyscooter.com/cdn/shop/files/4._Curtis_Dual_Grey_HikerboyScooter_6_6f8956ec-8041-4ac2-83c6-7bae15d5b3fe.webp?v=1749213007",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.018,
+   "fill": 0.391
+  },
+  "size": [
+   1856,
+   1488
+  ],
+  "error": null
+ },
+ {
+  "slug": "hikerboy-curtis-dual",
+  "i": 7,
+  "url": "https://hikerboyscooter.com/cdn/shop/files/1._Curtis_Dual_HikerboyScooter_2_1_e154bb13-e033-4228-a127-6c3b2576417e.webp?v=1749213009",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.016,
+   "fill": 0.323
+  },
+  "size": [
+   1876,
+   1529
+  ],
+  "error": null
+ },
+ {
+  "slug": "hikerboy-curtis-dual-pro",
+  "i": 0,
+  "url": "https://hikerboyscooter.com/cdn/shop/files/CurtisDualPro_Gold_HikerboyScooter_434d9017-b79b-41ad-89ca-5f3e6139f3a4.webp?v=1785319556",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.104,
+   "fill": 0.39
+  },
+  "size": [
+   1832,
+   1677
+  ],
+  "error": null
+ },
+ {
+  "slug": "hikerboy-curtis-dual-pro",
+  "i": 1,
+  "url": "https://hikerboyscooter.com/cdn/shop/files/C_20250205.965.png?v=1785319245",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.006,
+   "fill": 0.359
+  },
+  "size": [
+   1904,
+   1748
+  ],
+  "error": null
+ },
+ {
+  "slug": "hikerboy-curtis-dual-pro",
+  "i": 2,
+  "url": "https://hikerboyscooter.com/cdn/shop/files/CurtisDualPro_Grey_HikerboyScooter.webp?v=1785319436",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.007,
+   "fill": 0.39
+  },
+  "size": [
+   1832,
+   1674
+  ],
+  "error": null
+ },
+ {
+  "slug": "hikerboy-curtis-dual-pro",
+  "i": 3,
+  "url": "https://hikerboyscooter.com/cdn/shop/files/CurtisDualPro_Gold_HikerboyScooter.webp?v=1785319533",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.104,
+   "fill": 0.39
+  },
+  "size": [
+   1832,
+   1677
+  ],
+  "error": null
+ },
+ {
+  "slug": "hikerboy-curtis-plus",
+  "i": 0,
+  "url": "https://hikerboyscooter.com/cdn/shop/files/3.CurtisPlus_Grey_HikerboyScooter_3.webp?v=1749213937",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.034,
+   "fill": 0.424
+  },
+  "size": [
+   1846,
+   1558
+  ],
+  "error": null
+ },
+ {
+  "slug": "hikerboy-curtis-plus",
+  "i": 1,
+  "url": "https://hikerboyscooter.com/cdn/shop/files/4.CurtisPlus_Grey_HikerboyScooter_4.webp?v=1749213937",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.02,
+   "fill": 0.368
+  },
+  "size": [
+   1860,
+   1533
+  ],
+  "error": null
+ },
+ {
+  "slug": "hikerboy-curtis-plus",
+  "i": 2,
+  "url": "https://hikerboyscooter.com/cdn/shop/files/5.CurtisPlus_Grey_HikerboyScooter_5.webp?v=1749213937",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.036,
+   "fill": 0.463
+  },
+  "size": [
+   1856,
+   1648
+  ],
+  "error": null
+ },
+ {
+  "slug": "hikerboy-curtis-plus",
+  "i": 3,
+  "url": "https://hikerboyscooter.com/cdn/shop/files/6.CurtisPlus_Grey_HikerboyScooter_6.webp?v=1749214624",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.02,
+   "fill": 0.371
+  },
+  "size": [
+   1860,
+   1589
+  ],
+  "error": null
+ },
+ {
+  "slug": "hikerboy-curtis-plus",
+  "i": 4,
+  "url": "https://hikerboyscooter.com/cdn/shop/files/2.CurtisPlus_Grey_HikerboyScooter_1.webp?v=1749213937",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.041,
+   "fill": 0.456
+  },
+  "size": [
+   1860,
+   1629
+  ],
+  "error": null
+ },
+ {
+  "slug": "hikerboy-curtis-plus",
+  "i": 5,
+  "url": "https://hikerboyscooter.com/cdn/shop/files/fold_2888dc6f-badb-430e-a795-4d5887bb4ef8.webp?v=1749217795",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.016,
+   "fill": 0.349
+  },
+  "size": [
+   1784,
+   1393
+  ],
+  "error": null
+ },
+ {
+  "slug": "hikerboy-curtis-plus",
+  "i": 6,
+  "url": "https://hikerboyscooter.com/cdn/shop/files/C_20231218.1257.webp?v=1749214624",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.019,
+   "fill": 0.354
+  },
+  "size": [
+   1856,
+   1613
+  ],
+  "error": null
+ },
+ {
+  "slug": "hikerboy-foxtrot-plus",
+  "i": 0,
+  "url": "https://hikerboyscooter.com/cdn/shop/files/Foxtrot_Plus_Gallery_HikerboyScooter_1.webp?v=1748955076",
+  "verdict": "FAIL",
+  "reasons": [
+   "cadrage serré",
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+   ],
+   "parts": 2,
+   "second": 0.109,
+   "vivid": 0.141,
+   "fill": 0.831
+  },
+  "size": [
+   977,
+   808
+  ],
+  "error": null
+ },
+ {
+  "slug": "hikerboy-foxtrot-plus",
+  "i": 1,
+  "url": "https://hikerboyscooter.com/cdn/shop/files/Foxtrot_Plus_Gallery_HikerboyScooter_2.webp?v=1748955076",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition",
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.175,
+   "fill": 0.771
+  },
+  "size": [
+   975,
+   482
+  ],
+  "error": null
+ },
+ {
+  "slug": "hikerboy-foxtrot-plus",
+  "i": 2,
+  "url": "https://hikerboyscooter.com/cdn/shop/files/Foxtrot_Plus_Gallery_HikerboyScooter_3.webp?v=1748955076",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.124,
+   "fill": 0.412
+  },
+  "size": [
+   1072,
+   1072
+  ],
+  "error": null
+ },
+ {
+  "slug": "hikerboy-foxtrot-plus",
+  "i": 3,
+  "url": "https://hikerboyscooter.com/cdn/shop/files/Foxtrot_Plus_Gallery_HikerboyScooter_4.webp?v=1748955076",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.103,
+   "fill": 0.338
+  },
+  "size": [
+   1296,
+   1296
+  ],
+  "error": null
+ },
+ {
+  "slug": "hikerboy-foxtrot-plus",
+  "i": 4,
+  "url": "https://hikerboyscooter.com/cdn/shop/files/Foxtrot_Plus_Gallery_HikerboyScooter_5.webp?v=1748955076",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+   ],
+   "parts": 2,
+   "second": 0.44,
+   "vivid": 0.092,
+   "fill": 0.562
+  },
+  "size": [
+   1296,
+   1296
+  ],
+  "error": null
+ },
+ {
+  "slug": "hikerboy-foxtrot-plus",
+  "i": 5,
+  "url": "https://hikerboyscooter.com/cdn/shop/files/Foxtrot_Plus_Gallery_HikerboyScooter_6.webp?v=1748955076",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.1,
+   "fill": 0.808
+  },
+  "size": [
+   763,
+   1164
+  ],
+  "error": null
+ },
+ {
+  "slug": "hikerboy-foxtrot-plus",
+  "i": 6,
+  "url": "https://hikerboyscooter.com/cdn/shop/files/Foxtrot_Plus_Gallery_HikerboyScooter_7.webp?v=1748955076",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.105,
+   "fill": 0.804
+  },
+  "size": [
+   797,
+   1206
+  ],
+  "error": null
+ },
+ {
+  "slug": "hikerboy-foxtrot-plus",
+  "i": 7,
+  "url": "https://hikerboyscooter.com/cdn/shop/files/handle.webp?v=1729171072",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.039,
+   "fill": 0.572
+  },
+  "size": [
+   1080,
+   1080
+  ],
+  "error": null
+ },
+ {
+  "slug": "isinwheel-gt2",
+  "i": 0,
+  "url": "https://www.isinwheel.fr/cdn/shop/files/GT2B03V01.jpg?v=1765876318",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.063,
+   "fill": 0.575
+  },
+  "size": [
+   1728,
+   1592
+  ],
+  "error": null
+ },
+ {
+  "slug": "isinwheel-gt2",
+  "i": 1,
+  "url": "https://www.isinwheel.fr/cdn/shop/files/GT2B04V01.jpg?v=1765876318",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "cadrage serré",
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 6 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 6 morceaux"
+   ],
+   "parts": 6,
+   "second": 0.158,
+   "vivid": 0.026,
+   "fill": 0.684
+  },
+  "size": [
+   1627,
+   1728
+  ],
+  "error": null
+ },
+ {
+  "slug": "isinwheel-gt2",
+  "i": 2,
+  "url": "https://www.isinwheel.fr/cdn/shop/files/GT2B07V01.jpg?v=1765876318",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux"
+   ],
+   "parts": 3,
+   "second": 0.224,
+   "vivid": 0.063,
+   "fill": 0.687
+  },
+  "size": [
+   1589,
+   1728
+  ],
+  "error": null
+ },
+ {
+  "slug": "isinwheel-gt2",
+  "i": 3,
+  "url": "https://www.isinwheel.fr/cdn/shop/products/GT2A01V01_1.jpg?v=1765876318",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.022,
+   "fill": 0.56
+  },
+  "size": [
+   1728,
+   1728
+  ],
+  "error": null
+ },
+ {
+  "slug": "isinwheel-gt2",
+  "i": 4,
+  "url": "https://www.isinwheel.fr/cdn/shop/files/GT2_MAIN_PIC_1.jpg?v=1765876318",
+  "verdict": "FAIL",
+  "reasons": [
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 4 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 4 morceaux"
+   ],
+   "parts": 4,
+   "second": 0.157,
+   "vivid": 0.052,
+   "fill": 0.655
+  },
+  "size": [
+   1728,
+   1728
+  ],
+  "error": null
+ },
+ {
+  "slug": "isinwheel-gt2",
+  "i": 5,
+  "url": "https://www.isinwheel.fr/cdn/shop/files/GT2-12.webp?v=1749352005",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "cadrage serré",
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 4 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 4 morceaux"
+   ],
+   "parts": 4,
+   "second": 0.181,
+   "vivid": 0.074,
+   "fill": 0.819
+  },
+  "size": [
+   1370,
+   1597
+  ],
+  "error": null
+ },
+ {
+  "slug": "isinwheel-gt2",
+  "i": 6,
+  "url": "https://www.isinwheel.fr/cdn/shop/files/ISINWHEEL_GT2_5.jpg?v=1727666800",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.085,
+   "fill": 0.8
+  },
+  "size": [
+   493,
+   523
+  ],
+  "error": null
+ },
+ {
+  "slug": "isinwheel-gt2",
+  "i": 7,
+  "url": "https://www.isinwheel.fr/cdn/shop/files/ISINWHEEL_GT2_6.jpg?v=1727666800",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré",
+   "couleurs vives 33 % (visuel marketing ?)"
+  ],
+  "plus": {
+   "verdict": "WARN",
+   "reasons": [
+    "couleurs vives 33 % (visuel marketing ?)"
+   ],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.332,
+   "fill": 0.71
+  },
+  "size": [
+   651,
+   621
+  ],
+  "error": null
+ },
+ {
+  "slug": "isinwheel-gt2-pro",
+  "i": 0,
+  "url": "https://www.isinwheel.com/cdn/shop/files/1773823205872_1.png?v=1783481086&width=2000",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.191,
+   "fill": 0.411
+  },
+  "size": [
+   1760,
+   1266
+  ],
+  "error": null
+ },
+ {
+  "slug": "isinwheel-gt2-pro",
+  "i": 1,
+  "url": "https://www.isinwheel.com/cdn/shop/files/1773969398086_1.png?v=1783481086&width=2000",
+  "verdict": "FAIL",
+  "reasons": [
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux",
+   "couleurs vives 32 % (visuel marketing ?)"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux",
+    "couleurs vives 32 % (visuel marketing ?)"
+   ],
+   "parts": 2,
+   "second": 0.477,
+   "vivid": 0.325,
+   "fill": 0.24
+  },
+  "size": [
+   1732,
+   1582
+  ],
+  "error": null
+ },
+ {
+  "slug": "isinwheel-gt2-pro",
+  "i": 2,
+  "url": "https://www.isinwheel.com/cdn/shop/files/1773726156683_1.png?v=1783481086&width=2000",
+  "verdict": "FAIL",
+  "reasons": [
+   "cadrage serré",
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+   ],
+   "parts": 2,
+   "second": 0.216,
+   "vivid": 0.109,
+   "fill": 0.824
+  },
+  "size": [
+   1556,
+   1482
+  ],
+  "error": null
+ },
+ {
+  "slug": "isinwheel-gt2-pro",
+  "i": 3,
+  "url": "https://www.isinwheel.com/cdn/shop/files/1773736931157_1.png?v=1783481086&width=2000",
+  "verdict": "FAIL",
+  "reasons": [
+   "cadrage serré",
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+   ],
+   "parts": 2,
+   "second": 0.163,
+   "vivid": 0.073,
+   "fill": 0.728
+  },
+  "size": [
+   1760,
+   1360
+  ],
+  "error": null
+ },
+ {
+  "slug": "isinwheel-gt2-pro",
+  "i": 4,
+  "url": "https://www.isinwheel.com/cdn/shop/files/1773969815195_1.png?v=1783481086&width=2000",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.241,
+   "fill": 0.838
+  },
+  "size": [
+   1550,
+   1385
+  ],
+  "error": null
+ },
+ {
+  "slug": "isinwheel-gt2-pro",
+  "i": 5,
+  "url": "https://www.isinwheel.com/cdn/shop/files/1773729256110_1.png?v=1783481086&width=2000",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0.001,
+   "vivid": 0.024,
+   "fill": 0.535
+  },
+  "size": [
+   1744,
+   1486
+  ],
+  "error": null
+ },
+ {
+  "slug": "isinwheel-gt2-pro",
+  "i": 6,
+  "url": "https://www.isinwheel.com/cdn/shop/files/31_bdcabce1-cf31-4273-a2cb-f8819919d2b4.png?v=1783481028&width=4000",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.043,
+   "fill": 0.657
+  },
+  "size": [
+   971,
+   1828
+  ],
+  "error": null
+ },
+ {
+  "slug": "isinwheel-gt2-pro",
+  "i": 7,
+  "url": "https://www.isinwheel.com/cdn/shop/files/35.png?v=1783481028&width=4000",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.061,
+   "fill": 0.736
+  },
+  "size": [
+   1395,
+   1824
+  ],
+  "error": null
+ },
+ {
+  "slug": "isinwheel-gt2-pro",
+  "i": 8,
+  "url": "https://www.isinwheel.com/cdn/shop/files/ISINWHEEL_1_3f9be6e9-2ace-4c5e-bb26-508a8c630a9d.png?v=1787823735&width=2000",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.045,
+   "fill": 0.835
+  },
+  "size": [
+   1210,
+   1483
+  ],
+  "error": null
+ },
+ {
+  "slug": "isinwheel-s-nova-pro",
+  "i": 0,
+  "url": "https://www.isinwheel.com/cdn/shop/files/Group_2023316996.png?v=1792408276&width=2000",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux",
+   "couleurs vives 37 % (visuel marketing ?)"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux",
+    "couleurs vives 37 % (visuel marketing ?)"
+   ],
+   "parts": 3,
+   "second": 0.434,
+   "vivid": 0.371,
+   "fill": 0.737
+  },
+  "size": [
+   1760,
+   1360
+  ],
+  "error": null
+ },
+ {
+  "slug": "isinwheel-s-nova-pro",
+  "i": 1,
+  "url": "https://www.isinwheel.com/cdn/shop/files/01041b844f9910aae6a981417283e630.png?v=1792407006&width=1448",
+  "verdict": "FAIL",
+  "reasons": [
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+   ],
+   "parts": 2,
+   "second": 0.295,
+   "vivid": 0.03,
+   "fill": 0.455
+  },
+  "size": [
+   1564,
+   1202
+  ],
+  "error": null
+ },
+ {
+  "slug": "isinwheel-s-nova-pro",
+  "i": 2,
+  "url": "https://www.isinwheel.com/cdn/shop/files/89d217eb03cdec8de32040da1964e92c.png?v=1792407006&width=1448",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 5 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 5 morceaux"
+   ],
+   "parts": 5,
+   "second": 0.222,
+   "vivid": 0.244,
+   "fill": 0.595
+  },
+  "size": [
+   1564,
+   1202
+  ],
+  "error": null
+ },
+ {
+  "slug": "isinwheel-s-nova-pro",
+  "i": 3,
+  "url": "https://www.isinwheel.com/cdn/shop/files/ab613331b85e89caa76e1400c3bf781c.png?v=1792407006&width=1448",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux",
+   "couleurs vives 50 % (visuel marketing ?)"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux",
+    "couleurs vives 50 % (visuel marketing ?)"
+   ],
+   "parts": 2,
+   "second": 0.325,
+   "vivid": 0.5,
+   "fill": 0.553
+  },
+  "size": [
+   1564,
+   1202
+  ],
+  "error": null
+ },
+ {
+  "slug": "isinwheel-s-nova-pro",
+  "i": 4,
+  "url": "https://www.isinwheel.com/cdn/shop/files/7bd0f19ac5ea2199465cf433fc9e7259.png?v=1792407006&width=1448",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.067,
+   "fill": 0.711
+  },
+  "size": [
+   1564,
+   1202
+  ],
+  "error": null
+ },
+ {
+  "slug": "isinwheel-s-nova-pro",
+  "i": 5,
+  "url": "https://www.isinwheel.com/cdn/shop/files/ISINWHEEL_1_881e53bb-153e-426f-9eb5-e184c838613d.png?v=1792407129&width=2000",
+  "verdict": "FAIL",
+  "reasons": [
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux"
+   ],
+   "parts": 3,
+   "second": 0.344,
+   "vivid": 0.023,
+   "fill": 0.832
+  },
+  "size": [
+   1740,
+   1455
+  ],
+  "error": null
+ },
+ {
+  "slug": "isinwheel-s-nova-pro",
+  "i": 6,
+  "url": "https://www.isinwheel.com/cdn/shop/files/ISINWHEEL_3_3dddf0ca-5c90-4828-8fd0-7aef1aa0c144.png?v=1792407129&width=2000",
+  "verdict": "FAIL",
+  "reasons": [
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux"
+   ],
+   "parts": 3,
+   "second": 0.336,
+   "vivid": 0.023,
+   "fill": 0.832
+  },
+  "size": [
+   1740,
+   1459
+  ],
+  "error": null
+ },
+ {
+  "slug": "isinwheel-s9-pro",
+  "i": 0,
+  "url": "https://www.isinwheel.com/cdn/shop/files/S9Pro-1.png?v=1783490256&width=2000",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "basse définition",
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.023,
+   "fill": 0.745
+  },
+  "size": [
+   551,
+   1389
+  ],
+  "error": null
+ },
+ {
+  "slug": "isinwheel-s9-pro",
+  "i": 1,
+  "url": "https://www.isinwheel.com/cdn/shop/files/S9Pro-2.png?v=1783490256&width=2000",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.059,
+   "fill": 0.438
+  },
+  "size": [
+   1313,
+   1378
+  ],
+  "error": null
+ },
+ {
+  "slug": "isinwheel-s9-pro",
+  "i": 2,
+  "url": "https://www.isinwheel.com/cdn/shop/files/S9Pro-3.png?v=1783490256&width=2000",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition",
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.044,
+   "fill": 0.747
+  },
+  "size": [
+   531,
+   1247
+  ],
+  "error": null
+ },
+ {
+  "slug": "isinwheel-s9-pro",
+  "i": 3,
+  "url": "https://www.isinwheel.com/cdn/shop/files/S9Pro-4.png?v=1783490255&width=2000",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.029,
+   "fill": 0.781
+  },
+  "size": [
+   664,
+   1258
+  ],
+  "error": null
+ },
+ {
+  "slug": "isinwheel-s9-pro",
+  "i": 4,
+  "url": "https://www.isinwheel.com/cdn/shop/files/ISINWHEEL_1_9d73150e-2905-41e9-9eb4-87c89220a263.png?v=1785988138&width=2000",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.06,
+   "fill": 0.854
+  },
+  "size": [
+   1574,
+   1546
+  ],
+  "error": null
+ },
+ {
+  "slug": "isinwheel-s9-pro",
+  "i": 5,
+  "url": "https://www.isinwheel.com/cdn/shop/files/19_7f87e3d2-ac20-4fb8-ae87-e0948c7643b4.png?v=1783490322&width=4000",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.019,
+   "fill": 0.732
+  },
+  "size": [
+   1298,
+   1814
+  ],
+  "error": null
+ },
+ {
+  "slug": "isinwheel-s9-pro",
+  "i": 6,
+  "url": "https://www.isinwheel.com/cdn/shop/files/20_1.png?v=1783490235&width=4000",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.036,
+   "fill": 0.768
+  },
+  "size": [
+   1713,
+   1814
+  ],
+  "error": null
+ },
+ {
+  "slug": "isinwheel-s9-pro",
+  "i": 7,
+  "url": "https://www.isinwheel.com/cdn/shop/files/ISINWHEEL_2_555e8a1e-c6a6-489d-a476-387fa74c16b5.png?v=1785995538&width=2000",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.049,
+   "fill": 0.819
+  },
+  "size": [
+   1138,
+   1562
+  ],
+  "error": null
+ },
+ {
+  "slug": "isinwheel-x3-pro",
+  "i": 0,
+  "url": "https://aiwheelz.com/wp-content/uploads/2024/10/031500x1500_b90f05e0-b7c7-4e0a-97b2-f40c86f43341.webp",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.01,
+   "fill": 0.507
+  },
+  "size": [
+   771,
+   771
+  ],
+  "error": null
+ },
+ {
+  "slug": "isinwheel-x3-pro",
+  "i": 1,
+  "url": "https://aiwheelz.com/wp-content/uploads/2024/10/041500x1500_613e3b01-2f87-421b-8672-ba5602db45e2.webp",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.123,
+   "fill": 0.56
+  },
+  "size": [
+   750,
+   748
+  ],
+  "error": null
+ },
+ {
+  "slug": "isinwheel-x3-pro",
+  "i": 2,
+  "url": "https://aiwheelz.com/wp-content/uploads/2024/10/051500x1500_f13e964d-0d4d-40ef-9f6b-cccce44f8122.webp",
+  "verdict": "FAIL",
+  "reasons": [
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+   ],
+   "parts": 2,
+   "second": 0.426,
+   "vivid": 0.02,
+   "fill": 0.837
+  },
+  "size": [
+   771,
+   687
+  ],
+  "error": null
+ },
+ {
+  "slug": "isinwheel-x3-pro",
+  "i": 3,
+  "url": "https://aiwheelz.com/wp-content/uploads/2024/10/061500x1500_92a1821c-5790-47c4-9137-126cbf4465ef.webp",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+   ],
+   "parts": 2,
+   "second": 0.477,
+   "vivid": 0.135,
+   "fill": 0.805
+  },
+  "size": [
+   771,
+   739
+  ],
+  "error": null
+ },
+ {
+  "slug": "isinwheel-x3-pro",
+  "i": 4,
+  "url": "https://aiwheelz.com/wp-content/uploads/2024/10/071500x1500_5f35394c-856b-438f-ab4f-0d3cf406acc1.webp",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "cadrage serré",
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+   ],
+   "parts": 2,
+   "second": 0.048,
+   "vivid": 0.045,
+   "fill": 0.821
+  },
+  "size": [
+   749,
+   725
+  ],
+  "error": null
+ },
+ {
+  "slug": "isinwheel-x3-pro",
+  "i": 5,
+  "url": "https://aiwheelz.com/wp-content/uploads/2024/10/X3pro_B4_2210251_3d79b0ac-378c-4ca2-9ea8-51502edd4523.webp",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 4 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 4 morceaux"
+   ],
+   "parts": 4,
+   "second": 0.388,
+   "vivid": 0.002,
+   "fill": 0.774
+  },
+  "size": [
+   651,
+   749
+  ],
+  "error": null
+ },
+ {
+  "slug": "isinwheel-x3-pro",
+  "i": 6,
+  "url": "https://aiwheelz.com/wp-content/uploads/2024/10/71Y50tSOWIL._AC_SL1500.webp",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.005,
+   "fill": 0.57
+  },
+  "size": [
+   771,
+   771
+  ],
+  "error": null
+ },
+ {
+  "slug": "isinwheel-x3-pro",
+  "i": 7,
+  "url": "https://aiwheelz.com/wp-content/uploads/2024/10/x3p_50e7399b-0630-441e-b3ec-bc5da9e6d22e.webp",
+  "verdict": "FAIL",
+  "reasons": [
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+   ],
+   "parts": 2,
+   "second": 0.402,
+   "vivid": 0.003,
+   "fill": 0.518
+  },
+  "size": [
+   771,
+   771
+  ],
+  "error": null
+ },
+ {
+  "slug": "kukirin-g2-max-2026",
+  "i": 0,
+  "url": "https://www.kukirin-scooter.com/cdn/shop/files/G2_Max-2.jpg?v=1770203217",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.067,
+   "fill": 0.285
+  },
+  "size": [
+   1080,
+   1080
+  ],
+  "error": null
+ },
+ {
+  "slug": "kukirin-g2-max-2026",
+  "i": 1,
+  "url": "https://www.kukirin-scooter.com/cdn/shop/files/G2_Max-3.jpg?v=1770203217",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.079,
+   "fill": 0.806
+  },
+  "size": [
+   563,
+   873
+  ],
+  "error": null
+ },
+ {
+  "slug": "kukirin-g2-max-2026",
+  "i": 2,
+  "url": "https://www.kukirin-scooter.com/cdn/shop/files/G2_Max-4.jpg?v=1770203217",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.108,
+   "fill": 0.842
+  },
+  "size": [
+   825,
+   871
+  ],
+  "error": null
+ },
+ {
+  "slug": "kukirin-g2-max-2026",
+  "i": 3,
+  "url": "https://www.kukirin-scooter.com/cdn/shop/files/G2_Max-5.jpg?v=1770203217",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.023,
+   "fill": 0.806
+  },
+  "size": [
+   1061,
+   641
+  ],
+  "error": null
+ },
+ {
+  "slug": "kukirin-g2-max-2026",
+  "i": 4,
+  "url": "https://www.kukirin-scooter.com/cdn/shop/files/G2_Max-6.jpg?v=1770203217",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.103,
+   "fill": 0.837
+  },
+  "size": [
+   987,
+   826
+  ],
+  "error": null
+ },
+ {
+  "slug": "kukirin-g2-max-2026",
+  "i": 5,
+  "url": "https://www.kukirin-scooter.com/cdn/shop/files/G2_Max-7.jpg?v=1770203217",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.175,
+   "fill": 0.777
+  },
+  "size": [
+   1080,
+   1080
+  ],
+  "error": null
+ },
+ {
+  "slug": "kukirin-g2-max-2026",
+  "i": 6,
+  "url": "https://www.kukirin-scooter.com/cdn/shop/files/G2_Max-8.jpg?v=1770203217",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.136,
+   "fill": 0.656
+  },
+  "size": [
+   901,
+   774
+  ],
+  "error": null
+ },
+ {
+  "slug": "kukirin-g2-max-2026",
+  "i": 7,
+  "url": "https://www.kukirin-scooter.com/cdn/shop/files/G2_MAX-V2.jpg?v=1770203217",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.06,
+   "fill": 0.788
+  },
+  "size": [
+   797,
+   935
+  ],
+  "error": null
+ },
+ {
+  "slug": "kukirin-g2-max-2026",
+  "i": 8,
+  "url": "https://www.kukirin-scooter.com/cdn/shop/files/G2_Max-1.jpg?v=1770203217",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.104,
+   "fill": 0.518
+  },
+  "size": [
+   1080,
+   1080
+  ],
+  "error": null
+ },
+ {
+  "slug": "kukirin-g3-adventurers",
+  "i": 0,
+  "url": "https://www.kukirin-officiel.com/cdn/shop/files/kukirin-g3-adventurers-trottinette-off-road-1200w-cadre-monobloc-60km-50kmh-8708101_2048x.webp?v=1764467605",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.007,
+   "fill": 0.538
+  },
+  "size": [
+   1038,
+   861
+  ],
+  "error": null
+ },
+ {
+  "slug": "kukirin-g3-adventurers",
+  "i": 1,
+  "url": "https://www.kukirin-officiel.com/cdn/shop/files/kukirin-g3-adventurers-trottinette-off-road-1200w-cadre-monobloc-60km-50kmh-1580539_2048x.webp?v=1764467605",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.139,
+   "fill": 0.509
+  },
+  "size": [
+   1080,
+   1080
+  ],
+  "error": null
+ },
+ {
+  "slug": "kukirin-g3-adventurers",
+  "i": 2,
+  "url": "https://www.kukirin-officiel.com/cdn/shop/files/kukirin-g3-adventurers-trottinette-off-road-1200w-cadre-monobloc-60km-50kmh-9142451_2048x.webp?v=1764467606",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.139,
+   "fill": 0.579
+  },
+  "size": [
+   1080,
+   1080
+  ],
+  "error": null
+ },
+ {
+  "slug": "kukirin-g3-adventurers",
+  "i": 3,
+  "url": "https://www.kukirin-officiel.com/cdn/shop/files/kukirin-g3-adventurers-trottinette-off-road-1200w-cadre-monobloc-60km-50kmh-1050383_2048x.webp?v=1764467606",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.136,
+   "fill": 0.48
+  },
+  "size": [
+   811,
+   1024
+  ],
+  "error": null
+ },
+ {
+  "slug": "kukirin-g3-adventurers",
+  "i": 4,
+  "url": "https://www.kukirin-officiel.com/cdn/shop/files/kukirin-g3-adventurers-trottinette-off-road-1200w-cadre-monobloc-60km-50kmh-1355247_2048x.webp?v=1764467607",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.18,
+   "fill": 0.612
+  },
+  "size": [
+   1080,
+   1080
+  ],
+  "error": null
+ },
+ {
+  "slug": "kukirin-g3-adventurers",
+  "i": 5,
+  "url": "https://www.kukirin-officiel.com/cdn/shop/files/kukirin-g3-adventurers-trottinette-off-road-1200w-cadre-monobloc-60km-50kmh-4987727_2048x.webp?v=1764467607",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.139,
+   "fill": 0.603
+  },
+  "size": [
+   929,
+   1058
+  ],
+  "error": null
+ },
+ {
+  "slug": "kukirin-g3-adventurers",
+  "i": 6,
+  "url": "https://www.kukirin-officiel.com/cdn/shop/files/kukirin-g3-adventurers-trottinette-off-road-1200w-cadre-monobloc-60km-50kmh-3107354_2048x.webp?v=1764467608",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.263,
+   "fill": 0.726
+  },
+  "size": [
+   1080,
+   1080
+  ],
+  "error": null
+ },
+ {
+  "slug": "kukirin-g3-adventurers",
+  "i": 7,
+  "url": "https://www.kukirin-officiel.com/cdn/shop/files/kukirin-g3-adventurers-trottinette-off-road-1200w-cadre-monobloc-60km-50kmh-8639952_2048x.webp?v=1764467608",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.172,
+   "fill": 0.841
+  },
+  "size": [
+   966,
+   1032
+  ],
+  "error": null
+ },
+ {
+  "slug": "kukirin-g3-adventurers",
+  "i": 8,
+  "url": "https://www.kukirin-officiel.com/cdn/shop/files/kukirin-g3-adventurers-trottinette-off-road-1200w-cadre-monobloc-60km-50kmh-3663846_2048x.webp?v=1764467608",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.122,
+   "fill": 0.813
+  },
+  "size": [
+   706,
+   1031
+  ],
+  "error": null
+ },
+ {
+  "slug": "kukirin-g3-adventurers",
+  "i": 9,
+  "url": "https://www.kukirin-officiel.com/cdn/shop/files/kukirin-g3-adventurers-trottinette-off-road-1200w-cadre-monobloc-60km-50kmh-2623978_2048x.webp?v=1764467608",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.166,
+   "fill": 0.712
+  },
+  "size": [
+   1080,
+   1080
+  ],
+  "error": null
+ },
+ {
+  "slug": "kukirin-g3-pro",
+  "i": 0,
+  "url": "https://www.kukirin-scooter.com/cdn/shop/products/KuKirinG3Pro-2.jpg?v=1786699050",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.211,
+   "fill": 0.605
+  },
+  "size": [
+   1296,
+   1296
+  ],
+  "error": null
+ },
+ {
+  "slug": "kukirin-g3-pro",
+  "i": 1,
+  "url": "https://www.kukirin-scooter.com/cdn/shop/products/KuKirinG3Pro-3.jpg?v=1786699040",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.131,
+   "fill": 0.839
+  },
+  "size": [
+   998,
+   910
+  ],
+  "error": null
+ },
+ {
+  "slug": "kukirin-g3-pro",
+  "i": 2,
+  "url": "https://www.kukirin-scooter.com/cdn/shop/products/KuKirinG3Pro-4.jpg?v=1786699029",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.16,
+   "fill": 0.838
+  },
+  "size": [
+   928,
+   1036
+  ],
+  "error": null
+ },
+ {
+  "slug": "kukirin-g3-pro",
+  "i": 3,
+  "url": "https://www.kukirin-scooter.com/cdn/shop/products/KuKirinG3Pro-5.jpg?v=1786699021",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.179,
+   "fill": 0.474
+  },
+  "size": [
+   1296,
+   1296
+  ],
+  "error": null
+ },
+ {
+  "slug": "kukirin-g3-pro",
+  "i": 4,
+  "url": "https://www.kukirin-scooter.com/cdn/shop/products/KuKirinG3Pro-6.jpg?v=1786699015",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.143,
+   "fill": 0.818
+  },
+  "size": [
+   812,
+   1127
+  ],
+  "error": null
+ },
+ {
+  "slug": "kukirin-g3-pro",
+  "i": 5,
+  "url": "https://www.kukirin-scooter.com/cdn/shop/products/KuKirinG3Pro-7.jpg?v=1786699009",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux"
+   ],
+   "parts": 3,
+   "second": 0.098,
+   "vivid": 0.196,
+   "fill": 0.615
+  },
+  "size": [
+   1296,
+   1296
+  ],
+  "error": null
+ },
+ {
+  "slug": "kukirin-g3-pro",
+  "i": 6,
+  "url": "https://www.kukirin-scooter.com/cdn/shop/products/KuKirinG3Pro-8.jpg?v=1786699001",
+  "verdict": "FAIL",
+  "reasons": [
+   "basse définition",
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux",
+   "couleurs vives 94 % (visuel marketing ?)"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux",
+    "couleurs vives 94 % (visuel marketing ?)"
+   ],
+   "parts": 2,
+   "second": 0.418,
+   "vivid": 0.941,
+   "fill": 0.506
+  },
+  "size": [
+   1296,
+   563
+  ],
+  "error": null
+ },
+ {
+  "slug": "kukirin-g3-pro",
+  "i": 7,
+  "url": "https://www.kukirin-scooter.com/cdn/shop/products/KuKirinG3Pro-9.jpg?v=1786698995",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.04,
+   "fill": 0.818
+  },
+  "size": [
+   1261,
+   908
+  ],
+  "error": null
+ },
+ {
+  "slug": "kukirin-g3-pro",
+  "i": 8,
+  "url": "https://www.kukirin-scooter.com/cdn/shop/files/KuKirinG3Pro.jpg?v=1786698980",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.16,
+   "fill": 0.62
+  },
+  "size": [
+   1145,
+   1191
+  ],
+  "error": null
+ },
+ {
+  "slug": "kukirin-g4-max",
+  "i": 0,
+  "url": "https://img.staticdj.com/5e0d61e89ab26d0c6192ae309b132acf.png",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition",
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.031,
+   "fill": 0.828
+  },
+  "size": [
+   501,
+   633
+  ],
+  "error": null
+ },
+ {
+  "slug": "kukirin-g4-max",
+  "i": 1,
+  "url": "https://img.staticdj.com/95394561858fd20e3d813252c433e218.png",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition",
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.044,
+   "fill": 0.809
+  },
+  "size": [
+   681,
+   452
+  ],
+  "error": null
+ },
+ {
+  "slug": "kukirin-g4-max",
+  "i": 2,
+  "url": "https://img.staticdj.com/c350c533efc7cabd15fe108d05c1b884.png",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition",
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.062,
+   "fill": 0.801
+  },
+  "size": [
+   723,
+   449
+  ],
+  "error": null
+ },
+ {
+  "slug": "kukirin-g4-max",
+  "i": 3,
+  "url": "https://img.staticdj.com/0a1ee8df3ddb882e1948366c74445be6.png",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition",
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.038,
+   "fill": 0.835
+  },
+  "size": [
+   565,
+   613
+  ],
+  "error": null
+ },
+ {
+  "slug": "kukirin-g4-max",
+  "i": 4,
+  "url": "https://img.staticdj.com/1649a56c3ffc031c0a04741d985a53b9.png",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "basse définition",
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+   ],
+   "parts": 2,
+   "second": 0.499,
+   "vivid": 0.009,
+   "fill": 0.721
+  },
+  "size": [
+   726,
+   438
+  ],
+  "error": null
+ },
+ {
+  "slug": "kukirin-g4-max",
+  "i": 5,
+  "url": "https://img.staticdj.com/fa86c02f332cb526773d26c9869dd12d.png",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.037,
+   "fill": 0.82
+  },
+  "size": [
+   540,
+   736
+  ],
+  "error": null
+ },
+ {
+  "slug": "kukirin-g4-max",
+  "i": 6,
+  "url": "https://img.staticdj.com/31a617a2bbc9780aeef1ce193828d9b1.png",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition",
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.023,
+   "fill": 0.801
+  },
+  "size": [
+   736,
+   399
+  ],
+  "error": null
+ },
+ {
+  "slug": "kukirin-g4-max",
+  "i": 7,
+  "url": "https://img.staticdj.com/7268b01e75124c21fe6ca384232babdb.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.05,
+   "fill": 0.846
+  },
+  "size": [
+   651,
+   652
+  ],
+  "error": null
+ },
+ {
+  "slug": "nami-burn-e",
+  "i": 0,
+  "url": "https://www.voltride.sk/img/cms/Produkty/Nami%20Burn-E/nami2_4000x-progressive.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0,
+   "fill": 0.839
+  },
+  "size": [
+   488,
+   504
+  ],
+  "error": null
+ },
+ {
+  "slug": "nami-burn-e",
+  "i": 1,
+  "url": "https://www.maxblinker.com/9913-panda_thickbox_default/nami-burn-e.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0,
+   "fill": 0.844
+  },
+  "size": [
+   795,
+   820
+  ],
+  "error": null
+ },
+ {
+  "slug": "nami-burn-e",
+  "i": 2,
+  "url": "https://www.maxblinker.com/9914-panda_thickbox_default/nami-burn-e.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0,
+   "fill": 0.818
+  },
+  "size": [
+   712,
+   988
+  ],
+  "error": null
+ },
+ {
+  "slug": "nami-burn-e",
+  "i": 3,
+  "url": "https://www.maxblinker.com/9915-panda_thickbox_default/nami-burn-e.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0,
+   "fill": 0.838
+  },
+  "size": [
+   732,
+   655
+  ],
+  "error": null
+ },
+ {
+  "slug": "nami-burn-e",
+  "i": 4,
+  "url": "https://www.maxblinker.com/9916-panda_thickbox_default/nami-burn-e.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition",
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0,
+   "fill": 0.771
+  },
+  "size": [
+   865,
+   439
+  ],
+  "error": null
+ },
+ {
+  "slug": "nami-burn-e",
+  "i": 5,
+  "url": "https://www.maxblinker.com/9917-panda_thickbox_default/nami-burn-e.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0,
+   "fill": 0.787
+  },
+  "size": [
+   866,
+   638
+  ],
+  "error": null
+ },
+ {
+  "slug": "nami-burn-e",
+  "i": 6,
+  "url": "https://www.maxblinker.com/9918-panda_thickbox_default/nami-burn-e.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0,
+   "fill": 0.844
+  },
+  "size": [
+   695,
+   722
+  ],
+  "error": null
+ },
+ {
+  "slug": "nami-burn-e",
+  "i": 7,
+  "url": "https://www.maxblinker.com/9919-panda_thickbox_default/nami-burn-e.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition",
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.001,
+   "fill": 0.805
+  },
+  "size": [
+   549,
+   890
+  ],
+  "error": null
+ },
+ {
+  "slug": "nami-burn-e",
+  "i": 8,
+  "url": "https://www.maxblinker.com/9920-panda_thickbox_default/nami-burn-e.jpg",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "basse définition",
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.004,
+   "fill": 0.638
+  },
+  "size": [
+   492,
+   492
+  ],
+  "error": null
+ },
+ {
+  "slug": "nami-burn-e",
+  "i": 9,
+  "url": "https://www.maxblinker.com/9921-panda_thickbox_default/nami-burn-e.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0,
+   "fill": 0.846
+  },
+  "size": [
+   872,
+   872
+  ],
+  "error": null
+ },
+ {
+  "slug": "nami-burn-e-3",
+  "i": 0,
+  "url": "https://www.speedwayridersnyc.com/wp-content/uploads/2026/09/nami-burn-e-3-electric-scooter-2.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.01,
+   "fill": 0.829
+  },
+  "size": [
+   619,
+   859
+  ],
+  "error": null
+ },
+ {
+  "slug": "nami-burn-e-3",
+  "i": 1,
+  "url": "https://www.speedwayridersnyc.com/wp-content/uploads/2025/04/Burn-e-3-Max-roue-arrire-scaled-1.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0,
+   "fill": 0.845
+  },
+  "size": [
+   1257,
+   1228
+  ],
+  "error": null
+ },
+ {
+  "slug": "nami-burn-e-3",
+  "i": 2,
+  "url": "https://www.speedwayridersnyc.com/wp-content/uploads/2025/04/Burn-e-3-max-amortisseur-de-direction-scaled-1.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.001,
+   "fill": 0.78
+  },
+  "size": [
+   1231,
+   1764
+  ],
+  "error": null
+ },
+ {
+  "slug": "nami-burn-e-3",
+  "i": 3,
+  "url": "https://www.speedwayridersnyc.com/wp-content/uploads/2025/04/Burn-e-3-Max-scaled-1.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0,
+   "fill": 0.822
+  },
+  "size": [
+   1273,
+   1702
+  ],
+  "error": null
+ },
+ {
+  "slug": "nami-burn-e-3",
+  "i": 4,
+  "url": "https://www.ridefatdaddy.com/wp-content/uploads/2024/08/Nami-Burn-e-3-hero-Shot.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0,
+   "fill": 0.822
+  },
+  "size": [
+   756,
+   1010
+  ],
+  "error": null
+ },
+ {
+  "slug": "nami-burn-e-3",
+  "i": 5,
+  "url": "https://www.speedwayridersnyc.com/wp-content/uploads/2026/09/nami-burn-e-3-electric-scooter-1.png",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.003,
+   "fill": 0.693
+  },
+  "size": [
+   835,
+   813
+  ],
+  "error": null
+ },
+ {
+  "slug": "punk-rebel",
+  "i": 0,
+  "url": "https://punkelectric.eu/cdn/shop/files/fd11ecce25b7abcdac4b9053ce04f383d53e3cb1_1.png?v=1773300517",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.005,
+   "fill": 0.784
+  },
+  "size": [
+   1726,
+   1796
+  ],
+  "error": null
+ },
+ {
+  "slug": "punk-rebel",
+  "i": 1,
+  "url": "https://punkelectric.eu/cdn/shop/files/62788054f9b40cd055039e09a0d35bd00acd1933_1.png?v=1775712062",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.161,
+   "fill": 0.688
+  },
+  "size": [
+   1816,
+   999
+  ],
+  "error": null
+ },
+ {
+  "slug": "punk-rebel",
+  "i": 2,
+  "url": "https://punkelectric.eu/cdn/shop/files/794945388de4c884ef404c56ac308b2b0e0de1e6_1.png?v=1775712062",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.003,
+   "fill": 0.715
+  },
+  "size": [
+   1122,
+   1802
+  ],
+  "error": null
+ },
+ {
+  "slug": "punk-rebel",
+  "i": 3,
+  "url": "https://punkelectric.eu/cdn/shop/files/ebd81423df9d6678e0d569124d4d18400621fc61_1.png?v=1775712062",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.099,
+   "fill": 0.687
+  },
+  "size": [
+   1804,
+   1510
+  ],
+  "error": null
+ },
+ {
+  "slug": "punk-rebel",
+  "i": 4,
+  "url": "https://punkelectric.eu/cdn/shop/files/bfb4a2cecf333b8388f491ea4e3615c6f27d2023_1.png?v=1775712062",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.191,
+   "fill": 0.817
+  },
+  "size": [
+   1408,
+   813
+  ],
+  "error": null
+ },
+ {
+  "slug": "punk-rebel",
+  "i": 5,
+  "url": "https://punkelectric.eu/cdn/shop/files/ec0697b8e04134c7cb462b45803d02862269ecac_1.png?v=1775712062",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.033,
+   "fill": 0.714
+  },
+  "size": [
+   999,
+   1798
+  ],
+  "error": null
+ },
+ {
+  "slug": "punk-rebel",
+  "i": 6,
+  "url": "https://punkelectric.eu/cdn/shop/files/f3d2dee805d3e3c2af769f86692cf0d864dd322f_1.png?v=1775712062",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.03,
+   "fill": 0.731
+  },
+  "size": [
+   1104,
+   1794
+  ],
+  "error": null
+ },
+ {
+  "slug": "punk-rebel",
+  "i": 7,
+  "url": "https://punkelectric.eu/cdn/shop/files/da4d60af10f63aa7ba1586303a2b9c14ffa082ae_1_1.png?v=1775712062",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.015,
+   "fill": 0.855
+  },
+  "size": [
+   989,
+   974
+  ],
+  "error": null
+ },
+ {
+  "slug": "punk-rebel",
+  "i": 8,
+  "url": "https://punkelectric.eu/cdn/shop/files/604e812848ca12a645a59ee88da11639d6b6642f_1.png?v=1775712062",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.089,
+   "fill": 0.585
+  },
+  "size": [
+   1908,
+   1208
+  ],
+  "error": null
+ },
+ {
+  "slug": "punk-rebel",
+  "i": 9,
+  "url": "https://punkelectric.eu/cdn/shop/files/9635f501663e46337b1d651bed0bc3bb3fd38655_1_1.png?v=1775712062",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0,
+   "fill": 0.641
+  },
+  "size": [
+   1858,
+   1020
+  ],
+  "error": null
+ },
+ {
+  "slug": "punk-rider",
+  "i": 0,
+  "url": "https://punkelectric.eu/cdn/shop/files/pr-2.png?v=1775711751",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0,
+   "fill": 0.565
+  },
+  "size": [
+   1908,
+   1018
+  ],
+  "error": null
+ },
+ {
+  "slug": "punk-rider",
+  "i": 1,
+  "url": "https://punkelectric.eu/cdn/shop/files/pr-3.png?v=1775711751",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "basse définition"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0,
+   "fill": 0.334
+  },
+  "size": [
+   362,
+   778
+  ],
+  "error": null
+ },
+ {
+  "slug": "punk-rider",
+  "i": 2,
+  "url": "https://punkelectric.eu/cdn/shop/files/pr-4.png?v=1775711751",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "basse définition"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0,
+   "fill": 0.556
+  },
+  "size": [
+   226,
+   562
+  ],
+  "error": null
+ },
+ {
+  "slug": "punk-rider",
+  "i": 3,
+  "url": "https://punkelectric.eu/cdn/shop/files/pr-5.png?v=1775711751",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0,
+   "fill": 0.641
+  },
+  "size": [
+   1858,
+   1020
+  ],
+  "error": null
+ },
+ {
+  "slug": "punk-rider",
+  "i": 4,
+  "url": "https://punkelectric.eu/cdn/shop/files/pr-6.png?v=1775711751",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0,
+   "fill": 0.429
+  },
+  "size": [
+   964,
+   1772
+  ],
+  "error": null
+ },
+ {
+  "slug": "punk-rider",
+  "i": 5,
+  "url": "https://punkelectric.eu/cdn/shop/files/pr-7.png?v=1775711751",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.057,
+   "fill": 0.702
+  },
+  "size": [
+   1850,
+   1360
+  ],
+  "error": null
+ },
+ {
+  "slug": "punk-rider",
+  "i": 6,
+  "url": "https://punkelectric.eu/cdn/shop/files/pr-8.png?v=1775711751",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0,
+   "fill": 0.635
+  },
+  "size": [
+   1872,
+   1128
+  ],
+  "error": null
+ },
+ {
+  "slug": "punk-rider",
+  "i": 7,
+  "url": "https://punkelectric.eu/cdn/shop/files/pr-9.png?v=1775711751",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.01,
+   "fill": 0.656
+  },
+  "size": [
+   1860,
+   1101
+  ],
+  "error": null
+ },
+ {
+  "slug": "punk-rider",
+  "i": 8,
+  "url": "https://punkelectric.eu/cdn/shop/files/pr-1.png?v=1775711751",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.015,
+   "fill": 0.855
+  },
+  "size": [
+   989,
+   974
+  ],
+  "error": null
+ },
+ {
+  "slug": "punk-rider",
+  "i": 9,
+  "url": "https://punkelectric.eu/cdn/shop/files/pr-10.png?v=1773231981",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.006,
+   "fill": 0.825
+  },
+  "size": [
+   1692,
+   1754
+  ],
+  "error": null
+ },
+ {
+  "slug": "punk-rider-pro",
+  "i": 0,
+  "url": "https://cdn.shopify.com/s/files/1/0983/6625/9510/files/Punk_Rider_0002_0369190f-8502-4f5a-a51e-60afd8419897.jpg?v=1788973971",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.014,
+   "fill": 0.623
+  },
+  "size": [
+   1728,
+   1728
+  ],
+  "error": null
+ },
+ {
+  "slug": "punk-rider-pro",
+  "i": 1,
+  "url": "https://cdn.shopify.com/s/files/1/0983/6625/9510/files/Punk_Rider_0006_2ce1ea97-ba7d-4b0b-8342-ec9e26e71dc7.jpg?v=1788973972",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.004,
+   "fill": 0.525
+  },
+  "size": [
+   1447,
+   1677
+  ],
+  "error": null
+ },
+ {
+  "slug": "punk-rider-pro",
+  "i": 2,
+  "url": "https://cdn.shopify.com/s/files/1/0983/6625/9510/files/Punk_Rider_0007_4ae642e4-0aeb-4bb1-9ff9-75ee0e4b239b.jpg?v=1788973972",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.012,
+   "fill": 0.836
+  },
+  "size": [
+   1728,
+   1195
+  ],
+  "error": null
+ },
+ {
+  "slug": "punk-rider-pro",
+  "i": 3,
+  "url": "https://cdn.shopify.com/s/files/1/0983/6625/9510/files/Punk_Rider_0012_7efa588b-0739-4b31-b4d2-435582ed7a18.png?v=1788973973",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.008,
+   "fill": 0.818
+  },
+  "size": [
+   724,
+   1000
+  ],
+  "error": null
+ },
+ {
+  "slug": "punk-rider-pro",
+  "i": 4,
+  "url": "https://cdn.shopify.com/s/files/1/0983/6625/9510/files/Punk_Rider_Pro-1_0c6dcd21-54fe-4d0d-a33b-a93eff30d386.jpg?v=1788973972",
+  "verdict": "WARN",
+  "reasons": [
+   "produit minuscule dans le cadre"
+  ],
+  "plus": {
+   "verdict": "WARN",
+   "reasons": [
+    "produit minuscule dans le cadre"
+   ],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0,
+   "fill": 0.093
+  },
+  "size": [
+   1728,
+   1328
+  ],
+  "error": null
+ },
+ {
+  "slug": "punk-rider-pro",
+  "i": 5,
+  "url": "https://cdn.shopify.com/s/files/1/0983/6625/9510/files/Punk_Rider_Pro-3_7fb52ba7-81f7-49a6-9581-3627c5be973e.jpg?v=1780368230",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.004,
+   "fill": 0.762
+  },
+  "size": [
+   1543,
+   1802
+  ],
+  "error": null
+ },
+ {
+  "slug": "punk-rider-pro",
+  "i": 6,
+  "url": "https://cdn.shopify.com/s/files/1/0983/6625/9510/files/Punk_Rider_0001_8304dd3b-55f4-49d0-8cf2-0f8dd2e15909.jpg?v=1788973972",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.006,
+   "fill": 0.607
+  },
+  "size": [
+   1728,
+   1728
+  ],
+  "error": null
+ },
+ {
+  "slug": "soflow-so4-pro-max",
+  "i": 0,
+  "url": "https://www.soflow.com/wp-content/uploads/2025/02/9767.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.069,
+   "fill": 0.84
+  },
+  "size": [
+   1123,
+   1467
+  ],
+  "error": null
+ },
+ {
+  "slug": "soflow-so4-pro-max",
+  "i": 1,
+  "url": "https://www.soflow.com/wp-content/uploads/2025/02/9769.png",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.001,
+   "fill": 0.408
+  },
+  "size": [
+   1800,
+   1172
+  ],
+  "error": null
+ },
+ {
+  "slug": "soflow-so4-pro-max",
+  "i": 2,
+  "url": "https://www.soflow.com/wp-content/uploads/2025/02/9770.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.082,
+   "fill": 0.818
+  },
+  "size": [
+   1087,
+   1508
+  ],
+  "error": null
+ },
+ {
+  "slug": "soflow-so4-pro-max",
+  "i": 3,
+  "url": "https://www.soflow.com/wp-content/uploads/2025/02/9771-1.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.066,
+   "fill": 0.84
+  },
+  "size": [
+   1350,
+   1547
+  ],
+  "error": null
+ },
+ {
+  "slug": "soflow-so4-pro-max",
+  "i": 4,
+  "url": "https://www.soflow.com/wp-content/uploads/2025/02/9793.png",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+   ],
+   "parts": 2,
+   "second": 0.032,
+   "vivid": 0,
+   "fill": 0.321
+  },
+  "size": [
+   1800,
+   1267
+  ],
+  "error": null
+ },
+ {
+  "slug": "soflow-so4-pro-max",
+  "i": 5,
+  "url": "https://www.soflow.com/wp-content/uploads/2025/02/9801.png",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.047,
+   "fill": 0.418
+  },
+  "size": [
+   1800,
+   1269
+  ],
+  "error": null
+ },
+ {
+  "slug": "soflow-so4-pro-max",
+  "i": 6,
+  "url": "https://www.soflow.com/wp-content/uploads/2025/02/9803.png",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.069,
+   "fill": 0.798
+  },
+  "size": [
+   1748,
+   1275
+  ],
+  "error": null
+ },
+ {
+  "slug": "soflow-so4-pro-max",
+  "i": 7,
+  "url": "https://www.soflow.com/wp-content/uploads/2025/02/9804.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.102,
+   "fill": 0.659
+  },
+  "size": [
+   1125,
+   1868
+  ],
+  "error": null
+ },
+ {
+  "slug": "soflow-so4-pro-max",
+  "i": 8,
+  "url": "https://www.soflow.com/wp-content/uploads/2025/02/SO4-PRO-MAX.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.03,
+   "fill": 0.623
+  },
+  "size": [
+   1181,
+   1904
+  ],
+  "error": null
+ },
+ {
+  "slug": "velity-511-ss",
+  "i": 0,
+  "url": "https://fastride.fr/16134-large_default/trottinette-electrique-velity-511-ss.jpg",
+  "verdict": "ERROR",
+  "reasons": [],
+  "plus": null,
+  "size": null,
+  "error": "Input buffer contains unsupported image format"
+ },
+ {
+  "slug": "velity-511-ss",
+  "i": 1,
+  "url": "https://fastride.fr/16135-large_default/trottinette-electrique-velity-511-ss.jpg",
+  "verdict": "ERROR",
+  "reasons": [],
+  "plus": null,
+  "size": null,
+  "error": "Input buffer contains unsupported image format"
+ },
+ {
+  "slug": "velity-511-ss",
+  "i": 2,
+  "url": "https://fastride.fr/16136-large_default/trottinette-electrique-velity-511-ss.jpg",
+  "verdict": "ERROR",
+  "reasons": [],
+  "plus": null,
+  "size": null,
+  "error": "Input buffer contains unsupported image format"
+ },
+ {
+  "slug": "velity-511-ss",
+  "i": 3,
+  "url": "https://fastride.fr/16137-large_default/trottinette-electrique-velity-511-ss.jpg",
+  "verdict": "ERROR",
+  "reasons": [],
+  "plus": null,
+  "size": null,
+  "error": "Input buffer contains unsupported image format"
+ },
+ {
+  "slug": "velity-511-ss",
+  "i": 4,
+  "url": "https://fastride.fr/16138-large_default/trottinette-electrique-velity-511-ss.jpg",
+  "verdict": "ERROR",
+  "reasons": [],
+  "plus": null,
+  "size": null,
+  "error": "Input buffer contains unsupported image format"
+ },
+ {
+  "slug": "velity-511-ss",
+  "i": 5,
+  "url": "https://fastride.fr/16133-large_default/trottinette-electrique-velity-511-ss.jpg",
+  "verdict": "ERROR",
+  "reasons": [],
+  "plus": null,
+  "size": null,
+  "error": "Input buffer contains unsupported image format"
+ },
+ {
+  "slug": "velity-511-sx",
+  "i": 0,
+  "url": "https://fastride.fr/15785-large_default/trottinette-electrique-velity-511-sx.jpg",
+  "verdict": "ERROR",
+  "reasons": [],
+  "plus": null,
+  "size": null,
+  "error": "Input buffer contains unsupported image format"
+ },
+ {
+  "slug": "velity-511-sx",
+  "i": 1,
+  "url": "https://fastride.fr/15786-large_default/trottinette-electrique-velity-511-sx.jpg",
+  "verdict": "ERROR",
+  "reasons": [],
+  "plus": null,
+  "size": null,
+  "error": "Input buffer contains unsupported image format"
+ },
+ {
+  "slug": "velity-511-sx",
+  "i": 2,
+  "url": "https://fastride.fr/15788-large_default/trottinette-electrique-velity-511-sx.jpg",
+  "verdict": "ERROR",
+  "reasons": [],
+  "plus": null,
+  "size": null,
+  "error": "Input buffer contains unsupported image format"
+ },
+ {
+  "slug": "velity-511-sx",
+  "i": 3,
+  "url": "https://fastride.fr/15787-large_default/trottinette-electrique-velity-511-sx.jpg",
+  "verdict": "ERROR",
+  "reasons": [],
+  "plus": null,
+  "size": null,
+  "error": "Input buffer contains unsupported image format"
+ },
+ {
+  "slug": "wispeed-airo-v10",
+  "i": 0,
+  "url": "https://www.wispeed.net/7843-large_default/trottinette-airo-v10.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.066,
+   "fill": 0.851
+  },
+  "size": [
+   765,
+   864
+  ],
+  "error": null
+ },
+ {
+  "slug": "wispeed-airo-v10",
+  "i": 1,
+  "url": "https://www.wispeed.net/img/cms/PRESTASHOP%209/PRODUITS/TROTTINETTES/AIRO%20V10/hf_20260708_072116_64bccf83-7bb5-437f-8ee3-6dff2ecf2ba9.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0.01,
+   "vivid": 0.029,
+   "fill": 0.385
+  },
+  "size": [
+   1274,
+   1756
+  ],
+  "error": null
+ },
+ {
+  "slug": "wispeed-airo-v10",
+  "i": 2,
+  "url": "https://www.wispeed.net/img/cms/PRESTASHOP%209/PRODUITS/TROTTINETTES/AIRO%20V10/hf_20260708_072632_9e5f41f3-473f-4879-8d37-9a353a0b0b05.png",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.055,
+   "fill": 0.817
+  },
+  "size": [
+   1375,
+   1730
+  ],
+  "error": null
+ },
+ {
+  "slug": "wispeed-airo-v10",
+  "i": 3,
+  "url": "https://www.wispeed.net/img/cms/PRESTASHOP%209/PRODUITS/TROTTINETTES/AIRO%20V10/hf_20260708_073044_56c3b585-ec8c-4938-b11f-feeb1564ba13.png",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.112,
+   "fill": 0.627
+  },
+  "size": [
+   1227,
+   1764
+  ],
+  "error": null
+ },
+ {
+  "slug": "wispeed-airo-v10",
+  "i": 4,
+  "url": "https://www.wispeed.net/img/cms/PRESTASHOP%209/PRODUITS/TROTTINETTES/AIRO%20V10/hf_20260708_074115_22ac66bd-15b2-4dc3-aea4-90e6e2404dc6.png",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "cadrage serré",
+   "petit élément détaché (2 morceaux)"
+  ],
+  "plus": {
+   "verdict": "WARN",
+   "reasons": [
+    "petit élément détaché (2 morceaux)"
+   ],
+   "parts": 2,
+   "second": 0.022,
+   "vivid": 0.004,
+   "fill": 0.804
+  },
+  "size": [
+   1316,
+   1750
+  ],
+  "error": null
+ },
+ {
+  "slug": "wispeed-airo-v10",
+  "i": 5,
+  "url": "https://www.wispeed.net/img/cms/PRESTASHOP%209/PRODUITS/TROTTINETTES/AIRO%20V16/LIFESTYLE/AIRO%20V1X%20Quai%20parisien.png",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition",
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.061,
+   "fill": 0.73
+  },
+  "size": [
+   351,
+   889
+  ],
+  "error": null
+ },
+ {
+  "slug": "wispeed-airo-v10",
+  "i": 6,
+  "url": "https://www.wispeed.net/7842-large_default/trottinette-airo-v10.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.042,
+   "fill": 0.795
+  },
+  "size": [
+   509,
+   864
+  ],
+  "error": null
+ },
+ {
+  "slug": "wispeed-airo-v16",
+  "i": 0,
+  "url": "https://www.wispeed.net/7845-large_default/trottinette-airo-v16.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.066,
+   "fill": 0.851
+  },
+  "size": [
+   765,
+   864
+  ],
+  "error": null
+ },
+ {
+  "slug": "wispeed-airo-v16",
+  "i": 1,
+  "url": "https://www.wispeed.net/img/cms/PRESTASHOP%209/PRODUITS/TROTTINETTES/AIRO%20V16/hf_20260708_092010_9935f02e-6313-4e39-894d-af82d4cdfdb3.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.039,
+   "fill": 0.177
+  },
+  "size": [
+   631,
+   965
+  ],
+  "error": null
+ },
+ {
+  "slug": "wispeed-airo-v16",
+  "i": 2,
+  "url": "https://www.wispeed.net/img/cms/PRESTASHOP%209/PRODUITS/TROTTINETTES/AIRO%20V16/8b06b8b1-e16d-446a-8e4a-9084e244168a.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.042,
+   "fill": 0.795
+  },
+  "size": [
+   655,
+   1113
+  ],
+  "error": null
+ },
+ {
+  "slug": "wispeed-airo-v16",
+  "i": 3,
+  "url": "https://www.wispeed.net/img/cms/PRESTASHOP%209/PRODUITS/TROTTINETTES/AIRO%20V16/Arri%C3%A8re-plan%20%20coffre%20de%20voiture%20ouvert.png",
+  "verdict": "FAIL",
+  "reasons": [
+   "cadrage serré",
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+   ],
+   "parts": 2,
+   "second": 0.206,
+   "vivid": 0.047,
+   "fill": 0.735
+  },
+  "size": [
+   756,
+   1083
+  ],
+  "error": null
+ },
+ {
+  "slug": "wispeed-airo-v16",
+  "i": 4,
+  "url": "https://www.wispeed.net/img/cms/PRESTASHOP%209/PRODUITS/TROTTINETTES/AIRO%20V16/LIFESTYLE/AIRO%20V1X%20Bord%20de%20mer.png",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+   ],
+   "parts": 2,
+   "second": 0.411,
+   "vivid": 0.092,
+   "fill": 0.848
+  },
+  "size": [
+   946,
+   908
+  ],
+  "error": null
+ },
+ {
+  "slug": "wispeed-airo-v16",
+  "i": 5,
+  "url": "https://www.wispeed.net/7844-large_default/trottinette-airo-v16.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.042,
+   "fill": 0.795
+  },
+  "size": [
+   509,
+   864
+  ],
+  "error": null
+ },
+ {
+  "slug": "wispeed-airo-v6",
+  "i": 0,
+  "url": "https://www.wispeed.net/7841-large_default/trottinette-airo-v6.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.054,
+   "fill": 0.838
+  },
+  "size": [
+   737,
+   864
+  ],
+  "error": null
+ },
+ {
+  "slug": "wispeed-airo-v6",
+  "i": 1,
+  "url": "https://www.wispeed.net/img/cms/PRESTASHOP%209/PRODUITS/TROTTINETTES/AIRO%20V6/hf_20260707_134744_3098ce00-58c8-4b67-b385-86025b74a345.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.029,
+   "fill": 0.805
+  },
+  "size": [
+   1152,
+   1728
+  ],
+  "error": null
+ },
+ {
+  "slug": "wispeed-airo-v6",
+  "i": 2,
+  "url": "https://www.wispeed.net/img/cms/PRESTASHOP%209/PRODUITS/TROTTINETTES/AIRO%20V6/hf_20260707_140402_c85a986d-2e0c-4fe6-a461-91f9fd69c5e4.png",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "cadrage serré",
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+   ],
+   "parts": 2,
+   "second": 0.476,
+   "vivid": 0.084,
+   "fill": 0.728
+  },
+  "size": [
+   1227,
+   1764
+  ],
+  "error": null
+ },
+ {
+  "slug": "wispeed-airo-v6",
+  "i": 3,
+  "url": "https://www.wispeed.net/img/cms/PRESTASHOP%209/PRODUITS/TROTTINETTES/AIRO%20V6/hf_20260707_141204_e4020594-f056-464d-8f23-1302100a81b2.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.009,
+   "fill": 0.632
+  },
+  "size": [
+   804,
+   1742
+  ],
+  "error": null
+ },
+ {
+  "slug": "wispeed-airo-v6",
+  "i": 4,
+  "url": "https://www.wispeed.net/img/cms/PRESTASHOP%209/PRODUITS/TROTTINETTES/AIRO%20V6/hf_20260707_141715_0ede22e4-89b6-495f-af16-74a653192edf.png",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+   ],
+   "parts": 2,
+   "second": 0.356,
+   "vivid": 0.041,
+   "fill": 0.636
+  },
+  "size": [
+   1174,
+   1764
+  ],
+  "error": null
+ },
+ {
+  "slug": "wispeed-airo-v6",
+  "i": 5,
+  "url": "https://www.wispeed.net/img/cms/PRESTASHOP%209/PRODUITS/TROTTINETTES/AIRO%20V6/hf_20260707_145107_0b3c6b86-3d57-49fb-8dbe-4bd62b21a737.png",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+   ],
+   "parts": 2,
+   "second": 0.096,
+   "vivid": 0.05,
+   "fill": 0.33
+  },
+  "size": [
+   1764,
+   1227
+  ],
+  "error": null
+ },
+ {
+  "slug": "wispeed-airo-v6",
+  "i": 6,
+  "url": "https://www.wispeed.net/img/cms/PRESTASHOP%209/PRODUITS/TROTTINETTES/AIRO%20V6/AIRO%20V6%20-%20batiment%20haussmanian.png",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.027,
+   "fill": 0.766
+  },
+  "size": [
+   992,
+   1748
+  ],
+  "error": null
+ },
+ {
+  "slug": "wispeed-airo-v6",
+  "i": 7,
+  "url": "https://www.wispeed.net/7840-large_default/trottinette-airo-v6.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.045,
+   "fill": 0.81
+  },
+  "size": [
+   535,
+   864
+  ],
+  "error": null
+ },
+ {
+  "slug": "wispeed-suv1000",
+  "i": 0,
+  "url": "https://static.fnac-static.com/multimedia/Images/FR/MDM/86/43/e4/14959494/1543-2/tsp20250417115638/Trottinette-electrique-Wispeed-Suv-1000-500-W-Noir-et-Blanc.jpg",
+  "verdict": "ERROR",
+  "reasons": [],
+  "plus": null,
+  "size": null,
+  "error": "téléchargement vide"
+ },
+ {
+  "slug": "wispeed-suv1000",
+  "i": 1,
+  "url": "https://static.fnac-static.com/multimedia/Images/FR/MDM/86/43/e4/14959494/1543-3/tsp20250417115638/Trottinette-electrique-Wispeed-Suv-1000-500-W-Noir-et-Blanc.jpg",
+  "verdict": "ERROR",
+  "reasons": [],
+  "plus": null,
+  "size": null,
+  "error": "téléchargement vide"
+ },
+ {
+  "slug": "wispeed-suv1000",
+  "i": 2,
+  "url": "https://static.fnac-static.com/multimedia/Images/FR/MDM/86/43/e4/14959494/1543-4/tsp20250417115638/Trottinette-electrique-Wispeed-Suv-1000-500-W-Noir-et-Blanc.jpg",
+  "verdict": "ERROR",
+  "reasons": [],
+  "plus": null,
+  "size": null,
+  "error": "téléchargement vide"
+ },
+ {
+  "slug": "wispeed-suv1000",
+  "i": 3,
+  "url": "https://static.fnac-static.com/multimedia/Images/FR/MDM/86/43/e4/14959494/1543-5/tsp20250417115638/Trottinette-electrique-Wispeed-Suv-1000-500-W-Noir-et-Blanc.jpg",
+  "verdict": "ERROR",
+  "reasons": [],
+  "plus": null,
+  "size": null,
+  "error": "téléchargement vide"
+ },
+ {
+  "slug": "wispeed-suv1000",
+  "i": 4,
+  "url": "https://static.fnac-static.com/multimedia/Images/FR/MDM/86/43/e4/14959494/1543-6/tsp20250417115638/Trottinette-electrique-Wispeed-Suv-1000-500-W-Noir-et-Blanc.jpg",
+  "verdict": "ERROR",
+  "reasons": [],
+  "plus": null,
+  "size": null,
+  "error": "téléchargement vide"
+ },
+ {
+  "slug": "wispeed-suv1000",
+  "i": 5,
+  "url": "https://static.fnac-static.com/multimedia/Images/FR/MDM/86/43/e4/14959494/1543-7/tsp20250417115638/Trottinette-electrique-Wispeed-Suv-1000-500-W-Noir-et-Blanc.jpg",
+  "verdict": "ERROR",
+  "reasons": [],
+  "plus": null,
+  "size": null,
+  "error": "téléchargement vide"
+ },
+ {
+  "slug": "wispeed-suv1000",
+  "i": 6,
+  "url": "https://static.fnac-static.com/multimedia/Images/FR/MDM/86/43/e4/14959494/1543-1/tsp20250417115638/Trottinette-electrique-Wispeed-Suv-1000-500-W-Noir-et-Blanc.jpg",
+  "verdict": "ERROR",
+  "reasons": [],
+  "plus": null,
+  "size": null,
+  "error": "téléchargement vide"
+ },
+ {
+  "slug": "wispeed-t855-pro",
+  "i": 0,
+  "url": "https://www.logicom-europe.com/5348-thickbox_default/wispeed-trottinette-t855-t855pro.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.01,
+   "fill": 0.842
+  },
+  "size": [
+   961,
+   1296
+  ],
+  "error": null
+ },
+ {
+  "slug": "wispeed-t855-pro",
+  "i": 1,
+  "url": "https://www.logicom-europe.com/5349-thickbox_default/wispeed-trottinette-t855-t855pro.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.035,
+   "fill": 0.813
+  },
+  "size": [
+   914,
+   1296
+  ],
+  "error": null
+ },
+ {
+  "slug": "wispeed-t855-pro",
+  "i": 2,
+  "url": "https://www.logicom-europe.com/5350-thickbox_default/wispeed-trottinette-t855-t855pro.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.04,
+   "fill": 0.801
+  },
+  "size": [
+   769,
+   1296
+  ],
+  "error": null
+ },
+ {
+  "slug": "wispeed-t855-pro",
+  "i": 3,
+  "url": "https://www.logicom-europe.com/5351-thickbox_default/wispeed-trottinette-t855-t855pro.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.017,
+   "fill": 0.848
+  },
+  "size": [
+   1236,
+   1296
+  ],
+  "error": null
+ },
+ {
+  "slug": "wispeed-t855-pro",
+  "i": 4,
+  "url": "https://www.logicom-europe.com/5355-thickbox_default/wispeed-trottinette-t855-t855pro.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.011,
+   "fill": 0.852
+  },
+  "size": [
+   1230,
+   1296
+  ],
+  "error": null
+ },
+ {
+  "slug": "wispeed-t855-pro",
+  "i": 5,
+  "url": "https://www.logicom-europe.com/5356-thickbox_default/wispeed-trottinette-t855-t855pro.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition",
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.026,
+   "fill": 0.771
+  },
+  "size": [
+   1296,
+   547
+  ],
+  "error": null
+ },
+ {
+  "slug": "wispeed-t855-pro",
+  "i": 6,
+  "url": "https://www.logicom-europe.com/5357-thickbox_default/wispeed-trottinette-t855-t855pro.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0,
+   "fill": 0.795
+  },
+  "size": [
+   1296,
+   669
+  ],
+  "error": null
+ },
+ {
+  "slug": "wispeed-t855-pro",
+  "i": 7,
+  "url": "https://www.logicom-europe.com/5347-thickbox_default/wispeed-trottinette-t855-t855pro.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.011,
+   "fill": 0.805
+  },
+  "size": [
+   796,
+   1296
+  ],
+  "error": null
+ },
+ {
+  "slug": "wispeed-x1050-max",
+  "i": 0,
+  "url": "https://medias-az-img.ubaldi.com/visuels/7296246/WISPEEDX1050MAXBLK-4487ef2c59-43.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.026,
+   "fill": 0.646
+  },
+  "size": [
+   579,
+   452
+  ],
+  "error": null
+ },
+ {
+  "slug": "wispeed-x1050-max",
+  "i": 1,
+  "url": "https://medias-az-img.ubaldi.com/visuels/7296246/WISPEEDX1050MAXBLK-f42ace9c64-43.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.001,
+   "fill": 0.769
+  },
+  "size": [
+   579,
+   274
+  ],
+  "error": null
+ },
+ {
+  "slug": "wispeed-x1050-max",
+  "i": 2,
+  "url": "https://medias-az-img.ubaldi.com/visuels/7296246/WISPEEDX1050MAXBLK-ba61783131-43.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.016,
+   "fill": 0.633
+  },
+  "size": [
+   579,
+   452
+  ],
+  "error": null
+ },
+ {
+  "slug": "wispeed-x1050-max",
+  "i": 3,
+  "url": "https://medias-az-img.ubaldi.com/visuels/7296246/WISPEEDX1050MAXBLK-83b6659b19-43.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.017,
+   "fill": 0.362
+  },
+  "size": [
+   579,
+   452
+  ],
+  "error": null
+ },
+ {
+  "slug": "wispeed-x1050-max",
+  "i": 4,
+  "url": "https://medias-az-img.ubaldi.com/visuels/7296246/WISPEEDX1050MAXBLK-6e65fccc3b-43.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.014,
+   "fill": 0.369
+  },
+  "size": [
+   579,
+   452
+  ],
+  "error": null
+ }
+]
