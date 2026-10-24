@@ -24,7 +24,7 @@ const GRAIN_BG =
 const Categorie = () => {
   const { slug } = useParams<{ slug: string }>();
   const { category, parts, isLoading } = useCategoryData(slug);
-  // 24/10 : haut de page « Vitrine montante » (choix de Nolan). Ancien bandeau : ?vitrine=0.
+  // 25/10 : haut de page « Plein cadre » (choix de Nolan). Vitrine montante : ?vitrine=montante. Ancien bandeau : ?vitrine=0.
   const [searchParams] = useSearchParams();
   const legacyHero = searchParams.get("vitrine") === "0";
 
@@ -131,6 +131,7 @@ const Categorie = () => {
               imageAlt={category.alt_text || category.name}
               bodyText={bodyText}
               parts={parts}
+              layout={searchParams.get("vitrine") === "montante" ? "montante" : "plein"}
             />
             <div className="max-w-7xl mx-auto w-full px-4 md:px-8 pb-8 md:pb-10">
               <CategorySwitcher currentSlug={category.slug} />
