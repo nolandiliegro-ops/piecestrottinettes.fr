@@ -1,0 +1,445 @@
+{
+ "lot": "ang06",
+ "models": [
+  {
+   "id": "3bb73238-08c0-41dc-9f9c-e640397f28dc",
+   "slug": "dyu-c4",
+   "name": "DYU C4",
+   "brand": "DYU",
+   "candidates": [
+    "https://fr.dyucycle.com/cdn/shop/files/C4-PC_16001040_b59634f7-5457-460f-9729-865bf30ab26c.jpg?v=1753846846",
+    "https://fr.dyucycle.com/cdn/shop/files/C4-PC_16001040_4c598189-f68f-4752-9047-b66f67f3c647.jpg?v=1753846846",
+    "https://fr.dyucycle.com/cdn/shop/files/C4-PC_16001040_20605370-3859-408e-a1f2-d1bc132719d8.jpg?v=1753846846",
+    "https://fr.dyucycle.com/cdn/shop/files/C4-PC_16001040.jpg?v=1753846846",
+    "https://fr.dyucycle.com/cdn/shop/files/1_e1f47814-d100-4ac3-8f36-b5557000355a.jpg?v=1753846846",
+    "https://fr.dyucycle.com/cdn/shop/files/c4.jpg?v=1726826671",
+    "https://fr.dyucycle.com/cdn/shop/files/s-l1600.jpg?v=1726826672",
+    "https://fr.dyucycle.com/cdn/shop/products/800-800png8.png?v=1698043787"
+   ]
+  },
+  {
+   "id": "4d59ba3c-1b8a-4223-a71a-c4b0ffcf67e1",
+   "slug": "engwe-y10",
+   "name": "Engwe Y10",
+   "brand": "Engwe",
+   "candidates": [
+    "https://fr.engwe.com/cdn/shop/files/3_7dd524bc-704a-48e4-a79b-1f422b13ac67.jpg?v=1747923114",
+    "https://fr.engwe.com/cdn/shop/files/4_ed39097f-5a1f-4ac7-950a-96fa56b1ee97.jpg?v=1747923115",
+    "https://fr.engwe.com/cdn/shop/files/5_df6fd3eb-a255-4d03-a11c-c1d0088b0ac6.jpg?v=1747923115",
+    "https://fr.engwe.com/cdn/shop/files/6_93ad80bc-a097-486e-a2c3-de9dfbc80321.jpg?v=1747923115",
+    "https://fr.engwe.com/cdn/shop/files/7_7e393a13-9a8e-42fb-bd39-a6ef61eecc32.jpg?v=1747923115",
+    "https://fr.engwe.com/cdn/shop/files/2_c2840e42-f324-4cdd-85f8-09249c9bb32d.jpg?v=1747923114",
+    "https://fr.engwe.com/cdn/shop/files/1_85d2aefa-f74d-4885-a301-9bfb1560347a.jpg?v=1747923114",
+    "https://fr.engwe.com/cdn/shop/files/Y10_629fbfd2-2d76-48d0-8981-4f0097075768.png?v=1747923114"
+   ]
+  },
+  {
+   "id": "fc75e858-7731-4a9e-ae19-f2029cfa257d",
+   "slug": "engwe-y400",
+   "name": "Engwe Y400",
+   "brand": "Engwe",
+   "candidates": [
+    "https://fr.engwe.com/cdn/shop/files/2_d8336e87-2799-4af1-8afb-56bccf5196bf.jpg?v=1770112368",
+    "https://fr.engwe.com/cdn/shop/files/3_58765fe5-9e29-4163-b4fd-7188925e44bb.jpg?v=1770112368",
+    "https://fr.engwe.com/cdn/shop/files/5_7a56c28c-849d-44a9-9ec4-f4b5e9d61cf8.jpg?v=1770112368",
+    "https://fr.engwe.com/cdn/shop/files/1_58be3677-7222-40b6-98e8-a2b6ce5d3820.jpg?v=1770112368",
+    "https://fr.engwe.com/cdn/shop/files/6_223aac2a-37e8-49dd-b2a9-d8461c4828ea.jpg?v=1770112368",
+    "https://fr.engwe.com/cdn/shop/files/7_8617e9aa-8ebc-4750-bc01-14c1bbe6cabe.jpg?v=1770112368",
+    "https://fr.engwe.com/cdn/shop/files/8_dae8af73-7762-4366-8bb6-2a1dfd657cf8.jpg?v=1770112368",
+    "https://fr.engwe.com/cdn/shop/files/9_23299df8-38db-4427-83ef-538566e18c6e.jpg?v=1770112368"
+   ]
+  },
+  {
+   "id": "58709fac-dfd0-40be-bedc-c09125a74b41",
+   "slug": "engwe-y600",
+   "name": "Engwe Y600",
+   "brand": "Engwe",
+   "candidates": [
+    "https://fr.engwe.com/cdn/shop/files/3_9cc1cba2-fdf2-422f-97b0-254fade1cef7.jpg?v=1747923069",
+    "https://fr.engwe.com/cdn/shop/files/4_febcfa69-d1f4-4a5e-b06d-b2d3d2c5879b.jpg?v=1747923069",
+    "https://fr.engwe.com/cdn/shop/files/10_d87e7753-2604-45fd-802b-f95a3133e4b5.jpg?v=1747923069",
+    "https://fr.engwe.com/cdn/shop/files/2_da194579-b63e-494a-b37e-36479837d763.jpg?v=1747923069",
+    "https://fr.engwe.com/cdn/shop/files/Y600_Black.jpg?v=1747923069",
+    "https://fr.engwe.com/cdn/shop/files/Y600_bd49d4cc-00a6-4e40-adc2-5d1107f3fe60.png?v=1747923069"
+   ]
+  },
+  {
+   "id": "046f0790-d0ff-4105-ae03-3a049d6aa48a",
+   "slug": "engwe-y600s",
+   "name": "Engwe Y600S",
+   "brand": "Engwe",
+   "candidates": [
+    "https://cdn.auchan.fr/media/a0076e2f-a5d4-4abc-8534-eae7a0162d5c_0x0/B2CD/?width=2048&height=2048&fit=pad",
+    "https://cdn.auchan.fr/media/939ec17e-ba1f-4939-88bc-3011a9bb6412_0x0/B2CD/?width=2048&height=2048&fit=pad",
+    "https://cdn.auchan.fr/media/b4b8e8bc-c459-487b-8290-4ae04ecfecb6_0x0/B2CD/?width=2048&height=2048&fit=pad",
+    "https://cdn.auchan.fr/media/6cf7ead3-497f-4cb5-80cd-c6133a1348ea_0x0/B2CD/?width=2048&height=2048&fit=pad",
+    "https://cdn.auchan.fr/media/597f473f-23f6-47b9-bb01-a6efed1e7fcd_0x0/B2CD/?width=2048&height=2048&fit=pad",
+    "https://cdn.auchan.fr/media/bfef7928-4215-498a-bfd8-2d9f9d460b1a_0x0/B2CD/?width=2048&height=2048&fit=pad",
+    "https://cdn.auchan.fr/media/340c2e52-04aa-44a2-a2ee-0953159847de_0x0/B2CD/?width=2048&height=2048&fit=pad",
+    "https://img.gkbcdn.com/s3/p/2025-07-10/engwe-y600-trottinette--lectrique-avec-si-ge-60bc67-1752130346387.jpg"
+   ]
+  },
+  {
+   "id": "e0f02bcb-2d28-4593-9261-2a5f62ff43f3",
+   "slug": "inmotion-air",
+   "name": "Inmotion Air",
+   "brand": "Inmotion",
+   "candidates": [
+    "https://inmotionworld.com/cdn/shop/files/2_9724a8e8-8d7e-4fc0-bc93-0b600287943f.jpg?v=1735721795&width=1946",
+    "https://inmotionworld.com/cdn/shop/files/3_aedfb313-1d1a-44b8-9deb-9e0711ed2ca5.jpg?v=1735721795&width=1946",
+    "https://inmotionworld.com/cdn/shop/files/5d0873e8ecf3604b6a7a9f8b8ed252da_e996a9c8-a5e5-42f0-8b0b-155c8a0186e8.jpg?v=1735721795&width=1946",
+    "https://inmotionworld.com/cdn/shop/files/ef2909840e65e8fef88e20dc209ce066_f3d63062-38b2-49dd-9685-aaee9ae7699c.jpg?v=1735721795&width=1946",
+    "https://inmotionworld.com/cdn/shop/files/1_f76ee26a-97c3-4e71-b882-b30f0a72daf2.jpg?v=1790761049&width=1946",
+    "https://inmotionworld.com/cdn/shop/files/1_a3169e15-aea4-49d0-9eb7-efc88e6f0de3.jpg?v=1790761049&width=1946",
+    "https://inmotionworld.com/cdn/shop/files/20261021-__10.png?v=1792563565&width=1946"
+   ]
+  },
+  {
+   "id": "784c0fb9-a041-40c2-b1ad-e1fbd940c75d",
+   "slug": "inmotion-air-pro",
+   "name": "Inmotion Air Pro",
+   "brand": "Inmotion",
+   "candidates": [
+    "https://inmotionworld.com/cdn/shop/files/207-_3_d4d99aa2-39b6-40f4-9458-d67e16db0009.png?v=1761538990&width=1946",
+    "https://inmotionworld.com/cdn/shop/files/207-_4.png?v=1761538990&width=1946",
+    "https://inmotionworld.com/cdn/shop/files/207-_1_ce8e2545-1b59-42c2-b62a-846561d41d27.png?v=1751253278&width=1946",
+    "https://inmotionworld.com/cdn/shop/files/05_2d9ca78c-eda4-44d7-8753-da969f88ac91.jpg?v=1761538990&width=1946",
+    "https://inmotionworld.com/cdn/shop/files/06_ec1e365d-0f4c-481c-bbed-c3c5fff4b3d9.jpg?v=1761538990&width=1946",
+    "https://inmotionworld.com/cdn/shop/files/07_5403c52d-87fb-4bfb-b3a4-2fec7918da7d.jpg?v=1761538990&width=1946",
+    "https://inmotionworld.com/cdn/shop/files/20261021-__12.png?v=1792563565&width=1946"
+   ]
+  },
+  {
+   "id": "a2155ed2-587a-4c17-a3cd-095aa9f76ddf",
+   "slug": "inmotion-climber",
+   "name": "Inmotion Climber",
+   "brand": "Inmotion",
+   "candidates": [
+    "https://inmotionworld.com/cdn/shop/files/208-01_3_e2aa9e8e-8341-41d8-9bbf-a6c9ece7304b.png?v=1770190936&width=1946",
+    "https://inmotionworld.com/cdn/shop/files/208-01_4_1aa4a55f-07f6-4445-b2a2-a7fd8d701bcd.png?v=1770190936&width=1946",
+    "https://inmotionworld.com/cdn/shop/files/208-01_2_71d67b1d-f6d4-4b33-ad9d-bc795c3ad88d.png?v=1770190936&width=1946",
+    "https://inmotionworld.com/cdn/shop/files/20261021-__02.png?v=1792563565&width=1946",
+    "https://inmotionworld.com/cdn/shop/files/05_38bbd8ee-7ca1-4944-a5d6-97366f46f191.jpg?v=1770190936&width=1946",
+    "https://inmotionworld.com/cdn/shop/files/06_e2296527-af4b-42c8-b93e-22eb58059c5b.jpg?v=1770190936&width=1946",
+    "https://inmotionworld.com/cdn/shop/files/07_1f2b91ea-1fe7-4cf5-9aa9-4bde93253aea.jpg?v=1770190936&width=1946",
+    "https://inmotionworld.com/cdn/shop/files/08_b935cade-cd16-4144-9fa9-4e1df646f5da.jpg?v=1770190936&width=1946"
+   ]
+  },
+  {
+   "id": "e6a9c39b-9ce5-488a-ba77-bf1f5b954e91",
+   "slug": "inmotion-rs",
+   "name": "Inmotion RS",
+   "brand": "Inmotion",
+   "candidates": [
+    "https://inmotionworld.com/cdn/shop/files/RS-_-__01-02_e704ed32-1491-4dd8-9ac6-b43a6844d774.png?v=1775035760&width=1946",
+    "https://inmotionworld.com/cdn/shop/files/RS-_-__01-03_5425b724-0576-48a5-9689-0df2f543c4d9.png?v=1775035760&width=1946",
+    "https://inmotionworld.com/cdn/shop/files/RS-_-__01-04_07ded73c-09ea-467f-9f58-a860a7143498.png?v=1775035760&width=1946",
+    "https://inmotionworld.com/cdn/shop/files/RS_6363e2c1-1052-4c2a-bcac-642edb720c52.png?v=1790575155&width=1946",
+    "https://inmotionworld.com/cdn/shop/files/1_03c9ddeb-9d13-4173-bec2-8b00588e813b.jpg?v=1775035760&width=1946",
+    "https://inmotionworld.com/cdn/shop/files/1_2_1fc63b56-5971-4811-b3ee-5c8d0b574b02.jpg?v=1775035760&width=1946",
+    "https://inmotionworld.com/cdn/shop/files/5_15dbf162-3462-4893-8157-71665f52bddf.jpg?v=1775035760&width=1946",
+    "https://inmotionworld.com/cdn/shop/files/6_02505ad9-9503-4370-8816-4bb4b33f22ba.jpg?v=1775035760&width=1946",
+    "https://inmotionworld.com/cdn/shop/files/7_32a1f67c-1645-49a8-ad65-fd7017cac3f3.jpg?v=1775035760&width=1946",
+    "https://inmotionworld.com/cdn/shop/files/8_a68b9d2b-dfdf-4952-ae4f-85a0fd312cb9.jpg?v=1775035760&width=1946"
+   ]
+  },
+  {
+   "id": "115ee744-6655-4d30-8ce9-6c44259ca591",
+   "slug": "inmotion-rs-jet",
+   "name": "Inmotion RS Jet",
+   "brand": "Inmotion",
+   "candidates": [
+    "https://inmotionworld.com/cdn/shop/files/20261021-RS_-__04.png?v=1792572886&width=1946",
+    "https://inmotionworld.com/cdn/shop/files/20261021-RS_-__08.png?v=1792572886&width=1946",
+    "https://inmotionworld.com/cdn/shop/files/20261021-RS_-__02.png?v=1792572886&width=1946",
+    "https://inmotionworld.com/cdn/shop/files/20261021-RS_-__06.png?v=1792572886&width=1946",
+    "https://inmotionworld.com/cdn/shop/files/1_587881a9-88e5-4551-af70-8d470a75ced2.jpg?v=1780541692&width=1946",
+    "https://inmotionworld.com/cdn/shop/files/2_99835af2-b72c-4aec-8f45-677b27b2dbc4.jpg?v=1780541693&width=1946",
+    "https://inmotionworld.com/cdn/shop/files/3_d93c06d0-f5f9-4533-9d05-b4c911a6842c.jpg?v=1780541693&width=1946",
+    "https://inmotionworld.com/cdn/shop/files/4_fa099fcf-9d3e-4ed7-b179-a479e8f9c0c3.jpg?v=1780541693&width=1946",
+    "https://inmotionworld.com/cdn/shop/files/66b79f8f55e883eaa331126c55de86dc.jpg?v=1789725451&width=1946"
+   ]
+  },
+  {
+   "id": "40bdbd13-80ed-43ed-bc49-ac3b51a57141",
+   "slug": "inmotion-rs-lite",
+   "name": "Inmotion RS Lite",
+   "brand": "Inmotion",
+   "candidates": [
+    "https://inmotionworld.com/cdn/shop/files/RSlite-_-__01-03_1914648a-bfe0-4895-83bc-e3da2b56b4e9.png?v=1735644459&width=1946",
+    "https://inmotionworld.com/cdn/shop/files/RSlite-_-__01-04_e99c9d5a-4a00-4100-8df1-13b60c807645.png?v=1735644459&width=1946",
+    "https://inmotionworld.com/cdn/shop/files/RSlite-_-__01-02_75d91047-4b35-42bf-a977-0c133e82eda6.png?v=1735644459&width=1946",
+    "https://inmotionworld.com/cdn/shop/files/b58ce7b99582c961375527c3c6b27ebb_7ad409fa-edda-4975-9426-a78570f862b4.png?v=1790132662&width=1946",
+    "https://inmotionworld.com/cdn/shop/files/1_b21de3a5-79ef-4680-9ba6-225054590533.jpg?v=1735718404&width=1946",
+    "https://inmotionworld.com/cdn/shop/files/2_e702a6e9-57ae-4dc0-82dc-206e302c1362.jpg?v=1735718404&width=1946",
+    "https://inmotionworld.com/cdn/shop/files/3_cd3d3da0-effe-40f2-a218-32fec03139f7.jpg?v=1735718404&width=1946",
+    "https://inmotionworld.com/cdn/shop/files/4_96dbe9de-f565-4f35-98b3-8f746f3f02d6.jpg?v=1735718404&width=1946"
+   ]
+  },
+  {
+   "id": "4fa4c32b-bf9b-4d7b-b339-6552542cf1b7",
+   "slug": "kingsong-n12-pro",
+   "name": "Kingsong N12 Pro",
+   "brand": "Kingsong",
+   "candidates": [
+    "https://www.kingsong.com/cdn/shop/files/kingsong-n12-pro-folded-portable-studio-render.webp?v=1783929899",
+    "https://www.kingsong.com/cdn/shop/files/kingsong-n12-pro-rear-disc-brake-studio-render.webp?v=1783929898",
+    "https://www.kingsong.com/cdn/shop/files/kingsong-n12-pro-rear-tail-light-closeup.webp?v=1783929901",
+    "https://www.kingsong.com/cdn/shop/files/kingsong-n12-pro-dashboard-display-closeup.webp?v=1783929898",
+    "https://www.kingsong.com/cdn/shop/files/KINGSONG-N12_PRO-_.1214.png?v=1792681623",
+    "https://www.kingsong.com/cdn/shop/files/KINGSONG-N12_PRO-_.1215.png?v=1792681634",
+    "https://www.kingsong.com/cdn/shop/files/KINGSONG-N12_PRO-_.1216.png?v=1792681635",
+    "https://www.kingsong.com/cdn/shop/files/KINGSONG-N12_PRO-_.1213.png?v=1792681632",
+    "https://www.kingsong.com/cdn/shop/files/kingsong-n12pro-3.jpg?v=1792681626",
+    "https://www.kingsong.com/cdn/shop/files/kingsong-n12pro-4.jpg?v=1792681626"
+   ]
+  },
+  {
+   "id": "f62d2ec1-47b9-4475-8b76-49c8856be045",
+   "slug": "kingsong-n12-t3",
+   "name": "Kingsong N12 T3",
+   "brand": "Kingsong",
+   "candidates": [
+    "https://www.kingsong.com/cdn/shop/files/kingsong-n12t3-electric-scooter-folded-storage-detail.webp?v=1791259151",
+    "https://www.kingsong.com/cdn/shop/files/kingsong-n12T3-dual-motor-escooter-2.png?v=1792682085",
+    "https://www.kingsong.com/cdn/shop/files/kingsong-n12T3-dual-motor-escooter-3.png?v=1792682076",
+    "https://www.kingsong.com/cdn/shop/files/kingsong-n12T3-dual-motor-escooter-4.png?v=1792682088",
+    "https://www.kingsong.com/cdn/shop/files/kingsong-n12T3-dual-motor-escooter-5.png?v=1792682096",
+    "https://www.kingsong.com/cdn/shop/files/kingsong-n12t3-electric-scooter-handlebar-display-detail.webp?v=1791259167",
+    "https://www.kingsong.com/cdn/shop/files/kingsong-n12t3-electric-scooter-front-rear-suspension-detail.webp?v=1791259071",
+    "https://www.kingsong.com/cdn/shop/files/kingsong-n12T3-dual-motor-escooter-1.png?v=1792682087"
+   ]
+  },
+  {
+   "id": "5ee82470-5e81-4c73-88cf-f197acdef369",
+   "slug": "kingsong-n16",
+   "name": "Kingsong N16",
+   "brand": "Kingsong",
+   "candidates": [
+    "https://www.kingsong.com/cdn/shop/files/kingsong-n16-electric-scooter-01-fold-1.webp?v=1792681386",
+    "https://www.kingsong.com/cdn/shop/files/kingsong-n16-electric-scooter-01-fold-2.webp?v=1792681386",
+    "https://www.kingsong.com/cdn/shop/files/kingsong_n16_dual_motor_escooter_2.png?v=1792681384",
+    "https://www.kingsong.com/cdn/shop/files/kingsong_n16_dual_motor_escooter_3_a31bf5d7-d63c-42d7-974b-54976dc8c8ad.png?v=1792681376",
+    "https://www.kingsong.com/cdn/shop/files/kingsong_n16_dual_motor_escooter_5.png?v=1792681386",
+    "https://www.kingsong.com/cdn/shop/files/kingsong_n16_dual_motor_escooter_6.png?v=1792681388",
+    "https://www.kingsong.com/cdn/shop/files/kingsong-n16-electric-scooter-05-hydraulic-brakes.webp?v=1792681378",
+    "https://www.kingsong.com/cdn/shop/files/kingsong-n16-electric-scooter-04-hydraulic-suspension.webp?v=1792681378",
+    "https://www.kingsong.com/cdn/shop/files/kingsong-n16-electric-scooter-01-main.webp?v=1792681382"
+   ]
+  },
+  {
+   "id": "7f0619e1-3f14-4843-a998-0eea4534f403",
+   "slug": "kingsong-s2-pro",
+   "name": "Kingsong S2 Pro",
+   "brand": "Kingsong",
+   "candidates": [
+    "https://media.cdnws.com/_i/21277/5227/808/29/trottinette-kingsong-s2-pro-frein-disque-avant.png",
+    "https://media.cdnws.com/_i/21277/5226/1215/28/trottinette-kingsong-s2-moteur-1000w-roue-10-pouce.png",
+    "https://media.cdnws.com/_i/21277/5228/3132/30/trottinette-electrique-ks-s2-amortisseur-avant.png",
+    "https://media.cdnws.com/_i/21277/5225/46/27/tropttinette-electrique-kingson-s2-pro-1000w-60v-16ah.png"
+   ]
+  },
+  {
+   "id": "529da8e2-907a-40a4-8c25-d198197bd323",
+   "slug": "micro-explorer",
+   "name": "Micro Explorer",
+   "brand": "Micro",
+   "candidates": [
+    "https://static.fnac-static.com/multimedia/Images/FR/MDM/3f/41/fe/16662847/1543-2/tsp20240915134931/Trottinette-electrique-Micro-Explorer-500-W-Noir.jpg",
+    "https://static.fnac-static.com/multimedia/Images/FR/MDM/3f/41/fe/16662847/1543-3/tsp20240915134931/Trottinette-electrique-Micro-Explorer-500-W-Noir.jpg",
+    "https://static.fnac-static.com/multimedia/Images/FR/MDM/3f/41/fe/16662847/1543-4/tsp20240915134931/Trottinette-electrique-Micro-Explorer-500-W-Noir.jpg",
+    "https://static.fnac-static.com/multimedia/Images/FR/MDM/3f/41/fe/16662847/1543-5/tsp20240915134931/Trottinette-electrique-Micro-Explorer-500-W-Noir.jpg",
+    "https://static.fnac-static.com/multimedia/Images/FR/MDM/3f/41/fe/16662847/1543-6/tsp20240915134931/Trottinette-electrique-Micro-Explorer-500-W-Noir.jpg",
+    "https://static.fnac-static.com/multimedia/Images/FR/MDM/3f/41/fe/16662847/1543-7/tsp20240915134931/Trottinette-electrique-Micro-Explorer-500-W-Noir.jpg",
+    "https://static.fnac-static.com/multimedia/Images/FR/MDM/3f/41/fe/16662847/1543-8/tsp20240915134931/Trottinette-electrique-Micro-Explorer-500-W-Noir.jpg",
+    "https://static.fnac-static.com/multimedia/Images/FR/MDM/3f/41/fe/16662847/1543-1/tsp20240915134931/Trottinette-electrique-Micro-Explorer-500-W-Noir.jpg"
+   ]
+  },
+  {
+   "id": "863a9fc0-7fc3-435f-b1d7-8c4155ef9662",
+   "slug": "micro-explorer-ii",
+   "name": "Micro Explorer II",
+   "brand": "Micro",
+   "candidates": [
+    "https://www.micro-mobility.com/resources/public/lava3/media/explorer-ii-2-min.png",
+    "https://www.micro-mobility.com/resources/public/lava3/media/explorer-ii-3-min.png",
+    "https://www.micro-mobility.com/resources/public/lava3/media/explorer-ii-4-min.png",
+    "https://www.micro-mobility.com/resources/public/lava3/media/explorer-ii-1-min.png",
+    "https://www.micro-mobility.com/resources/public/lava3/media/usp-kickstand.jpg"
+   ]
+  },
+  {
+   "id": "e198481d-2a23-41bc-ae03-cebedf1c4b72",
+   "slug": "f40",
+   "name": "F40",
+   "brand": "Ninebot",
+   "candidates": [
+    "https://s7ap1.scene7.com/is/image/ninebotstage/assets_segway_cdn_com_Product-Pictures__product_full_F40D-F40E_Product-picture_360-side-view-30?dpr=on,3&network=on&fmt=png-alpha",
+    "https://s7ap1.scene7.com/is/image/ninebotstage/assets_segway_cdn_com_Product-Pages_KickScooters_KickScooter-F40__hero_full_Ninebot-KickScooter-F40_Folded-kickscooter-30?dpr=on,3&network=on",
+    "https://s7ap1.scene7.com/is/image/ninebotstage/assets_segway_cdn_com_Product-Pages_KickScooters_KickScooter-F40__collection_Ninebot-KickScooter-F30-F40_Dashboard-30?dpr=on,3&network=on",
+    "https://s7ap1.scene7.com/is/image/ninebotstage/assets_segway_cdn_com_Product-Pages_KickScooters_KickScooter-F40__collection_Ninebot-KickScooter-F40_Braking-system-30?dpr=on,3&network=on",
+    "https://s7ap1.scene7.com/is/image/ninebotstage/assets_segway_cdn_com_Product-Pages_KickScooters_KickScooter-F40__hero_full_Ninebot-KickScooter-F40_Hero-picture2-30?dpr=on,3&network=on"
+   ]
+  },
+  {
+   "id": "76a7291f-df89-4621-aab0-f201450cff92",
+   "slug": "g30-max",
+   "name": "G30 Max",
+   "brand": "Ninebot",
+   "candidates": [
+    "https://segway.imgix.net/catalog/product/cache/d3ec3723470ff918c92e447639eaf984/m/a/max_g30-2_1_1.png?w=3840&auto=format%2Ccompress&fit=max&q=75",
+    "https://segway.imgix.net/catalog/product/cache/d3ec3723470ff918c92e447639eaf984/m/a/max_g30-3_1_1.png?w=3840&auto=format%2Ccompress&fit=max&q=75",
+    "https://segway.imgix.net/catalog/product/cache/d3ec3723470ff918c92e447639eaf984/m/a/max_g30-1_1_2.png?w=3840&auto=format%2Ccompress&fit=max&q=75",
+    "https://segway.imgix.net/media/catalog/product/8/_/8_bring_your_scooter_anywhere_with_one-step_folding.jpg",
+    "https://segway.imgix.net/media/catalog/product/3/_/3_change_modes_with_the_led_dashboard.jpg",
+    "https://segway.imgix.net/media/catalog/product/1/0/10_dual_braking_system_for_ultimate_stability.jpg"
+   ]
+  },
+  {
+   "id": "35d0ee7e-a760-4fe4-9960-98527f5fd8f4",
+   "slug": "ninebot-e2",
+   "name": "Ninebot E2",
+   "brand": "Ninebot",
+   "candidates": [
+    "https://static.fnac-static.com/multimedia/Images/FR/MDMFR/MDM/7e/bb/50/22068094/1543-2/tsp20250905112001/Trottinette-electrique-Ninebot-E2-E-Segway-450-W-Noir.jpg",
+    "https://static.fnac-static.com/multimedia/Images/FR/MDMFR/MDM/7e/bb/50/22068094/1543-3/tsp20250905112001/Trottinette-electrique-Ninebot-E2-E-Segway-450-W-Noir.jpg",
+    "https://static.fnac-static.com/multimedia/Images/FR/MDMFR/MDM/7e/bb/50/22068094/1543-4/tsp20250905112001/Trottinette-electrique-Ninebot-E2-E-Segway-450-W-Noir.jpg",
+    "https://static.fnac-static.com/multimedia/Images/FR/MDMFR/MDM/7e/bb/50/22068094/1543-5/tsp20250905112001/Trottinette-electrique-Ninebot-E2-E-Segway-450-W-Noir.jpg",
+    "https://static.fnac-static.com/multimedia/Images/FR/MDMFR/MDM/7e/bb/50/22068094/1543-6/tsp20250905112001/Trottinette-electrique-Ninebot-E2-E-Segway-450-W-Noir.jpg",
+    "https://static.fnac-static.com/multimedia/Images/FR/MDMFR/MDM/7e/bb/50/22068094/1543-7/tsp20250905112001/Trottinette-electrique-Ninebot-E2-E-Segway-450-W-Noir.jpg",
+    "https://static.fnac-static.com/multimedia/Images/FR/MDMFR/MDM/7e/bb/50/22068094/1543-8/tsp20250905112001/Trottinette-electrique-Ninebot-E2-E-Segway-450-W-Noir.jpg",
+    "https://static.fnac-static.com/multimedia/Images/FR/MDMFR/MDM/7e/bb/50/22068094/1543-9/tsp20250905112001/Trottinette-electrique-Ninebot-E2-E-Segway-450-W-Noir.jpg",
+    "https://static.fnac-static.com/multimedia/Images/FR/MDMFR/MDM/7e/bb/50/22068094/1543-10/tsp20250905112001/Trottinette-electrique-Ninebot-E2-E-Segway-450-W-Noir.jpg",
+    "https://static.fnac-static.com/multimedia/Images/FR/MDMFR/MDM/7e/bb/50/22068094/1543-11/tsp20250905112001/Trottinette-electrique-Ninebot-E2-E-Segway-450-W-Noir.jpg"
+   ]
+  },
+  {
+   "id": "35600319-a72d-44bb-8bf0-b80ea98e0099",
+   "slug": "ninebot-e3",
+   "name": "Ninebot E3",
+   "brand": "Ninebot",
+   "candidates": [
+    "https://shop.segway.com/media/catalog/product/cache/a3990b288e26759fcf8347bbc168a102/3/_/3_12_4.png",
+    "https://shop.segway.com/media/catalog/product/cache/a3990b288e26759fcf8347bbc168a102/e/3/e3_series_product_picture.png",
+    "https://shop.segway.com/media/catalog/product/cache/a3990b288e26759fcf8347bbc168a102/e/3/e3_series_product_picture_3-inch_dashboard.png",
+    "https://shop.segway.com/media/catalog/product/cache/a3990b288e26759fcf8347bbc168a102/e/3/e3_series_indicator_on_handlebar.png",
+    "https://shop.segway.com/media/catalog/product/cache/a3990b288e26759fcf8347bbc168a102/2/_/2_12_3.png"
+   ]
+  },
+  {
+   "id": "19d9217a-017c-4ca1-bc22-2569d6562fce",
+   "slug": "ninebot-f3-pro-e",
+   "name": "Ninebot F3 Pro E",
+   "brand": "Ninebot",
+   "candidates": [
+    "https://shop.segway.com/media/catalog/product/cache/a3990b288e26759fcf8347bbc168a102/u/n/untitled_design_10__1.png",
+    "https://shop.segway.com/media/catalog/product/cache/a3990b288e26759fcf8347bbc168a102/u/n/untitled_design_9__1.png",
+    "https://shop.segway.com/media/catalog/product/cache/a3990b288e26759fcf8347bbc168a102/n/i/ninebot_f3_pro_e_d_lifestyle_picture__back_and_ground_view_gravel-2140x1427_72_1.jpg",
+    "https://shop.segway.com/media/catalog/product/cache/a3990b288e26759fcf8347bbc168a102/n/i/ninebot_f3_pro_d_lifestyle_picture__airlock-2140x1427_72_1.jpg",
+    "https://eu-en.segway.com/content/dam/segway-ninebot/general/mmbu-3rdgen-revamp/eu/f3-pro/pc/left-copy.png",
+    "https://eu-en.segway.com/content/dam/segway-ninebot/general/mmbu-3rdgen-revamp/eu/f3-pro/pc/F3%20F3proEU%20PC.jpg"
+   ]
+  },
+  {
+   "id": "2bbe4e55-291a-48d9-aa26-fad3902ae583",
+   "slug": "urbanglide-100-evo",
+   "name": "Urbanglide 100 Evo",
+   "brand": "Urbanglide",
+   "candidates": [
+    "https://urbanglide.com/wp-content/uploads/2025/01/RIDE-100EVO.png",
+    "https://urbanglide.com/wp-content/webp-express/webp-images/uploads/2025/02/100EVO-plie.png.webp",
+    "https://urbanglide.com/wp-content/uploads/2025/02/100EVO-pliee.webp",
+    "https://urbanglide.com/wp-content/uploads/2025/02/100EVO-frein.webp",
+    "https://urbanglide.com/wp-content/uploads/2025/02/100EVO-ecran-fd-violetpoignee.webp",
+    "https://urbanglide.com/wp-content/uploads/2025/02/100EVO-roue-test-futuriste.webp"
+   ]
+  },
+  {
+   "id": "6e58e0eb-ed4a-40f3-8c9d-293d0463493e",
+   "slug": "urbanglide-all-road-6-2x2",
+   "name": "Urbanglide All Road 6 2x2",
+   "brand": "Urbanglide",
+   "candidates": [
+    "https://urbanglide.com/wp-content/uploads/2025/04/AR62x2-roue-frein-a-disque.webp",
+    "https://urbanglide.com/wp-content/uploads/2025/04/AR62x2-LED-RGB.webp",
+    "https://urbanglide.com/wp-content/uploads/2025/04/AR62x2-cle-de-demarrage.webp",
+    "https://urbanglide.com/wp-content/uploads/2025/04/AR62x2-pliee-1.webp",
+    "https://urbanglide.com/wp-content/uploads/2025/04/AR62x2-2.webp"
+   ]
+  },
+  {
+   "id": "5e857319-cb66-42ea-af2f-9636fb016b7c",
+   "slug": "urbanglide-ecross-duo",
+   "name": "Urbanglide eCross Duo",
+   "brand": "Urbanglide",
+   "candidates": [
+    "https://urbanglide.com/wp-content/uploads/2025/03/E-CROSS-DUO-PLIEE.webp",
+    "https://urbanglide.com/wp-content/uploads/2025/01/E-CROSS-DUO-pliee.webp",
+    "https://urbanglide.com/wp-content/uploads/2025/02/E-CROSS-DUO-PNEUS.webp",
+    "https://urbanglide.com/wp-content/uploads/2025/02/E-CROSS-DUO-SUSPENSIONS.webp",
+    "https://urbanglide.com/wp-content/uploads/2025/04/E-CROSS-DUO-MOTEURS-copie.webp",
+    "https://urbanglide.com/wp-content/uploads/2025/02/ECROSSDUO.png"
+   ]
+  },
+  {
+   "id": "7e78e4a5-4159-48b9-9671-dbea2e18cb04",
+   "slug": "urbanglide-ecross-one",
+   "name": "Urbanglide eCross One",
+   "brand": "Urbanglide",
+   "candidates": [
+    "https://www.electrodepot.be/media/catalog/product/cache/478344f765a3acbaa16897afd5e57a0e/P10010405-2.jpg?frz-v=4852",
+    "https://www.electrodepot.be/media/catalog/product/cache/478344f765a3acbaa16897afd5e57a0e/P10010405-3.jpg?frz-v=4852",
+    "https://www.electrodepot.be/media/catalog/product/cache/478344f765a3acbaa16897afd5e57a0e/P10010405-4.jpg?frz-v=4852",
+    "https://www.electrodepot.be/media/catalog/product/cache/478344f765a3acbaa16897afd5e57a0e/P10010405-1.jpg?frz-v=4852",
+    "https://www.electrodepot.be/media/catalog/product/cache/478344f765a3acbaa16897afd5e57a0e/P10010405-5.jpg?frz-v=4852",
+    "https://www.electrodepot.be/media/catalog/product/cache/478344f765a3acbaa16897afd5e57a0e/P10010405-6.jpg?frz-v=4852",
+    "https://urbanglide.com/wp-content/uploads/2025/02/ECROSSONE-1.webp"
+   ]
+  },
+  {
+   "id": "8cd32a6d-175b-47f8-8843-0723d8298de3",
+   "slug": "urbanglide-ride-85-evo",
+   "name": "Urbanglide Ride 85 Evo",
+   "brand": "Urbanglide",
+   "candidates": [
+    "https://urbanglide.com/wp-content/uploads/2025/02/85EVO-BANNIERE-34.webp",
+    "https://urbanglide.com/wp-content/webp-express/webp-images/uploads/2025/02/120001-scaled.jpg.webp",
+    "https://urbanglide.com/wp-content/uploads/2025/02/85EVO-pliee.webp",
+    "https://urbanglide.com/wp-content/uploads/2025/02/85EVO-frein-a-disque.webp",
+    "https://urbanglide.com/wp-content/uploads/2025/02/85EVO-ecran-fd-violet-poignee.webp",
+    "https://urbanglide.com/wp-content/uploads/2025/01/RIDE-85EVO.png"
+   ]
+  },
+  {
+   "id": "25687bdd-669c-4128-88ed-dcd5acc13863",
+   "slug": "urbanglide-urbanride-100xs",
+   "name": "Urbanglide Urbanride 100XS",
+   "brand": "Urbanglide",
+   "candidates": [
+    "https://static.fnac-static.com/multimedia/Images/FR/MDM/36/53/f0/15749942/1543-3/tsp20260908140653/Trottinette-electrique-Urbanglide-Ride-100-XS-350-W-Noir.jpg",
+    "https://static.fnac-static.com/multimedia/Images/FR/MDM/36/53/f0/15749942/1543-4/tsp20260908140653/Trottinette-electrique-Urbanglide-Ride-100-XS-350-W-Noir.jpg",
+    "https://static.fnac-static.com/multimedia/Images/FR/MDM/36/53/f0/15749942/1543-5/tsp20260908140653/Trottinette-electrique-Urbanglide-Ride-100-XS-350-W-Noir.jpg",
+    "https://static.fnac-static.com/multimedia/Images/FR/MDM/36/53/f0/15749942/1543-6/tsp20260908140653/Trottinette-electrique-Urbanglide-Ride-100-XS-350-W-Noir.jpg",
+    "https://static.fnac-static.com/multimedia/Images/FR/MDM/36/53/f0/15749942/1543-7/tsp20260908140653/Trottinette-electrique-Urbanglide-Ride-100-XS-350-W-Noir.jpg",
+    "https://static.fnac-static.com/multimedia/Images/FR/MDM/36/53/f0/15749942/1543-8/tsp20260908140653/Trottinette-electrique-Urbanglide-Ride-100-XS-350-W-Noir.jpg",
+    "https://static.fnac-static.com/multimedia/Images/FR/MDM/36/53/f0/15749942/1543-9/tsp20260908140653/Trottinette-electrique-Urbanglide-Ride-100-XS-350-W-Noir.jpg",
+    "https://static.fnac-static.com/multimedia/Images/FR/MDM/36/53/f0/15749942/1543-10/tsp20260908140653/Trottinette-electrique-Urbanglide-Ride-100-XS-350-W-Noir.jpg",
+    "https://static.fnac-static.com/multimedia/Images/FR/MDM/36/53/f0/15749942/1543-2/tsp20260908140653/Trottinette-electrique-Urbanglide-Ride-100-XS-350-W-Noir.jpg"
+   ]
+  },
+  {
+   "id": "651d6853-642a-46e7-a437-bbbc1bef898c",
+   "slug": "urbanglide-urbanride-85-plus",
+   "name": "Urbanglide Urbanride 85+",
+   "brand": "Urbanglide",
+   "candidates": [
+    "https://urbanglide.com/wp-content/webp-express/webp-images/uploads/2022/05/Ride-85-1.png.webp",
+    "https://urbanglide.com/wp-content/webp-express/webp-images/uploads/2022/06/Ride-85-roues.png.webp",
+    "https://urbanglide.com/wp-content/webp-express/webp-images/uploads/2022/06/Ride-85-suspension.png.webp",
+    "https://urbanglide.com/wp-content/webp-express/webp-images/uploads/2022/06/Ride-85-ecran.png.webp",
+    "https://urbanglide.com/wp-content/webp-express/webp-images/uploads/2022/10/Ride-85-batterie.png.webp",
+    "https://urbanglide.com/wp-content/uploads/2022/05/RIDE-85.png"
+   ]
+  }
+ ]
+}
