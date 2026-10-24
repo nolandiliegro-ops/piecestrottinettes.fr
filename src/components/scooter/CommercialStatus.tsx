@@ -43,7 +43,7 @@ export const StatusOnCard = ({ s, look }: { s: WithCommercialStatus; look: Etiqu
   if (look === 1) {
     if (!stopped && !eol) return null;
     return (
-      <span className="self-start inline-flex items-center min-h-[26px] px-2 text-sm font-bold uppercase tracking-wide text-white"
+      <span className="self-start inline-flex items-center min-h-[26px] px-2 text-sm font-bold whitespace-nowrap text-white"
         style={{ fontFamily: FONT, background: eol ? "#6B5B2E" : CARBON, clipPath: cut(6) }}>
         {eol ? "Fin de série" : "Plus vendue neuve"}
       </span>

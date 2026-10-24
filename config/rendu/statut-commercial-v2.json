@@ -1,0 +1,18 @@
+{
+  "shots": [
+    {"name": "gamme-0", "path": "/trottinettes?puissance=plus&tri=nom", "scrollTo": "[data-cartes]", "offset": -60},
+    {"name": "gamme-1", "path": "/trottinettes?puissance=plus&tri=nom&etiquette=1", "scrollTo": "[data-cartes]", "offset": -60},
+    {"name": "gamme-2", "path": "/trottinettes?puissance=plus&tri=nom&etiquette=2", "scrollTo": "[data-cartes]", "offset": -60},
+    {"name": "gamme-3", "path": "/trottinettes?puissance=plus&tri=nom&etiquette=3", "scrollTo": "[data-cartes]", "offset": -60},
+    {"name": "gamme-4", "path": "/trottinettes?puissance=plus&tri=nom&etiquette=4", "scrollTo": "[data-cartes]", "offset": -60},
+    {"name": "gamme-5", "path": "/trottinettes?puissance=plus&tri=nom&etiquette=5", "scrollTo": "[data-cartes]", "offset": -60},
+    {"name": "fiche-0", "path": "/scooter/thunder", "scrollTo": "h1", "offset": -140},
+    {"name": "fiche-1", "path": "/scooter/thunder?etiquette=1", "scrollTo": "h1", "offset": -140},
+    {"name": "fiche-2", "path": "/scooter/thunder?etiquette=2", "scrollTo": "h1", "offset": -140},
+    {"name": "fiche-3", "path": "/scooter/thunder?etiquette=3", "scrollTo": "h1", "offset": -140},
+    {"name": "fiche-4", "path": "/scooter/thunder?etiquette=4", "scrollTo": "h1", "offset": -140},
+    {"name": "fiche-5", "path": "/scooter/thunder?etiquette=5", "scrollTo": "h1", "offset": -140},
+    {"name": "fiche-vente-3", "path": "/scooter/dualtron-city-2025?etiquette=3", "scrollTo": "h1", "offset": -140, "sizes": ["tel"]},
+    {"name": "filtre", "path": "/trottinettes?vente=non&tri=nom", "scrollTo": "[data-cartes]", "offset": -420, "sizes": ["tel"]}
+  ]
+}
