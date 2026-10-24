@@ -123,17 +123,7 @@ serve(async (req) => {
     const supabase = createClient(supabaseUrl, supabaseServiceKey);
     const stripe = new Stripe(stripeKey, { apiVersion: "2023-10-16" });
 
-    // Boutique fermée tant que le secret SHOP_OPEN n'est pas "true"
-    if (Deno.env.get("SHOP_OPEN") !== "true") {
-      return new Response(
-        JSON.stringify({ error: "SHOP_CLOSED", message: "La boutique ouvre bientôt : les commandes ne sont pas encore ouvertes." }),
-        { headers: { ...corsHeaders, "Content-Type": "application/json" }, status: 403 }
-      );
-    }
-
-    const { items, customerInfo, deliveryMethod, notes, promoCode }: CheckoutRequest = await req.json();
-
-    // Get user ID (nécessaire pour valider les codes personnels)
+    // Get user ID (nécessaire pour valider les codes personnels et l'accès admin boutique fermée)
     let userId: string | null = null;
     const authHeader = req.headers.get("Authorization");
     if (authHeader) {
@@ -141,6 +131,31 @@ serve(async (req) => {
       const { data: userData } = await supabase.auth.getUser(token);
       userId = userData?.user?.id || null;
     }
+
+    // Boutique fermée tant que le secret SHOP_OPEN n'est pas "true".
+    // Exception (lot livraison M1, 24/10/2026) : un compte ADMIN peut commander boutique fermée,
+    // pour la recette de bout en bout avant l'ouverture. Tout autre visiteur reçoit SHOP_CLOSED.
+    if (Deno.env.get("SHOP_OPEN") !== "true") {
+      let isAdmin = false;
+      if (userId) {
+        const { data: adminRow } = await supabase
+          .from("user_roles")
+          .select("id")
+          .eq("user_id", userId)
+          .eq("role", "admin")
+          .maybeSingle();
+        isAdmin = !!adminRow;
+      }
+      if (!isAdmin) {
+        return new Response(
+          JSON.stringify({ error: "SHOP_CLOSED", message: "La boutique ouvre bientôt : les commandes ne sont pas encore ouvertes." }),
+          { headers: { ...corsHeaders, "Content-Type": "application/json" }, status: 403 }
+        );
+      }
+      console.log(`[checkout] SHOP_OPEN=false : commande admin autorisée (recette) user=${userId}`);
+    }
+
+    const { items, customerInfo, deliveryMethod, notes, promoCode }: CheckoutRequest = await req.json();
 
     if (!items || items.length === 0) throw new Error("Le panier est vide");
 
@@ -349,10 +364,9 @@ serve(async (req) => {
         metadata: { order_id: order.id, order_number: orderNumber },
       },
       locale: "fr",
-      billing_address_collection: "required",
-      shipping_address_collection: {
-        allowed_countries: ["FR", "BE", "CH", "LU", "MC"],
-      },
+      // Lot livraison M1 (24/10/2026) : l'adresse est saisie UNE fois, sur le formulaire du site
+      // (orders.address, relue par le webhook et le mail). Stripe ne la redemande plus.
+      billing_address_collection: "auto",
     });
 
     await supabase

@@ -9,7 +9,31 @@
  * Le garde-fou serveur (create-checkout-session) lit le secret SHOP_OPEN :
  * le passer aussi à "true" côté Supabase au même moment.
  */
-export const SHOP_OPEN = false;
+/** Ouverture publique de la boutique. Passer à true le jour J (avec le secret serveur SHOP_OPEN). */
+export const SHOP_OPEN_PUBLIC = false;
+
+/**
+ * Mode recette (lot livraison M1, 24/10/2026) : `?boutique=test` dans l'adresse ouvre le
+ * parcours d'achat pour CET onglet (sessionStorage) ; `?boutique=fermee` le referme.
+ * Sans risque : le serveur (create-checkout-session) refuse toute commande d'un compte
+ * non admin tant que le secret SHOP_OPEN n'est pas "true".
+ */
+function readShopTestMode(): boolean {
+  if (SHOP_OPEN_PUBLIC || typeof window === 'undefined') return false;
+  try {
+    const flag = new URLSearchParams(window.location.search).get('boutique');
+    if (flag === 'test') window.sessionStorage.setItem('pt-shop-test', '1');
+    if (flag === 'fermee') window.sessionStorage.removeItem('pt-shop-test');
+    return window.sessionStorage.getItem('pt-shop-test') === '1';
+  } catch {
+    return false;
+  }
+}
+
+export const SHOP_TEST_MODE = readShopTestMode();
+
+/** Parcours d'achat ouvert pour ce visiteur (public, ou mode recette de l'onglet). */
+export const SHOP_OPEN = SHOP_OPEN_PUBLIC || SHOP_TEST_MODE;
 
 /** Remise offerte aux Riders inscrits avant l'ouverture. */
 export const RIDER_LAUNCH_OFFER = {

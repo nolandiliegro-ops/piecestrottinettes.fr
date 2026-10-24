@@ -1,5 +1,5 @@
 import { Store, ExternalLink, Rocket } from 'lucide-react';
-import { SHOP_OPEN } from '@/config/launch';
+import { SHOP_OPEN_PUBLIC as SHOP_OPEN } from '@/config/launch';
 import { Badge } from '@/components/ui/badge';
 
 /**
@@ -25,8 +25,11 @@ const ReglagesSection = () => (
           )}
         </div>
         <p className="text-sm text-[hsl(var(--admin-text-muted))] mt-1">
-          L'ouverture se fait par commit (<code className="text-xs">src/config/launch.ts</code>) + secret serveur
+          L'ouverture se fait par commit (<code className="text-xs">SHOP_OPEN_PUBLIC</code> dans{' '}
+          <code className="text-xs">src/config/launch.ts</code>) + secret serveur
           <code className="text-xs"> SHOP_OPEN</code>, puis publication. Prévu le 30/10/2026.
+          Recette avant l'ouverture : ouvre le site avec <code className="text-xs">?boutique=test</code>,
+          connecté en admin (seul un compte admin peut payer boutique fermée).
         </p>
       </div>
       <Rocket className="w-5 h-5 text-[hsl(var(--admin-text-muted))] shrink-0" />
