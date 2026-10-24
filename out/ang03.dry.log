@@ -1,0 +1,270 @@
+beaster-bs77 #0 WARN basse définition · cadrage serré
+beaster-bs77 #1 WARN basse définition · cadrage serré
+beaster-bs77 #2 WARN cadrage serré
+beaster-bs77 #3 WARN basse définition
+beaster-bs77 #4 PASS ok
+beaster-bs77 #5 PASS ok
+beaster-bs77 #6 PASS ok
+dualtron-aminia #0 PASS ok
+dualtron-aminia #1 PASS ok
+dualtron-aminia #2 WARN cadrage serré
+dualtron-aminia #3 WARN cadrage serré
+dualtron-aminia #4 PASS ok
+dualtron-aminia #5 PASS ok
+dualtron-aminia #6 FAIL détourage sale / résidu de décor · cadrage serré
+dualtron-aminia #7 WARN cadrage serré
+dualtron-aminia #8 WARN cadrage serré
+dualtron-city-2025 #0 PASS ok
+dualtron-city-2025 #1 PASS ok
+dualtron-city-2025 #2 PASS ok
+dualtron-city-2025 #3 WARN cadrage serré
+dualtron-city-2025 #4 FAIL détourage sale / résidu de décor · cadrage serré
+dualtron-city-2025 #5 PASS ok
+dualtron-city-2025 #6 PASS ok
+dualtron-city-2025 #7 PASS ok
+dualtron-city-2025 #8 PASS ok
+dualtron-dolphin #0 PASS ok
+dualtron-dolphin #1 PASS ok
+dualtron-dolphin #2 PASS ok
+dualtron-dolphin #3 PASS ok
+dualtron-dolphin #4 PASS ok
+dualtron-dolphin #5 PASS ok
+dualtron-dolphin #6 WARN cadrage serré
+dualtron-dolphin #7 PASS ok
+dualtron-mini #0 PASS ok
+dualtron-mini #1 PASS ok
+dualtron-mini #2 WARN basse définition · cadrage serré
+dualtron-mini #3 PASS ok
+dualtron-mini #4 PASS ok
+dualtron-mini #5 FAIL détourage sale / résidu de décor · élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux
+dualtron-mini-special #0 PASS ok
+dualtron-mini-special #1 WARN cadrage serré
+dualtron-mini-special #2 PASS ok
+dualtron-mini-special #3 WARN basse définition · cadrage serré
+dualtron-mini-special #4 WARN basse définition · cadrage serré
+dualtron-mini-special #5 WARN basse définition
+dualtron-mini-special #6 PASS ok
+dualtron-thunder-3 #0 PASS ok
+dualtron-thunder-3 #1 PASS ok
+dualtron-thunder-3 #2 FAIL détourage sale / résidu de décor · cadrage serré
+dualtron-thunder-3 #3 WARN cadrage serré
+dualtron-thunder-3 #4 PASS ok
+dualtron-thunder-3 #5 PASS ok
+dualtron-thunder-3 #6 PASS ok
+dualtron-thunder-3 #7 PASS ok
+dualtron-togo-max #0 FAIL élément en plus (logo, badge, téléphone, 2e trottinette) : 4 morceaux
+dualtron-togo-max #1 PASS ok
+dualtron-togo-max #2 PASS ok
+dualtron-togo-max #3 PASS ok
+dualtron-togo-max #4 PASS ok
+dualtron-togo-max #5 PASS ok
+dualtron-togo-max #6 WARN cadrage serré
+dualtron-togo-max #7 WARN cadrage serré
+dualtron-togo-max #8 WARN cadrage serré
+dualtron-togo-max #9 WARN cadrage serré
+dualtron-togo-plus #0 WARN cadrage serré
+dualtron-togo-plus #1 WARN cadrage serré
+dualtron-togo-plus #2 FAIL élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux
+dualtron-togo-plus #3 WARN couleurs vives 30 % (visuel marketing ?)
+dualtron-togo-plus #4 PASS ok
+dualtron-togo-plus #5 PASS ok
+dualtron-togo-plus #6 WARN cadrage serré
+dualtron-togo-plus #7 PASS ok
+dualtron-togo-plus #8 PASS ok
+dualtron-ultra-2 #0 PASS ok
+dualtron-ultra-2 #1 PASS ok
+dualtron-ultra-2 #2 PASS ok
+dualtron-ultra-2 #3 WARN cadrage serré
+dualtron-ultra-2 #4 WARN basse définition · cadrage serré
+dualtron-ultra-2 #5 PASS ok
+dualtron-victor-2025 #0 PASS ok
+dualtron-victor-2025 #1 FAIL détourage sale / résidu de décor · couleurs vives 31 % (visuel marketing ?)
+dualtron-victor-2025 #2 WARN cadrage serré
+dualtron-victor-2025 #3 WARN cadrage serré
+dualtron-victor-2025 #4 WARN basse définition · cadrage serré
+dualtron-victor-2025 #5 WARN cadrage serré
+dualtron-victor-2025 #6 WARN basse définition · petit élément détaché (2 morceaux)
+dualtron-victor-2025 #7 PASS ok
+thunder #0 WARN cadrage serré
+thunder #1 WARN cadrage serré
+thunder #2 WARN basse définition
+thunder #3 WARN basse définition
+thunder #4 PASS ok
+thunder #5 WARN basse définition · cadrage serré
+thunder #6 WARN basse définition · cadrage serré
+thunder #7 WARN cadrage serré
+thunder #8 FAIL détourage sale / résidu de décor · cadrage serré
+thunder #9 WARN cadrage serré
+kugoo-g2-master #0 PASS ok
+kugoo-g2-master #1 PASS ok
+kugoo-g2-master #2 WARN basse définition · cadrage serré
+kugoo-g2-master #3 PASS ok
+kugoo-g2-master #4 FAIL détourage sale / résidu de décor · élément en plus (logo, badge, téléphone, 2e trottinette) : 7 morceaux
+kugoo-g2-master #5 FAIL détourage sale / résidu de décor · élément en plus (logo, badge, téléphone, 2e trottinette) : 8 morceaux
+kugoo-g2-master #6 PASS ok
+kugoo-g2-master #7 PASS ok
+kugoo-g2-max #0 PASS ok
+kugoo-g2-max #1 PASS ok
+kugoo-g2-max #2 WARN basse définition
+kugoo-g2-max #3 PASS ok
+kugoo-g2-max #4 PASS ok
+kugoo-g2-max #5 WARN cadrage serré
+kugoo-g2-max #6 FAIL détourage sale / résidu de décor · cadrage serré
+kugoo-g2-max #7 FAIL détourage sale / résidu de décor · cadrage serré
+kugoo-g2-max #8 FAIL détourage sale / résidu de décor · élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux
+kugoo-g3 #0 PASS ok
+kugoo-g3 #1 WARN basse définition · cadrage serré
+kugoo-g3 #2 WARN cadrage serré
+kugoo-g3 #3 WARN cadrage serré
+kugoo-g3 #4 WARN basse définition
+kugoo-g3 #5 WARN cadrage serré
+kugoo-g3 #6 WARN basse définition · cadrage serré
+langfeite-gt2-rs #0 PASS ok
+langfeite-gt2-rs #1 PASS ok
+langfeite-gt2-rs #2 FAIL détourage sale / résidu de décor
+langfeite-gt2-rs #3 FAIL détourage sale / résidu de décor · basse définition
+langfeite-gt2-rs #4 FAIL détourage sale / résidu de décor
+langfeite-gt2-rs #5 PASS ok
+niu-kqi-100f #0 PASS ok
+niu-kqi-100f #1 PASS ok
+niu-kqi-100f #2 PASS ok
+niu-kqi-100f #3 PASS ok
+niu-kqi-100f #4 PASS ok
+niu-kqi-100f #5 PASS ok
+niu-kqi-300x #0 PASS ok
+niu-kqi-300x #1 PASS ok
+niu-kqi-300x #2 PASS ok
+niu-kqi-300x #3 PASS ok
+niu-kqi-300x #4 PASS ok
+niu-kqi-300x #5 PASS ok
+niu-kqi-300x #6 PASS ok
+niu-kqi-air-x #0 PASS ok
+niu-kqi-air-x #1 PASS ok
+niu-kqi-air-x #2 PASS ok
+niu-kqi-air-x #3 PASS ok
+niu-kqi-air-x #4 PASS ok
+niu-kqi1-pro #0 FAIL élément en plus (logo, badge, téléphone, 2e trottinette) : 6 morceaux
+niu-kqi1-pro #1 PASS ok
+niu-kqi1-pro #2 PASS ok
+niu-kqi1-pro #3 FAIL cadrage serré · élément en plus (logo, badge, téléphone, 2e trottinette) : 5 morceaux
+niu-kqi1-sport #0 PASS ok
+niu-kqi1-sport #1 PASS ok
+niu-kqi1-sport #2 PASS ok
+niu-kqi1-sport #3 PASS ok
+niu-kqi1-sport #4 FAIL détourage sale / résidu de décor · cadrage serré · élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux
+niu-kqi1-sport #5 PASS ok
+ninebot-max-g2 #0 PASS ok
+ninebot-max-g2 #1 WARN basse définition
+ninebot-max-g2 #2 FAIL détourage sale / résidu de décor · basse définition · cadrage serré
+ninebot-max-g2 #3 WARN basse définition
+ninebot-max-g2 #4 WARN basse définition
+teverun-blade-gt-ii #0 PASS ok
+teverun-blade-gt-ii #1 PASS ok
+teverun-blade-gt-ii #2 WARN cadrage serré
+teverun-blade-gt-ii #3 FAIL détourage sale / résidu de décor
+teverun-blade-gt-ii #4 PASS ok
+teverun-blade-gt-ii #5 FAIL détourage sale / résidu de décor · basse définition · cadrage serré · élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux
+teverun-blade-gt-ii #6 FAIL élément en plus (logo, badge, téléphone, 2e trottinette) : 9 morceaux
+teverun-fighter-11-plus #0 PASS ok
+teverun-fighter-11-plus #1 PASS ok
+teverun-fighter-11-plus #2 WARN cadrage serré
+teverun-fighter-11-plus #3 PASS ok
+teverun-fighter-11-plus #4 WARN basse définition · cadrage serré
+teverun-fighter-11-plus #5 WARN cadrage serré
+teverun-fighter-11-plus #6 FAIL élément en plus (logo, badge, téléphone, 2e trottinette) : 8 morceaux
+teverun-fighter-mini-pro #0 PASS ok
+teverun-fighter-mini-pro #1 PASS ok
+teverun-fighter-mini-pro #2 WARN basse définition
+teverun-fighter-mini-pro #3 PASS ok
+teverun-fighter-mini-pro #4 PASS ok
+teverun-fighter-mini-pro #5 WARN cadrage serré
+teverun-fighter-mini-pro #6 PASS ok
+teverun-fighter-mini-pro #7 PASS ok
+teverun-fighter-mini-pro-v6 #0 WARN cadrage serré
+teverun-fighter-mini-pro-v6 #1 PASS ok
+teverun-fighter-mini-pro-v6 #2 PASS ok
+teverun-fighter-mini-pro-v6 #3 WARN cadrage serré
+teverun-fighter-mini-pro-v6 #4 PASS ok
+teverun-fighter-mini-pro-v6 #5 ERROR Input buffer contains unsupported image format
+teverun-fighter-mini-pro-v6 #6 ERROR Input buffer contains unsupported image format
+teverun-fighter-mini-pro-v6 #7 FAIL élément en plus (logo, badge, téléphone, 2e trottinette) : 9 morceaux
+teverun-fighter-mini-q #0 WARN cadrage serré
+teverun-fighter-mini-q #1 WARN cadrage serré
+teverun-fighter-mini-q #2 WARN basse définition
+teverun-fighter-mini-q #3 PASS ok
+teverun-fighter-mini-q #4 WARN basse définition · cadrage serré
+teverun-fighter-mini-q #5 PASS ok
+teverun-fighter-mini-q #6 PASS ok
+teverun-fighter-mini-q #7 PASS ok
+teverun-fighter-mini-v6 #0 WARN cadrage serré
+teverun-fighter-mini-v6 #1 PASS ok
+teverun-fighter-mini-v6 #2 FAIL détourage sale / résidu de décor · cadrage serré · élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux
+teverun-fighter-mini-v6 #3 WARN cadrage serré
+teverun-fighter-mini-v6 #4 WARN basse définition · cadrage serré
+teverun-fighter-mini-v6 #5 WARN cadrage serré
+teverun-fighter-mini-v6 #6 ERROR Input buffer contains unsupported image format
+teverun-fighter-supreme-ultra #0 PASS ok
+teverun-fighter-supreme-ultra #1 PASS ok
+teverun-fighter-supreme-ultra #2 PASS ok
+teverun-fighter-supreme-ultra #3 PASS ok
+teverun-fighter-supreme-ultra #4 WARN cadrage serré
+teverun-fighter-supreme-ultra #5 WARN cadrage serré
+teverun-fighter-supreme-ultra #6 PASS ok
+iscooter-i10 #0 PASS ok
+iscooter-i10 #1 PASS ok
+iscooter-i10 #2 PASS ok
+iscooter-i10 #3 WARN cadrage serré
+iscooter-i10 #4 PASS ok
+iscooter-i10 #5 PASS ok
+iscooter-i10 #6 FAIL élément en plus (logo, badge, téléphone, 2e trottinette) : 5 morceaux
+iscooter-i10 #7 PASS ok
+iscooter-i10-max #0 FAIL détourage sale / résidu de décor · élément en plus (logo, badge, téléphone, 2e trottinette) : 5 morceaux
+iscooter-i10-max #1 PASS ok
+iscooter-i10-max #2 WARN cadrage serré
+iscooter-i10-max #3 PASS ok
+iscooter-i10-max #4 PASS ok
+iscooter-i10-max #5 FAIL cadrage serré · élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux
+iscooter-i9-max #0 WARN cadrage serré
+iscooter-i9-max #1 WARN basse définition
+iscooter-i9-max #2 PASS ok
+iscooter-i9-max #3 PASS ok
+iscooter-i9-max #4 WARN cadrage serré
+iscooter-i9-max #5 WARN cadrage serré
+iscooter-i9-max #6 WARN cadrage serré
+iscooter-i9-max #7 PASS ok
+iscooter-i9-max #8 FAIL élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux
+iscooter-ix3 #0 FAIL élément en plus (logo, badge, téléphone, 2e trottinette) : 4 morceaux · couleurs vives 37 % (visuel marketing ?)
+iscooter-ix3 #1 FAIL cadrage serré · élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux
+iscooter-ix3 #2 FAIL cadrage serré · élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux
+iscooter-ix3 #3 FAIL détourage sale / résidu de décor · cadrage serré · élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux
+iscooter-ix3 #4 WARN basse définition
+iscooter-ix3 #5 FAIL détourage sale / résidu de décor · cadrage serré
+iscooter-ix3 #6 FAIL détourage sale / résidu de décor · élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux
+iscooter-ix3 #7 PASS ok
+iscooter-ix8 #0 FAIL détourage sale / résidu de décor · élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux
+iscooter-ix8 #1 WARN cadrage serré
+iscooter-ix8 #2 FAIL détourage sale / résidu de décor · cadrage serré · élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux
+iscooter-ix8 #3 FAIL élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux
+iscooter-ix8 #4 PASS ok
+iscooter-ix8 #5 WARN cadrage serré
+iscooter-ix8 #6 FAIL détourage sale / résidu de décor
+iscooter-w6 #0 FAIL détourage sale / résidu de décor · élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux
+iscooter-w6 #1 WARN cadrage serré
+iscooter-w6 #2 WARN cadrage serré
+iscooter-w6 #3 WARN cadrage serré
+iscooter-w6 #4 WARN cadrage serré
+iscooter-w6 #5 PASS ok
+iscooter-w8 #0 FAIL élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux
+iscooter-w8 #1 FAIL élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux
+iscooter-w8 #2 FAIL détourage sale / résidu de décor
+iscooter-w8 #3 FAIL cadrage serré · élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux
+iscooter-w8 #4 FAIL détourage sale / résidu de décor · élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux
+iscooter-w8 #5 FAIL élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux
+iscooter-w9-air #0 FAIL élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux
+iscooter-w9-air #1 FAIL détourage sale / résidu de décor · cadrage serré
+iscooter-w9-air #2 FAIL détourage sale / résidu de décor
+iscooter-w9-air #3 FAIL détourage sale / résidu de décor · cadrage serré
+iscooter-w9-air #4 FAIL détourage sale / résidu de décor · cadrage serré
+iscooter-w9-air #5 WARN cadrage serré
+iscooter-w9-air #6 FAIL détourage sale / résidu de décor · cadrage serré
+::notice title=photos ang03 (dry)::269 candidates · PASS 129 · WARN 84 · FAIL 53 · ERREUR 3

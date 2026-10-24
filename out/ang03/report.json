@@ -1,0 +1,5756 @@
+[
+ {
+  "slug": "beaster-bs77",
+  "i": 0,
+  "url": "https://lt2.pigugroup.eu/colours/555/002/94/55500294/elektrinis-paspirtukas-beaster-scooter-bs77-juodas-f828b-atsiliepimai_original.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition",
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0,
+   "fill": 0.805
+  },
+  "size": [
+   509,
+   828
+  ],
+  "error": null
+ },
+ {
+  "slug": "beaster-bs77",
+  "i": 1,
+  "url": "https://lt2.pigugroup.eu/colours/555/002/94/55500294/elektrinis-paspirtukas-beaster-scooter-bs77-juodas-7ce98-kaina_original.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition",
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.01,
+   "fill": 0.803
+  },
+  "size": [
+   834,
+   527
+  ],
+  "error": null
+ },
+ {
+  "slug": "beaster-bs77",
+  "i": 2,
+  "url": "https://lt2.pigugroup.eu/colours/555/002/94/55500294/elektrinis-paspirtukas-beaster-scooter-bs77-juodas-abca9-pigiau_original.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.001,
+   "fill": 0.845
+  },
+  "size": [
+   792,
+   728
+  ],
+  "error": null
+ },
+ {
+  "slug": "beaster-bs77",
+  "i": 3,
+  "url": "https://lt2.pigugroup.eu/colours/555/002/94/55500294/elektrinis-paspirtukas-beaster-scooter-bs77-juodas-da6f5-internetu_original.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.007,
+   "fill": 0.783
+  },
+  "size": [
+   807,
+   409
+  ],
+  "error": null
+ },
+ {
+  "slug": "beaster-bs77",
+  "i": 4,
+  "url": "https://lt2.pigugroup.eu/colours/555/002/94/55500294/elektrinis-paspirtukas-beaster-scooter-bs77-juodas-07e46_original.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.005,
+   "fill": 0.747
+  },
+  "size": [
+   760,
+   864
+  ],
+  "error": null
+ },
+ {
+  "slug": "beaster-bs77",
+  "i": 5,
+  "url": "https://images.morele.net/i1064/14076300_0_i1064.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.002,
+   "fill": 0.841
+  },
+  "size": [
+   693,
+   848
+  ],
+  "error": null
+ },
+ {
+  "slug": "beaster-bs77",
+  "i": 6,
+  "url": "https://houstera.lt/wp-content/uploads/2021/11/elektrinis-paspirtukas-beaster-scooter-bs77-2400-w-60-v-234-ah-hidrauliniai-stabdziai.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.003,
+   "fill": 0.831
+  },
+  "size": [
+   696,
+   843
+  ],
+  "error": null
+ },
+ {
+  "slug": "dualtron-aminia",
+  "i": 0,
+  "url": "https://cdn.shopify.com/s/files/1/0018/7616/4681/files/DT-Aminia-Image-2.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.009,
+   "fill": 0.794
+  },
+  "size": [
+   1227,
+   1746
+  ],
+  "error": null
+ },
+ {
+  "slug": "dualtron-aminia",
+  "i": 1,
+  "url": "https://cdn.shopify.com/s/files/1/0018/7616/4681/files/DT-Aminia-Image-3.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0,
+   "fill": 0.42
+  },
+  "size": [
+   1447,
+   1754
+  ],
+  "error": null
+ },
+ {
+  "slug": "dualtron-aminia",
+  "i": 2,
+  "url": "https://cdn.shopify.com/s/files/1/0018/7616/4681/files/DT-Aminia-Image-4.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.017,
+   "fill": 0.726
+  },
+  "size": [
+   1740,
+   660
+  ],
+  "error": null
+ },
+ {
+  "slug": "dualtron-aminia",
+  "i": 3,
+  "url": "https://cdn.shopify.com/s/files/1/0018/7616/4681/files/DT-Aminia-Image-5.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.019,
+   "fill": 0.628
+  },
+  "size": [
+   1618,
+   1760
+  ],
+  "error": null
+ },
+ {
+  "slug": "dualtron-aminia",
+  "i": 4,
+  "url": "https://cdn.shopify.com/s/files/1/0018/7616/4681/files/DT-Aminia-Image-9.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0,
+   "fill": 0.429
+  },
+  "size": [
+   1250,
+   1760
+  ],
+  "error": null
+ },
+ {
+  "slug": "dualtron-aminia",
+  "i": 5,
+  "url": "https://cdn.shopify.com/s/files/1/0018/7616/4681/files/DT-Aminia-Image-1.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.011,
+   "fill": 0.455
+  },
+  "size": [
+   1760,
+   1760
+  ],
+  "error": null
+ },
+ {
+  "slug": "dualtron-aminia",
+  "i": 6,
+  "url": "https://cdn.shopify.com/s/files/1/0018/7616/4681/files/DT-Aminia-Image-6.jpg",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.042,
+   "fill": 0.558
+  },
+  "size": [
+   1760,
+   1362
+  ],
+  "error": null
+ },
+ {
+  "slug": "dualtron-aminia",
+  "i": 7,
+  "url": "https://cdn.shopify.com/s/files/1/0018/7616/4681/files/DT-Aminia-Image-7.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.011,
+   "fill": 0.705
+  },
+  "size": [
+   1760,
+   703
+  ],
+  "error": null
+ },
+ {
+  "slug": "dualtron-aminia",
+  "i": 8,
+  "url": "https://cdn.shopify.com/s/files/1/0018/7616/4681/files/DT-Aminia-Image-8.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0,
+   "fill": 0.726
+  },
+  "size": [
+   1760,
+   1362
+  ],
+  "error": null
+ },
+ {
+  "slug": "dualtron-city-2025",
+  "i": 0,
+  "url": "https://cdn.shopify.com/s/files/1/0959/8697/5069/files/TROTTINETTEELECTRIQUEDUALTRONNEWCITY60Vprofildroit.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.006,
+   "fill": 0.855
+  },
+  "size": [
+   887,
+   900
+  ],
+  "error": null
+ },
+ {
+  "slug": "dualtron-city-2025",
+  "i": 1,
+  "url": "https://cdn.shopify.com/s/files/1/0959/8697/5069/files/TROTTINETTEELECTRIQUEDUALTRONNEWCITY60Vprofilgauche.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.01,
+   "fill": 0.85
+  },
+  "size": [
+   913,
+   896
+  ],
+  "error": null
+ },
+ {
+  "slug": "dualtron-city-2025",
+  "i": 2,
+  "url": "https://cdn.shopify.com/s/files/1/0959/8697/5069/files/TROTTINETTEELECTRIQUEDUALTRONNEWCITY60Vface.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.005,
+   "fill": 0.435
+  },
+  "size": [
+   824,
+   1069
+  ],
+  "error": null
+ },
+ {
+  "slug": "dualtron-city-2025",
+  "i": 3,
+  "url": "https://cdn.shopify.com/s/files/1/0959/8697/5069/files/TROTTINETTEELECTRIQUEDUALTRONNEWCITY60Vpliee.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.011,
+   "fill": 0.837
+  },
+  "size": [
+   982,
+   763
+  ],
+  "error": null
+ },
+ {
+  "slug": "dualtron-city-2025",
+  "i": 4,
+  "url": "https://cdn.shopify.com/s/files/1/0959/8697/5069/files/trottinette_electrique_dualtron_city_comodo_phare.jpg",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0.002,
+   "vivid": 0,
+   "fill": 0.559
+  },
+  "size": [
+   803,
+   682
+  ],
+  "error": null
+ },
+ {
+  "slug": "dualtron-city-2025",
+  "i": 5,
+  "url": "https://cdn.shopify.com/s/files/1/0018/7616/4681/files/DT-City-2-Image-2.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.012,
+   "fill": 0.698
+  },
+  "size": [
+   1752,
+   1671
+  ],
+  "error": null
+ },
+ {
+  "slug": "dualtron-city-2025",
+  "i": 6,
+  "url": "https://cdn.shopify.com/s/files/1/0018/7616/4681/files/DT-City-2-Image-3.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.012,
+   "fill": 0.834
+  },
+  "size": [
+   1738,
+   1671
+  ],
+  "error": null
+ },
+ {
+  "slug": "dualtron-city-2025",
+  "i": 7,
+  "url": "https://cdn.shopify.com/s/files/1/0018/7616/4681/files/DT-City-2-Image-4.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.002,
+   "fill": 0.454
+  },
+  "size": [
+   1760,
+   1760
+  ],
+  "error": null
+ },
+ {
+  "slug": "dualtron-city-2025",
+  "i": 8,
+  "url": "https://cdn.shopify.com/s/files/1/0018/7616/4681/files/DT-City-2-Image-5.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.002,
+   "fill": 0.281
+  },
+  "size": [
+   1760,
+   1760
+  ],
+  "error": null
+ },
+ {
+  "slug": "dualtron-dolphin",
+  "i": 0,
+  "url": "https://cdn.shopify.com/s/files/1/0018/7616/4681/files/DT-Dolphin-Image-2.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.021,
+   "fill": 0.608
+  },
+  "size": [
+   1760,
+   1760
+  ],
+  "error": null
+ },
+ {
+  "slug": "dualtron-dolphin",
+  "i": 1,
+  "url": "https://cdn.shopify.com/s/files/1/0018/7616/4681/files/DT-Dolphin-Image-3.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.021,
+   "fill": 0.799
+  },
+  "size": [
+   1290,
+   1750
+  ],
+  "error": null
+ },
+ {
+  "slug": "dualtron-dolphin",
+  "i": 2,
+  "url": "https://cdn.shopify.com/s/files/1/0018/7616/4681/files/DT-Dolphin-Image-4.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.004,
+   "fill": 0.78
+  },
+  "size": [
+   909,
+   1738
+  ],
+  "error": null
+ },
+ {
+  "slug": "dualtron-dolphin",
+  "i": 3,
+  "url": "https://cdn.shopify.com/s/files/1/0018/7616/4681/files/DT-Dolphin-Image-5.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.013,
+   "fill": 0.322
+  },
+  "size": [
+   1760,
+   1760
+  ],
+  "error": null
+ },
+ {
+  "slug": "dualtron-dolphin",
+  "i": 4,
+  "url": "https://cdn.shopify.com/s/files/1/0018/7616/4681/files/DT-Dolphin-Image-6.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.019,
+   "fill": 0.777
+  },
+  "size": [
+   1070,
+   1744
+  ],
+  "error": null
+ },
+ {
+  "slug": "dualtron-dolphin",
+  "i": 5,
+  "url": "https://cdn.shopify.com/s/files/1/0018/7616/4681/files/DT-Dolphin-Image-7.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.014,
+   "fill": 0.823
+  },
+  "size": [
+   1740,
+   1311
+  ],
+  "error": null
+ },
+ {
+  "slug": "dualtron-dolphin",
+  "i": 6,
+  "url": "https://cdn.shopify.com/s/files/1/0018/7616/4681/files/DT-Dolphin-Image-8.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.013,
+   "fill": 0.581
+  },
+  "size": [
+   1760,
+   1760
+  ],
+  "error": null
+ },
+ {
+  "slug": "dualtron-dolphin",
+  "i": 7,
+  "url": "https://cdn.shopify.com/s/files/1/0018/7616/4681/files/DT-Dolphin-Image-1.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.012,
+   "fill": 0.762
+  },
+  "size": [
+   968,
+   1744
+  ],
+  "error": null
+ },
+ {
+  "slug": "dualtron-mini",
+  "i": 0,
+  "url": "https://voltride.com/wp-content/uploads/2025/11/dualtron-mini-dual-brake-side.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.006,
+   "fill": 0.743
+  },
+  "size": [
+   1080,
+   1080
+  ],
+  "error": null
+ },
+ {
+  "slug": "dualtron-mini",
+  "i": 1,
+  "url": "https://voltride.com/wp-content/uploads/2025/09/dualtron-mini-dual-brake-rear.jpeg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.011,
+   "fill": 0.648
+  },
+  "size": [
+   1079,
+   1287
+  ],
+  "error": null
+ },
+ {
+  "slug": "dualtron-mini",
+  "i": 2,
+  "url": "https://voltride.com/wp-content/uploads/2025/11/dualtron-mini-dual-brake-folded.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition",
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0,
+   "fill": 0.724
+  },
+  "size": [
+   1048,
+   395
+  ],
+  "error": null
+ },
+ {
+  "slug": "dualtron-mini",
+  "i": 3,
+  "url": "https://voltride.com/wp-content/uploads/2025/09/dualtron-mini-dual-brake-front.jpeg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.006,
+   "fill": 0.436
+  },
+  "size": [
+   1080,
+   1080
+  ],
+  "error": null
+ },
+ {
+  "slug": "dualtron-mini",
+  "i": 4,
+  "url": "https://voltride.com/wp-content/uploads/2025/11/dt-mini-folding-system.jpeg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.041,
+   "fill": 0.327
+  },
+  "size": [
+   632,
+   972
+  ],
+  "error": null
+ },
+ {
+  "slug": "dualtron-mini",
+  "i": 5,
+  "url": "https://voltride.com/wp-content/uploads/2025/11/dt-mini-suspension.jpeg",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+   ],
+   "parts": 2,
+   "second": 0.31,
+   "vivid": 0.036,
+   "fill": 0.827
+  },
+  "size": [
+   772,
+   972
+  ],
+  "error": null
+ },
+ {
+  "slug": "dualtron-mini-special",
+  "i": 0,
+  "url": "https://cdn.shopify.com/s/files/1/0959/8697/5069/files/TROTTINETTEELECTRIQUEDUALTRONMINISPECIAL52V21AhNEWEY3CONNECTE_3.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.028,
+   "fill": 0.274
+  },
+  "size": [
+   1106,
+   760
+  ],
+  "error": null
+ },
+ {
+  "slug": "dualtron-mini-special",
+  "i": 1,
+  "url": "https://cdn.shopify.com/s/files/1/0959/8697/5069/files/TROTTINETTEELECTRIQUEDUALTRONMINISPECIAL52V21AhNEWEY3CONNECTE_4.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.012,
+   "fill": 0.558
+  },
+  "size": [
+   1106,
+   760
+  ],
+  "error": null
+ },
+ {
+  "slug": "dualtron-mini-special",
+  "i": 2,
+  "url": "https://cdn.shopify.com/s/files/1/0959/8697/5069/files/trottinette-electrique-dualtron-mini-special-double-moteur_vue_haut-223569.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.013,
+   "fill": 0.426
+  },
+  "size": [
+   1080,
+   1080
+  ],
+  "error": null
+ },
+ {
+  "slug": "dualtron-mini-special",
+  "i": 3,
+  "url": "https://cdn.shopify.com/s/files/1/0959/8697/5069/files/TROTTINETTEELECTRIQUEDUALTRONMINISPECIAL52V21AhNEWEY3CONNECTE_2.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition",
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.024,
+   "fill": 0.721
+  },
+  "size": [
+   957,
+   353
+  ],
+  "error": null
+ },
+ {
+  "slug": "dualtron-mini-special",
+  "i": 4,
+  "url": "https://cdn.shopify.com/s/files/1/0959/8697/5069/files/TROTTINETTEELECTRIQUEDUALTRONMINISPECIAL52V21AhNEWEY3CONNECTE_1.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition",
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.026,
+   "fill": 0.777
+  },
+  "size": [
+   873,
+   449
+  ],
+  "error": null
+ },
+ {
+  "slug": "dualtron-mini-special",
+  "i": 5,
+  "url": "https://cdn.shopify.com/s/files/1/0959/8697/5069/files/trottinette-electrique-dualtron-mini-special-guidon-ey3-minimotors-987267.png",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.003,
+   "fill": 0.773
+  },
+  "size": [
+   1015,
+   508
+  ],
+  "error": null
+ },
+ {
+  "slug": "dualtron-mini-special",
+  "i": 6,
+  "url": "https://cdn.shopify.com/s/files/1/0959/8697/5069/files/MMDUALTRONMINI52V21SAPP_TROTTINETTEELECTRIQUEDUALTRONMINISPECIAL52V21AhNEWEY3CONNECTE.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.026,
+   "fill": 0.509
+  },
+  "size": [
+   1106,
+   1106
+  ],
+  "error": null
+ },
+ {
+  "slug": "dualtron-thunder-3",
+  "i": 0,
+  "url": "https://cdn.shopify.com/s/files/1/0260/3312/7472/files/dualtron-thunder-3-electric-scooter-side_2000x_05df9634-d026-4430-b189-189727707db0.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.024,
+   "fill": 0.839
+  },
+  "size": [
+   1573,
+   1732
+  ],
+  "error": null
+ },
+ {
+  "slug": "dualtron-thunder-3",
+  "i": 1,
+  "url": "https://cdn.shopify.com/s/files/1/0260/3312/7472/files/dualtron-thunder-3-electric-scooter-rear_2000x_ba170181-e985-4c03-b514-ffec771a6c43.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.028,
+   "fill": 0.48
+  },
+  "size": [
+   1744,
+   1744
+  ],
+  "error": null
+ },
+ {
+  "slug": "dualtron-thunder-3",
+  "i": 2,
+  "url": "https://cdn.shopify.com/s/files/1/0260/3312/7472/files/dualtron-thunder-3-electric-scooter-lcd-screen_2000x_9e6d9f6a-78d6-480d-97fe-cee37543d2e6.png",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.018,
+   "fill": 0.846
+  },
+  "size": [
+   1744,
+   1744
+  ],
+  "error": null
+ },
+ {
+  "slug": "dualtron-thunder-3",
+  "i": 3,
+  "url": "https://cdn.shopify.com/s/files/1/0018/7616/4681/files/DT-Thunder-3-Image-4.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.005,
+   "fill": 0.8
+  },
+  "size": [
+   1068,
+   1738
+  ],
+  "error": null
+ },
+ {
+  "slug": "dualtron-thunder-3",
+  "i": 4,
+  "url": "https://cdn.shopify.com/s/files/1/0018/7616/4681/files/DT-Thunder-3-Image-2.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.02,
+   "fill": 0.539
+  },
+  "size": [
+   1760,
+   1760
+  ],
+  "error": null
+ },
+ {
+  "slug": "dualtron-thunder-3",
+  "i": 5,
+  "url": "https://cdn.shopify.com/s/files/1/0018/7616/4681/files/DT-Thunder-3-Image-3.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.032,
+   "fill": 0.795
+  },
+  "size": [
+   1249,
+   1748
+  ],
+  "error": null
+ },
+ {
+  "slug": "dualtron-thunder-3",
+  "i": 6,
+  "url": "https://cdn.shopify.com/s/files/1/0018/7616/4681/files/DT-Thunder-3-Image-6.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.009,
+   "fill": 0.275
+  },
+  "size": [
+   1760,
+   1760
+  ],
+  "error": null
+ },
+ {
+  "slug": "dualtron-thunder-3",
+  "i": 7,
+  "url": "https://cdn.shopify.com/s/files/1/0260/3312/7472/files/dualtron-thunder-3-electric-scooter-front-left_2000x_719d5541-bd69-46c0-a6e0-f12555ba2cbc.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.027,
+   "fill": 0.394
+  },
+  "size": [
+   1744,
+   1744
+  ],
+  "error": null
+ },
+ {
+  "slug": "dualtron-togo-max",
+  "i": 0,
+  "url": "https://cdn.shopify.com/s/files/1/0959/8697/5069/files/dualtron-togomax-01.jpg",
+  "verdict": "FAIL",
+  "reasons": [
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 4 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 4 morceaux"
+   ],
+   "parts": 4,
+   "second": 0.226,
+   "vivid": 0.073,
+   "fill": 0.693
+  },
+  "size": [
+   1764,
+   1764
+  ],
+  "error": null
+ },
+ {
+  "slug": "dualtron-togo-max",
+  "i": 1,
+  "url": "https://cdn.shopify.com/s/files/1/0959/8697/5069/files/dualtron-togomax-02.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.001,
+   "fill": 0.595
+  },
+  "size": [
+   1764,
+   1764
+  ],
+  "error": null
+ },
+ {
+  "slug": "dualtron-togo-max",
+  "i": 2,
+  "url": "https://cdn.shopify.com/s/files/1/0959/8697/5069/files/dualtron-togomax-03.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0,
+   "fill": 0.375
+  },
+  "size": [
+   1764,
+   1764
+  ],
+  "error": null
+ },
+ {
+  "slug": "dualtron-togo-max",
+  "i": 3,
+  "url": "https://cdn.shopify.com/s/files/1/0959/8697/5069/files/dualtron-togomax-04.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.007,
+   "fill": 0.797
+  },
+  "size": [
+   1270,
+   1748
+  ],
+  "error": null
+ },
+ {
+  "slug": "dualtron-togo-max",
+  "i": 4,
+  "url": "https://cdn.shopify.com/s/files/1/0959/8697/5069/files/dualtron-togomax-05.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0,
+   "fill": 0.312
+  },
+  "size": [
+   1764,
+   1764
+  ],
+  "error": null
+ },
+ {
+  "slug": "dualtron-togo-max",
+  "i": 5,
+  "url": "https://cdn.shopify.com/s/files/1/0959/8697/5069/files/dualtron-togomax-06.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.011,
+   "fill": 0.302
+  },
+  "size": [
+   1764,
+   1764
+  ],
+  "error": null
+ },
+ {
+  "slug": "dualtron-togo-max",
+  "i": 6,
+  "url": "https://cdn.shopify.com/s/files/1/0959/8697/5069/files/dualtron-togomax-07.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.003,
+   "fill": 0.745
+  },
+  "size": [
+   1748,
+   825
+  ],
+  "error": null
+ },
+ {
+  "slug": "dualtron-togo-max",
+  "i": 7,
+  "url": "https://cdn.shopify.com/s/files/1/0959/8697/5069/files/dualtron-togomax-08.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.002,
+   "fill": 0.724
+  },
+  "size": [
+   1748,
+   767
+  ],
+  "error": null
+ },
+ {
+  "slug": "dualtron-togo-max",
+  "i": 8,
+  "url": "https://cdn.shopify.com/s/files/1/0959/8697/5069/files/dualtron-togomax-09.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.003,
+   "fill": 0.82
+  },
+  "size": [
+   1748,
+   1598
+  ],
+  "error": null
+ },
+ {
+  "slug": "dualtron-togo-max",
+  "i": 9,
+  "url": "https://cdn.shopify.com/s/files/1/0959/8697/5069/files/dualtron-togomax-10.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.003,
+   "fill": 0.809
+  },
+  "size": [
+   1748,
+   1505
+  ],
+  "error": null
+ },
+ {
+  "slug": "dualtron-togo-plus",
+  "i": 0,
+  "url": "https://cdn.shopify.com/s/files/1/0959/8697/5069/files/dualtron-togo-15.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.019,
+   "fill": 0.617
+  },
+  "size": [
+   1764,
+   1376
+  ],
+  "error": null
+ },
+ {
+  "slug": "dualtron-togo-plus",
+  "i": 1,
+  "url": "https://cdn.shopify.com/s/files/1/0959/8697/5069/files/dualtron-togo-14.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0.001,
+   "vivid": 0.15,
+   "fill": 0.637
+  },
+  "size": [
+   1705,
+   1764
+  ],
+  "error": null
+ },
+ {
+  "slug": "dualtron-togo-plus",
+  "i": 2,
+  "url": "https://cdn.shopify.com/s/files/1/0959/8697/5069/files/dualtron-togo-01.jpg",
+  "verdict": "FAIL",
+  "reasons": [
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+   ],
+   "parts": 2,
+   "second": 0.223,
+   "vivid": 0.116,
+   "fill": 0.326
+  },
+  "size": [
+   1764,
+   1764
+  ],
+  "error": null
+ },
+ {
+  "slug": "dualtron-togo-plus",
+  "i": 3,
+  "url": "https://cdn.shopify.com/s/files/1/0959/8697/5069/files/dualtron-togo-02.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "couleurs vives 30 % (visuel marketing ?)"
+  ],
+  "plus": {
+   "verdict": "WARN",
+   "reasons": [
+    "couleurs vives 30 % (visuel marketing ?)"
+   ],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.3,
+   "fill": 0.801
+  },
+  "size": [
+   1764,
+   1764
+  ],
+  "error": null
+ },
+ {
+  "slug": "dualtron-togo-plus",
+  "i": 4,
+  "url": "https://cdn.shopify.com/s/files/1/0959/8697/5069/files/dualtron-togo-03.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.013,
+   "fill": 0.845
+  },
+  "size": [
+   1615,
+   1659
+  ],
+  "error": null
+ },
+ {
+  "slug": "dualtron-togo-plus",
+  "i": 5,
+  "url": "https://cdn.shopify.com/s/files/1/0959/8697/5069/files/dualtron-togo-04.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.011,
+   "fill": 0.538
+  },
+  "size": [
+   1677,
+   1736
+  ],
+  "error": null
+ },
+ {
+  "slug": "dualtron-togo-plus",
+  "i": 6,
+  "url": "https://cdn.shopify.com/s/files/1/0959/8697/5069/files/dualtron-togo-10.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.014,
+   "fill": 0.76
+  },
+  "size": [
+   1734,
+   799
+  ],
+  "error": null
+ },
+ {
+  "slug": "dualtron-togo-plus",
+  "i": 7,
+  "url": "https://cdn.shopify.com/s/files/1/0959/8697/5069/files/dualtron-togo-06.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.001,
+   "fill": 0.584
+  },
+  "size": [
+   1756,
+   958
+  ],
+  "error": null
+ },
+ {
+  "slug": "dualtron-togo-plus",
+  "i": 8,
+  "url": "https://cdn.shopify.com/s/files/1/0959/8697/5069/files/dualtron-togo-00.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.008,
+   "fill": 0.8
+  },
+  "size": [
+   1129,
+   1738
+  ],
+  "error": null
+ },
+ {
+  "slug": "dualtron-ultra-2",
+  "i": 0,
+  "url": "https://voltride.com/wp-content/uploads/2025/02/electric-scooter-dualtron-ultra-2-side-rear.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.024,
+   "fill": 0.427
+  },
+  "size": [
+   1296,
+   1296
+  ],
+  "error": null
+ },
+ {
+  "slug": "dualtron-ultra-2",
+  "i": 1,
+  "url": "https://cdn.shopify.com/s/files/1/0260/3312/7472/products/Dualtron-ultra-II-rear_124e822e-289e-454b-bc58-6c59b5d02138.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.02,
+   "fill": 0.411
+  },
+  "size": [
+   1080,
+   1080
+  ],
+  "error": null
+ },
+ {
+  "slug": "dualtron-ultra-2",
+  "i": 2,
+  "url": "https://voltride.com/wp-content/uploads/2025/02/electric-scooter-dualtron-ultra-2-left-side.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.014,
+   "fill": 0.676
+  },
+  "size": [
+   1296,
+   1296
+  ],
+  "error": null
+ },
+ {
+  "slug": "dualtron-ultra-2",
+  "i": 3,
+  "url": "https://voltride.com/wp-content/uploads/2025/02/electric-scooter-dualtron-ultra-2-rear-wheel.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.001,
+   "fill": 0.824
+  },
+  "size": [
+   1231,
+   905
+  ],
+  "error": null
+ },
+ {
+  "slug": "dualtron-ultra-2",
+  "i": 4,
+  "url": "https://cdn.shopify.com/s/files/1/0260/3312/7472/products/Dualtron-ultra-II-top-view_9523becf-1540-48e3-b099-fe2c2b955ed0.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition",
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.005,
+   "fill": 0.804
+  },
+  "size": [
+   578,
+   969
+  ],
+  "error": null
+ },
+ {
+  "slug": "dualtron-ultra-2",
+  "i": 5,
+  "url": "https://voltride.com/wp-content/uploads/2025/02/electric-scooter-dualtron-ultra-2-main-product-image.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.008,
+   "fill": 0.398
+  },
+  "size": [
+   1296,
+   1296
+  ],
+  "error": null
+ },
+ {
+  "slug": "dualtron-victor-2025",
+  "i": 0,
+  "url": "https://cdn.shopify.com/s/files/1/0959/8697/5069/files/TROTTINETTE_ELECTRIQUE_DUALTRON_VICTOR_60V_24AH_EY4_NUTT_2025_9.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0.002,
+   "vivid": 0.004,
+   "fill": 0.829
+  },
+  "size": [
+   735,
+   1032
+  ],
+  "error": null
+ },
+ {
+  "slug": "dualtron-victor-2025",
+  "i": 1,
+  "url": "https://cdn.shopify.com/s/files/1/0959/8697/5069/files/trottinette_electrique_dualtron_victor_minimotors_IPX5_puissante_ecran_EY4.jpg",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "couleurs vives 31 % (visuel marketing ?)"
+  ],
+  "plus": {
+   "verdict": "WARN",
+   "reasons": [
+    "couleurs vives 31 % (visuel marketing ?)"
+   ],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.306,
+   "fill": 0.796
+  },
+  "size": [
+   1106,
+   1106
+  ],
+  "error": null
+ },
+ {
+  "slug": "dualtron-victor-2025",
+  "i": 2,
+  "url": "https://cdn.shopify.com/s/files/1/0959/8697/5069/files/TROTTINETTE_ELECTRIQUE_DUALTRON_VICTOR_60V_24AH_EY4_NUTT_2025_2.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.002,
+   "fill": 0.806
+  },
+  "size": [
+   999,
+   642
+  ],
+  "error": null
+ },
+ {
+  "slug": "dualtron-victor-2025",
+  "i": 3,
+  "url": "https://cdn.shopify.com/s/files/1/0959/8697/5069/files/TROTTINETTE-ELECTRIQUE-DUALTRON-VICTOR-60V-24AH-EY4-NUTT-2025-3-_14.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0,
+   "fill": 0.767
+  },
+  "size": [
+   764,
+   1106
+  ],
+  "error": null
+ },
+ {
+  "slug": "dualtron-victor-2025",
+  "i": 4,
+  "url": "https://cdn.shopify.com/s/files/1/0959/8697/5069/files/TROTTINETTE_ELECTRIQUE_DUALTRON_VICTOR_60V_24AH_EY4_NUTT_2025_10.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition",
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.005,
+   "fill": 0.786
+  },
+  "size": [
+   995,
+   548
+  ],
+  "error": null
+ },
+ {
+  "slug": "dualtron-victor-2025",
+  "i": 5,
+  "url": "https://cdn.shopify.com/s/files/1/0959/8697/5069/files/TROTTINETTE_ELECTRIQUE_DUALTRON_VICTOR_60V_24AH_EY4_NUTT_2025_11.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.006,
+   "fill": 0.813
+  },
+  "size": [
+   961,
+   622
+  ],
+  "error": null
+ },
+ {
+  "slug": "dualtron-victor-2025",
+  "i": 6,
+  "url": "https://cdn.shopify.com/s/files/1/0959/8697/5069/files/TROTTINETTE_ELECTRIQUE_DUALTRON_VICTOR_60V_24AH_EY4_NUTT_2025_7.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition",
+   "petit élément détaché (2 morceaux)"
+  ],
+  "plus": {
+   "verdict": "WARN",
+   "reasons": [
+    "petit élément détaché (2 morceaux)"
+   ],
+   "parts": 2,
+   "second": 0.017,
+   "vivid": 0.021,
+   "fill": 0.772
+  },
+  "size": [
+   1052,
+   558
+  ],
+  "error": null
+ },
+ {
+  "slug": "dualtron-victor-2025",
+  "i": 7,
+  "url": "https://cdn.shopify.com/s/files/1/0959/8697/5069/files/TROTTINETTEELECTRIQUEDUALTRONVICTOR60V24AHEY4NUTT2025.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.05,
+   "fill": 0.803
+  },
+  "size": [
+   640,
+   1058
+  ],
+  "error": null
+ },
+ {
+  "slug": "thunder",
+  "i": 0,
+  "url": "https://www.maxblinker.com/9694-panda_thickbox_default/dualtron-thunder.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.002,
+   "fill": 0.808
+  },
+  "size": [
+   1738,
+   1150
+  ],
+  "error": null
+ },
+ {
+  "slug": "thunder",
+  "i": 1,
+  "url": "https://www.maxblinker.com/9695-panda_thickbox_default/dualtron-thunder.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.002,
+   "fill": 0.781
+  },
+  "size": [
+   1742,
+   949
+  ],
+  "error": null
+ },
+ {
+  "slug": "thunder",
+  "i": 2,
+  "url": "https://www.maxblinker.com/9697-panda_thickbox_default/dualtron-thunder.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.012,
+   "fill": 0.503
+  },
+  "size": [
+   453,
+   780
+  ],
+  "error": null
+ },
+ {
+  "slug": "thunder",
+  "i": 3,
+  "url": "https://www.maxblinker.com/9698-panda_thickbox_default/dualtron-thunder.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.024,
+   "fill": 0.787
+  },
+  "size": [
+   382,
+   668
+  ],
+  "error": null
+ },
+ {
+  "slug": "thunder",
+  "i": 4,
+  "url": "https://www.maxblinker.com/9699-panda_thickbox_default/dualtron-thunder.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.023,
+   "fill": 0.842
+  },
+  "size": [
+   606,
+   646
+  ],
+  "error": null
+ },
+ {
+  "slug": "thunder",
+  "i": 5,
+  "url": "https://www.maxblinker.com/9700-panda_thickbox_default/dualtron-thunder.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition",
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.023,
+   "fill": 0.785
+  },
+  "size": [
+   254,
+   425
+  ],
+  "error": null
+ },
+ {
+  "slug": "thunder",
+  "i": 6,
+  "url": "https://www.maxblinker.com/9701-panda_thickbox_default/dualtron-thunder.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition",
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.033,
+   "fill": 0.799
+  },
+  "size": [
+   276,
+   420
+  ],
+  "error": null
+ },
+ {
+  "slug": "thunder",
+  "i": 7,
+  "url": "https://www.maxblinker.com/9702-panda_thickbox_default/dualtron-thunder.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.001,
+   "fill": 0.865
+  },
+  "size": [
+   780,
+   780
+  ],
+  "error": null
+ },
+ {
+  "slug": "thunder",
+  "i": 8,
+  "url": "https://www.maxblinker.com/9703-panda_thickbox_default/dualtron-thunder.jpg",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.033,
+   "fill": 0.853
+  },
+  "size": [
+   780,
+   710
+  ],
+  "error": null
+ },
+ {
+  "slug": "thunder",
+  "i": 9,
+  "url": "https://www.maxblinker.com/9704-panda_thickbox_default/dualtron-thunder.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.037,
+   "fill": 0.624
+  },
+  "size": [
+   780,
+   780
+  ],
+  "error": null
+ },
+ {
+  "slug": "kugoo-g2-master",
+  "i": 0,
+  "url": "https://cdn.shopify.com/s/files/1/0291/3422/5501/files/KuKirin_G2_Master_2.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.037,
+   "fill": 0.348
+  },
+  "size": [
+   1080,
+   1080
+  ],
+  "error": null
+ },
+ {
+  "slug": "kugoo-g2-master",
+  "i": 1,
+  "url": "https://cdn.shopify.com/s/files/1/0291/3422/5501/files/KuKirin_G2_Master_3.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.016,
+   "fill": 0.286
+  },
+  "size": [
+   1080,
+   1080
+  ],
+  "error": null
+ },
+ {
+  "slug": "kugoo-g2-master",
+  "i": 2,
+  "url": "https://cdn.shopify.com/s/files/1/0291/3422/5501/files/KuKirin_G2_Master_4.png",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition",
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.044,
+   "fill": 0.771
+  },
+  "size": [
+   795,
+   395
+  ],
+  "error": null
+ },
+ {
+  "slug": "kugoo-g2-master",
+  "i": 3,
+  "url": "https://cdn.shopify.com/s/files/1/0291/3422/5501/files/KuKirin_G2_Master_5.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.028,
+   "fill": 0.544
+  },
+  "size": [
+   828,
+   949
+  ],
+  "error": null
+ },
+ {
+  "slug": "kugoo-g2-master",
+  "i": 4,
+  "url": "https://cdn.shopify.com/s/files/1/0291/3422/5501/files/G2_Master_New_Version-A.png",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 7 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 7 morceaux"
+   ],
+   "parts": 7,
+   "second": 0.206,
+   "vivid": 0.004,
+   "fill": 0.623
+  },
+  "size": [
+   1018,
+   961
+  ],
+  "error": null
+ },
+ {
+  "slug": "kugoo-g2-master",
+  "i": 5,
+  "url": "https://cdn.shopify.com/s/files/1/0291/3422/5501/files/G2_Master_New_Version-B.png",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 8 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 8 morceaux"
+   ],
+   "parts": 8,
+   "second": 0.204,
+   "vivid": 0.038,
+   "fill": 0.75
+  },
+  "size": [
+   1021,
+   955
+  ],
+  "error": null
+ },
+ {
+  "slug": "kugoo-g2-master",
+  "i": 6,
+  "url": "https://cdn.shopify.com/s/files/1/0291/3422/5501/files/KuKirin_G2_Master.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.035,
+   "fill": 0.479
+  },
+  "size": [
+   1080,
+   1080
+  ],
+  "error": null
+ },
+ {
+  "slug": "kugoo-g2-master",
+  "i": 7,
+  "url": "https://cdn.shopify.com/s/files/1/0291/3422/5501/files/G2_Master_7dac118b-8f92-4bf3-b53f-ba663ce86978.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.048,
+   "fill": 0.544
+  },
+  "size": [
+   1296,
+   1296
+  ],
+  "error": null
+ },
+ {
+  "slug": "kugoo-g2-max",
+  "i": 0,
+  "url": "https://cdn.shopify.com/s/files/1/0291/3422/5501/files/G2_Max-1.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.104,
+   "fill": 0.518
+  },
+  "size": [
+   1080,
+   1080
+  ],
+  "error": null
+ },
+ {
+  "slug": "kugoo-g2-max",
+  "i": 1,
+  "url": "https://cdn.shopify.com/s/files/1/0291/3422/5501/files/G2_Max-2.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.067,
+   "fill": 0.285
+  },
+  "size": [
+   1080,
+   1080
+  ],
+  "error": null
+ },
+ {
+  "slug": "kugoo-g2-max",
+  "i": 2,
+  "url": "https://cdn.shopify.com/s/files/1/0291/3422/5501/files/G2_Max-3.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.079,
+   "fill": 0.806
+  },
+  "size": [
+   563,
+   873
+  ],
+  "error": null
+ },
+ {
+  "slug": "kugoo-g2-max",
+  "i": 3,
+  "url": "https://cdn.shopify.com/s/files/1/0291/3422/5501/files/G2_Max-4.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.108,
+   "fill": 0.842
+  },
+  "size": [
+   825,
+   871
+  ],
+  "error": null
+ },
+ {
+  "slug": "kugoo-g2-max",
+  "i": 4,
+  "url": "https://cdn.shopify.com/s/files/1/0291/3422/5501/files/G2_Max-5.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.023,
+   "fill": 0.806
+  },
+  "size": [
+   1061,
+   641
+  ],
+  "error": null
+ },
+ {
+  "slug": "kugoo-g2-max",
+  "i": 5,
+  "url": "https://cdn.shopify.com/s/files/1/0291/3422/5501/files/G2_Max-6.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.103,
+   "fill": 0.837
+  },
+  "size": [
+   987,
+   826
+  ],
+  "error": null
+ },
+ {
+  "slug": "kugoo-g2-max",
+  "i": 6,
+  "url": "https://cdn.shopify.com/s/files/1/0291/3422/5501/files/G2_Max-7.jpg",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.175,
+   "fill": 0.777
+  },
+  "size": [
+   1080,
+   1080
+  ],
+  "error": null
+ },
+ {
+  "slug": "kugoo-g2-max",
+  "i": 7,
+  "url": "https://cdn.shopify.com/s/files/1/0291/3422/5501/files/G2_Max-8.jpg",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.136,
+   "fill": 0.656
+  },
+  "size": [
+   901,
+   774
+  ],
+  "error": null
+ },
+ {
+  "slug": "kugoo-g2-max",
+  "i": 8,
+  "url": "https://cdn.shopify.com/s/files/1/0291/3422/5501/files/G2_Max.jpg",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+   ],
+   "parts": 2,
+   "second": 0.184,
+   "vivid": 0.172,
+   "fill": 0.806
+  },
+  "size": [
+   1102,
+   1163
+  ],
+  "error": null
+ },
+ {
+  "slug": "kugoo-g3",
+  "i": 0,
+  "url": "https://cdn.shopify.com/s/files/1/0617/7482/3631/files/G3_scooters_2.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.16,
+   "fill": 0.702
+  },
+  "size": [
+   985,
+   1036
+  ],
+  "error": null
+ },
+ {
+  "slug": "kugoo-g3",
+  "i": 1,
+  "url": "https://cdn.shopify.com/s/files/1/0617/7482/3631/files/G3_scooters_1.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition",
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.128,
+   "fill": 0.771
+  },
+  "size": [
+   477,
+   996
+  ],
+  "error": null
+ },
+ {
+  "slug": "kugoo-g3",
+  "i": 2,
+  "url": "https://cdn.shopify.com/s/files/1/0617/7482/3631/files/G3_scooters_9.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.175,
+   "fill": 0.819
+  },
+  "size": [
+   939,
+   735
+  ],
+  "error": null
+ },
+ {
+  "slug": "kugoo-g3",
+  "i": 3,
+  "url": "https://cdn.shopify.com/s/files/1/0617/7482/3631/files/G3_scooters_4.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.12,
+   "fill": 0.842
+  },
+  "size": [
+   944,
+   842
+  ],
+  "error": null
+ },
+ {
+  "slug": "kugoo-g3",
+  "i": 4,
+  "url": "https://cdn.shopify.com/s/files/1/0617/7482/3631/files/G3_scooters_3.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.122,
+   "fill": 0.79
+  },
+  "size": [
+   544,
+   963
+  ],
+  "error": null
+ },
+ {
+  "slug": "kugoo-g3",
+  "i": 5,
+  "url": "https://cdn.shopify.com/s/files/1/0617/7482/3631/files/G3_scooters_6.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.035,
+   "fill": 0.843
+  },
+  "size": [
+   1080,
+   870
+  ],
+  "error": null
+ },
+ {
+  "slug": "kugoo-g3",
+  "i": 6,
+  "url": "https://cdn.shopify.com/s/files/1/0617/7482/3631/files/G3_scooters_10.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition",
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.066,
+   "fill": 0.733
+  },
+  "size": [
+   1078,
+   417
+  ],
+  "error": null
+ },
+ {
+  "slug": "langfeite-gt2-rs",
+  "i": 0,
+  "url": "https://langfeite.com/static/upfile/202409140909146054.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.018,
+   "fill": 0.51
+  },
+  "size": [
+   1633,
+   1804
+  ],
+  "error": null
+ },
+ {
+  "slug": "langfeite-gt2-rs",
+  "i": 1,
+  "url": "https://langfeite.com/static/upfile/202409050614093543.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.003,
+   "fill": 0.735
+  },
+  "size": [
+   697,
+   688
+  ],
+  "error": null
+ },
+ {
+  "slug": "langfeite-gt2-rs",
+  "i": 2,
+  "url": "https://langfeite.com/static/upfile/202509240530264898.png",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.03,
+   "fill": 0.638
+  },
+  "size": [
+   610,
+   608
+  ],
+  "error": null
+ },
+ {
+  "slug": "langfeite-gt2-rs",
+  "i": 3,
+  "url": "https://langfeite.com/static/upfile/202509110807252109.png",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "basse définition"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.007,
+   "fill": 0.641
+  },
+  "size": [
+   599,
+   602
+  ],
+  "error": null
+ },
+ {
+  "slug": "langfeite-gt2-rs",
+  "i": 4,
+  "url": "https://langfeite.com/static/upfile/202504020847224606.png",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.008,
+   "fill": 0.674
+  },
+  "size": [
+   684,
+   604
+  ],
+  "error": null
+ },
+ {
+  "slug": "langfeite-gt2-rs",
+  "i": 5,
+  "url": "https://roguescooters.com/cdn/shop/files/GT2-4347_4000x.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.016,
+   "fill": 0.734
+  },
+  "size": [
+   1850,
+   1769
+  ],
+  "error": null
+ },
+ {
+  "slug": "niu-kqi-100f",
+  "i": 0,
+  "url": "https://cdn.shopify.com/s/files/1/0554/6944/1084/files/KQi-100F_Basic-Render_Gray_Right-45.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.002,
+   "fill": 0.607
+  },
+  "size": [
+   1253,
+   1532
+  ],
+  "error": null
+ },
+ {
+  "slug": "niu-kqi-100f",
+  "i": 1,
+  "url": "https://cdn.shopify.com/s/files/1/0554/6944/1084/files/KQi-100F_Basic-Render_Gray_Right-90.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.004,
+   "fill": 0.846
+  },
+  "size": [
+   1324,
+   1414
+  ],
+  "error": null
+ },
+ {
+  "slug": "niu-kqi-100f",
+  "i": 2,
+  "url": "https://cdn.shopify.com/s/files/1/0554/6944/1084/files/KQi-100F_Basic-Render_Gray_Left-90.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.004,
+   "fill": 0.842
+  },
+  "size": [
+   1324,
+   1411
+  ],
+  "error": null
+ },
+ {
+  "slug": "niu-kqi-100f",
+  "i": 3,
+  "url": "https://cdn.shopify.com/s/files/1/0554/6944/1084/files/KQi-100F_Basic-Render_Gray_Front.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0,
+   "fill": 0.774
+  },
+  "size": [
+   737,
+   1457
+  ],
+  "error": null
+ },
+ {
+  "slug": "niu-kqi-100f",
+  "i": 4,
+  "url": "https://cdn.shopify.com/s/files/1/0554/6944/1084/files/KQi-100F_Basic-Render_Black_Right-45.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.002,
+   "fill": 0.45
+  },
+  "size": [
+   1620,
+   1620
+  ],
+  "error": null
+ },
+ {
+  "slug": "niu-kqi-100f",
+  "i": 5,
+  "url": "https://cdn.shopify.com/s/files/1/0554/6944/1084/files/KQi-100F_Basic-Render_Gray_Left-45.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.003,
+   "fill": 0.447
+  },
+  "size": [
+   1620,
+   1620
+  ],
+  "error": null
+ },
+ {
+  "slug": "niu-kqi-300x",
+  "i": 0,
+  "url": "https://cdn.shopify.com/s/files/1/0554/6944/1084/files/KQi-300X_180__Space-Gray.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.015,
+   "fill": 0.319
+  },
+  "size": [
+   1620,
+   1620
+  ],
+  "error": null
+ },
+ {
+  "slug": "niu-kqi-300x",
+  "i": 1,
+  "url": "https://cdn.shopify.com/s/files/1/0554/6944/1084/files/KQi-300X_180__Black_ae55504a-24f3-449f-aa20-f1371bd100b3.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.003,
+   "fill": 0.319
+  },
+  "size": [
+   1620,
+   1620
+  ],
+  "error": null
+ },
+ {
+  "slug": "niu-kqi-300x",
+  "i": 2,
+  "url": "https://cdn.shopify.com/s/files/1/0554/6944/1084/files/KQi-300X_90__Black_1024x1024_765409a5-4211-41d3-af25-49b818e43e8c.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.054,
+   "fill": 0.704
+  },
+  "size": [
+   1010,
+   1014
+  ],
+  "error": null
+ },
+ {
+  "slug": "niu-kqi-300x",
+  "i": 3,
+  "url": "https://cdn.shopify.com/s/files/1/0554/6944/1084/files/KQi-300X_0__Space-Gray_8ff2aa47-42a2-4b3a-a76e-b5bcdb5eeaf8.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.006,
+   "fill": 0.307
+  },
+  "size": [
+   1620,
+   1620
+  ],
+  "error": null
+ },
+ {
+  "slug": "niu-kqi-300x",
+  "i": 4,
+  "url": "https://cdn.shopify.com/s/files/1/0554/6944/1084/files/KQi-300X_45__Black_1024x1024_75228b52-6345-4444-805a-437d4d2bc4e5.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.032,
+   "fill": 0.813
+  },
+  "size": [
+   670,
+   970
+  ],
+  "error": null
+ },
+ {
+  "slug": "niu-kqi-300x",
+  "i": 5,
+  "url": "https://cdn.shopify.com/s/files/1/0554/6944/1084/files/K300-X-2.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.035,
+   "fill": 0.813
+  },
+  "size": [
+   987,
+   1427
+  ],
+  "error": null
+ },
+ {
+  "slug": "niu-kqi-300x",
+  "i": 6,
+  "url": "https://cdn.shopify.com/s/files/1/0554/6944/1084/files/K300-X.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.054,
+   "fill": 0.843
+  },
+  "size": [
+   1303,
+   1367
+  ],
+  "error": null
+ },
+ {
+  "slug": "niu-kqi-air-x",
+  "i": 0,
+  "url": "https://cdn.shopify.com/s/files/1/0554/6944/1084/files/3_cdc2850b-e13b-4d3b-b133-d8384b2b9a50.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.002,
+   "fill": 0.578
+  },
+  "size": [
+   1620,
+   1620
+  ],
+  "error": null
+ },
+ {
+  "slug": "niu-kqi-air-x",
+  "i": 1,
+  "url": "https://cdn.shopify.com/s/files/1/0554/6944/1084/files/2_d0b6e62b-6f7d-4792-bc5d-b1497e7c71c5.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.003,
+   "fill": 0.266
+  },
+  "size": [
+   1620,
+   1620
+  ],
+  "error": null
+ },
+ {
+  "slug": "niu-kqi-air-x",
+  "i": 2,
+  "url": "https://cdn.shopify.com/s/files/1/0554/6944/1084/files/6_f8bf6973-a459-47f2-ad97-cb3e018d383b.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.002,
+   "fill": 0.408
+  },
+  "size": [
+   1620,
+   1620
+  ],
+  "error": null
+ },
+ {
+  "slug": "niu-kqi-air-x",
+  "i": 3,
+  "url": "https://cdn.shopify.com/s/files/1/0554/6944/1084/files/cf9297a0e939385ac9804f0d61d54fc6_8f1a0054-f246-497d-afbb-cb48190eebc2.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.004,
+   "fill": 0.844
+  },
+  "size": [
+   1326,
+   1367
+  ],
+  "error": null
+ },
+ {
+  "slug": "niu-kqi-air-x",
+  "i": 4,
+  "url": "https://cdn.shopify.com/s/files/1/0554/6944/1084/files/4_7a4f979d-bbfb-4b73-b6c6-9ea7de61cf60.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.003,
+   "fill": 0.555
+  },
+  "size": [
+   1325,
+   1523
+  ],
+  "error": null
+ },
+ {
+  "slug": "niu-kqi1-pro",
+  "i": 0,
+  "url": "https://cdn.shopify.com/s/files/1/0554/6944/1084/files/KQi1_Pro_Folding.jpg",
+  "verdict": "FAIL",
+  "reasons": [
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 6 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 6 morceaux"
+   ],
+   "parts": 6,
+   "second": 0.352,
+   "vivid": 0.008,
+   "fill": 0.668
+  },
+  "size": [
+   1620,
+   1620
+  ],
+  "error": null
+ },
+ {
+  "slug": "niu-kqi1-pro",
+  "i": 1,
+  "url": "https://cdn.shopify.com/s/files/1/0554/6944/1084/files/KQi_90E-3.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.013,
+   "fill": 0.813
+  },
+  "size": [
+   986,
+   1434
+  ],
+  "error": null
+ },
+ {
+  "slug": "niu-kqi1-pro",
+  "i": 2,
+  "url": "https://cdn.shopify.com/s/files/1/0554/6944/1084/files/KQi_90E-4.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.015,
+   "fill": 0.652
+  },
+  "size": [
+   1620,
+   1620
+  ],
+  "error": null
+ },
+ {
+  "slug": "niu-kqi1-pro",
+  "i": 3,
+  "url": "https://cdn.shopify.com/s/files/1/0554/6944/1084/files/KQi1_Pro_Type-C_Charging.jpg",
+  "verdict": "FAIL",
+  "reasons": [
+   "cadrage serré",
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 5 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 5 morceaux"
+   ],
+   "parts": 5,
+   "second": 0.061,
+   "vivid": 0,
+   "fill": 0.735
+  },
+  "size": [
+   1620,
+   1620
+  ],
+  "error": null
+ },
+ {
+  "slug": "niu-kqi1-sport",
+  "i": 0,
+  "url": "https://cdn.shopify.com/s/files/1/0554/6944/1084/products/K1_2.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.007,
+   "fill": 0.466
+  },
+  "size": [
+   1620,
+   1620
+  ],
+  "error": null
+ },
+ {
+  "slug": "niu-kqi1-sport",
+  "i": 1,
+  "url": "https://cdn.shopify.com/s/files/1/0554/6944/1084/products/K1_3.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.012,
+   "fill": 0.458
+  },
+  "size": [
+   1620,
+   1620
+  ],
+  "error": null
+ },
+ {
+  "slug": "niu-kqi1-sport",
+  "i": 2,
+  "url": "https://cdn.shopify.com/s/files/1/0554/6944/1084/products/K1_4.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.002,
+   "fill": 0.307
+  },
+  "size": [
+   1620,
+   1620
+  ],
+  "error": null
+ },
+ {
+  "slug": "niu-kqi1-sport",
+  "i": 3,
+  "url": "https://cdn.shopify.com/s/files/1/0554/6944/1084/products/K1_5.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0,
+   "fill": 0.322
+  },
+  "size": [
+   1620,
+   1620
+  ],
+  "error": null
+ },
+ {
+  "slug": "niu-kqi1-sport",
+  "i": 4,
+  "url": "https://cdn.shopify.com/s/files/1/0554/6944/1084/products/5_4ee2e2c8-74b6-4901-a7f7-d287704a6fef.jpg",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "cadrage serré",
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+   ],
+   "parts": 2,
+   "second": 0.311,
+   "vivid": 0.178,
+   "fill": 0.677
+  },
+  "size": [
+   1620,
+   1572
+  ],
+  "error": null
+ },
+ {
+  "slug": "niu-kqi1-sport",
+  "i": 5,
+  "url": "https://cdn.shopify.com/s/files/1/0554/6944/1084/products/K1.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.008,
+   "fill": 0.715
+  },
+  "size": [
+   1516,
+   1542
+  ],
+  "error": null
+ },
+ {
+  "slug": "ninebot-max-g2",
+  "i": 0,
+  "url": "https://segway.imgix.net/catalog/product/cache/d3ec3723470ff918c92e447639eaf984/m/a/max_g2-2_1.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.043,
+   "fill": 0.778
+  },
+  "size": [
+   655,
+   652
+  ],
+  "error": null
+ },
+ {
+  "slug": "ninebot-max-g2",
+  "i": 1,
+  "url": "https://segway.imgix.net/catalog/product/cache/d3ec3723470ff918c92e447639eaf984/m/a/max_g2-3_1.png",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.033,
+   "fill": 0.72
+  },
+  "size": [
+   473,
+   654
+  ],
+  "error": null
+ },
+ {
+  "slug": "ninebot-max-g2",
+  "i": 2,
+  "url": "https://s7ap1.scene7.com/is/image/ninebotstage/assets_segway_cdn_com_customproductpages_21-fold-1-1?dpr=on,3&network=on",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "basse définition",
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.01,
+   "fill": 0.667
+  },
+  "size": [
+   529,
+   913
+  ],
+  "error": null
+ },
+ {
+  "slug": "ninebot-max-g2",
+  "i": 3,
+  "url": "https://s7ap1.scene7.com/is/image/ninebotstage/assets_segway_cdn_com_Product-Pictures__product_full_MAX-G2-1?dpr=on,3&network=on&fmt=png-alpha",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.029,
+   "fill": 0.843
+  },
+  "size": [
+   524,
+   547
+  ],
+  "error": null
+ },
+ {
+  "slug": "ninebot-max-g2",
+  "i": 4,
+  "url": "https://segway.imgix.net/catalog/product/cache/d3ec3723470ff918c92e447639eaf984/m/a/max_g2-1_2.png",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.037,
+   "fill": 0.729
+  },
+  "size": [
+   472,
+   654
+  ],
+  "error": null
+ },
+ {
+  "slug": "teverun-blade-gt-ii",
+  "i": 0,
+  "url": "https://cdn.shopify.com/s/files/1/2476/0976/files/BLADE_GT_II_angle_left_rear.webp",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.1,
+   "fill": 0.503
+  },
+  "size": [
+   1080,
+   1080
+  ],
+  "error": null
+ },
+ {
+  "slug": "teverun-blade-gt-ii",
+  "i": 1,
+  "url": "https://cdn.shopify.com/s/files/1/2476/0976/files/BLADE_GT_II_angle_right.webp",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.109,
+   "fill": 0.848
+  },
+  "size": [
+   941,
+   983
+  ],
+  "error": null
+ },
+ {
+  "slug": "teverun-blade-gt-ii",
+  "i": 2,
+  "url": "https://cdn.shopify.com/s/files/1/2476/0976/files/6_277156fc-1512-49e2-a047-fccad3b5b4b7.webp",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.16,
+   "fill": 0.752
+  },
+  "size": [
+   1079,
+   897
+  ],
+  "error": null
+ },
+ {
+  "slug": "teverun-blade-gt-ii",
+  "i": 3,
+  "url": "https://cdn.shopify.com/s/files/1/2476/0976/files/7_2309a1f8-a34c-473f-af48-2ad585045f71.webp",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.113,
+   "fill": 0.635
+  },
+  "size": [
+   954,
+   968
+  ],
+  "error": null
+ },
+ {
+  "slug": "teverun-blade-gt-ii",
+  "i": 4,
+  "url": "https://cdn.shopify.com/s/files/1/0684/3190/4923/files/GTII202603.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.103,
+   "fill": 0.705
+  },
+  "size": [
+   864,
+   864
+  ],
+  "error": null
+ },
+ {
+  "slug": "teverun-blade-gt-ii",
+  "i": 5,
+  "url": "https://cdn.shopify.com/s/files/1/0684/3190/4923/files/GTII202605.png",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "basse définition",
+   "cadrage serré",
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+   ],
+   "parts": 2,
+   "second": 0.046,
+   "vivid": 0.002,
+   "fill": 0.806
+  },
+  "size": [
+   864,
+   519
+  ],
+  "error": null
+ },
+ {
+  "slug": "teverun-blade-gt-ii",
+  "i": 6,
+  "url": "https://cdn.shopify.com/s/files/1/0684/3190/4923/files/BLADE_GT_II_89893a7e-fb63-47b3-8f6c-c60f4d499b5e.png",
+  "verdict": "FAIL",
+  "reasons": [
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 9 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 9 morceaux"
+   ],
+   "parts": 9,
+   "second": 0.036,
+   "vivid": 0.091,
+   "fill": 0.657
+  },
+  "size": [
+   1764,
+   1764
+  ],
+  "error": null
+ },
+ {
+  "slug": "teverun-fighter-11-plus",
+  "i": 0,
+  "url": "https://cdn.shopify.com/s/files/1/0684/3190/4923/files/teverun-fighter-11-plus-side-view.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.01,
+   "fill": 0.809
+  },
+  "size": [
+   1739,
+   1746
+  ],
+  "error": null
+ },
+ {
+  "slug": "teverun-fighter-11-plus",
+  "i": 1,
+  "url": "https://cdn.shopify.com/s/files/1/0684/3190/4923/files/26.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.006,
+   "fill": 0.389
+  },
+  "size": [
+   1868,
+   1335
+  ],
+  "error": null
+ },
+ {
+  "slug": "teverun-fighter-11-plus",
+  "i": 2,
+  "url": "https://cdn.shopify.com/s/files/1/0684/3190/4923/files/7_19a5e2ba-94a7-4227-a384-1b058a99e8a2.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.006,
+   "fill": 0.752
+  },
+  "size": [
+   1183,
+   1770
+  ],
+  "error": null
+ },
+ {
+  "slug": "teverun-fighter-11-plus",
+  "i": 3,
+  "url": "https://cdn.shopify.com/s/files/1/0684/3190/4923/files/5_02fae409-ebfc-4eca-adff-eef9903534cd.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.017,
+   "fill": 0.441
+  },
+  "size": [
+   1868,
+   1335
+  ],
+  "error": null
+ },
+ {
+  "slug": "teverun-fighter-11-plus",
+  "i": 4,
+  "url": "https://cdn.shopify.com/s/files/1/0959/8697/5069/files/TEVERUN_FIGHTER_ELEVEN_PLUS_60V_37_1_AH_2026_3.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition",
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.005,
+   "fill": 0.771
+  },
+  "size": [
+   999,
+   496
+  ],
+  "error": null
+ },
+ {
+  "slug": "teverun-fighter-11-plus",
+  "i": 5,
+  "url": "https://cdn.shopify.com/s/files/1/0959/8697/5069/files/fighter_eleven_plus_2026.webp",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.017,
+   "fill": 0.696
+  },
+  "size": [
+   1106,
+   1106
+  ],
+  "error": null
+ },
+ {
+  "slug": "teverun-fighter-11-plus",
+  "i": 6,
+  "url": "https://cdn.shopify.com/s/files/1/0684/3190/4923/files/Teverun_Fighter_11.png",
+  "verdict": "FAIL",
+  "reasons": [
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 8 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 8 morceaux"
+   ],
+   "parts": 8,
+   "second": 0.129,
+   "vivid": 0.041,
+   "fill": 0.56
+  },
+  "size": [
+   1382,
+   1382
+  ],
+  "error": null
+ },
+ {
+  "slug": "teverun-fighter-mini-pro",
+  "i": 0,
+  "url": "https://cdn.shopify.com/s/files/1/2476/0976/files/2_6106d4e0-1193-43c6-9e9a-842595c60a62.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.01,
+   "fill": 0.498
+  },
+  "size": [
+   1080,
+   1079
+  ],
+  "error": null
+ },
+ {
+  "slug": "teverun-fighter-mini-pro",
+  "i": 1,
+  "url": "https://cdn.shopify.com/s/files/1/2476/0976/files/3_99b778f6-fec5-41b0-b629-204e10368da1.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.016,
+   "fill": 0.336
+  },
+  "size": [
+   1080,
+   1079
+  ],
+  "error": null
+ },
+ {
+  "slug": "teverun-fighter-mini-pro",
+  "i": 2,
+  "url": "https://cdn.shopify.com/s/files/1/2476/0976/files/6_8d82f045-b431-4543-9b91-ccfb4f6babd3.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.002,
+   "fill": 0.785
+  },
+  "size": [
+   544,
+   998
+  ],
+  "error": null
+ },
+ {
+  "slug": "teverun-fighter-mini-pro",
+  "i": 3,
+  "url": "https://cdn.shopify.com/s/files/1/2476/0976/files/7_18353f61-1382-43b9-b0ef-80098e070a9e.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.003,
+   "fill": 0.469
+  },
+  "size": [
+   1080,
+   1079
+  ],
+  "error": null
+ },
+ {
+  "slug": "teverun-fighter-mini-pro",
+  "i": 4,
+  "url": "https://cdn.shopify.com/s/files/1/2476/0976/files/8_34dc1d29-e75a-48f1-881b-54a3d771d7a7.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.001,
+   "fill": 0.526
+  },
+  "size": [
+   1080,
+   1079
+  ],
+  "error": null
+ },
+ {
+  "slug": "teverun-fighter-mini-pro",
+  "i": 5,
+  "url": "https://cdn.shopify.com/s/files/1/0684/3190/4923/files/teverun-fighter-mini-pro-rear-wheel-brake.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.003,
+   "fill": 0.472
+  },
+  "size": [
+   1868,
+   1335
+  ],
+  "error": null
+ },
+ {
+  "slug": "teverun-fighter-mini-pro",
+  "i": 6,
+  "url": "https://cdn.shopify.com/s/files/1/0684/3190/4923/files/fighter-mini-pro-electric-scooter-side-angle.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.002,
+   "fill": 0.283
+  },
+  "size": [
+   1868,
+   1335
+  ],
+  "error": null
+ },
+ {
+  "slug": "teverun-fighter-mini-pro",
+  "i": 7,
+  "url": "https://cdn.shopify.com/s/files/1/2476/0976/files/1_c0efbdd2-6426-43e5-96e3-029ab1e75744.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.007,
+   "fill": 0.593
+  },
+  "size": [
+   1079,
+   1080
+  ],
+  "error": null
+ },
+ {
+  "slug": "teverun-fighter-mini-pro-v6",
+  "i": 0,
+  "url": "https://cdn.shopify.com/s/files/1/0684/3190/4923/files/teverun-fighter-mini-pro-rear-wheel-brake.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.003,
+   "fill": 0.472
+  },
+  "size": [
+   1868,
+   1335
+  ],
+  "error": null
+ },
+ {
+  "slug": "teverun-fighter-mini-pro-v6",
+  "i": 1,
+  "url": "https://cdn.shopify.com/s/files/1/0684/3190/4923/files/fighter-mini-pro-electric-scooter-side-angle.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.002,
+   "fill": 0.283
+  },
+  "size": [
+   1868,
+   1335
+  ],
+  "error": null
+ },
+ {
+  "slug": "teverun-fighter-mini-pro-v6",
+  "i": 2,
+  "url": "https://cdn.shopify.com/s/files/1/0684/3190/4923/files/fighter_mini_pro.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.001,
+   "fill": 0.259
+  },
+  "size": [
+   1868,
+   1335
+  ],
+  "error": null
+ },
+ {
+  "slug": "teverun-fighter-mini-pro-v6",
+  "i": 3,
+  "url": "https://cdn.shopify.com/s/files/1/0684/3190/4923/files/teverun-fighter-mini-pro-front-tire-view.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.004,
+   "fill": 0.419
+  },
+  "size": [
+   1782,
+   1633
+  ],
+  "error": null
+ },
+ {
+  "slug": "teverun-fighter-mini-pro-v6",
+  "i": 4,
+  "url": "https://cdn.shopify.com/s/files/1/0684/3190/4923/files/Fighte_mini_pro-display.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0,
+   "fill": 0.67
+  },
+  "size": [
+   1834,
+   1040
+  ],
+  "error": null
+ },
+ {
+  "slug": "teverun-fighter-mini-pro-v6",
+  "i": 5,
+  "url": "https://fastride.fr/20193-large_default/trottinette-electrique-teverun-fighter-mini-pro-2026-60v-318ah.jpg",
+  "verdict": "ERROR",
+  "reasons": [],
+  "plus": null,
+  "size": null,
+  "error": "Input buffer contains unsupported image format"
+ },
+ {
+  "slug": "teverun-fighter-mini-pro-v6",
+  "i": 6,
+  "url": "https://fastride.fr/20204-large_default/trottinette-electrique-teverun-fighter-mini-pro-2026-60v-318ah.jpg",
+  "verdict": "ERROR",
+  "reasons": [],
+  "plus": null,
+  "size": null,
+  "error": "Input buffer contains unsupported image format"
+ },
+ {
+  "slug": "teverun-fighter-mini-pro-v6",
+  "i": 7,
+  "url": "https://cdn.shopify.com/s/files/1/0684/3190/4923/files/fighter_mini_pro_2026.png",
+  "verdict": "FAIL",
+  "reasons": [
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 9 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 9 morceaux"
+   ],
+   "parts": 9,
+   "second": 0.132,
+   "vivid": 0.053,
+   "fill": 0.598
+  },
+  "size": [
+   1081,
+   1043
+  ],
+  "error": null
+ },
+ {
+  "slug": "teverun-fighter-mini-q",
+  "i": 0,
+  "url": "https://cdn.shopify.com/s/files/1/0959/8697/5069/files/TEVERUN-FIGHTER-MINI-Q-3-_10.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.011,
+   "fill": 0.786
+  },
+  "size": [
+   764,
+   989
+  ],
+  "error": null
+ },
+ {
+  "slug": "teverun-fighter-mini-q",
+  "i": 1,
+  "url": "https://cdn.shopify.com/s/files/1/0959/8697/5069/files/TEVERUN-FIGHTER-MINI-Q-4-_9.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.01,
+   "fill": 0.71
+  },
+  "size": [
+   649,
+   1125
+  ],
+  "error": null
+ },
+ {
+  "slug": "teverun-fighter-mini-q",
+  "i": 2,
+  "url": "https://cdn.shopify.com/s/files/1/0959/8697/5069/files/TEVERUN-FIGHTER-MINI-Q-6-_8.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.007,
+   "fill": 0.613
+  },
+  "size": [
+   583,
+   934
+  ],
+  "error": null
+ },
+ {
+  "slug": "teverun-fighter-mini-q",
+  "i": 3,
+  "url": "https://cdn.shopify.com/s/files/1/0959/8697/5069/files/TEVERUN-FIGHTER-MINI-Q-5-_6.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0.012,
+   "vivid": 0.005,
+   "fill": 0.602
+  },
+  "size": [
+   671,
+   939
+  ],
+  "error": null
+ },
+ {
+  "slug": "teverun-fighter-mini-q",
+  "i": 4,
+  "url": "https://cdn.shopify.com/s/files/1/0959/8697/5069/files/TROTTINETTEELECTRIQUETEVERUNFIGHTERMINIQ52V13AHPNEUROUTE_5.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition",
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.009,
+   "fill": 0.736
+  },
+  "size": [
+   1016,
+   407
+  ],
+  "error": null
+ },
+ {
+  "slug": "teverun-fighter-mini-q",
+  "i": 5,
+  "url": "https://cdn.shopify.com/s/files/1/0959/8697/5069/files/Trottinette_Electrique_Teverun_Fighter_Q_Pliable-598149.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.009,
+   "fill": 0.585
+  },
+  "size": [
+   1265,
+   910
+  ],
+  "error": null
+ },
+ {
+  "slug": "teverun-fighter-mini-q",
+  "i": 6,
+  "url": "https://cdn.shopify.com/s/files/1/0959/8697/5069/files/Trottinette_Electrique_Teverun_Fighter_Q_guidon-668988.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0,
+   "fill": 0.831
+  },
+  "size": [
+   1296,
+   970
+  ],
+  "error": null
+ },
+ {
+  "slug": "teverun-fighter-mini-q",
+  "i": 7,
+  "url": "https://cdn.shopify.com/s/files/1/0959/8697/5069/files/TEVERUNFIGHTERQ_TROTTINETTEELECTRIQUETEVERUNFIGHTERMINIQ52V13AH_Route.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.007,
+   "fill": 0.45
+  },
+  "size": [
+   1106,
+   1106
+  ],
+  "error": null
+ },
+ {
+  "slug": "teverun-fighter-mini-v6",
+  "i": 0,
+  "url": "https://cdn.shopify.com/s/files/1/0959/8697/5069/files/TROTTINETTE_ELECTRIQUE_TEVERUN_FIGHTER_MINI_ECO_CARBONE_52V_20_8AH_2026_4.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.004,
+   "fill": 0.8
+  },
+  "size": [
+   615,
+   998
+  ],
+  "error": null
+ },
+ {
+  "slug": "teverun-fighter-mini-v6",
+  "i": 1,
+  "url": "https://cdn.shopify.com/s/files/1/0959/8697/5069/files/TROTTINETTE_ELECTRIQUE_TEVERUN_FIGHTER_MINI_ECO_52V_20_8AH_MOTEUR_BOSCH_2025_7.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.007,
+   "fill": 0.656
+  },
+  "size": [
+   1106,
+   1106
+  ],
+  "error": null
+ },
+ {
+  "slug": "teverun-fighter-mini-v6",
+  "i": 2,
+  "url": "https://cdn.shopify.com/s/files/1/0959/8697/5069/files/TROTTINETTE_ELECTRIQUE_TEVERUN_FIGHTER_MINI_ECO_52V_20_8AH_MOTEUR_BOSCH_2025_8.jpg",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "cadrage serré",
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+   ],
+   "parts": 2,
+   "second": 0.035,
+   "vivid": 0.004,
+   "fill": 0.749
+  },
+  "size": [
+   1106,
+   1106
+  ],
+  "error": null
+ },
+ {
+  "slug": "teverun-fighter-mini-v6",
+  "i": 3,
+  "url": "https://cdn.shopify.com/s/files/1/0959/8697/5069/files/TROTTINETTE_ELECTRIQUE_TEVERUN_FIGHTER_MINI_ECO_52V_20_8AH_MOTEUR_BOSCH_2025_10.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.015,
+   "fill": 0.548
+  },
+  "size": [
+   1106,
+   1106
+  ],
+  "error": null
+ },
+ {
+  "slug": "teverun-fighter-mini-v6",
+  "i": 4,
+  "url": "https://cdn.shopify.com/s/files/1/0959/8697/5069/files/TROTTINETTE_ELECTRIQUE_TEVERUN_FIGHTER_MINI_ECO_CARBONE_52V_20_8AH_2026_6.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition",
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.003,
+   "fill": 0.778
+  },
+  "size": [
+   997,
+   518
+  ],
+  "error": null
+ },
+ {
+  "slug": "teverun-fighter-mini-v6",
+  "i": 5,
+  "url": "https://cdn.shopify.com/s/files/1/0959/8697/5069/files/TROTTINETTE_ELECTRIQUE_TEVERUN_FIGHTER_MINI_ECO_CARBONE_52V_20_8AH_2026_3.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.003,
+   "fill": 0.819
+  },
+  "size": [
+   1000,
+   759
+  ],
+  "error": null
+ },
+ {
+  "slug": "teverun-fighter-mini-v6",
+  "i": 6,
+  "url": "https://fastride.fr/20279-large_default/trottinette-electrique-teverun-fighter-mini-2026-52v-30ah-finition-carbone.jpg",
+  "verdict": "ERROR",
+  "reasons": [],
+  "plus": null,
+  "size": null,
+  "error": "Input buffer contains unsupported image format"
+ },
+ {
+  "slug": "teverun-fighter-supreme-ultra",
+  "i": 0,
+  "url": "https://cdn.shopify.com/s/files/1/2476/0976/files/tfsu2-135.webp",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.009,
+   "fill": 0.698
+  },
+  "size": [
+   1080,
+   1080
+  ],
+  "error": null
+ },
+ {
+  "slug": "teverun-fighter-supreme-ultra",
+  "i": 1,
+  "url": "https://cdn.shopify.com/s/files/1/2476/0976/files/tfsu2-90.webp",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.011,
+   "fill": 0.837
+  },
+  "size": [
+   978,
+   980
+  ],
+  "error": null
+ },
+ {
+  "slug": "teverun-fighter-supreme-ultra",
+  "i": 2,
+  "url": "https://cdn.shopify.com/s/files/1/2476/0976/files/tfsu-other45.webp",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.005,
+   "fill": 0.518
+  },
+  "size": [
+   1080,
+   1080
+  ],
+  "error": null
+ },
+ {
+  "slug": "teverun-fighter-supreme-ultra",
+  "i": 3,
+  "url": "https://cdn.shopify.com/s/files/1/0684/3190/4923/files/b8909c0dac90838d4d9692be33af1cd1.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.004,
+   "fill": 0.825
+  },
+  "size": [
+   1581,
+   1742
+  ],
+  "error": null
+ },
+ {
+  "slug": "teverun-fighter-supreme-ultra",
+  "i": 4,
+  "url": "https://cdn.shopify.com/s/files/1/0684/3190/4923/files/d4a55999bbf3c943fddba2853db2c368.png",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.006,
+   "fill": 0.635
+  },
+  "size": [
+   1790,
+   1389
+  ],
+  "error": null
+ },
+ {
+  "slug": "teverun-fighter-supreme-ultra",
+  "i": 5,
+  "url": "https://cdn.shopify.com/s/files/1/0684/3190/4923/files/367c47c62f77498e09e966fa4589798b.png",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0,
+   "fill": 0.754
+  },
+  "size": [
+   1790,
+   1285
+  ],
+  "error": null
+ },
+ {
+  "slug": "teverun-fighter-supreme-ultra",
+  "i": 6,
+  "url": "https://cdn.shopify.com/s/files/1/2476/0976/files/tfsu2-45.webp",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.003,
+   "fill": 0.807
+  },
+  "size": [
+   653,
+   1006
+  ],
+  "error": null
+ },
+ {
+  "slug": "iscooter-i10",
+  "i": 0,
+  "url": "https://cdn.shopify.com/s/files/1/0923/5998/3402/files/1_13fdc9f1-edb1-4f88-a7ab-026c508b90e7.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.039,
+   "fill": 0.546
+  },
+  "size": [
+   1620,
+   1620
+  ],
+  "error": null
+ },
+ {
+  "slug": "iscooter-i10",
+  "i": 1,
+  "url": "https://cdn.shopify.com/s/files/1/0923/5998/3402/files/2_3e674bb9-654e-47b5-b247-5b960156c466.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.062,
+   "fill": 0.701
+  },
+  "size": [
+   1620,
+   1620
+  ],
+  "error": null
+ },
+ {
+  "slug": "iscooter-i10",
+  "i": 2,
+  "url": "https://cdn.shopify.com/s/files/1/0923/5998/3402/files/3_d06a6eba-a8cf-4add-9d21-644428ed276d.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.054,
+   "fill": 0.821
+  },
+  "size": [
+   1143,
+   1532
+  ],
+  "error": null
+ },
+ {
+  "slug": "iscooter-i10",
+  "i": 3,
+  "url": "https://cdn.shopify.com/s/files/1/0923/5998/3402/files/4_4c35e9c7-9d16-4460-87df-8c50e610fd6c.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.047,
+   "fill": 0.784
+  },
+  "size": [
+   1501,
+   812
+  ],
+  "error": null
+ },
+ {
+  "slug": "iscooter-i10",
+  "i": 4,
+  "url": "https://cdn.shopify.com/s/files/1/0923/5998/3402/files/5_5d522fec-6b5b-487a-82eb-f109c17c7e4b.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.049,
+   "fill": 0.566
+  },
+  "size": [
+   1620,
+   1620
+  ],
+  "error": null
+ },
+ {
+  "slug": "iscooter-i10",
+  "i": 5,
+  "url": "https://cdn.shopify.com/s/files/1/0923/5998/3402/files/6_01f8e139-53d0-4064-a837-a6b6a4f6cfa7.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.039,
+   "fill": 0.677
+  },
+  "size": [
+   1347,
+   1573
+  ],
+  "error": null
+ },
+ {
+  "slug": "iscooter-i10",
+  "i": 6,
+  "url": "https://cdn.shopify.com/s/files/1/0923/5998/3402/files/9_21299246-4e21-4d90-b88e-56d9fbefe09c.jpg",
+  "verdict": "FAIL",
+  "reasons": [
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 5 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 5 morceaux"
+   ],
+   "parts": 5,
+   "second": 0.034,
+   "vivid": 0.036,
+   "fill": 0.698
+  },
+  "size": [
+   1447,
+   1575
+  ],
+  "error": null
+ },
+ {
+  "slug": "iscooter-i10",
+  "i": 7,
+  "url": "https://cdn.shopify.com/s/files/1/0923/5998/3402/files/i10_42d3cf05-72c4-4320-be1d-c18d27025b14.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.038,
+   "fill": 0.483
+  },
+  "size": [
+   1620,
+   1620
+  ],
+  "error": null
+ },
+ {
+  "slug": "iscooter-i10-max",
+  "i": 0,
+  "url": "https://cdn.shopify.com/s/files/1/0732/5640/3225/files/2_f85ba45e-362a-4f4a-8d31-77d9c0ae56e2.jpg",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 5 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 5 morceaux"
+   ],
+   "parts": 5,
+   "second": 0.146,
+   "vivid": 0.021,
+   "fill": 0.731
+  },
+  "size": [
+   1536,
+   1760
+  ],
+  "error": null
+ },
+ {
+  "slug": "iscooter-i10-max",
+  "i": 1,
+  "url": "https://cdn.shopify.com/s/files/1/0732/5640/3225/files/3_57318673-f918-4881-8b4e-2c2a79df0ee9.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.054,
+   "fill": 0.821
+  },
+  "size": [
+   1143,
+   1532
+  ],
+  "error": null
+ },
+ {
+  "slug": "iscooter-i10-max",
+  "i": 2,
+  "url": "https://cdn.shopify.com/s/files/1/0732/5640/3225/files/4_4c35e9c7-9d16-4460-87df-8c50e610fd6c.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.049,
+   "fill": 0.784
+  },
+  "size": [
+   1501,
+   813
+  ],
+  "error": null
+ },
+ {
+  "slug": "iscooter-i10-max",
+  "i": 3,
+  "url": "https://cdn.shopify.com/s/files/1/0732/5640/3225/files/6_01f8e139-53d0-4064-a837-a6b6a4f6cfa7.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.042,
+   "fill": 0.677
+  },
+  "size": [
+   1347,
+   1573
+  ],
+  "error": null
+ },
+ {
+  "slug": "iscooter-i10-max",
+  "i": 4,
+  "url": "https://cdn.shopify.com/s/files/1/0732/5640/3225/files/8_52e2424f-83af-44de-be38-ab2cc8edda84.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.042,
+   "fill": 0.735
+  },
+  "size": [
+   1620,
+   1620
+  ],
+  "error": null
+ },
+ {
+  "slug": "iscooter-i10-max",
+  "i": 5,
+  "url": "https://cdn.shopify.com/s/files/1/0732/5640/3225/files/10_882c4120-27bc-4150-b16f-7d03d1ed7279.jpg",
+  "verdict": "FAIL",
+  "reasons": [
+   "cadrage serré",
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux"
+   ],
+   "parts": 3,
+   "second": 0.215,
+   "vivid": 0.032,
+   "fill": 0.841
+  },
+  "size": [
+   1261,
+   1544
+  ],
+  "error": null
+ },
+ {
+  "slug": "iscooter-i9-max",
+  "i": 0,
+  "url": "https://cdn.shopify.com/s/files/1/0659/8082/5864/files/iScooteri9MaxElectricScooter_2.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.017,
+   "fill": 0.84
+  },
+  "size": [
+   944,
+   1027
+  ],
+  "error": null
+ },
+ {
+  "slug": "iscooter-i9-max",
+  "i": 1,
+  "url": "https://cdn.shopify.com/s/files/1/0659/8082/5864/files/iScooteri9MaxElectricScooter_5.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.037,
+   "fill": 0.79
+  },
+  "size": [
+   577,
+   1024
+  ],
+  "error": null
+ },
+ {
+  "slug": "iscooter-i9-max",
+  "i": 2,
+  "url": "https://cdn.shopify.com/s/files/1/0659/8082/5864/files/iScooteri9MaxElectricScooter_6.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.054,
+   "fill": 0.709
+  },
+  "size": [
+   1080,
+   1080
+  ],
+  "error": null
+ },
+ {
+  "slug": "iscooter-i9-max",
+  "i": 3,
+  "url": "https://cdn.shopify.com/s/files/1/0659/8082/5864/files/iScooteri9MaxElectricScooter_7.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.011,
+   "fill": 0.817
+  },
+  "size": [
+   1064,
+   870
+  ],
+  "error": null
+ },
+ {
+  "slug": "iscooter-i9-max",
+  "i": 4,
+  "url": "https://cdn.shopify.com/s/files/1/0659/8082/5864/files/iScooteri9MaxElectricScooter_8.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.052,
+   "fill": 0.82
+  },
+  "size": [
+   967,
+   1080
+  ],
+  "error": null
+ },
+ {
+  "slug": "iscooter-i9-max",
+  "i": 5,
+  "url": "https://cdn.shopify.com/s/files/1/0659/8082/5864/files/iScooteri9MaxElectricScooter_9.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.037,
+   "fill": 0.835
+  },
+  "size": [
+   1021,
+   887
+  ],
+  "error": null
+ },
+ {
+  "slug": "iscooter-i9-max",
+  "i": 6,
+  "url": "https://cdn.shopify.com/s/files/1/0659/8082/5864/files/iScooteri9MaxElectricScooter_11.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.043,
+   "fill": 0.795
+  },
+  "size": [
+   997,
+   1003
+  ],
+  "error": null
+ },
+ {
+  "slug": "iscooter-i9-max",
+  "i": 7,
+  "url": "https://cdn.shopify.com/s/files/1/0659/8082/5864/files/iScooteri9MaxElectricScooter_1.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.039,
+   "fill": 0.643
+  },
+  "size": [
+   1080,
+   1080
+  ],
+  "error": null
+ },
+ {
+  "slug": "iscooter-i9-max",
+  "i": 8,
+  "url": "https://cdn.shopify.com/s/files/1/0659/8082/5864/files/iScooteri9MaxElectricScooter_3.jpg",
+  "verdict": "FAIL",
+  "reasons": [
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux"
+   ],
+   "parts": 3,
+   "second": 0.248,
+   "vivid": 0.027,
+   "fill": 0.643
+  },
+  "size": [
+   1080,
+   1080
+  ],
+  "error": null
+ },
+ {
+  "slug": "iscooter-ix3",
+  "i": 0,
+  "url": "https://cdn.shopify.com/s/files/1/0923/5998/3402/files/2_455ea7f4-8c74-4824-a100-d43ddd18a3e4.jpg",
+  "verdict": "FAIL",
+  "reasons": [
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 4 morceaux",
+   "couleurs vives 37 % (visuel marketing ?)"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 4 morceaux",
+    "couleurs vives 37 % (visuel marketing ?)"
+   ],
+   "parts": 4,
+   "second": 0.087,
+   "vivid": 0.375,
+   "fill": 0.608
+  },
+  "size": [
+   1080,
+   1080
+  ],
+  "error": null
+ },
+ {
+  "slug": "iscooter-ix3",
+  "i": 1,
+  "url": "https://cdn.shopify.com/s/files/1/0923/5998/3402/files/3_e4c2eb0d-ca24-47b2-98e4-9fd2a4290772.jpg",
+  "verdict": "FAIL",
+  "reasons": [
+   "cadrage serré",
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux"
+   ],
+   "parts": 3,
+   "second": 0.037,
+   "vivid": 0.269,
+   "fill": 0.675
+  },
+  "size": [
+   1080,
+   1080
+  ],
+  "error": null
+ },
+ {
+  "slug": "iscooter-ix3",
+  "i": 2,
+  "url": "https://cdn.shopify.com/s/files/1/0923/5998/3402/files/4_e1e6a49a-71af-4c2e-95cb-034c57749c2b.jpg",
+  "verdict": "FAIL",
+  "reasons": [
+   "cadrage serré",
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+   ],
+   "parts": 2,
+   "second": 0.103,
+   "vivid": 0.048,
+   "fill": 0.748
+  },
+  "size": [
+   976,
+   938
+  ],
+  "error": null
+ },
+ {
+  "slug": "iscooter-ix3",
+  "i": 3,
+  "url": "https://cdn.shopify.com/s/files/1/0923/5998/3402/files/5_1c355037-c332-461e-ad94-61a589df052e.jpg",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "cadrage serré",
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+   ],
+   "parts": 2,
+   "second": 0.473,
+   "vivid": 0.068,
+   "fill": 0.743
+  },
+  "size": [
+   1080,
+   1080
+  ],
+  "error": null
+ },
+ {
+  "slug": "iscooter-ix3",
+  "i": 4,
+  "url": "https://cdn.shopify.com/s/files/1/0923/5998/3402/files/6_1d9ffb2c-edb1-4fde-b669-2d8a78f72936.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.012,
+   "fill": 0.772
+  },
+  "size": [
+   520,
+   814
+  ],
+  "error": null
+ },
+ {
+  "slug": "iscooter-ix3",
+  "i": 5,
+  "url": "https://cdn.shopify.com/s/files/1/0923/5998/3402/files/7_67e103c2-18f7-4b7f-835b-f6d8e60990b0.jpg",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.045,
+   "fill": 0.617
+  },
+  "size": [
+   1007,
+   1068
+  ],
+  "error": null
+ },
+ {
+  "slug": "iscooter-ix3",
+  "i": 6,
+  "url": "https://cdn.shopify.com/s/files/1/0923/5998/3402/files/1_40f92ccf-af0b-4731-9b32-3cf7a83c1002.jpg",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux"
+   ],
+   "parts": 3,
+   "second": 0.069,
+   "vivid": 0.035,
+   "fill": 0.74
+  },
+  "size": [
+   1080,
+   1080
+  ],
+  "error": null
+ },
+ {
+  "slug": "iscooter-ix3",
+  "i": 7,
+  "url": "https://cdn.shopify.com/s/files/1/0923/5998/3402/files/1_6b7d30d6-06be-473b-9800-cba7c6d4b671.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.074,
+   "fill": 0.603
+  },
+  "size": [
+   1546,
+   1760
+  ],
+  "error": null
+ },
+ {
+  "slug": "iscooter-ix8",
+  "i": 0,
+  "url": "https://cdn.shopify.com/s/files/1/0659/8082/5864/files/ix8-off-road-e-scooter-foldable.jpg",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux"
+   ],
+   "parts": 3,
+   "second": 0.117,
+   "vivid": 0.031,
+   "fill": 0.598
+  },
+  "size": [
+   954,
+   792
+  ],
+  "error": null
+ },
+ {
+  "slug": "iscooter-ix8",
+  "i": 1,
+  "url": "https://cdn.shopify.com/s/files/1/0659/8082/5864/files/ix8-off-road-e-scooter-brakes.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.18,
+   "fill": 0.506
+  },
+  "size": [
+   1080,
+   1080
+  ],
+  "error": null
+ },
+ {
+  "slug": "iscooter-ix8",
+  "i": 2,
+  "url": "https://cdn.shopify.com/s/files/1/0659/8082/5864/files/ix8-off-road-e-scooter-TIRE.jpg",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "cadrage serré",
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux"
+   ],
+   "parts": 3,
+   "second": 0.369,
+   "vivid": 0.043,
+   "fill": 0.675
+  },
+  "size": [
+   1080,
+   1080
+  ],
+  "error": null
+ },
+ {
+  "slug": "iscooter-ix8",
+  "i": 3,
+  "url": "https://cdn.shopify.com/s/files/1/0659/8082/5864/files/ix8-e-scooter_7.jpg",
+  "verdict": "FAIL",
+  "reasons": [
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+   ],
+   "parts": 2,
+   "second": 0.296,
+   "vivid": 0.047,
+   "fill": 0.832
+  },
+  "size": [
+   878,
+   1053
+  ],
+  "error": null
+ },
+ {
+  "slug": "iscooter-ix8",
+  "i": 4,
+  "url": "https://cdn.shopify.com/s/files/1/0923/5998/3402/files/3_dbeb62e4-962f-48f5-b664-467c0b565c26.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.078,
+   "fill": 0.707
+  },
+  "size": [
+   1229,
+   1754
+  ],
+  "error": null
+ },
+ {
+  "slug": "iscooter-ix8",
+  "i": 5,
+  "url": "https://cdn.shopify.com/s/files/1/0923/5998/3402/files/2_6a0a6371-3c58-40f6-9d88-489a61c0a525.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.033,
+   "fill": 0.717
+  },
+  "size": [
+   648,
+   1744
+  ],
+  "error": null
+ },
+ {
+  "slug": "iscooter-ix8",
+  "i": 6,
+  "url": "https://cdn.shopify.com/s/files/1/0659/8082/5864/files/ix8-e-scooter_2.jpg",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.078,
+   "fill": 0.804
+  },
+  "size": [
+   1350,
+   1754
+  ],
+  "error": null
+ },
+ {
+  "slug": "iscooter-w6",
+  "i": 0,
+  "url": "https://cdn.shopify.com/s/files/1/0659/8082/5864/files/w6_14.jpg",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux"
+   ],
+   "parts": 3,
+   "second": 0.374,
+   "vivid": 0.058,
+   "fill": 0.782
+  },
+  "size": [
+   921,
+   961
+  ],
+  "error": null
+ },
+ {
+  "slug": "iscooter-w6",
+  "i": 1,
+  "url": "https://cdn.shopify.com/s/files/1/0659/8082/5864/files/w6-detail_1.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0,
+   "fill": 0.865
+  },
+  "size": [
+   1080,
+   1080
+  ],
+  "error": null
+ },
+ {
+  "slug": "iscooter-w6",
+  "i": 2,
+  "url": "https://cdn.shopify.com/s/files/1/0659/8082/5864/files/w6-detail_2.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.083,
+   "fill": 0.822
+  },
+  "size": [
+   975,
+   951
+  ],
+  "error": null
+ },
+ {
+  "slug": "iscooter-w6",
+  "i": 3,
+  "url": "https://cdn.shopify.com/s/files/1/0659/8082/5864/files/w6-detail_5.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.05,
+   "fill": 0.663
+  },
+  "size": [
+   1080,
+   1080
+  ],
+  "error": null
+ },
+ {
+  "slug": "iscooter-w6",
+  "i": 4,
+  "url": "https://cdn.shopify.com/s/files/1/0659/8082/5864/files/w6-display-detail.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.027,
+   "fill": 0.852
+  },
+  "size": [
+   1080,
+   960
+  ],
+  "error": null
+ },
+ {
+  "slug": "iscooter-w6",
+  "i": 5,
+  "url": "https://cdn.shopify.com/s/files/1/0659/8082/5864/files/w6_1.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.029,
+   "fill": 0.603
+  },
+  "size": [
+   891,
+   1058
+  ],
+  "error": null
+ },
+ {
+  "slug": "iscooter-w8",
+  "i": 0,
+  "url": "https://cdn.shopify.com/s/files/1/0659/8082/5864/files/w8_6.jpg",
+  "verdict": "FAIL",
+  "reasons": [
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+   ],
+   "parts": 2,
+   "second": 0.451,
+   "vivid": 0.047,
+   "fill": 0.734
+  },
+  "size": [
+   1728,
+   1728
+  ],
+  "error": null
+ },
+ {
+  "slug": "iscooter-w8",
+  "i": 1,
+  "url": "https://cdn.shopify.com/s/files/1/0659/8082/5864/files/w8_4.jpg",
+  "verdict": "FAIL",
+  "reasons": [
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+   ],
+   "parts": 2,
+   "second": 0.195,
+   "vivid": 0.044,
+   "fill": 0.556
+  },
+  "size": [
+   1728,
+   1728
+  ],
+  "error": null
+ },
+ {
+  "slug": "iscooter-w8",
+  "i": 2,
+  "url": "https://cdn.shopify.com/s/files/1/0659/8082/5864/files/w8-electric-scooter-tire-main_bd07c76d-71ea-46b5-b5d6-5d2cf3c1e870.jpg",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.079,
+   "fill": 0.484
+  },
+  "size": [
+   1728,
+   1728
+  ],
+  "error": null
+ },
+ {
+  "slug": "iscooter-w8",
+  "i": 3,
+  "url": "https://cdn.shopify.com/s/files/1/0659/8082/5864/files/w8-electric-scooter-suspensions-main_79371c5a-a0a0-40a5-8b56-26fc0a1c2690.jpg",
+  "verdict": "FAIL",
+  "reasons": [
+   "cadrage serré",
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux"
+   ],
+   "parts": 3,
+   "second": 0.232,
+   "vivid": 0.155,
+   "fill": 0.846
+  },
+  "size": [
+   1728,
+   1728
+  ],
+  "error": null
+ },
+ {
+  "slug": "iscooter-w8",
+  "i": 4,
+  "url": "https://cdn.shopify.com/s/files/1/0659/8082/5864/files/w8-electric-scooter-display_894d4465-a3a4-44e4-829e-c771a476d584.jpg",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux"
+   ],
+   "parts": 3,
+   "second": 0.192,
+   "vivid": 0.113,
+   "fill": 0.788
+  },
+  "size": [
+   1728,
+   1728
+  ],
+  "error": null
+ },
+ {
+  "slug": "iscooter-w8",
+  "i": 5,
+  "url": "https://cdn.shopify.com/s/files/1/0659/8082/5864/files/w8_1.jpg",
+  "verdict": "FAIL",
+  "reasons": [
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux"
+   ],
+   "parts": 3,
+   "second": 0.177,
+   "vivid": 0.022,
+   "fill": 0.83
+  },
+  "size": [
+   1280,
+   1573
+  ],
+  "error": null
+ },
+ {
+  "slug": "iscooter-w9-air",
+  "i": 0,
+  "url": "https://cdn.shopify.com/s/files/1/0659/8082/5864/files/W9Airwithappwhite.png",
+  "verdict": "FAIL",
+  "reasons": [
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux"
+   ],
+   "parts": 3,
+   "second": 0.325,
+   "vivid": 0.092,
+   "fill": 0.842
+  },
+  "size": [
+   947,
+   1000
+  ],
+  "error": null
+ },
+ {
+  "slug": "iscooter-w9-air",
+  "i": 1,
+  "url": "https://cdn.shopify.com/s/files/1/0659/8082/5864/files/W9Airbrightrearlight.png",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.179,
+   "fill": 0.714
+  },
+  "size": [
+   1080,
+   1080
+  ],
+  "error": null
+ },
+ {
+  "slug": "iscooter-w9-air",
+  "i": 2,
+  "url": "https://cdn.shopify.com/s/files/1/0659/8082/5864/files/W9Airrearsuspension.png",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0.014,
+   "vivid": 0,
+   "fill": 0.502
+  },
+  "size": [
+   1080,
+   1080
+  ],
+  "error": null
+ },
+ {
+  "slug": "iscooter-w9-air",
+  "i": 3,
+  "url": "https://cdn.shopify.com/s/files/1/0659/8082/5864/files/W9Airbrake.png",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0,
+   "fill": 0.86
+  },
+  "size": [
+   1080,
+   1080
+  ],
+  "error": null
+ },
+ {
+  "slug": "iscooter-w9-air",
+  "i": 4,
+  "url": "https://cdn.shopify.com/s/files/1/0659/8082/5864/files/W9Airfrontsuspension.png",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.031,
+   "fill": 0.865
+  },
+  "size": [
+   1080,
+   1080
+  ],
+  "error": null
+ },
+ {
+  "slug": "iscooter-w9-air",
+  "i": 5,
+  "url": "https://cdn.shopify.com/s/files/1/0659/8082/5864/files/W9Airlcdscreen.png",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.001,
+   "fill": 0.842
+  },
+  "size": [
+   1080,
+   918
+  ],
+  "error": null
+ },
+ {
+  "slug": "iscooter-w9-air",
+  "i": 6,
+  "url": "https://cdn.shopify.com/s/files/1/0659/8082/5864/files/W9Airbrightfrontlight.png",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0.004,
+   "vivid": 0,
+   "fill": 0.853
+  },
+  "size": [
+   977,
+   1080
+  ],
+  "error": null
+ }
+]
