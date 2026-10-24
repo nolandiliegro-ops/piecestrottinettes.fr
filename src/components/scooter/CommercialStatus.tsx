@@ -64,8 +64,9 @@ export const StatusOnCard = ({ s, look }: { s: WithCommercialStatus; look: Etiqu
   if (look === 4) {
     if (!stopped && !eol) return null;
     return (
-      <span className="block -mx-3 px-3 py-1.5 text-sm font-bold" style={{ fontFamily: FONT, color: CARBON, background: "#F2EBDD", borderTop: `1px solid ${LINE}`, borderBottom: `1px solid ${LINE}` }}>
-        {eol ? "Fin de série" : "Plus vendue"} · <span style={{ color: GREEN }}>on a ses pièces</span>
+      <span className="block -mx-3 px-3 py-1.5 text-sm leading-tight" style={{ fontFamily: FONT, background: "#F2EBDD", borderTop: `1px solid ${LINE}`, borderBottom: `1px solid ${LINE}` }}>
+        <b className="block" style={{ color: CARBON }}>{eol ? "Fin de série" : "Plus vendue neuve"}</b>
+        <span className="block font-bold" style={{ color: GREEN }}>On a ses pièces</span>
       </span>
     );
   }
@@ -113,7 +114,7 @@ export const StatusOnFiche = ({ s, look, name }: { s: WithCommercialStatus; look
   if (look === 2) {
     return (
       <div className="mt-3 flex flex-wrap items-center gap-3">
-        <span className="-rotate-[4deg] px-3 py-1.5 text-base uppercase leading-none" style={{ fontFamily: UNB, fontWeight: 900, fontStyle: "italic", color: CARBON, boxShadow: `inset 0 0 0 2px ${CARBON}`, background: "#FFFFFF" }}>{label}</span>
+        <span className="-rotate-[3deg] px-3 py-1.5 text-sm lg:text-base uppercase leading-none whitespace-nowrap" style={{ fontFamily: UNB, fontWeight: 900, fontStyle: "italic", color: CARBON, boxShadow: `inset 0 0 0 2px ${CARBON}`, background: "#FFFFFF" }}>{label}</span>
         <span className="text-sm text-[#374151]" style={{ fontFamily: FONT }}>Ses pièces restent disponibles.</span>
       </div>
     );
