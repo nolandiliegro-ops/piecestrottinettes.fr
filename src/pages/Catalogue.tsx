@@ -19,7 +19,8 @@ import { supabase } from "@/integrations/supabase/client";
 import { cn } from "@/lib/utils";
 import CatalogueTop, { EtabliSidebar, PRICE_OPTS, type CatalogueLook } from "@/components/catalogue/CatalogueTop";
 import { useCategoryImages } from "@/hooks/useCategoryImages";
-import { useSelectedCompatIds, compatFirst } from "@/hooks/useSelectedCompatIds";
+import { useSelectedCompatIds, useSelectedCompatMaybeIds, compatFirst } from "@/hooks/useSelectedCompatIds";
+import { readBadgeLook } from "@/lib/compatBadge";
 import { useSelectedScooter } from "@/contexts/ScooterContext";
 import { PickerSheet, PickerPlate, PickerBlock, PickerEmpty, PickerDiscreet, readPickerLook, type PickerProps } from "@/components/catalogue/ScooterPicker";
 
@@ -34,6 +35,15 @@ const SkeletonGrid = () => (
         <Skeleton className="h-4 w-full" />
       </div>
     ))}
+  </div>
+);
+
+// 24/10 soir : intertitre entre les pièces vérifiées et les « à confirmer » de la trottinette choisie.
+const MaybeDivider = ({ scooter, n }: { scooter: string; n: number }) => (
+  <div className="col-span-full flex items-center gap-3 pt-2" style={{ fontFamily: "'Plus Jakarta Sans', sans-serif" }}>
+    <span className="h-px flex-1 bg-[#D6CFC2]" />
+    <span className="text-sm font-bold uppercase tracking-wider text-gray-600 text-center">{n} à confirmer pour ta {scooter} <span className="normal-case font-semibold tracking-normal">· l'atelier vérifie avant de garantir</span></span>
+    <span className="h-px flex-1 bg-[#D6CFC2]" />
   </div>
 );
 
@@ -177,6 +187,10 @@ const Catalogue = () => {
       setP((sp) => sp.set("scooter", selectedScooter.id));
   }, [pickerLook, selectedScooter?.id]); // eslint-disable-line react-hooks/exhaustive-deps
   const compatIds = useSelectedCompatIds();
+  const maybeIds = useSelectedCompatMaybeIds();
+  // 24/10 soir : badge compatible (?badge=1..5) — quand actif, la vue filtrée montre aussi les 🟡 « à confirmer » APRÈS les vérifiées.
+  const badgeLook = readBadgeLook();
+  const withMaybe = !!badgeLook && !!selectedScooter && scooterIdFilter === selectedScooter.id && !!maybeIds;
   const { data: categoryImages = {} } = useCategoryImages();
 
   const { data: categories = [], isLoading: categoriesLoading } = useCategories();
@@ -287,9 +301,11 @@ const Catalogue = () => {
     const parentOf: Record<string, string> = {};
     categories.forEach((c) => { parentOf[c.id] = c.parent_id ?? c.id; });
     const out: Record<string, number> = {};
-    everyPart.forEach((pt) => { const k = pt.category_id ? parentOf[pt.category_id] ?? pt.category_id : null; if (k) out[k] = (out[k] ?? 0) + 1; });
+    // 24/10 soir : trottinette choisie + filtre actif → les tuiles comptent SES pièces (vérifiées + à confirmer si le badge est actif).
+    const mine = (pt: { id: string }) => !(badgeLook && scooterIdFilter && scooterPartIds) || scooterPartIds.has(pt.id) || (!!maybeIds && maybeIds.has(pt.id));
+    everyPart.forEach((pt) => { if (!mine(pt)) return; const k = pt.category_id ? parentOf[pt.category_id] ?? pt.category_id : null; if (k) out[k] = (out[k] ?? 0) + 1; });
     return out;
-  }, [everyPart, categories]);
+  }, [everyPart, categories, badgeLook, scooterIdFilter, scooterPartIds, maybeIds]);
   const catImages = useMemo(() => {
     const out: Record<string, string | undefined> = {};
     Object.entries(categoryImages as Record<string, unknown>).forEach(([k, v]) => {
@@ -302,7 +318,11 @@ const Catalogue = () => {
   const applyTopFilters = (list: CataloguePart[]) => {
     if (!vue) return list;
     let out = list;
-    if (scooterIdFilter && scooterPartIds && !isSearchQ) out = out.filter((pt) => scooterPartIds.has(pt.id));
+    if (scooterIdFilter && scooterPartIds && !isSearchQ) {
+      out = withMaybe
+        ? [...out.filter((pt) => scooterPartIds.has(pt.id)), ...out.filter((pt) => !scooterPartIds.has(pt.id) && maybeIds!.has(pt.id))]
+        : out.filter((pt) => scooterPartIds.has(pt.id));
+    }
     if (priceSel.length) {
       const ranges = PRICE_OPTS.filter((o) => priceSel.includes(o.value));
       out = out.filter((pt) => pt.price != null && ranges.some((r) => pt.price! >= r.min && pt.price! < r.max));
@@ -313,11 +333,13 @@ const Catalogue = () => {
     else if (partSort === "nom") out = [...out].sort((a, b) => a.name.localeCompare(b.name, "fr"));
     // 18/10 : trottinette choisie en haut → ses pièces compatibles d'abord (inutile si le filtre « Ma trott » est actif).
     if (!scooterIdFilter) out = compatFirst(out, compatIds, (pt) => pt.id);
+    // 24/10 : en vue filtrée avec « à confirmer », les vérifiées restent devant quel que soit le tri choisi.
+    else if (withMaybe && scooterPartIds) out = compatFirst(out, scooterPartIds, (pt) => pt.id);
     return out;
   };
   const isSearchQ = !!searchQuery;
   const shownParts = useMemo(() => applyTopFilters(parts), // eslint-disable-line react-hooks/exhaustive-deps
-    [parts, vue, scooterIdFilter, scooterPartIds, priceSel.join(), stockOnly, partSort, compatIds]);
+    [parts, vue, scooterIdFilter, scooterPartIds, priceSel.join(), stockOnly, partSort, compatIds, withMaybe, maybeIds]);
   const shownExact = useMemo(() => applyTopFilters(searchExact), // eslint-disable-line react-hooks/exhaustive-deps
     [searchExact, vue, priceSel.join(), stockOnly, partSort, compatIds]);
   const shownRelated = useMemo(() => applyTopFilters(searchRelated), // eslint-disable-line react-hooks/exhaustive-deps
@@ -560,7 +582,7 @@ const Catalogue = () => {
                     className={carteGridClass("grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5 md:gap-7")}
                   >
                     {shownExact.map((part, index) => (
-                      <PartCard key={part.id} part={part} index={index} hideCompat={!!scooterIdFilter} />
+                      <PartCard key={part.id} part={part} index={index} hideCompat={!badgeLook && !!scooterIdFilter} />
                     ))}
                   </div>
                 ) : (
@@ -571,7 +593,7 @@ const Catalogue = () => {
                     </p>
                     <div className={carteGridClass("grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5 md:gap-7")}>
                       {shownRelated.map((part, index) => (
-                        <PartCard key={part.id} part={part} index={index} hideCompat={!!scooterIdFilter} />
+                        <PartCard key={part.id} part={part} index={index} hideCompat={!badgeLook && !!scooterIdFilter} />
                       ))}
                     </div>
                   </div>
@@ -588,9 +610,13 @@ const Catalogue = () => {
                     isSwitching && "opacity-60 pointer-events-none"
                   )}
                 >
-                  {shownParts.slice(0, visibleCount).map((part, index) => (
-                    <PartCard key={part.id} part={part} index={index} hideCompat={!!scooterIdFilter} />
-                  ))}
+                  {shownParts.slice(0, visibleCount).map((part, index, arr) => {
+                    const firstMaybe = withMaybe && !scooterPartIds!.has(part.id) && (index === 0 || scooterPartIds!.has(arr[index - 1].id));
+                    return [
+                      firstMaybe ? <MaybeDivider key={`maybe-${part.id}`} scooter={selectedScooter!.name} n={shownParts.filter((x) => !scooterPartIds!.has(x.id)).length} /> : null,
+                      <PartCard key={part.id} part={part} index={index} hideCompat={!badgeLook && !!scooterIdFilter} />,
+                    ];
+                  })}
                 </motion.div>
               )
             ) : isSearch ? (
