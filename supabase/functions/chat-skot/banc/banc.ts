@@ -54,6 +54,7 @@ function checkAssertions(c: CasSkot, r: any): string[] {
   const max = a.mots_max ?? 140;
   if (countWords(reply) > max) fails.push(`trop long : ${countWords(reply)} mots > ${max}`);
   if (looksCut(reply)) fails.push("réponse coupée (pas de fin de phrase)");
+  if (r.cut) fails.push("réponse coupée à la source (garde-fou appliqué) — voir le log stop_reason");
   return fails;
 }
 
@@ -68,23 +69,42 @@ Le ton, le style, les vannes et l'ordre des infos ne sont PAS des violations. Da
 Réponds UNIQUEMENT par un objet JSON, sans texte autour :
 {"conforme": true|false, "violations": [{"regle": "numéro de règle ou FICHE ou OUTILS", "citation": "extrait exact fautif (max 120 caractères)", "explication": "une phrase"}]}`;
 
-async function judge(d: Deps, transcript: string, toolResults: unknown): Promise<{ conforme: boolean; violations: any[]; tokens: number; error?: string }> {
-  const r = await d.callClaude(d.apiKey, {
-    model: JUDGE_MODEL,
-    max_tokens: 600,
-    system: [{ type: "text", text: JUDGE_SYSTEM(d.judgeRules), cache_control: { type: "ephemeral" } }],
-    messages: [{ role: "user", content: `CONVERSATION :\n${transcript}\n\nRÉSULTATS D'OUTILS (dernière réponse, tronqués) :\n${JSON.stringify(toolResults ?? []).slice(0, 4000)}` }],
-  });
-  if (!r.ok) return { conforme: true, violations: [], tokens: 0, error: `juge HTTP ${r.status}` };
-  const text = (r.out.content ?? []).filter((c: any) => c.type === "text").map((c: any) => c.text).join("");
-  const tokens = (r.out.usage?.input_tokens ?? 0) + (r.out.usage?.cache_read_input_tokens ?? 0) + (r.out.usage?.cache_creation_input_tokens ?? 0) + (r.out.usage?.output_tokens ?? 0);
-  try {
-    const j = JSON.parse(text.slice(text.indexOf("{"), text.lastIndexOf("}") + 1));
-    const violations = Array.isArray(j.violations) ? j.violations.slice(0, 5) : [];
-    return { conforme: !!j.conforme && !violations.length, violations, tokens };
-  } catch {
-    return { conforme: true, violations: [], tokens, error: "juge : JSON illisible" };
+/** Juge. Un juge illisible n'est JAMAIS compté comme « conforme » : le silence n'est pas un succès (24/10 : 7/26 avis illisibles comptés verts). */
+async function judge(d: Deps, transcript: string, toolResults: unknown): Promise<{ conforme: boolean; violations: any[]; tokens: number; error?: string; brut?: string }> {
+  let tokens = 0, brut = "";
+  for (let attempt = 0; attempt < 2; attempt++) {
+    const r = await d.callClaude(d.apiKey, {
+      model: JUDGE_MODEL,
+      max_tokens: 1500,
+      system: [{ type: "text", text: JUDGE_SYSTEM(d.judgeRules), cache_control: { type: "ephemeral" } }],
+      messages: [{ role: "user", content: `CONVERSATION :\n${transcript}\n\nRÉSULTATS D'OUTILS (dernière réponse, tronqués) :\n${JSON.stringify(toolResults ?? []).slice(0, 4000)}\n\nRappel : réponds UNIQUEMENT par l'objet JSON, explications d'une phrase.` }],
+    });
+    if (!r.ok) return { conforme: false, violations: [], tokens, error: `juge HTTP ${r.status}` };
+    tokens += (r.out.usage?.input_tokens ?? 0) + (r.out.usage?.cache_read_input_tokens ?? 0) + (r.out.usage?.cache_creation_input_tokens ?? 0) + (r.out.usage?.output_tokens ?? 0);
+    brut = (r.out.content ?? []).filter((c: any) => c.type === "text").map((c: any) => c.text).join("");
+    const j = parseJudge(brut);
+    if (j) {
+      const violations = Array.isArray(j.violations) ? j.violations.slice(0, 5) : [];
+      return { conforme: j.conforme !== false && !violations.length, violations, tokens };
+    }
   }
+  return { conforme: false, violations: [], tokens, error: "juge : JSON illisible", brut: brut.slice(0, 400) };
+}
+
+/** Extrait l'objet JSON d'une réponse (bloc ```json, texte autour, accolades équilibrées). */
+export function parseJudge(text: string): any | null {
+  const t = text.replace(/```(?:json)?/gi, "");
+  const start = t.indexOf("{");
+  if (start < 0) return null;
+  let depth = 0, inStr = false, esc = false;
+  for (let i = start; i < t.length; i++) {
+    const ch = t[i];
+    if (inStr) { if (esc) esc = false; else if (ch === "\\") esc = true; else if (ch === '"') inStr = false; continue; }
+    if (ch === '"') inStr = true;
+    else if (ch === "{") depth++;
+    else if (ch === "}") { depth--; if (depth === 0) { try { return JSON.parse(t.slice(start, i + 1)); } catch { return null; } } }
+  }
+  return null;
 }
 
 async function resolveAdmin(db: Db) {
@@ -111,7 +131,7 @@ async function playCase(d: Deps, c: CasSkot, admin: { id: string; email: string 
   const j = r.ok ? await judge(d, `CLIENT : ${c.message}${c.page ? `\n(page : ${c.page.type} ${c.page.slug ?? ""})` : ""}\nSKOT : ${r.reply}\n(cartes affichées : ${(r.cards ?? []).map((x: any) => `${x.name} [${x.compat ?? "sans statut"}]`).join(" ; ") || "aucune"})`, r.toolResults)
     : { conforme: false, violations: [], tokens: 0 };
   return {
-    id: c.id, origine: c.origine, vert: !fails.length && j.conforme, fails, juge: j.violations, juge_erreur: (j as any).error ?? null,
+    id: c.id, origine: c.origine, vert: !fails.length && j.conforme, fails, juge: j.violations, juge_erreur: (j as any).error ?? null, juge_brut: (j as any).brut ?? null,
     reponse: String(r.reply).slice(0, 700), cartes: (r.cards ?? []).map((x: any) => `${x.name} [${x.compat ?? "-"}]`), outils: (r.toolLog ?? []).map((t: any) => t.name),
     ms, tokens: (r.tokensIn ?? 0) + (r.cacheRead ?? 0) + (r.cacheWrite ?? 0) + (r.tokensOut ?? 0) + j.tokens, error: r.ok ? null : r.error,
   };
@@ -124,7 +144,7 @@ async function playCorpus(d: Deps, admin: any, ids: string[] | null) {
     n_cas: results.length,
     n_vert: results.filter((x) => x.vert).length,
     n_rouge: results.filter((x) => !x.vert).length,
-    n_juge_rouge: results.filter((x) => x.juge?.length).length,
+    n_juge_rouge: results.filter((x) => x.juge?.length || x.juge_erreur).length,
     tokens: results.reduce((s, x) => s + (x.tokens ?? 0), 0),
     upstream: results.filter((x) => x.error === "UPSTREAM").length,
     results,

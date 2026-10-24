@@ -12,9 +12,9 @@ import { serve } from "https://deno.land/std@0.190.0/http/server.ts";
 import { createClient, type SupabaseClient } from "https://esm.sh/@supabase/supabase-js@2.57.2";
 import { classifyCompat, unverifiedLabel, verifiedReason, partDelay } from "../_shared/compat_status.ts";
 import { CORPUS } from "./banc/cas.ts";
-import { runBanc, runNuit } from "./banc/banc.ts";
+import { runBanc, runNuit, looksCut } from "./banc/banc.ts";
 
-const VERSION = "chat-skot@2026-10-24e";
+const VERSION = "chat-skot@2026-10-24f";
 const MODEL = "claude-haiku-5-5";
 const MAX_TOOL_ROUNDS = 4;
 const HISTORY_LIMIT = 14;
@@ -390,6 +390,8 @@ export interface ConverseOutput {
   escalated: boolean;
   orderFailed: boolean;
   tokensIn: number; tokensOut: number; cacheRead: number; cacheWrite: number;
+  /** La réponse brute finissait en pleine phrase (corrigée par le garde-fou). */
+  cut?: boolean;
 }
 
 export async function converse(inp: ConverseInput): Promise<ConverseOutput> {
@@ -430,7 +432,13 @@ export async function converse(inp: ConverseInput): Promise<ConverseOutput> {
       const uses = content.filter((c: any) => c.type === "tool_use");
       if (out.stop_reason !== "tool_use" || !uses.length) {
         o.reply = content.filter((c: any) => c.type === "text").map((c: any) => c.text).join("\n").trim();
-        if (out.stop_reason === "max_tokens") console.error("[chat-skot] reponse coupee (max_tokens)");
+        // Garde-fou (banc 24/10, cas p06) : une réponse qui finit en pleine phrase est ramenée à sa dernière phrase complète.
+        if (looksCut(o.reply)) {
+          console.error("[chat-skot] reponse coupee", out.stop_reason, o.reply.slice(-80));
+          o.cut = true;
+          const m = o.reply.match(/^[\s\S]*[.!?…][»)"’]*(?=\s|$)/u);
+          o.reply = m && m[0].length >= o.reply.length * 0.5 ? m[0].trim() : `${o.reply}…`;
+        }
         break;
       }
       const results = [];
