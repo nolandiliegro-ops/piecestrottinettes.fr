@@ -33,8 +33,8 @@ const CHAMFER_S = "polygon(0 0, calc(100% - 8px) 0, 100% 8px, 100% 100%, 0 100%)
 
 /** ?selecteur=1..5 → variante ; 0 ou absent → rien (page d'avant). */
 /** Variante en prod sans paramètre (null tant que Nolan n'a pas choisi). */
-/** 24/10 : Nolan a retenu la 3 « Plaque », en vert (« j'en ai marre de ce noir »). */
-export const DEFAULT_PICKER: PickerLook | null = 3;
+/** 24/10 soir (tour 2) : Nolan a retenu la 6 « Plaque filtre » (discrète, dans la barre de filtres). La 3 verte reste en ?selecteur=3. */
+export const DEFAULT_PICKER: PickerLook | null = 6;
 export const readPickerLook = (sp: URLSearchParams): PickerLook | null => {
   if (sp.get("selecteur") === null) return DEFAULT_PICKER;
   const n = Number(sp.get("selecteur"));
