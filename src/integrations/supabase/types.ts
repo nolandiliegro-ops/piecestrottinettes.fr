@@ -515,6 +515,96 @@ export type Database = {
         }
         Relationships: []
       }
+      _backup_ambassadors_20261024: {
+        Row: {
+          created_at: string | null
+          email_paypal: string | null
+          handle: string | null
+          id: string | null
+          nom: string | null
+          notes: string | null
+          reseau: string | null
+          statut: string | null
+          taux_commission: number | null
+          updated_at: string | null
+        }
+        Insert: {
+          created_at?: string | null
+          email_paypal?: string | null
+          handle?: string | null
+          id?: string | null
+          nom?: string | null
+          notes?: string | null
+          reseau?: string | null
+          statut?: string | null
+          taux_commission?: number | null
+          updated_at?: string | null
+        }
+        Update: {
+          created_at?: string | null
+          email_paypal?: string | null
+          handle?: string | null
+          id?: string | null
+          nom?: string | null
+          notes?: string | null
+          reseau?: string | null
+          statut?: string | null
+          taux_commission?: number | null
+          updated_at?: string | null
+        }
+        Relationships: []
+      }
+      _backup_ambassadors_20261024b: {
+        Row: {
+          abonnes: number | null
+          avatar_url: string | null
+          created_at: string | null
+          email_paypal: string | null
+          handle: string | null
+          id: string | null
+          nom: string | null
+          notes: string | null
+          prochaine_action: string | null
+          relance_le: string | null
+          reseau: string | null
+          statut: string | null
+          taux_commission: number | null
+          updated_at: string | null
+        }
+        Insert: {
+          abonnes?: number | null
+          avatar_url?: string | null
+          created_at?: string | null
+          email_paypal?: string | null
+          handle?: string | null
+          id?: string | null
+          nom?: string | null
+          notes?: string | null
+          prochaine_action?: string | null
+          relance_le?: string | null
+          reseau?: string | null
+          statut?: string | null
+          taux_commission?: number | null
+          updated_at?: string | null
+        }
+        Update: {
+          abonnes?: number | null
+          avatar_url?: string | null
+          created_at?: string | null
+          email_paypal?: string | null
+          handle?: string | null
+          id?: string | null
+          nom?: string | null
+          notes?: string | null
+          prochaine_action?: string | null
+          relance_le?: string | null
+          reseau?: string | null
+          statut?: string | null
+          taux_commission?: number | null
+          updated_at?: string | null
+        }
+        Relationships: []
+      }
       _backup_amperage_20261010: {
         Row: {
           amperage: number | null
@@ -3296,6 +3386,30 @@ export type Database = {
         }
         Relationships: []
       }
+      _backup_statut_passe2_20261025: {
+        Row: {
+          commercial_status: string | null
+          id: string | null
+          sold_until_year: number | null
+          status_checked_at: string | null
+          status_source: string | null
+        }
+        Insert: {
+          commercial_status?: string | null
+          id?: string | null
+          sold_until_year?: number | null
+          status_checked_at?: string | null
+          status_source?: string | null
+        }
+        Update: {
+          commercial_status?: string | null
+          id?: string | null
+          sold_until_year?: number | null
+          status_checked_at?: string | null
+          status_source?: string | null
+        }
+        Relationships: []
+      }
       _backup_stock_wattiz_20261017: {
         Row: {
           id: string | null
@@ -4034,6 +4148,69 @@ export type Database = {
         }
         Relationships: []
       }
+      _bak_images_scooters_2410: {
+        Row: {
+          id: string | null
+          image_url: string | null
+          images: Json | null
+          slug: string | null
+        }
+        Insert: {
+          id?: string | null
+          image_url?: string | null
+          images?: Json | null
+          slug?: string | null
+        }
+        Update: {
+          id?: string | null
+          image_url?: string | null
+          images?: Json | null
+          slug?: string | null
+        }
+        Relationships: []
+      }
+      _bak_images_scooters_2410b: {
+        Row: {
+          id: string | null
+          image_url: string | null
+          images: Json | null
+          slug: string | null
+        }
+        Insert: {
+          id?: string | null
+          image_url?: string | null
+          images?: Json | null
+          slug?: string | null
+        }
+        Update: {
+          id?: string | null
+          image_url?: string | null
+          images?: Json | null
+          slug?: string | null
+        }
+        Relationships: []
+      }
+      _bak_images_scooters_2410c: {
+        Row: {
+          id: string | null
+          image_url: string | null
+          images: Json | null
+          slug: string | null
+        }
+        Insert: {
+          id?: string | null
+          image_url?: string | null
+          images?: Json | null
+          slug?: string | null
+        }
+        Update: {
+          id?: string | null
+          image_url?: string | null
+          images?: Json | null
+          slug?: string | null
+        }
+        Relationships: []
+      }
       _bak_parts_prix_ewheel_1810: {
         Row: {
           id: string | null
@@ -4487,6 +4664,102 @@ export type Database = {
           },
         ]
       }
+      ambassador_contracts: {
+        Row: {
+          ambassador_id: string
+          id: string
+          ip: string | null
+          signataire: string
+          signe_le: string
+          texte: string
+          texte_sha256: string
+          user_agent: string | null
+          version: string
+        }
+        Insert: {
+          ambassador_id: string
+          id?: string
+          ip?: string | null
+          signataire: string
+          signe_le?: string
+          texte: string
+          texte_sha256: string
+          user_agent?: string | null
+          version: string
+        }
+        Update: {
+          ambassador_id?: string
+          id?: string
+          ip?: string | null
+          signataire?: string
+          signe_le?: string
+          texte?: string
+          texte_sha256?: string
+          user_agent?: string | null
+          version?: string
+        }
+        Relationships: [
+          {
+            foreignKeyName: "ambassador_contracts_ambassador_id_fkey"
+            columns: ["ambassador_id"]
+            isOneToOne: false
+            referencedRelation: "ambassador_stats"
+            referencedColumns: ["ambassador_id"]
+          },
+          {
+            foreignKeyName: "ambassador_contracts_ambassador_id_fkey"
+            columns: ["ambassador_id"]
+            isOneToOne: false
+            referencedRelation: "ambassadors"
+            referencedColumns: ["id"]
+          },
+        ]
+      }
+      ambassador_events: {
+        Row: {
+          ambassador_id: string
+          auteur: string
+          created_at: string
+          detail: string | null
+          id: string
+          titre: string
+          type: string
+        }
+        Insert: {
+          ambassador_id: string
+          auteur?: string
+          created_at?: string
+          detail?: string | null
+          id?: string
+          titre: string
+          type: string
+        }
+        Update: {
+          ambassador_id?: string
+          auteur?: string
+          created_at?: string
+          detail?: string | null
+          id?: string
+          titre?: string
+          type?: string
+        }
+        Relationships: [
+          {
+            foreignKeyName: "ambassador_events_ambassador_id_fkey"
+            columns: ["ambassador_id"]
+            isOneToOne: false
+            referencedRelation: "ambassador_stats"
+            referencedColumns: ["ambassador_id"]
+          },
+          {
+            foreignKeyName: "ambassador_events_ambassador_id_fkey"
+            columns: ["ambassador_id"]
+            isOneToOne: false
+            referencedRelation: "ambassadors"
+            referencedColumns: ["id"]
+          },
+        ]
+      }
       ambassador_payouts: {
         Row: {
           ambassador_id: string
@@ -4535,42 +4808,120 @@ export type Database = {
           },
         ]
       }
+      ambassador_statements: {
+        Row: {
+          ambassador_id: string
+          envoye_le: string
+          periode: string
+          resend_id: string | null
+        }
+        Insert: {
+          ambassador_id: string
+          envoye_le?: string
+          periode: string
+          resend_id?: string | null
+        }
+        Update: {
+          ambassador_id?: string
+          envoye_le?: string
+          periode?: string
+          resend_id?: string | null
+        }
+        Relationships: [
+          {
+            foreignKeyName: "ambassador_statements_ambassador_id_fkey"
+            columns: ["ambassador_id"]
+            isOneToOne: false
+            referencedRelation: "ambassador_stats"
+            referencedColumns: ["ambassador_id"]
+          },
+          {
+            foreignKeyName: "ambassador_statements_ambassador_id_fkey"
+            columns: ["ambassador_id"]
+            isOneToOne: false
+            referencedRelation: "ambassadors"
+            referencedColumns: ["id"]
+          },
+        ]
+      }
       ambassadors: {
         Row: {
+          abonnes: number | null
+          adresse: string | null
+          avatar_url: string | null
+          contrat_signe_le: string | null
+          contrat_version: string | null
           created_at: string
+          email: string | null
           email_paypal: string | null
           handle: string | null
           id: string
           nom: string
           notes: string | null
+          pays_residence: string | null
+          prochaine_action: string | null
+          produits_offerts_eur: number
+          relance_le: string | null
           reseau: string | null
+          siret: string | null
           statut: string
+          statut_juridique: string | null
           taux_commission: number
+          telephone: string | null
           updated_at: string
+          user_id: string | null
         }
         Insert: {
+          abonnes?: number | null
+          adresse?: string | null
+          avatar_url?: string | null
+          contrat_signe_le?: string | null
+          contrat_version?: string | null
           created_at?: string
+          email?: string | null
           email_paypal?: string | null
           handle?: string | null
           id?: string
           nom: string
           notes?: string | null
+          pays_residence?: string | null
+          prochaine_action?: string | null
+          produits_offerts_eur?: number
+          relance_le?: string | null
           reseau?: string | null
+          siret?: string | null
           statut?: string
+          statut_juridique?: string | null
           taux_commission?: number
+          telephone?: string | null
           updated_at?: string
+          user_id?: string | null
         }
         Update: {
+          abonnes?: number | null
+          adresse?: string | null
+          avatar_url?: string | null
+          contrat_signe_le?: string | null
+          contrat_version?: string | null
           created_at?: string
+          email?: string | null
           email_paypal?: string | null
           handle?: string | null
           id?: string
           nom?: string
           notes?: string | null
+          pays_residence?: string | null
+          prochaine_action?: string | null
+          produits_offerts_eur?: number
+          relance_le?: string | null
           reseau?: string | null
+          siret?: string | null
           statut?: string
+          statut_juridique?: string | null
           taux_commission?: number
+          telephone?: string | null
           updated_at?: string
+          user_id?: string | null
         }
         Relationships: []
       }
@@ -7264,6 +7615,27 @@ export type Database = {
         }
         Relationships: []
       }
+      ref_visits: {
+        Row: {
+          code: string
+          created_at: string
+          id: number
+          visitor: string
+        }
+        Insert: {
+          code: string
+          created_at?: string
+          id?: number
+          visitor: string
+        }
+        Update: {
+          code?: string
+          created_at?: string
+          id?: number
+          visitor?: string
+        }
+        Relationships: []
+      }
       rider_questions: {
         Row: {
           brouillon: string | null
@@ -7445,6 +7817,7 @@ export type Database = {
           brand_id: string
           caliper_family: string | null
           charge_connectors: string[] | null
+          commercial_status: string
           compatible_parts_count: number | null
           created_at: string
           description: string | null
@@ -7481,7 +7854,11 @@ export type Database = {
           score_performance: number | null
           search_terms: string | null
           slug: string
+          sold_from_year: number | null
+          sold_until_year: number | null
           solid_conversion: string | null
+          status_checked_at: string | null
+          status_source: string | null
           suspension: string | null
           technical_signature: Json | null
           tire_family: string | null
@@ -7502,6 +7879,7 @@ export type Database = {
           brand_id: string
           caliper_family?: string | null
           charge_connectors?: string[] | null
+          commercial_status?: string
           compatible_parts_count?: number | null
           created_at?: string
           description?: string | null
@@ -7538,7 +7916,11 @@ export type Database = {
           score_performance?: number | null
           search_terms?: string | null
           slug: string
+          sold_from_year?: number | null
+          sold_until_year?: number | null
           solid_conversion?: string | null
+          status_checked_at?: string | null
+          status_source?: string | null
           suspension?: string | null
           technical_signature?: Json | null
           tire_family?: string | null
@@ -7559,6 +7941,7 @@ export type Database = {
           brand_id?: string
           caliper_family?: string | null
           charge_connectors?: string[] | null
+          commercial_status?: string
           compatible_parts_count?: number | null
           created_at?: string
           description?: string | null
@@ -7595,7 +7978,11 @@ export type Database = {
           score_performance?: number | null
           search_terms?: string | null
           slug?: string
+          sold_from_year?: number | null
+          sold_until_year?: number | null
           solid_conversion?: string | null
+          status_checked_at?: string | null
+          status_source?: string | null
           suspension?: string | null
           technical_signature?: Json | null
           tire_family?: string | null
@@ -8339,19 +8726,39 @@ export type Database = {
     Views: {
       ambassador_stats: {
         Row: {
+          abonnes: number | null
+          adresse: string | null
           ambassador_id: string | null
+          avatar_url: string | null
           base_commissionnable_ht: number | null
           cartes_rider: number | null
+          clics_30j: number | null
+          clics_total: number | null
           codes_actifs: string | null
           commandes: number | null
           commission_acquise: number | null
           commission_en_attente: number | null
+          contrat_signe_le: string | null
+          contrat_version: string | null
+          created_at: string | null
           deja_paye: number | null
+          email: string | null
           email_paypal: string | null
+          espace_active: boolean | null
           handle: string | null
           nom: string | null
+          notes: string | null
+          pays_residence: string | null
+          prochaine_action: string | null
+          produits_offerts_eur: number | null
+          relance_le: string | null
+          remuneration_annee: number | null
+          reseau: string | null
+          siret: string | null
           statut: string | null
+          statut_juridique: string | null
           taux_commission: number | null
+          telephone: string | null
         }
         Relationships: []
       }
@@ -8456,6 +8863,21 @@ export type Database = {
         }[]
       }
       admin_dashboard_stats: { Args: never; Returns: Json }
+      ambassador_contract_text: { Args: { p_amb: string }; Returns: string }
+      ambassador_contract_version: { Args: never; Returns: string }
+      ambassador_etape_label: { Args: { s: string }; Returns: string }
+      apply_ambassador: {
+        Args: {
+          p_abonnes: number
+          p_email: string
+          p_handle: string
+          p_message: string
+          p_nom: string
+          p_reseau: string
+          p_telephone: string
+        }
+        Returns: boolean
+      }
       ask_atelier: {
         Args: {
           p_email?: string
@@ -8484,6 +8906,7 @@ export type Database = {
           valid: boolean
         }[]
       }
+      claim_my_ambassador: { Args: never; Returns: string }
       create_ambassador: {
         Args: {
           p_code?: string
@@ -8506,6 +8929,10 @@ export type Database = {
       }
       issue_rider_launch_code: { Args: { p_user: string }; Returns: string }
       link_guest_orders: { Args: never; Returns: number }
+      log_ref_visit: {
+        Args: { p_code: string; p_visitor: string }
+        Returns: undefined
+      }
       make_ambassador_code: { Args: { p_nom: string }; Returns: string }
       match_brake_compatibility: {
         Args: never
@@ -8522,6 +8949,7 @@ export type Database = {
         }[]
       }
       match_pneumatic_compatibility: { Args: never; Returns: number }
+      my_ambassador_dashboard: { Args: never; Returns: Json }
       part_search_text: {
         Args: {
           p_description: string
@@ -8610,12 +9038,17 @@ export type Database = {
       }
       show_limit: { Args: never; Returns: number }
       show_trgm: { Args: { "": string }; Returns: string[] }
+      sign_ambassador_contract: {
+        Args: { p_signataire: string; p_user_agent?: string }
+        Returns: string
+      }
       subscribe_price_alert: {
         Args: { p_email: string; p_scooter_id: string }
         Returns: string
       }
       unaccent: { Args: { "": string }; Returns: string }
       unsubscribe_price_alert: { Args: { p_token: string }; Returns: string }
+      update_my_ambassador_profile: { Args: { p: Json }; Returns: undefined }
     }
     Enums: {
       app_role: "admin" | "moderator" | "user"
