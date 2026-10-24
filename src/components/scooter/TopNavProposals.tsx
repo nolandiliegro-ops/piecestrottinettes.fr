@@ -34,6 +34,7 @@ const Pic = ({ m, w = 260, cls = "" }: { m: ShowroomCarouselScooter; w?: number;
 /** Rail horizontal avec flèches sur ordinateur ; ramène la carte active en vue à l'ouverture. */
 const Rail = ({ children, dark = false, deps }: { children: React.ReactNode; dark?: boolean; deps: unknown }) => {
   const ref = useRef<HTMLDivElement>(null);
+  const first = useRef(true);
   useEffect(() => {
     const el = ref.current; if (!el) return;
     // 24/10 : centrer la trottinette affichée (offsetLeft se lisait par rapport au mauvais parent :
@@ -44,8 +45,12 @@ const Rail = ({ children, dark = false, deps }: { children: React.ReactNode; dar
       const r = on.getBoundingClientRect(), c = el.getBoundingClientRect();
       el.scrollLeft = Math.max(0, el.scrollLeft + (r.left - c.left) - (c.width - r.width) / 2);
     };
+    // Ouverture : centrage immédiat. Changement de trottinette depuis la rangée : glissement doux vers la nouvelle.
+    const smooth = first.current ? "auto" : "smooth";
+    first.current = false;
+    el.style.scrollBehavior = smooth;
     center();
-    const t = window.setTimeout(center, 400); // les images arrivent après coup
+    const t = window.setTimeout(() => { center(); el.style.scrollBehavior = ""; }, 400); // les images arrivent après coup
     return () => window.clearTimeout(t);
   }, [deps]);
   const go = (d: number) => ref.current?.scrollBy({ left: d * (ref.current.clientWidth * 0.8), behavior: "smooth" });
@@ -59,7 +64,10 @@ const Rail = ({ children, dark = false, deps }: { children: React.ReactNode; dar
   return (
     <div className="relative">
       {arrow(-1)}
-      <div ref={ref} className="flex gap-3 overflow-x-auto pb-1 -mx-4 px-4 lg:mx-0 lg:px-0 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">{children}</div>
+      <div ref={ref} tabIndex={-1}
+        onKeyDown={(e) => { if (e.key === "ArrowRight") { e.preventDefault(); go(1); } if (e.key === "ArrowLeft") { e.preventDefault(); go(-1); } }}
+        className="flex gap-3 overflow-x-auto pb-1 -mx-4 px-4 lg:mx-0 lg:px-0 snap-x snap-mandatory lg:snap-none scroll-px-4 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden [&>*]:snap-center"
+        style={{ maskImage: "linear-gradient(90deg, transparent, #000 36px, #000 calc(100% - 36px), transparent)", WebkitMaskImage: "linear-gradient(90deg, transparent, #000 36px, #000 calc(100% - 36px), transparent)" }}>{children}</div>
       {arrow(1)}
     </div>
   );
@@ -91,10 +99,13 @@ const Head = ({ brand, count, dark = false, right }: { brand: string; count: num
 /** Peau des cartes de la rangée « Plaques » (24/10, Nolan : « les trottinettes doivent ressortir, détourées,
     flottantes, pas sur un fond blanc ») : ?plaque=1..5 ; sans paramètre, cartes blanches d'origine. */
 export type PlateSkin = 0 | 1 | 2 | 3 | 4 | 5;
+// 24/10 (choix de Nolan) : « Flottantes » (1) par défaut ; ?plaque=0 = cartes blanches, 2..5 = autres propositions.
 const plateParam = (): PlateSkin => {
-  if (typeof window === "undefined") return 0;
-  const n = Number(new URLSearchParams(window.location.search).get("plaque"));
-  return (n >= 1 && n <= 5 ? n : 0) as PlateSkin;
+  if (typeof window === "undefined") return 1;
+  const sp = new URLSearchParams(window.location.search);
+  if (!sp.has("plaque")) return 1;
+  const n = Number(sp.get("plaque"));
+  return (n >= 0 && n <= 5 ? n : 1) as PlateSkin;
 };
 const FLOAT_SHADOW = "drop-shadow(0 14px 12px rgba(26,26,26,0.22))";
 
@@ -105,10 +116,10 @@ const PlateCard = ({ m, on, skin }: { m: ShowroomCarouselScooter; on: boolean; s
   const common = { to: `/scooter/${m.slug}`, "data-on": on ? "1" : "0", "aria-current": on ? ("page" as const) : undefined };
   // 1 · Flottantes : aucune carte, la trottinette détourée posée sur le fond, ombre portée au sol, trait vert sous l'active.
   if (skin === 1) return (
-    <Link {...common} className="group shrink-0 w-[40%] sm:w-44 lg:w-48 flex flex-col items-center pt-2 pb-1">
+    <Link {...common} className="group shrink-0 w-[40%] sm:w-44 lg:w-48 flex flex-col items-center pt-3 pb-1 outline-none focus-visible:ring-2 focus-visible:ring-[#4A7C59]">
       <div className="relative h-32 lg:h-36 w-full flex items-end justify-center">
-        <span aria-hidden className="absolute bottom-1 left-1/2 -translate-x-1/2 w-3/4 h-3 rounded-[50%]" style={{ background: "radial-gradient(closest-side, rgba(26,26,26,0.28), transparent)" }} />
-        <span className="relative h-full flex items-end justify-center transition-transform duration-300 group-hover:-translate-y-1.5" style={{ filter: FLOAT_SHADOW }}><Pic m={m} /></span>
+        <span aria-hidden className={`absolute bottom-1 left-1/2 -translate-x-1/2 h-3 rounded-[50%] transition-all duration-300 ${on ? "w-[85%] opacity-100" : "w-3/4 opacity-80 group-hover:w-2/3 group-hover:opacity-60"}`} style={{ background: "radial-gradient(closest-side, rgba(26,26,26,0.28), transparent)" }} />
+        <span className={`relative h-full flex items-end justify-center transition-transform duration-300 ease-out group-hover:-translate-y-2 group-active:scale-95 motion-reduce:transition-none ${on ? "-translate-y-1" : ""}`} style={{ filter: FLOAT_SHADOW }}><Pic m={m} /></span>
       </div>
       {label(on ? GREEN : CARBON)}
       <span aria-hidden className="mt-1.5 h-1 rounded-full transition-all" style={{ width: on ? 36 : 0, background: GREEN }} />

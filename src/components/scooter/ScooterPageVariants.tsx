@@ -19,6 +19,7 @@ import { useEffect, useMemo, useRef, useState, type ReactNode } from "react";
 import { Link, useNavigate, useSearchParams } from "react-router-dom";
 import { Heart, Home, Wrench, ExternalLink, Check, Zap, Battery, Gauge, Route, CircleDot, Ruler, Bike, ChevronDown } from "lucide-react";
 import { toast } from "sonner";
+import { motion, useReducedMotion } from "framer-motion";
 import { useAuth } from "@/hooks/useAuth";
 import { useIsInGarage, useAddToGarage, useRemoveFromGarage } from "@/hooks/useGarage";
 import { getAllImages } from "@/lib/entityImage";
@@ -555,6 +556,7 @@ const PitWall = ({ scooter, specs, gamme, accent, brand, partsCount, tag, gammeB
   // 16/10 : « Plaque » (4) choisi par Nolan = défaut ; ?gal=0 = ancien carrousel.
   const galStyle = (sp.has("gal") ? (galN >= 1 && galN <= 5 ? galN : null) : 4) as GalStyle | null;
   const btnLook: Look = BTN[sp.get("btn") ?? ""] ?? (gammeBelow ? "slant" : "pit"); // 16/10 : biseau retenu pour Pit-stand
+  const reduceMotion = useReducedMotion();
   // 24/10 : navigation entre trottinettes en haut de fiche, propositions ?nav=1..5 (sans paramètre : inchangé).
   const nav = gammeBelow ? navParam() : null;
   const topNav = nav && all.length > 0 ? (
@@ -567,7 +569,10 @@ const PitWall = ({ scooter, specs, gamme, accent, brand, partsCount, tag, gammeB
       {topNav}
       <section className={`px-4 ${topNav ? "pt-8 lg:pt-10" : "pt-24 lg:pt-28"} pb-10 relative overflow-hidden`} style={{ backgroundColor: "#FAFAF8" }}>
         <div aria-hidden className="hidden lg:block absolute -right-24 top-24 w-[520px] h-[120px] -rotate-12 opacity-[0.05]" style={{ backgroundImage: `conic-gradient(${CARBON} 25%, transparent 0 50%, ${CARBON} 0 75%, transparent 0)`, backgroundSize: "40px 40px" }} />
-        <div className="mx-auto max-w-6xl grid lg:grid-cols-2 gap-6 lg:gap-12 items-center relative">
+        {/* 24/10 : changement de trottinette depuis la gamme du haut = la fiche glisse et apparaît (0,35 s). */}
+        <motion.div key={scooter.slug} initial={reduceMotion ? false : { opacity: 0, x: 28 }} animate={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.35, ease: [0.22, 1, 0.36, 1] }}
+          className="mx-auto max-w-6xl grid lg:grid-cols-2 gap-6 lg:gap-12 items-center relative">
           <Gallery scooter={scooter} accent={accent} height="clamp(230px, 36vw, 440px)" />
           <div>
             <BrandLock scooter={scooter} accent={accent} />
@@ -599,7 +604,7 @@ const PitWall = ({ scooter, specs, gamme, accent, brand, partsCount, tag, gammeB
             </div>
             <div className="mt-6"><RacingActions scooter={scooter} partsCount={partsCount} look={btnLook} accent={accent} /></div>
           </div>
-        </div>
+        </motion.div>
       </section>
       {afterHero}
       {/* 17/10 (pilote SEO) : fiche complète quand le modèle en a une, sinon l'ancien paragraphe. */}
