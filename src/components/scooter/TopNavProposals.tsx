@@ -25,6 +25,11 @@ export const navParam = (): NavLook | null => {
   return n >= 1 && n <= 5 ? (n as NavLook) : null;
 };
 
+/** 24/10 (Nolan) : la gamme se lit de la plus petite à la plus grosse — puissance croissante (le prix n'est pas
+    tenu à jour en base), puis autonomie, puis nom. Les modèles sans puissance connue vont en fin de rangée. */
+export const byPower = (a: ShowroomCarouselScooter, b: ShowroomCarouselScooter) =>
+  (a.power_watts ?? Infinity) - (b.power_watts ?? Infinity) || (a.range_km ?? 0) - (b.range_km ?? 0) || a.name.localeCompare(b.name, "fr");
+
 const short = (m: ShowroomCarouselScooter) =>
   m.name.replace(new RegExp(`^${(m.brand_name ?? "").replace(/[.*+?^${}()|[\]\\]/g, "\\$&")}\\s+`, "i"), "");
 const Pic = ({ m, w = 260, cls = "" }: { m: ShowroomCarouselScooter; w?: number; cls?: string }) =>
@@ -122,6 +127,7 @@ const PlateCard = ({ m, on, skin }: { m: ShowroomCarouselScooter; on: boolean; s
         <span className={`relative h-full flex items-end justify-center transition-transform duration-300 ease-out group-hover:-translate-y-2 group-active:scale-95 motion-reduce:transition-none ${on ? "-translate-y-1" : ""}`} style={{ filter: FLOAT_SHADOW }}><Pic m={m} /></span>
       </div>
       {label(on ? GREEN : CARBON)}
+      {m.power_watts ? <span className="block text-center text-sm font-semibold" style={{ fontFamily: FONT, color: "#6B7280" }}>{m.power_watts} W</span> : null}
       <span aria-hidden className="mt-1.5 h-1 rounded-full transition-all" style={{ width: on ? 36 : 0, background: GREEN }} />
     </Link>
   );
@@ -197,7 +203,7 @@ const NavTwoLevel = ({ all, brand, current }: { all: ShowroomCarouselScooter[]; 
   const brands = useBrandList(all);
   const [view, setView] = useState(brand);
   useEffect(() => setView(brand), [brand]);
-  const models = all.filter((s) => s.brand_name === view).sort((a, b) => a.name.localeCompare(b.name, "fr"));
+  const models = all.filter((s) => s.brand_name === view).sort(byPower);
   return (
     <>
       <Rail deps={brand}>
@@ -277,7 +283,7 @@ const NavBand = ({ models, current, brand }: { models: ShowroomCarouselScooter[]
 );
 
 export const TopGammeNav = ({ look, all, brand, current, bottomPlayer }: { look: NavLook; all: ShowroomCarouselScooter[]; brand: string; current: string; bottomPlayer: React.ReactNode }) => {
-  const models = useMemo(() => all.filter((s) => s.brand_name === brand).sort((a, b) => a.name.localeCompare(b.name, "fr")), [all, brand]);
+  const models = useMemo(() => all.filter((s) => s.brand_name === brand).sort(byPower), [all, brand]);
   if (models.length < 2 && look !== 2) return null;
   // 5 · Le carrousel du bas, remonté tel quel en haut (lecture littérale).
   if (look === 5) return <div className="pt-20 lg:pt-24" style={{ backgroundColor: "#F5F0E8" }}>{bottomPlayer}</div>;

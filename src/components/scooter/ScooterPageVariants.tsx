@@ -30,7 +30,7 @@ import type { ShowroomCarouselScooter } from "@/hooks/useShowroomData";
 import GammeCarousel, { type GalStyle } from "@/components/scooter/GammeCarousel";
 import BrandExplorer, { type ExploBrand, type ExploLook } from "@/components/scooter/BrandExplorer";
 import { useBrands } from "@/hooks/useScooterData";
-import { TopGammeNav, navParam } from "@/components/scooter/TopNavProposals";
+import { TopGammeNav, navParam, byPower } from "@/components/scooter/TopNavProposals";
 import { BuyHeroButton, achatParam, livePrice } from "@/components/scooter/BuyProposals";
 
 export type PageStyle = 1 | 2 | 3 | 4 | 5 | 6;
@@ -369,7 +369,7 @@ const GammePlayer = ({ all, brand, current, style }: { all: ShowroomCarouselScoo
     });
     return [...m.values()].sort((a, b) => a.name.localeCompare(b.name, "fr"));
   }, [all, brandRows]);
-  const models = useMemo(() => all.filter((s) => s.brand_name === view).sort((a, b) => a.name.localeCompare(b.name, "fr")), [all, view]);
+  const models = useMemo(() => all.filter((s) => s.brand_name === view).sort(byPower), [all, view]);
   if (!models.length) return null;
   const bar = <BrandExplorer look={explo} brands={brands} view={view} onChange={setView} />;
   return <GammeCarousel models={models} current={current} brand={view} style={style} brandBar={bar} />;
