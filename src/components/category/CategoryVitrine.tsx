@@ -1,11 +1,9 @@
 /**
- * Haut de page catégorie « Plein cadre » (choix final de Nolan, 25/10/2026 ; « Vitrine montante » du 24/10
- * reste joignable par ?vitrine=montante).
+ * Haut de page catégorie « Plein cadre » (choix final de Nolan, 25/10/2026).
  * Bandeau crème plein cadre : l'image détourée de la catégorie, inclinée, débordante,
  * JAMAIS affichée plus grande que sa taille réelle (520 px → nette ; l'ancien bandeau
  * l'étirait sur 1 216 px, d'où le flou). Titre + texte indexable + 3 chiffres lus en base,
- * puis les 3 pièces « les plus montées » qui remontent dans le bandeau.
- * Ancien bandeau joignable par ?vitrine=0 (Categorie.tsx).
+ * puis les 3 pièces « les plus montées » sous le bandeau.
  */
 import { useMemo, type MouseEvent } from "react";
 import { Link } from "react-router-dom";
@@ -108,11 +106,9 @@ interface Props {
   imageAlt: string;
   bodyText: string;
   parts: CataloguePart[];
-  /** « plein » = Plein cadre (défaut, choix du 25/10) ; « montante » = Vitrine montante (?vitrine=montante). */
-  layout?: "plein" | "montante";
 }
 
-const CategoryVitrine = ({ heading, imageUrl, imageAlt, bodyText, parts, layout = "plein" }: Props) => {
+const CategoryVitrine = ({ heading, imageUrl, imageAlt, bodyText, parts }: Props) => {
   const ids = useMemo(() => parts.map((p) => p.id), [parts]);
   const { data: counts } = useCompatCounts(ids);
 
@@ -156,70 +152,34 @@ const CategoryVitrine = ({ heading, imageUrl, imageAlt, bodyText, parts, layout 
     </dl>
   );
 
-  if (layout === "plein") {
-    // « Plein cadre » (choix final de Nolan, 25/10) : l'image déborde du bandeau, inclinée, le titre posé dessus.
-    return (
-      <section className="max-w-7xl mx-auto w-full px-4 md:px-8 pt-3">
-        <div className="relative overflow-hidden flex items-end md:items-center min-h-[470px] md:min-h-[440px]" style={{ background: "#E9E2D4", clipPath: ch(30) }}>
-          {imageUrl && (
-            <img
-              src={imageUrl}
-              alt={imageAlt}
-              loading="eager"
-              // Plafonnée à 520 px (taille réelle des visuels détourés) : jamais étirée, donc nette.
-              className="pointer-events-none absolute w-[250px] max-h-[250px] object-contain -right-[34px] top-[12px] md:max-h-none md:w-auto md:max-w-[min(520px,48%)] md:right-[-24px] md:top-1/2 md:-translate-y-1/2"
-              style={{ rotate: "-8deg", filter: "drop-shadow(0 24px 30px rgba(0,0,0,0.3))" }}
-            />
-          )}
-          <div className="relative z-10 w-full md:max-w-[60%] px-5 pb-6 pt-[262px] md:px-10 md:py-12" style={{ containerType: "inline-size" }}>
-            <h1 className="uppercase" style={{ fontFamily: DISP, fontWeight: 900, fontStyle: "italic", fontSize: titleSize, lineHeight: 0.95, letterSpacing: "-0.03em", color: INK }}>
-              {heading}
-            </h1>
-            <p className="mt-3 max-w-[44ch] text-base" style={{ fontFamily: FONT, color: "#3B3B3B", lineHeight: 1.55 }}>{bodyText}</p>
-          </div>
-        </div>
-        {factsList && <div className="mt-4 max-w-[640px] border-t-2" style={{ borderColor: INK }}>{factsList}</div>}
-        {rises && (
-          <div className="mt-7">
-            <h2 className="flex flex-wrap items-baseline gap-x-3 gap-y-1 mb-3">
-              <span className="uppercase text-[22px] md:text-2xl font-black" style={{ fontFamily: DISP, fontStyle: "italic", color: INK, letterSpacing: "-0.02em" }}>Les plus montées</span>
-              <span className="text-sm font-semibold" style={{ fontFamily: FONT, color: MUTED }}>celles qui vont sur le plus de trottinettes</span>
-            </h2>
-            <div className="grid gap-3 md:gap-4 grid-cols-[minmax(0,1fr)] lg:grid-cols-3">
-              {top.map(({ p, n }, k) => <TopCard key={p.id} part={p} rank={k + 1} compat={n} />)}
-            </div>
-          </div>
-        )}
-      </section>
-    );
-  }
-
+  // « Plein cadre » (choix final de Nolan, 25/10) : l'image déborde du bandeau, inclinée, le titre posé dessus.
   return (
     <section className="max-w-7xl mx-auto w-full px-4 md:px-8 pt-3">
-      <div
-        className={`relative overflow-hidden flex flex-col md:flex-row md:items-center md:min-h-[440px] ${rises ? "pb-[124px] md:pb-[118px]" : "pb-6 md:pb-10"}`}
-        style={{ background: "#E9E2D4", clipPath: ch(30) }}
-      >
+      <div className="relative overflow-hidden flex items-end md:items-center min-h-[470px] md:min-h-[440px]" style={{ background: "#E9E2D4", clipPath: ch(30) }}>
         {imageUrl && (
           <img
             src={imageUrl}
             alt={imageAlt}
             loading="eager"
-            className="pointer-events-none relative self-center w-[230px] max-h-[230px] object-contain mt-5 md:absolute md:mt-0 md:max-h-[86%] md:w-[min(520px,46%)] md:right-[-10px] md:top-1/2 md:-translate-y-1/2"
+            // Plafonnée à 520 px (taille réelle des visuels détourés) : jamais étirée, donc nette.
+            className="pointer-events-none absolute w-[250px] max-h-[250px] object-contain -right-[34px] top-[12px] md:max-h-none md:w-auto md:max-w-[min(520px,48%)] md:right-[-24px] md:top-1/2 md:-translate-y-1/2"
             style={{ rotate: "-8deg", filter: "drop-shadow(0 24px 30px rgba(0,0,0,0.3))" }}
           />
         )}
-        <div className="relative z-10 w-full md:max-w-[60%] px-5 pt-3 md:px-10 md:py-10" style={{ containerType: "inline-size" }}>
+        <div className="relative z-10 w-full md:max-w-[60%] px-5 pb-6 pt-[262px] md:px-10 md:py-12" style={{ containerType: "inline-size" }}>
           <h1 className="uppercase" style={{ fontFamily: DISP, fontWeight: 900, fontStyle: "italic", fontSize: titleSize, lineHeight: 0.95, letterSpacing: "-0.03em", color: INK }}>
             {heading}
           </h1>
-          <p className="mt-3 max-w-[46ch] text-base" style={{ fontFamily: FONT, color: "#3B3B3B", lineHeight: 1.55 }}>{bodyText}</p>
-          {factsList && <div className="mt-5 max-w-[520px] border-t-2" style={{ borderColor: INK }}>{factsList}</div>}
+          <p className="mt-3 max-w-[44ch] text-base" style={{ fontFamily: FONT, color: "#3B3B3B", lineHeight: 1.55 }}>{bodyText}</p>
         </div>
       </div>
+      {factsList && <div className="mt-4 max-w-[640px] border-t-2" style={{ borderColor: INK }}>{factsList}</div>}
       {rises && (
-        <div className="relative z-10 -mt-[100px] mx-2 md:mx-6">
-          <p className="sr-only">Les plus montées</p>
+        <div className="mt-7">
+          <h2 className="flex flex-wrap items-baseline gap-x-3 gap-y-1 mb-3">
+            <span className="uppercase text-[22px] md:text-2xl font-black" style={{ fontFamily: DISP, fontStyle: "italic", color: INK, letterSpacing: "-0.02em" }}>Les plus montées</span>
+            <span className="text-sm font-semibold" style={{ fontFamily: FONT, color: MUTED }}>celles qui vont sur le plus de trottinettes</span>
+          </h2>
           <div className="grid gap-3 md:gap-4 grid-cols-[minmax(0,1fr)] lg:grid-cols-3">
             {top.map(({ p, n }, k) => <TopCard key={p.id} part={p} rank={k + 1} compat={n} />)}
           </div>

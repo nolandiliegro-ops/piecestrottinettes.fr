@@ -1,5 +1,4 @@
-import { useParams, Link, useSearchParams } from "react-router-dom";
-import { motion } from "framer-motion";
+import { useParams, Link } from "react-router-dom";
 import { Loader2, ChevronRight } from "lucide-react";
 import SEO from "@/components/SEO";
 import Header from "@/components/Header";
@@ -8,7 +7,6 @@ import { useCategoryData } from "@/hooks/useCategoryData";
 import { resolveCategoryIcon } from "@/lib/categoryIcons";
 import { buildCategoryJsonLd } from "@/lib/categorySchema";
 import { usableMetaDescription } from "@/lib/seoText";
-import { optimizedImage } from "@/lib/imageTransform";
 import CategorySwitcher from "@/components/category/CategorySwitcher";
 import CategoryExplorer from "@/components/category/CategoryExplorer";
 import CategoryVitrine from "@/components/category/CategoryVitrine";
@@ -24,9 +22,6 @@ const GRAIN_BG =
 const Categorie = () => {
   const { slug } = useParams<{ slug: string }>();
   const { category, parts, isLoading } = useCategoryData(slug);
-  // 25/10 : haut de page « Plein cadre » (choix de Nolan). Vitrine montante : ?vitrine=montante. Ancien bandeau : ?vitrine=0.
-  const [searchParams] = useSearchParams();
-  const legacyHero = searchParams.get("vitrine") === "0";
 
 
   // Loading — until we know whether the category exists.
@@ -122,90 +117,18 @@ const Categorie = () => {
           </ol>
         </nav>
 
-        {!legacyHero ? (
-          <>
-            <CategoryVitrine
-              name={category.name}
-              heading={heading}
-              imageUrl={category.image_url}
-              imageAlt={category.alt_text || category.name}
-              bodyText={bodyText}
-              parts={parts}
-              layout={searchParams.get("vitrine") === "montante" ? "montante" : "plein"}
-            />
-            <div className="max-w-7xl mx-auto w-full px-4 md:px-8 pb-8 md:pb-10">
-              <CategorySwitcher currentSlug={category.slug} />
-            </div>
-          </>
-        ) : (
-        /* 2. Ancien hero catégorie (?vitrine=0) — image / icône / accent_label / neon */
-        <section className="max-w-7xl mx-auto w-full px-4 md:px-8 pt-3 pb-8 md:pb-12">
-          <div
-            className="relative overflow-hidden rounded-[2rem] ring-1 ring-black/5"
-            style={{ boxShadow: `0 30px 60px -30px ${neon}40` }}
-          >
-            {/* Fond image .webp ou gradient carbon */}
-            {category.image_url ? (
-              <img
-                src={optimizedImage(category.image_url, 1200)}
-                alt={category.alt_text || category.name}
-                loading="eager"
-                className="absolute inset-0 h-full w-full object-cover"
-              />
-            ) : (
-              <div className="absolute inset-0" style={{ background: "linear-gradient(135deg,#1A1A1A 0%,#2c2c2c 100%)" }} />
-            )}
-
-            {/* Overlay sombre dégradé pour lisibilité */}
-            <div
-              className="absolute inset-0"
-              style={{ background: "linear-gradient(to top, rgba(0,0,0,0.88) 0%, rgba(0,0,0,0.45) 45%, rgba(0,0,0,0.25) 100%)" }}
-            />
-
-            {/* Contenu hero */}
-            <motion.div
-              initial={{ opacity: 0, y: 16 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, ease: [0.32, 0.72, 0, 1] }}
-              className="relative z-10 flex min-h-[320px] flex-col justify-end p-6 md:min-h-[420px] md:p-10"
-            >
-              {/* Badge icône avec glow néon */}
-              <div
-                className="mb-4 flex h-14 w-14 items-center justify-center rounded-2xl"
-                style={{ background: "rgba(255,255,255,0.08)", border: `1px solid ${neon}66`, boxShadow: `0 0 28px ${neon}40` }}
-              >
-                <Icon className="h-7 w-7 text-white" strokeWidth={1.5} aria-hidden />
-              </div>
-
-              {/* Pill accent_label (recâblé) — uniquement si renseigné */}
-              {category.accent_label && (
-                <span
-                  className="mb-3 inline-flex w-max items-center rounded-full px-3 py-1 text-[11px] font-bold uppercase tracking-[0.2em]"
-                  style={{ color: neon, border: `1px solid ${neon}`, boxShadow: `0 0 16px ${neon}55`, background: "rgba(0,0,0,0.25)" }}
-                >
-                  {category.accent_label}
-                </span>
-              )}
-
-              {/* H1 = seo_name || name */}
-              <h1
-                className="uppercase text-white"
-                style={{ fontFamily: "'Unbounded', sans-serif", fontWeight: 900, fontStyle: "italic", fontSize: "clamp(2rem,7vw,4rem)", lineHeight: 1, letterSpacing: "-0.03em" }}
-              >
-                {heading}
-              </h1>
-            </motion.div>
-          </div>
-
-          {/* Switcher : navigation horizontale vers les autres catégories */}
+        {/* 2. Haut de page « Plein cadre » (choix de Nolan, 25/10/2026) */}
+        <CategoryVitrine
+          name={category.name}
+          heading={heading}
+          imageUrl={category.image_url}
+          imageAlt={category.alt_text || category.name}
+          bodyText={bodyText}
+          parts={parts}
+        />
+        <div className="max-w-7xl mx-auto w-full px-4 md:px-8 pb-8 md:pb-10">
           <CategorySwitcher currentSlug={category.slug} />
-
-          {/* 3. Texte indexable */}
-          <p className="mt-6 max-w-2xl text-base md:text-lg" style={{ fontFamily: FONT, color: "#1A1A1A", lineHeight: 1.6 }}>
-            {bodyText}
-          </p>
-        </section>
-        )}
+        </div>
 
         {/* 4. 17/10 : comment choisir + filtres (marque de trottinette, taille, recherche) + grille */}
         {parts.length === 0 ? (
