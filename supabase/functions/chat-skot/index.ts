@@ -14,7 +14,7 @@ import { classifyCompat, unverifiedLabel, verifiedReason, partDelay } from "../_
 import { CORPUS } from "./banc/cas.ts";
 import { runBanc, runNuit, looksCut } from "./banc/banc.ts";
 
-const VERSION = "chat-skot@2026-10-24h";
+const VERSION = "chat-skot@2026-10-24i";
 const MODEL = "claude-haiku-5-5";
 const MAX_TOOL_ROUNDS = 4;
 const HISTORY_LIMIT = 14;
@@ -409,7 +409,10 @@ export async function converse(inp: ConverseInput): Promise<ConverseOutput> {
     for (let round = 0; round <= MAX_TOOL_ROUNDS; round++) {
       const r = await callClaude(inp.apiKey, {
         model: MODEL,
-        max_tokens: 1000,
+        // Haiku 5.5 réfléchit par défaut (thinking adaptatif, effort medium) et ces tokens comptent dans max_tokens :
+        // à 1000, la réflexion mangeait le budget → réponses coupées (banc 24/10, stop_reason max_tokens). La longueur
+        // visible reste tenue par la règle 12 (120 mots).
+        max_tokens: 3000,
         system: [
           { type: "text", text: SYSTEM_PROMPT, cache_control: { type: "ephemeral" } },
           { type: "text", text: `CONTEXTE DE CETTE VISITE (lu en base) :\n${contextText}\nDate : ${new Date().toISOString().slice(0, 10)}.` },

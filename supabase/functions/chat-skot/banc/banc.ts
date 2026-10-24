@@ -77,7 +77,8 @@ async function judge(d: Deps, transcript: string, toolResults: unknown): Promise
   for (let attempt = 0; attempt < 2; attempt++) {
     const r = await d.callClaude(d.apiKey, {
       model: JUDGE_MODEL,
-      max_tokens: 1500,
+      // Le juge réfléchit aussi (thinking adaptatif par défaut) : à 600 puis 1500 tokens, il rendait parfois un texte VIDE.
+      max_tokens: 4000,
       system: [{ type: "text", text: JUDGE_SYSTEM(d.judgeRules), cache_control: { type: "ephemeral" } }],
       messages: [{ role: "user", content: `CONVERSATION :\n${transcript}\n\nRÉSULTATS D'OUTILS (dernière réponse, tronqués) :\n${JSON.stringify(toolResults ?? []).slice(0, 4000)}\n\nRappel : réponds UNIQUEMENT par l'objet JSON, explications d'une phrase.` }],
     });
@@ -90,7 +91,7 @@ async function judge(d: Deps, transcript: string, toolResults: unknown): Promise
       return { conforme: j.conforme !== false && !violations.length, violations, tokens };
     }
   }
-  return { conforme: false, violations: [], tokens, error: "juge : JSON illisible", brut: brut.slice(0, 400) };
+  return { conforme: false, violations: [], tokens, error: "juge : JSON illisible", brut: brut.slice(0, 400) || "(texte vide)" };
 }
 
 /** Extrait l'objet JSON d'une réponse (bloc ```json, texte autour, accolades équilibrées). */
