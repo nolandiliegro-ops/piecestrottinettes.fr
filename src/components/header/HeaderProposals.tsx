@@ -282,7 +282,7 @@ const HeaderProposals = ({ variant }: { variant: BarreVariant }) => {
     </button>
   );
 
-  const profileBtn = (
+  const telProfileBtn = (
     <button type="button" onClick={() => { setMenu(false); goProfile(); }} className="mt-3 w-full min-h-[48px] text-sm font-extrabold italic uppercase tracking-[0.06em] text-white" style={{ fontFamily: FONT, background: GREEN, clipPath: CUT }}>
       {user ? "Mon profil rider" : "Se connecter / créer mon profil"}
     </button>
@@ -338,7 +338,7 @@ const HeaderProposals = ({ variant }: { variant: BarreVariant }) => {
   const mobileMenu = menu && (
     <nav className="lg:hidden pb-4 pt-2 border-t" style={{ borderColor: dark ? "rgba(255,255,255,0.12)" : LINE }} data-tel={telV}>
       {telBody()}
-      {profileBtn}
+      {telProfileBtn}
     </nav>
   );
 
