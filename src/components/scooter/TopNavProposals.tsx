@@ -36,8 +36,17 @@ const Rail = ({ children, dark = false, deps }: { children: React.ReactNode; dar
   const ref = useRef<HTMLDivElement>(null);
   useEffect(() => {
     const el = ref.current; if (!el) return;
-    const on = el.querySelector<HTMLElement>("[data-on='1']");
-    el.scrollLeft = on ? Math.max(0, on.offsetLeft - 24) : 0;
+    // 24/10 : centrer la trottinette affichée (offsetLeft se lisait par rapport au mauvais parent :
+    // la rangée s'ouvrait sur une carte coupée, « STORM » à moitié sur la Dualtron Mini).
+    const center = () => {
+      const on = el.querySelector<HTMLElement>("[data-on='1']");
+      if (!on) { el.scrollLeft = 0; return; }
+      const r = on.getBoundingClientRect(), c = el.getBoundingClientRect();
+      el.scrollLeft = Math.max(0, el.scrollLeft + (r.left - c.left) - (c.width - r.width) / 2);
+    };
+    center();
+    const t = window.setTimeout(center, 400); // les images arrivent après coup
+    return () => window.clearTimeout(t);
   }, [deps]);
   const go = (d: number) => ref.current?.scrollBy({ left: d * (ref.current.clientWidth * 0.8), behavior: "smooth" });
   const arrow = (d: number) => (
@@ -79,24 +88,98 @@ const Head = ({ brand, count, dark = false, right }: { brand: string; count: num
   </div>
 );
 
-/** 1 · Plaques : grosses cartes photo + nom, la trottinette affichée encadrée en vert. */
-const NavPlates = ({ models, current, brand }: { models: ShowroomCarouselScooter[]; current: string; brand: string }) => (
-  <>
-    <Head brand={brand} count={models.length} right={<Link to="/trottinettes" className="min-h-[44px] inline-flex items-center text-sm font-bold uppercase tracking-wider underline underline-offset-4" style={{ fontFamily: FONT, color: CARBON }}>Toutes les marques</Link>} />
-    <Rail deps={current}>
-      {models.map((m) => {
-        const on = m.slug === current;
-        return (
-          <Link key={m.slug} to={`/scooter/${m.slug}`} data-on={on ? "1" : "0"} aria-current={on ? "page" : undefined}
-            className="shrink-0 w-[44%] sm:w-48 lg:w-52 bg-white flex flex-col" style={{ clipPath: CHAMFER, boxShadow: on ? `inset 0 0 0 3px ${GREEN}` : `inset 0 0 0 1px ${LINE}` }}>
-            <div className="h-28 lg:h-32 flex items-center justify-center p-3"><Pic m={m} /></div>
-            <div className="px-3 pb-3 text-sm font-extrabold uppercase leading-tight" style={{ fontFamily: FONT, color: on ? GREEN : CARBON }}>{short(m)}</div>
-          </Link>
-        );
-      })}
-    </Rail>
-  </>
-);
+/** Peau des cartes de la rangée « Plaques » (24/10, Nolan : « les trottinettes doivent ressortir, détourées,
+    flottantes, pas sur un fond blanc ») : ?plaque=1..5 ; sans paramètre, cartes blanches d'origine. */
+export type PlateSkin = 0 | 1 | 2 | 3 | 4 | 5;
+const plateParam = (): PlateSkin => {
+  if (typeof window === "undefined") return 0;
+  const n = Number(new URLSearchParams(window.location.search).get("plaque"));
+  return (n >= 1 && n <= 5 ? n : 0) as PlateSkin;
+};
+const FLOAT_SHADOW = "drop-shadow(0 14px 12px rgba(26,26,26,0.22))";
+
+const PlateCard = ({ m, on, skin }: { m: ShowroomCarouselScooter; on: boolean; skin: PlateSkin }) => {
+  const label = (color: string) => (
+    <span className="mt-1 block text-center text-sm font-extrabold uppercase leading-tight" style={{ fontFamily: FONT, color }}>{short(m)}</span>
+  );
+  const common = { to: `/scooter/${m.slug}`, "data-on": on ? "1" : "0", "aria-current": on ? ("page" as const) : undefined };
+  // 1 · Flottantes : aucune carte, la trottinette détourée posée sur le fond, ombre portée au sol, trait vert sous l'active.
+  if (skin === 1) return (
+    <Link {...common} className="group shrink-0 w-[40%] sm:w-44 lg:w-48 flex flex-col items-center pt-2 pb-1">
+      <div className="relative h-32 lg:h-36 w-full flex items-end justify-center">
+        <span aria-hidden className="absolute bottom-1 left-1/2 -translate-x-1/2 w-3/4 h-3 rounded-[50%]" style={{ background: "radial-gradient(closest-side, rgba(26,26,26,0.28), transparent)" }} />
+        <span className="relative h-full flex items-end justify-center transition-transform duration-300 group-hover:-translate-y-1.5" style={{ filter: FLOAT_SHADOW }}><Pic m={m} /></span>
+      </div>
+      {label(on ? GREEN : CARBON)}
+      <span aria-hidden className="mt-1.5 h-1 rounded-full transition-all" style={{ width: on ? 36 : 0, background: GREEN }} />
+    </Link>
+  );
+  // 2 · Socle : la trottinette flotte au-dessus d'un socle pierre en ellipse, comme en vitrine de magasin.
+  if (skin === 2) return (
+    <Link {...common} className="group shrink-0 w-[40%] sm:w-44 lg:w-48 flex flex-col items-center pt-2">
+      <div className="relative h-36 lg:h-40 w-full flex items-end justify-center">
+        <span aria-hidden className="absolute bottom-0 left-1/2 -translate-x-1/2 w-[88%] h-7 rounded-[50%]" style={{ background: on ? GREEN : "#E6DFD3", boxShadow: on ? "0 6px 0 #3A6449" : "0 6px 0 #D6CDBE" }} />
+        <span className="relative h-[86%] mb-3 flex items-end justify-center transition-transform duration-300 group-hover:-translate-y-2" style={{ filter: FLOAT_SHADOW }}><Pic m={m} /></span>
+      </div>
+      <span className="mt-3">{label(on ? GREEN : CARBON)}</span>
+    </Link>
+  );
+  // 3 · Halo : un cercle de lumière derrière chaque trottinette, vert sur la trottinette affichée.
+  if (skin === 3) return (
+    <Link {...common} className="group shrink-0 w-[40%] sm:w-44 lg:w-48 flex flex-col items-center pt-1">
+      <div className="relative h-36 lg:h-40 w-full flex items-center justify-center">
+        <span aria-hidden className="absolute w-32 h-32 lg:w-36 lg:h-36 rounded-full transition-transform duration-300 group-hover:scale-105"
+          style={{ background: on ? "radial-gradient(circle, rgba(74,124,89,0.35), rgba(74,124,89,0.06) 70%, transparent 72%)" : "radial-gradient(circle, rgba(255,255,255,0.95), rgba(255,255,255,0.35) 70%, transparent 72%)" }} />
+        <span className="relative h-[88%] flex items-center justify-center" style={{ filter: FLOAT_SHADOW }}><Pic m={m} /></span>
+      </div>
+      {label(on ? GREEN : CARBON)}
+    </Link>
+  );
+  // 4 · Vitrine de nuit : bande carbone, trottinettes détourées éclairées par en dessous, noms en blanc.
+  if (skin === 4) return (
+    <Link {...common} className="group shrink-0 w-[40%] sm:w-44 lg:w-48 flex flex-col items-center pt-2 pb-1">
+      <div className="relative h-32 lg:h-36 w-full flex items-end justify-center">
+        <span aria-hidden className="absolute bottom-0 left-1/2 -translate-x-1/2 w-[85%] h-10 rounded-[50%]" style={{ background: `radial-gradient(closest-side, ${on ? "rgba(143,191,156,0.55)" : "rgba(255,255,255,0.18)"}, transparent)` }} />
+        <span className="relative h-full flex items-end justify-center transition-transform duration-300 group-hover:-translate-y-1.5" style={{ filter: "drop-shadow(0 10px 14px rgba(0,0,0,0.6))" }}><Pic m={m} /></span>
+      </div>
+      {label(on ? "#8FBF9C" : "#FFFFFF")}
+    </Link>
+  );
+  // 5 · Défilé : trottinettes plus grandes, l'affichée au centre et plus grosse, les autres un peu effacées.
+  return (
+    <Link {...common} className="group shrink-0 w-[42%] sm:w-48 lg:w-56 flex flex-col items-center pt-6">
+      <div className="relative h-40 lg:h-48 w-full flex items-end justify-center">
+        <span aria-hidden className="absolute bottom-1 left-1/2 -translate-x-1/2 w-2/3 h-3 rounded-[50%]" style={{ background: "radial-gradient(closest-side, rgba(26,26,26,0.3), transparent)" }} />
+        <span className={`relative h-full flex items-end justify-center transition-all duration-300 ${on ? "scale-110" : "scale-90 opacity-60 group-hover:opacity-100 group-hover:scale-95"}`} style={{ filter: FLOAT_SHADOW, transformOrigin: "bottom center" }}><Pic m={m} w={320} /></span>
+      </div>
+      <span className="mt-3">{label(on ? CARBON : "#6B7280")}</span>
+    </Link>
+  );
+};
+
+/** 1 · Plaques : la gamme de la marque en rangée, la trottinette affichée mise en avant. */
+const NavPlates = ({ models, current, brand }: { models: ShowroomCarouselScooter[]; current: string; brand: string }) => {
+  const skin = plateParam();
+  return (
+    <>
+      <Head brand={brand} count={models.length} dark={skin === 4} right={<Link to="/trottinettes" className="min-h-[44px] inline-flex items-center text-sm font-bold uppercase tracking-wider underline underline-offset-4" style={{ fontFamily: FONT, color: skin === 4 ? "#fff" : CARBON }}>Toutes les marques</Link>} />
+      <Rail deps={current} dark={skin === 4}>
+        {models.map((m) => {
+          const on = m.slug === current;
+          if (skin) return <PlateCard key={m.slug} m={m} on={on} skin={skin} />;
+          return (
+            <Link key={m.slug} to={`/scooter/${m.slug}`} data-on={on ? "1" : "0"} aria-current={on ? "page" : undefined}
+              className="shrink-0 w-[44%] sm:w-48 lg:w-52 bg-white flex flex-col" style={{ clipPath: CHAMFER, boxShadow: on ? `inset 0 0 0 3px ${GREEN}` : `inset 0 0 0 1px ${LINE}` }}>
+              <div className="h-28 lg:h-32 flex items-center justify-center p-3"><Pic m={m} /></div>
+              <div className="px-3 pb-3 text-sm font-extrabold uppercase leading-tight" style={{ fontFamily: FONT, color: on ? GREEN : CARBON }}>{short(m)}</div>
+            </Link>
+          );
+        })}
+      </Rail>
+    </>
+  );
+};
+export { plateParam };
 
 /** 2 · Marque puis modèle : une rangée de logos de marques, puis la gamme de la marque choisie. */
 const NavTwoLevel = ({ all, brand, current }: { all: ShowroomCarouselScooter[]; brand: string; current: string }) => {
@@ -187,7 +270,7 @@ export const TopGammeNav = ({ look, all, brand, current, bottomPlayer }: { look:
   if (models.length < 2 && look !== 2) return null;
   // 5 · Le carrousel du bas, remonté tel quel en haut (lecture littérale).
   if (look === 5) return <div className="pt-20 lg:pt-24" style={{ backgroundColor: "#F5F0E8" }}>{bottomPlayer}</div>;
-  const dark = look === 4;
+  const dark = look === 4 || (look === 1 && plateParam() === 4);
   return (
     <section aria-label={`Gamme ${brand}`} className="px-4 pt-20 lg:pt-24 pb-5" style={{ backgroundColor: "#F5F0E8" }}>
       {/* La bande carbone commence SOUS l'en-tête (logo noir illisible sur fond sombre). */}
