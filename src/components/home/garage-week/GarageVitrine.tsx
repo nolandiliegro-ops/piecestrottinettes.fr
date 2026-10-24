@@ -11,6 +11,7 @@ import { ArrowRight, ChevronLeft, ChevronRight, MapPin } from "lucide-react";
 import RiderAvatar from "@/components/garage/RiderAvatar";
 import { getXPLevel } from "@/lib/xpLevels";
 import type { RiderBundle, RiderScooter } from "../GarageOfTheWeekSection";
+import { RiderPitch, riderParam, riderHidesWeek } from "./RiderPitch";
 
 const UNB = "'Unbounded', sans-serif";
 const FONT = "'Plus Jakarta Sans', sans-serif";
@@ -49,6 +50,8 @@ const GarageVitrine = ({ riders, riderIndex, scooterIndex, onPrev, onNext, onGoT
   const scooter = rider?.scooters[Math.min(scooterIndex, Math.max(0, (rider?.scooters.length ?? 1) - 1))];
   const m = scooter?.scooter_model;
   const level = getXPLevel(rider?.performance_points ?? 0);
+  // 24/10 : pitch carte Rider, propositions ?rider=1..5 (sans paramètre : inchangé).
+  const pitch = riderParam();
   const specs = m ? ([m.voltage && `${m.voltage} V`, m.amperage && `${m.amperage} Ah`, m.power_watts && `${m.power_watts} W`].filter(Boolean) as string[]) : [];
 
   return (
@@ -65,7 +68,8 @@ const GarageVitrine = ({ riders, riderIndex, scooterIndex, onPrev, onNext, onGoT
           Ton garage. <span style={{ color: SOFT }}>Ta machine.</span>
         </h2>
         <p className="mt-3 text-base max-w-xl" style={{ fontFamily: FONT, color: "rgba(255,255,255,0.82)" }}>
-          Comme {rider ? <b>{rider.display_name}</b> : "nos riders"} : ta trott en vitrine, ton décor, et les pièces qui vont dessus.
+          {pitch ? <>Crée ta carte Rider : tes commandes suivies, les pièces qui vont sur ta trott, et -20 % sur ta 1re commande.</>
+            : <>Comme {rider ? <b>{rider.display_name}</b> : "nos riders"} : ta trott en vitrine, ton décor, et les pièces qui vont dessus.</>}
         </p>
 
         <div className="mt-6 grid grid-cols-1 gap-4 lg:grid-cols-[minmax(0,1.25fr)_minmax(0,1fr)] lg:gap-6 lg:items-end">
@@ -118,7 +122,7 @@ const GarageVitrine = ({ riders, riderIndex, scooterIndex, onPrev, onNext, onGoT
 
           {/* Qui c'est + ce que tu gagnes */}
           <div className="flex flex-col gap-4 min-w-0">
-            {rider && (
+            {rider && !riderHidesWeek(pitch) && (
               <div className="p-4 lg:p-5" style={{ background: PAPER, clipPath: cut(14) }}>
                 <div className="flex items-center gap-3">
                   <RiderAvatar url={rider.avatar_url} name={rider.display_name} size="md" />
@@ -152,7 +156,7 @@ const GarageVitrine = ({ riders, riderIndex, scooterIndex, onPrev, onNext, onGoT
               </div>
             )}
 
-            <div className="p-4 lg:p-5" style={{ background: CARBON, clipPath: cut(14) }}>
+            {pitch ? <RiderPitch look={pitch} auth={isAuthenticated} photo={photo(scooter)} /> : <div className="p-4 lg:p-5" style={{ background: CARBON, clipPath: cut(14) }}>
               <ul className="flex flex-col">
                 {PERKS.map(([t, d], k) => (
                   <li key={t} className="py-2.5" style={{ borderTop: k ? "1px solid rgba(255,255,255,0.1)" : "none" }}>
@@ -165,7 +169,7 @@ const GarageVitrine = ({ riders, riderIndex, scooterIndex, onPrev, onNext, onGoT
                 style={{ fontFamily: FONT, background: "#FFFFFF", color: CARBON, clipPath: cut(10) }}>
                 {isAuthenticated ? "Ouvrir mon garage" : <span>Créer mon garage <span style={{ color: GREEN }}>+50 XP</span></span>} <ArrowRight className="w-5 h-5" />
               </Link>
-            </div>
+            </div>}
           </div>
         </div>
       </div>

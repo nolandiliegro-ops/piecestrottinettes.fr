@@ -1,5 +1,6 @@
 import SEO from "@/components/SEO";
 import { motion } from "framer-motion";
+import { HomeEnd, finParam } from "@/components/home/HomeEndProposals";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import HeroSearchFirst from "@/components/home/HeroSearchFirst";
@@ -41,9 +42,11 @@ const Index = () => {
         <BrandWallSection />
         <GarageOfTheWeekSection />
         <Divider />
-        <ScooterCarousel />
-        <FavoritesSection />
-        <TrustStrip />
+        {/* 24/10 : fin de l'accueil, propositions ?fin=1..5 (sans paramètre : inchangé). */}
+        <div data-home-end>
+          <ScooterCarousel />
+          {finParam() ? <HomeEnd look={finParam()!} /> : <><FavoritesSection /><TrustStrip /></>}
+        </div>
         <Footer />
       </main>
 
