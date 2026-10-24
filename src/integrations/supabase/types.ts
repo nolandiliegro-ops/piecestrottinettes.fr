@@ -2573,6 +2573,54 @@ export type Database = {
         }
         Relationships: []
       }
+      _backup_promo_codes_20261024: {
+        Row: {
+          active: boolean | null
+          campaign: string | null
+          code: string | null
+          created_at: string | null
+          current_uses: number | null
+          discount_type: string | null
+          discount_value: number | null
+          expires_at: string | null
+          id: string | null
+          max_discount_eur: number | null
+          max_uses: number | null
+          user_id: string | null
+          valid_from: string | null
+        }
+        Insert: {
+          active?: boolean | null
+          campaign?: string | null
+          code?: string | null
+          created_at?: string | null
+          current_uses?: number | null
+          discount_type?: string | null
+          discount_value?: number | null
+          expires_at?: string | null
+          id?: string | null
+          max_discount_eur?: number | null
+          max_uses?: number | null
+          user_id?: string | null
+          valid_from?: string | null
+        }
+        Update: {
+          active?: boolean | null
+          campaign?: string | null
+          code?: string | null
+          created_at?: string | null
+          current_uses?: number | null
+          discount_type?: string | null
+          discount_value?: number | null
+          expires_at?: string | null
+          id?: string | null
+          max_discount_eur?: number | null
+          max_uses?: number | null
+          user_id?: string | null
+          valid_from?: string | null
+        }
+        Relationships: []
+      }
       _backup_pub_scooters_20261019: {
         Row: {
           backed_up_at: string | null
@@ -4360,6 +4408,93 @@ export type Database = {
             referencedColumns: ["id"]
           },
         ]
+      }
+      ambassador_payouts: {
+        Row: {
+          ambassador_id: string
+          created_at: string
+          id: string
+          montant: number
+          note: string | null
+          paye_le: string | null
+          periode: string
+          ref_lot_paypal: string | null
+        }
+        Insert: {
+          ambassador_id: string
+          created_at?: string
+          id?: string
+          montant: number
+          note?: string | null
+          paye_le?: string | null
+          periode: string
+          ref_lot_paypal?: string | null
+        }
+        Update: {
+          ambassador_id?: string
+          created_at?: string
+          id?: string
+          montant?: number
+          note?: string | null
+          paye_le?: string | null
+          periode?: string
+          ref_lot_paypal?: string | null
+        }
+        Relationships: [
+          {
+            foreignKeyName: "ambassador_payouts_ambassador_id_fkey"
+            columns: ["ambassador_id"]
+            isOneToOne: false
+            referencedRelation: "ambassador_stats"
+            referencedColumns: ["ambassador_id"]
+          },
+          {
+            foreignKeyName: "ambassador_payouts_ambassador_id_fkey"
+            columns: ["ambassador_id"]
+            isOneToOne: false
+            referencedRelation: "ambassadors"
+            referencedColumns: ["id"]
+          },
+        ]
+      }
+      ambassadors: {
+        Row: {
+          created_at: string
+          email_paypal: string | null
+          handle: string | null
+          id: string
+          nom: string
+          notes: string | null
+          reseau: string | null
+          statut: string
+          taux_commission: number
+          updated_at: string
+        }
+        Insert: {
+          created_at?: string
+          email_paypal?: string | null
+          handle?: string | null
+          id?: string
+          nom: string
+          notes?: string | null
+          reseau?: string | null
+          statut?: string
+          taux_commission?: number
+          updated_at?: string
+        }
+        Update: {
+          created_at?: string
+          email_paypal?: string | null
+          handle?: string | null
+          id?: string
+          nom?: string
+          notes?: string | null
+          reseau?: string | null
+          statut?: string
+          taux_commission?: number
+          updated_at?: string
+        }
+        Relationships: []
       }
       asset_requests: {
         Row: {
@@ -6804,6 +6939,53 @@ export type Database = {
         }
         Relationships: []
       }
+      price_alerts: {
+        Row: {
+          active: boolean
+          consent_at: string
+          created_at: string
+          email: string
+          id: string
+          last_notified_at: string | null
+          last_price_notified: number | null
+          price_at_signup: number | null
+          scooter_model_id: string
+          unsubscribe_token: string
+        }
+        Insert: {
+          active?: boolean
+          consent_at?: string
+          created_at?: string
+          email: string
+          id?: string
+          last_notified_at?: string | null
+          last_price_notified?: number | null
+          price_at_signup?: number | null
+          scooter_model_id: string
+          unsubscribe_token?: string
+        }
+        Update: {
+          active?: boolean
+          consent_at?: string
+          created_at?: string
+          email?: string
+          id?: string
+          last_notified_at?: string | null
+          last_price_notified?: number | null
+          price_at_signup?: number | null
+          scooter_model_id?: string
+          unsubscribe_token?: string
+        }
+        Relationships: [
+          {
+            foreignKeyName: "price_alerts_scooter_model_id_fkey"
+            columns: ["scooter_model_id"]
+            isOneToOne: false
+            referencedRelation: "scooter_models"
+            referencedColumns: ["id"]
+          },
+        ]
+      }
       price_runs: {
         Row: {
           http_status: number | null
@@ -6863,6 +7045,7 @@ export type Database = {
           marketing_consent: boolean
           marketing_consent_at: string | null
           performance_points: number | null
+          referred_by: string | null
           rider_location: string | null
           updated_at: string | null
           username: string | null
@@ -6878,6 +7061,7 @@ export type Database = {
           marketing_consent?: boolean
           marketing_consent_at?: string | null
           performance_points?: number | null
+          referred_by?: string | null
           rider_location?: string | null
           updated_at?: string | null
           username?: string | null
@@ -6893,6 +7077,7 @@ export type Database = {
           marketing_consent?: boolean
           marketing_consent_at?: string | null
           performance_points?: number | null
+          referred_by?: string | null
           rider_location?: string | null
           updated_at?: string | null
           username?: string | null
@@ -6902,6 +7087,7 @@ export type Database = {
       promo_codes: {
         Row: {
           active: boolean | null
+          ambassador_id: string | null
           campaign: string | null
           code: string
           created_at: string | null
@@ -6917,6 +7103,7 @@ export type Database = {
         }
         Insert: {
           active?: boolean | null
+          ambassador_id?: string | null
           campaign?: string | null
           code: string
           created_at?: string | null
@@ -6932,6 +7119,7 @@ export type Database = {
         }
         Update: {
           active?: boolean | null
+          ambassador_id?: string | null
           campaign?: string | null
           code?: string
           created_at?: string | null
@@ -6945,7 +7133,22 @@ export type Database = {
           user_id?: string | null
           valid_from?: string | null
         }
-        Relationships: []
+        Relationships: [
+          {
+            foreignKeyName: "promo_codes_ambassador_id_fkey"
+            columns: ["ambassador_id"]
+            isOneToOne: false
+            referencedRelation: "ambassador_stats"
+            referencedColumns: ["ambassador_id"]
+          },
+          {
+            foreignKeyName: "promo_codes_ambassador_id_fkey"
+            columns: ["ambassador_id"]
+            isOneToOne: false
+            referencedRelation: "ambassadors"
+            referencedColumns: ["id"]
+          },
+        ]
       }
       promo_codes_backup_20261008: {
         Row: {
@@ -8056,6 +8259,24 @@ export type Database = {
       }
     }
     Views: {
+      ambassador_stats: {
+        Row: {
+          ambassador_id: string | null
+          base_commissionnable_ht: number | null
+          cartes_rider: number | null
+          codes_actifs: string | null
+          commandes: number | null
+          commission_acquise: number | null
+          commission_en_attente: number | null
+          deja_paye: number | null
+          email_paypal: string | null
+          handle: string | null
+          nom: string | null
+          statut: string | null
+          taux_commission: number | null
+        }
+        Relationships: []
+      }
       rider_questions_publiques: {
         Row: {
           created_at: string | null
@@ -8174,6 +8395,29 @@ export type Database = {
         }
         Returns: number
       }
+      check_promo_code: {
+        Args: { p_code: string }
+        Returns: {
+          code: string
+          discount_type: string
+          discount_value: number
+          max_discount_eur: number
+          reason: string
+          valid: boolean
+        }[]
+      }
+      create_ambassador: {
+        Args: {
+          p_code?: string
+          p_email_paypal?: string
+          p_handle?: string
+          p_nom: string
+        }
+        Returns: {
+          ambassador_id: string
+          code: string
+        }[]
+      }
       f_unaccent: { Args: { "": string }; Returns: string }
       has_role: {
         Args: {
@@ -8184,6 +8428,7 @@ export type Database = {
       }
       issue_rider_launch_code: { Args: { p_user: string }; Returns: string }
       link_guest_orders: { Args: never; Returns: number }
+      make_ambassador_code: { Args: { p_nom: string }; Returns: string }
       match_brake_compatibility: {
         Args: never
         Returns: {
@@ -8209,6 +8454,24 @@ export type Database = {
           p_tech: Json
         }
         Returns: string
+      }
+      price_alert_mark_sent: {
+        Args: { p_alert_id: string; p_price: number }
+        Returns: undefined
+      }
+      price_alerts_due: {
+        Args: never
+        Returns: {
+          alert_id: string
+          email: string
+          kind: string
+          merchant: string
+          new_price: number
+          old_price: number
+          scooter_name: string
+          scooter_slug: string
+          unsubscribe_token: string
+        }[]
       }
       pt_model_key: { Args: { t: string }; Returns: string }
       recalc_scooter_parts_count: {
@@ -8269,7 +8532,12 @@ export type Database = {
       }
       show_limit: { Args: never; Returns: number }
       show_trgm: { Args: { "": string }; Returns: string[] }
+      subscribe_price_alert: {
+        Args: { p_email: string; p_scooter_id: string }
+        Returns: string
+      }
       unaccent: { Args: { "": string }; Returns: string }
+      unsubscribe_price_alert: { Args: { p_token: string }; Returns: string }
     }
     Enums: {
       app_role: "admin" | "moderator" | "user"
