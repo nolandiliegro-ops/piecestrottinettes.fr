@@ -14,7 +14,7 @@ import { classifyCompat, unverifiedLabel, verifiedReason, partDelay } from "../_
 import { CORPUS } from "./banc/cas.ts";
 import { runBanc, runNuit, looksCut } from "./banc/banc.ts";
 
-const VERSION = "chat-skot@2026-10-24l";
+const VERSION = "chat-skot@2026-10-24m";
 const MODEL = "claude-haiku-5-5";
 const MAX_TOOL_ROUNDS = 4;
 const HISTORY_LIMIT = 14;
@@ -438,7 +438,8 @@ export async function converse(inp: ConverseInput): Promise<ConverseOutput> {
         // Le widget affiche du texte brut : le gras markdown (**…**) sortirait en astérisques (banc 24/10, p06).
         o.reply = o.reply.replace(/\*\*(.+?)\*\*/g, "$1").replace(/^#{1,6}\s+/gm, "");
         // Garde-fou (banc 24/10, cas p06) : une réponse qui finit en pleine phrase est ramenée à sa dernière phrase complète.
-        if (looksCut(o.reply)) {
+        // Seulement si le modèle a vraiment été coupé (max_tokens) : un end_turn est une fin voulue, on n'y touche pas.
+        if (out.stop_reason === "max_tokens" && looksCut(o.reply)) {
           console.error("[chat-skot] reponse coupee", out.stop_reason, o.reply.slice(-80));
           o.cut = true;
           const m = o.reply.match(/^[\s\S]*[.!?…][»)"’]*(?=\s|$)/u);

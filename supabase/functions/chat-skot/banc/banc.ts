@@ -22,7 +22,11 @@ interface Deps {
 
 const countWords = (s: string) => s.trim().split(/\s+/).filter(Boolean).length;
 /** Réponse coupée : se termine sur une lettre, un chiffre ou une virgule (pas de ponctuation finale, pas d'emoji). */
-export const looksCut = (s: string) => /[\p{L}\p{N},;:'’-]$/u.test(s.trim());
+export const looksCut = (s: string) => {
+  const t = s.trim();
+  if (/https?:\/\/\S+$/.test(t)) return false; // finir sur un lien est normal (log 24/10 16:55, end_turn)
+  return /[\p{L}\p{N},;:'’-]$/u.test(t);
+};
 
 async function pool<T, R>(items: T[], n: number, fn: (t: T) => Promise<R>): Promise<R[]> {
   const out: R[] = new Array(items.length);
