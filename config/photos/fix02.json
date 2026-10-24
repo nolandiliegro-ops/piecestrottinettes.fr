@@ -1,0 +1,399 @@
+{
+ "lot": "fix02",
+ "entity": "part",
+ "models": [
+  {
+   "id": "68ff9382-8ac7-42c9-a02c-39b4194687ba",
+   "slug": "chambre-a-air-14x2-125-valve-coudee-65x65-ewheel",
+   "name": "Chambre à air 14x2.125 valve coudée 65x65° eWheel",
+   "brand": "",
+   "candidates": [
+    "https://d2j6dbq0eux0bg.cloudfront.net/images/68019033/products/873635923/6349334197.webp",
+    "https://d2j6dbq0eux0bg.cloudfront.net/images/68019033/products/873635923/6349334199.webp",
+    "https://d2j6dbq0eux0bg.cloudfront.net/images/68019033/products/873635923/6349333973.webp",
+    "https://d2j6dbq0eux0bg.cloudfront.net/images/68019033/products/873635923/6349334235.jpg",
+    "https://d2j6dbq0eux0bg.cloudfront.net/images/68019033/products/873635923/6349333703.jpg",
+    "https://ewheel.es/cdn/shop/files/8435764421471.jpg",
+    "https://ewheel.es/cdn/shop/files/8435764421471_1.jpg",
+    "https://ewheel.es/cdn/shop/files/8435764421471_2.jpg",
+    "https://ewheel.es/cdn/shop/files/8435764421471_3.jpg",
+    "https://ewheel.es/cdn/shop/files/8435764421471_4.jpg"
+   ]
+  },
+  {
+   "id": "dd8039e5-7d5c-4563-a94e-66f12a497549",
+   "slug": "pneu-plein-10x2-125-6-1-noir-cityneye",
+   "name": "Pneu plein 10x2.125-6.1 noir Cityneye",
+   "brand": "",
+   "candidates": [
+    "https://www.imooving.com/10554-large_default/pneu-plein-10x2-125-6-1-cityneye-noir.jpg",
+    "https://www.imooving.com/10555-large_default/pneu-plein-10x2-125-6-1-cityneye-noir.jpg",
+    "https://www.imooving.com/10556-large_default/pneu-plein-10x2-125-6-1-cityneye-noir.jpg",
+    "https://www.imooving.com/10557-large_default/pneu-plein-10x2-125-6-1-cityneye-noir.jpg",
+    "https://www.imooving.com/10558-large_default/pneu-plein-10x2-125-6-1-cityneye-noir.jpg",
+    "https://ewheel.es/cdn/shop/files/8435764431319.jpg",
+    "https://ewheel.es/cdn/shop/files/8435764431319_1.jpg",
+    "https://ewheel.es/cdn/shop/files/8435764431319_2.jpg",
+    "https://ewheel.es/cdn/shop/files/8435764431319_3.jpg",
+    "https://ewheel.es/cdn/shop/files/8435764431319_4.jpg"
+   ]
+  },
+  {
+   "id": "35fae7c2-9c1d-4bea-92f9-9bb9acbbc83b",
+   "slug": "pneu-plein-10x2-125-6-1-ultra-leger-jante-34-mm-lisere-noir-ewheel",
+   "name": "Pneu plein 10x2.125-6.1 ultra-léger jante 34 mm liseré noir eWheel",
+   "brand": "",
+   "candidates": [
+    "https://www.imooving.com/18029-large_default/pneu-plein-ultra-leger-10x2125-61-b34.jpg",
+    "https://www.imooving.com/18030-large_default/pneu-plein-ultra-leger-10x2125-61-b34.jpg",
+    "https://www.imooving.com/18031-large_default/pneu-plein-ultra-leger-10x2125-61-b34.jpg",
+    "https://www.imooving.com/18032-large_default/pneu-plein-ultra-leger-10x2125-61-b34.jpg",
+    "https://www.imooving.com/18033-large_default/pneu-plein-ultra-leger-10x2125-61-b34.jpg",
+    "https://ewheel.es/cdn/shop/files/8435764420931.jpg",
+    "https://ewheel.es/cdn/shop/files/8435764420931_1.jpg",
+    "https://ewheel.es/cdn/shop/files/8435764420931_2.jpg",
+    "https://ewheel.es/cdn/shop/files/8435764420931_3.jpg",
+    "https://ewheel.es/cdn/shop/files/8435764420931_4.jpg"
+   ]
+  },
+  {
+   "id": "949a3354-7fd5-4712-8f25-d1d5159ce6c6",
+   "slug": "pneu-plein-10x2-125-6-1-ultra-leger-jante-34-mm-lisere-rouge-nedong",
+   "name": "Pneu plein 10x2.125-6.1 ultra-léger jante 34 mm liseré rouge Nedong",
+   "brand": "",
+   "candidates": [
+    "https://d2j6dbq0eux0bg.cloudfront.net/images/68019033/3688903520.jpg",
+    "https://d2j6dbq0eux0bg.cloudfront.net/images/68019033/3688903522.jpg",
+    "https://d2j6dbq0eux0bg.cloudfront.net/images/68019033/3688899023.jpg",
+    "https://d2j6dbq0eux0bg.cloudfront.net/images/68019033/3688736997.jpg",
+    "https://ewheel.es/cdn/shop/files/7427251899178.jpg",
+    "https://ewheel.es/cdn/shop/files/7427251899178_1.jpg",
+    "https://ewheel.es/cdn/shop/files/7427251899178_2.jpg",
+    "https://ewheel.es/cdn/shop/files/7427251899178_3.jpg",
+    "https://ewheel.es/cdn/shop/files/7427251899178_4.jpg"
+   ]
+  },
+  {
+   "id": "25c9b0bd-56c3-47bd-8546-186bf30efe00",
+   "slug": "pneu-plein-10x2-125-6-1-ultra-leger-jante-34-mm-points-bleus-nedong",
+   "name": "Pneu plein 10x2.125-6.1 ultra-léger jante 34 mm points bleus Nedong",
+   "brand": "",
+   "candidates": [
+    "https://d2j6dbq0eux0bg.cloudfront.net/images/68019033/4180091401.jpg",
+    "https://d2j6dbq0eux0bg.cloudfront.net/images/68019033/4180091402.jpg",
+    "https://d2j6dbq0eux0bg.cloudfront.net/images/68019033/4303027949.jpg",
+    "https://d2j6dbq0eux0bg.cloudfront.net/images/68019033/4303038756.jpg",
+    "https://d2j6dbq0eux0bg.cloudfront.net/images/68019033/4303032654.jpg",
+    "https://ewheel.es/cdn/shop/files/7427255406655.jpg",
+    "https://ewheel.es/cdn/shop/files/7427255406655_1.jpg",
+    "https://ewheel.es/cdn/shop/files/7427255406655_2.jpg",
+    "https://ewheel.es/cdn/shop/files/7427255406655_3.jpg",
+    "https://ewheel.es/cdn/shop/files/7427255406655_4.jpg"
+   ]
+  },
+  {
+   "id": "b5acbb7b-ec87-4172-866e-7ec394823e7c",
+   "slug": "pneu-plein-10x2-125-6-5-offroad-ultra-leger-jante-44-mm-bleu-nedong",
+   "name": "Pneu plein 10x2.125-6.5 Offroad ultra-léger jante 44 mm bleu Nedong",
+   "brand": "",
+   "candidates": [
+    "https://e-planetmobility.com/wp-content/uploads/2025/03/Rueda-maciza-ultraligera-offroad-10x2125-65B34-azul-Nedong.jpg.webp",
+    "https://e-planetmobility.com/wp-content/uploads/2025/03/Rueda-maciza-ultraligera-offroad-10x2125-65B34-azul-Nedong-2.jpg.webp",
+    "https://e-planetmobility.com/wp-content/uploads/2025/03/Rueda-maciza-ultraligera-offroad-10x2125-65B34-azul-Nedong-3.jpg.webp",
+    "https://e-planetmobility.com/wp-content/uploads/2025/03/Rueda-maciza-ultraligera-offroad-10x2125-65B34-azul-Nedong-4.jpg.webp",
+    "https://e-planetmobility.com/wp-content/uploads/2025/03/Rueda-maciza-ultraligera-offroad-10x2125-65B34-azul-Nedong-5.jpg.webp",
+    "https://ewheel.es/cdn/shop/files/8435764436468.jpg",
+    "https://ewheel.es/cdn/shop/files/8435764436468_1.jpg",
+    "https://ewheel.es/cdn/shop/files/8435764436468_2.jpg",
+    "https://ewheel.es/cdn/shop/files/8435764436468_3.jpg",
+    "https://ewheel.es/cdn/shop/files/8435764436468_4.jpg"
+   ]
+  },
+  {
+   "id": "614f3cf3-6308-4f28-9f58-a9682a8553a8",
+   "slug": "pneu-plein-10x2-125-6-5-offroad-ultra-leger-jante-44-mm-rouge-nedong",
+   "name": "Pneu plein 10x2.125-6.5 Offroad ultra-léger jante 44 mm rouge Nedong",
+   "brand": "",
+   "candidates": [
+    "https://d2j6dbq0eux0bg.cloudfront.net/images/68019033/products/873646276/6349410049.jpg",
+    "https://d2j6dbq0eux0bg.cloudfront.net/images/68019033/products/873646276/6349410051.jpg",
+    "https://d2j6dbq0eux0bg.cloudfront.net/images/68019033/products/873646276/6349409893.jpg",
+    "https://d2j6dbq0eux0bg.cloudfront.net/images/68019033/products/873646276/6349409899.jpg",
+    "https://d2j6dbq0eux0bg.cloudfront.net/images/68019033/products/873646276/6349409875.jpg",
+    "https://d2j6dbq0eux0bg.cloudfront.net/images/68019033/products/873646276/6349410057.jpg",
+    "https://ewheel.es/cdn/shop/files/8435764437533.jpg",
+    "https://ewheel.es/cdn/shop/files/8435764437533_1.jpg",
+    "https://ewheel.es/cdn/shop/files/8435764437533_2.jpg",
+    "https://ewheel.es/cdn/shop/files/8435764437533_3.jpg",
+    "https://ewheel.es/cdn/shop/files/8435764437533_4.jpg"
+   ]
+  },
+  {
+   "id": "4a9bef13-469f-48ff-96fc-c3d3cbeece61",
+   "slug": "pneu-plein-10x2-50-6-1-ultra-leger-jante-34-mm-lisere-bleu-nedong",
+   "name": "Pneu plein 10x2.50-6.1 ultra-léger jante 34 mm liseré bleu Nedong",
+   "brand": "",
+   "candidates": [
+    "https://d2j6dbq0eux0bg.cloudfront.net/images/68019033/4180092347.jpg",
+    "https://d2j6dbq0eux0bg.cloudfront.net/images/68019033/4180092348.jpg",
+    "https://d2j6dbq0eux0bg.cloudfront.net/images/68019033/4303625857.jpg",
+    "https://d2j6dbq0eux0bg.cloudfront.net/images/68019033/4303642759.jpg",
+    "https://d2j6dbq0eux0bg.cloudfront.net/images/68019033/4303626116.jpg",
+    "https://d2j6dbq0eux0bg.cloudfront.net/images/68019033/4303642754.jpg",
+    "https://ewheel.es/cdn/shop/files/7427255405436.jpg",
+    "https://ewheel.es/cdn/shop/files/7427255405436_1.jpg",
+    "https://ewheel.es/cdn/shop/files/7427255405436_2.jpg",
+    "https://ewheel.es/cdn/shop/files/7427255405436_3.jpg",
+    "https://ewheel.es/cdn/shop/files/7427255405436_4.jpg"
+   ]
+  },
+  {
+   "id": "c7d39179-ddc4-43af-a0cb-224bd6ff4439",
+   "slug": "pneu-plein-10x2-50-6-1-ultra-leger-jante-34-mm-lisere-noir-ewheel",
+   "name": "Pneu plein 10x2.50-6.1 ultra-léger jante 34 mm liseré noir eWheel",
+   "brand": "",
+   "candidates": [
+    "https://e-planetmobility.com/wp-content/uploads/2024/07/Rueda-maciza-ultraligera-10x25-61B34mm-linea-negra-Ewheel.jpg.webp",
+    "https://e-planetmobility.com/wp-content/uploads/2024/07/Rueda-maciza-ultraligera-10x25-61B34mm-linea-negra-Ewheel-2.jpg.webp",
+    "https://e-planetmobility.com/wp-content/uploads/2024/07/Rueda-maciza-ultraligera-10x25-61B34mm-linea-negra-Ewheel-3.jpg.webp",
+    "https://e-planetmobility.com/wp-content/uploads/2024/07/Rueda-maciza-ultraligera-10x25-61B34mm-linea-negra-Ewheel-4.jpg.webp",
+    "https://e-planetmobility.com/wp-content/uploads/2024/07/Rueda-maciza-ultraligera-10x25-61B34mm-linea-negra-Ewheel-5.jpg.webp",
+    "https://ewheel.es/cdn/shop/files/8435764420948.jpg",
+    "https://ewheel.es/cdn/shop/files/8435764420948_1.jpg",
+    "https://ewheel.es/cdn/shop/files/8435764420948_2.jpg",
+    "https://ewheel.es/cdn/shop/files/8435764420948_3.jpg",
+    "https://ewheel.es/cdn/shop/files/8435764420948_4.jpg"
+   ]
+  },
+  {
+   "id": "c4970c7f-2ae6-4534-979c-7e251c79d1d8",
+   "slug": "pneu-plein-10x2-50-6-1-ultra-leger-jante-44-mm-points-bleus-nedong",
+   "name": "Pneu plein 10x2.50-6.1 ultra-léger jante 44 mm points bleus Nedong",
+   "brand": "",
+   "candidates": [
+    "https://d2j6dbq0eux0bg.cloudfront.net/images/68019033/4180091375.jpg",
+    "https://d2j6dbq0eux0bg.cloudfront.net/images/68019033/4180091376.jpg",
+    "https://d2j6dbq0eux0bg.cloudfront.net/images/68019033/4304078141.jpg",
+    "https://d2j6dbq0eux0bg.cloudfront.net/images/68019033/4304064996.jpg",
+    "https://d2j6dbq0eux0bg.cloudfront.net/images/68019033/4304064991.jpg",
+    "https://d2j6dbq0eux0bg.cloudfront.net/images/68019033/4304063206.jpg",
+    "https://ewheel.es/cdn/shop/files/7427255405429.jpg",
+    "https://ewheel.es/cdn/shop/files/7427255405429_1.jpg",
+    "https://ewheel.es/cdn/shop/files/7427255405429_2.jpg",
+    "https://ewheel.es/cdn/shop/files/7427255405429_3.jpg",
+    "https://ewheel.es/cdn/shop/files/7427255405429_4.jpg"
+   ]
+  },
+  {
+   "id": "e0c5575c-559c-4acf-a61d-a84573f6deb7",
+   "slug": "pneu-plein-10x2-50-6-5-noir-cityneye",
+   "name": "Pneu plein 10x2.50-6.5 noir Cityneye",
+   "brand": "",
+   "candidates": [
+    "https://e-planetmobility.com/wp-content/uploads/2025/08/Rueda-maciza-10x25-65-Negro-Cityneye.jpg.webp",
+    "https://e-planetmobility.com/wp-content/uploads/2025/08/Rueda-maciza-10x25-65-Negro-Cityneye-2.jpg.webp",
+    "https://e-planetmobility.com/wp-content/uploads/2025/08/Rueda-maciza-10x25-65-Negro-Cityneye-3.jpg.webp",
+    "https://e-planetmobility.com/wp-content/uploads/2025/08/Rueda-maciza-10x25-65-Negro-Cityneye-4.jpg.webp",
+    "https://e-planetmobility.com/wp-content/uploads/2025/08/Rueda-maciza-10x25-65-Negro-Cityneye-5.jpg.webp",
+    "https://maquinete.com/17278-large_default/rueda-maciza-10x25-65-cityneye-negro.jpg",
+    "https://maquinete.com/17279-large_default/rueda-maciza-10x25-65-cityneye-negro.jpg",
+    "https://ewheel.es/cdn/shop/files/8435764435324.jpg",
+    "https://ewheel.es/cdn/shop/files/8435764435324_1.jpg",
+    "https://ewheel.es/cdn/shop/files/8435764435324_2.jpg",
+    "https://ewheel.es/cdn/shop/files/8435764435324_3.jpg",
+    "https://ewheel.es/cdn/shop/files/8435764435324_4.jpg"
+   ]
+  },
+  {
+   "id": "1d37a53d-4381-402c-a5c9-6d0370fa2dd2",
+   "slug": "pneu-plein-10x2-50-6-5-offroad-ultra-leger-jante-44-mm-bleu-nedong",
+   "name": "Pneu plein 10x2.50-6.5 Offroad ultra-léger jante 44 mm bleu Nedong",
+   "brand": "",
+   "candidates": [
+    "https://www.imooving.com/11587-large_default/pneu-plein-ultraleger-offroad-10x25-65-b44-bleu-nedong-.jpg",
+    "https://www.imooving.com/11588-large_default/pneu-plein-ultraleger-offroad-10x25-65-b44-bleu-nedong-.jpg",
+    "https://www.imooving.com/11589-large_default/pneu-plein-ultraleger-offroad-10x25-65-b44-bleu-nedong-.jpg",
+    "https://www.imooving.com/11590-large_default/pneu-plein-ultraleger-offroad-10x25-65-b44-bleu-nedong-.jpg",
+    "https://www.imooving.com/11591-large_default/pneu-plein-ultraleger-offroad-10x25-65-b44-bleu-nedong-.jpg",
+    "https://ewheel.es/cdn/shop/files/8435764436475.jpg",
+    "https://ewheel.es/cdn/shop/files/8435764436475_1.jpg",
+    "https://ewheel.es/cdn/shop/files/8435764436475_2.jpg",
+    "https://ewheel.es/cdn/shop/files/8435764436475_3.jpg",
+    "https://ewheel.es/cdn/shop/files/8435764436475_4.jpg"
+   ]
+  },
+  {
+   "id": "b0bfccfb-245e-4794-af20-57518a039893",
+   "slug": "pneu-plein-10x2-50-6-5-ultra-leger-jante-44-mm-lisere-bleu-nedong",
+   "name": "Pneu plein 10x2.50-6.5 ultra-léger jante 44 mm liseré bleu Nedong",
+   "brand": "",
+   "candidates": [
+    "https://d2j6dbq0eux0bg.cloudfront.net/images/68019033/4180089932.jpg",
+    "https://d2j6dbq0eux0bg.cloudfront.net/images/68019033/4180089933.jpg",
+    "https://d2j6dbq0eux0bg.cloudfront.net/images/68019033/4304078073.jpg",
+    "https://d2j6dbq0eux0bg.cloudfront.net/images/68019033/4304078068.jpg",
+    "https://d2j6dbq0eux0bg.cloudfront.net/images/68019033/4304078063.jpg",
+    "https://d2j6dbq0eux0bg.cloudfront.net/images/68019033/4304078078.jpg",
+    "https://ewheel.es/cdn/shop/files/7427255407010.jpg",
+    "https://ewheel.es/cdn/shop/files/7427255407010_1.jpg",
+    "https://ewheel.es/cdn/shop/files/7427255407010_2.jpg",
+    "https://ewheel.es/cdn/shop/files/7427255407010_3.jpg",
+    "https://ewheel.es/cdn/shop/files/7427255407010_4.jpg"
+   ]
+  },
+  {
+   "id": "1030c6d1-cd9a-412a-9160-bf4a82b9bc88",
+   "slug": "pneu-plein-10x2-50-7-noir-cityneye",
+   "name": "Pneu plein 10x2.50-7 noir Cityneye",
+   "brand": "",
+   "candidates": [
+    "https://maquinete.com/11049-large_default/rueda-maciza-10x25-7-cityneye-negro.jpg",
+    "https://maquinete.com/11050-large_default/rueda-maciza-10x25-7-cityneye-negro.jpg",
+    "https://ewheel.es/cdn/shop/files/8435764433771.jpg",
+    "https://ewheel.es/cdn/shop/files/8435764433771_1.jpg",
+    "https://ewheel.es/cdn/shop/files/8435764433771_2.jpg",
+    "https://ewheel.es/cdn/shop/files/8435764433771_3.jpg",
+    "https://ewheel.es/cdn/shop/files/8435764433771_4.jpg"
+   ]
+  },
+  {
+   "id": "71201519-d9e9-4427-9924-0ef4a7084a00",
+   "slug": "pneu-plein-10x2-50-offroad-ultra-leger-jante-44-mm-jaune-nedong",
+   "name": "Pneu plein 10x2.50 Offroad ultra-léger jante 44 mm jaune Nedong",
+   "brand": "",
+   "candidates": [
+    "https://www.imooving.com/11619-large_default/pneu-plein-ultra-leger-offroad-10x25-b44-nedong-.jpg",
+    "https://www.imooving.com/11620-large_default/pneu-plein-ultra-leger-offroad-10x25-b44-nedong-.jpg",
+    "https://www.imooving.com/11621-large_default/pneu-plein-ultra-leger-offroad-10x25-b44-nedong-.jpg",
+    "https://www.imooving.com/11622-large_default/pneu-plein-ultra-leger-offroad-10x25-b44-nedong-.jpg",
+    "https://www.imooving.com/11623-large_default/pneu-plein-ultra-leger-offroad-10x25-b44-nedong-.jpg",
+    "https://ewheel.es/cdn/shop/files/8435764434488.jpg",
+    "https://ewheel.es/cdn/shop/files/8435764434488_1.jpg",
+    "https://ewheel.es/cdn/shop/files/8435764434488_2.jpg",
+    "https://ewheel.es/cdn/shop/files/8435764434488_3.jpg",
+    "https://ewheel.es/cdn/shop/files/8435764434488_4.jpg"
+   ]
+  },
+  {
+   "id": "c0ac2f9c-bfa3-42f7-ad08-8155d32b6f07",
+   "slug": "pneu-plein-10x2-75-6-5-offroad-ultra-leger-jante-55-mm-lisere-rouge-ewheel",
+   "name": "Pneu plein 10x2.75-6.5 Offroad ultra-léger jante 55 mm liseré rouge eWheel",
+   "brand": "",
+   "candidates": [
+    "https://www.imooving.com/11680-large_default/pneu-plein-ultraleger-offroad-10x275-65-b55-ligne-rouge.jpg",
+    "https://www.imooving.com/11681-large_default/pneu-plein-ultraleger-offroad-10x275-65-b55-ligne-rouge.jpg",
+    "https://www.imooving.com/11682-large_default/pneu-plein-ultraleger-offroad-10x275-65-b55-ligne-rouge.jpg",
+    "https://www.imooving.com/11683-large_default/pneu-plein-ultraleger-offroad-10x275-65-b55-ligne-rouge.jpg",
+    "https://www.imooving.com/11684-large_default/pneu-plein-ultraleger-offroad-10x275-65-b55-ligne-rouge.jpg",
+    "https://ewheel.es/cdn/shop/files/8435764434471.jpg",
+    "https://ewheel.es/cdn/shop/files/8435764434471_1.jpg",
+    "https://ewheel.es/cdn/shop/files/8435764434471_2.jpg",
+    "https://ewheel.es/cdn/shop/files/8435764434471_3.jpg",
+    "https://ewheel.es/cdn/shop/files/8435764434471_4.jpg"
+   ]
+  },
+  {
+   "id": "8a11e5f2-8636-4eea-97b0-d5c4e507ac25",
+   "slug": "pneu-plein-10x3-6-tricolore-cityneye",
+   "name": "Pneu plein 10x3-6 tricolore Cityneye",
+   "brand": "",
+   "candidates": [
+    "https://ewheel.es/cdn/shop/files/8435764437205.jpg?v=1779446183&width=1500",
+    "https://ewheel.es/cdn/shop/files/8435764437205_1.jpg?v=1779446183&width=1500",
+    "https://ewheel.es/cdn/shop/files/8435764437205_2.jpg?v=1779446183&width=1500",
+    "https://ewheel.es/cdn/shop/files/8435764437205_3.jpg?v=1779446183&width=1500",
+    "https://ewheel.es/cdn/shop/files/8435764437205_4.jpg?v=1779446183&width=1500",
+    "https://ewheel.es/cdn/shop/files/8435764437205.jpg",
+    "https://ewheel.es/cdn/shop/files/8435764437205_1.jpg",
+    "https://ewheel.es/cdn/shop/files/8435764437205_2.jpg",
+    "https://ewheel.es/cdn/shop/files/8435764437205_3.jpg",
+    "https://ewheel.es/cdn/shop/files/8435764437205_4.jpg"
+   ]
+  },
+  {
+   "id": "270575c5-e418-40cb-a3e4-9a4b38e9cb35",
+   "slug": "pneu-plein-230x50-offroad-ultra-leger-lisere-rouge-ewheel",
+   "name": "Pneu plein 230x50 Offroad ultra-léger liseré rouge eWheel",
+   "brand": "",
+   "candidates": [
+    "https://e-planetmobility.com/wp-content/uploads/2025/03/Rueda-maciza-ultraligera-offroad-230x50-linea-roja-Ewheel.jpg.webp",
+    "https://e-planetmobility.com/wp-content/uploads/2025/03/Rueda-maciza-ultraligera-offroad-230x50-linea-roja-Ewheel-2.jpg.webp",
+    "https://e-planetmobility.com/wp-content/uploads/2025/03/Rueda-maciza-ultraligera-offroad-230x50-linea-roja-Ewheel-3.jpg.webp",
+    "https://e-planetmobility.com/wp-content/uploads/2025/03/Rueda-maciza-ultraligera-offroad-230x50-linea-roja-Ewheel-4.jpg.webp",
+    "https://e-planetmobility.com/wp-content/uploads/2025/03/Rueda-maciza-ultraligera-offroad-230x50-linea-roja-Ewheel-5.jpg.webp",
+    "https://ewheel.es/cdn/shop/files/8435764436154.jpg",
+    "https://ewheel.es/cdn/shop/files/8435764436154_1.jpg",
+    "https://ewheel.es/cdn/shop/files/8435764436154_2.jpg",
+    "https://ewheel.es/cdn/shop/files/8435764436154_3.jpg",
+    "https://ewheel.es/cdn/shop/files/8435764436154_4.jpg"
+   ]
+  },
+  {
+   "id": "e3b390f5-2e6c-4adc-ac70-da8e248df5bd",
+   "slug": "pneu-plein-60-70-6-5-offroad-ultra-leger-jante-44-mm-lisere-rouge-ewheel",
+   "name": "Pneu plein 60/70-6.5 Offroad ultra-léger jante 44 mm liseré rouge eWheel",
+   "brand": "",
+   "candidates": [
+    "https://mobystyle.si/wp-content/uploads/2024/07/trda-guma-za-elektricni-skiro-60-70-6.5-44mm-rdeca-1.jpg",
+    "https://mobystyle.si/wp-content/uploads/2024/07/trda-guma-za-elektricni-skiro-60-70-6.5-44mm-rdeca-2.jpg",
+    "https://mobystyle.si/wp-content/uploads/2024/07/trda-guma-za-elektricni-skiro-60-70-6.5-44mm-rdeca-3.jpg",
+    "https://mobystyle.si/wp-content/uploads/2024/07/trda-guma-za-elektricni-skiro-60-70-6.5-44mm-rdeca-4.jpg",
+    "https://www.doctortrotineta.ro/uploads/products/fa6e20df2a9ee462b4f0acf2b010e1e1.jpg",
+    "https://ewheel.es/cdn/shop/files/9501352829444.jpg",
+    "https://ewheel.es/cdn/shop/files/9501352829444_1.jpg",
+    "https://ewheel.es/cdn/shop/files/9501352829444_2.jpg",
+    "https://ewheel.es/cdn/shop/files/9501352829444_3.jpg",
+    "https://ewheel.es/cdn/shop/files/9501352829444_4.jpg"
+   ]
+  },
+  {
+   "id": "ac8d7a91-9650-45e2-9552-9705493bd952",
+   "slug": "pneu-plein-60-70-7-offroad-ultra-leger-jante-50-mm-lisere-rouge-ewheel",
+   "name": "Pneu plein 60/70-7 Offroad ultra-léger jante 50 mm liseré rouge eWheel",
+   "brand": "",
+   "candidates": [
+    "https://e-planetmobility.com/wp-content/uploads/2025/03/Rueda-maciza-ultraligera-offroad-6070-7B50-linea-roja-Ewheel.jpg.webp",
+    "https://e-planetmobility.com/wp-content/uploads/2025/03/Rueda-maciza-ultraligera-offroad-6070-7B50-linea-roja-Ewheel-2.jpg.webp",
+    "https://e-planetmobility.com/wp-content/uploads/2025/03/Rueda-maciza-ultraligera-offroad-6070-7B50-linea-roja-Ewheel-3.jpg.webp",
+    "https://e-planetmobility.com/wp-content/uploads/2025/03/Rueda-maciza-ultraligera-offroad-6070-7B50-linea-roja-Ewheel-4.jpg.webp",
+    "https://e-planetmobility.com/wp-content/uploads/2025/03/Rueda-maciza-ultraligera-offroad-6070-7B50-linea-roja-Ewheel-5.jpg.webp",
+    "https://ewheel.es/cdn/shop/files/8435764436161.jpg",
+    "https://ewheel.es/cdn/shop/files/8435764436161_1.jpg",
+    "https://ewheel.es/cdn/shop/files/8435764436161_2.jpg",
+    "https://ewheel.es/cdn/shop/files/8435764436161_3.jpg",
+    "https://ewheel.es/cdn/shop/files/8435764436161_4.jpg"
+   ]
+  },
+  {
+   "id": "43c7dd0c-535c-48ed-89aa-f8d5f70f07bf",
+   "slug": "pneu-plein-8-5x2-5-6-1-ultra-leger-jante-58-mm-dualtron-mini-lisere-rouge-ewheel",
+   "name": "Pneu plein 8.5x2.5-6.1 ultra-léger jante 58 mm Dualtron Mini liseré rouge eWheel",
+   "brand": "",
+   "candidates": [
+    "https://funtrott.fr/5727-large_default/pneu-plein-ultralege-8525-ligne-rouge-valable-pour-dualtron-mini.jpg",
+    "https://funtrott.fr/6312-large_default/pneu-plein-ultralege-8525-ligne-rouge-valable-pour-dualtron-mini.jpg",
+    "https://ewheel.es/cdn/shop/files/7427255408949.jpg",
+    "https://ewheel.es/cdn/shop/files/7427255408949_1.jpg",
+    "https://ewheel.es/cdn/shop/files/7427255408949_2.jpg",
+    "https://ewheel.es/cdn/shop/files/7427255408949_3.jpg",
+    "https://ewheel.es/cdn/shop/files/7427255408949_4.jpg"
+   ]
+  },
+  {
+   "id": "95fd0fa3-23f0-4d72-a660-4bcbdd5e50e6",
+   "slug": "pneu-plein-8-5x2-6-1-alveole-jante-34-mm-rouge",
+   "name": "Pneu plein 8.5x2-6.1 alvéolé jante 34 mm rouge",
+   "brand": "",
+   "candidates": [
+    "https://www.doctortrotineta.ro/uploads/products/import_6a874df1b015a3.97741636.png",
+    "https://www.doctortrotineta.ro/uploads/products/thumbs/300/import_6a874df1ebcac1.51250803.webp",
+    "https://www.doctortrotineta.ro/uploads/products/thumbs/300/import_6a874df1cd7c90.50547047.webp",
+    "https://ewheel.es/cdn/shop/files/7427251493628.jpg",
+    "https://ewheel.es/cdn/shop/files/7427251493628_1.jpg",
+    "https://ewheel.es/cdn/shop/files/7427251493628_2.jpg",
+    "https://ewheel.es/cdn/shop/files/7427251493628_3.jpg",
+    "https://ewheel.es/cdn/shop/files/7427251493628_4.jpg"
+   ]
+  }
+ ]
+}
