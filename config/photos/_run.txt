@@ -1,1 +1,1 @@
-compat cecotec-m
+angles trottinettes scooter_models 0.82

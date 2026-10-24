@@ -112,6 +112,18 @@ jobs:
               grep '^::' "out/$lot.$mode.log" | head -5
               continue
             fi
+            if [ "$mode" = "angles" ]; then
+              # Lecture seule (24/10) : « angles <lot> <scooter_models|parts> [seuil_iou] [slug1,slug2] » — 3 angles distincts par fiche.
+              read -r table iou slugs <<< "$extra"
+              aargs="--lot $lot --table ${table:-scooter_models}"
+              [ -n "$iou" ] && aargs="$aargs --iou $iou"
+              [ -n "$slugs" ] && aargs="$aargs --slugs $slugs"
+              node scripts/audit-angles.mjs $aargs > "out/angles-$lot.log" 2>&1
+              echo "::notice title=$lot angles::EXIT=$?"
+              grep '^::' "out/angles-$lot.log" | head -5
+              tail -n 3 "out/angles-$lot.log"
+              continue
+            fi
             if [ "$mode" = "append" ]; then
               node scripts/photos-galerie.mjs --write --append --file "config/photos/$lot.json" --accept "config/photos/$lot.accept.json" > "out/$lot.$mode.log" 2>&1
             elif [ "$mode" = "write" ]; then
