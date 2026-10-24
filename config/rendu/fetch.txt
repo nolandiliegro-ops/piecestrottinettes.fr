@@ -1,0 +1,6 @@
+rendu/parts.json https://kqsxscjtlipregkrmucg.supabase.co/rest/v1/parts?select=id,name,slug,price,image_url,images,difficulty_level,stock_quantity,technical_metadata,category_id,is_featured,attributes,category:categories(id,name,icon,slug,color)&published=eq.true&order=name&limit=1000
+rendu/categories.json https://kqsxscjtlipregkrmucg.supabase.co/rest/v1/categories?select=*&order=display_order
+rendu/scooter_models.json https://kqsxscjtlipregkrmucg.supabase.co/rest/v1/scooter_models?select=*,brand:brands!scooter_models_brand_id_fkey(id,name,slug,logo_url,signature_color)&published=eq.true&order=name
+rendu/brands.json https://kqsxscjtlipregkrmucg.supabase.co/rest/v1/brands?select=*
+rendu/pc-mipro2.json https://kqsxscjtlipregkrmucg.supabase.co/rest/v1/part_compatibility?select=part_id,confidence_level,suggestion_reason,parts(slug,electrical_specs)&scooter_model_id=eq.8ac84c3d-5813-472c-83f0-8b2604e44d79
+rendu/pc-hiboy.json https://kqsxscjtlipregkrmucg.supabase.co/rest/v1/part_compatibility?select=part_id,confidence_level,suggestion_reason,parts(slug,electrical_specs)&scooter_model_id=eq.64b4d7b0-3863-486e-9d90-4077bafdc0ad

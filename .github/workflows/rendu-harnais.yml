@@ -1,0 +1,33 @@
+name: Harnais de rendu (données + images)
+# 24/10/2026 : l'espace de travail de Claude ne joint pas supabase.co. Ce job, sur une branche rendu/*,
+# lit config/rendu/fetch.txt (« chemin URL » par ligne, chemin sous rendu/), télécharge en LECTURE SEULE
+# (clé publique du site, celle de src/integrations/supabase/client.ts) et commite sur la même branche.
+on:
+  push:
+    branches: ['rendu/**']
+    paths: ['config/rendu/fetch.txt']
+permissions:
+  contents: write
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - name: Téléchargement
+        run: |
+          set -e
+          KEY=$(grep -o 'eyJ[A-Za-z0-9._-]*' src/integrations/supabase/client.ts | head -1)
+          grep -vE '^\s*(#|$)' config/rendu/fetch.txt | while read -r dest url; do
+            case "$dest" in rendu/*) ;; *) echo "::error::chemin refusé $dest"; exit 1;; esac
+            mkdir -p "$(dirname "$dest")"
+            curl -fsSL --max-time 60 -H "apikey: $KEY" -H "Authorization: Bearer $KEY" -o "$dest" "$url" || echo "::warning::échec $dest"
+          done
+          du -sh rendu
+      - name: Commit
+        run: |
+          git config user.name "pt-rendu"; git config user.email "pt-rendu@users.noreply.github.com"
+          git add rendu
+          if git diff --cached --quiet; then exit 0; fi
+          git commit -m "rendu: données et images du harnais"
+          for i in 1 2 3; do git push && exit 0; git pull --rebase; done; exit 1

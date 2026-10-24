@@ -13,6 +13,7 @@ import { Search, X, ChevronLeft, ChevronDown } from "lucide-react";
 import { inchOfSize, inchLabel } from "@/lib/tireSize";
 import { supabase } from "@/integrations/supabase/client";
 import { useSelectedScooter } from "@/contexts/ScooterContext";
+import { readPickerLook } from "@/components/catalogue/ScooterPicker";
 import { classifyCompat } from "@/lib/compatibilityStatus";
 import PartCard from "@/components/parts/PartCard";
 import type { CataloguePart } from "@/hooks/useCatalogueData";
@@ -157,7 +158,8 @@ const CategoryExplorer = ({ slug, name, parts }: Props) => {
       return out;
     },
   });
-  const { selectedScooter } = useSelectedScooter();
+  const { selectedScooter, setSelectedScooter, allScooters } = useSelectedScooter();
+  const pickerOn = typeof window !== "undefined" && readPickerLook(new URLSearchParams(window.location.search)) !== null;
 
   const [q, setQ] = useState("");
   const [brand, setBrand] = useState<string | null>(null); // marque ouverte (étape 1), ne filtre pas
@@ -172,6 +174,12 @@ const CategoryExplorer = ({ slug, name, parts }: Props) => {
   const [visible, setVisible] = useState(12);
   useEffect(() => { setQ(""); setBrand(null); setModel(null); setSize(null); setInch(null); setMoreSizes(false); setVisible(12); }, [slug]);
   useEffect(() => setVisible(12), [q, model, size]);
+  // 24/10 (sélecteur de trott) : le modèle choisi ici devient LA trottinette du site (gardée sur /catalogue et partout).
+  useEffect(() => {
+    if (!pickerOn || !model || selectedScooter?.id === model) return;
+    const s = allScooters.find((x) => x.id === model);
+    if (s) setSelectedScooter({ id: s.id, name: s.name, slug: s.slug, brandName: s.brandName, imageUrl: s.imageUrl });
+  }, [model, allScooters]); // eslint-disable-line react-hooks/exhaustive-deps
   // Trottinette du garage / sélecteur : présélectionnée si elle a des pièces ici.
   useEffect(() => { if (selectedScooter && modelMap[selectedScooter.id] && !model) { setModel(selectedScooter.id); setBrand(modelMap[selectedScooter.id].brand); } }, [selectedScooter, modelMap]); // eslint-disable-line react-hooks/exhaustive-deps
 

@@ -21,6 +21,7 @@ import CatalogueTop, { EtabliSidebar, PRICE_OPTS, type CatalogueLook } from "@/c
 import { useCategoryImages } from "@/hooks/useCategoryImages";
 import { useSelectedCompatIds, compatFirst } from "@/hooks/useSelectedCompatIds";
 import { useSelectedScooter } from "@/contexts/ScooterContext";
+import { PickerSheet, PickerPlate, PickerBlock, PickerEmpty, readPickerLook, type PickerProps } from "@/components/catalogue/ScooterPicker";
 
 // Skeleton grid for loading state
 const SkeletonGrid = () => (
@@ -166,7 +167,15 @@ const Catalogue = () => {
     enabled: !!scooterIdFilter && vue !== null,
     staleTime: 5 * 60 * 1000,
   });
-  const { selectedScooter } = useSelectedScooter();
+  const { selectedScooter, setSelectedScooter } = useSelectedScooter();
+  // 24/10 : sélecteur de trottinette (?selecteur=1..5). Choix de Nolan : la trott choisie filtre d'office, « Voir tout » à côté.
+  const pickerLook = vue ? readPickerLook(searchParams) : null;
+  const [pickerOpen, setPickerOpen] = useState(false);
+  const pickerFilterOn = !!selectedScooter && scooterIdFilter === selectedScooter.id;
+  useEffect(() => {
+    if (pickerLook && selectedScooter && !scooterIdFilter && searchParams.get("tout") !== "1")
+      setP((sp) => sp.set("scooter", selectedScooter.id));
+  }, [pickerLook, selectedScooter?.id]); // eslint-disable-line react-hooks/exhaustive-deps
   const compatIds = useSelectedCompatIds();
   const { data: categoryImages = {} } = useCategoryImages();
 
@@ -314,6 +323,16 @@ const Catalogue = () => {
   const shownRelated = useMemo(() => applyTopFilters(searchRelated), // eslint-disable-line react-hooks/exhaustive-deps
     [searchRelated, vue, priceSel.join(), stockOnly, partSort, compatIds]);
 
+  const pickerProps: PickerProps | null = pickerLook ? {
+    look: pickerLook,
+    filterOn: pickerFilterOn,
+    count: pickerFilterOn && scooterPartIds ? shownParts.length : null,
+    total: everyPart.length,
+    onPick: (s) => { setSelectedScooter(s); setP((sp) => { sp.set("scooter", s.id); sp.delete("tout"); }); },
+    onFilter: (on) => setP((sp) => { if (on && selectedScooter) { sp.set("scooter", selectedScooter.id); sp.delete("tout"); } else { sp.delete("scooter"); sp.set("tout", "1"); } }),
+  } : null;
+  const openPicker = () => setPickerOpen(true);
+
   // Reset sous-catégorie quand on change de catégorie parente
   const handleCategoryChange = (categoryId: string | null) => {
     setActiveCategory(categoryId);
@@ -375,8 +394,12 @@ const Catalogue = () => {
             myScooter={selectedScooter ? { id: selectedScooter.id, name: selectedScooter.name } : null}
             scooterOn={!!selectedScooter && scooterIdFilter === selectedScooter.id}
             onScooter={(on) => setP((sp) => { if (on && selectedScooter) sp.set("scooter", selectedScooter.id); else sp.delete("scooter"); })}
+            pickerBlock={pickerProps && pickerProps.look >= 2 && pickerProps.look <= 4 ? <PickerBlock {...pickerProps} openSheet={openPicker} /> : undefined}
+            filtersLead={pickerProps && pickerProps.look === 1 ? <PickerPlate {...pickerProps} openSheet={openPicker} /> : undefined}
           />
         )}
+        {pickerProps?.look === 5 && <PickerBlock {...pickerProps} openSheet={openPicker} />}
+        {pickerProps && <PickerSheet open={pickerOpen} onClose={() => setPickerOpen(false)} onPick={pickerProps.onPick} />}
         <section className={vue ? "container mx-auto px-4 text-center" : "container mx-auto px-4 py-6 lg:py-8 text-center"}>
           {!vue && <>
           <motion.h1
@@ -584,6 +607,8 @@ const Catalogue = () => {
                   Aucune pièce trouvée pour «&nbsp;{searchQuery}&nbsp;»
                 </p>
               </motion.div>
+            ) : pickerProps && pickerFilterOn && selectedScooter && !activeCategory && !priceSel.length && !stockOnly ? (
+              <PickerEmpty scooter={selectedScooter} total={everyPart.length} onAll={() => pickerProps.onFilter(false)} />
             ) : (
               <EmptyState onClear={() => setActiveCategory(null)} />
             )}

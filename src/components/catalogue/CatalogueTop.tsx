@@ -13,6 +13,7 @@
  * 5 ÉTABLI       · colonne de gauche (catégories + filtres) sur ordinateur, grille à droite
  */
 import { useEffect, useState } from "react";
+import type React from "react";
 import { Link } from "react-router-dom";
 import { Check, ChevronDown, LayoutGrid, Search, ArrowRight, X, BookOpen } from "lucide-react";
 import { cn } from "@/lib/utils";
@@ -56,6 +57,9 @@ interface Props {
   myScooter: { id: string; name: string } | null;
   scooterOn: boolean;
   onScooter: (on: boolean) => void;
+  /** 24/10 sélecteur de trott (?selecteur=) : bloc sous le titre, et plaque en tête des filtres (remplace « Ma trott »). */
+  pickerBlock?: React.ReactNode;
+  filtersLead?: React.ReactNode;
 }
 
 const CHAMFER = "polygon(0 0, calc(100% - 12px) 0, 100% 12px, 100% 100%, 0 100%)";
@@ -96,7 +100,8 @@ const Filters = (p: Props & { dark?: boolean; stacked?: boolean }) => {
   const wrap = p.stacked ? "flex flex-col items-stretch gap-2" : "flex items-center gap-2 overflow-x-auto pb-1 -mx-4 px-4 md:mx-0 md:px-0 md:flex-wrap md:overflow-visible";
   return (
     <div className={wrap} style={{ scrollbarWidth: "none" }}>
-      {p.myScooter && (
+      {p.filtersLead}
+      {!p.filtersLead && p.myScooter && (
         <button type="button" onClick={() => p.onScooter(!p.scooterOn)} className={cn(scootBtn.cls, "shrink-0")} style={scootBtn.style} aria-pressed={p.scooterOn}>
           {p.scooterOn && <Check className="w-4 h-4" strokeWidth={3} />} Ma {p.myScooter.name}
         </button>
@@ -280,6 +285,7 @@ const CatalogueTop = (p: Props) => {
     return (
       <section className="container mx-auto px-4 pt-6 lg:pt-10 pb-4">
         <div className="flex items-end justify-between gap-4 flex-wrap"><Title /><Count n={p.resultCount} total={p.total} /></div>
+        {p.pickerBlock && <div className="max-w-2xl">{p.pickerBlock}</div>}
         <div className="mt-5 max-w-2xl"><SearchField value={p.query} onChange={p.onQuery} /></div>
         <div className={TUILE === 4 ? "mt-5 grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-8 gap-2" : TUILE === 2 ? "mt-5 grid grid-cols-3 sm:grid-cols-5 lg:grid-cols-9 gap-x-2 gap-y-3" : "mt-5 grid grid-cols-3 sm:grid-cols-5 lg:grid-cols-9 gap-2"}>{tiles()}</div>
         {p.activeCategory && <div className="max-w-2xl"><GuideLink cat={p.categories.find((c) => c.id === p.activeCategory)} n={p.counts[p.activeCategory] ?? 0} /></div>}
