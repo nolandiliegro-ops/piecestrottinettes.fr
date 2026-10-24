@@ -66,6 +66,12 @@ const Footer = () => {
           <div>
             <h4 className="font-display text-sm tracking-wider text-white/90 mb-4">RESSOURCES</h4>
             <nav className="flex flex-col gap-2">
+              <Link to="/atelier" className="text-white/60 hover:text-white transition-colors text-sm">
+                L'Atelier : pose ta question
+              </Link>
+              <Link to="/atelier/videos" className="text-white/60 hover:text-white transition-colors text-sm">
+                Vidéos des trottinettes
+              </Link>
               <Link to="/blog" className="text-white/60 hover:text-white transition-colors text-sm">
                 Le blog de l'atelier
               </Link>

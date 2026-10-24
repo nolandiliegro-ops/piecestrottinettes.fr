@@ -14,6 +14,7 @@ import RelatedScootersTabs from "@/components/scooter/RelatedScootersTabs";
 import ScooterPageVariants, { type PageStyle } from "@/components/scooter/ScooterPageVariants";
 import ScooterSeoFiche, { PartnerBlock } from "@/components/scooter/ScooterSeoFiche";
 import ScooterGuides from "@/components/scooter/ScooterGuides";
+import ScooterQuestions from "@/components/scooter/ScooterQuestions";
 import { useShowroomData } from "@/hooks/useShowroomData";
 import { getBrandColors } from "@/contexts/ScooterContext";
 import { solidConversionState } from "@/lib/compatibilityStatus";
@@ -302,6 +303,7 @@ const ScooterDetail = () => {
 
         {/* 24/10 : guides de l'atelier liés à cette trottinette (fiche → article → pièces) */}
         <ScooterGuides slug={scooter.slug} brandSlug={scooter.brand?.slug} scooterName={scooter.name} />
+        <ScooterQuestions slug={scooter.slug} scooterName={scooter.name} />
 
         {/* Autres modèles — segmented control 3 onglets (masqué dans les propositions ?style=) */}
         {!pageStyle && <RelatedScootersTabs

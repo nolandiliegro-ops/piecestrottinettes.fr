@@ -28,6 +28,8 @@ const STATIC_PAGES = [
   { path: "/catalogue", priority: "0.9", changefreq: "daily" },
   { path: "/trottinettes", priority: "0.8", changefreq: "weekly" },
   { path: "/pepites", priority: "0.7", changefreq: "weekly" },
+  { path: "/atelier", priority: "0.8", changefreq: "weekly" },
+  { path: "/atelier/videos", priority: "0.6", changefreq: "weekly" },
   { path: "/blog", priority: "0.8", changefreq: "weekly" },
   { path: "/tutos", priority: "0.6", changefreq: "monthly" },
   { path: "/contact", priority: "0.5", changefreq: "monthly" },
@@ -171,11 +173,24 @@ async function main() {
       });
     }
 
+    // 7. Questions de riders répondues par l'atelier (24/10/2026) : vue publique, fail-soft.
+    let questions = [];
+    try {
+      questions = await restGet("rider_questions_publiques?select=slug,repondu_le&order=repondu_le.desc&limit=5000");
+    } catch (e) {
+      console.warn(`[sitemap] WARN: questions atelier ignorées (${e.message}).`);
+    }
+    body += `\n  <!-- Questions de l'atelier -->\n`;
+    for (const q of questions) {
+      if (!q || !q.slug) continue;
+      body += urlEntry({ loc: `/atelier/questions/${xmlEscape(q.slug)}`, lastmod: toLastmod(q.repondu_le), changefreq: "monthly", priority: "0.6" });
+    }
+
     const total =
-      STATIC_PAGES.length + keptCategories.length + parts.length + scooters.length + brands.length + articles.length;
+      STATIC_PAGES.length + keptCategories.length + parts.length + scooters.length + brands.length + articles.length + questions.length;
     writeFileSync(OUT_PATH, wrap(body), "utf8");
     console.log(
-      `[sitemap] OK -> ${total} URLs (${STATIC_PAGES.length} statiques, ${keptCategories.length} catégories, ${parts.length} pièces, ${scooters.length} scooters, ${brands.length} marques, ${articles.length} articles)`
+      `[sitemap] OK -> ${total} URLs (${STATIC_PAGES.length} statiques, ${keptCategories.length} catégories, ${parts.length} pièces, ${scooters.length} scooters, ${brands.length} marques, ${articles.length} articles, ${questions.length} questions)`
     );
   } catch (err) {
     // FAIL-SOFT : sitemap minimal, le build continue.

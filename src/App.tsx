@@ -41,6 +41,9 @@ const OrderSuccessPage = lazy(() => import("./pages/OrderSuccessPage"));
 const PaymentSuccessPage = lazy(() => import("./pages/PaymentSuccessPage"));
 const Pepites = lazy(() => import("./pages/Pepites"));
 const Tutos = lazy(() => import("./pages/Tutos"));
+const Atelier = lazy(() => import("./pages/Atelier"));
+const AtelierQuestion = lazy(() => import("./pages/AtelierQuestion"));
+const AtelierVideos = lazy(() => import("./pages/AtelierVideos"));
 const Blog = lazy(() => import("./pages/Blog"));
 const BlogArticle = lazy(() => import("./pages/BlogArticle"));
 const NotFound = lazy(() => import("./pages/NotFound"));
@@ -100,6 +103,9 @@ function App() {
             <Route path="/trottinettes" element={<Scooters />} />
             <Route path="/pepites" element={<Pepites />} />
             <Route path="/tutos" element={<Tutos />} />
+            <Route path="/atelier" element={<Atelier />} />
+            <Route path="/atelier/videos" element={<AtelierVideos />} />
+            <Route path="/atelier/questions/:slug" element={<AtelierQuestion />} />
             <Route path="/blog" element={<Blog />} />
             <Route path="/blog/:slug" element={<BlogArticle />} />
             <Route path="/piece/:slug" element={<PartDetail />} />
