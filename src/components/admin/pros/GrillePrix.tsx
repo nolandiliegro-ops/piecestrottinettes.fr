@@ -1,7 +1,7 @@
 // Comptoir Pro — onglet « Grille des prix » (25/10/2026) : ce que paie un magasin à chaque palier, pièce par pièce, et ce qu'il reste à Nolan.
 // Visible uniquement dans l'admin (prix d'achat = part_suppliers, lecture admin seule). Les magasins ne voient jamais cet écran.
 // Ordre de calcul = public.pro_prix(part, palier) :
-//   1) prix tapé à la main pour la pièce et le palier (pro_part_prices) — pas de plancher, c'est le choix de Nolan
+//   1) prix tapé à la main pour la pièce et le palier (pro_part_prices) — plancher aussi (règle de Nolan 25/10 : toujours ≥ 20 % de marge)
 //   2) sinon remise de la famille pour ce palier (pro_family_discounts) — plancher achat × coef
 //   3) sinon remise générale du palier (pro_tiers) — plancher achat × coef ; pièce sans prix d'achat = prix du site
 // Toutes les modifications s'affichent en aperçu ; rien ne change pour les magasins avant « Enregistrer ».
@@ -48,7 +48,7 @@ function useGrille() {
       for (const r of (m.data ?? []) as unknown as { part_id: string; tier_code: string; prix: number }[]) manuels[cleF(r.part_id, r.tier_code)] = Number(r.prix);
       return {
         tiers: ((t.data ?? []) as Tier[]).map((x) => ({ ...x, remise_pct: Number(x.remise_pct), seuil_ca_ht: Number(x.seuil_ca_ht) })),
-        plancher: Number((s.data as { plancher_coef?: number } | null)?.plancher_coef ?? 1.15), pieces, familles, manuels,
+        plancher: Number((s.data as { plancher_coef?: number } | null)?.plancher_coef ?? 1.25), pieces, familles, manuels,
       };
     },
   });
@@ -67,7 +67,7 @@ const GrillePrix = () => {
   const [tri, setTri] = useState<'famille' | 'marge' | 'manuel'>('famille');
 
   const d = q.data;
-  const plancher = d?.plancher ?? 1.15;
+  const plancher = d?.plancher ?? 1.25;
   const tiers = useMemo(() => (d?.tiers ?? []).map((t) => ({ ...t, remise_pct: bPaliers[t.code] !== undefined && bPaliers[t.code] !== '' ? num(bPaliers[t.code]) : t.remise_pct })), [d, bPaliers]);
   const listeFamilles = useMemo(() => {
     const m = new Map<string, string>();
@@ -88,7 +88,10 @@ const GrillePrix = () => {
   };
   const calc = (p: Piece, t: Tier): { prix: number; source: Source; auPlancher: boolean } => {
     const m = prixManuel(p.id, t.code);
-    if (m != null && Number.isFinite(m) && m > 0) return { prix: r2(m), source: 'manuel', auPlancher: false };
+    if (m != null && Number.isFinite(m) && m > 0) {
+      if (p.achat == null) return { prix: r2(m), source: 'manuel', auPlancher: false };
+      return { prix: r2(Math.max(m, p.achat * plancher)), source: 'manuel', auPlancher: m < p.achat * plancher };
+    }
     if (p.achat == null) return { prix: r2(p.price), source: 'sans-achat', auPlancher: false };
     const rf = remiseFamille(p.catId, t.code);
     const remise = rf ?? t.remise_pct;
@@ -182,7 +185,7 @@ const GrillePrix = () => {
       {/* Paliers */}
       <div className="bg-white border border-[hsl(var(--admin-border))] rounded-xl p-4 grid gap-3">
         <p className="text-sm text-[hsl(var(--admin-text-muted))]">
-          Ordre de calcul : <strong>ton prix à la main</strong> › <strong>la remise de la famille</strong> › <strong>la remise générale du palier</strong>. Les remises ne descendent jamais sous ton prix d'achat × {String(plancher).replace('.', ',')} ; un prix à la main, si. Écran réservé à l'admin : les magasins ne voient ni tes prix d'achat ni ta marge.
+          Ordre de calcul : <strong>ton prix à la main</strong> › <strong>la remise de la famille</strong> › <strong>la remise générale du palier</strong>. Garde-fou : aucun prix pro, même tapé à la main, ne descend sous ton prix d'achat × {String(plancher).replace('.', ',')} (au moins {Math.round(100 - 100 / plancher)} % de marge sur le prix de vente) ; un prix trop bas est remonté automatiquement. Écran réservé à l'admin : les magasins ne voient ni tes prix d'achat ni ta marge.
         </p>
         <div className="grid gap-3 sm:grid-cols-3">
           {tiers.map((t, i) => {
@@ -201,7 +204,7 @@ const GrillePrix = () => {
                 </label>
                 <p className="text-sm">Ta marge moyenne : <strong className="text-green-800">{pct(r?.marge ?? 0)}</strong></p>
                 {(r?.auPlancher ?? 0) > 0 && <p className="text-sm text-orange-700 font-semibold">{r.auPlancher} pièce{r.auPlancher > 1 ? 's' : ''} bloquée{r.auPlancher > 1 ? 's' : ''} au plancher</p>}
-                {(r?.sousAchat ?? 0) > 0 && <p className="text-sm text-red-600 font-semibold">{r.sousAchat} prix à la main sous ton prix d'achat</p>}
+                {(r?.sousAchat ?? 0) > 0 && <p className="text-sm text-red-600 font-semibold">{r.sousAchat} prix sous ton prix d'achat</p>}
               </div>
             );
           })}
