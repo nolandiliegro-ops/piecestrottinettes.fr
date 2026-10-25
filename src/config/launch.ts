@@ -1,4 +1,4 @@
-// Config de lancement — sync 25/10 rideau (538255e)
+// Config de lancement — relance de publication 25/10 (grille des prix)
 /**
  * Interrupteur de pré-lancement de la boutique.
  *
