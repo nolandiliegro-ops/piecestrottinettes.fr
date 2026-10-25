@@ -76,8 +76,8 @@ const SkotGarageLauncher = ({ onOpen }: { onOpen: () => void }) => {
   const pose = poses[i];
   const src = arrived ? pose.img : ROULE;
   const show = arrived && (talk || hover);
-  // Taille : la colonne de gauche du garage (nav 220 px + marge du centrage max-w 1400), entre 210 et 320 px.
-  const size = "clamp(210px, calc((100vw - 1400px) / 2 + 250px), 320px)";
+  // Taille : la colonne de gauche du garage (nav 220 px + marge du centrage max-w 1400), entre 240 et 340 px.
+  const size = "clamp(240px, calc((100vw - 1400px) / 2 + 260px), 340px)";
 
   return (
     <div className="hidden lg:block fixed z-40 left-2 bottom-2 pointer-events-none" style={{ width: size }}>
@@ -110,7 +110,7 @@ const SkotGarageLauncher = ({ onOpen }: { onOpen: () => void }) => {
               src={src}
               alt=""
               draggable={false}
-              className="block w-full h-auto select-none pointer-events-none animate-in fade-in duration-300"
+              className="block w-full h-auto select-none pointer-events-none"
               style={{ aspectRatio: "1 / 1", filter: "drop-shadow(0 14px 16px rgba(0,0,0,0.3))" }}
             />
           </span>
