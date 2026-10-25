@@ -6616,6 +6616,21 @@ export type Database = {
         }
         Relationships: []
       }
+      backup_pro_test_20261025: {
+        Row: {
+          ligne: Json | null
+          quoi: string | null
+        }
+        Insert: {
+          ligne?: Json | null
+          quoi?: string | null
+        }
+        Update: {
+          ligne?: Json | null
+          quoi?: string | null
+        }
+        Relationships: []
+      }
       bak_categories_desc_20261025: {
         Row: {
           description: string | null
