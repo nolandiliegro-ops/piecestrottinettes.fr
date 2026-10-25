@@ -8,6 +8,7 @@ import CustomPhotoButton from './CustomPhotoButton';
 import HorizontalScooterStrip from './HorizontalScooterStrip';
 import DeleteScooterButton from './DeleteScooterButton';
 import ScooterIdentity from './ScooterIdentity';
+import { scooterFullName } from "@/lib/scooterName";
 
 interface GarageScooter {
   id: string;
@@ -147,7 +148,7 @@ const GarageScooterCarousel = ({ scooters, onScooterChange, onDelete, className,
     return "Unknown";
   };
   const brandName = safeBrandName((model as any).brand);
-  const displayName = currentScooter.nickname || `${brandName} ${model.name}`;
+  const displayName = currentScooter.nickname || scooterFullName(brandName, model.name);
   const officialImage = model.image_url || '/placeholder.svg';
   const customPhoto = currentScooter.custom_photo_url;
   const displayImage = showCustomPhoto && customPhoto ? customPhoto : officialImage;
@@ -209,7 +210,7 @@ const GarageScooterCarousel = ({ scooters, onScooterChange, onDelete, className,
         <div className="absolute top-3 right-3 z-20">
           <DeleteScooterButton
             garageItemId={currentScooter.id}
-            modelName={`${brandName} ${model.name}`}
+            modelName={scooterFullName(brandName, model.name)}
             onDeleted={onDelete}
           />
         </div>

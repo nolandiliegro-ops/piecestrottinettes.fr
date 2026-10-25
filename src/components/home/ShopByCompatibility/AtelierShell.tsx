@@ -11,6 +11,7 @@ import { ArrowRight, ChevronDown, Search, X } from "lucide-react";
 import type { CategoryGroupV2 } from "@/hooks/useShopByCategoryDataV2";
 import { optimizedImage } from "@/lib/imageTransform";
 import EpureShell, { type EpureVariant } from "./EpureShell";
+import { scooterFullName } from "@/lib/scooterName";
 
 export type HomeVariant = 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10;
 
@@ -64,7 +65,7 @@ const Title = ({ scooterName, brandName, accent, tone, size = "lg" }: { scooterN
       {scooterName ? (
         <>
           <span className="block text-base sm:text-xl mb-1" style={{ color: tone === "light" ? "#6B7280" : "rgba(255,255,255,0.7)", letterSpacing: "0" }}>
-            Pour ta {brandName && brandName !== scooterName ? brandName : ""}
+            Pour ta {scooterFullName(brandName, scooterName) !== scooterName ? brandName : ""}
           </span>
           <span style={{ color: tone === "green" ? "#FFFFFF" : accent }}>{scooterName}</span>
         </>
@@ -173,7 +174,7 @@ const ScooterPicker = ({ scooterName, brandName, onPick, onClear, tone }: { scoo
       <button type="button" onClick={onPick} className="flex-1 flex items-center justify-between gap-3 px-4 text-left min-w-0" style={{ background: dark ? "rgba(255,255,255,0.10)" : CARBON, color: "#FFFFFF", clipPath: scooterName ? undefined : cut(10) }}>
         <span className="min-w-0">
           <span className="block text-sm font-bold uppercase tracking-[0.12em] opacity-70" style={{ fontFamily: FONT }}>{scooterName ? "Compatible avec" : "Compatibilité · facultatif"}</span>
-          <span className="block text-base truncate" style={{ fontFamily: UNB, fontWeight: 800, fontStyle: "italic" }}>{scooterName ? `${brandName && brandName !== scooterName ? brandName + " " : ""}${scooterName}` : "Ma trottinette"}</span>
+          <span className="block text-base truncate" style={{ fontFamily: UNB, fontWeight: 800, fontStyle: "italic" }}>{scooterName ? scooterFullName(brandName, scooterName) : "Ma trottinette"}</span>
         </span>
         <ChevronDown className="w-5 h-5 shrink-0" />
       </button>
@@ -211,7 +212,7 @@ const PickerChip = ({ scooterName, brandName, onPick, onClear, tone }: { scooter
     <span className="inline-flex items-stretch max-w-full" style={{ fontFamily: FONT }}>
       <button type="button" onClick={onPick} className="inline-flex items-center gap-2 min-h-[44px] pl-3 pr-3 text-sm font-bold min-w-0" style={{ ...base, clipPath: scooterName ? undefined : cut(7) }}>
         <svg aria-hidden width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round"><circle cx="5" cy="18" r="3"/><circle cx="19" cy="18" r="3"/><path d="M5 18h9l3-11h3"/></svg>
-        <span className="truncate">{scooterName ? <>Pour ma <b>{brandName && brandName !== scooterName ? brandName + " " : ""}{scooterName}</b></> : "Filtrer pour ma trott"}</span>
+        <span className="truncate">{scooterName ? <>Pour ma <b>{scooterFullName(brandName, scooterName)}</b></> : "Filtrer pour ma trott"}</span>
         {!scooterName && <ChevronDown className="w-4 h-4 shrink-0 opacity-60" />}
       </button>
       {scooterName && (
@@ -234,7 +235,7 @@ const ShopTitle = ({ tone, scooterName, brandName, accent, big }: { tone: Tone; 
   return (
     <h2 className={`${big ? "text-[30px] sm:text-5xl" : "text-[24px] sm:text-4xl"} uppercase leading-[0.98]`} style={{ fontFamily: UNB, fontWeight: 900, fontStyle: "italic", letterSpacing: "-0.03em", color: ink }}>
       {scooterName ? (
-        <>Pour ta <span style={{ color: tone === "green" ? "#FFFFFF" : accent }}>{brandName && brandName !== scooterName ? brandName + " " : ""}{scooterName}</span></>
+        <>Pour ta <span style={{ color: tone === "green" ? "#FFFFFF" : accent }}>{scooterFullName(brandName, scooterName)}</span></>
       ) : (
         <>Le <span style={{ color: tone === "green" ? CARBON : tone === "dark" ? "#8FBF9C" : GREEN }}>catalogue.</span></>
       )}

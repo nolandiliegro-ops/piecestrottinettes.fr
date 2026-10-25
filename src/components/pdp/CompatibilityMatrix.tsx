@@ -15,6 +15,7 @@ import { scooterLabel, scooterLabelShort } from "@/lib/scooterLabel";
 import { useSelectedScooter } from "@/contexts/ScooterContext";
 import { Skeleton } from "@/components/ui/skeleton";
 import CompatLeadForm from "@/components/pdp/CompatLeadForm";
+import { scooterFullName } from "@/lib/scooterName";
 
 interface CompatibilityMatrixProps {
   scooters: CompatibleScooter[];
@@ -257,7 +258,7 @@ const CompatibilityMatrix = forwardRef<HTMLDivElement, CompatibilityMatrixProps>
                     {scooterLabelShort(selectedScooter.brandName, selectedScooter.name)}
                   </p>
                   <Link
-                    to={askUrl(partSlug, partName, `${selectedScooter.brandName} ${selectedScooter.name}`)}
+                    to={askUrl(partSlug, partName, scooterFullName(selectedScooter.brandName, selectedScooter.name))}
                     className="mt-1 inline-flex items-center gap-1 text-sm font-semibold text-carbon underline underline-offset-4 min-h-[44px]"
                   >
                     On vérifie pour toi
@@ -418,7 +419,7 @@ const CompatibilityMatrix = forwardRef<HTMLDivElement, CompatibilityMatrixProps>
                     partSlug,
                     partName,
                     selectedScooter
-                      ? `${selectedScooter.brandName} ${selectedScooter.name}`
+                      ? scooterFullName(selectedScooter.brandName, selectedScooter.name)
                       : undefined,
                   )}
                   className={`${CTA_CLASS} mt-5`}

@@ -16,6 +16,7 @@ import { Link } from "react-router-dom";
 import { Search, CheckCircle2, HelpCircle, X, ChevronRight, ChevronDown } from "lucide-react";
 import type { CompatibleScooter } from "@/hooks/usePartDetail";
 import { useSelectedScooter } from "@/contexts/ScooterContext";
+import { scooterFullName } from "@/lib/scooterName";
 
 export type CompatLook = 1 | 2 | 3 | 4 | 5;
 
@@ -78,7 +79,7 @@ const Mine = ({ scooters }: { scooters: CompatibleScooter[] }) => {
   return (
     <div className="mt-3 flex items-center gap-2 rounded-xl px-3 min-h-[48px] text-sm font-bold" style={{ fontFamily: FONT, backgroundColor: ok ? "rgba(74,124,89,0.12)" : "#F3F4F6", color: ok ? GREEN : CARBON }}>
       {ok ? <CheckCircle2 className="w-5 h-5" /> : <HelpCircle className="w-5 h-5" />}
-      {ok ? `Va sur ta ${selectedScooter.brandName} ${selectedScooter.name}` : hit ? `À vérifier pour ta ${selectedScooter.name}` : `Pas relié à ta ${selectedScooter.name} — on vérifie pour toi`}
+      {ok ? `Va sur ta ${scooterFullName(selectedScooter.brandName, selectedScooter.name)}` : hit ? `À vérifier pour ta ${selectedScooter.name}` : `Pas relié à ta ${selectedScooter.name} — on vérifie pour toi`}
     </div>
   );
 };

@@ -11,6 +11,7 @@ import { readPontVariant } from "@/components/home/HomeTransition";
 import { Link } from "react-router-dom";
 import { ArrowRight, ChevronRight, Search, X } from "lucide-react";
 import type { CategoryGroupV2 } from "@/hooks/useShopByCategoryDataV2";
+import { scooterFullName } from "@/lib/scooterName";
 
 const FONT = "'Plus Jakarta Sans', sans-serif";
 const UNB = "'Unbounded', sans-serif";
@@ -47,7 +48,8 @@ const Cards = ({ children }: { children: ReactNode }) => (
   </div>
 );
 
-const scooterLabel = (p: EpureProps) => (p.brandName && p.brandName !== p.scooterName ? `${p.brandName} ${p.scooterName}` : p.scooterName);
+// 25/10 : « Teverun Teverun Fighter Mini Pro » — le nom du modèle contient déjà la marque : ne pas la répéter.
+const scooterLabel = (p: EpureProps) => scooterFullName(p.brandName, p.scooterName);
 
 /** Filtre trott : un simple lien texte (plus de gros bloc). */
 const TrottLink = (p: EpureProps) =>
@@ -272,10 +274,10 @@ const EpureShell = (p: EpureProps) => {
       <div style={plateau ? { background: "#FFFFFF", clipPath: "polygon(0 0, calc(100% - 40px) 0, 100% 40px, 100% 100%, 0 100%)", boxShadow: "inset 0 1px 0 #E2DCD0" } : undefined}>
       <div className={`max-w-7xl mx-auto px-4 lg:px-8 ${plateau ? "pt-10 pb-12 lg:pt-14 lg:pb-16" : "py-12 lg:py-16"}`}>
         <div className="flex items-end justify-between gap-4">
-          <p className="text-sm font-bold uppercase tracking-[0.14em] pb-1" style={{ fontFamily: FONT, color: MUTED }}>Le catalogue</p>
+          <Link to="/catalogue?tout=1" className="text-sm font-bold uppercase tracking-[0.14em] pb-1 min-h-[44px] inline-flex items-end hover:underline underline-offset-4" style={{ fontFamily: FONT, color: MUTED }}>Le catalogue</Link>
           <p className="text-right leading-none" style={{ fontFamily: FONT }}>
             <span className="text-[32px] sm:text-[40px]" style={{ fontFamily: UNB, fontWeight: 900, fontStyle: "italic", color: GREEN, letterSpacing: "-0.03em" }}>{p.totalCount}</span>
-            <span className="ml-1.5 text-[15px] font-semibold" style={{ color: MUTED }}>{p.scooterName ? `pièces pour ta ${scooterLabel(p)}` : p.totalCount > 1 ? "pièces" : "pièce"}</span>
+            <span className="ml-1.5 text-[15px] font-semibold" style={{ color: MUTED }}>{p.totalCount > 1 ? "pièces" : "pièce"}</span>
           </p>
         </div>
         <div className="mt-4 grid grid-cols-1 gap-1 lg:grid-cols-[minmax(0,1fr)_auto] lg:items-end lg:gap-6">
@@ -284,9 +286,18 @@ const EpureShell = (p: EpureProps) => {
         </div>
         <div className="mt-4"><CleanTabs p={p} fade={plateau ? "#FFFFFF" : PAPER} /></div>
         <div ref={p.productsRef} className="min-w-0 scroll-mt-4 mt-5"><Cards>{p.grid}</Cards></div>
-        <Link to={p.catalogueHref} className="mt-6 inline-flex items-center gap-2 min-h-[44px] text-sm font-bold" style={{ fontFamily: FONT, color: CARBON }}>
-          Voir les {p.totalCount} pièces <ArrowRight className="w-4 h-4" />
-        </Link>
+        {/* 25/10 : « il manque un bouton Voir tout le catalogue, en bas c'est trop petit » */}
+        <div className="mt-8 flex flex-col items-stretch sm:items-start gap-1">
+          <Link to="/catalogue?tout=1" className="group inline-flex items-center justify-center gap-3 h-14 px-8 bg-white text-base font-extrabold uppercase tracking-[0.06em] transition-transform hover:-translate-y-0.5"
+            style={{ fontFamily: FONT, color: CARBON, boxShadow: `inset 0 0 0 2px ${CARBON}`, clipPath: "polygon(0 0, calc(100% - 14px) 0, 100% 14px, 100% 100%, 0 100%)" }}>
+            Voir tout le catalogue <ArrowRight className="w-5 h-5 transition-transform group-hover:translate-x-1" />
+          </Link>
+          {p.catalogueHref !== "/catalogue" && p.totalCount > 0 && (
+            <Link to={p.catalogueHref} className="inline-flex items-center justify-center sm:justify-start gap-1.5 min-h-[44px] text-sm font-semibold underline underline-offset-4 decoration-1" style={{ fontFamily: FONT, color: CARBON }}>
+              {p.totalCount === 1 ? (p.scooterName ? `Seulement la pièce de ta ${scooterLabel(p)}` : "Voir cette pièce") : p.scooterName ? `Seulement les ${p.totalCount} pièces de ta ${scooterLabel(p)}` : `Voir ces ${p.totalCount} pièces`}
+            </Link>
+          )}
+        </div>
       </div>
       </div>
     </section>
