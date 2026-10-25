@@ -7,7 +7,7 @@ import { useHeroScooters } from '@/hooks/useHeroScooters';
 
 const SEEN_KEY = 'pt-prelaunch-seen';
 // Pas de pop-up automatique sur ces pages (inscription, espace perso, admin…)
-const QUIET_PREFIXES = ['/register', '/login', '/garage', '/profile', '/admin', '/rider', '/.lovable', '/cgv', '/mentions-legales'];
+const QUIET_PREFIXES = ['/register', '/login', '/garage', '/profile', '/admin', '/rider', '/.lovable', '/cgv', '/mentions-legales', '/pro'];
 
 const safeGet = (k: string) => { try { return sessionStorage.getItem(k); } catch { return null; } };
 const safeSet = (k: string, v: string) => { try { sessionStorage.setItem(k, v); } catch { /* navigation privée */ } };

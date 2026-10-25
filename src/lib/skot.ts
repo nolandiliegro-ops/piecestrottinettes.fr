@@ -20,7 +20,7 @@ export function skotEnabled(): boolean {
 
 /** Pages où SKOT ne s'affiche jamais : on ne distrait pas au moment de payer, ni dans l'admin. */
 export function skotHiddenOn(pathname: string): boolean {
-  return /^\/(panier|checkout|payment-success|admin)(\/|$)/.test(pathname);
+  return /^\/(panier|checkout|payment-success|admin|pro)(\/|$)/.test(pathname);
 }
 
 export type SkotPage = { type: "piece" | "scooter" | "garage" | "autre"; slug?: string };

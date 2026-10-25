@@ -277,6 +277,9 @@ const MobileNavLegacy = () => {
 // 24/10 : ?barrebas=1..5 = propositions de nouvelle barre ; sans paramètre = barre actuelle.
 const MobileNav = () => {
   const [variant] = useState(readBarreBasVariant);
+  // 25/10 : le Comptoir Pro (/pro) a son propre panier collé en bas, sans la barre du site.
+  const { pathname } = useLocation();
+  if (pathname === '/pro' || pathname.startsWith('/pro/')) return null;
   return variant ? <MobileNavProposals variant={variant} /> : <MobileNavLegacy />;
 };
 
