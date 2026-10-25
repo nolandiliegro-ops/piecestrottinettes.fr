@@ -1,0 +1,20 @@
+⚠  [Dualtron] dualtron-forever — clés frein manquantes (assumé) : disc_diameter, disc_pcd, disc_holes
+⚠  [Dualtron] dualtron-x-limited — clés frein manquantes (assumé) : disc_diameter, disc_pcd, disc_holes
+⚠  [Dualtron] dualtron-compact — clés frein manquantes (assumé) : disc_diameter, disc_pcd, disc_holes
+⚠  3 scooter(s) sans clés frein complètes — poursuite (--allow-missing-keys).
+
+
+→ Dualtron (3 modèle(s))
+   ✅ Insérés : 0   ⏭  Ignorés : 0
+   📣 dualtron-forever : publié
+   📣 dualtron-x-limited : publié
+   📣 dualtron-compact : publié
+   → Publiés : 3/3
+
+→ 3 modèle(s) publié(s) : relance du moteur de compat…
+   [scope] 7/7 catégorie(s) : chargeurs, chambres-a-air, pneus, pneus-gonflables, pneus-pleins, disques, plaquettes (défaut : allowlist complète)
+   [parts] 562 pièce(s) publiée(s) à retrigger
+   TOTAL : 562 pièces, 5160 suggestions K, 5065 auto supprimées, 0 erreur(s).
+   Compat : 5160 nouvelles suggestions
+
+Terminé.
