@@ -8966,6 +8966,66 @@ export type Database = {
           },
         ]
       }
+      pro_invoice_counters: {
+        Row: {
+          annee: number
+          dernier: number
+        }
+        Insert: {
+          annee: number
+          dernier?: number
+        }
+        Update: {
+          annee?: number
+          dernier?: number
+        }
+        Relationships: []
+      }
+      pro_invoices: {
+        Row: {
+          contenu: Json
+          emise_le: string
+          id: string
+          numero: string
+          order_id: string
+          pro_account_id: string
+          total: number
+        }
+        Insert: {
+          contenu: Json
+          emise_le?: string
+          id?: string
+          numero: string
+          order_id: string
+          pro_account_id: string
+          total: number
+        }
+        Update: {
+          contenu?: Json
+          emise_le?: string
+          id?: string
+          numero?: string
+          order_id?: string
+          pro_account_id?: string
+          total?: number
+        }
+        Relationships: [
+          {
+            foreignKeyName: "pro_invoices_order_id_fkey"
+            columns: ["order_id"]
+            isOneToOne: true
+            referencedRelation: "orders"
+            referencedColumns: ["id"]
+          },
+          {
+            foreignKeyName: "pro_invoices_pro_account_id_fkey"
+            columns: ["pro_account_id"]
+            isOneToOne: false
+            referencedRelation: "pro_accounts"
+            referencedColumns: ["id"]
+          },
+        ]
+      }
       pro_settings: {
         Row: {
           cloture_heure: number
@@ -10643,6 +10703,7 @@ export type Database = {
           isSetofReturn: false
         }
       }
+      pro_emettre_facture: { Args: { p_order: string }; Returns: string }
       pro_recompute_tier: { Args: { p_pro: string }; Returns: string }
       pro_t_cart_set: {
         Args: { p_part: string; p_quantite: number; p_token: string }
@@ -10669,6 +10730,10 @@ export type Database = {
         Returns: Json
       }
       pro_t_commandes: { Args: { p_token: string }; Returns: Json }
+      pro_t_facture: {
+        Args: { p_numero: string; p_token: string }
+        Returns: Json
+      }
       pro_t_me: { Args: { p_token: string }; Returns: Json }
       pro_unit_price_ht: {
         Args: { p_part: string; p_remise: number }
