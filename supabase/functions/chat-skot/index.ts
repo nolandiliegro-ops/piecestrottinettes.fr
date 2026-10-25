@@ -14,7 +14,7 @@ import { classifyCompat, unverifiedLabel, verifiedReason, partDelay } from "../_
 import { CORPUS } from "./banc/cas.ts";
 import { runBanc, runNuit, looksCut } from "./banc/banc.ts";
 
-const VERSION = "chat-skot@2026-10-25c";
+const VERSION = "chat-skot@2026-10-25d";
 const MODEL = "claude-haiku-5-5";
 const MAX_TOOL_ROUNDS = 4;
 const HISTORY_LIMIT = 14;
@@ -248,7 +248,7 @@ async function runTool(name: string, input: Record<string, any>, ctx: Ctx): Prom
       const all = await scooterIndex(db);
       const q = String(input.query ?? "");
       const exact = matchScooters(all, q);
-      if (exact.length) return { results: exact.slice(0, 6).map((s) => ({ name: s.full, slug: s.slug })) };
+      if (exact.length) return { results: exact.slice(0, 12).map((s) => ({ name: s.full, slug: s.slug })), ...(exact.length > 12 ? { autres: exact.length - 12 } : {}) };
       // Aucun modèle exact : modèles proches (un mot de la demande manque), à présenter comme tels et à faire confirmer.
       const near = q.trim().split(/\s+/).length >= 2 ? matchScooters(all, q, 1).slice(0, 4) : [];
       return near.length
