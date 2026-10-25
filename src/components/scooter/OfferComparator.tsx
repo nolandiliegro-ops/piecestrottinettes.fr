@@ -4,13 +4,13 @@
    Règles : prix affiché seulement s'il a 7 jours ou moins (livePrice) ; « dès » quand la boutique vend plusieurs
    versions (price_max) ; en stock d'abord, puis le moins cher ; Amazon jamais en tête s'il existe une autre offre
    (dernier recours, choix de Nolan) ; tout lien sortant en rel="sponsored" (compté par affiliateClicks). */
-import { ArrowRight, Check, ShieldCheck } from "lucide-react";
+import { ArrowRight, Check, Clock, ShieldCheck } from "lucide-react";
 import { useQuery } from "@tanstack/react-query";
 import { supabase } from "@/integrations/supabase/client";
 import { partnerOf, type Partner } from "@/config/partners";
 import { laName } from "@/lib/article";
 import { livePrice, partnerLogo, useBuyCtx, TagLink } from "@/components/scooter/BuyProposals";
-import type { ReactNode } from "react";
+import { useEffect, useState, type ReactNode } from "react";
 import { PriceAlertForm } from "@/components/scooter/PriceAlert";
 
 const UNB = "'Unbounded', sans-serif";
@@ -42,8 +42,23 @@ interface OfferRow {
   price_max: number | null;
   in_stock: boolean | null;
   price_checked_at: string | null;
+  deal_kind?: "limitee" | "baisse" | null;
+  deal_ref_eur?: number | null;
+  deal_ends_at?: string | null;
+  deal_label?: string | null;
 }
-interface Offer extends OfferRow { p: Partner & { host: string }; price: number | null; from: boolean }
+// 25/10 (Nolan : « les offres limitées, on propose les bonnes affaires, mais de façon classe ») : seulement deux cas,
+// posés par le robot ou à la main — offre limitée dans le temps (fin connue) ou baisse sous le plus bas des 30 derniers
+// jours. Le prix barré permanent des vendeurs (compare_at_eur) n'est JAMAIS affiché.
+interface Deal { kind: "limitee" | "baisse"; ref: number; save: number; ends: Date | null; label: string }
+interface Offer extends OfferRow { p: Partner & { host: string }; price: number | null; from: boolean; deal: Deal | null }
+const dealOf = (r: OfferRow, price: number | null): Deal | null => {
+  if (!r.deal_kind || price == null || !r.deal_ref_eur || Number(r.deal_ref_eur) <= price) return null;
+  const ends = r.deal_ends_at ? new Date(r.deal_ends_at) : null;
+  if (r.deal_kind === "limitee" && (!ends || ends.getTime() <= Date.now())) return null;
+  const ref = Number(r.deal_ref_eur);
+  return { kind: r.deal_kind, ref, save: Math.round((ref - price) * 100) / 100, ends, label: r.deal_label || (r.deal_kind === "limitee" ? "Offre limitée" : "Prix en baisse") };
+};
 
 const eur = (n: number) => `${new Intl.NumberFormat("fr-FR", { maximumFractionDigits: n % 1 ? 2 : 0, minimumFractionDigits: n % 1 ? 2 : 0 }).format(n).replace(/\s/g, " ")} €`;
 const day = (iso: string) => new Date(iso).toLocaleDateString("fr-FR", { day: "numeric", month: "long" });
@@ -64,7 +79,7 @@ const useOffers = (scooterId?: string | null) => useQuery({
     // Table hors des types générés : cast local (même méthode que affiliateClicks).
     const { data, error } = await (supabase as unknown as { from: (t: string) => any })
       .from("scooter_offers")
-      .select("id, merchant_host, offer_type, affiliate_url, price_eur, price_max, in_stock, price_checked_at")
+      .select("id, merchant_host, offer_type, affiliate_url, price_eur, price_max, in_stock, price_checked_at, deal_kind, deal_ref_eur, deal_ends_at, deal_label")
       .eq("scooter_model_id", scooterId)
       .eq("is_active", true);
     if (error) throw error;
@@ -74,7 +89,7 @@ const useOffers = (scooterId?: string | null) => useQuery({
       const price = livePrice(r.price_eur, r.price_checked_at);
       // Pas de « dès » (24/10) : le prix max d'une page produit mélange parfois un autre modèle (Blade Mini Pro/Ultra)
       // ou un pack de 2 (i9Ultra × 2). On affiche le prix exact de la variante où atterrit le visiteur.
-      return [{ ...r, p, price, from: false }];
+      return [{ ...r, p, price, from: false, deal: dealOf(r, price) }];
     }).sort(byRank);
   },
 });
@@ -140,6 +155,85 @@ const Checks = ({ items }: { items: string[] }) => (
   </ul>
 );
 
+// ─── Bonnes affaires (25/10) : 5 propositions derrière ?offre=1..5 ; sans paramètre, rien ne change. ───
+export type OffreLook = 1 | 2 | 3 | 4 | 5;
+export const offreParam = (): OffreLook | null => {
+  if (typeof window === "undefined") return null;
+  const n = Number(new URLSearchParams(window.location.search).get("offre"));
+  return n >= 1 && n <= 5 ? (n as OffreLook) : null;
+};
+// Heure de fin lisible, à l'heure de Paris : « ce soir à minuit », « ce soir à 20 h », « le 28/10 ».
+const parisDay = (d: Date) => d.toLocaleDateString("fr-FR", { timeZone: "Europe/Paris" });
+const endTxt = (d: Date) => {
+  const hm = d.toLocaleTimeString("fr-FR", { timeZone: "Europe/Paris", hour: "2-digit", minute: "2-digit" });
+  const today = parisDay(d) === parisDay(new Date());
+  if (today) return hm >= "23:58" ? "ce soir à minuit" : `aujourd'hui à ${hm.replace(":", " h ")}`;
+  return `le ${d.toLocaleDateString("fr-FR", { timeZone: "Europe/Paris", day: "2-digit", month: "2-digit" })}`;
+};
+// Compte à rebours qui se met à jour chaque minute (« 6 h 12 », « 42 min »).
+const useLeft = (ends: Date | null) => {
+  const [now, setNow] = useState(() => Date.now());
+  useEffect(() => { if (!ends) return; const t = setInterval(() => setNow(Date.now()), 30_000); return () => clearInterval(t); }, [ends]);
+  if (!ends) return null;
+  const min = Math.max(0, Math.round((ends.getTime() - now) / 60_000));
+  return min >= 60 ? `${Math.floor(min / 60)} h ${String(min % 60).padStart(2, "0")}` : `${min} min`;
+};
+const Struck = ({ v }: { v: number }) => <s className="text-base font-semibold text-gray-500 decoration-1">{eur(v)}</s>;
+
+// Ce qui s'affiche au-dessus / autour du prix de la grande carte, selon la proposition.
+const DealHead = ({ o, look }: { o: Offer; look: OffreLook }) => {
+  const d = o.deal!;
+  const left = useLeft(d.ends);
+  const limited = d.kind === "limitee";
+  const price = <PriceTxt o={o} size="text-4xl" />;
+  // 1 · Pastille : petite étiquette carbone au-dessus du prix, ancien prix barré à côté.
+  if (look === 1) return (
+    <div className="min-w-0">
+      <p className="flex flex-wrap items-center gap-2">
+        <span className="inline-flex items-center min-h-[28px] px-2.5 text-sm font-extrabold uppercase tracking-wider text-white" style={{ background: CARBON }}>{d.label}</span>
+        <span className="text-sm text-gray-600">{limited && d.ends ? `jusqu'à ${endTxt(d.ends).replace("ce soir à ", "")}` : `−${eur(d.save)}`}</span>
+      </p>
+      <p className="mt-1.5 flex flex-wrap items-baseline gap-x-3">{price}<Struck v={d.ref} /></p>
+    </div>
+  );
+  // 2 · Compte à rebours : une fine ligne carbone avec l'horloge, le temps qui reste.
+  if (look === 2) return (
+    <div className="min-w-0">
+      {limited && left
+        ? <p className="flex flex-wrap items-center gap-x-1.5 text-sm font-bold" style={{ color: CARBON }}><Clock className="w-4 h-4 shrink-0" /><span>{d.label}</span><span className="whitespace-nowrap">· fin dans <span style={{ fontFamily: MONO }}>{left}</span></span></p>
+        : <p className="text-sm font-bold" style={{ color: CARBON }}>{d.label} · −{eur(d.save)}</p>}
+      <p className="mt-1 flex flex-wrap items-baseline gap-x-3">{price}<Struck v={d.ref} /></p>
+    </div>
+  );
+  // 3 · Aujourd'hui : la demande au pied de la lettre — « Aujourd'hui seulement » en vert, « au lieu de » dessous.
+  if (look === 3) return (
+    <div className="min-w-0">
+      <p className="text-sm font-extrabold uppercase tracking-[0.14em]" style={{ color: GREEN }}>{limited ? "Aujourd'hui seulement" : "Prix en baisse"}</p>
+      <p className="mt-1">{price}</p>
+      <p className="mt-0.5 text-sm text-gray-600">au lieu de <Struck v={d.ref} />{limited && d.ends ? ` · jusqu'à ${endTxt(d.ends).replace("ce soir à ", "")}` : ""}</p>
+    </div>
+  );
+  // 4 · Étiquette d'économie : « −10 € » en étiquette carbone à angle coupé collée au prix.
+  if (look === 4) return (
+    <div className="min-w-0">
+      <p className="flex flex-wrap items-center gap-3">{price}
+        <span className="inline-flex items-center min-h-[32px] px-3 text-base font-black text-white" style={{ background: CARBON, clipPath: CHAMFER, fontFamily: UNB, fontStyle: "italic" }}>−{eur(d.save)}</span>
+      </p>
+      <p className="mt-1 text-sm text-gray-600">{limited && d.ends ? `${d.label}, jusqu'à ${endTxt(d.ends).replace("ce soir à ", "")}` : `Plus bas prix sur 30 jours : ${eur(d.ref)}`}</p>
+    </div>
+  );
+  // 5 · Discret : le prix seul, une ligne grise dessous avec l'économie en vert.
+  return (
+    <div className="min-w-0">
+      {price}
+      <p className="mt-1 text-sm text-gray-600"><b style={{ color: GREEN }}>−{eur(d.save)}</b> {limited ? (d.ends ? `aujourd'hui · fin ${endTxt(d.ends).replace("ce soir à ", "à ")}` : "en ce moment") : `· plus bas prix depuis 30 jours`}</p>
+    </div>
+  );
+};
+// Petite marque sur les lignes « Aussi chez … » quand l'autre boutique a aussi une bonne affaire.
+const DealMini = ({ o }: { o: Offer }) => o.deal && offreParam()
+  ? <span className="shrink-0 text-sm font-bold" style={{ color: GREEN }}>−{eur(o.deal.save)}</span> : null;
+
 const BestCard = ({ best, n, brandLogo }: { best: Offer; n: number; brandLogo: string | null }) => {
   const look = atoutsParam();
   const at = best.p.atouts ?? [];
@@ -165,11 +259,12 @@ const BestCard = ({ best, n, brandLogo }: { best: Offer; n: number; brandLogo: s
 
   // Tour 2 (24/10, « trop de texte ») : plus de « Prix en ce moment », une seule petite ligne légale.
   const legal = <p className="text-sm text-gray-500">Lien partenaire{dateTxt ? ` · prix du ${dateTxt}` : ""}</p>;
+  const offre = offreParam();
   const head = (
     <div className="flex items-center gap-4 min-w-0">
       <Logo o={best} brandLogo={brandLogo} size={64} />
       <div className="min-w-0">
-        <PriceTxt o={best} size="text-4xl" />
+        {offre && best.deal ? <DealHead o={best} look={offre} /> : <PriceTxt o={best} size="text-4xl" />}
         <p className="mt-1 text-base font-bold" style={{ color: CARBON }}>chez {best.p.name}{best.in_stock === false ? <span className="ml-2"><Stock o={best} /></span> : null}</p>
       </div>
     </div>
@@ -308,6 +403,7 @@ export const OfferComparator = ({ look, name, fallback = null }: { look: Comparo
               <a href={o.affiliate_url} target="_blank" rel="sponsored noopener noreferrer" data-placement="comparateur"
                 className="flex items-center gap-3 min-h-[52px] px-4 hover:bg-white transition-colors" style={{ borderBottom: `1px solid ${LINE}` }}>
                 <span className="flex-1 min-w-0 text-base font-semibold truncate" style={{ color: CARBON }}>Aussi chez {o.p.name}</span>
+                <DealMini o={o} />
                 <PriceTxt o={o} size="text-lg" />
                 <ArrowRight className="w-5 h-5 shrink-0" style={{ color: GREEN }} />
               </a>
