@@ -12,7 +12,8 @@
  * 4 COCKPIT      · bandeau carbone : titre, recherche et catégories sur fond noir
  * 5 ÉTABLI       · colonne de gauche (catégories + filtres) sur ordinateur, grille à droite
  */
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
+import { createPortal } from "react-dom";
 import type React from "react";
 import { Link } from "react-router-dom";
 import { Check, ChevronDown, LayoutGrid, Search, ArrowRight, X, BookOpen } from "lucide-react";
@@ -240,6 +241,150 @@ const CatTileNew = ({ c, n, on, onClick, size = "md", look }: { c: CatCategory |
   );
 };
 
+/* ─── 25/10 : familles sur TÉLÉPHONE — 5 systèmes (?familles=1..5), l'ordinateur garde la grille ───
+ * Nolan : « le listing des catégories sur téléphone, pas assez classe, pas assez wow ; si j'ajoute 5 ou 6 catégories
+ * ça devient trop long ». Les 5 tiennent sur UNE hauteur fixe, quel que soit le nombre de familles.
+ * 1 DÉFILÉ   · les vignettes Pierre d'aujourd'hui, sur une seule rangée qui glisse au pouce
+ * 2 FRISE XL · grandes cartes qui glissent une à une, pièce détourée en grand, nom en italique, barre de progression
+ * 3 ROULEAU  · pastilles compactes (mini-photo + nom + nombre) sur une rangée : le plus bas, la grille remonte
+ * 4 TIROIR   · un seul bouton « Famille · Toutes 564 » qui ouvre un panneau avec toutes les familles en grand
+ * 5 VEDETTE  · la famille active en grande carte, les autres en ronds photo dessous (façon stories) */
+type FamillesLook = 1 | 2 | 3 | 4 | 5;
+const readFamilles = (): FamillesLook | null => {
+  // RETENU (Nolan, 25/10) : 5 VEDETTE par défaut ; ?familles=0 rend l'ancienne grille, ?familles=1..4 les autres
+  try { const r = new URLSearchParams(window.location.search).get("familles"); if (r === null) return 5; const n = Number(r); return n >= 1 && n <= 5 ? (n as FamillesLook) : null; } catch { return 5; }
+};
+type Fam = { c: CatCategory | null; n: number; on: boolean; go: () => void };
+const famImg = (c: CatCategory | null, cls: string) => (c && pack(c.slug) ? <img src={pack(c.slug)} alt="" loading="lazy" className={cls} /> : null);
+const CUT6 = "polygon(0 0, calc(100% - 6px) 0, 100% 6px, 100% 100%, 0 100%)";
+const ITAL = { fontFamily: UNB, fontStyle: "italic" as const, fontWeight: 900 };
+
+const FamillesMobile = ({ look, fams }: { look: FamillesLook; fams: Fam[] }) => {
+  const rowRef = useRef<HTMLDivElement>(null);
+  const [prog, setProg] = useState(0);
+  const [open, setOpen] = useState(false);
+  const onKey = fams.map((f) => (f.on ? 1 : 0)).join("");
+  // la famille active est ramenée au centre de la rangée
+  useEffect(() => {
+    const row = rowRef.current; if (!row) return;
+    const el = row.querySelector<HTMLElement>("[data-on='1']"); if (!el) return;
+    const rr = row.getBoundingClientRect(), er = el.getBoundingClientRect();
+    row.scrollLeft += er.left - rr.left - (rr.width - er.width) / 2;
+  }, [onKey]);
+  useEffect(() => {
+    if (!open) return;
+    const prev = document.body.style.overflow; document.body.style.overflow = "hidden";
+    return () => { document.body.style.overflow = prev; };
+  }, [open]);
+  const row = "flex gap-2 overflow-x-auto -mx-4 px-4 pb-1 snap-x snap-proximity"; // proximity : mandatory re-cale la rangée au début quand la fenêtre change de hauteur (barre d’adresse du téléphone)
+  const noBar = { scrollbarWidth: "none" as const };
+  const active = fams.find((f) => f.on) ?? fams[0];
+
+  if (look === 1) return (
+    <div ref={rowRef} className={cn(row, "mt-5")} style={noBar}>
+      {fams.map((f) => (
+        <span key={f.c?.id ?? "all"} data-on={f.on ? "1" : "0"} className="snap-start shrink-0 w-[118px]">
+          <CatTileNew c={f.c} n={f.n} on={f.on} onClick={f.go} look={1} size="sm" />
+        </span>
+      ))}
+    </div>
+  );
+
+  if (look === 2) return (
+    <div className="mt-5">
+      <div ref={rowRef} className={cn(row, "gap-3")} style={noBar} onScroll={(e) => { const t = e.currentTarget; setProg(t.scrollLeft / Math.max(1, t.scrollWidth - t.clientWidth)); }}>
+        {fams.map((f) => (
+          <button key={f.c?.id ?? "all"} type="button" data-on={f.on ? "1" : "0"} onClick={f.go} aria-pressed={f.on}
+            className="snap-center shrink-0 relative w-[72%] max-w-[300px] h-[150px] overflow-hidden text-left"
+            style={{ clipPath: CHAMFER, background: f.on ? CARBON : STONE }}>
+            {f.c ? famImg(f.c, "absolute right-[-6%] top-1/2 -translate-y-1/2 h-[112%] w-auto max-w-[70%] object-contain drop-shadow-[0_10px_14px_rgba(0,0,0,0.25)]")
+              : <span className="absolute right-0 top-0 bottom-0 w-[62%]"><AllCollage big /></span>}
+            <span className="absolute left-4 top-3 leading-none" style={{ ...ITAL, fontSize: 30, color: f.on ? "#8FC79E" : GREEN }}>{f.n}</span>
+            <span className="absolute left-4 bottom-3 max-w-[58%] text-lg uppercase leading-[1.05]" style={{ ...ITAL, color: f.on ? "#fff" : CARBON }}>{f.c ? f.c.name : "Toutes"}</span>
+          </button>
+        ))}
+      </div>
+      <div className="mt-2 h-1 bg-[#E2DCD0] relative overflow-hidden" aria-hidden><span className="absolute top-0 bottom-0 w-1/4" style={{ left: `${prog * 75}%`, background: CARBON }} /></div>
+    </div>
+  );
+
+  if (look === 3) return (
+    <div ref={rowRef} className={cn(row, "mt-4")} style={noBar}>
+      {fams.map((f) => (
+        <button key={f.c?.id ?? "all"} type="button" data-on={f.on ? "1" : "0"} onClick={f.go} aria-pressed={f.on}
+          className="snap-start shrink-0 inline-flex items-center gap-2 h-12 pl-1 pr-3"
+          style={{ clipPath: CUT6, background: f.on ? CARBON : "#fff", boxShadow: f.on ? undefined : `inset 0 0 0 1px ${LINE}`, fontFamily: FONT }}>
+          <span className="relative w-10 h-10 shrink-0 overflow-hidden" style={{ background: f.on ? "rgba(255,255,255,0.12)" : STONE, clipPath: CUT6 }}>
+            {f.c ? famImg(f.c, "absolute inset-[8%] w-[84%] h-[84%] object-contain") : <AllCollage />}
+          </span>
+          <span className="text-sm font-extrabold whitespace-nowrap" style={{ color: f.on ? "#fff" : CARBON }}>{f.c ? f.c.name : "Toutes"}</span>
+          <span className="text-sm" style={{ ...ITAL, color: f.on ? "#8FC79E" : GREEN }}>{f.n}</span>
+        </button>
+      ))}
+    </div>
+  );
+
+  if (look === 4) return (
+    <>
+      <button type="button" onClick={() => setOpen(true)} className="mt-4 w-full flex items-center gap-3 h-16 pl-2 pr-4 bg-white text-left"
+        style={{ clipPath: CHAMFER, boxShadow: `inset 0 0 0 1px ${LINE}`, fontFamily: FONT }}>
+        <span className="relative w-12 h-12 shrink-0 overflow-hidden" style={{ background: STONE, clipPath: CUT6 }}>
+          {active.c ? famImg(active.c, "absolute inset-[8%] w-[84%] h-[84%] object-contain") : <AllCollage />}
+        </span>
+        <span className="flex-1 min-w-0">
+          <span className="block text-sm font-bold uppercase tracking-wider text-gray-500">Famille · {fams.length - 1}</span>
+          <span className="block text-base font-extrabold truncate" style={{ color: CARBON }}>{active.c ? active.c.name : "Toutes les pièces"} <span style={{ ...ITAL, color: GREEN }}>{active.n}</span></span>
+        </span>
+        <ChevronDown className="w-5 h-5 text-gray-500" />
+      </button>
+      {open && createPortal(
+        <div className="fixed inset-0 z-[80] flex items-end" role="dialog" aria-modal="true" aria-label="Choisir une famille">
+          <button type="button" aria-label="Fermer" onClick={() => setOpen(false)} className="absolute inset-0 bg-black/50" />
+          <div className="relative w-full max-h-[85vh] overflow-y-auto bg-[#FAFAF8] px-4 pt-4 pb-8" style={{ clipPath: "polygon(0 0, calc(100% - 18px) 0, 100% 18px, 100% 100%, 0 100%)" }}>
+            <div className="flex items-center justify-between mb-3">
+              <span className="text-xl uppercase" style={{ ...ITAL, color: CARBON }}>Les familles</span>
+              <button type="button" onClick={() => setOpen(false)} aria-label="Fermer" className="w-11 h-11 flex items-center justify-center -mr-2"><X className="w-6 h-6" /></button>
+            </div>
+            <div className="grid grid-cols-2 gap-2">
+              {fams.map((f) => (
+                <button key={f.c?.id ?? "all"} type="button" onClick={() => { f.go(); setOpen(false); }} aria-pressed={f.on}
+                  className="relative h-[132px] overflow-hidden text-left" style={{ clipPath: CHAMFER, background: f.on ? CARBON : STONE }}>
+                  {f.c ? famImg(f.c, "absolute left-1/2 top-[8%] -translate-x-1/2 h-[60%] w-auto max-w-[80%] object-contain drop-shadow-[0_8px_10px_rgba(0,0,0,0.2)]") : <AllCollage />}
+                  <span className="absolute left-3 right-3 bottom-2.5 flex items-end justify-between gap-2" style={{ fontFamily: FONT }}>
+                    <span className="text-sm font-extrabold leading-tight" style={{ color: f.on ? "#fff" : CARBON }}>{f.c ? f.c.name : "Toutes"}</span>
+                    <span className="text-base leading-none" style={{ ...ITAL, color: f.on ? "#8FC79E" : GREEN }}>{f.n}</span>
+                  </span>
+                </button>
+              ))}
+            </div>
+          </div>
+        </div>, document.body)}
+    </>
+  );
+
+  // 5 · VEDETTE
+  return (
+    <div className="mt-5">
+      <div className="relative h-[150px] overflow-hidden" style={{ clipPath: CHAMFER, background: CARBON }}>
+        {active.c ? famImg(active.c, "absolute right-[-4%] top-1/2 -translate-y-1/2 h-[118%] w-auto max-w-[66%] object-contain drop-shadow-[0_12px_16px_rgba(0,0,0,0.45)]")
+          : <span className="absolute right-0 top-0 bottom-0 w-[60%]"><AllCollage big /></span>}
+        <span className="absolute left-4 top-3 text-sm font-bold uppercase tracking-wider" style={{ fontFamily: FONT, color: "#8FC79E" }}>{active.n} pièce{active.n > 1 ? "s" : ""}</span>
+        <span className="absolute left-4 bottom-3 max-w-[60%] text-2xl uppercase leading-[1.02] text-white" style={ITAL}>{active.c ? active.c.name : "Toutes les pièces"}</span>
+      </div>
+      <div ref={rowRef} className={cn(row, "mt-3 gap-3")} style={noBar}>
+        {fams.map((f) => (
+          <button key={f.c?.id ?? "all"} type="button" data-on={f.on ? "1" : "0"} onClick={f.go} aria-pressed={f.on} className="snap-start shrink-0 w-[72px] flex flex-col items-center gap-1">
+            <span className="relative w-[64px] h-[64px] rounded-full overflow-hidden" style={{ background: STONE, boxShadow: f.on ? `0 0 0 3px #FAFAF8, 0 0 0 5px ${GREEN}` : `inset 0 0 0 1px ${LINE}` }}>
+              {f.c ? famImg(f.c, "absolute inset-[10%] w-[80%] h-[80%] object-contain") : <AllCollage />}
+            </span>
+            <span className="text-sm font-bold leading-tight text-center line-clamp-2" style={{ fontFamily: FONT, color: CARBON }}>{f.c ? f.c.name : "Toutes"}</span>
+          </button>
+        ))}
+      </div>
+    </div>
+  );
+};
+
 // ─── Vignette catégorie : photo pleine bord à bord (17/10 : plus de « carré dans le carré »),
 //     nom en blanc sur dégradé, nombre en haut à gauche, coin coupé ; active = cadre carbone + barre verte.
 const CatTile = ({ c, img, n, on, onClick, size = "md" }: { c: CatCategory | null; img?: string; n: number; on: boolean; onClick: () => void; size?: "sm" | "md" }) => (
@@ -283,7 +428,7 @@ const GuideLink = ({ cat, n, img }: { cat: CatCategory | undefined; n: number; i
   if (!cat) return null;
   const look = readGuideLook();
   const title = `Tout sur les ${cat.name.toLowerCase()}`;
-  const sub = `Les ${n} référence${n > 1 ? "s" : ""} et comment choisir`;
+  const sub = n > 1 ? `Les ${n} références et comment choisir` : n === 1 ? "1 référence et comment choisir" : "Comment choisir";
   const to = `/categorie/${cat.slug}`;
   const tips = TIPS[cat.slug] ?? ["Comment choisir", "Les tailles", "Les erreurs à éviter"];
   if (look === 1) return (
@@ -356,6 +501,11 @@ const GuideLink = ({ cat, n, img }: { cat: CatCategory | undefined; n: number; i
 
 const CatalogueTop = (p: Props) => {
   const all = p.categories.reduce((n, c) => n + (p.counts[c.id] ?? 0), 0);
+  const FAMILLES = readFamilles();
+  const fams: Fam[] = [
+    { c: null, n: all, on: p.activeCategory === null, go: () => p.onCategory(null) },
+    ...p.categories.map((c) => ({ c, n: p.counts[c.id] ?? 0, on: p.activeCategory === c.id, go: () => p.onCategory(c.id) })),
+  ];
   const tiles = (size: "sm" | "md" = "md") => [
     TUILE ? <CatTileNew key="all" c={null} n={all} on={p.activeCategory === null} onClick={() => p.onCategory(null)} size={size} look={TUILE} />
       : <CatTile key="all" c={null} n={all} on={p.activeCategory === null} onClick={() => p.onCategory(null)} size={size} />,
@@ -371,7 +521,8 @@ const CatalogueTop = (p: Props) => {
         <div className="flex items-end justify-between gap-4 flex-wrap"><Title /><span className="flex items-baseline gap-3 flex-wrap"><Count n={p.resultCount} total={p.total} />{p.countAside}</span></div>
         {p.pickerBlock && <div className="max-w-2xl">{p.pickerBlock}</div>}
         <div className="mt-5 max-w-2xl"><SearchField value={p.query} onChange={p.onQuery} /></div>
-        <div className={TUILE === 4 ? "mt-5 grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-8 gap-2" : TUILE === 2 ? "mt-5 grid grid-cols-3 sm:grid-cols-5 lg:grid-cols-9 gap-x-2 gap-y-3" : "mt-5 grid grid-cols-3 sm:grid-cols-5 lg:grid-cols-9 gap-2"}>{tiles()}</div>
+        {FAMILLES && <div className="lg:hidden"><FamillesMobile look={FAMILLES} fams={fams} /></div>}
+        <div className={cn(TUILE === 4 ? "mt-5 grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-8 gap-2" : TUILE === 2 ? "mt-5 grid grid-cols-3 sm:grid-cols-5 lg:grid-cols-9 gap-x-2 gap-y-3" : "mt-5 grid grid-cols-3 sm:grid-cols-5 lg:grid-cols-9 gap-2", FAMILLES && "hidden lg:grid")}>{tiles()}</div>
         {p.activeCategory && <div className="max-w-2xl"><GuideLink cat={p.categories.find((c) => c.id === p.activeCategory)} n={p.counts[p.activeCategory] ?? 0} img={p.images[p.activeCategory]} /></div>}
         <div className="mt-4"><Filters {...p} /></div>
         {p.afterFilters && <div className="mt-3">{p.afterFilters}</div>}
