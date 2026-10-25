@@ -605,6 +605,87 @@ export type Database = {
         }
         Relationships: []
       }
+      _backup_ambassadors_20261025: {
+        Row: {
+          abonnes: number | null
+          adresse: string | null
+          avatar_url: string | null
+          contrat_signe_le: string | null
+          contrat_version: string | null
+          created_at: string | null
+          email: string | null
+          email_paypal: string | null
+          handle: string | null
+          id: string | null
+          nom: string | null
+          notes: string | null
+          pays_residence: string | null
+          prochaine_action: string | null
+          produits_offerts_eur: number | null
+          relance_le: string | null
+          reseau: string | null
+          siret: string | null
+          statut: string | null
+          statut_juridique: string | null
+          taux_commission: number | null
+          telephone: string | null
+          updated_at: string | null
+          user_id: string | null
+        }
+        Insert: {
+          abonnes?: number | null
+          adresse?: string | null
+          avatar_url?: string | null
+          contrat_signe_le?: string | null
+          contrat_version?: string | null
+          created_at?: string | null
+          email?: string | null
+          email_paypal?: string | null
+          handle?: string | null
+          id?: string | null
+          nom?: string | null
+          notes?: string | null
+          pays_residence?: string | null
+          prochaine_action?: string | null
+          produits_offerts_eur?: number | null
+          relance_le?: string | null
+          reseau?: string | null
+          siret?: string | null
+          statut?: string | null
+          statut_juridique?: string | null
+          taux_commission?: number | null
+          telephone?: string | null
+          updated_at?: string | null
+          user_id?: string | null
+        }
+        Update: {
+          abonnes?: number | null
+          adresse?: string | null
+          avatar_url?: string | null
+          contrat_signe_le?: string | null
+          contrat_version?: string | null
+          created_at?: string | null
+          email?: string | null
+          email_paypal?: string | null
+          handle?: string | null
+          id?: string | null
+          nom?: string | null
+          notes?: string | null
+          pays_residence?: string | null
+          prochaine_action?: string | null
+          produits_offerts_eur?: number | null
+          relance_le?: string | null
+          reseau?: string | null
+          siret?: string | null
+          statut?: string | null
+          statut_juridique?: string | null
+          taux_commission?: number | null
+          telephone?: string | null
+          updated_at?: string | null
+          user_id?: string | null
+        }
+        Relationships: []
+      }
       _backup_amperage_20261010: {
         Row: {
           amperage: number | null
@@ -3386,7 +3467,136 @@ export type Database = {
         }
         Relationships: []
       }
+      _backup_statut_absentes_20261025: {
+        Row: {
+          commercial_status: string | null
+          id: string | null
+          sold_from_year: number | null
+          sold_until_year: number | null
+          status_checked_at: string | null
+          status_source: string | null
+        }
+        Insert: {
+          commercial_status?: string | null
+          id?: string | null
+          sold_from_year?: number | null
+          sold_until_year?: number | null
+          status_checked_at?: string | null
+          status_source?: string | null
+        }
+        Update: {
+          commercial_status?: string | null
+          id?: string | null
+          sold_from_year?: number | null
+          sold_until_year?: number | null
+          status_checked_at?: string | null
+          status_source?: string | null
+        }
+        Relationships: []
+      }
+      _backup_statut_annees_20261025: {
+        Row: {
+          commercial_status: string | null
+          id: string | null
+          sold_from_year: number | null
+          sold_until_year: number | null
+          status_checked_at: string | null
+          status_source: string | null
+        }
+        Insert: {
+          commercial_status?: string | null
+          id?: string | null
+          sold_from_year?: number | null
+          sold_until_year?: number | null
+          status_checked_at?: string | null
+          status_source?: string | null
+        }
+        Update: {
+          commercial_status?: string | null
+          id?: string | null
+          sold_from_year?: number | null
+          sold_until_year?: number | null
+          status_checked_at?: string | null
+          status_source?: string | null
+        }
+        Relationships: []
+      }
+      _backup_statut_decision_20261025: {
+        Row: {
+          commercial_status: string | null
+          id: string | null
+          sold_from_year: number | null
+          sold_until_year: number | null
+          status_checked_at: string | null
+          status_source: string | null
+        }
+        Insert: {
+          commercial_status?: string | null
+          id?: string | null
+          sold_from_year?: number | null
+          sold_until_year?: number | null
+          status_checked_at?: string | null
+          status_source?: string | null
+        }
+        Update: {
+          commercial_status?: string | null
+          id?: string | null
+          sold_from_year?: number | null
+          sold_until_year?: number | null
+          status_checked_at?: string | null
+          status_source?: string | null
+        }
+        Relationships: []
+      }
       _backup_statut_passe2_20261025: {
+        Row: {
+          commercial_status: string | null
+          id: string | null
+          sold_until_year: number | null
+          status_checked_at: string | null
+          status_source: string | null
+        }
+        Insert: {
+          commercial_status?: string | null
+          id?: string | null
+          sold_until_year?: number | null
+          status_checked_at?: string | null
+          status_source?: string | null
+        }
+        Update: {
+          commercial_status?: string | null
+          id?: string | null
+          sold_until_year?: number | null
+          status_checked_at?: string | null
+          status_source?: string | null
+        }
+        Relationships: []
+      }
+      _backup_statut_passe3_20261025: {
+        Row: {
+          commercial_status: string | null
+          id: string | null
+          sold_until_year: number | null
+          status_checked_at: string | null
+          status_source: string | null
+        }
+        Insert: {
+          commercial_status?: string | null
+          id?: string | null
+          sold_until_year?: number | null
+          status_checked_at?: string | null
+          status_source?: string | null
+        }
+        Update: {
+          commercial_status?: string | null
+          id?: string | null
+          sold_until_year?: number | null
+          status_checked_at?: string | null
+          status_source?: string | null
+        }
+        Relationships: []
+      }
+      _backup_statut_passe4_20261025: {
         Row: {
           commercial_status: string | null
           id: string | null
@@ -4076,6 +4286,69 @@ export type Database = {
         }
         Relationships: []
       }
+      _bak_images_parts_2410: {
+        Row: {
+          id: string | null
+          image_url: string | null
+          images: Json | null
+          slug: string | null
+        }
+        Insert: {
+          id?: string | null
+          image_url?: string | null
+          images?: Json | null
+          slug?: string | null
+        }
+        Update: {
+          id?: string | null
+          image_url?: string | null
+          images?: Json | null
+          slug?: string | null
+        }
+        Relationships: []
+      }
+      _bak_images_parts_2410b: {
+        Row: {
+          id: string | null
+          image_url: string | null
+          images: Json | null
+          slug: string | null
+        }
+        Insert: {
+          id?: string | null
+          image_url?: string | null
+          images?: Json | null
+          slug?: string | null
+        }
+        Update: {
+          id?: string | null
+          image_url?: string | null
+          images?: Json | null
+          slug?: string | null
+        }
+        Relationships: []
+      }
+      _bak_images_parts_2510: {
+        Row: {
+          id: string | null
+          image_url: string | null
+          images: Json | null
+          slug: string | null
+        }
+        Insert: {
+          id?: string | null
+          image_url?: string | null
+          images?: Json | null
+          slug?: string | null
+        }
+        Update: {
+          id?: string | null
+          image_url?: string | null
+          images?: Json | null
+          slug?: string | null
+        }
+        Relationships: []
+      }
       _bak_images_recadrage_1910: {
         Row: {
           id: string | null
@@ -4208,6 +4481,192 @@ export type Database = {
           image_url?: string | null
           images?: Json | null
           slug?: string | null
+        }
+        Relationships: []
+      }
+      _bak_images_scooters_2410d: {
+        Row: {
+          id: string | null
+          image_url: string | null
+          images: Json | null
+          slug: string | null
+        }
+        Insert: {
+          id?: string | null
+          image_url?: string | null
+          images?: Json | null
+          slug?: string | null
+        }
+        Update: {
+          id?: string | null
+          image_url?: string | null
+          images?: Json | null
+          slug?: string | null
+        }
+        Relationships: []
+      }
+      _bak_images_scooters_2410e: {
+        Row: {
+          id: string | null
+          image_url: string | null
+          images: Json | null
+          slug: string | null
+        }
+        Insert: {
+          id?: string | null
+          image_url?: string | null
+          images?: Json | null
+          slug?: string | null
+        }
+        Update: {
+          id?: string | null
+          image_url?: string | null
+          images?: Json | null
+          slug?: string | null
+        }
+        Relationships: []
+      }
+      _bak_images_scooters_2410f: {
+        Row: {
+          id: string | null
+          image_url: string | null
+          images: Json | null
+          slug: string | null
+        }
+        Insert: {
+          id?: string | null
+          image_url?: string | null
+          images?: Json | null
+          slug?: string | null
+        }
+        Update: {
+          id?: string | null
+          image_url?: string | null
+          images?: Json | null
+          slug?: string | null
+        }
+        Relationships: []
+      }
+      _bak_images_scooters_2510: {
+        Row: {
+          id: string | null
+          image_url: string | null
+          images: Json | null
+          slug: string | null
+        }
+        Insert: {
+          id?: string | null
+          image_url?: string | null
+          images?: Json | null
+          slug?: string | null
+        }
+        Update: {
+          id?: string | null
+          image_url?: string | null
+          images?: Json | null
+          slug?: string | null
+        }
+        Relationships: []
+      }
+      _bak_parts_points_bleus_2510: {
+        Row: {
+          attributes: Json | null
+          category_id: string | null
+          characteristics: string | null
+          compatibility_source: string | null
+          created_at: string | null
+          description: string | null
+          difficulty_level: number | null
+          ean: string | null
+          electrical_specs: Json | null
+          estimated_install_time_minutes: number | null
+          fitment_specs: Json | null
+          id: string | null
+          image_url: string | null
+          images: Json | null
+          is_featured: boolean | null
+          meta_description: string | null
+          meta_title: string | null
+          min_stock_alert: number | null
+          name: string | null
+          price: number | null
+          price_override: boolean | null
+          published: boolean | null
+          required_tools: string[] | null
+          search_document: string | null
+          sku: string | null
+          slug: string | null
+          slug_locked_at: string | null
+          stock_quantity: number | null
+          technical_metadata: Json | null
+          updated_at: string | null
+          youtube_video_id: string | null
+        }
+        Insert: {
+          attributes?: Json | null
+          category_id?: string | null
+          characteristics?: string | null
+          compatibility_source?: string | null
+          created_at?: string | null
+          description?: string | null
+          difficulty_level?: number | null
+          ean?: string | null
+          electrical_specs?: Json | null
+          estimated_install_time_minutes?: number | null
+          fitment_specs?: Json | null
+          id?: string | null
+          image_url?: string | null
+          images?: Json | null
+          is_featured?: boolean | null
+          meta_description?: string | null
+          meta_title?: string | null
+          min_stock_alert?: number | null
+          name?: string | null
+          price?: number | null
+          price_override?: boolean | null
+          published?: boolean | null
+          required_tools?: string[] | null
+          search_document?: string | null
+          sku?: string | null
+          slug?: string | null
+          slug_locked_at?: string | null
+          stock_quantity?: number | null
+          technical_metadata?: Json | null
+          updated_at?: string | null
+          youtube_video_id?: string | null
+        }
+        Update: {
+          attributes?: Json | null
+          category_id?: string | null
+          characteristics?: string | null
+          compatibility_source?: string | null
+          created_at?: string | null
+          description?: string | null
+          difficulty_level?: number | null
+          ean?: string | null
+          electrical_specs?: Json | null
+          estimated_install_time_minutes?: number | null
+          fitment_specs?: Json | null
+          id?: string | null
+          image_url?: string | null
+          images?: Json | null
+          is_featured?: boolean | null
+          meta_description?: string | null
+          meta_title?: string | null
+          min_stock_alert?: number | null
+          name?: string | null
+          price?: number | null
+          price_override?: boolean | null
+          published?: boolean | null
+          required_tools?: string[] | null
+          search_document?: string | null
+          sku?: string | null
+          slug?: string | null
+          slug_locked_at?: string | null
+          stock_quantity?: number | null
+          technical_metadata?: Json | null
+          updated_at?: string | null
+          youtube_video_id?: string | null
         }
         Relationships: []
       }
@@ -4409,6 +4868,27 @@ export type Database = {
           fitment_specs?: Json | null
           id?: string | null
           sku?: string | null
+        }
+        Relationships: []
+      }
+      _bak_velity_2510: {
+        Row: {
+          id: string | null
+          image_url: string | null
+          images: Json | null
+          slug: string | null
+        }
+        Insert: {
+          id?: string | null
+          image_url?: string | null
+          images?: Json | null
+          slug?: string | null
+        }
+        Update: {
+          id?: string | null
+          image_url?: string | null
+          images?: Json | null
+          slug?: string | null
         }
         Relationships: []
       }
@@ -5020,6 +5500,27 @@ export type Database = {
           source?: string
           titre?: string
           traitee?: boolean
+        }
+        Relationships: []
+      }
+      bak_categories_desc_20261025: {
+        Row: {
+          description: string | null
+          id: string | null
+          saved_at: string | null
+          slug: string | null
+        }
+        Insert: {
+          description?: string | null
+          id?: string | null
+          saved_at?: string | null
+          slug?: string | null
+        }
+        Update: {
+          description?: string | null
+          id?: string | null
+          saved_at?: string | null
+          slug?: string | null
         }
         Relationships: []
       }
@@ -6972,8 +7473,12 @@ export type Database = {
           notes: string | null
           order_number: string
           paid_at: string | null
+          payment_method: string | null
           postal_code: string
+          pro_account_id: string | null
+          pro_notified_at: string | null
           promo_code: string | null
+          retrait_prevu: string | null
           shipped_at: string | null
           shipping_email_sent_at: string | null
           status: string
@@ -7005,8 +7510,12 @@ export type Database = {
           notes?: string | null
           order_number: string
           paid_at?: string | null
+          payment_method?: string | null
           postal_code: string
+          pro_account_id?: string | null
+          pro_notified_at?: string | null
           promo_code?: string | null
+          retrait_prevu?: string | null
           shipped_at?: string | null
           shipping_email_sent_at?: string | null
           status?: string
@@ -7038,8 +7547,12 @@ export type Database = {
           notes?: string | null
           order_number?: string
           paid_at?: string | null
+          payment_method?: string | null
           postal_code?: string
+          pro_account_id?: string | null
+          pro_notified_at?: string | null
           promo_code?: string | null
+          retrait_prevu?: string | null
           shipped_at?: string | null
           shipping_email_sent_at?: string | null
           status?: string
@@ -7053,7 +7566,15 @@ export type Database = {
           updated_at?: string
           user_id?: string | null
         }
-        Relationships: []
+        Relationships: [
+          {
+            foreignKeyName: "orders_pro_account_id_fkey"
+            columns: ["pro_account_id"]
+            isOneToOne: false
+            referencedRelation: "pro_accounts"
+            referencedColumns: ["id"]
+          },
+        ]
       }
       part_compatibility: {
         Row: {
@@ -7461,6 +7982,200 @@ export type Database = {
             referencedColumns: ["id"]
           },
         ]
+      }
+      pro_accounts: {
+        Row: {
+          access_token: string
+          adresse: string | null
+          ca_12m_ht: number
+          contact_nom: string | null
+          created_at: string
+          email: string
+          id: string
+          last_seen_at: string | null
+          nom_magasin: string
+          notes: string | null
+          palier_auto: string
+          palier_force: string | null
+          siret: string | null
+          statut: string
+          telephone: string | null
+          tva_intra: string | null
+          updated_at: string
+          user_id: string | null
+        }
+        Insert: {
+          access_token?: string
+          adresse?: string | null
+          ca_12m_ht?: number
+          contact_nom?: string | null
+          created_at?: string
+          email: string
+          id?: string
+          last_seen_at?: string | null
+          nom_magasin: string
+          notes?: string | null
+          palier_auto?: string
+          palier_force?: string | null
+          siret?: string | null
+          statut?: string
+          telephone?: string | null
+          tva_intra?: string | null
+          updated_at?: string
+          user_id?: string | null
+        }
+        Update: {
+          access_token?: string
+          adresse?: string | null
+          ca_12m_ht?: number
+          contact_nom?: string | null
+          created_at?: string
+          email?: string
+          id?: string
+          last_seen_at?: string | null
+          nom_magasin?: string
+          notes?: string | null
+          palier_auto?: string
+          palier_force?: string | null
+          siret?: string | null
+          statut?: string
+          telephone?: string | null
+          tva_intra?: string | null
+          updated_at?: string
+          user_id?: string | null
+        }
+        Relationships: [
+          {
+            foreignKeyName: "pro_accounts_palier_auto_fkey"
+            columns: ["palier_auto"]
+            isOneToOne: false
+            referencedRelation: "pro_tiers"
+            referencedColumns: ["code"]
+          },
+          {
+            foreignKeyName: "pro_accounts_palier_force_fkey"
+            columns: ["palier_force"]
+            isOneToOne: false
+            referencedRelation: "pro_tiers"
+            referencedColumns: ["code"]
+          },
+        ]
+      }
+      pro_cart_items: {
+        Row: {
+          cart_id: string
+          part_id: string
+          quantite: number
+          updated_at: string
+        }
+        Insert: {
+          cart_id: string
+          part_id: string
+          quantite: number
+          updated_at?: string
+        }
+        Update: {
+          cart_id?: string
+          part_id?: string
+          quantite?: number
+          updated_at?: string
+        }
+        Relationships: [
+          {
+            foreignKeyName: "pro_cart_items_cart_id_fkey"
+            columns: ["cart_id"]
+            isOneToOne: false
+            referencedRelation: "pro_carts"
+            referencedColumns: ["id"]
+          },
+          {
+            foreignKeyName: "pro_cart_items_part_id_fkey"
+            columns: ["part_id"]
+            isOneToOne: false
+            referencedRelation: "parts"
+            referencedColumns: ["id"]
+          },
+        ]
+      }
+      pro_carts: {
+        Row: {
+          id: string
+          note: string | null
+          pro_account_id: string
+          updated_at: string
+        }
+        Insert: {
+          id?: string
+          note?: string | null
+          pro_account_id: string
+          updated_at?: string
+        }
+        Update: {
+          id?: string
+          note?: string | null
+          pro_account_id?: string
+          updated_at?: string
+        }
+        Relationships: [
+          {
+            foreignKeyName: "pro_carts_pro_account_id_fkey"
+            columns: ["pro_account_id"]
+            isOneToOne: true
+            referencedRelation: "pro_accounts"
+            referencedColumns: ["id"]
+          },
+        ]
+      }
+      pro_settings: {
+        Row: {
+          cloture_heure: number
+          cloture_isodow: number
+          id: boolean
+          plancher_coef: number
+          retrait_decalage_jours: number
+          updated_at: string
+        }
+        Insert: {
+          cloture_heure?: number
+          cloture_isodow?: number
+          id?: boolean
+          plancher_coef?: number
+          retrait_decalage_jours?: number
+          updated_at?: string
+        }
+        Update: {
+          cloture_heure?: number
+          cloture_isodow?: number
+          id?: boolean
+          plancher_coef?: number
+          retrait_decalage_jours?: number
+          updated_at?: string
+        }
+        Relationships: []
+      }
+      pro_tiers: {
+        Row: {
+          code: string
+          nom: string
+          ordre: number
+          remise_pct: number
+          seuil_ca_ht: number
+        }
+        Insert: {
+          code: string
+          nom: string
+          ordre: number
+          remise_pct: number
+          seuil_ca_ht?: number
+        }
+        Update: {
+          code?: string
+          nom?: string
+          ordre?: number
+          remise_pct?: number
+          seuil_ca_ht?: number
+        }
+        Relationships: []
       }
       profiles: {
         Row: {
@@ -8863,6 +9578,23 @@ export type Database = {
         }[]
       }
       admin_dashboard_stats: { Args: never; Returns: Json }
+      admin_pro_a_commander: {
+        Args: never
+        Returns: {
+          besoin: number
+          fournisseur: string
+          magasins: string
+          manque: number
+          name: string
+          part_id: string
+          qte_commandes: number
+          qte_paniers: number
+          ref_fournisseur: string
+          sku: string
+          stock: number
+        }[]
+      }
+      admin_pro_nouveau_lien: { Args: { p_pro: string }; Returns: string }
       ambassador_contract_text: { Args: { p_amb: string }; Returns: string }
       ambassador_contract_version: { Args: never; Returns: string }
       ambassador_etape_label: { Args: { s: string }; Returns: string }
@@ -8978,6 +9710,84 @@ export type Database = {
           scooter_slug: string
           unsubscribe_token: string
         }[]
+      }
+      pro_by_token: {
+        Args: { p_token: string }
+        Returns: {
+          access_token: string
+          adresse: string | null
+          ca_12m_ht: number
+          contact_nom: string | null
+          created_at: string
+          email: string
+          id: string
+          last_seen_at: string | null
+          nom_magasin: string
+          notes: string | null
+          palier_auto: string
+          palier_force: string | null
+          siret: string | null
+          statut: string
+          telephone: string | null
+          tva_intra: string | null
+          updated_at: string
+          user_id: string | null
+        }
+        SetofOptions: {
+          from: "*"
+          to: "pro_accounts"
+          isOneToOne: true
+          isSetofReturn: false
+        }
+      }
+      pro_cart_for: { Args: { p_pro: string }; Returns: Json }
+      pro_cycle: { Args: never; Returns: Json }
+      pro_effective_tier: {
+        Args: { p_pro: string }
+        Returns: {
+          code: string
+          nom: string
+          ordre: number
+          remise_pct: number
+          seuil_ca_ht: number
+        }
+        SetofOptions: {
+          from: "*"
+          to: "pro_tiers"
+          isOneToOne: true
+          isSetofReturn: false
+        }
+      }
+      pro_recompute_tier: { Args: { p_pro: string }; Returns: string }
+      pro_t_cart_set: {
+        Args: { p_part: string; p_quantite: number; p_token: string }
+        Returns: Json
+      }
+      pro_t_catalogue: {
+        Args: { p_token: string }
+        Returns: {
+          category_id: string
+          deja_commande: number
+          ean: string
+          image_url: string
+          name: string
+          part_id: string
+          prix_pro_ht: number
+          prix_public_ht: number
+          sku: string
+          slug: string
+          stock: number
+        }[]
+      }
+      pro_t_commander: {
+        Args: { p_note?: string; p_token: string }
+        Returns: Json
+      }
+      pro_t_commandes: { Args: { p_token: string }; Returns: Json }
+      pro_t_me: { Args: { p_token: string }; Returns: Json }
+      pro_unit_price_ht: {
+        Args: { p_part: string; p_remise: number }
+        Returns: number
       }
       pt_model_key: { Args: { t: string }; Returns: string }
       recalc_scooter_parts_count: {
