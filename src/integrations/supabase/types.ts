@@ -719,6 +719,87 @@ export type Database = {
         }
         Relationships: []
       }
+      _backup_ambassadors_20261025b: {
+        Row: {
+          abonnes: number | null
+          adresse: string | null
+          avatar_url: string | null
+          contrat_signe_le: string | null
+          contrat_version: string | null
+          created_at: string | null
+          email: string | null
+          email_paypal: string | null
+          handle: string | null
+          id: string | null
+          nom: string | null
+          notes: string | null
+          pays_residence: string | null
+          prochaine_action: string | null
+          produits_offerts_eur: number | null
+          relance_le: string | null
+          reseau: string | null
+          siret: string | null
+          statut: string | null
+          statut_juridique: string | null
+          taux_commission: number | null
+          telephone: string | null
+          updated_at: string | null
+          user_id: string | null
+        }
+        Insert: {
+          abonnes?: number | null
+          adresse?: string | null
+          avatar_url?: string | null
+          contrat_signe_le?: string | null
+          contrat_version?: string | null
+          created_at?: string | null
+          email?: string | null
+          email_paypal?: string | null
+          handle?: string | null
+          id?: string | null
+          nom?: string | null
+          notes?: string | null
+          pays_residence?: string | null
+          prochaine_action?: string | null
+          produits_offerts_eur?: number | null
+          relance_le?: string | null
+          reseau?: string | null
+          siret?: string | null
+          statut?: string | null
+          statut_juridique?: string | null
+          taux_commission?: number | null
+          telephone?: string | null
+          updated_at?: string | null
+          user_id?: string | null
+        }
+        Update: {
+          abonnes?: number | null
+          adresse?: string | null
+          avatar_url?: string | null
+          contrat_signe_le?: string | null
+          contrat_version?: string | null
+          created_at?: string | null
+          email?: string | null
+          email_paypal?: string | null
+          handle?: string | null
+          id?: string | null
+          nom?: string | null
+          notes?: string | null
+          pays_residence?: string | null
+          prochaine_action?: string | null
+          produits_offerts_eur?: number | null
+          relance_le?: string | null
+          reseau?: string | null
+          siret?: string | null
+          statut?: string | null
+          statut_juridique?: string | null
+          taux_commission?: number | null
+          telephone?: string | null
+          updated_at?: string | null
+          user_id?: string | null
+        }
+        Relationships: []
+      }
       _backup_amperage_20261010: {
         Row: {
           amperage: number | null
@@ -3938,6 +4019,30 @@ export type Database = {
         }
         Relationships: []
       }
+      _backup_statut_manquants_20261025: {
+        Row: {
+          commercial_status: string | null
+          id: string | null
+          slug: string | null
+          status_checked_at: string | null
+          status_source: string | null
+        }
+        Insert: {
+          commercial_status?: string | null
+          id?: string | null
+          slug?: string | null
+          status_checked_at?: string | null
+          status_source?: string | null
+        }
+        Update: {
+          commercial_status?: string | null
+          id?: string | null
+          slug?: string | null
+          status_checked_at?: string | null
+          status_source?: string | null
+        }
+        Relationships: []
+      }
       _backup_statut_passe2_20261025: {
         Row: {
           commercial_status: string | null
@@ -5020,6 +5125,33 @@ export type Database = {
           id?: string | null
           image_url?: string | null
           images?: Json | null
+          slug?: string | null
+        }
+        Relationships: []
+      }
+      _bak_images_scooters_2510_chasse: {
+        Row: {
+          id: string | null
+          image_url: string | null
+          images: Json | null
+          published: boolean | null
+          saved_at: string | null
+          slug: string | null
+        }
+        Insert: {
+          id?: string | null
+          image_url?: string | null
+          images?: Json | null
+          published?: boolean | null
+          saved_at?: string | null
+          slug?: string | null
+        }
+        Update: {
+          id?: string | null
+          image_url?: string | null
+          images?: Json | null
+          published?: boolean | null
+          saved_at?: string | null
           slug?: string | null
         }
         Relationships: []
@@ -6244,6 +6376,30 @@ export type Database = {
           source?: string
           titre?: string
           traitee?: boolean
+        }
+        Relationships: []
+      }
+      avatar_ia_essais: {
+        Row: {
+          admin: boolean
+          created_at: string
+          images: number
+          n: number
+          user_id: string
+        }
+        Insert: {
+          admin?: boolean
+          created_at?: string
+          images?: number
+          n: number
+          user_id: string
+        }
+        Update: {
+          admin?: boolean
+          created_at?: string
+          images?: number
+          n?: number
+          user_id?: string
         }
         Relationships: []
       }

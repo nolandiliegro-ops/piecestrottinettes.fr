@@ -1,4 +1,4 @@
-// relance de publication du 25/10/2026 (propositions pop-up, 2)
+// Config de lancement — sync 25/10 rideau (538255e)
 /**
  * Interrupteur de pré-lancement de la boutique.
  *
