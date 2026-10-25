@@ -3,10 +3,15 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- Titre statique : react-helmet-async REMPLACE nativement le <title>, aucun doublon.
-         La meta description, elle, est ajoutée en plus de la statique → elle vit
-         uniquement dans <SEO> (src/components/SEO.tsx), jamais ici. -->
     <title>Pièces Trottinettes | Spécialiste Pièces Détachées</title>
+    <meta name="description" content="Pièces détachées pour trottinettes électriques : pneus, chambres à air, plaquettes, chargeurs. Compatibilité garantie avec ton modèle. Atelier à Marseille." data-rh="true">
+    <meta property="og:title" content="piecestrottinettes.fr — Plus jamais la mauvaise pièce" data-rh="true">
+    <meta property="og:description" content="Pièces détachées pour trottinettes électriques : pneus, chambres à air, plaquettes, chargeurs. Compatibilité garantie avec ton modèle. Atelier à Marseille." data-rh="true">
+    <meta name="twitter:card" content="summary_large_image" data-rh="true">
+    <!-- Aperçus de liens (WhatsApp, Messenger, Telegram lisent cette page SANS JavaScript) :
+         description, og:title, og:description, og:image fixes ci-dessus et ci-dessous.
+         data-rh="true" : Helmet (src/components/SEO.tsx) les REMPLACE par ceux de la page,
+         jamais de doublon. Sans eux, WhatsApp affichait ce commentaire comme description (25/10). -->
     <meta name="author" content="Pièces Trottinettes" />
 
     <!-- Google Fonts: Bebas Neue + Anton (display) + Plus Jakarta Sans (body) -->
