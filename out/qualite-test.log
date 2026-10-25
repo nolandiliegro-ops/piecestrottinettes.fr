@@ -1,0 +1,7 @@
+OK  navee-k100 (traînées de pub, 600 px, collée au bord) → galerie (basse définition (578 px)) · trott 578 px · 13714 px effacés
+OK  navee-e25-pro (toile carrée 2000 px pleine de vide) → principale · trott 1651 px · 38700 px effacés
+OK  navee-gt5-pro (référence propre, déjà cadrée) → principale · trott 1392 px · 20874 px effacés
+OK  isinwheel-s9-pro (référence propre) → principale · trott 1355 px · 17379 px effacés
+OK  xiaomi-6-max principale 47 px (cassée) → refus (fantômes 87.4 %, trop petite (36 px)) · trott 36 px · 184 px effacés
+OK  ninebot-f2-e-ii (450 px) → refus (trop petite (433 px)) · trott 433 px · 1818 px effacés
+::notice title=qualite-test::banc OK
