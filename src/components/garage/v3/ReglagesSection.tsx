@@ -1,7 +1,9 @@
 /** Garage v3 — « Réglages » (25/10/2026) : profil, garage public, wallpaper, niveau, code RIDER, ambassadeur, mails. */
 import { useQuery, useQueryClient } from "@tanstack/react-query";
 import { toast } from "sonner";
-import { UserPen, Wallpaper } from "lucide-react";
+import { useState } from "react";
+import { UserPen, Wallpaper, Sparkles } from "lucide-react";
+import RiderBadgeIaDialog from "../RiderBadgeIaDialog";
 import { supabase } from "@/integrations/supabase/client";
 import { useAuth } from "@/hooks/useAuth";
 import { Switch } from "@/components/ui/switch";
@@ -14,6 +16,7 @@ import { ScreenTitle, Box, BoxTitle, FONT, UNB, CARBON, GREEN, LINE, MUTED, cut 
 const ReglagesSection = ({ onEditProfile, onTheme }: { onEditProfile: () => void; onTheme: () => void }) => {
   const { user, profile } = useAuth();
   const qc = useQueryClient();
+  const [badgeOpen, setBadgeOpen] = useState(false);
   const { data: flags } = useQuery({
     queryKey: ["v3-profile-flags", user?.id],
     enabled: !!user,
@@ -67,7 +70,9 @@ const ReglagesSection = ({ onEditProfile, onTheme }: { onEditProfile: () => void
             <div className="mt-4 flex flex-wrap gap-2">
               <button type="button" onClick={onEditProfile} className={btn} style={{ background: CARBON, color: "#FFFFFF", clipPath: cut(10), fontFamily: FONT }}><UserPen className="w-5 h-5" /> Modifier mon profil</button>
               <button type="button" onClick={onTheme} className={btn} style={{ background: "#FFFFFF", color: CARBON, clipPath: cut(10), boxShadow: `inset 0 0 0 1px ${LINE}`, fontFamily: FONT }}><Wallpaper className="w-5 h-5" style={{ color: GREEN }} /> Mon wallpaper</button>
+              <button type="button" onClick={() => setBadgeOpen(true)} className={btn} style={{ background: GREEN, color: "#FFFFFF", clipPath: cut(10), fontFamily: FONT }}><Sparkles className="w-5 h-5" /> Mon badge IA</button>
             </div>
+            <RiderBadgeIaDialog open={badgeOpen} onOpenChange={setBadgeOpen} />
           </Box>
 
           <Box>
