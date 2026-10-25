@@ -254,7 +254,8 @@ const BASE: Pose[] = ["ecoute", "clin", "reflechit", "content"];
 const poseSrc = (p: Pose) => (BASE.includes(p) ? `/skot/skot-${p}.webp` : `/skot/p-${p}.webp`);
 const ALL_POSES: Pose[] = ["ecoute", "clin", "reflechit", "content", "salut", "loupe", "trouve", "oups", "rire", "dort", "photo", "cle", "colis", "surpris"];
 const SEARCHING = ["Je fouille l'atelier…", "Je mesure la jante…", "Je croise les compatibilités…", "Je vérifie le stock…"];
-const NOT_FOUND = /(pas trouv|aucun|aucune|je n'ai pas|introuvable|désolé|crevaison|pas encore en catalogue)/i;
+// 25/10 : test réel « Zorglub X9000 » → « Je ne trouve ni… » n'était pas reconnu (SKOT disait « Voilà ! »).
+const NOT_FOUND = /(pas trouv|ne trouve|aucun|introuvable|désolé|crevaison|je n['’]ai pas|je ne peux (donc )?pas|pas (encore )?(dans|en) (le )?catalogue)/i;
 const IDLE_SLEEP_MS = 60_000;
 
 const ScenePanel = (p: SkotPanelProps) => {
