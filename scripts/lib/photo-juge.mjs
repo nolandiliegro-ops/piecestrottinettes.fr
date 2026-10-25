@@ -14,7 +14,7 @@ const TOOL = {
   input_schema: {
     type: 'object',
     properties: {
-      vue: { type: 'string', enum: VUES, description: "Angle de la trottinette. '3/4 avant' = vue de biais, roue avant plus proche, on voit le côté ET l'avant. 'profil' = strictement de côté. 'detail' = gros plan d'une partie (roue, écran, frein…). 'pliee' = trottinette pliée." },
+      vue: { type: 'string', enum: VUES, description: "Angle de la trottinette. '3/4 avant' = vue de biais, roue avant plus proche, on voit le côté ET l'avant. 'profil' = strictement de côté. 'detail' = gros plan d'une partie (roue, écran, frein…). 'pliee' = trottinette pliée : dès que la tige / colonne est rabattue, c'est 'pliee', QUEL QUE SOIT l'angle (erreur du 25/10 : Kukirin G3 pliée classée 3/4 arrière)." },
       plusieurs_trottinettes: { type: 'boolean', description: "true s'il y a DEUX trottinettes ou plus sur l'image, ou une vignette / une 2e vue incrustée de la trottinette. Un gros plan d'une seule trottinette = false." },
       personne: { type: 'boolean', description: 'Un humain ou une partie du corps (main, jambe, pied, silhouette, même petite) est visible.' },
       ecran_ou_telephone: { type: 'boolean', description: "Un smartphone, une capture d'appli ou un écran AJOUTÉ à côté de la trottinette (l'écran du guidon de la trottinette ne compte pas)." },
