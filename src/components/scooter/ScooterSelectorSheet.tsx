@@ -1081,8 +1081,8 @@ const A_LINE = "#E2DCD0";
 const aCut = (px: number) => `polygon(0 0, calc(100% - ${px}px) 0, 100% ${px}px, 100% 100%, 0 100%)`;
 
 /* 25/10 soir — clavier ouvert (capture iPhone de Nolan : cartes du garage tranchées par le bouton du bas,
-   texte d'aide de la barre coupé). ?clavier=0 = ancien comportement, 1..5 = propositions. */
-export const DEFAULT_CLAVIER = 0;
+   texte d'aide de la barre coupé). ?clavier=0 = ancien comportement, 1..5 = tour 1, 6..10 = tour 2 (6 « Plaque » retenue par Nolan le 25/10). */
+export const DEFAULT_CLAVIER = 6;
 export const readClavierVariant = (): number => {
   try {
     const v = new URLSearchParams(window.location.search).get("clavier");
