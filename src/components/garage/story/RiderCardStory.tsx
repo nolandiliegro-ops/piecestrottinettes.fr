@@ -26,9 +26,9 @@ const imgOf = (m?: RiderMachine | null) => m?.model?.image_url ?? m?.custom_phot
 
 /** Propositions du 25/10 soir (retour Nolan : « je veux que l'utilisateur voie exactement ce qu'il va avoir » et
  *  « un petit bouton pour voir le vrai modèle, bien rangé, bien intégré ») : `?apercu=1..5` = aperçu de l'image avant
- *  partage, `?photo=1..5` = bouton « vraie photo ». 0 (sans paramètre) = comportement actuel. */
-const readVariant = (key: string): number => {
-  try { const v = new URLSearchParams(window.location.search).get(key); return v && /^[0-5]$/.test(v) ? Number(v) : 0; } catch { return 0; }
+ *  partage, `?photo=1..5` = bouton « vraie photo ». Défauts choisis le 25/10 : aperçu 1, photo 2 ; 0 = comportement d'avant. */
+const readVariant = (key: string, fallback: number): number => {
+  try { const v = new URLSearchParams(window.location.search).get(key); return v && /^[0-5]$/.test(v) ? Number(v) : fallback; } catch { return fallback; }
 };
 
 /** Attend que toutes les images de la carte soient chargées et décodées : sur ordinateur, le wallpaper et la trott ne
@@ -89,8 +89,9 @@ const RiderCardStory = ({ data, commentCount = 0, onOpenComments, className = ""
   const [exporting, setExporting] = useState(false);
   const [real, setReal] = useState(false);
   const [sharing, setSharing] = useState(false);
-  const [apercu] = useState(() => readVariant("apercu"));
-  const [photoV] = useState(() => readVariant("photo"));
+  // Choix de Nolan du 25/10 soir : « 1 · Plein écran » et « 2 · Vignette » par défaut ; `?apercu=0` / `?photo=0` = avant.
+  const [apercu] = useState(() => readVariant("apercu", 1));
+  const [photoV] = useState(() => readVariant("photo", 2));
   const [preview, setPreview] = useState<{ url: string; file: File; w: number; h: number } | null>(null);
   const ref = useRef<HTMLDivElement>(null);
   // Ordinateur (bare) : la trott est sur l'estrade du wallpaper → la carte à l'écran est compacte, sans grande image.
