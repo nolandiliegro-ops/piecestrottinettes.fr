@@ -1,7 +1,7 @@
 import { useRef, useState } from 'react';
 import { useQuery } from '@tanstack/react-query';
 import { toPng } from 'html-to-image';
-import { Check, Copy, Loader2, Search, Share2 } from 'lucide-react';
+import { ArrowRight, Check, Copy, Loader2, Search, Share2 } from 'lucide-react';
 import { toast } from 'sonner';
 import { supabase } from '@/integrations/supabase/client';
 import { FORMATS, type KitFormat } from './KitFormats';
@@ -152,8 +152,47 @@ const Texte = ({ titre, texte }: { titre: string; texte: string }) => {
   );
 };
 
+/** 26/10 (Nolan : « ce lien de garage est magnifique, autant que la carte… c'est ce lien-là qu'il faut partager ») :
+ *  le garage public du créateur, avec son code `?ref=` (ReferralCapture le mémorise sur toutes les pages). */
+const PartageGarage = ({ url, code }: { url: string; code: string }) => {
+  const [ok, setOk] = useState(false);
+  const partager = async () => {
+    const nav = navigator as Navigator & { share?: (d: ShareData) => Promise<void> };
+    try {
+      if (nav.share) { await nav.share({ title: 'Mon garage', text: `Mon garage de rider, et −10 % sur tes pièces avec mon code ${code} :`, url }); return; }
+    } catch (e) { if ((e as Error)?.name === 'AbortError') return; }
+    try { await navigator.clipboard.writeText(url); setOk(true); toast.success('Lien de ton garage copié'); window.setTimeout(() => setOk(false), 1800); }
+    catch { toast.error('Copie impossible : sélectionne le lien à la main'); }
+  };
+  return (
+    <div className="p-4 grid gap-3" style={{ background: '#1A1A1A', clipPath: 'polygon(0 0, calc(100% - 14px) 0, 100% 14px, 100% 100%, 0 100%)' }}>
+      <div>
+        <p className="text-sm font-bold uppercase tracking-[0.14em]" style={{ color: '#8FBF9C' }}>Le lien à partager</p>
+        <p className="mt-1 text-[20px] uppercase leading-none text-white" style={{ fontFamily: "'Unbounded', sans-serif", fontWeight: 900, fontStyle: 'italic' }}>Ton garage</p>
+        <p className="mt-2 text-sm text-white/70 break-all select-all">{url}</p>
+      </div>
+      <div className="grid grid-cols-2 gap-2">
+        <button type="button" onClick={partager} className="min-h-[48px] inline-flex items-center justify-center gap-2 bg-white text-sm font-extrabold uppercase text-carbon" style={{ clipPath: 'polygon(0 0, calc(100% - 10px) 0, 100% 10px, 100% 100%, 0 100%)' }}>
+          {ok ? <Check className="w-4 h-4" /> : <Share2 className="w-4 h-4" />}Partager
+        </button>
+        <a href={url} target="_blank" rel="noopener" className="min-h-[48px] inline-flex items-center justify-center gap-2 text-sm font-extrabold uppercase text-white" style={{ boxShadow: 'inset 0 0 0 2px rgba(255,255,255,0.85)', clipPath: 'polygon(0 0, calc(100% - 10px) 0, 100% 10px, 100% 100%, 0 100%)' }}>
+          Voir <ArrowRight className="w-4 h-4" />
+        </a>
+      </div>
+    </div>
+  );
+};
+
 const KitPartage = ({ userId, photo, nom, code, lien, themeKey, points, ville }: Props) => {
   const [choisie, setChoisie] = useState<TrottChoix | null>(lireTrott);
+  const { data: pseudo } = useQuery({
+    queryKey: ['kit-username', userId ?? null],
+    enabled: !!userId,
+    queryFn: async () => {
+      const { data } = await supabase.from('profiles').select('username').eq('id', userId!).maybeSingle();
+      return (data?.username as string | null | undefined) ?? null;
+    },
+  });
   const { data: wallpaper } = useQuery({
     queryKey: ['kit-wallpaper', themeKey ?? null],
     queryFn: async () => {
@@ -213,6 +252,7 @@ const KitPartage = ({ userId, photo, nom, code, lien, themeKey, points, ville }:
         <h2 className="text-lg font-black uppercase tracking-tight text-carbon">Ton kit de partage</h2>
         <p className="text-base text-gray-600">Ta carte Rider et six visuels à ton code, prêts à poster. Chacun porte la mention « Collaboration commerciale » imposée par la loi.</p>
       </div>
+      {pseudo && <PartageGarage url={`https://piecestrottinettes.fr/rider/${pseudo}?ref=${encodeURIComponent(code)}`} code={code} />}
       <ChoixTrott garage={garage} actuelle={trott} onChoisir={choisir} />
       <div className="grid grid-cols-2 gap-x-3 gap-y-6">
         {ORDRE.map((id) => FORMATS.find((f) => f.id === id)!).map((f) => <Tuile key={f.id} f={f} d={d} code={code} />)}

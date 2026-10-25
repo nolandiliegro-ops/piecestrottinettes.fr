@@ -12,6 +12,7 @@
  * z-index négatif = sous le contenu de la page, au-dessus du wallpaper.
  */
 import { useEffect, useRef, useState, type ReactNode } from "react";
+import { optimizedImage } from "@/lib/imageTransform";
 
 const IMG_RATIO = 1824 / 1017; // format majoritaire des wallpapers
 const ESTRADE_Y = 0.845; // milieu du plateau de l'estrade (bord arrière ≈ 0,81, bord avant ≈ 0,87), en part de la hauteur de l'image
@@ -100,11 +101,16 @@ const StandTrott = ({ src, alt }: { src: string | null | undefined; alt: string 
       {/* ombre au sol : se resserre quand la trott monte */}
       <span className="pt-stand-anim absolute rounded-[50%]" style={{ left: x - h * 0.4, top: y - h * 0.04, width: h * 0.8, height: h * 0.08, background: "radial-gradient(closest-side, rgba(0,0,0,0.6), transparent)", animation: "pt-stand-shadow 3.6s ease-in-out infinite" }} />
       <div className="pt-stand-anim absolute" style={{ left: x - w / 2, top: y - h * (1 + LIFT), width: w, height: h, animation: "pt-stand-float 3.6s ease-in-out infinite" }}>
+        {/* 26/10 (Nolan : « quand on arrive sur le garage… il n'y a pas la trott ») : plus d'apparition en fondu. Si le
+            navigateur ne fait pas tourner l'animation (onglet en arrière-plan, économie d'énergie), elle restait figée à
+            opacité 0 : trott invisible (mesuré : animation « enter » bloquée à 0 ms). Et l'image servie en 900 px (36 Ko)
+            au lieu du PNG d'origine (427 Ko) : en 4G elle mettait longtemps à arriver. */}
         <img
           key={src}
-          src={src}
+          src={optimizedImage(src, 900)}
           alt={alt}
-          className="w-full h-full object-contain animate-in fade-in zoom-in-95 duration-500"
+          decoding="async"
+          className="w-full h-full object-contain"
           style={{ objectPosition: "center bottom", filter: "drop-shadow(0 22px 20px rgba(0,0,0,0.38))" }}
         />
       </div>

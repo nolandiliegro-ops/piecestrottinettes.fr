@@ -62,8 +62,9 @@ const HomeRiderCard = ({ riders, isAuthenticated }: { riders: RiderBundle[]; isA
               {isAuthenticated ? "Ouvrir mon garage" : "Créer mon garage"} <ArrowRight className="w-5 h-5" />
             </Link>
             {rider?.username && (
-              <Link to={`/rider/${rider.username}`} className="inline-flex items-center min-h-[56px] px-2 text-[15px] font-bold underline underline-offset-4" style={{ fontFamily: FONT, color: "#FFFFFF" }}>
-                Le garage de {rider.display_name}
+              // 26/10 (Nolan : « le bouton du garage de NOLAN2.0, il faut qu'il soit plus gros parce que c'est top ») : un vrai bouton.
+              <Link to={`/rider/${rider.username}`} className="inline-flex items-center gap-3 min-h-[56px] px-5 text-[15px] font-extrabold uppercase" style={{ fontFamily: FONT, color: "#FFFFFF", clipPath: cut(10), boxShadow: "inset 0 0 0 2px rgba(255,255,255,0.9)", background: "rgba(26,26,26,0.35)" }}>
+                Voir le garage de {rider.display_name} <ArrowRight className="w-5 h-5" />
               </Link>
             )}
           </div>
