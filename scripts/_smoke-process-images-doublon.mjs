@@ -18,6 +18,12 @@ const galerie = async (id) => (await (await fetch(`${env.VITE_SUPABASE_URL}/rest
 const b64 = (u) => execFileSync('curl', ['-s', '-f', '-L', '--max-time', '40', u], { maxBuffer: 64 << 20 }).toString('base64');
 const call = async (body) => { const r = await fetch(FN, { method: 'POST', headers: { 'Content-Type': 'application/json', 'x-admin-secret': env.ADMIN_BULK_SECRET }, body: JSON.stringify(body) }); return { status: r.status, j: await r.json().catch(() => null) }; };
 
+// 0. Sonde SANS image : seule la nouvelle version répond { backfill_fp: true }. Sans elle on s'arrête AVANT check_only,
+//    que l'ancienne version traiterait comme un vrai envoi (doublon écrit sur engwe).
+const s0 = await call({ entity_type: 'scooter', entity_id: ENGWE, backfill_fp: true });
+console.log('sonde →', s0.status, JSON.stringify(s0.j));
+if (s0.j?.backfill_fp !== true) { console.log('::error title=smoke garde-fou::version déployée SANS garde-fou — arrêt avant tout envoi'); process.exit(1); }
+
 const avant = await galerie(ENGWE);
 if (avant.length < 2) fail(`engwe-y1000 a ${avant.length} photo(s), test impossible`);
 const autre = (await (await fetch(`${env.VITE_SUPABASE_URL}/rest/v1/scooter_models?select=images&slug=eq.f40`, { headers: H })).json())[0].images[0].url;
