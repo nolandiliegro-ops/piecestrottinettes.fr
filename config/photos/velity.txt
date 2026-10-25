@@ -1,0 +1,5 @@
+fr1.jpg https://fastride.fr/16133-large_default/trottinette-electrique-velity-511-ss.jpg
+fr2.jpg https://fastride.fr/16137-large_default/trottinette-electrique-velity-511-ss.jpg
+pt1.jpg https://trotinetch.pt/cdn/shop/files/trottinette-electrique-velity-511-ss_f63cf259-2194-4bbc-9ec0-f9e7a92db5f4.jpg?v=1708691656&width=1214
+en0.png https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/4aeb9d54-c0ca-4426-a064-bbbe7fafbd3a/1792444508145_0.png
+en1.png https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/4aeb9d54-c0ca-4426-a064-bbbe7fafbd3a/1792444510041_0.png
