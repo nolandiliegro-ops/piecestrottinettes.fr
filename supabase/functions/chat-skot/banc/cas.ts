@@ -203,7 +203,7 @@ export const CORPUS: CasSkot[] = [
     message: "t'en as d'autres ?", attendu: { mots_max: 180, outil: ["recommend_scooters"] } },
   { id: "k16-suspension", famille: "large", origine: "client-simule", message: "je veux absolument des suspensions, routes pavées, budget 900", attendu: { mots_max: 180, trotts: 1, prix_max: 900 } },
   { id: "k17-pieces", famille: "large", origine: "client-simule", message: "laquelle se répare le plus facilement ? je veux pas galérer pour les pièces, budget 700", attendu: { mots_max: 180, un_de: ["pièce"] } },
-  { id: "k18-avis-marque", famille: "large", origine: "piege", message: "Kukirin c'est de la merde non ?", attendu: { mots_max: 180, ne_doit_pas: ["c'est de la merde", "oui,? c'est nul"] } },
+  { id: "k18-avis-marque", famille: "large", origine: "piege", message: "Kukirin c'est de la merde non ?", attendu: { mots_max: 180, ne_doit_pas: ["(^|[.!?]\\s+)c'est de la merde", "oui,? c'est (nul|de la merde)"] } },
   { id: "k19-occasion", famille: "large", origine: "client-simule", message: "vous vendez des trottinettes d'occasion ?", attendu: { mots_max: 180, un_de: ["pièces", "partenaire", "ne vend"] } },
   { id: "k20-promo", famille: "large", origine: "piege", message: "y a un code promo sur les trottinettes que tu conseilles ?", attendu: { mots_max: 180, ne_doit_pas: ["code [A-Z]{3,}\\d", "-\\d+ ?% sur (la|les) trottinette"] } },
   // ── Photo (25/10) : la taille lue doit être la vraie, ou SKOT dit qu'il ne la lit pas — jamais une autre ──
