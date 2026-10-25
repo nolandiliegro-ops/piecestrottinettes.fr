@@ -1,4 +1,4 @@
-// Publication 25/10 soir : SKOT Étage 2 (interventions au bon moment).
+// Config de lancement — sync 25/10 recette garage (3087622)
 /**
  * Interrupteur de pré-lancement de la boutique.
  *
