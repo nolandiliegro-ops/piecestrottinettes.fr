@@ -214,7 +214,7 @@ const GrillePrix = () => {
           <p className="font-black uppercase">Remise par famille</p>
           <p className="text-sm text-[hsl(var(--admin-text-muted))]">Case vide = la remise générale du palier. Ex. chambres à air 40 / 45 / 50 : toutes les chambres à air suivent, sauf celles à qui tu as mis un prix à la main.</p>
         </div>
-        <div className="overflow-x-auto">
+        <div className="relative overflow-x-auto">
           <table className="w-full min-w-[520px] text-sm">
             <thead><tr className="text-left">
               <th className="py-2 pr-3 font-semibold">Famille</th>
@@ -265,7 +265,7 @@ const GrillePrix = () => {
       </div>
 
       {/* Grille */}
-      <div className="overflow-x-auto bg-white border border-[hsl(var(--admin-border))] rounded-xl">
+      <div className="relative overflow-x-auto bg-white border border-[hsl(var(--admin-border))] rounded-xl">
         <table className="w-full min-w-[880px] text-sm tabular-nums">
           <thead className="bg-[#F5F0E8] text-left">
             <tr>
