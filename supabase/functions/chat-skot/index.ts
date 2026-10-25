@@ -12,9 +12,9 @@ import { serve } from "https://deno.land/std@0.190.0/http/server.ts";
 import { createClient, type SupabaseClient } from "https://esm.sh/@supabase/supabase-js@2.57.2";
 import { classifyCompat, unverifiedLabel, verifiedReason, partDelay } from "../_shared/compat_status.ts";
 import { CORPUS } from "./banc/cas.ts";
-import { runBanc, runNuit, looksCut } from "./banc/banc.ts";
+import { runBanc, runNuit, runFresh, runFreshNuit, looksCut } from "./banc/banc.ts";
 
-const VERSION = "chat-skot@2026-10-25d";
+const VERSION = "chat-skot@2026-10-25f";
 const MODEL = "claude-haiku-5-5";
 const MAX_TOOL_ROUNDS = 4;
 const HISTORY_LIMIT = 14;
@@ -156,6 +156,14 @@ const NUMS: Record<string, string> = { un: "1", une: "1", deux: "2", trois: "3",
 const GENERIC = new Set(["trottinette", "trottinettes", "trott", "trotte", "trot", "electrique", "scooter", "ma", "mon", "la", "le", "les", "de", "du", "des", "pour", "modele", "model", "une", "un", "c", "est", "j", "ai", "que", "quel", "quelle", "marque", "version", "pieces", "piece", "pneu", "pneus", "chambre", "air", "chargeur", "plaquettes", "frein"]);
 // Marques connues sous deux noms
 const ALIAS: Record<string, string> = { segway: "ninebot", ninebot: "segway", mi: "xiaomi", minimotors: "dualtron", trotinette: "" };
+// Dictée vocale et orthographe phonétique (25/10) : remplacées AVANT la recherche.
+const PHONETIC: Record<string, string> = {
+  chaumi: "xiaomi", shaomi: "xiaomi", xiomi: "xiaomi", xaomi: "xiaomi", chaomi: "xiaomi", xiaomie: "xiaomi",
+  kabo: "kaabo", kaboo: "kaabo", koukirine: "kukirin", kukirine: "kukirin", koukirin: "kukirin", kukyrin: "kukirin",
+  dualtrone: "dualtron", ninebote: "ninebot", segwey: "segway", segoue: "segway", vset: "vsett", inmotio: "inmotion",
+  deuxieme: "2nd", second: "2nd", seconde: "2nd", generation: "gen", troisieme: "3rd",
+};
+const ROMAN: Record<string, string> = { i: "1", ii: "2", iii: "3", iv: "4", v: "5", vi: "6" };
 function lev1(a: string, b: string) { // distance d'édition ≤ 1
   if (Math.abs(a.length - b.length) > 1) return false;
   let i = 0, j = 0, d = 0;
@@ -172,14 +180,18 @@ async function scooterIndex(db: SupabaseClient): Promise<ScooterIdx[]> {
   if (error) { console.error("[chat-skot] scooterIndex", error.message); return SCOOTER_CACHE?.rows ?? []; }
   const rows = (data ?? []).map((s: any) => {
     const full = fullName(s.brands?.name, s.name);
-    const words = normTxt(`${full} ${s.slug}`).split(/[^a-z0-9]+/).filter(Boolean);
-    return { slug: s.slug, full, hay: squash(`${full} ${s.slug} ${s.search_terms ?? ""}`), words, nameLen: squash(full).length };
+    const raw = normTxt(`${full} ${s.slug}`).split(/[^a-z0-9]+/).filter(Boolean);
+    const words = [...raw, ...raw.filter((w) => ROMAN[w] && w !== "v" && w !== "i").map((w) => ROMAN[w])]; // « Pro-III » = « pro 3 » (v et i seuls : ambigus)
+    const romanHay = words.filter((w) => /^\d$/.test(w)).join("");
+    return { slug: s.slug, full, hay: squash(`${full} ${s.slug} ${s.search_terms ?? ""}`) + romanHay, words, nameLen: squash(full).length };
   });
   SCOOTER_CACHE = { at: Date.now(), rows };
   return rows;
 }
 export function matchScooters(all: ScooterIdx[], query: string, tolerance = 0): ScooterIdx[] {
-  let toks = normTxt(query).split(/[^a-z0-9]+/).filter(Boolean).map((t) => NUMS[t] ?? t).filter((t) => !GENERIC.has(t));
+  const q0 = normTxt(query).replace(/\bnine bot\b/g, "ninebot").replace(/\bdual tron\b/g, "dualtron").replace(/\bin motion\b/g, "inmotion")
+    .replace(/\bv set+\b/g, "vsett").replace(/\bkaa? bo+\b/g, "kaabo").replace(/\bseg way\b/g, "segway").replace(/\be ?t ?wow\b/g, "etwow");
+  let toks = q0.split(/[^a-z0-9]+/).filter(Boolean).map((t) => PHONETIC[t] ?? NUMS[t] ?? t).filter((t) => !GENERIC.has(t));
   // « g 2 » → « g2 », « pro 2 » reste deux mots (les deux sont dans le nom)
   const merged: string[] = [];
   for (const t of toks) { const prev = merged[merged.length - 1]; if (prev && /^[a-z]$/.test(prev) && /^\d/.test(t)) merged[merged.length - 1] = prev + t; else merged.push(t); }
@@ -191,7 +203,7 @@ export function matchScooters(all: ScooterIdx[], query: string, tolerance = 0): 
     let ok = 0, fuzzy = 0;
     for (const t of toks) {
       if (s.hay.includes(t) || (ALIAS[t] && s.hay.includes(ALIAS[t]))) ok++;
-      else if (t.length >= 5 && s.words.some((w) => lev1(w, t))) { ok++; fuzzy++; }
+      else if (t.length >= 4 && s.words.some((w) => w.length >= 4 && lev1(w, t))) { ok++; fuzzy++; }
       else if (t.length >= 4 && s.words.some((w) => w.length >= 4 && (t.startsWith(w) || w.startsWith(t)))) { ok++; fuzzy++; }
     }
     if (ok < toks.length - tolerance && !s.hay.includes(joined)) continue;
@@ -604,6 +616,23 @@ serve(async (req) => {
     const famille = typeof body.famille === "string" ? body.famille : null;
     const run = await runBanc({ db, apiKey, converse, callClaude, admin: adm, ids, famille, kind: "banc", version: VERSION, judgeRules: SYSTEM_PROMPT });
     return json(run, run.ok ? 200 : 500);
+  }
+
+  // action "frais" (ADMIN) : N questions de clients inventées à l'instant, réponses jugées, violations → skot_flags.
+  if (body?.action === "frais") {
+    const adm = await adminFromRequest(db, req);
+    if (!adm) return json({ ok: false, error: "FORBIDDEN" }, 403);
+    if (!apiKey) return json({ ok: false, error: "NOT_CONFIGURED" }, 503);
+    const n = Math.min(40, Math.max(1, Number(body.n) || 15));
+    const r = await runFresh({ db, apiKey, converse, callClaude, version: VERSION, judgeRules: SYSTEM_PROMPT }, n);
+    return json(r, r.ok ? 200 : 500);
+  }
+
+  // action "frais_nuit" (pg_cron skot-frais, sans authentification) : une fois par jour, index unique en base.
+  if (body?.action === "frais_nuit") {
+    if (!apiKey) return json({ ok: false, error: "NOT_CONFIGURED" }, 503);
+    const r = await runFreshNuit({ db, apiKey, converse, callClaude, version: VERSION, judgeRules: SYSTEM_PROMPT }, 15);
+    return json(r, r.ok ? 200 : (r.error === "ALREADY_DONE" ? 409 : 500));
   }
 
   // action "nuit" (planification pg_cron, sans authentification) : une seule fois par jour, garantie par un index unique en base.
