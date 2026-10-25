@@ -28,11 +28,10 @@ const ch = (c: number) => `polygon(0 0, calc(100% - ${c}px) 0, 100% ${c}px, 100%
 
 const imgOf = (m?: RiderMachine | null) => m?.model?.image_url ?? m?.custom_photo_url ?? null;
 
-/** Propositions du 25/10 soir (retour Nolan : « je veux que l'utilisateur voie exactement ce qu'il va avoir » et
- *  « un petit bouton pour voir le vrai modèle, bien rangé, bien intégré ») : `?apercu=1..5` = aperçu de l'image avant
- *  partage, `?photo=1..5` = bouton « vraie photo ». Défauts choisis le 25/10 : aperçu 1, photo 2 ; 0 = comportement d'avant. */
-const readVariant = (key: string, fallback: number): number => {
-  try { const v = new URLSearchParams(window.location.search).get(key); return v && /^[0-5]$/.test(v) ? Number(v) : fallback; } catch { return fallback; }
+/** Choix de Nolan (25/10, validés sur son téléphone le 26/10) : aperçu « Plein écran » avant partage, bouton vraie photo
+ *  « Vignette », image partagée « Carte posée ». `?apercu=0`, `?photo=0`, `?cadre=0` = comportement d'avant (retour arrière). */
+const isOff = (key: string): boolean => {
+  try { return new URLSearchParams(window.location.search).get(key) === "0"; } catch { return false; }
 };
 
 /** Attend que toutes les images de la carte soient chargées et décodées : sur ordinateur, le wallpaper et la trott ne
@@ -100,11 +99,9 @@ const RiderCardStory = ({ data, commentCount = 0, onOpenComments, className = ""
   const [exporting, setExporting] = useState(false);
   const [real, setReal] = useState(false);
   const [sharing, setSharing] = useState(false);
-  // Choix de Nolan du 25/10 soir : « 1 · Plein écran » et « 2 · Vignette » par défaut ; `?apercu=0` / `?photo=0` = avant.
-  const [apercu] = useState(() => readVariant("apercu", 1));
-  const [photoV] = useState(() => readVariant("photo", 2));
-  // 25/10 (« sur WhatsApp on voit pas le profil, la tête ») : cadrage de l'image partagée, `?cadre=1..5` (0 = la carte elle-même).
-  const [cadre] = useState(() => readVariant("cadre", 4)); // 4 · Carte posée par défaut (reco du 25/10, Nolan sans préférence)
+  const [apercu] = useState(() => (isOff("apercu") ? 0 : 1));
+  const [photoV] = useState(() => (isOff("photo") ? 0 : 2));
+  const [cadre] = useState(() => (isOff("cadre") ? 0 : 4));
   const [storyOn, setStoryOn] = useState(false);
   const storyRef = useRef<HTMLDivElement>(null);
   const [preview, setPreview] = useState<{ url: string; file: File; w: number; h: number } | null>(null);
@@ -204,7 +201,7 @@ const RiderCardStory = ({ data, commentCount = 0, onOpenComments, className = ""
 
   const btn = "min-h-[44px] px-3.5 inline-flex items-center gap-2 text-sm font-extrabold";
 
-  /** Aperçu de l'image avant partage (propositions ?apercu=1..5) : c'est exactement ce fichier qui part. */
+  /** Aperçu de l'image avant partage : c'est exactement ce fichier qui part. */
   const doShare = () => { if (preview) void sendFile(preview.file, preview.url); };
   const doSave = () => { if (preview) { saveImage(preview.url, preview.file.name); toast.success("Image enregistrée"); } };
   const previewActions = (dark: boolean) => (
@@ -238,10 +235,8 @@ const RiderCardStory = ({ data, commentCount = 0, onOpenComments, className = ""
         document.body,
       );
     }
-    if (!preview || apercu === 0 || apercu === 4) return null;
-    let body: JSX.Element;
-    if (apercu === 1) {
-      body = (
+    if (!preview || apercu === 0) return null;
+    const body = (
         <div role="dialog" aria-label="Aperçu de ta story" className="fixed inset-0 z-[90] flex flex-col items-center justify-center gap-4 p-4 overflow-y-auto" style={{ background: "rgba(10,10,10,0.92)", fontFamily: FONT }}>
           {closeBtn(true)}
           {big("Ta story est prête", true)}
@@ -249,54 +244,12 @@ const RiderCardStory = ({ data, commentCount = 0, onOpenComments, className = ""
           <img src={preview.url} alt="Ta carte Rider en image" className="max-h-[62dvh] w-auto max-w-full" style={{ clipPath: ch(16) }} />
           {previewActions(true)}
         </div>
-      );
-    } else if (apercu === 2) {
-      body = (
-        <div role="dialog" aria-label="Aperçu de ta story" className="fixed inset-0 z-[90] flex items-end justify-center" style={{ background: "rgba(0,0,0,0.55)", fontFamily: FONT }} onClick={() => setPreview(null)}>
-          <div className="relative w-full max-w-[480px] bg-[#FAFAF8] px-4 pt-3 pb-5 grid justify-items-center gap-3" style={{ clipPath: "polygon(0 0, calc(100% - 22px) 0, 100% 22px, 100% 100%, 0 100%)" }} onClick={(e) => e.stopPropagation()}>
-            <span aria-hidden className="w-12 h-1.5 bg-[#D6D3CC]" />
-            <div className="w-full flex items-center justify-between gap-3">
-              <p className="text-[18px] uppercase leading-none" style={{ fontFamily: UNB, fontWeight: 900, fontStyle: "italic", color: CARBON }}>Ta carte, prête</p>
-              <button type="button" onClick={() => setPreview(null)} aria-label="Fermer l'aperçu" className="w-11 h-11 inline-flex items-center justify-center" style={{ color: CARBON }}><X className="w-5 h-5" /></button>
-            </div>
-            <img src={preview.url} alt="Ta carte Rider en image" className="max-h-[52dvh] w-auto max-w-full" style={{ clipPath: ch(14) }} />
-            <p className="text-sm text-center" style={{ color: "#4B5563" }}>L'image qui part, telle quelle.</p>
-            {previewActions(false)}
-          </div>
-        </div>
-      );
-    } else if (apercu === 3) {
-      body = (
-        <div role="dialog" aria-label="Aperçu de ta story" className="fixed inset-0 z-[90] flex flex-col items-center justify-center gap-4 p-4 overflow-y-auto" style={{ background: "#121212", fontFamily: FONT }}>
-          {closeBtn(true)}
-          <div className="relative w-[min(290px,66vw)] max-h-[64dvh] aspect-[9/16] p-[6px] bg-black" style={{ clipPath: ch(20), boxShadow: "0 0 0 1px #333" }}>
-            <img src={preview.url} alt="Ta carte Rider en image" className="w-full h-full object-cover" style={{ clipPath: ch(16) }} />
-            <div aria-hidden className="absolute left-3 right-3 top-3 flex gap-1">
-              <span className="h-[3px] flex-1 bg-white" /><span className="h-[3px] flex-1 bg-white/40" /><span className="h-[3px] flex-1 bg-white/40" />
-            </div>
-          </div>
-          <p className="text-[15px] font-semibold text-center" style={{ color: "rgba(255,255,255,0.8)" }}>Voilà ce que tes potes verront en story.</p>
-          {previewActions(true)}
-        </div>
-      );
-    } else {
-      body = (
-        <div role="dialog" aria-label="Aperçu de ta story" className="fixed inset-0 z-[90] flex flex-col items-center justify-center gap-4 p-4 overflow-y-auto" style={{ background: "#E9E4DA", fontFamily: FONT }}>
-          {closeBtn(false)}
-          {big("Ton tirage est prêt", false)}
-          <div className="bg-white p-[10px] pb-3" style={{ transform: "rotate(-2deg)", boxShadow: "0 22px 40px -12px rgba(0,0,0,0.45)" }}>
-            <img src={preview.url} alt="Ta carte Rider en image" className="block max-h-[54dvh] w-auto max-w-[78vw]" />
-            <p className="mt-2 text-sm font-semibold text-center" style={{ color: "#6B7280" }}>{preview.file.name} · {preview.w} × {preview.h} px</p>
-          </div>
-          {previewActions(false)}
-        </div>
-      );
-    }
+    );
     return createPortal(body, document.body);
   };
 
-  /** Accès à la vraie photo de la trott (propositions ?photo=1..5). `place` : « scene » = sur la grande image,
-   *  « name » = sous le nom (carte compacte sur ordinateur, ou variantes Bascule / Lien partout). */
+  /** Accès à la vraie photo de la trott. `place` : « scene » = sur la grande image, « name » = sous le nom
+   *  (carte compacte sur ordinateur). Vignette (2) par défaut, bouton texte (0) avec `?photo=0`. */
   const photoEl = (place: "scene" | "name") => {
     const photo = current?.custom_photo_url;
     if (!photo) return null;
@@ -310,47 +263,19 @@ const RiderCardStory = ({ data, commentCount = 0, onOpenComments, className = ""
           <Camera className="w-4 h-4" /> {label}
         </button>
       );
-      if (v === 1) return (
-        <button type="button" data-story-hide="true" onClick={open} aria-label={label} className="absolute right-3 top-1 w-11 h-11 inline-flex items-center justify-center" style={{ background: "rgba(26,26,26,0.82)", color: "#FFFFFF", clipPath: ch(6) }}>
-          <Camera className="w-5 h-5" />
-        </button>
-      );
       if (v === 2) return (
         <button type="button" data-story-hide="true" onClick={open} aria-label={label} className="absolute right-3 bottom-2 w-[58px] h-[58px] p-[2px] bg-white" style={{ clipPath: ch(8) }}>
           <img src={photo} alt="" crossOrigin="anonymous" className="w-full h-full object-cover" style={{ clipPath: ch(7) }} />
           <span className="absolute left-[2px] bottom-[2px] w-6 h-6 inline-flex items-center justify-center" style={{ background: CARBON }}><Camera className="w-3.5 h-3.5 text-white" /></span>
         </button>
       );
-      if (v === 5) return (
-        <button type="button" data-story-hide="true" onClick={open} aria-label={label} className="absolute right-0 bottom-0 w-[76px] h-[76px]">
-          <span className="absolute inset-0" style={{ clipPath: "polygon(100% 0, 100% 100%, 0 100%)", background: `url(${photo}) center/cover` }} />
-          <span className="absolute inset-0" style={{ clipPath: "polygon(100% 0, 100% 6%, 6% 100%, 0 100%)", background: "#FFFFFF" }} />
-          <span className="absolute right-1.5 bottom-1.5 w-7 h-7 inline-flex items-center justify-center bg-white" style={{ clipPath: ch(4) }}><Camera className="w-4 h-4" style={{ color: CARBON }} /></span>
-        </button>
-      );
-      return null; // 3 et 4 : sous le nom
+      return null;
     }
     // place === "name"
-    if (v === 3) return (
-      <div data-story-hide="true" className="mt-2 inline-flex" style={{ background: "rgba(255,255,255,0.14)", clipPath: ch(6) }}>
-        <span className="min-h-[44px] px-3.5 inline-flex items-center text-sm font-extrabold bg-white" style={{ color: CARBON, clipPath: ch(6) }}>Modèle</span>
-        <button type="button" onClick={open} className="min-h-[44px] px-3.5 inline-flex items-center gap-1.5 text-sm font-extrabold text-white"><Camera className="w-4 h-4" /> Ma photo</button>
-      </div>
-    );
-    if (v === 4) return (
-      <button type="button" data-story-hide="true" onClick={open} className="min-h-[44px] -mb-2 inline-flex items-center gap-1.5 text-sm font-bold underline underline-offset-4" style={{ color: SOFT }}>
-        <Camera className="w-4 h-4" /> {label}
-      </button>
-    );
     if (!compact) return null;
     if (v === 0) return (
       <button type="button" onClick={open} className="mt-2 min-h-[44px] px-3 inline-flex items-center gap-2 bg-white text-sm font-extrabold" style={{ color: CARBON, clipPath: ch(6) }}>
         <Camera className="w-4 h-4" /> {label}
-      </button>
-    );
-    if (v === 1) return (
-      <button type="button" onClick={open} aria-label={label} className="absolute right-0 top-0 w-11 h-11 inline-flex items-center justify-center bg-white" style={{ color: CARBON, clipPath: ch(6) }}>
-        <Camera className="w-5 h-5" />
       </button>
     );
     if (v === 2) return (
@@ -359,35 +284,14 @@ const RiderCardStory = ({ data, commentCount = 0, onOpenComments, className = ""
         <span className="absolute left-[2px] bottom-[2px] w-5 h-5 inline-flex items-center justify-center" style={{ background: CARBON }}><Camera className="w-3 h-3 text-white" /></span>
       </button>
     );
-    if (v === 5) return (
-      <button type="button" onClick={open} aria-label={label} className="absolute -right-4 -top-1 w-[64px] h-[56px]">
-        <span className="absolute inset-0" style={{ clipPath: "polygon(100% 0, 100% 100%, 0 0)", background: `url(${photo}) center/cover` }} />
-        <span className="absolute inset-0" style={{ clipPath: "polygon(0 0, 7% 0, 100% 93%, 100% 100%)", background: "#FFFFFF" }} />
-        <span className="absolute right-1.5 top-1.5 w-6 h-6 inline-flex items-center justify-center bg-white" style={{ clipPath: ch(4) }}><Camera className="w-3.5 h-3.5" style={{ color: CARBON }} /></span>
-      </button>
-    );
     return null;
   };
-
-  // 4 · « Sur la carte » : l'image remplace la carte, à sa place, le temps de partager.
-  if (preview && apercu === 4) {
-    return (
-      <div className={`w-full max-w-[360px] grid gap-3 ${className}`} style={{ fontFamily: FONT }}>
-        <span className="justify-self-start px-2.5 py-1 text-sm font-extrabold uppercase tracking-wide text-white" style={{ background: "#4A7C59", clipPath: ch(5) }}>Aperçu · l'image qui part</span>
-        <img src={preview.url} alt="Ta carte Rider en image" className="block w-full h-auto" style={{ clipPath: ch(22) }} />
-        <div className="p-2.5 grid gap-1 justify-items-center" style={{ background: "rgba(26,26,26,0.82)", clipPath: ch(12) }}>
-          {previewActions(true)}
-          <button type="button" onClick={() => setPreview(null)} className="min-h-[44px] text-[15px] font-bold underline underline-offset-4 text-white">Revenir à ma carte</button>
-        </div>
-      </div>
-    );
-  }
 
   return (
     <>
     {previewOverlay()}
     {storyOn && createPortal(
-      <StoryExport ref={storyRef} cadre={cadre} wallpaper={data.wallpaper_url} avatar={profile.avatar_url} name={name} sub={sub} badge={badge} bio={profile.bio}
+      <StoryExport ref={storyRef} wallpaper={data.wallpaper_url} avatar={profile.avatar_url} name={name} sub={sub} badge={badge}
         current={current ?? null} mine={mine} liked={liked} publicUrl={publicUrl} />,
       document.body,
     )}
@@ -446,7 +350,7 @@ const RiderCardStory = ({ data, commentCount = 0, onOpenComments, className = ""
       <div className="relative px-4 pb-3 grid gap-2.5">
         {current?.model && (
           <div className="relative">
-            <p className={`text-[20px] uppercase leading-none ${compact && current.custom_photo_url && [1, 2, 5].includes(photoV) ? "pr-[60px]" : ""}`} style={{ fontFamily: UNB, fontWeight: 900, fontStyle: "italic", letterSpacing: "-0.02em" }}>{current.model.name}</p>
+            <p className={`text-[20px] uppercase leading-none ${compact && current.custom_photo_url && photoV === 2 ? "pr-[60px]" : ""}`} style={{ fontFamily: UNB, fontWeight: 900, fontStyle: "italic", letterSpacing: "-0.02em" }}>{current.model.name}</p>
             <p className="mt-1 text-sm font-bold" style={{ color: current.is_owned ? SOFT : "#FFB4A0" }}>
               {current.is_owned ? (current.nickname ? `« ${current.nickname} »` : "À moi") : "Je kiffe"}
             </p>
