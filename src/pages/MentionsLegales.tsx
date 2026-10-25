@@ -71,6 +71,13 @@ const MentionsLegales = () => {
             <a href="mailto:contact@piecestrottinettes.fr">contact@piecestrottinettes.fr</a>.
           </p>
           <p>
+            Badge rider IA (facultatif) : si vous choisissez de créer un badge à partir d'une photo
+            de vous, cette photo est transmise, avec votre accord explicite, au service d'intelligence
+            artificielle Google Gemini uniquement pour générer le badge. Elle n'est pas conservée par
+            piecestrottinettes.fr : seul le badge que vous choisissez est enregistré comme photo de
+            profil, et vous pouvez le supprimer à tout moment depuis votre garage.
+          </p>
+          <p>
             Responsable du traitement : Di Liegro Nolan Enzo
           </p>
 
