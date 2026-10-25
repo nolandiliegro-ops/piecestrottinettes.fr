@@ -1,0 +1,924 @@
+[
+ {
+  "slug": "chambre-a-air-14x2-125-valve-coudee-65x65-ewheel",
+  "nom": "Chambre à air 14x2.125 valve coudée 65x65° eWheel",
+  "photos": 3,
+  "angles": 3,
+  "groupes": [
+   [
+    0
+   ],
+   [
+    1
+   ],
+   [
+    2
+   ]
+  ],
+  "a_retirer": [],
+  "erreurs": [],
+  "non_detourees": [],
+  "pairs": [
+   {
+    "a": 0,
+    "b": 1,
+    "dhash": 34,
+    "iou": 0.216,
+    "same": false
+   },
+   {
+    "a": 0,
+    "b": 2,
+    "dhash": 26,
+    "iou": 0.256,
+    "same": false
+   },
+   {
+    "a": 1,
+    "b": 2,
+    "dhash": 30,
+    "iou": 0.35,
+    "same": false
+   }
+  ],
+  "verdict": "ok"
+ },
+ {
+  "slug": "pneu-plein-10x2-125-6-1-noir-cityneye",
+  "nom": "Pneu plein 10x2.125-6.1 noir Cityneye",
+  "photos": 3,
+  "angles": 3,
+  "groupes": [
+   [
+    0
+   ],
+   [
+    1
+   ],
+   [
+    2
+   ]
+  ],
+  "a_retirer": [],
+  "erreurs": [],
+  "non_detourees": [],
+  "pairs": [
+   {
+    "a": 0,
+    "b": 1,
+    "dhash": 14,
+    "iou": 0.472,
+    "same": false
+   },
+   {
+    "a": 0,
+    "b": 2,
+    "dhash": 24,
+    "iou": 0.318,
+    "same": false
+   },
+   {
+    "a": 1,
+    "b": 2,
+    "dhash": 24,
+    "iou": 0.17,
+    "same": false
+   }
+  ],
+  "verdict": "ok"
+ },
+ {
+  "slug": "pneu-plein-10x2-125-6-1-ultra-leger-jante-34-mm-lisere-noir-ewheel",
+  "nom": "Pneu plein 10x2.125-6.1 ultra-léger jante 34 mm liseré noir eWheel",
+  "photos": 3,
+  "angles": 3,
+  "groupes": [
+   [
+    0
+   ],
+   [
+    1
+   ],
+   [
+    2
+   ]
+  ],
+  "a_retirer": [],
+  "erreurs": [],
+  "non_detourees": [],
+  "pairs": [
+   {
+    "a": 0,
+    "b": 1,
+    "dhash": 23,
+    "iou": 0.277,
+    "same": false
+   },
+   {
+    "a": 0,
+    "b": 2,
+    "dhash": 20,
+    "iou": 0.513,
+    "same": false
+   },
+   {
+    "a": 1,
+    "b": 2,
+    "dhash": 21,
+    "iou": 0.159,
+    "same": false
+   }
+  ],
+  "verdict": "ok"
+ },
+ {
+  "slug": "pneu-plein-10x2-125-6-1-ultra-leger-jante-34-mm-lisere-rouge-nedong",
+  "nom": "Pneu plein 10x2.125-6.1 ultra-léger jante 34 mm liseré rouge Nedong",
+  "photos": 1,
+  "angles": 1,
+  "groupes": [
+   [
+    0
+   ]
+  ],
+  "a_retirer": [],
+  "erreurs": [],
+  "non_detourees": [],
+  "pairs": [],
+  "verdict": "completer"
+ },
+ {
+  "slug": "pneu-plein-10x2-125-6-1-ultra-leger-jante-34-mm-points-bleus-nedong",
+  "nom": "Pneu plein 10x2.125-6.1 ultra-léger jante 34 mm points bleus Nedong",
+  "photos": 3,
+  "angles": 3,
+  "groupes": [
+   [
+    0
+   ],
+   [
+    1
+   ],
+   [
+    2
+   ]
+  ],
+  "a_retirer": [],
+  "erreurs": [],
+  "non_detourees": [],
+  "pairs": [
+   {
+    "a": 0,
+    "b": 1,
+    "dhash": 17,
+    "iou": 0.306,
+    "same": false
+   },
+   {
+    "a": 0,
+    "b": 2,
+    "dhash": 30,
+    "iou": 0.481,
+    "same": false
+   },
+   {
+    "a": 1,
+    "b": 2,
+    "dhash": 33,
+    "iou": 0.526,
+    "same": false
+   }
+  ],
+  "verdict": "ok"
+ },
+ {
+  "slug": "pneu-plein-10x2-125-6-5-offroad-ultra-leger-jante-44-mm-bleu-nedong",
+  "nom": "Pneu plein 10x2.125-6.5 Offroad ultra-léger jante 44 mm bleu Nedong",
+  "photos": 1,
+  "angles": 1,
+  "groupes": [
+   [
+    0
+   ]
+  ],
+  "a_retirer": [],
+  "erreurs": [],
+  "non_detourees": [],
+  "pairs": [],
+  "verdict": "completer"
+ },
+ {
+  "slug": "pneu-plein-10x2-125-6-5-offroad-ultra-leger-jante-44-mm-rouge-nedong",
+  "nom": "Pneu plein 10x2.125-6.5 Offroad ultra-léger jante 44 mm rouge Nedong",
+  "photos": 2,
+  "angles": 2,
+  "groupes": [
+   [
+    0
+   ],
+   [
+    1
+   ]
+  ],
+  "a_retirer": [],
+  "erreurs": [],
+  "non_detourees": [],
+  "pairs": [
+   {
+    "a": 0,
+    "b": 1,
+    "dhash": 30,
+    "iou": 0.501,
+    "same": false
+   }
+  ],
+  "verdict": "completer"
+ },
+ {
+  "slug": "pneu-plein-10x2-50-6-1-ultra-leger-jante-34-mm-lisere-bleu-nedong",
+  "nom": "Pneu plein 10x2.50-6.1 ultra-léger jante 34 mm liseré bleu Nedong",
+  "photos": 4,
+  "angles": 4,
+  "groupes": [
+   [
+    0
+   ],
+   [
+    1
+   ],
+   [
+    2
+   ],
+   [
+    3
+   ]
+  ],
+  "a_retirer": [],
+  "erreurs": [],
+  "non_detourees": [],
+  "pairs": [
+   {
+    "a": 0,
+    "b": 1,
+    "dhash": 20,
+    "iou": 0.217,
+    "same": false
+   },
+   {
+    "a": 0,
+    "b": 2,
+    "dhash": 18,
+    "iou": 0.638,
+    "same": false
+   },
+   {
+    "a": 0,
+    "b": 3,
+    "dhash": 27,
+    "iou": 0.485,
+    "same": false
+   },
+   {
+    "a": 1,
+    "b": 2,
+    "dhash": 18,
+    "iou": 0.158,
+    "same": false
+   },
+   {
+    "a": 1,
+    "b": 3,
+    "dhash": 27,
+    "iou": 0.531,
+    "same": false
+   },
+   {
+    "a": 2,
+    "b": 3,
+    "dhash": 27,
+    "iou": 0.309,
+    "same": false
+   }
+  ],
+  "verdict": "ok"
+ },
+ {
+  "slug": "pneu-plein-10x2-50-6-1-ultra-leger-jante-34-mm-lisere-noir-ewheel",
+  "nom": "Pneu plein 10x2.50-6.1 ultra-léger jante 34 mm liseré noir eWheel",
+  "photos": 3,
+  "angles": 3,
+  "groupes": [
+   [
+    0
+   ],
+   [
+    1
+   ],
+   [
+    2
+   ]
+  ],
+  "a_retirer": [],
+  "erreurs": [],
+  "non_detourees": [],
+  "pairs": [
+   {
+    "a": 0,
+    "b": 1,
+    "dhash": 23,
+    "iou": 0.28,
+    "same": false
+   },
+   {
+    "a": 0,
+    "b": 2,
+    "dhash": 22,
+    "iou": 0.509,
+    "same": false
+   },
+   {
+    "a": 1,
+    "b": 2,
+    "dhash": 21,
+    "iou": 0.156,
+    "same": false
+   }
+  ],
+  "verdict": "ok"
+ },
+ {
+  "slug": "pneu-plein-10x2-50-6-5-noir-cityneye",
+  "nom": "Pneu plein 10x2.50-6.5 noir Cityneye",
+  "photos": 4,
+  "angles": 4,
+  "groupes": [
+   [
+    0
+   ],
+   [
+    1
+   ],
+   [
+    2
+   ],
+   [
+    3
+   ]
+  ],
+  "a_retirer": [],
+  "erreurs": [],
+  "non_detourees": [],
+  "pairs": [
+   {
+    "a": 0,
+    "b": 1,
+    "dhash": 14,
+    "iou": 0.455,
+    "same": false
+   },
+   {
+    "a": 0,
+    "b": 2,
+    "dhash": 23,
+    "iou": 0.324,
+    "same": false
+   },
+   {
+    "a": 0,
+    "b": 3,
+    "dhash": 35,
+    "iou": 0.547,
+    "same": false
+   },
+   {
+    "a": 1,
+    "b": 2,
+    "dhash": 25,
+    "iou": 0.169,
+    "same": false
+   },
+   {
+    "a": 1,
+    "b": 3,
+    "dhash": 35,
+    "iou": 0.494,
+    "same": false
+   },
+   {
+    "a": 2,
+    "b": 3,
+    "dhash": 34,
+    "iou": 0.314,
+    "same": false
+   }
+  ],
+  "verdict": "ok"
+ },
+ {
+  "slug": "pneu-plein-10x2-50-6-5-offroad-ultra-leger-jante-44-mm-bleu-nedong",
+  "nom": "Pneu plein 10x2.50-6.5 Offroad ultra-léger jante 44 mm bleu Nedong",
+  "photos": 4,
+  "angles": 4,
+  "groupes": [
+   [
+    0
+   ],
+   [
+    1
+   ],
+   [
+    2
+   ],
+   [
+    3
+   ]
+  ],
+  "a_retirer": [],
+  "erreurs": [],
+  "non_detourees": [],
+  "pairs": [
+   {
+    "a": 0,
+    "b": 1,
+    "dhash": 21,
+    "iou": 0.339,
+    "same": false
+   },
+   {
+    "a": 0,
+    "b": 2,
+    "dhash": 14,
+    "iou": 0.434,
+    "same": false
+   },
+   {
+    "a": 0,
+    "b": 3,
+    "dhash": 29,
+    "iou": 0.539,
+    "same": false
+   },
+   {
+    "a": 1,
+    "b": 2,
+    "dhash": 19,
+    "iou": 0.156,
+    "same": false
+   },
+   {
+    "a": 1,
+    "b": 3,
+    "dhash": 30,
+    "iou": 0.469,
+    "same": false
+   },
+   {
+    "a": 2,
+    "b": 3,
+    "dhash": 23,
+    "iou": 0.319,
+    "same": false
+   }
+  ],
+  "verdict": "ok"
+ },
+ {
+  "slug": "pneu-plein-10x2-50-6-5-ultra-leger-jante-44-mm-lisere-bleu-nedong",
+  "nom": "Pneu plein 10x2.50-6.5 ultra-léger jante 44 mm liseré bleu Nedong",
+  "photos": 4,
+  "angles": 4,
+  "groupes": [
+   [
+    0
+   ],
+   [
+    1
+   ],
+   [
+    2
+   ],
+   [
+    3
+   ]
+  ],
+  "a_retirer": [],
+  "erreurs": [],
+  "non_detourees": [],
+  "pairs": [
+   {
+    "a": 0,
+    "b": 1,
+    "dhash": 21,
+    "iou": 0.245,
+    "same": false
+   },
+   {
+    "a": 0,
+    "b": 2,
+    "dhash": 18,
+    "iou": 0.58,
+    "same": false
+   },
+   {
+    "a": 0,
+    "b": 3,
+    "dhash": 26,
+    "iou": 0.502,
+    "same": false
+   },
+   {
+    "a": 1,
+    "b": 2,
+    "dhash": 17,
+    "iou": 0.163,
+    "same": false
+   },
+   {
+    "a": 1,
+    "b": 3,
+    "dhash": 29,
+    "iou": 0.536,
+    "same": false
+   },
+   {
+    "a": 2,
+    "b": 3,
+    "dhash": 28,
+    "iou": 0.319,
+    "same": false
+   }
+  ],
+  "verdict": "ok"
+ },
+ {
+  "slug": "pneu-plein-10x2-50-7-noir-cityneye",
+  "nom": "Pneu plein 10x2.50-7 noir Cityneye",
+  "photos": 3,
+  "angles": 3,
+  "groupes": [
+   [
+    0
+   ],
+   [
+    1
+   ],
+   [
+    2
+   ]
+  ],
+  "a_retirer": [],
+  "erreurs": [],
+  "non_detourees": [],
+  "pairs": [
+   {
+    "a": 0,
+    "b": 1,
+    "dhash": 14,
+    "iou": 0.468,
+    "same": false
+   },
+   {
+    "a": 0,
+    "b": 2,
+    "dhash": 24,
+    "iou": 0.319,
+    "same": false
+   },
+   {
+    "a": 1,
+    "b": 2,
+    "dhash": 24,
+    "iou": 0.169,
+    "same": false
+   }
+  ],
+  "verdict": "ok"
+ },
+ {
+  "slug": "pneu-plein-10x2-50-offroad-ultra-leger-jante-44-mm-jaune-nedong",
+  "nom": "Pneu plein 10x2.50 Offroad ultra-léger jante 44 mm jaune Nedong",
+  "photos": 4,
+  "angles": 4,
+  "groupes": [
+   [
+    0
+   ],
+   [
+    1
+   ],
+   [
+    2
+   ],
+   [
+    3
+   ]
+  ],
+  "a_retirer": [],
+  "erreurs": [],
+  "non_detourees": [],
+  "pairs": [
+   {
+    "a": 0,
+    "b": 1,
+    "dhash": 22,
+    "iou": 0.344,
+    "same": false
+   },
+   {
+    "a": 0,
+    "b": 2,
+    "dhash": 14,
+    "iou": 0.435,
+    "same": false
+   },
+   {
+    "a": 0,
+    "b": 3,
+    "dhash": 28,
+    "iou": 0.543,
+    "same": false
+   },
+   {
+    "a": 1,
+    "b": 2,
+    "dhash": 20,
+    "iou": 0.159,
+    "same": false
+   },
+   {
+    "a": 1,
+    "b": 3,
+    "dhash": 30,
+    "iou": 0.472,
+    "same": false
+   },
+   {
+    "a": 2,
+    "b": 3,
+    "dhash": 22,
+    "iou": 0.321,
+    "same": false
+   }
+  ],
+  "verdict": "ok"
+ },
+ {
+  "slug": "pneu-plein-10x2-75-6-5-offroad-ultra-leger-jante-55-mm-lisere-rouge-ewheel",
+  "nom": "Pneu plein 10x2.75-6.5 Offroad ultra-léger jante 55 mm liseré rouge eWheel",
+  "photos": 3,
+  "angles": 3,
+  "groupes": [
+   [
+    0
+   ],
+   [
+    1
+   ],
+   [
+    2
+   ]
+  ],
+  "a_retirer": [],
+  "erreurs": [],
+  "non_detourees": [],
+  "pairs": [
+   {
+    "a": 0,
+    "b": 1,
+    "dhash": 24,
+    "iou": 0.356,
+    "same": false
+   },
+   {
+    "a": 0,
+    "b": 2,
+    "dhash": 20,
+    "iou": 0.543,
+    "same": false
+   },
+   {
+    "a": 1,
+    "b": 2,
+    "dhash": 24,
+    "iou": 0.182,
+    "same": false
+   }
+  ],
+  "verdict": "ok"
+ },
+ {
+  "slug": "pneu-plein-10x3-6-tricolore-cityneye",
+  "nom": "Pneu plein 10x3-6 tricolore Cityneye",
+  "photos": 4,
+  "angles": 4,
+  "groupes": [
+   [
+    0
+   ],
+   [
+    1
+   ],
+   [
+    2
+   ],
+   [
+    3
+   ]
+  ],
+  "a_retirer": [],
+  "erreurs": [],
+  "non_detourees": [],
+  "pairs": [
+   {
+    "a": 0,
+    "b": 1,
+    "dhash": 12,
+    "iou": 0.472,
+    "same": false
+   },
+   {
+    "a": 0,
+    "b": 2,
+    "dhash": 23,
+    "iou": 0.318,
+    "same": false
+   },
+   {
+    "a": 0,
+    "b": 3,
+    "dhash": 34,
+    "iou": 0.548,
+    "same": false
+   },
+   {
+    "a": 1,
+    "b": 2,
+    "dhash": 25,
+    "iou": 0.17,
+    "same": false
+   },
+   {
+    "a": 1,
+    "b": 3,
+    "dhash": 34,
+    "iou": 0.494,
+    "same": false
+   },
+   {
+    "a": 2,
+    "b": 3,
+    "dhash": 33,
+    "iou": 0.314,
+    "same": false
+   }
+  ],
+  "verdict": "ok"
+ },
+ {
+  "slug": "pneu-plein-230x50-offroad-ultra-leger-lisere-rouge-ewheel",
+  "nom": "Pneu plein 230x50 Offroad ultra-léger liseré rouge eWheel",
+  "photos": 3,
+  "angles": 3,
+  "groupes": [
+   [
+    0
+   ],
+   [
+    1
+   ],
+   [
+    2
+   ]
+  ],
+  "a_retirer": [],
+  "erreurs": [],
+  "non_detourees": [],
+  "pairs": [
+   {
+    "a": 0,
+    "b": 1,
+    "dhash": 24,
+    "iou": 0.149,
+    "same": false
+   },
+   {
+    "a": 0,
+    "b": 2,
+    "dhash": 28,
+    "iou": 0.34,
+    "same": false
+   },
+   {
+    "a": 1,
+    "b": 2,
+    "dhash": 20,
+    "iou": 0.153,
+    "same": false
+   }
+  ],
+  "verdict": "ok"
+ },
+ {
+  "slug": "pneu-plein-60-70-6-5-offroad-ultra-leger-jante-44-mm-lisere-rouge-ewheel",
+  "nom": "Pneu plein 60/70-6.5 Offroad ultra-léger jante 44 mm liseré rouge eWheel",
+  "photos": 2,
+  "angles": 2,
+  "groupes": [
+   [
+    0
+   ],
+   [
+    1
+   ]
+  ],
+  "a_retirer": [],
+  "erreurs": [],
+  "non_detourees": [],
+  "pairs": [
+   {
+    "a": 0,
+    "b": 1,
+    "dhash": 21,
+    "iou": 0.294,
+    "same": false
+   }
+  ],
+  "verdict": "completer"
+ },
+ {
+  "slug": "pneu-plein-60-70-7-offroad-ultra-leger-jante-50-mm-lisere-rouge-ewheel",
+  "nom": "Pneu plein 60/70-7 Offroad ultra-léger jante 50 mm liseré rouge eWheel",
+  "photos": 3,
+  "angles": 3,
+  "groupes": [
+   [
+    0
+   ],
+   [
+    1
+   ],
+   [
+    2
+   ]
+  ],
+  "a_retirer": [],
+  "erreurs": [],
+  "non_detourees": [],
+  "pairs": [
+   {
+    "a": 0,
+    "b": 1,
+    "dhash": 24,
+    "iou": 0.157,
+    "same": false
+   },
+   {
+    "a": 0,
+    "b": 2,
+    "dhash": 30,
+    "iou": 0.309,
+    "same": false
+   },
+   {
+    "a": 1,
+    "b": 2,
+    "dhash": 20,
+    "iou": 0.169,
+    "same": false
+   }
+  ],
+  "verdict": "ok"
+ },
+ {
+  "slug": "pneu-plein-8-5x2-5-6-1-ultra-leger-jante-58-mm-dualtron-mini-lisere-rouge-ewheel",
+  "nom": "Pneu plein 8.5x2.5-6.1 ultra-léger jante 58 mm Dualtron Mini liseré rouge eWheel",
+  "photos": 1,
+  "angles": 1,
+  "groupes": [
+   [
+    0
+   ]
+  ],
+  "a_retirer": [],
+  "erreurs": [],
+  "non_detourees": [],
+  "pairs": [],
+  "verdict": "completer"
+ },
+ {
+  "slug": "pneu-plein-8-5x2-6-1-alveole-jante-34-mm-rouge",
+  "nom": "Pneu plein 8.5x2-6.1 alvéolé jante 34 mm rouge",
+  "photos": 1,
+  "angles": 1,
+  "groupes": [
+   [
+    0
+   ]
+  ],
+  "a_retirer": [],
+  "erreurs": [],
+  "non_detourees": [],
+  "pairs": [],
+  "verdict": "completer"
+ }
+]
