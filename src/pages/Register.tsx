@@ -11,6 +11,7 @@ import { z } from 'zod';
 import { useToast } from '@/hooks/use-toast';
 import { useBrandAsset } from '@/hooks/useBrandAssets';
 import SEO from '@/components/SEO';
+import AuthNouvelle, { readAuthLook, POINTS_BIENVENUE } from '@/components/auth/AuthNouvelle';
 
 const registerSchema = z.object({
   displayName: z.string().trim().min(2, { message: "Nom minimum 2 caractères" }).max(50, { message: "Nom maximum 50 caractères" }),
@@ -44,6 +45,8 @@ const Register = () => {
   const { toast } = useToast();
 
   const returnTo = searchParams.get('returnTo') || '/garage';
+  // 26/10 : nouvelles compositions aux couleurs du site, `?auth=1..5` ; 0 = cette page.
+  const [look] = useState(readAuthLook);
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -84,7 +87,7 @@ const Register = () => {
 
     toast({
       title: "Bienvenue ! 🎉",
-      description: "Votre compte a été créé avec 100 points de bienvenue !",
+      description: `Ta carte Rider est créée, avec ${POINTS_BIENVENUE} points de bienvenue !`, // 26/10 : 200 en base (handle_new_user), pas 100
     });
     navigate(returnTo);
   };
@@ -103,6 +106,16 @@ const Register = () => {
       });
     }
   };
+
+  if (look) return (
+    <>
+      <SEO noindex title="Créer ma carte Rider" description="Crée ta carte Rider piecestrottinettes.fr : ton garage, ton code -20 %, ton badge IA." />
+      <AuthNouvelle mode="register" look={look} email={email} setEmail={setEmail} password={password} setPassword={setPassword}
+        displayName={displayName} setDisplayName={setDisplayName} confirmPassword={confirmPassword} setConfirmPassword={setConfirmPassword}
+        marketingConsent={marketingConsent} setMarketingConsent={setMarketingConsent}
+        errors={errors} isLoading={isLoading} isGoogleLoading={isGoogleLoading} onSubmit={handleSubmit} onGoogle={handleGoogleSignIn} returnTo={returnTo} />
+    </>
+  );
 
   return (
     <div className="min-h-screen bg-greige flex flex-col">
@@ -138,7 +151,7 @@ const Register = () => {
               <Gift className="w-5 h-5 text-mineral" />
             </div>
             <div>
-              <p className="font-semibold text-carbon">100 Points Offerts</p>
+              <p className="font-semibold text-carbon">{POINTS_BIENVENUE} Points Offerts</p>
               <p className="text-sm text-carbon/60">Bonus de bienvenue à l'inscription</p>
             </div>
           </div>

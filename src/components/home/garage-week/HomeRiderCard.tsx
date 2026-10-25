@@ -11,6 +11,7 @@ import { useRiderCardData } from "@/hooks/useRiderCardData";
 import { useCardComments } from "@/hooks/useRiderCardComments";
 import type { RiderBundle } from "../GarageOfTheWeekSection";
 import BadgeIaTeaser, { readBadgeIaVariant } from "@/components/launch/BadgeIaTeaser";
+import PortesGarage, { readPortes } from "./PortesGarage";
 
 const UNB = "'Unbounded', sans-serif";
 const FONT = "'Plus Jakarta Sans', sans-serif";
@@ -22,6 +23,8 @@ const HomeRiderCard = ({ riders, isAuthenticated }: { riders: RiderBundle[]; isA
   const [i, setI] = useState(0);
   // 25/10 : « ton badge IA » pour donner envie de s'inscrire (?badgeia=1..5 ; 0 = rien).
   const [badgeIa] = useState(readBadgeIaVariant);
+  // 26/10 : « trop de texte… juste les boutons, de la façon du garage » (?portes=1..5 ; 0 = paragraphe + étiquettes).
+  const [portes] = useState(readPortes);
   const montrerBadgeIa = badgeIa.v > 0 && (!isAuthenticated || badgeIa.force);
   const rider = riders[Math.min(i, Math.max(0, riders.length - 1))];
   const { data } = useRiderCardData({ username: rider?.username ?? undefined });
@@ -43,6 +46,7 @@ const HomeRiderCard = ({ riders, isAuthenticated }: { riders: RiderBundle[]; isA
           <h2 id="garage-of-the-week-title" className="mt-2 text-[34px] sm:text-6xl uppercase leading-[0.95]" style={{ fontFamily: UNB, fontWeight: 900, fontStyle: "italic", letterSpacing: "-0.03em" }}>
             Ton garage,<br />ton QG.
           </h2>
+          {portes > 0 ? <div className="mt-5"><PortesGarage v={portes} auth={isAuthenticated} /></div> : (<>
           <p className="mt-4 text-base sm:text-lg max-w-lg" style={{ fontFamily: FONT, color: "rgba(255,255,255,0.88)" }}>
             Ta trott et les pièces qui vont dessus, tes commandes suivies, SKOT qui répond à tes questions. Et ta carte Rider à partager en story.
           </p>
@@ -51,6 +55,7 @@ const HomeRiderCard = ({ riders, isAuthenticated }: { riders: RiderBundle[]; isA
               <li key={t} className="px-3 py-1.5 text-sm font-bold text-white" style={{ background: "rgba(26,26,26,0.72)", boxShadow: "inset 0 0 0 1px rgba(255,255,255,0.25)" }}>{t}</li>
             ))}
           </ul>
+          </>)}
           {montrerBadgeIa && badgeIa.v !== 3 && <div className="mt-4 max-w-lg"><BadgeIaTeaser v={badgeIa.v} dark /></div>}
           <div className="mt-6 flex flex-wrap items-center gap-3">
             <Link to={isAuthenticated ? "/garage" : "/register"} className="inline-flex items-center gap-3 min-h-[56px] px-5 text-[15px] font-extrabold uppercase" style={{ fontFamily: FONT, background: "#FFFFFF", color: CARBON, clipPath: cut(10) }}>
@@ -64,7 +69,7 @@ const HomeRiderCard = ({ riders, isAuthenticated }: { riders: RiderBundle[]; isA
           </div>
           {!isAuthenticated && (
             <p className="mt-3 text-sm font-semibold" style={{ fontFamily: FONT, color: "rgba(255,255,255,0.85)" }}>
-              Inscription = ton code RIDER : -20 % sur ta première commande, jusqu'à 30 € (hors trottinettes et batteries).
+              {portes > 0 ? "−20 % sur ta 1re commande avec ton code RIDER." : "Inscription = ton code RIDER : -20 % sur ta première commande, jusqu'à 30 € (hors trottinettes et batteries)."}
             </p>
           )}
         </div>

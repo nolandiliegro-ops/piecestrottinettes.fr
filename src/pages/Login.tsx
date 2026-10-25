@@ -9,6 +9,7 @@ import { z } from 'zod';
 import { useToast } from '@/hooks/use-toast';
 import { useBrandAsset } from '@/hooks/useBrandAssets';
 import SEO from '@/components/SEO';
+import AuthNouvelle, { readAuthLook } from '@/components/auth/AuthNouvelle';
 
 const loginSchema = z.object({
   email: z.string().trim().email({ message: "Email invalide" }),
@@ -29,6 +30,8 @@ const Login = () => {
   const { toast } = useToast();
 
   const returnTo = searchParams.get('returnTo') || '/garage';
+  // 26/10 : nouvelles compositions aux couleurs du site, `?auth=1..5` ; 0 = cette page.
+  const [look] = useState(readAuthLook);
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -82,6 +85,14 @@ const Login = () => {
       });
     }
   };
+
+  if (look) return (
+    <>
+      <SEO noindex title="Connexion" description="Connectez-vous à votre compte Pièces Trottinettes." />
+      <AuthNouvelle mode="login" look={look} email={email} setEmail={setEmail} password={password} setPassword={setPassword}
+        errors={errors} isLoading={isLoading} isGoogleLoading={isGoogleLoading} onSubmit={handleSubmit} onGoogle={handleGoogleSignIn} returnTo={returnTo} />
+    </>
+  );
 
   return (
     <div className="min-h-screen bg-greige flex flex-col">
