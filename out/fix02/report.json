@@ -1,0 +1,3872 @@
+[
+ {
+  "slug": "chambre-a-air-14x2-125-valve-coudee-65x65-ewheel",
+  "i": 0,
+  "url": "https://d2j6dbq0eux0bg.cloudfront.net/images/68019033/products/873635923/6349334197.webp",
+  "verdict": "WARN",
+  "reasons": [
+   "produit minuscule dans le cadre"
+  ],
+  "plus": {
+   "verdict": "WARN",
+   "reasons": [
+    "produit minuscule dans le cadre"
+   ],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0,
+   "fill": 0.078
+  },
+  "size": [
+   864,
+   864
+  ],
+  "error": null
+ },
+ {
+  "slug": "chambre-a-air-14x2-125-valve-coudee-65x65-ewheel",
+  "i": 1,
+  "url": "https://d2j6dbq0eux0bg.cloudfront.net/images/68019033/products/873635923/6349334199.webp",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0,
+   "fill": 0.558
+  },
+  "size": [
+   135,
+   191
+  ],
+  "error": null
+ },
+ {
+  "slug": "chambre-a-air-14x2-125-valve-coudee-65x65-ewheel",
+  "i": 2,
+  "url": "https://d2j6dbq0eux0bg.cloudfront.net/images/68019033/products/873635923/6349333973.webp",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "basse définition",
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0,
+   "fill": 0.75
+  },
+  "size": [
+   83,
+   137
+  ],
+  "error": null
+ },
+ {
+  "slug": "chambre-a-air-14x2-125-valve-coudee-65x65-ewheel",
+  "i": 3,
+  "url": "https://d2j6dbq0eux0bg.cloudfront.net/images/68019033/products/873635923/6349334235.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition",
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0,
+   "fill": 0.833
+  },
+  "size": [
+   341,
+   341
+  ],
+  "error": null
+ },
+ {
+  "slug": "chambre-a-air-14x2-125-valve-coudee-65x65-ewheel",
+  "i": 4,
+  "url": "https://d2j6dbq0eux0bg.cloudfront.net/images/68019033/products/873635923/6349333703.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition",
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.032,
+   "fill": 0.787
+  },
+  "size": [
+   246,
+   350
+  ],
+  "error": null
+ },
+ {
+  "slug": "chambre-a-air-14x2-125-valve-coudee-65x65-ewheel",
+  "i": 5,
+  "url": "https://ewheel.es/cdn/shop/files/8435764421471.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0,
+   "fill": 0.685
+  },
+  "size": [
+   744,
+   763
+  ],
+  "error": null
+ },
+ {
+  "slug": "chambre-a-air-14x2-125-valve-coudee-65x65-ewheel",
+  "i": 6,
+  "url": "https://ewheel.es/cdn/shop/files/8435764421471_1.jpg",
+  "verdict": "ERROR",
+  "reasons": [],
+  "plus": null,
+  "size": null,
+  "error": "Input buffer has corrupt header: glib: XML does not have <svg> root"
+ },
+ {
+  "slug": "chambre-a-air-14x2-125-valve-coudee-65x65-ewheel",
+  "i": 7,
+  "url": "https://ewheel.es/cdn/shop/files/8435764421471_2.jpg",
+  "verdict": "ERROR",
+  "reasons": [],
+  "plus": null,
+  "size": null,
+  "error": "Input buffer has corrupt header: glib: XML does not have <svg> root"
+ },
+ {
+  "slug": "chambre-a-air-14x2-125-valve-coudee-65x65-ewheel",
+  "i": 8,
+  "url": "https://ewheel.es/cdn/shop/files/8435764421471_3.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.03,
+   "fill": 0.584
+  },
+  "size": [
+   663,
+   696
+  ],
+  "error": null
+ },
+ {
+  "slug": "chambre-a-air-14x2-125-valve-coudee-65x65-ewheel",
+  "i": 9,
+  "url": "https://ewheel.es/cdn/shop/files/8435764421471_4.jpg",
+  "verdict": "ERROR",
+  "reasons": [],
+  "plus": null,
+  "size": null,
+  "error": "Input buffer has corrupt header: glib: XML does not have <svg> root"
+ },
+ {
+  "slug": "pneu-plein-10x2-125-6-1-noir-cityneye",
+  "i": 0,
+  "url": "https://www.imooving.com/10554-large_default/pneu-plein-10x2-125-6-1-cityneye-noir.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0,
+   "fill": 0.824
+  },
+  "size": [
+   600,
+   785
+  ],
+  "error": null
+ },
+ {
+  "slug": "pneu-plein-10x2-125-6-1-noir-cityneye",
+  "i": 1,
+  "url": "https://www.imooving.com/10555-large_default/pneu-plein-10x2-125-6-1-cityneye-noir.jpg",
+  "verdict": "FAIL",
+  "reasons": [
+   "cadrage serré",
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux"
+   ],
+   "parts": 3,
+   "second": 0.365,
+   "vivid": 0,
+   "fill": 0.853
+  },
+  "size": [
+   804,
+   833
+  ],
+  "error": null
+ },
+ {
+  "slug": "pneu-plein-10x2-125-6-1-noir-cityneye",
+  "i": 2,
+  "url": "https://www.imooving.com/10556-large_default/pneu-plein-10x2-125-6-1-cityneye-noir.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0,
+   "fill": 0.851
+  },
+  "size": [
+   795,
+   792
+  ],
+  "error": null
+ },
+ {
+  "slug": "pneu-plein-10x2-125-6-1-noir-cityneye",
+  "i": 3,
+  "url": "https://www.imooving.com/10557-large_default/pneu-plein-10x2-125-6-1-cityneye-noir.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition",
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0,
+   "fill": 0.716
+  },
+  "size": [
+   284,
+   793
+  ],
+  "error": null
+ },
+ {
+  "slug": "pneu-plein-10x2-125-6-1-noir-cityneye",
+  "i": 4,
+  "url": "https://www.imooving.com/10558-large_default/pneu-plein-10x2-125-6-1-cityneye-noir.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0,
+   "fill": 0.853
+  },
+  "size": [
+   821,
+   792
+  ],
+  "error": null
+ },
+ {
+  "slug": "pneu-plein-10x2-125-6-1-noir-cityneye",
+  "i": 5,
+  "url": "https://ewheel.es/cdn/shop/files/8435764431319.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0,
+   "fill": 0.824
+  },
+  "size": [
+   600,
+   784
+  ],
+  "error": null
+ },
+ {
+  "slug": "pneu-plein-10x2-125-6-1-noir-cityneye",
+  "i": 6,
+  "url": "https://ewheel.es/cdn/shop/files/8435764431319_1.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0,
+   "fill": 0.846
+  },
+  "size": [
+   793,
+   792
+  ],
+  "error": null
+ },
+ {
+  "slug": "pneu-plein-10x2-125-6-1-noir-cityneye",
+  "i": 7,
+  "url": "https://ewheel.es/cdn/shop/files/8435764431319_2.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition",
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0,
+   "fill": 0.716
+  },
+  "size": [
+   285,
+   793
+  ],
+  "error": null
+ },
+ {
+  "slug": "pneu-plein-10x2-125-6-1-noir-cityneye",
+  "i": 8,
+  "url": "https://ewheel.es/cdn/shop/files/8435764431319_3.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0,
+   "fill": 0.853
+  },
+  "size": [
+   821,
+   792
+  ],
+  "error": null
+ },
+ {
+  "slug": "pneu-plein-10x2-125-6-1-noir-cityneye",
+  "i": 9,
+  "url": "https://ewheel.es/cdn/shop/files/8435764431319_4.jpg",
+  "verdict": "FAIL",
+  "reasons": [
+   "cadrage serré",
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux"
+   ],
+   "parts": 3,
+   "second": 0.365,
+   "vivid": 0.001,
+   "fill": 0.77
+  },
+  "size": [
+   864,
+   864
+  ],
+  "error": null
+ },
+ {
+  "slug": "pneu-plein-10x2-125-6-1-ultra-leger-jante-34-mm-lisere-noir-ewheel",
+  "i": 0,
+  "url": "https://www.imooving.com/18029-large_default/pneu-plein-ultra-leger-10x2125-61-b34.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition",
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0,
+   "fill": 0.807
+  },
+  "size": [
+   452,
+   740
+  ],
+  "error": null
+ },
+ {
+  "slug": "pneu-plein-10x2-125-6-1-ultra-leger-jante-34-mm-lisere-noir-ewheel",
+  "i": 1,
+  "url": "https://www.imooving.com/18030-large_default/pneu-plein-ultra-leger-10x2125-61-b34.jpg",
+  "verdict": "FAIL",
+  "reasons": [
+   "cadrage serré",
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux"
+   ],
+   "parts": 3,
+   "second": 0.368,
+   "vivid": 0,
+   "fill": 0.776
+  },
+  "size": [
+   856,
+   833
+  ],
+  "error": null
+ },
+ {
+  "slug": "pneu-plein-10x2-125-6-1-ultra-leger-jante-34-mm-lisere-noir-ewheel",
+  "i": 2,
+  "url": "https://www.imooving.com/18031-large_default/pneu-plein-ultra-leger-10x2125-61-b34.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0,
+   "fill": 0.846
+  },
+  "size": [
+   785,
+   786
+  ],
+  "error": null
+ },
+ {
+  "slug": "pneu-plein-10x2-125-6-1-ultra-leger-jante-34-mm-lisere-noir-ewheel",
+  "i": 3,
+  "url": "https://www.imooving.com/18032-large_default/pneu-plein-ultra-leger-10x2125-61-b34.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition",
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0,
+   "fill": 0.707
+  },
+  "size": [
+   277,
+   807
+  ],
+  "error": null
+ },
+ {
+  "slug": "pneu-plein-10x2-125-6-1-ultra-leger-jante-34-mm-lisere-noir-ewheel",
+  "i": 4,
+  "url": "https://www.imooving.com/18033-large_default/pneu-plein-ultra-leger-10x2125-61-b34.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0,
+   "fill": 0.849
+  },
+  "size": [
+   744,
+   726
+  ],
+  "error": null
+ },
+ {
+  "slug": "pneu-plein-10x2-125-6-1-ultra-leger-jante-34-mm-lisere-noir-ewheel",
+  "i": 5,
+  "url": "https://ewheel.es/cdn/shop/files/8435764420931.jpg",
+  "verdict": "ERROR",
+  "reasons": [],
+  "plus": null,
+  "size": null,
+  "error": "Input buffer has corrupt header: glib: XML does not have <svg> root"
+ },
+ {
+  "slug": "pneu-plein-10x2-125-6-1-ultra-leger-jante-34-mm-lisere-noir-ewheel",
+  "i": 6,
+  "url": "https://ewheel.es/cdn/shop/files/8435764420931_1.jpg",
+  "verdict": "ERROR",
+  "reasons": [],
+  "plus": null,
+  "size": null,
+  "error": "Input buffer has corrupt header: glib: XML does not have <svg> root"
+ },
+ {
+  "slug": "pneu-plein-10x2-125-6-1-ultra-leger-jante-34-mm-lisere-noir-ewheel",
+  "i": 7,
+  "url": "https://ewheel.es/cdn/shop/files/8435764420931_2.jpg",
+  "verdict": "ERROR",
+  "reasons": [],
+  "plus": null,
+  "size": null,
+  "error": "Input buffer has corrupt header: glib: XML does not have <svg> root"
+ },
+ {
+  "slug": "pneu-plein-10x2-125-6-1-ultra-leger-jante-34-mm-lisere-noir-ewheel",
+  "i": 8,
+  "url": "https://ewheel.es/cdn/shop/files/8435764420931_3.jpg",
+  "verdict": "ERROR",
+  "reasons": [],
+  "plus": null,
+  "size": null,
+  "error": "Input buffer has corrupt header: glib: XML does not have <svg> root"
+ },
+ {
+  "slug": "pneu-plein-10x2-125-6-1-ultra-leger-jante-34-mm-lisere-noir-ewheel",
+  "i": 9,
+  "url": "https://ewheel.es/cdn/shop/files/8435764420931_4.jpg",
+  "verdict": "ERROR",
+  "reasons": [],
+  "plus": null,
+  "size": null,
+  "error": "Input buffer has corrupt header: glib: XML does not have <svg> root"
+ },
+ {
+  "slug": "pneu-plein-10x2-125-6-1-ultra-leger-jante-34-mm-lisere-rouge-nedong",
+  "i": 0,
+  "url": "https://d2j6dbq0eux0bg.cloudfront.net/images/68019033/3688903520.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.055,
+   "fill": 0.554
+  },
+  "size": [
+   864,
+   864
+  ],
+  "error": null
+ },
+ {
+  "slug": "pneu-plein-10x2-125-6-1-ultra-leger-jante-34-mm-lisere-rouge-nedong",
+  "i": 1,
+  "url": "https://d2j6dbq0eux0bg.cloudfront.net/images/68019033/3688903522.jpg",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "basse définition",
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.048,
+   "fill": 0.554
+  },
+  "size": [
+   432,
+   432
+  ],
+  "error": null
+ },
+ {
+  "slug": "pneu-plein-10x2-125-6-1-ultra-leger-jante-34-mm-lisere-rouge-nedong",
+  "i": 2,
+  "url": "https://d2j6dbq0eux0bg.cloudfront.net/images/68019033/3688899023.jpg",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "basse définition",
+   "cadrage serré",
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+   ],
+   "parts": 2,
+   "second": 0.036,
+   "vivid": 0.004,
+   "fill": 0.829
+  },
+  "size": [
+   415,
+   337
+  ],
+  "error": null
+ },
+ {
+  "slug": "pneu-plein-10x2-125-6-1-ultra-leger-jante-34-mm-lisere-rouge-nedong",
+  "i": 3,
+  "url": "https://d2j6dbq0eux0bg.cloudfront.net/images/68019033/3688736997.jpg",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "basse définition",
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.051,
+   "fill": 0.841
+  },
+  "size": [
+   432,
+   339
+  ],
+  "error": null
+ },
+ {
+  "slug": "pneu-plein-10x2-125-6-1-ultra-leger-jante-34-mm-lisere-rouge-nedong",
+  "i": 4,
+  "url": "https://ewheel.es/cdn/shop/files/7427251899178.jpg",
+  "verdict": "ERROR",
+  "reasons": [],
+  "plus": null,
+  "size": null,
+  "error": "Input buffer has corrupt header: glib: XML does not have <svg> root"
+ },
+ {
+  "slug": "pneu-plein-10x2-125-6-1-ultra-leger-jante-34-mm-lisere-rouge-nedong",
+  "i": 5,
+  "url": "https://ewheel.es/cdn/shop/files/7427251899178_1.jpg",
+  "verdict": "ERROR",
+  "reasons": [],
+  "plus": null,
+  "size": null,
+  "error": "Input buffer has corrupt header: glib: XML does not have <svg> root"
+ },
+ {
+  "slug": "pneu-plein-10x2-125-6-1-ultra-leger-jante-34-mm-lisere-rouge-nedong",
+  "i": 6,
+  "url": "https://ewheel.es/cdn/shop/files/7427251899178_2.jpg",
+  "verdict": "ERROR",
+  "reasons": [],
+  "plus": null,
+  "size": null,
+  "error": "Input buffer has corrupt header: glib: XML does not have <svg> root"
+ },
+ {
+  "slug": "pneu-plein-10x2-125-6-1-ultra-leger-jante-34-mm-lisere-rouge-nedong",
+  "i": 7,
+  "url": "https://ewheel.es/cdn/shop/files/7427251899178_3.jpg",
+  "verdict": "ERROR",
+  "reasons": [],
+  "plus": null,
+  "size": null,
+  "error": "Input buffer has corrupt header: glib: XML does not have <svg> root"
+ },
+ {
+  "slug": "pneu-plein-10x2-125-6-1-ultra-leger-jante-34-mm-lisere-rouge-nedong",
+  "i": 8,
+  "url": "https://ewheel.es/cdn/shop/files/7427251899178_4.jpg",
+  "verdict": "ERROR",
+  "reasons": [],
+  "plus": null,
+  "size": null,
+  "error": "Input buffer has corrupt header: glib: XML does not have <svg> root"
+ },
+ {
+  "slug": "pneu-plein-10x2-125-6-1-ultra-leger-jante-34-mm-points-bleus-nedong",
+  "i": 0,
+  "url": "https://d2j6dbq0eux0bg.cloudfront.net/images/68019033/4180091401.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition",
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.007,
+   "fill": 0.8
+  },
+  "size": [
+   212,
+   333
+  ],
+  "error": null
+ },
+ {
+  "slug": "pneu-plein-10x2-125-6-1-ultra-leger-jante-34-mm-points-bleus-nedong",
+  "i": 1,
+  "url": "https://d2j6dbq0eux0bg.cloudfront.net/images/68019033/4180091402.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition",
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.007,
+   "fill": 0.8
+  },
+  "size": [
+   212,
+   333
+  ],
+  "error": null
+ },
+ {
+  "slug": "pneu-plein-10x2-125-6-1-ultra-leger-jante-34-mm-points-bleus-nedong",
+  "i": 2,
+  "url": "https://d2j6dbq0eux0bg.cloudfront.net/images/68019033/4303027949.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition",
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.037,
+   "fill": 0.841
+  },
+  "size": [
+   384,
+   383
+  ],
+  "error": null
+ },
+ {
+  "slug": "pneu-plein-10x2-125-6-1-ultra-leger-jante-34-mm-points-bleus-nedong",
+  "i": 3,
+  "url": "https://d2j6dbq0eux0bg.cloudfront.net/images/68019033/4303038756.jpg",
+  "verdict": "FAIL",
+  "reasons": [
+   "bandeau, pas un produit",
+   "basse définition",
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0,
+   "fill": 0.654
+  },
+  "size": [
+   126,
+   389
+  ],
+  "error": null
+ },
+ {
+  "slug": "pneu-plein-10x2-125-6-1-ultra-leger-jante-34-mm-points-bleus-nedong",
+  "i": 4,
+  "url": "https://d2j6dbq0eux0bg.cloudfront.net/images/68019033/4303032654.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition",
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.007,
+   "fill": 0.685
+  },
+  "size": [
+   432,
+   432
+  ],
+  "error": null
+ },
+ {
+  "slug": "pneu-plein-10x2-125-6-1-ultra-leger-jante-34-mm-points-bleus-nedong",
+  "i": 5,
+  "url": "https://ewheel.es/cdn/shop/files/7427255406655.jpg",
+  "verdict": "ERROR",
+  "reasons": [],
+  "plus": null,
+  "size": null,
+  "error": "Input buffer has corrupt header: glib: XML does not have <svg> root"
+ },
+ {
+  "slug": "pneu-plein-10x2-125-6-1-ultra-leger-jante-34-mm-points-bleus-nedong",
+  "i": 6,
+  "url": "https://ewheel.es/cdn/shop/files/7427255406655_1.jpg",
+  "verdict": "ERROR",
+  "reasons": [],
+  "plus": null,
+  "size": null,
+  "error": "Input buffer has corrupt header: glib: XML does not have <svg> root"
+ },
+ {
+  "slug": "pneu-plein-10x2-125-6-1-ultra-leger-jante-34-mm-points-bleus-nedong",
+  "i": 7,
+  "url": "https://ewheel.es/cdn/shop/files/7427255406655_2.jpg",
+  "verdict": "ERROR",
+  "reasons": [],
+  "plus": null,
+  "size": null,
+  "error": "Input buffer has corrupt header: glib: XML does not have <svg> root"
+ },
+ {
+  "slug": "pneu-plein-10x2-125-6-1-ultra-leger-jante-34-mm-points-bleus-nedong",
+  "i": 8,
+  "url": "https://ewheel.es/cdn/shop/files/7427255406655_3.jpg",
+  "verdict": "ERROR",
+  "reasons": [],
+  "plus": null,
+  "size": null,
+  "error": "Input buffer has corrupt header: glib: XML does not have <svg> root"
+ },
+ {
+  "slug": "pneu-plein-10x2-125-6-1-ultra-leger-jante-34-mm-points-bleus-nedong",
+  "i": 9,
+  "url": "https://ewheel.es/cdn/shop/files/7427255406655_4.jpg",
+  "verdict": "ERROR",
+  "reasons": [],
+  "plus": null,
+  "size": null,
+  "error": "Input buffer has corrupt header: glib: XML does not have <svg> root"
+ },
+ {
+  "slug": "pneu-plein-10x2-125-6-5-offroad-ultra-leger-jante-44-mm-bleu-nedong",
+  "i": 0,
+  "url": "https://e-planetmobility.com/wp-content/uploads/2025/03/Rueda-maciza-ultraligera-offroad-10x2125-65B34-azul-Nedong.jpg.webp",
+  "verdict": "ERROR",
+  "reasons": [],
+  "plus": null,
+  "size": null,
+  "error": "téléchargement vide"
+ },
+ {
+  "slug": "pneu-plein-10x2-125-6-5-offroad-ultra-leger-jante-44-mm-bleu-nedong",
+  "i": 1,
+  "url": "https://e-planetmobility.com/wp-content/uploads/2025/03/Rueda-maciza-ultraligera-offroad-10x2125-65B34-azul-Nedong-2.jpg.webp",
+  "verdict": "FAIL",
+  "reasons": [
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+   ],
+   "parts": 2,
+   "second": 0.4,
+   "vivid": 0.069,
+   "fill": 0.56
+  },
+  "size": [
+   994,
+   794
+  ],
+  "error": null
+ },
+ {
+  "slug": "pneu-plein-10x2-125-6-5-offroad-ultra-leger-jante-44-mm-bleu-nedong",
+  "i": 2,
+  "url": "https://e-planetmobility.com/wp-content/uploads/2025/03/Rueda-maciza-ultraligera-offroad-10x2125-65B34-azul-Nedong-3.jpg.webp",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.089,
+   "fill": 0.832
+  },
+  "size": [
+   725,
+   720
+  ],
+  "error": null
+ },
+ {
+  "slug": "pneu-plein-10x2-125-6-5-offroad-ultra-leger-jante-44-mm-bleu-nedong",
+  "i": 3,
+  "url": "https://e-planetmobility.com/wp-content/uploads/2025/03/Rueda-maciza-ultraligera-offroad-10x2125-65B34-azul-Nedong-4.jpg.webp",
+  "verdict": "FAIL",
+  "reasons": [
+   "bandeau, pas un produit",
+   "basse définition",
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0,
+   "fill": 0.676
+  },
+  "size": [
+   235,
+   729
+  ],
+  "error": null
+ },
+ {
+  "slug": "pneu-plein-10x2-125-6-5-offroad-ultra-leger-jante-44-mm-bleu-nedong",
+  "i": 4,
+  "url": "https://e-planetmobility.com/wp-content/uploads/2025/03/Rueda-maciza-ultraligera-offroad-10x2125-65B34-azul-Nedong-5.jpg.webp",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.043,
+   "fill": 0.612
+  },
+  "size": [
+   994,
+   794
+  ],
+  "error": null
+ },
+ {
+  "slug": "pneu-plein-10x2-125-6-5-offroad-ultra-leger-jante-44-mm-bleu-nedong",
+  "i": 5,
+  "url": "https://ewheel.es/cdn/shop/files/8435764436468.jpg",
+  "verdict": "ERROR",
+  "reasons": [],
+  "plus": null,
+  "size": null,
+  "error": "Input buffer has corrupt header: glib: XML does not have <svg> root"
+ },
+ {
+  "slug": "pneu-plein-10x2-125-6-5-offroad-ultra-leger-jante-44-mm-bleu-nedong",
+  "i": 6,
+  "url": "https://ewheel.es/cdn/shop/files/8435764436468_1.jpg",
+  "verdict": "ERROR",
+  "reasons": [],
+  "plus": null,
+  "size": null,
+  "error": "Input buffer has corrupt header: glib: XML does not have <svg> root"
+ },
+ {
+  "slug": "pneu-plein-10x2-125-6-5-offroad-ultra-leger-jante-44-mm-bleu-nedong",
+  "i": 7,
+  "url": "https://ewheel.es/cdn/shop/files/8435764436468_2.jpg",
+  "verdict": "ERROR",
+  "reasons": [],
+  "plus": null,
+  "size": null,
+  "error": "Input buffer has corrupt header: glib: XML does not have <svg> root"
+ },
+ {
+  "slug": "pneu-plein-10x2-125-6-5-offroad-ultra-leger-jante-44-mm-bleu-nedong",
+  "i": 8,
+  "url": "https://ewheel.es/cdn/shop/files/8435764436468_3.jpg",
+  "verdict": "ERROR",
+  "reasons": [],
+  "plus": null,
+  "size": null,
+  "error": "Input buffer has corrupt header: glib: XML does not have <svg> root"
+ },
+ {
+  "slug": "pneu-plein-10x2-125-6-5-offroad-ultra-leger-jante-44-mm-bleu-nedong",
+  "i": 9,
+  "url": "https://ewheel.es/cdn/shop/files/8435764436468_4.jpg",
+  "verdict": "ERROR",
+  "reasons": [],
+  "plus": null,
+  "size": null,
+  "error": "Input buffer has corrupt header: glib: XML does not have <svg> root"
+ },
+ {
+  "slug": "pneu-plein-10x2-125-6-5-offroad-ultra-leger-jante-44-mm-rouge-nedong",
+  "i": 0,
+  "url": "https://d2j6dbq0eux0bg.cloudfront.net/images/68019033/products/873646276/6349410049.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.04,
+   "fill": 0.664
+  },
+  "size": [
+   864,
+   864
+  ],
+  "error": null
+ },
+ {
+  "slug": "pneu-plein-10x2-125-6-5-offroad-ultra-leger-jante-44-mm-rouge-nedong",
+  "i": 1,
+  "url": "https://d2j6dbq0eux0bg.cloudfront.net/images/68019033/products/873646276/6349410051.jpg",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "basse définition",
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.042,
+   "fill": 0.664
+  },
+  "size": [
+   432,
+   432
+  ],
+  "error": null
+ },
+ {
+  "slug": "pneu-plein-10x2-125-6-5-offroad-ultra-leger-jante-44-mm-rouge-nedong",
+  "i": 2,
+  "url": "https://d2j6dbq0eux0bg.cloudfront.net/images/68019033/products/873646276/6349409893.jpg",
+  "verdict": "FAIL",
+  "reasons": [
+   "bandeau, pas un produit",
+   "basse définition",
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0,
+   "fill": 0.662
+  },
+  "size": [
+   132,
+   407
+  ],
+  "error": null
+ },
+ {
+  "slug": "pneu-plein-10x2-125-6-5-offroad-ultra-leger-jante-44-mm-rouge-nedong",
+  "i": 3,
+  "url": "https://d2j6dbq0eux0bg.cloudfront.net/images/68019033/products/873646276/6349409899.jpg",
+  "verdict": "FAIL",
+  "reasons": [
+   "basse définition",
+   "cadrage serré",
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux"
+   ],
+   "parts": 3,
+   "second": 0.34,
+   "vivid": 0.067,
+   "fill": 0.743
+  },
+  "size": [
+   432,
+   432
+  ],
+  "error": null
+ },
+ {
+  "slug": "pneu-plein-10x2-125-6-5-offroad-ultra-leger-jante-44-mm-rouge-nedong",
+  "i": 4,
+  "url": "https://d2j6dbq0eux0bg.cloudfront.net/images/68019033/products/873646276/6349409875.jpg",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "basse définition",
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.099,
+   "fill": 0.828
+  },
+  "size": [
+   402,
+   402
+  ],
+  "error": null
+ },
+ {
+  "slug": "pneu-plein-10x2-125-6-5-offroad-ultra-leger-jante-44-mm-rouge-nedong",
+  "i": 5,
+  "url": "https://d2j6dbq0eux0bg.cloudfront.net/images/68019033/products/873646276/6349410057.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition",
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.049,
+   "fill": 0.802
+  },
+  "size": [
+   251,
+   390
+  ],
+  "error": null
+ },
+ {
+  "slug": "pneu-plein-10x2-125-6-5-offroad-ultra-leger-jante-44-mm-rouge-nedong",
+  "i": 6,
+  "url": "https://ewheel.es/cdn/shop/files/8435764437533.jpg",
+  "verdict": "ERROR",
+  "reasons": [],
+  "plus": null,
+  "size": null,
+  "error": "Input buffer has corrupt header: glib: XML does not have <svg> root"
+ },
+ {
+  "slug": "pneu-plein-10x2-125-6-5-offroad-ultra-leger-jante-44-mm-rouge-nedong",
+  "i": 7,
+  "url": "https://ewheel.es/cdn/shop/files/8435764437533_1.jpg",
+  "verdict": "ERROR",
+  "reasons": [],
+  "plus": null,
+  "size": null,
+  "error": "Input buffer has corrupt header: glib: XML does not have <svg> root"
+ },
+ {
+  "slug": "pneu-plein-10x2-125-6-5-offroad-ultra-leger-jante-44-mm-rouge-nedong",
+  "i": 8,
+  "url": "https://ewheel.es/cdn/shop/files/8435764437533_2.jpg",
+  "verdict": "ERROR",
+  "reasons": [],
+  "plus": null,
+  "size": null,
+  "error": "Input buffer has corrupt header: glib: XML does not have <svg> root"
+ },
+ {
+  "slug": "pneu-plein-10x2-125-6-5-offroad-ultra-leger-jante-44-mm-rouge-nedong",
+  "i": 9,
+  "url": "https://ewheel.es/cdn/shop/files/8435764437533_3.jpg",
+  "verdict": "ERROR",
+  "reasons": [],
+  "plus": null,
+  "size": null,
+  "error": "Input buffer has corrupt header: glib: XML does not have <svg> root"
+ },
+ {
+  "slug": "pneu-plein-10x2-125-6-5-offroad-ultra-leger-jante-44-mm-rouge-nedong",
+  "i": 10,
+  "url": "https://ewheel.es/cdn/shop/files/8435764437533_4.jpg",
+  "verdict": "ERROR",
+  "reasons": [],
+  "plus": null,
+  "size": null,
+  "error": "Input buffer has corrupt header: glib: XML does not have <svg> root"
+ },
+ {
+  "slug": "pneu-plein-10x2-50-6-1-ultra-leger-jante-34-mm-lisere-bleu-nedong",
+  "i": 0,
+  "url": "https://d2j6dbq0eux0bg.cloudfront.net/images/68019033/4180092347.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition",
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.023,
+   "fill": 0.76
+  },
+  "size": [
+   184,
+   330
+  ],
+  "error": null
+ },
+ {
+  "slug": "pneu-plein-10x2-50-6-1-ultra-leger-jante-34-mm-lisere-bleu-nedong",
+  "i": 1,
+  "url": "https://d2j6dbq0eux0bg.cloudfront.net/images/68019033/4180092348.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition",
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.023,
+   "fill": 0.76
+  },
+  "size": [
+   184,
+   330
+  ],
+  "error": null
+ },
+ {
+  "slug": "pneu-plein-10x2-50-6-1-ultra-leger-jante-34-mm-lisere-bleu-nedong",
+  "i": 2,
+  "url": "https://d2j6dbq0eux0bg.cloudfront.net/images/68019033/4303625857.jpg",
+  "verdict": "FAIL",
+  "reasons": [
+   "basse définition",
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 4 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 4 morceaux"
+   ],
+   "parts": 4,
+   "second": 0.243,
+   "vivid": 0.003,
+   "fill": 0.624
+  },
+  "size": [
+   432,
+   432
+  ],
+  "error": null
+ },
+ {
+  "slug": "pneu-plein-10x2-50-6-1-ultra-leger-jante-34-mm-lisere-bleu-nedong",
+  "i": 3,
+  "url": "https://d2j6dbq0eux0bg.cloudfront.net/images/68019033/4303642759.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition",
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0,
+   "fill": 0.682
+  },
+  "size": [
+   140,
+   389
+  ],
+  "error": null
+ },
+ {
+  "slug": "pneu-plein-10x2-50-6-1-ultra-leger-jante-34-mm-lisere-bleu-nedong",
+  "i": 4,
+  "url": "https://d2j6dbq0eux0bg.cloudfront.net/images/68019033/4303626116.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition",
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.044,
+   "fill": 0.672
+  },
+  "size": [
+   432,
+   432
+  ],
+  "error": null
+ },
+ {
+  "slug": "pneu-plein-10x2-50-6-1-ultra-leger-jante-34-mm-lisere-bleu-nedong",
+  "i": 5,
+  "url": "https://d2j6dbq0eux0bg.cloudfront.net/images/68019033/4303642754.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition",
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.104,
+   "fill": 0.64
+  },
+  "size": [
+   432,
+   432
+  ],
+  "error": null
+ },
+ {
+  "slug": "pneu-plein-10x2-50-6-1-ultra-leger-jante-34-mm-lisere-bleu-nedong",
+  "i": 6,
+  "url": "https://ewheel.es/cdn/shop/files/7427255405436.jpg",
+  "verdict": "ERROR",
+  "reasons": [],
+  "plus": null,
+  "size": null,
+  "error": "Input buffer has corrupt header: glib: XML does not have <svg> root"
+ },
+ {
+  "slug": "pneu-plein-10x2-50-6-1-ultra-leger-jante-34-mm-lisere-bleu-nedong",
+  "i": 7,
+  "url": "https://ewheel.es/cdn/shop/files/7427255405436_1.jpg",
+  "verdict": "ERROR",
+  "reasons": [],
+  "plus": null,
+  "size": null,
+  "error": "Input buffer has corrupt header: glib: XML does not have <svg> root"
+ },
+ {
+  "slug": "pneu-plein-10x2-50-6-1-ultra-leger-jante-34-mm-lisere-bleu-nedong",
+  "i": 8,
+  "url": "https://ewheel.es/cdn/shop/files/7427255405436_2.jpg",
+  "verdict": "ERROR",
+  "reasons": [],
+  "plus": null,
+  "size": null,
+  "error": "Input buffer has corrupt header: glib: XML does not have <svg> root"
+ },
+ {
+  "slug": "pneu-plein-10x2-50-6-1-ultra-leger-jante-34-mm-lisere-bleu-nedong",
+  "i": 9,
+  "url": "https://ewheel.es/cdn/shop/files/7427255405436_3.jpg",
+  "verdict": "ERROR",
+  "reasons": [],
+  "plus": null,
+  "size": null,
+  "error": "Input buffer has corrupt header: glib: XML does not have <svg> root"
+ },
+ {
+  "slug": "pneu-plein-10x2-50-6-1-ultra-leger-jante-34-mm-lisere-bleu-nedong",
+  "i": 10,
+  "url": "https://ewheel.es/cdn/shop/files/7427255405436_4.jpg",
+  "verdict": "ERROR",
+  "reasons": [],
+  "plus": null,
+  "size": null,
+  "error": "Input buffer has corrupt header: glib: XML does not have <svg> root"
+ },
+ {
+  "slug": "pneu-plein-10x2-50-6-1-ultra-leger-jante-34-mm-lisere-noir-ewheel",
+  "i": 0,
+  "url": "https://e-planetmobility.com/wp-content/uploads/2024/07/Rueda-maciza-ultraligera-10x25-61B34mm-linea-negra-Ewheel.jpg.webp",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition",
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0,
+   "fill": 0.794
+  },
+  "size": [
+   428,
+   692
+  ],
+  "error": null
+ },
+ {
+  "slug": "pneu-plein-10x2-50-6-1-ultra-leger-jante-34-mm-lisere-noir-ewheel",
+  "i": 1,
+  "url": "https://e-planetmobility.com/wp-content/uploads/2024/07/Rueda-maciza-ultraligera-10x25-61B34mm-linea-negra-Ewheel-2.jpg.webp",
+  "verdict": "FAIL",
+  "reasons": [
+   "cadrage serré",
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 4 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 4 morceaux"
+   ],
+   "parts": 4,
+   "second": 0.281,
+   "vivid": 0,
+   "fill": 0.849
+  },
+  "size": [
+   748,
+   767
+  ],
+  "error": null
+ },
+ {
+  "slug": "pneu-plein-10x2-50-6-1-ultra-leger-jante-34-mm-lisere-noir-ewheel",
+  "i": 2,
+  "url": "https://e-planetmobility.com/wp-content/uploads/2024/07/Rueda-maciza-ultraligera-10x25-61B34mm-linea-negra-Ewheel-3.jpg.webp",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0,
+   "fill": 0.846
+  },
+  "size": [
+   711,
+   707
+  ],
+  "error": null
+ },
+ {
+  "slug": "pneu-plein-10x2-50-6-1-ultra-leger-jante-34-mm-lisere-noir-ewheel",
+  "i": 3,
+  "url": "https://e-planetmobility.com/wp-content/uploads/2024/07/Rueda-maciza-ultraligera-10x25-61B34mm-linea-negra-Ewheel-4.jpg.webp",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition",
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0,
+   "fill": 0.707
+  },
+  "size": [
+   249,
+   726
+  ],
+  "error": null
+ },
+ {
+  "slug": "pneu-plein-10x2-50-6-1-ultra-leger-jante-34-mm-lisere-noir-ewheel",
+  "i": 4,
+  "url": "https://e-planetmobility.com/wp-content/uploads/2024/07/Rueda-maciza-ultraligera-10x25-61B34mm-linea-negra-Ewheel-5.jpg.webp",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0,
+   "fill": 0.604
+  },
+  "size": [
+   994,
+   794
+  ],
+  "error": null
+ },
+ {
+  "slug": "pneu-plein-10x2-50-6-1-ultra-leger-jante-34-mm-lisere-noir-ewheel",
+  "i": 5,
+  "url": "https://ewheel.es/cdn/shop/files/8435764420948.jpg",
+  "verdict": "ERROR",
+  "reasons": [],
+  "plus": null,
+  "size": null,
+  "error": "Input buffer has corrupt header: glib: XML does not have <svg> root"
+ },
+ {
+  "slug": "pneu-plein-10x2-50-6-1-ultra-leger-jante-34-mm-lisere-noir-ewheel",
+  "i": 6,
+  "url": "https://ewheel.es/cdn/shop/files/8435764420948_1.jpg",
+  "verdict": "ERROR",
+  "reasons": [],
+  "plus": null,
+  "size": null,
+  "error": "Input buffer has corrupt header: glib: XML does not have <svg> root"
+ },
+ {
+  "slug": "pneu-plein-10x2-50-6-1-ultra-leger-jante-34-mm-lisere-noir-ewheel",
+  "i": 7,
+  "url": "https://ewheel.es/cdn/shop/files/8435764420948_2.jpg",
+  "verdict": "ERROR",
+  "reasons": [],
+  "plus": null,
+  "size": null,
+  "error": "Input buffer has corrupt header: glib: XML does not have <svg> root"
+ },
+ {
+  "slug": "pneu-plein-10x2-50-6-1-ultra-leger-jante-34-mm-lisere-noir-ewheel",
+  "i": 8,
+  "url": "https://ewheel.es/cdn/shop/files/8435764420948_3.jpg",
+  "verdict": "ERROR",
+  "reasons": [],
+  "plus": null,
+  "size": null,
+  "error": "Input buffer has corrupt header: glib: XML does not have <svg> root"
+ },
+ {
+  "slug": "pneu-plein-10x2-50-6-1-ultra-leger-jante-34-mm-lisere-noir-ewheel",
+  "i": 9,
+  "url": "https://ewheel.es/cdn/shop/files/8435764420948_4.jpg",
+  "verdict": "ERROR",
+  "reasons": [],
+  "plus": null,
+  "size": null,
+  "error": "Input buffer has corrupt header: glib: XML does not have <svg> root"
+ },
+ {
+  "slug": "pneu-plein-10x2-50-6-1-ultra-leger-jante-44-mm-points-bleus-nedong",
+  "i": 0,
+  "url": "https://d2j6dbq0eux0bg.cloudfront.net/images/68019033/4180091375.jpg",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "basse définition",
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.001,
+   "fill": 0.789
+  },
+  "size": [
+   217,
+   352
+  ],
+  "error": null
+ },
+ {
+  "slug": "pneu-plein-10x2-50-6-1-ultra-leger-jante-44-mm-points-bleus-nedong",
+  "i": 1,
+  "url": "https://d2j6dbq0eux0bg.cloudfront.net/images/68019033/4180091376.jpg",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "basse définition",
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.001,
+   "fill": 0.789
+  },
+  "size": [
+   217,
+   352
+  ],
+  "error": null
+ },
+ {
+  "slug": "pneu-plein-10x2-50-6-1-ultra-leger-jante-44-mm-points-bleus-nedong",
+  "i": 2,
+  "url": "https://d2j6dbq0eux0bg.cloudfront.net/images/68019033/4304078141.jpg",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "basse définition",
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.022,
+   "fill": 0.842
+  },
+  "size": [
+   410,
+   411
+  ],
+  "error": null
+ },
+ {
+  "slug": "pneu-plein-10x2-50-6-1-ultra-leger-jante-44-mm-points-bleus-nedong",
+  "i": 3,
+  "url": "https://d2j6dbq0eux0bg.cloudfront.net/images/68019033/4304064996.jpg",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "basse définition",
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.011,
+   "fill": 0.676
+  },
+  "size": [
+   432,
+   432
+  ],
+  "error": null
+ },
+ {
+  "slug": "pneu-plein-10x2-50-6-1-ultra-leger-jante-44-mm-points-bleus-nedong",
+  "i": 4,
+  "url": "https://d2j6dbq0eux0bg.cloudfront.net/images/68019033/4304064991.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition",
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0,
+   "fill": 0.683
+  },
+  "size": [
+   145,
+   415
+  ],
+  "error": null
+ },
+ {
+  "slug": "pneu-plein-10x2-50-6-1-ultra-leger-jante-44-mm-points-bleus-nedong",
+  "i": 5,
+  "url": "https://d2j6dbq0eux0bg.cloudfront.net/images/68019033/4304063206.jpg",
+  "verdict": "FAIL",
+  "reasons": [
+   "basse définition",
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 4 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 4 morceaux"
+   ],
+   "parts": 4,
+   "second": 0.244,
+   "vivid": 0,
+   "fill": 0.624
+  },
+  "size": [
+   432,
+   432
+  ],
+  "error": null
+ },
+ {
+  "slug": "pneu-plein-10x2-50-6-1-ultra-leger-jante-44-mm-points-bleus-nedong",
+  "i": 6,
+  "url": "https://ewheel.es/cdn/shop/files/7427255405429.jpg",
+  "verdict": "ERROR",
+  "reasons": [],
+  "plus": null,
+  "size": null,
+  "error": "Input buffer has corrupt header: glib: XML does not have <svg> root"
+ },
+ {
+  "slug": "pneu-plein-10x2-50-6-1-ultra-leger-jante-44-mm-points-bleus-nedong",
+  "i": 7,
+  "url": "https://ewheel.es/cdn/shop/files/7427255405429_1.jpg",
+  "verdict": "ERROR",
+  "reasons": [],
+  "plus": null,
+  "size": null,
+  "error": "Input buffer has corrupt header: glib: XML does not have <svg> root"
+ },
+ {
+  "slug": "pneu-plein-10x2-50-6-1-ultra-leger-jante-44-mm-points-bleus-nedong",
+  "i": 8,
+  "url": "https://ewheel.es/cdn/shop/files/7427255405429_2.jpg",
+  "verdict": "ERROR",
+  "reasons": [],
+  "plus": null,
+  "size": null,
+  "error": "Input buffer has corrupt header: glib: XML does not have <svg> root"
+ },
+ {
+  "slug": "pneu-plein-10x2-50-6-1-ultra-leger-jante-44-mm-points-bleus-nedong",
+  "i": 9,
+  "url": "https://ewheel.es/cdn/shop/files/7427255405429_3.jpg",
+  "verdict": "ERROR",
+  "reasons": [],
+  "plus": null,
+  "size": null,
+  "error": "Input buffer has corrupt header: glib: XML does not have <svg> root"
+ },
+ {
+  "slug": "pneu-plein-10x2-50-6-1-ultra-leger-jante-44-mm-points-bleus-nedong",
+  "i": 10,
+  "url": "https://ewheel.es/cdn/shop/files/7427255405429_4.jpg",
+  "verdict": "ERROR",
+  "reasons": [],
+  "plus": null,
+  "size": null,
+  "error": "Input buffer has corrupt header: glib: XML does not have <svg> root"
+ },
+ {
+  "slug": "pneu-plein-10x2-50-6-5-noir-cityneye",
+  "i": 0,
+  "url": "https://e-planetmobility.com/wp-content/uploads/2025/08/Rueda-maciza-10x25-65-Negro-Cityneye.jpg.webp",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition",
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0,
+   "fill": 0.824
+  },
+  "size": [
+   542,
+   707
+  ],
+  "error": null
+ },
+ {
+  "slug": "pneu-plein-10x2-50-6-5-noir-cityneye",
+  "i": 1,
+  "url": "https://e-planetmobility.com/wp-content/uploads/2025/08/Rueda-maciza-10x25-65-Negro-Cityneye-2.jpg.webp",
+  "verdict": "FAIL",
+  "reasons": [
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux"
+   ],
+   "parts": 3,
+   "second": 0.361,
+   "vivid": 0,
+   "fill": 0.586
+  },
+  "size": [
+   994,
+   794
+  ],
+  "error": null
+ },
+ {
+  "slug": "pneu-plein-10x2-50-6-5-noir-cityneye",
+  "i": 2,
+  "url": "https://e-planetmobility.com/wp-content/uploads/2025/08/Rueda-maciza-10x25-65-Negro-Cityneye-3.jpg.webp",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0,
+   "fill": 0.846
+  },
+  "size": [
+   718,
+   715
+  ],
+  "error": null
+ },
+ {
+  "slug": "pneu-plein-10x2-50-6-5-noir-cityneye",
+  "i": 3,
+  "url": "https://e-planetmobility.com/wp-content/uploads/2025/08/Rueda-maciza-10x25-65-Negro-Cityneye-4.jpg.webp",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition",
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0,
+   "fill": 0.706
+  },
+  "size": [
+   260,
+   717
+  ],
+  "error": null
+ },
+ {
+  "slug": "pneu-plein-10x2-50-6-5-noir-cityneye",
+  "i": 4,
+  "url": "https://e-planetmobility.com/wp-content/uploads/2025/08/Rueda-maciza-10x25-65-Negro-Cityneye-5.jpg.webp",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0,
+   "fill": 0.638
+  },
+  "size": [
+   994,
+   794
+  ],
+  "error": null
+ },
+ {
+  "slug": "pneu-plein-10x2-50-6-5-noir-cityneye",
+  "i": 5,
+  "url": "https://maquinete.com/17278-large_default/rueda-maciza-10x25-65-cityneye-negro.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition",
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0,
+   "fill": 0.824
+  },
+  "size": [
+   579,
+   756
+  ],
+  "error": null
+ },
+ {
+  "slug": "pneu-plein-10x2-50-6-5-noir-cityneye",
+  "i": 6,
+  "url": "https://maquinete.com/17279-large_default/rueda-maciza-10x25-65-cityneye-negro.jpg",
+  "verdict": "FAIL",
+  "reasons": [
+   "cadrage serré",
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux"
+   ],
+   "parts": 3,
+   "second": 0.364,
+   "vivid": 0,
+   "fill": 0.848
+  },
+  "size": [
+   775,
+   806
+  ],
+  "error": null
+ },
+ {
+  "slug": "pneu-plein-10x2-50-6-5-noir-cityneye",
+  "i": 7,
+  "url": "https://ewheel.es/cdn/shop/files/8435764435324.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0,
+   "fill": 0.824
+  },
+  "size": [
+   600,
+   786
+  ],
+  "error": null
+ },
+ {
+  "slug": "pneu-plein-10x2-50-6-5-noir-cityneye",
+  "i": 8,
+  "url": "https://ewheel.es/cdn/shop/files/8435764435324_1.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0,
+   "fill": 0.846
+  },
+  "size": [
+   794,
+   793
+  ],
+  "error": null
+ },
+ {
+  "slug": "pneu-plein-10x2-50-6-5-noir-cityneye",
+  "i": 9,
+  "url": "https://ewheel.es/cdn/shop/files/8435764435324_2.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition",
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0,
+   "fill": 0.716
+  },
+  "size": [
+   285,
+   793
+  ],
+  "error": null
+ },
+ {
+  "slug": "pneu-plein-10x2-50-6-5-noir-cityneye",
+  "i": 10,
+  "url": "https://ewheel.es/cdn/shop/files/8435764435324_3.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0,
+   "fill": 0.853
+  },
+  "size": [
+   821,
+   792
+  ],
+  "error": null
+ },
+ {
+  "slug": "pneu-plein-10x2-50-6-5-noir-cityneye",
+  "i": 11,
+  "url": "https://ewheel.es/cdn/shop/files/8435764435324_4.jpg",
+  "verdict": "FAIL",
+  "reasons": [
+   "cadrage serré",
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux"
+   ],
+   "parts": 3,
+   "second": 0.365,
+   "vivid": 0.001,
+   "fill": 0.77
+  },
+  "size": [
+   864,
+   864
+  ],
+  "error": null
+ },
+ {
+  "slug": "pneu-plein-10x2-50-6-5-offroad-ultra-leger-jante-44-mm-bleu-nedong",
+  "i": 0,
+  "url": "https://www.imooving.com/11587-large_default/pneu-plein-ultraleger-offroad-10x25-65-b44-bleu-nedong-.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition",
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.05,
+   "fill": 0.81
+  },
+  "size": [
+   549,
+   783
+  ],
+  "error": null
+ },
+ {
+  "slug": "pneu-plein-10x2-50-6-5-offroad-ultra-leger-jante-44-mm-bleu-nedong",
+  "i": 1,
+  "url": "https://www.imooving.com/11588-large_default/pneu-plein-ultraleger-offroad-10x25-65-b44-bleu-nedong-.jpg",
+  "verdict": "FAIL",
+  "reasons": [
+   "cadrage serré",
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+   ],
+   "parts": 2,
+   "second": 0.414,
+   "vivid": 0.08,
+   "fill": 0.765
+  },
+  "size": [
+   864,
+   864
+  ],
+  "error": null
+ },
+ {
+  "slug": "pneu-plein-10x2-50-6-5-offroad-ultra-leger-jante-44-mm-bleu-nedong",
+  "i": 2,
+  "url": "https://www.imooving.com/11589-large_default/pneu-plein-ultraleger-offroad-10x25-65-b44-bleu-nedong-.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.07,
+   "fill": 0.846
+  },
+  "size": [
+   785,
+   784
+  ],
+  "error": null
+ },
+ {
+  "slug": "pneu-plein-10x2-50-6-5-offroad-ultra-leger-jante-44-mm-bleu-nedong",
+  "i": 3,
+  "url": "https://www.imooving.com/11590-large_default/pneu-plein-ultraleger-offroad-10x25-65-b44-bleu-nedong-.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition",
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0,
+   "fill": 0.718
+  },
+  "size": [
+   290,
+   793
+  ],
+  "error": null
+ },
+ {
+  "slug": "pneu-plein-10x2-50-6-5-offroad-ultra-leger-jante-44-mm-bleu-nedong",
+  "i": 4,
+  "url": "https://www.imooving.com/11591-large_default/pneu-plein-ultraleger-offroad-10x25-65-b44-bleu-nedong-.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.054,
+   "fill": 0.735
+  },
+  "size": [
+   864,
+   864
+  ],
+  "error": null
+ },
+ {
+  "slug": "pneu-plein-10x2-50-6-5-offroad-ultra-leger-jante-44-mm-bleu-nedong",
+  "i": 5,
+  "url": "https://ewheel.es/cdn/shop/files/8435764436475.jpg",
+  "verdict": "ERROR",
+  "reasons": [],
+  "plus": null,
+  "size": null,
+  "error": "Input buffer has corrupt header: glib: XML does not have <svg> root"
+ },
+ {
+  "slug": "pneu-plein-10x2-50-6-5-offroad-ultra-leger-jante-44-mm-bleu-nedong",
+  "i": 6,
+  "url": "https://ewheel.es/cdn/shop/files/8435764436475_1.jpg",
+  "verdict": "ERROR",
+  "reasons": [],
+  "plus": null,
+  "size": null,
+  "error": "Input buffer has corrupt header: glib: XML does not have <svg> root"
+ },
+ {
+  "slug": "pneu-plein-10x2-50-6-5-offroad-ultra-leger-jante-44-mm-bleu-nedong",
+  "i": 7,
+  "url": "https://ewheel.es/cdn/shop/files/8435764436475_2.jpg",
+  "verdict": "ERROR",
+  "reasons": [],
+  "plus": null,
+  "size": null,
+  "error": "Input buffer has corrupt header: glib: XML does not have <svg> root"
+ },
+ {
+  "slug": "pneu-plein-10x2-50-6-5-offroad-ultra-leger-jante-44-mm-bleu-nedong",
+  "i": 8,
+  "url": "https://ewheel.es/cdn/shop/files/8435764436475_3.jpg",
+  "verdict": "ERROR",
+  "reasons": [],
+  "plus": null,
+  "size": null,
+  "error": "Input buffer has corrupt header: glib: XML does not have <svg> root"
+ },
+ {
+  "slug": "pneu-plein-10x2-50-6-5-offroad-ultra-leger-jante-44-mm-bleu-nedong",
+  "i": 9,
+  "url": "https://ewheel.es/cdn/shop/files/8435764436475_4.jpg",
+  "verdict": "ERROR",
+  "reasons": [],
+  "plus": null,
+  "size": null,
+  "error": "Input buffer has corrupt header: glib: XML does not have <svg> root"
+ },
+ {
+  "slug": "pneu-plein-10x2-50-6-5-ultra-leger-jante-44-mm-lisere-bleu-nedong",
+  "i": 0,
+  "url": "https://d2j6dbq0eux0bg.cloudfront.net/images/68019033/4180089932.jpg",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "basse définition",
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.011,
+   "fill": 0.775
+  },
+  "size": [
+   203,
+   335
+  ],
+  "error": null
+ },
+ {
+  "slug": "pneu-plein-10x2-50-6-5-ultra-leger-jante-44-mm-lisere-bleu-nedong",
+  "i": 1,
+  "url": "https://d2j6dbq0eux0bg.cloudfront.net/images/68019033/4180089933.jpg",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "basse définition",
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.011,
+   "fill": 0.775
+  },
+  "size": [
+   203,
+   335
+  ],
+  "error": null
+ },
+ {
+  "slug": "pneu-plein-10x2-50-6-5-ultra-leger-jante-44-mm-lisere-bleu-nedong",
+  "i": 2,
+  "url": "https://d2j6dbq0eux0bg.cloudfront.net/images/68019033/4304078073.jpg",
+  "verdict": "FAIL",
+  "reasons": [
+   "basse définition",
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 4 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 4 morceaux"
+   ],
+   "parts": 4,
+   "second": 0.244,
+   "vivid": 0,
+   "fill": 0.624
+  },
+  "size": [
+   432,
+   432
+  ],
+  "error": null
+ },
+ {
+  "slug": "pneu-plein-10x2-50-6-5-ultra-leger-jante-44-mm-lisere-bleu-nedong",
+  "i": 3,
+  "url": "https://d2j6dbq0eux0bg.cloudfront.net/images/68019033/4304078068.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition",
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0,
+   "fill": 0.686
+  },
+  "size": [
+   147,
+   401
+  ],
+  "error": null
+ },
+ {
+  "slug": "pneu-plein-10x2-50-6-5-ultra-leger-jante-44-mm-lisere-bleu-nedong",
+  "i": 4,
+  "url": "https://d2j6dbq0eux0bg.cloudfront.net/images/68019033/4304078063.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition",
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.009,
+   "fill": 0.85
+  },
+  "size": [
+   378,
+   385
+  ],
+  "error": null
+ },
+ {
+  "slug": "pneu-plein-10x2-50-6-5-ultra-leger-jante-44-mm-lisere-bleu-nedong",
+  "i": 5,
+  "url": "https://d2j6dbq0eux0bg.cloudfront.net/images/68019033/4304078078.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition",
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.077,
+   "fill": 0.836
+  },
+  "size": [
+   383,
+   379
+  ],
+  "error": null
+ },
+ {
+  "slug": "pneu-plein-10x2-50-6-5-ultra-leger-jante-44-mm-lisere-bleu-nedong",
+  "i": 6,
+  "url": "https://ewheel.es/cdn/shop/files/7427255407010.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition",
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.025,
+   "fill": 0.797
+  },
+  "size": [
+   443,
+   736
+  ],
+  "error": null
+ },
+ {
+  "slug": "pneu-plein-10x2-50-6-5-ultra-leger-jante-44-mm-lisere-bleu-nedong",
+  "i": 7,
+  "url": "https://ewheel.es/cdn/shop/files/7427255407010_1.jpg",
+  "verdict": "ERROR",
+  "reasons": [],
+  "plus": null,
+  "size": null,
+  "error": "Input buffer has corrupt header: glib: XML does not have <svg> root"
+ },
+ {
+  "slug": "pneu-plein-10x2-50-6-5-ultra-leger-jante-44-mm-lisere-bleu-nedong",
+  "i": 8,
+  "url": "https://ewheel.es/cdn/shop/files/7427255407010_2.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.075,
+   "fill": 0.846
+  },
+  "size": [
+   762,
+   755
+  ],
+  "error": null
+ },
+ {
+  "slug": "pneu-plein-10x2-50-6-5-ultra-leger-jante-44-mm-lisere-bleu-nedong",
+  "i": 9,
+  "url": "https://ewheel.es/cdn/shop/files/7427255407010_3.jpg",
+  "verdict": "ERROR",
+  "reasons": [],
+  "plus": null,
+  "size": null,
+  "error": "Input buffer has corrupt header: glib: XML does not have <svg> root"
+ },
+ {
+  "slug": "pneu-plein-10x2-50-6-5-ultra-leger-jante-44-mm-lisere-bleu-nedong",
+  "i": 10,
+  "url": "https://ewheel.es/cdn/shop/files/7427255407010_4.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.017,
+   "fill": 0.845
+  },
+  "size": [
+   758,
+   776
+  ],
+  "error": null
+ },
+ {
+  "slug": "pneu-plein-10x2-50-7-noir-cityneye",
+  "i": 0,
+  "url": "https://maquinete.com/11049-large_default/rueda-maciza-10x25-7-cityneye-negro.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition",
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0,
+   "fill": 0.824
+  },
+  "size": [
+   579,
+   757
+  ],
+  "error": null
+ },
+ {
+  "slug": "pneu-plein-10x2-50-7-noir-cityneye",
+  "i": 1,
+  "url": "https://maquinete.com/11050-large_default/rueda-maciza-10x25-7-cityneye-negro.jpg",
+  "verdict": "FAIL",
+  "reasons": [
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux"
+   ],
+   "parts": 3,
+   "second": 0.364,
+   "vivid": 0,
+   "fill": 0.576
+  },
+  "size": [
+   851,
+   1080
+  ],
+  "error": null
+ },
+ {
+  "slug": "pneu-plein-10x2-50-7-noir-cityneye",
+  "i": 2,
+  "url": "https://ewheel.es/cdn/shop/files/8435764433771.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0,
+   "fill": 0.824
+  },
+  "size": [
+   600,
+   784
+  ],
+  "error": null
+ },
+ {
+  "slug": "pneu-plein-10x2-50-7-noir-cityneye",
+  "i": 3,
+  "url": "https://ewheel.es/cdn/shop/files/8435764433771_1.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0,
+   "fill": 0.855
+  },
+  "size": [
+   793,
+   791
+  ],
+  "error": null
+ },
+ {
+  "slug": "pneu-plein-10x2-50-7-noir-cityneye",
+  "i": 4,
+  "url": "https://ewheel.es/cdn/shop/files/8435764433771_2.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition",
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0,
+   "fill": 0.716
+  },
+  "size": [
+   285,
+   793
+  ],
+  "error": null
+ },
+ {
+  "slug": "pneu-plein-10x2-50-7-noir-cityneye",
+  "i": 5,
+  "url": "https://ewheel.es/cdn/shop/files/8435764433771_3.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0,
+   "fill": 0.853
+  },
+  "size": [
+   821,
+   792
+  ],
+  "error": null
+ },
+ {
+  "slug": "pneu-plein-10x2-50-7-noir-cityneye",
+  "i": 6,
+  "url": "https://ewheel.es/cdn/shop/files/8435764433771_4.jpg",
+  "verdict": "FAIL",
+  "reasons": [
+   "cadrage serré",
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux"
+   ],
+   "parts": 3,
+   "second": 0.365,
+   "vivid": 0.001,
+   "fill": 0.77
+  },
+  "size": [
+   864,
+   864
+  ],
+  "error": null
+ },
+ {
+  "slug": "pneu-plein-10x2-50-offroad-ultra-leger-jante-44-mm-jaune-nedong",
+  "i": 0,
+  "url": "https://www.imooving.com/11619-large_default/pneu-plein-ultra-leger-offroad-10x25-b44-nedong-.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition",
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.042,
+   "fill": 0.815
+  },
+  "size": [
+   549,
+   782
+  ],
+  "error": null
+ },
+ {
+  "slug": "pneu-plein-10x2-50-offroad-ultra-leger-jante-44-mm-jaune-nedong",
+  "i": 1,
+  "url": "https://www.imooving.com/11620-large_default/pneu-plein-ultra-leger-offroad-10x25-b44-nedong-.jpg",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "cadrage serré",
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+   ],
+   "parts": 2,
+   "second": 0.411,
+   "vivid": 0.074,
+   "fill": 0.765
+  },
+  "size": [
+   864,
+   864
+  ],
+  "error": null
+ },
+ {
+  "slug": "pneu-plein-10x2-50-offroad-ultra-leger-jante-44-mm-jaune-nedong",
+  "i": 2,
+  "url": "https://www.imooving.com/11621-large_default/pneu-plein-ultra-leger-offroad-10x25-b44-nedong-.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.091,
+   "fill": 0.846
+  },
+  "size": [
+   785,
+   784
+  ],
+  "error": null
+ },
+ {
+  "slug": "pneu-plein-10x2-50-offroad-ultra-leger-jante-44-mm-jaune-nedong",
+  "i": 3,
+  "url": "https://www.imooving.com/11622-large_default/pneu-plein-ultra-leger-offroad-10x25-b44-nedong-.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition",
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0,
+   "fill": 0.718
+  },
+  "size": [
+   290,
+   793
+  ],
+  "error": null
+ },
+ {
+  "slug": "pneu-plein-10x2-50-offroad-ultra-leger-jante-44-mm-jaune-nedong",
+  "i": 4,
+  "url": "https://www.imooving.com/11623-large_default/pneu-plein-ultra-leger-offroad-10x25-b44-nedong-.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.046,
+   "fill": 0.735
+  },
+  "size": [
+   864,
+   864
+  ],
+  "error": null
+ },
+ {
+  "slug": "pneu-plein-10x2-50-offroad-ultra-leger-jante-44-mm-jaune-nedong",
+  "i": 5,
+  "url": "https://ewheel.es/cdn/shop/files/8435764434488.jpg",
+  "verdict": "ERROR",
+  "reasons": [],
+  "plus": null,
+  "size": null,
+  "error": "Input buffer has corrupt header: glib: XML does not have <svg> root"
+ },
+ {
+  "slug": "pneu-plein-10x2-50-offroad-ultra-leger-jante-44-mm-jaune-nedong",
+  "i": 6,
+  "url": "https://ewheel.es/cdn/shop/files/8435764434488_1.jpg",
+  "verdict": "ERROR",
+  "reasons": [],
+  "plus": null,
+  "size": null,
+  "error": "Input buffer has corrupt header: glib: XML does not have <svg> root"
+ },
+ {
+  "slug": "pneu-plein-10x2-50-offroad-ultra-leger-jante-44-mm-jaune-nedong",
+  "i": 7,
+  "url": "https://ewheel.es/cdn/shop/files/8435764434488_2.jpg",
+  "verdict": "ERROR",
+  "reasons": [],
+  "plus": null,
+  "size": null,
+  "error": "Input buffer has corrupt header: glib: XML does not have <svg> root"
+ },
+ {
+  "slug": "pneu-plein-10x2-50-offroad-ultra-leger-jante-44-mm-jaune-nedong",
+  "i": 8,
+  "url": "https://ewheel.es/cdn/shop/files/8435764434488_3.jpg",
+  "verdict": "ERROR",
+  "reasons": [],
+  "plus": null,
+  "size": null,
+  "error": "Input buffer has corrupt header: glib: XML does not have <svg> root"
+ },
+ {
+  "slug": "pneu-plein-10x2-50-offroad-ultra-leger-jante-44-mm-jaune-nedong",
+  "i": 9,
+  "url": "https://ewheel.es/cdn/shop/files/8435764434488_4.jpg",
+  "verdict": "ERROR",
+  "reasons": [],
+  "plus": null,
+  "size": null,
+  "error": "Input buffer has corrupt header: glib: XML does not have <svg> root"
+ },
+ {
+  "slug": "pneu-plein-10x2-75-6-5-offroad-ultra-leger-jante-55-mm-lisere-rouge-ewheel",
+  "i": 0,
+  "url": "https://www.imooving.com/11680-large_default/pneu-plein-ultraleger-offroad-10x275-65-b55-ligne-rouge.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition",
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.052,
+   "fill": 0.818
+  },
+  "size": [
+   567,
+   782
+  ],
+  "error": null
+ },
+ {
+  "slug": "pneu-plein-10x2-75-6-5-offroad-ultra-leger-jante-55-mm-lisere-rouge-ewheel",
+  "i": 1,
+  "url": "https://www.imooving.com/11681-large_default/pneu-plein-ultraleger-offroad-10x275-65-b55-ligne-rouge.jpg",
+  "verdict": "FAIL",
+  "reasons": [
+   "cadrage serré",
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux"
+   ],
+   "parts": 3,
+   "second": 0.344,
+   "vivid": 0.062,
+   "fill": 0.774
+  },
+  "size": [
+   864,
+   864
+  ],
+  "error": null
+ },
+ {
+  "slug": "pneu-plein-10x2-75-6-5-offroad-ultra-leger-jante-55-mm-lisere-rouge-ewheel",
+  "i": 2,
+  "url": "https://www.imooving.com/11682-large_default/pneu-plein-ultraleger-offroad-10x275-65-b55-ligne-rouge.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.126,
+   "fill": 0.846
+  },
+  "size": [
+   791,
+   799
+  ],
+  "error": null
+ },
+ {
+  "slug": "pneu-plein-10x2-75-6-5-offroad-ultra-leger-jante-55-mm-lisere-rouge-ewheel",
+  "i": 3,
+  "url": "https://www.imooving.com/11683-large_default/pneu-plein-ultraleger-offroad-10x275-65-b55-ligne-rouge.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition",
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0,
+   "fill": 0.743
+  },
+  "size": [
+   326,
+   787
+  ],
+  "error": null
+ },
+ {
+  "slug": "pneu-plein-10x2-75-6-5-offroad-ultra-leger-jante-55-mm-lisere-rouge-ewheel",
+  "i": 4,
+  "url": "https://www.imooving.com/11684-large_default/pneu-plein-ultraleger-offroad-10x275-65-b55-ligne-rouge.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.031,
+   "fill": 0.706
+  },
+  "size": [
+   864,
+   864
+  ],
+  "error": null
+ },
+ {
+  "slug": "pneu-plein-10x2-75-6-5-offroad-ultra-leger-jante-55-mm-lisere-rouge-ewheel",
+  "i": 5,
+  "url": "https://ewheel.es/cdn/shop/files/8435764434471.jpg",
+  "verdict": "ERROR",
+  "reasons": [],
+  "plus": null,
+  "size": null,
+  "error": "Input buffer has corrupt header: glib: XML does not have <svg> root"
+ },
+ {
+  "slug": "pneu-plein-10x2-75-6-5-offroad-ultra-leger-jante-55-mm-lisere-rouge-ewheel",
+  "i": 6,
+  "url": "https://ewheel.es/cdn/shop/files/8435764434471_1.jpg",
+  "verdict": "ERROR",
+  "reasons": [],
+  "plus": null,
+  "size": null,
+  "error": "Input buffer has corrupt header: glib: XML does not have <svg> root"
+ },
+ {
+  "slug": "pneu-plein-10x2-75-6-5-offroad-ultra-leger-jante-55-mm-lisere-rouge-ewheel",
+  "i": 7,
+  "url": "https://ewheel.es/cdn/shop/files/8435764434471_2.jpg",
+  "verdict": "ERROR",
+  "reasons": [],
+  "plus": null,
+  "size": null,
+  "error": "Input buffer has corrupt header: glib: XML does not have <svg> root"
+ },
+ {
+  "slug": "pneu-plein-10x2-75-6-5-offroad-ultra-leger-jante-55-mm-lisere-rouge-ewheel",
+  "i": 8,
+  "url": "https://ewheel.es/cdn/shop/files/8435764434471_3.jpg",
+  "verdict": "ERROR",
+  "reasons": [],
+  "plus": null,
+  "size": null,
+  "error": "Input buffer has corrupt header: glib: XML does not have <svg> root"
+ },
+ {
+  "slug": "pneu-plein-10x2-75-6-5-offroad-ultra-leger-jante-55-mm-lisere-rouge-ewheel",
+  "i": 9,
+  "url": "https://ewheel.es/cdn/shop/files/8435764434471_4.jpg",
+  "verdict": "ERROR",
+  "reasons": [],
+  "plus": null,
+  "size": null,
+  "error": "Input buffer has corrupt header: glib: XML does not have <svg> root"
+ },
+ {
+  "slug": "pneu-plein-10x3-6-tricolore-cityneye",
+  "i": 0,
+  "url": "https://ewheel.es/cdn/shop/files/8435764437205.jpg?v=1779446183&width=1500",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.051,
+   "fill": 0.824
+  },
+  "size": [
+   600,
+   785
+  ],
+  "error": null
+ },
+ {
+  "slug": "pneu-plein-10x3-6-tricolore-cityneye",
+  "i": 1,
+  "url": "https://ewheel.es/cdn/shop/files/8435764437205_1.jpg?v=1779446183&width=1500",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.089,
+   "fill": 0.846
+  },
+  "size": [
+   795,
+   793
+  ],
+  "error": null
+ },
+ {
+  "slug": "pneu-plein-10x3-6-tricolore-cityneye",
+  "i": 2,
+  "url": "https://ewheel.es/cdn/shop/files/8435764437205_2.jpg?v=1779446183&width=1500",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition",
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0,
+   "fill": 0.716
+  },
+  "size": [
+   285,
+   793
+  ],
+  "error": null
+ },
+ {
+  "slug": "pneu-plein-10x3-6-tricolore-cityneye",
+  "i": 3,
+  "url": "https://ewheel.es/cdn/shop/files/8435764437205_3.jpg?v=1779446183&width=1500",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.026,
+   "fill": 0.853
+  },
+  "size": [
+   821,
+   792
+  ],
+  "error": null
+ },
+ {
+  "slug": "pneu-plein-10x3-6-tricolore-cityneye",
+  "i": 4,
+  "url": "https://ewheel.es/cdn/shop/files/8435764437205_4.jpg?v=1779446183&width=1500",
+  "verdict": "FAIL",
+  "reasons": [
+   "cadrage serré",
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux"
+   ],
+   "parts": 3,
+   "second": 0.367,
+   "vivid": 0.054,
+   "fill": 0.761
+  },
+  "size": [
+   864,
+   864
+  ],
+  "error": null
+ },
+ {
+  "slug": "pneu-plein-10x3-6-tricolore-cityneye",
+  "i": 5,
+  "url": "https://ewheel.es/cdn/shop/files/8435764437205.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.051,
+   "fill": 0.824
+  },
+  "size": [
+   600,
+   785
+  ],
+  "error": null
+ },
+ {
+  "slug": "pneu-plein-10x3-6-tricolore-cityneye",
+  "i": 6,
+  "url": "https://ewheel.es/cdn/shop/files/8435764437205_1.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.089,
+   "fill": 0.846
+  },
+  "size": [
+   795,
+   793
+  ],
+  "error": null
+ },
+ {
+  "slug": "pneu-plein-10x3-6-tricolore-cityneye",
+  "i": 7,
+  "url": "https://ewheel.es/cdn/shop/files/8435764437205_2.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition",
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0,
+   "fill": 0.716
+  },
+  "size": [
+   285,
+   793
+  ],
+  "error": null
+ },
+ {
+  "slug": "pneu-plein-10x3-6-tricolore-cityneye",
+  "i": 8,
+  "url": "https://ewheel.es/cdn/shop/files/8435764437205_3.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.026,
+   "fill": 0.853
+  },
+  "size": [
+   821,
+   792
+  ],
+  "error": null
+ },
+ {
+  "slug": "pneu-plein-10x3-6-tricolore-cityneye",
+  "i": 9,
+  "url": "https://ewheel.es/cdn/shop/files/8435764437205_4.jpg",
+  "verdict": "FAIL",
+  "reasons": [
+   "cadrage serré",
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux"
+   ],
+   "parts": 3,
+   "second": 0.367,
+   "vivid": 0.054,
+   "fill": 0.761
+  },
+  "size": [
+   864,
+   864
+  ],
+  "error": null
+ },
+ {
+  "slug": "pneu-plein-230x50-offroad-ultra-leger-lisere-rouge-ewheel",
+  "i": 0,
+  "url": "https://e-planetmobility.com/wp-content/uploads/2025/03/Rueda-maciza-ultraligera-offroad-230x50-linea-roja-Ewheel.jpg.webp",
+  "verdict": "ERROR",
+  "reasons": [],
+  "plus": null,
+  "size": null,
+  "error": "téléchargement vide"
+ },
+ {
+  "slug": "pneu-plein-230x50-offroad-ultra-leger-lisere-rouge-ewheel",
+  "i": 1,
+  "url": "https://e-planetmobility.com/wp-content/uploads/2025/03/Rueda-maciza-ultraligera-offroad-230x50-linea-roja-Ewheel-2.jpg.webp",
+  "verdict": "FAIL",
+  "reasons": [
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+   ],
+   "parts": 2,
+   "second": 0.416,
+   "vivid": 0.053,
+   "fill": 0.565
+  },
+  "size": [
+   994,
+   794
+  ],
+  "error": null
+ },
+ {
+  "slug": "pneu-plein-230x50-offroad-ultra-leger-lisere-rouge-ewheel",
+  "i": 2,
+  "url": "https://e-planetmobility.com/wp-content/uploads/2025/03/Rueda-maciza-ultraligera-offroad-230x50-linea-roja-Ewheel-3.jpg.webp",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.119,
+   "fill": 0.512
+  },
+  "size": [
+   994,
+   794
+  ],
+  "error": null
+ },
+ {
+  "slug": "pneu-plein-230x50-offroad-ultra-leger-lisere-rouge-ewheel",
+  "i": 3,
+  "url": "https://e-planetmobility.com/wp-content/uploads/2025/03/Rueda-maciza-ultraligera-offroad-230x50-linea-roja-Ewheel-4.jpg.webp",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition",
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0,
+   "fill": 0.69
+  },
+  "size": [
+   245,
+   725
+  ],
+  "error": null
+ },
+ {
+  "slug": "pneu-plein-230x50-offroad-ultra-leger-lisere-rouge-ewheel",
+  "i": 4,
+  "url": "https://e-planetmobility.com/wp-content/uploads/2025/03/Rueda-maciza-ultraligera-offroad-230x50-linea-roja-Ewheel-5.jpg.webp",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.08,
+   "fill": 0.587
+  },
+  "size": [
+   994,
+   794
+  ],
+  "error": null
+ },
+ {
+  "slug": "pneu-plein-230x50-offroad-ultra-leger-lisere-rouge-ewheel",
+  "i": 5,
+  "url": "https://ewheel.es/cdn/shop/files/8435764436154.jpg",
+  "verdict": "ERROR",
+  "reasons": [],
+  "plus": null,
+  "size": null,
+  "error": "Input buffer has corrupt header: glib: XML does not have <svg> root"
+ },
+ {
+  "slug": "pneu-plein-230x50-offroad-ultra-leger-lisere-rouge-ewheel",
+  "i": 6,
+  "url": "https://ewheel.es/cdn/shop/files/8435764436154_1.jpg",
+  "verdict": "ERROR",
+  "reasons": [],
+  "plus": null,
+  "size": null,
+  "error": "Input buffer has corrupt header: glib: XML does not have <svg> root"
+ },
+ {
+  "slug": "pneu-plein-230x50-offroad-ultra-leger-lisere-rouge-ewheel",
+  "i": 7,
+  "url": "https://ewheel.es/cdn/shop/files/8435764436154_2.jpg",
+  "verdict": "ERROR",
+  "reasons": [],
+  "plus": null,
+  "size": null,
+  "error": "Input buffer has corrupt header: glib: XML does not have <svg> root"
+ },
+ {
+  "slug": "pneu-plein-230x50-offroad-ultra-leger-lisere-rouge-ewheel",
+  "i": 8,
+  "url": "https://ewheel.es/cdn/shop/files/8435764436154_3.jpg",
+  "verdict": "ERROR",
+  "reasons": [],
+  "plus": null,
+  "size": null,
+  "error": "Input buffer has corrupt header: glib: XML does not have <svg> root"
+ },
+ {
+  "slug": "pneu-plein-230x50-offroad-ultra-leger-lisere-rouge-ewheel",
+  "i": 9,
+  "url": "https://ewheel.es/cdn/shop/files/8435764436154_4.jpg",
+  "verdict": "ERROR",
+  "reasons": [],
+  "plus": null,
+  "size": null,
+  "error": "Input buffer has corrupt header: glib: XML does not have <svg> root"
+ },
+ {
+  "slug": "pneu-plein-60-70-6-5-offroad-ultra-leger-jante-44-mm-lisere-rouge-ewheel",
+  "i": 0,
+  "url": "https://mobystyle.si/wp-content/uploads/2024/07/trda-guma-za-elektricni-skiro-60-70-6.5-44mm-rdeca-1.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition",
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.031,
+   "fill": 0.802
+  },
+  "size": [
+   423,
+   615
+  ],
+  "error": null
+ },
+ {
+  "slug": "pneu-plein-60-70-6-5-offroad-ultra-leger-jante-44-mm-lisere-rouge-ewheel",
+  "i": 1,
+  "url": "https://mobystyle.si/wp-content/uploads/2024/07/trda-guma-za-elektricni-skiro-60-70-6.5-44mm-rdeca-2.jpg",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 4 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 4 morceaux"
+   ],
+   "parts": 4,
+   "second": 0.285,
+   "vivid": 0.076,
+   "fill": 0.755
+  },
+  "size": [
+   648,
+   648
+  ],
+  "error": null
+ },
+ {
+  "slug": "pneu-plein-60-70-6-5-offroad-ultra-leger-jante-44-mm-lisere-rouge-ewheel",
+  "i": 2,
+  "url": "https://mobystyle.si/wp-content/uploads/2024/07/trda-guma-za-elektricni-skiro-60-70-6.5-44mm-rdeca-3.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.095,
+   "fill": 0.846
+  },
+  "size": [
+   605,
+   604
+  ],
+  "error": null
+ },
+ {
+  "slug": "pneu-plein-60-70-6-5-offroad-ultra-leger-jante-44-mm-lisere-rouge-ewheel",
+  "i": 3,
+  "url": "https://mobystyle.si/wp-content/uploads/2024/07/trda-guma-za-elektricni-skiro-60-70-6.5-44mm-rdeca-4.jpg",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "basse définition"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.052,
+   "fill": 0.836
+  },
+  "size": [
+   480,
+   648
+  ],
+  "error": null
+ },
+ {
+  "slug": "pneu-plein-60-70-6-5-offroad-ultra-leger-jante-44-mm-lisere-rouge-ewheel",
+  "i": 4,
+  "url": "https://www.doctortrotineta.ro/uploads/products/fa6e20df2a9ee462b4f0acf2b010e1e1.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition",
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.04,
+   "fill": 0.813
+  },
+  "size": [
+   561,
+   817
+  ],
+  "error": null
+ },
+ {
+  "slug": "pneu-plein-60-70-6-5-offroad-ultra-leger-jante-44-mm-lisere-rouge-ewheel",
+  "i": 5,
+  "url": "https://ewheel.es/cdn/shop/files/9501352829444.jpg",
+  "verdict": "ERROR",
+  "reasons": [],
+  "plus": null,
+  "size": null,
+  "error": "Input buffer has corrupt header: glib: XML does not have <svg> root"
+ },
+ {
+  "slug": "pneu-plein-60-70-6-5-offroad-ultra-leger-jante-44-mm-lisere-rouge-ewheel",
+  "i": 6,
+  "url": "https://ewheel.es/cdn/shop/files/9501352829444_1.jpg",
+  "verdict": "ERROR",
+  "reasons": [],
+  "plus": null,
+  "size": null,
+  "error": "Input buffer has corrupt header: glib: XML does not have <svg> root"
+ },
+ {
+  "slug": "pneu-plein-60-70-6-5-offroad-ultra-leger-jante-44-mm-lisere-rouge-ewheel",
+  "i": 7,
+  "url": "https://ewheel.es/cdn/shop/files/9501352829444_2.jpg",
+  "verdict": "ERROR",
+  "reasons": [],
+  "plus": null,
+  "size": null,
+  "error": "Input buffer has corrupt header: glib: XML does not have <svg> root"
+ },
+ {
+  "slug": "pneu-plein-60-70-6-5-offroad-ultra-leger-jante-44-mm-lisere-rouge-ewheel",
+  "i": 8,
+  "url": "https://ewheel.es/cdn/shop/files/9501352829444_3.jpg",
+  "verdict": "ERROR",
+  "reasons": [],
+  "plus": null,
+  "size": null,
+  "error": "Input buffer has corrupt header: glib: XML does not have <svg> root"
+ },
+ {
+  "slug": "pneu-plein-60-70-6-5-offroad-ultra-leger-jante-44-mm-lisere-rouge-ewheel",
+  "i": 9,
+  "url": "https://ewheel.es/cdn/shop/files/9501352829444_4.jpg",
+  "verdict": "ERROR",
+  "reasons": [],
+  "plus": null,
+  "size": null,
+  "error": "Input buffer has corrupt header: glib: XML does not have <svg> root"
+ },
+ {
+  "slug": "pneu-plein-60-70-7-offroad-ultra-leger-jante-50-mm-lisere-rouge-ewheel",
+  "i": 0,
+  "url": "https://e-planetmobility.com/wp-content/uploads/2025/03/Rueda-maciza-ultraligera-offroad-6070-7B50-linea-roja-Ewheel.jpg.webp",
+  "verdict": "ERROR",
+  "reasons": [],
+  "plus": null,
+  "size": null,
+  "error": "téléchargement vide"
+ },
+ {
+  "slug": "pneu-plein-60-70-7-offroad-ultra-leger-jante-50-mm-lisere-rouge-ewheel",
+  "i": 1,
+  "url": "https://e-planetmobility.com/wp-content/uploads/2025/03/Rueda-maciza-ultraligera-offroad-6070-7B50-linea-roja-Ewheel-2.jpg.webp",
+  "verdict": "FAIL",
+  "reasons": [
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+   ],
+   "parts": 2,
+   "second": 0.418,
+   "vivid": 0.072,
+   "fill": 0.578
+  },
+  "size": [
+   994,
+   794
+  ],
+  "error": null
+ },
+ {
+  "slug": "pneu-plein-60-70-7-offroad-ultra-leger-jante-50-mm-lisere-rouge-ewheel",
+  "i": 2,
+  "url": "https://e-planetmobility.com/wp-content/uploads/2025/03/Rueda-maciza-ultraligera-offroad-6070-7B50-linea-roja-Ewheel-3.jpg.webp",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.123,
+   "fill": 0.846
+  },
+  "size": [
+   711,
+   719
+  ],
+  "error": null
+ },
+ {
+  "slug": "pneu-plein-60-70-7-offroad-ultra-leger-jante-50-mm-lisere-rouge-ewheel",
+  "i": 3,
+  "url": "https://e-planetmobility.com/wp-content/uploads/2025/03/Rueda-maciza-ultraligera-offroad-6070-7B50-linea-roja-Ewheel-4.jpg.webp",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition",
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0,
+   "fill": 0.716
+  },
+  "size": [
+   266,
+   738
+  ],
+  "error": null
+ },
+ {
+  "slug": "pneu-plein-60-70-7-offroad-ultra-leger-jante-50-mm-lisere-rouge-ewheel",
+  "i": 4,
+  "url": "https://e-planetmobility.com/wp-content/uploads/2025/03/Rueda-maciza-ultraligera-offroad-6070-7B50-linea-roja-Ewheel-5.jpg.webp",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.072,
+   "fill": 0.536
+  },
+  "size": [
+   994,
+   794
+  ],
+  "error": null
+ },
+ {
+  "slug": "pneu-plein-60-70-7-offroad-ultra-leger-jante-50-mm-lisere-rouge-ewheel",
+  "i": 5,
+  "url": "https://ewheel.es/cdn/shop/files/8435764436161.jpg",
+  "verdict": "ERROR",
+  "reasons": [],
+  "plus": null,
+  "size": null,
+  "error": "Input buffer has corrupt header: glib: XML does not have <svg> root"
+ },
+ {
+  "slug": "pneu-plein-60-70-7-offroad-ultra-leger-jante-50-mm-lisere-rouge-ewheel",
+  "i": 6,
+  "url": "https://ewheel.es/cdn/shop/files/8435764436161_1.jpg",
+  "verdict": "ERROR",
+  "reasons": [],
+  "plus": null,
+  "size": null,
+  "error": "Input buffer has corrupt header: glib: XML does not have <svg> root"
+ },
+ {
+  "slug": "pneu-plein-60-70-7-offroad-ultra-leger-jante-50-mm-lisere-rouge-ewheel",
+  "i": 7,
+  "url": "https://ewheel.es/cdn/shop/files/8435764436161_2.jpg",
+  "verdict": "ERROR",
+  "reasons": [],
+  "plus": null,
+  "size": null,
+  "error": "Input buffer has corrupt header: glib: XML does not have <svg> root"
+ },
+ {
+  "slug": "pneu-plein-60-70-7-offroad-ultra-leger-jante-50-mm-lisere-rouge-ewheel",
+  "i": 8,
+  "url": "https://ewheel.es/cdn/shop/files/8435764436161_3.jpg",
+  "verdict": "ERROR",
+  "reasons": [],
+  "plus": null,
+  "size": null,
+  "error": "Input buffer has corrupt header: glib: XML does not have <svg> root"
+ },
+ {
+  "slug": "pneu-plein-60-70-7-offroad-ultra-leger-jante-50-mm-lisere-rouge-ewheel",
+  "i": 9,
+  "url": "https://ewheel.es/cdn/shop/files/8435764436161_4.jpg",
+  "verdict": "ERROR",
+  "reasons": [],
+  "plus": null,
+  "size": null,
+  "error": "Input buffer has corrupt header: glib: XML does not have <svg> root"
+ },
+ {
+  "slug": "pneu-plein-8-5x2-5-6-1-ultra-leger-jante-58-mm-dualtron-mini-lisere-rouge-ewheel",
+  "i": 0,
+  "url": "https://funtrott.fr/5727-large_default/pneu-plein-ultralege-8525-ligne-rouge-valable-pour-dualtron-mini.jpg",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "basse définition",
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.026,
+   "fill": 0.821
+  },
+  "size": [
+   505,
+   677
+  ],
+  "error": null
+ },
+ {
+  "slug": "pneu-plein-8-5x2-5-6-1-ultra-leger-jante-58-mm-dualtron-mini-lisere-rouge-ewheel",
+  "i": 1,
+  "url": "https://funtrott.fr/6312-large_default/pneu-plein-ultralege-8525-ligne-rouge-valable-pour-dualtron-mini.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition",
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.052,
+   "fill": 0.822
+  },
+  "size": [
+   595,
+   714
+  ],
+  "error": null
+ },
+ {
+  "slug": "pneu-plein-8-5x2-5-6-1-ultra-leger-jante-58-mm-dualtron-mini-lisere-rouge-ewheel",
+  "i": 2,
+  "url": "https://ewheel.es/cdn/shop/files/7427255408949.jpg",
+  "verdict": "ERROR",
+  "reasons": [],
+  "plus": null,
+  "size": null,
+  "error": "Input buffer has corrupt header: glib: XML does not have <svg> root"
+ },
+ {
+  "slug": "pneu-plein-8-5x2-5-6-1-ultra-leger-jante-58-mm-dualtron-mini-lisere-rouge-ewheel",
+  "i": 3,
+  "url": "https://ewheel.es/cdn/shop/files/7427255408949_1.jpg",
+  "verdict": "ERROR",
+  "reasons": [],
+  "plus": null,
+  "size": null,
+  "error": "Input buffer has corrupt header: glib: XML does not have <svg> root"
+ },
+ {
+  "slug": "pneu-plein-8-5x2-5-6-1-ultra-leger-jante-58-mm-dualtron-mini-lisere-rouge-ewheel",
+  "i": 4,
+  "url": "https://ewheel.es/cdn/shop/files/7427255408949_2.jpg",
+  "verdict": "ERROR",
+  "reasons": [],
+  "plus": null,
+  "size": null,
+  "error": "Input buffer has corrupt header: glib: XML does not have <svg> root"
+ },
+ {
+  "slug": "pneu-plein-8-5x2-5-6-1-ultra-leger-jante-58-mm-dualtron-mini-lisere-rouge-ewheel",
+  "i": 5,
+  "url": "https://ewheel.es/cdn/shop/files/7427255408949_3.jpg",
+  "verdict": "ERROR",
+  "reasons": [],
+  "plus": null,
+  "size": null,
+  "error": "Input buffer has corrupt header: glib: XML does not have <svg> root"
+ },
+ {
+  "slug": "pneu-plein-8-5x2-5-6-1-ultra-leger-jante-58-mm-dualtron-mini-lisere-rouge-ewheel",
+  "i": 6,
+  "url": "https://ewheel.es/cdn/shop/files/7427255408949_4.jpg",
+  "verdict": "ERROR",
+  "reasons": [],
+  "plus": null,
+  "size": null,
+  "error": "Input buffer has corrupt header: glib: XML does not have <svg> root"
+ },
+ {
+  "slug": "pneu-plein-8-5x2-6-1-alveole-jante-34-mm-rouge",
+  "i": 0,
+  "url": "https://www.doctortrotineta.ro/uploads/products/import_6a874df1b015a3.97741636.png",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré",
+   "couleurs vives 91 % (visuel marketing ?)"
+  ],
+  "plus": {
+   "verdict": "WARN",
+   "reasons": [
+    "couleurs vives 91 % (visuel marketing ?)"
+   ],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.91,
+   "fill": 0.478
+  },
+  "size": [
+   1080,
+   1033
+  ],
+  "error": null
+ },
+ {
+  "slug": "pneu-plein-8-5x2-6-1-alveole-jante-34-mm-rouge",
+  "i": 1,
+  "url": "https://www.doctortrotineta.ro/uploads/products/thumbs/300/import_6a874df1ebcac1.51250803.webp",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition",
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.007,
+   "fill": 0.736
+  },
+  "size": [
+   320,
+   136
+  ],
+  "error": null
+ },
+ {
+  "slug": "pneu-plein-8-5x2-6-1-alveole-jante-34-mm-rouge",
+  "i": 2,
+  "url": "https://www.doctortrotineta.ro/uploads/products/thumbs/300/import_6a874df1cd7c90.50547047.webp",
+  "verdict": "FAIL",
+  "reasons": [
+   "basse définition",
+   "cadrage serré",
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux",
+   "couleurs vives 86 % (visuel marketing ?)"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux",
+    "couleurs vives 86 % (visuel marketing ?)"
+   ],
+   "parts": 2,
+   "second": 0.075,
+   "vivid": 0.86,
+   "fill": 0.843
+  },
+  "size": [
+   324,
+   310
+  ],
+  "error": null
+ },
+ {
+  "slug": "pneu-plein-8-5x2-6-1-alveole-jante-34-mm-rouge",
+  "i": 3,
+  "url": "https://ewheel.es/cdn/shop/files/7427251493628.jpg",
+  "verdict": "ERROR",
+  "reasons": [],
+  "plus": null,
+  "size": null,
+  "error": "Input buffer has corrupt header: glib: XML does not have <svg> root"
+ },
+ {
+  "slug": "pneu-plein-8-5x2-6-1-alveole-jante-34-mm-rouge",
+  "i": 4,
+  "url": "https://ewheel.es/cdn/shop/files/7427251493628_1.jpg",
+  "verdict": "ERROR",
+  "reasons": [],
+  "plus": null,
+  "size": null,
+  "error": "Input buffer has corrupt header: glib: XML does not have <svg> root"
+ },
+ {
+  "slug": "pneu-plein-8-5x2-6-1-alveole-jante-34-mm-rouge",
+  "i": 5,
+  "url": "https://ewheel.es/cdn/shop/files/7427251493628_2.jpg",
+  "verdict": "ERROR",
+  "reasons": [],
+  "plus": null,
+  "size": null,
+  "error": "Input buffer has corrupt header: glib: XML does not have <svg> root"
+ },
+ {
+  "slug": "pneu-plein-8-5x2-6-1-alveole-jante-34-mm-rouge",
+  "i": 6,
+  "url": "https://ewheel.es/cdn/shop/files/7427251493628_3.jpg",
+  "verdict": "ERROR",
+  "reasons": [],
+  "plus": null,
+  "size": null,
+  "error": "Input buffer has corrupt header: glib: XML does not have <svg> root"
+ },
+ {
+  "slug": "pneu-plein-8-5x2-6-1-alveole-jante-34-mm-rouge",
+  "i": 7,
+  "url": "https://ewheel.es/cdn/shop/files/7427251493628_4.jpg",
+  "verdict": "ERROR",
+  "reasons": [],
+  "plus": null,
+  "size": null,
+  "error": "Input buffer has corrupt header: glib: XML does not have <svg> root"
+ }
+]
