@@ -63,15 +63,15 @@ export async function juger(buf, cle = process.env.ANTHROPIC_API_KEY) {
       body: JSON.stringify({
         model: MODELE, max_tokens: 400,
         system: [{ type: 'text', text: SYSTEM, cache_control: { type: 'ephemeral' } }],
-        tools: [TOOL], tool_choice: { type: 'tool', name: 'verdict_photo' },
-        messages: [{ role: 'user', content: [{ type: 'image', source: { type: 'base64', media_type: 'image/jpeg', data: b64 } }, { type: 'text', text: 'Décris cette photo produit.' }] }],
+        tools: [TOOL], tool_choice: { type: 'auto' },
+        messages: [{ role: 'user', content: [{ type: 'image', source: { type: 'base64', media_type: 'image/jpeg', data: b64 } }, { type: 'text', text: 'Décris cette photo produit en appelant l\'outil verdict_photo (obligatoire, une seule fois).' }] }],
       }),
     });
     if ([429, 500, 503, 529].includes(res.status)) { await new Promise((r) => setTimeout(r, (Number(res.headers.get('retry-after')) || 10 * (essai + 1)) * 1000)); continue; }
     if (!res.ok) throw new Error(`Anthropic ${res.status}: ${(await res.text()).slice(0, 200)}`);
     const j = await res.json();
     const d = j.content?.find((c) => c.type === 'tool_use')?.input;
-    if (!d) throw new Error('réponse sans verdict');
+    if (!d) { if (essai < 4) continue; throw new Error('réponse sans verdict'); }
     return { ...d, ...verdict(d), usage: j.usage };
   }
   throw new Error('Anthropic indisponible après 5 essais');
