@@ -8,7 +8,7 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import { getPrimaryImage } from "@/lib/entityImage";
-import { optimizedImage } from "@/lib/imageTransform";
+import { optimizedImage, responsiveImage } from "@/lib/imageTransform";
 import { StatusOnCard, StampOnPhoto, type EtiquetteLook, type WithCommercialStatus } from "@/components/scooter/CommercialStatus";
 
 const UNB = "'Unbounded', sans-serif";
@@ -78,9 +78,11 @@ const Count = ({ n, tone }: { n: number; tone: "light" | "dark" | "green" }) => 
 const Img = ({ s, eager, className }: { s: AtelierScooter; eager: boolean; className: string }) => {
   const src = getPrimaryImage(s.images, s.image_url, "");
   return src ? (
-    <img src={optimizedImage(src, 700)} alt={s.name} loading={eager ? "eager" : "lazy"} decoding="async" className={className} style={{ filter: "drop-shadow(0 10px 12px rgba(0,0,0,0.18))" }}
+    // 25/10 (poids 4G) : srcset 360/540/700 — une carte fait ~170 px sur téléphone (2 colonnes), 360 px suffit en écran 2x.
+    <img {...responsiveImage(src, [360, 540, 700])} sizes="(min-width: 1024px) 300px, (min-width: 768px) 30vw, 46vw"
+      alt={s.name} loading={eager ? "eager" : "lazy"} fetchPriority={eager ? "high" : "auto"} decoding="async" className={className} style={{ filter: "drop-shadow(0 10px 12px rgba(0,0,0,0.18))" }}
       // 25/10 : le redimensionnement Supabase échoue parfois (carte Navee ST5 Max vide) → repli unique sur l'original
-      onError={(e) => { const im = e.currentTarget; if (im.src !== src) im.src = src; }} />
+      onError={(e) => { const im = e.currentTarget; if (im.src !== src) { im.removeAttribute("srcset"); im.src = src; } }} />
   ) : (
     <span className={`${className} flex items-center justify-center text-5xl opacity-20`}>🛴</span>
   );
@@ -95,7 +97,7 @@ const spec = (s: AtelierScooter) => [s.voltage ? `${s.voltage} V` : null, s.powe
 // 24/10 : statut commercial (en vente / plus vendue neuve), 5 propositions ?etiquette=1..5 — sans paramètre, carte inchangée.
 export const ScooterCardAtelier = ({ s, look, index, etiquette = null }: { s: AtelierScooter; look: CarteLook; index: number; etiquette?: EtiquetteLook | null }) => {
   const n = s.compatible_parts_count ?? 0;
-  const eager = index < 6;
+  const eager = index < 2; // 25/10 : seule la 1re rangée est visible au chargement sur téléphone
   const to = `/scooter/${s.slug}`;
 
   // 5 — LIGNE : une carte large par ligne sur téléphone (photo à gauche qui déborde, infos à droite) ; dense pour 437 modèles.

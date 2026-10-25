@@ -7,6 +7,7 @@
  * trottinettes détourées qui SORTENT du cadre de leur carte, textes ≥ 14 px, cibles ≥ 44 px, plus de fond flou.
  */
 import { useEffect, useRef, useState, type RefObject } from "react";
+import { optimizedImage } from "@/lib/imageTransform"; // 25/10 poids 4G : plus d'originaux de 300-500 Ko sur l'accueil
 import { AnimatePresence, motion, useReducedMotion } from "framer-motion";
 import { ArrowRight, Bike, ChevronLeft, ChevronRight, Search as SearchIcon } from "lucide-react";
 import { getBrandColors } from "@/contexts/ScooterContext";
@@ -147,7 +148,7 @@ const PopCard = ({ sc, s, size, onSelect }: { sc: ScooterHero; s: Skin; size: "s
       <div className={`pointer-events-none absolute inset-x-0 top-0 ${lg ? "h-[240px] lg:h-[250px]" : "h-[170px] lg:h-[176px]"} flex items-end justify-center px-1 transition-transform duration-300 group-hover:-translate-y-1.5`}>
         {dark && <span aria-hidden className="absolute inset-x-2 bottom-0 top-[35%]" style={{ background: "radial-gradient(closest-side, rgba(255,255,255,0.26), rgba(255,255,255,0) 100%)" }} />}
         {sc.image_url ? (
-          <img src={sc.image_url} alt="" loading="eager" className="relative max-h-full max-w-full object-contain" style={{ filter: "drop-shadow(0 14px 14px rgba(0,0,0,0.28))" }} />
+          <img src={optimizedImage(sc.image_url, 400)} alt="" loading="eager" decoding="async" className="relative max-h-full max-w-full object-contain" style={{ filter: "drop-shadow(0 14px 14px rgba(0,0,0,0.28))" }} />
         ) : (
           <Bike className="w-16 h-16" style={{ color: s.cardSub }} strokeWidth={1.2} />
         )}
@@ -267,7 +268,7 @@ const Stage = ({ s, scooters, onSelect }: { s: Skin; scooters: ScooterHero[]; on
           <motion.div key={cur.id} className="h-full w-full flex items-end justify-center"
             initial={reduce ? false : { opacity: 0, x: 40 }} animate={{ opacity: 1, x: 0 }} exit={reduce ? undefined : { opacity: 0, x: -40 }} transition={{ duration: 0.4, ease: [0.22, 1, 0.36, 1] }}>
             {cur.image_url ? (
-              <motion.img src={cur.image_url} alt={cur.name} className="relative max-h-full max-w-[96%] object-contain" style={{ filter: scene && scene !== 1 ? "drop-shadow(0 22px 18px rgba(0,0,0,0.20))" : "drop-shadow(0 24px 22px rgba(0,0,0,0.35))" }}
+              <motion.img src={optimizedImage(cur.image_url, 800)} alt={cur.name} className="relative max-h-full max-w-[96%] object-contain" style={{ filter: scene && scene !== 1 ? "drop-shadow(0 22px 18px rgba(0,0,0,0.20))" : "drop-shadow(0 24px 22px rgba(0,0,0,0.35))" }}
                 animate={reduce || !scene || scene === 1 ? undefined : { y: [0, -8, 0] }} transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }} />
             ) : (
               <Bike className="w-32 h-32 text-white/40" strokeWidth={1} />

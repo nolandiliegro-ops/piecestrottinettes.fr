@@ -5,6 +5,7 @@
  * Plus aucun chiffre (puissance, pièces montées, cartes holo) : ce n'est pas ce qui donne envie.
  */
 import { useMemo, useRef, useState } from "react";
+import { optimizedImage } from "@/lib/imageTransform"; // 25/10 poids 4G : vignettes 46 px servies en 120 px
 import { Link } from "react-router-dom";
 import { toPng } from "html-to-image";
 import { toast } from "sonner";
@@ -117,7 +118,7 @@ const RiderCardStory = ({ data, commentCount = 0, onOpenComments, className = ""
         className="relative w-[46px] h-[46px] shrink-0 inline-flex items-center justify-center"
         style={{ background: likedRow ? LIKE_BG : "#FFFFFF", clipPath: ch(6), boxShadow: on ? `inset 0 0 0 3px ${likedRow ? "#C2410C" : SOFT}` : undefined }}
       >
-        {src && <img src={src} alt="" crossOrigin="anonymous" loading="lazy" className="max-w-[88%] max-h-[88%] object-contain" />}
+        {src && <img src={optimizedImage(src, 120)} alt="" crossOrigin="anonymous" loading="lazy" className="max-w-[88%] max-h-[88%] object-contain" />}
       </button>
     );
   };
@@ -167,10 +168,10 @@ const RiderCardStory = ({ data, commentCount = 0, onOpenComments, className = ""
         )}
         {imgOf(current) && (current?.custom_photo_url && current.model?.image_url ? (
           <button type="button" onClick={() => setReal(true)} aria-label="Voir la vraie photo" className="w-[76%] flex justify-center">
-            <img src={imgOf(current)!} alt={current?.model?.name ?? ""} crossOrigin="anonymous" className="w-full max-h-[300px] object-contain" style={{ filter: "drop-shadow(0 18px 22px rgba(0,0,0,0.55))" }} />
+            <img src={optimizedImage(imgOf(current)!, 900)} alt={current?.model?.name ?? ""} crossOrigin="anonymous" className="w-full max-h-[300px] object-contain" style={{ filter: "drop-shadow(0 18px 22px rgba(0,0,0,0.55))" }} />
           </button>
         ) : (
-          <img src={imgOf(current)!} alt={current?.model?.name ?? ""} crossOrigin="anonymous" className="w-[76%] max-h-[300px] object-contain" style={{ filter: "drop-shadow(0 18px 22px rgba(0,0,0,0.55))" }} />
+          <img src={optimizedImage(imgOf(current)!, 900)} alt={current?.model?.name ?? ""} crossOrigin="anonymous" className="w-[76%] max-h-[300px] object-contain" style={{ filter: "drop-shadow(0 18px 22px rgba(0,0,0,0.55))" }} />
         ))}
         {current?.custom_photo_url && current.model?.image_url && (
           <button type="button" data-story-hide="true" onClick={() => setReal(true)} className="absolute right-3.5 bottom-2 min-h-[44px] px-3 inline-flex items-center gap-2 bg-white text-sm font-extrabold" style={{ color: CARBON, clipPath: ch(6) }}>

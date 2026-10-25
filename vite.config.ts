@@ -24,10 +24,20 @@ export default defineConfig(({ mode }) => ({
       includeAssets: ["favicon.png", "favicon.ico"],
       workbox: {
         navigateFallbackDenylist: [/^\/~oauth/],
-        globPatterns: ["**/*.{js,css,html,ico,png,svg,jpg,webp,woff,woff2}"],
+        // 25/10 (poids 4G) : le précache téléchargeait 17 Mo en arrière-plan à la 1re visite (photos de marque 7,5 Mo,
+        // garage-floor.png 4,2 Mo, admin 1,3 Mo). Il ne garde plus que la coque de l'appli ; les images sont mises
+        // en cache à la première vue (runtimeCaching ci-dessous).
+        globPatterns: ["**/*.{js,css,html,ico,svg,woff,woff2}", "pwa-*.png", "favicon*.{png,ico}", "apple-touch-icon.png"],
         // 19/10 : packshots catégories servis à la demande, pas dans le précache (14 fichiers, ~600 Ko)
-        globIgnores: ["**/categories/**", "**/skot/**"], // 25/10 : poses de SKOT chargées à l'ouverture du chat, HD marketing jamais précachées
+        globIgnores: ["**/categories/**", "**/skot/**", "**/assets/Admin-*"], // 25/10 : poses de SKOT chargées à l'ouverture du chat, HD marketing jamais précachées ; admin jamais chez le client
         maximumFileSizeToCacheInBytes: 5 * 1024 * 1024, // 5 MiB
+        runtimeCaching: [
+          {
+            urlPattern: ({ request, sameOrigin }) => sameOrigin && request.destination === "image",
+            handler: "CacheFirst",
+            options: { cacheName: "pt-images", expiration: { maxEntries: 300, maxAgeSeconds: 30 * 24 * 3600 } },
+          },
+        ],
       },
       manifest: {
         short_name: "PiècesTrott",

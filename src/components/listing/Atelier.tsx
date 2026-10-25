@@ -11,7 +11,7 @@ import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { ArrowRight, LayoutGrid, Search, X } from "lucide-react";
 import { BRAND_PHOTOS } from "@/config/brandIdentity";
-import { optimizedImage } from "@/lib/imageTransform";
+import { optimizedImage, responsiveImage } from "@/lib/imageTransform";
 
 const UNB = "'Unbounded', sans-serif";
 const FONT = "'Plus Jakarta Sans', sans-serif";
@@ -60,7 +60,7 @@ export const PhotoTile = ({ img, name, n, logo, on = false, onClick, to, sub, cl
 }) => {
   const inner = (
     <>
-      {img ? <img src={optimizedImage(img, 700)} alt="" loading="lazy" className="absolute inset-0 w-full h-full object-cover transition-transform duration-300 group-hover:scale-[1.06]" />
+      {img ? <img {...responsiveImage(img, [400, 700])} sizes="(min-width: 768px) 340px, 50vw" alt="" loading="lazy" decoding="async" className="absolute inset-0 w-full h-full object-cover transition-transform duration-300 group-hover:scale-[1.06]" />
         : <LayoutGrid className="absolute left-1/2 top-[42%] -translate-x-1/2 -translate-y-1/2 w-8 h-8 text-white" />}
       {img && <span aria-hidden className="absolute inset-x-0 bottom-0 h-[66%]" style={{ background: "linear-gradient(to top, rgba(26,26,26,0.9), rgba(26,26,26,0))" }} />}
       {typeof n === "number" && (
@@ -68,7 +68,7 @@ export const PhotoTile = ({ img, name, n, logo, on = false, onClick, to, sub, cl
       )}
       {logo && (
         <span className="absolute right-2 top-2 w-10 h-10 p-1.5 flex items-center justify-center bg-white" style={{ clipPath: "polygon(0 0, calc(100% - 6px) 0, 100% 6px, 100% 100%, 0 100%)" }}>
-          <img src={logo} alt="" className="max-w-full max-h-full object-contain" />
+          <img src={optimizedImage(logo, 96)} alt="" loading="lazy" decoding="async" className="max-w-full max-h-full object-contain" />
         </span>
       )}
       <span className="absolute left-2.5 right-2 bottom-2">
