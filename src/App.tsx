@@ -58,6 +58,7 @@ const MentionsLegales = lazy(() => import("./pages/MentionsLegales"));
 const Ambassadeur = lazy(() => import("./pages/Ambassadeur"));
 const DevenirAmbassadeur = lazy(() => import("./pages/DevenirAmbassadeur"));
 const Pro = lazy(() => import("./pages/Pro"));
+const ProFacture = lazy(() => import("./pages/ProFacture"));
 const Contact = lazy(() => import("./pages/Contact"));
 const OAuthConsent = lazy(() => import("./pages/OAuthConsent"));
 const RiderPublicCard = lazy(() => import("./pages/RiderPublicCard"));
@@ -167,6 +168,7 @@ function App() {
             <Route path="/ambassadeur" element={<Ambassadeur />} />
             <Route path="/devenir-ambassadeur" element={<DevenirAmbassadeur />} />
             <Route path="/pro" element={<Pro />} />
+            <Route path="/pro/:token/facture/:numero" element={<ProFacture />} />
             <Route path="/pro/:token" element={<Pro />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/.lovable/oauth/consent" element={<OAuthConsent />} />

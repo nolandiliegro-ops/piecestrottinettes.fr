@@ -22,8 +22,25 @@ export type ProPiece = {
   part_id: string; name: string; slug: string | null; sku: string | null; ean: string | null; image_url: string | null;
   category_id: string | null; prix_public_ht: number; prix_pro_ht: number; stock: number; deja_commande: number;
 };
+export type ProFactureContenu = {
+  numero: string; date: string; commande: string;
+  vendeur: { nom: string; statut: string; enseigne: string; adresse: string; siret: string; email: string };
+  client: { nom: string; contact: string | null; adresse: string | null; siret: string | null; tva_intra: string | null; telephone: string | null; email: string | null };
+  lignes: { designation: string; quantite: number; prix_unitaire: number; total: number }[];
+  total: number; tva: string; paiement: { mode: string; date: string }; conditions: string;
+};
+export const lienFacture = (token: string, numero: string) => `https://piecestrottinettes.fr/pro/${token}/facture/${numero}`;
+
+export async function proFacture(token: string, numero: string): Promise<ProFactureContenu> {
+  const { data, error } = await supabase.rpc("pro_t_facture" as never, { p_token: token, p_numero: numero } as never);
+  if (error) throw error;
+  const f = data as unknown as ProFactureContenu;
+  return { ...f, total: num(f.total), lignes: (f.lignes ?? []).map((l) => ({ ...l, quantite: num(l.quantite), prix_unitaire: num(l.prix_unitaire), total: num(l.total) })) };
+}
+
 export type ProOrder = {
   order_number: string; status: string; created_at: string; retrait_prevu: string | null; total_ttc: number; payment_method: string | null;
+  facture?: string | null;
   lignes: { part_id: string | null; name: string; image_url: string | null; quantite: number; prix_ht: number }[] | null;
 };
 
@@ -48,6 +65,7 @@ export function proErrorMessage(e: unknown): string {
   if (m.includes("compte en pause")) return "Ton compte pro est en pause. Appelle Nolan pour le réactiver.";
   if (m.includes("panier vide")) return "Ton panier est vide.";
   if (m.includes("pièce introuvable")) return "Cette pièce n'est plus disponible.";
+  if (m.includes("facture introuvable")) return "Facture introuvable. Demande-la à Nolan sur WhatsApp.";
   return "Problème de connexion. Réessaie dans un instant.";
 }
 

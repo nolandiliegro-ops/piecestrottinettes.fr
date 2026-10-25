@@ -323,6 +323,11 @@ const Pro = () => {
                     </span>
                   ))}
                 </div>
+                {o.facture && token && (
+                  <a href={`/pro/${token}/facture/${o.facture}`} className="h-11 grid place-items-center font-extrabold text-[15px] text-white" style={{ background: C.ink }}>
+                    Voir la facture {o.facture}
+                  </a>
+                )}
                 <button type="button" className="h-11 font-extrabold text-[15px] bg-white" style={{ border: `2px solid ${C.green}`, color: C.greenD }}
                   onClick={() => recommander(o.lignes ?? [])}>
                   Recommander ces pièces

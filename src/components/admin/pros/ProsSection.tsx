@@ -11,7 +11,7 @@ import { supabase } from '@/integrations/supabase/client';
 import { Input } from '@/components/ui/input';
 import { optimizedImage } from '@/lib/imageTransform';
 import { numeroWhatsApp } from '@/lib/ambassadorKit';
-import { eurFR, jourFR, PRO_STATUS_LABEL } from '@/lib/pro';
+import { eurFR, jourFR, PRO_STATUS_LABEL, lienFacture } from '@/lib/pro';
 import SectionTabs from '../sections/SectionTabs';
 
 const SITE = 'https://piecestrottinettes.fr';
@@ -79,6 +79,14 @@ const APreparer = () => {
     },
   });
   const mag = useMemo(() => new Map((pros.data?.magasins ?? []).map((m) => [m.id, m])), [pros.data]);
+  const factures = useQuery({
+    queryKey: ['admin-pro-factures'],
+    queryFn: async () => {
+      const { data, error } = await supabase.from('pro_invoices' as never).select('numero, order_id').order('emise_le', { ascending: false }).limit(200);
+      if (error) throw error;
+      return new Map(((data ?? []) as { numero: string; order_id: string }[]).map((f) => [f.order_id, f.numero]));
+    },
+  });
 
   const passer = async (c: CmdPro, status: string, payment_method?: string) => {
     setBusy(c.id);
@@ -89,6 +97,15 @@ const APreparer = () => {
     if (error) { toast.error(error.message.includes('mode de paiement') ? 'Choisis le mode de paiement avant d’encaisser.' : error.message); return; }
     toast.success(status === 'prete' ? 'Commande prête.' : status === 'retiree_payee' ? 'Encaissée : stock et palier mis à jour.' : 'Commande annulée.');
     qc.invalidateQueries({ queryKey: ['admin-pro-orders'] }); qc.invalidateQueries({ queryKey: ['admin-pros'] }); qc.invalidateQueries({ queryKey: ['admin-pro-acommander'] });
+    if (status === 'retiree_payee') {
+      // La facture est émise par la base au passage « Retirée et payée » : on la relit pour envoyer son lien.
+      const { data: f } = await supabase.from('pro_invoices' as never).select('numero').eq('order_id', c.id).maybeSingle();
+      qc.invalidateQueries({ queryKey: ['admin-pro-factures'] });
+      const m = mag.get(c.pro_account_id);
+      const numero = (f as { numero?: string } | null)?.numero;
+      if (numero && m) ouvrirWhatsApp(m.telephone, `Merci ${prenom(m.contact_nom)} ! Ta facture ${numero} (${eurFR(c.total_ttc)}, payée) : ${lienFacture(m.access_token, numero)}`);
+      else toast.error('Facture non trouvée : vérifie la migration C4.');
+    }
     if (status === 'prete') {
       const m = mag.get(c.pro_account_id);
       ouvrirWhatsApp(m?.telephone ?? null, `Salut ${prenom(m?.contact_nom ?? null)} 👋 Ta commande ${c.order_number} est prête au magasin : ${eurFR(c.total_ttc)}, à régler sur place (espèces, carte ou virement). À tout de suite !`);
@@ -125,6 +142,9 @@ const APreparer = () => {
         </div>
         {c.notes && <p className="text-sm bg-yellow-50 border border-yellow-200 rounded-lg px-3 py-2">📝 {c.notes}</p>}
         <div className="flex flex-wrap items-center justify-between gap-2">
+          {factures.data?.get(c.id) && m && (
+            <a href={lienFacture(m.access_token, factures.data.get(c.id)!)} target="_blank" rel="noopener" className="text-sm font-semibold underline text-[hsl(var(--admin-accent))]">Facture {factures.data.get(c.id)}</a>
+          )}
           <p className="font-bold">{eurFR(c.total_ttc)} <span className="text-sm font-normal text-[hsl(var(--admin-text-muted))]">· pas de TVA (293 B)</span></p>
           {c.status === 'a_regler_retrait' && (
             <div className="flex flex-wrap gap-2">
