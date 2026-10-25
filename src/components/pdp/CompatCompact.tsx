@@ -87,7 +87,7 @@ const Mine = ({ scooters }: { scooters: CompatibleScooter[] }) => {
 const SearchBox = ({ q, setQ, big = false }: { q: string; setQ: (v: string) => void; big?: boolean }) => (
   <label className="relative block">
     <Search className={`${big ? "w-5 h-5 left-4" : "w-4 h-4 left-3"} absolute top-1/2 -translate-y-1/2 text-gray-400`} />
-    <input value={q} onChange={(e) => setQ(e.target.value)} placeholder="Ta trottinette ? ex. Xiaomi 4 Pro" aria-label="Chercher ta trottinette"
+    <input value={q} onChange={(e) => setQ(e.target.value)} placeholder="Ta trott ? ex. Xiaomi 4 Pro" aria-label="Chercher ta trottinette"
       className={`w-full rounded-xl border border-gray-300 bg-white focus:outline-none focus:ring-2 focus:ring-green-600 ${big ? "min-h-[56px] pl-12 text-lg" : "min-h-[48px] pl-10 text-base"}`}
       style={{ fontFamily: FONT }} />
   </label>

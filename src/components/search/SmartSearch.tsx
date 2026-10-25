@@ -328,7 +328,7 @@ const SmartSearch = ({ variant }: { variant: number }) => {
   const inputBar = (big = false) => (
     <div className="flex items-center gap-3 px-4" style={{ minHeight: big ? 72 : 60, borderBottom: `1px solid ${line}` }}>
       <Search className={big ? "w-6 h-6" : "w-5 h-5"} style={{ color: ink }} />
-      <input ref={input} value={q} onChange={(e) => setQ(e.target.value)} placeholder="Une trottinette, une marque, une pièce, une taille…"
+      <input ref={input} value={q} onChange={(e) => setQ(e.target.value)} placeholder="Trott, marque, pièce, taille…"
         aria-label="Rechercher sur le site" enterKeyHint="search" autoComplete="off" autoCorrect="off" spellCheck={false}
         className={`flex-1 min-w-0 bg-transparent outline-none ${big ? "text-xl" : "text-base"}`} style={{ fontFamily: FONT, color: ink }} />
       {q && <button type="button" onClick={() => { setQ(""); input.current?.focus(); }} aria-label="Effacer" className="w-10 h-10 flex items-center justify-center"><X className="w-5 h-5" style={{ color: sub }} /></button>}

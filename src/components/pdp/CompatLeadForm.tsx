@@ -159,7 +159,7 @@ export default function CompatLeadForm({ partId, partName }: CompatLeadFormProps
           }}
           onFocus={() => setFocused(true)}
           onBlur={() => setTimeout(() => setFocused(false), 150)}
-          placeholder="Ta trottinette (marque + modèle)"
+          placeholder="Ta trott : marque + modèle"
           aria-label="Ta trottinette"
           autoComplete="off"
           className={FIELD}

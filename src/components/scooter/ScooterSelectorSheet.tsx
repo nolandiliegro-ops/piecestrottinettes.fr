@@ -219,9 +219,16 @@ const ScooterSelectorSheet = ({ open, onOpenChange, onConfirmed }: Props) => {
     return () => { v.removeEventListener("resize", upd); v.removeEventListener("scroll", upd); };
   }, []);
 
+  const [clavier] = useState(readClavierVariant);
+  // Clavier ouvert = la zone visible est nettement plus basse que la fenêtre (iOS + Android).
+  // Mesuré sur la zone visible, pas sur le focus : un toucher sur une trott (blur) ne fait rien bouger avant le clic.
+  const keyboardOpen = !!vv && typeof window !== "undefined" && vv.h < window.innerHeight - 150;
+
   const BodyComponent = (selecteur ? SelectorBodyAtelier : SelectorBody) as typeof SelectorBodyAtelier;
   const body = (
     <BodyComponent
+      keyboard={keyboardOpen}
+      clavier={clavier}
       onFocusChange={setTyping}
       query={query}
       onQueryChange={setQuery}
@@ -441,9 +448,9 @@ const SelectorBody = ({
             type="text"
             value={query}
             onChange={(e) => onQueryChange(e.target.value)}
-            placeholder="Rechercher un modèle (marque, nom)…"
+            placeholder="Ta trott : Xiaomi, G30…"
             className="flex-1 bg-transparent outline-none"
-            style={{ fontFamily: "'Inter', sans-serif", fontSize: 13, color: THEME.carbon, minWidth: 0 }}
+            style={{ fontFamily: "'Inter', sans-serif", fontSize: 16, color: THEME.carbon, minWidth: 0 }}
           />
           {isSearching && (
             <button
@@ -1073,6 +1080,24 @@ const A_GREEN = "#4A7C59";
 const A_LINE = "#E2DCD0";
 const aCut = (px: number) => `polygon(0 0, calc(100% - ${px}px) 0, 100% ${px}px, 100% 100%, 0 100%)`;
 
+/* 25/10 soir — clavier ouvert (capture iPhone de Nolan : cartes du garage tranchées par le bouton du bas,
+   texte d'aide de la barre coupé). ?clavier=0 = ancien comportement, 1..5 = propositions. */
+export const DEFAULT_CLAVIER = 0;
+export const readClavierVariant = (): number => {
+  try {
+    const v = new URLSearchParams(window.location.search).get("clavier");
+    if (v !== null && /^[0-5]$/.test(v)) {
+      sessionStorage.setItem("pt-clavier", v);
+      return Number(v);
+    }
+    const s = sessionStorage.getItem("pt-clavier");
+    if (s !== null && /^[0-5]$/.test(s)) return Number(s);
+  } catch {
+    /* stockage indisponible */
+  }
+  return DEFAULT_CLAVIER;
+};
+
 export const readSelecteurVariant = (): 0 | 1 => {
   try {
     return new URLSearchParams(window.location.search).get("selecteur") === "0" ? 0 : 1;
@@ -1113,13 +1138,146 @@ const ACarousel = ({ title, hint, items, selectedId, garageById, onSelect }: { t
     </section>
   );
 
-const SelectorBodyAtelier = (p: SelectorBodyProps & { onFocusChange?: (f: boolean) => void }) => {
+/* ── Clavier ouvert, rien de tapé : 5 façons de montrer garage / favoris / à la une sans rien couper.
+   La place visible fait ~430 px sur iPhone (capture du 25/10) : tout doit tenir sous la barre, au-dessus du clavier. ── */
+type KbProps = {
+  variant: number;
+  owned: ScooterOption[];
+  favs: ScooterOption[];
+  popular: ScooterOption[];
+  selectedId: string | null;
+  garageById: Map<string, GarageState>;
+  onSelectGarage: (o: ScooterOption) => void;
+  onSelect: (o: ScooterOption) => void;
+};
+
+const KbThumb = ({ o, w, h }: { o: ScooterOption; w: number; h: number }) => (
+  <span className="shrink-0 flex items-center justify-center" style={{ width: w, height: h, background: "#F2EFE8", clipPath: aCut(6) }}>
+    {o.imageUrl ? <img src={o.imageUrl} alt="" loading="lazy" className="max-h-full max-w-full object-contain p-0.5" /> : <Bike size={18} className="text-gray-400" />}
+  </span>
+);
+
+const KbLabel = ({ title, count }: { title: string; count: number }) => (
+  <div className="flex items-baseline justify-between gap-2 px-5 pt-3 pb-1.5">
+    <h3 className="text-[15px] uppercase" style={{ fontFamily: A_UNB, fontWeight: 900, fontStyle: "italic", color: A_CARBON }}>{title}</h3>
+    <span className="text-sm font-bold" style={{ color: "#6B7280" }}>{count}</span>
+  </div>
+);
+
+const KbPicks = ({ variant, owned, favs, popular, selectedId, onSelectGarage, onSelect }: KbProps) => {
+  const sections = [
+    { key: "garage", title: "Ton garage", items: owned, pick: onSelectGarage },
+    { key: "favs", title: "Tes favoris", items: favs, pick: onSelectGarage },
+    { key: "une", title: "À la une", items: popular.slice(0, 12), pick: onSelect },
+  ].filter((x) => x.items.length > 0);
+  // Pour éviter le « Kaabo Kaabo… » : la marque n'est affichée que si le nom ne la contient pas déjà.
+  const fullName = (o: ScooterOption) => (o.name.toLowerCase().includes(o.brandName.toLowerCase()) ? o.name : `${o.brandName} ${o.name}`);
+
+  return (
+    <div className="pb-2">
+      {sections.map((sec) => (
+        <section key={sec.key}>
+          <KbLabel title={sec.title} count={sec.items.length} />
+          {variant === 1 && (
+            <ul className="px-5">
+              {sec.items.map((o, i) => {
+                const on = selectedId === o.id;
+                return (
+                  <li key={o.id} style={{ borderTop: i ? `1px solid ${A_LINE}` : "none" }}>
+                    <button type="button" onClick={() => sec.pick(o)} aria-pressed={on} className="w-full flex items-center gap-3 py-1.5 min-h-[56px] text-left">
+                      <KbThumb o={o} w={56} h={46} />
+                      <span className="flex-1 min-w-0 text-[15px] font-extrabold leading-tight break-words" style={{ color: A_CARBON }}>{fullName(o)}</span>
+                      {on && <span className="shrink-0 inline-flex items-center gap-1 px-2.5 h-9 text-sm font-extrabold uppercase text-white" style={{ background: A_CARBON, clipPath: aCut(6) }}><Check size={14} strokeWidth={3} /> Choisie</span>}
+                    </button>
+                  </li>
+                );
+              })}
+            </ul>
+          )}
+          {variant === 2 && (
+            <div className="flex items-start gap-2 overflow-x-auto px-5 pb-1" style={{ scrollbarWidth: "none" }}>
+              {sec.items.map((o) => {
+                const on = selectedId === o.id;
+                return (
+                  <button key={o.id} type="button" onClick={() => sec.pick(o)} aria-pressed={on} className="shrink-0 w-[112px] p-2 text-left" style={{ background: on ? A_CARBON : "#FFFFFF", clipPath: aCut(8), boxShadow: on ? "none" : `inset 0 0 0 1px ${A_LINE}` }}>
+                    <span className="flex h-[62px] items-center justify-center">
+                      {o.imageUrl ? <img src={o.imageUrl} alt="" loading="lazy" className="max-h-full max-w-full object-contain" /> : <Bike size={22} className="text-gray-400" />}
+                    </span>
+                    <span className="mt-1 block text-sm font-extrabold leading-tight break-words" style={{ color: on ? "#FFFFFF" : A_CARBON }}>{fullName(o)}</span>
+                  </button>
+                );
+              })}
+            </div>
+          )}
+          {variant === 3 && (
+            <div className="grid grid-cols-3 gap-2 px-5">
+              {sec.items.map((o) => {
+                const on = selectedId === o.id;
+                return (
+                  <button key={o.id} type="button" onClick={() => sec.pick(o)} aria-pressed={on} className="min-w-0 p-1.5 text-left" style={{ background: on ? "#EEF4F0" : "#FFFFFF", clipPath: aCut(8), boxShadow: `inset 0 0 0 ${on ? 2 : 1}px ${on ? A_GREEN : A_LINE}` }}>
+                    <span className="flex h-[52px] items-center justify-center">
+                      {o.imageUrl ? <img src={o.imageUrl} alt="" loading="lazy" className="max-h-full max-w-full object-contain" /> : <Bike size={20} className="text-gray-400" />}
+                    </span>
+                    <span className="mt-1 block text-sm font-bold leading-tight break-words" style={{ color: A_CARBON }}>{fullName(o)}</span>
+                  </button>
+                );
+              })}
+            </div>
+          )}
+          {variant === 4 && (
+            <div className="flex flex-wrap gap-2 px-5">
+              {sec.items.map((o) => {
+                const on = selectedId === o.id;
+                return (
+                  <button key={o.id} type="button" onClick={() => sec.pick(o)} aria-pressed={on} className="max-w-full inline-flex items-center gap-2 pl-1 pr-3 py-1 min-h-[44px] text-left" style={{ background: on ? A_GREEN : "#FFFFFF", clipPath: aCut(7), boxShadow: on ? "none" : `inset 0 0 0 1px ${A_LINE}` }}>
+                    <span className="shrink-0 w-9 h-9 flex items-center justify-center" style={{ background: on ? "rgba(255,255,255,0.9)" : "#F2EFE8", clipPath: aCut(5) }}>
+                      {o.imageUrl ? <img src={o.imageUrl} alt="" loading="lazy" className="max-h-full max-w-full object-contain p-0.5" /> : <Bike size={16} className="text-gray-400" />}
+                    </span>
+                    <span className="min-w-0 text-sm font-extrabold leading-tight break-words" style={{ color: on ? "#FFFFFF" : A_CARBON }}>{fullName(o)}</span>
+                  </button>
+                );
+              })}
+            </div>
+          )}
+          {variant === 5 && (
+            <div className="flex items-start gap-2.5 overflow-x-auto px-5 pb-1" style={{ scrollbarWidth: "none" }}>
+              {sec.items.map((o) => {
+                const on = selectedId === o.id;
+                return (
+                  <button key={o.id} type="button" onClick={() => sec.pick(o)} aria-pressed={on} className="relative shrink-0 w-[128px] pt-6 text-left">
+                    <div className="relative pt-[60px] px-2.5 pb-2.5" style={{ background: on ? A_CARBON : "#FFFFFF", clipPath: aCut(9), boxShadow: on ? "none" : `inset 0 0 0 1px ${A_LINE}` }}>
+                      <span className="block text-sm font-extrabold uppercase break-words" style={{ color: on ? "rgba(255,255,255,0.7)" : "#6B7280" }}>{on ? "✓ Choisie" : o.name.toLowerCase().includes(o.brandName.toLowerCase()) ? "\u00a0" : o.brandName}</span>
+                      <span className="block text-sm uppercase leading-tight break-words" style={{ fontFamily: A_UNB, fontWeight: 900, fontStyle: "italic", color: on ? "#FFFFFF" : A_CARBON }}>{o.name}</span>
+                    </div>
+                    <div className="pointer-events-none absolute inset-x-0 top-0 h-[80px] flex items-end justify-center">
+                      {o.imageUrl ? <img src={o.imageUrl} alt="" loading="lazy" className="max-h-full max-w-[86%] object-contain" style={{ filter: "drop-shadow(0 8px 8px rgba(0,0,0,0.25))" }} /> : <Bike className="w-10 h-10 text-gray-400" strokeWidth={1.2} />}
+                    </div>
+                  </button>
+                );
+              })}
+            </div>
+          )}
+        </section>
+      ))}
+    </div>
+  );
+};
+
+export const SelectorBodyAtelier = (p: SelectorBodyProps & { onFocusChange?: (f: boolean) => void; keyboard?: boolean; clavier?: number }) => {
   const owned = p.ownedItems.map(optionFromGarage);
   const favs = p.favItems.map(optionFromGarage);
+  // Clavier ouvert + proposition 1..5 : texte d'intro et bouton du bas rangés, choix en format compact.
+  const kb = !!p.keyboard && (p.clavier ?? 0) > 0;
   const selectGarageOrOption = (o: ScooterOption) => {
     const item = [...p.ownedItems, ...p.favItems].find((i) => i.scooter_model?.id === o.id);
     if (item) p.onSelectGarage(item);
     else p.onSelectOption(o);
+    // Un choix fait clavier ouvert referme le clavier : le bouton « Voir les pièces » réapparaît.
+    if (kb) (document.activeElement as HTMLElement | null)?.blur?.();
+  };
+  const selectOptionKb = (o: ScooterOption) => {
+    p.onSelectOption(o);
+    if (kb) (document.activeElement as HTMLElement | null)?.blur?.();
   };
   const selectedName = (() => {
     const all = [...owned, ...favs, ...p.popularItems, ...p.searchResults, ...p.allItems];
@@ -1131,9 +1289,9 @@ const SelectorBodyAtelier = (p: SelectorBodyProps & { onFocusChange?: (f: boolea
         <h2 className="text-[22px] uppercase leading-none" style={{ fontFamily: A_UNB, fontWeight: 900, fontStyle: "italic", letterSpacing: "-0.03em", color: A_CARBON }}>
           Ta <span style={{ color: A_GREEN }}>trottinette</span>
         </h2>
-        <p className="mt-1.5 text-sm leading-snug" style={{ color: "#4B5563" }}>
+        {!kb && <p className="mt-1.5 text-sm leading-snug" style={{ color: "#4B5563" }}>
           Choisis-la : on ne te montre que les pièces qui vont dessus. Toutes les marques du site sont là{p.hasScooters ? ", celles de ton garage en premier" : ""}.
-        </p>
+        </p>}
         <label className="mt-3 flex items-center gap-2 px-3 h-[50px] bg-white" style={{ clipPath: aCut(10), boxShadow: `inset 0 0 0 1px ${A_LINE}` }}>
           <Search size={18} strokeWidth={2.2} className="shrink-0 text-gray-500" />
           <span className="sr-only">Rechercher une trottinette</span>
@@ -1144,7 +1302,7 @@ const SelectorBodyAtelier = (p: SelectorBodyProps & { onFocusChange?: (f: boolea
             onChange={(e) => p.onQueryChange(e.target.value)}
             onFocus={() => p.onFocusChange?.(true)}
             onBlur={() => p.onFocusChange?.(false)}
-            placeholder="Marque ou modèle : Xiaomi, E-Twow GT…"
+            placeholder="Ta trott : Xiaomi, G30…"
             enterKeyHint="search"
             autoComplete="off"
             autoCorrect="off"
@@ -1171,13 +1329,13 @@ const SelectorBodyAtelier = (p: SelectorBodyProps & { onFocusChange?: (f: boolea
                 return (
                   <li key={o.id} style={{ borderTop: i ? `1px solid ${A_LINE}` : "none" }}>
                     <div className="flex items-center gap-3 py-2">
-                      <button type="button" onClick={() => p.onSelectOption(o)} className="flex-1 min-w-0 flex items-center gap-3 text-left min-h-[52px]">
+                      <button type="button" onClick={() => selectOptionKb(o)} className="flex-1 min-w-0 flex items-center gap-3 text-left min-h-[52px]">
                         <span className="w-14 h-12 shrink-0 flex items-center justify-center" style={{ background: "#F2EFE8", clipPath: aCut(6) }}>
                           {o.imageUrl ? <img src={o.imageUrl} alt="" loading="lazy" className="max-h-full max-w-full object-contain p-0.5" /> : <Bike size={20} className="text-gray-400" />}
                         </span>
                         <span className="min-w-0">
-                          <span className="block text-sm font-bold uppercase truncate" style={{ color: "#6B7280" }}>{o.brandName}{g ? (g.isOwned ? " · ton garage" : " · favori") : ""}</span>
-                          <span className="block text-[15px] font-extrabold truncate" style={{ color: A_CARBON }}>{o.name}</span>
+                          <span className="block text-sm font-bold uppercase break-words" style={{ color: "#6B7280" }}>{o.brandName}{g ? (g.isOwned ? " · ton garage" : " · favori") : ""}</span>
+                          <span className="block text-[15px] font-extrabold leading-tight break-words" style={{ color: A_CARBON }}>{o.name}</span>
                         </span>
                       </button>
                       {on ? (
@@ -1200,7 +1358,9 @@ const SelectorBodyAtelier = (p: SelectorBodyProps & { onFocusChange?: (f: boolea
             </ul>
           )
         ) : (
-          <>
+          kb ? (
+            <KbPicks variant={p.clavier ?? 1} owned={owned} favs={favs} popular={p.popularItems} selectedId={p.selectedId} garageById={p.garageById} onSelectGarage={selectGarageOrOption} onSelect={selectOptionKb} />
+          ) : <>
             {p.isLoading && p.isLoggedIn ? <div className="mx-5 mt-5 h-[150px] animate-pulse" style={{ background: "#F2EFE8", clipPath: aCut(10) }} /> : null}
             <ACarousel title="Ton garage" hint="Tes trottinettes" items={owned} selectedId={p.selectedId} garageById={p.garageById} onSelect={selectGarageOrOption} />
             <ACarousel title="Tes favoris" items={favs} selectedId={p.selectedId} garageById={p.garageById} onSelect={selectGarageOrOption} />
@@ -1215,7 +1375,7 @@ const SelectorBodyAtelier = (p: SelectorBodyProps & { onFocusChange?: (f: boolea
         )}
       </div>
 
-      <div className="shrink-0 px-5 pt-3 pb-4" style={{ borderTop: `1px solid ${A_LINE}`, background: "#FFFFFF" }}>
+      {!kb && <div className="shrink-0 px-5 pt-3 pb-4" style={{ borderTop: `1px solid ${A_LINE}`, background: "#FFFFFF" }}>
         <button type="button" onClick={p.onConfirm} disabled={!p.hasSelection} className="w-full min-h-[52px] px-4 flex items-center justify-between text-[15px] font-extrabold uppercase text-white disabled:opacity-40" style={{ background: A_CARBON, clipPath: aCut(10) }}>
           <span className="truncate">{selectedName ? `Voir les pièces pour ${selectedName}` : "Choisis une trottinette"}</span>
           <ArrowRight size={20} strokeWidth={2.6} className="shrink-0" />
@@ -1225,7 +1385,7 @@ const SelectorBodyAtelier = (p: SelectorBodyProps & { onFocusChange?: (f: boolea
             Voir toutes les pièces, sans filtre
           </button>
         )}
-      </div>
+      </div>}
     </div>
   );
 };

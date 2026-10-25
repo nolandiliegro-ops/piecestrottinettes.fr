@@ -174,7 +174,7 @@ const Scooters = () => {
           // 17/10 : maquette « Atelier » (?vue=atelier) — même squelette que /catalogue, vignettes = photos de marque.
           <section className="container mx-auto px-4 pt-6 pb-4">
             <AtelierHead title="Trottinettes" n={scootersLoading ? null : shownScooters.length} unit={activeBrandName ? `modèles ${activeBrandName}` : "modèles"}
-              query={query} onQuery={setQuery} placeholder="Ta trottinette : Xiaomi, G30…" />
+              query={query} onQuery={setQuery} placeholder="Ta trott : Xiaomi, G30…" />
             <div className="mt-5 flex gap-2.5 overflow-x-auto pb-2 -mx-4 px-4" style={{ scrollbarWidth: "none" }}>
               <PhotoTile name="Toutes" n={allScooters.length} on={!activeBrand} onClick={() => setActiveBrand(null)} />
               {visibleBrands.map((b) => (
@@ -231,7 +231,7 @@ const Scooters = () => {
                 type="search"
                 value={query}
                 onChange={(e) => setQuery(e.target.value)}
-                placeholder="Marque ou modèle (ex. Xiaomi, G30…)"
+                placeholder="Ta trott : Xiaomi, G30…"
                 className="w-full h-12 pl-12 pr-4 rounded-lg border border-gray-300 bg-white text-base text-carbon outline-none focus:ring-2 focus:ring-green-600"
               />
             </div>

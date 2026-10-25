@@ -184,7 +184,7 @@ const QuickAddModificationDialog = ({
                   onChange={(e) => setSearchQuery(e.target.value)}
                   placeholder="Rechercher une pièce..."
                   className="w-full pl-10 pr-4 py-3 bg-white/60 backdrop-blur-sm rounded-xl 
-                           border border-mineral/20 text-carbon text-sm
+                           border border-mineral/20 text-carbon text-base
                            placeholder:text-carbon/40
                            focus:outline-none focus:ring-2 focus:ring-mineral/30 focus:border-mineral/40
                            transition-all duration-200"

@@ -70,7 +70,7 @@ const Field = ({ p, kind = "line" }: { p: EpureProps; kind?: "line" | "box" }) =
     <label className={`flex items-center gap-3 h-12 min-w-0 ${kind === "box" ? "bg-white px-3.5" : ""}`}
       style={kind === "box" ? { boxShadow: `inset 0 0 0 1px ${LINE}` } : { borderBottom: `2px solid ${CARBON}` }}>
       <Search className="w-5 h-5 shrink-0" style={{ color: kind === "box" ? "#9CA3AF" : CARBON }} aria-hidden />
-      <input type="search" value={p.query} onChange={(e) => p.onQuery(e.target.value)} placeholder="Cherche une pièce : pneu 10x2.5, plaquettes…"
+      <input type="search" value={p.query} onChange={(e) => p.onQuery(e.target.value)} placeholder="Pneu 10x2.5, plaquettes…"
         aria-label="Rechercher une pièce dans le catalogue" className="w-full h-full bg-transparent outline-none text-base placeholder:text-gray-400" style={{ fontFamily: FONT, color: CARBON }} />
       {p.query && <button type="button" onClick={() => p.onQuery("")} aria-label="Effacer" className="w-11 h-11 -mr-2 flex items-center justify-center shrink-0"><X className="w-4 h-4 text-gray-500" /></button>}
     </label>

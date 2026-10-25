@@ -302,7 +302,7 @@ const SpotlightCommand = () => {
                 <input
                   autoFocus
                   type="text"
-                  placeholder="Rechercher modèles, pièces, tutos..."
+                  placeholder="Trott, pièce, tuto…"
                   value={searchQuery}
                   onChange={(e) => setSearchQuery(e.target.value)}
                   className="h-16 w-full bg-transparent pl-14 pr-20 text-lg 

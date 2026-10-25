@@ -109,7 +109,7 @@ export const PickerSheet = ({ open, onClose, onPick }: { open: boolean; onClose:
         <Thumb url={s.imageUrl} />
         <span className="flex-1 min-w-0">
           <span className="block text-sm font-semibold text-gray-500 leading-tight">{s.brandName}</span>
-          <span className="block text-base font-extrabold text-carbon leading-tight truncate">{shortName(s)}</span>
+          <span className="block text-base font-extrabold text-carbon leading-tight break-words">{shortName(s)}</span>
         </span>
         {n === 0 ? <span className="text-sm text-gray-400 shrink-0">pièces à venir</span> : on ? <Check className="w-5 h-5 shrink-0" style={{ color: GREEN }} strokeWidth={3} /> : <ChevronRight className="w-5 h-5 text-gray-300 shrink-0" />}
       </button>
@@ -133,7 +133,7 @@ export const PickerSheet = ({ open, onClose, onPick }: { open: boolean; onClose:
         <div className="px-4">
           <label className="flex items-center gap-3 h-14 px-4 bg-white" style={{ boxShadow: `inset 0 0 0 1px ${LINE}` }}>
             <Search className="w-5 h-5 text-gray-400 shrink-0" />
-            <input ref={inputRef} type="search" value={q} onChange={(e) => setQ(e.target.value)} placeholder="Xiaomi 4 Pro, Dualtron Thunder…" aria-label="Chercher ton modèle"
+            <input ref={inputRef} type="search" value={q} onChange={(e) => setQ(e.target.value)} placeholder="Ta trott : Xiaomi, G30…" aria-label="Chercher ton modèle"
               className="w-full h-full bg-transparent outline-none text-base text-carbon placeholder:text-gray-400" style={{ fontFamily: FONT }} />
             {q && <button type="button" onClick={() => setQ("")} aria-label="Effacer" className="w-9 h-9 flex items-center justify-center"><X className="w-4 h-4 text-gray-500" /></button>}
           </label>
@@ -163,7 +163,7 @@ const ChosenLine = ({ scooter, filterOn, count, total, onAll, onFilter, onChange
     <Thumb url={scooter.imageUrl} size={56} dark={dark} />
     <div className="flex-1 min-w-0">
       <p className={cn("text-sm font-semibold leading-tight", dark ? "text-white/80" : "text-gray-500")}>{filterOn ? "Pièces pour ta" : "Ta trottinette"}</p>
-      <p className={cn("text-base md:text-lg font-extrabold leading-tight truncate", dark ? "text-white" : "text-carbon")}>{fullName(scooter)}</p>
+      <p className={cn("text-base md:text-lg font-extrabold leading-tight break-words", dark ? "text-white" : "text-carbon")}>{fullName(scooter)}</p>
       {filterOn && count != null && <p className="text-sm font-bold leading-tight" style={{ color: dark ? "#fff" : GREEN }}>{count} pièce{count > 1 ? "s" : ""} vérifiée{count > 1 ? "s" : ""}</p>}
     </div>
     <div className="flex flex-col md:flex-row items-end md:items-center gap-1 md:gap-2 shrink-0">

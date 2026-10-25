@@ -397,7 +397,7 @@ const PartSeoFiche = ({ part, scooters, scootersLoading }: { part: PartDetail; s
             {scooters.length > 0 && (
               <label className="relative block max-w-md mb-3">
                 <Search className="w-4 h-4 absolute left-3 top-1/2 -translate-y-1/2 text-gray-500" />
-                <input value={q} onChange={(e) => setQ(e.target.value)} placeholder="Ta trottinette ? ex. Xiaomi 4 Pro" aria-label="Chercher ta trottinette"
+                <input value={q} onChange={(e) => setQ(e.target.value)} placeholder="Ta trott ? ex. Xiaomi 4 Pro" aria-label="Chercher ta trottinette"
                   className="w-full min-h-[48px] pl-9 pr-3 rounded-lg border bg-white text-base focus:outline-none focus:ring-2 focus:ring-green-600" style={{ borderColor: "#D1D5DB" }} />
               </label>
             )}

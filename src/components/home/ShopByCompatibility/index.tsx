@@ -429,12 +429,12 @@ const ShopByCompatibility = () => {
                   type="search"
                   value={productQuery}
                   onChange={(e) => setProductQuery(e.target.value)}
-                  placeholder="Cherche une pièce, une référence…"
+                  placeholder="Pièce ou référence…"
                   aria-label="Rechercher une pièce dans le catalogue"
                   className="flex-1 bg-transparent outline-none"
                   style={{
                     fontFamily: "'Inter', sans-serif",
-                    fontSize: 14,
+                    fontSize: 16,
                     color: THEME.carbon,
                     minWidth: 0,
                   }}

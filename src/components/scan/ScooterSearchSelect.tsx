@@ -62,7 +62,7 @@ const ScooterSearchSelect = ({ onSelect }: ScooterSearchSelectProps) => {
           value={query}
           onChange={(e) => setQuery(e.target.value)}
           placeholder="Rechercher un modèle..."
-          className="w-full pl-10 pr-4 py-3 rounded-xl bg-white/10 border border-white/10 text-white placeholder-white/30 text-sm font-display focus:outline-none focus:border-white/30 transition-colors"
+          className="w-full pl-10 pr-4 py-3 rounded-xl bg-white/10 border border-white/10 text-white placeholder-white/30 text-base font-display focus:outline-none focus:border-white/30 transition-colors"
           autoFocus
         />
         {loading && (

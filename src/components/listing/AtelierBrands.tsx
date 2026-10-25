@@ -59,7 +59,7 @@ const AtelierBrands = () => {
   return (
     <section className="px-4 lg:px-8 pt-6 pb-14" style={{ backgroundColor: "#FAFAF8" }}>
       <div className="mx-auto max-w-7xl">
-        <AtelierHead title="Marques" n={isLoading ? null : list.length} unit={list.length === base.length ? "marques" : `sur ${base.length}`} query={q} onQuery={setQ} placeholder="Ta marque : Xiaomi, Dualtron, Kaabo…" />
+        <AtelierHead title="Marques" n={isLoading ? null : list.length} unit={list.length === base.length ? "marques" : `sur ${base.length}`} query={q} onQuery={setQ} placeholder="Ta marque : Xiaomi, Kaabo…" />
 
         <p className="mt-5 mb-2 text-sm font-bold uppercase tracking-[0.18em] text-gray-500" style={{ fontFamily: FONT }}>Ton usage</p>
         <div className="flex gap-2 overflow-x-auto pb-1 -mx-4 px-4 md:mx-0 md:px-0 md:flex-wrap" style={{ scrollbarWidth: "none" }}>

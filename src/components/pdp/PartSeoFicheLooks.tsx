@@ -78,7 +78,7 @@ const SearchBox = ({ part, f, dark = false }: { part: PartDetail; f: Fiche; dark
   <div className="max-w-md">
     <label className="relative block">
       <Search className="w-4 h-4 absolute left-3 top-1/2 -translate-y-1/2 text-gray-500" />
-      <input value={f.q} onChange={(e) => f.setQ(e.target.value)} placeholder="Ta trottinette ? ex. Xiaomi 4 Pro" aria-label="Chercher ta trottinette"
+      <input value={f.q} onChange={(e) => f.setQ(e.target.value)} placeholder="Ta trott ? ex. Xiaomi 4 Pro" aria-label="Chercher ta trottinette"
         className="w-full min-h-[48px] pl-9 pr-3 rounded-lg border bg-white text-base focus:outline-none focus:ring-2 focus:ring-green-600" style={{ borderColor: "#D1D5DB" }} />
     </label>
     {f.nq.length >= 2 && (
