@@ -132,8 +132,20 @@ async function playCase(d: Deps, c: CasSkot, admin: { id: string; email: string 
   const userId = c.connecte ? admin?.id ?? null : null;
   const userEmail = c.connecte ? admin?.email ?? null : null;
   const t0 = Date.now();
-  await d.db.from("skot_messages").insert({ conversation_id: conversationId, role: "user", content: c.message, user_id: userId, page_type: "banc", page_slug: c.id });
-  const r = await d.converse({ db: d.db, apiKey: d.apiKey, message: c.message, page: c.page ? { type: c.page.type, slug: c.page.slug ?? "" } : undefined,
+  let image: { media_type: string; data: string } | undefined;
+  if (c.image_url) {
+    try {
+      const res = await fetch(c.image_url);
+      const buf = new Uint8Array(await res.arrayBuffer());
+      const mt = (res.headers.get("content-type") ?? "image/png").split(";")[0];
+      let bin = ""; for (let i = 0; i < buf.length; i += 0x8000) bin += String.fromCharCode(...buf.subarray(i, i + 0x8000));
+      if (res.ok && buf.length < 3_500_000 && ["image/jpeg", "image/png", "image/webp"].includes(mt)) image = { media_type: mt, data: btoa(bin) };
+    } catch (_) { /* image injoignable → cas rouge ci-dessous */ }
+    if (!image) return { id: c.id, origine: c.origine, vert: false, fails: ["image du cas injoignable ou trop lourde"], juge: [], juge_erreur: null, juge_brut: null,
+      reponse: "", cartes: [], outils: [], ms: 0, tokens: 0, error: "IMAGE" };
+  }
+  await d.db.from("skot_messages").insert({ conversation_id: conversationId, role: "user", content: c.message, user_id: userId, page_type: "banc", page_slug: c.id, has_image: !!image });
+  const r = await d.converse({ db: d.db, apiKey: d.apiKey, message: c.message, image, page: c.page ? { type: c.page.type, slug: c.page.slug ?? "" } : undefined,
     conversationId, history: (c.avant ?? []).flatMap((e) => [{ role: "user", content: e.client }, { role: "assistant", content: e.skot }]),
     userId, userEmail, ipHash: null, ip: "", dryRun: true });
   const ms = Date.now() - t0;
@@ -142,7 +154,7 @@ async function playCase(d: Deps, c: CasSkot, admin: { id: string; email: string 
     tokens_in: (r.tokensIn ?? 0) + (r.cacheRead ?? 0) + (r.cacheWrite ?? 0), tokens_out: r.tokensOut ?? 0, tokens_cache_read: r.cacheRead ?? 0, tokens_cache_write: r.cacheWrite ?? 0,
     model: r.ok ? "banc" : `fallback:${r.error}` });
   const fails = r.ok ? checkAssertions(c, r) : [`erreur ${r.error}`];
-  const j = r.ok ? await judge(d, `${(c.avant ?? []).map((e) => `CLIENT : ${e.client}\nSKOT : ${e.skot}\n`).join("")}CLIENT : ${c.message}${c.page ? `\n(page : ${c.page.type} ${c.page.slug ?? ""})` : ""}\nSKOT : ${r.reply}\n(cartes affichées : ${(r.cards ?? []).map((x: any) => `${x.name} [${x.compat ?? "sans statut"}]`).join(" ; ") || "aucune"})`, r.toolResults)
+  const j = r.ok ? await judge(d, `${(c.avant ?? []).map((e) => `CLIENT : ${e.client}\nSKOT : ${e.skot}\n`).join("")}CLIENT : ${c.image_url ? "[photo jointe] " : ""}${c.message}${c.page ? `\n(page : ${c.page.type} ${c.page.slug ?? ""})` : ""}\nSKOT : ${r.reply}\n(cartes affichées : ${(r.cards ?? []).map((x: any) => `${x.name} [${x.compat ?? "sans statut"}]`).join(" ; ") || "aucune"})`, r.toolResults)
     : { conforme: false, violations: [], tokens: 0 };
   return {
     id: c.id, origine: c.origine, vert: !fails.length && j.conforme, fails, juge: j.violations, juge_erreur: (j as any).error ?? null, juge_brut: (j as any).brut ?? null,
@@ -286,7 +298,7 @@ export async function runNuit(d: Deps) {
     finished_at: new Date().toISOString(), n_cas: b.n_cas, n_vert: b.n_vert, n_rouge: b.n_rouge, n_juge_rouge: b.n_juge_rouge,
     tokens: b.tokens + judgeTokens, detail: { banc: b.results, mine, upstream: b.upstream },
   }).eq("id", run.id);
-  return { ok: true, run_id: run.id, n_cas: b.n_cas, n_vert: b.n_vert, n_rouge: b.n_rouge, mine };
+  return { ok: true, run_id: run.id, n_cas: b.n_cas, n_vert: b.n_vert, n_rouge: b.n_rouge, mine, upstream: b.upstream, rouges: (b.results ?? []).filter((x: any) => !x.vert).map((x: any) => x.id) };
 }
 
 /** Nuit, 2e passage (job pg_cron skot-frais) : questions fraîches. Une fois par jour, garanti par index unique (kind='frais'). */

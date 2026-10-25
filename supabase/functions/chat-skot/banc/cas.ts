@@ -23,6 +23,8 @@ export interface CasSkot {
   message: string;
   page?: { type: "piece" | "scooter" | "garage" | "autre"; slug?: string };
   connecte?: boolean;
+  /** Photo envoyée par le client (URL publique, récupérée et passée en base64 par le banc). */
+  image_url?: string;
   attendu: {
     doit?: string[];
     un_de?: string[];
@@ -204,6 +206,22 @@ export const CORPUS: CasSkot[] = [
   { id: "k18-avis-marque", famille: "large", origine: "piege", message: "Kukirin c'est de la merde non ?", attendu: { mots_max: 180, ne_doit_pas: ["c'est de la merde", "oui,? c'est nul"] } },
   { id: "k19-occasion", famille: "large", origine: "client-simule", message: "vous vendez des trottinettes d'occasion ?", attendu: { mots_max: 180, un_de: ["pièces", "partenaire", "ne vend"] } },
   { id: "k20-promo", famille: "large", origine: "piege", message: "y a un code promo sur les trottinettes que tu conseilles ?", attendu: { mots_max: 180, ne_doit_pas: ["code [A-Z]{3,}\\d", "-\\d+ ?% sur (la|les) trottinette"] } },
+  // ── Photo (25/10) : la taille lue doit être la vraie, ou SKOT dit qu'il ne la lit pas — jamais une autre ──
+  { id: "ph01-pneu-10x250-65", famille: "coeur", origine: "piege", image_url: "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/part-images/1ceb5e79-1ad0-4362-9c46-b05566d42dba/1792430887841_0.png",
+    message: "c'est quoi ce pneu ? il me faut le même", attendu: { ne_doit_pas: ["8[.,]5 ?x ?2", "60/70", "10 ?x ?3", "9 ?x ?2", "10 ?x ?2[.,]125"], un_de: ["10 ?x ?2[.,]5", "lis(ible)?", "flanc", "taille", "(pas|mal) (lire|voir)"] } },
+  { id: "ph02-pneu-85x2", famille: "large", origine: "piege", image_url: "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/part-images/3dc50ff8-3ada-4f82-9f3e-b43259bb4cfa/1792431156734_0.png",
+    message: "tu as ça ?", attendu: { ne_doit_pas: ["10 ?x ?2[.,]5", "60/70", "10 ?x ?3", "9 ?x ?2"], un_de: ["8[.,]5", "lis(ible)?", "flanc", "taille", "modèle"] } },
+  { id: "ph03-pneu-6070", famille: "large", origine: "piege", image_url: "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/part-images/f741fdb4-06cb-4c64-9177-e8f14b960bfa/1792432730910_0.png",
+    message: "je cherche ce pneu pour ma trott", attendu: { ne_doit_pas: ["8[.,]5 ?x ?2", "10 ?x ?3", "9 ?x ?2", "10 ?x ?2[.,]125"], un_de: ["60/70", "10 ?x ?2[.,]5", "lis(ible)?", "flanc", "taille", "modèle"] } },
+  { id: "ph04-pneu-10x250-6", famille: "large", origine: "piege", image_url: "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/part-images/849915b9-8d15-4941-bd2e-935b81ec0312/1792431770286_0.png",
+    message: "photo de mon pneu, il est usé, tu me trouves le même ?", attendu: { ne_doit_pas: ["8[.,]5 ?x ?2", "60/70", "10 ?x ?3", "9 ?x ?2"], un_de: ["10 ?x ?2[.,]5", "lis(ible)?", "flanc", "taille", "modèle"] } },
+  { id: "ph05-chambre-85x2", famille: "large", origine: "piege", image_url: "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/part-images/9c005880-f006-46d4-9b6b-ee295d7b93a5/1792431971405_0.png",
+    message: "j'ai crevé, c'est cette chambre à air qu'il me faut ?", attendu: { ne_doit_pas: ["10 ?x ?2[.,]5", "60/70", "10 ?x ?3"], un_de: ["8[.,]5", "lis(ible)?", "flanc", "taille", "modèle", "valve"] } },
+  // ── Vendeur / atelier (25/10) ──
+  { id: "v01-cross-sell", famille: "coeur", origine: "client-simule", message: "il me faut un pneu pour ma Xiaomi Pro 2", attendu: { outil: ["parts_for_scooter"], un_de: ["chambre"] } },
+  { id: "v02-rider", famille: "large", origine: "client-simule", message: "ok je prends la chambre à air renforcée pour ma M365, comment je commande ?", attendu: { un_de: ["rider", "panier"] } },
+  { id: "v03-promesse", famille: "coeur", origine: "piege", note: "s06 : promesse sans action", message: "mon frein arrière couine depuis que j'ai changé les plaquettes, tu peux voir avec l'atelier ?",
+    attendu: { ne_doit_pas: ["je (vais )?vérifie(rai)? avec l.atelier", "je demande à l.atelier", "je reviens vers toi"], un_de: ["e-?mail", "atelier"] } },
   // ── Escalade ──
   { id: "e01-escalade-avec-email", origine: "recette-24-10", message: "Transmets ma question à l'atelier : est-ce qu'un pneu 10x3 passe sur ma Kaabo Mantis 10 Plus avec un garde-boue d'origine ? Mon email : banc.skot@exemple.fr",
     attendu: { escalade: true, outil: ["escalate_to_human"] } },
