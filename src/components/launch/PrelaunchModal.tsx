@@ -3,7 +3,7 @@ import { useLocation, useNavigate } from 'react-router-dom';
 import { Dialog, DialogContent, DialogDescription, DialogTitle } from '@/components/ui/dialog';
 import { useAuth } from '@/hooks/useAuth';
 import { PRELAUNCH_EVENT, RIDER_LAUNCH_OFFER, SHOP_OPEN } from '@/config/launch';
-import { useHeroScooters } from '@/hooks/useHeroScooters';
+import { skotSaison } from '@/lib/skotSaison';
 
 const SEEN_KEY = 'pt-prelaunch-seen';
 // Pas de pop-up automatique sur ces pages (inscription, espace perso, admin…)
@@ -16,42 +16,25 @@ const UNB = "'Unbounded', sans-serif";
 const FONT = "'Plus Jakarta Sans', sans-serif";
 const cut = (px: number) => `polygon(0 0, calc(100% - ${px}px) 0, 100% ${px}px, 100% 100%, 0 100%)`;
 
-/** Carte Rider d'exemple — 18/10 : même dessin que la vraie carte « Atelier » (validée par Nolan), avec de vraies
- *  trottinettes du site, pour qu'on ait envie de la sienne. L'ancienne (cercle « TOI », Anton) faisait maquette. */
-const SampleRiderCard = () => {
-  const { scooters } = useHeroScooters('');
-  const hero = scooters[0];
-  const others = scooters.slice(1, 5);
+/* 25/10/2026 (Nolan : « ce message d'accueil est chiant, le bouton Visiter le site est petit, on est trop obligé de
+   faire sa carte Rider… j'aimerais que ce soit SKOT, la mascotte, qui parle ») : SKOT accueille, « Visiter le site »
+   est un vrai bouton de même taille, l'inscription devient une proposition. Tenue de saison comme ailleurs. */
+const CARBON = '#1A1A1A';
+const SkotSays = ({ titre, children }: { titre: string; children: React.ReactNode }) => {
+  const [saison] = useState(() => skotSaison());
+  const img = saison ? `/skot/p-${saison}.webp` : '/skot/p-salut.webp';
   return (
-    <div className="relative mx-auto w-[260px] px-3.5 pt-3.5 pb-3.5 text-left motion-safe:animate-[prelaunch-float_4s_ease-in-out_infinite]"
-      style={{ background: '#1A1A1A', clipPath: cut(16), fontFamily: FONT }}>
-      <div className="flex items-start justify-between gap-2">
-        <div>
-          <p className="text-[19px] uppercase leading-none text-white" style={{ fontFamily: UNB, fontWeight: 900, fontStyle: 'italic', letterSpacing: '-0.03em' }}>Ton pseudo</p>
-          <p className="mt-1 text-sm font-semibold text-white/65">Niv. 1 · Apprenti · ta ville</p>
+    <div className="flex items-end gap-2">
+      <img src={img} alt="SKOT, la mascotte de l'atelier" width={132} height={132} draggable={false}
+        className="w-[136px] h-[136px] sm:w-[150px] sm:h-[150px] -ml-2 shrink-0 select-none motion-safe:animate-[prelaunch-ride_3.2s_ease-in-out_infinite]"
+        style={{ transformOrigin: '50% 100%', filter: 'drop-shadow(0 10px 10px rgba(0,0,0,0.22))' }} />
+      <div className="relative flex-1 min-w-0 mb-8 p-[2px]" style={{ background: CARBON, clipPath: cut(10) }}>
+        <div className="bg-white px-4 py-3 text-left" style={{ clipPath: cut(9) }}>
+          <DialogTitle className="text-[17px] font-extrabold italic leading-tight" style={{ fontFamily: FONT, color: CARBON }}>{titre}</DialogTitle>
+          <DialogDescription asChild>
+            <div className="mt-1 text-[15px] leading-snug" style={{ fontFamily: FONT, color: '#374151' }}>{children}</div>
+          </DialogDescription>
         </div>
-        <span className="text-[15px] leading-none pt-0.5" style={{ fontFamily: UNB, fontWeight: 900, fontStyle: 'italic', color: '#8FBF9C' }}>+50 XP</span>
-      </div>
-      <div className="relative mt-10">
-        <div className="relative h-[118px]" style={{ background: '#262626', clipPath: cut(10) }}>
-          <span aria-hidden className="absolute inset-0" style={{ background: 'radial-gradient(60% 60% at 50% 70%, rgba(255,255,255,0.14), rgba(255,255,255,0))' }} />
-          <span className="absolute left-2 bottom-2 px-2 py-0.5 text-sm font-extrabold uppercase" style={{ background: '#8FBF9C', color: '#1A1A1A', clipPath: cut(5) }}>Ta machine</span>
-        </div>
-        <div className="pointer-events-none absolute inset-x-0 -top-10 h-[136px] flex items-end justify-center">
-          {hero?.image_url && <img src={hero.image_url} alt="" className="max-h-full max-w-[84%] object-contain" style={{ filter: 'drop-shadow(0 14px 12px rgba(0,0,0,0.45))' }} />}
-        </div>
-      </div>
-      <div className="mt-2.5 flex gap-1.5">
-        {others.map((o) => (
-          <span key={o.id} className="w-10 h-10 overflow-hidden shrink-0" style={{ background: '#F2EFE8', clipPath: cut(5) }}>
-            {o.image_url && <img src={o.image_url} alt="" className="w-full h-full object-contain p-0.5" />}
-          </span>
-        ))}
-        <span className="flex-1 min-w-0 self-center text-sm font-semibold text-white/65 leading-tight">ton garage</span>
-      </div>
-      <div className="mt-3 px-3 py-2 flex items-center justify-between" style={{ background: '#262626', clipPath: cut(7), boxShadow: 'inset 0 0 0 1px #3A3A3A' }}>
-        <span className="text-sm font-bold tracking-widest text-white/75">RIDER-••••••</span>
-        <span className="text-[20px] leading-none" style={{ fontFamily: UNB, fontWeight: 900, fontStyle: 'italic', color: '#8FBF9C' }}>-{RIDER_LAUNCH_OFFER.percent} %</span>
       </div>
     </div>
   );
@@ -59,6 +42,8 @@ const SampleRiderCard = () => {
 
 const PrelaunchModal = () => {
   const [open, setOpen] = useState(false);
+  // « accueil » = première visite ; « panier » = clic sur Ajouter au panier / panier / paiement
+  const [reason, setReason] = useState<'accueil' | 'panier'>('accueil');
   const location = useLocation();
   const navigate = useNavigate();
   const { user } = useAuth();
@@ -66,7 +51,7 @@ const PrelaunchModal = () => {
   // Ouverture à la demande (clic sur « Ajouter au panier », panier, checkout)
   useEffect(() => {
     if (SHOP_OPEN) return;
-    const handler = () => setOpen(true);
+    const handler = () => { setReason('panier'); setOpen(true); };
     window.addEventListener(PRELAUNCH_EVENT, handler);
     return () => window.removeEventListener(PRELAUNCH_EVENT, handler);
   }, []);
@@ -76,7 +61,7 @@ const PrelaunchModal = () => {
     if (SHOP_OPEN || user) return;
     if (QUIET_PREFIXES.some((p) => location.pathname.startsWith(p))) return;
     if (safeGet(SEEN_KEY)) return;
-    const t = window.setTimeout(() => setOpen(true), 900);
+    const t = window.setTimeout(() => { setReason('accueil'); setOpen(true); }, 900);
     return () => window.clearTimeout(t);
   }, [location.pathname, user]);
 
@@ -95,40 +80,45 @@ const PrelaunchModal = () => {
 
   return (
     <Dialog open={open} onOpenChange={handleOpenChange}>
-      <DialogContent className="w-[calc(100%-32px)] max-w-md rounded-none border-0 bg-[#FAFAF8] p-0 overflow-hidden max-h-[92dvh] overflow-y-auto" style={{ clipPath: cut(18) }}>
-        <style>{`@keyframes prelaunch-float{0%,100%{transform:translateY(0) rotate(-3deg)}50%{transform:translateY(-6px) rotate(-1.5deg)}}`}</style>
-        <div className="pt-8 pb-6 px-6" style={{ background: "#E9E4DA" }}>
-          <SampleRiderCard />
+      <DialogContent className="w-[calc(100%-32px)] max-w-[420px] rounded-none border-0 bg-[#FAFAF8] p-0 overflow-hidden max-h-[92dvh] overflow-y-auto" style={{ clipPath: cut(18) }}>
+        <style>{`@keyframes prelaunch-ride{0%,100%{transform:translateY(0) rotate(-1.5deg)}50%{transform:translateY(-5px) rotate(1.5deg)}}`}</style>
+        <div className="pt-12 px-5 pb-1" style={{ background: '#E9E4DA' }}>
+          {reason === 'panier' ? (
+            <SkotSays titre="Pas encore, le shop ouvre bientôt !">
+              Les commandes ne sont pas encore ouvertes. Crée ton garage : tu réserves <b style={{ color: CARBON }}>-{RIDER_LAUNCH_OFFER.percent}&nbsp;% sur ta première commande</b> et je te préviens le jour&nbsp;J.
+            </SkotSays>
+          ) : (
+            <SkotSays titre="Salut, moi c'est SKOT !">
+              Je connais toutes les pièces du catalogue. Dis-moi ta trott, je te montre ce qui va dessus. Le shop ouvre bientôt.
+            </SkotSays>
+          )}
         </div>
-        <div className="px-6 pb-6 pt-5 text-center">
-          <DialogTitle className="uppercase text-[24px] leading-[1.02] text-[#1A1A1A]" style={{ fontFamily: UNB, fontWeight: 900, fontStyle: "italic", letterSpacing: "-0.03em" }}>
-            Le shop ouvre <span style={{ color: '#4A7C59' }}>bientôt.</span>
-          </DialogTitle>
-          <DialogDescription className="mt-3 text-[15px] leading-relaxed text-gray-600" style={{ fontFamily: FONT }}>
-            Les commandes ne sont pas encore ouvertes. Crée ta <strong className="text-[#1A1A1A]">carte Rider</strong> dès
-            maintenant&nbsp;: tu réserves <strong className="text-[#1A1A1A]">-{RIDER_LAUNCH_OFFER.percent}&nbsp;% sur ta
-            première commande</strong> au lancement et on te prévient le jour J.
-          </DialogDescription>
-
-          <button
-            type="button"
-            onClick={goCreateCard}
-            className="mt-6 w-full min-h-[52px] flex items-center justify-center px-6 py-3 font-extrabold uppercase tracking-wide text-white outline-none focus:outline-none focus-visible:ring-2 focus-visible:ring-[#4A7C59]"
-            style={{ background: "#1A1A1A", clipPath: cut(10), fontFamily: FONT }}
-          >
-            {user ? 'Voir ma carte Rider' : 'Créer ma carte Rider'}
-          </button>
-          <button
-            type="button"
-            onClick={() => handleOpenChange(false)}
-            className="mt-2 w-full min-h-[44px] text-[15px] font-medium text-gray-600 underline-offset-4 hover:underline"
-          >
-            Visiter le site
-          </button>
-
-          <p className="mt-4 text-[14px] text-gray-500">
-            -{RIDER_LAUNCH_OFFER.percent}&nbsp;% plafonné à {RIDER_LAUNCH_OFFER.maxEuros}&nbsp;€, une commande, valable{' '}
-            {RIDER_LAUNCH_OFFER.validityDays}&nbsp;jours après l'ouverture. Hors trottinettes complètes et batteries.
+        <div className="px-5 pt-5 pb-5">
+          <div className="grid grid-cols-2 gap-2">
+            <button
+              type="button"
+              onClick={reason === 'panier' ? goCreateCard : () => handleOpenChange(false)}
+              className="min-h-[52px] px-3 font-extrabold uppercase text-[15px] text-white outline-none focus-visible:ring-2 focus-visible:ring-[#4A7C59]"
+              style={{ background: CARBON, clipPath: cut(10), fontFamily: FONT }}
+            >
+              {reason === 'panier' ? (user ? 'Mon garage' : 'Créer mon garage') : 'Visiter le site'}
+            </button>
+            <button
+              type="button"
+              onClick={reason === 'panier' ? () => handleOpenChange(false) : goCreateCard}
+              className="min-h-[52px] px-3 font-extrabold uppercase text-[15px] outline-none focus-visible:ring-2 focus-visible:ring-[#4A7C59]"
+              style={{ background: '#FFFFFF', color: CARBON, clipPath: cut(10), boxShadow: `inset 0 0 0 2px ${CARBON}`, fontFamily: FONT }}
+            >
+              {reason === 'panier' ? 'Continuer' : (user ? 'Mon garage' : 'Créer mon garage')}
+            </button>
+          </div>
+          {!user && reason === 'accueil' && (
+            <p className="mt-3 text-[14px] font-semibold text-center" style={{ fontFamily: FONT, color: '#374151' }}>
+              Garage gratuit = ton code RIDER : <span style={{ color: '#4A7C59' }}>-{RIDER_LAUNCH_OFFER.percent}&nbsp;%</span> sur ta première commande au lancement.
+            </p>
+          )}
+          <p className="mt-2 text-[14px] text-gray-500 text-center">
+            Plafonné à {RIDER_LAUNCH_OFFER.maxEuros}&nbsp;€, une commande, valable {RIDER_LAUNCH_OFFER.validityDays}&nbsp;jours après l'ouverture. Hors trottinettes complètes et batteries.
           </p>
         </div>
       </DialogContent>
