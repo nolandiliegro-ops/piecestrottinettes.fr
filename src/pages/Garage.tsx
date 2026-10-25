@@ -38,6 +38,9 @@ const TutosCard = lazy(() => import('@/components/garage/TutosCard'));
 import GarageVueStyles, { readGarageVue, GarageVueTabs, type GarageTab } from '@/components/garage/GarageVueStyles';
 import GarageAtelierView from '@/components/garage/atelier/GarageAtelierView';
 const RiderCardLightbox = lazy(() => import('@/components/garage/RiderCardLightbox'));
+import RiderCardBand from '@/components/garage/story/RiderCardBand';
+// 25/10 : carte Rider Story ; ?carte=0 = ancienne carte (fenêtre).
+const legacyCard = typeof window !== 'undefined' && new URLSearchParams(window.location.search).get('carte') === '0';
 
 
 import {
@@ -236,6 +239,9 @@ const Garage = () => {
               ) : (
                 /* === 18/10 : vue Atelier (défaut) — refonte propre ; ?vue=0 ancienne page, ?vue=2..5 anciennes propositions === */
                 vue === 6 ? (
+                  <>
+                  {/* 25/10 : la carte Rider Story en grand, en tête du garage (?carte=0 : ancienne carte en fenêtre) */}
+                  {!legacyCard && <div className="mb-8 lg:mb-12"><RiderCardBand /></div>}
                   <GarageAtelierView
                     profile={profile}
                     scooter={selectedScooter as any}
@@ -247,8 +253,9 @@ const Garage = () => {
                     onTheme={() => setThemePickerOpen(true)}
                     onAddModification={() => setQuickAddOpen(true)}
                     onOpenHistory={() => setHistoryOpen(true)}
-                    onOpenRiderCard={() => setRiderCardOpen(true)}
+                    onOpenRiderCard={() => (legacyCard ? setRiderCardOpen(true) : document.getElementById('ma-carte')?.scrollIntoView({ behavior: 'smooth', block: 'start' }))}
                   />
+                  </>
                 ) : (
                 <>
                 {vue !== 0 && <GarageVueStyles vue={vue} tab={gTab} />}

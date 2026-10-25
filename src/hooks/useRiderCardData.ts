@@ -20,6 +20,10 @@ export interface RiderMachine {
   nickname: string | null;
   mood: string | null;
   is_featured: boolean;
+  /** true = à lui ; false = coup de cœur (« Je kiffe »). */
+  is_owned: boolean;
+  /** Emplacement sur la carte Story (1..5 par groupe), null = pas sur la carte. Limite tenue par la base. */
+  card_slot: number | null;
   custom_photo_url: string | null;
   photo_xp_claimed: boolean;
   model: {
@@ -52,6 +56,8 @@ export interface RiderCardData {
   modsByMachine: Record<string, RiderMod[]>;
   likes: number;
   likedByMe: boolean;
+  /** Wallpaper du rider (garage_themes.image_url de son thème actif, sinon le 1er thème actif). */
+  wallpaper_url: string | null;
 }
 
 const PROFILE_FIELDS =
@@ -83,7 +89,7 @@ export const useRiderCardData = (opts: { username?: string } = {}) => {
       const { data: garage, error: garageError } = await supabase
         .from("user_garage")
         .select(
-          `id, nickname, mood, is_featured, custom_photo_url, photo_xp_claimed, added_at,
+          `id, nickname, mood, is_featured, is_owned, card_slot, custom_photo_url, photo_xp_claimed, added_at,
            scooter_model:scooter_models(
              id, name, slug, image_url, power_watts, voltage, year,
              brand:brands!scooter_models_brand_id_fkey(name)
@@ -98,6 +104,8 @@ export const useRiderCardData = (opts: { username?: string } = {}) => {
         nickname: row.nickname,
         mood: row.mood,
         is_featured: !!row.is_featured,
+        is_owned: row.is_owned !== false,
+        card_slot: row.card_slot ?? null,
         custom_photo_url: row.custom_photo_url,
         photo_xp_claimed: !!row.photo_xp_claimed,
         model: row.scooter_model
@@ -152,7 +160,18 @@ export const useRiderCardData = (opts: { username?: string } = {}) => {
         likedByMe = !!mine;
       }
 
-      return { profile, machines, modsByMachine, likes: likes ?? 0, likedByMe };
+      // 5. Wallpaper (carte Story)
+      let wallpaper_url: string | null = null;
+      if (profile.active_theme_key) {
+        const { data: th } = await supabase.from("garage_themes").select("image_url").eq("key", profile.active_theme_key).eq("is_active", true).maybeSingle();
+        wallpaper_url = th?.image_url ?? null;
+      }
+      if (!wallpaper_url) {
+        const { data: first } = await supabase.from("garage_themes").select("image_url").eq("is_active", true).order("display_order", { ascending: true }).limit(1).maybeSingle();
+        wallpaper_url = first?.image_url ?? null;
+      }
+
+      return { profile, machines, modsByMachine, likes: likes ?? 0, likedByMe, wallpaper_url };
     },
   });
 };
@@ -271,5 +290,32 @@ export const useUploadMachinePhoto = () => {
       toast.success(xpAwarded ? "Photo ajoutée — +50 XP !" : "Photo mise à jour");
     },
     onError: () => toast.error("Impossible d'envoyer la photo"),
+  });
+};
+
+/** Carte Story (25/10) : met une machine sur la carte (1er emplacement libre de son groupe) ou l'en retire. */
+export const useToggleCardSlot = () => {
+  const queryClient = useQueryClient();
+  const { user } = useAuthContext();
+  return useMutation({
+    mutationFn: async ({ machine, all }: { machine: RiderMachine; all: RiderMachine[] }) => {
+      if (!user) throw new Error("Not authenticated");
+      if (machine.card_slot != null) {
+        const { error } = await supabase.from("user_garage").update({ card_slot: null } as never).eq("id", machine.id);
+        if (error) throw error;
+        return "off" as const;
+      }
+      const used = new Set(all.filter((m) => m.is_owned === machine.is_owned && m.card_slot != null).map((m) => m.card_slot));
+      const free = [1, 2, 3, 4, 5].find((n) => !used.has(n));
+      if (!free) throw new Error("full");
+      const { error } = await supabase.from("user_garage").update({ card_slot: free } as never).eq("id", machine.id);
+      if (error) throw error;
+      return "on" as const;
+    },
+    onSuccess: () => queryClient.invalidateQueries({ queryKey: ["rider-card"] }),
+    onError: (err: any) => {
+      if (err?.message === "full" || err?.code === "23505") toast.info("5 maximum : retire d'abord une trott de ta carte");
+      else toast.error("Impossible de modifier ta carte");
+    },
   });
 };

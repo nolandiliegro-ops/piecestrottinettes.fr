@@ -17,6 +17,9 @@ import Footer from "@/components/Footer";
 import GarageBackground from "@/components/garage/GarageBackground";
 import RiderAvatar from "@/components/garage/RiderAvatar";
 import RiderCard from "@/components/garage/RiderCard";
+import RiderCardStory from "@/components/garage/story/RiderCardStory";
+import RiderCardComments from "@/components/garage/story/RiderCardComments";
+import { useCardComments } from "@/hooks/useRiderCardComments";
 import { Panel, H2, ScooterStage, PartsShelf, SKIN, type GarageAtelierScooter } from "@/components/garage/atelier/GarageAtelierView";
 import { useRiderCardData, useToggleCardLike } from "@/hooks/useRiderCardData";
 import { useAuthContext } from "@/contexts/AuthContext";
@@ -33,6 +36,8 @@ const RiderPublicCard = () => {
   const { username } = useParams<{ username: string }>();
   const { user } = useAuthContext();
   const { data, isLoading } = useRiderCardData({ username });
+  const { data: comments = [] } = useCardComments(data?.profile.id);
+  const legacyCard = typeof window !== "undefined" && new URLSearchParams(window.location.search).get("carte") === "0";
   const like = useToggleCardLike();
   const [i, setI] = useState(0);
 
@@ -158,11 +163,19 @@ const RiderPublicCard = () => {
               {stageScooter && <PartsShelf scooter={stageScooter} title={`Les pièces pour sa ${stageScooter.scooter_model.name}`} />}
             </div>
 
-            <aside className="flex flex-col gap-4 min-w-0">
-              <Panel>
-                <H2>Sa carte rider</H2>
-                <div className="mt-3 flex justify-center"><RiderCard mode="public" data={data} /></div>
-              </Panel>
+            <aside className="order-first lg:order-none flex flex-col gap-4 min-w-0 items-center lg:items-stretch">
+              {legacyCard ? (
+                <Panel>
+                  <H2>Sa carte rider</H2>
+                  <div className="mt-3 flex justify-center"><RiderCard mode="public" data={data} /></div>
+                </Panel>
+              ) : (
+                <>
+                  {/* 25/10 : carte Rider Story (choix de Nolan) + ses commentaires */}
+                  <RiderCardStory data={data} commentCount={comments.length} onOpenComments={() => document.getElementById("carte-commentaires")?.scrollIntoView({ behavior: "smooth", block: "start" })} />
+                  <div className="w-full max-w-[360px] lg:max-w-none"><RiderCardComments id="carte-commentaires" ownerId={data.profile.id} ownerName={name} /></div>
+                </>
+              )}
               {!isMe && (
                 <section className="p-5" style={{ background: CARBON, clipPath: cut(14) }}>
                   <p className="text-[20px] uppercase leading-tight text-white" style={{ fontFamily: UNB, fontWeight: 900, fontStyle: "italic", letterSpacing: "-0.02em" }}>

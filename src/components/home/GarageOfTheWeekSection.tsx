@@ -7,6 +7,7 @@ import GarageWeekIntro from "./garage-week/GarageWeekIntro";
 import GarageWeekFrame from "./garage-week/GarageWeekFrame";
 import GarageAtelier, { readGarageVariant } from "./garage-week/GarageAtelier";
 import GarageVitrine from "./garage-week/GarageVitrine";
+import HomeRiderCard from "./garage-week/HomeRiderCard";
 
 const easeOutExpo: [number, number, number, number] = [0.16, 1, 0.3, 1];
 
@@ -336,6 +337,12 @@ const GarageOfTheWeekSection = () => {
   // 19/10 : nouveau bloc aligné sur le garage refait = défaut ; ?garage=0 = ancien bloc ; 1..5 = propositions du 18/10.
   let garageParam: string | null = null;
   try { garageParam = new URLSearchParams(window.location.search).get("garage"); } catch { /* SSR */ }
+  // 25/10 : carte Rider Story « de la semaine » par défaut ; ?carte=0 = bloc Vitrine précédent.
+  let carteParam: string | null = null;
+  try { carteParam = new URLSearchParams(window.location.search).get("carte"); } catch { /* SSR */ }
+  if (garageParam === null && carteParam !== "0" && ridersBundle.some((r) => r.username)) {
+    return <HomeRiderCard riders={ridersBundle.filter((r) => r.username)} isAuthenticated={!!user} />;
+  }
   if (garageParam === null) {
     return (
       <GarageVitrine
