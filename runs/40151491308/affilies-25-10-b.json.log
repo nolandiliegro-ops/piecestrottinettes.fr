@@ -1,0 +1,192 @@
+⚠  [iScooter] iscooter-i8m — clés frein manquantes (assumé) : disc_diameter, disc_pcd, disc_holes
+⚠  [iScooter] iscooter-f7 — clés frein manquantes (assumé) : disc_diameter, disc_pcd, disc_holes
+⚠  [iScooter] iscooter-f7-ultra — clés frein manquantes (assumé) : disc_diameter, disc_pcd, disc_holes
+⚠  [iScooter] iscooter-dx5-pro — clés frein manquantes (assumé) : disc_diameter, disc_pcd, disc_holes
+⚠  [iScooter] iscooter-w12 — clés frein manquantes (assumé) : disc_diameter, disc_pcd, disc_holes
+⚠  [Isinwheel] isinwheel-gt4s — clés frein manquantes (assumé) : disc_diameter, disc_pcd, disc_holes
+⚠  [Isinwheel] isinwheel-h7-pro — clés frein manquantes (assumé) : disc_diameter, disc_pcd, disc_holes
+⚠  [Isinwheel] isinwheel-d2 — clés frein manquantes (assumé) : disc_diameter, disc_pcd, disc_holes
+⚠  [Circooter] circooter-landturbo-pro — clés frein manquantes (assumé) : disc_diameter, disc_pcd, disc_holes
+⚠  [Circooter] circooter-landturbo-dual — clés frein manquantes (assumé) : disc_diameter, disc_pcd, disc_holes
+⚠  [Navee] navee-ut3-max — clés frein manquantes (assumé) : disc_diameter, disc_pcd, disc_holes
+⚠  [Navee] navee-ut5-max — clés frein manquantes (assumé) : disc_diameter, disc_pcd, disc_holes
+⚠  [Navee] navee-nt5-ultra-x — clés frein manquantes (assumé) : disc_diameter, disc_pcd, disc_holes
+⚠  [Navee] navee-nt5-max — clés frein manquantes (assumé) : disc_pcd, disc_holes
+⚠  [Navee] navee-xt5-ultra — clés frein manquantes (assumé) : disc_diameter, disc_pcd, disc_holes
+⚠  [Navee] navee-st5-max — clés frein manquantes (assumé) : disc_diameter, disc_pcd, disc_holes
+⚠  [Navee] navee-n65i-ii — clés frein manquantes (assumé) : disc_diameter, disc_pcd, disc_holes
+⚠  [Xiaomi] xiaomi-electric-scooter-6-essential — clés frein manquantes (assumé) : disc_diameter, disc_pcd, disc_holes
+⚠  [Xiaomi] xiaomi-electric-scooter-6-max — clés frein manquantes (assumé) : disc_diameter, disc_pcd, disc_holes
+⚠  [Xiaomi] xiaomi-electric-scooter-6-ultra — clés frein manquantes (assumé) : disc_diameter, disc_pcd, disc_holes
+⚠  [Dualtron] dualtron-victor-luxury-plus — clés frein manquantes (assumé) : disc_pcd, disc_holes
+⚠  [Dualtron] dualtron-togo-limited — clés frein manquantes (assumé) : disc_pcd, disc_holes
+⚠  [Dualtron] dualtron-spider-max — clés frein manquantes (assumé) : disc_pcd, disc_holes
+⚠  [Dualtron] dualtron-alien — clés frein manquantes (assumé) : disc_pcd, disc_holes
+⚠  [Dualtron] dualtron-achilleus-2025 — clés frein manquantes (assumé) : disc_diameter, disc_pcd, disc_holes
+⚠  [Dualtron] dualtron-eagle-pro — clés frein manquantes (assumé) : disc_diameter, disc_pcd, disc_holes
+⚠  [Dualtron] dualtron-spider-2 — clés frein manquantes (assumé) : disc_diameter, disc_pcd, disc_holes
+⚠  [Dualtron] dualtron-x-limited — clés frein manquantes (assumé) : disc_diameter, disc_pcd, disc_holes
+⚠  [Halo Knight] halo-knight-t102 — clés frein manquantes (assumé) : disc_diameter, disc_pcd, disc_holes
+⚠  [Ootd] ootd-t08 — clés frein manquantes (assumé) : disc_diameter, disc_pcd, disc_holes
+⚠  [Kukirin] kukirin-t4 — clés frein manquantes (assumé) : disc_diameter, disc_pcd, disc_holes
+⚠  [Ninebot] ninebot-f2-plus — clés frein manquantes (assumé) : disc_diameter, disc_pcd, disc_holes
+⚠  [Ninebot] ninebot-f3-e — clés frein manquantes (assumé) : disc_diameter, disc_pcd, disc_holes
+⚠  [Ninebot] ninebot-e2-plus — clés frein manquantes (assumé) : disc_diameter, disc_pcd, disc_holes
+⚠  [Ninebot] ninebot-e25e — clés frein manquantes (assumé) : disc_diameter, disc_pcd, disc_holes
+⚠  [Ninebot] ninebot-f65 — clés frein manquantes (assumé) : disc_diameter, disc_pcd, disc_holes
+⚠  [Kaabo] kaabo-mantis-king-gt — clés frein manquantes (assumé) : disc_diameter, disc_pcd, disc_holes
+⚠  [Kaabo] kaabo-mantis-x-plus — clés frein manquantes (assumé) : disc_diameter, disc_pcd, disc_holes
+⚠  [Kaabo] kaabo-skywalker-10h — clés frein manquantes (assumé) : disc_diameter, disc_pcd, disc_holes
+⚠  [Kaabo] kaabo-mantis-8 — clés frein manquantes (assumé) : disc_diameter, disc_pcd, disc_holes
+⚠  [Beaster] beaster-bs15 — clés frein manquantes (assumé) : disc_diameter, disc_pcd, disc_holes
+⚠  [Beaster] beaster-bs65 — clés frein manquantes (assumé) : disc_diameter, disc_pcd, disc_holes
+⚠  [Joyor] joyor-s8-s — clés frein manquantes (assumé) : disc_diameter, disc_pcd, disc_holes
+⚠  [Velity] velity-511-r — clés frein manquantes (assumé) : disc_diameter, disc_pcd, disc_holes
+⚠  [Urbanglide] urbanglide-ride-100-pro-2 — clés frein manquantes (assumé) : disc_diameter, disc_pcd, disc_holes
+⚠  45 scooter(s) sans clés frein complètes — poursuite (--allow-missing-keys).
+
+
+→ iScooter (5 modèle(s))
+   ✅ Insérés : 5   ⏭  Ignorés : 0
+   🖼  Images iscooter-i8m : traitement... ✅ 3/3 ok
+   🖼  Images iscooter-f7 : traitement... ✅ 3/3 ok
+   🖼  Images iscooter-f7-ultra : traitement... ✅ 2/2 ok
+   🖼  Images iscooter-dx5-pro : traitement... ✅ 2/2 ok
+   🖼  Images iscooter-w12 : traitement... ✅ 2/2 ok
+   → Images : 5 ok, 0 erreur(s), 0 skip
+   📣 iscooter-i8m : publié
+   📣 iscooter-f7 : publié
+   📣 iscooter-f7-ultra : publié
+   📣 iscooter-dx5-pro : publié
+   📣 iscooter-w12 : publié
+   → Publiés : 5/5
+
+→ Isinwheel (3 modèle(s))
+   ✅ Insérés : 3   ⏭  Ignorés : 0
+   🖼  Images isinwheel-gt4s : traitement... ✅ 3/3 ok
+   🖼  Images isinwheel-h7-pro : traitement... ✅ 3/3 ok
+   🖼  Images isinwheel-d2 : traitement... ✅ 3/3 ok
+   → Images : 3 ok, 0 erreur(s), 0 skip
+   📣 isinwheel-gt4s : publié
+   📣 isinwheel-h7-pro : publié
+   📣 isinwheel-d2 : publié
+   → Publiés : 3/3
+
+→ Circooter (2 modèle(s))
+   ✅ Insérés : 2   ⏭  Ignorés : 0
+   🖼  Images circooter-landturbo-pro : traitement... ✅ 3/3 ok
+   🖼  Images circooter-landturbo-dual : traitement... ✅ 2/2 ok
+   → Images : 2 ok, 0 erreur(s), 0 skip
+   📣 circooter-landturbo-pro : publié
+   📣 circooter-landturbo-dual : publié
+   → Publiés : 2/2
+
+→ Navee (7 modèle(s))
+   ✅ Insérés : 5   ⏭  Ignorés : 0
+   🖼  Images navee-ut3-max : traitement... ✅ 3/3 ok
+   🖼  Images navee-ut5-max : traitement... ✅ 3/3 ok
+   🖼  Images navee-nt5-ultra-x : traitement... ✅ 3/3 ok
+   🖼  Images navee-nt5-max : traitement... ✅ 3/3 ok
+   🖼  Images navee-xt5-ultra : traitement... ✅ 3/3 ok
+   → Images : 5 ok, 0 erreur(s), 2 skip
+   📣 navee-ut3-max : publié
+   📣 navee-ut5-max : publié
+   📣 navee-nt5-ultra-x : publié
+   📣 navee-nt5-max : publié
+   📣 navee-xt5-ultra : publié
+   📣 navee-st5-max : publié
+   📣 navee-n65i-ii : publié
+   → Publiés : 7/7
+
+→ Xiaomi (3 modèle(s))
+   ✅ Insérés : 1   ⏭  Ignorés : 0
+   🖼  Images xiaomi-electric-scooter-6-essential : traitement... ✅ 2/2 ok
+   → Images : 1 ok, 0 erreur(s), 2 skip
+   📣 xiaomi-electric-scooter-6-essential : publié
+   📣 xiaomi-electric-scooter-6-max : publié
+   📣 xiaomi-electric-scooter-6-ultra : publié
+   → Publiés : 3/3
+
+→ Dualtron (8 modèle(s))
+   ✅ Insérés : 4   ⏭  Ignorés : 0
+   🖼  Images dualtron-victor-luxury-plus : traitement... ✅ 3/3 ok
+   🖼  Images dualtron-togo-limited : traitement... ✅ 3/3 ok
+   🖼  Images dualtron-spider-max : traitement... ✅ 3/3 ok
+   🖼  Images dualtron-alien : traitement... ✅ 4/4 ok
+   → Images : 4 ok, 0 erreur(s), 4 skip
+   📣 dualtron-victor-luxury-plus : publié
+   📣 dualtron-togo-limited : publié
+   📣 dualtron-spider-max : publié
+   📣 dualtron-alien : publié
+   ·  dualtron-achilleus-2025 : déjà publié (inchangé)
+   📣 dualtron-eagle-pro : publié
+   📣 dualtron-spider-2 : publié
+   ⏸  dualtron-x-limited : reste brouillon : photo
+   → Publiés : 6/8
+
+→ Halo Knight (1 modèle(s))
+   ✅ Insérés : 1   ⏭  Ignorés : 0
+   🖼  Images halo-knight-t102 : traitement... ✅ 3/3 ok
+   → Images : 1 ok, 0 erreur(s), 0 skip
+   📣 halo-knight-t102 : publié
+   → Publiés : 1/1
+
+→ Ootd (1 modèle(s))
+   ✅ Insérés : 1   ⏭  Ignorés : 0
+   🖼  Images ootd-t08 : traitement... ✅ 3/3 ok
+   → Images : 1 ok, 0 erreur(s), 0 skip
+   📣 ootd-t08 : publié
+   → Publiés : 1/1
+
+→ Kukirin (1 modèle(s))
+   ✅ Insérés : 1   ⏭  Ignorés : 0
+   🖼  Images kukirin-t4 : traitement... ✅ 4/4 ok
+   → Images : 1 ok, 0 erreur(s), 0 skip
+   📣 kukirin-t4 : publié
+   → Publiés : 1/1
+
+→ Ninebot (5 modèle(s))
+   ✅ Insérés : 0   ⏭  Ignorés : 0
+   📣 ninebot-f2-plus : publié
+   📣 ninebot-f3-e : publié
+   📣 ninebot-e2-plus : publié
+   📣 ninebot-e25e : publié
+   📣 ninebot-f65 : publié
+   → Publiés : 5/5
+
+→ Kaabo (4 modèle(s))
+   ✅ Insérés : 0   ⏭  Ignorés : 0
+   📣 kaabo-mantis-king-gt : publié
+   📣 kaabo-mantis-x-plus : publié
+   📣 kaabo-skywalker-10h : publié
+   📣 kaabo-mantis-8 : publié
+   → Publiés : 4/4
+
+→ Beaster (2 modèle(s))
+   ✅ Insérés : 0   ⏭  Ignorés : 0
+   📣 beaster-bs15 : publié
+   📣 beaster-bs65 : publié
+   → Publiés : 2/2
+
+→ Joyor (1 modèle(s))
+   ✅ Insérés : 0   ⏭  Ignorés : 0
+   📣 joyor-s8-s : publié
+   → Publiés : 1/1
+
+→ Velity (1 modèle(s))
+   ✅ Insérés : 0   ⏭  Ignorés : 0
+   📣 velity-511-r : publié
+   → Publiés : 1/1
+
+→ Urbanglide (1 modèle(s))
+   ✅ Insérés : 0   ⏭  Ignorés : 0
+   📣 urbanglide-ride-100-pro-2 : publié
+   → Publiés : 1/1
+
+→ 43 modèle(s) publié(s) : relance du moteur de compat…
+   [scope] 7/7 catégorie(s) : chargeurs, chambres-a-air, pneus, pneus-gonflables, pneus-pleins, disques, plaquettes (défaut : allowlist complète)
+   [parts] 562 pièce(s) publiée(s) à retrigger
+   TOTAL : 562 pièces, 5098 suggestions K, 5009 auto supprimées, 0 erreur(s).
+   Compat : 5098 nouvelles suggestions
+
+Terminé.
