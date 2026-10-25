@@ -5,7 +5,7 @@
  */
 import { useEffect, useMemo, useState } from "react";
 import { Link } from "react-router-dom";
-import { SlidersHorizontal, MessageSquare, ExternalLink, Wallpaper, UserPen } from "lucide-react";
+import { SlidersHorizontal, MessageSquare, ExternalLink, Lock, Wallpaper, UserPen } from "lucide-react";
 import { Sheet, SheetContent, SheetHeader, SheetTitle } from "@/components/ui/sheet";
 import RiderCardStory, { cardRows } from "../story/RiderCardStory";
 import StandTrott from "./StandTrott";
@@ -58,9 +58,15 @@ const CarteSection = ({ onTheme, onEditProfile }: { onTheme: () => void; onEditP
               <MessageSquare className="w-[18px] h-[18px]" style={{ color: GREEN }} /> {comments.length}
             </button>
             {data.profile.username && (
-              <Link to={`/rider/${data.profile.username}`} aria-label="Voir mon garage public" className={btn} style={{ background: CARBON, color: "#FFFFFF", clipPath: cut(10), fontFamily: FONT }}>
-                <ExternalLink className="w-[18px] h-[18px]" /> Public
-              </Link>
+              data.profile.is_public ? (
+                <Link to={`/rider/${data.profile.username}`} aria-label="Voir mon garage public" className={btn} style={{ background: CARBON, color: "#FFFFFF", clipPath: cut(10), fontFamily: FONT }}>
+                  <ExternalLink className="w-[18px] h-[18px]" /> Public
+                </Link>
+              ) : (
+                <Link to="/garage/reglages" aria-label="Garage privé : ouvrir les réglages" className={btn} style={{ background: "#FFFFFF", color: CARBON, clipPath: cut(10), fontFamily: FONT }}>
+                  <Lock className="w-[18px] h-[18px]" style={{ color: GREEN }} /> Privé
+                </Link>
+              )
             )}
           </div>
           {!data.profile.is_public && (

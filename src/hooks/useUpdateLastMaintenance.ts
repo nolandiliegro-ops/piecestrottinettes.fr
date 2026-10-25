@@ -19,7 +19,7 @@ export const useUpdateLastMaintenance = () => {
     },
     onSuccess: () => {
       queryClient.invalidateQueries({ queryKey: ['user-garage-scooters'] });
-      toast.success('Révision enregistrée');
+      toast.success('Révision enregistrée', { id: 'revise-success' });
     },
     onError: () => {
       toast.error("Impossible d'enregistrer la révision");

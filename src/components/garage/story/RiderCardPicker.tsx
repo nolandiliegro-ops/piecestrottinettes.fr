@@ -1,5 +1,5 @@
 /** Garage : choisir les 5 « à moi » et les 5 « je kiffe » affichés sur la carte Story (25/10/2026). */
-import { Check, Plus } from "lucide-react";
+import { Check, Loader2, Plus } from "lucide-react";
 import { useToggleCardSlot, type RiderMachine } from "@/hooks/useRiderCardData";
 
 const UNB = "'Unbounded', sans-serif";
@@ -22,6 +22,8 @@ const Group = ({ title, owned, machines, all }: { title: string; owned: boolean;
       <ul className="mt-2 grid gap-2 grid-cols-[minmax(0,1fr)] sm:grid-cols-2">
         {machines.map((m) => {
           const sel = m.card_slot != null;
+          // 25/10 (recette) : l'écriture + la relecture prennent ~2 s ; sans signe, on croit que le toucher n'a pas marché.
+          const busy = toggle.isPending && toggle.variables?.machine.id === m.id;
           return (
             <li key={m.id}>
               <button
@@ -29,7 +31,8 @@ const Group = ({ title, owned, machines, all }: { title: string; owned: boolean;
                 onClick={() => toggle.mutate({ machine: m, all })}
                 disabled={toggle.isPending}
                 aria-pressed={sel}
-                className="w-full min-h-[56px] flex items-center gap-3 p-2 text-left"
+                aria-busy={busy}
+                className={`w-full min-h-[56px] flex items-center gap-3 p-2 text-left transition-opacity ${toggle.isPending && !busy ? "opacity-60" : ""}`}
                 style={{ background: sel ? (owned ? "#FFFFFF" : LIKE_BG) : "transparent", boxShadow: `inset 0 0 0 ${sel ? 2 : 1}px ${sel ? (owned ? GREEN : "#C2410C") : LINE}`, clipPath: ch(8) }}
               >
                 {m.model?.image_url && <img src={m.model.image_url} alt="" loading="lazy" className="w-10 h-10 object-contain shrink-0" />}
@@ -38,7 +41,7 @@ const Group = ({ title, owned, machines, all }: { title: string; owned: boolean;
                   {m.nickname && <span className="block font-semibold" style={{ color: GREEN }}>« {m.nickname} »</span>}
                 </span>
                 <span className="w-8 h-8 shrink-0 inline-flex items-center justify-center" style={{ background: sel ? CARBON : "#FFFFFF", color: sel ? "#FFFFFF" : CARBON, boxShadow: sel ? undefined : `inset 0 0 0 1px ${LINE}` }} aria-hidden>
-                  {sel ? <Check className="w-4 h-4" /> : <Plus className="w-4 h-4" />}
+                  {busy ? <Loader2 className="w-4 h-4 animate-spin" /> : sel ? <Check className="w-4 h-4" /> : <Plus className="w-4 h-4" />}
                 </span>
               </button>
             </li>

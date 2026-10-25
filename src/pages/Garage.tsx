@@ -66,6 +66,7 @@ const Garage = () => {
   const [activeTab, setActiveTab] = useState<'garage' | 'orders' | 'messages'>('garage');
   const [autoOpenThread, setAutoOpenThread] = useState(false);
   const [quickAddOpen, setQuickAddOpen] = useState(false);
+  const [quickAddFor, setQuickAddFor] = useState<string | undefined>(undefined);
   const [profileEditOpen, setProfileEditOpen] = useState(false);
   const [historyOpen, setHistoryOpen] = useState(false);
   const [riderCardOpen, setRiderCardOpen] = useState(false);
@@ -193,7 +194,7 @@ const Garage = () => {
                     onNext={handleNext}
                     onEditProfile={() => setProfileEditOpen(true)}
                     onTheme={() => setThemePickerOpen(true)}
-                    onAddModification={() => setQuickAddOpen(true)}
+                    onAddModification={(id?: string) => { setQuickAddFor(id); setQuickAddOpen(true); }}
                     onOpenHistory={() => setHistoryOpen(true)}
                     onOpenRiderCard={() => navigate('/garage')}
                     hideRider
@@ -310,7 +311,7 @@ const Garage = () => {
                     onNext={handleNext}
                     onEditProfile={() => setProfileEditOpen(true)}
                     onTheme={() => setThemePickerOpen(true)}
-                    onAddModification={() => setQuickAddOpen(true)}
+                    onAddModification={(id?: string) => { setQuickAddFor(id); setQuickAddOpen(true); }}
                     onOpenHistory={() => setHistoryOpen(true)}
                     onOpenRiderCard={() => (legacyCard ? setRiderCardOpen(true) : document.getElementById('ma-carte')?.scrollIntoView({ behavior: 'smooth', block: 'start' }))}
                   />
@@ -379,7 +380,7 @@ const Garage = () => {
                       <ModificationsPreviewCard
                         garageItemId={selectedGarageId}
                         onOpenFullHistory={() => setHistoryOpen(true)}
-                        onAddModification={() => setQuickAddOpen(true)}
+                        onAddModification={(id?: string) => { setQuickAddFor(id); setQuickAddOpen(true); }}
                       />
                     </div>
                   </section>
@@ -598,7 +599,7 @@ const Garage = () => {
         </motion.button>
       )}
 
-      <QuickAddModificationDialog open={quickAddOpen} onOpenChange={setQuickAddOpen} />
+      <QuickAddModificationDialog open={quickAddOpen} onOpenChange={(o) => { setQuickAddOpen(o); if (!o) setQuickAddFor(undefined); }} defaultScooterId={quickAddFor} />
       <RiderProfileEditDialog open={profileEditOpen} onOpenChange={setProfileEditOpen} />
 
       {/* History Sheet — Timeline */}

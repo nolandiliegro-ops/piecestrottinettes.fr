@@ -19,6 +19,8 @@ import DifficultyIndicator from '@/components/parts/DifficultyIndicator';
 interface QuickAddModificationDialogProps {
   open: boolean;
   onOpenChange: (open: boolean) => void;
+  /** Trott déjà choisie (bouton « Modif » de la fiche d'une trott) — recette du 25/10. */
+  defaultScooterId?: string;
 }
 
 interface SearchPart {
@@ -32,6 +34,7 @@ interface SearchPart {
 const QuickAddModificationDialog = ({
   open,
   onOpenChange,
+  defaultScooterId,
 }: QuickAddModificationDialogProps) => {
   const [searchQuery, setSearchQuery] = useState('');
   const [selectedPart, setSelectedPart] = useState<SearchPart | null>(null);
@@ -85,6 +88,11 @@ const QuickAddModificationDialog = ({
       setNotes('');
     }
   }, [open]);
+
+  // Ouvert depuis une trott précise : elle est déjà sélectionnée
+  useEffect(() => {
+    if (open && defaultScooterId) setSelectedScooterId(defaultScooterId);
+  }, [open, defaultScooterId]);
 
   // Auto-select if only one scooter
   useEffect(() => {

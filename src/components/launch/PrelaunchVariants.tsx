@@ -83,9 +83,9 @@ const Close = ({ dark = false }: { dark?: boolean }) => (
   </DialogPrimitive.Close>
 );
 
-const phrase = (reason: PopupReason) =>
+const phrase = (reason: PopupReason, loggedIn = false) =>
   reason === 'panier'
-    ? { t: 'Pas encore, patience !', d: 'Les commandes ouvrent très bientôt. Crée ton garage, je te préviens le jour J.' }
+    ? { t: 'Pas encore, patience !', d: loggedIn ? "Les commandes ouvrent très bientôt. Ton garage est prêt : je te préviens le jour J." : 'Les commandes ouvrent très bientôt. Crée ton garage, je te préviens le jour J.' }
     : { t: "Moi, c'est SKOT !", d: 'Le shop ouvre très bientôt. En attendant, visite : dis-moi ta trott, je te montre ce qui va dessus.' };
 
 const Title = ({ className = '', dark = false, size = 'text-[30px]' }: { className?: string; dark?: boolean; size?: string }) => (
@@ -98,7 +98,7 @@ const Title = ({ className = '', dark = false, size = 'text-[30px]' }: { classNa
    dessus ; SKOT arrive en roulant sur le trottoir devant et parle. La métaphore la plus claire : fermé, mais plus pour longtemps. */
 const Rideau = (p: Omit<Props, 'variant'>) => {
   const img = useSkotImg();
-  const ph = phrase(p.reason);
+  const ph = phrase(p.reason, p.loggedIn);
   const slats = 'repeating-linear-gradient(180deg,#DAD7D0 0 12px,#B7B3AA 12px 14px,#EEECE6 14px 16px)';
   return (
     <div className="pv-a relative w-[calc(100vw-24px)] max-w-[420px] overflow-hidden bg-[#FAFAF8]" style={{ clipPath: cut(18), animation: 'pv-rise .5s cubic-bezier(.2,.9,.3,1.1) both' }}>
@@ -131,7 +131,7 @@ const Rideau = (p: Omit<Props, 'variant'>) => {
 /* 2 · NÉON — l'enseigne de la boutique s'allume en grésillant sur un mur sombre ; SKOT dessous, sa bulle. */
 const Neon = (p: Omit<Props, 'variant'>) => {
   const img = useSkotImg();
-  const ph = phrase(p.reason);
+  const ph = phrase(p.reason, p.loggedIn);
   return (
     <div className="pv-a relative w-[calc(100vw-24px)] max-w-[420px] overflow-hidden" style={{ clipPath: cut(18), animation: 'pv-pop .5s cubic-bezier(.2,.9,.3,1.15) both', background: 'radial-gradient(90% 60% at 50% 20%, #2F3A33 0%, #151515 70%)' }}>
       <Close dark />
@@ -156,7 +156,7 @@ const Neon = (p: Omit<Props, 'variant'>) => {
 /* 3 · TICKET — SKOT tend son ticket d'ouverture (le code RIDER) : on comprend « bientôt » ET « ce que j'y gagne ». */
 const Ticket = (p: Omit<Props, 'variant'>) => {
   const img = useSkotImg();
-  const ph = phrase(p.reason);
+  const ph = phrase(p.reason, p.loggedIn);
   return (
     <div className="pv-a relative w-[calc(100vw-24px)] max-w-[420px] overflow-hidden bg-[#E9E4DA]" style={{ clipPath: cut(18), animation: 'pv-rise .5s cubic-bezier(.2,.9,.3,1.1) both' }}>
       <Close />
@@ -183,7 +183,7 @@ const Ticket = (p: Omit<Props, 'variant'>) => {
 /* 4 · PLEIN ÉCRAN — l'écran entier passe au noir, les mots tombent un par un, SKOT traverse en roulant. Cinéma. */
 const PleinEcran = (p: Omit<Props, 'variant'>) => {
   const img = useSkotImg();
-  const ph = phrase(p.reason);
+  const ph = phrase(p.reason, p.loggedIn);
   const w = (txt: string, d: number, color = '#FFFFFF') => (
     <span className="pv-a block" style={{ animation: `pv-word .55s cubic-bezier(.2,.9,.3,1) ${d}s both`, color }}>{txt}</span>
   );
@@ -213,7 +213,7 @@ const PleinEcran = (p: Omit<Props, 'variant'>) => {
    SKOT arrive en roulant, sa bulle s'ouvre). La lecture la plus littérale : même chose, mais qu'on comprenne et que ce soit joli. */
 const Repasse = (p: Omit<Props, 'variant'>) => {
   const img = useSkotImg();
-  const ph = phrase(p.reason);
+  const ph = phrase(p.reason, p.loggedIn);
   return (
     <div className="pv-a relative w-[calc(100vw-24px)] max-w-[420px] overflow-hidden bg-[#FAFAF8]" style={{ clipPath: cut(18), animation: 'pv-rise .5s cubic-bezier(.2,.9,.3,1.1) both' }}>
       <Close dark />

@@ -79,7 +79,7 @@ interface Props {
   onNext: () => void;
   onEditProfile: () => void;
   onTheme: () => void;
-  onAddModification: () => void;
+  onAddModification: (garageId?: string) => void;
   onOpenHistory: () => void;
   onOpenRiderCard: () => void;
   /** Garage v3 (25/10) : le profil/XP et le code RIDER vivent dans Réglages. */
@@ -202,7 +202,7 @@ export const ScooterStage = ({ scooter, scooterCount, currentIndex, onPrev, onNe
 };
 
 /* ---------- 3 actions, une seule pleine ---------- */
-const Actions = ({ garageId, onAddModification, onOpenRiderCard }: { garageId: string; onAddModification: () => void; onOpenRiderCard: () => void }) => {
+const Actions = ({ garageId, onAddModification, onOpenRiderCard }: { garageId: string; onAddModification: (garageId?: string) => void; onOpenRiderCard: () => void }) => {
   const { mutate, isPending } = useUpdateLastMaintenance();
   const [done, setDone] = useState(false);
   const revise = () =>
@@ -217,7 +217,7 @@ const Actions = ({ garageId, onAddModification, onOpenRiderCard }: { garageId: s
   const ghost = { background: "#FFFFFF", color: CARBON, boxShadow: `inset 0 0 0 1px ${LINE}`, clipPath: cut(8), fontFamily: FONT };
   return (
     <div className="grid grid-cols-3 gap-2">
-      <button type="button" onClick={onAddModification} className="min-h-[52px] px-2 inline-flex flex-col items-center justify-center gap-0.5 text-sm font-extrabold uppercase leading-tight text-white" style={{ background: CARBON, clipPath: cut(8), fontFamily: FONT }}>
+      <button type="button" onClick={() => onAddModification(garageId)} className="min-h-[52px] px-2 inline-flex flex-col items-center justify-center gap-0.5 text-sm font-extrabold uppercase leading-tight text-white" style={{ background: CARBON, clipPath: cut(8), fontFamily: FONT }}>
         <Plus className="w-4 h-4" strokeWidth={2.8} /> Modif
       </button>
       <button type="button" onClick={revise} disabled={isPending} className="min-h-[52px] px-2 inline-flex flex-col items-center justify-center gap-0.5 text-sm font-extrabold uppercase leading-tight" style={ghost}>
@@ -300,7 +300,7 @@ const Upkeep = ({ scooter, points, onOpenHistory, onAddModification }: { scooter
       </dl>
       <div className="mt-4">
         {modsLoading ? null : mods.length === 0 ? (
-          <button type="button" onClick={onAddModification} className="w-full text-left text-base" style={{ fontFamily: FONT, color: "#4B5563" }}>
+          <button type="button" onClick={() => onAddModification()} className="w-full text-left text-base" style={{ fontFamily: FONT, color: "#4B5563" }}>
             Aucune modif notée. <span className="font-bold underline underline-offset-4" style={{ color: CARBON }}>Note ta première</span> : +XP à chaque modif.
           </button>
         ) : (
