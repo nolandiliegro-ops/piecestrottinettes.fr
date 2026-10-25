@@ -1,4 +1,5 @@
 import { useCallback, useState } from "react";
+import { useQuery } from "@tanstack/react-query";
 import Cropper, { Area } from "react-easy-crop";
 import { Camera, ImagePlus, Loader2, Sparkles, Check, RotateCcw } from "lucide-react";
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogDescription } from "@/components/ui/dialog";
@@ -97,6 +98,16 @@ const RiderBadgeIaDialog = ({ open, onOpenChange }: Props) => {
   const [choisi, setChoisi] = useState(0);
   const [restants, setRestants] = useState<number | null>(null);
   const [enregistre, setEnregistre] = useState(false);
+  // Le service est-il branché (clé Google posée) ? Vérifié à l'ouverture, sans rien payer (action ping).
+  const { data: branche } = useQuery({
+    queryKey: ["badge-ia-ping"],
+    enabled: open,
+    staleTime: 5 * 60 * 1000,
+    queryFn: async () => {
+      const { data } = await supabase.functions.invoke("generate-rider-avatar", { body: { action: "ping" } });
+      return !!data?.branche;
+    },
+  });
 
   const reset = () => {
     setSrc(null); setCrop({ x: 0, y: 0 }); setZoom(1); setZone(null);
@@ -177,7 +188,19 @@ const RiderBadgeIaDialog = ({ open, onOpenChange }: Props) => {
           </DialogDescription>
         </DialogHeader>
 
-        {etape === "photo" && (
+        {branche === false && (
+          <div className="py-6 text-center space-y-2">
+            <Sparkles className="w-10 h-10 mx-auto text-green-700" />
+            <p className="text-base font-semibold text-carbon">Le badge IA arrive très bientôt !</p>
+            <p className="text-sm text-gray-600">En attendant, tu peux mettre une photo classique depuis « Modifier mon profil ».</p>
+          </div>
+        )}
+
+        {branche === undefined && (
+          <div className="flex justify-center py-10"><Loader2 className="w-8 h-8 animate-spin text-green-700" /></div>
+        )}
+
+        {branche && etape === "photo" && (
           <div className="space-y-4">
             {!src ? (
               <div className="grid grid-cols-2 gap-3">
