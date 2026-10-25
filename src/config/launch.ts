@@ -1,4 +1,4 @@
-// relance de publication du 25/10/2026 (pop-up SKOT)
+// relance de publication du 25/10/2026 (propositions pop-up)
 /**
  * Interrupteur de pré-lancement de la boutique.
  *
