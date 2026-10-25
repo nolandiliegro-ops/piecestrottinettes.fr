@@ -51,4 +51,4 @@ export const openPrelaunch = () => {
 };
 
 // relance publication 25/10 C8
-// relance publication 25/10 story affiche
+// relance publication 25/10 carte rider decode
