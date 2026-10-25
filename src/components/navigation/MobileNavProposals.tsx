@@ -18,14 +18,17 @@ export type BarreBasVariant = 1 | 2 | 3 | 4 | 5;
 // on peut pas le mettre sur le côté ? cinq propositions »). ?skottel=1..5 ; sans paramètre = case actuelle (« Le pilote »).
 export type SkotTelVariant = 1 | 2 | 3 | 4 | 5;
 // 25/10 (Nolan : « centré comme ça, ça fait bizarre, c'est trop symétrique ») : position de « Phares au centre ».
-// ?skotpos=1..5 ; sans paramètre = au centre (actuel).
+// ?skotpos=1..5 ; ?skotpos=0 = au centre.
 export type SkotPosVariant = 1 | 2 | 3 | 4 | 5;
 export const readSkotPosVariant = (): SkotPosVariant | null => {
   try {
-    const n = Number(new URLSearchParams(window.location.search).get("skotpos"));
-    return n >= 1 && n <= 5 ? (n as SkotPosVariant) : null;
+    // 25/10 : Nolan choisit la 3 « Coin gauche », sans cadre = défaut ; ?skotpos=0 = au centre, 1..5 = les autres positions.
+    const raw = new URLSearchParams(window.location.search).get("skotpos");
+    if (raw === null) return 3;
+    const n = Number(raw);
+    return n >= 1 && n <= 5 ? (n as SkotPosVariant) : n === 0 ? null : 3;
   } catch {
-    return null;
+    return 3;
   }
 };
 export const readSkotTelVariant = (): SkotTelVariant | null => {
@@ -358,22 +361,38 @@ const V5 = () => {
           </div>
         </Shell>
       );
-    /* Position 3 · Coin gauche — plus grand, il sort du coin gauche de la barre (collé au bord), penché vers la page. */
+    /* Position 3 · Coin gauche (choix de Nolan 25/10, sans cadre « comme sur le site ») — SKOT lui-même, détouré,
+       sort du coin gauche de la barre : le bas de la patinette reste caché derrière la barre, il rentre quand on
+       fait défiler vers le bas et ressort à l'arrêt. Tenue de saison incluse. */
     if (pos === 3)
       return (
-        <Shell>
-          <div className="flex items-end pr-1">
-            <div className="flex-none w-[92px] relative h-[58px]">
-              <button type="button" onClick={openSkot} aria-label="Demander à SKOT" className="absolute left-0 bottom-0 flex flex-col items-start" style={{ ...lift, transformOrigin: "0 100%" }}>
-                <span className="p-[2px]" style={{ width: 84, height: 84, background: CARBON, clipPath: "polygon(0 0, calc(100% - 16px) 0, 100% 16px, 100% 100%, 0 100%)" }}>
-                  <span className="w-full h-full grid place-items-center overflow-hidden" style={{ background: "#F5F0E8", clipPath: "polygon(0 0, calc(100% - 15px) 0, 100% 15px, 100% 100%, 0 100%)" }}><TeteSkot size={80} /></span>
-                </span>
-                <span className="absolute left-0 bottom-0 px-2 py-0.5 text-white italic uppercase" style={{ background: GREEN, fontFamily: UNB, fontWeight: 800, fontSize: 11, clipPath: cutTR(6), opacity: out ? 1 : 0, transition: "opacity .2s" }}>SKOT</span>
-              </button>
+        <>
+          {skotHere && (
+            <button
+              type="button"
+              onClick={openSkot}
+              aria-label="Demander à SKOT"
+              className="md:hidden fixed z-[49] -left-3 w-[150px] h-[150px]"
+              style={{
+                bottom: "calc(max(env(safe-area-inset-bottom), 6px) + 4px)",
+                transform: out ? "translateY(0)" : "translateY(84px)",
+                transition: "transform .45s cubic-bezier(.2,.9,.3,1.25)",
+              }}
+            >
+              <img src={body} alt="" draggable={false} className={`block w-full h-full select-none ${out ? "skl-pop" : ""}`} style={{ filter: "drop-shadow(0 4px 6px rgba(0,0,0,.18))" }} />
+            </button>
+          )}
+          <Shell>
+            <div className="flex items-end pr-1">
+              <div className="flex-none w-[84px] h-[58px] flex items-end justify-start pl-2 pb-1.5">
+                {skotHere && (
+                  <button type="button" onClick={openSkot} aria-label="Demander à SKOT" tabIndex={-1} className="px-2 py-0.5 text-white italic uppercase" style={{ background: GREEN, fontFamily: UNB, fontWeight: 800, fontSize: 11, clipPath: cutTR(6) }}>SKOT</button>
+                )}
+              </div>
+              {tab(pieces)}{tab(garage)}{tab(trottes)}{tab(cart)}
             </div>
-            {tab(pieces)}{tab(garage)}{tab(trottes)}{tab(cart)}
-          </div>
-        </Shell>
+          </Shell>
+        </>
       );
     /* Position 4 · Îlot à gauche — SKOT dans sa propre plaque carbone à gauche, la barre des 4 onglets à côté : deux blocs, pas un. */
     if (pos === 4)
