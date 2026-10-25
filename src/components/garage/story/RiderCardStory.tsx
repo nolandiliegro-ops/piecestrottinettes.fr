@@ -8,7 +8,7 @@ import { useMemo, useRef, useState } from "react";
 import { createPortal } from "react-dom";
 import { optimizedImage } from "@/lib/imageTransform"; // 25/10 poids 4G : vignettes 46 px servies en 120 px
 import { Link } from "react-router-dom";
-import { toPng } from "html-to-image";
+import { toPng, toJpeg } from "html-to-image";
 import { toast } from "sonner";
 import { Heart, MessageSquare, Share2, Camera, X, Download } from "lucide-react";
 import { useAuthContext } from "@/contexts/AuthContext";
@@ -118,7 +118,8 @@ const RiderCardStory = ({ data, commentCount = 0, onOpenComments, className = ""
     const nav = navigator as Navigator & { canShare?: (d: { files: File[] }) => boolean };
     try {
       if (nav.share && nav.canShare?.({ files: [file] })) {
-        await nav.share({ files: [file], title: `La carte Rider de ${name}`, url: shareUrl });
+        // Le lien de la carte interactive part avec l'image (WhatsApp, Messages… lisent `text`, pas `url`, quand il y a un fichier).
+        await nav.share({ files: [file], title: `La carte Rider de ${name}`, text: `Ma carte Rider : ${shareUrl}` });
       } else {
         saveImage(dataUrl, file.name);
         toast.success("Carte enregistrée en image");
@@ -139,17 +140,22 @@ const RiderCardStory = ({ data, commentCount = 0, onOpenComments, className = ""
       // Format story : 1080 px de large (la hauteur suit la carte, ~1920 px).
       const opts = {
         pixelRatio: 1080 / node.offsetWidth,
-        cacheBust: true,
+        // Pas de cacheBust : les images sont déjà chargées dans la page, inutile de tout retélécharger à chaque partage.
+        cacheBust: false,
         filter: (el: Node) => !(el instanceof HTMLElement && el.dataset.storyHide === "true"),
         // Ordinateur : la copie est posée en place mais invisible (opacité 0). Posée hors écran (left -10000), html-to-image
         // sortait une image vide d'une seule couleur (47 Ko, mesuré le 25/10) ; l'image partagée, elle, est remise visible.
         style: { position: "relative", left: "0", top: "0", margin: "0", opacity: "1", zIndex: "auto" },
       };
-      // 1er rendu jeté : html-to-image n'embarque pas toujours les images au premier passage (Safari surtout).
-      await toPng(node, opts).catch(() => null);
-      const dataUrl = await toPng(node, opts);
+      // Safari / iPhone : 1er rendu jeté, html-to-image n'y embarque pas toujours les images au premier passage.
+      // Chrome et Android n'en ont pas besoin : un seul rendu, deux fois plus rapide.
+      const webkit = /iP(hone|ad|od)/.test(navigator.userAgent) || (/Safari/.test(navigator.userAgent) && !/Chrome|Chromium|Android/.test(navigator.userAgent));
+      if (webkit) await toPng(node, opts).catch(() => null);
+      // JPEG 92 % : même rendu à l'œil, ~5 fois plus léger que le PNG et plus rapide à fabriquer et à envoyer
+      // (mesuré au banc 4G le 25/10 : 2,0 → 1,4 s sur ordinateur). Les angles coupés prennent le fond carbone.
+      const dataUrl = await toJpeg(node, { ...opts, quality: 0.92, backgroundColor: CARBON });
       const blob = await (await fetch(dataUrl)).blob();
-      const file = new File([blob], `carte-rider-${profile.username ?? "rider"}.png`, { type: "image/png" });
+      const file = new File([blob], `carte-rider-${profile.username ?? "rider"}.jpg`, { type: "image/jpeg" });
       if (apercu > 0) {
         const probe = new Image();
         probe.src = dataUrl;
@@ -207,7 +213,19 @@ const RiderCardStory = ({ data, commentCount = 0, onOpenComments, className = ""
     <p className="text-[24px] sm:text-[28px] uppercase leading-[0.95] text-center" style={{ fontFamily: UNB, fontWeight: 900, fontStyle: "italic", letterSpacing: "-0.03em", color: dark ? "#FFFFFF" : CARBON }}>{txt}</p>
   );
   const previewOverlay = () => {
-    if (!preview || apercu === 0 || apercu === 4 || typeof document === "undefined") return null;
+    if (typeof document === "undefined") return null;
+    // Plein écran : la fenêtre s'ouvre dès le toucher, l'image arrive dedans ~1 s plus tard.
+    if (apercu === 1 && sharing && !preview) {
+      return createPortal(
+        <div role="dialog" aria-label="Préparation de ta story" aria-busy="true" className="fixed inset-0 z-[90] flex flex-col items-center justify-center gap-4 p-4" style={{ background: "rgba(10,10,10,0.92)", fontFamily: FONT }}>
+          {big("Je prépare ta story", true)}
+          <p className="-mt-2 text-[15px] text-center" style={{ color: "rgba(255,255,255,0.72)" }}>Une seconde…</p>
+          <div className="w-[min(300px,62vw)] max-h-[62dvh] aspect-[9/16] animate-pulse" style={{ background: "rgba(255,255,255,0.1)", clipPath: ch(16) }} />
+        </div>,
+        document.body,
+      );
+    }
+    if (!preview || apercu === 0 || apercu === 4) return null;
     let body: JSX.Element;
     if (apercu === 1) {
       body = (
