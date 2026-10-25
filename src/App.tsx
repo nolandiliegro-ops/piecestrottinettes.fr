@@ -10,6 +10,7 @@ import { CartProvider } from "@/hooks/useCart";
 import { ScooterProvider } from "@/contexts/ScooterContext";
 import { SpotlightProvider } from "@/contexts/SpotlightContext";
 import { HeaderScooterDropdownProvider } from "@/contexts/HeaderScooterDropdownContext";
+import BadgeInviteGate from "@/components/ambassador/kit/BadgeInviteGate";
 import CartSidebar from "@/components/cart/CartSidebar";
 import MobileNav from "@/components/navigation/MobileNav";
 import SkotWidget from "@/components/skot/SkotWidget";
@@ -106,6 +107,7 @@ function App() {
                 <PrelaunchModal />
                 <SkotWidget />
                 <ReferralCapture />
+                <BadgeInviteGate />
             <Suspense fallback={<PageLoader />}>
             <Routes>
             <Route path="/" element={<Index />} />

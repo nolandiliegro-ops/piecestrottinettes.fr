@@ -1,9 +1,13 @@
-import { useState } from 'react';
+import { lazy, Suspense, useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { useQuery, useMutation, useQueryClient } from '@tanstack/react-query';
 import { Loader2, Copy, Link2, MousePointerClick, Users, ShoppingBag, Wallet, Clock, CheckCircle2, FileText, Mail, Sparkles } from 'lucide-react';
 import RiderBadgeIaDialog from '@/components/garage/RiderBadgeIaDialog';
 import StoryAmbassadeur from '@/components/ambassador/StoryAmbassadeur';
+import KitPartage from '@/components/ambassador/kit/KitPartage';
+import { aUnBadgeIa, inviteDejaVue } from '@/components/ambassador/kit/badgeInviteEtat';
+
+const BadgeInviteModal = lazy(() => import('@/components/ambassador/kit/BadgeInviteModal'));
 import { toast } from 'sonner';
 import SEO from '@/components/SEO';
 import Header from '@/components/Header';
@@ -185,8 +189,17 @@ const Tableau = ({ d }: { d: Dash }) => {
     { i: CheckCircle2, l: 'Déjà versé', v: eur(d.deja_paye) },
   ];
   const photo = profile?.avatar_url || d.avatar_url;
+  // 25/10 : invitation badge IA à l'ouverture de l'espace, une seule fois, si pas encore de badge IA (verrouillée une fois ouverte).
+  const [invite, setInvite] = useState<'attente' | 'ouverte' | 'fermee'>('attente');
+  const eligibleInvite = !!profile && !aUnBadgeIa(photo) && !inviteDejaVue('ambassadeur');
+  useEffect(() => {
+    if (invite !== 'attente' || !eligibleInvite) return;
+    const t = window.setTimeout(() => setInvite('ouverte'), 800);
+    return () => window.clearTimeout(t);
+  }, [invite, eligibleInvite]);
   return (
     <div className="space-y-5">
+      {invite === 'ouverte' && <Suspense fallback={null}><BadgeInviteModal contexte="ambassadeur" onFin={() => setInvite('fermee')} /></Suspense>}
       <section className={card}>
         <div className="flex items-center gap-4">
           {photo
@@ -216,6 +229,8 @@ const Tableau = ({ d }: { d: Dash }) => {
 
       <StoryAmbassadeur photo={photo} nom={d.nom} code={code} lien={code ? lienCreateur(code) : ''} themeKey={profile?.active_theme_key} />
 
+      <KitPartage userId={profile?.id} photo={photo} nom={d.nom} code={code} lien={code ? lienCreateur(code) : ''} themeKey={profile?.active_theme_key} />
+
       <section className="grid grid-cols-2 sm:grid-cols-3 gap-3">
         {chiffres.map((c) => (
           <div key={c.l} className="rounded-2xl bg-white shadow-md p-4">
@@ -244,7 +259,7 @@ const Tableau = ({ d }: { d: Dash }) => {
       </section>
 
       <section className={card}>
-        <h2 className={titre}>Ton kit</h2>
+        <h2 className={titre}>Règles et accroches</h2>
         <ul className="space-y-2 text-base text-carbon list-disc pl-5">{REGLES_CONTENU.map((r) => <li key={r}>{r}</li>)}</ul>
         <p className="text-sm font-semibold text-carbon">Idées d'accroche</p>
         <ul className="space-y-2 text-base text-gray-700">{HOOKS.map((h) => <li key={h}>{h}</li>)}</ul>
