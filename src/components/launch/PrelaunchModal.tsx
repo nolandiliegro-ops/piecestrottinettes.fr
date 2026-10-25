@@ -4,6 +4,7 @@ import { Dialog, DialogContent, DialogDescription, DialogTitle } from '@/compone
 import { useAuth } from '@/hooks/useAuth';
 import { PRELAUNCH_EVENT, RIDER_LAUNCH_OFFER, SHOP_OPEN } from '@/config/launch';
 import { skotSaison } from '@/lib/skotSaison';
+import { PrelaunchStage, readPopupVariant } from './PrelaunchVariants';
 
 const SEEN_KEY = 'pt-prelaunch-seen';
 // Pas de pop-up automatique sur ces pages (inscription, espace perso, admin…)
@@ -47,6 +48,13 @@ const PrelaunchModal = () => {
   const location = useLocation();
   const navigate = useNavigate();
   const { user } = useAuth();
+  // 25/10 : 5 propositions derrière `?popup=1..5` (0 = cette version). `?popup=N` ouvre la fenêtre tout de suite, même déjà vue.
+  const [{ v: variant, forced }] = useState(readPopupVariant);
+  useEffect(() => {
+    if (SHOP_OPEN || !forced) return;
+    const t = window.setTimeout(() => { setReason('accueil'); setOpen(true); }, 600);
+    return () => window.clearTimeout(t);
+  }, [forced]);
 
   // Ouverture à la demande (clic sur « Ajouter au panier », panier, checkout)
   useEffect(() => {
@@ -77,6 +85,14 @@ const PrelaunchModal = () => {
     setOpen(false);
     navigate(user ? '/garage' : '/register?returnTo=/garage');
   };
+
+  if (variant > 0) {
+    return (
+      <Dialog open={open} onOpenChange={handleOpenChange}>
+        {open && <PrelaunchStage variant={variant} reason={reason} loggedIn={!!user} onVisit={() => handleOpenChange(false)} onGarage={goCreateCard} />}
+      </Dialog>
+    );
+  }
 
   return (
     <Dialog open={open} onOpenChange={handleOpenChange}>
