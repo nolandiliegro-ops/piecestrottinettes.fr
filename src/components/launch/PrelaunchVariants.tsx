@@ -9,6 +9,7 @@ import * as DialogPrimitive from '@radix-ui/react-dialog';
 import { X } from 'lucide-react';
 import { RIDER_LAUNCH_OFFER } from '@/config/launch';
 import { skotSaison } from '@/lib/skotSaison';
+import BadgeIaTeaser, { readBadgeIaVariant } from './BadgeIaTeaser';
 
 const UNB = "'Unbounded', sans-serif";
 const FONT = "'Plus Jakarta Sans', sans-serif";
@@ -16,6 +17,9 @@ const CARBON = '#1A1A1A';
 const GREEN = '#4A7C59';
 const SOFT = '#8FBF9C';
 const cut = (px: number) => `polygon(0 0, calc(100% - ${px}px) 0, 100% ${px}px, 100% 100%, 0 100%)`;
+
+// Lu une fois au chargement (même règle que ?popup) : la fenêtre ne s'ouvre qu'une fois par session.
+const BADGE_IA = readBadgeIaVariant();
 
 export type PopupReason = 'accueil' | 'panier';
 type Props = { variant: number; reason: PopupReason; loggedIn: boolean; onVisit: () => void; onGarage: () => void };
@@ -121,6 +125,8 @@ const Rideau = (p: Omit<Props, 'variant'>) => {
       </div>
       <div className="px-5 pt-4 pb-5 grid gap-3">
         <Title className="sr-only" />
+        {/* 25/10 : « ton badge IA » pour donner envie de s'inscrire (?badgeia=1..5 ; 0 = rien). */}
+        {!p.loggedIn && BADGE_IA.v > 0 && <div className="pv-a" style={{ animation: 'pv-fade .4s ease 1.95s both' }}><BadgeIaTeaser v={BADGE_IA.v} /></div>}
         <Buttons {...p} delay={2} />
         <Offer loggedIn={p.loggedIn} delay={2.1} />
       </div>

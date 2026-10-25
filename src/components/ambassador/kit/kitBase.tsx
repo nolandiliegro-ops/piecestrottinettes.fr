@@ -22,6 +22,8 @@ export type KitData = {
   pieces?: { nom: string; image: string }[];
   /** La trottinette mise en avant dans son garage (photo détourée du modèle) ; repli : un modèle populaire. */
   trott?: { nom: string; image: string } | null;
+  /** Sous le nom sur la carte Rider : « niveau · ville », comme la carte du Garage. */
+  sous?: string | null;
 };
 
 /* 25/10 (retour Nolan) : la DA du site, pas d'effets « voiture » ni de rayons ronds.

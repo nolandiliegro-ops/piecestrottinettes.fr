@@ -8,7 +8,7 @@ type P = { v: number; d: KitData };
 type Comp = ReturnType<typeof forwardRef<HTMLDivElement, P>>;
 
 export type KitFormat = {
-  id: 'carte' | 'qr' | 'code' | 'sticker' | 'post' | 'banniere';
+  id: 'rider' | 'carte' | 'qr' | 'code' | 'sticker' | 'post' | 'banniere';
   titre: string;
   usage: string;
   w: number; h: number; // cadre en px CSS
@@ -405,7 +405,139 @@ const Banniere = forwardRef<HTMLDivElement, P>(({ v, d }, ref) => {
 });
 Banniere.displayName = 'KitBanniere';
 
+/* ── 7. CARTE RIDER AMBASSADEUR (story 1080 × 1920) — 25/10, Nolan : « une carte de rider ambassadeur…
+   avec la trott qu'il veut dessus ». Déclinaison de la vraie carte Rider du Garage (RiderCardStory) :
+   wallpaper plein cadre, avatar à coin coupé, nom en Unbounded italique, étiquette verte « Ambassadeur », sa trott au centre. ── */
+const chR = (c: number) => `polygon(0 0, calc(100% - ${c}px) 0, 100% ${c}px, 100% 100%, ${c}px 100%, 0 calc(100% - ${c}px))`;
+const SOFT = '#8FBF9C';
+const Etiquette = () => (
+  <span style={{ marginTop: 6, display: 'inline-flex', alignItems: 'center', gap: 6, padding: '4px 10px', background: VERT, clipPath: coupe(7) }}>
+    <svg width="12" height="12" viewBox="0 0 12 12"><path d="M2 6.4 4.7 9 10 3.4" stroke="#fff" strokeWidth="2.2" fill="none" strokeLinecap="round" strokeLinejoin="round" /></svg>
+    <span style={{ fontFamily: TEXTE, fontSize: 14, fontWeight: 800, color: '#fff', letterSpacing: '0.12em', textTransform: 'uppercase', lineHeight: 1 }}>Ambassadeur</span>
+  </span>
+);
+const Avatar = ({ d, s = 52 }: { d: KitData; s?: number }) => (
+  d.photo
+    ? <img src={d.photo} alt="" crossOrigin="anonymous" style={{ width: s, height: s, objectFit: 'cover', background: '#fff', clipPath: chR(8), flexShrink: 0, display: 'block' }} />
+    : <span style={{ width: s, height: s, background: '#fff', clipPath: chR(8), display: 'grid', placeItems: 'center', fontFamily: DISPLAY, fontWeight: 900, fontSize: s * 0.36, color: CARBON, flexShrink: 0 }}>{d.nom.slice(0, 1).toUpperCase()}</span>
+);
+const NomRider = ({ d, s = 22 }: { d: KitData; s?: number }) => (
+  <div style={{ minWidth: 0 }}>
+    <div style={{ fontFamily: DISPLAY, fontWeight: 900, fontStyle: 'italic', fontSize: s, letterSpacing: '-0.02em', lineHeight: 1, color: '#fff', whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis' }}>{d.nom}</div>
+    {d.sous && <T s={14} w={600} c="#E7E7E7" style={{ marginTop: 4 }}>{d.sous}</T>}
+    <Etiquette />
+  </div>
+);
+const Fond = ({ d, voile = true }: { d: KitData; voile?: boolean }) => (
+  <>
+    {d.wallpaper && <img src={d.wallpaper} alt="" crossOrigin="anonymous" style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover' }} />}
+    {voile && <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(180deg, rgba(0,0,0,0.55) 0%, rgba(0,0,0,0) 26%, rgba(0,0,0,0) 46%, rgba(0,0,0,0.88) 74%)' }} />}
+  </>
+);
+const TrottOmbre = ({ d, h }: { d: KitData; h: number }) => <Trott d={d} h={h} style={{ filter: 'drop-shadow(0 18px 22px rgba(0,0,0,0.55))', maxWidth: '86%' }} />;
+const Modele = ({ d, s = 20, c = '#fff' }: { d: KitData; s?: number; c?: string }) => d.trott ? (
+  <div>
+    <div style={{ fontFamily: DISPLAY, fontWeight: 900, fontStyle: 'italic', fontSize: s, letterSpacing: '-0.02em', lineHeight: 1, color: c, textTransform: 'uppercase' }}>{d.trott.nom}</div>
+    <T s={14} w={700} c={SOFT} style={{ marginTop: 4 }}>Ma trott</T>
+  </div>
+) : null;
+
+const CarteRiderAmb = forwardRef<HTMLDivElement, P>(({ v, d }, ref) => {
+  const W = 360, H = 640;
+  const base = cadre(W, H, { background: CARBON, clipPath: chR(22), color: '#fff' });
+  if (v === 1) return (
+    <div ref={ref} style={base}>
+      <Fond d={d} />
+      <div style={{ position: 'absolute', left: 16, right: 16, top: 16, display: 'flex', gap: 12, alignItems: 'center' }}><Avatar d={d} /><NomRider d={d} /></div>
+      <div style={{ position: 'absolute', left: 0, right: 0, top: 132, height: 290, display: 'flex', alignItems: 'center', justifyContent: 'center' }}><TrottOmbre d={d} h={280} /></div>
+      <div style={{ position: 'absolute', left: 16, right: 16, bottom: 16, display: 'flex', flexDirection: 'column', gap: 12 }}>
+        <Modele d={d} />
+        <div style={{ display: 'flex', alignItems: 'flex-end', justifyContent: 'space-between', gap: 10 }}>
+          <div style={{ display: 'flex', flexDirection: 'column', gap: 6 }}>
+            <T s={14} w={700} c="#E7E7E7">−10 % avec mon code</T>
+            <BlocCode code={d.code} s={24} pad="9px 14px" bg="#fff" fg={CARBON} />
+          </div>
+          <div style={{ background: '#fff', padding: 4, clipPath: chR(6) }}><QrSvg value={d.lien} size={74} /></div>
+        </div>
+        <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}><T s={14} w={600} c="rgba(255,255,255,0.6)">{domaine(d.lien)}</T><Mention color="rgba(255,255,255,0.6)" /></div>
+      </div>
+    </div>
+  );
+  if (v === 2) return (
+    <div ref={ref} style={base}>
+      <Fond d={d} />
+      <div style={{ position: 'absolute', left: 16, right: 16, top: 16, display: 'flex', gap: 12, alignItems: 'center' }}><Avatar d={d} /><NomRider d={d} /></div>
+      <div style={{ position: 'absolute', left: 0, right: 0, top: 130, height: 270, display: 'flex', alignItems: 'center', justifyContent: 'center' }}><TrottOmbre d={d} h={260} /></div>
+      <div style={{ position: 'absolute', left: 16, right: 16, top: 410 }}><Modele d={d} /></div>
+      <div style={{ position: 'absolute', left: 0, right: 0, bottom: 0, height: 150, background: VERT, padding: '16px 16px 12px', display: 'flex', flexDirection: 'column', justifyContent: 'space-between' }}>
+        <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', gap: 10 }}>
+          <div><T s={15} w={700} c="#fff">−10 % sur tes pièces</T><div style={{ fontFamily: DISPLAY, fontWeight: 900, fontStyle: 'italic', fontSize: 30, color: '#fff', lineHeight: 1.05, marginTop: 4 }}>{d.code}</div></div>
+          <div style={{ background: '#fff', padding: 4, clipPath: chR(6) }}><QrSvg value={d.lien} size={78} /></div>
+        </div>
+        <div style={{ display: 'flex', justifyContent: 'space-between' }}><Logo w={110} neg /><Mention color="#E5EFE7" /></div>
+      </div>
+    </div>
+  );
+  if (v === 3) return (
+    <div ref={ref} style={cadre(W, H, { background: FOND, clipPath: chR(22) })}>
+      <div style={{ position: 'absolute', left: 0, right: 0, top: 0, height: 330, overflow: 'hidden', background: CARBON }}>
+        <Fond d={d} voile={false} />
+        <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(180deg, rgba(0,0,0,0.55) 0%, rgba(0,0,0,0) 40%)' }} />
+        <div style={{ position: 'absolute', left: 16, right: 16, top: 16, display: 'flex', gap: 12, alignItems: 'center' }}><Avatar d={d} /><NomRider d={d} /></div>
+      </div>
+      <div style={{ position: 'absolute', left: 0, right: 0, top: 120, height: 300, display: 'flex', alignItems: 'flex-end', justifyContent: 'center' }}><TrottOmbre d={d} h={290} /></div>
+      <div style={{ position: 'absolute', left: 18, right: 18, top: 432 }}>
+        {d.trott && <><SurTitre>Ma trott</SurTitre><Titre l={[d.trott.nom]} s={20} style={{ marginTop: 6 }} /></>}
+      </div>
+      <div style={{ position: 'absolute', left: 18, right: 18, bottom: 18, display: 'flex', alignItems: 'flex-end', justifyContent: 'space-between' }}>
+        <div style={{ display: 'flex', flexDirection: 'column', gap: 6 }}><T s={14} w={700}>−10 % avec mon code</T><BlocCode code={d.code} s={24} pad="9px 14px" /><Mention /></div>
+        <QrSvg value={d.lien} size={78} bg={FOND} />
+      </div>
+    </div>
+  );
+  if (v === 4) return (
+    <div ref={ref} style={base}>
+      <Fond d={d} />
+      <div style={{ position: 'absolute', left: 16, right: 16, top: 16, display: 'flex', gap: 12, alignItems: 'center' }}><Avatar d={d} /><NomRider d={d} /></div>
+      <div style={{ position: 'absolute', left: 0, right: 0, top: 210, textAlign: 'center', fontFamily: DISPLAY, fontWeight: 900, fontStyle: 'italic', fontSize: 64, lineHeight: 0.9, letterSpacing: '-0.03em', color: 'rgba(255,255,255,0.92)' }}>−10 %</div>
+      <div style={{ position: 'absolute', left: 0, right: 0, top: 138, height: 300, display: 'flex', alignItems: 'center', justifyContent: 'center' }}><TrottOmbre d={d} h={290} /></div>
+      <div style={{ position: 'absolute', left: 16, right: 16, bottom: 16, display: 'flex', flexDirection: 'column', gap: 12 }}>
+        <Modele d={d} />
+        <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', gap: 10 }}>
+          <BlocCode code={d.code} s={28} pad="12px 16px" bg={VERT} fleche />
+          <div style={{ background: '#fff', padding: 4, clipPath: chR(6) }}><QrSvg value={d.lien} size={70} /></div>
+        </div>
+        <div style={{ display: 'flex', justifyContent: 'space-between' }}><T s={14} w={600} c="rgba(255,255,255,0.6)">{domaine(d.lien)}</T><Mention color="rgba(255,255,255,0.6)" /></div>
+      </div>
+    </div>
+  );
+  return (
+    <div ref={ref} style={base}>
+      <Fond d={d} />
+      <div style={{ position: 'absolute', left: 18, right: 18, top: 22 }}>
+        <SurTitre c="#E7E7E7" carre={SOFT}>Carte Rider · Ambassadeur</SurTitre>
+        <Titre l={['Moi', '& ma trott.']} vert={[1]} c="#fff" s={34} style={{ marginTop: 12 }} />
+      </div>
+      <div style={{ position: 'absolute', left: 18, top: 150, display: 'flex', flexDirection: 'column', gap: 8, width: 120 }}>
+        <Avatar d={d} s={110} />
+        <div style={{ fontFamily: DISPLAY, fontWeight: 900, fontStyle: 'italic', fontSize: 16, color: '#fff', lineHeight: 1.05, wordBreak: 'break-word' }}>{d.nom}</div>
+      </div>
+      <div style={{ position: 'absolute', right: -6, top: 150, width: 230, height: 300, display: 'flex', alignItems: 'center', justifyContent: 'center' }}><Trott d={d} h={290} style={{ filter: 'drop-shadow(0 18px 22px rgba(0,0,0,0.55))', maxWidth: '100%' }} /></div>
+      <div style={{ position: 'absolute', left: 16, right: 16, bottom: 16, display: 'flex', flexDirection: 'column', gap: 12 }}>
+        <Modele d={d} s={18} />
+        <div style={{ display: 'flex', alignItems: 'flex-end', justifyContent: 'space-between', gap: 10 }}>
+          <div style={{ display: 'flex', flexDirection: 'column', gap: 6 }}><T s={14} w={700} c="#E7E7E7">−10 % avec mon code</T><BlocCode code={d.code} s={24} pad="9px 14px" bg="#fff" fg={CARBON} /></div>
+          <div style={{ background: '#fff', padding: 4, clipPath: chR(6) }}><QrSvg value={d.lien} size={74} /></div>
+        </div>
+        <Mention color="rgba(255,255,255,0.6)" />
+      </div>
+    </div>
+  );
+});
+CarteRiderAmb.displayName = 'KitCarteRiderAmb';
+
 export const FORMATS: KitFormat[] = [
+  { id: 'rider', titre: 'Ta carte Rider ambassadeur', usage: 'Ta carte Rider avec ta trott, ton code et ton QR : en story.', w: 360, h: 640, ratio: 3, noms: ['Littéral', 'Bandeau vert', 'Fiche claire', 'Grand −10 %', 'Moi & ma trott'], Comp: CarteRiderAmb },
   { id: 'carte', titre: 'Ta carte', usage: 'À envoyer en message ou à poster : ta carte ambassadeur avec code et QR.', w: 360, h: 225, ratio: 3, noms: ['Littéral', 'Carbone', 'Carte Rider', 'Affiche', 'Bon d\'atelier'], Comp: Carte },
   { id: 'qr', titre: 'QR seul', usage: 'À imprimer en sticker pour ta trott, ton casque ou un comptoir.', w: 360, h: 360, ratio: 3, transparent: true, noms: ['Littéral', 'Scanne-moi', 'Pastille', 'Affiche', 'Étiquette'], Comp: Qr },
   { id: 'code', titre: 'Code seul', usage: 'Story sans visage : ton code en grand.', w: 360, h: 640, ratio: 3, noms: ['Littéral', 'Ma trott', 'Carte compat', 'Comme le site', 'Vert maison'], Comp: Code },

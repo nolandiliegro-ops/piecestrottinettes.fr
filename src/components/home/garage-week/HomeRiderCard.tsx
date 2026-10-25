@@ -10,6 +10,7 @@ import RiderCardStory from "@/components/garage/story/RiderCardStory";
 import { useRiderCardData } from "@/hooks/useRiderCardData";
 import { useCardComments } from "@/hooks/useRiderCardComments";
 import type { RiderBundle } from "../GarageOfTheWeekSection";
+import BadgeIaTeaser, { readBadgeIaVariant } from "@/components/launch/BadgeIaTeaser";
 
 const UNB = "'Unbounded', sans-serif";
 const FONT = "'Plus Jakarta Sans', sans-serif";
@@ -19,6 +20,8 @@ const cut = (px: number) => `polygon(0 0, calc(100% - ${px}px) 0, 100% ${px}px, 
 
 const HomeRiderCard = ({ riders, isAuthenticated }: { riders: RiderBundle[]; isAuthenticated: boolean }) => {
   const [i, setI] = useState(0);
+  // 25/10 : « ton badge IA » pour donner envie de s'inscrire (?badgeia=1..5 ; 0 = rien).
+  const [badgeIa] = useState(readBadgeIaVariant);
   const rider = riders[Math.min(i, Math.max(0, riders.length - 1))];
   const { data } = useRiderCardData({ username: rider?.username ?? undefined });
   const { data: comments = [] } = useCardComments(data?.profile.id);
@@ -47,6 +50,7 @@ const HomeRiderCard = ({ riders, isAuthenticated }: { riders: RiderBundle[]; isA
               <li key={t} className="px-3 py-1.5 text-sm font-bold text-white" style={{ background: "rgba(26,26,26,0.72)", boxShadow: "inset 0 0 0 1px rgba(255,255,255,0.25)" }}>{t}</li>
             ))}
           </ul>
+          {badgeIa.v > 0 && (!isAuthenticated || badgeIa.force) && <div className="mt-4 max-w-lg"><BadgeIaTeaser v={badgeIa.v} dark /></div>}
           <div className="mt-6 flex flex-wrap items-center gap-3">
             <Link to={isAuthenticated ? "/garage" : "/register"} className="inline-flex items-center gap-3 min-h-[56px] px-5 text-[15px] font-extrabold uppercase" style={{ fontFamily: FONT, background: "#FFFFFF", color: CARBON, clipPath: cut(10) }}>
               {isAuthenticated ? "Ouvrir mon garage" : "Créer mon garage"} <ArrowRight className="w-5 h-5" />

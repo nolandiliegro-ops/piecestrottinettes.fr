@@ -229,7 +229,7 @@ const Tableau = ({ d }: { d: Dash }) => {
 
       <StoryAmbassadeur photo={photo} nom={d.nom} code={code} lien={code ? lienCreateur(code) : ''} themeKey={profile?.active_theme_key} />
 
-      <KitPartage userId={profile?.id} photo={photo} nom={d.nom} code={code} lien={code ? lienCreateur(code) : ''} themeKey={profile?.active_theme_key} />
+      <KitPartage userId={profile?.id} photo={photo} nom={d.nom} code={code} lien={code ? lienCreateur(code) : ''} themeKey={profile?.active_theme_key} points={profile?.performance_points} ville={profile?.rider_location} />
 
       <section className="grid grid-cols-2 sm:grid-cols-3 gap-3">
         {chiffres.map((c) => (
