@@ -8,9 +8,9 @@ import { supabase } from '@/integrations/supabase/client';
 import AmbassadorStory from './AmbassadorStory';
 
 /* Bloc « Ton visuel story » de l'espace ambassadeur (25/10/2026).
-   Tant que la proposition n'est pas choisie, le bloc n'apparaît QU'avec ?story=1..5 : sans paramètre, rien ne change en ligne. */
+   Choix de Nolan (25/10) : 4 · Affiche par défaut. ?story=1..5 montre les autres propositions, ?story=0 masque le bloc (avant). */
 
-const VARIANTE_DEFAUT = 0; // 0 = bloc masqué tant que Nolan n'a pas choisi
+const VARIANTE_DEFAUT = 4; // « Affiche », choisie par Nolan le 25/10
 
 type Props = { photo: string | null; nom: string; code: string; lien: string; themeKey: string | null | undefined };
 
