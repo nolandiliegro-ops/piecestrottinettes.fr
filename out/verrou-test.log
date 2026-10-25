@@ -1,0 +1,10 @@
+      juge #0 3/4 avant REFUSÉE : personne, téléphone/écran, pas une seule trottinette, fond pas propre
+      juge #1 profil
+      juge #2 3/4 avant (principale possible)
+OK  cas 1 : le composite (personne + téléphone) est refusé
+OK  cas 1 : le 3/4 arrivé en dernier part EN TÊTE (photo principale)
+      juge #0 profil
+      juge #1 pliee
+OK  cas 2 : sans 3/4 propre, a34=false → rien envoyé, fiche en brouillon
+OK  cas 3 : sans clé API, le verrou reste FERMÉ (erreur, aucun envoi)
+::notice title=verrou import::4/4 OK
