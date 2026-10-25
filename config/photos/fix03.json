@@ -1,0 +1,23 @@
+{
+ "lot": "fix03",
+ "entity": "part",
+ "models": [
+  {
+   "id": "949a3354-7fd5-4712-8f25-d1d5159ce6c6",
+   "slug": "pneu-plein-10x2-125-6-1-ultra-leger-jante-34-mm-lisere-rouge-nedong",
+   "name": "Pneu plein 10x2.125-6.1 ultra-léger jante 34 mm liseré rouge Nedong",
+   "brand": "",
+   "candidates": [
+    "https://d2j6dbq0eux0bg.cloudfront.net/images/68019033/3688903520.jpg",
+    "https://d2j6dbq0eux0bg.cloudfront.net/images/68019033/3688903522.jpg",
+    "https://d2j6dbq0eux0bg.cloudfront.net/images/68019033/3688899023.jpg",
+    "https://d2j6dbq0eux0bg.cloudfront.net/images/68019033/3688736997.jpg",
+    "https://ewheel.es/cdn/shop/files/7427251899178.jpg",
+    "https://ewheel.es/cdn/shop/files/7427251899178_1.jpg",
+    "https://ewheel.es/cdn/shop/files/7427251899178_2.jpg",
+    "https://ewheel.es/cdn/shop/files/7427251899178_3.jpg",
+    "https://ewheel.es/cdn/shop/files/7427251899178_4.jpg"
+   ]
+  }
+ ]
+}

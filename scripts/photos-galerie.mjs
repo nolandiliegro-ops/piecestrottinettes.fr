@@ -167,8 +167,10 @@ async function write() {
         body: JSON.stringify({ entity_type: lot.entity === 'part' ? 'part' : 'scooter', entity_id: m.id, images_base64: [bufs[k].toString('base64')], alt_base: m.name, reset: !APPEND && k === 0 }),
       });
       const t = await res.text();
-      if (res.ok && /"success"\s*:\s*true/.test(t)) posted++;
-      else { console.log(`::warning title=POST ${m.slug}::HTTP ${res.status} ${t.slice(0, 120)}`); if (k === 0) break; }
+      // 25/10 : « success:true » ne suffit pas — la fonction répond succès avec processed_count 0 si l'upload n'a rien produit.
+      let j = null; try { j = JSON.parse(t); } catch {}
+      if (res.ok && j?.success === true && (j.processed_count ?? j.images?.length ?? 0) > 0) posted++;
+      else { console.log(`::warning title=POST ${m.slug}::HTTP ${res.status} ${t.slice(0, 300)}`); if (k === 0) break; }
     }
     out.push({ slug: m.slug, posted, wanted: picks.length });
     console.log(`${m.slug} : ${posted}/${picks.length} photo(s) écrite(s)`);
