@@ -7,105 +7,17 @@
   "dhash": 6,
   "iou": 0.97,
   "dhashAvecIou": 12,
-  "couleur": 20
+  "couleur": 8
  },
  "actuels": {
   "faux_positifs": [
-   {
-    "slug": "cecotec-bongo-serie-a-connected",
-    "ia": 0,
-    "ib": 2,
-    "d": 0,
-    "io": 0.9484848484848485,
-    "c": 3.520833333333333
-   },
-   {
-    "slug": "e-twow-gt-sport",
-    "ia": 0,
-    "ib": 1,
-    "d": 1,
-    "io": 0.6371681415929203,
-    "c": 14.708333333333332
-   },
-   {
-    "slug": "e-twow-gts",
-    "ia": 2,
-    "ib": 3,
-    "d": 6,
-    "io": 0.43256997455470736,
-    "c": 18.291666666666668
-   },
-   {
-    "slug": "e-twow-tanktorq-tk5",
-    "ia": 0,
-    "ib": 3,
-    "d": 3,
-    "io": 0.9717948717948718,
-    "c": 15.125000000000002
-   },
    {
     "slug": "engwe-y1000",
     "ia": 1,
     "ib": 3,
     "d": 0,
     "io": 1,
-    "c": 0.31249999999999994
-   },
-   {
-    "slug": "hiboy-ks4-pro",
-    "ia": 0,
-    "ib": 1,
-    "d": 6,
-    "io": 0.7890173410404624,
-    "c": 14.166666666666668
-   },
-   {
-    "slug": "hikerboy-brio",
-    "ia": 0,
-    "ib": 2,
-    "d": 4,
-    "io": 0.9476923076923077,
-    "c": 11.250000000000002
-   },
-   {
-    "slug": "hikerboy-brio",
-    "ia": 0,
-    "ib": 3,
-    "d": 1,
-    "io": 0.9384615384615385,
-    "c": 17.458333333333336
-   },
-   {
-    "slug": "hikerboy-brio",
-    "ia": 2,
-    "ib": 3,
-    "d": 3,
-    "io": 0.953125,
-    "c": 17.416666666666668
-   },
-   {
-    "slug": "hikerboy-foxtrot-plus",
-    "ia": 1,
-    "ib": 2,
-    "d": 0,
-    "io": 0.9545454545454546,
-    "c": 17.187500000000004
-   },
-   {
-    "slug": "inokim-light-2",
-    "ia": 2,
-    "ib": 3,
-    "d": 3,
-    "io": 0.9462616822429907,
-    "c": 7.583333333333335
-   },
-   {
-    "slug": "inokim-oxo-super",
-    "ia": 2,
-    "ib": 4,
-    "d": 3,
-    "io": 0.8967391304347826,
-    "c": 15.604166666666664
+    "c": 1.1827956989247261
    },
    {
     "slug": "joyor-a5",
@@ -113,146 +25,10 @@
     "ib": 2,
     "d": 10,
     "io": 0.9823529411764705,
-    "c": 16.5
-   },
-   {
-    "slug": "navee-s40",
-    "ia": 1,
-    "ib": 3,
-    "d": 6,
-    "io": 0.8564102564102564,
-    "c": 9.104166666666668
-   },
-   {
-    "slug": "niu-kqi-200p",
-    "ia": 1,
-    "ib": 2,
-    "d": 1,
-    "io": 0.8852459016393442,
-    "c": 9.062500000000002
-   },
-   {
-    "slug": "niu-kqi-300p",
-    "ia": 1,
-    "ib": 2,
-    "d": 6,
-    "io": 0.8915094339622641,
-    "c": 13.770833333333336
-   },
-   {
-    "slug": "niu-kqi-300x",
-    "ia": 1,
-    "ib": 3,
-    "d": 6,
-    "io": 0.919431279620853,
-    "c": 12.270833333333334
-   },
-   {
-    "slug": "niu-kqi2-pro",
-    "ia": 0,
-    "ib": 3,
-    "d": 2,
-    "io": 0.9455587392550143,
-    "c": 8.354166666666668
-   },
-   {
-    "slug": "niu-kqi2-pro",
-    "ia": 2,
-    "ib": 4,
-    "d": 2,
-    "io": 0.8897058823529411,
-    "c": 10.125
-   },
-   {
-    "slug": "niu-kqi3-sport",
-    "ia": 0,
-    "ib": 1,
-    "d": 1,
-    "io": 0.9313984168865436,
-    "c": 12.1875
-   },
-   {
-    "slug": "niu-kqi3-sport",
-    "ia": 0,
-    "ib": 2,
-    "d": 1,
-    "io": 0.9785522788203753,
-    "c": 16.145833333333336
-   },
-   {
-    "slug": "niu-kqi3-sport",
-    "ia": 0,
-    "ib": 3,
-    "d": 1,
-    "io": 0.949468085106383,
-    "c": 12.500000000000002
-   },
-   {
-    "slug": "niu-kqi3-sport",
-    "ia": 1,
-    "ib": 2,
-    "d": 0,
-    "io": 0.9368421052631579,
-    "c": 5.145833333333334
-   },
-   {
-    "slug": "niu-kqi3-sport",
-    "ia": 1,
-    "ib": 3,
-    "d": 0,
-    "io": 0.9756756756756757,
-    "c": 8.625
-   },
-   {
-    "slug": "niu-kqi3-sport",
-    "ia": 2,
-    "ib": 3,
-    "d": 0,
-    "io": 0.9549071618037135,
-    "c": 6.375
-   },
-   {
-    "slug": "segway-gt1",
-    "ia": 3,
-    "ib": 4,
-    "d": 4,
-    "io": 0.9431818181818182,
-    "c": 11.5
-   },
-   {
-    "slug": "wispeed-suvpilot-480",
-    "ia": 0,
-    "ib": 3,
-    "d": 6,
-    "io": 0.6140684410646388,
-    "c": 19.249999999999996
-   },
-   {
-    "slug": "yeep-me-80n-evo-plus",
-    "ia": 0,
-    "ib": 3,
-    "d": 1,
-    "io": 1,
-    "c": 5.354166666666666
-   },
-   {
-    "slug": "yeep-me-80n-evo-plus",
-    "ia": 2,
-    "ib": 4,
-    "d": 0,
-    "io": 1,
-    "c": 6.895833333333333
-   },
-   {
-    "slug": "zwheel-zfox-max",
-    "ia": 3,
-    "ib": 4,
-    "d": 5,
-    "io": 0.8932926829268293,
-    "c": 13.812499999999998
+    "c": 3.6319699858750965
    }
   ],
-  "rates": 27
+  "rates": 32
  },
  "hist_dhash_negatifs": {
   "0": 7,
@@ -329,362 +105,362 @@
  },
  "grille": [
   {
-   "dhash": 4,
-   "iou": 0.95,
-   "dhashAvecIou": 10,
-   "couleur": 10,
-   "faux_positifs": 10,
-   "detectes": 87,
-   "positifs": 130
-  },
-  {
-   "dhash": 4,
-   "iou": 0.95,
-   "dhashAvecIou": 12,
-   "couleur": 10,
-   "faux_positifs": 10,
-   "detectes": 87,
-   "positifs": 130
-  },
-  {
-   "dhash": 4,
-   "iou": 0.95,
-   "dhashAvecIou": 14,
-   "couleur": 10,
-   "faux_positifs": 10,
-   "detectes": 87,
-   "positifs": 130
-  },
-  {
-   "dhash": 4,
-   "iou": 0.97,
-   "dhashAvecIou": 10,
-   "couleur": 10,
-   "faux_positifs": 10,
-   "detectes": 87,
-   "positifs": 130
-  },
-  {
-   "dhash": 4,
-   "iou": 0.97,
-   "dhashAvecIou": 12,
-   "couleur": 10,
-   "faux_positifs": 10,
-   "detectes": 87,
-   "positifs": 130
-  },
-  {
-   "dhash": 4,
-   "iou": 0.97,
-   "dhashAvecIou": 14,
-   "couleur": 10,
-   "faux_positifs": 10,
-   "detectes": 87,
-   "positifs": 130
-  },
-  {
-   "dhash": 4,
-   "iou": 0.98,
-   "dhashAvecIou": 10,
-   "couleur": 10,
-   "faux_positifs": 10,
-   "detectes": 87,
-   "positifs": 130
-  },
-  {
-   "dhash": 4,
-   "iou": 0.98,
-   "dhashAvecIou": 12,
-   "couleur": 10,
-   "faux_positifs": 10,
-   "detectes": 87,
-   "positifs": 130
-  },
-  {
-   "dhash": 4,
-   "iou": 0.98,
-   "dhashAvecIou": 14,
-   "couleur": 10,
-   "faux_positifs": 10,
-   "detectes": 87,
-   "positifs": 130
-  },
-  {
-   "dhash": 10,
-   "iou": 0.95,
-   "dhashAvecIou": 10,
-   "couleur": 10,
-   "faux_positifs": 11,
-   "detectes": 91,
-   "positifs": 130
-  },
-  {
-   "dhash": 10,
-   "iou": 0.95,
-   "dhashAvecIou": 12,
-   "couleur": 10,
-   "faux_positifs": 11,
-   "detectes": 91,
-   "positifs": 130
-  },
-  {
-   "dhash": 10,
-   "iou": 0.95,
-   "dhashAvecIou": 14,
-   "couleur": 10,
-   "faux_positifs": 11,
-   "detectes": 91,
-   "positifs": 130
-  },
-  {
-   "dhash": 10,
-   "iou": 0.97,
-   "dhashAvecIou": 10,
-   "couleur": 10,
-   "faux_positifs": 11,
-   "detectes": 91,
-   "positifs": 130
-  },
-  {
-   "dhash": 10,
-   "iou": 0.97,
-   "dhashAvecIou": 12,
-   "couleur": 10,
-   "faux_positifs": 11,
-   "detectes": 91,
-   "positifs": 130
-  },
-  {
-   "dhash": 10,
-   "iou": 0.97,
-   "dhashAvecIou": 14,
-   "couleur": 10,
-   "faux_positifs": 11,
-   "detectes": 91,
-   "positifs": 130
-  },
-  {
-   "dhash": 10,
-   "iou": 0.98,
-   "dhashAvecIou": 10,
-   "couleur": 10,
-   "faux_positifs": 11,
-   "detectes": 91,
-   "positifs": 130
-  },
-  {
-   "dhash": 10,
-   "iou": 0.98,
-   "dhashAvecIou": 12,
-   "couleur": 10,
-   "faux_positifs": 11,
-   "detectes": 91,
-   "positifs": 130
-  },
-  {
-   "dhash": 10,
-   "iou": 0.98,
-   "dhashAvecIou": 14,
-   "couleur": 10,
-   "faux_positifs": 11,
-   "detectes": 91,
-   "positifs": 130
-  },
-  {
    "dhash": 6,
    "iou": 0.95,
    "dhashAvecIou": 10,
-   "couleur": 10,
-   "faux_positifs": 11,
-   "detectes": 90,
+   "couleur": 2,
+   "faux_positifs": 1,
+   "detectes": 53,
    "positifs": 130
   },
   {
    "dhash": 6,
    "iou": 0.95,
    "dhashAvecIou": 12,
-   "couleur": 10,
-   "faux_positifs": 11,
-   "detectes": 90,
+   "couleur": 2,
+   "faux_positifs": 1,
+   "detectes": 53,
    "positifs": 130
   },
   {
    "dhash": 6,
    "iou": 0.95,
    "dhashAvecIou": 14,
-   "couleur": 10,
-   "faux_positifs": 11,
-   "detectes": 90,
+   "couleur": 2,
+   "faux_positifs": 1,
+   "detectes": 53,
    "positifs": 130
   },
   {
    "dhash": 6,
    "iou": 0.97,
    "dhashAvecIou": 10,
-   "couleur": 10,
-   "faux_positifs": 11,
-   "detectes": 90,
+   "couleur": 2,
+   "faux_positifs": 1,
+   "detectes": 53,
    "positifs": 130
   },
   {
    "dhash": 6,
    "iou": 0.97,
    "dhashAvecIou": 12,
-   "couleur": 10,
-   "faux_positifs": 11,
-   "detectes": 90,
+   "couleur": 2,
+   "faux_positifs": 1,
+   "detectes": 53,
    "positifs": 130
   },
   {
    "dhash": 6,
    "iou": 0.97,
    "dhashAvecIou": 14,
-   "couleur": 10,
-   "faux_positifs": 11,
-   "detectes": 90,
+   "couleur": 2,
+   "faux_positifs": 1,
+   "detectes": 53,
    "positifs": 130
   },
   {
    "dhash": 6,
    "iou": 0.98,
    "dhashAvecIou": 10,
-   "couleur": 10,
-   "faux_positifs": 11,
-   "detectes": 90,
+   "couleur": 2,
+   "faux_positifs": 1,
+   "detectes": 53,
    "positifs": 130
   },
   {
    "dhash": 6,
    "iou": 0.98,
    "dhashAvecIou": 12,
-   "couleur": 10,
-   "faux_positifs": 11,
-   "detectes": 90,
+   "couleur": 2,
+   "faux_positifs": 1,
+   "detectes": 53,
    "positifs": 130
   },
   {
    "dhash": 6,
    "iou": 0.98,
    "dhashAvecIou": 14,
-   "couleur": 10,
-   "faux_positifs": 11,
-   "detectes": 90,
+   "couleur": 2,
+   "faux_positifs": 1,
+   "detectes": 53,
    "positifs": 130
   },
   {
    "dhash": 8,
    "iou": 0.95,
    "dhashAvecIou": 10,
-   "couleur": 10,
-   "faux_positifs": 11,
-   "detectes": 90,
+   "couleur": 2,
+   "faux_positifs": 1,
+   "detectes": 53,
    "positifs": 130
   },
   {
    "dhash": 8,
    "iou": 0.95,
    "dhashAvecIou": 12,
-   "couleur": 10,
-   "faux_positifs": 11,
-   "detectes": 90,
+   "couleur": 2,
+   "faux_positifs": 1,
+   "detectes": 53,
    "positifs": 130
   },
   {
    "dhash": 8,
    "iou": 0.95,
    "dhashAvecIou": 14,
-   "couleur": 10,
-   "faux_positifs": 11,
-   "detectes": 90,
+   "couleur": 2,
+   "faux_positifs": 1,
+   "detectes": 53,
    "positifs": 130
   },
   {
    "dhash": 8,
    "iou": 0.97,
    "dhashAvecIou": 10,
-   "couleur": 10,
-   "faux_positifs": 11,
-   "detectes": 90,
+   "couleur": 2,
+   "faux_positifs": 1,
+   "detectes": 53,
    "positifs": 130
   },
   {
    "dhash": 8,
    "iou": 0.97,
    "dhashAvecIou": 12,
-   "couleur": 10,
-   "faux_positifs": 11,
-   "detectes": 90,
+   "couleur": 2,
+   "faux_positifs": 1,
+   "detectes": 53,
    "positifs": 130
   },
   {
    "dhash": 8,
    "iou": 0.97,
    "dhashAvecIou": 14,
-   "couleur": 10,
-   "faux_positifs": 11,
-   "detectes": 90,
+   "couleur": 2,
+   "faux_positifs": 1,
+   "detectes": 53,
    "positifs": 130
   },
   {
    "dhash": 8,
    "iou": 0.98,
    "dhashAvecIou": 10,
-   "couleur": 10,
-   "faux_positifs": 11,
-   "detectes": 90,
+   "couleur": 2,
+   "faux_positifs": 1,
+   "detectes": 53,
    "positifs": 130
   },
   {
    "dhash": 8,
    "iou": 0.98,
    "dhashAvecIou": 12,
-   "couleur": 10,
-   "faux_positifs": 11,
-   "detectes": 90,
+   "couleur": 2,
+   "faux_positifs": 1,
+   "detectes": 53,
    "positifs": 130
   },
   {
    "dhash": 8,
    "iou": 0.98,
    "dhashAvecIou": 14,
-   "couleur": 10,
-   "faux_positifs": 11,
-   "detectes": 90,
+   "couleur": 2,
+   "faux_positifs": 1,
+   "detectes": 53,
+   "positifs": 130
+  },
+  {
+   "dhash": 10,
+   "iou": 0.95,
+   "dhashAvecIou": 10,
+   "couleur": 2,
+   "faux_positifs": 1,
+   "detectes": 53,
+   "positifs": 130
+  },
+  {
+   "dhash": 10,
+   "iou": 0.95,
+   "dhashAvecIou": 12,
+   "couleur": 2,
+   "faux_positifs": 1,
+   "detectes": 53,
+   "positifs": 130
+  },
+  {
+   "dhash": 10,
+   "iou": 0.95,
+   "dhashAvecIou": 14,
+   "couleur": 2,
+   "faux_positifs": 1,
+   "detectes": 53,
+   "positifs": 130
+  },
+  {
+   "dhash": 10,
+   "iou": 0.97,
+   "dhashAvecIou": 10,
+   "couleur": 2,
+   "faux_positifs": 1,
+   "detectes": 53,
+   "positifs": 130
+  },
+  {
+   "dhash": 10,
+   "iou": 0.97,
+   "dhashAvecIou": 12,
+   "couleur": 2,
+   "faux_positifs": 1,
+   "detectes": 53,
+   "positifs": 130
+  },
+  {
+   "dhash": 10,
+   "iou": 0.97,
+   "dhashAvecIou": 14,
+   "couleur": 2,
+   "faux_positifs": 1,
+   "detectes": 53,
+   "positifs": 130
+  },
+  {
+   "dhash": 10,
+   "iou": 0.98,
+   "dhashAvecIou": 10,
+   "couleur": 2,
+   "faux_positifs": 1,
+   "detectes": 53,
+   "positifs": 130
+  },
+  {
+   "dhash": 10,
+   "iou": 0.98,
+   "dhashAvecIou": 12,
+   "couleur": 2,
+   "faux_positifs": 1,
+   "detectes": 53,
+   "positifs": 130
+  },
+  {
+   "dhash": 10,
+   "iou": 0.98,
+   "dhashAvecIou": 14,
+   "couleur": 2,
+   "faux_positifs": 1,
+   "detectes": 53,
    "positifs": 130
   },
   {
    "dhash": 4,
    "iou": 0.95,
    "dhashAvecIou": 10,
-   "couleur": 15,
-   "faux_positifs": 16,
-   "detectes": 98,
+   "couleur": 2,
+   "faux_positifs": 1,
+   "detectes": 52,
    "positifs": 130
   },
   {
    "dhash": 4,
    "iou": 0.95,
    "dhashAvecIou": 12,
-   "couleur": 15,
-   "faux_positifs": 16,
-   "detectes": 98,
+   "couleur": 2,
+   "faux_positifs": 1,
+   "detectes": 52,
    "positifs": 130
   },
   {
    "dhash": 4,
    "iou": 0.95,
    "dhashAvecIou": 14,
-   "couleur": 15,
-   "faux_positifs": 16,
-   "detectes": 98,
+   "couleur": 2,
+   "faux_positifs": 1,
+   "detectes": 52,
    "positifs": 130
   },
   {
    "dhash": 4,
    "iou": 0.97,
    "dhashAvecIou": 10,
-   "couleur": 15,
-   "faux_positifs": 16,
+   "couleur": 2,
+   "faux_positifs": 1,
+   "detectes": 52,
+   "positifs": 130
+  },
+  {
+   "dhash": 4,
+   "iou": 0.97,
+   "dhashAvecIou": 12,
+   "couleur": 2,
+   "faux_positifs": 1,
+   "detectes": 52,
+   "positifs": 130
+  },
+  {
+   "dhash": 4,
+   "iou": 0.97,
+   "dhashAvecIou": 14,
+   "couleur": 2,
+   "faux_positifs": 1,
+   "detectes": 52,
+   "positifs": 130
+  },
+  {
+   "dhash": 4,
+   "iou": 0.98,
+   "dhashAvecIou": 10,
+   "couleur": 2,
+   "faux_positifs": 1,
+   "detectes": 52,
+   "positifs": 130
+  },
+  {
+   "dhash": 4,
+   "iou": 0.98,
+   "dhashAvecIou": 12,
+   "couleur": 2,
+   "faux_positifs": 1,
+   "detectes": 52,
+   "positifs": 130
+  },
+  {
+   "dhash": 4,
+   "iou": 0.98,
+   "dhashAvecIou": 14,
+   "couleur": 2,
+   "faux_positifs": 1,
+   "detectes": 52,
+   "positifs": 130
+  },
+  {
+   "dhash": 6,
+   "iou": 0.95,
+   "dhashAvecIou": 10,
+   "couleur": 8,
+   "faux_positifs": 2,
+   "detectes": 99,
+   "positifs": 130
+  },
+  {
+   "dhash": 6,
+   "iou": 0.95,
+   "dhashAvecIou": 12,
+   "couleur": 8,
+   "faux_positifs": 2,
+   "detectes": 99,
+   "positifs": 130
+  },
+  {
+   "dhash": 6,
+   "iou": 0.95,
+   "dhashAvecIou": 14,
+   "couleur": 8,
+   "faux_positifs": 2,
+   "detectes": 99,
+   "positifs": 130
+  },
+  {
+   "dhash": 6,
+   "iou": 0.97,
+   "dhashAvecIou": 10,
+   "couleur": 8,
+   "faux_positifs": 2,
    "detectes": 98,
    "positifs": 130
   }
