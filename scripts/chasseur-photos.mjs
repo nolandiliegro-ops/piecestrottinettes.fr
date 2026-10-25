@@ -29,6 +29,9 @@ const MAX_MODELS = Number(opt('max-modeles', '999'));
 const MAX_SEARCHES = Number(opt('max-searches', '4'));
 const MODEL = opt('model', 'claude-sonnet-5-5');
 const MAX_CANDS = 10;
+// 25/10 (choix de Nolan) : les fiches produit peuvent venir d'un connecteur de recherche (Firecrawl / Perplexity) lancé
+// depuis la conversation → --pages config/photos/<lot>.pages.json { "<slug>": [url, ...] } : aucun appel Claude, coût 0 ici.
+const PAGES = opt('pages') ? JSON.parse(readFileSync(resolve(ROOT, opt('pages')), 'utf-8')) : null;
 
 function publicSupabase() {
   const src = readFileSync(resolve(ROOT, 'src/integrations/supabase/client.ts'), 'utf-8');
@@ -121,7 +124,9 @@ async function pageImages(url, tokens) {
     const title = (html.match(/<title[^>]*>([^<]*)/i)?.[1] || '') + ' ' + (html.match(/property=["']og:title["'][^>]*content=["']([^"']+)/i)?.[1] || '');
     out.title = title.trim().slice(0, 160);
     const tw = mots(title);
-    if (!tokens.every((t) => tw.includes(t))) return out; // page d'un autre modèle : écartée
+    // « E-Cross » / « eCross », « Gen 2 » / « 2ème génération » : un jeton absent des mots est cherché dans le titre collé
+    const colle = tw.join('');
+    if (!tokens.every((t) => tw.includes(t) || (t.length >= 3 && colle.includes(t)))) return out; // page d'un autre modèle : écartée
     const extra = tw.filter((t) => VARIANTES.includes(t) && !tokens.includes(t));
     if (extra.length) { out.title += ` [variante : ${extra.join(',')}]`; return out; }
     out.ok = true;
@@ -151,19 +156,20 @@ async function pageImages(url, tokens) {
 
 async function main() {
   if (!LOT || !/^[a-z0-9-]+$/.test(LOT)) { console.log('::error title=chasseur::--lot absent ou invalide'); process.exit(1); }
-  if (!CAP) { console.log('::error title=chasseur::--plafond-tokens absent : aucun run sans plafond'); process.exit(1); }
-  if (!process.env.ANTHROPIC_API_KEY) { console.log('::error title=chasseur::ANTHROPIC_API_KEY absent — arrêt avant tout appel'); process.exit(1); }
+  if (!CAP && !PAGES) { console.log('::error title=chasseur::--plafond-tokens absent : aucun run sans plafond'); process.exit(1); }
+  if (!PAGES && !process.env.ANTHROPIC_API_KEY) { console.log('::error title=chasseur::ANTHROPIC_API_KEY absent — arrêt avant tout appel'); process.exit(1); }
   const models = await cibles();
   if (!models.length) { console.log('::error title=chasseur::0 cible lue — arrêt (une liste vide n\'est pas un succès)'); process.exit(1); }
   console.log(`🎯 Chasseur — ${models.length} cible(s) · ${MODEL} · plafond ${CAP} tokens`);
   const lot = { lot: LOT, entity: 'scooter', chasse: true, models: [] };
   const log = [];
   for (const m of models) {
-    if (usage.input_tokens + usage.output_tokens >= CAP) { console.log(`::warning title=chasseur::plafond ${CAP} tokens atteint — ${models.length - log.length} cible(s) non traitées`); break; }
+    if (!PAGES && usage.input_tokens + usage.output_tokens >= CAP) { console.log(`::warning title=chasseur::plafond ${CAP} tokens atteint — ${models.length - log.length} cible(s) non traitées`); break; }
     const tokens = modelTokens(m.brand, m.name);
     const entry = { slug: m.slug, tokens, pages: [], candidates: 0 };
     try {
-      const got = await claude(`Trottinette électrique « ${m.brand} ${m.name} ». Trouve ses fiches produit (site officiel ${m.brand} d'abord) pour en récupérer des photos produit : une vue de 3/4 sur fond blanc en priorité, puis profil, face, pliée.`);
+      const got = PAGES ? { product_page_urls: PAGES[m.slug] || [], image_urls: [] }
+        : await claude(`Trottinette électrique « ${m.brand} ${m.name} ». Trouve ses fiches produit (site officiel ${m.brand} d'abord) pour en récupérer des photos produit : une vue de 3/4 sur fond blanc en priorité, puis profil, face, pliée.`);
       const pages = (got.product_page_urls || []).filter((u) => /^https?:\/\//i.test(u)).slice(0, 5);
       const cands = []; const okHosts = new Set();
       for (const p of pages) {

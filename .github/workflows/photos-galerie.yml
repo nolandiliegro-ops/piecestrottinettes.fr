@@ -145,7 +145,8 @@ jobs:
               # Lecture seule (25/10) : CHASSEUR PHOTO. « chasse <lot> <depubliees|publiees|toutes|slugs:a,b> [plafond_tokens] ».
               # Cherche des sources (Claude + web), puis dry --juge : planches, proposition, accept. RIEN n'est écrit en base.
               plafond="${extra#* }"; cib="${extra%% *}"; [ "$plafond" = "$extra" ] && plafond=400000
-              node scripts/chasseur-photos.mjs --lot "$lot" --cibles "${cib:-depubliees}" --plafond-tokens "$plafond" > "out/$lot.chasse.log" 2>&1
+              pages=""; [ -f "config/photos/$lot.pages.json" ] && pages="--pages config/photos/$lot.pages.json"
+              node scripts/chasseur-photos.mjs --lot "$lot" --cibles "${cib:-depubliees}" --plafond-tokens "$plafond" $pages > "out/$lot.chasse.log" 2>&1
               echo "::notice title=$lot chasse::EXIT=$?"
               grep '^::' "out/$lot.chasse.log" | head -20
               if [ -f "config/photos/$lot.json" ]; then

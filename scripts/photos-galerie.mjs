@@ -164,9 +164,15 @@ async function dry() {
       const p34 = retenus.filter((r) => r.juge.principale_ok).sort((a, b) => a.juge.rang - b.juge.rang)[0] || null;
       const picks = p34 ? [p34] : [];
       const vues = new Set(picks.map((r) => r.juge.vue));
+      // 25/10 (run 1) : le juge appelle « profil » un 3/4 léger, et ne distingue pas un 3/4 pris de l'autre côté →
+      // 2 doublons d'angle sur 13 propositions. Les vues de côté (3/4 avant, 3/4 arrière, profil) comptent pour UNE seule.
+      const COTE = new Set(['3/4 avant', '3/4 arriere', 'profil']);
+      const famille = (v) => (COTE.has(v) ? 'cote' : v);
+      const fam = new Set(picks.map((r) => famille(r.juge.vue)));
       for (const r of retenus) {
         if (picks.length + (m.current || []).length >= 4) break;
-        if (picks.includes(r) || vues.has(r.juge.vue)) continue;
+        if (picks.includes(r) || vues.has(r.juge.vue) || fam.has(famille(r.juge.vue))) continue;
+        fam.add(famille(r.juge.vue));
         if (r.juge.vue === 'detail' && picks.length + (m.current || []).length >= 3) continue;
         picks.push(r); vues.add(r.juge.vue);
       }
