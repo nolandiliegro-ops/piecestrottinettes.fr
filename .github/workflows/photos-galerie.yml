@@ -129,6 +129,12 @@ jobs:
               grep -v -i 'secret\|bearer\|eyJ' "out/smoke-doublon.log" | tail -n 8
               continue
             fi
+            if [ "$mode" = "verrou-test" ]; then
+              node scripts/_test-verrou-import.mjs > "out/verrou-test.log" 2>&1
+              echo "::notice title=verrou-test::EXIT=$?"
+              cat "out/verrou-test.log" | tail -n 8
+              continue
+            fi
             if [ "$mode" = "juge" ]; then
               # Lecture seule (25/10) : juge VISION des photos de trottinettes. « juge tout x » ou « juge slugs a,b,c ».
               jargs=""; [ "$lot" = "slugs" ] && jargs="--slugs $extra"
