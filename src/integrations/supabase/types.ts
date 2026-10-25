@@ -5524,6 +5524,57 @@ export type Database = {
         }
         Relationships: []
       }
+      bak_user_garage_20261025: {
+        Row: {
+          added_at: string | null
+          current_km: number | null
+          custom_photo_url: string | null
+          id: string | null
+          is_featured: boolean | null
+          is_owned: boolean | null
+          last_maintenance_date: string | null
+          mood: string | null
+          next_maintenance_km: number | null
+          nickname: string | null
+          personal_description: string | null
+          photo_xp_claimed: boolean | null
+          scooter_model_id: string | null
+          user_id: string | null
+        }
+        Insert: {
+          added_at?: string | null
+          current_km?: number | null
+          custom_photo_url?: string | null
+          id?: string | null
+          is_featured?: boolean | null
+          is_owned?: boolean | null
+          last_maintenance_date?: string | null
+          mood?: string | null
+          next_maintenance_km?: number | null
+          nickname?: string | null
+          personal_description?: string | null
+          photo_xp_claimed?: boolean | null
+          scooter_model_id?: string | null
+          user_id?: string | null
+        }
+        Update: {
+          added_at?: string | null
+          current_km?: number | null
+          custom_photo_url?: string | null
+          id?: string | null
+          is_featured?: boolean | null
+          is_owned?: boolean | null
+          last_maintenance_date?: string | null
+          mood?: string | null
+          next_maintenance_km?: number | null
+          nickname?: string | null
+          personal_description?: string | null
+          photo_xp_claimed?: boolean | null
+          scooter_model_id?: string | null
+          user_id?: string | null
+        }
+        Relationships: []
+      }
       bk_200x50_20261020: {
         Row: {
           auto_suggested: boolean | null
