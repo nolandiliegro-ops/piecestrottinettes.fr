@@ -255,11 +255,26 @@ const readFamilles = (): FamillesLook | null => {
   try { const r = new URLSearchParams(window.location.search).get("familles"); if (r === null) return 5; const n = Number(r); return n >= 1 && n <= 5 ? (n as FamillesLook) : null; } catch { return 5; }
 };
 type Fam = { c: CatCategory | null; n: number; on: boolean; go: () => void };
+/* 25/10 ~03h : Vedette + bandeau guide = deux blocs noirs avec la MÊME photo (capture iPhone de Nolan, Chargeurs).
+ * ?vedette=1..5 (téléphone) — un seul noir au plus, une seule photo :
+ * 1 FUSION      · une seule carte carbone ; le guide devient sa bande du bas
+ * 2 CLAIRE      · carte vedette en pierre avec la photo ; le guide reste carbone, sans photo (icône livre)
+ * 3 RONDS       · plus de grande carte : les ronds grossissent ; le guide Affiche porte le seul noir et la photo
+ * 4 TOUT CLAIR  · carte blanche avec photo, guide en lien vert dans la carte : zéro noir
+ * 5 NOIR + LIGNE· carte carbone gardée ; le guide devient une ligne claire sans photo */
+export type VedetteLook = 0 | 1 | 2 | 3 | 4 | 5;
+export const readVedette = (): VedetteLook => {
+  // RETENU (Nolan, 25/10) : 1 FUSION par défaut ; ?vedette=0 = deux blocs (avant), 2..5 = autres propositions
+  try { const v = new URLSearchParams(window.location.search).get("vedette"); if (v === null) return 1; const n = Number(v); return n >= 0 && n <= 5 ? (n as VedetteLook) : 1; } catch { return 1; }
+};
+type GuideInfo = { title: string; sub: string; to: string } | null;
+const guideInfo = (cat: CatCategory | undefined | null, n: number): GuideInfo =>
+  cat ? { title: `Tout sur les ${cat.name.toLowerCase()}`, sub: n > 1 ? `Les ${n} références et comment choisir` : n === 1 ? "1 référence et comment choisir" : "Comment choisir", to: `/categorie/${cat.slug}` } : null;
 const famImg = (c: CatCategory | null, cls: string) => (c && pack(c.slug) ? <img src={pack(c.slug)} alt="" loading="lazy" className={cls} /> : null);
 const CUT6 = "polygon(0 0, calc(100% - 6px) 0, 100% 6px, 100% 100%, 0 100%)";
 const ITAL = { fontFamily: UNB, fontStyle: "italic" as const, fontWeight: 900 };
 
-const FamillesMobile = ({ look, fams }: { look: FamillesLook; fams: Fam[] }) => {
+const FamillesMobile = ({ look, fams, vd = 0 }: { look: FamillesLook; fams: Fam[]; vd?: VedetteLook }) => {
   const rowRef = useRef<HTMLDivElement>(null);
   const [prog, setProg] = useState(0);
   const [open, setOpen] = useState(false);
@@ -362,26 +377,84 @@ const FamillesMobile = ({ look, fams }: { look: FamillesLook; fams: Fam[] }) => 
     </>
   );
 
-  // 5 · VEDETTE
+  // 5 · VEDETTE (+ variantes ?vedette=1..5 qui règlent le doublon avec le bandeau guide)
+  const g = guideInfo(active.c, active.n);
+  const dark = vd === 0 || vd === 1 || vd === 5;
+  const stone = vd === 2;
+  const big = vd === 3; // ronds seuls, plus grands
+  const heroBg = dark ? CARBON : stone ? STONE : "#fff";
+  const heroInk = dark ? "#fff" : CARBON;
+  const heroAccent = dark ? "#8FC79E" : GREEN;
+  const rd = big ? 76 : 64;
   return (
     <div className="mt-5">
-      <div className="relative h-[150px] overflow-hidden" style={{ clipPath: CHAMFER, background: CARBON }}>
-        {active.c ? famImg(active.c, "absolute right-[-4%] top-1/2 -translate-y-1/2 h-[118%] w-auto max-w-[66%] object-contain drop-shadow-[0_12px_16px_rgba(0,0,0,0.45)]")
-          : <span className="absolute right-0 top-0 bottom-0 w-[60%]"><AllCollage big /></span>}
-        <span className="absolute left-4 top-3 text-sm font-bold uppercase tracking-wider" style={{ fontFamily: FONT, color: "#8FC79E" }}>{active.n} pièce{active.n > 1 ? "s" : ""}</span>
-        <span className="absolute left-4 bottom-3 max-w-[60%] text-2xl uppercase leading-[1.02] text-white" style={ITAL}>{active.c ? active.c.name : "Toutes les pièces"}</span>
-      </div>
-      <div ref={rowRef} className={cn(row, "mt-3 gap-3")} style={noBar}>
+      {!big && (
+        <div className="relative overflow-hidden" style={{ clipPath: CHAMFER, background: heroBg, boxShadow: vd === 4 ? `inset 0 0 0 1px ${LINE}` : undefined }}>
+          <div className="relative h-[150px]">
+            {active.c ? famImg(active.c, cn("absolute right-[-4%] top-1/2 -translate-y-1/2 h-[118%] w-auto max-w-[66%] object-contain", dark ? "drop-shadow-[0_12px_16px_rgba(0,0,0,0.45)]" : "drop-shadow-[0_12px_14px_rgba(0,0,0,0.18)]"))
+              : <span className="absolute right-0 top-0 bottom-0 w-[60%]"><AllCollage big /></span>}
+            <span className="absolute left-4 top-3 text-sm font-bold uppercase tracking-wider" style={{ fontFamily: FONT, color: heroAccent }}>{active.n} pièce{active.n > 1 ? "s" : ""}</span>
+            <span className="absolute left-4 bottom-3 max-w-[60%] text-2xl uppercase leading-[1.02]" style={{ ...ITAL, color: heroInk }}>{active.c ? active.c.name : "Toutes les pièces"}</span>
+          </div>
+          {g && vd === 1 && (
+            // 25/10 : Nolan garde la FUSION, « sans l'emoji vert à gauche, plus classe, plus simple »
+            <Link to={g.to} aria-label={`Le guide de l'atelier : ${g.title}`} className="group flex items-center gap-3 min-h-[56px] mx-4 py-2.5 border-t border-white/15" style={{ fontFamily: FONT }}>
+              <span className="flex-1 min-w-0 leading-tight">
+                <span className="block text-sm font-bold uppercase tracking-[0.12em] text-white/55">Le guide de l'atelier</span>
+                <span className="block text-base font-extrabold text-white">{g.title}</span>
+              </span>
+              <ArrowRight className="w-5 h-5 shrink-0 text-white transition-transform group-hover:translate-x-0.5" />
+            </Link>
+          )}
+          {g && vd === 4 && (
+            <Link to={g.to} className="flex items-center gap-2 min-h-[48px] px-4" style={{ fontFamily: FONT, borderTop: `1px solid ${LINE}` }}>
+              <BookOpen className="w-4 h-4 shrink-0" style={{ color: GREEN }} />
+              <span className="flex-1 min-w-0 py-2 leading-tight"><span className="block text-sm font-extrabold" style={{ color: CARBON }}>{g.title}</span><span className="block text-sm" style={{ color: GREEN }}>Le guide de l'atelier</span></span>
+              <ArrowRight className="w-5 h-5 shrink-0" style={{ color: GREEN }} />
+            </Link>
+          )}
+        </div>
+      )}
+      <div ref={rowRef} className={cn(row, "pt-1.5 gap-3", big ? "" : "mt-1.5")} style={noBar}>{/* pt : l'anneau vert de la famille active (5 px hors du rond) était coupé par le défilement */}
         {fams.map((f) => (
-          <button key={f.c?.id ?? "all"} type="button" data-on={f.on ? "1" : "0"} onClick={f.go} aria-pressed={f.on} className="snap-start shrink-0 w-[72px] flex flex-col items-center gap-1">
-            <span className="relative w-[64px] h-[64px] rounded-full overflow-hidden" style={{ background: STONE, boxShadow: f.on ? `0 0 0 3px #FAFAF8, 0 0 0 5px ${GREEN}` : `inset 0 0 0 1px ${LINE}` }}>
+          <button key={f.c?.id ?? "all"} type="button" data-on={f.on ? "1" : "0"} onClick={f.go} aria-pressed={f.on} className="snap-start shrink-0 flex flex-col items-center gap-1" style={{ width: rd + 8 }}>
+            <span className="relative rounded-full overflow-hidden" style={{ width: rd, height: rd, background: STONE, boxShadow: f.on ? `0 0 0 3px #FAFAF8, 0 0 0 5px ${GREEN}` : `inset 0 0 0 1px ${LINE}` }}>
               {f.c ? famImg(f.c, "absolute inset-[10%] w-[80%] h-[80%] object-contain") : <AllCollage />}
             </span>
-            <span className="text-sm font-bold leading-tight text-center line-clamp-2" style={{ fontFamily: FONT, color: CARBON }}>{f.c ? f.c.name : "Toutes"}</span>
+            <span className="text-sm leading-tight text-center line-clamp-2" style={{ fontFamily: FONT, fontWeight: f.on ? 800 : 700, color: f.on ? GREEN : CARBON }}>{f.c ? f.c.name : "Toutes"}</span>
+            {big && <span className="text-sm leading-none" style={{ ...ITAL, color: f.on ? GREEN : "#8A8478" }}>{f.n}</span>}
           </button>
         ))}
       </div>
     </div>
+  );
+};
+
+/* Bandeau guide côté TÉLÉPHONE selon ?vedette (l'ordinateur garde GuideLink tel quel). */
+const GuideMobile = ({ vd, cat, n, img }: { vd: VedetteLook; cat: CatCategory | undefined; n: number; img?: string }) => {
+  const g = guideInfo(cat, n);
+  if (!g || vd === 1 || vd === 4) return null; // intégré à la carte vedette
+  if (vd === 0 || vd === 3) return <GuideLink cat={cat} n={n} img={img} />;
+  if (vd === 2) return (
+    <Link to={g.to} className="relative mt-3 flex items-center gap-3 min-h-[72px] pl-4 pr-12 py-3" style={{ background: CARBON, clipPath: CHAMFER }}>
+      <span className="w-10 h-10 shrink-0 flex items-center justify-center" style={{ background: "rgba(143,199,158,0.14)", clipPath: CUT6 }}><BookOpen className="w-5 h-5" style={{ color: "#8FC79E" }} /></span>
+      <span className="flex-1 min-w-0">
+        <span className="block text-sm font-bold uppercase tracking-wider" style={{ fontFamily: FONT, color: "#8FC79E" }}>Le guide de l'atelier</span>
+        <span className="block text-base uppercase leading-tight text-white" style={ITAL}>{g.title}</span>
+      </span>
+      <ArrowRight className="absolute right-4 top-1/2 -translate-y-1/2 w-5 h-5 text-white" />
+    </Link>
+  );
+  // 5 · ligne claire
+  return (
+    <Link to={g.to} className="mt-3 flex items-center gap-3 min-h-[52px] px-4" style={{ background: "#EDE7DB", clipPath: CHAMFER, fontFamily: FONT }}>
+      <BookOpen className="w-5 h-5 shrink-0" style={{ color: GREEN }} />
+      <span className="flex-1 min-w-0">
+        <span className="block text-sm font-extrabold truncate" style={{ color: CARBON }}>{g.title}</span>
+        <span className="block text-sm text-gray-500 truncate">Le guide de l'atelier · {g.sub.toLowerCase()}</span>
+      </span>
+      <ArrowRight className="w-5 h-5 shrink-0" style={{ color: CARBON }} />
+    </Link>
   );
 };
 
@@ -502,6 +575,7 @@ const GuideLink = ({ cat, n, img }: { cat: CatCategory | undefined; n: number; i
 const CatalogueTop = (p: Props) => {
   const all = p.categories.reduce((n, c) => n + (p.counts[c.id] ?? 0), 0);
   const FAMILLES = readFamilles();
+  const VEDETTE = readVedette();
   const fams: Fam[] = [
     { c: null, n: all, on: p.activeCategory === null, go: () => p.onCategory(null) },
     ...p.categories.map((c) => ({ c, n: p.counts[c.id] ?? 0, on: p.activeCategory === c.id, go: () => p.onCategory(c.id) })),
@@ -521,9 +595,14 @@ const CatalogueTop = (p: Props) => {
         <div className="flex items-end justify-between gap-4 flex-wrap"><Title /><span className="flex items-baseline gap-3 flex-wrap"><Count n={p.resultCount} total={p.total} />{p.countAside}</span></div>
         {p.pickerBlock && <div className="max-w-2xl">{p.pickerBlock}</div>}
         <div className="mt-5 max-w-2xl"><SearchField value={p.query} onChange={p.onQuery} /></div>
-        {FAMILLES && <div className="lg:hidden"><FamillesMobile look={FAMILLES} fams={fams} /></div>}
+        {FAMILLES && <div className="lg:hidden"><FamillesMobile look={FAMILLES} fams={fams} vd={VEDETTE} /></div>}
         <div className={cn(TUILE === 4 ? "mt-5 grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-8 gap-2" : TUILE === 2 ? "mt-5 grid grid-cols-3 sm:grid-cols-5 lg:grid-cols-9 gap-x-2 gap-y-3" : "mt-5 grid grid-cols-3 sm:grid-cols-5 lg:grid-cols-9 gap-2", FAMILLES && "hidden lg:grid")}>{tiles()}</div>
-        {p.activeCategory && <div className="max-w-2xl"><GuideLink cat={p.categories.find((c) => c.id === p.activeCategory)} n={p.counts[p.activeCategory] ?? 0} img={p.images[p.activeCategory]} /></div>}
+        {p.activeCategory && (FAMILLES === 5
+          ? <>
+              <div className="lg:hidden"><GuideMobile vd={VEDETTE} cat={p.categories.find((c) => c.id === p.activeCategory)} n={p.counts[p.activeCategory] ?? 0} img={p.images[p.activeCategory]} /></div>
+              <div className="hidden lg:block max-w-2xl"><GuideLink cat={p.categories.find((c) => c.id === p.activeCategory)} n={p.counts[p.activeCategory] ?? 0} img={p.images[p.activeCategory]} /></div>
+            </>
+          : <div className="max-w-2xl"><GuideLink cat={p.categories.find((c) => c.id === p.activeCategory)} n={p.counts[p.activeCategory] ?? 0} img={p.images[p.activeCategory]} /></div>)}
         <div className="mt-4"><Filters {...p} /></div>
         {p.afterFilters && <div className="mt-3">{p.afterFilters}</div>}
       </section>
