@@ -22,7 +22,7 @@ const TOOL = {
       autre_objet: { type: 'boolean', description: 'Un autre objet que la trottinette (casque, sac, chargeur posé à côté, décor, sol, mur).' },
       fond_propre: { type: 'boolean', description: 'Le fond est uniformément vide (détourage propre), sans décor, sans ombre portée de scène, sans résidu.' },
       coupee: { type: 'boolean', description: 'La trottinette est coupée par le bord de l\'image.' },
-      note: { type: 'string', description: 'Une phrase courte en français si quelque chose cloche, sinon vide.' },
+      note: { type: 'string', description: '15 mots maximum, en français, seulement si quelque chose cloche ; sinon chaîne vide.' },
     },
     required: ['vue', 'plusieurs_trottinettes', 'personne', 'ecran_ou_telephone', 'texte_incruste', 'autre_objet', 'fond_propre', 'coupee', 'note'],
   },
@@ -63,7 +63,7 @@ export async function juger(buf, cle = process.env.ANTHROPIC_API_KEY) {
       method: 'POST',
       headers: { 'content-type': 'application/json', 'x-api-key': cle, 'anthropic-version': '2023-06-01' },
       body: JSON.stringify({
-        model: MODELE, max_tokens: 400,
+        model: MODELE, max_tokens: 1000,
         system: [{ type: 'text', text: SYSTEM, cache_control: { type: 'ephemeral' } }],
         tools: [TOOL], tool_choice: { type: 'auto' },
         messages: [{ role: 'user', content: [{ type: 'image', source: { type: 'base64', media_type: 'image/jpeg', data: b64 } }, { type: 'text', text: 'Décris cette photo produit en appelant l\'outil verdict_photo (obligatoire, une seule fois).' }] }],
