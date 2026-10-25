@@ -1,26 +1,11 @@
 // 25/10/2026 — Fenêtre de SKOT aux couleurs de la nouvelle mascotte (Nolan : « que la fenêtre reste dans la même DA que lui…
 // entre le site moderne et sa DA à lui… une belle communication entre lui et les gens »).
-// 5 propositions : ?skotfen=1..5 ; sans paramètre ou ?skotfen=0 = fenêtre actuelle (rendue par SkotWidget).
-// Commun aux 5 : la mascotte remplace l'avatar « Le pilote », et son visage suit la conversation
-// (clin d'œil à l'ouverture, écoute, réfléchit pendant la recherche, content quand la réponse arrive).
+// Direction retenue le 25/10 : 3 « Il te parle » (la scène animée) — les 4 autres propositions ont été retirées du code.
 import { useEffect, useRef, useState, type FormEvent, type ReactNode, type RefObject } from "react";
 import { Link } from "react-router-dom";
 import { X, Send, Camera, Loader2, ThumbsUp, ThumbsDown, Search, Package, Wrench, Bike, CircleDot, LayoutGrid } from "lucide-react";
 import { skotSaison, SAISON_TEXTE, type SkotSaison } from "@/lib/skotSaison";
 import type { SkotCard } from "@/lib/skot";
-
-export type SkotFenVariant = 1 | 2 | 3 | 4 | 5;
-export const readSkotFenVariant = (): SkotFenVariant | null => {
-  try {
-    // 25/10 : Nolan choisit la 3 « Il te parle » = défaut ; ?skotfen=0 = ancienne fenêtre, 1..5 = les autres propositions.
-    const raw = new URLSearchParams(window.location.search).get("skotfen");
-    if (raw === null) return 3;
-    const n = Number(raw);
-    return n >= 1 && n <= 5 ? (n as SkotFenVariant) : n === 0 ? null : 3;
-  } catch {
-    return 3;
-  }
-};
 
 export type PanelMsg = { role: "user" | "skot"; text: string; cards?: SkotCard[]; image?: string; id?: string | null; conv?: string; fb?: 1 | -1 };
 type Mood = "ecoute" | "clin" | "reflechit" | "content";
@@ -29,18 +14,14 @@ export const SKOT_GREETING_V2 =
   "Salut ! Moi c'est SKOT, la patinette de l'atelier. Pas de moteur, pas de batterie… mais je connais toutes les trottinettes électriques par cœur. Dis-moi ta trott et ce qu'il te faut : je vérifie dans le catalogue ce qui monte vraiment. Une photo du flanc de ton pneu ou de ta prise de charge, ça marche aussi.";
 
 const GREEN = "#4A7C59";
-const GREEN_D = "#3A6449";
 const BEIGE = "#F5F0E8";
 const CREAM = "#FAFAF8";
 const CARBON = "#1A1A1A";
 const UNB = "'Unbounded', sans-serif";
 const JAK = "'Plus Jakarta Sans', sans-serif";
-const CHROME = "linear-gradient(145deg,#ffffff 0%,#d4d7d3 38%,#8f948e 52%,#e9ebe8 70%,#b9bdb8 100%)";
 const cutTR = (n: number) => `polygon(0 0, calc(100% - ${n}px) 0, 100% ${n}px, 100% 100%, 0 100%)`;
 const cut2 = (n: number) => `polygon(0 0, calc(100% - ${n}px) 0, 100% ${n}px, 100% 100%, ${n}px 100%, 0 calc(100% - ${n}px))`;
 
-const head = (m: Mood) => `/skot/tete-${m}.webp`;
-const body = (m: Mood) => `/skot/skot-${m}.webp`;
 
 const CSS = `
 @keyframes skf-dot{0%,80%,100%{opacity:.25;transform:translateY(0)}40%{opacity:1;transform:translateY(-3px)}}
@@ -70,33 +51,7 @@ const CSS = `
 @media (prefers-reduced-motion:reduce){.skf-dot,.skf-in,.skf-pulse,.skf-bar,.skf-bob,.skf-pose,.skf-a-jump,.skf-a-shake,.skf-a-breathe,.skf-a-scan,.skf-a-roll,.skf-a-bob{animation:none!important}}`;
 let cssInjected = false;
 
-/* Le visage suit la conversation : clin d'œil à l'ouverture, réfléchit pendant la recherche, content 3,5 s après une réponse. */
-const useMood = (busy: boolean, count: number): Mood => {
-  const [mood, setMood] = useState<Mood>("clin");
-  const prev = useRef(count);
-  useEffect(() => { const t = setTimeout(() => setMood((m) => (m === "clin" ? "ecoute" : m)), 1400); return () => clearTimeout(t); }, []);
-  useEffect(() => {
-    if (busy) { setMood("reflechit"); return; }
-    if (count > prev.current) {
-      prev.current = count;
-      setMood("content");
-      const t = setTimeout(() => setMood("ecoute"), 3500);
-      return () => clearTimeout(t);
-    }
-    setMood((m) => (m === "reflechit" ? "ecoute" : m));
-  }, [busy, count]);
-  return mood;
-};
-
-const STATUS: Record<Mood, [string, string]> = {
-  clin: ["Salut !", "Pose ta question, je vérifie tout dans le catalogue."],
-  ecoute: ["Je t'écoute.", "Ta trott, ta pièce, ta commande : vas-y."],
-  reflechit: ["Je fouille l'atelier…", "Je croise les tailles et les compatibilités."],
-  content: ["Voilà !", "Dis-moi si tu veux que je creuse."],
-};
-
 export interface SkotPanelProps {
-  variant: SkotFenVariant;
   msgs: PanelMsg[];
   busy: boolean;
   input: string;
@@ -112,19 +67,6 @@ export interface SkotPanelProps {
   listRef: RefObject<HTMLDivElement>;
   renderCard: (c: SkotCard) => ReactNode;
 }
-
-/* Tête de la mascotte dans un phare chromé (ou un rond simple). */
-const Head = ({ mood, size, chrome = false, bg = BEIGE }: { mood: Mood; size: number; chrome?: boolean; bg?: string }) => (
-  <span className="block rounded-full shrink-0" style={{ width: size, height: size, padding: chrome ? 3 : 0, background: chrome ? CHROME : "transparent" }}>
-    <span className="block w-full h-full rounded-full overflow-hidden" style={{ background: bg, border: chrome ? "none" : `1.5px solid ${CARBON}14` }}>
-      <img src={head(mood)} alt="" draggable={false} className="w-full h-full object-cover select-none" style={{ transform: "scale(1.12) translateY(5%)" }} />
-    </span>
-  </span>
-);
-const Body = ({ mood, size, flip = false, className = "" }: { mood: Mood; size: number; flip?: boolean; className?: string }) => (
-  <img src={body(mood)} alt="" draggable={false} width={size} height={size} className={`block select-none pointer-events-none ${className}`}
-    style={{ width: size, height: size, transform: flip ? "scaleX(-1)" : undefined, filter: "drop-shadow(0 10px 12px rgba(0,0,0,.18))" }} />
-);
 
 const Dots = ({ label = "Je fouille l'atelier…" }: { label?: string }) => (
   <span className="inline-flex items-center gap-2 text-[14px]" style={{ fontFamily: JAK, color: "#555" }}>
@@ -431,162 +373,7 @@ const SkotPanel = (p: SkotPanelProps) => {
     document.head.appendChild(el);
     cssInjected = true;
   }
-  const skotCount = p.msgs.filter((m) => m.role === "skot").length;
-  const mood = useMood(p.busy, skotCount);
-  useEffect(() => {
-    (["ecoute", "clin", "reflechit", "content"] as Mood[]).forEach((m) => { new Image().src = head(m); if (p.variant !== 1 && p.variant !== 4) new Image().src = body(m); });
-  }, [p.variant]);
-  const topPad = { paddingTop: "max(8px, env(safe-area-inset-top))" };
-
-  /* 1 · Repassé — la fenêtre d'aujourd'hui, même disposition, mais en crème avec la tête de la mascotte dans un phare chromé. */
-  if (p.variant === 1)
-    return (
-      <Shell>
-        <div className="flex items-center gap-3 px-3 py-2.5" style={{ ...topPad, background: BEIGE, borderBottom: `3px solid ${GREEN}` }}>
-          <Head mood={mood} size={54} chrome />
-          <div className="flex-1 min-w-0">
-            <p className="italic uppercase leading-none" style={{ fontFamily: UNB, fontWeight: 900, fontSize: 20, color: CARBON }}>SKOT <span style={{ color: GREEN }}>· L'atelier</span></p>
-            <p className="text-[14px] mt-1" style={{ fontFamily: JAK, color: "#555" }}>{p.busy ? "Je fouille l'atelier…" : "Je vérifie tout dans le catalogue"}</p>
-          </div>
-          <CloseBtn onClose={p.onClose} />
-        </div>
-        <SearchBar onSearch={p.onSearch} className="mx-3 mt-3" />
-        <div ref={p.listRef} className="flex-1 overflow-y-auto px-3 py-4 space-y-3" aria-live="polite">
-          {p.msgs.map((m, i) =>
-            m.role === "user" ? <UserMsg key={i} m={m} /> : (
-              <div key={i} className="flex gap-2 items-start skf-in">
-                <Head mood={i === p.msgs.length - 1 ? mood : "ecoute"} size={34} />
-                <div className="min-w-0 flex-1 space-y-2">
-                  <p className="text-[14.5px] leading-relaxed whitespace-pre-wrap border-l-[3px] pl-2.5" style={{ borderColor: GREEN, color: CARBON, fontFamily: JAK }}>{m.text}</p>
-                  {m.cards?.map((c) => <div key={c.slug}>{p.renderCard(c)}</div>)}
-                  <Rating m={m} i={i} rate={p.rate} />
-                </div>
-              </div>
-            ),
-          )}
-          {p.busy && <div className="flex gap-2 items-center"><Head mood="reflechit" size={34} /><Dots /></div>}
-        </div>
-        <Chips p={p} />
-        <PhotoRow p={p} />
-        <Composer p={p} />
-      </Shell>
-    );
-
-  /* 2 · Plaque émaillée — en-tête comme une plaque de garage émaillée verte, SKOT en entier qui déborde dessus. */
-  if (p.variant === 2)
-    return (
-      <Shell width={420}>
-        <div className="relative px-3 pb-3" style={{ ...topPad, background: BEIGE }}>
-          <div className="p-[2px]" style={{ background: CARBON, clipPath: cut2(14) }}>
-            <div className="relative p-[6px]" style={{ background: GREEN, clipPath: cut2(13) }}>
-              <div className="relative px-4 py-3 pr-[118px] min-h-[104px]" style={{ border: `2px solid ${BEIGE}`, clipPath: cut2(10) }}>
-                <p className="uppercase tracking-[0.18em] text-[11px] font-bold" style={{ fontFamily: JAK, color: "#CFE3D4" }}>L'atelier · conseil pièces</p>
-                <p className="italic uppercase leading-none mt-1" style={{ fontFamily: UNB, fontWeight: 900, fontSize: 34, color: BEIGE, textShadow: `2px 2px 0 ${GREEN_D}` }}>SKOT</p>
-                <p className="text-[14px] mt-1.5 leading-snug" style={{ fontFamily: JAK, color: "#F1EADB" }}>La patinette qui connaît toutes les trotts.</p>
-              </div>
-            </div>
-          </div>
-          <span className="absolute right-1 top-[max(4px,env(safe-area-inset-top))] z-10"><CloseBtn onClose={p.onClose} /></span>
-          <span className="absolute right-4 -bottom-7 z-10 skf-bob"><Body mood={mood} size={138} flip /></span>
-        </div>
-        <SearchBar onSearch={p.onSearch} className="mx-3 mr-[132px]" />
-        <div ref={p.listRef} className="flex-1 overflow-y-auto px-3 pt-5 pb-4 space-y-3" aria-live="polite" style={{ background: CREAM }}>
-          {p.msgs.map((m, i) =>
-            m.role === "user" ? <UserMsg key={i} m={m} /> : (
-              <div key={i} className="flex gap-2 items-end skf-in">
-                <Head mood={i === p.msgs.length - 1 ? mood : "ecoute"} size={32} />
-                <div className="min-w-0 max-w-[88%] space-y-2">
-                  <Bubble>{m.text}</Bubble>
-                  {m.cards?.map((c) => <div key={c.slug}>{p.renderCard(c)}</div>)}
-                  <Rating m={m} i={i} rate={p.rate} />
-                </div>
-              </div>
-            ),
-          )}
-          {p.busy && <div className="flex gap-2 items-end"><Head mood="reflechit" size={32} /><Bubble><Dots /></Bubble></div>}
-        </div>
-        <div style={{ background: BEIGE, borderTop: `2px solid ${CARBON}` }}>
-          <Chips p={p} />
-          <PhotoRow p={p} />
-          <Composer p={p} />
-        </div>
-      </Shell>
-    );
-
-  /* 3 · Il te parle — retenue le 25/10 : scène animée (poses, saisons, façons de chercher) → ScenePanel. */
-  if (p.variant === 3) return <ScenePanel {...p} />;
-
-  /* 4 · Phare — le côté site moderne : en-tête carbone, tête dans un phare chromé avec voyant « en ligne », bulles arrondies. */
-  if (p.variant === 4)
-    return (
-      <Shell bg="#F3EFE7">
-        <div className="relative flex items-center gap-3 px-3 py-3" style={{ ...topPad, background: CARBON }}>
-          <span className="relative">
-            <Head mood={mood} size={58} chrome bg="#EDE7DA" />
-            <span className="absolute bottom-0.5 right-0.5 w-3.5 h-3.5 rounded-full skf-pulse" style={{ background: "#5FBF7A", border: `2px solid ${CARBON}` }} />
-          </span>
-          <div className="flex-1 min-w-0">
-            <p className="leading-none" style={{ fontFamily: UNB, fontWeight: 800, fontSize: 21, color: "#fff" }}>SKOT</p>
-            <p className="mt-1.5 inline-flex items-center gap-1.5 px-2 py-0.5 rounded-full text-[13px] font-semibold" style={{ fontFamily: JAK, background: "rgba(95,191,122,.14)", color: "#9FD8AE" }}>
-              {p.busy ? "Je fouille l'atelier…" : "En ligne · vérifie le catalogue"}
-            </p>
-          </div>
-          <CloseBtn onClose={p.onClose} light />
-          {p.busy && <span className="absolute left-0 right-0 bottom-0 h-[3px] overflow-hidden"><span className="block w-2/5 h-full skf-bar" style={{ background: GREEN }} /></span>}
-        </div>
-        <SearchBar onSearch={p.onSearch} className="mx-3 mt-3" round />
-        <div ref={p.listRef} className="flex-1 overflow-y-auto px-3 py-4 space-y-3" aria-live="polite">
-          {p.msgs.map((m, i) =>
-            m.role === "user" ? <UserMsg key={i} m={m} tone="green" round /> : (
-              <div key={i} className="flex gap-2 items-end skf-in">
-                <Head mood={i === p.msgs.length - 1 ? mood : "ecoute"} size={32} bg="#fff" />
-                <div className="min-w-0 max-w-[86%] space-y-2">
-                  <div className="bg-white rounded-[18px] rounded-bl-md px-3.5 py-2.5 text-[14.5px] leading-relaxed whitespace-pre-wrap shadow-[0_2px_12px_rgba(0,0,0,.06)]" style={{ fontFamily: JAK, color: CARBON }}>{m.text}</div>
-                  {m.cards?.map((c) => <div key={c.slug}>{p.renderCard(c)}</div>)}
-                  <Rating m={m} i={i} rate={p.rate} />
-                </div>
-              </div>
-            ),
-          )}
-          {p.busy && <div className="flex gap-2 items-end"><Head mood="reflechit" size={32} bg="#fff" /><div className="bg-white rounded-[18px] rounded-bl-md px-3.5 py-3 shadow-[0_2px_12px_rgba(0,0,0,.06)]"><Dots /></div></div>}
-        </div>
-        <Chips p={p} round />
-        <PhotoRow p={p} />
-        <Composer p={p} round />
-      </Shell>
-    );
-
-  /* 5 · Au comptoir — en-tête discret ; SKOT en entier est accoudé au comptoir, juste au-dessus de la zone où tu écris. */
-  return (
-    <Shell>
-      <div className="flex items-center gap-2 pl-4 pr-2 py-2" style={{ ...topPad, background: CREAM, borderBottom: `1px solid ${CARBON}1A` }}>
-        <p className="flex-1 italic uppercase leading-none" style={{ fontFamily: UNB, fontWeight: 900, fontSize: 18, color: CARBON }}>SKOT <span style={{ color: GREEN }}>· L'atelier</span></p>
-        <button type="button" onClick={p.onSearch} aria-label="Chercher une pièce" className="w-11 h-11 grid place-items-center" style={{ color: GREEN }}><Search className="w-5 h-5" strokeWidth={2.6} /></button>
-        <CloseBtn onClose={p.onClose} />
-      </div>
-      <div ref={p.listRef} className="flex-1 overflow-y-auto px-3 pt-4 pb-8 space-y-3" aria-live="polite">
-        {p.msgs.map((m, i) =>
-          m.role === "user" ? <UserMsg key={i} m={m} /> : (
-            <div key={i} className="max-w-[92%] space-y-2 skf-in">
-              <p className="uppercase italic text-[12px] font-extrabold tracking-wide" style={{ fontFamily: JAK, color: GREEN }}>SKOT</p>
-              <Bubble>{m.text}</Bubble>
-              {m.cards?.map((c) => <div key={c.slug}>{p.renderCard(c)}</div>)}
-              <Rating m={m} i={i} rate={p.rate} />
-            </div>
-          ),
-        )}
-      </div>
-      <div className="relative" style={{ background: BEIGE, borderTop: `3px solid ${GREEN}` }}>
-        <span className="absolute left-0 -top-6 pointer-events-none skf-bob"><Body mood={mood} size={118} /></span>
-        <div className="pl-[122px] pr-3 pt-2 min-h-[94px] flex items-center">
-          {p.busy ? <Dots /> : <span className="text-[14px] leading-snug" style={{ fontFamily: JAK, color: "#555" }}>{STATUS[mood][1]}</span>}
-        </div>
-        <Chips p={p} />
-        <PhotoRow p={p} />
-        <Composer p={p} />
-      </div>
-    </Shell>
-  );
+  return <ScenePanel {...p} />;
 };
 
 export default SkotPanel;
