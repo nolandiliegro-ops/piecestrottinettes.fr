@@ -21,6 +21,7 @@ import CustomPhotoButton from "@/components/garage/CustomPhotoButton";
 import DescriptionCard from "@/components/garage/DescriptionCard";
 import RiderLaunchCode from "@/components/launch/RiderLaunchCode";
 import PartCardSlim from "@/components/home/ShopByCompatibility/PartCardSlim";
+import { StandSpace } from "@/components/garage/v3/StandTrott";
 import { getXPLevel, getProgressToNextLevel } from "@/lib/xpLevels";
 import { useUserTotalInvested } from "@/hooks/useUserStats";
 import { useUpdateLastMaintenance } from "@/hooks/useUpdateLastMaintenance";
@@ -95,7 +96,7 @@ const StandCaption = ({ scooter, scooterCount, currentIndex, onPrev, onNext }: P
   const specs = [m.voltage && `${m.voltage} V`, m.amperage && `${m.amperage} Ah`, m.power_watts && `${m.power_watts} W`].filter(Boolean) as string[];
   const arrow = "w-12 h-12 inline-flex items-center justify-center bg-white disabled:opacity-40";
   return (
-    <div className="hidden lg:flex h-[calc(100vh-250px)] min-h-[420px] items-end justify-between gap-4 pb-2">
+    <div data-stand-anchor className="hidden lg:flex h-[calc(100vh-250px)] min-h-[420px] items-end justify-between gap-4 pb-2">
       <div className="min-w-0" style={{ textShadow: "0 2px 14px rgba(0,0,0,0.55)" }}>
         <p className="text-sm font-bold uppercase tracking-[0.14em]" style={{ fontFamily: FONT, color: "#8FBF9C" }}>Ma trott · {currentIndex + 1}/{scooterCount}</p>
         <p className="mt-1 text-[34px] uppercase leading-[0.95] text-white max-w-[14ch]" style={{ fontFamily: UNB, fontWeight: 900, fontStyle: "italic", letterSpacing: "-0.03em" }}>{scooter.nickname ? `« ${scooter.nickname} »` : m.name}</p>
@@ -262,6 +263,23 @@ const Chips = ({ specs, light }: { specs: string[]; light?: boolean }) =>
       {specs.map((t) => <span key={t} className="px-2.5 py-1 text-sm font-bold" style={{ fontFamily: FONT, background: light ? "rgba(26,26,26,0.85)" : "#EFEAE0", color: light ? "#FFFFFF" : CARBON, clipPath: cut(6) }}>{t}</span>)}
     </div>
   ) : null;
+
+/* La trott sur l'estrade (25/10 soir, choix de Nolan « Au sol », sur l'estrade, qui flotte) : son nom et les flèches
+   en haut de l'espace libre, écrits sur le wallpaper ; la trott elle-même est posée par StandTrott (fixe). */
+export const StandHeading = ({ scooter, scooterCount, currentIndex, onPrev, onNext, label }: StageProps) => {
+  const m = scooter.scooter_model;
+  const multi = scooterCount > 1;
+  return (
+    <div className="flex items-start justify-between gap-3">
+      <div className="min-w-0">
+        <Kicker label={label} multi={multi} i={currentIndex} n={scooterCount} light />
+        <div className="mt-1"><Title m={m} nickname={scooter.nickname} light size="text-[24px] lg:text-[34px]" /></div>
+        <Chips specs={stageSpecs(m)} light />
+      </div>
+      {multi && <div className="flex gap-2 shrink-0"><ArrowBtn dir="prev" onClick={onPrev} disabled={currentIndex <= 0} /><ArrowBtn dir="next" onClick={onNext} disabled={currentIndex >= scooterCount - 1} /></div>}
+    </div>
+  );
+};
 
 /* 1 · Repassé : même disposition qu'aujourd'hui, la trott debout sur le wallpaper, la plaque en papier clair. */
 const StageRepasse = ({ scooter, scooterCount, currentIndex, onPrev, onNext, label }: StageProps) => {
@@ -516,7 +534,7 @@ const GarageAtelierView = (p: Props) => {
           {!p.hideRider && <div className="lg:hidden"><RiderStrip profile={p.profile} onEditProfile={p.onEditProfile} onTheme={p.onTheme} /></div>}
           {p.standOnDesktop ? (
             <>
-              <div className="lg:hidden"><ScooterStage scooter={s} scooterCount={p.scooterCount} currentIndex={p.currentIndex} onPrev={p.onPrev} onNext={p.onNext} /></div>
+              <StandSpace className="lg:hidden"><StandHeading scooter={s} scooterCount={p.scooterCount} currentIndex={p.currentIndex} onPrev={p.onPrev} onNext={p.onNext} /></StandSpace>
               <StandCaption scooter={s} scooterCount={p.scooterCount} currentIndex={p.currentIndex} onPrev={p.onPrev} onNext={p.onNext} />
             </>
           ) : (

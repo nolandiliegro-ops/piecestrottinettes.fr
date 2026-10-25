@@ -98,7 +98,7 @@ const RiderCardStory = ({ data, commentCount = 0, onOpenComments, className = ""
   const [apercu] = useState(() => readVariant("apercu", 1));
   const [photoV] = useState(() => readVariant("photo", 2));
   // 25/10 (« sur WhatsApp on voit pas le profil, la tête ») : cadrage de l'image partagée, `?cadre=1..5` (0 = la carte elle-même).
-  const [cadre] = useState(() => readVariant("cadre", 0));
+  const [cadre] = useState(() => readVariant("cadre", 4)); // 4 · Carte posée par défaut (reco du 25/10, Nolan sans préférence)
   const [storyOn, setStoryOn] = useState(false);
   const storyRef = useRef<HTMLDivElement>(null);
   const [preview, setPreview] = useState<{ url: string; file: File; w: number; h: number } | null>(null);

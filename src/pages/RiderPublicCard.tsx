@@ -19,7 +19,8 @@ import RiderAvatar from "@/components/garage/RiderAvatar";
 import RiderCardStory, { cardRows } from "@/components/garage/story/RiderCardStory";
 import RiderCardComments from "@/components/garage/story/RiderCardComments";
 import { useCardComments } from "@/hooks/useRiderCardComments";
-import { Panel, H2, ScooterStage, PartsShelf, SKIN, type GarageAtelierScooter } from "@/components/garage/atelier/GarageAtelierView";
+import { Panel, H2, StandHeading, PartsShelf, SKIN, type GarageAtelierScooter } from "@/components/garage/atelier/GarageAtelierView";
+import StandTrott, { StandSpace } from "@/components/garage/v3/StandTrott";
 import { useRiderCardData, useToggleCardLike } from "@/hooks/useRiderCardData";
 import { useAuthContext } from "@/contexts/AuthContext";
 import { getXPLevel } from "@/lib/xpLevels";
@@ -61,6 +62,10 @@ const RiderPublicCard = () => {
       }
     : null;
   const mods = cur ? data?.modsByMachine[cur.id] ?? [] : [];
+  const stageHeading = stageScooter ? (
+    <StandHeading scooter={stageScooter} scooterCount={machines.length} currentIndex={i} label={cur?.is_owned === false ? "Il kiffe" : "Sa machine"}
+      onPrev={() => setI((x) => Math.max(0, x - 1))} onNext={() => setI((x) => Math.min(machines.length - 1, x + 1))} />
+  ) : null;
 
   const share = async () => {
     const url = `${window.location.origin}/rider/${data?.profile.username ?? username}`;
@@ -119,6 +124,14 @@ const RiderPublicCard = () => {
               </h1>
             </header>
 
+              {/* 25/10 soir (Nolan : « au sol… vraiment sur l'estrade… qu'elle flotte ») : sa trott posée sur l'estrade de SON
+                  wallpaper, toujours au même endroit. Téléphone : la scène d'abord, la carte juste en dessous. */}
+              {stageScooter && (
+                <>
+                  <StandTrott src={stageScooter.scooter_model.image_url || stageScooter.custom_photo_url} alt={stageScooter.scooter_model.name} />
+                  <StandSpace className="lg:hidden mb-4">{stageHeading}</StandSpace>
+                </>
+              )}
               {/* grid-cols-[minmax(0,1fr)] : sans lui, la frise de pièces élargissait la colonne à 2 165 px sur téléphone — trott hors écran (25/10). */}
               <div className="grid grid-cols-[minmax(0,1fr)] gap-6 lg:grid-cols-[360px_minmax(0,1fr)] lg:gap-8 items-start">
                 <div className="grid gap-4 justify-items-center lg:justify-items-stretch lg:sticky lg:top-24">
@@ -127,11 +140,7 @@ const RiderPublicCard = () => {
                 </div>
 
                 <div className="grid grid-cols-[minmax(0,1fr)] gap-4 min-w-0">
-                  {stageScooter && (
-                    <ScooterStage scooter={stageScooter} scooterCount={machines.length} currentIndex={i} label={cur?.is_owned === false ? "Il kiffe" : "Sa machine"}
-                      onPrev={() => setI((x) => Math.max(0, x - 1))} onNext={() => setI((x) => Math.min(machines.length - 1, x + 1))}
-                      thumbs={machines.map((m) => ({ id: m.id, img: m.model?.image_url, name: m.model?.name ?? "" }))} onPick={setI} />
-                  )}
+                  {stageScooter && <StandSpace className="hidden lg:block">{stageHeading}</StandSpace>}
                   {mods.length > 0 && (
                     <Panel>
                       <H2>Ce qu'il a monté dessus</H2>
