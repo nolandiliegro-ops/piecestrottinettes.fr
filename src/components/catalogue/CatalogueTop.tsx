@@ -81,7 +81,7 @@ const SearchField = ({ value, onChange, dark = false, big = false }: { value: st
     <div className={cn("flex items-stretch", big ? "h-16" : "h-14")} style={dark ? undefined : { filter: "drop-shadow(0 6px 14px rgba(26,26,26,0.10))" }}>
       <label className="flex-1 flex items-center gap-3 pl-4 pr-3" style={dark ? { background: "rgba(255,255,255,0.08)", borderRadius: 6 } : { background: "#fff", boxShadow: `inset 0 0 0 1px ${LINE}` }}>
         <Search className={cn("w-5 h-5 shrink-0", dark ? "text-white/60" : "text-gray-400")} />
-        <input type="search" value={v} onChange={(e) => setV(e.target.value)} placeholder="Pneu 10x2.50, chargeur 42V, plaquettes…"
+        <input type="search" value={v} onChange={(e) => setV(e.target.value)} placeholder="Pneu 10x2.5, 42V…"
           aria-label="Rechercher une pièce" className={cn("w-full h-full bg-transparent outline-none text-base", dark ? "text-white placeholder:text-white/45" : "text-carbon placeholder:text-gray-400")} style={{ fontFamily: FONT }} />
         {v && <button type="button" onClick={() => { setV(""); onChange(""); }} aria-label="Effacer" className="w-9 h-9 flex items-center justify-center"><X className={cn("w-4 h-4", dark ? "text-white/70" : "text-gray-500")} /></button>}
       </label>

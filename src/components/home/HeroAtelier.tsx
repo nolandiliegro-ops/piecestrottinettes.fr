@@ -114,7 +114,7 @@ const Head = ({ s, big, query, onQuery, inputRef, onSubmit, onCatalogue, center 
           autoComplete="off"
           autoCorrect="off"
           spellCheck={false}
-          placeholder="Dualtron, Kaabo, Xiaomi…"
+          placeholder="Xiaomi, Kaabo…"
           className="w-full h-[58px] lg:h-16 pl-12 pr-3 bg-white text-base lg:text-lg outline-none placeholder:text-gray-400"
           style={{ fontFamily: FONT, color: CARBON, boxShadow: s.tone === "light" && s.ink === CARBON ? `inset 0 0 0 1px ${LINE}` : "none" }}
         />
