@@ -7,6 +7,7 @@ import { ShoppingCart } from "lucide-react";
 import { useSpotlight } from "@/contexts/SpotlightContext";
 import { readBarreBasVariant } from "@/components/navigation/MobileNavProposals";
 import SkotDesktopLauncher from "./SkotDesktopLauncher";
+import SkotGarageLauncher from "./SkotGarageLauncher";
 import SkotPanel, { SKOT_GREETING_V2 } from "./SkotPanel";
 import { askSkot, compressImage, sendSkotFeedback, skotEnabled, skotHiddenOn, skotPageContext, type SkotCard } from "@/lib/skot";
 import { useCart } from "@/hooks/useCart";
@@ -116,7 +117,15 @@ const SkotWidget = () => {
   return (
     <>
       {/* Ordinateur : la mascotte qui surgit du bord droit (25/10). */}
-      {!open && <SkotDesktopLauncher onOpen={() => setOpen(true)} />}
+      {/* Garage, ordinateur (25/10) : SKOT à gauche, plus gros, animé ; pas sur l'écran SKOT du garage (la discussion y est déjà). */}
+      {!open && (pathname.startsWith("/garage") ? (
+        <>
+          <div className="lg:hidden"><SkotDesktopLauncher onOpen={() => setOpen(true)} /></div>
+          {!pathname.startsWith("/garage/skot") && <SkotGarageLauncher onOpen={() => setOpen(true)} />}
+        </>
+      ) : (
+        <SkotDesktopLauncher onOpen={() => setOpen(true)} />
+      ))}
       {!open && (
         <button
           type="button"
