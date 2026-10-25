@@ -84,7 +84,34 @@ interface Props {
   /** Garage v3 (25/10) : le profil/XP et le code RIDER vivent dans Réglages. */
   hideRider?: boolean;
   hideLaunch?: boolean;
+  /** Garage v3 ordinateur (25/10) : la trott est posée sur l'estrade du wallpaper ; ici, seulement son nom et les flèches. */
+  standOnDesktop?: boolean;
 }
+
+/* Ordinateur, garage v3 : un espace libre au-dessus duquel la trott est posée sur l'estrade (StandTrott, fixe). */
+const StandCaption = ({ scooter, scooterCount, currentIndex, onPrev, onNext }: Pick<Props, "scooter" | "scooterCount" | "currentIndex" | "onPrev" | "onNext">) => {
+  const m = scooter.scooter_model;
+  const specs = [m.voltage && `${m.voltage} V`, m.amperage && `${m.amperage} Ah`, m.power_watts && `${m.power_watts} W`].filter(Boolean) as string[];
+  const arrow = "w-12 h-12 inline-flex items-center justify-center bg-white disabled:opacity-40";
+  return (
+    <div className="hidden lg:flex h-[calc(100vh-250px)] min-h-[420px] items-end justify-between gap-4 pb-2">
+      <div className="min-w-0" style={{ textShadow: "0 2px 14px rgba(0,0,0,0.55)" }}>
+        <p className="text-sm font-bold uppercase tracking-[0.14em]" style={{ fontFamily: FONT, color: "#8FBF9C" }}>Ma trott · {currentIndex + 1}/{scooterCount}</p>
+        <p className="mt-1 text-[34px] uppercase leading-[0.95] text-white max-w-[14ch]" style={{ fontFamily: UNB, fontWeight: 900, fontStyle: "italic", letterSpacing: "-0.03em" }}>{scooter.nickname ? `« ${scooter.nickname} »` : m.name}</p>
+        {scooter.nickname && <p className="mt-1 text-base font-semibold text-white/90" style={{ fontFamily: FONT }}>{m.name}</p>}
+        {specs.length > 0 && (
+          <div className="mt-2 flex gap-1.5">{specs.map((x) => <span key={x} className="px-2 py-1 text-sm font-bold text-white" style={{ background: "rgba(26,26,26,0.85)", fontFamily: FONT }}>{x}</span>)}</div>
+        )}
+      </div>
+      {scooterCount > 1 && (
+        <div className="flex gap-2 shrink-0">
+          <button type="button" onClick={onPrev} disabled={currentIndex <= 0} aria-label="Trott précédente" className={arrow} style={{ clipPath: cut(8), color: CARBON }}><ChevronLeft className="w-5 h-5" /></button>
+          <button type="button" onClick={onNext} disabled={currentIndex >= scooterCount - 1} aria-label="Trott suivante" className={arrow} style={{ clipPath: cut(8), color: CARBON }}><ChevronRight className="w-5 h-5" /></button>
+        </div>
+      )}
+    </div>
+  );
+};
 
 export const H2 = ({ children, light }: { children: React.ReactNode; light?: boolean }) => (
   <h2 className="text-base uppercase leading-tight" style={{ fontFamily: UNB, fontWeight: 900, fontStyle: "italic", letterSpacing: "-0.02em", color: light ? "#FFFFFF" : CARBON }}>
@@ -309,7 +336,14 @@ const GarageAtelierView = (p: Props) => {
         {/* Colonne principale */}
         <div className="flex flex-col gap-4 min-w-0">
           {!p.hideRider && <div className="lg:hidden"><RiderStrip profile={p.profile} onEditProfile={p.onEditProfile} onTheme={p.onTheme} /></div>}
-          <ScooterStage scooter={s} scooterCount={p.scooterCount} currentIndex={p.currentIndex} onPrev={p.onPrev} onNext={p.onNext} />
+          {p.standOnDesktop ? (
+            <>
+              <div className="lg:hidden"><ScooterStage scooter={s} scooterCount={p.scooterCount} currentIndex={p.currentIndex} onPrev={p.onPrev} onNext={p.onNext} /></div>
+              <StandCaption scooter={s} scooterCount={p.scooterCount} currentIndex={p.currentIndex} onPrev={p.onPrev} onNext={p.onNext} />
+            </>
+          ) : (
+            <ScooterStage scooter={s} scooterCount={p.scooterCount} currentIndex={p.currentIndex} onPrev={p.onPrev} onNext={p.onNext} />
+          )}
           <Actions garageId={s.id} onAddModification={p.onAddModification} onOpenRiderCard={p.onOpenRiderCard} />
           <PartsShelf scooter={s} />
         </div>

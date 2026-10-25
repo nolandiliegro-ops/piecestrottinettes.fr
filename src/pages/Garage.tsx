@@ -41,6 +41,7 @@ const RiderCardLightbox = lazy(() => import('@/components/garage/RiderCardLightb
 import RiderCardBand from '@/components/garage/story/RiderCardBand';
 import GarageV3, { readGarageSection } from '@/components/garage/v3/GarageV3';
 import { ScreenTitle, Box, BoxTitle } from '@/components/garage/v3/ui';
+import StandTrott from '@/components/garage/v3/StandTrott';
 // 25/10 : garage v3 par défaut ; ?g=0 = garage précédent.
 const legacyGarage = typeof window !== 'undefined' && new URLSearchParams(window.location.search).get('g') === '0';
 // 25/10 : carte Rider Story ; ?carte=0 = ancienne carte (fenêtre).
@@ -181,6 +182,8 @@ const Garage = () => {
                     <button type="button" onClick={() => navigate('/trottinettes')} className="mt-3 min-h-[48px] px-4 text-[15px] font-extrabold text-white bg-[#1A1A1A]">Ajouter ma trottinette</button>
                   </Box>
                 ) : selectedScooter && selectedScooter.scooter_model ? (
+                  <>
+                  <StandTrott src={selectedScooter.scooter_model.image_url || selectedScooter.custom_photo_url} alt={selectedScooter.scooter_model.name} />
                   <GarageAtelierView
                     profile={profile}
                     scooter={selectedScooter as any}
@@ -195,7 +198,9 @@ const Garage = () => {
                     onOpenRiderCard={() => navigate('/garage')}
                     hideRider
                     hideLaunch
+                    standOnDesktop
                   />
+                  </>
                 ) : (
                   <div className="flex items-center justify-center py-20"><Loader2 className="w-8 h-8 animate-spin text-white" /></div>
                 )}

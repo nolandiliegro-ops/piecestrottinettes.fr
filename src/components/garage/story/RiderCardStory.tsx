@@ -38,16 +38,22 @@ interface Props {
   /** Ouvre le fil de commentaires. Sans handler, le bouton mène au garage public. */
   onOpenComments?: () => void;
   className?: string;
+  /** Trott affichée, pilotée de l'extérieur (garage : la même trott est posée sur l'estrade). */
+  selectedId?: string | null;
+  onSelect?: (m: RiderMachine) => void;
+  /** Ordinateur : le wallpaper est déjà derrière la page — la carte ne le répète pas (il revient dans l'image partagée). */
+  bare?: boolean;
 }
 
-const RiderCardStory = ({ data, commentCount = 0, onOpenComments, className = "" }: Props) => {
+const RiderCardStory = ({ data, commentCount = 0, onOpenComments, className = "", selectedId, onSelect, bare = false }: Props) => {
   const { user } = useAuthContext();
   const like = useToggleCardLike();
   const { profile } = data;
   const { mine, liked } = useMemo(() => cardRows(data.machines), [data.machines]);
   const initial = mine.find((m) => m.is_featured) ?? mine[0] ?? liked[0] ?? null;
   const [currentId, setCurrentId] = useState<string | null>(initial?.id ?? null);
-  const current = [...mine, ...liked].find((m) => m.id === currentId) ?? initial;
+  const current = [...mine, ...liked].find((m) => m.id === (selectedId ?? currentId)) ?? initial;
+  const [exporting, setExporting] = useState(false);
   const [real, setReal] = useState(false);
   const [sharing, setSharing] = useState(false);
   const ref = useRef<HTMLDivElement>(null);
@@ -58,11 +64,13 @@ const RiderCardStory = ({ data, commentCount = 0, onOpenComments, className = ""
   const isMe = user?.id === profile.id;
   const publicUrl = profile.username ? `piecestrottinettes.fr/rider/${profile.username}` : "piecestrottinettes.fr";
 
-  const choose = (m: RiderMachine) => { setCurrentId(m.id); setReal(false); };
+  const choose = (m: RiderMachine) => { setCurrentId(m.id); setReal(false); onSelect?.(m); };
 
   const share = async () => {
     if (!ref.current) return;
     setSharing(true);
+    // Carte « nue » à l'écran : le wallpaper est remis le temps de l'image partagée.
+    if (bare) { setExporting(true); await new Promise((r) => setTimeout(r, 350)); }
     try {
       const node = ref.current;
       // Format story : 1080 px de large (la hauteur suit la carte, ~1920 px).
@@ -87,6 +95,7 @@ const RiderCardStory = ({ data, commentCount = 0, onOpenComments, className = ""
     } catch (e) {
       if ((e as Error)?.name !== "AbortError") toast.error("Impossible de créer l'image de la carte");
     } finally {
+      setExporting(false);
       setSharing(false);
     }
   };
@@ -117,7 +126,7 @@ const RiderCardStory = ({ data, commentCount = 0, onOpenComments, className = ""
       style={{ background: CARBON, clipPath: ch(22), fontFamily: FONT }}
     >
       {/* Le wallpaper du rider, plein cadre */}
-      {data.wallpaper_url && (
+      {data.wallpaper_url && (!bare || exporting) && (
         <img src={data.wallpaper_url} alt="" crossOrigin="anonymous" className="absolute inset-0 w-full h-full object-cover" />
       )}
       <div aria-hidden className="absolute inset-0" style={{ background: "linear-gradient(180deg, rgba(0,0,0,0.55) 0%, rgba(0,0,0,0) 26%, rgba(0,0,0,0) 46%, rgba(0,0,0,0.88) 74%)" }} />
