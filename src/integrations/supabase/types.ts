@@ -4997,6 +4997,30 @@ export type Database = {
         }
         Relationships: []
       }
+      _bak_images_scooters_2510_humains: {
+        Row: {
+          id: string | null
+          image_url: string | null
+          images: Json | null
+          saved_at: string | null
+          slug: string | null
+        }
+        Insert: {
+          id?: string | null
+          image_url?: string | null
+          images?: Json | null
+          saved_at?: string | null
+          slug?: string | null
+        }
+        Update: {
+          id?: string | null
+          image_url?: string | null
+          images?: Json | null
+          saved_at?: string | null
+          slug?: string | null
+        }
+        Relationships: []
+      }
       _bak_parts_points_bleus_2510: {
         Row: {
           attributes: Json | null
