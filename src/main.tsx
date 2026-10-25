@@ -24,7 +24,19 @@ window.addEventListener("vite:preloadError", (event) => {
     return;
   }
   event.preventDefault();
-  window.location.reload();
+  // 25/10/2026 : recharger seul ne suffisait pas — le service worker resservait le même index.html périmé
+  // (constaté : 1 rechargement, PartDetail-*.js en 404, page blanche). On retire d'abord le service worker
+  // et ses caches (registerSW le réinstalle au chargement suivant), puis on recharge.
+  const purge = async () => {
+    try {
+      const regs = (await navigator.serviceWorker?.getRegistrations()) ?? [];
+      await Promise.all(regs.map((r) => r.unregister()));
+      if ("caches" in window) await Promise.all((await caches.keys()).map((k) => caches.delete(k)));
+    } catch {
+      /* rien à purger */
+    }
+  };
+  void purge().finally(() => window.location.reload());
 });
 
 createRoot(document.getElementById("root")!).render(

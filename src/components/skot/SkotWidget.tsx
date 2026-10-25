@@ -153,7 +153,8 @@ const SkotWidget = () => {
     setOpen(true);
     if (autoSend) { void send(autoSend, kind); return; }
     pendingNudge.current = kind;
-    setMsgs((m) => [...m, { role: "skot", text: NUDGE_TEXT[kind] }]);
+    // Conversation neuve : la question de SKOT remplace le message d'accueil (sinon deux bulles de SKOT d'affilée).
+    setMsgs((m) => (m.length === 1 && m[0].role === "skot" ? [{ role: "skot", text: NUDGE_TEXT[kind] }] : [...m, { role: "skot", text: NUDGE_TEXT[kind] }]));
   };
 
   const rate = async (i: number, value: 1 | -1) => {

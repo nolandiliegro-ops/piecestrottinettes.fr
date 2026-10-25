@@ -101,7 +101,7 @@ const SkotNudge = ({ pathname, inNav, onAccept }: { pathname: string; inNav: boo
   return (
     <div
       role="status"
-      className={`fixed z-40 right-3 left-3 sm:left-auto sm:w-[340px] md:right-6 ${inNav ? "bottom-[calc(96px+env(safe-area-inset-bottom))]" : "bottom-[calc(148px+env(safe-area-inset-bottom))]"} md:bottom-[250px]`}
+      className={`fixed z-40 right-3 left-3 sm:w-[340px] ${inNav ? "sm:right-auto" : "sm:left-auto"} md:left-auto md:right-6 ${inNav ? "bottom-[calc(96px+env(safe-area-inset-bottom))]" : "bottom-[calc(148px+env(safe-area-inset-bottom))]"} md:bottom-[250px]`}
     >
       <span className="block p-[2px] shadow-lg" style={{ background: CARBON, clipPath: cutTR(12) }}>
         <span className="flex items-start gap-2 bg-white" style={{ clipPath: cutTR(11) }}>
