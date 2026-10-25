@@ -119,3 +119,23 @@ export function memePhoto(a: Empreinte, b: Empreinte, s = SEUILS) {
   if (io !== null && io >= s.iou && d <= s.dhashAvecIou) return { doublon: true, d, io, c, raison: `même cliché recadré (silhouette ${io.toFixed(3)}, dHash ${d})` };
   return { doublon: false, d, io, c };
 }
+
+// ===== stockage (table public.photo_empreintes) =====
+export interface EmpreinteStockee { hash: string; hist: number[] | null; mask: string | null; opaque: number }
+export function versStockage(e: Empreinte): EmpreinteStockee {
+  let mask: string | null = null;
+  if (e.mask) {
+    const bytes = new Uint8Array(Math.ceil((N * N) / 8));
+    for (let k = 0; k < N * N; k++) if (e.mask[k]) bytes[k >> 3] |= 1 << (k & 7);
+    mask = Array.from(bytes, (b) => b.toString(16).padStart(2, '0')).join('');
+  }
+  return { hash: e.hash.toString(16).padStart(16, '0'), hist: e.hist ? Array.from(e.hist) : null, mask, opaque: e.opaque };
+}
+export function depuisStockage(s: EmpreinteStockee): Empreinte {
+  let mask: Uint8Array | null = null;
+  if (s.mask) {
+    mask = new Uint8Array(N * N);
+    for (let k = 0; k < N * N; k++) { const byte = parseInt(s.mask.substr((k >> 3) * 2, 2), 16); mask[k] = (byte >> (k & 7)) & 1; }
+  }
+  return { hash: BigInt('0x' + s.hash), mask, hist: s.hist ? Float64Array.from(s.hist) : null, opaque: s.opaque };
+}

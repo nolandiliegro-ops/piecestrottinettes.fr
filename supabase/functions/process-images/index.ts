@@ -6,7 +6,7 @@
 import { createClient } from 'https://esm.sh/@supabase/supabase-js@2.45.0';
 import UPNG from 'npm:upng-js@2.1.0';
 import jpeg from 'npm:jpeg-js@0.4.4';
-import { empreinte, memePhoto, type Empreinte } from '../_shared/empreinte-core.ts';
+import { empreinte, memePhoto, versStockage, depuisStockage, type Empreinte } from '../_shared/empreinte-core.ts';
 
 const corsHeaders = {
   'Access-Control-Allow-Origin': '*',
@@ -110,21 +110,37 @@ function empreinteDe(buf: Uint8Array): Empreinte | null {
   if (!px) return null;
   try { return empreinte(px); } catch (e) { log('garde-fou', `empreinte impossible: ${(e as Error).message}`); return null; }
 }
-// photos déjà sur la fiche : miniatures 400 px au format d'origine (même préparation que la calibration)
-async function empreintesFiche(supabase: ReturnType<typeof createClient>, table: string, entityId: string): Promise<{ url: string; fp: Empreinte }[]> {
+// photos déjà sur la fiche : empreintes calculées sur l'ORIGINAL et stockées dans public.photo_empreintes
+// (les miniatures render déforment les couleurs : 579/3 351 photos non reconnues face à leur propre miniature, 25/10).
+// Une photo sans empreinte stockée est téléchargée et calculée ici, puis stockée (au plus MAX_LAZY par appel).
+const MAX_LAZY = 8;
+async function stockeEmpreinte(supabase: ReturnType<typeof createClient>, url: string, entityType: string, entityId: string, fp: Empreinte) {
+  const { error } = await supabase.from('photo_empreintes').upsert({ url, entity_type: entityType, entity_id: entityId, ...versStockage(fp) }, { onConflict: 'url' });
+  if (error) log('garde-fou', `stockage empreinte impossible: ${error.message}`);
+}
+async function empreintesFiche(supabase: ReturnType<typeof createClient>, table: string, entityType: string, entityId: string): Promise<{ list: { url: string; fp: Empreinte }[]; calculees: number }> {
   const { data: row } = await supabase.from(table).select('images').eq('id', entityId).maybeSingle();
   const urls = (Array.isArray(row?.images) ? row!.images : []).map((i: { url?: string } | string) => (typeof i === 'string' ? i : i?.url)).filter(Boolean) as string[];
   const out: { url: string; fp: Empreinte }[] = [];
+  if (urls.length === 0) return { list: out, calculees: 0 };
+  const { data: rows } = await supabase.from('photo_empreintes').select('url,hash,hist,mask,opaque').in('url', urls);
+  const connues = new Map((rows ?? []).map((r: { url: string }) => [r.url, r]));
+  let calculees = 0;
   for (const u of urls) {
-    const mini = u.includes('/storage/v1/object/public/') ? u.replace('/storage/v1/object/public/', '/storage/v1/render/image/public/') + '?width=400&resize=contain&format=origin' : u;
+    const r = connues.get(u) as Parameters<typeof depuisStockage>[0] | undefined;
+    if (r) { out.push({ url: u, fp: depuisStockage(r) }); continue; }
+    if (calculees >= MAX_LAZY) continue;
     try {
-      const r = await fetchWithTimeout(mini, 8_000);
-      if (!r.ok) continue;
-      const fp = empreinteDe(new Uint8Array(await r.arrayBuffer()));
-      if (fp) out.push({ url: u, fp });
+      const resp = await fetchWithTimeout(u, 15_000);
+      if (!resp.ok) continue;
+      const fp = empreinteDe(new Uint8Array(await resp.arrayBuffer()));
+      if (!fp) continue;
+      calculees++;
+      out.push({ url: u, fp });
+      await stockeEmpreinte(supabase, u, entityType, entityId, fp);
     } catch { /* photo illisible : ignorée */ }
   }
-  return out;
+  return { list: out, calculees };
 }
 function chercheDoublon(fp: Empreinte | null, deja: { url: string; fp: Empreinte }[]) {
   if (!fp) return null;
@@ -194,7 +210,7 @@ Deno.serve(async (req) => {
     // Lecture pure : aucun upload, aucune écriture. Utilisé par l'admin avant un ajout manuel, et par le smoke-test.
     if (check_only === true) {
       const inputs = Array.isArray(images_base64) ? images_base64.slice(0, MAX_URLS) : [];
-      const deja = await empreintesFiche(supabase, table, entity_id);
+      const { list: deja, calculees } = await empreintesFiche(supabase, table, entity_type!, entity_id);
       const results: { index: number; doublon: boolean; raison?: string; deja_sur?: string; verifiable: boolean }[] = [];
       for (let i = 0; i < inputs.length; i++) {
         let buf: Uint8Array;
@@ -205,9 +221,21 @@ Deno.serve(async (req) => {
         results.push({ index: i, doublon: !!hit, verifiable: !!fp, ...(hit ? { raison: hit.raison, deja_sur: hit.url } : {}) });
         if (fp && !hit) deja.push({ url: `candidate[${i}]`, fp });
       }
-      log('check_only', `entity=${entity_type} id=${entity_id} imgs=${inputs.length} deja=${deja.length} doublons=${results.filter((r) => r.doublon).length}`);
+      log('check_only', `entity=${entity_type} id=${entity_id} imgs=${inputs.length} deja=${deja.length} calculees=${calculees} doublons=${results.filter((r) => r.doublon).length}`);
       return new Response(
-        JSON.stringify({ success: true, check_only: true, garde_fou: 'empreinte-core-2510', compared_with: deja.length, results }),
+        JSON.stringify({ success: true, check_only: true, garde_fou: 'empreinte-core-2510', compared_with: deja.length, empreintes_calculees: calculees, results }),
+        { status: 200, headers: { ...corsHeaders, 'Content-Type': 'application/json' } },
+      );
+    }
+
+    // ===== MODE REMPLISSAGE DES EMPREINTES (25/10) =====
+    // { backfill_fp: true } → calcule et stocke les empreintes manquantes des photos de la fiche. N'écrit QUE dans
+    // public.photo_empreintes (jamais dans la galerie). Lancé une fois sur toutes les fiches, puis inutile (la fonction
+    // stocke l'empreinte de chaque nouvelle photo).
+    if ((body as { backfill_fp?: boolean }).backfill_fp === true) {
+      const { list, calculees } = await empreintesFiche(supabase, table, entity_type!, entity_id);
+      return new Response(
+        JSON.stringify({ success: true, backfill_fp: true, garde_fou: 'empreinte-core-2510', empreintes: list.length, calculees }),
         { status: 200, headers: { ...corsHeaders, 'Content-Type': 'application/json' } },
       );
     }
@@ -230,7 +258,7 @@ Deno.serve(async (req) => {
       );
 
       // garde-fou : photos déjà sur la fiche (en append) — en reset, seules comptent celles de cet appel
-      const deja = reset === true ? [] : await empreintesFiche(supabase, table, entity_id);
+      const deja = reset === true ? [] : (await empreintesFiche(supabase, table, entity_type!, entity_id)).list;
       let refusedDuplicates = 0;
 
       for (let i = 0; i < inputs.length; i++) {
@@ -276,7 +304,7 @@ Deno.serve(async (req) => {
           // 4. Public URL.
           const { data: pub } = supabase.storage.from(bucket).getPublicUrl(path);
           newImages.push({ url: pub.publicUrl });
-          if (fp) deja.push({ url: pub.publicUrl, fp });
+          if (fp) { deja.push({ url: pub.publicUrl, fp }); await stockeEmpreinte(supabase, pub.publicUrl, entity_type!, entity_id, fp); }
           log(`base64[${i}]`, `OK -> ${pub.publicUrl}`);
         } catch (e) {
           const reason = (e as Error).message;
@@ -451,7 +479,7 @@ Deno.serve(async (req) => {
         const publicUrl = pub.publicUrl;
 
         // 6. Push result
-        if (fpL) dejaLegacy.push({ url: srcUrl, fp: fpL });
+        if (fpL) { dejaLegacy.push({ url: srcUrl, fp: fpL }); await stockeEmpreinte(supabase, publicUrl, entity_type!, entity_id, fpL); }
         const position = result.length;
         result.push({
           url: publicUrl,
