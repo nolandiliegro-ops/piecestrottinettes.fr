@@ -1,14 +1,11 @@
 {
  "regle": "Photo principale = la trottinette de 3/4, détourée, propre, seule (Nolan 25/10).",
  "depubliees_sans_photo_valable": [
-  "dualtron-eagle-pro",
   "iscooter-f7-ultra",
   "iscooter-w12",
-  "isinwheel-d2",
   "isinwheel-gt4s",
   "kaabo-mantis-8",
   "xiaomi-electric-scooter-4-go",
-  "circooter-landturbo-pro",
   "e-twow-tanktorq-tk2-lite",
   "isinwheel-h7-pro"
  ],
@@ -267,6 +264,23 @@
    "slug": "zero-8",
    "principale_actuelle": "profil",
    "photos": 3
+  }
+ ],
+ "republiees_par_chasseur": [
+  {
+   "slug": "circooter-landturbo-pro",
+   "date": "2026-10-25",
+   "lot": "chasse-2510a"
+  },
+  {
+   "slug": "dualtron-eagle-pro",
+   "date": "2026-10-25",
+   "lot": "chasse-2510a"
+  },
+  {
+   "slug": "isinwheel-d2",
+   "date": "2026-10-25",
+   "lot": "chasse-2510a"
   }
  ]
 }

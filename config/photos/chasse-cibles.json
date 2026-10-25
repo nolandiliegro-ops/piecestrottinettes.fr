@@ -2,24 +2,6 @@
  "note": "Cibles du chasseur photo (25/10). Les dépubliées ne sont pas lisibles par la clé publique : id, nom et galerie sont recopiés ici depuis la base. Les publiées sont relues en direct.",
  "depubliees": [
   {
-   "id": "546154f2-c1cd-4b52-961d-23e038fb8351",
-   "slug": "circooter-landturbo-pro",
-   "name": "Circooter Landturbo Pro",
-   "brand": "Circooter",
-   "current": [
-    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/546154f2-c1cd-4b52-961d-23e038fb8351/1792892580718_0.png"
-   ]
-  },
-  {
-   "id": "14c842c6-d57c-482c-95b0-c80fa661bb05",
-   "slug": "dualtron-eagle-pro",
-   "name": "Dualtron Eagle Pro",
-   "brand": "Dualtron",
-   "current": [
-    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/14c842c6-d57c-482c-95b0-c80fa661bb05/1784216698260_0.png"
-   ]
-  },
-  {
    "id": "52cf2a00-db4e-4418-a7be-a48db1fe8e71",
    "slug": "e-twow-tanktorq-tk2-lite",
    "name": "E-Twow TankTorq TK2 Lite",
@@ -37,8 +19,8 @@
    "name": "iScooter F7Ultra",
    "brand": "iScooter",
    "current": [
-    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/e82a6f98-f4aa-48cf-b098-ee2206641652/1792892442818_0.png",
-    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/e82a6f98-f4aa-48cf-b098-ee2206641652/1792892448781_0.png"
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/e82a6f98-f4aa-48cf-b098-ee2206641652/1792892448781_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/e82a6f98-f4aa-48cf-b098-ee2206641652/1792942896637_0.png"
    ]
   },
   {
@@ -47,16 +29,7 @@
    "name": "iScooter W12",
    "brand": "iScooter",
    "current": [
-    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/d6824bc0-d2e9-43eb-aff1-a9aa01827d7a/1792892470045_0.png"
-   ]
-  },
-  {
-   "id": "e6127ed9-f2f1-4622-b283-9d4ca46fe3d1",
-   "slug": "isinwheel-d2",
-   "name": "Isinwheel D2",
-   "brand": "Isinwheel",
-   "current": [
-    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/e6127ed9-f2f1-4622-b283-9d4ca46fe3d1/1792892533188_0.png"
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/d6824bc0-d2e9-43eb-aff1-a9aa01827d7a/1792942906021_0.png"
    ]
   },
   {
@@ -65,8 +38,9 @@
    "name": "Isinwheel GT4S",
    "brand": "Isinwheel",
    "current": [
-    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/785f95dc-24ac-43cf-8880-edd402614062/1792892491871_0.png",
-    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/785f95dc-24ac-43cf-8880-edd402614062/1792892505095_0.png"
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/785f95dc-24ac-43cf-8880-edd402614062/1792892505095_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/785f95dc-24ac-43cf-8880-edd402614062/1792942936445_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/785f95dc-24ac-43cf-8880-edd402614062/1792942938756_0.png"
    ]
   },
   {
@@ -93,7 +67,10 @@
    "name": "Xiaomi Electric Scooter 4 Go",
    "brand": "Xiaomi",
    "current": [
-    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/1f7c36d4-569b-4ba3-a14a-72166356f588/1784214196565_0.png"
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/1f7c36d4-569b-4ba3-a14a-72166356f588/1784214196565_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/1f7c36d4-569b-4ba3-a14a-72166356f588/1792942965193_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/1f7c36d4-569b-4ba3-a14a-72166356f588/1792942966872_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/1f7c36d4-569b-4ba3-a14a-72166356f588/1792942968237_0.png"
    ]
   }
  ],
