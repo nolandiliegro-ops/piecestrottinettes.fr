@@ -42,11 +42,34 @@ export async function feats(buf) {
   const lab = await sharp(crop).resize(12, 12, { fit: 'fill' }).raw().toBuffer();
   const grille = [];
   for (let k = 0; k < 144; k++) { const a = lab[4 * k + 3]; grille.push(a > 96 ? rgb2lab(lab[4 * k], lab[4 * k + 1], lab[4 * k + 2]) : null); }
+  // 25/10 (calibration 2) : les COLORIS d'un même rendu (Niu rouge/bleu, deck blanc/noir) ne diffèrent souvent que par une
+  // tige, des liserés ou un deck : petite surface. Grille 24x24 sur l'INTÉRIEUR du produit (cases opaques entourées de cases
+  // opaques : le halo du détourage est exclu), écart de luminosité recentré (une exposition différente de la même photo ne
+  // compte pas), percentile haut : une zone d'une autre couleur ressort, un bord abîmé non.
+  const G = 24, raw24 = await sharp(crop).resize(G, G, { fit: 'fill' }).raw().toBuffer();
+  const al = (i, j) => (i < 0 || j < 0 || i >= G || j >= G ? 0 : raw24[4 * (j * G + i) + 3]);
+  const g24 = [];
+  for (let j = 0; j < G; j++) for (let i = 0; i < G; i++) {
+    const k = j * G + i, inter = al(i, j) >= 250 && al(i - 1, j) >= 250 && al(i + 1, j) >= 250 && al(i, j - 1) >= 250 && al(i, j + 1) >= 250;
+    g24.push(inter ? rgb2lab(raw24[4 * k], raw24[4 * k + 1], raw24[4 * k + 2]) : null);
+  }
+  // teintes de l'intérieur (pixels saturés, 96 px, alpha érodé) : répartition entre 12 teintes, indépendante de la quantité
+  const { data: t96, info: ti } = await sharp(crop).resize(96, 96, { fit: 'inside' }).raw().toBuffer({ resolveWithObject: true });
+  const A = (x, y) => (x < 0 || y < 0 || x >= ti.width || y >= ti.height ? 0 : t96[4 * (y * ti.width + x) + 3]);
+  const teinte = new Array(12).fill(0); let nOpq = 0, nSat = 0;
+  for (let y = 0; y < ti.height; y++) for (let x = 0; x < ti.width; x++) {
+    if (!(A(x, y) >= 250 && A(x - 2, y) >= 250 && A(x + 2, y) >= 250 && A(x, y - 2) >= 250 && A(x, y + 2) >= 250)) continue;
+    nOpq++;
+    const k = 4 * (y * ti.width + x), r = t96[k] / 255, g = t96[k + 1] / 255, bb = t96[k + 2] / 255, mx = Math.max(r, g, bb), mn = Math.min(r, g, bb);
+    if (mx < 0.25 || (mx - mn) / mx < 0.35) continue;
+    const d = mx - mn; let h = mx === r ? ((g - bb) / d) % 6 : mx === g ? (bb - r) / d + 2 : (r - g) / d + 4;
+    teinte[Math.floor(((h * 60 + 360) % 360) / 30) % 12]++; nSat++;
+  }
   const { data: px, info: pi } = await sharp(buf, { failOn: 'none' }).ensureAlpha().raw().toBuffer({ resolveWithObject: true });
   const core = coreFp({ width: pi.width, height: pi.height, data: px });
   const vign = await sharp(crop).resize(320, 320, { fit: 'inside' }).png().toBuffer();
   const lib = await libFp(vign);
-  return { grille, ph, phSq, mfill, aspect: box.width / box.height, g: g16.map((v) => (v - mu) / sd), core, lib, thumb: await sharp(crop).resize(96, 96, { fit: 'contain', background: '#9e9e9e' }).flatten({ background: '#9e9e9e' }).jpeg({ quality: 70 }).toBuffer() };
+  return { g24, teinte, satFrac: nOpq ? nSat / nOpq : 0, nSat, grille, ph, phSq, mfill, aspect: box.width / box.height, g: g16.map((v) => (v - mu) / sd), core, lib, thumb: await sharp(crop).resize(96, 96, { fit: 'contain', background: '#9e9e9e' }).flatten({ background: '#9e9e9e' }).jpeg({ quality: 70 }).toBuffer() };
 }
 const hamA = (a, b) => a.reduce((s, v, k) => s + (v !== b[k] ? 1 : 0), 0);
 const iouA = (a, b) => { let i = 0, u = 0; for (let k = 0; k < a.length; k++) if (a[k] || b[k]) { u++; if (a[k] && b[k]) i++; } return u ? i / u : 0; };
@@ -64,9 +87,19 @@ export function couleurGrille(A, B) {
   for (let k = 0; k < 144; k++) { const a = A.grille[k], b = B.grille[k]; if (!a || !b) continue; dab.push(Math.hypot(a[1] - b[1], a[2] - b[2])); dl.push(Math.abs(a[0] - b[0])); }
   return { n: dab.length, ab50: quant(dab, 0.5), ab75: quant(dab, 0.75), ab90: quant(dab, 0.9), l50: quant(dl, 0.5), l75: quant(dl, 0.75) };
 }
+export function couleurInterieur(A, B) {
+  const dl = [], dab = [];
+  for (let k = 0; k < A.g24.length; k++) { const a = A.g24[k], b = B.g24[k]; if (!a || !b) continue; dl.push(a[0] - b[0]); dab.push(Math.hypot(a[1] - b[1], a[2] - b[2])); }
+  if (dl.length < 8) return { n: dl.length, l90: null, ab90: null, ab95: null };
+  const med = quant(dl, 0.5), ecart = dl.map((v) => Math.abs(v - med));
+  // teintes : chaque côté normalisé, distance L1 ×50 (0-100) ; une image presque sans couleur (< 1 % saturé) n'a pas de teinte
+  let ht = null;
+  if (A.nSat >= 20 && B.nSat >= 20 && A.satFrac >= 0.01 && B.satFrac >= 0.01) { const sa = A.teinte.reduce((s, v) => s + v, 0), sb = B.teinte.reduce((s, v) => s + v, 0); ht = A.teinte.reduce((s, v, k) => s + Math.abs(v / sa - B.teinte[k] / sb), 0) * 50; }
+  return { n: dl.length, decal: med, l90: quant(ecart, 0.9), l95: quant(ecart, 0.95), ab90: quant(dab, 0.9), ab95: quant(dab, 0.95), ht, sat: Math.abs(A.satFrac - B.satFrac) };
+}
 export function mesures(A, B) {
-  const g = couleurGrille(A, B);
-  return { gn: g.n, ab50: g.ab50 === null ? null : +g.ab50.toFixed(1), ab75: g.ab75 === null ? null : +g.ab75.toFixed(1), ab90: g.ab90 === null ? null : +g.ab90.toFixed(1), l50: g.l50 === null ? null : +g.l50.toFixed(1), l75: g.l75 === null ? null : +g.l75.toFixed(1),
+  const g = couleurGrille(A, B), ci = couleurInterieur(A, B), r1 = (v) => (v === null || v === undefined ? null : +v.toFixed(1));
+  return { in: ci.n, decal: r1(ci.decal), il90: r1(ci.l90), il95: r1(ci.l95), iab90: r1(ci.ab90), iab95: r1(ci.ab95), ht: r1(ci.ht), dsat: ci.sat === undefined ? null : +ci.sat.toFixed(3), gn: g.n, ab50: g.ab50 === null ? null : +g.ab50.toFixed(1), ab75: g.ab75 === null ? null : +g.ab75.toFixed(1), ab90: g.ab90 === null ? null : +g.ab90.toFixed(1), l50: g.l50 === null ? null : +g.l50.toFixed(1), l75: g.l75 === null ? null : +g.l75.toFixed(1),
     ph: hamA(A.ph, B.ph), phSq: hamA(A.phSq, B.phSq), mf: +iouA(A.mfill, B.mfill).toFixed(3),
     asp: +Math.abs(Math.log(A.aspect / B.aspect)).toFixed(3), cor: +corr(A.g, B.g).toFixed(3),
     cd: coreHam(A.core.hash, B.core.hash), cio: coreIou(A.core.mask, B.core.mask), cc: coreC(A.core.hist, B.core.hist),
