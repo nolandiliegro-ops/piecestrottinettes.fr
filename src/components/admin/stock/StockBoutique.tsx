@@ -177,7 +177,7 @@ const StockBoutique = () => {
       <div className="bg-white border border-[hsl(var(--admin-border))] rounded-xl p-4 grid gap-1">
         <h1 className="font-black uppercase text-xl tracking-tight">Stock boutique</h1>
         <p className="text-sm text-[hsl(var(--admin-text-muted))]">
-          <b className="text-green-700">{total.data?.pieces ?? '…'} pièces</b> en boutique · {total.data?.refs ?? '…'} références.
+          <b className="text-green-700">{total.data?.pieces ?? '…'} pièce{(total.data?.pieces ?? 0) > 1 ? 's' : ''}</b> en boutique · {total.data?.refs ?? '…'} référence{(total.data?.refs ?? 0) > 1 ? 's' : ''}.
           Ce chiffre est ce que voient les magasins pros (« En boutique » / « Pas en boutique »). Le paiement du site n'en dépend pas.
         </p>
       </div>
