@@ -112,6 +112,13 @@ jobs:
               grep '^::' "out/$lot.$mode.log" | head -5
               continue
             fi
+            if [ "$mode" = "doublons" ]; then
+              # Lecture seule (25/10) : « doublons calibrer x » ou « doublons ronde x » — garde-fou anti-doublon.
+              node scripts/garde-doublons.mjs --$lot > "out/doublons-$lot.log" 2>&1
+              echo "::notice title=doublons $lot::EXIT=$?"
+              grep '^::' "out/doublons-$lot.log" | head -5
+              continue
+            fi
             if [ "$mode" = "angles" ]; then
               # Lecture seule (24/10) : « angles <lot> <scooter_models|parts> [seuil_iou] [slug1,slug2] » — 3 angles distincts par fiche.
               read -r table iou slugs <<< "$extra"
