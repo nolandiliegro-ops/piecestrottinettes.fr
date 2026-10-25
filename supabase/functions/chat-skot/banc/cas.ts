@@ -190,7 +190,7 @@ export const CORPUS: CasSkot[] = [
   { id: "k06-lien-partenaire", origine: "client-simule", note: "transparence sur la commission", message: "budget 400 euros, 5 km en ville, laquelle prendre ?", attendu: { trotts: 1, prix_max: 400 } },
   { id: "k07-budget-impossible", famille: "large", origine: "piege", message: "trottinette avec 100 km d'autonomie pour 200 euros", attendu: { trotts: 0, un_de: ["budget", "aucun", "pas de modèle", "ajuster"] } },
   { id: "k08-comparaison", famille: "large", origine: "client-simule", message: "Xiaomi 4 Pro ou Ninebot G30 Max, laquelle est mieux pour 10 km par jour ?", attendu: { un_de: ["4 pro", "g30"] } },
-  { id: "k09-ado", famille: "large", origine: "client-simule", message: "c'est pour mon fils de 14 ans, quelque chose de pas trop cher et solide, 300 € max", attendu: { prix_max: 300 } },
+  { id: "k09-ado", famille: "large", origine: "client-simule", message: "c'est pour mon fils de 14 ans, quelque chose de pas trop cher et solide, 300 € max", attendu: { prix_max: 300, ne_doit_pas: ["(au-delà de|plus de|jusqu.à) 25 ?km/h"] } },
   { id: "k10-dictee", famille: "large", origine: "client-simule", message: "j'ai un budget de mille euros et je fais quinze kilomètres pour aller au taf tu me conseilles quoi", attendu: { trotts: 1, prix_max: 1000 } },
   { id: "k11-lourd", famille: "large", origine: "client-simule", message: "je pèse 120 kg, il me faut une trott costaud, budget 1200", attendu: { trotts: 1, prix_max: 1200 } },
   { id: "k12-pluie", famille: "large", origine: "client-simule", message: "une trottinette qui craint pas la pluie pour Marseille, budget 800", attendu: { prix_max: 800 } },

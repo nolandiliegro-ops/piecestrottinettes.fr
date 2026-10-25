@@ -14,7 +14,7 @@ import { classifyCompat, unverifiedLabel, verifiedReason, partDelay } from "../_
 import { CORPUS } from "./banc/cas.ts";
 import { runBanc, runNuit, runFresh, runFreshNuit, looksCut } from "./banc/banc.ts";
 
-const VERSION = "chat-skot@2026-10-25j";
+const VERSION = "chat-skot@2026-10-25k";
 const MODEL = "claude-haiku-5-5";
 const MAX_TOOL_ROUNDS = 4;
 const HISTORY_LIMIT = 14;
@@ -127,6 +127,7 @@ const TOOLS = [
       poids_client_kg: { type: "number" },
       poids_max_trott_kg: { type: "number", description: "Si le client doit porter la trottinette" },
       suspension: { type: "boolean", description: "true si le client veut des suspensions" },
+      pour_enfant: { type: "boolean", description: "true seulement si c'est pour un enfant (moins de 14 ans) : autorise les petits modèles" },
       exclure_slugs: { type: "array", items: { type: "string" }, description: "Modèles déjà proposés à ne pas reproposer" },
     } },
   },
@@ -382,6 +383,9 @@ async function runTool(name: string, input: Record<string, any>, ctx: Ctx): Prom
         if (input.poids_max_trott_kg && (s.weight_kg ?? 99) > Number(input.poids_max_trott_kg)) return why("poids_trott");
         if (input.suspension === true && (!s.suspension || /aucune|non|sans/i.test(String(s.suspension)))) return why("suspension");
         if (usage === "leger-transport" && (s.weight_kg ?? 99) > 16) return why("poids_trott");
+        // 25/10 : sans demande « enfant », pas de modèle enfant (Navee K100 Max, 16 km/h, 50 kg max, sortait pour un adulte à 600 €)
+        if (!input.pour_enfant && ((s.max_load_kg && s.max_load_kg < 90) || (s.max_speed_kmh && s.max_speed_kmh < 20))) return why("modele_enfant");
+        if (input.pour_enfant && s.max_speed_kmh && s.max_speed_kmh > 25) return why("trop_rapide_enfant");
         if (usage === "tout-terrain" && (s.score_offroad ?? 0) < 30) return why("tout_terrain");
         return true;
       });
@@ -395,7 +399,8 @@ async function runTool(name: string, input: Record<string, any>, ctx: Ctx): Prom
         let score = w[0] * (s.score_performance ?? 0) + w[1] * (s.score_autonomy ?? 0) + w[2] * (s.score_offroad ?? 0) + w[3] * light;
         if ((s.compatible_parts_count ?? 0) > 0) score *= 1.08; // pièces dispo chez nous : réparable
         if (r.best?.affiliate_url || s.affiliate_link) score *= 1.03; // bonus partenaire (départage seulement)
-        if (input.budget_max_eur && r.price) score *= 1 + Math.min(0.1, (r.price / Number(input.budget_max_eur)) * 0.1); // utiliser le budget, sans le dépasser
+        // Le client donne un budget pour l'utiliser : une trottinette à 30 % du budget est rarement le meilleur conseil.
+        if (input.budget_max_eur && r.price) score *= 0.8 + 0.3 * Math.min(1, r.price / Number(input.budget_max_eur));
         return { ...r, score };
       }).sort((a: any, b: any) => b.score - a.score);
       const top = scored.slice(0, 3).map(({ s, best, price }: any) => {
