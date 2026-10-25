@@ -5,7 +5,7 @@
  * Cadrages proposés derrière `?cadre=1..5` (0 = l'image d'avant, la carte elle-même).
  * Rendu invisible (opacité 0) le temps de l'export, 360 px de large → 1080 px.
  */
-import { forwardRef } from "react";
+import { forwardRef, type ReactNode } from "react";
 import { optimizedImage } from "@/lib/imageTransform";
 import type { RiderMachine } from "@/hooks/useRiderCardData";
 
@@ -25,6 +25,8 @@ interface Props {
   avatar?: string | null;
   name: string;
   sub: string;
+  /** Badge « Ambassadeur » sous le nom (25/10). */
+  badge?: ReactNode;
   bio?: string | null;
   current: RiderMachine | null;
   mine: RiderMachine[];
@@ -89,12 +91,13 @@ const ModelLine = ({ m, center }: { m: RiderMachine | null; center?: boolean }) 
 
 const Url = ({ url }: { url: string }) => <p className="text-[12px] font-bold text-center tracking-wide" style={{ color: "rgba(255,255,255,0.75)" }}>{url}</p>;
 
-const Head = ({ avatar, name, sub, bio, size = 58 }: Pick<Props, "avatar" | "name" | "sub" | "bio"> & { size?: number }) => (
+const Head = ({ avatar, name, sub, bio, badge, size = 58 }: Pick<Props, "avatar" | "name" | "sub" | "bio" | "badge"> & { size?: number }) => (
   <div className="flex items-center gap-3">
     <Avatar url={avatar} name={name} size={size} />
     <div className="min-w-0">
       <p className="text-[22px] uppercase leading-none truncate" style={{ fontFamily: UNB, fontWeight: 900, fontStyle: "italic", letterSpacing: "-0.02em" }}>{name}</p>
       <p className="mt-1 text-[13px] font-semibold truncate" style={{ color: "#E7E7E7" }}>{sub}{bio ? ` · « ${bio.trim()} »` : ""}</p>
+      {badge}
     </div>
   </div>
 );
@@ -106,7 +109,7 @@ const Wall = ({ url, shade }: { url?: string | null; shade: string }) => (
   </>
 );
 
-const StoryExport = forwardRef<HTMLDivElement, Props>(({ cadre, wallpaper, avatar, name, sub, bio, current, mine, liked, publicUrl }, ref) => {
+const StoryExport = forwardRef<HTMLDivElement, Props>(({ cadre, wallpaper, avatar, name, sub, badge, bio, current, mine, liked, publicUrl }, ref) => {
   const [w, h] = CADRE_SIZE[cadre] ?? CADRE_SIZE[1];
   const base = { width: w, height: h, background: CARBON, fontFamily: FONT, position: "fixed" as const, left: 0, top: 0, opacity: 0, pointerEvents: "none" as const, zIndex: -1 };
 
@@ -116,7 +119,7 @@ const StoryExport = forwardRef<HTMLDivElement, Props>(({ cadre, wallpaper, avata
       <div ref={ref} className="relative overflow-hidden text-white" style={base}>
         <Wall url={wallpaper} shade="linear-gradient(180deg, rgba(0,0,0,0.35) 0%, rgba(0,0,0,0.55) 14%, rgba(0,0,0,0.05) 34%, rgba(0,0,0,0.05) 46%, rgba(0,0,0,0.85) 70%, rgba(0,0,0,0.92) 100%)" />
         <div className="absolute inset-x-0 flex flex-col gap-3 px-4" style={{ top: 78, bottom: 74 }}>
-          <Head avatar={avatar} name={name} sub={sub} bio={bio} size={60} />
+          <Head avatar={avatar} name={name} sub={sub} badge={badge} bio={bio} size={60} />
           <div className="flex-1 min-h-0 flex flex-col justify-end"><Trott m={current} h={210} /></div>
           <ModelLine m={current} />
           <Rows mine={mine} liked={liked} />
@@ -131,7 +134,7 @@ const StoryExport = forwardRef<HTMLDivElement, Props>(({ cadre, wallpaper, avata
       <div ref={ref} className="relative overflow-hidden text-white" style={base}>
         <Wall url={wallpaper} shade="linear-gradient(180deg, rgba(0,0,0,0.6) 0%, rgba(0,0,0,0.05) 28%, rgba(0,0,0,0.05) 44%, rgba(0,0,0,0.9) 70%)" />
         <div className="absolute inset-0 flex flex-col gap-2.5 p-4 pb-3">
-          <Head avatar={avatar} name={name} sub={sub} bio={bio} size={56} />
+          <Head avatar={avatar} name={name} sub={sub} badge={badge} bio={bio} size={56} />
           <div className="flex-1 min-h-0 flex flex-col justify-end"><Trott m={current} h={160} /></div>
           <ModelLine m={current} />
           <Rows mine={mine} liked={liked} size={40} />
@@ -149,6 +152,7 @@ const StoryExport = forwardRef<HTMLDivElement, Props>(({ cadre, wallpaper, avata
           <Avatar url={avatar} name={name} size={92} />
           <p className="mt-1 text-[28px] uppercase leading-none text-center" style={{ fontFamily: UNB, fontWeight: 900, fontStyle: "italic", letterSpacing: "-0.03em" }}>{name}</p>
           <p className="text-[13px] font-semibold text-center" style={{ color: "#E7E7E7" }}>{sub}</p>
+          {badge}
           <div className="w-full flex-1 min-h-0 flex flex-col justify-end"><Trott m={current} h={160} /></div>
           <ModelLine m={current} center />
           <Rows mine={mine} liked={liked} />
@@ -166,7 +170,7 @@ const StoryExport = forwardRef<HTMLDivElement, Props>(({ cadre, wallpaper, avata
         <div className="absolute overflow-hidden" style={{ left: 22, right: 22, top: 74, bottom: 92, clipPath: ch(18), boxShadow: "0 0 0 1px rgba(255,255,255,0.2)" }}>
           <Wall url={wallpaper} shade="linear-gradient(180deg, rgba(0,0,0,0.6) 0%, rgba(0,0,0,0.05) 26%, rgba(0,0,0,0.05) 44%, rgba(0,0,0,0.9) 72%)" />
           <div className="absolute inset-0 flex flex-col gap-2.5 p-3.5">
-            <Head avatar={avatar} name={name} sub={sub} size={64} />
+            <Head avatar={avatar} name={name} sub={sub} badge={badge} size={64} />
             <div className="flex-1 min-h-0 flex flex-col justify-end"><Trott m={current} h={190} /></div>
             <ModelLine m={current} />
             <Rows mine={mine} liked={liked} size={36} label={56} />
@@ -181,7 +185,7 @@ const StoryExport = forwardRef<HTMLDivElement, Props>(({ cadre, wallpaper, avata
     <div ref={ref} className="relative overflow-hidden text-white" style={base}>
       <Wall url={wallpaper} shade="linear-gradient(180deg, rgba(0,0,0,0.6) 0%, rgba(0,0,0,0.05) 30%, rgba(0,0,0,0.05) 40%, rgba(0,0,0,0.9) 66%)" />
       <div className="absolute inset-0 flex flex-col gap-2 p-3.5 pb-2.5">
-        <Head avatar={avatar} name={name} sub={sub} size={50} />
+        <Head avatar={avatar} name={name} sub={sub} badge={badge} size={50} />
         <div className="flex-1 min-h-0 flex flex-col justify-end"><Trott m={current} h={120} /></div>
         <ModelLine m={current} />
         <Rows mine={mine} liked={liked} size={34} label={56} />

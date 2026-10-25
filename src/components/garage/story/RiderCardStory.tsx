@@ -12,6 +12,9 @@ import { toPng, toJpeg } from "html-to-image";
 import { toast } from "sonner";
 import { Heart, MessageSquare, Share2, Camera, X, Download } from "lucide-react";
 import { useAuthContext } from "@/contexts/AuthContext";
+import { useQuery } from "@tanstack/react-query";
+import { estAmbassadeur } from "@/lib/ambassadeurPublic";
+import { badgeAmbassadeur } from "@/components/ambassador/BadgeAmbassadeurCarte";
 import StoryExport from "@/components/garage/story/StoryExport";
 import { getXPLevel } from "@/lib/xpLevels";
 import { useToggleCardLike, type RiderCardData, type RiderMachine } from "@/hooks/useRiderCardData";
@@ -87,6 +90,9 @@ const RiderCardStory = ({ data, commentCount = 0, onOpenComments, className = ""
   const { user } = useAuthContext();
   const like = useToggleCardLike();
   const { profile } = data;
+  // 25/10 : badge « Ambassadeur » (n°1 Étiquette verte, choix de Nolan) sur la carte d'un ambassadeur actif — rien n'est retiré.
+  const { data: ambassadeur } = useQuery({ queryKey: ["rider-est-ambassadeur", profile.id], queryFn: () => estAmbassadeur(profile.id), staleTime: 10 * 60_000 });
+  const badge = ambassadeur ? badgeAmbassadeur(1).sous : null;
   const { mine, liked } = useMemo(() => cardRows(data.machines), [data.machines]);
   const initial = mine.find((m) => m.is_featured) ?? mine[0] ?? liked[0] ?? null;
   const [currentId, setCurrentId] = useState<string | null>(initial?.id ?? null);
@@ -381,7 +387,7 @@ const RiderCardStory = ({ data, commentCount = 0, onOpenComments, className = ""
     <>
     {previewOverlay()}
     {storyOn && createPortal(
-      <StoryExport ref={storyRef} cadre={cadre} wallpaper={data.wallpaper_url} avatar={profile.avatar_url} name={name} sub={sub} bio={profile.bio}
+      <StoryExport ref={storyRef} cadre={cadre} wallpaper={data.wallpaper_url} avatar={profile.avatar_url} name={name} sub={sub} badge={badge} bio={profile.bio}
         current={current ?? null} mine={mine} liked={liked} publicUrl={publicUrl} />,
       document.body,
     )}
@@ -407,6 +413,7 @@ const RiderCardStory = ({ data, commentCount = 0, onOpenComments, className = ""
         <div className="min-w-0">
           <p className="text-[22px] uppercase leading-none truncate" style={{ fontFamily: UNB, fontWeight: 900, fontStyle: "italic", letterSpacing: "-0.02em" }}>{name}</p>
           <p className="mt-1 text-sm font-semibold truncate" style={{ color: "#E7E7E7" }}>{sub}{profile.bio ? ` · « ${profile.bio.trim()} »` : ""}</p>
+          {badge}
         </div>
       </div>
 
