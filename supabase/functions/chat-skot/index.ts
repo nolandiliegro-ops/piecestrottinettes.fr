@@ -14,7 +14,7 @@ import { classifyCompat, unverifiedLabel, verifiedReason, partDelay } from "../_
 import { CORPUS } from "./banc/cas.ts";
 import { runBanc, runNuit, looksCut } from "./banc/banc.ts";
 
-const VERSION = "chat-skot@2026-10-25a";
+const VERSION = "chat-skot@2026-10-25b";
 const MODEL = "claude-haiku-5-5";
 const MAX_TOOL_ROUNDS = 4;
 const HISTORY_LIMIT = 14;
@@ -61,6 +61,7 @@ RÈGLES ABSOLUES
 11. Toujours en français, même si le client écrit dans une autre langue. Pas de markdown : pas de gras, pas de titres, pas de tableaux ; des listes courtes avec « - » si besoin.
 12. Court : 120 mots maximum. Les pièces trouvées s'affichent déjà en cartes sous ta réponse (6 au plus) : tu en cites au plus 4 par leur nom exact (tu peux donner leur prix), tu ne recopies jamais toute la liste.
 13. Tu parles de LA trottinette du client (« ta G30 »), jamais « ma ». Tu reprends le modèle exact qu'il a donné, sans lui ajouter de version (G30 ≠ G30 Max) : s'il y a plusieurs versions, tu lui demandes laquelle.
+14. Si tu ne connais ni la trottinette ni la taille de la pièce, tu poses la question d'abord, sans lister de pièces au hasard.
 
 FICHE BOUTIQUE (seule source pour ces sujets)
 - Livraison : un seul mode, « Livraison suivie », 4,90 € (port offert au-delà d'un seuil affiché au panier). Pièces en stock au magasin (pneus, pneus pleins, chambres à air, chargeurs, plaquettes, disques) : livraison 48-72 h. Pièce commandée chez le fournisseur : 3 à 5 jours ouvrés. N° de suivi envoyé par email à l'expédition, aussi visible dans le Garage (Mes commandes).
@@ -73,7 +74,7 @@ FICHE BOUTIQUE (seule source pour ces sujets)
 const TOOLS = [
   {
     name: "search_parts",
-    description: "Cherche des pièces publiées dans le catalogue par mots-clés (ex. « chambre à air 10x2.5 », « plaquettes zoom »). Renvoie au plus 8 pièces.",
+    description: "Cherche des pièces publiées par mots-clés (ex. « chambre à air 10x2.5 », « plaquettes zoom »), SANS statut de compatibilité. À utiliser seulement quand le client ne donne pas de trottinette, ou en complément APRÈS parts_for_scooter. Renvoie au plus 8 pièces.",
     input_schema: { type: "object", properties: {
       query: { type: "string", description: "Mots-clés de la pièce" },
       category: { type: "string", description: "Slug de catégorie facultatif : pneus, pneus-pleins, chambres-a-air, chargeurs, plaquettes, disques" },
@@ -91,7 +92,7 @@ const TOOLS = [
   },
   {
     name: "parts_for_scooter",
-    description: "Liste les pièces compatibles avec une trottinette (par slug), éventuellement filtrées par catégorie, avec leur statut verified/unverified.",
+    description: "OUTIL PRIORITAIRE dès que le client parle d'une pièce pour SA trottinette : liste les pièces liées à cette trottinette (slug, retrouvé avec find_scooter), filtrables par catégorie (pneus, pneus-pleins, chambres-a-air, chargeurs, plaquettes, disques), avec leur statut verified/unverified. Toujours l'appeler avant search_parts dans ce cas.",
     input_schema: { type: "object", properties: {
       scooter_slug: { type: "string" },
       category: { type: "string", description: "Slug de catégorie facultatif" },
@@ -201,7 +202,7 @@ export function matchScooters(all: ScooterIdx[], query: string, tolerance = 0): 
 
 async function scooterBySlug(db: SupabaseClient, slug: string) {
   const { data, error: qErr } = await db.from("scooter_models")
-    .select("id, name, slug, voltage, amperage, tire_size, wheel_inches, tire_family, rim_diameter_code, tire_section_code, rim_type, charge_connectors, brake_type, caliper_family, disc_diameter_code, affiliate_link, published, brands!scooter_models_brand_id_fkey(name)")
+    .select("id, name, slug, voltage, amperage, tire_size, wheel_inches, tire_family, rim_diameter_code, tire_section_code, rim_type, charge_connectors, brake_type, caliper_family, disc_diameter_code, affiliate_link, published, range_km, max_speed_kmh, power_watts, weight_kg, max_load_kg, ip_rating, suspension, year, commercial_status, brands!scooter_models_brand_id_fkey(name)")
     .eq("slug", slug).eq("published", true).maybeSingle();
   if (qErr) console.error("[chat-skot] scooterBySlug", qErr.message);
   return data as Record<string, unknown> | null;
@@ -267,6 +268,10 @@ async function runTool(name: string, input: Record<string, any>, ctx: Ctx): Prom
         voltage: s.voltage, amperage: s.amperage, tire_size: s.tire_size, wheel_inches: s.wheel_inches,
         tire_family: s.tire_family, rim_diameter: s.rim_diameter_code, tire_section: s.tire_section_code, rim_type: s.rim_type,
         charge_connectors: s.charge_connectors, brake_type: s.brake_type, caliper_family: s.caliper_family, disc_diameter: s.disc_diameter_code,
+        // Banc 25/10 (s15) : l'autonomie existait en base mais n'était pas transmise → « je n'ai pas l'autonomie ».
+        autonomie_annoncee_km: s.range_km ?? null, vitesse_max_kmh: s.max_speed_kmh ?? null, puissance_w: s.power_watts ?? null,
+        poids_kg: s.weight_kg ?? null, charge_max_kg: s.max_load_kg ?? null, etancheite: s.ip_rating ?? null, suspensions: s.suspension ?? null,
+        annee: s.year ?? null, statut_commercial: s.commercial_status ?? null,
         partner_link: s.affiliate_link ?? null, page: `${SITE}/scooter/${s.slug}`, fiche,
       };
     }
@@ -497,6 +502,9 @@ export async function converse(inp: ConverseInput): Promise<ConverseOutput> {
         o.reply = content.filter((c: any) => c.type === "text").map((c: any) => c.text).join("\n").trim();
         // Le widget affiche du texte brut : le gras markdown (**…**) sortirait en astérisques (banc 24/10, p06).
         o.reply = o.reply.replace(/\*\*(.+?)\*\*/g, "$1").replace(/^#{1,6}\s+/gm, "");
+        // Règle 1 « jamais de pourcentage » : le modèle glisse parfois « sûr à 100 % » (banc 25/10, c06). Retrait mécanique.
+        // Seule la tournure « à 100 % » est retirée (« confirmé à 100 % » → « confirmé ») : un « 100 % » isolé pourrait inverser le sens.
+        o.reply = o.reply.replace(/\s+à\s*100\s*%/giu, "");
         // Garde-fou (banc 24/10, cas p06) : une réponse qui finit en pleine phrase est ramenée à sa dernière phrase complète.
         // Seulement si le modèle a vraiment été coupé (max_tokens) : un end_turn est une fin voulue, on n'y touche pas.
         if (out.stop_reason === "max_tokens" && looksCut(o.reply)) {
