@@ -1,0 +1,3 @@
+sonde → 200 {"success":true,"backfill_fp":true,"garde_fou":"empreinte-core-2510","empreintes":4,"calculees":4}
+check_only → 200 {"success":true,"check_only":true,"garde_fou":"empreinte-core-2510","compared_with":5,"empreintes_calculees":0,"results":[{"index":0,"doublon":true,"verifiable":true,"raison":"même image (dHash 0, couleur 0.0)","deja_sur":"https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/aaf64e45-cba2-482a-856f-d13a7f64e944/1792446227069_0.png"},{"index":1,"doublon":false,"verifiable":true}]}
+::notice title=smoke garde-fou::OK (lecture seule)
