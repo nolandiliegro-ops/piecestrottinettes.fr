@@ -1,0 +1,864 @@
+[
+ {
+  "brandName": "iScooter",
+  "scooters": [
+   {
+    "name": "iScooter i8M",
+    "slug": "iscooter-i8m",
+    "source_image_urls": [
+     "https://cdn.shopify.com/s/files/1/0596/7570/5419/files/i8m-dgt-electric-scooter_3.jpg",
+     "https://cdn.shopify.com/s/files/1/0596/7570/5419/files/i8electricscootersforadults.jpg",
+     "https://cdn.shopify.com/s/files/1/0596/7570/5419/files/i8m-folded.jpg"
+    ],
+    "voltage": 36,
+    "amperage": 5.2,
+    "power_watts": 500,
+    "max_speed_kmh": 25,
+    "max_speed_private_kmh": 30,
+    "range_km": 25,
+    "max_load_kg": 120,
+    "wheel_inches": 8.5,
+    "tire_family": "pneumatic",
+    "brake_type": "ebs_front_disc_rear",
+    "ip_rating": "IP54",
+    "foldable": true,
+    "score_offroad": 10,
+    "tire_size": "8.5\" gonflables à chambre à air",
+    "description": "L'iScooter i8M est une trottinette de ville pliable de 500 W alimentée par une batterie 36 V 5,2 Ah (187 Wh), pour environ 25 km d'autonomie. Elle roule sur des pneus gonflables de 8,5 pouces à chambre à air et freine par disque arrière associé à un frein électronique E-ABS. Application iScooter Club, indice IP54 et charge maximale de 120 kg. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+    "meta_title": "iScooter i8M - Pièces détachées | PiècesTrottinettes.fr",
+    "meta_description": "Pièces détachées iScooter i8M : pneus 8.5\", chambres à air, plaquettes, chargeur 36V. Compatibilité vérifiée, livraison rapide.",
+    "search_terms": "iscooter i8m, pieces iscooter i8m, pneu iscooter i8m, chambre a air iscooter i8m, plaquettes iscooter i8m, chargeur iscooter i8m",
+    "weight_kg": 13
+   },
+   {
+    "name": "iScooter F7",
+    "slug": "iscooter-f7",
+    "source_image_urls": [
+     "https://cdn.shopify.com/s/files/1/0596/7570/5419/files/f7-seated-e-scooter_1.png",
+     "https://cdn.shopify.com/s/files/1/0596/7570/5419/files/f7-seated-e-scooter_1.jpg",
+     "https://cdn.shopify.com/s/files/1/0596/7570/5419/files/f7-riding.jpg"
+    ],
+    "voltage": 48,
+    "amperage": 10.4,
+    "power_watts": 1000,
+    "max_speed_kmh": 25,
+    "max_speed_private_kmh": 45,
+    "range_km": 50,
+    "max_load_kg": 150,
+    "wheel_inches": 16,
+    "tire_family": "pneumatic",
+    "brake_type": "disc_mechanical",
+    "suspension": "Fourche avant à suspension hydraulique à ressort",
+    "ip_rating": "IPX4",
+    "score_offroad": 40,
+    "tire_size": "16x3.0 neige",
+    "description": "L'iScooter F7 est une trottinette électrique assise équipée d'une selle amovible et d'un panier, idéale pour les trajets quotidiens chargés. Son moteur arrière de 1000 W et sa batterie amovible 48 V 10,4 Ah offrent jusqu'à 50 km d'autonomie. Elle chausse de larges pneus neige 16 x 3.0 et freine par disques mécaniques avant et arrière. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+    "meta_title": "iScooter F7 - Pièces détachées | PiècesTrottinettes.fr",
+    "meta_description": "Pièces détachées iScooter F7 : pneus 16x3.0, chambres à air, plaquettes, chargeur 48V. Compatibilité vérifiée, livraison rapide.",
+    "search_terms": "iscooter f7, pieces iscooter f7, pneu iscooter f7, chambre a air iscooter f7, plaquettes iscooter f7, chargeur iscooter f7",
+    "weight_kg": 30.25
+   },
+   {
+    "name": "iScooter F7Ultra",
+    "slug": "iscooter-f7-ultra",
+    "source_image_urls": [
+     "https://cdn.shopify.com/s/files/1/0596/7570/5419/files/High-Performancef7ultra.jpg",
+     "https://cdn.shopify.com/s/files/1/0596/7570/5419/files/f7ultrawithman.jpg"
+    ],
+    "voltage": 52,
+    "amperage": 20,
+    "power_watts": 1500,
+    "max_speed_kmh": 25,
+    "max_speed_private_kmh": 55,
+    "range_km": 100,
+    "weight_kg": 34.5,
+    "max_load_kg": 150,
+    "wheel_inches": 16,
+    "tire_family": "pneumatic",
+    "brake_type": "disc_unknown_actuation",
+    "suspension": "Fourche à suspension avant, suspension arrière à ressort",
+    "ip_rating": "IPX4",
+    "score_offroad": 60,
+    "tire_size": "16\" avant / 12\" arrière tout-terrain",
+    "description": "L'iScooter F7Ultra est une trottinette tout-terrain de 1500 W en propulsion arrière, avec un couple de 38,5 N·m et une batterie 52 V 20 Ah (1040 Wh) pour 90 à 100 km d'autonomie. Elle associe une roue avant de 16 pouces et une roue arrière de 12 pouces, une double suspension et des freins à disque avant et arrière avec freinage électronique. Poids de 34,5 kg et charge maximale de 150 kg. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+    "meta_title": "iScooter F7Ultra - Pièces détachées | PiècesTrottinettes.fr",
+    "meta_description": "Pièces détachées iScooter F7Ultra : pneus 16\", chambres à air, plaquettes, chargeur 52V. Compatibilité vérifiée, livraison rapide.",
+    "search_terms": "iscooter f7ultra, pieces iscooter f7ultra, pneu iscooter f7ultra, chambre a air iscooter f7ultra, plaquettes iscooter f7ultra, chargeur iscooter f7ultra"
+   },
+   {
+    "name": "iScooter DX5Pro",
+    "slug": "iscooter-dx5-pro",
+    "source_image_urls": [
+     "https://cdn.shopify.com/s/files/1/0596/7570/5419/files/dx5prowithlcdscreen.jpg",
+     "https://cdn.shopify.com/s/files/1/0596/7570/5419/files/dx5prowith17inchtires.jpg"
+    ],
+    "voltage": 52,
+    "amperage": 20,
+    "power_watts": 2000,
+    "max_speed_kmh": 25,
+    "max_speed_private_kmh": 60,
+    "range_km": 100,
+    "weight_kg": 45.5,
+    "max_load_kg": 150,
+    "wheel_inches": 17,
+    "tire_family": "pneumatic",
+    "brake_type": "disc_hydraulic",
+    "suspension": "Fourche hydraulique avant et amortisseur à ressort arrière",
+    "ip_rating": "IPX4",
+    "foldable": true,
+    "score_offroad": 50,
+    "tire_size": "17x3.5 tubeless",
+    "description": "L'iScooter DX5Pro est une trottinette électrique assise de 2000 W avec siège intégré, grand panier et écran LCD de 9 pouces. Sa batterie 52 V 20 Ah (1040 Wh) annonce jusqu'à 100 km d'autonomie et ses pneus tubeless renforcés de 17 x 3,5 pouces apportent stabilité et confort. Freins à disque hydrauliques avant et arrière, double suspension et indice IPX4. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+    "meta_title": "iScooter DX5Pro - Pièces détachées | PiècesTrottinettes.fr",
+    "meta_description": "Pièces détachées iScooter DX5Pro : pneus 17x3.5, chambres à air, plaquettes, chargeur 52V. Compatibilité vérifiée, livraison rapide.",
+    "search_terms": "iscooter dx5pro, pieces iscooter dx5pro, pneu iscooter dx5pro, chambre a air iscooter dx5pro, plaquettes iscooter dx5pro, chargeur iscooter dx5pro"
+   },
+   {
+    "name": "iScooter W12",
+    "slug": "iscooter-w12",
+    "source_image_urls": [
+     "https://cdn.shopify.com/s/files/1/0596/7570/5419/files/w12-off-road-e-scooter_1.jpg",
+     "https://cdn.shopify.com/s/files/1/0596/7570/5419/files/w12-off-road-electric-scooter-riding.jpg"
+    ],
+    "voltage": 52,
+    "amperage": 25,
+    "power_watts": 3000,
+    "max_speed_kmh": 25,
+    "max_speed_private_kmh": 70,
+    "range_km": 100,
+    "weight_kg": 37.8,
+    "max_load_kg": 150,
+    "wheel_inches": 11,
+    "tire_family": "pneumatic",
+    "brake_type": "disc_unknown_actuation",
+    "suspension": "Double suspension avant et arrière à bras oscillant",
+    "ip_rating": "IPX4",
+    "foldable": true,
+    "year": 2026,
+    "score_offroad": 75,
+    "tire_size": "11\" tubeless tout-terrain",
+    "description": "L'iScooter W12 est une trottinette tout-terrain bimoteur développant jusqu'à 3000 W (2 x 1500 W) et 70 km/h hors voie publique. Sa batterie 52 V 25 Ah (1300 Wh) offre jusqu'à 100 km d'autonomie, sur pneus tubeless tout-terrain de 11 pouces et double suspension à bras oscillant. Freins à disque avant et arrière, poids de 37,8 kg et charge de 150 kg. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+    "meta_title": "iScooter W12 - Pièces détachées | PiècesTrottinettes.fr",
+    "meta_description": "Pièces détachées iScooter W12 : pneus 11\", chambres à air, plaquettes, chargeur 52V. Compatibilité vérifiée, livraison rapide.",
+    "search_terms": "iscooter w12, pieces iscooter w12, pneu iscooter w12, chambre a air iscooter w12, plaquettes iscooter w12, chargeur iscooter w12"
+   }
+  ]
+ },
+ {
+  "brandName": "Isinwheel",
+  "scooters": [
+   {
+    "name": "Isinwheel GT4S",
+    "slug": "isinwheel-gt4s",
+    "source_image_urls": [
+     "https://cdn.shopify.com/s/files/1/0594/3469/6868/files/GT4-1200W-1_d4d1c727-84a8-4c98-8ccb-82eecffefb11.png",
+     "https://cdn.shopify.com/s/files/1/0594/3469/6868/files/GT4S.png",
+     "https://cdn.shopify.com/s/files/1/0594/3469/6868/files/GT4-1200W.webp"
+    ],
+    "voltage": 48,
+    "amperage": 20,
+    "power_watts": 1200,
+    "max_speed_kmh": 25,
+    "max_speed_private_kmh": 50,
+    "range_km": 80,
+    "max_load_kg": 150,
+    "wheel_inches": 12,
+    "tire_family": "pneumatic",
+    "brake_type": "disc_hydraulic",
+    "suspension": "Suspension avant et arrière à double bras oscillant",
+    "ip_rating": "IPX4",
+    "foldable": true,
+    "score_offroad": 70,
+    "tire_size": "12x2.75 tubeless tout-terrain",
+    "description": "L'isinwheel GT4S est la version monomoteur 1200 W de la GT4, avec batterie 48 V 20 Ah pour jusqu'à 80 km d'autonomie et 50 km/h hors voie publique. Elle reprend les pneus tubeless tout-terrain 12 x 2,75 pouces, la double suspension à bras oscillant et les freins à disque hydrauliques avant et arrière. Pliage en 3 secondes, indice IPX4, charge de 150 kg. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+    "meta_title": "Isinwheel GT4S - Pièces détachées | PiècesTrottinettes.fr",
+    "meta_description": "Pièces détachées Isinwheel GT4S : pneus 12x2.75, chambres à air, plaquettes, chargeur 48V. Compatibilité vérifiée, livraison rapide.",
+    "search_terms": "isinwheel gt4s, pieces isinwheel gt4s, pneu isinwheel gt4s, chambre a air isinwheel gt4s, plaquettes isinwheel gt4s, chargeur isinwheel gt4s",
+    "weight_kg": 29
+   },
+   {
+    "name": "Isinwheel H7Pro",
+    "slug": "isinwheel-h7-pro",
+    "source_image_urls": [
+     "https://cdn.shopify.com/s/files/1/0594/3469/6868/files/1_793669fc-6eb0-47bc-bd40-fc20b6caa840.jpg",
+     "https://cdn.shopify.com/s/files/1/0594/3469/6868/files/H71_2a1691b0-0f72-4c9f-b856-3184de816338.jpg",
+     "https://cdn.shopify.com/s/files/1/0594/3469/6868/files/H72_e82146cf-6db2-451a-b635-1e6c9b596791.jpg"
+    ],
+    "voltage": 48,
+    "amperage": 18.2,
+    "power_watts": 1200,
+    "max_speed_kmh": 25,
+    "max_speed_private_kmh": 60,
+    "range_km": 70,
+    "max_load_kg": 150,
+    "wheel_inches": 16,
+    "tire_family": "pneumatic",
+    "brake_type": "disc_hydraulic",
+    "suspension": "Double suspension hydraulique",
+    "ip_rating": "IPX4",
+    "score_offroad": 45,
+    "tire_size": "16x4.0 tubeless",
+    "description": "L'isinwheel H7Pro est une trottinette électrique assise à large selle, motorisée en 1200 W avec batterie 48 V 18,2 Ah pour jusqu'à 70 km d'autonomie. Ses gros pneus tubeless 16 x 4.0, sa double suspension hydraulique et ses freins à disque hydrauliques avant et arrière en font un engin confortable et sûr. Indice IPX4, charge maximale de 150 kg. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+    "meta_title": "Isinwheel H7Pro - Pièces détachées | PiècesTrottinettes.fr",
+    "meta_description": "Pièces détachées Isinwheel H7Pro : pneus 16x4.0, chambres à air, plaquettes, chargeur 48V. Compatibilité vérifiée, livraison rapide.",
+    "search_terms": "isinwheel h7pro, pieces isinwheel h7pro, pneu isinwheel h7pro, chambre a air isinwheel h7pro, plaquettes isinwheel h7pro, chargeur isinwheel h7pro",
+    "weight_kg": 47.5
+   },
+   {
+    "name": "Isinwheel D2",
+    "slug": "isinwheel-d2",
+    "source_image_urls": [
+     "https://cdn.shopify.com/s/files/1/0594/3469/6868/files/D2_ab01654c-f1ed-4777-93f4-9c22f4e060bf.jpg",
+     "https://cdn.shopify.com/s/files/1/0594/3469/6868/files/D2_GREEN_MAIN_1.png",
+     "https://cdn.shopify.com/s/files/1/0594/3469/6868/files/D2_GREEN_MAIN_5.png"
+    ],
+    "voltage": 48,
+    "amperage": 15.6,
+    "power_watts": 1000,
+    "max_speed_kmh": 25,
+    "max_speed_private_kmh": 45,
+    "range_km": 55,
+    "max_load_kg": 120,
+    "wheel_inches": 10,
+    "tire_family": "pneumatic",
+    "brake_type": "disc_unknown_actuation",
+    "suspension": "Suspension avant + arrière",
+    "ip_rating": "IPX4",
+    "foldable": true,
+    "score_offroad": 65,
+    "tire_size": "10\" tout-terrain",
+    "description": "L'isinwheel D2 est une trottinette tout-terrain de 1000 W avec batterie 48 V 15,6 Ah certifiée CE, pour environ 55 km d'autonomie. Elle roule sur pneus tout-terrain de 10 pouces avec suspensions avant et arrière et freins à disque sur les deux roues. Indice IPX4, deck de 19 cm et charge maximale de 120 kg. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+    "meta_title": "Isinwheel D2 - Pièces détachées | PiècesTrottinettes.fr",
+    "meta_description": "Pièces détachées Isinwheel D2 : pneus 10\", chambres à air, plaquettes, chargeur 48V. Compatibilité vérifiée, livraison rapide.",
+    "search_terms": "isinwheel d2, pieces isinwheel d2, pneu isinwheel d2, chambre a air isinwheel d2, plaquettes isinwheel d2, chargeur isinwheel d2",
+    "weight_kg": 26.6
+   }
+  ]
+ },
+ {
+  "brandName": "Circooter",
+  "scooters": [
+   {
+    "name": "Circooter Landturbo Pro",
+    "slug": "circooter-landturbo-pro",
+    "source_image_urls": [
+     "https://cdn.shopify.com/s/files/1/0594/3469/6868/files/8_3.png",
+     "https://cdn.shopify.com/s/files/1/0594/3469/6868/files/8.22_1000_x_1000_1.png",
+     "https://cdn.shopify.com/s/files/1/0594/3469/6868/files/1_4_9387a077-b36b-43ab-9ed8-805f97c43c89.jpg"
+    ],
+    "voltage": 48,
+    "amperage": 15.6,
+    "power_watts": 1250,
+    "max_speed_kmh": 25,
+    "range_km": 70,
+    "weight_kg": 27,
+    "max_load_kg": 150,
+    "wheel_inches": 10,
+    "tire_family": "pneumatic",
+    "brake_type": "disc_unknown_actuation",
+    "suspension": "Suspension avant et arrière à double bras oscillant",
+    "ip_rating": "IP54",
+    "foldable": true,
+    "score_offroad": 65,
+    "tire_size": "10x2.75 tout-terrain",
+    "description": "La Circooter Landturbo Pro est une trottinette tout-terrain de 1250 W en pointe, alimentée par une batterie 48 V 15,6 Ah pour jusqu'à 70 km d'autonomie. Elle chausse des pneus à air tout-terrain 10 x 2,75 pouces, une double suspension à bras oscillant et des freins à disque avant et arrière avec freins électroniques. Pliable, IP54, 27 kg pour 150 kg de charge. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+    "meta_title": "Circooter Landturbo Pro - Pièces détachées | PiècesTrottinettes.fr",
+    "meta_description": "Pièces détachées Circooter Landturbo Pro : pneus 10x2.75, chambres à air, plaquettes, chargeur 48V. Compatibilité vérifiée, livraison rapide.",
+    "search_terms": "circooter landturbo pro, pieces circooter landturbo pro, pneu circooter landturbo pro, chambre a air circooter landturbo pro, plaquettes circooter landturbo pro, chargeur circooter landturbo pro"
+   },
+   {
+    "name": "Circooter Landturbo Dual",
+    "slug": "circooter-landturbo-dual",
+    "source_image_urls": [
+     "https://cdn.shopify.com/s/files/1/0594/3469/6868/files/01_2aa5d78b-61dd-41a2-b92a-d13831163adb.jpg",
+     "https://cdn.shopify.com/s/files/1/0594/3469/6868/files/02_46f3b3de-0b80-4b33-ae86-2ad11e80f972.jpg"
+    ],
+    "voltage": 48,
+    "amperage": 20,
+    "power_watts": 2400,
+    "max_speed_kmh": 25,
+    "max_speed_private_kmh": 55,
+    "range_km": 60,
+    "max_load_kg": 150,
+    "wheel_inches": 10,
+    "tire_family": "pneumatic",
+    "brake_type": "disc_unknown_actuation",
+    "suspension": "Suspension à bras oscillants avant et arrière",
+    "ip_rating": "IPX4",
+    "foldable": true,
+    "score_offroad": 70,
+    "tire_size": "10x2.75 tout-terrain",
+    "description": "La Landturbo Dual est la version bimoteur (2 x 1200 W, 2400 W en pointe) de la Landturbo, avec batterie 20 Ah pour environ 60 km d'autonomie et 55 km/h hors voie publique. Elle roule sur pneus tout-terrain 10 x 2,75 pouces avec suspension à bras oscillants avant et arrière et freins à disque sur les deux roues. Pliable, IPX4, charge de 150 kg. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+    "meta_title": "Circooter Landturbo Dual - Pièces détachées | PiècesTrottinettes.fr",
+    "meta_description": "Pièces détachées Circooter Landturbo Dual : pneus 10x2.75, chambres à air, plaquettes, chargeur 48V. Compatibilité vérifiée, livraison rapide.",
+    "search_terms": "circooter landturbo dual, pieces circooter landturbo dual, pneu circooter landturbo dual, chambre a air circooter landturbo dual, plaquettes circooter landturbo dual, chargeur circooter landturbo dual",
+    "weight_kg": 33.4
+   }
+  ]
+ },
+ {
+  "brandName": "Navee",
+  "scooters": [
+   {
+    "name": "Navee UT3 Max",
+    "slug": "navee-ut3-max",
+    "source_image_urls": [
+     "https://cdn.shopify.com/s/files/1/0725/5028/5567/files/navee_ut3_max_01.webp?v=1786699907",
+     "https://cdn.shopify.com/s/files/1/0725/5028/5567/files/navee_ut3_max_02.webp?v=1786699907",
+     "https://cdn.shopify.com/s/files/1/0725/5028/5567/files/navee_ut3_max_03.webp?v=1786699907"
+    ],
+    "voltage": 48,
+    "amperage": 12.75,
+    "power_watts": 600,
+    "max_speed_kmh": 25,
+    "range_km": 90,
+    "weight_kg": 24,
+    "max_load_kg": 130,
+    "wheel_inches": 10,
+    "tire_size": "10 pouces tubeless",
+    "tire_family": "pneumatic",
+    "brake_type": "disc_unknown_actuation",
+    "suspension": "Suspension hydraulique avant + double suspension à ressorts arrière",
+    "ip_rating": "IPX6",
+    "foldable": true,
+    "score_offroad": 60,
+    "description": "La Navee UT3 Max est une trottinette tout-chemin de 24 kg avec moteur arrière 600 W (1638 W en pointe) et batterie 48 V 12,75 Ah pour jusqu'à 90 km d'autonomie. Ses pneus tubeless 10 pouces, sa suspension hydraulique avant et ses deux freins à disque avec EABS assurent confort et freinage sûr. Charge maximale 130 kg, étanchéité IPX6 et compatibilité Apple Localiser. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+    "meta_title": "Navee UT3 Max - Pièces détachées | PiècesTrottinettes.fr",
+    "meta_description": "Pièces détachées Navee UT3 Max : pneus 10 pouces, chambres à air, plaquettes, chargeur 48V. Compatibilité vérifiée, livraison rapide.",
+    "search_terms": "navee ut3 max, pieces navee ut3 max, pneu navee ut3 max, chambre a air navee ut3 max, plaquettes navee ut3 max, chargeur navee ut3 max"
+   },
+   {
+    "name": "Navee UT5 Max",
+    "slug": "navee-ut5-max",
+    "source_image_urls": [
+     "https://cdn.shopify.com/s/files/1/0725/5028/5567/files/9_2.webp?v=1786073729",
+     "https://cdn.shopify.com/s/files/1/0725/5028/5567/files/jimeng-2026-04-17-1088_1.webp?v=1786073729",
+     "https://cdn.shopify.com/s/files/1/0725/5028/5567/files/jimeng-2026-04-17-8746_1.webp?v=1786073729"
+    ],
+    "voltage": 48,
+    "amperage": 15.3,
+    "power_watts": 700,
+    "max_speed_kmh": 25,
+    "range_km": 100,
+    "weight_kg": 34,
+    "max_load_kg": 150,
+    "wheel_inches": 12,
+    "tire_size": "12 pouces tubeless auto-réparants",
+    "tire_family": "pneumatic",
+    "brake_type": "disc_unknown_actuation",
+    "suspension": "Double suspension hydraulique avant et arrière",
+    "ip_rating": "IPX6",
+    "foldable": true,
+    "year": 2026,
+    "score_offroad": 75,
+    "description": "La Navee UT5 Max est une trottinette tout-terrain puissante : 700 W nominal, 2400 W en pointe et batterie 48 V 716 Wh pour jusqu'à 100 km d'autonomie. Double suspension hydraulique, freins à disque avant et arrière avec EABS et grands pneus tubeless auto-réparants pour avaler tous les chemins. Elle encaisse 150 kg de charge et pèse 34 kg, avec charge rapide en 2 h. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+    "meta_title": "Navee UT5 Max - Pièces détachées | PiècesTrottinettes.fr",
+    "meta_description": "Pièces détachées Navee UT5 Max : pneus 12 pouces, chambres à air, plaquettes, chargeur 48V. Compatibilité vérifiée, livraison rapide.",
+    "search_terms": "navee ut5 max, pieces navee ut5 max, pneu navee ut5 max, chambre a air navee ut5 max, plaquettes navee ut5 max, chargeur navee ut5 max"
+   },
+   {
+    "name": "Navee NT5 Ultra X",
+    "slug": "navee-nt5-ultra-x",
+    "source_image_urls": [
+     "https://cdn.shopify.com/s/files/1/0725/5028/5567/files/NT5-ultra-12.31.1_1.webp?v=1785133246",
+     "https://cdn.shopify.com/s/files/1/0725/5028/5567/files/NT5-ultra-12.31.2_1.webp?v=1785133246",
+     "https://cdn.shopify.com/s/files/1/0725/5028/5567/files/NT5-ultra-12.31.3_1.webp?v=1785133246"
+    ],
+    "voltage": 48,
+    "amperage": 19.2,
+    "power_watts": 1000,
+    "max_speed_kmh": 25,
+    "range_km": 90,
+    "weight_kg": 36.5,
+    "max_load_kg": 150,
+    "wheel_inches": 10.5,
+    "tire_size": "10,5 pouces tubeless",
+    "tire_family": "pneumatic",
+    "brake_type": "disc_unknown_actuation",
+    "suspension": "Fourche télescopique avant + bras oscillant amorti arrière",
+    "ip_rating": "IPX6",
+    "foldable": true,
+    "year": 2026,
+    "score_offroad": 70,
+    "description": "La Navee NT5 Ultra X embarque deux moteurs 500 W (2 × 1200 W en pointe) et une batterie 48 V 898 Wh pour jusqu'à 90 km d'autonomie. Suspensions télescopiques avant, bras oscillant amorti à l'arrière et pneus tubeless 10,5 pouces lui permettent de grimper jusqu'à 45 %. Double frein à disque avec EABS, IPX6 et 150 kg de charge maximale. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+    "meta_title": "Navee NT5 Ultra X - Pièces détachées | PiècesTrottinettes.fr",
+    "meta_description": "Pièces détachées Navee NT5 Ultra X : pneus 10,5 pouces, chambres à air, plaquettes, chargeur 48V. Compatibilité vérifiée, livraison rapide.",
+    "search_terms": "navee nt5 ultra x, pieces navee nt5 ultra x, pneu navee nt5 ultra x, chambre a air navee nt5 ultra x, plaquettes navee nt5 ultra x, chargeur navee nt5 ultra x"
+   },
+   {
+    "name": "Navee NT5 Max",
+    "slug": "navee-nt5-max",
+    "source_image_urls": [
+     "https://cdn.shopify.com/s/files/1/0725/5028/5567/files/NT5_Max.webp?v=1788925801",
+     "https://cdn.shopify.com/s/files/1/0725/5028/5567/files/3_3ae18af1-6900-4030-a95e-42e2705acf3e.webp?v=1781159176",
+     "https://cdn.shopify.com/s/files/1/0725/5028/5567/files/6_141c9b68-4ae0-4177-a236-dc4af0961fbe.webp?v=1781159183"
+    ],
+    "voltage": 48,
+    "amperage": 12,
+    "power_watts": 700,
+    "max_speed_kmh": 25,
+    "range_km": 85,
+    "weight_kg": 33.5,
+    "max_load_kg": 150,
+    "wheel_inches": 10.5,
+    "tire_size": "10,5 x 80 mm tubeless",
+    "tire_family": "pneumatic",
+    "brake_type": "disc_unknown_actuation",
+    "disc_diameter": 140,
+    "suspension": "Fourche télescopique avant + bras amorti arrière",
+    "ip_rating": "IPX6",
+    "foldable": true,
+    "score_offroad": 65,
+    "description": "La Navee NT5 Max associe un moteur 700 W (1600 W en pointe) à une batterie 48 V 561,6 Wh pour jusqu'à 85 km d'autonomie. Ses pneus tubeless 10,5 pouces de 80 mm, sa fourche télescopique et son bras arrière amorti offrent un vrai confort sur route dégradée. Deux freins à disque de 140 mm avec EABS, IPX6 et 150 kg de charge. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+    "meta_title": "Navee NT5 Max - Pièces détachées | PiècesTrottinettes.fr",
+    "meta_description": "Pièces détachées Navee NT5 Max : pneus 10,5 pouces, chambres à air, plaquettes, chargeur 48V. Compatibilité vérifiée, livraison rapide.",
+    "search_terms": "navee nt5 max, pieces navee nt5 max, pneu navee nt5 max, chambre a air navee nt5 max, plaquettes navee nt5 max, chargeur navee nt5 max"
+   },
+   {
+    "name": "Navee XT5 Ultra",
+    "slug": "navee-xt5-ultra",
+    "source_image_urls": [
+     "https://cdn.shopify.com/s/files/1/0725/5028/5567/files/XT5_Ultra_0232b78c-4207-4eba-b54b-ffef8272a953.webp?v=1788925813",
+     "https://cdn.shopify.com/s/files/1/0725/5028/5567/files/11_2.webp?v=1779342502",
+     "https://cdn.shopify.com/s/files/1/0725/5028/5567/files/17_3.webp?v=1779342503"
+    ],
+    "voltage": 48,
+    "amperage": 19.2,
+    "power_watts": 1000,
+    "max_speed_kmh": 25,
+    "range_km": 90,
+    "weight_kg": 38.6,
+    "max_load_kg": 150,
+    "wheel_inches": 12,
+    "tire_size": "12 pouces tout-terrain tubeless",
+    "tire_family": "pneumatic",
+    "brake_type": "disc_unknown_actuation",
+    "suspension": "Suspension Damping Arm avant et arrière",
+    "ip_rating": "IPX6",
+    "foldable": true,
+    "score_offroad": 80,
+    "description": "La Navee XT5 Ultra est le haut de gamme tout-terrain de la marque : deux moteurs 500 W (4400 W en pointe), batterie 48 V 899 Wh et jusqu'à 90 km d'autonomie. Pneus tout-terrain tubeless 12 pouces, suspension Damping Arm à l'avant comme à l'arrière et triple freinage (deux disques + EABS) pour attaquer des pentes de 45 %. 38,6 kg, IPX6 et 150 kg de charge. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+    "meta_title": "Navee XT5 Ultra - Pièces détachées | PiècesTrottinettes.fr",
+    "meta_description": "Pièces détachées Navee XT5 Ultra : pneus 12 pouces, chambres à air, plaquettes, chargeur 48V. Compatibilité vérifiée, livraison rapide.",
+    "search_terms": "navee xt5 ultra, pieces navee xt5 ultra, pneu navee xt5 ultra, chambre a air navee xt5 ultra, plaquettes navee xt5 ultra, chargeur navee xt5 ultra"
+   },
+   {
+    "slug": "navee-st5-max",
+    "weight_kg": 25.4
+   },
+   {
+    "slug": "navee-n65i-ii",
+    "weight_kg": 23.6
+   }
+  ]
+ },
+ {
+  "brandName": "Xiaomi",
+  "scooters": [
+   {
+    "name": "Xiaomi Electric Scooter 6 Essential",
+    "slug": "xiaomi-electric-scooter-6-essential",
+    "source_image_urls": [
+     "https://i02.appmifile.com/497_operatorx_operatorx_xm/02/07/2026/46dfd93a2366c7826cc7332057725afe.png",
+     "https://i02.appmifile.com/14_operator_sg/09/07/2026/1927a2441bd6678f59a8ff23cd7e951b.png"
+    ],
+    "voltage": 24,
+    "amperage": 10,
+    "power_watts": 300,
+    "max_speed_kmh": 25,
+    "range_km": 25,
+    "max_load_kg": 100,
+    "wheel_inches": 10,
+    "tire_size": "10 pouces gonflables",
+    "tire_family": "pneumatic",
+    "brake_type": "drum_front_ebs_rear",
+    "suspension": "Aucune",
+    "ip_rating": "IPX4",
+    "foldable": true,
+    "year": 2026,
+    "score_offroad": 10,
+    "description": "La Xiaomi Electric Scooter 6 Essential est l'entrée de gamme de la série 6 : moteur 300 W (500 W en pointe), batterie 216 Wh et 25 km d'autonomie à 25 km/h maximum. Ses pneus gonflables 10 pouces absorbent pavés et dos-d'âne, et le freinage associe tambour avant et E-ABS arrière. Cadre acier, 16,3 kg, IPX4 et 100 kg de charge. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+    "meta_title": "Xiaomi Electric Scooter 6 Essential - Pièces détachées | PiècesTrottinettes.fr",
+    "meta_description": "Pièces détachées Xiaomi Electric Scooter 6 Essential : pneus 10 pouces, chambres à air, plaquettes, chargeur 24V. Compatibilité vérifiée, livraison rapide.",
+    "search_terms": "xiaomi electric scooter 6 essential, pieces xiaomi electric scooter 6 essential, pneu xiaomi electric scooter 6 essential, chambre a air xiaomi electric scooter 6 essential, plaquettes xiaomi electric scooter 6 essential, chargeur xiaomi electric scooter 6 essential",
+    "weight_kg": 16.3
+   },
+   {
+    "slug": "xiaomi-electric-scooter-6-max",
+    "weight_kg": 29.7
+   },
+   {
+    "slug": "xiaomi-electric-scooter-6-ultra",
+    "weight_kg": 33.7
+   }
+  ]
+ },
+ {
+  "brandName": "Dualtron",
+  "scooters": [
+   {
+    "name": "Dualtron Victor Luxury Plus",
+    "slug": "dualtron-victor-luxury-plus",
+    "source_image_urls": [
+     "https://dualtron-store.com/wp-content/uploads/2022/08/Victor-Luxury-Plus-4-scaled-e1661117578716-600x600.jpg",
+     "https://dualtron-store.com/wp-content/uploads/2022/08/Victor-Luxury-Plus-2-scaled-e1661117605671-600x600.jpg",
+     "https://dualtron-store.com/wp-content/uploads/2022/08/Victor_luxury_PLUS-1-600x800.jpeg"
+    ],
+    "voltage": 60,
+    "amperage": 35,
+    "power_watts": 2600,
+    "max_speed_kmh": 25,
+    "max_speed_private_kmh": 80,
+    "range_km": 80,
+    "max_load_kg": 120,
+    "wheel_inches": 10,
+    "tire_size": "10 pouces (10x2.75-6.5 tubeless ou 10x3 à chambre selon version)",
+    "tire_family": "pneumatic",
+    "brake_type": "disc_hydraulic",
+    "disc_diameter": 140,
+    "suspension": "Cartouches caoutchouc avant et arrière interchangeables",
+    "ip_rating": "IPX5",
+    "foldable": true,
+    "year": 2022,
+    "score_offroad": 30,
+    "description": "La Dualtron Victor Luxury Plus reprend le châssis de la Victor avec une batterie 60V plus généreuse (28 à 37 Ah selon millésime) et deux moteurs de 1300 W nominaux. Freins à disque hydrauliques de 140 mm, suspensions à cartouches et roues 10 pouces lui donnent un vrai comportement de sportive polyvalente. Autonomie annoncée jusqu'à 80 km réels sur la grosse batterie. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+    "meta_title": "Dualtron Victor Luxury Plus - Pièces détachées | PiècesTrottinettes.fr",
+    "meta_description": "Pièces détachées Dualtron Victor Luxury Plus : pneus 10 pouces, chambres à air, plaquettes, chargeur 60V. Compatibilité vérifiée, livraison rapide.",
+    "search_terms": "dualtron victor luxury plus, pieces dualtron victor luxury plus, pneu dualtron victor luxury plus, chambre a air dualtron victor luxury plus, plaquettes dualtron victor luxury plus, chargeur dualtron victor luxury plus",
+    "weight_kg": 37.4
+   },
+   {
+    "name": "Dualtron Togo Limited",
+    "slug": "dualtron-togo-limited",
+    "source_image_urls": [
+     "https://www.dualtronnordic.com/web/image/product.image/201/image_1024/togo_limited_side.webp?unique=4109bf8",
+     "https://www.dualtronnordic.com/web/image/product.image/203/image_1024/togo_limited_side_back.webp?unique=f31e0f7",
+     "https://www.dualtronnordic.com/web/image/product.image/202/image_1024/togo_limited_top.webp?unique=83d5ccf"
+    ],
+    "voltage": 60,
+    "amperage": 15,
+    "power_watts": 900,
+    "max_speed_kmh": 25,
+    "max_speed_private_kmh": 52,
+    "range_km": 50,
+    "weight_kg": 25,
+    "max_load_kg": 100,
+    "wheel_inches": 10,
+    "tire_size": "10x3 pneumatique à chambre à air",
+    "tire_section": "10x3.00",
+    "tire_family": "pneumatic",
+    "brake_type": "disc_unknown_actuation",
+    "disc_diameter": 140,
+    "suspension": "Avant et arrière, amortisseur arrière réglable",
+    "ip_rating": "IPX5",
+    "foldable": true,
+    "year": 2024,
+    "score_offroad": 20,
+    "description": "La Dualtron Togo Limited est la version 60V de la Togo : moteur 900 W nominal, batterie 60V 12 ou 15 Ah et jusqu'à 50 km d'autonomie. Elle passe en roues 10 pouces avec pneus 10x3 à chambre à air et adopte des freins à disque avant et arrière. Étanche IPX5 et suspendue à l'avant comme à l'arrière, c'est une urbaine compacte d'environ 25 kg. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+    "meta_title": "Dualtron Togo Limited - Pièces détachées | PiècesTrottinettes.fr",
+    "meta_description": "Pièces détachées Dualtron Togo Limited : pneus 10x3, chambres à air, plaquettes, chargeur 60V. Compatibilité vérifiée, livraison rapide.",
+    "search_terms": "dualtron togo limited, pieces dualtron togo limited, pneu dualtron togo limited, chambre a air dualtron togo limited, plaquettes dualtron togo limited, chargeur dualtron togo limited, togo ltd"
+   },
+   {
+    "name": "Dualtron Spider Max",
+    "slug": "dualtron-spider-max",
+    "source_image_urls": [
+     "https://www.dualtronnordic.com/web/image/product.image/185/image_1024/Spider%20max%20Side.webp?unique=e419429",
+     "https://www.dualtronnordic.com/web/image/product.image/184/image_1024/Spider%20max%20side%20rreear.webp?unique=7958e3b",
+     "https://www.dualtronnordic.com/web/image/product.image/187/image_1024/Spider%20max%20top.webp?unique=44bf234"
+    ],
+    "voltage": 60,
+    "amperage": 30,
+    "power_watts": 2400,
+    "max_speed_kmh": 25,
+    "max_speed_private_kmh": 80,
+    "range_km": 100,
+    "weight_kg": 31.5,
+    "max_load_kg": 120,
+    "wheel_inches": 10,
+    "tire_size": "10x2.5 pneumatique à chambre à air",
+    "tire_section": "10x2.50",
+    "tire_family": "pneumatic",
+    "brake_type": "disc_hydraulic",
+    "disc_diameter": 140,
+    "suspension": "Caoutchouc avant et arrière réglable, cartouches arrière interchangeables",
+    "ip_rating": "IPX5",
+    "foldable": true,
+    "year": 2024,
+    "score_offroad": 30,
+    "description": "Remplaçante de la Spider 2, la Dualtron Spider Max associe deux moteurs de 1200 W nominaux (4000 W en pointe) à une batterie 60V 24 ou 30 Ah pour jusqu'à 100 km d'autonomie. Freins hydrauliques NUTT avec disques de 140 mm, pneus 10x2.5 et suspensions à cartouches réglables : une sportive légère d'environ 31,5 kg, étanche IPX5. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+    "meta_title": "Dualtron Spider Max - Pièces détachées | PiècesTrottinettes.fr",
+    "meta_description": "Pièces détachées Dualtron Spider Max : pneus 10x2.5, chambres à air, plaquettes, chargeur 60V. Compatibilité vérifiée, livraison rapide.",
+    "search_terms": "dualtron spider max, pieces dualtron spider max, pneu dualtron spider max, chambre a air dualtron spider max, plaquettes dualtron spider max, chargeur dualtron spider max"
+   },
+   {
+    "name": "Dualtron Alien",
+    "slug": "dualtron-alien",
+    "source_image_urls": [
+     "https://dualtron-store.com/wp-content/uploads/2025/09/dualtron-alien-blanche-600x600.jpeg",
+     "https://dualtron-store.com/wp-content/uploads/2025/09/dualtron-alien-blanche-2-600x600.jpeg",
+     "https://dualtron-store.com/wp-content/uploads/2025/09/dualtron-alien-blanche-3-600x600.jpeg",
+     "https://dualtron-store.com/wp-content/uploads/2025/09/dualtron-alien-blanche-4-600x600.jpeg"
+    ],
+    "voltage": 72,
+    "amperage": 40,
+    "power_watts": 5000,
+    "max_speed_kmh": 25,
+    "max_speed_private_kmh": 100,
+    "range_km": 125,
+    "max_load_kg": 120,
+    "wheel_inches": 11,
+    "tire_size": "11x4 tubeless",
+    "tire_family": "pneumatic",
+    "brake_type": "disc_hydraulic",
+    "disc_diameter": 160,
+    "caliper_family": "nutt_4p",
+    "suspension": "Cartouches à ressort réglables avant et arrière",
+    "ip_rating": "IPX5",
+    "foldable": true,
+    "year": 2025,
+    "score_offroad": 50,
+    "description": "La Dualtron Alien (Sonic Model A) est la nouvelle hyper-trottinette de Minimotors, appelée à succéder à la Thunder. Deux moteurs de 2500 W nominaux, batterie 72V 40Ah et jusqu'à 125 km d'autonomie annoncée. Freins hydrauliques NUTT 4 pistons sur disques de 160 mm, freinage combiné, pneus 11 pouces tubeless et suspensions réglables. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+    "meta_title": "Dualtron Alien - Pièces détachées | PiècesTrottinettes.fr",
+    "meta_description": "Pièces détachées Dualtron Alien : pneus 11 pouces, chambres à air, plaquettes, chargeur 72V. Compatibilité vérifiée, livraison rapide.",
+    "search_terms": "dualtron alien, pieces dualtron alien, pneu dualtron alien, chambre a air dualtron alien, plaquettes dualtron alien, chargeur dualtron alien, dualtron sonic model a",
+    "weight_kg": 53.5
+   },
+   {
+    "slug": "dualtron-achilleus-2025",
+    "weight_kg": 41.7
+   },
+   {
+    "slug": "dualtron-eagle-pro",
+    "weight_kg": 30
+   },
+   {
+    "slug": "dualtron-spider-2",
+    "weight_kg": 26.2
+   },
+   {
+    "slug": "dualtron-x-limited",
+    "weight_kg": 82.9
+   }
+  ]
+ },
+ {
+  "brandName": "Halo Knight",
+  "scooters": [
+   {
+    "name": "Halo Knight T102",
+    "slug": "halo-knight-t102",
+    "source_image_urls": [
+     "https://cdn.shopify.com/s/files/1/0556/2911/9562/files/04.png?v=1766721258",
+     "https://cdn.shopify.com/s/files/1/0556/2911/9562/files/00.png?v=1766721258",
+     "https://cdn.shopify.com/s/files/1/0556/2911/9562/files/02.png?v=1766721258"
+    ],
+    "voltage": 52,
+    "amperage": 21,
+    "power_watts": 1200,
+    "max_speed_kmh": 25,
+    "max_speed_private_kmh": 50,
+    "range_km": 45,
+    "weight_kg": 31.5,
+    "max_load_kg": 120,
+    "wheel_inches": 10,
+    "tire_size": "80/65-6 (10 pouces pneumatique route)",
+    "tire_section": "80/65",
+    "rim_diameter": "6",
+    "tire_family": "pneumatic",
+    "brake_type": "disc_mechanical",
+    "suspension": "Double suspension avant et arrière",
+    "ip_rating": "IP54",
+    "foldable": true,
+    "year": 2025,
+    "score_offroad": 40,
+    "description": "La Halo Knight T102 est une trottinette 52V 21Ah à moteur 1200W, pensée pour la ville comme pour les chemins. Ses pneus 10 pouces 80/65-6 à chambre à air, sa double suspension et ses deux freins à disque mécaniques offrent confort et sécurité, avec jusqu'à 45 km d'autonomie et un pliage en 3 secondes. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+    "meta_title": "Halo Knight T102 - Pièces détachées | PiècesTrottinettes.fr",
+    "meta_description": "Pièces détachées Halo Knight T102 : pneus 80/65-6, chambres à air, plaquettes, chargeur 52V. Compatibilité vérifiée, livraison rapide.",
+    "search_terms": "halo knight t102, pieces halo knight t102, pneu halo knight t102, chambre a air halo knight t102, plaquettes halo knight t102, chargeur halo knight t102"
+   }
+  ]
+ },
+ {
+  "brandName": "Ootd",
+  "scooters": [
+   {
+    "name": "Ootd T08",
+    "slug": "ootd-t08",
+    "source_image_urls": [
+     "https://cdn.shopify.com/s/files/1/0637/6724/9091/files/T08-SIDE-BYW26-10-23.jpg?v=1792828824",
+     "https://cdn.shopify.com/s/files/1/0637/6724/9091/files/T08-FRONT-BYW26-10-23.jpg?v=1792828824",
+     "https://cdn.shopify.com/s/files/1/0637/6724/9091/files/T08-BACK-BYW26-10-23.jpg?v=1792828824"
+    ],
+    "voltage": 48,
+    "power_watts": 500,
+    "max_speed_kmh": 25,
+    "max_speed_private_kmh": 46,
+    "range_km": 30,
+    "weight_kg": 25.16,
+    "max_load_kg": 120,
+    "wheel_inches": 10,
+    "tire_size": "10 pouces tubeless",
+    "tire_family": "pneumatic",
+    "brake_type": "disc_mechanical",
+    "suspension": "Suspension avant et arrière à ressorts",
+    "foldable": true,
+    "year": 2026,
+    "score_offroad": 20,
+    "description": "L'Ootd T08 est l'entrée de gamme urbaine d'Ootd : moteur 500W (800W en crête), batterie 48V et environ 30 km d'autonomie pour 25,16 kg. Pneus tubeless 10 pouces, suspensions avant et arrière à ressorts et freins à disque mécaniques de 140 mm assurent un trajet quotidien confortable. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+    "meta_title": "Ootd T08 - Pièces détachées | PiècesTrottinettes.fr",
+    "meta_description": "Pièces détachées Ootd T08 : pneus 10 pouces tubeless, chambres à air, plaquettes, chargeur 48V. Compatibilité vérifiée, livraison rapide.",
+    "search_terms": "ootd t08, pieces ootd t08, pneu ootd t08, chambre a air ootd t08, plaquettes ootd t08, chargeur ootd t08"
+   }
+  ]
+ },
+ {
+  "brandName": "Kukirin",
+  "scooters": [
+   {
+    "name": "Kukirin T4",
+    "slug": "kukirin-t4",
+    "source_image_urls": [
+     "https://cdn.shopify.com/s/files/1/0721/5743/0039/files/kukirin-t4-scooter_4.webp?v=1791786220",
+     "https://cdn.shopify.com/s/files/1/0721/5743/0039/files/kukirin-t4-scooter_7.webp?v=1791786251",
+     "https://cdn.shopify.com/s/files/1/0721/5743/0039/files/kukirin-t4-scooter_5.webp?v=1791786278",
+     "https://cdn.shopify.com/s/files/1/0721/5743/0039/files/kukirin-t4-scooter_1.webp?v=1791786299"
+    ],
+    "voltage": 52,
+    "amperage": 22.5,
+    "power_watts": 1500,
+    "max_speed_kmh": 25,
+    "max_speed_private_kmh": 65,
+    "range_km": 80,
+    "weight_kg": 31,
+    "max_load_kg": 120,
+    "wheel_inches": 11,
+    "tire_size": "11 pouces tubeless",
+    "tire_family": "pneumatic",
+    "brake_type": "disc_hydraulic",
+    "suspension": "Amortisseurs hydrauliques avant et arrière",
+    "ip_rating": "IPX4",
+    "foldable": true,
+    "year": 2026,
+    "score_offroad": 50,
+    "description": "La Kukirin T4, nouveauté 2026, associe un moteur 1500W (1800W en crête) à une batterie 52V 22,5Ah pour jusqu'à 80 km d'autonomie. Pneus tubeless 11 pouces, suspensions hydrauliques avant et arrière et freins à disque hydrauliques avec coupure moteur, pour 31 kg seulement. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+    "meta_title": "Kukirin T4 - Pièces détachées | PiècesTrottinettes.fr",
+    "meta_description": "Pièces détachées Kukirin T4 : pneus 11 pouces tubeless, chambres à air, plaquettes, chargeur 52V. Compatibilité vérifiée, livraison rapide.",
+    "search_terms": "kukirin t4, pieces kukirin t4, pneu kukirin t4, chambre a air kukirin t4, plaquettes kukirin t4, chargeur kukirin t4"
+   }
+  ]
+ },
+ {
+  "brandName": "Ninebot",
+  "scooters": [
+   {
+    "slug": "ninebot-f2-plus",
+    "weight_kg": 17.5,
+    "power_watts": 400,
+    "range_km": 55,
+    "voltage": 36,
+    "max_speed_kmh": 25,
+    "score_offroad": 15
+   },
+   {
+    "slug": "ninebot-f3-e",
+    "weight_kg": 18.6
+   },
+   {
+    "slug": "ninebot-e2-plus",
+    "power_watts": 300,
+    "range_km": 25,
+    "voltage": 36,
+    "max_speed_kmh": 25,
+    "score_offroad": 10
+   },
+   {
+    "slug": "ninebot-e25e",
+    "power_watts": 300,
+    "range_km": 25,
+    "voltage": 36,
+    "max_speed_kmh": 25,
+    "score_offroad": 10
+   },
+   {
+    "slug": "ninebot-f65",
+    "power_watts": 400,
+    "range_km": 65,
+    "voltage": 36,
+    "max_speed_kmh": 25,
+    "score_offroad": 15
+   }
+  ]
+ },
+ {
+  "brandName": "Kaabo",
+  "scooters": [
+   {
+    "slug": "kaabo-mantis-king-gt",
+    "weight_kg": 33.1,
+    "power_watts": 2200,
+    "range_km": 90,
+    "voltage": 60,
+    "max_speed_kmh": 25,
+    "score_offroad": 60
+   },
+   {
+    "slug": "kaabo-mantis-x-plus",
+    "weight_kg": 29
+   },
+   {
+    "slug": "kaabo-skywalker-10h",
+    "weight_kg": 21.4
+   },
+   {
+    "slug": "kaabo-mantis-8",
+    "weight_kg": 25,
+    "power_watts": 1000,
+    "range_km": 40,
+    "voltage": 48,
+    "max_speed_kmh": 25,
+    "score_offroad": 40
+   }
+  ]
+ },
+ {
+  "brandName": "Beaster",
+  "scooters": [
+   {
+    "slug": "beaster-bs15",
+    "weight_kg": 25
+   },
+   {
+    "slug": "beaster-bs65",
+    "weight_kg": 35
+   }
+  ]
+ },
+ {
+  "brandName": "Joyor",
+  "scooters": [
+   {
+    "slug": "joyor-s8-s",
+    "weight_kg": 27.7
+   }
+  ]
+ },
+ {
+  "brandName": "Velity",
+  "scooters": [
+   {
+    "slug": "velity-511-r",
+    "weight_kg": 58
+   }
+  ]
+ },
+ {
+  "brandName": "Urbanglide",
+  "scooters": [
+   {
+    "slug": "urbanglide-ride-100-pro-2",
+    "weight_kg": 16
+   }
+  ]
+ }
+]
