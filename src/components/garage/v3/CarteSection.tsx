@@ -40,7 +40,8 @@ const CarteSection = ({ onTheme, onEditProfile }: { onTheme: () => void; onEditP
   const btn = "flex-1 min-w-0 flex items-center justify-center gap-2 min-h-[48px] px-3 text-[15px] font-extrabold whitespace-nowrap";
 
   return (
-    <div className="flex flex-col items-center lg:items-end">
+    // Ordinateur : l'écran garde la hauteur de la fenêtre, sinon le pied de page remonte sur l'estrade (carte compacte).
+    <div className="flex flex-col items-center lg:items-end lg:min-h-[calc(100vh-150px)]">
       {desktop && <StandTrott src={stand?.model?.image_url ?? stand?.custom_photo_url} alt={stand?.model?.name ?? ""} />}
       <p className="mb-3 w-full max-w-[360px] text-sm font-bold uppercase tracking-[0.14em]" style={{ fontFamily: FONT, color: SOFT, textShadow: "0 1px 8px rgba(0,0,0,0.6)" }}>Ma carte Rider</p>
 
