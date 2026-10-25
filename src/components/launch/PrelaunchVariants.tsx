@@ -1,8 +1,7 @@
 /**
- * 25/10/2026 — 5 propositions de pop-up d'avant-lancement (Nolan : « il rentre mal, ce n'est pas joli… je voulais un
- * effet wow, et qu'on comprenne que le shop ouvre bientôt »). Aperçu : `?popup=1..5` (gardé pour l'onglet),
- * `?popup=0` = la version actuelle. Chaque variante gère son entrée elle-même (plus l'animation par défaut du Dialog,
- * qui glissait du haut à gauche). SKOT parle dans toutes ; « Visiter le site » est toujours un vrai bouton.
+ * Pop-up d'avant-lancement « Rideau » (choix de Nolan du 25/10/2026 parmi 5 propositions ; les 4 autres et l'ancienne
+ * fenêtre ont été retirées après validation sur téléphone). Le rideau métallique descend sur la devanture, SKOT arrive
+ * en roulant et parle ; « Visiter le site » est un vrai bouton. `?popup` dans l'adresse l'ouvre tout de suite (test).
  */
 import { useState, type ReactNode } from 'react';
 import * as DialogPrimitive from '@radix-ui/react-dialog';
@@ -18,7 +17,7 @@ const SOFT = '#8FBF9C';
 const cut = (px: number) => `polygon(0 0, calc(100% - ${px}px) 0, 100% ${px}px, 100% 100%, 0 100%)`;
 
 export type PopupReason = 'accueil' | 'panier';
-type Props = { variant: number; reason: PopupReason; loggedIn: boolean; onVisit: () => void; onGarage: () => void };
+type Props = { reason: PopupReason; loggedIn: boolean; onVisit: () => void; onGarage: () => void };
 
 const CSS = `
 @keyframes pv-fade{from{opacity:0}to{opacity:1}}
@@ -51,7 +50,7 @@ const Bubble = ({ titre, children, delay = 0, dark = false }: { titre: string; c
   </div>
 );
 
-const Buttons = ({ reason, loggedIn, onVisit, onGarage, dark = false, delay = 0 }: Omit<Props, 'variant'> & { dark?: boolean; delay?: number }) => {
+const Buttons = ({ reason, loggedIn, onVisit, onGarage, dark = false, delay = 0 }: Props & { dark?: boolean; delay?: number }) => {
   const primary = reason === 'panier' ? { label: loggedIn ? 'Mon garage' : 'Créer mon garage', on: onGarage } : { label: 'Visiter le site', on: onVisit };
   const second = reason === 'panier' ? { label: 'Continuer', on: onVisit } : { label: loggedIn ? 'Mon garage' : 'Créer mon garage', on: onGarage };
   return (
@@ -96,7 +95,7 @@ const Title = ({ className = '', dark = false, size = 'text-[30px]' }: { classNa
 
 /* 1 · RIDEAU — la devanture de la boutique : le rideau métallique descend et rebondit, « LE SHOP OUVRE BIENTÔT » peint
    dessus ; SKOT arrive en roulant sur le trottoir devant et parle. La métaphore la plus claire : fermé, mais plus pour longtemps. */
-const Rideau = (p: Omit<Props, 'variant'>) => {
+const Rideau = (p: Props) => {
   const img = useSkotImg();
   const ph = phrase(p.reason, p.loggedIn);
   const slats = 'repeating-linear-gradient(180deg,#DAD7D0 0 12px,#B7B3AA 12px 14px,#EEECE6 14px 16px)';
@@ -128,139 +127,21 @@ const Rideau = (p: Omit<Props, 'variant'>) => {
   );
 };
 
-/* 2 · NÉON — l'enseigne de la boutique s'allume en grésillant sur un mur sombre ; SKOT dessous, sa bulle. */
-const Neon = (p: Omit<Props, 'variant'>) => {
-  const img = useSkotImg();
-  const ph = phrase(p.reason, p.loggedIn);
-  return (
-    <div className="pv-a relative w-[calc(100vw-24px)] max-w-[420px] overflow-hidden" style={{ clipPath: cut(18), animation: 'pv-pop .5s cubic-bezier(.2,.9,.3,1.15) both', background: 'radial-gradient(90% 60% at 50% 20%, #2F3A33 0%, #151515 70%)' }}>
-      <Close dark />
-      <div className="px-5 pt-9 pb-2 text-center">
-        <p className="pv-a text-[44px] leading-[0.9] uppercase" style={{ fontFamily: UNB, fontWeight: 900, fontStyle: 'italic', color: '#FFFFFF', animation: 'pv-flicker 1.1s linear .3s both, pv-glow 2.6s ease-in-out 1.5s infinite' }}>Le shop</p>
-        <DialogPrimitive.Title asChild>
-          <p className="pv-a mt-1 text-[34px] leading-[0.95] uppercase" style={{ fontFamily: UNB, fontWeight: 900, fontStyle: 'italic', color: SOFT, animation: 'pv-flicker 1.2s linear .7s both, pv-glow 2.6s ease-in-out 1.9s infinite' }}>ouvre bientôt</p>
-        </DialogPrimitive.Title>
-      </div>
-      <div className="relative flex items-end gap-1 px-3 pt-2">
-        <img src={img} alt="SKOT, la mascotte de l'atelier" className="pv-a w-[132px] h-[132px] shrink-0" style={{ animation: 'pv-roll .8s cubic-bezier(.2,.9,.3,1) 1.2s both, pv-ride 3s ease-in-out 2.1s infinite' }} />
-        <div className="flex-1 min-w-0 mb-8"><Bubble titre={ph.t} delay={1.8} dark>{ph.d}</Bubble></div>
-      </div>
-      <div className="px-5 pt-2 pb-5 grid gap-3">
-        <Buttons {...p} dark delay={2} />
-        <Offer loggedIn={p.loggedIn} dark delay={2.1} />
-      </div>
-    </div>
-  );
-};
+export const PrelaunchStage = (p: Props) => (
+  <DialogPrimitive.Portal>
+    <style>{CSS}</style>
+    <DialogPrimitive.Overlay className="fixed inset-0 z-50" style={{ background: 'rgba(0,0,0,.72)', animation: 'pv-fade .3s ease both' }} />
+    <DialogPrimitive.Content
+      aria-describedby={undefined}
+      className="fixed inset-0 z-50 flex items-center justify-center p-3 outline-none overflow-y-auto"
+    >
+      <Rideau {...p} />
+    </DialogPrimitive.Content>
+  </DialogPrimitive.Portal>
+);
 
-/* 3 · TICKET — SKOT tend son ticket d'ouverture (le code RIDER) : on comprend « bientôt » ET « ce que j'y gagne ». */
-const Ticket = (p: Omit<Props, 'variant'>) => {
-  const img = useSkotImg();
-  const ph = phrase(p.reason, p.loggedIn);
-  return (
-    <div className="pv-a relative w-[calc(100vw-24px)] max-w-[420px] overflow-hidden bg-[#E9E4DA]" style={{ clipPath: cut(18), animation: 'pv-rise .5s cubic-bezier(.2,.9,.3,1.1) both' }}>
-      <Close />
-      <div className="px-5 pt-7"><Title size="text-[30px]" /></div>
-      <div className="relative h-[262px] mt-2">
-        <img src={img} alt="SKOT, la mascotte de l'atelier" className="pv-a absolute left-1 bottom-0 w-[150px] h-[150px]" style={{ animation: 'pv-roll .8s cubic-bezier(.2,.9,.3,1) .4s both, pv-ride 3s ease-in-out 1.3s infinite' }} />
-        <div className="pv-a absolute right-4 top-1 w-[186px]" style={{ animation: 'pv-ticket .6s cubic-bezier(.2,.9,.3,1.2) 1s both' }}>
-          <div className="relative px-4 py-3 text-white" style={{ background: CARBON, mask: 'radial-gradient(circle 9px at 0 50%, transparent 98%, #000) left/51% 100% no-repeat, radial-gradient(circle 9px at 100% 50%, transparent 98%, #000) right/51% 100% no-repeat', WebkitMask: 'radial-gradient(circle 9px at 0 50%, transparent 98%, #000) left/51% 100% no-repeat, radial-gradient(circle 9px at 100% 50%, transparent 98%, #000) right/51% 100% no-repeat' }}>
-            <p className="text-[14px] font-bold uppercase tracking-[0.14em]" style={{ fontFamily: FONT, color: SOFT }}>Ticket d'ouverture</p>
-            <p className="mt-1 text-[28px] leading-none" style={{ fontFamily: UNB, fontWeight: 900, fontStyle: 'italic' }}>-{RIDER_LAUNCH_OFFER.percent} %</p>
-            <p className="mt-2 pt-2 text-[14px] font-bold tracking-widest" style={{ fontFamily: FONT, borderTop: '2px dashed rgba(255,255,255,.3)' }}>RIDER-••••••</p>
-          </div>
-        </div>
-        <div className="absolute left-[150px] right-3 bottom-2"><Bubble titre={ph.t} delay={1.6}>{p.reason === 'panier' ? ph.d : 'Ton ticket t’attend dans ton garage.'}</Bubble></div>
-      </div>
-      <div className="px-5 pt-4 pb-5 grid gap-3 bg-[#FAFAF8]">
-        <Buttons {...p} delay={1.9} />
-        <Offer loggedIn={p.loggedIn} delay={2} />
-      </div>
-    </div>
-  );
-};
-
-/* 4 · PLEIN ÉCRAN — l'écran entier passe au noir, les mots tombent un par un, SKOT traverse en roulant. Cinéma. */
-const PleinEcran = (p: Omit<Props, 'variant'>) => {
-  const img = useSkotImg();
-  const ph = phrase(p.reason, p.loggedIn);
-  const w = (txt: string, d: number, color = '#FFFFFF') => (
-    <span className="pv-a block" style={{ animation: `pv-word .55s cubic-bezier(.2,.9,.3,1) ${d}s both`, color }}>{txt}</span>
-  );
-  return (
-    <div className="pv-a fixed inset-0 overflow-y-auto" style={{ background: CARBON, animation: 'pv-fade .35s ease both' }}>
-      <Close dark />
-      <div className="min-h-full max-w-[560px] mx-auto px-6 pt-16 pb-8 flex flex-col">
-        <DialogPrimitive.Title asChild>
-          <h2 className="uppercase leading-[0.9] text-[56px] sm:text-[76px]" style={{ fontFamily: UNB, fontWeight: 900, fontStyle: 'italic', letterSpacing: '-0.04em' }}>
-            {w('Le shop', 0.2)}{w('ouvre', 0.45)}{w('bientôt.', 0.7, SOFT)}
-          </h2>
-        </DialogPrimitive.Title>
-        <div className="relative mt-6 flex items-end gap-2">
-          <img src={img} alt="SKOT, la mascotte de l'atelier" className="pv-a w-[150px] h-[150px] shrink-0" style={{ animation: 'pv-across 1s cubic-bezier(.2,.9,.3,1) 1s both, pv-ride 3s ease-in-out 2s infinite' }} />
-          <div className="flex-1 min-w-0 mb-10"><Bubble titre={ph.t} delay={1.8} dark>{ph.d}</Bubble></div>
-        </div>
-        <div className="mt-auto pt-6 grid gap-3">
-          <Buttons {...p} dark delay={2} />
-          <Offer loggedIn={p.loggedIn} dark delay={2.1} />
-        </div>
-      </div>
-    </div>
-  );
-};
-
-/* 5 · REPASSÉ — la fenêtre actuelle, gardée, mais avec le message en gros en tête et une entrée propre (elle monte du bas,
-   SKOT arrive en roulant, sa bulle s'ouvre). La lecture la plus littérale : même chose, mais qu'on comprenne et que ce soit joli. */
-const Repasse = (p: Omit<Props, 'variant'>) => {
-  const img = useSkotImg();
-  const ph = phrase(p.reason, p.loggedIn);
-  return (
-    <div className="pv-a relative w-[calc(100vw-24px)] max-w-[420px] overflow-hidden bg-[#FAFAF8]" style={{ clipPath: cut(18), animation: 'pv-rise .5s cubic-bezier(.2,.9,.3,1.1) both' }}>
-      <Close dark />
-      <div className="px-5 pt-7 pb-5" style={{ background: CARBON }}><Title dark size="text-[30px]" /></div>
-      <div className="flex items-end gap-1 px-3 pt-3" style={{ background: '#E9E4DA' }}>
-        <img src={img} alt="SKOT, la mascotte de l'atelier" className="pv-a w-[132px] h-[132px] shrink-0" style={{ animation: 'pv-roll .75s cubic-bezier(.2,.9,.3,1) .35s both, pv-ride 3s ease-in-out 1.2s infinite' }} />
-        <div className="flex-1 min-w-0 mb-8"><Bubble titre={ph.t} delay={1}>{ph.d}</Bubble></div>
-      </div>
-      <div className="px-5 pt-4 pb-5 grid gap-3">
-        <Buttons {...p} delay={1.2} />
-        <Offer loggedIn={p.loggedIn} delay={1.3} />
-      </div>
-    </div>
-  );
-};
-
-export const PrelaunchStage = ({ variant, ...p }: Props) => {
-  const full = variant === 4;
-  return (
-    <DialogPrimitive.Portal>
-      <style>{CSS}</style>
-      <DialogPrimitive.Overlay className="fixed inset-0 z-50" style={{ background: 'rgba(0,0,0,.72)', animation: 'pv-fade .3s ease both' }} />
-      <DialogPrimitive.Content
-        aria-describedby={undefined}
-        className={full ? 'fixed inset-0 z-50 outline-none' : 'fixed inset-0 z-50 flex items-center justify-center p-3 outline-none overflow-y-auto'}
-        onPointerDownOutside={(e) => { if (full) e.preventDefault(); }}
-      >
-        {variant === 1 && <Rideau {...p} />}
-        {variant === 2 && <Neon {...p} />}
-        {variant === 3 && <Ticket {...p} />}
-        {variant === 4 && <PleinEcran {...p} />}
-        {variant === 5 && <Repasse {...p} />}
-      </DialogPrimitive.Content>
-    </DialogPrimitive.Portal>
-  );
-};
-
-/** Variante choisie par l'adresse : `?popup=N` (gardé pour l'onglet). Défaut = 1 (Rideau, choix de Nolan du 25/10) ; 0 = ancienne fenêtre. */
-export function readPopupVariant(): { v: number; forced: boolean } {
-  if (typeof window === 'undefined') return { v: 1, forced: false };
-  try {
-    const q = new URLSearchParams(window.location.search).get('popup');
-    if (q !== null && /^[0-5]$/.test(q)) { window.sessionStorage.setItem('pt-popup', q); return { v: Number(q), forced: true }; }
-    const s = window.sessionStorage.getItem('pt-popup');
-    // Choix de Nolan du 25/10 : « Rideau » par défaut ; `?popup=0` = ancienne fenêtre.
-    return { v: s && /^[0-5]$/.test(s) ? Number(s) : 1, forced: false };
-  } catch {
-    return { v: 1, forced: false };
-  }
+/** `?popup` (n'importe quelle valeur) ouvre la fenêtre tout de suite, même déjà vue : sert aux tests. */
+export function readPopupForced(): boolean {
+  if (typeof window === 'undefined') return false;
+  try { return new URLSearchParams(window.location.search).has('popup'); } catch { return false; }
 }

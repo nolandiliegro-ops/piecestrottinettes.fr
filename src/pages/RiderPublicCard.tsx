@@ -16,7 +16,6 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import GarageBackground from "@/components/garage/GarageBackground";
 import RiderAvatar from "@/components/garage/RiderAvatar";
-import RiderCard from "@/components/garage/RiderCard";
 import RiderCardStory from "@/components/garage/story/RiderCardStory";
 import RiderCardComments from "@/components/garage/story/RiderCardComments";
 import { useCardComments } from "@/hooks/useRiderCardComments";
@@ -37,7 +36,6 @@ const RiderPublicCard = () => {
   const { user } = useAuthContext();
   const { data, isLoading } = useRiderCardData({ username });
   const { data: comments = [] } = useCardComments(data?.profile.id);
-  const legacyCard = typeof window !== "undefined" && new URLSearchParams(window.location.search).get("carte") === "0";
   const like = useToggleCardLike();
   const [i, setI] = useState(0);
 
@@ -116,9 +114,6 @@ const RiderPublicCard = () => {
               </h1>
             </header>
 
-            {legacyCard ? (
-              <Panel><H2>Sa carte rider</H2><div className="mt-3 flex justify-center"><RiderCard mode="public" data={data} /></div></Panel>
-            ) : (
               <div className="grid gap-6 lg:grid-cols-[360px_minmax(0,1fr)] lg:gap-8 items-start">
                 <div className="grid gap-4 justify-items-center lg:justify-items-stretch lg:sticky lg:top-24">
                   <RiderCardStory data={data} commentCount={comments.length} onOpenComments={() => document.getElementById("carte-commentaires")?.scrollIntoView({ behavior: "smooth", block: "start" })} />
@@ -164,7 +159,6 @@ const RiderPublicCard = () => {
                   )}
                 </div>
               </div>
-            )}
           </div>
         )}
       </main>

@@ -6,7 +6,7 @@
  *   /garage/commandes  Commandes (frise, articles, suivi, racheter, question → SKOT)
  *   /garage/skot       SKOT, la discussion du garage
  *   /garage/reglages   Profil, garage public, wallpaper, code RIDER, ambassadeur, mails
- * L'ancien garage reste joignable par ?g=0.
+ * L'ancien garage (?g=0) a été retiré le 25/10 après la recette.
  */
 import type { ReactNode } from "react";
 import { Link } from "react-router-dom";

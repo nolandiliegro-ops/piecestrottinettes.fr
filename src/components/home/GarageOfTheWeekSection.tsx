@@ -337,10 +337,8 @@ const GarageOfTheWeekSection = () => {
   // 19/10 : nouveau bloc aligné sur le garage refait = défaut ; ?garage=0 = ancien bloc ; 1..5 = propositions du 18/10.
   let garageParam: string | null = null;
   try { garageParam = new URLSearchParams(window.location.search).get("garage"); } catch { /* SSR */ }
-  // 25/10 : carte Rider Story « de la semaine » par défaut ; ?carte=0 = bloc Vitrine précédent.
-  let carteParam: string | null = null;
-  try { carteParam = new URLSearchParams(window.location.search).get("carte"); } catch { /* SSR */ }
-  if (garageParam === null && carteParam !== "0" && ridersBundle.some((r) => r.username)) {
+  // 25/10 : carte Rider Story « de la semaine » (l'ancien bloc ?carte=0 est retiré ; la Vitrine reste le repli sans rider public).
+  if (garageParam === null && ridersBundle.some((r) => r.username)) {
     return <HomeRiderCard riders={ridersBundle.filter((r) => r.username)} isAuthenticated={!!user} />;
   }
   if (garageParam === null) {

@@ -1,7 +1,7 @@
 /**
  * Accueil (25/10/2026, choix de Nolan) : la carte Rider Story « de la semaine » remplace le bloc vert
  * « Créer ma carte Rider ». Le wallpaper du rider en fond, le texte à gauche, la carte à droite ; un bouton blanc.
- * Pas de défilement automatique : on ne change pas la carte pendant qu'on la regarde. Ancien bloc : ?carte=0.
+ * Pas de défilement automatique : on ne change pas la carte pendant qu'on la regarde.
  */
 import { useState } from "react";
 import { Link } from "react-router-dom";
