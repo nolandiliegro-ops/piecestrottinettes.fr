@@ -16,11 +16,6 @@
    "photos": 2
   },
   {
-   "slug": "dualtron-spider-2",
-   "principale_actuelle": "3/4 avant",
-   "photos": 1
-  },
-  {
    "slug": "dyu-d3f",
    "principale_actuelle": "profil",
    "photos": 3
@@ -31,11 +26,6 @@
    "photos": 3
   },
   {
-   "slug": "inmotion-climber",
-   "principale_actuelle": "3/4 avant",
-   "photos": 4
-  },
-  {
    "slug": "inmotion-rs",
    "principale_actuelle": "3/4 arriere",
    "photos": 2
@@ -43,11 +33,6 @@
   {
    "slug": "inokim-light-2-super",
    "principale_actuelle": "profil",
-   "photos": 3
-  },
-  {
-   "slug": "iscooter-ix3",
-   "principale_actuelle": "3/4 avant",
    "photos": 3
   },
   {
@@ -61,17 +46,7 @@
    "photos": 5
   },
   {
-   "slug": "kaabo-mantis-x-plus",
-   "principale_actuelle": "profil",
-   "photos": 1
-  },
-  {
    "slug": "kaabo-wolf-king-gt-pro-plus",
-   "principale_actuelle": "profil",
-   "photos": 3
-  },
-  {
-   "slug": "kugoo-g3-pro",
    "principale_actuelle": "profil",
    "photos": 3
   },
@@ -84,11 +59,6 @@
    "slug": "kukirin-g4-max",
    "principale_actuelle": "profil",
    "photos": 3
-  },
-  {
-   "slug": "kukirin-g4-ultra",
-   "principale_actuelle": "profil",
-   "photos": 4
   },
   {
    "slug": "nami-klima-max",
@@ -126,11 +96,6 @@
    "photos": 1
   },
   {
-   "slug": "navee-nt5-ultra-x",
-   "principale_actuelle": "profil",
-   "photos": 3
-  },
-  {
    "slug": "navee-st5-pro",
    "principale_actuelle": "profil",
    "photos": 3
@@ -156,16 +121,6 @@
    "photos": 1
   },
   {
-   "slug": "ninebot-e3",
-   "principale_actuelle": "3/4 avant",
-   "photos": 2
-  },
-  {
-   "slug": "ninebot-e3-pro-e",
-   "principale_actuelle": "profil",
-   "photos": 5
-  },
-  {
    "slug": "ninebot-f2-plus",
    "principale_actuelle": "profil",
    "photos": 1
@@ -181,27 +136,12 @@
    "photos": 4
   },
   {
-   "slug": "ninebot-f65",
-   "principale_actuelle": "profil",
-   "photos": 1
-  },
-  {
    "slug": "pure-flex",
    "principale_actuelle": "profil",
    "photos": 4
   },
   {
-   "slug": "teverun-blade-mini-ultra",
-   "principale_actuelle": "profil",
-   "photos": 3
-  },
-  {
    "slug": "urbanglide-all-road-5",
-   "principale_actuelle": "profil",
-   "photos": 3
-  },
-  {
-   "slug": "urbanglide-all-road-6-pro",
    "principale_actuelle": "profil",
    "photos": 3
   },
@@ -224,11 +164,6 @@
    "slug": "urbanglide-ride-100-max-2",
    "principale_actuelle": "profil",
    "photos": 3
-  },
-  {
-   "slug": "vsett-11-plus-super",
-   "principale_actuelle": "profil",
-   "photos": 4
   },
   {
    "slug": "weped-ff",
@@ -259,11 +194,6 @@
    "slug": "yeep-me-80n-evo-plus",
    "principale_actuelle": "profil",
    "photos": 5
-  },
-  {
-   "slug": "zero-8",
-   "principale_actuelle": "profil",
-   "photos": 3
   }
  ],
  "republiees_par_chasseur": [
@@ -281,6 +211,78 @@
    "slug": "isinwheel-d2",
    "date": "2026-10-25",
    "lot": "chasse-2510a"
+  }
+ ],
+ "corrigees_par_chasseur": [
+  {
+   "slug": "inmotion-climber",
+   "date": "2026-10-25",
+   "lot": "chasse-2510b"
+  },
+  {
+   "slug": "ninebot-f65",
+   "date": "2026-10-25",
+   "lot": "chasse-2510b"
+  },
+  {
+   "slug": "dualtron-spider-2",
+   "date": "2026-10-25",
+   "lot": "chasse-2510b"
+  },
+  {
+   "slug": "kukirin-g4-ultra",
+   "date": "2026-10-25",
+   "lot": "chasse-2510b"
+  },
+  {
+   "slug": "ninebot-e3",
+   "date": "2026-10-25",
+   "lot": "chasse-2510b"
+  },
+  {
+   "slug": "navee-nt5-ultra-x",
+   "date": "2026-10-25",
+   "lot": "chasse-2510b"
+  },
+  {
+   "slug": "kaabo-mantis-x-plus",
+   "date": "2026-10-25",
+   "lot": "chasse-2510b"
+  },
+  {
+   "slug": "ninebot-e3-pro-e",
+   "date": "2026-10-25",
+   "lot": "chasse-2510b"
+  },
+  {
+   "slug": "kugoo-g3-pro",
+   "date": "2026-10-25",
+   "lot": "chasse-2510b"
+  },
+  {
+   "slug": "teverun-blade-mini-ultra",
+   "date": "2026-10-25",
+   "lot": "chasse-2510b"
+  },
+  {
+   "slug": "vsett-11-plus-super",
+   "date": "2026-10-25",
+   "lot": "chasse-2510b"
+  },
+  {
+   "slug": "iscooter-ix3",
+   "date": "2026-10-25",
+   "lot": "chasse-2510b"
+  },
+  {
+   "slug": "urbanglide-all-road-6-pro",
+   "date": "2026-10-25",
+   "lot": "chasse-2510b"
+  },
+  {
+   "slug": "zero-8",
+   "date": "2026-10-25",
+   "lot": "chasse-2510b"
   }
  ]
 }
