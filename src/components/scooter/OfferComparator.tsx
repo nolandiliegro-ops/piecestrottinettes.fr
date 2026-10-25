@@ -155,11 +155,14 @@ const Checks = ({ items }: { items: string[] }) => (
   </ul>
 );
 
-// ─── Bonnes affaires (25/10) : 5 propositions derrière ?offre=1..5 ; sans paramètre, rien ne change. ───
+// ─── Bonnes affaires (25/10) : « Pastille » par défaut (choix de Nolan) ; ?offre=0 = rien, ?offre=2..5 = autres propositions. ───
 export type OffreLook = 1 | 2 | 3 | 4 | 5;
+// 25/10 (choix de Nolan, reco) : « Pastille » (1) par défaut ; ?offre=0 = aucune mention d'offre, 2..5 = propositions.
 export const offreParam = (): OffreLook | null => {
-  if (typeof window === "undefined") return null;
-  const n = Number(new URLSearchParams(window.location.search).get("offre"));
+  if (typeof window === "undefined") return 1;
+  const sp = new URLSearchParams(window.location.search);
+  if (!sp.has("offre")) return 1;
+  const n = Number(sp.get("offre"));
   return n >= 1 && n <= 5 ? (n as OffreLook) : null;
 };
 // Heure de fin lisible, à l'heure de Paris : « ce soir à minuit », « ce soir à 20 h », « le 28/10 ».
