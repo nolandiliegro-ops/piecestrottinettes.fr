@@ -45,7 +45,11 @@ const waitImages = async (node: HTMLElement) => {
       window.setTimeout(end, 8000);
     });
   }));
-  await Promise.all(imgs.map((img) => (img.decode ? img.decode().catch(() => undefined) : Promise.resolve())));
+  // decode() ne répond pas tant qu'aucune image n'est affichée (onglet en arrière-plan, appli quittée) : attente bornée à 2 s.
+  await Promise.all(imgs.map((img) => Promise.race([
+    img.decode ? img.decode().catch(() => undefined) : Promise.resolve(),
+    new Promise<void>((done) => window.setTimeout(done, 2000)),
+  ])));
 };
 
 const saveImage = (dataUrl: string, fileName: string) => {
