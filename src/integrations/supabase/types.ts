@@ -4895,6 +4895,60 @@ export type Database = {
         }
         Relationships: []
       }
+      _bak_garage_maint_recette_20261025: {
+        Row: {
+          added_at: string | null
+          card_slot: number | null
+          current_km: number | null
+          custom_photo_url: string | null
+          id: string | null
+          is_featured: boolean | null
+          is_owned: boolean | null
+          last_maintenance_date: string | null
+          mood: string | null
+          next_maintenance_km: number | null
+          nickname: string | null
+          personal_description: string | null
+          photo_xp_claimed: boolean | null
+          scooter_model_id: string | null
+          user_id: string | null
+        }
+        Insert: {
+          added_at?: string | null
+          card_slot?: number | null
+          current_km?: number | null
+          custom_photo_url?: string | null
+          id?: string | null
+          is_featured?: boolean | null
+          is_owned?: boolean | null
+          last_maintenance_date?: string | null
+          mood?: string | null
+          next_maintenance_km?: number | null
+          nickname?: string | null
+          personal_description?: string | null
+          photo_xp_claimed?: boolean | null
+          scooter_model_id?: string | null
+          user_id?: string | null
+        }
+        Update: {
+          added_at?: string | null
+          card_slot?: number | null
+          current_km?: number | null
+          custom_photo_url?: string | null
+          id?: string | null
+          is_featured?: boolean | null
+          is_owned?: boolean | null
+          last_maintenance_date?: string | null
+          mood?: string | null
+          next_maintenance_km?: number | null
+          nickname?: string | null
+          personal_description?: string | null
+          photo_xp_claimed?: boolean | null
+          scooter_model_id?: string | null
+          user_id?: string | null
+        }
+        Relationships: []
+      }
       _bak_images_parts_2410: {
         Row: {
           id: string | null
@@ -5283,6 +5337,33 @@ export type Database = {
         Relationships: []
       }
       _bak_images_scooters_2510_juge2: {
+        Row: {
+          id: string | null
+          image_url: string | null
+          images: Json | null
+          published: boolean | null
+          saved_at: string | null
+          slug: string | null
+        }
+        Insert: {
+          id?: string | null
+          image_url?: string | null
+          images?: Json | null
+          published?: boolean | null
+          saved_at?: string | null
+          slug?: string | null
+        }
+        Update: {
+          id?: string | null
+          image_url?: string | null
+          images?: Json | null
+          published?: boolean | null
+          saved_at?: string | null
+          slug?: string | null
+        }
+        Relationships: []
+      }
+      _bak_images_scooters_2510_roues: {
         Row: {
           id: string | null
           image_url: string | null
@@ -6475,6 +6556,45 @@ export type Database = {
           images?: number
           n?: number
           user_id?: string
+        }
+        Relationships: []
+      }
+      backup_prix_plaquettes_20261025: {
+        Row: {
+          id: string | null
+          price: number | null
+          price_override: boolean | null
+          sku: string | null
+        }
+        Insert: {
+          id?: string | null
+          price?: number | null
+          price_override?: boolean | null
+          sku?: string | null
+        }
+        Update: {
+          id?: string | null
+          price?: number | null
+          price_override?: boolean | null
+          sku?: string | null
+        }
+        Relationships: []
+      }
+      backup_pro_c8_20261025: {
+        Row: {
+          args: string | null
+          def: string | null
+          nom: string | null
+        }
+        Insert: {
+          args?: string | null
+          def?: string | null
+          nom?: string | null
+        }
+        Update: {
+          args?: string | null
+          def?: string | null
+          nom?: string | null
         }
         Relationships: []
       }
@@ -9242,6 +9362,35 @@ export type Database = {
           },
         ]
       }
+      pro_familles: {
+        Row: {
+          category_id: string
+          gain_min_eur: number | null
+          ratio_site_magasin: number
+          updated_at: string
+        }
+        Insert: {
+          category_id: string
+          gain_min_eur?: number | null
+          ratio_site_magasin: number
+          updated_at?: string
+        }
+        Update: {
+          category_id?: string
+          gain_min_eur?: number | null
+          ratio_site_magasin?: number
+          updated_at?: string
+        }
+        Relationships: [
+          {
+            foreignKeyName: "pro_familles_category_id_fkey"
+            columns: ["category_id"]
+            isOneToOne: true
+            referencedRelation: "categories"
+            referencedColumns: ["id"]
+          },
+        ]
+      }
       pro_family_discounts: {
         Row: {
           category_id: string
@@ -9275,6 +9424,35 @@ export type Database = {
             isOneToOne: false
             referencedRelation: "pro_tiers"
             referencedColumns: ["code"]
+          },
+        ]
+      }
+      pro_grille_qte: {
+        Row: {
+          category_id: string
+          coef: number
+          min_qte: number
+          updated_at: string
+        }
+        Insert: {
+          category_id: string
+          coef: number
+          min_qte: number
+          updated_at?: string
+        }
+        Update: {
+          category_id?: string
+          coef?: number
+          min_qte?: number
+          updated_at?: string
+        }
+        Relationships: [
+          {
+            foreignKeyName: "pro_grille_qte_category_id_fkey"
+            columns: ["category_id"]
+            isOneToOne: false
+            referencedRelation: "pro_familles"
+            referencedColumns: ["category_id"]
           },
         ]
       }
@@ -9371,6 +9549,61 @@ export type Database = {
             isOneToOne: false
             referencedRelation: "pro_tiers"
             referencedColumns: ["code"]
+          },
+        ]
+      }
+      pro_prix_magasin: {
+        Row: {
+          part_id: string
+          prix_magasin: number
+          source: string
+          updated_at: string
+        }
+        Insert: {
+          part_id: string
+          prix_magasin: number
+          source?: string
+          updated_at?: string
+        }
+        Update: {
+          part_id?: string
+          prix_magasin?: number
+          source?: string
+          updated_at?: string
+        }
+        Relationships: [
+          {
+            foreignKeyName: "pro_prix_magasin_part_id_fkey"
+            columns: ["part_id"]
+            isOneToOne: true
+            referencedRelation: "parts"
+            referencedColumns: ["id"]
+          },
+        ]
+      }
+      pro_prix_main: {
+        Row: {
+          part_id: string
+          prix: number
+          updated_at: string
+        }
+        Insert: {
+          part_id: string
+          prix: number
+          updated_at?: string
+        }
+        Update: {
+          part_id?: string
+          prix?: number
+          updated_at?: string
+        }
+        Relationships: [
+          {
+            foreignKeyName: "pro_prix_main_part_id_fkey"
+            columns: ["part_id"]
+            isOneToOne: true
+            referencedRelation: "parts"
+            referencedColumns: ["id"]
           },
         ]
       }
@@ -11097,7 +11330,8 @@ export type Database = {
         }
       }
       pro_emettre_facture: { Args: { p_order: string }; Returns: string }
-      pro_prix: { Args: { p_part: string; p_tier: string }; Returns: number }
+      pro_paliers_qte: { Args: { p_part: string }; Returns: Json }
+      pro_prix: { Args: { p_part: string; p_qte: number }; Returns: number }
       pro_recompute_tier: { Args: { p_pro: string }; Returns: string }
       pro_t_cart_set: {
         Args: { p_part: string; p_quantite: number; p_token: string }
@@ -11117,6 +11351,7 @@ export type Database = {
           sku: string
           slug: string
           stock: number
+          volume: Json
         }[]
       }
       pro_t_commander: {
