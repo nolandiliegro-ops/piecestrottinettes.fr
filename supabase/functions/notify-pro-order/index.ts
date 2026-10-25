@@ -12,7 +12,7 @@ import { createClient } from "https://esm.sh/@supabase/supabase-js@2";
 // L'admin, lui, lit la commande directement en base.
 // ============================================================================
 
-const VERSION = "notify-pro-order@2026-10-25";
+const VERSION = "notify-pro-order@2026-10-25b";
 
 const json = (body: unknown, status = 200) =>
   new Response(JSON.stringify(body), { status, headers: { "Content-Type": "application/json" } });
@@ -86,7 +86,7 @@ serve(async (req) => {
   const text = [
     `🏪 <b>COMMANDE PRO</b> — ${esc(magasin)}`,
     ``,
-    `<b>${eur(order.subtotal_ht)} HT</b> · ${eur(order.total_ttc)} TTC`,
+    `<b>${eur(order.total_ttc)}</b> · pas de TVA (293 B)`,
     `Commande <code>${esc(order.order_number)}</code> · à régler au retrait`,
     `Retrait prévu : ${esc(dateFR(order.retrait_prevu))}`,
     tel ? `📞 ${esc(tel)}` : "",
@@ -121,11 +121,11 @@ serve(async (req) => {
     if (!resendKey) return { ok: false, error: "RESEND_API_KEY manquant" };
     const to = Deno.env.get("ADMIN_NOTIFICATION_EMAIL") || "contact@piecestrottinettes.fr";
     const rows = lignes
-      .map((l) => `<tr><td style="padding:6px 8px">${l.quantity}×</td><td style="padding:6px 8px">${esc(l.part_name)}</td><td style="padding:6px 8px;text-align:right">${eur(l.unit_price * l.quantity)} HT</td><td style="padding:6px 8px;color:#DC2626">${l.manque > 0 ? `manque ${l.manque}` : ""}</td></tr>`)
+      .map((l) => `<tr><td style="padding:6px 8px">${l.quantity}×</td><td style="padding:6px 8px">${esc(l.part_name)}</td><td style="padding:6px 8px;text-align:right">${eur(l.unit_price * l.quantity)}</td><td style="padding:6px 8px;color:#DC2626">${l.manque > 0 ? `manque ${l.manque}` : ""}</td></tr>`)
       .join("");
     const html = `<div style="font-family:Arial,sans-serif;font-size:15px;color:#1A1A1A;max-width:560px">
       <h2 style="margin:0 0 4px">Commande pro — ${esc(magasin)}</h2>
-      <p style="margin:0 0 12px">${esc(order.order_number)} · <b>${eur(order.subtotal_ht)} HT</b> (${eur(order.total_ttc)} TTC) · à régler au retrait<br>Retrait prévu : ${esc(dateFR(order.retrait_prevu))}${tel ? ` · ${esc(tel)}` : ""}</p>
+      <p style="margin:0 0 12px">${esc(order.order_number)} · <b>${eur(order.total_ttc)}</b> · à régler au retrait · TVA non applicable, art. 293 B du CGI<br>Retrait prévu : ${esc(dateFR(order.retrait_prevu))}${tel ? ` · ${esc(tel)}` : ""}</p>
       <table style="border-collapse:collapse;width:100%;background:#FAFAF8">${rows}</table>
       <p style="margin:12px 0 0">${aCommander.length ? `<b>${aCommander.length} pièce(s) à commander au fournisseur.</b>` : "Tout est en stock au magasin."}</p>
       ${order.notes ? `<p>Note du magasin : ${esc(order.notes)}</p>` : ""}
@@ -133,7 +133,7 @@ serve(async (req) => {
     const r = await new Resend(resendKey).emails.send({
       from: "piecestrottinettes.fr <noreply@piecestrottinettes.fr>",
       to: [to],
-      subject: `🏪 Commande pro ${eur(order.subtotal_ht)} HT — ${magasin} (${order.order_number})`,
+      subject: `🏪 Commande pro ${eur(order.total_ttc)} — ${magasin} (${order.order_number})`,
       html,
     });
     return r.error ? { ok: false, error: JSON.stringify(r.error) } : { ok: true };

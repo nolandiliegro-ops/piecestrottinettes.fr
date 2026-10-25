@@ -223,7 +223,7 @@ const Pro = () => {
           <section className="px-4 pt-8 grid gap-4 max-w-lg mx-auto text-center">
             <div className="mx-auto w-16 h-16 grid place-items-center text-white text-[30px] font-black" style={{ background: C.green, clipPath: cut(10) }}>✓</div>
             <h1 className="text-[22px] font-black uppercase italic" style={{ fontFamily: UNB }}>Commande envoyée</h1>
-            <p className="text-[16px]">N° <b>{done.order_number}</b> · {eurFR(done.total_ttc)} TTC</p>
+            <p className="text-[16px]">N° <b>{done.order_number}</b> · {eurFR(done.total_ttc)}</p>
             <p className="text-[16px]">Retrait au magasin à partir du <b>{jourFR(done.retrait)}</b>. Tu règles sur place : espèces, carte ou virement.</p>
             <p className="text-[14px]" style={{ color: C.muted }}>Nolan a reçu ta commande. Il te prévient sur WhatsApp quand elle est prête.</p>
             <button type="button" onClick={() => { setDone(null); goRayon(null); }} className="h-12 font-extrabold text-white" style={{ background: C.green, clipPath: cut(10) }}>Nouvelle commande</button>
@@ -280,8 +280,7 @@ const Pro = () => {
                           <p className="text-[16px] font-extrabold" style={{ color: C.greenD }}>
                             {eurFR(p.prix_pro_ht)}
                             {p.prix_pro_ht < p.prix_public_ht && <s className="ml-1.5 text-[14px] font-semibold" style={{ color: C.muted }}>{eurFR(p.prix_public_ht)}</s>}
-                            <span className="ml-1 text-[14px] font-semibold" style={{ color: C.muted }}>HT</span>
-                          </p>
+                                                      </p>
                           <p className="text-[14px] font-bold" style={{ color: p.stock > 0 ? C.greenD : C.muted }}>{p.stock > 0 ? "En magasin" : "Sous 3-5 jours"}</p>
                         </div>
                         <div className="px-2.5">{q ? <Stepper q={q} onChange={(n) => setQuantity(p.part_id, n)} /> : <AddBtn onClick={() => setQuantity(p.part_id, 1)} />}</div>
@@ -303,7 +302,7 @@ const Pro = () => {
                   <div className="h-3 relative" style={{ background: C.line }}>
                     <span className="absolute inset-y-0 left-0" style={{ background: C.green, width: `${Math.min(100, (m.ca_12m_ht / m.suivant.seuil_ca_ht) * 100)}%` }} />
                   </div>
-                  <p className="text-[14px]" style={{ color: C.muted }}>Encore <b style={{ color: C.ink }}>{eurFR(m.suivant.reste_ht)} HT</b> d'achats sur 12 mois pour passer {m.suivant.nom} (−{Number(m.suivant.remise_pct)} %).</p>
+                  <p className="text-[14px]" style={{ color: C.muted }}>Encore <b style={{ color: C.ink }}>{eurFR(m.suivant.reste_ht)}</b> d'achats sur 12 mois pour passer {m.suivant.nom} (−{Number(m.suivant.remise_pct)} %).</p>
                 </>
               ) : <p className="text-[14px]" style={{ color: C.muted }}>Tu es au palier le plus haut.</p>}
             </div>
@@ -315,7 +314,7 @@ const Pro = () => {
                   <span className="text-[16px] font-extrabold">{o.order_number}</span>
                   <span className="text-[14px] font-extrabold px-2 py-0.5" style={{ background: o.status === "prete" ? C.orange : C.greenL, color: o.status === "prete" ? "#fff" : C.greenD }}>{PRO_STATUS_LABEL[o.status] ?? o.status}</span>
                 </div>
-                <p className="text-[14px]" style={{ color: C.muted }}>{new Date(o.created_at).toLocaleDateString("fr-FR")} · retrait {jourFR(o.retrait_prevu)} · <b style={{ color: C.ink }}>{eurFR(o.total_ttc)} TTC</b></p>
+                <p className="text-[14px]" style={{ color: C.muted }}>{new Date(o.created_at).toLocaleDateString("fr-FR")} · retrait {jourFR(o.retrait_prevu)} · <b style={{ color: C.ink }}>{eurFR(o.total_ttc)}</b></p>
                 <div className="flex gap-2 overflow-x-auto">
                   {(o.lignes ?? []).map((l, i) => (
                     <span key={i} className="relative flex-none w-14 h-14 bg-white grid place-items-center" style={{ border: `1px solid ${C.line}` }} title={l.name}>
@@ -339,8 +338,8 @@ const Pro = () => {
         <div className="fixed inset-x-0 bottom-0 z-40 bg-white border-t" style={{ borderColor: C.line, boxShadow: "0 -8px 24px -18px rgba(0,0,0,.5)", paddingBottom: "env(safe-area-inset-bottom, 0px)" }}>
           <div className="max-w-[1180px] mx-auto px-4 py-3 flex items-center gap-3">
             <div className="flex-1 min-w-0 leading-tight">
-              <p className="text-[16px] font-extrabold">{nbPieces} pièce{nbPieces > 1 ? "s" : ""} · {eurFR(cart?.sous_total_ht ?? 0)} HT</p>
-              <p className="text-[14px]" style={{ color: C.muted }}>À régler au retrait · {eurFR(cart?.total_ttc ?? 0)} TTC</p>
+              <p className="text-[16px] font-extrabold">{nbPieces} pièce{nbPieces > 1 ? "s" : ""} · {eurFR(cart?.total_ttc ?? 0)}</p>
+              <p className="text-[14px]" style={{ color: C.muted }}>À régler au retrait · pas de TVA</p>
             </div>
             <button type="button" onClick={() => setRecap(true)} className="h-[52px] px-6 text-white text-[16px] font-extrabold" style={{ background: C.orange, clipPath: cut(12) }}>Valider</button>
           </div>
@@ -364,7 +363,7 @@ const Pro = () => {
                   <div className="grid gap-1.5 min-w-0">
                     <p className="text-[14px] font-bold leading-tight line-clamp-2">{l.name}</p>
                     <div className="flex items-center justify-between gap-2">
-                      <span className="text-[14px] font-extrabold" style={{ color: C.greenD }}>{eurFR(l.prix_pro_ht * l.quantite)} HT</span>
+                      <span className="text-[14px] font-extrabold" style={{ color: C.greenD }}>{eurFR(l.prix_pro_ht * l.quantite)}</span>
                       <div className="w-[132px]"><Stepper q={qty[l.part_id] ?? l.quantite} onChange={(n) => setQuantity(l.part_id, n)} /></div>
                     </div>
                   </div>
@@ -374,8 +373,7 @@ const Pro = () => {
               <textarea id="pro-note" value={note} onChange={(e) => setNote(e.target.value.slice(0, 500))} rows={2}
                 className="mt-1 p-3 text-[16px] outline-none focus:ring-2 focus:ring-[#4A7C59]" style={{ border: `1.5px solid ${C.line}` }} placeholder="Ex. : je passe vendredi vers 17 h" />
               <div className="grid gap-1 py-4 text-[15px]">
-                <div className="flex justify-between"><span>Total HT</span><b>{eurFR(cart?.sous_total_ht ?? 0)}</b></div>
-                <div className="flex justify-between" style={{ color: C.muted }}><span>TVA 20 %</span><span>{eurFR(cart?.tva ?? 0)}</span></div>
+                                <p className="text-[14px]" style={{ color: C.muted }}>TVA non applicable, art. 293 B du CGI</p>
                 <div className="flex justify-between text-[17px]"><b>À régler au retrait</b><b>{eurFR(cart?.total_ttc ?? 0)}</b></div>
                 <p className="text-[14px] pt-1" style={{ color: C.muted }}>Retrait au magasin à partir du {jourFR(cycle.retrait)}. Espèces, carte ou virement.</p>
               </div>

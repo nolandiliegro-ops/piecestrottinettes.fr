@@ -91,7 +91,7 @@ const APreparer = () => {
     qc.invalidateQueries({ queryKey: ['admin-pro-orders'] }); qc.invalidateQueries({ queryKey: ['admin-pros'] }); qc.invalidateQueries({ queryKey: ['admin-pro-acommander'] });
     if (status === 'prete') {
       const m = mag.get(c.pro_account_id);
-      ouvrirWhatsApp(m?.telephone ?? null, `Salut ${prenom(m?.contact_nom ?? null)} 👋 Ta commande ${c.order_number} est prête au magasin : ${eurFR(c.total_ttc)} TTC, à régler sur place (espèces, carte ou virement). À tout de suite !`);
+      ouvrirWhatsApp(m?.telephone ?? null, `Salut ${prenom(m?.contact_nom ?? null)} 👋 Ta commande ${c.order_number} est prête au magasin : ${eurFR(c.total_ttc)}, à régler sur place (espèces, carte ou virement). À tout de suite !`);
     }
   };
 
@@ -125,7 +125,7 @@ const APreparer = () => {
         </div>
         {c.notes && <p className="text-sm bg-yellow-50 border border-yellow-200 rounded-lg px-3 py-2">📝 {c.notes}</p>}
         <div className="flex flex-wrap items-center justify-between gap-2">
-          <p className="font-bold">{eurFR(c.subtotal_ht)} HT · {eurFR(c.total_ttc)} TTC</p>
+          <p className="font-bold">{eurFR(c.total_ttc)} <span className="text-sm font-normal text-[hsl(var(--admin-text-muted))]">· pas de TVA (293 B)</span></p>
           {c.status === 'a_regler_retrait' && (
             <div className="flex flex-wrap gap-2">
               <Btn onClick={() => passer(c, 'cancelled')} disabled={busy === c.id}>Annuler</Btn>
@@ -140,7 +140,7 @@ const APreparer = () => {
                 <option value="">Payé comment ?</option><option value="especes">Espèces</option><option value="cb_tpe">Carte (TPE)</option><option value="virement">Virement</option>
               </select>
               <Btn kind="orange" disabled={!paiement[c.id] || busy === c.id} onClick={() => passer(c, 'retiree_payee', paiement[c.id])}>Retirée et payée</Btn>
-              <Btn onClick={() => ouvrirWhatsApp(m?.telephone ?? null, `Salut ${prenom(m?.contact_nom ?? null)}, petit rappel : ta commande ${c.order_number} t'attend au magasin (${eurFR(c.total_ttc)} TTC).`)}><MessageCircle className="w-4 h-4" />Relancer</Btn>
+              <Btn onClick={() => ouvrirWhatsApp(m?.telephone ?? null, `Salut ${prenom(m?.contact_nom ?? null)}, petit rappel : ta commande ${c.order_number} t'attend au magasin (${eurFR(c.total_ttc)}).`)}><MessageCircle className="w-4 h-4" />Relancer</Btn>
             </div>
           )}
         </div>
@@ -288,7 +288,7 @@ const Magasins = () => {
               </div>
               <div className="text-right">
                 <p className="font-bold">{eff?.nom} −{Number(eff?.remise_pct ?? 0)} %{m.palier_force ? ' (forcé)' : ''}</p>
-                <p className="text-sm text-[hsl(var(--admin-text-muted))]">{eurFR(Number(m.ca_12m_ht))} HT sur 12 mois</p>
+                <p className="text-sm text-[hsl(var(--admin-text-muted))]">{eurFR(Number(m.ca_12m_ht))} d'achats sur 12 mois</p>
               </div>
             </div>
             <div className="flex flex-wrap gap-2">
@@ -310,7 +310,7 @@ const Magasins = () => {
         );
       })}
       {tiers.length > 0 && (
-        <Carte><p className="text-sm text-[hsl(var(--admin-text-muted))]">Paliers : {tiers.map((t) => `${t.nom} −${Number(t.remise_pct)} % dès ${eurFR(Number(t.seuil_ca_ht))} HT`).join(' · ')}. Prix pro jamais sous le prix d'achat × 1,15.</p></Carte>
+        <Carte><p className="text-sm text-[hsl(var(--admin-text-muted))]">Paliers : {tiers.map((t) => `${t.nom} −${Number(t.remise_pct)} % dès ${eurFR(Number(t.seuil_ca_ht))} d'achats`).join(' · ')}. Prix pro jamais sous le prix d'achat × 1,15.</p></Carte>
       )}
     </div>
   );
