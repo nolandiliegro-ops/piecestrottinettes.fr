@@ -14,6 +14,7 @@ import SiteSection from '@/components/admin/sections/SiteSection';
 import MarketingSection from '@/components/admin/sections/MarketingSection';
 import ReglagesSection from '@/components/admin/sections/ReglagesSection';
 import ProsSection from '@/components/admin/pros/ProsSection';
+import StockBoutique from '@/components/admin/stock/StockBoutique';
 
 /** Anciennes adresses ?tab=… (liens Telegram, favoris) → nouvelles routes. */
 const LEGACY_TABS: Record<string, string> = {
@@ -89,6 +90,7 @@ const Admin = () => {
         <Route path="clients" element={<div className="p-3 md:p-5"><ClientsManager /></div>} />
         <Route path="messages" element={<div className="p-3 md:p-5"><ContactMessagesManager /></div>} />
         <Route path="marketing/:sub?" element={<MarketingSection />} />
+        <Route path="stock" element={<StockBoutique />} />
         <Route path="pros/:sub?" element={<ProsSection />} />
         <Route path="site/:sub?" element={<SiteSection />} />
         <Route path="reglages" element={<ReglagesSection />} />

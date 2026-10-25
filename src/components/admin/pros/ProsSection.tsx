@@ -1,6 +1,7 @@
 // Comptoir Pro — admin (25/10/2026). Trois onglets :
 //  · À préparer : commandes des magasins (en préparation → prête → retirée et payée), WhatsApp « c'est prêt » en 1 tap.
-//  · À commander : paniers de la semaine + commandes non retirées, moins le stock magasin, rangés par fournisseur.
+//  · À commander : paniers de la semaine + commandes non retirées, moins le stock EN BOUTIQUE (parts.stock_boutique,
+//    25/10), rangés par fournisseur ; « Reçu » ajoute la quantité au stock boutique et ouvre le WhatsApp des magasins concernés.
 //  · Magasins : créer un magasin, lui envoyer son lien sur WhatsApp, couper un lien (plus de palier depuis C8, 25/10).
 // Doc : claude/PT-lot-comptoir-pro.md. Les prix pro sont calculés en base (jamais ici).
 import { useMemo, useState } from 'react';
@@ -181,6 +182,20 @@ const APreparer = () => {
 
 /* ---------------- À commander ---------------- */
 const AComm = () => {
+  const qc = useQueryClient();
+  const mags = useMagasins();
+  const [recu, setRecu] = useState<{ row: ACommander; qte: number } | null>(null);
+  const [busy, setBusy] = useState<string | null>(null);
+  const marquerRecu = async (r: ACommander) => {
+    setBusy(r.part_id);
+    const { error } = await supabase.rpc('admin_stock_regler' as never, { p_part: r.part_id, p_delta: r.manque, p_motif: 'recu' } as never);
+    setBusy(null);
+    if (error) { toast.error(`Stock non mis à jour : ${error.message}`); return; }
+    toast.success(`${r.manque} × ${r.name} : ajouté au stock boutique.`);
+    setRecu({ row: r, qte: r.manque });
+    qc.invalidateQueries({ queryKey: ['admin-pro-acommander'] });
+    qc.invalidateQueries({ queryKey: ['admin-stock-boutique'] });
+  };
   const q = useQuery({
     queryKey: ['admin-pro-acommander'],
     queryFn: async () => {
@@ -196,7 +211,26 @@ const AComm = () => {
   for (const r of rows) { const k = r.fournisseur || 'Sans fournisseur'; (groupes.get(k) ?? groupes.set(k, []).get(k)!).push(r); }
   return (
     <div className="grid gap-3 max-w-4xl">
-      <Carte><p className="text-sm text-[hsl(var(--admin-text-muted))]">Paniers de la semaine (pas encore validés) + commandes validées non retirées, moins ton stock magasin. « Manque » = à commander chez le fournisseur.</p></Carte>
+      <Carte><p className="text-sm text-[hsl(var(--admin-text-muted))]">Paniers de la semaine (pas encore validés) + commandes validées non retirées, moins ton stock en boutique. « Manque » = à commander chez le fournisseur ; quand ça arrive, « Reçu » l'ajoute au stock et te propose de prévenir les magasins sur WhatsApp.</p></Carte>
+      {recu && (() => {
+        const noms = (recu.row.magasins ?? '').split(',').map((x) => x.trim()).filter(Boolean);
+        const liste = (mags.data?.magasins ?? []).filter((m) => noms.includes(m.nom_magasin));
+        return (
+          <Carte className="grid gap-2 border-green-700">
+            <p className="font-bold">Reçu : {recu.qte} × {recu.row.name}</p>
+            <p className="text-sm text-[hsl(var(--admin-text-muted))]">Préviens les magasins qui l'attendent :</p>
+            <div className="flex flex-wrap gap-2">
+              {liste.map((m) => (
+                <Btn key={m.id} kind="green" onClick={() => ouvrirWhatsApp(m.telephone, `Salut ${prenom(m.contact_nom)} 👋 C'est arrivé : ${recu.row.name}. Je te le mets de côté, retrait vendredi au magasin. Nolan – piecestrottinettes.fr`.replace('Salut  👋', 'Salut 👋'))}>
+                  <MessageCircle className="w-4 h-4" />Prévenir {m.nom_magasin}
+                </Btn>
+              ))}
+              {liste.length === 0 && <p className="text-sm">Aucun magasin trouvé pour cette pièce.</p>}
+              <Btn onClick={() => setRecu(null)}>Fermer</Btn>
+            </div>
+          </Carte>
+        );
+      })()}
       {rows.length === 0 && <Carte><p className="text-[hsl(var(--admin-text-muted))]">Rien en cours chez les pros.</p></Carte>}
       {[...groupes.entries()].map(([f, list]) => {
         const manquants = list.filter((r) => r.manque > 0);
@@ -209,14 +243,15 @@ const AComm = () => {
             </div>
             <div className="overflow-x-auto">
               <table className="w-full text-sm">
-                <thead><tr className="text-left text-[hsl(var(--admin-text-muted))]"><th className="py-1 pr-2">Pièce</th><th className="pr-2">Réf.</th><th className="pr-2 text-right">Paniers</th><th className="pr-2 text-right">Validées</th><th className="pr-2 text-right">Stock</th><th className="pr-2 text-right">Manque</th><th>Magasins</th></tr></thead>
+                <thead><tr className="text-left text-[hsl(var(--admin-text-muted))]"><th className="py-1 pr-2">Pièce</th><th className="pr-2">Réf.</th><th className="pr-2 text-right">Paniers</th><th className="pr-2 text-right">Validées</th><th className="pr-2 text-right">En boutique</th><th className="pr-2 text-right">Manque</th><th className="pr-2">Magasins</th><th></th></tr></thead>
                 <tbody>
                   {list.map((r) => (
                     <tr key={r.part_id} className="border-t border-[hsl(var(--admin-border))]">
                       <td className="py-1.5 pr-2 min-w-[180px]">{r.name}</td><td className="pr-2 whitespace-nowrap">{r.ref_fournisseur ?? r.sku ?? '—'}</td>
                       <td className="pr-2 text-right tabular-nums">{r.qte_paniers}</td><td className="pr-2 text-right tabular-nums">{r.qte_commandes}</td>
                       <td className="pr-2 text-right tabular-nums">{r.stock}</td><td className={`pr-2 text-right tabular-nums font-bold ${r.manque > 0 ? 'text-red-600' : 'text-green-700'}`}>{r.manque}</td>
-                      <td className="min-w-[140px]">{r.magasins}</td>
+                      <td className="pr-2 min-w-[140px]">{r.magasins}</td>
+                      <td className="py-1">{r.manque > 0 && <Btn kind="green" disabled={busy === r.part_id} onClick={() => marquerRecu(r)}>{busy === r.part_id ? <Loader2 className="w-4 h-4 animate-spin" /> : <PackageCheck className="w-4 h-4" />}Reçu {r.manque}</Btn>}</td>
                     </tr>
                   ))}
                 </tbody>

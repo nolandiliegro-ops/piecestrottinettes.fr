@@ -3,7 +3,7 @@ import { Link, NavLink, useLocation } from 'react-router-dom';
 import {
   LayoutDashboard, ShoppingBag, Package, Bot, Users, MessageSquare,
   Ticket, Palette, Settings, ArrowLeft, ChevronLeft, ChevronRight,
-  MoreHorizontal, ExternalLink, Store,
+  MoreHorizontal, ExternalLink, Store, ScanBarcode,
 } from 'lucide-react';
 import { Sheet, SheetContent, SheetHeader, SheetTitle, SheetTrigger } from '@/components/ui/sheet';
 import { cn } from '@/lib/utils';
@@ -27,6 +27,7 @@ const NAV_ITEMS: NavItem[] = [
   { to: '/admin', end: true, label: 'Accueil', icon: LayoutDashboard },
   { to: '/admin/commandes', label: 'Commandes', icon: ShoppingBag, badge: 'orders' },
   { to: '/admin/catalogue', label: 'Catalogue', icon: Package },
+  { to: '/admin/stock', label: 'Stock', icon: ScanBarcode },
   { to: '/admin/bots', label: 'Bots', icon: Bot, badge: 'bots' },
   { to: '/admin/clients', label: 'Clients', icon: Users },
   { to: '/admin/pros', label: 'Pros', icon: Store },

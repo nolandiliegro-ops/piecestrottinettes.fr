@@ -290,7 +290,7 @@ const Pro = () => {
                                 : p.volume.map((v) => `dès ${v.min} : ${eurFR(v.prix)}`).join(" · ")}
                             </p>
                           )}
-                          <p className="text-[14px] font-bold" style={{ color: p.stock > 0 ? C.greenD : C.muted }}>{p.stock > 0 ? "En magasin" : "Sous 3-5 jours"}</p>
+                          <p className="text-[14px] font-bold" style={{ color: p.stock > 0 ? C.greenD : C.muted }}>{p.stock > 0 ? `En boutique · ${p.stock} dispo` : "Pas en boutique · sous 3-5 jours"}</p>
                         </div>
                         <div className="px-2.5">{q ? <Stepper q={q} onChange={(n) => setQuantity(p.part_id, n)} /> : <AddBtn onClick={() => setQuantity(p.part_id, 1)} />}</div>
                       </article>
