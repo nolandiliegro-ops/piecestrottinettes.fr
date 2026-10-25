@@ -52,3 +52,4 @@ export const openPrelaunch = () => {
 
 // relance publication 25/10 C8
 // relance publication 25/10 textes d'aide 320 px
+// relance publication 25/10 stock boutique

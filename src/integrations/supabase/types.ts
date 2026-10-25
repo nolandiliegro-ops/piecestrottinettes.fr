@@ -6631,6 +6631,24 @@ export type Database = {
         }
         Relationships: []
       }
+      backup_stock_boutique_20261025: {
+        Row: {
+          def: string | null
+          proname: unknown
+          saved_at: string | null
+        }
+        Insert: {
+          def?: string | null
+          proname?: unknown
+          saved_at?: string | null
+        }
+        Update: {
+          def?: string | null
+          proname?: unknown
+          saved_at?: string | null
+        }
+        Relationships: []
+      }
       bak_categories_desc_20261025: {
         Row: {
           description: string | null
@@ -9005,6 +9023,7 @@ export type Database = {
           sku: string | null
           slug: string
           slug_locked_at: string | null
+          stock_boutique: number
           stock_quantity: number | null
           technical_metadata: Json | null
           updated_at: string
@@ -9038,6 +9057,7 @@ export type Database = {
           sku?: string | null
           slug: string
           slug_locked_at?: string | null
+          stock_boutique?: number
           stock_quantity?: number | null
           technical_metadata?: Json | null
           updated_at?: string
@@ -9071,6 +9091,7 @@ export type Database = {
           sku?: string | null
           slug?: string
           slug_locked_at?: string | null
+          stock_boutique?: number
           stock_quantity?: number | null
           technical_metadata?: Json | null
           updated_at?: string
@@ -10682,6 +10703,57 @@ export type Database = {
           },
         ]
       }
+      stock_boutique_mouvements: {
+        Row: {
+          code: string | null
+          created_at: string
+          created_by: string | null
+          delta: number
+          id: number
+          motif: string
+          order_id: string | null
+          part_id: string
+          stock_apres: number
+        }
+        Insert: {
+          code?: string | null
+          created_at?: string
+          created_by?: string | null
+          delta: number
+          id?: number
+          motif: string
+          order_id?: string | null
+          part_id: string
+          stock_apres: number
+        }
+        Update: {
+          code?: string | null
+          created_at?: string
+          created_by?: string | null
+          delta?: number
+          id?: number
+          motif?: string
+          order_id?: string | null
+          part_id?: string
+          stock_apres?: number
+        }
+        Relationships: [
+          {
+            foreignKeyName: "stock_boutique_mouvements_order_id_fkey"
+            columns: ["order_id"]
+            isOneToOne: false
+            referencedRelation: "orders"
+            referencedColumns: ["id"]
+          },
+          {
+            foreignKeyName: "stock_boutique_mouvements_part_id_fkey"
+            columns: ["part_id"]
+            isOneToOne: false
+            referencedRelation: "parts"
+            referencedColumns: ["id"]
+          },
+        ]
+      }
       stock_movements: {
         Row: {
           created_at: string
@@ -11181,6 +11253,19 @@ export type Database = {
         }[]
       }
       admin_pro_nouveau_lien: { Args: { p_pro: string }; Returns: string }
+      admin_stock_bip: {
+        Args: {
+          p_code: string
+          p_fixer?: boolean
+          p_part?: string
+          p_qte?: number
+        }
+        Returns: Json
+      }
+      admin_stock_regler: {
+        Args: { p_delta: number; p_motif?: string; p_part: string }
+        Returns: number
+      }
       ambassador_contract_text: { Args: { p_amb: string }; Returns: string }
       ambassador_contract_version: { Args: never; Returns: string }
       ambassador_etape_label: { Args: { s: string }; Returns: string }
@@ -11402,6 +11487,7 @@ export type Database = {
         }[]
       }
       refresh_prices_send: { Args: never; Returns: number }
+      rider_est_ambassadeur: { Args: { p_user: string }; Returns: boolean }
       search_parts_fuzzy: {
         Args: {
           p_category_ids?: string[]
@@ -11446,6 +11532,21 @@ export type Database = {
         Args: { p_signataire: string; p_user_agent?: string }
         Returns: string
       }
+      stock_boutique_appliquer: {
+        Args: {
+          p_code?: string
+          p_delta: number
+          p_motif: string
+          p_order?: string
+          p_part: string
+        }
+        Returns: number
+      }
+      stock_boutique_commande: {
+        Args: { p_annuler: boolean; p_order: string; p_vente: string }
+        Returns: undefined
+      }
+      stock_boutique_reserve: { Args: { p_part: string }; Returns: number }
       subscribe_price_alert: {
         Args: { p_email: string; p_scooter_id: string }
         Returns: string
