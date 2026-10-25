@@ -1086,12 +1086,12 @@ export const DEFAULT_CLAVIER = 0;
 export const readClavierVariant = (): number => {
   try {
     const v = new URLSearchParams(window.location.search).get("clavier");
-    if (v !== null && /^[0-5]$/.test(v)) {
+    if (v !== null && /^([0-9]|10)$/.test(v)) {
       sessionStorage.setItem("pt-clavier", v);
       return Number(v);
     }
     const s = sessionStorage.getItem("pt-clavier");
-    if (s !== null && /^[0-5]$/.test(s)) return Number(s);
+    if (s !== null && /^([0-9]|10)$/.test(s)) return Number(s);
   } catch {
     /* stockage indisponible */
   }
@@ -1163,6 +1163,83 @@ const KbLabel = ({ title, count }: { title: string; count: number }) => (
     <span className="text-sm font-bold" style={{ color: "#6B7280" }}>{count}</span>
   </div>
 );
+
+/* Tour 2 (Nolan, 25/10 soir) : la grille, mais 2 colonnes, marque et modèle bien distincts, traits plus épais qui ressortent. */
+const modelOnly = (o: ScooterOption) => {
+  const b = o.brandName.trim();
+  return b && o.name.toLowerCase().startsWith(b.toLowerCase() + " ") ? o.name.slice(b.length + 1) : o.name;
+};
+
+const KbTile = ({ o, on, look, onPick }: { o: ScooterOption; on: boolean; look: number; onPick: () => void }) => {
+  const photo = (h: number) => (
+    <span className="flex items-center justify-center" style={{ height: h }}>
+      {o.imageUrl ? <img src={o.imageUrl} alt="" loading="lazy" className="max-h-full max-w-[88%] object-contain" /> : <Bike size={26} className="text-gray-400" />}
+    </span>
+  );
+  const brand = (color: string) => <span className="block text-[14px] font-bold uppercase tracking-[0.08em] leading-none break-words" style={{ color }}>{o.brandName}</span>;
+  const model = (color: string, unb = true) => (
+    <span className="block mt-1 text-[15px] leading-[1.15] break-words" style={unb ? { fontFamily: A_UNB, fontWeight: 900, fontStyle: "italic", textTransform: "uppercase", color } : { fontWeight: 800, color }}>{modelOnly(o)}</span>
+  );
+  const check = on ? <span className="absolute z-20 top-2 right-2 w-7 h-7 flex items-center justify-center text-white" style={{ background: A_GREEN, clipPath: aCut(5) }}><Check size={16} strokeWidth={3} /></span> : null;
+  const edge = on ? A_GREEN : A_CARBON;
+  // Cadre dessiné PAR-DESSUS le contenu (une photo sur fond beige ne le recouvre plus) + trait du coin coupé.
+  const frame = (cut: number, w: number) => (
+    <span aria-hidden className="pointer-events-none absolute inset-0 z-10" style={{ boxShadow: `inset 0 0 0 ${w}px ${edge}` }}>
+      <span className="absolute top-0 right-0" style={{ width: cut, height: cut, background: `linear-gradient(to bottom left, transparent calc(50% - ${w * 0.75}px), ${edge} calc(50% - ${w * 0.75}px), ${edge} calc(50% + ${w * 0.75}px), transparent calc(50% + ${w * 0.75}px))` }} />
+    </span>
+  );
+
+  // 6 · Plaque : contour carbone 2 px, coin coupé, marque en petites capitales, modèle en Unbounded.
+  if (look === 6)
+    return (
+      <button type="button" onClick={onPick} aria-pressed={on} className="relative text-left p-3" style={{ background: "#FFFFFF", clipPath: aCut(12) }}>
+        {frame(12, on ? 3 : 2)}
+        {check}
+        {photo(78)}
+        <span className="block mt-2">{brand("#6B7280")}{model(A_CARBON)}</span>
+      </button>
+    );
+  // 7 · Socle : la trott posée sur un socle beige, filet carbone sous la photo, texte dessous.
+  if (look === 7)
+    return (
+      <button type="button" onClick={onPick} aria-pressed={on} className="relative text-left" style={{ background: "#FFFFFF", clipPath: aCut(12) }}>
+        {frame(12, on ? 3 : 2)}
+        {check}
+        <span className="block pt-3 px-3" style={{ background: "#F2EFE8", borderBottom: `2px solid ${edge}` }}>{photo(82)}</span>
+        <span className="block p-3">{brand(A_GREEN)}{model(A_CARBON)}</span>
+      </button>
+    );
+  // 8 · Étiquette : photo sur blanc, nom dans une étiquette carbone collée en bas (seule variante sombre).
+  if (look === 8)
+    return (
+      <button type="button" onClick={onPick} aria-pressed={on} className="relative text-left flex flex-col" style={{ background: "#FFFFFF", clipPath: aCut(12) }}>
+        {frame(12, 2)}
+        {check}
+        <span className="block p-3 pb-2">{photo(80)}</span>
+        <span className="block mt-auto px-3 py-2.5" style={{ background: on ? A_GREEN : A_CARBON }}>{brand("rgba(255,255,255,0.7)")}{model("#FFFFFF")}</span>
+      </button>
+    );
+  // 9 · Relief : contour 2 px + ombre franche décalée, comme une plaque d'atelier posée sur l'établi.
+  if (look === 9)
+    return (
+      <button type="button" onClick={onPick} aria-pressed={on} className="relative text-left p-3 mr-[4px] mb-[4px]" style={{ background: "#FFFFFF", border: `2px solid ${edge}`, boxShadow: `4px 4px 0 ${edge}` }}>
+        {check}
+        {photo(78)}
+        <span className="block mt-2 pt-2" style={{ borderTop: `1px solid ${A_LINE}` }}>{brand(A_GREEN)}{model(A_CARBON)}</span>
+      </button>
+    );
+  // 10 · Fiche : photo à gauche, marque + modèle à droite, contour carbone 2 px.
+  return (
+    <button type="button" onClick={onPick} aria-pressed={on} className="relative col-span-2 text-left flex items-center gap-3 p-2 pr-3 min-h-[72px]" style={{ background: "#FFFFFF", clipPath: aCut(10) }}>
+      {frame(10, on ? 3 : 2)}
+      <span className="shrink-0 w-[96px] h-[60px] flex items-center justify-center" style={{ background: "#F2EFE8", clipPath: aCut(6) }}>
+        {o.imageUrl ? <img src={o.imageUrl} alt="" loading="lazy" className="max-h-full max-w-[90%] object-contain" /> : <Bike size={22} className="text-gray-400" />}
+      </span>
+      <span className="flex-1 min-w-0">{brand("#6B7280")}{model(A_CARBON)}</span>
+      {on && <span className="shrink-0 w-7 h-7 flex items-center justify-center text-white" style={{ background: A_GREEN, clipPath: aCut(5) }}><Check size={16} strokeWidth={3} /></span>}
+    </button>
+  );
+};
 
 const KbPicks = ({ variant, owned, favs, popular, selectedId, onSelectGarage, onSelect }: KbProps) => {
   const sections = [
@@ -1237,6 +1314,13 @@ const KbPicks = ({ variant, owned, favs, popular, selectedId, onSelectGarage, on
                   </button>
                 );
               })}
+            </div>
+          )}
+          {variant >= 6 && (
+            <div className="grid grid-cols-2 gap-3 px-5">
+              {sec.items.map((o) => (
+                <KbTile key={o.id} o={o} on={selectedId === o.id} look={variant} onPick={() => sec.pick(o)} />
+              ))}
             </div>
           )}
           {variant === 5 && (
