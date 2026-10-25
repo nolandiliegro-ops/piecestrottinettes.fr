@@ -56,3 +56,4 @@ export const openPrelaunch = () => {
 // relance publication 25/10 stock boutique v3
 // relance publication 25/10 stock boutique v4
 // relance publication 25/10 filtre trott plaque
+// relance publication 26/10 photos
