@@ -104,90 +104,67 @@ const RiderPublicCard = () => {
             </Link>
           </Panel>
         ) : (
-          <div className="mt-4 flex flex-col gap-4 lg:grid lg:grid-cols-[minmax(0,1fr)_360px] lg:gap-6 lg:items-start pb-8">
-            <div className="flex flex-col gap-4 min-w-0">
-              {/* Qui c'est */}
-              <Panel pad="p-3 lg:p-4">
-                <div className="flex items-center gap-3">
-                  <RiderAvatar url={data.profile.avatar_url} name={name} size="md" />
-                  <div className="min-w-0 flex-1">
-                    <h1 className="text-[18px] uppercase leading-[1.05]" style={{ fontFamily: UNB, fontWeight: 900, fontStyle: "italic", color: CARBON }}>Le garage de {name}</h1>
-                    <p className="mt-1 text-sm font-semibold truncate" style={{ fontFamily: FONT, color: "#4B5563" }}>
-                      Niveau {level.level} · {level.name} · {machines.length} machine{machines.length > 1 ? "s" : ""}
-                    </p>
-                    {data.profile.rider_location && (
-                      <p className="mt-0.5 text-sm inline-flex items-center gap-1" style={{ fontFamily: FONT, color: "#6B7280" }}><MapPin className="w-3.5 h-3.5" />{data.profile.rider_location}</p>
-                    )}
-                  </div>
-                </div>
-                {data.profile.bio && <p className="mt-3 text-base" style={{ fontFamily: FONT, color: "#374151" }}>« {data.profile.bio} »</p>}
-                <div className="mt-3 grid grid-cols-2 gap-2">
-                  <button type="button" disabled={isMe || like.isPending}
-                    onClick={() => (user ? like.mutate({ ownerId: data.profile.id, liked: data.likedByMe }) : toast.info("Connecte-toi pour donner du respect"))}
-                    className="min-h-[48px] inline-flex items-center justify-center gap-2 text-sm font-extrabold uppercase"
-                    style={{ fontFamily: FONT, clipPath: cut(8), ...(data.likedByMe ? { background: GREEN, color: "#FFFFFF" } : { background: CARBON, color: "#FFFFFF" }) }}>
-                    <Heart className="w-4 h-4" fill={data.likedByMe ? "currentColor" : "none"} /> Respect · {data.likes}
-                  </button>
-                  <button type="button" onClick={share} className="min-h-[48px] inline-flex items-center justify-center gap-2 text-sm font-extrabold uppercase"
-                    style={{ fontFamily: FONT, clipPath: cut(8), background: "#FFFFFF", color: CARBON, boxShadow: `inset 0 0 0 1px ${LINE}` }}>
-                    <Share2 className="w-4 h-4" /> Partager
-                  </button>
-                </div>
-              </Panel>
+          <div className="pb-10">
+            {/* 25/10 (garage v3) : la page publique reprend « Ma carte » — le titre sur le wallpaper, la carte Story
+                en premier, ses commentaires, puis ses machines et les pièces qui vont dessus. */}
+            <header className="mt-2 mb-5">
+              <p className="text-sm font-bold uppercase tracking-[0.14em]" style={{ fontFamily: FONT, color: "#8FBF9C", textShadow: "0 1px 8px rgba(0,0,0,0.5)" }}>
+                Garage public · {level.name}{data.profile.rider_location ? ` · ${data.profile.rider_location}` : ""}
+              </p>
+              <h1 className="mt-1 text-[30px] lg:text-[48px] uppercase leading-[0.95] text-white" style={{ fontFamily: UNB, fontWeight: 900, fontStyle: "italic", letterSpacing: "-0.03em", textShadow: "0 2px 18px rgba(0,0,0,0.45)" }}>
+                Le garage de {name}
+              </h1>
+            </header>
 
-              {/* Ses machines */}
-              {stageScooter && (
-                <ScooterStage scooter={stageScooter} scooterCount={machines.length} currentIndex={i} label="Sa machine"
-                  onPrev={() => setI((x) => Math.max(0, x - 1))} onNext={() => setI((x) => Math.min(machines.length - 1, x + 1))} />
-              )}
-
-              {/* Ce qu'il a monté dessus */}
-              {mods.length > 0 && (
-                <Panel>
-                  <H2>Ce qu'il a monté dessus</H2>
-                  <ul className="mt-2 flex flex-col">
-                    {mods.slice(0, 5).map((mo, k) => (
-                      <li key={mo.id} className="flex items-center gap-3 py-2.5" style={{ borderTop: k ? `1px solid ${LINE}` : "none" }}>
-                        <span className="w-1.5 h-8 shrink-0" style={{ background: GREEN }} />
-                        <span className="min-w-0 flex-1">
-                          <span className="block text-[15px] font-semibold truncate" style={{ fontFamily: FONT, color: CARBON }}>{mo.part?.name ?? "Modification"}</span>
-                          <span className="block text-sm" style={{ fontFamily: FONT, color: "#6B7280" }}>{mo.part?.category?.name ? `${mo.part.category.name} · ` : ""}{formatDistanceToNow(new Date(mo.installed_at), { addSuffix: true, locale: fr })}</span>
-                        </span>
-                      </li>
-                    ))}
-                  </ul>
-                </Panel>
-              )}
-
-              {/* Les pièces qui vont sur SA machine : le visiteur peut monter la même chose */}
-              {stageScooter && <PartsShelf scooter={stageScooter} title={`Les pièces pour sa ${stageScooter.scooter_model.name}`} />}
-            </div>
-
-            <aside className="order-first lg:order-none flex flex-col gap-4 min-w-0 items-center lg:items-stretch">
-              {legacyCard ? (
-                <Panel>
-                  <H2>Sa carte rider</H2>
-                  <div className="mt-3 flex justify-center"><RiderCard mode="public" data={data} /></div>
-                </Panel>
-              ) : (
-                <>
-                  {/* 25/10 : carte Rider Story (choix de Nolan) + ses commentaires */}
+            {legacyCard ? (
+              <Panel><H2>Sa carte rider</H2><div className="mt-3 flex justify-center"><RiderCard mode="public" data={data} /></div></Panel>
+            ) : (
+              <div className="grid gap-6 lg:grid-cols-[360px_minmax(0,1fr)] lg:gap-8 items-start">
+                <div className="grid gap-4 justify-items-center lg:justify-items-stretch lg:sticky lg:top-24">
                   <RiderCardStory data={data} commentCount={comments.length} onOpenComments={() => document.getElementById("carte-commentaires")?.scrollIntoView({ behavior: "smooth", block: "start" })} />
-                  <div className="w-full max-w-[360px] lg:max-w-none"><RiderCardComments id="carte-commentaires" ownerId={data.profile.id} ownerName={name} /></div>
-                </>
-              )}
-              {!isMe && (
-                <section className="p-5" style={{ background: CARBON, clipPath: cut(14) }}>
-                  <p className="text-[20px] uppercase leading-tight text-white" style={{ fontFamily: UNB, fontWeight: 900, fontStyle: "italic", letterSpacing: "-0.02em" }}>
-                    Toi aussi, <span style={{ color: "#8FBF9C" }}>montre ta machine.</span>
-                  </p>
-                  <p className="mt-2 text-base" style={{ fontFamily: FONT, color: "rgba(255,255,255,0.75)" }}>Ton garage gratuit, ton wallpaper, tes pièces compatibles. +50 XP à l'inscription.</p>
-                  <Link to="/register" className="mt-4 flex items-center justify-between min-h-[52px] px-5 text-[15px] font-extrabold uppercase" style={{ background: "#FFFFFF", color: CARBON, clipPath: cut(10), fontFamily: FONT }}>
-                    Créer mon garage <ArrowRight className="w-5 h-5" />
-                  </Link>
-                </section>
-              )}
-            </aside>
+                  <div className="w-full max-w-[360px]"><RiderCardComments id="carte-commentaires" ownerId={data.profile.id} ownerName={name} /></div>
+                </div>
+
+                <div className="grid gap-4 min-w-0">
+                  {stageScooter && (
+                    <ScooterStage scooter={stageScooter} scooterCount={machines.length} currentIndex={i} label={cur?.is_owned === false ? "Il kiffe" : "Sa machine"}
+                      onPrev={() => setI((x) => Math.max(0, x - 1))} onNext={() => setI((x) => Math.min(machines.length - 1, x + 1))} />
+                  )}
+                  {mods.length > 0 && (
+                    <Panel>
+                      <H2>Ce qu'il a monté dessus</H2>
+                      <ul className="mt-2 flex flex-col">
+                        {mods.slice(0, 5).map((mo, k) => (
+                          <li key={mo.id} className="flex items-center gap-3 py-2.5" style={{ borderTop: k ? `1px solid ${LINE}` : "none" }}>
+                            <span className="w-1.5 h-8 shrink-0" style={{ background: GREEN }} />
+                            <span className="min-w-0 flex-1">
+                              <span className="block text-[15px] font-semibold truncate" style={{ fontFamily: FONT, color: CARBON }}>{mo.part?.name ?? "Modification"}</span>
+                              <span className="block text-sm" style={{ fontFamily: FONT, color: "#6B7280" }}>{mo.part?.category?.name ? `${mo.part.category.name} · ` : ""}{formatDistanceToNow(new Date(mo.installed_at), { addSuffix: true, locale: fr })}</span>
+                            </span>
+                          </li>
+                        ))}
+                      </ul>
+                    </Panel>
+                  )}
+                  {stageScooter && <PartsShelf scooter={stageScooter} title={`Les pièces pour sa ${stageScooter.scooter_model.name}`} />}
+                  {!isMe ? (
+                    <section className="p-5" style={{ background: CARBON, clipPath: cut(14) }}>
+                      <p className="text-[20px] uppercase leading-tight text-white" style={{ fontFamily: UNB, fontWeight: 900, fontStyle: "italic", letterSpacing: "-0.02em" }}>
+                        Toi aussi, <span style={{ color: "#8FBF9C" }}>fais ta carte.</span>
+                      </p>
+                      <p className="mt-2 text-base" style={{ fontFamily: FONT, color: "rgba(255,255,255,0.75)" }}>Tes trotts, tes coups de cœur, ton wallpaper. Gratuit.</p>
+                      <Link to={user ? "/garage" : "/register"} className="mt-4 flex items-center justify-between min-h-[52px] px-5 text-[15px] font-extrabold uppercase" style={{ background: "#FFFFFF", color: CARBON, clipPath: cut(10), fontFamily: FONT }}>
+                        {user ? "Ouvrir mon garage" : "Créer ma carte · gratuit"} <ArrowRight className="w-5 h-5" />
+                      </Link>
+                    </section>
+                  ) : (
+                    <Link to="/garage" className="flex items-center justify-between min-h-[52px] px-5 text-[15px] font-extrabold uppercase" style={{ background: "#FFFFFF", color: CARBON, clipPath: cut(10), fontFamily: FONT }}>
+                      C'est ton garage : le modifier <ArrowRight className="w-5 h-5" />
+                    </Link>
+                  )}
+                </div>
+              </div>
+            )}
           </div>
         )}
       </main>

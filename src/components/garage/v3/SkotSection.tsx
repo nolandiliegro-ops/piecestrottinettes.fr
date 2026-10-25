@@ -7,7 +7,6 @@ import { useEffect, useRef, useState, type FormEvent } from "react";
 import { Link, useSearchParams } from "react-router-dom";
 import { toast } from "sonner";
 import { Send, Camera, X, ShoppingCart, ThumbsUp, ThumbsDown } from "lucide-react";
-import SkotAvatar from "@/components/skot/SkotAvatar";
 import { askSkot, compressImage, sendSkotFeedback, type SkotCard } from "@/lib/skot";
 import { useCart } from "@/hooks/useCart";
 import { SHOP_OPEN, openPrelaunch } from "@/config/launch";
@@ -15,6 +14,16 @@ import { useAuth } from "@/hooks/useAuth";
 import { ScreenTitle, FONT, UNB, CARBON, GREEN, PAPER, LINE, MUTED, cut } from "./ui";
 
 type Msg = { role: "user" | "skot"; text: string; cards?: SkotCard[]; image?: string; id?: string | null; conv?: string; fb?: 1 | -1 };
+
+// Nouvelle mascotte SKOT (25/10, même visuels que la fenêtre SKOT du site : public/skot/tete-*.webp, skot-*.webp).
+const CHROME = "linear-gradient(145deg,#ffffff 0%,#d4d7d3 38%,#8f948e 52%,#e9ebe8 70%,#b9bdb8 100%)";
+const Head = ({ busy, size }: { busy: boolean; size: number }) => (
+  <span className="block rounded-full shrink-0" style={{ width: size, height: size, padding: 3, background: CHROME }}>
+    <span className="block w-full h-full rounded-full overflow-hidden" style={{ background: "#F5F0E8" }}>
+      <img src={`/skot/tete-${busy ? "reflechit" : "content"}.webp`} alt="" draggable={false} className="w-full h-full object-cover select-none" style={{ transform: "scale(1.12) translateY(5%)" }} />
+    </span>
+  </span>
+);
 
 const SUGGESTIONS = ["Où en est ma dernière commande ?", "Quels pneus pour ma trott ?", "Ma trott fait un bruit au freinage", "C'est quoi l'entretien à faire ?"];
 
@@ -97,7 +106,7 @@ const SkotSection = () => {
 
       <section className="flex flex-col h-[min(72vh,720px)] min-h-[460px]" style={{ background: PAPER, clipPath: cut(14), fontFamily: FONT }} aria-label="Discussion avec SKOT">
         <div className="flex items-center gap-3 px-4 py-3" style={{ background: CARBON }}>
-          <span className="bg-white rounded-full grid place-items-center w-11 h-11 shrink-0"><SkotAvatar size={40} thinking={busy} /></span>
+          <Head busy={busy} size={48} />
           <div className="min-w-0">
             <p className="text-[17px] uppercase leading-none text-white" style={{ fontFamily: UNB, fontWeight: 900, fontStyle: "italic" }}>SKOT <span style={{ color: "#8FBF9C" }}>· l'atelier</span></p>
             <p className="text-sm text-white/75">{busy ? "Il cherche dans le catalogue…" : "Assistant de l'atelier, il vérifie tout dans le catalogue"}</p>
@@ -106,7 +115,8 @@ const SkotSection = () => {
 
         <div ref={listRef} className="flex-1 overflow-y-auto px-3 py-4 grid content-start gap-3">
           {msgs.map((m, i) => (
-            <div key={i} className={`grid gap-2 max-w-[88%] ${m.role === "user" ? "justify-self-end" : "justify-self-start"}`}>
+            <div key={i} className={`grid gap-2 max-w-[88%] ${m.role === "user" ? "justify-self-end" : "justify-self-start grid-cols-[36px_minmax(0,1fr)] items-start"}`}>
+              {m.role === "skot" && <span className="row-span-6"><Head busy={false} size={36} /></span>}
               {m.image && <img src={m.image} alt="Ta photo" className="max-w-[220px] justify-self-end" style={{ clipPath: cut(8) }} />}
               <p className="px-3.5 py-2.5 text-[15px] leading-relaxed whitespace-pre-wrap" style={m.role === "user" ? { background: CARBON, color: "#FFFFFF", clipPath: cut(8) } : { background: "#FFFFFF", color: CARBON, clipPath: cut(8), boxShadow: `inset 0 0 0 1px ${LINE}` }}>
                 {m.text}
@@ -121,7 +131,10 @@ const SkotSection = () => {
             </div>
           ))}
           {msgs.length === 1 && (
-            <div className="flex flex-wrap gap-2 pt-1">
+            <img src="/skot/skot-ecoute.webp" alt="SKOT, la mascotte de l'atelier" draggable={false} className="justify-self-center w-40 h-40 lg:w-52 lg:h-52 object-contain select-none" style={{ filter: "drop-shadow(0 10px 12px rgba(0,0,0,.18))" }} />
+          )}
+          {msgs.length === 1 && (
+            <div className="flex flex-wrap gap-2 pt-1 justify-center">
               {SUGGESTIONS.map((s) => (
                 <button key={s} type="button" onClick={() => void send(s)} className="min-h-[44px] px-3.5 text-sm font-bold" style={{ background: "#FFFFFF", color: CARBON, clipPath: cut(8), boxShadow: `inset 0 0 0 1px ${LINE}` }}>{s}</button>
               ))}
