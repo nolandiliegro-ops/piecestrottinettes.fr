@@ -20,6 +20,17 @@ export type SkotTelVariant = 1 | 2 | 3 | 4 | 5;
 // 25/10 (Nolan : « centré comme ça, ça fait bizarre, c'est trop symétrique ») : position de « Phares au centre ».
 // ?skotpos=1..5 ; ?skotpos=0 = au centre.
 export type SkotPosVariant = 1 | 2 | 3 | 4 | 5;
+// 25/10 (Nolan : « il sort trop… je pensais qu'il n'y aurait que ses yeux… qu'il serait dans la barre blanche ») :
+// SKOT à gauche, sans cadre, tête seule. ?skotyeux=1..5 ; sans paramètre = position choisie par ?skotpos.
+export type SkotYeuxVariant = 1 | 2 | 3 | 4 | 5;
+export const readSkotYeuxVariant = (): SkotYeuxVariant | null => {
+  try {
+    const n = Number(new URLSearchParams(window.location.search).get("skotyeux"));
+    return n >= 1 && n <= 5 ? (n as SkotYeuxVariant) : null;
+  } catch {
+    return null;
+  }
+};
 export const readSkotPosVariant = (): SkotPosVariant | null => {
   try {
     // 25/10 : Nolan choisit la 3 « Coin gauche », sans cadre = défaut ; ?skotpos=0 = au centre, 1..5 = les autres positions.
@@ -318,6 +329,8 @@ const V5 = () => {
   const out = useSkotOut();
   const [tel] = useState(readSkotTelVariant);
   const [pos] = useState(readSkotPosVariant);
+  const [yeux] = useState(readSkotYeuxVariant);
+  const [saison] = useState(() => skotSaison());
   const [body] = useState(restBody);
   const lift = { transform: out ? "translateY(0) scale(1)" : "translateY(22px) scale(0.82)", transition: "transform .38s cubic-bezier(.2,.9,.3,1.25)" };
   const label = <span className="-mt-2 relative px-2 py-0.5 text-white italic uppercase" style={{ background: GREEN, fontFamily: UNB, fontWeight: 800, fontSize: 11, clipPath: cutTR(6), opacity: out ? 1 : 0, transition: "opacity .2s" }}>SKOT</span>;
@@ -339,6 +352,93 @@ const V5 = () => {
       {label}
     </button>
   );
+
+  /* Tête seule (bandeau phares + guidon), tenue de saison incluse ; clin d'œil de temps en temps hors saison. */
+  const yeuxEl = (h: number) => (
+    <span className="relative block" style={{ height: h, width: Math.round(h * (saison === "fete" ? 2.6 : 1.9)) }}>
+      <img src={`/skot/yeux-${saison ?? "ecoute"}.webp`} alt="" draggable={false} className="absolute inset-0 w-full h-full object-contain select-none" />
+      {!saison && <img src="/skot/yeux-clin.webp" alt="" draggable={false} className="absolute inset-0 w-full h-full object-contain select-none skt-wink" style={{ opacity: 0 }} />}
+    </span>
+  );
+  const tag = <span className="px-1.5 py-[1px] text-white italic uppercase leading-none" style={{ background: GREEN, fontFamily: UNB, fontWeight: 800, fontSize: 10, clipPath: cutTR(5) }}>SKOT</span>;
+
+  if (tel === 1 && yeux) {
+    const rest = <>{tab(pieces)}{tab(garage)}{tab(trottes)}{tab(cart)}</>;
+    /* 1 · Que les yeux — la tête est dans la case de gauche, seuls les phares dépassent un peu du haut de la barre. */
+    if (yeux === 1)
+      return (
+        <Shell>
+          <div className="flex items-end pr-1">
+            <button type="button" onClick={openSkot} aria-label="Demander à SKOT" className="flex-none w-[96px] h-[58px] flex flex-col items-center justify-end pb-1">
+              <span className="-mt-4 block transition-transform duration-300" style={{ transform: out ? "translateY(-10px)" : "translateY(0)" }}>{yeuxEl(44)}</span>
+              <span className="mt-0.5">{tag}</span>
+            </button>
+            {rest}
+          </div>
+        </Shell>
+      );
+    /* 2 · Rangé dans la barre — la tête tient entière dans la barre, comme un onglet, avec son nom dessous. */
+    if (yeux === 2)
+      return (
+        <Shell>
+          <div className="flex items-end pr-1">
+            <button type="button" onClick={openSkot} aria-label="Demander à SKOT" className="flex-none w-[84px] min-h-[56px] flex flex-col items-center justify-center gap-0.5">
+              {yeuxEl(30)}
+              <span className="text-[14px] leading-none italic" style={{ fontFamily: JAK, fontWeight: 800, color: GREEN }}>SKOT</span>
+            </button>
+            {rest}
+          </div>
+        </Shell>
+      );
+    /* 3 · Derrière le mur — la tête est derrière la barre : on ne voit que les phares qui regardent par-dessus. Elle se cache en défilant. */
+    if (yeux === 3)
+      return (
+        <>
+          {skotHere && (
+            <button type="button" onClick={openSkot} aria-label="Demander à SKOT" className="md:hidden fixed z-[49] left-2"
+              style={{ bottom: "calc(max(env(safe-area-inset-bottom), 6px) + 38px)", transform: out ? "translateY(0)" : "translateY(30px)", transition: "transform .4s cubic-bezier(.2,.9,.3,1.25)" }}>
+              {yeuxEl(50)}
+            </button>
+          )}
+          <Shell>
+            <div className="flex items-end pr-1">
+              <button type="button" onClick={openSkot} aria-label="Demander à SKOT" tabIndex={-1} className="flex-none w-[96px] min-h-[56px] flex items-end justify-center pb-2">{tag}</button>
+              {rest}
+            </div>
+          </Shell>
+        </>
+      );
+    /* 4 · Phare rond — la tête dans un rond crème, sans cadre noir, qui dépasse à peine de la barre. */
+    if (yeux === 4)
+      return (
+        <Shell>
+          <div className="flex items-end pr-1">
+            <button type="button" onClick={openSkot} aria-label="Demander à SKOT" className="flex-none w-[84px] flex flex-col items-center pb-1" style={lift}>
+              <span className="-mt-3 grid place-items-center w-[56px] h-[56px] rounded-full overflow-hidden" style={{ background: "#F5F0E8", boxShadow: `inset 0 0 0 2px ${GREEN}` }}>{yeuxEl(34)}</span>
+              <span className="-mt-1.5 relative">{tag}</span>
+            </button>
+            {rest}
+          </div>
+        </Shell>
+      );
+    /* 5 · Il parle — la tête dans la barre, et une petite bulle « Une question ? » qui apparaît de temps en temps au-dessus. */
+    return (
+      <Shell>
+        <div className="flex items-end pr-1">
+          <button type="button" onClick={openSkot} aria-label="Demander à SKOT" className="relative flex-none w-[84px] min-h-[56px] flex flex-col items-center justify-center gap-0.5">
+            {skotHere && (
+              <span className="absolute left-2 bottom-[60px] skt-bubble p-[1.5px] pointer-events-none" style={{ background: CARBON, clipPath: cutTR(8) }}>
+                <span className="block bg-white px-2.5 py-1 text-[14px] font-extrabold italic whitespace-nowrap" style={{ fontFamily: JAK, color: CARBON, clipPath: cutTR(7.5) }}>Une question ?</span>
+              </span>
+            )}
+            {yeuxEl(30)}
+            <span className="text-[14px] leading-none italic" style={{ fontFamily: JAK, fontWeight: 800, color: GREEN }}>SKOT</span>
+          </button>
+          {rest}
+        </div>
+      </Shell>
+    );
+  }
 
   if (tel === 1) {
     /* Position 1 · À gauche — SKOT en première case, puis les 4 onglets ; la loupe reste dans la barre du haut. */
