@@ -215,8 +215,8 @@ Deno.test("13. missingForPublish : drum sans codes disque → []", () => {
   );
 });
 
-Deno.test("14. missingForPublish : disc_mechanical sans disc_pcd_code → ['disc_pcd_code']", () => {
-  assertEquals(missingForPublish({ ...complete, brake_type: "disc_mechanical", disc_pcd_code: null }), ["disc_pcd_code"]);
+Deno.test("14. missingForPublish : disc_mechanical sans clés disque → [] (décision 25/10 : le disque ne bloque plus)", () => {
+  assertEquals(missingForPublish({ ...complete, brake_type: "disc_mechanical", disc_diameter_code: null, disc_pcd_code: null, disc_holes_code: null }), []);
 });
 
 Deno.test("15. missingForPublish : images [] et image_url null → contient 'photo' ; image_url seule suffit", () => {

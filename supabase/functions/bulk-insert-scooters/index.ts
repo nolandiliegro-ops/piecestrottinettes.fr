@@ -174,14 +174,11 @@ export function missingForPublish(row: PublishCheckRow): string[] {
   if (!Number.isFinite(weight) || weight <= 0) missing.push("weight_kg");
   if (isBlank(row.meta_title)) missing.push("meta_title");
   if (isBlank(row.meta_description)) missing.push("meta_description");
-  if (isBlank(row.brake_type)) {
-    missing.push("brake_type");
-  } else if (row.brake_type!.includes("disc")) {
-    // Tambour / EBS (pas de "disc") : aucune clé disque exigée.
-    for (const k of ["disc_diameter_code", "disc_pcd_code", "disc_holes_code"] as const) {
-      if (isBlank(row[k])) missing.push(k);
-    }
-  }
+  // 25/10/2026 (décision de Nolan) : les 3 clés disque ne bloquent PLUS la publication.
+  // Un modèle vendu par un affilié doit être en ligne même si son disque n'est publié
+  // nulle part en double source ; il n'allume simplement aucune pièce de frein tant
+  // que la passe disques ne l'a pas rempli. brake_type reste obligatoire.
+  if (isBlank(row.brake_type)) missing.push("brake_type");
   for (const k of ["score_performance", "score_autonomy", "score_offroad"] as const) {
     if (row[k] === null || row[k] === undefined) missing.push(k);
   }
