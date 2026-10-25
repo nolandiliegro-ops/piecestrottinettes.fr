@@ -1,0 +1,7 @@
+{
+ "lot": "gardefou-test",
+ "entity": "scooter",
+ "note": "TEST 25/10 du garde-fou anti-doublon : renvoie une photo DÉJÀ sur la fiche engwe-y1000 (#1). Attendu : DOUBLON refusé, 0 photo écrite.",
+ "models": [{ "id": "aaf64e45-cba2-482a-856f-d13a7f64e944", "slug": "engwe-y1000", "name": "Engwe Y1000", "brand": "Engwe",
+   "candidates": ["https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/aaf64e45-cba2-482a-856f-d13a7f64e944/1792446227069_0.png"] }]
+}

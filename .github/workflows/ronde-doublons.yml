@@ -1,0 +1,56 @@
+name: Ronde anti-doublon photos
+
+# 25/10/2026 — garde-fou couche C : chaque lundi, toutes les fiches publiées (trottinettes + pièces) sont passées au
+# garde-fou anti-doublon (scripts/garde-doublons.mjs --ronde, LECTURE SEULE). S'il trouve deux fois la même photo sur
+# une fiche (entrée par l'admin, une synchro, un import…), il ouvre un ticket GitHub « Doublon photo » avec la liste,
+# et les planches sont poussées sur la branche donnees-photos (out/doublons-ronde/). Claude lit ce ticket à la reprise.
+
+on:
+  schedule:
+    - cron: '17 5 * * 1'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  issues: write
+
+jobs:
+  ronde:
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - name: Dépendances
+        run: npm install --prefix scripts --no-audit --no-fund
+      - name: Ronde
+        id: ronde
+        shell: bash
+        run: |
+          set +e
+          mkdir -p out
+          node scripts/garde-doublons.mjs --ronde > out/doublons-ronde.log 2>&1
+          code=$?
+          grep '^::' out/doublons-ronde.log | head -5
+          echo "code=$code" >> "$GITHUB_OUTPUT"
+          [ $code -eq 0 ] || [ $code -eq 3 ] || exit $code
+      - name: Résultats sur donnees-photos
+        shell: bash
+        run: |
+          git config user.name "ronde-doublons" && git config user.email "actions@users.noreply.github.com"
+          mkdir -p /tmp/out && cp -r out/. /tmp/out/
+          git fetch origin donnees-photos || true
+          if git show-ref --quiet refs/remotes/origin/donnees-photos; then git checkout -B donnees-photos origin/donnees-photos; else git checkout --orphan donnees-photos && git rm -rf -q . ; fi
+          mkdir -p out && cp -r /tmp/out/. out/
+          git add out && git commit -q -m "ronde doublons $(date -u +%FT%TZ)" || echo "rien à commiter"
+          for i in 1 2 3; do git push origin donnees-photos && break; git pull --rebase origin donnees-photos; done
+      - name: Ticket si doublon
+        if: steps.ronde.outputs.code == '3'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        shell: bash
+        run: |
+          body=$(node -e "const r=require('/tmp/out/doublons-ronde/ronde.json');console.log('La ronde du '+new Date().toISOString().slice(0,10)+' a trouvé '+r.doublons.length+' doublon(s) photo sur '+r.fiches+' fiches publiées.\n\n'+r.doublons.map(d=>'- `'+d.table+'` **'+d.slug+'** : photos #'+d.ia+' et #'+d.ib+' — '+d.raison).join('\n')+'\n\nPlanches : branche donnees-photos, out/doublons-ronde/. Retrait = SQL avec backup (skill pt-photos-galerie), jamais l\'index 0.')")
+          gh issue create --title "Doublon photo — ronde du $(date -u +%F)" --body "$body"

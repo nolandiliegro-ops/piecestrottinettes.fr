@@ -73,7 +73,10 @@ export function iou(a, b) {
 }
 
 // Seuils calibrés le 25/10/2026 sur les galeries publiées validées par vision (voir scripts/garde-doublons.mjs --calibrer).
-export const SEUILS = { dhash: Number(process.env.DOUBLON_DHASH ?? 6), iou: Number(process.env.DOUBLON_IOU ?? 0.97), dhashAvecIou: Number(process.env.DOUBLON_DHASH_IOU ?? 12), couleur: Number(process.env.DOUBLON_COULEUR ?? 8) };
+// Calibration 25/10 (1 018 fiches publiées, 4 015 paires validées par vision + 130 copies retirées le 24/10) :
+// 2 alertes sur les galeries propres (dont 1 vrai doublon engwe-y1000 #1/#3 que la vision avait raté), 99/130 copies
+// détectées — les 31 « ratées » sont d'autres clichés du même angle (affaire du tri vision, pas d'un garde-fou automatique).
+export const SEUILS = { dhash: Number(process.env.DOUBLON_DHASH ?? 6), iou: Number(process.env.DOUBLON_IOU ?? 0.95), dhashAvecIou: Number(process.env.DOUBLON_DHASH_IOU ?? 10), couleur: Number(process.env.DOUBLON_COULEUR ?? 8) };
 
 // Vrai si `a` et `b` sont la même photo (copie, recadrage, recompression).
 export function memePhoto(a, b, s = SEUILS) {
