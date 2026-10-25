@@ -14,7 +14,7 @@ import { classifyCompat, unverifiedLabel, verifiedReason, partDelay } from "../_
 import { CORPUS } from "./banc/cas.ts";
 import { runBanc, runNuit, runFresh, runFreshNuit, looksCut } from "./banc/banc.ts";
 
-const VERSION = "chat-skot@2026-10-25o";
+const VERSION = "chat-skot@2026-10-25p";
 const MODEL = "claude-haiku-5-5";
 const MAX_TOOL_ROUNDS = 4;
 const HISTORY_LIMIT = 14;
@@ -725,6 +725,21 @@ serve(async (req) => {
   if (body?.action === "ping") return json({ ok: true, version: VERSION, configured: !!apiKey, model: MODEL, corpus: CORPUS.length });
 
   const db = createClient(Deno.env.get("SUPABASE_URL")!, Deno.env.get("SUPABASE_SERVICE_ROLE_KEY")!);
+
+  // action "telegram" (ADMIN) : réglage du bot DÉDIÉ. Sans chat ID → liste les conversations qui ont écrit au bot (le jeton ne sort jamais) ; avec → message de test.
+  if (body?.action === "telegram") {
+    const adm = await adminFromRequest(db, req);
+    if (!adm) return json({ ok: false, error: "FORBIDDEN" }, 403);
+    const token = Deno.env.get("SKOT_TELEGRAM_BOT_TOKEN");
+    if (!token) return json({ ok: false, error: "SKOT_TELEGRAM_BOT_TOKEN absent" });
+    if (!Deno.env.get("SKOT_TELEGRAM_CHAT_ID")) {
+      const u = await fetch(`https://api.telegram.org/bot${token}/getUpdates`).then((r) => r.json()).catch(() => null);
+      const chats = new Map<string, string>();
+      for (const x of (u?.result ?? []) as any[]) { const c = x.message?.chat ?? x.my_chat_member?.chat; if (c) chats.set(String(c.id), c.title ?? c.first_name ?? c.username ?? ""); }
+      return json({ ok: true, chat_id_absent: true, chats: [...chats].map(([id, nom]) => ({ id, nom })) });
+    }
+    return json({ ok: await notifySkotTelegram(`✅ SKOT est branché (${VERSION}). Ici : questions transmises à l'atelier + résumé de chaque nuit.`) });
+  }
 
   // action "tool" (ADMIN) : exécute un outil seul, sans appeler Claude.
   if (body?.action === "tool") {
