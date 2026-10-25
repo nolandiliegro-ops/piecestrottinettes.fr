@@ -9,7 +9,7 @@
 import { serve } from "https://deno.land/std@0.190.0/http/server.ts";
 import { createClient } from "https://esm.sh/@supabase/supabase-js@2.57.2";
 
-const VERSION = "generate-rider-avatar@2026-10-25";
+const VERSION = "generate-rider-avatar@2026-10-25b";
 const MODELE_DEFAUT = "gemini-3.1-flash-image";
 const QUOTA = 3;
 
@@ -111,6 +111,10 @@ serve(async (req) => {
     // Aucun badge : l'essai est rendu au rider (rien n'a été livré).
     await db.from("avatar_ia_essais").delete().eq("user_id", userId).eq("n", n);
     console.error("[generate-rider-avatar]", erreurs);
+    // Refus côté compte Google (quota, facturation, clé) : ce n'est pas la faute de la photo du rider.
+    if (erreurs.some((e) => /quota|billing|exhausted|api key|permission|denied|not available/i.test(String(e)))) {
+      return json({ error: "Le badge IA est momentanément indisponible. Réessaie un peu plus tard.", code: "service", detail: erreurs[0] ?? null }, 503);
+    }
     return json({ error: "La création n'a pas marché avec cette photo. Essaie une photo de face, bien éclairée.", detail: erreurs[0] ?? null }, 502);
   }
   await db.from("avatar_ia_essais").update({ images: images.length }).eq("user_id", userId).eq("n", n);
