@@ -1,0 +1,27 @@
+
+→ Ninebot (1 scooter(s))
+   🖼  ninebot-e2-plus-e-ii : traitement...
+      ninebot-e2-plus-e-ii #0 PASS
+      ninebot-e2-plus-e-ii #1 WARN basse définition
+      ninebot-e2-plus-e-ii #2 FAIL produit coupé / gros plan, détourage sale / résidu de décor
+      juge #0 3/4 avant (principale possible)
+      juge #1 profil
+      ✅ 2/3 ok
+   → Photos : 1 ok, 0 erreur(s), 0 skip
+
+→ Segway (1 scooter(s))
+   🖼  segway-gt3-pro : traitement...
+      segway-gt3-pro #0 PASS
+      segway-gt3-pro #1 PASS
+      segway-gt3-pro #2 PASS
+      segway-gt3-pro #3 WARN cadrage serré
+      segway-gt3-pro #4 FAIL produit coupé / gros plan, cadrage serré
+      juge #0 3/4 avant (principale possible)
+      juge #1 3/4 avant (principale possible)
+      juge #2 profil
+      juge #3 detail
+      juge #4 profil REFUSÉE : personne
+      ✅ 4/5 ok, 1 erreur(s)
+   → Photos : 1 ok, 0 erreur(s), 0 skip
+
+Terminé.
