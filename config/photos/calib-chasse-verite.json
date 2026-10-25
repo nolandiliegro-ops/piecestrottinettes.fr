@@ -1,0 +1,277 @@
+{
+ "note": "V\u00e9rit\u00e9 terrain 25/10 pour calibrer l'anti-doublon CANDIDATE (re-d\u00e9tour\u00e9e depuis la source) contre GALERIE EN LIGNE. pos_connus = m\u00eame image relue \u00e0 l'\u0153il (8 rat\u00e9es au run b, 4 attrap\u00e9es au run a) ; ecrites = photos envoy\u00e9es aujourd'hui (candidate du lot \u2194 son fichier en ligne : m\u00eame image) ; neg_oeil = photos \u00e9crites \u2194 principale d'avant (v\u00e9rifi\u00e9 diff\u00e9rent sur la planche).",
+ "pos_connus": [
+  {
+   "lot": "chasse-2510b",
+   "slug": "navee-k100",
+   "i": 0,
+   "courant": 0
+  },
+  {
+   "lot": "chasse-2510b",
+   "slug": "navee-v25i-pro-ii",
+   "i": 0,
+   "courant": 0
+  },
+  {
+   "lot": "chasse-2510b",
+   "slug": "navee-xt5-ultra",
+   "i": 0,
+   "courant": 0
+  },
+  {
+   "lot": "chasse-2510b",
+   "slug": "navee-e25-pro",
+   "i": 0,
+   "courant": 0
+  },
+  {
+   "lot": "chasse-2510b",
+   "slug": "navee-gt3-pro",
+   "i": 0,
+   "courant": 0
+  },
+  {
+   "lot": "chasse-2510b",
+   "slug": "navee-st5-pro",
+   "i": 0,
+   "courant": 0
+  },
+  {
+   "lot": "chasse-2510b",
+   "slug": "weped-fold-3",
+   "i": 1,
+   "courant": 0
+  },
+  {
+   "lot": "chasse-2510b",
+   "slug": "kukirin-g4-max",
+   "i": 0,
+   "courant": 0
+  },
+  {
+   "lot": "chasse-2510a",
+   "slug": "isinwheel-h7-pro",
+   "i": 5,
+   "courant": 0
+  },
+  {
+   "lot": "chasse-2510a",
+   "slug": "e-twow-tanktorq-tk2-lite",
+   "i": 3,
+   "courant": 0
+  },
+  {
+   "lot": "chasse-2510a",
+   "slug": "e-twow-tanktorq-tk2-lite",
+   "i": 4,
+   "courant": 3
+  },
+  {
+   "lot": "chasse-2510a",
+   "slug": "e-twow-tanktorq-tk2-lite",
+   "i": 5,
+   "courant": 2
+  }
+ ],
+ "ecrites": [
+  {
+   "lot": "chasse-2510a",
+   "slug": "circooter-landturbo-pro",
+   "i": 0,
+   "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/546154f2-c1cd-4b52-961d-23e038fb8351/1792942876557_0.png"
+  },
+  {
+   "lot": "chasse-2510a",
+   "slug": "circooter-landturbo-pro",
+   "i": 6,
+   "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/546154f2-c1cd-4b52-961d-23e038fb8351/1792942878540_0.png"
+  },
+  {
+   "lot": "chasse-2510a",
+   "slug": "dualtron-eagle-pro",
+   "i": 2,
+   "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/14c842c6-d57c-482c-95b0-c80fa661bb05/1792942887533_0.png"
+  },
+  {
+   "lot": "chasse-2510a",
+   "slug": "isinwheel-d2",
+   "i": 4,
+   "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/e6127ed9-f2f1-4622-b283-9d4ca46fe3d1/1792942916187_0.png"
+  },
+  {
+   "lot": "chasse-2510a",
+   "slug": "iscooter-f7-ultra",
+   "i": 5,
+   "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/e82a6f98-f4aa-48cf-b098-ee2206641652/1792942896637_0.png"
+  },
+  {
+   "lot": "chasse-2510a",
+   "slug": "iscooter-w12",
+   "i": 6,
+   "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/d6824bc0-d2e9-43eb-aff1-a9aa01827d7a/1792942906021_0.png"
+  },
+  {
+   "lot": "chasse-2510a",
+   "slug": "isinwheel-gt4s",
+   "i": 3,
+   "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/785f95dc-24ac-43cf-8880-edd402614062/1792942936445_0.png"
+  },
+  {
+   "lot": "chasse-2510a",
+   "slug": "isinwheel-gt4s",
+   "i": 5,
+   "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/785f95dc-24ac-43cf-8880-edd402614062/1792942938756_0.png"
+  },
+  {
+   "lot": "chasse-2510a",
+   "slug": "xiaomi-electric-scooter-4-go",
+   "i": 0,
+   "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/1f7c36d4-569b-4ba3-a14a-72166356f588/1792942965193_0.png"
+  },
+  {
+   "lot": "chasse-2510a",
+   "slug": "xiaomi-electric-scooter-4-go",
+   "i": 4,
+   "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/1f7c36d4-569b-4ba3-a14a-72166356f588/1792942966872_0.png"
+  },
+  {
+   "lot": "chasse-2510a",
+   "slug": "xiaomi-electric-scooter-4-go",
+   "i": 5,
+   "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/1f7c36d4-569b-4ba3-a14a-72166356f588/1792942968237_0.png"
+  },
+  {
+   "lot": "chasse-2510b",
+   "slug": "inmotion-climber",
+   "i": 0,
+   "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/a2155ed2-587a-4c17-a3cd-095aa9f76ddf/1792945158356_0.png"
+  },
+  {
+   "lot": "chasse-2510b",
+   "slug": "navee-g5-pro",
+   "i": 6,
+   "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/170453b2-496c-42d1-9db0-4a86ce22abcb/1792945172711_0.png"
+  },
+  {
+   "lot": "chasse-2510b",
+   "slug": "ninebot-f65",
+   "i": 6,
+   "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/5528d14e-a54f-42f3-9222-caf409aee669/1792945182330_0.png"
+  },
+  {
+   "lot": "chasse-2510b",
+   "slug": "ninebot-f65",
+   "i": 8,
+   "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/5528d14e-a54f-42f3-9222-caf409aee669/1792945184784_0.png"
+  },
+  {
+   "lot": "chasse-2510b",
+   "slug": "dualtron-spider-2",
+   "i": 0,
+   "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/9dec9199-0a18-48f7-90c7-72d8dc9d453c/1792945199219_0.png"
+  },
+  {
+   "lot": "chasse-2510b",
+   "slug": "dualtron-spider-2",
+   "i": 2,
+   "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/9dec9199-0a18-48f7-90c7-72d8dc9d453c/1792945203011_0.png"
+  },
+  {
+   "lot": "chasse-2510b",
+   "slug": "kukirin-g4-ultra",
+   "i": 6,
+   "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/f2059424-c4c6-44e8-8628-136555a8120b/1792945214392_0.png"
+  },
+  {
+   "lot": "chasse-2510b",
+   "slug": "ninebot-e3",
+   "i": 2,
+   "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/35600319-a72d-44bb-8bf0-b80ea98e0099/1792945222693_0.png"
+  },
+  {
+   "lot": "chasse-2510b",
+   "slug": "navee-nt5-ultra-x",
+   "i": 5,
+   "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/3686fdcb-c030-4b85-9a41-90b46c5ba020/1792945232528_0.png"
+  },
+  {
+   "lot": "chasse-2510b",
+   "slug": "weped-ssgt",
+   "i": 2,
+   "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/098ce5d9-a1d0-4157-b0c4-13690ac8e64e/1792945243421_0.png"
+  },
+  {
+   "lot": "chasse-2510b",
+   "slug": "hikerboy-off-road-2",
+   "i": 5,
+   "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/a82f502d-c28f-4785-8214-91275d167726/1792945255517_0.png"
+  },
+  {
+   "lot": "chasse-2510b",
+   "slug": "kaabo-mantis-x-plus",
+   "i": 0,
+   "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/3c1869b8-e8a9-4fd8-9666-38e79e2b21c7/1792945276286_0.png"
+  },
+  {
+   "lot": "chasse-2510b",
+   "slug": "kaabo-mantis-x-plus",
+   "i": 5,
+   "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/3c1869b8-e8a9-4fd8-9666-38e79e2b21c7/1792945285026_0.png"
+  },
+  {
+   "lot": "chasse-2510b",
+   "slug": "kaabo-mantis-x-plus",
+   "i": 9,
+   "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/3c1869b8-e8a9-4fd8-9666-38e79e2b21c7/1792945287773_0.png"
+  },
+  {
+   "lot": "chasse-2510b",
+   "slug": "ninebot-e3-pro-e",
+   "i": 0,
+   "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/ce627e3b-d3df-4ee2-a99e-08233d1d09b2/1792945298611_0.png"
+  },
+  {
+   "lot": "chasse-2510b",
+   "slug": "kugoo-g3-pro",
+   "i": 7,
+   "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/81fdb78d-b392-4d9b-8b77-18abf2ad1c3e/1792945310018_0.png"
+  },
+  {
+   "lot": "chasse-2510b",
+   "slug": "teverun-blade-mini-ultra",
+   "i": 0,
+   "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/8b6d7ee1-9de4-44ae-b43f-640c628aacce/1792945321330_0.png"
+  },
+  {
+   "lot": "chasse-2510b",
+   "slug": "vsett-11-plus-super",
+   "i": 0,
+   "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/b03c6a4d-8fb9-4d27-ac62-2bac410169cc/1792945332167_0.png"
+  },
+  {
+   "lot": "chasse-2510b",
+   "slug": "inmotion-rs",
+   "i": 9,
+   "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/e6a9c39b-9ce5-488a-ba77-bf1f5b954e91/1792945339129_0.png"
+  },
+  {
+   "lot": "chasse-2510b",
+   "slug": "iscooter-ix3",
+   "i": 6,
+   "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/cb1a19b5-4e37-413c-8b3e-3b4b172b20fd/1792945351744_0.png"
+  },
+  {
+   "lot": "chasse-2510b",
+   "slug": "urbanglide-all-road-6-pro",
+   "i": 1,
+   "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/8498fb4c-37d3-4308-9cf2-08b786c2c080/1792945362370_0.png"
+  },
+  {
+   "lot": "chasse-2510b",
+   "slug": "zero-8",
+   "i": 0,
+   "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/f8a38b40-8156-4d49-b9e5-30be32a90535/1792945372841_0.png"
+  }
+ ]
+}

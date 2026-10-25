@@ -165,6 +165,14 @@ jobs:
               tail -n 3 "out/juge.log"
               continue
             fi
+            if [ "$mode" = "calib-chasse" ]; then
+              # Lecture seule (25/10) : calibration anti-doublon candidate re-détourée ↔ galerie en ligne (Node 22 : import .ts).
+              npx -y node@22 scripts/calib-doublon-chasse.mjs > "out/calib-chasse.log" 2>&1
+              echo "::notice title=calib-chasse::EXIT=$?"
+              grep '^::' "out/calib-chasse.log" | head -5
+              tail -n 5 "out/calib-chasse.log"
+              continue
+            fi
             if [ "$mode" = "doublons-core" ]; then
               # Lecture seule (25/10) : calibration du cœur de process-images (Node 22 pour importer le .ts).
               npx -y node@22 scripts/garde-doublons-core.mjs > "out/doublons-core.log" 2>&1
