@@ -52,3 +52,4 @@ export const openPrelaunch = () => {
 
 // relance publication 25/10 C8
 // relance publication 25/10 partage jpeg
+// 25/10 : republication du kit ambassadeur (commit 94092b5)
