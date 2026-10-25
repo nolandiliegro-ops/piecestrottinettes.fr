@@ -25,10 +25,14 @@ export type SkotPosVariant = 1 | 2 | 3 | 4 | 5;
 export type SkotYeuxVariant = 1 | 2 | 3 | 4 | 5;
 export const readSkotYeuxVariant = (): SkotYeuxVariant | null => {
   try {
-    const n = Number(new URLSearchParams(window.location.search).get("skotyeux"));
-    return n >= 1 && n <= 5 ? (n as SkotYeuxVariant) : null;
+    // 25/10 : Nolan choisit la 2 « Rangé dans la barre » (+ animations de temps en temps) = défaut ;
+    // ?skotyeux=0 = position ?skotpos (coin gauche détouré), 1..5 = les autres propositions.
+    const raw = new URLSearchParams(window.location.search).get("skotyeux");
+    if (raw === null) return 2;
+    const n = Number(raw);
+    return n >= 1 && n <= 5 ? (n as SkotYeuxVariant) : n === 0 ? null : 2;
   } catch {
-    return null;
+    return 2;
   }
 };
 export const readSkotPosVariant = (): SkotPosVariant | null => {
@@ -302,7 +306,55 @@ const TEL_CSS = `@keyframes skt-wink{0%,86%,100%{opacity:0}88%,96%{opacity:1}}
 .skt-peek{animation:skt-peek .7s .3s cubic-bezier(.2,.9,.3,1.2) both}
 .skt-tab{animation:skt-tab 2.8s ease-in-out infinite}
 .skt-bubble{animation:skt-bubble 11s 2s ease-in-out infinite}
-@media (prefers-reduced-motion:reduce){.skt-wink,.skt-peek,.skt-tab,.skt-bubble{animation:none}}`;
+@keyframes skx-coucou{0%{transform:translateY(0)}18%{transform:translateY(-28px)}26%{transform:translateY(-24px) rotate(-6deg)}34%,70%{transform:translateY(-26px) rotate(0)}100%{transform:translateY(0)}}
+@keyframes skx-clin{0%,30%{opacity:0}34%,62%{opacity:1}66%,100%{opacity:0}}
+@keyframes skx-bond{0%{transform:translateY(0) scale(1,1)}12%{transform:translateY(2px) scale(1.15,.8)}32%{transform:translateY(-34px) scale(.9,1.12) rotate(-8deg)}50%{transform:translateY(0) scale(1.12,.86)}64%{transform:translateY(-12px) scale(.96,1.05) rotate(4deg)}80%{transform:translateY(0) scale(1.04,.96)}100%{transform:none}}
+@keyframes skx-curieux{0%{transform:none}22%{transform:translate(14px,-16px) rotate(14deg)}30%{transform:translate(16px,-18px) rotate(10deg)}38%{transform:translate(14px,-16px) rotate(16deg)}70%{transform:translate(15px,-17px) rotate(13deg)}100%{transform:none}}
+@keyframes skx-dring{0%,100%{transform:none}10%,30%,50%,70%{transform:translateY(-6px) rotate(-7deg)}20%,40%,60%,80%{transform:translateY(-6px) rotate(7deg)}}
+@keyframes skx-dring-txt{0%{opacity:0;transform:translateY(4px) scale(.8)}15%,70%{opacity:1;transform:translateY(-10px) scale(1)}100%{opacity:0;transform:translateY(-20px) scale(1)}}
+@keyframes skx-question{0%{transform:none}15%,85%{transform:translateY(-14px)}100%{transform:none}}
+@keyframes skx-bulle{0%,10%{opacity:0;transform:translateY(6px) scale(.85)}20%,80%{opacity:1;transform:none}92%,100%{opacity:0;transform:translateY(4px) scale(.9)}}
+.skx-coucou{animation:skx-coucou 2.2s cubic-bezier(.3,1.4,.5,1) both}
+.skx-coucou .skx-clin{animation:skx-clin 2.2s both}
+.skx-bond{transform-origin:50% 100%;animation:skx-bond 1.3s ease-out both}
+.skx-curieux{transform-origin:30% 100%;animation:skx-curieux 2.4s ease-in-out both}
+.skx-dring{transform-origin:50% 90%;animation:skx-dring 1.2s ease-in-out both}
+.skx-dring-txt{animation:skx-dring-txt 1.6s ease-out both}
+.skx-question{animation:skx-question 3.2s cubic-bezier(.3,1.3,.5,1) both}
+.skx-bulle{animation:skx-bulle 3.2s ease-out both}
+@media (prefers-reduced-motion:reduce){.skt-wink,.skt-peek,.skt-tab,.skt-bubble,.skx-coucou,.skx-coucou .skx-clin,.skx-bond,.skx-curieux,.skx-dring,.skx-dring-txt,.skx-question,.skx-bulle{animation:none}}`;
+
+/* 25/10 (Nolan : « on le laisse dans la barre… parfois tu l'animes, il sort un peu, d'un coup ») :
+   de temps en temps (16 à 26 s, jamais pendant qu'on fait défiler), SKOT joue une de ses 5 animations.
+   ?skotanim=coucou|bond|curieux|dring|question = la rejouer en boucle (aperçu). */
+type SkotAnim = "coucou" | "bond" | "curieux" | "dring" | "question";
+const SKOT_ANIMS: SkotAnim[] = ["coucou", "bond", "curieux", "dring", "question"];
+const SKOT_ANIM_MS: Record<SkotAnim, number> = { coucou: 2200, bond: 1300, curieux: 2400, dring: 1600, question: 3200 };
+const useSkotPlay = (out: boolean) => {
+  const [play, setPlay] = useState<{ a: SkotAnim; n: number } | null>(null);
+  const outRef = useRef(out);
+  outRef.current = out;
+  useEffect(() => {
+    let forced: SkotAnim | null = null;
+    try { const q = new URLSearchParams(window.location.search).get("skotanim"); if (q && (SKOT_ANIMS as string[]).includes(q)) forced = q as SkotAnim; } catch { /* rien */ }
+    let n = 0;
+    let t: ReturnType<typeof setTimeout>;
+    let last: SkotAnim | null = null;
+    const next = (ms: number) => { t = setTimeout(go, ms); };
+    const go = () => {
+      if (!outRef.current || document.hidden) return next(4000);
+      let a = forced ?? SKOT_ANIMS[Math.floor(Math.random() * SKOT_ANIMS.length)];
+      if (!forced && a === last) a = SKOT_ANIMS[(SKOT_ANIMS.indexOf(a) + 1) % SKOT_ANIMS.length];
+      last = a;
+      n += 1;
+      setPlay({ a, n });
+      t = setTimeout(() => { setPlay(null); next(forced ? 1200 : 16000 + Math.random() * 10000); }, SKOT_ANIM_MS[a]);
+    };
+    next(forced ? 800 : 6000);
+    return () => clearTimeout(t);
+  }, []);
+  return play;
+};
 let telInjected = false;
 const BAR_TOP = "calc(max(env(safe-area-inset-bottom), 6px) + 58px)";
 const restBody = () => { const s = skotSaison(); return s ? `/skot/p-${s}.webp` : "/skot/skot-ecoute.webp"; };
@@ -331,6 +383,7 @@ const V5 = () => {
   const [pos] = useState(readSkotPosVariant);
   const [yeux] = useState(readSkotYeuxVariant);
   const [saison] = useState(() => skotSaison());
+  const play = useSkotPlay(out);
   const [body] = useState(restBody);
   const lift = { transform: out ? "translateY(0) scale(1)" : "translateY(22px) scale(0.82)", transition: "transform .38s cubic-bezier(.2,.9,.3,1.25)" };
   const label = <span className="-mt-2 relative px-2 py-0.5 text-white italic uppercase" style={{ background: GREEN, fontFamily: UNB, fontWeight: 800, fontSize: 11, clipPath: cutTR(6), opacity: out ? 1 : 0, transition: "opacity .2s" }}>SKOT</span>;
@@ -382,8 +435,17 @@ const V5 = () => {
       return (
         <Shell>
           <div className="flex items-end pr-1">
-            <button type="button" onClick={openSkot} aria-label="Demander à SKOT" className="flex-none w-[84px] min-h-[56px] flex flex-col items-center justify-center gap-0.5">
-              {yeuxEl(30)}
+            <button type="button" onClick={openSkot} aria-label="Demander à SKOT" className="relative flex-none w-[84px] min-h-[56px] flex flex-col items-center justify-center gap-0.5">
+              {play?.a === "dring" && <span key={`d${play.n}`} className="absolute left-1/2 -ml-6 bottom-[46px] skx-dring-txt pointer-events-none text-[14px] font-extrabold italic uppercase whitespace-nowrap" style={{ fontFamily: UNB, color: GREEN }}>Dring !</span>}
+              {play?.a === "question" && skotHere && (
+                <span key={`q${play.n}`} className="absolute left-2 bottom-[62px] skx-bulle p-[1.5px] pointer-events-none" style={{ background: CARBON, clipPath: cutTR(8) }}>
+                  <span className="block bg-white px-2.5 py-1 text-[14px] font-extrabold italic whitespace-nowrap" style={{ fontFamily: JAK, color: CARBON, clipPath: cutTR(7.5) }}>Une question ?</span>
+                </span>
+              )}
+              <span key={play ? `a${play.n}` : "repos"} className={`relative block ${play ? `skx-${play.a}` : ""}`}>
+                {yeuxEl(30)}
+                {play?.a === "coucou" && !saison && <img src="/skot/yeux-clin.webp" alt="" draggable={false} className="skx-clin absolute inset-0 w-full h-full object-contain select-none" style={{ opacity: 0 }} />}
+              </span>
               <span className="text-[14px] leading-none italic" style={{ fontFamily: JAK, fontWeight: 800, color: GREEN }}>SKOT</span>
             </button>
             {rest}
