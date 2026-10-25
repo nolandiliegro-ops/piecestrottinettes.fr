@@ -1,0 +1,16 @@
+⚠  [Ninebot] ninebot-e2-plus-e-ii — clés frein manquantes (assumé) : disc_diameter, disc_pcd, disc_holes
+⚠  [Segway] segway-gt3-pro — clés frein manquantes (assumé) : disc_diameter, disc_pcd, disc_holes
+⚠  2 scooter(s) sans clés frein complètes — poursuite (--allow-missing-keys).
+
+
+→ Ninebot (1 modèle(s))
+   ✅ Insérés : 0   ⏭  Ignorés : 0
+   ⏸  ninebot-e2-plus-e-ii : reste brouillon : photo
+   → Publiés : 0/1
+
+→ Segway (1 modèle(s))
+   ✅ Insérés : 0   ⏭  Ignorés : 0
+   ⏸  segway-gt3-pro : reste brouillon : photo
+   → Publiés : 0/1
+
+Terminé.
