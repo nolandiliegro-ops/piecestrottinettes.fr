@@ -1,0 +1,2421 @@
+[
+ {
+  "slug": "circooter-landturbo-pro",
+  "i": 0,
+  "url": "http://www.circooter.com/cdn/shop/files/1_ea9bb12e-ab52-4347-bcab-4a365a4218cf.jpg?v=1776304604&width=2048",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.019,
+   "fill": 0.817
+  },
+  "size": [
+   1082,
+   1609
+  ],
+  "error": null,
+  "juge": {
+   "vue": "3/4 avant",
+   "refus": false,
+   "motifs": [],
+   "principale_ok": true,
+   "rang": 0,
+   "note": ""
+  },
+  "doublon": null
+ },
+ {
+  "slug": "circooter-landturbo-pro",
+  "i": 1,
+  "url": "https://www.circooter.com/cdn/shop/files/1_ea9bb12e-ab52-4347-bcab-4a365a4218cf.jpg?v=1776304604&width=1920",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.019,
+   "fill": 0.817
+  },
+  "size": [
+   1082,
+   1609
+  ],
+  "error": null,
+  "juge": null,
+  "doublon": "même image (dHash 0, couleur 0.0) (lot#0)"
+ },
+ {
+  "slug": "circooter-landturbo-pro",
+  "i": 2,
+  "url": "https://www.circooter.com/cdn/shop/files/LTB-GLOVE_05f943d8-35ec-4c76-843e-b0eaed429a50.png?v=1790149699&width=1920",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.018,
+   "fill": 0.811
+  },
+  "size": [
+   1090,
+   1613
+  ],
+  "error": null,
+  "juge": null,
+  "doublon": "même image (dHash 1, couleur 7.8) (lot#0)"
+ },
+ {
+  "slug": "circooter-landturbo-pro",
+  "i": 3,
+  "url": "https://cdn.shopify.com/s/files/1/0622/9757/1557/files/1_ea9bb12e-ab52-4347-bcab-4a365a4218cf.jpg?v=1776304604",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.019,
+   "fill": 0.817
+  },
+  "size": [
+   1082,
+   1609
+  ],
+  "error": null,
+  "juge": null,
+  "doublon": "même image (dHash 0, couleur 0.0) (lot#0)"
+ },
+ {
+  "slug": "circooter-landturbo-pro",
+  "i": 4,
+  "url": "https://cdn.shopify.com/s/files/1/0622/9757/1557/files/14_2.jpg?v=1775630455",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.034,
+   "fill": 0.479
+  },
+  "size": [
+   1346,
+   1605
+  ],
+  "error": null,
+  "juge": {
+   "vue": "profil",
+   "refus": true,
+   "motifs": [
+    "personne"
+   ],
+   "principale_ok": false,
+   "rang": 9,
+   "note": "Homme debout sur la trottinette, vue de profil, détourage propre."
+  },
+  "doublon": null
+ },
+ {
+  "slug": "circooter-landturbo-pro",
+  "i": 5,
+  "url": "https://cdn.shopify.com/s/files/1/0622/9757/1557/files/2_3520dc8e-1e65-4828-8417-00ed87c31e0b.jpg?v=1776304604",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.029,
+   "fill": 0.672
+  },
+  "size": [
+   1728,
+   1728
+  ],
+  "error": null,
+  "juge": {
+   "vue": "profil",
+   "refus": false,
+   "motifs": [],
+   "principale_ok": false,
+   "rang": 2,
+   "note": ""
+  },
+  "doublon": null
+ },
+ {
+  "slug": "circooter-landturbo-pro",
+  "i": 6,
+  "url": "https://cdn.shopify.com/s/files/1/0622/9757/1557/files/4_32ca4823-dcaa-467b-9f69-aaa96d8e599b.jpg?v=1776304604",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.026,
+   "fill": 0.841
+  },
+  "size": [
+   1549,
+   1442
+  ],
+  "error": null,
+  "juge": {
+   "vue": "pliee",
+   "refus": false,
+   "motifs": [],
+   "principale_ok": false,
+   "rang": 2,
+   "note": ""
+  },
+  "doublon": null
+ },
+ {
+  "slug": "circooter-landturbo-pro",
+  "i": 7,
+  "url": "https://cdn.shopify.com/s/files/1/0622/9757/1557/files/3_4f94d22d-4c9b-46e8-bdf9-dec95df94c9a.jpg?v=1776304604",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.025,
+   "fill": 0.771
+  },
+  "size": [
+   1571,
+   775
+  ],
+  "error": null,
+  "juge": {
+   "vue": "pliee",
+   "refus": false,
+   "motifs": [],
+   "principale_ok": false,
+   "rang": 2,
+   "note": "Trottinette Circooter pliée, vue de profil, tige rabattue."
+  },
+  "doublon": null
+ },
+ {
+  "slug": "circooter-landturbo-pro",
+  "i": 8,
+  "url": "https://cdn.shopify.com/s/files/1/0622/9757/1557/files/12_29ddb2c2-f0f9-4cc7-b2f2-1781fd5dcad5.jpg?v=1775875083",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.014,
+   "fill": 0.703
+  },
+  "size": [
+   1728,
+   1728
+  ],
+  "error": null,
+  "juge": {
+   "vue": "detail",
+   "refus": false,
+   "motifs": [],
+   "principale_ok": false,
+   "rang": 3,
+   "note": "Gros plan roue arrière avec suspension et frein à disque, trottinette coupée par les bords."
+  },
+  "doublon": null
+ },
+ {
+  "slug": "circooter-landturbo-pro",
+  "i": 9,
+  "url": "https://cdn.shopify.com/s/files/1/0622/9757/1557/files/11_d502d967-2f5c-4357-ae60-fb682918f2d8.jpg?v=1775875083",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.024,
+   "fill": 0.86
+  },
+  "size": [
+   1728,
+   1728
+  ],
+  "error": null,
+  "juge": {
+   "vue": "detail",
+   "refus": false,
+   "motifs": [],
+   "principale_ok": false,
+   "rang": 3,
+   "note": "Gros plan du plancher Circooter, trottinette coupée par les bords de l'image."
+  },
+  "doublon": null
+ },
+ {
+  "slug": "dualtron-eagle-pro",
+  "i": 0,
+  "url": "http://pietechnologie.com/cdn/shop/products/TrottinetteelectriqueDualtronEaglePro-Pietechnologie.png?v=1698399573",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.003,
+   "fill": 0.49
+  },
+  "size": [
+   1766,
+   1766
+  ],
+  "error": null,
+  "juge": null,
+  "doublon": null
+ },
+ {
+  "slug": "dualtron-eagle-pro",
+  "i": 1,
+  "url": "http://pietechnologie.com/cdn/shop/products/TrottinetteelectriqueDualtronEaglePro-Pietechnologie_1200x1200.png?v=1698399573",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.001,
+   "fill": 0.434
+  },
+  "size": [
+   1296,
+   1296
+  ],
+  "error": null,
+  "juge": {
+   "vue": "profil",
+   "refus": true,
+   "motifs": [
+    "autre objet"
+   ],
+   "principale_ok": false,
+   "rang": 9,
+   "note": "Accessoires translucides à droite (gants, casque, antivol, lumière) ajoutés à côté de la trottinette."
+  },
+  "doublon": null
+ },
+ {
+  "slug": "dualtron-eagle-pro",
+  "i": 2,
+  "url": "http://pietechnologie.com/cdn/shop/products/Capture_1200x1200.png?v=1698399573",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0,
+   "fill": 0.773
+  },
+  "size": [
+   275,
+   518
+  ],
+  "error": null,
+  "juge": {
+   "vue": "3/4 avant",
+   "refus": false,
+   "motifs": [],
+   "principale_ok": true,
+   "rang": 0,
+   "note": ""
+  },
+  "doublon": null
+ },
+ {
+  "slug": "dualtron-eagle-pro",
+  "i": 3,
+  "url": "https://pietechnologie.com/cdn/shop/products/TrottinetteelectriqueDualtronEaglePro-Pietechnologie.png?v=1698399573",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.003,
+   "fill": 0.49
+  },
+  "size": [
+   1766,
+   1766
+  ],
+  "error": null,
+  "juge": null,
+  "doublon": null
+ },
+ {
+  "slug": "dualtron-eagle-pro",
+  "i": 4,
+  "url": "https://pietechnologie.com/cdn/shop/products/Capture.png?v=1698399573",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0,
+   "fill": 0.773
+  },
+  "size": [
+   275,
+   518
+  ],
+  "error": null,
+  "juge": null,
+  "doublon": "même image (dHash 0, couleur 0.0) (lot#2)"
+ },
+ {
+  "slug": "dualtron-eagle-pro",
+  "i": 5,
+  "url": "https://pietechnologie.com/cdn/shop/products/TrottinetteelectriqueDualtronEaglePro-Pietechnologie_x100.png?v=1698399573",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "basse définition",
+   "petit élément détaché (2 morceaux)"
+  ],
+  "plus": {
+   "verdict": "WARN",
+   "reasons": [
+    "petit élément détaché (2 morceaux)"
+   ],
+   "parts": 2,
+   "second": 0.023,
+   "vivid": 0,
+   "fill": 0.431
+  },
+  "size": [
+   103,
+   95
+  ],
+  "error": null,
+  "juge": null,
+  "doublon": null
+ },
+ {
+  "slug": "dualtron-eagle-pro",
+  "i": 6,
+  "url": "https://cdn.shopify.com/s/files/1/0506/5113/6182/products/TrottinetteelectriqueDualtronEaglePro-Pietechnologie.png?v=1698399573",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.003,
+   "fill": 0.49
+  },
+  "size": [
+   1766,
+   1766
+  ],
+  "error": null,
+  "juge": null,
+  "doublon": null
+ },
+ {
+  "slug": "dualtron-eagle-pro",
+  "i": 7,
+  "url": "https://cdn.shopify.com/s/files/1/0506/5113/6182/products/Capture.png?v=1698399573",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0,
+   "fill": 0.773
+  },
+  "size": [
+   275,
+   518
+  ],
+  "error": null,
+  "juge": null,
+  "doublon": "même image (dHash 0, couleur 0.0) (lot#2)"
+ },
+ {
+  "slug": "dualtron-eagle-pro",
+  "i": 8,
+  "url": "http://www.wee-bot.com/cdn/shop/products/trottinette_electrique_dualtron_eagle_pro_pas_cher.jpg?v=1717662343",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0,
+   "fill": 0.782
+  },
+  "size": [
+   509,
+   950
+  ],
+  "error": null,
+  "juge": {
+   "vue": "3/4 avant",
+   "refus": false,
+   "motifs": [],
+   "principale_ok": true,
+   "rang": 0,
+   "note": ""
+  },
+  "doublon": null
+ },
+ {
+  "slug": "dualtron-eagle-pro",
+  "i": 9,
+  "url": "https://www.wee-bot.com/cdn/shop/products/trottinette_electrique_dualtron_eagle_pro_pas_cher_600x600_crop_center.jpg?v=1717662343",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0,
+   "fill": 0.401
+  },
+  "size": [
+   648,
+   648
+  ],
+  "error": null,
+  "juge": null,
+  "doublon": "même image (dHash 1, couleur 1.6) (lot#8)"
+ },
+ {
+  "slug": "e-twow-tanktorq-tk2-lite",
+  "i": 0,
+  "url": "http://e-twow.com/cdn/shop/files/e-twow_electric_scooter_TK2_lite.png?v=1779932739",
+  "verdict": "FAIL",
+  "reasons": [
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 4 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 4 morceaux"
+   ],
+   "parts": 4,
+   "second": 0.198,
+   "vivid": 0.001,
+   "fill": 0.834
+  },
+  "size": [
+   1481,
+   1730
+  ],
+  "error": null,
+  "juge": null,
+  "doublon": null
+ },
+ {
+  "slug": "e-twow-tanktorq-tk2-lite",
+  "i": 1,
+  "url": "https://e-twow.com/cdn/shop/files/e-twow_electric_scooter_TK2_lite.png?v=1779932739&width=1920",
+  "verdict": "FAIL",
+  "reasons": [
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 4 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 4 morceaux"
+   ],
+   "parts": 4,
+   "second": 0.2,
+   "vivid": 0.001,
+   "fill": 0.834
+  },
+  "size": [
+   1412,
+   1653
+  ],
+  "error": null,
+  "juge": null,
+  "doublon": null
+ },
+ {
+  "slug": "e-twow-tanktorq-tk2-lite",
+  "i": 2,
+  "url": "https://cdn.shopify.com/s/files/1/0742/6922/9308/files/e-twow_electric_scooter_TK2_lite.png?v=1779932739",
+  "verdict": "FAIL",
+  "reasons": [
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 4 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 4 morceaux"
+   ],
+   "parts": 4,
+   "second": 0.198,
+   "vivid": 0.001,
+   "fill": 0.834
+  },
+  "size": [
+   1481,
+   1730
+  ],
+  "error": null,
+  "juge": null,
+  "doublon": null
+ },
+ {
+  "slug": "e-twow-tanktorq-tk2-lite",
+  "i": 3,
+  "url": "https://cdn.shopify.com/s/files/1/0742/6922/9308/files/E-twow_tank_torq_electric_scooter_TK2_lite_folded_1.jpg?v=1780625239",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.02,
+   "fill": 0.734
+  },
+  "size": [
+   1750,
+   815
+  ],
+  "error": null,
+  "juge": null,
+  "doublon": "même image (dHash 0, couleur 1.5) (b1fe8e71/1792446167179_0.png)"
+ },
+ {
+  "slug": "e-twow-tanktorq-tk2-lite",
+  "i": 4,
+  "url": "https://cdn.shopify.com/s/files/1/0742/6922/9308/files/E-twow_tank_torq_electric_scooter_TK2_lite_front_drum_brake_1.jpg?v=1780625239",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.005,
+   "fill": 0.736
+  },
+  "size": [
+   1728,
+   1760
+  ],
+  "error": null,
+  "juge": null,
+  "doublon": "même image (dHash 4, couleur 4.1) (b1fe8e71/1792446176517_0.png)"
+ },
+ {
+  "slug": "e-twow-tanktorq-tk2-lite",
+  "i": 5,
+  "url": "https://cdn.shopify.com/s/files/1/0742/6922/9308/files/E-twow_tank_torq_electric_scooter_TK2_lite_rear_wheel_1.jpg?v=1780625239",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.009,
+   "fill": 0.664
+  },
+  "size": [
+   1760,
+   1599
+  ],
+  "error": null,
+  "juge": null,
+  "doublon": "même image (dHash 5, couleur 3.0) (b1fe8e71/1792446173169_0.png)"
+ },
+ {
+  "slug": "e-twow-tanktorq-tk2-lite",
+  "i": 6,
+  "url": "https://cdn.shopify.com/s/files/1/0742/6922/9308/files/E-twow_tank_torq_electric_scooter_TK2_lite_charging_socket.jpg?v=1780625239",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0,
+   "fill": 0.696
+  },
+  "size": [
+   1760,
+   1760
+  ],
+  "error": null,
+  "juge": {
+   "vue": "detail",
+   "refus": false,
+   "motifs": [],
+   "principale_ok": false,
+   "rang": 3,
+   "note": "Gros plan de la base de la colonne e-Twow avec prise de charge 67V, cadrage serré."
+  },
+  "doublon": null
+ },
+ {
+  "slug": "e-twow-tanktorq-tk2-lite",
+  "i": 7,
+  "url": "https://cdn.shopify.com/s/files/1/0742/6922/9308/files/E-twow_tank_torq_electric_scooter_TK2_lite_folding_lock.jpg?v=1780625239",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0,
+   "fill": 0.655
+  },
+  "size": [
+   1760,
+   1760
+  ],
+  "error": null,
+  "juge": null,
+  "doublon": null
+ },
+ {
+  "slug": "e-twow-tanktorq-tk2-lite",
+  "i": 8,
+  "url": "https://b2b.e-twow.com/wp-content/uploads/2026/03/e-twow-electric-scooter-TK2-lite-2.png",
+  "verdict": "FAIL",
+  "reasons": [
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 4 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 4 morceaux"
+   ],
+   "parts": 4,
+   "second": 0.198,
+   "vivid": 0,
+   "fill": 0.834
+  },
+  "size": [
+   1481,
+   1730
+  ],
+  "error": null,
+  "juge": null,
+  "doublon": null
+ },
+ {
+  "slug": "e-twow-tanktorq-tk2-lite",
+  "i": 9,
+  "url": "https://b2b.e-twow.com/wp-content/uploads/2026/02/E-TWOW-TK3-ELECTRIC-SCOOTER-4.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.016,
+   "fill": 0.71
+  },
+  "size": [
+   1760,
+   1760
+  ],
+  "error": null,
+  "juge": {
+   "vue": "detail",
+   "refus": false,
+   "motifs": [],
+   "principale_ok": false,
+   "rang": 3,
+   "note": "Gros plan du guidon et de l'écran ; la trottinette est coupée en bas et à droite."
+  },
+  "doublon": null
+ },
+ {
+  "slug": "iscooter-f7-ultra",
+  "i": 0,
+  "url": "http://www.iscooterglobal.eu/cdn/shop/files/High-Performancef7ultra.jpg?v=1782808495",
+  "verdict": "FAIL",
+  "reasons": [
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux"
+   ],
+   "parts": 3,
+   "second": 0.1,
+   "vivid": 0.007,
+   "fill": 0.751
+  },
+  "size": [
+   986,
+   1060
+  ],
+  "error": null,
+  "juge": null,
+  "doublon": null
+ },
+ {
+  "slug": "iscooter-f7-ultra",
+  "i": 1,
+  "url": "https://www.iscooterglobal.eu/cdn/shop/files/High-Performancef7ultra_1024x1024.jpg?v=1782808495",
+  "verdict": "FAIL",
+  "reasons": [
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux"
+   ],
+   "parts": 3,
+   "second": 0.1,
+   "vivid": 0.007,
+   "fill": 0.751
+  },
+  "size": [
+   986,
+   1060
+  ],
+  "error": null,
+  "juge": null,
+  "doublon": null
+ },
+ {
+  "slug": "iscooter-f7-ultra",
+  "i": 2,
+  "url": "https://cdn.shopify.com/s/files/1/0659/8082/5864/files/High-Performancef7ultra.jpg?v=1782808495",
+  "verdict": "FAIL",
+  "reasons": [
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux"
+   ],
+   "parts": 3,
+   "second": 0.1,
+   "vivid": 0.007,
+   "fill": 0.751
+  },
+  "size": [
+   986,
+   1060
+  ],
+  "error": null,
+  "juge": null,
+  "doublon": null
+ },
+ {
+  "slug": "iscooter-f7-ultra",
+  "i": 3,
+  "url": "https://cdn.shopify.com/s/files/1/0659/8082/5864/files/F7Ultra_man.jpg?v=1782808497",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition",
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.01,
+   "fill": 0.798
+  },
+  "size": [
+   593,
+   948
+  ],
+  "error": null,
+  "juge": {
+   "vue": "3/4 avant",
+   "refus": true,
+   "motifs": [
+    "personne"
+   ],
+   "principale_ok": false,
+   "rang": 9,
+   "note": "Pilote équipé (casque, protections) debout sur la trottinette."
+  },
+  "doublon": null
+ },
+ {
+  "slug": "iscooter-f7-ultra",
+  "i": 4,
+  "url": "https://cdn.shopify.com/s/files/1/0659/8082/5864/files/f7ultra-specs.jpg?v=1783057694",
+  "verdict": "FAIL",
+  "reasons": [
+   "cadrage serré",
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+   ],
+   "parts": 2,
+   "second": 0.456,
+   "vivid": 0.126,
+   "fill": 0.785
+  },
+  "size": [
+   1035,
+   947
+  ],
+  "error": null,
+  "juge": null,
+  "doublon": null
+ },
+ {
+  "slug": "iscooter-f7-ultra",
+  "i": 5,
+  "url": "https://cdn.shopify.com/s/files/1/0659/8082/5864/files/F7Ultrawithleft.jpg?v=1782808495",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.011,
+   "fill": 0.504
+  },
+  "size": [
+   1080,
+   1080
+  ],
+  "error": null,
+  "juge": {
+   "vue": "profil",
+   "refus": false,
+   "motifs": [],
+   "principale_ok": false,
+   "rang": 2,
+   "note": ""
+  },
+  "doublon": null
+ },
+ {
+  "slug": "iscooter-f7-ultra",
+  "i": 6,
+  "url": "https://cdn.shopify.com/s/files/1/0659/8082/5864/files/f7ultrafrontsuspension.jpg?v=1782808495",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.011,
+   "fill": 0.865
+  },
+  "size": [
+   1080,
+   1080
+  ],
+  "error": null,
+  "juge": null,
+  "doublon": null
+ },
+ {
+  "slug": "iscooter-f7-ultra",
+  "i": 7,
+  "url": "https://cdn.shopify.com/s/files/1/0659/8082/5864/files/F7Ultrawithscreen.jpg?v=1782808495",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.067,
+   "fill": 0.833
+  },
+  "size": [
+   1080,
+   777
+  ],
+  "error": null,
+  "juge": {
+   "vue": "detail",
+   "refus": false,
+   "motifs": [],
+   "principale_ok": false,
+   "rang": 3,
+   "note": "Gros plan de l'écran du guidon, trottinette coupée par les bords de l'image."
+  },
+  "doublon": null
+ },
+ {
+  "slug": "iscooter-f7-ultra",
+  "i": 8,
+  "url": "https://cdn.shopify.com/s/files/1/0659/8082/5864/files/F7Ultrawithfrontlight.jpg?v=1782808496",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0,
+   "fill": 0.588
+  },
+  "size": [
+   1080,
+   1080
+  ],
+  "error": null,
+  "juge": null,
+  "doublon": null
+ },
+ {
+  "slug": "iscooter-f7-ultra",
+  "i": 9,
+  "url": "https://cdn.shopify.com/s/files/1/0659/8082/5864/files/F7Ultrawithcolorfullight.jpg?v=1782808496",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+   ],
+   "parts": 2,
+   "second": 0.047,
+   "vivid": 0.207,
+   "fill": 0.344
+  },
+  "size": [
+   1080,
+   1080
+  ],
+  "error": null,
+  "juge": null,
+  "doublon": null
+ },
+ {
+  "slug": "iscooter-w12",
+  "i": 0,
+  "url": "http://www.iscooter.fr/cdn/shop/files/w12-off-road-e-scooter_1.jpg?v=1777427999",
+  "verdict": "FAIL",
+  "reasons": [
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux"
+   ],
+   "parts": 3,
+   "second": 0.187,
+   "vivid": 0.174,
+   "fill": 0.613
+  },
+  "size": [
+   1080,
+   1080
+  ],
+  "error": null,
+  "juge": null,
+  "doublon": null
+ },
+ {
+  "slug": "iscooter-w12",
+  "i": 1,
+  "url": "https://www.iscooter.fr/cdn/shop/files/w12-off-road-e-scooter_1.jpg?v=1777427999&width=1920",
+  "verdict": "FAIL",
+  "reasons": [
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux"
+   ],
+   "parts": 3,
+   "second": 0.187,
+   "vivid": 0.174,
+   "fill": 0.613
+  },
+  "size": [
+   1080,
+   1080
+  ],
+  "error": null,
+  "juge": null,
+  "doublon": null
+ },
+ {
+  "slug": "iscooter-w12",
+  "i": 2,
+  "url": "https://www.iscooter.fr/cdn/shop/files/w12-e-scooter-bundle-ce.png?v=1785465084&width=1920",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux"
+   ],
+   "parts": 3,
+   "second": 0.181,
+   "vivid": 0.177,
+   "fill": 0.746
+  },
+  "size": [
+   1665,
+   1750
+  ],
+  "error": null,
+  "juge": null,
+  "doublon": null
+ },
+ {
+  "slug": "iscooter-w12",
+  "i": 3,
+  "url": "https://cdn.shopify.com/s/files/1/0596/7570/5419/files/w12-off-road-e-scooter_1.jpg?v=1777427999",
+  "verdict": "FAIL",
+  "reasons": [
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux"
+   ],
+   "parts": 3,
+   "second": 0.187,
+   "vivid": 0.174,
+   "fill": 0.613
+  },
+  "size": [
+   1080,
+   1080
+  ],
+  "error": null,
+  "juge": null,
+  "doublon": null
+ },
+ {
+  "slug": "iscooter-w12",
+  "i": 4,
+  "url": "https://cdn.shopify.com/s/files/1/0596/7570/5419/files/w12-off-road-electric-scooter-riding.jpg?v=1777427999",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.067,
+   "fill": 0.819
+  },
+  "size": [
+   665,
+   829
+  ],
+  "error": null,
+  "juge": {
+   "vue": "3/4 avant",
+   "refus": true,
+   "motifs": [
+    "personne"
+   ],
+   "principale_ok": false,
+   "rang": 9,
+   "note": "Pilote en blouson et casque sur la trottinette, en saut ; trottinette inclinée."
+  },
+  "doublon": null
+ },
+ {
+  "slug": "iscooter-w12",
+  "i": 5,
+  "url": "https://cdn.shopify.com/s/files/1/0596/7570/5419/files/w12-parameter.png?v=1777454421",
+  "verdict": "FAIL",
+  "reasons": [
+   "cadrage serré",
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 4 morceaux",
+   "couleurs vives 53 % (visuel marketing ?)"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 4 morceaux",
+    "couleurs vives 53 % (visuel marketing ?)"
+   ],
+   "parts": 4,
+   "second": 0.459,
+   "vivid": 0.527,
+   "fill": 0.612
+  },
+  "size": [
+   1080,
+   1080
+  ],
+  "error": null,
+  "juge": null,
+  "doublon": null
+ },
+ {
+  "slug": "iscooter-w12",
+  "i": 6,
+  "url": "https://cdn.shopify.com/s/files/1/0596/7570/5419/files/w12-details-tire-11inch.jpg?v=1777427999",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.09,
+   "fill": 0.785
+  },
+  "size": [
+   949,
+   1038
+  ],
+  "error": null,
+  "juge": {
+   "vue": "detail",
+   "refus": false,
+   "motifs": [],
+   "principale_ok": false,
+   "rang": 3,
+   "note": "Gros plan roue tout-terrain; résidus flous de la trottinette en haut à droite, trottinette coupée."
+  },
+  "doublon": null
+ },
+ {
+  "slug": "iscooter-w12",
+  "i": 7,
+  "url": "https://cdn.shopify.com/s/files/1/0596/7570/5419/files/w12-details-headlight.jpg?v=1777427999",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0,
+   "fill": 0.515
+  },
+  "size": [
+   847,
+   864
+  ],
+  "error": null,
+  "juge": null,
+  "doublon": null
+ },
+ {
+  "slug": "iscooter-w12",
+  "i": 8,
+  "url": "https://cdn.shopify.com/s/files/1/0596/7570/5419/files/w12-details-display.jpg?v=1777427999",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.021,
+   "fill": 0.86
+  },
+  "size": [
+   1080,
+   1080
+  ],
+  "error": null,
+  "juge": {
+   "vue": "detail",
+   "refus": false,
+   "motifs": [],
+   "principale_ok": false,
+   "rang": 3,
+   "note": "Gros plan du guidon et de l'écran, trottinette coupée par les bords."
+  },
+  "doublon": null
+ },
+ {
+  "slug": "iscooter-w12",
+  "i": 9,
+  "url": "https://cdn.shopify.com/s/files/1/0596/7570/5419/files/w12-details-handle.jpg?v=1777427999",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition",
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0,
+   "fill": 0.788
+  },
+  "size": [
+   1070,
+   579
+  ],
+  "error": null,
+  "juge": {
+   "vue": "detail",
+   "refus": false,
+   "motifs": [],
+   "principale_ok": false,
+   "rang": 3,
+   "note": "Gros plan poignée et levier de frein, trottinette coupée par le cadre."
+  },
+  "doublon": null
+ },
+ {
+  "slug": "isinwheel-d2",
+  "i": 0,
+  "url": "http://www.isinwheel.fr/cdn/shop/files/D2_ab01654c-f1ed-4777-93f4-9c22f4e060bf.jpg?v=1785925981",
+  "verdict": "FAIL",
+  "reasons": [
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux"
+   ],
+   "parts": 3,
+   "second": 0.222,
+   "vivid": 0.089,
+   "fill": 0.803
+  },
+  "size": [
+   1572,
+   1600
+  ],
+  "error": null,
+  "juge": null,
+  "doublon": null
+ },
+ {
+  "slug": "isinwheel-d2",
+  "i": 1,
+  "url": "https://www.isinwheel.fr/cdn/shop/files/D2_ab01654c-f1ed-4777-93f4-9c22f4e060bf_1024x1024.jpg?v=1785925981",
+  "verdict": "FAIL",
+  "reasons": [
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux"
+   ],
+   "parts": 3,
+   "second": 0.222,
+   "vivid": 0.091,
+   "fill": 0.807
+  },
+  "size": [
+   1006,
+   1024
+  ],
+  "error": null,
+  "juge": null,
+  "doublon": null
+ },
+ {
+  "slug": "isinwheel-d2",
+  "i": 2,
+  "url": "https://cdn.shopify.com/s/files/1/0594/3469/6868/files/D2_ab01654c-f1ed-4777-93f4-9c22f4e060bf.jpg?v=1785925981",
+  "verdict": "FAIL",
+  "reasons": [
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux"
+   ],
+   "parts": 3,
+   "second": 0.222,
+   "vivid": 0.089,
+   "fill": 0.803
+  },
+  "size": [
+   1572,
+   1600
+  ],
+  "error": null,
+  "juge": null,
+  "doublon": null
+ },
+ {
+  "slug": "isinwheel-d2",
+  "i": 3,
+  "url": "https://cdn.shopify.com/s/files/1/0594/3469/6868/files/2_edfe8909-8618-4ef3-a5e2-b3e94a24e844.jpg?v=1785569671",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.115,
+   "fill": 0.744
+  },
+  "size": [
+   1728,
+   1728
+  ],
+  "error": null,
+  "juge": {
+   "vue": "profil",
+   "refus": false,
+   "motifs": [],
+   "principale_ok": false,
+   "rang": 2,
+   "note": ""
+  },
+  "doublon": null
+ },
+ {
+  "slug": "isinwheel-d2",
+  "i": 4,
+  "url": "https://cdn.shopify.com/s/files/1/0594/3469/6868/files/1_b21130d4-c55e-4703-aac6-dfdf57eb30e0.jpg?v=1785569671",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.098,
+   "fill": 0.504
+  },
+  "size": [
+   1728,
+   1728
+  ],
+  "error": null,
+  "juge": {
+   "vue": "3/4 avant",
+   "refus": false,
+   "motifs": [],
+   "principale_ok": true,
+   "rang": 0,
+   "note": ""
+  },
+  "doublon": null
+ },
+ {
+  "slug": "isinwheel-d2",
+  "i": 5,
+  "url": "https://cdn.shopify.com/s/files/1/0594/3469/6868/files/D2_GREEN_MAIN_5.png?v=1785569592",
+  "verdict": "WARN",
+  "reasons": [
+   "petit élément détaché (2 morceaux)"
+  ],
+  "plus": {
+   "verdict": "WARN",
+   "reasons": [
+    "petit élément détaché (2 morceaux)"
+   ],
+   "parts": 2,
+   "second": 0.027,
+   "vivid": 0.046,
+   "fill": 0.701
+  },
+  "size": [
+   1043,
+   1300
+  ],
+  "error": null,
+  "juge": {
+   "vue": "autre",
+   "refus": true,
+   "motifs": [
+    "personne",
+    "texte incrusté"
+   ],
+   "principale_ok": false,
+   "rang": 9,
+   "note": "Pilote casqué sur la trottinette, texte \"20° Pente\" ajouté sur l'image."
+  },
+  "doublon": null
+ },
+ {
+  "slug": "isinwheel-d2",
+  "i": 6,
+  "url": "https://cdn.shopify.com/s/files/1/0594/3469/6868/files/D2_GREEN_MAIN_1.png?v=1785569592",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "cadrage serré",
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+   ],
+   "parts": 2,
+   "second": 0.049,
+   "vivid": 0.123,
+   "fill": 0.828
+  },
+  "size": [
+   1354,
+   1354
+  ],
+  "error": null,
+  "juge": null,
+  "doublon": null
+ },
+ {
+  "slug": "isinwheel-d2",
+  "i": 7,
+  "url": "https://cdn.shopify.com/s/files/1/0594/3469/6868/files/D2_GREEN_MAIN_4.png?v=1785569592",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+   ],
+   "parts": 2,
+   "second": 0.056,
+   "vivid": 0.138,
+   "fill": 0.829
+  },
+  "size": [
+   1065,
+   1011
+  ],
+  "error": null,
+  "juge": null,
+  "doublon": null
+ },
+ {
+  "slug": "isinwheel-d2",
+  "i": 8,
+  "url": "https://cdn.shopify.com/s/files/1/0594/3469/6868/files/D2_GREEN_MAIN_7.png?v=1785569592",
+  "verdict": "FAIL",
+  "reasons": [
+   "cadrage serré",
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+   ],
+   "parts": 2,
+   "second": 0.251,
+   "vivid": 0.036,
+   "fill": 0.799
+  },
+  "size": [
+   1354,
+   1041
+  ],
+  "error": null,
+  "juge": null,
+  "doublon": null
+ },
+ {
+  "slug": "isinwheel-d2",
+  "i": 9,
+  "url": "https://cdn.shopify.com/s/files/1/0594/3469/6868/files/D2_GREEN_MAIN_3.png?v=1785569591",
+  "verdict": "FAIL",
+  "reasons": [
+   "cadrage serré",
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux"
+   ],
+   "parts": 3,
+   "second": 0.352,
+   "vivid": 0.043,
+   "fill": 0.774
+  },
+  "size": [
+   1354,
+   1354
+  ],
+  "error": null,
+  "juge": null,
+  "doublon": null
+ },
+ {
+  "slug": "isinwheel-gt4s",
+  "i": 0,
+  "url": "http://www.isinwheel.fr/cdn/shop/files/GT4-1200W-1_d4d1c727-84a8-4c98-8ccb-82eecffefb11.png?v=1784788248",
+  "verdict": "FAIL",
+  "reasons": [
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux"
+   ],
+   "parts": 3,
+   "second": 0.217,
+   "vivid": 0.027,
+   "fill": 0.807
+  },
+  "size": [
+   1587,
+   1629
+  ],
+  "error": null,
+  "juge": null,
+  "doublon": null
+ },
+ {
+  "slug": "isinwheel-gt4s",
+  "i": 1,
+  "url": "https://www.isinwheel.fr/cdn/shop/files/GT4-1200W-1_d4d1c727-84a8-4c98-8ccb-82eecffefb11_1024x1024.png?v=1784788248",
+  "verdict": "FAIL",
+  "reasons": [
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux"
+   ],
+   "parts": 3,
+   "second": 0.218,
+   "vivid": 0.026,
+   "fill": 0.807
+  },
+  "size": [
+   1017,
+   1043
+  ],
+  "error": null,
+  "juge": null,
+  "doublon": null
+ },
+ {
+  "slug": "isinwheel-gt4s",
+  "i": 2,
+  "url": "https://cdn.shopify.com/s/files/1/0594/3469/6868/files/GT4-1200W-1_d4d1c727-84a8-4c98-8ccb-82eecffefb11.png?v=1784788248",
+  "verdict": "FAIL",
+  "reasons": [
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux"
+   ],
+   "parts": 3,
+   "second": 0.217,
+   "vivid": 0.027,
+   "fill": 0.807
+  },
+  "size": [
+   1587,
+   1629
+  ],
+  "error": null,
+  "juge": null,
+  "doublon": null
+ },
+ {
+  "slug": "isinwheel-gt4s",
+  "i": 3,
+  "url": "https://cdn.shopify.com/s/files/1/0594/3469/6868/files/GT4-3_1800x1800_fe3fdbcd-33fe-4162-8a12-6af4d9481912.webp?v=1775202827",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.01,
+   "fill": 0.846
+  },
+  "size": [
+   1303,
+   1312
+  ],
+  "error": null,
+  "juge": {
+   "vue": "pliee",
+   "refus": false,
+   "motifs": [],
+   "principale_ok": false,
+   "rang": 2,
+   "note": "Trottinette pliée, tige rabattue, vue depuis l'arrière."
+  },
+  "doublon": null
+ },
+ {
+  "slug": "isinwheel-gt4s",
+  "i": 4,
+  "url": "https://cdn.shopify.com/s/files/1/0594/3469/6868/files/GT4S.png?v=1791967701",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.166,
+   "fill": 0.537
+  },
+  "size": [
+   969,
+   1128
+  ],
+  "error": null,
+  "juge": {
+   "vue": "3/4 avant",
+   "refus": true,
+   "motifs": [
+    "personne"
+   ],
+   "principale_ok": false,
+   "rang": 9,
+   "note": "Homme debout sur la trottinette ; poussière autour de la roue avant."
+  },
+  "doublon": null
+ },
+ {
+  "slug": "isinwheel-gt4s",
+  "i": 5,
+  "url": "https://cdn.shopify.com/s/files/1/0594/3469/6868/files/mb_58bc725e-f3d4-4229-a210-fced0a2641d0.jpg?v=1784606025",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.074,
+   "fill": 0.793
+  },
+  "size": [
+   1080,
+   922
+  ],
+  "error": null,
+  "juge": {
+   "vue": "3/4 arriere",
+   "refus": false,
+   "motifs": [],
+   "principale_ok": false,
+   "rang": 2,
+   "note": "Colonne coupée en haut, guidon absent ; roue arrière plus proche."
+  },
+  "doublon": null
+ },
+ {
+  "slug": "isinwheel-gt4s",
+  "i": 6,
+  "url": "https://cdn.shopify.com/s/files/1/0594/3469/6868/files/mbapp_d81291eb-3e47-49d3-86b4-d172ddb524e3.jpg?v=1784604905",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0.012,
+   "vivid": 0.091,
+   "fill": 0.809
+  },
+  "size": [
+   1080,
+   1080
+  ],
+  "error": null,
+  "juge": null,
+  "doublon": null
+ },
+ {
+  "slug": "isinwheel-gt4s",
+  "i": 7,
+  "url": "https://cdn.shopify.com/s/files/1/0594/3469/6868/files/GT4-1200W.webp?v=1784605018",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0.004,
+   "vivid": 0.064,
+   "fill": 0.582
+  },
+  "size": [
+   1047,
+   1064
+  ],
+  "error": null,
+  "juge": null,
+  "doublon": null
+ },
+ {
+  "slug": "isinwheel-gt4s",
+  "i": 8,
+  "url": "https://cdn.shopify.com/s/files/1/0594/3469/6868/files/mb_e203d8b6-f593-44eb-a979-ad145dd38366.jpg?v=1784606038",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "cadrage serré",
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 4 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 4 morceaux"
+   ],
+   "parts": 4,
+   "second": 0.034,
+   "vivid": 0.154,
+   "fill": 0.687
+  },
+  "size": [
+   1064,
+   985
+  ],
+  "error": null,
+  "juge": null,
+  "doublon": null
+ },
+ {
+  "slug": "isinwheel-gt4s",
+  "i": 9,
+  "url": "https://cdn.shopify.com/s/files/1/0594/3469/6868/files/mb_36e67798-2b70-4aad-a73b-63854bac58b3.jpg?v=1784606049",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.018,
+   "fill": 0.585
+  },
+  "size": [
+   1080,
+   1080
+  ],
+  "error": null,
+  "juge": null,
+  "doublon": null
+ },
+ {
+  "slug": "isinwheel-h7-pro",
+  "i": 0,
+  "url": "http://www.isinwheel.fr/cdn/shop/files/1_793669fc-6eb0-47bc-bd40-fc20b6caa840.jpg?v=1757578766",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.021,
+   "fill": 0.823
+  },
+  "size": [
+   1649,
+   1750
+  ],
+  "error": null,
+  "juge": {
+   "vue": "3/4 avant",
+   "refus": true,
+   "motifs": [
+    "autre objet"
+   ],
+   "principale_ok": false,
+   "rang": 9,
+   "note": "Un chien est assis dans le panier du plancher de la trottinette."
+  },
+  "doublon": null
+ },
+ {
+  "slug": "isinwheel-h7-pro",
+  "i": 1,
+  "url": "https://www.isinwheel.fr/cdn/shop/files/1_793669fc-6eb0-47bc-bd40-fc20b6caa840_1024x1024.jpg?v=1757578766",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.019,
+   "fill": 0.842
+  },
+  "size": [
+   974,
+   1036
+  ],
+  "error": null,
+  "juge": {
+   "vue": "3/4 avant",
+   "refus": true,
+   "motifs": [
+    "autre objet"
+   ],
+   "principale_ok": false,
+   "rang": 9,
+   "note": "Un petit chien est assis dans le panier sur le plancher de la trottinette."
+  },
+  "doublon": null
+ },
+ {
+  "slug": "isinwheel-h7-pro",
+  "i": 2,
+  "url": "https://cdn.shopify.com/s/files/1/0594/3469/6868/files/1_793669fc-6eb0-47bc-bd40-fc20b6caa840.jpg?v=1757578766",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.021,
+   "fill": 0.823
+  },
+  "size": [
+   1649,
+   1750
+  ],
+  "error": null,
+  "juge": {
+   "vue": "3/4 avant",
+   "refus": true,
+   "motifs": [
+    "autre objet"
+   ],
+   "principale_ok": false,
+   "rang": 9,
+   "note": "Un petit chien est assis dans le panier de la trottinette."
+  },
+  "doublon": null
+ },
+ {
+  "slug": "isinwheel-h7-pro",
+  "i": 3,
+  "url": "https://cdn.shopify.com/s/files/1/0594/3469/6868/files/H75.jpg?v=1760530237",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.064,
+   "fill": 0.522
+  },
+  "size": [
+   1056,
+   921
+  ],
+  "error": null,
+  "juge": null,
+  "doublon": null
+ },
+ {
+  "slug": "isinwheel-h7-pro",
+  "i": 4,
+  "url": "https://cdn.shopify.com/s/files/1/0594/3469/6868/files/H77.jpg?v=1760530237",
+  "verdict": "FAIL",
+  "reasons": [
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux",
+   "couleurs vives 42 % (visuel marketing ?)"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux",
+    "couleurs vives 42 % (visuel marketing ?)"
+   ],
+   "parts": 3,
+   "second": 0.213,
+   "vivid": 0.422,
+   "fill": 0.636
+  },
+  "size": [
+   1058,
+   1053
+  ],
+  "error": null,
+  "juge": null,
+  "doublon": null
+ },
+ {
+  "slug": "isinwheel-h7-pro",
+  "i": 5,
+  "url": "https://cdn.shopify.com/s/files/1/0594/3469/6868/files/H71_2a1691b0-0f72-4c9f-b856-3184de816338.jpg?v=1760530237",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.073,
+   "fill": 0.843
+  },
+  "size": [
+   623,
+   649
+  ],
+  "error": null,
+  "juge": null,
+  "doublon": "même image (dHash 1, couleur 0.5) (bc83e0cc/1792892519795_0.png)"
+ },
+ {
+  "slug": "isinwheel-h7-pro",
+  "i": 6,
+  "url": "https://cdn.shopify.com/s/files/1/0594/3469/6868/files/ChatGPT_Image_2026_8_28_17_51_45.png?v=1787911818",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0,
+   "fill": 0.29
+  },
+  "size": [
+   1354,
+   1354
+  ],
+  "error": null,
+  "juge": null,
+  "doublon": null
+ },
+ {
+  "slug": "isinwheel-h7-pro",
+  "i": 7,
+  "url": "https://cdn.shopify.com/s/files/1/0594/3469/6868/files/H76.jpg?v=1760530237",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.029,
+   "fill": 0.832
+  },
+  "size": [
+   712,
+   806
+  ],
+  "error": null,
+  "juge": {
+   "vue": "3/4 arriere",
+   "refus": true,
+   "motifs": [
+    "personne"
+   ],
+   "principale_ok": false,
+   "rang": 9,
+   "note": "Pilote sur le véhicule ; résidu de détourage flou derrière la selle."
+  },
+  "doublon": null
+ },
+ {
+  "slug": "isinwheel-h7-pro",
+  "i": 8,
+  "url": "https://cdn.shopify.com/s/files/1/0594/3469/6868/files/H73.jpg?v=1760530237",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0.002,
+   "vivid": 0.011,
+   "fill": 0.712
+  },
+  "size": [
+   1080,
+   1080
+  ],
+  "error": null,
+  "juge": null,
+  "doublon": null
+ },
+ {
+  "slug": "isinwheel-h7-pro",
+  "i": 9,
+  "url": "https://cdn.shopify.com/s/files/1/0594/3469/6868/files/H72_e82146cf-6db2-451a-b635-1e6c9b596791.jpg?v=1760530237",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.007,
+   "fill": 0.816
+  },
+  "size": [
+   624,
+   645
+  ],
+  "error": null,
+  "juge": null,
+  "doublon": null
+ },
+ {
+  "slug": "kaabo-mantis-8",
+  "i": 0,
+  "url": "https://www.e-wheels.fr/globalassets/feed-images/dup16mantis-8.jpg",
+  "verdict": "FAIL",
+  "reasons": [
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux"
+   ],
+   "parts": 2,
+   "second": 0.126,
+   "vivid": 0.128,
+   "fill": 0.709
+  },
+  "size": [
+   864,
+   864
+  ],
+  "error": null,
+  "juge": null,
+  "doublon": null
+ },
+ {
+  "slug": "xiaomi-electric-scooter-4-go",
+  "i": 0,
+  "url": "https://i05.appmifile.com/517_item_fr/29/08/2023/be80c21262c4ed5bdd9e5bb0c9b54cf5.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.111,
+   "fill": 0.855
+  },
+  "size": [
+   1187,
+   1275
+  ],
+  "error": null,
+  "juge": {
+   "vue": "profil",
+   "refus": false,
+   "motifs": [],
+   "principale_ok": false,
+   "rang": 2,
+   "note": ""
+  },
+  "doublon": null
+ },
+ {
+  "slug": "xiaomi-electric-scooter-4-go",
+  "i": 1,
+  "url": "https://i02.appmifile.com/898_operatorx_operatorx_opx/17/07/2023/13251baabf9ec532e116acd51098dc54.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.111,
+   "fill": 0.855
+  },
+  "size": [
+   1187,
+   1275
+  ],
+  "error": null,
+  "juge": null,
+  "doublon": "même image (dHash 0, couleur 0.0) (lot#0)"
+ },
+ {
+  "slug": "xiaomi-electric-scooter-4-go",
+  "i": 2,
+  "url": "https://media.materiel.net/r900/products/MN0006060557.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.111,
+   "fill": 0.73
+  },
+  "size": [
+   972,
+   972
+  ],
+  "error": null,
+  "juge": {
+   "vue": "profil",
+   "refus": false,
+   "motifs": [],
+   "principale_ok": false,
+   "rang": 2,
+   "note": ""
+  },
+  "doublon": null
+ },
+ {
+  "slug": "xiaomi-electric-scooter-4-go",
+  "i": 3,
+  "url": "https://media.materiel.net/r900/products/MN0006060558.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.114,
+   "fill": 0.73
+  },
+  "size": [
+   972,
+   972
+  ],
+  "error": null,
+  "juge": {
+   "vue": "profil",
+   "refus": false,
+   "motifs": [],
+   "principale_ok": false,
+   "rang": 2,
+   "note": ""
+  },
+  "doublon": null
+ },
+ {
+  "slug": "xiaomi-electric-scooter-4-go",
+  "i": 4,
+  "url": "https://media.materiel.net/r900/products/MN0006060559.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.052,
+   "fill": 0.285
+  },
+  "size": [
+   972,
+   972
+  ],
+  "error": null,
+  "juge": {
+   "vue": "face",
+   "refus": false,
+   "motifs": [],
+   "principale_ok": false,
+   "rang": 2,
+   "note": ""
+  },
+  "doublon": null
+ },
+ {
+  "slug": "xiaomi-electric-scooter-4-go",
+  "i": 5,
+  "url": "https://media.materiel.net/r900/products/MN0006060560.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.019,
+   "fill": 0.454
+  },
+  "size": [
+   674,
+   938
+  ],
+  "error": null,
+  "juge": {
+   "vue": "dessus",
+   "refus": false,
+   "motifs": [],
+   "principale_ok": false,
+   "rang": 2,
+   "note": ""
+  },
+  "doublon": null
+ },
+ {
+  "slug": "xiaomi-electric-scooter-4-go",
+  "i": 6,
+  "url": "https://media.materiel.net/r900/products/MN0006060561.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.013,
+   "fill": 0.751
+  },
+  "size": [
+   408,
+   936
+  ],
+  "error": null,
+  "juge": {
+   "vue": "dessus",
+   "refus": false,
+   "motifs": [],
+   "principale_ok": false,
+   "rang": 2,
+   "note": ""
+  },
+  "doublon": null
+ }
+]

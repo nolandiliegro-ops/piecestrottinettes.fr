@@ -1,0 +1,355 @@
+{
+ "usage": {
+  "input_tokens": 357952,
+  "output_tokens": 4276,
+  "web_searches": 25
+ },
+ "cout_estime_usd": 1.39,
+ "cibles": [
+  {
+   "slug": "circooter-landturbo-pro",
+   "tokens": [
+    "landturbo",
+    "pro"
+   ],
+   "pages": [
+    {
+     "url": "https://www.circooter.com/products/landturbo-peak-1250w-motor-off-road-electric-scooter",
+     "ok": true,
+     "n": 12,
+     "title": "Landturbo Pro | 32MPH &amp; 47Miles | CIRCOOTER Off-Road E-Scooter Landturbo Pro Electric Scooter"
+    },
+    {
+     "url": "https://www.circooter.ca/products/landturbo-pro-off-road-electric-scooter",
+     "ok": true,
+     "n": 11,
+     "title": "Landturbo Pro | 1500W Motor &amp; 52KM/H | CIRCOOTER Off-road E-Scooter Landturbo Pro Electric Scooter"
+    },
+    {
+     "url": "https://www.wellbots.com/products/circooter-landturbo-pro-electric-scooter",
+     "ok": true,
+     "n": 13,
+     "title": "CIRCOOTER Landturbo Pro Electric Scooter | Wellbots | Free Shipping\n CIRCOOTER Landturbo Pro Electric Scooter"
+    },
+    {
+     "url": "https://voltcentre.com/products/circooter-landturbo-pro-off-road-electric-scooter",
+     "ok": true,
+     "n": 18,
+     "title": "Circooter Landturbo Pro Off-Road Electric Scooter  &ndash; VoltCentre Circooter Landturbo Pro Off-Road Electric Scooter"
+    },
+    {
+     "url": "https://www.discoveranddo.com/products/circooter-landturbo-pro-electric-scooter-5184047",
+     "ok": false,
+     "n": 0,
+     "title": "Please Log In"
+    }
+   ],
+   "candidates": 10
+  },
+  {
+   "slug": "dualtron-eagle-pro",
+   "tokens": [
+    "eagle",
+    "pro"
+   ],
+   "pages": [
+    {
+     "url": "https://pietechnologie.com/products/dualtron-eagle-pro",
+     "ok": true,
+     "n": 8,
+     "title": "Dualtron Eagle Pro - 60V 18 Ah/22,4 Ah - Minimotors - Pie Technologie&nbsp;&ndash; PIE TECHNOLOGIE \n Trottinette électrique Dualtron Eagle Pro"
+    },
+    {
+     "url": "https://www.wee-bot.com/products/trottinette-electrique-dualtron-eagle-pro",
+     "ok": true,
+     "n": 14,
+     "title": "Trottinette Électrique Dualtron Eagle Pro - Pas cher\n Trottinette Électrique Dualtron Eagle Pro"
+    },
+    {
+     "url": "https://www.fnac.com/Trottinette-electrique-Minimotors-Dualtron-Eagle-Pro-2-x-1800-W-Noir/a15658771/w-4",
+     "ok": false,
+     "n": 0,
+     "title": "HTTP 403"
+    },
+    {
+     "url": "https://www.trottnshop.com/produit/dualtron-eagle-pro-2/",
+     "ok": true,
+     "n": 1,
+     "title": "DUALTRON Eagle Pro | Trott'n'Shop DUALTRON Eagle Pro | Trott&#039;n&#039;Shop"
+    },
+    {
+     "url": "https://www.glisseurbaine.com/612-trottinette-electrique-dualtron-eagle-pro.html",
+     "ok": false,
+     "n": 0,
+     "title": "erreur fetch failed"
+    }
+   ],
+   "candidates": 10
+  },
+  {
+   "slug": "e-twow-tanktorq-tk2-lite",
+   "tokens": [
+    "tanktorq",
+    "tk",
+    "2",
+    "lite"
+   ],
+   "pages": [
+    {
+     "url": "https://e-twow.com/products/tanktork-tk2-lite",
+     "ok": true,
+     "n": 8,
+     "title": "TankTorq TK2 LITE Single Motor Electric Scooter | 600W | E-TWOW &ndash; E-TWOW eScooters\n\t TankTorq TK2 LITE Single Motor Electric Scooter | 600W | E-TWOW"
+    },
+    {
+     "url": "https://b2b.e-twow.com/shop/electric-scooters/electric-scooter-tanktorq-tk2-lite-60v-10ah/",
+     "ok": true,
+     "n": 4,
+     "title": "Electric Scooter TankTorq TK2 LITE - 60V, 10Ah - E-TWOW B2B Platform Electric Scooter TankTorq TK2 LITE - 60V, 10Ah"
+    }
+   ],
+   "candidates": 10
+  },
+  {
+   "slug": "iscooter-f7-ultra",
+   "tokens": [
+    "f",
+    "7",
+    "ultra"
+   ],
+   "pages": [
+    {
+     "url": "https://www.iscooterglobal.eu/products/f7ultra-1500w-electric-scooter",
+     "ok": true,
+     "n": 22,
+     "title": "iScooter F7Ultra 1500W All-Terrain Safe Electric Scooter with Dual Suspension | iScooter EU\n iScooter F7Ultra All-Terrain Electric Scooter with Detachable Batte"
+    },
+    {
+     "url": "https://www.iscooterglobal.com/products/iscooter-f7ultra-all-terrain-electric-scooter-with-detachable-battery",
+     "ok": true,
+     "n": 13,
+     "title": "iScooter F7Ultra All-Terrain Electric Scooter with Detachable Battery iScooter F7Ultra All-Terrain Electric Scooter with Detachable Battery"
+    },
+    {
+     "url": "https://www.iscooterglobal.co.uk/products/f7ultra-1500w-electric-scooter",
+     "ok": true,
+     "n": 21,
+     "title": "iScooter F7Ultra 1500W All-Terrain Safe Electric Scooter with Dual Suspension | iScooter UK\n iScooter F7Ultra All-Terrain Electric Scooter with Detachable Batte"
+    },
+    {
+     "url": "https://www.iscooterglobal.eu/products/iscooter-f7ultra-1500w-all-terrain-electric-scooter",
+     "ok": false,
+     "n": 0,
+     "title": "F7Ultra All Terrain Wet Weather Electric Scooter | iScooter EU\n iScooter F7Ultra 1500W All-Terrain Electric Scooter with 38.5 N · m Max Torque Point [variante : max]"
+    },
+    {
+     "url": "https://www.iscooterglobal.co.uk/products/f7ultra-electric-scooter",
+     "ok": true,
+     "n": 21,
+     "title": "iScooter F7Ultra All-Terrain Electric Scooter | Off-Road &amp; City Riding UK | iScooter UK\n iScooter F7Ultra 1500W All-Terrain Electric Scooter with Removable "
+    }
+   ],
+   "candidates": 10
+  },
+  {
+   "slug": "iscooter-w12",
+   "tokens": [
+    "w",
+    "12"
+   ],
+   "pages": [
+    {
+     "url": "https://www.iscooter.fr/products/iscooter-w12-3000w-trottinette-electrique-tout-terrain",
+     "ok": true,
+     "n": 26,
+     "title": "Trottinette Électrique Tout-Terrain iScooter W12 3000W pour Adultes – Longue Autonomie, Haute Puissance | iScooter FR iScooter W12 3000W Trottinette Électrique "
+    },
+    {
+     "url": "https://www.iscooterglobal.eu/products/iscooter-w12-3000w-off-road-electric-scooter",
+     "ok": true,
+     "n": 25,
+     "title": "W12 3000W Dual Motor Off Road Electric Scooter | iScooter EU\n iScooter W12 3000W Off Road Electric Scooter"
+    },
+    {
+     "url": "https://iscooter-eu.com/products/iscooter-w12-dual-motor-all-terrain-electric-scooter",
+     "ok": true,
+     "n": 22,
+     "title": "iScooter W12 Dual Motor All-Terrain Electric Scooter\n&ndash; iScooter  Official\n iScooter W12 Dual Motor All-Terrain Electric Scooter"
+    },
+    {
+     "url": "https://www.boulanger.com/ref/9000960518",
+     "ok": false,
+     "n": 0,
+     "title": "erreur The operation was aborted due to timeout"
+    },
+    {
+     "url": "https://www.darty.com/nav/achat/ref/MC354069855.html",
+     "ok": false,
+     "n": 0,
+     "title": "HTTP 403"
+    }
+   ],
+   "candidates": 10
+  },
+  {
+   "slug": "isinwheel-d2",
+   "tokens": [
+    "d",
+    "2"
+   ],
+   "pages": [
+    {
+     "url": "https://www.isinwheel.fr/products/d2-d2plus-trottinette-electrique-tout-terrain-1000-w",
+     "ok": true,
+     "n": 23,
+     "title": "D2 Trottinette électrique tout-terrain 1000W | isinwheel FR\n D2 Trottinette électrique tout-terrain 1000W"
+    },
+    {
+     "url": "https://trottinetteexpress.fr/products/isinwheel-d2",
+     "ok": true,
+     "n": 10,
+     "title": "ISINWHEEL D2 &ndash; Trottinette Express - Vente et réparation des trottinettes électriques\n   ISINWHEEL D2"
+    },
+    {
+     "url": "https://wellbots.fr/products/isinwheel-d2-trottinette-electrique",
+     "ok": true,
+     "n": 14,
+     "title": "Isinwheel D2 Trottinette Electrique | Wellbots\n Isinwheel D2 Trottinette Electrique"
+    },
+    {
+     "url": "https://www.finbike.com/products/isinwheel-d2-electric-scooter",
+     "ok": true,
+     "n": 20,
+     "title": "isinwheel D2 Electric Scooter | 1000W, 55km Range\n&ndash; FinBike.com\n isinwheel D2 Electric Scooter 1000W Motor 48V 15.6Ah 55km Range"
+    }
+   ],
+   "candidates": 10
+  },
+  {
+   "slug": "isinwheel-gt4s",
+   "tokens": [
+    "gt",
+    "4",
+    "s"
+   ],
+   "pages": [
+    {
+     "url": "https://www.isinwheel.fr/products/isinwheel%C2%AE-gt4-trottinette-electrique-tout-terrain-1200w",
+     "ok": true,
+     "n": 20,
+     "title": "isinwheel® GT4S Trottinette Électrique Tout-Terrain 1200W | isinwheel FR\n isinwheel® GT4S Trottinette Électrique Tout-Terrain 1200W"
+    },
+    {
+     "url": "https://www.isinwheel.co.uk/products/isinwheel-gt4s-1200w-electric-scooter-50miles-range",
+     "ok": true,
+     "n": 16,
+     "title": "isinwheel® GT4 S 1200W Electric Scooter 50Miles Range | isinwheel UK  isinwheel® GT4 S 1200W Electric Scooter 50Miles Range"
+    },
+    {
+     "url": "https://www.wellbots.com/products/isinwheel-gt4-single-motor-off-road-electric-scooter-1200w-black",
+     "ok": false,
+     "n": 0,
+     "title": "isinwheel GT4 Single Motor Off-Road Electric Scooter – 1200W / Black | Wellbots | Free Shipping\n isinwheel GT4 Single Motor Off-Road Electric Scooter – 1200W / "
+    }
+   ],
+   "candidates": 10
+  },
+  {
+   "slug": "isinwheel-h7-pro",
+   "tokens": [
+    "h",
+    "7",
+    "pro"
+   ],
+   "pages": [
+    {
+     "url": "https://www.isinwheel.fr/products/isinwheel-h7protrottinette-electrique-1200-w-avec-siege",
+     "ok": true,
+     "n": 17,
+     "title": "isinwheel H7Pro Trottinette électrique 1200W avec siège | isinwheel FR\n isinwheel H7Pro Trottinette électrique 1200W avec siège"
+    },
+    {
+     "url": "https://www.isinwheel.eu/products/isinwheel-h7pro-commuting-electric-scooter-with-seat",
+     "ok": true,
+     "n": 11,
+     "title": "isinwheel® H7Pro Commuting Electric Scooter with Seat | isinwheel EU  isinwheel® H7Pro Commuting Electric Scooter with Seat"
+    },
+    {
+     "url": "https://www.isinwheel.com/products/isinwheel-h7-pro-1200w-high-end-commuting-electric-scooter-with-seat",
+     "ok": true,
+     "n": 15,
+     "title": "H7 Pro 2000W Electric Scooter with Seat | iSinWheel &ndash; iSinwheel Official Store isinwheel H7Pro Electric Scooter"
+    }
+   ],
+   "candidates": 10
+  },
+  {
+   "slug": "kaabo-mantis-8",
+   "tokens": [
+    "mantis",
+    "8"
+   ],
+   "pages": [
+    {
+     "url": "https://kaabo.com/product/mantis-8",
+     "ok": false,
+     "n": 0,
+     "title": "Shop Mantis &amp; Warrior Electric Scooters | Kaabo USA\n Shop Mantis &amp; Warrior Electric Scooters | Kaabo USA"
+    },
+    {
+     "url": "https://www.kaabousa.com/pages/mantis8",
+     "ok": true,
+     "n": 0,
+     "title": "Mantis 8 Dual Motor E-Scooter - Kaabo USA\n Mantis 8 Dual Motor E-Scooter - Kaabo USA"
+    },
+    {
+     "url": "https://www.glisseurbaine.com/trottinette-electrique/751-trottinette-electrique-kaabo-mantis-8.html",
+     "ok": false,
+     "n": 0,
+     "title": "erreur fetch failed"
+    },
+    {
+     "url": "https://www.e-wheels.fr/trotinette-electrique/kaabo-premium-escooters/kaabo-mantis-8/",
+     "ok": true,
+     "n": 2,
+     "title": "Kaabo Mantis 8 Kaabo Mantis 8"
+    }
+   ],
+   "candidates": 1
+  },
+  {
+   "slug": "xiaomi-electric-scooter-4-go",
+   "tokens": [
+    "4",
+    "go"
+   ],
+   "pages": [
+    {
+     "url": "https://www.mi.com/fr/product/xiaomi-electric-scooter-4-go/",
+     "ok": true,
+     "n": 1,
+     "title": "Xiaomi Electric Scooter 4 Go | Xiaomi France | Toutes les spécifications et fonctionnalités  Xiaomi Electric Scooter 4 Go | Xiaomi France | Toutes les spécifica"
+    },
+    {
+     "url": "https://www.mi.com/global/product/xiaomi-electric-scooter-4-go/",
+     "ok": true,
+     "n": 1,
+     "title": "All Specs, Features of Xiaomi Electric Scooter 4 Go | Xiaomi  All Specs, Features of Xiaomi Electric Scooter 4 Go | Xiaomi"
+    },
+    {
+     "url": "https://www.materiel.net/produit/202307180109.html",
+     "ok": true,
+     "n": 5,
+     "title": "Xiaomi Mi Electric Scooter 4 Go Noir  - Trottinette électrique Xiaomi | Materiel.net | OOP Xiaomi Mi Electric Scooter 4 Go Noir  - Trottinette électrique Xiaomi"
+    },
+    {
+     "url": "https://shop.innov8.fr/p/xiaomi-electric-scooter-4-go-fr",
+     "ok": false,
+     "n": 0,
+     "title": "HTTP 503"
+    }
+   ],
+   "candidates": 7
+  }
+ ]
+}

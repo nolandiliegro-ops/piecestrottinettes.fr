@@ -1,0 +1,141 @@
+{
+ "circooter-landturbo-pro": {
+  "id": "546154f2-c1cd-4b52-961d-23e038fb8351",
+  "published": false,
+  "en_ligne": 1,
+  "nouvelle_principale": 0,
+  "ajouts": [
+   {
+    "i": 0,
+    "vue": "3/4 avant"
+   },
+   {
+    "i": 5,
+    "vue": "profil"
+   },
+   {
+    "i": 6,
+    "vue": "pliee"
+   }
+  ],
+  "statut": "3/4 trouvé"
+ },
+ "dualtron-eagle-pro": {
+  "id": "14c842c6-d57c-482c-95b0-c80fa661bb05",
+  "published": false,
+  "en_ligne": 1,
+  "nouvelle_principale": 2,
+  "ajouts": [
+   {
+    "i": 2,
+    "vue": "3/4 avant"
+   }
+  ],
+  "statut": "3/4 trouvé"
+ },
+ "e-twow-tanktorq-tk2-lite": {
+  "id": "52cf2a00-db4e-4418-a7be-a48db1fe8e71",
+  "published": false,
+  "en_ligne": 4,
+  "nouvelle_principale": null,
+  "ajouts": [],
+  "statut": "photos sans 3/4"
+ },
+ "iscooter-f7-ultra": {
+  "id": "e82a6f98-f4aa-48cf-b098-ee2206641652",
+  "published": false,
+  "en_ligne": 2,
+  "nouvelle_principale": null,
+  "ajouts": [
+   {
+    "i": 5,
+    "vue": "profil"
+   }
+  ],
+  "statut": "photos sans 3/4"
+ },
+ "iscooter-w12": {
+  "id": "d6824bc0-d2e9-43eb-aff1-a9aa01827d7a",
+  "published": false,
+  "en_ligne": 1,
+  "nouvelle_principale": null,
+  "ajouts": [
+   {
+    "i": 6,
+    "vue": "detail"
+   }
+  ],
+  "statut": "photos sans 3/4"
+ },
+ "isinwheel-d2": {
+  "id": "e6127ed9-f2f1-4622-b283-9d4ca46fe3d1",
+  "published": false,
+  "en_ligne": 1,
+  "nouvelle_principale": 4,
+  "ajouts": [
+   {
+    "i": 4,
+    "vue": "3/4 avant"
+   },
+   {
+    "i": 3,
+    "vue": "profil"
+   }
+  ],
+  "statut": "3/4 trouvé"
+ },
+ "isinwheel-gt4s": {
+  "id": "785f95dc-24ac-43cf-8880-edd402614062",
+  "published": false,
+  "en_ligne": 2,
+  "nouvelle_principale": null,
+  "ajouts": [
+   {
+    "i": 3,
+    "vue": "pliee"
+   },
+   {
+    "i": 5,
+    "vue": "3/4 arriere"
+   }
+  ],
+  "statut": "photos sans 3/4"
+ },
+ "isinwheel-h7-pro": {
+  "id": "e8597b33-76d7-4da6-8b9c-68bdbc83e0cc",
+  "published": false,
+  "en_ligne": 1,
+  "nouvelle_principale": null,
+  "ajouts": [],
+  "statut": "rien de valable"
+ },
+ "kaabo-mantis-8": {
+  "id": "18f0e044-2691-4d89-93d8-ef0fa6f88d30",
+  "published": false,
+  "en_ligne": 1,
+  "nouvelle_principale": null,
+  "ajouts": [],
+  "statut": "rien de valable"
+ },
+ "xiaomi-electric-scooter-4-go": {
+  "id": "1f7c36d4-569b-4ba3-a14a-72166356f588",
+  "published": false,
+  "en_ligne": 1,
+  "nouvelle_principale": null,
+  "ajouts": [
+   {
+    "i": 0,
+    "vue": "profil"
+   },
+   {
+    "i": 4,
+    "vue": "face"
+   },
+   {
+    "i": 5,
+    "vue": "dessus"
+   }
+  ],
+  "statut": "photos sans 3/4"
+ }
+}
