@@ -275,7 +275,8 @@ const Pro = () => {
                         {p.deja_commande > 0 && <span className="absolute top-2 left-2 z-10 text-[14px] font-bold px-2 py-0.5 text-white" style={{ background: C.ink }}>Déjà pris</span>}
                         <Photo src={p.image_url} alt={p.name} />
                         <div className="px-2.5 grid gap-1">
-                          <h3 className="text-[14px] font-bold leading-tight line-clamp-2 min-h-[2.5em]">{p.name}</h3>
+                          {/* police posée à la main : la règle globale du site met h1-h3 en Bebas Neue majuscule */}
+                          <h3 className="text-[14px] font-bold leading-tight line-clamp-2 min-h-[2.5em] normal-case tracking-normal" style={{ fontFamily: JAK }}>{p.name}</h3>
                           <p className="text-[16px] font-extrabold" style={{ color: C.greenD }}>
                             {eurFR(p.prix_pro_ht)}
                             {p.prix_pro_ht < p.prix_public_ht && <s className="ml-1.5 text-[14px] font-semibold" style={{ color: C.muted }}>{eurFR(p.prix_public_ht)}</s>}
