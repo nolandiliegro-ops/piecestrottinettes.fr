@@ -32,6 +32,9 @@ export interface BrandModel {
   max_speed_kmh: number | null;
   range_km: number | null;
   power_watts: number | null;
+  // 25/10 : statut commercial (bandeau « Plus vendue neuve » + filtre de la gamme sur la page marque)
+  commercial_status?: string | null;
+  sold_until_year?: number | null;
 }
 
 // Lightweight item for previous/next brand navigation in the hero carousel.
@@ -70,7 +73,7 @@ const useBrandModels = (brandId?: string | null) =>
       if (!brandId) return [];
       const { data, error } = await supabase
         .from("scooter_models")
-        .select("id, name, slug, image_url, max_speed_kmh, range_km, power_watts")
+        .select("id, name, slug, image_url, max_speed_kmh, range_km, power_watts, commercial_status, sold_until_year")
         .eq("brand_id", brandId)
         .eq("published", true)
         .order("created_at", { ascending: false });

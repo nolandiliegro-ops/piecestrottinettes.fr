@@ -15,7 +15,7 @@
  * 5 SOMMAIRE    · en-tête compact + raccourcis (Avis · Gamme · Pièces · FAQ) : le contenu d'abord
  */
 import { useEffect, useRef, useState } from "react";
-import { Link, useNavigate } from "react-router-dom";
+import { Link, useNavigate, useSearchParams } from "react-router-dom";
 import { useQuery } from "@tanstack/react-query";
 import { supabase } from "@/integrations/supabase/client";
 import { ArrowRight, ChevronDown, ChevronLeft, ChevronRight, Globe, Calendar, Bike, Quote } from "lucide-react";
@@ -26,6 +26,7 @@ import BrandVideo from "@/components/brand/BrandVideo";
 import { optimizedImage } from "@/lib/imageTransform";
 import BrandStage, { STAGE_NAMES, type StageScene } from "@/components/brand/BrandStage";
 import { brandIdentity } from "@/config/brandIdentity";
+import { StatusOnCard, isOnSale, isStopped, isEndOfLine } from "@/components/scooter/CommercialStatus";
 
 export type BrandLook = 1 | 2 | 3 | 4 | 5;
 export const BRAND_LOOK_NAMES: Record<BrandLook, string> = { 1: "Pit-stand", 2: "Carbone", 3: "Affiche", 4: "Vitrine", 5: "Sommaire" };
@@ -154,13 +155,52 @@ const Presentation = ({ brand, models }: { brand: BrandData; models: BrandModel[
   );
 };
 
+// 25/10 (Nolan) : même tri que /trottinettes — « En vente neuve » / « Plus vendue neuve », dans l'URL (?vente=oui|non).
+// « À vérifier » n'apparaît que dans « Toutes » (règle du 24/10 : on n'affirme rien sans preuve).
+const VENTE = [
+  { v: null, l: "Toutes" },
+  { v: "oui", l: "En vente neuve" },
+  { v: "non", l: "Plus vendue neuve" },
+] as const;
+const inVente = (m: BrandModel, v: string | null) =>
+  v === "oui" ? isOnSale(m) : v === "non" ? isStopped(m) || isEndOfLine(m) : true;
+
 const Gamme = ({ models, accent }: { models: BrandModel[]; accent: string }) => {
   const [all, setAll] = useState(false);
-  const sorted = [...models].sort((a, b) => (b.power_watts ?? 0) - (a.power_watts ?? 0));
+  const [sp, setSp] = useSearchParams();
+  const raw = sp.get("vente");
+  const vente = raw === "oui" || raw === "non" ? raw : null;
+  const counts = { oui: models.filter((m) => inVente(m, "oui")).length, non: models.filter((m) => inVente(m, "non")).length };
+  // Le filtre ne s'affiche que si la marque a les deux : sinon il ne trie rien.
+  const showFilter = counts.oui > 0 && counts.non > 0;
+  const active = showFilter ? vente : null;
+  const shown = models.filter((m) => inVente(m, active));
+  const sorted = [...shown].sort((a, b) => (b.power_watts ?? 0) - (a.power_watts ?? 0));
   const list = all ? sorted : sorted.slice(0, 8);
+  const pick = (v: string | null) => {
+    const next = new URLSearchParams(sp);
+    if (v) next.set("vente", v); else next.delete("vente");
+    setSp(next, { replace: true, preventScrollReset: true });
+    setAll(false);
+  };
   if (models.length === 0) return <p className="text-base text-gray-600" style={{ fontFamily: FONT }}>La gamme arrive bientôt.</p>;
   return (
     <>
+      {showFilter && (
+        <div className="mb-4 flex flex-wrap gap-2" role="group" aria-label="Filtrer la gamme">
+          {VENTE.map(({ v, l }) => {
+            const on = active === v;
+            const n = v === null ? models.length : counts[v];
+            return (
+              <button key={l} type="button" onClick={() => pick(v)} aria-pressed={on}
+                className="inline-flex items-center gap-2 min-h-[44px] px-4 text-sm font-bold"
+                style={{ fontFamily: FONT, clipPath: CHAMFER, background: on ? CARBON : "#FFFFFF", color: on ? "#FFFFFF" : CARBON, boxShadow: on ? "none" : `inset 0 0 0 1.5px ${LINE}` }}>
+                {l}<span className="text-sm font-semibold" style={{ opacity: 0.7 }}>{n}</span>
+              </button>
+            );
+          })}
+        </div>
+      )}
       <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3">
         {list.map((m) => (
           <Link key={m.id} to={`/scooter/${m.slug}`} className="group relative flex flex-col bg-white transition-transform hover:-translate-y-1" style={{ clipPath: CHAMFER, boxShadow: `inset 0 0 0 1px ${LINE}` }}>
@@ -172,6 +212,7 @@ const Gamme = ({ models, accent }: { models: BrandModel[]; accent: string }) => 
             </div>
             <div className="flex-1 flex flex-col px-3 pt-3 pb-3.5">
               <div className="text-sm uppercase leading-tight line-clamp-2" style={{ fontFamily: UNB, fontWeight: 900, fontStyle: "italic", letterSpacing: "-0.02em", color: CARBON }}>{m.name}</div>
+              <div className="mt-2"><StatusOnCard s={m} look={4} /></div>
               <div className="mt-auto pt-2.5 flex items-baseline gap-3 flex-wrap" style={{ fontFamily: FONT }}>
                 {m.power_watts ? <span className="text-sm text-gray-500"><b className="text-base" style={{ fontFamily: UNB, fontStyle: "italic", fontWeight: 900, color: CARBON }}>{m.power_watts.toLocaleString("fr-FR")}</b> W</span> : null}
                 {m.range_km ? <span className="text-sm text-gray-500"><b className="text-base" style={{ fontFamily: UNB, fontStyle: "italic", fontWeight: 900, color: CARBON }}>{m.range_km}</b> km</span> : null}
@@ -181,10 +222,10 @@ const Gamme = ({ models, accent }: { models: BrandModel[]; accent: string }) => 
           </Link>
         ))}
       </div>
-      {models.length > 8 && (
+      {shown.length > 8 && (
         <button type="button" onClick={() => setAll(!all)} className="mt-5 inline-flex items-center min-h-[48px] px-6 text-sm font-extrabold uppercase tracking-wider bg-white"
           style={{ fontFamily: FONT, color: CARBON, clipPath: CHAMFER, boxShadow: `inset 0 0 0 1.5px ${CARBON}` }}>
-          {all ? "Réduire" : `Voir les ${models.length} modèles`}
+          {all ? "Réduire" : `Voir les ${shown.length} modèles`}
         </button>
       )}
     </>
