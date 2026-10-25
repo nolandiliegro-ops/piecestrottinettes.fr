@@ -169,7 +169,7 @@ const Garage = () => {
             onTheme={() => setThemePickerOpen(true)}
             trotts={
               <div>
-                <ScreenTitle kicker="Mes trotts" title={selectedScooter?.scooter_model?.name ?? 'Mes trotts'}>
+                <ScreenTitle kicker="Mon garage" title="Mes trotts">
                   {scooterCount > 1 ? `${scooterCount} trotts dans ton garage : passe de l'une à l'autre avec les flèches.` : 'Ta machine, son entretien et les pièces qui vont dessus.'}
                 </ScreenTitle>
                 {scootersLoading ? (
