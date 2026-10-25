@@ -4319,6 +4319,39 @@ export type Database = {
         }
         Relationships: []
       }
+      _backup_xiaomi_prix_20261025: {
+        Row: {
+          id: string | null
+          in_stock: boolean | null
+          kind: string | null
+          last_status: string | null
+          notes: string | null
+          price_checked_at: string | null
+          price_eur: number | null
+          price_source: string | null
+        }
+        Insert: {
+          id?: string | null
+          in_stock?: boolean | null
+          kind?: string | null
+          last_status?: string | null
+          notes?: string | null
+          price_checked_at?: string | null
+          price_eur?: number | null
+          price_source?: string | null
+        }
+        Update: {
+          id?: string | null
+          in_stock?: boolean | null
+          kind?: string | null
+          last_status?: string | null
+          notes?: string | null
+          price_checked_at?: string | null
+          price_eur?: number | null
+          price_source?: string | null
+        }
+        Relationships: []
+      }
       _backup_xiaomi6_20_10: {
         Row: {
           charge_connectors: string[] | null
@@ -6400,6 +6433,24 @@ export type Database = {
           images?: number
           n?: number
           user_id?: string
+        }
+        Relationships: []
+      }
+      backup_pro_prix_20261025: {
+        Row: {
+          def: string | null
+          fonction: string | null
+          saved_at: string | null
+        }
+        Insert: {
+          def?: string | null
+          fonction?: string | null
+          saved_at?: string | null
+        }
+        Update: {
+          def?: string | null
+          fonction?: string | null
+          saved_at?: string | null
         }
         Relationships: []
       }
@@ -9149,6 +9200,42 @@ export type Database = {
           },
         ]
       }
+      pro_family_discounts: {
+        Row: {
+          category_id: string
+          remise_pct: number
+          tier_code: string
+          updated_at: string
+        }
+        Insert: {
+          category_id: string
+          remise_pct: number
+          tier_code: string
+          updated_at?: string
+        }
+        Update: {
+          category_id?: string
+          remise_pct?: number
+          tier_code?: string
+          updated_at?: string
+        }
+        Relationships: [
+          {
+            foreignKeyName: "pro_family_discounts_category_id_fkey"
+            columns: ["category_id"]
+            isOneToOne: false
+            referencedRelation: "categories"
+            referencedColumns: ["id"]
+          },
+          {
+            foreignKeyName: "pro_family_discounts_tier_code_fkey"
+            columns: ["tier_code"]
+            isOneToOne: false
+            referencedRelation: "pro_tiers"
+            referencedColumns: ["code"]
+          },
+        ]
+      }
       pro_invoice_counters: {
         Row: {
           annee: number
@@ -9206,6 +9293,42 @@ export type Database = {
             isOneToOne: false
             referencedRelation: "pro_accounts"
             referencedColumns: ["id"]
+          },
+        ]
+      }
+      pro_part_prices: {
+        Row: {
+          part_id: string
+          prix: number
+          tier_code: string
+          updated_at: string
+        }
+        Insert: {
+          part_id: string
+          prix: number
+          tier_code: string
+          updated_at?: string
+        }
+        Update: {
+          part_id?: string
+          prix?: number
+          tier_code?: string
+          updated_at?: string
+        }
+        Relationships: [
+          {
+            foreignKeyName: "pro_part_prices_part_id_fkey"
+            columns: ["part_id"]
+            isOneToOne: false
+            referencedRelation: "parts"
+            referencedColumns: ["id"]
+          },
+          {
+            foreignKeyName: "pro_part_prices_tier_code_fkey"
+            columns: ["tier_code"]
+            isOneToOne: false
+            referencedRelation: "pro_tiers"
+            referencedColumns: ["code"]
           },
         ]
       }
@@ -10189,6 +10312,36 @@ export type Database = {
         }
         Relationships: []
       }
+      skot_nudges: {
+        Row: {
+          created_at: string
+          event: string
+          id: string
+          ip_hash: string | null
+          kind: string
+          page_slug: string | null
+          session_id: string
+        }
+        Insert: {
+          created_at?: string
+          event: string
+          id?: string
+          ip_hash?: string | null
+          kind: string
+          page_slug?: string | null
+          session_id: string
+        }
+        Update: {
+          created_at?: string
+          event?: string
+          id?: string
+          ip_hash?: string | null
+          kind?: string
+          page_slug?: string | null
+          session_id?: string
+        }
+        Relationships: []
+      }
       stock_alerts: {
         Row: {
           created_at: string
@@ -10887,6 +11040,7 @@ export type Database = {
         }
       }
       pro_emettre_facture: { Args: { p_order: string }; Returns: string }
+      pro_prix: { Args: { p_part: string; p_tier: string }; Returns: number }
       pro_recompute_tier: { Args: { p_pro: string }; Returns: string }
       pro_t_cart_set: {
         Args: { p_part: string; p_quantite: number; p_token: string }
