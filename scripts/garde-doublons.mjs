@@ -15,7 +15,7 @@ import { fileURLToPath } from 'url';
 import { execFile } from 'child_process';
 import { promisify } from 'util';
 import sharp from 'sharp';
-import { empreinte, ham, iou, memePhoto, SEUILS } from './lib/empreinte.mjs';
+import { empreinte, ham, iou, ecartCouleur, memePhoto, SEUILS } from './lib/empreinte.mjs';
 const pexec = promisify(execFile);
 
 const ROOT = resolve(dirname(fileURLToPath(import.meta.url)), '..');
@@ -84,7 +84,7 @@ async function planchePaires(pairs, nom) {
     const comp = [];
     for (const [k, q] of part.entries()) {
       const x = (k % 2) * 4 * W + (k % 2) * 20, y = Math.floor(k / 2) * H;
-      const lab = `d${q.d} s${q.io === null ? '-' : q.io.toFixed(2)}`;
+      const lab = `d${q.d} s${q.io === null ? '-' : q.io.toFixed(2)} c${q.c === null || q.c === undefined ? '-' : q.c.toFixed(0)}`;
       comp.push({ input: await tile(q.a, q.slug, lab, '#c62828'), left: x, top: y });
       comp.push({ input: await tile(q.b, `#${q.ia} / #${q.ib}`, q.table, '#1565c0'), left: x + W, top: y });
     }
@@ -108,7 +108,7 @@ for (const s of fiches) {
   for (let a = 0; a < us.length; a++) for (let b = a + 1; b < us.length; b++) {
     const A = await fp(us[a]), B = await fp(us[b]);
     if (A.err || B.err) continue;
-    neg.push({ slug: s.slug, table: s.table, ia: a, ib: b, a: us[a], b: us[b], d: ham(A.hash, B.hash), io: iou(A.mask, B.mask) });
+    neg.push({ slug: s.slug, table: s.table, ia: a, ib: b, a: us[a], b: us[b], d: ham(A.hash, B.hash), io: iou(A.mask, B.mask), c: ecartCouleur(A.rgb, B.rgb) });
   }
 }
 const erreurs = [...cache.keys()].length - (await Promise.all([...cache.values()])).filter((x) => !x.err).length;
@@ -127,22 +127,22 @@ const posM = [];
 for (const p of pos) {
   const R = await fp(p.retiree); if (R.err) continue;
   let best = null;
-  for (const g of p.gardees) { const G = await fp(g); if (G.err) continue; const d = ham(R.hash, G.hash), io = iou(R.mask, G.mask); if (!best || d < best.d) best = { slug: p.slug, table: 'parts', ia: 'retirée', ib: 'gardée', a: p.retiree, b: g, d, io }; }
+  for (const g of p.gardees) { const G = await fp(g); if (G.err) continue; const d = ham(R.hash, G.hash), io = iou(R.mask, G.mask), c = ecartCouleur(R.rgb, G.rgb); if (!best || d < best.d) best = { slug: p.slug, table: 'parts', ia: 'retirée', ib: 'gardée', a: p.retiree, b: g, d, io, c }; }
   if (best) posM.push(best);
 }
 const grille = [];
-for (const dh of [4, 6, 8, 10]) for (const si of [0.95, 0.96, 0.97, 0.98]) for (const dhi of [10, 12, 14, 16]) {
-  const s = { dhash: dh, iou: si, dhashAvecIou: dhi };
-  const flag = (q) => q.d <= s.dhash || (q.io !== null && q.io >= s.iou && q.d <= s.dhashAvecIou);
+for (const dh of [4, 6, 8, 10]) for (const si of [0.95, 0.97, 0.98]) for (const dhi of [10, 12, 14]) for (const cc of [10, 15, 20, 25, 30, 40]) {
+  const s = { dhash: dh, iou: si, dhashAvecIou: dhi, couleur: cc };
+  const flag = (q) => !(q.c !== null && q.c > s.couleur) && (q.d <= s.dhash || (q.io !== null && q.io >= s.iou && q.d <= s.dhashAvecIou));
   grille.push({ ...s, faux_positifs: neg.filter(flag).length, detectes: posM.filter(flag).length, positifs: posM.length });
 }
 grille.sort((x, y) => x.faux_positifs - y.faux_positifs || y.detectes - x.detectes);
-const proches = [...neg].sort((x, y) => x.d - y.d || (y.io ?? 0) - (x.io ?? 0)).slice(0, 36);
-const flagCur = (q) => q.d <= SEUILS.dhash || (q.io !== null && q.io >= SEUILS.iou && q.d <= SEUILS.dhashAvecIou);
+const proches = [...neg].filter((q) => q.d <= 12).sort((x, y) => (x.c ?? 999) - (y.c ?? 999)).slice(0, 36);
+const flagCur = (q) => !(q.c !== null && q.c > SEUILS.couleur) && (q.d <= SEUILS.dhash || (q.io !== null && q.io >= SEUILS.iou && q.d <= SEUILS.dhashAvecIou));
 const rates = posM.filter((q) => !flagCur(q));
 const hist = (arr) => { const h = {}; for (const q of arr) h[q.d] = (h[q.d] || 0) + 1; return h; };
 writeFileSync(resolve(OUT, 'calib.json'), JSON.stringify({ fiches: fiches.length, paires_negatives: neg.length, positifs: posM.length, erreurs_telechargement: erreurs, seuils_actuels: SEUILS,
-  actuels: { faux_positifs: neg.filter(flagCur).map(({ slug, ia, ib, d, io }) => ({ slug, ia, ib, d, io })), rates: rates.length },
+  actuels: { faux_positifs: neg.filter(flagCur).map(({ slug, ia, ib, d, io, c }) => ({ slug, ia, ib, d, io, c })), rates: rates.length },
   hist_dhash_negatifs: hist(neg), hist_dhash_positifs: hist(posM), grille: grille.slice(0, 40) }, null, 1));
 await planchePaires(proches, 'proches');
 await planchePaires(rates.slice(0, 36), 'rates');
