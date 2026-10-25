@@ -1,4 +1,4 @@
-// Config de lancement — relance de publication 25/10 (grille des prix)
+// Publication 25/10 soir : SKOT Étage 2 (interventions au bon moment).
 /**
  * Interrupteur de pré-lancement de la boutique.
  *
