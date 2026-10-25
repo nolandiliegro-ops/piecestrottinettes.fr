@@ -1,0 +1,272 @@
+{
+ "regle": "Photo principale = la trottinette de 3/4, détourée, propre, seule (Nolan 25/10).",
+ "depubliees_sans_photo_valable": [
+  "dualtron-eagle-pro",
+  "iscooter-f7-ultra",
+  "iscooter-w12",
+  "isinwheel-d2",
+  "isinwheel-gt4s",
+  "kaabo-mantis-8",
+  "xiaomi-electric-scooter-4-go",
+  "circooter-landturbo-pro",
+  "e-twow-tanktorq-tk2-lite",
+  "isinwheel-h7-pro"
+ ],
+ "publiees_sans_3_4_propre": [
+  {
+   "slug": "cecotec-bongo-serie-m30-connected",
+   "principale_actuelle": "3/4 arriere",
+   "photos": 2
+  },
+  {
+   "slug": "dualtron-spider-2",
+   "principale_actuelle": "3/4 avant",
+   "photos": 1
+  },
+  {
+   "slug": "dyu-d3f",
+   "principale_actuelle": "profil",
+   "photos": 3
+  },
+  {
+   "slug": "hikerboy-off-road-2",
+   "principale_actuelle": "profil",
+   "photos": 3
+  },
+  {
+   "slug": "inmotion-climber",
+   "principale_actuelle": "3/4 avant",
+   "photos": 4
+  },
+  {
+   "slug": "inmotion-rs",
+   "principale_actuelle": "3/4 arriere",
+   "photos": 2
+  },
+  {
+   "slug": "inokim-light-2-super",
+   "principale_actuelle": "profil",
+   "photos": 3
+  },
+  {
+   "slug": "iscooter-ix3",
+   "principale_actuelle": "3/4 avant",
+   "photos": 3
+  },
+  {
+   "slug": "iscooter-w7",
+   "principale_actuelle": "profil",
+   "photos": 4
+  },
+  {
+   "slug": "iscooter-w9-air",
+   "principale_actuelle": "profil",
+   "photos": 5
+  },
+  {
+   "slug": "kaabo-mantis-x-plus",
+   "principale_actuelle": "profil",
+   "photos": 1
+  },
+  {
+   "slug": "kaabo-wolf-king-gt-pro-plus",
+   "principale_actuelle": "profil",
+   "photos": 3
+  },
+  {
+   "slug": "kugoo-g3-pro",
+   "principale_actuelle": "profil",
+   "photos": 3
+  },
+  {
+   "slug": "kukirin-a1",
+   "principale_actuelle": "profil",
+   "photos": 4
+  },
+  {
+   "slug": "kukirin-g4-max",
+   "principale_actuelle": "profil",
+   "photos": 3
+  },
+  {
+   "slug": "kukirin-g4-ultra",
+   "principale_actuelle": "profil",
+   "photos": 4
+  },
+  {
+   "slug": "nami-klima-max",
+   "principale_actuelle": "profil",
+   "photos": 4
+  },
+  {
+   "slug": "navee-e25-pro",
+   "principale_actuelle": "profil",
+   "photos": 2
+  },
+  {
+   "slug": "navee-g5-max",
+   "principale_actuelle": "profil",
+   "photos": 3
+  },
+  {
+   "slug": "navee-g5-pro",
+   "principale_actuelle": "profil",
+   "photos": 2
+  },
+  {
+   "slug": "navee-gt5-max",
+   "principale_actuelle": "3/4 avant",
+   "photos": 4
+  },
+  {
+   "slug": "navee-gt3-pro",
+   "principale_actuelle": "profil",
+   "photos": 1
+  },
+  {
+   "slug": "navee-k100",
+   "principale_actuelle": "profil",
+   "photos": 1
+  },
+  {
+   "slug": "navee-nt5-ultra-x",
+   "principale_actuelle": "profil",
+   "photos": 3
+  },
+  {
+   "slug": "navee-st5-pro",
+   "principale_actuelle": "profil",
+   "photos": 3
+  },
+  {
+   "slug": "navee-v25i-pro-ii",
+   "principale_actuelle": "profil",
+   "photos": 2
+  },
+  {
+   "slug": "navee-xt5-ultra",
+   "principale_actuelle": "profil",
+   "photos": 2
+  },
+  {
+   "slug": "ninebot-e2",
+   "principale_actuelle": "profil",
+   "photos": 3
+  },
+  {
+   "slug": "ninebot-e25e",
+   "principale_actuelle": "profil",
+   "photos": 1
+  },
+  {
+   "slug": "ninebot-e3",
+   "principale_actuelle": "3/4 avant",
+   "photos": 2
+  },
+  {
+   "slug": "ninebot-e3-pro-e",
+   "principale_actuelle": "profil",
+   "photos": 5
+  },
+  {
+   "slug": "ninebot-f2-plus",
+   "principale_actuelle": "profil",
+   "photos": 1
+  },
+  {
+   "slug": "ninebot-f3-e",
+   "principale_actuelle": "profil",
+   "photos": 1
+  },
+  {
+   "slug": "ninebot-f3-pro-e",
+   "principale_actuelle": "3/4 avant",
+   "photos": 4
+  },
+  {
+   "slug": "ninebot-f65",
+   "principale_actuelle": "profil",
+   "photos": 1
+  },
+  {
+   "slug": "pure-flex",
+   "principale_actuelle": "profil",
+   "photos": 4
+  },
+  {
+   "slug": "teverun-blade-mini-ultra",
+   "principale_actuelle": "profil",
+   "photos": 3
+  },
+  {
+   "slug": "urbanglide-all-road-5",
+   "principale_actuelle": "profil",
+   "photos": 3
+  },
+  {
+   "slug": "urbanglide-all-road-6-pro",
+   "principale_actuelle": "profil",
+   "photos": 3
+  },
+  {
+   "slug": "urbanglide-ecross-max-2x2-gen-2",
+   "principale_actuelle": "profil",
+   "photos": 3
+  },
+  {
+   "slug": "urbanglide-ecross-pro-2",
+   "principale_actuelle": "profil",
+   "photos": 4
+  },
+  {
+   "slug": "urbanglide-ecross-pro-boost-2",
+   "principale_actuelle": "profil",
+   "photos": 3
+  },
+  {
+   "slug": "urbanglide-ride-100-max-2",
+   "principale_actuelle": "profil",
+   "photos": 3
+  },
+  {
+   "slug": "vsett-11-plus-super",
+   "principale_actuelle": "profil",
+   "photos": 4
+  },
+  {
+   "slug": "weped-ff",
+   "principale_actuelle": "profil",
+   "photos": 2
+  },
+  {
+   "slug": "weped-fold-11",
+   "principale_actuelle": "profil",
+   "photos": 2
+  },
+  {
+   "slug": "weped-fold-3",
+   "principale_actuelle": "profil",
+   "photos": 3
+  },
+  {
+   "slug": "weped-ssgt",
+   "principale_actuelle": "3/4 arriere",
+   "photos": 1
+  },
+  {
+   "slug": "xiaomi-electric-scooter-6-essential",
+   "principale_actuelle": "profil",
+   "photos": 1
+  },
+  {
+   "slug": "yeep-me-80n-evo-plus",
+   "principale_actuelle": "profil",
+   "photos": 5
+  },
+  {
+   "slug": "zero-8",
+   "principale_actuelle": "profil",
+   "photos": 3
+  }
+ ]
+}
