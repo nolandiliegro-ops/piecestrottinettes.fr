@@ -5390,6 +5390,33 @@ export type Database = {
         }
         Relationships: []
       }
+      _bak_images_scooters_2610_qualite: {
+        Row: {
+          id: string | null
+          image_url: string | null
+          images: Json | null
+          published: boolean | null
+          saved_at: string | null
+          slug: string | null
+        }
+        Insert: {
+          id?: string | null
+          image_url?: string | null
+          images?: Json | null
+          published?: boolean | null
+          saved_at?: string | null
+          slug?: string | null
+        }
+        Update: {
+          id?: string | null
+          image_url?: string | null
+          images?: Json | null
+          published?: boolean | null
+          saved_at?: string | null
+          slug?: string | null
+        }
+        Relationships: []
+      }
       _bak_parts_points_bleus_2510: {
         Row: {
           attributes: Json | null
@@ -10111,6 +10138,7 @@ export type Database = {
           meta_description: string | null
           meta_title: string | null
           name: string
+          photo_a_refaire: boolean
           power_watts: number | null
           price_checked_at: string | null
           price_eur: number | null
@@ -10173,6 +10201,7 @@ export type Database = {
           meta_description?: string | null
           meta_title?: string | null
           name: string
+          photo_a_refaire?: boolean
           power_watts?: number | null
           price_checked_at?: string | null
           price_eur?: number | null
@@ -10235,6 +10264,7 @@ export type Database = {
           meta_description?: string | null
           meta_title?: string | null
           name?: string
+          photo_a_refaire?: boolean
           power_watts?: number | null
           price_checked_at?: string | null
           price_eur?: number | null
