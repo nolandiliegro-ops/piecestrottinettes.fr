@@ -1,0 +1,32 @@
+[
+ {
+  "brandName": "Ninebot",
+  "scooters": [
+   {
+    "slug": "ninebot-e2-plus-e-ii",
+    "name": "Ninebot E2 Plus E II",
+    "source_image_urls": [
+     "https://fr-fr.segway.com/content/dam/segway-ninebot/eu/en/content-import/product-image/eKickScooter-E2_Plus_E_II.png",
+     "https://cdn.shopify.com/s/files/1/0983/1487/9322/files/E2-Plus-E-II-side-viewcopy.webp?v=1769164896",
+     "https://cdn.shopify.com/s/files/1/0983/1487/9322/files/e2_plus_ii_e_product_picture_suspension-2140x1605_72copy.webp?v=1769164906"
+    ]
+   }
+  ]
+ },
+ {
+  "brandName": "Segway",
+  "scooters": [
+   {
+    "slug": "segway-gt3-pro",
+    "name": "Segway GT3 Pro",
+    "source_image_urls": [
+     "https://fr-fr.segway.com/content/dam/segway-ninebot/eu/en/content-import/product-image/ekickscooter-GT3Pro.png",
+     "https://cdn.shopify.com/s/files/1/0968/8318/files/Trottinette_electrique_Segway_GT3_Pro_pas_cher-549674.jpg?v=1754109631",
+     "https://cdn.shopify.com/s/files/1/0968/8318/files/Trottinette_electrique_Segway_GT3_Pro_profil-374473.png?v=1754055046",
+     "https://cdn.shopify.com/s/files/1/0968/8318/files/Trottinette_electrique_Segway_GT3_Pro_double_moteur-844786.png?v=1754055046",
+     "https://cdn.shopify.com/s/files/1/0968/8318/files/Trottinette_electrique_Segway_GT3_Pro_tout_terrain-454761.png?v=1754055046"
+    ]
+   }
+  ]
+ }
+]
