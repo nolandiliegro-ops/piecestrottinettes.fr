@@ -42,6 +42,8 @@ jobs:
           fi
       - name: Lots
         shell: bash
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
         run: |
           set +e
           export LC_ALL=C.UTF-8
@@ -125,6 +127,15 @@ jobs:
               node scripts/_smoke-process-images-doublon.mjs $flag > "out/smoke-doublon.log" 2>&1
               echo "::notice title=smoke-doublon::EXIT=$?"
               grep -v -i 'secret\|bearer\|eyJ' "out/smoke-doublon.log" | tail -n 8
+              continue
+            fi
+            if [ "$mode" = "juge" ]; then
+              # Lecture seule (25/10) : juge VISION des photos de trottinettes. « juge tout x » ou « juge slugs a,b,c ».
+              jargs=""; [ "$lot" = "slugs" ] && jargs="--slugs $extra"
+              node scripts/juge-photos.mjs $jargs > "out/juge.log" 2>&1
+              echo "::notice title=juge::EXIT=$?"
+              grep '^::' "out/juge.log" | head -5
+              tail -n 3 "out/juge.log"
               continue
             fi
             if [ "$mode" = "doublons-core" ]; then
