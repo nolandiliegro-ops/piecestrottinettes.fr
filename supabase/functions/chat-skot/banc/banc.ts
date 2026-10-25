@@ -45,7 +45,12 @@ function checkAssertions(c: CasSkot, r: any): string[] {
   for (const p of a.doit ?? []) if (!rx(p).test(reply)) fails.push(`doit contenir /${p}/`);
   if (a.un_de?.length && !a.un_de.some((p) => rx(p).test(reply))) fails.push(`doit contenir l'un de ${a.un_de.map((p) => `/${p}/`).join(" ")}`);
   for (const p of a.ne_doit_pas ?? []) { const m = reply.match(rx(p)); if (m) fails.push(`interdit /${p}/ → « ${m[0]} »`); }
-  const cards: any[] = r.cards ?? [];
+  const allCards: any[] = r.cards ?? [];
+  const cards: any[] = allCards.filter((x) => x.type !== "scooter");
+  const trotts = allCards.filter((x) => x.type === "scooter");
+  if (a.trotts !== undefined && trotts.length < a.trotts) fails.push(`${a.trotts} carte(s) trottinette attendue(s), ${trotts.length} affichée(s)`);
+  if (a.trotts === 0 && trotts.length) fails.push(`aucune carte trottinette attendue, ${trotts.length} affichée(s)`);
+  if (a.prix_max !== undefined) for (const t of trotts) if (t.price === null || t.price > a.prix_max * 1.05) fails.push(`${t.name} hors budget (${t.price ?? "prix inconnu"} €)`);
   if (a.cartes === "aucune" && cards.length) fails.push(`0 carte attendue, ${cards.length} affichée(s)`);
   if (a.cartes === "avec" && !cards.length) fails.push("au moins 1 carte attendue");
   // "verified" : au moins une carte ✓, en tête, et aucune carte sans statut (des ◐ en dessous sont admises).

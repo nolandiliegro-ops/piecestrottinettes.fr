@@ -20,12 +20,39 @@ const CHAMFER_S = "polygon(0 0, calc(100% - 8px) 0, 100% 8px, 100% 100%, 0 100%)
 
 type Msg = { role: "user" | "skot"; text: string; cards?: SkotCard[]; image?: string; id?: string | null; conv?: string; fb?: 1 | -1 };
 
+/** Trottinette conseillée par SKOT : fiche + offre partenaire (lien sponsorisé, nouvel onglet). */
+const ScooterCard = ({ card }: { card: SkotCard }) => (
+  <div className="bg-white p-3 flex gap-3" style={{ clipPath: CHAMFER, borderBottom: "3px solid #1A1A1A" }}>
+    {card.image_url && <img src={card.image_url} alt="" className="w-20 h-20 object-contain shrink-0" loading="lazy" />}
+    <div className="min-w-0 flex-1 space-y-1">
+      <Link to={`/scooter/${card.slug}`} className="block text-sm font-semibold text-[#1A1A1A] leading-snug hover:underline">{card.name}</Link>
+      <p className="text-sm text-gray-600">
+        {[card.range_km ? `${card.range_km} km annoncés` : null, card.weight_kg ? `${card.weight_kg} kg` : null, card.max_speed_kmh ? `${Math.min(card.max_speed_kmh, 25)} km/h sur route` : null].filter(Boolean).join(" · ")}
+      </p>
+      <div className="flex items-center justify-between gap-2">
+        <span className="text-base font-extrabold text-[#1A1A1A]">{card.price ? formatPrice(card.price) : "Prix chez le vendeur"}</span>
+        {card.offer_url ? (
+          <a href={card.offer_url} target="_blank" rel="sponsored noopener noreferrer"
+            className="inline-flex items-center min-h-[44px] px-3 text-sm font-bold text-white bg-[#FF6600] hover:bg-[#E65C00]" style={{ clipPath: CHAMFER_S }}>
+            Voir l'offre
+          </a>
+        ) : (
+          <Link to={`/scooter/${card.slug}`} className="inline-flex items-center min-h-[44px] px-3 text-sm font-bold border-[1.5px] border-[#1A1A1A] text-[#1A1A1A]" style={{ clipPath: CHAMFER_S }}>
+            La fiche
+          </Link>
+        )}
+      </div>
+      {card.offer_url && <p className="text-sm text-gray-500">Lien partenaire{card.offer_host ? ` · ${card.offer_host}` : ""}</p>}
+    </div>
+  </div>
+);
+
 const PartCard = ({ card }: { card: SkotCard }) => {
   const { addItem, setIsOpen } = useCart();
   const add = () => {
     if (!SHOP_OPEN) { openPrelaunch(); return; }
     if (!card.in_stock) return;
-    addItem({ id: card.id, name: card.name, price: card.price, image_url: card.image_url, stock_quantity: card.stock_quantity ?? 1 });
+    addItem({ id: card.id ?? card.slug, name: card.name, price: card.price ?? 0, image_url: card.image_url, stock_quantity: card.stock_quantity ?? 1 });
     toast.success(`${card.name} ajouté au panier`, { action: { label: "Voir le panier", onClick: () => setIsOpen(true) } });
   };
   return (
@@ -39,7 +66,7 @@ const PartCard = ({ card }: { card: SkotCard }) => {
           {card.in_stock ? `livraison ${card.delay}` : "rupture de stock"}
         </p>
         <div className="flex items-center justify-between gap-2">
-          <span className="text-base font-extrabold text-[#1A1A1A]">{formatPrice(card.price)}</span>
+          <span className="text-base font-extrabold text-[#1A1A1A]">{formatPrice(card.price ?? 0)}</span>
           <button
             type="button"
             onClick={add}
@@ -146,7 +173,7 @@ const SkotWidget = () => {
             msgs={msgs} busy={busy} input={input} setInput={setInput} onSubmit={onSubmit}
             send={(t) => void send(t)} onClose={() => setOpen(false)} onSearch={() => { setOpen(false); openSpotlight(); }}
             pickPhoto={() => fileRef.current?.click()} photo={photo} clearPhoto={() => setPhoto(null)}
-            rate={(i, v) => void rate(i, v)} listRef={listRef} renderCard={(c) => <PartCard card={c} />}
+            rate={(i, v) => void rate(i, v)} listRef={listRef} renderCard={(c) => (c.type === "scooter" ? <ScooterCard card={c} /> : <PartCard card={c} />)}
           />
         </>
       )}

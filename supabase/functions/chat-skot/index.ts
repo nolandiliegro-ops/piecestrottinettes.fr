@@ -14,7 +14,7 @@ import { classifyCompat, unverifiedLabel, verifiedReason, partDelay } from "../_
 import { CORPUS } from "./banc/cas.ts";
 import { runBanc, runNuit, runFresh, runFreshNuit, looksCut } from "./banc/banc.ts";
 
-const VERSION = "chat-skot@2026-10-25i";
+const VERSION = "chat-skot@2026-10-25j";
 const MODEL = "claude-haiku-5-5";
 const MAX_TOOL_ROUNDS = 4;
 const HISTORY_LIMIT = 14;
@@ -66,12 +66,21 @@ RÈGLES ABSOLUES
 16. Si find_scooter renvoie UN seul modèle, c'est le bon : réponds directement en le nommant (« ta Xiaomi Mi Pro 2 »), sans demander de confirmer l'orthographe. S'il en renvoie plusieurs, demande lequel. Des « modeles_proches » ne sont jamais le modèle du client : demande-lui.
 17. Les cotes dictées ou mal tapées s'interprètent : « 10x2 et 50-6 » = 10x2.50-6, « dix fois deux et demi » = 10x2.5, « 8 et demi fois 2 » = 8,5x2. Tu reformules la cote comprise et tu continues.
 
+CONSEIL D'ACHAT D'UNE TROTTINETTE (tu es le meilleur conseiller de France, et honnête)
+- Si le client veut choisir une trottinette : il te faut au minimum le budget et l'usage (trajet en km, ville / chemins, à porter ou pas). S'il manque l'un des deux, pose UNE question courte qui demande les deux, puis appelle recommend_scooters.
+- Tu présentes les 3 propositions de l'outil (jamais un modèle hors résultat), chacune en une ligne : pour qui elle est faite, avec 2 ou 3 chiffres de sa fiche (autonomie, poids, prix). Tu dis franchement leurs limites (poids, autonomie réelle plus basse que l'annoncée, surtout l'hiver).
+- Si « pieces_dispo_chez_nous » > 0, dis qu'on a ses pièces : elle se répare facilement. C'est notre vrai argument.
+- Quand une offre partenaire existe, la carte affiche « Voir l'offre » : dis une fois « lien partenaire : on touche une petite commission, sans surcoût pour toi ».
+- Vitesse : sur la voie publique, 25 km/h maximum en France. Une trottinette plus rapide se bride ; ne vante jamais la vitesse au-delà.
+- Aucun modèle ne colle : dis-le et propose d'ajuster le budget ou le critère qui bloque (ecartes_par_critere).
+- On ne vend pas les trottinettes nous-mêmes : on conseille, le partenaire vend, nous on fournit les pièces après.
+
 FICHE BOUTIQUE (seule source pour ces sujets)
 - Livraison : un seul mode, « Livraison suivie », 4,90 € (port offert au-delà d'un seuil affiché au panier). Pièces en stock au magasin (pneus, pneus pleins, chambres à air, chargeurs, plaquettes, disques) : livraison 48-72 h. Pièce commandée chez le fournisseur : 3 à 5 jours ouvrés. N° de suivi envoyé par email à l'expédition, aussi visible dans le Garage (Mes commandes).
 - Rétractation : 14 jours à compter de la réception, sans motif ; frais de retour à la charge de l'acheteur ; produit dans son emballage d'origine, en parfait état. Détails : page CGV (${SITE}/cgv).
 - Code Rider : carte Rider gratuite à l'inscription, code personnel RIDER-XXXXXX : -20 % plafonné à 30 €, une commande, valable 60 jours après l'ouverture de la boutique, hors trottinettes complètes et batteries.
 - La boutique ouvre le 30 octobre 2026. Avant cette date, les commandes ne sont pas encore ouvertes : dis-le simplement.
-- Trottinettes complètes : on ne les vend pas, on vend les pièces ; get_scooter peut donner un lien vers un vendeur partenaire.
+- Trottinettes complètes : on ne les vend pas, on vend les pièces ; pour en choisir une, recommend_scooters ; get_scooter peut donner un lien vers un vendeur partenaire.
 - Ce qui nous distingue : chaque pièce affiche « ✓ Compatible » seulement quand l'atelier a vérifié qu'elle monte sur la trottinette, sinon « ◐ À confirmer » avec ce qu'il faut regarder. Ne dis jamais que toutes les pièces sont vérifiées.`;
 
 // ───────────────────────── Outils ─────────────────────────
@@ -106,6 +115,20 @@ const TOOLS = [
     name: "check_compatibility",
     description: "Dit si une pièce précise (slug) monte sur une trottinette précise (slug). Renvoie verified (avec la raison), unverified (avec la phrase à dire) ou aucune_ligne.",
     input_schema: { type: "object", properties: { part_slug: { type: "string" }, scooter_slug: { type: "string" } }, required: ["part_slug", "scooter_slug"] },
+  },
+  {
+    name: "recommend_scooters",
+    description: "CONSEIL D'ACHAT : propose les 3 trottinettes EN VENTE du catalogue qui collent le mieux au besoin du client (classement sur les fiches : autonomie, puissance, tout-terrain, poids, charge, prix, pièces disponibles chez nous). Renvoie aussi l'offre partenaire quand elle existe. N'invente jamais un modèle hors de ce résultat.",
+    input_schema: { type: "object", properties: {
+      budget_max_eur: { type: "number", description: "Budget maximum en euros, si le client l'a donné" },
+      budget_min_eur: { type: "number" },
+      usage: { type: "string", enum: ["ville", "mixte", "tout-terrain", "longue-distance", "leger-transport"], description: "ville = trajets urbains courts ; leger-transport = à porter dans le métro / le train ; longue-distance = gros trajets ; tout-terrain = chemins, pentes" },
+      trajet_km: { type: "number", description: "Distance d'un trajet ALLER en km, si donnée" },
+      poids_client_kg: { type: "number" },
+      poids_max_trott_kg: { type: "number", description: "Si le client doit porter la trottinette" },
+      suspension: { type: "boolean", description: "true si le client veut des suspensions" },
+      exclure_slugs: { type: "array", items: { type: "string" }, description: "Modèles déjà proposés à ne pas reproposer" },
+    } },
   },
   {
     name: "search_kb",
@@ -333,6 +356,67 @@ async function runTool(name: string, input: Record<string, any>, ctx: Ctx): Prom
         ? { status: "verified", reason: verifiedReason(best.r.suggestion_reason), position: best.r.position ?? null, part: card.name, scooter: s.name }
         : { status: "unverified", label: unverifiedLabel(best.r.suggestion_reason), part: card.name, scooter: s.name };
     }
+    case "recommend_scooters": {
+      // 25/10 (GO Nolan) : conseil d'achat. Uniquement commercial_status = 'en_vente' (« celles qui sont encore en vente quelque part »).
+      // Lien partenaire = bonus : à mérite égal il passe devant (+3 %), il ne fait jamais entrer un modèle moins adapté.
+      const { data, error: qErr } = await db.from("scooter_models")
+        .select("id, name, slug, image_url, price_eur, range_km, max_speed_kmh, power_watts, weight_kg, max_load_kg, suspension, foldable, wheel_inches, ip_rating, score_performance, score_autonomy, score_offroad, compatible_parts_count, affiliate_link, brands!scooter_models_brand_id_fkey(name), scooter_offers(affiliate_url, product_url, price_eur, in_stock, is_active, merchant_host)")
+        .eq("published", true).eq("commercial_status", "en_vente").limit(1000);
+      if (qErr) { console.error("[chat-skot] recommend", qErr.message); return { error: "requête impossible" }; }
+      const usage = String(input.usage ?? "mixte");
+      const exclude = new Set((input.exclure_slugs ?? []).map(String));
+      const minRange = input.trajet_km ? Math.ceil(Number(input.trajet_km) * 2 * 1.4) : null; // aller-retour + 40 % de marge réelle
+      const rows = (data ?? []).filter((s: any) => !exclude.has(s.slug)).map((s: any) => {
+        const offers = (s.scooter_offers ?? []).filter((o: any) => o.is_active && (o.affiliate_url || o.product_url));
+        const best = offers.filter((o: any) => o.in_stock !== false && o.price_eur).sort((a: any, b: any) => a.price_eur - b.price_eur)[0] ?? offers[0] ?? null;
+        const price = best?.price_eur ?? s.price_eur ?? null;
+        return { s, best, price: price ? Number(price) : null };
+      });
+      const fails: Record<string, number> = {};
+      const keep = rows.filter(({ s, price }: any) => {
+        const why = (k: string) => { fails[k] = (fails[k] ?? 0) + 1; return false; };
+        if (input.budget_max_eur && (price === null || price > Number(input.budget_max_eur) * 1.05)) return why(price === null ? "prix_inconnu" : "budget");
+        if (input.budget_min_eur && price !== null && price < Number(input.budget_min_eur)) return why("budget_min");
+        if (minRange && (s.range_km ?? 0) < minRange) return why("autonomie");
+        if (input.poids_client_kg && s.max_load_kg && s.max_load_kg < Number(input.poids_client_kg) + 10) return why("charge");
+        if (input.poids_max_trott_kg && (s.weight_kg ?? 99) > Number(input.poids_max_trott_kg)) return why("poids_trott");
+        if (input.suspension === true && (!s.suspension || /aucune|non|sans/i.test(String(s.suspension)))) return why("suspension");
+        if (usage === "leger-transport" && (s.weight_kg ?? 99) > 16) return why("poids_trott");
+        if (usage === "tout-terrain" && (s.score_offroad ?? 0) < 30) return why("tout_terrain");
+        return true;
+      });
+      const W: Record<string, [number, number, number, number]> = { // performance, autonomie, tout-terrain, légèreté
+        ville: [0.25, 0.35, 0.05, 0.35], mixte: [0.35, 0.35, 0.15, 0.15], "tout-terrain": [0.35, 0.2, 0.45, 0], "longue-distance": [0.2, 0.65, 0.05, 0.1], "leger-transport": [0.1, 0.25, 0, 0.65],
+      };
+      const w = W[usage] ?? W.mixte;
+      const scored = keep.map((r: any) => {
+        const s = r.s;
+        const light = s.weight_kg ? Math.max(0, Math.min(100, (30 - s.weight_kg) * 5)) : 30;
+        let score = w[0] * (s.score_performance ?? 0) + w[1] * (s.score_autonomy ?? 0) + w[2] * (s.score_offroad ?? 0) + w[3] * light;
+        if ((s.compatible_parts_count ?? 0) > 0) score *= 1.08; // pièces dispo chez nous : réparable
+        if (r.best?.affiliate_url || s.affiliate_link) score *= 1.03; // bonus partenaire (départage seulement)
+        if (input.budget_max_eur && r.price) score *= 1 + Math.min(0.1, (r.price / Number(input.budget_max_eur)) * 0.1); // utiliser le budget, sans le dépasser
+        return { ...r, score };
+      }).sort((a: any, b: any) => b.score - a.score);
+      const top = scored.slice(0, 3).map(({ s, best, price }: any) => {
+        const link = best?.affiliate_url ?? s.affiliate_link ?? null;
+        const card = {
+          type: "scooter", slug: s.slug, name: fullName(s.brands?.name, s.name), image_url: s.image_url, price,
+          range_km: s.range_km, max_speed_kmh: s.max_speed_kmh, weight_kg: s.weight_kg,
+          offer_url: link, offer_host: best?.merchant_host ?? (() => { try { return link ? new URL(link).hostname.replace(/^www\./, "") : null; } catch { return null; } })(), url: `${SITE}/scooter/${s.slug}`,
+        };
+        ctx.cards.push(card);
+        return {
+          name: card.name, slug: s.slug, prix_eur: price, autonomie_annoncee_km: s.range_km, vitesse_max_kmh: s.max_speed_kmh, puissance_w: s.power_watts,
+          poids_kg: s.weight_kg, charge_max_kg: s.max_load_kg, suspensions: s.suspension, pliable: s.foldable, roues_pouces: s.wheel_inches, etancheite: s.ip_rating,
+          pieces_dispo_chez_nous: s.compatible_parts_count ?? 0, lien_partenaire: !!link, page: card.url,
+        };
+      });
+      return {
+        recommandations: top, candidats_retenus: keep.length, modeles_en_vente: rows.length, ecartes_par_critere: fails,
+        note: input.budget_max_eur ? `Le prix n'est connu que pour une partie des modèles en vente : seuls ceux-là entrent dans un budget.` : undefined,
+      };
+    }
     case "search_kb": {
       const ws = words(String(input.query ?? "")).slice(0, 3);
       if (!ws.length) return { results: [] };
@@ -555,6 +639,8 @@ export async function converse(inp: ConverseInput): Promise<ConverseOutput> {
   // Cartes — règles de la recette du 24/10 :
   // dédoublonnage par slug (la version avec statut ✓/◐ gagne), « citée » = nom complet présent dans la réponse,
   // une recherche brute sans statut n'est jamais affichée si elle n'est pas citée, et disparaît dès qu'une carte a un statut.
+  const scooterCards = (ctx.cards as any[]).filter((c) => c.type === "scooter").slice(0, 3);
+  ctx.cards = (ctx.cards as any[]).filter((c) => c.type !== "scooter");
   const bySlug = new Map<string, any>();
   for (const c of ctx.cards as any[]) { const prev = bySlug.get(c.slug); if (!prev || (!prev.compat && c.compat)) bySlug.set(c.slug, c); }
   const cards = [...bySlug.values()];
@@ -571,7 +657,7 @@ export async function converse(inp: ConverseInput): Promise<ConverseOutput> {
     const rank = (c: any) => (c.compat === "verified" ? 0 : 2) + (cited.includes(c) ? 0 : 1);
     shown = withStatus.sort((a: any, b: any) => rank(a) - rank(b));
   } else shown = cited;
-  o.cards = shown.slice(0, 6);
+  o.cards = [...scooterCards, ...shown.slice(0, scooterCards.length ? 3 : 6)];
   o.escalated = ctx.escalated;
   o.orderFailed = ctx.orderFailed;
   return o;

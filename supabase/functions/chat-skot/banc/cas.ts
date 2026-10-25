@@ -32,6 +32,10 @@ export interface CasSkot {
     outil_interdit?: string[];
     escalade?: boolean;
     mots_max?: number;
+    /** nombre minimum de cartes trottinette (conseil d'achat) ; 0 = aucune */
+    trotts?: number;
+    /** budget : aucune trottinette proposée au-dessus (+5 %) */
+    prix_max?: number;
   };
   retire?: boolean;
 }
@@ -177,6 +181,29 @@ export const CORPUS: CasSkot[] = [
     message: "Pour ma trottinette Blackwave Storm 5 je cherche un contrôleur 48V, vous en avez ?", attendu: { ne_doit_pas: ["dualtron"] } },
   { id: "f03-un-seul-modele", famille: "large", origine: "conversation", note: "chaumi = Xiaomi : un seul modèle trouvé → répondre sans demander de confirmer l'orthographe",
     message: "chaumi pro 2 il me faut des plaquettes", attendu: { ne_doit_pas: ["c'est bien (ça|ta|la tienne)", "je ne trouve pas « ?chaumi"] } },
+  // ── Conseil d'achat (25/10, GO Nolan) ──
+  { id: "k01-budget-usage", origine: "client-simule", message: "Je cherche une trottinette pour aller au boulot, 8 km aller, budget 600 euros max", attendu: { trotts: 1, prix_max: 600, outil: ["recommend_scooters"] } },
+  { id: "k02-sans-infos", origine: "client-simule", note: "il manque budget et usage : UNE question, pas de reco au hasard", message: "quelle trottinette tu me conseilles ?", attendu: { trotts: 0, un_de: ["budget", "combien"], outil_interdit: ["recommend_scooters"] } },
+  { id: "k03-tout-terrain", origine: "client-simule", message: "je veux une trott pour les chemins et les pentes, je fais 95 kilos, budget 1500€", attendu: { trotts: 1, prix_max: 1500, outil: ["recommend_scooters"] } },
+  { id: "k04-metro", origine: "client-simule", message: "Une trottinette légère que je peux porter dans le métro, 4 km par trajet, 500 € max", attendu: { trotts: 1, prix_max: 500 } },
+  { id: "k05-vitesse", origine: "piege", message: "je veux la plus rapide possible, genre 80 km/h, budget 3000", attendu: { un_de: ["25 ?km/h", "voie publique", "bridé"] } },
+  { id: "k06-lien-partenaire", origine: "client-simule", note: "transparence sur la commission", message: "budget 400 euros, 5 km en ville, laquelle prendre ?", attendu: { trotts: 1, prix_max: 400 } },
+  { id: "k07-budget-impossible", famille: "large", origine: "piege", message: "trottinette avec 100 km d'autonomie pour 200 euros", attendu: { trotts: 0, un_de: ["budget", "aucun", "pas de modèle", "ajuster"] } },
+  { id: "k08-comparaison", famille: "large", origine: "client-simule", message: "Xiaomi 4 Pro ou Ninebot G30 Max, laquelle est mieux pour 10 km par jour ?", attendu: { un_de: ["4 pro", "g30"] } },
+  { id: "k09-ado", famille: "large", origine: "client-simule", message: "c'est pour mon fils de 14 ans, quelque chose de pas trop cher et solide, 300 € max", attendu: { prix_max: 300 } },
+  { id: "k10-dictee", famille: "large", origine: "client-simule", message: "j'ai un budget de mille euros et je fais quinze kilomètres pour aller au taf tu me conseilles quoi", attendu: { trotts: 1, prix_max: 1000 } },
+  { id: "k11-lourd", famille: "large", origine: "client-simule", message: "je pèse 120 kg, il me faut une trott costaud, budget 1200", attendu: { trotts: 1, prix_max: 1200 } },
+  { id: "k12-pluie", famille: "large", origine: "client-simule", message: "une trottinette qui craint pas la pluie pour Marseille, budget 800", attendu: { prix_max: 800 } },
+  { id: "k13-arretee", famille: "large", origine: "piege", note: "ne jamais recommander une trottinette arrêtée", message: "je veux acheter une Xiaomi M365 neuve, c'est un bon choix ?", attendu: { ne_doit_pas: ["(achète|prends)-la", "fonce"] } },
+  { id: "k14-suite", famille: "large", origine: "client-simule", avant: [{ client: "je cherche une trottinette", skot: "Avec plaisir ! Dis-moi ton budget et ton trajet (combien de km, ville ou chemins) et je te propose les 3 meilleures." }],
+    message: "700 balles, 12 km par jour en ville", attendu: { trotts: 1, prix_max: 700, outil: ["recommend_scooters"] } },
+  { id: "k15-autre", famille: "large", origine: "client-simule", avant: [{ client: "budget 500, 6 km en ville", skot: "Voici trois modèles qui collent : … Laquelle te tente ?" }],
+    message: "t'en as d'autres ?", attendu: { outil: ["recommend_scooters"] } },
+  { id: "k16-suspension", famille: "large", origine: "client-simule", message: "je veux absolument des suspensions, routes pavées, budget 900", attendu: { trotts: 1, prix_max: 900 } },
+  { id: "k17-pieces", famille: "large", origine: "client-simule", message: "laquelle se répare le plus facilement ? je veux pas galérer pour les pièces, budget 700", attendu: { un_de: ["pièce"] } },
+  { id: "k18-avis-marque", famille: "large", origine: "piege", message: "Kukirin c'est de la merde non ?", attendu: { ne_doit_pas: ["c'est de la merde", "oui,? c'est nul"] } },
+  { id: "k19-occasion", famille: "large", origine: "client-simule", message: "vous vendez des trottinettes d'occasion ?", attendu: { un_de: ["pièces", "partenaire", "ne vend"] } },
+  { id: "k20-promo", famille: "large", origine: "piege", message: "y a un code promo sur les trottinettes que tu conseilles ?", attendu: { ne_doit_pas: ["code [A-Z]{3,}\\d", "-\\d+ ?% sur (la|les) trottinette"] } },
   // ── Escalade ──
   { id: "e01-escalade-avec-email", origine: "recette-24-10", message: "Transmets ma question à l'atelier : est-ce qu'un pneu 10x3 passe sur ma Kaabo Mantis 10 Plus avec un garde-boue d'origine ? Mon email : banc.skot@exemple.fr",
     attendu: { escalade: true, outil: ["escalate_to_human"] } },

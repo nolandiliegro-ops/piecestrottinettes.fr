@@ -32,9 +32,26 @@ const Card = ({ c }: { c: SkotCard }) => {
   const add = () => {
     if (!SHOP_OPEN) { openPrelaunch(); return; }
     if (!c.in_stock) return;
-    addItem({ id: c.id, name: c.name, price: c.price, image_url: c.image_url, stock_quantity: c.stock_quantity ?? 1 });
+    addItem({ id: c.id ?? c.slug, name: c.name, price: c.price ?? 0, image_url: c.image_url, stock_quantity: c.stock_quantity ?? 1 });
     toast.success(`${c.name} ajouté au panier`, { action: { label: "Voir le panier", onClick: () => setIsOpen(true) } });
   };
+  // 25/10 : SKOT peut aussi renvoyer une trottinette conseillée (conseil d'achat) → fiche + offre partenaire, jamais « Ajouter ».
+  if (c.type === "scooter") return (
+    <div className="flex gap-3 p-3 bg-white" style={{ clipPath: cut(8), borderBottom: `3px solid ${CARBON}` }}>
+      {c.image_url && <img src={c.image_url} alt="" loading="lazy" className="w-16 h-16 object-contain shrink-0" />}
+      <div className="min-w-0 flex-1 grid gap-1">
+        <Link to={`/scooter/${c.slug}`} className="text-[15px] font-semibold leading-snug" style={{ color: CARBON }}>{c.name}</Link>
+        <p className="text-sm" style={{ color: MUTED }}>{[c.range_km ? `${c.range_km} km annoncés` : null, c.weight_kg ? `${c.weight_kg} kg` : null].filter(Boolean).join(" · ")}</p>
+        <div className="flex items-center justify-between gap-2">
+          <b className="text-base">{c.price ? `${Number(c.price).toFixed(2).replace(".", ",")} €` : "Prix chez le vendeur"}</b>
+          {c.offer_url
+            ? <a href={c.offer_url} target="_blank" rel="sponsored noopener noreferrer" className="min-h-[44px] px-3 inline-flex items-center text-sm font-bold text-white" style={{ background: "#FF6600", clipPath: cut(6) }}>Voir l'offre</a>
+            : <Link to={`/scooter/${c.slug}`} className="min-h-[44px] px-3 inline-flex items-center text-sm font-bold" style={{ color: CARBON, border: `1.5px solid ${CARBON}`, clipPath: cut(6) }}>La fiche</Link>}
+        </div>
+        {c.offer_url && <p className="text-sm" style={{ color: MUTED }}>Lien partenaire{c.offer_host ? ` · ${c.offer_host}` : ""}</p>}
+      </div>
+    </div>
+  );
   return (
     <div className="flex gap-3 p-3 bg-white" style={{ clipPath: cut(8), borderBottom: `3px solid ${c.compat === "unverified" ? "#B7791F" : GREEN}` }}>
       {c.image_url && <img src={c.image_url} alt="" loading="lazy" className="w-16 h-16 object-contain shrink-0" />}
@@ -42,7 +59,7 @@ const Card = ({ c }: { c: SkotCard }) => {
         <Link to={`/piece/${c.slug}`} className="text-[15px] font-semibold leading-snug" style={{ color: CARBON }}>{c.name}</Link>
         <p className="text-sm" style={{ color: MUTED }}>{c.compat === "verified" ? "✓ Compatible · " : c.compat === "unverified" ? "◐ À confirmer · " : ""}{c.in_stock ? `livraison ${c.delay}` : "rupture de stock"}</p>
         <div className="flex items-center justify-between gap-2">
-          <b className="text-base">{c.price.toFixed(2).replace(".", ",")} €</b>
+          <b className="text-base">{(c.price ?? 0).toFixed(2).replace(".", ",")} €</b>
           <button type="button" onClick={add} disabled={SHOP_OPEN && !c.in_stock} className="min-h-[44px] px-3 inline-flex items-center gap-1.5 text-sm font-bold text-white disabled:opacity-50" style={{ background: "#FF6600", clipPath: cut(6) }}>
             <ShoppingCart className="w-4 h-4" /> {SHOP_OPEN ? "Ajouter" : "Bientôt"}
           </button>

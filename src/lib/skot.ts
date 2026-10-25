@@ -35,17 +35,24 @@ export function skotPageContext(pathname: string): SkotPage {
 }
 
 export interface SkotCard {
-  type: "part";
-  id: string;
+  /** part = pièce du catalogue ; scooter = trottinette conseillée (conseil d'achat, 25/10) */
+  type: "part" | "scooter";
+  id?: string;
   slug: string;
   name: string;
-  price: number;
+  price: number | null;
   image_url: string | null;
-  in_stock: boolean;
+  in_stock?: boolean;
   stock_quantity?: number;
-  delay: string;
+  delay?: string;
   url: string;
   compat?: "verified" | "unverified";
+  // trottinette conseillée
+  range_km?: number | null;
+  max_speed_kmh?: number | null;
+  weight_kg?: number | null;
+  offer_url?: string | null;
+  offer_host?: string | null;
 }
 
 export interface SkotReply {
