@@ -21,6 +21,7 @@ mkdirSync(OUT, { recursive: true });
 const arg = (k) => { const i = process.argv.indexOf(k); return i > 0 ? process.argv[i + 1] : null; };
 const SLUGS = arg('--slugs')?.split(',').filter(Boolean) ?? null;
 const LIMIT = Number(arg('--limit') || 0);
+const DEPUIS = Number(arg('--depuis') || 0); // ronde du lundi : seulement les fiches créées depuis N jours
 
 const client = readFileSync(resolve(ROOT, 'src/integrations/supabase/client.ts'), 'utf-8');
 const SB = (client.match(/VITE_SUPABASE_URL\s*\|\|\s*"([^"]+)"/) || [])[1];
@@ -42,14 +43,14 @@ const CALIB = ['7b1ae49b-b47c-4b2e-b02d-b330a27c3a1c/1792892462873', '50590cd1-9
 
 let fiches = [];
 for (let from = 0; ; from += 1000) {
-  const q = SLUGS ? `&slug=in.(${SLUGS.join(',')})` : '&published=eq.true';
+  const q = SLUGS ? `&slug=in.(${SLUGS.join(',')})` : '&published=eq.true' + (DEPUIS ? `&created_at=gte.${new Date(Date.now() - DEPUIS * 864e5).toISOString()}` : '');
   const r = await fetch(`${SB}/rest/v1/scooter_models?select=id,slug,images,image_url${q}&order=slug`, { headers: { ...H, Range: `${from}-${from + 999}` } });
   const p = await r.json(); if (!Array.isArray(p)) throw new Error(JSON.stringify(p).slice(0, 200));
   fiches.push(...p); if (p.length < 1000) break;
 }
-if (!fiches.length) throw new Error('0 fiche lue (RLS ?)');
+if (!fiches.length) { if (DEPUIS) { console.log('::notice title=juge photos::aucune trottinette créée sur la période'); process.exit(0); } throw new Error('0 fiche lue (RLS ?)'); }
 if (LIMIT) fiches = fiches.slice(0, LIMIT);
-const taches = [...fiches.flatMap((s) => urlsOf(s).map((u, i) => ({ slug: s.slug, id: s.id, i, url: u }))), ...(SLUGS ? [] : CALIB.map((u, k) => ({ slug: '_calib', i: k, url: u })))];
+const taches = [...fiches.flatMap((s) => urlsOf(s).map((u, i) => ({ slug: s.slug, id: s.id, i, url: u }))), ...(SLUGS || DEPUIS ? [] : CALIB.map((u, k) => ({ slug: '_calib', i: k, url: u })))];
 console.log(`${fiches.length} fiches, ${taches.length} photos à juger (modèle ${MODELE})`);
 
 const res = []; const bufs = new Map(); let tin = 0, tout = 0, k = 0, err = 0;
@@ -106,3 +107,4 @@ await planches(plan.filter((f) => !f.a_un_34_propre).flatMap((f) => ok.filter((r
 const nRefus = ok.filter((r) => r.refus && r.slug !== '_calib').length;
 console.log(`::notice title=juge photos::${fiches.length} fiches · ${ok.length - calib.length} photos jugées · ${nRefus} refusées · ${plan.filter((f) => f.change_principale).length} principales à changer · ${plan.filter((f) => !f.a_un_34_propre).length} fiches sans 3/4 propre · ${err} erreur(s) · calibration ${calib.length - calibRates.length}/${calib.length} refusées · ${tin} jetons entrée, ${tout} sortie`);
 if (calibRates.length) console.log(`::warning title=juge calibration::non détectées : ${calibRates.map((r) => r.url.split('/').pop() + ' (' + r.vue + ')').join(' ')}`);
+if (DEPUIS && plan.length) process.exitCode = 3; // ronde : ticket à ouvrir

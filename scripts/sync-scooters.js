@@ -48,6 +48,8 @@ import { readFileSync } from 'fs';
 import { resolve, dirname } from 'path';
 import { fileURLToPath } from 'url';
 import { detoure } from './lib/detoure.js';
+import { photoQcAll } from './lib/photo-qc.js';
+import { trierGalerie } from './lib/photo-juge.mjs';
 import { findMissingBrakeKeys } from './lib/validate-brake-keys.js';
 import { retriggerKeyWired } from './_retrigger-by-category.mjs';
 
@@ -91,47 +93,46 @@ function loadEnv() {
 //   ok:true dès que perImgOk > 0 (succès partiel accepté).
 //   ok:false uniquement si perImgOk === 0 (aucune image passée).
 async function processImages(entityId, sourceUrls, altBase, secret, url) {
-  let perImgOk = 0;
-  let perImgErr = 0;
+  // 25/10 VERROU (règle de Nolan) : avant le 25/10 cette fonction envoyait TOUT, sans aucun contrôle
+  // (19 photos avec personne / téléphone en ligne). Désormais, en 3 temps :
+  //   1. détourage + photo-qc (géométrie) : FAIL = refusée ;
+  //   2. juge vision (scripts/lib/photo-juge.mjs) : personne, téléphone, texte, 2e trott, décor = refusée ;
+  //   3. envoi dans l'ordre : la vue 3/4 propre EN TÊTE. Pas de 3/4 propre → a34:false → la fiche reste brouillon.
   const errors = [];
-
+  const cands = [];
   for (let i = 0; i < sourceUrls.length; i++) {
-    const srcUrl = sourceUrls[i];
     try {
-      const buf = await detoure(srcUrl); // LOCAL @imgly, URL → Buffer PNG
-      const b64 = buf.toString('base64'); // sans préfixe data:
+      const buf = await detoure(sourceUrls[i]); // LOCAL @imgly, URL → Buffer PNG
+      const qc = await photoQcAll(buf);
+      if (qc.verdict === 'FAIL') { errors.push(`img ${i}: REFUSÉE photo-qc (${qc.reasons.join(', ')})`); continue; }
+      cands.push({ i, buf });
+    } catch (e) { errors.push(`img ${i}: ${e.message}`); }
+  }
+  let tri;
+  try { tri = await trierGalerie(cands); }
+  catch (e) { return { ok: false, processed: 0, failed: sourceUrls.length, a34: false, errors: [...errors, `juge vision indisponible, RIEN envoyé : ${e.message}`] }; }
+  for (const r of tri.refusees) errors.push(`img ${r.i}: REFUSÉE juge (${r.v.motifs.join(', ')})`);
+  if (!tri.a34) return { ok: false, processed: 0, failed: sourceUrls.length, a34: false, errors: [...errors, 'aucune vue 3/4 propre et seule : rien envoyé, la fiche reste brouillon'] };
 
+  let perImgOk = 0, perImgErr = 0;
+  for (const c of tri.gardees) {
+    try {
       const res = await fetch(url, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json', 'x-admin-secret': secret },
-        body: JSON.stringify({
-          entity_type: 'scooter',
-          entity_id: entityId,
-          images_base64: [b64],
-          alt_base: altBase,
-          reset: i === 0,
-        }),
+        body: JSON.stringify({ entity_type: 'scooter', entity_id: entityId, images_base64: [c.buf.toString('base64')], alt_base: altBase, reset: perImgOk === 0 }),
       });
-
       const text = await res.text();
       let json;
-      try { json = JSON.parse(text); }
-      catch { perImgErr++; errors.push(`img ${i}: non-JSON: ${text.slice(0, 80)}`); continue; }
-
-      if (!res.ok || json?.success !== true) {
-        perImgErr++;
-        errors.push(`img ${i}: ${json?.error ?? `HTTP ${res.status}`}`);
-        continue;
-      }
+      try { json = JSON.parse(text); } catch { perImgErr++; errors.push(`img ${c.i}: non-JSON: ${text.slice(0, 80)}`); continue; }
+      // process-images peut répondre success:true sans rien écrire (doublon refusé…) : seul processed_count fait foi
+      if (!res.ok || json?.success !== true || !(json?.processed_count > 0)) { perImgErr++; errors.push(`img ${c.i}: ${json?.error ?? json?.failed_urls?.[0]?.reason ?? `HTTP ${res.status}`}`); continue; }
       perImgOk++;
-    } catch (e) {
-      // detourage (URL morte, échec moteur) ou réseau : on logue et on continue
-      perImgErr++;
-      errors.push(`img ${i}: ${e.message}`);
-    }
+    } catch (e) { perImgErr++; errors.push(`img ${c.i}: ${e.message}`); }
   }
-
-  return { ok: perImgOk > 0, processed: perImgOk, failed: perImgErr, errors };
+  // la 1re photo envoyée doit être le 3/4 : si elle a échoué, la principale n'est pas garantie
+  const principaleOk = perImgOk > 0 && !errors.some((m) => m.startsWith(`img ${tri.gardees[0].i}:`));
+  return { ok: perImgOk > 0, processed: perImgOk, failed: perImgErr + tri.refusees.length, a34: principaleOk, errors };
 }
 
 // ─── --publish : 2e appel { slug } + publishIfComplete ─────────────────────────
@@ -139,10 +140,12 @@ async function processImages(entityId, sourceUrls, altBase, secret, url) {
 // n'existe peut-être pas : le renvoyer seul déclencherait un INSERT sans name).
 // Jamais d'exit : un échec ici laisse les modèles en brouillon, rien d'autre.
 // Retour : nombre de modèles publiés.
-async function publishBatch(brandName, resultRows, edgeUrl, secret) {
+async function publishBatch(brandName, resultRows, edgeUrl, secret, bloques = new Set()) {
   const slugs = (Array.isArray(resultRows) ? resultRows : [])
     .filter((r) => (r.status === 'inserted' || r.status === 'updated') && r.slug)
-    .map((r) => r.slug);
+    .map((r) => r.slug)
+    // 25/10 : pas de photo principale 3/4 propre et seule = jamais publiée par ce chemin
+    .filter((slug) => { if (bloques.has(slug)) { console.log(`   ⏸  ${slug} : reste brouillon : pas de photo 3/4 propre et seule`); return false; } return true; });
   if (slugs.length === 0) {
     console.log('   📣 Publication : aucun modèle écrit dans ce lot, rien à publier');
     return 0;
@@ -239,6 +242,7 @@ async function main() {
   }
 
   let totalPublished = 0;
+  const bloquesPhoto = new Set(); // slugs sans 3/4 propre dans le lot courant
 
   for (const batch of batches) {
     const { brandName, brand, scooters, models } = batch;
@@ -317,6 +321,7 @@ async function main() {
       );
 
       let imgOk = 0, imgErr = 0, imgSkip = 0;
+      bloquesPhoto.clear();
 
       for (const r of resultRows) {
         if (r.status !== 'inserted') { imgSkip++; continue; }
@@ -329,6 +334,8 @@ async function main() {
         const altBase = `${brandName} ${r.name}`;
         process.stdout.write(`   🖼  Images ${r.slug} : traitement...`);
         const imgResult = await processImages(r.id, srcUrls, altBase, ADMIN_SECRET, PROCESS_IMG_URL);
+        if (!imgResult.a34) bloquesPhoto.add(r.slug);
+        for (const m of imgResult.errors) if (/REFUSÉE|juge|3\/4/.test(m)) console.log(`\n      ${r.slug} ${m}`);
         if (imgResult.ok) {
           if (imgResult.failed > 0) {
             process.stdout.write(` ✅ ${imgResult.processed}/${srcUrls.length} ok, ${imgResult.failed} erreur(s)\n`);
@@ -349,7 +356,7 @@ async function main() {
 
     // ── Publication automatique (APRÈS les images : la photo compte) ──────────
     if (doPublish) {
-      totalPublished += await publishBatch(brandName, resultRows, EDGE_URL, ADMIN_SECRET);
+      totalPublished += await publishBatch(brandName, resultRows, EDGE_URL, ADMIN_SECRET, bloquesPhoto);
     }
   }
 

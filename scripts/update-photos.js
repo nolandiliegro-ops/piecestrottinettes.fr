@@ -16,6 +16,7 @@ import { execFileSync } from 'child_process';
 import sharp from 'sharp';
 import { detoure } from './lib/detoure.js';
 import { photoQcAll } from './lib/photo-qc.js';
+import { trierGalerie } from './lib/photo-juge.mjs';
 
 // minimotors (Odoo) bloque node/undici au niveau WAF (403 sur l'endpoint image).
 // On pre-telecharge la source via curl (qui passe le WAF) puis on passe le Buffer
@@ -84,10 +85,10 @@ function loadEnv() {
 //   ok:true dès que perImgOk > 0 (succès partiel accepté).
 //   ok:false uniquement si perImgOk === 0 (aucune image passée).
 async function processImages(entityId, sourceUrls, altBase, secret, url, slug, report) {
-  let perImgOk = 0;
-  let perImgErr = 0;
+  // 25/10 VERROU (règle de Nolan) : photo-qc puis juge vision AVANT tout envoi ; la vue 3/4 propre part EN TÊTE.
+  // Pas de 3/4 propre et seule → RIEN n'est envoyé (la galerie actuelle reste intacte).
   const errors = [];
-
+  const cands = [];
   for (let i = 0; i < sourceUrls.length; i++) {
     const srcUrl = sourceUrls[i];
     try {
@@ -95,63 +96,49 @@ async function processImages(entityId, sourceUrls, altBase, secret, url, slug, r
       const buf = await detoure(srcBuf);   // LOCAL @imgly détoure les bytes (aucun fetch interne)
       const qc = await photoQcAll(buf);
       console.log(`      ${slug} #${i} ${qc.verdict}${qc.reasons.length ? ' ' + qc.reasons.join(', ') : ''}`);
-      // 16/10 GARDE-FOU : une photo FAIL n'est plus envoyée. Seule exception : un gros plan
-      // (« produit coupé », « cadrage serré ») en 2e position ou plus.
-      if (!DRY_RUN && qc.verdict === 'FAIL') {
-        const closeupOnly = qc.reasons.every((r) => r === 'produit coupé / gros plan' || r === 'cadrage serré' || r.startsWith('petit élément') || r.startsWith('couleurs') || r.startsWith('basse') || r.startsWith('produit minuscule'));
-        if (perImgOk === 0 || !closeupOnly || qc.plus.verdict === 'FAIL') {
-          perImgErr++; errors.push(`img ${i}: REFUSÉE par le garde-fou (${qc.reasons.join(', ')})`);
-          continue;
-        }
-      }
-
       if (DRY_RUN) {
         writeFileSync(resolve(PREVIEW_DIR, `${slug}__${i}.png`), buf);
         report.push({ slug, i, source_url: srcUrl, ...qc, error: null });
-        perImgOk++;
         continue;
       }
-
-      const b64 = buf.toString('base64'); // sans préfixe data:
-
-      const res = await fetch(url, {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json', 'x-admin-secret': secret },
-        body: JSON.stringify({
-          entity_type: 'scooter',
-          entity_id: entityId,
-          images_base64: [b64],
-          alt_base: altBase,
-          reset: perImgOk === 0,
-        }),
-      });
-
-      const text = await res.text();
-      let json;
-      try { json = JSON.parse(text); }
-      catch { perImgErr++; errors.push(`img ${i}: non-JSON: ${text.slice(0, 80)}`); continue; }
-
-      if (!res.ok || json?.success !== true) {
-        perImgErr++;
-        errors.push(`img ${i}: ${json?.error ?? `HTTP ${res.status}`}`);
-        continue;
+      // 16/10 : une photo FAIL n'est pas envoyée (seule exception historique : gros plan hors 1re position — le juge tranche désormais)
+      if (qc.verdict === 'FAIL') {
+        const closeupOnly = qc.reasons.every((r) => r === 'produit coupé / gros plan' || r === 'cadrage serré' || r.startsWith('petit élément') || r.startsWith('couleurs') || r.startsWith('basse') || r.startsWith('produit minuscule'));
+        if (!closeupOnly || qc.plus.verdict === 'FAIL') { errors.push(`img ${i}: REFUSÉE par le garde-fou (${qc.reasons.join(', ')})`); continue; }
       }
-      perImgOk++;
+      cands.push({ i, buf });
     } catch (e) {
-      // detourage (URL morte, échec moteur) ou réseau : on logue et on continue
-      perImgErr++;
       errors.push(`img ${i}: ${e.message}`);
       if (DRY_RUN) {
         console.log(`      ${slug} #${i} ERROR ${e.message}`);
-        report.push({
-          slug, i, source_url: srcUrl, width: null, height: null, opaque: null, semi: null,
-          edge: null, verdict: 'ERROR', reasons: [], error: e.message,
-        });
+        report.push({ slug, i, source_url: srcUrl, width: null, height: null, opaque: null, semi: null, edge: null, verdict: 'ERROR', reasons: [], error: e.message });
       }
     }
   }
+  if (DRY_RUN) return { ok: report.some((r) => r.slug === slug && !r.error), processed: 0, failed: errors.length, errors };
 
-  return { ok: perImgOk > 0, processed: perImgOk, failed: perImgErr, errors };
+  let tri;
+  try { tri = await trierGalerie(cands); }
+  catch (e) { return { ok: false, processed: 0, failed: sourceUrls.length, errors: [...errors, `juge vision indisponible, RIEN envoyé : ${e.message}`] }; }
+  for (const r of tri.refusees) errors.push(`img ${r.i}: REFUSÉE juge (${r.v.motifs.join(', ')})`);
+  if (!tri.a34) return { ok: false, processed: 0, failed: sourceUrls.length, errors: [...errors, 'aucune vue 3/4 propre et seule : rien envoyé, galerie inchangée'] };
+
+  let perImgOk = 0, perImgErr = 0;
+  for (const c of tri.gardees) {
+    try {
+      const res = await fetch(url, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json', 'x-admin-secret': secret },
+        body: JSON.stringify({ entity_type: 'scooter', entity_id: entityId, images_base64: [c.buf.toString('base64')], alt_base: altBase, reset: perImgOk === 0 }),
+      });
+      const text = await res.text();
+      let json;
+      try { json = JSON.parse(text); } catch { perImgErr++; errors.push(`img ${c.i}: non-JSON: ${text.slice(0, 80)}`); continue; }
+      if (!res.ok || json?.success !== true || !(json?.processed_count > 0)) { perImgErr++; errors.push(`img ${c.i}: ${json?.error ?? json?.failed_urls?.[0]?.reason ?? `HTTP ${res.status}`}`); continue; }
+      perImgOk++;
+    } catch (e) { perImgErr++; errors.push(`img ${c.i}: ${e.message}`); }
+  }
+  return { ok: perImgOk > 0, processed: perImgOk, failed: perImgErr + tri.refusees.length, errors };
 }
 
 // ─── Résolution slug → id via Supabase REST ───────────────────────────────────

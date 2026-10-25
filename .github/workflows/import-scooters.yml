@@ -40,6 +40,8 @@ jobs:
           printf 'VITE_SUPABASE_URL=%s\nVITE_SUPABASE_PUBLISHABLE_KEY=%s\nADMIN_BULK_SECRET=%s\n' "$SB_URL" "$KEY" "$ADMIN_BULK_SECRET" > .env
       - name: Photos des brouillons existants (avant import, pour que la publication les voie)
         shell: bash
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}  # 25/10 : juge vision des photos (verrou fermé sans la clé)
         run: |
           set +e
           export LC_ALL=C.UTF-8
@@ -52,6 +54,8 @@ jobs:
           done < config/imports/_photos-auto.txt
       - name: Import fichier par fichier
         shell: bash
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}  # 25/10 : juge vision des photos (verrou fermé sans la clé)
         run: |
           set +e
           export LC_ALL=C.UTF-8

@@ -36,6 +36,18 @@ jobs:
           grep '^::' out/doublons-ronde.log | head -5
           echo "code=$code" >> "$GITHUB_OUTPUT"
           [ $code -eq 0 ] || [ $code -eq 3 ] || exit $code
+      - name: Juge vision des trottinettes de la semaine (25/10 — personne, téléphone, texte, pas de 3/4 en principale)
+        id: juge
+        shell: bash
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: |
+          set +e
+          node scripts/juge-photos.mjs --depuis 8 > out/juge-ronde.log 2>&1
+          code=$?
+          grep '^::' out/juge-ronde.log | head -5
+          echo "code=$code" >> "$GITHUB_OUTPUT"
+          [ $code -eq 0 ] || [ $code -eq 3 ] || exit $code
       - name: Résultats sur donnees-photos
         shell: bash
         run: |
@@ -54,3 +66,11 @@ jobs:
         run: |
           body=$(node -e "const r=require('/tmp/out/doublons-ronde/ronde.json');console.log('La ronde du '+new Date().toISOString().slice(0,10)+' a trouvé '+r.doublons.length+' doublon(s) photo sur '+r.fiches+' fiches publiées.\n\n'+r.doublons.map(d=>'- `'+d.table+'` **'+d.slug+'** : photos #'+d.ia+' et #'+d.ib+' — '+d.raison).join('\n')+(r.vides.length?'\n\nPhotos VIDES (aucun pixel de produit) :\n'+r.vides.map(v=>'- `'+v.table+'` **'+v.slug+'** : photo #'+v.i).join('\n'):'')+'\n\nPlanches : branche donnees-photos, out/doublons-ronde/. Retrait = SQL avec backup (skill pt-photos-galerie), jamais l\'index 0.')")
           gh issue create --title "Doublon / photo vide — ronde du $(date -u +%F)" --body "$body"
+      - name: Ticket si photo non conforme
+        if: steps.juge.outputs.code == '3'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        shell: bash
+        run: |
+          body=$(node -e "const f=require('/tmp/out/juge/fiches.json');console.log('Juge vision du '+new Date().toISOString().slice(0,10)+' : '+f.length+' trottinette(s) créée(s) cette semaine à corriger (règle : photo principale = 3/4 détourée, propre, seule ; jamais de personne, téléphone, texte ni 2e trott).\\n\\n'+f.map(x=>'- **'+x.slug+'** : '+(x.retirer.length?x.retirer.map(r=>'#'+r.i+' '+r.motifs.join('/')).join(', '):'')+(x.a_un_34_propre?'':' — PAS de 3/4 propre')).join('\\n')+'\\n\\nPlan détaillé : branche donnees-photos, out/juge/fiches.json. Correction = SQL avec backup (skill pt-photos-galerie).')")
+          gh issue create --title "Photo trottinette non conforme — ronde du $(date -u +%F)" --body "$body"

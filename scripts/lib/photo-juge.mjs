@@ -76,3 +76,21 @@ export async function juger(buf, cle = process.env.ANTHROPIC_API_KEY) {
   }
   throw new Error('Anthropic indisponible après 5 essais');
 }
+
+/**
+ * VERROU D'IMPORT (25/10) — à appeler AVANT tout envoi à process-images d'une galerie de trottinette.
+ * cands : [{ i, buf }] (PNG détourés, déjà passés par photo-qc). Renvoie l'ordre d'envoi :
+ * photos refusées retirées, la meilleure vue 3/4 propre EN TÊTE (= photo principale), puis les autres dans l'ordre source.
+ * a34 = false → la fiche n'a pas de photo principale valable : elle DOIT rester brouillon.
+ * Sans clé API, juger() lève une erreur : l'appelant n'envoie RIEN (verrou fermé, jamais ouvert par défaut).
+ */
+export async function trierGalerie(cands, log = (m) => console.log(m)) {
+  const gardees = [], refusees = [];
+  for (const c of cands) {
+    const v = await juger(c.buf);
+    log(`      juge #${c.i} ${v.vue}${v.refus ? ' REFUSÉE : ' + v.motifs.join(', ') : v.principale_ok ? ' (principale possible)' : ''}`);
+    (v.refus ? refusees : gardees).push({ ...c, v });
+  }
+  gardees.sort((a, b) => a.v.rang_principale - b.v.rang_principale || a.i - b.i);
+  return { gardees, refusees, a34: gardees.length > 0 && gardees[0].v.principale_ok };
+}

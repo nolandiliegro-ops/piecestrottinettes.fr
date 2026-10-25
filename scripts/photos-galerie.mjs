@@ -23,6 +23,7 @@ import sharp from 'sharp';
 import { detoure } from './lib/detoure.js';
 import { photoQcAll } from './lib/photo-qc.js';
 import { empreinte, memePhoto } from './lib/empreinte.mjs';
+import { juger } from './lib/photo-juge.mjs';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const ROOT = resolve(__dirname, '..');
@@ -192,6 +193,14 @@ async function write() {
           const hit = res.find((h) => h.r.doublon);
           if (hit) { console.log(`::warning title=DOUBLON ${m.slug} #${idx}::${hit.r.raison} — déjà sur la fiche (${String(hit.x.url).slice(-36)})`); continue; }
           deja.push({ url: `lot#${idx}`, fp });
+        }
+        // 25/10 VERROU trottinettes : juge vision (personne, téléphone, texte, 2e trott, décor = refusée).
+        // En remplacement complet (write), la 1re photo envoyée doit être une vue 3/4 propre (= photo principale).
+        if (lot.entity !== 'part' && !lot.genere) {
+          let v;
+          try { v = await juger(png); } catch (e) { console.log(`::warning title=JUGE ${m.slug} #${idx}::${e.message} — photo NON envoyée (verrou fermé)`); continue; }
+          if (v.refus) { console.log(`::warning title=REFUSÉ juge ${m.slug} #${idx}::${v.motifs.join(', ')} (${v.vue})`); continue; }
+          if (!APPEND && bufs.length === 0 && !v.principale_ok) { console.log(`::warning title=PRINCIPALE ${m.slug} #${idx}::vue « ${v.vue} » : la 1re photo doit être un 3/4 propre — mets un 3/4 en tête du accept`); continue; }
         }
         bufs.push(png);
       } catch (e) { console.log(`::warning title=ERREUR ${m.slug} #${idx}::${e.message.slice(0, 120)}`); }
