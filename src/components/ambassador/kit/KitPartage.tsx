@@ -13,7 +13,7 @@ import { getXPLevel } from '@/lib/xpLevels';
    carte 3 Carte Rider · QR 2 Scanne-moi · code 2 Ma trott · sticker 2 Bandeau · post 2 Affiche claire ·
    bannière 2 Badge + ma trott · textes « L'atelier ». Pages de vote : artifacts 2nhpg4K9wJSweLBHNgMAv1 et 4uWyZiG7qak2z18a45rosM. */
 
-// Carte Rider ambassadeur (25/10, « avec la trott qu'il veut dessus ») : 5 propositions, `?riderkit=1..5` en attendant le choix.
+// Carte Rider ambassadeur (25/10, « avec la trott qu'il veut dessus ») : choix de Nolan = 1 · Littéral ; `?riderkit=1..5` montre les autres.
 const riderKit = () => { try { const q = new URLSearchParams(window.location.search).get('riderkit'); return q && /^[1-5]$/.test(q) ? Number(q) : 1; } catch { return 1; } };
 const CHOIX: Record<KitFormat['id'], number> = { rider: riderKit(), carte: 3, qr: 2, code: 2, sticker: 2, post: 2, banniere: 2 };
 const TON_CHOISI = 2; // « L'atelier »

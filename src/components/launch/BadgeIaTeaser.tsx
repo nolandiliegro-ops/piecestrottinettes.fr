@@ -1,8 +1,9 @@
 /* « Ton badge IA » pour donner envie de s'inscrire (25/10/2026, Nolan : « sur la homepage et sur le pop-up… marquer
    qu'en créant sa carte Rider on a son profil en IA… c'est vraiment un truc gaming »).
-   Faits seulement : inscription gratuite, un selfie, l'IA dessine 2 badges, tu gardes ton préféré, 3 essais ; le badge
-   devient ta photo de profil et s'affiche sur ta carte Rider. Exemple = le badge de Nolan. 5 propositions ; n°1 = littéral. */
-import { Sparkles } from 'lucide-react';
+   Faits seulement : inscription gratuite, un selfie, l'IA dessine 2 badges, tu gardes ton préféré, 3 essais.
+   Exemple = le badge de Nolan.
+   2e tour (25/10, Nolan : « le mode jeu, mais trop de texte… il faut pas que ce soit noir… peut-être un truc à part ») :
+   cinq versions « mode jeu », claires, en quelques mots. La n°3 est un bloc à part, sous le bloc garage de l'accueil. */
 
 const UNB = "'Unbounded', sans-serif";
 const FONT = "'Plus Jakarta Sans', sans-serif";
@@ -10,90 +11,73 @@ const CARBON = '#1A1A1A';
 const GREEN = '#4A7C59';
 const SOFT = '#8FBF9C';
 const cut = (px: number) => `polygon(0 0, calc(100% - ${px}px) 0, 100% ${px}px, 100% 100%, 0 100%)`;
-const ch = (c: number) => `polygon(0 0, calc(100% - ${c}px) 0, 100% ${c}px, 100% 100%, ${c}px 100%, 0 calc(100% - ${c}px))`;
 export const EXEMPLE_BADGE_IA = '/kit/badge-exemple.webp';
-export const NOMS_TEASER = ['Littéral', 'Avant/après', 'Mode jeu', 'Sur ta carte', 'Bandeau nouveau'] as const;
+export const NOMS_TEASER = ['Pastille claire', 'Badge vert', 'Bloc à part', 'Lequel tu gardes ?', 'Essais offerts'] as const;
 
-const Silhouette = ({ s, dark }: { s: number; dark: boolean }) => (
-  <span className="inline-flex items-center justify-center shrink-0" style={{ width: s, height: s, background: dark ? 'rgba(255,255,255,0.12)' : '#E5E7EB', clipPath: ch(8) }}>
-    <svg width={s * 0.56} height={s * 0.56} viewBox="0 0 24 24" fill="none" stroke={dark ? 'rgba(255,255,255,0.6)' : '#9CA3AF'} strokeWidth="1.6"><circle cx="12" cy="8" r="4" /><path d="M4 21c1.5-4 4.5-6 8-6s6.5 2 8 6" /></svg>
-  </span>
-);
-const Fleche = ({ dark }: { dark: boolean }) => (
-  <svg width="30" height="18" viewBox="0 0 34 20" className="shrink-0"><path d="M2 10h26M20 3l8 7-8 7" stroke={dark ? '#FFFFFF' : CARBON} strokeWidth="3" fill="none" strokeLinecap="round" strokeLinejoin="round" /></svg>
+const Rond = ({ s, q = false, ring = SOFT }: { s: number; q?: boolean; ring?: string }) => q
+  ? <span className="rounded-full shrink-0 inline-flex items-center justify-center" style={{ width: s, height: s, fontFamily: UNB, fontWeight: 900, fontStyle: 'italic', fontSize: s * 0.42, color: GREEN, background: '#FFFFFF', boxShadow: `inset 0 0 0 2px ${GREEN}` }}>?</span>
+  : <img src={EXEMPLE_BADGE_IA} alt="Exemple de badge rider IA" className="rounded-full object-cover shrink-0 bg-white" style={{ width: s, height: s, boxShadow: `0 0 0 3px ${ring}` }} />;
+
+const Gros = ({ children, c = CARBON, s = 16 }: { children: React.ReactNode; c?: string; s?: number }) => (
+  <p className="uppercase leading-[0.95]" style={{ fontFamily: UNB, fontWeight: 900, fontStyle: 'italic', letterSpacing: '-0.02em', color: c, fontSize: s }}>{children}</p>
 );
 
-/** `dark` : posé sur un fond sombre (accueil, wallpaper) ; sinon sur fond clair (fenêtre d'arrivée). */
+/** `dark` : posé sur un fond sombre (accueil) ; sinon sur fond clair (fenêtre d'arrivée). Toutes les versions sont claires. */
 const BadgeIaTeaser = ({ v, dark = false }: { v: number; dark?: boolean }) => {
-  const fg = dark ? '#FFFFFF' : CARBON;
-  const mute = dark ? 'rgba(255,255,255,0.82)' : '#374151';
-
   if (v === 1) return (
-    <p className="flex items-start gap-2 text-[15px] font-semibold leading-snug" style={{ fontFamily: FONT, color: fg }}>
-      <Sparkles className="w-5 h-5 shrink-0 mt-px" style={{ color: dark ? SOFT : GREEN }} />
-      <span>En créant ta carte Rider, ta photo de profil devient un <b>badge de rider dessiné par l'IA</b>. Gratuit.</span>
-    </p>
+    <div className="inline-flex items-center gap-3 pl-2 pr-4 py-2 bg-white" style={{ clipPath: cut(12), boxShadow: dark ? 'none' : 'inset 0 0 0 1px #E5E7EB' }}>
+      <span className="flex -space-x-3"><Rond s={46} /><Rond s={46} q /></span>
+      <Gros s={15}>Ton badge IA<br /><span style={{ color: GREEN }}>offert</span></Gros>
+    </div>
   );
 
   if (v === 2) return (
-    <div className="flex items-center gap-3 p-3" style={{ background: dark ? 'rgba(26,26,26,0.72)' : '#FFFFFF', clipPath: cut(12), boxShadow: dark ? 'inset 0 0 0 1px rgba(255,255,255,0.2)' : 'inset 0 0 0 1px #E5E7EB' }}>
-      <Silhouette s={52} dark={dark} />
-      <Fleche dark={dark} />
-      <img src={EXEMPLE_BADGE_IA} alt="Exemple de badge rider IA" className="w-[60px] h-[60px] rounded-full object-cover shrink-0" />
-      <div className="min-w-0">
-        <p className="text-[15px] uppercase leading-tight" style={{ fontFamily: UNB, fontWeight: 900, fontStyle: 'italic', color: fg }}>Ton selfie devient ton badge</p>
-        <p className="mt-0.5 text-sm" style={{ fontFamily: FONT, color: mute }}>Offert avec ta carte Rider.</p>
-      </div>
+    <div className="inline-flex items-center gap-3 pl-2 pr-3 py-2" style={{ background: GREEN, clipPath: cut(12) }}>
+      <Rond s={50} ring="#FFFFFF" />
+      <Gros c="#FFFFFF" s={16}>Joue ton<br />badge IA</Gros>
+      <span className="px-2 py-1 text-sm font-extrabold bg-white" style={{ fontFamily: FONT, color: GREEN, clipPath: cut(6) }}>Gratuit</span>
     </div>
   );
 
   if (v === 3) return (
-    <div className="p-3.5" style={{ background: CARBON, clipPath: cut(14), boxShadow: 'inset 0 0 0 1px rgba(255,255,255,0.14)' }}>
-      <div className="flex items-center justify-between gap-2">
-        <span className="text-sm font-extrabold uppercase tracking-[0.14em]" style={{ fontFamily: FONT, color: SOFT }}>Badge rider IA</span>
-        <span className="px-2 py-0.5 text-sm font-extrabold text-white" style={{ fontFamily: FONT, background: GREEN, clipPath: cut(6) }}>3 essais · gratuit</span>
+    <div className="flex items-center justify-between gap-4 p-4" style={{ background: '#FAFAF8', clipPath: cut(16), boxShadow: dark ? 'none' : 'inset 0 0 0 1px #E5E7EB' }}>
+      <div className="min-w-0">
+        <Gros s={22}>Ton badge<br /><span style={{ color: GREEN }}>rider IA.</span></Gros>
+        <p className="mt-2 text-[15px] font-semibold" style={{ fontFamily: FONT, color: '#374151' }}>1 selfie · 2 badges · tu gardes le meilleur</p>
       </div>
-      <div className="mt-3 flex items-center gap-3">
-        <img src={EXEMPLE_BADGE_IA} alt="Exemple de badge rider IA" className="w-[64px] h-[64px] rounded-full object-cover shrink-0" style={{ boxShadow: `0 0 0 3px ${SOFT}` }} />
-        <span className="w-[64px] h-[64px] rounded-full shrink-0 inline-flex items-center justify-center text-[28px]" style={{ fontFamily: UNB, fontWeight: 900, fontStyle: 'italic', color: 'rgba(255,255,255,0.75)', background: 'rgba(255,255,255,0.08)', boxShadow: 'inset 0 0 0 2px rgba(255,255,255,0.3)' }}>?</span>
-        <p className="min-w-0 text-[15px] leading-snug text-white" style={{ fontFamily: FONT }}>Un selfie, l'IA t'en dessine <b>2</b>. Tu gardes le meilleur.</p>
-      </div>
+      <span className="flex items-center -space-x-4 shrink-0"><Rond s={64} /><Rond s={64} q /></span>
     </div>
   );
 
   if (v === 4) return (
-    <div className="flex items-center gap-3">
-      <div className="relative w-[150px] shrink-0 p-2.5" style={{ background: CARBON, clipPath: ch(12), boxShadow: 'inset 0 0 0 1px rgba(255,255,255,0.12)' }}>
-        <div className="flex items-center gap-2">
-          <img src={EXEMPLE_BADGE_IA} alt="" className="w-9 h-9 object-cover bg-white" style={{ clipPath: ch(5) }} />
-          <div className="min-w-0">
-            <p className="text-[14px] uppercase leading-none text-white truncate" style={{ fontFamily: UNB, fontWeight: 900, fontStyle: 'italic' }}>Toi</p>
-            <p className="mt-1 text-sm leading-none" style={{ fontFamily: FONT, color: SOFT }}>Carte Rider</p>
-          </div>
-        </div>
-        <div className="mt-2 h-14" style={{ background: 'linear-gradient(180deg, rgba(143,191,156,0.25), rgba(255,255,255,0.04))', clipPath: cut(6) }} />
-      </div>
-      <p className="min-w-0 text-[15px] leading-snug" style={{ fontFamily: FONT, color: fg }}>
-        <b className="block uppercase" style={{ fontFamily: UNB, fontWeight: 900, fontStyle: 'italic' }}>Ta tête en badge</b>
-        <span style={{ color: mute }}>sur ta carte Rider et ton profil. L'IA le dessine à partir d'un selfie.</span>
-      </p>
+    <div className="flex items-center gap-4">
+      <span className="relative w-[112px] h-[80px] shrink-0">
+        <span className="absolute left-0 top-1 w-[62px] h-[74px] bg-white flex items-center justify-center" style={{ transform: 'rotate(-8deg)', clipPath: cut(8), boxShadow: '0 6px 14px rgba(0,0,0,.18)' }}><Rond s={46} /></span>
+        <span className="absolute left-[48px] top-0 w-[62px] h-[74px] bg-white flex items-center justify-center" style={{ transform: 'rotate(7deg)', clipPath: cut(8), boxShadow: '0 6px 14px rgba(0,0,0,.18)' }}><Rond s={46} q /></span>
+      </span>
+      <Gros c={dark ? '#FFFFFF' : CARBON} s={17}>Lequel<br />tu gardes ?</Gros>
     </div>
   );
 
   return (
-    <div className="flex items-center gap-2.5 pl-1.5 pr-3 py-1.5" style={{ background: GREEN, clipPath: cut(10) }}>
-      <img src={EXEMPLE_BADGE_IA} alt="" className="w-11 h-11 rounded-full object-cover shrink-0 bg-white" />
-      <span className="px-1.5 py-0.5 text-sm font-extrabold uppercase text-[#1A1A1A] bg-white shrink-0" style={{ fontFamily: FONT, clipPath: cut(5) }}>Nouveau</span>
-      <p className="min-w-0 text-[15px] font-bold leading-tight text-white" style={{ fontFamily: FONT }}>Ton badge rider IA, offert à l'inscription</p>
+    <div className="inline-flex items-center gap-3 pl-2 pr-4 py-2 bg-white" style={{ clipPath: cut(12), boxShadow: dark ? 'none' : 'inset 0 0 0 1px #E5E7EB' }}>
+      <Rond s={48} />
+      <div>
+        <Gros s={14}>Badge IA</Gros>
+        <span className="mt-1.5 flex items-center gap-1.5">
+          {[0, 1, 2].map((k) => <span key={k} className="w-5 h-2.5" style={{ background: GREEN, clipPath: cut(3) }} />)}
+          <span className="ml-1 text-sm font-extrabold" style={{ fontFamily: FONT, color: GREEN }}>3 essais offerts</span>
+        </span>
+      </div>
     </div>
   );
 };
 
 export default BadgeIaTeaser;
 
-/** Variante par l'adresse : `?badgeia=1..5` (gardée pour l'onglet), accueil et fenêtre d'arrivée ensemble.
- *  Défaut 0 = rien d'affiché, en attendant le choix de Nolan. */
-export const BADGE_IA_DEFAUT = 0;
+/** Variante par l'adresse : `?badgeia=1..5` (gardée pour l'onglet), accueil et fenêtre d'arrivée ensemble ; 0 = rien.
+ *  Choix de Nolan (25/10, 2e tour) : 1 · Pastille claire, sur l'accueil ET dans la fenêtre d'arrivée. */
+export const BADGE_IA_DEFAUT = 1;
 export function readBadgeIaVariant(): { v: number; force: boolean } {
   if (typeof window === 'undefined') return { v: BADGE_IA_DEFAUT, force: false };
   try {
