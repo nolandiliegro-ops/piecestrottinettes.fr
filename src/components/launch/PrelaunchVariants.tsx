@@ -251,15 +251,16 @@ export const PrelaunchStage = ({ variant, ...p }: Props) => {
   );
 };
 
-/** Variante choisie par l'adresse : `?popup=N` (gardé pour l'onglet). 0 = version actuelle. */
+/** Variante choisie par l'adresse : `?popup=N` (gardé pour l'onglet). Défaut = 1 (Rideau, choix de Nolan du 25/10) ; 0 = ancienne fenêtre. */
 export function readPopupVariant(): { v: number; forced: boolean } {
-  if (typeof window === 'undefined') return { v: 0, forced: false };
+  if (typeof window === 'undefined') return { v: 1, forced: false };
   try {
     const q = new URLSearchParams(window.location.search).get('popup');
     if (q !== null && /^[0-5]$/.test(q)) { window.sessionStorage.setItem('pt-popup', q); return { v: Number(q), forced: true }; }
     const s = window.sessionStorage.getItem('pt-popup');
-    return { v: s && /^[0-5]$/.test(s) ? Number(s) : 0, forced: false };
+    // Choix de Nolan du 25/10 : « Rideau » par défaut ; `?popup=0` = ancienne fenêtre.
+    return { v: s && /^[0-5]$/.test(s) ? Number(s) : 1, forced: false };
   } catch {
-    return { v: 0, forced: false };
+    return { v: 1, forced: false };
   }
 }
