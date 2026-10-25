@@ -4010,6 +4010,33 @@ export type Database = {
         }
         Relationships: []
       }
+      _backup_statut_tri64_20261025: {
+        Row: {
+          commercial_status: string | null
+          id: string | null
+          slug: string | null
+          sold_until_year: number | null
+          status_checked_at: string | null
+          status_source: string | null
+        }
+        Insert: {
+          commercial_status?: string | null
+          id?: string | null
+          slug?: string | null
+          sold_until_year?: number | null
+          status_checked_at?: string | null
+          status_source?: string | null
+        }
+        Update: {
+          commercial_status?: string | null
+          id?: string | null
+          slug?: string | null
+          sold_until_year?: number | null
+          status_checked_at?: string | null
+          status_source?: string | null
+        }
+        Relationships: []
+      }
       _backup_stock_wattiz_20261017: {
         Row: {
           id: string | null
