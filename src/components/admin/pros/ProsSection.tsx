@@ -331,7 +331,7 @@ const Magasins = () => {
         );
       })}
       {tiers.length > 0 && (
-        <Carte><p className="text-sm text-[hsl(var(--admin-text-muted))]">Paliers : {tiers.map((t) => `${t.nom} −${Number(t.remise_pct)} % dès ${Math.round(Number(t.seuil_ca_ht)).toLocaleString('fr-FR')} € d'achats`).join(' · ')}. Prix pro jamais sous ton prix d'achat × 1,25 (au moins 20 % de marge), même un prix tapé à la main.</p></Carte>
+        <Carte><p className="text-sm text-[hsl(var(--admin-text-muted))]">Paliers : {tiers.map((t) => `${t.nom} −${Number(t.remise_pct)} % dès ${Math.round(Number(t.seuil_ca_ht)).toLocaleString('fr-FR')} € d'achats`).join(' · ')}. Prix pro jamais sous ton prix d'achat + 20 % (acheté 5 € → 6 € minimum), même un prix tapé à la main.</p></Carte>
       )}
     </div>
   );
