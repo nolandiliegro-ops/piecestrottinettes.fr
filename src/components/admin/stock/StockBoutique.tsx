@@ -239,7 +239,7 @@ const StockBoutique = () => {
   const famCourante = cats.find((c) => c.id === fam);
 
   return (
-    <div className="p-3 md:p-5 grid gap-3 max-w-6xl">
+    <div className="p-3 md:p-5 grid grid-cols-[minmax(0,1fr)] gap-3 max-w-6xl">
       <div className="flex flex-wrap items-end justify-between gap-2">
         <div>
           <h1 className="font-black uppercase text-xl tracking-tight">Stock boutique</h1>
@@ -279,7 +279,7 @@ const StockBoutique = () => {
         {q && <button type="button" onClick={() => setQ('')} className="w-9 h-9 flex items-center justify-center" aria-label="Effacer"><X className="w-5 h-5" /></button>}
       </div>
 
-      <div ref={liste} className="scroll-mt-3 grid gap-2">
+      <div ref={liste} className="scroll-mt-3 grid grid-cols-[minmax(0,1fr)] gap-2">
         {/* Tailles */}
         {tailles.length > 1 && (
           <div className="flex gap-1.5 overflow-x-auto pb-1">
@@ -301,7 +301,7 @@ const StockBoutique = () => {
           {recherche ? `${visibles.length} résultat${visibles.length > 1 ? 's' : ''} pour « ${q.trim()} »` : `${famCourante?.name ?? ''}${taille ? ` · ${taille}` : ''} : ${visibles.length} pièce${visibles.length > 1 ? 's' : ''}`}
           {' · '}touche le chiffre pour taper une quantité
         </p>
-        <div className="grid gap-2 md:grid-cols-2 xl:grid-cols-3">
+        <div className="grid gap-2 grid-cols-[minmax(0,1fr)] md:grid-cols-2 xl:grid-cols-3">
           {visibles.map((p) => ligne(p))}
         </div>
         {visibles.length === 0 && <p className="bg-white border border-[hsl(var(--admin-border))] rounded-xl p-4 text-[14px]">Aucune pièce ici. Essaie un autre mot ou une autre taille.</p>}
