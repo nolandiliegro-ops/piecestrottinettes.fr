@@ -1,22 +1,30 @@
 [
  {
-  "slug": "dualtron-spider-max",
-  "id": "d9129658-b4ee-4fc7-8b6a-70294978bf38",
+  "slug": "dualtron-storm-ltd-2025",
+  "id": "8d2f299c-521c-42df-a5af-6e8f496dd21c",
   "avant": 3,
-  "retirer": [],
-  "ordre": [
-   "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/d9129658-b4ee-4fc7-8b6a-70294978bf38/1792892780553_0.png",
-   "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/d9129658-b4ee-4fc7-8b6a-70294978bf38/1792892773994_0.png",
-   "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/d9129658-b4ee-4fc7-8b6a-70294978bf38/1792892786067_0.png"
+  "retirer": [
+   {
+    "i": 2,
+    "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/8d2f299c-521c-42df-a5af-6e8f496dd21c/1792441264281_0.png",
+    "motifs": [
+     "texte incrusté"
+    ],
+    "note": "Vue arrière ; logo « Dualtron » en reflet/résidu sous la trottinette, hors du châssis."
+   }
   ],
-  "change_principale": true,
+  "ordre": [
+   "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/8d2f299c-521c-42df-a5af-6e8f496dd21c/1792441259366_0.png",
+   "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/8d2f299c-521c-42df-a5af-6e8f496dd21c/1792441261368_0.png"
+  ],
+  "change_principale": false,
   "a_un_34_propre": true,
-  "restantes": 3
+  "restantes": 2
  },
  {
   "slug": "dualtron-victor-2025",
   "id": "92e8bccd-a133-4ed8-a9c3-27ab75bdc7b7",
-  "avant": 4,
+  "avant": 5,
   "retirer": [
    {
     "i": 1,
@@ -24,79 +32,60 @@
     "motifs": [
      "autre objet"
     ],
-    "note": "Vue de face du guidon avec un sac rigide accroché à la potence ; la trottinette est coupée en bas et seule la partie avant est visible."
+    "note": "Vue de face du guidon avec sacoche rigide accrochée ; trottinette coupée en bas."
    }
   ],
   "ordre": [
    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/92e8bccd-a133-4ed8-a9c3-27ab75bdc7b7/1792445942860_0.png",
+   "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/92e8bccd-a133-4ed8-a9c3-27ab75bdc7b7/1792867616139_0.png",
    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/92e8bccd-a133-4ed8-a9c3-27ab75bdc7b7/1792867617175_0.png",
    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/92e8bccd-a133-4ed8-a9c3-27ab75bdc7b7/1792867618344_0.png"
   ],
   "change_principale": false,
   "a_un_34_propre": true,
-  "restantes": 3
+  "restantes": 4
  },
  {
   "slug": "hitway-h11",
   "id": "10e37856-2c83-419a-a201-6f34edd678a8",
+  "avant": 3,
+  "retirer": [],
+  "ordre": [
+   "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/10e37856-2c83-419a-a201-6f34edd678a8/1792446629558_0.png",
+   "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/10e37856-2c83-419a-a201-6f34edd678a8/1792446626824_0.png",
+   "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/10e37856-2c83-419a-a201-6f34edd678a8/1792446639398_0.png"
+  ],
+  "change_principale": true,
+  "a_un_34_propre": true,
+  "restantes": 3
+ },
+ {
+  "slug": "inmotion-rs",
+  "id": "e6a9c39b-9ce5-488a-ba77-bf1f5b954e91",
   "avant": 2,
   "retirer": [],
   "ordre": [
-   "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/10e37856-2c83-419a-a201-6f34edd678a8/1792446626824_0.png",
-   "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/10e37856-2c83-419a-a201-6f34edd678a8/1792446639398_0.png"
+   "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/e6a9c39b-9ce5-488a-ba77-bf1f5b954e91/1792871793590_0.png",
+   "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/e6a9c39b-9ce5-488a-ba77-bf1f5b954e91/1792886362966_0.png"
   ],
   "change_principale": false,
   "a_un_34_propre": false,
   "restantes": 2
  },
  {
-  "slug": "inmotion-rs",
-  "id": "e6a9c39b-9ce5-488a-ba77-bf1f5b954e91",
-  "avant": 1,
-  "retirer": [],
-  "ordre": [
-   "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/e6a9c39b-9ce5-488a-ba77-bf1f5b954e91/1792886362966_0.png"
-  ],
-  "change_principale": true,
-  "a_un_34_propre": false,
-  "restantes": 1
- },
- {
-  "slug": "inokim-oxo-super",
-  "id": "f004d366-d5fb-4fec-9e90-2cf9af19cd38",
-  "avant": 6,
-  "retirer": [],
-  "ordre": [
-   "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/f004d366-d5fb-4fec-9e90-2cf9af19cd38/1792446908291_0.png",
-   "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/f004d366-d5fb-4fec-9e90-2cf9af19cd38/1792446910767_0.png",
-   "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/f004d366-d5fb-4fec-9e90-2cf9af19cd38/1792446913099_0.png",
-   "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/f004d366-d5fb-4fec-9e90-2cf9af19cd38/1792446916192_0.png",
-   "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/f004d366-d5fb-4fec-9e90-2cf9af19cd38/1792446905663_0.png",
-   "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/f004d366-d5fb-4fec-9e90-2cf9af19cd38/1792868366900_0.png"
-  ],
-  "change_principale": true,
-  "a_un_34_propre": true,
-  "restantes": 6
- },
- {
-  "slug": "isinwheel-gt4",
-  "id": "dda8d5a4-ad34-40d8-95c1-69dda60b9064",
-  "avant": 3,
-  "retirer": [],
-  "ordre": [
-   "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/dda8d5a4-ad34-40d8-95c1-69dda60b9064/1792183528835_0.png",
-   "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/dda8d5a4-ad34-40d8-95c1-69dda60b9064/1792183527592_0.png",
-   "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/dda8d5a4-ad34-40d8-95c1-69dda60b9064/1792183530314_0.png"
-  ],
-  "change_principale": true,
-  "a_un_34_propre": true,
-  "restantes": 3
- },
- {
   "slug": "isinwheel-s-nova-pro",
   "id": "54f29042-c5aa-460a-9a92-fd34fc962792",
-  "avant": 2,
-  "retirer": [],
+  "avant": 3,
+  "retirer": [
+   {
+    "i": 0,
+    "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/54f29042-c5aa-460a-9a92-fd34fc962792/1792442228920_0.png",
+    "motifs": [
+     "plusieurs trottinettes / vignette"
+    ],
+    "note": "Faible vignette fantôme de trottinette à droite, résidu de détourage."
+   }
+  ],
   "ordre": [
    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/54f29042-c5aa-460a-9a92-fd34fc962792/1792442231056_0.png",
    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/54f29042-c5aa-460a-9a92-fd34fc962792/1792878503387_0.png"
@@ -106,69 +95,9 @@
   "restantes": 2
  },
  {
-  "slug": "kukirin-g4-max",
-  "id": "7cd4904d-a282-4f4e-aab1-501be0a7b8e3",
-  "avant": 3,
-  "retirer": [
-   {
-    "i": 0,
-    "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/7cd4904d-a282-4f4e-aab1-501be0a7b8e3/1792442865551_0.png",
-    "motifs": [
-     "autre objet"
-    ],
-    "note": "Trottinette Kukirin vue de profil avec un sac rigide fixé sur la potence. Le fond est propre."
-   },
-   {
-    "i": 1,
-    "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/7cd4904d-a282-4f4e-aab1-501be0a7b8e3/1792442866838_0.png",
-    "motifs": [
-     "autre objet"
-    ],
-    "note": "Un sac rigide est fixé sur la colonne de direction, devant la trottinette. Ce n'est pas un objet posé à côté. Le fond est propre."
-   }
-  ],
-  "ordre": [
-   "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/7cd4904d-a282-4f4e-aab1-501be0a7b8e3/1792866952637_0.png"
-  ],
-  "change_principale": true,
-  "a_un_34_propre": false,
-  "restantes": 1
- },
- {
-  "slug": "nami-burn-e",
-  "id": "90784d31-a431-4f78-9937-2014139ba54b",
-  "avant": 4,
-  "retirer": [],
-  "ordre": [
-   "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/90784d31-a431-4f78-9937-2014139ba54b/1792443108346_0.png",
-   "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/90784d31-a431-4f78-9937-2014139ba54b/1792866974738_0.png",
-   "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/90784d31-a431-4f78-9937-2014139ba54b/1792866978642_0.png",
-   "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/90784d31-a431-4f78-9937-2014139ba54b/1792443104836_0.png"
-  ],
-  "change_principale": true,
-  "a_un_34_propre": true,
-  "restantes": 4
- },
- {
-  "slug": "ninebot-e3-pro-e",
-  "id": "ce627e3b-d3df-4ee2-a99e-08233d1d09b2",
-  "avant": 5,
-  "retirer": [],
-  "ordre": [
-   "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/ce627e3b-d3df-4ee2-a99e-08233d1d09b2/1792448914569_0.png",
-   "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/ce627e3b-d3df-4ee2-a99e-08233d1d09b2/1792448919227_0.png",
-   "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/ce627e3b-d3df-4ee2-a99e-08233d1d09b2/1792886418131_0.png",
-   "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/ce627e3b-d3df-4ee2-a99e-08233d1d09b2/1792886419876_0.png",
-   "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/ce627e3b-d3df-4ee2-a99e-08233d1d09b2/1792886422874_0.png"
-  ],
-  "change_principale": false,
-  "a_un_34_propre": false,
-  "restantes": 5
- },
- {
   "slug": "teverun-fighter-supreme-7260r",
   "id": "e269b16b-bcb5-4371-b02d-2279e66b781f",
-  "avant": 2,
+  "avant": 3,
   "retirer": [
    {
     "i": 1,
@@ -176,43 +105,31 @@
     "motifs": [
      "texte incrusté"
     ],
-    "note": "Vue strictement de profil. Un filigrane \"TEFERUN\" apparaît en haut à gauche de l'image, ce qui compte comme du texte ajouté."
+    "note": "Filigrane \"TEFERUN\" semi-transparent en haut à gauche de l'image."
    }
   ],
   "ordre": [
-   "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/e269b16b-bcb5-4371-b02d-2279e66b781f/1792450165916_0.png"
+   "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/e269b16b-bcb5-4371-b02d-2279e66b781f/1792450165916_0.png",
+   "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/e269b16b-bcb5-4371-b02d-2279e66b781f/1792450176898_0.png"
   ],
   "change_principale": false,
   "a_un_34_propre": true,
-  "restantes": 1
- },
- {
-  "slug": "xiaomi-electric-scooter-4-lite-2nd-gen",
-  "id": "1762a427-6e30-4bbf-b441-1bcb2414f0f7",
-  "avant": 3,
-  "retirer": [],
-  "ordre": [
-   "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/1762a427-6e30-4bbf-b441-1bcb2414f0f7/1792450806091_0.png",
-   "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/1762a427-6e30-4bbf-b441-1bcb2414f0f7/1792450800285_0.png",
-   "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/1762a427-6e30-4bbf-b441-1bcb2414f0f7/1792450803740_0.png"
-  ],
-  "change_principale": true,
-  "a_un_34_propre": true,
-  "restantes": 3
+  "restantes": 2
  },
  {
   "slug": "yeep-me-80n-evo-plus",
   "id": "d46f2abd-35f8-43dd-a8db-ebf3593d8d72",
-  "avant": 4,
+  "avant": 5,
   "retirer": [],
   "ordre": [
    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/d46f2abd-35f8-43dd-a8db-ebf3593d8d72/1792451074506_0.png",
+   "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/d46f2abd-35f8-43dd-a8db-ebf3593d8d72/1792451076523_0.png",
    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/d46f2abd-35f8-43dd-a8db-ebf3593d8d72/1792451079089_0.png",
    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/d46f2abd-35f8-43dd-a8db-ebf3593d8d72/1792451081709_0.png",
    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/d46f2abd-35f8-43dd-a8db-ebf3593d8d72/1792451084858_0.png"
   ],
   "change_principale": false,
   "a_un_34_propre": false,
-  "restantes": 4
+  "restantes": 5
  }
 ]
