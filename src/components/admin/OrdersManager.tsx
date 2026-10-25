@@ -276,8 +276,9 @@ const OrdersManager = () => {
       const { data, error } = await supabase
         .from('orders')
         .select('*')
+        .is('pro_account_id', null) // 25/10 : les commandes des magasins pro vivent dans Admin → Pros (statuts propres, retrait payé)
         .order('created_at', { ascending: false });
-      
+
       if (error) throw error;
       return data as Order[];
     }
