@@ -1,0 +1,66 @@
+
+→ Dualtron (1 scooter(s))
+   🖼  dualtron-x-limited : traitement...
+      dualtron-x-limited #0 FAIL détourage sale / résidu de décor
+      dualtron-x-limited #1 FAIL détourage sale / résidu de décor, basse définition
+      ❌ 0/2 ok — img 0: REFUSÉE par le garde-fou (détourage sale / résidu de décor); img 1: REFUSÉE par le garde-fou (détourage sale / résidu de décor, basse définition)
+   → Photos : 0 ok, 1 erreur(s), 0 skip
+
+→ Kaabo (2 scooter(s))
+   🖼  kaabo-mantis-x-plus : traitement...
+      kaabo-mantis-x-plus #0 PASS
+      kaabo-mantis-x-plus #1 PASS
+      ✅ 2/2 ok
+   🖼  kaabo-skywalker-10h : traitement...
+      kaabo-skywalker-10h #0 PASS
+      kaabo-skywalker-10h #1 PASS
+      kaabo-skywalker-10h #2 FAIL produit coupé / gros plan
+      ✅ 3/3 ok
+   → Photos : 2 ok, 0 erreur(s), 0 skip
+
+→ Beaster (2 scooter(s))
+   🖼  beaster-bs15 : traitement...
+      beaster-bs15 #0 PASS
+      beaster-bs15 #2 PASS
+      ✅ 2/3 ok, 1 erreur(s)
+   🖼  beaster-bs65 : traitement...
+      beaster-bs65 #0 WARN basse définition
+      beaster-bs65 #1 WARN basse définition
+      beaster-bs65 #2 WARN basse définition
+      ✅ 3/3 ok
+   → Photos : 2 ok, 0 erreur(s), 0 skip
+
+→ Joyor (2 scooter(s))
+   🖼  joyor-a5 : traitement...
+      joyor-a5 #0 PASS
+      joyor-a5 #1 PASS
+      joyor-a5 #2 WARN basse définition
+      ✅ 3/3 ok
+   🖼  joyor-s8-s : traitement...
+      joyor-s8-s #0 FAIL détourage sale / résidu de décor, élément en plus (logo, badge, téléphone, 2e trottinette) : 7 morceaux
+      joyor-s8-s #1 PASS
+      joyor-s8-s #2 PASS
+      ✅ 2/3 ok, 1 erreur(s)
+   → Photos : 2 ok, 0 erreur(s), 0 skip
+
+→ Velity (1 scooter(s))
+   🖼  velity-511-r : traitement...
+      velity-511-r #1 PASS
+      ✅ 1/2 ok, 1 erreur(s)
+   → Photos : 1 ok, 0 erreur(s), 0 skip
+
+→ Kukirin (2 scooter(s))
+   🖼  kukirin-g2-pro : traitement...
+      kukirin-g2-pro #0 PASS
+      kukirin-g2-pro #1 PASS
+      kukirin-g2-pro #2 PASS
+      kukirin-g2-pro #3 PASS
+      ✅ 4/4 ok
+   🖼  kukirin-s1-max : traitement...
+      kukirin-s1-max #0 PASS
+      kukirin-s1-max #1 PASS
+      kukirin-s1-max #2 FAIL élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux
+      ✅ 2/3 ok, 1 erreur(s)
+   → Photos : 2 ok, 0 erreur(s), 0 skip
+
+Terminé.

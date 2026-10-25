@@ -1,0 +1,110 @@
+⚠  [Navee] navee-g5-max — clés frein manquantes (assumé) : disc_diameter, disc_pcd, disc_holes
+⚠  [Navee] navee-g5-pro — clés frein manquantes (assumé) : disc_diameter, disc_pcd, disc_holes
+⚠  [Navee] navee-gt3-pro — clés frein manquantes (assumé) : disc_diameter, disc_pcd, disc_holes
+⚠  [Navee] navee-v25i-pro-ii — clés frein manquantes (assumé) : disc_diameter, disc_pcd, disc_holes
+⚠  [Navee] navee-e25-pro — clés frein manquantes (assumé) : disc_diameter, disc_pcd, disc_holes
+⚠  [Navee] navee-k100 — clés frein manquantes (assumé) : disc_diameter, disc_pcd, disc_holes
+⚠  [Navee] navee-k100-max — clés frein manquantes (assumé) : disc_diameter, disc_pcd, disc_holes
+⚠  [Xiaomi] xiaomi-electric-scooter-6-max — clés frein manquantes (assumé) : disc_diameter, disc_pcd, disc_holes
+⚠  [Xiaomi] xiaomi-electric-scooter-6-ultra — clés frein manquantes (assumé) : disc_pcd
+⚠  [Xiaomi] xiaomi-electric-scooter-4-go — clés frein manquantes (assumé) : disc_diameter, disc_pcd, disc_holes
+⚠  [Xiaomi] xiaomi-electric-scooter-4-lite — clés frein manquantes (assumé) : disc_diameter, disc_pcd, disc_holes
+⚠  [Navee] navee-st5-max — clés frein manquantes (assumé) : disc_diameter, disc_pcd, disc_holes
+⚠  [Dualtron] dualtron-achilleus-2025 — clés frein manquantes (assumé) : disc_diameter, disc_pcd, disc_holes
+⚠  [Dualtron] dualtron-eagle-pro — clés frein manquantes (assumé) : disc_pcd, disc_holes
+⚠  [Dualtron] dualtron-forever — clés frein manquantes (assumé) : disc_pcd, disc_holes
+⚠  [Dualtron] dualtron-spider-2 — clés frein manquantes (assumé) : disc_pcd, disc_holes
+⚠  [Dualtron] dualtron-togo — clés frein manquantes (assumé) : disc_diameter, disc_pcd, disc_holes
+⚠  [Dualtron] dualtron-thunder-2 — clés frein manquantes (assumé) : disc_diameter, disc_pcd, disc_holes
+⚠  [Dualtron] dualtron-x-limited — clés frein manquantes (assumé) : disc_diameter, disc_pcd, disc_holes
+⚠  [Kaabo] kaabo-mantis-8 — clés frein manquantes (assumé) : disc_pcd, disc_holes
+⚠  [Kaabo] kaabo-mantis-king-gt — clés frein manquantes (assumé) : disc_pcd, disc_holes
+⚠  [Ninebot] ninebot-e2-plus — clés frein manquantes (assumé) : disc_diameter, disc_pcd, disc_holes
+⚠  [Ninebot] ninebot-e25e — clés frein manquantes (assumé) : disc_diameter, disc_pcd, disc_holes
+⚠  [Ninebot] ninebot-f2-plus — clés frein manquantes (assumé) : disc_pcd
+⚠  [Ninebot] ninebot-f65 — clés frein manquantes (assumé) : disc_diameter, disc_pcd, disc_holes
+⚠  [Ninebot] ninebot-f3-e — clés frein manquantes (assumé) : disc_pcd
+⚠  [Joyor] joyor-s8-s — clés frein manquantes (assumé) : disc_pcd
+⚠  [Joyor] joyor-a5 — clés frein manquantes (assumé) : disc_diameter, disc_pcd, disc_holes
+⚠  [Kukirin] kukirin-g2-pro — clés frein manquantes (assumé) : disc_diameter, disc_pcd, disc_holes
+⚠  [Kukirin] kukirin-s1-max — clés frein manquantes (assumé) : disc_diameter, disc_pcd, disc_holes
+⚠  30 scooter(s) sans clés frein complètes — poursuite (--allow-missing-keys).
+
+
+→ Navee (7 modèle(s))
+   ✅ Insérés : 7   ⏭  Ignorés : 0
+   🖼  Images navee-g5-max : traitement... ✅ 3/3 ok
+   🖼  Images navee-g5-pro : traitement... ✅ 3/3 ok
+   🖼  Images navee-gt3-pro : traitement... ✅ 3/3 ok
+   🖼  Images navee-v25i-pro-ii : traitement... ✅ 3/3 ok
+   🖼  Images navee-e25-pro : traitement... ✅ 3/3 ok
+   🖼  Images navee-k100 : traitement... ✅ 3/3 ok
+   🖼  Images navee-k100-max : traitement... ✅ 3/3 ok
+   → Images : 7 ok, 0 erreur(s), 0 skip
+   📣 navee-g5-max : publié
+   📣 navee-g5-pro : publié
+   📣 navee-gt3-pro : publié
+   📣 navee-v25i-pro-ii : publié
+   📣 navee-e25-pro : publié
+   📣 navee-k100 : publié
+   📣 navee-k100-max : publié
+   → Publiés : 7/7
+
+→ Xiaomi (4 modèle(s))
+   ✅ Insérés : 0   ⏭  Ignorés : 0
+   ⏸  xiaomi-electric-scooter-6-max : reste brouillon : disc_diameter_code, disc_pcd_code, disc_holes_code
+   ⏸  xiaomi-electric-scooter-6-ultra : reste brouillon : disc_pcd_code
+   📣 xiaomi-electric-scooter-4-go : publié
+   📣 xiaomi-electric-scooter-4-lite : publié
+   → Publiés : 2/4
+
+→ Navee (1 modèle(s))
+   ✅ Insérés : 0   ⏭  Ignorés : 0
+   ⏸  navee-st5-max : reste brouillon : disc_diameter_code, disc_pcd_code, disc_holes_code
+   → Publiés : 0/1
+
+→ Dualtron (7 modèle(s))
+   ✅ Insérés : 0   ⏭  Ignorés : 0
+   📣 dualtron-achilleus-2025 : publié
+   ⏸  dualtron-eagle-pro : reste brouillon : disc_pcd_code, disc_holes_code
+   ⏸  dualtron-forever : reste brouillon : weight_kg, disc_pcd_code, disc_holes_code
+   ⏸  dualtron-spider-2 : reste brouillon : disc_pcd_code, disc_holes_code
+   📣 dualtron-togo : publié
+   📣 dualtron-thunder-2 : publié
+   ⏸  dualtron-x-limited : reste brouillon : photo, disc_pcd_code, disc_holes_code
+   → Publiés : 3/7
+
+→ Kaabo (2 modèle(s))
+   ✅ Insérés : 0   ⏭  Ignorés : 0
+   ⏸  kaabo-mantis-8 : reste brouillon : weight_kg, disc_pcd_code, disc_holes_code, score_performance, score_autonomy, score_offroad
+   ⏸  kaabo-mantis-king-gt : reste brouillon : disc_pcd_code, disc_holes_code, score_performance, score_autonomy, score_offroad
+   → Publiés : 0/2
+
+→ Ninebot (5 modèle(s))
+   ✅ Insérés : 0   ⏭  Ignorés : 0
+   ⏸  ninebot-e2-plus : reste brouillon : score_performance, score_autonomy, score_offroad
+   ⏸  ninebot-e25e : reste brouillon : score_performance, score_autonomy, score_offroad
+   ⏸  ninebot-f2-plus : reste brouillon : disc_pcd_code, score_performance, score_autonomy, score_offroad
+   ⏸  ninebot-f65 : reste brouillon : score_performance, score_autonomy, score_offroad
+   ⏸  ninebot-f3-e : reste brouillon : disc_pcd_code
+   → Publiés : 0/5
+
+→ Joyor (2 modèle(s))
+   ✅ Insérés : 0   ⏭  Ignorés : 0
+   ⏸  joyor-s8-s : reste brouillon : disc_pcd_code
+   📣 joyor-a5 : publié
+   → Publiés : 1/2
+
+→ Kukirin (2 modèle(s))
+   ✅ Insérés : 0   ⏭  Ignorés : 0
+   📣 kukirin-g2-pro : publié
+   📣 kukirin-s1-max : publié
+   → Publiés : 2/2
+
+→ 15 modèle(s) publié(s) : relance du moteur de compat…
+   [scope] 7/7 catégorie(s) : chargeurs, chambres-a-air, pneus, pneus-gonflables, pneus-pleins, disques, plaquettes (défaut : allowlist complète)
+   [parts] 562 pièce(s) publiée(s) à retrigger
+   TOTAL : 562 pièces, 5022 suggestions K, 4999 auto supprimées, 0 erreur(s).
+   Compat : 5022 nouvelles suggestions
+
+Terminé.
