@@ -5,7 +5,7 @@
 // Doc : claude/PT-lot-comptoir-pro.md. Les prix pro sont calculés en base (jamais ici).
 import { useMemo, useState } from 'react';
 import { useQuery, useQueryClient } from '@tanstack/react-query';
-import { Store, PackageCheck, ClipboardList, Loader2, MessageCircle, Copy, RefreshCw, Plus, Pause, Play } from 'lucide-react';
+import { Store, PackageCheck, ClipboardList, Table2, Loader2, MessageCircle, Copy, RefreshCw, Plus, Pause, Play } from 'lucide-react';
 import { toast } from 'sonner';
 import { supabase } from '@/integrations/supabase/client';
 import { Input } from '@/components/ui/input';
@@ -13,6 +13,7 @@ import { optimizedImage } from '@/lib/imageTransform';
 import { numeroWhatsApp } from '@/lib/ambassadorKit';
 import { eurFR, jourFR, PRO_STATUS_LABEL, lienFacture } from '@/lib/pro';
 import SectionTabs from '../sections/SectionTabs';
+import GrillePrix from './GrillePrix';
 
 const SITE = 'https://piecestrottinettes.fr';
 const lienPro = (token: string) => `${SITE}/pro/${token}`;
@@ -330,7 +331,7 @@ const Magasins = () => {
         );
       })}
       {tiers.length > 0 && (
-        <Carte><p className="text-sm text-[hsl(var(--admin-text-muted))]">Paliers : {tiers.map((t) => `${t.nom} −${Number(t.remise_pct)} % dès ${eurFR(Number(t.seuil_ca_ht))} d'achats`).join(' · ')}. Prix pro jamais sous le prix d'achat × 1,15.</p></Carte>
+        <Carte><p className="text-sm text-[hsl(var(--admin-text-muted))]">Paliers : {tiers.map((t) => `${t.nom} −${Number(t.remise_pct)} % dès ${Math.round(Number(t.seuil_ca_ht)).toLocaleString('fr-FR')} € d'achats`).join(' · ')}. Prix pro jamais sous le prix d'achat × 1,15.</p></Carte>
       )}
     </div>
   );
@@ -345,6 +346,7 @@ const ProsSection = () => (
       { id: 'preparer', label: 'À préparer', icon: PackageCheck, content: <APreparer /> },
       { id: 'commander', label: 'À commander', icon: ClipboardList, content: <AComm /> },
       { id: 'magasins', label: 'Magasins', icon: Store, content: <Magasins /> },
+      { id: 'grille', label: 'Grille des prix', icon: Table2, content: <GrillePrix /> },
     ]}
   />
 );
