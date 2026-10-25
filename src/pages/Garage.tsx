@@ -1,6 +1,6 @@
 import SEO from "@/components/SEO";
 import { useState, useEffect, lazy, Suspense, useMemo } from 'react';
-import { useNavigate, useSearchParams } from 'react-router-dom';
+import { useNavigate, useSearchParams, useParams } from 'react-router-dom';
 import { useAuth } from '@/hooks/useAuth';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
@@ -39,6 +39,10 @@ import GarageVueStyles, { readGarageVue, GarageVueTabs, type GarageTab } from '@
 import GarageAtelierView from '@/components/garage/atelier/GarageAtelierView';
 const RiderCardLightbox = lazy(() => import('@/components/garage/RiderCardLightbox'));
 import RiderCardBand from '@/components/garage/story/RiderCardBand';
+import GarageV3, { readGarageSection } from '@/components/garage/v3/GarageV3';
+import { ScreenTitle, Box, BoxTitle } from '@/components/garage/v3/ui';
+// 25/10 : garage v3 par défaut ; ?g=0 = garage précédent.
+const legacyGarage = typeof window !== 'undefined' && new URLSearchParams(window.location.search).get('g') === '0';
 // 25/10 : carte Rider Story ; ?carte=0 = ancienne carte (fenêtre).
 const legacyCard = typeof window !== 'undefined' && new URLSearchParams(window.location.search).get('carte') === '0';
 
@@ -53,6 +57,8 @@ import {
 const Garage = () => {
   const navigate = useNavigate();
   const [searchParams, setSearchParams] = useSearchParams();
+  const { section: sectionParam } = useParams<{ section?: string }>();
+  const section = readGarageSection(sectionParam);
   const { user, profile, loading: authLoading } = useAuth();
   const { scooters, loading: scootersLoading } = useGarageScooters();
   const [selectedScooterId, setSelectedScooterId] = useState<string | null>(null);
@@ -74,6 +80,11 @@ const Garage = () => {
   useEffect(() => {
     const raw = searchParams.get('tab');
     const tab = raw === 'commandes' ? 'orders' : raw;
+    // Garage v3 : les anciens liens ?tab=commandes|messages (mails, notifications) ouvrent l'écran Commandes.
+    if (!legacyGarage && (tab === 'orders' || tab === 'messages')) {
+      navigate('/garage/commandes', { replace: true });
+      return;
+    }
     if (tab === 'messages' || tab === 'orders' || tab === 'garage') {
       if (tab === 'messages' && !searchParams.get('orderId')) setAutoOpenThread(true);
       setActiveTab(tab);
@@ -150,6 +161,49 @@ const Garage = () => {
       <Header />
 
       <main className="relative z-10 flex-1 pt-20 lg:pt-24 pb-4 flex flex-col">
+        {!legacyGarage && user ? (
+          <GarageV3
+            section={section}
+            unread={totalUnread}
+            onEditProfile={() => setProfileEditOpen(true)}
+            onTheme={() => setThemePickerOpen(true)}
+            trotts={
+              <div>
+                <ScreenTitle kicker="Mes trotts" title={selectedScooter?.scooter_model?.name ?? 'Mes trotts'}>
+                  {scooterCount > 1 ? `${scooterCount} trotts dans ton garage : passe de l'une à l'autre avec les flèches.` : 'Ta machine, son entretien et les pièces qui vont dessus.'}
+                </ScreenTitle>
+                {scootersLoading ? (
+                  <div className="flex items-center justify-center py-20"><Loader2 className="w-8 h-8 animate-spin text-white" /></div>
+                ) : scooterCount === 0 ? (
+                  <Box>
+                    <BoxTitle>Ton garage est vide</BoxTitle>
+                    <p className="mt-2 text-[15px] text-gray-700">Ajoute ta trottinette : tu verras les pièces qui vont dessus et elle apparaîtra sur ta carte.</p>
+                    <button type="button" onClick={() => navigate('/trottinettes')} className="mt-3 min-h-[48px] px-4 text-[15px] font-extrabold text-white bg-[#1A1A1A]">Ajouter ma trottinette</button>
+                  </Box>
+                ) : selectedScooter && selectedScooter.scooter_model ? (
+                  <GarageAtelierView
+                    profile={profile}
+                    scooter={selectedScooter as any}
+                    scooterCount={scooterCount}
+                    currentIndex={currentIndex}
+                    onPrev={handlePrev}
+                    onNext={handleNext}
+                    onEditProfile={() => setProfileEditOpen(true)}
+                    onTheme={() => setThemePickerOpen(true)}
+                    onAddModification={() => setQuickAddOpen(true)}
+                    onOpenHistory={() => setHistoryOpen(true)}
+                    onOpenRiderCard={() => navigate('/garage')}
+                    hideRider
+                    hideLaunch
+                  />
+                ) : (
+                  <div className="flex items-center justify-center py-20"><Loader2 className="w-8 h-8 animate-spin text-white" /></div>
+                )}
+              </div>
+            }
+          />
+        ) : (
+        <>
         <div className="px-4 lg:px-6 max-w-[1600px] mx-auto w-full">
           <GarageHeaderBar
             activeTab={activeTab}
@@ -517,6 +571,8 @@ const Garage = () => {
             </motion.div>
           )}
         </AnimatePresence>
+        </>
+        )}
       </main>
 
       {/* Plus FAB */}

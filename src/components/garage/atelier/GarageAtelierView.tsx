@@ -81,6 +81,9 @@ interface Props {
   onAddModification: () => void;
   onOpenHistory: () => void;
   onOpenRiderCard: () => void;
+  /** Garage v3 (25/10) : le profil/XP et le code RIDER vivent dans Réglages. */
+  hideRider?: boolean;
+  hideLaunch?: boolean;
 }
 
 export const H2 = ({ children, light }: { children: React.ReactNode; light?: boolean }) => (
@@ -305,16 +308,16 @@ const GarageAtelierView = (p: Props) => {
       <div className="flex flex-col gap-4 lg:grid lg:grid-cols-[minmax(0,1fr)_360px] lg:gap-6 lg:items-start">
         {/* Colonne principale */}
         <div className="flex flex-col gap-4 min-w-0">
-          <div className="lg:hidden"><RiderStrip profile={p.profile} onEditProfile={p.onEditProfile} onTheme={p.onTheme} /></div>
+          {!p.hideRider && <div className="lg:hidden"><RiderStrip profile={p.profile} onEditProfile={p.onEditProfile} onTheme={p.onTheme} /></div>}
           <ScooterStage scooter={s} scooterCount={p.scooterCount} currentIndex={p.currentIndex} onPrev={p.onPrev} onNext={p.onNext} />
           <Actions garageId={s.id} onAddModification={p.onAddModification} onOpenRiderCard={p.onOpenRiderCard} />
           <PartsShelf scooter={s} />
         </div>
         {/* Colonne de côté (ordinateur) / suite (téléphone) */}
         <aside className="flex flex-col gap-4 min-w-0">
-          <div className="hidden lg:block"><RiderStrip profile={p.profile} onEditProfile={p.onEditProfile} onTheme={p.onTheme} /></div>
+          {!p.hideRider && <div className="hidden lg:block"><RiderStrip profile={p.profile} onEditProfile={p.onEditProfile} onTheme={p.onTheme} /></div>}
           <Upkeep scooter={s} points={points} onOpenHistory={p.onOpenHistory} onAddModification={p.onAddModification} />
-          <div data-reuse><RiderLaunchCode /></div>
+          {!p.hideLaunch && <div data-reuse><RiderLaunchCode /></div>}
           <div data-reuse><ScooterPhotoCard garageItem={s as any} /></div>
           <div data-reuse><DescriptionCard garageId={s.id} initialDescription={s.personal_description} /></div>
           <div data-reuse>

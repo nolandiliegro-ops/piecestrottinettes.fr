@@ -1,4 +1,4 @@
-import { Ticket, ScanLine, Handshake, Newspaper, MessageCircleQuestion, Megaphone } from 'lucide-react';
+import { Ticket, ScanLine, Handshake, Newspaper, MessageCircleQuestion, Megaphone, MessagesSquare } from 'lucide-react';
 import SectionTabs from './SectionTabs';
 import PromoCodesManager from '../PromoCodesManager';
 import ScansManager from '../ScansManager';
@@ -8,6 +8,7 @@ import { useSearchParams } from 'react-router-dom';
 import BlogManager from '../BlogManager';
 import RiderQuestionsManager from '../RiderQuestionsManager';
 import AmbassadorsManager from '../AmbassadorsManager';
+import RiderCommentsManager from '../RiderCommentsManager';
 
 /** 24/10/2026 — Affiliation v2 « Cockpit » par défaut ; l'ancien écran reste joignable par ?aff=0 le temps de la recette. */
 const AffiliationTab = () => {
@@ -28,6 +29,7 @@ const MarketingSection = () => (
       { id: 'blog', label: 'Blog', icon: Newspaper, content: <BlogManager /> },
       { id: 'questions', label: 'Questions', icon: MessageCircleQuestion, content: <RiderQuestionsManager /> },
       { id: 'scans', label: 'Scans clients', icon: ScanLine, content: <ScansManager /> },
+      { id: 'commentaires', label: 'Commentaires cartes', icon: MessagesSquare, content: <RiderCommentsManager /> },
     ]}
   />
 );

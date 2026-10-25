@@ -140,6 +140,13 @@ function App() {
                 </GarageErrorBoundary>
               </ProtectedRoute>
             } />
+            <Route path="/garage/:section" element={
+              <ProtectedRoute>
+                <GarageErrorBoundary>
+                  <Garage />
+                </GarageErrorBoundary>
+              </ProtectedRoute>
+            } />
             <Route path="/profile" element={
               <ProtectedRoute>
                 <Profile />
