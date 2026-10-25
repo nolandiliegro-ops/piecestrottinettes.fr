@@ -5021,6 +5021,60 @@ export type Database = {
         }
         Relationships: []
       }
+      _bak_images_scooters_2510_juge: {
+        Row: {
+          id: string | null
+          image_url: string | null
+          images: Json | null
+          published: boolean | null
+          saved_at: string | null
+          slug: string | null
+        }
+        Insert: {
+          id?: string | null
+          image_url?: string | null
+          images?: Json | null
+          published?: boolean | null
+          saved_at?: string | null
+          slug?: string | null
+        }
+        Update: {
+          id?: string | null
+          image_url?: string | null
+          images?: Json | null
+          published?: boolean | null
+          saved_at?: string | null
+          slug?: string | null
+        }
+        Relationships: []
+      }
+      _bak_images_scooters_2510_juge2: {
+        Row: {
+          id: string | null
+          image_url: string | null
+          images: Json | null
+          published: boolean | null
+          saved_at: string | null
+          slug: string | null
+        }
+        Insert: {
+          id?: string | null
+          image_url?: string | null
+          images?: Json | null
+          published?: boolean | null
+          saved_at?: string | null
+          slug?: string | null
+        }
+        Update: {
+          id?: string | null
+          image_url?: string | null
+          images?: Json | null
+          published?: boolean | null
+          saved_at?: string | null
+          slug?: string | null
+        }
+        Relationships: []
+      }
       _bak_parts_points_bleus_2510: {
         Row: {
           attributes: Json | null
@@ -8776,7 +8830,7 @@ export type Database = {
           ca_12m_ht: number
           contact_nom: string | null
           created_at: string
-          email: string
+          email: string | null
           id: string
           last_seen_at: string | null
           nom_magasin: string
@@ -8796,7 +8850,7 @@ export type Database = {
           ca_12m_ht?: number
           contact_nom?: string | null
           created_at?: string
-          email: string
+          email?: string | null
           id?: string
           last_seen_at?: string | null
           nom_magasin: string
@@ -8816,7 +8870,7 @@ export type Database = {
           ca_12m_ht?: number
           contact_nom?: string | null
           created_at?: string
-          email?: string
+          email?: string | null
           id?: string
           last_seen_at?: string | null
           nom_magasin?: string
@@ -10550,7 +10604,7 @@ export type Database = {
           ca_12m_ht: number
           contact_nom: string | null
           created_at: string
-          email: string
+          email: string | null
           id: string
           last_seen_at: string | null
           nom_magasin: string
