@@ -62,7 +62,7 @@ const A_LINE = "#E2DCD0";
 const frPrice = (n: number) => `${n.toFixed(2).replace(".", ",")}\u00A0€`;
 /** Pièces plates (plaquettes, disques…) : la photo a beaucoup de vide autour → on les grossit pour qu'elles sortent autant qu'un pneu. */
 
-const BOOST: Record<string, number> = { plaquettes: 1.2, "disques-plaquettes": 1, disques: 0.9, chargeurs: 0.85, "chambres-a-air": 1.05 }; // 20/10 Nolan : disques et chargeurs « un chouïa gros », l'effet qui dépasse est gardé
+const BOOST: Record<string, number> = { plaquettes: 0.9, "disques-plaquettes": 0.9, disques: 0.85, chargeurs: 0.85, "chambres-a-air": 1.05 }; // 25/10 : alignée sur PartCardAtelier — la plaquette ×1.2 sortait de la carte jusque sur les onglets (capture iPhone, accueil Mi 3) // 20/10 Nolan : disques et chargeurs « un chouïa gros », l'effet qui dépasse est gardé
 
 type BadgeKind = "BEST" | "SÉCU" | "NOUVEAU" | null;
 
@@ -181,10 +181,10 @@ const PartCardSlim = ({ part, index, variant = "grid", brandColor, categoryFilte
 
   const atelier = PCARD ? (
     <Link to={`/piece/${part.slug}`} onClick={handleCardClick} data-pcard={PCARD}
-      className={cn("group group/pc relative block", PCARD === 4 && "pt-16 md:pt-20")}
+      className={cn("group group/pc relative block", PCARD === 4 && "pt-12 md:pt-16")}
       style={{ fontFamily: A_FONT }}>
       {/* Image */}
-      <div className={cn("relative flex items-center justify-center", PCARD === 4 ? "absolute inset-x-0 top-0 h-[180px] md:h-[210px] z-[2] pointer-events-none" : "aspect-square")}
+      <div className={cn("relative flex items-center justify-center", PCARD === 4 ? "absolute inset-x-0 top-0 h-[150px] md:h-[178px] z-[2] pointer-events-none" : "aspect-square")}
         style={PCARD === 4 ? undefined : { background: PCARD === 2 || PCARD === 5 ? "#F2EFE8" : "#FFFFFF", clipPath: PCARD === 1 ? undefined : A_CUT(14) }}>
         {/* 19/10 (Nolan) : halo lumineux derrière le produit au survol */}
         {PCARD === 4 && img && (
@@ -193,7 +193,7 @@ const PartCardSlim = ({ part, index, variant = "grid", brandColor, categoryFilte
         )}
         {img ? (
           <img src={displayImg} alt={part.name} loading="lazy" decoding="async"
-            className={cn("relative object-contain transition-transform duration-300 ease-out", PCARD === 4 ? "h-full w-auto max-w-[94%] origin-bottom group-hover/pc:-translate-y-1.5 group-hover/pc:scale-[1.08] group-hover/pc:brightness-110" : "max-w-[78%] max-h-[78%] group-hover:-translate-y-1")}
+            className={cn("relative object-contain transition-transform duration-300 ease-out", PCARD === 4 ? "h-full w-auto max-w-[88%] origin-bottom group-hover/pc:-translate-y-1.5 group-hover/pc:scale-[1.08] group-hover/pc:brightness-110" : "max-w-[78%] max-h-[78%] group-hover:-translate-y-1")}
             style={{ filter: "drop-shadow(0 12px 14px rgba(0,0,0,0.16))", scale: PCARD === 4 ? String(BOOST[catSlug ?? ""] ?? 1) : undefined }} />
         ) : <div className="text-3xl opacity-30">🔧</div>}
         {isOut && (
@@ -215,7 +215,7 @@ const PartCardSlim = ({ part, index, variant = "grid", brandColor, categoryFilte
         </button>
       )}
       {/* Corps */}
-      <div className={cn("relative transition-shadow duration-300", PCARD === 4 && "pt-[124px] md:pt-[140px] group-hover/pc:shadow-[0_14px_30px_rgba(26,26,26,0.12)]")}
+      <div className={cn("relative transition-shadow duration-300", PCARD === 4 && "pt-[106px] md:pt-[120px] group-hover/pc:shadow-[0_14px_30px_rgba(26,26,26,0.12)]")}
         style={{ background: PCARD === 1 ? "#1A1A1A" : "#FFFFFF", boxShadow: PCARD === 1 ? undefined : `inset 0 0 0 1px ${A_LINE}`, clipPath: PCARD === 1 ? undefined : PCARD === 4 ? A_CUT(14) : undefined }}>
         <div className="px-3 pt-3 pb-3">
           {catName && (
