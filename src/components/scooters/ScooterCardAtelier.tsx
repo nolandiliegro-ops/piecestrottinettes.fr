@@ -79,7 +79,9 @@ const Img = ({ s, eager, className }: { s: AtelierScooter; eager: boolean; class
   const src = getPrimaryImage(s.images, s.image_url, "");
   return src ? (
     // 25/10 (poids 4G) : srcset 360/540/700 — une carte fait ~170 px sur téléphone (2 colonnes), 360 px suffit en écran 2x.
-    <img {...responsiveImage(src, [360, 540, 700])} sizes="(min-width: 1024px) 300px, (min-width: 768px) 30vw, 46vw"
+    // 26/10 : « 300px » était faux — la carte mesure 440 px sur un écran de 1600 px (3 colonnes) : le navigateur
+    // chargeait la version 360 et l'AGRANDISSAIT (escaliers vus par Nolan sur les Navee). Téléphone inchangé (≈ 360 en 2x).
+    <img {...responsiveImage(src, [360, 540, 720, 960])} sizes="(min-width: 1280px) 460px, (min-width: 768px) 34vw, 50vw"
       alt={s.name} loading={eager ? "eager" : "lazy"} fetchPriority={eager ? "high" : "auto"} decoding="async" className={className} style={{ filter: "drop-shadow(0 10px 12px rgba(0,0,0,0.18))" }}
       // 25/10 : le redimensionnement Supabase échoue parfois (carte Navee ST5 Max vide) → repli unique sur l'original
       onError={(e) => { const im = e.currentTarget; if (im.src !== src) { im.removeAttribute("srcset"); im.src = src; } }} />

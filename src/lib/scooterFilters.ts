@@ -21,6 +21,8 @@ export interface FilterableScooter {
   image_url?: string | null;
   brand?: { slug?: string | null; name?: string | null } | null;
   commercial_status?: string | null;
+  /** 26/10 : photo principale insuffisante (basse définition, coupée) — remplie par la repasse qualité, vidée par la chasse photo. */
+  photo_a_refaire?: boolean | null;
 }
 
 /** 24/10 (Nolan) : « Notre sélection » = tri par défaut. Ce qui fait vendre en premier :
@@ -188,7 +190,10 @@ export const applyFilters = <T extends FilterableScooter>(list: T[], sel: Select
     : [...list];
   const so = SORTS.find((x) => x.value === sort) ?? SORTS[0];
   const sorted = out.sort(so.cmp);
-  return so.value === "selection" ? spreadBrands(sorted) : sorted;
+  const range = so.value === "selection" ? spreadBrands(sorted) : sorted;
+  // 26/10 (Nolan) : on ne dépublie pas une trottinette dont la photo est à refaire, on la range EN FIN de liste
+  // (quel que soit le tri) le temps que la chasse photo la remplace. Partition stable : l'ordre du tri est conservé.
+  return [...range.filter((s) => !s.photo_a_refaire), ...range.filter((s) => s.photo_a_refaire)];
 };
 
 export const readSelection = (params: URLSearchParams): Selection => {
