@@ -84,6 +84,32 @@ export function useMultiPhotoGallery(
       if (file.size > 5 * 1024 * 1024) {
         throw new Error("Fichier trop lourd (max 5 MB)");
       }
+      // Garde-fou anti-doublon (25/10/2026) : jamais deux fois la même photo sur une fiche.
+      // Vérification SEULE côté serveur (aucune écriture) AVANT l'envoi. Si la vérification ne répond pas,
+      // on laisse passer (la ronde hebdo du lundi rattrapera un éventuel doublon) — l'admin n'est jamais bloqué
+      // pour une raison technique.
+      try {
+        const b64 = await new Promise<string>((resolve, reject) => {
+          const r = new FileReader();
+          r.onload = () => resolve(String(r.result).split(",")[1] ?? "");
+          r.onerror = () => reject(r.error);
+          r.readAsDataURL(file);
+        });
+        const { data: chk, error: chkErr } = await supabase.functions.invoke(
+          "admin-process-images",
+          { body: { entity_type: entityType, entity_id: entityId, images_base64: [b64], check_only: true } },
+        );
+        const res = !chkErr ? chk?.results?.[0] : null;
+        if (res?.doublon) {
+          throw new Error(
+            "Photo déjà présente sur cette fiche — envoi annulé (règle : jamais deux fois la même photo).",
+          );
+        }
+        if (chkErr) console.warn("[garde-fou photo] vérification indisponible, envoi autorisé", chkErr);
+      } catch (e) {
+        if (e instanceof Error && e.message.startsWith("Photo déjà présente")) throw e;
+        console.warn("[garde-fou photo] vérification impossible, envoi autorisé", e);
+      }
       const safeName = file.name.replace(/[^a-zA-Z0-9._-]/g, "_");
       const path = `${entityId}/${Date.now()}-${safeName}`;
       const { error: upErr } = await supabase.storage
