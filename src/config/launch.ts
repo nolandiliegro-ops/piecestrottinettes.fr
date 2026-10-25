@@ -51,4 +51,4 @@ export const openPrelaunch = () => {
 };
 
 // relance publication 25/10 C8
-// relance publication 25/10 partage jpeg
+// relance publication 25/10 textes d'aide 320 px
