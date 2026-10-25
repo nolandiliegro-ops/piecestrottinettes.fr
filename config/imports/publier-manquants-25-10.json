@@ -1,0 +1,20 @@
+[
+ {
+  "brandName": "Ninebot",
+  "scooters": [
+   {
+    "name": "Ninebot E2 Plus E II",
+    "slug": "ninebot-e2-plus-e-ii"
+   }
+  ]
+ },
+ {
+  "brandName": "Segway",
+  "scooters": [
+   {
+    "name": "Segway GT3 Pro",
+    "slug": "segway-gt3-pro"
+   }
+  ]
+ }
+]
