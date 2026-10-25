@@ -108,8 +108,10 @@ export function ecartCouleur(a: Float64Array | null, b: Float64Array | null) {
   return s * 100;
 }
 
-// Seuils : voir out/doublons-core/calib.json (calibration du 25/10 sur ce cœur exact).
-export const SEUILS = { dhash: 6, iou: 0.95, dhashAvecIou: 10, couleur: 8 };
+// Calibration 25/10 ORIGINAL contre ORIGINAL (1 063 fiches, 8 112 paires validées, 3 382 photos face à elles-mêmes,
+// 129 copies retirées le 24/10) : 0 faux positif, 0 photo non reconnue face à elle-même, 70/129 copies détectées
+// (les autres = autres clichés du même angle, affaire du tri vision).
+export const SEUILS = { dhash: 4, iou: 0.93, dhashAvecIou: 10, couleur: 6 };
 
 export function memePhoto(a: Empreinte, b: Empreinte, s = SEUILS) {
   const d = ham(a.hash, b.hash), io = iou(a.mask, b.mask), c = ecartCouleur(a.hist, b.hist);
