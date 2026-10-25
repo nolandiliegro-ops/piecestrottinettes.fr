@@ -144,7 +144,11 @@ async function dry() {
 // ─── garde-fou anti-doublon (25/10) : jamais deux fois la même photo sur une fiche ───
 // Compare chaque photo à envoyer aux photos DÉJÀ sur la fiche (en append) et aux photos déjà retenues dans ce lot.
 // Les deux côtés passent par la même réduction (320 px) pour des empreintes comparables.
-const vignette = async (buf) => sharp(buf, { failOn: 'none' }).resize(320, 320, { fit: 'inside' }).png().toBuffer();
+// même préparation des deux côtés : recadrage sur le produit (alpha) puis 320 px, transparence conservée
+const vignette = async (buf) => {
+  const t = await sharp(buf, { failOn: 'none' }).ensureAlpha().trim({ threshold: 1 }).png().toBuffer().catch(() => buf);
+  return sharp(t, { failOn: 'none' }).ensureAlpha().resize(320, 320, { fit: 'inside' }).png().toBuffer();
+};
 async function empreintesEnLigne(env, entity, id) {
   const table = entity === 'part' ? 'parts' : 'scooter_models';
   const r = await fetch(`${env.VITE_SUPABASE_URL}/rest/v1/${table}?select=images&id=eq.${id}`, { headers: { apikey: env.VITE_SUPABASE_PUBLISHABLE_KEY, Authorization: `Bearer ${env.VITE_SUPABASE_PUBLISHABLE_KEY}` } });
@@ -153,8 +157,7 @@ async function empreintesEnLigne(env, entity, id) {
   const urls = (rows[0].images || []).map((i) => (typeof i === 'string' ? i : i?.url)).filter(Boolean);
   const out = [];
   for (const u of urls) {
-    const small = u.includes('/storage/v1/object/public/') ? u.replace('/storage/v1/object/public/', '/storage/v1/render/image/public/') + '?width=320&resize=contain&quality=80' : u;
-    try { out.push({ url: u, fp: await empreinte(download(small)) }); } catch (e) { console.log(`::warning title=garde-fou::photo en ligne illisible ${u.slice(-40)} (${e.message})`); }
+    try { out.push({ url: u, fp: await empreinte(await vignette(download(u))) }); } catch (e) { console.log(`::warning title=garde-fou::photo en ligne illisible ${u.slice(-40)} (${e.message})`); }
   }
   return out;
 }
@@ -183,7 +186,10 @@ async function write() {
         if (!j.ok) { console.log(`::warning title=REFUSÉ ${m.slug} #${idx}::${j.why.join(' · ')}`); continue; }
         if (!lot.genere) {
           const fp = await empreinte(await vignette(png));
-          const hit = deja.map((x) => ({ x, r: memePhoto(fp, x.fp) })).find((h) => h.r.doublon);
+          const res = deja.map((x) => ({ x, r: memePhoto(fp, x.fp) }));
+          const proche = [...res].sort((a, b) => a.r.d - b.r.d)[0];
+          if (proche) console.log(`garde-fou ${m.slug} #${idx} : plus proche ${String(proche.x.url).slice(-24)} dHash ${proche.r.d} silhouette ${proche.r.io?.toFixed(3)} couleur ${proche.r.c?.toFixed(1)}`);
+          const hit = res.find((h) => h.r.doublon);
           if (hit) { console.log(`::warning title=DOUBLON ${m.slug} #${idx}::${hit.r.raison} — déjà sur la fiche (${String(hit.x.url).slice(-36)})`); continue; }
           deja.push({ url: `lot#${idx}`, fp });
         }
