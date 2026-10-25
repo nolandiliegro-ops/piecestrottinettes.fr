@@ -17,6 +17,7 @@ import { toast } from "sonner";
 import { ArrowRight, Bike, ChevronLeft, ChevronRight, CreditCard, History, Loader2, Plus, Wallpaper, Wrench } from "lucide-react";
 import RiderAvatar from "@/components/garage/RiderAvatar";
 import ScooterPhotoCard from "@/components/garage/ScooterPhotoCard";
+import CustomPhotoButton from "@/components/garage/CustomPhotoButton";
 import DescriptionCard from "@/components/garage/DescriptionCard";
 import RiderLaunchCode from "@/components/launch/RiderLaunchCode";
 import PartCardSlim from "@/components/home/ShopByCompatibility/PartCardSlim";
@@ -352,7 +353,21 @@ const GarageAtelierView = (p: Props) => {
           {!p.hideRider && <div className="hidden lg:block"><RiderStrip profile={p.profile} onEditProfile={p.onEditProfile} onTheme={p.onTheme} /></div>}
           <Upkeep scooter={s} points={points} onOpenHistory={p.onOpenHistory} onAddModification={p.onAddModification} />
           {!p.hideLaunch && <div data-reuse><RiderLaunchCode /></div>}
-          <div data-reuse><ScooterPhotoCard garageItem={s as any} /></div>
+          {/* Ordinateur + estrade : la photo officielle est déjà sur l'estrade → ce bloc ne montre que la VRAIE photo (25/10). */}
+          {p.standOnDesktop && !s.custom_photo_url ? (
+            <>
+              <div data-reuse className="lg:hidden"><ScooterPhotoCard garageItem={s as any} /></div>
+              <div className="hidden lg:flex items-center gap-3 p-4" style={{ background: PAPER, clipPath: cut(14) }}>
+                <div className="min-w-0 flex-1">
+                  <p className="text-[15px] uppercase leading-tight" style={{ fontFamily: UNB, fontWeight: 900, fontStyle: "italic", color: CARBON }}>Ta trott en vrai</p>
+                  <p className="mt-1 text-sm" style={{ fontFamily: FONT, color: "#4B5563" }}>Ajoute ta photo : elle passe sur ta carte Rider. +50 XP.</p>
+                </div>
+                <div data-reuse className="shrink-0"><CustomPhotoButton garageItemId={s.id} currentPhotoUrl={null} /></div>
+              </div>
+            </>
+          ) : (
+            <div data-reuse><ScooterPhotoCard garageItem={s as any} mode={p.standOnDesktop ? "custom" : undefined} /></div>
+          )}
           <div data-reuse><DescriptionCard garageId={s.id} initialDescription={s.personal_description} /></div>
           <div data-reuse>
             <Suspense fallback={<div className="h-[220px] animate-pulse" style={{ background: PAPER, clipPath: cut(14) }} />}>

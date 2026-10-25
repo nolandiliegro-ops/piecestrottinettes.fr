@@ -57,6 +57,10 @@ const RiderCardStory = ({ data, commentCount = 0, onOpenComments, className = ""
   const [real, setReal] = useState(false);
   const [sharing, setSharing] = useState(false);
   const ref = useRef<HTMLDivElement>(null);
+  // Ordinateur (bare) : la trott est sur l'estrade du wallpaper → la carte à l'écran est compacte, sans grande image.
+  // L'image partagée, elle, est la carte complète (wallpaper + trott), rendue hors écran le temps de l'export.
+  const compact = bare && !exporting;
+  const [holdH, setHoldH] = useState<number | null>(null);
 
   const level = getXPLevel(profile.performance_points ?? 0);
   const name = profile.display_name || "Rider";
@@ -70,7 +74,7 @@ const RiderCardStory = ({ data, commentCount = 0, onOpenComments, className = ""
     if (!ref.current) return;
     setSharing(true);
     // Carte « nue » à l'écran : le wallpaper est remis le temps de l'image partagée.
-    if (bare) { setExporting(true); await new Promise((r) => setTimeout(r, 350)); }
+    if (bare) { setHoldH(ref.current.offsetHeight); setExporting(true); await new Promise((r) => setTimeout(r, 450)); }
     try {
       const node = ref.current;
       // Format story : 1080 px de large (la hauteur suit la carte, ~1920 px).
@@ -96,6 +100,7 @@ const RiderCardStory = ({ data, commentCount = 0, onOpenComments, className = ""
       if ((e as Error)?.name !== "AbortError") toast.error("Impossible de créer l'image de la carte");
     } finally {
       setExporting(false);
+      setHoldH(null);
       setSharing(false);
     }
   };
@@ -120,16 +125,18 @@ const RiderCardStory = ({ data, commentCount = 0, onOpenComments, className = ""
   const btn = "min-h-[44px] px-3.5 inline-flex items-center gap-2 text-sm font-extrabold";
 
   return (
+    <>
+    {bare && exporting && holdH != null && <div aria-hidden className="w-full max-w-[360px]" style={{ height: holdH }} />}
     <div
       ref={ref}
-      className={`relative w-full max-w-[360px] min-h-[640px] overflow-hidden flex flex-col text-white ${className}`}
-      style={{ background: CARBON, clipPath: ch(22), fontFamily: FONT }}
+      className={`relative w-full max-w-[360px] ${compact ? "" : "min-h-[640px]"} overflow-hidden flex flex-col text-white ${className}`}
+      style={{ background: CARBON, clipPath: ch(22), fontFamily: FONT, ...(bare && exporting ? { position: "fixed", left: -10000, top: 0, width: 360 } : {}) }}
     >
       {/* Le wallpaper du rider, plein cadre */}
       {data.wallpaper_url && (!bare || exporting) && (
         <img src={data.wallpaper_url} alt="" crossOrigin="anonymous" className="absolute inset-0 w-full h-full object-cover" />
       )}
-      <div aria-hidden className="absolute inset-0" style={{ background: "linear-gradient(180deg, rgba(0,0,0,0.55) 0%, rgba(0,0,0,0) 26%, rgba(0,0,0,0) 46%, rgba(0,0,0,0.88) 74%)" }} />
+      {!compact && <div aria-hidden className="absolute inset-0" style={{ background: "linear-gradient(180deg, rgba(0,0,0,0.55) 0%, rgba(0,0,0,0) 26%, rgba(0,0,0,0) 46%, rgba(0,0,0,0.88) 74%)" }} />}
 
       {/* Qui */}
       <div className="relative flex items-center gap-3 p-4">
@@ -144,8 +151,9 @@ const RiderCardStory = ({ data, commentCount = 0, onOpenComments, className = ""
         </div>
       </div>
 
-      {/* La trott */}
-      <div className="relative flex-1 min-h-[250px] flex items-center justify-center">
+      {/* La trott (en compact sur ordinateur, elle est sur l'estrade : la carte ne la répète pas) */}
+      {(!compact || !current) && (
+      <div className={`relative flex-1 ${compact ? "py-6" : "min-h-[250px]"} flex items-center justify-center`}>
         {/* Carte vide (nouveau rider) : une invitation, pas un trou */}
         {!current && (
           isMe ? (
@@ -170,6 +178,7 @@ const RiderCardStory = ({ data, commentCount = 0, onOpenComments, className = ""
           </button>
         )}
       </div>
+      )}
 
       {/* Nom, rangées, actions */}
       <div className="relative px-4 pb-3 grid gap-2.5">
@@ -179,6 +188,11 @@ const RiderCardStory = ({ data, commentCount = 0, onOpenComments, className = ""
             <p className="mt-1 text-sm font-bold" style={{ color: current.is_owned ? SOFT : "#FFB4A0" }}>
               {current.is_owned ? (current.nickname ? `« ${current.nickname} »` : "À moi") : "Je kiffe"}
             </p>
+            {compact && current.custom_photo_url && (
+              <button type="button" onClick={() => setReal(true)} className="mt-2 min-h-[44px] px-3 inline-flex items-center gap-2 bg-white text-sm font-extrabold" style={{ color: CARBON, clipPath: ch(6) }}>
+                <Camera className="w-4 h-4" /> Voir la vraie photo
+              </button>
+            )}
           </div>
         )}
         {mine.length > 0 && (
@@ -233,6 +247,7 @@ const RiderCardStory = ({ data, commentCount = 0, onOpenComments, className = ""
         </div>
       )}
     </div>
+    </>
   );
 };
 
