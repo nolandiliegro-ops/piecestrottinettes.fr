@@ -12,6 +12,7 @@ import { AnimatePresence, motion, useReducedMotion } from "framer-motion";
 import { ArrowRight, Bike, ChevronLeft, ChevronRight, Search as SearchIcon } from "lucide-react";
 import { getBrandColors } from "@/contexts/ScooterContext";
 import type { ScooterHero } from "@/hooks/useHeroScooters";
+import PlaqueTile from "@/components/scooter/PlaqueTile";
 
 export type HeroVariant = 1 | 2 | 3 | 4 | 5;
 
@@ -76,7 +77,7 @@ interface Props {
 const parts = (n: number | null) => `${n ?? 0} pièce${(n ?? 0) > 1 ? "s" : ""} compatible${(n ?? 0) > 1 ? "s" : ""}`;
 
 /* ---------- Titre + recherche ---------- */
-const Head = ({ s, big, query, onQuery, inputRef, onSubmit, onCatalogue, center }: { s: Skin; big?: boolean; center?: boolean } & Pick<Props, "query" | "onQuery" | "inputRef" | "onSubmit" | "onCatalogue">) => (
+const Head = ({ s, big, query, onQuery, inputRef, onSubmit, onCatalogue, center, searching }: { s: Skin; big?: boolean; center?: boolean; searching?: boolean } & Pick<Props, "query" | "onQuery" | "inputRef" | "onSubmit" | "onCatalogue">) => (
   <div className={center ? "text-center" : "text-left"}>
     <div className={`inline-flex items-center gap-2 mb-4 lg:mb-6`}>
       <span className="h-2.5 w-2.5" style={{ background: s.tone === "green" ? "#FFFFFF" : GREEN, clipPath: cut(3) }} />
@@ -124,7 +125,7 @@ const Head = ({ s, big, query, onQuery, inputRef, onSubmit, onCatalogue, center 
         <ArrowRight className="w-5 h-5" strokeWidth={2.6} />
       </button>
     </form>
-    <button type="button" onClick={onCatalogue} className="mt-2 min-h-[44px] text-sm font-bold underline underline-offset-4" style={{ fontFamily: FONT, color: s.sub }}>
+    <button type="button" onClick={onCatalogue} className={`mt-2 min-h-[44px] text-sm font-bold underline underline-offset-4 ${searching ? "hidden lg:inline" : ""}`} style={{ fontFamily: FONT, color: s.sub }}>
       Pas ton modèle ? Cherche la pièce ↓
     </button>
   </div>
@@ -282,7 +283,9 @@ const Stage = ({ s, scooters, onSelect }: { s: Skin; scooters: ScooterHero[]; on
 
 const HeroAtelier = (p: Props) => {
   const s = SKINS[p.variant];
-  const head = { query: p.query, onQuery: p.onQuery, inputRef: p.inputRef, onSubmit: p.onSubmit, onCatalogue: p.onCatalogue };
+  // 25/10 soir (capture iPhone de Nolan) : en recherche sur téléphone, la frise de grandes cartes sortait coupée sous le
+  // clavier. Résultats en grille « Plaque » 2 colonnes (même tuile que le sélecteur), lien « Pas ton modèle ? » rangé.
+  const head = { query: p.query, onQuery: p.onQuery, inputRef: p.inputRef, onSubmit: p.onSubmit, onCatalogue: p.onCatalogue, searching: p.isSearching };
   const shelfHeading = p.variant === 4 ? CARBON : s.ink;
   const title = p.isSearching ? p.miniTitle : "Top du moment";
 
@@ -317,7 +320,32 @@ const HeroAtelier = (p: Props) => {
           </div>
         </div>
         <div className={p.isSearching ? "mt-3 lg:mt-12" : "mt-8 lg:mt-12"}>
-          <Shelf s={s} size="sm" scooters={p.scooters} isLoading={p.isLoading} title={title} onSelect={p.onSelect} heading={shelfHeading} />
+          {p.isSearching ? (
+            <>
+              <div className="lg:hidden">
+                <h2 className="text-base uppercase mb-2" style={{ fontFamily: UNB, fontWeight: 900, fontStyle: "italic", letterSpacing: "-0.02em", color: shelfHeading }}>{title}</h2>
+                {p.isLoading ? (
+                  <div className="grid grid-cols-2 gap-3">{Array.from({ length: 4 }).map((_, i) => <div key={i} className="h-[170px] animate-pulse" style={{ background: "#F2EFE8" }} />)}</div>
+                ) : p.scooters.length ? (
+                  <div className="grid grid-cols-2 gap-3">
+                    {p.scooters.map((sc) => (
+                      <PlaqueTile key={sc.id} brand={sc.brand_name} name={sc.name} imageUrl={sc.image_url ? optimizedImage(sc.image_url, 200) : null} note={parts(sc.compatible_parts_count)} label={`Voir ${sc.name}`} onClick={() => p.onSelect(sc.slug)} />
+                    ))}
+                  </div>
+                ) : (
+                  <p className="py-4 text-base" style={{ fontFamily: FONT, color: shelfHeading }}>
+                    Pas de trott à ce nom. Essaie juste la marque (Xiaomi, Dualtron…) ou{" "}
+                    <a href="/trottinettes" className="font-bold underline underline-offset-4">parcours tous les modèles</a>.
+                  </p>
+                )}
+              </div>
+              <div className="hidden lg:block">
+                <Shelf s={s} size="sm" scooters={p.scooters} isLoading={p.isLoading} title={title} onSelect={p.onSelect} heading={shelfHeading} />
+              </div>
+            </>
+          ) : (
+            <Shelf s={s} size="sm" scooters={p.scooters} isLoading={p.isLoading} title={title} onSelect={p.onSelect} heading={shelfHeading} />
+          )}
         </div>
       </div>
     </section>

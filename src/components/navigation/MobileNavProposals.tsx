@@ -11,6 +11,7 @@ import { useCart } from "@/hooks/useCart";
 import { useSpotlight } from "@/contexts/SpotlightContext";
 import { skotEnabled, skotHiddenOn } from "@/lib/skot";
 import { skotSaison } from "@/lib/skotSaison";
+import { useKeyboardOpen } from "@/hooks/useKeyboardOpen";
 
 export type BarreBasVariant = 1 | 5;
 export const readBarreBasVariant = (): BarreBasVariant | null => {
@@ -67,7 +68,11 @@ const CartCount = ({ n, dark = false }: { n: number; dark?: boolean }) =>
     </span>
   ) : null;
 
-const Shell = ({ children, floating = false, dark = false }: { children: React.ReactNode; floating?: boolean; dark?: boolean }) => (
+// 25/10 soir : clavier ouvert, la barre restait collée au-dessus du clavier et mangeait la place des résultats → rangée.
+const Shell = ({ children, floating = false, dark = false }: { children: React.ReactNode; floating?: boolean; dark?: boolean }) => {
+  const kb = useKeyboardOpen();
+  if (kb) return null;
+  return (
   <nav
     aria-label="Navigation principale"
     className={floating ? "fixed z-50 left-3 right-3 md:hidden" : "fixed z-50 bottom-0 left-0 right-0 md:hidden"}
@@ -88,7 +93,8 @@ const Shell = ({ children, floating = false, dark = false }: { children: React.R
   >
     {children}
   </nav>
-);
+  );
+};
 
 /* Onglet partagé, défini hors des barres : un composant recréé à chaque rendu se remonte à chaque changement de page (clignement). */
 const TabBtn = ({ it, on, onGo, count, bar = false }: { it: Item; on: boolean; onGo: (it: Item) => void; count: number; bar?: boolean }) => {
