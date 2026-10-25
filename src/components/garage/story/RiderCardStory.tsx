@@ -137,6 +137,17 @@ const RiderCardStory = ({ data, commentCount = 0, onOpenComments, className = ""
 
       {/* La trott */}
       <div className="relative flex-1 min-h-[250px] flex items-center justify-center">
+        {/* Carte vide (nouveau rider) : une invitation, pas un trou */}
+        {!current && (
+          isMe ? (
+            <Link to="/trottinettes" data-story-hide="true" className="mx-6 px-5 py-4 grid gap-1 text-center bg-white" style={{ clipPath: ch(10), color: CARBON }}>
+              <span className="text-[17px] uppercase leading-tight" style={{ fontFamily: UNB, fontWeight: 900, fontStyle: "italic" }}>Ajoute ta trott</span>
+              <span className="text-sm font-semibold" style={{ color: "#4B5563" }}>Elle s'affichera ici, sur ton wallpaper.</span>
+            </Link>
+          ) : (
+            <p className="text-sm font-semibold" style={{ color: "rgba(255,255,255,0.8)" }}>Pas encore de trott dans ce garage.</p>
+          )
+        )}
         {imgOf(current) && (current?.custom_photo_url && current.model?.image_url ? (
           <button type="button" onClick={() => setReal(true)} aria-label="Voir la vraie photo" className="w-[76%] flex justify-center">
             <img src={imgOf(current)!} alt={current?.model?.name ?? ""} crossOrigin="anonymous" className="w-full max-h-[300px] object-contain" style={{ filter: "drop-shadow(0 18px 22px rgba(0,0,0,0.55))" }} />

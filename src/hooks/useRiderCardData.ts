@@ -85,6 +85,20 @@ export const useRiderCardData = (opts: { username?: string } = {}) => {
       // Carte publique : réservée aux profils publics
       if (username && !profile.is_public && profile.id !== user?.id) return null;
 
+      // 25/10 : likes et wallpaper partent en parallèle du garage (la carte se chargeait requête après requête).
+      const likesP = supabase.from("user_card_likes").select("id", { count: "exact", head: true }).eq("card_owner_id", profile.id);
+      const mineP = user
+        ? supabase.from("user_card_likes").select("id").eq("card_owner_id", profile.id).eq("liker_user_id", user.id).maybeSingle()
+        : Promise.resolve({ data: null });
+      const wallP = (async () => {
+        if (profile.active_theme_key) {
+          const { data: th } = await supabase.from("garage_themes").select("image_url").eq("key", profile.active_theme_key).eq("is_active", true).maybeSingle();
+          if (th?.image_url) return th.image_url as string;
+        }
+        const { data: first } = await supabase.from("garage_themes").select("image_url").eq("is_active", true).order("display_order", { ascending: true }).limit(1).maybeSingle();
+        return (first?.image_url as string | undefined) ?? null;
+      })();
+
       // 2. Garage + modèles
       const { data: garage, error: garageError } = await supabase
         .from("user_garage")
@@ -143,33 +157,9 @@ export const useRiderCardData = (opts: { username?: string } = {}) => {
         });
       }
 
-      // 4. Likes
-      const { count: likes } = await supabase
-        .from("user_card_likes")
-        .select("id", { count: "exact", head: true })
-        .eq("card_owner_id", profile.id);
-
-      let likedByMe = false;
-      if (user) {
-        const { data: mine } = await supabase
-          .from("user_card_likes")
-          .select("id")
-          .eq("card_owner_id", profile.id)
-          .eq("liker_user_id", user.id)
-          .maybeSingle();
-        likedByMe = !!mine;
-      }
-
-      // 5. Wallpaper (carte Story)
-      let wallpaper_url: string | null = null;
-      if (profile.active_theme_key) {
-        const { data: th } = await supabase.from("garage_themes").select("image_url").eq("key", profile.active_theme_key).eq("is_active", true).maybeSingle();
-        wallpaper_url = th?.image_url ?? null;
-      }
-      if (!wallpaper_url) {
-        const { data: first } = await supabase.from("garage_themes").select("image_url").eq("is_active", true).order("display_order", { ascending: true }).limit(1).maybeSingle();
-        wallpaper_url = first?.image_url ?? null;
-      }
+      // 4. Likes + 5. Wallpaper (lancés plus haut)
+      const [{ count: likes }, { data: mine }, wallpaper_url] = await Promise.all([likesP, mineP, wallP]);
+      const likedByMe = !!mine;
 
       return { profile, machines, modsByMachine, likes: likes ?? 0, likedByMe, wallpaper_url };
     },
