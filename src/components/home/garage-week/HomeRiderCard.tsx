@@ -33,16 +33,23 @@ const HomeRiderCard = ({ riders, isAuthenticated }: { riders: RiderBundle[]; isA
       </div>
       <div className="relative max-w-7xl mx-auto px-4 lg:px-8 py-12 lg:py-16 grid gap-8 lg:grid-cols-[minmax(0,1fr)_auto] lg:gap-14 items-center">
         <div className="min-w-0 text-white">
-          <p className="text-sm font-bold uppercase tracking-[0.16em]" style={{ fontFamily: FONT, color: SOFT }}>La carte de la semaine</p>
+          {/* 25/10 (Nolan : « il n'y a pas que la carte : il y a les commandes, plein de choses ») : le bloc vend le garage entier ;
+              la carte Rider reste l'image, présentée comme « la carte de la semaine ». */}
+          <p className="text-sm font-bold uppercase tracking-[0.16em]" style={{ fontFamily: FONT, color: SOFT }}>Ton garage · gratuit</p>
           <h2 id="garage-of-the-week-title" className="mt-2 text-[34px] sm:text-6xl uppercase leading-[0.95]" style={{ fontFamily: UNB, fontWeight: 900, fontStyle: "italic", letterSpacing: "-0.03em" }}>
-            Ton garage<br />en une carte.
+            Ton garage,<br />ton QG.
           </h2>
           <p className="mt-4 text-base sm:text-lg max-w-lg" style={{ fontFamily: FONT, color: "rgba(255,255,255,0.88)" }}>
-            Tes trotts, tes coups de cœur, ton décor. Partage-la en story, les riders la commentent.
+            Ta trott et les pièces qui vont dessus, tes commandes suivies, SKOT qui répond à tes questions. Et ta carte Rider à partager en story.
           </p>
+          <ul className="mt-4 flex flex-wrap gap-2" style={{ fontFamily: FONT }}>
+            {["Pièces compatibles", "Suivi de commandes", "SKOT répond", "Carte Rider"].map((t) => (
+              <li key={t} className="px-3 py-1.5 text-sm font-bold text-white" style={{ background: "rgba(26,26,26,0.72)", boxShadow: "inset 0 0 0 1px rgba(255,255,255,0.25)" }}>{t}</li>
+            ))}
+          </ul>
           <div className="mt-6 flex flex-wrap items-center gap-3">
             <Link to={isAuthenticated ? "/garage" : "/register"} className="inline-flex items-center gap-3 min-h-[56px] px-5 text-[15px] font-extrabold uppercase" style={{ fontFamily: FONT, background: "#FFFFFF", color: CARBON, clipPath: cut(10) }}>
-              {isAuthenticated ? "Voir ma carte" : "Créer ma carte · gratuit"} <ArrowRight className="w-5 h-5" />
+              {isAuthenticated ? "Ouvrir mon garage" : "Créer mon garage"} <ArrowRight className="w-5 h-5" />
             </Link>
             {rider?.username && (
               <Link to={`/rider/${rider.username}`} className="inline-flex items-center min-h-[56px] px-2 text-[15px] font-bold underline underline-offset-4" style={{ fontFamily: FONT, color: "#FFFFFF" }}>
@@ -50,8 +57,14 @@ const HomeRiderCard = ({ riders, isAuthenticated }: { riders: RiderBundle[]; isA
               </Link>
             )}
           </div>
+          {!isAuthenticated && (
+            <p className="mt-3 text-sm font-semibold" style={{ fontFamily: FONT, color: "rgba(255,255,255,0.85)" }}>
+              Inscription = ton code RIDER : -20 % sur ta première commande, jusqu'à 30 € (hors trottinettes et batteries).
+            </p>
+          )}
         </div>
         <div className="flex flex-col items-center gap-3 min-w-0">
+          <p className="w-full max-w-[360px] text-sm font-bold uppercase tracking-[0.16em]" style={{ fontFamily: FONT, color: SOFT }}>La carte de la semaine</p>
           {data ? <RiderCardStory data={data} commentCount={comments.length} /> : <div className="w-full max-w-[360px] h-[640px] animate-pulse" style={{ background: "rgba(250,250,248,0.12)" }} />}
           {many && (
             <div className="flex items-center gap-3">
