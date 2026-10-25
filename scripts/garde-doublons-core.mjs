@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 // scripts/garde-doublons-core.mjs — calibration du CŒUR utilisé par process-images (supabase/functions/_shared/empreinte-core.ts).
-// Reproduit la situation de production : photo candidate = ORIGINAL pleine taille ; photos déjà sur la fiche = miniatures
+// Reproduit la situation de production : ORIGINAL contre ORIGINAL (empreintes stockées) ; ancienne version : miniatures
 // render (?width=400&resize=contain&format=origin). Négatifs = paires des fiches publiées ; positifs = 130 copies retirées le 24/10.
 // LECTURE SEULE. Sortie : out/doublons-core/calib.json. Node ≥ 22 (import .ts).
 import { readFileSync, writeFileSync, mkdirSync } from 'fs';
@@ -16,7 +16,9 @@ const OUT = resolve(ROOT, 'out', 'doublons-core'); mkdirSync(OUT, { recursive: t
 const client = readFileSync(resolve(ROOT, 'src/integrations/supabase/client.ts'), 'utf-8');
 const SB_URL = (client.match(/VITE_SUPABASE_URL\s*\|\|\s*"([^"]+)"/) || [])[1];
 const ANON = (client.match(/VITE_SUPABASE_PUBLISHABLE_KEY\s*\|\|\s*"([^"]+)"/) || [])[1];
-const mini = (u) => u.includes('/storage/v1/object/public/') ? u.replace('/storage/v1/object/public/', '/storage/v1/render/image/public/') + '?width=400&resize=contain&format=origin' : u;
+// 25/10 (2e passe) : les miniatures render déforment les couleurs (579/3 351 photos non reconnues face à leur propre
+// miniature) → la production compare ORIGINAL contre ORIGINAL (empreintes stockées dans photo_empreintes).
+const mini = (u) => u;
 async function get(u) {
   for (let t = 0; t < 3; t++) {
     try { const { stdout } = await pexec('curl', ['-s', '-f', '-L', '--max-time', '40', u], { encoding: 'buffer', maxBuffer: 64 * 1024 * 1024 }); if (stdout.length > 100) return stdout; } catch {}
