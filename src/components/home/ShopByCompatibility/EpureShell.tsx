@@ -15,14 +15,14 @@ import { scooterFullName } from "@/lib/scooterName";
 import { optimizedImage } from "@/lib/imageTransform";
 
 /* 25/10 soir (capture de Nolan, Dualtron Alien) : « Pour ta Dualtron Alien ✕ » passe inaperçu — on ne comprend pas
-   que la liste est filtrée ni comment l'enlever. ?trottfiltre=1..5 = propositions, 0 = ligne actuelle. */
-export const DEFAULT_TROTT_FILTRE = 0;
+   que la liste est filtrée ni comment l'enlever. ?trottfiltre=1..5 = propositions, 6 = Plaque + Fantôme (défaut), 0 = ligne actuelle. */
+export const DEFAULT_TROTT_FILTRE = 6; // choix de Nolan (25/10) : 2 Plaque + 1 Fantôme couplés
 const readTrottFiltre = (): number => {
   try {
     const v = new URLSearchParams(window.location.search).get("trottfiltre");
-    if (v !== null && /^[0-5]$/.test(v)) { sessionStorage.setItem("pt-trottfiltre", v); return Number(v); }
+    if (v !== null && /^[0-6]$/.test(v)) { sessionStorage.setItem("pt-trottfiltre", v); return Number(v); }
     const s = sessionStorage.getItem("pt-trottfiltre");
-    if (s !== null && /^[0-5]$/.test(s)) return Number(s);
+    if (s !== null && /^[0-6]$/.test(s)) return Number(s);
   } catch { /* stockage indisponible */ }
   return DEFAULT_TROTT_FILTRE;
 };
@@ -349,8 +349,8 @@ const EpureShell = (p: EpureProps) => {
       <div style={plateau ? { background: "#FFFFFF", clipPath: "polygon(0 0, calc(100% - 40px) 0, 100% 40px, 100% 100%, 0 100%)", boxShadow: "inset 0 1px 0 #E2DCD0" } : undefined}>
       <div className={`relative max-w-7xl mx-auto px-4 lg:px-8 ${plateau ? "pt-10 pb-12 lg:pt-14 lg:pb-16" : "py-12 lg:py-16"}`}>
         {chosen && <style>{TF_CSS}</style>}
-        {chosen && tf === 1 && p.scooterImage && (
-          <img key={p.scooterName} src={optimizedImage(p.scooterImage, 600)} alt="" aria-hidden className="pt-tf-ghost pointer-events-none absolute right-0 top-2 h-[230px] lg:h-[300px] w-auto max-w-[70%] object-contain" style={{ filter: "blur(1px)" }} />
+        {chosen && (tf === 1 || tf === 6) && p.scooterImage && (
+          <img key={p.scooterName} src={optimizedImage(p.scooterImage, 600)} alt="" aria-hidden className="pt-tf-ghost pointer-events-none absolute right-0 top-2 h-[230px] lg:h-[150px] lg:right-[22%] w-auto max-w-[70%] object-contain" style={{ filter: "blur(1px)" }} />
         )}
         {chosen && tf === 4 ? (
           <div key={p.scooterName} className="pt-tf-in relative flex items-center gap-4">
@@ -375,7 +375,7 @@ const EpureShell = (p: EpureProps) => {
         )}
         <div className="relative mt-4 grid grid-cols-1 gap-1 lg:grid-cols-[minmax(0,1fr)_auto] lg:items-end lg:gap-6">
           <div className="min-w-0"><Field p={p} /></div>
-          {!(chosen && tf === 4) && <div key={chosen ? p.scooterName ?? "" : "x"}>{chosen ? <TrottChosen p={p} v={tf} /> : <TrottLink {...p} />}</div>}
+          {!(chosen && tf === 4) && <div key={chosen ? p.scooterName ?? "" : "x"}>{chosen ? <TrottChosen p={p} v={tf === 6 ? 2 : tf} /> : <TrottLink {...p} />}</div>}
         </div>
         <div className="mt-4"><CleanTabs p={p} fade={plateau ? "#FFFFFF" : PAPER} /></div>
         <div ref={p.productsRef} className="min-w-0 scroll-mt-4 mt-5"><Cards>{p.grid}</Cards></div>
