@@ -1,0 +1,920 @@
+{
+ "fiches": 1063,
+ "paires": 8094,
+ "soi": 3351,
+ "copies": 130,
+ "erreurs": 48,
+ "seuils": {
+  "dhash": 6,
+  "iou": 0.95,
+  "dhashAvecIou": 10,
+  "couleur": 8
+ },
+ "actuels": {
+  "faux_positifs": [
+   {
+    "slug": "hitway-h6",
+    "ia": 1,
+    "ib": 2,
+    "d": 6,
+    "io": 0.350561797752809,
+    "c": 5.847176292958914
+   },
+   {
+    "slug": "hitway-h6",
+    "ia": 2,
+    "ib": 1,
+    "d": 6,
+    "io": 0.35147392290249435,
+    "c": 5.511999186495833
+   },
+   {
+    "slug": "kingsong-n15",
+    "ia": 1,
+    "ib": 0,
+    "d": 5,
+    "io": 0.2231404958677686,
+    "c": 7.680669342570699
+   },
+   {
+    "slug": "niu-kqi1-sport",
+    "ia": 1,
+    "ib": 2,
+    "d": 4,
+    "io": 0.27850467289719627,
+    "c": 7.773115737888027
+   },
+   {
+    "slug": "xiaomi-electric-scooter-6-max",
+    "ia": 1,
+    "ib": 2,
+    "d": 0,
+    "io": 0.9685230024213075,
+    "c": 4.75991080513756
+   },
+   {
+    "slug": "xiaomi-electric-scooter-6-max",
+    "ia": 2,
+    "ib": 1,
+    "d": 1,
+    "io": 0.9661016949152542,
+    "c": 6.4809801427905915
+   },
+   {
+    "slug": "yeep-me-80n-evo-plus",
+    "ia": 3,
+    "ib": 0,
+    "d": 0,
+    "io": 0.9911504424778761,
+    "c": 6.903496735609567
+   },
+   {
+    "slug": "chambre-a-air-10x2125-renforcee-90x90",
+    "ia": 0,
+    "ib": 1,
+    "d": 6,
+    "io": 0.3629316420014094,
+    "c": 6.073670159893217
+   },
+   {
+    "slug": "chambre-a-air-10x2125-renforcee-90x90",
+    "ia": 1,
+    "ib": 0,
+    "d": 6,
+    "io": 0.3629316420014094,
+    "c": 6.073670159893217
+   },
+   {
+    "slug": "disque-de-frein-130mm-xiaomi-mi4-pro-5-trous-1st-generation",
+    "ia": 0,
+    "ib": 2,
+    "d": 3,
+    "io": 0.7904191616766467,
+    "c": 6.827746209575264
+   },
+   {
+    "slug": "disque-de-frein-130mm-xiaomi-mi4-pro-5-trous-1st-generation",
+    "ia": 2,
+    "ib": 0,
+    "d": 3,
+    "io": 0.7904191616766467,
+    "c": 6.827746209575264
+   },
+   {
+    "slug": "pneu-90-55-7-cst-ninebot-segway-gt1-gt2",
+    "ia": 0,
+    "ib": 1,
+    "d": 6,
+    "io": 0.5197934595524957,
+    "c": 4.9433625616562065
+   },
+   {
+    "slug": "pneu-90-55-7-cst-ninebot-segway-gt1-gt2",
+    "ia": 1,
+    "ib": 0,
+    "d": 5,
+    "io": 0.527073732718894,
+    "c": 3.727554544744892
+   },
+   {
+    "slug": "pneu-plein-draisienne-14-pouces-14x2125",
+    "ia": 0,
+    "ib": 1,
+    "d": 6,
+    "io": 0.2567287784679089,
+    "c": 7.546824545506614
+   },
+   {
+    "slug": "pneu-plein-draisienne-14-pouces-14x2125",
+    "ia": 1,
+    "ib": 0,
+    "d": 6,
+    "io": 0.2567287784679089,
+    "c": 7.546824545506614
+   }
+  ],
+  "soi_rates": [
+   {
+    "slug": "apollo-explore",
+    "d": 1,
+    "io": 0.9790209790209791,
+    "c": 8.019538614883933
+   },
+   {
+    "slug": "apollo-explore-2-0",
+    "d": 5,
+    "io": 0.9271356783919598,
+    "c": 16.299137797706255
+   },
+   {
+    "slug": "aprilia-esr1",
+    "d": 0,
+    "io": 0.9726027397260274,
+    "c": 9.073590035961761
+   },
+   {
+    "slug": "aprilia-esr2",
+    "d": 0,
+    "io": 0.96996996996997,
+    "c": 9.409591029252999
+   },
+   {
+    "slug": "aprilia-esr2-evo",
+    "d": 0,
+    "io": 0.9774436090225563,
+    "c": 8.243898702650242
+   },
+   {
+    "slug": "beaster-bs08",
+    "d": 1,
+    "io": 0.9527777777777777,
+    "c": 11.275993714604633
+   },
+   {
+    "slug": "beaster-diablo",
+    "d": 1,
+    "io": 0.9785932721712538,
+    "c": 8.097312125514344
+   },
+   {
+    "slug": "beaster-diablo",
+    "d": 2,
+    "io": 0.9803921568627451,
+    "c": 8.697176242340877
+   },
+   {
+    "slug": "bogist-c1-pro",
+    "d": 2,
+    "io": 0.989041095890411,
+    "c": 17.048810474416015
+   },
+   {
+    "slug": "bogist-m1-elite",
+    "d": 0,
+    "io": 0.976897689768977,
+    "c": 8.861056653606125
+   },
+   {
+    "slug": "bogist-m5-pro",
+    "d": 6,
+    "io": 0.9791332263242376,
+    "c": 13.860384448619744
+   },
+   {
+    "slug": "cecotec-bongo-d20e-connected",
+    "d": 1,
+    "io": 0.9785522788203753,
+    "c": 14.944064375525459
+   },
+   {
+    "slug": "cecotec-bongo-d30",
+    "d": 2,
+    "io": 0.9664268585131894,
+    "c": 10.274888573672438
+   },
+   {
+    "slug": "cecotec-bongo-d30-xl-connected",
+    "d": 0,
+    "io": 0.988031914893617,
+    "c": 8.80545576556087
+   },
+   {
+    "slug": "cecotec-bongo-doble-y85-2x2-xxl-connected",
+    "d": 2,
+    "io": 0.9695290858725761,
+    "c": 9.848016217150537
+   },
+   {
+    "slug": "cecotec-bongo-doble-y85-2x2-xxl-connected",
+    "d": 4,
+    "io": 0.9433497536945813,
+    "c": 20.781174525820887
+   },
+   {
+    "slug": "cecotec-bongo-v55-2x2-connected",
+    "d": 0,
+    "io": 0.9679012345679012,
+    "c": 9.073268428616021
+   },
+   {
+    "slug": "circooter-landturbo-dual",
+    "d": 1,
+    "io": 0.977961432506887,
+    "c": 15.086758068958254
+   },
+   {
+    "slug": "circooter-landturbo-dual",
+    "d": 2,
+    "io": 0.9715909090909091,
+    "c": 13.168569280667363
+   },
+   {
+    "slug": "circooter-landturbo-pro",
+    "d": 6,
+    "io": 0.9650238473767886,
+    "c": 13.259210307731342
+   },
+   {
+    "slug": "circooter-landturbo-pro",
+    "d": 9,
+    "io": 0.8016085790884718,
+    "c": 4.14976700428766
+   },
+   {
+    "slug": "dualtron-achilleus-2025",
+    "d": 0,
+    "io": 0.9662337662337662,
+    "c": 14.845344234904207
+   },
+   {
+    "slug": "dualtron-alien",
+    "d": 0,
+    "io": 0.9875389408099688,
+    "c": 10.273313323800906
+   },
+   {
+    "slug": "dualtron-aminia",
+    "d": 1,
+    "io": 0.964824120603015,
+    "c": 12.823631219677784
+   },
+   {
+    "slug": "dualtron-city-2025",
+    "d": 1,
+    "io": 0.9917127071823204,
+    "c": 10.143877992900501
+   },
+   {
+    "slug": "dualtron-eagle-pro",
+    "d": 23,
+    "io": 0.16786570743405277,
+    "c": 5.59386431512537
+   },
+   {
+    "slug": "dualtron-mini",
+    "d": 2,
+    "io": 0.988950276243094,
+    "c": 9.15745937613988
+   },
+   {
+    "slug": "dualtron-mini-special",
+    "d": 0,
+    "io": 0.9796610169491525,
+    "c": 13.866053660879713
+   },
+   {
+    "slug": "dualtron-popular",
+    "d": 6,
+    "io": 0.9640449438202248,
+    "c": 8.12657964615926
+   },
+   {
+    "slug": "dualtron-spider-2",
+    "d": 3,
+    "io": 0.9696048632218845,
+    "c": 10.361906504436927
+   }
+  ],
+  "copies_detectees": 84
+ },
+ "soi_dhash": {
+  "0": 1078,
+  "1": 842,
+  "2": 637,
+  "3": 330,
+  "4": 164,
+  "5": 91,
+  "6": 57,
+  "7": 28,
+  "8": 38,
+  "9": 19,
+  "10": 13,
+  "11": 11,
+  "12": 13,
+  "13": 10,
+  "14": 10,
+  "15": 3,
+  "16": 2,
+  "17": 2,
+  "18": 1,
+  "19": 1,
+  "23": 1
+ },
+ "soi_couleur": {
+  "0": 341,
+  "1": 220,
+  "2": 434,
+  "3": 494,
+  "4": 425,
+  "5": 336,
+  "6": 255,
+  "7": 208,
+  "8": 159,
+  "9": 113,
+  "10": 85,
+  "11": 54,
+  "12": 50,
+  "13": 49,
+  "14": 14,
+  "15": 18,
+  "16": 26,
+  "17": 12,
+  "18": 13,
+  "19": 5,
+  "20": 5,
+  "21": 4,
+  "22": 6,
+  "24": 2,
+  "25": 2,
+  "26": 2,
+  "27": 4,
+  "28": 1,
+  "29": 7,
+  "30": 1,
+  "31": 4,
+  "32": 1,
+  "33": 1
+ },
+ "grille": [
+  {
+   "dhash": 4,
+   "iou": 0.93,
+   "dhashAvecIou": 12,
+   "couleur": 4,
+   "faux_positifs": 0,
+   "soi_rates": 1654,
+   "copies_detectees": 50
+  },
+  {
+   "dhash": 4,
+   "iou": 0.93,
+   "dhashAvecIou": 14,
+   "couleur": 4,
+   "faux_positifs": 0,
+   "soi_rates": 1654,
+   "copies_detectees": 50
+  },
+  {
+   "dhash": 4,
+   "iou": 0.93,
+   "dhashAvecIou": 10,
+   "couleur": 4,
+   "faux_positifs": 0,
+   "soi_rates": 1658,
+   "copies_detectees": 50
+  },
+  {
+   "dhash": 4,
+   "iou": 0.95,
+   "dhashAvecIou": 12,
+   "couleur": 4,
+   "faux_positifs": 0,
+   "soi_rates": 1659,
+   "copies_detectees": 50
+  },
+  {
+   "dhash": 4,
+   "iou": 0.95,
+   "dhashAvecIou": 14,
+   "couleur": 4,
+   "faux_positifs": 0,
+   "soi_rates": 1659,
+   "copies_detectees": 50
+  },
+  {
+   "dhash": 4,
+   "iou": 0.95,
+   "dhashAvecIou": 10,
+   "couleur": 4,
+   "faux_positifs": 0,
+   "soi_rates": 1661,
+   "copies_detectees": 50
+  },
+  {
+   "dhash": 4,
+   "iou": 0.97,
+   "dhashAvecIou": 12,
+   "couleur": 4,
+   "faux_positifs": 0,
+   "soi_rates": 1668,
+   "copies_detectees": 49
+  },
+  {
+   "dhash": 4,
+   "iou": 0.97,
+   "dhashAvecIou": 14,
+   "couleur": 4,
+   "faux_positifs": 0,
+   "soi_rates": 1668,
+   "copies_detectees": 49
+  },
+  {
+   "dhash": 4,
+   "iou": 0.97,
+   "dhashAvecIou": 10,
+   "couleur": 4,
+   "faux_positifs": 0,
+   "soi_rates": 1669,
+   "copies_detectees": 49
+  },
+  {
+   "dhash": 4,
+   "iou": 0.93,
+   "dhashAvecIou": 12,
+   "couleur": 6,
+   "faux_positifs": 1,
+   "soi_rates": 974,
+   "copies_detectees": 71
+  },
+  {
+   "dhash": 4,
+   "iou": 0.93,
+   "dhashAvecIou": 14,
+   "couleur": 6,
+   "faux_positifs": 1,
+   "soi_rates": 974,
+   "copies_detectees": 71
+  },
+  {
+   "dhash": 4,
+   "iou": 0.93,
+   "dhashAvecIou": 10,
+   "couleur": 6,
+   "faux_positifs": 1,
+   "soi_rates": 979,
+   "copies_detectees": 71
+  },
+  {
+   "dhash": 4,
+   "iou": 0.95,
+   "dhashAvecIou": 12,
+   "couleur": 6,
+   "faux_positifs": 1,
+   "soi_rates": 985,
+   "copies_detectees": 71
+  },
+  {
+   "dhash": 4,
+   "iou": 0.95,
+   "dhashAvecIou": 14,
+   "couleur": 6,
+   "faux_positifs": 1,
+   "soi_rates": 985,
+   "copies_detectees": 71
+  },
+  {
+   "dhash": 4,
+   "iou": 0.95,
+   "dhashAvecIou": 10,
+   "couleur": 6,
+   "faux_positifs": 1,
+   "soi_rates": 988,
+   "copies_detectees": 71
+  },
+  {
+   "dhash": 4,
+   "iou": 0.97,
+   "dhashAvecIou": 12,
+   "couleur": 6,
+   "faux_positifs": 1,
+   "soi_rates": 1005,
+   "copies_detectees": 70
+  },
+  {
+   "dhash": 4,
+   "iou": 0.97,
+   "dhashAvecIou": 14,
+   "couleur": 6,
+   "faux_positifs": 1,
+   "soi_rates": 1005,
+   "copies_detectees": 70
+  },
+  {
+   "dhash": 4,
+   "iou": 0.97,
+   "dhashAvecIou": 10,
+   "couleur": 6,
+   "faux_positifs": 1,
+   "soi_rates": 1007,
+   "copies_detectees": 70
+  },
+  {
+   "dhash": 6,
+   "iou": 0.93,
+   "dhashAvecIou": 12,
+   "couleur": 4,
+   "faux_positifs": 1,
+   "soi_rates": 1651,
+   "copies_detectees": 51
+  },
+  {
+   "dhash": 6,
+   "iou": 0.93,
+   "dhashAvecIou": 14,
+   "couleur": 4,
+   "faux_positifs": 1,
+   "soi_rates": 1651,
+   "copies_detectees": 51
+  },
+  {
+   "dhash": 6,
+   "iou": 0.93,
+   "dhashAvecIou": 10,
+   "couleur": 4,
+   "faux_positifs": 1,
+   "soi_rates": 1655,
+   "copies_detectees": 51
+  },
+  {
+   "dhash": 6,
+   "iou": 0.95,
+   "dhashAvecIou": 12,
+   "couleur": 4,
+   "faux_positifs": 1,
+   "soi_rates": 1655,
+   "copies_detectees": 51
+  },
+  {
+   "dhash": 6,
+   "iou": 0.95,
+   "dhashAvecIou": 14,
+   "couleur": 4,
+   "faux_positifs": 1,
+   "soi_rates": 1655,
+   "copies_detectees": 51
+  },
+  {
+   "dhash": 6,
+   "iou": 0.95,
+   "dhashAvecIou": 10,
+   "couleur": 4,
+   "faux_positifs": 1,
+   "soi_rates": 1657,
+   "copies_detectees": 51
+  },
+  {
+   "dhash": 6,
+   "iou": 0.97,
+   "dhashAvecIou": 12,
+   "couleur": 4,
+   "faux_positifs": 1,
+   "soi_rates": 1658,
+   "copies_detectees": 51
+  },
+  {
+   "dhash": 6,
+   "iou": 0.97,
+   "dhashAvecIou": 14,
+   "couleur": 4,
+   "faux_positifs": 1,
+   "soi_rates": 1658,
+   "copies_detectees": 51
+  },
+  {
+   "dhash": 6,
+   "iou": 0.97,
+   "dhashAvecIou": 10,
+   "couleur": 4,
+   "faux_positifs": 1,
+   "soi_rates": 1659,
+   "copies_detectees": 51
+  },
+  {
+   "dhash": 8,
+   "iou": 0.93,
+   "dhashAvecIou": 12,
+   "couleur": 4,
+   "faux_positifs": 4,
+   "soi_rates": 1649,
+   "copies_detectees": 51
+  },
+  {
+   "dhash": 8,
+   "iou": 0.93,
+   "dhashAvecIou": 14,
+   "couleur": 4,
+   "faux_positifs": 4,
+   "soi_rates": 1649,
+   "copies_detectees": 51
+  },
+  {
+   "dhash": 8,
+   "iou": 0.95,
+   "dhashAvecIou": 12,
+   "couleur": 4,
+   "faux_positifs": 4,
+   "soi_rates": 1652,
+   "copies_detectees": 51
+  },
+  {
+   "dhash": 8,
+   "iou": 0.95,
+   "dhashAvecIou": 14,
+   "couleur": 4,
+   "faux_positifs": 4,
+   "soi_rates": 1652,
+   "copies_detectees": 51
+  },
+  {
+   "dhash": 8,
+   "iou": 0.93,
+   "dhashAvecIou": 10,
+   "couleur": 4,
+   "faux_positifs": 4,
+   "soi_rates": 1653,
+   "copies_detectees": 51
+  },
+  {
+   "dhash": 8,
+   "iou": 0.95,
+   "dhashAvecIou": 10,
+   "couleur": 4,
+   "faux_positifs": 4,
+   "soi_rates": 1654,
+   "copies_detectees": 51
+  },
+  {
+   "dhash": 8,
+   "iou": 0.97,
+   "dhashAvecIou": 12,
+   "couleur": 4,
+   "faux_positifs": 4,
+   "soi_rates": 1654,
+   "copies_detectees": 51
+  },
+  {
+   "dhash": 8,
+   "iou": 0.97,
+   "dhashAvecIou": 14,
+   "couleur": 4,
+   "faux_positifs": 4,
+   "soi_rates": 1654,
+   "copies_detectees": 51
+  },
+  {
+   "dhash": 8,
+   "iou": 0.97,
+   "dhashAvecIou": 10,
+   "couleur": 4,
+   "faux_positifs": 4,
+   "soi_rates": 1655,
+   "copies_detectees": 51
+  },
+  {
+   "dhash": 6,
+   "iou": 0.93,
+   "dhashAvecIou": 12,
+   "couleur": 6,
+   "faux_positifs": 5,
+   "soi_rates": 970,
+   "copies_detectees": 72
+  },
+  {
+   "dhash": 6,
+   "iou": 0.93,
+   "dhashAvecIou": 14,
+   "couleur": 6,
+   "faux_positifs": 5,
+   "soi_rates": 970,
+   "copies_detectees": 72
+  },
+  {
+   "dhash": 6,
+   "iou": 0.95,
+   "dhashAvecIou": 12,
+   "couleur": 6,
+   "faux_positifs": 5,
+   "soi_rates": 974,
+   "copies_detectees": 72
+  },
+  {
+   "dhash": 6,
+   "iou": 0.95,
+   "dhashAvecIou": 14,
+   "couleur": 6,
+   "faux_positifs": 5,
+   "soi_rates": 974,
+   "copies_detectees": 72
+  },
+  {
+   "dhash": 6,
+   "iou": 0.93,
+   "dhashAvecIou": 10,
+   "couleur": 6,
+   "faux_positifs": 5,
+   "soi_rates": 975,
+   "copies_detectees": 72
+  },
+  {
+   "dhash": 6,
+   "iou": 0.95,
+   "dhashAvecIou": 10,
+   "couleur": 6,
+   "faux_positifs": 5,
+   "soi_rates": 977,
+   "copies_detectees": 72
+  },
+  {
+   "dhash": 6,
+   "iou": 0.97,
+   "dhashAvecIou": 12,
+   "couleur": 6,
+   "faux_positifs": 5,
+   "soi_rates": 982,
+   "copies_detectees": 72
+  },
+  {
+   "dhash": 6,
+   "iou": 0.97,
+   "dhashAvecIou": 14,
+   "couleur": 6,
+   "faux_positifs": 5,
+   "soi_rates": 982,
+   "copies_detectees": 72
+  },
+  {
+   "dhash": 6,
+   "iou": 0.97,
+   "dhashAvecIou": 10,
+   "couleur": 6,
+   "faux_positifs": 5,
+   "soi_rates": 984,
+   "copies_detectees": 72
+  },
+  {
+   "dhash": 4,
+   "iou": 0.93,
+   "dhashAvecIou": 14,
+   "couleur": 8,
+   "faux_positifs": 6,
+   "soi_rates": 567,
+   "copies_detectees": 82
+  },
+  {
+   "dhash": 4,
+   "iou": 0.93,
+   "dhashAvecIou": 12,
+   "couleur": 8,
+   "faux_positifs": 6,
+   "soi_rates": 570,
+   "copies_detectees": 82
+  },
+  {
+   "dhash": 4,
+   "iou": 0.93,
+   "dhashAvecIou": 10,
+   "couleur": 8,
+   "faux_positifs": 6,
+   "soi_rates": 579,
+   "copies_detectees": 82
+  },
+  {
+   "dhash": 4,
+   "iou": 0.95,
+   "dhashAvecIou": 14,
+   "couleur": 8,
+   "faux_positifs": 6,
+   "soi_rates": 581,
+   "copies_detectees": 82
+  },
+  {
+   "dhash": 4,
+   "iou": 0.95,
+   "dhashAvecIou": 12,
+   "couleur": 8,
+   "faux_positifs": 6,
+   "soi_rates": 584,
+   "copies_detectees": 82
+  },
+  {
+   "dhash": 4,
+   "iou": 0.95,
+   "dhashAvecIou": 10,
+   "couleur": 8,
+   "faux_positifs": 6,
+   "soi_rates": 591,
+   "copies_detectees": 82
+  },
+  {
+   "dhash": 4,
+   "iou": 0.97,
+   "dhashAvecIou": 14,
+   "couleur": 8,
+   "faux_positifs": 6,
+   "soi_rates": 609,
+   "copies_detectees": 81
+  },
+  {
+   "dhash": 4,
+   "iou": 0.97,
+   "dhashAvecIou": 12,
+   "couleur": 8,
+   "faux_positifs": 6,
+   "soi_rates": 610,
+   "copies_detectees": 81
+  },
+  {
+   "dhash": 4,
+   "iou": 0.97,
+   "dhashAvecIou": 10,
+   "couleur": 8,
+   "faux_positifs": 6,
+   "soi_rates": 614,
+   "copies_detectees": 81
+  },
+  {
+   "dhash": 10,
+   "iou": 0.93,
+   "dhashAvecIou": 12,
+   "couleur": 4,
+   "faux_positifs": 7,
+   "soi_rates": 1648,
+   "copies_detectees": 51
+  },
+  {
+   "dhash": 10,
+   "iou": 0.93,
+   "dhashAvecIou": 14,
+   "couleur": 4,
+   "faux_positifs": 7,
+   "soi_rates": 1648,
+   "copies_detectees": 51
+  },
+  {
+   "dhash": 10,
+   "iou": 0.95,
+   "dhashAvecIou": 12,
+   "couleur": 4,
+   "faux_positifs": 7,
+   "soi_rates": 1650,
+   "copies_detectees": 51
+  },
+  {
+   "dhash": 10,
+   "iou": 0.95,
+   "dhashAvecIou": 14,
+   "couleur": 4,
+   "faux_positifs": 7,
+   "soi_rates": 1650,
+   "copies_detectees": 51
+  },
+  {
+   "dhash": 10,
+   "iou": 0.97,
+   "dhashAvecIou": 12,
+   "couleur": 4,
+   "faux_positifs": 7,
+   "soi_rates": 1651,
+   "copies_detectees": 51
+  },
+  {
+   "dhash": 10,
+   "iou": 0.97,
+   "dhashAvecIou": 14,
+   "couleur": 4,
+   "faux_positifs": 7,
+   "soi_rates": 1651,
+   "copies_detectees": 51
+  }
+ ]
+}
