@@ -24,6 +24,7 @@ import { detoure } from './lib/detoure.js';
 import { photoQcAll } from './lib/photo-qc.js';
 import { empreinte, memePhoto } from './lib/empreinte.mjs';
 import { juger } from './lib/photo-juge.mjs';
+import { ameliorerEtJuger } from './lib/photo-qualite.mjs';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const ROOT = resolve(__dirname, '..');
@@ -139,14 +140,18 @@ async function dry() {
       const url = m.candidates[i];
       let png = null, qc = null, err = null, juge = null, doublon = null;
       try { png = await cutout(url); qc = await qcFor(png, url); } catch (e) { err = e.message.slice(0, 120); }
+      // 26/10 : qualité du détourage (nettoyage + recadrage + résolution) AVANT empreinte et juge, trottinettes seulement
+      let qual = null;
+      if (png && lot.entity !== 'part' && !lot.genere) { try { qual = await ameliorerEtJuger(png); png = qual.buf; } catch (e) { err = `qualité : ${e.message.slice(0, 80)}`; } }
       const verdict = err ? 'ERROR' : qc.verdict;
       let short = err ? err : (qc.reasons.join(' · ') || 'ok');
       if (JUGE_DRY && png && judge(qc, 1).ok) {
         const fp = await empreinte(await vignette(png));
         const hit = [...enLigne, ...retenus.map((r) => ({ url: `lot#${r.i}`, fp: r.fp }))].map((x) => ({ x, r: memePhoto(fp, x.fp) })).find((h) => h.r.doublon);
         if (hit) doublon = `${hit.r.raison} (${String(hit.x.url).slice(-28)})`;
+        else if (qual?.refus) juge = { refus: true, motifs: qual.defauts, principale_ok: false, rang: 9 };
         else {
-          try { const v = await juger(png); juge = { vue: v.vue, refus: v.refus, motifs: v.motifs, principale_ok: v.principale_ok, rang: v.rang_principale, note: v.note }; }
+          try { const v = await juger(png); const pok = v.principale_ok && (!qual || qual.principale_ok); juge = { vue: v.vue, refus: v.refus, motifs: v.motifs, principale_ok: pok, rang: pok ? v.rang_principale : Math.max(2, v.rang_principale), note: [v.note, qual?.defauts?.join(', ')].filter(Boolean).join(' · ') }; }
           catch (e) { juge = { erreur: e.message.slice(0, 80) }; }
           if (juge && !juge.erreur && !juge.refus) retenus.push({ i, fp, juge, ok: verdict !== 'FAIL' });
         }
@@ -240,7 +245,7 @@ async function write() {
     for (const idx of picks) {
       const url = m.candidates[idx];
       try {
-        const png = await cutout(url);
+        let png = await cutout(url);
         const qc = await qcFor(png, url);
         const j = judge(qc, APPEND ? 1 : bufs.length);
         if (!j.ok) { console.log(`::warning title=REFUSÉ ${m.slug} #${idx}::${j.why.join(' · ')}`); continue; }
@@ -257,9 +262,12 @@ async function write() {
         // En remplacement complet (write), la 1re photo envoyée doit être une vue 3/4 propre (= photo principale).
         if (lot.entity !== 'part' && !lot.genere) {
           let v;
+          const qual = await ameliorerEtJuger(png);
+          if (qual.refus) { console.log(`::warning title=QUALITÉ ${m.slug} #${idx}::${qual.defauts.join(', ')} — photo NON envoyée`); continue; }
+          png = qual.buf;
           try { v = await juger(png); } catch (e) { console.log(`::warning title=JUGE ${m.slug} #${idx}::${e.message} — photo NON envoyée (verrou fermé)`); continue; }
           if (v.refus) { console.log(`::warning title=REFUSÉ juge ${m.slug} #${idx}::${v.motifs.join(', ')} (${v.vue})`); continue; }
-          if (!APPEND && bufs.length === 0 && !v.principale_ok) { console.log(`::warning title=PRINCIPALE ${m.slug} #${idx}::vue « ${v.vue} » : la 1re photo doit être un 3/4 propre — mets un 3/4 en tête du accept`); continue; }
+          if (!APPEND && bufs.length === 0 && !(v.principale_ok && qual.principale_ok)) { console.log(`::warning title=PRINCIPALE ${m.slug} #${idx}::vue « ${v.vue} » : la 1re photo doit être un 3/4 propre — mets un 3/4 en tête du accept`); continue; }
         }
         bufs.push(png);
       } catch (e) { console.log(`::warning title=ERREUR ${m.slug} #${idx}::${e.message.slice(0, 120)}`); }
