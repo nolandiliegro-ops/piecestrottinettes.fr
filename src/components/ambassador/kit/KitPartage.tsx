@@ -42,7 +42,11 @@ const Tuile = ({ f, d, code }: { f: KitFormat; d: KitData; code: string }) => {
     if (!ref.current) return;
     setBusy(true);
     try {
-      const dataUrl = await toPng(ref.current, { pixelRatio: f.ratio, cacheBust: true });
+      // Safari / iPhone : 1er rendu jeté, html-to-image n'y embarque pas toujours les images au premier passage
+      // (même parade que la carte Rider, RiderCardStory). Pas de cacheBust : les images sont déjà chargées dans la page.
+      const webkit = /iP(hone|ad|od)/.test(navigator.userAgent) || (/Safari/.test(navigator.userAgent) && !/Chrome|Chromium|Android/.test(navigator.userAgent));
+      if (webkit) await toPng(ref.current, { pixelRatio: f.ratio }).catch(() => null);
+      const dataUrl = await toPng(ref.current, { pixelRatio: f.ratio });
       const blob = await (await fetch(dataUrl)).blob();
       const file = new File([blob], `${f.id}-${code.toLowerCase()}.png`, { type: 'image/png' });
       const nav = navigator as Navigator & { canShare?: (x: { files: File[] }) => boolean };

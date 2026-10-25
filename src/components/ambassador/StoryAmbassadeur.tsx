@@ -40,7 +40,11 @@ const StoryAmbassadeur = ({ photo, nom, code, lien, themeKey }: Props) => {
     setBusy(true);
     try {
       // Cadre 360 px → 1080 × 1920 (format story TikTok / Insta).
-      const dataUrl = await toPng(ref.current, { pixelRatio: 3, cacheBust: true });
+      // Safari / iPhone : 1er rendu jeté, html-to-image n'y embarque pas toujours les images au premier passage
+      // (même parade que la carte Rider, RiderCardStory). Pas de cacheBust : les images sont déjà chargées dans la page.
+      const webkit = /iP(hone|ad|od)/.test(navigator.userAgent) || (/Safari/.test(navigator.userAgent) && !/Chrome|Chromium|Android/.test(navigator.userAgent));
+      if (webkit) await toPng(ref.current, { pixelRatio: 3 }).catch(() => null);
+      const dataUrl = await toPng(ref.current, { pixelRatio: 3 });
       const blob = await (await fetch(dataUrl)).blob();
       const file = new File([blob], `story-${code.toLowerCase()}.png`, { type: 'image/png' });
       const nav = navigator as Navigator & { canShare?: (d: { files: File[] }) => boolean };
