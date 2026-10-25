@@ -12,7 +12,8 @@ const SOFT = "#8FBF9C";
 const PAPER = "#FAFAF8";
 const ch = (c: number) => `polygon(0 0, calc(100% - ${c}px) 0, 100% ${c}px, 100% 100%, ${c}px 100%, 0 calc(100% - ${c}px))`;
 
-export const PORTES_DEFAUT = 0; // en attendant le choix de Nolan
+// Choix de Nolan (26/10) : 2 · Barre d'onglets, avec les mots du Garage (« Commandes », pas « Suivi de commandes »).
+export const PORTES_DEFAUT = 2;
 export const readPortes = (): number => {
   if (typeof window === "undefined") return PORTES_DEFAUT;
   try {
@@ -23,12 +24,12 @@ export const readPortes = (): number => {
   } catch { return PORTES_DEFAUT; }
 };
 
-type Porte = { icon: typeof Bike; label: string; to?: string; onClick?: () => void; sous: string };
+type Porte = { icon: typeof Bike; label: string; court: string; to?: string; onClick?: () => void; sous: string };
 const portes = (auth: boolean): Porte[] => [
-  { icon: Bike, label: "Pièces compatibles", sous: "Que ce qui va sur ta trott", to: auth ? "/garage/trotts" : "/trottinettes" },
-  { icon: Package, label: "Suivi de commandes", sous: "Chaque colis, en direct", to: auth ? "/garage/commandes" : "/register?returnTo=/garage/commandes" },
-  { icon: MessageCircle, label: "SKOT répond", sous: "Compat, SAV, commandes", onClick: () => window.dispatchEvent(new Event("skot:open")) },
-  { icon: IdCard, label: "Carte Rider", sous: "À partager en story", to: auth ? "/garage" : "/register" },
+  { icon: Bike, label: "Pièces compatibles", court: "Mes trotts", sous: "Que ce qui va sur ta trott", to: auth ? "/garage/trotts" : "/trottinettes" },
+  { icon: Package, label: "Suivi de commandes", court: "Commandes", sous: "Chaque colis, en direct", to: auth ? "/garage/commandes" : "/register?returnTo=/garage/commandes" },
+  { icon: MessageCircle, label: "SKOT répond", court: "SKOT", sous: "Compat, SAV, commandes", onClick: () => window.dispatchEvent(new Event("skot:open")) },
+  { icon: IdCard, label: "Carte Rider", court: "Ma carte", sous: "À partager en story", to: auth ? "/garage" : "/register" },
 ];
 
 const Bouton = ({ p, className, style, children }: { p: Porte; className: string; style: React.CSSProperties; children: React.ReactNode }) =>
@@ -52,13 +53,13 @@ const PortesGarage = ({ v, auth }: { v: number; auth: boolean }) => {
     </ul>
   );
 
-  // 2 · Barre d'onglets : la rangée du Garage telle quelle, qui défile au doigt.
+  // 2 · Barre d'onglets : la rangée du Garage telle quelle (mêmes mots, même ordre : Ma carte, Mes trotts, Commandes, SKOT).
   if (v === 2) return (
     <ul className="-mx-4 px-4 flex gap-1.5 overflow-x-auto py-1 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden lg:mx-0 lg:px-0 lg:flex-wrap">
-      {list.map((p) => (
+      {[list[3], list[0], list[1], list[2]].map((p) => (
         <li key={p.label} className="shrink-0">
           <Bouton p={p} className="flex items-center gap-2.5 min-h-[48px] px-4 text-[15px] font-extrabold whitespace-nowrap" style={{ fontFamily: FONT, background: PAPER, color: CARBON, clipPath: ch(10) }}>
-            <p.icon className="w-[18px] h-[18px] shrink-0" style={{ color: GREEN }} />{p.label}
+            <p.icon className="w-[18px] h-[18px] shrink-0" style={{ color: GREEN }} />{p.court}
           </Bouton>
         </li>
       ))}

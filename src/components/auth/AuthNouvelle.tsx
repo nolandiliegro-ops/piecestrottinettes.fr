@@ -24,7 +24,7 @@ const cut = (c: number) => `polygon(0 0, calc(100% - ${c}px) 0, 100% ${c}px, 100
 const ch = (c: number) => `polygon(0 0, calc(100% - ${c}px) 0, 100% ${c}px, 100% 100%, ${c}px 100%, 0 calc(100% - ${c}px))`;
 export const POINTS_BIENVENUE = 200; // handle_new_user insère 200 (lu en base le 26/10)
 
-export const AUTH_DEFAUT = 0; // en attendant le choix de Nolan
+export const AUTH_DEFAUT = 3; // choix de Nolan (26/10) : 3 · Carte vivante, inscription ET connexion
 export function readAuthLook(): number {
   if (typeof window === 'undefined') return AUTH_DEFAUT;
   try {
