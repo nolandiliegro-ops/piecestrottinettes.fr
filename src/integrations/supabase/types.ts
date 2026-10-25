@@ -4286,6 +4286,27 @@ export type Database = {
         }
         Relationships: []
       }
+      _bak_engwe_y1000_2510: {
+        Row: {
+          id: string | null
+          image_url: string | null
+          images: Json | null
+          slug: string | null
+        }
+        Insert: {
+          id?: string | null
+          image_url?: string | null
+          images?: Json | null
+          slug?: string | null
+        }
+        Update: {
+          id?: string | null
+          image_url?: string | null
+          images?: Json | null
+          slug?: string | null
+        }
+        Relationships: []
+      }
       _bak_images_parts_2410: {
         Row: {
           id: string | null
@@ -8402,6 +8423,48 @@ export type Database = {
         }
         Relationships: []
       }
+      rider_card_comments: {
+        Row: {
+          author_id: string
+          body: string
+          card_owner_id: string
+          created_at: string
+          hidden: boolean
+          id: string
+        }
+        Insert: {
+          author_id: string
+          body: string
+          card_owner_id: string
+          created_at?: string
+          hidden?: boolean
+          id?: string
+        }
+        Update: {
+          author_id?: string
+          body?: string
+          card_owner_id?: string
+          created_at?: string
+          hidden?: boolean
+          id?: string
+        }
+        Relationships: [
+          {
+            foreignKeyName: "rider_card_comments_author_id_fkey"
+            columns: ["author_id"]
+            isOneToOne: false
+            referencedRelation: "profiles"
+            referencedColumns: ["id"]
+          },
+          {
+            foreignKeyName: "rider_card_comments_card_owner_id_fkey"
+            columns: ["card_owner_id"]
+            isOneToOne: false
+            referencedRelation: "profiles"
+            referencedColumns: ["id"]
+          },
+        ]
+      }
       rider_questions: {
         Row: {
           brouillon: string | null
@@ -9354,6 +9417,7 @@ export type Database = {
       user_garage: {
         Row: {
           added_at: string | null
+          card_slot: number | null
           current_km: number | null
           custom_photo_url: string | null
           id: string
@@ -9370,6 +9434,7 @@ export type Database = {
         }
         Insert: {
           added_at?: string | null
+          card_slot?: number | null
           current_km?: number | null
           custom_photo_url?: string | null
           id?: string
@@ -9386,6 +9451,7 @@ export type Database = {
         }
         Update: {
           added_at?: string | null
+          card_slot?: number | null
           current_km?: number | null
           custom_photo_url?: string | null
           id?: string
