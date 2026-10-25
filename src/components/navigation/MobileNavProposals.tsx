@@ -19,10 +19,13 @@ export type BarreBasVariant = 1 | 2 | 3 | 4 | 5;
 export type SkotTelVariant = 1 | 2 | 3 | 4 | 5;
 export const readSkotTelVariant = (): SkotTelVariant | null => {
   try {
-    const n = Number(new URLSearchParams(window.location.search).get("skottel"));
-    return n >= 1 && n <= 5 ? (n as SkotTelVariant) : null;
+    // 25/10 : Nolan choisit la 1 « Phares au centre » = défaut ; ?skottel=0 = ancien avatar « Le pilote », 2..5 = autres propositions.
+    const raw = new URLSearchParams(window.location.search).get("skottel");
+    if (raw === null) return 1;
+    const n = Number(raw);
+    return n >= 1 && n <= 5 ? (n as SkotTelVariant) : n === 0 ? null : 1;
   } catch {
-    return null;
+    return 1;
   }
 };
 export const readBarreBasVariant = (): BarreBasVariant | null => {
