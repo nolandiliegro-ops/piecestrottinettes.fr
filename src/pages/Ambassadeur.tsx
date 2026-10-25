@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { useQuery, useMutation, useQueryClient } from '@tanstack/react-query';
 import { Loader2, Copy, Link2, MousePointerClick, Users, ShoppingBag, Wallet, Clock, CheckCircle2, FileText, Mail, Sparkles } from 'lucide-react';
 import RiderBadgeIaDialog from '@/components/garage/RiderBadgeIaDialog';
+import StoryAmbassadeur from '@/components/ambassador/StoryAmbassadeur';
 import { toast } from 'sonner';
 import SEO from '@/components/SEO';
 import Header from '@/components/Header';
@@ -212,6 +213,8 @@ const Tableau = ({ d }: { d: Dash }) => {
           </div>
         ) : <p className="text-base text-amber-800">Ton code arrive : Nolan le crée dès que ta candidature est validée.</p>}
       </section>
+
+      <StoryAmbassadeur photo={photo} nom={d.nom} code={code} lien={code ? lienCreateur(code) : ''} themeKey={profile?.active_theme_key} />
 
       <section className="grid grid-cols-2 sm:grid-cols-3 gap-3">
         {chiffres.map((c) => (
