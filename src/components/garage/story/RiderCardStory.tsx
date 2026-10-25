@@ -12,6 +12,7 @@ import { toPng, toJpeg } from "html-to-image";
 import { toast } from "sonner";
 import { Heart, MessageSquare, Share2, Camera, X, Download } from "lucide-react";
 import { useAuthContext } from "@/contexts/AuthContext";
+import StoryExport from "@/components/garage/story/StoryExport";
 import { getXPLevel } from "@/lib/xpLevels";
 import { useToggleCardLike, type RiderCardData, type RiderMachine } from "@/hooks/useRiderCardData";
 
@@ -96,6 +97,10 @@ const RiderCardStory = ({ data, commentCount = 0, onOpenComments, className = ""
   // Choix de Nolan du 25/10 soir : « 1 · Plein écran » et « 2 · Vignette » par défaut ; `?apercu=0` / `?photo=0` = avant.
   const [apercu] = useState(() => readVariant("apercu", 1));
   const [photoV] = useState(() => readVariant("photo", 2));
+  // 25/10 (« sur WhatsApp on voit pas le profil, la tête ») : cadrage de l'image partagée, `?cadre=1..5` (0 = la carte elle-même).
+  const [cadre] = useState(() => readVariant("cadre", 0));
+  const [storyOn, setStoryOn] = useState(false);
+  const storyRef = useRef<HTMLDivElement>(null);
   const [preview, setPreview] = useState<{ url: string; file: File; w: number; h: number } | null>(null);
   const ref = useRef<HTMLDivElement>(null);
   // Ordinateur (bare) : la trott est sur l'estrade du wallpaper → la carte à l'écran est compacte, sans grande image.
@@ -133,9 +138,10 @@ const RiderCardStory = ({ data, commentCount = 0, onOpenComments, className = ""
     if (!ref.current) return;
     setSharing(true);
     // Carte « nue » à l'écran : le wallpaper est remis le temps de l'image partagée.
-    if (bare) { setHoldH(ref.current.offsetHeight); setExporting(true); await new Promise((r) => setTimeout(r, 60)); }
+    if (cadre > 0) { setStoryOn(true); await new Promise((r) => setTimeout(r, 60)); }
+    else if (bare) { setHoldH(ref.current.offsetHeight); setExporting(true); await new Promise((r) => setTimeout(r, 60)); }
     try {
-      const node = ref.current;
+      const node = cadre > 0 && storyRef.current ? storyRef.current : ref.current;
       await waitImages(node);
       // Format story : 1080 px de large (la hauteur suit la carte, ~1920 px).
       const opts = {
@@ -167,6 +173,7 @@ const RiderCardStory = ({ data, commentCount = 0, onOpenComments, className = ""
       if ((e as Error)?.name !== "AbortError") toast.error("Impossible de créer l'image de la carte");
     } finally {
       setExporting(false);
+      setStoryOn(false);
       setHoldH(null);
       setSharing(false);
     }
@@ -373,6 +380,11 @@ const RiderCardStory = ({ data, commentCount = 0, onOpenComments, className = ""
   return (
     <>
     {previewOverlay()}
+    {storyOn && createPortal(
+      <StoryExport ref={storyRef} cadre={cadre} wallpaper={data.wallpaper_url} avatar={profile.avatar_url} name={name} sub={sub} bio={profile.bio}
+        current={current ?? null} mine={mine} liked={liked} publicUrl={publicUrl} />,
+      document.body,
+    )}
     {bare && exporting && holdH != null && <div aria-hidden className="w-full max-w-[360px]" style={{ height: holdH }} />}
     <div
       ref={ref}

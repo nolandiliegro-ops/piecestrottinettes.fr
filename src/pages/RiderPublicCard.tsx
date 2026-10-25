@@ -16,7 +16,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import GarageBackground from "@/components/garage/GarageBackground";
 import RiderAvatar from "@/components/garage/RiderAvatar";
-import RiderCardStory from "@/components/garage/story/RiderCardStory";
+import RiderCardStory, { cardRows } from "@/components/garage/story/RiderCardStory";
 import RiderCardComments from "@/components/garage/story/RiderCardComments";
 import { useCardComments } from "@/hooks/useRiderCardComments";
 import { Panel, H2, ScooterStage, PartsShelf, SKIN, type GarageAtelierScooter } from "@/components/garage/atelier/GarageAtelierView";
@@ -39,9 +39,14 @@ const RiderPublicCard = () => {
   const like = useToggleCardLike();
   const [i, setI] = useState(0);
 
+  // 25/10 : même ordre que la carte (ses 5 « à moi », ses 5 « je kiffe », puis le reste) — la scène ouvre sur la trott de la carte.
   const machines = useMemo(() => {
     const list = (data?.machines ?? []).filter((m) => m.model);
-    return [...list.filter((m) => m.is_featured), ...list.filter((m) => !m.is_featured)];
+    const { mine, liked } = cardRows(list);
+    const onCard = [...mine, ...liked];
+    const first = mine.find((m) => m.is_featured) ?? onCard[0];
+    const ordered = [...onCard, ...list.filter((m) => !onCard.includes(m))];
+    return first ? [first, ...ordered.filter((m) => m !== first)] : ordered;
   }, [data]);
   const cur = machines[Math.min(i, Math.max(0, machines.length - 1))];
   const name = data?.profile.display_name ?? username ?? "Rider";
@@ -114,16 +119,18 @@ const RiderPublicCard = () => {
               </h1>
             </header>
 
-              <div className="grid gap-6 lg:grid-cols-[360px_minmax(0,1fr)] lg:gap-8 items-start">
+              {/* grid-cols-[minmax(0,1fr)] : sans lui, la frise de pièces élargissait la colonne à 2 165 px sur téléphone — trott hors écran (25/10). */}
+              <div className="grid grid-cols-[minmax(0,1fr)] gap-6 lg:grid-cols-[360px_minmax(0,1fr)] lg:gap-8 items-start">
                 <div className="grid gap-4 justify-items-center lg:justify-items-stretch lg:sticky lg:top-24">
-                  <RiderCardStory data={data} commentCount={comments.length} onOpenComments={() => document.getElementById("carte-commentaires")?.scrollIntoView({ behavior: "smooth", block: "start" })} />
+                  <RiderCardStory data={data} selectedId={cur?.id ?? null} onSelect={(m) => { const k = machines.findIndex((x) => x.id === m.id); if (k >= 0) setI(k); }} commentCount={comments.length} onOpenComments={() => document.getElementById("carte-commentaires")?.scrollIntoView({ behavior: "smooth", block: "start" })} />
                   <div className="w-full max-w-[360px]"><RiderCardComments id="carte-commentaires" ownerId={data.profile.id} ownerName={name} /></div>
                 </div>
 
-                <div className="grid gap-4 min-w-0">
+                <div className="grid grid-cols-[minmax(0,1fr)] gap-4 min-w-0">
                   {stageScooter && (
                     <ScooterStage scooter={stageScooter} scooterCount={machines.length} currentIndex={i} label={cur?.is_owned === false ? "Il kiffe" : "Sa machine"}
-                      onPrev={() => setI((x) => Math.max(0, x - 1))} onNext={() => setI((x) => Math.min(machines.length - 1, x + 1))} />
+                      onPrev={() => setI((x) => Math.max(0, x - 1))} onNext={() => setI((x) => Math.min(machines.length - 1, x + 1))}
+                      thumbs={machines.map((m) => ({ id: m.id, img: m.model?.image_url, name: m.model?.name ?? "" }))} onPick={setI} />
                   )}
                   {mods.length > 0 && (
                     <Panel>

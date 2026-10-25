@@ -156,7 +156,7 @@ const RiderStrip = ({ profile, onEditProfile, onTheme }: Pick<Props, "profile" |
 };
 
 /* ---------- Ma trott : grande, elle sort de sa plaque ---------- */
-export const ScooterStage = ({ scooter, scooterCount, currentIndex, onPrev, onNext, label }: Pick<Props, "scooter" | "scooterCount" | "currentIndex" | "onPrev" | "onNext"> & { label?: string }) => {
+const StageActuel = ({ scooter, scooterCount, currentIndex, onPrev, onNext, label }: StageProps) => {
   const m = scooter.scooter_model;
   const specs = [m.voltage && `${m.voltage} V`, m.amperage && `${m.amperage} Ah`, m.power_watts && `${m.power_watts} W`].filter(Boolean) as string[];
   const multi = scooterCount > 1;
@@ -199,6 +199,183 @@ export const ScooterStage = ({ scooter, scooterCount, currentIndex, onPrev, onNe
       </div>
     </div>
   );
+};
+
+/* 25/10/2026 (Nolan : « la trottinette, faudrait qu'elle soit vraiment dans le garage, faut pas qu'elle soit noire
+   comme ça ») : 5 propositions derrière `?scene=1..5` (0 = actuel, le bloc carbone). La trott est posée sur le wallpaper. */
+type StageProps = Pick<Props, "scooter" | "scooterCount" | "currentIndex" | "onPrev" | "onNext"> & {
+  label?: string;
+  /** Défilé (variante 4) : les machines à toucher directement. */
+  thumbs?: { id: string; img: string | null | undefined; name: string }[];
+  onPick?: (i: number) => void;
+};
+const readScene = () => {
+  try {
+    const q = new URLSearchParams(window.location.search).get("scene");
+    if (q !== null) sessionStorage.setItem("pt-scene", q);
+    const n = Number(q ?? sessionStorage.getItem("pt-scene") ?? 0);
+    return n >= 0 && n <= 5 ? n : 0;
+  } catch {
+    return 0;
+  }
+};
+
+const stageSpecs = (m: GarageAtelierScooter["scooter_model"]) => [m.voltage && `${m.voltage} V`, m.amperage && `${m.amperage} Ah`, m.power_watts && `${m.power_watts} W`].filter(Boolean) as string[];
+const ArrowBtn = ({ dir, onClick, disabled, size = "w-11 h-11" }: { dir: "prev" | "next"; onClick: () => void; disabled: boolean; size?: string }) => (
+  <button type="button" onClick={onClick} disabled={disabled} aria-label={dir === "prev" ? "Trottinette précédente" : "Trottinette suivante"}
+    className={`${size} pointer-events-auto inline-flex items-center justify-center disabled:opacity-35`} style={{ background: "#FFFFFF", color: CARBON, clipPath: cut(7), boxShadow: "0 6px 18px rgba(0,0,0,0.18)" }}>
+    {dir === "prev" ? <ChevronLeft className="w-5 h-5" strokeWidth={2.6} /> : <ChevronRight className="w-5 h-5" strokeWidth={2.6} />}
+  </button>
+);
+/** La trott posée au sol du garage : ombre portée au sol, pas de fond. */
+const Grounded = ({ m, h, reflect, spot }: { m: GarageAtelierScooter["scooter_model"]; h: string; reflect?: boolean; spot?: boolean }) => (
+  <div className={`relative ${h} flex items-end justify-center`}>
+    {spot && <span aria-hidden className="absolute inset-x-[8%] top-[-10%] bottom-[2%]" style={{ background: "radial-gradient(50% 60% at 50% 70%, rgba(255,246,225,0.55), rgba(255,246,225,0.18) 55%, rgba(255,246,225,0) 75%)" }} />}
+    <span aria-hidden className="absolute bottom-[2px] left-1/2 -translate-x-1/2 w-[58%] h-[18px] rounded-[50%]" style={{ background: "radial-gradient(closest-side, rgba(0,0,0,0.55), rgba(0,0,0,0))" }} />
+    {m.image_url ? (
+      <img src={m.image_url} alt={m.name} loading="eager" className="relative max-h-full max-w-[86%] object-contain animate-in fade-in duration-500" style={{ filter: "drop-shadow(0 16px 16px rgba(0,0,0,0.35))" }} />
+    ) : (
+      <Bike className="relative w-28 h-28 text-white/60" strokeWidth={1} />
+    )}
+    {reflect && m.image_url && (
+      <img aria-hidden src={m.image_url} alt="" className="absolute top-full max-h-[38%] max-w-[86%] object-contain object-top" style={{ transform: "scaleY(-1)", opacity: 0.22, maskImage: "linear-gradient(to top, rgba(0,0,0,0.9), transparent 70%)", WebkitMaskImage: "linear-gradient(to top, rgba(0,0,0,0.9), transparent 70%)" }} />
+    )}
+  </div>
+);
+const Kicker = ({ label, multi, i, n, light }: { label?: string; multi: boolean; i: number; n: number; light?: boolean }) => (
+  <p className="text-sm font-extrabold uppercase tracking-[0.14em]" style={{ fontFamily: FONT, color: light ? SOFT : GREEN, textShadow: light ? "0 1px 10px rgba(0,0,0,0.6)" : undefined }}>
+    {label ?? "Ma trott"}{multi ? ` · ${i + 1}/${n}` : ""}
+  </p>
+);
+const Title = ({ m, nickname, light, size = "text-[26px] lg:text-[38px]" }: { m: GarageAtelierScooter["scooter_model"]; nickname?: string | null; light?: boolean; size?: string }) => (
+  <div className="min-w-0" style={{ textShadow: light ? "0 2px 16px rgba(0,0,0,0.6)" : undefined }}>
+    <h1 className={`${size} uppercase leading-[0.98]`} style={{ fontFamily: UNB, fontWeight: 900, fontStyle: "italic", letterSpacing: "-0.03em", color: light ? "#FFFFFF" : CARBON }}>
+      {m.brand && !m.name.toLowerCase().startsWith(m.brand.toLowerCase()) ? <span className="block text-base lg:text-lg" style={{ color: light ? "rgba(255,255,255,0.8)" : "#6B7280" }}>{m.brand}</span> : null}
+      {m.name}
+    </h1>
+    {nickname && <p className="mt-1 text-base font-semibold" style={{ fontFamily: FONT, color: light ? "rgba(255,255,255,0.9)" : "#4B5563" }}>« {nickname} »</p>}
+  </div>
+);
+const Chips = ({ specs, light }: { specs: string[]; light?: boolean }) =>
+  specs.length ? (
+    <div className="mt-2 flex flex-wrap gap-1.5">
+      {specs.map((t) => <span key={t} className="px-2.5 py-1 text-sm font-bold" style={{ fontFamily: FONT, background: light ? "rgba(26,26,26,0.85)" : "#EFEAE0", color: light ? "#FFFFFF" : CARBON, clipPath: cut(6) }}>{t}</span>)}
+    </div>
+  ) : null;
+
+/* 1 · Repassé : même disposition qu'aujourd'hui, la trott debout sur le wallpaper, la plaque en papier clair. */
+const StageRepasse = ({ scooter, scooterCount, currentIndex, onPrev, onNext, label }: StageProps) => {
+  const m = scooter.scooter_model;
+  const multi = scooterCount > 1;
+  return (
+    <div>
+      <Grounded m={m} h="h-[270px] lg:h-[400px]" />
+      <div className="mt-2 px-4 py-4 lg:px-6" style={{ background: PAPER, clipPath: cut(18) }}>
+        <Kicker label={label} multi={multi} i={currentIndex} n={scooterCount} />
+        <div className="mt-1 flex items-end justify-between gap-3">
+          <Title m={m} nickname={scooter.nickname} />
+          {multi && <div className="flex gap-2 shrink-0"><ArrowBtn dir="prev" onClick={onPrev} disabled={currentIndex <= 0} /><ArrowBtn dir="next" onClick={onNext} disabled={currentIndex >= scooterCount - 1} /></div>}
+        </div>
+        <Chips specs={stageSpecs(m)} />
+      </div>
+    </div>
+  );
+};
+
+/* 2 · Au sol : la lecture littérale — rien autour, la trott au sol du garage, le nom écrit sur le wallpaper. */
+const StageSol = ({ scooter, scooterCount, currentIndex, onPrev, onNext, label }: StageProps) => {
+  const m = scooter.scooter_model;
+  const multi = scooterCount > 1;
+  return (
+    <div>
+      <Grounded m={m} h="h-[300px] lg:h-[440px]" />
+      <div className="mt-3 flex items-end justify-between gap-3">
+        <div className="min-w-0">
+          <Kicker label={label} multi={multi} i={currentIndex} n={scooterCount} light />
+          <div className="mt-1"><Title m={m} nickname={scooter.nickname} light /></div>
+          <Chips specs={stageSpecs(m)} light />
+        </div>
+        {multi && <div className="flex gap-2 shrink-0"><ArrowBtn dir="prev" onClick={onPrev} disabled={currentIndex <= 0} /><ArrowBtn dir="next" onClick={onNext} disabled={currentIndex >= scooterCount - 1} /></div>}
+      </div>
+    </div>
+  );
+};
+
+/* 3 · Plaque : flèches de chaque côté de la trott, une petite plaque claire centrée sous ses roues. */
+const StagePlaque = ({ scooter, scooterCount, currentIndex, onPrev, onNext, label }: StageProps) => {
+  const m = scooter.scooter_model;
+  const multi = scooterCount > 1;
+  return (
+    <div>
+      <div className="relative">
+        <Grounded m={m} h="h-[290px] lg:h-[420px]" />
+        {multi && (
+          <div className="pointer-events-none absolute inset-x-0 top-1/2 -translate-y-1/2 flex justify-between">
+            <ArrowBtn dir="prev" onClick={onPrev} disabled={currentIndex <= 0} size="w-12 h-12" />
+            <ArrowBtn dir="next" onClick={onNext} disabled={currentIndex >= scooterCount - 1} size="w-12 h-12" />
+          </div>
+        )}
+      </div>
+      <div className="mx-auto mt-2 w-fit max-w-full px-5 py-3 text-center" style={{ background: PAPER, clipPath: cut(12) }}>
+        <Kicker label={label} multi={multi} i={currentIndex} n={scooterCount} />
+        <div className="mt-1"><Title m={m} nickname={scooter.nickname} size="text-[22px] lg:text-[30px]" /></div>
+        <div className="flex justify-center"><Chips specs={stageSpecs(m)} /></div>
+      </div>
+    </div>
+  );
+};
+
+/* 4 · Défilé : la trott au sol, sa plaque, et toutes les machines en vignettes à toucher (plus besoin de flèches). */
+const StageDefile = ({ scooter, scooterCount, currentIndex, onPrev, onNext, label, thumbs, onPick }: StageProps) => {
+  if (!thumbs?.length || !onPick) return <StageRepasse {...{ scooter, scooterCount, currentIndex, onPrev, onNext, label }} />;
+  const m = scooter.scooter_model;
+  return (
+    <div>
+      <Grounded m={m} h="h-[270px] lg:h-[400px]" />
+      <div className="mt-2 px-4 pt-4 pb-3 lg:px-6" style={{ background: PAPER, clipPath: cut(18) }}>
+        <Kicker label={label} multi={scooterCount > 1} i={currentIndex} n={scooterCount} />
+        <div className="mt-1"><Title m={m} nickname={scooter.nickname} /></div>
+        <Chips specs={stageSpecs(m)} />
+        <div className="-mx-4 lg:-mx-6 mt-3 px-4 lg:px-6 flex gap-2 overflow-x-auto pb-1" style={{ scrollbarWidth: "none" }}>
+          {thumbs.map((t, k) => (
+            <button key={t.id} type="button" onClick={() => onPick(k)} aria-label={t.name} aria-pressed={k === currentIndex}
+              className="shrink-0 w-[60px] h-[60px] p-1 bg-white" style={{ clipPath: cut(8), boxShadow: k === currentIndex ? `inset 0 0 0 3px ${GREEN}` : `inset 0 0 0 1px ${LINE}` }}>
+              {t.img ? <img src={t.img} alt="" loading="lazy" className="w-full h-full object-contain" /> : <Bike className="w-full h-full text-gray-400" strokeWidth={1} />}
+            </button>
+          ))}
+        </div>
+      </div>
+    </div>
+  );
+};
+
+/* 5 · Projecteur : la trott sous un rond de lumière, son reflet au sol, le nom sur le wallpaper. */
+const StageProjecteur = ({ scooter, scooterCount, currentIndex, onPrev, onNext, label }: StageProps) => {
+  const m = scooter.scooter_model;
+  const multi = scooterCount > 1;
+  return (
+    <div>
+      <div className="relative pb-16 lg:pb-20"><Grounded m={m} h="h-[280px] lg:h-[400px]" reflect spot /></div>
+      <div className="-mt-10 lg:-mt-12 relative flex items-end justify-between gap-3">
+        <div className="min-w-0">
+          <Kicker label={label} multi={multi} i={currentIndex} n={scooterCount} light />
+          <div className="mt-1"><Title m={m} nickname={scooter.nickname} light /></div>
+          <Chips specs={stageSpecs(m)} light />
+        </div>
+        {multi && <div className="flex gap-2 shrink-0"><ArrowBtn dir="prev" onClick={onPrev} disabled={currentIndex <= 0} /><ArrowBtn dir="next" onClick={onNext} disabled={currentIndex >= scooterCount - 1} /></div>}
+      </div>
+    </div>
+  );
+};
+
+export const ScooterStage = (props: StageProps) => {
+  const [v] = useState(readScene);
+  if (v === 1) return <StageRepasse {...props} />;
+  if (v === 2) return <StageSol {...props} />;
+  if (v === 3) return <StagePlaque {...props} />;
+  if (v === 4) return <StageDefile {...props} />;
+  if (v === 5) return <StageProjecteur {...props} />;
+  return <StageActuel {...props} />;
 };
 
 /* ---------- 3 actions, une seule pleine ---------- */
