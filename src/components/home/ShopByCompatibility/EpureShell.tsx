@@ -12,6 +12,25 @@ import { Link } from "react-router-dom";
 import { ArrowRight, ChevronRight, Search, X } from "lucide-react";
 import type { CategoryGroupV2 } from "@/hooks/useShopByCategoryDataV2";
 import { scooterFullName } from "@/lib/scooterName";
+import { optimizedImage } from "@/lib/imageTransform";
+
+/* 25/10 soir (capture de Nolan, Dualtron Alien) : « Pour ta Dualtron Alien ✕ » passe inaperçu — on ne comprend pas
+   que la liste est filtrée ni comment l'enlever. ?trottfiltre=1..5 = propositions, 0 = ligne actuelle. */
+export const DEFAULT_TROTT_FILTRE = 0;
+const readTrottFiltre = (): number => {
+  try {
+    const v = new URLSearchParams(window.location.search).get("trottfiltre");
+    if (v !== null && /^[0-5]$/.test(v)) { sessionStorage.setItem("pt-trottfiltre", v); return Number(v); }
+    const s = sessionStorage.getItem("pt-trottfiltre");
+    if (s !== null && /^[0-5]$/.test(s)) return Number(s);
+  } catch { /* stockage indisponible */ }
+  return DEFAULT_TROTT_FILTRE;
+};
+const TF_CSS = `@keyframes ptTfIn{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
+@keyframes ptTfGhost{from{opacity:0;transform:scale(.94)}to{opacity:.16;transform:none}}
+.pt-tf-in{animation:ptTfIn .5s cubic-bezier(.22,1,.36,1) both}
+.pt-tf-ghost{animation:ptTfGhost .7s cubic-bezier(.22,1,.36,1) both}
+@media (prefers-reduced-motion: reduce){.pt-tf-in,.pt-tf-ghost{animation:none}.pt-tf-ghost{opacity:.16}}`;
 
 const FONT = "'Plus Jakarta Sans', sans-serif";
 const UNB = "'Unbounded', sans-serif";
@@ -26,6 +45,7 @@ export type EpureVariant = 6 | 7 | 8 | 9 | 10;
 export interface EpureProps {
   variant: EpureVariant;
   scooterName: string | null;
+  scooterImage?: string | null;
   brandName: string | null;
   totalCount: number;
   categories: CategoryGroupV2[];
@@ -63,6 +83,59 @@ const TrottLink = (p: EpureProps) =>
       Filtrer pour ma trott <ChevronRight className="w-4 h-4" />
     </button>
   );
+
+const Thumb = ({ src, size }: { src?: string | null; size: number }) => (
+  <span className="shrink-0 flex items-center justify-center" style={{ width: size, height: size, background: "#F2EFE8" }}>
+    {src ? <img src={optimizedImage(src, 200)} alt="" className="max-h-full max-w-[90%] object-contain" /> : null}
+  </span>
+);
+
+/** Trott choisie : 5 façons de le dire (la 0 = TrottLink actuel, la 4 est dans l'en-tête). */
+const TrottChosen = ({ p, v }: { p: EpureProps; v: number }) => {
+  const name = scooterLabel(p);
+  if (v === 2) return ( // Plaque : cadre carbone, photo, « Filtré pour ta », croix bien visible
+    <div className="pt-tf-in mt-1 flex items-stretch bg-white" style={{ boxShadow: `inset 0 0 0 2px ${CARBON}` }}>
+      <button type="button" onClick={p.onPickScooter} className="flex-1 min-w-0 flex items-center gap-3 p-2 text-left" aria-label="Changer de trottinette">
+        <Thumb src={p.scooterImage} size={60} />
+        <span className="min-w-0">
+          <span className="block text-sm font-extrabold uppercase tracking-[0.12em]" style={{ fontFamily: FONT, color: GREEN }}>Filtré pour ta</span>
+          <span className="block uppercase leading-[1.1] break-words" style={{ fontFamily: UNB, fontWeight: 900, fontStyle: "italic", fontSize: 16, color: CARBON }}>{name}</span>
+        </span>
+      </button>
+      <button type="button" onClick={p.onClearScooter} aria-label="Retirer le filtre trottinette" className="shrink-0 w-[64px] flex flex-col items-center justify-center gap-0.5 text-sm font-bold" style={{ fontFamily: FONT, color: CARBON, borderLeft: `2px solid ${CARBON}` }}>
+        <X className="w-5 h-5" strokeWidth={2.6} />Retirer
+      </button>
+    </div>
+  );
+  if (v === 3) return ( // Bandeau : vert très clair, filet vert, deux actions écrites
+    <div className="pt-tf-in mt-1 px-3 py-2 flex items-center gap-3" style={{ background: "#EEF4F0", borderLeft: `4px solid ${GREEN}` }}>
+      <Thumb src={p.scooterImage} size={56} />
+      <div className="min-w-0 flex-1" style={{ fontFamily: FONT }}>
+        <p className="pt-1 text-sm" style={{ color: "#3F4A42" }}>Pièces vérifiées pour ta <b style={{ color: CARBON }}>{name}</b></p>
+        <div className="flex flex-wrap gap-x-4">
+          <button type="button" onClick={p.onPickScooter} className="min-h-[44px] text-sm font-bold underline underline-offset-4" style={{ color: CARBON }}>Changer de trott</button>
+          <button type="button" onClick={p.onClearScooter} className="min-h-[44px] inline-flex items-center gap-1 text-sm font-bold" style={{ color: CARBON }}><X className="w-4 h-4" />Toutes les pièces</button>
+        </div>
+      </div>
+    </div>
+  );
+  if (v === 5) return ( // Repassé : la ligne actuelle, avec la mini-photo et une vraie croix « Retirer »
+    <div className="mt-1 flex items-center gap-2 min-h-[44px]" style={{ fontFamily: FONT, color: CARBON }}>
+      <Thumb src={p.scooterImage} size={40} />
+      <span className="text-sm min-w-0">Pour ta <b>{name}</b></span>
+      <button type="button" onClick={p.onClearScooter} className="ml-auto shrink-0 h-10 px-3 inline-flex items-center gap-1.5 text-sm font-bold bg-white" style={{ boxShadow: `inset 0 0 0 1.5px ${CARBON}` }}>
+        <X className="w-4 h-4" strokeWidth={2.6} />Retirer
+      </button>
+    </div>
+  );
+  if (v === 1) return ( // Fantôme : la ligne actuelle ; la trott est en grand, en fondu derrière l'en-tête
+    <span className="inline-flex items-center gap-1 min-h-[44px] text-[15px]" style={{ fontFamily: FONT, color: CARBON }}>
+      <span>Pour ta <b>{name}</b></span>
+      <button type="button" onClick={p.onClearScooter} aria-label="Retirer le filtre trottinette" className="w-11 h-11 inline-flex items-center justify-center"><X className="w-5 h-5" strokeWidth={2.4} /></button>
+    </span>
+  );
+  return <TrottLink {...p} />;
+};
 
 /** Champ de recherche : « ligne » (souligné seul) ou « boîte » (fine bordure, loupe dedans, pas de flèche noire). */
 const Field = ({ p, kind = "line" }: { p: EpureProps; kind?: "line" | "box" }) => (
@@ -159,6 +232,8 @@ const count = (p: EpureProps) => `${p.totalCount} pièce${p.totalCount > 1 ? "s"
 
 const EpureShell = (p: EpureProps) => {
   const v = p.variant;
+  const [tf] = useState(readTrottFiltre);
+  const chosen = !!p.scooterName && tf > 0;
   const [open, setOpen] = useState(false);
   const [plateau] = useState(() => readPontVariant() === 9);
 
@@ -272,17 +347,35 @@ const EpureShell = (p: EpureProps) => {
     <section className="w-full" style={{ background: PAPER, scrollMarginTop: 40 }} data-home-variant="6">
       {/* 20/10 « Plateau blanc » (choix Nolan, ?pont=9 par défaut) : le catalogue se pose sur un plateau blanc chanfreiné. */}
       <div style={plateau ? { background: "#FFFFFF", clipPath: "polygon(0 0, calc(100% - 40px) 0, 100% 40px, 100% 100%, 0 100%)", boxShadow: "inset 0 1px 0 #E2DCD0" } : undefined}>
-      <div className={`max-w-7xl mx-auto px-4 lg:px-8 ${plateau ? "pt-10 pb-12 lg:pt-14 lg:pb-16" : "py-12 lg:py-16"}`}>
-        <div className="flex items-end justify-between gap-4">
+      <div className={`relative max-w-7xl mx-auto px-4 lg:px-8 ${plateau ? "pt-10 pb-12 lg:pt-14 lg:pb-16" : "py-12 lg:py-16"}`}>
+        {chosen && <style>{TF_CSS}</style>}
+        {chosen && tf === 1 && p.scooterImage && (
+          <img key={p.scooterName} src={optimizedImage(p.scooterImage, 600)} alt="" aria-hidden className="pt-tf-ghost pointer-events-none absolute right-0 top-2 h-[230px] lg:h-[300px] w-auto max-w-[70%] object-contain" style={{ filter: "blur(1px)" }} />
+        )}
+        {chosen && tf === 4 ? (
+          <div key={p.scooterName} className="pt-tf-in relative flex items-center gap-4">
+            <Thumb src={p.scooterImage} size={92} />
+            <div className="min-w-0" style={{ fontFamily: FONT }}>
+              <p className="text-sm font-extrabold uppercase tracking-[0.12em]" style={{ color: MUTED }}><span style={{ fontFamily: UNB, fontStyle: "italic", fontWeight: 900, color: GREEN, fontSize: 18 }}>{p.totalCount}</span> {p.totalCount > 1 ? "pièces" : "pièce"} pour ta</p>
+              <p className="uppercase leading-[1.05] break-words" style={{ fontFamily: UNB, fontWeight: 900, fontStyle: "italic", fontSize: 22, color: CARBON, letterSpacing: "-0.02em" }}>{scooterLabel(p)}</p>
+              <div className="mt-2 flex flex-wrap gap-2">
+                <button type="button" onClick={p.onPickScooter} className="h-10 px-3 text-sm font-bold bg-white" style={{ boxShadow: `inset 0 0 0 1.5px ${CARBON}`, color: CARBON }}>Changer</button>
+                <button type="button" onClick={p.onClearScooter} className="h-10 px-3 inline-flex items-center gap-1 text-sm font-bold bg-white" style={{ boxShadow: `inset 0 0 0 1.5px ${CARBON}`, color: CARBON }}><X className="w-4 h-4" />Toutes les pièces</button>
+              </div>
+            </div>
+          </div>
+        ) : (
+        <div className="relative flex items-end justify-between gap-4">
           <Link to="/catalogue?tout=1" className="text-sm font-bold uppercase tracking-[0.14em] pb-1 min-h-[44px] inline-flex items-end hover:underline underline-offset-4" style={{ fontFamily: FONT, color: MUTED }}>Le catalogue</Link>
           <p className="text-right leading-none" style={{ fontFamily: FONT }}>
             <span className="text-[32px] sm:text-[40px]" style={{ fontFamily: UNB, fontWeight: 900, fontStyle: "italic", color: GREEN, letterSpacing: "-0.03em" }}>{p.totalCount}</span>
             <span className="ml-1.5 text-[15px] font-semibold" style={{ color: MUTED }}>{p.totalCount > 1 ? "pièces" : "pièce"}</span>
           </p>
         </div>
-        <div className="mt-4 grid grid-cols-1 gap-1 lg:grid-cols-[minmax(0,1fr)_auto] lg:items-end lg:gap-6">
+        )}
+        <div className="relative mt-4 grid grid-cols-1 gap-1 lg:grid-cols-[minmax(0,1fr)_auto] lg:items-end lg:gap-6">
           <div className="min-w-0"><Field p={p} /></div>
-          <div><TrottLink {...p} /></div>
+          {!(chosen && tf === 4) && <div key={chosen ? p.scooterName ?? "" : "x"}>{chosen ? <TrottChosen p={p} v={tf} /> : <TrottLink {...p} />}</div>}
         </div>
         <div className="mt-4"><CleanTabs p={p} fade={plateau ? "#FFFFFF" : PAPER} /></div>
         <div ref={p.productsRef} className="min-w-0 scroll-mt-4 mt-5"><Cards>{p.grid}</Cards></div>

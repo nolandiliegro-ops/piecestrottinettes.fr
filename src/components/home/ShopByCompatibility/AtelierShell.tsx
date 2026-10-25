@@ -39,6 +39,7 @@ const cut = (px: number) => `polygon(0 0, calc(100% - ${px}px) 0, 100% ${px}px, 
 interface Props {
   variant: HomeVariant;
   scooterName: string | null;
+  scooterImage?: string | null;
   brandName: string | null;
   brandColor: string | null;
   totalCount: number;
@@ -250,7 +251,7 @@ const AtelierShell = (p: Props) => {
   const v = p.variant;
   // 18/10 soir, 2e tour « épuré » (?home=6..10)
   if (v >= 6) {
-    return <EpureShell variant={v as EpureVariant} scooterName={p.scooterName} brandName={p.brandName} totalCount={p.totalCount} categories={p.categories}
+    return <EpureShell variant={v as EpureVariant} scooterName={p.scooterName} scooterImage={p.scooterImage ?? null} brandName={p.brandName} totalCount={p.totalCount} categories={p.categories}
       selectedSlugs={p.selectedSlugs} onToggle={p.onToggle} query={p.query} onQuery={p.onQuery} onPickScooter={p.onPickScooter} onClearScooter={p.onClearScooter}
       catalogueHref={p.catalogueHref} footLabel={footLabel} grid={p.grid} productsRef={p.productsRef} />;
   }

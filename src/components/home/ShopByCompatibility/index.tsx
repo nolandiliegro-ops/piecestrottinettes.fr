@@ -285,6 +285,7 @@ const ShopByCompatibility = () => {
         <AtelierShell
           variant={homeVariant}
           scooterName={selectedScooter?.name ?? null}
+          scooterImage={selectedScooter?.imageUrl ?? null}
           brandName={selectedScooter?.brandName ?? null}
           brandColor={brandIsDefault ? null : brandColor}
           totalCount={data.totalCount}
