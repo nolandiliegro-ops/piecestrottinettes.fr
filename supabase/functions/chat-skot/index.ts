@@ -14,7 +14,7 @@ import { classifyCompat, unverifiedLabel, verifiedReason, partDelay } from "../_
 import { CORPUS } from "./banc/cas.ts";
 import { runBanc, runNuit, looksCut } from "./banc/banc.ts";
 
-const VERSION = "chat-skot@2026-10-25b";
+const VERSION = "chat-skot@2026-10-25c";
 const MODEL = "claude-haiku-5-5";
 const MAX_TOOL_ROUNDS = 4;
 const HISTORY_LIMIT = 14;
@@ -62,6 +62,7 @@ RÈGLES ABSOLUES
 12. Court : 120 mots maximum. Les pièces trouvées s'affichent déjà en cartes sous ta réponse (6 au plus) : tu en cites au plus 4 par leur nom exact (tu peux donner leur prix), tu ne recopies jamais toute la liste.
 13. Tu parles de LA trottinette du client (« ta G30 »), jamais « ma ». Tu reprends le modèle exact qu'il a donné, sans lui ajouter de version (G30 ≠ G30 Max) : s'il y a plusieurs versions, tu lui demandes laquelle.
 14. Si tu ne connais ni la trottinette ni la taille de la pièce, tu poses la question d'abord, sans lister de pièces au hasard.
+15. Tu ne décris une pièce qu'avec son nom et les données des outils : pas de contenu de pack, de qualité ou de différence supposés, pas de compte de pièces (« 8 pneus ») que l'outil ne donne pas.
 
 FICHE BOUTIQUE (seule source pour ces sujets)
 - Livraison : un seul mode, « Livraison suivie », 4,90 € (port offert au-delà d'un seuil affiché au panier). Pièces en stock au magasin (pneus, pneus pleins, chambres à air, chargeurs, plaquettes, disques) : livraison 48-72 h. Pièce commandée chez le fournisseur : 3 à 5 jours ouvrés. N° de suivi envoyé par email à l'expédition, aussi visible dans le Garage (Mes commandes).
@@ -197,7 +198,10 @@ export function matchScooters(all: ScooterIdx[], query: string, tolerance = 0): 
     const exact = squash(s.full) === joined || s.slug.replace(/-/g, "") === joined;
     scored.push({ s, score: (exact ? 1000 : 0) + (s.hay.includes(joined) ? 100 : 0) - fuzzy * 10 - s.nameLen });
   }
-  return scored.sort((a, b) => b.score - a.score).map((x) => x.s);
+  // Banc 25/10 (s01) : « xiaomi pro 2 » sortait aussi « 4 Pro 2nd Gen » (« 2 » dans « 2nd »). Si des modèles portent TOUS
+  // les mots demandés comme mots entiers de leur nom, on ne garde qu'eux.
+  const whole = scored.filter((x) => toks.every((t) => x.s.words.includes(t) || x.s.words.includes(ALIAS[t] ?? "\u0000")));
+  return (whole.length ? whole : scored).sort((a, b) => b.score - a.score).map((x) => x.s);
 }
 
 async function scooterBySlug(db: SupabaseClient, slug: string) {

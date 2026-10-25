@@ -7,7 +7,7 @@
 import { CORPUS, type CasSkot } from "./cas.ts";
 
 const JUDGE_MODEL = "claude-haiku-5-5";
-const CONCURRENCY = 3;
+const CONCURRENCY = 4; // 70 cas ≈ 150 s à 3 : marge sous la limite de durée d'une Edge Function
 const MAX_JUDGED_CONVERSATIONS = 12;
 
 type Db = any;
