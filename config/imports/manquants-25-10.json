@@ -1,0 +1,350 @@
+[
+ {
+  "brandName": "Ninebot",
+  "scooters": [
+   {
+    "name": "Ninebot F2 E II",
+    "slug": "ninebot-f2-e-ii",
+    "source_image_urls": [
+     "https://cdn.shopify.com/s/files/1/0983/1487/9322/files/F2-Pro-II-side-viewcopy.webp?v=1769087161",
+     "https://cdn.shopify.com/s/files/1/0983/1487/9322/files/2_11copy.webp?v=1769087161",
+     "https://cdn.shopify.com/s/files/1/0983/1487/9322/files/4_5copy.webp?v=1769087161"
+    ],
+    "description": "La Ninebot F2 E II est la citadine 2026 de Segway-Ninebot : moteur 800 W en pointe, batterie 367 Wh et jusqu'à 55 km d'autonomie (40 km en mode Sport). Pneus tubeless 10 pouces autocicatrisants de 60 mm, suspension avant à double ressort, frein à disque avant et frein électronique arrière, TCS, clignotants et Apple Localiser. 17,3 kg, IPX5. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+    "voltage": 36,
+    "amperage": 10.2,
+    "power_watts": 800,
+    "max_speed_kmh": 25,
+    "range_km": 55,
+    "weight_kg": 17.3,
+    "max_load_kg": 100,
+    "wheel_inches": 10,
+    "tire_size": "10 pouces tubeless autocicatrisant (60 mm)",
+    "tire_family": "pneumatic",
+    "brake_type": "disc_unknown_actuation",
+    "suspension": "Avant à double ressort",
+    "ip_rating": "IPX5",
+    "foldable": true,
+    "score_offroad": 15,
+    "meta_title": "Ninebot F2 E II - Pièces détachées | PiècesTrottinettes.fr",
+    "search_terms": "ninebot f2 e ii, pieces ninebot f2 e ii, pneu ninebot f2 e ii, chambre a air ninebot f2 e ii, plaquettes ninebot f2 e ii, chargeur ninebot f2 e ii",
+    "meta_description": "Pièces détachées Ninebot F2 E II : pneus 10 pouces tubeless, plaquettes, chargeur 36V. Compatibilité vérifiée, livraison rapide."
+   },
+   {
+    "name": "Ninebot F2 Pro E II",
+    "slug": "ninebot-f2-pro-e-ii",
+    "source_image_urls": [
+     "https://cdn.shopify.com/s/files/1/0983/1487/9322/files/F2-Pro-II-side-viewcopy.webp?v=1769087161",
+     "https://cdn.shopify.com/s/files/1/0983/1487/9322/files/F2-II-Pro-Block-12-desktop_1_copy_4cc3c2fb-7c38-4284-b13c-61efb28fd572.webp?v=1769087120",
+     "https://cdn.shopify.com/s/files/1/0983/1487/9322/files/F2-II-Pro-Block-9-desktop_1_copy.webp?v=1769087125",
+     "https://cdn.shopify.com/s/files/1/0983/1487/9322/files/2_11copy.webp?v=1769087161"
+    ],
+    "description": "La Ninebot F2 Pro E II pousse la gamme F2 à 900 W en pointe avec une batterie 460 Wh pour jusqu'à 65 km d'autonomie (45 km en Sport). Pneus tubeless 10 pouces autocicatrisants, suspension avant à double ressort, frein à disque avant + électronique arrière, TCS, alarme antivol et Apple Localiser. 17,8 kg, 120 kg de charge, IPX5. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+    "voltage": 36,
+    "power_watts": 900,
+    "max_speed_kmh": 25,
+    "range_km": 65,
+    "weight_kg": 17.8,
+    "max_load_kg": 120,
+    "wheel_inches": 10,
+    "tire_size": "10 pouces tubeless autocicatrisant (60 mm)",
+    "tire_family": "pneumatic",
+    "brake_type": "disc_unknown_actuation",
+    "suspension": "Avant à double ressort",
+    "ip_rating": "IPX5",
+    "foldable": true,
+    "score_offroad": 15,
+    "meta_title": "Ninebot F2 Pro E II - Pièces détachées | PiècesTrottinettes.fr",
+    "search_terms": "ninebot f2 pro e ii, pieces ninebot f2 pro e ii, pneu ninebot f2 pro e ii, chambre a air ninebot f2 pro e ii, plaquettes ninebot f2 pro e ii, chargeur ninebot f2 pro e ii",
+    "meta_description": "Pièces détachées Ninebot F2 Pro E II : pneus 10 pouces tubeless, plaquettes, chargeur 36V. Compatibilité vérifiée, livraison rapide."
+   },
+   {
+    "name": "Ninebot E2 Plus E II",
+    "slug": "ninebot-e2-plus-e-ii",
+    "source_image_urls": [
+     "https://cdn.shopify.com/s/files/1/0983/1487/9322/files/E2-Plus-E-II-side-viewcopy.webp?v=1769164896",
+     "https://cdn.shopify.com/s/files/1/0983/1487/9322/files/e2_plus_ii_e_product_picture_handlebar-2140x1605_72copy.webp?v=1769164903",
+     "https://cdn.shopify.com/s/files/1/0983/1487/9322/files/e2_plus_ii_e_product_picture_suspension-2140x1605_72copy.webp?v=1769164906"
+    ],
+    "description": "La Ninebot E2 Plus E II est l'entrée de gamme de Segway-Ninebot : moteur 500 W en pointe, batterie 220 Wh et jusqu'à 25 km d'autonomie. Pneus alvéolés increvables de 8,1 pouces, suspension avant à ressorts, frein électronique avant et tambour arrière, clignotants intégrés. 16 kg, 90 kg de charge, IPX4. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+    "voltage": 36,
+    "power_watts": 500,
+    "max_speed_kmh": 25,
+    "range_km": 25,
+    "weight_kg": 16,
+    "max_load_kg": 90,
+    "wheel_inches": 8.1,
+    "tire_size": "8,1 pouces alvéolés (pleins)",
+    "tire_family": "solid",
+    "brake_type": "ebs_front_drum_rear",
+    "suspension": "Avant à ressorts",
+    "ip_rating": "IPX4",
+    "foldable": true,
+    "score_offroad": 5,
+    "meta_title": "Ninebot E2 Plus E II - Pièces détachées | PiècesTrottinettes.fr",
+    "search_terms": "ninebot e2 plus e ii, pieces ninebot e2 plus e ii, pneu ninebot e2 plus e ii, chambre a air ninebot e2 plus e ii, plaquettes ninebot e2 plus e ii, chargeur ninebot e2 plus e ii",
+    "meta_description": "Pièces détachées Ninebot E2 Plus E II : pneus pleins 8 pouces, frein tambour, chargeur 36V. Compatibilité vérifiée, livraison rapide."
+   },
+   {
+    "name": "Ninebot MAX G3 Pro E",
+    "slug": "ninebot-max-g3-pro-e",
+    "source_image_urls": [
+     "https://cdn.shopify.com/s/files/1/0983/1487/9322/files/ninebot-max-g3-pro-e-profil-studio_d4e5dbde-5cb3-4738-a527-2fb4c7ccb68b.webp?v=1792747470",
+     "https://cdn.shopify.com/s/files/1/0983/1487/9322/files/ninebot-max-g3-pro-e-trois-quarts-avant_5fe60fc9-8da6-4d91-b0e7-66ec8e122dae.webp?v=1792747470",
+     "https://cdn.shopify.com/s/files/1/0983/1487/9322/files/ninebot-max-g3-pro-e-trois-quarts-arriere_f51ec7bc-e421-45bb-9986-05012b75cee8.webp?v=1792747471",
+     "https://cdn.shopify.com/s/files/1/0983/1487/9322/files/max-g3-pro-e-profil.webp?v=1792689333"
+    ],
+    "description": "La Ninebot MAX G3 Pro E (2026) est la longue distance de Segway-Ninebot : 2 300 W en pointe, pente de 30 %, batterie 899 Wh (48 V 20 Ah) pour 80 km à 25 km/h. Doubles suspensions hydrauliques, freins à disque 140 mm avant et arrière, pneus tubeless autocicatrisants 12 et 11 pouces. 24,9 kg, 130 kg de charge, IPX6. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+    "voltage": 48,
+    "amperage": 20,
+    "power_watts": 2300,
+    "max_speed_kmh": 25,
+    "range_km": 120,
+    "weight_kg": 24.9,
+    "max_load_kg": 130,
+    "wheel_inches": 12,
+    "tire_size": "Avant 12 x 2,8 pouces, arrière 11 x 2,8 pouces, tubeless autocicatrisants",
+    "tire_family": "pneumatic",
+    "brake_type": "disc_unknown_actuation",
+    "suspension": "Doubles suspensions hydrauliques (50 mm)",
+    "ip_rating": "IPX6",
+    "foldable": true,
+    "score_offroad": 35,
+    "year": 2026,
+    "meta_title": "Ninebot MAX G3 Pro E - Pièces détachées | PiècesTrottinettes.fr",
+    "search_terms": "ninebot max g3 pro e, pieces ninebot max g3 pro e, pneu ninebot max g3 pro e, chambre a air ninebot max g3 pro e, plaquettes ninebot max g3 pro e, chargeur ninebot max g3 pro e",
+    "meta_description": "Pièces détachées Ninebot MAX G3 Pro E : pneus tubeless 11 et 12 pouces, plaquettes, chargeur 48V. Compatibilité vérifiée, livraison rapide."
+   }
+  ]
+ },
+ {
+  "brandName": "Segway",
+  "scooters": [
+   {
+    "name": "Segway GT3 Pro",
+    "slug": "segway-gt3-pro",
+    "source_image_urls": [
+     "https://cdn.shopify.com/s/files/1/0983/1487/9322/files/gt3_pro_image.webp?v=1775228276",
+     "https://cdn.shopify.com/s/files/1/0983/1487/9322/files/gt3procopy.webp?v=1775228276",
+     "https://cdn.shopify.com/s/files/1/0983/1487/9322/files/gt3-pro-3_1copy.webp?v=1775228276",
+     "https://cdn.shopify.com/s/files/1/0983/1487/9322/files/gt3-pro-2_1copy.webp?v=1775228276"
+    ],
+    "description": "La Segway GT3 Pro est la SuperScooter double moteur de Segway : 2 x 3 500 W en pointe, 0 à 48 km/h en 3,9 s, batterie 72 V 2 160 Wh pour jusqu'à 138 km en mode Eco. Suspensions hydrauliques réglables, freins hydrauliques à disques ventilés 140 mm, S-ABS, pneus tubeless 11 pouces de 80 mm. 53,1 kg, 150 kg de charge, IPX6. Usage sur voie privée uniquement. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+    "voltage": 72,
+    "amperage": 30,
+    "power_watts": 7000,
+    "max_speed_kmh": 25,
+    "max_speed_private_kmh": 80,
+    "range_km": 138,
+    "weight_kg": 53.1,
+    "max_load_kg": 150,
+    "wheel_inches": 11,
+    "tire_size": "11 pouces tubeless autocicatrisant 80/55-7.5",
+    "tire_family": "pneumatic",
+    "rim_diameter": "7.5",
+    "tire_section": "80/55",
+    "brake_type": "disc_hydraulic",
+    "suspension": "Hydraulique réglable avant + bras oscillant hydraulique arrière",
+    "ip_rating": "IPX6",
+    "foldable": false,
+    "score_offroad": 55,
+    "meta_title": "Segway GT3 Pro - Pièces détachées | PiècesTrottinettes.fr",
+    "search_terms": "segway gt3 pro, pieces segway gt3 pro, pneu segway gt3 pro, chambre a air segway gt3 pro, plaquettes segway gt3 pro, chargeur segway gt3 pro",
+    "meta_description": "Pièces détachées Segway GT3 Pro : pneus 80/55-7.5, plaquettes hydrauliques, chargeur 72V. Compatibilité vérifiée, livraison rapide."
+   }
+  ]
+ },
+ {
+  "brandName": "Kaabo",
+  "scooters": [
+   {
+    "name": "Kaabo Mantis King Pro",
+    "slug": "kaabo-mantis-king-pro",
+    "source_image_urls": [
+     "https://cdn.shopify.com/s/files/1/0466/8227/6001/files/KaaboMantisKingProWhite01.jpg?v=1788161173",
+     "https://cdn.shopify.com/s/files/1/0466/8227/6001/files/KaaboMantisKingProBlack01.jpg?v=1788161173",
+     "https://cdn.shopify.com/s/files/1/0466/8227/6001/files/KaaboMantisKingProWhite06.jpg?v=1788161173"
+    ],
+    "description": "La Kaabo Mantis King Pro remplace la Mantis King GT : double moteur 2 x 1 200 W, batterie 60 V 18 Ah et jusqu'à 80 km d'autonomie. Freins à disque hydrauliques avec EABS, pneus 10 x 3 pouces à chambre à air, double suspension. 34 kg, 120 kg de charge, IPX5 (batterie IPX6). Débridable sur voie privée. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+    "voltage": 60,
+    "amperage": 18,
+    "power_watts": 2400,
+    "max_speed_kmh": 25,
+    "max_speed_private_kmh": 60,
+    "range_km": 80,
+    "weight_kg": 34,
+    "max_load_kg": 120,
+    "wheel_inches": 10,
+    "tire_size": "10 x 3 pouces pneumatique (chambre à air)",
+    "tire_family": "pneumatic",
+    "brake_type": "disc_hydraulic",
+    "suspension": "Double suspension",
+    "ip_rating": "IPX5",
+    "foldable": true,
+    "score_offroad": 50,
+    "meta_title": "Kaabo Mantis King Pro - Pièces détachées | PiècesTrottinettes.fr",
+    "search_terms": "kaabo mantis king pro, pieces kaabo mantis king pro, pneu kaabo mantis king pro, chambre a air kaabo mantis king pro, plaquettes kaabo mantis king pro, chargeur kaabo mantis king pro",
+    "meta_description": "Pièces détachées Kaabo Mantis King Pro : pneus et chambres à air 10x3, plaquettes, chargeur 60V. Compatibilité vérifiée, livraison rapide."
+   },
+   {
+    "name": "Kaabo Mantis 10 Lite",
+    "slug": "kaabo-mantis-10-lite",
+    "source_image_urls": [
+     "https://cdn.shopify.com/s/files/1/0466/8227/6001/files/kaabo_mantis_10_black_-260706.jpg?v=1783321202",
+     "https://cdn.shopify.com/s/files/1/0466/8227/6001/files/kaabo-usa-mantis-10-lite-electric-scooter-urban-lifestyle.webp?v=1776695144",
+     "https://cdn.shopify.com/s/files/1/0466/8227/6001/files/kaabo-usa-mantis-10-lite-electric-scooter-city-ride_1.webp?v=1776695147"
+    ],
+    "description": "La Kaabo Mantis 10 Lite est la Mantis double moteur la plus accessible : 2 x 500 W, batterie 48 V 13 Ah et jusqu'à 60 km d'autonomie. Freins à disque 140 mm avec EABS, pneus pneumatiques 10 pouces sur jantes séparées, double suspension. 28,1 kg. Débridable sur voie privée. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+    "voltage": 48,
+    "amperage": 13,
+    "power_watts": 1000,
+    "max_speed_kmh": 25,
+    "max_speed_private_kmh": 50,
+    "range_km": 60,
+    "weight_kg": 28.1,
+    "max_load_kg": 120,
+    "wheel_inches": 10,
+    "tire_size": "10 pouces pneumatique (chambre à air, jantes séparées)",
+    "tire_family": "pneumatic",
+    "rim_type": "demi_jante",
+    "brake_type": "disc_unknown_actuation",
+    "suspension": "Double suspension",
+    "foldable": true,
+    "score_offroad": 40,
+    "meta_title": "Kaabo Mantis 10 Lite - Pièces détachées | PiècesTrottinettes.fr",
+    "search_terms": "kaabo mantis 10 lite, pieces kaabo mantis 10 lite, pneu kaabo mantis 10 lite, chambre a air kaabo mantis 10 lite, plaquettes kaabo mantis 10 lite, chargeur kaabo mantis 10 lite",
+    "meta_description": "Pièces détachées Kaabo Mantis 10 Lite : pneus et chambres à air 10 pouces, plaquettes, chargeur 48V. Compatibilité vérifiée, livraison rapide."
+   }
+  ]
+ },
+ {
+  "brandName": "Hitway",
+  "scooters": [
+   {
+    "name": "Hitway H10",
+    "slug": "hitway-h10",
+    "source_image_urls": [
+     "https://cdn.shopify.com/s/files/1/0753/7134/8256/files/H10-RED-APP-WBG_1.jpg?v=1754633701",
+     "https://cdn.shopify.com/s/files/1/0753/7134/8256/files/hitway-h10-blackred_4.png?v=1754633701",
+     "https://cdn.shopify.com/s/files/1/0753/7134/8256/files/hitway-h10-blackred_5.png?v=1754633701",
+     "https://cdn.shopify.com/s/files/1/0753/7134/8256/files/hitway-h10-blackred_6.png?v=1754633701"
+    ],
+    "description": "La Hitway H10 est une trottinette tout-chemin : moteur 500 W (1 600 W en pointe), batterie 48 V de 20,8 ou 28,6 Ah pour 80 à 110 km d'autonomie. Pneus tubeless 10 x 3 pouces, double suspension avant et amortisseur arrière, freins à disque avant et arrière, déverrouillage NFC. 29,3 à 31,3 kg selon la batterie, 120 kg de charge, IP54. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+    "voltage": 48,
+    "amperage": 28.6,
+    "power_watts": 500,
+    "max_speed_kmh": 25,
+    "max_speed_private_kmh": 45,
+    "range_km": 110,
+    "weight_kg": 31.3,
+    "max_load_kg": 120,
+    "wheel_inches": 10,
+    "tire_size": "10 x 3 pouces tubeless",
+    "tire_family": "pneumatic",
+    "brake_type": "disc_unknown_actuation",
+    "suspension": "Double suspension avant + amortisseur arrière",
+    "ip_rating": "IP54",
+    "foldable": true,
+    "score_offroad": 40,
+    "meta_title": "Hitway H10 - Pièces détachées | PiècesTrottinettes.fr",
+    "search_terms": "hitway h10, pieces hitway h10, pneu hitway h10, chambre a air hitway h10, plaquettes hitway h10, chargeur hitway h10",
+    "meta_description": "Pièces détachées Hitway H10 : pneus tubeless 10x3, plaquettes, chargeur 48V. Compatibilité vérifiée, livraison rapide."
+   }
+  ]
+ },
+ {
+  "brandName": "Hiboy",
+  "scooters": [
+   {
+    "name": "Hiboy S2 SE",
+    "slug": "hiboy-s2-se",
+    "source_image_urls": [
+     "https://cdn.shopify.com/s/files/1/0425/6350/2247/files/S2-Se.jpg?v=1762150471",
+     "https://cdn.shopify.com/s/files/1/0425/6350/2247/files/p21.jpg?v=1762150471",
+     "https://cdn.shopify.com/s/files/1/0425/6350/2247/files/11_62d39fe8-46b6-48d5-90a8-1e7034e30987.jpg?v=1762150471"
+    ],
+    "description": "La Hiboy S2 SE succède à la S2 : moteur 350 W, batterie 36 V 7,8 Ah et environ 27 km d'autonomie. Roues 10 pouces hybrides (avant plein, arrière pneumatique), frein électronique et frein à tambour, garde-boue arrière élargi. 17,1 kg, 100 kg de charge, IPX4. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+    "voltage": 36,
+    "amperage": 7.8,
+    "power_watts": 350,
+    "max_speed_kmh": 25,
+    "range_km": 27,
+    "weight_kg": 17.1,
+    "max_load_kg": 100,
+    "wheel_inches": 10,
+    "tire_size": "10 pouces : avant plein, arrière pneumatique",
+    "tire_family": "pneumatic",
+    "brake_type": "drum",
+    "ip_rating": "IPX4",
+    "foldable": true,
+    "score_offroad": 10,
+    "meta_title": "Hiboy S2 SE - Pièces détachées | PiècesTrottinettes.fr",
+    "search_terms": "hiboy s2 se, pieces hiboy s2 se, pneu hiboy s2 se, chambre a air hiboy s2 se, plaquettes hiboy s2 se, chargeur hiboy s2 se",
+    "meta_description": "Pièces détachées Hiboy S2 SE : pneu arrière 10 pouces, chambre à air, frein tambour, chargeur 36V. Compatibilité vérifiée, livraison rapide."
+   }
+  ]
+ },
+ {
+  "brandName": "Joyor",
+  "scooters": [
+   {
+    "name": "Joyor F5",
+    "slug": "joyor-f5",
+    "source_image_urls": [
+     "https://cdn.shopify.com/s/files/1/0923/0385/1885/files/Joyor-F5-Black-1.jpg?v=1770802703",
+     "https://cdn.shopify.com/s/files/1/0923/0385/1885/files/Joyor-F5-Black-2.jpg?v=1770802703",
+     "https://cdn.shopify.com/s/files/1/0923/0385/1885/files/Joyor-F5-Black-3.jpg?v=1770802703",
+     "https://cdn.shopify.com/s/files/1/0923/0385/1885/files/Joyor-F5-Black-4.jpg?v=1770802703"
+    ],
+    "description": "La Joyor F5 (2026) est une citadine compacte : moteur 500 W, batterie 48 V 10,4 Ah et jusqu'à 38 km d'autonomie. Pneu avant pneumatique 8 pouces et arrière plein, frein à tambour arrière, suspension avant. 16 kg, 120 kg de charge. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+    "voltage": 48,
+    "amperage": 10.4,
+    "power_watts": 500,
+    "max_speed_kmh": 25,
+    "range_km": 38,
+    "weight_kg": 16,
+    "max_load_kg": 120,
+    "wheel_inches": 8,
+    "tire_size": "8 pouces : avant pneumatique, arrière plein",
+    "tire_family": "pneumatic",
+    "brake_type": "drum",
+    "suspension": "Avant",
+    "foldable": true,
+    "score_offroad": 10,
+    "year": 2026,
+    "meta_title": "Joyor F5 - Pièces détachées | PiècesTrottinettes.fr",
+    "search_terms": "joyor f5, pieces joyor f5, pneu joyor f5, chambre a air joyor f5, plaquettes joyor f5, chargeur joyor f5",
+    "meta_description": "Pièces détachées Joyor F5 : pneu 8 pouces, chambre à air, frein tambour, chargeur 48V. Compatibilité vérifiée, livraison rapide."
+   },
+   {
+    "name": "Joyor S8",
+    "slug": "joyor-s8",
+    "source_image_urls": [
+     "https://cdn.shopify.com/s/files/1/0923/0385/1885/files/joyor-s8-black-1.jpg?v=1748314715",
+     "https://cdn.shopify.com/s/files/1/0923/0385/1885/files/joyor-s8-black-2.jpg?v=1748314715",
+     "https://cdn.shopify.com/s/files/1/0923/0385/1885/files/joyor-s8-black-3.jpg?v=1748314715",
+     "https://cdn.shopify.com/s/files/1/0923/0385/1885/files/joyor-s8-black-4.jpg?v=1748314715"
+    ],
+    "description": "La Joyor S8 est la grande routière mono-moteur de Joyor : moteur 600 W, batterie 48 V 26 Ah et jusqu'à 90 km d'autonomie. Pneus pneumatiques tout-terrain 10 pouces, freins à disque mécaniques avant et arrière, double suspension. 25,8 kg, 120 kg de charge, IP54. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+    "voltage": 48,
+    "amperage": 26,
+    "power_watts": 600,
+    "max_speed_kmh": 25,
+    "range_km": 90,
+    "weight_kg": 25.8,
+    "max_load_kg": 120,
+    "wheel_inches": 10,
+    "tire_size": "10 pouces pneumatique tout-terrain",
+    "tire_family": "pneumatic",
+    "brake_type": "disc_mechanical",
+    "suspension": "Double suspension",
+    "ip_rating": "IP54",
+    "foldable": true,
+    "score_offroad": 35,
+    "meta_title": "Joyor S8 - Pièces détachées | PiècesTrottinettes.fr",
+    "search_terms": "joyor s8, pieces joyor s8, pneu joyor s8, chambre a air joyor s8, plaquettes joyor s8, chargeur joyor s8",
+    "meta_description": "Pièces détachées Joyor S8 : pneus et chambres à air 10 pouces, plaquettes, chargeur 48V. Compatibilité vérifiée, livraison rapide."
+   }
+  ]
+ }
+]
