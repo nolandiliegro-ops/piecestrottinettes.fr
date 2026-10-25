@@ -174,6 +174,9 @@ async function dry() {
         if (picks.includes(r) || vues.has(r.juge.vue) || fam.has(famille(r.juge.vue))) continue;
         fam.add(famille(r.juge.vue));
         if (r.juge.vue === 'detail' && picks.length + (m.current || []).length >= 3) continue;
+        // 25/10 (Nolan : « ce genre de roue, ça saute ») : un gros plan n'entre jamais sans une vue 3/4 propre trouvée dans
+        // le même passage — sinon il peut finir seul sur la fiche (iScooter W12, Isinwheel H7 Pro).
+        if (r.juge.vue === 'detail' && !p34) continue;
         picks.push(r); vues.add(r.juge.vue);
       }
       proposition[m.slug] = { id: m.id, published: m.published !== false, en_ligne: (m.current || []).length, nouvelle_principale: p34 ? p34.i : null, ajouts: picks.map((r) => ({ i: r.i, vue: r.juge.vue })), statut: p34 ? '3/4 trouvé' : retenus.length ? 'photos sans 3/4' : 'rien de valable' };
