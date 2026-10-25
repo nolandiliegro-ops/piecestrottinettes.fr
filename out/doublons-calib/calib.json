@@ -6,7 +6,8 @@
  "seuils_actuels": {
   "dhash": 6,
   "iou": 0.97,
-  "dhashAvecIou": 12
+  "dhashAvecIou": 12,
+  "couleur": 20
  },
  "actuels": {
   "faux_positifs": [
@@ -15,395 +16,243 @@
     "ia": 0,
     "ib": 2,
     "d": 0,
-    "io": 0.9484848484848485
-   },
-   {
-    "slug": "cecotec-bongo-serie-m20",
-    "ia": 0,
-    "ib": 3,
-    "d": 3,
-    "io": 0.6387434554973822
-   },
-   {
-    "slug": "e-twow-booster-es",
-    "ia": 0,
-    "ib": 2,
-    "d": 5,
-    "io": 0.9383561643835616
-   },
-   {
-    "slug": "e-twow-booster-v",
-    "ia": 0,
-    "ib": 2,
-    "d": 4,
-    "io": 0.9078341013824884
+    "io": 0.9484848484848485,
+    "c": 3.520833333333333
    },
    {
     "slug": "e-twow-gt-sport",
     "ia": 0,
     "ib": 1,
     "d": 1,
-    "io": 0.6371681415929203
+    "io": 0.6371681415929203,
+    "c": 14.708333333333332
    },
    {
     "slug": "e-twow-gts",
     "ia": 2,
     "ib": 3,
     "d": 6,
-    "io": 0.43256997455470736
+    "io": 0.43256997455470736,
+    "c": 18.291666666666668
    },
    {
     "slug": "e-twow-tanktorq-tk5",
     "ia": 0,
     "ib": 3,
     "d": 3,
-    "io": 0.9717948717948718
+    "io": 0.9717948717948718,
+    "c": 15.125000000000002
    },
    {
     "slug": "engwe-y1000",
     "ia": 1,
     "ib": 3,
     "d": 0,
-    "io": 1
+    "io": 1,
+    "c": 0.31249999999999994
    },
    {
     "slug": "hiboy-ks4-pro",
     "ia": 0,
     "ib": 1,
     "d": 6,
-    "io": 0.7890173410404624
-   },
-   {
-    "slug": "hiboy-s2-lite",
-    "ia": 0,
-    "ib": 2,
-    "d": 7,
-    "io": 0.9725085910652921
+    "io": 0.7890173410404624,
+    "c": 14.166666666666668
    },
    {
     "slug": "hikerboy-brio",
     "ia": 0,
     "ib": 2,
     "d": 4,
-    "io": 0.9476923076923077
+    "io": 0.9476923076923077,
+    "c": 11.250000000000002
    },
    {
     "slug": "hikerboy-brio",
     "ia": 0,
     "ib": 3,
     "d": 1,
-    "io": 0.9384615384615385
+    "io": 0.9384615384615385,
+    "c": 17.458333333333336
    },
    {
     "slug": "hikerboy-brio",
     "ia": 2,
     "ib": 3,
     "d": 3,
-    "io": 0.953125
-   },
-   {
-    "slug": "hikerboy-curtis-plus",
-    "ia": 0,
-    "ib": 1,
-    "d": 1,
-    "io": 0.7653061224489796
+    "io": 0.953125,
+    "c": 17.416666666666668
    },
    {
     "slug": "hikerboy-foxtrot-plus",
     "ia": 1,
     "ib": 2,
     "d": 0,
-    "io": 0.9545454545454546
+    "io": 0.9545454545454546,
+    "c": 17.187500000000004
    },
    {
     "slug": "inokim-light-2",
     "ia": 2,
     "ib": 3,
     "d": 3,
-    "io": 0.9462616822429907
-   },
-   {
-    "slug": "inokim-oxo-super",
-    "ia": 1,
-    "ib": 3,
-    "d": 9,
-    "io": 0.9738562091503268
+    "io": 0.9462616822429907,
+    "c": 7.583333333333335
    },
    {
     "slug": "inokim-oxo-super",
     "ia": 2,
     "ib": 4,
     "d": 3,
-    "io": 0.8967391304347826
-   },
-   {
-    "slug": "isinwheel-s-nova-pro",
-    "ia": 0,
-    "ib": 1,
-    "d": 5,
-    "io": 0.9872773536895675
+    "io": 0.8967391304347826,
+    "c": 15.604166666666664
    },
    {
     "slug": "joyor-a5",
     "ia": 0,
     "ib": 2,
     "d": 10,
-    "io": 0.9823529411764705
-   },
-   {
-    "slug": "kaabo-wolf-warrior-king-gtr-max",
-    "ia": 0,
-    "ib": 2,
-    "d": 4,
-    "io": 0.6813996316758748
-   },
-   {
-    "slug": "kaabo-wolf-warrior-x-gt",
-    "ia": 0,
-    "ib": 2,
-    "d": 1,
-    "io": 0.9950124688279302
+    "io": 0.9823529411764705,
+    "c": 16.5
    },
    {
     "slug": "navee-s40",
     "ia": 1,
     "ib": 3,
     "d": 6,
-    "io": 0.8564102564102564
+    "io": 0.8564102564102564,
+    "c": 9.104166666666668
    },
    {
     "slug": "niu-kqi-200p",
     "ia": 1,
     "ib": 2,
     "d": 1,
-    "io": 0.8852459016393442
+    "io": 0.8852459016393442,
+    "c": 9.062500000000002
    },
    {
     "slug": "niu-kqi-300p",
     "ia": 1,
     "ib": 2,
     "d": 6,
-    "io": 0.8915094339622641
+    "io": 0.8915094339622641,
+    "c": 13.770833333333336
    },
    {
     "slug": "niu-kqi-300x",
     "ia": 1,
     "ib": 3,
     "d": 6,
-    "io": 0.919431279620853
+    "io": 0.919431279620853,
+    "c": 12.270833333333334
    },
    {
     "slug": "niu-kqi2-pro",
     "ia": 0,
     "ib": 3,
     "d": 2,
-    "io": 0.9455587392550143
+    "io": 0.9455587392550143,
+    "c": 8.354166666666668
    },
    {
     "slug": "niu-kqi2-pro",
     "ia": 2,
     "ib": 4,
     "d": 2,
-    "io": 0.8897058823529411
+    "io": 0.8897058823529411,
+    "c": 10.125
    },
    {
     "slug": "niu-kqi3-sport",
     "ia": 0,
     "ib": 1,
     "d": 1,
-    "io": 0.9313984168865436
+    "io": 0.9313984168865436,
+    "c": 12.1875
    },
    {
     "slug": "niu-kqi3-sport",
     "ia": 0,
     "ib": 2,
     "d": 1,
-    "io": 0.9785522788203753
+    "io": 0.9785522788203753,
+    "c": 16.145833333333336
    },
    {
     "slug": "niu-kqi3-sport",
     "ia": 0,
     "ib": 3,
     "d": 1,
-    "io": 0.949468085106383
+    "io": 0.949468085106383,
+    "c": 12.500000000000002
    },
    {
     "slug": "niu-kqi3-sport",
     "ia": 1,
     "ib": 2,
     "d": 0,
-    "io": 0.9368421052631579
+    "io": 0.9368421052631579,
+    "c": 5.145833333333334
    },
    {
     "slug": "niu-kqi3-sport",
     "ia": 1,
     "ib": 3,
     "d": 0,
-    "io": 0.9756756756756757
+    "io": 0.9756756756756757,
+    "c": 8.625
    },
    {
     "slug": "niu-kqi3-sport",
     "ia": 2,
     "ib": 3,
     "d": 0,
-    "io": 0.9549071618037135
-   },
-   {
-    "slug": "pure-electric-advance-flex",
-    "ia": 0,
-    "ib": 3,
-    "d": 2,
-    "io": 0.979381443298969
-   },
-   {
-    "slug": "pure-electric-advance-plus",
-    "ia": 0,
-    "ib": 2,
-    "d": 2,
-    "io": 0.9775510204081632
+    "io": 0.9549071618037135,
+    "c": 6.375
    },
    {
     "slug": "segway-gt1",
     "ia": 3,
     "ib": 4,
     "d": 4,
-    "io": 0.9431818181818182
-   },
-   {
-    "slug": "wispeed-c10-55-max",
-    "ia": 0,
-    "ib": 1,
-    "d": 5,
-    "io": 0.6915167095115681
+    "io": 0.9431818181818182,
+    "c": 11.5
    },
    {
     "slug": "wispeed-suvpilot-480",
     "ia": 0,
     "ib": 3,
     "d": 6,
-    "io": 0.6140684410646388
+    "io": 0.6140684410646388,
+    "c": 19.249999999999996
    },
    {
     "slug": "yeep-me-80n-evo-plus",
     "ia": 0,
     "ib": 3,
     "d": 1,
-    "io": 1
+    "io": 1,
+    "c": 5.354166666666666
    },
    {
     "slug": "yeep-me-80n-evo-plus",
     "ia": 2,
     "ib": 4,
     "d": 0,
-    "io": 1
-   },
-   {
-    "slug": "zwheel-zfox-max",
-    "ia": 0,
-    "ib": 2,
-    "d": 5,
-    "io": 0.4857142857142857
+    "io": 1,
+    "c": 6.895833333333333
    },
    {
     "slug": "zwheel-zfox-max",
     "ia": 3,
     "ib": 4,
     "d": 5,
-    "io": 0.8932926829268293
-   },
-   {
-    "slug": "chambre-a-air-10x2-50-valve-45x45",
-    "ia": 0,
-    "ib": 1,
-    "d": 2,
-    "io": 0.5087719298245614
-   },
-   {
-    "slug": "chambre-a-air-10x2125-valve-45x45",
-    "ia": 0,
-    "ib": 1,
-    "d": 5,
-    "io": 0.5638214565387627
-   },
-   {
-    "slug": "chambre-a-air-10x250-valve-0x90",
-    "ia": 0,
-    "ib": 1,
-    "d": 2,
-    "io": 0.5282344531808435
-   },
-   {
-    "slug": "chambre-a-air-85x2-dualtron-mini-valve-90x90",
-    "ia": 0,
-    "ib": 1,
-    "d": 6,
-    "io": 0.3738738738738739
-   },
-   {
-    "slug": "chambre-a-air-85x2-vsett-8-9-z8-pro-140mm",
-    "ia": 0,
-    "ib": 1,
-    "d": 5,
-    "io": 0.45716342692584594
-   },
-   {
-    "slug": "chambre-a-air-85x2-zero-8-9",
-    "ia": 0,
-    "ib": 1,
-    "d": 6,
-    "io": 0.4829302987197724
-   },
-   {
-    "slug": "chargeur-48v-546v-2a-connecteur-xiaomi-4-pro-max-plus-5-max",
-    "ia": 0,
-    "ib": 2,
-    "d": 5,
-    "io": 0.8473479948253557
-   },
-   {
-    "slug": "disque-de-frein-130mm-xiaomi-mi4-pro-5-trous-1st-generation",
-    "ia": 0,
-    "ib": 2,
-    "d": 5,
-    "io": 0.7943848059454995
-   },
-   {
-    "slug": "pneu-cross-100-90-18-eride-pro-sr",
-    "ia": 0,
-    "ib": 1,
-    "d": 6,
-    "io": 0.33280757097791797
-   },
-   {
-    "slug": "pneu-draisienne-14x2-125-57-254",
-    "ia": 0,
-    "ib": 1,
-    "d": 2,
-    "io": 0.4609084139985108
-   },
-   {
-    "slug": "pneu-plein-85x2-xiaomi-m365",
-    "ia": 0,
-    "ib": 1,
-    "d": 4,
-    "io": 0.5753623188405798
-   },
-   {
-    "slug": "pneu-plein-85x2-xiaomi-m365-bleu",
-    "ia": 0,
-    "ib": 1,
-    "d": 5,
-    "io": 0.5369357045143639
-   },
-   {
-    "slug": "pneu-zero-8-1-2x2-pouces-50-134",
-    "ia": 0,
-    "ib": 1,
-    "d": 6,
-    "io": 0.650887573964497
+    "io": 0.8932926829268293,
+    "c": 13.812499999999998
    }
   ],
-  "rates": 24
+  "rates": 27
  },
  "hist_dhash_negatifs": {
   "0": 7,
@@ -481,322 +330,362 @@
  "grille": [
   {
    "dhash": 4,
-   "iou": 0.98,
-   "dhashAvecIou": 10,
-   "faux_positifs": 35,
-   "detectes": 102,
-   "positifs": 130
-  },
-  {
-   "dhash": 4,
-   "iou": 0.98,
-   "dhashAvecIou": 12,
-   "faux_positifs": 35,
-   "detectes": 102,
-   "positifs": 130
-  },
-  {
-   "dhash": 4,
-   "iou": 0.98,
-   "dhashAvecIou": 14,
-   "faux_positifs": 35,
-   "detectes": 102,
-   "positifs": 130
-  },
-  {
-   "dhash": 4,
-   "iou": 0.98,
-   "dhashAvecIou": 16,
-   "faux_positifs": 35,
-   "detectes": 102,
-   "positifs": 130
-  },
-  {
-   "dhash": 4,
    "iou": 0.95,
    "dhashAvecIou": 10,
-   "faux_positifs": 37,
-   "detectes": 104,
+   "couleur": 10,
+   "faux_positifs": 10,
+   "detectes": 87,
    "positifs": 130
   },
   {
    "dhash": 4,
    "iou": 0.95,
    "dhashAvecIou": 12,
-   "faux_positifs": 37,
-   "detectes": 104,
+   "couleur": 10,
+   "faux_positifs": 10,
+   "detectes": 87,
    "positifs": 130
   },
   {
    "dhash": 4,
    "iou": 0.95,
    "dhashAvecIou": 14,
-   "faux_positifs": 37,
-   "detectes": 104,
-   "positifs": 130
-  },
-  {
-   "dhash": 4,
-   "iou": 0.95,
-   "dhashAvecIou": 16,
-   "faux_positifs": 37,
-   "detectes": 104,
-   "positifs": 130
-  },
-  {
-   "dhash": 4,
-   "iou": 0.96,
-   "dhashAvecIou": 10,
-   "faux_positifs": 37,
-   "detectes": 104,
-   "positifs": 130
-  },
-  {
-   "dhash": 4,
-   "iou": 0.96,
-   "dhashAvecIou": 12,
-   "faux_positifs": 37,
-   "detectes": 104,
-   "positifs": 130
-  },
-  {
-   "dhash": 4,
-   "iou": 0.96,
-   "dhashAvecIou": 14,
-   "faux_positifs": 37,
-   "detectes": 104,
-   "positifs": 130
-  },
-  {
-   "dhash": 4,
-   "iou": 0.96,
-   "dhashAvecIou": 16,
-   "faux_positifs": 37,
-   "detectes": 104,
+   "couleur": 10,
+   "faux_positifs": 10,
+   "detectes": 87,
    "positifs": 130
   },
   {
    "dhash": 4,
    "iou": 0.97,
    "dhashAvecIou": 10,
-   "faux_positifs": 37,
-   "detectes": 102,
+   "couleur": 10,
+   "faux_positifs": 10,
+   "detectes": 87,
    "positifs": 130
   },
   {
    "dhash": 4,
    "iou": 0.97,
    "dhashAvecIou": 12,
-   "faux_positifs": 37,
-   "detectes": 102,
+   "couleur": 10,
+   "faux_positifs": 10,
+   "detectes": 87,
    "positifs": 130
   },
   {
    "dhash": 4,
    "iou": 0.97,
    "dhashAvecIou": 14,
-   "faux_positifs": 37,
-   "detectes": 102,
+   "couleur": 10,
+   "faux_positifs": 10,
+   "detectes": 87,
+   "positifs": 130
+  },
+  {
+   "dhash": 4,
+   "iou": 0.98,
+   "dhashAvecIou": 10,
+   "couleur": 10,
+   "faux_positifs": 10,
+   "detectes": 87,
+   "positifs": 130
+  },
+  {
+   "dhash": 4,
+   "iou": 0.98,
+   "dhashAvecIou": 12,
+   "couleur": 10,
+   "faux_positifs": 10,
+   "detectes": 87,
+   "positifs": 130
+  },
+  {
+   "dhash": 4,
+   "iou": 0.98,
+   "dhashAvecIou": 14,
+   "couleur": 10,
+   "faux_positifs": 10,
+   "detectes": 87,
+   "positifs": 130
+  },
+  {
+   "dhash": 10,
+   "iou": 0.95,
+   "dhashAvecIou": 10,
+   "couleur": 10,
+   "faux_positifs": 11,
+   "detectes": 91,
+   "positifs": 130
+  },
+  {
+   "dhash": 10,
+   "iou": 0.95,
+   "dhashAvecIou": 12,
+   "couleur": 10,
+   "faux_positifs": 11,
+   "detectes": 91,
+   "positifs": 130
+  },
+  {
+   "dhash": 10,
+   "iou": 0.95,
+   "dhashAvecIou": 14,
+   "couleur": 10,
+   "faux_positifs": 11,
+   "detectes": 91,
+   "positifs": 130
+  },
+  {
+   "dhash": 10,
+   "iou": 0.97,
+   "dhashAvecIou": 10,
+   "couleur": 10,
+   "faux_positifs": 11,
+   "detectes": 91,
+   "positifs": 130
+  },
+  {
+   "dhash": 10,
+   "iou": 0.97,
+   "dhashAvecIou": 12,
+   "couleur": 10,
+   "faux_positifs": 11,
+   "detectes": 91,
+   "positifs": 130
+  },
+  {
+   "dhash": 10,
+   "iou": 0.97,
+   "dhashAvecIou": 14,
+   "couleur": 10,
+   "faux_positifs": 11,
+   "detectes": 91,
+   "positifs": 130
+  },
+  {
+   "dhash": 10,
+   "iou": 0.98,
+   "dhashAvecIou": 10,
+   "couleur": 10,
+   "faux_positifs": 11,
+   "detectes": 91,
+   "positifs": 130
+  },
+  {
+   "dhash": 10,
+   "iou": 0.98,
+   "dhashAvecIou": 12,
+   "couleur": 10,
+   "faux_positifs": 11,
+   "detectes": 91,
+   "positifs": 130
+  },
+  {
+   "dhash": 10,
+   "iou": 0.98,
+   "dhashAvecIou": 14,
+   "couleur": 10,
+   "faux_positifs": 11,
+   "detectes": 91,
+   "positifs": 130
+  },
+  {
+   "dhash": 6,
+   "iou": 0.95,
+   "dhashAvecIou": 10,
+   "couleur": 10,
+   "faux_positifs": 11,
+   "detectes": 90,
+   "positifs": 130
+  },
+  {
+   "dhash": 6,
+   "iou": 0.95,
+   "dhashAvecIou": 12,
+   "couleur": 10,
+   "faux_positifs": 11,
+   "detectes": 90,
+   "positifs": 130
+  },
+  {
+   "dhash": 6,
+   "iou": 0.95,
+   "dhashAvecIou": 14,
+   "couleur": 10,
+   "faux_positifs": 11,
+   "detectes": 90,
+   "positifs": 130
+  },
+  {
+   "dhash": 6,
+   "iou": 0.97,
+   "dhashAvecIou": 10,
+   "couleur": 10,
+   "faux_positifs": 11,
+   "detectes": 90,
+   "positifs": 130
+  },
+  {
+   "dhash": 6,
+   "iou": 0.97,
+   "dhashAvecIou": 12,
+   "couleur": 10,
+   "faux_positifs": 11,
+   "detectes": 90,
+   "positifs": 130
+  },
+  {
+   "dhash": 6,
+   "iou": 0.97,
+   "dhashAvecIou": 14,
+   "couleur": 10,
+   "faux_positifs": 11,
+   "detectes": 90,
+   "positifs": 130
+  },
+  {
+   "dhash": 6,
+   "iou": 0.98,
+   "dhashAvecIou": 10,
+   "couleur": 10,
+   "faux_positifs": 11,
+   "detectes": 90,
+   "positifs": 130
+  },
+  {
+   "dhash": 6,
+   "iou": 0.98,
+   "dhashAvecIou": 12,
+   "couleur": 10,
+   "faux_positifs": 11,
+   "detectes": 90,
+   "positifs": 130
+  },
+  {
+   "dhash": 6,
+   "iou": 0.98,
+   "dhashAvecIou": 14,
+   "couleur": 10,
+   "faux_positifs": 11,
+   "detectes": 90,
+   "positifs": 130
+  },
+  {
+   "dhash": 8,
+   "iou": 0.95,
+   "dhashAvecIou": 10,
+   "couleur": 10,
+   "faux_positifs": 11,
+   "detectes": 90,
+   "positifs": 130
+  },
+  {
+   "dhash": 8,
+   "iou": 0.95,
+   "dhashAvecIou": 12,
+   "couleur": 10,
+   "faux_positifs": 11,
+   "detectes": 90,
+   "positifs": 130
+  },
+  {
+   "dhash": 8,
+   "iou": 0.95,
+   "dhashAvecIou": 14,
+   "couleur": 10,
+   "faux_positifs": 11,
+   "detectes": 90,
+   "positifs": 130
+  },
+  {
+   "dhash": 8,
+   "iou": 0.97,
+   "dhashAvecIou": 10,
+   "couleur": 10,
+   "faux_positifs": 11,
+   "detectes": 90,
+   "positifs": 130
+  },
+  {
+   "dhash": 8,
+   "iou": 0.97,
+   "dhashAvecIou": 12,
+   "couleur": 10,
+   "faux_positifs": 11,
+   "detectes": 90,
+   "positifs": 130
+  },
+  {
+   "dhash": 8,
+   "iou": 0.97,
+   "dhashAvecIou": 14,
+   "couleur": 10,
+   "faux_positifs": 11,
+   "detectes": 90,
+   "positifs": 130
+  },
+  {
+   "dhash": 8,
+   "iou": 0.98,
+   "dhashAvecIou": 10,
+   "couleur": 10,
+   "faux_positifs": 11,
+   "detectes": 90,
+   "positifs": 130
+  },
+  {
+   "dhash": 8,
+   "iou": 0.98,
+   "dhashAvecIou": 12,
+   "couleur": 10,
+   "faux_positifs": 11,
+   "detectes": 90,
+   "positifs": 130
+  },
+  {
+   "dhash": 8,
+   "iou": 0.98,
+   "dhashAvecIou": 14,
+   "couleur": 10,
+   "faux_positifs": 11,
+   "detectes": 90,
+   "positifs": 130
+  },
+  {
+   "dhash": 4,
+   "iou": 0.95,
+   "dhashAvecIou": 10,
+   "couleur": 15,
+   "faux_positifs": 16,
+   "detectes": 98,
+   "positifs": 130
+  },
+  {
+   "dhash": 4,
+   "iou": 0.95,
+   "dhashAvecIou": 12,
+   "couleur": 15,
+   "faux_positifs": 16,
+   "detectes": 98,
+   "positifs": 130
+  },
+  {
+   "dhash": 4,
+   "iou": 0.95,
+   "dhashAvecIou": 14,
+   "couleur": 15,
+   "faux_positifs": 16,
+   "detectes": 98,
    "positifs": 130
   },
   {
    "dhash": 4,
    "iou": 0.97,
-   "dhashAvecIou": 16,
-   "faux_positifs": 37,
-   "detectes": 102,
-   "positifs": 130
-  },
-  {
-   "dhash": 6,
-   "iou": 0.98,
    "dhashAvecIou": 10,
-   "faux_positifs": 54,
-   "detectes": 106,
-   "positifs": 130
-  },
-  {
-   "dhash": 6,
-   "iou": 0.98,
-   "dhashAvecIou": 12,
-   "faux_positifs": 54,
-   "detectes": 106,
-   "positifs": 130
-  },
-  {
-   "dhash": 6,
-   "iou": 0.98,
-   "dhashAvecIou": 14,
-   "faux_positifs": 54,
-   "detectes": 106,
-   "positifs": 130
-  },
-  {
-   "dhash": 6,
-   "iou": 0.98,
-   "dhashAvecIou": 16,
-   "faux_positifs": 54,
-   "detectes": 106,
-   "positifs": 130
-  },
-  {
-   "dhash": 6,
-   "iou": 0.95,
-   "dhashAvecIou": 10,
-   "faux_positifs": 56,
-   "detectes": 107,
-   "positifs": 130
-  },
-  {
-   "dhash": 6,
-   "iou": 0.95,
-   "dhashAvecIou": 12,
-   "faux_positifs": 56,
-   "detectes": 107,
-   "positifs": 130
-  },
-  {
-   "dhash": 6,
-   "iou": 0.95,
-   "dhashAvecIou": 14,
-   "faux_positifs": 56,
-   "detectes": 107,
-   "positifs": 130
-  },
-  {
-   "dhash": 6,
-   "iou": 0.95,
-   "dhashAvecIou": 16,
-   "faux_positifs": 56,
-   "detectes": 107,
-   "positifs": 130
-  },
-  {
-   "dhash": 6,
-   "iou": 0.96,
-   "dhashAvecIou": 10,
-   "faux_positifs": 56,
-   "detectes": 107,
-   "positifs": 130
-  },
-  {
-   "dhash": 6,
-   "iou": 0.96,
-   "dhashAvecIou": 12,
-   "faux_positifs": 56,
-   "detectes": 107,
-   "positifs": 130
-  },
-  {
-   "dhash": 6,
-   "iou": 0.96,
-   "dhashAvecIou": 14,
-   "faux_positifs": 56,
-   "detectes": 107,
-   "positifs": 130
-  },
-  {
-   "dhash": 6,
-   "iou": 0.96,
-   "dhashAvecIou": 16,
-   "faux_positifs": 56,
-   "detectes": 107,
-   "positifs": 130
-  },
-  {
-   "dhash": 6,
-   "iou": 0.97,
-   "dhashAvecIou": 10,
-   "faux_positifs": 56,
-   "detectes": 106,
-   "positifs": 130
-  },
-  {
-   "dhash": 6,
-   "iou": 0.97,
-   "dhashAvecIou": 12,
-   "faux_positifs": 56,
-   "detectes": 106,
-   "positifs": 130
-  },
-  {
-   "dhash": 6,
-   "iou": 0.97,
-   "dhashAvecIou": 14,
-   "faux_positifs": 56,
-   "detectes": 106,
-   "positifs": 130
-  },
-  {
-   "dhash": 6,
-   "iou": 0.97,
-   "dhashAvecIou": 16,
-   "faux_positifs": 56,
-   "detectes": 106,
-   "positifs": 130
-  },
-  {
-   "dhash": 8,
-   "iou": 0.98,
-   "dhashAvecIou": 10,
-   "faux_positifs": 89,
-   "detectes": 112,
-   "positifs": 130
-  },
-  {
-   "dhash": 8,
-   "iou": 0.98,
-   "dhashAvecIou": 12,
-   "faux_positifs": 89,
-   "detectes": 112,
-   "positifs": 130
-  },
-  {
-   "dhash": 8,
-   "iou": 0.98,
-   "dhashAvecIou": 14,
-   "faux_positifs": 89,
-   "detectes": 112,
-   "positifs": 130
-  },
-  {
-   "dhash": 8,
-   "iou": 0.98,
-   "dhashAvecIou": 16,
-   "faux_positifs": 89,
-   "detectes": 112,
-   "positifs": 130
-  },
-  {
-   "dhash": 8,
-   "iou": 0.95,
-   "dhashAvecIou": 10,
-   "faux_positifs": 90,
-   "detectes": 113,
-   "positifs": 130
-  },
-  {
-   "dhash": 8,
-   "iou": 0.95,
-   "dhashAvecIou": 12,
-   "faux_positifs": 90,
-   "detectes": 113,
-   "positifs": 130
-  },
-  {
-   "dhash": 8,
-   "iou": 0.95,
-   "dhashAvecIou": 14,
-   "faux_positifs": 90,
-   "detectes": 113,
-   "positifs": 130
-  },
-  {
-   "dhash": 8,
-   "iou": 0.95,
-   "dhashAvecIou": 16,
-   "faux_positifs": 90,
-   "detectes": 113,
+   "couleur": 15,
+   "faux_positifs": 16,
+   "detectes": 98,
    "positifs": 130
   }
  ]
