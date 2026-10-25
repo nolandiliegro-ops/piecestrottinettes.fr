@@ -1,0 +1,49 @@
+{
+ "seuils": {
+  "dhash": 6,
+  "iou": 0.95,
+  "dhashAvecIou": 10,
+  "couleur": 8
+ },
+ "fiches": 1061,
+ "paires": 4097,
+ "erreurs_telechargement": 0,
+ "doublons": [
+  {
+   "slug": "beaster-bs15",
+   "table": "scooter_models",
+   "ia": 0,
+   "ib": 1,
+   "d": 0,
+   "io": 0.9297820823244553,
+   "c": 1.8109293685724166,
+   "raison": "même image (dHash 0, couleur 1.8)",
+   "a": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/515b1bf1-63f8-4fa4-8032-eddf57068c87/1792891226079_0.png",
+   "b": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/515b1bf1-63f8-4fa4-8032-eddf57068c87/1792891231670_0.png"
+  },
+  {
+   "slug": "joyor-a5",
+   "table": "scooter_models",
+   "ia": 0,
+   "ib": 2,
+   "d": 10,
+   "io": 0.9823529411764705,
+   "c": 3.6319699858750965,
+   "raison": "même cliché recadré (silhouette 0.982, dHash 10, couleur 3.6)",
+   "a": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/9177eb3f-dbce-4419-a91b-1edd83458561/1792891254716_0.png",
+   "b": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/9177eb3f-dbce-4419-a91b-1edd83458561/1792891266919_0.png"
+  },
+  {
+   "slug": "urbanglide-ride-100-pro-2",
+   "table": "scooter_models",
+   "ia": 0,
+   "ib": 1,
+   "d": 2,
+   "io": null,
+   "c": null,
+   "raison": "même image (dHash 2, couleur undefined)",
+   "a": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/4c4e461b-b7b3-4727-9b9a-d6c84bed14cb/1792167746414_0.png",
+   "b": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/4c4e461b-b7b3-4727-9b9a-d6c84bed14cb/1792167751452_0.png"
+  }
+ ]
+}
