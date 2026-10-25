@@ -52,5 +52,5 @@ jobs:
           GH_TOKEN: ${{ github.token }}
         shell: bash
         run: |
-          body=$(node -e "const r=require('/tmp/out/doublons-ronde/ronde.json');console.log('La ronde du '+new Date().toISOString().slice(0,10)+' a trouvé '+r.doublons.length+' doublon(s) photo sur '+r.fiches+' fiches publiées.\n\n'+r.doublons.map(d=>'- `'+d.table+'` **'+d.slug+'** : photos #'+d.ia+' et #'+d.ib+' — '+d.raison).join('\n')+'\n\nPlanches : branche donnees-photos, out/doublons-ronde/. Retrait = SQL avec backup (skill pt-photos-galerie), jamais l\'index 0.')")
-          gh issue create --title "Doublon photo — ronde du $(date -u +%F)" --body "$body"
+          body=$(node -e "const r=require('/tmp/out/doublons-ronde/ronde.json');console.log('La ronde du '+new Date().toISOString().slice(0,10)+' a trouvé '+r.doublons.length+' doublon(s) photo sur '+r.fiches+' fiches publiées.\n\n'+r.doublons.map(d=>'- `'+d.table+'` **'+d.slug+'** : photos #'+d.ia+' et #'+d.ib+' — '+d.raison).join('\n')+(r.vides.length?'\n\nPhotos VIDES (aucun pixel de produit) :\n'+r.vides.map(v=>'- `'+v.table+'` **'+v.slug+'** : photo #'+v.i).join('\n'):'')+'\n\nPlanches : branche donnees-photos, out/doublons-ronde/. Retrait = SQL avec backup (skill pt-photos-galerie), jamais l\'index 0.')")
+          gh issue create --title "Doublon / photo vide — ronde du $(date -u +%F)" --body "$body"

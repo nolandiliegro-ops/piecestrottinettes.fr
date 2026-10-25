@@ -114,12 +114,15 @@ for (const s of fiches) {
 const erreurs = [...cache.keys()].length - (await Promise.all([...cache.values()])).filter((x) => !x.err).length;
 
 if (MODE === 'ronde') {
+  // photos VIDES (aucun pixel de produit) : urbanglide-ride-100-pro-2 en a affiché 2 du 16 au 25/10 sans que personne ne le voie
+  const vides = [];
+  for (const s of fiches) for (const [k, u] of urlsOf(s).entries()) { const f = await fp(u); if (!f.err && !f.rgb) vides.push({ slug: s.slug, table: s.table, i: k, url: u }); }
   const hits = [];
   for (const q of neg) { const A = await fp(q.a), B = await fp(q.b); const m = memePhoto(A, B); if (m.doublon) hits.push({ ...q, raison: m.raison }); }
-  writeFileSync(resolve(OUT, 'ronde.json'), JSON.stringify({ seuils: SEUILS, fiches: fiches.length, paires: neg.length, erreurs_telechargement: erreurs, doublons: hits.map(({ a, b, ...r }) => ({ ...r, a, b })) }, null, 1));
+  writeFileSync(resolve(OUT, 'ronde.json'), JSON.stringify({ seuils: SEUILS, fiches: fiches.length, paires: neg.length, erreurs_telechargement: erreurs, doublons: hits.map(({ a, b, ...r }) => ({ ...r, a, b })), vides }, null, 1));
   await planchePaires(hits, 'doublons');
-  console.log(`::notice title=ronde doublons::${fiches.length} fiches · ${neg.length} paires · ${hits.length} doublon(s) · ${erreurs} téléchargement(s) en échec`);
-  process.exit(hits.length ? 3 : 0);
+  console.log(`::notice title=ronde doublons::${fiches.length} fiches · ${neg.length} paires · ${hits.length} doublon(s) · ${vides.length} photo(s) vide(s) · ${erreurs} téléchargement(s) en échec`);
+  process.exit(hits.length || vides.length ? 3 : 0);
 }
 
 // ── calibration ──
