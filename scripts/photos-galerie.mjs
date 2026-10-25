@@ -196,12 +196,16 @@ const vignette = async (buf) => {
   const t = await sharp(buf, { failOn: 'none' }).ensureAlpha().trim({ threshold: 1 }).png().toBuffer().catch(() => buf);
   return sharp(t, { failOn: 'none' }).ensureAlpha().resize(320, 320, { fit: 'inside' }).png().toBuffer();
 };
-async function empreintesEnLigne(env, entity, id) {
+async function empreintesEnLigne(env, entity, id, courant = null) {
   const table = entity === 'part' ? 'parts' : 'scooter_models';
   const r = await fetch(`${env.VITE_SUPABASE_URL}/rest/v1/${table}?select=images&id=eq.${id}`, { headers: { apikey: env.VITE_SUPABASE_PUBLISHABLE_KEY, Authorization: `Bearer ${env.VITE_SUPABASE_PUBLISHABLE_KEY}` } });
   const rows = await r.json();
-  if (!Array.isArray(rows) || rows.length !== 1) throw new Error(`galerie illisible (${JSON.stringify(rows).slice(0, 80)})`);
-  const urls = (rows[0].images || []).map((i) => (typeof i === 'string' ? i : i?.url)).filter(Boolean);
+  let urls;
+  if (Array.isArray(rows) && rows.length === 1) urls = (rows[0].images || []).map((i) => (typeof i === 'string' ? i : i?.url)).filter(Boolean);
+  // 25/10 chasseur : une fiche DÉPUBLIÉE n'est pas lisible par la clé publique (RLS) → on prend la galerie relevée en base
+  // par le chasseur (lot.models[].current). process-images recompare de toute façon côté serveur (couche D).
+  else if (Array.isArray(rows) && rows.length === 0 && Array.isArray(courant) && courant.length) { urls = courant; console.log(`garde-fou : fiche non lisible en public, galerie du lot utilisée (${courant.length} photo(s))`); }
+  else throw new Error(`galerie illisible (${JSON.stringify(rows).slice(0, 80)})`);
   const out = [];
   for (const u of urls) {
     try { out.push({ url: u, fp: await empreinte(await vignette(download(u))) }); } catch (e) { console.log(`::warning title=garde-fou::photo en ligne illisible ${u.slice(-40)} (${e.message})`); }
@@ -221,7 +225,7 @@ async function write() {
     // garde-fou : empreintes déjà présentes (append) — en remplacement complet (write), seules comptent celles du lot
     let deja = [];
     if (APPEND && !lot.genere) {
-      try { deja = await empreintesEnLigne(env, lot.entity, m.id); }
+      try { deja = await empreintesEnLigne(env, lot.entity, m.id, m.current); }
       catch (e) { console.log(`::warning title=GARDE-FOU ${m.slug}::${e.message} — fiche sautée par prudence`); out.push({ slug: m.slug, posted: 0, note: 'garde-fou : galerie illisible, rien envoyé' }); continue; }
     }
     for (const idx of picks) {
