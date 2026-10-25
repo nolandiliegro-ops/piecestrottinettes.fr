@@ -34,7 +34,7 @@ jobs:
           SB_URL: ${{ secrets.SUPABASE_URL }}
           ADMIN_BULK_SECRET: ${{ secrets.ADMIN_BULK_SECRET }}
         run: |
-          if grep -qE '^(write|append|compat|smoke-doublon|empreintes-backfill) |^(nettoyage|redetourage|cadrage) write' config/photos/_run.txt; then
+          if grep -qE '^(write|append|compat|smoke-doublon|empreintes-backfill) |^(nettoyage|redetourage|cadrage|repasse) write' config/photos/_run.txt; then
             if [ -z "$SB_URL" ] || [ -z "$ADMIN_BULK_SECRET" ]; then echo "::error title=photos::secret absent"; exit 1; fi
             KEY=$(grep -oP 'VITE_SUPABASE_PUBLISHABLE_KEY\s*\|\|\s*"\K[^"]+' src/integrations/supabase/client.ts)
             umask 077
@@ -133,6 +133,14 @@ jobs:
               node scripts/_juge-second-avis.mjs > "out/second-avis.log" 2>&1
               echo "::notice title=second-avis::EXIT=$?"
               grep '^::' "out/second-avis.log" | head -3
+              continue
+            fi
+            if [ "$mode" = "repasse" ]; then
+              # Repasse qualité (photo-qualite.mjs) sur les trottinettes en ligne. « repasse dry [slugs] » / « repasse write [slugs] ».
+              node scripts/qualite-repasse.mjs --$lot ${extra:+--slugs $extra} > "out/repasse-$lot.log" 2>&1
+              echo "::notice title=repasse::EXIT=$?"
+              grep '^::' "out/repasse-$lot.log" | grep -v -i 'secret\|bearer\|eyJ' | head -40
+              tail -n 3 "out/repasse-$lot.log" | grep -v -i 'secret\|bearer\|eyJ'
               continue
             fi
             if [ "$mode" = "qualite-test" ]; then
