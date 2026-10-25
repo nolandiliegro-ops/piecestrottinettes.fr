@@ -8,11 +8,11 @@ name: Import trottinettes (sans PC)
 on:
   push:
     branches: [main]
-    paths: ['config/imports/_lot-auto.txt']
+    paths: ['config/imports/_lot-auto.txt', 'config/imports/_photos-auto.txt']
   workflow_dispatch:
 
 permissions:
-  contents: read
+  contents: write
 
 concurrency:
   group: import-scooters
@@ -38,6 +38,18 @@ jobs:
           KEY=$(grep -oP 'VITE_SUPABASE_PUBLISHABLE_KEY\s*\|\|\s*"\K[^"]+' src/integrations/supabase/client.ts)
           umask 077
           printf 'VITE_SUPABASE_URL=%s\nVITE_SUPABASE_PUBLISHABLE_KEY=%s\nADMIN_BULK_SECRET=%s\n' "$SB_URL" "$KEY" "$ADMIN_BULK_SECRET" > .env
+      - name: Photos des brouillons existants (avant import, pour que la publication les voie)
+        shell: bash
+        run: |
+          set +e
+          export LC_ALL=C.UTF-8
+          mkdir -p /tmp/imp
+          [ -f config/imports/_photos-auto.txt ] || exit 0
+          while read -r f; do
+            [ -z "$f" ] && continue
+            node scripts/update-photos.js --file "config/imports/$f" > "/tmp/imp/photos-$f.log" 2>&1; code=$?
+            echo "::notice title=photos $f::EXIT=$code"
+          done < config/imports/_photos-auto.txt
       - name: Import fichier par fichier
         shell: bash
         run: |
@@ -56,6 +68,17 @@ jobs:
             grep '✗' "/tmp/imp/$f.log" | head -15 | sed "s/^/::warning title=$f::/"
             tail -n 15 "/tmp/imp/$f.log" | grep -v -i 'secret\|bearer\|eyJ' | sed "s/^/::warning title=$f fin du log::/"
           done < config/imports/_lot-auto.txt
+      - name: Journal lisible (branche donnees-import, secrets filtrés)
+        if: always()
+        shell: bash
+        run: |
+          rm -f .env
+          mkdir -p /tmp/out && for f in /tmp/imp/*.log; do [ -f "$f" ] && grep -v -i 'secret\|bearer\|eyJ\|apikey\|sk_' "$f" > "/tmp/out/$(basename "$f")"; done
+          git config user.name "import-bot"; git config user.email "import-bot@users.noreply.github.com"
+          if git fetch -q origin donnees-import 2>/dev/null; then git checkout -qf -B donnees-import origin/donnees-import
+          else git checkout -qf --orphan donnees-import && git rm -rqf --cached . && find . -mindepth 1 -maxdepth 1 ! -name .git -exec rm -rf {} +; fi
+          mkdir -p "runs/${GITHUB_RUN_ID}" && cp /tmp/out/*.log "runs/${GITHUB_RUN_ID}/" 2>/dev/null
+          git add runs && git commit -qm "journal import run ${GITHUB_RUN_ID}" && git push -q origin donnees-import
       - name: Nettoyage
         if: always()
         run: rm -f .env
