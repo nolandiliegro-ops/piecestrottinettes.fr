@@ -1,0 +1,20 @@
+[
+ {
+  "brandName": "Dualtron",
+  "scooters": [
+   {
+    "slug": "dualtron-forever",
+    "weight_kg": 28.5
+   },
+   {
+    "slug": "dualtron-x-limited",
+    "weight_kg": 82.9
+   },
+   {
+    "slug": "dualtron-compact",
+    "weight_kg": 31.5,
+    "brake_type": "drum"
+   }
+  ]
+ }
+]

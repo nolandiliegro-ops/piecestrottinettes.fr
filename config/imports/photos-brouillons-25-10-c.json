@@ -1,0 +1,18 @@
+[
+ {
+  "brandName": "Dualtron",
+  "scooters": [
+   {
+    "slug": "dualtron-x-limited",
+    "id": "41dc45cb-7c16-4ba5-9265-a613dee4c186",
+    "name": "Dualtron X Limited",
+    "source_image_urls": [
+     "https://cdn.shopify.com/s/files/1/0012/2640/8024/files/01-DUALTRON-X-LIMITED.jpg",
+     "https://cdn.shopify.com/s/files/1/0012/2640/8024/files/02-DUALTRON-X-LIMITED.jpg",
+     "https://cdn.shopify.com/s/files/1/0012/2640/8024/files/03-DUALTRON-X-LIMITED.jpg",
+     "https://cdn.shopify.com/s/files/1/0018/7616/4681/files/DT-X-Limited-Image-1.jpg"
+    ]
+   }
+  ]
+ }
+]
