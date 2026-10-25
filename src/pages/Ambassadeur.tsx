@@ -1,7 +1,8 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { useQuery, useMutation, useQueryClient } from '@tanstack/react-query';
-import { Loader2, Copy, Link2, MousePointerClick, Users, ShoppingBag, Wallet, Clock, CheckCircle2, FileText, Mail } from 'lucide-react';
+import { Loader2, Copy, Link2, MousePointerClick, Users, ShoppingBag, Wallet, Clock, CheckCircle2, FileText, Mail, Sparkles } from 'lucide-react';
+import RiderBadgeIaDialog from '@/components/garage/RiderBadgeIaDialog';
 import { toast } from 'sonner';
 import SEO from '@/components/SEO';
 import Header from '@/components/Header';
@@ -170,6 +171,8 @@ const Contrat = ({ d }: { d: Dash }) => {
 
 /* ── Tableau de bord ── */
 const Tableau = ({ d }: { d: Dash }) => {
+  const { profile } = useAuth();
+  const [badgeOpen, setBadgeOpen] = useState(false);
   const code = d.codes_actifs[0] ?? '';
   const aVerser = Math.max(0, Number(d.commission_acquise) - Number(d.deja_paye));
   const chiffres = [
@@ -180,18 +183,23 @@ const Tableau = ({ d }: { d: Dash }) => {
     { i: Wallet, l: 'À te verser', v: eur(aVerser) },
     { i: CheckCircle2, l: 'Déjà versé', v: eur(d.deja_paye) },
   ];
+  const photo = profile?.avatar_url || d.avatar_url;
   return (
     <div className="space-y-5">
       <section className={card}>
         <div className="flex items-center gap-4">
-          {d.avatar_url
-            ? <img src={d.avatar_url} alt="" className="w-16 h-16 rounded-full object-cover ring-2 ring-green-700 ring-offset-2" />
-            : <span className="w-16 h-16 rounded-full bg-green-700 text-white text-2xl font-black grid place-items-center">{d.nom.slice(0, 1).toUpperCase()}</span>}
+          {photo
+            ? <img src={photo} alt="" className="w-20 h-20 rounded-full object-cover ring-2 ring-green-700 ring-offset-2" />
+            : <span className="w-20 h-20 rounded-full bg-green-700 text-white text-2xl font-black grid place-items-center">{d.nom.slice(0, 1).toUpperCase()}</span>}
           <div className="min-w-0">
             <h1 className="text-2xl font-black uppercase tracking-tight text-carbon truncate">{d.nom}</h1>
             <p className="text-base text-gray-500">Ambassadeur · {d.taux} % de commission</p>
+            <button type="button" onClick={() => setBadgeOpen(true)} className="mt-1 inline-flex items-center gap-1.5 min-h-[44px] text-sm font-semibold text-green-700 underline underline-offset-2">
+              <Sparkles className="w-4 h-4" />{photo ? 'Refaire ma photo en badge IA' : 'Créer ma photo en badge IA'}
+            </button>
           </div>
         </div>
+        <RiderBadgeIaDialog open={badgeOpen} onOpenChange={setBadgeOpen} />
         {code ? (
           <div className="space-y-2">
             <p className="text-sm font-semibold text-carbon">Ton code (10 % pour ta communauté)</p>

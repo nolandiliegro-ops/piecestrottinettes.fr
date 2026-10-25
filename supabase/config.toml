@@ -77,3 +77,6 @@ verify_jwt = false
 
 [functions.notify-pro-order]
 verify_jwt = false
+
+[functions.generate-rider-avatar]
+verify_jwt = false

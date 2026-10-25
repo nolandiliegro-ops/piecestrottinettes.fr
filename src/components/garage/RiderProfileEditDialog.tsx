@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { Camera, Loader2, Trash2 } from "lucide-react";
+import { Camera, Loader2, Trash2, Sparkles } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Textarea } from "@/components/ui/textarea";
 import { Input } from "@/components/ui/input";
@@ -8,6 +8,7 @@ import { useAuth } from "@/hooks/useAuth";
 import { useRiderProfile } from "@/hooks/useRiderProfile";
 import RiderAvatar from "./RiderAvatar";
 import RiderAvatarUpload from "./RiderAvatarUpload";
+import RiderBadgeIaDialog from "./RiderBadgeIaDialog";
 
 interface Props {
   open: boolean;
@@ -21,6 +22,7 @@ const RiderProfileEditDialog = ({ open, onOpenChange }: Props) => {
   const [bio, setBio] = useState(profile?.bio ?? "");
   const [location, setLocation] = useState(profile?.rider_location ?? "");
   const [uploadOpen, setUploadOpen] = useState(false);
+  const [badgeOpen, setBadgeOpen] = useState(false);
   const [saving, setSaving] = useState(false);
 
   useEffect(() => {
@@ -85,6 +87,9 @@ const RiderProfileEditDialog = ({ open, onOpenChange }: Props) => {
                 </span>
               </button>
               <div className="flex flex-col gap-2">
+                <Button size="sm" onClick={() => setBadgeOpen(true)} className="bg-green-700 hover:bg-green-800 text-white">
+                  <Sparkles className="w-4 h-4" /> Créer mon badge IA
+                </Button>
                 <Button variant="outline" size="sm" onClick={() => setUploadOpen(true)}>
                   <Camera className="w-4 h-4" /> Changer
                 </Button>
@@ -175,6 +180,7 @@ const RiderProfileEditDialog = ({ open, onOpenChange }: Props) => {
         onOpenChange={setUploadOpen}
         onUploaded={() => setUploadOpen(false)}
       />
+      <RiderBadgeIaDialog open={badgeOpen} onOpenChange={setBadgeOpen} />
     </>
   );
 };
