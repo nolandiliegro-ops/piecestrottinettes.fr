@@ -156,6 +156,9 @@ export function selectCases(ids: string[] | null, famille: string | null, nuitDa
     return [...live.filter((c) => fam(c) === "coeur"), ...large.filter((_, i) => i % 4 === nuitDay % 4)]; // ¼ du large par nuit (durée)
   }
   if (famille === "tout") return live;
+  // « large:0 » / « large:1 » : moitiés du large (un banc complet du large dépasse 150 s)
+  const half = /^large:([01])$/.exec(famille ?? "");
+  if (half) return live.filter((c) => fam(c) === "large").filter((_, i) => i % 2 === Number(half[1]));
   return live.filter((c) => fam(c) === (famille ?? "coeur"));
 }
 
