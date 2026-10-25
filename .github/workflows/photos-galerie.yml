@@ -112,6 +112,13 @@ jobs:
               grep '^::' "out/$lot.$mode.log" | head -5
               continue
             fi
+            if [ "$mode" = "doublons-core" ]; then
+              # Lecture seule (25/10) : calibration du cœur de process-images (Node 22 pour importer le .ts).
+              npx -y node@22 scripts/garde-doublons-core.mjs > "out/doublons-core.log" 2>&1
+              echo "::notice title=doublons-core::EXIT=$?"
+              grep '^::' "out/doublons-core.log" | head -5
+              continue
+            fi
             if [ "$mode" = "doublons" ]; then
               # Lecture seule (25/10) : « doublons calibrer x » ou « doublons ronde x » — garde-fou anti-doublon.
               node scripts/garde-doublons.mjs --$lot > "out/doublons-$lot.log" 2>&1
