@@ -135,6 +135,13 @@ jobs:
               grep '^::' "out/second-avis.log" | head -3
               continue
             fi
+            if [ "$mode" = "qualite-test" ]; then
+              # Banc du contrôle qualité de détourage (photo-qualite.mjs) : cas réels, planche avant/après. Lecture seule.
+              node scripts/_test-qualite-photo.mjs > "out/qualite-test.log" 2>&1
+              echo "::notice title=qualite-test::EXIT=$?"
+              tail -n 10 "out/qualite-test.log"
+              continue
+            fi
             if [ "$mode" = "verrou-test" ]; then
               node scripts/_test-verrou-import.mjs > "out/verrou-test.log" 2>&1
               echo "::notice title=verrou-test::EXIT=$?"

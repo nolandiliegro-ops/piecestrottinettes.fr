@@ -4,6 +4,7 @@
 // Fait déclencheur : import du 25/10 (sync-scooters.js n'avait AUCUN contrôle) → 19 photos marketing en ligne.
 // photo-qc.js (géométrie) ne voit ni une personne SUR la trottinette (1 seul morceau) ni un petit téléphone ajouté.
 import sharp from 'sharp';
+import { ameliorerEtJuger } from './photo-qualite.mjs';
 
 export const MODELE = 'claude-sonnet-5-5';
 const VUES = ['3/4 avant', '3/4 arriere', 'profil', 'face', 'arriere', 'dessus', 'pliee', 'detail', 'autre'];
@@ -89,9 +90,21 @@ export async function juger(buf, cle = process.env.ANTHROPIC_API_KEY) {
  */
 export async function trierGalerie(cands, log = (m) => console.log(m)) {
   const gardees = [], refusees = [];
-  for (const c of cands) {
-    const v = await juger(c.buf);
-    log(`      juge #${c.i} ${v.vue}${v.refus ? ' REFUSÉE : ' + v.motifs.join(', ') : v.principale_ok ? ' (principale possible)' : ''}`);
+  for (const c0 of cands) {
+    // 26/10 QUALITÉ DU DÉTOURAGE (scripts/lib/photo-qualite.mjs) AVANT le juge : nettoyage des fantômes, recadrage
+    // serré, puis refus si sale / trop petite ; collée au bord ou basse définition = jamais principale.
+    // L'appelant envoie c.buf : c'est la version NETTOYÉE ET RECADRÉE qui part.
+    const q = await ameliorerEtJuger(c0.buf);
+    const c = { ...c0, buf: q.buf, qualite: q };
+    if (q.refus) {
+      log(`      qualité #${c.i} REFUSÉE : ${q.defauts.join(', ')}`);
+      refusees.push({ ...c, v: { refus: true, motifs: q.defauts, principale_ok: false, rang_principale: 9 } });
+      continue;
+    }
+    const v0 = await juger(c.buf);
+    const v = { ...v0 };
+    if (v.principale_ok && !q.principale_ok) { v.principale_ok = false; v.rang_principale = 2; }
+    log(`      juge #${c.i} ${v.vue}${v.refus ? ' REFUSÉE : ' + v.motifs.join(', ') : v.principale_ok ? ' (principale possible)' : ''}${q.defauts.length ? ' · qualité : ' + q.defauts.join(', ') : ''}`);
     (v.refus ? refusees : gardees).push({ ...c, v });
   }
   gardees.sort((a, b) => a.v.rang_principale - b.v.rang_principale || a.i - b.i);
