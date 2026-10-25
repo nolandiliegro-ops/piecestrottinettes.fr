@@ -1,0 +1,398 @@
+[
+ {
+  "brandName": "Navee",
+  "scooters": [
+   {
+    "name": "Navee G5 Max",
+    "slug": "navee-g5-max",
+    "source_image_urls": [
+     "https://cdn.shopify.com/s/files/1/0725/5028/5567/files/G5.png?v=1767076387",
+     "https://cdn.shopify.com/s/files/1/0725/5028/5567/files/G5_4a4680ab-3484-46b6-a2eb-3fd871468122.png?v=1767076585",
+     "https://cdn.shopify.com/s/files/1/0725/5028/5567/files/G5-_-_45_42287cfe-bdd9-4ca5-9fdb-b7da00fe4e38.png?v=1767076678"
+    ],
+    "voltage": 48,
+    "amperage": 10.2,
+    "power_watts": 500,
+    "max_speed_kmh": 25,
+    "range_km": 70,
+    "weight_kg": 22.6,
+    "max_load_kg": 120,
+    "wheel_inches": 10,
+    "tire_size": "10 pouces tubeless",
+    "tire_family": "pneumatic",
+    "brake_type": "drum_front_ebs_rear",
+    "suspension": "Fourche avant à ressort + bras arrière Damping Arm",
+    "ip_rating": "IPX5",
+    "foldable": true,
+    "score_offroad": 40,
+    "description": "La Navee G5 Max est une trottinette urbaine confortable : moteur 500 W (1000 W en pointe), batterie 48 V 477 Wh et jusqu'à 70 km d'autonomie. Pneus tubeless 10 pouces, double suspension et frein à tambour avant avec EABS arrière pour un entretien réduit. 22,6 kg, IPX5 et compatible Apple Localiser. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+    "meta_title": "Navee G5 Max - Pièces détachées | PiècesTrottinettes.fr",
+    "meta_description": "Pièces détachées Navee G5 Max : pneus 10 pouces, chambres à air, plaquettes, chargeur 48V. Compatibilité vérifiée, livraison rapide.",
+    "search_terms": "navee g5 max, pieces navee g5 max, pneu navee g5 max, chambre a air navee g5 max, plaquettes navee g5 max, chargeur navee g5 max"
+   },
+   {
+    "name": "Navee G5 Pro",
+    "slug": "navee-g5-pro",
+    "source_image_urls": [
+     "https://cdn.shopify.com/s/files/1/0725/5028/5567/files/G5_Pro.webp?v=1788925813",
+     "https://cdn.shopify.com/s/files/1/0725/5028/5567/files/G5.png?v=1767076387",
+     "https://cdn.shopify.com/s/files/1/0725/5028/5567/files/G5_4a4680ab-3484-46b6-a2eb-3fd871468122.png?v=1767076585"
+    ],
+    "voltage": 48,
+    "amperage": 7.65,
+    "power_watts": 400,
+    "max_speed_kmh": 25,
+    "range_km": 55,
+    "weight_kg": 21.2,
+    "max_load_kg": 120,
+    "wheel_inches": 10,
+    "tire_size": "10 pouces tubeless",
+    "tire_family": "pneumatic",
+    "brake_type": "drum_front_ebs_rear",
+    "suspension": "Fourche avant + bras arrière",
+    "ip_rating": "IPX5",
+    "foldable": true,
+    "score_offroad": 35,
+    "description": "La Navee G5 Pro vise les trajets du quotidien avec un moteur 400 W (800 W en pointe) et une batterie 48 V 358 Wh pour jusqu'à 55 km. Pneus tubeless 10 pouces, suspension avant et arrière et frein à tambour avant + EABS arrière. 21,2 kg, IPX5, 120 kg de charge maximale. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+    "meta_title": "Navee G5 Pro - Pièces détachées | PiècesTrottinettes.fr",
+    "meta_description": "Pièces détachées Navee G5 Pro : pneus 10 pouces, chambres à air, plaquettes, chargeur 48V. Compatibilité vérifiée, livraison rapide.",
+    "search_terms": "navee g5 pro, pieces navee g5 pro, pneu navee g5 pro, chambre a air navee g5 pro, plaquettes navee g5 pro, chargeur navee g5 pro"
+   },
+   {
+    "name": "Navee GT3 Pro",
+    "slug": "navee-gt3-pro",
+    "source_image_urls": [
+     "https://cdn.shopify.com/s/files/1/0725/5028/5567/files/GT3_Pro.webp?v=1788925812",
+     "https://cdn.shopify.com/s/files/1/0725/5028/5567/files/13_2_b3c41f3f-d5dd-4825-8945-4bf02e690770.webp?v=1779342319",
+     "https://cdn.shopify.com/s/files/1/0725/5028/5567/files/GT3_pro_1_5.jpg?v=1759024159"
+    ],
+    "voltage": 48,
+    "amperage": 10.2,
+    "power_watts": 400,
+    "max_speed_kmh": 25,
+    "range_km": 60,
+    "weight_kg": 22,
+    "max_load_kg": 120,
+    "wheel_inches": 10,
+    "tire_size": "10 pouces tubeless",
+    "tire_family": "pneumatic",
+    "brake_type": "drum_front_ebs_rear",
+    "suspension": "Fourche avant + cylindre d'amortissement arrière",
+    "ip_rating": "IPX5",
+    "foldable": true,
+    "score_offroad": 35,
+    "description": "La Navee GT3 Pro offre 1000 W en pointe (400 W nominal) et une batterie 48 V 477 Wh pour jusqu'à 60 km à allure modérée. Pneus tubeless 10 pouces, fourche suspendue et amortisseur arrière, freinage tambour avant + EABS arrière avec antipatinage TCS. 22 kg, pliage en un geste, 120 kg de charge. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+    "meta_title": "Navee GT3 Pro - Pièces détachées | PiècesTrottinettes.fr",
+    "meta_description": "Pièces détachées Navee GT3 Pro : pneus 10 pouces, chambres à air, plaquettes, chargeur 48V. Compatibilité vérifiée, livraison rapide.",
+    "search_terms": "navee gt3 pro, pieces navee gt3 pro, pneu navee gt3 pro, chambre a air navee gt3 pro, plaquettes navee gt3 pro, chargeur navee gt3 pro"
+   },
+   {
+    "name": "Navee V25i Pro II",
+    "slug": "navee-v25i-pro-ii",
+    "source_image_urls": [
+     "https://cdn.shopify.com/s/files/1/0725/5028/5567/files/V25i_Pro_II.webp?v=1788925813",
+     "https://cdn.shopify.com/s/files/1/0725/5028/5567/files/naveev25ipro2escooter.webp?v=1780755977",
+     "https://cdn.shopify.com/s/files/1/0725/5028/5567/files/naveefoldableescooter.webp?v=1780755977"
+    ],
+    "voltage": 36,
+    "amperage": 5.1,
+    "power_watts": 300,
+    "max_speed_kmh": 20,
+    "range_km": 25,
+    "weight_kg": 17.7,
+    "max_load_kg": 100,
+    "wheel_inches": 10,
+    "tire_size": "10 pouces pneumatiques (chambre à air)",
+    "tire_family": "pneumatic",
+    "brake_type": "drum_front_ebs_rear",
+    "suspension": "Fourche avant + bras arrière",
+    "ip_rating": "IPX5",
+    "foldable": true,
+    "score_offroad": 15,
+    "description": "La Navee V25i Pro II est une trottinette légère de 17,7 kg bridée à 20 km/h, avec moteur 300 W (600 W en pointe) et batterie 36 V 183,6 Wh pour 25 km d'autonomie. Pneus gonflables 10 pouces, fourche suspendue et frein tambour avant + EABS arrière. IPX5 et Apple Localiser. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+    "meta_title": "Navee V25i Pro II - Pièces détachées | PiècesTrottinettes.fr",
+    "meta_description": "Pièces détachées Navee V25i Pro II : pneus 10 pouces, chambres à air, plaquettes, chargeur 36V. Compatibilité vérifiée, livraison rapide.",
+    "search_terms": "navee v25i pro ii, pieces navee v25i pro ii, pneu navee v25i pro ii, chambre a air navee v25i pro ii, plaquettes navee v25i pro ii, chargeur navee v25i pro ii"
+   },
+   {
+    "name": "Navee E25 Pro",
+    "slug": "navee-e25-pro",
+    "source_image_urls": [
+     "https://cdn.shopify.com/s/files/1/0725/5028/5567/files/E25_PRO.webp?v=1788925813",
+     "https://cdn.shopify.com/s/files/1/0725/5028/5567/files/untitled.91.webp?v=1781080603",
+     "https://cdn.shopify.com/s/files/1/0725/5028/5567/files/untitled.111.webp?v=1781080602"
+    ],
+    "voltage": 24,
+    "amperage": 10.2,
+    "power_watts": 300,
+    "max_speed_kmh": 20,
+    "range_km": 25,
+    "weight_kg": 16,
+    "max_load_kg": 90,
+    "wheel_inches": 8.5,
+    "tire_size": "8,5 pouces creux (sans entretien)",
+    "tire_family": "solid",
+    "brake_type": "ebs_front_drum_rear",
+    "suspension": "Fourche avant à double ressort",
+    "ip_rating": "IPX5",
+    "foldable": true,
+    "score_offroad": 10,
+    "description": "La Navee E25 Pro (EasyRide 25 Pro) est une trottinette d'entrée de gamme de 16 kg, bridée à 20 km/h, avec moteur 300 W (480 W en pointe) et batterie 21,6 V 220 Wh pour 25 km. Ses pneus creux 8,5 pouces sans entretien éliminent les crevaisons, et le freinage associe EABS avant et tambour arrière. IPX5, fourche à double ressort. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+    "meta_title": "Navee E25 Pro - Pièces détachées | PiècesTrottinettes.fr",
+    "meta_description": "Pièces détachées Navee E25 Pro : pneus 8,5 pouces, chambres à air, plaquettes, chargeur 24V. Compatibilité vérifiée, livraison rapide.",
+    "search_terms": "navee e25 pro, pieces navee e25 pro, pneu navee e25 pro, chambre a air navee e25 pro, plaquettes navee e25 pro, chargeur navee e25 pro"
+   },
+   {
+    "name": "Navee K100",
+    "slug": "navee-k100",
+    "source_image_urls": [
+     "https://cdn.shopify.com/s/files/1/0725/5028/5567/files/K100.webp?v=1788925813",
+     "https://cdn.shopify.com/s/files/1/0725/5028/5567/files/K100_e-scooter_for_fun.webp?v=1780571155",
+     "https://cdn.shopify.com/s/files/1/0725/5028/5567/files/K100e-scooterforkids.webp?v=1780570986"
+    ],
+    "voltage": 24,
+    "amperage": 2.55,
+    "power_watts": 130,
+    "max_speed_kmh": 16,
+    "range_km": 14,
+    "weight_kg": 8.6,
+    "max_load_kg": 50,
+    "wheel_inches": 7,
+    "tire_size": "7 pouces creux",
+    "tire_family": "solid",
+    "brake_type": "drum",
+    "suspension": "Aucune",
+    "ip_rating": "IPX4",
+    "score_offroad": 5,
+    "description": "La Navee K100 est une trottinette électrique enfant (6-10 ans) de 8,6 kg, limitée à 16 km/h, avec moteur 130 W et batterie 21,6 V 55 Wh pour jusqu'à 14 km. Pneus creux 7 pouces anti-crevaison, frein à tambour arrière et éclairage d'ambiance RGB. IPX4, charge maximale 50 kg. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+    "meta_title": "Navee K100 - Pièces détachées | PiècesTrottinettes.fr",
+    "meta_description": "Pièces détachées Navee K100 : pneus 7 pouces, chambres à air, plaquettes, chargeur 24V. Compatibilité vérifiée, livraison rapide.",
+    "search_terms": "navee k100, pieces navee k100, pneu navee k100, chambre a air navee k100, plaquettes navee k100, chargeur navee k100"
+   },
+   {
+    "name": "Navee K100 Max",
+    "slug": "navee-k100-max",
+    "source_image_urls": [
+     "https://cdn.shopify.com/s/files/1/0725/5028/5567/files/K100_Max.webp?v=1788925814",
+     "https://cdn.shopify.com/s/files/1/0725/5028/5567/files/01-K100Max.webp?v=1776330696",
+     "https://cdn.shopify.com/s/files/1/0725/5028/5567/files/45_K100Max.webp?v=1776330696"
+    ],
+    "voltage": 24,
+    "amperage": 5.1,
+    "power_watts": 150,
+    "max_speed_kmh": 16,
+    "range_km": 24,
+    "weight_kg": 9.6,
+    "max_load_kg": 50,
+    "wheel_inches": 7,
+    "tire_size": "7 pouces creux",
+    "tire_family": "solid",
+    "brake_type": "drum",
+    "suspension": "Aucune",
+    "ip_rating": "IPX4",
+    "foldable": true,
+    "score_offroad": 5,
+    "description": "La Navee K100 Max est la trottinette enfant (6-14 ans) haut de gamme de Navee : 9,6 kg, moteur 150 W (260 W en pointe), batterie 21,6 V 110 Wh et jusqu'à 24 km. Guidon réglable sur 3 hauteurs, pneus creux 7 pouces anti-crevaison, frein à tambour arrière et contrôle parental via Apple Localiser. IPX4, pliable. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+    "meta_title": "Navee K100 Max - Pièces détachées | PiècesTrottinettes.fr",
+    "meta_description": "Pièces détachées Navee K100 Max : pneus 7 pouces, chambres à air, plaquettes, chargeur 24V. Compatibilité vérifiée, livraison rapide.",
+    "search_terms": "navee k100 max, pieces navee k100 max, pneu navee k100 max, chambre a air navee k100 max, plaquettes navee k100 max, chargeur navee k100 max"
+   }
+  ]
+ },
+ {
+  "brandName": "Xiaomi",
+  "scooters": [
+   {
+    "slug": "xiaomi-electric-scooter-6-max",
+    "tire_section": "12x2.5",
+    "rim_diameter": "8"
+   },
+   {
+    "slug": "xiaomi-electric-scooter-6-ultra",
+    "tire_section": "12x3",
+    "rim_diameter": "8",
+    "disc_diameter": 140,
+    "disc_holes": 6
+   },
+   {
+    "slug": "xiaomi-electric-scooter-4-go",
+    "brake_type": "ebs_front_drum_rear",
+    "weight_kg": 13.7
+   },
+   {
+    "slug": "xiaomi-electric-scooter-4-lite",
+    "brake_type": "ebs_front_drum_rear",
+    "weight_kg": 15.6,
+    "tire_section": "230x50"
+   }
+  ]
+ },
+ {
+  "brandName": "Navee",
+  "scooters": [
+   {
+    "slug": "navee-st5-max",
+    "tire_section": "60/70",
+    "rim_diameter": "6.5"
+   }
+  ]
+ },
+ {
+  "brandName": "Dualtron",
+  "scooters": [
+   {
+    "slug": "dualtron-achilleus-2025",
+    "brake_type": "disc_hydraulic",
+    "weight_kg": 41.7,
+    "rim_diameter": "6.5"
+   },
+   {
+    "slug": "dualtron-eagle-pro",
+    "brake_type": "disc_mechanical",
+    "disc_diameter": 140,
+    "weight_kg": 30,
+    "tire_section": "10x2.50"
+   },
+   {
+    "slug": "dualtron-forever",
+    "brake_type": "disc_unknown_actuation",
+    "disc_diameter": 140,
+    "tire_section": "10x2.50"
+   },
+   {
+    "slug": "dualtron-spider-2",
+    "brake_type": "disc_mechanical",
+    "disc_diameter": 140,
+    "weight_kg": 26.2,
+    "tire_section": "10x2.25"
+   },
+   {
+    "slug": "dualtron-togo",
+    "brake_type": "drum",
+    "weight_kg": 24.4,
+    "rim_diameter": "6.1",
+    "tire_section": "70/50"
+   },
+   {
+    "slug": "dualtron-thunder-2",
+    "brake_type": "disc_hydraulic",
+    "weight_kg": 47.3,
+    "rim_diameter": "6.5",
+    "tire_section": "90/65"
+   },
+   {
+    "slug": "dualtron-x-limited",
+    "rim_diameter": "7",
+    "tire_section": "125/60"
+   }
+  ]
+ },
+ {
+  "brandName": "Kaabo",
+  "scooters": [
+   {
+    "slug": "kaabo-mantis-8",
+    "brake_type": "disc_unknown_actuation",
+    "disc_diameter": 120,
+    "tire_section": "8x3",
+    "meta_title": "Kaabo Mantis 8 - Pièces détachées | PiècesTrottinettes.fr",
+    "meta_description": "Pièces détachées Kaabo Mantis 8 : pneus 8x3.0, chambres à air, plaquettes, chargeur 48V. Compatibilité vérifiée, livraison rapide.",
+    "description": "La Kaabo Mantis 8 est la petite sœur compacte de la gamme Mantis : deux moteurs de 500 W (2200 W en pointe) et une batterie 48V 13Ah pour environ 40 km d'autonomie. Pneus 8x3.0 à chambre à air sur jantes en deux parties, freins à disque de 120 mm avec EABS et suspensions à ressort en C avant et arrière. Pliable et légère, elle cible les trajets urbains. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+    "search_terms": "kaabo mantis 8, pieces kaabo mantis 8, pneu kaabo mantis 8, chambre a air kaabo mantis 8, plaquettes kaabo mantis 8, chargeur kaabo mantis 8"
+   },
+   {
+    "slug": "kaabo-mantis-king-gt",
+    "brake_type": "disc_hydraulic",
+    "disc_diameter": 140,
+    "weight_kg": 33.1,
+    "rim_diameter": "6",
+    "tire_section": "10x3.00",
+    "meta_title": "Kaabo Mantis King GT - Pièces détachées | PiècesTrottinettes.fr",
+    "meta_description": "Pièces détachées Kaabo Mantis King GT : pneus 10x3.0, chambres à air, plaquettes, chargeur 60V. Compatibilité vérifiée, livraison rapide.",
+    "description": "La Kaabo Mantis King GT pousse la Mantis à son meilleur niveau : deux moteurs de 1100 W, batterie Samsung 60V 24Ah et jusqu'à 90 km d'autonomie annoncée. Freins hydrauliques ZOOM avec disques de 140 mm, suspensions hydrauliques réglables et pneus CST 10x3.0 tout-terrain à chambre à air. Environ 33 kg, pliable, IPX5. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles.",
+    "search_terms": "kaabo mantis king gt, pieces kaabo mantis king gt, pneu kaabo mantis king gt, chambre a air kaabo mantis king gt, plaquettes kaabo mantis king gt, chargeur kaabo mantis king gt"
+   }
+  ]
+ },
+ {
+  "brandName": "Ninebot",
+  "scooters": [
+   {
+    "slug": "ninebot-e2-plus",
+    "brake_type": "ebs_front_drum_rear",
+    "weight_kg": 14.4,
+    "meta_title": "Ninebot E2 Plus - Pièces détachées | PiècesTrottinettes.fr",
+    "meta_description": "Pièces détachées Ninebot E2 Plus : pneus 8,1 pouces, chambres à air, plaquettes, chargeur 36V. Compatibilité vérifiée, livraison rapide.",
+    "search_terms": "ninebot e2 plus, pieces ninebot e2 plus, pneu ninebot e2 plus, chambre a air ninebot e2 plus, plaquettes ninebot e2 plus, chargeur ninebot e2 plus",
+    "description": "La Ninebot E2 Plus (E2 Plus E) by Segway est une trottinette électrique urbaine d'entrée de gamme de 14,4 kg. Son moteur de 300 W et sa batterie de 220 Wh offrent jusqu'à 25 km d'autonomie à 25 km/h. Ses pneus alvéolés increvables de 8,1 pouces suppriment les crevaisons, et le freinage associe un frein électronique avant et un tambour arrière. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles."
+   },
+   {
+    "slug": "ninebot-e25e",
+    "brake_type": "fender_foot_ebs",
+    "weight_kg": 14.3,
+    "rim_diameter": "6.1",
+    "tire_section": "9x2",
+    "meta_title": "Ninebot E25E - Pièces détachées | PiècesTrottinettes.fr",
+    "meta_description": "Pièces détachées Ninebot E25E : pneus 9x2, chambres à air, plaquettes, chargeur 36V. Compatibilité vérifiée, livraison rapide.",
+    "search_terms": "ninebot e25e, pieces ninebot e25e, pneu ninebot e25e, chambre a air ninebot e25e, plaquettes ninebot e25e, chargeur ninebot e25e",
+    "description": "La Ninebot E25E by Segway est une trottinette électrique citadine de 14,3 kg à traction avant. Son moteur de 300 W et sa batterie de 215 Wh offrent jusqu'à 25 km d'autonomie, extensible avec une batterie additionnelle. Elle roule sur des pneus pleins anti-crevaison de 9 pouces et freine par frein électronique avant, frein à pied et frein magnétique. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles."
+   },
+   {
+    "slug": "ninebot-f2-plus",
+    "brake_type": "disc_unknown_actuation",
+    "disc_diameter": 110,
+    "disc_holes": 5,
+    "weight_kg": 17.5,
+    "rim_diameter": "6.5",
+    "tire_section": "60/70",
+    "meta_title": "Ninebot F2 Plus - Pièces détachées | PiècesTrottinettes.fr",
+    "meta_description": "Pièces détachées Ninebot F2 Plus : pneus 60/70-6.5, chambres à air, plaquettes, chargeur 36V. Compatibilité vérifiée, livraison rapide.",
+    "search_terms": "ninebot f2 plus, pieces ninebot f2 plus, pneu ninebot f2 plus, chambre a air ninebot f2 plus, plaquettes ninebot f2 plus, chargeur ninebot f2 plus",
+    "description": "La Ninebot F2 Plus (F2 Plus E) by Segway est une trottinette électrique de 17,5 kg taillée pour les trajets quotidiens. Son moteur de 400 W et sa batterie 36 V de 460 Wh offrent jusqu'à 55 km d'autonomie. Elle roule sur des pneus tubeless autocicatrisants de 10 pouces et freine par disque avant et frein électronique arrière. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles."
+   },
+   {
+    "slug": "ninebot-f65",
+    "brake_type": "drum_front_ebs_rear",
+    "weight_kg": 21.8,
+    "tire_section": "10x2.125",
+    "meta_title": "Ninebot F65 - Pièces détachées | PiècesTrottinettes.fr",
+    "meta_description": "Pièces détachées Ninebot F65 : pneus 10x2.125, chambres à air, plaquettes, chargeur 36V. Compatibilité vérifiée, livraison rapide.",
+    "search_terms": "ninebot f65, pieces ninebot f65, pneu ninebot f65, chambre a air ninebot f65, plaquettes ninebot f65, chargeur ninebot f65",
+    "description": "La Ninebot F65 (F65 I / F65 D) by Segway est une trottinette électrique de 21,8 kg conçue pour les longs trajets. Son moteur de 400 W et sa batterie de 561 Wh offrent jusqu'à 65 km d'autonomie. Elle roule sur des pneus de 10 pouces à chambre à air et freine par tambour avant et frein électronique arrière. Sur PiècesTrottinettes.fr, retrouvez toutes les pièces détachées compatibles."
+   },
+   {
+    "slug": "ninebot-f3-e",
+    "disc_diameter": 120,
+    "disc_holes": 6
+   }
+  ]
+ },
+ {
+  "brandName": "Joyor",
+  "scooters": [
+   {
+    "slug": "joyor-s8-s",
+    "disc_diameter": 120,
+    "disc_holes": 6,
+    "rim_diameter": "6"
+   },
+   {
+    "slug": "joyor-a5",
+    "weight_kg": 14
+   }
+  ]
+ },
+ {
+  "brandName": "Kukirin",
+  "scooters": [
+   {
+    "slug": "kukirin-g2-pro",
+    "rim_diameter": "5.5"
+   },
+   {
+    "slug": "kukirin-s1-max",
+    "weight_kg": 16
+   }
+  ]
+ }
+]

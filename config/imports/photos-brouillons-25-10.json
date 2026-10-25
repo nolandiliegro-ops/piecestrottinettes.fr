@@ -1,0 +1,130 @@
+[
+ {
+  "brandName": "Dualtron",
+  "scooters": [
+   {
+    "slug": "dualtron-x-limited",
+    "id": "41dc45cb-7c16-4ba5-9265-a613dee4c186",
+    "name": "Dualtron X Limited",
+    "source_image_urls": [
+     "https://dualtron-store.com/wp-content/uploads/2022/10/Dualtron-X-limited-1-e1666776870273-600x600.png",
+     "https://dualtron-store.com/wp-content/uploads/2026/09/Capture-decran-2026-09-14-a-14.03.10.png"
+    ]
+   }
+  ]
+ },
+ {
+  "brandName": "Kaabo",
+  "scooters": [
+   {
+    "slug": "kaabo-mantis-x-plus",
+    "id": "3c1869b8-e8a9-4fd8-9666-38e79e2b21c7",
+    "name": "Kaabo Mantis X Plus",
+    "source_image_urls": [
+     "https://cdn.shopify.com/s/files/1/0649/7537/2351/files/MantisXPlus.png?v=1770627888",
+     "https://www.kaabousa.com/cdn/shop/files/mantis_X_Plus_commuting_scooter.webp?v=1772610207"
+    ]
+   },
+   {
+    "slug": "kaabo-skywalker-10h",
+    "id": "02945fa3-3138-45db-805e-dbbf00542b6b",
+    "name": "Kaabo Skywalker 10H",
+    "source_image_urls": [
+     "https://www.wee-bot.com/cdn/shop/products/trottinette_electrique_kaabo_skywalker_10h_800w.jpg?v=1717663234",
+     "https://www.wee-bot.com/cdn/shop/products/trottinette_electrique_kaabo_skywalker_10h_puissante.jpg?v=1723198472",
+     "https://www.wee-bot.com/cdn/shop/files/trottinette_electrique_kaabo_skywalker_10h_pliable-861445.jpg?v=1734952764"
+    ]
+   }
+  ]
+ },
+ {
+  "brandName": "Beaster",
+  "scooters": [
+   {
+    "slug": "beaster-bs15",
+    "id": "515b1bf1-63f8-4fa4-8032-eddf57068c87",
+    "name": "Beaster BS15",
+    "source_image_urls": [
+     "https://www.derekis.lt/images/uploader/el/elektrinis-paspirtukas-beaster-scooter-bs15-1200-w-48-v-18-ah-skirtas-bekelei-12.jpg",
+     "https://krinona.lt/615088/elektrinis-paspirtukas-beaster-scooter-bs15-1200-w-48-v-18-ah-skirtas-bekelei.jpg",
+     "https://cdn.ermitazas.lt/product/a/1/c/a/a1ca534a561630f4b10c66b6d362d2aff233824c/44fe29f2c113a154251274e4b1e2def67fdf47ad.jpg"
+    ]
+   },
+   {
+    "slug": "beaster-bs65",
+    "id": "f9309c7c-7589-4a1c-a1ba-9428ef48d6ba",
+    "name": "Beaster BS65",
+    "source_image_urls": [
+     "https://media.powersport.lt/8936112-large_default/electric-scooter-beaster-scooter-bs65-2-x-1600-w-52-v-208-ah-disc-brakes-off-road.jpg",
+     "https://media.powersport.lt/8936113-large_default/electric-scooter-beaster-scooter-bs65-2-x-1600-w-52-v-208-ah-disc-brakes-off-road.jpg",
+     "https://media.powersport.lt/8936114-large_default/electric-scooter-beaster-scooter-bs65-2-x-1600-w-52-v-208-ah-disc-brakes-off-road.jpg"
+    ]
+   }
+  ]
+ },
+ {
+  "brandName": "Joyor",
+  "scooters": [
+   {
+    "slug": "joyor-a5",
+    "id": "9177eb3f-dbce-4419-a91b-1edd83458561",
+    "name": "Joyor A5",
+    "source_image_urls": [
+     "https://www.geekmaxi.com/img/p/1/8/3/6/6/18366-thickbox_default.webp",
+     "https://www.geekmaxi.com/img/p/1/8/3/6/8/18368-thickbox_default.webp",
+     "https://www.trottnshop.com/wp-content/uploads/2022/08/joyor-a5.jpg"
+    ]
+   },
+   {
+    "slug": "joyor-s8-s",
+    "id": "b31c7345-d62e-4f4a-b448-baa10e92072c",
+    "name": "Joyor S8-S",
+    "source_image_urls": [
+     "https://jump-way.ma/wp-content/uploads/2025/02/JOYOR-S8s.jpg",
+     "https://jump-way.ma/wp-content/uploads/2025/02/8.jpg",
+     "https://jump-way.ma/wp-content/uploads/2025/02/9.jpg"
+    ]
+   }
+  ]
+ },
+ {
+  "brandName": "Velity",
+  "scooters": [
+   {
+    "slug": "velity-511-r",
+    "id": "a7a47edb-d539-4c91-849e-0e7973f8cb51",
+    "name": "Velity 511-R",
+    "source_image_urls": [
+     "https://fastride.fr/15789-large_default/trottinette-electrique-velity-511-r.jpg",
+     "https://trotinetch.pt/cdn/shop/files/406797494_863197979123191_5618743708706283166_n_571ad360-3283-46ea-b961-2625835169ba.jpg"
+    ]
+   }
+  ]
+ },
+ {
+  "brandName": "Kukirin",
+  "scooters": [
+   {
+    "slug": "kukirin-g2-pro",
+    "id": "270f337b-68a5-4b42-b41a-d05e4070ec08",
+    "name": "Kukirin G2 Pro",
+    "source_image_urls": [
+     "https://cdn.shopify.com/s/files/1/0310/0855/5140/files/trottinette-electrique-kukirin-g2-pro-600w-45-kmh-58-km-9158682.webp?v=1764467735",
+     "https://cdn.shopify.com/s/files/1/0310/0855/5140/files/trottinette-electrique-kukirin-g2-pro-600w-45-kmh-58-km-9363117.webp?v=1764467737",
+     "https://cdn.shopify.com/s/files/1/0310/0855/5140/files/trottinette-electrique-kukirin-g2-pro-600w-45-kmh-58-km-3338254.webp?v=1764467734",
+     "https://cdn.shopify.com/s/files/1/0556/2911/9562/files/10_98de9bc6-3990-44bb-8cb6-2816f578cb65.jpg?v=1754558998"
+    ]
+   },
+   {
+    "slug": "kukirin-s1-max",
+    "id": "04360b18-5297-4924-b65d-6f20f9475bdf",
+    "name": "Kukirin S1 Max",
+    "source_image_urls": [
+     "https://cdn.shopify.com/s/files/1/0310/0855/5140/files/trottinette-electrique-350w-autonomie-39-km-pneus-8-pliable-8116889.webp?v=1764467690",
+     "https://cdn.shopify.com/s/files/1/0310/0855/5140/files/trottinette-electrique-350w-autonomie-39-km-pneus-8-pliable-9397305.webp?v=1764467611",
+     "https://cdn.shopify.com/s/files/1/0310/0855/5140/files/trottinette-electrique-350w-autonomie-39-km-pneus-8-pliable-5402766.webp?v=1764467613"
+    ]
+   }
+  ]
+ }
+]
