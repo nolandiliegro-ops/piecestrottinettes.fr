@@ -18,6 +18,13 @@ type Cat = { id: string; name: string; image_url: string | null; display_order: 
 const ZXING = 'https://cdn.jsdelivr.net/npm/@zxing/browser@0.1.5/+esm';
 const norm = (s: string) => s.toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '').replace(/[×*]/g, 'x').replace(/,/g, '.');
 const num = (s: string) => { const m = s.match(/\d+(\.\d+)?/); return m ? parseFloat(m[0]) : 9999; };
+/* Tri des tailles : 8.5x2 < 10x2.125 < 10x2.25 < 10x2.5 (chaque nombre comparé en valeur, pas en texte). */
+const parTaille = (a: string, b: string) => {
+  const na = (a.match(/\d+(\.\d+)?/g) ?? []).map(parseFloat), nb = (b.match(/\d+(\.\d+)?/g) ?? []).map(parseFloat);
+  if (!na.length || !nb.length) return na.length ? -1 : nb.length ? 1 : a.localeCompare(b, 'fr');
+  for (let i = 0; i < Math.max(na.length, nb.length); i++) { const d = (na[i] ?? -1) - (nb[i] ?? -1); if (d) return d; }
+  return a.localeCompare(b, 'fr');
+};
 
 /* La « taille » d'une pièce, comme Nolan la dit au comptoir. */
 const tailleDe = (p: Piece): string | null => {
@@ -135,7 +142,7 @@ const StockBoutique = () => {
     if (recherche) return [];
     const m = new Map<string, number>();
     for (const p of dansFamille) { const t = tailleDe(p); if (t) m.set(t, (m.get(t) ?? 0) + 1); }
-    return [...m.entries()].sort((a, b) => num(a[0]) - num(b[0]) || a[0].localeCompare(b[0], 'fr', { numeric: true }));
+    return [...m.entries()].sort((a, b) => parTaille(a[0], b[0]));
   }, [dansFamille, recherche]);
   const visibles = useMemo(() => {
     const mots = recherche.split(/\s+/).filter(Boolean);
@@ -143,7 +150,7 @@ const StockBoutique = () => {
       .filter((p) => !mots.length || mots.every((m) => norm(`${p.name} ${p.sku ?? ''} ${p.ean ?? ''}`).includes(m)))
       .filter((p) => !taille || recherche || tailleDe(p) === taille)
       .filter((p) => filtre === 'tout' || (filtre === 'en' ? p.stock_boutique > 0 : p.stock_boutique === 0))
-      .sort((a, b) => num(tailleDe(a) ?? '') - num(tailleDe(b) ?? '') || a.name.localeCompare(b.name, 'fr', { numeric: true }))
+      .sort((a, b) => parTaille(tailleDe(a) ?? '~', tailleDe(b) ?? '~') || a.name.localeCompare(b.name, 'fr', { numeric: true }))
       .slice(0, 300);
   }, [dansFamille, recherche, taille, filtre]);
 
@@ -151,19 +158,33 @@ const StockBoutique = () => {
     qc.setQueryData(['admin-stock-boutique'], (old: typeof data.data) => old ? { ...old, pieces: old.pieces.map((p) => (p.id === id ? { ...p, stock_boutique: stock } : p)) } : old);
   };
 
-  const ajuster = async (p: Piece, delta: number) => {
-    if (p.stock_boutique + delta < 0) return;
-    setBusy(p.id); poser(p.id, p.stock_boutique + delta);
-    const { data: r, error } = await supabase.rpc('admin_stock_regler' as never, { p_part: p.id, p_delta: delta, p_motif: 'inventaire' } as never);
-    setBusy(null);
-    if (error) { poser(p.id, p.stock_boutique); toast.error(`Pas enregistré : ${error.message}`); return; }
-    poser(p.id, Number(r ?? 0));
-    try { navigator.vibrate?.(30); } catch { /* pas de vibreur */ }
+  // Taps rapides : l'affichage suit chaque tap tout de suite ; les taps d'une même pièce partent en un seul envoi 0,5 s après le dernier.
+  const enAttente = useRef(new Map<string, { delta: number; timer: number }>());
+  const actuel = (id: string) => ((qc.getQueryData(['admin-stock-boutique']) as typeof data.data)?.pieces.find((x) => x.id === id)?.stock_boutique ?? 0);
+  const envoyer = async (id: string) => {
+    const e = enAttente.current.get(id); enAttente.current.delete(id);
+    if (!e || e.delta === 0) return;
+    const { data: r, error } = await supabase.rpc('admin_stock_regler' as never, { p_part: id, p_delta: e.delta, p_motif: 'inventaire' } as never);
+    if (error) { toast.error(`Pas enregistré : ${error.message}`); qc.invalidateQueries({ queryKey: ['admin-stock-boutique'] }); return; }
+    if (!enAttente.current.has(id)) poser(id, Number(r ?? 0));
+  };
+  const ajuster = (p: Piece, delta: number) => {
+    const avant = actuel(p.id), apres = Math.max(0, avant + delta);
+    if (apres === avant) return;
+    poser(p.id, apres);
+    const e = enAttente.current.get(p.id) ?? { delta: 0, timer: 0 };
+    window.clearTimeout(e.timer);
+    e.delta += apres - avant;
+    e.timer = window.setTimeout(() => void envoyer(p.id), 500);
+    enAttente.current.set(p.id, e);
+    try { navigator.vibrate?.(25); } catch { /* pas de vibreur */ }
   };
 
   const fixer = async (p: Piece, v: string) => {
     setSaisie(null);
-    if (v === '' || Number(v) === p.stock_boutique) return;
+    const e = enAttente.current.get(p.id);
+    if (e) { window.clearTimeout(e.timer); enAttente.current.delete(p.id); }
+    if (v === '' || (!e && Number(v) === p.stock_boutique)) return;
     setBusy(p.id);
     const { data: r, error } = await supabase.rpc('admin_stock_bip' as never, { p_code: '', p_qte: Number(v), p_fixer: true, p_part: p.id } as never);
     setBusy(null);
@@ -199,7 +220,7 @@ const StockBoutique = () => {
           <p className="text-[14px] text-[hsl(var(--admin-text-muted))] truncate">{t && <span className="font-semibold text-[hsl(var(--admin-text))]">{t}</span>}{t ? ' · ' : ''}{p.sku}</p>
         </div>
         <div className="flex items-center flex-none border border-[hsl(var(--admin-border))] rounded-xl overflow-hidden bg-white">
-          <button type="button" disabled={busy === p.id || p.stock_boutique === 0} onClick={() => void ajuster(p, -1)} className="w-11 h-12 text-2xl font-bold text-green-800 disabled:text-gray-300" aria-label={`Retirer un ${p.name}`}>−</button>
+          <button type="button" disabled={p.stock_boutique === 0} onClick={() => ajuster(p, -1)} className="w-11 h-12 text-2xl font-bold text-green-800 disabled:text-gray-300" aria-label={`Retirer un ${p.name}`}>−</button>
           {saisie?.id === p.id ? (
             <input autoFocus inputMode="numeric" value={saisie.v} aria-label="Quantité" onChange={(e) => setSaisie({ id: p.id, v: e.target.value.replace(/\D/g, '').slice(0, 4) })}
               onBlur={() => void fixer(p, saisie.v)} onKeyDown={(e) => { if (e.key === 'Enter') (e.target as HTMLInputElement).blur(); }}
@@ -209,7 +230,7 @@ const StockBoutique = () => {
               {busy === p.id ? <Loader2 className="w-4 h-4 animate-spin mx-auto" /> : p.stock_boutique}
             </button>
           )}
-          <button type="button" disabled={busy === p.id} onClick={() => void ajuster(p, 1)} className="w-11 h-12 text-2xl font-bold text-green-800" aria-label={`Ajouter un ${p.name}`}>+</button>
+          <button type="button" onClick={() => ajuster(p, 1)} className="w-11 h-12 text-2xl font-bold text-green-800" aria-label={`Ajouter un ${p.name}`}>+</button>
         </div>
       </div>
     );
