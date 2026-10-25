@@ -7,7 +7,9 @@ export const PRO_TOKEN_KEY = "pt-pro-token";
 
 export type ProPalier = { code: string; nom: string; remise_pct: number };
 export type ProCycle = { cloture: string; retrait: string };
-export type ProCartLine = { part_id: string; name: string; sku: string | null; image_url: string | null; quantite: number; prix_pro_ht: number; stock: number };
+/** Seuil de volume : à partir de `min` pièces identiques sur la ligne, la pièce coûte `prix` (C8, 25/10). */
+export type ProVolume = { min: number; prix: number };
+export type ProCartLine = { part_id: string; name: string; sku: string | null; image_url: string | null; quantite: number; prix_pro_ht: number; prix_1: number; volume: ProVolume[]; stock: number };
 export type ProCart = { lignes: ProCartLine[]; sous_total_ht: number; tva: number; total_ttc: number; cycle: ProCycle; note: string | null };
 export type ProMe = {
   nom_magasin: string;
@@ -20,8 +22,18 @@ export type ProMe = {
 };
 export type ProPiece = {
   part_id: string; name: string; slug: string | null; sku: string | null; ean: string | null; image_url: string | null;
-  category_id: string | null; prix_public_ht: number; prix_pro_ht: number; stock: number; deja_commande: number;
+  category_id: string | null; prix_public_ht: number; prix_pro_ht: number; stock: number; deja_commande: number; volume: ProVolume[];
 };
+
+const normVolume = (v: unknown): ProVolume[] =>
+  (Array.isArray(v) ? v : []).map((x) => ({ min: num((x as ProVolume).min), prix: num((x as ProVolume).prix) })).filter((x) => x.min > 1 && x.prix > 0);
+
+/** Prix unitaire d'une pièce pour une quantité : le dernier seuil atteint, sinon le prix à l'unité. */
+export const prixPourQuantite = (prix1: number, volume: ProVolume[], q: number) =>
+  volume.reduce((p, v) => (q >= v.min ? v.prix : p), prix1);
+
+/** Prochain seuil pas encore atteint : « encore N pour X € la pièce ». */
+export const prochainSeuil = (volume: ProVolume[], q: number) => volume.find((v) => q < v.min) ?? null;
 export type ProFactureContenu = {
   numero: string; date: string; commande: string;
   vendeur: { nom: string; statut: string; enseigne: string; adresse: string; siret: string; email: string };
@@ -76,7 +88,7 @@ function normCart(c: Record<string, unknown> | null | undefined): ProCart {
   return {
     lignes: lignes.map((l) => ({
       part_id: String(l.part_id), name: String(l.name ?? ""), sku: (l.sku as string) ?? null, image_url: (l.image_url as string) ?? null,
-      quantite: num(l.quantite), prix_pro_ht: num(l.prix_pro_ht), stock: num(l.stock),
+      quantite: num(l.quantite), prix_pro_ht: num(l.prix_pro_ht), prix_1: num(l.prix_1 ?? l.prix_pro_ht), volume: normVolume(l.volume), stock: num(l.stock),
     })),
     sous_total_ht: num(c?.sous_total_ht), tva: num(c?.tva), total_ttc: num(c?.total_ttc),
     cycle: (c?.cycle as ProCycle) ?? { cloture: "", retrait: "" }, note: (c?.note as string) ?? null,
@@ -97,6 +109,7 @@ export async function proCatalogue(token: string): Promise<ProPiece[]> {
     part_id: String(p.part_id), name: String(p.name ?? ""), slug: (p.slug as string) ?? null, sku: (p.sku as string) ?? null,
     ean: (p.ean as string) ?? null, image_url: (p.image_url as string) ?? null, category_id: (p.category_id as string) ?? null,
     prix_public_ht: num(p.prix_public_ht), prix_pro_ht: num(p.prix_pro_ht), stock: num(p.stock), deja_commande: num(p.deja_commande),
+    volume: normVolume(p.volume),
   }));
 }
 

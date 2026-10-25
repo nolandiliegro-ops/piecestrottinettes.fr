@@ -9,7 +9,7 @@ import { supabase } from "@/integrations/supabase/client";
 import { optimizedImage } from "@/lib/imageTransform";
 import {
   resolveProToken, proMe, proCatalogue, proCartSet, proCommander, proCommandes, proErrorMessage,
-  eurFR, jourFR, PRO_STATUS_LABEL, type ProPiece, type ProCart,
+  eurFR, jourFR, PRO_STATUS_LABEL, prixPourQuantite, prochainSeuil, type ProPiece, type ProCart,
 } from "@/lib/pro";
 
 const C = { ink: "#1A1A1A", green: "#4A7C59", greenD: "#3A6449", greenL: "#E6EEE8", orange: "#FF6600", bg: "#FAFAF8", line: "#E2DED5", muted: "#5E625C", red: "#DC2626" };
@@ -196,7 +196,7 @@ const Pro = () => {
           <span className="text-[16px] font-black italic tracking-tight" style={{ fontFamily: UNB }}>pieces<span style={{ color: "#8FC29E" }}>trott</span> PRO</span>
           <span className="text-right leading-tight min-w-0">
             <span className="block text-[14px] font-bold truncate">{m.nom_magasin}</span>
-            <span className="block text-[14px] font-bold" style={{ color: "#8FC29E" }}>{m.palier.nom} · −{Number(m.palier.remise_pct)} %</span>
+            <span className="block text-[14px] font-bold" style={{ color: "#8FC29E" }}>Prix pro · moins cher en volume</span>
           </span>
         </div>
         <div style={{ background: C.greenL, color: C.greenD }}>
@@ -270,6 +270,8 @@ const Pro = () => {
                 <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-3">
                   {visible.map((p) => {
                     const q = qty[p.part_id] ?? 0;
+                    const unit = prixPourQuantite(p.prix_pro_ht, p.volume, q);
+                    const suivant = prochainSeuil(p.volume, q);
                     return (
                       <article key={p.part_id} className="bg-white grid gap-2 pb-2.5 relative" style={{ border: `1px solid ${q ? C.green : C.line}`, boxShadow: q ? `inset 0 0 0 2px ${C.green}` : undefined }}>
                         {p.deja_commande > 0 && <span className="absolute top-2 left-2 z-10 text-[14px] font-bold px-2 py-0.5 text-white" style={{ background: C.ink }}>Déjà pris</span>}
@@ -278,9 +280,16 @@ const Pro = () => {
                           {/* police posée à la main : la règle globale du site met h1-h3 en Bebas Neue majuscule */}
                           <h3 className="text-[14px] font-bold leading-tight line-clamp-2 min-h-[2.5em] normal-case tracking-normal" style={{ fontFamily: JAK }}>{p.name}</h3>
                           <p className="text-[16px] font-extrabold" style={{ color: C.greenD }}>
-                            {eurFR(p.prix_pro_ht)}
-                            {p.prix_pro_ht < p.prix_public_ht && <s className="ml-1.5 text-[14px] font-semibold" style={{ color: C.muted }}>{eurFR(p.prix_public_ht)}</s>}
-                                                      </p>
+                            {eurFR(unit)}
+                            {unit < p.prix_public_ht && <s className="ml-1.5 text-[14px] font-semibold" style={{ color: C.muted }}>{eurFR(p.prix_public_ht)}</s>}
+                          </p>
+                          {p.volume.length > 0 && (
+                            <p className="text-[14px] font-bold leading-snug" style={{ color: C.ink }}>
+                              {q > 0 && suivant
+                                ? <>Encore {suivant.min - q} → {eurFR(suivant.prix)} pièce</>
+                                : p.volume.map((v) => `dès ${v.min} : ${eurFR(v.prix)}`).join(" · ")}
+                            </p>
+                          )}
                           <p className="text-[14px] font-bold" style={{ color: p.stock > 0 ? C.greenD : C.muted }}>{p.stock > 0 ? "En magasin" : "Sous 3-5 jours"}</p>
                         </div>
                         <div className="px-2.5">{q ? <Stepper q={q} onChange={(n) => setQuantity(p.part_id, n)} /> : <AddBtn onClick={() => setQuantity(p.part_id, 1)} />}</div>
@@ -296,15 +305,8 @@ const Pro = () => {
         {tab === "commandes" && (
           <section className="px-4 pt-5 grid gap-5 max-w-2xl">
             <div className="bg-white p-4 grid gap-2" style={{ border: `1px solid ${C.line}` }}>
-              <p className="text-[15px] font-extrabold">Palier {m.palier.nom} : −{Number(m.palier.remise_pct)} % sur tout</p>
-              {m.suivant ? (
-                <>
-                  <div className="h-3 relative" style={{ background: C.line }}>
-                    <span className="absolute inset-y-0 left-0" style={{ background: C.green, width: `${Math.min(100, (m.ca_12m_ht / m.suivant.seuil_ca_ht) * 100)}%` }} />
-                  </div>
-                  <p className="text-[14px]" style={{ color: C.muted }}>Encore <b style={{ color: C.ink }}>{eurFR(m.suivant.reste_ht)}</b> d'achats sur 12 mois pour passer {m.suivant.nom} (−{Number(m.suivant.remise_pct)} %).</p>
-                </>
-              ) : <p className="text-[14px]" style={{ color: C.muted }}>Tu es au palier le plus haut.</p>}
+              <p className="text-[15px] font-extrabold">Tes prix pro</p>
+              <p className="text-[14px]" style={{ color: C.muted }}>Environ la moitié du prix magasin. Plus tu prends d'une même pièce, moins elle coûte : c'est écrit sous chaque pièce (« dès 5 : … »).</p>
             </div>
             {orders.isLoading && <p style={{ color: C.muted }}>Chargement…</p>}
             {orders.data && orders.data.length === 0 && <p style={{ color: C.muted }}>Pas encore de commande.</p>}
@@ -368,7 +370,11 @@ const Pro = () => {
                   <div className="grid gap-1.5 min-w-0">
                     <p className="text-[14px] font-bold leading-tight line-clamp-2">{l.name}</p>
                     <div className="flex items-center justify-between gap-2">
-                      <span className="text-[14px] font-extrabold" style={{ color: C.greenD }}>{eurFR(l.prix_pro_ht * l.quantite)}</span>
+                      <span className="grid leading-tight">
+                        <span className="text-[14px] font-extrabold" style={{ color: C.greenD }}>{eurFR(l.prix_pro_ht * l.quantite)}</span>
+                        <span className="text-[14px]" style={{ color: C.muted }}>{eurFR(l.prix_pro_ht)} pièce</span>
+                        {(() => { const s2 = prochainSeuil(l.volume, l.quantite); return s2 ? <span className="text-[14px] font-bold" style={{ color: C.ink }}>Encore {s2.min - l.quantite} → {eurFR(s2.prix)}</span> : null; })()}
+                      </span>
                       <div className="w-[132px]"><Stepper q={qty[l.part_id] ?? l.quantite} onChange={(n) => setQuantity(l.part_id, n)} /></div>
                     </div>
                   </div>

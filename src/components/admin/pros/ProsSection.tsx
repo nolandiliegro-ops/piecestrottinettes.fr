@@ -1,7 +1,7 @@
 // Comptoir Pro — admin (25/10/2026). Trois onglets :
 //  · À préparer : commandes des magasins (en préparation → prête → retirée et payée), WhatsApp « c'est prêt » en 1 tap.
 //  · À commander : paniers de la semaine + commandes non retirées, moins le stock magasin, rangés par fournisseur.
-//  · Magasins : créer un magasin, lui envoyer son lien sur WhatsApp, forcer un palier, couper un lien.
+//  · Magasins : créer un magasin, lui envoyer son lien sur WhatsApp, couper un lien (plus de palier depuis C8, 25/10).
 // Doc : claude/PT-lot-comptoir-pro.md. Les prix pro sont calculés en base (jamais ici).
 import { useMemo, useState } from 'react';
 import { useQuery, useQueryClient } from '@tanstack/react-query';
@@ -96,7 +96,7 @@ const APreparer = () => {
     const { error } = await supabase.from('orders').update(patch as never).eq('id', c.id);
     setBusy(null);
     if (error) { toast.error(error.message.includes('mode de paiement') ? 'Choisis le mode de paiement avant d’encaisser.' : error.message); return; }
-    toast.success(status === 'prete' ? 'Commande prête.' : status === 'retiree_payee' ? 'Encaissée : stock et palier mis à jour.' : 'Commande annulée.');
+    toast.success(status === 'prete' ? 'Commande prête.' : status === 'retiree_payee' ? 'Encaissée : stock mis à jour.' : 'Commande annulée.');
     qc.invalidateQueries({ queryKey: ['admin-pro-orders'] }); qc.invalidateQueries({ queryKey: ['admin-pros'] }); qc.invalidateQueries({ queryKey: ['admin-pro-acommander'] });
     if (status === 'retiree_payee') {
       // La facture est émise par la base au passage « Retirée et payée » : on la relit pour envoyer son lien.
@@ -230,14 +230,12 @@ const AComm = () => {
 };
 
 /* ---------------- Magasins ---------------- */
-const VIDE = { nom_magasin: '', contact_nom: '', telephone: '', email: '', adresse: '', siret: '', palier_force: '' };
+const VIDE = { nom_magasin: '', contact_nom: '', telephone: '', email: '', adresse: '', siret: '' };
 const Magasins = () => {
   const qc = useQueryClient();
   const q = useMagasins();
   const [form, setForm] = useState<typeof VIDE | null>(null);
   const [saving, setSaving] = useState(false);
-  const tiers = q.data?.tiers ?? [];
-  const nomPalier = (c: string) => tiers.find((t) => t.code === c);
   const refresh = () => qc.invalidateQueries({ queryKey: ['admin-pros'] });
 
   const msgLien = (m: Magasin) =>
@@ -251,7 +249,7 @@ const Magasins = () => {
     const { error } = await supabase.from('pro_accounts').insert({
       nom_magasin: form.nom_magasin.trim(), contact_nom: form.contact_nom.trim() || null, telephone: form.telephone.trim() || null,
       email: form.email.trim() || null, adresse: form.adresse.trim() || null, siret: form.siret.trim() || null,
-      palier_force: form.palier_force || null, statut: 'invite',
+      statut: 'invite',
     } as never);
     setSaving(false);
     if (error) { toast.error(error.message.includes('null value') ? 'La base demande encore un email : migration C3a pas encore passée.' : error.message); return; }
@@ -286,19 +284,12 @@ const Magasins = () => {
                 <Input id={`pro-${k}`} value={form[k]} onChange={(e) => setForm({ ...form, [k]: e.target.value })} inputMode={k === 'telephone' ? 'tel' : k === 'email' ? 'email' : 'text'} />
               </label>
             ))}
-            <label className="grid gap-1 text-sm font-semibold">Palier
-              <select id="pro-palier" value={form.palier_force} onChange={(e) => setForm({ ...form, palier_force: e.target.value })} className="min-h-[40px] rounded-md border border-[hsl(var(--admin-border))] px-2 bg-white font-normal">
-                <option value="">Automatique (selon ses achats)</option>
-                {tiers.map((t) => <option key={t.code} value={t.code}>Forcer {t.nom} −{Number(t.remise_pct)} %</option>)}
-              </select>
-            </label>
           </div>
           <div className="flex gap-2"><Btn kind="green" onClick={creer} disabled={saving}>{saving ? 'Création…' : 'Créer'}</Btn><Btn onClick={() => setForm(null)}>Annuler</Btn></div>
         </Carte>
       )}
       {magasins.length === 0 && !form && <Carte><p className="text-[hsl(var(--admin-text-muted))]">Aucun magasin. Crée le premier, puis envoie-lui son lien sur WhatsApp.</p></Carte>}
       {magasins.map((m) => {
-        const eff = nomPalier(m.palier_force ?? m.palier_auto);
         return (
           <Carte key={m.id} className="grid gap-3">
             <div className="flex flex-wrap justify-between gap-2">
@@ -308,8 +299,8 @@ const Magasins = () => {
                 <p className="text-sm text-[hsl(var(--admin-text-muted))]">{m.statut === 'invite' ? 'Lien pas encore ouvert' : m.statut === 'pause' ? 'En pause' : `Actif${m.last_seen_at ? ` · vu le ${new Date(m.last_seen_at).toLocaleDateString('fr-FR')}` : ''}`}</p>
               </div>
               <div className="text-right">
-                <p className="font-bold">{eff?.nom} −{Number(eff?.remise_pct ?? 0)} %{m.palier_force ? ' (forcé)' : ''}</p>
-                <p className="text-sm text-[hsl(var(--admin-text-muted))]">{eurFR(Number(m.ca_12m_ht))} d'achats sur 12 mois</p>
+                <p className="font-bold">{eurFR(Number(m.ca_12m_ht))}</p>
+                <p className="text-sm text-[hsl(var(--admin-text-muted))]">d'achats sur 12 mois</p>
               </div>
             </div>
             <div className="flex flex-wrap gap-2">
@@ -320,19 +311,11 @@ const Magasins = () => {
               {m.statut === 'pause'
                 ? <Btn onClick={() => maj(m, { statut: 'actif' }, 'Compte réactivé.')}><Play className="w-4 h-4" />Réactiver</Btn>
                 : <Btn onClick={() => maj(m, { statut: 'pause' }, 'Compte en pause : son lien ne marche plus.')}><Pause className="w-4 h-4" />Pause</Btn>}
-              <label className="sr-only" htmlFor={`palier-${m.id}`}>Palier</label>
-              <select id={`palier-${m.id}`} value={m.palier_force ?? ''} onChange={(e) => maj(m, { palier_force: e.target.value || null }, 'Palier mis à jour.')}
-                className="min-h-[44px] rounded-lg border border-[hsl(var(--admin-border))] px-2 text-sm bg-white">
-                <option value="">Palier automatique</option>
-                {tiers.map((t) => <option key={t.code} value={t.code}>Forcer {t.nom}</option>)}
-              </select>
             </div>
           </Carte>
         );
       })}
-      {tiers.length > 0 && (
-        <Carte><p className="text-sm text-[hsl(var(--admin-text-muted))]">Paliers : {tiers.map((t) => `${t.nom} −${Number(t.remise_pct)} % dès ${Math.round(Number(t.seuil_ca_ht)).toLocaleString('fr-FR')} € d'achats`).join(' · ')}. Prix pro jamais sous ton prix d'achat + 20 % (acheté 5 € → 6 € minimum), même un prix tapé à la main.</p></Carte>
-      )}
+      <Carte><p className="text-sm text-[hsl(var(--admin-text-muted))]">Même prix pour tous les magasins : prix magasin ÷ 2, moins cher quand ils prennent du volume sur une pièce (règles dans « Grille des prix »). Jamais sous ton prix d'achat + 20 % (acheté 5 € → 6 € minimum), même un prix tapé à la main.</p></Carte>
     </div>
   );
 };
