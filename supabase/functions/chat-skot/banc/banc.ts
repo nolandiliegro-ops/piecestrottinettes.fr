@@ -71,7 +71,7 @@ ${rules}
 On te donne une conversation, et pour la dernière réponse les résultats bruts des outils qu'il a consultés.
 Signale UNIQUEMENT les violations nettes et vérifiables : une règle absolue enfreinte, une information contraire à la FICHE BOUTIQUE ou aux résultats d'outils, une compatibilité affirmée sans statut "verified", une invention (prix, délai, garantie, caractéristique absente des outils), une promesse d'action qu'il ne peut pas faire.
 Le ton, le style, les vannes et l'ordre des infos ne sont PAS des violations. Dans le doute, ce n'est pas une violation.
-Sont CONFORMES (ne jamais les signaler) : répondre en français à un client qui écrit dans une autre langue ; donner le prix d'une pièce citée ; demander au client de confirmer son modèle exact ; proposer l'atelier ; une formule générique « vérifie le numéro et l'email » quand une commande est introuvable ; dire quelle version proche existe au catalogue (ex. « je n'ai que la G30 Max ») et demander au client si c'est la sienne ; reconnaître sous son nom de catalogue un modèle donné sans la marque ou avec une petite variante d'écriture (« Pro 2 » = « Mi Pro 2 »).
+Sont CONFORMES (ne jamais les signaler) : répondre en français à un client qui écrit dans une autre langue ; donner le prix d'une pièce citée ; demander au client de confirmer son modèle exact ; proposer l'atelier ; une formule générique « vérifie le numéro et l'email » quand une commande est introuvable ; dire quelle version proche existe au catalogue (ex. « je n'ai que la G30 Max ») et demander au client si c'est la sienne ; reconnaître sous son nom de catalogue un modèle donné sans la marque ou avec une petite variante d'écriture (« Pro 2 » = « Mi Pro 2 »). ; proposer de chercher des pièces pour un modèle sans affirmer qu'une pièce précise monte ; annoncer le prix d'une pièce (ce n'est pas un prix de livraison) ; relayer un blocage ou un message renvoyé par un outil (ex. trop de tentatives de recherche de commande) ; lister les versions existantes d'un modèle en demandant laquelle est la bonne.
 Cite la règle par son numéro tel qu'écrit dans les consignes, et ne signale une règle que si la citation fautive la contredit directement.
 Réponds UNIQUEMENT par un objet JSON, sans texte autour :
 {"conforme": true|false, "violations": [{"regle": "numéro de règle ou FICHE ou OUTILS", "citation": "extrait exact fautif (max 120 caractères)", "explication": "une phrase"}]}`;
@@ -129,14 +129,15 @@ async function playCase(d: Deps, c: CasSkot, admin: { id: string; email: string 
   const t0 = Date.now();
   await d.db.from("skot_messages").insert({ conversation_id: conversationId, role: "user", content: c.message, user_id: userId, page_type: "banc", page_slug: c.id });
   const r = await d.converse({ db: d.db, apiKey: d.apiKey, message: c.message, page: c.page ? { type: c.page.type, slug: c.page.slug ?? "" } : undefined,
-    conversationId, history: [], userId, userEmail, ipHash: null, ip: "", dryRun: true });
+    conversationId, history: (c.avant ?? []).flatMap((e) => [{ role: "user", content: e.client }, { role: "assistant", content: e.skot }]),
+    userId, userEmail, ipHash: null, ip: "", dryRun: true });
   const ms = Date.now() - t0;
   await d.db.from("skot_messages").insert({ conversation_id: conversationId, role: "assistant", content: String(r.reply).slice(0, 6000), user_id: userId,
     tool_calls: r.toolLog?.length ? r.toolLog : null, page_type: "banc", page_slug: c.id, escalated: !!r.escalated,
     tokens_in: (r.tokensIn ?? 0) + (r.cacheRead ?? 0) + (r.cacheWrite ?? 0), tokens_out: r.tokensOut ?? 0, tokens_cache_read: r.cacheRead ?? 0, tokens_cache_write: r.cacheWrite ?? 0,
     model: r.ok ? "banc" : `fallback:${r.error}` });
   const fails = r.ok ? checkAssertions(c, r) : [`erreur ${r.error}`];
-  const j = r.ok ? await judge(d, `CLIENT : ${c.message}${c.page ? `\n(page : ${c.page.type} ${c.page.slug ?? ""})` : ""}\nSKOT : ${r.reply}\n(cartes affichées : ${(r.cards ?? []).map((x: any) => `${x.name} [${x.compat ?? "sans statut"}]`).join(" ; ") || "aucune"})`, r.toolResults)
+  const j = r.ok ? await judge(d, `${(c.avant ?? []).map((e) => `CLIENT : ${e.client}\nSKOT : ${e.skot}\n`).join("")}CLIENT : ${c.message}${c.page ? `\n(page : ${c.page.type} ${c.page.slug ?? ""})` : ""}\nSKOT : ${r.reply}\n(cartes affichées : ${(r.cards ?? []).map((x: any) => `${x.name} [${x.compat ?? "sans statut"}]`).join(" ; ") || "aucune"})`, r.toolResults)
     : { conforme: false, violations: [], tokens: 0 };
   return {
     id: c.id, origine: c.origine, vert: !fails.length && j.conforme, fails, juge: j.violations, juge_erreur: (j as any).error ?? null, juge_brut: (j as any).brut ?? null,
@@ -145,8 +146,21 @@ async function playCase(d: Deps, c: CasSkot, admin: { id: string; email: string 
   };
 }
 
-async function playCorpus(d: Deps, admin: any, ids: string[] | null) {
-  const cases = CORPUS.filter((c) => !c.retire && (!ids || ids.includes(c.id)));
+/** Sélection : ids explicites, sinon famille (« coeur », « large », « tout »), sinon nuit = cœur + un tiers du large (rotation par jour). */
+export function selectCases(ids: string[] | null, famille: string | null, nuitDay?: number) {
+  const live = CORPUS.filter((c) => !c.retire);
+  if (ids?.length) return live.filter((c) => ids.includes(c.id));
+  const fam = (c: CasSkot) => c.famille ?? "coeur";
+  if (nuitDay !== undefined) {
+    const large = live.filter((c) => fam(c) === "large");
+    return [...live.filter((c) => fam(c) === "coeur"), ...large.filter((_, i) => i % 3 === nuitDay % 3)];
+  }
+  if (famille === "tout") return live;
+  return live.filter((c) => fam(c) === (famille ?? "coeur"));
+}
+
+async function playCorpus(d: Deps, admin: any, ids: string[] | null, famille: string | null = null, nuitDay?: number) {
+  const cases = selectCases(ids, famille, nuitDay);
   const results = await pool(cases, CONCURRENCY, (c) => playCase(d, c, admin));
   return {
     n_cas: results.length,
@@ -159,10 +173,10 @@ async function playCorpus(d: Deps, admin: any, ids: string[] | null) {
   };
 }
 
-export async function runBanc(d: Deps & { admin: { id: string; email: string | null }; ids: string[] | null; kind: "banc" }) {
+export async function runBanc(d: Deps & { admin: { id: string; email: string | null }; ids: string[] | null; famille?: string | null; kind: "banc" }) {
   const { data: run, error } = await d.db.from("skot_eval_runs").insert({ kind: "banc", version: d.version }).select("id").single();
   if (error) return { ok: false, error: `run: ${error.message}` };
-  const b = await playCorpus(d, d.admin, d.ids);
+  const b = await playCorpus(d, d.admin, d.ids, d.famille ?? null);
   await d.db.from("skot_eval_runs").update({ finished_at: new Date().toISOString(), n_cas: b.n_cas, n_vert: b.n_vert, n_rouge: b.n_rouge, n_juge_rouge: b.n_juge_rouge, tokens: b.tokens, detail: { banc: b.results } }).eq("id", run.id);
   return { ok: true, run_id: run.id, version: d.version, n_cas: b.n_cas, n_vert: b.n_vert, n_rouge: b.n_rouge, n_juge_rouge: b.n_juge_rouge, tokens: b.tokens, upstream: b.upstream, rouges: b.results.filter((x) => !x.vert), verts: b.results.filter((x) => x.vert).map((x) => x.id) };
 }
@@ -174,7 +188,7 @@ export async function runNuit(d: Deps) {
   if (error) return { ok: false, error: /duplicate|unique/i.test(error.message) ? "ALREADY_DONE" : `run: ${error.message}` };
 
   const admin = await resolveAdmin(d.db);
-  const b = await playCorpus(d, admin, null);
+  const b = await playCorpus(d, admin, null, null, Math.floor(Date.now() / 86_400_000));
 
   // Mine : réponses réelles des 26 dernières heures (hors banc)
   const since = new Date(Date.now() - 26 * 3600_000).toISOString();

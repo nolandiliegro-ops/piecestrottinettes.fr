@@ -14,7 +14,7 @@ import { classifyCompat, unverifiedLabel, verifiedReason, partDelay } from "../_
 import { CORPUS } from "./banc/cas.ts";
 import { runBanc, runNuit, looksCut } from "./banc/banc.ts";
 
-const VERSION = "chat-skot@2026-10-24m";
+const VERSION = "chat-skot@2026-10-25a";
 const MODEL = "claude-haiku-5-5";
 const MAX_TOOL_ROUNDS = 4;
 const HISTORY_LIMIT = 14;
@@ -144,6 +144,61 @@ const fullName = (brand: string | null | undefined, name: string | null | undefi
   return b && !n.toLowerCase().startsWith(b.toLowerCase()) ? `${b} ${n}` : n;
 };
 
+
+// ───────────────────────── Recherche de trottinette tolérante (25/10) ─────────────────────────
+type ScooterIdx = { slug: string; full: string; hay: string; words: string[]; nameLen: number };
+let SCOOTER_CACHE: { at: number; rows: ScooterIdx[] } | null = null;
+export const normTxt = (t: string) => t.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "");
+const squash = (t: string) => normTxt(t).replace(/[^a-z0-9]/g, "");
+const NUMS: Record<string, string> = { un: "1", une: "1", deux: "2", trois: "3", quatre: "4", cinq: "5", six: "6", sept: "7", huit: "8", neuf: "9", dix: "10", onze: "11", douze: "12", trente: "30", quarante: "40", cinquante: "50", soixante: "60", cent: "100" };
+const GENERIC = new Set(["trottinette", "trottinettes", "trott", "trotte", "trot", "electrique", "scooter", "ma", "mon", "la", "le", "les", "de", "du", "des", "pour", "modele", "model", "une", "un", "c", "est", "j", "ai", "que", "quel", "quelle", "marque", "version", "pieces", "piece", "pneu", "pneus", "chambre", "air", "chargeur", "plaquettes", "frein"]);
+// Marques connues sous deux noms
+const ALIAS: Record<string, string> = { segway: "ninebot", ninebot: "segway", mi: "xiaomi", minimotors: "dualtron", trotinette: "" };
+function lev1(a: string, b: string) { // distance d'édition ≤ 1
+  if (Math.abs(a.length - b.length) > 1) return false;
+  let i = 0, j = 0, d = 0;
+  while (i < a.length && j < b.length) {
+    if (a[i] === b[j]) { i++; j++; continue; }
+    if (++d > 1) return false;
+    if (a.length > b.length) i++; else if (b.length > a.length) j++; else { i++; j++; }
+  }
+  return d + (a.length - i) + (b.length - j) <= 1;
+}
+async function scooterIndex(db: SupabaseClient): Promise<ScooterIdx[]> {
+  if (SCOOTER_CACHE && Date.now() - SCOOTER_CACHE.at < 10 * 60_000) return SCOOTER_CACHE.rows;
+  const { data, error } = await db.from("scooter_models").select("name, slug, search_terms, brands!scooter_models_brand_id_fkey(name)").eq("published", true).limit(2000);
+  if (error) { console.error("[chat-skot] scooterIndex", error.message); return SCOOTER_CACHE?.rows ?? []; }
+  const rows = (data ?? []).map((s: any) => {
+    const full = fullName(s.brands?.name, s.name);
+    const words = normTxt(`${full} ${s.slug}`).split(/[^a-z0-9]+/).filter(Boolean);
+    return { slug: s.slug, full, hay: squash(`${full} ${s.slug} ${s.search_terms ?? ""}`), words, nameLen: squash(full).length };
+  });
+  SCOOTER_CACHE = { at: Date.now(), rows };
+  return rows;
+}
+export function matchScooters(all: ScooterIdx[], query: string, tolerance = 0): ScooterIdx[] {
+  let toks = normTxt(query).split(/[^a-z0-9]+/).filter(Boolean).map((t) => NUMS[t] ?? t).filter((t) => !GENERIC.has(t));
+  // « g 2 » → « g2 », « pro 2 » reste deux mots (les deux sont dans le nom)
+  const merged: string[] = [];
+  for (const t of toks) { const prev = merged[merged.length - 1]; if (prev && /^[a-z]$/.test(prev) && /^\d/.test(t)) merged[merged.length - 1] = prev + t; else merged.push(t); }
+  toks = merged;
+  if (!toks.length) return [];
+  const joined = toks.join("");
+  const scored: { s: ScooterIdx; score: number }[] = [];
+  for (const s of all) {
+    let ok = 0, fuzzy = 0;
+    for (const t of toks) {
+      if (s.hay.includes(t) || (ALIAS[t] && s.hay.includes(ALIAS[t]))) ok++;
+      else if (t.length >= 5 && s.words.some((w) => lev1(w, t))) { ok++; fuzzy++; }
+      else if (t.length >= 4 && s.words.some((w) => w.length >= 4 && (t.startsWith(w) || w.startsWith(t)))) { ok++; fuzzy++; }
+    }
+    if (ok < toks.length - tolerance && !s.hay.includes(joined)) continue;
+    const exact = squash(s.full) === joined || s.slug.replace(/-/g, "") === joined;
+    scored.push({ s, score: (exact ? 1000 : 0) + (s.hay.includes(joined) ? 100 : 0) - fuzzy * 10 - s.nameLen });
+  }
+  return scored.sort((a, b) => b.score - a.score).map((x) => x.s);
+}
+
 async function scooterBySlug(db: SupabaseClient, slug: string) {
   const { data, error: qErr } = await db.from("scooter_models")
     .select("id, name, slug, voltage, amperage, tire_size, wheel_inches, tire_family, rim_diameter_code, tire_section_code, rim_type, charge_connectors, brake_type, caliper_family, disc_diameter_code, affiliate_link, published, brands!scooter_models_brand_id_fkey(name)")
@@ -182,13 +237,18 @@ async function runTool(name: string, input: Record<string, any>, ctx: Ctx): Prom
       return { results: cards.map(({ id: _id, stock_quantity: _s, ...c }) => c) };
     }
     case "find_scooter": {
-      const ws = words(String(input.query ?? ""));
-      if (!ws.length) return { results: [] };
-      let q = db.from("scooter_models").select("name, slug, brands!scooter_models_brand_id_fkey(name)").eq("published", true);
-      for (const w of ws.slice(0, 4)) q = q.or(`name.ilike.%${w}%,search_terms.ilike.%${w}%,slug.ilike.%${w}%`);
-      const { data, error: qErr } = await q.limit(5);
-      if (qErr) { console.error("[chat-skot] find_scooter", qErr.message); return { error: "requête impossible", detail: qErr.message }; }
-      return { results: (data ?? []).map((s: any) => ({ name: fullName(s.brands?.name, s.name), slug: s.slug })) };
+      // 25/10 : la recherche par ilike ratait « etwow » (nom en base « E-Twow ») et « e-twow trottinette » (mot générique).
+      // Désormais : catalogue publié chargé en mémoire, comparaison sans accents/espaces/tirets, mots génériques ignorés,
+      // nombres dictés à la voix (« g deux ») convertis, faute d'une lettre tolérée sur les mots de 5 lettres et plus.
+      const all = await scooterIndex(db);
+      const q = String(input.query ?? "");
+      const exact = matchScooters(all, q);
+      if (exact.length) return { results: exact.slice(0, 6).map((s) => ({ name: s.full, slug: s.slug })) };
+      // Aucun modèle exact : modèles proches (un mot de la demande manque), à présenter comme tels et à faire confirmer.
+      const near = q.trim().split(/\s+/).length >= 2 ? matchScooters(all, q, 1).slice(0, 4) : [];
+      return near.length
+        ? { results: [], modeles_proches: near.map((s) => ({ name: s.full, slug: s.slug })), note: "Aucun modèle exact : ce sont des modèles PROCHES. Demande au client lequel est le sien, ne choisis pas à sa place." }
+        : { results: [] };
     }
     case "get_scooter": {
       const s = await scooterBySlug(db, String(input.slug ?? ""));
@@ -529,7 +589,8 @@ serve(async (req) => {
     if (!adm) return json({ ok: false, error: "FORBIDDEN" }, 403);
     if (!apiKey) return json({ ok: false, error: "NOT_CONFIGURED" }, 503);
     const ids = Array.isArray(body.ids) ? body.ids.map(String) : null;
-    const run = await runBanc({ db, apiKey, converse, callClaude, admin: adm, ids, kind: "banc", version: VERSION, judgeRules: SYSTEM_PROMPT });
+    const famille = typeof body.famille === "string" ? body.famille : null;
+    const run = await runBanc({ db, apiKey, converse, callClaude, admin: adm, ids, famille, kind: "banc", version: VERSION, judgeRules: SYSTEM_PROMPT });
     return json(run, run.ok ? 200 : 500);
   }
 
