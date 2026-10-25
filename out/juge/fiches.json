@@ -1,1 +1,111 @@
-[]
+[
+ {
+  "slug": "circooter-landturbo-pro",
+  "id": "546154f2-c1cd-4b52-961d-23e038fb8351",
+  "avant": 2,
+  "retirer": [
+   {
+    "i": 0,
+    "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/546154f2-c1cd-4b52-961d-23e038fb8351/1792892565956_0.png",
+    "motifs": [
+     "téléphone/écran",
+     "pas une seule trottinette"
+    ],
+    "note": "Deux trottinettes (une grande en 3/4 avant et une pliée en vignette) et un smartphone avec capture d'appli ajouté en haut à gauche."
+   }
+  ],
+  "ordre": [
+   "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/546154f2-c1cd-4b52-961d-23e038fb8351/1792892580718_0.png"
+  ],
+  "change_principale": true,
+  "a_un_34_propre": false,
+  "restantes": 1
+ },
+ {
+  "slug": "dualtron-mini",
+  "id": "11bbbf20-7d05-4ca6-9906-b174a6bf7bae",
+  "avant": 4,
+  "retirer": [
+   {
+    "i": 3,
+    "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/11bbbf20-7d05-4ca6-9906-b174a6bf7bae/1792871477709_0.png",
+    "motifs": [
+     "pas une seule trottinette"
+    ],
+    "note": "Deux vues de la trottinette pliée (une en haut, une en bas) sur la même image, pas une seule trottinette."
+   }
+  ],
+  "ordre": [
+   "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/11bbbf20-7d05-4ca6-9906-b174a6bf7bae/1792871469892_0.png",
+   "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/11bbbf20-7d05-4ca6-9906-b174a6bf7bae/1792871472275_0.png",
+   "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/11bbbf20-7d05-4ca6-9906-b174a6bf7bae/1792871474669_0.png"
+  ],
+  "change_principale": false,
+  "a_un_34_propre": true,
+  "restantes": 3
+ },
+ {
+  "slug": "iscooter-f7-ultra",
+  "id": "e82a6f98-f4aa-48cf-b098-ee2206641652",
+  "avant": 2,
+  "retirer": [
+   {
+    "i": 0,
+    "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/e82a6f98-f4aa-48cf-b098-ee2206641652/1792892442818_0.png",
+    "motifs": [
+     "personne",
+     "téléphone/écran",
+     "pas une seule trottinette",
+     "fond pas propre"
+    ],
+    "note": "Une vignette incrustée montre un homme sur une trottinette, et un smartphone avec une capture d'appli est posé à droite de la trottinette principale."
+   },
+   {
+    "i": 1,
+    "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/e82a6f98-f4aa-48cf-b098-ee2206641652/1792892448781_0.png",
+    "motifs": [
+     "personne",
+     "téléphone/écran",
+     "pas une seule trottinette"
+    ],
+    "note": "Trottinette principale en 3/4 avant, mais une vignette en haut à droite montre une personne sur une trottinette, et un smartphone avec une capture d'appli est ajouté à droite."
+   }
+  ],
+  "ordre": [],
+  "change_principale": true,
+  "a_un_34_propre": false,
+  "restantes": 0
+ },
+ {
+  "slug": "iscooter-w12",
+  "id": "d6824bc0-d2e9-43eb-aff1-a9aa01827d7a",
+  "avant": 1,
+  "retirer": [
+   {
+    "i": 0,
+    "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/d6824bc0-d2e9-43eb-aff1-a9aa01827d7a/1792892470045_0.png",
+    "motifs": [
+     "téléphone/écran",
+     "pas une seule trottinette"
+    ],
+    "note": "Image composite : trottinette principale, vignette d'une trottinette pliée en haut à droite et smartphone avec capture d'appli."
+   }
+  ],
+  "ordre": [],
+  "change_principale": true,
+  "a_un_34_propre": false,
+  "restantes": 0
+ },
+ {
+  "slug": "navee-gt3-pro",
+  "id": "8c252f57-9237-4cc9-bb1c-eec6976c0ed2",
+  "avant": 1,
+  "retirer": [],
+  "ordre": [
+   "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/8c252f57-9237-4cc9-bb1c-eec6976c0ed2/1792891401137_0.png"
+  ],
+  "change_principale": false,
+  "a_un_34_propre": false,
+  "restantes": 1
+ }
+]
