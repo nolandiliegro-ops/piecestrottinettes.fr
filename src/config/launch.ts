@@ -49,3 +49,5 @@ export const PRELAUNCH_EVENT = 'pt:prelaunch-open';
 export const openPrelaunch = () => {
   window.dispatchEvent(new Event(PRELAUNCH_EVENT));
 };
+
+// relance publication 25/10 C8
