@@ -141,6 +141,20 @@ jobs:
               cat "out/verrou-test.log" | tail -n 8
               continue
             fi
+            if [ "$mode" = "chasse" ]; then
+              # Lecture seule (25/10) : CHASSEUR PHOTO. « chasse <lot> <depubliees|publiees|toutes|slugs:a,b> [plafond_tokens] ».
+              # Cherche des sources (Claude + web), puis dry --juge : planches, proposition, accept. RIEN n'est écrit en base.
+              plafond="${extra#* }"; cib="${extra%% *}"; [ "$plafond" = "$extra" ] && plafond=400000
+              node scripts/chasseur-photos.mjs --lot "$lot" --cibles "${cib:-depubliees}" --plafond-tokens "$plafond" > "out/$lot.chasse.log" 2>&1
+              echo "::notice title=$lot chasse::EXIT=$?"
+              grep '^::' "out/$lot.chasse.log" | head -20
+              if [ -f "config/photos/$lot.json" ]; then
+                node scripts/photos-galerie.mjs --dry --juge --file "config/photos/$lot.json" > "out/$lot.dry.log" 2>&1
+                echo "::notice title=$lot dry juge::EXIT=$?"
+                grep '^::' "out/$lot.dry.log" | head -10
+              fi
+              continue
+            fi
             if [ "$mode" = "juge" ]; then
               # Lecture seule (25/10) : juge VISION des photos de trottinettes. « juge tout x » ou « juge slugs a,b,c ».
               jargs=""; [ "$lot" = "slugs" ] && jargs="--slugs $extra"

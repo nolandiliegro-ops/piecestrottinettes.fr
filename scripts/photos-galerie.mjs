@@ -120,22 +120,68 @@ async function planches(tiles) {
   }
 }
 
+// 25/10 CHASSEUR : --juge ajoute au dry le juge vision (vue, refus) et l'anti-doublon contre la galerie EN LIGNE
+// (m.current, fourni par scripts/chasseur-photos.mjs), montre la galerie en ligne en tête de chaque fiche, et écrit
+// out/<lot>/proposition.json + out/<lot>/<lot>.accept.json (ce que l'append enverrait). Toujours AUCUNE écriture.
+const JUGE_DRY = args.includes('--juge');
 async function dry() {
   const report = [];
   const tiles = [];
+  const proposition = {}, accept = {};
   for (const m of lot.models) {
+    const enLigne = [];
+    if (JUGE_DRY) for (let k = 0; k < (m.current || []).length; k++) {
+      try { const b = download(m.current[k]); enLigne.push({ url: m.current[k], fp: await empreinte(await vignette(b)) }); tiles.push(await tile(b, [`${m.slug.slice(0, 26)} EN LIGNE ${k}`, k === 0 ? 'principale actuelle' : 'galerie actuelle'], 'WARN')); }
+      catch (e) { tiles.push(await tile(null, [`${m.slug.slice(0, 26)} EN LIGNE ${k}`, `illisible ${e.message}`.slice(0, 34)], 'FAIL')); }
+    }
+    const retenus = [];
     for (let i = 0; i < (m.candidates || []).length; i++) {
       const url = m.candidates[i];
-      let png = null, qc = null, err = null;
+      let png = null, qc = null, err = null, juge = null, doublon = null;
       try { png = await cutout(url); qc = await qcFor(png, url); } catch (e) { err = e.message.slice(0, 120); }
       const verdict = err ? 'ERROR' : qc.verdict;
-      const short = err ? err : (qc.reasons.join(' · ') || 'ok');
+      let short = err ? err : (qc.reasons.join(' · ') || 'ok');
+      if (JUGE_DRY && png && judge(qc, 1).ok) {
+        const fp = await empreinte(await vignette(png));
+        const hit = [...enLigne, ...retenus.map((r) => ({ url: `lot#${r.i}`, fp: r.fp }))].map((x) => ({ x, r: memePhoto(fp, x.fp) })).find((h) => h.r.doublon);
+        if (hit) doublon = `${hit.r.raison} (${String(hit.x.url).slice(-28)})`;
+        else {
+          try { const v = await juger(png); juge = { vue: v.vue, refus: v.refus, motifs: v.motifs, principale_ok: v.principale_ok, rang: v.rang_principale, note: v.note }; }
+          catch (e) { juge = { erreur: e.message.slice(0, 80) }; }
+          if (juge && !juge.erreur && !juge.refus) retenus.push({ i, fp, juge, ok: verdict !== 'FAIL' });
+        }
+        short = doublon ? `DOUBLON ${doublon}` : juge?.erreur ? `juge : ${juge.erreur}` : juge.refus ? `REFUS ${juge.motifs.join(',')}` : `${juge.vue}${juge.principale_ok ? ' ★3/4 propre' : ''}`;
+      }
       console.log(`${m.slug} #${i} ${verdict} ${short}`);
-      report.push({ slug: m.slug, i, url, verdict, reasons: qc?.reasons || [], plus: qc?.plus || null, size: qc ? [qc.width, qc.height] : null, error: err });
-      tiles.push(await tile(png, [`${m.slug.slice(0, 26)} #${i}`, `${verdict} ${short}`.slice(0, 34)], err ? 'FAIL' : verdict));
+      report.push({ slug: m.slug, i, url, verdict, reasons: qc?.reasons || [], plus: qc?.plus || null, size: qc ? [qc.width, qc.height] : null, error: err, juge, doublon });
+      const tv = err ? 'FAIL' : doublon || juge?.refus ? 'FAIL' : juge?.principale_ok ? 'PASS' : verdict === 'FAIL' ? 'WARN' : verdict;
+      tiles.push(await tile(png, [`${m.slug.slice(0, 26)} #${i}`, `${short}`.slice(0, 34)], tv));
+    }
+    if (JUGE_DRY) {
+      // Proposition : un 3/4 propre (s'il y en a un) en tête = nouvelle principale, puis d'autres vues DIFFÉRENTES,
+      // jusqu'à 4 photos au total sur la fiche. Les vues de la galerie en ligne ne sont pas connues ici : l'anti-doublon
+      // a déjà écarté les copies ; la planche est relue à l'œil avant tout envoi.
+      const p34 = retenus.filter((r) => r.juge.principale_ok).sort((a, b) => a.juge.rang - b.juge.rang)[0] || null;
+      const picks = p34 ? [p34] : [];
+      const vues = new Set(picks.map((r) => r.juge.vue));
+      for (const r of retenus) {
+        if (picks.length + (m.current || []).length >= 4) break;
+        if (picks.includes(r) || vues.has(r.juge.vue)) continue;
+        if (r.juge.vue === 'detail' && picks.length + (m.current || []).length >= 3) continue;
+        picks.push(r); vues.add(r.juge.vue);
+      }
+      proposition[m.slug] = { id: m.id, published: m.published !== false, en_ligne: (m.current || []).length, nouvelle_principale: p34 ? p34.i : null, ajouts: picks.map((r) => ({ i: r.i, vue: r.juge.vue })), statut: p34 ? '3/4 trouvé' : retenus.length ? 'photos sans 3/4' : 'rien de valable' };
+      if (picks.length) accept[m.slug] = picks.map((r) => r.i);
     }
   }
   writeFileSync(resolve(OUT, 'report.json'), JSON.stringify(report, null, 1));
+  if (JUGE_DRY) {
+    writeFileSync(resolve(OUT, 'proposition.json'), JSON.stringify(proposition, null, 1));
+    writeFileSync(resolve(OUT, `${lot.lot}.accept.json`), JSON.stringify(accept, null, 1));
+    writeFileSync(resolve(OUT, `${lot.lot}.json`), JSON.stringify(lot, null, 1));
+    const st = Object.values(proposition);
+    console.log(`::notice title=chasse ${lot.lot} (proposition)::${st.length} fiches · 3/4 trouvé ${st.filter((x) => x.nouvelle_principale !== null).length} · sans 3/4 ${st.filter((x) => x.statut === 'photos sans 3/4').length} · rien ${st.filter((x) => x.statut === 'rien de valable').length} · ${st.reduce((a, x) => a + x.ajouts.length, 0)} photos proposées`);
+  }
   await planches(tiles);
   const c = (v) => report.filter((r) => r.verdict === v).length;
   console.log(`::notice title=photos ${lot.lot} (dry)::${report.length} candidates · PASS ${c('PASS')} · WARN ${c('WARN')} · FAIL ${c('FAIL')} · ERREUR ${c('ERROR')}`);

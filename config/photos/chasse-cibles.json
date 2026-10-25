@@ -1,0 +1,153 @@
+{
+ "note": "Cibles du chasseur photo (25/10). Les dépubliées ne sont pas lisibles par la clé publique : id, nom et galerie sont recopiés ici depuis la base. Les publiées sont relues en direct.",
+ "depubliees": [
+  {
+   "id": "546154f2-c1cd-4b52-961d-23e038fb8351",
+   "slug": "circooter-landturbo-pro",
+   "name": "Circooter Landturbo Pro",
+   "brand": "Circooter",
+   "current": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/546154f2-c1cd-4b52-961d-23e038fb8351/1792892580718_0.png"
+   ]
+  },
+  {
+   "id": "14c842c6-d57c-482c-95b0-c80fa661bb05",
+   "slug": "dualtron-eagle-pro",
+   "name": "Dualtron Eagle Pro",
+   "brand": "Dualtron",
+   "current": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/14c842c6-d57c-482c-95b0-c80fa661bb05/1784216698260_0.png"
+   ]
+  },
+  {
+   "id": "52cf2a00-db4e-4418-a7be-a48db1fe8e71",
+   "slug": "e-twow-tanktorq-tk2-lite",
+   "name": "E-Twow TankTorq TK2 Lite",
+   "brand": "E-Twow",
+   "current": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/52cf2a00-db4e-4418-a7be-a48db1fe8e71/1792446167179_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/52cf2a00-db4e-4418-a7be-a48db1fe8e71/1792446170139_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/52cf2a00-db4e-4418-a7be-a48db1fe8e71/1792446173169_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/52cf2a00-db4e-4418-a7be-a48db1fe8e71/1792446176517_0.png"
+   ]
+  },
+  {
+   "id": "e82a6f98-f4aa-48cf-b098-ee2206641652",
+   "slug": "iscooter-f7-ultra",
+   "name": "iScooter F7Ultra",
+   "brand": "iScooter",
+   "current": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/e82a6f98-f4aa-48cf-b098-ee2206641652/1792892442818_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/e82a6f98-f4aa-48cf-b098-ee2206641652/1792892448781_0.png"
+   ]
+  },
+  {
+   "id": "d6824bc0-d2e9-43eb-aff1-a9aa01827d7a",
+   "slug": "iscooter-w12",
+   "name": "iScooter W12",
+   "brand": "iScooter",
+   "current": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/d6824bc0-d2e9-43eb-aff1-a9aa01827d7a/1792892470045_0.png"
+   ]
+  },
+  {
+   "id": "e6127ed9-f2f1-4622-b283-9d4ca46fe3d1",
+   "slug": "isinwheel-d2",
+   "name": "Isinwheel D2",
+   "brand": "Isinwheel",
+   "current": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/e6127ed9-f2f1-4622-b283-9d4ca46fe3d1/1792892533188_0.png"
+   ]
+  },
+  {
+   "id": "785f95dc-24ac-43cf-8880-edd402614062",
+   "slug": "isinwheel-gt4s",
+   "name": "Isinwheel GT4S",
+   "brand": "Isinwheel",
+   "current": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/785f95dc-24ac-43cf-8880-edd402614062/1792892491871_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/785f95dc-24ac-43cf-8880-edd402614062/1792892505095_0.png"
+   ]
+  },
+  {
+   "id": "e8597b33-76d7-4da6-8b9c-68bdbc83e0cc",
+   "slug": "isinwheel-h7-pro",
+   "name": "Isinwheel H7Pro",
+   "brand": "Isinwheel",
+   "current": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/e8597b33-76d7-4da6-8b9c-68bdbc83e0cc/1792892519795_0.png"
+   ]
+  },
+  {
+   "id": "18f0e044-2691-4d89-93d8-ef0fa6f88d30",
+   "slug": "kaabo-mantis-8",
+   "name": "Kaabo Mantis 8",
+   "brand": "Kaabo",
+   "current": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/18f0e044-2691-4d89-93d8-ef0fa6f88d30/1784216705965_0.png"
+   ]
+  },
+  {
+   "id": "1f7c36d4-569b-4ba3-a14a-72166356f588",
+   "slug": "xiaomi-electric-scooter-4-go",
+   "name": "Xiaomi Electric Scooter 4 Go",
+   "brand": "Xiaomi",
+   "current": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/1f7c36d4-569b-4ba3-a14a-72166356f588/1784214196565_0.png"
+   ]
+  }
+ ],
+ "publiees_slugs": [
+  "cecotec-bongo-serie-m30-connected",
+  "dualtron-spider-2",
+  "dyu-d3f",
+  "hikerboy-off-road-2",
+  "inmotion-climber",
+  "inmotion-rs",
+  "inokim-light-2-super",
+  "iscooter-ix3",
+  "iscooter-w7",
+  "iscooter-w9-air",
+  "kaabo-mantis-x-plus",
+  "kaabo-wolf-king-gt-pro-plus",
+  "kugoo-g3-pro",
+  "kukirin-a1",
+  "kukirin-g4-max",
+  "kukirin-g4-ultra",
+  "nami-klima-max",
+  "navee-e25-pro",
+  "navee-g5-max",
+  "navee-g5-pro",
+  "navee-gt5-max",
+  "navee-gt3-pro",
+  "navee-k100",
+  "navee-nt5-ultra-x",
+  "navee-st5-pro",
+  "navee-v25i-pro-ii",
+  "navee-xt5-ultra",
+  "ninebot-e2",
+  "ninebot-e25e",
+  "ninebot-e3",
+  "ninebot-e3-pro-e",
+  "ninebot-f2-plus",
+  "ninebot-f3-e",
+  "ninebot-f3-pro-e",
+  "ninebot-f65",
+  "pure-flex",
+  "teverun-blade-mini-ultra",
+  "urbanglide-all-road-5",
+  "urbanglide-all-road-6-pro",
+  "urbanglide-ecross-max-2x2-gen-2",
+  "urbanglide-ecross-pro-2",
+  "urbanglide-ecross-pro-boost-2",
+  "urbanglide-ride-100-max-2",
+  "vsett-11-plus-super",
+  "weped-ff",
+  "weped-fold-11",
+  "weped-fold-3",
+  "weped-ssgt",
+  "xiaomi-electric-scooter-6-essential",
+  "yeep-me-80n-evo-plus",
+  "zero-8"
+ ]
+}
