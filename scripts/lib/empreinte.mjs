@@ -34,20 +34,33 @@ export async function empreinte(buf) {
   const g = await sharp(buf, { failOn: 'none' }).flatten({ background: '#ffffff' }).resize(9, 8, { fit: 'fill' }).grayscale().raw().toBuffer();
   let hash = 0n;
   for (let y = 0; y < 8; y++) for (let x = 0; x < 8; x++) { hash <<= 1n; if (g[y * 9 + x] > g[y * 9 + x + 1]) hash |= 1n; }
-  // signature couleur 8x8 RGB (fond aplati en blanc) : deux coloris d'une même trottinette ont le même dHash gris
-  // mais pas les mêmes couleurs — Nolan garde les variantes de couleur (24/10), le garde-fou ne doit pas les bloquer.
-  const rgb = await sharp(buf, { failOn: 'none' }).flatten({ background: '#ffffff' }).resize(8, 8, { fit: 'fill' }).removeAlpha().raw().toBuffer();
-  return { hash, mask, rgb };
+  // signature couleur : histogramme des TEINTES (12 cases, pixels saturés) + des LUMINOSITÉS (4 cases) calculé sur les
+  // seuls pixels du produit (alpha), en proportion. Deux coloris d'une même trottinette ont le même dHash gris et la même
+  // silhouette, mais pas cet histogramme — Nolan garde les variantes de couleur (24/10), le garde-fou ne doit pas les bloquer.
+  const { data: px, info: pi } = await sharp(buf, { failOn: 'none' }).ensureAlpha().resize(96, 96, { fit: 'inside' }).raw().toBuffer({ resolveWithObject: true });
+  const rgb = new Float64Array(16); let tot = 0;
+  for (let k = 0; k < pi.width * pi.height; k++) {
+    const r = px[4 * k] / 255, gg = px[4 * k + 1] / 255, b = px[4 * k + 2] / 255, a = px[4 * k + 3];
+    if (a < 128) continue;
+    const mx = Math.max(r, gg, b), mn = Math.min(r, gg, b), v = mx, sat = mx ? (mx - mn) / mx : 0;
+    tot++;
+    rgb[12 + Math.min(3, Math.floor(v * 4))] += 1;
+    if (sat > 0.3 && v > 0.2) {
+      let h = 0; const dlt = mx - mn;
+      if (mx === r) h = ((gg - b) / dlt) % 6; else if (mx === gg) h = (b - r) / dlt + 2; else h = (r - gg) / dlt + 4;
+      h = (h * 60 + 360) % 360;
+      rgb[Math.floor(h / 30) % 12] += 1;
+    }
+  }
+  if (tot) for (let k = 0; k < 16; k++) rgb[k] /= tot;
+  return { hash, mask, rgb: tot ? rgb : null };
 }
 
-// écart de couleur moyen (0-255) entre deux signatures 8x8 : on garde le PIRE quart des cases (une bande de couleur
-// sur un garde-boue suffit à faire une variante).
+// écart de couleur (0-200) : distance L1 des histogrammes ×100. Même photo ≈ 0-3 ; autre coloris = grand écart.
 export function ecartCouleur(a, b) {
   if (!a || !b) return null;
-  const d = [];
-  for (let k = 0; k < 64; k++) d.push((Math.abs(a[3 * k] - b[3 * k]) + Math.abs(a[3 * k + 1] - b[3 * k + 1]) + Math.abs(a[3 * k + 2] - b[3 * k + 2])) / 3);
-  d.sort((x, y) => y - x);
-  return d.slice(0, 16).reduce((s, x) => s + x, 0) / 16;
+  let s = 0; for (let k = 0; k < 16; k++) s += Math.abs(a[k] - b[k]);
+  return s * 100;
 }
 
 export const ham = (a, b) => { let x = a ^ b, n = 0; while (x) { n += Number(x & 1n); x >>= 1n; } return n; };
@@ -60,7 +73,7 @@ export function iou(a, b) {
 }
 
 // Seuils calibrés le 25/10/2026 sur les galeries publiées validées par vision (voir scripts/garde-doublons.mjs --calibrer).
-export const SEUILS = { dhash: Number(process.env.DOUBLON_DHASH ?? 6), iou: Number(process.env.DOUBLON_IOU ?? 0.97), dhashAvecIou: Number(process.env.DOUBLON_DHASH_IOU ?? 12), couleur: Number(process.env.DOUBLON_COULEUR ?? 20) };
+export const SEUILS = { dhash: Number(process.env.DOUBLON_DHASH ?? 6), iou: Number(process.env.DOUBLON_IOU ?? 0.97), dhashAvecIou: Number(process.env.DOUBLON_DHASH_IOU ?? 12), couleur: Number(process.env.DOUBLON_COULEUR ?? 8) };
 
 // Vrai si `a` et `b` sont la même photo (copie, recadrage, recompression).
 export function memePhoto(a, b, s = SEUILS) {

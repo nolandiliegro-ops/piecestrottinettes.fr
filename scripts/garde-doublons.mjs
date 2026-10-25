@@ -131,7 +131,7 @@ for (const p of pos) {
   if (best) posM.push(best);
 }
 const grille = [];
-for (const dh of [4, 6, 8, 10]) for (const si of [0.95, 0.97, 0.98]) for (const dhi of [10, 12, 14]) for (const cc of [10, 15, 20, 25, 30, 40]) {
+for (const dh of [4, 6, 8, 10]) for (const si of [0.95, 0.97, 0.98]) for (const dhi of [10, 12, 14]) for (const cc of [2, 4, 6, 8, 12, 16, 24]) {
   const s = { dhash: dh, iou: si, dhashAvecIou: dhi, couleur: cc };
   const flag = (q) => !(q.c !== null && q.c > s.couleur) && (q.d <= s.dhash || (q.io !== null && q.io >= s.iou && q.d <= s.dhashAvecIou));
   grille.push({ ...s, faux_positifs: neg.filter(flag).length, detectes: posM.filter(flag).length, positifs: posM.length });
