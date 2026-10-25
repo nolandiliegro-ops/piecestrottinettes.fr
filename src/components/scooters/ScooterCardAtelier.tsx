@@ -78,7 +78,9 @@ const Count = ({ n, tone }: { n: number; tone: "light" | "dark" | "green" }) => 
 const Img = ({ s, eager, className }: { s: AtelierScooter; eager: boolean; className: string }) => {
   const src = getPrimaryImage(s.images, s.image_url, "");
   return src ? (
-    <img src={optimizedImage(src, 700)} alt={s.name} loading={eager ? "eager" : "lazy"} decoding="async" className={className} style={{ filter: "drop-shadow(0 10px 12px rgba(0,0,0,0.18))" }} />
+    <img src={optimizedImage(src, 700)} alt={s.name} loading={eager ? "eager" : "lazy"} decoding="async" className={className} style={{ filter: "drop-shadow(0 10px 12px rgba(0,0,0,0.18))" }}
+      // 25/10 : le redimensionnement Supabase échoue parfois (carte Navee ST5 Max vide) → repli unique sur l'original
+      onError={(e) => { const im = e.currentTarget; if (im.src !== src) im.src = src; }} />
   ) : (
     <span className={`${className} flex items-center justify-center text-5xl opacity-20`}>🛴</span>
   );
