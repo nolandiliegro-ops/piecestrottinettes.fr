@@ -15,7 +15,7 @@ const TOOL = {
     type: 'object',
     properties: {
       vue: { type: 'string', enum: VUES, description: "Angle de la trottinette. '3/4 avant' = vue de biais, roue avant plus proche, on voit le côté ET l'avant. 'profil' = strictement de côté. 'detail' = gros plan d'une partie (roue, écran, frein…). 'pliee' = trottinette pliée." },
-      une_seule_trottinette: { type: 'boolean', description: "Exactement UNE trottinette entière visible (pas deux, pas de vignette d'une autre vue incrustée)." },
+      plusieurs_trottinettes: { type: 'boolean', description: "true s'il y a DEUX trottinettes ou plus sur l'image, ou une vignette / une 2e vue incrustée de la trottinette. Un gros plan d'une seule trottinette = false." },
       personne: { type: 'boolean', description: 'Un humain ou une partie du corps (main, jambe, pied, silhouette, même petite) est visible.' },
       ecran_ou_telephone: { type: 'boolean', description: "Un smartphone, une capture d'appli ou un écran AJOUTÉ à côté de la trottinette (l'écran du guidon de la trottinette ne compte pas)." },
       texte_incruste: { type: 'boolean', description: 'Du texte, un badge, une icône, une cote ou une fiche technique ajoutés sur l\'image (le logo imprimé sur la trottinette elle-même ne compte pas).' },
@@ -24,7 +24,7 @@ const TOOL = {
       coupee: { type: 'boolean', description: 'La trottinette est coupée par le bord de l\'image.' },
       note: { type: 'string', description: 'Une phrase courte en français si quelque chose cloche, sinon vide.' },
     },
-    required: ['vue', 'une_seule_trottinette', 'personne', 'ecran_ou_telephone', 'texte_incruste', 'autre_objet', 'fond_propre', 'coupee', 'note'],
+    required: ['vue', 'plusieurs_trottinettes', 'personne', 'ecran_ou_telephone', 'texte_incruste', 'autre_objet', 'fond_propre', 'coupee', 'note'],
   },
 };
 
@@ -35,16 +35,18 @@ Un téléphone ou une capture d'application posés à côté = ecran_ou_telephon
 
 /** Verdict métier à partir de la description. */
 export function verdict(d) {
+  // 25/10 (2e version) : REFUS = ce qui n'a rien à faire sur une fiche produit. Un gros plan ou un détourage imparfait
+  // restent en galerie mais ne peuvent JAMAIS être la photo principale (3/4, propre, non coupée, seule).
   const motifs = [];
   if (d.personne) motifs.push('personne');
   if (d.ecran_ou_telephone) motifs.push('téléphone/écran');
   if (d.texte_incruste) motifs.push('texte incrusté');
-  if (!d.une_seule_trottinette) motifs.push('pas une seule trottinette');
   if (d.autre_objet) motifs.push('autre objet');
-  if (!d.fond_propre) motifs.push('fond pas propre');
+  if (d.plusieurs_trottinettes) motifs.push('plusieurs trottinettes / vignette');
   const refus = motifs.length > 0;
-  const principale_ok = !refus && !d.coupee && (d.vue === '3/4 avant' || d.vue === '3/4 arriere');
-  return { refus, motifs, principale_ok, rang_principale: !refus && !d.coupee ? (d.vue === '3/4 avant' ? 0 : d.vue === '3/4 arriere' ? 1 : 2) : 9 };
+  const principale_ok = !refus && d.fond_propre && !d.coupee && (d.vue === '3/4 avant' || d.vue === '3/4 arriere');
+  const rang_principale = refus ? 9 : principale_ok ? (d.vue === '3/4 avant' ? 0 : 1) : d.vue === 'detail' ? 3 : 2;
+  return { refus, motifs, principale_ok, rang_principale };
 }
 
 /** Prépare l'image : alpha aplati sur gris (le blanc d'une trottinette reste visible), 512 px, JPEG. */
@@ -71,7 +73,8 @@ export async function juger(buf, cle = process.env.ANTHROPIC_API_KEY) {
     if (!res.ok) throw new Error(`Anthropic ${res.status}: ${(await res.text()).slice(0, 200)}`);
     const j = await res.json();
     const d = j.content?.find((c) => c.type === 'tool_use')?.input;
-    if (!d) { if (essai < 4) continue; throw new Error('réponse sans verdict'); }
+    // un verdict incomplet n'est JAMAIS interprété (35 cas le 25/10 : champ absent lu comme un défaut) : on redemande
+    if (!d || TOOL.input_schema.required.some((k) => d[k] === undefined)) { if (essai < 4) continue; throw new Error('verdict incomplet après 5 essais'); }
     return { ...d, ...verdict(d), usage: j.usage };
   }
   throw new Error('Anthropic indisponible après 5 essais');
