@@ -1,0 +1,252 @@
+urbanglide-all-road-5 #0 PASS DOUBLON même image (dHash 0, couleur 3.0) (0532b4a7/1792450236596_0.png)
+navee-k100 #0 WARN profil
+navee-k100 #1 WARN DOUBLON même image (dHash 0, couleur 0.0) (lot#0)
+navee-k100 #2 WARN DOUBLON même image (dHash 0, couleur 0.0) (lot#0)
+navee-k100 #3 WARN REFUS personne
+navee-k100 #4 WARN REFUS personne
+navee-k100 #5 WARN REFUS personne,autre objet
+navee-k100 #6 WARN DOUBLON même image (dHash 0, couleur 1.0) (lot#0)
+inmotion-climber #0 WARN 3/4 avant ★3/4 propre
+inmotion-climber #1 PASS profil
+inmotion-climber #2 PASS profil
+inmotion-climber #3 FAIL détourage sale / résidu de décor
+inmotion-climber #4 FAIL détourage sale / résidu de décor · basse définition · cadrage serré
+inmotion-climber #5 WARN DOUBLON même image (dHash 0, couleur 0.0) (lot#0)
+inmotion-climber #6 PASS DOUBLON même image (dHash 0, couleur 0.0) (lot#1)
+inmotion-climber #7 PASS DOUBLON même image (dHash 0, couleur 0.0) (lot#2)
+inmotion-climber #8 FAIL détourage sale / résidu de décor
+inmotion-climber #9 FAIL détourage sale / résidu de décor · basse définition · cadrage serré
+navee-g5-pro #0 WARN profil
+navee-g5-pro #1 WARN 3/4 avant ★3/4 propre
+navee-g5-pro #2 WARN DOUBLON même image (dHash 0, couleur 0.0) (lot#1)
+navee-g5-pro #3 WARN DOUBLON même image (dHash 0, couleur 0.0) (lot#1)
+navee-g5-pro #4 PASS profil
+navee-g5-pro #5 PASS 3/4 avant ★3/4 propre
+navee-g5-pro #6 WARN pliee
+navee-g5-pro #7 WARN REFUS personne,autre objet
+navee-g5-pro #8 FAIL détourage sale / résidu de décor · cadrage serré
+navee-g5-pro #9 FAIL détourage sale / résidu de décor · élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux
+navee-v25i-pro-ii #0 PASS profil
+navee-xt5-ultra #0 WARN profil
+ninebot-f65 #0 ERROR Command failed: curl -s -L --max-time 40 -A Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Ge
+ninebot-f65 #1 ERROR Command failed: curl -s -L --max-time 40 -A Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Ge
+ninebot-f65 #2 ERROR Command failed: curl -s -L --max-time 40 -A Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Ge
+ninebot-f65 #3 ERROR téléchargement vide
+ninebot-f65 #4 PASS profil
+ninebot-f65 #5 PASS profil
+ninebot-f65 #6 WARN 3/4 avant ★3/4 propre
+ninebot-f65 #7 FAIL détourage sale / résidu de décor
+ninebot-f65 #8 WARN pliee
+ninebot-f65 #9 PASS detail
+iscooter-w7 #0 FAIL élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux
+iscooter-w7 #1 FAIL élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux
+iscooter-w7 #2 FAIL élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux
+iscooter-w7 #3 PASS REFUS personne,texte incrusté
+iscooter-w7 #4 PASS REFUS personne,texte incrusté
+iscooter-w7 #5 FAIL détourage sale / résidu de décor · élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux
+iscooter-w7 #6 FAIL détourage sale / résidu de décor · petit élément détaché (2 morceaux)
+iscooter-w7 #7 PASS REFUS personne,autre objet
+iscooter-w7 #8 FAIL cadrage serré · élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux
+iscooter-w7 #9 WARN REFUS personne,autre objet
+navee-e25-pro #0 PASS profil
+dualtron-spider-2 #0 WARN 3/4 avant ★3/4 propre
+dualtron-spider-2 #1 PASS profil
+dualtron-spider-2 #2 PASS dessus
+dualtron-spider-2 #3 WARN 3/4 avant ★3/4 propre
+dualtron-spider-2 #4 WARN DOUBLON même image (dHash 0, couleur 0.0) (lot#3)
+dualtron-spider-2 #5 WARN profil
+kukirin-g4-ultra #0 FAIL détourage sale / résidu de décor · élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux
+kukirin-g4-ultra #1 FAIL détourage sale / résidu de décor · élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux
+kukirin-g4-ultra #2 FAIL détourage sale / résidu de décor · élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux
+kukirin-g4-ultra #3 WARN REFUS personne,autre objet
+kukirin-g4-ultra #4 PASS REFUS personne
+kukirin-g4-ultra #5 PASS DOUBLON même image (dHash 0, couleur 0.0) (55a8120b/1792442874106_0.png)
+kukirin-g4-ultra #6 PASS 3/4 avant ★3/4 propre
+kukirin-g4-ultra #7 PASS 3/4 avant ★3/4 propre
+kukirin-g4-ultra #8 PASS profil
+kukirin-g4-ultra #9 FAIL détourage sale / résidu de décor · couleurs vives 33 % (visuel marketing ?)
+navee-g5-max #0 WARN profil
+navee-g5-max #1 WARN 3/4 avant ★3/4 propre
+navee-g5-max #2 WARN DOUBLON même image (dHash 0, couleur 0.0) (lot#1)
+navee-g5-max #3 WARN DOUBLON même image (dHash 0, couleur 0.0) (lot#1)
+navee-g5-max #4 PASS profil
+navee-g5-max #5 PASS 3/4 avant ★3/4 propre
+navee-g5-max #6 WARN pliee
+navee-g5-max #7 WARN REFUS personne,autre objet
+navee-g5-max #8 FAIL détourage sale / résidu de décor · cadrage serré
+navee-g5-max #9 FAIL détourage sale / résidu de décor · élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux
+nami-klima-max #0 FAIL détourage sale / résidu de décor
+nami-klima-max #1 PASS DOUBLON même image (dHash 0, couleur 0.0) (5dab2360/1792448555744_0.png)
+nami-klima-max #2 PASS DOUBLON même image (dHash 0, couleur 0.0) (5dab2360/1792448555744_0.png)
+nami-klima-max #3 PASS DOUBLON même image (dHash 0, couleur 0.0) (5dab2360/1792448555744_0.png)
+nami-klima-max #4 PASS detail
+nami-klima-max #5 PASS profil
+nami-klima-max #6 WARN pliee
+nami-klima-max #7 WARN profil
+nami-klima-max #8 WARN profil
+nami-klima-max #9 WARN pliee
+ninebot-e3 #0 PASS DOUBLON même image (dHash 5, couleur 3.7) (a98e0099/1792448898632_0.png)
+ninebot-e3 #1 PASS profil
+ninebot-e3 #2 PASS 3/4 avant ★3/4 propre
+navee-nt5-ultra-x #0 FAIL cadrage serré · élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux
+navee-nt5-ultra-x #1 FAIL cadrage serré · élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux
+navee-nt5-ultra-x #2 FAIL cadrage serré · élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux
+navee-nt5-ultra-x #3 FAIL détourage sale / résidu de décor · élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux
+navee-nt5-ultra-x #4 PASS profil
+navee-nt5-ultra-x #5 PASS 3/4 avant ★3/4 propre
+navee-nt5-ultra-x #6 PASS dessus
+navee-nt5-ultra-x #7 WARN face
+navee-nt5-ultra-x #8 WARN REFUS personne
+navee-nt5-ultra-x #9 FAIL détourage sale / résidu de décor
+kukirin-g4-max #0 PASS profil
+kukirin-g4-max #1 PASS DOUBLON même image (dHash 0, couleur 0.0) (lot#0)
+kukirin-g4-max #2 PASS REFUS autre objet
+kukirin-g4-max #3 PASS profil
+kukirin-g4-max #4 PASS DOUBLON même image (dHash 0, couleur 0.0) (lot#3)
+kukirin-g4-max #5 PASS REFUS autre objet
+kukirin-g4-max #6 WARN face
+kukirin-g4-max #7 WARN dessus
+kukirin-g4-max #8 WARN pliee
+kukirin-g4-max #9 WARN REFUS autre objet
+navee-gt3-pro #0 PASS profil
+weped-ssgt #0 WARN DOUBLON même image (dHash 1, couleur 6.1) (0ac8e64e/1792444695510_0.png)
+weped-ssgt #1 WARN DOUBLON même image (dHash 1, couleur 6.1) (0ac8e64e/1792444695510_0.png)
+weped-ssgt #2 WARN 3/4 avant
+weped-ssgt #3 WARN DOUBLON même image (dHash 1, couleur 6.1) (0ac8e64e/1792444695510_0.png)
+weped-ssgt #4 WARN DOUBLON même image (dHash 0, couleur 0.0) (lot#2)
+weped-ssgt #5 FAIL détourage sale / résidu de décor · basse définition
+weped-ssgt #6 WARN DOUBLON même image (dHash 1, couleur 6.1) (0ac8e64e/1792444695510_0.png)
+weped-ssgt #7 WARN DOUBLON même image (dHash 0, couleur 0.0) (lot#2)
+weped-fold-11 #0 PASS DOUBLON même image (dHash 0, couleur 0.3) (6d79b9a7/1792444668530_0.png)
+weped-fold-11 #1 PASS DOUBLON même image (dHash 0, couleur 0.3) (6d79b9a7/1792444668530_0.png)
+weped-fold-11 #2 PASS DOUBLON même image (dHash 0, couleur 0.3) (6d79b9a7/1792444668530_0.png)
+weped-fold-11 #3 WARN 3/4 avant ★3/4 propre
+weped-fold-11 #4 PASS DOUBLON même image (dHash 0, couleur 0.3) (6d79b9a7/1792444668530_0.png)
+navee-st5-pro #0 WARN profil
+iscooter-w9-air #0 FAIL élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux
+iscooter-w9-air #1 FAIL élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux
+iscooter-w9-air #2 FAIL élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux
+iscooter-w9-air #3 WARN REFUS personne
+iscooter-w9-air #4 FAIL détourage sale / résidu de décor · cadrage serré · élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux
+iscooter-w9-air #5 WARN detail
+iscooter-w9-air #6 FAIL détourage sale / résidu de décor · cadrage serré
+iscooter-w9-air #7 FAIL détourage sale / résidu de décor
+iscooter-w9-air #8 FAIL détourage sale / résidu de décor · cadrage serré
+iscooter-w9-air #9 WARN detail
+hikerboy-off-road-2 #0 PASS DOUBLON même image (dHash 0, couleur 1.0) (5d167726/1792446603510_0.png)
+hikerboy-off-road-2 #1 PASS DOUBLON même image (dHash 0, couleur 0.7) (5d167726/1792446603510_0.png)
+hikerboy-off-road-2 #2 PASS DOUBLON même image (dHash 0, couleur 1.0) (5d167726/1792446603510_0.png)
+hikerboy-off-road-2 #3 WARN REFUS personne
+hikerboy-off-road-2 #4 PASS REFUS personne
+hikerboy-off-road-2 #5 WARN face
+hikerboy-off-road-2 #6 FAIL détourage sale / résidu de décor · cadrage serré
+hikerboy-off-road-2 #7 WARN REFUS personne
+hikerboy-off-road-2 #8 WARN face
+hikerboy-off-road-2 #9 PASS face
+weped-fold-3 #0 FAIL détourage sale / résidu de décor
+weped-fold-3 #1 PASS profil
+weped-fold-3 #2 FAIL détourage sale / résidu de décor · basse définition · cadrage serré
+weped-fold-3 #3 FAIL détourage sale / résidu de décor · élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux
+weped-fold-3 #4 PASS detail
+weped-fold-3 #5 FAIL détourage sale / résidu de décor
+weped-fold-3 #6 WARN DOUBLON même image (dHash 0, couleur 6.4) (36074980/1792444679445_0.png)
+kaabo-mantis-x-plus #0 PASS 3/4 avant ★3/4 propre
+kaabo-mantis-x-plus #1 PASS DOUBLON même image (dHash 0, couleur 2.6) (lot#0)
+kaabo-mantis-x-plus #2 WARN 3/4 avant ★3/4 propre
+kaabo-mantis-x-plus #3 PASS DOUBLON même image (dHash 0, couleur 0.0) (lot#0)
+kaabo-mantis-x-plus #4 FAIL cadrage serré · élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux
+kaabo-mantis-x-plus #5 PASS detail
+kaabo-mantis-x-plus #6 WARN detail
+kaabo-mantis-x-plus #7 FAIL détourage sale / résidu de décor · couleurs vives 32 % (visuel marketing ?)
+kaabo-mantis-x-plus #8 WARN detail
+kaabo-mantis-x-plus #9 PASS dessus
+cecotec-bongo-serie-m30-connected #0 FAIL basse définition · élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux
+pure-flex #0 WARN pliee
+pure-flex #1 WARN DOUBLON même image (dHash 0, couleur 0.9) (lot#0)
+pure-flex #2 WARN DOUBLON même image (dHash 0, couleur 0.0) (lot#0)
+pure-flex #3 FAIL détourage sale / résidu de décor
+pure-flex #4 FAIL détourage sale / résidu de décor · élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux
+pure-flex #5 FAIL détourage sale / résidu de décor · élément en plus (logo, badge, téléphone, 2e trottinette) : 9 morceaux
+pure-flex #6 FAIL détourage sale / résidu de décor · élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux
+pure-flex #7 FAIL détourage sale / résidu de décor · élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux
+pure-flex #8 FAIL détourage sale / résidu de décor · élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux · couleurs vives 46 % (visuel marketing ?)
+pure-flex #9 FAIL détourage sale / résidu de décor · élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux
+ninebot-e3-pro-e #0 WARN 3/4 avant ★3/4 propre
+urbanglide-ecross-pro-2 #0 PASS DOUBLON même image (dHash 1, couleur 3.1) (85a059f9/1792450362599_0.png)
+urbanglide-ride-100-max-2 #0 PASS DOUBLON même image (dHash 0, couleur 3.0) (304d03ec/1792444462084_0.png)
+kugoo-g3-pro #0 FAIL élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux
+kugoo-g3-pro #1 FAIL élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux
+kugoo-g3-pro #2 FAIL élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux
+kugoo-g3-pro #3 WARN REFUS personne
+kugoo-g3-pro #4 FAIL détourage sale / résidu de décor · cadrage serré
+kugoo-g3-pro #5 PASS DOUBLON même image (dHash 0, couleur 1.1) (f2ad1c3e/1792447907982_0.png)
+kugoo-g3-pro #6 WARN DOUBLON même image (dHash 0, couleur 0.8) (f2ad1c3e/1792447915373_0.png)
+kugoo-g3-pro #7 PASS 3/4 avant ★3/4 propre
+kugoo-g3-pro #8 PASS profil
+kugoo-g3-pro #9 PASS 3/4 avant ★3/4 propre
+teverun-blade-mini-ultra #0 PASS 3/4 avant ★3/4 propre
+teverun-blade-mini-ultra #1 PASS 3/4 avant ★3/4 propre
+teverun-blade-mini-ultra #2 PASS profil
+teverun-blade-mini-ultra #3 PASS 3/4 arriere ★3/4 propre
+teverun-blade-mini-ultra #4 WARN DOUBLON même image (dHash 1, couleur 7.4) (628aacce/1792450042480_0.png)
+teverun-blade-mini-ultra #5 PASS DOUBLON même image (dHash 0, couleur 0.0) (lot#1)
+teverun-blade-mini-ultra #6 PASS DOUBLON même image (dHash 0, couleur 0.0) (lot#2)
+teverun-blade-mini-ultra #7 PASS DOUBLON même image (dHash 0, couleur 0.0) (lot#3)
+teverun-blade-mini-ultra #8 WARN DOUBLON même image (dHash 1, couleur 7.4) (628aacce/1792450042480_0.png)
+teverun-blade-mini-ultra #9 PASS DOUBLON même image (dHash 0, couleur 0.0) (lot#0)
+vsett-11-plus-super #0 WARN 3/4 avant ★3/4 propre
+vsett-11-plus-super #1 WARN DOUBLON même image (dHash 0, couleur 0.0) (lot#0)
+vsett-11-plus-super #2 WARN DOUBLON même image (dHash 0, couleur 0.0) (lot#0)
+vsett-11-plus-super #3 WARN profil
+vsett-11-plus-super #4 WARN DOUBLON même image (dHash 0, couleur 0.2) (410169cc/1792444596293_0.png)
+vsett-11-plus-super #5 FAIL détourage sale / résidu de décor · petit élément détaché (2 morceaux)
+vsett-11-plus-super #6 PASS DOUBLON même image (dHash 1, couleur 3.0) (410169cc/1792886460708_0.png)
+vsett-11-plus-super #7 PASS DOUBLON même image (dHash 4, couleur 4.0) (410169cc/1792444594930_0.png)
+vsett-11-plus-super #8 WARN DOUBLON même image (dHash 0, couleur 1.9) (410169cc/1792886464735_0.png)
+vsett-11-plus-super #9 PASS DOUBLON même image (dHash 0, couleur 0.0) (410169cc/1792886460708_0.png)
+inmotion-rs #0 PASS DOUBLON même image (dHash 0, couleur 0.0) (5b954e91/1792886362966_0.png)
+inmotion-rs #1 PASS DOUBLON même image (dHash 0, couleur 0.0) (5b954e91/1792886362966_0.png)
+inmotion-rs #2 PASS DOUBLON même image (dHash 0, couleur 0.0) (5b954e91/1792886362966_0.png)
+inmotion-rs #3 PASS REFUS personne
+inmotion-rs #4 WARN REFUS personne
+inmotion-rs #5 WARN REFUS personne,autre objet
+inmotion-rs #6 WARN REFUS autre objet
+inmotion-rs #7 WARN REFUS personne
+inmotion-rs #8 WARN REFUS personne
+inmotion-rs #9 PASS 3/4 avant
+iscooter-ix3 #0 FAIL élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux
+iscooter-ix3 #1 FAIL élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux
+iscooter-ix3 #2 FAIL élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux
+iscooter-ix3 #3 FAIL cadrage serré · élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux · couleurs vives 63 % (visuel marketing ?)
+iscooter-ix3 #4 PASS REFUS téléphone/écran
+iscooter-ix3 #5 FAIL élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux
+iscooter-ix3 #6 PASS 3/4 avant ★3/4 propre
+iscooter-ix3 #7 PASS profil
+iscooter-ix3 #8 WARN DOUBLON même image (dHash 2, couleur 1.3) (172b20fd/1792442112999_0.png)
+iscooter-ix3 #9 WARN 3/4 avant ★3/4 propre
+urbanglide-ecross-pro-boost-2 #0 PASS DOUBLON même image (dHash 1, couleur 1.5) (4f08cfd5/1792450381656_0.png)
+urbanglide-all-road-6-pro #0 PASS DOUBLON même image (dHash 2, couleur 1.5) (86c2c080/1792450265208_0.png)
+urbanglide-all-road-6-pro #1 WARN 3/4 avant ★3/4 propre
+navee-gt5-max #0 PASS profil
+navee-gt5-max #1 WARN 3/4 avant ★3/4 propre
+navee-gt5-max #2 WARN DOUBLON même image (dHash 0, couleur 0.0) (lot#1)
+navee-gt5-max #3 WARN DOUBLON même image (dHash 0, couleur 0.0) (lot#1)
+navee-gt5-max #4 FAIL élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux
+navee-gt5-max #5 PASS profil
+navee-gt5-max #6 FAIL détourage sale / résidu de décor
+navee-gt5-max #7 FAIL détourage sale / résidu de décor · basse définition
+navee-gt5-max #8 WARN DOUBLON même image (dHash 3, couleur 4.0) (51e6f92a/1792448660646_0.png)
+navee-gt5-max #9 PASS detail
+zero-8 #0 PASS 3/4 avant ★3/4 propre
+kukirin-a1 #0 PASS DOUBLON même image (dHash 0, couleur 0.0) (cf6a9fe5/1792447997836_0.png)
+kukirin-a1 #1 PASS DOUBLON même image (dHash 0, couleur 0.0) (cf6a9fe5/1792447997836_0.png)
+kukirin-a1 #2 PASS DOUBLON même image (dHash 0, couleur 0.0) (cf6a9fe5/1792447997836_0.png)
+kukirin-a1 #3 PASS profil
+kukirin-a1 #4 WARN pliee
+kukirin-a1 #5 PASS DOUBLON même image (dHash 0, couleur 0.0) (cf6a9fe5/1792448000274_0.png)
+kukirin-a1 #6 WARN detail
+kukirin-a1 #7 PASS detail
+kukirin-a1 #8 FAIL détourage sale / résidu de décor · cadrage serré
+kukirin-a1 #9 FAIL détourage sale / résidu de décor · cadrage serré
+::notice title=chasse chasse-2510b (proposition)::51 fiches · 3/4 trouvé 18 · sans 3/4 15 · rien 18 · 34 photos proposées
+::notice title=photos chasse-2510b (dry)::250 candidates · PASS 95 · WARN 88 · FAIL 63 · ERREUR 4

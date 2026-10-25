@@ -1,0 +1,1112 @@
+{
+ "usage": {
+  "input_tokens": 0,
+  "output_tokens": 0,
+  "web_searches": 0
+ },
+ "cout_estime_usd": 0,
+ "cibles": [
+  {
+   "slug": "urbanglide-all-road-5",
+   "tokens": [
+    "all",
+    "road",
+    "5"
+   ],
+   "pages": [
+    {
+     "url": "https://urbanglide.com/en/produit/scooter-all-road-5/",
+     "ok": true,
+     "n": 1,
+     "title": "ALL ROAD 5\t\t ALL ROAD 5 - UrbanGlide"
+    }
+   ],
+   "candidates": 1
+  },
+  {
+   "slug": "navee-k100",
+   "tokens": [
+    "k",
+    "100"
+   ],
+   "pages": [
+    {
+     "url": "https://eu.naveetech.com/products/navee-k100",
+     "ok": true,
+     "n": 7,
+     "title": "NAVEE K100 Children&#39;s Electric Scooter\n     NAVEE K100"
+    },
+    {
+     "url": "https://www.naveetech.com/k100/",
+     "ok": true,
+     "n": 1,
+     "title": "NAVEE K100 Electric Kids Scooter: 100% Smart Safety | NAVEE TECH NAVEE K100 Electric Kids Scooter: 100% Smart Safety | NAVEE TECH"
+    }
+   ],
+   "candidates": 7
+  },
+  {
+   "slug": "inmotion-climber",
+   "tokens": [
+    "climber"
+   ],
+   "pages": [
+    {
+     "url": "https://www.myinmotion.com/inmotion-climber",
+     "ok": true,
+     "n": 0,
+     "title": "InMotion Climber &mdash; INMOTION USA InMotion Climber &mdash; INMOTION USA"
+    },
+    {
+     "url": "https://www.voromotors.com/products/inmotion-climber-electric-scooter",
+     "ok": true,
+     "n": 24,
+     "title": "Inmotion Climber Foldable Dual-Motor Scooter | VORO - VORO MOTORS Inmotion Climber Foldable Dual-Motor Scooter | VORO - VORO MOTORS"
+    },
+    {
+     "url": "https://inmotion-store.com/product/inmotion-climber/",
+     "ok": false,
+     "n": 0,
+     "title": "HTTP 403"
+    }
+   ],
+   "candidates": 10
+  },
+  {
+   "slug": "navee-g5-pro",
+   "tokens": [
+    "g",
+    "5",
+    "pro"
+   ],
+   "pages": [
+    {
+     "url": "https://www.naveetech.com/navee-g5-pro/",
+     "ok": true,
+     "n": 1,
+     "title": "NAVEE G5 Pro Urban Electric Scooter | NAVEE TECH NAVEE G5 Pro Urban Electric Scooter | NAVEE TECH"
+    },
+    {
+     "url": "https://naveetech.us/products/navee-g5-pro",
+     "ok": true,
+     "n": 10,
+     "title": "NAVEE G5 Pro | Anti-Theft Lightweight Scooter &ndash; NAVEE_US NAVEE G5 Pro | Anti-Theft Lightweight Scooter"
+    }
+   ],
+   "candidates": 10
+  },
+  {
+   "slug": "navee-v25i-pro-ii",
+   "tokens": [
+    "v",
+    "25",
+    "i",
+    "pro",
+    "ii"
+   ],
+   "pages": [
+    {
+     "url": "https://www.naveetech.com/navee-v25i-pro-ii/",
+     "ok": true,
+     "n": 1,
+     "title": "NAVEE V25i Pro II Electric Scooter: Power, Speed, and Excitement | NAVEE TECH NAVEE V25i Pro II Electric Scooter: Power, Speed, and Excitement | NAVEE TECH"
+    }
+   ],
+   "candidates": 1
+  },
+  {
+   "slug": "xiaomi-electric-scooter-6-essential",
+   "tokens": [
+    "6",
+    "essential"
+   ],
+   "pages": [
+    {
+     "url": "https://www.mi.com/global/product/xiaomi-electric-scooter-6-essential/",
+     "ok": true,
+     "n": 0,
+     "title": "Xiaomi Electric Scooter 6 Essential - Xiaomi Global Xiaomi Electric Scooter 6 Essential - Xiaomi Global"
+    },
+    {
+     "url": "https://miamicenters.com/product/xiaomi-electric-scooter-6-essential-black/",
+     "ok": false,
+     "n": 0,
+     "title": "erreur The operation was aborted due to timeout"
+    }
+   ],
+   "candidates": 0
+  },
+  {
+   "slug": "navee-xt5-ultra",
+   "tokens": [
+    "xt",
+    "5",
+    "ultra"
+   ],
+   "pages": [
+    {
+     "url": "https://www.naveetech.com/navee-xt5-ultra/",
+     "ok": true,
+     "n": 1,
+     "title": "NAVEE XT5 Ultra - NAVEE TECH NAVEE XT5 Ultra - NAVEE TECH"
+    },
+    {
+     "url": "https://eu.naveetech.com/products/xt5-ultra",
+     "ok": false,
+     "n": 0,
+     "title": "NAVEE XT5 Ultra Off-Road Electric Scooter\n     NAVEE XT5 Ultra (EU Version Max. 25 km/h) [variante : max]"
+    }
+   ],
+   "candidates": 1
+  },
+  {
+   "slug": "ninebot-f65",
+   "tokens": [
+    "f",
+    "65"
+   ],
+   "pages": [
+    {
+     "url": "https://www.segway.la/products/ninebot-kickscooter-f65",
+     "ok": true,
+     "n": 24,
+     "title": "Ninebot KickScooter F65&ndash; Segway Los Angeles  Ninebot KickScooter F65"
+    },
+    {
+     "url": "https://ap-en.segway.com/ekickscooter/products/f65.html",
+     "ok": true,
+     "n": 0,
+     "title": "Segway Ninebot KickScooter F65 Segway Ninebot KickScooter F65"
+    }
+   ],
+   "candidates": 10
+  },
+  {
+   "slug": "iscooter-w7",
+   "tokens": [
+    "w",
+    "7"
+   ],
+   "pages": [
+    {
+     "url": "https://iscooter-eu.com/products/iscooter-w7-electric-scooter",
+     "ok": true,
+     "n": 15,
+     "title": "iScooter W7 Urban Commuting E-Scooter 27-37km\n&ndash; iScooter  Official\n iScooter W7 Urban Commuting E-Scooter 27-37km"
+    },
+    {
+     "url": "https://www.iscooterglobal.com/pages/w7",
+     "ok": true,
+     "n": 0,
+     "title": "W7 W7"
+    }
+   ],
+   "candidates": 10
+  },
+  {
+   "slug": "navee-e25-pro",
+   "tokens": [
+    "e",
+    "25",
+    "pro"
+   ],
+   "pages": [
+    {
+     "url": "https://www.naveetech.com/navee-easyride-25pro/",
+     "ok": true,
+     "n": 1,
+     "title": "NAVEE E25 Pro Electric Scooter: Move Smarter, Live Lighter | NAVEE TECH NAVEE E25 Pro Electric Scooter: Move Smarter, Live Lighter | NAVEE TECH"
+    }
+   ],
+   "candidates": 1
+  },
+  {
+   "slug": "dualtron-spider-2",
+   "tokens": [
+    "spider",
+    "2"
+   ],
+   "pages": [
+    {
+     "url": "https://www.minimotors-nyc.com/products/dualtron-spider-2",
+     "ok": false,
+     "n": 0,
+     "title": "Minimotors NYC - Dualtron Spider II\n   Dualtron Spider 2 [variante : ii]"
+    },
+    {
+     "url": "https://www.gyroroue-shop.fr/boutique/trottinette-electrique/dualtron/dualtron-spider-2-minimotors-2",
+     "ok": true,
+     "n": 3,
+     "title": "DUALTRON SPIDER 2 | LÉGÈRE | 60V24Ah | 60V30Ah | GS DUALTRON SPIDER 2 | LÉGÈRE | 60V24Ah | 60V30Ah | GS"
+    },
+    {
+     "url": "https://www.dualtronnordic.com/en/shop/dualtron-spider-2-gen-2-120",
+     "ok": true,
+     "n": 2,
+     "title": "Dualtron Spider 2 (Gen 2) Electric Scooter | Dualtron Nordic Dualtron Spider 2 (Gen 2) Electric Scooter | Dualtron Nordic"
+    },
+    {
+     "url": "https://www.maxblinker.fr/fr/trottinettes-electriques/dualtron-spider-2",
+     "ok": true,
+     "n": 1,
+     "title": "Trottinette électrique Dualtron Spider 2 en stock. - bon voyage Trottinette électrique Dualtron Spider 2 en stock."
+    }
+   ],
+   "candidates": 6
+  },
+  {
+   "slug": "ninebot-e25e",
+   "tokens": [
+    "e",
+    "25",
+    "e"
+   ],
+   "pages": [
+    {
+     "url": "https://eu-en.segway.com/ekickscooter/products/e25e.html",
+     "ok": true,
+     "n": 0,
+     "title": "Segway eKickScooter Ninebot E25 E Segway eKickScooter Ninebot E25 E"
+    },
+    {
+     "url": "https://fr-fr.segway.com/ekickscooter/products/e25e.html",
+     "ok": true,
+     "n": 0,
+     "title": "Trottinette électrique Segway eKickScooter Ninebot E25 E Trottinette électrique Segway eKickScooter Ninebot E25 E"
+    },
+    {
+     "url": "https://mower.ie/product/ninebot-kickscooter-e25e-powered-by-segway",
+     "ok": true,
+     "n": 0,
+     "title": "Ninebot Kickscooter E25E powered by Segway €549.00 | Price includes Vat and Delivery, in Stock | Order Online in Ireland | Electric Scooters The Kids Corner"
+    }
+   ],
+   "candidates": 0
+  },
+  {
+   "slug": "kukirin-g4-ultra",
+   "tokens": [
+    "g",
+    "4",
+    "ultra"
+   ],
+   "pages": [
+    {
+     "url": "https://www.kukirin-scooter.com/products/kukirin-g4-ultra-electric-scooter",
+     "ok": true,
+     "n": 30,
+     "title": "KuKirin G4 Ultra Electric Scooter (2026) | Dual 1200W &amp; 80km Range\n &ndash; Kukirin-Scooter KuKirin G4 Ultra Electric Scooter (2026) | Dual 1200W &amp; 80km"
+    }
+   ],
+   "candidates": 10
+  },
+  {
+   "slug": "navee-g5-max",
+   "tokens": [
+    "g",
+    "5",
+    "max"
+   ],
+   "pages": [
+    {
+     "url": "https://www.naveetech.com/navee-g5-max/",
+     "ok": true,
+     "n": 1,
+     "title": "NAVEE G5 Max Urban Electric Scooter | NAVEE TECH NAVEE G5 Max Urban Electric Scooter | NAVEE TECH"
+    },
+    {
+     "url": "https://naveetech.us/products/navee-g5-max",
+     "ok": true,
+     "n": 10,
+     "title": "NAVEE G5 Max | High-Power Lightweight Scooter &ndash; NAVEE_US NAVEE G5 Max | High-Power Lightweight Scooter"
+    },
+    {
+     "url": "https://estarbikes.com/e-scooter/navee-g5-max-electric-scooter/",
+     "ok": true,
+     "n": 12,
+     "title": "Navee G5 Max Electric Scooter in Atlanta – Ultimate Power &amp; Range | eStar Rides Navee G5 Max Electric Scooter in Atlanta – Ultimate Power &amp; Range | eSta"
+    }
+   ],
+   "candidates": 10
+  },
+  {
+   "slug": "nami-klima-max",
+   "tokens": [
+    "klima",
+    "max"
+   ],
+   "pages": [
+    {
+     "url": "https://www.speedwayridersnyc.com/shop/nami-klima-max-electric-scooter/",
+     "ok": true,
+     "n": 1,
+     "title": "NAMI Klima Max Electric Scooter: 2 × 1000W, 60V 30Ah NAMI Klima Max Electric Scooter"
+    },
+    {
+     "url": "https://www.wyrdryds.com/products/nami-klima-max-electric-scooter",
+     "ok": true,
+     "n": 25,
+     "title": "Nami Klima Max Electric Scooter (CARBON MATTE) | WYRDRYDS\n Nami Klima Max Electric Scooter (CARBON MATTE) | WYRDRYDS"
+    }
+   ],
+   "candidates": 10
+  },
+  {
+   "slug": "ninebot-f3-e",
+   "tokens": [
+    "f",
+    "3",
+    "e"
+   ],
+   "pages": [
+    {
+     "url": "https://eu-en.segway.com/ekickscooter/products/f3-e.html",
+     "ok": true,
+     "n": 0,
+     "title": "Segway eKickScooter Ninebot F3 E Segway eKickScooter Ninebot F3 E"
+    },
+    {
+     "url": "https://store.segway.com/ninebot-kickscooter-f3",
+     "ok": false,
+     "n": 0,
+     "title": "Segway Ninebot F3 Electric Scooter | Segway Official Store Segway Ninebot F3 Electric Scooter | Segway Official Store"
+    }
+   ],
+   "candidates": 0
+  },
+  {
+   "slug": "ninebot-e3",
+   "tokens": [
+    "e",
+    "3"
+   ],
+   "pages": [
+    {
+     "url": "https://store-ca.segway.com/segway-e3-electric-scooter",
+     "ok": true,
+     "n": 3,
+     "title": "Segway E3 Electric Scooter | Long-Range Commuter | Segway Canada Segway E3 Electric Scooter | Long-Range Commuter | Segway Canada"
+    },
+    {
+     "url": "https://www.segway.com/ekickscooter/products/e3.html",
+     "ok": true,
+     "n": 0,
+     "title": "Segway eKickScooter E3 , Powerful, Efficient, and Reliable Segway eKickScooter E3 , Powerful, Efficient, and Reliable"
+    }
+   ],
+   "candidates": 3
+  },
+  {
+   "slug": "navee-nt5-ultra-x",
+   "tokens": [
+    "nt",
+    "5",
+    "ultra",
+    "x"
+   ],
+   "pages": [
+    {
+     "url": "https://naveetech.us/products/nt5-ultra-x",
+     "ok": true,
+     "n": 11,
+     "title": "NT5 Ultra X | 40 MPH, 56 Miles | Dual-Motor E-Scooter &ndash; NAVEE_US NAVEE NT5 Ultra X | Dual-Motor Performance Scooter"
+    },
+    {
+     "url": "https://www.naveetech.com/navee-nt5-ultrax/",
+     "ok": true,
+     "n": 1,
+     "title": "NAVEE NT5 Ultra X - NAVEE TECH NAVEE NT5 Ultra X - NAVEE TECH"
+    }
+   ],
+   "candidates": 10
+  },
+  {
+   "slug": "kukirin-g4-max",
+   "tokens": [
+    "g",
+    "4",
+    "max"
+   ],
+   "pages": [
+    {
+     "url": "https://www.kugooscooterusa.com/products/kukirin-g4-max-electric-scooter-dual-1600w-powerful-motor-60v-35-2ah-battery",
+     "ok": true,
+     "n": 2,
+     "title": "KUKIRIN G4 Max Electric Scooter| Dual 1600W Powerful Motor | 60V 35.2Ah Battery KUKIRIN G4 Max Electric Scooter| Dual 1600W Powerful Motor | 60V 35.2Ah Battery"
+    },
+    {
+     "url": "https://kukirin-escooter.com/products/kukirin-g4-max-electric-scooter",
+     "ok": true,
+     "n": 17,
+     "title": "KuKirin (Kugoo Kirin) G4 Max Electric Scooter KuKirin (Kugoo Kirin) G4 Max Electric Scooter"
+    }
+   ],
+   "candidates": 10
+  },
+  {
+   "slug": "navee-gt3-pro",
+   "tokens": [
+    "gt",
+    "3",
+    "pro"
+   ],
+   "pages": [
+    {
+     "url": "https://www.naveetech.com/navee-gt3-pro/",
+     "ok": true,
+     "n": 1,
+     "title": "NAVEE GT3 Pro Electric Scooter: Smoother Rides with Quadruple Shock Absorption | NAVEE TECH NAVEE GT3 Pro Electric Scooter: Smoother Rides with Quadruple Shock "
+    }
+   ],
+   "candidates": 1
+  },
+  {
+   "slug": "weped-ssgt",
+   "tokens": [
+    "ssgt"
+   ],
+   "pages": [
+    {
+     "url": "https://pietechnologie.com/products/trottinette-electrique-weped-ssgt-20-000w-60v30ah",
+     "ok": true,
+     "n": 8,
+     "title": "Trottinette électrique weped SSGT 20 000w - 60V30Ah&nbsp;&ndash; PIE TECHNOLOGIE \n Trottinette électrique weped SSGT 20 000w - 60V30Ah"
+    }
+   ],
+   "candidates": 8
+  },
+  {
+   "slug": "weped-fold-11",
+   "tokens": [
+    "fold",
+    "11"
+   ],
+   "pages": [
+    {
+     "url": "https://pietechnologie.com/products/weped-fold-11-1200w-30ah-60v",
+     "ok": true,
+     "n": 5,
+     "title": "WEPED FOLD 11 1200W 30Ah 60V par PIE TECHNOLOGIE&nbsp;&ndash; PIE TECHNOLOGIE \n Trottinette électrique Weped Fold 11 - 12000W 30Ah 60V"
+    }
+   ],
+   "candidates": 5
+  },
+  {
+   "slug": "navee-st5-pro",
+   "tokens": [
+    "st",
+    "5",
+    "pro"
+   ],
+   "pages": [
+    {
+     "url": "https://www.naveetech.com/navee-st5-pro/",
+     "ok": true,
+     "n": 1,
+     "title": "NAVEE ST5 Pro Urban Electric Scooter | NAVEE TECH NAVEE ST5 Pro Urban Electric Scooter | NAVEE TECH"
+    },
+    {
+     "url": "https://electrotraveller.com/electric-scooters/navee-st5-pro/",
+     "ok": false,
+     "n": 0,
+     "title": "Bot Verification"
+    }
+   ],
+   "candidates": 1
+  },
+  {
+   "slug": "iscooter-w9-air",
+   "tokens": [
+    "w",
+    "9",
+    "air"
+   ],
+   "pages": [
+    {
+     "url": "https://iscooter-eu.com/products/iscooter-w9-air-electric-scooter",
+     "ok": false,
+     "n": 0,
+     "title": "iScooter W9 Air Electric Scooter 48V 10Ah Battery 30-40km Range 800W M\n&ndash; iScooter  Official\n iScooter W9 Air Electric Scooter 48V 10Ah Battery 30-40km Ran [variante : max]"
+    },
+    {
+     "url": "https://www.iscooterglobal.eu/products/iscooter-ix3-off-road-electric-scooter",
+     "ok": true,
+     "n": 25,
+     "title": "iScooter W9Air Off-Road Electric Scooter with APP Control | iScooter EU\n iScooter W9Air Off-Road Electric Scooter with APP Control"
+    }
+   ],
+   "candidates": 10
+  },
+  {
+   "slug": "dyu-d3f",
+   "tokens": [
+    "d",
+    "3",
+    "f"
+   ],
+   "pages": [
+    {
+     "url": "https://us.dyucycle.com/products/dyu-small-electric-bike-d3f",
+     "ok": false,
+     "n": 0,
+     "title": "DYU D3F MINI 14 Inch Folding Ebike\n\n        &ndash; DYU USA DYU D3F MINI 14 Inch Folding Ebike [variante : mini,mini]"
+    },
+    {
+     "url": "https://electricrideco.com/products/dyu-d3f-electric-mini-bike",
+     "ok": false,
+     "n": 0,
+     "title": "DYU D3F 36V/10Ah 250W Folding Electric Mini Bike   &ndash; Electric Ride Co. DYU D3F 36V/10Ah 250W Folding Electric Mini Bike [variante : mini,mini]"
+    }
+   ],
+   "candidates": 0
+  },
+  {
+   "slug": "hikerboy-off-road-2",
+   "tokens": [
+    "off",
+    "road",
+    "2"
+   ],
+   "pages": [
+    {
+     "url": "https://hikerboyscooter.com/products/off-road-2",
+     "ok": true,
+     "n": 13,
+     "title": "Off-Road 2\n&ndash; Hikerboy Scooter\n Off-Road 2"
+    },
+    {
+     "url": "https://movedifferent.lu/en/hikerboy/251-off-road-2.html",
+     "ok": true,
+     "n": 2,
+     "title": "OFF ROAD 2 OFF ROAD 2"
+    },
+    {
+     "url": "https://www.alpmars.com/hikerboy/off-road",
+     "ok": false,
+     "n": 0,
+     "title": "Off Road Electric Scooter | Hikerboy Scooter\r\n   Off Road Electric Scooter | Hikerboy Scooter"
+    },
+    {
+     "url": "https://electrotraveller.com/electric-scooters/hikerboy-off-road-2/",
+     "ok": false,
+     "n": 0,
+     "title": "Bot Verification"
+    }
+   ],
+   "candidates": 10
+  },
+  {
+   "slug": "weped-fold-3",
+   "tokens": [
+    "fold",
+    "3"
+   ],
+   "pages": [
+    {
+     "url": "https://www.speedwayridersnyc.com/shop/weped-fold-3-electric-scooter/",
+     "ok": true,
+     "n": 1,
+     "title": "WEPED Fold 3 Folding Electric Scooter: 56 MPH, 62 Mi WEPED Fold 3 Electric Scooter | 56 MPH, Folding"
+    },
+    {
+     "url": "https://m.weped-usa.com/product/fold3/308/",
+     "ok": true,
+     "n": 6,
+     "title": "FOLD3 - WEPED Mall FOLD3"
+    }
+   ],
+   "candidates": 7
+  },
+  {
+   "slug": "kaabo-mantis-x-plus",
+   "tokens": [
+    "mantis",
+    "x",
+    "plus"
+   ],
+   "pages": [
+    {
+     "url": "https://www.kaabousa.com/products/kaabo-mantis-x-plus-electric-scooter",
+     "ok": true,
+     "n": 14,
+     "title": "Kaabo Mantis X Plus Electric Scooter: Power and Comfort Combined | Kaabo USA\n Mantis X Plus"
+    },
+    {
+     "url": "https://alienrides.com/products/kaabo-mantis-x-plus-dual-motor-electric-scooter",
+     "ok": true,
+     "n": 10,
+     "title": "Kaabo Mantis X Plus Dual Motor Electric Scooter &ndash; Alien Rides\n   Kaabo Mantis X Plus Dual Motor Electric Scooter"
+    }
+   ],
+   "candidates": 10
+  },
+  {
+   "slug": "ninebot-e2",
+   "tokens": [
+    "e",
+    "2"
+   ],
+   "pages": [],
+   "candidates": 0
+  },
+  {
+   "slug": "cecotec-bongo-serie-m30-connected",
+   "tokens": [
+    "bongo",
+    "serie",
+    "m",
+    "30",
+    "connected"
+   ],
+   "pages": [
+    {
+     "url": "https://www.robocleaners.com/en/cecotec-bongo-serie-m30-connected.html",
+     "ok": true,
+     "n": 1,
+     "title": "Cecotec Bongo Serie M30 Connected - Robocleaners Cecotec Bongo Serie M30 Connected"
+    },
+    {
+     "url": "https://www.leroymerlin.fr/produits/cecotec-trottinette-electrique-homologuee-bongo-serie-m30-connected-700-w-autonomie-jusqu-a-30-km-systeme-de-freinage-double-88717081.html",
+     "ok": false,
+     "n": 0,
+     "title": "HTTP 403"
+    }
+   ],
+   "candidates": 1
+  },
+  {
+   "slug": "inokim-light-2-super",
+   "tokens": [
+    "light",
+    "2",
+    "super"
+   ],
+   "pages": [
+    {
+     "url": "https://inokim.com/products/light-2",
+     "ok": false,
+     "n": 0,
+     "title": "Light 2 Max 2025 Light 2 Max 2025"
+    }
+   ],
+   "candidates": 0
+  },
+  {
+   "slug": "pure-flex",
+   "tokens": [
+    "flex"
+   ],
+   "pages": [
+    {
+     "url": "https://www.pureelectric.com/products/pure-advance-flex-electric-scooter",
+     "ok": true,
+     "n": 22,
+     "title": "Flex Electric Scooter | Compact Folding Design\n &ndash; Pure Electric Flex Electric Scooter | Compact Folding Design"
+    },
+    {
+     "url": "https://pureelectric.ie/products/pure-advance-flex-electric-scooter",
+     "ok": true,
+     "n": 12,
+     "title": "Flex &ndash; Pure Electric Ireland Flex"
+    }
+   ],
+   "candidates": 10
+  },
+  {
+   "slug": "ninebot-e3-pro-e",
+   "tokens": [
+    "e",
+    "3",
+    "pro",
+    "e"
+   ],
+   "pages": [
+    {
+     "url": "https://eu-en.segway.com/ekickscooter/products/e3-pro-e.html",
+     "ok": true,
+     "n": 0,
+     "title": "Segway eKickScooter Ninebot E3 Pro E Segway eKickScooter Ninebot E3 Pro E"
+    },
+    {
+     "url": "https://store.segway.com/e3-pro-electric-scooter",
+     "ok": true,
+     "n": 1,
+     "title": "Segway E3 Pro Electric Scooter | 34-Mile Range &amp; Dual Suspension Segway E3 Pro Electric Scooter | 34-Mile Range &amp; Dual Suspension"
+    }
+   ],
+   "candidates": 1
+  },
+  {
+   "slug": "urbanglide-ecross-pro-2",
+   "tokens": [
+    "ecross",
+    "pro",
+    "2"
+   ],
+   "pages": [
+    {
+     "url": "https://urbanglide.com/en/produit/e-cross-pro-2/",
+     "ok": true,
+     "n": 1,
+     "title": "E-CROSS PRO 2\t\t E-CROSS PRO 2 - UrbanGlide"
+    }
+   ],
+   "candidates": 1
+  },
+  {
+   "slug": "urbanglide-ecross-max-2x2-gen-2",
+   "tokens": [
+    "ecross",
+    "max",
+    "2",
+    "x",
+    "2",
+    "gen",
+    "2"
+   ],
+   "pages": [
+    {
+     "url": "https://urbanglide.com/en/produit/e-cross-max-2x2-2/",
+     "ok": false,
+     "n": 0,
+     "title": "E-CROSS MAX 2X2\t\t E-CROSS MAX 2X2 - UrbanGlide"
+    },
+    {
+     "url": "https://www.fnac.com/Trottinette-electrique-UrbanGlide-E-Cross-Max-2x2-2eme-generation-1200-W-Noir/a22276756/w-4",
+     "ok": false,
+     "n": 0,
+     "title": "HTTP 403"
+    }
+   ],
+   "candidates": 0
+  },
+  {
+   "slug": "urbanglide-ride-100-max-2",
+   "tokens": [
+    "ride",
+    "100",
+    "max",
+    "2"
+   ],
+   "pages": [
+    {
+     "url": "https://urbanglide.com/en/produit/ride-100max-2/",
+     "ok": true,
+     "n": 1,
+     "title": "RIDE 100MAX 2\t\t RIDE 100MAX 2 - UrbanGlide"
+    },
+    {
+     "url": "https://www.cdiscount.com/le-sport/mobilite-urbaine/trottinette-electrique-pliable-urbanglide-ride/f-1214801-urb3700092650448.html",
+     "ok": false,
+     "n": 0,
+     "title": "Cdiscount Cdiscount.com"
+    }
+   ],
+   "candidates": 1
+  },
+  {
+   "slug": "kugoo-g3-pro",
+   "tokens": [
+    "g",
+    "3",
+    "pro"
+   ],
+   "pages": [
+    {
+     "url": "https://www.kukirin-scooter.com/products/kukirin-g3-pro-electric-scooter",
+     "ok": true,
+     "n": 18,
+     "title": "KuKirin G3 Pro Fast E-scooter | 1200W*2 Motors\n &ndash; Kukirin-Scooter KuKirin G3 Pro Fast E-scooter | 1200W*2 Motors"
+    },
+    {
+     "url": "https://www.speedwayridersnyc.com/shop/kukirin-g3-pro-electric-scooter/",
+     "ok": true,
+     "n": 2,
+     "title": "KUKIRIN G3 Pro Electric Scooter: 40 MPH, 49 Mi, Free Shipping KUKIRIN G3 Pro Electric Scooter: Dual 1200W, 40 MPH"
+    }
+   ],
+   "candidates": 10
+  },
+  {
+   "slug": "teverun-blade-mini-ultra",
+   "tokens": [
+    "blade",
+    "mini",
+    "ultra"
+   ],
+   "pages": [
+    {
+     "url": "https://teverun.com/product/blade-mini-ultra/",
+     "ok": true,
+     "n": 0,
+     "title": "TEVERUN BLADE MINI ULTRA: 70km/h Speed, 100KM Range Scooter TEVERUN BLADE MINI ULTRA: 70km/h Speed, 100KM Range Scooter"
+    },
+    {
+     "url": "https://www.voromotors.com/products/teverun-blade-mini-ultra",
+     "ok": true,
+     "n": 14,
+     "title": "Teverun Blade Mini Ultra 10 Inch Tires 60V 27AH App Enabled Adult Elec - VORO MOTORS Teverun Blade Mini Ultra 10 Inch Tires 60V 27AH App Enabled Adult Elec - VO"
+    },
+    {
+     "url": "https://www.wilsonebikes.com/products/teverun-blade-mini-ultra",
+     "ok": true,
+     "n": 26,
+     "title": "Teverun Blade Mini Ultra E-Scooter | 43 MPH | Wilson&#39;s\n Teverun Blade Mini Ultra E-Scooter | 43 MPH | Wilson&#39;s"
+    }
+   ],
+   "candidates": 10
+  },
+  {
+   "slug": "vsett-11-plus-super",
+   "tokens": [
+    "11",
+    "super"
+   ],
+   "pages": [
+    {
+     "url": "https://revrides.com/products/vsett-11-super-72v",
+     "ok": true,
+     "n": 6,
+     "title": "VSETT 11+ SUPER 72V Electric Scooter\n &ndash; REVRides VSETT 11+ SUPER 72V Electric Scooter"
+    },
+    {
+     "url": "https://alienrides.com/products/vsett-11-super-72-electric-scooter",
+     "ok": true,
+     "n": 15,
+     "title": "VSETT 11+ Super 72 Electric Scooter | Alien Rides\n   VSETT 11+ Super 72 Electric Scooter | Alien Rides"
+    }
+   ],
+   "candidates": 10
+  },
+  {
+   "slug": "inmotion-rs",
+   "tokens": [
+    "rs"
+   ],
+   "pages": [
+    {
+     "url": "https://inmotionworld.com/products/inmotion-rs",
+     "ok": true,
+     "n": 13,
+     "title": "INMOTION RS | The World&#39;s Fastest Electric Scooter - INMOTION\n INMOTION RS | The World&#39;s Fastest Electric Scooter - INMOTION"
+    },
+    {
+     "url": "https://www.wilsonebikes.com/products/inmotion-rs-electric-scooter",
+     "ok": true,
+     "n": 24,
+     "title": "INMOTION RS Electric Scooter | 68 MPH, 100 Miles | Wilson&#39;s\n INMOTION RS Electric Scooter | 68 MPH, 100 Miles | Wilson&#39;s"
+    },
+    {
+     "url": "https://www.voromotors.com/products/inmotion-rs-midnight-electric-scooter",
+     "ok": true,
+     "n": 27,
+     "title": "Inmotion RS 3.0 | 75 MPH, 8800W, 72V 40Ah, Official US Partner - VORO MOTORS Inmotion RS 3.0 | 75 MPH, 8800W, 72V 40Ah, Official US Partner - VORO MOTORS"
+    }
+   ],
+   "candidates": 10
+  },
+  {
+   "slug": "kaabo-wolf-king-gt-pro-plus",
+   "tokens": [
+    "wolf",
+    "king",
+    "gt",
+    "pro",
+    "plus"
+   ],
+   "pages": [
+    {
+     "url": "https://www.kaabo.com/wolf-king-gt/",
+     "ok": false,
+     "n": 0,
+     "title": "Shop Mantis &amp; Warrior Electric Scooters | Kaabo USA\n Shop Mantis &amp; Warrior Electric Scooters | Kaabo USA"
+    }
+   ],
+   "candidates": 0
+  },
+  {
+   "slug": "iscooter-ix3",
+   "tokens": [
+    "ix",
+    "3"
+   ],
+   "pages": [
+    {
+     "url": "https://www.iscooterglobal.com/products/iscooter-ix3-800w-25mph-off-road-electric-scooter",
+     "ok": true,
+     "n": 16,
+     "title": "iScooter® iX3 800W Off Road Electric Scooter iScooter® iX3 800W Off Road Electric Scooter"
+    },
+    {
+     "url": "https://iscooterglobal.com.au/products/m-high-end-electric-scooter",
+     "ok": true,
+     "n": 24,
+     "title": "iScooter iX3 Off-Road Electric Scooter | 800W iScooter iX3 800W Off Road Electric Scooter"
+    }
+   ],
+   "candidates": 10
+  },
+  {
+   "slug": "urbanglide-ecross-pro-boost-2",
+   "tokens": [
+    "ecross",
+    "pro",
+    "boost",
+    "2"
+   ],
+   "pages": [
+    {
+     "url": "https://urbanglide.com/en/produit/e-cross-pro-boost-2/",
+     "ok": true,
+     "n": 1,
+     "title": "E-CROSS PRO BOOST 2\t\t E-CROSS PRO BOOST 2 - UrbanGlide"
+    }
+   ],
+   "candidates": 1
+  },
+  {
+   "slug": "weped-ff",
+   "tokens": [
+    "ff"
+   ],
+   "pages": [],
+   "candidates": 0
+  },
+  {
+   "slug": "yeep-me-80n-evo-plus",
+   "tokens": [
+    "80",
+    "n",
+    "evo",
+    "plus"
+   ],
+   "pages": [],
+   "candidates": 0
+  },
+  {
+   "slug": "urbanglide-all-road-6-pro",
+   "tokens": [
+    "all",
+    "road",
+    "6",
+    "pro"
+   ],
+   "pages": [
+    {
+     "url": "https://urbanglide.com/en/produit/all-road-6pro/",
+     "ok": true,
+     "n": 1,
+     "title": "ALL ROAD 6 PRO\t\t ALL ROAD 6 PRO - UrbanGlide"
+    },
+    {
+     "url": "https://bflex.io/services/buy/products/urbanglide-all-road-6-pro-hlektriko-patini",
+     "ok": true,
+     "n": 1,
+     "title": "URBANGLIDE ALL ROAD 6 PRO Electric Scooter | bFlex URBANGLIDE ALL ROAD 6 PRO Electric Scooter"
+    }
+   ],
+   "candidates": 2
+  },
+  {
+   "slug": "navee-gt5-max",
+   "tokens": [
+    "gt",
+    "5",
+    "max"
+   ],
+   "pages": [
+    {
+     "url": "https://www.naveetech.com/navee-gt5-max/",
+     "ok": true,
+     "n": 1,
+     "title": "NAVEE GT5 Max Urban Electric Scooter | NAVEE TECH NAVEE GT5 Max Urban Electric Scooter | NAVEE TECH"
+    },
+    {
+     "url": "https://naveetech.us/products/navee-gt5-max",
+     "ok": true,
+     "n": 12,
+     "title": "GT5 Max | 25 MPH Long-Range Electric Scooter | 55 Miles &ndash; NAVEE_US NAVEE GT5 Max | Smart Commuter Scooter with TCS"
+    },
+    {
+     "url": "https://casabikes.com/products/navee-gt5-max",
+     "ok": true,
+     "n": 18,
+     "title": "NAVEE GT5 Max Electric Scooter｜Damping Cylinder Suspension｜55.9miles E\n&ndash; CasaBikes NAVEE GT5 Max Electric Scooter｜Damping Cylinder Suspension｜55.9miles E"
+    }
+   ],
+   "candidates": 10
+  },
+  {
+   "slug": "zero-8",
+   "tokens": [
+    "8"
+   ],
+   "pages": [
+    {
+     "url": "https://www.maxblinker.com/en/electric-scooters/zero-8",
+     "ok": true,
+     "n": 1,
+     "title": "ZERO 8 electric scooter in stock - Enjoy the ride ZERO 8 electric scooter in stock"
+    }
+   ],
+   "candidates": 1
+  },
+  {
+   "slug": "ninebot-f2-plus",
+   "tokens": [
+    "f",
+    "2",
+    "plus"
+   ],
+   "pages": [
+    {
+     "url": "https://eu-en.segway.com/ekickscooter/products/f2-plus-e.html",
+     "ok": true,
+     "n": 0,
+     "title": "Segway eKickScooter Ninebot F2 Plus E Segway eKickScooter Ninebot F2 Plus E"
+    }
+   ],
+   "candidates": 0
+  },
+  {
+   "slug": "ninebot-f3-pro-e",
+   "tokens": [
+    "f",
+    "3",
+    "pro",
+    "e"
+   ],
+   "pages": [
+    {
+     "url": "https://ap-en.segway.com/ekickscooter/products/f3-pro.html",
+     "ok": false,
+     "n": 0,
+     "title": "Segway eKickScooter Ninebot F3 Pro  Segway eKickScooter Ninebot F3 Pro"
+    }
+   ],
+   "candidates": 0
+  },
+  {
+   "slug": "kukirin-a1",
+   "tokens": [
+    "a",
+    "1"
+   ],
+   "pages": [
+    {
+     "url": "https://kukiringlobal.com/products/kukirin-a1",
+     "ok": true,
+     "n": 15,
+     "title": "【KUKIRIN A1】800W Electric Scooter  &ndash; KuKirin@Global Official Site |  Kugoo Kirin Global Official 【KUKIRIN A1】800W Electric Scooter"
+    },
+    {
+     "url": "https://www.kugooescooters.com/products/kukirin-a1",
+     "ok": true,
+     "n": 2,
+     "title": "KuKirin A1 Electric Scooter KuKirin A1 Electric Scooter  (Pre-sale)"
+    }
+   ],
+   "candidates": 10
+  }
+ ]
+}
