@@ -17,6 +17,17 @@ export type BarreBasVariant = 1 | 2 | 3 | 4 | 5;
 // 25/10/2026 — SKOT dans la barre téléphone avec la nouvelle mascotte (Nolan : « il y a toujours l'ancien au milieu…
 // on peut pas le mettre sur le côté ? cinq propositions »). ?skottel=1..5 ; sans paramètre = case actuelle (« Le pilote »).
 export type SkotTelVariant = 1 | 2 | 3 | 4 | 5;
+// 25/10 (Nolan : « centré comme ça, ça fait bizarre, c'est trop symétrique ») : position de « Phares au centre ».
+// ?skotpos=1..5 ; sans paramètre = au centre (actuel).
+export type SkotPosVariant = 1 | 2 | 3 | 4 | 5;
+export const readSkotPosVariant = (): SkotPosVariant | null => {
+  try {
+    const n = Number(new URLSearchParams(window.location.search).get("skotpos"));
+    return n >= 1 && n <= 5 ? (n as SkotPosVariant) : null;
+  } catch {
+    return null;
+  }
+};
 export const readSkotTelVariant = (): SkotTelVariant | null => {
   try {
     // 25/10 : Nolan choisit la 1 « Phares au centre » = défaut ; ?skottel=0 = ancien avatar « Le pilote », 2..5 = autres propositions.
@@ -303,6 +314,7 @@ const V5 = () => {
   const tab = (it: Item) => <TabBtn key={it.key} it={it} on={m.active(it)} onGo={m.go} count={m.count} />;
   const out = useSkotOut();
   const [tel] = useState(readSkotTelVariant);
+  const [pos] = useState(readSkotPosVariant);
   const [body] = useState(restBody);
   const lift = { transform: out ? "translateY(0) scale(1)" : "translateY(22px) scale(0.82)", transition: "transform .38s cubic-bezier(.2,.9,.3,1.25)" };
   const label = <span className="-mt-2 relative px-2 py-0.5 text-white italic uppercase" style={{ background: GREEN, fontFamily: UNB, fontWeight: 800, fontSize: 11, clipPath: cutTR(6), opacity: out ? 1 : 0, transition: "opacity .2s" }}>SKOT</span>;
@@ -315,23 +327,88 @@ const V5 = () => {
   );
 
   /* 1 · Phares au centre — même case qu'aujourd'hui, la tête de la nouvelle mascotte (phares) qui fait des clins d'œil. */
-  if (tel === 1)
+  /* Bouton SKOT « phares » partagé par les positions. */
+  const skotBtn = (size = 66, cls = "-mt-8") => (
+    <button type="button" onClick={openSkot} aria-label="Demander à SKOT" className={`${cls} flex flex-col items-center`} style={lift}>
+      <span className="p-[2px]" style={{ width: size, height: size, background: CARBON, clipPath: cut(12) }}>
+        <span className="w-full h-full grid place-items-center overflow-hidden" style={{ background: "#F5F0E8", clipPath: cut(11) }}><TeteSkot size={size - 4} /></span>
+      </span>
+      {label}
+    </button>
+  );
+
+  if (tel === 1) {
+    /* Position 1 · À gauche — SKOT en première case, puis les 4 onglets ; la loupe reste dans la barre du haut. */
+    if (pos === 1)
+      return (
+        <Shell>
+          <div className="flex items-end pl-2 pr-1">
+            <div className="flex-none w-[76px] flex justify-start">{skotBtn()}</div>
+            {tab(pieces)}{tab(garage)}{tab(trottes)}{tab(cart)}
+          </div>
+        </Shell>
+      );
+    /* Position 2 · À gauche + loupe — SKOT en première case, la loupe revient au milieu des onglets. */
+    if (pos === 2)
+      return (
+        <Shell>
+          <div className="flex items-end pl-2 pr-1">
+            <div className="flex-none w-[76px] flex justify-start">{skotBtn()}</div>
+            {tab(pieces)}{tab(garage)}{tab(search)}{tab(trottes)}{tab(cart)}
+          </div>
+        </Shell>
+      );
+    /* Position 3 · Coin gauche — plus grand, il sort du coin gauche de la barre (collé au bord), penché vers la page. */
+    if (pos === 3)
+      return (
+        <Shell>
+          <div className="flex items-end pr-1">
+            <div className="flex-none w-[92px] relative h-[58px]">
+              <button type="button" onClick={openSkot} aria-label="Demander à SKOT" className="absolute left-0 bottom-0 flex flex-col items-start" style={{ ...lift, transformOrigin: "0 100%" }}>
+                <span className="p-[2px]" style={{ width: 84, height: 84, background: CARBON, clipPath: "polygon(0 0, calc(100% - 16px) 0, 100% 16px, 100% 100%, 0 100%)" }}>
+                  <span className="w-full h-full grid place-items-center overflow-hidden" style={{ background: "#F5F0E8", clipPath: "polygon(0 0, calc(100% - 15px) 0, 100% 15px, 100% 100%, 0 100%)" }}><TeteSkot size={80} /></span>
+                </span>
+                <span className="absolute left-0 bottom-0 px-2 py-0.5 text-white italic uppercase" style={{ background: GREEN, fontFamily: UNB, fontWeight: 800, fontSize: 11, clipPath: cutTR(6), opacity: out ? 1 : 0, transition: "opacity .2s" }}>SKOT</span>
+              </button>
+            </div>
+            {tab(pieces)}{tab(garage)}{tab(trottes)}{tab(cart)}
+          </div>
+        </Shell>
+      );
+    /* Position 4 · Îlot à gauche — SKOT dans sa propre plaque carbone à gauche, la barre des 4 onglets à côté : deux blocs, pas un. */
+    if (pos === 4)
+      return (
+        <Shell>
+          <div className="flex items-end gap-2 pl-2 pr-1">
+            <button type="button" onClick={openSkot} aria-label="Demander à SKOT" className="flex-none -mt-3 mb-1 flex items-center gap-2 pl-1 pr-3 h-[56px]" style={{ background: CARBON, clipPath: cutTR(12) }}>
+              <span className="block overflow-hidden" style={{ width: 48, height: 48, background: "#F5F0E8", clipPath: "polygon(0 0, calc(100% - 8px) 0, 100% 8px, 100% 100%, 0 100%)" }}><TeteSkot size={48} /></span>
+              <span className="text-white italic uppercase leading-none text-left" style={{ fontFamily: UNB, fontWeight: 900, fontSize: 14 }}>SKOT<span className="block mt-0.5 normal-case not-italic font-semibold text-[11px] text-white/70" style={{ fontFamily: JAK }}>Une question ?</span></span>
+            </button>
+            {tab(pieces)}{tab(garage)}{tab(trottes)}{tab(cart)}
+          </div>
+        </Shell>
+      );
+    /* Position 5 · À droite — SKOT en dernière case, sous le pouce droit ; Pièces, Garage, Trottes, Panier à gauche. */
+    if (pos === 5)
+      return (
+        <Shell>
+          <div className="flex items-end pl-1 pr-2">
+            {tab(pieces)}{tab(garage)}{tab(trottes)}{tab(cart)}
+            <div className="flex-none w-[76px] flex justify-end">{skotBtn()}</div>
+          </div>
+        </Shell>
+      );
+    /* 1 · Phares au centre — même case qu'aujourd'hui, la tête de la nouvelle mascotte (phares) qui fait des clins d'œil. */
     return (
       <Shell>
         <div className="flex items-end px-1">
           {tab(pieces)}{tab(garage)}
-          <div className="flex-1 flex justify-center">
-            <button type="button" onClick={openSkot} aria-label="Demander à SKOT" className="-mt-8 flex flex-col items-center" style={lift}>
-              <span className="w-[66px] h-[66px] p-[2px]" style={{ background: CARBON, clipPath: cut(12) }}>
-                <span className="w-full h-full grid place-items-center overflow-hidden" style={{ background: "#F5F0E8", clipPath: cut(11) }}><TeteSkot size={62} /></span>
-              </span>
-              {label}
-            </button>
-          </div>
+          <div className="flex-1 flex justify-center">{skotBtn()}</div>
           {tab(trottes)}{tab(cart)}
         </div>
       </Shell>
     );
+  }
 
   /* 2 · Debout au centre — SKOT en entier, sans cadre, debout sur la barre (tenue de saison incluse). */
   if (tel === 2)
