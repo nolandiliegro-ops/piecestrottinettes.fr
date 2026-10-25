@@ -9,7 +9,8 @@ import { readBarreBasVariant } from "@/components/navigation/MobileNavProposals"
 import SkotDesktopLauncher from "./SkotDesktopLauncher";
 import SkotGarageLauncher from "./SkotGarageLauncher";
 import SkotPanel, { SKOT_GREETING_V2 } from "./SkotPanel";
-import { askSkot, compressImage, sendSkotFeedback, skotEnabled, skotHiddenOn, skotPageContext, type SkotCard } from "@/lib/skot";
+import SkotNudge, { type NudgeAccept } from "./SkotNudge";
+import { askSkot, compressImage, markNudgeUsed, NUDGE_TEXT, sendSkotFeedback, skotEnabled, skotHiddenOn, skotPageContext, trackNudge, type SkotCard, type SkotNudgeKind } from "@/lib/skot";
 import { useCart } from "@/hooks/useCart";
 import { SHOP_OPEN, openPrelaunch } from "@/config/launch";
 import { formatPrice } from "@/lib/formatPrice";
@@ -91,13 +92,30 @@ const SkotWidget = () => {
   const [busy, setBusy] = useState(false);
   const [photo, setPhoto] = useState<{ media_type: string; data: string; preview: string } | null>(null);
   const listRef = useRef<HTMLDivElement>(null);
+  // Intervention qui a ouvert la conversation (Étage 2) : envoyée avec le 1er message du client, pour que SKOT enchaîne.
+  const pendingNudge = useRef<SkotNudgeKind | null>(null);
   const fileRef = useRef<HTMLInputElement>(null);
+  const sendRef = useRef<((t: string, n?: SkotNudgeKind) => Promise<void>) | null>(null);
 
   // La barre du bas avec SKOT (?barrebas=5, défaut quand SKOT est public) ouvre SKOT par cet événement et remplace la bulle flottante.
   useEffect(() => {
     const onOpen = () => setOpen(true);
     window.addEventListener("skot:open", onOpen);
     return () => window.removeEventListener("skot:open", onOpen);
+  }, []);
+  // SKOT ouvert une fois = plus d'intervention pendant cette visite.
+  useEffect(() => { if (open) markNudgeUsed(); }, [open]);
+  // Recherche sans résultat (Spotlight) → « Demander à SKOT » : la recherche devient la question.
+  useEffect(() => {
+    const onAsk = (e: Event) => {
+      const d = (e as CustomEvent<{ text?: string; nudge?: SkotNudgeKind }>).detail ?? {};
+      if (!d.text) return;
+      setOpen(true);
+      if (d.nudge) trackNudge(d.nudge, "opened");
+      void sendRef.current?.(d.text, d.nudge);
+    };
+    window.addEventListener("skot:ask", onAsk);
+    return () => window.removeEventListener("skot:ask", onAsk);
   }, []);
   const [inNav] = useState(() => readBarreBasVariant() === 5);
   const { openSpotlight } = useSpotlight();
@@ -111,20 +129,32 @@ const SkotWidget = () => {
 
   if (!enabled || skotHiddenOn(pathname)) return null;
 
-  const send = async (text: string) => {
+  const send = async (text: string, nudgeNow?: SkotNudgeKind) => {
     const t = text.trim();
     if ((!t && !photo) || busy) return;
+    const nudge = nudgeNow ?? pendingNudge.current ?? undefined;
+    pendingNudge.current = null;
+    if (nudge) trackNudge(nudge, "replied");
     const img = photo;
     setMsgs((m) => [...m, { role: "user", text: t || "(photo)", image: img?.preview }]);
     setInput("");
     setPhoto(null);
     setBusy(true);
-    const r = await askSkot(t, skotPageContext(pathname), img ? { media_type: img.media_type, data: img.data } : undefined);
+    const r = await askSkot(t, skotPageContext(pathname), img ? { media_type: img.media_type, data: img.data } : undefined, nudge);
     setMsgs((m) => [...m, { role: "skot", text: r.reply, cards: r.cards, id: r.message_id, conv: r.conversation_id }]);
     setBusy(false);
   };
 
+  sendRef.current = send;
   const onSubmit = (e: FormEvent) => { e.preventDefault(); void send(input); };
+
+  // Le client a cliqué sur l'intervention : SKOT ouvre avec sa question, ou envoie tout de suite la question préparée.
+  const acceptNudge = ({ kind, autoSend }: NudgeAccept) => {
+    setOpen(true);
+    if (autoSend) { void send(autoSend, kind); return; }
+    pendingNudge.current = kind;
+    setMsgs((m) => [...m, { role: "skot", text: NUDGE_TEXT[kind] }]);
+  };
 
   const rate = async (i: number, value: 1 | -1) => {
     const m = msgs[i];
@@ -153,6 +183,7 @@ const SkotWidget = () => {
       ) : (
         <SkotDesktopLauncher onOpen={() => setOpen(true)} />
       ))}
+      {!open && <SkotNudge pathname={pathname} inNav={inNav} onAccept={acceptNudge} />}
       {!open && (
         <button
           type="button"

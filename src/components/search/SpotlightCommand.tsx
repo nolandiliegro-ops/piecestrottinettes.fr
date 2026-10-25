@@ -1,5 +1,6 @@
 import { useEffect, useState, useCallback, useMemo } from 'react';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, useLocation } from 'react-router-dom';
+import { skotEnabled, skotHiddenOn, SKOT_NUDGES_ON } from '@/lib/skot';
 import { motion, AnimatePresence } from 'framer-motion';
 import { 
   Search, 
@@ -78,6 +79,9 @@ const filterLabels: Record<NonNullable<SearchFilter>, string> = {
 
 const SpotlightCommand = () => {
   const { isOpen, closeSpotlight } = useSpotlight();
+  const { pathname } = useLocation();
+  // 25/10 — SKOT Étage 2 : une recherche sans résultat devient une question à SKOT (un clic, jamais automatique).
+  const canAskSkot = SKOT_NUDGES_ON && skotEnabled() && !skotHiddenOn(pathname);
   const navigate = useNavigate();
   const [searchQuery, setSearchQuery] = useState('');
   const [activeIndex, setActiveIndex] = useState(0);
@@ -509,6 +513,20 @@ const SpotlightCommand = () => {
                       <Search className="w-10 h-10 text-mineral/30 mb-3" />
                       <p className="text-sm text-carbon/70">Aucun résultat pour "{searchQuery}"</p>
                       <p className="text-xs text-mineral/60 mt-1">Essayez avec d'autres termes</p>
+                      {canAskSkot && (
+                        <button
+                          type="button"
+                          onClick={() => {
+                            const text = searchQuery.replace(/^[a-z]:\s*/i, '').trim();
+                            closeSpotlight();
+                            window.dispatchEvent(new CustomEvent('skot:ask', { detail: { text: `Je cherche : ${text}`, nudge: 'recherche_vide' } }));
+                          }}
+                          className="mt-4 inline-flex items-center gap-2 min-h-[44px] px-4 text-sm font-bold text-white bg-[#4A7C59] hover:bg-[#3A6449] rounded-lg"
+                        >
+                          <img src="/skot/tete-ecoute.webp" alt="" className="w-7 h-7 rounded-full bg-white object-cover" />
+                          Demander à SKOT
+                        </button>
+                      )}
                       {activeFilter && (
                         <p className="text-xs text-primary/70 mt-2">
                           Astuce : retirez le préfixe "{activeFilter.slice(0, 1)}:" pour rechercher partout

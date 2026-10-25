@@ -12,9 +12,10 @@ import { serve } from "https://deno.land/std@0.190.0/http/server.ts";
 import { createClient, type SupabaseClient } from "https://esm.sh/@supabase/supabase-js@2.57.2";
 import { classifyCompat, unverifiedLabel, verifiedReason, partDelay } from "../_shared/compat_status.ts";
 import { CORPUS } from "./banc/cas.ts";
+import { NUDGES } from "./nudges.ts";
 import { runBanc, runNuit, runFresh, runFreshNuit, looksCut } from "./banc/banc.ts";
 
-const VERSION = "chat-skot@2026-10-25p";
+const VERSION = "chat-skot@2026-10-25q";
 const MODEL = "claude-haiku-5-5";
 const MAX_TOOL_ROUNDS = 4;
 const HISTORY_LIMIT = 14;
@@ -521,6 +522,10 @@ export async function notifySkotTelegram(html: string) {
   } catch (e) { console.error("[chat-skot] telegram", e); return false; }
 }
 
+// ───────────────────────── Étage 2 : SKOT arrive au bon moment (25/10) ─────────────────────────
+// Le texte est fixé ICI (jamais celui du navigateur) : le widget n'envoie que la clé. Règles : 1 par visite, jamais au panier ni au paiement.
+const NUDGE_EVENTS = ["shown", "opened", "closed", "replied"];
+
 async function pageContext(db: SupabaseClient, page: { type?: string; slug?: string } | undefined, userId: string | null) {
   const lines: string[] = [];
   if (page?.type === "piece" && page.slug) {
@@ -585,6 +590,8 @@ export interface ConverseInput {
   ipHash: string | null;
   ip: string;
   dryRun?: boolean;
+  /** Intervention proactive qui a ouvert la conversation (Étage 2, 25/10) : clé de NUDGES. */
+  nudge?: string;
 }
 export interface ConverseOutput {
   ok: boolean;
@@ -602,7 +609,7 @@ export interface ConverseOutput {
 
 export async function converse(inp: ConverseInput): Promise<ConverseOutput> {
   const ctx: Ctx = { db: inp.db, userId: inp.userId, userEmail: inp.userEmail, ipHash: inp.ipHash, ip: inp.ip, cards: [], orderFailed: false, escalated: false, dryRun: inp.dryRun };
-  const contextText = await pageContext(inp.db, inp.page, inp.userId);
+  const contextText = [await pageContext(inp.db, inp.page, inp.userId), inp.nudge && NUDGES[inp.nudge] ? `C'est TOI qui as ouvert la conversation, de toi-même, en disant au client : « ${NUDGES[inp.nudge]} ». Son message y répond : enchaîne directement, sans te représenter.` : ""].filter(Boolean).join("\n");
   const messages: any[] = inp.history.map((m) => ({ role: m.role, content: m.content }));
   while (messages.length && messages[0].role !== "user") messages.shift();
   const userContent: any[] = [];
@@ -794,6 +801,16 @@ serve(async (req) => {
   }
 
   // action "feedback" : 👍 / 👎 du client sur une réponse de SKOT.
+  // action "nudge" (public) : mesure des interventions proactives — une ligne par (visite, intervention, événement), garantie par la base.
+  if (body?.action === "nudge") {
+    const kind = String(body.kind ?? ""), ev = String(body.event ?? ""), sess = String(body.session ?? "");
+    if (!NUDGES[kind] || !NUDGE_EVENTS.includes(ev) || !/^[0-9a-f-]{36}$/i.test(sess)) return json({ ok: false, error: "BAD_INPUT" }, 400);
+    const ip = (req.headers.get("x-forwarded-for") ?? "").split(",")[0].trim();
+    const { error } = await db.from("skot_nudges").upsert({ session_id: sess, kind, event: ev, page_slug: String(body.slug ?? "").slice(0, 120) || null, ip_hash: ip ? await sha256Hex(ip + "pt-skot") : null },
+      { onConflict: "session_id,kind,event", ignoreDuplicates: true });
+    return json({ ok: !error });
+  }
+
   if (body?.action === "feedback") {
     const mid = String(body.message_id ?? ""), conv = String(body.conversation_id ?? "");
     const value = Number(body.value);
@@ -868,7 +885,8 @@ serve(async (req) => {
   const used = (usage ?? []).reduce((s: number, r: any) => s + (r.tokens_in ?? 0) + (r.tokens_out ?? 0), 0);
   if (used > DAILY_TOKEN_CAP) return fallback("Gros rush aujourd'hui, je passe la main à l'atelier : pose ta question ici, ils te répondent par mail → piecestrottinettes.fr/atelier", "DAILY_CAP");
 
-  const r = await converse({ db, apiKey, message, image, page: safePage, conversationId, history, userId, userEmail, ipHash, ip });
+  const nudge = typeof body?.nudge === "string" && NUDGES[body.nudge] && history.length === 0 ? body.nudge : undefined;
+  const r = await converse({ db, apiKey, message, image, page: safePage, conversationId, history, userId, userEmail, ipHash, ip, nudge });
   if (!r.ok) return fallback(r.reply, r.error ?? "ERROR");
 
   if (r.orderFailed && userRow?.id) await db.from("skot_messages").update({ order_lookup_failed: true }).eq("id", userRow.id);

@@ -69,9 +69,9 @@ const CONV_KEY = "pt-skot-conv";
 export const getConversationId = () => { try { return window.sessionStorage.getItem(CONV_KEY); } catch { return null; } };
 const setConversationId = (id: string) => { try { window.sessionStorage.setItem(CONV_KEY, id); } catch { /* sans effet */ } };
 
-export async function askSkot(message: string, page: SkotPage, image?: { media_type: string; data: string }): Promise<SkotReply> {
+export async function askSkot(message: string, page: SkotPage, image?: { media_type: string; data: string }, nudge?: SkotNudgeKind): Promise<SkotReply> {
   const { data, error } = await supabase.functions.invoke("chat-skot", {
-    body: { message, page_context: page, conversation_id: getConversationId(), image },
+    body: { message, page_context: page, conversation_id: getConversationId(), image, nudge },
   });
   let payload: SkotReply | null = data ?? null;
   if (error) {
@@ -120,4 +120,42 @@ export function compressImage(file: File, max = 1024, quality = 0.82): Promise<{
     img.onerror = () => { URL.revokeObjectURL(url); reject(new Error("image")); };
     img.src = url;
   });
+}
+
+// ───────────── Étage 2 : SKOT arrive au bon moment (25/10/2026, skot-ambition-24-10.md) ─────────────
+// Règles actées : une seule intervention par visite, toujours refermable, jamais au panier ni au paiement, mesurée.
+// Les phrases vivent côté serveur (supabase/functions/chat-skot/nudges.ts) ; elles sont recopiées ici pour l'affichage.
+export const SKOT_NUDGES_ON = true;
+export type SkotNudgeKind = "piece_sans_trott" | "piece_a_confirmer" | "trott_sans_pieces" | "recherche_vide" | "garage_entretien";
+export const NUDGE_TEXT: Record<SkotNudgeKind, string> = {
+  piece_sans_trott: "C'est pour quelle trott ? Dis-moi le modèle, je te dis si cette pièce monte.",
+  piece_a_confirmer: "Cette pièce n'est pas encore confirmée pour ta trottinette. Je t'explique ce qui reste à vérifier ?",
+  trott_sans_pieces: "Je n'ai pas encore les pièces de cette trottinette en ligne. Dis-moi ce qu'il te faut, l'atelier te le trouve.",
+  recherche_vide: "Ta recherche n'a rien donné : dis-moi ce que tu cherches avec tes mots, je fouille l'atelier.",
+  garage_entretien: "Entretien à prévoir sur ta trottinette : je te montre les plaquettes et les pneus qui montent ?",
+};
+
+const ss = { get: (k: string) => { try { return window.sessionStorage.getItem(k); } catch { return null; } }, set: (k: string, v: string) => { try { window.sessionStorage.setItem(k, v); } catch { /* sans effet */ } } };
+const ls = { get: (k: string) => { try { return window.localStorage.getItem(k); } catch { return null; } }, set: (k: string, v: string) => { try { window.localStorage.setItem(k, v); } catch { /* sans effet */ } } };
+
+/** Identifiant de visite (onglet) : sert à la mesure et à « une intervention par visite ». */
+export function skotVisitId(): string {
+  let id = ss.get("pt-skot-visit");
+  if (!id) { id = crypto.randomUUID(); ss.set("pt-skot-visit", id); }
+  return id;
+}
+/** Une intervention a déjà eu lieu (ou SKOT a déjà été ouvert) pendant cette visite. */
+export const nudgeUsed = () => ss.get("pt-skot-nudged") === "1";
+export const markNudgeUsed = () => ss.set("pt-skot-nudged", "1");
+/** Refermée 3 fois en 14 jours → plus d'intervention pendant 14 jours. */
+export function nudgeMuted(): boolean {
+  const list = (ls.get("pt-skot-nudge-closed") ?? "").split(",").map(Number).filter((t) => t > Date.now() - 14 * 86_400_000);
+  return list.length >= 3;
+}
+export function rememberNudgeClosed() {
+  const list = (ls.get("pt-skot-nudge-closed") ?? "").split(",").map(Number).filter((t) => t > Date.now() - 14 * 86_400_000);
+  ls.set("pt-skot-nudge-closed", [...list, Date.now()].join(","));
+}
+export function trackNudge(kind: SkotNudgeKind, event: "shown" | "opened" | "closed" | "replied", slug?: string) {
+  void supabase.functions.invoke("chat-skot", { body: { action: "nudge", kind, event, session: skotVisitId(), slug } }).catch(() => undefined);
 }

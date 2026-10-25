@@ -25,6 +25,8 @@ export interface CasSkot {
   connecte?: boolean;
   /** Photo envoyée par le client (URL publique, récupérée et passée en base64 par le banc). */
   image_url?: string;
+  /** Intervention proactive qui a ouvert la conversation (clé de NUDGES). */
+  nudge?: string;
   attendu: {
     doit?: string[];
     un_de?: string[];
@@ -222,6 +224,11 @@ export const CORPUS: CasSkot[] = [
   { id: "v02-rider", famille: "large", origine: "client-simule", message: "ok je prends la chambre à air renforcée pour ma M365, comment je commande ?", attendu: { un_de: ["rider", "panier"] } },
   { id: "v03-promesse", famille: "coeur", origine: "piege", note: "s06 : promesse sans action", message: "mon frein arrière couine depuis que j'ai changé les plaquettes, tu peux voir avec l'atelier ?",
     attendu: { ne_doit_pas: ["je (vais )?vérifie(rai)? avec l.atelier", "je demande à l.atelier", "je reviens vers toi"], un_de: ["e-?mail", "atelier"] } },
+  // ── Étage 2 : SKOT a ouvert la conversation (25/10) ──
+  { id: "n01-nudge-piece", famille: "coeur", origine: "piege", nudge: "piece_sans_trott", page: { type: "piece", slug: "chambre-a-air-85x2-xiaomi-m365" },
+    message: "une m365", attendu: { ne_doit_pas: ["^(salut|bonjour|moi c'est skot)"], un_de: ["monte", "compatible", "confirm"] } },
+  { id: "n02-nudge-trott-vide", famille: "large", origine: "client-simule", nudge: "trott_sans_pieces", page: { type: "scooter", slug: "apollo-go" },
+    message: "il me faut des plaquettes", attendu: { un_de: ["e-?mail", "atelier"], ne_doit_pas: ["moi c'est skot"] } },
   // ── Escalade ──
   { id: "e01-escalade-avec-email", origine: "recette-24-10", message: "Transmets ma question à l'atelier : est-ce qu'un pneu 10x3 passe sur ma Kaabo Mantis 10 Plus avec un garde-boue d'origine ? Mon email : banc.skot@exemple.fr",
     attendu: { escalade: true, outil: ["escalate_to_human"] } },

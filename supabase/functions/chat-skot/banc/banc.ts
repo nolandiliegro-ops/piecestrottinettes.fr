@@ -4,6 +4,7 @@
 // - runNuit : une fois par jour (index unique en base), banc complet + lecture des conversations réelles des dernières 26 h
 //   → signaux dans skot_flags.
 // Les messages du banc sont stockés avec page_type = 'banc' : exclus du plafond journalier, de la mine et des mesures de coût.
+import { NUDGES } from "../nudges.ts";
 import { CORPUS, type CasSkot } from "./cas.ts";
 
 const JUDGE_MODEL = "claude-haiku-5-5";
@@ -148,14 +149,14 @@ async function playCase(d: Deps, c: CasSkot, admin: { id: string; email: string 
   await d.db.from("skot_messages").insert({ conversation_id: conversationId, role: "user", content: c.message, user_id: userId, page_type: "banc", page_slug: c.id, has_image: !!image });
   const r = await d.converse({ db: d.db, apiKey: d.apiKey, message: c.message, image, page: c.page ? { type: c.page.type, slug: c.page.slug ?? "" } : undefined,
     conversationId, history: (c.avant ?? []).flatMap((e) => [{ role: "user", content: e.client }, { role: "assistant", content: e.skot }]),
-    userId, userEmail, ipHash: null, ip: "", dryRun: true });
+    userId, userEmail, ipHash: null, ip: "", dryRun: true, nudge: c.nudge });
   const ms = Date.now() - t0;
   await d.db.from("skot_messages").insert({ conversation_id: conversationId, role: "assistant", content: String(r.reply).slice(0, 6000), user_id: userId,
     tool_calls: r.toolLog?.length ? r.toolLog : null, page_type: "banc", page_slug: c.id, escalated: !!r.escalated,
     tokens_in: (r.tokensIn ?? 0) + (r.cacheRead ?? 0) + (r.cacheWrite ?? 0), tokens_out: r.tokensOut ?? 0, tokens_cache_read: r.cacheRead ?? 0, tokens_cache_write: r.cacheWrite ?? 0,
     model: r.ok ? "banc" : `fallback:${r.error}` });
   const fails = r.ok ? checkAssertions(c, r) : [`erreur ${r.error}`];
-  const j = r.ok ? await judge(d, `${(c.avant ?? []).map((e) => `CLIENT : ${e.client}\nSKOT : ${e.skot}\n`).join("")}CLIENT : ${c.image_url ? "[photo jointe] " : ""}${c.message}${c.page ? `\n(page : ${c.page.type} ${c.page.slug ?? ""})` : ""}\nSKOT : ${r.reply}\n(cartes affichées : ${(r.cards ?? []).map((x: any) => `${x.name} [${x.compat ?? "sans statut"}]`).join(" ; ") || "aucune"})`, r.toolResults)
+  const j = r.ok ? await judge(d, `${(c.avant ?? []).map((e) => `CLIENT : ${e.client}\nSKOT : ${e.skot}\n`).join("")}${c.nudge ? `SKOT (intervention automatique, avant que le client écrive) : ${NUDGES[c.nudge] ?? c.nudge}\n` : ""}CLIENT : ${c.image_url ? "[photo jointe] " : ""}${c.message}${c.page ? `\n(page : ${c.page.type} ${c.page.slug ?? ""})` : ""}\nSKOT : ${r.reply}\n(cartes affichées : ${(r.cards ?? []).map((x: any) => `${x.name} [${x.compat ?? "sans statut"}]`).join(" ; ") || "aucune"})`, r.toolResults)
     : { conforme: false, violations: [], tokens: 0 };
   return {
     id: c.id, origine: c.origine, vert: !fails.length && j.conforme, fails, juge: j.violations, juge_erreur: (j as any).error ?? null, juge_brut: (j as any).brut ?? null,
