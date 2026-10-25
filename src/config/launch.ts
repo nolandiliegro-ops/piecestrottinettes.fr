@@ -1,4 +1,4 @@
-// relance de publication du 25/10/2026 (propositions pop-up)
+// relance de publication du 25/10/2026 (propositions pop-up, 2)
 /**
  * Interrupteur de pré-lancement de la boutique.
  *
