@@ -4,6 +4,9 @@
 // Provider de détourage isolé dans removeBackground() — swappable.
 
 import { createClient } from 'https://esm.sh/@supabase/supabase-js@2.45.0';
+import UPNG from 'npm:upng-js@2.1.0';
+import jpeg from 'npm:jpeg-js@0.4.4';
+import { empreinte, memePhoto, type Empreinte } from '../_shared/empreinte-core.ts';
 
 const corsHeaders = {
   'Access-Control-Allow-Origin': '*',
@@ -79,6 +82,57 @@ async function checkSize(url: string): Promise<number | null> {
   }
 }
 
+
+// ===== GARDE-FOU ANTI-DOUBLON (25/10/2026) =====
+// Règle de Nolan : JAMAIS deux fois la même photo sur une fiche. Chaque nouvelle image est comparée aux photos DÉJÀ sur
+// la fiche (sauf reset) et aux images déjà retenues dans le même appel ; un doublon est refusé (failed_urls, reason
+// « doublon: … »). Les variantes de couleur ne sont jamais des doublons (cœur partagé ../_shared/empreinte-core.ts,
+// calibré sur les galeries publiées). Image non décodable (WebP…) ou erreur de calcul : on laisse passer (fail-open)
+// et on le note dans les logs — le garde-fou ne doit jamais bloquer un import pour une raison technique.
+function decodePixels(buf: Uint8Array): { width: number; height: number; data: Uint8Array } | null {
+  try {
+    if (buf[0] === 0x89 && buf[1] === 0x50 && buf[2] === 0x4e && buf[3] === 0x47) {
+      const img = UPNG.decode(buf.buffer.slice(buf.byteOffset, buf.byteOffset + buf.byteLength));
+      const rgba = UPNG.toRGBA8(img)[0];
+      return { width: img.width, height: img.height, data: new Uint8Array(rgba) };
+    }
+    if (buf[0] === 0xff && buf[1] === 0xd8) {
+      const j = jpeg.decode(buf, { useTArray: true, formatAsRGBA: true, maxMemoryUsageInMB: 512 });
+      return { width: j.width, height: j.height, data: j.data };
+    }
+  } catch (e) {
+    log('garde-fou', `décodage impossible: ${(e as Error).message}`);
+  }
+  return null;
+}
+function empreinteDe(buf: Uint8Array): Empreinte | null {
+  const px = decodePixels(buf);
+  if (!px) return null;
+  try { return empreinte(px); } catch (e) { log('garde-fou', `empreinte impossible: ${(e as Error).message}`); return null; }
+}
+// photos déjà sur la fiche : miniatures 400 px au format d'origine (même préparation que la calibration)
+async function empreintesFiche(supabase: ReturnType<typeof createClient>, table: string, entityId: string): Promise<{ url: string; fp: Empreinte }[]> {
+  const { data: row } = await supabase.from(table).select('images').eq('id', entityId).maybeSingle();
+  const urls = (Array.isArray(row?.images) ? row!.images : []).map((i: { url?: string } | string) => (typeof i === 'string' ? i : i?.url)).filter(Boolean) as string[];
+  const out: { url: string; fp: Empreinte }[] = [];
+  for (const u of urls) {
+    const mini = u.includes('/storage/v1/object/public/') ? u.replace('/storage/v1/object/public/', '/storage/v1/render/image/public/') + '?width=400&resize=contain&format=origin' : u;
+    try {
+      const r = await fetchWithTimeout(mini, 8_000);
+      if (!r.ok) continue;
+      const fp = empreinteDe(new Uint8Array(await r.arrayBuffer()));
+      if (fp) out.push({ url: u, fp });
+    } catch { /* photo illisible : ignorée */ }
+  }
+  return out;
+}
+function chercheDoublon(fp: Empreinte | null, deja: { url: string; fp: Empreinte }[]) {
+  if (!fp) return null;
+  for (const x of deja) { const m = memePhoto(fp, x.fp); if (m.doublon) return { url: x.url, raison: m.raison as string }; }
+  return null;
+}
+// ===== FIN GARDE-FOU =====
+
 Deno.serve(async (req) => {
   if (req.method === 'OPTIONS') return new Response('ok', { headers: corsHeaders });
 
@@ -106,13 +160,14 @@ Deno.serve(async (req) => {
       });
     }
 
-    const { entity_type, entity_id, source_urls, alt_base, images_base64, reset } = body as {
+    const { entity_type, entity_id, source_urls, alt_base, images_base64, reset, check_only } = body as {
       entity_type?: string;
       entity_id?: string;
       source_urls?: string[];
       alt_base?: string;
       images_base64?: string[];
       reset?: boolean;
+      check_only?: boolean; // 25/10 : vérification anti-doublon SEULE (aucun upload, aucune écriture)
     };
 
     if (!['scooter', 'part'].includes(entity_type ?? '')) {
@@ -134,6 +189,29 @@ Deno.serve(async (req) => {
 
     const supabase = createClient(SUPABASE_URL, SERVICE_ROLE_KEY);
 
+    // ===== MODE VÉRIFICATION SEULE (25/10) =====
+    // { check_only: true, images_base64: [...] } → pour chaque image : est-ce une photo déjà sur la fiche ?
+    // Lecture pure : aucun upload, aucune écriture. Utilisé par l'admin avant un ajout manuel, et par le smoke-test.
+    if (check_only === true) {
+      const inputs = Array.isArray(images_base64) ? images_base64.slice(0, MAX_URLS) : [];
+      const deja = await empreintesFiche(supabase, table, entity_id);
+      const results: { index: number; doublon: boolean; raison?: string; deja_sur?: string; verifiable: boolean }[] = [];
+      for (let i = 0; i < inputs.length; i++) {
+        let buf: Uint8Array;
+        try { const bin = atob(inputs[i]); buf = new Uint8Array(bin.length); for (let k = 0; k < bin.length; k++) buf[k] = bin.charCodeAt(k); }
+        catch { results.push({ index: i, doublon: false, verifiable: false }); continue; }
+        const fp = empreinteDe(buf);
+        const hit = chercheDoublon(fp, deja);
+        results.push({ index: i, doublon: !!hit, verifiable: !!fp, ...(hit ? { raison: hit.raison, deja_sur: hit.url } : {}) });
+        if (fp && !hit) deja.push({ url: `candidate[${i}]`, fp });
+      }
+      log('check_only', `entity=${entity_type} id=${entity_id} imgs=${inputs.length} deja=${deja.length} doublons=${results.filter((r) => r.doublon).length}`);
+      return new Response(
+        JSON.stringify({ success: true, check_only: true, garde_fou: 'empreinte-core-2510', compared_with: deja.length, results }),
+        { status: 200, headers: { ...corsHeaders, 'Content-Type': 'application/json' } },
+      );
+    }
+
     // ===== DÉTECTION DE MODE =====
     // images_base64 non-vide → NOUVEAU MODE "image déjà détourée" (pas de Remove.bg).
     // Sinon → comportement LEGACY (source_urls + removeBackground), strictement inchangé.
@@ -150,6 +228,10 @@ Deno.serve(async (req) => {
         'start',
         `mode=precut entity=${entity_type} id=${entity_id} imgs=${inputs.length} reset=${reset === true}`,
       );
+
+      // garde-fou : photos déjà sur la fiche (en append) — en reset, seules comptent celles de cet appel
+      const deja = reset === true ? [] : await empreintesFiche(supabase, table, entity_id);
+      let refusedDuplicates = 0;
 
       for (let i = 0; i < inputs.length; i++) {
         try {
@@ -170,6 +252,17 @@ Deno.serve(async (req) => {
             continue;
           }
 
+          // 2b. Garde-fou anti-doublon (25/10) : jamais deux fois la même photo sur la fiche.
+          const fp = empreinteDe(buf);
+          const hit = chercheDoublon(fp, deja);
+          if (hit) {
+            log(`base64[${i}]`, `REFUSÉ doublon (${hit.raison}) de ${hit.url}`);
+            failed.push({ url: `base64[${i}]`, reason: `doublon: ${hit.raison} — déjà sur la fiche (${hit.url})` });
+            refusedDuplicates++;
+            continue;
+          }
+          if (!fp) log(`base64[${i}]`, 'garde-fou: image non vérifiable (format non décodable), acceptée');
+
           // 3. Upload Storage — même bucket/convention/contentType/upsert que legacy.
           const path = `${entity_id}/${ts}_${i}.png`;
           const { error: upErr } = await supabase.storage
@@ -183,6 +276,7 @@ Deno.serve(async (req) => {
           // 4. Public URL.
           const { data: pub } = supabase.storage.from(bucket).getPublicUrl(path);
           newImages.push({ url: pub.publicUrl });
+          if (fp) deja.push({ url: pub.publicUrl, fp });
           log(`base64[${i}]`, `OK -> ${pub.publicUrl}`);
         } catch (e) {
           const reason = (e as Error).message;
@@ -259,6 +353,8 @@ Deno.serve(async (req) => {
           processed_count: newImages.length,
           failed_count: failed.length,
           failed_urls: failed,
+          refused_duplicates: refusedDuplicates,
+          garde_fou: 'empreinte-core-2510',
           images: finalImages,
         }),
         { status: 200, headers: { ...corsHeaders, 'Content-Type': 'application/json' } },
@@ -289,6 +385,7 @@ Deno.serve(async (req) => {
     log('start', `entity=${entity_type} id=${entity_id} urls=${urls.length}`);
 
     let timedOut = false;
+    const dejaLegacy: { url: string; fp: Empreinte }[] = [];
 
     for (let i = 0; i < urls.length; i++) {
       const srcUrl = urls[i];
@@ -330,6 +427,15 @@ Deno.serve(async (req) => {
         const cleanedBuf = await removeBackground(srcBuf);
         log(`url[${i}]`, `bg removed, ${cleanedBuf.byteLength} bytes`);
 
+        // 3b. Garde-fou anti-doublon (25/10) : le mode legacy REMPLACE la galerie → comparaison aux images de cet appel.
+        const fpL = empreinteDe(cleanedBuf);
+        const hitL = chercheDoublon(fpL, dejaLegacy);
+        if (hitL) {
+          log(`url[${i}]`, `REFUSÉ doublon (${hitL.raison}) de ${hitL.url}`);
+          failed.push({ url: srcUrl, reason: `doublon: ${hitL.raison} — même photo que ${hitL.url}` });
+          continue;
+        }
+
         // 4. Upload Storage
         const path = `${entity_id}/${ts}_${i}.png`;
         const { error: upErr } = await supabase.storage
@@ -345,6 +451,7 @@ Deno.serve(async (req) => {
         const publicUrl = pub.publicUrl;
 
         // 6. Push result
+        if (fpL) dejaLegacy.push({ url: srcUrl, fp: fpL });
         const position = result.length;
         result.push({
           url: publicUrl,
