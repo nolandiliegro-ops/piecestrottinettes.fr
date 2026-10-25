@@ -2150,6 +2150,21 @@ export type Database = {
         }
         Relationships: []
       }
+      _backup_fn_refresh_prices_collect_20261025: {
+        Row: {
+          def: string | null
+          saved_at: string | null
+        }
+        Insert: {
+          def?: string | null
+          saved_at?: string | null
+        }
+        Update: {
+          def?: string | null
+          saved_at?: string | null
+        }
+        Relationships: []
+      }
       _backup_galeries_20261016: {
         Row: {
           backed_up_at: string | null
@@ -10055,7 +10070,12 @@ export type Database = {
       scooter_offers: {
         Row: {
           affiliate_url: string
+          compare_at_eur: number | null
           created_at: string
+          deal_ends_at: string | null
+          deal_kind: string | null
+          deal_label: string | null
+          deal_ref_eur: number | null
           id: string
           in_stock: boolean | null
           is_active: boolean
@@ -10074,7 +10094,12 @@ export type Database = {
         }
         Insert: {
           affiliate_url: string
+          compare_at_eur?: number | null
           created_at?: string
+          deal_ends_at?: string | null
+          deal_kind?: string | null
+          deal_label?: string | null
+          deal_ref_eur?: number | null
           id?: string
           in_stock?: boolean | null
           is_active?: boolean
@@ -10093,7 +10118,12 @@ export type Database = {
         }
         Update: {
           affiliate_url?: string
+          compare_at_eur?: number | null
           created_at?: string
+          deal_ends_at?: string | null
+          deal_kind?: string | null
+          deal_label?: string | null
+          deal_ref_eur?: number | null
           id?: string
           in_stock?: boolean | null
           is_active?: boolean
