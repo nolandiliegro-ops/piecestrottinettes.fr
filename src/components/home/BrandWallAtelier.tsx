@@ -127,7 +127,7 @@ const BrandWallAtelier = ({ variant }: { variant: MurVariant }) => {
     <form role="search" onSubmit={(e) => e.preventDefault()} className="mt-4 flex items-stretch h-14 max-w-2xl" style={{ filter: "drop-shadow(0 6px 14px rgba(26,26,26,0.10))" }}>
       <label className="flex-1 flex items-center gap-3 pl-4 pr-3 bg-white min-w-0" style={{ boxShadow: `inset 0 0 0 1px ${LINE}` }}>
         <Search className="w-5 h-5 shrink-0 text-gray-400" aria-hidden />
-        <input type="search" value={q} onChange={(e) => setQ(e.target.value)} placeholder="Ta marque : Xiaomi, Kaabo…" aria-label="Rechercher une marque"
+        <input type="search" value={q} onChange={(e) => setQ(e.target.value)} placeholder="Ta marque : Xiaomi…" aria-label="Rechercher une marque"
           className="w-full h-full bg-transparent outline-none text-base placeholder:text-gray-400" style={{ fontFamily: FONT, color: CARBON }} />
       </label>
       <button type="submit" aria-label="Rechercher" className="flex items-center justify-center w-16 -ml-2 shrink-0" style={{ background: CARBON, clipPath: "polygon(12px 0, 100% 0, 100% 100%, 0 100%)" }}>
