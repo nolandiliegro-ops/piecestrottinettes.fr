@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Aperçu Comptoir Pro</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Unbounded:wght@800;900&family=Plus+Jakarta+Sans:wght@500;700;800&display=swap">
+<style>
+/* Aperçu des 5 écrans pro (branche propositions, jamais publiée). ?v=1..5 */
+:root{--bg:#FAFAF8;--card:#FFFFFF;--ink:#1A1A1A;--muted:#5E625C;--line:#E2DED5;--green:#4A7C59;--green-d:#3A6449;--green-l:#E6EEE8;--orange:#FF6600;
+--disp:"Unbounded","Arial Black",sans-serif;--body:"Plus Jakarta Sans",system-ui,sans-serif}
+*{box-sizing:border-box}
+html,body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--body);font-size:15px}
+img{display:block;max-width:100%}
+.app{max-width:1180px;margin:0 auto;min-height:100vh;padding-bottom:110px}
+.hd{position:sticky;top:0;z-index:5;background:var(--ink);color:#fff;padding:12px 16px;display:flex;justify-content:space-between;align-items:center;gap:10px}
+.hd .lg{font-family:var(--disp);font-style:italic;font-weight:900;font-size:16px;letter-spacing:-.02em}
+.hd .lg i{color:#8FC29E}
+.hd .who{font-size:14px;font-weight:700;text-align:right;line-height:1.2}
+.hd .who b{display:block;color:#8FC29E;font-size:13px}
+.strip{background:var(--green-l);color:var(--green-d);font-weight:800;font-size:14px;padding:8px 16px;display:flex;justify-content:space-between;gap:8px}
+.chips{display:flex;gap:8px;overflow-x:auto;padding:12px 16px;scrollbar-width:none;position:sticky;top:52px;background:var(--bg);z-index:4}
+.chips span{flex:none;border:1.5px solid var(--line);padding:9px 14px;font-weight:800;font-size:14px;background:var(--card)}
+.chips span.on{background:var(--ink);color:#fff;border-color:var(--ink)}
+.search{margin:12px 16px 0;border:1.5px solid var(--line);background:var(--card);padding:13px 14px;color:var(--muted);font-weight:600}
+.cart{position:fixed;left:0;right:0;bottom:0;z-index:6;background:var(--card);border-top:1px solid var(--line);padding:10px 16px 14px;box-shadow:0 -8px 24px -18px rgba(0,0,0,.5)}
+.cart .in{max-width:1180px;margin:0 auto;display:flex;gap:12px;align-items:center}
+.cart .sum{flex:1;min-width:0;font-weight:800;line-height:1.25}
+.cart .sum small{display:block;font-weight:600;color:var(--muted);font-size:13px}
+.cta{border:0;background:var(--orange);color:#fff;font:800 16px var(--body);min-height:52px;padding:0 20px;clip-path:polygon(12px 0,100% 0,100% calc(100% - 12px),calc(100% - 12px) 100%,0 100%,0 12px)}
+.ph{background:#fff;aspect-ratio:1;display:grid;place-items:center;overflow:hidden}
+.ph img{width:88%;height:88%;object-fit:contain}
+.nm{font-weight:700;font-size:14px;line-height:1.25;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.pr{font-weight:800;color:var(--green-d);font-size:16px}
+.pr s{color:var(--muted);font-weight:600;font-size:13px;margin-left:6px}
+.st{font-size:13px;font-weight:700;color:var(--green-d)}
+.st.w{color:var(--muted)}
+.step{display:flex;align-items:center;justify-content:space-between;border:2px solid var(--ink);background:var(--card)}
+.step b{font-size:17px;min-width:28px;text-align:center}
+.step i{font-style:normal;width:44px;height:44px;display:grid;place-items:center;font-size:22px;font-weight:800}
+.add{border:2px solid var(--green);color:var(--green-d);font-weight:800;height:48px;display:grid;place-items:center;font-size:15px;background:var(--card)}
+.qb{position:absolute;top:8px;right:8px;background:var(--orange);color:#fff;font-weight:800;min-width:32px;height:32px;border-radius:16px;display:grid;place-items:center;padding:0 8px;font-size:15px;z-index:2}
+/* 1 vitrine */
+.g1{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;padding:4px 16px}
+@media(min-width:900px){.g1{grid-template-columns:repeat(5,minmax(0,1fr))}}
+.c1{background:var(--card);border:1px solid var(--line);display:grid;gap:8px;padding:0 0 10px;position:relative}
+.c1 .tx{padding:0 10px;display:grid;gap:4px}
+.c1 .ac{padding:0 10px}
+.c1.on{border-color:var(--green);box-shadow:0 0 0 2px var(--green) inset}
+/* 2 rayons */
+.r2{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;padding:14px 16px}
+@media(min-width:900px){.r2{grid-template-columns:repeat(6,minmax(0,1fr))}}
+.ray{position:relative;background:#fff;border:1px solid var(--line);overflow:hidden}
+.ray .ph{aspect-ratio:4/3}
+.ray .lb{padding:10px 12px;background:var(--ink);color:#fff;display:flex;justify-content:space-between;align-items:baseline;gap:6px}
+.ray .lb b{font-family:var(--disp);font-style:italic;font-weight:800;font-size:14px;text-transform:uppercase;line-height:1.1}
+.ray .lb span{font-size:13px;color:#C9D9CD;white-space:nowrap}
+.ttl{font-family:var(--disp);font-style:italic;font-weight:900;text-transform:uppercase;font-size:20px;padding:10px 16px 0;margin:0}
+/* 3 défilé */
+.d3{padding:12px 16px;display:grid;gap:14px}
+@media(min-width:900px){.d3{grid-template-columns:repeat(3,minmax(0,1fr))}}
+.big{background:var(--card);border:1px solid var(--line);display:grid;position:relative}
+.big .ph{aspect-ratio:1/1}
+.big .ph img{width:80%;height:80%}
+.big .tx{padding:14px;display:grid;gap:6px}
+.big .nm{font-size:17px}
+.big .pr{font-size:24px}
+.big .row{display:grid;grid-template-columns:1fr 1fr;gap:10px;padding:0 14px 14px}
+.big .row .add,.big .row .step{height:56px}
+.big .num{position:absolute;top:10px;left:10px;font-weight:800;font-size:13px;background:var(--ink);color:#fff;padding:4px 8px}
+/* 4 liste photo */
+.l4{padding:6px 16px;display:grid}
+@media(min-width:900px){.l4{grid-template-columns:repeat(2,minmax(0,1fr));column-gap:24px}}
+.li{display:grid;grid-template-columns:96px minmax(0,1fr);gap:12px;padding:12px 0;border-bottom:1px solid var(--line);align-items:center;position:relative}
+.li .ph{border:1px solid var(--line)}
+.li .tx{display:grid;gap:5px}
+.li .ac{display:flex;gap:10px;align-items:center;justify-content:space-between}
+.li .ac .step,.li .ac .add{width:132px;height:46px}
+/* 5 mur */
+.m5{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px;padding:6px 16px}
+@media(min-width:900px){.m5{grid-template-columns:repeat(8,minmax(0,1fr))}}
+.tl{position:relative;background:#fff;border:1px solid var(--line);display:grid}
+.tl .pp{font-weight:800;font-size:14px;padding:4px 6px 6px;color:var(--green-d);text-align:center}
+.tl .nn{font-size:13px;font-weight:700;padding:0 6px;line-height:1.2;height:2.4em;overflow:hidden;text-align:center}
+.tl.on{border:2px solid var(--orange)}
+.tray{display:flex;gap:6px;margin-bottom:8px;overflow:hidden}
+.tray img{width:46px;height:46px;object-fit:contain;background:#fff;border:1px solid var(--line);flex:none}
+.tray .more{width:46px;height:46px;flex:none;display:grid;place-items:center;background:var(--ink);color:#fff;font-weight:800}
+.hint{font-size:13px;color:var(--muted);text-align:center;padding:8px 16px}
+</style>
+</head>
+<body>
+<div id="app" class="app"></div>
+<script>
+const B="https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/render/image/public/part-images/";
+const Q="?width=400&resize=contain&quality=75";
+const CATS={"chambres-a-air":["Chambres à air",55],"pneus":["Pneus",233],"pneus-pleins":["Pneus pleins",141],"plaquettes":["Plaquettes",56],"chargeurs":["Chargeurs",45],"disques":["Disques",32]};
+const D=[
+["Chambre à air 10x2 valve droite","chambres-a-air",8.91,9.9,30,"5e9dc290-2b86-48bf-9a72-1a25dfb98b5a/1792433887566_0.png"],
+["Chambre à air 10x2 valve coudée 90x90° eWheel","chambres-a-air",8.91,9.9,30,"c294f87e-5305-49e1-b697-5bec9cf340a1/1792435181796_0.png"],
+["Chambre à air 10x2.125 renforcée valve coudée 90x90°","chambres-a-air",11.61,12.9,30,"b4294022-0bae-4290-a2ae-468a92ed6cfe/1792432170692_0.png"],
+["Chambre à air 10x2.125 valve 45x45°","chambres-a-air",8.91,9.9,30,"5e18a951-593f-45ef-be0c-62abaa499f91/1792431371144_0.png"],
+["Chambre à air 100/90-18 valve droite (Eride Pro SR)","chambres-a-air",13.41,14.9,30,"555a8bf2-62ea-43f7-839e-241ca7fccad3/1792433794258_0.png"],
+["Chambre à air 10x2.125 valve 0x90°","chambres-a-air",8.91,9.9,30,"b857f262-dfa5-49fd-b58e-607c75b7332c/1792432206095_0.png"],
+["Pneu plein 10x2.125 Ninebot série F / Xiaomi Mi4","pneus-pleins",29.61,32.9,20,"c49f9fba-1789-4fe4-9052-1587e0cfa9de/1792432327306_0.png"],
+["Pneu plein 10x2.125","pneus-pleins",18.81,20.9,20,"02f46a84-bdfe-4bd0-8101-4d890a47381d/1792430596183_0.png"],
+["Pneu plein 10x2.125 Pure Electric","pneus-pleins",29.61,32.9,20,"79368115-b58e-4a5a-bb8d-9df341f9b49c/1792431644761_0.png"],
+["Pneu plein 10x2.125-6.1 noir Cityneye","pneus-pleins",17.91,19.9,20,"dd8039e5-7d5c-4563-a94e-66f12a497549/1792886863854_0.png"],
+["Pneu 10.5x2.5 NIU KQi300P","pneus",40.41,44.9,20,"f52b24c9-5a98-4cd3-b428-1ce76a1c86d1/1792432705737_0.png"],
+["Pneu 100/55-6 Teverun Fighter 10","pneus",35.01,38.9,20,"7866bd4d-9843-49a4-aff2-f1f772cdd4a5/1792431631534_0.png"],
+["Pneu 100/55-6.5 avec gel anti crevaison","pneus",47.61,52.9,20,"d6e316ca-bd15-4ca8-ba97-5d32da596994/1792432474210_0.png"],
+["Pneu 100/55-6 Offroad Xuancheng","pneus",31.41,34.9,20,"b1a8579b-947d-4b21-b036-f45b5a575e12/1792432140722_0.png"],
+["Plaquette de frein Kaabo Skywalker E-cross métalliques","plaquettes",8.91,9.9,30,"86415e21-2f06-4a54-ba53-7799f9b7029e/1792434478912_0.png"],
+["Plaquette de frein Kaabo Skywalker E-cross céramique","plaquettes",10.71,11.9,30,"5350c430-97cb-4c13-af10-dfe655943a28/1792431309957_0.png"],
+["Plaquette de frein Magura 9.C","plaquettes",15.21,16.9,30,"55f6e7e2-9fef-4383-8449-1e3a8a73af3b/1792431318149_0.png"],
+["Plaquette de frein Avid Juicy BB7","plaquettes",14.31,15.9,30,"772fc33f-39cb-4b2a-a42e-017f3f2ced28/1792434256685_0.png"],
+["Chargeur 36V ➡️ 42V / 2A (connecteur GX16-3p)","chargeurs",29.61,32.9,15,"dd8a449c-9112-4d7c-bdb3-f84276eff809/1792432537445_0.png"],
+["Chargeur 36V - 42V / 2A Xiaomi (connecteur RCA)","chargeurs",29.61,32.9,15,"fc01424e-5f00-422b-9b9e-c3b30a6f8e69/1792432781089_0.png"],
+["Chargeur 24V ➡️ 29.4V / 2A (connecteur GX16-3p)","chargeurs",26.91,29.9,15,"36146534-c899-435a-a7ff-1ef54c39b04f/1792431116267_0.png"],
+["Chargeur 21,6V ➡️ 24,2V / 1,5A jack 5,5x2,1 Xiaomi 4 Lite","chargeurs",20.61,22.9,20,"ed19b85a-6ff0-4f3a-b126-bb9a0a23f1d1/1792492070586_0.png"],
+["Disque de frein 110mm Xiaomi M365","disques",7.11,7.9,30,"74cc175c-a4db-4d42-966c-00cd30289c5b/1792431577878_0.png"],
+["Disque de frein 140mm 5 trous Xiaomi Mi4","disques",14.31,15.9,30,"a9e75639-865e-4a09-9512-e6bc110d1b43/1792432057305_0.png"],
+["Disque de frein 120MM 6 trous","disques",15.21,16.9,30,"d7858089-07fd-4e3c-82ba-ac9196ba6edc/1792432478544_0.png"]
+].map(([n,c,pro,pub,s,i])=>({n,c,pro,pub,s,img:B+i+Q}));
+// panier de démonstration (données fictives) : 6 chambres 10x2, 2 pneus pleins Mi4, 4 plaquettes métal, 1 chargeur 36V
+const QTY={0:6,6:2,14:4,18:1};
+const eur=v=>v.toFixed(2).replace('.',',')+' €';
+const tot=()=>{let n=0,t=0;for(const k in QTY){n+=QTY[k];t+=Math.round(D[k].pro*100)*QTY[k]}return{n,t:t/100}};
+const v=+(new URLSearchParams(location.search).get('v')||1);
+const hd=`<div class="hd"><span class="lg">pieces<i>trott</i> PRO</span><span class="who">Garage Rider Marseille<b>Comptoir · −10 %</b></span></div><div class="strip"><span>Commande avant mardi 12 h</span><span>Retrait vendredi</span></div>`;
+const st=p=>p.s>0?'<span class="st">En magasin</span>':'<span class="st w">Sous 3-5 jours</span>';
+const ctl=(k)=>QTY[k]?`<div class="step"><i>−</i><b>${QTY[k]}</b><i>+</i></div>`:`<div class="add">+ Ajouter</div>`;
+const cart=(extra='')=>{const{n,t}=tot();return `<div class="cart"><div class="in"><div class="sum">${extra}${n} pièces · ${eur(t)} HT<small>À régler au retrait · ${eur(Math.round(t*120)/100)} TTC</small></div><button class="cta">Valider</button></div></div>`};
+const chips=(on)=>`<div class="chips">${['Tout',...Object.values(CATS).map(c=>c[0])].map((c,i)=>`<span class="${i===on?'on':''}">${c}</span>`).join('')}</div>`;
+let h='';
+if(v===1){ // Vitrine
+ h=hd+chips(0)+`<div class="g1">${D.map((p,k)=>`<div class="c1 ${QTY[k]?'on':''}"><div class="ph"><img src="${p.img}" alt=""></div><div class="tx"><div class="nm">${p.n}</div><div class="pr">${eur(p.pro)}<s>${eur(p.pub)}</s></div>${st(p)}</div><div class="ac">${ctl(k)}</div></div>`).join('')}</div>`+cart();
+}else if(v===2){ // Rayons
+ const first=c=>D.find(p=>p.c===c);
+ h=hd+`<div class="search">🔍 Chercher une pièce, une taille, un modèle…</div><div class="r2">${Object.entries(CATS).map(([c,[nom,n]])=>`<div class="ray"><div class="ph"><img src="${first(c).img}" alt=""></div><div class="lb"><b>${nom}</b><span>${n} réf.</span></div></div>`).join('')}</div><h2 class="ttl">Chambres à air</h2><div class="g1" style="padding-top:10px">${D.filter(p=>p.c==='chambres-a-air').map(p=>{const k=D.indexOf(p);return `<div class="c1 ${QTY[k]?'on':''}"><div class="ph"><img src="${p.img}" alt=""></div><div class="tx"><div class="nm">${p.n}</div><div class="pr">${eur(p.pro)}</div>${st(p)}</div><div class="ac">${ctl(k)}</div></div>`}).join('')}</div>`+cart();
+}else if(v===3){ // Défilé
+ const L=[6,0,14,18,10,22];
+ h=hd+chips(0)+`<div class="d3">${L.map((k,j)=>{const p=D[k];return `<div class="big"><span class="num">${j+1} / ${D.length}</span>${QTY[k]?`<span class="qb">${QTY[k]}</span>`:''}<div class="ph"><img src="${p.img}" alt=""></div><div class="tx"><div class="nm">${p.n}</div><div class="pr">${eur(p.pro)} HT</div>${st(p)}</div><div class="row">${QTY[k]?`<div class="step"><i>−</i><b>${QTY[k]}</b><i>+</i></div>`:'<div class="add">+ 1</div>'}<div class="add" style="border-color:var(--ink);color:var(--ink)">+ 5</div></div></div>`}).join('')}</div>`+cart();
+}else if(v===4){ // Liste photo
+ h=hd+`<div class="search">🔍 Chercher : 10x2, Mi4, GX16, Magura…</div>`+chips(0)+`<div class="l4">${D.map((p,k)=>`<div class="li"><div class="ph"><img src="${p.img}" alt=""></div><div class="tx"><div class="nm">${p.n}</div><div class="ac"><div><div class="pr">${eur(p.pro)}</div>${st(p)}</div>${ctl(k)}</div></div></div>`).join('')}</div>`+cart();
+}else{ // Mur + panier visuel
+ const imgs=Object.keys(QTY).map(k=>`<img src="${D[k].img}" alt="">`).join('');
+ h=hd+chips(0)+`<div class="hint">Un tap sur une photo = +1 · appui long = la quantité</div><div class="m5">${D.map((p,k)=>`<div class="tl ${QTY[k]?'on':''}">${QTY[k]?`<span class="qb">${QTY[k]}</span>`:''}<div class="ph"><img src="${p.img}" alt=""></div><div class="nn">${p.n}</div><div class="pp">${eur(p.pro)}</div></div>`).join('')}</div>`+cart(`<div class="tray">${imgs}</div>`);
+}
+document.getElementById('app').innerHTML=h;
+</script>
+</body>
+</html>

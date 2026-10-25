@@ -1,0 +1,9 @@
+{
+  "shots": [
+    {"name": "pro-1", "path": "/apercu-pro.html?v=1"},
+    {"name": "pro-2", "path": "/apercu-pro.html?v=2"},
+    {"name": "pro-3", "path": "/apercu-pro.html?v=3"},
+    {"name": "pro-4", "path": "/apercu-pro.html?v=4"},
+    {"name": "pro-5", "path": "/apercu-pro.html?v=5"}
+  ]
+}
