@@ -1,0 +1,1681 @@
+{
+ "lot": "upscale-hd-w",
+ "entity": "scooter",
+ "chasse": true,
+ "models": [
+  {
+   "brand": "Xiaomi",
+   "current": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/570c3f8b-c77f-4f63-a0a0-9a4f1c362eb1/1792973234050_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/570c3f8b-c77f-4f63-a0a0-9a4f1c362eb1/1792973235924_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/570c3f8b-c77f-4f63-a0a0-9a4f1c362eb1/1793002443957_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/570c3f8b-c77f-4f63-a0a0-9a4f1c362eb1/1793007770623_0.png"
+   ],
+   "id": "570c3f8b-c77f-4f63-a0a0-9a4f1c362eb1",
+   "name": "Xiaomi Electric Scooter 6 Ultra",
+   "slug": "xiaomi-electric-scooter-6-ultra",
+   "published": true,
+   "candidates": [
+    "https://d8j0ntlcm91z4.cloudfront.net/user_3GQlfFCxTsvuOLmSkOzS19wh9sw/hf_20261026_170127_6429eb1e-13cb-4264-8113-d2060b5e5056.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/570c3f8b-c77f-4f63-a0a0-9a4f1c362eb1/1792973235924_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/570c3f8b-c77f-4f63-a0a0-9a4f1c362eb1/1793002443957_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/570c3f8b-c77f-4f63-a0a0-9a4f1c362eb1/1793007770623_0.png"
+   ]
+  },
+  {
+   "brand": "Isinwheel",
+   "current": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/85908cbf-4635-4e84-88e0-6bf166bd7648/1792972234924_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/85908cbf-4635-4e84-88e0-6bf166bd7648/1792972236846_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/85908cbf-4635-4e84-88e0-6bf166bd7648/1792972239809_0.png"
+   ],
+   "id": "85908cbf-4635-4e84-88e0-6bf166bd7648",
+   "name": "Isinwheel S9 Max",
+   "slug": "isinwheel-s9-max",
+   "published": true,
+   "candidates": [
+    "https://d8j0ntlcm91z4.cloudfront.net/user_3GQlfFCxTsvuOLmSkOzS19wh9sw/hf_20261026_170132_dd24ac93-00da-4af6-9f0f-b1613bb1997c.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/85908cbf-4635-4e84-88e0-6bf166bd7648/1792972236846_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/85908cbf-4635-4e84-88e0-6bf166bd7648/1792972239809_0.png"
+   ]
+  },
+  {
+   "brand": "Inmotion",
+   "current": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/a2155ed2-587a-4c17-a3cd-095aa9f76ddf/1792972098261_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/a2155ed2-587a-4c17-a3cd-095aa9f76ddf/1792972100182_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/a2155ed2-587a-4c17-a3cd-095aa9f76ddf/1792972102630_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/a2155ed2-587a-4c17-a3cd-095aa9f76ddf/1792972104430_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/a2155ed2-587a-4c17-a3cd-095aa9f76ddf/1792972107014_0.png"
+   ],
+   "id": "a2155ed2-587a-4c17-a3cd-095aa9f76ddf",
+   "name": "Inmotion Climber",
+   "slug": "inmotion-climber",
+   "published": true,
+   "candidates": [
+    "https://d8j0ntlcm91z4.cloudfront.net/user_3GQlfFCxTsvuOLmSkOzS19wh9sw/hf_20261026_170130_502c2e96-64c3-483b-b708-6f1e78dff6bd.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/a2155ed2-587a-4c17-a3cd-095aa9f76ddf/1792972100182_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/a2155ed2-587a-4c17-a3cd-095aa9f76ddf/1792972102630_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/a2155ed2-587a-4c17-a3cd-095aa9f76ddf/1792972104430_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/a2155ed2-587a-4c17-a3cd-095aa9f76ddf/1792972107014_0.png"
+   ]
+  },
+  {
+   "brand": "Nami",
+   "current": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/90784d31-a431-4f78-9937-2014139ba54b/1792972559823_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/90784d31-a431-4f78-9937-2014139ba54b/1792972561413_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/90784d31-a431-4f78-9937-2014139ba54b/1792972563160_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/90784d31-a431-4f78-9937-2014139ba54b/1792972565227_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/90784d31-a431-4f78-9937-2014139ba54b/1792972567345_0.png"
+   ],
+   "id": "90784d31-a431-4f78-9937-2014139ba54b",
+   "name": "Nami Burn-E",
+   "slug": "nami-burn-e",
+   "published": true,
+   "candidates": [
+    "https://d8j0ntlcm91z4.cloudfront.net/user_3GQlfFCxTsvuOLmSkOzS19wh9sw/hf_20261026_170224_3ef731ac-8246-40e5-8503-a5955eb9bea3.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/90784d31-a431-4f78-9937-2014139ba54b/1792972561413_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/90784d31-a431-4f78-9937-2014139ba54b/1792972563160_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/90784d31-a431-4f78-9937-2014139ba54b/1792972565227_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/90784d31-a431-4f78-9937-2014139ba54b/1792972567345_0.png"
+   ]
+  },
+  {
+   "brand": "Weped",
+   "current": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/425d5692-fd61-4d52-9ea5-34ec534e576b/1792973160748_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/425d5692-fd61-4d52-9ea5-34ec534e576b/1792973162338_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/425d5692-fd61-4d52-9ea5-34ec534e576b/1792973164259_0.png"
+   ],
+   "id": "425d5692-fd61-4d52-9ea5-34ec534e576b",
+   "name": "Weped GTS",
+   "slug": "weped-gts",
+   "published": true,
+   "candidates": [
+    "https://d8j0ntlcm91z4.cloudfront.net/user_3GQlfFCxTsvuOLmSkOzS19wh9sw/hf_20261026_170244_4395aac0-4456-4ad9-9221-f852a67980f9.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/425d5692-fd61-4d52-9ea5-34ec534e576b/1792973162338_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/425d5692-fd61-4d52-9ea5-34ec534e576b/1792973164259_0.png"
+   ]
+  },
+  {
+   "brand": "Xiaomi",
+   "current": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/5cc4854f-30ba-40cc-83fd-0d359f0fd134/1792973206776_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/5cc4854f-30ba-40cc-83fd-0d359f0fd134/1793002297177_0.png"
+   ],
+   "id": "5cc4854f-30ba-40cc-83fd-0d359f0fd134",
+   "name": "Xiaomi Electric Scooter 4 Lite",
+   "slug": "xiaomi-electric-scooter-4-lite",
+   "published": true,
+   "candidates": [
+    "https://d8j0ntlcm91z4.cloudfront.net/user_3GQlfFCxTsvuOLmSkOzS19wh9sw/hf_20261026_170246_705a93c2-ad29-4ad7-aae4-714f2b26aa29.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/5cc4854f-30ba-40cc-83fd-0d359f0fd134/1793002297177_0.png"
+   ]
+  },
+  {
+   "brand": "Beaster",
+   "current": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/27b0390b-c1dd-4bca-ae69-1cae035031d7/1792971693041_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/27b0390b-c1dd-4bca-ae69-1cae035031d7/1792971694920_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/27b0390b-c1dd-4bca-ae69-1cae035031d7/1792971697413_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/27b0390b-c1dd-4bca-ae69-1cae035031d7/1793002321016_0.png"
+   ],
+   "id": "27b0390b-c1dd-4bca-ae69-1cae035031d7",
+   "name": "Beaster BS77",
+   "slug": "beaster-bs77",
+   "published": true,
+   "candidates": [
+    "https://d8j0ntlcm91z4.cloudfront.net/user_3GQlfFCxTsvuOLmSkOzS19wh9sw/hf_20261026_170247_187ca4b9-dca4-4940-ae48-b039a0760bda.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/27b0390b-c1dd-4bca-ae69-1cae035031d7/1792971694920_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/27b0390b-c1dd-4bca-ae69-1cae035031d7/1792971697413_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/27b0390b-c1dd-4bca-ae69-1cae035031d7/1793002321016_0.png"
+   ]
+  },
+  {
+   "brand": "Kingsong",
+   "current": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/100160d6-bde3-448e-9f99-4a200ffe7b39/1792972379801_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/100160d6-bde3-448e-9f99-4a200ffe7b39/1792972381816_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/100160d6-bde3-448e-9f99-4a200ffe7b39/1792972385530_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/100160d6-bde3-448e-9f99-4a200ffe7b39/1793007810541_0.png"
+   ],
+   "id": "100160d6-bde3-448e-9f99-4a200ffe7b39",
+   "name": "Kingsong N14 Max",
+   "slug": "kingsong-n14-max",
+   "published": true,
+   "candidates": [
+    "https://d8j0ntlcm91z4.cloudfront.net/user_3GQlfFCxTsvuOLmSkOzS19wh9sw/hf_20261026_170338_9d6a6966-b474-40b9-909a-dbfa5f726993.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/100160d6-bde3-448e-9f99-4a200ffe7b39/1792972381816_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/100160d6-bde3-448e-9f99-4a200ffe7b39/1792972385530_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/100160d6-bde3-448e-9f99-4a200ffe7b39/1793007810541_0.png"
+   ]
+  },
+  {
+   "brand": "Urbanglide",
+   "current": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/25687bdd-669c-4128-88ed-dcd5acc13863/1792973109031_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/25687bdd-669c-4128-88ed-dcd5acc13863/1792973110384_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/25687bdd-669c-4128-88ed-dcd5acc13863/1792973112552_0.png"
+   ],
+   "id": "25687bdd-669c-4128-88ed-dcd5acc13863",
+   "name": "Urbanglide Urbanride 100XS",
+   "slug": "urbanglide-urbanride-100xs",
+   "published": true,
+   "candidates": [
+    "https://d8j0ntlcm91z4.cloudfront.net/user_3GQlfFCxTsvuOLmSkOzS19wh9sw/hf_20261026_170352_b68362bb-da00-4ded-8ba2-e693dd5aaee4.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/25687bdd-669c-4128-88ed-dcd5acc13863/1792973110384_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/25687bdd-669c-4128-88ed-dcd5acc13863/1792973112552_0.png"
+   ]
+  },
+  {
+   "brand": "Kukirin",
+   "current": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/13496721-8661-4f36-9671-c314a159fd7b/1792442881688_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/13496721-8661-4f36-9671-c314a159fd7b/1792442883317_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/13496721-8661-4f36-9671-c314a159fd7b/1792442886883_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/13496721-8661-4f36-9671-c314a159fd7b/1793002341065_0.png"
+   ],
+   "id": "13496721-8661-4f36-9671-c314a159fd7b",
+   "name": "Kukirin M4 Max",
+   "slug": "kukirin-m4-max",
+   "published": true,
+   "candidates": [
+    "https://d8j0ntlcm91z4.cloudfront.net/user_3GQlfFCxTsvuOLmSkOzS19wh9sw/hf_20261026_170354_6f7fecc7-1ae1-4716-b858-0eb871c00aa4.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/13496721-8661-4f36-9671-c314a159fd7b/1792442883317_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/13496721-8661-4f36-9671-c314a159fd7b/1792442886883_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/13496721-8661-4f36-9671-c314a159fd7b/1793002341065_0.png"
+   ]
+  },
+  {
+   "brand": "Hitway",
+   "current": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/db0b21d2-113f-473d-8efe-1bf86f452604/1792972077961_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/db0b21d2-113f-473d-8efe-1bf86f452604/1792972079484_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/db0b21d2-113f-473d-8efe-1bf86f452604/1792972081543_0.png"
+   ],
+   "id": "db0b21d2-113f-473d-8efe-1bf86f452604",
+   "name": "Hitway H5 Pro",
+   "slug": "hitway-h5-pro",
+   "published": true,
+   "candidates": [
+    "https://d8j0ntlcm91z4.cloudfront.net/user_3GQlfFCxTsvuOLmSkOzS19wh9sw/hf_20261026_170355_7cad7592-bab6-46ed-8439-9967cad0427b.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/db0b21d2-113f-473d-8efe-1bf86f452604/1792972079484_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/db0b21d2-113f-473d-8efe-1bf86f452604/1792972081543_0.png"
+   ]
+  },
+  {
+   "brand": "Vsett",
+   "current": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/b03c6a4d-8fb9-4d27-ac62-2bac410169cc/1792973133851_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/b03c6a4d-8fb9-4d27-ac62-2bac410169cc/1792973135054_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/b03c6a4d-8fb9-4d27-ac62-2bac410169cc/1792973137121_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/b03c6a4d-8fb9-4d27-ac62-2bac410169cc/1792973139130_0.png"
+   ],
+   "id": "b03c6a4d-8fb9-4d27-ac62-2bac410169cc",
+   "name": "Vsett 11+ Super",
+   "slug": "vsett-11-plus-super",
+   "published": true,
+   "candidates": [
+    "https://d8j0ntlcm91z4.cloudfront.net/user_3GQlfFCxTsvuOLmSkOzS19wh9sw/hf_20261026_170445_005bbd23-aa5b-4493-aa9f-c75bbe8a74ad.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/b03c6a4d-8fb9-4d27-ac62-2bac410169cc/1792973135054_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/b03c6a4d-8fb9-4d27-ac62-2bac410169cc/1792973137121_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/b03c6a4d-8fb9-4d27-ac62-2bac410169cc/1792973139130_0.png"
+   ]
+  },
+  {
+   "brand": "Ninebot",
+   "current": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/0c055bed-92ff-4fe5-a1a9-692f8474d67b/1792972712662_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/0c055bed-92ff-4fe5-a1a9-692f8474d67b/1792972713696_0.png"
+   ],
+   "id": "0c055bed-92ff-4fe5-a1a9-692f8474d67b",
+   "name": "Ninebot E2 Plus E II",
+   "slug": "ninebot-e2-plus-e-ii",
+   "published": true,
+   "candidates": [
+    "https://d8j0ntlcm91z4.cloudfront.net/user_3GQlfFCxTsvuOLmSkOzS19wh9sw/hf_20261026_170504_2ab65225-9443-4ce8-82ef-890ef76e4f22.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/0c055bed-92ff-4fe5-a1a9-692f8474d67b/1792972713696_0.png"
+   ]
+  },
+  {
+   "brand": "Dualtron",
+   "current": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/9dec9199-0a18-48f7-90c7-72d8dc9d453c/1792971785808_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/9dec9199-0a18-48f7-90c7-72d8dc9d453c/1792971795397_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/9dec9199-0a18-48f7-90c7-72d8dc9d453c/1792971797963_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/9dec9199-0a18-48f7-90c7-72d8dc9d453c/1793002564476_0.png"
+   ],
+   "id": "9dec9199-0a18-48f7-90c7-72d8dc9d453c",
+   "name": "Dualtron Spider 2",
+   "slug": "dualtron-spider-2",
+   "published": true,
+   "candidates": [
+    "https://d8j0ntlcm91z4.cloudfront.net/user_3GQlfFCxTsvuOLmSkOzS19wh9sw/hf_20261026_170539_18d81dbe-82b6-4546-911e-62947dc7a874.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/9dec9199-0a18-48f7-90c7-72d8dc9d453c/1792971795397_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/9dec9199-0a18-48f7-90c7-72d8dc9d453c/1792971797963_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/9dec9199-0a18-48f7-90c7-72d8dc9d453c/1793002564476_0.png"
+   ]
+  },
+  {
+   "brand": "Beaster",
+   "current": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/38dd43b9-958d-4846-b974-0af6dc95da07/1792445419339_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/38dd43b9-958d-4846-b974-0af6dc95da07/1792445421515_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/38dd43b9-958d-4846-b974-0af6dc95da07/1792445423775_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/38dd43b9-958d-4846-b974-0af6dc95da07/1792445428678_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/38dd43b9-958d-4846-b974-0af6dc95da07/1792445431509_0.png"
+   ],
+   "id": "38dd43b9-958d-4846-b974-0af6dc95da07",
+   "name": "Beaster Diablo",
+   "slug": "beaster-diablo",
+   "published": true,
+   "candidates": [
+    "https://d8j0ntlcm91z4.cloudfront.net/user_3GQlfFCxTsvuOLmSkOzS19wh9sw/hf_20261026_170617_6dd89b9a-338d-4e97-b96b-1962c95ce4fa.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/38dd43b9-958d-4846-b974-0af6dc95da07/1792445421515_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/38dd43b9-958d-4846-b974-0af6dc95da07/1792445423775_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/38dd43b9-958d-4846-b974-0af6dc95da07/1792445428678_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/38dd43b9-958d-4846-b974-0af6dc95da07/1792445431509_0.png"
+   ]
+  },
+  {
+   "brand": "Nami",
+   "current": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/175d33ce-e14f-4f60-bf6a-495434a19ff9/1792972571239_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/175d33ce-e14f-4f60-bf6a-495434a19ff9/1792972572369_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/175d33ce-e14f-4f60-bf6a-495434a19ff9/1792972574579_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/175d33ce-e14f-4f60-bf6a-495434a19ff9/1792972576568_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/175d33ce-e14f-4f60-bf6a-495434a19ff9/1792972578612_0.png"
+   ],
+   "id": "175d33ce-e14f-4f60-bf6a-495434a19ff9",
+   "name": "Nami Burn-E 2",
+   "slug": "nami-burn-e-2",
+   "published": true,
+   "candidates": [
+    "https://d8j0ntlcm91z4.cloudfront.net/user_3GQlfFCxTsvuOLmSkOzS19wh9sw/hf_20261026_170946_50614125-030f-4e09-be96-33a8cf60829f.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/175d33ce-e14f-4f60-bf6a-495434a19ff9/1792972572369_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/175d33ce-e14f-4f60-bf6a-495434a19ff9/1792972574579_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/175d33ce-e14f-4f60-bf6a-495434a19ff9/1792972576568_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/175d33ce-e14f-4f60-bf6a-495434a19ff9/1792972578612_0.png"
+   ]
+  },
+  {
+   "brand": "Vsett",
+   "current": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/de8f0438-2398-4eee-8c02-ab4bfa9040b6/1792973123314_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/de8f0438-2398-4eee-8c02-ab4bfa9040b6/1792973125126_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/de8f0438-2398-4eee-8c02-ab4bfa9040b6/1792973127801_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/de8f0438-2398-4eee-8c02-ab4bfa9040b6/1793002801749_0.png"
+   ],
+   "id": "de8f0438-2398-4eee-8c02-ab4bfa9040b6",
+   "name": "Vsett 10+",
+   "slug": "vsett-10-plus",
+   "published": true,
+   "candidates": [
+    "https://d8j0ntlcm91z4.cloudfront.net/user_3GQlfFCxTsvuOLmSkOzS19wh9sw/hf_20261026_170800_d4b32d5b-d64c-43e7-bae9-bd4d20924b38.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/de8f0438-2398-4eee-8c02-ab4bfa9040b6/1792973125126_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/de8f0438-2398-4eee-8c02-ab4bfa9040b6/1792973127801_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/de8f0438-2398-4eee-8c02-ab4bfa9040b6/1793002801749_0.png"
+   ]
+  },
+  {
+   "brand": "Laotie",
+   "current": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/ffb5779f-cd7c-4c54-97fe-44c1ee85a4e4/1792872128640_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/ffb5779f-cd7c-4c54-97fe-44c1ee85a4e4/1792872131169_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/ffb5779f-cd7c-4c54-97fe-44c1ee85a4e4/1792872133812_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/ffb5779f-cd7c-4c54-97fe-44c1ee85a4e4/1792872136342_0.png"
+   ],
+   "id": "ffb5779f-cd7c-4c54-97fe-44c1ee85a4e4",
+   "name": "Laotie ES19",
+   "slug": "laotie-es19",
+   "published": true,
+   "candidates": [
+    "https://d8j0ntlcm91z4.cloudfront.net/user_3GQlfFCxTsvuOLmSkOzS19wh9sw/hf_20261026_170822_dc45d5ea-2a69-4c73-9581-6be5b7fbabb1.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/ffb5779f-cd7c-4c54-97fe-44c1ee85a4e4/1792872131169_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/ffb5779f-cd7c-4c54-97fe-44c1ee85a4e4/1792872133812_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/ffb5779f-cd7c-4c54-97fe-44c1ee85a4e4/1792872136342_0.png"
+   ]
+  },
+  {
+   "brand": "Xiaomi",
+   "current": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/8060ae3d-dd7a-4d0a-ad85-7deb853e4db4/1792973241646_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/8060ae3d-dd7a-4d0a-ad85-7deb853e4db4/1792973242903_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/8060ae3d-dd7a-4d0a-ad85-7deb853e4db4/1792973245046_0.png"
+   ],
+   "id": "8060ae3d-dd7a-4d0a-ad85-7deb853e4db4",
+   "name": "Xiaomi Mi M365",
+   "slug": "xiaomi-mi-m365",
+   "published": true,
+   "candidates": [
+    "https://d8j0ntlcm91z4.cloudfront.net/user_3GQlfFCxTsvuOLmSkOzS19wh9sw/hf_20261026_170949_833356eb-182d-46bf-adca-e483e20fbb1b.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/8060ae3d-dd7a-4d0a-ad85-7deb853e4db4/1792973242903_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/8060ae3d-dd7a-4d0a-ad85-7deb853e4db4/1792973245046_0.png"
+   ]
+  },
+  {
+   "brand": "Micro",
+   "current": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/be6176d5-f7eb-43e5-8819-776e5e22470e/1792448425109_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/be6176d5-f7eb-43e5-8819-776e5e22470e/1792448430400_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/be6176d5-f7eb-43e5-8819-776e5e22470e/1792448433414_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/be6176d5-f7eb-43e5-8819-776e5e22470e/1793002808012_0.png"
+   ],
+   "id": "be6176d5-f7eb-43e5-8819-776e5e22470e",
+   "name": "Micro Merlin",
+   "slug": "micro-merlin",
+   "published": true,
+   "candidates": [
+    "https://d8j0ntlcm91z4.cloudfront.net/user_3GQlfFCxTsvuOLmSkOzS19wh9sw/hf_20261026_170950_d9f0fc25-dc46-453c-9e40-6a07c5edc442.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/be6176d5-f7eb-43e5-8819-776e5e22470e/1792448430400_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/be6176d5-f7eb-43e5-8819-776e5e22470e/1792448433414_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/be6176d5-f7eb-43e5-8819-776e5e22470e/1793002808012_0.png"
+   ]
+  },
+  {
+   "brand": "Yeep.me",
+   "current": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/54bf549a-8da8-443f-9ec5-3ac0764fdd10/1792973260054_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/54bf549a-8da8-443f-9ec5-3ac0764fdd10/1792973261179_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/54bf549a-8da8-443f-9ec5-3ac0764fdd10/1792973263159_0.png"
+   ],
+   "id": "54bf549a-8da8-443f-9ec5-3ac0764fdd10",
+   "name": "Yeep.me 120a Pro",
+   "slug": "yeep-me-120a-pro",
+   "published": true,
+   "candidates": [
+    "https://d8j0ntlcm91z4.cloudfront.net/user_3GQlfFCxTsvuOLmSkOzS19wh9sw/hf_20261026_170952_4b62a051-bdf1-4b57-a980-f0f966f9547c.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/54bf549a-8da8-443f-9ec5-3ac0764fdd10/1792973261179_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/54bf549a-8da8-443f-9ec5-3ac0764fdd10/1792973263159_0.png"
+   ]
+  },
+  {
+   "brand": "Beaster",
+   "current": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/f9309c7c-7589-4a1c-a1ba-9428ef48d6ba/1792971684203_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/f9309c7c-7589-4a1c-a1ba-9428ef48d6ba/1792971686609_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/f9309c7c-7589-4a1c-a1ba-9428ef48d6ba/1792971689633_0.png"
+   ],
+   "id": "f9309c7c-7589-4a1c-a1ba-9428ef48d6ba",
+   "name": "Beaster BS65",
+   "slug": "beaster-bs65",
+   "published": true,
+   "candidates": [
+    "https://d8j0ntlcm91z4.cloudfront.net/user_3GQlfFCxTsvuOLmSkOzS19wh9sw/hf_20261026_171101_d7b7786d-f14f-4424-8032-8a40cb625c0e.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/f9309c7c-7589-4a1c-a1ba-9428ef48d6ba/1792971686609_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/f9309c7c-7589-4a1c-a1ba-9428ef48d6ba/1792971689633_0.png"
+   ]
+  },
+  {
+   "brand": "Yeep.me",
+   "current": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/70da46ff-7b49-4173-b3aa-cf257ba46f0d/1792872634728_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/70da46ff-7b49-4173-b3aa-cf257ba46f0d/1792872636467_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/70da46ff-7b49-4173-b3aa-cf257ba46f0d/1792872638920_0.png"
+   ],
+   "id": "70da46ff-7b49-4173-b3aa-cf257ba46f0d",
+   "name": "Yeep.me 100a start",
+   "slug": "yeep-me-100a-start",
+   "published": true,
+   "candidates": [
+    "https://d8j0ntlcm91z4.cloudfront.net/user_3GQlfFCxTsvuOLmSkOzS19wh9sw/hf_20261026_171121_2ddcacbf-e0cd-4f4d-84b3-df29864aaaa6.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/70da46ff-7b49-4173-b3aa-cf257ba46f0d/1792872636467_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/70da46ff-7b49-4173-b3aa-cf257ba46f0d/1792872638920_0.png"
+   ]
+  },
+  {
+   "brand": "Speedway",
+   "current": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/36612275-ca14-4d62-97df-ba9cc2904302/1792973005492_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/36612275-ca14-4d62-97df-ba9cc2904302/1792973006876_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/36612275-ca14-4d62-97df-ba9cc2904302/1792973009165_0.png"
+   ],
+   "id": "36612275-ca14-4d62-97df-ba9cc2904302",
+   "name": "Speedway Mini 4 Pro Lite",
+   "slug": "speedway-mini-4-pro-lite",
+   "published": true,
+   "candidates": [
+    "https://d8j0ntlcm91z4.cloudfront.net/user_3GQlfFCxTsvuOLmSkOzS19wh9sw/hf_20261026_171158_4d3039d8-17ed-4202-bc35-f71a214a6d77.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/36612275-ca14-4d62-97df-ba9cc2904302/1792973006876_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/36612275-ca14-4d62-97df-ba9cc2904302/1792973009165_0.png"
+   ]
+  },
+  {
+   "brand": "Kukirin",
+   "current": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/0a1cc6b1-f943-4654-b9cd-3eed09bd2c03/1792972484771_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/0a1cc6b1-f943-4654-b9cd-3eed09bd2c03/1792972486215_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/0a1cc6b1-f943-4654-b9cd-3eed09bd2c03/1792972487833_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/0a1cc6b1-f943-4654-b9cd-3eed09bd2c03/1792972489734_0.png"
+   ],
+   "id": "0a1cc6b1-f943-4654-b9cd-3eed09bd2c03",
+   "name": "Kukirin T4",
+   "slug": "kukirin-t4",
+   "published": true,
+   "candidates": [
+    "https://d8j0ntlcm91z4.cloudfront.net/user_3GQlfFCxTsvuOLmSkOzS19wh9sw/hf_20261026_171200_5c6fdc9e-790f-4c22-afce-df22e7fedd2a.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/0a1cc6b1-f943-4654-b9cd-3eed09bd2c03/1792972486215_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/0a1cc6b1-f943-4654-b9cd-3eed09bd2c03/1792972487833_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/0a1cc6b1-f943-4654-b9cd-3eed09bd2c03/1792972489734_0.png"
+   ]
+  },
+  {
+   "brand": "Kingsong",
+   "current": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/7f0619e1-3f14-4843-a998-0eea4534f403/1792972390447_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/7f0619e1-3f14-4843-a998-0eea4534f403/1792972391651_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/7f0619e1-3f14-4843-a998-0eea4534f403/1792972393455_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/7f0619e1-3f14-4843-a998-0eea4534f403/1793002505058_0.png"
+   ],
+   "id": "7f0619e1-3f14-4843-a998-0eea4534f403",
+   "name": "Kingsong S2 Pro",
+   "slug": "kingsong-s2-pro",
+   "published": true,
+   "candidates": [
+    "https://d8j0ntlcm91z4.cloudfront.net/user_3GQlfFCxTsvuOLmSkOzS19wh9sw/hf_20261026_171234_c61252d7-9761-4ebd-819f-7f503807c6f5.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/7f0619e1-3f14-4843-a998-0eea4534f403/1792972391651_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/7f0619e1-3f14-4843-a998-0eea4534f403/1792972393455_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/7f0619e1-3f14-4843-a998-0eea4534f403/1793002505058_0.png"
+   ]
+  },
+  {
+   "brand": "Joyor",
+   "current": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/b31c7345-d62e-4f4a-b448-baa10e92072c/1792972278348_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/b31c7345-d62e-4f4a-b448-baa10e92072c/1792972279885_0.png"
+   ],
+   "id": "b31c7345-d62e-4f4a-b448-baa10e92072c",
+   "name": "Joyor S8-S",
+   "slug": "joyor-s8-s",
+   "published": true,
+   "candidates": [
+    "https://d8j0ntlcm91z4.cloudfront.net/user_3GQlfFCxTsvuOLmSkOzS19wh9sw/hf_20261026_171254_90395255-7070-45d8-92ff-057b066d0a2e.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/b31c7345-d62e-4f4a-b448-baa10e92072c/1792972279885_0.png"
+   ]
+  },
+  {
+   "brand": "Dualtron",
+   "current": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/104999bf-c796-43b5-833e-d61428b5985e/1792971839042_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/104999bf-c796-43b5-833e-d61428b5985e/1792971840551_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/104999bf-c796-43b5-833e-d61428b5985e/1792971843147_0.png"
+   ],
+   "id": "104999bf-c796-43b5-833e-d61428b5985e",
+   "name": "Dualtron Victor Luxury Plus",
+   "slug": "dualtron-victor-luxury-plus",
+   "published": true,
+   "candidates": [
+    "https://d8j0ntlcm91z4.cloudfront.net/user_3GQlfFCxTsvuOLmSkOzS19wh9sw/hf_20261026_171255_c6116c1d-ca52-4daf-b2a3-c99b30b596b0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/104999bf-c796-43b5-833e-d61428b5985e/1792971840551_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/104999bf-c796-43b5-833e-d61428b5985e/1792971843147_0.png"
+   ]
+  },
+  {
+   "brand": "E-Twow",
+   "current": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/d9e58b4e-75a9-4a66-b11d-d0ceff901321/1792971886009_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/d9e58b4e-75a9-4a66-b11d-d0ceff901321/1792971887651_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/d9e58b4e-75a9-4a66-b11d-d0ceff901321/1792971890255_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/d9e58b4e-75a9-4a66-b11d-d0ceff901321/1792971892366_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/d9e58b4e-75a9-4a66-b11d-d0ceff901321/1792971895435_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/d9e58b4e-75a9-4a66-b11d-d0ceff901321/1792971897663_0.png"
+   ],
+   "id": "d9e58b4e-75a9-4a66-b11d-d0ceff901321",
+   "name": "E-Twow Booster ES",
+   "slug": "e-twow-booster-es",
+   "published": true,
+   "candidates": [
+    "https://d8j0ntlcm91z4.cloudfront.net/user_3GQlfFCxTsvuOLmSkOzS19wh9sw/hf_20261026_171332_a710fff0-b3ad-4c77-b669-b05756a47948.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/d9e58b4e-75a9-4a66-b11d-d0ceff901321/1792971887651_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/d9e58b4e-75a9-4a66-b11d-d0ceff901321/1792971890255_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/d9e58b4e-75a9-4a66-b11d-d0ceff901321/1792971892366_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/d9e58b4e-75a9-4a66-b11d-d0ceff901321/1792971895435_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/d9e58b4e-75a9-4a66-b11d-d0ceff901321/1792971897663_0.png"
+   ]
+  },
+  {
+   "brand": "Ninebot",
+   "current": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/ce627e3b-d3df-4ee2-a99e-08233d1d09b2/1792972725368_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/ce627e3b-d3df-4ee2-a99e-08233d1d09b2/1792972726798_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/ce627e3b-d3df-4ee2-a99e-08233d1d09b2/1792972728272_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/ce627e3b-d3df-4ee2-a99e-08233d1d09b2/1792972730020_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/ce627e3b-d3df-4ee2-a99e-08233d1d09b2/1792972733058_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/ce627e3b-d3df-4ee2-a99e-08233d1d09b2/1792972735024_0.png"
+   ],
+   "id": "ce627e3b-d3df-4ee2-a99e-08233d1d09b2",
+   "name": "Ninebot E3 Pro E",
+   "slug": "ninebot-e3-pro-e",
+   "published": true,
+   "candidates": [
+    "https://d8j0ntlcm91z4.cloudfront.net/user_3GQlfFCxTsvuOLmSkOzS19wh9sw/hf_20261026_171407_5bfb9427-d97f-439e-99d2-189c6ef22f73.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/ce627e3b-d3df-4ee2-a99e-08233d1d09b2/1792972726798_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/ce627e3b-d3df-4ee2-a99e-08233d1d09b2/1792972728272_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/ce627e3b-d3df-4ee2-a99e-08233d1d09b2/1792972730020_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/ce627e3b-d3df-4ee2-a99e-08233d1d09b2/1792972733058_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/ce627e3b-d3df-4ee2-a99e-08233d1d09b2/1792972735024_0.png"
+   ]
+  },
+  {
+   "brand": "Ninebot",
+   "current": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/759fe38e-1e1a-4626-a328-0d52f6e690f3/1792972746141_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/759fe38e-1e1a-4626-a328-0d52f6e690f3/1793002633008_0.png"
+   ],
+   "id": "759fe38e-1e1a-4626-a328-0d52f6e690f3",
+   "name": "Ninebot F2 E II",
+   "slug": "ninebot-f2-e-ii",
+   "published": true,
+   "candidates": [
+    "https://d8j0ntlcm91z4.cloudfront.net/user_3GQlfFCxTsvuOLmSkOzS19wh9sw/hf_20261026_171409_4e2b9b41-b1ea-4db8-8c4f-cc706ffb3d89.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/759fe38e-1e1a-4626-a328-0d52f6e690f3/1793002633008_0.png"
+   ]
+  },
+  {
+   "brand": "Ninebot",
+   "current": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/eb72ecfb-0239-4ab4-b0aa-f5062dc03e41/1792972773352_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/eb72ecfb-0239-4ab4-b0aa-f5062dc03e41/1792972774753_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/eb72ecfb-0239-4ab4-b0aa-f5062dc03e41/1792972776461_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/eb72ecfb-0239-4ab4-b0aa-f5062dc03e41/1792972778002_0.png"
+   ],
+   "id": "eb72ecfb-0239-4ab4-b0aa-f5062dc03e41",
+   "name": "Ninebot MAX G3 Pro E",
+   "slug": "ninebot-max-g3-pro-e",
+   "published": true,
+   "candidates": [
+    "https://d8j0ntlcm91z4.cloudfront.net/user_3GQlfFCxTsvuOLmSkOzS19wh9sw/hf_20261026_171501_68662ed7-b455-4689-a540-1fd5389f14e1.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/eb72ecfb-0239-4ab4-b0aa-f5062dc03e41/1792972774753_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/eb72ecfb-0239-4ab4-b0aa-f5062dc03e41/1792972776461_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/eb72ecfb-0239-4ab4-b0aa-f5062dc03e41/1792972778002_0.png"
+   ]
+  },
+  {
+   "brand": "Segway",
+   "current": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/065656fc-91c8-489d-b512-3ac9a7786b6d/1792972902412_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/065656fc-91c8-489d-b512-3ac9a7786b6d/1792972903759_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/065656fc-91c8-489d-b512-3ac9a7786b6d/1792972905566_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/065656fc-91c8-489d-b512-3ac9a7786b6d/1792972907735_0.png"
+   ],
+   "id": "065656fc-91c8-489d-b512-3ac9a7786b6d",
+   "name": "Segway GT3 Pro",
+   "slug": "segway-gt3-pro",
+   "published": true,
+   "candidates": [
+    "https://d8j0ntlcm91z4.cloudfront.net/user_3GQlfFCxTsvuOLmSkOzS19wh9sw/hf_20261026_171504_bf739854-3178-4f2e-ae2e-241319904e13.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/065656fc-91c8-489d-b512-3ac9a7786b6d/1792972903759_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/065656fc-91c8-489d-b512-3ac9a7786b6d/1792972905566_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/065656fc-91c8-489d-b512-3ac9a7786b6d/1792972907735_0.png"
+   ]
+  },
+  {
+   "brand": "Micro",
+   "current": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/529da8e2-907a-40a4-8c25-d198197bd323/1792443048324_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/529da8e2-907a-40a4-8c25-d198197bd323/1792443046747_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/529da8e2-907a-40a4-8c25-d198197bd323/1792878288453_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/529da8e2-907a-40a4-8c25-d198197bd323/1792878290240_0.png"
+   ],
+   "id": "529da8e2-907a-40a4-8c25-d198197bd323",
+   "name": "Micro Explorer",
+   "slug": "micro-explorer",
+   "published": true,
+   "candidates": [
+    "https://d8j0ntlcm91z4.cloudfront.net/user_3GQlfFCxTsvuOLmSkOzS19wh9sw/hf_20261026_171538_e997a7b8-a4a3-4975-af89-7fd55efe928d.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/529da8e2-907a-40a4-8c25-d198197bd323/1792443046747_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/529da8e2-907a-40a4-8c25-d198197bd323/1792878288453_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/529da8e2-907a-40a4-8c25-d198197bd323/1792878290240_0.png"
+   ]
+  },
+  {
+   "brand": "Segway",
+   "current": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/3052f999-de22-49ef-ae65-92266b895003/1792972916786_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/3052f999-de22-49ef-ae65-92266b895003/1792972918109_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/3052f999-de22-49ef-ae65-92266b895003/1792972920511_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/3052f999-de22-49ef-ae65-92266b895003/1792972922762_0.png"
+   ],
+   "id": "3052f999-de22-49ef-ae65-92266b895003",
+   "name": "Segway P65",
+   "slug": "segway-p65",
+   "published": true,
+   "candidates": [
+    "https://d8j0ntlcm91z4.cloudfront.net/user_3GQlfFCxTsvuOLmSkOzS19wh9sw/hf_20261026_171557_44e4737f-5f92-48d8-8db1-af5d1aa977b6.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/3052f999-de22-49ef-ae65-92266b895003/1792972918109_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/3052f999-de22-49ef-ae65-92266b895003/1792972920511_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/3052f999-de22-49ef-ae65-92266b895003/1792972922762_0.png"
+   ]
+  },
+  {
+   "brand": "Hikerboy",
+   "current": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/20900c0e-d3b7-4838-8338-b21cf2f94f3d/1792972037472_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/20900c0e-d3b7-4838-8338-b21cf2f94f3d/1792972039183_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/20900c0e-d3b7-4838-8338-b21cf2f94f3d/1792972041638_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/20900c0e-d3b7-4838-8338-b21cf2f94f3d/1792972044146_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/20900c0e-d3b7-4838-8338-b21cf2f94f3d/1792972046269_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/20900c0e-d3b7-4838-8338-b21cf2f94f3d/1792972048484_0.png"
+   ],
+   "id": "20900c0e-d3b7-4838-8338-b21cf2f94f3d",
+   "name": "Hikerboy Brio",
+   "slug": "hikerboy-brio",
+   "published": true,
+   "candidates": [
+    "https://d8j0ntlcm91z4.cloudfront.net/user_3GQlfFCxTsvuOLmSkOzS19wh9sw/hf_20261026_171559_639217dd-f08b-442c-87c1-d696f886330b.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/20900c0e-d3b7-4838-8338-b21cf2f94f3d/1792972039183_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/20900c0e-d3b7-4838-8338-b21cf2f94f3d/1792972041638_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/20900c0e-d3b7-4838-8338-b21cf2f94f3d/1792972044146_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/20900c0e-d3b7-4838-8338-b21cf2f94f3d/1792972046269_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/20900c0e-d3b7-4838-8338-b21cf2f94f3d/1792972048484_0.png"
+   ]
+  },
+  {
+   "brand": "iScooter",
+   "current": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/0586772c-9e2b-4285-a3df-409f18a6056f/1792447043335_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/0586772c-9e2b-4285-a3df-409f18a6056f/1792447045468_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/0586772c-9e2b-4285-a3df-409f18a6056f/1792447047710_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/0586772c-9e2b-4285-a3df-409f18a6056f/1792447050589_0.png"
+   ],
+   "id": "0586772c-9e2b-4285-a3df-409f18a6056f",
+   "name": "iScooter iX7 Pro",
+   "slug": "iscooter-ix7-pro",
+   "published": true,
+   "candidates": [
+    "https://d8j0ntlcm91z4.cloudfront.net/user_3GQlfFCxTsvuOLmSkOzS19wh9sw/hf_20261026_171656_e3b0a8c9-e896-450d-a608-422643e9ef2e.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/0586772c-9e2b-4285-a3df-409f18a6056f/1792447045468_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/0586772c-9e2b-4285-a3df-409f18a6056f/1792447047710_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/0586772c-9e2b-4285-a3df-409f18a6056f/1792447050589_0.png"
+   ]
+  },
+  {
+   "brand": "Oxelo",
+   "current": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/1e9a0d8c-8850-41fa-b877-4708db1dd0a9/1792449340013_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/1e9a0d8c-8850-41fa-b877-4708db1dd0a9/1792449342030_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/1e9a0d8c-8850-41fa-b877-4708db1dd0a9/1792449345064_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/1e9a0d8c-8850-41fa-b877-4708db1dd0a9/1792449350209_0.png"
+   ],
+   "id": "1e9a0d8c-8850-41fa-b877-4708db1dd0a9",
+   "name": "Oxelo SD500E",
+   "slug": "oxelo-sd500e",
+   "published": true,
+   "candidates": [
+    "https://d8j0ntlcm91z4.cloudfront.net/user_3GQlfFCxTsvuOLmSkOzS19wh9sw/hf_20261026_171735_e213bfbc-4347-42ec-910a-3fec2239135e.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/1e9a0d8c-8850-41fa-b877-4708db1dd0a9/1792449342030_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/1e9a0d8c-8850-41fa-b877-4708db1dd0a9/1792449345064_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/1e9a0d8c-8850-41fa-b877-4708db1dd0a9/1792449350209_0.png"
+   ]
+  },
+  {
+   "brand": "Weped",
+   "current": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/49be692c-5729-4021-b3f3-a3928a3e4dc9/1792973167438_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/49be692c-5729-4021-b3f3-a3928a3e4dc9/1792973168954_0.png"
+   ],
+   "id": "49be692c-5729-4021-b3f3-a3928a3e4dc9",
+   "name": "Weped SS-T",
+   "slug": "weped-ss-t",
+   "published": true,
+   "candidates": [
+    "https://d8j0ntlcm91z4.cloudfront.net/user_3GQlfFCxTsvuOLmSkOzS19wh9sw/hf_20261026_171659_462cdac4-4c68-4fc7-9fef-587c54938fdf.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/49be692c-5729-4021-b3f3-a3928a3e4dc9/1792973168954_0.png"
+   ]
+  },
+  {
+   "brand": "Urbanglide",
+   "current": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/8498fb4c-37d3-4308-9cf2-08b786c2c080/1792973073779_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/8498fb4c-37d3-4308-9cf2-08b786c2c080/1792973075106_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/8498fb4c-37d3-4308-9cf2-08b786c2c080/1792973077239_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/8498fb4c-37d3-4308-9cf2-08b786c2c080/1792973079669_0.png"
+   ],
+   "id": "8498fb4c-37d3-4308-9cf2-08b786c2c080",
+   "name": "Urbanglide All Road 6 Pro",
+   "slug": "urbanglide-all-road-6-pro",
+   "published": true,
+   "candidates": [
+    "https://d8j0ntlcm91z4.cloudfront.net/user_3GQlfFCxTsvuOLmSkOzS19wh9sw/hf_20261026_171756_386a3017-e55b-4731-9552-404e48dae831.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/8498fb4c-37d3-4308-9cf2-08b786c2c080/1792973075106_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/8498fb4c-37d3-4308-9cf2-08b786c2c080/1792973077239_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/8498fb4c-37d3-4308-9cf2-08b786c2c080/1792973079669_0.png"
+   ]
+  },
+  {
+   "brand": "Urbanglide",
+   "current": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/5e857319-cb66-42ea-af2f-9636fb016b7c/1792973082448_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/5e857319-cb66-42ea-af2f-9636fb016b7c/1792973083502_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/5e857319-cb66-42ea-af2f-9636fb016b7c/1792973085367_0.png"
+   ],
+   "id": "5e857319-cb66-42ea-af2f-9636fb016b7c",
+   "name": "Urbanglide eCross Duo",
+   "slug": "urbanglide-ecross-duo",
+   "published": true,
+   "candidates": [
+    "https://d8j0ntlcm91z4.cloudfront.net/user_3GQlfFCxTsvuOLmSkOzS19wh9sw/hf_20261026_171758_f8826273-7045-448b-a1ee-dfed7c293d2e.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/5e857319-cb66-42ea-af2f-9636fb016b7c/1792973083502_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/5e857319-cb66-42ea-af2f-9636fb016b7c/1792973085367_0.png"
+   ]
+  },
+  {
+   "brand": "E-Twow",
+   "current": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/f76f19df-e126-4546-961f-f3477da208d8/1792441519757_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/f76f19df-e126-4546-961f-f3477da208d8/1792441521016_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/f76f19df-e126-4546-961f-f3477da208d8/1792441523078_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/f76f19df-e126-4546-961f-f3477da208d8/1792441526594_0.png"
+   ],
+   "id": "f76f19df-e126-4546-961f-f3477da208d8",
+   "name": "E-Twow TankTorq TK5",
+   "slug": "e-twow-tanktorq-tk5",
+   "published": true,
+   "candidates": [
+    "https://d8j0ntlcm91z4.cloudfront.net/user_3GQlfFCxTsvuOLmSkOzS19wh9sw/hf_20261026_171839_462252a3-48ce-4855-88e8-17a8323aa0ac.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/f76f19df-e126-4546-961f-f3477da208d8/1792441521016_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/f76f19df-e126-4546-961f-f3477da208d8/1792441523078_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/f76f19df-e126-4546-961f-f3477da208d8/1792441526594_0.png"
+   ]
+  },
+  {
+   "brand": "Kugoo",
+   "current": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/3fefe1e1-ece6-4334-9302-29089eb6cb33/1792872049985_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/3fefe1e1-ece6-4334-9302-29089eb6cb33/1792872052145_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/3fefe1e1-ece6-4334-9302-29089eb6cb33/1792872054786_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/3fefe1e1-ece6-4334-9302-29089eb6cb33/1792872057146_0.png"
+   ],
+   "id": "3fefe1e1-ece6-4334-9302-29089eb6cb33",
+   "name": "Kugoo G2 Max",
+   "slug": "kugoo-g2-max",
+   "published": true,
+   "candidates": [
+    "https://d8j0ntlcm91z4.cloudfront.net/user_3GQlfFCxTsvuOLmSkOzS19wh9sw/hf_20261026_171840_585e59e2-09ea-4578-b9bb-e2af48f4d362.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/3fefe1e1-ece6-4334-9302-29089eb6cb33/1792872052145_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/3fefe1e1-ece6-4334-9302-29089eb6cb33/1792872054786_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/3fefe1e1-ece6-4334-9302-29089eb6cb33/1792872057146_0.png"
+   ]
+  },
+  {
+   "brand": "Kaabo",
+   "current": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/6d75a43c-e939-4115-91f0-851b9e3a47e8/1792443010362_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/6d75a43c-e939-4115-91f0-851b9e3a47e8/1792443011537_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/6d75a43c-e939-4115-91f0-851b9e3a47e8/1792443013718_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/6d75a43c-e939-4115-91f0-851b9e3a47e8/1793002752894_0.png"
+   ],
+   "id": "6d75a43c-e939-4115-91f0-851b9e3a47e8",
+   "name": "Mantis Pro",
+   "slug": "mantis-pro",
+   "published": true,
+   "candidates": [
+    "https://d8j0ntlcm91z4.cloudfront.net/user_3GQlfFCxTsvuOLmSkOzS19wh9sw/hf_20261026_171916_4d811569-7868-4679-a151-b21cd0efaf79.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/6d75a43c-e939-4115-91f0-851b9e3a47e8/1792443011537_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/6d75a43c-e939-4115-91f0-851b9e3a47e8/1792443013718_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/6d75a43c-e939-4115-91f0-851b9e3a47e8/1793002752894_0.png"
+   ]
+  },
+  {
+   "brand": "Laotie",
+   "current": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/436e7f75-6b6b-47da-a231-f9fd83ab43fd/1792972515103_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/436e7f75-6b6b-47da-a231-f9fd83ab43fd/1792972516984_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/436e7f75-6b6b-47da-a231-f9fd83ab43fd/1792972518856_0.png"
+   ],
+   "id": "436e7f75-6b6b-47da-a231-f9fd83ab43fd",
+   "name": "Laotie SR10",
+   "slug": "laotie-sr10",
+   "published": true,
+   "candidates": [
+    "https://d8j0ntlcm91z4.cloudfront.net/user_3GQlfFCxTsvuOLmSkOzS19wh9sw/hf_20261026_171918_f5253468-88cf-456e-ba42-61daa154068c.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/436e7f75-6b6b-47da-a231-f9fd83ab43fd/1792972516984_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/436e7f75-6b6b-47da-a231-f9fd83ab43fd/1792972518856_0.png"
+   ]
+  },
+  {
+   "brand": "Punk",
+   "current": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/d7796d17-9beb-4612-a9ae-218c73c08bde/1792872277834_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/d7796d17-9beb-4612-a9ae-218c73c08bde/1792872275360_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/d7796d17-9beb-4612-a9ae-218c73c08bde/1792872280057_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/d7796d17-9beb-4612-a9ae-218c73c08bde/1792872282682_0.png"
+   ],
+   "id": "d7796d17-9beb-4612-a9ae-218c73c08bde",
+   "name": "Punk Rider",
+   "slug": "punk-rider",
+   "published": true,
+   "candidates": [
+    "https://d8j0ntlcm91z4.cloudfront.net/user_3GQlfFCxTsvuOLmSkOzS19wh9sw/hf_20261026_172056_0c79c40e-cb6c-4618-8889-c28c281e100f.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/d7796d17-9beb-4612-a9ae-218c73c08bde/1792872275360_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/d7796d17-9beb-4612-a9ae-218c73c08bde/1792872280057_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/d7796d17-9beb-4612-a9ae-218c73c08bde/1792872282682_0.png"
+   ]
+  },
+  {
+   "brand": "Inmotion",
+   "current": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/cfa031f8-814a-443f-a496-b319a8bcea6b/1792446696861_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/cfa031f8-814a-443f-a496-b319a8bcea6b/1792446699106_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/cfa031f8-814a-443f-a496-b319a8bcea6b/1792446701627_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/cfa031f8-814a-443f-a496-b319a8bcea6b/1793002788147_0.png"
+   ],
+   "id": "cfa031f8-814a-443f-a496-b319a8bcea6b",
+   "name": "Inmotion C1 Air Pro",
+   "slug": "inmotion-c1-air-pro",
+   "published": true,
+   "candidates": [
+    "https://d8j0ntlcm91z4.cloudfront.net/user_3GQlfFCxTsvuOLmSkOzS19wh9sw/hf_20261026_172014_393da8af-d179-46b6-8f5c-8ccbddd3fe48.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/cfa031f8-814a-443f-a496-b319a8bcea6b/1792446699106_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/cfa031f8-814a-443f-a496-b319a8bcea6b/1792446701627_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/cfa031f8-814a-443f-a496-b319a8bcea6b/1793002788147_0.png"
+   ]
+  },
+  {
+   "brand": "Beaster",
+   "current": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/24091119-b9b6-4edb-ab5c-a0676b35120b/1792440981808_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/24091119-b9b6-4edb-ab5c-a0676b35120b/1792440982939_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/24091119-b9b6-4edb-ab5c-a0676b35120b/1792440984795_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/24091119-b9b6-4edb-ab5c-a0676b35120b/1792440986794_0.png"
+   ],
+   "id": "24091119-b9b6-4edb-ab5c-a0676b35120b",
+   "name": "Beaster BS09",
+   "slug": "beaster-bs09",
+   "published": true,
+   "candidates": [
+    "https://d8j0ntlcm91z4.cloudfront.net/user_3GQlfFCxTsvuOLmSkOzS19wh9sw/hf_20261026_172015_4fb76dc8-4cad-4781-bd3b-41c36419460c.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/24091119-b9b6-4edb-ab5c-a0676b35120b/1792440982939_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/24091119-b9b6-4edb-ab5c-a0676b35120b/1792440984795_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/24091119-b9b6-4edb-ab5c-a0676b35120b/1792440986794_0.png"
+   ]
+  },
+  {
+   "brand": "Aprilia",
+   "current": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/90380480-0ee5-4e9a-92c6-ce6e060a34d1/1792440951205_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/90380480-0ee5-4e9a-92c6-ce6e060a34d1/1792440952763_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/90380480-0ee5-4e9a-92c6-ce6e060a34d1/1792867074744_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/90380480-0ee5-4e9a-92c6-ce6e060a34d1/1792878208806_0.png"
+   ],
+   "id": "90380480-0ee5-4e9a-92c6-ce6e060a34d1",
+   "name": "Aprilia eSR2 Evo",
+   "slug": "aprilia-esr2-evo",
+   "published": true,
+   "candidates": [
+    "https://d8j0ntlcm91z4.cloudfront.net/user_3GQlfFCxTsvuOLmSkOzS19wh9sw/hf_20261026_172033_54415d7e-40f9-465d-b8ea-3cb1c3a32ec2.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/90380480-0ee5-4e9a-92c6-ce6e060a34d1/1792440952763_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/90380480-0ee5-4e9a-92c6-ce6e060a34d1/1792867074744_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/90380480-0ee5-4e9a-92c6-ce6e060a34d1/1792878208806_0.png"
+   ]
+  },
+  {
+   "brand": "Kaabo",
+   "current": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/8381d05a-0bdd-44d4-ada0-a150d69c495d/1792871971153_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/8381d05a-0bdd-44d4-ada0-a150d69c495d/1792871973467_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/8381d05a-0bdd-44d4-ada0-a150d69c495d/1792871975988_0.png"
+   ],
+   "id": "def65382-6c60-4059-be62-d887e7af2c0e",
+   "name": "Kaabo Wolf Warrior 11 Pro+",
+   "slug": "kaabo-wolf-warrior-11-pro-plus",
+   "published": true,
+   "candidates": [
+    "https://d8j0ntlcm91z4.cloudfront.net/user_3GQlfFCxTsvuOLmSkOzS19wh9sw/hf_20261026_172116_d719e112-2181-46a1-bb70-95fe2ef2233e.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/8381d05a-0bdd-44d4-ada0-a150d69c495d/1792871973467_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/8381d05a-0bdd-44d4-ada0-a150d69c495d/1792871975988_0.png"
+   ]
+  },
+  {
+   "brand": "Laotie",
+   "current": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/643d4080-2214-41e7-926e-b0040b8f7529/1792443000641_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/643d4080-2214-41e7-926e-b0040b8f7529/1792443005591_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/643d4080-2214-41e7-926e-b0040b8f7529/1792443007523_0.png"
+   ],
+   "id": "643d4080-2214-41e7-926e-b0040b8f7529",
+   "name": "Laotie Ti30",
+   "slug": "laotie-ti30",
+   "published": true,
+   "candidates": [
+    "https://d8j0ntlcm91z4.cloudfront.net/user_3GQlfFCxTsvuOLmSkOzS19wh9sw/hf_20261026_172154_0df7a2c3-5a31-4a95-9b36-356133afd6fd.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/643d4080-2214-41e7-926e-b0040b8f7529/1792443005591_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/643d4080-2214-41e7-926e-b0040b8f7529/1792443007523_0.png"
+   ]
+  },
+  {
+   "brand": "Ninebot",
+   "current": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/a5948204-1063-4254-add6-d8598848f894/1792972750132_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/a5948204-1063-4254-add6-d8598848f894/1793002609479_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/a5948204-1063-4254-add6-d8598848f894/1793007797357_0.png"
+   ],
+   "id": "a5948204-1063-4254-add6-d8598848f894",
+   "name": "Ninebot F2 Pro E II",
+   "slug": "ninebot-f2-pro-e-ii",
+   "published": true,
+   "candidates": [
+    "https://d8j0ntlcm91z4.cloudfront.net/user_3GQlfFCxTsvuOLmSkOzS19wh9sw/hf_20261026_172158_d0c58435-e482-4c02-a12e-fb4bac8c8a2f.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/a5948204-1063-4254-add6-d8598848f894/1793002609479_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/a5948204-1063-4254-add6-d8598848f894/1793007797357_0.png"
+   ]
+  },
+  {
+   "brand": "Beaster",
+   "current": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/515b1bf1-63f8-4fa4-8032-eddf57068c87/1792971679145_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/515b1bf1-63f8-4fa4-8032-eddf57068c87/1793002358294_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/515b1bf1-63f8-4fa4-8032-eddf57068c87/1793002359898_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/515b1bf1-63f8-4fa4-8032-eddf57068c87/1793007823425_0.png"
+   ],
+   "id": "515b1bf1-63f8-4fa4-8032-eddf57068c87",
+   "name": "Beaster BS15",
+   "slug": "beaster-bs15",
+   "published": true,
+   "candidates": [
+    "https://d8j0ntlcm91z4.cloudfront.net/user_3GQlfFCxTsvuOLmSkOzS19wh9sw/hf_20261026_172233_3e6062e8-b886-4473-a205-23eacd7d83a7.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/515b1bf1-63f8-4fa4-8032-eddf57068c87/1793002358294_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/515b1bf1-63f8-4fa4-8032-eddf57068c87/1793002359898_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/515b1bf1-63f8-4fa4-8032-eddf57068c87/1793007823425_0.png"
+   ]
+  },
+  {
+   "brand": "Yeep.me",
+   "current": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/b50b8790-d064-45cf-ab0b-5e9c17856ac1/1792445020379_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/b50b8790-d064-45cf-ab0b-5e9c17856ac1/1792445021635_0.png"
+   ],
+   "id": "b50b8790-d064-45cf-ab0b-5e9c17856ac1",
+   "name": "Yeep.me 85a Evo",
+   "slug": "yeep-me-85a-evo",
+   "published": true,
+   "candidates": [
+    "https://d8j0ntlcm91z4.cloudfront.net/user_3GQlfFCxTsvuOLmSkOzS19wh9sw/hf_20261026_172407_b612bb68-1f15-4199-9acf-3ddbd1a6b149.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/b50b8790-d064-45cf-ab0b-5e9c17856ac1/1792445021635_0.png"
+   ]
+  },
+  {
+   "brand": "Joyor",
+   "current": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/9177eb3f-dbce-4419-a91b-1edd83458561/1792972246702_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/9177eb3f-dbce-4419-a91b-1edd83458561/1792972248755_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/9177eb3f-dbce-4419-a91b-1edd83458561/1793007867873_0.png"
+   ],
+   "id": "9177eb3f-dbce-4419-a91b-1edd83458561",
+   "name": "Joyor A5",
+   "slug": "joyor-a5",
+   "published": true,
+   "candidates": [
+    "https://d8j0ntlcm91z4.cloudfront.net/user_3GQlfFCxTsvuOLmSkOzS19wh9sw/hf_20261026_172330_da0d2dbd-3bb2-4293-ae17-be3e57841776.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/9177eb3f-dbce-4419-a91b-1edd83458561/1792972248755_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/9177eb3f-dbce-4419-a91b-1edd83458561/1793007867873_0.png"
+   ]
+  },
+  {
+   "brand": "Navee",
+   "current": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/a9747cc0-ae93-4c67-a689-b3dca3d0cc1b/1792972673761_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/a9747cc0-ae93-4c67-a689-b3dca3d0cc1b/1793007909910_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/a9747cc0-ae93-4c67-a689-b3dca3d0cc1b/1793007912403_0.png"
+   ],
+   "id": "a9747cc0-ae93-4c67-a689-b3dca3d0cc1b",
+   "name": "Navee ST5 Max",
+   "slug": "navee-st5-max",
+   "published": true,
+   "candidates": [
+    "https://d8j0ntlcm91z4.cloudfront.net/user_3GQlfFCxTsvuOLmSkOzS19wh9sw/hf_20261026_172409_aca78cb5-a285-4c5e-a293-b6ad7e2addd6.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/a9747cc0-ae93-4c67-a689-b3dca3d0cc1b/1793007909910_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/a9747cc0-ae93-4c67-a689-b3dca3d0cc1b/1793007912403_0.png"
+   ]
+  },
+  {
+   "brand": "Kaabo",
+   "current": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/b53ecebf-f55e-46fe-8d19-e4461d65ed33/1792872606122_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/b53ecebf-f55e-46fe-8d19-e4461d65ed33/1792872608155_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/b53ecebf-f55e-46fe-8d19-e4461d65ed33/1792872610218_0.png"
+   ],
+   "id": "b53ecebf-f55e-46fe-8d19-e4461d65ed33",
+   "name": "Wolf Warrior",
+   "slug": "wolf-warrior",
+   "published": true,
+   "candidates": [
+    "https://d8j0ntlcm91z4.cloudfront.net/user_3GQlfFCxTsvuOLmSkOzS19wh9sw/hf_20261026_172452_e9987391-f9d0-4799-8e47-b58a4a89df0e.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/b53ecebf-f55e-46fe-8d19-e4461d65ed33/1792872608155_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/b53ecebf-f55e-46fe-8d19-e4461d65ed33/1792872610218_0.png"
+   ]
+  },
+  {
+   "brand": "Wispeed",
+   "current": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/5b052121-6046-4f5a-af4b-4cc004739c3b/1792973188147_0.png"
+   ],
+   "id": "5b052121-6046-4f5a-af4b-4cc004739c3b",
+   "name": "Wispeed C10-55 Max",
+   "slug": "wispeed-c10-55-max",
+   "published": true,
+   "candidates": [
+    "https://d8j0ntlcm91z4.cloudfront.net/user_3GQlfFCxTsvuOLmSkOzS19wh9sw/hf_20261026_172520_881596b3-8047-4478-ae6c-32994d983ed7.png"
+   ]
+  },
+  {
+   "brand": "E-Twow",
+   "current": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/5ce5a58e-d4f7-4916-a51e-4bf16c824109/1792441494330_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/5ce5a58e-d4f7-4916-a51e-4bf16c824109/1792441496274_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/5ce5a58e-d4f7-4916-a51e-4bf16c824109/1792441498006_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/5ce5a58e-d4f7-4916-a51e-4bf16c824109/1793007922997_0.png"
+   ],
+   "id": "5ce5a58e-d4f7-4916-a51e-4bf16c824109",
+   "name": "E-Twow TankTorq TK2",
+   "slug": "e-twow-tanktorq-tk2",
+   "published": true,
+   "candidates": [
+    "https://d8j0ntlcm91z4.cloudfront.net/user_3GQlfFCxTsvuOLmSkOzS19wh9sw/hf_20261026_172544_30aefd86-2bad-4dbd-8394-f64b873d3bb3.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/5ce5a58e-d4f7-4916-a51e-4bf16c824109/1792441496274_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/5ce5a58e-d4f7-4916-a51e-4bf16c824109/1792441498006_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/5ce5a58e-d4f7-4916-a51e-4bf16c824109/1793007922997_0.png"
+   ]
+  },
+  {
+   "brand": "Jeep",
+   "current": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/3dc702ad-5be7-4d1c-8a7f-49feb69f2f8e/1792447235082_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/3dc702ad-5be7-4d1c-8a7f-49feb69f2f8e/1792447237100_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/3dc702ad-5be7-4d1c-8a7f-49feb69f2f8e/1792447239431_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/3dc702ad-5be7-4d1c-8a7f-49feb69f2f8e/1793007933762_0.png"
+   ],
+   "id": "3dc702ad-5be7-4d1c-8a7f-49feb69f2f8e",
+   "name": "Jeep Adventurer",
+   "slug": "jeep-adventurer",
+   "published": true,
+   "candidates": [
+    "https://d8j0ntlcm91z4.cloudfront.net/user_3GQlfFCxTsvuOLmSkOzS19wh9sw/hf_20261026_172607_512cb186-9d58-4315-bdd6-dab9672392ea.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/3dc702ad-5be7-4d1c-8a7f-49feb69f2f8e/1792447237100_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/3dc702ad-5be7-4d1c-8a7f-49feb69f2f8e/1792447239431_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/3dc702ad-5be7-4d1c-8a7f-49feb69f2f8e/1793007933762_0.png"
+   ]
+  },
+  {
+   "brand": "Hiboy",
+   "current": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/0c105498-abf0-4a0e-ac55-9794c503610e/1792441635463_0.png"
+   ],
+   "id": "0c105498-abf0-4a0e-ac55-9794c503610e",
+   "name": "Hiboy KS4",
+   "slug": "hiboy-ks4",
+   "published": true,
+   "candidates": [
+    "https://d8j0ntlcm91z4.cloudfront.net/user_3GQlfFCxTsvuOLmSkOzS19wh9sw/hf_20261026_172646_edcaa6a5-3f38-4043-8838-6f13dd8e2073.png"
+   ]
+  },
+  {
+   "brand": "Yeep.me",
+   "current": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/5b0687fb-4584-4159-ab77-c10602d70a45/1792973254067_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/5b0687fb-4584-4159-ab77-c10602d70a45/1792973255299_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/5b0687fb-4584-4159-ab77-c10602d70a45/1792973256946_0.png"
+   ],
+   "id": "5b0687fb-4584-4159-ab77-c10602d70a45",
+   "name": "Yeep.me 120a",
+   "slug": "yeep-me-120a",
+   "published": true,
+   "candidates": [
+    "https://d8j0ntlcm91z4.cloudfront.net/user_3GQlfFCxTsvuOLmSkOzS19wh9sw/hf_20261026_172706_51cf3eca-50a4-447f-85ec-cfdd6420adf7.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/5b0687fb-4584-4159-ab77-c10602d70a45/1792973255299_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/5b0687fb-4584-4159-ab77-c10602d70a45/1792973256946_0.png"
+   ]
+  },
+  {
+   "brand": "Segway",
+   "current": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/35fe7643-24d6-46e3-887e-181d794284c0/1792972879960_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/35fe7643-24d6-46e3-887e-181d794284c0/1792972881670_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/35fe7643-24d6-46e3-887e-181d794284c0/1792972883986_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/35fe7643-24d6-46e3-887e-181d794284c0/1792972885841_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/35fe7643-24d6-46e3-887e-181d794284c0/1792972887675_0.png"
+   ],
+   "id": "35fe7643-24d6-46e3-887e-181d794284c0",
+   "name": "Segway GT1",
+   "slug": "segway-gt1",
+   "published": true,
+   "candidates": [
+    "https://d8j0ntlcm91z4.cloudfront.net/user_3GQlfFCxTsvuOLmSkOzS19wh9sw/hf_20261026_172708_10fc7b94-31ac-4986-b099-7cb7d97d0649.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/35fe7643-24d6-46e3-887e-181d794284c0/1792972881670_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/35fe7643-24d6-46e3-887e-181d794284c0/1792972883986_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/35fe7643-24d6-46e3-887e-181d794284c0/1792972885841_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/35fe7643-24d6-46e3-887e-181d794284c0/1792972887675_0.png"
+   ]
+  },
+  {
+   "brand": "Oxelo",
+   "current": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/37ff3593-16f5-450a-9c96-6c302d90e549/1792449323207_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/37ff3593-16f5-450a-9c96-6c302d90e549/1792449325119_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/37ff3593-16f5-450a-9c96-6c302d90e549/1792449327994_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/37ff3593-16f5-450a-9c96-6c302d90e549/1793007944722_0.png"
+   ],
+   "id": "37ff3593-16f5-450a-9c96-6c302d90e549",
+   "name": "Oxelo MD500E",
+   "slug": "oxelo-md500e",
+   "published": true,
+   "candidates": [
+    "https://d8j0ntlcm91z4.cloudfront.net/user_3GQlfFCxTsvuOLmSkOzS19wh9sw/hf_20261026_172809_76608f54-4dfb-4e8d-a407-d66b71ec4ecc.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/37ff3593-16f5-450a-9c96-6c302d90e549/1792449325119_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/37ff3593-16f5-450a-9c96-6c302d90e549/1792449327994_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/37ff3593-16f5-450a-9c96-6c302d90e549/1793007944722_0.png"
+   ]
+  },
+  {
+   "brand": "Kukirin",
+   "current": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/b24fdfb8-6136-4158-88cd-ff1cf18b22b3/1792972432906_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/b24fdfb8-6136-4158-88cd-ff1cf18b22b3/1792972434353_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/b24fdfb8-6136-4158-88cd-ff1cf18b22b3/1793007962675_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/b24fdfb8-6136-4158-88cd-ff1cf18b22b3/1793007964982_0.png"
+   ],
+   "id": "b24fdfb8-6136-4158-88cd-ff1cf18b22b3",
+   "name": "Kukirin G2 Master",
+   "slug": "kukirin-g2-master",
+   "published": true,
+   "candidates": [
+    "https://d8j0ntlcm91z4.cloudfront.net/user_3GQlfFCxTsvuOLmSkOzS19wh9sw/hf_20261026_172811_4980a88f-86e6-41b5-b3c8-60642d3f0f06.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/b24fdfb8-6136-4158-88cd-ff1cf18b22b3/1792972434353_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/b24fdfb8-6136-4158-88cd-ff1cf18b22b3/1793007962675_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/b24fdfb8-6136-4158-88cd-ff1cf18b22b3/1793007964982_0.png"
+   ]
+  },
+  {
+   "brand": "E-Twow",
+   "current": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/743fb217-4a3e-4a88-80dc-ea4188ee361b/1792971903249_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/743fb217-4a3e-4a88-80dc-ea4188ee361b/1792971904783_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/743fb217-4a3e-4a88-80dc-ea4188ee361b/1792971907955_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/743fb217-4a3e-4a88-80dc-ea4188ee361b/1792971910380_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/743fb217-4a3e-4a88-80dc-ea4188ee361b/1792971912684_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/743fb217-4a3e-4a88-80dc-ea4188ee361b/1792971915301_0.png"
+   ],
+   "id": "743fb217-4a3e-4a88-80dc-ea4188ee361b",
+   "name": "E-Twow Booster SE",
+   "slug": "e-twow-booster-se",
+   "published": true,
+   "candidates": [
+    "https://d8j0ntlcm91z4.cloudfront.net/user_3GQlfFCxTsvuOLmSkOzS19wh9sw/hf_20261026_172835_cefc72ea-d978-4524-9a2c-069df4c43f3f.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/743fb217-4a3e-4a88-80dc-ea4188ee361b/1792971904783_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/743fb217-4a3e-4a88-80dc-ea4188ee361b/1792971907955_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/743fb217-4a3e-4a88-80dc-ea4188ee361b/1792971910380_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/743fb217-4a3e-4a88-80dc-ea4188ee361b/1792971912684_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/743fb217-4a3e-4a88-80dc-ea4188ee361b/1792971915301_0.png"
+   ]
+  },
+  {
+   "brand": "Ducati",
+   "current": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/d8fed348-10ab-43a1-9555-527d1f86d4de/1792441387664_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/d8fed348-10ab-43a1-9555-527d1f86d4de/1792441388951_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/d8fed348-10ab-43a1-9555-527d1f86d4de/1792441395540_0.png"
+   ],
+   "id": "d8fed348-10ab-43a1-9555-527d1f86d4de",
+   "name": "Ducati Pro-II Evo",
+   "slug": "ducati-pro-ii-evo",
+   "published": true,
+   "candidates": [
+    "https://d8j0ntlcm91z4.cloudfront.net/user_3GQlfFCxTsvuOLmSkOzS19wh9sw/hf_20261026_172932_761020c6-35eb-46fe-b06d-24e2738372ee.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/d8fed348-10ab-43a1-9555-527d1f86d4de/1792441388951_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/d8fed348-10ab-43a1-9555-527d1f86d4de/1792441395540_0.png"
+   ]
+  },
+  {
+   "brand": "Langfeite",
+   "current": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/b7387153-d431-4404-a350-77f92d42b4f7/1792972504867_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/b7387153-d431-4404-a350-77f92d42b4f7/1792972506285_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/b7387153-d431-4404-a350-77f92d42b4f7/1792972508264_0.png"
+   ],
+   "id": "b7387153-d431-4404-a350-77f92d42b4f7",
+   "name": "Langfeite Roadster",
+   "slug": "langfeite-roadster",
+   "published": true,
+   "candidates": [
+    "https://d8j0ntlcm91z4.cloudfront.net/user_3GQlfFCxTsvuOLmSkOzS19wh9sw/hf_20261026_172934_ed226c4e-261f-47b0-9ce9-656719885b50.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/b7387153-d431-4404-a350-77f92d42b4f7/1792972506285_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/b7387153-d431-4404-a350-77f92d42b4f7/1792972508264_0.png"
+   ]
+  },
+  {
+   "brand": "Kingsong",
+   "current": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/a8c86274-cbdc-42e5-a334-05a9e7711ced/1792447816204_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/a8c86274-cbdc-42e5-a334-05a9e7711ced/1792447818000_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/a8c86274-cbdc-42e5-a334-05a9e7711ced/1792447820334_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/a8c86274-cbdc-42e5-a334-05a9e7711ced/1793007987194_0.png"
+   ],
+   "id": "a8c86274-cbdc-42e5-a334-05a9e7711ced",
+   "name": "Kingsong N15",
+   "slug": "kingsong-n15",
+   "published": true,
+   "candidates": [
+    "https://d8j0ntlcm91z4.cloudfront.net/user_3GQlfFCxTsvuOLmSkOzS19wh9sw/hf_20261026_172936_d895592e-f961-4a49-b9a8-d339330b18db.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/a8c86274-cbdc-42e5-a334-05a9e7711ced/1792447818000_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/a8c86274-cbdc-42e5-a334-05a9e7711ced/1792447820334_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/a8c86274-cbdc-42e5-a334-05a9e7711ced/1793007987194_0.png"
+   ]
+  },
+  {
+   "brand": "Segway",
+   "current": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/e47d2d83-bd81-41f9-b0b3-81d8238bce93/1792972819386_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/e47d2d83-bd81-41f9-b0b3-81d8238bce93/1792972820963_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/e47d2d83-bd81-41f9-b0b3-81d8238bce93/1792972823040_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/e47d2d83-bd81-41f9-b0b3-81d8238bce93/1792972825859_0.png"
+   ],
+   "id": "e47d2d83-bd81-41f9-b0b3-81d8238bce93",
+   "name": "P100S",
+   "slug": "p100s",
+   "published": true,
+   "candidates": [
+    "https://d8j0ntlcm91z4.cloudfront.net/user_3GQlfFCxTsvuOLmSkOzS19wh9sw/hf_20261026_173037_0fd00055-0ae7-4392-a666-7b4ce947b75f.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/e47d2d83-bd81-41f9-b0b3-81d8238bce93/1792972820963_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/e47d2d83-bd81-41f9-b0b3-81d8238bce93/1792972823040_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/e47d2d83-bd81-41f9-b0b3-81d8238bce93/1792972825859_0.png"
+   ]
+  },
+  {
+   "brand": "Segway",
+   "current": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/b762a3ec-8d3b-4ada-a3a9-72ae388f3721/1792972933771_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/b762a3ec-8d3b-4ada-a3a9-72ae388f3721/1792972935214_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/b762a3ec-8d3b-4ada-a3a9-72ae388f3721/1792972937223_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/b762a3ec-8d3b-4ada-a3a9-72ae388f3721/1793008017115_0.png"
+   ],
+   "id": "b762a3ec-8d3b-4ada-a3a9-72ae388f3721",
+   "name": "Segway ZT3 Pro E",
+   "slug": "segway-zt3-pro-e",
+   "published": true,
+   "candidates": [
+    "https://d8j0ntlcm91z4.cloudfront.net/user_3GQlfFCxTsvuOLmSkOzS19wh9sw/hf_20261026_173038_f682abc2-90de-4f7c-b9c0-0150add84072.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/b762a3ec-8d3b-4ada-a3a9-72ae388f3721/1792972935214_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/b762a3ec-8d3b-4ada-a3a9-72ae388f3721/1792972937223_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/b762a3ec-8d3b-4ada-a3a9-72ae388f3721/1793008017115_0.png"
+   ]
+  },
+  {
+   "brand": "Segway",
+   "current": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/3b885825-771d-4949-97fc-2317ce71b0c4/1792449603561_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/3b885825-771d-4949-97fc-2317ce71b0c4/1792449593568_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/3b885825-771d-4949-97fc-2317ce71b0c4/1792449598367_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/3b885825-771d-4949-97fc-2317ce71b0c4/1793008028141_0.png"
+   ],
+   "id": "3b885825-771d-4949-97fc-2317ce71b0c4",
+   "name": "Segway GT2",
+   "slug": "segway-gt2",
+   "published": true,
+   "candidates": [
+    "https://d8j0ntlcm91z4.cloudfront.net/user_3GQlfFCxTsvuOLmSkOzS19wh9sw/hf_20261026_164202_e0fe5047-1f90-42e4-aaef-75f5ccc923d3.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/3b885825-771d-4949-97fc-2317ce71b0c4/1792449593568_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/3b885825-771d-4949-97fc-2317ce71b0c4/1792449598367_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/3b885825-771d-4949-97fc-2317ce71b0c4/1793008028141_0.png"
+   ]
+  },
+  {
+   "brand": "Joyor",
+   "current": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/d4b90d85-dbce-4ec2-82da-2fabc6af822c/1792871918863_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/d4b90d85-dbce-4ec2-82da-2fabc6af822c/1792871921434_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/d4b90d85-dbce-4ec2-82da-2fabc6af822c/1792871924343_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/d4b90d85-dbce-4ec2-82da-2fabc6af822c/1792871926853_0.png"
+   ],
+   "id": "d4b90d85-dbce-4ec2-82da-2fabc6af822c",
+   "name": "Joyor S8-E",
+   "slug": "joyor-s8-e",
+   "published": true,
+   "candidates": [
+    "https://d8j0ntlcm91z4.cloudfront.net/user_3GQlfFCxTsvuOLmSkOzS19wh9sw/hf_20261026_173040_62075d84-e2af-4097-956a-d9811bb594ad.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/d4b90d85-dbce-4ec2-82da-2fabc6af822c/1792871921434_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/d4b90d85-dbce-4ec2-82da-2fabc6af822c/1792871924343_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/d4b90d85-dbce-4ec2-82da-2fabc6af822c/1792871926853_0.png"
+   ]
+  },
+  {
+   "brand": "Kukirin",
+   "current": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/4086540e-8b9d-43c9-bf8c-fe2803c381aa/1792448144787_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/4086540e-8b9d-43c9-bf8c-fe2803c381aa/1792448148891_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/4086540e-8b9d-43c9-bf8c-fe2803c381aa/1792448151537_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/4086540e-8b9d-43c9-bf8c-fe2803c381aa/1793008068688_0.png"
+   ],
+   "id": "4086540e-8b9d-43c9-bf8c-fe2803c381aa",
+   "name": "Kukirin G4 (2026)",
+   "slug": "kukirin-g4-2026",
+   "published": true,
+   "candidates": [
+    "https://d8j0ntlcm91z4.cloudfront.net/user_3GQlfFCxTsvuOLmSkOzS19wh9sw/hf_20261026_173125_f2831079-cdd8-4838-aed6-242a2e5ac77d.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/4086540e-8b9d-43c9-bf8c-fe2803c381aa/1792448148891_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/4086540e-8b9d-43c9-bf8c-fe2803c381aa/1792448151537_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/4086540e-8b9d-43c9-bf8c-fe2803c381aa/1793008068688_0.png"
+   ]
+  },
+  {
+   "brand": "Beaster",
+   "current": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/d46e8689-f6c6-461f-b6fc-8f696f2ce5bb/1792440971640_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/d46e8689-f6c6-461f-b6fc-8f696f2ce5bb/1792440973638_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/d46e8689-f6c6-461f-b6fc-8f696f2ce5bb/1792440975680_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/d46e8689-f6c6-461f-b6fc-8f696f2ce5bb/1792440979117_0.png"
+   ],
+   "id": "d46e8689-f6c6-461f-b6fc-8f696f2ce5bb",
+   "name": "Beaster BS08",
+   "slug": "beaster-bs08",
+   "published": true,
+   "candidates": [
+    "https://d8j0ntlcm91z4.cloudfront.net/user_3GQlfFCxTsvuOLmSkOzS19wh9sw/hf_20261026_164204_635a834d-e970-4a6f-b4b1-d4d5d1aba339.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/d46e8689-f6c6-461f-b6fc-8f696f2ce5bb/1792440973638_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/d46e8689-f6c6-461f-b6fc-8f696f2ce5bb/1792440975680_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/d46e8689-f6c6-461f-b6fc-8f696f2ce5bb/1792440979117_0.png"
+   ]
+  },
+  {
+   "brand": "Urbanglide",
+   "current": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/8cd32a6d-175b-47f8-8843-0723d8298de3/1792973102003_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/8cd32a6d-175b-47f8-8843-0723d8298de3/1792973103411_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/8cd32a6d-175b-47f8-8843-0723d8298de3/1792973106122_0.png"
+   ],
+   "id": "8cd32a6d-175b-47f8-8843-0723d8298de3",
+   "name": "Urbanglide Ride 85 Evo",
+   "slug": "urbanglide-ride-85-evo",
+   "published": true,
+   "candidates": [
+    "https://d8j0ntlcm91z4.cloudfront.net/user_3GQlfFCxTsvuOLmSkOzS19wh9sw/hf_20261026_173206_861830db-2605-4a6a-8590-48a3bd760296.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/8cd32a6d-175b-47f8-8843-0723d8298de3/1792973103411_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/8cd32a6d-175b-47f8-8843-0723d8298de3/1792973106122_0.png"
+   ]
+  },
+  {
+   "brand": "Urbanglide",
+   "current": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/7e78e4a5-4159-48b9-9671-dbea2e18cb04/1792444409355_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/7e78e4a5-4159-48b9-9671-dbea2e18cb04/1792886451520_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/7e78e4a5-4159-48b9-9671-dbea2e18cb04/1792444406191_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/7e78e4a5-4159-48b9-9671-dbea2e18cb04/1793008079951_0.png"
+   ],
+   "id": "7e78e4a5-4159-48b9-9671-dbea2e18cb04",
+   "name": "Urbanglide eCross One",
+   "slug": "urbanglide-ecross-one",
+   "published": true,
+   "candidates": [
+    "https://d8j0ntlcm91z4.cloudfront.net/user_3GQlfFCxTsvuOLmSkOzS19wh9sw/hf_20261026_173228_a6ef0676-d2e1-4255-89e8-a03f7c4bc174.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/7e78e4a5-4159-48b9-9671-dbea2e18cb04/1792886451520_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/7e78e4a5-4159-48b9-9671-dbea2e18cb04/1792444406191_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/7e78e4a5-4159-48b9-9671-dbea2e18cb04/1793008079951_0.png"
+   ]
+  },
+  {
+   "brand": "Vsett",
+   "current": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/05e0fbf2-d779-4747-85cf-f03f6b1ae9aa/1792444636148_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/05e0fbf2-d779-4747-85cf-f03f6b1ae9aa/1792444632902_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/05e0fbf2-d779-4747-85cf-f03f6b1ae9aa/1792444634551_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/05e0fbf2-d779-4747-85cf-f03f6b1ae9aa/1792444637841_0.png"
+   ],
+   "id": "05e0fbf2-d779-4747-85cf-f03f6b1ae9aa",
+   "name": "Vsett 8+",
+   "slug": "vsett-8-plus",
+   "published": true,
+   "candidates": [
+    "https://d8j0ntlcm91z4.cloudfront.net/user_3GQlfFCxTsvuOLmSkOzS19wh9sw/hf_20261026_173248_a2045ebd-bd2c-40f6-84ca-46fe988bd148.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/05e0fbf2-d779-4747-85cf-f03f6b1ae9aa/1792444632902_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/05e0fbf2-d779-4747-85cf-f03f6b1ae9aa/1792444634551_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/05e0fbf2-d779-4747-85cf-f03f6b1ae9aa/1792444637841_0.png"
+   ]
+  },
+  {
+   "brand": "Nami",
+   "current": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/e92dcc6a-d15e-4eb6-ad77-41dea0aa8193/1792448454783_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/e92dcc6a-d15e-4eb6-ad77-41dea0aa8193/1792448457143_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/e92dcc6a-d15e-4eb6-ad77-41dea0aa8193/1792448459627_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/e92dcc6a-d15e-4eb6-ad77-41dea0aa8193/1792448461655_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/e92dcc6a-d15e-4eb6-ad77-41dea0aa8193/1792448464089_0.png"
+   ],
+   "id": "e92dcc6a-d15e-4eb6-ad77-41dea0aa8193",
+   "name": "Nami Blast",
+   "slug": "nami-blast",
+   "published": true,
+   "candidates": [
+    "https://d8j0ntlcm91z4.cloudfront.net/user_3GQlfFCxTsvuOLmSkOzS19wh9sw/hf_20261026_173311_96eecc88-428f-4d36-aba9-d65d6afee499.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/e92dcc6a-d15e-4eb6-ad77-41dea0aa8193/1792448457143_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/e92dcc6a-d15e-4eb6-ad77-41dea0aa8193/1792448459627_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/e92dcc6a-d15e-4eb6-ad77-41dea0aa8193/1792448461655_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/e92dcc6a-d15e-4eb6-ad77-41dea0aa8193/1792448464089_0.png"
+   ]
+  },
+  {
+   "brand": "Kaabo",
+   "current": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/6e797074-e8fb-48c2-9c63-80a751870d2f/1792871982807_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/6e797074-e8fb-48c2-9c63-80a751870d2f/1792871984996_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/6e797074-e8fb-48c2-9c63-80a751870d2f/1792871987021_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/6e797074-e8fb-48c2-9c63-80a751870d2f/1792871989048_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/6e797074-e8fb-48c2-9c63-80a751870d2f/1792871991164_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/6e797074-e8fb-48c2-9c63-80a751870d2f/1792871994190_0.png"
+   ],
+   "id": "6e797074-e8fb-48c2-9c63-80a751870d2f",
+   "name": "Kaabo Wolf Warrior X GT",
+   "slug": "kaabo-wolf-warrior-x-gt",
+   "published": true,
+   "candidates": [
+    "https://d8j0ntlcm91z4.cloudfront.net/user_3GQlfFCxTsvuOLmSkOzS19wh9sw/hf_20261026_173313_ad3455b9-51a6-4f41-86a2-6afff73a1e1b.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/6e797074-e8fb-48c2-9c63-80a751870d2f/1792871984996_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/6e797074-e8fb-48c2-9c63-80a751870d2f/1792871987021_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/6e797074-e8fb-48c2-9c63-80a751870d2f/1792871989048_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/6e797074-e8fb-48c2-9c63-80a751870d2f/1792871991164_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/6e797074-e8fb-48c2-9c63-80a751870d2f/1792871994190_0.png"
+   ]
+  },
+  {
+   "brand": "Dualtron",
+   "current": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/6ed88a51-1208-4a7f-a5f1-5eb3584d97db/1792971827898_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/6ed88a51-1208-4a7f-a5f1-5eb3584d97db/1792971829515_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/6ed88a51-1208-4a7f-a5f1-5eb3584d97db/1793008090928_0.png"
+   ],
+   "id": "6ed88a51-1208-4a7f-a5f1-5eb3584d97db",
+   "name": "Dualtron Togo Pro",
+   "slug": "dualtron-togo-pro",
+   "published": true,
+   "candidates": [
+    "https://d8j0ntlcm91z4.cloudfront.net/user_3GQlfFCxTsvuOLmSkOzS19wh9sw/hf_20261026_173336_c6f9ba18-8db7-484e-8b3d-8d9c39aaeb4a.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/6ed88a51-1208-4a7f-a5f1-5eb3584d97db/1792971829515_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/6ed88a51-1208-4a7f-a5f1-5eb3584d97db/1793008090928_0.png"
+   ]
+  },
+  {
+   "brand": "Nami",
+   "current": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/ebb1cf11-35ef-4d69-b2df-5278988547ff/1792972593724_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/ebb1cf11-35ef-4d69-b2df-5278988547ff/1793008100586_0.png"
+   ],
+   "id": "ebb1cf11-35ef-4d69-b2df-5278988547ff",
+   "name": "Nami Superstellar",
+   "slug": "nami-superstellar",
+   "published": true,
+   "candidates": [
+    "https://d8j0ntlcm91z4.cloudfront.net/user_3GQlfFCxTsvuOLmSkOzS19wh9sw/hf_20261026_173415_d619f553-d86f-4922-b1bf-eaa5f427c67f.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/ebb1cf11-35ef-4d69-b2df-5278988547ff/1793008100586_0.png"
+   ]
+  },
+  {
+   "brand": "Dualtron",
+   "current": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/ce420bc8-eb01-4f1d-9953-09c4b27571e6/1792871498809_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/ce420bc8-eb01-4f1d-9953-09c4b27571e6/1792871501221_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/ce420bc8-eb01-4f1d-9953-09c4b27571e6/1792871504091_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/ce420bc8-eb01-4f1d-9953-09c4b27571e6/1792871507480_0.png"
+   ],
+   "id": "ce420bc8-eb01-4f1d-9953-09c4b27571e6",
+   "name": "Dualtron Thunder 3",
+   "slug": "dualtron-thunder-3",
+   "published": true,
+   "candidates": [
+    "https://d8j0ntlcm91z4.cloudfront.net/user_3GQlfFCxTsvuOLmSkOzS19wh9sw/hf_20261026_173416_221e1cc0-ea36-4cbb-9866-ece18da534b2.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/ce420bc8-eb01-4f1d-9953-09c4b27571e6/1792871501221_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/ce420bc8-eb01-4f1d-9953-09c4b27571e6/1792871504091_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/ce420bc8-eb01-4f1d-9953-09c4b27571e6/1792871507480_0.png"
+   ]
+  },
+  {
+   "brand": "Segway",
+   "current": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/de82fc27-dc83-4183-9d5f-2669fd62ac1e/1792972911214_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/de82fc27-dc83-4183-9d5f-2669fd62ac1e/1792972912550_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/de82fc27-dc83-4183-9d5f-2669fd62ac1e/1793008108984_0.png"
+   ],
+   "id": "de82fc27-dc83-4183-9d5f-2669fd62ac1e",
+   "name": "Segway Ninebot Max G3",
+   "slug": "segway-ninebot-max-g3",
+   "published": true,
+   "candidates": [
+    "https://d8j0ntlcm91z4.cloudfront.net/user_3GQlfFCxTsvuOLmSkOzS19wh9sw/hf_20261026_173501_3cf7550d-e6ea-4078-a464-dd3278a86f01.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/de82fc27-dc83-4183-9d5f-2669fd62ac1e/1792972912550_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/de82fc27-dc83-4183-9d5f-2669fd62ac1e/1793008108984_0.png"
+   ]
+  },
+  {
+   "brand": "Kugoo",
+   "current": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/0407d71e-df03-4cac-a6ee-22f435e243db/1792442729415_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/0407d71e-df03-4cac-a6ee-22f435e243db/1792442730710_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/0407d71e-df03-4cac-a6ee-22f435e243db/1792442732833_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/0407d71e-df03-4cac-a6ee-22f435e243db/1793008118479_0.png"
+   ],
+   "id": "0407d71e-df03-4cac-a6ee-22f435e243db",
+   "name": "Kugoo G4",
+   "slug": "kugoo-g4",
+   "published": true,
+   "candidates": [
+    "https://d8j0ntlcm91z4.cloudfront.net/user_3GQlfFCxTsvuOLmSkOzS19wh9sw/hf_20261026_173524_3a11efac-477d-41bd-af62-0b96ac934163.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/0407d71e-df03-4cac-a6ee-22f435e243db/1792442730710_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/0407d71e-df03-4cac-a6ee-22f435e243db/1792442732833_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/0407d71e-df03-4cac-a6ee-22f435e243db/1793008118479_0.png"
+   ]
+  },
+  {
+   "brand": "Inmotion",
+   "current": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/a3ff5b76-9a51-4ca3-8773-efeb481bf472/1792446730845_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/a3ff5b76-9a51-4ca3-8773-efeb481bf472/1792446732639_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/a3ff5b76-9a51-4ca3-8773-efeb481bf472/1792446735195_0.png"
+   ],
+   "id": "a3ff5b76-9a51-4ca3-8773-efeb481bf472",
+   "name": "Inmotion L9",
+   "slug": "inmotion-l9",
+   "published": true,
+   "candidates": [
+    "https://d8j0ntlcm91z4.cloudfront.net/user_3GQlfFCxTsvuOLmSkOzS19wh9sw/hf_20261026_173545_3ac1375f-b80e-4944-a2d5-6714719aecb9.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/a3ff5b76-9a51-4ca3-8773-efeb481bf472/1792446732639_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/a3ff5b76-9a51-4ca3-8773-efeb481bf472/1792446735195_0.png"
+   ]
+  },
+  {
+   "brand": "Segway",
+   "current": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/c886d269-9194-4363-952b-aa1fd1453dd7/1792972926442_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/c886d269-9194-4363-952b-aa1fd1453dd7/1792972928239_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/c886d269-9194-4363-952b-aa1fd1453dd7/1792972930917_0.png"
+   ],
+   "id": "c886d269-9194-4363-952b-aa1fd1453dd7",
+   "name": "Segway ZT3 Pro",
+   "slug": "segway-zt3-pro",
+   "published": true,
+   "candidates": [
+    "https://d8j0ntlcm91z4.cloudfront.net/user_3GQlfFCxTsvuOLmSkOzS19wh9sw/hf_20261026_173604_e9d2393d-0fbe-425f-9183-053cd0d07fcb.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/c886d269-9194-4363-952b-aa1fd1453dd7/1792972928239_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/c886d269-9194-4363-952b-aa1fd1453dd7/1792972930917_0.png"
+   ]
+  },
+  {
+   "brand": "SoFlow",
+   "current": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/7cc995a7-7779-452c-84e6-c6b7f1acf4f7/1792972992039_0.png"
+   ],
+   "id": "7cc995a7-7779-452c-84e6-c6b7f1acf4f7",
+   "name": "SoFlow SO4 Pro",
+   "slug": "soflow-so4-pro",
+   "published": true,
+   "candidates": [
+    "https://d8j0ntlcm91z4.cloudfront.net/user_3GQlfFCxTsvuOLmSkOzS19wh9sw/hf_20261026_173624_96582866-e2a3-4a9f-bc86-e1e719ac6436.png"
+   ]
+  },
+  {
+   "brand": "Nami",
+   "current": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/2cad5810-c00a-470f-bc56-051a8d4b0f6a/1792972555098_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/2cad5810-c00a-470f-bc56-051a8d4b0f6a/1792972556561_0.png"
+   ],
+   "id": "2cad5810-c00a-470f-bc56-051a8d4b0f6a",
+   "name": "Nami Blast Max",
+   "slug": "nami-blast-max",
+   "published": true,
+   "candidates": [
+    "https://d8j0ntlcm91z4.cloudfront.net/user_3GQlfFCxTsvuOLmSkOzS19wh9sw/hf_20261026_173645_cc6978fb-c8aa-4791-b257-d6933da9efc9.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/2cad5810-c00a-470f-bc56-051a8d4b0f6a/1792972556561_0.png"
+   ]
+  },
+  {
+   "brand": "Dualtron",
+   "current": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/11bbbf20-7d05-4ca6-9906-b174a6bf7bae/1792871469892_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/11bbbf20-7d05-4ca6-9906-b174a6bf7bae/1792871472275_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/11bbbf20-7d05-4ca6-9906-b174a6bf7bae/1792871474669_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/11bbbf20-7d05-4ca6-9906-b174a6bf7bae/1792871477709_0.png"
+   ],
+   "id": "11bbbf20-7d05-4ca6-9906-b174a6bf7bae",
+   "name": "Dualtron Mini",
+   "slug": "dualtron-mini",
+   "published": true,
+   "candidates": [
+    "https://d8j0ntlcm91z4.cloudfront.net/user_3GQlfFCxTsvuOLmSkOzS19wh9sw/hf_20261026_164207_5cd61766-1289-4db8-a515-97b27f4662ea.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/11bbbf20-7d05-4ca6-9906-b174a6bf7bae/1792871472275_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/11bbbf20-7d05-4ca6-9906-b174a6bf7bae/1792871474669_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/11bbbf20-7d05-4ca6-9906-b174a6bf7bae/1792871477709_0.png"
+   ]
+  },
+  {
+   "brand": "Kingsong",
+   "current": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/6e6aa0b5-3d7c-4d5f-b13e-e3069d667c2b/1792447731082_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/6e6aa0b5-3d7c-4d5f-b13e-e3069d667c2b/1792447735278_0.png"
+   ],
+   "id": "6e6aa0b5-3d7c-4d5f-b13e-e3069d667c2b",
+   "name": "Kingsong E1",
+   "slug": "kingsong-e1",
+   "published": true,
+   "candidates": [
+    "https://d8j0ntlcm91z4.cloudfront.net/user_3GQlfFCxTsvuOLmSkOzS19wh9sw/hf_20261026_173709_2ff206fe-1a0a-4397-94eb-c1b86e46d056.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/6e6aa0b5-3d7c-4d5f-b13e-e3069d667c2b/1792447735278_0.png"
+   ]
+  },
+  {
+   "brand": "Ninebot",
+   "current": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/19d9217a-017c-4ca1-bc22-2569d6562fce/1792972753872_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/19d9217a-017c-4ca1-bc22-2569d6562fce/1792972755140_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/19d9217a-017c-4ca1-bc22-2569d6562fce/1792972757224_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/19d9217a-017c-4ca1-bc22-2569d6562fce/1792972759211_0.png"
+   ],
+   "id": "19d9217a-017c-4ca1-bc22-2569d6562fce",
+   "name": "Ninebot F3 Pro E",
+   "slug": "ninebot-f3-pro-e",
+   "published": true,
+   "candidates": [
+    "https://d8j0ntlcm91z4.cloudfront.net/user_3GQlfFCxTsvuOLmSkOzS19wh9sw/hf_20261026_174046_3f727f4f-5507-4c45-9c4c-eb1e811beae7.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/19d9217a-017c-4ca1-bc22-2569d6562fce/1792972755140_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/19d9217a-017c-4ca1-bc22-2569d6562fce/1792972757224_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/19d9217a-017c-4ca1-bc22-2569d6562fce/1792972759211_0.png"
+   ]
+  }
+ ]
+}
