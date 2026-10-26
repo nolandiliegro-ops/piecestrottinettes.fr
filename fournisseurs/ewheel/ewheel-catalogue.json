@@ -11,7 +11,7 @@
    "https://cdn.shopify.com/s/files/1/0613/0178/4618/files/EW5615_imagenes_20261005121557ext7.jpg"
   ],
   "compat": [
-   "Navee XT5"
+   "Navee XT5 80x65 80x65-7.5 80x65x7.5 cubierta cubiertas"
   ]
  },
  {
@@ -26,7 +26,7 @@
    "https://cdn.shopify.com/s/files/1/0613/0178/4618/files/8435764456145_3.jpg"
   ],
   "compat": [
-   "Navee XT5"
+   "Navee XT5 80x55 80x55-8 80x55x8 cubierta cubiertas"
   ]
  },
  {
@@ -34,7 +34,7 @@
   "title": "Cache décoratif de jante arrière Xiaomi 6",
   "handle": "cache-decoratif-de-jante-arriere-xiaomi-6",
   "price_public": "12.95",
-  "available": true,
+  "available": false,
   "images": [
    "https://cdn.shopify.com/s/files/1/0613/0178/4618/files/8435764455315_1_COPIA.jpg",
    "https://cdn.shopify.com/s/files/1/0613/0178/4618/files/8435764455315_2.jpg",
@@ -334,7 +334,7 @@
   "title": "Chargeur Niu K3",
   "handle": "chargeur-niu-k3",
   "price_public": "112.95",
-  "available": true,
+  "available": false,
   "images": [
    "https://cdn.shopify.com/s/files/1/0613/0178/4618/files/8435764428517_1.jpg",
    "https://cdn.shopify.com/s/files/1/0613/0178/4618/files/8435764428517_2.jpg",
@@ -1515,7 +1515,7 @@
   "title": "Pneu tubeless off-road 12,5x2,125 (57-203)",
   "handle": "pneu-tubeless-off-road-12-5x2-125-57-203",
   "price_public": "19.95",
-  "available": false,
+  "available": true,
   "images": [
    "https://cdn.shopify.com/s/files/1/0613/0178/4618/files/8435764441493_1.jpg",
    "https://cdn.shopify.com/s/files/1/0613/0178/4618/files/8435764441493_2.jpg",
@@ -1554,7 +1554,7 @@
   "title": "Roue pleine 10x3 / 255x80 (80/65-6)",
   "handle": "roue-pleine-10x3-255x80-80-65-6",
   "price_public": "26.95",
-  "available": true,
+  "available": false,
   "images": [
    "https://cdn.shopify.com/s/files/1/0613/0178/4618/files/8435764440397_1.jpg",
    "https://cdn.shopify.com/s/files/1/0613/0178/4618/files/8435764440397_2.jpg",
@@ -1751,7 +1751,33 @@
    "https://cdn.shopify.com/s/files/1/0613/0178/4618/files/18399.jpg",
    "https://cdn.shopify.com/s/files/1/0613/0178/4618/files/11676.jpg"
   ],
-  "compat": null
+  "compat": [
+   "Ninebot MAX G30",
+   "Ninebot MAX G30LE II",
+   "Ninebot MAX G30E II",
+   "Motus Scooty 10",
+   "Ninebot KickScooter MAX G2",
+   "Ninebot F2",
+   "Xiaomi Mi 4 Ultra",
+   "Navee S65",
+   "SmartGyro K2",
+   "SmartGyro K2 Pro",
+   "Cecotec Bongo Serie Z",
+   "Aprilia E-SR2 Evo",
+   "Ninebot F2 E",
+   "Ninebot F2 Plus E",
+   "Ninebot F2 Pro E",
+   "Aprilia ESR1",
+   "Ninebot MAX G30D",
+   "SmartGyro K2 XL",
+   "E-Road S5",
+   "E-Road S6",
+   "Kugoo G2 Pro",
+   "Neoride Neoscoot",
+   "VMAX VX2",
+   "VMAX VX3",
+   "Cecotec Bongo Serie S+"
+  ]
  },
  {
   "sku": "EWF255-IU",
@@ -1803,7 +1829,7 @@
    "https://cdn.shopify.com/s/files/1/0613/0178/4618/files/8435764444333_2.jpg",
    "https://cdn.shopify.com/s/files/1/0613/0178/4618/files/8435764444333_3.jpg"
   ],
-  "compat": []
+  "compat": null
  },
  {
   "sku": "EWF579-IU",
@@ -2175,7 +2201,7 @@
   "title": "Pneu 10x2,3-6,5 NIU K2",
   "handle": "pneu-10x2-3-6-5-niu-k2",
   "price_public": "39.95",
-  "available": true,
+  "available": false,
   "images": [
    "https://cdn.shopify.com/s/files/1/0613/0178/4618/files/8435764428487.jpg",
    "https://cdn.shopify.com/s/files/1/0613/0178/4618/files/8435764428487med.jpg",
@@ -2621,7 +2647,7 @@
   "sku": "EWM510-IU",
   "title": "Chambre à air premium 2,0 mm épaisseur 8,5x2(156) Valve droite - 5pcs [Black cat]",
   "handle": "chambre-a-air-premium-2-0-mm-epaisseur-8-5x2-156-valve-droite-5pcs-black-cat",
-  "price_public": "17.95",
+  "price_public": "15.95",
   "available": true,
   "images": [
    "https://cdn.shopify.com/s/files/1/0613/0178/4618/files/6977017042191_inf1.jpg",
@@ -2655,7 +2681,7 @@
   "sku": "EWM434-IU",
   "title": "Chambre à air premium épaisseur 2.0mm 10x2,5 Valve 90x90º [Black Cat]",
   "handle": "chambre-a-air-premium-epaisseur-2-0mm-10x2-5-valve-90x90-black-cat",
-  "price_public": "16.95",
+  "price_public": "18.95",
   "available": true,
   "images": [
    "https://cdn.shopify.com/s/files/1/0613/0178/4618/files/6977017042528_inf1.jpg",
@@ -3997,9 +4023,9 @@
   "price_public": "13.95",
   "available": true,
   "images": [
-   "https://cdn.shopify.com/s/files/1/0613/0178/4618/files/16912.jpg",
-   "https://cdn.shopify.com/s/files/1/0613/0178/4618/files/16913.jpg",
-   "https://cdn.shopify.com/s/files/1/0613/0178/4618/files/16914.jpg"
+   "https://cdn.shopify.com/s/files/1/0613/0178/4618/files/CMM270_imagenes_20261019135323zvxt.jpg",
+   "https://cdn.shopify.com/s/files/1/0613/0178/4618/files/CMM270_imagenes_20261019135323cklj.jpg",
+   "https://cdn.shopify.com/s/files/1/0613/0178/4618/files/CMM270_imagenes_20261019135323nkfx.jpg"
   ],
   "compat": []
  },
@@ -4859,7 +4885,7 @@
   "sku": "RCR-002-IU",
   "title": "Chambre à air 8,5x2 VR [Ewheel]",
   "handle": "chambre-a-air-8-5x2-vr-ewheel",
-  "price_public": "4.95",
+  "price_public": "3.95",
   "available": true,
   "images": [
    "https://cdn.shopify.com/s/files/1/0613/0178/4618/files/7427255406051_2.jpg",
@@ -4896,7 +4922,7 @@
   "sku": "RCC-001-IU",
   "title": "Chambre à air8.5x2 [Ewheel]",
   "handle": "chambre-a-air8-5x2-ewheel",
-  "price_public": "4.95",
+  "price_public": "3.95",
   "available": true,
   "images": [
    "https://cdn.shopify.com/s/files/1/0613/0178/4618/files/7427255406075_principal.jpg",
@@ -6212,9 +6238,9 @@
   "price_public": "13.95",
   "available": false,
   "images": [
-   "https://cdn.shopify.com/s/files/1/0613/0178/4618/files/17663.jpg",
-   "https://cdn.shopify.com/s/files/1/0613/0178/4618/files/17664.jpg",
-   "https://cdn.shopify.com/s/files/1/0613/0178/4618/files/17665.jpg"
+   "https://cdn.shopify.com/s/files/1/0613/0178/4618/files/CMM268_imagenes_20261020105009y579.jpg",
+   "https://cdn.shopify.com/s/files/1/0613/0178/4618/files/CMM268_imagenes_202610201050098gc2.jpg",
+   "https://cdn.shopify.com/s/files/1/0613/0178/4618/files/CMM268_imagenes_2026102010500994fi.jpg"
   ],
   "compat": []
  },
@@ -6751,7 +6777,7 @@
   "title": "Jante avant Niu Original KQi3 Pro",
   "handle": "jante-avant-niu-original-kqi3-pro",
   "price_public": "112.95",
-  "available": true,
+  "available": false,
   "images": [
    "https://cdn.shopify.com/s/files/1/0613/0178/4618/files/H0703001.jpg",
    "https://cdn.shopify.com/s/files/1/0613/0178/4618/files/16202.jpg",
@@ -7239,7 +7265,7 @@
   "sku": "CMM587-IU",
   "title": "Jante avec pneu 6.5 » et biseau 50mm pour Ninebot F2/F2 Pro E [Ninebot]",
   "handle": "jante-avec-pneu-6-5-et-biseau-50mm-pour-ninebot-f2-f2-pro-e-ninebot",
-  "price_public": "81.95",
+  "price_public": "97.95",
   "available": false,
   "images": [
    "https://cdn.shopify.com/s/files/1/0613/0178/4618/files/8435764450907_1.jpg",
@@ -7321,7 +7347,7 @@
   "title": "Pneu tubeless radial soft JUNIOR 90/65-6,5 [PMT]",
   "handle": "pneu-tubeless-radial-soft-junior-90-65-6-5-pmt",
   "price_public": "117.95",
-  "available": false,
+  "available": true,
   "images": [
    "https://cdn.shopify.com/s/files/1/0613/0178/4618/files/14155.jpg",
    "https://cdn.shopify.com/s/files/1/0613/0178/4618/files/14240.jpg",
@@ -8072,11 +8098,11 @@
   "title": "Chambre à air 20x1,75/2,125 VR Ewheel",
   "handle": "chambre-a-air-20x1-75-2-125-vr-ewheel",
   "price_public": "4.95",
-  "available": false,
+  "available": true,
   "images": [
-   "https://cdn.shopify.com/s/files/1/0613/0178/4618/files/13548.jpg",
-   "https://cdn.shopify.com/s/files/1/0613/0178/4618/files/13549.jpg",
-   "https://cdn.shopify.com/s/files/1/0613/0178/4618/files/13550.jpg"
+   "https://cdn.shopify.com/s/files/1/0613/0178/4618/files/CMM252_imagenes_20261019103345x6r7.jpg",
+   "https://cdn.shopify.com/s/files/1/0613/0178/4618/files/CMM252_imagenes_20261019103345sz9m.jpg",
+   "https://cdn.shopify.com/s/files/1/0613/0178/4618/files/CMM252_imagenes_20261019103346286p.jpg"
   ],
   "compat": []
  },
@@ -8123,7 +8149,7 @@
   "sku": "CMM242-IU",
   "title": "Chambre à air 10x2.5 Black Cat - 5pcs",
   "handle": "chambre-a-air-10x2-5-black-cat-5pcs",
-  "price_public": "16.95",
+  "price_public": "18.95",
   "available": false,
   "images": [
    "https://cdn.shopify.com/s/files/1/0613/0178/4618/files/8435764421426_principal_2.jpg",
@@ -8173,7 +8199,7 @@
   "title": "Chambre à air 14X2.125 [Ewheel]",
   "handle": "chambre-a-air-14x2-125-ewheel",
   "price_public": "4.95",
-  "available": true,
+  "available": false,
   "images": [
    "https://cdn.shopify.com/s/files/1/0613/0178/4618/files/13524.jpg",
    "https://cdn.shopify.com/s/files/1/0613/0178/4618/files/13525.jpg",
@@ -9275,7 +9301,7 @@
   "sku": "8642-56-IU",
   "title": "Pneu Tubeless 10x2,75-6,5 [Xuancheng]",
   "handle": "pneu-tubeless-10x2-75-6-5-xuancheng",
-  "price_public": "24.95",
+  "price_public": "23.95",
   "available": true,
   "images": [
    "https://cdn.shopify.com/s/files/1/0613/0178/4618/files/12817.jpg",
@@ -10296,7 +10322,7 @@
   "title": "Pneu plein perforé 8x2-5/B30 (Non compatible avec xiaomi)",
   "handle": "pneu-plein-perfore-8x2-5-b30-non-compatible-avec-xiaomi",
   "price_public": "12.95",
-  "available": true,
+  "available": false,
   "images": [
    "https://cdn.shopify.com/s/files/1/0613/0178/4618/files/12899.jpg",
    "https://cdn.shopify.com/s/files/1/0613/0178/4618/files/7427136176073m.jpg",
