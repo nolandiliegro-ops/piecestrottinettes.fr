@@ -1,0 +1,865 @@
+navee-k100 #0 WARN profil
+navee-k100 #1 WARN DOUBLON même image (dHash 0, couleur 0.0) (lot#0)
+navee-k100 #2 WARN DOUBLON même image (dHash 0, couleur 0.0) (lot#0)
+navee-k100 #3 WARN REFUS personne
+navee-k100 #4 WARN REFUS personne
+navee-k100 #5 WARN REFUS personne
+navee-k100 #6 WARN DOUBLON même image (dHash 0, couleur 6.1) (lot#0)
+navee-k100 #7 WARN profil
+navee-k100 #8 WARN DOUBLON même image (dHash 0, couleur 0.0) (lot#7)
+navee-k100 #9 WARN DOUBLON même image (dHash 0, couleur 0.0) (lot#7)
+weped-ssgt #0 WARN DOUBLON même image (dHash 1, couleur 6.6) (0ac8e64e/1792973171360_0.png)
+weped-ssgt #1 WARN DOUBLON même image (dHash 1, couleur 6.6) (0ac8e64e/1792973171360_0.png)
+weped-ssgt #2 WARN DOUBLON même image (dHash 1, couleur 1.1) (0ac8e64e/1792973173073_0.png)
+weped-ssgt #3 WARN DOUBLON même image (dHash 1, couleur 6.6) (0ac8e64e/1792973171360_0.png)
+weped-ssgt #4 WARN DOUBLON même image (dHash 1, couleur 1.1) (0ac8e64e/1792973173073_0.png)
+weped-ssgt #5 FAIL détourage sale / résidu de décor · basse définition
+weped-ssgt #6 WARN DOUBLON même image (dHash 1, couleur 6.6) (0ac8e64e/1792973171360_0.png)
+weped-ssgt #7 WARN DOUBLON même image (dHash 1, couleur 1.1) (0ac8e64e/1792973173073_0.png)
+aprilia-esr2 #0 PASS 3/4 avant ★3/4 propre
+aprilia-esr2 #1 PASS DOUBLON même image (dHash 0, couleur 1.4) (lot#0)
+aprilia-esr2 #2 PASS DOUBLON même image (dHash 0, couleur 0.0) (lot#0)
+aprilia-esr2 #3 ERROR téléchargement vide
+aprilia-esr2 #4 PASS DOUBLON même image (dHash 0, couleur 0.0) (lot#0)
+inmotion-climber #0 PASS 3/4 avant
+inmotion-climber #1 PASS DOUBLON même image (dHash 0, couleur 0.0) (lot#0)
+inmotion-climber #2 PASS DOUBLON même image (dHash 0, couleur 0.0) (lot#0)
+inmotion-climber #3 PASS REFUS personne
+inmotion-climber #4 WARN REFUS personne,autre objet
+inmotion-climber #5 PASS REFUS personne,autre objet
+inmotion-climber #6 PASS REFUS personne
+inmotion-climber #7 PASS profil
+inmotion-climber #8 PASS 3/4 avant
+inmotion-climber #9 PASS profil
+nami-burn-e #0 FAIL détourage sale / résidu de décor
+nami-burn-e #1 PASS 3/4 arriere
+nami-burn-e #2 WARN detail
+nami-burn-e #3 WARN DOUBLON même image (dHash 0, couleur 0.5) (lot#2)
+nami-burn-e #4 PASS 3/4 avant
+nami-burn-e #5 WARN pliee
+nami-burn-e #6 WARN pliee
+nami-burn-e #7 FAIL détourage sale / résidu de décor · basse définition · cadrage serré
+nami-burn-e #8 WARN REFUS trop petite (368 px)
+nami-burn-e #9 WARN detail
+weped-gts #0 PASS DOUBLON même image (dHash 2, couleur 3.8) (534e576b/1792973162338_0.png)
+weped-gts #1 PASS DOUBLON même image (dHash 2, couleur 3.8) (534e576b/1792973162338_0.png)
+weped-gts #2 FAIL élément en plus (logo, badge, téléphone, 2e trottinette) : 4 morceaux
+weped-gts #3 WARN DOUBLON même image (dHash 1, couleur 2.7) (534e576b/1792973160748_0.png)
+weped-gts #4 PASS DOUBLON même image (dHash 2, couleur 3.8) (534e576b/1792973162338_0.png)
+weped-gts #5 FAIL élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux
+weped-gts #6 WARN DOUBLON même image (dHash 1, couleur 2.7) (534e576b/1792973160748_0.png)
+weped-gts #7 WARN DOUBLON même image (dHash 0, couleur 0.0) (534e576b/1792973164259_0.png)
+weped-gts #8 WARN REFUS fantômes 19.3 %,trop petite (90 px)
+weped-gts #9 PASS DOUBLON même image (dHash 2, couleur 3.8) (534e576b/1792973162338_0.png)
+xiaomi-electric-scooter-4-lite #0 PASS profil
+xiaomi-electric-scooter-4-lite #1 PASS DOUBLON même image (dHash 0, couleur 0.0) (lot#0)
+inmotion-rs-jet #0 PASS 3/4 avant
+inmotion-rs-jet #1 PASS DOUBLON même image (dHash 0, couleur 0.0) (lot#0)
+inmotion-rs-jet #2 PASS DOUBLON même image (dHash 0, couleur 0.0) (lot#0)
+inmotion-rs-jet #3 WARN REFUS personne
+inmotion-rs-jet #4 FAIL élément en plus (logo, badge, téléphone, 2e trottinette) : 5 morceaux
+inmotion-rs-jet #5 WARN REFUS personne,autre objet
+inmotion-rs-jet #6 WARN REFUS personne
+inmotion-rs-jet #7 WARN REFUS personne
+inmotion-rs-jet #8 WARN REFUS personne
+inmotion-rs-jet #9 PASS REFUS personne
+beaster-bs77 #0 WARN 3/4 avant
+beaster-bs77 #1 WARN DOUBLON même image (dHash 2, couleur 5.8) (lot#0)
+ninebot-max-g2 #0 WARN DOUBLON même image (dHash 1, couleur 2.1) (e9999bd2/1792972766617_0.png)
+ninebot-max-g2 #1 FAIL élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux
+ninebot-max-g2 #2 PASS 3/4 avant ★3/4 propre
+ninebot-max-g2 #3 PASS DOUBLON même image (dHash 0, couleur 0.0) (lot#2)
+ninebot-max-g2 #4 PASS DOUBLON même image (dHash 0, couleur 0.0) (lot#2)
+ninebot-max-g2 #5 PASS detail
+ninebot-max-g2 #6 WARN detail
+ninebot-max-g2 #7 WARN REFUS autre objet
+ninebot-max-g2 #8 WARN pliee
+ninebot-max-g2 #9 PASS REFUS personne,autre objet
+vsett-11-plus-super #0 PASS profil
+vsett-11-plus-super #1 WARN DOUBLON même image (dHash 0, couleur 3.4) (lot#0)
+vsett-11-plus-super #2 PASS REFUS personne
+vsett-11-plus-super #3 WARN pliee
+vsett-11-plus-super #4 PASS DOUBLON même image (dHash 0, couleur 0.0) (lot#0)
+vsett-11-plus-super #5 PASS REFUS personne
+vsett-11-plus-super #6 WARN DOUBLON même image (dHash 1, couleur 2.8) (lot#3)
+vsett-11-plus-super #7 PASS DOUBLON même image (dHash 0, couleur 1.2) (410169cc/1792973139130_0.png)
+vsett-11-plus-super #8 WARN detail
+vsett-11-plus-super #9 WARN pliee
+kukirin-m4-max #0 PASS 3/4 avant
+kukirin-m4-max #1 PASS DOUBLON même image (dHash 0, couleur 0.0) (lot#0)
+kukirin-m4-max #2 PASS profil
+kukirin-m4-max #3 WARN REFUS personne,autre objet
+kukirin-m4-max #4 WARN 3/4 avant
+kukirin-m4-max #5 WARN detail
+kukirin-m4-max #6 WARN REFUS personne,autre objet,plusieurs trottinettes / vignette
+kukirin-m4-max #7 PASS face
+kukirin-m4-max #8 WARN REFUS personne,autre objet
+kukirin-m4-max #9 PASS DOUBLON même image (dHash 0, couleur 1.7) (lot#0)
+beaster-bs15 #0 PASS DOUBLON même image (dHash 0, couleur 0.0) (57068c87/1792971679145_0.png)
+beaster-bs15 #1 PASS REFUS personne,texte incrusté,plusieurs trottinettes / vignette
+beaster-bs15 #2 WARN 3/4 avant
+beaster-bs15 #3 WARN pliee
+beaster-bs15 #4 PASS 3/4 avant
+beaster-bs15 #5 PASS 3/4 avant
+beaster-bs15 #6 PASS 3/4 avant
+beaster-bs15 #7 FAIL détourage sale / résidu de décor
+beaster-bs15 #8 WARN detail
+beaster-bs15 #9 FAIL détourage sale / résidu de décor · basse définition
+ninebot-e2-plus-e-ii #0 WARN DOUBLON même image (dHash 2, couleur 7.3) (8474d67b/1792972713696_0.png)
+weped-fold-3 #0 PASS profil
+weped-fold-3 #1 FAIL détourage sale / résidu de décor · basse définition · cadrage serré
+weped-fold-3 #2 FAIL détourage sale / résidu de décor · élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux
+weped-fold-3 #3 PASS DOUBLON même image (dHash 1, couleur 3.6) (36074980/1792973155288_0.png)
+weped-fold-3 #4 FAIL détourage sale / résidu de décor
+weped-fold-3 #5 WARN DOUBLON même image (dHash 0, couleur 6.2) (36074980/1792973157745_0.png)
+weped-fold-3 #6 WARN DOUBLON même image (dHash 1, couleur 6.6) (36074980/1792973154009_0.png)
+weped-fold-3 #7 WARN DOUBLON même image (dHash 1, couleur 6.6) (36074980/1792973154009_0.png)
+weped-fold-3 #8 WARN DOUBLON même image (dHash 1, couleur 6.6) (36074980/1792973154009_0.png)
+weped-fold-3 #9 FAIL détourage sale / résidu de décor · cadrage serré
+beaster-diablo #0 WARN DOUBLON même image (dHash 1, couleur 2.6) (dc95da07/1792445419339_0.png)
+beaster-diablo #1 WARN DOUBLON même image (dHash 1, couleur 3.4) (dc95da07/1792445419339_0.png)
+beaster-diablo #2 WARN 3/4 avant
+beaster-diablo #3 WARN DOUBLON même image (dHash 1, couleur 6.8) (lot#2)
+beaster-diablo #4 WARN DOUBLON même image (dHash 2, couleur 6.7) (dc95da07/1792445419339_0.png)
+beaster-diablo #5 WARN DOUBLON même image (dHash 2, couleur 2.2) (dc95da07/1792445428678_0.png)
+beaster-diablo #6 WARN REFUS fantômes 3.2 %,trop petite (293 px)
+beaster-diablo #7 WARN REFUS trop petite (293 px)
+beaster-diablo #8 WARN REFUS trop petite (298 px)
+beaster-diablo #9 WARN REFUS fantômes 4.5 %,trop petite (289 px)
+nami-burn-e-2 #0 FAIL élément en plus (logo, badge, téléphone, 2e trottinette) : 4 morceaux
+nami-burn-e-2 #1 FAIL élément en plus (logo, badge, téléphone, 2e trottinette) : 4 morceaux
+nami-burn-e-2 #2 WARN REFUS trop petite (438 px)
+nami-burn-e-2 #3 FAIL cadrage serré · élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux
+nami-burn-e-2 #4 WARN detail
+nami-burn-e-2 #5 WARN DOUBLON même image (dHash 0, couleur 0.4) (34a19ff9/1792972574579_0.png)
+nami-burn-e-2 #6 WARN detail
+nami-burn-e-2 #7 FAIL détourage sale / résidu de décor · élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux
+nami-burn-e-2 #8 FAIL détourage sale / résidu de décor · cadrage serré · élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux
+nami-burn-e-2 #9 FAIL détourage sale / résidu de décor · cadrage serré
+inokim-light-2-super #0 FAIL détourage sale / résidu de décor
+inokim-light-2-super #1 FAIL détourage sale / résidu de décor
+inokim-light-2-super #2 WARN profil
+inokim-light-2-super #3 WARN REFUS trop petite (460 px)
+inokim-light-2-super #4 FAIL détourage sale / résidu de décor · basse définition
+inokim-light-2-super #5 WARN REFUS trop petite (468 px)
+inokim-light-2-super #6 FAIL détourage sale / résidu de décor · basse définition · cadrage serré
+inokim-light-2-super #7 WARN REFUS trop petite (464 px)
+inokim-light-2-super #8 WARN REFUS trop petite (456 px)
+inokim-mini-2 #0 PASS DOUBLON même image (dHash 2, couleur 1.7) (82545b69/1792972140964_0.png)
+inokim-mini-2 #1 PASS REFUS autre objet
+inokim-mini-2 #2 PASS REFUS autre objet
+inokim-mini-2 #3 PASS REFUS autre objet
+inokim-mini-2 #4 PASS REFUS 3 débris
+inokim-mini-2 #5 PASS 3/4 avant ★3/4 propre
+inokim-mini-2 #6 FAIL détourage sale / résidu de décor · cadrage serré
+inokim-mini-2 #7 FAIL détourage sale / résidu de décor · cadrage serré
+inokim-mini-2 #8 WARN pliee
+inokim-mini-2 #9 PASS detail
+ninebot-f3-e #0 PASS profil
+ninebot-f3-e #1 PASS DOUBLON même image (dHash 0, couleur 0.0) (lot#0)
+ninebot-f3-e #2 WARN 3/4 avant
+ninebot-f3-e #3 WARN 3/4 avant
+ninebot-f3-e #4 WARN REFUS personne,autre objet
+ninebot-f3-e #5 FAIL détourage sale / résidu de décor · basse définition · élément en plus (logo, badge, téléphone, 2e trottinette) : 5 morceaux
+ninebot-f3-e #6 FAIL détourage sale / résidu de décor · basse définition · élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux
+ninebot-f3-e #7 FAIL détourage sale / résidu de décor · basse définition · cadrage serré
+ninebot-f3-e #8 FAIL détourage sale / résidu de décor · basse définition · élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux
+ninebot-f3-e #9 FAIL détourage sale / résidu de décor · basse définition
+nami-stellar #0 FAIL détourage sale / résidu de décor
+nami-stellar #1 PASS 3/4 avant
+nami-stellar #2 PASS DOUBLON même image (dHash 0, couleur 0.9) (5fe75f29/1792972587739_0.png)
+nami-stellar #3 PASS DOUBLON même image (dHash 0, couleur 0.9) (5fe75f29/1792972587739_0.png)
+nami-stellar #4 PASS DOUBLON même image (dHash 0, couleur 0.9) (5fe75f29/1792972587739_0.png)
+nami-stellar #5 PASS 3/4 avant ★3/4 propre
+nami-stellar #6 PASS DOUBLON même image (dHash 1, couleur 0.8) (5fe75f29/1792972589832_0.png)
+nami-stellar #7 PASS DOUBLON même image (dHash 0, couleur 1.9) (5fe75f29/1792972591584_0.png)
+nami-stellar #8 WARN detail
+nami-stellar #9 WARN detail
+xiaomi-electric-scooter-6-pro #0 PASS 3/4 avant ★3/4 propre
+xiaomi-electric-scooter-6-pro #1 PASS DOUBLON même image (dHash 0, couleur 0.0) (lot#0)
+xiaomi-electric-scooter-6-pro #2 PASS profil
+xiaomi-electric-scooter-6-pro #3 PASS 3/4 avant ★3/4 propre
+xiaomi-electric-scooter-6-pro #4 WARN DOUBLON même image (dHash 2, couleur 3.3) (lot#3)
+xiaomi-electric-scooter-6-pro #5 WARN REFUS personne,autre objet
+xiaomi-electric-scooter-6-pro #6 WARN face
+xiaomi-electric-scooter-6-pro #7 WARN arriere
+xiaomi-electric-scooter-6-pro #8 PASS DOUBLON même image (dHash 1, couleur 6.9) (381b3df5/1792973229064_0.png)
+xiaomi-electric-scooter-6-pro #9 PASS profil
+laotie-es19 #0 PASS DOUBLON même image (dHash 1, couleur 2.4) (ee85a4e4/1792872128640_0.png)
+laotie-es19 #1 PASS DOUBLON même image (dHash 1, couleur 7.8) (ee85a4e4/1792872128640_0.png)
+punk-rider-pro #0 PASS DOUBLON même image (dHash 0, couleur 0.3) (3e156069/1792872288439_0.png)
+punk-rider-pro #1 PASS DOUBLON même image (dHash 0, couleur 0.3) (3e156069/1792872288439_0.png)
+punk-rider-pro #2 PASS DOUBLON même image (dHash 0, couleur 0.3) (3e156069/1792872288439_0.png)
+punk-rider-pro #3 WARN REFUS personne,autre objet
+punk-rider-pro #4 WARN REFUS personne
+punk-rider-pro #5 WARN REFUS personne,autre objet
+punk-rider-pro #6 WARN REFUS 2 débris,basse définition (623 px)
+punk-rider-pro #7 FAIL détourage sale / résidu de décor · couleurs vives 31 % (visuel marketing ?)
+punk-rider-pro #8 WARN REFUS personne,autre objet
+punk-rider-pro #9 WARN REFUS personne,autre objet
+beaster-bs65 #0 ERROR Input buffer contains unsupported image format
+xiaomi-electric-scooter-6-ultra #0 PASS profil
+yeep-me-100a-start #0 FAIL détourage sale / résidu de décor · élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux · couleurs vives 32 % (visuel marketing ?)
+urbanglide-ecross-pro-boost-2 #0 PASS DOUBLON même image (dHash 1, couleur 2.0) (4f08cfd5/1792450381656_0.png)
+urbanglide-ecross-pro-boost-2 #1 WARN REFUS fantômes 17.9 %,trop petite (150 px)
+urbanglide-ecross-pro-boost-2 #2 WARN REFUS fantômes 17.9 %,trop petite (150 px)
+vsett-8 #0 PASS 3/4 avant ★3/4 propre
+vsett-8 #1 FAIL détourage sale / résidu de décor · cadrage serré
+vsett-8 #2 FAIL détourage sale / résidu de décor · cadrage serré
+kugoo-g3 #0 PASS profil
+kugoo-g3 #1 PASS DOUBLON même image (dHash 0, couleur 0.0) (lot#0)
+kugoo-g3 #2 PASS profil
+kugoo-g3 #3 PASS DOUBLON même image (dHash 3, couleur 4.0) (c6531036/1792442708612_0.png)
+kugoo-g3 #4 PASS 3/4 avant ★3/4 propre
+kugoo-g3 #5 WARN 3/4 arriere
+kugoo-g3 #6 PASS profil
+kugoo-g3 #7 WARN detail
+kugoo-g3 #8 WARN 3/4 arriere ★3/4 propre
+kugoo-g3 #9 PASS 3/4 arriere ★3/4 propre
+speedway-mini-4-pro-lite #0 WARN DOUBLON même image (dHash 1, couleur 2.0) (c2904302/1792973005492_0.png)
+speedway-mini-4-pro-lite #1 WARN DOUBLON même image (dHash 1, couleur 2.0) (c2904302/1792973005492_0.png)
+speedway-mini-4-pro-lite #2 WARN DOUBLON même image (dHash 1, couleur 2.0) (c2904302/1792973005492_0.png)
+speedway-mini-4-pro-lite #3 WARN DOUBLON même image (dHash 2, couleur 5.0) (c2904302/1792973006876_0.png)
+speedway-mini-4-pro-lite #4 WARN pliee
+speedway-mini-4-pro-lite #5 WARN face
+speedway-mini-4-pro-lite #6 WARN detail
+speedway-mini-4-pro-lite #7 FAIL image vide
+speedway-mini-4-pro-lite #8 WARN DOUBLON même image (dHash 1, couleur 2.0) (c2904302/1792973005492_0.png)
+speedway-mini-4-pro-lite #9 WARN DOUBLON même image (dHash 2, couleur 5.0) (c2904302/1792973006876_0.png)
+kukirin-t4 #0 WARN DOUBLON même image (dHash 0, couleur 1.0) (09bd2c03/1792972486215_0.png)
+kukirin-t4 #1 WARN DOUBLON même image (dHash 0, couleur 1.0) (09bd2c03/1792972486215_0.png)
+kukirin-t4 #2 WARN DOUBLON même image (dHash 0, couleur 1.0) (09bd2c03/1792972486215_0.png)
+kukirin-t4 #3 PASS 3/4 avant
+kukirin-t4 #4 PASS DOUBLON même image (dHash 0, couleur 1.2) (09bd2c03/1792972487833_0.png)
+kukirin-t4 #5 WARN DOUBLON même image (dHash 1, couleur 0.6) (09bd2c03/1792972489734_0.png)
+kukirin-t4 #6 WARN detail
+kukirin-t4 #7 WARN detail
+kukirin-t4 #8 WARN pliee
+kukirin-t4 #9 PASS 3/4 avant
+dualtron-togo-plus #0 FAIL détourage sale / résidu de décor · basse définition
+dualtron-togo-plus #1 FAIL détourage sale / résidu de décor · basse définition
+dualtron-togo-plus #2 FAIL détourage sale / résidu de décor · basse définition
+dualtron-togo-plus #3 FAIL détourage sale / résidu de décor
+dualtron-togo-plus #4 FAIL détourage sale / résidu de décor · basse définition
+dualtron-togo-plus #5 FAIL détourage sale / résidu de décor · basse définition
+dualtron-togo-plus #6 FAIL détourage sale / résidu de décor · cadrage serré
+dualtron-togo-plus #7 WARN 3/4 avant
+dualtron-togo-plus #8 PASS 3/4 avant ★3/4 propre
+dualtron-togo-plus #9 PASS 3/4 avant
+kingsong-s2-pro #0 WARN 3/4 avant
+kingsong-s2-pro #1 WARN 3/4 avant
+kingsong-s2-pro #2 PASS DOUBLON même image (dHash 0, couleur 0.0) (4534f403/1792972391651_0.png)
+kingsong-s2-pro #3 WARN pliee
+kingsong-s2-pro #4 WARN DOUBLON même image (dHash 0, couleur 1.5) (4534f403/1792972393455_0.png)
+kingsong-s2-pro #5 WARN detail
+kingsong-s2-pro #6 FAIL détourage sale / résidu de décor · cadrage serré
+kingsong-s2-pro #7 WARN 3/4 avant
+kingsong-s2-pro #8 WARN DOUBLON même image (dHash 0, couleur 4.0) (4534f403/1792972390447_0.png)
+kingsong-s2-pro #9 WARN DOUBLON même image (dHash 0, couleur 4.2) (4534f403/1792972390447_0.png)
+joyor-s10-s-z #0 PASS DOUBLON même image (dHash 0, couleur 0.4) (d48d43f8/1792972263312_0.png)
+joyor-s10-s-z #1 PASS DOUBLON même image (dHash 0, couleur 0.4) (d48d43f8/1792972263312_0.png)
+joyor-s10-s-z #2 PASS DOUBLON même image (dHash 0, couleur 0.4) (d48d43f8/1792972263312_0.png)
+joyor-s10-s-z #3 WARN DOUBLON même image (dHash 0, couleur 0.7) (d48d43f8/1792972265524_0.png)
+joyor-s10-s-z #4 PASS REFUS plusieurs trottinettes / vignette
+joyor-s10-s-z #5 PASS 3/4 avant ★3/4 propre
+joyor-s10-s-z #6 PASS 3/4 avant ★3/4 propre
+joyor-s10-s-z #7 PASS 3/4 arriere ★3/4 propre
+joyor-s10-s-z #8 WARN detail
+joyor-s10-s-z #9 WARN detail
+kaabo-wolf-king-gt-pro #0 PASS 3/4 avant ★3/4 propre
+kaabo-wolf-king-gt-pro #1 PASS profil
+kaabo-wolf-king-gt-pro #2 PASS 3/4 avant ★3/4 propre
+kaabo-wolf-king-gt-pro #3 PASS 3/4 avant ★3/4 propre
+kaabo-wolf-king-gt-pro #4 PASS 3/4 arriere ★3/4 propre
+kaabo-wolf-king-gt-pro #5 FAIL détourage sale / résidu de décor · petit élément détaché (2 morceaux)
+kaabo-wolf-king-gt-pro #6 FAIL détourage sale / résidu de décor · petit élément détaché (2 morceaux)
+kaabo-wolf-king-gt-pro #7 WARN detail
+kaabo-wolf-king-gt-pro #8 WARN 3/4 avant
+kaabo-wolf-king-gt-pro #9 FAIL détourage sale / résidu de décor · cadrage serré
+joyor-s8-s #0 WARN REFUS trop petite (481 px)
+dualtron-alien #0 ERROR Input buffer contains unsupported image format
+dualtron-alien #1 PASS DOUBLON même image (dHash 1, couleur 4.7) (cc912be3/1792971753657_0.png)
+dualtron-alien #2 PASS 3/4 avant ★3/4 propre
+dualtron-alien #3 PASS DOUBLON même image (dHash 0, couleur 0.0) (lot#2)
+dualtron-alien #4 PASS DOUBLON même image (dHash 0, couleur 0.0) (lot#2)
+dualtron-alien #5 PASS 3/4 avant ★3/4 propre
+dualtron-alien #6 PASS profil
+dualtron-alien #7 WARN DOUBLON même image (dHash 2, couleur 1.4) (cc912be3/1792971759464_0.png)
+dualtron-alien #8 WARN detail
+dualtron-alien #9 WARN detail
+dualtron-victor-luxury-plus #0 PASS DOUBLON même image (dHash 0, couleur 2.7) (28b5985e/1792971839042_0.png)
+dualtron-victor-luxury-plus #1 PASS DOUBLON même image (dHash 0, couleur 2.6) (28b5985e/1792971839042_0.png)
+dualtron-victor-luxury-plus #2 PASS DOUBLON même image (dHash 0, couleur 2.7) (28b5985e/1792971839042_0.png)
+dualtron-victor-luxury-plus #3 FAIL élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux
+dualtron-victor-luxury-plus #4 FAIL détourage sale / résidu de décor · élément en plus (logo, badge, téléphone, 2e trottinette) : 7 morceaux
+dualtron-victor-luxury-plus #5 FAIL élément en plus (logo, badge, téléphone, 2e trottinette) : 8 morceaux
+dualtron-victor-luxury-plus #6 FAIL élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux
+dualtron-victor-luxury-plus #7 FAIL détourage sale / résidu de décor · élément en plus (logo, badge, téléphone, 2e trottinette) : 8 morceaux
+dualtron-victor-luxury-plus #8 FAIL détourage sale / résidu de décor · élément en plus (logo, badge, téléphone, 2e trottinette) : 6 morceaux
+dualtron-victor-luxury-plus #9 FAIL détourage sale / résidu de décor · élément en plus (logo, badge, téléphone, 2e trottinette) : 5 morceaux
+dualtron-spider-2 #0 PASS DOUBLON même image (dHash 1, couleur 5.3) (dc9d453c/1792971785808_0.png)
+dualtron-spider-2 #1 WARN DOUBLON même image (dHash 1, couleur 3.1) (dc9d453c/1792971785808_0.png)
+dualtron-spider-2 #2 PASS DOUBLON même image (dHash 1, couleur 5.3) (dc9d453c/1792971785808_0.png)
+dualtron-spider-2 #3 PASS profil
+dualtron-spider-2 #4 FAIL détourage sale / résidu de décor · cadrage serré
+dualtron-spider-2 #5 WARN detail
+dualtron-spider-2 #6 WARN detail
+dualtron-spider-2 #7 PASS DOUBLON même image (dHash 1, couleur 1.2) (dc9d453c/1792971797963_0.png)
+dualtron-spider-2 #8 WARN 3/4 avant
+dualtron-spider-2 #9 WARN DOUBLON même image (dHash 0, couleur 0.0) (lot#8)
+teverun-fighter-supreme-ultra #0 FAIL élément en plus (logo, badge, téléphone, 2e trottinette) : 10 morceaux
+teverun-fighter-supreme-ultra #1 FAIL élément en plus (logo, badge, téléphone, 2e trottinette) : 10 morceaux
+teverun-fighter-supreme-ultra #2 FAIL élément en plus (logo, badge, téléphone, 2e trottinette) : 10 morceaux
+teverun-fighter-supreme-ultra #3 PASS DOUBLON même image (dHash 0, couleur 1.6) (b1bff9ea/1792444313440_0.png)
+teverun-fighter-supreme-ultra #4 WARN 3/4 avant
+teverun-fighter-supreme-ultra #5 PASS detail
+teverun-fighter-supreme-ultra #6 WARN DOUBLON même image (dHash 1, couleur 1.4) (b1bff9ea/1792867866679_0.png)
+teverun-fighter-supreme-ultra #7 FAIL détourage sale / résidu de décor · cadrage serré
+teverun-fighter-supreme-ultra #8 WARN REFUS autre objet
+teverun-fighter-supreme-ultra #9 FAIL détourage sale / résidu de décor · élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux
+dualtron-spider-max #0 WARN 3/4 avant
+dualtron-spider-max #1 WARN 3/4 avant
+dualtron-spider-max #2 PASS face
+dualtron-spider-max #3 WARN REFUS fantômes 5.1 %,trop petite (227 px)
+dualtron-spider-max #4 PASS DOUBLON même image (dHash 0, couleur 5.3) (lot#0)
+dualtron-spider-max #5 PASS 3/4 avant ★3/4 propre
+dualtron-spider-max #6 PASS 3/4 avant ★3/4 propre
+dualtron-spider-max #7 PASS DOUBLON même image (dHash 1, couleur 7.6) (lot#2)
+dualtron-spider-max #8 PASS 3/4 avant ★3/4 propre
+dualtron-spider-max #9 PASS profil
+dualtron-togo #0 PASS 3/4 avant ★3/4 propre
+dualtron-togo #1 WARN DOUBLON même image (dHash 1, couleur 2.8) (lot#0)
+dualtron-togo #2 PASS DOUBLON même image (dHash 0, couleur 0.0) (lot#0)
+dualtron-togo #3 FAIL élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux
+dualtron-togo #4 FAIL élément en plus (logo, badge, téléphone, 2e trottinette) : 7 morceaux
+dualtron-togo #5 FAIL élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux
+dualtron-togo #6 FAIL détourage sale / résidu de décor · élément en plus (logo, badge, téléphone, 2e trottinette) : 7 morceaux
+dualtron-togo #7 FAIL détourage sale / résidu de décor · élément en plus (logo, badge, téléphone, 2e trottinette) : 6 morceaux
+dualtron-togo #8 FAIL détourage sale / résidu de décor · cadrage serré · élément en plus (logo, badge, téléphone, 2e trottinette) : 4 morceaux
+dualtron-togo #9 PASS 3/4 avant ★3/4 propre
+e-twow-booster-es #0 WARN DOUBLON même image (dHash 1, couleur 4.1) (ff901321/1792971886009_0.png)
+e-twow-booster-es #1 WARN DOUBLON même image (dHash 2, couleur 6.2) (ff901321/1792971886009_0.png)
+e-twow-booster-es #2 WARN DOUBLON même image (dHash 1, couleur 4.1) (ff901321/1792971886009_0.png)
+e-twow-booster-es #3 WARN DOUBLON même image (dHash 1, couleur 4.1) (ff901321/1792971886009_0.png)
+e-twow-booster-es #4 WARN DOUBLON même image (dHash 2, couleur 2.4) (ff901321/1792971890255_0.png)
+e-twow-booster-es #5 WARN REFUS trop petite (398 px)
+e-twow-booster-es #6 FAIL détourage sale / résidu de décor · basse définition
+e-twow-booster-es #7 PASS REFUS trop petite (476 px)
+e-twow-booster-es #8 WARN REFUS trop petite (476 px)
+e-twow-booster-es #9 WARN REFUS trop petite (476 px)
+ninebot-f2-pro-e-ii #0 WARN profil
+ninebot-f2-pro-e-ii #1 WARN DOUBLON même image (dHash 0, couleur 0.0) (lot#0)
+ninebot-f2-pro-e-ii #2 WARN REFUS trop petite (433 px)
+ninebot-f2-pro-e-ii #3 WARN REFUS trop petite (404 px)
+ninebot-f2-pro-e-ii #4 FAIL détourage sale / résidu de décor
+ninebot-f2-pro-e-ii #5 FAIL détourage sale / résidu de décor · cadrage serré
+ninebot-f2-pro-e-ii #6 PASS REFUS personne,autre objet
+ninebot-f2-pro-e-ii #7 PASS REFUS personne,autre objet
+ninebot-f2-pro-e-ii #8 WARN REFUS trop petite (412 px)
+ninebot-f2-pro-e-ii #9 WARN REFUS trop petite (412 px)
+weped-fold-11 #0 PASS DOUBLON même image (dHash 0, couleur 0.6) (6d79b9a7/1792444668530_0.png)
+weped-fold-11 #1 PASS DOUBLON même image (dHash 0, couleur 0.6) (6d79b9a7/1792444668530_0.png)
+weped-fold-11 #2 PASS DOUBLON même image (dHash 0, couleur 0.6) (6d79b9a7/1792444668530_0.png)
+weped-fold-11 #3 WARN REFUS fantômes 15.0 %,trop petite (93 px)
+weped-fold-11 #4 PASS DOUBLON même image (dHash 0, couleur 0.6) (6d79b9a7/1792444668530_0.png)
+weped-fold-11 #5 PASS DOUBLON même image (dHash 2, couleur 5.4) (6d79b9a7/1792444670452_0.png)
+weped-fold-11 #6 PASS DOUBLON même image (dHash 6, couleur 4.6) (6d79b9a7/1792444670452_0.png)
+weped-fold-11 #7 PASS DOUBLON même image (dHash 2, couleur 5.4) (6d79b9a7/1792444670452_0.png)
+weped-fold-11 #8 FAIL détourage sale / résidu de décor · basse définition
+weped-fold-11 #9 PASS DOUBLON même image (dHash 2, couleur 5.4) (6d79b9a7/1792444670452_0.png)
+e-twow-booster-v #0 PASS 3/4 avant ★3/4 propre
+e-twow-booster-v #1 PASS 3/4 avant ★3/4 propre
+e-twow-booster-v #2 PASS DOUBLON même image (dHash 3, couleur 0.9) (lot#1)
+e-twow-booster-v #3 PASS DOUBLON même image (dHash 0, couleur 0.0) (lot#1)
+e-twow-booster-v #4 FAIL détourage sale / résidu de décor
+e-twow-booster-v #5 WARN detail
+e-twow-booster-v #6 WARN pliee
+e-twow-booster-v #7 WARN REFUS plusieurs trottinettes / vignette
+e-twow-booster-v #8 PASS REFUS plusieurs trottinettes / vignette
+e-twow-booster-v #9 PASS DOUBLON même image (dHash 0, couleur 0.0) (lot#1)
+ninebot-e3-pro-e #0 PASS profil
+ninebot-e3-pro-e #1 PASS DOUBLON même image (dHash 0, couleur 0.0) (lot#0)
+ninebot-e3-pro-e #2 WARN DOUBLON même image (dHash 0, couleur 1.1) (3d1d09b2/1792972725368_0.png)
+ninebot-e3-pro-e #3 WARN 3/4 avant
+ninebot-e3-pro-e #4 WARN REFUS personne
+ninebot-e3-pro-e #5 FAIL détourage sale / résidu de décor · élément en plus (logo, badge, téléphone, 2e trottinette) : 7 morceaux
+ninebot-e3-pro-e #6 FAIL détourage sale / résidu de décor
+ninebot-e3-pro-e #7 FAIL élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux
+ninebot-e3-pro-e #8 PASS dessus
+ninebot-e3-pro-e #9 FAIL détourage sale / résidu de décor · élément en plus (logo, badge, téléphone, 2e trottinette) : 4 morceaux
+ninebot-f2-e-ii #0 WARN profil
+mi-3 #0 FAIL détourage sale / résidu de décor
+mi-3 #1 FAIL détourage sale / résidu de décor
+mi-3 #2 FAIL détourage sale / résidu de décor
+mi-3 #3 PASS 3/4 avant ★3/4 propre
+ninebot-max-g3-pro-e #0 PASS DOUBLON même image (dHash 0, couleur 0.2) (2dc03e41/1792972776461_0.png)
+ninebot-max-g3-pro-e #1 PASS DOUBLON même image (dHash 0, couleur 0.2) (2dc03e41/1792972776461_0.png)
+ninebot-max-g3-pro-e #2 PASS 3/4 avant
+ninebot-max-g3-pro-e #3 PASS 3/4 arriere ★3/4 propre
+ninebot-max-g3-pro-e #4 PASS DOUBLON même image (dHash 0, couleur 0.9) (2dc03e41/1792972778002_0.png)
+ninebot-max-g3-pro-e #5 PASS REFUS personne
+ninebot-max-g3-pro-e #6 FAIL détourage sale / résidu de décor · cadrage serré
+ninebot-max-g3-pro-e #7 FAIL détourage sale / résidu de décor · élément en plus (logo, badge, téléphone, 2e trottinette) : 4 morceaux
+ninebot-max-g3-pro-e #8 FAIL détourage sale / résidu de décor
+ninebot-max-g3-pro-e #9 WARN detail
+segway-gt3-pro #0 WARN DOUBLON même image (dHash 1, couleur 1.6) (a7786b6d/1792972902412_0.png)
+segway-gt3-pro #1 FAIL détourage sale / résidu de décor · basse définition · cadrage serré
+segway-gt3-pro #2 PASS DOUBLON même image (dHash 0, couleur 1.6) (a7786b6d/1792972903759_0.png)
+segway-gt3-pro #3 PASS DOUBLON même image (dHash 0, couleur 1.7) (a7786b6d/1792972903759_0.png)
+segway-gt3-pro #4 PASS DOUBLON même image (dHash 0, couleur 1.6) (a7786b6d/1792972903759_0.png)
+segway-gt3-pro #5 FAIL élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux
+segway-gt3-pro #6 FAIL détourage sale / résidu de décor · élément en plus (logo, badge, téléphone, 2e trottinette) : 8 morceaux
+segway-gt3-pro #7 FAIL élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux
+segway-gt3-pro #8 FAIL détourage sale / résidu de décor · élément en plus (logo, badge, téléphone, 2e trottinette) : 7 morceaux
+segway-gt3-pro #9 PASS DOUBLON même image (dHash 1, couleur 0.8) (a7786b6d/1792972907735_0.png)
+segway-gt3 #0 WARN 3/4 avant
+segway-gt3 #1 WARN DOUBLON même image (dHash 2, couleur 2.4) (29b6ca48/1792972893670_0.png)
+segway-gt3 #2 WARN DOUBLON même image (dHash 2, couleur 2.4) (29b6ca48/1792972893670_0.png)
+segway-gt3 #3 WARN DOUBLON même image (dHash 0, couleur 1.5) (lot#0)
+segway-gt3 #4 WARN 3/4 avant
+segway-gt3 #5 PASS REFUS personne,autre objet
+segway-gt3 #6 PASS REFUS personne
+segway-gt3 #7 WARN REFUS personne
+segway-gt3 #8 PASS DOUBLON même image (dHash 1, couleur 2.4) (29b6ca48/1792972893670_0.png)
+segway-gt3 #9 PASS 3/4 avant ★3/4 propre
+micro-explorer #0 WARN DOUBLON même image (dHash 2, couleur 5.0) (197bd323/1792443048324_0.png)
+dualtron-popular #0 WARN DOUBLON même image (dHash 2, couleur 1.2) (99558ff6/1792445787451_0.png)
+dualtron-popular #1 WARN DOUBLON même image (dHash 0, couleur 4.8) (99558ff6/1792445787451_0.png)
+dualtron-popular #2 PASS 3/4 avant ★3/4 propre
+dualtron-popular #3 PASS DOUBLON même image (dHash 2, couleur 4.2) (lot#2)
+dualtron-popular #4 PASS DOUBLON même image (dHash 0, couleur 0.0) (lot#2)
+dualtron-popular #5 PASS profil
+dualtron-popular #6 PASS 3/4 arriere ★3/4 propre
+dualtron-popular #7 PASS detail
+dualtron-popular #8 FAIL détourage sale / résidu de décor · cadrage serré
+dualtron-popular #9 FAIL détourage sale / résidu de décor · basse définition · cadrage serré · élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux
+segway-p65 #0 WARN DOUBLON même image (dHash 1, couleur 6.7) (6b895003/1792972918109_0.png)
+hikerboy-brio #0 PASS DOUBLON même image (dHash 3, couleur 5.1) (f2f94f3d/1792972037472_0.png)
+hikerboy-brio #1 PASS 3/4 avant
+hikerboy-brio #2 PASS DOUBLON même image (dHash 0, couleur 0.0) (lot#1)
+hikerboy-brio #3 WARN pliee
+hikerboy-brio #4 FAIL détourage sale / résidu de décor
+hikerboy-brio #5 FAIL élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux
+hikerboy-brio #6 WARN detail
+hikerboy-brio #7 PASS DOUBLON même image (dHash 6, couleur 4.3) (f2f94f3d/1792972046269_0.png)
+hikerboy-brio #8 FAIL détourage sale / résidu de décor · élément en plus (logo, badge, téléphone, 2e trottinette) : 4 morceaux
+thunder #0 PASS 3/4 avant ★3/4 propre
+thunder #1 WARN 3/4 avant
+thunder #2 WARN DOUBLON même image (dHash 0, couleur 0.0) (lot#1)
+thunder #3 FAIL détourage sale / résidu de décor · élément en plus (logo, badge, téléphone, 2e trottinette) : 5 morceaux
+thunder #4 WARN REFUS trop petite (385 px)
+thunder #5 WARN DOUBLON même image (dHash 0, couleur 0.0) (lot#1)
+thunder #6 FAIL détourage sale / résidu de décor · élément en plus (logo, badge, téléphone, 2e trottinette) : 5 morceaux
+thunder #7 WARN REFUS trop petite (385 px)
+thunder #8 FAIL détourage sale / résidu de décor · basse définition · cadrage serré
+thunder #9 ERROR téléchargement vide
+iscooter-ix7-pro #0 FAIL élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux
+iscooter-ix7-pro #1 FAIL élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux
+iscooter-ix7-pro #2 FAIL détourage sale / résidu de décor · élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux
+iscooter-ix7-pro #3 FAIL élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux
+iscooter-ix7-pro #4 WARN DOUBLON même image (dHash 1, couleur 1.8) (18a6056f/1792447043335_0.png)
+iscooter-ix7-pro #5 PASS REFUS personne
+iscooter-ix7-pro #6 WARN detail
+iscooter-ix7-pro #7 WARN 3/4 avant
+iscooter-ix7-pro #8 PASS profil
+iscooter-ix7-pro #9 PASS pliee
+weped-ss-t #0 PASS DOUBLON même image (dHash 1, couleur 0.8) (8a3e4dc9/1792973168954_0.png)
+weped-ss-t #1 PASS DOUBLON même image (dHash 1, couleur 0.8) (8a3e4dc9/1792973168954_0.png)
+weped-ss-t #2 PASS DOUBLON même image (dHash 1, couleur 3.3) (8a3e4dc9/1792973168954_0.png)
+weped-ss-t #3 PASS DOUBLON même image (dHash 1, couleur 0.8) (8a3e4dc9/1792973168954_0.png)
+weped-ss-t #4 PASS DOUBLON même image (dHash 0, couleur 6.4) (8a3e4dc9/1792973168954_0.png)
+weped-ss-t #5 WARN REFUS fantômes 19.9 %,trop petite (85 px)
+weped-ss-t #6 PASS DOUBLON même image (dHash 1, couleur 0.8) (8a3e4dc9/1792973168954_0.png)
+weped-ss-t #7 PASS DOUBLON même image (dHash 0, couleur 6.4) (8a3e4dc9/1792973168954_0.png)
+urbanglide-all-road-5 #0 PASS DOUBLON même image (dHash 0, couleur 2.7) (0532b4a7/1792973060203_0.png)
+urbanglide-all-road-5 #1 PASS 3/4 avant
+urbanglide-all-road-5 #2 PASS DOUBLON même image (dHash 0, couleur 3.4) (lot#1)
+urbanglide-all-road-5 #3 WARN REFUS fantômes 3.3 %,trop petite (233 px)
+oxelo-sd500e #0 ERROR téléchargement vide
+urbanglide-all-road-6-pro #0 PASS DOUBLON même image (dHash 0, couleur 0.0) (86c2c080/1792973075106_0.png)
+urbanglide-all-road-6-pro #1 PASS profil
+urbanglide-all-road-6-pro #2 PASS profil
+urbanglide-all-road-6-pro #3 PASS DOUBLON même image (dHash 2, couleur 3.2) (lot#1)
+urbanglide-all-road-6-pro #4 WARN DOUBLON même image (dHash 1, couleur 5.7) (lot#1)
+urbanglide-all-road-6-pro #5 PASS DOUBLON même image (dHash 4, couleur 5.9) (86c2c080/1792973073779_0.png)
+urbanglide-all-road-6-pro #6 PASS DOUBLON même image (dHash 0, couleur 1.3) (lot#2)
+urbanglide-all-road-6-pro #7 PASS arriere
+urbanglide-all-road-6-pro #8 PASS 3/4 avant
+urbanglide-all-road-6-pro #9 PASS 3/4 arriere
+urbanglide-ecross-duo #0 PASS DOUBLON même image (dHash 0, couleur 0.0) (fb016b7c/1792973083502_0.png)
+ninebot-e2 #0 PASS profil
+ninebot-e2 #1 PASS DOUBLON même image (dHash 5, couleur 7.6) (7f5fd8f4/1792972707047_0.png)
+ninebot-e2 #2 PASS DOUBLON même image (dHash 5, couleur 7.6) (7f5fd8f4/1792972707047_0.png)
+ninebot-e2 #3 PASS DOUBLON même image (dHash 5, couleur 7.6) (7f5fd8f4/1792972707047_0.png)
+ninebot-e2 #4 PASS DOUBLON même image (dHash 5, couleur 7.6) (7f5fd8f4/1792972707047_0.png)
+ninebot-e2 #5 FAIL détourage sale / résidu de décor · basse définition
+ninebot-e2 #6 FAIL détourage sale / résidu de décor · basse définition · cadrage serré
+ninebot-e2 #7 FAIL détourage sale / résidu de décor · basse définition · élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux · produit minuscule dans le cadre
+ninebot-e2 #8 FAIL cadrage serré · élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux
+inmotion-air #0 PASS 3/4 avant ★3/4 propre
+inmotion-air #1 WARN DOUBLON même image (dHash 1, couleur 4.7) (lot#0)
+inmotion-air #2 PASS DOUBLON même image (dHash 0, couleur 0.0) (lot#0)
+inmotion-air #3 FAIL élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux
+inmotion-air #4 FAIL détourage sale / résidu de décor · élément en plus (logo, badge, téléphone, 2e trottinette) : 9 morceaux
+inmotion-air #5 FAIL élément en plus (logo, badge, téléphone, 2e trottinette) : 6 morceaux
+inmotion-air #6 FAIL détourage sale / résidu de décor · élément en plus (logo, badge, téléphone, 2e trottinette) : 7 morceaux
+inmotion-air #7 PASS detail
+inmotion-air #8 PASS profil
+inmotion-air #9 WARN pliee
+e-twow-tanktorq-tk3 #0 PASS 3/4 avant ★3/4 propre
+e-twow-tanktorq-tk3 #1 PASS 3/4 avant
+e-twow-tanktorq-tk3 #2 PASS DOUBLON même image (dHash 0, couleur 1.4) (lot#0)
+e-twow-tanktorq-tk3 #3 PASS DOUBLON même image (dHash 0, couleur 0.0) (lot#0)
+e-twow-tanktorq-tk3 #4 FAIL élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux
+e-twow-tanktorq-tk3 #5 FAIL cadrage serré · élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux
+e-twow-tanktorq-tk3 #6 PASS DOUBLON même image (dHash 0, couleur 0.0) (lot#0)
+e-twow-tanktorq-tk3 #7 PASS 3/4 avant ★3/4 propre
+e-twow-tanktorq-tk3 #8 FAIL élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux
+e-twow-tanktorq-tk5 #0 WARN REFUS trop petite (401 px)
+e-twow-tanktorq-tk5 #1 WARN REFUS trop petite (473 px)
+e-twow-tanktorq-tk5 #2 WARN REFUS trop petite (465 px)
+e-twow-tanktorq-tk5 #3 WARN REFUS trop petite (473 px)
+e-twow-tanktorq-tk5 #4 WARN REFUS trop petite (473 px)
+e-twow-tanktorq-tk5 #5 PASS DOUBLON même image (dHash 2, couleur 1.4) (7da208d8/1792441526594_0.png)
+e-twow-tanktorq-tk5 #6 PASS 3/4 avant
+e-twow-tanktorq-tk5 #7 PASS REFUS trop petite (473 px)
+e-twow-tanktorq-tk5 #8 WARN REFUS trop petite (473 px)
+e-twow-tanktorq-tk5 #9 WARN DOUBLON même image (dHash 0, couleur 7.4) (7da208d8/1792441519757_0.png)
+niu-kqi-100f #0 PASS DOUBLON même image (dHash 0, couleur 3.6) (53e96826/1792448982180_0.png)
+niu-kqi-100f #1 FAIL élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux
+niu-kqi-100f #2 PASS DOUBLON même image (dHash 2, couleur 3.6) (53e96826/1792448982180_0.png)
+niu-kqi-100f #3 PASS DOUBLON même image (dHash 2, couleur 3.8) (53e96826/1792448982180_0.png)
+niu-kqi-100f #4 FAIL élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux
+niu-kqi-100f #5 PASS profil
+niu-kqi-100f #6 PASS 3/4 avant ★3/4 propre
+niu-kqi-100f #7 PASS profil
+niu-kqi-100f #8 PASS DOUBLON même image (dHash 3, couleur 6.2) (53e96826/1792867699316_0.png)
+niu-kqi-100f #9 PASS DOUBLON même image (dHash 0, couleur 3.6) (53e96826/1792448982180_0.png)
+kugoo-g2-max #0 PASS profil
+kugoo-g2-max #1 PASS DOUBLON même image (dHash 0, couleur 0.0) (lot#0)
+kugoo-g2-max #2 PASS DOUBLON même image (dHash 0, couleur 0.0) (lot#0)
+kugoo-g2-max #3 WARN pliee
+kugoo-g2-max #4 WARN 3/4 avant
+kugoo-g2-max #5 WARN detail
+kugoo-g2-max #6 WARN dessus
+kugoo-g2-max #7 WARN detail
+kugoo-g2-max #8 PASS detail
+kugoo-g2-max #9 WARN detail
+mantis-pro #0 PASS 3/4 avant
+mantis-pro #1 PASS DOUBLON même image (dHash 0, couleur 0.0) (lot#0)
+mantis-pro #2 PASS DOUBLON même image (dHash 0, couleur 0.0) (lot#0)
+mantis-pro #3 PASS 3/4 arriere
+mantis-pro #4 PASS profil
+mantis-pro #5 PASS arriere
+mantis-pro #6 WARN pliee
+mantis-pro #7 PASS detail
+mantis-pro #8 PASS detail
+mantis-pro #9 WARN detail
+dualtron-eagle-pro #0 WARN 3/4 avant ★3/4 propre
+dualtron-eagle-pro #1 PASS DOUBLON même image (dHash 1, couleur 2.6) (lot#0)
+dualtron-eagle-pro #2 WARN DOUBLON même image (dHash 0, couleur 0.0) (lot#0)
+dualtron-eagle-pro #3 PASS 3/4 avant ★3/4 propre
+dualtron-eagle-pro #4 PASS profil
+dualtron-eagle-pro #5 WARN pliee
+dualtron-eagle-pro #6 PASS dessus
+dualtron-eagle-pro #7 WARN detail
+dualtron-eagle-pro #8 WARN DOUBLON même image (dHash 0, couleur 0.0) (lot#0)
+dualtron-eagle-pro #9 PASS DOUBLON même image (dHash 0, couleur 0.0) (lot#3)
+isinwheel-s9-max #0 FAIL détourage sale / résidu de décor · cadrage serré · élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux
+isinwheel-s9-max #1 FAIL détourage sale / résidu de décor · élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux
+isinwheel-s9-max #2 FAIL détourage sale / résidu de décor · cadrage serré · élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux
+isinwheel-s9-max #3 WARN REFUS personne
+isinwheel-s9-max #4 WARN DOUBLON même image (dHash 2, couleur 4.9) (66bd7648/1792972239809_0.png)
+isinwheel-s9-max #5 FAIL détourage sale / résidu de décor
+isinwheel-s9-max #6 FAIL détourage sale / résidu de décor · élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux
+isinwheel-s9-max #7 FAIL détourage sale / résidu de décor · petit élément détaché (2 morceaux)
+isinwheel-s9-max #8 FAIL détourage sale / résidu de décor · élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux
+isinwheel-s9-max #9 FAIL détourage sale / résidu de décor · élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux · couleurs vives 34 % (visuel marketing ?)
+inmotion-c1-air-pro #0 WARN 3/4 avant
+punk-rider #0 PASS DOUBLON même image (dHash 0, couleur 0.3) (73c08bde/1792872275360_0.png)
+punk-rider #1 PASS DOUBLON même image (dHash 0, couleur 0.3) (73c08bde/1792872275360_0.png)
+punk-rider #2 PASS DOUBLON même image (dHash 0, couleur 0.3) (73c08bde/1792872275360_0.png)
+punk-rider #3 WARN REFUS 2 débris,basse définition (623 px)
+punk-rider #4 WARN REFUS personne,autre objet
+punk-rider #5 PASS pliee
+punk-rider #6 FAIL détourage sale / résidu de décor · cadrage serré
+punk-rider #7 FAIL détourage sale / résidu de décor
+punk-rider #8 WARN REFUS personne,autre objet
+punk-rider #9 WARN REFUS personne,autre objet
+vsett-10-plus #0 PASS DOUBLON même image (dHash 0, couleur 1.3) (fa9040b6/1792973125126_0.png)
+vsett-10-plus #1 PASS DOUBLON même image (dHash 0, couleur 3.5) (fa9040b6/1792973125126_0.png)
+vsett-10-plus #2 WARN REFUS trop petite (408 px)
+vsett-10-plus #3 PASS 3/4 arriere
+vsett-10-plus #4 PASS DOUBLON même image (dHash 0, couleur 1.3) (fa9040b6/1792973125126_0.png)
+vsett-10-plus #5 WARN REFUS personne,autre objet
+vsett-10-plus #6 PASS DOUBLON même image (dHash 0, couleur 3.1) (lot#3)
+vsett-10-plus #7 PASS detail
+vsett-10-plus #8 WARN detail
+vsett-10-plus #9 FAIL détourage sale / résidu de décor · cadrage serré
+micro-merlin #0 WARN 3/4 avant
+micro-merlin #1 WARN DOUBLON même image (dHash 0, couleur 2.1) (lot#0)
+micro-merlin #2 WARN REFUS personne
+micro-merlin #3 WARN REFUS trop petite (461 px)
+micro-merlin #4 PASS profil
+micro-merlin #5 WARN detail
+micro-merlin #6 WARN pliee
+beaster-bs09 #0 WARN detail
+beaster-bs09 #1 WARN 3/4 avant
+beaster-bs09 #2 FAIL détourage sale / résidu de décor · cadrage serré
+beaster-bs09 #3 FAIL détourage sale / résidu de décor · basse définition · cadrage serré
+dualtron-thunder-2 #0 WARN 3/4 avant
+dualtron-thunder-2 #1 FAIL élément en plus (logo, badge, téléphone, 2e trottinette) : 5 morceaux
+dualtron-thunder-2 #2 PASS DOUBLON même image (dHash 0, couleur 5.1) (53631965/1792971810092_0.png)
+dualtron-thunder-2 #3 PASS DOUBLON même image (dHash 0, couleur 5.1) (53631965/1792971810092_0.png)
+dualtron-thunder-2 #4 WARN DOUBLON même image (dHash 0, couleur 4.1) (53631965/1792971810092_0.png)
+dualtron-thunder-2 #5 PASS profil
+dualtron-thunder-2 #6 PASS DOUBLON même image (dHash 0, couleur 5.1) (53631965/1792971810092_0.png)
+dualtron-thunder-2 #7 WARN DOUBLON même image (dHash 0, couleur 4.1) (53631965/1792971810092_0.png)
+dualtron-thunder-2 #8 PASS DOUBLON même image (dHash 0, couleur 0.0) (lot#5)
+dualtron-thunder-2 #9 PASS 3/4 arriere ★3/4 propre
+inmotion-s1f #0 PASS DOUBLON même image (dHash 2, couleur 3.4) (f4cefdba/1792441973512_0.png)
+inmotion-s1f #1 PASS DOUBLON même image (dHash 2, couleur 3.4) (f4cefdba/1792441973512_0.png)
+inmotion-s1f #2 PASS DOUBLON même image (dHash 2, couleur 3.4) (f4cefdba/1792441973512_0.png)
+inmotion-s1f #3 WARN REFUS personne,autre objet,plusieurs trottinettes / vignette
+inmotion-s1f #4 WARN REFUS personne,autre objet,plusieurs trottinettes / vignette
+inmotion-s1f #5 WARN REFUS personne,autre objet
+inmotion-s1f #6 PASS DOUBLON même image (dHash 3, couleur 1.5) (f4cefdba/1792441975023_0.png)
+inmotion-s1f #7 PASS DOUBLON même image (dHash 2, couleur 1.4) (f4cefdba/1792441976760_0.png)
+inmotion-s1f #8 PASS 3/4 avant ★3/4 propre
+inmotion-s1f #9 PASS 3/4 arriere ★3/4 propre
+dualtron-storm #0 WARN DOUBLON même image (dHash 0, couleur 1.4) (39b4cef6/1792445825840_0.png)
+dualtron-storm #1 WARN DOUBLON même image (dHash 2, couleur 1.1) (39b4cef6/1792445827738_0.png)
+dualtron-storm #2 WARN profil
+dualtron-storm #3 WARN REFUS fantômes 5.6 %,trop petite (212 px)
+dualtron-storm #4 PASS DOUBLON même image (dHash 1, couleur 5.6) (39b4cef6/1792445825840_0.png)
+dualtron-storm #5 PASS DOUBLON même image (dHash 2, couleur 7.4) (39b4cef6/1792445825840_0.png)
+dualtron-storm #6 PASS DOUBLON même image (dHash 2, couleur 5.6) (39b4cef6/1792445827738_0.png)
+dualtron-storm #7 PASS profil
+dualtron-storm #8 PASS 3/4 avant ★3/4 propre
+dualtron-storm #9 PASS profil
+aprilia-esr2-evo #0 PASS profil
+aprilia-esr2-evo #1 PASS profil
+aprilia-esr2-evo #2 WARN 3/4 avant
+aprilia-esr2-evo #3 FAIL détourage sale / résidu de décor · cadrage serré
+aprilia-esr2-evo #4 FAIL détourage sale / résidu de décor · élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux
+aprilia-esr2-evo #5 FAIL détourage sale / résidu de décor
+aprilia-esr2-evo #6 WARN detail
+aprilia-esr2-evo #7 PASS profil
+laotie-ti30 #0 PASS DOUBLON même image (dHash 0, couleur 2.6) (0b8f7529/1792443000641_0.png)
+ootd-t10-pro #0 PASS profil
+ootd-t10-pro #1 PASS DOUBLON même image (dHash 0, couleur 0.0) (lot#0)
+ootd-t10-pro #2 PASS 3/4 avant ★3/4 propre
+ootd-t10-pro #3 PASS DOUBLON même image (dHash 1, couleur 3.3) (d40a94a9/1792867297166_0.png)
+ootd-t10-pro #4 WARN DOUBLON même image (dHash 1, couleur 2.8) (d40a94a9/1792867298851_0.png)
+ootd-t10-pro #5 PASS DOUBLON même image (dHash 0, couleur 0.0) (lot#0)
+ootd-t10-pro #6 PASS DOUBLON même image (dHash 0, couleur 0.0) (lot#0)
+ootd-t10-pro #7 PASS DOUBLON même image (dHash 0, couleur 0.0) (lot#2)
+ootd-t10-pro #8 PASS DOUBLON même image (dHash 1, couleur 3.3) (d40a94a9/1792867297166_0.png)
+ootd-t10-pro #9 WARN DOUBLON même image (dHash 1, couleur 2.8) (d40a94a9/1792867298851_0.png)
+ninebot-f2-plus #0 PASS profil
+ninebot-f2-plus #1 PASS DOUBLON même image (dHash 0, couleur 0.4) (lot#0)
+ninebot-f2-plus #2 FAIL élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux
+ninebot-f2-plus #3 WARN REFUS personne,autre objet
+ninebot-f2-plus #4 WARN REFUS personne,autre objet
+ninebot-f2-plus #5 PASS 3/4 avant
+xiaomi-electric-scooter-6-lite #0 PASS 3/4 avant ★3/4 propre
+xiaomi-electric-scooter-6-lite #1 PASS 3/4 avant ★3/4 propre
+xiaomi-electric-scooter-6-lite #2 PASS DOUBLON même image (dHash 2, couleur 2.5) (0130212a/1792450935879_0.png)
+xiaomi-electric-scooter-6-lite #3 PASS 3/4 arriere
+xiaomi-electric-scooter-6-lite #4 WARN profil
+xiaomi-electric-scooter-6-lite #5 PASS juge : Anthropic 400: {"type":"error","error":{"type":"invalid_request_error","message"
+xiaomi-electric-scooter-6-lite #6 PASS juge : Anthropic 400: {"type":"error","error":{"type":"invalid_request_error","message"
+xiaomi-electric-scooter-6-lite #7 PASS juge : Anthropic 400: {"type":"error","error":{"type":"invalid_request_error","message"
+xiaomi-electric-scooter-6-lite #8 PASS DOUBLON même image (dHash 2, couleur 2.0) (0130212a/1792450940317_0.png)
+xiaomi-electric-scooter-6-lite #9 PASS DOUBLON même image (dHash 2, couleur 2.2) (0130212a/1792450940317_0.png)
+yeep-me-85a-evo #0 FAIL élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux
+xiaomi-electric-scooter-4 #0 PASS juge : Anthropic 400: {"type":"error","error":{"type":"invalid_request_error","message"
+xiaomi-electric-scooter-4 #1 PASS juge : Anthropic 400: {"type":"error","error":{"type":"invalid_request_error","message"
+wolf-warrior #0 PASS juge : Anthropic 400: {"type":"error","error":{"type":"invalid_request_error","message"
+wolf-warrior #1 PASS DOUBLON même image (dHash 0, couleur 1.1) (1d65ed33/1792872608155_0.png)
+wolf-warrior #2 PASS juge : Anthropic 400: {"type":"error","error":{"type":"invalid_request_error","message"
+wolf-warrior #3 PASS juge : Anthropic 400: {"type":"error","error":{"type":"invalid_request_error","message"
+wolf-warrior #4 PASS juge : Anthropic 400: {"type":"error","error":{"type":"invalid_request_error","message"
+wolf-warrior #5 PASS juge : Anthropic 400: {"type":"error","error":{"type":"invalid_request_error","message"
+wolf-warrior #6 PASS juge : Anthropic 400: {"type":"error","error":{"type":"invalid_request_error","message"
+wolf-warrior #7 WARN juge : Anthropic 400: {"type":"error","error":{"type":"invalid_request_error","message"
+wolf-warrior #8 WARN juge : Anthropic 400: {"type":"error","error":{"type":"invalid_request_error","message"
+wolf-warrior #9 WARN juge : Anthropic 400: {"type":"error","error":{"type":"invalid_request_error","message"
+xiaomi-electric-scooter-6-max #0 PASS juge : Anthropic 400: {"type":"error","error":{"type":"invalid_request_error","message"
+xiaomi-electric-scooter-6-max #1 PASS DOUBLON même image (dHash 0, couleur 4.5) (4551aa31/1792973224489_0.png)
+xiaomi-electric-scooter-6-max #2 WARN DOUBLON même image (dHash 2, couleur 6.1) (4551aa31/1792973224489_0.png)
+xiaomi-electric-scooter-6-max #3 PASS juge : Anthropic 400: {"type":"error","error":{"type":"invalid_request_error","message"
+xiaomi-electric-scooter-6-max #4 WARN REFUS trop petite (492 px)
+xiaomi-electric-scooter-6-max #5 PASS juge : Anthropic 400: {"type":"error","error":{"type":"invalid_request_error","message"
+xiaomi-electric-scooter-6-max #6 PASS juge : Anthropic 400: {"type":"error","error":{"type":"invalid_request_error","message"
+navee-st5-max #0 PASS juge : Anthropic 400: {"type":"error","error":{"type":"invalid_request_error","message"
+navee-st5-max #1 PASS juge : Anthropic 400: {"type":"error","error":{"type":"invalid_request_error","message"
+navee-st5-max #2 PASS juge : Anthropic 400: {"type":"error","error":{"type":"invalid_request_error","message"
+navee-st5-max #3 PASS juge : Anthropic 400: {"type":"error","error":{"type":"invalid_request_error","message"
+navee-st5-max #4 PASS juge : Anthropic 400: {"type":"error","error":{"type":"invalid_request_error","message"
+navee-st5-max #5 FAIL détourage sale / résidu de décor · petit élément détaché (2 morceaux)
+navee-st5-max #6 PASS DOUBLON même image (dHash 1, couleur 4.7) (a3d0cc1b/1792972673761_0.png)
+navee-st5-max #7 PASS juge : Anthropic 400: {"type":"error","error":{"type":"invalid_request_error","message"
+navee-st5-max #8 PASS juge : Anthropic 400: {"type":"error","error":{"type":"invalid_request_error","message"
+navee-st5-max #9 PASS juge : Anthropic 400: {"type":"error","error":{"type":"invalid_request_error","message"
+e-twow-tanktorq-tk2 #0 FAIL élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux
+e-twow-tanktorq-tk2 #1 FAIL élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux
+e-twow-tanktorq-tk2 #2 FAIL élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux
+e-twow-tanktorq-tk2 #3 WARN DOUBLON même image (dHash 5, couleur 2.4) (6c824109/1792441496274_0.png)
+e-twow-tanktorq-tk2 #4 PASS juge : Anthropic 400: {"type":"error","error":{"type":"invalid_request_error","message"
+e-twow-tanktorq-tk2 #5 FAIL élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux
+e-twow-tanktorq-tk2 #6 FAIL élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux
+e-twow-tanktorq-tk2 #7 WARN DOUBLON même image (dHash 5, couleur 2.4) (6c824109/1792441496274_0.png)
+e-twow-tanktorq-tk2 #8 PASS juge : Anthropic 400: {"type":"error","error":{"type":"invalid_request_error","message"
+e-twow-tanktorq-tk2 #9 PASS DOUBLON même image (dHash 0, couleur 2.8) (6c824109/1792441494330_0.png)
+jeep-adventurer #0 WARN REFUS fantômes 3.4 %,trop petite (241 px)
+jeep-adventurer #1 PASS juge : Anthropic 400: {"type":"error","error":{"type":"invalid_request_error","message"
+jeep-adventurer #2 PASS juge : Anthropic 400: {"type":"error","error":{"type":"invalid_request_error","message"
+jeep-adventurer #3 PASS DOUBLON même image (dHash 1, couleur 3.3) (b69f2f8e/1792447239431_0.png)
+jeep-adventurer #4 WARN juge : Anthropic 400: {"type":"error","error":{"type":"invalid_request_error","message"
+jeep-adventurer #5 PASS juge : Anthropic 400: {"type":"error","error":{"type":"invalid_request_error","message"
+jeep-adventurer #6 PASS DOUBLON même image (dHash 1, couleur 3.3) (b69f2f8e/1792447239431_0.png)
+jeep-adventurer #7 WARN juge : Anthropic 400: {"type":"error","error":{"type":"invalid_request_error","message"
+jeep-adventurer #8 WARN juge : Anthropic 400: {"type":"error","error":{"type":"invalid_request_error","message"
+jeep-adventurer #9 PASS juge : Anthropic 400: {"type":"error","error":{"type":"invalid_request_error","message"
+hiboy-ks4 #0 PASS juge : Anthropic 400: {"type":"error","error":{"type":"invalid_request_error","message"
+hiboy-ks4 #1 FAIL élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux
+hiboy-ks4 #2 FAIL élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux
+hiboy-ks4 #3 PASS DOUBLON même image (dHash 1, couleur 6.9) (c503610e/1792441635463_0.png)
+hiboy-ks4 #4 FAIL élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux
+hiboy-ks4 #5 FAIL élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux
+hiboy-ks4 #6 PASS juge : Anthropic 400: {"type":"error","error":{"type":"invalid_request_error","message"
+hiboy-ks4 #7 FAIL élément en plus (logo, badge, téléphone, 2e trottinette) : 9 morceaux
+hiboy-ks4 #8 WARN juge : Anthropic 400: {"type":"error","error":{"type":"invalid_request_error","message"
+hiboy-ks4 #9 FAIL élément en plus (logo, badge, téléphone, 2e trottinette) : 5 morceaux · couleurs vives 40 % (visuel marketing ?)
+segway-gt1 #0 PASS juge : Anthropic 400: {"type":"error","error":{"type":"invalid_request_error","message"
+segway-gt1 #1 WARN juge : Anthropic 400: {"type":"error","error":{"type":"invalid_request_error","message"
+segway-gt1 #2 WARN juge : Anthropic 400: {"type":"error","error":{"type":"invalid_request_error","message"
+segway-gt1 #3 WARN juge : Anthropic 400: {"type":"error","error":{"type":"invalid_request_error","message"
+segway-gt1 #4 WARN juge : Anthropic 400: {"type":"error","error":{"type":"invalid_request_error","message"
+segway-gt1 #5 WARN DOUBLON même image (dHash 0, couleur 0.0) (794284c0/1792972887675_0.png)
+segway-gt1 #6 WARN DOUBLON même image (dHash 0, couleur 0.0) (794284c0/1792972885841_0.png)
+segway-gt1 #7 WARN DOUBLON même image (dHash 0, couleur 0.0) (794284c0/1792972883986_0.png)
+segway-gt1 #8 WARN REFUS trop petite (376 px)
+oxelo-md500e #0 WARN DOUBLON même image (dHash 1, couleur 2.4) (2d90e549/1792449323207_0.png)
+oxelo-md500e #1 PASS DOUBLON même image (dHash 1, couleur 1.5) (2d90e549/1792449323207_0.png)
+oxelo-md500e #2 PASS DOUBLON même image (dHash 1, couleur 1.5) (2d90e549/1792449323207_0.png)
+oxelo-md500e #3 PASS DOUBLON même image (dHash 2, couleur 6.7) (2d90e549/1792449325119_0.png)
+oxelo-md500e #4 PASS DOUBLON même image (dHash 0, couleur 0.5) (2d90e549/1792449327994_0.png)
+oxelo-md500e #5 FAIL élément en plus (logo, badge, téléphone, 2e trottinette) : 6 morceaux
+oxelo-md500e #6 WARN juge : Anthropic 400: {"type":"error","error":{"type":"invalid_request_error","message"
+oxelo-md500e #7 PASS juge : Anthropic 400: {"type":"error","error":{"type":"invalid_request_error","message"
+oxelo-md500e #8 PASS juge : Anthropic 400: {"type":"error","error":{"type":"invalid_request_error","message"
+oxelo-md500e #9 WARN juge : Anthropic 400: {"type":"error","error":{"type":"invalid_request_error","message"
+kukirin-g2-master #0 PASS DOUBLON même image (dHash 4, couleur 3.7) (f18b22b3/1792972432906_0.png)
+kukirin-g2-master #1 PASS DOUBLON même image (dHash 4, couleur 3.7) (f18b22b3/1792972432906_0.png)
+kukirin-g2-master #2 WARN juge : Anthropic 400: {"type":"error","error":{"type":"invalid_request_error","message"
+kukirin-g2-master #3 WARN juge : Anthropic 400: {"type":"error","error":{"type":"invalid_request_error","message"
+kukirin-g2-master #4 PASS juge : Anthropic 400: {"type":"error","error":{"type":"invalid_request_error","message"
+kukirin-g2-master #5 WARN juge : Anthropic 400: {"type":"error","error":{"type":"invalid_request_error","message"
+kukirin-g2-master #6 PASS juge : Anthropic 400: {"type":"error","error":{"type":"invalid_request_error","message"
+kukirin-g2-master #7 WARN juge : Anthropic 400: {"type":"error","error":{"type":"invalid_request_error","message"
+kukirin-g2-master #8 PASS juge : Anthropic 400: {"type":"error","error":{"type":"invalid_request_error","message"
+kukirin-g2-master #9 PASS juge : Anthropic 400: {"type":"error","error":{"type":"invalid_request_error","message"
+e-twow-booster-se #0 WARN DOUBLON même image (dHash 0, couleur 1.0) (88ee361b/1792971903249_0.png)
+e-twow-booster-se #1 WARN DOUBLON même image (dHash 3, couleur 1.9) (88ee361b/1792971903249_0.png)
+e-twow-booster-se #2 WARN DOUBLON même image (dHash 0, couleur 1.0) (88ee361b/1792971903249_0.png)
+e-twow-booster-se #3 FAIL élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux
+e-twow-booster-se #4 FAIL détourage sale / résidu de décor · élément en plus (logo, badge, téléphone, 2e trottinette) : 8 morceaux
+e-twow-booster-se #5 FAIL détourage sale / résidu de décor · élément en plus (logo, badge, téléphone, 2e trottinette) : 4 morceaux
+e-twow-booster-se #6 FAIL détourage sale / résidu de décor · élément en plus (logo, badge, téléphone, 2e trottinette) : 8 morceaux
+e-twow-booster-se #7 FAIL détourage sale / résidu de décor · élément en plus (logo, badge, téléphone, 2e trottinette) : 4 morceaux
+e-twow-booster-se #8 PASS DOUBLON même image (dHash 0, couleur 1.5) (88ee361b/1792971912684_0.png)
+e-twow-booster-se #9 PASS juge : Anthropic 400: {"type":"error","error":{"type":"invalid_request_error","message"
+micro-explorer-ii #0 PASS juge : Anthropic 400: {"type":"error","error":{"type":"invalid_request_error","message"
+micro-explorer-ii #1 WARN REFUS fantômes 3.4 %,trop petite (221 px)
+micro-explorer-ii #2 PASS DOUBLON même image (dHash 1, couleur 2.7) (55ef9662/1792448413137_0.png)
+micro-explorer-ii #3 PASS juge : Anthropic 400: {"type":"error","error":{"type":"invalid_request_error","message"
+micro-explorer-ii #4 PASS juge : Anthropic 400: {"type":"error","error":{"type":"invalid_request_error","message"
+micro-explorer-ii #5 PASS juge : Anthropic 400: {"type":"error","error":{"type":"invalid_request_error","message"
+micro-explorer-ii #6 WARN juge : Anthropic 400: {"type":"error","error":{"type":"invalid_request_error","message"
+micro-explorer-ii #7 FAIL bandeau, pas un produit · basse définition · cadrage serré
+micro-explorer-ii #8 WARN juge : Anthropic 400: {"type":"error","error":{"type":"invalid_request_error","message"
+micro-explorer-ii #9 WARN juge : Anthropic 400: {"type":"error","error":{"type":"invalid_request_error","message"
+ducati-pro-ii-evo #0 WARN REFUS trop petite (458 px)
+ducati-pro-ii-evo #1 WARN REFUS trop petite (402 px)
+ducati-pro-ii-evo #2 WARN REFUS trop petite (461 px)
+ducati-pro-ii-evo #3 WARN REFUS trop petite (453 px)
+ducati-pro-ii-evo #4 WARN REFUS trop petite (477 px)
+ducati-pro-ii-evo #5 WARN REFUS trop petite (354 px)
+ducati-pro-ii-evo #6 WARN REFUS trop petite (354 px)
+ducati-pro-ii-evo #7 WARN REFUS trop petite (354 px)
+ducati-pro-ii-evo #8 FAIL détourage sale / résidu de décor · basse définition
+ducati-pro-ii-evo #9 WARN REFUS trop petite (354 px)
+langfeite-roadster #0 PASS DOUBLON même image (dHash 0, couleur 0.0) (2d42b4f7/1792972504867_0.png)
+langfeite-roadster #1 PASS juge : Anthropic 400: {"type":"error","error":{"type":"invalid_request_error","message"
+langfeite-roadster #2 PASS juge : Anthropic 400: {"type":"error","error":{"type":"invalid_request_error","message"
+langfeite-roadster #3 PASS juge : Anthropic 400: {"type":"error","error":{"type":"invalid_request_error","message"
+langfeite-roadster #4 FAIL détourage sale / résidu de décor · basse définition · cadrage serré
+langfeite-roadster #5 PASS juge : Anthropic 400: {"type":"error","error":{"type":"invalid_request_error","message"
+kingsong-n15 #0 PASS DOUBLON même image (dHash 0, couleur 1.4) (e7711ced/1792447816204_0.png)
+kingsong-n15 #1 WARN DOUBLON même image (dHash 0, couleur 0.9) (e7711ced/1792447818000_0.png)
+p100s #0 ERROR téléchargement vide
+p100s #1 ERROR Command failed: curl -s -L --max-time 40 -A Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Ge
+p100s #2 ERROR Command failed: curl -s -L --max-time 40 -A Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Ge
+p100s #3 ERROR Command failed: curl -s -L --max-time 40 -A Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Ge
+p100s #4 ERROR téléchargement vide
+p100s #5 PASS juge : Anthropic 400: {"type":"error","error":{"type":"invalid_request_error","message"
+p100s #6 PASS juge : Anthropic 400: {"type":"error","error":{"type":"invalid_request_error","message"
+p100s #7 PASS juge : Anthropic 400: {"type":"error","error":{"type":"invalid_request_error","message"
+p100s #8 PASS DOUBLON même image (dHash 0, couleur 0.0) (238bce93/1792972825859_0.png)
+p100s #9 PASS juge : Anthropic 400: {"type":"error","error":{"type":"invalid_request_error","message"
+e-twow-gt-se #0 WARN juge : Anthropic 400: {"type":"error","error":{"type":"invalid_request_error","message"
+e-twow-gt-se #1 PASS DOUBLON même image (dHash 0, couleur 0.2) (cb6386e2/1792971937181_0.png)
+e-twow-gt-se #2 WARN DOUBLON même image (dHash 1, couleur 1.4) (cb6386e2/1792971937181_0.png)
+e-twow-gt-se #3 PASS DOUBLON même image (dHash 0, couleur 0.2) (cb6386e2/1792971937181_0.png)
+e-twow-gt-se #4 WARN juge : Anthropic 400: {"type":"error","error":{"type":"invalid_request_error","message"
+e-twow-gt-se #5 FAIL détourage sale / résidu de décor · basse définition · cadrage serré
+e-twow-gt-se #6 PASS juge : Anthropic 400: {"type":"error","error":{"type":"invalid_request_error","message"
+e-twow-gt-se #7 FAIL détourage sale / résidu de décor · cadrage serré
+e-twow-gt-se #8 WARN juge : Anthropic 400: {"type":"error","error":{"type":"invalid_request_error","message"
+e-twow-gt-se #9 WARN juge : Anthropic 400: {"type":"error","error":{"type":"invalid_request_error","message"
+segway-zt3-pro-e #0 WARN juge : Anthropic 400: {"type":"error","error":{"type":"invalid_request_error","message"
+segway-zt3-pro-e #1 WARN juge : Anthropic 400: {"type":"error","error":{"type":"invalid_request_error","message"
+segway-zt3-pro-e #2 WARN juge : Anthropic 400: {"type":"error","error":{"type":"invalid_request_error","message"
+segway-zt3-pro-e #3 WARN DOUBLON même image (dHash 1, couleur 3.1) (388f3721/1792972933771_0.png)
+segway-zt3-pro-e #4 WARN juge : Anthropic 400: {"type":"error","error":{"type":"invalid_request_error","message"
+segway-zt3-pro-e #5 FAIL détourage sale / résidu de décor · basse définition · cadrage serré
+segway-zt3-pro-e #6 FAIL détourage sale / résidu de décor · basse définition · élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux
+segway-zt3-pro-e #7 FAIL détourage sale / résidu de décor · basse définition · élément en plus (logo, badge, téléphone, 2e trottinette) : 6 morceaux
+segway-zt3-pro-e #8 FAIL détourage sale / résidu de décor · basse définition · élément en plus (logo, badge, téléphone, 2e trottinette) : 5 morceaux
+segway-zt3-pro-e #9 FAIL détourage sale / résidu de décor · basse définition
+segway-gt2 #0 PASS juge : Anthropic 400: {"type":"error","error":{"type":"invalid_request_error","message"
+segway-gt2 #1 PASS juge : Anthropic 400: {"type":"error","error":{"type":"invalid_request_error","message"
+nami-klima #0 PASS juge : Anthropic 400: {"type":"error","error":{"type":"invalid_request_error","message"
+nami-klima #1 PASS juge : Anthropic 400: {"type":"error","error":{"type":"invalid_request_error","message"
+nami-klima #2 PASS juge : Anthropic 400: {"type":"error","error":{"type":"invalid_request_error","message"
+nami-klima #3 PASS DOUBLON même image (dHash 1, couleur 1.5) (36f3f803/1792448531808_0.png)
+nami-klima #4 FAIL élément en plus (logo, badge, téléphone, 2e trottinette) : 6 morceaux
+nami-klima #5 PASS REFUS 5 débris
+nami-klima #6 FAIL détourage sale / résidu de décor · élément en plus (logo, badge, téléphone, 2e trottinette) : 6 morceaux
+nami-klima #7 WARN juge : Anthropic 400: {"type":"error","error":{"type":"invalid_request_error","message"
+nami-klima #8 PASS juge : Anthropic 400: {"type":"error","error":{"type":"invalid_request_error","message"
+nami-klima #9 WARN juge : Anthropic 400: {"type":"error","error":{"type":"invalid_request_error","message"
+joyor-y6-s #0 PASS DOUBLON même image (dHash 1, couleur 6.7) (6a467d49/1792871934992_0.png)
+joyor-y6-s #1 PASS DOUBLON même image (dHash 1, couleur 6.7) (6a467d49/1792871934992_0.png)
+joyor-y6-s #2 PASS DOUBLON même image (dHash 1, couleur 6.7) (6a467d49/1792871934992_0.png)
+joyor-y6-s #3 PASS juge : Anthropic 400: {"type":"error","error":{"type":"invalid_request_error","message"
+joyor-y6-s #4 PASS juge : Anthropic 400: {"type":"error","error":{"type":"invalid_request_error","message"
+joyor-y6-s #5 PASS juge : Anthropic 400: {"type":"error","error":{"type":"invalid_request_error","message"
+joyor-y6-s #6 PASS juge : Anthropic 400: {"type":"error","error":{"type":"invalid_request_error","message"
+joyor-y6-s #7 PASS juge : Anthropic 400: {"type":"error","error":{"type":"invalid_request_error","message"
+joyor-y6-s #8 PASS juge : Anthropic 400: {"type":"error","error":{"type":"invalid_request_error","message"
+joyor-y6-s #9 PASS juge : Anthropic 400: {"type":"error","error":{"type":"invalid_request_error","message"
+joyor-s8-e #0 FAIL élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux
+joyor-s8-e #1 FAIL élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux
+joyor-s8-e #2 FAIL élément en plus (logo, badge, téléphone, 2e trottinette) : 2 morceaux
+joyor-s8-e #3 PASS DOUBLON même image (dHash 3, couleur 2.3) (c6af822c/1792871918863_0.png)
+joyor-s8-e #4 PASS juge : Anthropic 400: {"type":"error","error":{"type":"invalid_request_error","message"
+joyor-s8-e #5 PASS juge : Anthropic 400: {"type":"error","error":{"type":"invalid_request_error","message"
+joyor-s8-e #6 PASS juge : Anthropic 400: {"type":"error","error":{"type":"invalid_request_error","message"
+joyor-s8-e #7 PASS juge : Anthropic 400: {"type":"error","error":{"type":"invalid_request_error","message"
+joyor-s8-e #8 PASS juge : Anthropic 400: {"type":"error","error":{"type":"invalid_request_error","message"
+joyor-s8-e #9 PASS juge : Anthropic 400: {"type":"error","error":{"type":"invalid_request_error","message"
+::notice title=chasse hd2610 (proposition)::122 fiches · 3/4 trouvé 28 · sans 3/4 38 · rien 56 · 54 photos proposées
+::notice title=photos hd2610 (dry)::863 candidates · PASS 387 · WARN 303 · FAIL 163 · ERREUR 10

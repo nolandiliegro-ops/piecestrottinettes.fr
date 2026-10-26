@@ -1,0 +1,4692 @@
+{
+ "usage": {
+  "input_tokens": 3960931,
+  "output_tokens": 55074,
+  "web_searches": 283
+ },
+ "cout_estime_usd": 15.54,
+ "cibles": [
+  {
+   "slug": "navee-k100",
+   "tokens": [
+    "k",
+    "100"
+   ],
+   "pages": [
+    {
+     "url": "https://eu.naveetech.com/products/navee-k100",
+     "ok": true,
+     "n": 7,
+     "title": "NAVEE K100 Children&#39;s Electric Scooter\n     NAVEE K100"
+    },
+    {
+     "url": "https://www.naveetech.com/fr/k100/",
+     "ok": true,
+     "n": 1,
+     "title": "Trottinette &eacute;lectrique enfant NAVEE K100 : 100 % s&eacute;curit&eacute; intelligente | NAVEE TECH NAVEE K100 Electric Kids Scooter: 100% Smart Safety | N"
+    },
+    {
+     "url": "https://naveetech.us/products/navee-k100",
+     "ok": true,
+     "n": 11,
+     "title": "Navee K100 Child’s E Scooter – Lightweight &amp; Folding &ndash; NAVEE_US NAVEE K100 | Kids Electric Scooter"
+    },
+    {
+     "url": "https://decathlon.re/products/trotinette-electrique-navee-k100",
+     "ok": false,
+     "n": 0,
+     "title": "DECATHLON REUNION - La référence des articles de sport à la Réunion DECATHLON REUNION - La référence des articles de sport à la Réunion"
+    }
+   ],
+   "candidates": 10
+  },
+  {
+   "slug": "weped-ssgt",
+   "tokens": [
+    "ssgt"
+   ],
+   "pages": [
+    {
+     "url": "https://pietechnologie.com/products/trottinette-electrique-weped-ssgt-20-000w-60v30ah",
+     "ok": true,
+     "n": 8,
+     "title": "Trottinette électrique weped SSGT 20 000w - 60V30Ah&nbsp;&ndash; PIE TECHNOLOGIE \n Trottinette électrique weped SSGT 20 000w - 60V30Ah"
+    },
+    {
+     "url": "https://fastride.fr/fr/weped/5336-trottinette-electrique-weped-ssgt.html",
+     "ok": false,
+     "n": 0,
+     "title": "HTTP 403"
+    },
+    {
+     "url": "https://fastride-pro.com/fr/weped/564-trottinette-electrique-weped-ssgt.html",
+     "ok": false,
+     "n": 0,
+     "title": "erreur fetch failed"
+    }
+   ],
+   "candidates": 8
+  },
+  {
+   "slug": "aprilia-esr2",
+   "tokens": [
+    "esr",
+    "2"
+   ],
+   "pages": [
+    {
+     "url": "https://www.apriliasmartmovement.it/en/product/aprilia-esr2",
+     "ok": false,
+     "n": 0,
+     "title": "erreur fetch failed"
+    },
+    {
+     "url": "https://www.fnac.com/Trottinette-electrique-Aprilia-eSR2-350-W-Noir-et-Rouge/a16182105/w-4",
+     "ok": false,
+     "n": 0,
+     "title": "HTTP 403"
+    },
+    {
+     "url": "https://www.darty.com/nav/achat/sports_loisirs/glisse_urbaine/trottinette_electrique/aprilia_apresr2cl.html",
+     "ok": false,
+     "n": 0,
+     "title": "HTTP 403"
+    },
+    {
+     "url": "https://www.feuvert.fr/trottinettes-electriques/aprilia-trottinette-electrique-esr2-aprilia/p614322.html",
+     "ok": false,
+     "n": 0,
+     "title": "HTTP 403"
+    },
+    {
+     "url": "https://pietechnologie.com/products/trottinette-electrique-aprilia-esr2",
+     "ok": true,
+     "n": 5,
+     "title": "Trottinette électrique Aprilia ESR2&nbsp;&ndash; PIE TECHNOLOGIE \n Trottinette électrique Aprilia ESR2"
+    }
+   ],
+   "candidates": 5
+  },
+  {
+   "slug": "inmotion-climber",
+   "tokens": [
+    "climber"
+   ],
+   "pages": [
+    {
+     "url": "https://inmotionworld.com/products/inmotion-climber",
+     "ok": true,
+     "n": 10,
+     "title": "INMOTION Climber | The Best Dual Motor E-Scooter - INMOTION\n INMOTION Climber | The Best Dual Motor E-Scooter - INMOTION"
+    },
+    {
+     "url": "https://www.inmotion-france.fr/en/e-scooters/471-inmotion-climber-electric-scooter-36-v-15-ah-3701522001717.html",
+     "ok": true,
+     "n": 2,
+     "title": "Inmotion Climber Electric Scooter l Inmotion France Inmotion Climber Electric Scooter l Inmotion France"
+    },
+    {
+     "url": "https://fastride.fr/en/inmotion-/2461-trottinette-electrique-inmotion-climber-2025.html",
+     "ok": false,
+     "n": 0,
+     "title": "HTTP 403"
+    },
+    {
+     "url": "https://www.eleqtron.fr/products/trottinette-electrique-inmotion-climber",
+     "ok": false,
+     "n": 0,
+     "title": "Trajets urbains &#8211; Eleqtron"
+    },
+    {
+     "url": "https://www.wee-bot.com/products/trottinette-electrique-inmotion-climber",
+     "ok": true,
+     "n": 18,
+     "title": "Trottinette électrique Inmotion Climber - Pas Cher\n Trottinette Électrique Inmotion Climber"
+    }
+   ],
+   "candidates": 10
+  },
+  {
+   "slug": "nami-burn-e",
+   "tokens": [
+    "burn",
+    "e"
+   ],
+   "pages": [
+    {
+     "url": "https://nami-electric.com/produit/burn-e/",
+     "ok": true,
+     "n": 2,
+     "title": "BURN-E - Nami Electric BURN-E - Nami Electric"
+    },
+    {
+     "url": "https://ogctrotteshop.fr/nami-electric/51-nami-burn-e-3.html",
+     "ok": true,
+     "n": 2,
+     "title": "Nami Burn-e 3 Nami Burn-e 3"
+    },
+    {
+     "url": "https://swiss-distribution.com/produit/nami-burn-e-2/",
+     "ok": true,
+     "n": 7,
+     "title": "Trottinette électrique Nami Burn-E 3 72V 30Ah - Swiss Distribution Trottinette électrique Nami Burn-E 3 72V 30Ah - Swiss Distribution"
+    },
+    {
+     "url": "https://www.glisseurbaine.com/1775-trottinette-electrique-nami-burn-e.html",
+     "ok": false,
+     "n": 0,
+     "title": "erreur fetch failed"
+    }
+   ],
+   "candidates": 10
+  },
+  {
+   "slug": "weped-gts",
+   "tokens": [
+    "gts"
+   ],
+   "pages": [
+    {
+     "url": "https://pietechnologie.com/products/trottinette-electrique-weeped-gts-18000w-60v-30ah",
+     "ok": true,
+     "n": 13,
+     "title": "Trottinette Electrique Weped GTS 18000W - 60V 30 Ah - Pie Technologie&nbsp;&ndash; PIE TECHNOLOGIE \n Trottinette électrique Weped GTS 18000W - 60V 30Ah"
+    },
+    {
+     "url": "https://www.glisseurbaine.com/weped/655-trottinette-electrique-weped-gts.html",
+     "ok": false,
+     "n": 0,
+     "title": "erreur fetch failed"
+    },
+    {
+     "url": "https://www.gyroroue-shop.fr/boutique/trottinette-electrique/weped-trottinette-electrique-patinette/weped-gts-10000w",
+     "ok": true,
+     "n": 5,
+     "title": "WEPED GTS | Fiabilité Et Sécurité | 10 000 W | GS WEPED GTS | Fiabilité Et Sécurité | 10 000 W | GS"
+    },
+    {
+     "url": "https://www.glisseurbaine.com/weped/655-trottinette-electrique-weped-gts-frein-magura-3700707305251.html",
+     "ok": false,
+     "n": 0,
+     "title": "erreur fetch failed"
+    }
+   ],
+   "candidates": 10
+  },
+  {
+   "slug": "xiaomi-electric-scooter-4-lite",
+   "tokens": [
+    "4",
+    "lite"
+   ],
+   "pages": [
+    {
+     "url": "https://www.mi.com/fr/product/xiaomi-electric-scooter-4-lite/",
+     "ok": true,
+     "n": 1,
+     "title": "Xiaomi Electric Scooter 4 Lite | Xiaomi France | Toutes les spécifications et fonctionnalités  Xiaomi Electric Scooter 4 Lite | Xiaomi France | Toutes les spéci"
+    },
+    {
+     "url": "https://www.mi.com/global/product/xiaomi-electric-scooter-4-lite/specs/",
+     "ok": true,
+     "n": 1,
+     "title": "Xiaomi Electric Scooter 4 Lite Specs Xiaomi Electric Scooter 4 Lite Specs"
+    },
+    {
+     "url": "https://www.mi.com/fr/product/xiaomi-electric-scooter-4-lite/specs/",
+     "ok": true,
+     "n": 1,
+     "title": "Xiaomi Electric Scooter 4 Lite Spécifications, Fonctionnalités | Xiaomi France Xiaomi Electric Scooter 4 Lite Spécifications, Fonctionnalités | Xiaomi France"
+    },
+    {
+     "url": "https://www.boulanger.com/c/trottinette/brand~xiaomi/facettes_trottinette_____modele_trottinette~scooter20420lite",
+     "ok": false,
+     "n": 0,
+     "title": "erreur The operation was aborted due to timeout"
+    }
+   ],
+   "candidates": 2
+  },
+  {
+   "slug": "inmotion-rs-jet",
+   "tokens": [
+    "rs",
+    "jet"
+   ],
+   "pages": [
+    {
+     "url": "https://inmotionworld.com/products/inmotion-rs-jet",
+     "ok": true,
+     "n": 17,
+     "title": "INMOTION RS JET Electric Scooter | 50 MPH Dual Motor\n INMOTION RS JET Electric Scooter | 50 MPH Dual Motor"
+    },
+    {
+     "url": "https://eu.inmotionworld.com/products/inmotion-rs-jet",
+     "ok": true,
+     "n": 10,
+     "title": "INMOTION RS JET Electric Scooter | 50 MPH Dual Motor\n &ndash; INMOTION EU INMOTION RS JET Electric Scooter | 50 MPH Dual Motor"
+    },
+    {
+     "url": "https://www.inmotion-france.fr/en/e-scooters/865-inmotion-rs-jet-electric-scooter-72v-25ah-3701522012867.html",
+     "ok": false,
+     "n": 0,
+     "title": "Electric Scooter Inmotion RS Lite | Inmotion France Electric Scooter Inmotion RS Lite | Inmotion France"
+    },
+    {
+     "url": "https://www.trottnshop.com/produit/trottinette-electrique-inmotion-rs-jet/",
+     "ok": true,
+     "n": 0,
+     "title": "Trottinette Électrique Inmotion RS Jet | Trott'n'Shop Trottinette Électrique Inmotion RS Jet | Trott&#039;n&#039;Shop"
+    },
+    {
+     "url": "https://www.green220.com/fr/trottinettes-electriques/1921-trottinette-electrique-inmotion-rs-jet-72v-25ah-3701522012867.html",
+     "ok": true,
+     "n": 2,
+     "title": "Trottinette Electrique Inmotion RS Jet l Green220.fr  Trottinette Electrique Inmotion RS Jet l Green220.fr"
+    }
+   ],
+   "candidates": 10
+  },
+  {
+   "slug": "beaster-bs77",
+   "tokens": [
+    "bs",
+    "77"
+   ],
+   "pages": [
+    {
+     "url": "https://krinona.lt/elektriniai-paspirtukai/17245-elektrinis-paspirtukas-beaster-scooter-bs77-2400-w-60-v-234-ah-hidrauliniai-stabdziai.html",
+     "ok": false,
+     "n": 0,
+     "title": "HTTP 403"
+    },
+    {
+     "url": "https://www.e-ride.lv/products/item/electric-scooters/beaster-scooter/beaster-scooter-bs77-electric-scooter/",
+     "ok": false,
+     "n": 0,
+     "title": "erreur fetch failed"
+    },
+    {
+     "url": "https://powersport.lt/en/electric-scooters/electric-scooter-beaster-bs77-2400w-60v-234ah/751904",
+     "ok": true,
+     "n": 2,
+     "title": "Beaster Scooter BS77 Electric Scooter, 2400 W, 60 V, 23.4 Ah, Hydraulic Brakes, Off-Road - PowerSport.lt Beaster Scooter BS77 Electric Scooter, 2400 W, 60 V, 23"
+    },
+    {
+     "url": "https://mi-lab.lv/en/product/beaster-scooter-bs77-elektriskais-skrejritenis/",
+     "ok": false,
+     "n": 0,
+     "title": "HTTP 404"
+    },
+    {
+     "url": "https://www.senukai.lt/p/elektrinis-paspirtukas-beaster-scooter-bs77-juoda/ks1p",
+     "ok": false,
+     "n": 0,
+     "title": "HTTP 403"
+    }
+   ],
+   "candidates": 2
+  },
+  {
+   "slug": "ninebot-max-g2",
+   "tokens": [
+    "ninebot",
+    "max",
+    "g",
+    "2"
+   ],
+   "pages": [
+    {
+     "url": "https://store.segway.com/ninebot-kickscooter-max-g2",
+     "ok": true,
+     "n": 1,
+     "title": "Segway Ninebot KickScooter Max G2 | Powerful &amp; Long-Range Ride Segway Ninebot KickScooter Max G2 | Powerful &amp; Long-Range Ride"
+    },
+    {
+     "url": "https://www.segway.com/ekickscooter/products/max-g2.html",
+     "ok": false,
+     "n": 0,
+     "title": "Segway eKickScooter MAX G2 , Efficient Commute, Smooth Ride Segway eKickScooter MAX G2 , Efficient Commute, Smooth Ride"
+    },
+    {
+     "url": "https://www.segwayfrance.com/pages/ninebot-kickscooter-max-g2",
+     "ok": true,
+     "n": 1,
+     "title": "Ninebot MAX G2 : specs, autonomie 70 km | Segway France Ninebot MAX G2 : specs, autonomie 70 km | Segway France"
+    },
+    {
+     "url": "https://eu-en.segway.com/products/ninebot-kickscooter-max-g2e-powered-by-segway",
+     "ok": true,
+     "n": 0,
+     "title": "Segway eKickScooter Ninebot MAX G2 E Segway eKickScooter Ninebot MAX G2 E"
+    },
+    {
+     "url": "https://99bikes.com.au/products/segway-ninebot-kickscooter-max-g2-electric-scooter",
+     "ok": true,
+     "n": 12,
+     "title": "Segway Ninebot KickScooter MAX G2 Electric Scooter &ndash; 99 Bikes Segway Ninebot KickScooter MAX G2 Electric Scooter"
+    }
+   ],
+   "candidates": 10
+  },
+  {
+   "slug": "kingsong-n14-max",
+   "tokens": [
+    "n",
+    "14",
+    "max"
+   ],
+   "pages": [
+    {
+     "url": "https://www.kingsong-store.com/fr/KSN14",
+     "ok": false,
+     "n": 0,
+     "title": "HTTP 404"
+    },
+    {
+     "url": "https://www.kingsong.com/products/kingsong-n14-electric-scooter",
+     "ok": false,
+     "n": 0,
+     "title": "KingSong Electric Unicycles &amp; E-Scooters | Official Store\n\t KingSong Electric Unicycles &amp;amp; E-Scooters | Official Store"
+    },
+    {
+     "url": "https://www.kingsong-store.com/en/e-scooters/50-kingsong-ks-n14-48-v-10-4-ah-3701522001427.html",
+     "ok": false,
+     "n": 0,
+     "title": "Electric Scooter Kingsong KS-N14 l kingsong-store.com Electric Scooter Kingsong KS-N14 l kingsong-store.com"
+    },
+    {
+     "url": "https://www.mobilitix.fr/fr/KINGSONG/10006644-kingsong-ks-n14-max-trottinette-electrique-2200003963807.html",
+     "ok": false,
+     "n": 0,
+     "title": "HTTP 404"
+    },
+    {
+     "url": "https://www.fnac.com/Trottinette-electrique-Kingsong-KS-N14-Max-600-W-Noir-et-orange/a17361315/w-4",
+     "ok": false,
+     "n": 0,
+     "title": "HTTP 403"
+    }
+   ],
+   "candidates": 0
+  },
+  {
+   "slug": "urbanglide-urbanride-100xs",
+   "tokens": [
+    "urbanride",
+    "100",
+    "xs"
+   ],
+   "pages": [
+    {
+     "url": "https://urbanglide.com/en/produit/ride-100xs-reborn/",
+     "ok": false,
+     "n": 0,
+     "title": "RIDE 100XS REBORN\t\t RIDE 100XS REBORN - UrbanGlide"
+    },
+    {
+     "url": "https://www.boulanger.com/ref/9000400758",
+     "ok": false,
+     "n": 0,
+     "title": "erreur The operation was aborted due to timeout"
+    },
+    {
+     "url": "https://www.fnac.com/Trottinette-electrique-Urbanglide-Ride-100-XS-350-W-Noir/a15213307/w-4",
+     "ok": false,
+     "n": 0,
+     "title": "HTTP 403"
+    },
+    {
+     "url": "https://www.darty.com/nav/achat/sports_loisirs/glisse_urbaine/trottinette_electrique/urbanglide_ride_100_xs_7_5ah.html",
+     "ok": false,
+     "n": 0,
+     "title": "HTTP 403"
+    },
+    {
+     "url": "https://www.electrodepot.fr/trottinette-electrique-urbanride-100xs.html",
+     "ok": false,
+     "n": 0,
+     "title": "Trottinette électrique pas cher - Prix bas  - Electro Dépôt"
+    }
+   ],
+   "candidates": 0
+  },
+  {
+   "slug": "hitway-h5-pro",
+   "tokens": [
+    "h",
+    "5",
+    "pro"
+   ],
+   "pages": [
+    {
+     "url": "https://uk.hitway.eu/products/h5-pro-electric-scooter",
+     "ok": false,
+     "n": 0,
+     "title": "HITWAY Electric Bikes UK – Folding, Fat-Tyre &amp; Commuter E-Bikes\n &ndash; HITWAY UK HITWAY Electric Bikes UK – Folding, Fat-Tyre &amp; Commuter E-Bikes"
+    },
+    {
+     "url": "https://etrailz.co.uk/products/hitway-h5-pro-electric-scooter",
+     "ok": false,
+     "n": 0,
+     "title": "HTTP 404"
+    },
+    {
+     "url": "https://bsmartelectric.com/products/hitw-h5-pro-electric-scooter",
+     "ok": false,
+     "n": 0,
+     "title": "OLXTOTO > Arena Pasaran Bola Lengkap & Live Score 24 Jam Nonstop! OLXTOTO > Arena Pasaran Bola Lengkap & Live Score 24 Jam Nonstop!"
+    },
+    {
+     "url": "https://alphascootz.com/product/hitway-h5-pro-electric-scooter-max-speed-of-45kmh-800w-motor-24-month-warranty/",
+     "ok": false,
+     "n": 0,
+     "title": "SUNGAITOTO : Situs slot Gacor Cukup Depo 5K Nikmati Pengalaman Bermain Tanpa Takut Rungkad Berlebih SUNGAITOTO : Situs slot Gacor Cukup Depo 5K Nikmati Pengalam"
+    }
+   ],
+   "candidates": 0
+  },
+  {
+   "slug": "vsett-11-plus-super",
+   "tokens": [
+    "11",
+    "super"
+   ],
+   "pages": [
+    {
+     "url": "http://www.vsett.com/product/11.html",
+     "ok": false,
+     "n": 0,
+     "title": "VSETT SCOOTER,Smart travel，Travel"
+    },
+    {
+     "url": "https://vsett.com.au/products/vsett-11-electric-scooter-super-72",
+     "ok": true,
+     "n": 26,
+     "title": "Vsett 11+ SUPER Electric Scooter - 72V 35LG by Vsett Australia Pty Ltd - Free Delivery at VSETT Scooters\n\n\n Vsett 11+ SUPER Electric Scooter - 72V 35LG"
+    },
+    {
+     "url": "https://revrides.com/products/vsett-11-super-72v",
+     "ok": true,
+     "n": 6,
+     "title": "VSETT 11+ SUPER 72V Electric Scooter\n &ndash; REVRides VSETT 11+ SUPER 72V Electric Scooter"
+    },
+    {
+     "url": "https://www.evolt.eu/products/electric-scooter-vsett-11-super",
+     "ok": false,
+     "n": 0,
+     "title": "HTTP 403"
+    },
+    {
+     "url": "https://kissmywheels.ch/e-trott/vsett-11-super/",
+     "ok": true,
+     "n": 5,
+     "title": "VSETT 11+ SUPER - 3000 WATTS - KissMyWheels.ch VSETT 11+ SUPER - 3000 WATTS - KissMyWheels.ch"
+    }
+   ],
+   "candidates": 10
+  },
+  {
+   "slug": "kukirin-m4-max",
+   "tokens": [
+    "m",
+    "4",
+    "max"
+   ],
+   "pages": [
+    {
+     "url": "https://www.kukirin-officiel.com/en/products/trottinette-electrique-kukirin-m4-max",
+     "ok": true,
+     "n": 35,
+     "title": "Trottinette électrique KuKirin M4 Max – 800W, 64 km d’autonomie, 45 km/h - Kukirin Officiel - Kukirin Officiel trottinette électrique KuKirin M4 Max: Design Épu"
+    },
+    {
+     "url": "https://kukirinofficial.com/products/kukirin-m4-max-electric-scooter",
+     "ok": true,
+     "n": 15,
+     "title": "KuKirin M4 Max Electric Scooter – Official EU, UK &amp; US Store KuKirin M4 Max Electric Scooter – Official EU, UK &amp; US Store"
+    },
+    {
+     "url": "https://www.kukirin-scooter.com/products/kukirin-m4-max-electric-scooter",
+     "ok": false,
+     "n": 0,
+     "title": "KuKirin M4 Max Electric Scooter-Pro Suspension &amp; Metal Finish\n &ndash; Kukirin-Scooter KuKirin M4 Max Electric Scooter-Pro Suspension &amp; Metal Finish [variante : pro,pro]"
+    },
+    {
+     "url": "https://kukirin-france.com/products/kukirin-m4-max-electric-scooter",
+     "ok": true,
+     "n": 15,
+     "title": "Trottinette électrique KuKirin M4 MAX | Moteur 800 W, 45 km/h, autonomie 64 km\n&ndash; Kukirin FR Official\n Trottinette électrique KuKirin M4 Max"
+    },
+    {
+     "url": "https://kukirin-escooter-fr.com/products/trottinette-electrique-kukirin-m4-max",
+     "ok": true,
+     "n": 20,
+     "title": "Trottinette Électrique KuKirin M4 Max &ndash; KuKirin Escooter FR Trottinette Électrique KuKirin M4 Max | Moteur 800W | Vitesse Maximale 45 km/h"
+    }
+   ],
+   "candidates": 10
+  },
+  {
+   "slug": "beaster-bs15",
+   "tokens": [
+    "bs",
+    "15"
+   ],
+   "pages": [
+    {
+     "url": "https://www.derekis.lt/en/electric-scooter-beaster-scooter-bs15-1200-w-48-v-18-ah-for-off-road-use",
+     "ok": true,
+     "n": 1,
+     "title": "Electric scooter Beaster Scooter BS15, 1200 W, 48 V, 18 Ah, for off-road use | Scooters | LEISUSRE, SPORTS, TOURISM | derekis.lt Electric scooter Beaster Scoote"
+    },
+    {
+     "url": "https://www.1a.ee/p/elektriline-toukeratas-beaster-scooter-bs15-must/f2ib",
+     "ok": false,
+     "n": 0,
+     "title": "HTTP 403"
+    },
+    {
+     "url": "https://krinona.lt/elektriniai-paspirtukai/5146-elektrinis-paspirtukas-beaster-scooter-bs15-1200-w-48-v-18-ah-skirtas-bekelei.html",
+     "ok": false,
+     "n": 0,
+     "title": "HTTP 403"
+    },
+    {
+     "url": "https://houstera.lt/produktas/elektrinis-paspirtukas-beaster-scooter-bs15-1200w-48-v-18-ah/",
+     "ok": true,
+     "n": 12,
+     "title": "Elektrinis paspirtukas Beaster Scooter BS15 1200W 48 V 18 Ah - Houstera Elektrinis paspirtukas Beaster Scooter BS15"
+    },
+    {
+     "url": "https://powersport.lv/ru/elektriceskie-skutery/elektriceskij-samokat-beaster-scooter-bs15-1200-vt-48-v-18-ac/1138536",
+     "ok": false,
+     "n": 0,
+     "title": "HTTP 403"
+    }
+   ],
+   "candidates": 10
+  },
+  {
+   "slug": "ninebot-e2-plus-e-ii",
+   "tokens": [
+    "e",
+    "2",
+    "plus",
+    "e",
+    "ii"
+   ],
+   "pages": [
+    {
+     "url": "https://fr-fr.segway.com/ekickscooter/products/e2-plus-e-ii.html",
+     "ok": true,
+     "n": 0,
+     "title": "Trottinette électrique Segway eKickScooter Ninebot E2 Plus E II Trottinette électrique Segway eKickScooter Ninebot E2 Plus E II"
+    },
+    {
+     "url": "https://shop.segway.com/fr_fr/ninebot-kickscooter-e2pluse22-powered-by-segway-1.html",
+     "ok": false,
+     "n": 0,
+     "title": "Ninebot KickScooter E2 Plus E II Powered by Segway Ninebot&#x20;KickScooter&#x20;E2&#x20;Plus&#x20;E&#x20;II&#x20;Powered&#x20;by&#x20;Segway [variante : x,x,x,x,x,x,x,x]"
+    },
+    {
+     "url": "https://www.segwayfrance.com/boutique/Ninebot-KickScooter-E2-Plus-E-II-p691688564",
+     "ok": true,
+     "n": 1,
+     "title": "Trottinette Ninebot E2 Plus E II 25 km | Segway France Trottinette Ninebot E2 Plus E II 25 km | Segway France"
+    },
+    {
+     "url": "https://www.boulanger.com/ref/1208595",
+     "ok": false,
+     "n": 0,
+     "title": "erreur The operation was aborted due to timeout"
+    },
+    {
+     "url": "https://www.fnac.com/Trottinette-electrique-Ninebot-Segway-E2-Plus-II-E-300-W-Noir-et-Gris/a20653076/w-4",
+     "ok": false,
+     "n": 0,
+     "title": "HTTP 403"
+    }
+   ],
+   "candidates": 1
+  },
+  {
+   "slug": "weped-fold-3",
+   "tokens": [
+    "fold",
+    "3"
+   ],
+   "pages": [
+    {
+     "url": "https://weped-usa.com/product/fold3/308/",
+     "ok": true,
+     "n": 6,
+     "title": "FOLD3 - WEPED Mall FOLD3"
+    },
+    {
+     "url": "https://fastride.fr/fr/weped/3060-trottinette-electrique-weped-fold-3-.html",
+     "ok": false,
+     "n": 0,
+     "title": "HTTP 403"
+    },
+    {
+     "url": "https://dualtronnordic.com/en/product/weped-fold-3/",
+     "ok": false,
+     "n": 0,
+     "title": "HTTP 404"
+    },
+    {
+     "url": "https://erunnerrunning.fr/products/weped%C2%AE-fold-3",
+     "ok": false,
+     "n": 0,
+     "title": "erreur fetch failed"
+    },
+    {
+     "url": "https://trotinetch.pt/en/products/weped-fold-3",
+     "ok": true,
+     "n": 7,
+     "title": "WEPED FOLD 3 &ndash; Trotinetech WEPED FOLD 3"
+    }
+   ],
+   "candidates": 10
+  },
+  {
+   "slug": "beaster-diablo",
+   "tokens": [
+    "diablo"
+   ],
+   "pages": [
+    {
+     "url": "https://www.e-ride.lv/products/item/electric-scooters/beaster-scooter-electric-scooters/beaster-scooter-diablo-electric-scooter/",
+     "ok": false,
+     "n": 0,
+     "title": "erreur fetch failed"
+    },
+    {
+     "url": "https://powersport.lt/en/electric-scooters/electric-scooter-beaster-diablo-1000w-60v-208ah/751919",
+     "ok": true,
+     "n": 2,
+     "title": "Beaster Scooter Diablo Electric Scooter, 1000 W, 60 V, 20.8 Ah, off-road - PowerSport.lt Beaster Scooter Diablo Electric Scooter, 1000 W, 60 V, 20.8 Ah, off-roa"
+    },
+    {
+     "url": "https://powersport.lt/en/electric-scooters/beaster-scooter-diablo-electric-scooter-1000-w-60-v-208-ah-off-road/751921",
+     "ok": true,
+     "n": 2,
+     "title": "Beaster Scooter Diablo Electric Scooter, 1000 W, 60 V, 20.8 Ah, Off-Road - PowerSport.lt Beaster Scooter Diablo Electric Scooter, 1000 W, 60 V, 20.8 Ah, Off-Roa"
+    },
+    {
+     "url": "https://www.erasportas.lt/aktyvaus-laisvalaikio-turizmo-prekes/paspirtukai/elektriniai-paspirtukai/2473703-elektrinis-paspirtukas-beaster-scooter-diablo-1000-w-60-v-20-8-ah",
+     "ok": true,
+     "n": 10,
+     "title": "Elektrinis paspirtukas Beaster Scooter Diablo, 1000 W, 60 V, 20.8 Ah Elektrinis paspirtukas Beaster Scooter Diablo, 1000 W, 60 V, 20.8 Ah"
+    },
+    {
+     "url": "https://insportline.lt/en/751919/electric-scooter-beaster-diablo-1000w-60v-208ah",
+     "ok": true,
+     "n": 2,
+     "title": "Beaster Scooter Diablo Electric Scooter, 1000 W, 60 V, 20.8 Ah, off-road Beaster Scooter Diablo Electric Scooter, 1000 W, 60 V, 20.8 Ah, off-road"
+    }
+   ],
+   "candidates": 10
+  },
+  {
+   "slug": "nami-burn-e-2",
+   "tokens": [
+    "burn",
+    "e",
+    "2"
+   ],
+   "pages": [
+    {
+     "url": "https://fluidfreeride.com/products/nami-burn-e-2",
+     "ok": true,
+     "n": 21,
+     "title": "NAMI BURN-E 2 50mph Electric Scooter NAMI BURN-E 2 50mph Electric Scooter"
+    },
+    {
+     "url": "https://www.glisseurbaine.com/2380-trottinette-electrique-nami-burn-e-2.html",
+     "ok": false,
+     "n": 0,
+     "title": "erreur fetch failed"
+    },
+    {
+     "url": "https://pietechnologie.com/products/trottinette-electrique-nami-burn-e-2",
+     "ok": true,
+     "n": 21,
+     "title": "Trottinette électrique Nami Burn-e 2&nbsp;&ndash; PIE TECHNOLOGIE \n Nami Burn-e 2"
+    },
+    {
+     "url": "https://fluidfreeride.com/products/nami-burn-e-2-open-box-refurbished",
+     "ok": true,
+     "n": 21,
+     "title": "NAMI BURN-E 2 - Open Box &amp; Refurbished NAMI BURN-E 2 - Open Box &amp; Refurbished"
+    }
+   ],
+   "candidates": 10
+  },
+  {
+   "slug": "inokim-light-2-super",
+   "tokens": [
+    "light",
+    "2",
+    "super"
+   ],
+   "pages": [
+    {
+     "url": "https://inokim.com/products/light-2",
+     "ok": false,
+     "n": 0,
+     "title": "Light 2 Max 2025 Light 2 Max 2025"
+    },
+    {
+     "url": "https://twelve15brands.com/products/inokim-light-2-super",
+     "ok": false,
+     "n": 0,
+     "title": "erreur fetch failed"
+    },
+    {
+     "url": "https://www.fnac.com/Trottinette-electrique-Inokim-Light-2-Super-250-W-36-V-10-4-Ah-Noir/a12145074/w-4",
+     "ok": false,
+     "n": 0,
+     "title": "HTTP 403"
+    },
+    {
+     "url": "https://alternative.bike/540-trottinette-electrique-inokim-light-2-super.html",
+     "ok": false,
+     "n": 0,
+     "title": "Inokim Light 2 - trottinette électrique légère avec roue gonflable Inokim Light 2 - trottinette électrique légère avec roue gonflable"
+    },
+    {
+     "url": "https://www.mobilityurban.fr/trottinette-electrique/legere-et-compacte/trottinette-electrique-inokim-light-2-super.html",
+     "ok": true,
+     "n": 9,
+     "title": "Trottinette électrique légère et confort Inokim Light 2 Super Trottinette électrique INOKIM Light 2 Super"
+    }
+   ],
+   "candidates": 9
+  },
+  {
+   "slug": "inokim-mini-2",
+   "tokens": [
+    "mini",
+    "2"
+   ],
+   "pages": [
+    {
+     "url": "https://www.inokim-london.co.uk/Inokim-MINI2/",
+     "ok": false,
+     "n": 0,
+     "title": "erreur fetch failed"
+    },
+    {
+     "url": "https://www.inokim-france.com/produit/trottinette-electrique-inokim-mini-2/",
+     "ok": false,
+     "n": 0,
+     "title": "erreur fetch failed"
+    },
+    {
+     "url": "https://www.maxblinker.com/en/electric-scooters/inokim-mini-2",
+     "ok": true,
+     "n": 1,
+     "title": "INOKIM Mini 2 electric scooter - Enjoy the ride INOKIM Mini 2 electric scooter"
+    },
+    {
+     "url": "https://urbanmachina.com/products/inokim-mini-2",
+     "ok": true,
+     "n": 10,
+     "title": "INOKIM Mini 2\n &ndash; Urban Machina  INOKIM Mini 2"
+    },
+    {
+     "url": "https://www.motopanda.co/products/inokim-mini-2",
+     "ok": true,
+     "n": 6,
+     "title": "สกู๊ตเตอร์ไฟฟ้า Inokim Mini 2\n &ndash; MOTOPANDA สกู๊ตเตอร์ไฟฟ้า Inokim Mini 2"
+    }
+   ],
+   "candidates": 10
+  },
+  {
+   "slug": "ninebot-f3-e",
+   "tokens": [
+    "f",
+    "3",
+    "e"
+   ],
+   "pages": [
+    {
+     "url": "https://shop.segway.com/pt_en/f3-e.html",
+     "ok": false,
+     "n": 0,
+     "title": "F3 E Ninebot&#x20;F3&#x20;E [variante : x,x]"
+    },
+    {
+     "url": "https://www.segwayfrance.com/products/ninebot-f3-e-ekickscooter",
+     "ok": true,
+     "n": 17,
+     "title": "Ninebot F3 E | Trottinette Électrique 70 km | 1000 W | Segway France Ninebot F3 E | Trottinette Électrique 70 km | 1000 W | Segway France"
+    },
+    {
+     "url": "https://www.segwayfrance.com/boutique/Ninebot-F3-E-p719635328",
+     "ok": true,
+     "n": 1,
+     "title": "Ninebot F3 E | Trottinette Électrique 70 km | 1000 W | Segway France Ninebot F3 E | Trottinette Électrique 70 km | 1000 W | Segway France"
+    },
+    {
+     "url": "https://www.darty.com/nav/achat/sports_loisirs/glisse_urbaine/trottinette_electrique/segway_ninebot_f3_e.html",
+     "ok": false,
+     "n": 0,
+     "title": "HTTP 403"
+    },
+    {
+     "url": "https://www.fnac.com/Trottinette-electrique-Segway-Ninebot-F3-E-450-W-Gris-et-Noir/a21336197/w-4",
+     "ok": false,
+     "n": 0,
+     "title": "HTTP 403"
+    }
+   ],
+   "candidates": 10
+  },
+  {
+   "slug": "nami-stellar",
+   "tokens": [
+    "stellar"
+   ],
+   "pages": [
+    {
+     "url": "https://nami-electric.com/en/produit/stellar/",
+     "ok": true,
+     "n": 2,
+     "title": "STELLAR - Nami Electric STELLAR - Nami Electric"
+    },
+    {
+     "url": "https://nami-electric.ca/products/nami-stellar",
+     "ok": true,
+     "n": 9,
+     "title": "Nami Canada | Nami Stellar 2024 Nami Canada | Nami Stellar 2024"
+    },
+    {
+     "url": "https://www.wee-bot.com/products/trottinette-electrique-nami-stellar",
+     "ok": true,
+     "n": 22,
+     "title": "Trottinette Électrique Nami Stellar - Pas Cher\n Trottinette Électrique Nami Stellar"
+    },
+    {
+     "url": "https://fastride.fr/en/nami-electric/3481-trottinette-electrique-nami-stellar.html",
+     "ok": false,
+     "n": 0,
+     "title": "HTTP 403"
+    },
+    {
+     "url": "https://www.veloshop-obernai.com/products/nami-stellar",
+     "ok": false,
+     "n": 0,
+     "title": "Trottinettes électriques | Vélo Shop Obernai (Alsace) Trottinettes électriques | Vélo Shop Obernai (Alsace)"
+    }
+   ],
+   "candidates": 10
+  },
+  {
+   "slug": "xiaomi-electric-scooter-6-pro",
+   "tokens": [
+    "6",
+    "pro"
+   ],
+   "pages": [
+    {
+     "url": "https://www.mi.com/fr/product/xiaomi-electric-scooter-6-pro/",
+     "ok": true,
+     "n": 1,
+     "title": "Xiaomi Electric Scooter 6 Pro | Xiaomi France | Toutes les spécifications et fonctionnalités  Xiaomi Electric Scooter 6 Pro | Xiaomi France | Toutes les spécifi"
+    },
+    {
+     "url": "https://www.mi.com/global/product/xiaomi-electric-scooter-6-pro/",
+     "ok": true,
+     "n": 1,
+     "title": "Xiaomi Electric Scooter 6 Pro - Xiaomi Global Xiaomi Electric Scooter 6 Pro - Xiaomi Global"
+    },
+    {
+     "url": "https://www.mi.com/be-fr/product/xiaomi-electric-scooter-6-pro/",
+     "ok": true,
+     "n": 1,
+     "title": "Xiaomi Electric Scooter 6 Pro | Xiaomi Belgique | Toutes les spécifications et fonctionnalités  Xiaomi Electric Scooter 6 Pro | Xiaomi Belgique | Toutes les spé"
+    },
+    {
+     "url": "https://www.techpunt.nl/en/products/xiaomi-electric-scooter-6-pro",
+     "ok": true,
+     "n": 41,
+     "title": "Xiaomi Electric Scooter 6 Pro | 70 km range | TechPunt Xiaomi Electric Scooter 6 Pro | 70 km range | TechPunt"
+    },
+    {
+     "url": "https://voltride.com/electric-scooter-xiaomi-scooter-6-pro/",
+     "ok": true,
+     "n": 4,
+     "title": "Xiaomi Scooter 6 Pro | Voltride Xiaomi Scooter 6 Pro | Voltride"
+    }
+   ],
+   "candidates": 10
+  },
+  {
+   "slug": "laotie-es19",
+   "tokens": [
+    "es",
+    "19"
+   ],
+   "pages": [
+    {
+     "url": "https://laotie.fr/trottinette-electrique-adulte/laotie-es19/",
+     "ok": false,
+     "n": 0,
+     "title": "erreur fetch failed"
+    },
+    {
+     "url": "https://www.laotie.zone/ES19-Steering-Damper-Scooter-6000W-135km-Mileage-p-1796950.html",
+     "ok": true,
+     "n": 1,
+     "title": "ES19 Steering Damper Scooter, 6000W 135km Mileage - LAOTIE ES19 Steering Damper Scooter, 6000W 135km Mileage"
+    },
+    {
+     "url": "https://www.mr-trott.fr/trottinette-%C3%A9lectrique-laotie-es19,ref=79",
+     "ok": true,
+     "n": 1,
+     "title": "Trottinette électrique laotie es19 1 707 € | Mr.trott"
+    },
+    {
+     "url": "https://electro-france.com/trottinette-electrique-4000w-575",
+     "ok": true,
+     "n": 0,
+     "title": "Laotie ES19 4000W Electric Scooter"
+    }
+   ],
+   "candidates": 2
+  },
+  {
+   "slug": "xiaomi-mi-m365",
+   "tokens": [
+    "mi",
+    "m",
+    "365"
+   ],
+   "pages": [
+    {
+     "url": "https://www.mi.com/fr/mi-electric-scooter/specs/",
+     "ok": false,
+     "n": 0,
+     "title": "Xiaomi France"
+    },
+    {
+     "url": "https://www.fnac.com/Trottinette-electrique-pliable-Xiaomi-M365-Mi-Electric-Scooter-Blanc/a12708094/w-4",
+     "ok": false,
+     "n": 0,
+     "title": "HTTP 403"
+    },
+    {
+     "url": "https://www.fnac.com/Trottinette-electrique-pliable-Xiaomi-M365-Mi-250W-Noir/a12546064/w-4",
+     "ok": false,
+     "n": 0,
+     "title": "HTTP 403"
+    },
+    {
+     "url": "https://www.glisseurbaine.com/308-trottinette-electrique-xiaomi-m365-originale-version-europe.html",
+     "ok": false,
+     "n": 0,
+     "title": "erreur fetch failed"
+    }
+   ],
+   "candidates": 0
+  },
+  {
+   "slug": "yeep-me-120a-pro",
+   "tokens": [
+    "120",
+    "a",
+    "pro"
+   ],
+   "pages": [
+    {
+     "url": "https://yeep.me/trottinettes-electriques/1856-yeepme-120a-pro-12-800w-60km-3700293232993.html",
+     "ok": false,
+     "n": 0,
+     "title": "yeep.me 100 a Sport yeep.me 100 a Sport"
+    },
+    {
+     "url": "https://www.boulanger.com/ref/9000921134",
+     "ok": false,
+     "n": 0,
+     "title": "erreur The operation was aborted due to timeout"
+    },
+    {
+     "url": "https://www.fnac.com/mp52578366/Trottinette-electrique-YEEP-ME-120a-PRO-2025-Grandes-Roues-12-800W-15Ah-60km-NFC-Clignotants/w-4",
+     "ok": false,
+     "n": 0,
+     "title": "HTTP 403"
+    },
+    {
+     "url": "https://www.darty.com/nav/achat/ref/MC352578366.html",
+     "ok": false,
+     "n": 0,
+     "title": "HTTP 403"
+    }
+   ],
+   "candidates": 0
+  },
+  {
+   "slug": "punk-rider-pro",
+   "tokens": [
+    "rider",
+    "pro"
+   ],
+   "pages": [
+    {
+     "url": "https://punkelectric.eu/products/punk-rider-pro-new",
+     "ok": true,
+     "n": 24,
+     "title": "Punk Rider Pro\n &ndash; Punk Electric Punk Rider Pro"
+    },
+    {
+     "url": "https://punkelectricusa.com/punk-rider/",
+     "ok": false,
+     "n": 0,
+     "title": "Punk Rider &#8211; Punk Electric"
+    },
+    {
+     "url": "https://www.mobilityurban.fr/trottinette-electrique/puissante/trottinette-electrique-punk-rider-pro.html",
+     "ok": false,
+     "n": 0,
+     "title": "Trottinette électrique PUNK RIDER PRO I ETANCHE I DOUBLE MOTEUR Trottinette électrique PUNK RIDER PRO /PRO MAX [variante : max]"
+    },
+    {
+     "url": "https://alternative.bike/862-punk-rider-pro.html",
+     "ok": true,
+     "n": 1,
+     "title": "Trottinette electrique Punk Rider Pro Trottinette electrique Punk Rider Pro"
+    },
+    {
+     "url": "https://www.eleqtron.fr/products/trottinette-electrique-punk-rider-simple-moteur-copie",
+     "ok": false,
+     "n": 0,
+     "title": "Punk &#8211; Eleqtron"
+    }
+   ],
+   "candidates": 10
+  },
+  {
+   "slug": "beaster-bs65",
+   "tokens": [
+    "bs",
+    "65"
+   ],
+   "pages": [
+    {
+     "url": "https://krinona.lt/elektriniai-paspirtukai/16385-elektrinis-paspirtukas-beaster-scooter-bs65-2-x-1600-w-52-v-208-ah-diskiniai-stabdziai.html",
+     "ok": false,
+     "n": 0,
+     "title": "HTTP 403"
+    },
+    {
+     "url": "https://insportline.lt/en/751902/electric-scooter-beaster-bs65-2-x-1600w-52v-208ah",
+     "ok": false,
+     "n": 0,
+     "title": "Electric Scooter Beaster Scooter BS65, 2 x 1600 W, 52 V, 20.8 Ah, disc brakes, off-road Electric Scooter Beaster Scooter BS65, 2 x 1600 W, 52 V, 20.8 Ah, disc b [variante : x,x]"
+    },
+    {
+     "url": "https://powersport.lt/en/electric-scooters/electric-scooter-beaster-scooter-bs65-2-x-1600-w-52-v-208-ah-disc-brakes-off-road/751902",
+     "ok": false,
+     "n": 0,
+     "title": "Electric Scooter Beaster Scooter BS65, 2 x 1600 W, 52 V, 20.8 Ah, disc brakes, off-road - PowerSport.lt Electric Scooter Beaster Scooter BS65, 2 x 1600 W, 52 V, [variante : x,x]"
+    },
+    {
+     "url": "https://www.1a.lv/p/elektriskais-skuteris-beaster-scooter-bs65-melna-sarkana/f875",
+     "ok": false,
+     "n": 0,
+     "title": "HTTP 403"
+    },
+    {
+     "url": "https://www.morele.net/hulajnoga-elektryczna-beaster-bs65-14076309/",
+     "ok": true,
+     "n": 1,
+     "title": "Beaster BS65 - Hulajnoga elektryczna - Morele.net Beaster BS65 - Hulajnoga elektryczna - Morele.net"
+    }
+   ],
+   "candidates": 1
+  },
+  {
+   "slug": "xiaomi-electric-scooter-6-ultra",
+   "tokens": [
+    "6",
+    "ultra"
+   ],
+   "pages": [
+    {
+     "url": "https://www.mi.com/fr/product/xiaomi-electric-scooter-6-ultra/",
+     "ok": true,
+     "n": 0,
+     "title": "Xiaomi Electric Scooter 6 Ultra | Xiaomi France | Toutes les spécifications et fonctionnalités  Xiaomi Electric Scooter 6 Ultra | Xiaomi France | Toutes les spé"
+    },
+    {
+     "url": "https://www.mi.com/global/product/xiaomi-electric-scooter-6-ultra/",
+     "ok": true,
+     "n": 0,
+     "title": "Xiaomi Electric Scooter 6 Ultra - Xiaomi Global Xiaomi Electric Scooter 6 Ultra - Xiaomi Global"
+    },
+    {
+     "url": "https://www.mi.com/be-fr/product/xiaomi-electric-scooter-6-ultra/",
+     "ok": true,
+     "n": 1,
+     "title": "Xiaomi Electric Scooter 6 Ultra | Xiaomi Belgique | Toutes les spécifications et fonctionnalités  Xiaomi Electric Scooter 6 Ultra | Xiaomi Belgique | Toutes les"
+    },
+    {
+     "url": "https://www.mi.com/fr/product/xiaomi-electric-scooter-6-ultra/specs/",
+     "ok": true,
+     "n": 0,
+     "title": "Xiaomi Electric Scooter 6 Ultra Spécifications, Fonctionnalités | Xiaomi France Xiaomi Electric Scooter 6 Ultra Spécifications, Fonctionnalités | Xiaomi France"
+    }
+   ],
+   "candidates": 1
+  },
+  {
+   "slug": "yeep-me-100a-start",
+   "tokens": [
+    "100",
+    "a",
+    "start"
+   ],
+   "pages": [
+    {
+     "url": "https://yeep.me/trottinettes-electriques/1244-yeepme-100a-start-3700293223403.html",
+     "ok": true,
+     "n": 1,
+     "title": "yeep.me 100a Start yeep.me 100a Start"
+    },
+    {
+     "url": "https://www.boulanger.com/ref/9000680456",
+     "ok": false,
+     "n": 0,
+     "title": "erreur The operation was aborted due to timeout"
+    },
+    {
+     "url": "https://www.darty.com/nav/achat/ref/MC350101484.html",
+     "ok": false,
+     "n": 0,
+     "title": "HTTP 403"
+    },
+    {
+     "url": "https://www.decathlon.fr/p/mp/yeep-me/trottinette-electrique-yeep-me-100a-start-10-500w-30km-garantie-5-ans/_/R-p-32b15d35-5f99-4dfc-912c-61bee6f93177",
+     "ok": false,
+     "n": 0,
+     "title": "HTTP 403"
+    }
+   ],
+   "candidates": 1
+  },
+  {
+   "slug": "urbanglide-ecross-pro-boost-2",
+   "tokens": [
+    "ecross",
+    "pro",
+    "boost",
+    "2"
+   ],
+   "pages": [
+    {
+     "url": "https://urbanglide.com/en/produit/e-cross-pro-boost-2/",
+     "ok": true,
+     "n": 1,
+     "title": "E-CROSS PRO BOOST 2\t\t E-CROSS PRO BOOST 2 - UrbanGlide"
+    },
+    {
+     "url": "https://www.boulanger.com/ref/1204888",
+     "ok": false,
+     "n": 0,
+     "title": "erreur The operation was aborted due to timeout"
+    },
+    {
+     "url": "https://www.darty.com/nav/achat/sports_loisirs/glisse_urbaine/trottinette_electrique/urbanglide_ecross_pro_boost_2.html",
+     "ok": false,
+     "n": 0,
+     "title": "HTTP 403"
+    },
+    {
+     "url": "https://m365france.fr/accueil/5512-e-cross-pro-boost-2.html",
+     "ok": true,
+     "n": 2,
+     "title": "Trottinette électrique Urbanglide E-Cross Pro Boost 2 | M365 France Trottinette électrique Urbanglide E-Cross Pro Boost 2 | M365 France"
+    },
+    {
+     "url": "https://www.cdiscount.com/le-sport/mobilite-urbaine/trottinette-electrique-tout-terrain-urbanglide/f-1214801-urb3700092657164.html",
+     "ok": false,
+     "n": 0,
+     "title": "Cdiscount Cdiscount.com"
+    }
+   ],
+   "candidates": 3
+  },
+  {
+   "slug": "vsett-8",
+   "tokens": [
+    "8"
+   ],
+   "pages": [
+    {
+     "url": "https://vsett.com/products/vsett-8",
+     "ok": false,
+     "n": 0,
+     "title": "erreur fetch failed"
+    },
+    {
+     "url": "https://vsettscooters.com/pages/vsett-8",
+     "ok": true,
+     "n": 0,
+     "title": "VSETT 8 &ndash; VSETT Official\n     VSETT 8"
+    },
+    {
+     "url": "https://vsett-shop.com/product/vsett-8/",
+     "ok": true,
+     "n": 3,
+     "title": "VSETT 8/8+ - Vsett Shop Europe VSETT 8/8+ - Vsett Shop Europe"
+    },
+    {
+     "url": "https://store-vsett.com/",
+     "ok": false,
+     "n": 0,
+     "title": "Green220.com : Expert en Trottinettes Electriques et Gyroroues Green220.com"
+    },
+    {
+     "url": "https://www.gyro-phare.com/124-trottinette-electrique-vsett-8-48-v-156ah-lite.html",
+     "ok": false,
+     "n": 0,
+     "title": "erreur fetch failed"
+    }
+   ],
+   "candidates": 3
+  },
+  {
+   "slug": "kugoo-g3",
+   "tokens": [
+    "g",
+    "3"
+   ],
+   "pages": [
+    {
+     "url": "https://kugoo.eu/products/kugookirin-g3-adventurers-dream-electric-scooter-1200w-rear-motor-52v-18ah-lithium-battery-touchable-display-control-panel-tpu-suspension-system",
+     "ok": false,
+     "n": 0,
+     "title": "Kugoo Electric Scooters - Your Top Choice Commute Solution Electric Scooters"
+    },
+    {
+     "url": "https://www.kugooscooterusa.com/products/kugookirin-g3-electric-scooter-2024",
+     "ok": true,
+     "n": 2,
+     "title": "Kugoo Kirin G3 All-terrain Electric Scooter KUKIRIN G3 Electric Scooter | 936WH Power | 1200W Motor"
+    },
+    {
+     "url": "https://www.ridetric.fr/products/trottinette-electrique-kugoo-kirin-g3-chez-ridetric",
+     "ok": false,
+     "n": 0,
+     "title": "HTTP 402"
+    },
+    {
+     "url": "https://projetancien.moveelec.fr/product/trottinette-electrique-kugoo-kirin-g3-2/",
+     "ok": true,
+     "n": 9,
+     "title": "Trottinette électrique Kugoo Kirin G3 - Moveelec Trottinette électrique Kugoo Kirin G3 - Moveelec"
+    },
+    {
+     "url": "https://www.franmarche.com/product/trottinette-electrique-kugoo-kirin-g3-1200w-60-km-h/",
+     "ok": false,
+     "n": 0,
+     "title": "Trottinette électrique KUGOO Kirin G3, 1200W, 60 km/h Trottinette électrique KUGOO Kirin G3, 1200W, 60 km/h, Portée Max 60km – Noir [variante : max]"
+    }
+   ],
+   "candidates": 10
+  },
+  {
+   "slug": "speedway-mini-4-pro-lite",
+   "tokens": [
+    "mini",
+    "4",
+    "pro",
+    "lite"
+   ],
+   "pages": [
+    {
+     "url": "https://www.wee-bot.com/products/trottinette-electrique-speedway-mini-4-pro-lite",
+     "ok": true,
+     "n": 14,
+     "title": "Trottinette Électrique Speedway Mini 4 Pro Lite - Pas Cher\n Trottinette Électrique Speedway Mini 4 Pro Lite"
+    },
+    {
+     "url": "https://www.glisseurbaine.com/438-trottinette-electrique-speedway-mini-4-pro-lite-10-ah-36-v.html",
+     "ok": false,
+     "n": 0,
+     "title": "erreur fetch failed"
+    },
+    {
+     "url": "https://funtrott.fr/trottinette-electrique-minimotors-speedway/1276-trottinette-electrique-speedway-mini-4-pro-lite.html",
+     "ok": true,
+     "n": 2,
+     "title": "Achat de Trottinette Speedway Mini pro lite - 36V 10,4Ah au meilleur prix sur Funtrott.fr, Livraison 24H/48H"
+    },
+    {
+     "url": "https://www.trottnscoot.com/produit/trottinette-electrique-speedway-mini-4-pro-lite/",
+     "ok": true,
+     "n": 1,
+     "title": "Trottinette électrique Speedway Mini 4 pro LITE - Trott&#039;n&#039;Scoot, Have elec fun ! Trottinette électrique Speedway Mini 4 pro LITE - Trott&#039;n&#039;S"
+    },
+    {
+     "url": "https://www.urbanmoov.fr/boutique/Speedway-Mini-4-Pro-Lite-p699017233",
+     "ok": false,
+     "n": 0,
+     "title": "Boutique Urban Moov - Magasin de trottinettes électriques à Dijon"
+    }
+   ],
+   "candidates": 10
+  },
+  {
+   "slug": "kukirin-t4",
+   "tokens": [
+    "t",
+    "4"
+   ],
+   "pages": [
+    {
+     "url": "https://kukirin-escooter.com/products/kukirin-t4-electric-scooter",
+     "ok": true,
+     "n": 15,
+     "title": "KuKirin T4 Electric Scooter | Pre-order KuKirin T4 Electric Scooter | Pre-order"
+    },
+    {
+     "url": "https://fr.kukirin-escooter.com/products/kukirin-t4-electric-scooter",
+     "ok": true,
+     "n": 15,
+     "title": "Trottinette électrique KuKirin T4 | Précommande Trottinette électrique KuKirin T4 | Précommande"
+    },
+    {
+     "url": "https://kukirin-eu.com/products/kukirin-t4-eu-electric-scooter",
+     "ok": true,
+     "n": 26,
+     "title": "KuKirin T4 E-Scooter | 1500W Motor, 52V 22.5AH, 65km/h, 65km Range\n &ndash; Kukirin Official KuKirin T4 E-Scooter | 1500W Motor, 52V 22.5AH, 65km/h, 65km Range"
+    },
+    {
+     "url": "https://www.kukirinstore.com/fr/products/kukirin-t4-electric-scooter",
+     "ok": true,
+     "n": 13,
+     "title": "KuKirin T4 Electric Scooter\n &ndash; Kukirin KuKirin T4 Electric Scooter"
+    },
+    {
+     "url": "https://kukirin.global/collections/off-road-e-scooters/products/kukirin-t4-electric-scooter",
+     "ok": true,
+     "n": 26,
+     "title": "KuKirin T4 E-Scooter | 1500W Motor, 52V 22.5AH, 65km/h, 65km Range &ndash; Kukirin Official KuKirin T4 E-Scooter | 1500W Motor, 52V 22.5AH, 65km/h, 65km Range"
+    }
+   ],
+   "candidates": 10
+  },
+  {
+   "slug": "dualtron-togo-plus",
+   "tokens": [
+    "togo",
+    "plus"
+   ],
+   "pages": [
+    {
+     "url": "https://dualtron.uk/collections/dualtron-togo",
+     "ok": false,
+     "n": 0,
+     "title": "Dualtron Togo\n &ndash; Dualtron.uk Dualtron Togo"
+    },
+    {
+     "url": "https://dualtronusa.com/products/dualtron-togo-electric-scooter",
+     "ok": false,
+     "n": 0,
+     "title": "Dualtron USA | Official Dualtron Electric Scooter Dealer &amp; Distributor Dualtron USA | Official Dualtron Electric Scooter Dealer &amp; Distributor"
+    },
+    {
+     "url": "https://fixwheel.fr/en/products/dualtron-togo-plus-48v-12ah-master",
+     "ok": true,
+     "n": 8,
+     "title": "MINIMOTORS Dualtron ToGo plus 48V 12AH electric scooter &ndash; FixWheel\n\t MINIMOTORS Dualtron ToGo plus 48V 12AH electric scooter"
+    },
+    {
+     "url": "https://www.imooving.com/trottinettes-electriques/1710-trottinette-electrique-dualtron-togo-plus-48v15a-3701122103347.html",
+     "ok": true,
+     "n": 1,
+     "title": "Dualtron Togo Plus | iMooving Batterie 48V 15Ah\n          \n     Dualtron Togo Plus | iMooving Batterie 48V 15Ah"
+    },
+    {
+     "url": "https://vepace.com/products/dualtron-togo-plus-electric-scooter",
+     "ok": true,
+     "n": 19,
+     "title": "DUALTRON TOGO+ PLUS Electric Scooter DUALTRON TOGO PLUS Electric Scooter"
+    }
+   ],
+   "candidates": 10
+  },
+  {
+   "slug": "kingsong-s2-pro",
+   "tokens": [
+    "s",
+    "2",
+    "pro"
+   ],
+   "pages": [
+    {
+     "url": "https://www.gyroroue-shop.fr/boutique/trottinette-electrique/kingsong-trottinette-electrique/kingsong-s2-pro",
+     "ok": true,
+     "n": 7,
+     "title": "KINGSONG S2 PRO KS S2 | 1000 W | 60 V 14.5 Wh⎪GS TROTTINETTE KINGSONG N1-A"
+    },
+    {
+     "url": "https://www.trottnshop.com/produit/kingsong-s2-pro/",
+     "ok": true,
+     "n": 0,
+     "title": "Kingsong S2 Pro | Trott'n'Shop Kingsong S2 Pro | Trott&#039;n&#039;Shop"
+    },
+    {
+     "url": "https://www.trottnscoot.com/produit/trottinette-electrique-kingsong-s2-pro/",
+     "ok": true,
+     "n": 1,
+     "title": "Trottinette électrique Kingsong S2 Pro - Trott&#039;n&#039;Scoot, Have elec fun ! Trottinette électrique Kingsong S2 Pro - Trott&#039;n&#039;Scoot, Have elec fu"
+    },
+    {
+     "url": "https://www.mobilityurban.fr/trottinette-electrique/a-grandes-roues/trottinette-electrique-kingsong-s2-pro-1000w-60v-16ah.html",
+     "ok": true,
+     "n": 5,
+     "title": "Trottinette électrique Kingsong S2 Pro 1000W 60V 16Ah Trottinette électrique Kingsong S2 Pro 1000W 60V 16Ah"
+    }
+   ],
+   "candidates": 10
+  },
+  {
+   "slug": "joyor-s10-s-z",
+   "tokens": [
+    "s",
+    "10",
+    "s",
+    "z"
+   ],
+   "pages": [
+    {
+     "url": "https://joyor.com/products/joyor-s10-s-z-uk-electric-scooter",
+     "ok": true,
+     "n": 19,
+     "title": "Joyor S10-S-Z E-Scooter | 1000W*2 Dual Motor, 25km/h, 75km Range\n &ndash; Joyor Official Joyor S10-S-Z E-Scooter | 1000W*2 Dual Motor, 25km/h, 75km Range"
+    },
+    {
+     "url": "https://joyorscooter.com/products/joyor-s10-s-z-electric-scooter",
+     "ok": true,
+     "n": 11,
+     "title": "Joyor S10-S-Z Electric Scooter | 2000W Power, All-Terrain, 70km Range\n&ndash; Joyor Electric Scooter Joyor S10-S-Z Electric Scooter | 2000W Power, All-Terrain, "
+    },
+    {
+     "url": "https://joyorescooter.com/products/eujoyor-s10-s-z",
+     "ok": true,
+     "n": 26,
+     "title": "[EU]JOYOR S10-S-Z\n&ndash; JOYOR_US\n [EU]JOYOR S10-S-Z"
+    },
+    {
+     "url": "https://www.boulanger.com/ref/9000921739",
+     "ok": false,
+     "n": 0,
+     "title": "erreur The operation was aborted due to timeout"
+    },
+    {
+     "url": "https://www.darty.com/nav/achat/sports_loisirs/glisse_urbaine/trottinette_electrique/joyor_s10-s-z.html",
+     "ok": false,
+     "n": 0,
+     "title": "HTTP 403"
+    }
+   ],
+   "candidates": 10
+  },
+  {
+   "slug": "kaabo-wolf-king-gt-pro",
+   "tokens": [
+    "wolf",
+    "king",
+    "gt",
+    "pro"
+   ],
+   "pages": [
+    {
+     "url": "https://www.kaabousa.com/products/kaabo-king-gt-pro-electric-scooter",
+     "ok": false,
+     "n": 0,
+     "title": "Kaabo King GT Pro: Ultimate Off-Road Scooter - 2000WX2 &amp; 62 MPH | Kaabo USA\n King GT Pro"
+    },
+    {
+     "url": "https://kaabomantis.com/shop/kaabo-wolf-king-gt-pro/",
+     "ok": true,
+     "n": 15,
+     "title": "Wolf King GT Pro - Kaabo®Official Shop | Wolf Warrior | Free Shipping Wolf King GT Pro - Kaabo®Official Shop | Wolf Warrior | Free Shipping"
+    },
+    {
+     "url": "https://www.wee-bot.com/products/trottinette-electrique-kaabo-wolf-king-gt-pro",
+     "ok": true,
+     "n": 20,
+     "title": "Trottinette Électrique Kaabo Wolf King GT Pro - Pas Cher\n Trottinette Électrique Kaabo Wolf King GT Pro"
+    },
+    {
+     "url": "https://www.trottnscoot.com/produit/trottinette-electrique-kaabo-wolf-king-gt-pro/",
+     "ok": true,
+     "n": 1,
+     "title": "Trottinette électrique KAABO Wolf King GT PRO + - Trott&#039;n&#039;Scoot, Have elec fun ! Trottinette électrique KAABO Wolf King GT PRO + - Trott&#039;n&#039;S"
+    },
+    {
+     "url": "https://turbokids.ca/en/products/kaabo-wolf-king-gt-pro-trottinette-electrique-72-volts-35ah-2x2000-watts-8400-watts-crete",
+     "ok": false,
+     "n": 0,
+     "title": "Turbokids.ca / Electric and gasoline recreational vehicles in Quebec Turbokids.ca / Electric and gasoline recreational vehicles in Quebec"
+    }
+   ],
+   "candidates": 10
+  },
+  {
+   "slug": "joyor-s8-s",
+   "tokens": [
+    "s",
+    "8",
+    "s"
+   ],
+   "pages": [
+    {
+     "url": "https://joyor.biz/produkt/electric-scooter-joyor-s8-s/",
+     "ok": false,
+     "n": 0,
+     "title": "erreur fetch failed"
+    },
+    {
+     "url": "https://www.joyor-eu.com/products/joyor-s8-s-ops4",
+     "ok": false,
+     "n": 0,
+     "title": "HTTP 404"
+    },
+    {
+     "url": "https://www.trottnshop.com/produit/joyor-s8-s/",
+     "ok": true,
+     "n": 0,
+     "title": "JOYOR S8-S | Trott'n'Shop JOYOR S8-S | Trott&#039;n&#039;Shop"
+    },
+    {
+     "url": "https://www.trottnscoot.com/produit/trottinette-electrique-joyor-s8-s/",
+     "ok": true,
+     "n": 1,
+     "title": "Trottinette électrique JOYOR S8-S - Trott&#039;n&#039;Scoot, Have elec fun ! Trottinette électrique JOYOR S8-S - Trott&#039;n&#039;Scoot, Have elec fun !"
+    }
+   ],
+   "candidates": 1
+  },
+  {
+   "slug": "dualtron-alien",
+   "tokens": [
+    "alien"
+   ],
+   "pages": [
+    {
+     "url": "https://www.minimotors.fr/en/shop/mmdualtronalien72v40a2026-trottinette-electrique-dualtron-alien-72v-40ah-2026-13008",
+     "ok": true,
+     "n": 1,
+     "title": "TROTTINETTE ELECTRIQUE DUALTRON ALIEN | 72V 40Ah 2026 | Minimotors.fr  TROTTINETTE ELECTRIQUE DUALTRON ALIEN | 72V 40Ah 2026"
+    },
+    {
+     "url": "https://dualtron-shop.com/product/dualtron-sonic-model-a-alien/",
+     "ok": false,
+     "n": 0,
+     "title": "HTTP 403"
+    },
+    {
+     "url": "https://dualtron-store.com/index.php/produit/dualtron-alien-sonic-model-a/",
+     "ok": true,
+     "n": 1,
+     "title": "Dualtron Alien - Sonic model A - remplaçante de la Thunder !"
+    },
+    {
+     "url": "https://www.maisondelatrott.fr/products/trottinette-electrique-dualtron-sonic-alien",
+     "ok": true,
+     "n": 10,
+     "title": "Trottinette Électrique Dualtron Alien V2 | 72V 40Ah &ndash; La Maison de la Trott&#39; Trottinette Électrique Dualtron Alien V2 | 72V 40Ah"
+    },
+    {
+     "url": "https://www.trotnation.com/products/dualtron-alien-v2-72v-40ah-2026-trottinette-electrique",
+     "ok": true,
+     "n": 16,
+     "title": "Trottinette électrique Dualtron Alien V2 | Trot&#39;Nation\n    \n    \n    \n    &ndash; Trot'Nation\n    \n     Dualtron Sonic Alien 2026 – 72V 40Ah"
+    }
+   ],
+   "candidates": 10
+  },
+  {
+   "slug": "dualtron-victor-luxury-plus",
+   "tokens": [
+    "victor",
+    "luxury",
+    "plus"
+   ],
+   "pages": [
+    {
+     "url": "https://www.minimotors.fr/product/dualtron-victor-luxury-plus/",
+     "ok": false,
+     "n": 0,
+     "title": "Boutique trottinettes électriques &amp; pièces | Minimotors Boutique trottinettes électriques &amp; pièces | Minimotors"
+    },
+    {
+     "url": "https://dualtronusa.com/products/dualtron-victor-luxury-2-0",
+     "ok": false,
+     "n": 0,
+     "title": "Dualtron Victor Luxury + 2.0 | 50 MPH, Extended Deck - Dualtron USA Dualtron Victor Luxury + 2.0"
+    },
+    {
+     "url": "https://dualtroneurope.com/en/dualtron/824-dualtron-victor-luxury-plus.html",
+     "ok": false,
+     "n": 0,
+     "title": "HTTP 503"
+    },
+    {
+     "url": "https://www.wee-bot.com/products/trottinette-electrique-dualtron-victor-luxury-plus",
+     "ok": true,
+     "n": 48,
+     "title": "Trottinette Électrique Dualtron Victor Luxury Plus - Pas Cher\n Trottinette Électrique Dualtron Victor Luxury Plus"
+    },
+    {
+     "url": "https://www.eleqtron.fr/products/trottinette-electrique-dualtron-victor-luxury-24-ah",
+     "ok": false,
+     "n": 0,
+     "title": "Dualtron &#8211; Eleqtron"
+    }
+   ],
+   "candidates": 10
+  },
+  {
+   "slug": "dualtron-spider-2",
+   "tokens": [
+    "spider",
+    "2"
+   ],
+   "pages": [
+    {
+     "url": "https://dual-tron.ca/products/dualtron-spider-2",
+     "ok": true,
+     "n": 8,
+     "title": "Dualtron Spider 2\n &ndash; DUALTRON CANADA Dualtron Spider 2"
+    },
+    {
+     "url": "https://www.dualtronnordic.com/en/shop/dualtron-spider-2-gen-2-120",
+     "ok": true,
+     "n": 2,
+     "title": "Dualtron Spider 2 (Gen 2) Electric Scooter | Dualtron Nordic Dualtron Spider 2 (Gen 2) Electric Scooter | Dualtron Nordic"
+    },
+    {
+     "url": "https://pietechnologie.com/products/trottinette-electrique-dualtron-spider-2",
+     "ok": true,
+     "n": 13,
+     "title": "Trottinette électrique Dualtron Spider 2 - 60V 24Ah / 30Ah - Pie Technologie&nbsp;&ndash; PIE TECHNOLOGIE \n Trottinette électrique Dualtron Spider 2 - 60V 24Ah "
+    },
+    {
+     "url": "https://velos-patton.com/products/trottinette-electrique-dualtron-spider-2",
+     "ok": false,
+     "n": 0,
+     "title": "HTTP 404"
+    },
+    {
+     "url": "https://www.glisseurbaine.com/2061-trottinette-electrique-dualtron-spider-2.html",
+     "ok": false,
+     "n": 0,
+     "title": "erreur fetch failed"
+    }
+   ],
+   "candidates": 10
+  },
+  {
+   "slug": "teverun-fighter-supreme-ultra",
+   "tokens": [
+    "fighter",
+    "supreme",
+    "ultra"
+   ],
+   "pages": [
+    {
+     "url": "https://teverun.com/product/fighter-supreme-ultra/",
+     "ok": true,
+     "n": 0,
+     "title": "FIGHTER SUPREME ULTRA: 105km/h Speed | 9200W Power Scooter FIGHTER SUPREME ULTRA: 105km/h Speed | 9200W Power Scooter"
+    },
+    {
+     "url": "https://www.teverunusa.com/products/fighter-supreme-ultra",
+     "ok": true,
+     "n": 10,
+     "title": "2026 FIGHTER SUPREME ULTRA\n &ndash; TEVERUN USA 2026 FIGHTER SUPREME ULTRA"
+    },
+    {
+     "url": "https://teverun-europe.com/product/supreme-ultra/",
+     "ok": false,
+     "n": 0,
+     "title": "Supreme Ultra &#8211; Teverun Europe"
+    },
+    {
+     "url": "https://www.wee-bot.com/products/trottinette-electrique-teverun-fighter-supreme-ultra",
+     "ok": true,
+     "n": 34,
+     "title": "Trottinette Teverun Fighter Supreme Ultra - Pas Cher\n Trottinette Électrique Teverun Fighter Supreme Ultra V4 2026"
+    },
+    {
+     "url": "https://steedytrott.com/products/trottinette-electrique-teverun-fighter-supreme-ultra",
+     "ok": true,
+     "n": 1,
+     "title": "Trottinette Électrique Teverun Fighter Supreme Ultra | SteedyTrott Trottinette Électrique Teverun Fighter Supreme Ultra | SteedyTrott"
+    }
+   ],
+   "candidates": 10
+  },
+  {
+   "slug": "dualtron-spider-max",
+   "tokens": [
+    "spider",
+    "max"
+   ],
+   "pages": [
+    {
+     "url": "https://dualtronusa.com/products/dualtron-spider-max-electric-scooter",
+     "ok": true,
+     "n": 15,
+     "title": "Dualtron Spider Max Scooter | 44 MPH, 65 Mile Range - Dualtron USA Dualtron Spider Max"
+    },
+    {
+     "url": "https://dualtron-shop.com/product/dualtron-spider-max/",
+     "ok": false,
+     "n": 0,
+     "title": "HTTP 403"
+    },
+    {
+     "url": "https://www.dualtronnordic.com/en/shop/dualtron-spider-max-123",
+     "ok": true,
+     "n": 4,
+     "title": "Dualtron Spider Max Electric Scooter | Dualtron Nordic Dualtron Spider Max Electric Scooter | Dualtron Nordic"
+    },
+    {
+     "url": "https://www.wee-bot.com/products/trottinette-electrique-dualtron-spider-max",
+     "ok": true,
+     "n": 48,
+     "title": "Trottinette Électrique Dualtron Spider Max - Pas Cher\n Trottinette Electrique Dualtron Spider Max"
+    },
+    {
+     "url": "https://www.eleqtron.fr/products/trottinette-electrique-dualtron-spider-max",
+     "ok": false,
+     "n": 0,
+     "title": "Dualtron &#8211; Eleqtron"
+    }
+   ],
+   "candidates": 10
+  },
+  {
+   "slug": "dualtron-togo",
+   "tokens": [
+    "togo"
+   ],
+   "pages": [
+    {
+     "url": "https://www.minimotors.fr/en/trottinette-electrique-dualtron-togo",
+     "ok": true,
+     "n": 0,
+     "title": "Trottinette électrique Dualtron Togo - Minimotors® Dualtron France Trottinette électrique Dualtron Togo - Minimotors® Dualtron France"
+    },
+    {
+     "url": "https://www.wee-bot.com/products/trottinette-electrique-dualtron-togo",
+     "ok": true,
+     "n": 84,
+     "title": "Dualtron Togo - Pas Cher\n Trottinette Électrique Dualtron Togo"
+    },
+    {
+     "url": "https://fastride.fr/en/dualtron/2867-trottinette-electrique-dualtron-togo.html",
+     "ok": false,
+     "n": 0,
+     "title": "HTTP 403"
+    },
+    {
+     "url": "https://pietechnologie.com/products/trottinette-lectrique-dualtron-togo",
+     "ok": true,
+     "n": 13,
+     "title": "Trottinette électrique Dualtron TOGO&nbsp;&ndash; PIE TECHNOLOGIE \n Trottinette électrique Dualtron TOGO"
+    },
+    {
+     "url": "https://www.watt-scoot.com/produit/trottinette-electrique-dualtron-togo-650w/",
+     "ok": false,
+     "n": 0,
+     "title": "HTTP 403"
+    }
+   ],
+   "candidates": 10
+  },
+  {
+   "slug": "ninebot-e25e",
+   "tokens": [
+    "e",
+    "25",
+    "e"
+   ],
+   "pages": [
+    {
+     "url": "https://fr-fr.segway.com/products/ninebot-kickscooter-e25e-powered-by-segway",
+     "ok": true,
+     "n": 0,
+     "title": "Trottinette électrique Segway eKickScooter Ninebot E25 E Trottinette électrique Segway eKickScooter Ninebot E25 E"
+    },
+    {
+     "url": "https://eu-en.segway.com/ekickscooter/products/e25e.html",
+     "ok": true,
+     "n": 0,
+     "title": "Segway eKickScooter Ninebot E25 E Segway eKickScooter Ninebot E25 E"
+    },
+    {
+     "url": "https://www.segwayfrance.com/grand-public/ninebot-kickscooter-e25e/",
+     "ok": false,
+     "n": 0,
+     "title": "Ninebot E3 E | Trottinette Électrique 45km | Segway France Ninebot E3 E | Trottinette Électrique 45km | Segway France"
+    },
+    {
+     "url": "https://www.fnac.com/Trottinette-electrique-Segway-KickScooter-E25E-Gris/a15086838/w-4",
+     "ok": false,
+     "n": 0,
+     "title": "HTTP 403"
+    },
+    {
+     "url": "https://fr.shopping.rakuten.com/offer/buy/6052835164/segway-ninebot-kickscooter-e25e-trottinette-electrique-pliable-noir.html",
+     "ok": false,
+     "n": 0,
+     "title": "Rakuten - Achat et vente neuf, occasion et reconditionné Rakuten - Achat et vente neuf, occasion et reconditionné"
+    }
+   ],
+   "candidates": 0
+  },
+  {
+   "slug": "e-twow-booster-es",
+   "tokens": [
+    "booster",
+    "es"
+   ],
+   "pages": [
+    {
+     "url": "https://e-twow.com/products/e-twow-s2-booster",
+     "ok": false,
+     "n": 0,
+     "title": "E-TWOW Booster ES Electric Scooter | Ultra-Light, Foldable, 500W motor &ndash; E-TWOW eScooters\n\t E-TWOW Booster ES Electric Scooter | Ultra-Light, Foldable, 50 [variante : ultra,ultra]"
+    },
+    {
+     "url": "https://shop.e-twow.com/products/e-twow-s2-booster",
+     "ok": false,
+     "n": 0,
+     "title": "E-TWOW Booster ES Electric Scooter | Ultra-Light, Foldable, 500W motor &ndash; E-TWOW eScooters\n\t E-TWOW Booster ES Electric Scooter | Ultra-Light, Foldable, 50 [variante : ultra,ultra]"
+    },
+    {
+     "url": "https://www.fnac.com/Trottinette-electrique-E-Twow-Booster-ES-Noir/a17025841/w-4",
+     "ok": false,
+     "n": 0,
+     "title": "HTTP 403"
+    },
+    {
+     "url": "https://wellbots.fr/products/e-twow-booster-es-trottinette-electrique",
+     "ok": true,
+     "n": 25,
+     "title": "E-TWOW Booster ES Trottinette électrique | Wellbots\n E-TWOW Booster ES Trottinette électrique"
+    },
+    {
+     "url": "https://www.wilsonebikes.com/products/e-twow-booster-es-electric-scooter",
+     "ok": true,
+     "n": 22,
+     "title": "E-TWOW Booster ES Electric Scooter | 500W, 19 MPH | Wilson&#39;s\n E-TWOW Booster ES Electric Scooter | 500W, 19 MPH | Wilson&#39;s"
+    }
+   ],
+   "candidates": 10
+  },
+  {
+   "slug": "ninebot-f2-pro-e-ii",
+   "tokens": [
+    "f",
+    "2",
+    "pro",
+    "e",
+    "ii"
+   ],
+   "pages": [
+    {
+     "url": "https://www.segwayfrance.com/products/ninebot-f2-pro-e-ii-ekickscooter",
+     "ok": true,
+     "n": 8,
+     "title": "Trottinette Ninebot F2 Pro E II 65 km | Segway France Trottinette Ninebot F2 Pro E II 65 km | Segway France"
+    },
+    {
+     "url": "https://eu-en.segway.com/ekickscooter/products/f2-pro-e-ii.html",
+     "ok": true,
+     "n": 0,
+     "title": "Segway eKickScooter Ninebot F2 Pro E II Segway eKickScooter Ninebot F2 Pro E II"
+    },
+    {
+     "url": "https://be-fr.segway.com/ekickscooter/products/f2-pro-e-ii.html",
+     "ok": true,
+     "n": 0,
+     "title": "Trottinette électrique Segway eKickScooter Ninebot F2 Pro E II Trottinette électrique Segway eKickScooter Ninebot F2 Pro E II"
+    },
+    {
+     "url": "https://www.decathlon.fr/p/trottinette-electrique-ninebot-f2-pro-e-ii-powered-by-segway/376702/m8980045",
+     "ok": false,
+     "n": 0,
+     "title": "HTTP 403"
+    },
+    {
+     "url": "https://wellbots.fr/products/segway-ninebot-trottinette-electrique-f2-pro-e-ii",
+     "ok": true,
+     "n": 8,
+     "title": "Segway Ninebot Trottinette électrique F2 Pro E II | Wellbots\n Segway Ninebot Trottinette électrique F2 Pro E II"
+    }
+   ],
+   "candidates": 10
+  },
+  {
+   "slug": "weped-fold-11",
+   "tokens": [
+    "fold",
+    "11"
+   ],
+   "pages": [
+    {
+     "url": "https://pietechnologie.com/products/weped-fold-11-1200w-30ah-60v",
+     "ok": true,
+     "n": 5,
+     "title": "WEPED FOLD 11 1200W 30Ah 60V par PIE TECHNOLOGIE&nbsp;&ndash; PIE TECHNOLOGIE \n Trottinette électrique Weped Fold 11 - 12000W 30Ah 60V"
+    },
+    {
+     "url": "https://pietechnologie.com/products/weped-fold-11-12000w-30ah",
+     "ok": true,
+     "n": 5,
+     "title": "TROTTINETTE ELECTRIQUE WEPED FOLD 11 12000W 30Ah par PIE TECHNOLOGIE&nbsp;&ndash; PIE TECHNOLOGIE \n Trottinette électrique Weped Fold 11 - 12 000W 30Ah"
+    },
+    {
+     "url": "https://fastride.fr/fr/weped/543-trottinette-electrique-weped-fold-11-79v.html",
+     "ok": false,
+     "n": 0,
+     "title": "HTTP 403"
+    },
+    {
+     "url": "https://www.spareracingpartsava.shop/product/trottinette-electrique-weped-fold-11-12000w-30ah-60v/",
+     "ok": false,
+     "n": 0,
+     "title": "erreur fetch failed"
+    }
+   ],
+   "candidates": 10
+  },
+  {
+   "slug": "e-twow-booster-v",
+   "tokens": [
+    "booster",
+    "v"
+   ],
+   "pages": [
+    {
+     "url": "https://www.etwow.net/en/scooters-en/booster-v-105ah",
+     "ok": true,
+     "n": 1,
+     "title": "E-TWOW BOOSTER V 500W 36V - 10.5Ah Color White E-TWOW BOOSTER V 500W 36V - 10.5Ah Color White"
+    },
+    {
+     "url": "https://www.wee-bot.com/products/trottinette-electrique-etwow-booster-v",
+     "ok": true,
+     "n": 14,
+     "title": "Trottinette Électrique Etwow Booster V - Pas Cher\n Trottinette Électrique Etwow Booster V"
+    },
+    {
+     "url": "https://voltride.com/electric-scooter-e-twow-booster-v-sport/",
+     "ok": true,
+     "n": 6,
+     "title": "E-TWOW S2 Booster V – Lightweight commuter | Voltride Electric scooter E-TWOW S2 Booster V | Voltride"
+    },
+    {
+     "url": "https://alternative.bike/585-trottinette-e-twow-booster-v.html",
+     "ok": true,
+     "n": 1,
+     "title": "La toute dernière etwow Booster V la version 36V et grande autonomie. La toute dernière etwow Booster V la version 36V et grande autonomie."
+    },
+    {
+     "url": "https://les-cyclistes-branches.com/produit/e-twow-booster-v-premium-trottinette-electrique/",
+     "ok": false,
+     "n": 0,
+     "title": "HTTP 403"
+    }
+   ],
+   "candidates": 10
+  },
+  {
+   "slug": "ninebot-e3-pro-e",
+   "tokens": [
+    "e",
+    "3",
+    "pro",
+    "e"
+   ],
+   "pages": [
+    {
+     "url": "https://www.segwayfrance.com/products/ninebot-e3-pro-e",
+     "ok": true,
+     "n": 16,
+     "title": "Trottinette Électrique Ninebot E3 Pro E (55km) | Segway | Segway France Trottinette Électrique Ninebot E3 Pro E (55km) | Segway | Segway France"
+    },
+    {
+     "url": "https://www.segwayfrance.com/pages/ninebot-e3-pro-e",
+     "ok": true,
+     "n": 1,
+     "title": "Ninebot E3 Pro E – Trottinette 55 km | Segway France Ninebot E3 Pro E – Trottinette 55 km | Segway France"
+    },
+    {
+     "url": "https://www.decathlon.fr/p/trottinette-electrique-segway-ninebot-e3-pro-e/377700/c3m8985240",
+     "ok": false,
+     "n": 0,
+     "title": "HTTP 403"
+    },
+    {
+     "url": "https://www.darty.com/nav/achat/sports_loisirs/glisse_urbaine/trottinette_electrique/segway_ninebot_e3_pro_e.html",
+     "ok": false,
+     "n": 0,
+     "title": "HTTP 403"
+    },
+    {
+     "url": "https://www.wee-bot.com/products/trottinette-electrique-e3-pro-e-ninebot-by-segway",
+     "ok": true,
+     "n": 20,
+     "title": "Trottinette Électrique E3 Pro E Ninebot by Segway - Pas Cher\n Trottinette Électrique E3 Pro E Ninebot by Segway"
+    }
+   ],
+   "candidates": 10
+  },
+  {
+   "slug": "ninebot-f2-e-ii",
+   "tokens": [
+    "f",
+    "2",
+    "e",
+    "ii"
+   ],
+   "pages": [
+    {
+     "url": "https://fr-fr.segway.com/ekickscooter/products/f2-e-ii.html",
+     "ok": true,
+     "n": 0,
+     "title": "Segway eKickScooter Ninebot F2 E II Segway eKickScooter Ninebot F2 E II"
+    },
+    {
+     "url": "https://www.segwayfrance.com/boutique/Ninebot-eKickscooter-F2-E-II-p739998629",
+     "ok": true,
+     "n": 1,
+     "title": "Trottinette Ninebot F2 E II 55 km | Segway France Trottinette Ninebot F2 E II 55 km | Segway France"
+    },
+    {
+     "url": "https://www.electrodepot.fr/trottinette-electrique-ninebot-by-segway-f2e-ii.html",
+     "ok": false,
+     "n": 0,
+     "title": "Trottinette électrique NINEBOT  by Segway F2E II - Electro Dépôt Trottinette&#x20;&#xE9;lectrique&#x20;NINEBOT&#x20;&#x20;by&#x20;Segway&#x20;F2E&#x20;II [variante : x,x,x,x,x,x,x]"
+    },
+    {
+     "url": "https://www.krefel.be/fr/p/43001263-segway-ninebot-kickscooter-f2-e-ii",
+     "ok": false,
+     "n": 0,
+     "title": "HTTP 500"
+    },
+    {
+     "url": "https://www.carrefour.fr/p/trottinette-electrique-ninebot-kickscooter-f2e-ii-segway-8721008535906",
+     "ok": false,
+     "n": 0,
+     "title": "HTTP 403"
+    }
+   ],
+   "candidates": 1
+  },
+  {
+   "slug": "mi-3",
+   "tokens": [
+    "mi",
+    "3"
+   ],
+   "pages": [
+    {
+     "url": "https://www.mi.com/fr/product/mi-electric-scooter-3/",
+     "ok": true,
+     "n": 2,
+     "title": "Mi Electric Scooter 3 | Xiaomi France | Toutes les spécifications et fonctionnalités  Mi Electric Scooter 3 | Xiaomi France | Toutes les spécifications et fonct"
+    },
+    {
+     "url": "https://www.mi.com/global/product/mi-electric-scooter-3/",
+     "ok": true,
+     "n": 1,
+     "title": "All Specs, Features of Mi Electric Scooter 3 | Xiaomi  All Specs, Features of Mi Electric Scooter 3 | Xiaomi"
+    },
+    {
+     "url": "https://www.fnac.com/Trottinette-electrique-Xiaomi-Mi-Electric-Scooter-3-600-W-Noir/a16304587/w-4",
+     "ok": false,
+     "n": 0,
+     "title": "HTTP 403"
+    },
+    {
+     "url": "https://www.materiel.net/produit/202203160020.html",
+     "ok": false,
+     "n": 0,
+     "title": "erreur fetch failed"
+    },
+    {
+     "url": "https://www.tunisianet.com.tn/scooter-electriques/55861-trottinette-electrique-xiaomi-mi-electric-scooter-3.html",
+     "ok": true,
+     "n": 1,
+     "title": "Mi Electric Scooter 3 | Xiaomi Tunisie | Tunisianet - Tunisianet\n     Mi Electric Scooter 3 | Xiaomi Tunisie | Tunisianet - Tunisianet"
+    }
+   ],
+   "candidates": 4
+  },
+  {
+   "slug": "ninebot-max-g3-pro-e",
+   "tokens": [
+    "max",
+    "g",
+    "3",
+    "pro",
+    "e"
+   ],
+   "pages": [
+    {
+     "url": "https://fr-fr.segway.com/ekickscooter/products/max-g3-pro-e.html",
+     "ok": false,
+     "n": 0,
+     "title": "Trottinette Électrique MAX G3 Pro : Longue Autonomie pour les Déplacements | Segway   Trottinette Électrique MAX G3 Pro : Longue Autonomie pour les Déplacements"
+    },
+    {
+     "url": "https://www.segwayfrance.com/products/ninebot-max-g3-pro-e",
+     "ok": true,
+     "n": 13,
+     "title": "Ninebot MAX G3 Pro E : prix et achat | Segway France Ninebot MAX G3 Pro E : prix et achat | Segway France"
+    },
+    {
+     "url": "https://shop.segway.com/fr_fr/ninebot-max-g3-pro-e.html",
+     "ok": false,
+     "n": 0,
+     "title": "HTTP 404"
+    }
+   ],
+   "candidates": 10
+  },
+  {
+   "slug": "segway-gt3-pro",
+   "tokens": [
+    "gt",
+    "3",
+    "pro"
+   ],
+   "pages": [
+    {
+     "url": "https://store.segway.com/segway-superscooter-gt3-pro",
+     "ok": true,
+     "n": 1,
+     "title": "Segway SuperScooter GT3 Pro | Extreme Performance | Segway USA Segway SuperScooter GT3 Pro | Extreme Performance | Segway USA"
+    },
+    {
+     "url": "https://www.segway.com/ekickscooter/products/superscooter-gt3-pro.html",
+     "ok": true,
+     "n": 0,
+     "title": "Segway SuperScooter GT3 Pro , Ultimate Urban Commuting Machine Segway SuperScooter GT3 Pro , Ultimate Urban Commuting Machine"
+    },
+    {
+     "url": "https://se-en.segway.com/products/gt3-pro",
+     "ok": true,
+     "n": 0,
+     "title": "SEGWAY GT3 Pro SEGWAY GT3 Pro"
+    },
+    {
+     "url": "https://www.segwayfrance.com/pages/segway-gt3-pro",
+     "ok": true,
+     "n": 1,
+     "title": "Segway GT3 Pro : Trottinette électrique 7000W | Segway | Segway France Segway GT3 Pro : Trottinette électrique 7000W | Segway | Segway France"
+    },
+    {
+     "url": "https://www.wee-bot.com/products/trottinette-electrique-segway-gt3-pro",
+     "ok": true,
+     "n": 26,
+     "title": "Trottinette électrique Segway GT3 Pro - Pas Cher\n Trottinette Électrique Segway GT3 Pro"
+    }
+   ],
+   "candidates": 10
+  },
+  {
+   "slug": "segway-gt3",
+   "tokens": [
+    "gt",
+    "3"
+   ],
+   "pages": [
+    {
+     "url": "https://store.segway.com/segway-superscooter-gt3",
+     "ok": true,
+     "n": 1,
+     "title": "Segway SuperScooter GT3 | Long-Range Fast Electric Scooter Segway SuperScooter GT3 | Long-Range Fast Electric Scooter"
+    },
+    {
+     "url": "https://www.segwayfrance.com/products/segway-gt3-e-superscooter",
+     "ok": true,
+     "n": 8,
+     "title": "Segway GT3 E SuperScooter - Trottinette Électrique 95 km | Segway France Segway GT3 E SuperScooter - Trottinette Électrique 95 km | Segway France"
+    },
+    {
+     "url": "https://www.darty.com/nav/achat/sports_loisirs/glisse_urbaine/trottinette_electrique/segway_gt3_e.html",
+     "ok": false,
+     "n": 0,
+     "title": "HTTP 403"
+    },
+    {
+     "url": "https://www.boulanger.com/ref/1218415",
+     "ok": false,
+     "n": 0,
+     "title": "erreur The operation was aborted due to timeout"
+    },
+    {
+     "url": "https://www.wee-bot.com/products/trottinette-electrique-segway-gt3-e",
+     "ok": true,
+     "n": 28,
+     "title": "Trottinette Électrique Segway GT3 E - Pas Cher\n Trottinette Électrique Segway GT3 E"
+    }
+   ],
+   "candidates": 10
+  },
+  {
+   "slug": "micro-explorer",
+   "tokens": [
+    "explorer"
+   ],
+   "pages": [
+    {
+     "url": "https://www.micro-mobility.fr/1465-trottinette-electrique-micro-explorer.html",
+     "ok": false,
+     "n": 0,
+     "title": "Trottinettes électriques Micro pour adultes Trottinettes électriques Micro pour adultes"
+    },
+    {
+     "url": "https://www.greenweez.com/produit/trottinette-electrique-micro-explorer",
+     "ok": false,
+     "n": 0,
+     "title": "HTTP 403"
+    },
+    {
+     "url": "https://odissey.be/o_fr/micro-explorer-trottinette-electrique-adulte-em0036",
+     "ok": false,
+     "n": 0,
+     "title": "erreur fetch failed"
+    },
+    {
+     "url": "https://www.digitec.ch/fr/s1/product/micro-explorer-20-kmh-30-km-500-w-trottinette-electrique-14654543",
+     "ok": false,
+     "n": 0,
+     "title": "HTTP 403"
+    },
+    {
+     "url": "https://www.electro-habitat.com/habitat/trottinette/electrique/micro-mobility/micro-explorer",
+     "ok": true,
+     "n": 1,
+     "title": "Trottinette Électrique Micro-Mobility Micro Explorer | Électro Habitat Test comparatif et avis : Trottinette Micro-Mobility Micro Explorer | Électro Habitat"
+    }
+   ],
+   "candidates": 1
+  },
+  {
+   "slug": "dualtron-popular",
+   "tokens": [
+    "popular"
+   ],
+   "pages": [
+    {
+     "url": "https://dualtron-france.com/trottinettes-electriques-dualtron/2662-trottinette-electrique-dualtron-pop-popular.html",
+     "ok": true,
+     "n": 2,
+     "title": "DUALTRON Pop / Popular Motorisation Simple moteur Batterie 52V 14Ah DUALTRON Pop / Popular Motorisation Simple moteur Batterie 52V 14Ah"
+    },
+    {
+     "url": "https://dual-tron.ca/products/dualtron-popular",
+     "ok": true,
+     "n": 7,
+     "title": "Dualtron Popular\n &ndash; DUALTRON CANADA Dualtron Popular"
+    },
+    {
+     "url": "https://www.dualtronnordic.com/en/shop/dualtron-popular-dual-motor-114",
+     "ok": true,
+     "n": 4,
+     "title": "Dualtron Popular Dual Motor Electric Scooter | Dualtron Nordic Dualtron Popular Dual Motor Electric Scooter | Dualtron Nordic"
+    },
+    {
+     "url": "https://www.trottnshop.com/produit/dualtron-popular/",
+     "ok": true,
+     "n": 0,
+     "title": "DUALTRON Popular | Trott'n'Shop DUALTRON Popular | Trott&#039;n&#039;Shop"
+    },
+    {
+     "url": "https://www.freemoov.com/shop/trottinette-electrique-dualtron-pop-popular-dual-motor-804",
+     "ok": false,
+     "n": 0,
+     "title": "Trottinette électrique Dualtron Pop| Freemoov Trottinette électrique Dualtron Pop| Freemoov"
+    }
+   ],
+   "candidates": 10
+  },
+  {
+   "slug": "segway-p65",
+   "tokens": [
+    "p",
+    "65"
+   ],
+   "pages": [
+    {
+     "url": "https://store.segway.com/segway-kickscooter-p65",
+     "ok": true,
+     "n": 1,
+     "title": "Ninebot KickScooter P65 | Electric Scooter | Segway Official Store Ninebot KickScooter P65 | Electric Scooter | Segway Official Store"
+    },
+    {
+     "url": "https://xk-en.segway.com/ekickscooter/products/p65e.html",
+     "ok": true,
+     "n": 0,
+     "title": "Segway eKickScooter P65 E Segway eKickScooter P65 E"
+    },
+    {
+     "url": "https://www.fnac.com/Trottinette-electrique-Segway-P65E-1000-W-Gris/a17381212/w-4",
+     "ok": false,
+     "n": 0,
+     "title": "HTTP 403"
+    },
+    {
+     "url": "https://biospeed.fr/produit/ninebot-segway-kickscooter-p65e/",
+     "ok": false,
+     "n": 0,
+     "title": "erreur fetch failed"
+    },
+    {
+     "url": "https://www.glisseurbaine.com/2779-trottinette-electrique-segway-ninebot-kickscooter-p65e.html",
+     "ok": false,
+     "n": 0,
+     "title": "erreur fetch failed"
+    }
+   ],
+   "candidates": 1
+  },
+  {
+   "slug": "hikerboy-brio",
+   "tokens": [
+    "brio"
+   ],
+   "pages": [
+    {
+     "url": "https://hikerboyscooter.com/products/brio",
+     "ok": false,
+     "n": 0,
+     "title": "Product Showcase\n&ndash; Hikerboy Scooter\n Product Showcase"
+    },
+    {
+     "url": "https://hikerboyscooter.com/fr/products/brio",
+     "ok": false,
+     "n": 0,
+     "title": "Product Showcase\n&ndash; Hikerboy Scooter\n Product Showcase"
+    },
+    {
+     "url": "https://electrotraveller.com/electric-scooters/hikerboy-brio-red/",
+     "ok": false,
+     "n": 0,
+     "title": "erreur The operation was aborted due to timeout"
+    },
+    {
+     "url": "https://www.trottnscoot.com/produit/trottinette-electrique-hikerboy-brio/",
+     "ok": true,
+     "n": 1,
+     "title": "Trottinette électrique HIKERBOY Brio - Trott&#039;n&#039;Scoot, Have elec fun ! Trottinette électrique HIKERBOY Brio - Trott&#039;n&#039;Scoot, Have elec fun !"
+    },
+    {
+     "url": "https://www.freemoov.com/shop/trottinette-electrique-hikerboy-brio-1031",
+     "ok": true,
+     "n": 8,
+     "title": "Trottinette électrique Hikerboy Brio | Freemoov Trottinette électrique Hikerboy Brio | Freemoov"
+    }
+   ],
+   "candidates": 9
+  },
+  {
+   "slug": "thunder",
+   "tokens": [
+    "thunder"
+   ],
+   "pages": [
+    {
+     "url": "https://dualtron-store.com/index.php/produit/dualtron-thunder/",
+     "ok": true,
+     "n": 1,
+     "title": "Dualtron Thunder | DUALTRON Store ® FRANCE"
+    },
+    {
+     "url": "https://pietechnologie.com/products/trottinette-electrique-minimotors-dualtron-thunder",
+     "ok": true,
+     "n": 13,
+     "title": "Dualtron Thunder - 60V 35 Ah - Minimotors - Pie Technologie&nbsp;&ndash; PIE TECHNOLOGIE \n Trottinette électrique Dualtron Thunder - 60V 35Ah"
+    },
+    {
+     "url": "https://alternative.bike/601-trottinette-electrique-dualtron-thunder.html",
+     "ok": false,
+     "n": 0,
+     "title": "Dualtron Thunder la plus puissante des trottinettes électriques ! Dualtron Thunder la plus puissante des trottinettes électriques ! [variante : plus,plus]"
+    },
+    {
+     "url": "https://www.wee-bot.com/products/trottinette-electrique-dualtron-thunder",
+     "ok": true,
+     "n": 26,
+     "title": "Trottinette Electrique Dualtron Thunder - Pas Cher\n Trottinette Electrique Dualtron Thunder"
+    },
+    {
+     "url": "https://www.glisseurbaine.com/346-trottinette-electrique-puissante-dualtron-thunder.html",
+     "ok": false,
+     "n": 0,
+     "title": "erreur fetch failed"
+    }
+   ],
+   "candidates": 10
+  },
+  {
+   "slug": "iscooter-ix7-pro",
+   "tokens": [
+    "ix",
+    "7",
+    "pro"
+   ],
+   "pages": [
+    {
+     "url": "https://iscooter-france.com/en/products/electric-scooter-iscooter-ix7-pro-2x1000w",
+     "ok": false,
+     "n": 0,
+     "title": "Trottinette électrique iScooter iX7 Pro 2x1000W – 60 km/h | Iscooter-France\n   Electric scooter: iScooter iX7 Pro 2x1000W [variante : x,x]"
+    },
+    {
+     "url": "https://iscooter.com/products/ix7-pro-off-road-electric-scooter",
+     "ok": true,
+     "n": 19,
+     "title": "iScooter iX7 Pro Off-road Electric Scooter iScooter iX7 Pro Dual Motor Electric Scooter, 2000W Motor"
+    },
+    {
+     "url": "https://www.iscooterglobal.eu/products/iscooter-ix7pro-off-road-electric-scooter",
+     "ok": true,
+     "n": 25,
+     "title": "iX7Pro Dual Motor Off Road Electric Scooter | iScooter EU\n iScooter iX7Pro 2000W Off Road Electric Scooter"
+    },
+    {
+     "url": "https://wellbots.fr/products/iscooter-trottinette-electrique-ix7-pro-2x1000w",
+     "ok": false,
+     "n": 0,
+     "title": "iScooter Trottinette Electrique iX7 Pro 2x1000W | Wellbots\n iScooter Trottinette Electrique iX7 Pro 2x1000W [variante : x,x]"
+    },
+    {
+     "url": "https://www.iscootershop.fr/produit/iscooter-france-trottinette-electrique-iX7pro-2x1000w",
+     "ok": false,
+     "n": 0,
+     "title": "erreur fetch failed"
+    }
+   ],
+   "candidates": 10
+  },
+  {
+   "slug": "weped-ss-t",
+   "tokens": [
+    "ss",
+    "t"
+   ],
+   "pages": [
+    {
+     "url": "https://pietechnologie.com/products/trottinette-electrique-weeped-ss-t-30000w-72v-45ah",
+     "ok": true,
+     "n": 8,
+     "title": "Trottinette électrique Weped SS-T 30000w - 72V 45Ah - Pie Technologie&nbsp;&ndash; PIE TECHNOLOGIE \n Trottinette électrique Weped SS-T 30000w - 72V 45Ah"
+    },
+    {
+     "url": "https://kit-moto.com/produit/trottinette-electrique-weeped-ss-t-weebot-x-weped-haut-de-gamme/",
+     "ok": false,
+     "n": 0,
+     "title": "erreur fetch failed"
+    },
+    {
+     "url": "https://scooterpassion.itplace.com/fr/scooter-passion/4530-trottinette-electrique-weped-sst.html",
+     "ok": false,
+     "n": 0,
+     "title": "HTTP 500"
+    }
+   ],
+   "candidates": 8
+  },
+  {
+   "slug": "urbanglide-all-road-5",
+   "tokens": [
+    "all",
+    "road",
+    "5"
+   ],
+   "pages": [
+    {
+     "url": "https://urbanglide.com/en/produit/scooter-all-road-5/",
+     "ok": true,
+     "n": 1,
+     "title": "ALL ROAD 5\t\t ALL ROAD 5 - UrbanGlide"
+    },
+    {
+     "url": "https://www.boulanger.com/ref/1190338",
+     "ok": false,
+     "n": 0,
+     "title": "erreur The operation was aborted due to timeout"
+    },
+    {
+     "url": "https://www.rueducommerce.fr/p/r24060023236.html",
+     "ok": false,
+     "n": 0,
+     "title": "erreur fetch failed"
+    },
+    {
+     "url": "https://microconcept.com/urbanglide-all-road-5-trottinette-electrique.html",
+     "ok": true,
+     "n": 1,
+     "title": "Urbanglide All Road 5 - Trottinette électrique urbaine et tout-terrain Urbanglide All Road 5 - Trottinette électrique urbaine et tout-terrain"
+    },
+    {
+     "url": "https://www.ravate.com/high-tech/mobilite-urbaine/mobilite-urbaine/trottinette-electrique/85396938-trottinette-electrique-trotti-all-road-5-noir-urbanglide-jfurbtr13147urbangl-3700092608555.html",
+     "ok": true,
+     "n": 2,
+     "title": "Trottinette électrique Trotti All Road 5 Noir - URBANGLIDE - JFURBTR13147URBANGL Trottinette électrique Trotti All Road 5 Noir - URBANGLIDE - JFURBTR13147URBANG"
+    }
+   ],
+   "candidates": 4
+  },
+  {
+   "slug": "oxelo-sd500e",
+   "tokens": [
+    "sd",
+    "500",
+    "e"
+   ],
+   "pages": [
+    {
+     "url": "https://www.decathlon.fr/p/trottinette-electrique-decathlon-sd500e-gris-vert/_/R-p-353775",
+     "ok": false,
+     "n": 0,
+     "title": "HTTP 403"
+    },
+    {
+     "url": "https://www.decathlon.fr/p/trottinette-electrique-sd500e-gris-tempete-25-km-h/_/R-p-353775",
+     "ok": false,
+     "n": 0,
+     "title": "HTTP 403"
+    },
+    {
+     "url": "https://www.decathlon.ma/p/353775-153539-trottinette-electrique-decathlon-sd500e-gris-vert.html",
+     "ok": true,
+     "n": 2,
+     "title": "Trottinette électrique SD500 E - Decathlon Trottinette électrique SD500 E"
+    }
+   ],
+   "candidates": 1
+  },
+  {
+   "slug": "urbanglide-all-road-6-pro",
+   "tokens": [
+    "all",
+    "road",
+    "6",
+    "pro"
+   ],
+   "pages": [
+    {
+     "url": "https://urbanglide.com/en/produit/all-road-6pro/",
+     "ok": true,
+     "n": 1,
+     "title": "ALL ROAD 6 PRO\t\t ALL ROAD 6 PRO - UrbanGlide"
+    },
+    {
+     "url": "https://www.fnac.com/Trottinette-electrique-UrbanGlide-All-Road-6-Pro-500-W-Noir/a21412046/w-4",
+     "ok": false,
+     "n": 0,
+     "title": "HTTP 403"
+    },
+    {
+     "url": "https://www.boulanger.com/ref/9000532511",
+     "ok": false,
+     "n": 0,
+     "title": "erreur The operation was aborted due to timeout"
+    },
+    {
+     "url": "https://www.natureetdecouvertes.com/outdoor/velos-accessoires/trottinettes-longboards-rollers/urbanglide-all-road-6-pro-trottinette-electrique-10-/-800w-70km-92809440",
+     "ok": true,
+     "n": 9,
+     "title": "Urbanglide all road 6 pro – trottinette &#233;lectrique 10 / 800w 70km Urbanglide all road 6 pro – trottinette &#233;lectrique 10 / 800w 70km"
+    },
+    {
+     "url": "https://fixwheel.fr/products/urbanglide-ar6-pro",
+     "ok": false,
+     "n": 0,
+     "title": "HTTP 404"
+    }
+   ],
+   "candidates": 10
+  },
+  {
+   "slug": "urbanglide-ecross-duo",
+   "tokens": [
+    "ecross",
+    "duo"
+   ],
+   "pages": [
+    {
+     "url": "https://urbanglide.com/en/produit/e-cross-duo/",
+     "ok": true,
+     "n": 1,
+     "title": "E-CROSS DUO\t\t Electric scooter E-CROSS DUO - UrbanGlide"
+    },
+    {
+     "url": "https://www.boulanger.com/ref/1222190",
+     "ok": false,
+     "n": 0,
+     "title": "erreur The operation was aborted due to timeout"
+    },
+    {
+     "url": "https://www.mobeshop.fr/p/trottinette-electrique-urbanglide-e-cross-duo/",
+     "ok": false,
+     "n": 0,
+     "title": "erreur fetch failed"
+    },
+    {
+     "url": "https://www.cdiscount.com/le-sport/mobilite-urbaine/trottinette-electrique-urbanglide-ecross-duo/f-1214801-urb1745881804203.html",
+     "ok": false,
+     "n": 0,
+     "title": "Cdiscount Cdiscount.com"
+    }
+   ],
+   "candidates": 1
+  },
+  {
+   "slug": "ninebot-e2",
+   "tokens": [
+    "e",
+    "2"
+   ],
+   "pages": [
+    {
+     "url": "https://fr-fr.segway.com/ekickscooter/products/e2-e.html",
+     "ok": true,
+     "n": 0,
+     "title": "Trottinette électrique Segway eKickScooter Ninebot E2 E Trottinette électrique Segway eKickScooter Ninebot E2 E"
+    },
+    {
+     "url": "https://shop.segway.com/be_fr/ninebot-kickscooter-e2-e-ii-powered-by-segway.html",
+     "ok": false,
+     "n": 0,
+     "title": "Ninebot E2 E II Ninebot&#x20;E2&#x20;E&#x20;II&#x20; [variante : ii,x,x,x,ii,x]"
+    },
+    {
+     "url": "https://store.segway.com/ninebot-kickscooter-e2",
+     "ok": true,
+     "n": 1,
+     "title": "Ninebot KickScooter E2 | Electric Scooter | Segway Official Store Ninebot KickScooter E2 | Electric Scooter | Segway Official Store"
+    },
+    {
+     "url": "https://mounesmobilite.com/products/trottinette-electrique-ninebot-e2-e-20-km-h",
+     "ok": true,
+     "n": 8,
+     "title": "Trottinette électrique - Ninebot E2 E - 20 km/h — Mounès Mobilité Trottinette électrique - Ninebot E2 E - 20 km/h"
+    },
+    {
+     "url": "https://www.fnac.com/Ninebot-E2-E-II-Trottinette-electrique-20-km-h/a21664132/w-4",
+     "ok": false,
+     "n": 0,
+     "title": "HTTP 403"
+    }
+   ],
+   "candidates": 9
+  },
+  {
+   "slug": "inmotion-air",
+   "tokens": [
+    "air"
+   ],
+   "pages": [
+    {
+     "url": "https://www.inmotion-france.fr/fr/trottinettes-electriques/464-trottinette-electrique-air-280wh-3701522001380.html",
+     "ok": false,
+     "n": 0,
+     "title": "Trottinettes électriques Trottinettes électriques"
+    },
+    {
+     "url": "https://www.wee-bot.com/products/trottinette-electrique-inmotion-air",
+     "ok": true,
+     "n": 24,
+     "title": "Trottinette Électrique Inmotion Air - Pas Cher\n Trottinette Électrique Inmotion Air"
+    },
+    {
+     "url": "https://www.freemoov.com/shop/im-air-s-trottinette-electrique-inmotion-air-11",
+     "ok": true,
+     "n": 9,
+     "title": "Trottinette électrique Inmotion Air | Freemoov Trottinette électrique Inmotion Air | Freemoov"
+    },
+    {
+     "url": "https://clicknwheel.com/nos-produits/nos-produits/trottinette-electrique-bordeaux/trottinette-electrique-inmotion-air/",
+     "ok": true,
+     "n": 3,
+     "title": "Inmotion Air : prix et fiche technique | Click&#039;N&#039;Wheel Inmotion Air : prix et fiche technique | Click&#039;N&#039;Wheel"
+    }
+   ],
+   "candidates": 10
+  },
+  {
+   "slug": "e-twow-tanktorq-tk3",
+   "tokens": [
+    "tanktorq",
+    "tk",
+    "3"
+   ],
+   "pages": [
+    {
+     "url": "https://e-twow.com/products/tanktorq-tk3",
+     "ok": false,
+     "n": 0,
+     "title": "TankTorq TK3 Electric Scooter | High-Performance 2x750W, Long Range &ndash; E-TWOW eScooters\n\t TankTorq TK3 Electric Scooter | High-Performance 2x750W, Long Ran [variante : x,x]"
+    },
+    {
+     "url": "https://shop.e-twow.com/products/tanktorq-tk3",
+     "ok": false,
+     "n": 0,
+     "title": "TankTorq TK3 Electric Scooter | High-Performance 2x750W, Long Range &ndash; E-TWOW eScooters\n\t TankTorq TK3 Electric Scooter | High-Performance 2x750W, Long Ran [variante : x,x]"
+    },
+    {
+     "url": "https://shop.e-twow.com/fr/products/tanktorq-tk3",
+     "ok": false,
+     "n": 0,
+     "title": "TankTorq TK3 Electric Scooter | High-Performance 2x750W, Long Range &ndash; E-TWOW eScooters\n\t TankTorq TK3 Electric Scooter | High-Performance 2x750W, Long Ran [variante : x,x]"
+    },
+    {
+     "url": "https://www.boulanger.com/ref/9000928125",
+     "ok": false,
+     "n": 0,
+     "title": "erreur The operation was aborted due to timeout"
+    },
+    {
+     "url": "https://wellbots.fr/products/tanktorq-tk2-trottinette-electrique-a-double-moteur-2-600-w-vitesse-maximale-de-23-mph-37-km-h-copy",
+     "ok": true,
+     "n": 9,
+     "title": "E-TWOW TankTorq TK3\n E-TWOW TankTorq TK3"
+    }
+   ],
+   "candidates": 9
+  },
+  {
+   "slug": "e-twow-tanktorq-tk5",
+   "tokens": [
+    "tanktorq",
+    "tk",
+    "5"
+   ],
+   "pages": [
+    {
+     "url": "https://e-twow.com/products/tanktorq-tk5-dual-motor",
+     "ok": false,
+     "n": 0,
+     "title": "TankTorq TK5 Dual Motor Electric Scooter | 2x1000W motors High Quality &ndash; E-TWOW eScooters\n\t TankTorq TK5 Dual Motor Electric Scooter | 2x1000W motors High [variante : x,x]"
+    },
+    {
+     "url": "https://www.darty.com/nav/achat/sports_loisirs/glisse_urbaine/trottinette_electrique/e-twow_tanktorq_5_-_gris_c.html",
+     "ok": false,
+     "n": 0,
+     "title": "HTTP 403"
+    },
+    {
+     "url": "https://www.fnac.com/Trottinette-electrique-E-Twow-TankTorq-TK5-2000-W-Gris-clair/a21060856/w-4",
+     "ok": false,
+     "n": 0,
+     "title": "HTTP 403"
+    },
+    {
+     "url": "https://www.trottnscoot.com/produit/trottinette-electrique-etwow-tanktorq-tk5/",
+     "ok": true,
+     "n": 1,
+     "title": "Trottinette Électrique Etwow TankTorq TK5 - Trott&#039;n&#039;Scoot, Have elec fun ! Trottinette Électrique Etwow TankTorq TK5 - Trott&#039;n&#039;Scoot, Have e"
+    },
+    {
+     "url": "https://wellbots.fr/products/e-twow-tanktorq-tk-5-double-moteur-trottinette-electrique",
+     "ok": true,
+     "n": 17,
+     "title": "E-TWOW TankTorq TK-5 Double Moteur Trottinette électrique | Wellbots\n E-TWOW TankTorq TK-5 Double Moteur Trottinette électrique"
+    }
+   ],
+   "candidates": 10
+  },
+  {
+   "slug": "niu-kqi-100f",
+   "tokens": [
+    "kqi",
+    "100",
+    "f"
+   ],
+   "pages": [
+    {
+     "url": "https://shopeu.niu.com/products/niu-kqi-100f-trottinette-electrique-a-guidon-pliable-avec-suspension",
+     "ok": true,
+     "n": 9,
+     "title": "NIU KQi 100F Trottinette Électrique à Guidon Pliable avec Suspension |\n NIU KQi 100F Trottinette Électrique à Guidon Pliable avec Suspension |"
+    },
+    {
+     "url": "https://shopeu.niu.com/products/niu-kqi-100f-foldable-handlebar-electric-kick-scooter-with-suspension-eu-version",
+     "ok": true,
+     "n": 9,
+     "title": "NIU KQi 100F Foldable Handlebar Electric Scooter with Suspension | Ran\n NIU KQi 100F Foldable Handlebar Electric Scooter with Suspension | Ran"
+    },
+    {
+     "url": "https://shop.niu.com/products/niu-kqi-100f-electric-scooter",
+     "ok": true,
+     "n": 16,
+     "title": "NIU KQi 100F Foldable Handlebar Electric Scooter for Campus | Range 18 miles\n NIU KQi 100F Foldable Handlebar Electric Scooter for Campus | Range 18 miles"
+    },
+    {
+     "url": "https://garagetrott.fr/produit/trottinette-niu-kqi-100f-es-bk/",
+     "ok": true,
+     "n": 12,
+     "title": "Trottinette NIU KQi 100F ES-BK | Pièce trottinette Trottinette NIU KQi 100F ES-BK | Pièce trottinette"
+    },
+    {
+     "url": "https://turbokids.ca/products/niu-kqi-100f-trottinette-electrique-48-volts-4ah-300-watts-600-crete",
+     "ok": true,
+     "n": 11,
+     "title": "NIU, KQi 100F, Trottinette Électrique (48 Volts) (4Ah) (300 Watts) (60 — Turbokids.ca NIU, KQi 100F, Trottinette Électrique (48 Volts) (4Ah) (300 Watts) (600 Cr"
+    }
+   ],
+   "candidates": 10
+  },
+  {
+   "slug": "kugoo-g2-max",
+   "tokens": [
+    "g",
+    "2",
+    "max"
+   ],
+   "pages": [
+    {
+     "url": "https://kukiringlobal.com/products/kugoo-g2-max",
+     "ok": true,
+     "n": 13,
+     "title": "【KUGOO G2 MAX】1000W All-Terrain Electric Scooter  &ndash; KuKirin@Global Official Site |  Kugoo Kirin Global Official 【KUGOO G2 MAX】1000W All-Terrain Electric S"
+    },
+    {
+     "url": "https://www.jlkugoo.com/Products_details/109.html",
+     "ok": true,
+     "n": 1,
+     "title": "G2 Max Electric Scooter-Kugoo G2 Max Electric Scooter-Kugoo"
+    },
+    {
+     "url": "https://kugoo.ca/products/kugoo-g2-max-adult-off-road-electric-scooter",
+     "ok": true,
+     "n": 10,
+     "title": "KUGOO G2 MAX ELECTRIC SCOOTER: Power, Range &amp; Comfort Redefined\n &ndash; KUGOO TEC  KUGOO G2 MAX ELECTRIC SCOOTER: Power, Range &amp; Comfort Redefined"
+    },
+    {
+     "url": "https://fr.geekbuying.com/item/Trottinette-electrique-KUGOO-G2-MAX-1500W-48V21Ah-10000956.html",
+     "ok": true,
+     "n": 1,
+     "title": "Trottinette &#233;lectrique KUGOO G2 MAX 1500W 48V21Ah Trottinette &amp;#233;lectrique KUGOO G2 MAX 1500W 48V21Ah"
+    },
+    {
+     "url": "https://www.rueducommerce.fr/p/m24073946671.html",
+     "ok": false,
+     "n": 0,
+     "title": "erreur fetch failed"
+    }
+   ],
+   "candidates": 10
+  },
+  {
+   "slug": "mantis-pro",
+   "tokens": [
+    "mantis",
+    "pro"
+   ],
+   "pages": [
+    {
+     "url": "https://theescooterco.com/products/kaabo-mantis-pro-electric-scooter",
+     "ok": false,
+     "n": 0,
+     "title": "Bid on the domain theescooterco.com now | nicsell Bid on the domain theescooterco.com now | nicsell"
+    },
+    {
+     "url": "https://www.electrickicks.com.au/products/kaabo-mantis-pro-electric-scooter",
+     "ok": true,
+     "n": 11,
+     "title": "Kaabo Mantis Pro (60V 24.5Ah LG) Electric Scooter | Electric Kicks\n Kaabo Mantis Pro (60V 24.5Ah LG) Electric Scooter | Electric Kicks"
+    },
+    {
+     "url": "https://www.vedepot.com/products/kaabo-mantis-pro",
+     "ok": false,
+     "n": 0,
+     "title": "erreur fetch failed"
+    },
+    {
+     "url": "https://kaabomantis.com/shop/kaabo-mantis-10-pro-plus/",
+     "ok": true,
+     "n": 16,
+     "title": "Kaabo Mantis 10 Pro + Kaabo Mantis® Official Shop | Mantis 10 Kaabo Mantis 10 Pro + Kaabo Mantis® Official Shop | Mantis 10"
+    }
+   ],
+   "candidates": 10
+  },
+  {
+   "slug": "joyor-a5",
+   "tokens": [
+    "a",
+    "5"
+   ],
+   "pages": [
+    {
+     "url": "https://www.joyor-eu.com/products/a5",
+     "ok": false,
+     "n": 0,
+     "title": "HTTP 404"
+    },
+    {
+     "url": "https://fr.joyorscooter.com/model-a",
+     "ok": false,
+     "n": 0,
+     "title": "erreur fetch failed"
+    },
+    {
+     "url": "https://joyor.biz/produkt/electric-scooter-joyor-a5-black/",
+     "ok": false,
+     "n": 0,
+     "title": "erreur fetch failed"
+    },
+    {
+     "url": "https://www.trottnshop.com/produit/joyor-a5/",
+     "ok": true,
+     "n": 0,
+     "title": "JOYOR A5 | Trott'n'Shop JOYOR A5 | Trott&#039;n&#039;Shop"
+    },
+    {
+     "url": "https://trottinettepro.com/fr/494-joyor-a5-350w-36v-78ah.html",
+     "ok": false,
+     "n": 0,
+     "title": "erreur fetch failed"
+    }
+   ],
+   "candidates": 0
+  },
+  {
+   "slug": "dualtron-eagle-pro",
+   "tokens": [
+    "eagle",
+    "pro"
+   ],
+   "pages": [
+    {
+     "url": "https://www.wee-bot.com/products/trottinette-electrique-dualtron-eagle-pro",
+     "ok": true,
+     "n": 14,
+     "title": "Trottinette Électrique Dualtron Eagle Pro - Pas cher\n Trottinette Électrique Dualtron Eagle Pro"
+    },
+    {
+     "url": "https://pietechnologie.com/products/dualtron-eagle-pro",
+     "ok": true,
+     "n": 8,
+     "title": "Dualtron Eagle Pro - 60V 18 Ah/22,4 Ah - Minimotors - Pie Technologie&nbsp;&ndash; PIE TECHNOLOGIE \n Trottinette électrique Dualtron Eagle Pro"
+    },
+    {
+     "url": "https://www.lastmilesf.com/products/dualtron-eagle-pro-electric-scooter",
+     "ok": false,
+     "n": 0,
+     "title": "Electric Bikes & Scooters in San Francisco & Marin | Last Mile Electric Bikes &amp; Scooters in San Francisco &amp; Marin | Last Mile"
+    },
+    {
+     "url": "https://nycpev.com/product/dualtron-eagle-pro/",
+     "ok": true,
+     "n": 7,
+     "title": "Dualtron Eagle Pro - NYC PEV Dualtron Eagle Pro - NYC PEV"
+    },
+    {
+     "url": "https://www.trottnshop.com/produit/dualtron-eagle-pro-2/",
+     "ok": true,
+     "n": 1,
+     "title": "DUALTRON Eagle Pro | Trott'n'Shop DUALTRON Eagle Pro | Trott&#039;n&#039;Shop"
+    }
+   ],
+   "candidates": 10
+  },
+  {
+   "slug": "laotie-sr10",
+   "tokens": [
+    "sr",
+    "10"
+   ],
+   "pages": [
+    {
+     "url": "https://www.laotie.zone/LAOTIE--SR10-60V-28_8Ah-21700-Battery-3600W-Dual-Foldable-Electric-Scooter-100km-Mileage-150kg-Max-Load-EU-Plug-p-1929186.html",
+     "ok": false,
+     "n": 0,
+     "title": "LAOTIE® SR10 60V 28.8Ah 21700 Battery 3600W Dual Foldable Electric Scooter 100km LAOTIE® SR10 60V 28.8Ah 21700 Battery 3600W Dual Foldable Electric Scooter 100k [variante : max]"
+    },
+    {
+     "url": "https://usa.banggood.com/LAOTIE-SR10-60V-28_8Ah-21700-Battery-3600W-Dual-Motor-Foldable-Electric-Scooter-100km-Mileage-150kg-Max-Load-EU-Plug-reviews-p1929186.html",
+     "ok": false,
+     "n": 0,
+     "title": "LAOTIE® SR10 60V 28.8Ah 21700 Battery 3600W Dual Motor Foldable Electric Scooter 100km Mileage 150kg Max Load EU Plug Reviews - Banggood USA Online Shopping [variante : max]"
+    },
+    {
+     "url": "https://fideler-bike.fr/produit/laotie-sr10-60v-28-8ah-21700-batterie-3600w/",
+     "ok": false,
+     "n": 0,
+     "title": "erreur fetch failed"
+    }
+   ],
+   "candidates": 0
+  },
+  {
+   "slug": "isinwheel-s9-max",
+   "tokens": [
+    "s",
+    "9",
+    "max"
+   ],
+   "pages": [
+    {
+     "url": "https://www.isinwheel.fr/products/s9max-meilleure-trottinette-electrique-adulte-500w",
+     "ok": true,
+     "n": 18,
+     "title": "S9Max Trottinette Électrique Adulte 40km | isinwheel FR\n isinwheel® S9MAX Trottinette électrique 500W"
+    },
+    {
+     "url": "https://www.isinwheel.fr/products/isinwheel-s9max-trottinette-electrique-500w-pour-adultes",
+     "ok": true,
+     "n": 16,
+     "title": "S9MAX Trottinette Électrique Adulte Double Suspension 500W | isinwheel FR\n isinwheel® S9MAX Trottinette électrique 500W pour adultes"
+    },
+    {
+     "url": "https://www.isinwheel.com/products/s9max-500w-upgraded-electric-scooter",
+     "ok": false,
+     "n": 0,
+     "title": "isinwheel Electric Scooter &amp; Bike &ndash; iSinwheel Official Store isinwheel Electric Scooter &amp; Bike"
+    },
+    {
+     "url": "https://wellbots.fr/products/isinwheel-s9max-500w-trottinette-electrique",
+     "ok": true,
+     "n": 5,
+     "title": "Isinwheel S9Max 500W Trottinette Electrique | Wellbots | Livraison Gratuite\n Isinwheel S9Max 500W Trottinette Electrique"
+    },
+    {
+     "url": "https://www.circooter.fr/products/isinwheel-s9max-trottinette-electrique-500w-avec-app-control",
+     "ok": true,
+     "n": 2,
+     "title": "S9MAX Trottinette électrique 500W avec App Control &ndash; Circooter.fr\n S9MAX Trottinette électrique 500W avec App Control"
+    }
+   ],
+   "candidates": 10
+  },
+  {
+   "slug": "inmotion-c1-air-pro",
+   "tokens": [
+    "c",
+    "1",
+    "air",
+    "pro"
+   ],
+   "pages": [
+    {
+     "url": "https://www.inmotion-france.fr/en/e-scooters/465-inmotion-air-pro-e-scooter-438wh-3701522001397.html",
+     "ok": false,
+     "n": 0,
+     "title": "Inmotion E-scooters Inmotion E-scooters"
+    },
+    {
+     "url": "https://inmotionworld.com/products/inmotion-air-pro-portable-folding-electric-scooter-for-adults",
+     "ok": false,
+     "n": 0,
+     "title": "INMOTION Air Pro Electric Scooter | Fast, Powerful, Yet Light Enough - INMOTION\n INMOTION Air Pro Electric Scooter | Fast, Powerful, Yet Light Enough - INMOTION"
+    },
+    {
+     "url": "https://moovrider.com/products/inmotion-c1-air-pro",
+     "ok": false,
+     "n": 0,
+     "title": "HTTP 404"
+    },
+    {
+     "url": "https://www.trottnscoot.com/produit/trottinette-electrique-inmotion-c1-air-pro/",
+     "ok": true,
+     "n": 1,
+     "title": "Trottinette électrique Inmotion C1 Air Pro - Trott&#039;n&#039;Scoot, Have elec fun ! Trottinette électrique Inmotion C1 Air Pro - Trott&#039;n&#039;Scoot, Have"
+    },
+    {
+     "url": "https://www.wee-bot.com/products/trottinette-electrique-inmotion-air-pro",
+     "ok": false,
+     "n": 0,
+     "title": "Trottinette Inmotion Air Pro - Pas Cher\n Trottinette Électrique Inmotion Air Pro"
+    }
+   ],
+   "candidates": 1
+  },
+  {
+   "slug": "punk-rider",
+   "tokens": [
+    "rider"
+   ],
+   "pages": [
+    {
+     "url": "https://punkelectric.eu/products/punk-rider",
+     "ok": true,
+     "n": 27,
+     "title": "Punk Rider\n &ndash; Punk Electric Punk Rider"
+    },
+    {
+     "url": "https://www.eleqtron.fr/products/trottinette-electrique-punk-rider-simple-moteur",
+     "ok": false,
+     "n": 0,
+     "title": "Punk &#8211; Eleqtron"
+    },
+    {
+     "url": "https://over-watt.fr/products/punk-rider",
+     "ok": true,
+     "n": 7,
+     "title": "Punk Rider - Over Watt - Over Watt Punk Rider - Over Watt - Over Watt"
+    },
+    {
+     "url": "https://www.wilsonebikes.com/products/punk-rider-electric-scooter",
+     "ok": true,
+     "n": 19,
+     "title": "Punk Rider Electric Scooter | 24 MPH, 40 Miles | Wilson&#39;s\n Punk Rider Electric Scooter | 24 MPH, 40 Miles | Wilson&#39;s"
+    },
+    {
+     "url": "https://beyondpev.com/products/punk-rider-electric-scooter",
+     "ok": false,
+     "n": 0,
+     "title": "American Express"
+    }
+   ],
+   "candidates": 10
+  },
+  {
+   "slug": "vsett-10-plus",
+   "tokens": [
+    "10"
+   ],
+   "pages": [
+    {
+     "url": "https://vsettscooters.com/pages/vsett-10-plus",
+     "ok": true,
+     "n": 0,
+     "title": "VSETT 10+ Electric Scooter | VSETT Official\n     VSETT 10+"
+    },
+    {
+     "url": "https://vsett.com.au/products/vsett-10-plus-electric-scooter",
+     "ok": true,
+     "n": 24,
+     "title": "VSETT 10+ Electric Scooter by Ningbo Vsett Intelligent Technology - Free Delivery at VSETT Scooters\n\n\n VSETT 10+ Electric Scooter"
+    },
+    {
+     "url": "https://vsett-shop.com/product/vsett-10/",
+     "ok": true,
+     "n": 3,
+     "title": "VSETT 10+ - Vsett Shop Europe VSETT 10+ - Vsett Shop Europe"
+    },
+    {
+     "url": "https://www.trottnshop.com/produit/trottinette-electrique-vsett-10/",
+     "ok": true,
+     "n": 1,
+     "title": "Trottinette électrique Vsett 10+ | Trott'n'Shop Trottinette électrique Vsett 10+ | Trott&#039;n&#039;Shop"
+    },
+    {
+     "url": "https://www.mobilityurban.fr/marque/trottinette-vsett/trottinette-electrique-vsett-10-double-moteur-1400w-60v.html",
+     "ok": false,
+     "n": 0,
+     "title": "Trottinette électrique Vsett 10+ | Double moteur | 2x1400W Trottinette électrique VSETT 10+ Double moteur 1400W 60V [variante : x]"
+    }
+   ],
+   "candidates": 10
+  },
+  {
+   "slug": "micro-merlin",
+   "tokens": [
+    "merlin"
+   ],
+   "pages": [
+    {
+     "url": "https://www.decathlon.fr/p/mp/micro/trottinette-electrique-micro-merlin/_/R-p-7f35d623-d8b1-49f7-84c8-082db96a714b",
+     "ok": false,
+     "n": 0,
+     "title": "HTTP 403"
+    },
+    {
+     "url": "https://www.trottnshop.com/produit/trottinette-electrique-micro-merlin/",
+     "ok": true,
+     "n": 0,
+     "title": "Trottinette Electrique Micro Merlin | Trott'n'Shop Trottinette Electrique Micro Merlin | Trott&#039;n&#039;Shop"
+    },
+    {
+     "url": "https://www.mobilityurban.fr/trottinette-electrique/legere-et-compacte/trottinette-electrique-suisse-micro-merlin.html",
+     "ok": true,
+     "n": 7,
+     "title": "Trottinette Electrique MICRO MERLIN | Compacte | Légère Trottinette Electrique MICRO MERLIN"
+    },
+    {
+     "url": "https://www.greenweez.com/produit/trottinette-electrique-micro-merlin-1/2MICR3316",
+     "ok": false,
+     "n": 0,
+     "title": "HTTP 403"
+    },
+    {
+     "url": "https://www.fnac.com/Trottinette-electrique-Micro-Merlin-250-W-Noir/a12842616/w-4",
+     "ok": false,
+     "n": 0,
+     "title": "HTTP 403"
+    }
+   ],
+   "candidates": 7
+  },
+  {
+   "slug": "beaster-bs09",
+   "tokens": [
+    "bs",
+    "09"
+   ],
+   "pages": [
+    {
+     "url": "https://krinona.lt/elektriniai-paspirtukai/14619-elektrinis-paspirtukas-beaster-scooter-bs09-250-w-36-v-10-ah.html",
+     "ok": false,
+     "n": 0,
+     "title": "HTTP 403"
+    },
+    {
+     "url": "https://www.galaxus.fr/fr/s3/product/beaster-el-scooter-bs09-scooters-21072869",
+     "ok": false,
+     "n": 0,
+     "title": "HTTP 403"
+    },
+    {
+     "url": "https://mi-lab.lv/en/product/beaster-scooter-bs09-elektriskais-skrejritenis-2/",
+     "ok": false,
+     "n": 0,
+     "title": "HTTP 404"
+    },
+    {
+     "url": "https://www.morele.net/hulajnoga-elektryczna-beaster-beaster-scooter-el-paspirtukas-bs09-14076308/",
+     "ok": true,
+     "n": 4,
+     "title": "Beaster Scooter El. Paspirtukas, BS09 - Hulajnoga elektryczna - Morele.net Beaster Scooter El. Paspirtukas, BS09 - Hulajnoga elektryczna - Morele.net"
+    },
+    {
+     "url": "https://bigbox.fi/sahkoskootterit/1122707-sahkoskootteri-beaster-scooter-bs09-250-w-36-v-10-ah-musta-4772132008495.html",
+     "ok": false,
+     "n": 0,
+     "title": "HTTP 403"
+    }
+   ],
+   "candidates": 4
+  },
+  {
+   "slug": "dualtron-thunder-2",
+   "tokens": [
+    "thunder",
+    "2"
+   ],
+   "pages": [
+    {
+     "url": "https://minimotorsusa.com/products/dualtron-thunder-2-electric-scooter",
+     "ok": false,
+     "n": 0,
+     "title": "Dualtron USA | Official Dualtron Electric Scooter Dealer &amp; Distributor Dualtron USA | Official Dualtron Electric Scooter Dealer &amp; Distributor"
+    },
+    {
+     "url": "https://dualtron-shop.com/product/dualtron-thunder-2/",
+     "ok": false,
+     "n": 0,
+     "title": "HTTP 403"
+    },
+    {
+     "url": "https://dualtron-store.com/index.php/produit/dualtron-thunder-2/",
+     "ok": true,
+     "n": 2,
+     "title": "Dualtron Thunder 2 version 2026 - Odyssr Alpha"
+    },
+    {
+     "url": "https://pietechnologie.com/products/dualtron-thunder-2",
+     "ok": true,
+     "n": 15,
+     "title": "Trottinette électrique dualtron thunder 2 - Pie Technologie&nbsp;&ndash; PIE TECHNOLOGIE \n Trottinette électrique Dualtron thunder 2"
+    },
+    {
+     "url": "https://swiss-distribution.com/produit/dualtron-thunder-2/",
+     "ok": true,
+     "n": 3,
+     "title": "TROTTINETTE ELECTRIQUE DUALTRON THUNDER 2 | 72V 40Ah 2025 - Swiss Distribution TROTTINETTE ELECTRIQUE DUALTRON THUNDER 2 | 72V 40Ah 2025 - Swiss Distribution"
+    }
+   ],
+   "candidates": 10
+  },
+  {
+   "slug": "inmotion-s1f",
+   "tokens": [
+    "s",
+    "1",
+    "f"
+   ],
+   "pages": [
+    {
+     "url": "https://inmotionworld.com/products/inmotion-s1f",
+     "ok": true,
+     "n": 10,
+     "title": "INMOTION S1F Electric Scooter | Best Scooter for Heavy Riders - INMOTION\n INMOTION S1F Electric Scooter | Best Scooter for Heavy Riders - INMOTION"
+    },
+    {
+     "url": "https://www.inmotion-france.fr/en/e-scooters/472-inmotion-s1f-electric-scooter-54-v-125-ah-3701522001700.html",
+     "ok": true,
+     "n": 2,
+     "title": "Inmotion S1F Electric Scooter l Inmotion France Inmotion S1F Electric Scooter l Inmotion France"
+    },
+    {
+     "url": "https://www.inmotion-france.fr/en/s1f",
+     "ok": true,
+     "n": 1,
+     "title": "E-Scooter Inmotion S1F E-Scooter Inmotion S1F"
+    },
+    {
+     "url": "https://www.darty.com/nav/achat/sports_loisirs/glisse_urbaine/trottinette_electrique/inmotion_s1f.html",
+     "ok": false,
+     "n": 0,
+     "title": "HTTP 403"
+    },
+    {
+     "url": "https://www.wee-bot.com/products/trottinette-electrique-inmotion-s1f",
+     "ok": true,
+     "n": 20,
+     "title": "Trottinette Électrique S1F Inmotion - Pas Cher\n Trottinette Électrique S1F Inmotion"
+    }
+   ],
+   "candidates": 10
+  },
+  {
+   "slug": "dualtron-storm",
+   "tokens": [
+    "storm"
+   ],
+   "pages": [
+    {
+     "url": "https://dualtronusa.com/products/dualtron-new-storm-electric-scooter",
+     "ok": true,
+     "n": 13,
+     "title": "Dualtron New Storm Scooter | 55 MPH, Swappable Battery - Dualtron USA Dualtron New Storm"
+    },
+    {
+     "url": "https://dualtronnordic.com/en/product/dualtron-storm-up/",
+     "ok": true,
+     "n": 2,
+     "title": "Dualtron Storm (Gen 2) Electric Scooter | Dualtron Nordic Dualtron Storm (Gen 2) Electric Scooter | Dualtron Nordic"
+    },
+    {
+     "url": "https://www.planetediscount.eu/trottinette-electrique/10876-trottinette-electrique-dualtron-storm-315ah.html",
+     "ok": true,
+     "n": 1,
+     "title": "Trottinette électrique Dualtron Storm 35Ah Trottinette &eacute;lectrique Dualtron Storm 35Ah"
+    },
+    {
+     "url": "https://www.gyro-phare.com/38-trottinette-electrique-dualtron-storm-up.html",
+     "ok": false,
+     "n": 0,
+     "title": "erreur fetch failed"
+    }
+   ],
+   "candidates": 10
+  },
+  {
+   "slug": "aprilia-esr2-evo",
+   "tokens": [
+    "esr",
+    "2",
+    "evo"
+   ],
+   "pages": [
+    {
+     "url": "https://www.apriliasmartmovement.it/en/product/aprilia-esr2-evo",
+     "ok": false,
+     "n": 0,
+     "title": "erreur fetch failed"
+    },
+    {
+     "url": "https://www.e.leclerc/fp/aprilia-esr2-evo-25-km-h-noir-14-4-ah-8052679453085",
+     "ok": true,
+     "n": 7,
+     "title": "Aprilia eSR2 EVO 25 km/h Noir 14,4 Ah au meilleur prix | E.Leclerc"
+    },
+    {
+     "url": "https://www.trottinettes-destock.com/produit/trottinette-electrique-suspendue-et-connectee-aprilia-esr2-evo/",
+     "ok": false,
+     "n": 0,
+     "title": "erreur fetch failed"
+    },
+    {
+     "url": "https://www.franmarche.com/product/trottinette-electrique-aprilia-esr2-evo-500w-25km-h/",
+     "ok": false,
+     "n": 0,
+     "title": "Trottinette électrique Aprilia eSR2 EVO, 500W, 25km/h Trottinette électrique Aprilia eSR2 EVO, 500W, 25km/h, Portée Max 50km – Noir [variante : max]"
+    },
+    {
+     "url": "https://www.cleanrider.com/catalogue/trottinette-electrique/aprilia/aprilia-esr2-evo/",
+     "ok": true,
+     "n": 1,
+     "title": "Aprilia eSR2 EVO : test, fiche technique, prix et actualités Aprilia eSR2 EVO : prix, autonomie, performances, recharge, vitesse"
+    }
+   ],
+   "candidates": 8
+  },
+  {
+   "slug": "kaabo-wolf-warrior-11-pro-plus",
+   "tokens": [
+    "wolf",
+    "warrior",
+    "11",
+    "pro"
+   ],
+   "pages": [
+    {
+     "url": "https://www.kaabo.com/wolf-11/",
+     "ok": false,
+     "n": 0,
+     "title": "Shop Mantis &amp; Warrior Electric Scooters | Kaabo USA\n Shop Mantis &amp; Warrior Electric Scooters | Kaabo USA"
+    },
+    {
+     "url": "https://kaabomantis.com/shop/wolf-warrior-11-pro-plus/",
+     "ok": false,
+     "n": 0,
+     "title": "Wolf Warrior 11 - Kaabo® Official Shop | Wolf Warrior | Free Shipping Wolf Warrior 11 - Kaabo® Official Shop | Wolf Warrior | Free Shipping"
+    },
+    {
+     "url": "https://www.ecorecoscooter.com/products/kaabo-warrior-11",
+     "ok": false,
+     "n": 0,
+     "title": "Kaabo Warrior 11 Pro+ Electric Scooter | Dual Motor 5400W Power &vert; EcoReco Scooter Kaabo Warrior 11 Pro +"
+    },
+    {
+     "url": "https://euco.us/products/kaabo-warrior-11-pro",
+     "ok": false,
+     "n": 0,
+     "title": "Kaabo Warrior 11 Pro+ Kaabo Warrior 11 Pro+"
+    },
+    {
+     "url": "https://www.speedwayridersnyc.com/shop/kaabo-wolf-warrior-11-pro-electric-scooter/",
+     "ok": false,
+     "n": 0,
+     "title": "Kaabo Electric Scooters: Wolf Warrior, Wolf King, Mantis Kaabo Electric Scooters: the Wolf and Mantis Series"
+    }
+   ],
+   "candidates": 0
+  },
+  {
+   "slug": "laotie-ti30",
+   "tokens": [
+    "ti",
+    "30"
+   ],
+   "pages": [
+    {
+     "url": "https://www.laotie.zone/Ti30-Landbreaker-Electric-Scooter--5600W-140km-Mileage-p-1760299.html",
+     "ok": true,
+     "n": 1,
+     "title": "Ti30 Landbreaker Electric Scooter,  5600W 140km - LAOTIE Ti30 Landbreaker Electric Scooter,  5600W 140km Mileage"
+    },
+    {
+     "url": "https://laotie.fr/trottinette-electrique-adulte/laotie-t30-landbreaker/",
+     "ok": false,
+     "n": 0,
+     "title": "erreur fetch failed"
+    },
+    {
+     "url": "https://www.shopabunda.com/products/laotie-ti30-electric-scooter-adults-5600w-dual-motors-total-max-speed-50-mph-87-miles-range-11-tubeless-tires-foldable-e-scooter-with-oil-brake-and-eabs-dual-suspension",
+     "ok": false,
+     "n": 0,
+     "title": "HTTP 403"
+    },
+    {
+     "url": "https://trottinettecompare.fr/trottinette-electrique-laotie-ti30/",
+     "ok": false,
+     "n": 0,
+     "title": "erreur fetch failed"
+    }
+   ],
+   "candidates": 1
+  },
+  {
+   "slug": "ootd-t10-pro",
+   "tokens": [
+    "t",
+    "10",
+    "pro"
+   ],
+   "pages": [
+    {
+     "url": "https://o-otd.com/products/ootd-t10-pro-escooter",
+     "ok": true,
+     "n": 5,
+     "title": "T10 Pro Dual Motor Electric Scooter – 52V 2600W Power, 11” Tires, Long Range\n &ndash; OOTD T10 Pro Dual Motor Electric Scooter – 52V 2600W Power, 11” Tires, Lon"
+    },
+    {
+     "url": "https://us.o-otd.com/products/ootd-t10-pro-escooter",
+     "ok": true,
+     "n": 5,
+     "title": "OOTD T10 Pro | Dual-Motor Electric Scooter for High-Performance Riding\n &ndash; us.ootd OOTD T10 Pro | Dual-Motor Electric Scooter for High-Performance Riding"
+    },
+    {
+     "url": "https://ootd.se/en/products/ootd-t10-pro-electric-scooter",
+     "ok": false,
+     "n": 0,
+     "title": "OOTD T10 Pro E-Scooter | 1300W Dual Motor, 52V 23.4Ah, 65km/h, 70km Range\n &ndash; OOTD SE Official OOTD T10 Pro E-Scooter | 1300W Dual Motor, 52V 23.4Ah, 65km/ [variante : se]"
+    },
+    {
+     "url": "https://www.boulanger.com/ref/9000930723",
+     "ok": false,
+     "n": 0,
+     "title": "erreur The operation was aborted due to timeout"
+    },
+    {
+     "url": "https://helpmytrott.fr/p/ootd-t10-pro",
+     "ok": true,
+     "n": 1,
+     "title": "OOTD T10 Pro - Trottinette electrique 2600W tout-terrain OOTD T10 Pro - Trottinette electrique 2600W tout-terrain"
+    }
+   ],
+   "candidates": 10
+  },
+  {
+   "slug": "ninebot-f2-plus",
+   "tokens": [
+    "f",
+    "2",
+    "plus"
+   ],
+   "pages": [
+    {
+     "url": "https://fr-fr.segway.com/ekickscooter/products/f2-plus-e.html",
+     "ok": true,
+     "n": 0,
+     "title": "Trottinette électrique Segway eKickScooter Ninebot F2 Plus E Trottinette électrique Segway eKickScooter Ninebot F2 Plus E"
+    },
+    {
+     "url": "https://shop.segway.com/fr_en/ninebot-kickscooter-f2-plus-e-powered-by-segway.html",
+     "ok": false,
+     "n": 0,
+     "title": "HTTP 404"
+    },
+    {
+     "url": "https://lb-fr.segway.com/products/ninebot-kickscooter-f2-plus-powered-by-segway",
+     "ok": true,
+     "n": 0,
+     "title": "Trottinette électrique Segway eKickScooter Ninebot F2 Plus E Trottinette électrique Segway eKickScooter Ninebot F2 Plus E"
+    },
+    {
+     "url": "https://www.darty.com/nav/achat/sports_loisirs/glisse_urbaine/trottinette_electrique/avis_1__ninebot_ninebot_f2_plus_e.html",
+     "ok": false,
+     "n": 0,
+     "title": "HTTP 403"
+    },
+    {
+     "url": "https://www.gyroroue-shop.fr/boutique/trottinette-electrique/ninebot-segway/ninebot-kickscooter-f2-plus",
+     "ok": true,
+     "n": 6,
+     "title": "Ninebot F2 Plus E | KickSccoter | GS Ninebot F2 Plus E | KickSccoter | GS"
+    }
+   ],
+   "candidates": 6
+  },
+  {
+   "slug": "xiaomi-electric-scooter-6-lite",
+   "tokens": [
+    "6",
+    "lite"
+   ],
+   "pages": [
+    {
+     "url": "https://www.mi.com/fr/product/xiaomi-electric-scooter-6-lite/",
+     "ok": true,
+     "n": 1,
+     "title": "Xiaomi Electric Scooter 6 Lite | Xiaomi France | Toutes les spécifications et fonctionnalités  Xiaomi Electric Scooter 6 Lite | Xiaomi France | Toutes les spéci"
+    },
+    {
+     "url": "https://www.mi.com/global/product/xiaomi-electric-scooter-6-lite/",
+     "ok": true,
+     "n": 1,
+     "title": "Xiaomi Electric Scooter 6 Lite - Xiaomi Global Xiaomi Electric Scooter 6 Lite - Xiaomi Global"
+    },
+    {
+     "url": "https://www.darty.com/nav/achat/sports_loisirs/glisse_urbaine/trottinette_electrique/xiaomi_miscoot6liten.html",
+     "ok": false,
+     "n": 0,
+     "title": "HTTP 403"
+    },
+    {
+     "url": "https://voltride.com/xiaomi-scooter-6-lite/",
+     "ok": true,
+     "n": 6,
+     "title": "Xiaomi Scooter 6 Lite | Voltride Xiaomi Scooter 6 Lite | Voltride"
+    },
+    {
+     "url": "https://shopintertec.com/products/xiaomi-electric-scooter-6-lite",
+     "ok": true,
+     "n": 3,
+     "title": "Xiaomi Electric Scooter 6 Lite 25km Range 500W\n &ndash; Intertec Group W.L.L. Xiaomi Electric Scooter 6 Lite 25km Range 500W"
+    }
+   ],
+   "candidates": 10
+  },
+  {
+   "slug": "yeep-me-85a-evo",
+   "tokens": [
+    "85",
+    "a",
+    "evo"
+   ],
+   "pages": [
+    {
+     "url": "https://yeep.me/trottinettes-electriques/1837-yeepme-85a-evo-3700293230531.html",
+     "ok": true,
+     "n": 1,
+     "title": "YEEP.ME 85a evo YEEP.ME 85a evo"
+    },
+    {
+     "url": "https://www.decathlon.fr/p/mp/yeep-me/trottinette-electrique-yeep-me-85a-evo-30km-500w-cligno-nfc-appli-gar-5-ans/_/R-p-b8a7e2de-be14-48b2-9d8c-27e29cb603ed",
+     "ok": false,
+     "n": 0,
+     "title": "HTTP 403"
+    },
+    {
+     "url": "https://www.darty.com/nav/achat/ref/MC353079386.html",
+     "ok": false,
+     "n": 0,
+     "title": "HTTP 403"
+    },
+    {
+     "url": "https://www.fnac.com/mp53079386/Trottinette-electrique-YEEP-ME-85a-EVO-500W-30km-Clignos-Badge-NFC/w-4",
+     "ok": false,
+     "n": 0,
+     "title": "HTTP 403"
+    }
+   ],
+   "candidates": 1
+  },
+  {
+   "slug": "xiaomi-electric-scooter-4",
+   "tokens": [
+    "4"
+   ],
+   "pages": [
+    {
+     "url": "https://www.mi.com/fr/product/xiaomi-electric-scooter-4/",
+     "ok": true,
+     "n": 1,
+     "title": "Xiaomi Electric Scooter 4 | Xiaomi France | Toutes les spécifications et fonctionnalités  Xiaomi Electric Scooter 4 | Xiaomi France | Toutes les spécifications "
+    },
+    {
+     "url": "https://www.mi.com/global/product/xiaomi-electric-scooter-4/",
+     "ok": true,
+     "n": 1,
+     "title": "All Specs, Features of Xiaomi Electric Scooter 4 | Xiaomi  All Specs, Features of Xiaomi Electric Scooter 4 | Xiaomi"
+    },
+    {
+     "url": "https://www.fnac.com/XIAOMI-ELECTRIC-SCOOTER-4/a18256570/w-4",
+     "ok": false,
+     "n": 0,
+     "title": "HTTP 403"
+    }
+   ],
+   "candidates": 2
+  },
+  {
+   "slug": "wolf-warrior",
+   "tokens": [
+    "wolf",
+    "warrior"
+   ],
+   "pages": [
+    {
+     "url": "https://kaabo.com/product/wolf-warrior-11",
+     "ok": false,
+     "n": 0,
+     "title": "Shop Mantis &amp; Warrior Electric Scooters | Kaabo USA\n Shop Mantis &amp; Warrior Electric Scooters | Kaabo USA"
+    },
+    {
+     "url": "https://kaabousa.com/products/wolf-warrior-11-high-speed-50-mph-off-road-electric-scooter",
+     "ok": false,
+     "n": 0,
+     "title": "Kaabo Warrior 11 Max – 50 Mph Dual 1500W All-Terrain Scooter | Kaabo USA\n Warrior 11 Max"
+    },
+    {
+     "url": "https://kaabomantis.com/shop/wolf-warrior-11-pro-plus/",
+     "ok": true,
+     "n": 19,
+     "title": "Wolf Warrior 11 - Kaabo® Official Shop | Wolf Warrior | Free Shipping Wolf Warrior 11 - Kaabo® Official Shop | Wolf Warrior | Free Shipping"
+    },
+    {
+     "url": "https://www.e-wheels.fr/trotinette-electrique/kaabo-premium-escooters/kaabo-wolf-warrior--11/",
+     "ok": true,
+     "n": 2,
+     "title": "Kaabo Wolf Warrior 11 Kaabo Wolf Warrior 11"
+    },
+    {
+     "url": "https://www.trottnshop.com/produit/kaabo-wolf-warrior-11-plus/",
+     "ok": false,
+     "n": 0,
+     "title": "Kaabo Wolf Warrior 11 Plus | Trott'n'Shop Kaabo Wolf Warrior 11 Plus | Trott&#039;n&#039;Shop [variante : plus,plus]"
+    }
+   ],
+   "candidates": 10
+  },
+  {
+   "slug": "xiaomi-electric-scooter-6-max",
+   "tokens": [
+    "6",
+    "max"
+   ],
+   "pages": [
+    {
+     "url": "https://www.mi.com/fr/product/xiaomi-electric-scooter-6-max/",
+     "ok": true,
+     "n": 1,
+     "title": "Xiaomi Electric Scooter 6 Max | Xiaomi France | Toutes les spécifications et fonctionnalités  Xiaomi Electric Scooter 6 Max | Xiaomi France | Toutes les spécifi"
+    },
+    {
+     "url": "https://www.mi.com/global/product/xiaomi-electric-scooter-6-max/",
+     "ok": true,
+     "n": 1,
+     "title": "Xiaomi Electric Scooter 6 Max - Xiaomi Global Xiaomi Electric Scooter 6 Max - Xiaomi Global"
+    },
+    {
+     "url": "https://www.boulanger.com/ref/1235216",
+     "ok": false,
+     "n": 0,
+     "title": "erreur The operation was aborted due to timeout"
+    },
+    {
+     "url": "https://www.promo-velo.com/en/electric-scooter/xiaomi-electric-scooter-6-max",
+     "ok": true,
+     "n": 1,
+     "title": "Electric Scooter Xiaomi Electric Scooter 6 Max | Best price online"
+    },
+    {
+     "url": "https://voltride.com/electric-scooter-xiaomi-scooter-6-max/",
+     "ok": true,
+     "n": 4,
+     "title": "Xiaomi Scooter 6 Max | Voltride Xiaomi Scooter 6 Max | Voltride"
+    }
+   ],
+   "candidates": 7
+  },
+  {
+   "slug": "urbanglide-ecross-max-2x2-gen-2",
+   "tokens": [
+    "ecross",
+    "max",
+    "2",
+    "x",
+    "2",
+    "gen",
+    "2"
+   ],
+   "pages": [
+    {
+     "url": "https://urbanglide.com/en/produit/e-cross-max-2x2-2/",
+     "ok": false,
+     "n": 0,
+     "title": "E-CROSS MAX 2X2\t\t E-CROSS MAX 2X2 - UrbanGlide"
+    },
+    {
+     "url": "https://www.darty.com/nav/achat/sports_loisirs/glisse_urbaine/trottinette_electrique/urbanglide_ecross_max_2x2_new.html",
+     "ok": false,
+     "n": 0,
+     "title": "HTTP 403"
+    },
+    {
+     "url": "https://www.boulanger.com/ref/9000963628",
+     "ok": false,
+     "n": 0,
+     "title": "erreur The operation was aborted due to timeout"
+    },
+    {
+     "url": "https://www.e.leclerc/fp/urbanglide-e-cross-max-2x2-trottinette-electrique-noir-25-km-h-17-5-ah-3700092656433",
+     "ok": false,
+     "n": 0,
+     "title": "Urbanglide E-CROSS MAX 2X2 trottinette électrique Noir 25 km/h 17,5 Ah au meilleur prix | E.Leclerc"
+    }
+   ],
+   "candidates": 0
+  },
+  {
+   "slug": "navee-st5-max",
+   "tokens": [
+    "st",
+    "5",
+    "max"
+   ],
+   "pages": [
+    {
+     "url": "https://naveetech.fr/en/products/navee-st5-max",
+     "ok": true,
+     "n": 3,
+     "title": "NAVEE ST5 Max Trottinette électrique\n     NAVEE ST5 Max"
+    },
+    {
+     "url": "https://eu.naveetech.com/products/st5-max",
+     "ok": true,
+     "n": 9,
+     "title": "NAVEE ST5 Max Electric Scooter\n     NAVEE ST5 Max (EU Version Max. 25 km/h)"
+    },
+    {
+     "url": "https://naveetech.de/en/products/st5-max",
+     "ok": true,
+     "n": 4,
+     "title": "NAVEE ST5 Max E-Scooter | Für den Alltag\n     NAVEE ST5 Max"
+    },
+    {
+     "url": "https://www.naveetech.com/navee-st5-max/",
+     "ok": true,
+     "n": 1,
+     "title": "NAVEE ST5 Max Urban Electric Scooter | NAVEE TECH NAVEE ST5 Max Urban Electric Scooter | NAVEE TECH"
+    },
+    {
+     "url": "https://www.fnac.com/Trottinette-electrique-Navee-ST5-Max-700-W-Noir/a22970552/w-4",
+     "ok": false,
+     "n": 0,
+     "title": "HTTP 403"
+    }
+   ],
+   "candidates": 10
+  },
+  {
+   "slug": "wispeed-c10-55-max",
+   "tokens": [
+    "c",
+    "10",
+    "55",
+    "max"
+   ],
+   "pages": [
+    {
+     "url": "https://www.decathlon.fr/p/mp/wispeed/trottinette-electrique-c10-55-max-avec-roues-de-10/_/R-p-f7cab675-8083-4acc-a4a9-4a3b6472ee87",
+     "ok": false,
+     "n": 0,
+     "title": "HTTP 403"
+    },
+    {
+     "url": "https://www.fnac.com/Trottinette-electrique-Wispeed-C10-55-MAX-650-W-Bleu/a20217345/w-4",
+     "ok": false,
+     "n": 0,
+     "title": "HTTP 403"
+    },
+    {
+     "url": "https://www.darty.com/nav/achat/sports_loisirs/glisse_urbaine/trottinette_electrique/wispeed_w_c10-55_max_black.html",
+     "ok": false,
+     "n": 0,
+     "title": "HTTP 403"
+    },
+    {
+     "url": "https://www.electrodepot.fr/trottinette-electrique-wispeed-c10-55-max.html",
+     "ok": false,
+     "n": 0,
+     "title": "Trottinette électrique pas cher - Prix bas  - Electro Dépôt"
+    },
+    {
+     "url": "https://m.darty.com/m/achat/sports_loisirs/glisse_urbaine/trottinette_electrique/wispeed_w_c10-55_max_blue.html",
+     "ok": false,
+     "n": 0,
+     "title": "HTTP 403"
+    }
+   ],
+   "candidates": 0
+  },
+  {
+   "slug": "e-twow-tanktorq-tk2",
+   "tokens": [
+    "tanktorq",
+    "tk",
+    "2"
+   ],
+   "pages": [
+    {
+     "url": "https://e-twow.com/products/tanktorq-tk2",
+     "ok": true,
+     "n": 15,
+     "title": "TankTorq TK2 Electric Scooter | Powerful, dual motor and suspensions &ndash; E-TWOW eScooters\n\t TankTorq TK2 Electric Scooter | Powerful, dual motor and suspens"
+    },
+    {
+     "url": "https://shop.e-twow.com/products/tanktorq-tk2",
+     "ok": true,
+     "n": 15,
+     "title": "TankTorq TK2 Electric Scooter | Powerful, dual motor and suspensions &ndash; E-TWOW eScooters\n\t TankTorq TK2 Electric Scooter | Powerful, dual motor and suspens"
+    },
+    {
+     "url": "https://www.boulanger.com/ref/9000928120",
+     "ok": false,
+     "n": 0,
+     "title": "erreur The operation was aborted due to timeout"
+    },
+    {
+     "url": "https://wellbots.fr/products/tanktorq-tk2-trottinette-electrique-a-double-moteur-2-600-w-vitesse-maximale-de-23-mph-37-km-h",
+     "ok": true,
+     "n": 7,
+     "title": "E-TWOW TankTorq TK2\n E-TWOW TankTorq TK2"
+    },
+    {
+     "url": "https://www.e.leclerc/fp/trottinette-electrique-tank-torq-tk2-double-moteur-batterie-60-v-bleue-0484310809773",
+     "ok": true,
+     "n": 4,
+     "title": "Trottinette électrique TANK TORQ TK2, double moteur, batterie 60 V, bleue au meilleur prix | E.Leclerc"
+    }
+   ],
+   "candidates": 10
+  },
+  {
+   "slug": "jeep-adventurer",
+   "tokens": [
+    "adventurer"
+   ],
+   "pages": [
+    {
+     "url": "https://www.jeeperstore.com/trottinette-electrique-jeep-2xe-adventurer-e-mobility",
+     "ok": true,
+     "n": 1,
+     "title": "Trottinette électrique Jeep 2xe Adventurer (e-mobility) - 2XE-JE-MO-210005 / JE-MO-210005"
+    },
+    {
+     "url": "https://pietechnologie.com/products/trottinette-electrique-jeep-2xe-adventurer",
+     "ok": true,
+     "n": 15,
+     "title": "Trottinette électrique Jeep 2xe Adventurer&nbsp;&ndash; PIE TECHNOLOGIE \n Trottinette électrique Jeep 2xe Adventurer"
+    },
+    {
+     "url": "https://top-levelsports.com/product/trottinette-electrique-jeep-adventurer/",
+     "ok": false,
+     "n": 0,
+     "title": "erreur fetch failed"
+    },
+    {
+     "url": "https://www.mediamarkt.be/fr/product/_jeep-trottinette-%C3%A9lectrique-jeep-2xe-adventurer-avec-clignotants-je-mo-210005-2014448.html",
+     "ok": false,
+     "n": 0,
+     "title": "HTTP 403"
+    }
+   ],
+   "candidates": 10
+  },
+  {
+   "slug": "hiboy-ks4",
+   "tokens": [
+    "ks",
+    "4"
+   ],
+   "pages": [
+    {
+     "url": "https://hiboy.com/en-ca/products/hiboy-ks4-electric-scooter",
+     "ok": false,
+     "n": 0,
+     "title": "Best Electric Scooters for Adults | Shop E-Scooters Online\n     Adult Electric Scooter"
+    },
+    {
+     "url": "https://www.hiboy.com/products/hiboy-ks4-refurbished-electric-scooter",
+     "ok": false,
+     "n": 0,
+     "title": "Electric Scooters &amp; Electric Bike | Personal Electric Vehicles | Hiboy\n     Electric Scooters &amp; Electric Bike | Personal Electric Vehicles | Hiboy"
+    },
+    {
+     "url": "https://electricrideco.com/products/hiboy-ks4-electric-scooter",
+     "ok": true,
+     "n": 16,
+     "title": "Hiboy KS4 36V/7.5Ah 350W Electric Scooter   &ndash; Electric Ride Co. Hiboy KS4 36V/7.5Ah 350W Electric Scooter"
+    },
+    {
+     "url": "https://epoweradventures.com/products/hiboy-ks4-advanced-commuter-electric-scooter",
+     "ok": true,
+     "n": 12,
+     "title": "Hiboy KS4 Advanced Commuter Electric Scooter\n&ndash; E Power Adventures\n Hiboy KS4 Advanced Commuter Electric Scooter"
+    },
+    {
+     "url": "https://www.alphaproscooters.com/products/hiboy-ks4-electric-scooter",
+     "ok": false,
+     "n": 0,
+     "title": "Hiboy KS4 Advanced Commuter Electric Scooter - Alpha Pro Scooters Hiboy KS4 Advanced Commuter Electric Scooter - Alpha Pro Scooters [variante : pro,pro]"
+    }
+   ],
+   "candidates": 10
+  },
+  {
+   "slug": "yeep-me-120a",
+   "tokens": [
+    "120",
+    "a"
+   ],
+   "pages": [
+    {
+     "url": "https://yeep.me/trottinettes-electriques/1855-yeepme-120a-12-650w-40km-3700293231521.html",
+     "ok": false,
+     "n": 0,
+     "title": "yeep.me 100 a Sport yeep.me 100 a Sport"
+    },
+    {
+     "url": "https://www.boulanger.com/ref/9000921133",
+     "ok": false,
+     "n": 0,
+     "title": "erreur The operation was aborted due to timeout"
+    },
+    {
+     "url": "https://www.decathlon.fr/p/mp/yeep-me/trottinette-electrique-yeep-me-120a-12-650w-10-4ah-clignotants/_/R-p-de6bc5d8-bde8-497f-86ed-9452ca0bde1a",
+     "ok": false,
+     "n": 0,
+     "title": "HTTP 403"
+    },
+    {
+     "url": "https://www.fnac.com/mp52601295/Trottinette-electrique-YEEP-ME-120a-2025-Grandes-Roues-12-650W-10Ah-40km-NFC-Clignotants/w-4",
+     "ok": false,
+     "n": 0,
+     "title": "HTTP 403"
+    }
+   ],
+   "candidates": 0
+  },
+  {
+   "slug": "segway-gt1",
+   "tokens": [
+    "gt",
+    "1"
+   ],
+   "pages": [
+    {
+     "url": "https://store.segway.com/segway-superscooter-gt1",
+     "ok": true,
+     "n": 1,
+     "title": "Segway SuperScooter GT1 | Long Range Electric Scooter | Segway Store Segway SuperScooter GT1 | Long Range Electric Scooter | Segway Store"
+    },
+    {
+     "url": "https://segway.com.au/products/segway-ninebot-superscooter-gt1",
+     "ok": true,
+     "n": 7,
+     "title": "GT1 Segway Electric SuperScooter\n &ndash; Segway Australia   GT1 Segway Electric SuperScooter"
+    },
+    {
+     "url": "https://smartwheel.us/segway-ninebot-gt1-electric-kick-scooter/",
+     "ok": true,
+     "n": 1,
+     "title": "Segway Ninebot GT1 Electric Kick Scooter | Smartwheel USA Segway Ninebot GT1 Electric Kick Scooter"
+    },
+    {
+     "url": "https://www.canex.ca/fr/segway-ninebot-kickscooter-gt1-ea1-841450000819",
+     "ok": false,
+     "n": 0,
+     "title": "Trottinette électrique Ninebot KickScooter GT1 de Segway (EA1) | Canex Trottinette&#x20;&#xE9;lectrique&#x20;Ninebot&#x20;KickScooter&#x20;GT1&#x20;de&#x20;Segw [variante : x,x,x,x,x,x,x,x,x]"
+    }
+   ],
+   "candidates": 9
+  },
+  {
+   "slug": "oxelo-md500e",
+   "tokens": [
+    "md",
+    "500",
+    "e"
+   ],
+   "pages": [
+    {
+     "url": "https://www.decathlon.fr/p/trottinette-electrique-decathlon-25km-h-md500e/_/R-p-355472",
+     "ok": false,
+     "n": 0,
+     "title": "HTTP 403"
+    },
+    {
+     "url": "https://www.decathlon.be/fr/p/trottinette-electrique-md500-e/355472/c382m8884183",
+     "ok": false,
+     "n": 0,
+     "title": "HTTP 403"
+    },
+    {
+     "url": "https://www.decathlon.ch/fr/p/trottinette-electrique-decathlon-20km-h-md500e/_/R-p-356022",
+     "ok": false,
+     "n": 0,
+     "title": "HTTP 403"
+    },
+    {
+     "url": "https://decathlon.gf/collections/homme/products/trottinette-electrique-decathlon-25km-h-md500e",
+     "ok": true,
+     "n": 18,
+     "title": "Trottinette électrique MD500 E\n      \n      \n       &ndash; Decathlon Guyane Française\n     Trottinette électrique md500 e"
+    }
+   ],
+   "candidates": 10
+  },
+  {
+   "slug": "kukirin-g2-master",
+   "tokens": [
+    "g",
+    "2",
+    "master"
+   ],
+   "pages": [
+    {
+     "url": "https://www.kukirin-officiel.com/en/products/rottinette-electrique-kukirin-g2-master",
+     "ok": true,
+     "n": 22,
+     "title": "Trottinette électrique KuKirin G2 Master – 2000W, 70 km d’autonomie, double moteur - Kukirin Officiel - Kukirin Officiel Trottinette électrique KuKirin G2 Maste"
+    },
+    {
+     "url": "https://kukirin-france.com/products/kukirin-g2-master-electric-scooter",
+     "ok": false,
+     "n": 0,
+     "title": "Trottinette électrique KuKirin G2 Master | Moteur 1000 W x 2, 60 km/h, système 8 feux\n&ndash; Kukirin FR Official\n Trottinette électrique KuKirin G2 Master [variante : x]"
+    },
+    {
+     "url": "https://www.kukirinstore.com/products/kukirin-g2-master-electric-scooter",
+     "ok": true,
+     "n": 31,
+     "title": "KuKirin G2 Master Electric Scooter | Dual 1000W, 60 km/h &amp; 70 km\n &ndash; Kukirin KuKirin G2 Master Electric Scooter | Dual 1000W, 60 km/h &amp; 70 km"
+    },
+    {
+     "url": "https://www.boulanger.com/ref/9000921767",
+     "ok": false,
+     "n": 0,
+     "title": "erreur The operation was aborted due to timeout"
+    },
+    {
+     "url": "https://kukirin.co.uk/products/kukirin-g2-master-electric-scooter",
+     "ok": true,
+     "n": 22,
+     "title": "KuKirin G2 Master E-Scooter | 1000W*2 Motor, 60km/h, 8-Light System\n&ndash; Kukirin UK Official\n KuKirin G2 Master Electric Scooter"
+    }
+   ],
+   "candidates": 10
+  },
+  {
+   "slug": "e-twow-booster-se",
+   "tokens": [
+    "booster",
+    "se"
+   ],
+   "pages": [
+    {
+     "url": "https://e-twow.com/products/e-twow-s2-booster",
+     "ok": false,
+     "n": 0,
+     "title": "E-TWOW Booster ES Electric Scooter | Ultra-Light, Foldable, 500W motor &ndash; E-TWOW eScooters\n\t E-TWOW Booster ES Electric Scooter | Ultra-Light, Foldable, 50"
+    },
+    {
+     "url": "https://shop.e-twow.com/products/e-twow-s2-booster",
+     "ok": false,
+     "n": 0,
+     "title": "E-TWOW Booster ES Electric Scooter | Ultra-Light, Foldable, 500W motor &ndash; E-TWOW eScooters\n\t E-TWOW Booster ES Electric Scooter | Ultra-Light, Foldable, 50"
+    },
+    {
+     "url": "https://www.wee-bot.com/products/trottinette-electrique-etwow-booster-se",
+     "ok": true,
+     "n": 36,
+     "title": "Trottinette Électrique Etwow Booster SE - Pas Cher\n Trottinette Électrique Etwow Booster SE"
+    },
+    {
+     "url": "https://fastride.fr/fr/e-twow/4283-trottinette-electrique-e-twow-booster-se-es-2024.html",
+     "ok": false,
+     "n": 0,
+     "title": "HTTP 403"
+    },
+    {
+     "url": "https://full-mobility.com/produit/trottinette-electrique-e-twow-booster-se-36v-7-8ah-black/",
+     "ok": true,
+     "n": 8,
+     "title": "Trottinette électrique E-TWOW BOOSTER SE / ES 36V 7.8AH &ndash;  Full Mobility - Excursion et vente de véhicules Trottinette électrique E-TWOW BOOSTER SE / ES 3"
+    }
+   ],
+   "candidates": 10
+  },
+  {
+   "slug": "micro-explorer-ii",
+   "tokens": [
+    "explorer",
+    "ii"
+   ],
+   "pages": [
+    {
+     "url": "https://www.micro-mobility.com/en/products/micro-explorer-ii",
+     "ok": true,
+     "n": 1,
+     "title": "Micro Explorer II - micro-mobility.com Micro Mobility Scooter Worldwide"
+    },
+    {
+     "url": "https://www.micro-scooter.com/ch_en/micro-explorer-ii",
+     "ok": true,
+     "n": 9,
+     "title": "Micro Explorer II - Official Micro Online Store Micro Explorer II - Official Micro Online Store"
+    },
+    {
+     "url": "https://www.microcorner.ch/fr/micro-explorer-ii/",
+     "ok": true,
+     "n": 1,
+     "title": "Acheter le MICRO Explorer II | 13 kg, jusqu'à 35 km Acheter le MICRO Explorer II | 13 kg, jusqu&#039;à 35 km"
+    },
+    {
+     "url": "https://www.sharkfitness.ch/fr/sports-et-loisirs/micro-trottinette/scooter-electrique/micro-scooter-electrique-explorer-ii-em0081.html",
+     "ok": true,
+     "n": 2,
+     "title": "Micro scooter électrique Explorer II (EM0081) | Sharkfitness.ch Micro scooter électrique Explorer II (EM0081) | Sharkfitness.ch"
+    },
+    {
+     "url": "https://www.galaxus.ch/fr/s3/product/micro-explorer-ii-20-kmh-35-km-350-w-trottinette-electrique-24378300",
+     "ok": false,
+     "n": 0,
+     "title": "HTTP 403"
+    }
+   ],
+   "candidates": 10
+  },
+  {
+   "slug": "ducati-pro-ii-evo",
+   "tokens": [
+    "pro",
+    "ii",
+    "evo"
+   ],
+   "pages": [
+    {
+     "url": "https://www.ducatiurbanemobility.com/electric-mobility/pro-ii-evo/",
+     "ok": false,
+     "n": 0,
+     "title": "Platum - Muoviti in modo sostenibile | Soluzioni per la micro-mobilità elettrica Platum - Muoviti in modo sostenibile | Soluzioni per la micro-mobilità elettric"
+    },
+    {
+     "url": "https://www.feuvert.fr/trottinettes-electriques/ducati-trottinette-electrique-pro-ii-evo-ducati/p615447.html",
+     "ok": false,
+     "n": 0,
+     "title": "HTTP 403"
+    },
+    {
+     "url": "https://www.autobacs.fr/trottinette-electrique-ducati-pro-ii-evo-avec-clignotant.html",
+     "ok": true,
+     "n": 5,
+     "title": "Trottinette électrique DUCATI PRO-II EVO avec clignotant Ducati - Trottinette | Autobacs"
+    },
+    {
+     "url": "https://pietechnologie.com/products/trottinette-electrique-ducati-pro-ii-evo",
+     "ok": true,
+     "n": 5,
+     "title": "Trottinette électrique Ducati Pro-II Evo&nbsp;&ndash; PIE TECHNOLOGIE \n Trottinette électrique Ducati Pro-II Evo"
+    },
+    {
+     "url": "https://www.edashmobility.com/products/ducati-pro-ii-evo-electric-scooter",
+     "ok": true,
+     "n": 8,
+     "title": "Ducati Pro-II Evo | Free &amp; Fast Delivery | E-Dash Mobility Ducati Pro-II Evo | Free &amp; Fast Delivery | E-Dash Mobility"
+    }
+   ],
+   "candidates": 10
+  },
+  {
+   "slug": "langfeite-roadster",
+   "tokens": [
+    "roadster"
+   ],
+   "pages": [
+    {
+     "url": "https://langfeite.com/Products/Roadster.html",
+     "ok": false,
+     "n": 0,
+     "title": "LANGFEITE Electric Scooters"
+    },
+    {
+     "url": "https://fohzshop.fr/en/electric-scooters/langfeite/langfeite-roadster-dual-48v-21ah",
+     "ok": true,
+     "n": 6,
+     "title": "Electric scooter Langfeite Roadster Dual 48V 21Ah | FōhzShop Electric scooter Langfeite Roadster Dual 48V 21Ah | FōhzShop"
+    },
+    {
+     "url": "https://www.scootreon.cz/trottinette-electrique-langfeite-roadster-dual-48v-21ah",
+     "ok": true,
+     "n": 0,
+     "title": "LANGFEITEROADSTERDUAL48V21A"
+    },
+    {
+     "url": "https://www.erevolution.eu/tovar/5929/elektrokolobezka-langfeite-roadster",
+     "ok": false,
+     "n": 0,
+     "title": "Langfeite Roadster | 2x800W Peak | 48V 21Ah | Hydraulické brzdy | eRevolution Langfeite Roadster | 2x800W Peak | 48V 21Ah | Hydraulické brzdy [variante : x,x]"
+    }
+   ],
+   "candidates": 6
+  },
+  {
+   "slug": "kingsong-n15",
+   "tokens": [
+    "n",
+    "15"
+   ],
+   "pages": [
+    {
+     "url": "https://www.kingsong.com/products/kingsong-n15-series-electric-scooters",
+     "ok": false,
+     "n": 0,
+     "title": "KingSong Electric Unicycles &amp; E-Scooters | Official Store\n\t KingSong Electric Unicycles &amp;amp; E-Scooters | Official Store"
+    },
+    {
+     "url": "https://kingsongeurope.com/product/kingsong-n15/",
+     "ok": true,
+     "n": 1,
+     "title": "KingSong N15 &#8211; KingSong Europe &#8211; Personal Electric Vehicle Manufacturer"
+    },
+    {
+     "url": "https://www.maxblinker.com/en/electric-scooters/kingsong-n15",
+     "ok": true,
+     "n": 1,
+     "title": "KingSong N15 – Powerful electric scooter with dual suspension - Enjoy the ride KingSong N15 – Powerful electric scooter with dual suspension"
+    },
+    {
+     "url": "https://www.kingsong-store.com/en/",
+     "ok": false,
+     "n": 0,
+     "title": "Kingsong Store Kingsong Store"
+    }
+   ],
+   "candidates": 2
+  },
+  {
+   "slug": "dualtron-ultra-one",
+   "tokens": [
+    "ultra",
+    "one"
+   ],
+   "pages": [
+    {
+     "url": "https://fastride.fr/fr/dualtron/2996-trottinette-electrique-dualtron-ultra-2-up-2025.html",
+     "ok": false,
+     "n": 0,
+     "title": "HTTP 403"
+    },
+    {
+     "url": "https://dualtronusa.com/products/dualtron-ultra-one",
+     "ok": false,
+     "n": 0,
+     "title": "HTTP 404"
+    }
+   ],
+   "candidates": 0
+  },
+  {
+   "slug": "p100s",
+   "tokens": [
+    "p",
+    "100",
+    "s"
+   ],
+   "pages": [
+    {
+     "url": "https://store.segway.com/segway-kickscooter-p100su",
+     "ok": true,
+     "n": 1,
+     "title": "Segway Kickscooter P100S Segway Kickscooter P100S"
+    },
+    {
+     "url": "https://www.segway.la/products/segway-kickscooter-p100s",
+     "ok": true,
+     "n": 25,
+     "title": "Segway KickScooter P100s&ndash; Segway Los Angeles  Segway KickScooter P100s"
+    },
+    {
+     "url": "https://alienrides.com/products/segway-ninebot-p100s-electric-scooter",
+     "ok": true,
+     "n": 14,
+     "title": "Segway - Ninebot P100S Electric Scooter &ndash; Alien Rides\n   Segway - Ninebot P100S Electric Scooter"
+    },
+    {
+     "url": "https://smartwheel.us/segway-ninebot-p100s-electric-kick-scooter/",
+     "ok": true,
+     "n": 1,
+     "title": "Segway Ninebot P100S Electric Kick Scooter - Smartwheel USA Segway Ninebot P100S Electric Kick Scooter"
+    },
+    {
+     "url": "https://www.mymobelity.be/fr/trottinette-electrique-segway-ninebot-p100s.html",
+     "ok": true,
+     "n": 4,
+     "title": "Segway Ninebot P100S trottinette électrique - My Mobelity Segway Ninebot P100S trottinette électrique"
+    }
+   ],
+   "candidates": 10
+  },
+  {
+   "slug": "e-twow-gt-se",
+   "tokens": [
+    "gt",
+    "se"
+   ],
+   "pages": [
+    {
+     "url": "https://www.etwow.net/en/e-twow-booster-gt-2020-smart-edition-pack-security-helmet-etwow-carrying-handle-and-strap",
+     "ok": true,
+     "n": 1,
+     "title": "New E-TWOW GT SE with bluetooth 700W 48V - 10.5Ah Color White New E-TWOW GT SE with bluetooth 700W 48V - 10.5Ah Color White"
+    },
+    {
+     "url": "https://e-twowusa.com/products/copy-of-2022-etwow-gt-sport-with-bluetooth-and-rear-drum-brake",
+     "ok": false,
+     "n": 0,
+     "title": "The New GT | Buy Premium Quality Electric Scooter | Easy Transportation\n &ndash; E-TWOW - Premium Electric Scooters The New GT | Buy Premium Quality Electric Sc"
+    },
+    {
+     "url": "https://www.wee-bot.com/products/trottinette-electrique-etwow-gt-se",
+     "ok": true,
+     "n": 16,
+     "title": "Trottinette Électrique Etwow GT SE - Pas Cher\n Trottinette Électrique Etwow GT SE"
+    },
+    {
+     "url": "https://www.gyroroue-shop.fr/boutique/trottinette-electrique-patinette/e-twow/e-twow-gt-se",
+     "ok": true,
+     "n": 1,
+     "title": "E-TWOW GT SE | Légère Et Connectée | GS E-TWOW GT SE | Légère Et Connectée | GS"
+    },
+    {
+     "url": "https://trottinetteroute.com/product/trottinette-electrique-e-twow-gt-se/",
+     "ok": false,
+     "n": 0,
+     "title": "erreur fetch failed"
+    }
+   ],
+   "candidates": 10
+  },
+  {
+   "slug": "segway-zt3-pro-e",
+   "tokens": [
+    "zt",
+    "3",
+    "pro",
+    "e"
+   ],
+   "pages": [
+    {
+     "url": "https://www.segwayfrance.com/products/segway-zt3-pro-e-trottinette-electrique",
+     "ok": true,
+     "n": 15,
+     "title": "Segway ZT3 Pro E, Trottinette Tout-Terrain 70 km | Segway France Segway ZT3 Pro E, Trottinette Tout-Terrain 70 km | Segway France"
+    },
+    {
+     "url": "https://shop.segway.com/nl_en/ninebot-kickscooter-zt3-pro-e-powered-by-segway.html",
+     "ok": false,
+     "n": 0,
+     "title": "HTTP 404"
+    },
+    {
+     "url": "https://www.segwayfrance.com/pages/segway-zt3-pro",
+     "ok": true,
+     "n": 1,
+     "title": "Segway ZT3 Pro E – Trottinette Tout-Terrain 1600W | 70 km | Segway France Segway ZT3 Pro E – Trottinette Tout-Terrain 1600W | 70 km | Segway France"
+    },
+    {
+     "url": "https://www.darty.com/nav/achat/sports_loisirs/glisse_urbaine/trottinette_electrique/segway_zt3_pro_e.html",
+     "ok": false,
+     "n": 0,
+     "title": "HTTP 403"
+    },
+    {
+     "url": "https://fastride.fr/fr/segway-ninebot/4145-trottinette-electrique-segway-ekickscooter-zt3-pro-e.html",
+     "ok": false,
+     "n": 0,
+     "title": "HTTP 403"
+    }
+   ],
+   "candidates": 10
+  },
+  {
+   "slug": "segway-gt2",
+   "tokens": [
+    "gt",
+    "2"
+   ],
+   "pages": [
+    {
+     "url": "https://fr-fr.segway.com/ekickscooter/products/gt2p.html",
+     "ok": true,
+     "n": 0,
+     "title": "Segway eKickScooter GT2 P Segway eKickScooter GT2 P"
+    },
+    {
+     "url": "https://store.segway.com/segway-superscooter-gt2",
+     "ok": true,
+     "n": 1,
+     "title": "Segway SuperScooter GT2 | Fast Electric Scooter | Segway Store Segway SuperScooter GT2 | Fast Electric Scooter | Segway Store"
+    },
+    {
+     "url": "https://www.segwayfrance.com/boutique/Segway-SuperScooter-GT2P-p481432569",
+     "ok": false,
+     "n": 0,
+     "title": "Segway GT3 Pro SuperScooter 80 km/h | Segway France Segway GT3 Pro SuperScooter 80 km/h | Segway France"
+    },
+    {
+     "url": "https://www.maxblinker.com/en/electric-scooters/segway-superscooter-gt2",
+     "ok": true,
+     "n": 1,
+     "title": "Segway SuperScooter GT2 electric scooter in stock. - Enjoy the ride Segway SuperScooter GT2 electric scooter in stock."
+    },
+    {
+     "url": "https://biospeed.fr/produit/trottinette-electrique-segway-gt2/",
+     "ok": false,
+     "n": 0,
+     "title": "erreur fetch failed"
+    }
+   ],
+   "candidates": 2
+  },
+  {
+   "slug": "nami-klima",
+   "tokens": [
+    "klima"
+   ],
+   "pages": [
+    {
+     "url": "https://www.wee-bot.com/products/trottinette-electrique-nami-klima",
+     "ok": true,
+     "n": 24,
+     "title": "Trottinette Électrique Nami Klima - Pas Cher\n Trottinette Électrique Nami Klima"
+    },
+    {
+     "url": "https://www.eleqtron.fr/products/trottinette-electrique-nami-klima",
+     "ok": false,
+     "n": 0,
+     "title": "Longue autonomie &#8211; Eleqtron"
+    },
+    {
+     "url": "https://www.wilsonebikes.com/products/nami-klima-electric-scooter",
+     "ok": true,
+     "n": 32,
+     "title": "Nami Klima Electric Scooter | 42 MPH, 50 Miles | Wilson&#39;s\n Nami Klima Electric Scooter | 42 MPH, 50 Miles | Wilson&#39;s"
+    },
+    {
+     "url": "https://funtrott.fr/accueil/1889-nami-klima.html",
+     "ok": true,
+     "n": 2,
+     "title": "Nami Klima 60V25Ah"
+    },
+    {
+     "url": "https://ogctrotteshop.fr/nami-electric/56-nami-klima.html",
+     "ok": true,
+     "n": 2,
+     "title": "Nami Klima Nami Klima"
+    }
+   ],
+   "candidates": 10
+  },
+  {
+   "slug": "joyor-y6-s",
+   "tokens": [
+    "y",
+    "6",
+    "s"
+   ],
+   "pages": [
+    {
+     "url": "https://joyor.com/products/joyor-y6-s-electric-scooter",
+     "ok": true,
+     "n": 12,
+     "title": "Joyor Y6-S Electric Scooter | 500W Motor, 25km/h, 60km Range, 10&#39;&#39;Tire\n &ndash; Joyor Official Joyor Y6-S Electric Scooter | 500W Motor, 25km/h, 60km Ra"
+    },
+    {
+     "url": "https://joyor-france.com/products/joyor-y6-s",
+     "ok": false,
+     "n": 0,
+     "title": "HTTP 423"
+    },
+    {
+     "url": "https://joyorescooter.com/products/eujoyor-y6-s",
+     "ok": true,
+     "n": 22,
+     "title": "[EU]JOYOR Y6-S\n&ndash; JOYOR_US\n [EU]JOYOR Y6-S"
+    },
+    {
+     "url": "https://joyorscooter.com/products/joyor-y6-s-electric-scooter",
+     "ok": true,
+     "n": 8,
+     "title": "Joyor Y6-S Electric Scooter - 500W Power 60km Range\n&ndash; Joyor Electric Scooter Joyor Y6-S Electric Scooter - 500W Power 60km Range"
+    },
+    {
+     "url": "https://www.joyor-escooter.com/products/y6-s",
+     "ok": true,
+     "n": 2,
+     "title": "Joyor Y6‑S Electric Scooter | 500W Motor, 60km Range, Dual Suspension, Dual Disc Brakes, Foldable Design Joyor Y6‑S Electric Scooter – 500W Motor, 60km Range, D"
+    }
+   ],
+   "candidates": 10
+  },
+  {
+   "slug": "joyor-s8-e",
+   "tokens": [
+    "s",
+    "8",
+    "e"
+   ],
+   "pages": [
+    {
+     "url": "https://joyor.com/products/joyor-s8-e-eec-electric-scooter",
+     "ok": true,
+     "n": 9,
+     "title": "Joyor S8-E EEC E-Scooter | 800W Motor, 48V 26Ah, 45km/h, 80km Range\n &ndash; Joyor Official Joyor S8-E EEC E-Scooter | 800W Motor, 48V 26Ah, 45km/h, 80km Range"
+    },
+    {
+     "url": "https://joyor.fr/modele-s/45-trottinette-electrique-joyor-s8-e-800w-48v-26ah-7444855750773.html",
+     "ok": false,
+     "n": 0,
+     "title": "erreur fetch failed"
+    },
+    {
+     "url": "https://www.joyor-fr.com/products/joyor-s8e-trottinette-electrique",
+     "ok": true,
+     "n": 2,
+     "title": "Joyor S8E – Trottinette électrique pliable 800 W, batterie 48 V 26 Ah et freins à disque Joyor S8E – Trottinette électrique pliable 800 W, batterie 48 V 26 Ah, "
+    },
+    {
+     "url": "https://joyorscooter.com/products/joyor-s8e-electric-scooter",
+     "ok": true,
+     "n": 11,
+     "title": "Joyor S8E Electric Scooter | 800W Motor, 80km Range, COC Certified\n&ndash; Joyor Electric Scooter Joyor S8E Electric Scooter | 800W Motor, 80km Range, COC Certi"
+    },
+    {
+     "url": "https://www.boulanger.com/ref/9000843818",
+     "ok": false,
+     "n": 0,
+     "title": "erreur The operation was aborted due to timeout"
+    }
+   ],
+   "candidates": 10
+  }
+ ]
+}
