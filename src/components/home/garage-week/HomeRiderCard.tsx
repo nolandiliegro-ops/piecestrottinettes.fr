@@ -64,6 +64,7 @@ const HomeRiderCard = ({ riders, isAuthenticated }: { riders: RiderBundle[]; isA
             {rider?.username && (
               // 26/10 (Nolan : « le bouton du garage de NOLAN2.0, il faut qu'il soit plus gros parce que c'est top ») : un vrai bouton.
               <Link to={`/rider/${rider.username}`} className="inline-flex items-center gap-3 min-h-[56px] px-5 text-[15px] font-extrabold uppercase" style={{ fontFamily: FONT, color: "#FFFFFF", clipPath: cut(10), boxShadow: "inset 0 0 0 2px rgba(255,255,255,0.9)", background: "rgba(26,26,26,0.35)" }}>
+                {data?.profile.avatar_url && <img src={data.profile.avatar_url} alt="" className="w-9 h-9 -ml-2 object-cover bg-white shrink-0" style={{ clipPath: cut(6) }} />}
                 Voir le garage de {rider.display_name} <ArrowRight className="w-5 h-5" />
               </Link>
             )}

@@ -115,13 +115,24 @@ const RiderPublicCard = () => {
           <div className="pb-10">
             {/* 25/10 (garage v3) : la page publique reprend « Ma carte » — le titre sur le wallpaper, la carte Story
                 en premier, ses commentaires, puis ses machines et les pièces qui vont dessus. */}
-            <header className="mt-2 mb-5">
-              <p className="text-sm font-bold uppercase tracking-[0.14em]" style={{ fontFamily: FONT, color: "#8FBF9C", textShadow: "0 1px 8px rgba(0,0,0,0.5)" }}>
-                Garage public · {level.name}{data.profile.rider_location ? ` · ${data.profile.rider_location}` : ""}
-              </p>
-              <h1 className="mt-1 text-[30px] lg:text-[48px] uppercase leading-[0.95] text-white" style={{ fontFamily: UNB, fontWeight: 900, fontStyle: "italic", letterSpacing: "-0.03em", textShadow: "0 2px 18px rgba(0,0,0,0.45)" }}>
-                Le garage de {name}
-              </h1>
+            {/* 26/10 (Nolan : « il faudrait qu'on voie la tête, le logo du profil ») : l'avatar du rider à côté du titre,
+                au même dessin que sur sa carte (coin coupé, fond blanc). */}
+            <header className="mt-2 mb-5 flex items-center gap-3 lg:gap-4">
+              {data.profile.avatar_url ? (
+                <img src={data.profile.avatar_url} alt={`Photo de ${name}`} className="w-[68px] h-[68px] lg:w-[92px] lg:h-[92px] shrink-0 object-cover bg-white"
+                  style={{ clipPath: "polygon(0 0, calc(100% - 10px) 0, 100% 10px, 100% 100%, 10px 100%, 0 calc(100% - 10px))", boxShadow: "0 6px 18px rgba(0,0,0,0.35)" }} />
+              ) : (
+                <span className="w-[68px] h-[68px] lg:w-[92px] lg:h-[92px] shrink-0 inline-flex items-center justify-center bg-white text-[26px]"
+                  style={{ fontFamily: UNB, fontWeight: 900, fontStyle: "italic", color: "#1A1A1A", clipPath: "polygon(0 0, calc(100% - 10px) 0, 100% 10px, 100% 100%, 10px 100%, 0 calc(100% - 10px))" }}>{name.slice(0, 1).toUpperCase()}</span>
+              )}
+              <div className="min-w-0">
+                <p className="text-sm font-bold uppercase tracking-[0.14em]" style={{ fontFamily: FONT, color: "#8FBF9C", textShadow: "0 1px 8px rgba(0,0,0,0.5)" }}>
+                  Garage public · {level.name}{data.profile.rider_location ? ` · ${data.profile.rider_location}` : ""}
+                </p>
+                <h1 className="mt-1 text-[30px] lg:text-[48px] uppercase leading-[0.95] text-white" style={{ fontFamily: UNB, fontWeight: 900, fontStyle: "italic", letterSpacing: "-0.03em", textShadow: "0 2px 18px rgba(0,0,0,0.45)" }}>
+                  Le garage de {name}
+                </h1>
+              </div>
             </header>
 
               {/* 25/10 soir (Nolan : « au sol… vraiment sur l'estrade… qu'elle flotte ») : sa trott posée sur l'estrade de SON
