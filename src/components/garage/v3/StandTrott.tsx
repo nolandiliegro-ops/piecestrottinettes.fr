@@ -20,20 +20,29 @@ const TROTT_H = 0.38; // hauteur de la trott, en part de la hauteur de l'image a
 const TROTT_H_TEL = 0.34; // téléphone (image affichée = hauteur de l'écran, la trott serait sinon plus large que lui)
 const LIFT = 0.035; // la trott flotte à 3,5 % de sa hauteur au-dessus du plateau
 
-type Pos = { x: number; y: number; h: number; vw: number; vh: number };
+type Pos = { x: number; y: number; h: number; vw: number; vh: number; dispW: number; dispH: number; offX: number; offY: number };
 
-const calc = (): Pos | null => {
+/* 26/10 (Nolan, garage public sur téléphone : « on ne voit pas le nom… il faut remonter ») : option `remonte`.
+   Sur téléphone, le wallpaper est décalé vers le haut (REMONTE_TEL de la hauteur d'écran) : l'estrade passe d'environ
+   84 % à 67 % de l'écran, la trott ET son nom écrit au sol tiennent au-dessus de la barre du bas. Le bas de l'écran,
+   découvert, est fondu en carbone (GarageBackground). Ordinateur inchangé. Sans `remonte` : comportement d'avant. */
+const REMONTE_TEL = 0.17;
+
+const calc = (remonte = false): Pos | null => {
   if (typeof window === "undefined") return null;
   const vw = window.innerWidth;
   const vh = window.innerHeight;
   const dispH = Math.max(vw / IMG_RATIO, vh); // hauteur affichée de l'image (object-cover)
-  const offsetY = (vh - dispH) / 2;
-  const h = Math.min((vw < 1024 ? TROTT_H_TEL : TROTT_H) * dispH, vw * 0.78 / 1.2);
-  return { x: vw / 2, y: offsetY + ESTRADE_Y * dispH, h, vw, vh };
+  const dispW = dispH * IMG_RATIO;
+  const tel = vw < 1024;
+  const offY = (vh - dispH) / 2 - (remonte && tel ? REMONTE_TEL * vh : 0);
+  const offX = (vw - dispW) / 2;
+  const h = Math.min((tel ? TROTT_H_TEL : TROTT_H) * dispH, vw * 0.78 / 1.2);
+  return { x: vw / 2, y: offY + ESTRADE_Y * dispH, h, vw, vh, dispW, dispH, offX, offY };
 };
 
-export const useEstrade = () => {
-  const [pos, setPos] = useState(calc);
+export const useEstrade = (remonte = false) => {
+  const [pos, setPos] = useState(() => calc(remonte));
   useEffect(() => {
     // Téléphone : la barre d'adresse qui se replie change innerHeight → on ne recale que sur un vrai changement de largeur
     // ou une rotation, sinon la trott sauterait à chaque défilement.
@@ -41,7 +50,7 @@ export const useEstrade = () => {
     const on = () => {
       if (window.innerWidth < 1024 && window.innerWidth === w) return;
       w = window.innerWidth;
-      setPos(calc());
+      setPos(calc(remonte));
     };
     window.addEventListener("resize", on);
     window.addEventListener("orientationchange", on);
@@ -49,7 +58,7 @@ export const useEstrade = () => {
       window.removeEventListener("resize", on);
       window.removeEventListener("orientationchange", on);
     };
-  }, []);
+  }, [remonte]);
   return pos;
 };
 
@@ -60,8 +69,25 @@ const FLOAT_CSS = `
 @media (prefers-reduced-motion: reduce){.pt-stand-anim{animation:none!important}}
 `;
 
-const StandTrott = ({ src, alt }: { src: string | null | undefined; alt: string }) => {
-  const pos = useEstrade();
+/** `sol` : le nom écrit au sol devant l'estrade, comme incrusté dans le béton (26/10, Nolan : « vraiment comme si c'était
+ *  incrusté au sol »). Perspective couchée, lettres fondues dans la texture du sol (mix-blend-mode overlay). */
+const NomAuSol = ({ texte, pos }: { texte: string; pos: Pos }) => {
+  const largeur = Math.min(pos.vw * 0.94, pos.h * 3.4);
+  const taille = Math.max(18, Math.min(pos.h * 0.36, largeur / (Math.max(texte.length, 6) * 0.74)));
+  return (
+    <div className="absolute flex justify-center" style={{ left: pos.x - largeur / 2, top: pos.y + pos.h * 0.05, width: largeur, perspective: 520, perspectiveOrigin: "50% 0%" }}>
+      <p className="uppercase whitespace-nowrap text-center"
+        style={{ fontFamily: "'Unbounded', sans-serif", fontWeight: 900, fontStyle: "italic", fontSize: taille, lineHeight: 1, letterSpacing: "0.02em",
+          transform: "rotateX(58deg)", transformOrigin: "50% 0%", color: "rgba(255,255,255,0.62)", mixBlendMode: "overlay",
+          textShadow: "0 -1px 0 rgba(0,0,0,0.55), 0 1px 0 rgba(255,255,255,0.18)" }}>
+        {texte}
+      </p>
+    </div>
+  );
+};
+
+const StandTrott = ({ src, alt, remonte = false, sol }: { src: string | null | undefined; alt: string; remonte?: boolean; sol?: string }) => {
+  const pos = useEstrade(remonte);
   const [fade, setFade] = useState(1);
   const raf = useRef(0);
 
@@ -114,14 +140,15 @@ const StandTrott = ({ src, alt }: { src: string | null | undefined; alt: string 
           style={{ objectPosition: "center bottom", filter: "drop-shadow(0 22px 20px rgba(0,0,0,0.38))" }}
         />
       </div>
+      {sol && <NomAuSol texte={sol} pos={pos} />}
     </div>
   );
 };
 
 /** L'espace libre au-dessus de l'estrade : il descend jusqu'au plateau, le contenu qui suit commence juste dessous.
  *  Ce qu'on y met (nom, flèches) s'affiche en haut. Sert de repère à StandTrott pour s'effacer quand on défile. */
-export const StandSpace = ({ children, className = "", min = 260 }: { children?: ReactNode; className?: string; min?: number }) => {
-  const pos = useEstrade();
+export const StandSpace = ({ children, className = "", min = 260, remonte = false, sol = false }: { children?: ReactNode; className?: string; min?: number; remonte?: boolean; sol?: boolean }) => {
+  const pos = useEstrade(remonte);
   const ref = useRef<HTMLDivElement>(null);
   const [hgt, setHgt] = useState<number | null>(null);
   useEffect(() => {
@@ -129,12 +156,13 @@ export const StandSpace = ({ children, className = "", min = 260 }: { children?:
     if (!el || !pos) return;
     const measure = () => {
       const topDoc = el.getBoundingClientRect().top + window.scrollY;
-      setHgt(Math.max(min, Math.round(pos.y + pos.h * 0.06 - topDoc)));
+      // Avec le nom au sol, le contenu qui suit commence sous le nom (sinon il le recouvre).
+      setHgt(Math.max(min, Math.round(pos.y + pos.h * (sol ? 0.36 : 0.06) - topDoc)));
     };
     measure();
     const t = window.setTimeout(measure, 300);
     return () => window.clearTimeout(t);
-  }, [pos, min]);
+  }, [pos, min, sol]);
   return (
     <div ref={ref} data-stand-anchor className={`relative ${className}`} style={{ height: hgt ?? undefined, minHeight: hgt ? undefined : min }}>
       {children}

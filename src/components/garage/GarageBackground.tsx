@@ -2,9 +2,13 @@ import { useState } from 'react';
 import { useQuery } from '@tanstack/react-query';
 import { supabase } from '@/integrations/supabase/client';
 import { useActiveTheme, type GarageTheme } from '@/hooks/useActiveTheme';
+import { useEstrade } from '@/components/garage/v3/StandTrott';
 
 /** themeKey fourni = garage public d'un autre rider (/rider/:username) : on affiche SON wallpaper. */
-const GarageBackground = ({ themeKey }: { themeKey?: string | null } = {}) => {
+/** `remonte` : même décalage que l'estrade (StandTrott) sur téléphone ; le bas découvert est fondu en carbone. */
+const GarageBackground = ({ themeKey, remonte = false }: { themeKey?: string | null; remonte?: boolean } = {}) => {
+  const pos = useEstrade(remonte);
+  const decale = remonte && !!pos && pos.vw < 1024;
   const { theme: ownTheme } = useActiveTheme();
   const { data: otherTheme } = useQuery({
     queryKey: ['garage-themes', 'by-key', themeKey ?? null],
@@ -54,10 +58,14 @@ const GarageBackground = ({ themeKey }: { themeKey?: string | null } = {}) => {
           fetchPriority="high"
           onLoad={() => setLoaded(true)}
           onError={() => setErrored(true)}
-          className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-700 ${
+          className={`absolute ${decale ? '' : 'inset-0 w-full h-full object-cover'} transition-opacity duration-700 ${
             loaded ? 'opacity-100' : 'opacity-0'
           }`}
+          style={decale && pos ? { left: pos.offX, top: pos.offY, width: pos.dispW, height: pos.dispH, maxWidth: 'none' } : undefined}
         />
+      )}
+      {decale && pos && (
+        <div className="absolute inset-x-0 bottom-0" style={{ top: pos.offY + pos.dispH - pos.vh * 0.08, background: 'linear-gradient(180deg, rgba(26,26,26,0) 0%, #1A1A1A 60%)' }} />
       )}
       {/* Adaptive overlay for legibility */}
       <div className={`absolute inset-0 ${overlayClass}`} />

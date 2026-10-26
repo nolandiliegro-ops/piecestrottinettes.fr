@@ -34,14 +34,16 @@ const cut = (px: number) => `polygon(0 0, calc(100% - ${px}px) 0, 100% ${px}px, 
 
 /* 26/10 (Nolan, sur ordinateur : « on voit deux fois la même trottinette. Le nom, je préfère quand il est en bas…
    il faut harmoniser ») : 5 vitrines derrière `?vitrine=1..5` (gardé pour l'onglet) ; 0 = la page d'avant.
-   1 Littéral · 2 Plaque · 3 Une seule carte · 4 Rangée de trotts · 5 Nom au sol. */
-const VITRINE_DEFAUT = 0;
+   1 Littéral · 2 Plaque · 3 Une seule carte · 4 Rangée de trotts · 5 Nom au sol.
+   Choix de Nolan (26/10) : 6 = la n°1 avec le nom INCRUSTÉ au sol (perspective couchée), et la scène remontée sur
+   téléphone pour que la trott et son nom tiennent au-dessus de la barre du bas. */
+const VITRINE_DEFAUT = 6;
 const readVitrine = (): number => {
   try {
     const q = new URLSearchParams(window.location.search).get("vitrine");
-    if (q !== null && /^[0-5]$/.test(q)) { window.sessionStorage.setItem("pt-vitrine", q); return Number(q); }
+    if (q !== null && /^[0-6]$/.test(q)) { window.sessionStorage.setItem("pt-vitrine", q); return Number(q); }
     const v = window.sessionStorage.getItem("pt-vitrine");
-    return v && /^[0-5]$/.test(v) ? Number(v) : VITRINE_DEFAUT;
+    return v && /^[0-6]$/.test(v) ? Number(v) : VITRINE_DEFAUT;
   } catch { return VITRINE_DEFAUT; }
 };
 
@@ -82,7 +84,8 @@ const RiderPublicCard = () => {
   ) : null;
 
   // Vitrines : la carte n'a plus sa propre grande trott (« bare », comme dans ton Garage) sauf en 3 ; le nom passe sous l'estrade.
-  const carteNue = vitrine === 1 || vitrine === 2 || vitrine === 4 || vitrine === 5;
+  const carteNue = vitrine === 1 || vitrine === 2 || vitrine === 4 || vitrine === 5 || vitrine === 6;
+  const auSol = vitrine === 6;
   const avecEstrade = vitrine !== 3;
   const nomEnHaut = vitrine === 0;
   const prev = () => setI((x) => Math.max(0, x - 1));
@@ -128,6 +131,13 @@ const RiderPublicCard = () => {
         <Chips specs={stageSpecs(stageScooter.scooter_model)} light />
       </div>
     ) : null;
+  // 6 · Nom au sol : en haut de l'espace libre, seulement le repère (« Sa machine · 1/15 »), les chiffres et les flèches.
+  const reperes = stageScooter ? (
+    <div className="flex items-start justify-between gap-3">
+      <div className="min-w-0"><Kicker label={label} multi={multi} i={i} n={machines.length} light /><Chips specs={stageSpecs(stageScooter.scooter_model)} light /></div>
+      {multi && <div className="flex gap-2 shrink-0"><ArrowBtn dir="prev" onClick={prev} disabled={i <= 0} /><ArrowBtn dir="next" onClick={next} disabled={i >= machines.length - 1} /></div>}
+    </div>
+  ) : null;
 
   const share = async () => {
     const url = `${window.location.origin}/rider/${data?.profile.username ?? username}`;
@@ -148,7 +158,7 @@ const RiderPublicCard = () => {
   return (
     <div className="relative min-h-screen flex flex-col overflow-x-hidden pb-24 md:pb-0" data-gatelier>
       <style>{SKIN}</style>
-      <GarageBackground themeKey={data?.profile.active_theme_key ?? null} />
+      <GarageBackground themeKey={data?.profile.active_theme_key ?? null} remonte={auSol} />
       <Helmet>
         <title>{`Le garage de ${name} | Pièces Trottinettes`}</title>
         <meta name="description" content={`Les trottinettes de ${name}, ce qu'il a monté dessus et les pièces compatibles.`} />
@@ -201,9 +211,9 @@ const RiderPublicCard = () => {
                   wallpaper, toujours au même endroit. Téléphone : la scène d'abord, la carte juste en dessous. */}
               {stageScooter && avecEstrade && (
                 <>
-                  <StandTrott src={stageScooter.scooter_model.image_url || stageScooter.custom_photo_url} alt={stageScooter.scooter_model.name} />
-                  <StandSpace className="lg:hidden mb-4">{nomEnHaut ? stageHeading : null}</StandSpace>
-                  {!nomEnHaut && <div className="lg:hidden mb-5">{nomEnBas}</div>}
+                  <StandTrott src={stageScooter.scooter_model.image_url || stageScooter.custom_photo_url} alt={stageScooter.scooter_model.name} remonte={auSol} sol={auSol ? stageScooter.scooter_model.name : undefined} />
+                  <StandSpace className="lg:hidden mb-4" remonte={auSol} sol={auSol}>{nomEnHaut ? stageHeading : auSol ? reperes : null}</StandSpace>
+                  {!nomEnHaut && !auSol && <div className="lg:hidden mb-5">{nomEnBas}</div>}
                 </>
               )}
               {/* grid-cols-[minmax(0,1fr)] : sans lui, la frise de pièces élargissait la colonne à 2 165 px sur téléphone — trott hors écran (25/10). */}
@@ -214,8 +224,8 @@ const RiderPublicCard = () => {
                 </div>
 
                 <div className="grid grid-cols-[minmax(0,1fr)] gap-4 min-w-0">
-                  {stageScooter && avecEstrade && <StandSpace className="hidden lg:block">{nomEnHaut ? stageHeading : null}</StandSpace>}
-                  {stageScooter && avecEstrade && !nomEnHaut && <div className="hidden lg:block">{nomEnBas}</div>}
+                  {stageScooter && avecEstrade && <StandSpace className="hidden lg:block" remonte={auSol} sol={auSol}>{nomEnHaut ? stageHeading : auSol ? reperes : null}</StandSpace>}
+                  {stageScooter && avecEstrade && !nomEnHaut && !auSol && <div className="hidden lg:block">{nomEnBas}</div>}
                   {mods.length > 0 && (
                     <Panel>
                       <H2>Ce qu'il a monté dessus</H2>
