@@ -208,19 +208,19 @@ const StageActuel = ({ scooter, scooterCount, currentIndex, onPrev, onNext, labe
 type StageProps = Pick<Props, "scooter" | "scooterCount" | "currentIndex" | "onPrev" | "onNext"> & {
   label?: string;
 };
-const stageSpecs = (m: GarageAtelierScooter["scooter_model"]) => [m.voltage && `${m.voltage} V`, m.amperage && `${m.amperage} Ah`, m.power_watts && `${m.power_watts} W`].filter(Boolean) as string[];
-const ArrowBtn = ({ dir, onClick, disabled, size = "w-11 h-11" }: { dir: "prev" | "next"; onClick: () => void; disabled: boolean; size?: string }) => (
+export const stageSpecs = (m: GarageAtelierScooter["scooter_model"]) => [m.voltage && `${m.voltage} V`, m.amperage && `${m.amperage} Ah`, m.power_watts && `${m.power_watts} W`].filter(Boolean) as string[];
+export const ArrowBtn = ({ dir, onClick, disabled, size = "w-11 h-11" }: { dir: "prev" | "next"; onClick: () => void; disabled: boolean; size?: string }) => (
   <button type="button" onClick={onClick} disabled={disabled} aria-label={dir === "prev" ? "Trottinette précédente" : "Trottinette suivante"}
     className={`${size} pointer-events-auto inline-flex items-center justify-center disabled:opacity-35`} style={{ background: "#FFFFFF", color: CARBON, clipPath: cut(7), boxShadow: "0 6px 18px rgba(0,0,0,0.18)" }}>
     {dir === "prev" ? <ChevronLeft className="w-5 h-5" strokeWidth={2.6} /> : <ChevronRight className="w-5 h-5" strokeWidth={2.6} />}
   </button>
 );
-const Kicker = ({ label, multi, i, n, light }: { label?: string; multi: boolean; i: number; n: number; light?: boolean }) => (
+export const Kicker = ({ label, multi, i, n, light }: { label?: string; multi: boolean; i: number; n: number; light?: boolean }) => (
   <p className="text-sm font-extrabold uppercase tracking-[0.14em]" style={{ fontFamily: FONT, color: light ? SOFT : GREEN, textShadow: light ? "0 1px 10px rgba(0,0,0,0.6)" : undefined }}>
     {label ?? "Ma trott"}{multi ? ` · ${i + 1}/${n}` : ""}
   </p>
 );
-const Title = ({ m, nickname, light, size = "text-[26px] lg:text-[38px]" }: { m: GarageAtelierScooter["scooter_model"]; nickname?: string | null; light?: boolean; size?: string }) => (
+export const Title = ({ m, nickname, light, size = "text-[26px] lg:text-[38px]" }: { m: GarageAtelierScooter["scooter_model"]; nickname?: string | null; light?: boolean; size?: string }) => (
   <div className="min-w-0" style={{ textShadow: light ? "0 2px 16px rgba(0,0,0,0.6)" : undefined }}>
     <h1 className={`${size} uppercase leading-[0.98]`} style={{ fontFamily: UNB, fontWeight: 900, fontStyle: "italic", letterSpacing: "-0.03em", color: light ? "#FFFFFF" : CARBON }}>
       {m.brand && !m.name.toLowerCase().startsWith(m.brand.toLowerCase()) ? <span className="block text-base lg:text-lg" style={{ color: light ? "rgba(255,255,255,0.8)" : "#6B7280" }}>{m.brand}</span> : null}
@@ -229,7 +229,7 @@ const Title = ({ m, nickname, light, size = "text-[26px] lg:text-[38px]" }: { m:
     {nickname && <p className="mt-1 text-base font-semibold" style={{ fontFamily: FONT, color: light ? "rgba(255,255,255,0.9)" : "#4B5563" }}>« {nickname} »</p>}
   </div>
 );
-const Chips = ({ specs, light }: { specs: string[]; light?: boolean }) =>
+export const Chips = ({ specs, light }: { specs: string[]; light?: boolean }) =>
   specs.length ? (
     <div className="mt-2 flex flex-wrap gap-1.5">
       {specs.map((t) => <span key={t} className="px-2.5 py-1 text-sm font-bold" style={{ fontFamily: FONT, background: light ? "rgba(26,26,26,0.85)" : "#EFEAE0", color: light ? "#FFFFFF" : CARBON, clipPath: cut(6) }}>{t}</span>)}

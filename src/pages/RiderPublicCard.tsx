@@ -19,7 +19,7 @@ import RiderAvatar from "@/components/garage/RiderAvatar";
 import RiderCardStory, { cardRows } from "@/components/garage/story/RiderCardStory";
 import RiderCardComments from "@/components/garage/story/RiderCardComments";
 import { useCardComments } from "@/hooks/useRiderCardComments";
-import { Panel, H2, StandHeading, PartsShelf, SKIN, type GarageAtelierScooter } from "@/components/garage/atelier/GarageAtelierView";
+import { Panel, H2, StandHeading, PartsShelf, SKIN, ArrowBtn, Kicker, Title, Chips, stageSpecs, type GarageAtelierScooter } from "@/components/garage/atelier/GarageAtelierView";
 import StandTrott, { StandSpace } from "@/components/garage/v3/StandTrott";
 import { useRiderCardData, useToggleCardLike } from "@/hooks/useRiderCardData";
 import { useAuthContext } from "@/contexts/AuthContext";
@@ -32,6 +32,19 @@ const GREEN = "#4A7C59";
 const LINE = "#E2DCD0";
 const cut = (px: number) => `polygon(0 0, calc(100% - ${px}px) 0, 100% ${px}px, 100% 100%, 0 100%)`;
 
+/* 26/10 (Nolan, sur ordinateur : « on voit deux fois la même trottinette. Le nom, je préfère quand il est en bas…
+   il faut harmoniser ») : 5 vitrines derrière `?vitrine=1..5` (gardé pour l'onglet) ; 0 = la page d'avant.
+   1 Littéral · 2 Plaque · 3 Une seule carte · 4 Rangée de trotts · 5 Nom au sol. */
+const VITRINE_DEFAUT = 0;
+const readVitrine = (): number => {
+  try {
+    const q = new URLSearchParams(window.location.search).get("vitrine");
+    if (q !== null && /^[0-5]$/.test(q)) { window.sessionStorage.setItem("pt-vitrine", q); return Number(q); }
+    const v = window.sessionStorage.getItem("pt-vitrine");
+    return v && /^[0-5]$/.test(v) ? Number(v) : VITRINE_DEFAUT;
+  } catch { return VITRINE_DEFAUT; }
+};
+
 const RiderPublicCard = () => {
   const { username } = useParams<{ username: string }>();
   const { user } = useAuthContext();
@@ -39,6 +52,7 @@ const RiderPublicCard = () => {
   const { data: comments = [] } = useCardComments(data?.profile.id);
   const like = useToggleCardLike();
   const [i, setI] = useState(0);
+  const [vitrine] = useState(readVitrine);
 
   // 25/10 : même ordre que la carte (ses 5 « à moi », ses 5 « je kiffe », puis le reste) — la scène ouvre sur la trott de la carte.
   const machines = useMemo(() => {
@@ -66,6 +80,54 @@ const RiderPublicCard = () => {
     <StandHeading scooter={stageScooter} scooterCount={machines.length} currentIndex={i} label={cur?.is_owned === false ? "Il kiffe" : "Sa machine"}
       onPrev={() => setI((x) => Math.max(0, x - 1))} onNext={() => setI((x) => Math.min(machines.length - 1, x + 1))} />
   ) : null;
+
+  // Vitrines : la carte n'a plus sa propre grande trott (« bare », comme dans ton Garage) sauf en 3 ; le nom passe sous l'estrade.
+  const carteNue = vitrine === 1 || vitrine === 2 || vitrine === 4 || vitrine === 5;
+  const avecEstrade = vitrine !== 3;
+  const nomEnHaut = vitrine === 0;
+  const prev = () => setI((x) => Math.max(0, x - 1));
+  const next = () => setI((x) => Math.min(machines.length - 1, x + 1));
+  const multi = machines.length > 1;
+  const label = cur?.is_owned === false ? "Il kiffe" : "Sa machine";
+  const nomEnBas = !stageScooter ? null : vitrine === 1 ? stageHeading
+    : vitrine === 2 ? (
+      <div className="flex items-center justify-center gap-3">
+        {multi && <ArrowBtn dir="prev" onClick={prev} disabled={i <= 0} />}
+        <div className="min-w-0 px-4 py-3 text-center" style={{ background: "rgba(26,26,26,0.86)", clipPath: cut(12) }}>
+          <Kicker label={label} multi={multi} i={i} n={machines.length} light />
+          <div className="mt-1"><Title m={stageScooter.scooter_model} nickname={stageScooter.nickname} light size="text-[22px] lg:text-[30px]" /></div>
+          <div className="flex justify-center"><Chips specs={stageSpecs(stageScooter.scooter_model)} light /></div>
+        </div>
+        {multi && <ArrowBtn dir="next" onClick={next} disabled={i >= machines.length - 1} />}
+      </div>
+    ) : vitrine === 4 ? (
+      <div className="grid gap-3">
+        <div><Kicker label={label} multi={multi} i={i} n={machines.length} light /><div className="mt-1"><Title m={stageScooter.scooter_model} nickname={stageScooter.nickname} light size="text-[24px] lg:text-[34px]" /></div></div>
+        {multi && (
+          <ul className="flex gap-2 overflow-x-auto pb-1 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
+            {machines.map((m, k) => (
+              <li key={m.id} className="shrink-0">
+                <button type="button" onClick={() => setI(k)} aria-pressed={k === i} aria-label={m.model?.name ?? "trottinette"}
+                  className="w-[64px] h-[64px] inline-flex items-center justify-center"
+                  style={{ background: m.is_owned === false ? "#F1D9CC" : "#FFFFFF", clipPath: cut(8), boxShadow: k === i ? `inset 0 0 0 3px ${GREEN}` : undefined }}>
+                  {m.model?.image_url && <img src={m.model.image_url} alt="" className="max-w-[86%] max-h-[86%] object-contain" />}
+                </button>
+              </li>
+            ))}
+          </ul>
+        )}
+      </div>
+    ) : vitrine === 5 ? (
+      <div className="text-center grid justify-items-center gap-2">
+        <Kicker label={label} multi={multi} i={i} n={machines.length} light />
+        <div className="flex items-center justify-center gap-3 w-full">
+          {multi && <ArrowBtn dir="prev" onClick={prev} disabled={i <= 0} size="w-10 h-10" />}
+          <p className="min-w-0 uppercase leading-[0.9] text-white text-[34px] lg:text-[64px]" style={{ fontFamily: UNB, fontWeight: 900, fontStyle: "italic", letterSpacing: "-0.04em", textShadow: "0 4px 24px rgba(0,0,0,0.6)" }}>{stageScooter.scooter_model.name}</p>
+          {multi && <ArrowBtn dir="next" onClick={next} disabled={i >= machines.length - 1} size="w-10 h-10" />}
+        </div>
+        <Chips specs={stageSpecs(stageScooter.scooter_model)} light />
+      </div>
+    ) : null;
 
   const share = async () => {
     const url = `${window.location.origin}/rider/${data?.profile.username ?? username}`;
@@ -137,21 +199,23 @@ const RiderPublicCard = () => {
 
               {/* 25/10 soir (Nolan : « au sol… vraiment sur l'estrade… qu'elle flotte ») : sa trott posée sur l'estrade de SON
                   wallpaper, toujours au même endroit. Téléphone : la scène d'abord, la carte juste en dessous. */}
-              {stageScooter && (
+              {stageScooter && avecEstrade && (
                 <>
                   <StandTrott src={stageScooter.scooter_model.image_url || stageScooter.custom_photo_url} alt={stageScooter.scooter_model.name} />
-                  <StandSpace className="lg:hidden mb-4">{stageHeading}</StandSpace>
+                  <StandSpace className="lg:hidden mb-4">{nomEnHaut ? stageHeading : null}</StandSpace>
+                  {!nomEnHaut && <div className="lg:hidden mb-5">{nomEnBas}</div>}
                 </>
               )}
               {/* grid-cols-[minmax(0,1fr)] : sans lui, la frise de pièces élargissait la colonne à 2 165 px sur téléphone — trott hors écran (25/10). */}
               <div className="grid grid-cols-[minmax(0,1fr)] gap-6 lg:grid-cols-[360px_minmax(0,1fr)] lg:gap-8 items-start">
                 <div className="grid gap-4 justify-items-center lg:justify-items-stretch lg:sticky lg:top-24">
-                  <RiderCardStory data={data} selectedId={cur?.id ?? null} onSelect={(m) => { const k = machines.findIndex((x) => x.id === m.id); if (k >= 0) setI(k); }} commentCount={comments.length} onOpenComments={() => document.getElementById("carte-commentaires")?.scrollIntoView({ behavior: "smooth", block: "start" })} />
+                  <RiderCardStory data={data} bare={carteNue} selectedId={cur?.id ?? null} onSelect={(m) => { const k = machines.findIndex((x) => x.id === m.id); if (k >= 0) setI(k); }} commentCount={comments.length} onOpenComments={() => document.getElementById("carte-commentaires")?.scrollIntoView({ behavior: "smooth", block: "start" })} />
                   <div className="w-full max-w-[360px]"><RiderCardComments id="carte-commentaires" ownerId={data.profile.id} ownerName={name} /></div>
                 </div>
 
                 <div className="grid grid-cols-[minmax(0,1fr)] gap-4 min-w-0">
-                  {stageScooter && <StandSpace className="hidden lg:block">{stageHeading}</StandSpace>}
+                  {stageScooter && avecEstrade && <StandSpace className="hidden lg:block">{nomEnHaut ? stageHeading : null}</StandSpace>}
+                  {stageScooter && avecEstrade && !nomEnHaut && <div className="hidden lg:block">{nomEnBas}</div>}
                   {mods.length > 0 && (
                     <Panel>
                       <H2>Ce qu'il a monté dessus</H2>
