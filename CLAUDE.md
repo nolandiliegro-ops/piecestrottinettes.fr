@@ -141,6 +141,11 @@ de go : c'est une file de travail, elle ne touche pas le catalogue.
   `choix` (2 à 4 réponses + « Je ne sais pas »), `scooter_slug` + `cle` (colonne de MATCHING
   qu'elle remplit) quand elle porte sur une trottinette, `source` (claude · campagne-cles ·
   robot · moteur). `insert … on conflict (id) do nothing` : jamais deux fois la même question.
+- LE MAGASIN EST LE DERNIER RECOURS (règle de Nolan, 26/10/2026) : avant de verser une question,
+  chercher soi-même — CSV Wattiz, corpus `donnees-extraction`, fiches Shopify/Woo des revendeurs par
+  pg_net (0 crédit), puis Perplexity / 1 page Firecrawl. Une contradiction entre deux boutiques ne suffit
+  pas (vérifier les équivalences 10x2.125 = 55/80, 10x3 = 80/65…). Ne verser que le résidu, avec ce qui a
+  été cherché dans `contexte`. Cas des Navee du 25/10 : 2 questions sur 3 réglables sans magasin.
 - Une NOTE SANS BOUTON est une réponse valable (règle de Nolan, 26/10/2026) : il ne clique pas
   quand aucun choix ne colle et répond à l'oral. On la lit, on l'interprète, on ne lui redemande
   jamais de cliquer. Si la note contredit le bouton, la note prime. Seule une note qui ne répond
