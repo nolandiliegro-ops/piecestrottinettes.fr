@@ -14,6 +14,7 @@ import {
 } from "@/contexts/ScooterContext";
 import { THEME, hexToRgba } from "@/lib/theme";
 import { searchScooters } from "@/lib/scooterSearch";
+import { useKeyboardOpen } from "@/hooks/useKeyboardOpen";
 
 interface Props {
   open: boolean;
@@ -222,7 +223,7 @@ const ScooterSelectorSheet = ({ open, onOpenChange, onConfirmed }: Props) => {
   const [clavier] = useState(readClavierVariant);
   // Clavier ouvert = la zone visible est nettement plus basse que la fenêtre (iOS + Android).
   // Mesuré sur la zone visible, pas sur le focus : un toucher sur une trott (blur) ne fait rien bouger avant le clic.
-  const keyboardOpen = !!vv && typeof window !== "undefined" && vv.h < window.innerHeight - 150;
+  const keyboardOpen = useKeyboardOpen();
 
   const BodyComponent = (selecteur ? SelectorBodyAtelier : SelectorBody) as typeof SelectorBodyAtelier;
   const body = (
@@ -1461,7 +1462,7 @@ export const SelectorBodyAtelier = (p: SelectorBodyProps & { onFocusChange?: (f:
 
       {!kb && <div className="shrink-0 px-5 pt-3 pb-4" style={{ borderTop: `1px solid ${A_LINE}`, background: "#FFFFFF" }}>
         <button type="button" onClick={p.onConfirm} disabled={!p.hasSelection} className="w-full min-h-[52px] px-4 flex items-center justify-between text-[15px] font-extrabold uppercase text-white disabled:opacity-40" style={{ background: A_CARBON, clipPath: aCut(10) }}>
-          <span className="truncate">{selectedName ? `Voir les pièces pour ${selectedName}` : "Choisis une trottinette"}</span>
+          <span className="min-w-0 py-2 text-left leading-tight break-words">{selectedName ? `Voir les pièces pour ${selectedName}` : "Choisis une trottinette"}</span>
           <ArrowRight size={20} strokeWidth={2.6} className="shrink-0" />
         </button>
         {p.hasSelection && (
