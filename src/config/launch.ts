@@ -58,3 +58,4 @@ export const openPrelaunch = () => {
 // relance publication 25/10 filtre trott plaque
 // relance publication 26/10 photos
 // 26/10 : republication connexion carte vivante + onglets accueil (commit a4adb57)
+// relance publication 26/10 hero sélecteur
