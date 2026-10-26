@@ -135,6 +135,13 @@ jobs:
               grep '^::' "out/second-avis.log" | head -3
               continue
             fi
+            if [ "$mode" = "juge-lot" ]; then
+              # Lecture seule (26/10) : planches + proposition + accept d'un lot déjà écrit (ex. photos agrandies par IA). « juge-lot <lot> ».
+              node scripts/photos-galerie.mjs --dry --juge --file "config/photos/$lot.json" > "out/$lot.dry.log" 2>&1
+              echo "::notice title=$lot dry juge::EXIT=$?"
+              grep '^::' "out/$lot.dry.log" | head -10
+              continue
+            fi
             if [ "$mode" = "aplat" ]; then
               # Lecture seule (26/10) : photos principales nettoyées et posées sur fond BLANC pour l'agrandissement IA. « aplat <slugs> ».
               node scripts/aplatir-blanc.mjs --slugs "$lot" > "out/aplat.log" 2>&1
