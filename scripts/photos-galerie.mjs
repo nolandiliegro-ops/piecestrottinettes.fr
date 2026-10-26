@@ -147,7 +147,10 @@ async function dry() {
       let short = err ? err : (qc.reasons.join(' · ') || 'ok');
       if (JUGE_DRY && png && judge(qc, 1).ok) {
         const fp = await empreinte(await vignette(png));
-        const hit = [...enLigne, ...retenus.map((r) => ({ url: `lot#${r.i}`, fp: r.fp }))].map((x) => ({ x, r: memePhoto(fp, x.fp) })).find((h) => h.r.doublon);
+        // 26/10 : lot.remplace_principale (agrandissement IA) — la candidate EST la principale actuelle en plus grand :
+        // on ne la compare pas à l'ancienne principale (index 0), seulement au reste de la galerie.
+        const compare = lot.remplace_principale ? enLigne.slice(1) : enLigne;
+        const hit = [...compare, ...retenus.map((r) => ({ url: `lot#${r.i}`, fp: r.fp }))].map((x) => ({ x, r: memePhoto(fp, x.fp) })).find((h) => h.r.doublon);
         if (hit) doublon = `${hit.r.raison} (${String(hit.x.url).slice(-28)})`;
         else if (qual?.refus) juge = { refus: true, motifs: qual.defauts, principale_ok: false, rang: 9 };
         else {
