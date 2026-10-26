@@ -1,0 +1,49 @@
+{
+ "beaster-bs08": {
+  "id": "d46e8689-f6c6-461f-b6fc-8f696f2ce5bb",
+  "published": true,
+  "en_ligne": 4,
+  "nouvelle_principale": null,
+  "ajouts": [],
+  "statut": "rien de valable"
+ },
+ "dualtron-mini": {
+  "id": "11bbbf20-7d05-4ca6-9906-b174a6bf7bae",
+  "published": true,
+  "en_ligne": 4,
+  "nouvelle_principale": 0,
+  "ajouts": [
+   {
+    "i": 0,
+    "vue": "3/4 avant"
+   }
+  ],
+  "statut": "3/4 trouvé"
+ },
+ "navee-k100": {
+  "id": "4157b83b-f330-4dff-8f0e-23bc36b9a993",
+  "published": true,
+  "en_ligne": 2,
+  "nouvelle_principale": null,
+  "ajouts": [
+   {
+    "i": 0,
+    "vue": "profil"
+   }
+  ],
+  "statut": "photos sans 3/4"
+ },
+ "segway-gt2": {
+  "id": "3b885825-771d-4949-97fc-2317ce71b0c4",
+  "published": true,
+  "en_ligne": 4,
+  "nouvelle_principale": 0,
+  "ajouts": [
+   {
+    "i": 0,
+    "vue": "3/4 arriere"
+   }
+  ],
+  "statut": "3/4 trouvé"
+ }
+}

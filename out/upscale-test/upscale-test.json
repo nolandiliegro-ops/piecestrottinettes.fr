@@ -1,0 +1,69 @@
+{
+ "lot": "upscale-test",
+ "entity": "scooter",
+ "chasse": true,
+ "models": [
+  {
+   "id": "d46e8689-f6c6-461f-b6fc-8f696f2ce5bb",
+   "slug": "beaster-bs08",
+   "name": "Beaster BS08",
+   "brand": "Beaster",
+   "published": true,
+   "current": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/d46e8689-f6c6-461f-b6fc-8f696f2ce5bb/1792440971640_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/d46e8689-f6c6-461f-b6fc-8f696f2ce5bb/1792440973638_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/d46e8689-f6c6-461f-b6fc-8f696f2ce5bb/1792440975680_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/d46e8689-f6c6-461f-b6fc-8f696f2ce5bb/1792440979117_0.png"
+   ],
+   "candidates": [
+    "https://d8j0ntlcm91z4.cloudfront.net/user_3GQlfFCxTsvuOLmSkOzS19wh9sw/hf_20261026_164204_635a834d-e970-4a6f-b4b1-d4d5d1aba339.png"
+   ]
+  },
+  {
+   "id": "11bbbf20-7d05-4ca6-9906-b174a6bf7bae",
+   "slug": "dualtron-mini",
+   "name": "Dualtron Mini",
+   "brand": "Dualtron",
+   "published": true,
+   "current": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/11bbbf20-7d05-4ca6-9906-b174a6bf7bae/1792871469892_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/11bbbf20-7d05-4ca6-9906-b174a6bf7bae/1792871472275_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/11bbbf20-7d05-4ca6-9906-b174a6bf7bae/1792871474669_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/11bbbf20-7d05-4ca6-9906-b174a6bf7bae/1792871477709_0.png"
+   ],
+   "candidates": [
+    "https://d8j0ntlcm91z4.cloudfront.net/user_3GQlfFCxTsvuOLmSkOzS19wh9sw/hf_20261026_164207_5cd61766-1289-4db8-a515-97b27f4662ea.png"
+   ]
+  },
+  {
+   "id": "4157b83b-f330-4dff-8f0e-23bc36b9a993",
+   "slug": "navee-k100",
+   "name": "Navee K100",
+   "brand": "Navee",
+   "published": true,
+   "current": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/4157b83b-f330-4dff-8f0e-23bc36b9a993/1792972631350_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/4157b83b-f330-4dff-8f0e-23bc36b9a993/1793002275400_0.png"
+   ],
+   "candidates": [
+    "https://d8j0ntlcm91z4.cloudfront.net/user_3GQlfFCxTsvuOLmSkOzS19wh9sw/hf_20261026_164201_f65f8891-8657-469f-b165-70c5127fe4bf.png"
+   ]
+  },
+  {
+   "id": "3b885825-771d-4949-97fc-2317ce71b0c4",
+   "slug": "segway-gt2",
+   "name": "Segway GT2",
+   "brand": "Segway",
+   "published": true,
+   "current": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/3b885825-771d-4949-97fc-2317ce71b0c4/1792449603561_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/3b885825-771d-4949-97fc-2317ce71b0c4/1792449593568_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/3b885825-771d-4949-97fc-2317ce71b0c4/1792449598367_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/3b885825-771d-4949-97fc-2317ce71b0c4/1793008028141_0.png"
+   ],
+   "candidates": [
+    "https://d8j0ntlcm91z4.cloudfront.net/user_3GQlfFCxTsvuOLmSkOzS19wh9sw/hf_20261026_164202_e0fe5047-1f90-42e4-aaef-75f5ccc923d3.png"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,111 @@
+[
+ {
+  "slug": "beaster-bs08",
+  "i": 0,
+  "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3GQlfFCxTsvuOLmSkOzS19wh9sw/hf_20261026_164204_635a834d-e970-4a6f-b4b1-d4d5d1aba339.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0,
+   "fill": 0.708
+  },
+  "size": [
+   1521,
+   1800
+  ],
+  "error": null,
+  "juge": null,
+  "doublon": "même image (dHash 0, couleur 7.8) (6f2ce5bb/1792440971640_0.png)"
+ },
+ {
+  "slug": "dualtron-mini",
+  "i": 0,
+  "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3GQlfFCxTsvuOLmSkOzS19wh9sw/hf_20261026_164207_5cd61766-1289-4db8-a515-97b27f4662ea.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.026,
+   "fill": 0.61
+  },
+  "size": [
+   1441,
+   1828
+  ],
+  "error": null,
+  "juge": {
+   "vue": "3/4 avant",
+   "refus": false,
+   "motifs": [],
+   "principale_ok": true,
+   "rang": 0,
+   "note": ""
+  },
+  "doublon": null
+ },
+ {
+  "slug": "navee-k100",
+  "i": 0,
+  "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3GQlfFCxTsvuOLmSkOzS19wh9sw/hf_20261026_164201_f65f8891-8657-469f-b165-70c5127fe4bf.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.273,
+   "fill": 0.681
+  },
+  "size": [
+   1684,
+   1784
+  ],
+  "error": null,
+  "juge": {
+   "vue": "profil",
+   "refus": false,
+   "motifs": [],
+   "principale_ok": false,
+   "rang": 2,
+   "note": ""
+  },
+  "doublon": null
+ },
+ {
+  "slug": "segway-gt2",
+  "i": 0,
+  "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3GQlfFCxTsvuOLmSkOzS19wh9sw/hf_20261026_164202_e0fe5047-1f90-42e4-aaef-75f5ccc923d3.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.038,
+   "fill": 0.708
+  },
+  "size": [
+   1520,
+   1800
+  ],
+  "error": null,
+  "juge": {
+   "vue": "3/4 arriere",
+   "refus": false,
+   "motifs": [],
+   "principale_ok": true,
+   "rang": 1,
+   "note": ""
+  },
+  "doublon": null
+ }
+]
