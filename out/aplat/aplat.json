@@ -1,18 +1,298 @@
 [
  {
-  "slug": "beaster-bs08",
-  "width": 585,
-  "height": 705
+  "slug": "weped-ssgt",
+  "width": 777,
+  "height": 605
  },
  {
-  "slug": "dualtron-mini",
-  "width": 636,
+  "slug": "xiaomi-electric-scooter-6-ultra",
+  "width": 321,
+  "height": 429
+ },
+ {
+  "slug": "inmotion-climber",
+  "width": 423,
+  "height": 722
+ },
+ {
+  "slug": "isinwheel-s9-max",
+  "width": 316,
+  "height": 432
+ },
+ {
+  "slug": "nami-burn-e",
+  "width": 318,
+  "height": 476
+ },
+ {
+  "slug": "weped-gts",
+  "width": 277,
+  "height": 458
+ },
+ {
+  "slug": "xiaomi-electric-scooter-4-lite",
+  "width": 494,
+  "height": 788
+ },
+ {
+  "slug": "beaster-bs77",
+  "width": 695,
+  "height": 842
+ },
+ {
+  "slug": "kingsong-n14-max",
+  "width": 383,
+  "height": 504
+ },
+ {
+  "slug": "urbanglide-urbanride-100xs",
+  "width": 324,
+  "height": 432
+ },
+ {
+  "slug": "kukirin-m4-max",
+  "width": 628,
+  "height": 863
+ },
+ {
+  "slug": "hitway-h5-pro",
+  "width": 518,
+  "height": 750
+ },
+ {
+  "slug": "vsett-11-plus-super",
+  "width": 361,
+  "height": 517
+ },
+ {
+  "slug": "ninebot-e2-plus-e-ii",
+  "width": 420,
+  "height": 638
+ },
+ {
+  "slug": "weped-fold-3",
+  "width": 457,
+  "height": 485
+ },
+ {
+  "slug": "dualtron-spider-2",
+  "width": 280,
+  "height": 484
+ },
+ {
+  "slug": "beaster-diablo",
+  "width": 541,
+  "height": 787
+ },
+ {
+  "slug": "nami-burn-e-2",
+  "width": 319,
+  "height": 475
+ },
+ {
+  "slug": "inokim-light-2-super",
+  "width": 431,
+  "height": 463
+ },
+ {
+  "slug": "ninebot-e2",
+  "width": 299,
+  "height": 314
+ },
+ {
+  "slug": "vsett-10-plus",
+  "width": 710,
+  "height": 811
+ },
+ {
+  "slug": "laotie-es19",
+  "width": 458,
+  "height": 807
+ },
+ {
+  "slug": "xiaomi-mi-m365",
+  "width": 369,
+  "height": 640
+ },
+ {
+  "slug": "micro-merlin",
+  "width": 411,
+  "height": 651
+ },
+ {
+  "slug": "yeep-me-120a-pro",
+  "width": 286,
+  "height": 456
+ },
+ {
+  "slug": "beaster-bs65",
+  "width": 307,
+  "height": 540
+ },
+ {
+  "slug": "yeep-me-100a-start",
+  "width": 482,
+  "height": 795
+ },
+ {
+  "slug": "urbanglide-ecross-pro-boost-2",
+  "width": 708,
+  "height": 800
+ },
+ {
+  "slug": "speedway-mini-4-pro-lite",
+  "width": 258,
+  "height": 458
+ },
+ {
+  "slug": "kukirin-t4",
+  "width": 442,
+  "height": 746
+ },
+ {
+  "slug": "kingsong-s2-pro",
+  "width": 240,
+  "height": 317
+ },
+ {
+  "slug": "joyor-s8-s",
+  "width": 438,
+  "height": 725
+ },
+ {
+  "slug": "dualtron-victor-luxury-plus",
+  "width": 444,
+  "height": 775
+ },
+ {
+  "slug": "ninebot-e25e",
+  "width": 428,
+  "height": 437
+ },
+ {
+  "slug": "e-twow-booster-es",
+  "width": 491,
+  "height": 703
+ },
+ {
+  "slug": "weped-fold-11",
+  "width": 757,
+  "height": 827
+ },
+ {
+  "slug": "ninebot-e3-pro-e",
+  "width": 428,
+  "height": 640
+ },
+ {
+  "slug": "ninebot-f2-e-ii",
+  "width": 323,
+  "height": 467
+ },
+ {
+  "slug": "ninebot-max-g3-pro-e",
+  "width": 438,
+  "height": 644
+ },
+ {
+  "slug": "segway-gt3-pro",
+  "width": 447,
+  "height": 640
+ },
+ {
+  "slug": "micro-explorer",
+  "width": 409,
+  "height": 656
+ },
+ {
+  "slug": "segway-p65",
+  "width": 293,
+  "height": 389
+ },
+ {
+  "slug": "hikerboy-brio",
+  "width": 211,
+  "height": 331
+ },
+ {
+  "slug": "iscooter-ix7-pro",
+  "width": 526,
+  "height": 724
+ },
+ {
+  "slug": "urbanglide-all-road-5",
+  "width": 769,
+  "height": 813
+ },
+ {
+  "slug": "weped-ss-t",
+  "width": 583,
+  "height": 833
+ },
+ {
+  "slug": "oxelo-sd500e",
+  "width": 391,
+  "height": 587
+ },
+ {
+  "slug": "urbanglide-all-road-6-pro",
+  "width": 235,
+  "height": 405
+ },
+ {
+  "slug": "urbanglide-ecross-duo",
+  "width": 508,
+  "height": 335
+ },
+ {
+  "slug": "e-twow-tanktorq-tk5",
+  "width": 625,
+  "height": 836
+ },
+ {
+  "slug": "kugoo-g2-max",
+  "width": 470,
   "height": 843
  },
  {
-  "slug": "navee-k100",
-  "width": 584,
-  "height": 624
+  "slug": "mantis-pro",
+  "width": 636,
+  "height": 781
+ },
+ {
+  "slug": "laotie-sr10",
+  "width": 566,
+  "height": 834
+ },
+ {
+  "slug": "punk-rider",
+  "width": 589,
+  "height": 855
+ },
+ {
+  "slug": "inmotion-c1-air-pro",
+  "width": 426,
+  "height": 626
+ },
+ {
+  "slug": "beaster-bs09",
+  "width": 461,
+  "height": 735
+ },
+ {
+  "slug": "aprilia-esr2-evo",
+  "width": 516,
+  "height": 639
+ },
+ {
+  "slug": "kaabo-wolf-warrior-11-pro-plus",
+  "width": 555,
+  "height": 629
+ },
+ {
+  "slug": "laotie-ti30",
+  "width": 537,
+  "height": 817
  },
  {
   "slug": "ninebot-f2-plus",
@@ -20,8 +300,223 @@
   "height": 568
  },
  {
-  "slug": "segway-gt2",
-  "width": 623,
-  "height": 749
+  "slug": "ninebot-f2-pro-e-ii",
+  "width": 323,
+  "height": 467
+ },
+ {
+  "slug": "beaster-bs15",
+  "width": 572,
+  "height": 782
+ },
+ {
+  "slug": "ninebot-f3-e",
+  "width": 514,
+  "height": 542
+ },
+ {
+  "slug": "joyor-a5",
+  "width": 421,
+  "height": 831
+ },
+ {
+  "slug": "yeep-me-85a-evo",
+  "width": 498,
+  "height": 753
+ },
+ {
+  "slug": "navee-st5-max",
+  "width": 302,
+  "height": 432
+ },
+ {
+  "slug": "wolf-warrior",
+  "width": 555,
+  "height": 629
+ },
+ {
+  "slug": "xiaomi-electric-scooter-6-max",
+  "width": 38,
+  "height": 32
+ },
+ {
+  "slug": "urbanglide-ecross-max-2x2-gen-2",
+  "width": 731,
+  "height": 830
+ },
+ {
+  "slug": "wispeed-c10-55-max",
+  "width": 558,
+  "height": 847
+ },
+ {
+  "slug": "e-twow-tanktorq-tk2",
+  "width": 508,
+  "height": 685
+ },
+ {
+  "slug": "jeep-adventurer",
+  "width": 640,
+  "height": 863
+ },
+ {
+  "slug": "hiboy-ks4",
+  "width": 455,
+  "height": 636
+ },
+ {
+  "slug": "yeep-me-120a",
+  "width": 286,
+  "height": 456
+ },
+ {
+  "slug": "segway-gt1",
+  "width": 331,
+  "height": 432
+ },
+ {
+  "slug": "oxelo-md500e",
+  "width": 565,
+  "height": 831
+ },
+ {
+  "slug": "kukirin-g2-master",
+  "width": 326,
+  "height": 518
+ },
+ {
+  "slug": "e-twow-booster-se",
+  "width": 494,
+  "height": 717
+ },
+ {
+  "slug": "ducati-pro-ii-evo",
+  "width": 658,
+  "height": 827
+ },
+ {
+  "slug": "langfeite-roadster",
+  "width": 610,
+  "height": 811
+ },
+ {
+  "slug": "kingsong-n15",
+  "width": 373,
+  "height": 545
+ },
+ {
+  "slug": "p100s",
+  "width": 432,
+  "height": 610
+ },
+ {
+  "slug": "segway-zt3-pro-e",
+  "width": 419,
+  "height": 641
+ },
+ {
+  "slug": "joyor-s8-e",
+  "width": 391,
+  "height": 573
+ },
+ {
+  "slug": "kukirin-g4-2026",
+  "width": 454,
+  "height": 599
+ },
+ {
+  "slug": "urbanglide-ecross-pro-2",
+  "width": 750,
+  "height": 838
+ },
+ {
+  "slug": "urbanglide-ride-85-evo",
+  "width": 195,
+  "height": 351
+ },
+ {
+  "slug": "urbanglide-ecross-one",
+  "width": 536,
+  "height": 861
+ },
+ {
+  "slug": "vsett-8-plus",
+  "width": 575,
+  "height": 771
+ },
+ {
+  "slug": "nami-blast",
+  "width": 532,
+  "height": 719
+ },
+ {
+  "slug": "kaabo-wolf-warrior-x-gt",
+  "width": 545,
+  "height": 832
+ },
+ {
+  "slug": "dualtron-togo-pro",
+  "width": 356,
+  "height": 611
+ },
+ {
+  "slug": "nami-superstellar",
+  "width": 540,
+  "height": 811
+ },
+ {
+  "slug": "dualtron-thunder-3",
+  "width": 359,
+  "height": 584
+ },
+ {
+  "slug": "weped-ff",
+  "width": 824,
+  "height": 827
+ },
+ {
+  "slug": "segway-ninebot-max-g3",
+  "width": 425,
+  "height": 641
+ },
+ {
+  "slug": "kugoo-g4",
+  "width": 520,
+  "height": 687
+ },
+ {
+  "slug": "inmotion-l9",
+  "width": 532,
+  "height": 701
+ },
+ {
+  "slug": "segway-zt3-pro",
+  "width": 419,
+  "height": 641
+ },
+ {
+  "slug": "soflow-so4-pro",
+  "width": 434,
+  "height": 597
+ },
+ {
+  "slug": "nami-blast-max",
+  "width": 328,
+  "height": 434
+ },
+ {
+  "slug": "kaabo-wolf-king-gt-pro-plus",
+  "width": 599,
+  "height": 654
+ },
+ {
+  "slug": "kingsong-e1",
+  "width": 398,
+  "height": 545
+ },
+ {
+  "slug": "ninebot-f3-pro-e",
+  "width": 418,
+  "height": 642
  }
 ]
