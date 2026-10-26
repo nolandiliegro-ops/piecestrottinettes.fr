@@ -11,7 +11,7 @@ import HeroAtelier, { readHeroVariant } from "@/components/home/HeroAtelier";
 const HeroSearchFirst = () => {
   const navigate = useNavigate();
   const prefersReducedMotion = useReducedMotion();
-  const { setSelectedScooter } = useSelectedScooter();
+  const { setSelectedScooter, selectedScooter } = useSelectedScooter();
 
   const [query, setQuery] = useState("");
   const [debouncedQuery, setDebouncedQuery] = useState("");
@@ -37,7 +37,14 @@ const HeroSearchFirst = () => {
         imageUrl: s.image_url,
       });
     }
-    navigate(`/scooter/${slug}`);
+    // 26/10 (Nolan) : le haut de l'accueil est un SÉLECTEUR — toucher une trott la choisit (filtre des pièces) et
+    // descend au catalogue, où la plaque « Filtré pour ta … » la montre ; on ne part plus sur la fiche trottinette.
+    inputRef.current?.blur();
+    window.setTimeout(() => {
+      const el = document.querySelector("[data-home-variant]");
+      if (el) el.scrollIntoView({ behavior: "smooth", block: "start" });
+      else navigate(`/catalogue?scooter=${slug}`);
+    }, 120);
   };
 
   const submitFreeText = () => {
@@ -80,6 +87,7 @@ const HeroSearchFirst = () => {
         isSearching={isSearching}
         miniTitle={miniTitle}
         onSelect={handleSelect}
+        selectedId={selectedScooter?.id ?? null}
       />
     );
   }

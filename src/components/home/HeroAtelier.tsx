@@ -72,6 +72,7 @@ interface Props {
   isSearching: boolean;
   miniTitle: string;
   onSelect: (slug: string) => void;
+  selectedId?: string | null;
 }
 
 const parts = (n: number | null) => `${n ?? 0} pièce${(n ?? 0) > 1 ? "s" : ""} compatible${(n ?? 0) > 1 ? "s" : ""}`;
@@ -137,7 +138,7 @@ const PopCard = ({ sc, s, size, onSelect }: { sc: ScooterHero; s: Skin; size: "s
   const lg = size === "lg";
   const dark = s.card === CARBON || s.card === "#262626";
   return (
-    <button type="button" onClick={() => onSelect(sc.slug)} aria-label={`Voir ${sc.name}`}
+    <button type="button" onClick={() => onSelect(sc.slug)} aria-label={`Choisir ${sc.name}`}
       className={`group relative block shrink-0 text-left ${lg ? "w-[232px] lg:w-auto pt-20" : "w-[172px] lg:w-auto pt-16"}`}>
       <div className={`relative ${lg ? "pt-[168px] lg:pt-[176px]" : "pt-[114px] lg:pt-[118px]"} px-3.5 pb-3.5 transition-transform duration-200 group-hover:-translate-y-0.5`}
         style={{ background: s.card, clipPath: cut(lg ? 16 : 12), boxShadow: s.cardLine }}>
@@ -257,7 +258,7 @@ const Stage = ({ s, scooters, onSelect }: { s: Skin; scooters: ScooterHero[]; on
           )}
         </div>
       </div>
-      <button type="button" onClick={() => onSelect(cur.slug)} aria-label={`Voir ${cur.name}`} className="absolute inset-x-0 top-0 h-[400px] xl:h-[460px] flex items-end justify-center">
+      <button type="button" onClick={() => onSelect(cur.slug)} aria-label={`Choisir ${cur.name}`} className="absolute inset-x-0 top-0 h-[400px] xl:h-[460px] flex items-end justify-center">
         {scene === 1 ? (
           <span aria-hidden className="absolute inset-x-0 bottom-[-40px] top-[22%]" style={{ background: "radial-gradient(closest-side, rgba(255,255,255,0.42), rgba(255,255,255,0.10) 55%, rgba(255,255,255,0) 100%)" }} />
         ) : scene ? (
@@ -329,7 +330,7 @@ const HeroAtelier = (p: Props) => {
                 ) : p.scooters.length ? (
                   <div className="grid grid-cols-2 gap-3">
                     {p.scooters.map((sc) => (
-                      <PlaqueTile key={sc.id} brand={sc.brand_name} name={sc.name} imageUrl={sc.image_url ? optimizedImage(sc.image_url, 200) : null} note={parts(sc.compatible_parts_count)} label={`Voir ${sc.name}`} onClick={() => p.onSelect(sc.slug)} />
+                      <PlaqueTile key={sc.id} brand={sc.brand_name} name={sc.name} imageUrl={sc.image_url ? optimizedImage(sc.image_url, 200) : null} note={parts(sc.compatible_parts_count)} label={`Choisir ${sc.name}`} active={p.selectedId === sc.id} onClick={() => p.onSelect(sc.slug)} />
                     ))}
                   </div>
                 ) : (
