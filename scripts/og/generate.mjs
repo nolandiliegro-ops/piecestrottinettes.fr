@@ -59,7 +59,7 @@ function splitPart(name, cat) {
 
 function card({ a, b, img, pills, price, tag, round = false }) {
   // Taille calée sur la ligne la plus longue (Unbounded 900 capitales ≈ 0,82 em par signe) ; au-delà, la ligne 2 passe sur deux lignes.
-  const W = round ? 600 : 640;
+  const W = 580;
   const fit = (n) => Math.floor(W / (0.82 * Math.max(n, 1)));
   let sz = Math.min(76, fit(Math.max(a.length, b.length)));
   let wrap = false;
@@ -67,7 +67,7 @@ function card({ a, b, img, pills, price, tag, round = false }) {
   const pillsHtml = pills.filter(Boolean).map(([v, u]) => `<span class="pill"><b>${esc(v)}</b>${esc(u)}</span>`).join("");
   const priceHtml = price ? `<span class="pill dark">${esc(price)}</span>` : "";
   const imgHtml = img
-    ? `<img class="prod" src="${esc(img)}" style="${round ? "right:110px;top:115px;width:400px;height:400px" : "right:60px;top:36px;width:440px;height:560px"}">`
+    ? `<img class="prod" src="${esc(img)}" onerror="this.onerror=null;this.src='file://${ROOT}/public/brand/icone-pt.svg';this.style.filter='none'" style="${round ? "right:110px;top:115px;width:400px;height:400px" : "right:60px;top:36px;width:440px;height:560px"}">`
     : `<img class="prod" src="file://${ROOT}/public/brand/icone-pt.svg" style="right:150px;top:150px;width:330px;height:330px;filter:none">`;
   return `<!doctype html><html><head><meta charset="utf-8"><style>
 @font-face{font-family:Unb;src:url(file://${FONTS}/unbounded/files/unbounded-latin-900-normal.woff2);font-weight:900}
@@ -130,7 +130,8 @@ async function collect() {
   for (const c of cats) {
     const n = nbPart.get(c.id) || 0;
     if (!n) continue;
-    items.push({ k: "category", s: c.slug, a: "Pièces", b: c.seo_name || c.name, img: c.image_url || null, round: true,
+    const photo = parts.find((p) => p.category_id === c.id && p.image_url)?.image_url;
+    items.push({ k: "category", s: c.slug, a: "Pièces", b: c.seo_name || c.name, img: photo || null, round: true,
       pills: [[String(n), n > 1 ? "pièces" : "pièce"]], price: minPrice.has(c.id) ? `dès ${euro(minPrice.get(c.id))}` : null,
       tag: "Compatibles avec ta trott · atelier Marseille" });
   }
