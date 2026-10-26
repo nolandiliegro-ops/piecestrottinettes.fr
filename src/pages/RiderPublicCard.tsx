@@ -188,13 +188,14 @@ const RiderPublicCard = () => {
             {/* 25/10 (garage v3) : la page publique reprend « Ma carte » — le titre sur le wallpaper, la carte Story
                 en premier, ses commentaires, puis ses machines et les pièces qui vont dessus. */}
             {/* 26/10 (Nolan : « il faudrait qu'on voie la tête, le logo du profil ») : l'avatar du rider à côté du titre,
-                au même dessin que sur sa carte (coin coupé, fond blanc). */}
+                au même dessin que sur sa carte (coin coupé, fond blanc). Sur ordinateur, la carte est juste dessous avec la même
+                photo : Nolan (« pas deux fois la même photo ») → l'avatar du titre ne s'affiche que sur téléphone. */}
             <header className="mt-2 mb-5 flex items-center gap-3 lg:gap-4">
               {data.profile.avatar_url ? (
-                <img src={data.profile.avatar_url} alt={`Photo de ${name}`} className="w-[68px] h-[68px] lg:w-[92px] lg:h-[92px] shrink-0 object-cover bg-white"
+                <img src={data.profile.avatar_url} alt={`Photo de ${name}`} className={`w-[68px] h-[68px] lg:w-[92px] lg:h-[92px] shrink-0 object-cover bg-white ${carteNue ? "lg:hidden" : ""}`}
                   style={{ clipPath: "polygon(0 0, calc(100% - 10px) 0, 100% 10px, 100% 100%, 10px 100%, 0 calc(100% - 10px))", boxShadow: "0 6px 18px rgba(0,0,0,0.35)" }} />
               ) : (
-                <span className="w-[68px] h-[68px] lg:w-[92px] lg:h-[92px] shrink-0 inline-flex items-center justify-center bg-white text-[26px]"
+                <span className={`w-[68px] h-[68px] lg:w-[92px] lg:h-[92px] shrink-0 inline-flex items-center justify-center bg-white text-[26px] ${carteNue ? "lg:hidden" : ""}`}
                   style={{ fontFamily: UNB, fontWeight: 900, fontStyle: "italic", color: "#1A1A1A", clipPath: "polygon(0 0, calc(100% - 10px) 0, 100% 10px, 100% 100%, 10px 100%, 0 calc(100% - 10px))" }}>{name.slice(0, 1).toUpperCase()}</span>
               )}
               <div className="min-w-0">
