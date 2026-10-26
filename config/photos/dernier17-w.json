@@ -1,0 +1,291 @@
+{
+ "lot": "dernier17-w",
+ "entity": "scooter",
+ "chasse": true,
+ "principale_tout_angle": true,
+ "models": [
+  {
+   "brand": "Inokim",
+   "current": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/dff1a983-35ff-4b47-810f-6b609e52cb99/1792972132050_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/dff1a983-35ff-4b47-810f-6b609e52cb99/1792972133608_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/dff1a983-35ff-4b47-810f-6b609e52cb99/1792972136735_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/dff1a983-35ff-4b47-810f-6b609e52cb99/1793002383224_0.png"
+   ],
+   "id": "dff1a983-35ff-4b47-810f-6b609e52cb99",
+   "name": "Inokim Light 2 Super",
+   "slug": "inokim-light-2-super",
+   "published": true,
+   "candidates": [
+    "https://d8j0ntlcm91z4.cloudfront.net/user_3GQlfFCxTsvuOLmSkOzS19wh9sw/hf_20261026_170650_67b92974-e42d-4e81-b37e-8badb497660b.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/dff1a983-35ff-4b47-810f-6b609e52cb99/1792972133608_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/dff1a983-35ff-4b47-810f-6b609e52cb99/1792972136735_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/dff1a983-35ff-4b47-810f-6b609e52cb99/1793002383224_0.png"
+   ]
+  },
+  {
+   "brand": "Kaabo",
+   "current": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/56e66c1d-5812-4912-8c13-c7f81b5e0f90/1792442471185_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/56e66c1d-5812-4912-8c13-c7f81b5e0f90/1792442472741_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/56e66c1d-5812-4912-8c13-c7f81b5e0f90/1792442475806_0.png"
+   ],
+   "id": "56e66c1d-5812-4912-8c13-c7f81b5e0f90",
+   "name": "Kaabo Wolf King GT Pro Plus",
+   "slug": "kaabo-wolf-king-gt-pro-plus",
+   "published": true,
+   "candidates": [
+    "https://d8j0ntlcm91z4.cloudfront.net/user_3GQlfFCxTsvuOLmSkOzS19wh9sw/hf_20261026_173708_4dfadba1-c918-4509-82ad-ba62ac088ab3.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/56e66c1d-5812-4912-8c13-c7f81b5e0f90/1792442472741_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/56e66c1d-5812-4912-8c13-c7f81b5e0f90/1792442475806_0.png"
+   ]
+  },
+  {
+   "brand": "Navee",
+   "current": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/4157b83b-f330-4dff-8f0e-23bc36b9a993/1792972631350_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/4157b83b-f330-4dff-8f0e-23bc36b9a993/1793002275400_0.png"
+   ],
+   "id": "4157b83b-f330-4dff-8f0e-23bc36b9a993",
+   "name": "Navee K100",
+   "slug": "navee-k100",
+   "published": true,
+   "candidates": [
+    "https://naveetech.us/cdn/shop/files/20251009-113502.png?v=1762331802&width=4500",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/4157b83b-f330-4dff-8f0e-23bc36b9a993/1793002275400_0.png"
+   ]
+  },
+  {
+   "brand": "Ninebot",
+   "current": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/35d0ee7e-a760-4fe4-9960-98527f5fd8f4/1792972707047_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/35d0ee7e-a760-4fe4-9960-98527f5fd8f4/1792972708224_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/35d0ee7e-a760-4fe4-9960-98527f5fd8f4/1793002713721_0.png"
+   ],
+   "id": "35d0ee7e-a760-4fe4-9960-98527f5fd8f4",
+   "name": "Ninebot E2",
+   "slug": "ninebot-e2",
+   "published": true,
+   "candidates": [
+    "https://d8j0ntlcm91z4.cloudfront.net/user_3GQlfFCxTsvuOLmSkOzS19wh9sw/hf_20261026_170710_e265d29a-f49f-420e-aa58-a975a34833dc.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/35d0ee7e-a760-4fe4-9960-98527f5fd8f4/1792972708224_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/35d0ee7e-a760-4fe4-9960-98527f5fd8f4/1793002713721_0.png"
+   ]
+  },
+  {
+   "brand": "Ninebot",
+   "current": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/dfcc6524-1210-443e-8cbc-a90c88087923/1792972716497_0.png"
+   ],
+   "id": "dfcc6524-1210-443e-8cbc-a90c88087923",
+   "name": "Ninebot E25E",
+   "slug": "ninebot-e25e",
+   "published": true,
+   "candidates": [
+    "https://d8j0ntlcm91z4.cloudfront.net/user_3GQlfFCxTsvuOLmSkOzS19wh9sw/hf_20261026_171330_54168790-34e9-4a93-82f4-d4f253630643.png"
+   ]
+  },
+  {
+   "brand": "Ninebot",
+   "current": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/45a25b15-ef53-4237-a8d5-ec1dde442b7e/1792972747620_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/45a25b15-ef53-4237-a8d5-ec1dde442b7e/1793002857924_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/45a25b15-ef53-4237-a8d5-ec1dde442b7e/1793007879865_0.png"
+   ],
+   "id": "45a25b15-ef53-4237-a8d5-ec1dde442b7e",
+   "name": "Ninebot F2 Plus",
+   "slug": "ninebot-f2-plus",
+   "published": true,
+   "candidates": [
+    "https://d8j0ntlcm91z4.cloudfront.net/user_3GQlfFCxTsvuOLmSkOzS19wh9sw/hf_20261026_172155_2767fff5-8f3c-455a-8ebe-d4cce91eccbf.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/45a25b15-ef53-4237-a8d5-ec1dde442b7e/1793002857924_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/45a25b15-ef53-4237-a8d5-ec1dde442b7e/1793007879865_0.png"
+   ]
+  },
+  {
+   "brand": "Ninebot",
+   "current": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/a2df0d67-7034-453d-af1a-e08612f690be/1792972751519_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/a2df0d67-7034-453d-af1a-e08612f690be/1793002407084_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/a2df0d67-7034-453d-af1a-e08612f690be/1793007844536_0.png"
+   ],
+   "id": "a2df0d67-7034-453d-af1a-e08612f690be",
+   "name": "Ninebot F3 E",
+   "slug": "ninebot-f3-e",
+   "published": true,
+   "candidates": [
+    "https://d8j0ntlcm91z4.cloudfront.net/user_3GQlfFCxTsvuOLmSkOzS19wh9sw/hf_20261026_172253_966a6437-94ea-4769-9540-d60accea77b4.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/a2df0d67-7034-453d-af1a-e08612f690be/1793002407084_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/a2df0d67-7034-453d-af1a-e08612f690be/1793007844536_0.png"
+   ]
+  },
+  {
+   "brand": "Urbanglide",
+   "current": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/aea4bc9d-a5f3-49d6-92cf-5ea70532b4a7/1792973060203_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/aea4bc9d-a5f3-49d6-92cf-5ea70532b4a7/1792973061837_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/aea4bc9d-a5f3-49d6-92cf-5ea70532b4a7/1793002707078_0.png"
+   ],
+   "id": "aea4bc9d-a5f3-49d6-92cf-5ea70532b4a7",
+   "name": "Urbanglide All Road 5",
+   "slug": "urbanglide-all-road-5",
+   "published": true,
+   "candidates": [
+    "https://d8j0ntlcm91z4.cloudfront.net/user_3GQlfFCxTsvuOLmSkOzS19wh9sw/hf_20261026_171657_e7fd1fc8-6937-4fba-9380-f4139fb118b5.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/aea4bc9d-a5f3-49d6-92cf-5ea70532b4a7/1792973061837_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/aea4bc9d-a5f3-49d6-92cf-5ea70532b4a7/1793002707078_0.png"
+   ]
+  },
+  {
+   "brand": "Urbanglide",
+   "current": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/5e857319-cb66-42ea-af2f-9636fb016b7c/1792973082448_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/5e857319-cb66-42ea-af2f-9636fb016b7c/1792973083502_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/5e857319-cb66-42ea-af2f-9636fb016b7c/1792973085367_0.png"
+   ],
+   "id": "5e857319-cb66-42ea-af2f-9636fb016b7c",
+   "name": "Urbanglide eCross Duo",
+   "slug": "urbanglide-ecross-duo",
+   "published": true,
+   "candidates": [
+    "https://d8j0ntlcm91z4.cloudfront.net/user_3GQlfFCxTsvuOLmSkOzS19wh9sw/hf_20261026_171758_f8826273-7045-448b-a1ee-dfed7c293d2e.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/5e857319-cb66-42ea-af2f-9636fb016b7c/1792973083502_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/5e857319-cb66-42ea-af2f-9636fb016b7c/1792973085367_0.png"
+   ]
+  },
+  {
+   "brand": "Urbanglide",
+   "current": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/63c093b4-a59c-484e-9fc5-14cd414bc1cd/1792450326031_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/63c093b4-a59c-484e-9fc5-14cd414bc1cd/1792450328627_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/63c093b4-a59c-484e-9fc5-14cd414bc1cd/1792450331470_0.png"
+   ],
+   "id": "63c093b4-a59c-484e-9fc5-14cd414bc1cd",
+   "name": "Urbanglide eCross Max 2x2 Gen 2",
+   "slug": "urbanglide-ecross-max-2x2-gen-2",
+   "published": true,
+   "candidates": [
+    "https://d8j0ntlcm91z4.cloudfront.net/user_3GQlfFCxTsvuOLmSkOzS19wh9sw/hf_20261026_172519_c04114f5-eae5-4cab-8f8b-141390ac3ac0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/63c093b4-a59c-484e-9fc5-14cd414bc1cd/1792450328627_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/63c093b4-a59c-484e-9fc5-14cd414bc1cd/1792450331470_0.png"
+   ]
+  },
+  {
+   "brand": "Urbanglide",
+   "current": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/6deef498-eb2e-4766-8a12-cf4085a059f9/1792450362599_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/6deef498-eb2e-4766-8a12-cf4085a059f9/1792450364867_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/6deef498-eb2e-4766-8a12-cf4085a059f9/1792450367736_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/6deef498-eb2e-4766-8a12-cf4085a059f9/1792450372544_0.png"
+   ],
+   "id": "6deef498-eb2e-4766-8a12-cf4085a059f9",
+   "name": "Urbanglide eCross Pro 2",
+   "slug": "urbanglide-ecross-pro-2",
+   "published": true,
+   "candidates": [
+    "https://d8j0ntlcm91z4.cloudfront.net/user_3GQlfFCxTsvuOLmSkOzS19wh9sw/hf_20261026_173203_434b9be4-6c0e-4297-8d68-625ff4165c89.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/6deef498-eb2e-4766-8a12-cf4085a059f9/1792450364867_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/6deef498-eb2e-4766-8a12-cf4085a059f9/1792450367736_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/6deef498-eb2e-4766-8a12-cf4085a059f9/1792450372544_0.png"
+   ]
+  },
+  {
+   "brand": "Urbanglide",
+   "current": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/94e0f4a9-7f7b-4d00-aafd-9a284f08cfd5/1792450381656_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/94e0f4a9-7f7b-4d00-aafd-9a284f08cfd5/1792450383832_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/94e0f4a9-7f7b-4d00-aafd-9a284f08cfd5/1792450388982_0.png"
+   ],
+   "id": "94e0f4a9-7f7b-4d00-aafd-9a284f08cfd5",
+   "name": "Urbanglide eCross Pro Boost 2",
+   "slug": "urbanglide-ecross-pro-boost-2",
+   "published": true,
+   "candidates": [
+    "https://d8j0ntlcm91z4.cloudfront.net/user_3GQlfFCxTsvuOLmSkOzS19wh9sw/hf_20261026_171124_5f718ab8-6e15-4b70-9fe9-2c4d1f2de85b.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/94e0f4a9-7f7b-4d00-aafd-9a284f08cfd5/1792450383832_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/94e0f4a9-7f7b-4d00-aafd-9a284f08cfd5/1792450388982_0.png"
+   ]
+  },
+  {
+   "brand": "Weped",
+   "current": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/c9958d10-3f92-4b3d-9033-4def32009130/1792444662580_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/c9958d10-3f92-4b3d-9033-4def32009130/1792444663806_0.png"
+   ],
+   "id": "c9958d10-3f92-4b3d-9033-4def32009130",
+   "name": "Weped FF",
+   "slug": "weped-ff",
+   "published": true,
+   "candidates": [
+    "https://d8j0ntlcm91z4.cloudfront.net/user_3GQlfFCxTsvuOLmSkOzS19wh9sw/hf_20261026_173459_76cc237b-c7dc-43a6-a01e-0eadabf6df97.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/c9958d10-3f92-4b3d-9033-4def32009130/1792444663806_0.png"
+   ]
+  },
+  {
+   "brand": "Weped",
+   "current": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/3b4f4646-de12-4670-a6ef-72ac6d79b9a7/1792444668530_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/3b4f4646-de12-4670-a6ef-72ac6d79b9a7/1792444670452_0.png"
+   ],
+   "id": "3b4f4646-de12-4670-a6ef-72ac6d79b9a7",
+   "name": "Weped Fold 11",
+   "slug": "weped-fold-11",
+   "published": true,
+   "candidates": [
+    "https://d8j0ntlcm91z4.cloudfront.net/user_3GQlfFCxTsvuOLmSkOzS19wh9sw/hf_20261026_171405_0e2bcd92-88d3-478f-8f5b-8280c529c66c.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/3b4f4646-de12-4670-a6ef-72ac6d79b9a7/1792444670452_0.png"
+   ]
+  },
+  {
+   "brand": "Weped",
+   "current": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/315f588a-c846-4791-a8b8-2f0136074980/1792973154009_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/315f588a-c846-4791-a8b8-2f0136074980/1792973155288_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/315f588a-c846-4791-a8b8-2f0136074980/1792973157745_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/315f588a-c846-4791-a8b8-2f0136074980/1793002373865_0.png"
+   ],
+   "id": "315f588a-c846-4791-a8b8-2f0136074980",
+   "name": "Weped Fold 3",
+   "slug": "weped-fold-3",
+   "published": true,
+   "candidates": [
+    "https://d8j0ntlcm91z4.cloudfront.net/user_3GQlfFCxTsvuOLmSkOzS19wh9sw/hf_20261026_170505_309d334c-c914-436a-87a8-eaf2de936a3f.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/315f588a-c846-4791-a8b8-2f0136074980/1792973155288_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/315f588a-c846-4791-a8b8-2f0136074980/1792973157745_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/315f588a-c846-4791-a8b8-2f0136074980/1793002373865_0.png"
+   ]
+  },
+  {
+   "brand": "Weped",
+   "current": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/098ce5d9-a1d0-4157-b0c4-13690ac8e64e/1792973171360_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/098ce5d9-a1d0-4157-b0c4-13690ac8e64e/1792973173073_0.png"
+   ],
+   "id": "098ce5d9-a1d0-4157-b0c4-13690ac8e64e",
+   "name": "Weped SSGT",
+   "slug": "weped-ssgt",
+   "published": true,
+   "candidates": [
+    "https://d8j0ntlcm91z4.cloudfront.net/user_3GQlfFCxTsvuOLmSkOzS19wh9sw/hf_20261026_170126_138906a9-93da-47da-a5e4-e9b288aece1f.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/098ce5d9-a1d0-4157-b0c4-13690ac8e64e/1792973173073_0.png"
+   ]
+  },
+  {
+   "brand": "Xiaomi",
+   "current": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/de62fad3-80f7-467a-a5a6-6cd14551aa31/1792973223341_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/de62fad3-80f7-467a-a5a6-6cd14551aa31/1792973224489_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/de62fad3-80f7-467a-a5a6-6cd14551aa31/1793007898386_0.png"
+   ],
+   "id": "de62fad3-80f7-467a-a5a6-6cd14551aa31",
+   "name": "Xiaomi Electric Scooter 6 Max",
+   "slug": "xiaomi-electric-scooter-6-max",
+   "published": true,
+   "candidates": [
+    "https://d8j0ntlcm91z4.cloudfront.net/user_3GQlfFCxTsvuOLmSkOzS19wh9sw/hf_20261026_172454_ecedce86-b2a6-4a7a-9481-2bc28b99c55f.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/de62fad3-80f7-467a-a5a6-6cd14551aa31/1792973224489_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/de62fad3-80f7-467a-a5a6-6cd14551aa31/1793007898386_0.png"
+   ]
+  }
+ ]
+}
