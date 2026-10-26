@@ -146,6 +146,10 @@ de go : c'est une file de travail, elle ne touche pas le catalogue.
   pg_net (0 crédit), puis Perplexity / 1 page Firecrawl. Une contradiction entre deux boutiques ne suffit
   pas (vérifier les équivalences 10x2.125 = 55/80, 10x3 = 80/65…). Ne verser que le résidu, avec ce qui a
   été cherché dans `contexte`. Cas des Navee du 25/10 : 2 questions sur 3 réglables sans magasin.
+- Le `contexte` d'une question suit le format « J'HÉSITE PARCE QUE : <ce que dit chaque source, avec
+  les chiffres, et pourquoi ça ne tranche pas> CE QUI TRANCHE : <le geste exact sur la machine> » (règle de
+  Nolan, 26/10/2026 : « explique pourquoi tu hésites »). Une décision catalogue commence par « PAS UNE
+  QUESTION D'ATELIER », une réponse partielle par « À COMPLÉTER ».
 - Une NOTE SANS BOUTON est une réponse valable (règle de Nolan, 26/10/2026) : il ne clique pas
   quand aucun choix ne colle et répond à l'oral. On la lit, on l'interprète, on ne lui redemande
   jamais de cliquer. Si la note contredit le bouton, la note prime. Seule une note qui ne répond
