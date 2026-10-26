@@ -72,8 +72,9 @@ const FLOAT_CSS = `
 /** `sol` : le nom écrit au sol devant l'estrade, comme incrusté dans le béton (26/10, Nolan : « vraiment comme si c'était
  *  incrusté au sol »). Perspective couchée, lettres fondues dans la texture du sol (mix-blend-mode overlay). */
 const NomAuSol = ({ texte, pos }: { texte: string; pos: Pos }) => {
-  const largeur = Math.min(pos.vw * 0.94, pos.h * 3.4);
-  const taille = Math.max(18, Math.min(pos.h * 0.36, largeur / (Math.max(texte.length, 6) * 0.74)));
+  // Unbounded italique 900 en capitales ≈ 0,95 em par lettre, et la perspective élargit le bas des lettres : marge de 12 %.
+  const largeur = Math.min(pos.vw * 0.88, pos.h * 3.2);
+  const taille = Math.max(18, Math.min(pos.h * 0.32, largeur / (Math.max(texte.length, 6) * 1.08)));
   return (
     <div className="absolute flex justify-center" style={{ left: pos.x - largeur / 2, top: pos.y + pos.h * 0.05, width: largeur, perspective: 520, perspectiveOrigin: "50% 0%" }}>
       <p className="uppercase whitespace-nowrap text-center"
