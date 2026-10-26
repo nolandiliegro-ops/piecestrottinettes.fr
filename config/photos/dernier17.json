@@ -1,0 +1,200 @@
+{
+ "lot": "dernier17",
+ "entity": "scooter",
+ "chasse": true,
+ "remplace_principale": true,
+ "models": [
+  {
+   "brand": "Navee",
+   "current": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/4157b83b-f330-4dff-8f0e-23bc36b9a993/1792972631350_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/4157b83b-f330-4dff-8f0e-23bc36b9a993/1793002275400_0.png"
+   ],
+   "id": "4157b83b-f330-4dff-8f0e-23bc36b9a993",
+   "name": "Navee K100",
+   "slug": "navee-k100",
+   "published": true,
+   "candidates": [
+    "https://naveetech.us/cdn/shop/files/20251009-113502.png?v=1762331802&width=4500",
+    "https://naveetech.us/cdn/shop/files/Product_Image_116.jpg?v=1762331802&width=1600",
+    "https://naveetech.us/cdn/shop/files/Product_Image_112_bb355727-7e7f-40a7-b719-8806051d5a1e.jpg?v=1762331802&width=1600",
+    "https://naveetech.us/cdn/shop/files/Product_Image_33.jpg?v=1762331802&width=1600"
+   ]
+  },
+  {
+   "brand": "Ninebot",
+   "current": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/dfcc6524-1210-443e-8cbc-a90c88087923/1792972716497_0.png"
+   ],
+   "id": "dfcc6524-1210-443e-8cbc-a90c88087923",
+   "name": "Ninebot E25E",
+   "slug": "ninebot-e25e",
+   "published": true,
+   "candidates": [
+    "https://s7ap1.scene7.com/is/image/ninebotstage/assets_segway_cdn_com_Product-Pictures__product_full_E25E_Product-picture-4?dpr=on,3&network=on&fmt=png-alpha",
+    "https://s7ap1.scene7.com/is/image/ninebotstage/assets_segway_cdn_com_Product-Pages_KickScooters_KickScooter-E25E__hero_full_E25E_Hero-pict.-with-lights-4?dpr=on,3&network=on",
+    "https://www.scootered.co.uk/img/product_page/buying_thumb_e25e_2.png"
+   ]
+  },
+  {
+   "brand": "Urbanglide",
+   "current": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/aea4bc9d-a5f3-49d6-92cf-5ea70532b4a7/1792973060203_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/aea4bc9d-a5f3-49d6-92cf-5ea70532b4a7/1792973061837_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/aea4bc9d-a5f3-49d6-92cf-5ea70532b4a7/1793002707078_0.png"
+   ],
+   "id": "aea4bc9d-a5f3-49d6-92cf-5ea70532b4a7",
+   "name": "Urbanglide All Road 5",
+   "slug": "urbanglide-all-road-5",
+   "published": true,
+   "candidates": [
+    "https://urbanglide.com/wp-content/uploads/2022/06/RIDE-AR5-1.png"
+   ]
+  },
+  {
+   "brand": "Urbanglide",
+   "current": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/5e857319-cb66-42ea-af2f-9636fb016b7c/1792973082448_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/5e857319-cb66-42ea-af2f-9636fb016b7c/1792973083502_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/5e857319-cb66-42ea-af2f-9636fb016b7c/1792973085367_0.png"
+   ],
+   "id": "5e857319-cb66-42ea-af2f-9636fb016b7c",
+   "name": "Urbanglide eCross Duo",
+   "slug": "urbanglide-ecross-duo",
+   "published": true,
+   "candidates": [
+    "https://urbanglide.com/wp-content/uploads/2025/02/ECROSSDUO.png",
+    "https://fixwheel.fr/cdn/shop/files/2_a950f3f9-94cd-462d-b129-d7e9cd51bf69.png",
+    "https://m.media-amazon.com/images/I/71FE4aEU2bL.jpg",
+    "https://m.media-amazon.com/images/I/810H0n2KAWL.jpg"
+   ]
+  },
+  {
+   "brand": "Urbanglide",
+   "current": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/63c093b4-a59c-484e-9fc5-14cd414bc1cd/1792450326031_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/63c093b4-a59c-484e-9fc5-14cd414bc1cd/1792450328627_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/63c093b4-a59c-484e-9fc5-14cd414bc1cd/1792450331470_0.png"
+   ],
+   "id": "63c093b4-a59c-484e-9fc5-14cd414bc1cd",
+   "name": "Urbanglide eCross Max 2x2 Gen 2",
+   "slug": "urbanglide-ecross-max-2x2-gen-2",
+   "published": true,
+   "candidates": [
+    "https://contents.mediadecathlon.com/m28485623/k$19bf79cf8286ce7f6e37f56d12eccfe9/picture.jpg",
+    "https://www.cdiscount.com/pdt2/9/2/5/3/700x700/aacuu80925/rw/trottinette-lectrique-adulte.jpg",
+    "https://www.cdiscount.com/pdt2/9/2/5/1/700x700/aacuu80925/rw/trottinette-lectrique-adulte.jpg"
+   ]
+  },
+  {
+   "brand": "Urbanglide",
+   "current": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/6deef498-eb2e-4766-8a12-cf4085a059f9/1792450362599_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/6deef498-eb2e-4766-8a12-cf4085a059f9/1792450364867_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/6deef498-eb2e-4766-8a12-cf4085a059f9/1792450367736_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/6deef498-eb2e-4766-8a12-cf4085a059f9/1792450372544_0.png"
+   ],
+   "id": "6deef498-eb2e-4766-8a12-cf4085a059f9",
+   "name": "Urbanglide eCross Pro 2",
+   "slug": "urbanglide-ecross-pro-2",
+   "published": true,
+   "candidates": [
+    "https://urbanglide.com/wp-content/webp-express/webp-images/uploads/2024/08/E-CROSS-PRO-2-1.png.webp",
+    "https://api.bflex.io/media/product/7780/6a4630ec82001_ECROSS-PRO-2_5.jpg"
+   ]
+  },
+  {
+   "brand": "Urbanglide",
+   "current": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/94e0f4a9-7f7b-4d00-aafd-9a284f08cfd5/1792450381656_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/94e0f4a9-7f7b-4d00-aafd-9a284f08cfd5/1792450383832_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/94e0f4a9-7f7b-4d00-aafd-9a284f08cfd5/1792450388982_0.png"
+   ],
+   "id": "94e0f4a9-7f7b-4d00-aafd-9a284f08cfd5",
+   "name": "Urbanglide eCross Pro Boost 2",
+   "slug": "urbanglide-ecross-pro-boost-2",
+   "published": true,
+   "candidates": [
+    "https://urbanglide.com/wp-content/uploads/2024/08/E-CROSS-PRO-BOOST-2.png",
+    "https://fixwheel.fr/cdn/shop/files/URBANGLIDEEcrossproboost2_2.png?v=1764350497",
+    "https://api.bflex.io/media/product/7784/6a4630edb5871_ECROSS-PRO-BOOST-2_1.jpg"
+   ]
+  },
+  {
+   "brand": "Weped",
+   "current": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/c9958d10-3f92-4b3d-9033-4def32009130/1792444662580_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/c9958d10-3f92-4b3d-9033-4def32009130/1792444663806_0.png"
+   ],
+   "id": "c9958d10-3f92-4b3d-9033-4def32009130",
+   "name": "Weped FF",
+   "slug": "weped-ff",
+   "published": true,
+   "candidates": [
+    "https://minimotorscanada.com/cdn/shop/products/ff-1_1000x.jpg?v=1635131684",
+    "https://scooter.guide/wp-content/uploads/2021/04/weped-ff.jpg"
+   ]
+  },
+  {
+   "brand": "Weped",
+   "current": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/3b4f4646-de12-4670-a6ef-72ac6d79b9a7/1792444668530_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/3b4f4646-de12-4670-a6ef-72ac6d79b9a7/1792444670452_0.png"
+   ],
+   "id": "3b4f4646-de12-4670-a6ef-72ac6d79b9a7",
+   "name": "Weped Fold 11",
+   "slug": "weped-fold-11",
+   "published": true,
+   "candidates": [
+    "http://pietechnologie.com/cdn/shop/products/trottinette-electrique-weped-fold-11.jpg?v=1632923311"
+   ]
+  },
+  {
+   "brand": "Weped",
+   "current": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/315f588a-c846-4791-a8b8-2f0136074980/1792973154009_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/315f588a-c846-4791-a8b8-2f0136074980/1792973155288_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/315f588a-c846-4791-a8b8-2f0136074980/1792973157745_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/315f588a-c846-4791-a8b8-2f0136074980/1793002373865_0.png"
+   ],
+   "id": "315f588a-c846-4791-a8b8-2f0136074980",
+   "name": "Weped Fold 3",
+   "slug": "weped-fold-3",
+   "published": true,
+   "candidates": [
+    "https://cafe24img.poxo.com/weped/web/product/big/202312/90175a5805b1e0b0e7b06e77357813cb.jpg"
+   ]
+  },
+  {
+   "brand": "Weped",
+   "current": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/098ce5d9-a1d0-4157-b0c4-13690ac8e64e/1792973171360_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/098ce5d9-a1d0-4157-b0c4-13690ac8e64e/1792973173073_0.png"
+   ],
+   "id": "098ce5d9-a1d0-4157-b0c4-13690ac8e64e",
+   "name": "Weped SSGT",
+   "slug": "weped-ssgt",
+   "published": true,
+   "candidates": [
+    "http://pietechnologie.com/cdn/shop/products/wepedssgt1.jpg?v=1645506348",
+    "https://pietechnologie.com/cdn/shop/products/wepedssgt2.jpg?v=1645506347"
+   ]
+  },
+  {
+   "brand": "Xiaomi",
+   "current": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/de62fad3-80f7-467a-a5a6-6cd14551aa31/1792973223341_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/de62fad3-80f7-467a-a5a6-6cd14551aa31/1792973224489_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/de62fad3-80f7-467a-a5a6-6cd14551aa31/1793007898386_0.png"
+   ],
+   "id": "de62fad3-80f7-467a-a5a6-6cd14551aa31",
+   "name": "Xiaomi Electric Scooter 6 Max",
+   "slug": "xiaomi-electric-scooter-6-max",
+   "published": true,
+   "candidates": [
+    "https://voltride.com/wp-content/uploads/2026/05/xiaomiscooter6max-left-side.jpg",
+    "https://voltride.com/wp-content/uploads/2026/05/xiaomielectricscooter6max-front.jpg"
+   ]
+  }
+ ]
+}
