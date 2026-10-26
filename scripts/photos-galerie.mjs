@@ -270,7 +270,10 @@ async function write() {
           png = qual.buf;
           try { v = await juger(png); } catch (e) { console.log(`::warning title=JUGE ${m.slug} #${idx}::${e.message} — photo NON envoyée (verrou fermé)`); continue; }
           if (v.refus) { console.log(`::warning title=REFUSÉ juge ${m.slug} #${idx}::${v.motifs.join(', ')} (${v.vue})`); continue; }
-          if (!APPEND && bufs.length === 0 && !(v.principale_ok && qual.principale_ok)) { console.log(`::warning title=PRINCIPALE ${m.slug} #${idx}::vue « ${v.vue} » : la 1re photo doit être un 3/4 propre — mets un 3/4 en tête du accept`); continue; }
+          // 26/10 (Nolan) : « en dernier recours, un autre angle, c'est pas grave » — lot.principale_tout_angle accepte en
+          // principale une photo PROPRE et HD de la trottinette entière, quel que soit l'angle (jamais pliée ni gros plan).
+          const angleOk = v.principale_ok || (lot.principale_tout_angle && !v.refus && v.fond_propre && !v.coupee && !['pliee', 'detail'].includes(v.vue));
+          if (!APPEND && bufs.length === 0 && !(angleOk && qual.principale_ok)) { console.log(`::warning title=PRINCIPALE ${m.slug} #${idx}::vue « ${v.vue} » : la 1re photo doit être un 3/4 propre — mets un 3/4 en tête du accept`); continue; }
         }
         bufs.push(png);
       } catch (e) { console.log(`::warning title=ERREUR ${m.slug} #${idx}::${e.message.slice(0, 120)}`); }
