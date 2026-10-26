@@ -48,6 +48,16 @@ jobs:
           grep '^::' out/juge-ronde.log | head -5
           echo "code=$code" >> "$GITHUB_OUTPUT"
           [ $code -eq 0 ] || [ $code -eq 3 ] || exit $code
+      - name: Qualité du détourage (26/10 — fantômes, recadrage, résolution ; lecture seule)
+        id: qualite
+        shell: bash
+        run: |
+          set +e
+          node scripts/qualite-repasse.mjs --dry --ronde > out/qualite-ronde.log 2>&1
+          code=$?
+          grep '^::' out/qualite-ronde.log | head -5
+          echo "code=$code" >> "$GITHUB_OUTPUT"
+          [ $code -eq 0 ] || [ $code -eq 3 ] || exit $code
       - name: Résultats sur donnees-photos
         shell: bash
         run: |
@@ -74,3 +84,11 @@ jobs:
         run: |
           body=$(node -e "const f=require('/tmp/out/juge/fiches.json');console.log('Juge vision du '+new Date().toISOString().slice(0,10)+' : '+f.length+' trottinette(s) créée(s) cette semaine à corriger (règle : photo principale = 3/4 détourée, propre, seule ; jamais de personne, téléphone, texte ni 2e trott).\\n\\n'+f.map(x=>'- **'+x.slug+'** : '+(x.retirer.length?x.retirer.map(r=>'#'+r.i+' '+r.motifs.join('/')).join(', '):'')+(x.a_un_34_propre?'':' — PAS de 3/4 propre')).join('\\n')+'\\n\\nPlan détaillé : branche donnees-photos, out/juge/fiches.json. Correction = SQL avec backup (skill pt-photos-galerie).')")
           gh issue create --title "Photo trottinette non conforme — ronde du $(date -u +%F)" --body "$body"
+      - name: Ticket si photo mal détourée
+        if: steps.qualite.outputs.code == '3'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        shell: bash
+        run: |
+          body=$(node -e "const j=require('/tmp/out/qualite-repasse/report-dry.json');const f=j.report.filter(r=>r.aEcrire);console.log('Ronde qualité du '+new Date().toISOString().slice(0,10)+' : '+f.length+' trottinette(s) avec une photo sale ou mal cadrée (fantômes, débris, vide autour, < 500 px).\\n\\n'+f.map(x=>'- **'+x.slug+'** : '+x.detail.filter(d=>d.change).map(d=>'#'+d.pos+' '+(d.defauts||[]).join('/')).join(', ')).join('\\n')+'\\n\\nCorrection : « repasse write slugs » (skill pt-photos-galerie), backup avant.')")
+          gh issue create --title "Photo trottinette mal détourée — ronde du $(date -u +%F)" --body "$body"

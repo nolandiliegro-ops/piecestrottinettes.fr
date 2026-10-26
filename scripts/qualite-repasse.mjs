@@ -120,5 +120,7 @@ async function main() {
   };
   writeFileSync(resolve(OUT, `report-${MODE}.json`), JSON.stringify({ resume, report }, null, 1));
   console.log(`::notice title=qualite-repasse::${JSON.stringify(resume)}`);
+  // --ronde (lundi) : code 3 si une photo sale ou mal cadrée est réapparue (le workflow ouvre un ticket)
+  if (process.argv.includes('--ronde') && MODE === 'dry' && resume.fichesARecrire > 0) process.exitCode = 3;
 }
 main().catch((e) => { console.error(e); process.exit(1); });
