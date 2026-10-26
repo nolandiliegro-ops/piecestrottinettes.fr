@@ -170,6 +170,24 @@ export type Database = {
         }
         Relationships: []
       }
+      _backup_affiliate_link_20261026: {
+        Row: {
+          affiliate_link: string | null
+          id: string | null
+          slug: string | null
+        }
+        Insert: {
+          affiliate_link?: string | null
+          id?: string | null
+          slug?: string | null
+        }
+        Update: {
+          affiliate_link?: string | null
+          id?: string | null
+          slug?: string | null
+        }
+        Relationships: []
+      }
       _backup_affiliate_links_20261024: {
         Row: {
           affiliate_link: string | null
@@ -485,6 +503,84 @@ export type Database = {
           notes?: string | null
           plateforme?: string | null
           priorite?: string | null
+          statut?: string | null
+          type?: string | null
+          updated_at?: string | null
+          url_inscription?: string | null
+          url_paiements?: string | null
+          url_tableau_de_bord?: string | null
+        }
+        Relationships: []
+      }
+      _backup_affiliate_programs_20261026: {
+        Row: {
+          canal: string | null
+          code_client: string | null
+          code_ref: string | null
+          commission: string | null
+          contact_email: string | null
+          contact_nom: string | null
+          created_at: string | null
+          id: string | null
+          id_marchand: string | null
+          lien_base: string | null
+          lien_motif: string | null
+          marque: string | null
+          notes: string | null
+          plateforme: string | null
+          priorite: string | null
+          prochaine_action: string | null
+          relance_le: string | null
+          statut: string | null
+          type: string | null
+          updated_at: string | null
+          url_inscription: string | null
+          url_paiements: string | null
+          url_tableau_de_bord: string | null
+        }
+        Insert: {
+          canal?: string | null
+          code_client?: string | null
+          code_ref?: string | null
+          commission?: string | null
+          contact_email?: string | null
+          contact_nom?: string | null
+          created_at?: string | null
+          id?: string | null
+          id_marchand?: string | null
+          lien_base?: string | null
+          lien_motif?: string | null
+          marque?: string | null
+          notes?: string | null
+          plateforme?: string | null
+          priorite?: string | null
+          prochaine_action?: string | null
+          relance_le?: string | null
+          statut?: string | null
+          type?: string | null
+          updated_at?: string | null
+          url_inscription?: string | null
+          url_paiements?: string | null
+          url_tableau_de_bord?: string | null
+        }
+        Update: {
+          canal?: string | null
+          code_client?: string | null
+          code_ref?: string | null
+          commission?: string | null
+          contact_email?: string | null
+          contact_nom?: string | null
+          created_at?: string | null
+          id?: string | null
+          id_marchand?: string | null
+          lien_base?: string | null
+          lien_motif?: string | null
+          marque?: string | null
+          notes?: string | null
+          plateforme?: string | null
+          priorite?: string | null
+          prochaine_action?: string | null
+          relance_le?: string | null
           statut?: string | null
           type?: string | null
           updated_at?: string | null
@@ -3707,6 +3803,81 @@ export type Database = {
         }
         Relationships: []
       }
+      _backup_scooter_offers_20261026: {
+        Row: {
+          affiliate_url: string | null
+          compare_at_eur: number | null
+          created_at: string | null
+          deal_ends_at: string | null
+          deal_kind: string | null
+          deal_label: string | null
+          deal_ref_eur: number | null
+          id: string | null
+          in_stock: boolean | null
+          is_active: boolean | null
+          last_status: string | null
+          merchant_host: string | null
+          notes: string | null
+          offer_type: string | null
+          price_checked_at: string | null
+          price_eur: number | null
+          price_max: number | null
+          product_url: string | null
+          scooter_model_id: string | null
+          source_kind: string | null
+          updated_at: string | null
+          variant_id: string | null
+        }
+        Insert: {
+          affiliate_url?: string | null
+          compare_at_eur?: number | null
+          created_at?: string | null
+          deal_ends_at?: string | null
+          deal_kind?: string | null
+          deal_label?: string | null
+          deal_ref_eur?: number | null
+          id?: string | null
+          in_stock?: boolean | null
+          is_active?: boolean | null
+          last_status?: string | null
+          merchant_host?: string | null
+          notes?: string | null
+          offer_type?: string | null
+          price_checked_at?: string | null
+          price_eur?: number | null
+          price_max?: number | null
+          product_url?: string | null
+          scooter_model_id?: string | null
+          source_kind?: string | null
+          updated_at?: string | null
+          variant_id?: string | null
+        }
+        Update: {
+          affiliate_url?: string | null
+          compare_at_eur?: number | null
+          created_at?: string | null
+          deal_ends_at?: string | null
+          deal_kind?: string | null
+          deal_label?: string | null
+          deal_ref_eur?: number | null
+          id?: string | null
+          in_stock?: boolean | null
+          is_active?: boolean | null
+          last_status?: string | null
+          merchant_host?: string | null
+          notes?: string | null
+          offer_type?: string | null
+          price_checked_at?: string | null
+          price_eur?: number | null
+          price_max?: number | null
+          product_url?: string | null
+          scooter_model_id?: string | null
+          source_kind?: string | null
+          updated_at?: string | null
+          variant_id?: string | null
+        }
+        Relationships: []
+      }
       _backup_scooter_solid_20260922: {
         Row: {
           backup_at: string | null
@@ -5390,6 +5561,87 @@ export type Database = {
         }
         Relationships: []
       }
+      _bak_images_scooters_2610_dernier: {
+        Row: {
+          id: string | null
+          image_url: string | null
+          images: Json | null
+          photo_a_refaire: boolean | null
+          saved_at: string | null
+          slug: string | null
+        }
+        Insert: {
+          id?: string | null
+          image_url?: string | null
+          images?: Json | null
+          photo_a_refaire?: boolean | null
+          saved_at?: string | null
+          slug?: string | null
+        }
+        Update: {
+          id?: string | null
+          image_url?: string | null
+          images?: Json | null
+          photo_a_refaire?: boolean | null
+          saved_at?: string | null
+          slug?: string | null
+        }
+        Relationships: []
+      }
+      _bak_images_scooters_2610_hd: {
+        Row: {
+          id: string | null
+          image_url: string | null
+          images: Json | null
+          photo_a_refaire: boolean | null
+          saved_at: string | null
+          slug: string | null
+        }
+        Insert: {
+          id?: string | null
+          image_url?: string | null
+          images?: Json | null
+          photo_a_refaire?: boolean | null
+          saved_at?: string | null
+          slug?: string | null
+        }
+        Update: {
+          id?: string | null
+          image_url?: string | null
+          images?: Json | null
+          photo_a_refaire?: boolean | null
+          saved_at?: string | null
+          slug?: string | null
+        }
+        Relationships: []
+      }
+      _bak_images_scooters_2610_hdb: {
+        Row: {
+          id: string | null
+          image_url: string | null
+          images: Json | null
+          photo_a_refaire: boolean | null
+          saved_at: string | null
+          slug: string | null
+        }
+        Insert: {
+          id?: string | null
+          image_url?: string | null
+          images?: Json | null
+          photo_a_refaire?: boolean | null
+          saved_at?: string | null
+          slug?: string | null
+        }
+        Update: {
+          id?: string | null
+          image_url?: string | null
+          images?: Json | null
+          photo_a_refaire?: boolean | null
+          saved_at?: string | null
+          slug?: string | null
+        }
+        Relationships: []
+      }
       _bak_images_scooters_2610_qualite: {
         Row: {
           id: string | null
@@ -5412,6 +5664,60 @@ export type Database = {
           image_url?: string | null
           images?: Json | null
           published?: boolean | null
+          saved_at?: string | null
+          slug?: string | null
+        }
+        Relationships: []
+      }
+      _bak_images_scooters_2610_reorder: {
+        Row: {
+          id: string | null
+          image_url: string | null
+          images: Json | null
+          photo_a_refaire: boolean | null
+          saved_at: string | null
+          slug: string | null
+        }
+        Insert: {
+          id?: string | null
+          image_url?: string | null
+          images?: Json | null
+          photo_a_refaire?: boolean | null
+          saved_at?: string | null
+          slug?: string | null
+        }
+        Update: {
+          id?: string | null
+          image_url?: string | null
+          images?: Json | null
+          photo_a_refaire?: boolean | null
+          saved_at?: string | null
+          slug?: string | null
+        }
+        Relationships: []
+      }
+      _bak_images_scooters_2610_upscale: {
+        Row: {
+          id: string | null
+          image_url: string | null
+          images: Json | null
+          photo_a_refaire: boolean | null
+          saved_at: string | null
+          slug: string | null
+        }
+        Insert: {
+          id?: string | null
+          image_url?: string | null
+          images?: Json | null
+          photo_a_refaire?: boolean | null
+          saved_at?: string | null
+          slug?: string | null
+        }
+        Update: {
+          id?: string | null
+          image_url?: string | null
+          images?: Json | null
+          photo_a_refaire?: boolean | null
           saved_at?: string | null
           slug?: string | null
         }
@@ -5996,6 +6302,63 @@ export type Database = {
           rim_diameter_code?: string | null
           saved_at?: string | null
           tire_section_code?: string | null
+        }
+        Relationships: []
+      }
+      _bk_atelier_questions_2610: {
+        Row: {
+          choix: string[] | null
+          cle: string | null
+          contexte: string | null
+          created_at: string | null
+          famille: string | null
+          id: string | null
+          note: string | null
+          ordre: number | null
+          regarder: string | null
+          repondu_le: string | null
+          repondu_par: string | null
+          reponse: string | null
+          scooter_slug: string | null
+          source: string | null
+          titre: string | null
+          traitee: boolean | null
+        }
+        Insert: {
+          choix?: string[] | null
+          cle?: string | null
+          contexte?: string | null
+          created_at?: string | null
+          famille?: string | null
+          id?: string | null
+          note?: string | null
+          ordre?: number | null
+          regarder?: string | null
+          repondu_le?: string | null
+          repondu_par?: string | null
+          reponse?: string | null
+          scooter_slug?: string | null
+          source?: string | null
+          titre?: string | null
+          traitee?: boolean | null
+        }
+        Update: {
+          choix?: string[] | null
+          cle?: string | null
+          contexte?: string | null
+          created_at?: string | null
+          famille?: string | null
+          id?: string | null
+          note?: string | null
+          ordre?: number | null
+          regarder?: string | null
+          repondu_le?: string | null
+          repondu_par?: string | null
+          reponse?: string | null
+          scooter_slug?: string | null
+          source?: string | null
+          titre?: string | null
+          traitee?: boolean | null
         }
         Relationships: []
       }
