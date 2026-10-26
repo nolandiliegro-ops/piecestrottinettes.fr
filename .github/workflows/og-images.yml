@@ -1,0 +1,56 @@
+# Images d'aperçu de lien (WhatsApp, Telegram, Messenger) — gabarit « Vitrine » choisi par Nolan le 26/10/2026.
+# Modifier config/og/_run.txt = UN run. Une ligne : « dry 4 » (exemples sur la branche donnees-og, rien envoyé),
+# « all » (toutes les fiches publiées), « only scooter:slug,part:slug ».
+# Passe automatique chaque lundi 5h (heure de Paris environ) : « all », pour les fiches créées dans la semaine.
+# Lit les données publiques (clé anon), envoie via l'Edge Function og-image (ADMIN_BULK_SECRET). N'écrit dans aucune table.
+name: og-images
+
+on:
+  push:
+    branches: [main]
+    paths: ['config/og/_run.txt']
+  schedule:
+    - cron: '17 3 * * 1'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: og-images
+  cancel-in-progress: false
+
+jobs:
+  og:
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - name: Playwright + polices
+        run: |
+          mkdir -p /tmp/pw && cd /tmp/pw && npm init -y > /dev/null
+          npm install playwright@1 @fontsource/unbounded @fontsource/plus-jakarta-sans --no-audit --no-fund
+          npx playwright install --with-deps chromium
+      - name: Génération
+        env:
+          SB_URL: ${{ secrets.SUPABASE_URL }}
+          ADMIN_BULK_SECRET: ${{ secrets.ADMIN_BULK_SECRET }}
+        run: |
+          if [ "${{ github.event_name }}" = "schedule" ]; then LINE="all"; else LINE=$(head -n1 config/og/_run.txt); fi
+          echo "::notice title=og::$LINE"
+          PW_REQUIRE=/tmp/pw/package.json OG_FONTS=/tmp/pw/node_modules/@fontsource node scripts/og/generate.mjs $LINE
+      - name: Résultats → branche donnees-og
+        if: always()
+        run: |
+          git config user.name "og-bot"; git config user.email "og-bot@users.noreply.github.com"
+          [ -d out ] || exit 0
+          rm -f out/*/_carte.html
+          cp -r out /tmp/out && rm -rf out
+          git fetch origin donnees-og || true
+          if git rev-parse --verify origin/donnees-og > /dev/null 2>&1; then git checkout -f -B donnees-og origin/donnees-og; else git checkout --orphan donnees-og; git rm -rf . > /dev/null; fi
+          mkdir -p out && cp -r /tmp/out/* out/
+          git add out && git commit -m "og: $(head -n1 config/og/_run.txt 2>/dev/null || echo schedule)" || echo "rien à committer"
+          git push origin donnees-og
