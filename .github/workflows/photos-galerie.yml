@@ -135,6 +135,13 @@ jobs:
               grep '^::' "out/second-avis.log" | head -3
               continue
             fi
+            if [ "$mode" = "aplat" ]; then
+              # Lecture seule (26/10) : photos principales nettoyées et posées sur fond BLANC pour l'agrandissement IA. « aplat <slugs> ».
+              node scripts/aplatir-blanc.mjs --slugs "$lot" > "out/aplat.log" 2>&1
+              echo "::notice title=aplat::EXIT=$?"
+              grep '^::' "out/aplat.log" | head -5
+              continue
+            fi
             if [ "$mode" = "repasse" ]; then
               # Repasse qualité (photo-qualite.mjs) sur les trottinettes en ligne. « repasse dry [slugs] » / « repasse write [slugs] ».
               node scripts/qualite-repasse.mjs --$lot ${extra:+--slugs $extra} > "out/repasse-$lot.log" 2>&1

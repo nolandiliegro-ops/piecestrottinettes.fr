@@ -1,1 +1,1 @@
-append hd2610b
+aplat beaster-bs08,dualtron-mini,navee-k100,ninebot-f2-plus,segway-gt2
