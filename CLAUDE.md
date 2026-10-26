@@ -141,6 +141,10 @@ de go : c'est une file de travail, elle ne touche pas le catalogue.
   `choix` (2 à 4 réponses + « Je ne sais pas »), `scooter_slug` + `cle` (colonne de MATCHING
   qu'elle remplit) quand elle porte sur une trottinette, `source` (claude · campagne-cles ·
   robot · moteur). `insert … on conflict (id) do nothing` : jamais deux fois la même question.
+- Une NOTE SANS BOUTON est une réponse valable (règle de Nolan, 26/10/2026) : il ne clique pas
+  quand aucun choix ne colle et répond à l'oral. On la lit, on l'interprète, on ne lui redemande
+  jamais de cliquer. Si la note contredit le bouton, la note prime. Seule une note qui ne répond
+  pas à SA question (dictée sur la mauvaise carte) reste ouverte, et on le lui signale.
 - Relecture (« lis les réponses atelier ») : réponses → tableau de clés → go → écriture avec
   backup → `traitee = true` + note de ce qui a été posé. Une question réglée autrement
   (deux boutiques d'accord) passe aussi en `traitee` avec la note.
