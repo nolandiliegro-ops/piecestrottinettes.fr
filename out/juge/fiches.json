@@ -1,135 +1,106 @@
 [
  {
-  "slug": "dualtron-storm-ltd-2025",
-  "id": "8d2f299c-521c-42df-a5af-6e8f496dd21c",
-  "avant": 3,
-  "retirer": [
-   {
-    "i": 2,
-    "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/8d2f299c-521c-42df-a5af-6e8f496dd21c/1792441264281_0.png",
-    "motifs": [
-     "texte incrusté"
-    ],
-    "note": "Vue arrière ; logo « Dualtron » en reflet/résidu sous la trottinette, hors du châssis."
-   }
-  ],
+  "slug": "navee-e25-pro",
+  "id": "eda559f0-7f7b-44c4-83fe-83005318f974",
+  "avant": 2,
+  "retirer": [],
   "ordre": [
-   "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/8d2f299c-521c-42df-a5af-6e8f496dd21c/1792441259366_0.png",
-   "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/8d2f299c-521c-42df-a5af-6e8f496dd21c/1792441261368_0.png"
+   "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/eda559f0-7f7b-44c4-83fe-83005318f974/1792972596477_0.png",
+   "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/eda559f0-7f7b-44c4-83fe-83005318f974/1792972598100_0.png"
   ],
   "change_principale": false,
-  "a_un_34_propre": true,
+  "a_un_34_propre": false,
   "restantes": 2
  },
  {
-  "slug": "dualtron-victor-2025",
-  "id": "92e8bccd-a133-4ed8-a9c3-27ab75bdc7b7",
-  "avant": 5,
-  "retirer": [
-   {
-    "i": 1,
-    "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/92e8bccd-a133-4ed8-a9c3-27ab75bdc7b7/1792445947839_0.png",
-    "motifs": [
-     "autre objet"
-    ],
-    "note": "Vue de face du guidon avec sacoche rigide accrochée ; trottinette coupée en bas."
-   }
-  ],
-  "ordre": [
-   "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/92e8bccd-a133-4ed8-a9c3-27ab75bdc7b7/1792445942860_0.png",
-   "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/92e8bccd-a133-4ed8-a9c3-27ab75bdc7b7/1792867616139_0.png",
-   "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/92e8bccd-a133-4ed8-a9c3-27ab75bdc7b7/1792867617175_0.png",
-   "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/92e8bccd-a133-4ed8-a9c3-27ab75bdc7b7/1792867618344_0.png"
-  ],
-  "change_principale": false,
-  "a_un_34_propre": true,
-  "restantes": 4
- },
- {
-  "slug": "hitway-h11",
-  "id": "10e37856-2c83-419a-a201-6f34edd678a8",
+  "slug": "navee-g5-max",
+  "id": "0cc7e364-f039-4ea6-b64f-18342c5d29da",
   "avant": 3,
   "retirer": [],
   "ordre": [
-   "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/10e37856-2c83-419a-a201-6f34edd678a8/1792446629558_0.png",
-   "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/10e37856-2c83-419a-a201-6f34edd678a8/1792446626824_0.png",
-   "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/10e37856-2c83-419a-a201-6f34edd678a8/1792446639398_0.png"
+   "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/0cc7e364-f039-4ea6-b64f-18342c5d29da/1792972607872_0.png",
+   "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/0cc7e364-f039-4ea6-b64f-18342c5d29da/1792972604482_0.png",
+   "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/0cc7e364-f039-4ea6-b64f-18342c5d29da/1792972606120_0.png"
   ],
   "change_principale": true,
   "a_un_34_propre": true,
   "restantes": 3
  },
  {
-  "slug": "inmotion-rs",
-  "id": "e6a9c39b-9ce5-488a-ba77-bf1f5b954e91",
+  "slug": "navee-g5-pro",
+  "id": "170453b2-496c-42d1-9db0-4a86ce22abcb",
+  "avant": 3,
+  "retirer": [],
+  "ordre": [
+   "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/170453b2-496c-42d1-9db0-4a86ce22abcb/1792972614238_0.png",
+   "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/170453b2-496c-42d1-9db0-4a86ce22abcb/1792972616506_0.png",
+   "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/170453b2-496c-42d1-9db0-4a86ce22abcb/1792972619699_0.png"
+  ],
+  "change_principale": false,
+  "a_un_34_propre": false,
+  "restantes": 3
+ },
+ {
+  "slug": "navee-gt3-pro",
+  "id": "8c252f57-9237-4cc9-bb1c-eec6976c0ed2",
+  "avant": 1,
+  "retirer": [],
+  "ordre": [
+   "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/8c252f57-9237-4cc9-bb1c-eec6976c0ed2/1792972626457_0.png"
+  ],
+  "change_principale": false,
+  "a_un_34_propre": false,
+  "restantes": 1
+ },
+ {
+  "slug": "navee-k100",
+  "id": "4157b83b-f330-4dff-8f0e-23bc36b9a993",
   "avant": 2,
   "retirer": [],
   "ordre": [
-   "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/e6a9c39b-9ce5-488a-ba77-bf1f5b954e91/1792871793590_0.png",
-   "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/e6a9c39b-9ce5-488a-ba77-bf1f5b954e91/1792886362966_0.png"
+   "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/4157b83b-f330-4dff-8f0e-23bc36b9a993/1792972631350_0.png",
+   "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/4157b83b-f330-4dff-8f0e-23bc36b9a993/1793002275400_0.png"
   ],
   "change_principale": false,
   "a_un_34_propre": false,
   "restantes": 2
  },
  {
-  "slug": "isinwheel-s-nova-pro",
-  "id": "54f29042-c5aa-460a-9a92-fd34fc962792",
-  "avant": 3,
-  "retirer": [
-   {
-    "i": 0,
-    "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/54f29042-c5aa-460a-9a92-fd34fc962792/1792442228920_0.png",
-    "motifs": [
-     "plusieurs trottinettes / vignette"
-    ],
-    "note": "Faible vignette fantôme de trottinette à droite, résidu de détourage."
-   }
-  ],
-  "ordre": [
-   "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/54f29042-c5aa-460a-9a92-fd34fc962792/1792442231056_0.png",
-   "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/54f29042-c5aa-460a-9a92-fd34fc962792/1792878503387_0.png"
-  ],
-  "change_principale": true,
-  "a_un_34_propre": true,
-  "restantes": 2
- },
- {
-  "slug": "teverun-fighter-supreme-7260r",
-  "id": "e269b16b-bcb5-4371-b02d-2279e66b781f",
-  "avant": 3,
-  "retirer": [
-   {
-    "i": 1,
-    "url": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/e269b16b-bcb5-4371-b02d-2279e66b781f/1792450173992_0.png",
-    "motifs": [
-     "texte incrusté"
-    ],
-    "note": "Filigrane \"TEFERUN\" semi-transparent en haut à gauche de l'image."
-   }
-  ],
-  "ordre": [
-   "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/e269b16b-bcb5-4371-b02d-2279e66b781f/1792450165916_0.png",
-   "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/e269b16b-bcb5-4371-b02d-2279e66b781f/1792450176898_0.png"
-  ],
-  "change_principale": false,
-  "a_un_34_propre": true,
-  "restantes": 2
- },
- {
-  "slug": "yeep-me-80n-evo-plus",
-  "id": "d46f2abd-35f8-43dd-a8db-ebf3593d8d72",
-  "avant": 5,
+  "slug": "navee-v25i-pro-ii",
+  "id": "2449892e-e19e-4a8b-82b7-42bc20d17a4b",
+  "avant": 2,
   "retirer": [],
   "ordre": [
-   "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/d46f2abd-35f8-43dd-a8db-ebf3593d8d72/1792451074506_0.png",
-   "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/d46f2abd-35f8-43dd-a8db-ebf3593d8d72/1792451076523_0.png",
-   "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/d46f2abd-35f8-43dd-a8db-ebf3593d8d72/1792451079089_0.png",
-   "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/d46f2abd-35f8-43dd-a8db-ebf3593d8d72/1792451081709_0.png",
-   "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/d46f2abd-35f8-43dd-a8db-ebf3593d8d72/1792451084858_0.png"
+   "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/2449892e-e19e-4a8b-82b7-42bc20d17a4b/1792972693878_0.png",
+   "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/2449892e-e19e-4a8b-82b7-42bc20d17a4b/1792972695101_0.png"
   ],
   "change_principale": false,
   "a_un_34_propre": false,
-  "restantes": 5
+  "restantes": 2
+ },
+ {
+  "slug": "navee-xt5-ultra",
+  "id": "8d5457c6-769f-45bc-abca-f5fb8d6f944b",
+  "avant": 2,
+  "retirer": [],
+  "ordre": [
+   "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/8d5457c6-769f-45bc-abca-f5fb8d6f944b/1792972700491_0.png",
+   "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/8d5457c6-769f-45bc-abca-f5fb8d6f944b/1792972702717_0.png"
+  ],
+  "change_principale": false,
+  "a_un_34_propre": false,
+  "restantes": 2
+ },
+ {
+  "slug": "xiaomi-electric-scooter-6-essential",
+  "id": "7273c19a-fd84-4b15-9f96-b5b82a43298b",
+  "avant": 1,
+  "retirer": [],
+  "ordre": [
+   "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/7273c19a-fd84-4b15-9f96-b5b82a43298b/1792973219698_0.png"
+  ],
+  "change_principale": false,
+  "a_un_34_propre": false,
+  "restantes": 1
  }
 ]

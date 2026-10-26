@@ -5,9 +5,22 @@
   "dhashAvecIou": 10,
   "couleur": 8
  },
- "fiches": 1060,
- "paires": 4093,
- "erreurs_telechargement": 0,
- "doublons": [],
+ "fiches": 1068,
+ "paires": 4157,
+ "erreurs_telechargement": 5,
+ "doublons": [
+  {
+   "slug": "kukirin-m4-max",
+   "table": "scooter_models",
+   "ia": 0,
+   "ib": 3,
+   "d": 1,
+   "io": 0.9393139841688655,
+   "c": 6.355772136597157,
+   "raison": "même image (dHash 1, couleur 6.4)",
+   "a": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/13496721-8661-4f36-9671-c314a159fd7b/1792442881688_0.png",
+   "b": "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/13496721-8661-4f36-9671-c314a159fd7b/1793002341065_0.png"
+  }
+ ],
  "vides": []
 }
