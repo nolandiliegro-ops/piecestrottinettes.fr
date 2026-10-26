@@ -1,4 +1,5 @@
 import { Helmet } from "react-helmet-async";
+import { OG_DEFAULT } from "@/lib/ogImage";
 
 interface SEOProps {
   title: string;
@@ -33,6 +34,8 @@ const SEO = ({ title, description, image, canonical, noindex = false, schema, pr
   const withBrand = `${baseTitle} | ${SITE_BRAND}`;
   const fullTitle = withBrand.length <= MAX_TITLE ? withBrand : baseTitle;
   const url = canonical ?? (typeof window !== "undefined" ? window.location.href : "");
+  // Toute page a une image d'aperçu de lien : celle de la fiche, sinon celle du site (26/10/2026).
+  const ogImg = image || OG_DEFAULT;
 
   return (
     <Helmet>
@@ -46,14 +49,17 @@ const SEO = ({ title, description, image, canonical, noindex = false, schema, pr
       <meta property="og:locale" content="fr_FR" />
       <meta property="og:title" content={fullTitle} />
       <meta property="og:description" content={description} />
-      {image && <meta property="og:image" content={image} />}
+      <meta property="og:image" content={ogImg} />
+      <meta property="og:image:width" content="1200" />
+      <meta property="og:image:height" content="630" />
+      <meta property="og:site_name" content="piecestrottinettes.fr" />
       {url && <meta property="og:url" content={url} />}
 
       {/* Twitter */}
       <meta name="twitter:card" content="summary_large_image" />
       <meta name="twitter:title" content={fullTitle} />
       <meta name="twitter:description" content={description} />
-      {image && <meta name="twitter:image" content={image} />}
+      <meta name="twitter:image" content={ogImg} />
 
       {/* Canonical */}
       {canonical && <link rel="canonical" href={canonical} />}

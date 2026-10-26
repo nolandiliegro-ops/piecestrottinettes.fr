@@ -1,3 +1,4 @@
+import { ogImage } from "@/lib/ogImage";
 import { useParams, Link } from "react-router-dom";
 import { Loader2, ChevronRight } from "lucide-react";
 import SEO from "@/components/SEO";
@@ -88,7 +89,7 @@ const Categorie = () => {
       <SEO
         title={seoTitle}
         description={seoDescription}
-        image={category.image_url ?? undefined}
+        image={ogImage("category", category.slug)}
         canonical={canonical}
         schema={schema}
         noindex={parts.length === 0}

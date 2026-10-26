@@ -1,3 +1,4 @@
+import { ogImage } from "@/lib/ogImage";
 import { useParams, Link, Navigate, useSearchParams } from "react-router-dom";
 import { motion } from "framer-motion";
 import { ArrowLeft, ChevronRight } from "lucide-react";
@@ -182,7 +183,7 @@ const PartDetail = () => {
             ?? usableMetaDescription(part.meta_description)
             ?? clampDescription(`Achetez ${part.name} pour trottinette électrique. Compatible ${compatibleModels || "nombreux modèles"}. Livraison rapide.`)
         }
-        image={part.image_url ?? undefined}
+        image={ogImage("part", part.slug)}
         canonical={productUrl}
         type="product"
         schema={[productSchema, breadcrumbSchema]}

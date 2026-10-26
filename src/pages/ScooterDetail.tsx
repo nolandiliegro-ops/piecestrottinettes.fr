@@ -1,3 +1,4 @@
+import { ogImage } from "@/lib/ogImage";
 import { useParams, Link, useSearchParams } from "react-router-dom";
 import { useScooterFicheState } from "@/hooks/useScooterFiche";
 import { BuyCtx, livePrice } from "@/components/scooter/BuyProposals";
@@ -200,7 +201,7 @@ const ScooterDetail = () => {
       <SEO
         title={seoTitle}
         description={seoDescription}
-        image={scooter.image_url ?? undefined}
+        image={ogImage("scooter", scooter.slug)}
         canonical={canonical}
         noindex={emptyPage}
         schema={seoFiche ? [...(partsSchema ? [partsSchema] : []), breadcrumbSchema, {

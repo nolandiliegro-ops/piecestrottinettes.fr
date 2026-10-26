@@ -2,7 +2,7 @@ import { useParams, Link, useSearchParams } from "react-router-dom";
 import { Loader2 } from "lucide-react";
 import SEO from "@/components/SEO";
 import Footer from "@/components/Footer";
-import { BRAND_ASSETS_FALLBACK } from "@/config/brand";
+import { ogImage } from "@/lib/ogImage";
 import { useBrandData, useBrandsNavigation } from "@/hooks/useBrandData";
 import { buildBrandJsonLd } from "@/lib/brandSchema";
 import { clampDescription, DESC_MAX } from "@/lib/seoText";
@@ -103,7 +103,6 @@ const Brand = () => {
   const canonical = `https://piecestrottinettes.fr/marque/${brand.slug}`;
   const prevUrl = prev ? `https://piecestrottinettes.fr/marque/${prev.slug}` : undefined;
   const nextUrl = next ? `https://piecestrottinettes.fr/marque/${next.slug}` : undefined;
-  const ogImage = brand.hero_image_url ?? brand.logo_url ?? BRAND_ASSETS_FALLBACK.og_image.url;
 
   const schema = buildBrandJsonLd({
     name: brand.name,
@@ -117,7 +116,7 @@ const Brand = () => {
 
   return (
     <div className="min-h-[100dvh] flex flex-col relative" style={{ backgroundColor: "#F5F0E8" }}>
-      <SEO title={seoTitle} description={seoDescription} image={ogImage} canonical={canonical} schema={schema} prevUrl={prevUrl} nextUrl={nextUrl} />
+      <SEO title={seoTitle} description={seoDescription} image={ogImage("brand", brand.slug)} canonical={canonical} schema={schema} prevUrl={prevUrl} nextUrl={nextUrl} />
 
       {/* Film grain overlay — fixed, non-interactive (never on scrolling content). */}
       <div
