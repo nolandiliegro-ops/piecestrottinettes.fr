@@ -1,0 +1,43 @@
+{
+ "lot": "upscale-hd-w2",
+ "entity": "scooter",
+ "chasse": true,
+ "models": [
+  {
+   "brand": "Weped",
+   "current": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/425d5692-fd61-4d52-9ea5-34ec534e576b/1792973160748_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/425d5692-fd61-4d52-9ea5-34ec534e576b/1792973162338_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/425d5692-fd61-4d52-9ea5-34ec534e576b/1792973164259_0.png"
+   ],
+   "id": "425d5692-fd61-4d52-9ea5-34ec534e576b",
+   "name": "Weped GTS",
+   "slug": "weped-gts",
+   "published": true,
+   "candidates": [
+    "https://d8j0ntlcm91z4.cloudfront.net/user_3GQlfFCxTsvuOLmSkOzS19wh9sw/hf_20261026_170244_4395aac0-4456-4ad9-9221-f852a67980f9.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/425d5692-fd61-4d52-9ea5-34ec534e576b/1792973162338_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/425d5692-fd61-4d52-9ea5-34ec534e576b/1792973164259_0.png"
+   ]
+  },
+  {
+   "brand": "Laotie",
+   "current": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/ffb5779f-cd7c-4c54-97fe-44c1ee85a4e4/1792872128640_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/ffb5779f-cd7c-4c54-97fe-44c1ee85a4e4/1792872131169_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/ffb5779f-cd7c-4c54-97fe-44c1ee85a4e4/1792872133812_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/ffb5779f-cd7c-4c54-97fe-44c1ee85a4e4/1792872136342_0.png"
+   ],
+   "id": "ffb5779f-cd7c-4c54-97fe-44c1ee85a4e4",
+   "name": "Laotie ES19",
+   "slug": "laotie-es19",
+   "published": true,
+   "candidates": [
+    "https://d8j0ntlcm91z4.cloudfront.net/user_3GQlfFCxTsvuOLmSkOzS19wh9sw/hf_20261026_170822_dc45d5ea-2a69-4c73-9581-6be5b7fbabb1.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/ffb5779f-cd7c-4c54-97fe-44c1ee85a4e4/1792872131169_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/ffb5779f-cd7c-4c54-97fe-44c1ee85a4e4/1792872133812_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/ffb5779f-cd7c-4c54-97fe-44c1ee85a4e4/1792872136342_0.png"
+   ]
+  }
+ ]
+}
