@@ -1,0 +1,2128 @@
+{
+ "lot": "hd2610b",
+ "entity": "scooter",
+ "chasse": true,
+ "models": [
+  {
+   "id": "098ce5d9-a1d0-4157-b0c4-13690ac8e64e",
+   "slug": "weped-ssgt",
+   "name": "Weped SSGT",
+   "brand": "Weped",
+   "published": true,
+   "current": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/098ce5d9-a1d0-4157-b0c4-13690ac8e64e/1792973171360_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/098ce5d9-a1d0-4157-b0c4-13690ac8e64e/1792973173073_0.png"
+   ],
+   "candidates": [
+    "http://pietechnologie.com/cdn/shop/products/wepedssgt1.jpg?v=1645506348",
+    "http://pietechnologie.com/cdn/shop/products/wepedssgt1_1200x1200.jpg?v=1645506348",
+    "http://pietechnologie.com/cdn/shop/products/wepedssgt2_1200x1200.jpg?v=1645506347",
+    "https://pietechnologie.com/cdn/shop/products/wepedssgt1.jpg?v=1645506348",
+    "https://pietechnologie.com/cdn/shop/products/wepedssgt2.jpg?v=1645506347",
+    "https://pietechnologie.com/cdn/shop/products/wepedssgt1_x100.jpg?v=1645506348",
+    "https://cdn.shopify.com/s/files/1/0506/5113/6182/products/wepedssgt1.jpg?v=1645506348",
+    "https://cdn.shopify.com/s/files/1/0506/5113/6182/products/wepedssgt2.jpg?v=1645506347"
+   ]
+  },
+  {
+   "id": "570c3f8b-c77f-4f63-a0a0-9a4f1c362eb1",
+   "slug": "xiaomi-electric-scooter-6-ultra",
+   "name": "Xiaomi Electric Scooter 6 Ultra",
+   "brand": "Xiaomi",
+   "published": true,
+   "current": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/570c3f8b-c77f-4f63-a0a0-9a4f1c362eb1/1792973234050_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/570c3f8b-c77f-4f63-a0a0-9a4f1c362eb1/1792973235924_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/570c3f8b-c77f-4f63-a0a0-9a4f1c362eb1/1793002443957_0.png"
+   ],
+   "candidates": [
+    "http://fixwheel.fr/cdn/shop/files/Xiaomi_Scooter_6_Ultra.png?v=1779963073",
+    "https://fixwheel.fr/cdn/shop/files/Xiaomi_Scooter_6_Ultra.png?v=1779963073&width=1920",
+    "https://cdn.shopify.com/s/files/1/0660/2856/8844/files/Xiaomi_Scooter_6_Ultra.png?v=1779963073",
+    "https://cdn.shopify.com/s/files/1/0660/2856/8844/files/6932554465735_h_b_l_0.webp?v=1779963074",
+    "https://cdn.shopify.com/s/files/1/0660/2856/8844/files/6932554465735_h_a_l_0.webp?v=1779963076",
+    "https://cdn.shopify.com/s/files/1/0660/2856/8844/files/6932554465735_h_f_l_1.webp?v=1779963077",
+    "https://cdn.shopify.com/s/files/1/0660/2856/8844/files/6932554465735_h_f_l_2.webp?v=1779963081",
+    "https://cdn.shopify.com/s/files/1/0660/2856/8844/files/6932554465735_h_z_l_1.webp?v=1779963083",
+    "https://cdn.shopify.com/s/files/1/0660/2856/8844/files/6932554465735_h_z_l_0.webp?v=1779963083",
+    "https://cdn.shopify.com/s/files/1/0660/2856/8844/files/6932554465735_h_r_l_0.webp?v=1779963083"
+   ]
+  },
+  {
+   "id": "a2155ed2-587a-4c17-a3cd-095aa9f76ddf",
+   "slug": "inmotion-climber",
+   "name": "Inmotion Climber",
+   "brand": "Inmotion",
+   "published": true,
+   "current": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/a2155ed2-587a-4c17-a3cd-095aa9f76ddf/1792972098261_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/a2155ed2-587a-4c17-a3cd-095aa9f76ddf/1792972100182_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/a2155ed2-587a-4c17-a3cd-095aa9f76ddf/1792972102630_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/a2155ed2-587a-4c17-a3cd-095aa9f76ddf/1792972104430_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/a2155ed2-587a-4c17-a3cd-095aa9f76ddf/1792972107014_0.png"
+   ],
+   "candidates": [
+    "https://www.inmotion-france.fr/1486-large_default/trottinette-electrique-inmotion-climber-36-v-15-ah.jpg",
+    "https://www.inmotion-france.fr/1486-home_default/trottinette-electrique-inmotion-climber-36-v-15-ah.jpg"
+   ]
+  },
+  {
+   "id": "85908cbf-4635-4e84-88e0-6bf166bd7648",
+   "slug": "isinwheel-s9-max",
+   "name": "Isinwheel S9 Max",
+   "brand": "Isinwheel",
+   "published": true,
+   "current": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/85908cbf-4635-4e84-88e0-6bf166bd7648/1792972234924_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/85908cbf-4635-4e84-88e0-6bf166bd7648/1792972236846_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/85908cbf-4635-4e84-88e0-6bf166bd7648/1792972239809_0.png"
+   ],
+   "candidates": [
+    "http://www.isinwheel.fr/cdn/shop/files/s9max_1994cee0-76ff-4e03-9e0d-94ec5f4d67cf.png?v=1789612603",
+    "https://www.isinwheel.fr/cdn/shop/files/s9max_1994cee0-76ff-4e03-9e0d-94ec5f4d67cf_1024x1024.png?v=1789612603",
+    "https://cdn.shopify.com/s/files/1/0594/3469/6868/files/s9max_1994cee0-76ff-4e03-9e0d-94ec5f4d67cf.png?v=1789612603",
+    "https://cdn.shopify.com/s/files/1/0594/3469/6868/products/11_07a70782-857b-402d-94be-640c866c6b87.jpg?v=1772095564",
+    "https://cdn.shopify.com/s/files/1/0594/3469/6868/files/3_918c5f29-5a86-4783-9a5b-ce61ec860fd3.jpg?v=1772620830",
+    "https://cdn.shopify.com/s/files/1/0594/3469/6868/files/6_d0fd79eb-b079-408c-9e06-f96eef952b1e.jpg?v=1772620830",
+    "https://cdn.shopify.com/s/files/1/0594/3469/6868/files/5_58418549-d137-4382-8053-4fde0eac9aab.jpg?v=1772620830",
+    "https://cdn.shopify.com/s/files/1/0594/3469/6868/files/9_558efd2d-d2c8-4c6d-a16d-01fd4ba895c0.jpg?v=1772620830",
+    "https://cdn.shopify.com/s/files/1/0594/3469/6868/files/4_cb18e181-0e65-44f1-9551-d05d41c77c01.jpg?v=1778037089",
+    "https://cdn.shopify.com/s/files/1/0594/3469/6868/files/1000_x_400_1280_x_720_1000_x_1000_1.png?v=1772620747"
+   ]
+  },
+  {
+   "id": "90784d31-a431-4f78-9937-2014139ba54b",
+   "slug": "nami-burn-e",
+   "name": "Nami Burn-E",
+   "brand": "Nami",
+   "published": true,
+   "current": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/90784d31-a431-4f78-9937-2014139ba54b/1792972559823_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/90784d31-a431-4f78-9937-2014139ba54b/1792972561413_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/90784d31-a431-4f78-9937-2014139ba54b/1792972563160_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/90784d31-a431-4f78-9937-2014139ba54b/1792972565227_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/90784d31-a431-4f78-9937-2014139ba54b/1792972567345_0.png"
+   ],
+   "candidates": [
+    "https://nami-electric.com/wp-content/uploads/2025/07/Groupe-de-masques-7@2x-1.png",
+    "https://nami-electric.com/wp-content/uploads/2025/07/burn-e-2-min.png"
+   ]
+  },
+  {
+   "id": "425d5692-fd61-4d52-9ea5-34ec534e576b",
+   "slug": "weped-gts",
+   "name": "Weped GTS",
+   "brand": "Weped",
+   "published": true,
+   "current": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/425d5692-fd61-4d52-9ea5-34ec534e576b/1792973160748_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/425d5692-fd61-4d52-9ea5-34ec534e576b/1792973162338_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/425d5692-fd61-4d52-9ea5-34ec534e576b/1792973164259_0.png"
+   ],
+   "candidates": [
+    "http://pietechnologie.com/cdn/shop/products/Weped_GT_Electric_Scooter_Profile_Picture_2000x_dcc4420e-9b8d-43c0-aecd-cb0b18ee0ee0.jpg?v=1669347199",
+    "http://pietechnologie.com/cdn/shop/products/Weped_GT_Electric_Scooter_Profile_Picture_2000x_dcc4420e-9b8d-43c0-aecd-cb0b18ee0ee0_1200x1200.jpg?v=1669347199",
+    "http://pietechnologie.com/cdn/shop/products/TrottinetteelectriqueWepedGTS18000W-60V30Ah-PIETECHNOLOGIE-min_1200x1200.png?v=1669347199",
+    "http://pietechnologie.com/cdn/shop/products/WEPED-GT-50E_1200x1200.png?v=1665588848",
+    "https://pietechnologie.com/cdn/shop/products/Weped_GT_Electric_Scooter_Profile_Picture_2000x_dcc4420e-9b8d-43c0-aecd-cb0b18ee0ee0.jpg?v=1669347199",
+    "https://pietechnologie.com/cdn/shop/products/TrottinetteelectriqueWepedGTS18000W-60V30Ah-PIETECHNOLOGIE-min.png?v=1669347199",
+    "https://pietechnologie.com/cdn/shop/products/WEPED-GT-50E.png?v=1665588848",
+    "https://pietechnologie.com/cdn/shop/products/Weped_GT_Electric_Scooter_Folded_2000x_f80e294b-f5bf-4c75-a0ca-7824da44b1ac.jpg?v=1665588848",
+    "https://pietechnologie.com/cdn/shop/products/Weped_GT_Electric_Scooter_Profile_Picture_2000x_dcc4420e-9b8d-43c0-aecd-cb0b18ee0ee0_x100.jpg?v=1669347199",
+    "https://cdn.shopify.com/s/files/1/0506/5113/6182/products/Weped_GT_Electric_Scooter_Profile_Picture_2000x_dcc4420e-9b8d-43c0-aecd-cb0b18ee0ee0.jpg?v=1669347199"
+   ]
+  },
+  {
+   "id": "5cc4854f-30ba-40cc-83fd-0d359f0fd134",
+   "slug": "xiaomi-electric-scooter-4-lite",
+   "name": "Xiaomi Electric Scooter 4 Lite",
+   "brand": "Xiaomi",
+   "published": true,
+   "current": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/5cc4854f-30ba-40cc-83fd-0d359f0fd134/1792973206776_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/5cc4854f-30ba-40cc-83fd-0d359f0fd134/1793002297177_0.png"
+   ],
+   "candidates": [
+    "https://i05.appmifile.com/385_item_fr/10/07/2023/7d0d9153d8742691e3bf84303144121a.png"
+   ]
+  },
+  {
+   "id": "115ee744-6655-4d30-8ce9-6c44259ca591",
+   "slug": "inmotion-rs-jet",
+   "name": "Inmotion RS Jet",
+   "brand": "Inmotion",
+   "published": true,
+   "current": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/115ee744-6655-4d30-8ce9-6c44259ca591/1792446768764_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/115ee744-6655-4d30-8ce9-6c44259ca591/1792446771465_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/115ee744-6655-4d30-8ce9-6c44259ca591/1792446774007_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/115ee744-6655-4d30-8ce9-6c44259ca591/1793002307480_0.png"
+   ],
+   "candidates": [
+    "https://www.inmotion-france.fr/2047-large_default/trottinette-electrique-inmotion-rs-jet-72v-25ah.jpg",
+    "https://www.inmotion-france.fr/2047-home_default/trottinette-electrique-inmotion-rs-jet-72v-25ah.jpg",
+    "http://moovrider.com/cdn/shop/files/Inmotion-RS-Jet-Profile.webp?crop=center&height=1200&v=1781278058&width=1200",
+    "https://moovrider.com/cdn/shop/files/Inmotion-RS-Jet-Profile.webp?v=1781278058&width=1075",
+    "https://cdn.shopify.com/s/files/1/0270/0227/3925/files/Inmotion-RS-Jet-Profile.webp?v=1781278058",
+    "https://cdn.shopify.com/s/files/1/0270/0227/3925/files/Inmotion-RS-Jet-Front.webp?v=1781278058",
+    "https://cdn.shopify.com/s/files/1/0270/0227/3925/files/Inmotion-RS-Jet-REAR-2.webp?v=1781278058",
+    "https://cdn.shopify.com/s/files/1/0270/0227/3925/files/Inmotion-RS-Jet-REAR.webp?v=1781278058"
+   ]
+  },
+  {
+   "id": "27b0390b-c1dd-4bca-ae69-1cae035031d7",
+   "slug": "beaster-bs77",
+   "name": "Beaster BS77",
+   "brand": "Beaster",
+   "published": true,
+   "current": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/27b0390b-c1dd-4bca-ae69-1cae035031d7/1792971693041_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/27b0390b-c1dd-4bca-ae69-1cae035031d7/1792971694920_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/27b0390b-c1dd-4bca-ae69-1cae035031d7/1792971697413_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/27b0390b-c1dd-4bca-ae69-1cae035031d7/1793002321016_0.png"
+   ],
+   "candidates": [
+    "https://media.powersport.lt/8936123-thickbox_default/beaster-scooter-bs77-electric-scooter-2400-w-60-v-234-ah-hydraulic-brakes-off-road.jpg",
+    "https://media.powersport.lt/8936123-large_default/beaster-scooter-bs77-electric-scooter-2400-w-60-v-234-ah-hydraulic-brakes-off-road.jpg",
+    "https://carsi24.witcdn.net/electric-scooter-beaster-bs77-2400w-60v-234ah-874mnz2432827-sports-equipment-beaster-1484104-38-O.jpg"
+   ]
+  },
+  {
+   "id": "a5948204-1063-4254-add6-d8598848f894",
+   "slug": "ninebot-f2-pro-e-ii",
+   "name": "Ninebot F2 Pro E II",
+   "brand": "Ninebot",
+   "published": true,
+   "current": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/a5948204-1063-4254-add6-d8598848f894/1792972750132_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/a5948204-1063-4254-add6-d8598848f894/1793002609479_0.png"
+   ],
+   "candidates": [
+    "https://www.segwayfrance.com/cdn/shop/files/F2-Pro-II-side-viewcopy.webp?v=1769087161",
+    "https://cdn.shopify.com/s/files/1/0983/1487/9322/files/F2-Pro-II-side-viewcopy.webp?v=1769087161",
+    "https://cdn.shopify.com/s/files/1/0983/1487/9322/files/2_11copy.webp?v=1769087161",
+    "https://cdn.shopify.com/s/files/1/0983/1487/9322/files/4_5copy.webp?v=1769087161",
+    "https://cdn.shopify.com/s/files/1/0983/1487/9322/files/F2-II-Pro-Block-12-desktop_1_copy_4cc3c2fb-7c38-4284-b13c-61efb28fd572.webp?v=1769087120",
+    "https://cdn.shopify.com/s/files/1/0983/1487/9322/files/F2-II-Pro-Block-9-desktop_1_copy.webp?v=1769087125",
+    "https://cdn.shopify.com/s/files/1/0983/1487/9322/files/F2-II-Block-1-Imagecopy.webp?v=1769087139",
+    "https://cdn.shopify.com/s/files/1/0983/1487/9322/files/01986980-dc98-7a82-b748-6f8feefb7b29_2880copy.webp?v=1769087158",
+    "https://www.timy-mobility.fr/wp-content/uploads/2026/10/ninebot-f2-pro-e-ii-1-trois-quarts-avant.jpg"
+   ]
+  },
+  {
+   "id": "100160d6-bde3-448e-9f99-4a200ffe7b39",
+   "slug": "kingsong-n14-max",
+   "name": "Kingsong N14 Max",
+   "brand": "Kingsong",
+   "published": true,
+   "current": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/100160d6-bde3-448e-9f99-4a200ffe7b39/1792972379801_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/100160d6-bde3-448e-9f99-4a200ffe7b39/1792972381816_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/100160d6-bde3-448e-9f99-4a200ffe7b39/1792972385530_0.png"
+   ],
+   "candidates": [
+    "https://media.cdnws.com/_i/21277/fb%7B630%7D-6475/508/79/trottinette-electrique-kingsong-n14-6.jpeg",
+    "https://media.cdnws.com/_i/21277/6475/508/79/trottinette-electrique-kingsong-n14-6.jpeg",
+    "https://media.cdnws.com/_i/21277/6477/3791/81/trottinette-electrique-kingsong-n14-5.jpeg",
+    "https://media.cdnws.com/_i/21277/6271/126/73/afficheur-trottinette-n14.png",
+    "https://media.cdnws.com/_i/21277/6270/2162/72/trottinette-n14-pliee.png"
+   ]
+  },
+  {
+   "id": "25687bdd-669c-4128-88ed-dcd5acc13863",
+   "slug": "urbanglide-urbanride-100xs",
+   "name": "Urbanglide Urbanride 100XS",
+   "brand": "Urbanglide",
+   "published": true,
+   "current": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/25687bdd-669c-4128-88ed-dcd5acc13863/1792973109031_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/25687bdd-669c-4128-88ed-dcd5acc13863/1792973110384_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/25687bdd-669c-4128-88ed-dcd5acc13863/1792973112552_0.png"
+   ],
+   "candidates": []
+  },
+  {
+   "id": "13496721-8661-4f36-9671-c314a159fd7b",
+   "slug": "kukirin-m4-max",
+   "name": "Kukirin M4 Max",
+   "brand": "Kukirin",
+   "published": true,
+   "current": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/13496721-8661-4f36-9671-c314a159fd7b/1792442881688_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/13496721-8661-4f36-9671-c314a159fd7b/1792442883317_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/13496721-8661-4f36-9671-c314a159fd7b/1792442886883_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/13496721-8661-4f36-9671-c314a159fd7b/1793002341065_0.png"
+   ],
+   "candidates": [
+    "https://www.kukirin-officiel.com/cdn/shop/files/trottinette-electrique-kukirin-m4-max-800w-64-km-dautonomie-45-kmh-1408508.webp?v=1764467720",
+    "https://cdn.shopify.com/s/files/1/0310/0855/5140/files/trottinette-electrique-kukirin-m4-max-800w-64-km-dautonomie-45-kmh-1408508.webp?v=1764467720",
+    "https://cdn.shopify.com/s/files/1/0310/0855/5140/files/trottinette-electrique-kukirin-m4-max-800w-64-km-dautonomie-45-kmh-5622621.webp?v=1764467689",
+    "https://cdn.shopify.com/s/files/1/0310/0855/5140/files/trottinette-electrique-kukirin-m4-max-800w-64-km-dautonomie-45-kmh-6041847.webp?v=1764467688",
+    "https://cdn.shopify.com/s/files/1/0310/0855/5140/files/trottinette-electrique-kukirin-m4-max-800w-64-km-dautonomie-45-kmh-9851047.webp?v=1764467688",
+    "https://cdn.shopify.com/s/files/1/0310/0855/5140/files/trottinette-electrique-kukirin-m4-max-800w-64-km-dautonomie-45-kmh-5600779.webp?v=1764467719",
+    "https://cdn.shopify.com/s/files/1/0310/0855/5140/files/trottinette-electrique-kukirin-m4-max-800w-64-km-dautonomie-45-kmh-9963592.webp?v=1764467687",
+    "https://cdn.shopify.com/s/files/1/0310/0855/5140/files/trottinette-electrique-kukirin-m4-max-800w-64-km-dautonomie-45-kmh-1053171.webp?v=1764467719",
+    "https://cdn.shopify.com/s/files/1/0310/0855/5140/files/trottinette-electrique-kukirin-m4-max_3.webp?v=1766454967",
+    "https://cdn.shopify.com/s/files/1/0310/0855/5140/files/trottinette-electrique-kukirin-m4-max_4.webp?v=1766454967"
+   ]
+  },
+  {
+   "id": "b03c6a4d-8fb9-4d27-ac62-2bac410169cc",
+   "slug": "vsett-11-plus-super",
+   "name": "Vsett 11+ Super",
+   "brand": "Vsett",
+   "published": true,
+   "current": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/b03c6a4d-8fb9-4d27-ac62-2bac410169cc/1792973133851_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/b03c6a4d-8fb9-4d27-ac62-2bac410169cc/1792973135054_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/b03c6a4d-8fb9-4d27-ac62-2bac410169cc/1792973137121_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/b03c6a4d-8fb9-4d27-ac62-2bac410169cc/1792973139130_0.png"
+   ],
+   "candidates": [
+    "https://kissmywheels.ch/wp-content/uploads/2024/07/11-super-5.png",
+    "https://kissmywheels.ch/wp-content/uploads/2023/12/vsett-11-super-yellow-3.png",
+    "https://kissmywheels.ch/wp-content/uploads/2023/12/vsett-11-super-yellow-2.png",
+    "https://kissmywheels.ch/wp-content/uploads/2023/12/vsett-11-super-yellow-4.png",
+    "https://kissmywheels.ch/wp-content/uploads/2023/12/vsett-11-super-yellow-5.png"
+   ]
+  },
+  {
+   "id": "515b1bf1-63f8-4fa4-8032-eddf57068c87",
+   "slug": "beaster-bs15",
+   "name": "Beaster BS15",
+   "brand": "Beaster",
+   "published": true,
+   "current": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/515b1bf1-63f8-4fa4-8032-eddf57068c87/1792971679145_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/515b1bf1-63f8-4fa4-8032-eddf57068c87/1793002358294_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/515b1bf1-63f8-4fa4-8032-eddf57068c87/1793002359898_0.png"
+   ],
+   "candidates": [
+    "https://salasta.lt/image/data/El%20paspirtukai/el-paspirtukas-beaster-scooter-bs15-1200-w-48-v-18-ah.jpg",
+    "https://houstera.lt/wp-content/uploads/2021/03/el-paspirtukas-beaster-scooter-bs15-1200-w-48-v-18-ah11.jpg",
+    "https://houstera.lt/wp-content/uploads/2021/03/el-paspirtukas-beaster-scooter-bs15-1200-w-48-v-18-ah.jpg",
+    "https://houstera.lt/wp-content/uploads/2021/03/el-paspirtukas-beaster-scooter-bs15-1200-w-48-v-18-ah1.jpg",
+    "https://houstera.lt/wp-content/uploads/2021/03/el-paspirtukas-beaster-scooter-bs15-1200-w-48-v-18-ah2.jpg",
+    "https://houstera.lt/wp-content/uploads/2021/03/el-paspirtukas-beaster-scooter-bs15-1200-w-48-v-18-ah3.jpg",
+    "https://houstera.lt/wp-content/uploads/2021/03/el-paspirtukas-beaster-scooter-bs15-1200-w-48-v-18-ah4.jpg",
+    "https://houstera.lt/wp-content/uploads/2021/03/el-paspirtukas-beaster-scooter-bs15-1200-w-48-v-18-ah5.jpg",
+    "https://houstera.lt/wp-content/uploads/2021/03/el-paspirtukas-beaster-scooter-bs15-1200-w-48-v-18-ah6.jpg",
+    "https://houstera.lt/wp-content/uploads/2021/03/el-paspirtukas-beaster-scooter-bs15-1200-w-48-v-18-ah7.jpg"
+   ]
+  },
+  {
+   "id": "0c055bed-92ff-4fe5-a1a9-692f8474d67b",
+   "slug": "ninebot-e2-plus-e-ii",
+   "name": "Ninebot E2 Plus E II",
+   "brand": "Ninebot",
+   "published": true,
+   "current": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/0c055bed-92ff-4fe5-a1a9-692f8474d67b/1792972712662_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/0c055bed-92ff-4fe5-a1a9-692f8474d67b/1792972713696_0.png"
+   ],
+   "candidates": [
+    "https://www.segwayfrance.com/cdn/shop/files/E2-Plus-E-II-side-viewcopy.webp?v=1769164896",
+    "https://cdn.shopify.com/s/files/1/0983/1487/9322/files/E2-Plus-E-II-side-viewcopy.webp?v=1769164896",
+    "https://cdn.shopify.com/s/files/1/0983/1487/9322/files/e2_plus_ii_e_product_picture_handlebar-2140x1605_72copy.webp?v=1769164903",
+    "https://cdn.shopify.com/s/files/1/0983/1487/9322/files/e2_plus_ii_e_product_picture_suspension-2140x1605_72copy.webp?v=1769164906",
+    "https://cdn.shopify.com/s/files/1/0983/1487/9322/files/e2pluseii_lifestyle_picture_man_and_woman_riding_3-2140x1427_72copy.webp?v=1769164912",
+    "https://cdn.shopify.com/s/files/1/0983/1487/9322/files/range-desktopcopy.webp?v=1769164927",
+    "https://cdn.shopify.com/s/files/1/0983/1487/9322/files/e2pluseii_lifestyle_picture_man_and_woman_riding-2140x1427_72copy.webp?v=1769164929"
+   ]
+  },
+  {
+   "id": "315f588a-c846-4791-a8b8-2f0136074980",
+   "slug": "weped-fold-3",
+   "name": "Weped Fold 3",
+   "brand": "Weped",
+   "published": true,
+   "current": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/315f588a-c846-4791-a8b8-2f0136074980/1792973154009_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/315f588a-c846-4791-a8b8-2f0136074980/1792973155288_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/315f588a-c846-4791-a8b8-2f0136074980/1792973157745_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/315f588a-c846-4791-a8b8-2f0136074980/1793002373865_0.png"
+   ],
+   "candidates": []
+  },
+  {
+   "id": "9dec9199-0a18-48f7-90c7-72d8dc9d453c",
+   "slug": "dualtron-spider-2",
+   "name": "Dualtron Spider 2",
+   "brand": "Dualtron",
+   "published": true,
+   "current": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/9dec9199-0a18-48f7-90c7-72d8dc9d453c/1792971785808_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/9dec9199-0a18-48f7-90c7-72d8dc9d453c/1792971795397_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/9dec9199-0a18-48f7-90c7-72d8dc9d453c/1792971797963_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/9dec9199-0a18-48f7-90c7-72d8dc9d453c/1793002564476_0.png"
+   ],
+   "candidates": [
+    "https://www.gyroroue-shop.fr/wp-content/uploads/2021/09/dualtron-spider-2-500x500-1.png",
+    "https://www.gyroroue-shop.fr/wp-content/uploads/2021/09/Dualtron-Spider-II-3.png",
+    "https://www.gyroroue-shop.fr/wp-content/uploads/2021/09/Dualtron-Spider-II.png",
+    "http://www.wee-bot.com/cdn/shop/products/trottinette_electrique_dualtron_spider_2_pas_cher.jpg?v=1726181634",
+    "https://www.wee-bot.com/cdn/shop/products/trottinette_electrique_dualtron_spider_2_pas_cher_600x600_crop_center.jpg?v=1726181634",
+    "https://www.wee-bot.com/cdn/shop/products/trottinette_electrique_dualtron_spider_2_pas_cher.jpg?v=1726181634&width=1000",
+    "https://www.wee-bot.com/cdn/shop/products/trottinette_electrique_dualtron_spider_2_nouveau_design_minimotors.jpg?v=1726181940&width=1000",
+    "https://www.wee-bot.com/cdn/shop/files/trottinette_electrique_dualtron_spider_2_repose_pied-921741.jpg?v=1734952704&width=1000",
+    "https://www.wee-bot.com/cdn/shop/products/Trottinette_electrique_Spider_2_roues_arriere_bequille.jpg?v=1726182108&width=1200",
+    "https://www.wee-bot.com/cdn/shop/products/Trottinette_electrique_Minimotors_Spider2_confortable.jpg?v=1726182185&width=1200"
+   ]
+  },
+  {
+   "id": "38dd43b9-958d-4846-b974-0af6dc95da07",
+   "slug": "beaster-diablo",
+   "name": "Beaster Diablo",
+   "brand": "Beaster",
+   "published": true,
+   "current": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/38dd43b9-958d-4846-b974-0af6dc95da07/1792445419339_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/38dd43b9-958d-4846-b974-0af6dc95da07/1792445421515_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/38dd43b9-958d-4846-b974-0af6dc95da07/1792445423775_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/38dd43b9-958d-4846-b974-0af6dc95da07/1792445428678_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/38dd43b9-958d-4846-b974-0af6dc95da07/1792445431509_0.png"
+   ],
+   "candidates": [
+    "https://media.powersport.lt/8936162-thickbox_default/beaster-scooter-diablo-electric-scooter-1000-w-60-v-208-ah-off-road.jpg",
+    "https://media.powersport.lt/8936162-large_default/beaster-scooter-diablo-electric-scooter-1000-w-60-v-208-ah-off-road.jpg",
+    "https://carsi24.witcdn.net/electric-scooter-beaster-scooter-diablo-1000-w-60-v-208-ah-for-off-road-use-874mnz2432833-sports-equipment-beaster-1484110-38-O.jpg"
+   ]
+  },
+  {
+   "id": "43d0ceac-fac2-438d-9acf-da8bb1bff9ea",
+   "slug": "teverun-fighter-supreme-ultra",
+   "name": "Teverun Fighter Supreme Ultra",
+   "brand": "Teverun",
+   "published": true,
+   "current": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/43d0ceac-fac2-438d-9acf-da8bb1bff9ea/1792444309920_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/43d0ceac-fac2-438d-9acf-da8bb1bff9ea/1792444313440_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/43d0ceac-fac2-438d-9acf-da8bb1bff9ea/1792867866679_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/43d0ceac-fac2-438d-9acf-da8bb1bff9ea/1793002577536_0.png"
+   ],
+   "candidates": [
+    "http://www.wee-bot.com/cdn/shop/files/ultra_1_-_copie_b569018c-864a-4dae-9dff-8f461d5bfec9.jpg?v=1781661368",
+    "https://www.wee-bot.com/cdn/shop/files/ultra_1_-_copie_b569018c-864a-4dae-9dff-8f461d5bfec9_600x600_crop_center.jpg?v=1781661368",
+    "https://www.wee-bot.com/cdn/shop/files/ultra_1_-_copie_b569018c-864a-4dae-9dff-8f461d5bfec9.jpg?v=1781661368&width=1200",
+    "https://www.wee-bot.com/cdn/shop/files/trottinette-electrique-teverun-fighter-supreme-ultra-caracteristiques-techniques.webp?v=1781471780&width=1080",
+    "https://www.wee-bot.com/cdn/shop/files/trottinette-electrique-teverun-fighter-supreme-ultra-points-forts.webp?v=1781471780&width=1080",
+    "https://www.wee-bot.com/cdn/shop/files/trottinette-electrique-teverun-fighter-supreme-ultra-pliee-dimensions.webp?v=1781471779&width=1080",
+    "https://www.wee-bot.com/cdn/shop/files/trottinette-electrique-teverun-fighter-supreme-ultra-garantie-livraison.webp?v=1781471779&width=1080",
+    "https://www.wee-bot.com/cdn/shop/files/fiche_produit_fighter_SUpreme_ultra_copie_49995cac-ac52-41a3-b55b-3c28a71461bc.jpg?v=1777472109&width=1024",
+    "https://www.wee-bot.com/cdn/shop/files/ultra_1_-_copie_7125c7cf-c182-4174-b414-7f0a05008e56.jpg?v=1781661367&width=832",
+    "https://www.wee-bot.com/cdn/shop/files/ultra_1_-_copie_66995467-8598-4e67-9b07-73ccfc484ab4.jpg?v=1781287628&width=1024"
+   ]
+  },
+  {
+   "id": "175d33ce-e14f-4f60-bf6a-495434a19ff9",
+   "slug": "nami-burn-e-2",
+   "name": "Nami Burn-E 2",
+   "brand": "Nami",
+   "published": true,
+   "current": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/175d33ce-e14f-4f60-bf6a-495434a19ff9/1792972571239_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/175d33ce-e14f-4f60-bf6a-495434a19ff9/1792972572369_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/175d33ce-e14f-4f60-bf6a-495434a19ff9/1792972574579_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/175d33ce-e14f-4f60-bf6a-495434a19ff9/1792972576568_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/175d33ce-e14f-4f60-bf6a-495434a19ff9/1792972578612_0.png"
+   ],
+   "candidates": [
+    "https://speedbikes.fr/wp-content/uploads/2024/01/nami-burn-e-2-speedbikesnimes.png",
+    "https://speedbikes.fr/wp-content/uploads/2024/01/nami-burn-e-2speedbikesnimes.png",
+    "https://speedbikes.fr/wp-content/uploads/2024/01/nami-burn-e-2trottinettenimes.png",
+    "https://speedbikes.fr/wp-content/uploads/2024/01/nami-burn-e-2trottinettenimesspeedbikes.png",
+    "https://speedbikes.fr/produit/trottinette-electrique-nami-burn-e-2/%7B%7Bdata.full_src%7D%7D",
+    "https://projetancien.moveelec.fr/wp-content/uploads/2022/11/viper-nami-burn-etrottinette-electrique-eleqtron-0_24e2c0fe-716c-4215-aa8f-b443492d4450_1206x-1.webp",
+    "https://projetancien.moveelec.fr/wp-content/uploads/2022/11/namiburne1_1080x-1.webp",
+    "https://projetancien.moveelec.fr/wp-content/uploads/2022/11/NAMI-VIPER-BURN-E2-MAX-electric-scooter-Pegascooter-1660612955_1000x-1.webp",
+    "https://projetancien.moveelec.fr/wp-content/uploads/2022/11/NAMI-VIPER-BURN-E2-MAX-electric-scooter-Pegascooter-1660612945_1000x-1.webp",
+    "https://projetancien.moveelec.fr/wp-content/uploads/2022/11/NAMI-VIPER-BURN-E2-MAX-electric-scooter-Pegascooter-1660612911_1800x1800-1.webp"
+   ]
+  },
+  {
+   "id": "dff1a983-35ff-4b47-810f-6b609e52cb99",
+   "slug": "inokim-light-2-super",
+   "name": "Inokim Light 2 Super",
+   "brand": "Inokim",
+   "published": true,
+   "current": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/dff1a983-35ff-4b47-810f-6b609e52cb99/1792972132050_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/dff1a983-35ff-4b47-810f-6b609e52cb99/1792972133608_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/dff1a983-35ff-4b47-810f-6b609e52cb99/1792972136735_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/dff1a983-35ff-4b47-810f-6b609e52cb99/1793002383224_0.png"
+   ],
+   "candidates": [
+    "https://media.cdnws.com/_i/21277/fb%7B630%7D-2615/2323/16/trottinette-electrique-nouvelle-inokim-light-2-black.png",
+    "https://media.cdnws.com/_i/21277/2615/2323/16/trottinette-electrique-nouvelle-inokim-light-2-black.png",
+    "https://media.cdnws.com/_i/21277/2621/10/22/trottinette-electrique-nouvelle-inokim-light-2-black-mipliee.png",
+    "https://media.cdnws.com/_i/21277/2648/2794/49/trottinette-electrique-inokim-light-2-verte.jpeg",
+    "https://media.cdnws.com/_i/21277/2620/553/21/trottinette-electrique-nouvelle-inokim-light-2-black-pliee.png",
+    "https://media.cdnws.com/_i/21277/2650/2168/51/trottinette-eelectrique-inokim-light-2.jpeg",
+    "https://media.cdnws.com/_i/21277/2617/1805/18/trottinette-electrique-nouvelle-inokim-light-2-black-2.png",
+    "https://media.cdnws.com/_i/21277/2649/14/50/trotti-ette-electrique-inokim-light-2-couleur.jpeg",
+    "https://media.cdnws.com/_i/21277/2651/545/52/trotitnette-electrique-inokim-light-2-blanche.jpeg"
+   ]
+  },
+  {
+   "id": "35d0ee7e-a760-4fe4-9960-98527f5fd8f4",
+   "slug": "ninebot-e2",
+   "name": "Ninebot E2",
+   "brand": "Ninebot",
+   "published": true,
+   "current": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/35d0ee7e-a760-4fe4-9960-98527f5fd8f4/1792972707047_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/35d0ee7e-a760-4fe4-9960-98527f5fd8f4/1792972708224_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/35d0ee7e-a760-4fe4-9960-98527f5fd8f4/1793002713721_0.png"
+   ],
+   "candidates": []
+  },
+  {
+   "id": "a2df0d67-7034-453d-af1a-e08612f690be",
+   "slug": "ninebot-f3-e",
+   "name": "Ninebot F3 E",
+   "brand": "Ninebot",
+   "published": true,
+   "current": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/a2df0d67-7034-453d-af1a-e08612f690be/1792972751519_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/a2df0d67-7034-453d-af1a-e08612f690be/1793002407084_0.png"
+   ],
+   "candidates": [
+    "https://www.segwayfrance.com/cdn/shop/files/f3-2_1_1.webp?v=1768902978",
+    "https://cdn.shopify.com/s/files/1/0983/1487/9322/files/f3-2_1_1.webp?v=1768902978",
+    "https://cdn.shopify.com/s/files/1/0983/1487/9322/files/f3-3_1_1.webp?v=1768902979",
+    "https://cdn.shopify.com/s/files/1/0983/1487/9322/files/f3_main-123.webp?v=1768902979",
+    "https://cdn.shopify.com/s/files/1/0983/1487/9322/files/f3_copy.webp?v=1775122349",
+    "https://cdn.shopify.com/s/files/1/0983/1487/9322/files/NinebotF3E.webp?v=1775122319",
+    "https://cdn.shopify.com/s/files/1/0983/1487/9322/files/Trottinette-electrique-Segway-Ninebot-F3-E-450-W-Gris-et-Noir_1_copy.webp?v=1775122319",
+    "https://cdn.shopify.com/s/files/1/0983/1487/9322/files/Trottinette-electrique-Segway-Ninebot-F3-E-450-W-Gris-et-Noir_2_copy.webp?v=1775122349",
+    "https://cdn.shopify.com/s/files/1/0983/1487/9322/files/Trottinette-electrique-Segway-Ninebot-F3-E-450-W-Gris-et-Noir_3_copy.webp?v=1775122349",
+    "https://cdn.shopify.com/s/files/1/0983/1487/9322/files/Trottinette-electrique-Segway-Ninebot-F3-E-450-W-Gris-et-Noir_4_copy.webp?v=1775122349"
+   ]
+  },
+  {
+   "id": "de8f0438-2398-4eee-8c02-ab4bfa9040b6",
+   "slug": "vsett-10-plus",
+   "name": "Vsett 10+",
+   "brand": "Vsett",
+   "published": true,
+   "current": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/de8f0438-2398-4eee-8c02-ab4bfa9040b6/1792973123314_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/de8f0438-2398-4eee-8c02-ab4bfa9040b6/1792973125126_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/de8f0438-2398-4eee-8c02-ab4bfa9040b6/1792973127801_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/de8f0438-2398-4eee-8c02-ab4bfa9040b6/1793002801749_0.png"
+   ],
+   "candidates": [
+    "https://vsett-shop.com/wp-content/uploads/2021/02/VSETT-10-PLUS-BIG-DISPLAY.jpeg",
+    "https://vsett-shop.com/wp-content/uploads/2021/02/Big-Display-VSETT-10.jpg",
+    "https://vsett-shop.com/wp-content/uploads/2021/02/VSETT-10-Acceleration-Throttle.avif"
+   ]
+  },
+  {
+   "id": "8060ae3d-dd7a-4d0a-ad85-7deb853e4db4",
+   "slug": "xiaomi-mi-m365",
+   "name": "Xiaomi Mi M365",
+   "brand": "Xiaomi",
+   "published": true,
+   "current": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/8060ae3d-dd7a-4d0a-ad85-7deb853e4db4/1792973241646_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/8060ae3d-dd7a-4d0a-ad85-7deb853e4db4/1792973242903_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/8060ae3d-dd7a-4d0a-ad85-7deb853e4db4/1792973245046_0.png"
+   ],
+   "candidates": []
+  },
+  {
+   "id": "be6176d5-f7eb-43e5-8819-776e5e22470e",
+   "slug": "micro-merlin",
+   "name": "Micro Merlin",
+   "brand": "Micro",
+   "published": true,
+   "current": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/be6176d5-f7eb-43e5-8819-776e5e22470e/1792448425109_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/be6176d5-f7eb-43e5-8819-776e5e22470e/1792448430400_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/be6176d5-f7eb-43e5-8819-776e5e22470e/1792448433414_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/be6176d5-f7eb-43e5-8819-776e5e22470e/1793002808012_0.png"
+   ],
+   "candidates": [
+    "https://media.cdnws.com/_i/21277/fb%7B630%7D-3060/3918/60/trottinette-electrique-legere-micro-merlin.png",
+    "https://media.cdnws.com/_i/21277/3060/3918/60/trottinette-electrique-legere-micro-merlin.png",
+    "https://media.cdnws.com/_i/21277/3061/2521/61/trotinete-electroique-suiss-micro.jpeg",
+    "https://media.cdnws.com/_i/21277/3062/3226/62/trottinette-electrique-suisse-micro-merlin-x4.jpeg",
+    "https://media.cdnws.com/_i/21277/3064/1874/64/large-micro-merlin-black-3.jpeg",
+    "https://media.cdnws.com/_i/21277/3063/136/63/large-micro-merlin-black-2.jpeg",
+    "https://media.cdnws.com/_i/21277/3065/1110/65/large-micro-merlin-black.jpeg"
+   ]
+  },
+  {
+   "id": "54bf549a-8da8-443f-9ec5-3ac0764fdd10",
+   "slug": "yeep-me-120a-pro",
+   "name": "Yeep.me 120a Pro",
+   "brand": "Yeep.me",
+   "published": true,
+   "current": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/54bf549a-8da8-443f-9ec5-3ac0764fdd10/1792973260054_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/54bf549a-8da8-443f-9ec5-3ac0764fdd10/1792973261179_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/54bf549a-8da8-443f-9ec5-3ac0764fdd10/1792973263159_0.png"
+   ],
+   "candidates": []
+  },
+  {
+   "id": "d5eb0e25-9c73-4f0f-9d5c-b1233e156069",
+   "slug": "punk-rider-pro",
+   "name": "Punk Rider Pro",
+   "brand": "Punk",
+   "published": true,
+   "current": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/d5eb0e25-9c73-4f0f-9d5c-b1233e156069/1792872290812_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/d5eb0e25-9c73-4f0f-9d5c-b1233e156069/1792872293200_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/d5eb0e25-9c73-4f0f-9d5c-b1233e156069/1792872288439_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/d5eb0e25-9c73-4f0f-9d5c-b1233e156069/1792872295702_0.png"
+   ],
+   "candidates": [
+    "https://alternative.bike/3344-large_default/punk-rider-pro.jpg",
+    "https://www.gyroroue-shop.fr/wp-content/uploads/2025/05/Punk-rider-pro-trottinette.webp",
+    "https://www.gyroroue-shop.fr/wp-content/uploads/2025/05/Punk-rider-pro.webp",
+    "https://www.gyroroue-shop.fr/wp-content/uploads/2025/05/Punk-rider-pro-double-moteur-1.webp",
+    "https://www.gyroroue-shop.fr/wp-content/uploads/2025/05/Punk-rider-pro-double-moteur-2.webp",
+    "https://www.gyroroue-shop.fr/wp-content/uploads/2025/05/Punk-rider-pro-double-moteur-4.webp",
+    "https://www.gyroroue-shop.fr/wp-content/uploads/2025/05/Punk-rider-pro-double-moteur-app.webp"
+   ]
+  },
+  {
+   "id": "f9309c7c-7589-4a1c-a1ba-9428ef48d6ba",
+   "slug": "beaster-bs65",
+   "name": "Beaster BS65",
+   "brand": "Beaster",
+   "published": true,
+   "current": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/f9309c7c-7589-4a1c-a1ba-9428ef48d6ba/1792971684203_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/f9309c7c-7589-4a1c-a1ba-9428ef48d6ba/1792971686609_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/f9309c7c-7589-4a1c-a1ba-9428ef48d6ba/1792971689633_0.png"
+   ],
+   "candidates": [
+    "https://images.morele.net/i1064/14076309_0_i1064.jpg"
+   ]
+  },
+  {
+   "id": "70da46ff-7b49-4173-b3aa-cf257ba46f0d",
+   "slug": "yeep-me-100a-start",
+   "name": "Yeep.me 100a start",
+   "brand": "Yeep.me",
+   "published": true,
+   "current": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/70da46ff-7b49-4173-b3aa-cf257ba46f0d/1792872634728_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/70da46ff-7b49-4173-b3aa-cf257ba46f0d/1792872636467_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/70da46ff-7b49-4173-b3aa-cf257ba46f0d/1792872638920_0.png"
+   ],
+   "candidates": [
+    "https://yeep.me/3808-thickbox_default/yeepme-100a-start.jpg"
+   ]
+  },
+  {
+   "id": "94e0f4a9-7f7b-4d00-aafd-9a284f08cfd5",
+   "slug": "urbanglide-ecross-pro-boost-2",
+   "name": "Urbanglide eCross Pro Boost 2",
+   "brand": "Urbanglide",
+   "published": true,
+   "current": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/94e0f4a9-7f7b-4d00-aafd-9a284f08cfd5/1792450381656_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/94e0f4a9-7f7b-4d00-aafd-9a284f08cfd5/1792450383832_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/94e0f4a9-7f7b-4d00-aafd-9a284f08cfd5/1792450388982_0.png"
+   ],
+   "candidates": [
+    "http://fixwheel.fr/cdn/shop/files/URBANGLIDEEcrossproboost2.png?v=1764350494",
+    "https://fixwheel.fr/cdn/shop/files/URBANGLIDEEcrossproboost2.png?v=1764350494&width=1920",
+    "https://cdn.shopify.com/s/files/1/0660/2856/8844/files/URBANGLIDEEcrossproboost2.png?v=1764350494",
+    "https://cdn.shopify.com/s/files/1/0660/2856/8844/files/URBANGLIDEEcrossproboost2_2.png?v=1764350497",
+    "https://cdn.shopify.com/s/files/1/0660/2856/8844/files/URBANGLIDEEcrossproboost2_3.png?v=1764350498",
+    "https://cdn.shopify.com/s/files/1/0660/2856/8844/files/URBANGLIDEEcrossproboost2_4.png?v=1764350499",
+    "https://cdn.shopify.com/s/files/1/0660/2856/8844/files/URBANGLIDEEcrossproboost2_5.png?v=1764350502"
+   ]
+  },
+  {
+   "id": "36612275-ca14-4d62-97df-ba9cc2904302",
+   "slug": "speedway-mini-4-pro-lite",
+   "name": "Speedway Mini 4 Pro Lite",
+   "brand": "Speedway",
+   "published": true,
+   "current": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/36612275-ca14-4d62-97df-ba9cc2904302/1792973005492_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/36612275-ca14-4d62-97df-ba9cc2904302/1792973006876_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/36612275-ca14-4d62-97df-ba9cc2904302/1792973009165_0.png"
+   ],
+   "candidates": [
+    "https://funtrott.fr/684-large_default/trottinette-electrique-speedway-mini-4-pro-lite.jpg",
+    "https://funtrott.fr/684-home_default/trottinette-electrique-speedway-mini-4-pro-lite.jpg"
+   ]
+  },
+  {
+   "id": "0a1cc6b1-f943-4654-b9cd-3eed09bd2c03",
+   "slug": "kukirin-t4",
+   "name": "Kukirin T4",
+   "brand": "Kukirin",
+   "published": true,
+   "current": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/0a1cc6b1-f943-4654-b9cd-3eed09bd2c03/1792972484771_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/0a1cc6b1-f943-4654-b9cd-3eed09bd2c03/1792972486215_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/0a1cc6b1-f943-4654-b9cd-3eed09bd2c03/1792972487833_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/0a1cc6b1-f943-4654-b9cd-3eed09bd2c03/1792972489734_0.png"
+   ],
+   "candidates": []
+  },
+  {
+   "id": "7f0619e1-3f14-4843-a998-0eea4534f403",
+   "slug": "kingsong-s2-pro",
+   "name": "Kingsong S2 Pro",
+   "brand": "Kingsong",
+   "published": true,
+   "current": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/7f0619e1-3f14-4843-a998-0eea4534f403/1792972390447_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/7f0619e1-3f14-4843-a998-0eea4534f403/1792972391651_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/7f0619e1-3f14-4843-a998-0eea4534f403/1792972393455_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/7f0619e1-3f14-4843-a998-0eea4534f403/1793002505058_0.png"
+   ],
+   "candidates": [
+    "https://media.cdnws.com/_i/21277/fb%7B630%7D-5225/46/27/tropttinette-electrique-kingson-s2-pro-1000w-60v-16ah.png",
+    "https://media.cdnws.com/_i/21277/5225/46/27/tropttinette-electrique-kingson-s2-pro-1000w-60v-16ah.png",
+    "https://media.cdnws.com/_i/21277/5228/3132/30/trottinette-electrique-ks-s2-amortisseur-avant.png",
+    "https://media.cdnws.com/_i/21277/5227/808/29/trottinette-kingsong-s2-pro-frein-disque-avant.png",
+    "https://media.cdnws.com/_i/21277/5226/1215/28/trottinette-kingsong-s2-moteur-1000w-roue-10-pouce.png",
+    "https://www.gyroroue-shop.fr/wp-content/uploads/2022/10/KS-S2-PRO-.png",
+    "https://www.gyroroue-shop.fr/wp-content/uploads/2022/10/trottinette-KS-.png",
+    "https://www.gyroroue-shop.fr/wp-content/uploads/2022/10/trottinette-Kingsong-.png",
+    "https://www.gyroroue-shop.fr/wp-content/uploads/2022/10/KINGSONG-KS-2-PRO-.png",
+    "https://www.gyroroue-shop.fr/wp-content/uploads/2022/10/kingsong-s2-pro-frein-disque-avant.webp"
+   ]
+  },
+  {
+   "id": "104999bf-c796-43b5-833e-d61428b5985e",
+   "slug": "dualtron-victor-luxury-plus",
+   "name": "Dualtron Victor Luxury Plus",
+   "brand": "Dualtron",
+   "published": true,
+   "current": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/104999bf-c796-43b5-833e-d61428b5985e/1792971839042_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/104999bf-c796-43b5-833e-d61428b5985e/1792971840551_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/104999bf-c796-43b5-833e-d61428b5985e/1792971843147_0.png"
+   ],
+   "candidates": [
+    "https://dualtron-store.com/wp-content/uploads/2022/08/Adobe_Express_20250128_1835120_1.png",
+    "http://www.wee-bot.com/cdn/shop/files/Trottinette_Electrique_Dualtron_victor_Luxury_pas_cher_edd971d3-af31-4c1c-ad2d-e873f2c5a463.jpg?v=1786545016",
+    "https://www.wee-bot.com/cdn/shop/files/Trottinette_Electrique_Dualtron_victor_Luxury_pas_cher_edd971d3-af31-4c1c-ad2d-e873f2c5a463_600x600_crop_center.jpg?v=1786545016",
+    "https://www.wee-bot.com/cdn/shop/files/Trottinette_Electrique_Dualtron_victor_Luxury_pas_cher_edd971d3-af31-4c1c-ad2d-e873f2c5a463.jpg?v=1786545016&width=1000",
+    "https://www.wee-bot.com/cdn/shop/files/trottinette-electrique-dualtron-victor-luxury-plus-caracteristiques-techniques.webp?v=1781472437&width=1080",
+    "https://www.wee-bot.com/cdn/shop/files/chargeur-rapide-officiel-offert-dualtron-victor-luxury-plus.png?v=1786709469&width=1080",
+    "https://www.wee-bot.com/cdn/shop/files/trottinette-electrique-dualtron-victor-luxury-plus-points-forts.webp?v=1781472437&width=1080",
+    "https://www.wee-bot.com/cdn/shop/files/trottinette-electrique-dualtron-victor-luxury-plus-pliee-dimensions.webp?v=1781472437&width=1080",
+    "https://www.wee-bot.com/cdn/shop/files/trottinette-electrique-dualtron-victor-luxury-plus-garantie-livraison.webp?v=1781472438&width=1080",
+    "https://www.wee-bot.com/cdn/shop/files/fiche_produit_Dualtron_Victor_Luxury_Plus_copie_jpeg_-min.jpg?v=1766154779&width=1024"
+   ]
+  },
+  {
+   "id": "dfcc6524-1210-443e-8cbc-a90c88087923",
+   "slug": "ninebot-e25e",
+   "name": "Ninebot E25E",
+   "brand": "Ninebot",
+   "published": true,
+   "current": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/dfcc6524-1210-443e-8cbc-a90c88087923/1792972716497_0.png"
+   ],
+   "candidates": []
+  },
+  {
+   "id": "d9e58b4e-75a9-4a66-b11d-d0ceff901321",
+   "slug": "e-twow-booster-es",
+   "name": "E-Twow Booster ES",
+   "brand": "E-Twow",
+   "published": true,
+   "current": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/d9e58b4e-75a9-4a66-b11d-d0ceff901321/1792971886009_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/d9e58b4e-75a9-4a66-b11d-d0ceff901321/1792971887651_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/d9e58b4e-75a9-4a66-b11d-d0ceff901321/1792971890255_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/d9e58b4e-75a9-4a66-b11d-d0ceff901321/1792971892366_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/d9e58b4e-75a9-4a66-b11d-d0ceff901321/1792971895435_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/d9e58b4e-75a9-4a66-b11d-d0ceff901321/1792971897663_0.png"
+   ],
+   "candidates": [
+    "https://media.cdnws.com/_i/21277/fb%7B630%7D-4230/2242/32/trottinette-electrique-e-twow-booster-s-plus-confort-2020.png",
+    "https://media.cdnws.com/_i/21277/4230/2242/32/trottinette-electrique-e-twow-booster-s-plus-confort-2020.png",
+    "https://media.cdnws.com/_i/21277/4452/579/56/etwow-booster-s-plus-confort-pliee-mobilityurban.png",
+    "https://media.cdnws.com/_i/21277/4326/199/29/version-premium.jpeg"
+   ]
+  },
+  {
+   "id": "3b4f4646-de12-4670-a6ef-72ac6d79b9a7",
+   "slug": "weped-fold-11",
+   "name": "Weped Fold 11",
+   "brand": "Weped",
+   "published": true,
+   "current": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/3b4f4646-de12-4670-a6ef-72ac6d79b9a7/1792444668530_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/3b4f4646-de12-4670-a6ef-72ac6d79b9a7/1792444670452_0.png"
+   ],
+   "candidates": [
+    "http://pietechnologie.com/cdn/shop/products/trottinette-electrique-weped-fold-11.jpg?v=1632923311",
+    "http://pietechnologie.com/cdn/shop/products/trottinette-electrique-weped-fold-11_1200x1200.jpg?v=1632923311",
+    "https://pietechnologie.com/cdn/shop/products/trottinette-electrique-weped-fold-11.jpg?v=1632923311",
+    "https://pietechnologie.com/cdn/shop/products/trottinette-electrique-weped-fold-11_x100.jpg?v=1632923311",
+    "https://cdn.shopify.com/s/files/1/0506/5113/6182/products/trottinette-electrique-weped-fold-11.jpg?v=1632923311"
+   ]
+  },
+  {
+   "id": "ce627e3b-d3df-4ee2-a99e-08233d1d09b2",
+   "slug": "ninebot-e3-pro-e",
+   "name": "Ninebot E3 Pro E",
+   "brand": "Ninebot",
+   "published": true,
+   "current": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/ce627e3b-d3df-4ee2-a99e-08233d1d09b2/1792972725368_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/ce627e3b-d3df-4ee2-a99e-08233d1d09b2/1792972726798_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/ce627e3b-d3df-4ee2-a99e-08233d1d09b2/1792972728272_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/ce627e3b-d3df-4ee2-a99e-08233d1d09b2/1792972730020_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/ce627e3b-d3df-4ee2-a99e-08233d1d09b2/1792972733058_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/ce627e3b-d3df-4ee2-a99e-08233d1d09b2/1792972735024_0.png"
+   ],
+   "candidates": [
+    "https://www.segwayfrance.com/cdn/shop/files/e3_-2_1copy.webp?v=1769001541",
+    "https://cdn.shopify.com/s/files/1/0983/1487/9322/files/e3_-2_1copy.webp?v=1769001541",
+    "https://cdn.shopify.com/s/files/1/0983/1487/9322/files/e3_-1-123copy.webp?v=1769001541",
+    "https://cdn.shopify.com/s/files/1/0983/1487/9322/files/e3_-3_1copy.webp?v=1769001541",
+    "https://cdn.shopify.com/s/files/1/0983/1487/9322/files/Ninebot_E3.webp?v=1775122425",
+    "https://cdn.shopify.com/s/files/1/0983/1487/9322/files/Trottinette_electrique_Segway_Ninebot_E3_Pro_E_02_copy.webp?v=1775122425",
+    "https://cdn.shopify.com/s/files/1/0983/1487/9322/files/TrottinetteelectriqueSegwayNinebotE3ProE06copy.webp?v=1775122425",
+    "https://cdn.shopify.com/s/files/1/0983/1487/9322/files/TrottinetteelectriqueSegwayNinebotE3ProE13copy.webp?v=1775122425",
+    "https://cdn.shopify.com/s/files/1/0983/1487/9322/files/TrottinetteelectriqueSegwayNinebotE3ProE11copy.webp?v=1775122425",
+    "https://cdn.shopify.com/s/files/1/0983/1487/9322/files/TrottinetteelectriqueSegwayNinebotE3ProE12copy.webp?v=1775122425"
+   ]
+  },
+  {
+   "id": "759fe38e-1e1a-4626-a328-0d52f6e690f3",
+   "slug": "ninebot-f2-e-ii",
+   "name": "Ninebot F2 E II",
+   "brand": "Ninebot",
+   "published": true,
+   "current": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/759fe38e-1e1a-4626-a328-0d52f6e690f3/1792972746141_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/759fe38e-1e1a-4626-a328-0d52f6e690f3/1793002633008_0.png"
+   ],
+   "candidates": [
+    "https://www.segwayfrance.com/cdn/shop/files/F2-Pro-II-side-viewcopy.webp?v=1769087161",
+    "https://cdn.shopify.com/s/files/1/0983/1487/9322/files/F2-Pro-II-side-viewcopy.webp?v=1769087161",
+    "https://cdn.shopify.com/s/files/1/0983/1487/9322/files/2_11copy.webp?v=1769087161",
+    "https://cdn.shopify.com/s/files/1/0983/1487/9322/files/4_5copy.webp?v=1769087161",
+    "https://cdn.shopify.com/s/files/1/0983/1487/9322/files/F2-II-Pro-Block-12-desktop_1_copy_4cc3c2fb-7c38-4284-b13c-61efb28fd572.webp?v=1769087120",
+    "https://cdn.shopify.com/s/files/1/0983/1487/9322/files/F2-II-Pro-Block-9-desktop_1_copy.webp?v=1769087125",
+    "https://cdn.shopify.com/s/files/1/0983/1487/9322/files/F2-II-Block-1-Imagecopy.webp?v=1769087139",
+    "https://cdn.shopify.com/s/files/1/0983/1487/9322/files/01986980-dc98-7a82-b748-6f8feefb7b29_2880copy.webp?v=1769087158"
+   ]
+  },
+  {
+   "id": "eb72ecfb-0239-4ab4-b0aa-f5062dc03e41",
+   "slug": "ninebot-max-g3-pro-e",
+   "name": "Ninebot MAX G3 Pro E",
+   "brand": "Ninebot",
+   "published": true,
+   "current": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/eb72ecfb-0239-4ab4-b0aa-f5062dc03e41/1792972773352_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/eb72ecfb-0239-4ab4-b0aa-f5062dc03e41/1792972774753_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/eb72ecfb-0239-4ab4-b0aa-f5062dc03e41/1792972776461_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/eb72ecfb-0239-4ab4-b0aa-f5062dc03e41/1792972778002_0.png"
+   ],
+   "candidates": []
+  },
+  {
+   "id": "065656fc-91c8-489d-b512-3ac9a7786b6d",
+   "slug": "segway-gt3-pro",
+   "name": "Segway GT3 Pro",
+   "brand": "Segway",
+   "published": true,
+   "current": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/065656fc-91c8-489d-b512-3ac9a7786b6d/1792972902412_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/065656fc-91c8-489d-b512-3ac9a7786b6d/1792972903759_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/065656fc-91c8-489d-b512-3ac9a7786b6d/1792972905566_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/065656fc-91c8-489d-b512-3ac9a7786b6d/1792972907735_0.png"
+   ],
+   "candidates": [
+    "https://www.segwayfrance.com/cdn/shop/files/gt3_pro_image.webp?v=1775228276",
+    "https://cdn.shopify.com/s/files/1/0983/1487/9322/files/gt3_pro_image.webp?v=1775228276",
+    "https://cdn.shopify.com/s/files/1/0983/1487/9322/files/gt3procopy.webp?v=1775228276",
+    "https://cdn.shopify.com/s/files/1/0983/1487/9322/files/gt3-pro-3_1copy.webp?v=1775228276",
+    "https://cdn.shopify.com/s/files/1/0983/1487/9322/files/gt3-pro-2_1copy.webp?v=1775228276",
+    "https://cdn.shopify.com/s/files/1/0983/1487/9322/files/gt3_pro-v2_copy.webp?v=1775228276",
+    "https://cdn.shopify.com/s/files/1/0983/1487/9322/files/gt3_pro__lifestyle_picture__guy_riding_dusty_rear_sand-2140x1427_72.webp?v=1775228276",
+    "https://cdn.shopify.com/s/files/1/0983/1487/9322/files/segway-gt3-ecran.webp?v=1775228276",
+    "https://cdn.shopify.com/s/files/1/0983/1487/9322/files/segway-gt3-guidon.webp?v=1775228276",
+    "https://cdn.shopify.com/s/files/1/0983/1487/9322/files/segway-gt3-pro-e-moteur.webp?v=1775228276"
+   ]
+  },
+  {
+   "id": "529da8e2-907a-40a4-8c25-d198197bd323",
+   "slug": "micro-explorer",
+   "name": "Micro Explorer",
+   "brand": "Micro",
+   "published": true,
+   "current": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/529da8e2-907a-40a4-8c25-d198197bd323/1792443048324_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/529da8e2-907a-40a4-8c25-d198197bd323/1792443046747_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/529da8e2-907a-40a4-8c25-d198197bd323/1792878288453_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/529da8e2-907a-40a4-8c25-d198197bd323/1792878290240_0.png"
+   ],
+   "candidates": []
+  },
+  {
+   "id": "3052f999-de22-49ef-ae65-92266b895003",
+   "slug": "segway-p65",
+   "name": "Segway P65",
+   "brand": "Segway",
+   "published": true,
+   "current": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/3052f999-de22-49ef-ae65-92266b895003/1792972916786_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/3052f999-de22-49ef-ae65-92266b895003/1792972918109_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/3052f999-de22-49ef-ae65-92266b895003/1792972920511_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/3052f999-de22-49ef-ae65-92266b895003/1792972922762_0.png"
+   ],
+   "candidates": [
+    "https://funtrott.fr/5300-large_default/-trottnette-electrique-segway-kickscooter-p65e.jpg",
+    "https://funtrott.fr/5300-home_default/-trottnette-electrique-segway-kickscooter-p65e.jpg"
+   ]
+  },
+  {
+   "id": "20900c0e-d3b7-4838-8338-b21cf2f94f3d",
+   "slug": "hikerboy-brio",
+   "name": "Hikerboy Brio",
+   "brand": "Hikerboy",
+   "published": true,
+   "current": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/20900c0e-d3b7-4838-8338-b21cf2f94f3d/1792972037472_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/20900c0e-d3b7-4838-8338-b21cf2f94f3d/1792972039183_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/20900c0e-d3b7-4838-8338-b21cf2f94f3d/1792972041638_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/20900c0e-d3b7-4838-8338-b21cf2f94f3d/1792972044146_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/20900c0e-d3b7-4838-8338-b21cf2f94f3d/1792972046269_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/20900c0e-d3b7-4838-8338-b21cf2f94f3d/1792972048484_0.png"
+   ],
+   "candidates": [
+    "https://media.cdnws.com/_i/21277/fb%7B630%7D-5321/1221/24/trottinette-electrique-hikerboy-brio-jaune.png",
+    "https://media.cdnws.com/_i/21277/5321/1221/24/trottinette-electrique-hikerboy-brio-jaune.png",
+    "https://media.cdnws.com/_i/21277/5320/3836/23/trottinette-electique-hikerboy-brio-rouge-10-pouce.png",
+    "https://d2j6dbq0eux0bg.cloudfront.net/images/26383884/5065711088.jpg",
+    "https://www.amhma.fr/store/HIKERBOY-Brio-36V-7-8Ah-p769352063",
+    "https://speedbikes.fr/wp-content/uploads/2023/02/trottinette-electrique-hikerboy-brio-jaune.png",
+    "https://speedbikes.fr/wp-content/uploads/2023/02/hikerboy-brio-1.png",
+    "https://speedbikes.fr/wp-content/uploads/2023/02/trottinette-electrique-hikerboy-brio-bleu-pneu-10-pouces.png.webp",
+    "https://speedbikes.fr/produit/trottinette-electrique-hikerboy-brio/%7B%7Bdata.full_src%7D%7D"
+   ]
+  },
+  {
+   "id": "0586772c-9e2b-4285-a3df-409f18a6056f",
+   "slug": "iscooter-ix7-pro",
+   "name": "iScooter iX7 Pro",
+   "brand": "iScooter",
+   "published": true,
+   "current": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/0586772c-9e2b-4285-a3df-409f18a6056f/1792447043335_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/0586772c-9e2b-4285-a3df-409f18a6056f/1792447045468_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/0586772c-9e2b-4285-a3df-409f18a6056f/1792447047710_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/0586772c-9e2b-4285-a3df-409f18a6056f/1792447050589_0.png"
+   ],
+   "candidates": [
+    "http://www.iscooter.fr/cdn/shop/files/iX7pro_10.png?v=1767772000",
+    "https://www.iscooter.fr/cdn/shop/files/iX7pro_10.png?v=1767772000&width=1920",
+    "https://www.iscooter.fr/cdn/shop/files/ix7prowithhelmetandbag_430x_39420f1b-f692-4ab9-be36-880499f230b4.webp?v=1767772003&width=1920",
+    "https://www.iscooter.fr/cdn/shop/files/ix7pro2pcs_430x_d5374260-07f6-4fda-92b8-5e6e05cd11e7.webp?v=1767771999&width=1920",
+    "https://cdn.shopify.com/s/files/1/0596/7570/5419/files/iX7pro_10.png?v=1767772000",
+    "https://cdn.shopify.com/s/files/1/0596/7570/5419/files/iX7pro_1_1fdcdb1d-dbca-4e6c-89fa-9875fdd55016.png?v=1767772013",
+    "https://cdn.shopify.com/s/files/1/0596/7570/5419/files/iX7pro_9.png?v=1767772005",
+    "https://cdn.shopify.com/s/files/1/0596/7570/5419/files/iX7pro_7.png?v=1767772000",
+    "https://cdn.shopify.com/s/files/1/0596/7570/5419/files/iX7pro_6.png?v=1767772001",
+    "https://cdn.shopify.com/s/files/1/0596/7570/5419/files/iX7pro_3.png?v=1767772001"
+   ]
+  },
+  {
+   "id": "aea4bc9d-a5f3-49d6-92cf-5ea70532b4a7",
+   "slug": "urbanglide-all-road-5",
+   "name": "Urbanglide All Road 5",
+   "brand": "Urbanglide",
+   "published": true,
+   "current": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/aea4bc9d-a5f3-49d6-92cf-5ea70532b4a7/1792973060203_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/aea4bc9d-a5f3-49d6-92cf-5ea70532b4a7/1792973061837_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/aea4bc9d-a5f3-49d6-92cf-5ea70532b4a7/1793002707078_0.png"
+   ],
+   "candidates": [
+    "https://urbanglide.com/wp-content/uploads/2022/06/RIDE-AR5-2.png"
+   ]
+  },
+  {
+   "id": "49be692c-5729-4021-b3f3-a3928a3e4dc9",
+   "slug": "weped-ss-t",
+   "name": "Weped SS-T",
+   "brand": "Weped",
+   "published": true,
+   "current": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/49be692c-5729-4021-b3f3-a3928a3e4dc9/1792973167438_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/49be692c-5729-4021-b3f3-a3928a3e4dc9/1792973168954_0.png"
+   ],
+   "candidates": [
+    "http://pietechnologie.com/cdn/shop/products/weped-sst.jpg?v=1669347206",
+    "http://pietechnologie.com/cdn/shop/products/weped-sst_1200x1200.jpg?v=1669347206",
+    "http://pietechnologie.com/cdn/shop/products/TrottinetteelectriqueWepedSS-T30000w-72V45Ah-PIETECHNOLOGIE-min_1200x1200.png?v=1669347206",
+    "https://pietechnologie.com/cdn/shop/products/weped-sst.jpg?v=1669347206",
+    "https://pietechnologie.com/cdn/shop/products/TrottinetteelectriqueWepedSS-T30000w-72V45Ah-PIETECHNOLOGIE-min.png?v=1669347206",
+    "https://pietechnologie.com/cdn/shop/products/weped-sst_x100.jpg?v=1669347206",
+    "https://cdn.shopify.com/s/files/1/0506/5113/6182/products/weped-sst.jpg?v=1669347206",
+    "https://cdn.shopify.com/s/files/1/0506/5113/6182/products/TrottinetteelectriqueWepedSS-T30000w-72V45Ah-PIETECHNOLOGIE-min.png?v=1669347206"
+   ]
+  },
+  {
+   "id": "1e9a0d8c-8850-41fa-b877-4708db1dd0a9",
+   "slug": "oxelo-sd500e",
+   "name": "Oxelo SD500E",
+   "brand": "Oxelo",
+   "published": true,
+   "current": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/1e9a0d8c-8850-41fa-b877-4708db1dd0a9/1792449340013_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/1e9a0d8c-8850-41fa-b877-4708db1dd0a9/1792449342030_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/1e9a0d8c-8850-41fa-b877-4708db1dd0a9/1792449345064_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/1e9a0d8c-8850-41fa-b877-4708db1dd0a9/1792449350209_0.png"
+   ],
+   "candidates": []
+  },
+  {
+   "id": "8498fb4c-37d3-4308-9cf2-08b786c2c080",
+   "slug": "urbanglide-all-road-6-pro",
+   "name": "Urbanglide All Road 6 Pro",
+   "brand": "Urbanglide",
+   "published": true,
+   "current": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/8498fb4c-37d3-4308-9cf2-08b786c2c080/1792973073779_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/8498fb4c-37d3-4308-9cf2-08b786c2c080/1792973075106_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/8498fb4c-37d3-4308-9cf2-08b786c2c080/1792973077239_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/8498fb4c-37d3-4308-9cf2-08b786c2c080/1792973079669_0.png"
+   ],
+   "candidates": [
+    "https://urbanglide.com/wp-content/uploads/2025/04/AR6PRO.webp"
+   ]
+  },
+  {
+   "id": "5e857319-cb66-42ea-af2f-9636fb016b7c",
+   "slug": "urbanglide-ecross-duo",
+   "name": "Urbanglide eCross Duo",
+   "brand": "Urbanglide",
+   "published": true,
+   "current": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/5e857319-cb66-42ea-af2f-9636fb016b7c/1792973082448_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/5e857319-cb66-42ea-af2f-9636fb016b7c/1792973083502_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/5e857319-cb66-42ea-af2f-9636fb016b7c/1792973085367_0.png"
+   ],
+   "candidates": [
+    "https://urbanglide.com/wp-content/uploads/2025/02/ECROSSDUO.png",
+    "http://fixwheel.fr/cdn/shop/files/UrbanglideEcrossOne.png?v=1766489737",
+    "https://fixwheel.fr/cdn/shop/files/UrbanglideEcrossOne.png?v=1766489737&width=1920",
+    "https://cdn.shopify.com/s/files/1/0660/2856/8844/files/UrbanglideEcrossOne.png?v=1766489737",
+    "https://cdn.shopify.com/s/files/1/0660/2856/8844/files/UrbanglideEcrossOne-3.webp?v=1766489741",
+    "https://cdn.shopify.com/s/files/1/0660/2856/8844/files/UrbanglideEcrossOne-4.webp?v=1766489747",
+    "https://cdn.shopify.com/s/files/1/0660/2856/8844/files/UrbanglideEcrossOne-5.webp?v=1766489753",
+    "https://cdn.shopify.com/s/files/1/0660/2856/8844/files/UrbanglideEcrossOne-6.webp?v=1766489759",
+    "https://cdn.shopify.com/s/files/1/0660/2856/8844/files/UrbanglideEcrossOne-7.webp?v=1766489765",
+    "https://cdn.shopify.com/s/files/1/0660/2856/8844/files/UrbanglideEcrossOne-8.webp?v=1766489772"
+   ]
+  },
+  {
+   "id": "f76f19df-e126-4546-961f-f3477da208d8",
+   "slug": "e-twow-tanktorq-tk5",
+   "name": "E-Twow TankTorq TK5",
+   "brand": "E-Twow",
+   "published": true,
+   "current": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/f76f19df-e126-4546-961f-f3477da208d8/1792441519757_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/f76f19df-e126-4546-961f-f3477da208d8/1792441521016_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/f76f19df-e126-4546-961f-f3477da208d8/1792441523078_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/f76f19df-e126-4546-961f-f3477da208d8/1792441526594_0.png"
+   ],
+   "candidates": [
+    "http://wellbots.fr/cdn/shop/files/TK5LightGray.webp?v=1758705720",
+    "https://wellbots.fr/cdn/shop/files/TK5LightGray_600x600_crop_center.webp?v=1758705720",
+    "https://wellbots.fr/cdn/shop/files/TK5LightGray.webp?v=1758705720&width=1024",
+    "https://cdn.shopify.com/s/files/1/0689/5308/0119/files/TK5LightGray.webp?v=1758705720",
+    "https://cdn.shopify.com/s/files/1/0689/5308/0119/files/3d60a6dc63067cfd1241e73437f7dce2.webp?v=1758705720",
+    "https://cdn.shopify.com/s/files/1/0689/5308/0119/files/5b0dca519f3692f1d91378be1f6b1da8.webp?v=1758705720",
+    "https://cdn.shopify.com/s/files/1/0689/5308/0119/files/TK5GreenArmy.webp?v=1758705720",
+    "https://cdn.shopify.com/s/files/1/0689/5308/0119/files/TK5LakeBlue.webp?v=1758705720",
+    "https://cdn.shopify.com/s/files/1/0689/5308/0119/files/TK5Orange.webp?v=1758705720",
+    "https://cdn.shopify.com/s/files/1/0689/5308/0119/files/tk5_photo2_31b0df0d-e519-4f4a-af58-e301b8f39a04.webp?v=1758705720"
+   ]
+  },
+  {
+   "id": "3fefe1e1-ece6-4334-9302-29089eb6cb33",
+   "slug": "kugoo-g2-max",
+   "name": "Kugoo G2 Max",
+   "brand": "Kugoo",
+   "published": true,
+   "current": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/3fefe1e1-ece6-4334-9302-29089eb6cb33/1792872049985_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/3fefe1e1-ece6-4334-9302-29089eb6cb33/1792872052145_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/3fefe1e1-ece6-4334-9302-29089eb6cb33/1792872054786_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/3fefe1e1-ece6-4334-9302-29089eb6cb33/1792872057146_0.png"
+   ],
+   "candidates": [
+    "https://www.kukirin-officiel.com/cdn/shop/files/trottinette-electrique-kukirin-g2-max-1000w-80-km-dautonomie-batterie-48v-3067628.webp?v=1764467643",
+    "https://cdn.shopify.com/s/files/1/0310/0855/5140/files/trottinette-electrique-kukirin-g2-max-1000w-80-km-dautonomie-batterie-48v-3067628.webp?v=1764467643",
+    "https://cdn.shopify.com/s/files/1/0310/0855/5140/files/trottinette-electrique-kukirin-g2-max-1000w-80-km-dautonomie-batterie-48v-8217091.webp?v=1764467645",
+    "https://cdn.shopify.com/s/files/1/0310/0855/5140/files/G2_Pro_G2_Max_display.jpg?v=1776583019",
+    "https://cdn.shopify.com/s/files/1/0310/0855/5140/files/trottinette-electrique-kukirin-g2-max-1000w-80-km-dautonomie-batterie-48v-3000510.webp?v=1776583019",
+    "https://cdn.shopify.com/s/files/1/0310/0855/5140/files/G2_Max_scooters_2.jpg?v=1776583019",
+    "https://cdn.shopify.com/s/files/1/0310/0855/5140/files/trottinette-electrique-kukirin-g2-max-1000w-80-km-dautonomie-batterie-48v-3954169.webp?v=1776583019",
+    "https://cdn.shopify.com/s/files/1/0310/0855/5140/files/trottinette-electrique-kukirin-g2-max-1000w-80-km-dautonomie-batterie-48v-2855156.webp?v=1776583019",
+    "https://cdn.shopify.com/s/files/1/0310/0855/5140/files/trottinette-electrique-kukirin-g2-max-1000w-80-km-dautonomie-batterie-48v-5015421.webp?v=1776583019",
+    "https://cdn.shopify.com/s/files/1/0310/0855/5140/files/trottinette-electrique-kukirin-g2-max-1000w-80-km-dautonomie-batterie-48v-3721277.webp?v=1776583019"
+   ]
+  },
+  {
+   "id": "9177eb3f-dbce-4419-a91b-1edd83458561",
+   "slug": "joyor-a5",
+   "name": "Joyor A5",
+   "brand": "Joyor",
+   "published": true,
+   "current": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/9177eb3f-dbce-4419-a91b-1edd83458561/1792972246702_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/9177eb3f-dbce-4419-a91b-1edd83458561/1792972248755_0.png"
+   ],
+   "candidates": [
+    "https://imagedelivery.net/JAV112JY973Crznn4xb8Sg/18062118-ba67-45d6-04e4-59d85f143a00/public",
+    "https://imagedelivery.net/JAV112JY973Crznn4xb8Sg/18062118-ba67-45d6-04e4-59d85f143a00/mobile"
+   ]
+  },
+  {
+   "id": "d7796d17-9beb-4612-a9ae-218c73c08bde",
+   "slug": "punk-rider",
+   "name": "Punk Rider",
+   "brand": "Punk",
+   "published": true,
+   "current": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/d7796d17-9beb-4612-a9ae-218c73c08bde/1792872277834_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/d7796d17-9beb-4612-a9ae-218c73c08bde/1792872275360_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/d7796d17-9beb-4612-a9ae-218c73c08bde/1792872280057_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/d7796d17-9beb-4612-a9ae-218c73c08bde/1792872282682_0.png"
+   ],
+   "candidates": [
+    "http://punkelectric.eu/cdn/shop/files/pr-10.png?v=1773231981",
+    "https://punkelectric.eu/cdn/shop/files/pr-10.png?v=1773231981&width=1920",
+    "https://cdn.shopify.com/s/files/1/0875/9895/6869/files/pr-10.png?v=1773231981",
+    "https://cdn.shopify.com/s/files/1/0875/9895/6869/files/IMG_5194.jpg?v=1775711751",
+    "https://cdn.shopify.com/s/files/1/0875/9895/6869/files/d191252687a9b6823bdd319e3279dfdace10e628.jpg?v=1775711751",
+    "https://cdn.shopify.com/s/files/1/0875/9895/6869/files/9d9c7b30ea55a2aa508f5b87d3357090109b431f.jpg?v=1775711751",
+    "https://cdn.shopify.com/s/files/1/0875/9895/6869/files/pr-1.png?v=1775711751",
+    "https://cdn.shopify.com/s/files/1/0875/9895/6869/files/PHOTO-2024-11-07-08-24-10_2.jpg?v=1775711751",
+    "https://cdn.shopify.com/s/files/1/0875/9895/6869/files/02_UGC.png?v=1775711751",
+    "https://cdn.shopify.com/s/files/1/0875/9895/6869/files/UGC_1.png?v=1775711751"
+   ]
+  },
+  {
+   "id": "cfa031f8-814a-443f-a496-b319a8bcea6b",
+   "slug": "inmotion-c1-air-pro",
+   "name": "Inmotion C1 Air Pro",
+   "brand": "Inmotion",
+   "published": true,
+   "current": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/cfa031f8-814a-443f-a496-b319a8bcea6b/1792446696861_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/cfa031f8-814a-443f-a496-b319a8bcea6b/1792446699106_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/cfa031f8-814a-443f-a496-b319a8bcea6b/1792446701627_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/cfa031f8-814a-443f-a496-b319a8bcea6b/1793002788147_0.png"
+   ],
+   "candidates": [
+    "https://media.cdnws.com/_i/21277/fb%7B630%7D-5287/2849/89/trottinette-electrique-adulte-inmotion-c1-air-pro.jpeg",
+    "https://media.cdnws.com/_i/21277/5287/2849/89/trottinette-electrique-adulte-inmotion-c1-air-pro.jpeg",
+    "https://media.cdnws.com/_i/21277/5290/969/92/trottinette-electrique-inmotion-c1-air-pro-noir.png",
+    "https://media.cdnws.com/_i/21277/5289/357/91/guidon-trottinette-c1-air-pro-inmotion.png",
+    "https://media.cdnws.com/_i/21277/5288/2636/90/roue-10-c1-air-pro-inmotion-trottinette.jpeg"
+   ]
+  },
+  {
+   "id": "24091119-b9b6-4edb-ab5c-a0676b35120b",
+   "slug": "beaster-bs09",
+   "name": "Beaster BS09",
+   "brand": "Beaster",
+   "published": true,
+   "current": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/24091119-b9b6-4edb-ab5c-a0676b35120b/1792440981808_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/24091119-b9b6-4edb-ab5c-a0676b35120b/1792440982939_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/24091119-b9b6-4edb-ab5c-a0676b35120b/1792440984795_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/24091119-b9b6-4edb-ab5c-a0676b35120b/1792440986794_0.png"
+   ],
+   "candidates": []
+  },
+  {
+   "id": "90380480-0ee5-4e9a-92c6-ce6e060a34d1",
+   "slug": "aprilia-esr2-evo",
+   "name": "Aprilia eSR2 Evo",
+   "brand": "Aprilia",
+   "published": true,
+   "current": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/90380480-0ee5-4e9a-92c6-ce6e060a34d1/1792440951205_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/90380480-0ee5-4e9a-92c6-ce6e060a34d1/1792440952763_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/90380480-0ee5-4e9a-92c6-ce6e060a34d1/1792867074744_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/90380480-0ee5-4e9a-92c6-ce6e060a34d1/1792878208806_0.png"
+   ],
+   "candidates": [
+    "https://cdn.cleanrider.com/uploads/2022/08/aprilia-esr2-evo.jpg"
+   ]
+  },
+  {
+   "id": "45a25b15-ef53-4237-a8d5-ec1dde442b7e",
+   "slug": "ninebot-f2-plus",
+   "name": "Ninebot F2 Plus",
+   "brand": "Ninebot",
+   "published": true,
+   "current": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/45a25b15-ef53-4237-a8d5-ec1dde442b7e/1792972747620_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/45a25b15-ef53-4237-a8d5-ec1dde442b7e/1793002857924_0.png"
+   ],
+   "candidates": [
+    "https://www.gyroroue-shop.fr/wp-content/uploads/2023/06/Ninebot-KickScooter-F2-E-Powered-by-Segway-2.png",
+    "https://www.gyroroue-shop.fr/wp-content/uploads/2023/06/Ninebot-KickScooter-F2-E-Powered-by-Segway.png",
+    "https://www.gyroroue-shop.fr/wp-content/uploads/2023/06/Ninebot-KickScooter-F2-E-Powered-by-Segway-5.png",
+    "https://www.gyroroue-shop.fr/wp-content/uploads/2023/06/Ninebot-KickScooter-F2-E-Powered-by-Segway-6.png",
+    "https://www.gyroroue-shop.fr/wp-content/uploads/2023/06/Ninebot-KickScooter-F2-E-Powered-by-Segway-4.png",
+    "https://www.gyroroue-shop.fr/wp-content/uploads/2023/06/Ninebot-KickScooter-F2-E-Powered-by-Segway-3.png"
+   ]
+  },
+  {
+   "id": "b50b8790-d064-45cf-ab0b-5e9c17856ac1",
+   "slug": "yeep-me-85a-evo",
+   "name": "Yeep.me 85a Evo",
+   "brand": "Yeep.me",
+   "published": true,
+   "current": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/b50b8790-d064-45cf-ab0b-5e9c17856ac1/1792445020379_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/b50b8790-d064-45cf-ab0b-5e9c17856ac1/1792445021635_0.png"
+   ],
+   "candidates": [
+    "https://yeep.me/4221-thickbox_default/yeepme-85a-evo.jpg"
+   ]
+  },
+  {
+   "id": "f53277fa-ff92-4616-99f7-9948997056bb",
+   "slug": "xiaomi-electric-scooter-4",
+   "name": "Xiaomi Electric Scooter 4",
+   "brand": "Xiaomi",
+   "published": true,
+   "current": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/f53277fa-ff92-4616-99f7-9948997056bb/1792450771980_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/f53277fa-ff92-4616-99f7-9948997056bb/1792450774216_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/f53277fa-ff92-4616-99f7-9948997056bb/1792450776695_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/f53277fa-ff92-4616-99f7-9948997056bb/1792450779765_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/f53277fa-ff92-4616-99f7-9948997056bb/1792450788425_0.png"
+   ],
+   "candidates": [
+    "https://i05.appmifile.com/908_item_fr/11/09/2024/c14d67db4a6ce845b191074449a060e4.png"
+   ]
+  },
+  {
+   "id": "de62fad3-80f7-467a-a5a6-6cd14551aa31",
+   "slug": "xiaomi-electric-scooter-6-max",
+   "name": "Xiaomi Electric Scooter 6 Max",
+   "brand": "Xiaomi",
+   "published": true,
+   "current": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/de62fad3-80f7-467a-a5a6-6cd14551aa31/1792973223341_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/de62fad3-80f7-467a-a5a6-6cd14551aa31/1792973224489_0.png"
+   ],
+   "candidates": [
+    "https://i05.appmifile.com/463_item_fr/10/02/2026/d9b4145174aa69999e33e96ed7c82ee4.png"
+   ]
+  },
+  {
+   "id": "63c093b4-a59c-484e-9fc5-14cd414bc1cd",
+   "slug": "urbanglide-ecross-max-2x2-gen-2",
+   "name": "Urbanglide eCross Max 2x2 Gen 2",
+   "brand": "Urbanglide",
+   "published": true,
+   "current": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/63c093b4-a59c-484e-9fc5-14cd414bc1cd/1792450326031_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/63c093b4-a59c-484e-9fc5-14cd414bc1cd/1792450328627_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/63c093b4-a59c-484e-9fc5-14cd414bc1cd/1792450331470_0.png"
+   ],
+   "candidates": []
+  },
+  {
+   "id": "a9747cc0-ae93-4c67-a689-b3dca3d0cc1b",
+   "slug": "navee-st5-max",
+   "name": "Navee ST5 Max",
+   "brand": "Navee",
+   "published": true,
+   "current": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/a9747cc0-ae93-4c67-a689-b3dca3d0cc1b/1792972673761_0.png"
+   ],
+   "candidates": [
+    "http://naveetech.fr/cdn/shop/files/20251219-153158.webp?v=1785944789&width=2048",
+    "https://naveetech.fr/cdn/shop/files/20251219-153158.webp?v=1785944789&width=1920",
+    "https://cdn.shopify.com/s/files/1/0725/5028/5567/files/20251219-153158.webp?v=1785944789",
+    "https://cdn.shopify.com/s/files/1/0725/5028/5567/files/ST5_Max.webp?v=1788925814",
+    "https://cdn.shopify.com/s/files/1/0725/5028/5567/files/20251219-153216.webp?v=1785944789",
+    "https://cdn.shopify.com/s/files/1/0725/5028/5567/files/20251219-153541.webp?v=1785944789"
+   ]
+  },
+  {
+   "id": "5b052121-6046-4f5a-af4b-4cc004739c3b",
+   "slug": "wispeed-c10-55-max",
+   "name": "Wispeed C10-55 Max",
+   "brand": "Wispeed",
+   "published": true,
+   "current": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/5b052121-6046-4f5a-af4b-4cc004739c3b/1792973188147_0.png"
+   ],
+   "candidates": [
+    "https://media.e.leclerc/3483074000942_1",
+    "https://media.e.leclerc/3483074000942_2",
+    "https://media.e.leclerc/3483074000942_3",
+    "https://media.e.leclerc/3483074000942_4",
+    "https://media.e.leclerc/3483074000942_5",
+    "https://media.e.leclerc/3483074000942_6",
+    "https://media.e.leclerc/3483074000942_7"
+   ]
+  },
+  {
+   "id": "5ce5a58e-d4f7-4916-a51e-4bf16c824109",
+   "slug": "e-twow-tanktorq-tk2",
+   "name": "E-Twow TankTorq TK2",
+   "brand": "E-Twow",
+   "published": true,
+   "current": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/5ce5a58e-d4f7-4916-a51e-4bf16c824109/1792441494330_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/5ce5a58e-d4f7-4916-a51e-4bf16c824109/1792441496274_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/5ce5a58e-d4f7-4916-a51e-4bf16c824109/1792441498006_0.png"
+   ],
+   "candidates": [
+    "http://e-twow.com/cdn/shop/files/e-twow_tk2_main_escooter.png?v=1778740578",
+    "https://e-twow.com/cdn/shop/files/e-twow_tk2_main_escooter.png?v=1778740578&width=1920",
+    "https://e-twow.com/cdn/shop/files/E-TWOW_TK2_ELECTRIC_SCOOTER_gray.png?v=1776330230&width=1920",
+    "https://e-twow.com/cdn/shop/files/01_78d27457-fd59-4116-bacc-e55c5507f7b8.jpg?v=1776330230&width=1920",
+    "https://e-twow.com/cdn/shop/files/IMG_0401.jpg?v=1776330230&width=1920",
+    "https://cdn.shopify.com/s/files/1/0742/6922/9308/files/e-twow_tk2_main_escooter.png?v=1778740578",
+    "https://cdn.shopify.com/s/files/1/0742/6922/9308/files/E-TWOW_TK2_ELECTRIC_SCOOTER_gray.png?v=1776330230",
+    "https://cdn.shopify.com/s/files/1/0742/6922/9308/files/01_78d27457-fd59-4116-bacc-e55c5507f7b8.jpg?v=1776330230",
+    "https://cdn.shopify.com/s/files/1/0742/6922/9308/files/IMG_0401.jpg?v=1776330230",
+    "https://cdn.shopify.com/s/files/1/0742/6922/9308/files/E-TWOW_TK2_ELECTRIC_SCOOTER_gray1.jpg?v=1778740607"
+   ]
+  },
+  {
+   "id": "3dc702ad-5be7-4d1c-8a7f-49feb69f2f8e",
+   "slug": "jeep-adventurer",
+   "name": "Jeep Adventurer",
+   "brand": "Jeep",
+   "published": true,
+   "current": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/3dc702ad-5be7-4d1c-8a7f-49feb69f2f8e/1792447235082_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/3dc702ad-5be7-4d1c-8a7f-49feb69f2f8e/1792447237100_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/3dc702ad-5be7-4d1c-8a7f-49feb69f2f8e/1792447239431_0.png"
+   ],
+   "candidates": [
+    "https://www.jeeperstore.com/media/catalog/product/cache/1/image/265x/56886fc60fe5873e791c2538f4e2457f/t/r/trottinette_electrique_jeep-7.jpg",
+    "http://pietechnologie.com/cdn/shop/products/TrottinetteJEEP2xeADVENTURER-PieTechnologie.webp?v=1666268431",
+    "http://pietechnologie.com/cdn/shop/products/TrottinetteJEEP2xeADVENTURER-PieTechnologie_1200x1200.webp?v=1666268431",
+    "http://pietechnologie.com/cdn/shop/products/TrottinetteelectriqueJEEP2xeADVENTURER-PieTechnologie_1200x1200.webp?v=1666268432",
+    "http://pietechnologie.com/cdn/shop/products/TrottinetteJEEPADVENTURER-PieTechnologie_1200x1200.webp?v=1666268431",
+    "https://pietechnologie.com/cdn/shop/products/TrottinetteJEEP2xeADVENTURER-PieTechnologie.webp?v=1666268431",
+    "https://pietechnologie.com/cdn/shop/products/TrottinetteelectriqueJEEP2xeADVENTURER-PieTechnologie.webp?v=1666268432",
+    "https://pietechnologie.com/cdn/shop/products/TrottinetteJEEPADVENTURER-PieTechnologie.webp?v=1666268431",
+    "https://pietechnologie.com/cdn/shop/products/PieTechnologie-TrottinetteJEEP2xeADVENTURER.webp?v=1666268431",
+    "https://pietechnologie.com/cdn/shop/products/Trottinetteelectriquejeep-PieTechnologie.webp?v=1666268432"
+   ]
+  },
+  {
+   "id": "5b0687fb-4584-4159-ab77-c10602d70a45",
+   "slug": "yeep-me-120a",
+   "name": "Yeep.me 120a",
+   "brand": "Yeep.me",
+   "published": true,
+   "current": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/5b0687fb-4584-4159-ab77-c10602d70a45/1792973254067_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/5b0687fb-4584-4159-ab77-c10602d70a45/1792973255299_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/5b0687fb-4584-4159-ab77-c10602d70a45/1792973256946_0.png"
+   ],
+   "candidates": []
+  },
+  {
+   "id": "35fe7643-24d6-46e3-887e-181d794284c0",
+   "slug": "segway-gt1",
+   "name": "Segway GT1",
+   "brand": "Segway",
+   "published": true,
+   "current": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/35fe7643-24d6-46e3-887e-181d794284c0/1792972879960_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/35fe7643-24d6-46e3-887e-181d794284c0/1792972881670_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/35fe7643-24d6-46e3-887e-181d794284c0/1792972883986_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/35fe7643-24d6-46e3-887e-181d794284c0/1792972885841_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/35fe7643-24d6-46e3-887e-181d794284c0/1792972887675_0.png"
+   ],
+   "candidates": [
+    "https://funtrott.fr/5298-large_default/trottinette-electrique-segway-gt1e.jpg",
+    "https://funtrott.fr/5298-home_default/trottinette-electrique-segway-gt1e.jpg"
+   ]
+  },
+  {
+   "id": "37ff3593-16f5-450a-9c96-6c302d90e549",
+   "slug": "oxelo-md500e",
+   "name": "Oxelo MD500E",
+   "brand": "Oxelo",
+   "published": true,
+   "current": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/37ff3593-16f5-450a-9c96-6c302d90e549/1792449323207_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/37ff3593-16f5-450a-9c96-6c302d90e549/1792449325119_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/37ff3593-16f5-450a-9c96-6c302d90e549/1792449327994_0.png"
+   ],
+   "candidates": [
+    "http://decathlon.gf/cdn/shop/files/pic_61a6f16f-5265-4248-bf6d-86bfc7de032f.jpg?v=1792949054&width=1024",
+    "https://decathlon.gf/cdn/shop/files/pic_61a6f16f-5265-4248-bf6d-86bfc7de032f.jpg?v=1792949054&width=1920",
+    "https://cdn.shopify.com/s/files/1/0708/7226/8992/files/pic_61a6f16f-5265-4248-bf6d-86bfc7de032f.jpg?v=1792949054",
+    "https://cdn.shopify.com/s/files/1/0708/7226/8992/files/pic_0db0d118-3962-4770-a689-09358db912fd.jpg?v=1792949055",
+    "https://cdn.shopify.com/s/files/1/0708/7226/8992/files/pic_5b868f86-766b-41c3-8249-1b233b8275f3.jpg?v=1792949054",
+    "https://cdn.shopify.com/s/files/1/0708/7226/8992/files/pic_6addefcb-e87c-4e01-aea8-60b50191befb.jpg?v=1792949054",
+    "https://cdn.shopify.com/s/files/1/0708/7226/8992/files/pic_747e7ddc-36a2-445a-80ec-aeb5d0f82867.jpg?v=1792949054",
+    "https://cdn.shopify.com/s/files/1/0708/7226/8992/files/pic_e3cda34b-7e4b-4a9c-826f-f9d2ab01a152.jpg?v=1792949054",
+    "https://cdn.shopify.com/s/files/1/0708/7226/8992/files/pic_42f65e42-d229-4739-bdf6-972f3f4d12aa.jpg?v=1792949055",
+    "https://cdn.shopify.com/s/files/1/0708/7226/8992/files/pic_bc9953b2-39b8-4042-92e6-f2e49b44023f.jpg?v=1792949055"
+   ]
+  },
+  {
+   "id": "b24fdfb8-6136-4158-88cd-ff1cf18b22b3",
+   "slug": "kukirin-g2-master",
+   "name": "Kukirin G2 Master",
+   "brand": "Kukirin",
+   "published": true,
+   "current": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/b24fdfb8-6136-4158-88cd-ff1cf18b22b3/1792972432906_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/b24fdfb8-6136-4158-88cd-ff1cf18b22b3/1792972434353_0.png"
+   ],
+   "candidates": [
+    "https://www.kukirin-officiel.com/cdn/shop/files/trottinette-electrique-kukirin-g2-master-2000w-70-km-dautonomie-double-moteur-7195984.jpg?v=1764467673",
+    "https://cdn.shopify.com/s/files/1/0310/0855/5140/files/trottinette-electrique-kukirin-g2-master-2000w-70-km-dautonomie-double-moteur-7195984.jpg?v=1764467673",
+    "https://cdn.shopify.com/s/files/1/0310/0855/5140/files/trottinette-electrique-kukirin-g2-master-2000w-70-km-dautonomie-double-moteur-7873284.webp?v=1764467614",
+    "https://cdn.shopify.com/s/files/1/0310/0855/5140/files/trottinette-electrique-kukirin-g2-master-2000w-70-km-dautonomie-double-moteur-7092898.webp?v=1764467850",
+    "https://cdn.shopify.com/s/files/1/0310/0855/5140/files/trottinette-electrique-kukirin-g2-master-2000w-70-km-dautonomie-double-moteur-3545916.webp?v=1764467670",
+    "https://cdn.shopify.com/s/files/1/0310/0855/5140/files/trottinette-electrique-kukirin-g2-master-2000w-70-km-dautonomie-double-moteur-7206716.webp?v=1764467614",
+    "https://cdn.shopify.com/s/files/1/0310/0855/5140/files/trottinette-electrique-kukirin-g2-master-2000w-70-km-dautonomie-double-moteur-6333745.webp?v=1764467615",
+    "https://cdn.shopify.com/s/files/1/0310/0855/5140/files/trottinette-electrique-kukirin-g2-master-2000w-70-km-dautonomie-double-moteur-6718437.webp?v=1764467782",
+    "https://cdn.shopify.com/s/files/1/0310/0855/5140/files/trottinette-electrique-kukirin-g2-master-2000w-70-km-dautonomie-double-moteur-9023823.webp?v=1764467850",
+    "https://cdn.shopify.com/s/files/1/0310/0855/5140/files/trottinette-electrique-kukirin-g2-master-2000w-70-km-dautonomie-double-moteur-4947850.webp?v=1764467848"
+   ]
+  },
+  {
+   "id": "743fb217-4a3e-4a88-80dc-ea4188ee361b",
+   "slug": "e-twow-booster-se",
+   "name": "E-Twow Booster SE",
+   "brand": "E-Twow",
+   "published": true,
+   "current": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/743fb217-4a3e-4a88-80dc-ea4188ee361b/1792971903249_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/743fb217-4a3e-4a88-80dc-ea4188ee361b/1792971904783_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/743fb217-4a3e-4a88-80dc-ea4188ee361b/1792971907955_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/743fb217-4a3e-4a88-80dc-ea4188ee361b/1792971910380_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/743fb217-4a3e-4a88-80dc-ea4188ee361b/1792971912684_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/743fb217-4a3e-4a88-80dc-ea4188ee361b/1792971915301_0.png"
+   ],
+   "candidates": [
+    "http://www.wee-bot.com/cdn/shop/files/Trottinette_Electrique_Etwow_Booster_SE_Pas_cher-770717.jpg?v=1774327706",
+    "https://www.wee-bot.com/cdn/shop/files/Trottinette_Electrique_Etwow_Booster_SE_Pas_cher-770717_600x600_crop_center.jpg?v=1774327706",
+    "https://www.wee-bot.com/cdn/shop/files/Trottinette_Electrique_Etwow_Booster_SE_Pas_cher-770717.jpg?v=1774327706&width=832",
+    "https://www.wee-bot.com/cdn/shop/files/trottinette-electrique-etwow-booster-se-caracteristiques-techniques.webp?v=1781587458&width=1080",
+    "https://www.wee-bot.com/cdn/shop/files/trottinette-electrique-etwow-booster-se-points-forts.webp?v=1781587458&width=1080",
+    "https://www.wee-bot.com/cdn/shop/files/trottinette-electrique-etwow-booster-se-pliee-dimensions.webp?v=1781587458&width=1080",
+    "https://www.wee-bot.com/cdn/shop/files/trottinette-electrique-etwow-booster-se-garantie-livraison.webp?v=1781587457&width=1080",
+    "https://www.wee-bot.com/cdn/shop/files/Etwow_fiche_produit_Booster_SE.jpg?v=1774347639&width=1024",
+    "https://www.wee-bot.com/cdn/shop/files/Trottinette_Electrique_Etwow_Booster_SE_Guidon_ecran-521310.jpg?v=1766780634&width=1200",
+    "https://www.wee-bot.com/cdn/shop/files/Trottinette_Electrique_Etwow_Booster_SE_freinage_securite-729295.jpg?v=1766780634&width=1200"
+   ]
+  },
+  {
+   "id": "863a9fc0-7fc3-435f-b1d7-8c4155ef9662",
+   "slug": "micro-explorer-ii",
+   "name": "Micro Explorer II",
+   "brand": "Micro",
+   "published": true,
+   "current": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/863a9fc0-7fc3-435f-b1d7-8c4155ef9662/1792448413137_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/863a9fc0-7fc3-435f-b1d7-8c4155ef9662/1792448415292_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/863a9fc0-7fc3-435f-b1d7-8c4155ef9662/1792868757292_0.png"
+   ],
+   "candidates": [
+    "https://dthwkv5aeh23x.cloudfront.net/catalog/product/thumbnail/44477fb6e7f2e0446a1d8b37e2d0b5ca4737d74490ba0ce03691d66e/image/63233/265x265/001/98/m/i/micro_explorer_ii_-3_without_plaque_neu_kleiner_1.jpg",
+    "https://www.micro-scooter.com/media/catalog/product/m/i/micro_explorer_ii_-3_without_plaque_neu_kleiner_1.jpg",
+    "https://www.micro-scooter.com/media/catalog/product/m/i/micro_explorer_ii_-2.jpg",
+    "https://www.micro-scooter.com/media/catalog/product/m/i/micro_explorer_ii_-7_without_plaque.jpg",
+    "https://www.micro-scooter.com/media/catalog/product/m/i/micro_explorer_ii_-4_without_plaque.jpg",
+    "https://www.micro-scooter.com/media/catalog/product/m/i/micro_explorer_ii_-1__1.jpg",
+    "https://www.micro-scooter.com/media/catalog/product/m/i/micro_explorer_ii_-9.jpg",
+    "https://www.micro-scooter.com/media/catalog/product/l/a/large-micro_explorer_-_micro_explorer_ii.jpg",
+    "https://www.micro-scooter.com/media/catalog/product/l/a/large-micro_explorer_-_micro_explorer_ii_1_.jpg",
+    "https://www.microcorner.ch/data/Marken/Micro/Micro-Explorer-II/Micro-Explorer-II-1.jpg"
+   ]
+  },
+  {
+   "id": "d8fed348-10ab-43a1-9555-527d1f86d4de",
+   "slug": "ducati-pro-ii-evo",
+   "name": "Ducati Pro-II Evo",
+   "brand": "Ducati",
+   "published": true,
+   "current": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/d8fed348-10ab-43a1-9555-527d1f86d4de/1792441387664_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/d8fed348-10ab-43a1-9555-527d1f86d4de/1792441388951_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/d8fed348-10ab-43a1-9555-527d1f86d4de/1792441395540_0.png"
+   ],
+   "candidates": [
+    "http://pietechnologie.com/cdn/shop/products/TrottinetteelectriqueDucatiPRO2Evo-PieTechnologie.png?v=1666254134",
+    "http://pietechnologie.com/cdn/shop/products/TrottinetteelectriqueDucatiPRO2Evo-PieTechnologie_1200x1200.png?v=1666254134",
+    "https://pietechnologie.com/cdn/shop/products/TrottinetteelectriqueDucatiPRO2Evo-PieTechnologie.png?v=1666254134",
+    "https://pietechnologie.com/cdn/shop/products/TrottinetteelectriqueDucatiPRO2Evo-PieTechnologie_x100.png?v=1666254134",
+    "https://cdn.shopify.com/s/files/1/0506/5113/6182/products/TrottinetteelectriqueDucatiPRO2Evo-PieTechnologie.png?v=1666254134"
+   ]
+  },
+  {
+   "id": "a8c86274-cbdc-42e5-a334-05a9e7711ced",
+   "slug": "kingsong-n15",
+   "name": "Kingsong N15",
+   "brand": "Kingsong",
+   "published": true,
+   "current": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/a8c86274-cbdc-42e5-a334-05a9e7711ced/1792447816204_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/a8c86274-cbdc-42e5-a334-05a9e7711ced/1792447818000_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/a8c86274-cbdc-42e5-a334-05a9e7711ced/1792447820334_0.png"
+   ],
+   "candidates": [
+    "https://www.kingsong-store.com/1538-large_default/trottinette-electrique-kingsong-ks-n15-37v-104ah.jpg",
+    "https://www.kingsong-store.com/1538-home_default/trottinette-electrique-kingsong-ks-n15-37v-104ah.jpg",
+    "https://kingsongeurope.com/wp-content/uploads/2025/05/N15KSE.3.jpg",
+    "https://media.cdnws.com/_i/21277/fb%7B630%7D-6700/24/2/trottinette-electrique-kingsong-ksn15.jpeg",
+    "https://media.cdnws.com/_i/21277/6700/24/2/trottinette-electrique-kingsong-ksn15.jpeg",
+    "https://media.cdnws.com/_i/21277/6709/2109/11/mobilityurban.png",
+    "https://media.cdnws.com/_i/21277/6705/1386/7/trottinette-kingsong-n15-avant.jpeg",
+    "https://media.cdnws.com/_i/21277/6708/1796/10/roue-arriere-kingsong-n15.png",
+    "https://media.cdnws.com/_i/21277/6702/2684/4/kingsong-n15.jpeg",
+    "https://media.cdnws.com/_i/21277/6701/1595/3/afficheur-kingsong-n15.jpeg"
+   ]
+  },
+  {
+   "id": "2de827d0-236d-4a96-beb1-729c33724e7b",
+   "slug": "dualtron-ultra-one",
+   "name": "Dualtron Ultra One",
+   "brand": "Dualtron",
+   "published": true,
+   "current": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/2de827d0-236d-4a96-beb1-729c33724e7b/1792445928684_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/2de827d0-236d-4a96-beb1-729c33724e7b/1792445930907_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/2de827d0-236d-4a96-beb1-729c33724e7b/1792445933040_0.png"
+   ],
+   "candidates": [
+    "https://www.minimotors.fr/web/image/product.template/17610/image_1024?unique=9870ae5",
+    "https://d2j6dbq0eux0bg.cloudfront.net/images/68019033/products/873115045/6344576643.jpg",
+    "https://www.urbanmoov.fr/boutique/Trottinette-electrique-Dualtron-Ultra-One-72V-31-5Ah-p873115045"
+   ]
+  },
+  {
+   "id": "e47d2d83-bd81-41f9-b0b3-81d8238bce93",
+   "slug": "p100s",
+   "name": "P100S",
+   "brand": "Segway",
+   "published": true,
+   "current": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/e47d2d83-bd81-41f9-b0b3-81d8238bce93/1792972819386_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/e47d2d83-bd81-41f9-b0b3-81d8238bce93/1792972820963_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/e47d2d83-bd81-41f9-b0b3-81d8238bce93/1792972823040_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/e47d2d83-bd81-41f9-b0b3-81d8238bce93/1792972825859_0.png"
+   ],
+   "candidates": [
+    "https://cdn.webshopapp.com/shops/310069/files/394426426/ninebot-segway-ninebot-p100s-e.jpg",
+    "https://cdn.webshopapp.com/shops/310069/files/394426426/600x600x2/ninebot-segway-ninebot-p100s-e.jpg",
+    "https://cdn.webshopapp.com/shops/310069/files/394426426/640x480x2/ninebot-segway-ninebot-p100s-e.jpg",
+    "https://cdn.webshopapp.com/shops/310069/files/394426426/640x360x2/ninebot-segway-ninebot-p100s-e.jpg"
+   ]
+  },
+  {
+   "id": "6168d22e-a4d9-48c9-9107-2a9ecb6386e2",
+   "slug": "e-twow-gt-se",
+   "name": "E-Twow GT SE",
+   "brand": "E-Twow",
+   "published": true,
+   "current": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/6168d22e-a4d9-48c9-9107-2a9ecb6386e2/1792971937181_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/6168d22e-a4d9-48c9-9107-2a9ecb6386e2/1792971938708_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/6168d22e-a4d9-48c9-9107-2a9ecb6386e2/1792971941304_0.png"
+   ],
+   "candidates": [
+    "https://full-mobility.com/wp-content/uploads/2023/03/2023-02-01_10.34.06_1024x1024.webp",
+    "https://full-mobility.com/wp-content/uploads/2023/03/trottinette-electrique-e-twow-gt-sl.jpg",
+    "https://full-mobility.com/wp-content/uploads/2023/03/trottinette-electrique-e-twow-gt-sl-1.jpg",
+    "https://full-mobility.com/wp-content/uploads/2023/03/trottinette-electrique-e-twow-gt-sl-2.jpg",
+    "https://full-mobility.com/wp-content/uploads/2023/03/trottinette-electrique-e-twow-gt-sl-3.jpg",
+    "https://full-mobility.com/wp-content/uploads/2023/03/trottinette-electrique-e-twow-gt-sl-4.jpg",
+    "https://full-mobility.com/wp-content/uploads/2023/03/telechargement.jpg",
+    "https://www.gyroroue-shop.fr/wp-content/uploads/2022/03/e-twow-gt-SE-bluetooh-connect.png"
+   ]
+  },
+  {
+   "id": "b762a3ec-8d3b-4ada-a3a9-72ae388f3721",
+   "slug": "segway-zt3-pro-e",
+   "name": "Segway ZT3 Pro E",
+   "brand": "Segway",
+   "published": true,
+   "current": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/b762a3ec-8d3b-4ada-a3a9-72ae388f3721/1792972933771_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/b762a3ec-8d3b-4ada-a3a9-72ae388f3721/1792972935214_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/b762a3ec-8d3b-4ada-a3a9-72ae388f3721/1792972937223_0.png"
+   ],
+   "candidates": [
+    "https://www.segwayfrance.com/cdn/shop/files/VuelateraledelaSegwayZT_Ecopy.webp?v=1768385689",
+    "https://cdn.shopify.com/s/files/1/0983/1487/9322/files/VuelateraledelaSegwayZT_Ecopy.webp?v=1768385689",
+    "https://cdn.shopify.com/s/files/1/0983/1487/9322/files/zt3_pro-1_2.webp?v=1768385689",
+    "https://cdn.shopify.com/s/files/1/0983/1487/9322/files/zt3_pro-3.webp?v=1768385689",
+    "https://cdn.shopify.com/s/files/1/0983/1487/9322/files/zt3_pro_copy.webp?v=1775122292",
+    "https://cdn.shopify.com/s/files/1/0983/1487/9322/files/Trottinette-electrique-tout-terrain-Segway-by-Ninebot-ZT3-Pro-E.webp?v=1775122292",
+    "https://cdn.shopify.com/s/files/1/0983/1487/9322/files/Trottinette-electrique-freinage-avant.webp?v=1775122292",
+    "https://cdn.shopify.com/s/files/1/0983/1487/9322/files/Trottinette-electrique-Segway-Ninebot-ZT3-Pro-haute-visibilite.webp?v=1775122292",
+    "https://cdn.shopify.com/s/files/1/0983/1487/9322/files/Trottinette-electrique-tout-terrain-Segway-by-Ninebot-ZT3-Pro-E-1600-W.webp?v=1775122292",
+    "https://cdn.shopify.com/s/files/1/0983/1487/9322/files/Trottinette-electrique-tout-terrain-Segway-by-Ninebot-ZT3-Pro-tableu-de-bord.webp?v=1775122292"
+   ]
+  },
+  {
+   "id": "3b885825-771d-4949-97fc-2317ce71b0c4",
+   "slug": "segway-gt2",
+   "name": "Segway GT2",
+   "brand": "Segway",
+   "published": true,
+   "current": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/3b885825-771d-4949-97fc-2317ce71b0c4/1792449603561_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/3b885825-771d-4949-97fc-2317ce71b0c4/1792449593568_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/3b885825-771d-4949-97fc-2317ce71b0c4/1792449598367_0.png"
+   ],
+   "candidates": [
+    "https://media.cdnws.com/_i/21277/fb%7B630%7D-5473/2266/77/trottinette-segway-gt2.jpeg",
+    "https://media.cdnws.com/_i/21277/5473/2266/77/trottinette-segway-gt2.jpeg",
+    "https://media.cdnws.com/_i/21277/5468/935/72/trottine-tte-ninebot-gt2-sans-fond.jpeg",
+    "https://media.cdnws.com/_i/21277/5471/718/75/trottinette-segway-gt2-amortisseur.jpeg",
+    "https://media.cdnws.com/_i/21277/5470/3148/74/trottinette-segway-gt2-tabelau-de-bord.jpeg",
+    "https://media.cdnws.com/_i/21277/5469/3034/73/trottinette-segway-gt2-roue-arriere.jpeg"
+   ]
+  },
+  {
+   "id": "a6060534-e969-4e3f-a9d8-7f4a36f3f803",
+   "slug": "nami-klima",
+   "name": "Nami Klima",
+   "brand": "Nami",
+   "published": true,
+   "current": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/a6060534-e969-4e3f-a9d8-7f4a36f3f803/1792448531808_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/a6060534-e969-4e3f-a9d8-7f4a36f3f803/1792448534107_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/a6060534-e969-4e3f-a9d8-7f4a36f3f803/1792448536342_0.png"
+   ],
+   "candidates": [
+    "https://nami-electric.com/wp-content/uploads/2025/07/Groupe-de-masques-7@2x-2.png",
+    "https://nami-electric.com/wp-content/uploads/2025/07/klima-2-min.png",
+    "https://funtrott.fr/7575-large_default/nami-klima.jpg",
+    "https://funtrott.fr/7575-home_default/nami-klima.jpg",
+    "http://www.wee-bot.com/cdn/shop/files/trottinette_electrique_nami_klima_pas_cher-177535.jpg?v=1750674340",
+    "https://www.wee-bot.com/cdn/shop/files/trottinette_electrique_nami_klima_pas_cher-177535_600x600_crop_center.jpg?v=1750674340",
+    "https://www.wee-bot.com/cdn/shop/files/trottinette_electrique_nami_klima_pas_cher-177535.jpg?v=1750674340&width=1200",
+    "https://www.wee-bot.com/cdn/shop/files/trottinette-electrique-nami-klima-caracteristiques-techniques.webp?v=1781587806&width=1080",
+    "https://www.wee-bot.com/cdn/shop/files/trottinette-electrique-nami-klima-points-forts.webp?v=1781587806&width=1080",
+    "https://www.wee-bot.com/cdn/shop/files/trottinette-electrique-nami-klima-pliee-dimensions.webp?v=1781587806&width=1080"
+   ]
+  },
+  {
+   "id": "b7f7509c-2b4e-4ce9-ae94-91ef6a467d49",
+   "slug": "joyor-y6-s",
+   "name": "Joyor Y6-S",
+   "brand": "Joyor",
+   "published": true,
+   "current": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/b7f7509c-2b4e-4ce9-ae94-91ef6a467d49/1792871933129_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/b7f7509c-2b4e-4ce9-ae94-91ef6a467d49/1792871934992_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/b7f7509c-2b4e-4ce9-ae94-91ef6a467d49/1792871937807_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/b7f7509c-2b4e-4ce9-ae94-91ef6a467d49/1792871940805_0.png"
+   ],
+   "candidates": [
+    "http://joyorscooter.com/cdn/shop/files/Electric_Scooter_Joyor_Y6-S.jpg?v=1748343483",
+    "https://joyorscooter.com/cdn/shop/files/Electric_Scooter_Joyor_Y6-S_2000x.jpg?v=1748343483",
+    "https://cdn.shopify.com/s/files/1/0758/1404/3983/files/Electric_Scooter_Joyor_Y6-S.jpg?v=1748343483",
+    "https://cdn.shopify.com/s/files/1/0758/1404/3983/files/Electric_Scooter_Joyor_Y6-S_Unfolded_Folded.jpg?v=1748343483",
+    "https://cdn.shopify.com/s/files/1/0758/1404/3983/files/Electric_Scooter_Joyor_Y6-S_Lateral.jpg?v=1748343483",
+    "https://cdn.shopify.com/s/files/1/0758/1404/3983/files/Electric_Scooter_Joyor_Y6-S_Rear_Tyre.jpg?v=1748343483",
+    "https://cdn.shopify.com/s/files/1/0758/1404/3983/files/Electric_Scooter_Joyor_Y6-S_Front_Tyre.jpg?v=1748343483",
+    "https://cdn.shopify.com/s/files/1/0758/1404/3983/files/Electric_Scooter_Joyor_Y6-S_Display.jpg?v=1748343483",
+    "http://joyorprime.com/cdn/shop/files/Group2147203417.png?v=1792143805",
+    "https://joyorprime.com/cdn/shop/files/Group2147203417.png?v=1792143805&width=1254"
+   ]
+  },
+  {
+   "id": "d4b90d85-dbce-4ec2-82da-2fabc6af822c",
+   "slug": "joyor-s8-e",
+   "name": "Joyor S8-E",
+   "brand": "Joyor",
+   "published": true,
+   "current": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/d4b90d85-dbce-4ec2-82da-2fabc6af822c/1792871918863_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/d4b90d85-dbce-4ec2-82da-2fabc6af822c/1792871921434_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/d4b90d85-dbce-4ec2-82da-2fabc6af822c/1792871924343_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/d4b90d85-dbce-4ec2-82da-2fabc6af822c/1792871926853_0.png"
+   ],
+   "candidates": [
+    "http://joyorscooter.com/cdn/shop/files/Series-S-Electric-Scooter-Joyor-S8E-1_0650e226-dc54-4702-a751-5dc8f51a244f.jpg?v=1748343485",
+    "https://joyorscooter.com/cdn/shop/files/Series-S-Electric-Scooter-Joyor-S8E-1_0650e226-dc54-4702-a751-5dc8f51a244f_2000x.jpg?v=1748343485",
+    "https://cdn.shopify.com/s/files/1/0758/1404/3983/files/Series-S-Electric-Scooter-Joyor-S8E-1_0650e226-dc54-4702-a751-5dc8f51a244f.jpg?v=1748343485",
+    "https://cdn.shopify.com/s/files/1/0758/1404/3983/files/Series-S-Electric-Scooter-Joyor-S8E-9_489998af-4d1f-4532-8134-65c02be1a451.jpg?v=1748343485",
+    "https://cdn.shopify.com/s/files/1/0758/1404/3983/files/Series-S-Electric-Scooter-Joyor-S8E-2_be507a3f-2b0f-4be4-81c7-9400cf46328d.jpg?v=1748343485",
+    "https://cdn.shopify.com/s/files/1/0758/1404/3983/files/Series-S-Electric-Scooter-Joyor-S8E-3_a9014b3f-5c76-4442-a990-2b669432ef03.jpg?v=1748343485",
+    "https://cdn.shopify.com/s/files/1/0758/1404/3983/files/Series-S-Electric-Scooter-Joyor-S8E-4_a43f8d16-0ad6-489d-9a01-a0474d7f9c0d.jpg?v=1748343485",
+    "https://cdn.shopify.com/s/files/1/0758/1404/3983/files/Series-S-Electric-Scooter-Joyor-S8E-5_938b985c-bf04-4c87-b326-2105ecc8e281.jpg?v=1748343485",
+    "https://cdn.shopify.com/s/files/1/0758/1404/3983/files/Series-S-Electric-Scooter-Joyor-S8E-6_9d883d51-8542-4c1c-a6d5-ed4f9859e138.jpg?v=1748343485",
+    "https://cdn.shopify.com/s/files/1/0758/1404/3983/files/Series-S-Electric-Scooter-Joyor-S8E-7_b223ea13-a791-4038-9827-8f62c1d0fe4c.jpg?v=1748343486"
+   ]
+  },
+  {
+   "id": "4086540e-8b9d-43c9-bf8c-fe2803c381aa",
+   "slug": "kukirin-g4-2026",
+   "name": "Kukirin G4 (2026)",
+   "brand": "Kukirin",
+   "published": true,
+   "current": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/4086540e-8b9d-43c9-bf8c-fe2803c381aa/1792448144787_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/4086540e-8b9d-43c9-bf8c-fe2803c381aa/1792448148891_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/4086540e-8b9d-43c9-bf8c-fe2803c381aa/1792448151537_0.png"
+   ],
+   "candidates": [
+    "http://dzscooters.com/cdn/shop/files/1000087984.jpg?v=1770429894",
+    "https://dzscooters.com/cdn/shop/files/1000087984.jpg?v=1770429894&width=1920",
+    "https://cdn.shopify.com/s/files/1/0695/8815/6669/files/1000087984.jpg?v=1770429894",
+    "https://cdn.shopify.com/s/files/1/0695/8815/6669/files/1000087978_1bc1e65c-3038-4de9-88c2-fd41594ac779.jpg?v=1770429894",
+    "https://cdn.shopify.com/s/files/1/0695/8815/6669/files/1000087979.jpg?v=1770429894",
+    "https://cdn.shopify.com/s/files/1/0695/8815/6669/files/1000087980.jpg?v=1770429894",
+    "https://cdn.shopify.com/s/files/1/0695/8815/6669/files/1000087981.jpg?v=1770429893",
+    "https://cdn.shopify.com/s/files/1/0695/8815/6669/files/1000087982.jpg?v=1770429894",
+    "https://cdn.shopify.com/s/files/1/0695/8815/6669/files/1000087983.jpg?v=1770429894",
+    "https://cdn.shopify.com/s/files/1/0695/8815/6669/files/1000087985.jpg?v=1770429894"
+   ]
+  },
+  {
+   "id": "6deef498-eb2e-4766-8a12-cf4085a059f9",
+   "slug": "urbanglide-ecross-pro-2",
+   "name": "Urbanglide eCross Pro 2",
+   "brand": "Urbanglide",
+   "published": true,
+   "current": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/6deef498-eb2e-4766-8a12-cf4085a059f9/1792450362599_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/6deef498-eb2e-4766-8a12-cf4085a059f9/1792450364867_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/6deef498-eb2e-4766-8a12-cf4085a059f9/1792450367736_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/6deef498-eb2e-4766-8a12-cf4085a059f9/1792450372544_0.png"
+   ],
+   "candidates": [
+    "https://urbanglide.com/wp-content/uploads/2024/08/E-CROSS-PRO-2-1.png"
+   ]
+  },
+  {
+   "id": "d46e8689-f6c6-461f-b6fc-8f696f2ce5bb",
+   "slug": "beaster-bs08",
+   "name": "Beaster BS08",
+   "brand": "Beaster",
+   "published": true,
+   "current": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/d46e8689-f6c6-461f-b6fc-8f696f2ce5bb/1792440971640_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/d46e8689-f6c6-461f-b6fc-8f696f2ce5bb/1792440973638_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/d46e8689-f6c6-461f-b6fc-8f696f2ce5bb/1792440975680_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/d46e8689-f6c6-461f-b6fc-8f696f2ce5bb/1792440979117_0.png"
+   ],
+   "candidates": []
+  },
+  {
+   "id": "8cd32a6d-175b-47f8-8843-0723d8298de3",
+   "slug": "urbanglide-ride-85-evo",
+   "name": "Urbanglide Ride 85 Evo",
+   "brand": "Urbanglide",
+   "published": true,
+   "current": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/8cd32a6d-175b-47f8-8843-0723d8298de3/1792973102003_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/8cd32a6d-175b-47f8-8843-0723d8298de3/1792973103411_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/8cd32a6d-175b-47f8-8843-0723d8298de3/1792973106122_0.png"
+   ],
+   "candidates": []
+  },
+  {
+   "id": "7e78e4a5-4159-48b9-9671-dbea2e18cb04",
+   "slug": "urbanglide-ecross-one",
+   "name": "Urbanglide eCross One",
+   "brand": "Urbanglide",
+   "published": true,
+   "current": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/7e78e4a5-4159-48b9-9671-dbea2e18cb04/1792444409355_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/7e78e4a5-4159-48b9-9671-dbea2e18cb04/1792886451520_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/7e78e4a5-4159-48b9-9671-dbea2e18cb04/1792444406191_0.png"
+   ],
+   "candidates": [
+    "https://urbanglide.com/wp-content/uploads/2024/12/E-CROSS-PRO-2.webp"
+   ]
+  },
+  {
+   "id": "05e0fbf2-d779-4747-85cf-f03f6b1ae9aa",
+   "slug": "vsett-8-plus",
+   "name": "Vsett 8+",
+   "brand": "Vsett",
+   "published": true,
+   "current": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/05e0fbf2-d779-4747-85cf-f03f6b1ae9aa/1792444636148_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/05e0fbf2-d779-4747-85cf-f03f6b1ae9aa/1792444632902_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/05e0fbf2-d779-4747-85cf-f03f6b1ae9aa/1792444634551_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/05e0fbf2-d779-4747-85cf-f03f6b1ae9aa/1792444637841_0.png"
+   ],
+   "candidates": [
+    "https://vsett-shop.com/wp-content/uploads/2021/04/VSETT-8-FRONT-BIG-DISPLAY-.jpeg",
+    "https://vsett-shop.com/wp-content/uploads/2024/11/VSETT-8-BIG-DISPLAY.webp",
+    "https://vsett-shop.com/wp-content/uploads/2021/04/VSETT-8-Acceleration-Throttle.webp",
+    "https://www.scooterpassion.be/15915-large_default/trottinette-electrique-vsset-pro-8-48v-16a.jpg"
+   ]
+  },
+  {
+   "id": "e92dcc6a-d15e-4eb6-ad77-41dea0aa8193",
+   "slug": "nami-blast",
+   "name": "Nami Blast",
+   "brand": "Nami",
+   "published": true,
+   "current": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/e92dcc6a-d15e-4eb6-ad77-41dea0aa8193/1792448454783_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/e92dcc6a-d15e-4eb6-ad77-41dea0aa8193/1792448457143_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/e92dcc6a-d15e-4eb6-ad77-41dea0aa8193/1792448459627_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/e92dcc6a-d15e-4eb6-ad77-41dea0aa8193/1792448461655_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/e92dcc6a-d15e-4eb6-ad77-41dea0aa8193/1792448464089_0.png"
+   ],
+   "candidates": [
+    "https://nami-electric.com/wp-content/uploads/2025/07/Groupe-de-masques-14@2x.png",
+    "https://nami-electric.com/wp-content/uploads/2025/07/blast-1.png",
+    "https://nami-electric.com/wp-content/uploads/2025/07/DSC00017-1000x597-1.webp"
+   ]
+  },
+  {
+   "id": "6ed88a51-1208-4a7f-a5f1-5eb3584d97db",
+   "slug": "dualtron-togo-pro",
+   "name": "Dualtron Togo Pro",
+   "brand": "Dualtron",
+   "published": true,
+   "current": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/6ed88a51-1208-4a7f-a5f1-5eb3584d97db/1792971827898_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/6ed88a51-1208-4a7f-a5f1-5eb3584d97db/1792971829515_0.png"
+   ],
+   "candidates": [
+    "https://www.minimotors.fr/web/image/product.template/12404/image_1024?unique=3cd8fe3",
+    "http://www.wee-bot.com/cdn/shop/files/trottinette_electrique_Dualtron_Togo_Pro_pas_cher.png?v=1772709638",
+    "https://www.wee-bot.com/cdn/shop/files/trottinette_electrique_Dualtron_Togo_Pro_pas_cher_600x600_crop_center.png?v=1772709638",
+    "https://www.wee-bot.com/cdn/shop/files/trottinette_electrique_Dualtron_Togo_Pro_pas_cher.png?v=1772709638&width=610",
+    "https://www.wee-bot.com/cdn/shop/files/trottinette-electrique-dualtron-togo-pro-caracteristiques-techniques.webp?v=1781470398&width=1080",
+    "https://www.wee-bot.com/cdn/shop/files/trottinette-electrique-dualtron-togo-pro-points-forts.webp?v=1781470398&width=1080",
+    "https://www.wee-bot.com/cdn/shop/files/trottinette-electrique-dualtron-togo-pro-pliee-dimensions.webp?v=1781470398&width=1080",
+    "https://www.wee-bot.com/cdn/shop/files/trottinette-electrique-dualtron-togo-pro-garantie-livraison.webp?v=1781470398&width=1080",
+    "https://www.wee-bot.com/cdn/shop/files/trottinette_electrique_Dualtron_Togo_Pro_fiable_securisante.png?v=1772709638&width=610",
+    "https://www.wee-bot.com/cdn/shop/files/trottinette_electrique__Dualtron_Togo_compacte.png?v=1772709637&width=614"
+   ]
+  },
+  {
+   "id": "ebb1cf11-35ef-4d69-b2df-5278988547ff",
+   "slug": "nami-superstellar",
+   "name": "Nami Superstellar",
+   "brand": "Nami",
+   "published": true,
+   "current": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/ebb1cf11-35ef-4d69-b2df-5278988547ff/1792972593724_0.png"
+   ],
+   "candidates": [
+    "https://funtrott.fr/6221-large_default/nami-superstellar.jpg",
+    "https://funtrott.fr/6221-home_default/nami-superstellar.jpg",
+    "http://www.wee-bot.com/cdn/shop/files/trottinette_electrique_nami_superstellar_pas_cher_5300668b-8a14-4483-bfd5-07dd7290773b-976434.jpg?v=1754110228",
+    "https://www.wee-bot.com/cdn/shop/files/trottinette_electrique_nami_superstellar_pas_cher_5300668b-8a14-4483-bfd5-07dd7290773b-976434_600x600_crop_center.jpg?v=1754110228",
+    "https://www.wee-bot.com/cdn/shop/files/trottinette_electrique_nami_superstellar_pas_cher_5300668b-8a14-4483-bfd5-07dd7290773b-976434.jpg?v=1754110228&width=800",
+    "https://www.wee-bot.com/cdn/shop/files/trottinette-electrique-nami-superstellar-caracteristiques-techniques.webp?v=1781587871&width=1080",
+    "https://www.wee-bot.com/cdn/shop/files/trottinette-electrique-nami-superstellar-points-forts.webp?v=1781587871&width=1080",
+    "https://www.wee-bot.com/cdn/shop/files/trottinette-electrique-nami-superstellar-pliee-dimensions.webp?v=1781587871&width=1080",
+    "https://www.wee-bot.com/cdn/shop/files/trottinette-electrique-nami-superstellar-garantie-livraison.webp?v=1781587871&width=1080",
+    "https://www.wee-bot.com/cdn/shop/files/trottinette_electrique_nami_superstellar_ecran-572155.png?v=1754054053&width=800"
+   ]
+  },
+  {
+   "id": "ce420bc8-eb01-4f1d-9953-09c4b27571e6",
+   "slug": "dualtron-thunder-3",
+   "name": "Dualtron Thunder 3",
+   "brand": "Dualtron",
+   "published": true,
+   "current": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/ce420bc8-eb01-4f1d-9953-09c4b27571e6/1792871498809_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/ce420bc8-eb01-4f1d-9953-09c4b27571e6/1792871501221_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/ce420bc8-eb01-4f1d-9953-09c4b27571e6/1792871504091_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/ce420bc8-eb01-4f1d-9953-09c4b27571e6/1792871507480_0.png"
+   ],
+   "candidates": [
+    "https://dualtron-store.com/wp-content/uploads/2023/02/Adobe_Express_20250128_1840280_1.png",
+    "http://www.wee-bot.com/cdn/shop/files/trottinette-electrique-dualtron-thunder-3-pas-cher_317e0746-ab51-4420-957e-26657ce4b666.jpg?v=1786708939",
+    "https://www.wee-bot.com/cdn/shop/files/trottinette-electrique-dualtron-thunder-3-pas-cher_317e0746-ab51-4420-957e-26657ce4b666_600x600_crop_center.jpg?v=1786708939",
+    "https://www.wee-bot.com/cdn/shop/files/trottinette-electrique-dualtron-thunder-3-pas-cher_317e0746-ab51-4420-957e-26657ce4b666.jpg?v=1786708939&width=1200",
+    "https://www.wee-bot.com/cdn/shop/files/trottinette-electrique-dualtron-thunder-3-caracteristiques-42-4ah-130km.webp?v=1786708939&width=1080",
+    "https://www.wee-bot.com/cdn/shop/files/chargeur-rapide-officiel-offert-dualtron-thunder-3.png?v=1786708939&width=1080",
+    "https://www.wee-bot.com/cdn/shop/files/trottinette-electrique-dualtron-thunder-3-batterie-42-4ah.webp?v=1786708939&width=1080",
+    "https://www.wee-bot.com/cdn/shop/files/trottinette-electrique-dualtron-thunder-3-points-forts.webp?v=1781587349&width=1080",
+    "https://www.wee-bot.com/cdn/shop/files/trottinette-electrique-dualtron-thunder-3-pliee-dimensions.webp?v=1781587349&width=1080",
+    "https://www.wee-bot.com/cdn/shop/files/trottinette-electrique-dualtron-thunder-3-garantie-livraison.webp?v=1781587349&width=1080"
+   ]
+  },
+  {
+   "id": "de82fc27-dc83-4183-9d5f-2669fd62ac1e",
+   "slug": "segway-ninebot-max-g3",
+   "name": "Segway Ninebot Max G3",
+   "brand": "Segway",
+   "published": true,
+   "current": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/de82fc27-dc83-4183-9d5f-2669fd62ac1e/1792972911214_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/de82fc27-dc83-4183-9d5f-2669fd62ac1e/1792972912550_0.png"
+   ],
+   "candidates": [
+    "https://www.segwayfrance.com/cdn/shop/files/VuelateraledelaSegwayNinebotMAXG3E.webp?v=1762187989",
+    "https://cdn.shopify.com/s/files/1/0983/1487/9322/files/VuelateraledelaSegwayNinebotMAXG3E.webp?v=1762187989",
+    "https://cdn.shopify.com/s/files/1/0983/1487/9322/files/max_g3-1_2.webp?v=1762276432",
+    "https://cdn.shopify.com/s/files/1/0983/1487/9322/files/3_11_6.webp?v=1762276432",
+    "https://cdn.shopify.com/s/files/1/0983/1487/9322/files/max_g3_copy.webp?v=1775122207",
+    "https://cdn.shopify.com/s/files/1/0983/1487/9322/files/4522118463-removebg-preview_e6aec166-6638-406e-84a2-b920d41fe132.webp?v=1775122207",
+    "https://cdn.shopify.com/s/files/1/0983/1487/9322/files/max-g3-block-3-2.png?v=1775122207",
+    "https://cdn.shopify.com/s/files/1/0983/1487/9322/files/max-g3-block-3-3.webp?v=1775122207",
+    "https://cdn.shopify.com/s/files/1/0983/1487/9322/files/max-g3-block-3-8.webp?v=1775122207",
+    "https://cdn.shopify.com/s/files/1/0983/1487/9322/files/VueprincipaleduproduitSegwayNinebotMAXG3E.webp?v=1775122207"
+   ]
+  },
+  {
+   "id": "0407d71e-df03-4cac-a6ee-22f435e243db",
+   "slug": "kugoo-g4",
+   "name": "Kugoo G4",
+   "brand": "Kugoo",
+   "published": true,
+   "current": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/0407d71e-df03-4cac-a6ee-22f435e243db/1792442729415_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/0407d71e-df03-4cac-a6ee-22f435e243db/1792442730710_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/0407d71e-df03-4cac-a6ee-22f435e243db/1792442732833_0.png"
+   ],
+   "candidates": [
+    "http://kukirin-escooter.com/cdn/shop/files/G4_02a15f39-4c0d-4d4e-9d32-c7101571cbee.jpg?v=1786094742&width=2048",
+    "https://kukirin-escooter.com/cdn/shop/files/G4_02a15f39-4c0d-4d4e-9d32-c7101571cbee.jpg?crop=center&height=1200&v=1786094742&width=1200",
+    "https://fr.kukirin-escooter.com/cdn/shop/files/G4_02a15f39-4c0d-4d4e-9d32-c7101571cbee.jpg?v=1786094742&width=1024",
+    "https://cdn.shopify.com/s/files/1/0617/7482/3631/files/G4_02a15f39-4c0d-4d4e-9d32-c7101571cbee.jpg?v=1786094742",
+    "https://cdn.shopify.com/s/files/1/0617/7482/3631/files/G4_1_70c62286-69d2-4220-befd-04734f0194e1.jpg?v=1786094742",
+    "https://cdn.shopify.com/s/files/1/0617/7482/3631/files/2026_G4_2.jpg?v=1776243930",
+    "https://cdn.shopify.com/s/files/1/0617/7482/3631/files/2026_G4_3.jpg?v=1776243930",
+    "https://cdn.shopify.com/s/files/1/0617/7482/3631/files/G4_2_2c4fd62a-a020-4aee-89ad-873d0a6db0e1.jpg?v=1786094742",
+    "https://cdn.shopify.com/s/files/1/0617/7482/3631/files/G4_6.jpg?v=1786094742",
+    "https://cdn.shopify.com/s/files/1/0617/7482/3631/files/g4_4.jpg?v=1786094742"
+   ]
+  },
+  {
+   "id": "a3ff5b76-9a51-4ca3-8773-efeb481bf472",
+   "slug": "inmotion-l9",
+   "name": "Inmotion L9",
+   "brand": "Inmotion",
+   "published": true,
+   "current": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/a3ff5b76-9a51-4ca3-8773-efeb481bf472/1792446730845_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/a3ff5b76-9a51-4ca3-8773-efeb481bf472/1792446732639_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/a3ff5b76-9a51-4ca3-8773-efeb481bf472/1792446735195_0.png"
+   ],
+   "candidates": [
+    "https://www.inmotion-france.com/inmov2/417-large_default/trottinette-electrique-l9.jpg",
+    "https://www.maxblinker.fr/9895-panda_thickbox_default/inmotion-l9.jpg"
+   ]
+  },
+  {
+   "id": "c886d269-9194-4363-952b-aa1fd1453dd7",
+   "slug": "segway-zt3-pro",
+   "name": "Segway ZT3 Pro",
+   "brand": "Segway",
+   "published": true,
+   "current": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/c886d269-9194-4363-952b-aa1fd1453dd7/1792972926442_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/c886d269-9194-4363-952b-aa1fd1453dd7/1792972928239_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/c886d269-9194-4363-952b-aa1fd1453dd7/1792972930917_0.png"
+   ],
+   "candidates": []
+  },
+  {
+   "id": "7cc995a7-7779-452c-84e6-c6b7f1acf4f7",
+   "slug": "soflow-so4-pro",
+   "name": "SoFlow SO4 Pro",
+   "brand": "SoFlow",
+   "published": true,
+   "current": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/7cc995a7-7779-452c-84e6-c6b7f1acf4f7/1792972992039_0.png"
+   ],
+   "candidates": [
+    "https://imagedelivery.net/JAV112JY973Crznn4xb8Sg/702ec1e8-81e5-4382-3068-d3b026d90400/public",
+    "https://imagedelivery.net/JAV112JY973Crznn4xb8Sg/702ec1e8-81e5-4382-3068-d3b026d90400/mobile"
+   ]
+  },
+  {
+   "id": "8381d05a-0bdd-44d4-ada0-a150d69c495d",
+   "slug": "kaabo-wolf-warrior-11-plus",
+   "name": "Kaabo Wolf Warrior 11 Plus",
+   "brand": "Kaabo",
+   "published": true,
+   "current": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/8381d05a-0bdd-44d4-ada0-a150d69c495d/1792871971153_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/8381d05a-0bdd-44d4-ada0-a150d69c495d/1792871973467_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/8381d05a-0bdd-44d4-ada0-a150d69c495d/1792871975988_0.png"
+   ],
+   "candidates": [
+    "http://www.wee-bot.com/cdn/shop/products/Trottinette__lectrique_Kaabo_Wolf_Warrior_11_Plus__pas_cher.jpg?v=1723554339",
+    "https://www.wee-bot.com/cdn/shop/products/Trottinette__lectrique_Kaabo_Wolf_Warrior_11_Plus__pas_cher_600x600_crop_center.jpg?v=1723554339",
+    "https://www.wee-bot.com/cdn/shop/products/Trottinette__lectrique_Kaabo_Wolf_Warrior_11_Plus__pas_cher.jpg?v=1723554339&width=600",
+    "https://www.wee-bot.com/cdn/shop/files/kaabo_wolf_warrior_Plus_robuste-398651.jpg?v=1734952760&width=1200",
+    "https://www.wee-bot.com/cdn/shop/products/trottinette_electrique_kaabo_wolf_warrior_11_batterie.jpg?v=1717659961&width=1000",
+    "https://www.wee-bot.com/cdn/shop/products/trottinette_electrique_kaabo_wolf_warrior_11_design_moderne.jpg?v=1723554465&width=1000",
+    "https://www.wee-bot.com/cdn/shop/products/trottinette_electrique_kaabo_wolf_warrior_roue_11_pouces.jpg?v=1717659972&width=1000",
+    "https://www.wee-bot.com/cdn/shop/products/trottinette_electrique_kaabo_wolf_warrior_11_frein_disque.jpg?v=1717659976&width=1000",
+    "https://www.wee-bot.com/cdn/shop/products/trottinette_electrique_kaabo_wolf_warrior_11_structure.jpg?v=1717659981&width=1000",
+    "https://cdn.shopify.com/s/files/1/0968/8318/products/Trottinette__lectrique_Kaabo_Wolf_Warrior_11_Plus__pas_cher.jpg?v=1723554339"
+   ]
+  },
+  {
+   "id": "e771d2cb-50ba-4172-b89e-83e23ac27cae",
+   "slug": "zero-9",
+   "name": "Zero 9",
+   "brand": "Zero",
+   "published": true,
+   "current": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/e771d2cb-50ba-4172-b89e-83e23ac27cae/1792872663767_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/e771d2cb-50ba-4172-b89e-83e23ac27cae/1792872665766_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/e771d2cb-50ba-4172-b89e-83e23ac27cae/1792872668299_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/e771d2cb-50ba-4172-b89e-83e23ac27cae/1792872671028_0.png"
+   ],
+   "candidates": [
+    "https://www.e-wheels.fr/globalassets/test/fixes/29.08.22-zero-9.jpg",
+    "https://www.maxblinker.fr/344-panda_thickbox_default/zero-9.jpg",
+    "https://www.scooterpassion.be/10913-large_default/trottinette-electrique-power-zero-z9-52v-13a.jpg"
+   ]
+  },
+  {
+   "id": "2cad5810-c00a-470f-bc56-051a8d4b0f6a",
+   "slug": "nami-blast-max",
+   "name": "Nami Blast Max",
+   "brand": "Nami",
+   "published": true,
+   "current": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/2cad5810-c00a-470f-bc56-051a8d4b0f6a/1792972555098_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/2cad5810-c00a-470f-bc56-051a8d4b0f6a/1792972556561_0.png"
+   ],
+   "candidates": [
+    "http://www.wee-bot.com/cdn/shop/files/trottinette_electrique_nami_blast_pas_cher-825414.jpg?v=1734952773",
+    "https://www.wee-bot.com/cdn/shop/files/trottinette_electrique_nami_blast_pas_cher-825414_600x600_crop_center.jpg?v=1734952773",
+    "https://www.wee-bot.com/cdn/shop/files/trottinette_electrique_nami_blast_pas_cher-825414.jpg?v=1734952773&width=1200",
+    "https://www.wee-bot.com/cdn/shop/files/trottinette-electrique-nami-blast-max-caracteristiques-techniques.webp?v=1781587791&width=1080",
+    "https://www.wee-bot.com/cdn/shop/files/trottinette-electrique-nami-blast-max-points-forts.webp?v=1781587791&width=1080",
+    "https://www.wee-bot.com/cdn/shop/files/trottinette-electrique-nami-blast-max-pliee-dimensions.webp?v=1781587791&width=1080",
+    "https://www.wee-bot.com/cdn/shop/files/trottinette-electrique-nami-blast-max-garantie-livraison.webp?v=1781587791&width=1080",
+    "https://www.wee-bot.com/cdn/shop/files/trottinette_electrique_nami_blast_design-728437.png?v=1750674068&width=1200",
+    "https://www.wee-bot.com/cdn/shop/files/trottinette_electrique_nami_blast_max_rapide-392173.png?v=1750674082&width=1200",
+    "https://www.wee-bot.com/cdn/shop/files/trottinette_electrique_Nami_Blast_max_robuste-853466.jpg?v=1734952773&width=1200"
+   ]
+  },
+  {
+   "id": "56e66c1d-5812-4912-8c13-c7f81b5e0f90",
+   "slug": "kaabo-wolf-king-gt-pro-plus",
+   "name": "Kaabo Wolf King GT Pro Plus",
+   "brand": "Kaabo",
+   "published": true,
+   "current": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/56e66c1d-5812-4912-8c13-c7f81b5e0f90/1792442471185_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/56e66c1d-5812-4912-8c13-c7f81b5e0f90/1792442472741_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/56e66c1d-5812-4912-8c13-c7f81b5e0f90/1792442475806_0.png"
+   ],
+   "candidates": []
+  },
+  {
+   "id": "11bbbf20-7d05-4ca6-9906-b174a6bf7bae",
+   "slug": "dualtron-mini",
+   "name": "Dualtron Mini",
+   "brand": "Dualtron",
+   "published": true,
+   "current": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/11bbbf20-7d05-4ca6-9906-b174a6bf7bae/1792871469892_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/11bbbf20-7d05-4ca6-9906-b174a6bf7bae/1792871472275_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/11bbbf20-7d05-4ca6-9906-b174a6bf7bae/1792871474669_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/11bbbf20-7d05-4ca6-9906-b174a6bf7bae/1792871477709_0.png"
+   ],
+   "candidates": [
+    "https://dualtron-store.com/wp-content/uploads/2020/01/Sans-titre-19.png",
+    "https://greentoride.fr/wp-content/uploads/2022/04/Capture-d%E2%80%99%C3%A9cran-2023-01-30-%C3%A0-21.18.52.png",
+    "https://cdn.shopify.com/s/files/1/0700/3272/0159/products/trottinette-electrique-dualtron-mini-double-frein-13-ah_20_6_-800x800.jpg?v=1699439106"
+   ]
+  },
+  {
+   "id": "6e6aa0b5-3d7c-4d5f-b13e-e3069d667c2b",
+   "slug": "kingsong-e1",
+   "name": "Kingsong E1",
+   "brand": "Kingsong",
+   "published": true,
+   "current": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/6e6aa0b5-3d7c-4d5f-b13e-e3069d667c2b/1792447731082_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/6e6aa0b5-3d7c-4d5f-b13e-e3069d667c2b/1792447735278_0.png"
+   ],
+   "candidates": [
+    "https://www.kingsong-store.com/1088-large_default/trottinette-electrique-kingsong-ks-e1-37-v-78-ah.jpg",
+    "https://www.kingsong-store.com/1088-home_default/trottinette-electrique-kingsong-ks-e1-37-v-78-ah.jpg",
+    "https://media.cdnws.com/_i/21277/fb%7B630%7D-6682/3541/83/trotitnette-electrique-kingsong-e1.jpeg",
+    "https://media.cdnws.com/_i/21277/6682/3541/83/trotitnette-electrique-kingsong-e1.jpeg",
+    "https://media.cdnws.com/_i/21277/6683/2725/84/trotitnette-electrique-kingsong-e1-afficheur.jpeg",
+    "https://media.cdnws.com/_i/21277/6680/1434/81/trotitnette-electrique-kingsong-e1-amortisseur.jpeg",
+    "https://media.cdnws.com/_i/21277/6681/2208/82/trotitnette-electrique-kingsong-e1-frein.jpeg",
+    "http://mazrider.com/cdn/shop/files/IMG-9645.png?v=1767132642",
+    "https://mazrider.com/cdn/shop/files/IMG-9645.png?v=1767132642&width=1920",
+    "https://cdn.shopify.com/s/files/1/0795/5837/7800/files/IMG-9645.png?v=1767132642"
+   ]
+  },
+  {
+   "id": "faf61b40-125e-4ad7-b5e8-f155d5166014",
+   "slug": "kugoo-g2-master",
+   "name": "Kugoo G2 Master",
+   "brand": "Kugoo",
+   "published": true,
+   "current": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/faf61b40-125e-4ad7-b5e8-f155d5166014/1792447860830_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/faf61b40-125e-4ad7-b5e8-f155d5166014/1792447863125_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/faf61b40-125e-4ad7-b5e8-f155d5166014/1792867654285_0.png"
+   ],
+   "candidates": [
+    "https://www.kukirin-officiel.com/cdn/shop/files/trottinette-electrique-kukirin-g2-master-2000w-70-km-dautonomie-double-moteur-7195984.jpg?v=1764467673",
+    "https://cdn.shopify.com/s/files/1/0310/0855/5140/files/trottinette-electrique-kukirin-g2-master-2000w-70-km-dautonomie-double-moteur-7195984.jpg?v=1764467673",
+    "https://cdn.shopify.com/s/files/1/0310/0855/5140/files/trottinette-electrique-kukirin-g2-master-2000w-70-km-dautonomie-double-moteur-7873284.webp?v=1764467614",
+    "https://cdn.shopify.com/s/files/1/0310/0855/5140/files/trottinette-electrique-kukirin-g2-master-2000w-70-km-dautonomie-double-moteur-7092898.webp?v=1764467850",
+    "https://cdn.shopify.com/s/files/1/0310/0855/5140/files/trottinette-electrique-kukirin-g2-master-2000w-70-km-dautonomie-double-moteur-3545916.webp?v=1764467670",
+    "https://cdn.shopify.com/s/files/1/0310/0855/5140/files/trottinette-electrique-kukirin-g2-master-2000w-70-km-dautonomie-double-moteur-7206716.webp?v=1764467614",
+    "https://cdn.shopify.com/s/files/1/0310/0855/5140/files/trottinette-electrique-kukirin-g2-master-2000w-70-km-dautonomie-double-moteur-6333745.webp?v=1764467615",
+    "https://cdn.shopify.com/s/files/1/0310/0855/5140/files/trottinette-electrique-kukirin-g2-master-2000w-70-km-dautonomie-double-moteur-6718437.webp?v=1764467782",
+    "https://cdn.shopify.com/s/files/1/0310/0855/5140/files/trottinette-electrique-kukirin-g2-master-2000w-70-km-dautonomie-double-moteur-9023823.webp?v=1764467850",
+    "https://cdn.shopify.com/s/files/1/0310/0855/5140/files/trottinette-electrique-kukirin-g2-master-2000w-70-km-dautonomie-double-moteur-4947850.webp?v=1764467848"
+   ]
+  },
+  {
+   "id": "19d9217a-017c-4ca1-bc22-2569d6562fce",
+   "slug": "ninebot-f3-pro-e",
+   "name": "Ninebot F3 Pro E",
+   "brand": "Ninebot",
+   "published": true,
+   "current": [
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/19d9217a-017c-4ca1-bc22-2569d6562fce/1792972753872_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/19d9217a-017c-4ca1-bc22-2569d6562fce/1792972755140_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/19d9217a-017c-4ca1-bc22-2569d6562fce/1792972757224_0.png",
+    "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/19d9217a-017c-4ca1-bc22-2569d6562fce/1792972759211_0.png"
+   ],
+   "candidates": [
+    "https://www.segwayfrance.com/cdn/shop/files/f3-2_1_1.webp?v=1768902978",
+    "https://cdn.shopify.com/s/files/1/0983/1487/9322/files/f3-2_1_1.webp?v=1768902978",
+    "https://cdn.shopify.com/s/files/1/0983/1487/9322/files/f3-3_1_1.webp?v=1768902979",
+    "https://cdn.shopify.com/s/files/1/0983/1487/9322/files/f3_main-123.webp?v=1768902979",
+    "https://cdn.shopify.com/s/files/1/0983/1487/9322/files/f3_copy.webp?v=1775122349",
+    "https://cdn.shopify.com/s/files/1/0983/1487/9322/files/trottinette-electrique-segway-f3-pro-e_2_copy.webp?v=1775122349",
+    "https://cdn.shopify.com/s/files/1/0983/1487/9322/files/trottinette-electrique-segway-f3-pro-ecopy.webp?v=1775122349",
+    "https://cdn.shopify.com/s/files/1/0983/1487/9322/files/Trottinette-electrique-Segway-Ninebot-F3-Pro-E-550-W-Gris-et-Noir_1_copy.webp?v=1775122349",
+    "https://cdn.shopify.com/s/files/1/0983/1487/9322/files/Trottinette-electrique-Segway-Ninebot-F3-E-450-W-Gris-et-Noir_2_copy.webp?v=1775122349",
+    "https://cdn.shopify.com/s/files/1/0983/1487/9322/files/Trottinette-electrique-Segway-Ninebot-F3-E-450-W-Gris-et-Noir_3_copy.webp?v=1775122349"
+   ]
+  }
+ ]
+}
