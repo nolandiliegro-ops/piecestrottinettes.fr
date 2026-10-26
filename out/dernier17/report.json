@@ -1,0 +1,760 @@
+[
+ {
+  "slug": "navee-k100",
+  "i": 0,
+  "url": "https://naveetech.us/cdn/shop/files/20251009-113502.png?v=1762331802&width=4500",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.274,
+   "fill": 0.648
+  },
+  "size": [
+   1482,
+   1918
+  ],
+  "error": null,
+  "juge": {
+   "vue": "3/4 avant",
+   "refus": false,
+   "motifs": [],
+   "principale_ok": true,
+   "rang": 0,
+   "note": ""
+  },
+  "doublon": null
+ },
+ {
+  "slug": "navee-k100",
+  "i": 1,
+  "url": "https://naveetech.us/cdn/shop/files/Product_Image_116.jpg?v=1762331802&width=1600",
+  "verdict": "FAIL",
+  "reasons": [
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 8 morceaux",
+   "couleurs vives 32 % (visuel marketing ?)"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 8 morceaux",
+    "couleurs vives 32 % (visuel marketing ?)"
+   ],
+   "parts": 8,
+   "second": 0.319,
+   "vivid": 0.316,
+   "fill": 0.687
+  },
+  "size": [
+   1437,
+   1748
+  ],
+  "error": null,
+  "juge": null,
+  "doublon": null
+ },
+ {
+  "slug": "navee-k100",
+  "i": 2,
+  "url": "https://naveetech.us/cdn/shop/files/Product_Image_112_bb355727-7e7f-40a7-b719-8806051d5a1e.jpg?v=1762331802&width=1600",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.232,
+   "fill": 0.386
+  },
+  "size": [
+   1327,
+   1676
+  ],
+  "error": null,
+  "juge": {
+   "vue": "3/4 avant",
+   "refus": true,
+   "motifs": [
+    "personne",
+    "autre objet"
+   ],
+   "principale_ok": false,
+   "rang": 9,
+   "note": "Enfant en train de rouler avec casque, genouillères et sac à dos sur la trottinette."
+  },
+  "doublon": null
+ },
+ {
+  "slug": "navee-k100",
+  "i": 3,
+  "url": "https://naveetech.us/cdn/shop/files/Product_Image_33.jpg?v=1762331802&width=1600",
+  "verdict": "FAIL",
+  "reasons": [
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 3 morceaux"
+   ],
+   "parts": 3,
+   "second": 0.092,
+   "vivid": 0.251,
+   "fill": 0.395
+  },
+  "size": [
+   1539,
+   1748
+  ],
+  "error": null,
+  "juge": null,
+  "doublon": null
+ },
+ {
+  "slug": "ninebot-e25e",
+  "i": 0,
+  "url": "https://s7ap1.scene7.com/is/image/ninebotstage/assets_segway_cdn_com_Product-Pictures__product_full_E25E_Product-picture-4?dpr=on,3&network=on&fmt=png-alpha",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.011,
+   "fill": 0.845
+  },
+  "size": [
+   427,
+   435
+  ],
+  "error": null,
+  "juge": {
+   "refus": true,
+   "motifs": [
+    "trop petite (402 px)"
+   ],
+   "principale_ok": false,
+   "rang": 9
+  },
+  "doublon": null
+ },
+ {
+  "slug": "ninebot-e25e",
+  "i": 1,
+  "url": "https://s7ap1.scene7.com/is/image/ninebotstage/assets_segway_cdn_com_Product-Pages_KickScooters_KickScooter-E25E__hero_full_E25E_Hero-pict.-with-lights-4?dpr=on,3&network=on",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.173,
+   "fill": 0.766
+  },
+  "size": [
+   1701,
+   861
+  ],
+  "error": null,
+  "juge": null,
+  "doublon": null
+ },
+ {
+  "slug": "ninebot-e25e",
+  "i": 2,
+  "url": "https://www.scootered.co.uk/img/product_page/buying_thumb_e25e_2.png",
+  "verdict": "ERROR",
+  "reasons": [],
+  "plus": null,
+  "size": null,
+  "error": "Command failed: curl -s -L --max-time 40 -A Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Ge",
+  "juge": null,
+  "doublon": null
+ },
+ {
+  "slug": "urbanglide-all-road-5",
+  "i": 0,
+  "url": "https://urbanglide.com/wp-content/uploads/2022/06/RIDE-AR5-1.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.024,
+   "fill": 0.842
+  },
+  "size": [
+   770,
+   813
+  ],
+  "error": null,
+  "juge": {
+   "vue": "profil",
+   "refus": false,
+   "motifs": [],
+   "principale_ok": false,
+   "rang": 2,
+   "note": "basse définition (753 px)"
+  },
+  "doublon": null
+ },
+ {
+  "slug": "urbanglide-ecross-duo",
+  "i": 0,
+  "url": "https://urbanglide.com/wp-content/uploads/2025/02/ECROSSDUO.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.1,
+   "fill": 0.474
+  },
+  "size": [
+   1080,
+   1080
+  ],
+  "error": null,
+  "juge": null,
+  "doublon": "même image (dHash 0, couleur 0.0) (fb016b7c/1792973083502_0.png)"
+ },
+ {
+  "slug": "urbanglide-ecross-duo",
+  "i": 1,
+  "url": "https://fixwheel.fr/cdn/shop/files/2_a950f3f9-94cd-462d-b129-d7e9cd51bf69.png",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.054,
+   "fill": 0.686
+  },
+  "size": [
+   602,
+   1041
+  ],
+  "error": null,
+  "juge": null,
+  "doublon": null
+ },
+ {
+  "slug": "urbanglide-ecross-duo",
+  "i": 2,
+  "url": "https://m.media-amazon.com/images/I/71FE4aEU2bL.jpg",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "élément en plus (logo, badge, téléphone, 2e trottinette) : 4 morceaux"
+  ],
+  "plus": {
+   "verdict": "FAIL",
+   "reasons": [
+    "élément en plus (logo, badge, téléphone, 2e trottinette) : 4 morceaux"
+   ],
+   "parts": 4,
+   "second": 0.047,
+   "vivid": 0.102,
+   "fill": 0.704
+  },
+  "size": [
+   1750,
+   1733
+  ],
+  "error": null,
+  "juge": null,
+  "doublon": null
+ },
+ {
+  "slug": "urbanglide-ecross-duo",
+  "i": 3,
+  "url": "https://m.media-amazon.com/images/I/810H0n2KAWL.jpg",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.223,
+   "fill": 0.755
+  },
+  "size": [
+   1760,
+   1760
+  ],
+  "error": null,
+  "juge": null,
+  "doublon": null
+ },
+ {
+  "slug": "urbanglide-ecross-max-2x2-gen-2",
+  "i": 0,
+  "url": "https://contents.mediadecathlon.com/m28485623/k$19bf79cf8286ce7f6e37f56d12eccfe9/picture.jpg",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor",
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0.011,
+   "vivid": 0.089,
+   "fill": 0.655
+  },
+  "size": [
+   1760,
+   1490
+  ],
+  "error": null,
+  "juge": null,
+  "doublon": null
+ },
+ {
+  "slug": "urbanglide-ecross-max-2x2-gen-2",
+  "i": 1,
+  "url": "https://www.cdiscount.com/pdt2/9/2/5/3/700x700/aacuu80925/rw/trottinette-lectrique-adulte.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.046,
+   "fill": 0.843
+  },
+  "size": [
+   690,
+   717
+  ],
+  "error": null,
+  "juge": {
+   "vue": "3/4 avant",
+   "refus": true,
+   "motifs": [
+    "personne",
+    "texte incrusté"
+   ],
+   "principale_ok": false,
+   "rang": 9,
+   "note": "Utilisateur debout sur la trottinette ; fiche technique incrustée à gauche avec icônes ; résidus de détourage. · basse définition (656 px)"
+  },
+  "doublon": null
+ },
+ {
+  "slug": "urbanglide-ecross-max-2x2-gen-2",
+  "i": 2,
+  "url": "https://www.cdiscount.com/pdt2/9/2/5/1/700x700/aacuu80925/rw/trottinette-lectrique-adulte.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.061,
+   "fill": 0.843
+  },
+  "size": [
+   406,
+   425
+  ],
+  "error": null,
+  "juge": {
+   "refus": true,
+   "motifs": [
+    "trop petite (393 px)"
+   ],
+   "principale_ok": false,
+   "rang": 9
+  },
+  "doublon": null
+ },
+ {
+  "slug": "urbanglide-ecross-pro-2",
+  "i": 0,
+  "url": "https://urbanglide.com/wp-content/webp-express/webp-images/uploads/2024/08/E-CROSS-PRO-2-1.png.webp",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.201,
+   "fill": 0.838
+  },
+  "size": [
+   752,
+   840
+  ],
+  "error": null,
+  "juge": {
+   "vue": "profil",
+   "refus": false,
+   "motifs": [],
+   "principale_ok": false,
+   "rang": 2,
+   "note": "basse définition (776 px)"
+  },
+  "doublon": null
+ },
+ {
+  "slug": "urbanglide-ecross-pro-2",
+  "i": 1,
+  "url": "https://api.bflex.io/media/product/7780/6a4630ec82001_ECROSS-PRO-2_5.jpg",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.033,
+   "fill": 0.843
+  },
+  "size": [
+   735,
+   811
+  ],
+  "error": null,
+  "juge": {
+   "vue": "3/4 avant",
+   "refus": false,
+   "motifs": [],
+   "principale_ok": false,
+   "rang": 2,
+   "note": "Tige coupée en haut de l'image, guidon non visible. · basse définition (751 px)"
+  },
+  "doublon": null
+ },
+ {
+  "slug": "urbanglide-ecross-pro-boost-2",
+  "i": 0,
+  "url": "https://urbanglide.com/wp-content/uploads/2024/08/E-CROSS-PRO-BOOST-2.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.174,
+   "fill": 0.411
+  },
+  "size": [
+   1080,
+   1080
+  ],
+  "error": null,
+  "juge": {
+   "vue": "profil",
+   "refus": false,
+   "motifs": [],
+   "principale_ok": false,
+   "rang": 2,
+   "note": "basse définition (740 px)"
+  },
+  "doublon": null
+ },
+ {
+  "slug": "urbanglide-ecross-pro-boost-2",
+  "i": 1,
+  "url": "https://fixwheel.fr/cdn/shop/files/URBANGLIDEEcrossproboost2_2.png?v=1764350497",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.061,
+   "fill": 0.707
+  },
+  "size": [
+   710,
+   792
+  ],
+  "error": null,
+  "juge": null,
+  "doublon": null
+ },
+ {
+  "slug": "urbanglide-ecross-pro-boost-2",
+  "i": 2,
+  "url": "https://api.bflex.io/media/product/7784/6a4630edb5871_ECROSS-PRO-BOOST-2_1.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.062,
+   "fill": 0.304
+  },
+  "size": [
+   810,
+   810
+  ],
+  "error": null,
+  "juge": {
+   "vue": "3/4 avant",
+   "refus": false,
+   "motifs": [],
+   "principale_ok": false,
+   "rang": 2,
+   "note": "basse définition (579 px)"
+  },
+  "doublon": null
+ },
+ {
+  "slug": "weped-ff",
+  "i": 0,
+  "url": "https://minimotorscanada.com/cdn/shop/products/ff-1_1000x.jpg?v=1635131684",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.017,
+   "fill": 0.535
+  },
+  "size": [
+   966,
+   710
+  ],
+  "error": null,
+  "juge": null,
+  "doublon": null
+ },
+ {
+  "slug": "weped-ff",
+  "i": 1,
+  "url": "https://scooter.guide/wp-content/uploads/2021/04/weped-ff.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.007,
+   "fill": 0.332
+  },
+  "size": [
+   1620,
+   1074
+  ],
+  "error": null,
+  "juge": {
+   "vue": "profil",
+   "refus": false,
+   "motifs": [],
+   "principale_ok": false,
+   "rang": 2,
+   "note": "basse définition (765 px)"
+  },
+  "doublon": null
+ },
+ {
+  "slug": "weped-fold-11",
+  "i": 0,
+  "url": "http://pietechnologie.com/cdn/shop/products/trottinette-electrique-weped-fold-11.jpg?v=1632923311",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.002,
+   "fill": 0.84
+  },
+  "size": [
+   759,
+   829
+  ],
+  "error": null,
+  "juge": {
+   "vue": "profil",
+   "refus": false,
+   "motifs": [],
+   "principale_ok": false,
+   "rang": 2,
+   "note": "basse définition (766 px)"
+  },
+  "doublon": null
+ },
+ {
+  "slug": "weped-fold-3",
+  "i": 0,
+  "url": "https://cafe24img.poxo.com/weped/web/product/big/202312/90175a5805b1e0b0e7b06e77357813cb.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.082,
+   "fill": 0.832
+  },
+  "size": [
+   688,
+   735
+  ],
+  "error": null,
+  "juge": null,
+  "doublon": "même image (dHash 0, couleur 0.0) (36074980/1793002373865_0.png)"
+ },
+ {
+  "slug": "weped-ssgt",
+  "i": 0,
+  "url": "http://pietechnologie.com/cdn/shop/products/wepedssgt1.jpg?v=1645506348",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.015,
+   "fill": 0.523
+  },
+  "size": [
+   864,
+   864
+  ],
+  "error": null,
+  "juge": {
+   "vue": "3/4 arriere",
+   "refus": false,
+   "motifs": [],
+   "principale_ok": false,
+   "rang": 2,
+   "note": "Vue arrière en 3/4, la roue avant est floue au fond. · basse définition (719 px)"
+  },
+  "doublon": null
+ },
+ {
+  "slug": "weped-ssgt",
+  "i": 1,
+  "url": "https://pietechnologie.com/cdn/shop/products/wepedssgt2.jpg?v=1645506347",
+  "verdict": "WARN",
+  "reasons": [
+   "basse définition",
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.002,
+   "fill": 0.819
+  },
+  "size": [
+   714,
+   541
+  ],
+  "error": null,
+  "juge": null,
+  "doublon": "même image (dHash 1, couleur 1.1) (0ac8e64e/1792973173073_0.png)"
+ },
+ {
+  "slug": "xiaomi-electric-scooter-6-max",
+  "i": 0,
+  "url": "https://voltride.com/wp-content/uploads/2026/05/xiaomiscooter6max-left-side.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.043,
+   "fill": 0.397
+  },
+  "size": [
+   972,
+   972
+  ],
+  "error": null,
+  "juge": {
+   "vue": "profil",
+   "refus": false,
+   "motifs": [],
+   "principale_ok": false,
+   "rang": 2,
+   "note": "basse définition (616 px)"
+  },
+  "doublon": null
+ },
+ {
+  "slug": "xiaomi-electric-scooter-6-max",
+  "i": 1,
+  "url": "https://voltride.com/wp-content/uploads/2026/05/xiaomielectricscooter6max-front.jpg",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.045,
+   "fill": 0.231
+  },
+  "size": [
+   972,
+   972
+  ],
+  "error": null,
+  "juge": {
+   "vue": "face",
+   "refus": false,
+   "motifs": [],
+   "principale_ok": false,
+   "rang": 2,
+   "note": "basse définition (680 px)"
+  },
+  "doublon": null
+ }
+]
