@@ -1,0 +1,147 @@
+{
+ "displayName": "Halo Knight T102",
+ "metaTitle": "Halo Knight T102 : fiche technique et pièces",
+ "metaDescription": "Halo Knight T102 : moteur 1 200 W, batterie 52 V 21 Ah, pneus à chambre 80/65-6 (10x3), disques mécaniques, double suspension, 31,5 kg. Pièces compatibles.",
+ "intro": [
+  "La Halo Knight T102 est la version à un seul moteur de la gamme 52 V de Halo Knight, à côté de la T104 bimoteur qui a sa propre fiche. Halo Knight la vend 579 € sur son site français, au lieu de 799 €. Elle mise sur l'équipement : écran central avec démarrage NFC, application Bluetooth, clignotants et éclairage RVB.",
+  "Son moteur arrière de 1 200 W délivre 35 N·m et puise dans une batterie de 52 V 21 Ah, soit 1 092 Wh, pour 45 km annoncés. Elle roule sur des pneus route de 10 pouces en 80/65-6 avec chambre à air, freine par deux disques mécaniques et pèse 31,5 kg."
+ ],
+ "specs": [
+  [
+   "Moteur",
+   "1 200 W, 35 N·m de couple, roue arrière"
+  ],
+  [
+   "Vitesse",
+   "25 km/h sur la voie publique ; 45 à 50 km/h annoncés, réservés aux terrains privés"
+  ],
+  [
+   "Autonomie annoncée",
+   "jusqu'à 45 km"
+  ],
+  [
+   "Batterie",
+   "52 V 21 Ah (1 092 Wh)"
+  ],
+  [
+   "Poids",
+   "31,5 kg net (38 kg emballée)"
+  ],
+  [
+   "Charge max",
+   "120 kg"
+  ],
+  [
+   "Roues",
+   "10 pouces, pneus route 80/65-6 (10x3) avec chambre à air"
+  ],
+  [
+   "Freins",
+   "Disques mécaniques avant et arrière"
+  ],
+  [
+   "Suspension",
+   "Ressorts avant et arrière, amortisseur de direction"
+  ],
+  [
+   "Étanchéité",
+   "IP54 (IPX4 selon idealo)"
+  ],
+  [
+   "Temps de charge",
+   "5 à 7 h (chargeur 52 V 3 A)"
+  ]
+ ],
+ "pros": [
+  "Équipement complet pour le prix : démarrage NFC, application Bluetooth, clignotants et éclairage RVB (Darty).",
+  "Batterie de 1 092 Wh, la même énergie que la T104, pour 220 € de moins au relevé du Tech.",
+  "Deux freins à disque et suspensions à ressort à l'avant comme à l'arrière (Boulanger)."
+ ],
+ "cons": [
+  "31,5 kg pour un seul moteur, un poids relevé aussi par Le Tech.",
+  "Aucun essai terrain publié : les 45 km restent un chiffre de Halo Knight.",
+  "IP54 seulement : évite les grosses averses (HOC.hu).",
+  "Le Tech signalait une mention de prévente sur la fiche française : vérifie le délai de livraison."
+ ],
+ "parts": [
+  {
+   "label": "Pneu",
+   "size": "80/65-6 (10x3)",
+   "count": 11,
+   "to": "/piece/pneu-80-65-6-10x3-ewheel",
+   "cta": "Pneus 80/65-6"
+  },
+  {
+   "label": "Chambre à air",
+   "size": "80/65-6 (10x3), valve droite ou coudée",
+   "count": 3,
+   "to": "/piece/chambre-a-air-80-65-6-10x3-valve-droite-ewheel",
+   "cta": "Chambres 10x3"
+  }
+ ],
+ "care": [
+  "Garde la pression des pneus 80/65-6 vers 3,5 bars (345 kPa selon Halo Knight) : en dessous, la chambre à air se pince sur la jante au premier nid-de-poule.",
+  "Ses deux disques sont à câble : retends-les dès que le levier s'enfonce trop et change les plaquettes avant d'entendre le métal.",
+  "Recharge-la avec le chargeur 52 V 3 A d'origine ; un chargeur 48 V ou 60 V ne convient pas à sa batterie."
+ ],
+ "price": {
+  "text": "579 € sur le site français de Halo Knight (prix habituel 799 €).",
+  "source": "haloknights.com, Le Tech"
+ },
+ "faq": [
+  {
+   "q": "Quelle taille de pneu pour la Halo Knight T102 ?",
+   "a": "Des pneus de 10 pouces en 80/65-6, aussi notés 10x3 ou 255x80, montés avec chambre à air. Une chambre 10x2.50 n'a pas la bonne largeur : prends une chambre 80/65-6."
+  },
+  {
+   "q": "Quelle différence entre la Halo Knight T102 et la T104 ?",
+   "a": "La T104 ajoute un second moteur et va plus vite ; Le Tech relève qu'elle pèse 1,8 kg de moins et coûte 220 € de plus. Les deux ont la même batterie 52 V 21 Ah."
+  },
+  {
+   "q": "Combien de temps pour recharger la T102 ?",
+   "a": "5 à 7 heures avec le chargeur 52 V 3 A fourni, selon Halo Knight."
+  },
+  {
+   "q": "La T102 peut-elle rouler à 50 km/h en ville ?",
+   "a": "Non. Halo Knight annonce 45 à 50 km/h, mais sur la voie publique une trottinette électrique ne doit pas dépasser 25 km/h, la vitesse retenue par Boulanger dans sa fiche. Le reste n'est utilisable que sur un terrain privé."
+  },
+  {
+   "q": "Quels freins sur la Halo Knight T102 ?",
+   "a": "Deux freins à disque mécaniques, à l'avant et à l'arrière, commandés par câble."
+  }
+ ],
+ "sources": [
+  {
+   "label": "Halo Knight France — T102 52 V 1200 W 21 Ah",
+   "url": "https://www.haloknights.com/fr/products/halo-knight-t102-52v-1200w-21ah-electric-scooter"
+  },
+  {
+   "label": "Halo Knight — pneu route 80/65-6 pour T102/T104/T108",
+   "url": "https://www.haloknights.com/fr/products/pneu-de-route-gonflable-tuovt-80-65-6-pour-t102-t104-t108"
+  },
+  {
+   "label": "Boulanger — Halo Knight T102",
+   "url": "https://www.boulanger.com/ref/9000921816"
+  },
+  {
+   "label": "Darty — Halo Knight T102",
+   "url": "https://www.darty.com/nav/achat/ref/MC354082104.html"
+  },
+  {
+   "label": "Le Tech — Halo Knight T102, avis et fiche",
+   "url": "https://ledepanneurtech.com/halo-knight-t102"
+  },
+  {
+   "label": "E-Watts — pneu route 10x3 (80/65-6)",
+   "url": "https://e-watts.fr/produit/pneu-route-10x3-zero-10x-et-kaabo-mantis"
+  },
+  {
+   "label": "Trott en Provence — chambre à air Halo Knight T102",
+   "url": "https://trott-en-provence.fr/chambre-a-air-halo-knight-t102/"
+  },
+  {
+   "label": "HOC.hu — Halo Knight T102",
+   "url": "https://en.hoc.hu/halo-knight-t102-electric-scooter-review-reaps-the-rewards-based-on-specifications/"
+  }
+ ]
+}

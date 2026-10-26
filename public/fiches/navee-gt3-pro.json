@@ -1,0 +1,155 @@
+{
+ "displayName": "Navee GT3 Pro",
+ "metaTitle": "Navee GT3 Pro : fiche technique, avis et pièces",
+ "metaDescription": "Navee GT3 Pro : 400 W (1 000 W en pointe), batterie 477 Wh, 60 km annoncés, pneus tubeless 10x2.50-6.5, tambour avant. Tests, entretien et pièces.",
+ "intro": [
+  "Entre la GT3 de base et la GT3 Max, la Navee GT3 Pro est un modèle à part entière de la série GT3, à ne pas confondre avec ses deux voisines. Navee France l'affiche à 379 €, avec suspensions avant et arrière, contrôle de traction, clignotants et déverrouillage par proximité.",
+  "Elle embarque un moteur arrière de 400 W (1 000 W en pointe) et une batterie de 46,8 V et 10,2 Ah, soit 477 Wh, pour 60 km annoncés à 15 km/h. Les pneus tubeless de 10 pouces sont en 10x2.50-6.5. Freinage par tambour à l'avant et frein électronique à l'arrière, 22 kg sur la balance, bridage à 25 km/h."
+ ],
+ "specs": [
+  [
+   "Moteur",
+   "400 W nominal, 1 000 W en pointe"
+  ],
+  [
+   "Vitesse",
+   "25 km/h, modes 6 / 20 / 25 km/h"
+  ],
+  [
+   "Autonomie annoncée",
+   "60 km à 15 km/h, 50 km à 20 km/h, 45 km à 25 km/h"
+  ],
+  [
+   "Batterie",
+   "46,8 V, 10,2 Ah, 477 Wh"
+  ],
+  [
+   "Poids",
+   "22 kg"
+  ],
+  [
+   "Charge max",
+   "120 kg"
+  ],
+  [
+   "Pente max",
+   "22 %"
+  ],
+  [
+   "Roues",
+   "10 pouces, tubeless 10x2.50-6.5 (60/70-6.5)"
+  ],
+  [
+   "Freins",
+   "Tambour avant + électronique arrière (E-ABS)"
+  ],
+  [
+   "Suspension",
+   "Fourche avant suspendue + cylindres d'amortissement arrière"
+  ],
+  [
+   "Étanchéité",
+   "IPX5"
+  ],
+  [
+   "Temps de charge",
+   "environ 8 h"
+  ],
+  [
+   "Pression des pneus",
+   "45 psi avant et arrière (Navee)"
+  ]
+ ],
+ "pros": [
+  "Autonomie solide en usage réel : environ 50 km en trajets mixtes selon Julsa, 44 km selon Objets du Futur.",
+  "Suspensions avant et arrière, contrôle de traction et Apple Localiser (Navee).",
+  "Pièces détachées annoncées disponibles 5 ans (Fnac)."
+ ],
+ "cons": [
+  "Autour de 40 km seulement en roulant toujours à fond (Gohanblog).",
+  "22 kg : lourde à monter dans les escaliers.",
+  "Freinage mécanique limité au tambour avant.",
+  "La Fnac ne la vend plus : vérifie la disponibilité avant de compter dessus."
+ ],
+ "parts": [
+  {
+   "label": "Pneu",
+   "size": "10x2.50-6.5 (60/70-6.5) tubeless",
+   "count": 13,
+   "to": "/piece/pneu-tubeless-10x2-50-6-5-yuanxing",
+   "cta": "Pneus 10x2.50-6.5"
+  },
+  {
+   "label": "Chambre à air",
+   "size": "10x2.50, valve droite ou coudée",
+   "count": 6,
+   "to": "/piece/chambre-a-air-10x250-valve-0x90",
+   "cta": "Chambres 10x2.50"
+  }
+ ],
+ "care": [
+  "Le tambour avant s'use lentement mais se dérègle : reprends la tension du câble dès que le levier touche presque la poignée.",
+  "Navee recommande 45 psi à l'avant comme à l'arrière : vérifie avant chaque sortie, un tubeless perd de l'air sans prévenir.",
+  "Après la pluie, essuie les cylindres arrière et la fourche, puis contrôle qu'aucun jeu n'est apparu au pliage."
+ ],
+ "price": {
+  "text": "379 € sur la boutique Navee France (prix barré 579 €).",
+  "source": "Navee France"
+ },
+ "faq": [
+  {
+   "q": "Quelle taille de pneu sur la Navee GT3 Pro ?",
+   "a": "Des tubeless de 10 pouces en 10x2.50-6.5, cote aussi écrite 60/70-6.5, sur jante de 6,5 pouces."
+  },
+  {
+   "q": "Quelle autonomie réelle pour la Navee GT3 Pro ?",
+   "a": "Les essais français varient selon l'usage : environ 40 km à fond pour Gohanblog, 44 km pour Objets du Futur, environ 50 km en trajets mixtes pour Julsa. Navee annonce 60 km à 15 km/h."
+  },
+  {
+   "q": "La Navee GT3 Pro a-t-elle un frein à disque ?",
+   "a": "Non. Elle freine avec un tambour à l'avant et un frein électronique (E-ABS) à l'arrière."
+  },
+  {
+   "q": "Quelle différence entre la Navee GT3 et la GT3 Pro ?",
+   "a": "La GT3 Pro passe à 400 W (1 000 W en pointe) et 477 Wh, contre 350 W (700 W) et 358 Wh sur la GT3 de base. Elle accepte 120 kg contre 110 kg. Vérifie le modèle exact avant de commander une pièce."
+  },
+  {
+   "q": "Une chambre à air rentre-t-elle dans le pneu de la GT3 Pro ?",
+   "a": "Oui, une chambre 10x2.50 peut dépanner dans le pneu tubeless si tu crèves souvent."
+  }
+ ],
+ "sources": [
+  {
+   "label": "Navee France — NAVEE GT3 Pro",
+   "url": "https://naveetech.fr/products/navee-gt3-pro"
+  },
+  {
+   "label": "Navee Europe — GT3 Pro (version UE)",
+   "url": "https://eu.naveetech.com/products/navee-gt3-pro-e-scooter"
+  },
+  {
+   "label": "Fnac — Navee GT3 Pro 400 W",
+   "url": "https://www.fnac.com/Trottinette-electrique-Navee-GT3-Pro-400-W-Noir/a21147930/w-4"
+  },
+  {
+   "label": "Julsa — test Navee GT3 Pro",
+   "url": "https://www.julsa.fr/test-navee-gt3-pro/"
+  },
+  {
+   "label": "Objets du Futur — Navee GT3 Pro",
+   "url": "https://www.objetsdufutur.fr/2025/05/09/navee-gt3-pro-une-trottinette-pour-debutant-sage/"
+  },
+  {
+   "label": "Gohanblog — test de la Navee GT3 Pro",
+   "url": "https://www.gohanblog.fr/test-de-la-trottinette-navee-gt3-pro/"
+  },
+  {
+   "label": "Trot'Nation — pièces Navee GT3 Pro",
+   "url": "https://www.trotnation.com/collections/navee-gt3-pro"
+  },
+  {
+   "label": "E-Watts — pneu 10x2.50-6.5 (compatibilités)",
+   "url": "https://e-watts.fr/produit/pneu-10x2-50-6-5-off-road"
+  }
+ ]
+}

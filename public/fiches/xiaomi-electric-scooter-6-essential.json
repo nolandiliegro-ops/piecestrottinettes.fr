@@ -1,0 +1,128 @@
+{
+ "displayName": "Xiaomi Electric Scooter 6 Essential",
+ "metaTitle": "Xiaomi 6 Essential : fiche technique, prix et entretien",
+ "metaDescription": "Xiaomi Electric Scooter 6 Essential : 300 W (500 W en crête), 216 Wh, 25 km annoncés, pneus gonflables 10\", tambour avant, IPX4, 16,3 kg. Fiche et entretien.",
+ "intro": [
+  "La Xiaomi Electric Scooter 6 Essential est la porte d'entrée de la série 6. Repérée en juillet 2026 sur le site mondial de Xiaomi, elle est arrivée en France en septembre. Cette fiche parle de la 6 Essential, à ne pas confondre avec la 6 Lite ni avec l'ancienne Mi Essential. Elle reprend la base de la 6 Lite, sans la suspension avant.",
+  "Moteur de 300 W, 500 W en crête, batterie de 216 Wh pour 25 km annoncés à 15 km/h et 20 km en mode Sport. Pneus gonflables de 10 pouces, tambour à l'avant, frein électronique à l'arrière, cadre en acier. Elle pèse 16,3 kg, soit environ 1,8 kg de moins que la 6 Lite, et accepte 100 kg. Recharge en 8 h environ."
+ ],
+ "specs": [
+  [
+   "Puissance nominale",
+   "300 W"
+  ],
+  [
+   "Puissance crête",
+   "500 W"
+  ],
+  [
+   "Vitesse",
+   "25 km/h (piéton 6 km/h, standard 15 km/h, Sport 25 km/h)"
+  ],
+  [
+   "Autonomie annoncée",
+   "25 km à 15 km/h ; 20 km en mode Sport"
+  ],
+  [
+   "Batterie",
+   "216 Wh"
+  ],
+  [
+   "Poids",
+   "16,3 kg"
+  ],
+  [
+   "Charge max",
+   "100 kg"
+  ],
+  [
+   "Pente max",
+   "15 %"
+  ],
+  [
+   "Roues",
+   "10 pouces, pneus gonflables"
+  ],
+  [
+   "Freins",
+   "Tambour avant + électronique arrière (E-ABS)"
+  ],
+  [
+   "Suspension",
+   "Aucune"
+  ],
+  [
+   "Étanchéité",
+   "IPX4 (batterie IPX6)"
+  ],
+  [
+   "Temps de charge",
+   "environ 8 h"
+  ]
+ ],
+ "pros": [
+  "16,3 kg : la plus légère de la série 6 (Xiaomi, Frandroid).",
+  "Potence abaissée à 1 226 mm de haut (Frandroid).",
+  "Batterie protégée IPX6, selon Xiaomi."
+ ],
+ "cons": [
+  "Pas de suspension : seuls les pneus de 10 pouces filtrent les pavés (Cleanrider, Frandroid).",
+  "25 km annoncés, seulement 20 km en Sport.",
+  "Recharge d'environ 8 h.",
+  "359,99 € au lancement, plus cher que la 6 Lite trouvée à 329,99 € (Frandroid)."
+ ],
+ "parts": [],
+ "care": [
+  "Frein à tambour avant : si le levier devient mou, reprends la tension du câble à la molette avant de penser à changer les mâchoires.",
+  "Sans suspension, ce sont les pneus qui amortissent : vérifie leur pression toutes les deux semaines, c'est aussi ce qui limite les crevaisons par pincement.",
+  "Le cadre n'est certifié qu'IPX4 : évite de la laver au jet et essuie-la après une averse."
+ ],
+ "price": {
+  "text": "Sortie en France à 359,99 €, puis 339,99 € sur le site Xiaomi en septembre 2026.",
+  "source": "Frandroid, idealo"
+ },
+ "faq": [
+  {
+   "q": "Quelle différence entre la Xiaomi 6 Essential et la 6 Lite ?",
+   "a": "Même moteur, même batterie de 216 Wh, mêmes 25 km annoncés et mêmes freins. L'Essential perd la double suspension avant de la Lite, pèse 16,3 kg au lieu de 18,1 kg et a une potence plus basse."
+  },
+  {
+   "q": "La Xiaomi 6 Essential est-elle vendue en France ?",
+   "a": "Oui. Frandroid annonce sa disponibilité en France en septembre 2026, à 359,99 € au lancement sur le site de Xiaomi."
+  },
+  {
+   "q": "Quels freins sur la Xiaomi 6 Essential ?",
+   "a": "Un tambour à l'avant et un frein électronique E-ABS sur la roue arrière. Il n'y a pas de disque, donc pas de plaquettes à surveiller."
+  },
+  {
+   "q": "Quelle taille de pneu pour la Xiaomi 6 Essential ?",
+   "a": "Xiaomi parle de pneus gonflables de 10 pouces sans publier la cote exacte. Lis la dimension inscrite sur le flanc de ton pneu avant d'acheter un pneu ou une chambre à air."
+  }
+ ],
+ "sources": [
+  {
+   "label": "Xiaomi France — Electric Scooter 6 Essential",
+   "url": "https://www.mi.com/fr/product/xiaomi-electric-scooter-6-essential/"
+  },
+  {
+   "label": "Xiaomi France — Electric Scooter 6 Essential, caractéristiques",
+   "url": "https://www.mi.com/fr/product/xiaomi-electric-scooter-6-essential/specs/"
+  },
+  {
+   "label": "Frandroid — Xiaomi confirme l'arrivée de la 6 Essential",
+   "url": "https://www.frandroid.com/marques/xiaomi/3188279_xiaomi-nous-confirme-larrivee-dune-nouvelle-trottinette-electrique-tres-abordable-voici-sa-periode-de-lancement"
+  },
+  {
+   "label": "Frandroid — la 6 Essential sort et baisse déjà",
+   "url": "https://www.frandroid.com/bons-plans/3258275_xiaomi-sort-sa-trottinette-electrique-la-plus-abordable-et-son-prix-chute-deja"
+  },
+  {
+   "label": "Cleanrider — Xiaomi Electric Scooter 6 Essential",
+   "url": "https://www.cleanrider.com/actus/xiaomi-electric-scooter-6-essential-trottinette-electrique-moins-300-euros-france/"
+  },
+  {
+   "label": "idealo — trottinettes électriques Xiaomi",
+   "url": "https://www.idealo.fr/liste/116729769/xiaomi-electric-scooter.html"
+  }
+ ]
+}

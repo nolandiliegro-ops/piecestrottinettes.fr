@@ -1,0 +1,128 @@
+{
+ "displayName": "Navee K100",
+ "metaTitle": "Navee K100 : trottinette enfant 6-10 ans, fiche",
+ "metaDescription": "Navee K100 : trottinette électrique enfant 6-10 ans, 130 W, 16 km/h max, 14 km annoncés, roues creuses 7 pouces, tambour arrière, 8,6 kg. Guide parent.",
+ "intro": [
+  "La Navee K100 est la trottinette électrique d'entrée de gamme de Navee pour les enfants, conseillée de 6 à 10 ans. C'est la plus simple de la famille K100, à côté des K100 Pro et K100 Max. Avec 8,6 kg et 50 kg de charge maximale, elle s'adresse aux premiers trajets, sous l'œil d'un adulte.",
+  "Le moteur de 130 W (160 W en pointe) plafonne à 16 km/h. Depuis l'application NAVEE, le parent limite la vitesse et consulte l'historique des sorties. La batterie de 21,6 V et 55 Wh donne 14 km annoncés à 12 km/h et se recharge en 3 h 30. Roues creuses de 7 pouces, tambour arrière, éclairage RGB."
+ ],
+ "specs": [
+  [
+   "Moteur",
+   "130 W nominal, 160 W en pointe"
+  ],
+  [
+   "Vitesse",
+   "16 km/h max, paliers usine 6 / 12 / 16 km/h"
+  ],
+  [
+   "Autonomie annoncée",
+   "14 km à 12 km/h, 9 km à 16 km/h"
+  ],
+  [
+   "Batterie",
+   "21,6 V, 2,55 Ah, 55 Wh"
+  ],
+  [
+   "Poids",
+   "8,6 kg"
+  ],
+  [
+   "Charge max",
+   "50 kg"
+  ],
+  [
+   "Âge conseillé",
+   "6 à 10 ans"
+  ],
+  [
+   "Roues",
+   "7 pouces, creuses (sans air), increvables"
+  ],
+  [
+   "Freins",
+   "Tambour arrière"
+  ],
+  [
+   "Étanchéité",
+   "IPX4 (compartiment batterie IPX7)"
+  ],
+  [
+   "Temps de charge",
+   "environ 3 h 30"
+  ]
+ ],
+ "pros": [
+  "Le parent règle la vitesse maximale depuis l'application NAVEE (Navee).",
+  "Roues creuses de 7 pouces : ni crevaison ni gonflage (Navee).",
+  "8,6 kg seulement et une recharge en 3 h 30 (Navee)."
+ ],
+ "cons": [
+  "Autonomie courte : 9 km annoncés à 16 km/h.",
+  "Guidon non réglable et pas de pliage, selon Navee US : elle ne suit pas l'enfant qui grandit, contrairement aux K100 Pro et K100 Max.",
+  "Charge limitée à 50 kg.",
+  "Aucun test de presse français trouvé : les chiffres viennent du fabricant."
+ ],
+ "parts": [],
+ "care": [
+  "Le tambour arrière est l'unique frein : avant chaque sortie, serre le levier avec ton enfant et vérifie que la roue se bloque franchement.",
+  "Roues creuses : rien à gonfler, mais regarde la gomme régulièrement, une roue fendue se change avant qu'elle ne se déchire.",
+  "IPX4 : éclaboussures oui, flaques et lavage au jet non. Sèche-la avant de la ranger."
+ ],
+ "price": {
+  "text": "169 € sur la boutique Navee France (prix barré 199 €).",
+  "source": "Navee France"
+ },
+ "faq": [
+  {
+   "q": "À partir de quel âge pour la Navee K100 ?",
+   "a": "Navee la conseille de 6 à 10 ans, dans la limite de 50 kg. Pour un enfant plus grand, la gamme propose les K100 Pro et K100 Max, conseillées jusqu'à 14 ans."
+  },
+  {
+   "q": "Peut-on brider la vitesse de la Navee K100 ?",
+   "a": "Oui. Les paliers usine sont 6, 12 et 16 km/h, et le parent peut abaisser la limite depuis l'application NAVEE."
+  },
+  {
+   "q": "Faut-il gonfler les roues de la Navee K100 ?",
+   "a": "Non. Ses roues de 7 pouces sont creuses, sans air ni chambre à air."
+  },
+  {
+   "q": "Quel frein sur la Navee K100 ?",
+   "a": "Un tambour à l'arrière, avec un levier dessiné pour les petites mains."
+  },
+  {
+   "q": "Mon enfant peut-il rouler avec la K100 sur la route ?",
+   "a": "Non. Wheelyshop rappelle qu'il faut 14 ans pour conduire une trottinette électrique sur la voie publique : la K100 reste dans les allées privées et les espaces fermés, avec un adulte à proximité."
+  }
+ ],
+ "sources": [
+  {
+   "label": "Navee — K100, présentation",
+   "url": "https://www.naveetech.com/fr/k100/"
+  },
+  {
+   "label": "Navee Europe — K100, fiche technique",
+   "url": "https://eu.naveetech.com/products/navee-k100"
+  },
+  {
+   "label": "Navee Espagne — K100",
+   "url": "https://es.naveetech.com/products/navee-k100"
+  },
+  {
+   "label": "Navee France — gamme enfants",
+   "url": "https://naveetech.fr/collections/navee-kids-teens"
+  },
+  {
+   "label": "Navee US — K100 et comparatif K100 / Pro / Max",
+   "url": "https://naveetech.us/products/navee-k100"
+  },
+  {
+   "label": "Amazon.de — Navee K100",
+   "url": "https://www.amazon.de/-/en/NAVEE-Scooter-Puncture-proof-Control-Without/dp/B0GGJ4V66D"
+  },
+  {
+   "label": "Wheelyshop — trottinettes Navee",
+   "url": "https://www.wheelyshop.fr/collections/navee"
+  }
+ ]
+}

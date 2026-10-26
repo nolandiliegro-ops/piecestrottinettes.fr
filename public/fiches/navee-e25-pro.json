@@ -1,0 +1,124 @@
+{
+ "displayName": "Navee E25 Pro",
+ "metaTitle": "Navee E25 Pro (EasyRide 25 Pro) : fiche et entretien",
+ "metaDescription": "Navee E25 Pro : 300 W (480 W en pointe), 220 Wh, 25 km annoncés, pneus creux 8,5 pouces, E-ABS avant et tambour arrière. Caractéristiques, limites et FAQ.",
+ "intro": [
+  "La Navee E25 Pro, aussi vendue sous le nom EasyRide 25 Pro, est la petite trottinette urbaine de Navee. Navee France la propose dans une version limitée à 20 km/h, affichée à 199 € au lieu de 329 €. Elle vise les trajets courts : 15,9 kg selon la fiche internationale de Navee, pliage rapide et application NAVEE pour verrouiller la machine et suivre la batterie.",
+  "Côté technique, on trouve un moteur de 300 W (480 W en pointe), une batterie de 21,6 V et 10,2 Ah (220 Wh) pour 25 km annoncés à 15 km/h, une fourche avant à double ressort et des pneus creux de 8,5 pouces qui ne crèvent pas. Le freinage combine un frein électronique à l'avant et un tambour à l'arrière."
+ ],
+ "specs": [
+  [
+   "Moteur",
+   "300 W nominal, 480 W en pointe"
+  ],
+  [
+   "Vitesse",
+   "20 km/h (version Navee France) ; 25 km/h annoncés pour d'autres versions européennes"
+  ],
+  [
+   "Autonomie annoncée",
+   "25 km à 15 km/h, 20 km à 20 km/h, 16 km à 25 km/h"
+  ],
+  [
+   "Batterie",
+   "21,6 V, 10,2 Ah, 220 Wh"
+  ],
+  [
+   "Poids",
+   "15,9 kg (Navee international) ; 16 kg sur Navee France"
+  ],
+  [
+   "Charge max",
+   "90 kg"
+  ],
+  [
+   "Pente max",
+   "14 %"
+  ],
+  [
+   "Roues",
+   "8,5 pouces, pneus creux (alvéolés) sans entretien"
+  ],
+  [
+   "Freins",
+   "Électronique avant (E-ABS) + tambour arrière"
+  ],
+  [
+   "Suspension",
+   "Fourche avant à double ressort"
+  ],
+  [
+   "Étanchéité",
+   "IPX5"
+  ],
+  [
+   "Temps de charge",
+   "environ 8 h"
+  ]
+ ],
+ "pros": [
+  "Freinage jugé mordant et facile à doser grâce au duo tambour + E-ABS (M3).",
+  "Pneus creux de 8,5 pouces : aucune crevaison ni pression à surveiller (Navee).",
+  "Application NAVEE stable pour le verrouillage et le suivi de batterie (M3)."
+ ],
+ "cons": [
+  "Moteur à la peine en côte : avec un pilote d'environ 80 kg, la vitesse retombe à 10-12 km/h dans la moindre montée (M3).",
+  "Les pneus creux filtrent moins bien les chocs qu'un pneu gonflable (M3).",
+  "Charge maximale limitée à 90 kg.",
+  "Huit heures de charge pour une batterie de 220 Wh."
+ ],
+ "parts": [],
+ "care": [
+  "Le tambour arrière est ton seul frein mécanique : dès que le levier descend trop près de la poignée, retends le câble.",
+  "Pneus creux : pas de pression à faire, mais inspecte la bande de roulement chaque mois, une entaille profonde se propage vite.",
+  "IPX5 protège des projections, pas du jet d'eau : nettoie-la à l'éponge et laisse-la sécher dépliée."
+ ],
+ "price": {
+  "text": "199 € sur la boutique Navee France (prix barré 329 €), version limitée à 20 km/h.",
+  "source": "Navee France"
+ },
+ "faq": [
+  {
+   "q": "La Navee E25 Pro et l'EasyRide 25 Pro, c'est la même trottinette ?",
+   "a": "Oui. Navee utilise les deux noms pour le même modèle : 300 W, 220 Wh, pneus creux de 8,5 pouces."
+  },
+  {
+   "q": "Faut-il une chambre à air sur la Navee E25 Pro ?",
+   "a": "Non. Ses pneus de 8,5 pouces sont creux, sans air ni chambre. Pour en changer un, relève la cote écrite sur le flanc du pneu actuel."
+  },
+  {
+   "q": "Comment freine la Navee E25 Pro ?",
+   "a": "Avec un frein électronique (E-ABS) à l'avant et un tambour à l'arrière. Il n'y a ni disque ni plaquettes."
+  },
+  {
+   "q": "La Navee E25 Pro monte-t-elle les côtes ?",
+   "a": "Navee annonce 14 % de pente. Le test de M3 est plus réservé : avec 80 kg à bord, elle ralentit nettement dès que la route monte."
+  },
+  {
+   "q": "Combien de temps pour recharger la Navee E25 Pro ?",
+   "a": "Environ 8 heures pour une charge complète, selon Navee."
+  }
+ ],
+ "sources": [
+  {
+   "label": "Navee France — NAVEE E25 Pro",
+   "url": "https://naveetech.fr/products/navee-e25-pro"
+  },
+  {
+   "label": "Navee — EasyRide 25 Pro, fiche technique",
+   "url": "https://www.naveetech.com/fr/navee-easyride-25pro/"
+  },
+  {
+   "label": "M3 — test Navee Easyride E25 Pro",
+   "url": "https://www.m3.se/article/2773968/navee-easyride-e25-pro-elspark.html"
+  },
+  {
+   "label": "Kidero — Navee E25 Pro",
+   "url": "https://kidero.fr/produit/378455-trottinette-electrique-navee-e25-pro"
+  },
+  {
+   "label": "PCA France — Navee Easyride Pro E25",
+   "url": "https://www.pcafrance.fr/naveasyride25pro.html"
+  }
+ ]
+}

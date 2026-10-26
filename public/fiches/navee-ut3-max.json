@@ -1,0 +1,128 @@
+{
+ "displayName": "Navee UT3 Max",
+ "metaTitle": "Navee UT3 Max : fiche technique, essai et prix",
+ "metaDescription": "Navee UT3 Max : 600 W (1 638 W en pointe), 596,7 Wh, suspension hydraulique avant, disques avant et arrière, pneus tubeless 10\", 24 kg. Essai et prix.",
+ "intro": [
+  "La Navee UT3 Max arrive en France en septembre 2026, vendue 699,99 € chez Fnac, Darty et sur la boutique Navee. Auto Plus la présente comme une tout-chemin très équipée pour son prix : suspension hydraulique à l'avant, double ressort à l'arrière, TCS, clignotants et localisation Apple Find My.",
+  "Moteur arrière de 600 W (1 638 W en pointe), batterie de 46,8 V et 596,7 Wh, donnée pour 90 km à 15 km/h et 60 km à 25 km/h. Pneus tubeless de 10 pouces, freins à disque avant et arrière avec EABS, IPX6. Elle pèse 24 kg et accepte 130 kg."
+ ],
+ "specs": [
+  [
+   "Moteur",
+   "600 W (1 638 W en pointe), propulsion arrière"
+  ],
+  [
+   "Vitesse",
+   "25 km/h"
+  ],
+  [
+   "Autonomie annoncée",
+   "90 km à 15 km/h, 70 km à 20 km/h, 60 km à 25 km/h"
+  ],
+  [
+   "Batterie",
+   "46,8 V, 12,75 Ah, 596,7 Wh"
+  ],
+  [
+   "Poids",
+   "24 kg"
+  ],
+  [
+   "Charge max",
+   "130 kg"
+  ],
+  [
+   "Roues",
+   "10 pouces tubeless"
+  ],
+  [
+   "Freins",
+   "Disques avant et arrière (120 mm selon Navee) + frein électronique EABS"
+  ],
+  [
+   "Suspension",
+   "Hydraulique à l'avant, double ressort à l'arrière"
+  ],
+  [
+   "Étanchéité",
+   "IPX6"
+  ],
+  [
+   "Pente max",
+   "28 %"
+  ],
+  [
+   "Temps de charge",
+   "6 h"
+  ]
+ ],
+ "pros": [
+  "Les suspensions gomment pavés, bordures et chemins de terre, et l'EABS comme le contrôle de traction ont bien fonctionné sous la pluie (Auto Plus).",
+  "Elle a grimpé jusqu'à 28 % avec un pilote de 85 kg lors de l'essai d'Auto Plus.",
+  "Équipement complet pour 699,99 € : éclairage à 360°, clignotants, Apple Find My et déverrouillage FlyLock (Auto Plus, Navee)."
+ ],
+ "cons": [
+  "24 kg, sensibles dès qu'il faut monter un escalier (Konbini).",
+  "L'autonomie restante en kilomètres ne s'affiche que dans l'application, pas sur l'écran de la trottinette (Auto Plus).",
+  "Charge maximale de 130 kg, contre 150 kg pour la UT5 Max.",
+  "Les 90 km supposent 15 km/h ; à 25 km/h, Navee n'en annonce plus que 60."
+ ],
+ "parts": [],
+ "care": [
+  "Freins à disque sur les deux roues : vérifie l'usure des plaquettes et le jeu des leviers toutes les quelques centaines de kilomètres.",
+  "La fourche hydraulique n'aime pas le jet haute pression : nettoie-la à l'éponge et essuie les tubes pour protéger les joints.",
+  "Pneus tubeless de 10 pouces : contrôle la pression chaque mois, c'est elle qui fait l'autonomie et le confort."
+ ],
+ "price": {
+  "text": "699,99 € (prix barré 799 €) sur la boutique française de Navee ; 699,99 € chez Fnac et Darty.",
+  "source": "Navee France, Fnac, Darty"
+ },
+ "faq": [
+  {
+   "q": "Quelle différence entre la Navee UT3 Max et la UT5 Max ?",
+   "a": "La UT3 Max a des roues de 10 pouces, un moteur de 600 W, 596,7 Wh et pèse 24 kg pour 130 kg de charge. La UT5 Max passe en 12 pouces, 700 W, 716,04 Wh, 34 kg et 150 kg de charge."
+  },
+  {
+   "q": "Quels freins sur la Navee UT3 Max ?",
+   "a": "Deux disques, un par roue, de 120 mm selon Navee, associés au frein électronique EABS."
+  },
+  {
+   "q": "Quelle taille de pneu pour la UT3 Max ?",
+   "a": "Navee parle seulement de pneus tubeless de 10 pouces. Avant d'acheter, relève les chiffres moulés sur le flanc de ton pneu."
+  },
+  {
+   "q": "Quelle autonomie pour la UT3 Max à 25 km/h ?",
+   "a": "Navee annonce 60 km en mode Sport, à 25 km/h, et 90 km à 15 km/h. Ces valeurs sont mesurées avec 75 kg à bord, sur le plat."
+  },
+  {
+   "q": "Combien de temps pour recharger la Navee UT3 Max ?",
+   "a": "Environ 6 heures sur une prise domestique, selon Navee et Auto Plus."
+  }
+ ],
+ "sources": [
+  {
+   "label": "Navee France — UT3 Max",
+   "url": "https://naveetech.fr/products/navee-ut3-max"
+  },
+  {
+   "label": "Navee — UT3 Max (fiche française)",
+   "url": "https://www.naveetech.com/fr/navee-ut3-max/"
+  },
+  {
+   "label": "Auto Plus — essai Navee UT3 Max",
+   "url": "https://www.autoplus.fr/mobilite/essai-navee-ut3-max-une-trottinette-electrique-tout-terrain-ultra-equipee-et-hyper-competitive-a-69999-e-1472386.html"
+  },
+  {
+   "label": "Fnac — Navee UT3 Max",
+   "url": "https://www.fnac.com/Trottinette-electrique-Navee-UT3-Max-600-W-Noir/a23155649/w-4"
+  },
+  {
+   "label": "Darty — Navee UT3 Max",
+   "url": "https://www.darty.com/nav/achat/sports_loisirs/glisse_urbaine/trottinette_electrique/navee_ut3maxn.html"
+  },
+  {
+   "label": "Konbini — un an en trottinette avec la UT3 Max",
+   "url": "https://www.konbini.com/lifestyle/jai-passe-un-an-sans-prendre-le-metro-et-ma-vie-a-change/"
+  }
+ ]
+}

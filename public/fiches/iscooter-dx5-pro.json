@@ -1,0 +1,128 @@
+{
+ "displayName": "iScooter DX5 Pro",
+ "metaTitle": "iScooter DX5 Pro : fiche technique et statut",
+ "metaDescription": "iScooter DX5 Pro : trottinette à selle, 2 000 W en crête, batterie 52 V 20 Ah, pneus tubeless 17 x 3,5, freins hydrauliques, 45,5 kg. Fiche et entretien.",
+ "intro": [
+  "L'iScooter DX5 Pro est une trottinette électrique assise : selle et grand panier sont livrés de série, et ses roues de 17 pouces la rapprochent d'un petit scooter. iScooter la vend 749,99 € sur son site français. Avant d'acheter, lis la question du statut légal : avec une place assise, elle ne relève pas de la catégorie des trottinettes électriques du Code de la route.",
+  "Son moteur arrière annonce 2 000 W en crête, alimenté par une batterie de 52 V 20 Ah (1 040 Wh) pour 90 à 100 km annoncés. Pneus tubeless renforcés de 17 x 3,5 pouces, freins à disque hydrauliques aux deux roues, contrôle de traction et démarrage NFC : l'ensemble pèse 45,5 kg."
+ ],
+ "specs": [
+  [
+   "Moteur",
+   "2 000 W en crête, roue arrière (une annonce Rue du Commerce indique 1 500 W)"
+  ],
+  [
+   "Vitesse",
+   "modes 6 / 10 / 15 / 25 km/h ; le mode tout-terrain jusqu'à 60 km/h est réservé aux terrains privés"
+  ],
+  [
+   "Autonomie annoncée",
+   "90 à 100 km selon iScooter et Boulanger ; 60 à 80 km à 25 km/h avec 70 kg selon Rue du Commerce"
+  ],
+  [
+   "Batterie",
+   "52 V 20 Ah (1 040 Wh)"
+  ],
+  [
+   "Poids",
+   "45,5 kg"
+  ],
+  [
+   "Charge max",
+   "150 kg"
+  ],
+  [
+   "Roues",
+   "17 x 3,5 pouces, pneus tubeless renforcés"
+  ],
+  [
+   "Freins",
+   "Disques hydrauliques avant et arrière + frein électrique"
+  ],
+  [
+   "Suspension",
+   "Fourche hydraulique avant ; arrière à ressort selon iScooter, pneumatique selon Boulanger"
+  ],
+  [
+   "Étanchéité",
+   "IPX4"
+  ],
+  [
+   "Temps de charge",
+   "9 à 10 h (chargeur 58,8 V 2 A)"
+  ]
+ ],
+ "pros": [
+  "Freins à disque hydrauliques aux deux roues et pneus de 17 pouces pour la stabilité (Darty).",
+  "Contrôle de traction (TCS), démarrage NFC et alarme antivol intégrée (iScooter, Rue du Commerce).",
+  "Batterie de 1 040 Wh annoncée pour 90 à 100 km (iScooter, Boulanger)."
+ ],
+ "cons": [
+  "45,5 kg : impossible à porter dans un escalier ou à glisser dans un coffre.",
+  "Recharge longue, 9 à 10 heures selon Boulanger.",
+  "Sa selle la sort de la catégorie des trottinettes électriques : vérifie son statut avant de rouler sur la route.",
+  "Des annonces de vendeurs partenaires (Fnac, Darty) affichent une batterie de 18 Ah : vérifie la capacité avant de commander."
+ ],
+ "parts": [],
+ "care": [
+  "Freins hydrauliques : si le levier devient spongieux, fais purger le circuit ; contrôle aussi l'épaisseur des plaquettes tous les quelques mois.",
+  "Pneus tubeless de 17 x 3,5 : surveille la pression chaque semaine, une fuite lente se traite au liquide préventif avant de démonter.",
+  "Recharge uniquement avec un chargeur 58,8 V adapté à sa batterie 52 V, et évite de la stocker vide pendant l'hiver."
+ ],
+ "price": {
+  "text": "749,99 € sur iscooter.fr et sur la boutique européenne d'iScooter (prix de référence 1 299,99 €) ; 769 € chez Boulanger.",
+  "source": "iscooter.fr, iscooterglobal.eu, Boulanger"
+ },
+ "faq": [
+  {
+   "q": "L'iScooter DX5 Pro est-elle une trottinette au sens du Code de la route ?",
+   "a": "Non. L'article R311-1 définit l'engin de déplacement personnel motorisé comme un véhicule sans place assise ; or la DX5 Pro est livrée avec sa selle. Elle ne profite donc pas des règles des trottinettes électriques : renseigne-toi sur la catégorie et les obligations d'homologation et d'assurance qui s'appliquent avant de l'utiliser sur la voie publique."
+  },
+  {
+   "q": "Quels pneus pour l'iScooter DX5 Pro ?",
+   "a": "Des pneus tubeless renforcés de 17 x 3,5 pouces, à l'avant comme à l'arrière, sans chambre à air."
+  },
+  {
+   "q": "Combien de temps pour recharger la DX5 Pro ?",
+   "a": "Compte 9 à 10 heures avec le chargeur 58,8 V 2 A, selon Boulanger ; Rue du Commerce parle de 8 à 10 heures."
+  },
+  {
+   "q": "Batterie 18 Ah ou 20 Ah sur la DX5 Pro ?",
+   "a": "iScooter annonce 52 V 20 Ah (1 040 Wh). Certaines annonces de vendeurs partenaires sur Fnac, Darty ou Cdiscount mentionnent 18 Ah : vérifie la capacité sur l'annonce avant d'acheter."
+  },
+  {
+   "q": "Quelle différence entre l'iScooter DX5 Pro et la F7 ?",
+   "a": "La DX5 Pro monte un moteur de 2 000 W en crête, une batterie 52 V 20 Ah, des roues de 17 pouces et des freins hydrauliques pour 45,5 kg. La F7 se contente de 1 000 W, d'une batterie amovible 48 V 10,4 Ah et de roues de 16 pouces, pour 30,25 kg."
+  }
+ ],
+ "sources": [
+  {
+   "label": "iScooter France — DX5Pro avec siège et grand panier",
+   "url": "https://www.iscooter.fr/products/iscooter-dx5pro-trottinette-electrique-2000-w-avec-siege-et-grand-panier"
+  },
+  {
+   "label": "iScooter EU — DX5Pro",
+   "url": "https://www.iscooterglobal.eu/fr/products/dx5pro-electric-scooter-with-seat"
+  },
+  {
+   "label": "Boulanger — iScooter DX5 Pro",
+   "url": "https://www.boulanger.com/ref/9000960520"
+  },
+  {
+   "label": "Darty — iScooter DX5 Pro",
+   "url": "https://www.darty.com/nav/achat/ref/MC354276640.html"
+  },
+  {
+   "label": "Rue du Commerce — iScooter DX5 Pro",
+   "url": "https://www.rueducommerce.fr/p/m26049545600.html"
+  },
+  {
+   "label": "iScooter France (revendeur) — DX5 Pro",
+   "url": "https://iscooter-france.com/products/trottinette-electrique-moto-iscooter-dx5-pro-2000w-avec-siege"
+  },
+  {
+   "label": "Légifrance — Code de la route, article R311-1",
+   "url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000039276031"
+  }
+ ]
+}

@@ -1,0 +1,138 @@
+{
+ "displayName": "Navee NT5 Max",
+ "metaTitle": "Navee NT5 Max : fiche technique, avis et entretien",
+ "metaDescription": "Navee NT5 Max : 700 W (1 600 W en pointe), 561,6 Wh, pneus tubeless 10,5 x 80 mm, deux disques de 140 mm, 33,5 kg. Specs, tests, prix et conseils.",
+ "intro": [
+  "La Navee NT5 Max est lancée en France le 20 août 2026 selon Auto Plus, au prix de 649 € chez Boulanger. C'est une trottinette taillée pour les gros gabarits et les chemins : 150 kg de charge, double suspension, pneus tubeless de 10,5 pouces larges de 80 mm et étanchéité IPX6.",
+  "Son moteur arrière de 700 W (1 600 W en pointe) puise dans une batterie de 46,8 V et 561,6 Wh, pour 85 km annoncés à 15 km/h et 53 km à 25 km/h. Deux freins à disque de 140 mm et un EABS s'occupent du freinage. Revers de la médaille : 33,5 kg sur la balance."
+ ],
+ "specs": [
+  [
+   "Moteur",
+   "700 W nominaux (1 600 W en pointe), propulsion arrière ; 01net indique 800 W nominaux"
+  ],
+  [
+   "Vitesse",
+   "25 km/h"
+  ],
+  [
+   "Autonomie annoncée",
+   "85 km à 15 km/h, 75 km à 20 km/h, 53 km à 25 km/h"
+  ],
+  [
+   "Batterie",
+   "46,8 V, 12 Ah, 561,6 Wh"
+  ],
+  [
+   "Poids",
+   "33,5 kg"
+  ],
+  [
+   "Charge max",
+   "150 kg"
+  ],
+  [
+   "Roues",
+   "10,5 pouces tubeless, 80 mm de large"
+  ],
+  [
+   "Freins",
+   "Deux disques de 140 mm (avant et arrière) + frein électronique EABS"
+  ],
+  [
+   "Suspension",
+   "Fourche télescopique avant + bras amorti arrière (40 mm de débattement selon Auto Plus)"
+  ],
+  [
+   "Étanchéité",
+   "IPX6"
+  ],
+  [
+   "Pente max",
+   "28 %"
+  ],
+  [
+   "Temps de charge",
+   "5 à 6 h avec le chargeur 54,6 V / 2,5 A fourni"
+  ]
+ ],
+ "pros": [
+  "Châssis prévu pour 150 kg et certifié IPX6 : une vraie option pour les conducteurs de grand gabarit (01net).",
+  "Sur un parcours parisien de 33,2 km, 01net a terminé avec 21 % de batterie, soit environ 50 km au total selon l'application, proche des 53 km annoncés en mode Sport.",
+  "Pneus de 80 mm au dessin texturé : bonne accroche sur sol mouillé comme dans un champ selon 01net."
+ ],
+ "cons": [
+  "33,5 kg et 1,25 m de long : 01net conseille d'avoir un garage, la porter dans un escalier est un effort.",
+  "Pas de pneus à gros crampons comme sur la XT5 Pro : c'est une trottinette de chemins faciles, pas de tout-terrain engagé (01net).",
+  "Les 85 km annoncés supposent 15 km/h constants avec 75 kg à bord : à 25 km/h, Navee n'en promet plus que 53.",
+  "Recharge de 5 à 6 heures avec le chargeur standard."
+ ],
+ "parts": [],
+ "care": [
+  "Deux disques de 140 mm : contrôle l'épaisseur des plaquettes avant et arrière et nettoie les disques au dégraissant frein après une sortie boueuse.",
+  "Pneus tubeless : Navee recommande 45 psi. Vérifie la pression chaque mois, un pneu de 80 mm sous-gonflé fait chuter l'autonomie.",
+  "Des freins trop serrés frottent et grignotent l'autonomie : roues levées, chacune doit tourner librement à la main."
+ ],
+ "price": {
+  "text": "649 € au lancement chez Boulanger (août 2026) ; 649,99 € chez Boulanger et 699 € sur la boutique officielle relevés le 2 octobre 2026.",
+  "source": "Auto Plus, FixWheel"
+ },
+ "faq": [
+  {
+   "q": "Quelle taille de pneu pour la Navee NT5 Max ?",
+   "a": "Navee annonce des pneus tubeless de 10,5 pouces larges de 80 mm, sans publier la cote complète. La cote moulée sur le flanc du pneu d'origine fait foi : recopie-la avant tout achat."
+  },
+  {
+   "q": "Quels freins sur la Navee NT5 Max ?",
+   "a": "Deux freins à disque de 140 mm, un à l'avant et un à l'arrière, complétés par le frein électronique EABS qui récupère de l'énergie."
+  },
+  {
+   "q": "Quelle autonomie réelle pour la Navee NT5 Max ?",
+   "a": "Navee annonce 85 km à 15 km/h et 53 km à 25 km/h. Lors de son essai à Paris, 01net estime l'autonomie totale à environ 50 km en roulant à la vitesse maximale."
+  },
+  {
+   "q": "Quelle différence entre la Navee NT5 Max et la NT5 Ultra X ?",
+   "a": "La NT5 Max a un seul moteur arrière de 700 W et 561,6 Wh de batterie pour 33,5 kg. La NT5 Ultra X a deux moteurs de 500 W, 898,56 Wh et pèse 36,5 kg. Même châssis de 1 250 mm, mais vérifie le nom exact avant de commander une pièce."
+  },
+  {
+   "q": "À quelle pression gonfler les pneus de la NT5 Max ?",
+   "a": "Navee indique 45 psi pour des pneus tubeless. Respecte aussi la valeur gravée sur le flanc du pneu."
+  }
+ ],
+ "sources": [
+  {
+   "label": "Navee France — NT5 Max",
+   "url": "https://naveetech.fr/products/navee-nt5-max"
+  },
+  {
+   "label": "Navee Europe — NT5 Max (version UE 25 km/h)",
+   "url": "https://eu.naveetech.com/en-at/products/nt5-max"
+  },
+  {
+   "label": "01net — test Navee NT5 Max",
+   "url": "https://www.01net.com/tests/test-navee-nt5-max-un-monstre-de-trottinette-electrique-mais-il-faut-un-garage.html"
+  },
+  {
+   "label": "Auto Plus — lancement Navee NT5 Max",
+   "url": "https://www.autoplus.fr/mobilite/navee-nt5-max-1-600-w-de-puissance-une-double-suspension-et-jusqua-85-km-dautonomie-1462352.html"
+  },
+  {
+   "label": "Boulanger — Navee NT5 Max",
+   "url": "https://www.boulanger.com/ref/1243308"
+  },
+  {
+   "label": "FixWheel — prix Navee UT5 Max et NT5 Max",
+   "url": "https://fixwheel.fr/en/blogs/infos/navee-ut5-nt5-2026-vs-ninebot-reconditionne"
+  },
+  {
+   "label": "Service Navee — FAQ autonomie NT5 Max",
+   "url": "https://service.naveetech.com/fr/nt5-max/faqs/mileage-related/"
+  }
+ ],
+ "video": {
+  "id": "4cZ1XhbTbXk",
+  "title": "NAVEE NT5 MAX !",
+  "channel": "KRAMTOO",
+  "uploadDate": "2026-08-16"
+ }
+}

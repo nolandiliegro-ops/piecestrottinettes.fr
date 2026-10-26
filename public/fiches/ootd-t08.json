@@ -1,0 +1,124 @@
+{
+ "displayName": "Ootd T08",
+ "metaTitle": "Ootd T08 : fiche technique et entretien",
+ "metaDescription": "Ootd T08 : moteur 500 W (800 W en crête), batterie 48 V, 30 km annoncés, roues de 10 pouces, disques mécaniques de 140 mm, double suspension, 25,16 kg.",
+ "intro": [
+  "L'Ootd T08 est le modèle d'entrée de la gamme Ootd, sous la T10 et la T10 Pro qui ont leur propre fiche. Pensée pour les trajets du quotidien, elle se replie à 21 cm d'épaisseur et accepte des conducteurs de 1,60 m à 2 m. Ootd l'affiche 429 € sur sa boutique ; elle se trouve dès 399 € chez Voltrix.",
+  "Moteur de 500 W (800 W en crête), batterie de 48 V pour environ 30 km, roues de 10 pouces, suspensions à ressort à l'avant et à l'arrière, et deux freins à disque mécaniques de 140 mm. Elle pèse 25,16 kg pour 120 kg de charge. La capacité de la batterie varie selon les vendeurs : 10,4 Ah ou 13,5 Ah."
+ ],
+ "specs": [
+  [
+   "Moteur",
+   "500 W nominaux, 800 W en crête, roue arrière"
+  ],
+  [
+   "Vitesse",
+   "20 km/h par défaut selon Ootd, 25 km/h selon Ecolymp ; les 46 km/h annoncés débridée sont interdits sur la voie publique"
+  ],
+  [
+   "Autonomie annoncée",
+   "environ 30 km"
+  ],
+  [
+   "Batterie",
+   "48 V ; 10,4 Ah selon Ecolymp et Wheelyshop, 13,5 Ah sur la fiche Ootd"
+  ],
+  [
+   "Poids",
+   "25,16 kg"
+  ],
+  [
+   "Charge max",
+   "120 kg"
+  ],
+  [
+   "Roues",
+   "10 pouces (tubeless selon Ootd)"
+  ],
+  [
+   "Freins",
+   "Disques mécaniques avant et arrière, 140 mm"
+  ],
+  [
+   "Suspension",
+   "Ressorts avant et arrière"
+  ],
+  [
+   "Étanchéité",
+   "IPX4 selon Wheelyshop"
+  ],
+  [
+   "Temps de charge",
+   "5 à 6 h (chargeur 54,6 V 2 A)"
+  ]
+ ],
+ "pros": [
+  "Double suspension à ressort et roues de 10 pouces sur un modèle d'entrée de gamme (Ecolymp).",
+  "Deux freins à disque mécaniques de 140 mm (D-Future Fitness, Ecolymp).",
+  "Recharge assez courte, 5 à 6 heures (Ootd)."
+ ],
+ "cons": [
+  "Autonomie annoncée d'environ 30 km seulement.",
+  "25,16 kg, lourd pour une trottinette urbaine de 500 W.",
+  "Pas de Bluetooth ni d'application selon Ecolymp.",
+  "Capacité de batterie différente selon les vendeurs (10,4 ou 13,5 Ah) : vérifie l'annonce."
+ ],
+ "parts": [],
+ "care": [
+  "Ses deux disques de 140 mm sont à câble : retends-les et remplace les plaquettes dès que le freinage demande plus d'effort.",
+  "Lis la cote sur le flanc de tes pneus de 10 pouces avant d'en commander : Ootd ne la publie pas pour la T08.",
+  "Contrôle régulièrement le serrage du pliage et des bras de suspension, ils prennent du jeu sur les pavés."
+ ],
+ "price": {
+  "text": "429 € sur la boutique d'Ootd ; 399 € chez Voltrix ; 439 € sur Cdiscount.",
+  "source": "o-otd.com, voltrix.fr, Cdiscount"
+ },
+ "faq": [
+  {
+   "q": "Quelle batterie sur l'Ootd T08 : 10,4 Ah ou 13,5 Ah ?",
+   "a": "Les deux circulent. Ootd et une annonce Cdiscount donnent 48 V 13,5 Ah ; Ecolymp, Wheelyshop et D-Future Fitness indiquent 48 V 10,4 Ah. Vérifie la capacité écrite sur l'annonce, et sur l'étiquette de la batterie pour une pièce de rechange."
+  },
+  {
+   "q": "Quelle différence entre l'Ootd T08 et l'Ootd T10 ?",
+   "a": "D'après le comparatif d'Ootd, la T10 passe à 900 W en crête, à des pneus tubeless de 11 pouces en 90/65-6.5 et à 45 à 60 km d'autonomie ; la T08 reste à 800 W en crête, 10 pouces et 30 km."
+  },
+  {
+   "q": "Quelle taille de pneu pour l'Ootd T08 ?",
+   "a": "Des roues de 10 pouces ; Ootd ne publie pas la cote complète. Relève l'inscription sur le flanc de ton pneu avant d'en acheter un."
+  },
+  {
+   "q": "L'Ootd T08 peut-elle dépasser 25 km/h ?",
+   "a": "Pas sur la voie publique : 25 km/h y est le plafond légal des trottinettes électriques en France. Ootd annonce une vitesse débridée de 46 km/h, utilisable seulement sur un terrain privé."
+  },
+  {
+   "q": "Combien de temps pour recharger l'Ootd T08 ?",
+   "a": "5 à 6 heures avec le chargeur 54,6 V 2 A fourni."
+  }
+ ],
+ "sources": [
+  {
+   "label": "Ootd — T08",
+   "url": "https://o-otd.com/products/ootd-t08-electric-scooter"
+  },
+  {
+   "label": "Ecolymp — Ootd T08",
+   "url": "https://ecolymp.eu/product/ootd-t08-electric-scooter/"
+  },
+  {
+   "label": "Wheelyshop — Ootd T08",
+   "url": "https://www.wheelyshop.com/products/ootd-t08"
+  },
+  {
+   "label": "D-Future Fitness — Ootd T08",
+   "url": "https://www.dfuturefitness.se/scooter/ootd-t10-pro"
+  },
+  {
+   "label": "Voltrix — trottinettes électriques par prix",
+   "url": "https://voltrix.fr/categorie-produit/trottinettes-electriques/trottinettes-electriques-par-prix/"
+  },
+  {
+   "label": "Cdiscount — Ootd",
+   "url": "https://www.cdiscount.com/le-sport/r-ootd.html"
+  }
+ ]
+}

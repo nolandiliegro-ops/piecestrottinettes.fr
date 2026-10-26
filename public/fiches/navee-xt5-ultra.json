@@ -1,0 +1,128 @@
+{
+ "displayName": "Navee XT5 Ultra",
+ "metaTitle": "Navee XT5 Ultra : essai, fiche technique et prix",
+ "metaDescription": "Navee XT5 Ultra : 2 x 500 W (4 400 W en pointe), 899 Wh, pneus tout-terrain 12 pouces, disques 130 mm, 38,6 kg. Autonomie mesurée, freinage, prix.",
+ "intro": [
+  "La Navee XT5 Ultra est la version à deux moteurs de la XT5 Pro : un second moteur dans la roue avant, une batterie qui passe de 596,7 à 899 Wh et 4 kg de plus. Navee France l'affiche à 1 299 €, soit 400 € de plus que la Pro selon le Journal du Geek.",
+  "Deux moteurs de 500 W nominaux (2 × 2 200 W en pointe), batterie de 46,8 V et 19,2 Ah pour 90 km annoncés à 15 km/h. Pneus tubeless tout-terrain de 12 pouces, suspension Damping Arm de 60 mm à l'avant et à l'arrière, disques sur les deux roues avec EABS, IPX6. Elle pèse 38,6 kg."
+ ],
+ "specs": [
+  [
+   "Moteurs",
+   "2 × 500 W nominaux (2 × 2 200 W en pointe, 4 400 W cumulés selon Navee), deux roues motrices"
+  ],
+  [
+   "Vitesse",
+   "25 km/h"
+  ],
+  [
+   "Autonomie",
+   "90 km annoncés à 15 km/h ; 49 km mesurés en mode Sport avec 100 kg avant la baisse de puissance, 52 km jusqu'à l'arrêt (Journal du Geek)"
+  ],
+  [
+   "Batterie",
+   "46,8 V, 19,2 Ah, 899 Wh"
+  ],
+  [
+   "Poids",
+   "38,6 kg (38,4 kg mesurés par le Journal du Geek)"
+  ],
+  [
+   "Charge max",
+   "150 kg"
+  ],
+  [
+   "Roues",
+   "12 pouces tubeless tout-terrain"
+  ],
+  [
+   "Freins",
+   "Disques de 130 mm avant et arrière, à commande mécanique, + frein électronique EABS"
+  ],
+  [
+   "Suspension",
+   "Damping Arm avant et arrière, 60 mm de débattement"
+  ],
+  [
+   "Étanchéité",
+   "IPX6"
+  ],
+  [
+   "Pente max",
+   "45 %"
+  ],
+  [
+   "Temps de charge",
+   "6 h, 3 h avec le chargeur rapide en option (Journal du Geek)"
+  ]
+ ],
+ "pros": [
+  "Elle grimpe tout : les deux roues motrices donnent nettement plus de grip et de sécurité que la XT5 Pro (Journal du Geek).",
+  "Pneus efficaces sur toutes les surfaces et deck assez grand pour rouler 30 km sans fatigue (Mac4ever).",
+  "Autonomie solide : 52 km mesurés jusqu'à la panne avec 100 kg à bord en mode Sport (Journal du Geek)."
+ ],
+ "cons": [
+  "Freinage limite pour le poids : 4,9 m pour s'arrêter depuis 25 km/h aux freins mécaniques seuls, contre 4,3 m pour la XT5 Pro (Journal du Geek).",
+  "Disques mécaniques peu progressifs, étriers à régler soi-même à la clé Allen ; pas de freins hydrauliques à 1 299 € (Mac4ever).",
+  "Suspensions raides sur l'asphalte (Journal du Geek, Mac4ever).",
+  "38,6 kg : impossible à porter au quotidien."
+ ],
+ "parts": [],
+ "care": [
+  "Les étriers mécaniques se règlent à la clé Allen : rattrape le jeu des plaquettes dès que le freinage perd du mordant, comme le conseille Mac4ever.",
+  "Avec deux moteurs et 38,6 kg, les plaquettes s'usent vite en descente : contrôle-les à chaque gros nettoyage.",
+  "Pneus tout-terrain tubeless : adapte la pression au terrain sans descendre sous la valeur du flanc, et inspecte les crampons après les chemins caillouteux."
+ ],
+ "price": {
+  "text": "1 299 € (prix barré 1 499 €) sur la boutique française de Navee ; 1 499,99 € chez Darty.",
+  "source": "Navee France, Darty"
+ },
+ "faq": [
+  {
+   "q": "Quelle différence entre la Navee XT5 Ultra et la XT5 Pro ?",
+   "a": "L'Ultra ajoute un moteur dans la roue avant (2 × 500 W) et passe de 596,7 à 899 Wh. Elle pèse 38,6 kg contre 34,8 kg et garde les mêmes freins. Le Journal du Geek chiffre l'écart de prix à 400 €."
+  },
+  {
+   "q": "Quels freins sur la Navee XT5 Ultra ?",
+   "a": "Des disques de 130 mm à l'avant et à l'arrière, à commande mécanique, plus le frein électronique EABS. Le Journal du Geek mesure 4,2 m d'arrêt depuis 25 km/h en combinant les deux."
+  },
+  {
+   "q": "Quelle autonomie réelle pour la XT5 Ultra ?",
+   "a": "Le Journal du Geek a parcouru 49 km en mode Sport avec 100 kg avant que la puissance baisse, et 52 km jusqu'à l'arrêt. Navee annonce 90 km à 15 km/h."
+  },
+  {
+   "q": "Quelle taille de pneu sur la XT5 Ultra ?",
+   "a": "Navee annonce des pneus tubeless tout-terrain de 12 pouces sans publier la cote complète. Relève la dimension gravée sur le flanc avant de commander."
+  },
+  {
+   "q": "Peut-on recharger la XT5 Ultra plus vite ?",
+   "a": "Oui, avec le chargeur rapide vendu en option : environ 3 heures au lieu de 6 selon le Journal du Geek."
+  }
+ ],
+ "sources": [
+  {
+   "label": "Navee France — XT5 Ultra",
+   "url": "https://naveetech.fr/products/xt5-ultra"
+  },
+  {
+   "label": "Journal du Geek — test Navee XT5 Ultra",
+   "url": "https://www.journaldugeek.com/test/test-trottinette-electrique-navee-xt5-ultra-elle-grimpe-tout-mais-elle-ne-sarrete-plus/"
+  },
+  {
+   "label": "Mac4ever — test Navee XT5 Ultra",
+   "url": "https://www.mac4ever.com/mobilite/198225-test-navee-xt5-ultra-deux-moteurs-et-un-confort-de-scooter"
+  },
+  {
+   "label": "Darty — Navee XT5 Ultra",
+   "url": "https://www.darty.com/nav/achat/sports_loisirs/glisse_urbaine/trottinette_electrique/navee_xt5ultrag.html"
+  },
+  {
+   "label": "Fnac — Navee XT5 Ultra",
+   "url": "https://www.fnac.com/Trottinette-electrique-Navee-XT5-Ultra-1000-W-Gris/a22970550/w-4"
+  },
+  {
+   "label": "Navee — XT5 Ultra",
+   "url": "https://www.naveetech.com/navee-xt5-ultra/"
+  }
+ ]
+}

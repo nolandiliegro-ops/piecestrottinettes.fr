@@ -1,0 +1,154 @@
+{
+ "displayName": "Ninebot MAX G3 Pro E",
+ "metaTitle": "Ninebot MAX G3 Pro E : fiche technique, pneus et prix",
+ "metaDescription": "Ninebot MAX G3 Pro E (2026) : 2 300 W en pointe, batterie 899 Wh, 80 km annoncés à 25 km/h, pneus tubeless 12x2,8 avant et 11x2,8 arrière, disques 140 mm.",
+ "intro": [
+  "La Ninebot MAX G3 Pro E est présentée par Segway le 7 octobre 2026. Ce n'est pas un nouveau nom de la MAX G3 E de 2025 : elle reçoit une batterie 50 % plus grosse, une roue avant de 12 pouces et des disques de 140 mm. Cette fiche ne concerne que la version Pro ; la MAX G3 E et la MAX G2 ont leurs propres fiches.",
+  "Segway France annonce 700 W nominaux et 2 300 W en pointe, 30 % de pente et 899 Wh sous 46,8 V. L'autonomie promise est de 80 km à 25 km/h et jusqu'à 120 km à 15 km/h. Les pneus tubeless autocicatrisants mesurent 12 x 2,8 pouces devant et 11 x 2,8 pouces derrière. Elle pèse 24,9 kg pour 130 kg de charge."
+ ],
+ "specs": [
+  [
+   "Puissance nominale",
+   "700 W selon Segway France (850 W selon Street Ride)"
+  ],
+  [
+   "Puissance crête",
+   "2 300 W (roue arrière)"
+  ],
+  [
+   "Vitesse",
+   "25 km/h"
+  ],
+  [
+   "Autonomie annoncée",
+   "80 km à 25 km/h ; 100 km à 20 km/h ; 120 km à 15 km/h"
+  ],
+  [
+   "Batterie",
+   "46,8 V, 899 Wh, BMS 2.0 ; batterie externe de 468 Wh en option"
+  ],
+  [
+   "Poids",
+   "24,9 kg"
+  ],
+  [
+   "Charge max",
+   "130 kg"
+  ],
+  [
+   "Pente max",
+   "30 %"
+  ],
+  [
+   "Pneu avant",
+   "12 x 2,8 pouces, tubeless autocicatrisant"
+  ],
+  [
+   "Pneu arrière",
+   "11 x 2,8 pouces, tubeless autocicatrisant"
+  ],
+  [
+   "Pression",
+   "42 à 48 psi (2,9 à 3,3 bar)"
+  ],
+  [
+   "Freins",
+   "Disque 140 mm avant + disque 140 mm arrière, freinage combiné IBS"
+  ],
+  [
+   "Suspension",
+   "Hydraulique avant et arrière, 50 mm de débattement, arrière réglable"
+  ],
+  [
+   "Étanchéité",
+   "IPX6, batterie IPX7"
+  ],
+  [
+   "Temps de charge",
+   "environ 5 h 30 ; 3 h 30 en charge double entrée"
+  ]
+ ],
+ "pros": [
+  "899 Wh pour 24,9 kg, presque le poids de la MAX G3 E et ses 597 Wh (Segway France).",
+  "Distance de freinage réduite de 15 % par rapport à la MAX G3 E, selon Segway France.",
+  "Mode Boost qui ne se coupe plus en roulant (Urban Electric Garage)."
+ ],
+ "cons": [
+  "1 099 € en France : 200 € de plus que la MAX G3 E (Frandroid).",
+  "Pas encore de mesure d'autonomie indépendante : les 80 km à 25 km/h restent un chiffre Segway.",
+  "Pneu avant et pneu arrière de tailles différentes : deux références à stocker.",
+  "Puissance nominale annoncée différemment selon les sources (500, 700 ou 850 W)."
+ ],
+ "parts": [],
+ "care": [
+  "Les deux disques de 140 mm travaillent avec le freinage électronique IBS : contrôle l'épaisseur des plaquettes avant et arrière tous les 1 000 km environ.",
+  "Pneus tubeless autocicatrisants : maintiens 42 à 48 psi et vérifie leur état au moins tous les trois mois, comme le recommande Segway France.",
+  "Le pneu avant (12 pouces) et l'arrière (11 pouces) ne s'échangent pas : quand tu en remplaces un, commande la bonne cote, sans permuter les roues."
+ ],
+ "price": {
+  "text": "Prix public annoncé en France : 1 099 € (octobre 2026) ; 1 199 € relevés en Allemagne.",
+  "source": "Frandroid, Neozone, Scooterhelden Berlin"
+ },
+ "faq": [
+  {
+   "q": "La Ninebot MAX G3 Pro E est-elle la même que la MAX G3 E ?",
+   "a": "Non. Elle garde la plateforme, mais passe à 899 Wh au lieu de 597 Wh, à 2 300 W en pointe au lieu de 2 000 W, à une roue avant de 12 pouces et à des disques de 140 mm."
+  },
+  {
+   "q": "Quelle taille de pneu pour la Ninebot MAX G3 Pro E ?",
+   "a": "Un 12 x 2,8 pouces à l'avant et un 11 x 2,8 pouces à l'arrière, tous deux tubeless autocicatrisants. Segway conseille 42 à 48 psi."
+  },
+  {
+   "q": "Quels freins sur la Ninebot MAX G3 Pro E ?",
+   "a": "Un disque de 140 mm à l'avant et un autre à l'arrière, gérés avec le freinage électronique par le système IBS de Segway."
+  },
+  {
+   "q": "Combien de temps de charge pour la MAX G3 Pro E ?",
+   "a": "Environ 5 h 30 avec une prise, et environ 3 h 30 en branchant deux chargeurs sur la double entrée."
+  },
+  {
+   "q": "Jusqu'où va la MAX G3 Pro E avec la batterie externe ?",
+   "a": "Segway annonce jusqu'à 120 km à 25 km/h et 180 km à 15 km/h avec la batterie optionnelle de 468 Wh. Ce sont des chiffres constructeur, pas encore des mesures de test."
+  }
+ ],
+ "sources": [
+  {
+   "label": "Segway France — Ninebot MAX G3 Pro E, fiche technique",
+   "url": "https://www.segwayfrance.com/pages/ninebot-max-g3-pro-e"
+  },
+  {
+   "label": "Segway France — MAX G3 Pro E ou MAX G3 E",
+   "url": "https://www.segwayfrance.com/blogs/mobilite-electrique-actualites/ninebot-max-g3-pro-e-ou-ninebot-max-g3-e"
+  },
+  {
+   "label": "Segway — MAX G3 Pro",
+   "url": "https://fr-fr.segway.com/ekickscooter/products/max-g3-pro-e.html"
+  },
+  {
+   "label": "Frandroid — la nouvelle Segway Max G3 Pro",
+   "url": "https://www.frandroid.com/marques/3274703_80-km-reels-a-25-km-h-segway-sattaque-vraiment-aux-longs-trajets-avec-sa-nouvelle-trottinette"
+  },
+  {
+   "label": "Neozone — Segway dévoile deux trottinettes",
+   "url": "https://www.neozone.org/innovation/segway-devoile-deux-trottinettes-electriques-qui-promettent-jusqua-120-km-dautonomie-reelle/"
+  },
+  {
+   "label": "Labashop — Segway Ninebot Max G3 Pro",
+   "url": "https://labashop.com/segway-ninebot-max-g3-pro-2300w-batterie-899-wh-et-plus/"
+  },
+  {
+   "label": "Street Ride — Max G3 Pro et ZT3 Max, les différences",
+   "url": "https://www.streetride.be/blogs/news/ninebot-max-g3-pro-zt3-max-differences"
+  },
+  {
+   "label": "YouTube — David Nogueira, Segway Max G3 Pro et ZT3 Max",
+   "url": "https://www.youtube.com/watch?v=HVin9qme0yg"
+  }
+ ],
+ "video": {
+  "id": "HVin9qme0yg",
+  "title": "Segway Max G3 Pro et ZT3 Max : grosses évolutions ?",
+  "channel": "David Nogueira",
+  "uploadDate": "2026-10-09"
+ }
+}

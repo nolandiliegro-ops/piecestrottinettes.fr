@@ -1,0 +1,128 @@
+{
+ "displayName": "Navee G5 Pro",
+ "metaTitle": "Navee G5 Pro : caractéristiques, avis et entretien",
+ "metaDescription": "Navee G5 Pro : 400 W (800 W en pointe), batterie 358 Wh, 55 km annoncés, double suspension, tambour avant et E-ABS. Fiche technique, prix et conseils.",
+ "intro": [
+  "Lancée en 2025 pour prendre la suite des S40 et S60 selon Frandroid, la Navee G5 Pro est le modèle intermédiaire de la gamme G5, entre la G5 et la G5 Max. Ce qui la distingue de la G5 de base, c'est sa batterie plus grosse. Navee France l'affiche à 399 €, avec Apple Localiser, clignotants et contrôle de traction.",
+  "Sous le plateau, une batterie de 46,8 V et 358 Wh pour 55 km annoncés à 15 km/h, 36 km à 25 km/h. Le moteur arrière délivre 400 W (800 W en pointe). Elle roule sur des pneus tubeless de 10 pouces, avec une fourche à ressort et un bras amorti à l'arrière, un tambour devant et un frein électronique derrière, pour 21,2 kg."
+ ],
+ "specs": [
+  [
+   "Moteur",
+   "400 W nominal, 800 W en pointe"
+  ],
+  [
+   "Vitesse",
+   "25 km/h (version européenne), modes 6 / 20 / 25 km/h"
+  ],
+  [
+   "Autonomie annoncée",
+   "55 km à 15 km/h, 43 km à 20 km/h, 36 km à 25 km/h"
+  ],
+  [
+   "Batterie",
+   "46,8 V, 7,65 Ah, 358 Wh"
+  ],
+  [
+   "Poids",
+   "21,2 kg selon Navee (20 kg selon Digitec et Electrotraveller)"
+  ],
+  [
+   "Charge max",
+   "120 kg"
+  ],
+  [
+   "Pente max",
+   "20 %"
+  ],
+  [
+   "Roues",
+   "10 pouces, tubeless"
+  ],
+  [
+   "Freins",
+   "Tambour avant + électronique arrière (E-ABS)"
+  ],
+  [
+   "Suspension",
+   "Fourche avant à ressort + bras arrière amorti (Damping Arm)"
+  ],
+  [
+   "Étanchéité",
+   "IPX5"
+  ],
+  [
+   "Temps de charge",
+   "environ 8 h"
+  ]
+ ],
+ "pros": [
+  "Double suspension, clignotants et feux LED à ce niveau de prix (Frandroid).",
+  "Contrôle de traction (TCS) et localisation Apple Localiser (Navee).",
+  "Batterie de 358 Wh, plus grosse que celle de la G5 de base (Frandroid)."
+ ],
+ "cons": [
+  "Autonomie annoncée à 15 km/h : Frandroid estime 25 à 40 km en pratique pour la gamme G5.",
+  "Plus de 20 kg, peu pratique à porter dans les escaliers (Digitec).",
+  "Un seul frein mécanique, le tambour avant.",
+  "Huit heures pour une recharge complète."
+ ],
+ "parts": [],
+ "care": [
+  "Le tambour avant fait l'essentiel du freinage mécanique : surveille la course du levier et retends le câble dès qu'elle s'allonge.",
+  "Pneus tubeless : contrôle la pression à froid chaque mois, un pneu mou use la gomme et grignote l'autonomie.",
+  "Vérifie de temps en temps le jeu du bras arrière et le serrage de la colonne pliante."
+ ],
+ "price": {
+  "text": "399 € sur la boutique Navee France (prix barré 499 €).",
+  "source": "Navee France"
+ },
+ "faq": [
+  {
+   "q": "Quelle différence entre la Navee G5, la G5 Pro et la G5 Max ?",
+   "a": "Selon Frandroid, la G5 et la G5 Pro partagent le moteur de 400 W (800 W en pointe) ; la G5 a 275 Wh pour 45 km, la G5 Pro 358 Wh pour 55 km. La G5 Max passe à 500 W (1 000 W en pointe) et 477 Wh pour 70 km."
+  },
+  {
+   "q": "Quels pneus pour la Navee G5 Pro ?",
+   "a": "Des pneus tubeless de 10 pouces. Navee ne publie pas la cote exacte : lis celle gravée sur le flanc de ton pneu avant d'en commander un."
+  },
+  {
+   "q": "La Navee G5 Pro a-t-elle un frein à disque ?",
+   "a": "Non. Elle freine avec un tambour à l'avant et un frein électronique (E-ABS) à l'arrière."
+  },
+  {
+   "q": "Quelle autonomie réelle pour la Navee G5 Pro ?",
+   "a": "Navee annonce 55 km à 15 km/h et 36 km à 25 km/h. Frandroid estime la gamme G5 entre 25 et 40 km en usage réel."
+  },
+  {
+   "q": "La Navee G5 Pro peut-elle rouler sur piste cyclable ?",
+   "a": "Oui : la version européenne plafonne à 25 km/h, la limite des trottinettes électriques en France. Les 32 km/h cités par Navee concernent le marché américain."
+  }
+ ],
+ "sources": [
+  {
+   "label": "Navee France — NAVEE G5 Pro",
+   "url": "https://naveetech.fr/products/navee-g5-pro"
+  },
+  {
+   "label": "Navee — G5 Pro, fiche technique",
+   "url": "https://www.naveetech.com/eur/navee-g5-pro/"
+  },
+  {
+   "label": "Frandroid — présentation de la gamme Navee G5",
+   "url": "https://www.frandroid.com/survoltes/trottinette-electrique/2779071_typee-cyberpunk-la-trottinette-electrique-pas-chere-de-navee-fait-peau-neuve-avec-de-sympathiques-nouveautes"
+  },
+  {
+   "label": "Frandroid — Navee G5 Pro en promotion",
+   "url": "https://www.frandroid.com/bons-plans/3067555_avec-son-look-cyberpunk-et-son-prix-en-baisse-de-120-e-cette-trottinette-electrique-avec-55-km-dautonomie-intrigue-et-seduit"
+  },
+  {
+   "label": "Electrotraveller — Navee G5 Pro",
+   "url": "https://electrotraveller.com/fr/trottinettes-electriques/navee-g5-pro/"
+  },
+  {
+   "label": "Digitec — Navee G5 Pro",
+   "url": "https://www.digitec.ch/fr/s1/product/navee-g5-pro-20-kmh-55-km-400-w-trottinette-electrique-66966590"
+  }
+ ]
+}

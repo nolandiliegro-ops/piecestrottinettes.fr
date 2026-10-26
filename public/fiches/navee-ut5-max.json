@@ -1,0 +1,132 @@
+{
+ "displayName": "Navee UT5 Max",
+ "metaTitle": "Navee UT5 Max : specs, autonomie réelle et avis",
+ "metaDescription": "Navee UT5 Max : 700 W (2 400 W en pointe), 716 Wh, pneus 12 pouces tubeless, double suspension hydraulique, 34 kg. Autonomie mesurée, prix et FAQ.",
+ "intro": [
+  "La Navee UT5 Max est une trottinette tout-chemin présentée au CES 2026 et vendue 899 € sur la boutique française de Navee. Elle mise sur de grandes roues : des pneus tubeless auto-obturants de 12 pouces, dont le gel colmate les perforations jusqu'à 4 mm, une double suspension hydraulique et 150 kg de charge admise.",
+  "Moteur arrière de 700 W (2 400 W en pointe), batterie de 46,8 V et 716,04 Wh pour une autonomie théorique de 100 km à 15 km/h (65 km à 25 km/h). Freins à disque de 130 mm sur les deux roues avec EABS, IPX6, recharge en 7 heures. Elle pèse 34 kg."
+ ],
+ "specs": [
+  [
+   "Moteur",
+   "700 W (2 400 W en pointe), propulsion arrière"
+  ],
+  [
+   "Vitesse",
+   "25 km/h"
+  ],
+  [
+   "Autonomie",
+   "100 km annoncés à 15 km/h, 65 km à 25 km/h ; 49 km mesurés en mode Sport par Auto Bild, 40 km par Smartzone"
+  ],
+  [
+   "Batterie",
+   "46,8 V, 15,3 Ah, 716,04 Wh"
+  ],
+  [
+   "Poids",
+   "34 kg"
+  ],
+  [
+   "Charge max",
+   "150 kg"
+  ],
+  [
+   "Roues",
+   "12 pouces tubeless auto-obturants"
+  ],
+  [
+   "Freins",
+   "Disques de 130 mm avant et arrière + frein électronique EABS"
+  ],
+  [
+   "Suspension",
+   "Double suspension hydraulique avant et arrière"
+  ],
+  [
+   "Étanchéité",
+   "IPX6"
+  ],
+  [
+   "Pente max",
+   "39 % (28 % à 150 kg)"
+  ],
+  [
+   "Temps de charge",
+   "7 h en standard, 2 h avec le chargeur 10 A vendu à part"
+  ]
+ ],
+ "pros": [
+  "Très stable : même une chaussée dégradée ne la déstabilise pas, selon Auto Bild.",
+  "Freinage jugé très bon et puissant par Smartzone, qui salue aussi la garde au sol et les pneus de 12 pouces.",
+  "716 Wh de batterie : Auto Bild a parcouru 49 km en mode Sport, assez pour la plupart des usages."
+ ],
+ "cons": [
+  "34 kg : c'est une machine à rouler, pas à porter.",
+  "Autonomie réelle loin des 100 km : 40 km chez Smartzone à environ 22 km/h avec du dénivelé, 49 km chez Auto Bild.",
+  "Recharge de 7 heures avec le chargeur fourni ; le chargeur rapide de 10 A est en option.",
+  "Un acheteur de 140 kg trouve la suspension décevante sur chemins forestiers, malgré le réglage au maximum (avis client Navee Allemagne)."
+ ],
+ "parts": [],
+ "care": [
+  "Disques de 130 mm sur les deux roues : contrôle les plaquettes et le serrage des étriers après chaque sortie sur chemin.",
+  "Le gel des pneus tubeless colmate jusqu'à 4 mm : au-delà, ou si la pression baisse d'une semaine sur l'autre, inspecte la bande et la valve.",
+  "Amortisseurs hydrauliques : nettoie les tiges après la boue et règle la suspension arrière à ton poids."
+ ],
+ "price": {
+  "text": "899 € (prix barré 999 €) sur la boutique française de Navee ; 949 € relevés le 25 août 2026.",
+  "source": "Navee France, Le Dépanneur Tech"
+ },
+ "faq": [
+  {
+   "q": "Quelle autonomie réelle pour la Navee UT5 Max ?",
+   "a": "Auto Bild a mesuré 49 km en mode Sport et Smartzone 40 km vers 22 km/h avec des côtes. Sur le papier, Navee promet 100 km à 15 km/h et 65 km à 25 km/h."
+  },
+  {
+   "q": "Quels freins sur la UT5 Max ?",
+   "a": "Des freins à disque de 130 mm à l'avant et à l'arrière, plus le frein électronique EABS. Smartzone les décrit comme mécaniques, certains revendeurs les annoncent hydrauliques : regarde tes étriers avant de commander des plaquettes."
+  },
+  {
+   "q": "La UT5 Max se recharge-t-elle vite ?",
+   "a": "Non avec le chargeur fourni : 7 heures. Navee annonce 2 heures avec un chargeur de 10 A vendu séparément."
+  },
+  {
+   "q": "Quelle taille de pneu pour la Navee UT5 Max ?",
+   "a": "Des pneus tubeless auto-obturants de 12 pouces, sans cote complète publiée par Navee. Lis la dimension sur le flanc du pneu avant d'en racheter un."
+  },
+  {
+   "q": "Quelle différence entre la UT5 Max et la UT3 Max ?",
+   "a": "La UT5 Max a des roues de 12 pouces, 716,04 Wh et accepte 150 kg pour 34 kg. La UT3 Max reste en 10 pouces, 596,7 Wh, 130 kg et 24 kg."
+  }
+ ],
+ "sources": [
+  {
+   "label": "Navee France — UT5 Max",
+   "url": "https://naveetech.fr/products/navee-ut5-max"
+  },
+  {
+   "label": "Navee — UT5 Max (fiche européenne)",
+   "url": "https://naveeglobal.com/products/ut5-max"
+  },
+  {
+   "label": "Auto Bild — Navee UT5 Max im Test",
+   "url": "https://www.autobild.de/artikel/navee-ut5-max-e-scooter-im-test-28833351.html"
+  },
+  {
+   "label": "Smartzone — Navee UT5 Max Test",
+   "url": "https://www.smartzone.de/navee-ut5-max-test/"
+  },
+  {
+   "label": "Le Dépanneur Tech — avis Navee UT5 Max",
+   "url": "https://ledepanneurtech.com/navee-ut5-max-avis"
+  },
+  {
+   "label": "Navee Allemagne — UT5 Max et avis clients",
+   "url": "https://naveetech.de/products/ut5-max"
+  },
+  {
+   "label": "Notebookcheck — Navee au CES 2026",
+   "url": "https://www.notebookcheck.net/Navee-unveils-UT5-Max-UT5-Ultra-X-and-NT5-Ultra-X-e-scooters-at-CES-2026.1196611.0.html"
+  }
+ ]
+}

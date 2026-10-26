@@ -1,0 +1,128 @@
+{
+ "displayName": "iScooter F7",
+ "metaTitle": "iScooter F7 : fiche technique et entretien",
+ "metaDescription": "iScooter F7 : trottinette à selle amovible, moteur 1 000 W, batterie amovible 48 V 10,4 Ah, pneus neige 16 x 3, deux freins à disque, 30,25 kg. Fiche.",
+ "intro": [
+  "L'iScooter F7 est une trottinette de courses et de trajets quotidiens : selle amovible, porte-bagages arrière et panier pliable qui prend 15 à 20 kg selon iScooter. On peut rouler debout ou assis en quelques secondes. La marque l'affiche 545,99 € sur son site français, et 499,99 € sur sa boutique européenne.",
+  "Elle repose sur un moteur arrière de 1 000 W, une batterie amovible de 48 V 10,4 Ah (480 Wh) pour 50 km annoncés, et de gros pneus neige gonflables de 16 x 3 pouces. Fourche suspendue à l'avant, deux freins à disque et un frein électrique, pour 30,25 kg sur la balance."
+ ],
+ "specs": [
+  [
+   "Moteur",
+   "1 000 W, propulsion arrière"
+  ],
+  [
+   "Vitesse",
+   "modes 6 / 15 / 25 km/h ; 45 km/h après déverrouillage, uniquement sur terrain privé"
+  ],
+  [
+   "Autonomie annoncée",
+   "jusqu'à 50 km (46 à 72 km selon Boulanger)"
+  ],
+  [
+   "Batterie",
+   "48 V 10,4 Ah amovible, 480 Wh selon iScooter (499 Wh selon Boulanger)"
+  ],
+  [
+   "Poids",
+   "30,25 kg"
+  ],
+  [
+   "Charge max",
+   "150 kg"
+  ],
+  [
+   "Roues",
+   "16 x 3 pouces, pneus neige gonflables avec chambre à air"
+  ],
+  [
+   "Freins",
+   "Disques avant et arrière + frein électrique"
+  ],
+  [
+   "Suspension",
+   "Fourche avant à ressort (Boulanger annonce une double suspension)"
+  ],
+  [
+   "Temps de charge",
+   "7 à 8 h (chargeur 54,6 V 1,5 A)"
+  ]
+ ],
+ "pros": [
+  "Batterie amovible, à recharger chez soi ou au bureau sans monter la trottinette (iScooter).",
+  "Selle amovible, porte-bagages et panier pliable pour les courses (iScooter, Darty).",
+  "Pneus neige de 16 x 3 pouces annoncés pour l'adhérence sur sol mouillé, boueux ou gravillonné (Darty)."
+ ],
+ "cons": [
+  "30,25 kg : lourde à porter, même pliée.",
+  "Batterie de 480 Wh : les 50 km sont un maximum annoncé en mode éco.",
+  "Avec la selle, elle n'entre plus dans la définition des trottinettes électriques du Code de la route.",
+  "Fiches contradictoires sur la suspension arrière selon les vendeurs."
+ ],
+ "parts": [],
+ "care": [
+  "Les pneus neige de 16 x 3 ont une chambre à air (une de rechange est livrée) : garde une pression correcte pour éviter les pincements.",
+  "Contrôle l'usure des plaquettes de ses deux freins à disque et le serrage des étriers, surtout si tu charges le panier.",
+  "Retire la batterie pour la recharger à l'abri et ne la laisse pas plusieurs semaines vide."
+ ],
+ "price": {
+  "text": "545,99 € sur iscooter.fr (prix de référence 699,99 €) ; 499,99 € sur la boutique européenne d'iScooter ; 479,99 € sur Cdiscount.",
+  "source": "iscooter.fr, iscooterglobal.eu, Cdiscount"
+ },
+ "faq": [
+  {
+   "q": "Peut-on rouler avec la selle de l'iScooter F7 sur la route ?",
+   "a": "Le Code de la route (article R311-1) réserve la catégorie des engins de déplacement personnel motorisés aux véhicules sans place assise. Selle montée, la F7 sort de ce cadre : vérifie son statut et l'assurance exigée avant de circuler sur la voie publique."
+  },
+  {
+   "q": "La batterie de l'iScooter F7 est-elle amovible ?",
+   "a": "Oui. C'est une batterie lithium de 48 V 10,4 Ah qui se retire avec une clé, pour la recharger à part en 7 à 8 heures."
+  },
+  {
+   "q": "Quels pneus pour l'iScooter F7 ?",
+   "a": "Des pneus neige gonflables de 16 x 3 pouces, montés avec chambre à air ; iScooter en livre une de rechange dans la boîte."
+  },
+  {
+   "q": "Quelle différence entre l'iScooter F7 et la F7 Ultra ?",
+   "a": "Selon iScooter, la F7 Ultra passe à 1 500 W, une batterie 52 V 20 Ah annoncée pour 100 km, et des roues de 16 pouces à l'avant et 12 pouces à l'arrière. La F7 garde 1 000 W, 48 V 10,4 Ah et deux roues de 16 pouces."
+  },
+  {
+   "q": "Quel chargeur pour l'iScooter F7 ?",
+   "a": "Un chargeur 48 V, soit 54,6 V en sortie ; celui d'origine délivre 1,5 A."
+  }
+ ],
+ "sources": [
+  {
+   "label": "iScooter France — F7 avec siège et panier amovible",
+   "url": "https://www.iscooter.fr/products/iscooter-f7-trottinette-electrique-avec-siege-et-panier-amovible"
+  },
+  {
+   "label": "iScooter EU — F7 assise",
+   "url": "https://www.iscooterglobal.eu/fr/products/iscooter-f7-seated-electric-scooter-16-fat-tires-cargo-basket"
+  },
+  {
+   "label": "iScooter France (revendeur) — F7 1000 W",
+   "url": "https://iscooter-france.com/products/trottinette-electrique-iscooter-f7-1000w-batterie-amovible"
+  },
+  {
+   "label": "Boulanger — iScooter F7",
+   "url": "https://www.boulanger.com/ref/9000921735"
+  },
+  {
+   "label": "Darty — iScooter F7 avec siège",
+   "url": "https://www.darty.com/nav/achat/ref/MC352659585.html"
+  },
+  {
+   "label": "Cdiscount — iScooter F7",
+   "url": "https://www.cdiscount.com/le-sport/mobilite-urbaine/trottinette-electrique-iscooter-f7-avec-siege-16/f-1214801-aabbi83146.html"
+  },
+  {
+   "label": "iScooter France — F7 Ultra",
+   "url": "https://www.iscooter.fr/products/trottinette-electrique-tout-terrain-iscooter-f7ultra-1500w"
+  },
+  {
+   "label": "Légifrance — Code de la route, article R311-1",
+   "url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000039276031"
+  }
+ ]
+}

@@ -1,0 +1,147 @@
+{
+ "displayName": "Navee ST5 Max",
+ "metaTitle": "Navee ST5 Max : fiche technique, pneus et avis",
+ "metaDescription": "Navee ST5 Max : 700 W (1 650 W en pointe), 596,7 Wh, disques avant et arrière, pneus tubeless 10\" 60/70-6.5, 25,4 kg, 150 kg. Specs, prix et pièces.",
+ "intro": [
+  "La Navee ST5 Max reprend la recette de la ST5 Pro, double suspension Damping Arm et disques sur les deux roues, avec plus de souffle : un moteur de 700 W au lieu de 600 W et une batterie de 12,75 Ah au lieu de 10,2 Ah. Boulanger la vend 799,99 €.",
+  "Moteur de 700 W (1 650 W en pointe), batterie de 46,8 V et 596,7 Wh : Navee promet 90 km à 15 km/h, 60 km à 25 km/h. Elle roule sur des pneus tubeless auto-obturants de 10 pouces, accepte 150 kg, est certifiée IPX6 et pèse 25,4 kg."
+ ],
+ "specs": [
+  [
+   "Moteur",
+   "700 W (1 650 W en pointe)"
+  ],
+  [
+   "Vitesse",
+   "25 km/h"
+  ],
+  [
+   "Autonomie annoncée",
+   "90 km à 15 km/h, 70 km à 20 km/h, 60 km à 25 km/h"
+  ],
+  [
+   "Batterie",
+   "46,8 V, 12,75 Ah, 596,7 Wh"
+  ],
+  [
+   "Poids",
+   "25,4 kg"
+  ],
+  [
+   "Charge max",
+   "150 kg"
+  ],
+  [
+   "Roues",
+   "10 pouces tubeless auto-obturants, 60/70-6.5 selon les revendeurs de pièces"
+  ],
+  [
+   "Freins",
+   "Disques avant et arrière + frein électronique EABS"
+  ],
+  [
+   "Suspension",
+   "Bras amortisseurs avant et arrière (Damping Arm)"
+  ],
+  [
+   "Étanchéité",
+   "IPX6 (batterie IPX7 selon Darty)"
+  ],
+  [
+   "Pente max",
+   "28 %"
+  ],
+  [
+   "Temps de charge",
+   "6 h en standard, 2 h avec la charge rapide"
+  ]
+ ],
+ "pros": [
+  "Tenue de route stable grâce aux suspensions, au large guidon et à la masse de 25,4 kg (Chip.pl).",
+  "Batterie de 596,7 Wh : le testeur de Chip.pl n'a pas eu à recharger après chaque sortie en usage quotidien.",
+  "Disques sur les deux roues, 150 kg admissibles et IPX6, comme sur la ST5 Pro (Navee)."
+ ],
+ "cons": [
+  "25,4 kg à porter dans les escaliers ; Testberichte.de relève que des utilisateurs s'en plaignent.",
+  "Les 90 km sont mesurés à 15 km/h : Scooterhelden juge 45 à 65 km déjà très bien en usage réel, un acheteur de 85 kg rapporte 50 km.",
+  "Une fois pliée, la potence n'a pas de verrou pour le transport, selon un avis client sur la boutique Navee allemande.",
+  "6 heures de charge avec le chargeur standard."
+ ],
+ "parts": [
+  {
+   "label": "Pneu",
+   "size": "60/70-6.5 tubeless (10 pouces)",
+   "count": 13,
+   "to": "/piece/pneu-tubeless-60-70-6-5-wanda",
+   "cta": "Pneus 60/70-6.5"
+  },
+  {
+   "label": "Chambre à air (dépannage)",
+   "size": "10x2.50, valve droite ou coudée",
+   "count": 6,
+   "to": "/piece/chambre-a-air-10x250-valve-droite",
+   "cta": "Chambres à air"
+  }
+ ],
+ "care": [
+  "Deux freins à disque : surveille l'épaisseur des plaquettes avant et arrière et serre l'étrier dès que le levier vient toucher la poignée.",
+  "Pneus tubeless : Navee recommande 45 psi à l'avant comme à l'arrière, à vérifier avant chaque sortie.",
+  "Le gel auto-obturant colmate les petites perforations ; au-delà, une chambre à air de 10x2.50 permet de repartir en dépannage."
+ ],
+ "price": {
+  "text": "799,99 € chez Boulanger ; 749 € au lieu de 899 € sur la boutique Navee Europe.",
+  "source": "Boulanger, Navee Europe"
+ },
+ "faq": [
+  {
+   "q": "Quelle taille de pneu pour la Navee ST5 Max ?",
+   "a": "Des pneus tubeless de 10 pouces, référencés en 60/70-6.5 (soit 10x2.50-6.5) par les revendeurs de pièces. Navee ne publie que le diamètre, donc compare avec la cote moulée sur ton pneu."
+  },
+  {
+   "q": "Quelle différence entre la Navee ST5 Max et la ST5 Pro ?",
+   "a": "La ST5 Max a un moteur de 700 W (1 650 W en pointe) et une batterie de 12,75 Ah ; la ST5 Pro se contente de 600 W (1 350 W en pointe) et 10,2 Ah. Les deux ont des disques avant et arrière et acceptent 150 kg."
+  },
+  {
+   "q": "Quels freins sur la Navee ST5 Max ?",
+   "a": "Des disques à l'avant et à l'arrière, complétés par le frein électronique EABS qui récupère de l'énergie au freinage."
+  },
+  {
+   "q": "Combien de temps pour recharger la ST5 Max ?",
+   "a": "Environ 6 heures avec le chargeur fourni, et 2 heures avec la charge rapide annoncée par Navee."
+  },
+  {
+   "q": "Quelle autonomie réelle pour la ST5 Max ?",
+   "a": "Navee annonce 60 km à 25 km/h. Un acheteur de 85 kg rapporte 50 km avec un peu de chemin et de côte : Scooterhelden juge réaliste une fourchette de 45 à 65 km selon le poids et le parcours."
+  }
+ ],
+ "sources": [
+  {
+   "label": "Navee Europe — ST5 Max (version UE 25 km/h)",
+   "url": "https://eu.naveetech.com/en-at/products/st5-max"
+  },
+  {
+   "label": "Navee — ST5 Max",
+   "url": "https://www.naveetech.com/navee-st5-max/"
+  },
+  {
+   "label": "Boulanger — Navee ST5 Max",
+   "url": "https://www.boulanger.com/ref/1243143"
+  },
+  {
+   "label": "Chip.pl — test Navee ST5 Max",
+   "url": "https://www.chip.pl/2026/08/navee-st5-max-test-recenzja"
+  },
+  {
+   "label": "Scooterhelden — Navee ST5 Max im Test",
+   "url": "https://scooterhelden.de/2026/06/08/navee-st5-max-im-test-1-650-watt-vollfederung-und-90-km-reichweite/"
+  },
+  {
+   "label": "Navee Allemagne — ST5 Max et avis clients",
+   "url": "https://naveetech.de/products/st5-max"
+  },
+  {
+   "label": "E-Watts — pneus Navee ST5 Max",
+   "url": "https://e-watts.fr/categorie-produit/pieces-detachees-trottinette-electrique/pneu-trottinette-electrique/pneu-navee-st5-max"
+  }
+ ]
+}

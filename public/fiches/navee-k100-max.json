@@ -1,0 +1,128 @@
+{
+ "displayName": "Navee K100 Max",
+ "metaTitle": "Navee K100 Max : trottinette enfant 6-14 ans",
+ "metaDescription": "Navee K100 Max : trottinette électrique enfant 6-14 ans, 150 W (260 W en pointe), 24 km annoncés, guidon 3 hauteurs, Apple Localiser. Fiche pour parents.",
+ "intro": [
+  "La Navee K100 Max est la version la plus complète de la famille K100, pensée pour durer de 6 à 14 ans : son guidon se règle à 885, 955 ou 1 025 mm et s'adapte aux enfants de 115 à 170 cm. Navee France l'affiche à 199 €. Elle ajoute Apple Localiser et une enceinte Bluetooth aux fonctions des K100 et K100 Pro.",
+  "Moteur de 150 W (260 W en pointe), vitesse plafonnée à 16 km/h en Europe, batterie de 21,6 V et 110 Wh : deux fois la capacité de la K100, pour 24 km annoncés à 12 km/h. Elle pèse 9,6 kg, accepte 50 kg, se plie et freine par un tambour arrière. Ses roues de 7 pouces sont creuses."
+ ],
+ "specs": [
+  [
+   "Moteur",
+   "150 W nominal, 260 W en pointe"
+  ],
+  [
+   "Vitesse",
+   "16 km/h max (version européenne), paliers 6 / 12 / 16 km/h"
+  ],
+  [
+   "Autonomie annoncée",
+   "24 km à 12 km/h, 20 km à 16 km/h (enfant de 50 kg)"
+  ],
+  [
+   "Batterie",
+   "21,6 V, 5,1 Ah, 110 Wh"
+  ],
+  [
+   "Poids",
+   "9,6 kg"
+  ],
+  [
+   "Charge max",
+   "50 kg"
+  ],
+  [
+   "Âge conseillé",
+   "6 à 14 ans, de 115 à 170 cm"
+  ],
+  [
+   "Guidon",
+   "réglable sur 3 hauteurs : 885, 955 et 1 025 mm"
+  ],
+  [
+   "Roues",
+   "7 pouces, creuses (sans air), increvables"
+  ],
+  [
+   "Freins",
+   "Tambour arrière"
+  ],
+  [
+   "Étanchéité",
+   "IPX4 (compartiment batterie IPX7)"
+  ],
+  [
+   "Temps de charge",
+   "environ 5 h 30"
+  ]
+ ],
+ "pros": [
+  "Guidon à trois hauteurs : la même trottinette suit l'enfant de 6 à 14 ans (Navee).",
+  "Apple Localiser pour retrouver la trottinette, et limite de vitesse réglable par le parent (Navee).",
+  "Batterie de 110 Wh, le double de la K100 : 24 km annoncés (Navee)."
+ ],
+ "cons": [
+  "Recharge plus longue que sur la K100 : environ 5 h 30.",
+  "Pas de clignotants, contrairement aux trottinettes adultes de la marque (Wheelyshop).",
+  "Charge maximale de 50 kg en Europe, vite atteinte par un adolescent.",
+  "Pas de suspension : les roues creuses transmettent les vibrations des pavés."
+ ],
+ "parts": [],
+ "care": [
+  "Le tambour arrière freine seul : contrôle chaque semaine que le levier ne vient pas toucher la poignée et fais retendre le câble si besoin.",
+  "À chaque changement de hauteur du guidon, vérifie le serrage du collier avant de laisser ton enfant repartir.",
+  "Roues creuses sans air : inspecte la gomme et le moyeu, et retire les cailloux coincés dans les alvéoles."
+ ],
+ "price": {
+  "text": "199 € sur la boutique Navee France (prix barré 299 €).",
+  "source": "Navee France"
+ },
+ "faq": [
+  {
+   "q": "Quelle différence entre la Navee K100, la K100 Pro et la K100 Max ?",
+   "a": "La K100 (6-10 ans) et la K100 Pro ont un moteur de 130 W et 55 Wh. La K100 Max monte 150 W (260 W en pointe) et 110 Wh pour 24 km annoncés, avec Apple Localiser et une enceinte Bluetooth. La Pro et la Max ont un guidon réglable."
+  },
+  {
+   "q": "Jusqu'à quelle taille la Navee K100 Max convient-elle ?",
+   "a": "Navee annonce un guidon réglable de 885 à 1 025 mm, pour des enfants de 115 à 170 cm, dans la limite de 50 kg."
+  },
+  {
+   "q": "Faut-il une chambre à air sur la Navee K100 Max ?",
+   "a": "Non. Ses roues de 7 pouces sont creuses : pas d'air, pas de chambre, pas de crevaison."
+  },
+  {
+   "q": "Où mon enfant peut-il utiliser la K100 Max ?",
+   "a": "Sur un terrain privé ou un espace fermé, sous la surveillance d'un adulte, comme le rappelle Wheelyshop. Elle n'est pas faite pour circuler sur la chaussée ni sur les pistes cyclables."
+  },
+  {
+   "q": "Combien de temps dure la recharge de la Navee K100 Max ?",
+   "a": "Environ 5 h 30 selon Navee, contre 3 h 30 pour la K100."
+  }
+ ],
+ "sources": [
+  {
+   "label": "Navee — trottinettes enfants",
+   "url": "https://www.naveetech.com/fr/kids/"
+  },
+  {
+   "label": "Navee Europe — K100 Max, fiche technique",
+   "url": "https://eu.naveetech.com/en-pl/products/navee-k100-max"
+  },
+  {
+   "label": "Navee Espagne — K100 Max",
+   "url": "https://es.naveetech.com/products/navee-k100-max"
+  },
+  {
+   "label": "Navee France — gamme enfants",
+   "url": "https://naveetech.fr/collections/navee-kids-teens"
+  },
+  {
+   "label": "Wheelyshop — trottinettes Navee",
+   "url": "https://www.wheelyshop.fr/collections/navee"
+  },
+  {
+   "label": "Navee US — comparatif K100 / Pro / Max",
+   "url": "https://naveetech.us/products/navee-k100"
+  }
+ ]
+}

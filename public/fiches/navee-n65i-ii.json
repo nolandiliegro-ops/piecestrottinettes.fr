@@ -1,0 +1,136 @@
+{
+ "displayName": "Navee N65i II",
+ "metaTitle": "Navee N65i II : fiche technique, tests et entretien",
+ "metaDescription": "Navee N65i II : 600 W (1 350 W en pointe), 477 Wh, 70 km annoncés, pneus tubeless 10,5 pouces, triple freinage, 150 kg de charge. Tests et conseils.",
+ "intro": [
+  "La Navee N65i II est la deuxième génération de la N65i, avec qui il ne faut pas la confondre : moteur plus puissant, fourche avant suspendue et charge maximale portée à 150 kg. Heise la classe parmi les trottinettes les plus puissantes sous 600 €. Boulanger l'affiche à 599,99 €.",
+  "Version française : moteur de 600 W, 1 350 W en pointe ; batterie de 46,8 V et 477 Wh pour 70 km annoncés à 15 km/h et 50 km à 25 km/h. Ses pneus tubeless font 10,5 pouces sur 80 mm de large. Elle combine tambour à l'avant, disque à l'arrière et frein électronique, pèse 23,6 kg et reste bridée à 25 km/h."
+ ],
+ "specs": [
+  [
+   "Moteur",
+   "600 W nominal (500 W sur les versions allemande et italienne), 1 350 W en pointe"
+  ],
+  [
+   "Vitesse",
+   "25 km/h, modes 6 / 20 / 25 km/h"
+  ],
+  [
+   "Autonomie annoncée",
+   "70 km à 15 km/h, 60 km à 20 km/h, 50 km à 25 km/h"
+  ],
+  [
+   "Batterie",
+   "46,8 V, 10,2 Ah, 477 Wh"
+  ],
+  [
+   "Poids",
+   "23,6 kg"
+  ],
+  [
+   "Charge max",
+   "150 kg"
+  ],
+  [
+   "Pente max",
+   "24 %"
+  ],
+  [
+   "Roues",
+   "10,5 pouces × 80 mm, tubeless"
+  ],
+  [
+   "Freins",
+   "Tambour avant + disque arrière + électronique (E-ABS)"
+  ],
+  [
+   "Suspension",
+   "Fourche avant à double ressort (28 mm de débattement), rien à l'arrière"
+  ],
+  [
+   "Étanchéité",
+   "IPX5"
+  ],
+  [
+   "Temps de charge",
+   "7 à 8 h"
+  ]
+ ],
+ "pros": [
+  "Accélération franche et bonne tenue en côte grâce aux 1 350 W en pointe (Heise, M3).",
+  "Autonomie réelle confortable : 35 à 50 km selon Heise, environ 50 km à 20 km/h par 5 à 8 °C selon Feber.",
+  "Charge maximale de 150 kg, rare dans cette gamme de prix (Heise)."
+ ],
+ "cons": [
+  "Amortissement jugé ferme, et rien à l'arrière (Feber).",
+  "23,6 kg : pénible à porter dans les transports.",
+  "Freins à régler dès la sortie du carton sur l'exemplaire testé par Feber.",
+  "Recharge longue, 7 à 8 heures, sans charge rapide (Heise)."
+ ],
+ "parts": [],
+ "care": [
+  "Trois freins à suivre : le tambour avant se retend au câble, le disque arrière demande un œil sur l'usure des plaquettes, l'E-ABS se règle dans l'application.",
+  "Pneus tubeless de 80 mm : vérifie la pression chaque semaine, sans suspension arrière ce sont eux qui absorbent les chocs.",
+  "Contrôle le serrage du guidon et de la fourche après les premières sorties, puis tous les mois."
+ ],
+ "price": {
+  "text": "599,99 € chez Boulanger.",
+  "source": "Boulanger"
+ },
+ "faq": [
+  {
+   "q": "Quelle différence entre la Navee N65i et la N65i II ?",
+   "a": "La N65i II monte en puissance (600 W et 1 350 W en pointe, contre 450 W et 1 000 W), gagne une fourche avant suspendue et accepte 150 kg au lieu de 120 kg. Ce sont deux modèles distincts : vérifie lequel tu as avant de commander une pièce."
+  },
+  {
+   "q": "Quelle taille de pneu pour la Navee N65i II ?",
+   "a": "Navee annonce des tubeless de 10,5 pouces sur 80 mm de large, sans donner la cote complète. Lis l'inscription gravée sur le flanc de ton pneu avant d'en acheter un."
+  },
+  {
+   "q": "Quelle autonomie réelle pour la Navee N65i II ?",
+   "a": "Navee annonce 70 km à 15 km/h. Heise compte 35 à 50 km en usage réel, Basic Tutorials 45 à 60 km selon le poids et le terrain."
+  },
+  {
+   "q": "Comment freine la Navee N65i II ?",
+   "a": "Avec trois systèmes : un tambour à l'avant, un disque à l'arrière et un frein électronique (E-ABS)."
+  },
+  {
+   "q": "Quelle vitesse sur route pour la Navee N65i II ?",
+   "a": "25 km/h au maximum, la limite légale des trottinettes électriques en France. Les vitesses plus élevées citées pour d'autres marchés sont interdites sur la voie publique."
+  }
+ ],
+ "sources": [
+  {
+   "label": "Navee — N65i II, fiche technique",
+   "url": "https://www.naveetech.com/fr/navee-n65i-ii/"
+  },
+  {
+   "label": "Navee Espagne — N65i II",
+   "url": "https://es.naveetech.com/products/n65i-ll"
+  },
+  {
+   "label": "Navee — fiche PDF N65i II",
+   "url": "https://media.naveetech.com/wp-content/uploads/2025/08/NAVEE-N65i-II-Onepage.pdf"
+  },
+  {
+   "label": "Boulanger — Navee N65i II",
+   "url": "https://www.boulanger.com/ref/9001065803"
+  },
+  {
+   "label": "Heise — Navee N65i II im Test",
+   "url": "https://www.heise.de/bestenlisten/testbericht/navee-n65i-ii-im-test-mit-1350-watt-einer-der-staerksten-e-scooter-unter-600-euro/21twdc6"
+  },
+  {
+   "label": "Basic Tutorials — Navee N65i II review",
+   "url": "https://basic-tutorials.com/reviews/gadget-reviews/navee-n65i-ii-review/"
+  },
+  {
+   "label": "Feber — test Navee N65i II",
+   "url": "https://feber.se/vi-har-testat-navee-n65i-ii/490066/"
+  },
+  {
+   "label": "M3 — test Navee N65i II",
+   "url": "https://www.m3.se/article/3143225/navee-n65i-ii-elspark-test.html"
+  }
+ ]
+}

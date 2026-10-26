@@ -1,0 +1,146 @@
+{
+ "displayName": "Xiaomi Electric Scooter 6 Ultra",
+ "metaTitle": "Xiaomi 6 Ultra : fiche technique, avis et entretien",
+ "metaDescription": "Xiaomi 6 Ultra : 500 W (1 200 W en crête), batterie 585 Wh, pneus tout-terrain 12\", deux disques mécaniques, IPX6, 33,7 kg. Autonomie mesurée et entretien.",
+ "intro": [
+  "La Xiaomi Electric Scooter 6 Ultra coiffe la série 6 présentée fin février 2026, avec sa livrée jaune inspirée de la berline SU7 Ultra. Cette fiche traite de la 6 Ultra seule, pas de la 4 Ultra plus ancienne. C'est la plus puissante et la plus lourde de la gamme, pensée pour un trajet quotidien fixe plutôt que pour être portée.",
+  "Son moteur arrière développe 500 W en continu et 1 200 W en crête, avec 45 N·m de couple. La batterie de 585 Wh promet 75 km à 15 km/h et 55 km à 25 km/h. Les pneus tout-terrain tubeless de 12 pouces travaillent avec une suspension à double bras oscillant devant et derrière. Elle pèse 33,7 kg et accepte 140 kg."
+ ],
+ "specs": [
+  [
+   "Puissance nominale",
+   "500 W (moteur arrière)"
+  ],
+  [
+   "Puissance crête",
+   "1 200 W, couple 45 N·m"
+  ],
+  [
+   "Vitesse",
+   "25 km/h"
+  ],
+  [
+   "Autonomie annoncée",
+   "75 km à 15 km/h ; 55 km à 25 km/h"
+  ],
+  [
+   "Autonomie mesurée",
+   "37 km selon Caradisiac et Journal du Geek ; 39 à 43,2 km selon Frandroid"
+  ],
+  [
+   "Batterie",
+   "12,5 Ah, 585 Wh"
+  ],
+  [
+   "Poids",
+   "33,7 kg"
+  ],
+  [
+   "Charge max",
+   "140 kg"
+  ],
+  [
+   "Pente max",
+   "25 %"
+  ],
+  [
+   "Roues",
+   "12 pouces tout-terrain, tubeless, 3 pouces de large (selon Xiaomi)"
+  ],
+  [
+   "Freins",
+   "Disque mécanique avant + disque mécanique arrière, E-ABS"
+  ],
+  [
+   "Suspension",
+   "Double bras oscillant à l'avant et à l'arrière, éléments élastomère (selon Caradisiac)"
+  ],
+  [
+   "Étanchéité",
+   "IPX6"
+  ],
+  [
+   "Temps de charge",
+   "10 à 10,5 h avec le chargeur fourni ; 3 h 30 avec le chargeur rapide 70 W en option (Journal du Geek)"
+  ]
+ ],
+ "pros": [
+  "Confort de suspension et moteur bien calibré pour le quotidien (Caradisiac).",
+  "Plus de 40 km réels par temps frais, jusqu'à 43,2 km mesurés (Frandroid).",
+  "Stable sur bitume comme sur chemin grâce aux roues crantées de 12 pouces (Frandroid)."
+ ],
+ "cons": [
+  "33,7 kg : réservée à ceux qui ont un ascenseur ou un local vélo (Journal du Geek).",
+  "Disques mécaniques qui manquent de mordant et plaquettes qui s'usent vite (Caradisiac).",
+  "Roue arrière qui bloque facilement au freinage, surtout sous la pluie (Frandroid).",
+  "Recharge standard d'environ 10 h ; le chargeur rapide est à acheter à part."
+ ],
+ "parts": [],
+ "care": [
+  "Les plaquettes de ses deux disques mécaniques s'usent vite selon les essais : regarde leur épaisseur tous les mois et ne roule pas sur le support métallique.",
+  "Pneus tout-terrain tubeless : garde la pression recommandée et retire les cailloux coincés dans les crampons après un passage sur chemin.",
+  "Après la pluie ou la boue, essuie les bras oscillants et leurs articulations, puis contrôle qu'aucun jeu n'apparaît dans les axes."
+ ],
+ "price": {
+  "text": "Prix de lancement : 799 € (Journal du Geek, Caradisiac) ; 999,99 € affichés chez Darty et Boulanger en 2026.",
+  "source": "Journal du Geek, Darty, Boulanger"
+ },
+ "faq": [
+  {
+   "q": "La Xiaomi 6 Ultra freine-t-elle bien ?",
+   "a": "Elle a deux disques mécaniques et l'E-ABS. Frandroid a mesuré 5,60 m à 25 km/h avec un arrière qui dérape, Caradisiac environ 4 m. Les essais reprochent surtout le manque de mordant et l'usure rapide des plaquettes."
+  },
+  {
+   "q": "Combien de kilomètres fait vraiment la Xiaomi 6 Ultra ?",
+   "a": "Entre 37 km (Caradisiac, Journal du Geek) et 43,2 km (Frandroid, conditions idéales). Xiaomi annonce 55 km à 25 km/h et 75 km à 15 km/h."
+  },
+  {
+   "q": "Quelle différence entre la Xiaomi 6 Ultra et la 6 Max ?",
+   "a": "L'Ultra a 585 Wh contre 468 Wh, 500 W nominaux contre 450 W et 1 200 W en crête contre 1 100 W. Elle accepte 140 kg contre 130 kg, mais pèse 4 kg de plus."
+  },
+  {
+   "q": "La recharge rapide est-elle fournie avec la 6 Ultra ?",
+   "a": "Non. Le chargeur livré demande une dizaine d'heures ; le chargeur rapide 70 W, vendu environ 60 €, descend à 3 h 30 selon Journal du Geek et Caradisiac."
+  },
+  {
+   "q": "Peut-on rouler plus vite que 25 km/h avec le mode Boost ?",
+   "a": "Non : le mode Boost améliore les accélérations et les montées, mais la vitesse reste bridée à 25 km/h, la limite autorisée sur la voie publique en France."
+  }
+ ],
+ "sources": [
+  {
+   "label": "Xiaomi France — Electric Scooter 6 Ultra",
+   "url": "https://www.mi.com/fr/product/xiaomi-electric-scooter-6-ultra/"
+  },
+  {
+   "label": "Xiaomi France — Electric Scooter 6 Ultra, caractéristiques",
+   "url": "https://www.mi.com/fr/product/xiaomi-electric-scooter-6-ultra/specs/"
+  },
+  {
+   "label": "Frandroid — test de la Xiaomi Electric Scooter 6 Ultra",
+   "url": "https://www.frandroid.com/survoltes/trottinette-electrique/3109109_on-a-teste-xiaomi-electric-scooter-6-ultra-la-trottinette-electrique-qui-se-prend-pour-la-xiaomi-su7-ultra"
+  },
+  {
+   "label": "Caradisiac — essai Xiaomi Scooter 6 Ultra",
+   "url": "https://www.caradisiac.com/essai-xiaomi-scooter-6-ultra-un-avant-gout-de-la-voiture-electrique-chinoise-221181.htm"
+  },
+  {
+   "label": "Journal du Geek — test de la Xiaomi 6 Ultra",
+   "url": "https://www.journaldugeek.com/test/test-de-la-trottinette-electrique-xiaomi-6-ultra-la-su7-urbaine-saveur-tapis-volant/"
+  },
+  {
+   "label": "01net — test Xiaomi Electric Scooter 6 Ultra",
+   "url": "https://www.01net.com/tests/test-xiaomi-electric-scooter-6-ultra-la-trottinette-electrique-ultime-a-moins-de-800-euros.html"
+  },
+  {
+   "label": "Darty — Xiaomi Electric Scooter 6 Ultra",
+   "url": "https://www.darty.com/nav/achat/sports_loisirs/glisse_urbaine/trottinette_electrique/xiaomi_miscoot6ultraj.html"
+  }
+ ],
+ "video": {
+  "id": "Q9d3to54CUs",
+  "title": "Xiaomi Electric Scooter 6 : infos et premières impressions sur la gamme 2026",
+  "channel": "David Nogueira",
+  "uploadDate": "2026-03-01"
+ }
+}

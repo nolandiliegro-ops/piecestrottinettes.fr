@@ -1,0 +1,124 @@
+{
+ "displayName": "Isinwheel D2",
+ "metaTitle": "Isinwheel D2 : fiche technique, autonomie et pièces",
+ "metaDescription": "Isinwheel D2 : moteur 1 000 W, batterie 48 V 15,6 Ah, 55 km annoncés, pneus tout-terrain 10 pouces, disques avant et arrière, 27,2 kg. Fiche et entretien.",
+ "intro": [
+  "L'Isinwheel D2 est une trottinette tout-terrain de 10 pouces qui privilégie l'autonomie : face à la D1, elle échange un peu de puissance contre une batterie bien plus grande. Isinwheel l'affiche 439 € sur sa boutique française, au lieu de 728,99 €. Elle se pilote aussi avec l'application Isinwheel Club pour le verrouillage et le suivi des trajets.",
+  "Moteur de 1 000 W, batterie certifiée CE de 48 V 15,6 Ah pour 55 km annoncés, suspensions à l'avant et à l'arrière, et un frein à disque sur chaque roue. Elle pèse 27,2 kg, accepte 120 kg et offre un plateau de 19 cm de large. Son indice IPX4 la protège des éclaboussures."
+ ],
+ "specs": [
+  [
+   "Moteur",
+   "1 000 W"
+  ],
+  [
+   "Vitesse",
+   "quatre modes annoncés jusqu'à 45 km/h ; 25 km/h maximum sur la voie publique"
+  ],
+  [
+   "Autonomie annoncée",
+   "jusqu'à 55 km"
+  ],
+  [
+   "Batterie",
+   "48 V 15,6 Ah, certifiée CE"
+  ],
+  [
+   "Poids",
+   "27,2 kg"
+  ],
+  [
+   "Charge max",
+   "120 kg"
+  ],
+  [
+   "Roues",
+   "10 pouces, pneus tout-terrain"
+  ],
+  [
+   "Freins",
+   "Disques avant et arrière"
+  ],
+  [
+   "Suspension",
+   "Avant et arrière"
+  ],
+  [
+   "Étanchéité",
+   "IPX4"
+  ],
+  [
+   "Temps de charge",
+   "7 à 8 h"
+  ]
+ ],
+ "pros": [
+  "Batterie de 15,6 Ah pour 55 km annoncés, contre 40 km pour la D1 (isinwheel.fr).",
+  "Suspensions avant et arrière et un disque sur chaque roue (bonsplansmania, isinwheel.fr).",
+  "Application Isinwheel Club pour verrouiller la trottinette et suivre ses trajets (blog Isinwheel)."
+ ],
+ "cons": [
+  "Charge maximale de 120 kg, quand la D1 en accepte 150.",
+  "27,2 kg à porter dans un escalier, malgré son étiquette de trottinette du quotidien.",
+  "Recharge de 7 à 8 heures.",
+  "Isinwheel ne publie pas la cote exacte de ses pneus de 10 pouces."
+ ],
+ "parts": [],
+ "care": [
+  "Pneus tout-terrain de 10 pouces : avant d'en commander un, relève la cote gravée sur le flanc, Isinwheel ne la donne pas.",
+  "Ses deux freins à disque s'usent vite sur chemin : vérifie l'épaisseur des plaquettes et l'état des disques une fois par mois.",
+  "Nettoie et graisse les axes de suspension après une sortie boueuse, et contrôle le jeu du pliage."
+ ],
+ "price": {
+  "text": "439 € sur isinwheel.fr (prix de référence 728,99 €) ; 568 € chez FinBike.",
+  "source": "isinwheel.fr, finbike.com"
+ },
+ "faq": [
+  {
+   "q": "Quelle différence entre l'Isinwheel D2 et la D1 ?",
+   "a": "La D1 a un moteur plus fort (1 200 W) mais une batterie 48 V 10 Ah pour 40 km ; la D2 descend à 1 000 W et monte à 15,6 Ah pour 55 km. La D1 accepte 150 kg, la D2 120 kg."
+  },
+  {
+   "q": "Quelle taille de pneu pour l'Isinwheel D2 ?",
+   "a": "Ce sont des pneus tout-terrain de 10 pouces, mais la cote complète n'est pas publiée. Lis l'inscription sur le flanc de ton pneu avant de commander un pneu ou une chambre."
+  },
+  {
+   "q": "Combien de temps pour recharger l'Isinwheel D2 ?",
+   "a": "7 à 8 heures pour une charge complète, selon Isinwheel."
+  },
+  {
+   "q": "Jusqu'à quel poids peut-on rouler avec l'Isinwheel D2 ?",
+   "a": "120 kg, d'après Isinwheel. Au-delà, regarde plutôt la D1, donnée pour 150 kg."
+  },
+  {
+   "q": "À quelle vitesse peut rouler l'Isinwheel D2 en ville ?",
+   "a": "À 25 km/h au plus. Isinwheel annonce des modes jusqu'à 45 km/h, mais la loi française plafonne les trottinettes électriques à 25 km/h sur la voie publique ; au-dessus, c'est terrain privé uniquement."
+  }
+ ],
+ "sources": [
+  {
+   "label": "Isinwheel France — D2 tout-terrain 1000 W",
+   "url": "https://www.isinwheel.fr/products/d2-d2plus-trottinette-electrique-tout-terrain-1000-w"
+  },
+  {
+   "label": "Isinwheel France — blog, trottinettes à moins de 800 €",
+   "url": "https://www.isinwheel.fr/blogs/news/meilleur-trottinette-electrique-moins-de-700-euros"
+  },
+  {
+   "label": "Isinwheel France — D1 1200 W",
+   "url": "https://www.isinwheel.fr/products/isinwheel-d1-trottinette-electrique-tout-terrain1200w"
+  },
+  {
+   "label": "Bons Plans Mania — Isinwheel D2 à 439 €",
+   "url": "https://bonsplansmania.fr/article/isinwheel-d2-vert-olive-trottinette-1000w-439-euros-septembre-2026"
+  },
+  {
+   "label": "FinBike — Isinwheel D2",
+   "url": "https://www.finbike.com/fr/collections/off-road-electric-scooter"
+  },
+  {
+   "label": "Isinwheel France — trottinettes plus de 100 kg",
+   "url": "https://www.isinwheel.fr/collections/trottinette-electrique-plus-de-100-kg"
+  }
+ ]
+}

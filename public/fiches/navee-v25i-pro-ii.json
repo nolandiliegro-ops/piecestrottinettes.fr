@@ -1,0 +1,128 @@
+{
+ "displayName": "Navee V25i Pro II",
+ "metaTitle": "Navee V25i Pro II : fiche technique, prix et FAQ",
+ "metaDescription": "Navee V25i Pro II : 300 W (600 W en pointe), 183,6 Wh, 25 km annoncés, pneus gonflables 10\", tambour avant et EABS, 17,7 kg. Specs, prix et entretien.",
+ "intro": [
+  "La Navee V25i Pro II est la petite trottinette urbaine de la marque : 17,7 kg, une batterie de 183,6 Wh et un prix affiché à 199 € sur la boutique française de Navee. Elle vise les trajets courts, avec 100 kg de charge maximale et 15 % de pente annoncés.",
+  "Moteur de 300 W (600 W en pointe), batterie de 36 V et 5,1 Ah pour 25 km à 15 km/h. La version vendue par Navee France est limitée à 20 km/h. Pneus gonflables de 10 pouces, fourche avant suspendue, tambour à l'avant et EABS à l'arrière, IPX5 et Apple Find My."
+ ],
+ "specs": [
+  [
+   "Moteur",
+   "300 W (600 W en pointe), propulsion arrière"
+  ],
+  [
+   "Vitesse",
+   "20 km/h (version Navee France), 25 km/h pour la version UE"
+  ],
+  [
+   "Autonomie annoncée",
+   "25 km à 15 km/h, 23 km à 20 km/h"
+  ],
+  [
+   "Batterie",
+   "36 V, 5,1 Ah, 183,6 Wh"
+  ],
+  [
+   "Poids",
+   "17,7 kg"
+  ],
+  [
+   "Charge max",
+   "100 kg"
+  ],
+  [
+   "Roues",
+   "10 pouces gonflables"
+  ],
+  [
+   "Freins",
+   "Tambour avant + frein électronique EABS arrière"
+  ],
+  [
+   "Suspension",
+   "Fourche avant (28 mm selon les revendeurs)"
+  ],
+  [
+   "Étanchéité",
+   "IPX5"
+  ],
+  [
+   "Pente max",
+   "15 %"
+  ],
+  [
+   "Temps de charge",
+   "4 à 4,5 h"
+  ]
+ ],
+ "pros": [
+  "17,7 kg pour 1 206 × 166 × 560 mm une fois pliée : elle se monte dans un train ou un escalier sans peine (Navee).",
+  "Affichée à 199 € sur la boutique française de Navee, avec clignotants et localisation Apple Find My.",
+  "Recharge complète en 4 à 4,5 heures selon Navee, compatible avec une prise au bureau."
+ ],
+ "cons": [
+  "Charge maximale de 100 kg et pente limitée à 15 %.",
+  "Autonomie courte : 25 km au mieux à 15 km/h, et l'en-tête de la fiche française n'annonce que 20 km.",
+  "Pas de frein à disque : le freinage repose sur un tambour avant et l'EABS arrière.",
+  "Version française limitée à 20 km/h."
+ ],
+ "parts": [],
+ "care": [
+  "Le tambour avant se règle par la tension du câble : reprends-la dès que le levier part trop loin vers la poignée.",
+  "Pneus gonflables avec chambre à air : un contrôle hebdomadaire de la pression évite les crevaisons par pincement.",
+  "L'arrière ne freine que par le moteur (EABS) : le tambour avant fait l'essentiel du travail, garde-le bien réglé avant chaque descente."
+ ],
+ "price": {
+  "text": "199 € (prix barré 349,99 €) sur la boutique française de Navee ; 319 € pour la version UE 25 km/h sur la boutique Navee Europe.",
+  "source": "Navee France, Navee Europe"
+ },
+ "faq": [
+  {
+   "q": "Quelle taille de pneu pour la Navee V25i Pro II ?",
+   "a": "Navee annonce des pneus gonflables de 10 pouces sans publier la cote. Ne reprends pas celle de l'ancienne V25i Pro : seule la cote moulée sur ton propre pneu compte."
+  },
+  {
+   "q": "La V25i Pro II roule-t-elle à 20 ou 25 km/h ?",
+   "a": "La version vendue par Navee France est limitée à 20 km/h ; Navee Europe vend aussi une version à 25 km/h, la vitesse maximale autorisée en France. Débrider au-delà est interdit sur la voie publique."
+  },
+  {
+   "q": "Quels freins sur la Navee V25i Pro II ?",
+   "a": "Un tambour à l'avant, sans plaquettes à changer, et le frein électronique EABS à l'arrière."
+  },
+  {
+   "q": "Quelle autonomie pour la V25i Pro II ?",
+   "a": "Navee annonce 25 km à 15 km/h et 23 km à 20 km/h avec sa batterie de 183,6 Wh. Prévois-la pour des trajets de quelques kilomètres."
+  },
+  {
+   "q": "Combien pèse la V25i Pro II et quel poids supporte-t-elle ?",
+   "a": "Elle pèse 17,7 kg et accepte jusqu'à 100 kg."
+  }
+ ],
+ "sources": [
+  {
+   "label": "Navee France — V25i Pro II",
+   "url": "https://naveetech.fr/products/navee-v25i-pro-ii"
+  },
+  {
+   "label": "Navee Europe — V25i Pro II (version UE 25 km/h)",
+   "url": "https://eu.naveetech.com/en-nordic/products/navee-v25i-pro-ii"
+  },
+  {
+   "label": "Navee — V25i Pro II, caractéristiques",
+   "url": "https://www.naveetech.com/eur/navee-v25i-pro-ii/"
+  },
+  {
+   "label": "Navee France — comparatif trottinettes pas chères",
+   "url": "https://naveetech.fr/blogs/trottinette-electrique/trottinette-electrique-pas-cher-adulte"
+  },
+  {
+   "label": "Great Technology — Navee V25i Pro II",
+   "url": "https://www.great-technology.be/en/products/navee-v25i-pro-ii-electric-scooter"
+  },
+  {
+   "label": "Digitec — Navee V25i Pro II",
+   "url": "https://www.digitec.ch/fr/s1/product/navee-v25i-pro-ii-20-kmh-25-km-600-w-trottinette-electrique-62356720"
+  }
+ ]
+}

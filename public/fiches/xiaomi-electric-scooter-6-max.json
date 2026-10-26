@@ -1,0 +1,146 @@
+{
+ "displayName": "Xiaomi Electric Scooter 6 Max",
+ "metaTitle": "Xiaomi 6 Max : fiche technique, autonomie et entretien",
+ "metaDescription": "Xiaomi Electric Scooter 6 Max : 450 W (1 100 W en crête), 468 Wh, pneus tubeless 12\", deux freins à disque, IPX6, 29,7 kg. Autonomie réelle et entretien.",
+ "intro": [
+  "La Xiaomi Electric Scooter 6 Max arrive fin février 2026, juste au-dessus de la 6 Pro et sous la 6 Ultra. Cette fiche concerne uniquement la 6 Max, pas la 5 Max de la génération précédente. Elle garde la batterie de 468 Wh de la 6 Pro mais ajoute un second frein à disque à l'arrière, un moteur plus musclé et la compatibilité avec un chargeur rapide vendu à part.",
+  "Côté moteur, Xiaomi annonce 450 W nominaux et 1 100 W en crête, pour une pente maximale de 24 %. L'autonomie officielle est de 70 km à 15 km/h et de 45 km à 25 km/h. Elle roule sur des pneus tubeless de 12 pouces, avec une fourche suspendue et deux ressorts à l'arrière. Comptez 29,7 kg sur la balance et 130 kg de charge admise."
+ ],
+ "specs": [
+  [
+   "Puissance nominale",
+   "450 W (moteur arrière)"
+  ],
+  [
+   "Puissance crête",
+   "1 100 W"
+  ],
+  [
+   "Vitesse",
+   "25 km/h"
+  ],
+  [
+   "Autonomie annoncée",
+   "70 km à 15 km/h ; 45 km à 25 km/h"
+  ],
+  [
+   "Autonomie mesurée",
+   "29,5 à 35,6 km selon Frandroid ; environ 37 km selon Femme Actuelle ; 48,2 km au Labo Fnac"
+  ],
+  [
+   "Batterie",
+   "10 Ah, 468 Wh"
+  ],
+  [
+   "Poids",
+   "29,7 kg"
+  ],
+  [
+   "Charge max",
+   "130 kg"
+  ],
+  [
+   "Pente max",
+   "24 %"
+  ],
+  [
+   "Roues",
+   "12 pouces, tubeless"
+  ],
+  [
+   "Freins",
+   "Disque mécanique avant + disque mécanique arrière, E-ABS arrière"
+  ],
+  [
+   "Suspension",
+   "Fourche avant + double ressort arrière"
+  ],
+  [
+   "Étanchéité",
+   "IPX6"
+  ],
+  [
+   "Temps de charge",
+   "environ 9 h annoncées (8 h 45 mesurées par Frandroid) ; 2 h 45 avec le chargeur rapide Fast Charger 2 vendu séparément"
+  ]
+ ],
+ "pros": [
+  "Engin stable et agile, accélérations vives mais progressives (Frandroid).",
+  "Garde une vitesse de 20 km/h jusqu'à 7 % de batterie restante (Femme Actuelle).",
+  "IPX6 et 130 kg de charge admise, selon la fiche Xiaomi."
+ ],
+ "cons": [
+  "29,7 kg : difficile à porter, même sur de courtes distances (Frandroid).",
+  "Recharge standard au-delà de 8 h ; le chargeur rapide coûte environ 60 € en plus (Frandroid, Capital).",
+  "Freinage encore juste : 5 m pour s'arrêter à 25 km/h et l'arrière qui dérape (Frandroid).",
+  "Vibrations à l'arrière sur les pavés et les gros obstacles (Frandroid)."
+ ],
+ "parts": [],
+ "care": [
+  "Deux disques mécaniques : les câbles se détendent avec l'usure des plaquettes, retends-les dès que le levier vient trop près de la poignée.",
+  "Pneus tubeless de 12 pouces : contrôle la pression chaque mois, un pneu sous-gonflé use plus vite la gomme et mange de l'autonomie.",
+  "Les deux ressorts arrière encaissent les pavés : vérifie régulièrement le serrage de leurs axes et l'absence de jeu dans le bras."
+ ],
+ "price": {
+  "text": "649,99 € au lancement (février 2026) selon Frandroid ; 809,99 € affichés chez Boulanger, Fnac, Darty et Xiaomi en 2026.",
+  "source": "Frandroid, Boulanger"
+ },
+ "faq": [
+  {
+   "q": "Quelle autonomie réelle pour la Xiaomi 6 Max ?",
+   "a": "Frandroid a mesuré entre 29,5 km (pluie, 12 °C) et 35,6 km, Femme Actuelle environ 37 km avec un conducteur de 80 kg. Xiaomi annonce 70 km à 15 km/h et 45 km à 25 km/h."
+  },
+  {
+   "q": "Combien de temps pour recharger la Xiaomi 6 Max ?",
+   "a": "Avec le chargeur fourni, compte un peu moins de 9 h pour un plein. Le chargeur rapide Fast Charger 2, vendu à part, ramène ce temps à 2 h 45 selon Xiaomi."
+  },
+  {
+   "q": "Quels freins sur la Xiaomi 6 Max ?",
+   "a": "Un disque mécanique à l'avant, un autre à l'arrière, et l'E-ABS sur la roue arrière. La 6 Pro, elle, n'a de disque qu'à l'avant."
+  },
+  {
+   "q": "Quelle différence entre la Xiaomi 6 Max et la 6 Ultra ?",
+   "a": "La 6 Ultra passe à 500 W nominaux et 1 200 W en crête, à 585 Wh au lieu de 468 Wh et à 75 km annoncés. Elle pèse 33,7 kg contre 29,7 kg pour la 6 Max."
+  },
+  {
+   "q": "Quelle taille de pneu pour la Xiaomi 6 Max ?",
+   "a": "Xiaomi annonce des pneus tubeless de 12 pouces sans publier la cote complète. Avant de commander, lis la dimension gravée sur le flanc de ton pneu."
+  }
+ ],
+ "sources": [
+  {
+   "label": "Xiaomi France — Electric Scooter 6 Max",
+   "url": "https://www.mi.com/fr/product/xiaomi-electric-scooter-6-max/"
+  },
+  {
+   "label": "Xiaomi France — Electric Scooter 6 Max, caractéristiques",
+   "url": "https://www.mi.com/fr/product/xiaomi-electric-scooter-6-max/specs/"
+  },
+  {
+   "label": "Frandroid — test de la Xiaomi Electric Scooter 6 Max",
+   "url": "https://www.frandroid.com/survoltes/trottinette-electrique/3183729_on-a-teste-la-xiaomi-electric-scooter-6-max-une-trottinette-electrique-tres-equilibree-et-performante"
+  },
+  {
+   "label": "Femme Actuelle — test de la Xiaomi Scooter 6 Max",
+   "url": "https://www.femmeactuelle.fr/vie-pratique/high-tech/on-a-teste-la-xiaomi-scooter-6-max-la-trottinette-electrique-qui-change-enfin-de-categorie-2210856"
+  },
+  {
+   "label": "L'Éclaireur Fnac — Test Labo de la Xiaomi 6 Max",
+   "url": "https://leclaireur.fnac.com/test/672884-test-labo-de-la-xiaomi-mi-scoot-6-max-une-trottinette-survitaminee/"
+  },
+  {
+   "label": "Capital — test de la Xiaomi Scooter 6 Max",
+   "url": "https://www.capital.fr/conso/que-vaut-cette-trottinette-xiaomi-premium-selon-nos-tests-1530536"
+  },
+  {
+   "label": "Boulanger — Xiaomi Electric Scooter 6 Max",
+   "url": "https://www.boulanger.com/ref/1235216"
+  }
+ ],
+ "video": {
+  "id": "Q9d3to54CUs",
+  "title": "Xiaomi Electric Scooter 6 : infos et premières impressions sur la gamme 2026",
+  "channel": "David Nogueira",
+  "uploadDate": "2026-03-01"
+ }
+}

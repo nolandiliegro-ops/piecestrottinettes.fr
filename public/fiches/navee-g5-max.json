@@ -1,0 +1,147 @@
+{
+ "displayName": "Navee G5 Max",
+ "metaTitle": "Navee G5 Max : fiche technique, pneus et pièces",
+ "metaDescription": "Navee G5 Max : 500 W (1 000 W en pointe), 477 Wh, 70 km annoncés, pneus tubeless 60/70-6.5, tambour avant et E-ABS. Caractéristiques, entretien, pièces.",
+ "intro": [
+  "La Navee G5 Max coiffe la gamme G5 : même silhouette que la G5 Pro, mais un moteur plus musclé et la plus grosse batterie de la série. Son cadre est en acier automobile SPCC, que Navee dit testé à plus de 1 000 kg en charge statique. Elle garde les clignotants, le contrôle de traction et la localisation Apple Localiser.",
+  "Le moteur arrière fournit 500 W en continu et 1 000 W en pointe, alimenté par une batterie de 46,8 V et 477 Wh : 70 km annoncés à 15 km/h, 43 km à 25 km/h. Pneus tubeless de 10 pouces, fourche à ressort, bras arrière amorti, tambour à l'avant et frein électronique à l'arrière. Elle pèse 22,6 kg et accepte 120 kg."
+ ],
+ "specs": [
+  [
+   "Moteur",
+   "500 W nominal, 1 000 W en pointe"
+  ],
+  [
+   "Vitesse",
+   "25 km/h (version européenne)"
+  ],
+  [
+   "Autonomie annoncée",
+   "70 km à 15 km/h, 56 km à 20 km/h, 43 km à 25 km/h"
+  ],
+  [
+   "Batterie",
+   "46,8 V, 477 Wh"
+  ],
+  [
+   "Poids",
+   "22,6 kg"
+  ],
+  [
+   "Charge max",
+   "120 kg"
+  ],
+  [
+   "Pente max",
+   "24 %"
+  ],
+  [
+   "Roues",
+   "10 pouces, tubeless 60/70-6.5 (10x2.50-6.5)"
+  ],
+  [
+   "Freins",
+   "Tambour avant + électronique arrière (E-ABS)"
+  ],
+  [
+   "Suspension",
+   "Fourche avant à ressort + bras arrière amorti (Damping Arm)"
+  ],
+  [
+   "Étanchéité",
+   "IPX5"
+  ],
+  [
+   "Temps de charge",
+   "environ 8 h"
+  ],
+  [
+   "Pression des pneus",
+   "42 à 48 psi (service Navee)"
+  ]
+ ],
+ "pros": [
+  "Batterie de 477 Wh, la plus grosse de la gamme G5 : 70 km annoncés à 15 km/h (Navee).",
+  "Cadre en acier automobile SPCC (Navee).",
+  "Contrôle de traction et frein régénératif réglable dans l'application (EZbike)."
+ ],
+ "cons": [
+  "22,6 kg à porter, plus que la G5 Pro (21,2 kg).",
+  "Autonomie annoncée à 15 km/h : Navee lui-même tombe à 43 km à 25 km/h.",
+  "Freinage mécanique uniquement à l'avant, par tambour.",
+  "Recharge en 8 heures, pas de charge rapide."
+ ],
+ "parts": [
+  {
+   "label": "Pneu",
+   "size": "60/70-6.5 (10x2.50-6.5) tubeless",
+   "count": 13,
+   "to": "/piece/pneu-tubeless-60-70-6-5-wanda",
+   "cta": "Pneus 60/70-6.5"
+  },
+  {
+   "label": "Chambre à air",
+   "size": "10x2.50, dépannage dans le pneu tubeless",
+   "count": 6,
+   "to": "/piece/chambre-a-air-10x250-valve-90x90",
+   "cta": "Chambres 10x2.50"
+  }
+ ],
+ "care": [
+  "Le tambour avant chauffe dans les longues descentes : relâche-le par moments et fais régler le câble quand le levier devient mou.",
+  "Gonfle entre 42 et 48 psi à froid, comme le recommande Navee : en dessous, l'autonomie chute et la jante s'expose aux chocs.",
+  "Contrôle le bras arrière et les vis de la colonne tous les 500 km environ, ils encaissent le poids du cadre acier."
+ ],
+ "faq": [
+  {
+   "q": "Quelle taille de pneu pour la Navee G5 Max ?",
+   "a": "Navee annonce des pneus tubeless de 10 pouces ; les boutiques de pièces la référencent en 60/70-6.5, cote équivalente au 10x2.50-6.5. Vérifie quand même l'inscription sur ton flanc avant de commander."
+  },
+  {
+   "q": "Quelle différence entre la Navee G5 Max et la G5 Pro ?",
+   "a": "La G5 Max a un moteur de 500 W (1 000 W en pointe) contre 400 W (800 W), une batterie de 477 Wh contre 358 Wh et 70 km annoncés contre 55 km. Elle pèse 22,6 kg, contre 21,2 kg."
+  },
+  {
+   "q": "La Navee G5 Max a-t-elle des plaquettes de frein ?",
+   "a": "Non. Elle freine avec un tambour à l'avant et un frein électronique (E-ABS) à l'arrière, sans disque."
+  },
+  {
+   "q": "À quelle pression gonfler les pneus de la Navee G5 Max ?",
+   "a": "Le service Navee recommande 42 à 48 psi, pneus froids."
+  },
+  {
+   "q": "Peut-on rouler avec une chambre à air dans la Navee G5 Max ?",
+   "a": "Oui, en dépannage : une chambre 10x2.50 se glisse dans le pneu tubeless si les crevaisons se répètent."
+  }
+ ],
+ "sources": [
+  {
+   "label": "Navee France — NAVEE G5 Max",
+   "url": "https://naveetech.fr/products/navee-g5-max"
+  },
+  {
+   "label": "Navee Europe — G5 Max (version UE)",
+   "url": "https://eu.naveetech.com/en-pl/products/navee-g5-max"
+  },
+  {
+   "label": "Navee Service — FAQ G5 Max",
+   "url": "https://service.naveetech.com/g5-max/faqs/"
+  },
+  {
+   "label": "Frandroid — présentation de la gamme Navee G5",
+   "url": "https://www.frandroid.com/survoltes/trottinette-electrique/2779071_typee-cyberpunk-la-trottinette-electrique-pas-chere-de-navee-fait-peau-neuve-avec-de-sympathiques-nouveautes"
+  },
+  {
+   "label": "E-Watts — pneu 60/70-6.5 tubeless",
+   "url": "https://e-watts.fr/produit/pneu-60-70-6-5-tubeless"
+  },
+  {
+   "label": "Idealo — Navee G5 Max et pneus 60/70-6.5",
+   "url": "https://www.idealo.de/preisvergleich/Liste/123494958/navee-g5-max.html"
+  },
+  {
+   "label": "EZbike — Navee G5 Max",
+   "url": "https://www.ezbike.ca/products/navee-g5-max-electric-scooter"
+  }
+ ]
+}
