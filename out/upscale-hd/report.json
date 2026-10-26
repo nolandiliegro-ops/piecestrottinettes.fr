@@ -1,0 +1,3131 @@
+[
+ {
+  "slug": "weped-ssgt",
+  "i": 0,
+  "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3GQlfFCxTsvuOLmSkOzS19wh9sw/hf_20261026_170126_138906a9-93da-47da-a5e4-e9b288aece1f.png",
+  "verdict": "WARN",
+  "reasons": [
+   "cadrage serré"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.015,
+   "fill": 0.746
+  },
+  "size": [
+   1806,
+   1425
+  ],
+  "error": null,
+  "juge": {
+   "vue": "3/4 arriere",
+   "refus": false,
+   "motifs": [],
+   "principale_ok": false,
+   "rang": 2,
+   "note": "Vue arrière basse, tige et roue avant coupées par le bord gauche/haut de l'image."
+  },
+  "doublon": null
+ },
+ {
+  "slug": "xiaomi-electric-scooter-6-ultra",
+  "i": 0,
+  "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3GQlfFCxTsvuOLmSkOzS19wh9sw/hf_20261026_170127_6429eb1e-13cb-4264-8113-d2060b5e5056.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.261,
+   "fill": 0.74
+  },
+  "size": [
+   1372,
+   1814
+  ],
+  "error": null,
+  "juge": {
+   "vue": "3/4 avant",
+   "refus": false,
+   "motifs": [],
+   "principale_ok": true,
+   "rang": 0,
+   "note": ""
+  },
+  "doublon": null
+ },
+ {
+  "slug": "isinwheel-s9-max",
+  "i": 0,
+  "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3GQlfFCxTsvuOLmSkOzS19wh9sw/hf_20261026_170132_dd24ac93-00da-4af6-9f0f-b1613bb1997c.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0,
+   "fill": 0.6
+  },
+  "size": [
+   1407,
+   1836
+  ],
+  "error": null,
+  "juge": {
+   "vue": "3/4 avant",
+   "refus": false,
+   "motifs": [],
+   "principale_ok": true,
+   "rang": 0,
+   "note": ""
+  },
+  "doublon": null
+ },
+ {
+  "slug": "inmotion-climber",
+  "i": 0,
+  "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3GQlfFCxTsvuOLmSkOzS19wh9sw/hf_20261026_170130_502c2e96-64c3-483b-b708-6f1e78dff6bd.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.029,
+   "fill": 0.643
+  },
+  "size": [
+   1153,
+   1874
+  ],
+  "error": null,
+  "juge": {
+   "vue": "3/4 avant",
+   "refus": false,
+   "motifs": [],
+   "principale_ok": true,
+   "rang": 0,
+   "note": ""
+  },
+  "doublon": null
+ },
+ {
+  "slug": "nami-burn-e",
+  "i": 0,
+  "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3GQlfFCxTsvuOLmSkOzS19wh9sw/hf_20261026_170224_3ef731ac-8246-40e5-8503-a5955eb9bea3.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.026,
+   "fill": 0.567
+  },
+  "size": [
+   1322,
+   1860
+  ],
+  "error": null,
+  "juge": {
+   "vue": "3/4 avant",
+   "refus": false,
+   "motifs": [],
+   "principale_ok": true,
+   "rang": 0,
+   "note": ""
+  },
+  "doublon": null
+ },
+ {
+  "slug": "weped-gts",
+  "i": 0,
+  "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3GQlfFCxTsvuOLmSkOzS19wh9sw/hf_20261026_170244_4395aac0-4456-4ad9-9221-f852a67980f9.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.007,
+   "fill": 0.666
+  },
+  "size": [
+   1186,
+   1862
+  ],
+  "error": null,
+  "juge": {
+   "vue": "3/4 avant",
+   "refus": false,
+   "motifs": [],
+   "principale_ok": true,
+   "rang": 0,
+   "note": ""
+  },
+  "doublon": null
+ },
+ {
+  "slug": "xiaomi-electric-scooter-4-lite",
+  "i": 0,
+  "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3GQlfFCxTsvuOLmSkOzS19wh9sw/hf_20261026_170246_705a93c2-ad29-4ad7-aae4-714f2b26aa29.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0,
+   "fill": 0.546
+  },
+  "size": [
+   1275,
+   1876
+  ],
+  "error": null,
+  "juge": {
+   "vue": "3/4 avant",
+   "refus": false,
+   "motifs": [],
+   "principale_ok": true,
+   "rang": 0,
+   "note": ""
+  },
+  "doublon": null
+ },
+ {
+  "slug": "navee-k100",
+  "i": 0,
+  "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3GQlfFCxTsvuOLmSkOzS19wh9sw/hf_20261026_164201_f65f8891-8657-469f-b165-70c5127fe4bf.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.273,
+   "fill": 0.681
+  },
+  "size": [
+   1684,
+   1784
+  ],
+  "error": null,
+  "juge": {
+   "vue": "profil",
+   "refus": false,
+   "motifs": [],
+   "principale_ok": false,
+   "rang": 2,
+   "note": ""
+  },
+  "doublon": null
+ },
+ {
+  "slug": "beaster-bs77",
+  "i": 0,
+  "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3GQlfFCxTsvuOLmSkOzS19wh9sw/hf_20261026_170247_187ca4b9-dca4-4940-ae48-b039a0760bda.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.002,
+   "fill": 0.772
+  },
+  "size": [
+   1493,
+   1794
+  ],
+  "error": null,
+  "juge": {
+   "vue": "3/4 avant",
+   "refus": false,
+   "motifs": [],
+   "principale_ok": true,
+   "rang": 0,
+   "note": ""
+  },
+  "doublon": null
+ },
+ {
+  "slug": "kingsong-n14-max",
+  "i": 0,
+  "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3GQlfFCxTsvuOLmSkOzS19wh9sw/hf_20261026_170338_9d6a6966-b474-40b9-909a-dbfa5f726993.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.007,
+   "fill": 0.606
+  },
+  "size": [
+   1437,
+   1830
+  ],
+  "error": null,
+  "juge": {
+   "vue": "3/4 avant",
+   "refus": false,
+   "motifs": [],
+   "principale_ok": true,
+   "rang": 0,
+   "note": ""
+  },
+  "doublon": null
+ },
+ {
+  "slug": "urbanglide-urbanride-100xs",
+  "i": 0,
+  "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3GQlfFCxTsvuOLmSkOzS19wh9sw/hf_20261026_170352_b68362bb-da00-4ded-8ba2-e693dd5aaee4.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.007,
+   "fill": 0.741
+  },
+  "size": [
+   1380,
+   1812
+  ],
+  "error": null,
+  "juge": {
+   "vue": "3/4 avant",
+   "refus": false,
+   "motifs": [],
+   "principale_ok": true,
+   "rang": 0,
+   "note": ""
+  },
+  "doublon": null
+ },
+ {
+  "slug": "kukirin-m4-max",
+  "i": 0,
+  "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3GQlfFCxTsvuOLmSkOzS19wh9sw/hf_20261026_170354_6f7fecc7-1ae1-4716-b858-0eb871c00aa4.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.027,
+   "fill": 0.598
+  },
+  "size": [
+   1404,
+   1836
+  ],
+  "error": null,
+  "juge": {
+   "vue": "3/4 avant",
+   "refus": false,
+   "motifs": [],
+   "principale_ok": true,
+   "rang": 0,
+   "note": ""
+  },
+  "doublon": null
+ },
+ {
+  "slug": "hitway-h5-pro",
+  "i": 0,
+  "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3GQlfFCxTsvuOLmSkOzS19wh9sw/hf_20261026_170355_7cad7592-bab6-46ed-8439-9967cad0427b.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.026,
+   "fill": 0.564
+  },
+  "size": [
+   1354,
+   1850
+  ],
+  "error": null,
+  "juge": {
+   "vue": "3/4 avant",
+   "refus": false,
+   "motifs": [],
+   "principale_ok": true,
+   "rang": 0,
+   "note": ""
+  },
+  "doublon": null
+ },
+ {
+  "slug": "vsett-11-plus-super",
+  "i": 0,
+  "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3GQlfFCxTsvuOLmSkOzS19wh9sw/hf_20261026_170445_005bbd23-aa5b-4493-aa9f-c75bbe8a74ad.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.105,
+   "fill": 0.645
+  },
+  "size": [
+   1334,
+   1838
+  ],
+  "error": null,
+  "juge": {
+   "vue": "3/4 avant",
+   "refus": false,
+   "motifs": [],
+   "principale_ok": true,
+   "rang": 0,
+   "note": ""
+  },
+  "doublon": null
+ },
+ {
+  "slug": "ninebot-e2-plus-e-ii",
+  "i": 0,
+  "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3GQlfFCxTsvuOLmSkOzS19wh9sw/hf_20261026_170504_2ab65225-9443-4ce8-82ef-890ef76e4f22.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.01,
+   "fill": 0.556
+  },
+  "size": [
+   1319,
+   1862
+  ],
+  "error": null,
+  "juge": {
+   "vue": "3/4 avant",
+   "refus": false,
+   "motifs": [],
+   "principale_ok": true,
+   "rang": 0,
+   "note": ""
+  },
+  "doublon": null
+ },
+ {
+  "slug": "weped-fold-3",
+  "i": 0,
+  "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3GQlfFCxTsvuOLmSkOzS19wh9sw/hf_20261026_170505_309d334c-c914-436a-87a8-eaf2de936a3f.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.08,
+   "fill": 0.804
+  },
+  "size": [
+   1665,
+   1770
+  ],
+  "error": null,
+  "juge": {
+   "vue": "profil",
+   "refus": false,
+   "motifs": [],
+   "principale_ok": false,
+   "rang": 2,
+   "note": ""
+  },
+  "doublon": null
+ },
+ {
+  "slug": "dualtron-spider-2",
+  "i": 0,
+  "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3GQlfFCxTsvuOLmSkOzS19wh9sw/hf_20261026_170539_18d81dbe-82b6-4546-911e-62947dc7a874.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.011,
+   "fill": 0.511
+  },
+  "size": [
+   1224,
+   1898
+  ],
+  "error": null,
+  "juge": {
+   "vue": "3/4 avant",
+   "refus": false,
+   "motifs": [],
+   "principale_ok": true,
+   "rang": 0,
+   "note": ""
+  },
+  "doublon": null
+ },
+ {
+  "slug": "beaster-diablo",
+  "i": 0,
+  "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3GQlfFCxTsvuOLmSkOzS19wh9sw/hf_20261026_170617_6dd89b9a-338d-4e97-b96b-1962c95ce4fa.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.069,
+   "fill": 0.575
+  },
+  "size": [
+   1352,
+   1850
+  ],
+  "error": null,
+  "juge": {
+   "vue": "3/4 avant",
+   "refus": false,
+   "motifs": [],
+   "principale_ok": true,
+   "rang": 0,
+   "note": ""
+  },
+  "doublon": null
+ },
+ {
+  "slug": "nami-burn-e-2",
+  "i": 0,
+  "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3GQlfFCxTsvuOLmSkOzS19wh9sw/hf_20261026_170946_50614125-030f-4e09-be96-33a8cf60829f.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.027,
+   "fill": 0.705
+  },
+  "size": [
+   1261,
+   1838
+  ],
+  "error": null,
+  "juge": {
+   "vue": "3/4 avant",
+   "refus": false,
+   "motifs": [],
+   "principale_ok": true,
+   "rang": 0,
+   "note": ""
+  },
+  "doublon": null
+ },
+ {
+  "slug": "inokim-light-2-super",
+  "i": 0,
+  "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3GQlfFCxTsvuOLmSkOzS19wh9sw/hf_20261026_170650_67b92974-e42d-4e81-b37e-8badb497660b.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.004,
+   "fill": 0.667
+  },
+  "size": [
+   1675,
+   1786
+  ],
+  "error": null,
+  "juge": {
+   "vue": "profil",
+   "refus": false,
+   "motifs": [],
+   "principale_ok": false,
+   "rang": 2,
+   "note": ""
+  },
+  "doublon": null
+ },
+ {
+  "slug": "ninebot-e2",
+  "i": 0,
+  "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3GQlfFCxTsvuOLmSkOzS19wh9sw/hf_20261026_170710_e265d29a-f49f-420e-aa58-a975a34833dc.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.004,
+   "fill": 0.805
+  },
+  "size": [
+   1678,
+   1768
+  ],
+  "error": null,
+  "juge": {
+   "vue": "profil",
+   "refus": false,
+   "motifs": [],
+   "principale_ok": false,
+   "rang": 2,
+   "note": ""
+  },
+  "doublon": null
+ },
+ {
+  "slug": "vsett-10-plus",
+  "i": 0,
+  "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3GQlfFCxTsvuOLmSkOzS19wh9sw/hf_20261026_170800_d4b32d5b-d64c-43e7-bae9-bd4d20924b38.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.107,
+   "fill": 0.715
+  },
+  "size": [
+   1583,
+   1790
+  ],
+  "error": null,
+  "juge": {
+   "vue": "3/4 avant",
+   "refus": false,
+   "motifs": [],
+   "principale_ok": true,
+   "rang": 0,
+   "note": ""
+  },
+  "doublon": null
+ },
+ {
+  "slug": "laotie-es19",
+  "i": 0,
+  "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3GQlfFCxTsvuOLmSkOzS19wh9sw/hf_20261026_170822_dc45d5ea-2a69-4c73-9581-6be5b7fbabb1.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.061,
+   "fill": 0.504
+  },
+  "size": [
+   1212,
+   1904
+  ],
+  "error": null,
+  "juge": {
+   "vue": "3/4 avant",
+   "refus": false,
+   "motifs": [],
+   "principale_ok": true,
+   "rang": 0,
+   "note": ""
+  },
+  "doublon": null
+ },
+ {
+  "slug": "xiaomi-mi-m365",
+  "i": 0,
+  "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3GQlfFCxTsvuOLmSkOzS19wh9sw/hf_20261026_170949_833356eb-182d-46bf-adca-e483e20fbb1b.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.009,
+   "fill": 0.564
+  },
+  "size": [
+   1181,
+   1890
+  ],
+  "error": null,
+  "juge": {
+   "vue": "3/4 avant",
+   "refus": false,
+   "motifs": [],
+   "principale_ok": true,
+   "rang": 0,
+   "note": ""
+  },
+  "doublon": null
+ },
+ {
+  "slug": "micro-merlin",
+  "i": 0,
+  "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3GQlfFCxTsvuOLmSkOzS19wh9sw/hf_20261026_170950_d9f0fc25-dc46-453c-9e40-6a07c5edc442.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.043,
+   "fill": 0.603
+  },
+  "size": [
+   1245,
+   1864
+  ],
+  "error": null,
+  "juge": {
+   "vue": "3/4 avant",
+   "refus": false,
+   "motifs": [],
+   "principale_ok": true,
+   "rang": 0,
+   "note": ""
+  },
+  "doublon": null
+ },
+ {
+  "slug": "yeep-me-120a-pro",
+  "i": 0,
+  "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3GQlfFCxTsvuOLmSkOzS19wh9sw/hf_20261026_170952_4b62a051-bdf1-4b57-a980-f0f966f9547c.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.021,
+   "fill": 0.54
+  },
+  "size": [
+   1275,
+   1878
+  ],
+  "error": null,
+  "juge": {
+   "vue": "3/4 avant",
+   "refus": false,
+   "motifs": [],
+   "principale_ok": true,
+   "rang": 0,
+   "note": ""
+  },
+  "doublon": null
+ },
+ {
+  "slug": "beaster-bs65",
+  "i": 0,
+  "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3GQlfFCxTsvuOLmSkOzS19wh9sw/hf_20261026_171101_d7b7786d-f14f-4424-8032-8a40cb625c0e.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.066,
+   "fill": 0.491
+  },
+  "size": [
+   1207,
+   1906
+  ],
+  "error": null,
+  "juge": {
+   "vue": "3/4 avant",
+   "refus": false,
+   "motifs": [],
+   "principale_ok": true,
+   "rang": 0,
+   "note": ""
+  },
+  "doublon": null
+ },
+ {
+  "slug": "yeep-me-100a-start",
+  "i": 0,
+  "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3GQlfFCxTsvuOLmSkOzS19wh9sw/hf_20261026_171121_2ddcacbf-e0cd-4f4d-84b3-df29864aaaa6.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.008,
+   "fill": 0.657
+  },
+  "size": [
+   1181,
+   1864
+  ],
+  "error": null,
+  "juge": {
+   "vue": "3/4 avant",
+   "refus": false,
+   "motifs": [],
+   "principale_ok": true,
+   "rang": 0,
+   "note": ""
+  },
+  "doublon": null
+ },
+ {
+  "slug": "urbanglide-ecross-pro-boost-2",
+  "i": 0,
+  "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3GQlfFCxTsvuOLmSkOzS19wh9sw/hf_20261026_171124_5f718ab8-6e15-4b70-9fe9-2c4d1f2de85b.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.172,
+   "fill": 0.656
+  },
+  "size": [
+   1615,
+   1794
+  ],
+  "error": null,
+  "juge": {
+   "vue": "profil",
+   "refus": false,
+   "motifs": [],
+   "principale_ok": false,
+   "rang": 2,
+   "note": ""
+  },
+  "doublon": null
+ },
+ {
+  "slug": "speedway-mini-4-pro-lite",
+  "i": 0,
+  "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3GQlfFCxTsvuOLmSkOzS19wh9sw/hf_20261026_171158_4d3039d8-17ed-4202-bc35-f71a214a6d77.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0,
+   "fill": 0.489
+  },
+  "size": [
+   1206,
+   1908
+  ],
+  "error": null,
+  "juge": {
+   "vue": "3/4 avant",
+   "refus": false,
+   "motifs": [],
+   "principale_ok": true,
+   "rang": 0,
+   "note": ""
+  },
+  "doublon": null
+ },
+ {
+  "slug": "kukirin-t4",
+  "i": 0,
+  "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3GQlfFCxTsvuOLmSkOzS19wh9sw/hf_20261026_171200_5c6fdc9e-790f-4c22-afce-df22e7fedd2a.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.016,
+   "fill": 0.641
+  },
+  "size": [
+   1158,
+   1870
+  ],
+  "error": null,
+  "juge": {
+   "vue": "3/4 avant",
+   "refus": false,
+   "motifs": [],
+   "principale_ok": true,
+   "rang": 0,
+   "note": ""
+  },
+  "doublon": null
+ },
+ {
+  "slug": "kingsong-s2-pro",
+  "i": 0,
+  "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3GQlfFCxTsvuOLmSkOzS19wh9sw/hf_20261026_171234_c61252d7-9761-4ebd-819f-7f503807c6f5.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.002,
+   "fill": 0.743
+  },
+  "size": [
+   1396,
+   1810
+  ],
+  "error": null,
+  "juge": {
+   "vue": "3/4 avant",
+   "refus": false,
+   "motifs": [],
+   "principale_ok": true,
+   "rang": 0,
+   "note": ""
+  },
+  "doublon": null
+ },
+ {
+  "slug": "joyor-s8-s",
+  "i": 0,
+  "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3GQlfFCxTsvuOLmSkOzS19wh9sw/hf_20261026_171254_90395255-7070-45d8-92ff-057b066d0a2e.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.057,
+   "fill": 0.588
+  },
+  "size": [
+   1210,
+   1876
+  ],
+  "error": null,
+  "juge": {
+   "vue": "3/4 avant",
+   "refus": false,
+   "motifs": [],
+   "principale_ok": true,
+   "rang": 0,
+   "note": ""
+  },
+  "doublon": null
+ },
+ {
+  "slug": "dualtron-victor-luxury-plus",
+  "i": 0,
+  "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3GQlfFCxTsvuOLmSkOzS19wh9sw/hf_20261026_171255_c6116c1d-ca52-4daf-b2a3-c99b30b596b0.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.012,
+   "fill": 0.639
+  },
+  "size": [
+   1140,
+   1878
+  ],
+  "error": null,
+  "juge": {
+   "vue": "3/4 avant",
+   "refus": false,
+   "motifs": [],
+   "principale_ok": true,
+   "rang": 0,
+   "note": ""
+  },
+  "doublon": null
+ },
+ {
+  "slug": "ninebot-e25e",
+  "i": 0,
+  "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3GQlfFCxTsvuOLmSkOzS19wh9sw/hf_20261026_171330_54168790-34e9-4a93-82f4-d4f253630643.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.008,
+   "fill": 0.822
+  },
+  "size": [
+   1728,
+   1762
+  ],
+  "error": null,
+  "juge": {
+   "vue": "profil",
+   "refus": false,
+   "motifs": [],
+   "principale_ok": false,
+   "rang": 2,
+   "note": ""
+  },
+  "doublon": null
+ },
+ {
+  "slug": "e-twow-booster-es",
+  "i": 0,
+  "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3GQlfFCxTsvuOLmSkOzS19wh9sw/hf_20261026_171332_a710fff0-b3ad-4c77-b669-b05756a47948.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.018,
+   "fill": 0.578
+  },
+  "size": [
+   1364,
+   1848
+  ],
+  "error": null,
+  "juge": {
+   "vue": "3/4 avant",
+   "refus": false,
+   "motifs": [],
+   "principale_ok": true,
+   "rang": 0,
+   "note": ""
+  },
+  "doublon": null
+ },
+ {
+  "slug": "weped-fold-11",
+  "i": 0,
+  "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3GQlfFCxTsvuOLmSkOzS19wh9sw/hf_20261026_171405_0e2bcd92-88d3-478f-8f5b-8280c529c66c.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.001,
+   "fill": 0.73
+  },
+  "size": [
+   1642,
+   1782
+  ],
+  "error": null,
+  "juge": {
+   "vue": "profil",
+   "refus": false,
+   "motifs": [],
+   "principale_ok": false,
+   "rang": 2,
+   "note": ""
+  },
+  "doublon": null
+ },
+ {
+  "slug": "ninebot-e3-pro-e",
+  "i": 0,
+  "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3GQlfFCxTsvuOLmSkOzS19wh9sw/hf_20261026_171407_5bfb9427-d97f-439e-99d2-189c6ef22f73.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.005,
+   "fill": 0.7
+  },
+  "size": [
+   1265,
+   1840
+  ],
+  "error": null,
+  "juge": {
+   "vue": "3/4 avant",
+   "refus": false,
+   "motifs": [],
+   "principale_ok": true,
+   "rang": 0,
+   "note": ""
+  },
+  "doublon": null
+ },
+ {
+  "slug": "ninebot-f2-e-ii",
+  "i": 0,
+  "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3GQlfFCxTsvuOLmSkOzS19wh9sw/hf_20261026_171409_4e2b9b41-b1ea-4db8-8c4f-cc706ffb3d89.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.014,
+   "fill": 0.71
+  },
+  "size": [
+   1296,
+   1832
+  ],
+  "error": null,
+  "juge": {
+   "vue": "3/4 avant",
+   "refus": false,
+   "motifs": [],
+   "principale_ok": true,
+   "rang": 0,
+   "note": ""
+  },
+  "doublon": null
+ },
+ {
+  "slug": "ninebot-max-g3-pro-e",
+  "i": 0,
+  "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3GQlfFCxTsvuOLmSkOzS19wh9sw/hf_20261026_171501_68662ed7-b455-4689-a540-1fd5389f14e1.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.006,
+   "fill": 0.569
+  },
+  "size": [
+   1339,
+   1856
+  ],
+  "error": null,
+  "juge": {
+   "vue": "3/4 avant",
+   "refus": false,
+   "motifs": [],
+   "principale_ok": true,
+   "rang": 0,
+   "note": ""
+  },
+  "doublon": null
+ },
+ {
+  "slug": "segway-gt3-pro",
+  "i": 0,
+  "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3GQlfFCxTsvuOLmSkOzS19wh9sw/hf_20261026_171504_bf739854-3178-4f2e-ae2e-241319904e13.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.02,
+   "fill": 0.712
+  },
+  "size": [
+   1304,
+   1830
+  ],
+  "error": null,
+  "juge": {
+   "vue": "3/4 avant",
+   "refus": false,
+   "motifs": [],
+   "principale_ok": true,
+   "rang": 0,
+   "note": ""
+  },
+  "doublon": null
+ },
+ {
+  "slug": "micro-explorer",
+  "i": 0,
+  "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3GQlfFCxTsvuOLmSkOzS19wh9sw/hf_20261026_171538_e997a7b8-a4a3-4975-af89-7fd55efe928d.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.005,
+   "fill": 0.673
+  },
+  "size": [
+   1199,
+   1858
+  ],
+  "error": null,
+  "juge": {
+   "vue": "3/4 avant",
+   "refus": false,
+   "motifs": [],
+   "principale_ok": true,
+   "rang": 0,
+   "note": ""
+  },
+  "doublon": null
+ },
+ {
+  "slug": "segway-p65",
+  "i": 0,
+  "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3GQlfFCxTsvuOLmSkOzS19wh9sw/hf_20261026_171557_44e4737f-5f92-48d8-8db1-af5d1aa977b6.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.027,
+   "fill": 0.671
+  },
+  "size": [
+   1408,
+   1822
+  ],
+  "error": null,
+  "juge": {
+   "vue": "3/4 avant",
+   "refus": false,
+   "motifs": [],
+   "principale_ok": true,
+   "rang": 0,
+   "note": ""
+  },
+  "doublon": null
+ },
+ {
+  "slug": "hikerboy-brio",
+  "i": 0,
+  "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3GQlfFCxTsvuOLmSkOzS19wh9sw/hf_20261026_171559_639217dd-f08b-442c-87c1-d696f886330b.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.172,
+   "fill": 0.678
+  },
+  "size": [
+   1220,
+   1850
+  ],
+  "error": null,
+  "juge": {
+   "vue": "3/4 avant",
+   "refus": false,
+   "motifs": [],
+   "principale_ok": true,
+   "rang": 0,
+   "note": ""
+  },
+  "doublon": null
+ },
+ {
+  "slug": "iscooter-ix7-pro",
+  "i": 0,
+  "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3GQlfFCxTsvuOLmSkOzS19wh9sw/hf_20261026_171656_e3b0a8c9-e896-450d-a608-422643e9ef2e.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.085,
+   "fill": 0.731
+  },
+  "size": [
+   1343,
+   1820
+  ],
+  "error": null,
+  "juge": {
+   "vue": "3/4 avant",
+   "refus": false,
+   "motifs": [],
+   "principale_ok": true,
+   "rang": 0,
+   "note": ""
+  },
+  "doublon": null
+ },
+ {
+  "slug": "urbanglide-all-road-5",
+  "i": 0,
+  "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3GQlfFCxTsvuOLmSkOzS19wh9sw/hf_20261026_171657_e7fd1fc8-6937-4fba-9380-f4139fb118b5.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.025,
+   "fill": 0.682
+  },
+  "size": [
+   1703,
+   1782
+  ],
+  "error": null,
+  "juge": {
+   "vue": "profil",
+   "refus": false,
+   "motifs": [],
+   "principale_ok": false,
+   "rang": 2,
+   "note": ""
+  },
+  "doublon": null
+ },
+ {
+  "slug": "oxelo-sd500e",
+  "i": 0,
+  "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3GQlfFCxTsvuOLmSkOzS19wh9sw/hf_20261026_171735_e213bfbc-4347-42ec-910a-3fec2239135e.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.021,
+   "fill": 0.692
+  },
+  "size": [
+   1256,
+   1840
+  ],
+  "error": null,
+  "juge": {
+   "vue": "3/4 avant",
+   "refus": false,
+   "motifs": [],
+   "principale_ok": true,
+   "rang": 0,
+   "note": ""
+  },
+  "doublon": null
+ },
+ {
+  "slug": "weped-ss-t",
+  "i": 0,
+  "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3GQlfFCxTsvuOLmSkOzS19wh9sw/hf_20261026_171659_462cdac4-4c68-4fc7-9fef-587c54938fdf.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.157,
+   "fill": 0.718
+  },
+  "size": [
+   1310,
+   1828
+  ],
+  "error": null,
+  "juge": {
+   "vue": "3/4 avant",
+   "refus": false,
+   "motifs": [],
+   "principale_ok": true,
+   "rang": 0,
+   "note": ""
+  },
+  "doublon": null
+ },
+ {
+  "slug": "urbanglide-all-road-6-pro",
+  "i": 0,
+  "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3GQlfFCxTsvuOLmSkOzS19wh9sw/hf_20261026_171756_386a3017-e55b-4731-9552-404e48dae831.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.06,
+   "fill": 0.514
+  },
+  "size": [
+   1227,
+   1896
+  ],
+  "error": null,
+  "juge": {
+   "vue": "3/4 avant",
+   "refus": false,
+   "motifs": [],
+   "principale_ok": true,
+   "rang": 0,
+   "note": ""
+  },
+  "doublon": null
+ },
+ {
+  "slug": "urbanglide-ecross-duo",
+  "i": 0,
+  "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3GQlfFCxTsvuOLmSkOzS19wh9sw/hf_20261026_171758_f8826273-7045-448b-a1ee-dfed7c293d2e.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.06,
+   "fill": 0.686
+  },
+  "size": [
+   1844,
+   1242
+  ],
+  "error": null,
+  "juge": {
+   "vue": "3/4 avant",
+   "refus": false,
+   "motifs": [],
+   "principale_ok": true,
+   "rang": 0,
+   "note": ""
+  },
+  "doublon": null
+ },
+ {
+  "slug": "e-twow-tanktorq-tk5",
+  "i": 0,
+  "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3GQlfFCxTsvuOLmSkOzS19wh9sw/hf_20261026_171839_462252a3-48ce-4855-88e8-17a8323aa0ac.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.232,
+   "fill": 0.741
+  },
+  "size": [
+   1382,
+   1814
+  ],
+  "error": null,
+  "juge": {
+   "vue": "3/4 avant",
+   "refus": false,
+   "motifs": [],
+   "principale_ok": true,
+   "rang": 0,
+   "note": ""
+  },
+  "doublon": null
+ },
+ {
+  "slug": "kugoo-g2-max",
+  "i": 0,
+  "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3GQlfFCxTsvuOLmSkOzS19wh9sw/hf_20261026_171840_585e59e2-09ea-4578-b9bb-e2af48f4d362.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.083,
+   "fill": 0.547
+  },
+  "size": [
+   1163,
+   1898
+  ],
+  "error": null,
+  "juge": {
+   "vue": "3/4 avant",
+   "refus": false,
+   "motifs": [],
+   "principale_ok": true,
+   "rang": 0,
+   "note": ""
+  },
+  "doublon": null
+ },
+ {
+  "slug": "mantis-pro",
+  "i": 0,
+  "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3GQlfFCxTsvuOLmSkOzS19wh9sw/hf_20261026_171916_4d811569-7868-4679-a151-b21cd0efaf79.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.001,
+   "fill": 0.627
+  },
+  "size": [
+   1521,
+   1812
+  ],
+  "error": null,
+  "juge": {
+   "vue": "3/4 avant",
+   "refus": false,
+   "motifs": [],
+   "principale_ok": true,
+   "rang": 0,
+   "note": ""
+  },
+  "doublon": null
+ },
+ {
+  "slug": "laotie-sr10",
+  "i": 0,
+  "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3GQlfFCxTsvuOLmSkOzS19wh9sw/hf_20261026_171918_f5253468-88cf-456e-ba42-61daa154068c.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.067,
+   "fill": 0.579
+  },
+  "size": [
+   1345,
+   1854
+  ],
+  "error": null,
+  "juge": {
+   "vue": "3/4 avant",
+   "refus": false,
+   "motifs": [],
+   "principale_ok": true,
+   "rang": 0,
+   "note": ""
+  },
+  "doublon": null
+ },
+ {
+  "slug": "punk-rider",
+  "i": 0,
+  "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3GQlfFCxTsvuOLmSkOzS19wh9sw/hf_20261026_172056_0c79c40e-cb6c-4618-8889-c28c281e100f.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.004,
+   "fill": 0.644
+  },
+  "size": [
+   1325,
+   1840
+  ],
+  "error": null,
+  "juge": {
+   "vue": "3/4 avant",
+   "refus": false,
+   "motifs": [],
+   "principale_ok": true,
+   "rang": 0,
+   "note": ""
+  },
+  "doublon": null
+ },
+ {
+  "slug": "inmotion-c1-air-pro",
+  "i": 0,
+  "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3GQlfFCxTsvuOLmSkOzS19wh9sw/hf_20261026_172014_393da8af-d179-46b6-8f5c-8ccbddd3fe48.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.013,
+   "fill": 0.708
+  },
+  "size": [
+   1283,
+   1836
+  ],
+  "error": null,
+  "juge": {
+   "vue": "3/4 avant",
+   "refus": false,
+   "motifs": [],
+   "principale_ok": true,
+   "rang": 0,
+   "note": ""
+  },
+  "doublon": null
+ },
+ {
+  "slug": "beaster-bs09",
+  "i": 0,
+  "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3GQlfFCxTsvuOLmSkOzS19wh9sw/hf_20261026_172015_4fb76dc8-4cad-4781-bd3b-41c36419460c.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0,
+   "fill": 0.675
+  },
+  "size": [
+   1211,
+   1856
+  ],
+  "error": null,
+  "juge": {
+   "vue": "3/4 arriere",
+   "refus": false,
+   "motifs": [],
+   "principale_ok": true,
+   "rang": 1,
+   "note": ""
+  },
+  "doublon": null
+ },
+ {
+  "slug": "aprilia-esr2-evo",
+  "i": 0,
+  "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3GQlfFCxTsvuOLmSkOzS19wh9sw/hf_20261026_172033_54415d7e-40f9-465d-b8ea-3cb1c3a32ec2.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.087,
+   "fill": 0.686
+  },
+  "size": [
+   1486,
+   1806
+  ],
+  "error": null,
+  "juge": {
+   "vue": "3/4 avant",
+   "refus": false,
+   "motifs": [],
+   "principale_ok": true,
+   "rang": 0,
+   "note": ""
+  },
+  "doublon": null
+ },
+ {
+  "slug": "kaabo-wolf-warrior-11-pro-plus",
+  "i": 0,
+  "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3GQlfFCxTsvuOLmSkOzS19wh9sw/hf_20261026_172116_d719e112-2181-46a1-bb70-95fe2ef2233e.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.048,
+   "fill": 0.655
+  },
+  "size": [
+   1608,
+   1796
+  ],
+  "error": null,
+  "juge": {
+   "vue": "3/4 avant",
+   "refus": false,
+   "motifs": [],
+   "principale_ok": true,
+   "rang": 0,
+   "note": ""
+  },
+  "doublon": null
+ },
+ {
+  "slug": "laotie-ti30",
+  "i": 0,
+  "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3GQlfFCxTsvuOLmSkOzS19wh9sw/hf_20261026_172154_0df7a2c3-5a31-4a95-9b36-356133afd6fd.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.02,
+   "fill": 0.555
+  },
+  "size": [
+   1315,
+   1864
+  ],
+  "error": null,
+  "juge": {
+   "vue": "3/4 avant",
+   "refus": false,
+   "motifs": [],
+   "principale_ok": true,
+   "rang": 0,
+   "note": ""
+  },
+  "doublon": null
+ },
+ {
+  "slug": "ninebot-f2-plus",
+  "i": 0,
+  "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3GQlfFCxTsvuOLmSkOzS19wh9sw/hf_20261026_172155_2767fff5-8f3c-455a-8ebe-d4cce91eccbf.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.034,
+   "fill": 0.681
+  },
+  "size": [
+   1694,
+   1784
+  ],
+  "error": null,
+  "juge": {
+   "vue": "profil",
+   "refus": false,
+   "motifs": [],
+   "principale_ok": false,
+   "rang": 2,
+   "note": ""
+  },
+  "doublon": null
+ },
+ {
+  "slug": "ninebot-f2-pro-e-ii",
+  "i": 0,
+  "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3GQlfFCxTsvuOLmSkOzS19wh9sw/hf_20261026_172158_d0c58435-e482-4c02-a12e-fb4bac8c8a2f.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.013,
+   "fill": 0.581
+  },
+  "size": [
+   1353,
+   1850
+  ],
+  "error": null,
+  "juge": {
+   "vue": "3/4 avant",
+   "refus": false,
+   "motifs": [],
+   "principale_ok": true,
+   "rang": 0,
+   "note": ""
+  },
+  "doublon": null
+ },
+ {
+  "slug": "beaster-bs15",
+  "i": 0,
+  "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3GQlfFCxTsvuOLmSkOzS19wh9sw/hf_20261026_172233_3e6062e8-b886-4473-a205-23eacd7d83a7.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.008,
+   "fill": 0.596
+  },
+  "size": [
+   1410,
+   1836
+  ],
+  "error": null,
+  "juge": {
+   "vue": "3/4 avant",
+   "refus": false,
+   "motifs": [],
+   "principale_ok": true,
+   "rang": 0,
+   "note": ""
+  },
+  "doublon": null
+ },
+ {
+  "slug": "ninebot-f3-e",
+  "i": 0,
+  "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3GQlfFCxTsvuOLmSkOzS19wh9sw/hf_20261026_172253_966a6437-94ea-4769-9540-d60accea77b4.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.012,
+   "fill": 0.682
+  },
+  "size": [
+   1699,
+   1782
+  ],
+  "error": null,
+  "juge": {
+   "vue": "profil",
+   "refus": false,
+   "motifs": [],
+   "principale_ok": false,
+   "rang": 2,
+   "note": "Détourage imparfait: bords dentelés et résidus de fond autour du guidon, de la tige et de la roue avant."
+  },
+  "doublon": null
+ },
+ {
+  "slug": "yeep-me-85a-evo",
+  "i": 0,
+  "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3GQlfFCxTsvuOLmSkOzS19wh9sw/hf_20261026_172407_b612bb68-1f15-4199-9acf-3ddbd1a6b149.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.003,
+   "fill": 0.691
+  },
+  "size": [
+   1251,
+   1842
+  ],
+  "error": null,
+  "juge": {
+   "vue": "3/4 avant",
+   "refus": false,
+   "motifs": [],
+   "principale_ok": true,
+   "rang": 0,
+   "note": ""
+  },
+  "doublon": null
+ },
+ {
+  "slug": "joyor-a5",
+  "i": 0,
+  "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3GQlfFCxTsvuOLmSkOzS19wh9sw/hf_20261026_172330_da0d2dbd-3bb2-4293-ae17-be3e57841776.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.008,
+   "fill": 0.453
+  },
+  "size": [
+   1152,
+   1940
+  ],
+  "error": null,
+  "juge": {
+   "vue": "3/4 arriere",
+   "refus": false,
+   "motifs": [],
+   "principale_ok": true,
+   "rang": 1,
+   "note": ""
+  },
+  "doublon": null
+ },
+ {
+  "slug": "navee-st5-max",
+  "i": 0,
+  "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3GQlfFCxTsvuOLmSkOzS19wh9sw/hf_20261026_172409_aca78cb5-a285-4c5e-a293-b6ad7e2addd6.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.006,
+   "fill": 0.711
+  },
+  "size": [
+   1297,
+   1830
+  ],
+  "error": null,
+  "juge": {
+   "vue": "3/4 avant",
+   "refus": false,
+   "motifs": [],
+   "principale_ok": true,
+   "rang": 0,
+   "note": ""
+  },
+  "doublon": null
+ },
+ {
+  "slug": "wolf-warrior",
+  "i": 0,
+  "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3GQlfFCxTsvuOLmSkOzS19wh9sw/hf_20261026_172452_e9987391-f9d0-4799-8e47-b58a4a89df0e.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.044,
+   "fill": 0.789
+  },
+  "size": [
+   1580,
+   1782
+  ],
+  "error": null,
+  "juge": {
+   "vue": "3/4 avant",
+   "refus": false,
+   "motifs": [],
+   "principale_ok": true,
+   "rang": 0,
+   "note": ""
+  },
+  "doublon": null
+ },
+ {
+  "slug": "xiaomi-electric-scooter-6-max",
+  "i": 0,
+  "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3GQlfFCxTsvuOLmSkOzS19wh9sw/hf_20261026_172454_ecedce86-b2a6-4a7a-9481-2bc28b99c55f.png",
+  "verdict": "FAIL",
+  "reasons": [
+   "détourage sale / résidu de décor"
+  ],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0,
+   "fill": 0.633
+  },
+  "size": [
+   1806,
+   1553
+  ],
+  "error": null,
+  "juge": null,
+  "doublon": null
+ },
+ {
+  "slug": "urbanglide-ecross-max-2x2-gen-2",
+  "i": 0,
+  "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3GQlfFCxTsvuOLmSkOzS19wh9sw/hf_20261026_172519_c04114f5-eae5-4cab-8f8b-141390ac3ac0.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.126,
+   "fill": 0.655
+  },
+  "size": [
+   1608,
+   1796
+  ],
+  "error": null,
+  "juge": {
+   "vue": "profil",
+   "refus": false,
+   "motifs": [],
+   "principale_ok": false,
+   "rang": 2,
+   "note": ""
+  },
+  "doublon": null
+ },
+ {
+  "slug": "wispeed-c10-55-max",
+  "i": 0,
+  "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3GQlfFCxTsvuOLmSkOzS19wh9sw/hf_20261026_172520_881596b3-8047-4478-ae6c-32994d983ed7.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.045,
+   "fill": 0.697
+  },
+  "size": [
+   1255,
+   1842
+  ],
+  "error": null,
+  "juge": {
+   "vue": "3/4 avant",
+   "refus": false,
+   "motifs": [],
+   "principale_ok": true,
+   "rang": 0,
+   "note": ""
+  },
+  "doublon": null
+ },
+ {
+  "slug": "e-twow-tanktorq-tk2",
+  "i": 0,
+  "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3GQlfFCxTsvuOLmSkOzS19wh9sw/hf_20261026_172544_30aefd86-2bad-4dbd-8394-f64b873d3bb3.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.012,
+   "fill": 0.664
+  },
+  "size": [
+   1395,
+   1824
+  ],
+  "error": null,
+  "juge": {
+   "vue": "3/4 avant",
+   "refus": false,
+   "motifs": [],
+   "principale_ok": true,
+   "rang": 0,
+   "note": ""
+  },
+  "doublon": null
+ },
+ {
+  "slug": "jeep-adventurer",
+  "i": 0,
+  "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3GQlfFCxTsvuOLmSkOzS19wh9sw/hf_20261026_172607_512cb186-9d58-4315-bdd6-dab9672392ea.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.03,
+   "fill": 0.601
+  },
+  "size": [
+   1419,
+   1832
+  ],
+  "error": null,
+  "juge": {
+   "vue": "3/4 avant",
+   "refus": false,
+   "motifs": [],
+   "principale_ok": true,
+   "rang": 0,
+   "note": ""
+  },
+  "doublon": null
+ },
+ {
+  "slug": "hiboy-ks4",
+  "i": 0,
+  "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3GQlfFCxTsvuOLmSkOzS19wh9sw/hf_20261026_172646_edcaa6a5-3f38-4043-8838-6f13dd8e2073.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.022,
+   "fill": 0.587
+  },
+  "size": [
+   1381,
+   1844
+  ],
+  "error": null,
+  "juge": {
+   "vue": "3/4 avant",
+   "refus": false,
+   "motifs": [],
+   "principale_ok": true,
+   "rang": 0,
+   "note": ""
+  },
+  "doublon": null
+ },
+ {
+  "slug": "yeep-me-120a",
+  "i": 0,
+  "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3GQlfFCxTsvuOLmSkOzS19wh9sw/hf_20261026_172706_51cf3eca-50a4-447f-85ec-cfdd6420adf7.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.022,
+   "fill": 0.54
+  },
+  "size": [
+   1275,
+   1878
+  ],
+  "error": null,
+  "juge": {
+   "vue": "3/4 avant",
+   "refus": false,
+   "motifs": [],
+   "principale_ok": true,
+   "rang": 0,
+   "note": ""
+  },
+  "doublon": null
+ },
+ {
+  "slug": "segway-gt1",
+  "i": 0,
+  "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3GQlfFCxTsvuOLmSkOzS19wh9sw/hf_20261026_172708_10fc7b94-31ac-4986-b099-7cb7d97d0649.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.009,
+   "fill": 0.611
+  },
+  "size": [
+   1443,
+   1828
+  ],
+  "error": null,
+  "juge": {
+   "vue": "3/4 avant",
+   "refus": false,
+   "motifs": [],
+   "principale_ok": true,
+   "rang": 0,
+   "note": ""
+  },
+  "doublon": null
+ },
+ {
+  "slug": "oxelo-md500e",
+  "i": 0,
+  "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3GQlfFCxTsvuOLmSkOzS19wh9sw/hf_20261026_172809_76608f54-4dfb-4e8d-a407-d66b71ec4ecc.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.004,
+   "fill": 0.708
+  },
+  "size": [
+   1284,
+   1834
+  ],
+  "error": null,
+  "juge": {
+   "vue": "3/4 avant",
+   "refus": false,
+   "motifs": [],
+   "principale_ok": true,
+   "rang": 0,
+   "note": ""
+  },
+  "doublon": null
+ },
+ {
+  "slug": "kukirin-g2-master",
+  "i": 0,
+  "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3GQlfFCxTsvuOLmSkOzS19wh9sw/hf_20261026_172811_4980a88f-86e6-41b5-b3c8-60642d3f0f06.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.039,
+   "fill": 0.676
+  },
+  "size": [
+   1212,
+   1854
+  ],
+  "error": null,
+  "juge": {
+   "vue": "3/4 avant",
+   "refus": false,
+   "motifs": [],
+   "principale_ok": true,
+   "rang": 0,
+   "note": ""
+  },
+  "doublon": null
+ },
+ {
+  "slug": "e-twow-booster-se",
+  "i": 0,
+  "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3GQlfFCxTsvuOLmSkOzS19wh9sw/hf_20261026_172835_cefc72ea-d978-4524-9a2c-069df4c43f3f.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.018,
+   "fill": 0.575
+  },
+  "size": [
+   1352,
+   1852
+  ],
+  "error": null,
+  "juge": {
+   "vue": "3/4 avant",
+   "refus": false,
+   "motifs": [],
+   "principale_ok": true,
+   "rang": 0,
+   "note": ""
+  },
+  "doublon": null
+ },
+ {
+  "slug": "ducati-pro-ii-evo",
+  "i": 0,
+  "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3GQlfFCxTsvuOLmSkOzS19wh9sw/hf_20261026_172932_761020c6-35eb-46fe-b06d-24e2738372ee.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.016,
+   "fill": 0.689
+  },
+  "size": [
+   1472,
+   1808
+  ],
+  "error": null,
+  "juge": {
+   "vue": "3/4 avant",
+   "refus": false,
+   "motifs": [],
+   "principale_ok": true,
+   "rang": 0,
+   "note": ""
+  },
+  "doublon": null
+ },
+ {
+  "slug": "langfeite-roadster",
+  "i": 0,
+  "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3GQlfFCxTsvuOLmSkOzS19wh9sw/hf_20261026_172934_ed226c4e-261f-47b0-9ce9-656719885b50.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.007,
+   "fill": 0.614
+  },
+  "size": [
+   1437,
+   1830
+  ],
+  "error": null,
+  "juge": {
+   "vue": "3/4 avant",
+   "refus": false,
+   "motifs": [],
+   "principale_ok": true,
+   "rang": 0,
+   "note": ""
+  },
+  "doublon": null
+ },
+ {
+  "slug": "kingsong-n15",
+  "i": 0,
+  "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3GQlfFCxTsvuOLmSkOzS19wh9sw/hf_20261026_172936_d895592e-f961-4a49-b9a8-d339330b18db.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.013,
+   "fill": 0.579
+  },
+  "size": [
+   1346,
+   1852
+  ],
+  "error": null,
+  "juge": {
+   "vue": "3/4 avant",
+   "refus": false,
+   "motifs": [],
+   "principale_ok": true,
+   "rang": 0,
+   "note": ""
+  },
+  "doublon": null
+ },
+ {
+  "slug": "p100s",
+  "i": 0,
+  "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3GQlfFCxTsvuOLmSkOzS19wh9sw/hf_20261026_173037_0fd00055-0ae7-4392-a666-7b4ce947b75f.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.027,
+   "fill": 0.587
+  },
+  "size": [
+   1381,
+   1844
+  ],
+  "error": null,
+  "juge": {
+   "vue": "3/4 avant",
+   "refus": false,
+   "motifs": [],
+   "principale_ok": true,
+   "rang": 0,
+   "note": ""
+  },
+  "doublon": null
+ },
+ {
+  "slug": "segway-zt3-pro-e",
+  "i": 0,
+  "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3GQlfFCxTsvuOLmSkOzS19wh9sw/hf_20261026_173038_f682abc2-90de-4f7c-b9c0-0150add84072.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.052,
+   "fill": 0.682
+  },
+  "size": [
+   1243,
+   1846
+  ],
+  "error": null,
+  "juge": {
+   "vue": "3/4 avant",
+   "refus": false,
+   "motifs": [],
+   "principale_ok": true,
+   "rang": 0,
+   "note": ""
+  },
+  "doublon": null
+ },
+ {
+  "slug": "segway-gt2",
+  "i": 0,
+  "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3GQlfFCxTsvuOLmSkOzS19wh9sw/hf_20261026_164202_e0fe5047-1f90-42e4-aaef-75f5ccc923d3.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.038,
+   "fill": 0.708
+  },
+  "size": [
+   1520,
+   1800
+  ],
+  "error": null,
+  "juge": {
+   "vue": "3/4 arriere",
+   "refus": false,
+   "motifs": [],
+   "principale_ok": true,
+   "rang": 1,
+   "note": ""
+  },
+  "doublon": null
+ },
+ {
+  "slug": "joyor-s8-e",
+  "i": 0,
+  "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3GQlfFCxTsvuOLmSkOzS19wh9sw/hf_20261026_173040_62075d84-e2af-4097-956a-d9811bb594ad.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.026,
+   "fill": 0.631
+  },
+  "size": [
+   1310,
+   1846
+  ],
+  "error": null,
+  "juge": {
+   "vue": "3/4 avant",
+   "refus": false,
+   "motifs": [],
+   "principale_ok": true,
+   "rang": 0,
+   "note": ""
+  },
+  "doublon": null
+ },
+ {
+  "slug": "kukirin-g4-2026",
+  "i": 0,
+  "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3GQlfFCxTsvuOLmSkOzS19wh9sw/hf_20261026_173125_f2831079-cdd8-4838-aed6-242a2e5ac77d.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.013,
+   "fill": 0.615
+  },
+  "size": [
+   1441,
+   1828
+  ],
+  "error": null,
+  "juge": {
+   "vue": "3/4 avant",
+   "refus": false,
+   "motifs": [],
+   "principale_ok": true,
+   "rang": 0,
+   "note": ""
+  },
+  "doublon": null
+ },
+ {
+  "slug": "urbanglide-ecross-pro-2",
+  "i": 0,
+  "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3GQlfFCxTsvuOLmSkOzS19wh9sw/hf_20261026_173203_434b9be4-6c0e-4297-8d68-625ff4165c89.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.203,
+   "fill": 0.662
+  },
+  "size": [
+   1632,
+   1792
+  ],
+  "error": null,
+  "juge": {
+   "vue": "profil",
+   "refus": false,
+   "motifs": [],
+   "principale_ok": false,
+   "rang": 2,
+   "note": ""
+  },
+  "doublon": null
+ },
+ {
+  "slug": "beaster-bs08",
+  "i": 0,
+  "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3GQlfFCxTsvuOLmSkOzS19wh9sw/hf_20261026_164204_635a834d-e970-4a6f-b4b1-d4d5d1aba339.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0,
+   "fill": 0.708
+  },
+  "size": [
+   1521,
+   1800
+  ],
+  "error": null,
+  "juge": {
+   "vue": "3/4 avant",
+   "refus": false,
+   "motifs": [],
+   "principale_ok": true,
+   "rang": 0,
+   "note": ""
+  },
+  "doublon": null
+ },
+ {
+  "slug": "urbanglide-ride-85-evo",
+  "i": 0,
+  "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3GQlfFCxTsvuOLmSkOzS19wh9sw/hf_20261026_173206_861830db-2605-4a6a-8590-48a3bd760296.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.012,
+   "fill": 0.616
+  },
+  "size": [
+   1114,
+   1888
+  ],
+  "error": null,
+  "juge": {
+   "vue": "3/4 avant",
+   "refus": false,
+   "motifs": [],
+   "principale_ok": true,
+   "rang": 0,
+   "note": ""
+  },
+  "doublon": null
+ },
+ {
+  "slug": "urbanglide-ecross-one",
+  "i": 0,
+  "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3GQlfFCxTsvuOLmSkOzS19wh9sw/hf_20261026_173228_a6ef0676-d2e1-4255-89e8-a03f7c4bc174.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.057,
+   "fill": 0.675
+  },
+  "size": [
+   1205,
+   1858
+  ],
+  "error": null,
+  "juge": {
+   "vue": "3/4 avant",
+   "refus": false,
+   "motifs": [],
+   "principale_ok": true,
+   "rang": 0,
+   "note": ""
+  },
+  "doublon": null
+ },
+ {
+  "slug": "vsett-8-plus",
+  "i": 0,
+  "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3GQlfFCxTsvuOLmSkOzS19wh9sw/hf_20261026_173248_a2045ebd-bd2c-40f6-84ca-46fe988bd148.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0,
+   "fill": 0.595
+  },
+  "size": [
+   1425,
+   1832
+  ],
+  "error": null,
+  "juge": {
+   "vue": "3/4 avant",
+   "refus": false,
+   "motifs": [],
+   "principale_ok": true,
+   "rang": 0,
+   "note": ""
+  },
+  "doublon": null
+ },
+ {
+  "slug": "nami-blast",
+  "i": 0,
+  "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3GQlfFCxTsvuOLmSkOzS19wh9sw/hf_20261026_173311_96eecc88-428f-4d36-aba9-d65d6afee499.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0,
+   "fill": 0.599
+  },
+  "size": [
+   1421,
+   1832
+  ],
+  "error": null,
+  "juge": {
+   "vue": "3/4 avant",
+   "refus": false,
+   "motifs": [],
+   "principale_ok": true,
+   "rang": 0,
+   "note": ""
+  },
+  "doublon": null
+ },
+ {
+  "slug": "kaabo-wolf-warrior-x-gt",
+  "i": 0,
+  "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3GQlfFCxTsvuOLmSkOzS19wh9sw/hf_20261026_173313_ad3455b9-51a6-4f41-86a2-6afff73a1e1b.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.018,
+   "fill": 0.555
+  },
+  "size": [
+   1313,
+   1864
+  ],
+  "error": null,
+  "juge": {
+   "vue": "3/4 avant",
+   "refus": false,
+   "motifs": [],
+   "principale_ok": true,
+   "rang": 0,
+   "note": ""
+  },
+  "doublon": null
+ },
+ {
+  "slug": "dualtron-togo-pro",
+  "i": 0,
+  "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3GQlfFCxTsvuOLmSkOzS19wh9sw/hf_20261026_173336_c6f9ba18-8db7-484e-8b3d-8d9c39aaeb4a.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.003,
+   "fill": 0.571
+  },
+  "size": [
+   1192,
+   1884
+  ],
+  "error": null,
+  "juge": {
+   "vue": "3/4 avant",
+   "refus": false,
+   "motifs": [],
+   "principale_ok": true,
+   "rang": 0,
+   "note": ""
+  },
+  "doublon": null
+ },
+ {
+  "slug": "nami-superstellar",
+  "i": 0,
+  "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3GQlfFCxTsvuOLmSkOzS19wh9sw/hf_20261026_173415_d619f553-d86f-4922-b1bf-eaa5f427c67f.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.004,
+   "fill": 0.7
+  },
+  "size": [
+   1265,
+   1840
+  ],
+  "error": null,
+  "juge": {
+   "vue": "3/4 avant",
+   "refus": false,
+   "motifs": [],
+   "principale_ok": true,
+   "rang": 0,
+   "note": ""
+  },
+  "doublon": null
+ },
+ {
+  "slug": "dualtron-thunder-3",
+  "i": 0,
+  "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3GQlfFCxTsvuOLmSkOzS19wh9sw/hf_20261026_173416_221e1cc0-ea36-4cbb-9866-ece18da534b2.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.027,
+   "fill": 0.67
+  },
+  "size": [
+   1184,
+   1862
+  ],
+  "error": null,
+  "juge": {
+   "vue": "3/4 avant",
+   "refus": false,
+   "motifs": [],
+   "principale_ok": true,
+   "rang": 0,
+   "note": ""
+  },
+  "doublon": null
+ },
+ {
+  "slug": "weped-ff",
+  "i": 0,
+  "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3GQlfFCxTsvuOLmSkOzS19wh9sw/hf_20261026_173459_76cc237b-c7dc-43a6-a01e-0eadabf6df97.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.006,
+   "fill": 0.748
+  },
+  "size": [
+   1764,
+   1766
+  ],
+  "error": null,
+  "juge": {
+   "vue": "profil",
+   "refus": false,
+   "motifs": [],
+   "principale_ok": false,
+   "rang": 2,
+   "note": ""
+  },
+  "doublon": null
+ },
+ {
+  "slug": "segway-ninebot-max-g3",
+  "i": 0,
+  "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3GQlfFCxTsvuOLmSkOzS19wh9sw/hf_20261026_173501_3cf7550d-e6ea-4078-a464-dd3278a86f01.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.023,
+   "fill": 0.699
+  },
+  "size": [
+   1258,
+   1842
+  ],
+  "error": null,
+  "juge": {
+   "vue": "3/4 avant",
+   "refus": false,
+   "motifs": [],
+   "principale_ok": true,
+   "rang": 0,
+   "note": ""
+  },
+  "doublon": null
+ },
+ {
+  "slug": "kugoo-g4",
+  "i": 0,
+  "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3GQlfFCxTsvuOLmSkOzS19wh9sw/hf_20261026_173524_3a11efac-477d-41bd-af62-0b96ac934163.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.011,
+   "fill": 0.615
+  },
+  "size": [
+   1444,
+   1828
+  ],
+  "error": null,
+  "juge": {
+   "vue": "3/4 avant",
+   "refus": false,
+   "motifs": [],
+   "principale_ok": true,
+   "rang": 0,
+   "note": ""
+  },
+  "doublon": null
+ },
+ {
+  "slug": "inmotion-l9",
+  "i": 0,
+  "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3GQlfFCxTsvuOLmSkOzS19wh9sw/hf_20261026_173545_3ac1375f-b80e-4944-a2d5-6714719aecb9.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.017,
+   "fill": 0.61
+  },
+  "size": [
+   1444,
+   1828
+  ],
+  "error": null,
+  "juge": {
+   "vue": "3/4 avant",
+   "refus": false,
+   "motifs": [],
+   "principale_ok": true,
+   "rang": 0,
+   "note": ""
+  },
+  "doublon": null
+ },
+ {
+  "slug": "segway-zt3-pro",
+  "i": 0,
+  "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3GQlfFCxTsvuOLmSkOzS19wh9sw/hf_20261026_173604_e9d2393d-0fbe-425f-9183-053cd0d07fcb.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.051,
+   "fill": 0.682
+  },
+  "size": [
+   1244,
+   1846
+  ],
+  "error": null,
+  "juge": {
+   "vue": "3/4 avant",
+   "refus": false,
+   "motifs": [],
+   "principale_ok": true,
+   "rang": 0,
+   "note": ""
+  },
+  "doublon": null
+ },
+ {
+  "slug": "soflow-so4-pro",
+  "i": 0,
+  "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3GQlfFCxTsvuOLmSkOzS19wh9sw/hf_20261026_173624_96582866-e2a3-4a9f-bc86-e1e719ac6436.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.16,
+   "fill": 0.657
+  },
+  "size": [
+   1371,
+   1830
+  ],
+  "error": null,
+  "juge": {
+   "vue": "3/4 avant",
+   "refus": false,
+   "motifs": [],
+   "principale_ok": true,
+   "rang": 0,
+   "note": ""
+  },
+  "doublon": null
+ },
+ {
+  "slug": "nami-blast-max",
+  "i": 0,
+  "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3GQlfFCxTsvuOLmSkOzS19wh9sw/hf_20261026_173645_cc6978fb-c8aa-4791-b257-d6933da9efc9.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0,
+   "fill": 0.601
+  },
+  "size": [
+   1443,
+   1828
+  ],
+  "error": null,
+  "juge": {
+   "vue": "3/4 avant",
+   "refus": false,
+   "motifs": [],
+   "principale_ok": true,
+   "rang": 0,
+   "note": ""
+  },
+  "doublon": null
+ },
+ {
+  "slug": "kaabo-wolf-king-gt-pro-plus",
+  "i": 0,
+  "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3GQlfFCxTsvuOLmSkOzS19wh9sw/hf_20261026_173708_4dfadba1-c918-4509-82ad-ba62ac088ab3.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.135,
+   "fill": 0.677
+  },
+  "size": [
+   1657,
+   1788
+  ],
+  "error": null,
+  "juge": {
+   "vue": "profil",
+   "refus": false,
+   "motifs": [],
+   "principale_ok": false,
+   "rang": 2,
+   "note": ""
+  },
+  "doublon": null
+ },
+ {
+  "slug": "dualtron-mini",
+  "i": 0,
+  "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3GQlfFCxTsvuOLmSkOzS19wh9sw/hf_20261026_164207_5cd61766-1289-4db8-a515-97b27f4662ea.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.026,
+   "fill": 0.61
+  },
+  "size": [
+   1441,
+   1828
+  ],
+  "error": null,
+  "juge": {
+   "vue": "3/4 avant",
+   "refus": false,
+   "motifs": [],
+   "principale_ok": true,
+   "rang": 0,
+   "note": ""
+  },
+  "doublon": null
+ },
+ {
+  "slug": "kingsong-e1",
+  "i": 0,
+  "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3GQlfFCxTsvuOLmSkOzS19wh9sw/hf_20261026_173709_2ff206fe-1a0a-4397-94eb-c1b86e46d056.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.052,
+   "fill": 0.591
+  },
+  "size": [
+   1403,
+   1838
+  ],
+  "error": null,
+  "juge": {
+   "vue": "3/4 avant",
+   "refus": false,
+   "motifs": [],
+   "principale_ok": true,
+   "rang": 0,
+   "note": ""
+  },
+  "doublon": null
+ },
+ {
+  "slug": "ninebot-f3-pro-e",
+  "i": 0,
+  "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3GQlfFCxTsvuOLmSkOzS19wh9sw/hf_20261026_174046_3f727f4f-5507-4c45-9c4c-eb1e811beae7.png",
+  "verdict": "PASS",
+  "reasons": [],
+  "plus": {
+   "verdict": "PASS",
+   "reasons": [],
+   "parts": 1,
+   "second": 0,
+   "vivid": 0.007,
+   "fill": 0.682
+  },
+  "size": [
+   1242,
+   1846
+  ],
+  "error": null,
+  "juge": {
+   "vue": "3/4 avant",
+   "refus": false,
+   "motifs": [],
+   "principale_ok": true,
+   "rang": 0,
+   "note": ""
+  },
+  "doublon": null
+ }
+]
