@@ -35,7 +35,10 @@ const PhotoViewer = ({ photos, index, name, onIndex, onClose }: Props) => {
   const n = photos.length;
   const cur = photos[index];
 
-  const reset = useCallback(() => { setS(1); setT({ x: 0, y: 0 }); setDrag({ x: 0, y: 0 }); }, []);
+  // Les gestes lisent st.current : on le met à jour TOUT DE SUITE (sans attendre le rendu React), sinon un pincement
+  // suivi d'un lâcher dans la même image d'écran lit l'ancien zoom et le remet à 1.
+  const apply = useCallback((ns: number, nt: { x: number; y: number }) => { st.current = { s: ns, t: nt }; setS(ns); setT(nt); }, []);
+  const reset = useCallback(() => { apply(1, { x: 0, y: 0 }); setDrag({ x: 0, y: 0 }); }, [apply]);
   useEffect(() => { reset(); }, [index, reset]);
 
   const go = useCallback((d: number) => { if (n > 1) onIndex((index + d + n) % n); }, [index, n, onIndex]);
@@ -81,8 +84,8 @@ const PhotoViewer = ({ photos, index, name, onIndex, onClose }: Props) => {
     const cx = px - r.left - r.width / 2, cy = py - r.top - r.height / 2;
     const k = ns / s0;
     const nt = ns <= 1 ? { x: 0, y: 0 } : bound(ns, cx - (cx - t0.x) * k, cy - (cy - t0.y) * k);
-    setS(ns); setT(nt);
-  }, [bound]);
+    apply(ns, nt);
+  }, [bound, apply]);
 
   const lastTap = useRef(0);
   const g = useRef<{ mode: "none" | "pan" | "pinch" | "swipe"; x0: number; y0: number; t0: { x: number; y: number }; s0: number; d0: number; moved: boolean }>({ mode: "none", x0: 0, y0: 0, t0: { x: 0, y: 0 }, s0: 1, d0: 1, moved: false });
@@ -110,7 +113,7 @@ const PhotoViewer = ({ photos, index, name, onIndex, onClose }: Props) => {
       const p = e.touches[0];
       const dx = p.clientX - G.x0, dy = p.clientY - G.y0;
       if (Math.hypot(dx, dy) > 6) G.moved = true;
-      if (G.mode === "pan") setT(bound(st.current.s, G.t0.x + dx, G.t0.y + dy));
+      if (G.mode === "pan") apply(st.current.s, bound(st.current.s, G.t0.x + dx, G.t0.y + dy));
       else if (G.mode === "swipe") setDrag({ x: dx, y: Math.max(0, dy) });
     };
     const te = (e: TouchEvent) => {
@@ -128,13 +131,13 @@ const PhotoViewer = ({ photos, index, name, onIndex, onClose }: Props) => {
         if (dy > 110 && Math.abs(dy) > Math.abs(dx)) { close(); return; }
         if (Math.abs(dx) > 60 && Math.abs(dx) > Math.abs(dy)) { go(dx < 0 ? 1 : -1); return; }
       }
-      if (st.current.s < 1.05) { setS(1); setT({ x: 0, y: 0 }); }
+      if (st.current.s < 1.05) apply(1, { x: 0, y: 0 });
       if (!G.moved) { // tap : double-tap = zoom / dézoom
         const now = Date.now();
         const p = e.changedTouches[0];
         if (now - lastTap.current < 300) {
           lastTap.current = 0;
-          if (st.current.s > 1.01) { setS(1); setT({ x: 0, y: 0 }); } else zoomAt(2.5, p.clientX, p.clientY, 1, { x: 0, y: 0 });
+          if (st.current.s > 1.01) apply(1, { x: 0, y: 0 }); else zoomAt(2.5, p.clientX, p.clientY, 1, { x: 0, y: 0 });
         } else lastTap.current = now;
       }
     };
@@ -148,7 +151,7 @@ const PhotoViewer = ({ photos, index, name, onIndex, onClose }: Props) => {
       el.removeEventListener("touchend", te);
       el.removeEventListener("touchcancel", te);
     };
-  }, [bound, close, go, zoomAt]);
+  }, [apply, bound, close, go, zoomAt]);
 
   // Ordinateur : molette + double-clic + glisser à la souris quand zoomé.
   const onWheel = (e: React.WheelEvent) => {
@@ -158,13 +161,13 @@ const PhotoViewer = ({ photos, index, name, onIndex, onClose }: Props) => {
   };
   const onDoubleClick = (e: React.MouseEvent) => {
     setAnim(true);
-    if (st.current.s > 1.01) { setS(1); setT({ x: 0, y: 0 }); } else zoomAt(2.5, e.clientX, e.clientY, 1, { x: 0, y: 0 });
+    if (st.current.s > 1.01) apply(1, { x: 0, y: 0 }); else zoomAt(2.5, e.clientX, e.clientY, 1, { x: 0, y: 0 });
   };
   const onMouseDown = (e: React.MouseEvent) => {
     if (st.current.s <= 1.01 || e.button !== 0) return;
     e.preventDefault(); setAnim(false);
     const x0 = e.clientX, y0 = e.clientY, t0 = st.current.t, sc = st.current.s;
-    const mm = (ev: MouseEvent) => setT(bound(sc, t0.x + ev.clientX - x0, t0.y + ev.clientY - y0));
+    const mm = (ev: MouseEvent) => apply(sc, bound(sc, t0.x + ev.clientX - x0, t0.y + ev.clientY - y0));
     const mu = () => { window.removeEventListener("mousemove", mm); window.removeEventListener("mouseup", mu); };
     window.addEventListener("mousemove", mm); window.addEventListener("mouseup", mu);
   };
