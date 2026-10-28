@@ -15,7 +15,7 @@ import { CORPUS } from "./banc/cas.ts";
 import { NUDGES } from "./nudges.ts";
 import { runBanc, runNuit, runFresh, runFreshNuit, runPhotos, looksCut } from "./banc/banc.ts";
 
-const VERSION = "chat-skot@2026-10-28i";
+const VERSION = "chat-skot@2026-10-28j";
 const MODEL = "claude-haiku-5-5";
 // Tour avec photo : Sonnet, plus sûr que Haiku pour reconnaître un modèle (28/10 : Haiku 0 modèle sur 3 photos, marque seule).
 const MODEL_PHOTO = "claude-sonnet-5-5";
@@ -577,6 +577,7 @@ export async function notifySkotTelegram(html: string) {
 
 // ───────────────────────── Étage 2 : SKOT arrive au bon moment (25/10) ─────────────────────────
 // Le texte est fixé ICI (jamais celui du navigateur) : le widget n'envoie que la clé. Règles : 1 par visite, jamais au panier ni au paiement.
+const REACTIONS = ["👍", "❤️", "😂", "🔥", "😕"];
 const NUDGE_EVENTS = ["shown", "opened", "closed", "replied"];
 
 // Confusions corrigées par l'admin dans le scanner (scan_validations) : rappelées au modèle quand une photo arrive.
@@ -921,17 +922,37 @@ serve(async (req) => {
     return json({ ok: !error });
   }
 
+  // 28/10 : la fenêtre « Messagerie » envoie aussi une réaction emoji (👍 ❤️ 😂 🔥 = utile, 😕 = pas utile) et/ou un commentaire libre.
+  // 😕 → même signal que 👎 (client_pouce_bas) ; tout commentaire → client_commentaire : la boucle d'amélioration lit les deux.
   if (body?.action === "feedback") {
     const mid = String(body.message_id ?? ""), conv = String(body.conversation_id ?? "");
-    const value = Number(body.value);
-    if (!/^[0-9a-f-]{36}$/i.test(mid) || !/^[0-9a-f-]{36}$/i.test(conv) || ![1, -1].includes(value)) return json({ ok: false, error: "BAD_INPUT" }, 400);
+    const reaction = body.reaction == null ? null : String(body.reaction);
+    const comment = body.comment == null ? null : String(body.comment).trim().slice(0, 500);
+    let value = body.value == null ? null : Number(body.value);
+    if (reaction !== null) {
+      if (!REACTIONS.includes(reaction)) return json({ ok: false, error: "BAD_INPUT" }, 400);
+      value = reaction === "😕" ? -1 : 1;
+    }
+    if (!/^[0-9a-f-]{36}$/i.test(mid) || !/^[0-9a-f-]{36}$/i.test(conv)) return json({ ok: false, error: "BAD_INPUT" }, 400);
+    if (value !== null && ![1, -1].includes(value)) return json({ ok: false, error: "BAD_INPUT" }, 400);
+    if (value === null && !comment) return json({ ok: false, error: "BAD_INPUT" }, 400);
     const ip = (req.headers.get("x-forwarded-for") ?? "").split(",")[0].trim();
     const ipHash = ip ? await sha256Hex(ip + "pt-skot") : null;
     const { data: row } = await db.from("skot_messages").select("id, conversation_id, role, ip_hash, content").eq("id", mid).maybeSingle();
     if (!row || (row as any).role !== "assistant" || (row as any).conversation_id !== conv || (row as any).ip_hash !== ipHash) return json({ ok: false, error: "NOT_FOUND" }, 404);
-    await db.from("skot_messages").update({ feedback: value, feedback_at: new Date().toISOString() }).eq("id", mid);
+    const now = new Date().toISOString();
+    const patch: Record<string, unknown> = {};
+    if (value !== null) { patch.feedback = value; patch.feedback_at = now; }
+    if (reaction !== null) patch.reaction = reaction;
+    if (comment) { patch.comment = comment; patch.comment_at = now; }
+    const { error: upErr } = await db.from("skot_messages").update(patch).eq("id", mid);
+    if (upErr) return json({ ok: false, error: "DB" }, 500);
+    const extrait = String((row as any).content).slice(0, 300);
     if (value === -1) {
-      await db.from("skot_flags").upsert({ conversation_id: conv, message_id: mid, type: "client_pouce_bas", source: "client", extrait: String((row as any).content).slice(0, 300) }, { onConflict: "message_id,type", ignoreDuplicates: true });
+      await db.from("skot_flags").upsert({ conversation_id: conv, message_id: mid, type: "client_pouce_bas", source: "client", extrait }, { onConflict: "message_id,type", ignoreDuplicates: true });
+    }
+    if (comment) {
+      await db.from("skot_flags").upsert({ conversation_id: conv, message_id: mid, type: "client_commentaire", source: "client", extrait, note: `Commentaire${reaction ? ` (${reaction})` : ""} : ${comment}` }, { onConflict: "message_id,type", ignoreDuplicates: true });
     }
     return json({ ok: true });
   }

@@ -10,7 +10,7 @@ import SkotDesktopLauncher from "./SkotDesktopLauncher";
 import SkotGarageLauncher from "./SkotGarageLauncher";
 import SkotPanel, { SKOT_GREETING_V2 } from "./SkotPanel";
 import SkotNudge, { type NudgeAccept } from "./SkotNudge";
-import { askSkot, compressImage, markNudgeUsed, NUDGE_TEXT, sendSkotFeedback, skotEnabled, skotHiddenOn, skotPageContext, trackNudge, type SkotCard, type SkotNudgeKind } from "@/lib/skot";
+import { askSkot, compressImage, markNudgeUsed, NUDGE_TEXT, sendSkotFeedback, sendSkotReaction, skotEnabled, skotHiddenOn, skotPageContext, trackNudge, type SkotCard, type SkotNudgeKind } from "@/lib/skot";
 import { useCart } from "@/hooks/useCart";
 import { SHOP_OPEN, openPrelaunch } from "@/config/launch";
 import { formatPrice } from "@/lib/formatPrice";
@@ -19,7 +19,7 @@ import { toast } from "sonner";
 const CHAMFER = "polygon(0 0, calc(100% - 12px) 0, 100% 12px, 100% 100%, 0 100%)";
 const CHAMFER_S = "polygon(0 0, calc(100% - 8px) 0, 100% 8px, 100% 100%, 0 100%)";
 
-type Msg = { role: "user" | "skot"; text: string; cards?: SkotCard[]; image?: string; id?: string | null; conv?: string; fb?: 1 | -1 };
+type Msg = { role: "user" | "skot"; text: string; cards?: SkotCard[]; image?: string; id?: string | null; conv?: string; fb?: 1 | -1; reaction?: string };
 
 /** Trottinette conseillée par SKOT : fiche + offre partenaire (lien sponsorisé, nouvel onglet). */
 const ScooterCard = ({ card }: { card: SkotCard }) => (
@@ -181,6 +181,20 @@ const SkotWidget = () => {
     else if (value === -1) toast("Merci, l'atelier va regarder cette réponse.");
   };
 
+  const react = async (i: number, emoji: string) => {
+    const m = msgs[i];
+    if (!m?.id || !m.conv || m.reaction) return;
+    setMsgs((all) => all.map((x, k) => (k === i ? { ...x, reaction: emoji } : x)));
+    const ok = await sendSkotReaction(m.id, m.conv, { reaction: emoji });
+    if (!ok) setMsgs((all) => all.map((x, k) => (k === i ? { ...x, reaction: undefined } : x)));
+  };
+  const comment = async (i: number, text: string) => {
+    const m = msgs[i];
+    if (!m?.id || !m.conv) return;
+    const ok = await sendSkotReaction(m.id, m.conv, { comment: text });
+    if (!ok) toast("Commentaire pas parti, réessaie dans un instant.");
+  };
+
   const onPhoto = async (f: File | undefined) => {
     if (!f) return;
     const auto = photoEntry.current;
@@ -227,7 +241,7 @@ const SkotWidget = () => {
             msgs={msgs} busy={busy} input={input} setInput={setInput} onSubmit={onSubmit}
             send={(t) => void send(t)} onClose={() => setOpen(false)} onSearch={() => { setOpen(false); openSpotlight(); }}
             pickPhoto={() => fileRef.current?.click()} photo={photo} clearPhoto={() => setPhoto(null)}
-            rate={(i, v) => void rate(i, v)} listRef={listRef} renderCard={(c) => (c.type === "scooter" ? <ScooterCard card={c} /> : <PartCard card={c} />)}
+            rate={(i, v) => void rate(i, v)} react={(i, e) => void react(i, e)} comment={(i, t) => void comment(i, t)} listRef={listRef} renderCard={(c) => (c.type === "scooter" ? <ScooterCard card={c} /> : <PartCard card={c} />)}
           />
         </>
       )}

@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 import { X, Send, Camera, Loader2, ThumbsUp, ThumbsDown, Search, Package, Wrench, Bike, CircleDot, LayoutGrid } from "lucide-react";
 import { skotSaison, SAISON_TEXTE, type SkotSaison } from "@/lib/skotSaison";
 import type { SkotCard } from "@/lib/skot";
-import SkotChatUi, { readSkotUi } from "./SkotChatUi";
+import SkotChatUi, { readSkotUi, LoupeBtn } from "./SkotChatUi";
 
 export type PanelMsg = { role: "user" | "skot"; text: string; cards?: SkotCard[]; image?: string; id?: string | null; conv?: string; fb?: 1 | -1; reaction?: string };
 type Mood = "ecoute" | "clin" | "reflechit" | "content";
@@ -49,7 +49,15 @@ const CSS = `
 .skf-a-scan{transform-origin:50% 100%;animation:skf-scan 1.6s ease-in-out infinite}
 .skf-a-roll{animation:skf-roll .6s cubic-bezier(.2,.9,.3,1.2) both}
 .skf-a-bob{transform-origin:50% 100%;animation:skf-bob 3.4s ease-in-out infinite}
-@media (prefers-reduced-motion:reduce){.skf-dot,.skf-in,.skf-pulse,.skf-bar,.skf-bob,.skf-pose,.skf-a-jump,.skf-a-shake,.skf-a-breathe,.skf-a-scan,.skf-a-roll,.skf-a-bob{animation:none!important}}`;
+@keyframes skf-arrive{0%{transform:translateX(-120%) skewX(-16deg);filter:blur(3px);opacity:.5}52%{transform:translateX(7%) skewX(9deg);filter:blur(0);opacity:1}66%{transform:translateX(-2%) rotate(-6deg)}80%{transform:translateX(0) rotate(2.5deg)}100%{transform:none}}
+@keyframes skf-speed{0%{opacity:0;transform:translateX(-40px) scaleX(.4)}25%{opacity:.85}100%{opacity:0;transform:translateX(70px) scaleX(1.3)}}
+@keyframes skf-dust{0%{opacity:0;transform:scale(.3)}30%{opacity:.7}100%{opacity:0;transform:scale(1.6) translateX(-14px)}}
+@keyframes skf-bulle{0%{opacity:0;transform:scale(.6) translateX(-18px)}70%{opacity:1;transform:scale(1.04)}100%{opacity:1;transform:none}}
+.skf-arrive{transform-origin:70% 100%;animation:skf-arrive .85s cubic-bezier(.2,.8,.3,1) both}
+.skf-speed{animation:skf-speed .6s ease-out .05s both}
+.skf-dust{animation:skf-dust .7s ease-out .42s both}
+.skf-bulle{transform-origin:0 60%;animation:skf-bulle .45s cubic-bezier(.2,.9,.3,1.2) .75s both}
+@media (prefers-reduced-motion:reduce){.skf-arrive,.skf-speed,.skf-dust,.skf-bulle,.skf-dot,.skf-in,.skf-pulse,.skf-bar,.skf-bob,.skf-pose,.skf-a-jump,.skf-a-shake,.skf-a-breathe,.skf-a-scan,.skf-a-roll,.skf-a-bob{animation:none!important}}`;
 let cssInjected = false;
 
 export interface SkotPanelProps {
@@ -199,7 +207,7 @@ type Scene = { pose: Pose; title: string; sub: string; anim: Anim };
 
 const BASE: Pose[] = ["ecoute", "clin", "reflechit", "content"];
 const poseSrc = (p: Pose) => (BASE.includes(p) ? `/skot/skot-${p}.webp` : `/skot/p-${p}.webp`);
-const ALL_POSES: Pose[] = ["ecoute", "clin", "reflechit", "content", "salut", "loupe", "trouve", "oups", "rire", "dort", "photo", "cle", "colis", "surpris"];
+const ALL_POSES: Pose[] = ["roule", "ecoute", "clin", "reflechit", "content", "salut", "loupe", "trouve", "oups", "rire", "dort", "photo", "cle", "colis", "surpris"];
 const SEARCHING = ["Je fouille l'atelier…", "Je mesure la jante…", "Je croise les compatibilités…", "Je vérifie le stock…"];
 // 25/10 : test réel « Zorglub X9000 » → « Je ne trouve ni… » n'était pas reconnu (SKOT disait « Voilà ! »).
 const NOT_FOUND = /(pas trouv|ne trouve|aucun|introuvable|désolé|crevaison|je n['’]ai pas|je ne peux (donc )?pas|pas (encore )?(dans|en) (le )?catalogue)/i;
@@ -209,9 +217,9 @@ const ScenePanel = (p: SkotPanelProps) => {
   const [saison] = useState(() => skotSaison());
   const rest: Pose = saison ?? "ecoute";
   const idle = (): Scene => ({ pose: rest, title: "Je t'écoute.", sub: saison ? SAISON_TEXTE[saison][1] : "Ta trott, ta pièce, ta commande : vas-y.", anim: saison ? "bob" : "breathe" });
-  const [scene, setScene] = useState<Scene>(() =>
-    saison ? { pose: saison, title: SAISON_TEXTE[saison][0], sub: SAISON_TEXTE[saison][1], anim: "jump" } : { pose: "salut", title: "Salut !", sub: "Pose ta question, je vérifie tout dans le catalogue.", anim: "jump" },
-  );
+  const hello = (): Scene => (saison ? { pose: saison, title: SAISON_TEXTE[saison][0], sub: SAISON_TEXTE[saison][1], anim: "jump" } : { pose: "salut", title: "Salut !", sub: "Pose ta question, je vérifie tout dans le catalogue.", anim: "jump" });
+  // 28/10 (Nolan : « qu'il arrive à fond ») : à l'ouverture, SKOT déboule de la gauche en roulant, freine, puis salue.
+  const [scene, setScene] = useState<Scene>(() => ({ pose: "roule", title: "J'arrive !", sub: "", anim: "bob" }));
   const timer = useRef<ReturnType<typeof setTimeout>>();
   const lastActivity = useRef(Date.now());
   const play = (steps: { s: Scene; ms?: number }[]) => {
@@ -226,7 +234,7 @@ const ScenePanel = (p: SkotPanelProps) => {
   const poke = () => { lastActivity.current = Date.now(); };
 
   // Toutes les poses chargées d'avance : pas de trou blanc au changement.
-  useEffect(() => { [...ALL_POSES, ...(saison ? [saison] : [])].forEach((x) => { new Image().src = poseSrc(x); }); toIdle(2400); return () => clearTimeout(timer.current); }, []); // eslint-disable-line react-hooks/exhaustive-deps
+  useEffect(() => { [...ALL_POSES, ...(saison ? [saison] : [])].forEach((x) => { new Image().src = poseSrc(x); }); play([{ s: { pose: "roule", title: "J'arrive !", sub: "", anim: "bob" }, ms: 900 }, { s: hello(), ms: 2200 }, { s: idle() }]); return () => clearTimeout(timer.current); }, []); // eslint-disable-line react-hooks/exhaustive-deps
 
   // Il s'endort sans activité, sursaute quand on revient.
   useEffect(() => {
@@ -285,6 +293,7 @@ const ScenePanel = (p: SkotPanelProps) => {
     play([{ s: v === 1 ? { pose: "rire", title: "Merci !", sub: "Ça me fait rouler de joie.", anim: "shake" } : { pose: "oups", title: "Je note…", sub: "L'atelier relit ma réponse et on corrige.", anim: "shake" }, ms: 2800 }, { s: idle() }]);
   };
   const [ui] = useState(readSkotUi);
+  const withLoupe = ui === 2 || ui === 4;
   const reactAnim = (e: string) => {
     poke();
     play([{ s: e === "😕" ? { pose: "oups", title: "Je note…", sub: "L'atelier relit ma réponse et on corrige.", anim: "shake" } : { pose: "rire", title: e === "😂" ? "Ha ha !" : "Merci !", sub: "Ça me fait rouler de joie.", anim: "shake" }, ms: 2800 }, { s: idle() }]);
@@ -325,11 +334,18 @@ const ScenePanel = (p: SkotPanelProps) => {
         style={{ paddingTop: "max(8px, env(safe-area-inset-top))", background: `radial-gradient(120% 90% at 18% 100%, #ffffff 0%, ${BEIGE} 55%, #EAE2D2 100%)`, borderBottom: `3px solid ${CARBON}` }}>
         <span aria-hidden className="absolute left-3 right-[55%] bottom-[6px] h-[10px] rounded-[50%]" style={{ background: "radial-gradient(closest-side, rgba(0,0,0,.18), transparent)" }} />
         <button type="button" onClick={tickle} aria-label="SKOT" className="relative block -mb-1 shrink-0 w-[160px] h-[160px] md:w-[180px] md:h-[180px]">
-          <span key={scene.pose + scene.anim} className={`absolute inset-0 skf-a-${scene.anim}`}>
-            <img key={scene.pose} src={poseSrc(scene.pose)} alt="" draggable={false} className="block w-full h-full select-none skf-pose" style={{ filter: "drop-shadow(0 10px 12px rgba(0,0,0,.18))" }} />
+          {/* Arrivée : traits de vitesse + petit nuage de poussière au freinage (une fois, à l'ouverture). */}
+          <span aria-hidden className="absolute left-0 top-[38%] w-[70px] h-[3px] rounded-full bg-[#4A7C59]/50 skf-speed" />
+          <span aria-hidden className="absolute left-3 top-[55%] w-[90px] h-[3px] rounded-full bg-[#1A1A1A]/25 skf-speed" style={{ animationDelay: ".1s" }} />
+          <span aria-hidden className="absolute left-1 top-[72%] w-[60px] h-[3px] rounded-full bg-[#4A7C59]/40 skf-speed" style={{ animationDelay: ".15s" }} />
+          <span aria-hidden className="absolute left-[18%] bottom-[2px] w-9 h-9 rounded-full skf-dust" style={{ background: "radial-gradient(closest-side, rgba(150,135,110,.55), transparent)" }} />
+          <span className="absolute inset-0 skf-arrive">
+            <span key={scene.pose + scene.anim} className={`absolute inset-0 skf-a-${scene.anim}`}>
+              <img key={scene.pose} src={poseSrc(scene.pose)} alt="" draggable={false} className="block w-full h-full select-none skf-pose" style={{ filter: "drop-shadow(0 10px 12px rgba(0,0,0,.18))" }} />
+            </span>
           </span>
         </button>
-        <div className="flex-1 min-w-0 self-center pt-2 pr-9">
+        <div className={`flex-1 min-w-0 self-center pt-2 skf-bulle ${withLoupe ? "pr-12" : "pr-9"}`}>
           <span className="block p-[2px]" style={{ background: CARBON, clipPath: cut2(10) }}>
             <span className="block bg-white px-3.5 py-2.5" style={{ clipPath: cut2(9) }}>
               <span key={scene.title} className="block italic uppercase leading-tight skf-in" style={{ fontFamily: UNB, fontWeight: 900, fontSize: 16, color: CARBON }}>{scene.title}</span>
@@ -338,7 +354,10 @@ const ScenePanel = (p: SkotPanelProps) => {
           </span>
           <p className="mt-2 uppercase italic text-[12px] font-extrabold tracking-wide" style={{ fontFamily: JAK, color: GREEN }}>SKOT · l'IA de l'atelier</p>
         </div>
-        <span className="absolute right-1 top-[max(4px,env(safe-area-inset-top))]"><CloseBtn onClose={p.onClose} /></span>
+        <span className="absolute right-1 top-[max(4px,env(safe-area-inset-top))] flex flex-col items-center gap-1.5">
+          <CloseBtn onClose={p.onClose} />
+          {withLoupe && <LoupeBtn onSearch={p.onSearch} />}
+        </span>
       </div>
   );
   // 28/10 : 5 propositions « vraie discussion » derrière ?skotui=1..5 (SkotChatUi) ; 0 = fenêtre actuelle ci-dessous.

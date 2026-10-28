@@ -16,7 +16,8 @@ const PAPER = "#F3EFE7";
 const JAK = "'Plus Jakarta Sans', sans-serif";
 const UNB = "'Unbounded', sans-serif";
 
-export const SKOTUI_DEFAUT = 0;
+// 28/10 : Nolan choisit « Messagerie » (2) ; ?skotui=0 remet l'ancienne fenêtre.
+export const SKOTUI_DEFAUT = 2;
 export const readSkotUi = (): number => {
   if (typeof window === "undefined") return SKOTUI_DEFAUT;
   try {
@@ -186,7 +187,7 @@ const SitePill = ({ onSearch }: { onSearch: () => void }) => (
   </button>
 );
 
-const LoupeBtn = ({ onSearch }: { onSearch: () => void }) => (
+export const LoupeBtn = ({ onSearch }: { onSearch: () => void }) => (
   <button type="button" onClick={onSearch} aria-label="Chercher une pièce sur le site" className="w-11 h-11 rounded-full grid place-items-center text-[#1A1A1A] bg-white/80 hover:bg-white shrink-0" style={{ boxShadow: "0 1px 4px rgba(0,0,0,.08)" }}>
     <Search className="w-5 h-5" strokeWidth={2.4} />
   </button>
@@ -233,10 +234,10 @@ const SkotChatUi = ({ ui, p, header, tiles, fresh, onWake }: ChatUiProps) => {
 
   // 2 · Messagerie (reco) : la recherche devient une loupe dans l'en-tête ; SKOT écrit en bulles courtes ; les choix sont des réponses rapides.
   if (ui === 2) {
-    const head = <div className="relative">{header}<span className="absolute right-12 top-[max(4px,env(safe-area-inset-top))]"><LoupeBtn onSearch={p.onSearch} /></span></div>;
+    // La loupe vit dans la colonne de droite de l'en-tête (sous la croix) : elle ne mord plus sur la bulle de SKOT (Nolan, 28/10).
     return (
       <Shell>
-        {head}
+        {header}
         {list(<>
           {greeting && fresh ? (
             <div className="space-y-1.5">
@@ -283,10 +284,9 @@ const SkotChatUi = ({ ui, p, header, tiles, fresh, onWake }: ChatUiProps) => {
 
   // 4 · Stories : les façons de chercher en ronds (comme les familles du site), loupe dans l'en-tête, réactions en pastilles.
   if (ui === 4) {
-    const head = <div className="relative">{header}<span className="absolute right-12 top-[max(4px,env(safe-area-inset-top))]"><LoupeBtn onSearch={p.onSearch} /></span></div>;
     return (
       <Shell>
-        {head}
+        {header}
         {fresh && (
           <div className="flex gap-3 px-3 pt-3 pb-1 overflow-x-auto" style={{ scrollbarWidth: "none" }}>
             {tiles.map((t) => (

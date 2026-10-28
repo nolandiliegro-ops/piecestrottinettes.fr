@@ -100,6 +100,14 @@ export async function sendSkotFeedback(messageId: string, conversationId: string
   return !error && !!data?.ok;
 }
 
+/** 28/10 : réaction emoji (👍 ❤️ 😂 🔥 😕) et/ou commentaire sur une réponse de SKOT — 😕 et commentaires remontent à l'atelier. */
+export async function sendSkotReaction(messageId: string, conversationId: string, opts: { reaction?: string; comment?: string }): Promise<boolean> {
+  const { data, error } = await supabase.functions.invoke("chat-skot", {
+    body: { action: "feedback", message_id: messageId, conversation_id: conversationId, ...opts },
+  });
+  return !error && !!data?.ok;
+}
+
 /** Réduit une photo à 1024 px max en JPEG avant envoi (poids et coût). */
 export function compressImage(file: File, max = 1024, quality = 0.82): Promise<{ media_type: string; data: string; preview: string }> {
   return new Promise((resolve, reject) => {
