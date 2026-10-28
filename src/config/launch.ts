@@ -62,3 +62,4 @@ export const openPrelaunch = () => {
 // relance publication 26/10 clavier iPhone
 // 28/10 loupe photos
 // 29/10 loupe 220 px
+// 29/10 visuels menu
