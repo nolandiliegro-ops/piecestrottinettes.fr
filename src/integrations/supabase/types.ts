@@ -590,6 +590,84 @@ export type Database = {
         }
         Relationships: []
       }
+      _backup_affiliate_programs_20261027: {
+        Row: {
+          canal: string | null
+          code_client: string | null
+          code_ref: string | null
+          commission: string | null
+          contact_email: string | null
+          contact_nom: string | null
+          created_at: string | null
+          id: string | null
+          id_marchand: string | null
+          lien_base: string | null
+          lien_motif: string | null
+          marque: string | null
+          notes: string | null
+          plateforme: string | null
+          priorite: string | null
+          prochaine_action: string | null
+          relance_le: string | null
+          statut: string | null
+          type: string | null
+          updated_at: string | null
+          url_inscription: string | null
+          url_paiements: string | null
+          url_tableau_de_bord: string | null
+        }
+        Insert: {
+          canal?: string | null
+          code_client?: string | null
+          code_ref?: string | null
+          commission?: string | null
+          contact_email?: string | null
+          contact_nom?: string | null
+          created_at?: string | null
+          id?: string | null
+          id_marchand?: string | null
+          lien_base?: string | null
+          lien_motif?: string | null
+          marque?: string | null
+          notes?: string | null
+          plateforme?: string | null
+          priorite?: string | null
+          prochaine_action?: string | null
+          relance_le?: string | null
+          statut?: string | null
+          type?: string | null
+          updated_at?: string | null
+          url_inscription?: string | null
+          url_paiements?: string | null
+          url_tableau_de_bord?: string | null
+        }
+        Update: {
+          canal?: string | null
+          code_client?: string | null
+          code_ref?: string | null
+          commission?: string | null
+          contact_email?: string | null
+          contact_nom?: string | null
+          created_at?: string | null
+          id?: string | null
+          id_marchand?: string | null
+          lien_base?: string | null
+          lien_motif?: string | null
+          marque?: string | null
+          notes?: string | null
+          plateforme?: string | null
+          priorite?: string | null
+          prochaine_action?: string | null
+          relance_le?: string | null
+          statut?: string | null
+          type?: string | null
+          updated_at?: string | null
+          url_inscription?: string | null
+          url_paiements?: string | null
+          url_tableau_de_bord?: string | null
+        }
+        Relationships: []
+      }
       _backup_affiliate_teverun_20261021: {
         Row: {
           affiliate_link: string | null
