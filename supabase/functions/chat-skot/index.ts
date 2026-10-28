@@ -15,7 +15,7 @@ import { CORPUS } from "./banc/cas.ts";
 import { NUDGES } from "./nudges.ts";
 import { runBanc, runNuit, runFresh, runFreshNuit, runPhotos, looksCut } from "./banc/banc.ts";
 
-const VERSION = "chat-skot@2026-10-28e";
+const VERSION = "chat-skot@2026-10-28f";
 const MODEL = "claude-haiku-5-5";
 // Tour avec photo : Sonnet, plus sûr que Haiku pour reconnaître un modèle (28/10 : Haiku 0 modèle sur 3 photos, marque seule).
 const MODEL_PHOTO = "claude-sonnet-5-5";
@@ -25,6 +25,7 @@ const HISTORY_LIMIT = 14;
 // Haiku 5.5 (tarif 24/10/2026) : 0,10 $/M en entrée, 0,50 $/M en sortie, 0,01 $/M en lecture de cache.
 // ~10 000 à 15 000 tokens par message client (2-3 appels avec outils) → 15 M tokens ≈ 1 000 messages ≈ 2 $/jour max.
 const DAILY_TOKEN_CAP = 15_000_000;
+const PHOTO_DAILY_CAP = 400;
 const SITE = "https://piecestrottinettes.fr";
 
 const corsHeaders = {
@@ -979,6 +980,13 @@ serve(async (req) => {
   const used = (usage ?? []).reduce((s: number, r: any) => s + (r.tokens_in ?? 0) + (r.tokens_out ?? 0), 0);
   if (used > DAILY_TOKEN_CAP) return fallback("Gros rush aujourd'hui, je passe la main à l'atelier : pose ta question ici, ils te répondent par mail → piecestrottinettes.fr/atelier", "DAILY_CAP");
 
+  // Plafond PHOTO (28/10) : une photo passe par Sonnet (~0,08-0,10 $). Au-delà de PHOTO_DAILY_CAP photos réelles par jour
+  // (≈ 30-40 $), SKOT demande le modèle par écrit au lieu d'analyser la photo : un buzz ne fait pas exploser la facture.
+  if (image?.data) {
+    const { count: photosToday } = await db.from("skot_messages").select("id", { count: "exact", head: true })
+      .eq("role", "user").eq("has_image", true).gte("created_at", dayStart.toISOString()).or("page_type.is.null,page_type.neq.banc");
+    if ((photosToday ?? 0) > PHOTO_DAILY_CAP) return fallback("Énorme rush de photos aujourd'hui, mes yeux fatiguent ! Écris-moi la marque et le modèle de ta trott (c'est souvent marqué sur la potence ou sous la planche) et je te trouve ses pièces.", "PHOTO_CAP");
+  }
   const nudge = typeof body?.nudge === "string" && NUDGES[body.nudge] && history.length === 0 ? body.nudge : undefined;
   const r = await converse({ db, apiKey, message, image, page: safePage, conversationId, history, userId, userEmail, ipHash, ip, nudge });
   if (!r.ok) return fallback(r.reply, r.error ?? "ERROR");
