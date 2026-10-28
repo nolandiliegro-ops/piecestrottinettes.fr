@@ -7,6 +7,7 @@ import { X, Send, Camera, Loader2, ThumbsUp, ThumbsDown, Search, Package, Wrench
 import { skotSaison, SAISON_TEXTE, type SkotSaison } from "@/lib/skotSaison";
 import type { SkotCard } from "@/lib/skot";
 import SkotChatUi, { readSkotUi, LoupeBtn } from "./SkotChatUi";
+import { readSkotAccueil, type Capa } from "./SkotAccueil";
 
 export type PanelMsg = { role: "user" | "skot"; text: string; cards?: SkotCard[]; image?: string; id?: string | null; conv?: string; fb?: 1 | -1; reaction?: string };
 type Mood = "ecoute" | "clin" | "reflechit" | "content";
@@ -318,6 +319,37 @@ const ScenePanel = (p: SkotPanelProps) => {
     { label: "Ma commande", sub: "Où elle en est", icon: Package, go: () => p.send("Où en est ma commande ?") },
     { label: "L'atelier", sub: "Un vrai mécano", icon: Wrench, go: () => p.send("Je veux poser une question à l'atelier") },
   ];
+  // 29/10 : tout ce que SKOT sait faire, chaque talent lance le vrai geste (?skotaccueil=1..5).
+  const [accueil] = useState(readSkotAccueil);
+  const CAPAS: Capa[] = [
+    { emoji: "📸", court: "Ma trott en photo", titre: "Je reconnais ta trott en photo", exemple: "Tu la reconnais, ma trott ?", defi: "Je devine ta trott en 1 photo", go: () => { poke(); p.pickPhoto(); } },
+    { emoji: "🔧", court: "Ses pièces", titre: "Je trouve les pièces qui montent vraiment", exemple: "Il me faut des pneus pour ma G30", defi: "Ton modèle → ses pièces", go: () => prefill("Ma trottinette, c'est une ", { pose: "clin", title: "Laquelle ?", sub: "Marque et modèle, je connais tout le catalogue.", anim: "bob" }) },
+    { emoji: "🛴", court: "Choisir une trott", titre: "Je t'aide à choisir ta prochaine trott", exemple: "Quelle trott pour 15 km par jour ?", defi: "Ton budget → ta trott idéale", go: () => prefill("Je cherche une trott, mon budget c'est ", { pose: "reflechit", title: "Combien tu mets ?", sub: "Ton budget et ton trajet : je te sors les 3 meilleures.", anim: "bob" }) },
+    { emoji: "📊", court: "Fiche d'un modèle", titre: "Je connais les fiches par cœur", exemple: "L'autonomie d'une Xiaomi Pro 2 ?", defi: "Pose-moi une colle sur un modèle", go: () => p.send("C'est quoi l'autonomie d'une Xiaomi Pro 2 ?") },
+    { emoji: "💬", court: "On papote", titre: "On parle trott, entre potes", exemple: "T'as une trott préférée ?", defi: "On papote trott ?", go: () => p.send("T'as une trott préférée toi ?") },
+    { emoji: "📏", court: "Taille de pneu", titre: "Je lis la taille sur ton pneu", exemple: "C'est écrit 10x2.5 sur mon pneu", defi: "Montre ton pneu, je lis sa taille", go: () => prefill("Sur le flanc de mon pneu, c'est écrit ", { pose: "loupe", title: "Montre-moi ça.", sub: "Ex. 10x2.5 ou 60/70-6.5 : je trouve ce qui monte.", anim: "scan" }) },
+    { emoji: "📦", court: "Ma commande", titre: "Je suis ta commande", exemple: "Où en est ma commande ?", defi: "Où est mon colis ?", go: () => p.send("Où en est ma commande ?") },
+    { emoji: "🧑‍🔧", court: "Un vrai mécano", titre: "Je passe la main à l'atelier", exemple: "Je veux parler à un mécano", defi: "Un vrai mécano en renfort", go: () => p.send("Je veux poser une question à l'atelier") },
+  ];
+  // Commun aux 5 : tant que rien n'est demandé, la bulle de l'en-tête fait défiler ses talents.
+  const TALENTS: Scene[] = [
+    { pose: "photo", title: "Envoie ta trott !", sub: "Une photo, et je te dis laquelle c'est.", anim: "bob" },
+    { pose: "loupe", title: "Tes pièces ?", sub: "Je trouve celles qui montent vraiment.", anim: "scan" },
+    { pose: "clin", title: "Trott neuve ?", sub: "Ton budget, ton trajet : je sors les 3 meilleures.", anim: "bob" },
+    { pose: "rire", title: "On papote ?", sub: "Pluie, batterie, entretien : je suis ton pote.", anim: "shake" },
+  ];
+  useEffect(() => {
+    if (!fresh || accueil === 0) return;
+    let i = 0;
+    const t = setInterval(() => {
+      setScene((s) => {
+        const libre = s.title === idle().title || TALENTS.some((x) => x.title === s.title);
+        if (!libre || p.busy) return s;
+        const n = TALENTS[i % TALENTS.length]; i += 1; return n;
+      });
+    }, 3800);
+    return () => clearInterval(t);
+  }, [fresh, accueil, p.busy]); // eslint-disable-line react-hooks/exhaustive-deps
   const tileCls = "flex items-center gap-2.5 min-h-[56px] px-3 text-left bg-white disabled:opacity-50";
   const tileInner = (t: (typeof TILES)[number]) => (
     <>
@@ -361,7 +393,7 @@ const ScenePanel = (p: SkotPanelProps) => {
       </div>
   );
   // 28/10 : 5 propositions « vraie discussion » derrière ?skotui=1..5 (SkotChatUi) ; 0 = fenêtre actuelle ci-dessous.
-  if (ui > 0) return <SkotChatUi ui={ui} p={{ ...p, rate, react: (i, e) => { reactAnim(e); p.react?.(i, e); } }} header={header} tiles={TILES} fresh={fresh} onWake={wake} />;
+  if (ui > 0) return <SkotChatUi ui={ui} p={{ ...p, rate, react: (i, e) => { reactAnim(e); p.react?.(i, e); } }} header={header} tiles={TILES} fresh={fresh} onWake={wake} accueil={accueil} capas={CAPAS} />;
   return (
     <Shell width={440}>
       {header}

@@ -9,6 +9,7 @@ import { Link } from "react-router-dom";
 import { Camera, Loader2, Search, Send, Smile, X, ChevronRight, MessageCircle } from "lucide-react";
 import type { SkotCard } from "@/lib/skot";
 import type { PanelMsg, SkotPanelProps } from "./SkotPanel";
+import { SkotAccueil, useTypedPlaceholder, type Capa } from "./SkotAccueil";
 
 const GREEN = "#4A7C59";
 const CARBON = "#1A1A1A";
@@ -96,8 +97,9 @@ const Reactions = ({ m, i, p, compact = false }: { m: PanelMsg; i: number; p: Sk
 };
 
 /* Saisie : appareil photo, champ, emojis rapides, envoi. */
-const ChatComposer = ({ p }: { p: SkotPanelProps }) => {
+const ChatComposer = ({ p, demo = false }: { p: SkotPanelProps; demo?: boolean }) => {
   const [emo, setEmo] = useState(false);
+  const ph = useTypedPlaceholder(demo && !p.input, "Écris à SKOT…");
   return (
     <div className="bg-white/80 backdrop-blur border-t border-black/5">
       {emo && (
@@ -117,7 +119,7 @@ const ChatComposer = ({ p }: { p: SkotPanelProps }) => {
         <button type="button" onClick={p.pickPhoto} aria-label="Envoyer une photo" className="w-11 h-11 rounded-full grid place-items-center text-[#1A1A1A] hover:bg-black/5 shrink-0"><Camera className="w-[22px] h-[22px]" /></button>
         <div className="flex-1 min-w-0 flex items-center rounded-full bg-[#F1EEE8] pr-1">
           <label htmlFor="skot-input" className="sr-only">Ton message</label>
-          <input id="skot-input" value={p.input} onChange={(e) => p.setInput(e.target.value)} maxLength={1500} placeholder="Écris à SKOT…"
+          <input id="skot-input" value={p.input} onChange={(e) => p.setInput(e.target.value)} maxLength={1500} placeholder={ph}
             className="flex-1 min-w-0 h-11 pl-4 bg-transparent text-base outline-none" style={{ fontFamily: JAK }} />
           <button type="button" onClick={() => setEmo((v) => !v)} aria-label="Emojis" aria-pressed={emo} className={`w-9 h-9 rounded-full grid place-items-center shrink-0 ${emo ? "text-[#4A7C59]" : "text-[#6B6B6B]"}`}><Smile className="w-[22px] h-[22px]" /></button>
         </div>
@@ -168,6 +170,8 @@ export interface ChatUiProps {
   tiles: Tile[];
   fresh: boolean;
   onWake: () => void;
+  accueil?: number;
+  capas?: Capa[];
 }
 
 const Shell = ({ children }: { children: ReactNode }) => (
@@ -193,13 +197,16 @@ export const LoupeBtn = ({ onSearch }: { onSearch: () => void }) => (
   </button>
 );
 
+// 29/10 : quand ses talents sont montrés juste dessous, le bonjour tient en une bulle courte.
+const ACCUEIL_COURT = "Salut ! Moi c'est SKOT, la patinette de l'atelier 🛴 Pas de moteur, mais je connais toutes les trotts par cœur. Regarde tout ce que je sais faire 👇";
+
 // Le 1er message de SKOT découpé en 2 bulles courtes (une vraie discussion n'envoie pas un pavé).
 const splitGreeting = (t: string): string[] => {
   const k = t.indexOf("Dis-moi");
   return k > 0 ? [t.slice(0, k).trim(), t.slice(k).trim()] : [t];
 };
 
-const SkotChatUi = ({ ui, p, header, tiles, fresh, onWake }: ChatUiProps) => {
+const SkotChatUi = ({ ui, p, header, tiles, fresh, onWake, accueil = 0, capas = [] }: ChatUiProps) => {
   const list = (children: ReactNode, extra = "") => (
     <div ref={p.listRef} className={`flex-1 overflow-y-auto px-3 py-4 space-y-3 ${extra}`} aria-live="polite" onPointerDown={onWake}>{children}</div>
   );
@@ -241,7 +248,7 @@ const SkotChatUi = ({ ui, p, header, tiles, fresh, onWake }: ChatUiProps) => {
         {list(<>
           {greeting && fresh ? (
             <div className="space-y-1.5">
-              {splitGreeting(greeting).map((g, k, all) => (
+              {(accueil > 0 ? [ACCUEIL_COURT] : splitGreeting(greeting)).map((g, k, all) => (
                 <div key={k} className="flex items-end gap-2 skf-in">
                   {k === all.length - 1 ? <Avatar size={28} /> : <span className="w-7 shrink-0" />}
                   <div className="max-w-[86%]"><SkotBubble tail={k === all.length - 1}>{g}</SkotBubble></div>
@@ -249,7 +256,8 @@ const SkotChatUi = ({ ui, p, header, tiles, fresh, onWake }: ChatUiProps) => {
               ))}
             </div>
           ) : <Thread p={rest} />}
-          {fresh && (
+          {fresh && accueil > 0 && <SkotAccueil v={accueil} capas={capas} busy={p.busy} />}
+          {fresh && accueil === 0 && (
             <div className="pl-9 flex flex-wrap gap-2 skf-in">
               {tiles.map((t) => (
                 <TileLink key={t.label} t={t} busy={p.busy} className="inline-flex items-center gap-1.5 h-10 px-3.5 rounded-full bg-white text-[14px] font-bold disabled:opacity-50" style={{ fontFamily: JAK, color: CARBON, border: `1.5px solid ${GREEN}` }}>
@@ -259,7 +267,7 @@ const SkotChatUi = ({ ui, p, header, tiles, fresh, onWake }: ChatUiProps) => {
             </div>
           )}
         </>)}
-        <ChatComposer p={p} />
+        <ChatComposer p={p} demo={fresh && accueil > 0} />
       </Shell>
     );
   }
