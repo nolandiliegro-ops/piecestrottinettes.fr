@@ -2,14 +2,15 @@
 // te trouver ta trottinette, tu peux lui envoyer une photo, tu peux parler de trottinette avec lui… qu'on ait envie de
 // jouer avec lui… parler avec lui comme un pote »). ?skotaccueil=1..5 (0 = pastilles actuelles de la Messagerie).
 // Commun aux 5 : la bulle de l'en-tête fait défiler ses talents (SkotPanel) et la saisie montre des exemples qui s'écrivent.
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
+import { ChevronLeft, ChevronRight } from "lucide-react";
 
 const GREEN = "#4A7C59";
 const CARBON = "#1A1A1A";
 const JAK = "'Plus Jakarta Sans', sans-serif";
 const UNB = "'Unbounded', sans-serif";
 
-export const SKOTACCUEIL_DEFAUT = 0;
+export const SKOTACCUEIL_DEFAUT = 3; // 29/10 : « Vitrine » retenue par Nolan ; ?skotaccueil=0 = anciennes pastilles.
 export const readSkotAccueil = (): number => {
   if (typeof window === "undefined") return SKOTACCUEIL_DEFAUT;
   try {
@@ -21,7 +22,7 @@ export const readSkotAccueil = (): number => {
 };
 
 /** Un talent de SKOT : ce qu'il sait faire, une phrase d'exemple, et le geste qui le lance pour de vrai. */
-export type Capa = { emoji: string; court: string; titre: string; exemple: string; defi: string; go: () => void };
+export type Capa = { emoji: string; court: string; titre: string; exemple: string; defi: string; go: () => void; pose?: string };
 
 /** Exemples qui s'écrivent dans la saisie (commun aux 5). */
 export const PLACEHOLDERS = [
@@ -99,23 +100,8 @@ export const SkotAccueil = ({ v, capas, busy }: { v: number; capas: Capa[]; busy
     );
   }
 
-  // 3 · Vitrine (lecture littérale « les signes de tout ce qu'il sait faire ») : une carte par talent, qu'on fait glisser.
-  if (v === 3) return (
-    <div className="-mx-3 skf-in">
-      <p className="px-12 text-[13px] font-bold mb-2 text-[#6B6B6B]" style={{ fontFamily: JAK }}>Ce que je sais faire · fais glisser →</p>
-      <div className="flex gap-2.5 overflow-x-auto pl-12 pr-4 pb-2 snap-x snap-mandatory" style={{ scrollbarWidth: "none" }}>
-        {capas.map((c) => (
-          <button key={c.court} type="button" disabled={busy} onClick={c.go} className="snap-start shrink-0 w-[168px] min-h-[150px] flex flex-col text-left bg-white rounded-[20px] p-3.5 disabled:opacity-50 active:scale-[.97] transition"
-            style={{ boxShadow: "0 1px 2px rgba(0,0,0,.06), 0 4px 14px rgba(0,0,0,.06)" }}>
-            <span className="text-[30px] leading-none">{c.emoji}</span>
-            <span className="mt-2 text-[14.5px] font-extrabold leading-tight" style={{ fontFamily: JAK, color: CARBON }}>{c.titre}</span>
-            <span className="mt-1 text-[13px] leading-snug text-[#6B6B6B] flex-1" style={{ fontFamily: JAK }}>« {c.exemple} »</span>
-            <span className="mt-2 text-[13px] font-bold" style={{ fontFamily: JAK, color: GREEN }}>Essaie →</span>
-          </button>
-        ))}
-      </div>
-    </div>
-  );
+  // 3 · Vitrine (retenue le 29/10) : une carte par talent, SKOT en vrai dans chaque carte, peu de texte, on fait glisser.
+  if (v === 3) return <Vitrine capas={capas} busy={busy} />;
 
   // 4 · Questions de potes : des phrases toutes prêtes, côté client (à droite), qu'il suffit de toucher pour les envoyer.
   if (v === 4) return (
@@ -144,6 +130,47 @@ export const SkotAccueil = ({ v, capas, busy }: { v: number; capas: Capa[]; busy
             <span className={k === 0 ? "text-[28px] leading-none" : "text-[22px] leading-none"}>{c.emoji}</span>
             <span className={`mt-1.5 font-extrabold leading-tight ${k === 0 ? "text-[16px]" : "text-[14px]"}`} style={k === 0 ? undefined : { color: CARBON }}>{c.defi}</span>
             <span className={`mt-auto pt-1.5 text-[12.5px] font-bold ${k === 0 ? "text-white/85" : ""}`} style={k === 0 ? undefined : { color: GREEN }}>Défi lancé ›</span>
+          </button>
+        ))}
+      </div>
+    </div>
+  );
+};
+
+/* Vitrine retenue (29/10) : SKOT dans la bonne pose sur chaque carte, un titre court, « Essaie ». La rangée fait un
+   petit aller-retour à l'ouverture pour montrer qu'elle glisse ; flèches sur ordinateur (pas de glisser à la souris). */
+const TEINTES = ["#E7F0EA", "#F3ECDF"];
+const Vitrine = ({ capas, busy }: { capas: Capa[]; busy: boolean }) => {
+  const row = useRef<HTMLDivElement>(null);
+  useEffect(() => {
+    const el = row.current;
+    if (!el || (typeof window !== "undefined" && window.matchMedia?.("(prefers-reduced-motion: reduce)").matches)) return;
+    const a = setTimeout(() => el.scrollTo({ left: 90, behavior: "smooth" }), 1300);
+    const b = setTimeout(() => el.scrollTo({ left: 0, behavior: "smooth" }), 2100);
+    return () => { clearTimeout(a); clearTimeout(b); };
+  }, []);
+  const slide = (d: number) => row.current?.scrollBy({ left: d * 300, behavior: "smooth" });
+  return (
+    <div className="-mx-3 skf-in">
+      <div className="flex items-center gap-2 pl-12 pr-4 mb-2">
+        <p className="flex-1 italic uppercase leading-none" style={{ fontFamily: UNB, fontWeight: 900, fontSize: 14, color: CARBON }}>
+          Mes talents <span className="not-italic text-[13px] font-bold normal-case" style={{ fontFamily: JAK, color: GREEN }}>· {capas.length} · fais glisser</span>
+        </p>
+        <button type="button" onClick={() => slide(-1)} aria-label="Talents précédents" className="hidden md:grid w-9 h-9 rounded-full bg-white place-items-center" style={{ boxShadow: "0 1px 3px rgba(0,0,0,.1)" }}><ChevronLeft className="w-4 h-4" /></button>
+        <button type="button" onClick={() => slide(1)} aria-label="Talents suivants" className="hidden md:grid w-9 h-9 rounded-full bg-white place-items-center" style={{ boxShadow: "0 1px 3px rgba(0,0,0,.1)" }}><ChevronRight className="w-4 h-4" /></button>
+      </div>
+      <div ref={row} className="flex gap-2.5 overflow-x-auto pl-12 pr-6 pb-3 snap-x snap-mandatory scroll-pl-12" style={{ scrollbarWidth: "none" }}>
+        {capas.map((c, k) => (
+          <button key={c.court} type="button" disabled={busy} onClick={c.go}
+            className="snap-start shrink-0 w-[156px] flex flex-col text-left bg-white rounded-[22px] overflow-hidden disabled:opacity-50 active:scale-[.96] transition"
+            style={{ boxShadow: "0 1px 2px rgba(0,0,0,.06), 0 6px 16px rgba(0,0,0,.07)" }}>
+            <span className="relative block h-[118px] overflow-hidden" style={{ background: TEINTES[k % 2] }}>
+              {/* Zoom sur la tête et le guidon : c'est là que la pose se lit (appareil photo, loupe, clé, colis…). */}
+              {c.pose && <img src={c.pose} alt="" loading="eager" draggable={false} className="absolute left-1/2 -translate-x-[42%] -top-1 h-[200px] max-w-none w-auto select-none" style={{ filter: "drop-shadow(0 6px 6px rgba(0,0,0,.15))" }} />}
+              <span className="absolute top-2 left-2 w-8 h-8 rounded-full bg-white grid place-items-center text-[17px] leading-none" style={{ boxShadow: "0 1px 3px rgba(0,0,0,.12)" }}>{c.emoji}</span>
+            </span>
+            <span className="flex-1 px-3 pt-2.5 text-[14.5px] font-extrabold leading-tight" style={{ fontFamily: JAK, color: CARBON }}>{c.titre}</span>
+            <span className="mx-3 mt-2.5 mb-3 self-start inline-flex items-center h-8 px-3 rounded-full text-[13px] font-bold text-white" style={{ fontFamily: JAK, background: GREEN }}>Essaie</span>
           </button>
         ))}
       </div>
