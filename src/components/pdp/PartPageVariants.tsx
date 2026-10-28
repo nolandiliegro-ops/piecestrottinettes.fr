@@ -14,6 +14,8 @@
  * 4 VITRINE     · grande photo centrée, prix sous le nom, barre d'achat collée en bas (mobile) / à droite (desktop)
  * 5 COMPAT D'ABORD · la question « ça va sur ma trottinette ? » avant tout le reste
  */
+import ZoomableImage from "@/components/media/ZoomableImage";
+import PhotoViewer from "@/components/media/PhotoViewer";
 import { useMemo, useState } from "react";
 import { Link, useSearchParams } from "react-router-dom";
 import { ShoppingCart, Check, AlertCircle, Search, CheckCircle2, ChevronRight, Wrench, Clock, Package, ImageOff } from "lucide-react";
@@ -178,10 +180,13 @@ const Photos = ({ part, height, thumbs = "row", bg = "#fff", rounded = "rounded-
   const photos = getAllImages(part.images, part.image_url);
   const [i, setI] = useState(0);
   const cur = photos[i];
+  const [viewer, setViewer] = useState(false);
   return (
     <div>
+      {viewer && <PhotoViewer photos={photos} index={i} name={part.name} onIndex={setI} onClose={() => setViewer(false)} />}
       <div className={`${rounded} flex items-center justify-center overflow-hidden`} style={{ height, backgroundColor: bg }}>
-        {cur ? <img src={optimizedImage(cur.url, 900)} alt={cur.alt || part.name} className="max-h-[88%] max-w-[88%] object-contain" decoding="async" />
+        {cur ? <ZoomableImage src={optimizedImage(cur.url, 900)} hiSrc={optimizedImage(cur.url, 1600, 85)} alt={cur.alt || part.name}
+            className="max-h-[88%] max-w-[88%] object-contain" onOpen={() => setViewer(true)} />
           : <ImageOff className="w-12 h-12 text-gray-300" />}
       </div>
       {thumbs === "row" && photos.length > 1 && (

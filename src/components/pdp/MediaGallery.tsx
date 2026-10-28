@@ -3,6 +3,8 @@ import { motion, AnimatePresence } from "framer-motion";
 import { ImageOff, ChevronLeft, ChevronRight } from "lucide-react";
 import { getAllImages, type ImageEntry } from "@/lib/entityImage";
 import { optimizedImage } from "@/lib/imageTransform";
+import ZoomableImage from "@/components/media/ZoomableImage";
+import PhotoViewer from "@/components/media/PhotoViewer";
 
 interface MediaGalleryProps {
   imageUrl: string | null;
@@ -15,6 +17,7 @@ const MediaGallery = ({ imageUrl, images, productName }: MediaGalleryProps) => {
   const hasGallery = allImages.length > 1;
   const [currentIdx, setCurrentIdx] = useState(0);
   const current = allImages[currentIdx];
+  const [viewer, setViewer] = useState(false);
 
   const goPrev = () => setCurrentIdx((i) => (i - 1 + allImages.length) % allImages.length);
   const goNext = () => setCurrentIdx((i) => (i + 1) % allImages.length);
@@ -26,21 +29,15 @@ const MediaGallery = ({ imageUrl, images, productName }: MediaGalleryProps) => {
       transition={{ duration: 0.5, ease: [0.25, 0.46, 0.45, 0.94] }}
       className="h-full bg-white/40 backdrop-blur-md border border-white/20 rounded-2xl shadow-lg overflow-hidden flex flex-col group"
     >
+      {viewer && <PhotoViewer photos={allImages} index={currentIdx} name={productName} onIndex={setCurrentIdx} onClose={() => setViewer(false)} />}
       {current ? (
         <div className="relative flex-1 flex items-center justify-center p-6 md:p-10">
           <AnimatePresence mode="wait">
-            <motion.img
-              key={current.url}
-              src={optimizedImage(current.url, 900)}
-              alt={current.alt || productName}
-              loading="lazy"
-              decoding="async"
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              exit={{ opacity: 0 }}
-              transition={{ duration: 0.25 }}
-              className="max-w-full max-h-full object-contain transition-transform duration-500 group-hover:scale-105"
-            />
+            <motion.div key={current.url} initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} transition={{ duration: 0.25 }}
+              className="max-w-full max-h-full flex items-center justify-center">
+              <ZoomableImage src={optimizedImage(current.url, 900)} hiSrc={optimizedImage(current.url, 1600, 85)} alt={current.alt || productName}
+                className="max-w-full max-h-full object-contain" onOpen={() => setViewer(true)} />
+            </motion.div>
           </AnimatePresence>
           <div className="absolute inset-0 bg-gradient-to-t from-white/10 via-transparent to-transparent pointer-events-none" />
 

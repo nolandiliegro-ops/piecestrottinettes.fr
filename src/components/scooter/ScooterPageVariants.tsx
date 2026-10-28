@@ -27,6 +27,8 @@ import { optimizedImage } from "@/lib/imageTransform";
 import { getBrandColors } from "@/contexts/ScooterContext";
 import type { ScooterDetail } from "@/hooks/useScooterDetail";
 import type { ShowroomCarouselScooter } from "@/hooks/useShowroomData";
+import ZoomableImage from "@/components/media/ZoomableImage";
+import PhotoViewer from "@/components/media/PhotoViewer";
 import GammeCarousel, { type GalStyle } from "@/components/scooter/GammeCarousel";
 import BrandExplorer, { type ExploBrand, type ExploLook } from "@/components/scooter/BrandExplorer";
 import { useBrands } from "@/hooks/useScooterData";
@@ -83,8 +85,10 @@ const Gallery = ({ scooter, accent, height, thumbs = "row", dark = false }: { sc
   const [i, setI] = useState(0);
   useEffect(() => setI(0), [scooter.slug]);
   const cur = photos[i]?.url;
+  const [viewer, setViewer] = useState(false);
   return (
     <div className={thumbs === "col" ? "flex gap-3" : ""}>
+      {viewer && <PhotoViewer photos={photos} index={i} name={scooter.name} onIndex={setI} onClose={() => setViewer(false)} />}
       {thumbs === "col" && photos.length > 1 && (
         <div className="hidden lg:flex flex-col gap-2">
           {photos.map((p, k) => (
@@ -99,7 +103,8 @@ const Gallery = ({ scooter, accent, height, thumbs = "row", dark = false }: { sc
       <div className="flex-1">
         <div className="relative flex items-center justify-center" style={{ height }}>
           {cur ? (
-            <img src={optimizedImage(cur, 900)} alt={photos[i]?.alt || scooter.name} className="max-h-full max-w-full object-contain"
+            <ZoomableImage src={optimizedImage(cur, 900)} hiSrc={optimizedImage(cur, 1600, 85)} alt={photos[i]?.alt || scooter.name}
+              className="max-h-full max-w-full object-contain" onOpen={() => setViewer(true)}
               style={{ filter: dark ? "drop-shadow(0 20px 40px rgba(0,0,0,0.6))" : "drop-shadow(0 22px 30px rgba(26,26,26,0.25))" }} />
           ) : (
             <Bike className="w-24 h-24" style={{ color: `${accent}66` }} strokeWidth={1} />

@@ -6,6 +6,7 @@ import { Link } from "react-router-dom";
 import { Bike, ChevronLeft, ChevronRight } from "lucide-react";
 import { useBrands } from "@/hooks/useScooterData";
 import { optimizedImage } from "@/lib/imageTransform";
+import RailImage from "@/components/media/RailImage";
 import type { ShowroomCarouselScooter } from "@/hooks/useShowroomData";
 
 const UNB = "'Unbounded', sans-serif";
@@ -33,7 +34,7 @@ export const byPower = (a: ShowroomCarouselScooter, b: ShowroomCarouselScooter) 
 const short = (m: ShowroomCarouselScooter) =>
   m.name.replace(new RegExp(`^${(m.brand_name ?? "").replace(/[.*+?^${}()|[\]\\]/g, "\\$&")}\\s+`, "i"), "");
 const Pic = ({ m, w = 260, cls = "" }: { m: ShowroomCarouselScooter; w?: number; cls?: string }) =>
-  m.image_url ? <img src={optimizedImage(m.image_url, w)} alt="" loading="eager" className={`max-h-full max-w-full object-contain ${cls}`} />
+  m.image_url ? <RailImage src={optimizedImage(m.image_url, w)} className={`max-h-full max-w-full object-contain ${cls}`} />
     : <Bike className="w-8 h-8 text-gray-300" />;
 
 /** Rail horizontal avec flèches sur ordinateur ; ramène la carte active en vue à l'ouverture. */

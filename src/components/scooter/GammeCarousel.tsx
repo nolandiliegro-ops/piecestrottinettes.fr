@@ -7,6 +7,7 @@ import { useCallback, useEffect, useRef, useState } from "react";
 import { Link } from "react-router-dom";
 import { ChevronLeft, ChevronRight, Bike } from "lucide-react";
 import { optimizedImage } from "@/lib/imageTransform";
+import RailImage from "@/components/media/RailImage";
 import type { ShowroomCarouselScooter } from "@/hooks/useShowroomData";
 
 const UNB = "'Unbounded', sans-serif";
@@ -25,7 +26,7 @@ const specLine = (m: ShowroomCarouselScooter) =>
 const Photo = ({ m, h, blend = true, big = false }: { m: ShowroomCarouselScooter; h: string; blend?: boolean; big?: boolean }) => (
   <div className={`relative w-full flex items-end justify-center ${h}`}>
     {m.image_url ? (
-      <img src={optimizedImage(m.image_url, big ? 480 : 360)} alt={m.name} loading="lazy" draggable={false}
+      <RailImage src={optimizedImage(m.image_url, big ? 480 : 360)} alt={m.name} draggable={false}
         className="relative z-[1] max-h-full max-w-full object-contain transition-transform duration-300 group-hover:scale-[1.04]"
         style={blend ? { mixBlendMode: "multiply" } : { filter: "drop-shadow(0 14px 14px rgba(26,26,26,0.18))" }} />
     ) : (
