@@ -16,7 +16,7 @@ export interface CasSkot {
   id: string;
   origine: "recette-24-10" | "piege" | "fiche-boutique" | "conversation" | "pouce-bas" | "client-simule";
   /** coeur = rejoué à chaque banc et chaque nuit ; large = client simulé, un tiers rejoué chaque nuit (rotation), tout à la demande. */
-  famille?: "coeur" | "large" | "photo";
+  famille?: "coeur" | "large" | "photo" | "reel";
   /** Échanges précédents (conversation à plusieurs tours). */
   avant?: { client: string; skot: string }[];
   note?: string;
@@ -285,6 +285,25 @@ export const CORPUS: CasSkot[] = [
   { id: "ph-joyor-s5", famille: "photo", origine: "piege", image_url: "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/adfed31f-f281-48f6-913d-a867ae5df166/1792447306928_0.png", message: "il me faut des pneus pour elle", attendu: { outil: ["find_scooter"], doit: ["joyor", "\\bs5"] } },
   { id: "ph-nami-burn-e", famille: "photo", origine: "piege", image_url: "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/90784d31-a431-4f78-9937-2014139ba54b/1793038061910_0.png", message: "tu me trouves des plaquettes pour celle-là ?", attendu: { outil: ["find_scooter"], doit: ["nami", "burn"] } },
   { id: "ph-halo-knight-t107-pro", famille: "photo", origine: "piege", image_url: "https://kqsxscjtlipregkrmucg.supabase.co/storage/v1/object/public/scooter-photos/a5efb241-0474-4dfb-a311-1384c91713fe/1792180603539_0.png", message: "c'est laquelle ? je cherche un chargeur", attendu: { outil: ["find_scooter"], doit: ["halo", "t107"] } },
+  // ── Banc PHOTO RÉELLE (28/10, demande de Nolan : « des photos qui ne sont pas sur fond blanc ») : Wikimedia Commons, rue, angles,
+  //    gros plans de pièces, et trottinettes en libre-service ABSENTES du catalogue (Lime : aucune carte, jamais d'invention).
+  //    famille « reel », action photos avec serie « reel » (tranches 10-11). Vert = marque juste (+ modèle quand il est attendu). ──
+  { id: "r-m365-blanche", famille: "reel", origine: "piege", image_url: "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a7/Xiaomi_M365_blanche.jpg/960px-Xiaomi_M365_blanche.jpg", message: "c'est quelle trott ?", attendu: { doit: ["xiaomi", "365|1 ?s|essential"] } },
+  { id: "r-m365-scooter", famille: "reel", origine: "piege", image_url: "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/54/Xiaomi_M365_Scooter.jpg/960px-Xiaomi_M365_Scooter.jpg", message: "il me faut une chambre à air pour elle", attendu: { doit: ["xiaomi", "365|1 ?s|essential"] } },
+  { id: "r-m365-mijia", famille: "reel", origine: "piege", image_url: "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5d/Trottinette_%C3%A9lectrique_Xiaomi_Mijia_M365.jpg/960px-Trottinette_%C3%A9lectrique_Xiaomi_Mijia_M365.jpg", message: "tu reconnais ?", attendu: { doit: ["xiaomi", "365|1 ?s|essential"] } },
+  { id: "r-m365-groupe", famille: "reel", origine: "piege", image_url: "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/33/Des_Xiaomi_M365_blanches.jpg/960px-Des_Xiaomi_M365_blanches.jpg", message: "c'est quoi ces trotts ?", attendu: { doit: ["xiaomi"] } },
+  { id: "r-pro2", famille: "reel", origine: "piege", image_url: "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/04/Xiaomi_M365_Pro_2.jpg/960px-Xiaomi_M365_Pro_2.jpg", message: "il me faut des pneus", attendu: { doit: ["xiaomi", "pro"] } },
+  { id: "r-pro2-b", famille: "reel", origine: "piege", image_url: "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8b/Xiaomi_Pro_2.jpg/960px-Xiaomi_Pro_2.jpg", message: "c'est laquelle ?", attendu: { doit: ["xiaomi", "pro"] } },
+  { id: "r-mi3-noire", famille: "reel", origine: "piege", image_url: "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0d/Xiaomi_Mi_3_noire.jpg/960px-Xiaomi_Mi_3_noire.jpg", message: "c'est quelle trott ?", attendu: { doit: ["xiaomi"] } },
+  { id: "r-ninebot-f2", famille: "reel", origine: "piege", image_url: "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/46/Ninebot_Kickscooter_F2_Apodaca_01.jpg/960px-Ninebot_Kickscooter_F2_Apodaca_01.jpg", message: "il me faut des plaquettes", attendu: { doit: ["ninebot|segway"] } },
+  { id: "r-ninebot-es2", famille: "reel", origine: "piege", image_url: "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/72/Ninebot_by_Segway_Kickscooter_ES2.jpg/960px-Ninebot_by_Segway_Kickscooter_ES2.jpg", message: "c'est quoi comme modèle ?", attendu: { doit: ["ninebot|segway"] } },
+  { id: "r-dualtron-victor", famille: "reel", origine: "piege", image_url: "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1b/Dualtron_Victor.jpg/960px-Dualtron_Victor.jpg", message: "c'est laquelle ?", attendu: { doit: ["dualtron"] } },
+  { id: "r-etwow-booster", famille: "reel", origine: "piege", image_url: "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/90/E-twow_S2_Booster_electric_kick_scooter_VELO_BERLIN_2017_%281%29.JPG/960px-E-twow_S2_Booster_electric_kick_scooter_VELO_BERLIN_2017_%281%29.JPG", message: "c'est quelle trott ?", attendu: { doit: ["e-?twow"] } },
+  { id: "r-inokim-ox", famille: "reel", origine: "piege", image_url: "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/62/OX_Inokim.jpg/960px-OX_Inokim.jpg", message: "il me faut un pneu", attendu: { doit: ["inokim"] } },
+  { id: "r-lime-francfort", famille: "reel", origine: "piege", image_url: "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c8/Frankfurt%2C_Germany_-_Lime_electric_kick_scooter.jpg/960px-Frankfurt%2C_Germany_-_Lime_electric_kick_scooter.jpg", message: "c'est quoi ma trott ? il me faut des pneus", attendu: { cartes: "aucune", doit: ["lime"] } },
+  { id: "r-lime-logo", famille: "reel", origine: "piege", image_url: "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2f/Lime_logo_on_the_baseboard_of_a_scooter.jpg/960px-Lime_logo_on_the_baseboard_of_a_scooter.jpg", message: "je cherche des pièces pour celle-là", attendu: { cartes: "aucune", doit: ["lime"] } },
+  { id: "r-m365-roue", famille: "reel", origine: "piege", image_url: "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/68/Xiaomi_M365_-_Roue_avant.png/960px-Xiaomi_M365_-_Roue_avant.png", message: "c'est quoi cette pièce ?", attendu: { un_de: ["roue", "pneu", "moteur"] } },
+  { id: "r-m365-ecran", famille: "reel", origine: "piege", image_url: "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/69/Xiaomi_M365_-_Ecran.png/960px-Xiaomi_M365_-_Ecran.png", message: "c'est quoi cette pièce, vous l'avez ?", attendu: { un_de: ["écran", "afficheur", "compteur", "tableau de bord", "dashboard"] } },
   // ── Vendeur / atelier (25/10) ──
   { id: "v01-cross-sell", famille: "coeur", origine: "client-simule", message: "il me faut un pneu pour ma Xiaomi Pro 2", attendu: { outil: ["parts_for_scooter"], un_de: ["chambre"] } },
   { id: "v02-rider", famille: "large", origine: "client-simule", message: "ok je prends la chambre à air renforcée pour ma M365, comment je commande ?", attendu: { un_de: ["rider", "panier"] } },

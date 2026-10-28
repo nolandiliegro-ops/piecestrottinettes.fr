@@ -137,7 +137,7 @@ async function playCase(d: Deps, c: CasSkot, admin: { id: string; email: string 
   let image: { media_type: string; data: string } | undefined;
   if (c.image_url) {
     try {
-      const res = await fetch(c.image_url);
+      const res = await fetch(c.image_url, { headers: { "User-Agent": "piecestrottinettes-banc/1.0 (admin@ndl-agency.com)" } });
       const buf = new Uint8Array(await res.arrayBuffer());
       const mt = (res.headers.get("content-type") ?? "image/png").split(";")[0];
       let bin = ""; for (let i = 0; i < buf.length; i += 0x8000) bin += String.fromCharCode(...buf.subarray(i, i + 0x8000));
@@ -175,9 +175,9 @@ export function selectCases(ids: string[] | null, famille: string | null, nuitDa
     return [...live.filter((c) => fam(c) === "coeur"), ...large.filter((_, i) => i % 4 === nuitDay % 4)]; // ¼ du large par nuit (durée)
   }
   // « photo » coûte ~0,08-0,10 $ par cas (Sonnet) : jamais inclus dans « tout » ; « photo:N » = tranche N sur 4.
-  const tranche = /^photo:([0-3])$/.exec(famille ?? "");
-  if (tranche) return live.filter((c) => fam(c) === "photo").filter((_, i) => i % 4 === Number(tranche[1]));
-  if (famille === "tout") return live.filter((c) => fam(c) !== "photo");
+  const tranche = /^(photo|reel):([0-3])$/.exec(famille ?? "");
+  if (tranche) { const n = tranche[1] === "reel" ? 2 : 4; return live.filter((c) => fam(c) === tranche[1]).filter((_, i) => i % n === Number(tranche[2])); }
+  if (famille === "tout") return live.filter((c) => fam(c) !== "photo" && fam(c) !== "reel");
   // « large:0 » / « large:1 » : moitiés du large (un banc complet du large dépasse 150 s)
   const half = /^large:([01])$/.exec(famille ?? "");
   if (half) return live.filter((c) => fam(c) === "large").filter((_, i) => i % 2 === Number(half[1]));
@@ -308,12 +308,13 @@ export async function runNuit(d: Deps) {
 
 /** Banc PHOTO (28/10) : une tranche de 10 photos de trottinettes. Sans authentification (pg_cron), protégé par l'index unique
  *  (run_day, version, slot) where kind='photos' : une tranche par jour ET par version déployée — un correctif redéployé peut être remesuré. */
-export async function runPhotos(d: Deps, slot: number) {
+export async function runPhotos(d: Deps, slot: number, serie: "photo" | "reel" = "photo") {
   const today = new Date().toISOString().slice(0, 10);
-  const { data: run, error } = await d.db.from("skot_eval_runs").insert({ kind: "photos", run_day: today, slot, version: d.version }).select("id").single();
+  // Série « reel » : tranches 10-11 (même index unique que la série catalogue, sans collision).
+  const { data: run, error } = await d.db.from("skot_eval_runs").insert({ kind: "photos", run_day: today, slot: serie === "reel" ? 10 + slot : slot, version: d.version }).select("id").single();
   if (error) return { ok: false, error: /duplicate|unique/i.test(error.message) ? "ALREADY_DONE" : `run: ${error.message}` };
   const admin = await resolveAdmin(d.db);
-  const b = await playCorpus(d, admin, null, `photo:${slot}`);
+  const b = await playCorpus(d, admin, null, `${serie}:${slot}`);
   await d.db.from("skot_eval_runs").update({ finished_at: new Date().toISOString(), n_cas: b.n_cas, n_vert: b.n_vert, n_rouge: b.n_rouge, n_juge_rouge: b.n_juge_rouge, tokens: b.tokens, detail: { banc: b.results } }).eq("id", run.id);
   return { ok: true, run_id: run.id, slot, n_cas: b.n_cas, n_vert: b.n_vert, n_rouge: b.n_rouge, upstream: b.upstream, rouges: b.results.filter((x) => !x.vert).map((x) => x.id) };
 }

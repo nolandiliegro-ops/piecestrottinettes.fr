@@ -15,7 +15,7 @@ import { CORPUS } from "./banc/cas.ts";
 import { NUDGES } from "./nudges.ts";
 import { runBanc, runNuit, runFresh, runFreshNuit, runPhotos, looksCut } from "./banc/banc.ts";
 
-const VERSION = "chat-skot@2026-10-28h";
+const VERSION = "chat-skot@2026-10-28i";
 const MODEL = "claude-haiku-5-5";
 // Tour avec photo : Sonnet, plus sûr que Haiku pour reconnaître un modèle (28/10 : Haiku 0 modèle sur 3 photos, marque seule).
 const MODEL_PHOTO = "claude-sonnet-5-5";
@@ -888,8 +888,10 @@ serve(async (req) => {
   // Garde-fou = index unique (run_day, version, slot) : une tranche par jour et par version. Sans slot → rotation par jour.
   if (body?.action === "photos") {
     if (!apiKey) return json({ ok: false, error: "NOT_CONFIGURED" }, 503);
-    const slot = Number.isInteger(body.slot) && body.slot >= 0 && body.slot <= 3 ? body.slot : Math.floor(Date.now() / 86_400_000) % 4;
-    const run = await runPhotos({ db, apiKey, converse, callClaude, version: VERSION, judgeRules: SYSTEM_PROMPT }, slot);
+    const serie = body.serie === "reel" ? "reel" : "photo";
+    const max = serie === "reel" ? 1 : 3;
+    const slot = Number.isInteger(body.slot) && body.slot >= 0 && body.slot <= max ? body.slot : Math.floor(Date.now() / 86_400_000) % (max + 1);
+    const run = await runPhotos({ db, apiKey, converse, callClaude, version: VERSION, judgeRules: SYSTEM_PROMPT }, slot, serie);
     if (run.ok && body.notify) {
       const r = run as any;
       await notifySkotTelegram(`📷 <b>SKOT — banc photo</b> tranche ${r.slot} (${VERSION})\nReconnues : ${r.n_vert}/${r.n_cas}${r.rouges?.length ? `\nRatées : ${escapeHtml(r.rouges.join(", "))}` : ""}`);
