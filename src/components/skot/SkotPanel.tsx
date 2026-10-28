@@ -6,8 +6,9 @@ import { Link } from "react-router-dom";
 import { X, Send, Camera, Loader2, ThumbsUp, ThumbsDown, Search, Package, Wrench, Bike, CircleDot, LayoutGrid } from "lucide-react";
 import { skotSaison, SAISON_TEXTE, type SkotSaison } from "@/lib/skotSaison";
 import type { SkotCard } from "@/lib/skot";
+import SkotChatUi, { readSkotUi } from "./SkotChatUi";
 
-export type PanelMsg = { role: "user" | "skot"; text: string; cards?: SkotCard[]; image?: string; id?: string | null; conv?: string; fb?: 1 | -1 };
+export type PanelMsg = { role: "user" | "skot"; text: string; cards?: SkotCard[]; image?: string; id?: string | null; conv?: string; fb?: 1 | -1; reaction?: string };
 type Mood = "ecoute" | "clin" | "reflechit" | "content";
 
 export const SKOT_GREETING_V2 =
@@ -66,6 +67,10 @@ export interface SkotPanelProps {
   rate: (i: number, v: 1 | -1) => void;
   listRef: RefObject<HTMLDivElement>;
   renderCard: (c: SkotCard) => ReactNode;
+  /** Réaction emoji sur une réponse de SKOT (28/10). */
+  react?: (i: number, emoji: string) => void;
+  /** Commentaire libre sur une réponse de SKOT (28/10). */
+  comment?: (i: number, text: string) => void;
 }
 
 const Dots = ({ label = "Je fouille l'atelier…" }: { label?: string }) => (
@@ -279,6 +284,11 @@ const ScenePanel = (p: SkotPanelProps) => {
     poke();
     play([{ s: v === 1 ? { pose: "rire", title: "Merci !", sub: "Ça me fait rouler de joie.", anim: "shake" } : { pose: "oups", title: "Je note…", sub: "L'atelier relit ma réponse et on corrige.", anim: "shake" }, ms: 2800 }, { s: idle() }]);
   };
+  const [ui] = useState(readSkotUi);
+  const reactAnim = (e: string) => {
+    poke();
+    play([{ s: e === "😕" ? { pose: "oups", title: "Je note…", sub: "L'atelier relit ma réponse et on corrige.", anim: "shake" } : { pose: "rire", title: e === "😂" ? "Ha ha !" : "Merci !", sub: "Ça me fait rouler de joie.", anim: "shake" }, ms: 2800 }, { s: idle() }]);
+  };
   const tickle = () => {
     if (scene.pose === "dort") return wake();
     poke();
@@ -310,8 +320,7 @@ const ScenePanel = (p: SkotPanelProps) => {
     </>
   );
 
-  return (
-    <Shell width={440}>
+  const header = (
       <div className="relative flex items-end gap-1 pl-1 pr-3 h-[176px] md:h-[190px] shrink-0 overflow-hidden"
         style={{ paddingTop: "max(8px, env(safe-area-inset-top))", background: `radial-gradient(120% 90% at 18% 100%, #ffffff 0%, ${BEIGE} 55%, #EAE2D2 100%)`, borderBottom: `3px solid ${CARBON}` }}>
         <span aria-hidden className="absolute left-3 right-[55%] bottom-[6px] h-[10px] rounded-[50%]" style={{ background: "radial-gradient(closest-side, rgba(0,0,0,.18), transparent)" }} />
@@ -331,6 +340,12 @@ const ScenePanel = (p: SkotPanelProps) => {
         </div>
         <span className="absolute right-1 top-[max(4px,env(safe-area-inset-top))]"><CloseBtn onClose={p.onClose} /></span>
       </div>
+  );
+  // 28/10 : 5 propositions « vraie discussion » derrière ?skotui=1..5 (SkotChatUi) ; 0 = fenêtre actuelle ci-dessous.
+  if (ui > 0) return <SkotChatUi ui={ui} p={{ ...p, rate, react: (i, e) => { reactAnim(e); p.react?.(i, e); } }} header={header} tiles={TILES} fresh={fresh} onWake={wake} />;
+  return (
+    <Shell width={440}>
+      {header}
       <SearchBar onSearch={p.onSearch} className="mx-3 mt-3" />
       <div ref={p.listRef} className="flex-1 overflow-y-auto px-3 py-4 space-y-3" aria-live="polite" onPointerDown={wake}>
         {p.msgs.map((m, i) =>
