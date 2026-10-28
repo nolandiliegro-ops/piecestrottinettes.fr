@@ -4766,6 +4766,36 @@ export type Database = {
         }
         Relationships: []
       }
+      _bak_brand_assets_2810: {
+        Row: {
+          alt_text: string | null
+          asset_key: string | null
+          asset_url: string | null
+          description: string | null
+          id: string | null
+          updated_at: string | null
+          updated_by: string | null
+        }
+        Insert: {
+          alt_text?: string | null
+          asset_key?: string | null
+          asset_url?: string | null
+          description?: string | null
+          id?: string | null
+          updated_at?: string | null
+          updated_by?: string | null
+        }
+        Update: {
+          alt_text?: string | null
+          asset_key?: string | null
+          asset_url?: string | null
+          description?: string | null
+          id?: string | null
+          updated_at?: string | null
+          updated_by?: string | null
+        }
+        Relationships: []
+      }
       _bak_ch1025_links_1910: {
         Row: {
           auto_suggested: boolean | null
