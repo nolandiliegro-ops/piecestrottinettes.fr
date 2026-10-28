@@ -15,7 +15,7 @@ import { CORPUS } from "./banc/cas.ts";
 import { NUDGES } from "./nudges.ts";
 import { runBanc, runNuit, runFresh, runFreshNuit, runPhotos, looksCut } from "./banc/banc.ts";
 
-const VERSION = "chat-skot@2026-10-28d";
+const VERSION = "chat-skot@2026-10-28e";
 const MODEL = "claude-haiku-5-5";
 // Tour avec photo : Sonnet, plus sûr que Haiku pour reconnaître un modèle (28/10 : Haiku 0 modèle sur 3 photos, marque seule).
 const MODEL_PHOTO = "claude-sonnet-5-5";
@@ -57,7 +57,12 @@ RÈGLES ABSOLUES
 4. Commande : client connecté → get_order_status sans rien demander. Sinon tu demandes le numéro (PT-XXXX) ET l'email de la commande, ensemble. Si ça ne trouve rien, tu dis « je ne trouve pas de commande avec ces infos », puis toujours la même suite, quel que soit le cas : « Vérifie le numéro et l'email de ta confirmation de commande, ou je transmets ta demande à l'atelier. » Tu ne dis jamais lequel des deux est faux ni si la commande existe.
 5. Tu ne passes, n'annules, ne modifies et ne rembourses aucune commande. Tu montres la pièce (elle s'affiche en carte avec un bouton) ; c'est le client qui l'ajoute au panier.
 6. Photo.
-- Trottinette entière : identifie la marque ET le modèle (logo, inscriptions sur la potence et le deck, forme du guidon, des phares, des garde-boue, taille des roues, étiquette de numéro de série), puis appelle find_scooter avec ton hypothèse. Si tu es sûr et qu'un seul modèle du catalogue colle : nomme-le (« d'après ta photo, c'est une … ») et enchaîne, avec parts_for_scooter si le client veut une pièce. Si deux versions se ressemblent : donne ta meilleure hypothèse ET le détail visible qui les sépare, et demande laquelle. Seule la marque est visible : dis-le et demande le modèle.
+- Trottinette entière : cherche d'abord le NOM écrit (potence, deck, garde-boue, étiquette du numéro de série).
+  · Nom du modèle lisible : dis où tu le lis (« je lis … sur la potence »), find_scooter, et enchaîne (parts_for_scooter si le client demande une pièce).
+  · Nom illisible, modèle reconnu à sa forme seulement : c'est une HYPOTHÈSE, beaucoup de modèles se ressemblent (Xiaomi M365 / 1S / Essential / Lite, Zero 10 / 10X, Inmotion RS / Climber…). Dis « ça ressemble à une … », appelle find_scooter, puis pose UNE question fermée (« c'est bien ta … ? ») ; aucune pièce listée avant sa réponse.
+  · Plusieurs versions proches au catalogue : liste-les et demande laquelle (donne le détail qui les sépare si tu en vois un).
+  · Rien de lisible ni de reconnaissable : dis-le, et demande la marque et le modèle.
+  · Kugoo et Kukirin sont la même marque.
 - Pièce seule : dis quelle pièce c'est (pneu, chambre à air, plaquettes, disque, chargeur, prise, étrier…) et lis la cote si elle est lisible. Une cote lue reste « à confirmer » tant que l'outil ne la retrouve pas. Une pièce seule ne dit jamais la trottinette : demande le modèle pour vérifier la compatibilité.
 - Une photo ne prouve jamais une compatibilité : la règle 1 s'applique. Ne décris jamais une personne visible sur une photo.
 6 bis. Après une photo de trottinette, dès que le client confirme ton hypothèse ou donne son modèle (retrouvé avec find_scooter), appelle note_photo_model une fois, sans en parler. Si tu t'étais trompé, une phrase suffit (« ah, bien vu ! ») et tu enchaînes.
@@ -184,6 +189,8 @@ interface Ctx {
   escalated: boolean;
   /** Banc d'essai : aucune écriture réelle (escalade simulée). */
   dryRun?: boolean;
+  /** Le message en cours porte une photo (note_photo_model refusé sur ce tour). */
+  hasImage?: boolean;
 }
 
 const words = (q: string) =>
@@ -496,6 +503,8 @@ async function runTool(name: string, input: Record<string, any>, ctx: Ctx): Prom
       return { found: true, commande: fmt(data) };
     }
     case "note_photo_model": {
+      // Garde-fou (banc 28/10 : appelé 2 fois dès la photo, sans confirmation) : jamais sur le tour qui porte la photo.
+      if (ctx.hasImage) return { ok: false, error: "attends que le client confirme son modèle : rien n'est enregistré" };
       const hyp = String(input.hypothese ?? "").trim().slice(0, 120);
       const sc = await scooterBySlug(db, String(input.confirme_slug ?? ""));
       if (!hyp || !sc) return { ok: false, error: "hypothèse ou modèle confirmé manquant" };
@@ -656,7 +665,7 @@ export interface ConverseOutput {
 }
 
 export async function converse(inp: ConverseInput): Promise<ConverseOutput> {
-  const ctx: Ctx = { db: inp.db, userId: inp.userId, userEmail: inp.userEmail, ipHash: inp.ipHash, ip: inp.ip, cards: [], orderFailed: false, escalated: false, dryRun: inp.dryRun };
+  const ctx: Ctx = { db: inp.db, userId: inp.userId, userEmail: inp.userEmail, ipHash: inp.ipHash, ip: inp.ip, cards: [], orderFailed: false, escalated: false, dryRun: inp.dryRun, hasImage: !!inp.image?.data };
   const contextText = [await pageContext(inp.db, inp.page, inp.userId), inp.image?.data ? await knownConfusions(inp.db) : "", inp.nudge && NUDGES[inp.nudge] ? `C'est TOI qui as ouvert la conversation, de toi-même, en disant au client : « ${NUDGES[inp.nudge]} ». Son message y répond : enchaîne directement, sans te représenter.` : ""].filter(Boolean).join("\n");
   const messages: any[] = inp.history.map((m) => ({ role: m.role, content: m.content }));
   while (messages.length && messages[0].role !== "user") messages.shift();
