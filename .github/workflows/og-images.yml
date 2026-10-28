@@ -42,6 +42,15 @@ jobs:
           if [ "${{ github.event_name }}" = "schedule" ]; then LINE="all"; else LINE=$(head -n1 config/og/_run.txt); fi
           echo "::notice title=og::$LINE"
           PW_REQUIRE=/tmp/pw/package.json OG_FONTS=/tmp/pw/node_modules/@fontsource node scripts/og/generate.mjs $LINE
+      - name: Manifeste des pages d'aperçu → main
+        if: success()
+        run: |
+          [ -f config/og/pages.json ] || exit 0
+          git config user.name "og-bot"; git config user.email "og-bot@users.noreply.github.com"
+          if git diff --quiet -- config/og/pages.json && git ls-files --error-unmatch config/og/pages.json > /dev/null 2>&1; then echo "manifeste inchangé"; exit 0; fi
+          git add config/og/pages.json
+          git commit -m "og : manifeste des pages d'aperçu ($(jq length config/og/pages.json) pages)"
+          for i in 1 2 3; do git pull --rebase origin main && git push origin HEAD:main && break; sleep 5; done
       - name: Résultats → branche donnees-og
         if: always()
         run: |

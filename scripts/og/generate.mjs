@@ -104,14 +104,19 @@ async function collect() {
     const [a, b] = splitScooter(s.brand?.name, s.name);
     items.push({ k: "scooter", s: s.slug, a, b, img: s.image_url,
       pills: [s.power_watts && [num(s.power_watts), "W"], (s.max_speed_private_kmh || s.max_speed_kmh) && [String(s.max_speed_private_kmh || s.max_speed_kmh), "km/h"], s.range_km && [String(s.range_km), "km"]],
-      tag: "Fiche technique · pièces compatibles" });
+      tag: "Fiche technique · pièces compatibles",
+      title: `${s.name} : fiche technique et pièces compatibles`,
+      desc: [s.power_watts && `${num(s.power_watts)} W`, (s.max_speed_private_kmh || s.max_speed_kmh) && `${s.max_speed_private_kmh || s.max_speed_kmh} km/h`, s.range_km && `${s.range_km} km d'autonomie`].filter(Boolean).join(" · ")
+        + `${s.power_watts || s.range_km ? ". " : ""}Pièces compatibles vérifiées par l'atelier de Marseille, et où l'acheter.` });
   }
   for (const p of parts) {
     const cat = catById.get(p.category_id);
     const [a, b] = splitPart(p.name, cat?.seo_name || cat?.name);
     items.push({ k: "part", s: p.slug, a, b, img: p.image_url, round: true,
       pills: [["Compatibilité", "vérifiée"]], price: p.price ? euro(p.price) : null,
-      tag: "Compatible avec ta trott · atelier Marseille" });
+      tag: "Compatible avec ta trott · atelier Marseille",
+      title: p.price ? `${p.name} · ${euro(p.price)}` : p.name,
+      desc: "Compatibilité vérifiée avec ta trottinette. Expédiée depuis l'atelier de Marseille." });
   }
   const showcase = new Map(scooters.map((s) => [s.slug, s]));
   const byBrand = new Map();
@@ -121,7 +126,9 @@ async function collect() {
     const vedette = models.find((m) => m.image_url);
     items.push({ k: "brand", s: br.slug, a: "Trottinettes", b: br.name, img: vedette?.image_url || null,
       pills: [[String(models.length), models.length > 1 ? "modèles" : "modèle"], ["Pièces", "compatibles"]],
-      tag: "Fiches, pièces et où les acheter" });
+      tag: "Fiches, pièces et où les acheter",
+      title: `Trottinettes ${br.name} : tous les modèles et leurs pièces`,
+      desc: `${models.length} modèle${models.length > 1 ? "s" : ""} ${br.name} : fiches techniques, pièces compatibles et où les acheter.` });
   }
   const minPrice = new Map();
   for (const p of parts) if (p.price) minPrice.set(p.category_id, Math.min(minPrice.get(p.category_id) ?? 1e9, Number(p.price)));
@@ -133,11 +140,28 @@ async function collect() {
     const photo = parts.find((p) => p.category_id === c.id && p.image_url)?.image_url;
     items.push({ k: "category", s: c.slug, a: "Pièces", b: c.seo_name || c.name, img: photo || null, round: true,
       pills: [[String(n), n > 1 ? "pièces" : "pièce"]], price: minPrice.has(c.id) ? `dès ${euro(minPrice.get(c.id))}` : null,
-      tag: "Compatibles avec ta trott · atelier Marseille" });
+      tag: "Compatibles avec ta trott · atelier Marseille",
+      title: `${c.seo_name || c.name} pour trottinette électrique`,
+      desc: `${n} pièce${n > 1 ? "s" : ""}${minPrice.has(c.id) ? ` dès ${euro(minPrice.get(c.id))}` : ""}, compatibles avec ta trottinette. Atelier à Marseille.` });
   }
   items.push({ k: "page", s: "default", a: "Plus jamais", b: "la mauvaise pièce", img: showcase.get("dualtron-thunder-3")?.image_url || scooters.find((s) => s.image_url)?.image_url,
     pills: [[String(scooters.length), "trottinettes"], [String(parts.length), "pièces"]], tag: "Pièces détachées · atelier Marseille" });
   return items;
+}
+
+// Manifeste lu au build par le plugin « og-pages » de vite.config.ts : une page HTML par fiche avec ses balises
+// d'aperçu écrites en dur (WhatsApp sur iPhone fabrique l'aperçu depuis le téléphone, sans JavaScript ni pré-rendu).
+const ROUTE = { scooter: "scooter", part: "piece", brand: "marque", category: "categorie" };
+function writeManifest(items) {
+  const pages = items.filter((i) => ROUTE[i.k] && i.title).map((i) => ({
+    p: `/${ROUTE[i.k]}/${i.s}`,
+    t: i.title,
+    d: i.desc,
+    i: `${SB}/storage/v1/object/public/og-images/${i.k}/${i.s}.jpg`,
+  })).sort((a, b) => a.p.localeCompare(b.p));
+  mkdirSync(`${ROOT}/config/og`, { recursive: true });
+  writeFileSync(`${ROOT}/config/og/pages.json`, JSON.stringify(pages) + "\n");
+  console.log(`manifeste : ${pages.length} pages`);
 }
 
 async function main() {
@@ -150,8 +174,11 @@ async function main() {
   } else if (mode === "only") {
     const want = new Set(String(arg).split(","));
     items = items.filter((i) => want.has(`${i.k}:${i.s}`));
+  } else if (mode === "manifest") {
+    writeManifest(items);
+    return;
   } else if (mode !== "all") throw new Error(`mode inconnu : ${mode}`);
-  if (mode !== "dry" && !SECRET) throw new Error("ADMIN_BULK_SECRET absent");
+  if (mode !== "dry" && mode !== "manifest" && !SECRET) throw new Error("ADMIN_BULK_SECRET absent");
 
   const outDir = `${ROOT}/out/og-${mode}`;
   mkdirSync(outDir, { recursive: true });
@@ -177,6 +204,10 @@ async function main() {
   }
   await browser.close();
   writeFileSync(`${outDir}/report.json`, JSON.stringify(report, null, 1));
+  if (mode === "all") {
+    const ko = new Set(report.echecs.map((e) => `${e.k}:${e.s}`));
+    writeManifest(items.filter((i) => !ko.has(`${i.k}:${i.s}`)));
+  }
   console.log(`og ${mode} : ${report.ok}/${report.total} ok, ${report.echecs.length} échecs`);
   if (report.echecs.length) console.log(JSON.stringify(report.echecs.slice(0, 20)));
 }

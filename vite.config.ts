@@ -1,9 +1,51 @@
 import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react-swc";
 import path from "path";
+import fs from "fs";
 import { componentTagger } from "lovable-tagger";
 import { VitePWA } from "vite-plugin-pwa";
 import { mcpPlugin } from "@lovable.dev/mcp-js/stacks/supabase/vite";
+
+// Aperçus de liens (28/10/2026) : WhatsApp sur iPhone fabrique l'aperçu depuis le téléphone, sans JavaScript et sans
+// le pré-rendu Lovable (réservé aux robots vérifiés). On écrit donc, au build, une copie de index.html par fiche
+// (dist/<route>/<slug>/index.html) avec son titre, sa description et son image d'aperçu en dur. L'hébergeur sert ce
+// fichier à l'adresse propre /<route>/<slug> (testé le 28/10). Le site démarre exactement comme avec index.html.
+// Données : config/og/pages.json, écrit par scripts/og/generate.mjs (workflow og-images). Manifeste absent = rien.
+const escAttr = (v: string) => String(v ?? "").replace(/&/g, "&amp;").replace(/"/g, "&quot;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
+function ogPages() {
+  return {
+    name: "og-pages",
+    apply: "build" as const,
+    closeBundle() {
+      try {
+        const out = path.resolve(__dirname, "dist");
+        const manifest = path.resolve(__dirname, "config/og/pages.json");
+        if (!fs.existsSync(manifest) || !fs.existsSync(path.join(out, "index.html"))) return;
+        const base = fs.readFileSync(path.join(out, "index.html"), "utf8");
+        const pages: { p: string; t: string; d: string; i: string }[] = JSON.parse(fs.readFileSync(manifest, "utf8"));
+        let n = 0;
+        for (const pg of pages) {
+          if (!/^\/(scooter|piece|marque|categorie)\/[a-z0-9][a-z0-9-]*$/.test(pg.p)) continue;
+          const t = escAttr(pg.t), d = escAttr(pg.d), i = escAttr(pg.i), u = escAttr(`https://piecestrottinettes.fr${pg.p}`);
+          let html = base
+            .replace(/<title>[^<]*<\/title>/, `<title>${t}</title>`)
+            .replace(/(<meta name="description" content=")[^"]*(")/, `$1${d}$2`)
+            .replace(/(<meta property="og:title" content=")[^"]*(")/, `$1${t}$2`)
+            .replace(/(<meta property="og:description" content=")[^"]*(")/, `$1${d}$2`)
+            .replace(/(<meta property="og:image" content=")[^"]*(")/, `$1${i}$2`);
+          html = html.replace("</head>", `<meta property="og:url" content="${u}" data-rh="true"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta name="twitter:image" content="${i}" data-rh="true"></head>`);
+          const dir = path.join(out, pg.p);
+          fs.mkdirSync(dir, { recursive: true });
+          fs.writeFileSync(path.join(dir, "index.html"), html);
+          n++;
+        }
+        console.log(`[og-pages] ${n} pages d'aperçu écrites`);
+      } catch (e) {
+        console.warn("[og-pages] ignoré :", e);
+      }
+    },
+  };
+}
 
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => ({
@@ -18,6 +60,7 @@ export default defineConfig(({ mode }) => ({
   plugins: [
     react(),
     mcpPlugin(),
+    ogPages(),
     mode === "development" && componentTagger(),
     VitePWA({
       registerType: "autoUpdate",
@@ -29,7 +72,7 @@ export default defineConfig(({ mode }) => ({
         // en cache à la première vue (runtimeCaching ci-dessous).
         globPatterns: ["**/*.{js,css,html,ico,svg,woff,woff2}", "pwa-*.png", "favicon*.{png,ico}", "apple-touch-icon.png"],
         // 19/10 : packshots catégories servis à la demande, pas dans le précache (14 fichiers, ~600 Ko)
-        globIgnores: ["**/categories/**", "**/skot/**", "**/assets/Admin-*"], // 25/10 : poses de SKOT chargées à l'ouverture du chat, HD marketing jamais précachées ; admin jamais chez le client
+        globIgnores: ["**/categories/**", "**/skot/**", "**/assets/Admin-*", "scooter/**", "piece/**", "marque/**", "categorie/**"], // 25/10 : poses de SKOT chargées à l'ouverture du chat, HD marketing jamais précachées ; admin jamais chez le client
         maximumFileSizeToCacheInBytes: 5 * 1024 * 1024, // 5 MiB
         runtimeCaching: [
           {
