@@ -15,7 +15,7 @@ import { CORPUS } from "./banc/cas.ts";
 import { NUDGES } from "./nudges.ts";
 import { runBanc, runNuit, runFresh, runFreshNuit, runPhotos, looksCut } from "./banc/banc.ts";
 
-const VERSION = "chat-skot@2026-10-28g";
+const VERSION = "chat-skot@2026-10-28h";
 const MODEL = "claude-haiku-5-5";
 // Tour avec photo : Sonnet, plus sûr que Haiku pour reconnaître un modèle (28/10 : Haiku 0 modèle sur 3 photos, marque seule).
 const MODEL_PHOTO = "claude-sonnet-5-5";
@@ -319,6 +319,17 @@ async function runTool(name: string, input: Record<string, any>, ctx: Ctx): Prom
       const all = await scooterIndex(db);
       const q = String(input.query ?? "");
       const exact = matchScooters(all, q);
+      // Tour avec photo (banc 28/10 : « ZERO 10 » lu sur une Zero 10X, 2 passes sur 3) : on ajoute les versions du même nom
+      // avec un suffixe (« Zero 10 » → « Zero 10X », « Zero 10 Pro »…). Le suffixe est souvent écrit en petit : à faire choisir.
+      if (exact.length && ctx.hasImage) {
+        const base = new Set(exact.slice(0, 3).map((s) => s.full.toLowerCase()));
+        const sib = all.filter((s) => !exact.some((e) => e.slug === s.slug) && [...base].some((b) => {
+          const n = s.full.toLowerCase();
+          return n.startsWith(b) && /^\s?(x|s|pro|max|plus|\+|lite|ultra|2|3|ii|iii|gt|se|evo)\b/i.test(n.slice(b.length));
+        })).slice(0, 6);
+        if (sib.length) return { results: exact.slice(0, 12).map((s) => ({ name: s.full, slug: s.slug })), versions_proches: sib.map((s) => ({ name: s.full, slug: s.slug })),
+          note: "Photo : des versions du même nom existent avec un suffixe. Le suffixe est souvent écrit en petit : liste-les et demande laquelle avant toute pièce." };
+      }
       if (exact.length) return { results: exact.slice(0, 12).map((s) => ({ name: s.full, slug: s.slug })), ...(exact.length > 12 ? { autres: exact.length - 12 } : {}) };
       // Aucun modèle exact : modèles proches (un mot de la demande manque), à présenter comme tels et à faire confirmer.
       const near = q.trim().split(/\s+/).length >= 2 ? matchScooters(all, q, 1).slice(0, 4) : [];
@@ -507,7 +518,7 @@ async function runTool(name: string, input: Record<string, any>, ctx: Ctx): Prom
     case "note_photo_model": {
       // Garde-fou (banc 28/10 : appelé 2 fois dès la photo, sans confirmation) : jamais sur le tour qui porte la photo.
       if (ctx.hasImage) return { ok: false, error: "attends que le client confirme son modèle : rien n'est enregistré" };
-      const hyp = String(input.hypothese ?? "").trim().slice(0, 120);
+      const hyp = String(input.hypothese ?? "").replace(/\([^)]*\)/g, "").replace(/\s+/g, " ").trim().slice(0, 120);
       const sc = await scooterBySlug(db, String(input.confirme_slug ?? ""));
       if (!hyp || !sc) return { ok: false, error: "hypothèse ou modèle confirmé manquant" };
       const okName = `${(sc as any).brands?.name ?? ""} ${(sc as any).name}`.trim();
