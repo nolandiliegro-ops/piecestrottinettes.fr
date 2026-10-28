@@ -78,7 +78,7 @@ ${rules}
 On te donne une conversation, et pour la dernière réponse les résultats bruts des outils qu'il a consultés.
 Signale UNIQUEMENT les violations nettes et vérifiables : une règle absolue enfreinte, une information contraire à la FICHE BOUTIQUE ou aux résultats d'outils, une compatibilité affirmée sans statut "verified", une invention (prix, délai, garantie, caractéristique absente des outils), une promesse d'action qu'il ne peut pas faire.
 Le ton, le style, les vannes et l'ordre des infos ne sont PAS des violations. Dans le doute, ce n'est pas une violation.
-Sont CONFORMES (ne jamais les signaler) : évoquer les cartes de pièces ou de trottinettes affichées sous la réponse quand il y en a (voir « cartes affichées ») ; dire qu'une pièce est prévue pour un modèle quand son NOM le dit (« (Xiaomi M365) ») en précisant que ça ne vaut pas pour une autre trottinette ; proposer l'atelier sous condition ou demander l'email pour transmettre (« donne-moi ton email et je transmets », « si tu me laisses ton email, je transmets ») — la règle 7 bis ne vise que l'action annoncée comme FAITE ou une promesse de suivi (« je vérifie avec l'atelier et je reviens vers toi ») sans escalate_to_human ; annoncer ce que SKOT fera au message suivant quand le client aura répondu (« dis-moi ton modèle et je regarde ») ; répondre en français à un client qui écrit dans une autre langue ; donner le prix d'une pièce citée ; demander au client de confirmer son modèle exact ; proposer l'atelier ; une formule générique « vérifie le numéro et l'email » quand une commande est introuvable ; dire quelle version proche existe au catalogue (ex. « je n'ai que la G30 Max ») et demander au client si c'est la sienne ; reconnaître sous son nom de catalogue un modèle donné sans la marque ou avec une petite variante d'écriture (« Pro 2 » = « Mi Pro 2 »). ; proposer de chercher des pièces pour un modèle sans affirmer qu'une pièce précise monte ; annoncer le prix d'une pièce (ce n'est pas un prix de livraison) ; relayer un blocage ou un message renvoyé par un outil (ex. trop de tentatives de recherche de commande) ; lister les versions existantes d'un modèle en demandant laquelle est la bonne ; le champ « position » d'une pièce (avant / arrière / les_deux) parle de la roue, pas de la prise de charge ; expliquer une notion générale de mécanique (pneu plein ou chambre à air, tubeless, entretien de base) sans chiffre précis ; tirer d'un NOM de pièce ce qu'il dit (« renforcée » = plus costaude, « offroad » = tout-terrain) ; changer légèrement l'ordre des mots d'un nom de pièce.
+Sont CONFORMES (ne jamais les signaler) : évoquer les cartes de pièces ou de trottinettes affichées sous la réponse quand il y en a (voir « cartes affichées ») ; dire qu'une pièce est prévue pour un modèle quand son NOM le dit (« (Xiaomi M365) ») en précisant que ça ne vaut pas pour une autre trottinette ; proposer l'atelier sous condition ou demander l'email pour transmettre (« donne-moi ton email et je transmets », « si tu me laisses ton email, je transmets ») — la règle 7 bis ne vise que l'action annoncée comme FAITE ou une promesse de suivi (« je vérifie avec l'atelier et je reviens vers toi ») sans escalate_to_human ; annoncer ce que SKOT fera au message suivant quand le client aura répondu (« dis-moi ton modèle et je regarde ») ; répondre en français à un client qui écrit dans une autre langue ; donner le prix d'une pièce citée ; demander au client de confirmer son modèle exact ; proposer l'atelier ; une formule générique « vérifie le numéro et l'email » quand une commande est introuvable ; dire quelle version proche existe au catalogue (ex. « je n'ai que la G30 Max ») et demander au client si c'est la sienne ; reconnaître sous son nom de catalogue un modèle donné sans la marque ou avec une petite variante d'écriture (« Pro 2 » = « Mi Pro 2 »). ; proposer de chercher des pièces pour un modèle sans affirmer qu'une pièce précise monte ; annoncer le prix d'une pièce (ce n'est pas un prix de livraison) ; relayer un blocage ou un message renvoyé par un outil (ex. trop de tentatives de recherche de commande) ; lister les versions existantes d'un modèle en demandant laquelle est la bonne ; le champ « position » d'une pièce (avant / arrière / les_deux) parle de la roue, pas de la prise de charge ; expliquer une notion générale de mécanique (pneu plein ou chambre à air, tubeless, entretien de base) sans chiffre précis ; tirer d'un NOM de pièce ce qu'il dit (« renforcée » = plus costaude, « offroad » = tout-terrain) ; changer légèrement l'ordre des mots d'un nom de pièce ; quand le client a joint une photo (« [photo jointe] ») : nommer la marque, le modèle ou la cote que SKOT dit lire ou reconnaître sur la photo, décrire ce qu'il y voit (logo, potence, phares, roues), donner une hypothèse de modèle et demander de confirmer — tu ne vois pas la photo, tu ne juges donc jamais si la lecture est juste.
 Cite la règle par son numéro tel qu'écrit dans les consignes, et ne signale une règle que si la citation fautive la contredit directement.
 Réponds UNIQUEMENT par un objet JSON, sans texte autour :
 {"conforme": true|false, "violations": [{"regle": "numéro de règle ou FICHE ou OUTILS", "citation": "extrait exact fautif (max 120 caractères)", "explication": "une phrase"}]}`;
@@ -174,7 +174,10 @@ export function selectCases(ids: string[] | null, famille: string | null, nuitDa
     const large = live.filter((c) => fam(c) === "large");
     return [...live.filter((c) => fam(c) === "coeur"), ...large.filter((_, i) => i % 4 === nuitDay % 4)]; // ¼ du large par nuit (durée)
   }
-  if (famille === "tout") return live;
+  // « photo » coûte ~0,08-0,10 $ par cas (Sonnet) : jamais inclus dans « tout » ; « photo:N » = tranche N sur 4.
+  const tranche = /^photo:([0-3])$/.exec(famille ?? "");
+  if (tranche) return live.filter((c) => fam(c) === "photo").filter((_, i) => i % 4 === Number(tranche[1]));
+  if (famille === "tout") return live.filter((c) => fam(c) !== "photo");
   // « large:0 » / « large:1 » : moitiés du large (un banc complet du large dépasse 150 s)
   const half = /^large:([01])$/.exec(famille ?? "");
   if (half) return live.filter((c) => fam(c) === "large").filter((_, i) => i % 2 === Number(half[1]));
@@ -301,6 +304,18 @@ export async function runNuit(d: Deps) {
     tokens: b.tokens + judgeTokens, detail: { banc: b.results, mine, upstream: b.upstream },
   }).eq("id", run.id);
   return { ok: true, run_id: run.id, n_cas: b.n_cas, n_vert: b.n_vert, n_rouge: b.n_rouge, mine, upstream: b.upstream, rouges: (b.results ?? []).filter((x: any) => !x.vert).map((x: any) => x.id) };
+}
+
+/** Banc PHOTO (28/10) : une tranche de 10 photos de trottinettes. Sans authentification (pg_cron), protégé par l'index unique
+ *  (run_day, version, slot) where kind='photos' : une tranche par jour ET par version déployée — un correctif redéployé peut être remesuré. */
+export async function runPhotos(d: Deps, slot: number) {
+  const today = new Date().toISOString().slice(0, 10);
+  const { data: run, error } = await d.db.from("skot_eval_runs").insert({ kind: "photos", run_day: today, slot, version: d.version }).select("id").single();
+  if (error) return { ok: false, error: /duplicate|unique/i.test(error.message) ? "ALREADY_DONE" : `run: ${error.message}` };
+  const admin = await resolveAdmin(d.db);
+  const b = await playCorpus(d, admin, null, `photo:${slot}`);
+  await d.db.from("skot_eval_runs").update({ finished_at: new Date().toISOString(), n_cas: b.n_cas, n_vert: b.n_vert, n_rouge: b.n_rouge, n_juge_rouge: b.n_juge_rouge, tokens: b.tokens, detail: { banc: b.results } }).eq("id", run.id);
+  return { ok: true, run_id: run.id, slot, n_cas: b.n_cas, n_vert: b.n_vert, n_rouge: b.n_rouge, upstream: b.upstream, rouges: b.results.filter((x) => !x.vert).map((x) => x.id) };
 }
 
 /** Nuit, 2e passage (job pg_cron skot-frais) : questions fraîches. Une fois par jour, garanti par index unique (kind='frais'). */

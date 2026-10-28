@@ -13,9 +13,9 @@ import { createClient, type SupabaseClient } from "https://esm.sh/@supabase/supa
 import { classifyCompat, unverifiedLabel, verifiedReason, partDelay } from "../_shared/compat_status.ts";
 import { CORPUS } from "./banc/cas.ts";
 import { NUDGES } from "./nudges.ts";
-import { runBanc, runNuit, runFresh, runFreshNuit, looksCut } from "./banc/banc.ts";
+import { runBanc, runNuit, runFresh, runFreshNuit, runPhotos, looksCut } from "./banc/banc.ts";
 
-const VERSION = "chat-skot@2026-10-28c";
+const VERSION = "chat-skot@2026-10-28d";
 const MODEL = "claude-haiku-5-5";
 // Tour avec photo : Sonnet, plus sûr que Haiku pour reconnaître un modèle (28/10 : Haiku 0 modèle sur 3 photos, marque seule).
 const MODEL_PHOTO = "claude-sonnet-5-5";
@@ -60,6 +60,7 @@ RÈGLES ABSOLUES
 - Trottinette entière : identifie la marque ET le modèle (logo, inscriptions sur la potence et le deck, forme du guidon, des phares, des garde-boue, taille des roues, étiquette de numéro de série), puis appelle find_scooter avec ton hypothèse. Si tu es sûr et qu'un seul modèle du catalogue colle : nomme-le (« d'après ta photo, c'est une … ») et enchaîne, avec parts_for_scooter si le client veut une pièce. Si deux versions se ressemblent : donne ta meilleure hypothèse ET le détail visible qui les sépare, et demande laquelle. Seule la marque est visible : dis-le et demande le modèle.
 - Pièce seule : dis quelle pièce c'est (pneu, chambre à air, plaquettes, disque, chargeur, prise, étrier…) et lis la cote si elle est lisible. Une cote lue reste « à confirmer » tant que l'outil ne la retrouve pas. Une pièce seule ne dit jamais la trottinette : demande le modèle pour vérifier la compatibilité.
 - Une photo ne prouve jamais une compatibilité : la règle 1 s'applique. Ne décris jamais une personne visible sur une photo.
+6 bis. Après une photo de trottinette, dès que le client confirme ton hypothèse ou donne son modèle (retrouvé avec find_scooter), appelle note_photo_model une fois, sans en parler. Si tu t'étais trompé, une phrase suffit (« ah, bien vu ! ») et tu enchaînes.
 7. Jamais de conseil de débridage, ni de vitesse au-delà de ce que permet la loi. Pas de diagnostic de panne sans source : tu ne dis pas « ça vient sans doute de… » ; tu donnes au plus les vérifications simples et sans risque (pression, serrage visible, usure visible) et tu proposes l'atelier.
 7 bis. Tu n'annonces jamais comme faite une action que tu ne fais pas dans cette réponse, et tu ne promets aucun suivi (« je vérifie et je reviens vers toi ») : transmettre à l'atelier = escalate_to_human, qui exige l'email. Sans email, dis « donne-moi ton email et je transmets ta question à l'atelier ».
 8. Avant escalate_to_human, demande l'email du client (sinon l'atelier ne peut pas lui répondre), sauf s'il est connecté.
@@ -161,6 +162,14 @@ const TOOLS = [
       email: { type: "string", description: "Email du client (obligatoire s'il n'est pas connecté)" },
       scooter_slug: { type: "string" },
     }, required: ["question"] },
+  },
+  {
+    name: "note_photo_model",
+    description: "Apprentissage photo. À appeler UNE fois dans une conversation où le client a envoyé une photo de sa trottinette, dès que son modèle est CONFIRMÉ (il a dit oui à ton hypothèse, ou il a donné son modèle exact, retrouvé avec find_scooter). Enregistre ce que tu avais reconnu sur la photo et le modèle réel : les erreurs servent à ne plus confondre ces modèles. Invisible pour le client.",
+    input_schema: { type: "object", properties: {
+      hypothese: { type: "string", description: "Ce que TU avais reconnu sur la photo, marque et modèle (ex. « Xiaomi Electric Scooter 4 Pro »), ou « marque seule : Xiaomi » si tu n'avais que la marque" },
+      confirme_slug: { type: "string", description: "Slug du modèle confirmé (retrouvé avec find_scooter)" },
+    }, required: ["hypothese", "confirme_slug"] },
   },
 ];
 
@@ -485,6 +494,23 @@ async function runTool(name: string, input: Record<string, any>, ctx: Ctx): Prom
         return { found: false };
       }
       return { found: true, commande: fmt(data) };
+    }
+    case "note_photo_model": {
+      const hyp = String(input.hypothese ?? "").trim().slice(0, 120);
+      const sc = await scooterBySlug(db, String(input.confirme_slug ?? ""));
+      if (!hyp || !sc) return { ok: false, error: "hypothèse ou modèle confirmé manquant" };
+      const okName = `${(sc as any).brands?.name ?? ""} ${(sc as any).name}`.trim();
+      const norm = (x: string) => x.toLowerCase().normalize("NFD").replace(/[^a-z0-9]+/g, "");
+      const same = norm(hyp).includes(norm(String((sc as any).name))) || norm(okName) === norm(hyp);
+      if (ctx.dryRun) return { ok: true, juste: same };
+      const [brand, ...rest] = hyp.replace(/^marque seule\s*:\s*/i, "").split(/\s+/);
+      const { error } = await db.from("scan_validations").insert({
+        user_id: ctx.userId, ai_brand: brand || "?", ai_model: rest.join(" ") || "(marque seule)", ai_confidence: "skot-photo",
+        matched_model_id: same ? (sc as any).id : null, is_validated: same, corrected_model_id: same ? null : (sc as any).id,
+        corrected_text: same ? null : `SKOT : « ${hyp} » → client : « ${okName} »`, validated_at: new Date().toISOString(),
+      });
+      if (error) { console.error("[chat-skot] note_photo_model", error.message); return { ok: false }; }
+      return { ok: true, juste: same };
     }
     case "escalate_to_human": {
       const question = String(input.question ?? "").trim().slice(0, 1000);
@@ -833,6 +859,19 @@ serve(async (req) => {
     if (!apiKey) return json({ ok: false, error: "NOT_CONFIGURED" }, 503);
     const r = await runFreshNuit({ db, apiKey, converse, callClaude, version: VERSION, judgeRules: SYSTEM_PROMPT }, 15);
     return json(r, r.ok ? 200 : (r.error === "ALREADY_DONE" ? 409 : 500));
+  }
+
+  // action "photos" (pg_cron ou appel manuel, sans authentification) : une tranche de 10 photos du banc photo.
+  // Garde-fou = index unique (run_day, version, slot) : une tranche par jour et par version. Sans slot → rotation par jour.
+  if (body?.action === "photos") {
+    if (!apiKey) return json({ ok: false, error: "NOT_CONFIGURED" }, 503);
+    const slot = Number.isInteger(body.slot) && body.slot >= 0 && body.slot <= 3 ? body.slot : Math.floor(Date.now() / 86_400_000) % 4;
+    const run = await runPhotos({ db, apiKey, converse, callClaude, version: VERSION, judgeRules: SYSTEM_PROMPT }, slot);
+    if (run.ok && body.notify) {
+      const r = run as any;
+      await notifySkotTelegram(`📷 <b>SKOT — banc photo</b> tranche ${r.slot} (${VERSION})\nReconnues : ${r.n_vert}/${r.n_cas}${r.rouges?.length ? `\nRatées : ${escapeHtml(r.rouges.join(", "))}` : ""}`);
+    }
+    return json(run, run.ok ? 200 : (run.error === "ALREADY_DONE" ? 409 : 500));
   }
 
   // action "nuit" (planification pg_cron, sans authentification) : une seule fois par jour, garantie par un index unique en base.
