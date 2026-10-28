@@ -83,6 +83,8 @@ const PartCard = ({ card }: { card: SkotCard }) => {
   );
 };
 
+const PHOTO_ENTRY_TEXT = "Voilà ma trottinette en photo : tu la reconnais ? Montre-moi ses pièces.";
+
 const SkotWidget = () => {
   const { pathname } = useLocation();
   const [enabled] = useState(() => skotEnabled());
@@ -103,6 +105,18 @@ const SkotWidget = () => {
     window.addEventListener("skot:open", onOpen);
     return () => window.removeEventListener("skot:open", onOpen);
   }, []);
+  // Entrée « Par photo » du site (28/10, idée Weebot) : ouvre SKOT ET l'appareil photo dans le même geste (le clic du client
+  // autorise l'ouverture du sélecteur de fichier : l'événement est synchrone). La photo choisie part toute seule.
+  const photoEntry = useRef(false);
+  const photoReady = enabled && !skotHiddenOn(pathname);
+  useEffect(() => {
+    if (!photoReady) return;
+    const onPhotoEntry = () => { photoEntry.current = true; setOpen(true); fileRef.current?.click(); };
+    window.addEventListener("skot:photo", onPhotoEntry);
+    (window as any).__skotPhoto = true;
+    window.dispatchEvent(new Event("skot:photo-ready"));
+    return () => { window.removeEventListener("skot:photo", onPhotoEntry); (window as any).__skotPhoto = false; window.dispatchEvent(new Event("skot:photo-ready")); };
+  }, [photoReady]);
   // SKOT ouvert une fois = plus d'intervention pendant cette visite.
   useEffect(() => { if (open) markNudgeUsed(); }, [open]);
   // Recherche sans résultat (Spotlight) → « Demander à SKOT » : la recherche devient la question.
@@ -129,13 +143,14 @@ const SkotWidget = () => {
 
   if (!enabled || skotHiddenOn(pathname)) return null;
 
-  const send = async (text: string, nudgeNow?: SkotNudgeKind) => {
+  const send = async (text: string, nudgeNow?: SkotNudgeKind, imgNow?: { media_type: string; data: string; preview: string }) => {
     const t = text.trim();
-    if ((!t && !photo) || busy) return;
+    const pic = imgNow ?? photo;
+    if ((!t && !pic) || busy) return;
     const nudge = nudgeNow ?? pendingNudge.current ?? undefined;
     pendingNudge.current = null;
     if (nudge) trackNudge(nudge, "replied");
-    const img = photo;
+    const img = pic;
     setMsgs((m) => [...m, { role: "user", text: t || "(photo)", image: img?.preview }]);
     setInput("");
     setPhoto(null);
@@ -168,7 +183,13 @@ const SkotWidget = () => {
 
   const onPhoto = async (f: File | undefined) => {
     if (!f) return;
-    try { setPhoto(await compressImage(f)); } catch { toast.error("Impossible de lire cette photo"); }
+    const auto = photoEntry.current;
+    photoEntry.current = false;
+    try {
+      const img = await compressImage(f);
+      // Entrée « Prends ta trott en photo » du site (28/10) : la photo part tout de suite, avec la question toute faite.
+      if (auto) void send(PHOTO_ENTRY_TEXT, undefined, img); else setPhoto(img);
+    } catch { toast.error("Impossible de lire cette photo"); }
     if (fileRef.current) fileRef.current.value = "";
   };
 
@@ -198,9 +219,10 @@ const SkotWidget = () => {
         </button>
       )}
 
+      {/* Toujours monté (28/10) : l'entrée « Par photo » du site doit pouvoir l'ouvrir avant que le panneau soit affiché. */}
+      <input ref={fileRef} id="skot-photo" type="file" accept="image/*" capture="environment" className="hidden" onChange={(e) => void onPhoto(e.target.files?.[0])} />
       {open && (
         <>
-          <input ref={fileRef} id="skot-photo" type="file" accept="image/*" capture="environment" className="hidden" onChange={(e) => void onPhoto(e.target.files?.[0])} />
           <SkotPanel
             msgs={msgs} busy={busy} input={input} setInput={setInput} onSubmit={onSubmit}
             send={(t) => void send(t)} onClose={() => setOpen(false)} onSearch={() => { setOpen(false); openSpotlight(); }}

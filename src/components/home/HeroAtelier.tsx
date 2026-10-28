@@ -9,7 +9,8 @@
 import { useEffect, useRef, useState, type RefObject } from "react";
 import { optimizedImage } from "@/lib/imageTransform"; // 25/10 poids 4G : plus d'originaux de 300-500 Ko sur l'accueil
 import { AnimatePresence, motion, useReducedMotion } from "framer-motion";
-import { ArrowRight, Bike, ChevronLeft, ChevronRight, Search as SearchIcon } from "lucide-react";
+import { ArrowRight, Bike, Camera, ChevronLeft, ChevronRight, Search as SearchIcon } from "lucide-react";
+import { useSkotPhoto } from "@/hooks/useSkotPhoto";
 import { getBrandColors } from "@/contexts/ScooterContext";
 import type { ScooterHero } from "@/hooks/useHeroScooters";
 import PlaqueTile from "@/components/scooter/PlaqueTile";
@@ -78,7 +79,9 @@ interface Props {
 const parts = (n: number | null) => `${n ?? 0} pièce${(n ?? 0) > 1 ? "s" : ""} compatible${(n ?? 0) > 1 ? "s" : ""}`;
 
 /* ---------- Titre + recherche ---------- */
-const Head = ({ s, big, query, onQuery, inputRef, onSubmit, onCatalogue, center, searching }: { s: Skin; big?: boolean; center?: boolean; searching?: boolean } & Pick<Props, "query" | "onQuery" | "inputRef" | "onSubmit" | "onCatalogue">) => (
+const Head = ({ s, big, query, onQuery, inputRef, onSubmit, onCatalogue, center, searching }: { s: Skin; big?: boolean; center?: boolean; searching?: boolean } & Pick<Props, "query" | "onQuery" | "inputRef" | "onSubmit" | "onCatalogue">) => {
+  const photo = useSkotPhoto();
+  return (
   <div className={center ? "text-center" : "text-left"}>
     <div className={`inline-flex items-center gap-2 mb-4 lg:mb-6`}>
       <span className="h-2.5 w-2.5" style={{ background: s.tone === "green" ? "#FFFFFF" : GREEN, clipPath: cut(3) }} />
@@ -121,16 +124,32 @@ const Head = ({ s, big, query, onQuery, inputRef, onSubmit, onCatalogue, center,
           style={{ fontFamily: FONT, color: CARBON, boxShadow: s.tone === "light" && s.ink === CARBON ? `inset 0 0 0 1px ${LINE}` : "none" }}
         />
       </label>
+      {/* 28/10 : « Prends ta trott en photo » → SKOT la reconnaît (idée Weebot « Par photo »). ?photo=0 = sans. */}
+      {photo.ready && (
+        <button type="button" onClick={photo.open} aria-label="Prends ta trottinette en photo, SKOT la reconnaît"
+          className="shrink-0 w-[52px] lg:w-16 h-[58px] lg:h-16 inline-flex items-center justify-center bg-white text-gray-600 hover:text-[#4A7C59]"
+          style={{ boxShadow: s.tone === "light" && s.ink === CARBON ? `inset 0 0 0 1px ${LINE}` : "none", borderLeft: `1px solid ${LINE}` }}>
+          <Camera className="w-6 h-6" strokeWidth={2.2} />
+        </button>
+      )}
       <button type="submit" className="shrink-0 h-[58px] lg:h-16 px-5 lg:px-7 inline-flex items-center gap-2 text-white text-sm font-extrabold uppercase tracking-wide" style={{ background: s.button, fontFamily: FONT }}>
         <span className="hidden sm:inline">Trouver</span>
         <ArrowRight className="w-5 h-5" strokeWidth={2.6} />
       </button>
     </form>
-    <button type="button" onClick={onCatalogue} className={`mt-2 min-h-[44px] text-sm font-bold underline underline-offset-4 ${searching ? "hidden lg:inline" : ""}`} style={{ fontFamily: FONT, color: s.sub }}>
-      Pas ton modèle ? Cherche la pièce ↓
-    </button>
+    <div className={`mt-2 flex flex-wrap items-center gap-x-5 ${center ? "justify-center" : ""} ${searching ? "hidden lg:flex" : ""}`}>
+      <button type="button" onClick={onCatalogue} className="min-h-[44px] text-sm font-bold underline underline-offset-4" style={{ fontFamily: FONT, color: s.sub }}>
+        Pas ton modèle ? Cherche la pièce ↓
+      </button>
+      {photo.ready && (
+        <button type="button" onClick={photo.open} className="min-h-[44px] inline-flex items-center gap-1.5 text-sm font-bold underline underline-offset-4" style={{ fontFamily: FONT, color: s.sub }}>
+          <Camera className="w-4 h-4" strokeWidth={2.4} aria-hidden />Ou prends-la en photo
+        </button>
+      )}
+    </div>
   </div>
-);
+  );
+};
 
 /* ---------- Carte : la trottinette sort du cadre ---------- */
 const PopCard = ({ sc, s, size, onSelect }: { sc: ScooterHero; s: Skin; size: "sm" | "lg"; onSelect: (slug: string) => void }) => {

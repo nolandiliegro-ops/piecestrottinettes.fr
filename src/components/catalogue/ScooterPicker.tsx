@@ -15,7 +15,8 @@
 import { useEffect, useMemo, useRef, useState } from "react";
 import { createPortal } from "react-dom";
 import { useQuery } from "@tanstack/react-query";
-import { Check, ChevronDown, ChevronRight, Search, X, MessageCircle, Plus } from "lucide-react";
+import { Camera, Check, ChevronDown, ChevronRight, Search, X, MessageCircle, Plus } from "lucide-react";
+import { useSkotPhoto } from "@/hooks/useSkotPhoto";
 import { supabase } from "@/integrations/supabase/client";
 import { useSelectedScooter, type ScooterOption, type SelectedScooter } from "@/contexts/ScooterContext";
 import { useGarageScooters } from "@/hooks/useGarageScooters";
@@ -85,6 +86,7 @@ export const PickerSheet = ({ open, onClose, onPick }: { open: boolean; onClose:
     return () => { clearTimeout(t); document.body.style.overflow = prev; window.removeEventListener("keydown", onKey); };
   }, [open]); // eslint-disable-line react-hooks/exhaustive-deps
 
+  const photo = useSkotPhoto();
   const garageOpts: ScooterOption[] = useMemo(() => garage.map((g) => {
     const m = g.scooter_model;
     return allScooters.find((s) => s.id === m.id) ?? { id: m.id, name: m.name, slug: m.slug, brandName: m.brand, imageUrl: m.image_url };
@@ -137,6 +139,18 @@ export const PickerSheet = ({ open, onClose, onPick }: { open: boolean; onClose:
               className="w-full h-full bg-transparent outline-none text-base text-carbon placeholder:text-gray-400" style={{ fontFamily: FONT }} />
             {q && <button type="button" onClick={() => setQ("")} aria-label="Effacer" className="w-9 h-9 flex items-center justify-center"><X className="w-4 h-4 text-gray-500" /></button>}
           </label>
+          {/* 28/10 : tu ne connais pas ton modèle → photo, SKOT la reconnaît (idée Weebot « Par photo »). */}
+          {photo.ready && (
+            <button type="button" onClick={() => { onClose(); photo.open(); }}
+              className="mt-2 w-full flex items-center gap-3 min-h-[52px] px-4 text-left bg-white" style={{ boxShadow: `inset 0 0 0 1px ${LINE}`, fontFamily: FONT }}>
+              <Camera className="w-5 h-5 shrink-0" style={{ color: GREEN }} strokeWidth={2.4} />
+              <span className="flex-1 min-w-0">
+                <span className="block text-base font-extrabold text-carbon leading-tight">Prends ta trott en photo</span>
+                <span className="block text-sm text-gray-500 leading-tight">Tu ne connais pas le modèle ? SKOT la reconnaît.</span>
+              </span>
+              <ChevronRight className="w-5 h-5 text-gray-300 shrink-0" />
+            </button>
+          )}
         </div>
         <div className="flex-1 overflow-y-auto px-2 pb-6" style={{ overscrollBehavior: "contain" }}>
           {q.trim() ? (
