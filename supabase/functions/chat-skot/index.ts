@@ -15,8 +15,10 @@ import { CORPUS } from "./banc/cas.ts";
 import { NUDGES } from "./nudges.ts";
 import { runBanc, runNuit, runFresh, runFreshNuit, looksCut } from "./banc/banc.ts";
 
-const VERSION = "chat-skot@2026-10-25q";
+const VERSION = "chat-skot@2026-10-28a";
 const MODEL = "claude-haiku-5-5";
+// Tour avec photo : Sonnet, plus sûr que Haiku pour reconnaître un modèle (28/10 : Haiku 0 modèle sur 3 photos, marque seule).
+const MODEL_PHOTO = "claude-sonnet-5-5";
 const MAX_TOOL_ROUNDS = 4;
 const HISTORY_LIMIT = 14;
 // Plafond journalier tous clients confondus ; au-delà, SKOT passe la main à l'atelier.
@@ -54,7 +56,10 @@ RÈGLES ABSOLUES
 3. Livraison, retours, code Rider : uniquement la FICHE BOUTIQUE ci-dessous. Garantie, remboursement, délai précis d'un colis, prix non affiché : jamais d'improvisation, atelier.
 4. Commande : client connecté → get_order_status sans rien demander. Sinon tu demandes le numéro (PT-XXXX) ET l'email de la commande, ensemble. Si ça ne trouve rien, tu dis « je ne trouve pas de commande avec ces infos », puis toujours la même suite, quel que soit le cas : « Vérifie le numéro et l'email de ta confirmation de commande, ou je transmets ta demande à l'atelier. » Tu ne dis jamais lequel des deux est faux ni si la commande existe.
 5. Tu ne passes, n'annules, ne modifies et ne rembourses aucune commande. Tu montres la pièce (elle s'affiche en carte avec un bouton) ; c'est le client qui l'ajoute au panier.
-6. Photo : tu peux lire une cote sur une photo (flanc de pneu, prise de charge, étrier). Une cote lue reste « à confirmer » tant que l'outil ne la retrouve pas dans le catalogue. Ne décris jamais une personne visible sur une photo.
+6. Photo.
+- Trottinette entière : identifie la marque ET le modèle (logo, inscriptions sur la potence et le deck, forme du guidon, des phares, des garde-boue, taille des roues, étiquette de numéro de série), puis appelle find_scooter avec ton hypothèse. Si tu es sûr et qu'un seul modèle du catalogue colle : nomme-le (« d'après ta photo, c'est une … ») et enchaîne, avec parts_for_scooter si le client veut une pièce. Si deux versions se ressemblent : donne ta meilleure hypothèse ET le détail visible qui les sépare, et demande laquelle. Seule la marque est visible : dis-le et demande le modèle.
+- Pièce seule : dis quelle pièce c'est (pneu, chambre à air, plaquettes, disque, chargeur, prise, étrier…) et lis la cote si elle est lisible. Une cote lue reste « à confirmer » tant que l'outil ne la retrouve pas. Une pièce seule ne dit jamais la trottinette : demande le modèle pour vérifier la compatibilité.
+- Une photo ne prouve jamais une compatibilité : la règle 1 s'applique. Ne décris jamais une personne visible sur une photo.
 7. Jamais de conseil de débridage, ni de vitesse au-delà de ce que permet la loi. Pas de diagnostic de panne sans source : tu ne dis pas « ça vient sans doute de… » ; tu donnes au plus les vérifications simples et sans risque (pression, serrage visible, usure visible) et tu proposes l'atelier.
 7 bis. Tu n'annonces jamais comme faite une action que tu ne fais pas dans cette réponse, et tu ne promets aucun suivi (« je vérifie et je reviens vers toi ») : transmettre à l'atelier = escalate_to_human, qui exige l'email. Sans email, dis « donne-moi ton email et je transmets ta question à l'atelier ».
 8. Avant escalate_to_human, demande l'email du client (sinon l'atelier ne peut pas lui répondre), sauf s'il est connecté.
@@ -526,6 +531,23 @@ export async function notifySkotTelegram(html: string) {
 // Le texte est fixé ICI (jamais celui du navigateur) : le widget n'envoie que la clé. Règles : 1 par visite, jamais au panier ni au paiement.
 const NUDGE_EVENTS = ["shown", "opened", "closed", "replied"];
 
+// Confusions corrigées par l'admin dans le scanner (scan_validations) : rappelées au modèle quand une photo arrive.
+async function knownConfusions(db: SupabaseClient): Promise<string> {
+  try {
+    const { data } = await db.from("scan_validations")
+      .select("ai_brand, ai_model, scooter_models!scan_validations_corrected_model_id_fkey(name, brands!scooter_models_brand_id_fkey(name))")
+      .not("corrected_model_id", "is", null).order("created_at", { ascending: false }).limit(30);
+    const seen = new Set<string>(); const out: string[] = [];
+    for (const r of (data ?? []) as any[]) {
+      const ai = `${r.ai_brand ?? ""} ${r.ai_model ?? ""}`.trim(); const ok = r.scooter_models ? `${r.scooter_models.brands?.name ?? ""} ${r.scooter_models.name}`.trim() : "";
+      if (!ai || !ok || ai.toLowerCase() === ok.toLowerCase() || seen.has(ai + ok)) continue;
+      seen.add(ai + ok); out.push(`- « ${ai} » a déjà été confondue avec « ${ok} » : regarde bien.`);
+      if (out.length >= 8) break;
+    }
+    return out.length ? `Confusions déjà vues sur des photos :\n${out.join("\n")}` : "";
+  } catch (_) { return ""; }
+}
+
 async function pageContext(db: SupabaseClient, page: { type?: string; slug?: string } | undefined, userId: string | null) {
   const lines: string[] = [];
   if (page?.type === "piece" && page.slug) {
@@ -609,7 +631,7 @@ export interface ConverseOutput {
 
 export async function converse(inp: ConverseInput): Promise<ConverseOutput> {
   const ctx: Ctx = { db: inp.db, userId: inp.userId, userEmail: inp.userEmail, ipHash: inp.ipHash, ip: inp.ip, cards: [], orderFailed: false, escalated: false, dryRun: inp.dryRun };
-  const contextText = [await pageContext(inp.db, inp.page, inp.userId), inp.nudge && NUDGES[inp.nudge] ? `C'est TOI qui as ouvert la conversation, de toi-même, en disant au client : « ${NUDGES[inp.nudge]} ». Son message y répond : enchaîne directement, sans te représenter.` : ""].filter(Boolean).join("\n");
+  const contextText = [await pageContext(inp.db, inp.page, inp.userId), inp.image?.data ? await knownConfusions(inp.db) : "", inp.nudge && NUDGES[inp.nudge] ? `C'est TOI qui as ouvert la conversation, de toi-même, en disant au client : « ${NUDGES[inp.nudge]} ». Son message y répond : enchaîne directement, sans te représenter.` : ""].filter(Boolean).join("\n");
   const messages: any[] = inp.history.map((m) => ({ role: m.role, content: m.content }));
   while (messages.length && messages[0].role !== "user") messages.shift();
   const userContent: any[] = [];
@@ -621,7 +643,7 @@ export async function converse(inp: ConverseInput): Promise<ConverseOutput> {
   try {
     for (let round = 0; round <= MAX_TOOL_ROUNDS; round++) {
       const r = await callClaude(inp.apiKey, {
-        model: MODEL,
+        model: inp.image?.data ? MODEL_PHOTO : MODEL,
         // Haiku 5.5 réfléchit par défaut (thinking adaptatif, effort medium) et ces tokens comptent dans max_tokens :
         // à 1000, la réflexion mangeait le budget → réponses coupées (banc 24/10, stop_reason max_tokens). La longueur
         // visible reste tenue par la règle 12 (120 mots).
@@ -894,7 +916,7 @@ serve(async (req) => {
     conversation_id: conversationId, role: "assistant", content: maskOrder(maskEmail(r.reply)).slice(0, 6000),
     tool_calls: r.toolLog.length ? r.toolLog : null, ip_hash: ipHash, user_id: userId,
     tokens_in: r.tokensIn + r.cacheRead + r.cacheWrite, tokens_out: r.tokensOut, tokens_cache_read: r.cacheRead, tokens_cache_write: r.cacheWrite,
-    model: MODEL, escalated: r.escalated,
+    model: image?.data ? MODEL_PHOTO : MODEL, escalated: r.escalated,
   }).select("id").single();
 
   return json({ ok: true, conversation_id: conversationId, message_id: aRow?.id ?? null, reply: r.reply, cards: r.cards, escalated: r.escalated });
