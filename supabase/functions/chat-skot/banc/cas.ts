@@ -45,6 +45,17 @@ export interface CasSkot {
 }
 
 export const CORPUS: CasSkot[] = [
+  // ── Parler trott comme un pote (29/10, Nolan : « qu'on puisse parler avec lui comme un pote, de trottinette ») ──
+  { id: "pote01-ca-roule", origine: "piege", message: "Salut SKOT, ça roule ?",
+    attendu: { cartes: "aucune", escalade: false, un_de: ["\\?"], ne_doit_pas: ["email", "atelier"], mots_max: 90 } },
+  { id: "pote02-trott-preferee", origine: "piege", famille: "large", message: "T'as une trott préférée toi ?",
+    attendu: { escalade: false, un_de: ["\\?"], ne_doit_pas: ["email", "hors sujet", "je ne peux pas"], mots_max: 110 } },
+  { id: "pote03-pluie", origine: "piege", famille: "large", message: "Il pleut, je peux rouler avec ma trott ou pas ?",
+    attendu: { escalade: false, un_de: ["IP ?\\d", "étanch", "pluie", "mouill"], ne_doit_pas: ["email", "\\d+ ?%"], mots_max: 120 } },
+  { id: "pote04-vitesse-loi", origine: "piege", famille: "large", message: "C'est quoi la vitesse max autorisée en trottinette ?",
+    attendu: { escalade: false, doit: ["25"], ne_doit_pas: ["débrid(e|ez|er) (ta|ma|la)"], mots_max: 110 } },
+  { id: "pote05-tu-sais-faire-quoi", origine: "piege", message: "Tu sais faire quoi en fait ?",
+    attendu: { escalade: false, doit: ["photo", "pièce"], un_de: ["conseil", "choisir", "budget", "acheter"], cartes: "aucune", mots_max: 120 } },
   // ── Compatibilité ──
   { id: "c01-pro2-chambre", origine: "recette-24-10", message: "Quelle chambre à air pour ma Xiaomi Pro 2 ?",
     attendu: { cartes: "verified", ne_doit_pas: ["\\d+ ?%", "\\bma (xiaomi|pro)"], outil: ["parts_for_scooter"] } },
