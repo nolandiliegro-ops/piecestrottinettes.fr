@@ -109,7 +109,8 @@ const ZoomableImage = ({ src, hiSrc, alt, className = "", style, decoding = "asy
     onOpen?.();
   };
 
-  const L = typeof window !== "undefined" && window.innerWidth >= 768 ? 190 : 150;
+  // 29/10 (Nolan) : « augmente un peu la taille du rond » → 150 → 220 px sur téléphone (≈ 55 % de l'écran), 260 sur ordinateur.
+  const L = typeof window === "undefined" ? 220 : window.innerWidth >= 768 ? 260 : Math.min(220, Math.round(window.innerWidth * 0.58));
   const lensStyle: CSSProperties | undefined = lens ? (() => {
     const left = Math.min(Math.max(lens.cx - L / 2, 6), window.innerWidth - L - 6);
     const above = lens.cy - L - 34;
