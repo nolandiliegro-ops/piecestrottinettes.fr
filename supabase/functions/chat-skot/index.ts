@@ -15,7 +15,7 @@ import { CORPUS } from "./banc/cas.ts";
 import { NUDGES } from "./nudges.ts";
 import { runBanc, runNuit, runFresh, runFreshNuit, runPhotos, looksCut } from "./banc/banc.ts";
 
-const VERSION = "chat-skot@2026-10-28f";
+const VERSION = "chat-skot@2026-10-28g";
 const MODEL = "claude-haiku-5-5";
 // Tour avec photo : Sonnet, plus sûr que Haiku pour reconnaître un modèle (28/10 : Haiku 0 modèle sur 3 photos, marque seule).
 const MODEL_PHOTO = "claude-sonnet-5-5";
@@ -60,6 +60,7 @@ RÈGLES ABSOLUES
 6. Photo.
 - Trottinette entière : cherche d'abord le NOM écrit (potence, deck, garde-boue, étiquette du numéro de série).
   · Nom du modèle lisible : dis où tu le lis (« je lis … sur la potence »), find_scooter, et enchaîne (parts_for_scooter si le client demande une pièce).
+    Si find_scooter renvoie aussi des versions du même nom avec un suffixe (X, Pro, Max, Plus, Lite, 2…), le suffixe est souvent écrit en petit ou ailleurs : liste ces versions et demande laquelle avant toute pièce (banc 28/10 : « ZERO 10 » lu sur une Zero 10X).
   · Nom illisible, modèle reconnu à sa forme seulement : c'est une HYPOTHÈSE, beaucoup de modèles se ressemblent (Xiaomi M365 / 1S / Essential / Lite, Zero 10 / 10X, Inmotion RS / Climber…). Dis « ça ressemble à une … », appelle find_scooter, puis pose UNE question fermée (« c'est bien ta … ? ») ; aucune pièce listée avant sa réponse.
   · Plusieurs versions proches au catalogue : liste-les et demande laquelle (donne le détail qui les sépare si tu en vois un).
   · Rien de lisible ni de reconnaissable : dis-le, et demande la marque et le modèle.
@@ -688,7 +689,8 @@ export async function converse(inp: ConverseInput): Promise<ConverseOutput> {
           { type: "text", text: SYSTEM_PROMPT, cache_control: { type: "ephemeral" } },
           { type: "text", text: `CONTEXTE DE CETTE VISITE (lu en base) :\n${contextText}\nDate : ${new Date().toISOString().slice(0, 10)}.` },
         ],
-        tools: TOOLS,
+        // Tour avec photo : pas d'outil d'apprentissage (il ne sert qu'au tour où le client confirme son modèle).
+        tools: inp.image?.data ? TOOLS.filter((t) => t.name !== "note_photo_model") : TOOLS,
         ...(round >= MAX_TOOL_ROUNDS ? { tool_choice: { type: "none" } } : {}),
         messages,
       });
@@ -749,7 +751,7 @@ export async function converse(inp: ConverseInput): Promise<ConverseOutput> {
           { type: "text", text: SYSTEM_PROMPT, cache_control: { type: "ephemeral" } },
           { type: "text", text: `CONTEXTE DE CETTE VISITE (lu en base) :\n${contextText}\nDate : ${new Date().toISOString().slice(0, 10)}.` },
         ],
-        tools: TOOLS, tool_choice: { type: "none" }, messages,
+        tools: inp.image?.data ? TOOLS.filter((t) => t.name !== "note_photo_model") : TOOLS, tool_choice: { type: "none" }, messages,
       });
       if (r.ok) {
         o.tokensIn += r.out.usage?.input_tokens ?? 0; o.tokensOut += r.out.usage?.output_tokens ?? 0;
