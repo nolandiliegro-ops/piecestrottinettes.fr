@@ -4,6 +4,7 @@
  * « ? » sur le badge garage quand on n'est pas inscrit, « garage » pas compris comme un profil.
  * 1 Repassé · 2 Logo au centre · 3 Deux étages · 4 Tout dans la recherche · 5 Barre noire
  */
+import { visualSet, type VisualSet } from "@/config/homeVisuals";
 import { useState } from "react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { ChevronDown, Menu, Search, ShoppingCart, UserRound, X, CircleDot, Tag, BookOpen, Megaphone } from "lucide-react";
@@ -320,7 +321,7 @@ const HeaderProposals = ({ variant }: { variant: BarreVariant }) => {
       <div className="grid grid-cols-2 gap-2">
         {LINKS.map((l) => telLink(l, "relative block h-[104px] overflow-hidden", (
           <>
-            <img src={TEL_IMG[l.href]} alt="" className="absolute inset-0 w-full h-full object-cover" />
+            <img src={visualSet().menu[l.href as keyof VisualSet["menu"]] ?? TEL_IMG[l.href]} alt="" className="absolute inset-0 w-full h-full object-cover" />
             <span className="absolute inset-0" style={{ background: on(l.href) ? "linear-gradient(180deg, rgba(74,124,89,0.25), rgba(74,124,89,0.9))" : "linear-gradient(180deg, rgba(26,26,26,0.05), rgba(26,26,26,0.8))" }} />
             <span className="absolute left-2.5 right-2 bottom-2 text-white text-[15px] uppercase leading-tight" style={{ fontFamily: UNB, fontWeight: 900, fontStyle: "italic" }}>{l.label}</span>
           </>

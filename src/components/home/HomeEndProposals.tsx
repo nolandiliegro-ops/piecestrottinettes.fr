@@ -3,6 +3,7 @@
    Propositions derrière ?fin=1..5 (remplacent Favoris + bande de réassurance) ; sans paramètre : inchangé.
    Promesses reprises telles qu'affichées aujourd'hui (Sous 24h, Méca pro, Retour 14j) + faits de L'Atelier
    (réponse d'un réparateur sous 48 h, vidéos vérifiées, guides) — rien d'inventé. */
+import { visualSet } from "@/config/homeVisuals";
 import { Link } from "react-router-dom";
 import { ArrowRight, BookOpen, MessageCircleQuestion, PlayCircle, RotateCcw, Truck, Wrench } from "lucide-react";
 import FavoritesSection from "@/components/home/FavoritesSection";
@@ -55,7 +56,7 @@ const PromiseTiles = ({ dark = false }: { dark?: boolean }) => (
 );
 const DoorCards = () => (
   <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
-    {DOORS.map(({ to, icon: I, t, d, img }) => (
+    {DOORS.map(({ to, icon: I, t, d, img: img0 }, k) => { const img = [visualSet().doors.question, visualSet().doors.videos, visualSet().doors.guides][k] ?? img0; return (
       <Link key={t} to={to} className="group bg-white flex flex-col" style={{ clipPath: cut(14), boxShadow: `inset 0 0 0 1px ${LINE}` }}>
         <div className="h-36 lg:h-40 overflow-hidden"><img src={img} alt="" loading="lazy" className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105" /></div>
         <div className="p-4">
@@ -63,7 +64,7 @@ const DoorCards = () => (
           <p className="mt-1 text-sm text-[#4B5563]" style={{ fontFamily: FONT }}>{d}</p>
         </div>
       </Link>
-    ))}
+    ); })}
   </div>
 );
 const AtelierCta = ({ light = false }: { light?: boolean }) => (
