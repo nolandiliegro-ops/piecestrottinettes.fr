@@ -10970,6 +10970,7 @@ export type Database = {
           n_rouge: number | null
           n_vert: number | null
           run_day: string | null
+          slot: number | null
           started_at: string
           tokens: number | null
           version: string | null
@@ -10984,6 +10985,7 @@ export type Database = {
           n_rouge?: number | null
           n_vert?: number | null
           run_day?: string | null
+          slot?: number | null
           started_at?: string
           tokens?: number | null
           version?: string | null
@@ -10998,6 +11000,7 @@ export type Database = {
           n_rouge?: number | null
           n_vert?: number | null
           run_day?: string | null
+          slot?: number | null
           started_at?: string
           tokens?: number | null
           version?: string | null
