@@ -11045,6 +11045,8 @@ export type Database = {
       }
       skot_messages: {
         Row: {
+          comment: string | null
+          comment_at: string | null
           content: string
           conversation_id: string
           created_at: string
@@ -11058,6 +11060,7 @@ export type Database = {
           order_lookup_failed: boolean
           page_slug: string | null
           page_type: string | null
+          reaction: string | null
           role: string
           tokens_cache_read: number | null
           tokens_cache_write: number | null
@@ -11067,6 +11070,8 @@ export type Database = {
           user_id: string | null
         }
         Insert: {
+          comment?: string | null
+          comment_at?: string | null
           content: string
           conversation_id: string
           created_at?: string
@@ -11080,6 +11085,7 @@ export type Database = {
           order_lookup_failed?: boolean
           page_slug?: string | null
           page_type?: string | null
+          reaction?: string | null
           role: string
           tokens_cache_read?: number | null
           tokens_cache_write?: number | null
@@ -11089,6 +11095,8 @@ export type Database = {
           user_id?: string | null
         }
         Update: {
+          comment?: string | null
+          comment_at?: string | null
           content?: string
           conversation_id?: string
           created_at?: string
@@ -11102,6 +11110,7 @@ export type Database = {
           order_lookup_failed?: boolean
           page_slug?: string | null
           page_type?: string | null
+          reaction?: string | null
           role?: string
           tokens_cache_read?: number | null
           tokens_cache_write?: number | null
