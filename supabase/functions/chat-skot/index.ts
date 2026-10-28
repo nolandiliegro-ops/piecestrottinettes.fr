@@ -15,7 +15,7 @@ import { CORPUS } from "./banc/cas.ts";
 import { NUDGES } from "./nudges.ts";
 import { runBanc, runNuit, runFresh, runFreshNuit, looksCut } from "./banc/banc.ts";
 
-const VERSION = "chat-skot@2026-10-28a";
+const VERSION = "chat-skot@2026-10-28b";
 const MODEL = "claude-haiku-5-5";
 // Tour avec photo : Sonnet, plus sûr que Haiku pour reconnaître un modèle (28/10 : Haiku 0 modèle sur 3 photos, marque seule).
 const MODEL_PHOTO = "claude-sonnet-5-5";
@@ -698,6 +698,30 @@ export async function converse(inp: ConverseInput): Promise<ConverseOutput> {
   } catch (e) {
     console.error("[chat-skot] loop", e);
     return { ...o, ok: false, error: "ERROR", reply: "Petite crevaison de mon côté… Réessaie dans un instant." };
+  }
+  // Rattrapage (28/10, photo Xiaomi 4 Pro) : après 6 outils, le dernier tour n'a rendu AUCUN texte alors que le modèle
+  // avait trouvé la trottinette → « Je sèche » affiché. On redemande une seule fois une réponse, sans outil, avec ce qui a été trouvé.
+  if (!o.reply && o.toolLog.length) {
+    try {
+      while (messages.length && messages[messages.length - 1].role === "assistant") messages.pop();
+      const ask = { type: "text", text: "(Consigne interne : réponds maintenant au client, en respectant toutes tes règles, avec ce que les outils ont déjà trouvé. Aucun nouvel outil.)" };
+      const lastMsg = messages[messages.length - 1];
+      if (lastMsg?.role === "user" && Array.isArray(lastMsg.content)) lastMsg.content.push(ask); else messages.push({ role: "user", content: [ask] });
+      const r = await callClaude(inp.apiKey, {
+        model: inp.image?.data ? MODEL_PHOTO : MODEL, max_tokens: 3000,
+        system: [
+          { type: "text", text: SYSTEM_PROMPT, cache_control: { type: "ephemeral" } },
+          { type: "text", text: `CONTEXTE DE CETTE VISITE (lu en base) :\n${contextText}\nDate : ${new Date().toISOString().slice(0, 10)}.` },
+        ],
+        tools: TOOLS, tool_choice: { type: "none" }, messages,
+      });
+      if (r.ok) {
+        o.tokensIn += r.out.usage?.input_tokens ?? 0; o.tokensOut += r.out.usage?.output_tokens ?? 0;
+        o.cacheRead += r.out.usage?.cache_read_input_tokens ?? 0; o.cacheWrite += r.out.usage?.cache_creation_input_tokens ?? 0;
+        o.reply = (r.out.content ?? []).filter((c: any) => c.type === "text").map((c: any) => c.text).join("\n").trim()
+          .replace(/\*\*(.+?)\*\*/g, "$1").replace(/^#{1,6}\s+/gm, "").replace(/\s+à\s*100\s*%/giu, "");
+      }
+    } catch (e) { console.error("[chat-skot] rattrapage", e); }
   }
   if (!o.reply) o.reply = "Je sèche sur celle-là ! Je peux transmettre ta question à l'atelier si tu me laisses ton email.";
 
