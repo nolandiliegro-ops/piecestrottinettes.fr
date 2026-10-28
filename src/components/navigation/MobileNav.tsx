@@ -8,6 +8,7 @@ import { useSpotlight } from '@/contexts/SpotlightContext';
 import { cn } from '@/lib/utils';
 import { useState } from 'react';
 import MobileNavProposals, { readBarreBasVariant } from './MobileNavProposals';
+import { useIosViewportFix } from '@/hooks/useIosViewportFix';
 
 interface NavItem {
   icon: React.ElementType;
@@ -277,6 +278,7 @@ const MobileNavLegacy = () => {
 // 24/10 : ?barrebas=1..5 = propositions de nouvelle barre ; sans paramètre = barre actuelle.
 const MobileNav = () => {
   const [variant] = useState(readBarreBasVariant);
+  useIosViewportFix(); // 29/10 : barre du bas décrochée sur iPhone après fermeture du clavier (bug Safari iOS 26)
   // 25/10 : le Comptoir Pro (/pro) a son propre panier collé en bas, sans la barre du site.
   const { pathname } = useLocation();
   if (pathname === '/pro' || pathname.startsWith('/pro/')) return null;
