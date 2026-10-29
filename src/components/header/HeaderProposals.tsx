@@ -43,7 +43,7 @@ const readTelVariant = (): number => {
 };
 const UNB = "'Unbounded', sans-serif";
 // Photos choisies le 24/10 : la pièce iconique, une trottinette en situation, une grande marque, et la photo du haut de L'Atelier.
-const TEL_IMG: Record<string, string> = { "/catalogue": "/categories/plaquettes-a.webp", "/trottinettes": "/brand-heroes/navee.webp", "/marques": "/brand-heroes/dualtron.webp", "/atelier": "/brand-heroes/xiaomi.webp" };
+const TEL_IMG: Record<string, string> = { "/catalogue": "/visuels/p5-grille.webp", "/trottinettes": "/brand-heroes/navee.webp", "/marques": "/brand-heroes/dualtron.webp", "/atelier": "/visuels/a1-atelier.webp" };
 
 /** 24/10 : menu de gauche (barre « Logo au centre ») : défaut = 3 « Pièces déroulant » en italique ; ?menu=1..5 = propositions, ?menu=0 = ancien. */
 const readMenuVariant = (): number => {

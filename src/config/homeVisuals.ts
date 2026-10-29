@@ -2,7 +2,7 @@
  * 29/10/2026 (Nolan) — visuels du menu téléphone (4 tuiles) et des 3 portes « L'Atelier » en bas de l'accueil.
  * Défaut constaté : 3 photos sur 7 en double (plaquettes, Dualtron, Navee) et des plaquettes jugées trop grosses.
  * 5 jeux proposés, sans aucune répétition à l'intérieur d'un jeu, à comparer avec ?visuels=1..5 (0 = actuel).
- * Sans paramètre : jeu ACTUEL inchangé tant que Nolan n'a pas choisi.
+ * Choix de Nolan le 29/10 : jeu 1 « Catalogue », en ligne par défaut.
  */
 export type VisualSet = {
   menu: Record<"/catalogue" | "/trottinettes" | "/marques" | "/atelier", string>;
@@ -27,7 +27,7 @@ export const VISUAL_SETS: Record<number, VisualSet> = {
 };
 
 /** Jeu choisi par ?visuels=N (0..5), sinon le jeu en ligne. */
-export const DEFAULT_VISUAL_SET = 0;
+export const DEFAULT_VISUAL_SET = 1; // 29/10 : « Catalogue » validé par Nolan, en ligne pour tous (?visuels=0 = ancien jeu)
 export const visualSet = (): VisualSet => {
   try {
     const n = Number(new URLSearchParams(window.location.search).get("visuels"));

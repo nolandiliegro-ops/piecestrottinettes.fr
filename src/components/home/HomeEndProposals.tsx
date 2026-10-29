@@ -33,9 +33,9 @@ const PROMISES = [
   { icon: RotateCcw, t: "Retour 14j", d: "Pas la bonne pièce ? Tu la renvoies." },
 ];
 const DOORS = [
-  { to: "/atelier#question", icon: MessageCircleQuestion, t: "Pose ta question", d: "Un réparateur te répond sous 48 h.", img: "/categories/plaquettes-a.webp" },
-  { to: "/atelier/videos", icon: PlayCircle, t: "Vidéos", d: "Les meilleurs tests, rangés par trottinette.", img: "/brand-heroes/dualtron.webp" },
-  { to: "/blog", icon: BookOpen, t: "Guides", d: "Choisir, comparer, entretenir.", img: "/brand-heroes/navee.webp" },
+  { to: "/atelier#question", icon: MessageCircleQuestion, t: "Pose ta question", d: "Un réparateur te répond sous 48 h.", img: "/visuels/q1-mecano.webp" },
+  { to: "/atelier/videos", icon: PlayCircle, t: "Vidéos", d: "Les meilleurs tests, rangés par trottinette.", img: "/visuels/v1-tournage.webp" },
+  { to: "/blog", icon: BookOpen, t: "Guides", d: "Choisir, comparer, entretenir.", img: "/visuels/g1-comparer.webp" },
 ];
 const H2 = ({ children, light = false }: { children: React.ReactNode; light?: boolean }) => (
   <h2 className="text-[28px] lg:text-[40px] uppercase leading-[0.95]" style={{ fontFamily: UNB, fontWeight: 900, fontStyle: "italic", letterSpacing: "-0.03em", color: light ? "#fff" : CARBON }}>{children}</h2>
