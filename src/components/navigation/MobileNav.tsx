@@ -75,6 +75,7 @@ const MobileNavLegacy = () => {
         "border-t-[0.5px] border-white/40"
       )}
       style={{
+        bottom: 'calc(0px - var(--pt-vv-gap, 0px))', // 29/10 : suit le bas visible (useIosViewportFix)
         paddingBottom: 'max(env(safe-area-inset-bottom), 8px)',
         boxShadow: `0 -4px 30px ${brandGlow}`,
       }}

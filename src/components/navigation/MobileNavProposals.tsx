@@ -78,8 +78,10 @@ const Shell = ({ children, floating = false, dark = false }: { children: React.R
     className={floating ? "fixed z-50 left-3 right-3 md:hidden" : "fixed z-50 bottom-0 left-0 right-0 md:hidden"}
     style={
       floating
-        ? { bottom: "calc(max(env(safe-area-inset-bottom), 8px) + 6px)" }
+        ? { bottom: "calc(max(env(safe-area-inset-bottom), 8px) + 6px - var(--pt-vv-gap, 0px))" }
         : {
+            // 29/10 : suit le bas réellement visible quand la barre de Chrome/Safari se replie (useIosViewportFix).
+            bottom: "calc(0px - var(--pt-vv-gap, 0px))",
             paddingBottom: "max(env(safe-area-inset-bottom), 6px)",
             background: dark ? CARBON : STONE,
             borderTop: dark ? "none" : "1px solid rgba(26,26,26,0.12)",
@@ -92,6 +94,9 @@ const Shell = ({ children, floating = false, dark = false }: { children: React.R
     }
   >
     {children}
+    {/* 29/10 : filet de sécurité — si Chrome/Safari iPhone laisse quand même un écart sous la barre, il est rempli par
+        la couleur de la barre (le contenu ne se voit plus dessous). Hors écran quand tout va bien. */}
+    {!floating && <span aria-hidden className="absolute left-0 right-0 top-full h-[240px] pointer-events-auto" style={{ background: dark ? CARBON : STONE }} />}
   </nav>
   );
 };

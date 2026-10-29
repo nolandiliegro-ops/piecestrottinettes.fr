@@ -3,6 +3,10 @@
 // au milieu de l'écran, le contenu défile en dessous. Capture de Nolan du 29/10, barre décrochée sur l'accueil.
 // Contournement : quand le clavier se referme (plus aucun champ actif, zone visible qui regrandit), on force Safari à
 // recalculer sa mise en page par un défilement d'1 px aller-retour. Sans effet ailleurs (iPhone/iPad seulement).
+// 29/10 (2e capture de Nolan, Chrome iPhone) : quand la barre du navigateur (« Posez une question ») se replie au
+// défilement, la zone visible grandit mais Chrome laisse les éléments `fixed; bottom: 0` à l'ancienne hauteur : la
+// barre du site flotte et le contenu passe dessous. On mesure l'écart (bas de la zone visible − bas de la mise en page)
+// et on l'expose en variable CSS --pt-vv-gap ; la barre du bas descend d'autant (bottom: -gap). Écart nul ailleurs.
 import { useEffect } from "react";
 
 const isIOS = () =>
@@ -34,11 +38,33 @@ export function useIosViewportFix() {
       if (h - last > 120) recalcule(); // le clavier vient de se refermer (la zone visible regrandit d'un coup)
       last = h;
     };
+    // Écart entre le bas réellement visible et le bas de la mise en page (0 quand tout va bien).
+    let raf = 0;
+    const root = document.documentElement;
+    const mesure = () => {
+      raf = 0;
+      if (!vv || vv.scale > 1.01) { root.style.setProperty("--pt-vv-gap", "0px"); return; } // zoom au doigt : on ne touche à rien
+      const gap = Math.round(vv.offsetTop + vv.height - root.clientHeight);
+      root.style.setProperty("--pt-vv-gap", `${gap > 2 && gap < 220 ? gap : 0}px`);
+    };
+    const planifie = () => { if (!raf) raf = requestAnimationFrame(mesure); };
+    mesure();
+    vv?.addEventListener("scroll", planifie);
+    vv?.addEventListener("resize", planifie);
+    window.addEventListener("scroll", planifie, { passive: true });
+    window.addEventListener("resize", planifie);
+
     document.addEventListener("focusout", recalcule);
     vv?.addEventListener("resize", onResize);
     window.addEventListener("orientationchange", recalcule);
     return () => {
       clearTimeout(t);
+      cancelAnimationFrame(raf);
+      vv?.removeEventListener("scroll", planifie);
+      vv?.removeEventListener("resize", planifie);
+      window.removeEventListener("scroll", planifie);
+      window.removeEventListener("resize", planifie);
+      root.style.removeProperty("--pt-vv-gap");
       document.removeEventListener("focusout", recalcule);
       vv?.removeEventListener("resize", onResize);
       window.removeEventListener("orientationchange", recalcule);
