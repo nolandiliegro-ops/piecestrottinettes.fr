@@ -64,3 +64,4 @@ export const openPrelaunch = () => {
 // 29/10 loupe 220 px
 // 29/10 visuels menu
 // 29/10 visuels tour 2
+// 29/10 visuels catalogue en ligne
