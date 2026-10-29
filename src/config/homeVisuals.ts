@@ -7,6 +7,8 @@
 export type VisualSet = {
   menu: Record<"/catalogue" | "/trottinettes" | "/marques" | "/atelier", string>;
   doors: { question: string; videos: string; guides: string };
+  /** Logo de la marque photographiée sur la tuile Marques (plaque blanche en haut à droite). */
+  marqueLogo?: string;
 };
 
 const V = "/visuels/";
@@ -15,11 +17,13 @@ const MENU_BASE = { "/trottinettes": `${BH}navee.webp`, "/marques": `${BH}dualtr
 
 export const VISUAL_SETS: Record<number, VisualSet> = {
   0: { menu: { "/catalogue": "/categories/plaquettes-a.webp", ...MENU_BASE }, doors: { question: "/categories/plaquettes-a.webp", videos: `${BH}dualtron.webp`, guides: `${BH}navee.webp` } },
-  1: { menu: { "/catalogue": `${V}p1-disque-roue.webp`, ...MENU_BASE }, doors: { question: `${V}q1-mecano.webp`, videos: `${V}v1-tournage.webp`, guides: `${V}g1-comparer.webp` } },
-  2: { menu: { "/catalogue": `${V}p2-etabli.webp`, ...MENU_BASE }, doors: { question: `${V}q2-message.webp`, videos: `${V}v2-camera.webp`, guides: `${V}g2-carnet.webp` } },
-  3: { menu: { "/catalogue": `${V}p3-panneau.webp`, ...MENU_BASE }, doors: { question: `${V}q1-mecano.webp`, videos: `${V}v1-tournage.webp`, guides: `${V}g2-carnet.webp` } },
-  4: { menu: { "/catalogue": `${V}p4-macro.webp`, ...MENU_BASE }, doors: { question: `${V}q2-message.webp`, videos: `${V}v2-camera.webp`, guides: `${V}g1-comparer.webp` } },
-  5: { menu: { "/catalogue": "/categories/disques-a.webp", ...MENU_BASE }, doors: { question: `${BH}kingsong.webp`, videos: `${BH}joyor.webp`, guides: `${BH}hitway.webp` } },
+  // 2e tour (29/10, Nolan) : Pièces = des pièces seules, jamais une trottinette ; L'Atelier = un vrai atelier, pas une rue ;
+  // Marques = la Dualtron avec le logo Dualtron intégré.
+  1: { menu: { "/catalogue": `${V}p5-grille.webp`, "/trottinettes": MENU_BASE["/trottinettes"], "/marques": MENU_BASE["/marques"], "/atelier": `${V}a1-atelier.webp` }, doors: { question: `${V}q1-mecano.webp`, videos: `${V}v1-tournage.webp`, guides: `${V}g1-comparer.webp` }, marqueLogo: `${V}logo-dualtron.png` },
+  2: { menu: { "/catalogue": `${V}p2-etabli.webp`, "/trottinettes": MENU_BASE["/trottinettes"], "/marques": MENU_BASE["/marques"], "/atelier": `${V}a3-mur-outils.webp` }, doors: { question: `${V}q2-message.webp`, videos: `${V}v2-camera.webp`, guides: `${V}g2-carnet.webp` }, marqueLogo: `${V}logo-dualtron.png` },
+  3: { menu: { "/catalogue": `${V}p3-panneau.webp`, "/trottinettes": MENU_BASE["/trottinettes"], "/marques": MENU_BASE["/marques"], "/atelier": `${V}a2-etabli-outils.webp` }, doors: { question: `${V}q1-mecano.webp`, videos: `${V}v1-tournage.webp`, guides: `${V}g2-carnet.webp` }, marqueLogo: `${V}logo-dualtron.png` },
+  4: { menu: { "/catalogue": `${V}p5-grille.webp`, "/trottinettes": MENU_BASE["/trottinettes"], "/marques": MENU_BASE["/marques"], "/atelier": `${V}a3-mur-outils.webp` }, doors: { question: `${V}q2-message.webp`, videos: `${V}v1-tournage.webp`, guides: `${V}g1-comparer.webp` }, marqueLogo: `${V}logo-dualtron.png` },
+  5: { menu: { "/catalogue": `${V}p2-etabli.webp`, "/trottinettes": MENU_BASE["/trottinettes"], "/marques": MENU_BASE["/marques"], "/atelier": `${V}a1-atelier.webp` }, doors: { question: `${V}q1-mecano.webp`, videos: `${V}v2-camera.webp`, guides: `${V}g2-carnet.webp` }, marqueLogo: `${V}logo-dualtron.png` },
 };
 
 /** Jeu choisi par ?visuels=N (0..5), sinon le jeu en ligne. */

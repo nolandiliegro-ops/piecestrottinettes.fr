@@ -324,6 +324,11 @@ const HeaderProposals = ({ variant }: { variant: BarreVariant }) => {
             <img src={visualSet().menu[l.href as keyof VisualSet["menu"]] ?? TEL_IMG[l.href]} alt="" className="absolute inset-0 w-full h-full object-cover" />
             <span className="absolute inset-0" style={{ background: on(l.href) ? "linear-gradient(180deg, rgba(74,124,89,0.25), rgba(74,124,89,0.9))" : "linear-gradient(180deg, rgba(26,26,26,0.05), rgba(26,26,26,0.8))" }} />
             <span className="absolute left-2.5 right-2 bottom-2 text-white text-[15px] uppercase leading-tight" style={{ fontFamily: UNB, fontWeight: 900, fontStyle: "italic" }}>{l.label}</span>
+            {l.href === "/marques" && visualSet().marqueLogo && (
+              <span className="absolute top-2 right-2 w-10 h-10 bg-white flex items-center justify-center shadow-md" style={{ clipPath: "polygon(0 0, calc(100% - 7px) 0, 100% 7px, 100% 100%, 0 100%)" }}>
+                <img src={visualSet().marqueLogo} alt="Dualtron" className="w-7 h-7 object-contain" />
+              </span>
+            )}
           </>
         ), { clipPath: CUT }))}
       </div>
