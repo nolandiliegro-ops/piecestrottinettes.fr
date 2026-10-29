@@ -30,7 +30,9 @@ export const VISUAL_SETS: Record<number, VisualSet> = {
 export const DEFAULT_VISUAL_SET = 1; // 29/10 : « Catalogue » validé par Nolan, en ligne pour tous (?visuels=0 = ancien jeu)
 export const visualSet = (): VisualSet => {
   try {
-    const n = Number(new URLSearchParams(window.location.search).get("visuels"));
+    // 29/10 : sans paramètre, get() renvoie null et Number(null) = 0 → l'ancien jeu s'affichait. On teste la présence d'abord.
+    const raw = new URLSearchParams(window.location.search).get("visuels");
+    const n = raw === null || raw === "" ? NaN : Number(raw);
     if (Number.isInteger(n) && VISUAL_SETS[n]) return VISUAL_SETS[n];
   } catch { /* SSR / pas de window */ }
   return VISUAL_SETS[DEFAULT_VISUAL_SET];
