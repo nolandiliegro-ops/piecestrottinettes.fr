@@ -67,3 +67,4 @@ export const openPrelaunch = () => {
 // 29/10 visuels tour 2
 // 29/10 visuels catalogue en ligne
 // 31/10 titres aperçus nouvelle logique de prix
+// 31/10 relance publication titres aperçus
