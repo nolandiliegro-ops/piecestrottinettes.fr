@@ -35,6 +35,7 @@ import { useComplementParts } from "@/hooks/useComplementParts";
 import CompatCompact, { type CompatLook } from "@/components/pdp/CompatCompact";
 import PartSeoFicheLooks, { type FicheLook } from "@/components/pdp/PartSeoFicheLooks";
 import PartSeoFiche from "@/components/pdp/PartSeoFiche";
+import VariantPicker from "@/components/pdp/VariantPicker";
 
 export type PartStyle = 1 | 2 | 3 | 4 | 5;
 export const PART_STYLE_NAMES: Record<PartStyle, string> = { 1: "Pit-stand", 2: "Étiquette", 3: "Atelier", 4: "Vitrine", 5: "Compat d'abord" };
@@ -416,6 +417,7 @@ const PitStand = (p: Props) => (
             <CatLabel part={p.part} />
             <div className="mt-1"><Title name={p.part.name} /></div>
             <div className="mt-4 flex items-end gap-4 flex-wrap"><Price value={p.part.price} /><StockLine part={p.part} /></div>
+            <VariantPicker partId={p.part.id} categoryId={p.part.category_id} categorySlug={p.part.category?.slug} />
             <div className="mt-5"><Tiles part={p.part} /></div>
             <div className="mt-6 flex flex-wrap gap-2.5">
               <BuyButton part={p.part} />
@@ -460,6 +462,7 @@ const Etiquette = (p: Props) => {
           <div className="order-2 lg:order-1"><Tiles part={p.part} /></div>
           <div className="order-1 lg:order-2 rounded-2xl bg-white border p-5 flex flex-col gap-3" style={{ borderColor: LINE }}>
             <div className="flex items-end justify-between gap-3 flex-wrap"><Price value={p.part.price} /><StockLine part={p.part} /></div>
+            <VariantPicker partId={p.part.id} categoryId={p.part.category_id} categorySlug={p.part.category?.slug} />
             <BuyButton part={p.part} look="block" full />
           </div>
         </div>
@@ -482,6 +485,7 @@ const Atelier = (p: Props) => (
             <div className="mt-1"><Title name={p.part.name} /></div>
             <p className="mt-3 text-base text-gray-600 line-clamp-3" style={{ fontFamily: FONT }}>{plain(p.part.meta_description || p.part.description)}</p>
             <div className="mt-5 flex items-center gap-4 flex-wrap"><Price value={p.part.price} /><StockLine part={p.part} /></div>
+            <VariantPicker partId={p.part.id} categoryId={p.part.category_id} categorySlug={p.part.category?.slug} />
             <div className="mt-5"><BuyButton part={p.part} /></div>
             <ol className="mt-6 grid grid-cols-2 gap-2" style={{ fontFamily: FONT }}>
               {[["01", `Compatibilité · ${p.scooters.filter((x) => x.status === "verified").length}`, "pdp-compat"], ["02", "Caractéristiques", "pdp-specs"], ["03", "Montage", "pdp-install"], ["04", "Présentation", "pdp-pres"]].map(([n, l, id]) => (
@@ -514,6 +518,7 @@ const Vitrine = (p: Props) => (
             <CatLabel part={p.part} />
             <div className="mt-1"><Title name={p.part.name} size="text-2xl" italic={false} /></div>
             <div className="mt-3 flex justify-center items-center gap-3 flex-wrap"><Price value={p.part.price} size="text-3xl" /><StockLine part={p.part} /></div>
+            <VariantPicker partId={p.part.id} categoryId={p.part.category_id} categorySlug={p.part.category?.slug} />
           </div>
           <div className="mt-6 text-left rounded-2xl border px-4 py-4 lg:hidden" style={{ borderColor: LINE }}><CompatCheck scooters={p.scooters} /></div>
           <div className="mt-6 text-left"><Tiles part={p.part} cols="grid-cols-2 sm:grid-cols-4" /></div>
@@ -561,6 +566,7 @@ const CompatFirst = (p: Props) => (
           <CatLabel part={p.part} />
           <div className="mt-1"><Title name={p.part.name} /></div>
           <div className="mt-4 flex items-end gap-4 flex-wrap"><Price value={p.part.price} /><StockLine part={p.part} /></div>
+          <VariantPicker partId={p.part.id} categoryId={p.part.category_id} categorySlug={p.part.category?.slug} />
           <div className="mt-5"><BuyButton part={p.part} /></div>
           <div className="mt-6"><Tiles part={p.part} /></div>
         </div>

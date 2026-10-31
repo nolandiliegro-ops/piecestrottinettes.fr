@@ -70,7 +70,9 @@ export const groupFamilies = (parts: CataloguePart[], categoryLabel = "Chambre �
   for (const p of parts) {
     const size = sizeOfName(p.name);
     const rim = rimOf(p.name);
-    const key = `${size}|${rim ?? ""}`;
+    // 31/10 (Nolan : « il y a encore 10x3 et 10x3.0 ») : même taille écrite autrement = même famille
+    // (10x3 = 10x3.0, 14x2.5 = 14x2.50). Le libellé affiché reste celui de la première pièce.
+    const key = `${size.replace(/\d+(?:\.\d+)?/g, (n) => String(parseFloat(n)))}|${rim ?? ""}`;
     let f = map.get(key);
     if (!f) {
       const sz = size.replace(/^draisienne /, "");
