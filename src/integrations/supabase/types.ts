@@ -11899,6 +11899,18 @@ export type Database = {
         }
         Returns: boolean
       }
+      apply_awin_feed_prices: {
+        Args: { p_rows: Json; p_write?: boolean }
+        Returns: {
+          ancien: number
+          chemin: string
+          decision: string
+          dispo: boolean
+          host: string
+          prix_lu: number
+          slug: string
+        }[]
+      }
       ask_atelier: {
         Args: {
           p_email?: string
