@@ -39,7 +39,7 @@ function parseCsv(text: string): string[][] {
 }
 
 async function downloadFeed(key: string, fid: number) {
-  const url = `https://productdata.awin.com/datafeed/download/apikey/${key.trim()}/fid/${fid}/format/csv/language/fr/delimiter/%2C/compression/gzip/columns/${COLUMNS.join("%2C")}/`;
+  const url = `https://productdata.awin.com/datafeed/download/apikey/${key}/fid/${fid}/format/csv/language/fr/delimiter/%2C/compression/gzip/columns/${COLUMNS.join("%2C")}/`;
   const res = await fetch(url);
   if (!res.ok || !res.body) throw new Error(`flux ${fid} : http ${res.status}`); // l'URL (qui contient la clé) n'est jamais renvoyée
   const text = await new Response(res.body.pipeThrough(new DecompressionStream("gzip"))).text();
@@ -57,7 +57,9 @@ serve(async (req) => {
   if (req.method === "OPTIONS") return new Response(null, { headers: corsHeaders });
   let action = "ecrire";
   try { action = ((await req.json())?.action ?? "ecrire") as string; } catch { /* corps vide = ecrire */ }
-  const key = Deno.env.get("AWIN_FEED_KEY");
+  const raw = Deno.env.get("AWIN_FEED_KEY");
+  // La valeur peut être la clé seule ou le lien « Feed List Download » entier : on garde les 32 caractères hexa.
+  const key = raw ? ((raw.match(/[0-9a-f]{32}/i) ?? [raw.trim()])[0]) : undefined;
   if (action === "ping") return json({ ok: true, version: VERSION, secret: Boolean(key) });
   if (action !== "apercu" && action !== "ecrire" && action !== "diag") return json({ ok: false, error: "ACTION_INCONNUE" }, 400);
   if (!key) return json({ ok: false, version: VERSION, error: "AWIN_FEED_KEY absent" }, 500);
@@ -68,7 +70,7 @@ serve(async (req) => {
     const base = `https://productdata.awin.com/datafeed`;
     return json({
       ok: true, version: VERSION,
-      cle: { longueur: key.length, longueur_sans_espaces: k.length, hexa_32: /^[0-9a-f]{32}$/i.test(k), espaces_autour: key !== k },
+      cle: { longueur_brute: raw!.length, contient_cle_32: /[0-9a-f]{32}/i.test(raw!), cle_extraite_ok: /^[0-9a-f]{32}$/i.test(k), ressemble_a: /^https?:/.test(raw!.trim()) ? "lien" : /^[0-9a-f-]{36}$/i.test(raw!.trim()) ? "uuid" : "autre" },
       liste_flux: await st(`${base}/list/apikey/${k}`),
       flux_colonnes_courtes: await st(`${base}/download/apikey/${k}/fid/98663/format/csv/language/fr/delimiter/%2C/compression/gzip/columns/merchant_deep_link%2Cproduct_name%2Csearch_price%2Cin_stock/`),
       flux_sans_colonnes: await st(`${base}/download/apikey/${k}/fid/98663/format/csv/language/fr/delimiter/%2C/compression/gzip/`),
