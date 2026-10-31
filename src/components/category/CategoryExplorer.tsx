@@ -9,7 +9,7 @@
 import { useSelectedCompatIds, compatFirst } from "@/hooks/useSelectedCompatIds";
 import { useEffect, useMemo, useState } from "react";
 import { useQuery } from "@tanstack/react-query";
-import { Search, X, ChevronLeft, ChevronDown } from "lucide-react";
+import { Search, X, ChevronLeft, ChevronDown, SlidersHorizontal } from "lucide-react";
 import { inchOfSize, inchLabel } from "@/lib/tireSize";
 import { supabase } from "@/integrations/supabase/client";
 import { useSelectedScooter } from "@/contexts/ScooterContext";
@@ -86,7 +86,13 @@ const sizeOf = (slug: string, name: string): string | null => {
   if (slug === "chargeurs") { const m = name.match(/\b(\d{2})\s?V\b/); return m ? `${m[1]} V` : null; }
   if (["pneus", "pneus-pleins", "chambres-a-air"].includes(slug)) {
     const m = name.match(/\b(\d{1,3}(?:[.,]\d+)?)\s?([x×/])\s?(\d{1,3}(?:[.,]\d+)?)/i);
-    return m ? `${m[1].replace(",", ".")}${m[2] === "/" ? "/" : "x"}${m[3].replace(",", ".")}` : null;
+    // 31/10 : 10x3 = 10x3.0, 10x2.5 = 10x2.50 → une seule pastille (nombres comparés, pas le texte).
+    // « 4.10/3.50 » reste tel quel ; en « AxB » : 10x3.0 → 10x3, 14x2.5 → 14x2.50 (écriture des flancs).
+    if (!m) return null;
+    const a = m[1].replace(",", "."), b = m[3].replace(",", ".");
+    if (m[2] === "/") return `${a}/${b}`;
+    const bb = String(parseFloat(b));
+    return `${parseFloat(a)}x${/\.\d$/.test(bb) ? `${bb}0` : bb}`;
   }
   return null;
 };
@@ -100,6 +106,15 @@ const inchOfPart = (name: string): number | null => {
   const m = n.match(/\b(\d{1,3}(?:\.\d+)?)\s?[x×]\s?(\d{1,3}(?:\.\d+)?)/i);
   if (m) return inchOfSize(`${m[1]}x${m[2]}`, "");
   return null;
+};
+/** 31/10 : 5 nouvelles zones de filtres (?zone=1..5) ; sans paramètre = rendu actuel. */
+const readZoneLook = (): number => {
+  try {
+    const n = Number(new URLSearchParams(window.location.search).get("zone"));
+    return n >= 1 && n <= 5 ? n : 0;
+  } catch {
+    return 0;
+  }
 };
 /** 24/10 : 5 compositions de la zone de filtres (?filtres=1..5) ; sans paramètre = rendu actuel. */
 const readFiltresVariant = (): number => {
@@ -169,6 +184,7 @@ const CategoryExplorer = ({ slug, name, parts }: Props) => {
   const [size, setSize] = useState<string | null>(null);
   const [allBrands, setAllBrands] = useState(false);
   const [variant] = useState(readFiltresVariant);
+  const [zoneLook] = useState(readZoneLook);
   const [inch, setInch] = useState<number | null>(null);
   const [moreSizes, setMoreSizes] = useState(false);
   const [tab, setTab] = useState<"trott" | "taille">("taille");
@@ -445,6 +461,136 @@ const CategoryExplorer = ({ slug, name, parts }: Props) => {
     );
   }
 
+  /* ─── 31/10 (Nolan : « trop de cases, on le met à la fin peut-être, et plus joli ») : 5 propositions ?zone=1..5 ─── */
+  let bottomZone: React.ReactNode = null;
+  const sizeLabel = size ?? (inch != null ? inchLabel(inch) : null);
+  const activeCount = (model ? 1 : 0) + (size || inch != null ? 1 : 0);
+  const sizePanel = isTire && inches.length > 1
+    ? <>{inchRow}{inch != null && <div className="mt-3">{sizeChips(sizesOfInch, 12)}</div>}{inch == null && hint("Choisis d'abord le diamètre de ta roue.")}</>
+    : sizeChips(sizesByCount, 12);
+  const clearAll = () => { clearTrott(); setSize(null); setInch(null); };
+  const ClearLink = () => (activeCount ? <button type="button" onClick={clearAll} className="h-11 px-2 text-sm font-bold underline" style={{ fontFamily: FONT, color: CARBON }}>Tout effacer</button> : null);
+  if (zoneLook === 1) {
+    // 1 · EN BAS (littéral) : rien au-dessus de la grille sauf la recherche ; les filtres arrivent après la liste.
+    filtersZone = (
+      <div className="mt-3 flex flex-wrap items-center gap-2">
+        {activeCount ? <Plate on onClick={clearAll}>{[modelLabel, sizeLabel].filter(Boolean).join(" · ")} <X className="w-4 h-4" /></Plate> : null}
+        <a href="#cat-filtres-bas" className="inline-flex items-center min-h-[44px] text-sm font-bold underline" style={{ fontFamily: FONT, color: CARBON }}>Filtrer par ta trottinette ou ta taille ↓</a>
+      </div>
+    );
+    bottomZone = (
+      <section id="cat-filtres-bas" className="max-w-7xl mx-auto w-full px-4 md:px-8 pb-20">
+        <div className="border-t-2 pt-6" style={{ borderColor: CARBON }}>
+          <h2 className="text-xl lg:text-2xl uppercase" style={{ fontFamily: UNB, fontWeight: 900, fontStyle: "italic", letterSpacing: "-0.02em", color: CARBON }}>Pas trouvé ?</h2>
+          <div className="mt-4 grid lg:grid-cols-2 gap-6">
+            {brands.length > 0 && <div><Label>Ta trottinette</Label>{trottSelects}</div>}
+            {showSizes && <div><Label>Ta taille</Label>{sizePanel}</div>}
+          </div>
+        </div>
+      </section>
+    );
+  } else if (zoneLook === 2) {
+    // 2 · DEUX BOUTONS : une seule ligne « Ma trottinette ▾ · Taille ▾ », le détail s'ouvre au toucher.
+    const btn = (k: "trott" | "taille", label: string, value: string | null) => (
+      <button type="button" onClick={() => setPop(pop === k ? null : k)} aria-expanded={pop === k}
+        className="inline-flex items-center gap-2 h-12 pl-4 pr-3 text-sm font-extrabold max-w-[280px]"
+        style={{ fontFamily: FONT, clipPath: CHAMFER, background: value ? CARBON : "#fff", color: value ? "#fff" : CARBON, boxShadow: value ? "none" : `inset 0 0 0 1px ${LINE}` }}>
+        <span className="truncate">{value ?? label}</span><ChevronDown className={`w-4 h-4 shrink-0 transition-transform ${pop === k ? "rotate-180" : ""}`} />
+      </button>
+    );
+    filtersZone = (
+      <div className="mt-4">
+        <div className="flex flex-wrap items-center gap-2">
+          {brands.length > 0 && btn("trott", "Ma trottinette", modelLabel)}
+          {showSizes && btn("taille", "Taille", sizeLabel)}
+          <ClearLink />
+        </div>
+        {pop && <div className="mt-2 p-4 bg-white max-w-3xl" style={{ boxShadow: `inset 0 0 0 1px ${LINE}, 0 12px 30px rgba(0,0,0,0.08)` }}>{pop === "trott" ? trottSelects : sizePanel}</div>}
+      </div>
+    );
+  } else if (zoneLook === 3) {
+    // 3 · ROUES : les diamètres dessinés en roue (8", 10", 11"…), la taille exacte n'apparaît qu'après.
+    const wheels = isTire && inches.length > 1 ? inches : [];
+    filtersZone = (
+      <div className="mt-5">
+        {wheels.length > 0 && (
+          <>
+            <Label>Ta roue</Label>
+            <div className="flex gap-3 overflow-x-auto -mx-4 px-4 md:mx-0 md:px-0 pb-1" style={{ scrollbarWidth: "none" }}>
+              {wheels.map(([i, n]) => {
+                const on = inch === i; const d = 40 + Math.min(i, 14) * 2.2;
+                return (
+                  <button key={i} type="button" onClick={() => { setInch(on ? null : i); setSize(null); }} aria-pressed={on} className="shrink-0 flex flex-col items-center justify-end w-[68px] h-[96px]">
+                    <span className="rounded-full flex items-center justify-center" style={{ width: d, height: d, border: `${on ? 7 : 6}px solid ${on ? GREEN : CARBON}`, background: "#fff" }} />
+                    <span className="mt-1 text-sm font-extrabold" style={{ fontFamily: FONT, color: on ? GREEN : CARBON }}>{inchLabel(i)}</span>
+                    <span className="text-[13px] text-gray-500" style={{ fontFamily: FONT }}>{n} réf.</span>
+                  </button>
+                );
+              })}
+            </div>
+          </>
+        )}
+        {inch != null && <div className="mt-3">{sizeChips(sizesOfInch, 12)}</div>}
+        {wheels.length === 0 && showSizes && sizeChips(sizesByCount, 8)}
+        {brands.length > 0 && (
+          <div className="mt-4 flex flex-wrap items-center gap-2">
+            <span className="text-sm font-bold text-gray-600" style={{ fontFamily: FONT }}>Ou ta trottinette :</span>{trottSelects}
+          </div>
+        )}
+      </div>
+    );
+  } else if (zoneLook === 4) {
+    // 4 · FILTRER : un seul bouton, tout le détail dans une fenêtre qui monte du bas.
+    filtersZone = (
+      <div className="mt-4 flex flex-wrap items-center gap-2">
+        <button type="button" onClick={() => setPop("trott")} className="inline-flex items-center gap-2 h-12 px-4 text-sm font-extrabold"
+          style={{ fontFamily: FONT, clipPath: CHAMFER, background: activeCount ? CARBON : "#fff", color: activeCount ? "#fff" : CARBON, boxShadow: activeCount ? "none" : `inset 0 0 0 1px ${LINE}` }}>
+          <SlidersHorizontal className="w-4 h-4" /> Filtrer{activeCount ? ` · ${activeCount}` : ""}
+        </button>
+        {activeCount ? <span className="text-sm font-bold" style={{ fontFamily: FONT, color: CARBON }}>{[modelLabel, sizeLabel].filter(Boolean).join(" · ")}</span> : <span className="text-sm text-gray-600" style={{ fontFamily: FONT }}>par ta trottinette ou ta taille</span>}
+        <ClearLink />
+        {pop && (
+          <div className="fixed inset-0 z-[80] flex items-end md:items-center justify-center" role="dialog" aria-modal aria-label="Filtrer">
+            <button type="button" aria-label="Fermer" onClick={() => setPop(null)} className="absolute inset-0 bg-black/40" />
+            <div className="relative w-full md:max-w-xl bg-[#FAFAF8] max-h-[85vh] overflow-y-auto rounded-t-2xl md:rounded-2xl p-5 pb-8">
+              <div className="flex items-center justify-between"><p className="text-lg uppercase" style={{ fontFamily: UNB, fontWeight: 900, fontStyle: "italic", color: CARBON }}>Filtrer</p>
+                <button type="button" onClick={() => setPop(null)} aria-label="Fermer" className="w-11 h-11 flex items-center justify-center"><X className="w-5 h-5" /></button></div>
+              {brands.length > 0 && <div className="mt-3"><Label>Ta trottinette</Label>{trottSelects}</div>}
+              {showSizes && <div className="mt-5"><Label>Ta taille</Label>{sizePanel}</div>}
+              <button type="button" onClick={() => setPop(null)} className="mt-6 w-full min-h-[48px] text-sm font-extrabold uppercase tracking-wider text-white" style={{ fontFamily: FONT, background: CARBON, clipPath: CHAMFER }}>{families ? `Voir les ${families.length} tailles` : `Voir les ${shown.length} résultats`}</button>
+            </div>
+          </div>
+        )}
+      </div>
+    );
+  } else if (zoneLook === 5) {
+    // 5 · PHRASE : « Je cherche pour ma [marque] [modèle] · ou en taille [ ] » sur une ligne, en listes déroulantes.
+    const sel = "h-11 pl-3 pr-8 text-sm font-extrabold bg-white";
+    const st = { fontFamily: FONT, color: CARBON, clipPath: CHAMFER, boxShadow: `inset 0 0 0 1px ${LINE}` };
+    filtersZone = (
+      <div className="mt-4 p-4 bg-white" style={{ boxShadow: `inset 4px 0 0 ${GREEN}, inset 0 0 0 1px ${LINE}` }}>
+        <p className="flex flex-wrap items-center gap-2 text-base font-bold" style={{ fontFamily: FONT, color: CARBON }}>
+          {brands.length > 0 && <>
+            <span>Pour ma</span>
+            <select value={brand ?? ""} onChange={(e) => { setBrand(e.target.value || null); setModel(null); setSize(null); }} aria-label="Marque" className={sel} style={st}>
+              <option value="">marque</option>{brands.map((b) => <option key={b.slug} value={b.slug}>{b.name}</option>)}
+            </select>
+            <select value={model ?? ""} disabled={!brand} onChange={(e) => { setModel(e.target.value || null); setSize(null); setInch(null); }} aria-label="Modèle" className={`${sel} disabled:opacity-50`} style={st}>
+              <option value="">modèle</option>{brandModels.map((m) => <option key={m.id} value={m.id}>{m.name.replace(new RegExp(`^${m.brandName}\\s+`, "i"), "")}</option>)}
+            </select>
+          </>}
+          {showSizes && <>
+            <span>{brands.length > 0 ? "ou en taille" : "En taille"}</span>
+            <select value={size ?? ""} onChange={(e) => { setSize(e.target.value || null); setInch(null); }} aria-label="Taille" className={sel} style={st}>
+              <option value="">toutes</option>{sizes.map(([sz, n]) => <option key={sz} value={sz}>{sz} ({n})</option>)}
+            </select>
+          </>}
+          <ClearLink />
+        </p>
+      </div>
+    );
+  }
+
   return (
     <>
       {guide && (
@@ -514,6 +660,7 @@ const CategoryExplorer = ({ slug, name, parts }: Props) => {
           </>
         )}
       </section>
+      {bottomZone}
     </>
   );
 };
