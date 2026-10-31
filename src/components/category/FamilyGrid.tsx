@@ -1,7 +1,7 @@
 /**
  * Grille par FAMILLES (31/10/2026) — une carte par taille, les valves et gammes à l'intérieur.
- * 5 propositions derrière ?familles=1..5 (sans paramètre : grille d'avant, une carte par pièce).
- * 1 Pastilles · 2 Dès · 3 Repassé · 4 Pictos · 5 Comparateur.
+ * 5 propositions : 1 Pastilles · 2 Dès (CHOISIE le 31/10, par défaut) · 3 Repassé · 4 Pictos · 5 Comparateur.
+ * ?familles=0 = ancienne grille, une carte par pièce.
  * Le panier reste au `parts.id` de la variante choisie : rien ne change côté paiement.
  */
 import { useEffect, useMemo, useState, type MouseEvent } from "react";
@@ -23,12 +23,15 @@ const ORANGE = "#FF6600";
 const LINE = "#E2DCD0";
 const CHAMFER = "polygon(0 0, calc(100% - 10px) 0, 100% 10px, 100% 100%, 0 100%)";
 
+/** 31/10 : « 2 · Dès » choisie par Nolan → défaut. ?familles=0 = ancienne grille (une carte par pièce), 1..5 = les propositions. */
 export const readFamillesLook = (): number => {
   try {
-    const n = Number(new URLSearchParams(window.location.search).get("familles"));
-    return n >= 1 && n <= 5 ? n : 0;
+    const raw = new URLSearchParams(window.location.search).get("familles");
+    if (raw === null) return 2;
+    const n = Number(raw);
+    return n >= 0 && n <= 5 ? n : 2;
   } catch {
-    return 0;
+    return 2;
   }
 };
 
