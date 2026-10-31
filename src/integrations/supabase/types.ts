@@ -2735,6 +2735,21 @@ export type Database = {
         }
         Relationships: []
       }
+      _backup_navee_e25_20261031: {
+        Row: {
+          j: Json | null
+          t: string | null
+        }
+        Insert: {
+          j?: Json | null
+          t?: string | null
+        }
+        Update: {
+          j?: Json | null
+          t?: string | null
+        }
+        Relationships: []
+      }
       _backup_nutt_vented_20260929: {
         Row: {
           id: string | null
@@ -3569,6 +3584,21 @@ export type Database = {
           id?: string | null
           published?: boolean | null
           slug?: string | null
+        }
+        Relationships: []
+      }
+      _backup_recette_alerte_20261031: {
+        Row: {
+          j: Json | null
+          t: string | null
+        }
+        Insert: {
+          j?: Json | null
+          t?: string | null
+        }
+        Update: {
+          j?: Json | null
+          t?: string | null
         }
         Relationships: []
       }
@@ -4580,6 +4610,81 @@ export type Database = {
           kind?: string | null
           ref?: string | null
           val?: Json | null
+        }
+        Relationships: []
+      }
+      _backup_xiaomi_offres_20261031: {
+        Row: {
+          affiliate_url: string | null
+          compare_at_eur: number | null
+          created_at: string | null
+          deal_ends_at: string | null
+          deal_kind: string | null
+          deal_label: string | null
+          deal_ref_eur: number | null
+          id: string | null
+          in_stock: boolean | null
+          is_active: boolean | null
+          last_status: string | null
+          merchant_host: string | null
+          notes: string | null
+          offer_type: string | null
+          price_checked_at: string | null
+          price_eur: number | null
+          price_max: number | null
+          product_url: string | null
+          scooter_model_id: string | null
+          source_kind: string | null
+          updated_at: string | null
+          variant_id: string | null
+        }
+        Insert: {
+          affiliate_url?: string | null
+          compare_at_eur?: number | null
+          created_at?: string | null
+          deal_ends_at?: string | null
+          deal_kind?: string | null
+          deal_label?: string | null
+          deal_ref_eur?: number | null
+          id?: string | null
+          in_stock?: boolean | null
+          is_active?: boolean | null
+          last_status?: string | null
+          merchant_host?: string | null
+          notes?: string | null
+          offer_type?: string | null
+          price_checked_at?: string | null
+          price_eur?: number | null
+          price_max?: number | null
+          product_url?: string | null
+          scooter_model_id?: string | null
+          source_kind?: string | null
+          updated_at?: string | null
+          variant_id?: string | null
+        }
+        Update: {
+          affiliate_url?: string | null
+          compare_at_eur?: number | null
+          created_at?: string | null
+          deal_ends_at?: string | null
+          deal_kind?: string | null
+          deal_label?: string | null
+          deal_ref_eur?: number | null
+          id?: string | null
+          in_stock?: boolean | null
+          is_active?: boolean | null
+          last_status?: string | null
+          merchant_host?: string | null
+          notes?: string | null
+          offer_type?: string | null
+          price_checked_at?: string | null
+          price_eur?: number | null
+          price_max?: number | null
+          product_url?: string | null
+          scooter_model_id?: string | null
+          source_kind?: string | null
+          updated_at?: string | null
+          variant_id?: string | null
         }
         Relationships: []
       }
