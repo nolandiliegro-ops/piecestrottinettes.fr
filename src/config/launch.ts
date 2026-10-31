@@ -1,3 +1,4 @@
+// 31/10/2026 — resynchronisation de publication (aucun changement de comportement).
 // Config de lancement — sync 25/10 recette garage (3087622)
 /**
  * Interrupteur de pré-lancement de la boutique.
