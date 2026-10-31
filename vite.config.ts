@@ -5,6 +5,7 @@ import fs from "fs";
 import { componentTagger } from "lovable-tagger";
 import { VitePWA } from "vite-plugin-pwa";
 import { mcpPlugin } from "@lovable.dev/mcp-js/stacks/supabase/vite";
+import { loadSeoData, writeSeoPages } from "./scripts/seo/static-pages";
 
 // Aperçus de liens (28/10/2026) : WhatsApp sur iPhone fabrique l'aperçu depuis le téléphone, sans JavaScript et sans
 // le pré-rendu Lovable (réservé aux robots vérifiés). On écrit donc, au build, une copie de index.html par fiche
@@ -20,7 +21,27 @@ function ogPages() {
       try {
         const out = path.resolve(__dirname, "dist");
         const manifest = path.resolve(__dirname, "config/og/pages.json");
-        if (!fs.existsSync(manifest) || !fs.existsSync(path.join(out, "index.html"))) return;
+        if (!fs.existsSync(path.join(out, "index.html"))) return;
+        if (fs.existsSync(manifest)) await writeOgPages(out, manifest);
+        // 31/10 : contenu des fiches écrit dans le HTML pour les robots (scripts/seo/static-pages.ts). Après les
+        // pages d'aperçu, dans le même hook (closeBundle tourne en parallèle d'un plugin à l'autre).
+        try {
+          const key = process.env.VITE_SUPABASE_PUBLISHABLE_KEY
+            || fs.readFileSync(path.resolve(__dirname, "src/integrations/supabase/client.ts"), "utf8").match(/VITE_SUPABASE_PUBLISHABLE_KEY\s*\|\|\s*"([^"]+)"/)?.[1] || "";
+          const r = writeSeoPages(out, await loadSeoData(key));
+          console.log(`[seo-static] ${r.written} pages avec contenu (${r.created} créées)`);
+        } catch (e) {
+          console.warn("[seo-static] ignoré :", e);
+        }
+      } catch (e) {
+        console.warn("[og-pages] ignoré :", e);
+      }
+    },
+  };
+}
+
+async function writeOgPages(out: string, manifest: string) {
+      {
         const pages: { p: string; t: string; d: string; i: string }[] = JSON.parse(fs.readFileSync(manifest, "utf8"));
         // 28/10 : les images du stockage Supabase portent « x-robots-tag: none » → WhatsApp n'affiche pas l'image.
         // On les recopie dans dist/og/ pour les servir depuis le site (même domaine, cache CDN, sans cet en-tête).
@@ -68,11 +89,7 @@ function ogPages() {
           n++;
         }
         console.log(`[og-pages] ${n} pages d'aperçu écrites`);
-      } catch (e) {
-        console.warn("[og-pages] ignoré :", e);
       }
-    },
-  };
 }
 
 // https://vitejs.dev/config/
