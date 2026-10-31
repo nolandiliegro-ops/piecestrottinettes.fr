@@ -16,6 +16,8 @@ import { useSelectedScooter } from "@/contexts/ScooterContext";
 import { readPickerLook } from "@/components/catalogue/ScooterPicker";
 import { classifyCompat } from "@/lib/compatibilityStatus";
 import PartCard from "@/components/parts/PartCard";
+import FamilyGrid, { FamilySortBar, readFamillesLook } from "@/components/category/FamilyGrid";
+import { groupFamilies, sortFamilies, type FamilySort } from "@/lib/partFamilies";
 import type { CataloguePart } from "@/hooks/useCatalogueData";
 
 const UNB = "'Unbounded', sans-serif";
@@ -232,6 +234,14 @@ const CategoryExplorer = ({ slug, name, parts }: Props) => {
   }, [parts, model, modelMap, size, q, slug, compatIds]);
 
   const brandList = allBrands ? brands : brands.slice(0, 10);
+
+  // 31/10 : une carte par FAMILLE (taille + jante), valves et gammes dedans — ?familles=1..5, chambres à air d'abord.
+  const [famLook] = useState(readFamillesLook);
+  const [famSort, setFamSort] = useState<FamilySort>("reco");
+  const families = useMemo(
+    () => (famLook && slug === "chambres-a-air" ? sortFamilies(groupFamilies(shown), famSort, model ? null : compatIds) : null),
+    [famLook, slug, shown, famSort, compatIds, model],
+  );
 
 
   /* ─── Zone de filtres : rendu d'origine (0) et 5 compositions (?filtres=1..5), 24/10 ─── */
@@ -464,8 +474,8 @@ const CategoryExplorer = ({ slug, name, parts }: Props) => {
           <div className="flex items-end justify-between gap-4 flex-wrap">
             <h2 className="text-xl lg:text-2xl uppercase" style={{ fontFamily: UNB, fontWeight: 900, fontStyle: "italic", letterSpacing: "-0.02em", color: CARBON }}>Tous les {name.toLowerCase()}</h2>
             <span className="flex items-baseline gap-1.5" style={{ fontFamily: FONT }}>
-              <span className="text-2xl md:text-3xl" style={{ fontFamily: UNB, fontWeight: 900, fontStyle: "italic", color: CARBON }}>{shown.length}</span>
-              <span className="text-sm font-bold uppercase tracking-wider text-gray-500">{shown.length === parts.length ? "références" : `sur ${parts.length}`}</span>
+              <span className="text-2xl md:text-3xl" style={{ fontFamily: UNB, fontWeight: 900, fontStyle: "italic", color: CARBON }}>{families ? families.length : shown.length}</span>
+              <span className="text-sm font-bold uppercase tracking-wider text-gray-500">{families ? "tailles" : shown.length === parts.length ? "références" : `sur ${parts.length}`}</span>
             </span>
           </div>
 
@@ -483,6 +493,11 @@ const CategoryExplorer = ({ slug, name, parts }: Props) => {
       <section className="max-w-7xl mx-auto w-full px-4 md:px-8 pb-20">
         {shown.length === 0 ? (
           <p className="py-10 text-base text-gray-600" style={{ fontFamily: FONT }}>Aucune pièce avec ces critères. <button type="button" onClick={() => { setQ(""); clearTrott(); }} className="font-bold underline min-h-[44px]" style={{ color: CARBON }}>Tout réafficher</button></p>
+        ) : families ? (
+          <>
+            <FamilySortBar sort={famSort} onSort={setFamSort} />
+            <FamilyGrid families={families} look={famLook} />
+          </>
         ) : (
           <>
             <div className="grid grid-cols-2 gap-4 md:grid-cols-3 md:gap-6 lg:grid-cols-4">
