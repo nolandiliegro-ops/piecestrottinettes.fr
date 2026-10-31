@@ -44,11 +44,12 @@ export const PARTNERS: Record<string, Partner> = {
  */
 const OFFICIAL = (name: string, atouts?: string[]): Partner => ({ name, tagline: "Boutique officielle de la marque", ...(atouts ? { atouts } : {}) });
 Object.assign(PARTNERS, {
-  "mi.com": OFFICIAL("Xiaomi France"),
+  // 31/10/2026 — atouts lus le 31/10 sur mi.com/fr (page /buy/ : « Standard : 2 à 5 jours ouvrés », « Retour gratuit sous 15 jours »).
+  "mi.com": OFFICIAL("Xiaomi France", ["Livraison 2 à 5 jours", "Retour gratuit 15 jours"]),
   "iscooter.fr": OFFICIAL("iScooter France", ["Livraison offerte", "3 ou 4× sans frais", "Retour 30 jours"]),
   "naveetech.fr": OFFICIAL("NAVEE France", ["Garantie jusqu'à 3 ans", "Klarna 0 %"]),
   "isinwheel.fr": OFFICIAL("isinwheel France", ["Livraison offerte", "3× sans frais", "Garantie jusqu'à 2 ans"]),
-  // 24/10/2026 — atouts lus le 24/10 sur la page d'accueil ou les conditions de chaque boutique (mi.com : aucun).
+  // 24/10/2026 — atouts lus le 24/10 sur la page d'accueil ou les conditions de chaque boutique (mi.com : ajoutés le 31/10).
   // 23/10/2026 — GoAffPro : boutique EU officielle de la marque (livraison FR lue dans /meta.json).
   "haloknights.com": OFFICIAL("HALO KNIGHT Europe", ["Livraison offerte"]),
   "teverunshop.com": OFFICIAL("Teverun Europe", ["Expédiée en 1 à 2 jours", "Retour 14 jours"]),
