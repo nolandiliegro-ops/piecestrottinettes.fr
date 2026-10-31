@@ -107,13 +107,15 @@ const inchOfPart = (name: string): number | null => {
   if (m) return inchOfSize(`${m[1]}x${m[2]}`, "");
   return null;
 };
-/** 31/10 : 5 nouvelles zones de filtres (?zone=1..5) ; sans paramètre = rendu actuel. */
+/** 31/10 : 5 nouvelles zones de filtres (?zone=1..5). « 2 · Deux boutons » choisie par Nolan → défaut ; ?zone=0 = ancienne zone. */
 const readZoneLook = (): number => {
   try {
-    const n = Number(new URLSearchParams(window.location.search).get("zone"));
-    return n >= 1 && n <= 5 ? n : 0;
+    const raw = new URLSearchParams(window.location.search).get("zone");
+    if (raw === null) return 2;
+    const n = Number(raw);
+    return n >= 0 && n <= 5 ? n : 2;
   } catch {
-    return 0;
+    return 2;
   }
 };
 /** 24/10 : 5 compositions de la zone de filtres (?filtres=1..5) ; sans paramètre = rendu actuel. */
