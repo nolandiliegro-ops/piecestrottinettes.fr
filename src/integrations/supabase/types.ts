@@ -2324,6 +2324,21 @@ export type Database = {
         }
         Relationships: []
       }
+      _backup_fn_pro_prix_20261031: {
+        Row: {
+          def: string | null
+          le: string | null
+        }
+        Insert: {
+          def?: string | null
+          le?: string | null
+        }
+        Update: {
+          def?: string | null
+          le?: string | null
+        }
+        Relationships: []
+      }
       _backup_fn_refresh_prices_collect_20261025: {
         Row: {
           def: string | null
@@ -3410,6 +3425,78 @@ export type Database = {
           id?: string | null
           saved_at?: string | null
           slug?: string | null
+        }
+        Relationships: []
+      }
+      _backup_prix_chargeurs_20261031: {
+        Row: {
+          id: string | null
+          price: number | null
+          price_override: boolean | null
+          sauvegarde_le: string | null
+          sku: string | null
+        }
+        Insert: {
+          id?: string | null
+          price?: number | null
+          price_override?: boolean | null
+          sauvegarde_le?: string | null
+          sku?: string | null
+        }
+        Update: {
+          id?: string | null
+          price?: number | null
+          price_override?: boolean | null
+          sauvegarde_le?: string | null
+          sku?: string | null
+        }
+        Relationships: []
+      }
+      _backup_prix_disques_20261031: {
+        Row: {
+          id: string | null
+          price: number | null
+          price_override: boolean | null
+          sauvegarde_le: string | null
+          sku: string | null
+        }
+        Insert: {
+          id?: string | null
+          price?: number | null
+          price_override?: boolean | null
+          sauvegarde_le?: string | null
+          sku?: string | null
+        }
+        Update: {
+          id?: string | null
+          price?: number | null
+          price_override?: boolean | null
+          sauvegarde_le?: string | null
+          sku?: string | null
+        }
+        Relationships: []
+      }
+      _backup_prix_pleins_20261031: {
+        Row: {
+          id: string | null
+          price: number | null
+          price_override: boolean | null
+          sauvegarde_le: string | null
+          sku: string | null
+        }
+        Insert: {
+          id?: string | null
+          price?: number | null
+          price_override?: boolean | null
+          sauvegarde_le?: string | null
+          sku?: string | null
+        }
+        Update: {
+          id?: string | null
+          price?: number | null
+          price_override?: boolean | null
+          sauvegarde_le?: string | null
+          sku?: string | null
         }
         Relationships: []
       }
@@ -6572,6 +6659,54 @@ export type Database = {
           source?: string | null
           titre?: string | null
           traitee?: boolean | null
+        }
+        Relationships: []
+      }
+      _marche_prix_20261031: {
+        Row: {
+          famille: string | null
+          prix: number | null
+          rid: number | null
+          shop: string | null
+          titre: string | null
+        }
+        Insert: {
+          famille?: string | null
+          prix?: number | null
+          rid?: number | null
+          shop?: string | null
+          titre?: string | null
+        }
+        Update: {
+          famille?: string | null
+          prix?: number | null
+          rid?: number | null
+          shop?: string | null
+          titre?: string | null
+        }
+        Relationships: []
+      }
+      _pro_prix_avant_20261031: {
+        Row: {
+          id: string | null
+          q1: number | null
+          q10: number | null
+          q5: number | null
+          q50: number | null
+        }
+        Insert: {
+          id?: string | null
+          q1?: number | null
+          q10?: number | null
+          q5?: number | null
+          q50?: number | null
+        }
+        Update: {
+          id?: string | null
+          q1?: number | null
+          q10?: number | null
+          q5?: number | null
+          q50?: number | null
         }
         Relationships: []
       }
@@ -9858,6 +9993,48 @@ export type Database = {
           },
         ]
       }
+      pricing_rules: {
+        Row: {
+          actif: boolean
+          famille: string
+          id: number
+          mode: string
+          motif: string | null
+          note: string | null
+          plancher_coef: number
+          priorite: number
+          segment: string
+          updated_at: string
+          valeur: number
+        }
+        Insert: {
+          actif?: boolean
+          famille: string
+          id?: number
+          mode?: string
+          motif?: string | null
+          note?: string | null
+          plancher_coef?: number
+          priorite?: number
+          segment: string
+          updated_at?: string
+          valeur: number
+        }
+        Update: {
+          actif?: boolean
+          famille?: string
+          id?: number
+          mode?: string
+          motif?: string | null
+          note?: string | null
+          plancher_coef?: number
+          priorite?: number
+          segment?: string
+          updated_at?: string
+          valeur?: number
+        }
+        Relationships: []
+      }
       pro_accounts: {
         Row: {
           access_token: string
@@ -10250,6 +10427,7 @@ export type Database = {
         Row: {
           cloture_heure: number
           cloture_isodow: number
+          coef_site: number
           id: boolean
           plancher_coef: number
           retrait_decalage_jours: number
@@ -10258,6 +10436,7 @@ export type Database = {
         Insert: {
           cloture_heure?: number
           cloture_isodow?: number
+          coef_site?: number
           id?: boolean
           plancher_coef?: number
           retrait_decalage_jours?: number
@@ -10266,6 +10445,7 @@ export type Database = {
         Update: {
           cloture_heure?: number
           cloture_isodow?: number
+          coef_site?: number
           id?: boolean
           plancher_coef?: number
           retrait_decalage_jours?: number
@@ -12010,6 +12190,16 @@ export type Database = {
           scooter_name: string
           scooter_slug: string
           unsubscribe_token: string
+        }[]
+      }
+      prix_public_calcule: {
+        Args: { p_part: string }
+        Returns: {
+          achat: number
+          prix: number
+          regle_id: number
+          segment: string
+          sous_plancher: boolean
         }[]
       }
       pro_by_token: {
