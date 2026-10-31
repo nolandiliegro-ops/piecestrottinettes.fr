@@ -39,7 +39,7 @@ function parseCsv(text: string): string[][] {
 }
 
 async function downloadFeed(key: string, fid: number) {
-  const url = `https://productdata.awin.com/datafeed/download/apikey/${key}/fid/${fid}/format/csv/language/fr/delimiter/%2C/compression/gzip/columns/${COLUMNS.join("%2C")}/`;
+  const url = `https://productdata.awin.com/datafeed/download/apikey/${key.trim()}/fid/${fid}/format/csv/language/fr/delimiter/%2C/compression/gzip/columns/${COLUMNS.join("%2C")}/`;
   const res = await fetch(url);
   if (!res.ok || !res.body) throw new Error(`flux ${fid} : http ${res.status}`); // l'URL (qui contient la clé) n'est jamais renvoyée
   const text = await new Response(res.body.pipeThrough(new DecompressionStream("gzip"))).text();
@@ -59,8 +59,21 @@ serve(async (req) => {
   try { action = ((await req.json())?.action ?? "ecrire") as string; } catch { /* corps vide = ecrire */ }
   const key = Deno.env.get("AWIN_FEED_KEY");
   if (action === "ping") return json({ ok: true, version: VERSION, secret: Boolean(key) });
-  if (action !== "apercu" && action !== "ecrire") return json({ ok: false, error: "ACTION_INCONNUE" }, 400);
+  if (action !== "apercu" && action !== "ecrire" && action !== "diag") return json({ ok: false, error: "ACTION_INCONNUE" }, 400);
   if (!key) return json({ ok: false, version: VERSION, error: "AWIN_FEED_KEY absent" }, 500);
+  if (action === "diag") {
+    // Diagnostic sans jamais renvoyer la clé : forme de la clé + codes HTTP des URL Awin.
+    const k = key.trim();
+    const st = async (u: string) => { try { const r = await fetch(u); await r.body?.cancel(); return r.status; } catch (e) { return (e as Error).message; } };
+    const base = `https://productdata.awin.com/datafeed`;
+    return json({
+      ok: true, version: VERSION,
+      cle: { longueur: key.length, longueur_sans_espaces: k.length, hexa_32: /^[0-9a-f]{32}$/i.test(k), espaces_autour: key !== k },
+      liste_flux: await st(`${base}/list/apikey/${k}`),
+      flux_colonnes_courtes: await st(`${base}/download/apikey/${k}/fid/98663/format/csv/language/fr/delimiter/%2C/compression/gzip/columns/merchant_deep_link%2Cproduct_name%2Csearch_price%2Cin_stock/`),
+      flux_sans_colonnes: await st(`${base}/download/apikey/${k}/fid/98663/format/csv/language/fr/delimiter/%2C/compression/gzip/`),
+    });
+  }
 
   const rows: { url: string; nom: string; prix: string; dispo: boolean }[] = [];
   const feeds: Record<string, number | string> = {};
